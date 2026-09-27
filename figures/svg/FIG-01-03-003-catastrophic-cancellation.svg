@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1190" viewBox="0 0 1900 1190" role="img" aria-labelledby="svg-title svg-desc">
+<title id="svg-title">Catastrophic cancellation</title>
+<desc id="svg-desc">Correct full-precision and incorrect prematurely rounded calculations compared side by side</desc>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#526274"/></marker>
+  <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2F6F9F"/></marker>
+  <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#B94747"/></marker>
+</defs>
+<rect width="1900" height="1190" fill="#FFFFFF"/>
+<text x="70" y="75" font-family="DejaVu Sans, Arial, sans-serif" font-size="40" font-weight="800" fill="#183B5B" text-anchor="start">CATASTROPHIC CANCELLATION</text>
+<text x="70" y="120" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="400" fill="#526274" text-anchor="start">Subtracting nearly equal numbers magnifies small rounding errors.</text>
+<rect x="80" y="220" width="790" height="720" rx="18" fill="#E8F4F1" stroke="#2A7F7F" stroke-width="3" />
+<rect x="80" y="220" width="790" height="62" rx="18" fill="#2A7F7F" stroke="#2A7F7F" stroke-width="0" />
+<text x="105" y="262" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="start">FULL PRECISION — CORRECT</text>
+<text x="105" y="325" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="500" fill="#172033" text-anchor="start">12.47 × 0.0834 = 1.03996…</text>
+<text x="105" y="368" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="500" fill="#172033" text-anchor="start">0.7512 − 0.7481 = 0.0031</text>
+<text x="105" y="411" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="500" fill="#172033" text-anchor="start">1.03996 ÷ 0.0031 = 335.47…</text>
+<text x="105" y="454" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="500" fill="#172033" text-anchor="start">FINAL: 335</text>
+<rect x="1030" y="220" width="790" height="720" rx="18" fill="#FDF0F0" stroke="#B94747" stroke-width="3" />
+<rect x="1030" y="220" width="790" height="62" rx="18" fill="#B94747" stroke="#B94747" stroke-width="0" />
+<text x="1055" y="262" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="start">PREMATURE ROUNDING — WRONG</text>
+<text x="1055" y="325" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="500" fill="#172033" text-anchor="start">0.7512 − 0.7481 = 0.003</text>
+<text x="1055" y="368" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="500" fill="#172033" text-anchor="start">1.04 ÷ 0.003 = 346.67…</text>
+<text x="1055" y="411" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="500" fill="#172033" text-anchor="start">FINAL: 347</text>
+<text x="1055" y="454" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="500" fill="#172033" text-anchor="start">12 away from the correct result</text>
+<rect x="710" y="470" width="480" height="230" rx="26" fill="#FFF5DB" stroke="#D39A22" stroke-width="4" />
+<text x="950" y="535" font-family="DejaVu Sans, Arial, sans-serif" font-size="40" font-weight="800" fill="#B94747" text-anchor="middle">3.5% ERROR</text>
+<text x="950" y="585" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="700" fill="#172033" text-anchor="middle">from one early rounding</text>
+<text x="950" y="635" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="800" fill="#B94747" text-anchor="middle">335  →  347</text>
+<text x="950" y="1080" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="800" fill="#183B5B" text-anchor="middle">Keep guard digits. Round once — at the end.</text>
+</svg>

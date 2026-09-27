@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1250" viewBox="0 0 1800 1250" role="img" aria-labelledby="svg-title svg-desc">
+<title id="svg-title">Three-dimensional vector components</title>
+<desc id="svg-desc">Right-handed coordinate system with vector A and component projections</desc>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#526274"/></marker>
+  <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2F6F9F"/></marker>
+  <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#B94747"/></marker>
+</defs>
+<rect width="1800" height="1250" fill="#FFFFFF"/>
+<text x="70" y="75" font-family="DejaVu Sans, Arial, sans-serif" font-size="40" font-weight="800" fill="#183B5B" text-anchor="start">VECTOR COMPONENTS IN THREE DIMENSIONS</text>
+<text x="70" y="120" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="400" fill="#526274" text-anchor="start">A = Aₓ î + Aᵧ ĵ + A_z k̂</text>
+<line x1="630" y1="900" x2="1390" y2="900" stroke="#2F6F9F" stroke-width="7" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+<line x1="630" y1="900" x2="280" y2="1120" stroke="#2A7F7F" stroke-width="7" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="630" y1="900" x2="630" y2="220" stroke="#C85D32" stroke-width="7" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="1420" y="920" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="800" fill="#2F6F9F" text-anchor="start">x  î</text>
+<text x="230" y="1150" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="800" fill="#2A7F7F" text-anchor="start">y  ĵ</text>
+<text x="655" y="230" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="800" fill="#C85D32" text-anchor="start">z  k̂</text>
+<line x1="630" y1="900" x2="1180" y2="480" stroke="#183B5B" stroke-width="11" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="1210" y="465" font-family="DejaVu Sans, Arial, sans-serif" font-size="38" font-weight="800" fill="#183B5B" text-anchor="start">A</text>
+<line x1="630" y1="900" x2="1180" y2="900" stroke="#2F6F9F" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+<line x1="1180" y1="900" x2="1180" y2="480" stroke="#C85D32" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="1180" y1="480" x2="1180" y2="480" stroke="#2A7F7F" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="1180" y1="480" x2="1180" y2="900" stroke="#AAB7C4" stroke-width="2" stroke-linecap="round" stroke-dasharray="10 8"/>
+<line x1="1180" y1="480" x2="630" y2="480" stroke="#AAB7C4" stroke-width="2" stroke-linecap="round" stroke-dasharray="10 8"/>
+<text x="910" y="955" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="800" fill="#2F6F9F" text-anchor="start">Aₓ</text>
+<text x="1210" y="705" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="800" fill="#C85D32" text-anchor="start">A_z</text>
+<text x="920" y="455" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="800" fill="#2A7F7F" text-anchor="start">Aᵧ</text>
+<rect x="1300" y="270" width="420" height="360" rx="18" fill="#F6F9FB" stroke="#183B5B" stroke-width="3" />
+<rect x="1300" y="270" width="420" height="62" rx="18" fill="#183B5B" stroke="#183B5B" stroke-width="0" />
+<text x="1325" y="312" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="start">COMPONENT FORM</text>
+<text x="1325" y="375" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="500" fill="#172033" text-anchor="start">Aₓ = A cos α</text>
+<text x="1325" y="418" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="500" fill="#172033" text-anchor="start">Aᵧ = A cos β</text>
+<text x="1325" y="461" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="500" fill="#172033" text-anchor="start">A_z = A cos γ</text>
+<text x="1325" y="504" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="500" fill="#172033" text-anchor="start">|A| = √(Aₓ²+Aᵧ²+A_z²)</text>
+</svg>

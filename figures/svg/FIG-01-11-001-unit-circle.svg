@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1800" viewBox="0 0 1800 1800" role="img" aria-labelledby="svg-title svg-desc">
+<title id="svg-title">Unit circle standard angles</title>
+<desc id="svg-desc">Unit circle with sixteen standard angles labeled in degrees, radians, and exact coordinate pairs</desc>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#526274"/></marker>
+  <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2F6F9F"/></marker>
+  <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#B94747"/></marker>
+</defs>
+<rect width="1800" height="1800" fill="#FFFFFF"/>
+<text x="70" y="75" font-family="DejaVu Sans, Arial, sans-serif" font-size="40" font-weight="800" fill="#183B5B" text-anchor="start">UNIT CIRCLE — STANDARD ANGLES</text>
+<text x="70" y="120" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="400" fill="#526274" text-anchor="start">Coordinates are (cos θ, sin θ). Angles increase counterclockwise.</text>
+<circle cx="900" cy="930" r="500" fill="#FBFCFD" stroke="#183B5B" stroke-width="4"/>
+<line x1="260" y1="930" x2="1540" y2="930" stroke="#183B5B" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="900" y1="1545" x2="900" y2="300" stroke="#183B5B" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="900" y1="930" x2="1400.0" y2="930.0" stroke="#D6DEE5" stroke-width="1.5" stroke-linecap="round" />
+<circle cx="1400.0" cy="930.0" r="7" fill="#2F6F9F" stroke="#2F6F9F" stroke-width="1"/>
+<text x="1520.0" y="922.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="800" fill="#183B5B" text-anchor="start">0° / 0</text>
+<text x="1520.0" y="948.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="500" fill="#526274" text-anchor="start">(1, 0)</text>
+<line x1="900" y1="930" x2="1333.0127018922194" y2="680.0" stroke="#D6DEE5" stroke-width="1.5" stroke-linecap="round" />
+<circle cx="1333.0127018922194" cy="680.0" r="7" fill="#2F6F9F" stroke="#2F6F9F" stroke-width="1"/>
+<text x="1436.935750346352" y="612.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="800" fill="#183B5B" text-anchor="start">30° / π⁄6</text>
+<text x="1436.935750346352" y="638.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="500" fill="#526274" text-anchor="start">(√3⁄2, 1⁄2)</text>
+<line x1="900" y1="930" x2="1253.553390593274" y2="576.4466094067263" stroke="#D6DEE5" stroke-width="1.5" stroke-linecap="round" />
+<circle cx="1253.553390593274" cy="576.4466094067263" r="7" fill="#2F6F9F" stroke="#2F6F9F" stroke-width="1"/>
+<text x="1338.4062043356594" y="483.5937956643406" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="800" fill="#183B5B" text-anchor="start">45° / π⁄4</text>
+<text x="1338.4062043356594" y="509.5937956643406" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="500" fill="#526274" text-anchor="start">(√2⁄2, √2⁄2)</text>
+<line x1="900" y1="930" x2="1150.0" y2="496.9872981077807" stroke="#D6DEE5" stroke-width="1.5" stroke-linecap="round" />
+<circle cx="1150.0" cy="496.9872981077807" r="7" fill="#2F6F9F" stroke="#2F6F9F" stroke-width="1"/>
+<text x="1210.0" y="385.06424965364806" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="800" fill="#183B5B" text-anchor="start">60° / π⁄3</text>
+<text x="1210.0" y="411.06424965364806" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="500" fill="#526274" text-anchor="start">(1⁄2, √3⁄2)</text>
+<line x1="900" y1="930" x2="900.0" y2="430.0" stroke="#D6DEE5" stroke-width="1.5" stroke-linecap="round" />
+<circle cx="900.0" cy="430.0" r="7" fill="#2F6F9F" stroke="#2F6F9F" stroke-width="1"/>
+<text x="900.0" y="302.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="800" fill="#183B5B" text-anchor="middle">90° / π⁄2</text>
+<text x="900.0" y="328.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="500" fill="#526274" text-anchor="middle">(0, 1)</text>
+<line x1="900" y1="930" x2="650.0000000000001" y2="496.98729810778065" stroke="#D6DEE5" stroke-width="1.5" stroke-linecap="round" />
+<circle cx="650.0000000000001" cy="496.98729810778065" r="7" fill="#2F6F9F" stroke="#2F6F9F" stroke-width="1"/>
+<text x="590.0000000000001" y="385.06424965364795" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="800" fill="#183B5B" text-anchor="end">120° / 2π⁄3</text>
+<text x="590.0000000000001" y="411.06424965364795" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="500" fill="#526274" text-anchor="end">(−1⁄2, √3⁄2)</text>
+<line x1="900" y1="930" x2="546.4466094067263" y2="576.4466094067262" stroke="#D6DEE5" stroke-width="1.5" stroke-linecap="round" />
+<circle cx="546.4466094067263" cy="576.4466094067262" r="7" fill="#2F6F9F" stroke="#2F6F9F" stroke-width="1"/>
+<text x="461.5937956643406" y="483.5937956643405" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="800" fill="#183B5B" text-anchor="end">135° / 3π⁄4</text>
+<text x="461.5937956643406" y="509.5937956643405" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="500" fill="#526274" text-anchor="end">(−√2⁄2, √2⁄2)</text>
+<line x1="900" y1="930" x2="466.98729810778065" y2="680.0" stroke="#D6DEE5" stroke-width="1.5" stroke-linecap="round" />
+<circle cx="466.98729810778065" cy="680.0" r="7" fill="#2F6F9F" stroke="#2F6F9F" stroke-width="1"/>
+<text x="363.06424965364795" y="612.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="800" fill="#183B5B" text-anchor="end">150° / 5π⁄6</text>
+<text x="363.06424965364795" y="638.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="500" fill="#526274" text-anchor="end">(−√3⁄2, 1⁄2)</text>
+<line x1="900" y1="930" x2="400.0" y2="929.9999999999999" stroke="#D6DEE5" stroke-width="1.5" stroke-linecap="round" />
+<circle cx="400.0" cy="929.9999999999999" r="7" fill="#2F6F9F" stroke="#2F6F9F" stroke-width="1"/>
+<text x="280.0" y="921.9999999999999" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="800" fill="#183B5B" text-anchor="end">180° / π</text>
+<text x="280.0" y="947.9999999999999" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="500" fill="#526274" text-anchor="end">(−1, 0)</text>
+<line x1="900" y1="930" x2="466.9872981077807" y2="1180.0" stroke="#D6DEE5" stroke-width="1.5" stroke-linecap="round" />
+<circle cx="466.9872981077807" cy="1180.0" r="7" fill="#2F6F9F" stroke="#2F6F9F" stroke-width="1"/>
+<text x="363.06424965364806" y="1232.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="800" fill="#183B5B" text-anchor="end">210° / 7π⁄6</text>
+<text x="363.06424965364806" y="1258.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="500" fill="#526274" text-anchor="end">(−√3⁄2, −1⁄2)</text>
+<line x1="900" y1="930" x2="546.4466094067261" y2="1283.5533905932737" stroke="#D6DEE5" stroke-width="1.5" stroke-linecap="round" />
+<circle cx="546.4466094067261" cy="1283.5533905932737" r="7" fill="#2F6F9F" stroke="#2F6F9F" stroke-width="1"/>
+<text x="461.59379566434046" y="1360.4062043356594" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="800" fill="#183B5B" text-anchor="end">225° / 5π⁄4</text>
+<text x="461.59379566434046" y="1386.4062043356594" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="500" fill="#526274" text-anchor="end">(−√2⁄2, −√2⁄2)</text>
+<line x1="900" y1="930" x2="649.9999999999998" y2="1363.0127018922192" stroke="#D6DEE5" stroke-width="1.5" stroke-linecap="round" />
+<circle cx="649.9999999999998" cy="1363.0127018922192" r="7" fill="#2F6F9F" stroke="#2F6F9F" stroke-width="1"/>
+<text x="589.9999999999998" y="1458.9357503463518" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="800" fill="#183B5B" text-anchor="end">240° / 4π⁄3</text>
+<text x="589.9999999999998" y="1484.9357503463518" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="500" fill="#526274" text-anchor="end">(−1⁄2, −√3⁄2)</text>
+<line x1="900" y1="930" x2="899.9999999999999" y2="1430.0" stroke="#D6DEE5" stroke-width="1.5" stroke-linecap="round" />
+<circle cx="899.9999999999999" cy="1430.0" r="7" fill="#2F6F9F" stroke="#2F6F9F" stroke-width="1"/>
+<text x="899.9999999999999" y="1542.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="800" fill="#183B5B" text-anchor="middle">270° / 3π⁄2</text>
+<text x="899.9999999999999" y="1568.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="500" fill="#526274" text-anchor="middle">(0, −1)</text>
+<line x1="900" y1="930" x2="1150.0" y2="1363.0127018922194" stroke="#D6DEE5" stroke-width="1.5" stroke-linecap="round" />
+<circle cx="1150.0" cy="1363.0127018922194" r="7" fill="#2F6F9F" stroke="#2F6F9F" stroke-width="1"/>
+<text x="1210.0" y="1458.935750346352" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="800" fill="#183B5B" text-anchor="start">300° / 5π⁄3</text>
+<text x="1210.0" y="1484.935750346352" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="500" fill="#526274" text-anchor="start">(1⁄2, −√3⁄2)</text>
+<line x1="900" y1="930" x2="1253.5533905932737" y2="1283.553390593274" stroke="#D6DEE5" stroke-width="1.5" stroke-linecap="round" />
+<circle cx="1253.5533905932737" cy="1283.553390593274" r="7" fill="#2F6F9F" stroke="#2F6F9F" stroke-width="1"/>
+<text x="1338.4062043356594" y="1360.4062043356596" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="800" fill="#183B5B" text-anchor="start">315° / 7π⁄4</text>
+<text x="1338.4062043356594" y="1386.4062043356596" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="500" fill="#526274" text-anchor="start">(√2⁄2, −√2⁄2)</text>
+<line x1="900" y1="930" x2="1333.0127018922192" y2="1180.0000000000002" stroke="#D6DEE5" stroke-width="1.5" stroke-linecap="round" />
+<circle cx="1333.0127018922192" cy="1180.0000000000002" r="7" fill="#2F6F9F" stroke="#2F6F9F" stroke-width="1"/>
+<text x="1436.9357503463518" y="1232.0000000000002" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="800" fill="#183B5B" text-anchor="start">330° / 11π⁄6</text>
+<text x="1436.9357503463518" y="1258.0000000000002" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="500" fill="#526274" text-anchor="start">(√3⁄2, −1⁄2)</text>
+<text x="1515" y="910" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="800" fill="#183B5B" text-anchor="start">real</text>
+<text x="920" y="325" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="800" fill="#183B5B" text-anchor="start">sin θ</text>
+</svg>

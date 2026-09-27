@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1260" viewBox="0 0 2000 1260" role="img" aria-labelledby="svg-title svg-desc">
+<title id="svg-title">Axial load and square-millimetre area conversion</title>
+<desc id="svg-desc">Rectangular steel member with an 840-kilonewton axial load, a labeled 5,600-square-millimetre cross-sectional area, and an annotation showing conversion from square millimetres to square metres</desc>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#526274"/></marker>
+  <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2F6F9F"/></marker>
+  <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#B94747"/></marker>
+</defs>
+<rect width="2000" height="1260" fill="#FFFFFF"/>
+<text x="70" y="72" font-family="DejaVu Sans, Arial, sans-serif" font-size="39" font-weight="800" fill="#183B5B" text-anchor="start">AXIAL LOAD AND AREA CONVERSION</text>
+<text x="70" y="116" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="400" fill="#526274" text-anchor="start">Square the prefix when converting area units.</text>
+<polygon points="660,260 1130,260 1130,680 660,680" fill="#AABBC8" stroke="#183B5B" stroke-width="4"/>
+<polygon points="260,390 730,390 1130,260 660,260" fill="#D9E4EB" stroke="#183B5B" stroke-width="4"/>
+<polygon points="730,390 730,810 1130,680 1130,260" fill="#8FA5B5" stroke="#183B5B" stroke-width="4"/>
+<polygon points="260,390 730,390 730,810 260,810" fill="#C7D5DF" stroke="#183B5B" stroke-width="5"/>
+<line x1="305" y1="420" x2="305" y2="780" stroke="#A4B8C6" stroke-width="2" stroke-linecap="round" />
+<line x1="363" y1="420" x2="363" y2="780" stroke="#A4B8C6" stroke-width="2" stroke-linecap="round" />
+<line x1="421" y1="420" x2="421" y2="780" stroke="#A4B8C6" stroke-width="2" stroke-linecap="round" />
+<line x1="479" y1="420" x2="479" y2="780" stroke="#A4B8C6" stroke-width="2" stroke-linecap="round" />
+<line x1="537" y1="420" x2="537" y2="780" stroke="#A4B8C6" stroke-width="2" stroke-linecap="round" />
+<line x1="595" y1="420" x2="595" y2="780" stroke="#A4B8C6" stroke-width="2" stroke-linecap="round" />
+<line x1="653" y1="420" x2="653" y2="780" stroke="#A4B8C6" stroke-width="2" stroke-linecap="round" />
+<text x="495.0" y="565" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="800" fill="#183B5B" text-anchor="middle">RECTANGULAR</text>
+<text x="495.0" y="608" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="800" fill="#183B5B" text-anchor="middle">CROSS-SECTION</text>
+<text x="495.0" y="682" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="800" fill="#172033" text-anchor="middle">A = 5,600 mm²</text>
+<line x1="923.5310220619284" y1="460.7274178298733" x2="1128.0033468390823" y2="394.2739122772982" stroke="#C85D32" stroke-width="12" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="466.46897793807153" y1="609.2725821701267" x2="261.99665316091773" y2="675.7260877227018" stroke="#C85D32" stroke-width="12" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="1210" y="110" width="470" height="68" rx="34.0" fill="#C85D32" stroke="#C85D32" stroke-width="0" />
+<text x="1445.0" y="154.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="700" fill="#FFFFFF" text-anchor="middle">P = 840 kN</text>
+<path d="M 1445 178 L 1056.6757916842612 417.4553677026151" fill="none" stroke="#C85D32" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="1160" y="480" width="730" height="380" rx="18" fill="#FFF7E3" stroke="#D39A22" stroke-width="3" />
+<text x="1200" y="535" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="800" fill="#D39A22" text-anchor="start">AREA CONVERSION</text>
+<text x="1200" y="595" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="650" fill="#172033" text-anchor="start">1 mm = 10⁻³ m</text>
+<text x="1200" y="655" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="750" fill="#172033" text-anchor="start">1 mm² = (10⁻³ m)² = 10⁻⁶ m²</text>
+<line x1="1200" y1="690" x2="1850" y2="690" stroke="#DFC879" stroke-width="2" stroke-linecap="round" />
+<text x="1200" y="750" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="650" fill="#172033" text-anchor="start">5,600 mm² = 5,600 × 10⁻⁶ m²</text>
+<text x="1200" y="810" font-family="DejaVu Sans, Arial, sans-serif" font-size="31" font-weight="800" fill="#D39A22" text-anchor="start">A = 5.60 × 10⁻³ m²</text>
+<rect x="260" y="960" width="1630" height="190" rx="18" fill="#EAF4F1" stroke="#2A7F7F" stroke-width="3" />
+<text x="1075" y="1018" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="800" fill="#2A7F7F" text-anchor="middle">STRESS CHECK</text>
+<text x="1075" y="1072" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="700" fill="#172033" text-anchor="middle">σ = P/A = (8.40 × 10⁵ N) / (5.60 × 10⁻³ m²)</text>
+<text x="1075" y="1122" font-family="DejaVu Sans, Arial, sans-serif" font-size="32" font-weight="800" fill="#2A7F7F" text-anchor="middle">σ = 1.50 × 10⁸ Pa = 150 MPa</text>
+</svg>

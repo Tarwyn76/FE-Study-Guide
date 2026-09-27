@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1430" viewBox="0 0 1900 1430" role="img" aria-labelledby="svg-title svg-desc">
+<title id="svg-title">Four temperature scales</title>
+<desc id="svg-desc">Fahrenheit, Celsius, kelvin, and Rankine scales aligned at key physical reference temperatures</desc>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#526274"/></marker>
+  <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2F6F9F"/></marker>
+  <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#B94747"/></marker>
+</defs>
+<rect width="1900" height="1430" fill="#FFFFFF"/>
+<text x="70" y="75" font-family="DejaVu Sans, Arial, sans-serif" font-size="40" font-weight="800" fill="#183B5B" text-anchor="start">TEMPERATURE SCALES — VALUES AND DEGREE SIZES</text>
+<text x="70" y="120" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="400" fill="#526274" text-anchor="start">Horizontal lines connect the same physical temperatures across all four scales.</text>
+<line x1="340" y1="255" x2="340" y2="1190" stroke="#C85D32" stroke-width="8" stroke-linecap="round" />
+<text x="340" y="215" font-family="DejaVu Sans, Arial, sans-serif" font-size="38" font-weight="800" fill="#C85D32" text-anchor="middle">°F</text>
+<line x1="730" y1="255" x2="730" y2="1190" stroke="#2F6F9F" stroke-width="8" stroke-linecap="round" />
+<text x="730" y="215" font-family="DejaVu Sans, Arial, sans-serif" font-size="38" font-weight="800" fill="#2F6F9F" text-anchor="middle">°C</text>
+<line x1="1120" y1="255" x2="1120" y2="1190" stroke="#2A7F7F" stroke-width="8" stroke-linecap="round" />
+<text x="1120" y="215" font-family="DejaVu Sans, Arial, sans-serif" font-size="38" font-weight="800" fill="#2A7F7F" text-anchor="middle">K</text>
+<line x1="1510" y1="255" x2="1510" y2="1190" stroke="#D39A22" stroke-width="8" stroke-linecap="round" />
+<text x="1510" y="215" font-family="DejaVu Sans, Arial, sans-serif" font-size="38" font-weight="800" fill="#D39A22" text-anchor="middle">°R</text>
+<line x1="270" y1="303.09749999999997" x2="1710" y2="303.09749999999997" stroke="#C9D2DB" stroke-width="3" stroke-linecap="round" stroke-dasharray="9 7"/>
+<text x="255" y="311.09749999999997" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" font-weight="800" fill="#526274" text-anchor="end">WATER BOILS</text>
+<circle cx="340" cy="303.09749999999997" r="9" fill="#C85D32" stroke="#C85D32" stroke-width="1"/>
+<text x="340" y="285.09749999999997" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="800" fill="#C85D32" text-anchor="middle">212</text>
+<circle cx="730" cy="303.09749999999997" r="9" fill="#2F6F9F" stroke="#2F6F9F" stroke-width="1"/>
+<text x="730" y="285.09749999999997" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="800" fill="#2F6F9F" text-anchor="middle">100</text>
+<circle cx="1120" cy="303.09749999999997" r="9" fill="#2A7F7F" stroke="#2A7F7F" stroke-width="1"/>
+<text x="1120" y="285.09749999999997" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="800" fill="#2A7F7F" text-anchor="middle">373.15</text>
+<circle cx="1510" cy="303.09749999999997" r="9" fill="#D39A22" stroke="#D39A22" stroke-width="1"/>
+<text x="1510" y="285.09749999999997" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="800" fill="#D39A22" text-anchor="middle">671.67</text>
+<line x1="270" y1="451.14750000000004" x2="1710" y2="451.14750000000004" stroke="#C9D2DB" stroke-width="3" stroke-linecap="round" stroke-dasharray="9 7"/>
+<text x="255" y="459.14750000000004" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" font-weight="800" fill="#526274" text-anchor="end">BODY TEMPERATURE</text>
+<circle cx="340" cy="451.14750000000004" r="9" fill="#C85D32" stroke="#C85D32" stroke-width="1"/>
+<text x="340" y="433.14750000000004" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="800" fill="#C85D32" text-anchor="middle">98.6</text>
+<circle cx="730" cy="451.14750000000004" r="9" fill="#2F6F9F" stroke="#2F6F9F" stroke-width="1"/>
+<text x="730" y="433.14750000000004" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="800" fill="#2F6F9F" text-anchor="middle">37</text>
+<circle cx="1120" cy="451.14750000000004" r="9" fill="#2A7F7F" stroke="#2A7F7F" stroke-width="1"/>
+<text x="1120" y="433.14750000000004" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="800" fill="#2A7F7F" text-anchor="middle">310.15</text>
+<circle cx="1510" cy="451.14750000000004" r="9" fill="#D39A22" stroke="#D39A22" stroke-width="1"/>
+<text x="1510" y="433.14750000000004" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="800" fill="#D39A22" text-anchor="middle">558.27</text>
+<line x1="270" y1="538.0975000000001" x2="1710" y2="538.0975000000001" stroke="#C9D2DB" stroke-width="3" stroke-linecap="round" stroke-dasharray="9 7"/>
+<text x="255" y="546.0975000000001" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" font-weight="800" fill="#526274" text-anchor="end">WATER FREEZES</text>
+<circle cx="340" cy="538.0975000000001" r="9" fill="#C85D32" stroke="#C85D32" stroke-width="1"/>
+<text x="340" y="520.0975000000001" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="800" fill="#C85D32" text-anchor="middle">32</text>
+<circle cx="730" cy="538.0975000000001" r="9" fill="#2F6F9F" stroke="#2F6F9F" stroke-width="1"/>
+<text x="730" y="520.0975000000001" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="800" fill="#2F6F9F" text-anchor="middle">0</text>
+<circle cx="1120" cy="538.0975000000001" r="9" fill="#2A7F7F" stroke="#2A7F7F" stroke-width="1"/>
+<text x="1120" y="520.0975000000001" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="800" fill="#2A7F7F" text-anchor="middle">273.15</text>
+<circle cx="1510" cy="538.0975000000001" r="9" fill="#D39A22" stroke="#D39A22" stroke-width="1"/>
+<text x="1510" y="520.0975000000001" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="800" fill="#D39A22" text-anchor="middle">491.67</text>
+<line x1="270" y1="1180.0" x2="1710" y2="1180.0" stroke="#C9D2DB" stroke-width="3" stroke-linecap="round" stroke-dasharray="9 7"/>
+<text x="255" y="1188.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" font-weight="800" fill="#526274" text-anchor="end">ABSOLUTE ZERO</text>
+<circle cx="340" cy="1180.0" r="9" fill="#C85D32" stroke="#C85D32" stroke-width="1"/>
+<text x="340" y="1162.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="800" fill="#C85D32" text-anchor="middle">-459.67</text>
+<circle cx="730" cy="1180.0" r="9" fill="#2F6F9F" stroke="#2F6F9F" stroke-width="1"/>
+<text x="730" y="1162.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="800" fill="#2F6F9F" text-anchor="middle">-273.15</text>
+<circle cx="1120" cy="1180.0" r="9" fill="#2A7F7F" stroke="#2A7F7F" stroke-width="1"/>
+<text x="1120" y="1162.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="800" fill="#2A7F7F" text-anchor="middle">0</text>
+<circle cx="1510" cy="1180.0" r="9" fill="#D39A22" stroke="#D39A22" stroke-width="1"/>
+<text x="1510" y="1162.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="800" fill="#D39A22" text-anchor="middle">0</text>
+<path d="M 1690 395 L 1750 395 L 1750 630 L 1690 630" fill="none" stroke="#C85D32" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<text x="1770" y="520" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="800" fill="#2A7F7F" text-anchor="start">1 °C = 1 K</text>
+<path d="M 1690 690 L 1750 690 L 1750 925 L 1690 925" fill="none" stroke="#C85D32" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<text x="1770" y="815" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="800" fill="#C85D32" text-anchor="start">1 °F = 1 °R</text>
+<text x="950" y="1335" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="800" fill="#183B5B" text-anchor="middle">Degree-size relation:  Δ°F = Δ°R = 1.8 Δ°C = 1.8 ΔK</text>
+</svg>

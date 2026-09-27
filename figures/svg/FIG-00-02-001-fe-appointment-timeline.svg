@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="980" viewBox="0 0 2200 980" role="img" aria-labelledby="svg-title svg-desc">
+<title id="svg-title">FE exam appointment timeline</title>
+<desc id="svg-desc">Timeline showing the nondisclosure agreement, tutorial, exam work time, scheduled break, and four exam checkpoints at 80-minute intervals</desc>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#526274"/></marker>
+  <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2F6F9F"/></marker>
+  <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#B94747"/></marker>
+</defs>
+<rect width="2200" height="980" fill="#FFFFFF"/>
+<text x="70" y="80" font-family="DejaVu Sans, Arial, sans-serif" font-size="40" font-weight="800" fill="#183B5B" text-anchor="start">FE EXAM APPOINTMENT</text>
+<text x="70" y="126" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="400" fill="#526274" text-anchor="start">Published components total 5 h 55 min; NCEES describes the appointment as 6 hours.</text>
+<rect x="70" y="170" width="490" height="112" rx="16" fill="#F7F9FB" stroke="#5D6B7A" stroke-width="3" />
+<rect x="70" y="170" width="16" height="112" rx="8" fill="#5D6B7A" stroke="#5D6B7A" stroke-width="0" />
+<text x="112" y="216" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="800" fill="#5D6B7A" text-anchor="start">NDA</text>
+<text x="112" y="258" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="750" fill="#172033" text-anchor="start">2 min</text>
+<rect x="584" y="170" width="490" height="112" rx="16" fill="#F7F9FB" stroke="#2F6F9F" stroke-width="3" />
+<rect x="584" y="170" width="16" height="112" rx="8" fill="#2F6F9F" stroke="#2F6F9F" stroke-width="0" />
+<text x="626" y="216" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="800" fill="#2F6F9F" text-anchor="start">TUTORIAL</text>
+<text x="626" y="258" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="750" fill="#172033" text-anchor="start">8 min</text>
+<rect x="1098" y="170" width="490" height="112" rx="16" fill="#F7F9FB" stroke="#2A7F7F" stroke-width="3" />
+<rect x="1098" y="170" width="16" height="112" rx="8" fill="#2A7F7F" stroke="#2A7F7F" stroke-width="0" />
+<text x="1140" y="216" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="800" fill="#2A7F7F" text-anchor="start">EXAM</text>
+<text x="1140" y="258" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="750" fill="#172033" text-anchor="start">5 h 20 min</text>
+<rect x="1612" y="170" width="490" height="112" rx="16" fill="#F7F9FB" stroke="#D39A22" stroke-width="3" />
+<rect x="1612" y="170" width="16" height="112" rx="8" fill="#D39A22" stroke="#D39A22" stroke-width="0" />
+<text x="1654" y="216" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="800" fill="#D39A22" text-anchor="start">SCHEDULED BREAK</text>
+<text x="1654" y="258" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="750" fill="#172033" text-anchor="start">25 min</text>
+<rect x="70" y="440" width="11.605633802816902" height="150" fill="#5D6B7A" stroke="#FFFFFF" stroke-width="3"/>
+<rect x="81.6056338028169" y="440" width="46.42253521126761" height="150" fill="#2F6F9F" stroke="#FFFFFF" stroke-width="3"/>
+<rect x="128.0281690140845" y="440" width="464.2253521126761" height="150" fill="#58A5A0" stroke="#FFFFFF" stroke-width="3"/>
+<text x="360.14084507042253" y="505" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="800" fill="#FFFFFF" text-anchor="middle">EXAM</text>
+<rect x="592.2535211267606" y="440" width="464.2253521126761" height="150" fill="#2A7F7F" stroke="#FFFFFF" stroke-width="3"/>
+<text x="824.3661971830986" y="505" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="800" fill="#FFFFFF" text-anchor="middle">EXAM</text>
+<rect x="1056.4788732394368" y="440" width="145.07042253521126" height="150" fill="#E8B84F" stroke="#FFFFFF" stroke-width="3"/>
+<text x="1129.0140845070423" y="505" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="800" fill="#172033" text-anchor="middle">BREAK</text>
+<text x="1129.0140845070423" y="545" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="650" fill="#172033" text-anchor="middle">25 min</text>
+<rect x="1201.549295774648" y="440" width="464.2253521126761" height="150" fill="#58A5A0" stroke="#FFFFFF" stroke-width="3"/>
+<text x="1433.6619718309862" y="505" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="800" fill="#FFFFFF" text-anchor="middle">EXAM</text>
+<rect x="1665.7746478873241" y="440" width="464.2253521126761" height="150" fill="#2A7F7F" stroke="#FFFFFF" stroke-width="3"/>
+<text x="1897.887323943662" y="505" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="800" fill="#FFFFFF" text-anchor="middle">EXAM</text>
+<line x1="75.80281690140845" y1="440" x2="75.80281690140845" y2="360" stroke="#5D6B7A" stroke-width="3" stroke-linecap="round" />
+<text x="75.80281690140845" y="340" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#5D6B7A" text-anchor="start">NDA • 2 min</text>
+<line x1="104.8169014084507" y1="590" x2="104.8169014084507" y2="650" stroke="#2F6F9F" stroke-width="3" stroke-linecap="round" />
+<text x="104.8169014084507" y="685" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="700" fill="#2F6F9F" text-anchor="start">Tutorial • 8 min</text>
+<line x1="592.2535211267606" y1="350" x2="592.2535211267606" y2="625" stroke="#183B5B" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 6"/>
+<circle cx="592.2535211267606" cy="335" r="33" fill="#183B5B"/>
+<text x="592.2535211267606" y="345" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="592.2535211267606" y="745" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="750" fill="#172033" text-anchor="middle">28 questions</text>
+<text x="592.2535211267606" y="778" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" font-weight="500" fill="#526274" text-anchor="middle">80 min exam time</text>
+<line x1="1056.4788732394368" y1="350" x2="1056.4788732394368" y2="625" stroke="#183B5B" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 6"/>
+<circle cx="1056.4788732394368" cy="335" r="33" fill="#183B5B"/>
+<text x="1056.4788732394368" y="345" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="1056.4788732394368" y="745" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="750" fill="#172033" text-anchor="middle">55 questions</text>
+<text x="1056.4788732394368" y="778" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" font-weight="500" fill="#526274" text-anchor="middle">160 min exam time</text>
+<line x1="1665.7746478873241" y1="350" x2="1665.7746478873241" y2="625" stroke="#183B5B" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 6"/>
+<circle cx="1665.7746478873241" cy="335" r="33" fill="#183B5B"/>
+<text x="1665.7746478873241" y="345" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="800" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="1665.7746478873241" y="745" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="750" fill="#172033" text-anchor="middle">83 questions</text>
+<text x="1665.7746478873241" y="778" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" font-weight="500" fill="#526274" text-anchor="middle">240 min exam time</text>
+<line x1="2130.0" y1="350" x2="2130.0" y2="625" stroke="#183B5B" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 6"/>
+<circle cx="2130.0" cy="335" r="33" fill="#183B5B"/>
+<text x="2130.0" y="345" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="800" fill="#FFFFFF" text-anchor="middle">4</text>
+<text x="2122.0" y="745" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="750" fill="#172033" text-anchor="end">110 questions</text>
+<text x="2122.0" y="778" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" font-weight="500" fill="#526274" text-anchor="end">320 min exam time</text>
+<path d="M 128.0281690140845 410 V 385 H 1056.4788732394368 V 410" fill="none" stroke="#2A7F7F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<text x="592.2535211267607" y="372" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="750" fill="#2A7F7F" text-anchor="middle">EXAM — FIRST HALF • 160 min</text>
+<path d="M 1201.549295774648 410 V 385 H 2130 V 410" fill="none" stroke="#2A7F7F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+<text x="1665.7746478873241" y="372" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="750" fill="#2A7F7F" text-anchor="middle">EXAM — SECOND HALF • 160 min</text>
+<line x1="70" y1="845" x2="2130" y2="845" stroke="#AAB7C4" stroke-width="3" stroke-linecap="round" />
+<line x1="70.0" y1="832" x2="70.0" y2="858" stroke="#AAB7C4" stroke-width="3" stroke-linecap="round" />
+<text x="70.0" y="890" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="600" fill="#526274" text-anchor="middle">0</text>
+<line x1="128.0281690140845" y1="832" x2="128.0281690140845" y2="858" stroke="#AAB7C4" stroke-width="3" stroke-linecap="round" />
+<text x="128.0281690140845" y="890" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="600" fill="#526274" text-anchor="middle">10</text>
+<line x1="592.2535211267606" y1="832" x2="592.2535211267606" y2="858" stroke="#AAB7C4" stroke-width="3" stroke-linecap="round" />
+<text x="592.2535211267606" y="890" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="600" fill="#526274" text-anchor="middle">90</text>
+<line x1="1056.4788732394368" y1="832" x2="1056.4788732394368" y2="858" stroke="#AAB7C4" stroke-width="3" stroke-linecap="round" />
+<text x="1056.4788732394368" y="890" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="600" fill="#526274" text-anchor="middle">170</text>
+<line x1="1201.549295774648" y1="832" x2="1201.549295774648" y2="858" stroke="#AAB7C4" stroke-width="3" stroke-linecap="round" />
+<text x="1201.549295774648" y="890" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="600" fill="#526274" text-anchor="middle">195</text>
+<line x1="1665.774647887324" y1="832" x2="1665.774647887324" y2="858" stroke="#AAB7C4" stroke-width="3" stroke-linecap="round" />
+<text x="1665.774647887324" y="890" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="600" fill="#526274" text-anchor="middle">275</text>
+<line x1="2130.0" y1="832" x2="2130.0" y2="858" stroke="#AAB7C4" stroke-width="3" stroke-linecap="round" />
+<text x="2130.0" y="890" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="600" fill="#526274" text-anchor="middle">355</text>
+<text x="1100.0" y="930" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="500" fill="#526274" text-anchor="middle">Appointment elapsed time (minutes) • Exam checkpoints use working time only</text>
+</svg>

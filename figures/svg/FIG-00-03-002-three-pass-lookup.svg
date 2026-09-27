@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2300" height="1110" viewBox="0 0 2300 1110" role="img" aria-labelledby="svg-title svg-desc">
+<title id="svg-title">Three-pass Handbook lookup method</title>
+<desc id="svg-desc">Flowchart showing Classify, Navigate, and Verify steps with decisions for section choice, equation search, and final assumption, symbol, and unit checks</desc>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#526274"/></marker>
+  <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2F6F9F"/></marker>
+  <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#B94747"/></marker>
+</defs>
+<rect width="2300" height="1110" fill="#FFFFFF"/>
+<rect x="45" y="50" width="565" height="540" rx="20" fill="#F8FAFC" stroke="#183B5B" stroke-width="4" />
+<rect x="45" y="50" width="565" height="105" rx="20" fill="#183B5B" stroke="#183B5B" stroke-width="0" />
+<rect x="69" y="75" width="105" height="56" rx="28.0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" />
+<text x="121.5" y="113.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="700" fill="#183B5B" text-anchor="middle">PASS 1</text>
+<text x="195" y="116" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="800" fill="#FFFFFF" text-anchor="start">CLASSIFY</text>
+<circle cx="93" cy="197" r="19" fill="#FFFFFF" stroke="#183B5B" stroke-width="3"/>
+<path d="M 84 197 l 7 8 l 13 -17" fill="none" stroke="#183B5B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<text x="130" y="205" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="800" fill="#172033" text-anchor="start">Section</text>
+<text x="130" y="239" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#526274" text-anchor="start">What topic or discipline region?</text>
+<circle cx="93" cy="309" r="19" fill="#FFFFFF" stroke="#183B5B" stroke-width="3"/>
+<path d="M 84 309 l 7 8 l 13 -17" fill="none" stroke="#183B5B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<text x="130" y="317" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="800" fill="#172033" text-anchor="start">Quantities</text>
+<text x="130" y="351" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#526274" text-anchor="start">What is given, and what is required?</text>
+<circle cx="93" cy="421" r="19" fill="#FFFFFF" stroke="#183B5B" stroke-width="3"/>
+<path d="M 84 421 l 7 8 l 13 -17" fill="none" stroke="#183B5B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<text x="130" y="429" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="800" fill="#172033" text-anchor="start">Relationship</text>
+<text x="130" y="463" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#526274" text-anchor="start">What kind of equation connects them?</text>
+<rect x="870" y="50" width="565" height="540" rx="20" fill="#F8FAFC" stroke="#2F6F9F" stroke-width="4" />
+<rect x="870" y="50" width="565" height="105" rx="20" fill="#2F6F9F" stroke="#2F6F9F" stroke-width="0" />
+<rect x="894" y="75" width="105" height="56" rx="28.0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" />
+<text x="946.5" y="113.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="700" fill="#2F6F9F" text-anchor="middle">PASS 2</text>
+<text x="1020" y="116" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="800" fill="#FFFFFF" text-anchor="start">NAVIGATE</text>
+<circle cx="918" cy="197" r="19" fill="#FFFFFF" stroke="#2F6F9F" stroke-width="3"/>
+<path d="M 909 197 l 7 8 l 13 -17" fill="none" stroke="#2F6F9F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<text x="955" y="205" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="800" fill="#172033" text-anchor="start">Jump</text>
+<text x="955" y="239" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#526274" text-anchor="start">Known section → go there directly</text>
+<circle cx="918" cy="309" r="19" fill="#FFFFFF" stroke="#2F6F9F" stroke-width="3"/>
+<path d="M 909 309 l 7 8 l 13 -17" fill="none" stroke="#2F6F9F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<text x="955" y="317" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="800" fill="#172033" text-anchor="start">Search</text>
+<text x="955" y="351" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#526274" text-anchor="start">Unknown section → use a proper noun</text>
+<circle cx="918" cy="421" r="19" fill="#FFFFFF" stroke="#2F6F9F" stroke-width="3"/>
+<path d="M 909 421 l 7 8 l 13 -17" fill="none" stroke="#2F6F9F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<text x="955" y="429" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="800" fill="#172033" text-anchor="start">Refine</text>
+<text x="955" y="463" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#526274" text-anchor="start">Try a distinctive technical phrase</text>
+<rect x="1690" y="50" width="565" height="540" rx="20" fill="#F8FAFC" stroke="#2A7F7F" stroke-width="4" />
+<rect x="1690" y="50" width="565" height="105" rx="20" fill="#2A7F7F" stroke="#2A7F7F" stroke-width="0" />
+<rect x="1714" y="75" width="105" height="56" rx="28.0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0" />
+<text x="1766.5" y="113.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="700" fill="#2A7F7F" text-anchor="middle">PASS 3</text>
+<text x="1840" y="116" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="800" fill="#FFFFFF" text-anchor="start">VERIFY</text>
+<circle cx="1738" cy="197" r="19" fill="#FFFFFF" stroke="#2A7F7F" stroke-width="3"/>
+<path d="M 1729 197 l 7 8 l 13 -17" fill="none" stroke="#2A7F7F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<text x="1775" y="205" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="800" fill="#172033" text-anchor="start">Assumptions</text>
+<text x="1775" y="239" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#526274" text-anchor="start">Do the stated conditions apply?</text>
+<circle cx="1738" cy="309" r="19" fill="#FFFFFF" stroke="#2A7F7F" stroke-width="3"/>
+<path d="M 1729 309 l 7 8 l 13 -17" fill="none" stroke="#2A7F7F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<text x="1775" y="317" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="800" fill="#172033" text-anchor="start">Symbols</text>
+<text x="1775" y="351" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#526274" text-anchor="start">Read the Handbook&#x27;s definitions</text>
+<circle cx="1738" cy="421" r="19" fill="#FFFFFF" stroke="#2A7F7F" stroke-width="3"/>
+<path d="M 1729 421 l 7 8 l 13 -17" fill="none" stroke="#2A7F7F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+<text x="1775" y="429" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="800" fill="#172033" text-anchor="start">Units</text>
+<text x="1775" y="463" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#526274" text-anchor="start">Confirm units, constants, and g_c</text>
+<polygon points="740,260 845,365 740,470 635,365" fill="#EEF3F8" stroke="#183B5B" stroke-width="3"/>
+<text x="740" y="347" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="800" fill="#183B5B" text-anchor="middle">SECTION</text>
+<text x="740" y="372.2" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="800" fill="#183B5B" text-anchor="middle">KNOWN?</text>
+<line x1="610" y1="365" x2="630" y2="365" stroke="#183B5B" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="845" y1="365" x2="870" y2="365" stroke="#183B5B" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="850" y="339" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="800" fill="#183B5B" text-anchor="middle">YES</text>
+<path d="M 740 470 V 730 H 955 V 590" fill="none" stroke="#2F6F9F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)"/>
+<text x="762" y="705" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="800" fill="#2F6F9F" text-anchor="start">NO — SEARCH</text>
+<polygon points="1560,260 1665,365 1560,470 1455,365" fill="#EEF5F8" stroke="#2F6F9F" stroke-width="3"/>
+<text x="1560" y="347" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="800" fill="#2F6F9F" text-anchor="middle">EQUATION</text>
+<text x="1560" y="372.2" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="800" fill="#2F6F9F" text-anchor="middle">FOUND?</text>
+<line x1="1435" y1="365" x2="1455" y2="365" stroke="#2F6F9F" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+<line x1="1665" y1="365" x2="1690" y2="365" stroke="#2F6F9F" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+<text x="1670" y="339" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="800" fill="#2F6F9F" text-anchor="middle">YES</text>
+<path d="M 1560 470 V 790 H 1150 V 590" fill="none" stroke="#2F6F9F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)"/>
+<text x="1332" y="776" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="800" fill="#2F6F9F" text-anchor="middle">NO — REFINE TERM</text>
+<polygon points="1972,680 2107,780 1972,880 1837,780" fill="#ECF6F2" stroke="#2A7F7F" stroke-width="3"/>
+<text x="1972" y="762" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="800" fill="#2A7F7F" text-anchor="middle">ALL CHECKS</text>
+<text x="1972" y="788.4" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" font-weight="800" fill="#2A7F7F" text-anchor="middle">PASS?</text>
+<line x1="1972" y1="590" x2="1972" y2="680" stroke="#2A7F7F" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="1847" y="960" width="250" height="70" rx="35.0" fill="#2A7F7F" stroke="#2A7F7F" stroke-width="0" />
+<text x="1972.0" y="1005.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="700" fill="#FFFFFF" text-anchor="middle">COMPUTE</text>
+<line x1="1972" y1="880" x2="1972" y2="960" stroke="#2A7F7F" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="1995" y="924" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="800" fill="#2A7F7F" text-anchor="start">YES</text>
+<path d="M 1837 780 H 1600 V 830 H 1360 V 590" fill="none" stroke="#B94747" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-red)"/>
+<text x="1600" y="815" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="800" fill="#B94747" text-anchor="middle">NO — RETURN TO NAVIGATE</text>
+<rect x="65" y="690" width="505" height="65" rx="32.5" fill="#183B5B" stroke="#183B5B" stroke-width="0" />
+<text x="317.5" y="732.5" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="700" fill="#FFFFFF" text-anchor="middle">10–15 seconds before opening</text>
+<rect x="900" y="860" width="505" height="65" rx="32.5" fill="#2F6F9F" stroke="#2F6F9F" stroke-width="0" />
+<text x="1152.5" y="902.5" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="700" fill="#FFFFFF" text-anchor="middle">Choose the fastest route</text>
+<rect x="1722" y="625" width="500" height="65" rx="32.5" fill="#2A7F7F" stroke="#2A7F7F" stroke-width="0" />
+<text x="1972.0" y="667.5" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="700" fill="#FFFFFF" text-anchor="middle">Under 10 seconds</text>
+<text x="45" y="1070" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="700" fill="#526274" text-anchor="start">Targeted lookup → correct equation → verified interpretation</text>
+</svg>

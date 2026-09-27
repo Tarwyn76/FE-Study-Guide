@@ -1,0 +1,1439 @@
+# =====================================================================
+# CONCEPT LEDGER
+# =====================================================================
+# One record per teachable atom. Chapter numbering is OUTPUT of
+# tools/build_order.py, which topologically sorts this file.
+# A dependency cycle means a concept is mis-decomposed and must be split.
+#
+# ID FORMAT:  {DOMAIN}-{LAYER}{TIER}-{CHAPTER}-{SEQ}
+#   DOMAIN  MATH ORIENT PROF PHYS MECH THRM ELEC CTRL
+#           CHE CIV ECE ENV IND MEC OTH  BRDG
+#   LAYER   0 1 2 3
+#   TIER    A-F for layers 1 and 2; omitted for layers 0 and 3
+#   Example: MECH-2C-024-01
+# =====================================================================
+
+schema_version: 2
+
+# ---------------------------------------------------------------------
+# FIELD DEFINITIONS (documentation only; not parsed)
+# ---------------------------------------------------------------------
+_schema:
+  id:                   "required, unique, matches ID FORMAT above"
+  title:                "required, imperative or noun phrase, sentence case"
+  chapter:              "required, e.g. 01-02"
+  layer:                "required, 0|1|2|3"
+  tier:                 "required for layers 1-2, one of A B C D E F; null for layers 0 and 3"
+  track:                "required for layer 3, one of the seven disciplines; null otherwise"
+  prerequisites:        "list of ledger IDs. [] only for true axioms."
+  introduces_terms:     "terms first DEFINED here. Feeds glossary + linter."
+  introduces_symbols:   "symbols first DEFINED here. Must exist in notation.md."
+  uses_symbols:         "symbols used but defined elsewhere. Linter checks order."
+  handbook_ref:         "section name + page in Handbook 10.6, or null"
+  handbook_verified:    "true only if page confirmed against the PDF"
+  spec_lines:           "list of {discipline, area, item} from NCEES specs"
+  memorize:             "true if NOT in the Handbook and must be known cold"
+  memorize_despite_handbook: "true if IN the Handbook but still worth knowing cold (time cost of lookup exceeds benefit)"
+  primer_source:        "chapter ID that borrows this concept in a Primer block; null if not borrowed"
+  review_questions:     "count authored"
+  practice_problems:    "count authored"
+  figures:              "list of figure IDs introduced in this concept's chapter"
+  status:               "planned | drafted | reviewed | verified"
+  notes:                "free-form authoring notes; not student-facing"
+
+# =====================================================================
+# LAYER 0 — ORIENTATION
+# =====================================================================
+
+- id: ORIENT-0-001-01
+  title: How this guide is organized
+  chapter: "00-01"
+  layer: 0
+  tier: null
+  track: null
+  prerequisites: []
+  introduces_terms:
+    - route map
+    - layer
+    - tier
+    - prerequisite
+    - test-out quiz
+    - skip-if line
+    - primer
+    - preview note
+    - forward reference
+  introduces_symbols: []
+  uses_symbols: []
+  handbook_ref: null
+  handbook_verified: false
+  spec_lines: []
+  memorize: false
+  memorize_despite_handbook: false
+  primer_source: null
+  review_questions: 10
+  practice_problems: 0
+  figures:
+    - FIG-00-01-001
+    - FIG-00-01-002
+  status: drafted
+
+- id: ORIENT-0-002-01
+  title: FE exam format and administration
+  chapter: "00-02"
+  layer: 0
+  tier: null
+  track: null
+  prerequisites:
+    - ORIENT-0-001-01
+  introduces_terms:
+    - computer-based test
+    - CBT
+    - scheduled break
+    - alternative item type
+    - cut score
+    - diagnostic report
+    - appointment
+    - exam specification
+    - Engineer Intern
+    - EIT
+    - NCEES
+    - state board
+  introduces_symbols: []
+  uses_symbols: []
+  handbook_ref: null
+  handbook_verified: false
+  spec_lines: []
+  memorize: false
+  memorize_despite_handbook: false
+  primer_source: null
+  review_questions: 17
+  practice_problems: 4
+  figures:
+    - FIG-00-02-001
+  status: drafted
+  notes: >
+    Per all seven spec sheets: 110 questions; 6-hour appointment including
+    tutorial and optional scheduled break; closed book with electronic
+    reference; both SI and USCS units used. VERIFY these facts against
+    current NCEES publications before each release cycle.
+
+- id: ORIENT-0-003-01
+  title: Navigating the FE Reference Handbook
+  chapter: "00-03"
+  layer: 0
+  tier: null
+  track: null
+  prerequisites:
+    - ORIENT-0-002-01
+  introduces_terms:
+    - FE Reference Handbook
+    - general sections
+    - discipline sections
+    - look-up knowledge
+    - memorize knowledge
+    - three-pass method
+    - search-term construction
+    - notation collision
+    - personal page map
+    - errata
+  introduces_symbols: []
+  uses_symbols: []
+  handbook_ref:
+    section: "Introduction"
+    page: iii
+  handbook_verified: true
+  spec_lines: []
+  memorize: false
+  memorize_despite_handbook: false
+  primer_source: null
+  review_questions: 23
+  practice_problems: 4
+  figures:
+    - FIG-00-03-001
+    - FIG-00-03-002
+  status: drafted
+  notes: >
+    The Handbook Introduction states it does not contain all information
+    required to answer every exam question. Chapter 00-03 teaches readers
+    to distinguish look-up from memorize knowledge and to navigate the
+    document under time pressure. Page numbers verified from Handbook 10.6
+    table of contents.
+
+# =====================================================================
+# LAYER 1, TIER A — QUANTITIES AND FOUNDATIONS
+# =====================================================================
+
+- id: MATH-1A-001-01
+  title: Place value, arithmetic operations, and order of operations
+  chapter: "01-01"
+  layer: 1
+  tier: A
+  track: null
+  prerequisites: []
+  introduces_terms:
+    - integer
+    - rational number
+    - irrational number
+    - real number
+    - order of operations
+    - absolute value
+    - mantissa
+    - exponent
+    - scientific notation
+    - renormalize
+    - order of magnitude
+    - engineering notation
+  introduces_symbols:
+    - N_mantissa
+    - x_exponent
+  uses_symbols: []
+  handbook_ref: null
+  handbook_verified: false
+  spec_lines: []
+  memorize: true
+  memorize_despite_handbook: false
+  primer_source: null
+  review_questions: 9
+  practice_problems: 10
+  figures:
+    - FIG-01-01-001
+  status: drafted
+
+- id: MATH-1A-001-02
+  title: Scientific notation and orders of magnitude
+  chapter: "01-01"
+  layer: 1
+  tier: A
+  track: null
+  prerequisites:
+    - MATH-1A-001-01
+  introduces_terms:
+    - scientific notation
+    - mantissa
+    - order of magnitude
+    - renormalize
+  introduces_symbols: []
+  uses_symbols: []
+  handbook_ref: null
+  handbook_verified: false
+  spec_lines: []
+  memorize: true
+  memorize_despite_handbook: false
+  primer_source: null
+  review_questions: 0
+  practice_problems: 0
+  figures: []
+  status: drafted
+  notes: >
+    Folded into MATH-1A-001-01 chapter. Kept as separate ledger entry to
+    allow prerequisite tracking from downstream chapters.
+
+- id: MATH-1A-001-03
+  title: Metric prefixes and engineering notation
+  chapter: "01-01"
+  layer: 1
+  tier: A
+  track: null
+  prerequisites:
+    - MATH-1A-001-02
+  introduces_terms:
+    - SI prefix
+    - engineering notation
+    - squared prefix
+  introduces_symbols: []
+  uses_symbols: []
+  handbook_ref:
+    section: "Units and Conversion Factors"
+    page: 1
+  handbook_verified: true
+  spec_lines: []
+  memorize: false
+  memorize_despite_handbook: true
+  primer_source: null
+  review_questions: 0
+  practice_problems: 0
+  figures:
+    - FIG-01-01-002
+    - FIG-01-01-003
+    - FIG-01-01-004
+  status: drafted
+  notes: >
+    Prefix table IS in the Handbook p.1 but memorize_despite_handbook is
+    true: a lookup costs 15-20 seconds and prefixes appear on a large
+    fraction of questions. Time cost of lookup exceeds benefit for this
+    high-frequency reference.
+
+- id: MATH-1A-002-01
+  title: Physical quantities, base units, and derived units
+  chapter: "01-02"
+  layer: 1
+  tier: A
+  track: null
+  prerequisites:
+    - MATH-1A-001-03
+  introduces_terms:
+    - physical quantity
+    - dimension
+    - unit
+    - base unit
+    - derived unit
+    - SI
+    - USCS
+    - coherent system
+    - over-determined system
+    - dimensional homogeneity
+  introduces_symbols: []
+  uses_symbols: []
+  handbook_ref:
+    section: "Units and Conversion Factors"
+    page: 1
+  handbook_verified: true
+  spec_lines:
+    - {discipline: chemical, area: 1, item: F}
+  memorize: true
+  memorize_despite_handbook: false
+  primer_source: null
+  review_questions: 13
+  practice_problems: 10
+  figures:
+    - FIG-01-02-001
+    - FIG-01-02-002
+    - FIG-01-02-003
+    - FIG-01-02-004
+    - FIG-01-02-005
+  status: drafted
+
+- id: MATH-1A-002-02
+  title: Unit conversion by the factor-label method
+  chapter: "01-02"
+  layer: 1
+  tier: A
+  track: null
+  prerequisites:
+    - MATH-1A-002-01
+  introduces_terms:
+    - factor-label method
+    - conversion factor
+    - unit cancellation
+  introduces_symbols: []
+  uses_symbols: []
+  handbook_ref:
+    section: "Units and Conversion Factors"
+    page: 3
+  handbook_verified: true
+  spec_lines: []
+  memorize: true
+  memorize_despite_handbook: false
+  primer_source: null
+  review_questions: 0
+  practice_problems: 0
+  figures: []
+  status: drafted
+
+- id: MATH-1A-002-03
+  title: Pound-mass, pound-force, and the constant g_c
+  chapter: "01-02"
+  layer: 1
+  tier: A
+  track: null
+  prerequisites:
+    - MATH-1A-002-02
+  introduces_terms:
+    - pound-mass
+    - pound-force
+    - slug
+    - standard gravity
+    - specific weight
+    - mass
+    - weight
+  introduces_symbols:
+    - g_c
+    - g
+    - F_W
+    - SW
+    - rho_density
+  uses_symbols: []
+  handbook_ref:
+    section: "Units and Conversion Factors"
+    page: 1
+  handbook_verified: true
+  spec_lines:
+    - {discipline: other, area: 8, item: I}
+  memorize: true
+  memorize_despite_handbook: true
+  primer_source: null
+  review_questions: 0
+  practice_problems: 0
+  figures:
+    - FIG-01-02-006
+    - FIG-01-02-007
+  status: drafted
+  notes: >
+    HIGH LEVERAGE. g_c IS in the Handbook p.1 but memorize_despite_handbook
+    is true: g_c = 32.174 lbm·ft/(lbf·s²) must be automatic for all USCS
+    mechanics, fluids, and thermo problems. g_c family equations are also in
+    the Handbook but the structural understanding (why g_c exists) is not and
+    is critical for correct application.
+
+- id: MATH-1A-002-04
+  title: Temperature scales and fundamental physical constants
+  chapter: "01-02"
+  layer: 1
+  tier: A
+  track: null
+  prerequisites:
+    - MATH-1A-002-03
+  introduces_terms:
+    - absolute temperature scale
+    - relative temperature scale
+    - temperature difference
+    - universal gas constant
+    - specific gas constant
+  introduces_symbols:
+    - T_temp
+    - Delta_T
+    - R_bar
+    - sigma_SB
+  uses_symbols:
+    - g_c
+    - g
+  handbook_ref:
+    section: "Units and Conversion Factors"
+    page: 2
+  handbook_verified: true
+  spec_lines: []
+  memorize: false
+  memorize_despite_handbook: true
+  primer_source: null
+  review_questions: 0
+  practice_problems: 0
+  figures:
+    - FIG-01-02-008
+    - FIG-01-02-009
+    - FIG-01-02-010
+  status: drafted
+  notes: >
+    Temperature conversions ARE in the Handbook p.1 but
+    memorize_despite_handbook is true: four conversions used constantly.
+    Which equations require absolute scale is NOT in the Handbook — memorize.
+
+- id: MATH-1A-003-01
+  title: Accuracy, precision, and types of error
+  chapter: "01-03"
+  layer: 1
+  tier: A
+  track: null
+  prerequisites:
+    - MATH-1A-002-02
+  introduces_terms:
+    - accuracy
+    - precision
+    - systematic error
+    - random error
+    - absolute error
+    - relative error
+    - percent error
+  introduces_symbols:
+    - E_abs
+    - E_rel
+    - E_pct
+    - x_true
+    - x_meas
+  uses_symbols: []
+  handbook_ref:
+    section: "Units and Conversion Factors"
+    page: 2
+  handbook_verified: true
+  spec_lines:
+    - {discipline: chemical, area: 1, item: F}
+    - {discipline: mechanical, area: 13, item: D}
+  memorize: true
+  memorize_despite_handbook: false
+  primer_source: null
+  review_questions: 9
+  practice_problems: 7
+  figures:
+    - FIG-01-03-001
+  status: drafted
+
+- id: MATH-1A-003-02
+  title: Significant figures and the six Handbook rules
+  chapter: "01-03"
+  layer: 1
+  tier: A
+  track: null
+  prerequisites:
+    - MATH-1A-003-01
+    - MATH-1A-001-02
+  introduces_terms:
+    - significant figures
+    - leading zeros
+    - trailing zeros
+    - exact number
+    - engineering convention
+    - intermediate rounding
+    - catastrophic cancellation
+  introduces_symbols: []
+  uses_symbols: []
+  handbook_ref:
+    section: "Units and Conversion Factors"
+    page: 2
+  handbook_verified: true
+  spec_lines:
+    - {discipline: chemical, area: 1, item: F}
+    - {discipline: mechanical, area: 13, item: D}
+  memorize: false
+  memorize_despite_handbook: false
+  primer_source: null
+  review_questions: 16
+  practice_problems: 9
+  figures:
+    - FIG-01-03-002
+    - FIG-01-03-003
+  status: drafted
+  notes: >
+    Six sig-fig rules ARE in Handbook p.2 but intermediate rounding,
+    catastrophic cancellation, and the accuracy/precision framework are NOT.
+    Those are memorize: true concepts wrapped inside this chapter.
+
+# =====================================================================
+# LAYER 1, TIER B — ALGEBRA AND GEOMETRY
+# =====================================================================
+
+- id: MATH-1B-004-01
+  title: Expressions, equations, and inequalities
+  chapter: "01-04"
+  layer: 1
+  tier: B
+  track: null
+  prerequisites:
+    - MATH-1A-001-01
+    - MATH-1A-002-02
+    - MATH-1A-003-02
+  introduces_terms:
+    - expression
+    - equation
+    - inequality
+    - like terms
+    - difference of squares
+    - perfect square trinomial
+    - isolate
+    - extraneous solution
+    - interval notation
+    - open interval
+    - closed interval
+    - compound inequality
+    - union
+    - safety factor
+  introduces_symbols:
+    - interval_open
+    - interval_closed
+    - union_symbol
+    - infinity_symbol
+    - element_of
+  uses_symbols: []
+  handbook_ref:
+    section: "Mathematics"
+    page: 37
+  handbook_verified: true
+  spec_lines: []
+  memorize: true
+  memorize_despite_handbook: false
+  primer_source: null
+  review_questions: 8
+  practice_problems: 19
+  figures: []
+  status: drafted
+
+- id: MATH-1B-005-01
+  title: Exponents, radicals, and logarithms
+  chapter: "01-05"
+  layer: 1
+  tier: B
+  track: null
+  prerequisites:
+    - MATH-1B-004-01
+  introduces_terms:
+    - base
+    - fractional exponent
+    - radical
+    - rationalize
+    - conjugate
+    - exponential function
+    - Euler's number e
+    - time constant tau
+    - five-tau rule
+    - logarithm
+    - common logarithm
+    - natural logarithm
+    - change-of-base formula
+    - decibel
+  introduces_symbols:
+    - e_euler
+    - ln
+    - log_10
+    - tau_time
+    - dB
+    - dBm
+  uses_symbols: []
+  handbook_ref:
+    section: "Mathematics"
+    page: 37
+  handbook_verified: true
+  spec_lines: []
+  memorize: false
+  memorize_despite_handbook: false
+  primer_source: null
+  review_questions: 8
+  practice_problems: 19
+  figures: []
+  status: drafted
+  notes: >
+    Exponent laws and logarithm laws ARE in Handbook p.37. Euler's number e,
+    the 5-tau rule, the equation-solving strategies, and extraneous-solution
+    check are NOT — memorize: true for those sub-concepts wrapped here.
+
+- id: MATH-1B-006-01
+  title: Functions, graphs, and transformations
+  chapter: "01-06"
+  layer: 1
+  tier: B
+  track: null
+  prerequisites:
+    - MATH-1B-005-01
+    - MATH-1A-001-01
+  introduces_terms:
+    - function
+    - vertical line test
+    - domain
+    - range
+    - composite function
+    - one-to-one function
+    - horizontal line test
+    - inverse function
+    - vertical shift
+    - horizontal shift
+    - vertical stretch
+    - horizontal stretch
+    - reflection
+    - even function
+    - odd function
+    - piecewise function
+    - asymptote
+    - parent function
+    - saturating exponential
+  introduces_symbols:
+    - f_compose_g
+    - f_inverse
+    - D_f
+    - R_f
+  uses_symbols:
+    - e_euler
+    - tau_time
+  handbook_ref:
+    section: "Mathematics"
+    page: 36
+  handbook_verified: true
+  spec_lines: []
+  memorize: true
+  memorize_despite_handbook: false
+  primer_source: null
+  review_questions: 8
+  practice_problems: 17
+  figures: []
+  status: drafted
+
+- id: MATH-1B-007-01
+  title: Polynomials and their roots
+  chapter: "01-07"
+  layer: 1
+  tier: B
+  track: null
+  prerequisites:
+    - MATH-1B-006-01
+  introduces_terms:
+    - polynomial
+    - degree
+    - leading coefficient
+    - root
+    - multiplicity
+    - fundamental theorem of algebra
+    - remainder theorem
+    - factor theorem
+    - synthetic division
+    - discriminant
+    - complex conjugate roots
+    - completing the square
+    - quadratic formula
+    - rational root theorem
+    - Vieta's formulas
+    - end behavior
+    - physics-extraneous root
+  introduces_symbols:
+    - Delta_discriminant
+  uses_symbols:
+    - i_imaginary
+  handbook_ref:
+    section: "Mathematics"
+    page: 37
+  handbook_verified: true
+  spec_lines: []
+  memorize: false
+  memorize_despite_handbook: true
+  primer_source: null
+  review_questions: 8
+  practice_problems: 19
+  figures: []
+  status: drafted
+  notes: >
+    Quadratic formula and discriminant ARE in Handbook p.37 but
+    memorize_despite_handbook is true: the formula must be automatic.
+    Synthetic division, rational root theorem, Vieta's formulas, root
+    multiplicity rules, and end behavior rules are NOT in the Handbook.
+
+- id: MATH-1B-008-01
+  title: Systems of linear equations
+  chapter: "01-08"
+  layer: 1
+  tier: B
+  track: null
+  prerequisites:
+    - MATH-1B-004-01
+    - MATH-1B-006-01
+  introduces_terms:
+    - linear system
+    - consistent system
+    - inconsistent system
+    - independent system
+    - dependent system
+    - Gaussian elimination
+    - back-substitution
+    - augmented matrix
+    - row operation
+    - upper triangular form
+    - Cramer's rule
+    - determinant
+    - parametric solution
+  introduces_symbols:
+    - augmented_matrix
+    - row_op_notation
+    - D_determinant
+    - D_x
+    - D_y
+  uses_symbols: []
+  handbook_ref:
+    section: "Mathematics"
+    page: 37
+  handbook_verified: true
+  spec_lines: []
+  memorize: false
+  memorize_despite_handbook: false
+  primer_source: null
+  review_questions: 6
+  practice_problems: 14
+  figures: []
+  status: drafted
+  notes: >
+    Cramer's rule for 2x2 and 3x3 IS in Handbook p.37. Gaussian elimination
+    procedure, row operation notation, inconsistent/dependent recognition, and
+    setup methodology are NOT — memorize for those sub-concepts.
+
+- id: MATH-1B-009-01
+  title: Analytic geometry — lines, conics, and distances
+  chapter: "01-09"
+  layer: 1
+  tier: B
+  track: null
+  prerequisites:
+    - MATH-1B-007-01
+    - MATH-1B-008-01
+    - MATH-1B-006-01
+  introduces_terms:
+    - slope
+    - slope-intercept form
+    - point-slope form
+    - general form line
+    - perpendicular slopes
+    - distance formula
+    - midpoint
+    - circle
+    - parabola
+    - focus
+    - directrix
+    - ellipse
+    - semi-major axis
+    - semi-minor axis
+    - hyperbola
+    - asymptote_conic
+    - eccentricity
+    - completing the square conic
+  introduces_symbols:
+    - m_slope
+    - r_radius
+    - h_k_center
+    - a_b_axes
+    - c_focal
+    - e_eccentricity
+  uses_symbols:
+    - Delta_discriminant
+  handbook_ref:
+    section: "Mathematics"
+    page: 37
+  handbook_verified: true
+  spec_lines: []
+  memorize: false
+  memorize_despite_handbook: false
+  primer_source: null
+  review_questions: 11
+  practice_problems: 22
+  figures: []
+  status: drafted
+
+- id: MATH-1B-010-01
+  title: Areas, volumes, and mensuration
+  chapter: "01-10"
+  layer: 1
+  tier: B
+  track: null
+  prerequisites:
+    - MATH-1B-009-01
+  introduces_terms:
+    - mensuration
+    - centroid
+    - composite shape
+    - semi-perimeter
+    - slant height
+    - frustum
+    - solid of revolution
+    - Pappus's theorem
+    - torus
+    - sector
+  introduces_symbols:
+    - A_area
+    - V_volume
+    - S_surface
+    - x_bar_centroid
+    - y_bar_centroid
+  uses_symbols:
+    - rho_density
+    - SW
+    - g_c
+    - g
+  handbook_ref:
+    section: "Mathematics"
+    page: 41
+  handbook_verified: true
+  spec_lines: []
+  memorize: false
+  memorize_despite_handbook: false
+  primer_source: null
+  review_questions: 5
+  practice_problems: 13
+  figures: []
+  status: drafted
+  notes: >
+    Full mensuration tables ARE in Handbook pp.41-44. Composite centroid
+    procedure, area-weighted average formula, and squared/cubed conversion
+    rule are NOT — memorize for those sub-concepts.
+
+- id: MATH-1B-011-01
+  title: Trigonometry — unit circle and standard angles
+  chapter: "01-11"
+  layer: 1
+  tier: B
+  track: null
+  prerequisites:
+    - MATH-1B-009-01
+    - MATH-1B-006-01
+  introduces_terms:
+    - radian
+    - unit circle
+    - SOH-CAH-TOA
+    - reference angle
+    - CAST rule
+    - Pythagorean identity
+    - law of sines
+    - law of cosines
+    - ambiguous case
+    - sum formula
+    - double-angle formula
+    - inverse trig function
+    - force decomposition
+  introduces_symbols:
+    - theta_angle
+    - phi_angle
+    - sin_theta
+    - cos_theta
+    - tan_theta
+    - csc_theta
+    - sec_theta
+    - cot_theta
+    - arcsin
+    - arccos
+    - arctan
+  uses_symbols: []
+  handbook_ref:
+    section: "Mathematics"
+    page: 39
+  handbook_verified: true
+  spec_lines: []
+  memorize: false
+  memorize_despite_handbook: true
+  primer_source: null
+  review_questions: 6
+  practice_problems: 15
+  figures:
+    - FIG-01-11-001
+    - FIG-01-11-002
+    - FIG-01-11-003
+    - FIG-01-11-004
+    - FIG-01-11-005
+    - FIG-01-11-006
+  status: drafted
+  notes: >
+    All identities and law formulas ARE in Handbook pp.39-41.
+    memorize_despite_handbook is true for standard angle values — needed
+    constantly, lookup cost too high. CAST rule, SOH-CAH-TOA procedure,
+    arctan quadrant correction, ambiguous case conditions, and
+    decompose-and-sum procedure are NOT in Handbook — memorize.
+
+- id: MATH-1B-011-02
+  title: Law of sines — application and ambiguous case
+  chapter: "01-11"
+  layer: 1
+  tier: B
+  track: null
+  prerequisites:
+    - MATH-1B-011-01
+  introduces_terms: []
+  introduces_symbols: []
+  uses_symbols:
+    - theta_angle
+    - sin_theta
+  handbook_ref:
+    section: "Mathematics"
+    page: 40
+  handbook_verified: true
+  spec_lines: []
+  memorize: false
+  memorize_despite_handbook: false
+  primer_source: null
+  review_questions: 0
+  practice_problems: 0
+  figures:
+    - FIG-01-11-005
+  status: drafted
+
+- id: MATH-1B-011-03
+  title: Trig identities and the double-angle formulas
+  chapter: "01-11"
+  layer: 1
+  tier: B
+  track: null
+  prerequisites:
+    - MATH-1B-011-01
+  introduces_terms: []
+  introduces_symbols: []
+  uses_symbols:
+    - theta_angle
+    - sin_theta
+    - cos_theta
+    - tan_theta
+  handbook_ref:
+    section: "Mathematics"
+    page: 40
+  handbook_verified: true
+  spec_lines: []
+  memorize: false
+  memorize_despite_handbook: false
+  primer_source: null
+  review_questions: 0
+  practice_problems: 0
+  figures: []
+  status: drafted
+
+- id: MATH-1B-011-04
+  title: Law of sines — solving for unknown sides and angles
+  chapter: "01-11"
+  layer: 1
+  tier: B
+  track: null
+  prerequisites:
+    - MATH-1B-011-01
+  introduces_terms: []
+  introduces_symbols: []
+  uses_symbols:
+    - theta_angle
+    - sin_theta
+  handbook_ref:
+    section: "Mathematics"
+    page: 40
+  handbook_verified: true
+  spec_lines:
+    - {discipline: civil, area: 9, item: A}
+    - {discipline: mechanical, area: 6, item: A}
+  memorize: false
+  memorize_despite_handbook: false
+  primer_source: null
+  review_questions: 0
+  practice_problems: 0
+  figures: []
+  status: drafted
+  notes: >
+    Separate entry from 011-02 so that downstream statics chapters
+    (MECH-2C-024-01) can declare the precise prerequisite.
+
+- id: MATH-TRIG-011-10
+  title: Angle between two lines
+  layer: 1
+  tier: B
+  prerequisites:
+    - MATH-GEOM-001   # 01-09 §9.1 slope
+    - MATH-TRIG-002   # tangent definition
+    - MATH-TRIG-0XX   # angle of inclination
+    - MATH-TRIG-0XX   # tangent difference identity
+    - MATH-TRIG-0XX   # inverse tangent
+  introduces_symbols: 
+  - theta
+  - alpha
+  introduces_terms: 
+   - angle of inclination
+   - angle between two lines
+
+- id: MATH-1B-012-01
+  title: Complex numbers — rectangular and polar forms
+  chapter: "01-12"
+  layer: 1
+  tier: B
+  track: null
+  prerequisites:
+    - MATH-1B-011-01
+    - MATH-1B-007-01
+    - MATH-1B-005-01
+  introduces_terms:
+    - imaginary unit j
+    - complex number
+    - complex plane
+    - modulus
+    - argument
+    - rectangular form
+    - polar form
+    - complex conjugate
+    - Euler's formula
+    - Euler's identity
+    - De Moivre's theorem
+    - phasor
+    - Argand diagram
+  introduces_symbols:
+    - j_imaginary
+    - z_complex
+    - z_conjugate
+    - r_modulus
+    - angle_notation
+    - exp_polar
+  uses_symbols:
+    - e_euler
+    - theta_angle
+    - sin_theta
+    - cos_theta
+  handbook_ref:
+    section: "Mathematics"
+    page: 38
+  handbook_verified: true
+  spec_lines:
+    - {discipline: electrical, area: 1, item: A}
+    - {discipline: mechanical, area: 1, item: B}
+  memorize: false
+  memorize_despite_handbook: false
+  primer_source: null
+  review_questions: 7
+  practice_problems: 18
+  figures:
+    - FIG-01-12-001
+    - FIG-01-12-002
+    - FIG-01-12-003
+  status: drafted
+  notes: >
+    Rectangular form, polar form, Euler's formula, multiplication/division
+    rules, and De Moivre's theorem ARE in Handbook pp.38-39.
+    Powers-of-j cycle, conjugate-multiplication division procedure, nth root
+    formula with all k values, phasor physical interpretation, and quadrant
+    correction for argument are NOT — memorize.
+
+- id: MATH-1B-012-02
+  title: Complex arithmetic — multiplication, division, and powers
+  chapter: "01-12"
+  layer: 1
+  tier: B
+  track: null
+  prerequisites:
+    - MATH-1B-012-01
+  introduces_terms: []
+  introduces_symbols: []
+  uses_symbols:
+    - j_imaginary
+    - z_complex
+    - r_modulus
+    - theta_angle
+    - angle_notation
+  handbook_ref:
+    section: "Mathematics"
+    page: 38
+  handbook_verified: true
+  spec_lines: []
+  memorize: false
+  memorize_despite_handbook: false
+  primer_source: null
+  review_questions: 0
+  practice_problems: 0
+  figures: []
+  status: drafted
+
+- id: MATH-1B-012-03
+  title: Phasor representation of AC signals
+  chapter: "01-12"
+  layer: 1
+  tier: B
+  track: null
+  prerequisites:
+    - MATH-1B-012-01
+    - MATH-1B-011-01
+  introduces_terms: []
+  introduces_symbols: []
+  uses_symbols:
+    - j_imaginary
+    - z_complex
+    - r_modulus
+    - theta_angle
+    - angle_notation
+    - omega_angular
+  handbook_ref: null
+  handbook_verified: false
+  spec_lines:
+    - {discipline: electrical, area: 3, item: A}
+  memorize: true
+  memorize_despite_handbook: false
+  primer_source: null
+  review_questions: 0
+  practice_problems: 0
+  figures:
+    - FIG-01-12-003
+  status: drafted
+  notes: >
+    Preview concept. Full AC phasor analysis is in Chapter 02-64.
+    This entry lets Chapter 02-64 declare MATH-1B-012-03 as a prerequisite.
+
+- id: MATH-1B-013-01
+  title: Vectors — components, magnitude, and unit vectors
+  chapter: "01-13"
+  layer: 1
+  tier: B
+  track: null
+  prerequisites:
+    - MATH-1B-011-01
+    - MATH-1B-009-01
+    - MATH-1B-012-01
+  introduces_terms:
+    - scalar
+    - vector
+    - component
+    - unit vector
+    - direction cosines
+  introduces_symbols:
+    - vec_A
+    - hat_A
+    - i_hat
+    - j_hat
+    - k_hat
+    - A_x
+    - A_y
+    - A_z
+    - cos_alpha
+    - cos_beta
+    - cos_gamma
+  uses_symbols:
+    - theta_angle
+  handbook_ref:
+    section: "Mathematics"
+    page: 37
+  handbook_verified: true
+  spec_lines: []
+  memorize: false
+  memorize_despite_handbook: false
+  primer_source: null
+  review_questions: 6
+  practice_problems: 14
+  figures:
+    - FIG-01-13-001
+    - FIG-01-13-002
+  status: drafted
+
+- id: MATH-1B-013-02
+  title: Dot product and vector projection
+  chapter: "01-13"
+  layer: 1
+  tier: B
+  track: null
+  prerequisites:
+    - MATH-1B-013-01
+  introduces_terms:
+    - dot product
+    - scalar projection
+    - vector projection
+  introduces_symbols:
+    - dot_product_notation
+  uses_symbols:
+    - vec_A
+    - hat_A
+    - theta_angle
+  handbook_ref:
+    section: "Mathematics"
+    page: 37
+  handbook_verified: true
+  spec_lines:
+    - {discipline: civil, area: 4, item: A}
+    - {discipline: mechanical, area: 6, item: A}
+  memorize: false
+  memorize_despite_handbook: false
+  primer_source: null
+  review_questions: 0
+  practice_problems: 0
+  figures:
+    - FIG-01-13-003
+  status: drafted
+  notes: >
+    Separate entry so Chapter 01-14 (matrices) and Tier 2C chapters can
+    declare this precise prerequisite. The dot product as work interpretation
+    (W = F·d) is memorize: true and carried in this entry's chapter.
+
+- id: MATH-1B-013-03
+  title: Cross product and moment of a force
+  chapter: "01-13"
+  layer: 1
+  tier: B
+  track: null
+  prerequisites:
+    - MATH-1B-013-02
+    - MATH-1B-008-01
+  introduces_terms:
+    - cross product
+    - right-hand rule
+    - moment
+    - scalar triple product
+    - coplanar
+  introduces_symbols:
+    - cross_product_notation
+    - M_moment
+    - r_position_vec
+  uses_symbols:
+    - vec_A
+    - hat_A
+    - i_hat
+    - j_hat
+    - k_hat
+    - theta_angle
+    - D_determinant
+  handbook_ref:
+    section: "Mathematics"
+    page: 37
+  handbook_verified: true
+  spec_lines:
+    - {discipline: civil, area: 4, item: B}
+    - {discipline: mechanical, area: 6, item: B}
+    - {discipline: other, area: 8, item: F}
+  memorize: false
+  memorize_despite_handbook: false
+  primer_source: null
+  review_questions: 0
+  practice_problems: 0
+  figures:
+    - FIG-01-13-004
+  status: drafted
+  notes: >
+    The determinant IS used in the Handbook for the cross product expansion.
+    Unit vector cyclic cross products, direction cosine identity, and moment
+    formula interpretation are NOT — memorize.
+
+- id: MATH-1B-013-04
+  title: Vector resolution into components in 2D and 3D
+  chapter: "01-13"
+  layer: 1
+  tier: B
+  track: null
+  prerequisites:
+    - MATH-1B-013-01
+    - MATH-1B-011-01
+  introduces_terms: []
+  introduces_symbols: []
+  uses_symbols:
+    - vec_A
+    - i_hat
+    - j_hat
+    - k_hat
+    - A_x
+    - A_y
+    - A_z
+    - theta_angle
+    - sin_theta
+    - cos_theta
+  handbook_ref:
+    section: "Mathematics"
+    page: 37
+  handbook_verified: true
+  spec_lines:
+    - {discipline: civil, area: 4, item: A}
+    - {discipline: mechanical, area: 6, item: A}
+  memorize: true
+  memorize_despite_handbook: false
+  primer_source: null
+  review_questions: 0
+  practice_problems: 0
+  figures: []
+  status: drafted
+  notes: >
+    Separate entry from 013-01 to allow MECH-2C-022-03 (free-body diagram)
+    and MECH-2C-024-01 (method of joints) to declare this specific
+    prerequisite.
+
+# =====================================================================
+# SEED ENTRIES FOR DOWNSTREAM VALIDATION
+# =====================================================================
+# Included so build_order.py and lint_forward_refs.py can be tested
+# against a multi-layer graph before Layer 2 is authored.
+
+- id: MECH-2C-022-03
+  title: Constructing a free-body diagram
+  chapter: "02-22"
+  layer: 2
+  tier: C
+  track: null
+  prerequisites:
+    - MATH-1B-013-04
+    - MATH-1A-002-03
+  introduces_terms:
+    - free-body diagram
+    - applied force
+    - reaction force
+    - body isolation
+  introduces_symbols:
+    - F
+  uses_symbols:
+    - g
+    - g_c
+    - vec_A
+    - i_hat
+    - j_hat
+    - k_hat
+  handbook_ref:
+    section: "Statics"
+    page: 95
+  handbook_verified: true
+  spec_lines:
+    - {discipline: other, area: 8, item: H}
+  memorize: true
+  memorize_despite_handbook: false
+  primer_source: null
+  review_questions: 12
+  practice_problems: 10
+  figures: []
+  status: planned
+
+- id: MECH-2C-023-01
+  title: Equilibrium equations for a 2D concurrent force system
+  chapter: "02-23"
+  layer: 2
+  tier: C
+  track: null
+  prerequisites:
+    - MECH-2C-022-03
+    - MATH-1B-013-02
+  introduces_terms:
+    - equilibrium
+    - concurrent forces
+    - resultant
+  introduces_symbols: []
+  uses_symbols:
+    - F
+    - vec_A
+    - i_hat
+    - j_hat
+  handbook_ref:
+    section: "Statics"
+    page: 95
+  handbook_verified: false
+  spec_lines:
+    - {discipline: civil, area: 4, item: A}
+    - {discipline: mechanical, area: 6, item: A}
+    - {discipline: other, area: 8, item: E}
+  memorize: false
+  memorize_despite_handbook: false
+  primer_source: null
+  review_questions: 0
+  practice_problems: 0
+  figures: []
+  status: planned
+
+- id: MECH-2C-024-01
+  title: Method of joints for planar trusses
+  chapter: "02-24"
+  layer: 2
+  tier: C
+  track: null
+  prerequisites:
+    - MATH-1B-013-02
+    - MATH-1B-011-04
+    - MECH-2C-022-03
+    - MECH-2C-023-01
+  introduces_terms:
+    - truss
+    - pin joint
+    - zero-force member
+    - member force
+  introduces_symbols: []
+  uses_symbols:
+    - F
+    - theta_angle
+  handbook_ref:
+    section: "Statics"
+    page: 98
+  handbook_verified: false
+  spec_lines:
+    - {discipline: civil, area: 4, item: D}
+    - {discipline: mechanical, area: 6, item: D}
+    - {discipline: other, area: 8, item: E}
+  memorize: false
+  memorize_despite_handbook: false
+  primer_source: null
+  review_questions: 12
+  practice_problems: 10
+  figures: []
+  status: planned
+  notes: "handbook_verified false — page 98 inferred from section start p.95."
+
+# =====================================================================
+# HANDBOOK 10.6 SECTION START PAGES (verified from table of contents)
+# =====================================================================
+_handbook_sections:
+  Units and Conversion Factors:            1
+  Ethics and Professional Practice:        4
+  Safety:                                 15
+  Mathematics:                            36
+  Engineering Probability and Statistics: 64
+  Chemistry and Biology:                  86
+  Statics:                                95
+  Dynamics:                              102
+  Materials Science/Structure of Matter:  117
+  Mechanics of Materials:                130
+  Thermodynamics:                        143
+  Fluid Mechanics:                       181
+  Heat Transfer:                         209
+  Instrumentation, Measurement, and Control: 225
+  Engineering Economics:                 235
+  Chemical Engineering:                  243
+  Civil Engineering:                     265
+  Environmental Engineering:             318
+  Electrical and Computer Engineering:   361
+  Industrial and Systems Engineering:    422
+  Mechanical Engineering:                436
+  Index:                                 467
+  Appendix - FE Exam Specifications:     477

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1150" viewBox="0 0 1600 1150" role="img" aria-labelledby="svg-title svg-desc">
+<title id="svg-title">Argand diagram</title>
+<desc id="svg-desc">Complex plane showing z equals a plus jb, modulus, and argument</desc>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#526274"/></marker>
+  <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2F6F9F"/></marker>
+  <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#B94747"/></marker>
+</defs>
+<rect width="1600" height="1150" fill="#FFFFFF"/>
+<text x="70" y="75" font-family="DejaVu Sans, Arial, sans-serif" font-size="40" font-weight="800" fill="#183B5B" text-anchor="start">COMPLEX PLANE — RECTANGULAR AND POLAR VIEWS</text>
+<text x="70" y="120" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="400" fill="#526274" text-anchor="start">A complex number is a point, a vector, and a magnitude–angle pair.</text>
+<line x1="150" y1="890" x2="1450" y2="890" stroke="#183B5B" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="380" y1="1050" x2="380" y2="170" stroke="#183B5B" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="380" y1="890" x2="1160" y2="890" stroke="#2F6F9F" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+<line x1="1160" y1="890" x2="1160" y2="300" stroke="#2A7F7F" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="380" y1="890" x2="1160" y2="300" stroke="#C85D32" stroke-width="9" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="1160" y1="300" x2="1160" y2="890" stroke="#AAB7C4" stroke-width="2" stroke-linecap="round" stroke-dasharray="9 7"/>
+<line x1="1160" y1="300" x2="380" y2="300" stroke="#AAB7C4" stroke-width="2" stroke-linecap="round" stroke-dasharray="9 7"/>
+<circle cx="1160" cy="300" r="12" fill="#C85D32" stroke="#C85D32" stroke-width="2"/>
+<text x="1185" y="280" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="800" fill="#172033" text-anchor="start">z = a + jb</text>
+<text x="770" y="945" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="800" fill="#2F6F9F" text-anchor="middle">a — real component</text>
+<text x="1200" y="600" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="800" fill="#2A7F7F" text-anchor="start">b — imaginary component</text>
+<text x="760" y="550" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" font-weight="800" fill="#C85D32" text-anchor="middle">r = |z|</text>
+<path d="M 540 890 A 160 160 0 0 1 505 790" fill="none" stroke="#D39A22" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+<text x="555" y="790" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="800" fill="#D39A22" text-anchor="start">θ = arg(z)</text>
+<text x="1420" y="930" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="800" fill="#183B5B" text-anchor="start">Re</text>
+<text x="410" y="195" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="800" fill="#183B5B" text-anchor="start">Im</text>
+</svg>

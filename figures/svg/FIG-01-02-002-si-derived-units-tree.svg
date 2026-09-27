@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1300" viewBox="0 0 1900 1300" role="img" aria-labelledby="svg-title svg-desc">
+<title id="svg-title">SI derived-unit tree</title>
+<desc id="svg-desc">Base units kilogram, metre, and second connected through physical definitions to newton, pascal, joule, and watt</desc>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#526274"/></marker>
+  <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2F6F9F"/></marker>
+  <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#B94747"/></marker>
+</defs>
+<rect width="1900" height="1300" fill="#FFFFFF"/>
+<text x="70" y="75" font-family="DejaVu Sans, Arial, sans-serif" font-size="40" font-weight="800" fill="#183B5B" text-anchor="start">SI DERIVED UNITS — FROM BASE UNITS TO ENGINEERING UNITS</text>
+<text x="70" y="120" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="400" fill="#526274" text-anchor="start">Every named derived unit is a compact combination of kg, m, and s.</text>
+<circle cx="420" cy="245" r="90" fill="#E9F1F7" stroke="#183B5B" stroke-width="4"/>
+<text x="420" y="240" font-family="DejaVu Sans, Arial, sans-serif" font-size="40" font-weight="800" fill="#183B5B" text-anchor="middle">kg</text>
+<text x="420" y="280" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="700" fill="#526274" text-anchor="middle">MASS</text>
+<circle cx="950" cy="245" r="90" fill="#E9F1F7" stroke="#183B5B" stroke-width="4"/>
+<text x="950" y="240" font-family="DejaVu Sans, Arial, sans-serif" font-size="40" font-weight="800" fill="#183B5B" text-anchor="middle">m</text>
+<text x="950" y="280" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="700" fill="#526274" text-anchor="middle">LENGTH</text>
+<circle cx="1480" cy="245" r="90" fill="#E9F1F7" stroke="#183B5B" stroke-width="4"/>
+<text x="1480" y="240" font-family="DejaVu Sans, Arial, sans-serif" font-size="40" font-weight="800" fill="#183B5B" text-anchor="middle">s</text>
+<text x="1480" y="280" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="700" fill="#526274" text-anchor="middle">TIME</text>
+<rect x="120" y="415" width="360" height="170" rx="18" fill="#F6F9FB" stroke="#2F6F9F" stroke-width="3" />
+<rect x="120" y="415" width="360" height="62" rx="18" fill="#2F6F9F" stroke="#2F6F9F" stroke-width="0" />
+<text x="145" y="457" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="start">NEWTON</text>
+<text x="145" y="520" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="500" fill="#172033" text-anchor="start">F = ma</text>
+<text x="145" y="563" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="500" fill="#172033" text-anchor="start">N = kg·m/s²</text>
+<rect x="600" y="415" width="360" height="170" rx="18" fill="#F6F9FB" stroke="#2A7F7F" stroke-width="3" />
+<rect x="600" y="415" width="360" height="62" rx="18" fill="#2A7F7F" stroke="#2A7F7F" stroke-width="0" />
+<text x="625" y="457" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="start">PASCAL</text>
+<text x="625" y="520" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="500" fill="#172033" text-anchor="start">p = F/A</text>
+<text x="625" y="563" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="500" fill="#172033" text-anchor="start">Pa = N/m²</text>
+<rect x="1080" y="415" width="360" height="170" rx="18" fill="#F6F9FB" stroke="#D39A22" stroke-width="3" />
+<rect x="1080" y="415" width="360" height="62" rx="18" fill="#D39A22" stroke="#D39A22" stroke-width="0" />
+<text x="1105" y="457" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="start">JOULE</text>
+<text x="1105" y="520" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="500" fill="#172033" text-anchor="start">W = Fd</text>
+<text x="1105" y="563" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="500" fill="#172033" text-anchor="start">J = N·m</text>
+<rect x="1400" y="755" width="360" height="170" rx="18" fill="#F6F9FB" stroke="#C85D32" stroke-width="3" />
+<rect x="1400" y="755" width="360" height="62" rx="18" fill="#C85D32" stroke="#C85D32" stroke-width="0" />
+<text x="1425" y="797" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="800" fill="#FFFFFF" text-anchor="start">WATT</text>
+<text x="1425" y="860" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="500" fill="#172033" text-anchor="start">P = W/t</text>
+<text x="1425" y="903" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="500" fill="#172033" text-anchor="start">W = J/s</text>
+<line x1="420" y1="335" x2="420" y2="390" stroke="#AAB7C4" stroke-width="4" stroke-linecap="round" />
+<line x1="950" y1="335" x2="950" y2="390" stroke="#AAB7C4" stroke-width="4" stroke-linecap="round" />
+<line x1="1480" y1="335" x2="1480" y2="390" stroke="#AAB7C4" stroke-width="4" stroke-linecap="round" />
+<path d="M 420 390 C 420 430 300 420 300 415" fill="none" stroke="#2F6F9F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)"/>
+<path d="M 950 335 C 950 430 330 390 330 415" fill="none" stroke="#2F6F9F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)"/>
+<path d="M 1480 335 C 1480 430 350 380 350 415" fill="none" stroke="#2F6F9F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-blue)"/>
+<line x1="480" y1="500" x2="600" y2="500" stroke="#2A7F7F" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 480 540 C 700 720 1020 500 1080 500" fill="none" stroke="#D39A22" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 1440 500 C 1600 540 1580 690 1580 755" fill="none" stroke="#C85D32" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="260" y="1035" width="1380" height="135" rx="16" fill="#EDF4F8" stroke="#183B5B" stroke-width="2" />
+<text x="950" y="1090" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="800" fill="#183B5B" text-anchor="middle">N → Pa → J → W</text>
+<text x="950" y="1135" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="500" fill="#526274" text-anchor="middle">force → pressure → energy → power</text>
+</svg>

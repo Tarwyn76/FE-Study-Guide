@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1200" viewBox="0 0 1900 1200" role="img" aria-labelledby="svg-title svg-desc">
+<title id="svg-title">SI and USCS system comparison</title>
+<desc id="svg-desc">Comparison of SI, coherent slug USCS, and over-determined pound-mass pound-force USCS</desc>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#526274"/></marker>
+  <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2F6F9F"/></marker>
+  <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#B94747"/></marker>
+</defs>
+<rect width="1900" height="1200" fill="#FFFFFF"/>
+<text x="70" y="75" font-family="DejaVu Sans, Arial, sans-serif" font-size="40" font-weight="800" fill="#183B5B" text-anchor="start">THREE MECHANICAL UNIT SYSTEMS</text>
+<text x="70" y="120" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="400" fill="#526274" text-anchor="start">Only the lbm–lbf form needs the bookkeeping constant g_c.</text>
+<rect x="80" y="230" width="310" height="80" rx="0" fill="#183B5B" stroke="#183B5B" stroke-width="0" />
+<text x="235.0" y="281" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="800" fill="#FFFFFF" text-anchor="middle">FEATURE</text>
+<rect x="390" y="230" width="490" height="80" rx="0" fill="#2F6F9F" stroke="#2F6F9F" stroke-width="0" />
+<text x="635.0" y="281" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="800" fill="#FFFFFF" text-anchor="middle">SI</text>
+<rect x="880" y="230" width="490" height="80" rx="0" fill="#2A7F7F" stroke="#2A7F7F" stroke-width="0" />
+<text x="1125.0" y="281" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="800" fill="#FFFFFF" text-anchor="middle">USCS — SLUG</text>
+<rect x="1370" y="230" width="490" height="80" rx="0" fill="#B94747" stroke="#B94747" stroke-width="0" />
+<text x="1615.0" y="281" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="800" fill="#FFFFFF" text-anchor="middle">USCS — LBM/LBF</text>
+<rect x="80" y="310" width="310" height="150" rx="0" fill="#F2F5F8" stroke="#AAB7C4" stroke-width="2" />
+<text x="235.0" y="398" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="800" fill="#172033" text-anchor="middle">Base units</text>
+<rect x="390" y="310" width="490" height="150" rx="0" fill="#FFFFFF" stroke="#AAB7C4" stroke-width="2" />
+<text x="635.0" y="398" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="700" fill="#172033" text-anchor="middle">3</text>
+<rect x="880" y="310" width="490" height="150" rx="0" fill="#FFFFFF" stroke="#AAB7C4" stroke-width="2" />
+<text x="1125.0" y="398" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="700" fill="#172033" text-anchor="middle">3</text>
+<rect x="1370" y="310" width="490" height="150" rx="0" fill="#FFF0F0" stroke="#B94747" stroke-width="2" />
+<text x="1615.0" y="398" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="700" fill="#B94747" text-anchor="middle">4</text>
+<rect x="80" y="460" width="310" height="150" rx="0" fill="#F2F5F8" stroke="#AAB7C4" stroke-width="2" />
+<text x="235.0" y="548" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="800" fill="#172033" text-anchor="middle">Mass unit</text>
+<rect x="390" y="460" width="490" height="150" rx="0" fill="#FFFFFF" stroke="#AAB7C4" stroke-width="2" />
+<text x="635.0" y="548" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="700" fill="#172033" text-anchor="middle">kilogram (kg)</text>
+<rect x="880" y="460" width="490" height="150" rx="0" fill="#FFFFFF" stroke="#AAB7C4" stroke-width="2" />
+<text x="1125.0" y="548" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="700" fill="#172033" text-anchor="middle">slug</text>
+<rect x="1370" y="460" width="490" height="150" rx="0" fill="#FFF0F0" stroke="#B94747" stroke-width="2" />
+<text x="1615.0" y="548" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="700" fill="#B94747" text-anchor="middle">pound-mass (lbm)</text>
+<rect x="80" y="610" width="310" height="150" rx="0" fill="#F2F5F8" stroke="#AAB7C4" stroke-width="2" />
+<text x="235.0" y="698" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="800" fill="#172033" text-anchor="middle">Force unit</text>
+<rect x="390" y="610" width="490" height="150" rx="0" fill="#FFFFFF" stroke="#AAB7C4" stroke-width="2" />
+<text x="635.0" y="698" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="700" fill="#172033" text-anchor="middle">newton (N)</text>
+<rect x="880" y="610" width="490" height="150" rx="0" fill="#FFFFFF" stroke="#AAB7C4" stroke-width="2" />
+<text x="1125.0" y="698" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="700" fill="#172033" text-anchor="middle">pound-force (lbf)</text>
+<rect x="1370" y="610" width="490" height="150" rx="0" fill="#FFF0F0" stroke="#B94747" stroke-width="2" />
+<text x="1615.0" y="698" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="700" fill="#B94747" text-anchor="middle">pound-force (lbf)</text>
+<rect x="80" y="760" width="310" height="150" rx="0" fill="#F2F5F8" stroke="#AAB7C4" stroke-width="2" />
+<text x="235.0" y="848" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="800" fill="#172033" text-anchor="middle">Second law</text>
+<rect x="390" y="760" width="490" height="150" rx="0" fill="#FFFFFF" stroke="#AAB7C4" stroke-width="2" />
+<text x="635.0" y="848" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#172033" text-anchor="middle">F = ma</text>
+<rect x="880" y="760" width="490" height="150" rx="0" fill="#FFFFFF" stroke="#AAB7C4" stroke-width="2" />
+<text x="1125.0" y="848" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#172033" text-anchor="middle">F = ma</text>
+<rect x="1370" y="760" width="490" height="150" rx="0" fill="#FFF0F0" stroke="#B94747" stroke-width="2" />
+<text x="1615.0" y="848" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#B94747" text-anchor="middle">F = ma/g_c</text>
+<rect x="1370" y="930" width="490" height="150" rx="18" fill="#FCE8E8" stroke="#B94747" stroke-width="4" />
+<text x="1615" y="980" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="800" fill="#B94747" text-anchor="middle">WARNING</text>
+<text x="1615" y="1023" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" font-weight="700" fill="#172033" text-anchor="middle">Over-determined system</text>
+<text x="1615" y="1060" font-family="DejaVu Sans, Arial, sans-serif" font-size="29" font-weight="800" fill="#B94747" text-anchor="middle">requires g_c</text>
+</svg>
