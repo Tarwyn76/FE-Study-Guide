@@ -137,54 +137,45 @@ _todo:
     against the Handbook PDF before release. Any page derived from a
     section start page must be set false and noted.
   figure_audit: >
-    RESOLVED for Layer 0. All five Layer 0 figures are now referenced
-    inline with descriptive alt text. STILL OPEN for 01-01, which declares
-    FIG-01-01-001 through -004 across three atoms and references none of
-    them in the authored markdown. Either author the figures or drop the
-    IDs before marking the chapter verified.
+    Figure ownership and inline references are reconciled through Chapter
+    01-16. The manifest is normalized to its eight-column schema. Continue
+    this audit as later chapters are added.
   split_required_atoms: >
     Ten atoms carry split_required: true. Each mixes Handbook look-up
     content with memorize-cold content, which no single handbook_status
     value can express. Decompose into finer atoms so summary cards can be
     generated per atom.
   chapter_01_01_anatomy: >
-    01-01 is missing the Quick Reference and What's Next sections that
-    00-01 §0.5 declares mandatory, and all three Layer 0 chapters now
-    carry. Add both, plus the "- Your Mentor" sign-off.
+    RESOLVED. Chapter 01-01 includes Quick Reference, What's Next, and the
+    closing sign-off required by the chapter anatomy convention.
   layer_coverage: >
-    Layer 1 is populated through Tier B only. Linear algebra beyond 2x2
-    and 3x3 systems, differential and integral calculus, multivariable
-    calculus, differential equations, numerical methods, and probability
-    and statistics are absent. Layer 2 holds three seed atoms. Layer 3 is
-    empty. The graph cannot be validated end to end yet.
+    Layer 1 is represented through Chapter 01-16 in this ledger snapshot.
+    Later calculus, differential equations, numerical methods, probability,
+    statistics, and discipline layers remain incomplete. The dependency
+    graph therefore remains a partial-build graph.
 
 concepts:
-
-  # ===================================================================
-  # LAYER 0 - ORIENTATION
-  # ===================================================================
-
   - id: ORIENT-0-001-01
     title: How this guide is organized
-    chapter: "00-01"
+    chapter: 00-01
     layer: 0
     tier: null
     track: null
     prerequisites: []
     introduces_terms:
-      - route map
-      - layer
-      - tier
-      - prerequisite
-      - test-out quiz
-      - skip-if line
-      - primer
-      - preview note
-      - illustrative mention
-      - forward reference
-      - tier review exam
-      - practice exam
-      - Version A / Version B
+    - route map
+    - layer
+    - tier
+    - prerequisite
+    - test-out quiz
+    - skip-if line
+    - primer
+    - preview note
+    - illustrative mention
+    - forward reference
+    - tier review exam
+    - practice exam
+    - Version A / Version B
     introduces_symbols: []
     introduces_notation: []
     uses_symbols: []
@@ -198,48 +189,44 @@ concepts:
     review_questions: 18
     practice_problems: 0
     figures:
-      - FIG-00-01-001
-      - FIG-00-01-002
+    - FIG-00-01-001
+    - FIG-00-01-002
     status: revised
-    notes: >
-      Added four terms the chapter defines in its Key Terms table but the
-      ledger did not own: illustrative mention (new, introduced to name
-      the linter escape for names used purely as examples), tier review
-      exam, practice exam, and Version A / Version B.
-      "preview note" is now actually developed in the body (§0.6), not
-      just listed in Key Terms.
-      Anatomy is 17 sections; the §0.5 table, the FIG-00-01-002 alt text,
-      and the Quick Reference anatomy line all agree on that number, and
-      Mentor's Margin is excluded from all three per _conventions.
-      Figures are referenced inline with descriptive alt text; this
-      chapter is the pattern for all others.
+    notes: 'Added four terms the chapter defines in its Key Terms table but the ledger did not own: illustrative
+      mention (new, introduced to name the linter escape for names used purely as examples), tier review
+      exam, practice exam, and Version A / Version B. "preview note" is now actually developed in the body
+      (§0.6), not just listed in Key Terms. Anatomy is 17 sections; the §0.5 table, the FIG-00-01-002 alt
+      text, and the Quick Reference anatomy line all agree on that number, and Mentor''s Margin is excluded
+      from all three per _conventions. Figures are referenced inline with descriptive alt text; this chapter
+      is the pattern for all others.
 
+      '
   - id: ORIENT-0-002-01
     title: FE exam format and administration
-    chapter: "00-02"
+    chapter: 00-02
     layer: 0
     tier: null
     track: null
     prerequisites:
-      - ORIENT-0-001-01
+    - ORIENT-0-001-01
     introduces_terms:
-      - FE exam
-      - PE exam
-      - NCEES
-      - state board
-      - Engineer Intern
-      - EIT
-      - computer-based test
-      - CBT
-      - exam specification
-      - closed book with electronic reference
-      - SI
-      - USCS
-      - alternative item type
-      - cut score
-      - diagnostic report
-      - scheduled break
-      - appointment
+    - FE exam
+    - PE exam
+    - NCEES
+    - state board
+    - Engineer Intern
+    - EIT
+    - computer-based test
+    - CBT
+    - exam specification
+    - closed book with electronic reference
+    - SI
+    - USCS
+    - alternative item type
+    - cut score
+    - diagnostic report
+    - scheduled break
+    - appointment
     introduces_symbols: []
     introduces_notation: []
     uses_symbols: []
@@ -250,58 +237,53 @@ concepts:
     split_required: false
     spec_lines: []
     primer_source: null
-    review_questions: 22
+    review_questions: 24
     practice_problems: 0
     figures:
-      - FIG-00-02-001
+    - FIG-00-02-001
     status: revised
-    notes: >
-      SI and USCS MOVED HERE from MATH-1A-002-01 per authoring decision.
-      00-02 §0.3 is genuinely where both systems are first named and
-      defined for the reader; 01-02 then develops base and derived units
-      within each. This resolves a forward reference in which 00-02 used
-      and defined both terms nine chapters ahead of their declared owner.
-      Also added FE exam, PE exam, and closed book with electronic
-      reference, all defined in the chapter's Key Terms table and
-      previously unowned.
-      Pound-mass, pound-force, and g_c were REMOVED from the body and
-      answer key and replaced with a Preview Note pointing at 01-02. They
-      remain owned by MATH-1A-002-03.
-      FIG-00-02-001 (appointment breakdown bar) is now referenced inline
+    notes: 'SI and USCS MOVED HERE from MATH-1A-002-01 per authoring decision. 00-02 §0.3 is genuinely where
+      both systems are first named and defined for the reader; 01-02 then develops base and derived units
+      within each. This resolves a forward reference in which 00-02 used and defined both terms nine chapters
+      ahead of their declared owner. Also added FE exam, PE exam, and closed book with electronic reference,
+      all defined in the chapter''s Key Terms table and previously unowned. Pound-mass, pound-force, and
+      g_c were REMOVED from the body and answer key and replaced with a Preview Note pointing at 01-02.
+      They remain owned by MATH-1A-002-03. FIG-00-02-001 (appointment breakdown bar) is now referenced inline
       in §0.7, where it earns its place next to the time-budget example.
 
+      '
   - id: ORIENT-0-003-01
     title: Navigating the FE Reference Handbook
-    chapter: "00-03"
+    chapter: 00-03
     layer: 0
     tier: null
     track: null
     prerequisites:
-      - ORIENT-0-002-01
+    - ORIENT-0-002-01
     introduces_terms:
-      - FE Reference Handbook
-      - general sections
-      - discipline sections
-      - look-up knowledge
-      - memorize knowledge
-      - three-pass method
-      - Pass 1 (classify)
-      - Pass 2 (navigate)
-      - Pass 3 (verify)
-      - search-term construction
-      - notation collision
-      - personal page map
-      - errata
+    - FE Reference Handbook
+    - general sections
+    - discipline sections
+    - look-up knowledge
+    - memorize knowledge
+    - three-pass method
+    - Pass 1 (classify)
+    - Pass 2 (navigate)
+    - Pass 3 (verify)
+    - search-term construction
+    - notation collision
+    - personal page map
+    - errata
     introduces_symbols: []
     introduces_notation: []
     uses_symbols: []
     uses_terms:
-      - SI
-      - USCS
-      - illustrative mention
-      - preview note
+    - SI
+    - USCS
+    - illustrative mention
+    - preview note
     handbook_ref:
-      section: "Introduction"
+      section: Introduction
       page: iii
     handbook_verified: true
     handbook_status: in_handbook
@@ -311,52 +293,41 @@ concepts:
     review_questions: 28
     practice_problems: 0
     figures:
-      - FIG-00-03-001
-      - FIG-00-03-002
+    - FIG-00-03-001
+    - FIG-00-03-002
     status: revised
-    notes: >
-      The Handbook Introduction states it does not contain all information
-      required to answer every exam question. This chapter teaches readers
-      to distinguish look-up from memorize knowledge and to navigate the
-      document under time pressure. Page iii verified from the table of
-      contents.
-      Added Pass 1 / Pass 2 / Pass 3 as owned terms; the Key Terms table
-      defined all three and the ledger owned none.
-      §0.2 now teaches the third category, in_handbook_memorize_anyway,
-      with the page-1 prefix table as the worked case. That closes a gap
-      between the schema and the reader-facing text.
-      §0.3 now states that there are SIX discipline sections, not seven,
-      and that FE Other Disciplines draws on the fifteen general sections.
-      Confirmed against _handbook_sections below.
-      Heavy user of the illustrative_mention device - the chapter cannot
-      teach navigation without naming things it has not taught - so it
-      carries a reader-facing note in On the Board Today saying exactly
-      that, and two Preview Notes for g_c and the metric prefixes.
-      All five drills now carry measurable targets. Drill 2 is explicitly
-      a two-pass drill: location now, content after 01-01 through 01-03.
+    notes: 'The Handbook Introduction states it does not contain all information required to answer every
+      exam question. This chapter teaches readers to distinguish look-up from memorize knowledge and to
+      navigate the document under time pressure. Page iii verified from the table of contents. Added Pass
+      1 / Pass 2 / Pass 3 as owned terms; the Key Terms table defined all three and the ledger owned none.
+      §0.2 now teaches the third category, in_handbook_memorize_anyway, with the page-1 prefix table as
+      the worked case. That closes a gap between the schema and the reader-facing text. §0.3 now states
+      that there are SIX discipline sections, not seven, and that FE Other Disciplines draws on the fifteen
+      general sections. Confirmed against _handbook_sections below. Heavy user of the illustrative_mention
+      device - the chapter cannot teach navigation without naming things it has not taught - so it carries
+      a reader-facing note in On the Board Today saying exactly that, and two Preview Notes for g_c and
+      the metric prefixes. All five drills now carry measurable targets. Drill 2 is explicitly a two-pass
+      drill: location now, content after 01-01 through 01-03.
 
-  # ===================================================================
-  # LAYER 1, TIER A - QUANTITIES AND FOUNDATIONS
-  # ===================================================================
-
+      '
   - id: MATH-1A-001-01
     title: Place value, arithmetic operations, and order of operations
-    chapter: "01-01"
+    chapter: 01-01
     layer: 1
     tier: A
     track: null
     prerequisites:
-      - ORIENT-0-003-01
+    - ORIENT-0-003-01
     introduces_terms:
-      - integer
-      - rational number
-      - irrational number
-      - real number
-      - order of operations
-      - absolute value
+    - integer
+    - rational number
+    - irrational number
+    - real number
+    - order of operations
+    - absolute value
     introduces_symbols: []
     introduces_notation:
-      - absolute_value_bars
+    - absolute_value_bars
     uses_symbols: []
     uses_terms: []
     handbook_ref: null
@@ -368,47 +339,41 @@ concepts:
     review_questions: 35
     practice_problems: 0
     figures:
-      - FIG-01-01-001
+    - FIG-01-01-001
+    - FIG-01-01-004
     status: revised
-    notes: >
-      PREREQUISITE ADDED: ORIENT-0-003-01. This makes the whole Layer 0
-      chain a transitive prerequisite of everything in Layer 1 and beyond,
-      which is both factually how the guide reads and structurally
-      necessary - SI and USCS now live in 00-02, and 01-02 uses them, so
-      without this edge the uses_terms transitive check fails.
-      Consequence for the chapter file: 01-01's Before You Start line
-      "Prerequisites: None" must become "Prerequisites: Layer 0 (Chapters
-      00-01 through 00-03). No technical prerequisites."
-      Stripped scientific notation, mantissa, order of magnitude,
-      renormalize, and engineering notation from introduces_terms; those
-      belong to 001-02 and 001-03 and were double-claimed here. Symbols
-      N_mantissa and x_exponent moved to 001-02 for the same reason.
-      review_questions 35 is the chapter total under the totals
-      convention: 11 conceptual + 12 calculation + 12 multiple choice.
-      Corrects an earlier note that wrongly described this as the existing
-      convention; the original ledger counted conceptual only.
-      practice_problems set to 0: this chapter has review questions but no
-      separate end-of-chapter problem set. The old value of 10 was the
-      calculation-question count, now folded into review_questions.
+    notes: 'PREREQUISITE ADDED: ORIENT-0-003-01. This makes the whole Layer 0 chain a transitive prerequisite
+      of everything in Layer 1 and beyond, which is both factually how the guide reads and structurally
+      necessary - SI and USCS now live in 00-02, and 01-02 uses them, so without this edge the uses_terms
+      transitive check fails. Consequence for the chapter file: 01-01''s Before You Start line "Prerequisites:
+      None" must become "Prerequisites: Layer 0 (Chapters 00-01 through 00-03). No technical prerequisites."
+      Stripped scientific notation, mantissa, order of magnitude, renormalize, and engineering notation
+      from introduces_terms; those belong to 001-02 and 001-03 and were double-claimed here. Symbols N_mantissa
+      and x_exponent moved to 001-02 for the same reason. review_questions 35 is the chapter total under
+      the totals convention: 11 conceptual + 12 calculation + 12 multiple choice. Corrects an earlier note
+      that wrongly described this as the existing convention; the original ledger counted conceptual only.
+      practice_problems set to 0: this chapter has review questions but no separate end-of-chapter problem
+      set. The old value of 10 was the calculation-question count, now folded into review_questions.
 
+      '
   - id: MATH-1A-001-02
     title: Scientific notation and orders of magnitude
-    chapter: "01-01"
+    chapter: 01-01
     layer: 1
     tier: A
     track: null
     prerequisites:
-      - MATH-1A-001-01
+    - MATH-1A-001-01
     introduces_terms:
-      - scientific notation
-      - mantissa
-      - exponent
-      - matching exponents
-      - renormalize
-      - order of magnitude
+    - scientific notation
+    - mantissa
+    - exponent
+    - matching exponents
+    - renormalize
+    - order of magnitude
     introduces_symbols:
-      - N_mantissa
-      - x_exponent
+    - N_mantissa
+    - x_exponent
     introduces_notation: []
     uses_symbols: []
     uses_terms: []
@@ -420,134 +385,122 @@ concepts:
     primer_source: null
     review_questions: 0
     practice_problems: 0
-    figures: []
+    figures:
+    - FIG-01-01-002
     status: revised
-    notes: >
-      Folded into the 001-01 chapter. Kept as a separate ledger entry to
-      allow prerequisite tracking from downstream chapters. Added
-      "matching exponents" to match the revised chapter, which now teaches
-      addition and subtraction in scientific notation - previously the one
-      structural omission in 01-01.
+    notes: 'Folded into the 001-01 chapter. Kept as a separate ledger entry to allow prerequisite tracking
+      from downstream chapters. Added "matching exponents" to match the revised chapter, which now teaches
+      addition and subtraction in scientific notation - previously the one structural omission in 01-01.
 
+      '
   - id: MATH-1A-001-03
     title: Metric prefixes and engineering notation
-    chapter: "01-01"
+    chapter: 01-01
     layer: 1
     tier: A
     track: null
     prerequisites:
-      - MATH-1A-001-02
+    - MATH-1A-001-02
     introduces_terms:
-      - SI prefix
-      - engineering notation
-      - squared prefix
+    - SI prefix
+    - engineering notation
+    - squared prefix
     introduces_symbols: []
     introduces_notation: []
     uses_symbols:
-      - N_mantissa
-      - x_exponent
+    - N_mantissa
+    - x_exponent
     uses_terms:
-      - SI
+    - SI
     handbook_ref:
-      section: "Units and Conversion Factors"
+      section: Units and Conversion Factors
       page: 1
     handbook_verified: true
     handbook_status: in_handbook_memorize_anyway
     split_required: false
     spec_lines: []
-    primer_source: "00-03"
+    primer_source: 00-03
     review_questions: 0
     practice_problems: 0
     figures:
-      - FIG-01-01-002
-      - FIG-01-01-003
-      - FIG-01-01-004
+    - FIG-01-01-003
     status: revised
-    notes: >
-      Prefix table IS in the Handbook p.1 but status is
-      in_handbook_memorize_anyway: a lookup costs 15-20 seconds and
-      prefixes appear on a large fraction of questions. Time cost of
-      lookup exceeds benefit for this high-frequency reference. This atom
-      is the canonical example of that category and 00-03 §0.2 now cites
-      it as such.
-      primer_source set to 00-03: Worked Example 2 in that chapter borrows
-      one row of the prefix table to demonstrate a table lookup, under a
-      Preview Note stating the reader is not expected to know the prefixes
-      yet.
-      FIGURE DEBT: none of the three declared figures is referenced in the
-      authored markdown. See _todo.figure_audit.
+    notes: 'Prefix table IS in the Handbook p.1 but status is in_handbook_memorize_anyway: a lookup costs
+      15-20 seconds and prefixes appear on a large fraction of questions. Time cost of lookup exceeds benefit
+      for this high-frequency reference. This atom is the canonical example of that category and 00-03 §0.2
+      now cites it as such. primer_source set to 00-03: Worked Example 2 in that chapter borrows one row
+      of the prefix table to demonstrate a table lookup, under a Preview Note stating the reader is not
+      expected to know the prefixes yet. FIGURE DEBT: none of the three declared figures is referenced in
+      the authored markdown. See _todo.figure_audit.
 
+      '
   - id: MATH-1A-002-01
     title: Physical quantities, base units, and derived units
-    chapter: "01-02"
+    chapter: 01-02
     layer: 1
     tier: A
     track: null
     prerequisites:
-      - MATH-1A-001-03
+    - MATH-1A-001-03
     introduces_terms:
-      - physical quantity
-      - dimension
-      - unit
-      - base unit
-      - derived unit
-      - coherent system
-      - over-determined system
-      - dimensional homogeneity
+    - physical quantity
+    - dimension
+    - unit
+    - base unit
+    - derived unit
+    - coherent system
+    - over-determined system
+    - dimensional homogeneity
     introduces_symbols: []
     introduces_notation: []
     uses_symbols: []
     uses_terms:
-      - SI
-      - USCS
+    - SI
+    - USCS
     handbook_ref:
-      section: "Units and Conversion Factors"
+      section: Units and Conversion Factors
       page: 1
     handbook_verified: true
     handbook_status: in_handbook_memorize_anyway
     split_required: true
     spec_lines:
-      - {discipline: chemical, area: 1, item: F}
+    - discipline: chemical
+      area: 1
+      item: F
     primer_source: null
-    review_questions: 13
+    review_questions: 35
     practice_problems: 0
     figures:
-      - FIG-01-02-001
-      - FIG-01-02-002
-      - FIG-01-02-003
-      - FIG-01-02-004
-      - FIG-01-02-005
+    - FIG-01-02-001
+    - FIG-01-02-005
+    - FIG-01-02-009
     status: drafted
-    notes: >
-      SI and USCS REMOVED from introduces_terms and moved to
-      ORIENT-0-002-01, which is where the reader actually meets both names
-      and where 00-02 §0.3 defines them. This atom still develops base and
-      derived units within each system, and now declares both as
-      uses_terms.
-      split_required: the unit tables are in the Handbook, but dimensional
-      homogeneity and the coherent/over-determined system distinction are
-      not and must be known cold.
-      review_questions 13 and practice_problems 10 are both stale under
-      the totals convention and need regenerating from the authored file.
+    notes: 'SI and USCS REMOVED from introduces_terms and moved to ORIENT-0-002-01, which is where the reader
+      actually meets both names and where 00-02 §0.3 defines them. This atom still develops base and derived
+      units within each system, and now declares both as uses_terms. split_required: the unit tables are
+      in the Handbook, but dimensional homogeneity and the coherent/over-determined system distinction are
+      not and must be known cold. review_questions 13 and practice_problems 10 are both stale under the
+      totals convention and need regenerating from the authored file.
 
+      '
   - id: MATH-1A-002-02
     title: Unit conversion by the factor-label method
-    chapter: "01-02"
+    chapter: 01-02
     layer: 1
     tier: A
     track: null
     prerequisites:
-      - MATH-1A-002-01
+    - MATH-1A-002-01
     introduces_terms:
-      - factor-label method
-      - conversion factor
-      - unit cancellation
+    - factor-label method
+    - conversion factor
+    - unit cancellation
     introduces_symbols: []
     introduces_notation: []
     uses_symbols: []
     uses_terms: []
     handbook_ref:
-      section: "Units and Conversion Factors"
+      section: Units and Conversion Factors
       page: 3
     handbook_verified: true
     handbook_status: not_in_handbook
@@ -556,90 +509,91 @@ concepts:
     primer_source: null
     review_questions: 0
     practice_problems: 0
-    figures: []
+    figures:
+    - FIG-01-02-002
+    - FIG-01-02-006
+    - FIG-01-02-010
     status: drafted
-    notes: >
-      The conversion factor TABLE is a Handbook lookup (p.3). The
-      factor-label method itself is not tabulated anywhere and must be
-      automatic, hence not_in_handbook.
+    notes: 'The conversion factor TABLE is a Handbook lookup (p.3). The factor-label method itself is not
+      tabulated anywhere and must be automatic, hence not_in_handbook.
 
+      '
   - id: MATH-1A-002-03
     title: Pound-mass, pound-force, and the constant g_c
-    chapter: "01-02"
+    chapter: 01-02
     layer: 1
     tier: A
     track: null
     prerequisites:
-      - MATH-1A-002-02
+    - MATH-1A-002-02
     introduces_terms:
-      - pound-mass
-      - pound-force
-      - slug
-      - standard gravity
-      - specific weight
-      - mass
-      - weight
+    - pound-mass
+    - pound-force
+    - slug
+    - standard gravity
+    - specific weight
+    - mass
+    - weight
     introduces_symbols:
-      - g_c
-      - g
-      - F_W
-      - SW
-      - rho_density
+    - g_c
+    - g
+    - F_W
+    - SW
+    - rho_density
     introduces_notation: []
     uses_symbols: []
     uses_terms:
-      - USCS
+    - USCS
     handbook_ref:
-      section: "Units and Conversion Factors"
+      section: Units and Conversion Factors
       page: 1
     handbook_verified: true
     handbook_status: in_handbook_memorize_anyway
     split_required: true
     spec_lines:
-      - {discipline: other, area: 8, item: I}
+    - discipline: other
+      area: 8
+      item: I
     primer_source: null
     review_questions: 0
     practice_problems: 0
     figures:
-      - FIG-01-02-006
-      - FIG-01-02-007
+    - FIG-01-02-003
+    - FIG-01-02-007
     status: drafted
-    notes: >
-      HIGH LEVERAGE. g_c = 32.174 lbm*ft/(lbf*s^2) IS in the Handbook p.1
-      but must be automatic for all USCS mechanics, fluids, and thermo
-      problems. split_required: the g_c family equations are in the
-      Handbook, but the structural understanding of why g_c exists is not
-      and is critical for correct application.
-      Referenced by Preview Notes in 00-02 §0.3 and §0.9 and in 00-03
-      §0.4. Those are preview notes, not primers - nothing in Layer 0
-      computes with g_c - so primer_source stays null.
+    notes: 'HIGH LEVERAGE. g_c = 32.174 lbm*ft/(lbf*s^2) IS in the Handbook p.1 but must be automatic for
+      all USCS mechanics, fluids, and thermo problems. split_required: the g_c family equations are in the
+      Handbook, but the structural understanding of why g_c exists is not and is critical for correct application.
+      Referenced by Preview Notes in 00-02 §0.3 and §0.9 and in 00-03 §0.4. Those are preview notes, not
+      primers - nothing in Layer 0 computes with g_c - so primer_source stays null.
 
+      '
   - id: MATH-1A-002-04
     title: Temperature scales and fundamental physical constants
-    chapter: "01-02"
+    chapter: 01-02
     layer: 1
     tier: A
     track: null
     prerequisites:
-      - MATH-1A-002-03
+    - MATH-1A-002-03
     introduces_terms:
-      - absolute temperature scale
-      - relative temperature scale
-      - temperature difference
-      - universal gas constant
-      - specific gas constant
+    - absolute temperature scale
+    - relative temperature scale
+    - temperature difference
+    - universal gas constant
+    - specific gas constant
     introduces_symbols:
-      - T_temp
-      - Delta_T
-      - R_bar
-      - sigma_SB
+    - T_temp
+    - Delta_T
+    - R_bar
+    - sigma_SB
     introduces_notation: []
     uses_symbols:
-      - g_c
-      - g
+    - g_c
+    - g
     uses_terms: []
     handbook_ref:
-      section: "Units and Conversion Factors"
+      section: Units and Conversion Factors
       page: 2
     handbook_verified: true
     handbook_status: in_handbook_memorize_anyway
@@ -649,222 +603,219 @@ concepts:
     review_questions: 0
     practice_problems: 0
     figures:
-      - FIG-01-02-008
-      - FIG-01-02-009
-      - FIG-01-02-010
+    - FIG-01-02-004
+    - FIG-01-02-008
     status: drafted
-    notes: >
-      Temperature conversions ARE in the Handbook p.1 and are used
-      constantly, so memorize anyway. split_required: WHICH equations
-      require an absolute scale is not stated anywhere in the Handbook and
+    notes: 'Temperature conversions ARE in the Handbook p.1 and are used constantly, so memorize anyway.
+      split_required: WHICH equations require an absolute scale is not stated anywhere in the Handbook and
       must be known cold.
 
+      '
   - id: MATH-1A-003-01
     title: Accuracy, precision, and types of error
-    chapter: "01-03"
+    chapter: 01-03
     layer: 1
     tier: A
     track: null
     prerequisites:
-      - MATH-1A-002-02
+    - MATH-1A-002-02
     introduces_terms:
-      - accuracy
-      - precision
-      - systematic error
-      - random error
-      - absolute error
-      - relative error
-      - percent error
+    - accuracy
+    - precision
+    - systematic error
+    - random error
+    - absolute error
+    - relative error
+    - percent error
     introduces_symbols:
-      - E_abs
-      - E_rel
-      - E_pct
-      - x_true
-      - x_meas
+    - E_abs
+    - E_rel
+    - E_pct
+    - x_true
+    - x_meas
     introduces_notation: []
     uses_symbols: []
     uses_terms: []
     handbook_ref:
-      section: "Units and Conversion Factors"
+      section: Units and Conversion Factors
       page: 2
     handbook_verified: true
     handbook_status: not_in_handbook
     split_required: false
     spec_lines:
-      - {discipline: chemical, area: 1, item: F}
-      - {discipline: mechanical, area: 13, item: D}
+    - discipline: chemical
+      area: 1
+      item: F
+    - discipline: mechanical
+      area: 13
+      item: D
     primer_source: null
-    review_questions: 9
+    review_questions: 25
     practice_problems: 0
     figures:
-      - FIG-01-03-001
+    - FIG-01-03-001
+    - FIG-01-03-003
     status: drafted
-
   - id: MATH-1A-003-02
     title: Significant figures and the six Handbook rules
-    chapter: "01-03"
+    chapter: 01-03
     layer: 1
     tier: A
     track: null
     prerequisites:
-      - MATH-1A-003-01
-      - MATH-1A-001-02
+    - MATH-1A-003-01
+    - MATH-1A-001-02
     introduces_terms:
-      - significant figures
-      - leading zeros
-      - trailing zeros
-      - exact number
-      - engineering convention
-      - intermediate rounding
-      - catastrophic cancellation
+    - significant figures
+    - leading zeros
+    - trailing zeros
+    - exact number
+    - engineering convention
+    - intermediate rounding
+    - catastrophic cancellation
     introduces_symbols: []
     introduces_notation: []
     uses_symbols: []
     uses_terms: []
     handbook_ref:
-      section: "Units and Conversion Factors"
+      section: Units and Conversion Factors
       page: 2
     handbook_verified: true
     handbook_status: in_handbook
     split_required: true
     spec_lines:
-      - {discipline: chemical, area: 1, item: F}
-      - {discipline: mechanical, area: 13, item: D}
+    - discipline: chemical
+      area: 1
+      item: F
+    - discipline: mechanical
+      area: 13
+      item: D
     primer_source: null
-    review_questions: 16
+    review_questions: 0
     practice_problems: 0
     figures:
-      - FIG-01-03-002
-      - FIG-01-03-003
+    - FIG-01-03-002
     status: drafted
-    notes: >
-      split_required: the six sig-fig rules ARE in Handbook p.2, but
-      intermediate rounding, catastrophic cancellation, and the
-      accuracy/precision framework are not and must be known cold.
-      Named in 00-03 Drill 2 as one of the seven page 1-3 items, which is
-      an illustrative mention: the drill asks the reader to locate the
-      rules now and learn them when this chapter arrives.
+    notes: 'split_required: the six sig-fig rules ARE in Handbook p.2, but intermediate rounding, catastrophic
+      cancellation, and the accuracy/precision framework are not and must be known cold. Named in 00-03
+      Drill 2 as one of the seven page 1-3 items, which is an illustrative mention: the drill asks the reader
+      to locate the rules now and learn them when this chapter arrives.
 
-  # ===================================================================
-  # LAYER 1, TIER B - ALGEBRA AND GEOMETRY
-  # ===================================================================
-
+      '
   - id: MATH-1B-004-01
     title: Expressions, equations, and inequalities
-    chapter: "01-04"
+    chapter: 01-04
     layer: 1
     tier: B
     track: null
     prerequisites:
-      - MATH-1A-001-01
-      - MATH-1A-002-02
-      - MATH-1A-003-02
+    - MATH-1A-001-01
+    - MATH-1A-002-02
+    - MATH-1A-003-02
     introduces_terms:
-      - expression
-      - equation
-      - inequality
-      - like terms
-      - difference of squares
-      - perfect square trinomial
-      - isolate
-      - extraneous solution
-      - interval notation
-      - open interval
-      - closed interval
-      - compound inequality
-      - union
-      - safety factor
+    - expression
+    - equation
+    - inequality
+    - like terms
+    - difference of squares
+    - perfect square trinomial
+    - isolate
+    - extraneous solution
+    - interval notation
+    - open interval
+    - closed interval
+    - compound inequality
+    - union
+    - safety factor
     introduces_symbols: []
     introduces_notation:
-      - interval_open
-      - interval_closed
-      - union_symbol
-      - infinity_symbol
-      - element_of
+    - interval_open
+    - interval_closed
+    - union_symbol
+    - infinity_symbol
+    - element_of
     uses_symbols: []
     uses_terms: []
     handbook_ref:
-      section: "Mathematics"
+      section: Mathematics
       page: 37
     handbook_verified: true
     handbook_status: not_in_handbook
     split_required: false
     spec_lines: []
     primer_source: null
-    review_questions: 8
-    practice_problems: 19
+    review_questions: 26
+    practice_problems: 0
     figures: []
     status: drafted
-
   - id: MATH-1B-005-01
     title: Exponents, radicals, and logarithms
-    chapter: "01-05"
+    chapter: 01-05
     layer: 1
     tier: B
     track: null
     prerequisites:
-      - MATH-1B-004-01
+    - MATH-1B-004-01
     introduces_terms:
-      - base
-      - fractional exponent
-      - radical
-      - rationalize
-      - conjugate
-      - exponential function
-      - Euler's number e
-      - time constant tau
-      - five-tau rule
-      - logarithm
-      - common logarithm
-      - natural logarithm
-      - change-of-base formula
-      - decibel
+    - base
+    - fractional exponent
+    - radical
+    - rationalize
+    - conjugate
+    - exponential function
+    - Euler's number e
+    - time constant tau
+    - five-tau rule
+    - logarithm
+    - common logarithm
+    - natural logarithm
+    - change-of-base formula
+    - decibel
     introduces_symbols:
-      - e_euler
-      - tau_time
+    - e_euler
+    - tau_time
     introduces_notation:
-      - ln
-      - log_10
-      - dB
-      - dBm
+    - ln
+    - log_10
+    - dB
+    - dBm
     uses_symbols: []
     uses_terms: []
     handbook_ref:
-      section: "Mathematics"
+      section: Mathematics
       page: 37
     handbook_verified: true
     handbook_status: in_handbook
     split_required: true
     spec_lines: []
     primer_source: null
-    review_questions: 8
-    practice_problems: 19
+    review_questions: 26
+    practice_problems: 0
     figures: []
     status: drafted
-    notes: >
-      split_required: exponent laws and logarithm laws ARE in Handbook
-      p.37. Euler's number e, the five-tau rule, equation-solving
-      strategy, and the extraneous-solution check are not.
+    notes: 'split_required: exponent laws and logarithm laws ARE in Handbook p.37. Euler''s number e, the
+      five-tau rule, equation-solving strategy, and the extraneous-solution check are not.
 
+      '
   - id: MATH-1B-005-02
     title: The imaginary unit j
-    chapter: "01-05"
+    chapter: 01-05
     layer: 1
     tier: B
     track: null
     prerequisites:
-      - MATH-1B-005-01
+    - MATH-1B-005-01
     introduces_terms:
-      - imaginary unit j
-      - imaginary number
-      - powers-of-j cycle
+    - imaginary unit j
+    - imaginary number
+    - powers-of-j cycle
     introduces_symbols:
-      - j_imaginary
+    - j_imaginary
     introduces_notation: []
     uses_symbols: []
     uses_terms: []
     handbook_ref:
-      section: "Mathematics"
+      section: Mathematics
       page: 38
     handbook_verified: true
     handbook_status: not_in_handbook
@@ -875,419 +826,411 @@ concepts:
     practice_problems: 0
     figures: []
     status: planned
-    notes: >
-      NEW ATOM, resolves a forward reference. Chapter 01-07 needs the
-      imaginary unit for complex conjugate root pairs and the negative
-      discriminant, but the unit was previously introduced only in 01-12,
-      five chapters downstream. Radicals in 01-05 are the natural place to
-      name it: the square root of a negative number is where it first
-      becomes necessary. Scope is deliberately minimal - name the unit,
-      state j^2 = -1, give the powers-of-j cycle, defer all arithmetic to
-      01-12. This guide uses j, not i, throughout; i_hat is reserved for
-      the x unit vector in 01-13, and 00-03 §0.5 tells the reader so.
+    notes: 'NEW ATOM, resolves a forward reference. Chapter 01-07 needs the imaginary unit for complex conjugate
+      root pairs and the negative discriminant, but the unit was previously introduced only in 01-12, five
+      chapters downstream. Radicals in 01-05 are the natural place to name it: the square root of a negative
+      number is where it first becomes necessary. Scope is deliberately minimal - name the unit, state j^2
+      = -1, give the powers-of-j cycle, defer all arithmetic to 01-12. This guide uses j, not i, throughout;
+      i_hat is reserved for the x unit vector in 01-13, and 00-03 §0.5 tells the reader so.
 
+      '
   - id: MATH-1B-006-01
     title: Functions, graphs, and transformations
-    chapter: "01-06"
+    chapter: 01-06
     layer: 1
     tier: B
     track: null
     prerequisites:
-      - MATH-1B-005-01
-      - MATH-1A-001-01
+    - MATH-1B-005-01
+    - MATH-1A-001-01
     introduces_terms:
-      - function
-      - vertical line test
-      - domain
-      - range
-      - composite function
-      - one-to-one function
-      - horizontal line test
-      - inverse function
-      - vertical shift
-      - horizontal shift
-      - vertical stretch
-      - horizontal stretch
-      - reflection
-      - even function
-      - odd function
-      - piecewise function
-      - asymptote
-      - vertical asymptote
-      - horizontal asymptote
-      - parent function
-      - saturating exponential
+    - function
+    - vertical line test
+    - domain
+    - range
+    - composite function
+    - one-to-one function
+    - horizontal line test
+    - inverse function
+    - vertical shift
+    - horizontal shift
+    - vertical stretch
+    - horizontal stretch
+    - reflection
+    - even function
+    - odd function
+    - piecewise function
+    - asymptote
+    - vertical asymptote
+    - horizontal asymptote
+    - parent function
+    - saturating exponential
     introduces_symbols:
-      - D_f
-      - R_f
+    - D_f
+    - R_f
     introduces_notation:
-      - f_compose_g
-      - f_inverse
+    - f_compose_g
+    - f_inverse
     uses_symbols:
-      - e_euler
-      - tau_time
+    - e_euler
+    - tau_time
     uses_terms: []
     handbook_ref:
-      section: "Mathematics"
+      section: Mathematics
       page: 36
     handbook_verified: true
     handbook_status: not_in_handbook
     split_required: false
     spec_lines: []
     primer_source: null
-    review_questions: 8
-    practice_problems: 17
+    review_questions: 24
+    practice_problems: 0
     figures: []
     status: drafted
-    notes: >
-      Owns the generic term "asymptote" plus the vertical and horizontal
-      cases. The hyperbola asymptote is a distinct term owned by 009-01.
+    notes: 'Owns the generic term "asymptote" plus the vertical and horizontal cases. The hyperbola asymptote
+      is a distinct term owned by 009-01.
 
+      '
   - id: MATH-1B-007-01
     title: Polynomials and their roots
-    chapter: "01-07"
+    chapter: 01-07
     layer: 1
     tier: B
     track: null
     prerequisites:
-      - MATH-1B-006-01
-      - MATH-1B-005-02
+    - MATH-1B-006-01
+    - MATH-1B-005-02
     introduces_terms:
-      - polynomial
-      - degree
-      - leading coefficient
-      - root
-      - multiplicity
-      - fundamental theorem of algebra
-      - remainder theorem
-      - factor theorem
-      - synthetic division
-      - discriminant
-      - complex conjugate root pair
-      - completing the square
-      - quadratic formula
-      - rational root theorem
-      - Vieta's formulas
-      - end behavior
-      - physics-extraneous root
+    - polynomial
+    - degree
+    - leading coefficient
+    - root
+    - multiplicity
+    - fundamental theorem of algebra
+    - remainder theorem
+    - factor theorem
+    - synthetic division
+    - discriminant
+    - complex conjugate root pair
+    - completing the square
+    - quadratic formula
+    - rational root theorem
+    - Vieta's formulas
+    - end behavior
+    - physics-extraneous root
     introduces_symbols:
-      - Delta_discriminant
+    - Delta_discriminant
     introduces_notation: []
     uses_symbols:
-      - j_imaginary
+    - j_imaginary
     uses_terms: []
     handbook_ref:
-      section: "Mathematics"
+      section: Mathematics
       page: 37
     handbook_verified: true
     handbook_status: in_handbook_memorize_anyway
     split_required: true
     spec_lines: []
     primer_source: null
-    review_questions: 8
-    practice_problems: 19
-    figures: []
+    review_questions: 26
+    practice_problems: 0
+    figures:
+    - FIG-01-07-006
     status: drafted
-    notes: >
-      FORWARD REFERENCE FIXED. Previously declared uses_symbols:
-      [i_imaginary], a symbol no atom introduced, while the imaginary unit
-      was introduced as j_imaginary in 01-12 - five chapters later. Now
-      depends on MATH-1B-005-02 and uses j_imaginary.
-      Term renamed from "complex conjugate roots" to "complex conjugate
-      root pair" so it no longer collides with "complex conjugate" in
-      012-01 under substring matching.
-      split_required: the quadratic formula and discriminant ARE in
-      Handbook p.37 and must be automatic, but synthetic division, the
-      rational root theorem, Vieta's formulas, multiplicity rules, and end
-      behavior rules are absent.
+    notes: 'FORWARD REFERENCE FIXED. Previously declared uses_symbols: [i_imaginary], a symbol no atom introduced,
+      while the imaginary unit was introduced as j_imaginary in 01-12 - five chapters later. Now depends
+      on MATH-1B-005-02 and uses j_imaginary. Term renamed from "complex conjugate roots" to "complex conjugate
+      root pair" so it no longer collides with "complex conjugate" in 012-01 under substring matching. split_required:
+      the quadratic formula and discriminant ARE in Handbook p.37 and must be automatic, but synthetic division,
+      the rational root theorem, Vieta''s formulas, multiplicity rules, and end behavior rules are absent.
 
+      '
   - id: MATH-1B-008-01
     title: Systems of linear equations
-    chapter: "01-08"
+    chapter: 01-08
     layer: 1
     tier: B
     track: null
     prerequisites:
-      - MATH-1B-004-01
-      - MATH-1B-006-01
+    - MATH-1B-004-01
+    - MATH-1B-006-01
     introduces_terms:
-      - linear system
-      - consistent system
-      - inconsistent system
-      - independent system
-      - dependent system
-      - Gaussian elimination
-      - back-substitution
-      - augmented matrix
-      - row operation
-      - upper triangular form
-      - Cramer's rule
-      - determinant
-      - parametric solution
+    - linear system
+    - consistent system
+    - inconsistent system
+    - independent system
+    - dependent system
+    - Gaussian elimination
+    - back-substitution
+    - augmented matrix
+    - row operation
+    - upper triangular form
+    - Cramer's rule
+    - determinant
+    - parametric solution
     introduces_symbols:
-      - D_determinant
-      - D_x
-      - D_y
+    - D_determinant
+    - D_x
+    - D_y
     introduces_notation:
-      - augmented_matrix
-      - row_op_notation
+    - augmented_matrix
+    - row_op_notation
     uses_symbols: []
     uses_terms: []
     handbook_ref:
-      section: "Mathematics"
+      section: Mathematics
       page: 37
     handbook_verified: true
     handbook_status: in_handbook
     split_required: true
     spec_lines: []
     primer_source: null
-    review_questions: 6
-    practice_problems: 14
-    figures: []
+    review_questions: 22
+    practice_problems: 0
+    figures:
+    - FIG-01-08-001
+    - FIG-01-08-004
+    - FIG-01-08-007
     status: drafted
-    notes: >
-      split_required: Cramer's rule for 2x2 and 3x3 IS in Handbook p.37,
-      but the Gaussian elimination procedure, row operation notation,
-      inconsistent/dependent recognition, and setup methodology are not.
+    notes: 'split_required: Cramer''s rule for 2x2 and 3x3 IS in Handbook p.37, but the Gaussian elimination
+      procedure, row operation notation, inconsistent/dependent recognition, and setup methodology are not.
 
+      '
   - id: MATH-1B-009-01
     title: Analytic geometry - lines, conics, and distances
-    chapter: "01-09"
+    chapter: 01-09
     layer: 1
     tier: B
     track: null
     prerequisites:
-      - MATH-1B-007-01
-      - MATH-1B-008-01
-      - MATH-1B-006-01
+    - MATH-1B-007-01
+    - MATH-1B-008-01
+    - MATH-1B-006-01
     introduces_terms:
-      - slope
-      - slope-intercept form
-      - point-slope form
-      - general form line
-      - perpendicular slopes
-      - distance formula
-      - midpoint
-      - circle
-      - parabola
-      - focus
-      - directrix
-      - ellipse
-      - semi-major axis
-      - semi-minor axis
-      - hyperbola
-      - hyperbola asymptote
-      - eccentricity
-      - completing the square conic
+    - slope
+    - slope-intercept form
+    - point-slope form
+    - general form line
+    - perpendicular slopes
+    - distance formula
+    - midpoint
+    - circle
+    - parabola
+    - focus
+    - directrix
+    - ellipse
+    - semi-major axis
+    - semi-minor axis
+    - hyperbola
+    - hyperbola asymptote
+    - eccentricity
+    - completing the square conic
     introduces_symbols:
-      - m_slope
-      - r_radius
-      - h_k_center
-      - a_b_axes
-      - c_focal
-      - e_eccentricity
+    - m_slope
+    - r_radius
+    - h_k_center
+    - a_b_axes
+    - c_focal
+    - e_eccentricity
     introduces_notation: []
     uses_symbols:
-      - Delta_discriminant
+    - Delta_discriminant
     uses_terms: []
     handbook_ref:
-      section: "Mathematics"
+      section: Mathematics
       page: 37
     handbook_verified: true
     handbook_status: in_handbook
     split_required: false
     spec_lines: []
     primer_source: null
-    review_questions: 11
-    practice_problems: 22
-    figures: []
+    review_questions: 30
+    practice_problems: 0
+    figures:
+    - FIG-01-09-001
+    - FIG-01-09-004
+    - FIG-01-09-007
+    - FIG-01-09-010
     status: drafted
-    notes: >
-      Term "asymptote_conic" renamed to "hyperbola asymptote". The old
-      value leaked symbol-style suffix syntax into the term namespace and
-      collided with "asymptote" in 006-01 under substring matching.
+    notes: 'Term "asymptote_conic" renamed to "hyperbola asymptote". The old value leaked symbol-style suffix
+      syntax into the term namespace and collided with "asymptote" in 006-01 under substring matching.
 
+      '
   - id: MATH-1B-010-01
     title: Areas, volumes, and mensuration
-    chapter: "01-10"
+    chapter: 01-10
     layer: 1
     tier: B
     track: null
     prerequisites:
-      - MATH-1B-009-01
-      - MATH-1A-002-03
+    - MATH-1B-009-01
+    - MATH-1A-002-03
     introduces_terms:
-      - mensuration
-      - centroid
-      - composite shape
-      - semi-perimeter
-      - slant height
-      - frustum
-      - solid of revolution
-      - Pappus's theorem
-      - torus
-      - sector
+    - mensuration
+    - centroid
+    - composite shape
+    - semi-perimeter
+    - slant height
+    - frustum
+    - solid of revolution
+    - Pappus's theorem
+    - torus
+    - sector
     introduces_symbols:
-      - A_area
-      - V_volume
-      - S_surface
-      - x_bar_centroid
-      - y_bar_centroid
+    - A_area
+    - V_volume
+    - S_surface
+    - x_bar_centroid
+    - y_bar_centroid
     introduces_notation: []
     uses_symbols:
-      - rho_density
-      - SW
-      - g_c
-      - g
+    - rho_density
+    - SW
+    - g_c
+    - g
     uses_terms: []
     handbook_ref:
-      section: "Mathematics"
+      section: Mathematics
       page: 41
     handbook_verified: true
     handbook_status: in_handbook
     split_required: true
     spec_lines: []
     primer_source: null
-    review_questions: 5
-    practice_problems: 13
+    review_questions: 18
+    practice_problems: 0
     figures: []
     status: drafted
-    notes: >
-      UNDECLARED DEPENDENCY FIXED. This atom uses rho_density, SW, g_c,
-      and g, all introduced by MATH-1A-002-03, which was not on its
-      transitive prerequisite chain. Added as a direct prerequisite.
-      split_required: the mensuration tables ARE in Handbook pp.41-44, but
-      the composite centroid procedure, area-weighted average formula, and
-      squared/cubed prefix conversion rule are not.
+    notes: 'UNDECLARED DEPENDENCY FIXED. This atom uses rho_density, SW, g_c, and g, all introduced by MATH-1A-002-03,
+      which was not on its transitive prerequisite chain. Added as a direct prerequisite. split_required:
+      the mensuration tables ARE in Handbook pp.41-44, but the composite centroid procedure, area-weighted
+      average formula, and squared/cubed prefix conversion rule are not.
 
+      '
   - id: MATH-1B-011-01
     title: Trigonometry - unit circle and standard angles
-    chapter: "01-11"
+    chapter: 01-11
     layer: 1
     tier: B
     track: null
     prerequisites:
-      - MATH-1B-009-01
-      - MATH-1B-006-01
+    - MATH-1B-009-01
+    - MATH-1B-006-01
     introduces_terms:
-      - radian
-      - unit circle
-      - SOH-CAH-TOA
-      - reference angle
-      - CAST rule
-      - Pythagorean identity
-      - inverse trig function
-      - force decomposition
+    - radian
+    - unit circle
+    - SOH-CAH-TOA
+    - reference angle
+    - CAST rule
+    - Pythagorean identity
+    - inverse trig function
+    - force decomposition
     introduces_symbols:
-      - theta_angle
-      - phi_angle
+    - theta_angle
+    - phi_angle
     introduces_notation:
-      - sin_theta
-      - cos_theta
-      - tan_theta
-      - csc_theta
-      - sec_theta
-      - cot_theta
-      - arcsin
-      - arccos
-      - arctan
+    - sin_theta
+    - cos_theta
+    - tan_theta
+    - csc_theta
+    - sec_theta
+    - cot_theta
+    - arcsin
+    - arccos
+    - arctan
     uses_symbols: []
     uses_terms: []
     handbook_ref:
-      section: "Mathematics"
+      section: Mathematics
       page: 39
     handbook_verified: true
     handbook_status: in_handbook_memorize_anyway
     split_required: true
     spec_lines: []
     primer_source: null
-    review_questions: 6
-    practice_problems: 15
+    review_questions: 28
+    practice_problems: 0
     figures:
-      - FIG-01-11-001
-      - FIG-01-11-002
-      - FIG-01-11-003
-      - FIG-01-11-004
-      - FIG-01-11-006
+    - FIG-01-11-001
+    - FIG-01-11-006
     status: drafted
-    notes: >
-      Terms redistributed to the sub-atoms that actually teach them: law of
-      sines and law of cosines to 011-02, sum and double-angle formulas to
-      011-03, ambiguous case to 011-04. Previously all were claimed here,
-      making the sub-atoms term-empty and indistinguishable.
-      FIG-01-11-005 released to 011-02, which was double-claiming it.
-      Standard angle values are memorize-anyway: needed constantly, lookup
-      cost too high.
-      split_required: the identities and law formulas ARE in Handbook
-      pp.39-41, but the CAST rule, SOH-CAH-TOA procedure, and arctan
-      quadrant correction are not.
+    notes: 'Terms redistributed to the sub-atoms that actually teach them: law of sines and law of cosines
+      to 011-02, sum and double-angle formulas to 011-03, ambiguous case to 011-04. Previously all were
+      claimed here, making the sub-atoms term-empty and indistinguishable. FIG-01-11-005 released to 011-02,
+      which was double-claiming it. Standard angle values are memorize-anyway: needed constantly, lookup
+      cost too high. split_required: the identities and law formulas ARE in Handbook pp.39-41, but the CAST
+      rule, SOH-CAH-TOA procedure, and arctan quadrant correction are not.
 
+      '
   - id: MATH-1B-011-02
     title: Law of sines and law of cosines - solving triangles
-    chapter: "01-11"
+    chapter: 01-11
     layer: 1
     tier: B
     track: null
     prerequisites:
-      - MATH-1B-011-01
+    - MATH-1B-011-01
     introduces_terms:
-      - law of sines
-      - law of cosines
-      - oblique triangle
+    - law of sines
+    - law of cosines
+    - oblique triangle
     introduces_symbols: []
     introduces_notation: []
     uses_symbols:
-      - theta_angle
-      - sin_theta
-      - cos_theta
+    - theta_angle
+    - sin_theta
+    - cos_theta
     uses_terms: []
     handbook_ref:
-      section: "Mathematics"
+      section: Mathematics
       page: 40
     handbook_verified: true
     handbook_status: in_handbook
     split_required: false
     spec_lines:
-      - {discipline: civil, area: 9, item: A}
-      - {discipline: mechanical, area: 6, item: A}
+    - discipline: civil
+      area: 9
+      item: A
+    - discipline: mechanical
+      area: 6
+      item: A
     primer_source: null
     review_questions: 0
     practice_problems: 0
     figures:
-      - FIG-01-11-005
+    - FIG-01-11-002
+    - FIG-01-11-007
     status: drafted
-    notes: >
-      MERGED with the former MATH-1B-011-04. The two atoms had the same
-      chapter, the same prerequisite, the same Handbook page, introduced
-      nothing, and were distinguished only by title. This atom now owns
-      solving for unknown sides and angles, and carries the spec_lines and
-      the downstream prerequisite pointer from MECH-2C-024-01. The
-      ambiguous case moved to a genuinely distinct 011-04.
+    notes: 'MERGED with the former MATH-1B-011-04. The two atoms had the same chapter, the same prerequisite,
+      the same Handbook page, introduced nothing, and were distinguished only by title. This atom now owns
+      solving for unknown sides and angles, and carries the spec_lines and the downstream prerequisite pointer
+      from MECH-2C-024-01. The ambiguous case moved to a genuinely distinct 011-04.
 
+      '
   - id: MATH-1B-011-03
     title: Trig identities and the double-angle formulas
-    chapter: "01-11"
+    chapter: 01-11
     layer: 1
     tier: B
     track: null
     prerequisites:
-      - MATH-1B-011-01
+    - MATH-1B-011-01
     introduces_terms:
-      - sum formula
-      - difference formula
-      - double-angle formula
-      - half-angle formula
+    - sum formula
+    - difference formula
+    - double-angle formula
+    - half-angle formula
     introduces_symbols: []
     introduces_notation: []
     uses_symbols:
-      - theta_angle
-      - phi_angle
-      - sin_theta
-      - cos_theta
-      - tan_theta
+    - theta_angle
+    - phi_angle
+    - sin_theta
+    - cos_theta
+    - tan_theta
     uses_terms: []
     handbook_ref:
-      section: "Mathematics"
+      section: Mathematics
       page: 40
     handbook_verified: true
     handbook_status: in_handbook
@@ -1296,28 +1239,28 @@ concepts:
     primer_source: null
     review_questions: 0
     practice_problems: 0
-    figures: []
+    figures:
+    - FIG-01-11-003
     status: drafted
-
   - id: MATH-1B-011-04
     title: The SSA ambiguous case
-    chapter: "01-11"
+    chapter: 01-11
     layer: 1
     tier: B
     track: null
     prerequisites:
-      - MATH-1B-011-02
+    - MATH-1B-011-02
     introduces_terms:
-      - ambiguous case
-      - SSA configuration
+    - ambiguous case
+    - SSA configuration
     introduces_symbols: []
     introduces_notation: []
     uses_symbols:
-      - theta_angle
-      - sin_theta
+    - theta_angle
+    - sin_theta
     uses_terms: []
     handbook_ref:
-      section: "Mathematics"
+      section: Mathematics
       page: 40
     handbook_verified: true
     handbook_status: not_in_handbook
@@ -1326,38 +1269,38 @@ concepts:
     primer_source: null
     review_questions: 0
     practice_problems: 0
-    figures: []
+    figures:
+    - FIG-01-11-004
     status: drafted
-    notes: >
-      Repurposed. This ID previously duplicated 011-02. It now owns the
-      genuinely separate content: the two-solution SSA configuration and
-      the conditions that produce zero, one, or two triangles. Those
+    notes: 'Repurposed. This ID previously duplicated 011-02. It now owns the genuinely separate content:
+      the two-solution SSA configuration and the conditions that produce zero, one, or two triangles. Those
       conditions are not stated in the Handbook.
 
+      '
   - id: MATH-1B-011-05
     title: Angle of inclination and the angle between two lines
-    chapter: "01-11"
+    chapter: 01-11
     layer: 1
     tier: B
     track: null
     prerequisites:
-      - MATH-1B-011-01
-      - MATH-1B-011-03
-      - MATH-1B-009-01
+    - MATH-1B-011-01
+    - MATH-1B-011-03
+    - MATH-1B-009-01
     introduces_terms:
-      - angle of inclination
-      - angle between two lines
+    - angle of inclination
+    - angle between two lines
     introduces_symbols:
-      - alpha_inclination
+    - alpha_inclination
     introduces_notation: []
     uses_symbols:
-      - theta_angle
-      - tan_theta
-      - arctan
-      - m_slope
+    - theta_angle
+    - tan_theta
+    - arctan
+    - m_slope
     uses_terms: []
     handbook_ref:
-      section: "Mathematics"
+      section: Mathematics
       page: 37
     handbook_verified: false
     handbook_status: not_in_handbook
@@ -1366,110 +1309,107 @@ concepts:
     primer_source: null
     review_questions: 0
     practice_problems: 0
-    figures: []
+    figures:
+    - FIG-01-11-005
     status: planned
-    notes: >
-      REPLACES the malformed MATH-TRIG-011-10, which was draft scaffolding
-      committed by mistake. That record used an illegal DOMAIN token, had
-      no chapter (so the topological sort had nowhere to place it), was
-      missing twelve required fields, and listed five prerequisites of
-      which two were dangling (MATH-GEOM-001, MATH-TRIG-002) and three
-      were unresolved duplicated placeholders (MATH-TRIG-0XX).
-      Prerequisites now resolved to real IDs: slope from 009-01, tangent
-      and inverse tangent from 011-01, tangent difference identity from
-      011-03. Symbol "theta" dropped in favour of the existing
-      theta_angle; "alpha" renamed alpha_inclination to avoid confusion
-      with the direction cosine cos_alpha in 013-01.
-      handbook_verified false - page 37 is the Mathematics analytic
-      geometry start and has not been confirmed to carry this formula.
+    notes: 'REPLACES the malformed MATH-TRIG-011-10, which was draft scaffolding committed by mistake. That
+      record used an illegal DOMAIN token, had no chapter (so the topological sort had nowhere to place
+      it), was missing twelve required fields, and listed five prerequisites of which two were dangling
+      (MATH-GEOM-001, MATH-TRIG-002) and three were unresolved duplicated placeholders (MATH-TRIG-0XX).
+      Prerequisites now resolved to real IDs: slope from 009-01, tangent and inverse tangent from 011-01,
+      tangent difference identity from 011-03. Symbol "theta" dropped in favour of the existing theta_angle;
+      "alpha" renamed alpha_inclination to avoid confusion with the direction cosine cos_alpha in 013-01.
+      handbook_verified false - page 37 is the Mathematics analytic geometry start and has not been confirmed
+      to carry this formula.
 
+      '
   - id: MATH-1B-012-01
     title: Complex numbers - rectangular and polar forms
-    chapter: "01-12"
+    chapter: 01-12
     layer: 1
     tier: B
     track: null
     prerequisites:
-      - MATH-1B-011-01
-      - MATH-1B-007-01
-      - MATH-1B-005-02
+    - MATH-1B-011-01
+    - MATH-1B-007-01
+    - MATH-1B-005-02
     introduces_terms:
-      - complex number
-      - complex plane
-      - modulus
-      - argument
-      - rectangular form
-      - polar form
-      - complex conjugate
-      - Euler's formula
-      - Euler's identity
-      - De Moivre's theorem
-      - phasor
-      - Argand diagram
+    - complex number
+    - complex plane
+    - modulus
+    - argument
+    - rectangular form
+    - polar form
+    - complex conjugate
+    - Euler's formula
+    - Euler's identity
+    - De Moivre's theorem
+    - phasor
+    - Argand diagram
     introduces_symbols:
-      - z_complex
-      - z_conjugate
-      - r_modulus
+    - z_complex
+    - z_conjugate
+    - r_modulus
     introduces_notation:
-      - angle_notation
-      - exp_polar
+    - angle_notation
+    - exp_polar
     uses_symbols:
-      - j_imaginary
-      - e_euler
-      - theta_angle
-      - sin_theta
-      - cos_theta
+    - j_imaginary
+    - e_euler
+    - theta_angle
+    - sin_theta
+    - cos_theta
     uses_terms: []
     handbook_ref:
-      section: "Mathematics"
+      section: Mathematics
       page: 38
     handbook_verified: true
     handbook_status: in_handbook
     split_required: true
     spec_lines:
-      - {discipline: electrical, area: 1, item: A}
-      - {discipline: mechanical, area: 1, item: B}
+    - discipline: electrical
+      area: 1
+      item: A
+    - discipline: mechanical
+      area: 1
+      item: B
     primer_source: null
-    review_questions: 7
-    practice_problems: 18
+    review_questions: 25
+    practice_problems: 0
     figures:
-      - FIG-01-12-001
-      - FIG-01-12-002
+    - FIG-01-12-001
     status: drafted
-    notes: >
-      No longer introduces "imaginary unit j" or j_imaginary - both now
-      owned by MATH-1B-005-02, which this atom depends on. Prerequisite
-      MATH-1B-005-01 replaced by the more precise MATH-1B-005-02, which
-      already depends on it.
-      FIG-01-12-003 released to 012-03, which was double-claiming it.
-      split_required: rectangular and polar forms, Euler's formula, the
-      multiplication and division rules, and De Moivre's theorem ARE in
-      Handbook pp.38-39. The conjugate-multiplication division procedure,
-      the nth root formula across all k values, phasor physical
-      interpretation, and quadrant correction for the argument are not.
+    notes: 'No longer introduces "imaginary unit j" or j_imaginary - both now owned by MATH-1B-005-02, which
+      this atom depends on. Prerequisite MATH-1B-005-01 replaced by the more precise MATH-1B-005-02, which
+      already depends on it. FIG-01-12-003 released to 012-03, which was double-claiming it. split_required:
+      rectangular and polar forms, Euler''s formula, the multiplication and division rules, and De Moivre''s
+      theorem ARE in Handbook pp.38-39. The conjugate-multiplication division procedure, the nth root formula
+      across all k values, phasor physical interpretation, and quadrant correction for the argument are
+      not.
 
+      '
   - id: MATH-1B-012-02
     title: Complex arithmetic - multiplication, division, and powers
-    chapter: "01-12"
+    chapter: 01-12
     layer: 1
     tier: B
     track: null
     prerequisites:
-      - MATH-1B-012-01
+    - MATH-1B-012-01
     introduces_terms:
-      - nth root of a complex number
+    - nth root of a complex number
     introduces_symbols: []
     introduces_notation: []
     uses_symbols:
-      - j_imaginary
-      - z_complex
-      - z_conjugate
-      - r_modulus
-      - theta_angle
-      - angle_notation
+    - j_imaginary
+    - z_complex
+    - z_conjugate
+    - r_modulus
+    - theta_angle
+    - angle_notation
     uses_terms: []
     handbook_ref:
-      section: "Mathematics"
+      section: Mathematics
       page: 38
     handbook_verified: true
     handbook_status: in_handbook
@@ -1478,394 +1418,1052 @@ concepts:
     primer_source: null
     review_questions: 0
     practice_problems: 0
-    figures: []
+    figures:
+    - FIG-01-12-002
     status: drafted
-
   - id: MATH-1B-012-03
     title: Phasor representation of AC signals
-    chapter: "01-12"
+    chapter: 01-12
     layer: 1
     tier: B
     track: null
     prerequisites:
-      - MATH-1B-012-01
-      - MATH-1B-011-01
+    - MATH-1B-012-01
+    - MATH-1B-011-01
     introduces_terms:
-      - angular frequency
-      - phase angle
+    - angular frequency
+    - phase angle
     introduces_symbols:
-      - omega_angular
+    - omega_angular
     introduces_notation: []
     uses_symbols:
-      - j_imaginary
-      - z_complex
-      - r_modulus
-      - theta_angle
-      - angle_notation
+    - j_imaginary
+    - z_complex
+    - r_modulus
+    - theta_angle
+    - angle_notation
     uses_terms: []
     handbook_ref: null
     handbook_verified: false
     handbook_status: not_in_handbook
     split_required: false
     spec_lines:
-      - {discipline: electrical, area: 3, item: A}
-    primer_source: "02-64"
+    - discipline: electrical
+      area: 3
+      item: A
+    primer_source: 02-64
     review_questions: 0
     practice_problems: 0
     figures:
-      - FIG-01-12-003
+    - FIG-01-12-003
     status: drafted
-    notes: >
-      DANGLING SYMBOL FIXED. omega_angular was listed under uses_symbols
-      but no atom introduced it. This preview atom is the first place an
-      angular frequency appears, so it now owns the symbol and the terms.
-      Add omega_angular to notation.md with SI rad/s.
-      Preview concept. Full AC phasor analysis is Chapter 02-64, which
-      declares this atom as a prerequisite; primer_source records that
-      borrowing.
+    notes: 'DANGLING SYMBOL FIXED. omega_angular was listed under uses_symbols but no atom introduced it.
+      This preview atom is the first place an angular frequency appears, so it now owns the symbol and the
+      terms. Add omega_angular to notation.md with SI rad/s. Preview concept. Full AC phasor analysis is
+      Chapter 02-64, which declares this atom as a prerequisite; primer_source records that borrowing.
 
+      '
   - id: MATH-1B-013-01
     title: Vectors - components, magnitude, and unit vectors
-    chapter: "01-13"
+    chapter: 01-13
     layer: 1
     tier: B
     track: null
     prerequisites:
-      - MATH-1B-011-01
-      - MATH-1B-009-01
-      - MATH-1B-012-01
+    - MATH-1B-011-01
+    - MATH-1B-009-01
+    - MATH-1B-012-01
     introduces_terms:
-      - scalar
-      - vector
-      - component
-      - unit vector
-      - direction cosines
+    - scalar
+    - vector
+    - component
+    - unit vector
+    - direction cosines
     introduces_symbols:
-      - i_hat
-      - j_hat
-      - k_hat
-      - A_x
-      - A_y
-      - A_z
-      - cos_alpha
-      - cos_beta
-      - cos_gamma
+    - i_hat
+    - j_hat
+    - k_hat
+    - A_x
+    - A_y
+    - A_z
+    - cos_alpha
+    - cos_beta
+    - cos_gamma
     introduces_notation:
-      - vec_A
-      - hat_A
+    - vec_A
+    - hat_A
     uses_symbols:
-      - theta_angle
+    - theta_angle
     uses_terms: []
     handbook_ref:
-      section: "Mathematics"
+      section: Mathematics
       page: 37
     handbook_verified: true
     handbook_status: in_handbook
     split_required: false
     spec_lines: []
     primer_source: null
-    review_questions: 6
-    practice_problems: 14
+    review_questions: 20
+    practice_problems: 0
     figures:
-      - FIG-01-13-001
-      - FIG-01-13-002
+    - FIG-01-13-001
     status: drafted
-    notes: >
-      REVIEW THIS PREREQUISITE. MATH-1B-012-01 (complex numbers) is
-      retained but looks over-declared: component decomposition, magnitude,
-      and unit vectors need trigonometry and analytic geometry, not
-      complex arithmetic. Keeping it is safe - over-declaring cannot break
-      the no-forward-reference invariant - but it forces 01-12 onto every
-      route's critical path ahead of 01-13. If the only dependency is an
-      "analogy to the complex plane" aside, drop the prerequisite and move
-      that aside behind a Preview Note.
-      Note also that this atom owns i_hat while MATH-1B-005-02 owns
-      j_imaginary. That is the intended split, stated to the reader in
-      00-03 §0.5; do not let i drift back in as an imaginary unit.
+    notes: 'REVIEW THIS PREREQUISITE. MATH-1B-012-01 (complex numbers) is retained but looks over-declared:
+      component decomposition, magnitude, and unit vectors need trigonometry and analytic geometry, not
+      complex arithmetic. Keeping it is safe - over-declaring cannot break the no-forward-reference invariant
+      - but it forces 01-12 onto every route''s critical path ahead of 01-13. If the only dependency is
+      an "analogy to the complex plane" aside, drop the prerequisite and move that aside behind a Preview
+      Note. Note also that this atom owns i_hat while MATH-1B-005-02 owns j_imaginary. That is the intended
+      split, stated to the reader in 00-03 §0.5; do not let i drift back in as an imaginary unit.
 
+      '
   - id: MATH-1B-013-02
     title: Dot product and vector projection
-    chapter: "01-13"
+    chapter: 01-13
     layer: 1
     tier: B
     track: null
     prerequisites:
-      - MATH-1B-013-01
+    - MATH-1B-013-01
     introduces_terms:
-      - dot product
-      - scalar projection
-      - vector projection
+    - dot product
+    - scalar projection
+    - vector projection
     introduces_symbols: []
     introduces_notation:
-      - dot_product_notation
+    - dot_product_notation
     uses_symbols:
-      - vec_A
-      - hat_A
-      - theta_angle
+    - vec_A
+    - hat_A
+    - theta_angle
     uses_terms: []
     handbook_ref:
-      section: "Mathematics"
+      section: Mathematics
       page: 37
     handbook_verified: true
     handbook_status: in_handbook
     split_required: false
     spec_lines:
-      - {discipline: civil, area: 4, item: A}
-      - {discipline: mechanical, area: 6, item: A}
+    - discipline: civil
+      area: 4
+      item: A
+    - discipline: mechanical
+      area: 6
+      item: A
     primer_source: null
     review_questions: 0
     practice_problems: 0
     figures:
-      - FIG-01-13-003
+    - FIG-01-13-002
     status: drafted
-    notes: >
-      Separate atom so Chapter 01-14 (matrices) and the Tier 2C chapters
-      can declare this precise prerequisite. The dot product as work
-      interpretation (W = F.d) is not in the Handbook and is carried here.
+    notes: 'Separate atom so Chapter 01-14 (matrices) and the Tier 2C chapters can declare this precise
+      prerequisite. The dot product as work interpretation (W = F.d) is not in the Handbook and is carried
+      here.
 
+      '
   - id: MATH-1B-013-03
     title: Cross product and moment of a force
-    chapter: "01-13"
+    chapter: 01-13
     layer: 1
     tier: B
     track: null
     prerequisites:
-      - MATH-1B-013-02
-      - MATH-1B-008-01
+    - MATH-1B-013-02
+    - MATH-1B-008-01
     introduces_terms:
-      - cross product
-      - right-hand rule
-      - moment
-      - scalar triple product
-      - coplanar
+    - cross product
+    - right-hand rule
+    - moment
+    - scalar triple product
+    - coplanar
     introduces_symbols:
-      - M_moment
-      - r_position_vec
+    - M_moment
+    - r_position_vec
     introduces_notation:
-      - cross_product_notation
+    - cross_product_notation
     uses_symbols:
-      - vec_A
-      - hat_A
-      - i_hat
-      - j_hat
-      - k_hat
-      - theta_angle
-      - D_determinant
+    - vec_A
+    - hat_A
+    - i_hat
+    - j_hat
+    - k_hat
+    - theta_angle
+    - D_determinant
     uses_terms: []
     handbook_ref:
-      section: "Mathematics"
+      section: Mathematics
       page: 37
     handbook_verified: true
     handbook_status: in_handbook
     split_required: true
     spec_lines:
-      - {discipline: civil, area: 4, item: B}
-      - {discipline: mechanical, area: 6, item: B}
-      - {discipline: other, area: 8, item: F}
+    - discipline: civil
+      area: 4
+      item: B
+    - discipline: mechanical
+      area: 6
+      item: B
+    - discipline: other
+      area: 8
+      item: F
     primer_source: null
     review_questions: 0
     practice_problems: 0
     figures:
-      - FIG-01-13-004
+    - FIG-01-13-003
     status: drafted
-    notes: >
-      split_required: the determinant expansion of the cross product IS in
-      the Handbook, but the unit vector cyclic products, the direction
-      cosine identity, and the physical reading of the moment formula are
-      not.
+    notes: 'split_required: the determinant expansion of the cross product IS in the Handbook, but the unit
+      vector cyclic products, the direction cosine identity, and the physical reading of the moment formula
+      are not.
 
+      '
   - id: MATH-1B-013-04
     title: Vector resolution into components in 2D and 3D
-    chapter: "01-13"
+    chapter: 01-13
     layer: 1
     tier: B
     track: null
     prerequisites:
-      - MATH-1B-013-01
-      - MATH-1B-011-01
+    - MATH-1B-013-01
+    - MATH-1B-011-01
     introduces_terms:
-      - resolution
-      - resultant of concurrent vectors
+    - resolution
+    - resultant of concurrent vectors
     introduces_symbols: []
     introduces_notation: []
     uses_symbols:
-      - vec_A
-      - i_hat
-      - j_hat
-      - k_hat
-      - A_x
-      - A_y
-      - A_z
-      - theta_angle
-      - sin_theta
-      - cos_theta
+    - vec_A
+    - i_hat
+    - j_hat
+    - k_hat
+    - A_x
+    - A_y
+    - A_z
+    - theta_angle
+    - sin_theta
+    - cos_theta
     uses_terms: []
     handbook_ref:
-      section: "Mathematics"
+      section: Mathematics
       page: 37
     handbook_verified: true
     handbook_status: not_in_handbook
     split_required: false
     spec_lines:
-      - {discipline: civil, area: 4, item: A}
-      - {discipline: mechanical, area: 6, item: A}
+    - discipline: civil
+      area: 4
+      item: A
+    - discipline: mechanical
+      area: 6
+      item: A
     primer_source: null
     review_questions: 0
     practice_problems: 0
-    figures: []
+    figures:
+    - FIG-01-13-004
     status: drafted
-    notes: >
-      Separate atom from 013-01 so MECH-2C-022-03 (free-body diagram) and
-      MECH-2C-024-01 (method of joints) can declare this specific
-      prerequisite.
-      Note "resultant of concurrent vectors" here versus "resultant force"
-      in MECH-2C-023-01. Distinct terms, deliberately worded apart.
+    notes: 'Separate atom from 013-01 so MECH-2C-022-03 (free-body diagram) and MECH-2C-024-01 (method of
+      joints) can declare this specific prerequisite. Note "resultant of concurrent vectors" here versus
+      "resultant force" in MECH-2C-023-01. Distinct terms, deliberately worded apart.
 
-  # ===================================================================
-  # SEED ENTRIES FOR DOWNSTREAM VALIDATION
-  # ===================================================================
-  # Included so build_order.py and lint_ledger.py can be exercised
-  # against a multi-layer graph before Layer 2 is authored.
-
+      '
   - id: MECH-2C-022-03
     title: Constructing a free-body diagram
-    chapter: "02-22"
+    chapter: 02-22
     layer: 2
     tier: C
     track: null
     prerequisites:
-      - MATH-1B-013-04
-      - MATH-1A-002-03
+    - MATH-1B-013-04
+    - MATH-1A-002-03
     introduces_terms:
-      - free-body diagram
-      - applied force
-      - reaction force
-      - body isolation
+    - free-body diagram
+    - applied force
+    - reaction force
+    - body isolation
     introduces_symbols:
-      - F_force
+    - F_force
     introduces_notation: []
     uses_symbols:
-      - g
-      - g_c
-      - vec_A
-      - i_hat
-      - j_hat
-      - k_hat
+    - g
+    - g_c
+    - vec_A
+    - i_hat
+    - j_hat
+    - k_hat
     uses_terms: []
     handbook_ref:
-      section: "Statics"
+      section: Statics
       page: 95
     handbook_verified: true
     handbook_status: not_in_handbook
     split_required: false
     spec_lines:
-      - {discipline: other, area: 8, item: H}
+    - discipline: other
+      area: 8
+      item: H
     primer_source: null
     review_questions: 12
     practice_problems: 10
     figures: []
     status: planned
-    notes: >
-      Symbol renamed from bare F to F_force for consistency with the
-      suffixed convention used everywhere else in the ledger (F_W, T_temp,
-      D_determinant). A bare single letter invites collision as Layer 2
-      fills in, and 00-03 §0.5 warns readers that the Handbook's own bare
-      letters carry several meanings each.
+    notes: 'Symbol renamed from bare F to F_force for consistency with the suffixed convention used everywhere
+      else in the ledger (F_W, T_temp, D_determinant). A bare single letter invites collision as Layer 2
+      fills in, and 00-03 §0.5 warns readers that the Handbook''s own bare letters carry several meanings
+      each.
 
+      '
   - id: MECH-2C-023-01
     title: Equilibrium equations for a 2D concurrent force system
-    chapter: "02-23"
+    chapter: 02-23
     layer: 2
     tier: C
     track: null
     prerequisites:
-      - MECH-2C-022-03
-      - MATH-1B-013-02
+    - MECH-2C-022-03
+    - MATH-1B-013-02
     introduces_terms:
-      - equilibrium
-      - concurrent forces
-      - resultant force
+    - equilibrium
+    - concurrent forces
+    - resultant force
     introduces_symbols: []
     introduces_notation: []
     uses_symbols:
-      - F_force
-      - vec_A
-      - i_hat
-      - j_hat
+    - F_force
+    - vec_A
+    - i_hat
+    - j_hat
     uses_terms: []
     handbook_ref:
-      section: "Statics"
+      section: Statics
       page: 95
     handbook_verified: true
     handbook_status: in_handbook
     split_required: false
     spec_lines:
-      - {discipline: civil, area: 4, item: A}
-      - {discipline: mechanical, area: 6, item: A}
-      - {discipline: other, area: 8, item: E}
+    - discipline: civil
+      area: 4
+      item: A
+    - discipline: mechanical
+      area: 6
+      item: A
+    - discipline: other
+      area: 8
+      item: E
     primer_source: null
     review_questions: 0
     practice_problems: 0
     figures: []
     status: planned
-    notes: >
-      handbook_verified raised to true for consistency with
-      MECH-2C-022-03: identical citation, and Statics p.95 is the
-      confirmed section start in _handbook_sections. Term "resultant"
-      renamed "resultant force" to avoid collision with "resultant of
-      concurrent vectors" in MATH-1B-013-04.
+    notes: 'handbook_verified raised to true for consistency with MECH-2C-022-03: identical citation, and
+      Statics p.95 is the confirmed section start in _handbook_sections. Term "resultant" renamed "resultant
+      force" to avoid collision with "resultant of concurrent vectors" in MATH-1B-013-04.
 
+      '
   - id: MECH-2C-024-01
     title: Method of joints for planar trusses
-    chapter: "02-24"
+    chapter: 02-24
     layer: 2
     tier: C
     track: null
     prerequisites:
-      - MATH-1B-013-02
-      - MATH-1B-011-02
-      - MECH-2C-022-03
-      - MECH-2C-023-01
+    - MATH-1B-013-02
+    - MATH-1B-011-02
+    - MECH-2C-022-03
+    - MECH-2C-023-01
     introduces_terms:
-      - truss
-      - pin joint
-      - zero-force member
-      - member force
+    - truss
+    - pin joint
+    - zero-force member
+    - member force
     introduces_symbols: []
     introduces_notation: []
     uses_symbols:
-      - F_force
-      - theta_angle
+    - F_force
+    - theta_angle
     uses_terms: []
     handbook_ref:
-      section: "Statics"
+      section: Statics
       page: 98
     handbook_verified: false
     handbook_status: in_handbook
     split_required: false
     spec_lines:
-      - {discipline: civil, area: 4, item: D}
-      - {discipline: mechanical, area: 6, item: D}
-      - {discipline: other, area: 8, item: E}
+    - discipline: civil
+      area: 4
+      item: D
+    - discipline: mechanical
+      area: 6
+      item: D
+    - discipline: other
+      area: 8
+      item: E
     primer_source: null
     review_questions: 12
     practice_problems: 10
     figures: []
     status: planned
-    notes: >
-      Prerequisite MATH-1B-011-04 repointed to MATH-1B-011-02, which now
-      owns triangle solving. 011-04 is the SSA ambiguous case and is not
-      needed here.
-      handbook_verified false - page 98 inferred from the section start
-      p.95, not confirmed.
+    notes: 'Prerequisite MATH-1B-011-04 repointed to MATH-1B-011-02, which now owns triangle solving. 011-04
+      is the SSA ambiguous case and is not needed here. handbook_verified false - page 98 inferred from
+      the section start p.95, not confirmed.
 
-# =====================================================================
-# HANDBOOK SECTION START PAGES (verified from table of contents)
-# =====================================================================
-# FIFTEEN general sections, SIX discipline sections. There is no
-# "Other Disciplines" section: that exam draws on the general sections,
-# pages 1-242. Stated to the reader in 00-03 §0.3.
-# =====================================================================
+      '
+  - id: MATH-1B-004-02
+    title: Properties of Real Numbers
+    chapter: 01-04
+    layer: 1
+    tier: B
+    track: null
+    prerequisites:
+    - MATH-1B-004-01
+    introduces_terms: []
+    introduces_symbols: []
+    introduces_notation: []
+    uses_symbols: []
+    uses_terms: []
+    handbook_ref: null
+    handbook_verified: false
+    handbook_status: not_in_handbook
+    split_required: false
+    spec_lines: []
+    primer_source: null
+    review_questions: 0
+    practice_problems: 0
+    figures: []
+    status: drafted
+    notes: Added to reconcile the authored chapter front matter with the concept ledger. Refine atom boundaries
+      and Handbook references during subject-matter review.
+  - id: MATH-1B-004-03
+    title: Expansion and Factoring
+    chapter: 01-04
+    layer: 1
+    tier: B
+    track: null
+    prerequisites:
+    - MATH-1B-004-02
+    introduces_terms: []
+    introduces_symbols: []
+    introduces_notation: []
+    uses_symbols: []
+    uses_terms: []
+    handbook_ref: null
+    handbook_verified: false
+    handbook_status: not_in_handbook
+    split_required: false
+    spec_lines: []
+    primer_source: null
+    review_questions: 0
+    practice_problems: 0
+    figures: []
+    status: drafted
+    notes: Added to reconcile the authored chapter front matter with the concept ledger. Refine atom boundaries
+      and Handbook references during subject-matter review.
+  - id: MATH-1B-005-03
+    title: The Exponential Function
+    chapter: 01-05
+    layer: 1
+    tier: B
+    track: null
+    prerequisites:
+    - MATH-1B-005-02
+    introduces_terms: []
+    introduces_symbols: []
+    introduces_notation: []
+    uses_symbols: []
+    uses_terms: []
+    handbook_ref: null
+    handbook_verified: false
+    handbook_status: not_in_handbook
+    split_required: false
+    spec_lines: []
+    primer_source: null
+    review_questions: 0
+    practice_problems: 0
+    figures: []
+    status: drafted
+    notes: Added to reconcile the authored chapter front matter with the concept ledger. Refine atom boundaries
+      and Handbook references during subject-matter review.
+  - id: MATH-1B-006-02
+    title: Composite Functions
+    chapter: 01-06
+    layer: 1
+    tier: B
+    track: null
+    prerequisites:
+    - MATH-1B-006-01
+    introduces_terms: []
+    introduces_symbols: []
+    introduces_notation: []
+    uses_symbols: []
+    uses_terms: []
+    handbook_ref: null
+    handbook_verified: false
+    handbook_status: not_in_handbook
+    split_required: false
+    spec_lines: []
+    primer_source: null
+    review_questions: 0
+    practice_problems: 0
+    figures: []
+    status: drafted
+    notes: Added to reconcile the authored chapter front matter with the concept ledger. Refine atom boundaries
+      and Handbook references during subject-matter review.
+  - id: MATH-1B-006-03
+    title: Inverse Functions
+    chapter: 01-06
+    layer: 1
+    tier: B
+    track: null
+    prerequisites:
+    - MATH-1B-006-02
+    introduces_terms: []
+    introduces_symbols: []
+    introduces_notation: []
+    uses_symbols: []
+    uses_terms: []
+    handbook_ref: null
+    handbook_verified: false
+    handbook_status: not_in_handbook
+    split_required: false
+    spec_lines: []
+    primer_source: null
+    review_questions: 0
+    practice_problems: 0
+    figures: []
+    status: drafted
+    notes: Added to reconcile the authored chapter front matter with the concept ledger. Refine atom boundaries
+      and Handbook references during subject-matter review.
+  - id: MATH-1B-007-02
+    title: Polynomial Arithmetic
+    chapter: 01-07
+    layer: 1
+    tier: B
+    track: null
+    prerequisites:
+    - MATH-1B-007-01
+    introduces_terms: []
+    introduces_symbols: []
+    introduces_notation: []
+    uses_symbols: []
+    uses_terms: []
+    handbook_ref: null
+    handbook_verified: false
+    handbook_status: not_in_handbook
+    split_required: false
+    spec_lines: []
+    primer_source: null
+    review_questions: 0
+    practice_problems: 0
+    figures:
+    - FIG-01-07-010
+    status: drafted
+    notes: Added to reconcile the authored chapter front matter with the concept ledger. Refine atom boundaries
+      and Handbook references during subject-matter review.
+  - id: MATH-1B-007-03
+    title: Polynomial Division
+    chapter: 01-07
+    layer: 1
+    tier: B
+    track: null
+    prerequisites:
+    - MATH-1B-007-02
+    introduces_terms: []
+    introduces_symbols: []
+    introduces_notation: []
+    uses_symbols: []
+    uses_terms: []
+    handbook_ref: null
+    handbook_verified: false
+    handbook_status: not_in_handbook
+    split_required: false
+    spec_lines: []
+    primer_source: null
+    review_questions: 0
+    practice_problems: 0
+    figures: []
+    status: drafted
+    notes: Added to reconcile the authored chapter front matter with the concept ledger. Refine atom boundaries
+      and Handbook references during subject-matter review.
+  - id: MATH-1B-008-02
+    title: Solving 2×2 Systems
+    chapter: 01-08
+    layer: 1
+    tier: B
+    track: null
+    prerequisites:
+    - MATH-1B-008-01
+    introduces_terms: []
+    introduces_symbols: []
+    introduces_notation: []
+    uses_symbols: []
+    uses_terms: []
+    handbook_ref: null
+    handbook_verified: false
+    handbook_status: not_in_handbook
+    split_required: false
+    spec_lines: []
+    primer_source: null
+    review_questions: 0
+    practice_problems: 0
+    figures:
+    - FIG-01-08-002
+    - FIG-01-08-005
+    - FIG-01-08-008
+    status: drafted
+    notes: Added to reconcile the authored chapter front matter with the concept ledger. Refine atom boundaries
+      and Handbook references during subject-matter review.
+  - id: MATH-1B-008-03
+    title: Solving 3×3 Systems — Gaussian Elimination
+    chapter: 01-08
+    layer: 1
+    tier: B
+    track: null
+    prerequisites:
+    - MATH-1B-008-02
+    introduces_terms: []
+    introduces_symbols: []
+    introduces_notation: []
+    uses_symbols: []
+    uses_terms: []
+    handbook_ref: null
+    handbook_verified: false
+    handbook_status: not_in_handbook
+    split_required: false
+    spec_lines: []
+    primer_source: null
+    review_questions: 0
+    practice_problems: 0
+    figures:
+    - FIG-01-08-003
+    - FIG-01-08-006
+    - FIG-01-08-009
+    status: drafted
+    notes: Added to reconcile the authored chapter front matter with the concept ledger. Refine atom boundaries
+      and Handbook references during subject-matter review.
+  - id: MATH-1B-009-02
+    title: Distance and Midpoint
+    chapter: 01-09
+    layer: 1
+    tier: B
+    track: null
+    prerequisites:
+    - MATH-1B-009-01
+    introduces_terms: []
+    introduces_symbols: []
+    introduces_notation: []
+    uses_symbols: []
+    uses_terms: []
+    handbook_ref: null
+    handbook_verified: false
+    handbook_status: not_in_handbook
+    split_required: false
+    spec_lines: []
+    primer_source: null
+    review_questions: 0
+    practice_problems: 0
+    figures:
+    - FIG-01-09-002
+    - FIG-01-09-005
+    - FIG-01-09-008
+    - FIG-01-09-011
+    status: drafted
+    notes: Added to reconcile the authored chapter front matter with the concept ledger. Refine atom boundaries
+      and Handbook references during subject-matter review.
+  - id: MATH-1B-009-03
+    title: The Conic Family
+    chapter: 01-09
+    layer: 1
+    tier: B
+    track: null
+    prerequisites:
+    - MATH-1B-009-02
+    introduces_terms: []
+    introduces_symbols: []
+    introduces_notation: []
+    uses_symbols: []
+    uses_terms: []
+    handbook_ref: null
+    handbook_verified: false
+    handbook_status: not_in_handbook
+    split_required: false
+    spec_lines: []
+    primer_source: null
+    review_questions: 0
+    practice_problems: 0
+    figures:
+    - FIG-01-09-003
+    - FIG-01-09-006
+    - FIG-01-09-009
+    - FIG-01-09-012
+    status: drafted
+    notes: Added to reconcile the authored chapter front matter with the concept ledger. Refine atom boundaries
+      and Handbook references during subject-matter review.
+  - id: MATH-1B-010-02
+    title: Solids — Surface Area and Volume
+    chapter: 01-10
+    layer: 1
+    tier: B
+    track: null
+    prerequisites:
+    - MATH-1B-010-01
+    introduces_terms: []
+    introduces_symbols: []
+    introduces_notation: []
+    uses_symbols: []
+    uses_terms: []
+    handbook_ref: null
+    handbook_verified: false
+    handbook_status: not_in_handbook
+    split_required: false
+    spec_lines: []
+    primer_source: null
+    review_questions: 0
+    practice_problems: 0
+    figures: []
+    status: drafted
+    notes: Added to reconcile the authored chapter front matter with the concept ledger. Refine atom boundaries
+      and Handbook references during subject-matter review.
+  - id: MATH-1B-010-03
+    title: Centroids
+    chapter: 01-10
+    layer: 1
+    tier: B
+    track: null
+    prerequisites:
+    - MATH-1B-010-02
+    introduces_terms: []
+    introduces_symbols: []
+    introduces_notation: []
+    uses_symbols: []
+    uses_terms: []
+    handbook_ref: null
+    handbook_verified: false
+    handbook_status: not_in_handbook
+    split_required: false
+    spec_lines: []
+    primer_source: null
+    review_questions: 0
+    practice_problems: 0
+    figures: []
+    status: drafted
+    notes: Added to reconcile the authored chapter front matter with the concept ledger. Refine atom boundaries
+      and Handbook references during subject-matter review.
+  - id: MATH-1B-014-01
+    title: What a Matrix Is
+    chapter: 01-14
+    layer: 1
+    tier: B
+    track: null
+    prerequisites:
+    - MATH-1B-013-04
+    introduces_terms: []
+    introduces_symbols: []
+    introduces_notation: []
+    uses_symbols: []
+    uses_terms: []
+    handbook_ref: null
+    handbook_verified: false
+    handbook_status: not_in_handbook
+    split_required: false
+    spec_lines: []
+    primer_source: null
+    review_questions: 24
+    practice_problems: 0
+    figures:
+    - FIG-01-14-001
+    - FIG-01-14-005
+    status: drafted
+    notes: Added to reconcile the authored chapter front matter with the concept ledger. Refine atom boundaries
+      and Handbook references during subject-matter review.
+  - id: MATH-1B-014-02
+    title: Addition, Subtraction, and Scalar Multiplication
+    chapter: 01-14
+    layer: 1
+    tier: B
+    track: null
+    prerequisites:
+    - MATH-1B-014-01
+    introduces_terms: []
+    introduces_symbols: []
+    introduces_notation: []
+    uses_symbols: []
+    uses_terms: []
+    handbook_ref: null
+    handbook_verified: false
+    handbook_status: not_in_handbook
+    split_required: false
+    spec_lines: []
+    primer_source: null
+    review_questions: 0
+    practice_problems: 0
+    figures:
+    - FIG-01-14-002
+    status: drafted
+    notes: Added to reconcile the authored chapter front matter with the concept ledger. Refine atom boundaries
+      and Handbook references during subject-matter review.
+  - id: MATH-1B-014-03
+    title: Matrix Multiplication
+    chapter: 01-14
+    layer: 1
+    tier: B
+    track: null
+    prerequisites:
+    - MATH-1B-014-02
+    introduces_terms: []
+    introduces_symbols: []
+    introduces_notation: []
+    uses_symbols: []
+    uses_terms: []
+    handbook_ref: null
+    handbook_verified: false
+    handbook_status: not_in_handbook
+    split_required: false
+    spec_lines: []
+    primer_source: null
+    review_questions: 0
+    practice_problems: 0
+    figures:
+    - FIG-01-14-003
+    status: drafted
+    notes: Added to reconcile the authored chapter front matter with the concept ledger. Refine atom boundaries
+      and Handbook references during subject-matter review.
+  - id: MATH-1B-014-04
+    title: The Transpose
+    chapter: 01-14
+    layer: 1
+    tier: B
+    track: null
+    prerequisites:
+    - MATH-1B-014-03
+    introduces_terms: []
+    introduces_symbols: []
+    introduces_notation: []
+    uses_symbols: []
+    uses_terms: []
+    handbook_ref: null
+    handbook_verified: false
+    handbook_status: not_in_handbook
+    split_required: false
+    spec_lines: []
+    primer_source: null
+    review_questions: 0
+    practice_problems: 0
+    figures:
+    - FIG-01-14-004
+    status: drafted
+    notes: Added to reconcile the authored chapter front matter with the concept ledger. Refine atom boundaries
+      and Handbook references during subject-matter review.
+  - id: MATH-1B-015-01
+    title: Sequences and Series
+    chapter: 01-15
+    layer: 1
+    tier: B
+    track: null
+    prerequisites:
+    - MATH-1B-014-04
+    introduces_terms: []
+    introduces_symbols: []
+    introduces_notation: []
+    uses_symbols: []
+    uses_terms: []
+    handbook_ref: null
+    handbook_verified: false
+    handbook_status: not_in_handbook
+    split_required: false
+    spec_lines: []
+    primer_source: null
+    review_questions: 26
+    practice_problems: 0
+    figures:
+    - FIG-01-15-001
+    status: drafted
+    notes: Added to reconcile the authored chapter front matter with the concept ledger. Refine atom boundaries
+      and Handbook references during subject-matter review.
+  - id: MATH-1B-015-02
+    title: Summation Notation
+    chapter: 01-15
+    layer: 1
+    tier: B
+    track: null
+    prerequisites:
+    - MATH-1B-015-01
+    introduces_terms: []
+    introduces_symbols: []
+    introduces_notation: []
+    uses_symbols: []
+    uses_terms: []
+    handbook_ref: null
+    handbook_verified: false
+    handbook_status: not_in_handbook
+    split_required: false
+    spec_lines: []
+    primer_source: null
+    review_questions: 0
+    practice_problems: 0
+    figures:
+    - FIG-01-15-002
+    status: drafted
+    notes: Added to reconcile the authored chapter front matter with the concept ledger. Refine atom boundaries
+      and Handbook references during subject-matter review.
+  - id: MATH-1B-015-03
+    title: Arithmetic Progressions
+    chapter: 01-15
+    layer: 1
+    tier: B
+    track: null
+    prerequisites:
+    - MATH-1B-015-02
+    introduces_terms: []
+    introduces_symbols: []
+    introduces_notation: []
+    uses_symbols: []
+    uses_terms: []
+    handbook_ref: null
+    handbook_verified: false
+    handbook_status: not_in_handbook
+    split_required: false
+    spec_lines: []
+    primer_source: null
+    review_questions: 0
+    practice_problems: 0
+    figures:
+    - FIG-01-15-003
+    status: drafted
+    notes: Added to reconcile the authored chapter front matter with the concept ledger. Refine atom boundaries
+      and Handbook references during subject-matter review.
+  - id: MATH-1B-015-04
+    title: Geometric Progressions
+    chapter: 01-15
+    layer: 1
+    tier: B
+    track: null
+    prerequisites:
+    - MATH-1B-015-03
+    introduces_terms: []
+    introduces_symbols: []
+    introduces_notation: []
+    uses_symbols: []
+    uses_terms: []
+    handbook_ref: null
+    handbook_verified: false
+    handbook_status: not_in_handbook
+    split_required: false
+    spec_lines: []
+    primer_source: null
+    review_questions: 0
+    practice_problems: 0
+    figures:
+    - FIG-01-15-004
+    status: drafted
+    notes: Added to reconcile the authored chapter front matter with the concept ledger. Refine atom boundaries
+      and Handbook references during subject-matter review.
+  - id: MATH-1C-016-01
+    title: The Idea of a Limit
+    chapter: 01-16
+    layer: 1
+    tier: C
+    track: null
+    prerequisites:
+    - MATH-1B-015-04
+    introduces_terms: []
+    introduces_symbols: []
+    introduces_notation: []
+    uses_symbols: []
+    uses_terms: []
+    handbook_ref: null
+    handbook_verified: false
+    handbook_status: not_in_handbook
+    split_required: false
+    spec_lines: []
+    primer_source: null
+    review_questions: 32
+    practice_problems: 0
+    figures:
+    - FIG-01-16-001
+    - FIG-01-16-005
+    status: drafted
+    notes: Added to reconcile the authored chapter front matter with the concept ledger. Refine atom boundaries
+      and Handbook references during subject-matter review.
+  - id: MATH-1C-016-02
+    title: One-Sided Limits
+    chapter: 01-16
+    layer: 1
+    tier: C
+    track: null
+    prerequisites:
+    - MATH-1C-016-01
+    introduces_terms: []
+    introduces_symbols: []
+    introduces_notation: []
+    uses_symbols: []
+    uses_terms: []
+    handbook_ref: null
+    handbook_verified: false
+    handbook_status: not_in_handbook
+    split_required: false
+    spec_lines: []
+    primer_source: null
+    review_questions: 0
+    practice_problems: 0
+    figures:
+    - FIG-01-16-002
+    - FIG-01-16-006
+    status: drafted
+    notes: Added to reconcile the authored chapter front matter with the concept ledger. Refine atom boundaries
+      and Handbook references during subject-matter review.
+  - id: MATH-1C-016-03
+    title: The Three Ways a Limit Fails
+    chapter: 01-16
+    layer: 1
+    tier: C
+    track: null
+    prerequisites:
+    - MATH-1C-016-02
+    introduces_terms: []
+    introduces_symbols: []
+    introduces_notation: []
+    uses_symbols: []
+    uses_terms: []
+    handbook_ref: null
+    handbook_verified: false
+    handbook_status: not_in_handbook
+    split_required: false
+    spec_lines: []
+    primer_source: null
+    review_questions: 0
+    practice_problems: 0
+    figures:
+    - FIG-01-16-003
+    status: drafted
+    notes: Added to reconcile the authored chapter front matter with the concept ledger. Refine atom boundaries
+      and Handbook references during subject-matter review.
+  - id: MATH-1C-016-04
+    title: The Limit Laws
+    chapter: 01-16
+    layer: 1
+    tier: C
+    track: null
+    prerequisites:
+    - MATH-1C-016-03
+    introduces_terms: []
+    introduces_symbols: []
+    introduces_notation: []
+    uses_symbols: []
+    uses_terms: []
+    handbook_ref: null
+    handbook_verified: false
+    handbook_status: not_in_handbook
+    split_required: false
+    spec_lines: []
+    primer_source: null
+    review_questions: 0
+    practice_problems: 0
+    figures:
+    - FIG-01-16-004
+    status: drafted
+    notes: Added to reconcile the authored chapter front matter with the concept ledger. Refine atom boundaries
+      and Handbook references during subject-matter review.
+
 _handbook_sections:
 
   general:

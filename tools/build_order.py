@@ -7,9 +7,10 @@
 # =====================================================================
 
 import sys
+import heapq
 import yaml
 from pathlib import Path
-from collections import defaultdict, deque
+from collections import defaultdict
 
 
 LEDGER_PATH = Path(__file__).parent.parent / "meta" / "ledger.yaml"
@@ -18,11 +19,34 @@ LEDGER_PATH = Path(__file__).parent.parent / "meta" / "ledger.yaml"
 def load_ledger(path: Path) -> list[dict]:
     with path.open(encoding="utf-8") as f:
         raw = yaml.safe_load(f)
-    # Filter out non-list top-level keys (_schema, _handbook_sections, etc.)
-    return [item for item in raw if isinstance(item, dict) and "id" in item]
+
+    if not isinstance(raw, dict):
+        raise ValueError(
+            f"Ledger root must be a mapping, not {type(raw).__name__}."
+        )
+
+    concepts = raw.get("concepts")
+    if not isinstance(concepts, list):
+        raise ValueError(
+            "Ledger must contain a top-level 'concepts' list."
+        )
+
+    malformed = [
+        index
+        for index, item in enumerate(concepts, start=1)
+        if not isinstance(item, dict) or not item.get("id")
+    ]
+    if malformed:
+        positions = ", ".join(map(str, malformed))
+        raise ValueError(
+            f"Concept records at list position(s) {positions} are not "
+            "mappings with a non-empty 'id'."
+        )
+
+    return concepts
 
 
-def build_dependency_graph(concepts: list[dict]) -> tuple[dict, dict]:
+def build_dependency_graph(concepts: list[dict]) -> tuple[dict, dict, dict]:
     """
     Returns:
         id_to_concept : dict mapping concept ID to the concept record
@@ -60,20 +84,24 @@ def kahn_sort(
     Raises RuntimeError on cycle, naming the concepts involved.
     """
     # Start with all nodes that have no prerequisites
-    queue = deque(
-        cid for cid in id_to_concept
+    def priority(cid: str) -> tuple[int, str, str]:
+        concept = id_to_concept[cid]
+        return (int(concept.get("layer", 99)), str(concept.get("chapter", "99-99")), cid)
+
+    queue = [
+        (priority(cid), cid) for cid in id_to_concept
         if in_degree.get(cid, 0) == 0
-    )
-    queue = deque(sorted(queue))     # deterministic start order
+    ]
+    heapq.heapify(queue)
     result = []
 
     while queue:
-        cid = queue.popleft()
+        _, cid = heapq.heappop(queue)
         result.append(cid)
         for dependent in sorted(adj.get(cid, [])):
             in_degree[dependent] -= 1
             if in_degree[dependent] == 0:
-                queue.append(dependent)
+                heapq.heappush(queue, (priority(dependent), dependent))
 
     if len(result) != len(id_to_concept):
         cycled = set(id_to_concept) - set(result)

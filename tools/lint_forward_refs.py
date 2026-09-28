@@ -35,7 +35,9 @@ CHAPTER_GLOBS = [
 def load_ledger(path: Path) -> list[dict]:
     with path.open(encoding="utf-8") as f:
         raw = yaml.safe_load(f)
-    return [item for item in raw if isinstance(item, dict) and "id" in item]
+    if not isinstance(raw, dict) or not isinstance(raw.get("concepts"), list):
+        raise ValueError("Ledger must contain a top-level 'concepts' list.")
+    return [item for item in raw["concepts"] if isinstance(item, dict) and "id" in item]
 
 
 def build_definition_map(concepts: list[dict]) -> dict[str, str]:

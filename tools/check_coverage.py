@@ -1,131 +1,40 @@
-# tools/build_order.py
-# =====================================================================
-# Topological sort of the concept ledger → generates chapter reading order.
-# Output: a list of chapter IDs in dependency order.
-# A cycle in the prerequisite graph means a concept is mis-decomposed;
-# the script exits with an error and names the cycle.
-# =====================================================================
+"""Validate NCEES specification coverage recorded in meta/ledger.yaml."""
 
+from collections import Counter
+from pathlib import Path
 import sys
 import yaml
-from pathlib import Path
-from collections import defaultdict, deque
-
 
 LEDGER_PATH = Path(__file__).parent.parent / "meta" / "ledger.yaml"
 
+def load_ledger(path: Path) -> tuple[list[dict], dict]:
+    with path.open(encoding="utf-8") as source:
+        raw = yaml.safe_load(source)
+    if not isinstance(raw, dict) or not isinstance(raw.get("concepts"), list):
+        raise ValueError("Ledger must contain a top-level 'concepts' list.")
+    return raw["concepts"], raw
 
-def load_ledger(path: Path) -> list[dict]:
-    with path.open(encoding="utf-8") as f:
-        raw = yaml.safe_load(f)
-    # Filter out non-list top-level keys (_schema, _handbook_sections, etc.)
-    return [item for item in raw if isinstance(item, dict) and "id" in item]
-
-
-def build_dependency_graph(concepts: list[dict]) -> tuple[dict, dict]:
-    """
-    Returns:
-        id_to_concept : dict mapping concept ID to the concept record
-        adj           : dict mapping concept ID to list of concept IDs
-                        that depend on it (reverse edges for Kahn's algorithm)
-    """
-    id_to_concept = {c["id"]: c for c in concepts}
-    adj = defaultdict(list)          # id → [dependents]
-    in_degree = defaultdict(int)     # id → count of prerequisites
-
-    for concept in concepts:
-        cid = concept["id"]
-        in_degree.setdefault(cid, 0)
-        for prereq in concept.get("prerequisites", []):
-            if prereq not in id_to_concept:
-                print(
-                    f"WARNING: {cid} lists prerequisite '{prereq}' "
-                    f"which is not in the ledger.",
-                    file=sys.stderr,
-                )
-                continue
-            adj[prereq].append(cid)
-            in_degree[cid] += 1
-
-    return id_to_concept, dict(adj), dict(in_degree)
-
-
-def kahn_sort(
-    id_to_concept: dict,
-    adj: dict,
-    in_degree: dict,
-) -> list[str]:
-    """
-    Kahn's algorithm for topological sort.
-    Raises RuntimeError on cycle, naming the concepts involved.
-    """
-    # Start with all nodes that have no prerequisites
-    queue = deque(
-        cid for cid in id_to_concept
-        if in_degree.get(cid, 0) == 0
-    )
-    queue = deque(sorted(queue))     # deterministic start order
-    result = []
-
-    while queue:
-        cid = queue.popleft()
-        result.append(cid)
-        for dependent in sorted(adj.get(cid, [])):
-            in_degree[dependent] -= 1
-            if in_degree[dependent] == 0:
-                queue.append(dependent)
-
-    if len(result) != len(id_to_concept):
-        cycled = set(id_to_concept) - set(result)
-        raise RuntimeError(
-            f"CYCLE DETECTED — the following concepts form a dependency "
-            f"cycle and cannot be ordered:\n  "
-            + "\n  ".join(sorted(cycled))
-        )
-
-    return result
-
-
-def concepts_to_chapter_order(sorted_ids: list[str], id_to_concept: dict) -> list[str]:
-    """
-    Deduplicate and order chapter IDs based on the first appearance
-    of each chapter in the topologically sorted concept list.
-    """
-    seen = set()
-    chapters = []
-    for cid in sorted_ids:
-        chapter = id_to_concept[cid].get("chapter")
-        if chapter and chapter not in seen:
-            seen.add(chapter)
-            chapters.append(chapter)
-    return chapters
-
-
-def main():
-    concepts = load_ledger(LEDGER_PATH)
-    print(f"Loaded {len(concepts)} concepts from ledger.", file=sys.stderr)
-
-    id_to_concept, adj, in_degree = build_dependency_graph(concepts)
-
-    try:
-        sorted_ids = kahn_sort(id_to_concept, adj, in_degree)
-    except RuntimeError as exc:
-        print(f"ERROR: {exc}", file=sys.stderr)
+def main() -> None:
+    concepts, ledger = load_ledger(LEDGER_PATH)
+    lines = [
+        (str(item.get("discipline", "")), str(item.get("area", "")), str(item.get("item", "")))
+        for concept in concepts for item in (concept.get("spec_lines") or [])
+    ]
+    duplicates = [line for line, count in Counter(lines).items() if count > 1]
+    unmapped = [c["id"] for c in concepts if c.get("layer") == 1 and not c.get("spec_lines")]
+    print(f"Loaded {len(concepts)} concepts from ledger.")
+    print(f"Mapped {len(set(lines))} unique specification lines.")
+    if duplicates:
+        print("WARNING  Specification lines claimed by multiple atoms:")
+        for discipline, area, item in sorted(duplicates):
+            print(f"  {discipline} / {area} / {item}")
+    if unmapped and (ledger.get("_todo") or {}).get("spec_lines_layer_1"):
+        print(f"INCOMPLETE  {len(unmapped)} Layer 1 atoms still have no spec_lines; tracked in ledger _todo.")
+        sys.exit(2)
+    if unmapped:
+        print(f"FAIL  {len(unmapped)} Layer 1 atoms have no spec_lines and no _todo acknowledgement.")
         sys.exit(1)
-
-    chapter_order = concepts_to_chapter_order(sorted_ids, id_to_concept)
-
-    print("# Chapter reading order (generated by build_order.py)")
-    print("# Do not edit manually — regenerate by running this script.")
-    for i, chapter in enumerate(chapter_order, start=1):
-        print(f"{i:03d}  {chapter}")
-
-    print(
-        f"\n# {len(sorted_ids)} concepts in {len(chapter_order)} chapters. "
-        f"No cycles detected.",
-        file=sys.stderr,
-    )
-
+    print("PASS  Every Layer 1 atom has at least one specification mapping.")
 
 if __name__ == "__main__":
     main()

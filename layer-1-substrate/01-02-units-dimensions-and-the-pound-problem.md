@@ -148,6 +148,8 @@ By the end of this chapter, you will be able to:
 
 ## 2.1 Quantity, Dimension, Unit
 
+![FIG-01-02-001: Three-tier pyramid showing physical quantity at the base, dimension in the middle, and representative units at the top](../figures/FIG-01-02-001-quantity-dimension-unit.png)
+
 Three words that get used interchangeably in casual speech and must not be
 here.
 
@@ -198,6 +200,8 @@ the seven.
 ---
 
 ## 2.2 The SI System
+
+![FIG-01-02-002: Tree connecting SI base units through physical definitions to the derived units newton, pascal, joule, and watt](../figures/FIG-01-02-002-si-derived-units-tree.png)
 
 The **International System of Units**, abbreviated **SI** from the French
 *Système International*, defines seven base units — one per base dimension —
@@ -316,6 +320,8 @@ We'll get there.
 
 ## 2.4 Dimensional Homogeneity
 
+![FIG-01-02-003: Dimensional check comparing an incorrect pendulum-period equation with the dimensionally consistent corrected form](../figures/FIG-01-02-003-pendulum-dimensional-check.png)
+
 Now the elegant part.
 
 > **Every term in a physically valid equation must have the same dimensions.**
@@ -432,6 +438,8 @@ than $p = \rho g h$.
 ---
 
 ## 2.5 Unit Conversion by Dimensional Analysis
+
+![FIG-01-02-004: Three-step factor-label unit-conversion flowchart with a decision branch based on whether the units cancel](../figures/FIG-01-02-004-factor-label-method.png)
 
 The technique is called the **factor-label method**, and it is the only
 conversion method you should ever use. Not because it's fast, but because it
@@ -550,6 +558,12 @@ enough that a lookup is a waste of your seconds.
 ---
 
 ## 2.6 The Pound Problem
+
+![FIG-01-02-005: Comparison of SI, USCS slug, and USCS lbm-lbf systems, highlighting why the lbm-lbf form requires g_c](../figures/FIG-01-02-005-unit-system-comparison.png)
+
+![FIG-01-02-006: Side-by-side comparison of gravitational acceleration g and the unit-conversion constant g_c](../figures/FIG-01-02-006-g-vs-gc.png)
+
+![FIG-01-02-007: Newton's second law written in SI, USCS slug, and USCS lbm-lbf forms with units annotated](../figures/FIG-01-02-007-newtons-second-law-unit-systems.png)
 
 Here we are. Read this section twice.
 
@@ -941,6 +955,10 @@ be wrong and won't know it.
 
 ## 2.7 Temperature Scales
 
+![FIG-01-02-008: Four aligned temperature scales showing absolute zero, water freezing and boiling points, and body temperature](../figures/FIG-01-02-008-temperature-scales.png)
+
+![FIG-01-02-009: Decision flowchart for selecting an absolute temperature scale or converting a temperature difference](../figures/FIG-01-02-009-temperature-scale-selection.png)
+
 Four scales. Two absolute, two relative.
 
 | Scale | Symbol | Type | Zero point |
@@ -1114,6 +1132,8 @@ differences don't. ✓
 ---
 
 ## 2.8 Fundamental Constants
+
+![FIG-01-02-010: Reference grid showing four common forms of the universal gas constant with their units and uses](../figures/FIG-01-02-010-universal-gas-constant.png)
 
 The Handbook prints a table of physical constants on page 2. You should know
 where it is and, for a handful of entries, know the values cold.

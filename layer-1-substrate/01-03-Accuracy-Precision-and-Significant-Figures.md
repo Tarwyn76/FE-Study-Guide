@@ -97,6 +97,8 @@ context.
 
 ## 3.1 Accuracy and Precision
 
+![FIG-01-03-001: Four dartboards in a two-by-two matrix showing accurate and precise, precise only, accurate only, and neither](../figures/FIG-01-03-001-accuracy-precision-matrix.png)
+
 Two words that mean different things and get used interchangeably everywhere
 except engineering.
 
@@ -219,6 +221,8 @@ three significant figures gives $E_{\%} = 2.5\%$.
 ---
 
 ## 3.3 Significant Figures — The Six Rules
+
+![FIG-01-03-002: Decision flowchart for deciding whether a digit is significant based on the position of nonzero digits and zeros](../figures/FIG-01-03-002-significant-figures-flowchart.png)
 
 The Handbook prints six numbered rules on page 2. Here they are, with the
 tricky cases named explicitly.
@@ -469,6 +473,8 @@ and got 150, none of the choices would look right.
 ---
 
 ## 3.6 The Intermediate Rounding Problem
+
+![FIG-01-03-003: Side-by-side calculations showing the correct full-precision result and the error caused by premature rounding](../figures/FIG-01-03-003-catastrophic-cancellation.png)
 
 This is the section I asked you not to skip even if you tested out of Tier 1A.
 
