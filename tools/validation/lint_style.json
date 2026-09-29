@@ -1,0 +1,2274 @@
+{
+  "tool": "lint_style",
+  "scope": "mechanical conventions from the supplied FE style guide and schema-4 ledger",
+  "status": "FAIL",
+  "exit_code": 1,
+  "counts": {
+    "WARNING": 28,
+    "INFO": 4,
+    "ERROR": 250
+  },
+  "statistics": {
+    "concepts_loaded": 100,
+    "chapters": 26,
+    "worked_examples_checked": 193
+  },
+  "diagnostics": [
+    {
+      "severity": "WARNING",
+      "code": "STYLE_POLICY_CONFLICT",
+      "message": "Style guide specifies both combined three-part review questions and separate conceptual/practice counts. This tool uses the current ledger’s combined-review convention and does not enforce either conflicting numerical quota.",
+      "path": "/workspace/scratch/234e8013f29d/upload/style-guide.md",
+      "line": null,
+      "chapter": null
+    },
+    {
+      "severity": "WARNING",
+      "code": "STYLE_SCHEMA_LEGACY",
+      "message": "Style guide still describes memorize: true/false; schema 4 uses handbook_status and split_required. The current schema governs metadata checks.",
+      "path": "/workspace/scratch/234e8013f29d/upload/style-guide.md",
+      "line": null,
+      "chapter": null
+    },
+    {
+      "severity": "INFO",
+      "code": "CHAPTER_INCOMPLETE",
+      "message": "Recorded state: incomplete; findings are still reported, not suppressed",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-21-Techniques-of-Integration(1).md",
+      "line": 1,
+      "chapter": "01-21"
+    },
+    {
+      "severity": "INFO",
+      "code": "CHAPTER_INCOMPLETE",
+      "message": "Recorded state: incomplete; findings are still reported, not suppressed",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 1,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "INFO",
+      "code": "CHAPTER_INCOMPLETE",
+      "message": "Recorded state: work_in_progress; findings are still reported, not suppressed",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-23-Partial-Derivatives-and-Vector-Calculus(1).md",
+      "line": 1,
+      "chapter": "01-23"
+    },
+    {
+      "severity": "INFO",
+      "code": "PARTIAL_SCOPE",
+      "message": "Chapter checks apply only to the explicitly selected files",
+      "path": "/workspace/scratch/234e8013f29d/upload/ledger.yaml",
+      "line": null,
+      "chapter": null
+    },
+    {
+      "severity": "WARNING",
+      "code": "FILENAME_STYLE",
+      "message": "Filename differs from the chapter-number-kebab-case.md convention; upload suffixes such as (1) can cause this",
+      "path": "/workspace/scratch/234e8013f29d/upload/00-01-how-to-use-this-guide(1).md",
+      "line": null,
+      "chapter": "00-01"
+    },
+    {
+      "severity": "WARNING",
+      "code": "FILENAME_STYLE",
+      "message": "Filename differs from the chapter-number-kebab-case.md convention; upload suffixes such as (1) can cause this",
+      "path": "/workspace/scratch/234e8013f29d/upload/00-02-the-exam-and-the-cbt-format(1).md",
+      "line": null,
+      "chapter": "00-02"
+    },
+    {
+      "severity": "WARNING",
+      "code": "FILENAME_STYLE",
+      "message": "Filename differs from the chapter-number-kebab-case.md convention; upload suffixes such as (1) can cause this",
+      "path": "/workspace/scratch/234e8013f29d/upload/00-03-navigating-the-fe-reference-book(1).md",
+      "line": null,
+      "chapter": "00-03"
+    },
+    {
+      "severity": "WARNING",
+      "code": "FILENAME_STYLE",
+      "message": "Filename differs from the chapter-number-kebab-case.md convention; upload suffixes such as (1) can cause this",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-01-numbers-magnitude-and-metric-prefixes(1).md",
+      "line": null,
+      "chapter": "01-01"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 2 — Multiplication and Division: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-01-numbers-magnitude-and-metric-prefixes(1).md",
+      "line": 330,
+      "chapter": "01-01"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 3 — Addition and Subtraction: missing labeled parts ['check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-01-numbers-magnitude-and-metric-prefixes(1).md",
+      "line": 408,
+      "chapter": "01-01"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 5 — A Prefix Chain: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-01-numbers-magnitude-and-metric-prefixes(1).md",
+      "line": 659,
+      "chapter": "01-01"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 7 — Squared and Cubed Prefixes: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-01-numbers-magnitude-and-metric-prefixes(1).md",
+      "line": 826,
+      "chapter": "01-01"
+    },
+    {
+      "severity": "WARNING",
+      "code": "FILENAME_STYLE",
+      "message": "Filename differs from the chapter-number-kebab-case.md convention; upload suffixes such as (1) can cause this",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-02-units-dimensions-and-the-pound-problem(1).md",
+      "line": null,
+      "chapter": "01-02"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 2 — Verifying a Valid Term: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-02-units-dimensions-and-the-pound-problem(1).md",
+      "line": 401,
+      "chapter": "01-02"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 4 — USCS to SI, With a Squared Prefix: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-02-units-dimensions-and-the-pound-problem(1).md",
+      "line": 496,
+      "chapter": "01-02"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 6 — Weight at Non-Standard Gravity: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-02-units-dimensions-and-the-pound-problem(1).md",
+      "line": 784,
+      "chapter": "01-02"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 8 — Fluid Pressure and Specific Weight: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-02-units-dimensions-and-the-pound-problem(1).md",
+      "line": 901,
+      "chapter": "01-02"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 9 — Value, Difference, and Ratio: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-02-units-dimensions-and-the-pound-problem(1).md",
+      "line": 1067,
+      "chapter": "01-02"
+    },
+    {
+      "severity": "ERROR",
+      "code": "MENTOR_MARGIN_FORMAT",
+      "message": "Use a boxed blockquote with opening/closing > ---, a standalone **Mentor's Margin** label, and a blank quoted line before its body",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-02-units-dimensions-and-the-pound-problem(1).md",
+      "line": 65,
+      "chapter": "01-02"
+    },
+    {
+      "severity": "ERROR",
+      "code": "MENTOR_MARGIN_FORMAT",
+      "message": "Use a boxed blockquote with opening/closing > ---, a standalone **Mentor's Margin** label, and a blank quoted line before its body",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-02-units-dimensions-and-the-pound-problem(1).md",
+      "line": 194,
+      "chapter": "01-02"
+    },
+    {
+      "severity": "ERROR",
+      "code": "MENTOR_MARGIN_FORMAT",
+      "message": "Use a boxed blockquote with opening/closing > ---, a standalone **Mentor's Margin** label, and a blank quoted line before its body",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-02-units-dimensions-and-the-pound-problem(1).md",
+      "line": 395,
+      "chapter": "01-02"
+    },
+    {
+      "severity": "ERROR",
+      "code": "MENTOR_MARGIN_FORMAT",
+      "message": "Use a boxed blockquote with opening/closing > ---, a standalone **Mentor's Margin** label, and a blank quoted line before its body",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-02-units-dimensions-and-the-pound-problem(1).md",
+      "line": 465,
+      "chapter": "01-02"
+    },
+    {
+      "severity": "ERROR",
+      "code": "MENTOR_MARGIN_FORMAT",
+      "message": "Use a boxed blockquote with opening/closing > ---, a standalone **Mentor's Margin** label, and a blank quoted line before its body",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-02-units-dimensions-and-the-pound-problem(1).md",
+      "line": 612,
+      "chapter": "01-02"
+    },
+    {
+      "severity": "ERROR",
+      "code": "MENTOR_MARGIN_FORMAT",
+      "message": "Use a boxed blockquote with opening/closing > ---, a standalone **Mentor's Margin** label, and a blank quoted line before its body",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-02-units-dimensions-and-the-pound-problem(1).md",
+      "line": 661,
+      "chapter": "01-02"
+    },
+    {
+      "severity": "ERROR",
+      "code": "MENTOR_MARGIN_FORMAT",
+      "message": "Use a boxed blockquote with opening/closing > ---, a standalone **Mentor's Margin** label, and a blank quoted line before its body",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-02-units-dimensions-and-the-pound-problem(1).md",
+      "line": 722,
+      "chapter": "01-02"
+    },
+    {
+      "severity": "ERROR",
+      "code": "MENTOR_MARGIN_FORMAT",
+      "message": "Use a boxed blockquote with opening/closing > ---, a standalone **Mentor's Margin** label, and a blank quoted line before its body",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-02-units-dimensions-and-the-pound-problem(1).md",
+      "line": 757,
+      "chapter": "01-02"
+    },
+    {
+      "severity": "ERROR",
+      "code": "MENTOR_MARGIN_FORMAT",
+      "message": "Use a boxed blockquote with opening/closing > ---, a standalone **Mentor's Margin** label, and a blank quoted line before its body",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-02-units-dimensions-and-the-pound-problem(1).md",
+      "line": 1013,
+      "chapter": "01-02"
+    },
+    {
+      "severity": "ERROR",
+      "code": "MENTOR_MARGIN_FORMAT",
+      "message": "Use a boxed blockquote with opening/closing > ---, a standalone **Mentor's Margin** label, and a blank quoted line before its body",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-02-units-dimensions-and-the-pound-problem(1).md",
+      "line": 1060,
+      "chapter": "01-02"
+    },
+    {
+      "severity": "ERROR",
+      "code": "MENTOR_MARGIN_FORMAT",
+      "message": "Use a boxed blockquote with opening/closing > ---, a standalone **Mentor's Margin** label, and a blank quoted line before its body",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-02-units-dimensions-and-the-pound-problem(1).md",
+      "line": 1171,
+      "chapter": "01-02"
+    },
+    {
+      "severity": "ERROR",
+      "code": "BARE_FOREIGN_SECTION",
+      "message": "Bare §1.6 does not exist in this chapter; qualify a cross-chapter citation with its chapter ID",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-02-units-dimensions-and-the-pound-problem(1).md",
+      "line": 24,
+      "chapter": "01-02"
+    },
+    {
+      "severity": "ERROR",
+      "code": "BARE_FOREIGN_SECTION",
+      "message": "Bare §1.8 does not exist in this chapter; qualify a cross-chapter citation with its chapter ID",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-02-units-dimensions-and-the-pound-problem(1).md",
+      "line": 127,
+      "chapter": "01-02"
+    },
+    {
+      "severity": "ERROR",
+      "code": "BARE_FOREIGN_SECTION",
+      "message": "Bare §1.8 does not exist in this chapter; qualify a cross-chapter citation with its chapter ID",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-02-units-dimensions-and-the-pound-problem(1).md",
+      "line": 127,
+      "chapter": "01-02"
+    },
+    {
+      "severity": "ERROR",
+      "code": "BARE_FOREIGN_SECTION",
+      "message": "Bare §1.6 does not exist in this chapter; qualify a cross-chapter citation with its chapter ID",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-02-units-dimensions-and-the-pound-problem(1).md",
+      "line": 260,
+      "chapter": "01-02"
+    },
+    {
+      "severity": "ERROR",
+      "code": "BARE_FOREIGN_SECTION",
+      "message": "Bare §1.6 does not exist in this chapter; qualify a cross-chapter citation with its chapter ID",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-02-units-dimensions-and-the-pound-problem(1).md",
+      "line": 434,
+      "chapter": "01-02"
+    },
+    {
+      "severity": "ERROR",
+      "code": "MISSING_SECTION",
+      "message": "Missing required section \"What's Next\"",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-03-Accuracy-Precision-and-Significant-Figures(1).md",
+      "line": null,
+      "chapter": "01-03"
+    },
+    {
+      "severity": "WARNING",
+      "code": "FILENAME_STYLE",
+      "message": "Filename differs from the chapter-number-kebab-case.md convention; upload suffixes such as (1) can cause this",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-03-Accuracy-Precision-and-Significant-Figures(1).md",
+      "line": null,
+      "chapter": "01-03"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 1 — Computing Errors: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-03-Accuracy-Precision-and-Significant-Figures(1).md",
+      "line": 191,
+      "chapter": "01-03"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 2 — Identifying Significant Figures: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-03-Accuracy-Precision-and-Significant-Figures(1).md",
+      "line": 306,
+      "chapter": "01-03"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 3 — Mixed Operations: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-03-Accuracy-Precision-and-Significant-Figures(1).md",
+      "line": 403,
+      "chapter": "01-03"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 4 — Rounding a Multi-Step Problem: missing labeled parts ['find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-03-Accuracy-Precision-and-Significant-Figures(1).md",
+      "line": 588,
+      "chapter": "01-03"
+    },
+    {
+      "severity": "ERROR",
+      "code": "NOTATION_BANNER_COLUMNS",
+      "message": "The notation contract requires Symbol / Meaning in this chapter / SI / USCS; Notes alone is not a units column",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-03-Accuracy-Precision-and-Significant-Figures(1).md",
+      "line": 83,
+      "chapter": "01-03"
+    },
+    {
+      "severity": "WARNING",
+      "code": "FILENAME_STYLE",
+      "message": "Filename differs from the chapter-number-kebab-case.md convention; upload suffixes such as (1) can cause this",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-04-Expressions-Equations-and-Inequalities(1).md",
+      "line": null,
+      "chapter": "01-04"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 1 — Expansion and Factoring: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-04-Expressions-Equations-and-Inequalities(1).md",
+      "line": 253,
+      "chapter": "01-04"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 2 — Single Variable, Linear: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-04-Expressions-Equations-and-Inequalities(1).md",
+      "line": 307,
+      "chapter": "01-04"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 3 — Rearranging for a Specified Variable: missing labeled parts ['find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-04-Expressions-Equations-and-Inequalities(1).md",
+      "line": 328,
+      "chapter": "01-04"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 4 — Clearing Fractions First: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-04-Expressions-Equations-and-Inequalities(1).md",
+      "line": 382,
+      "chapter": "01-04"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 5 — Physics Equation, Explicit Solve: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-04-Expressions-Equations-and-Inequalities(1).md",
+      "line": 409,
+      "chapter": "01-04"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 6 — Absolute Value Equation: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-04-Expressions-Equations-and-Inequalities(1).md",
+      "line": 475,
+      "chapter": "01-04"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 7 — No Solution and One Solution Cases: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-04-Expressions-Equations-and-Inequalities(1).md",
+      "line": 500,
+      "chapter": "01-04"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 8 — Linear Inequality with Direction Flip: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-04-Expressions-Equations-and-Inequalities(1).md",
+      "line": 543,
+      "chapter": "01-04"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 9 — Compound Inequality: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-04-Expressions-Equations-and-Inequalities(1).md",
+      "line": 625,
+      "chapter": "01-04"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 10 — Setting Up and Solving: missing labeled parts ['approach', 'solution']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-04-Expressions-Equations-and-Inequalities(1).md",
+      "line": 690,
+      "chapter": "01-04"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 11 — Inequality in Engineering Context: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-04-Expressions-Equations-and-Inequalities(1).md",
+      "line": 718,
+      "chapter": "01-04"
+    },
+    {
+      "severity": "ERROR",
+      "code": "NOTATION_BANNER_COLUMNS",
+      "message": "The notation contract requires Symbol / Meaning in this chapter / SI / USCS; Notes alone is not a units column",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-04-Expressions-Equations-and-Inequalities(1).md",
+      "line": 84,
+      "chapter": "01-04"
+    },
+    {
+      "severity": "WARNING",
+      "code": "FILENAME_STYLE",
+      "message": "Filename differs from the chapter-number-kebab-case.md convention; upload suffixes such as (1) can cause this",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-05-Exponents-Radicals-and-Logarithms(1).md",
+      "line": null,
+      "chapter": "01-05"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 1 — Simplifying With Multiple Laws: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-05-Exponents-Radicals-and-Logarithms(1).md",
+      "line": 165,
+      "chapter": "01-05"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 2 — Fractional Exponents in an Engineering Formula: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-05-Exponents-Radicals-and-Logarithms(1).md",
+      "line": 252,
+      "chapter": "01-05"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 3 — Evaluating Logarithms Without a Calculator: missing labeled parts ['find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-05-Exponents-Radicals-and-Logarithms(1).md",
+      "line": 399,
+      "chapter": "01-05"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 4 — Exponential Decay Problem: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-05-Exponents-Radicals-and-Logarithms(1).md",
+      "line": 520,
+      "chapter": "01-05"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 5 — Decibels and Back: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-05-Exponents-Radicals-and-Logarithms(1).md",
+      "line": 640,
+      "chapter": "01-05"
+    },
+    {
+      "severity": "ERROR",
+      "code": "PREVIEW_NOTE_FORMAT",
+      "message": "Use > **Preview note.** followed by the preview text",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-05-Exponents-Radicals-and-Logarithms(1).md",
+      "line": 313,
+      "chapter": "01-05"
+    },
+    {
+      "severity": "ERROR",
+      "code": "NOTATION_BANNER_COLUMNS",
+      "message": "The notation contract requires Symbol / Meaning in this chapter / SI / USCS; Notes alone is not a units column",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-05-Exponents-Radicals-and-Logarithms(1).md",
+      "line": 88,
+      "chapter": "01-05"
+    },
+    {
+      "severity": "ERROR",
+      "code": "COLLISION_NOTE_MISSING",
+      "message": "Reserved printed symbols ['τ'] occur in the banner without its required Collision note label",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-05-Exponents-Radicals-and-Logarithms(1).md",
+      "line": 86,
+      "chapter": "01-05"
+    },
+    {
+      "severity": "WARNING",
+      "code": "FILENAME_STYLE",
+      "message": "Filename differs from the chapter-number-kebab-case.md convention; upload suffixes such as (1) can cause this",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-06-Functions-Graphs-and-Transformations(1).md",
+      "line": null,
+      "chapter": "01-06"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 1 — Domain and Range: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-06-Functions-Graphs-and-Transformations(1).md",
+      "line": 145,
+      "chapter": "01-06"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 2 — Composition: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-06-Functions-Graphs-and-Transformations(1).md",
+      "line": 200,
+      "chapter": "01-06"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 3 — Finding an Inverse: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-06-Functions-Graphs-and-Transformations(1).md",
+      "line": 258,
+      "chapter": "01-06"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 4 — Reading a Transformed Function: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-06-Functions-Graphs-and-Transformations(1).md",
+      "line": 467,
+      "chapter": "01-06"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 5 — Engineering Context: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-06-Functions-Graphs-and-Transformations(1).md",
+      "line": 502,
+      "chapter": "01-06"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 6 — Evaluating and Graphing a Piecewise Function: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-06-Functions-Graphs-and-Transformations(1).md",
+      "line": 573,
+      "chapter": "01-06"
+    },
+    {
+      "severity": "ERROR",
+      "code": "NOTATION_BANNER_COLUMNS",
+      "message": "The notation contract requires Symbol / Meaning in this chapter / SI / USCS; Notes alone is not a units column",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-06-Functions-Graphs-and-Transformations(1).md",
+      "line": 84,
+      "chapter": "01-06"
+    },
+    {
+      "severity": "WARNING",
+      "code": "FILENAME_STYLE",
+      "message": "Filename differs from the chapter-number-kebab-case.md convention; upload suffixes such as (1) can cause this",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-07-Polynomials-and-Their-Roots(1).md",
+      "line": null,
+      "chapter": "01-07"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 3 — The Quadratic Formula and Discriminant: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-07-Polynomials-and-Their-Roots(1).md",
+      "line": 322,
+      "chapter": "01-07"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 4 — Using Vieta's: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-07-Polynomials-and-Their-Roots(1).md",
+      "line": 377,
+      "chapter": "01-07"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 5 — The Full Search: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-07-Polynomials-and-Their-Roots(1).md",
+      "line": 548,
+      "chapter": "01-07"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 6 — Sketching From Factored Form: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-07-Polynomials-and-Their-Roots(1).md",
+      "line": 641,
+      "chapter": "01-07"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 7 — Engineering Quadratic: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-07-Polynomials-and-Their-Roots(1).md",
+      "line": 697,
+      "chapter": "01-07"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 8 — Building a Polynomial: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-07-Polynomials-and-Their-Roots(1).md",
+      "line": 767,
+      "chapter": "01-07"
+    },
+    {
+      "severity": "ERROR",
+      "code": "NOTATION_BANNER_COLUMNS",
+      "message": "The notation contract requires Symbol / Meaning in this chapter / SI / USCS; Notes alone is not a units column",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-07-Polynomials-and-Their-Roots(1).md",
+      "line": 86,
+      "chapter": "01-07"
+    },
+    {
+      "severity": "WARNING",
+      "code": "FILENAME_STYLE",
+      "message": "Filename differs from the chapter-number-kebab-case.md convention; upload suffixes such as (1) can cause this",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-08-Systems-of-Linear-Equations(1).md",
+      "line": null,
+      "chapter": "01-08"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 1 — Substitution: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-08-Systems-of-Linear-Equations(1).md",
+      "line": 198,
+      "chapter": "01-08"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 2 — Elimination in an Equilibrium Problem: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-08-Systems-of-Linear-Equations(1).md",
+      "line": 249,
+      "chapter": "01-08"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 3 — Full 3×3 System: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-08-Systems-of-Linear-Equations(1).md",
+      "line": 344,
+      "chapter": "01-08"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 4 — No Solution: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-08-Systems-of-Linear-Equations(1).md",
+      "line": 425,
+      "chapter": "01-08"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 5 — Infinitely Many Solutions: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-08-Systems-of-Linear-Equations(1).md",
+      "line": 447,
+      "chapter": "01-08"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 6 — Cramer's Rule: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-08-Systems-of-Linear-Equations(1).md",
+      "line": 581,
+      "chapter": "01-08"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 7 — Mixture Problem: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-08-Systems-of-Linear-Equations(1).md",
+      "line": 642,
+      "chapter": "01-08"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 8 — Kirchhoff's Laws: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-08-Systems-of-Linear-Equations(1).md",
+      "line": 705,
+      "chapter": "01-08"
+    },
+    {
+      "severity": "ERROR",
+      "code": "NOTATION_BANNER_COLUMNS",
+      "message": "The notation contract requires Symbol / Meaning in this chapter / SI / USCS; Notes alone is not a units column",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-08-Systems-of-Linear-Equations(1).md",
+      "line": 94,
+      "chapter": "01-08"
+    },
+    {
+      "severity": "WARNING",
+      "code": "FILENAME_STYLE",
+      "message": "Filename differs from the chapter-number-kebab-case.md convention; upload suffixes such as (1) can cause this",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-09-Analytic-Geometry(1).md",
+      "line": null,
+      "chapter": "01-09"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 1 — Line Equations: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-09-Analytic-Geometry(1).md",
+      "line": 218,
+      "chapter": "01-09"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 2 — Circle Identification: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-09-Analytic-Geometry(1).md",
+      "line": 384,
+      "chapter": "01-09"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 3 — Circle Through Three Points: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-09-Analytic-Geometry(1).md",
+      "line": 413,
+      "chapter": "01-09"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 4 — Parabolic Cable: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-09-Analytic-Geometry(1).md",
+      "line": 535,
+      "chapter": "01-09"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 5 — Elliptical Cross-Section: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-09-Analytic-Geometry(1).md",
+      "line": 619,
+      "chapter": "01-09"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 6 — Cooling Tower Profile: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-09-Analytic-Geometry(1).md",
+      "line": 704,
+      "chapter": "01-09"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 7 — Full Identification: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-09-Analytic-Geometry(1).md",
+      "line": 836,
+      "chapter": "01-09"
+    },
+    {
+      "severity": "ERROR",
+      "code": "BARE_FOREIGN_SECTION",
+      "message": "Bare §7.4 does not exist in this chapter; qualify a cross-chapter citation with its chapter ID",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-09-Analytic-Geometry(1).md",
+      "line": 27,
+      "chapter": "01-09"
+    },
+    {
+      "severity": "ERROR",
+      "code": "BARE_FOREIGN_SECTION",
+      "message": "Bare §7.4 does not exist in this chapter; qualify a cross-chapter citation with its chapter ID",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-09-Analytic-Geometry(1).md",
+      "line": 367,
+      "chapter": "01-09"
+    },
+    {
+      "severity": "ERROR",
+      "code": "BARE_FOREIGN_SECTION",
+      "message": "Bare §8.3 does not exist in this chapter; qualify a cross-chapter citation with its chapter ID",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-09-Analytic-Geometry(1).md",
+      "line": 455,
+      "chapter": "01-09"
+    },
+    {
+      "severity": "ERROR",
+      "code": "NOTATION_BANNER_COLUMNS",
+      "message": "The notation contract requires Symbol / Meaning in this chapter / SI / USCS; Notes alone is not a units column",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-09-Analytic-Geometry(1).md",
+      "line": 96,
+      "chapter": "01-09"
+    },
+    {
+      "severity": "ERROR",
+      "code": "COLLISION_NOTE_MISSING",
+      "message": "Reserved printed symbols ['A', 'E'] occur in the banner without its required Collision note label",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-09-Analytic-Geometry(1).md",
+      "line": 94,
+      "chapter": "01-09"
+    },
+    {
+      "severity": "WARNING",
+      "code": "FILENAME_STYLE",
+      "message": "Filename differs from the chapter-number-kebab-case.md convention; upload suffixes such as (1) can cause this",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-10-Areas-Volumes-and-Mensuration(1).md",
+      "line": null,
+      "chapter": "01-10"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 1 — Hollow Cylinder Volume: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-10-Areas-Volumes-and-Mensuration(1).md",
+      "line": 171,
+      "chapter": "01-10"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 2 — Composite Centroid: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-10-Areas-Volumes-and-Mensuration(1).md",
+      "line": 246,
+      "chapter": "01-10"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 3 — Composite Area With a Hole: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-10-Areas-Volumes-and-Mensuration(1).md",
+      "line": 290,
+      "chapter": "01-10"
+    },
+    {
+      "severity": "ERROR",
+      "code": "NOTATION_BANNER_COLUMNS",
+      "message": "The notation contract requires Symbol / Meaning in this chapter / SI / USCS; Notes alone is not a units column",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-10-Areas-Volumes-and-Mensuration(1).md",
+      "line": 79,
+      "chapter": "01-10"
+    },
+    {
+      "severity": "ERROR",
+      "code": "COLLISION_NOTE_MISSING",
+      "message": "Reserved printed symbols ['A', 'V'] occur in the banner without its required Collision note label",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-10-Areas-Volumes-and-Mensuration(1).md",
+      "line": 77,
+      "chapter": "01-10"
+    },
+    {
+      "severity": "WARNING",
+      "code": "FILENAME_STYLE",
+      "message": "Filename differs from the chapter-number-kebab-case.md convention; upload suffixes such as (1) can cause this",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-11-Trigonometry(1).md",
+      "line": null,
+      "chapter": "01-11"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 1 — Evaluating Trig Functions in Any Quadrant: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-11-Trigonometry(1).md",
+      "line": 272,
+      "chapter": "01-11"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 2 — Right Triangle, Force Decomposition: missing labeled parts ['find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-11-Trigonometry(1).md",
+      "line": 367,
+      "chapter": "01-11"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 3 — Law of Sines: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-11-Trigonometry(1).md",
+      "line": 440,
+      "chapter": "01-11"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 4 — Law of Cosines: missing labeled parts ['find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-11-Trigonometry(1).md",
+      "line": 476,
+      "chapter": "01-11"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 5 — Using Identities to Find an Exact Value: missing labeled parts ['find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-11-Trigonometry(1).md",
+      "line": 572,
+      "chapter": "01-11"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 6 — Finding an Angle From Components: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-11-Trigonometry(1).md",
+      "line": 621,
+      "chapter": "01-11"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 7 — Angle Between Two Lines: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-11-Trigonometry(1).md",
+      "line": 721,
+      "chapter": "01-11"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 8 — Why the Absolute Value Matters: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-11-Trigonometry(1).md",
+      "line": 755,
+      "chapter": "01-11"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 9 — Resultant of Three Forces: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-11-Trigonometry(1).md",
+      "line": 815,
+      "chapter": "01-11"
+    },
+    {
+      "severity": "ERROR",
+      "code": "BARE_FOREIGN_SECTION",
+      "message": "Bare §9.1 does not exist in this chapter; qualify a cross-chapter citation with its chapter ID",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-11-Trigonometry(1).md",
+      "line": 24,
+      "chapter": "01-11"
+    },
+    {
+      "severity": "ERROR",
+      "code": "NOTATION_BANNER_COLUMNS",
+      "message": "The notation contract requires Symbol / Meaning in this chapter / SI / USCS; Notes alone is not a units column",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-11-Trigonometry(1).md",
+      "line": 92,
+      "chapter": "01-11"
+    },
+    {
+      "severity": "ERROR",
+      "code": "COLLISION_NOTE_MISSING",
+      "message": "Reserved printed symbols ['A', 'α', 'β', 'θ', 'φ'] occur in the banner without its required Collision note label",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-11-Trigonometry(1).md",
+      "line": 90,
+      "chapter": "01-11"
+    },
+    {
+      "severity": "WARNING",
+      "code": "FILENAME_STYLE",
+      "message": "Filename differs from the chapter-number-kebab-case.md convention; upload suffixes such as (1) can cause this",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-12-Complex-Numbers(1).md",
+      "line": null,
+      "chapter": "01-12"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 1 — Rectangular Arithmetic: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-12-Complex-Numbers(1).md",
+      "line": 173,
+      "chapter": "01-12"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 2 — Converting Between Forms: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-12-Complex-Numbers(1).md",
+      "line": 214,
+      "chapter": "01-12"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 3 — Polar Multiplication and Division: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-12-Complex-Numbers(1).md",
+      "line": 296,
+      "chapter": "01-12"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 4 — Finding Cube Roots: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-12-Complex-Numbers(1).md",
+      "line": 339,
+      "chapter": "01-12"
+    },
+    {
+      "severity": "ERROR",
+      "code": "NOTATION_BANNER_COLUMNS",
+      "message": "The notation contract requires Symbol / Meaning in this chapter / SI / USCS; Notes alone is not a units column",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-12-Complex-Numbers(1).md",
+      "line": 86,
+      "chapter": "01-12"
+    },
+    {
+      "severity": "ERROR",
+      "code": "COLLISION_NOTE_MISSING",
+      "message": "Reserved printed symbols ['θ'] occur in the banner without its required Collision note label",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-12-Complex-Numbers(1).md",
+      "line": 84,
+      "chapter": "01-12"
+    },
+    {
+      "severity": "WARNING",
+      "code": "FILENAME_STYLE",
+      "message": "Filename differs from the chapter-number-kebab-case.md convention; upload suffixes such as (1) can cause this",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-13-Vectors-and-Vector-Operations(1).md",
+      "line": null,
+      "chapter": "01-13"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 1 — Magnitude, Unit Vector, Direction Cosines: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-13-Vectors-and-Vector-Operations(1).md",
+      "line": 178,
+      "chapter": "01-13"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 2 — Dot Product and Angle: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-13-Vectors-and-Vector-Operations(1).md",
+      "line": 248,
+      "chapter": "01-13"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 3 — Work Done by a Force: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-13-Vectors-and-Vector-Operations(1).md",
+      "line": 275,
+      "chapter": "01-13"
+    },
+    {
+      "severity": "ERROR",
+      "code": "NOTATION_BANNER_COLUMNS",
+      "message": "The notation contract requires Symbol / Meaning in this chapter / SI / USCS; Notes alone is not a units column",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-13-Vectors-and-Vector-Operations(1).md",
+      "line": 80,
+      "chapter": "01-13"
+    },
+    {
+      "severity": "ERROR",
+      "code": "COLLISION_NOTE_MISSING",
+      "message": "Reserved printed symbols ['A'] occur in the banner without its required Collision note label",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-13-Vectors-and-Vector-Operations(1).md",
+      "line": 78,
+      "chapter": "01-13"
+    },
+    {
+      "severity": "WARNING",
+      "code": "FILENAME_STYLE",
+      "message": "Filename differs from the chapter-number-kebab-case.md convention; upload suffixes such as (1) can cause this",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-14-Matrices-Determinants-and-Eigenvalues(1).md",
+      "line": null,
+      "chapter": "01-14"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 1 — Matrix Multiplication: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-14-Matrices-Determinants-and-Eigenvalues(1).md",
+      "line": 256,
+      "chapter": "01-14"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 2 — 3×3 Determinant, Two Ways: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-14-Matrices-Determinants-and-Eigenvalues(1).md",
+      "line": 397,
+      "chapter": "01-14"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 3 — Detecting a Singular Matrix: missing labeled parts ['approach', 'check', 'solution']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-14-Matrices-Determinants-and-Eigenvalues(1).md",
+      "line": 432,
+      "chapter": "01-14"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 4 — 2×2 Inverse with Verification: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-14-Matrices-Determinants-and-Eigenvalues(1).md",
+      "line": 500,
+      "chapter": "01-14"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 5 — Solve by Matrix Inversion: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-14-Matrices-Determinants-and-Eigenvalues(1).md",
+      "line": 576,
+      "chapter": "01-14"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 6 — Eigenvalues and Eigenvectors: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-14-Matrices-Determinants-and-Eigenvalues(1).md",
+      "line": 723,
+      "chapter": "01-14"
+    },
+    {
+      "severity": "ERROR",
+      "code": "NOTATION_BANNER_COLUMNS",
+      "message": "The notation contract requires Symbol / Meaning in this chapter / SI / USCS; Notes alone is not a units column",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-14-Matrices-Determinants-and-Eigenvalues(1).md",
+      "line": 102,
+      "chapter": "01-14"
+    },
+    {
+      "severity": "ERROR",
+      "code": "COLLISION_NOTE_MISSING",
+      "message": "Reserved printed symbols ['A', 'I', 'λ'] occur in the banner without its required Collision note label",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-14-Matrices-Determinants-and-Eigenvalues(1).md",
+      "line": 100,
+      "chapter": "01-14"
+    },
+    {
+      "severity": "WARNING",
+      "code": "FILENAME_STYLE",
+      "message": "Filename differs from the chapter-number-kebab-case.md convention; upload suffixes such as (1) can cause this",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-15-Sequences-Series-and-Progressions(1).md",
+      "line": null,
+      "chapter": "01-15"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 1 — Evaluating and Reindexing a Sum: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-15-Sequences-Series-and-Progressions(1).md",
+      "line": 192,
+      "chapter": "01-15"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 2 — Construction Schedule: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-15-Sequences-Series-and-Progressions(1).md",
+      "line": 258,
+      "chapter": "01-15"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 3 — Cascaded Signal Stages: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-15-Sequences-Series-and-Progressions(1).md",
+      "line": 356,
+      "chapter": "01-15"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 5 — Multi-Stage Settling (Preview of Tier 2): missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-15-Sequences-Series-and-Progressions(1).md",
+      "line": 494,
+      "chapter": "01-15"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 6 — Polynomial Summand: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-15-Sequences-Series-and-Progressions(1).md",
+      "line": 545,
+      "chapter": "01-15"
+    },
+    {
+      "severity": "ERROR",
+      "code": "NOTATION_BANNER_COLUMNS",
+      "message": "The notation contract requires Symbol / Meaning in this chapter / SI / USCS; Notes alone is not a units column",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-15-Sequences-Series-and-Progressions(1).md",
+      "line": 96,
+      "chapter": "01-15"
+    },
+    {
+      "severity": "ERROR",
+      "code": "COLLISION_NOTE_MISSING",
+      "message": "Reserved printed symbols ['k'] occur in the banner without its required Collision note label",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-15-Sequences-Series-and-Progressions(1).md",
+      "line": 94,
+      "chapter": "01-15"
+    },
+    {
+      "severity": "WARNING",
+      "code": "FILENAME_STYLE",
+      "message": "Filename differs from the chapter-number-kebab-case.md convention; upload suffixes such as (1) can cause this",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-16-Limits-and-Continuity(1).md",
+      "line": null,
+      "chapter": "01-16"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 1 — One-Sided Limits of a Piecewise Function: missing labeled parts ['approach', 'check']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-16-Limits-and-Continuity(1).md",
+      "line": 229,
+      "chapter": "01-16"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 2 — Factoring: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-16-Limits-and-Continuity(1).md",
+      "line": 362,
+      "chapter": "01-16"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 3 — Rationalizing: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-16-Limits-and-Continuity(1).md",
+      "line": 385,
+      "chapter": "01-16"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 4 — Combining Fractions: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-16-Limits-and-Continuity(1).md",
+      "line": 405,
+      "chapter": "01-16"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 5 — All Three Degree Cases: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-16-Limits-and-Continuity(1).md",
+      "line": 480,
+      "chapter": "01-16"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 6 — Terminal Behaviour of a Saturating Response: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-16-Limits-and-Continuity(1).md",
+      "line": 519,
+      "chapter": "01-16"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 7 — Variations on the Sine Limit: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-16-Limits-and-Continuity(1).md",
+      "line": 623,
+      "chapter": "01-16"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 8 — Making a Piecewise Function Continuous: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-16-Limits-and-Continuity(1).md",
+      "line": 703,
+      "chapter": "01-16"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 9 — Bracketing the Roots of a Cubic: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-16-Limits-and-Continuity(1).md",
+      "line": 769,
+      "chapter": "01-16"
+    },
+    {
+      "severity": "ERROR",
+      "code": "NOTATION_BANNER_COLUMNS",
+      "message": "The notation contract requires Symbol / Meaning in this chapter / SI / USCS; Notes alone is not a units column",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-16-Limits-and-Continuity(1).md",
+      "line": 110,
+      "chapter": "01-16"
+    },
+    {
+      "severity": "WARNING",
+      "code": "FILENAME_STYLE",
+      "message": "Filename differs from the chapter-number-kebab-case.md convention; upload suffixes such as (1) can cause this",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-17-The-Derivative(1).md",
+      "line": null,
+      "chapter": "01-17"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 1 — Derivative from the Definition: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-17-The-Derivative(1).md",
+      "line": 181,
+      "chapter": "01-17"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 2 — Tangent and Normal Lines: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-17-The-Derivative(1).md",
+      "line": 280,
+      "chapter": "01-17"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 3 — Rate of Change with Units: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-17-The-Derivative(1).md",
+      "line": 354,
+      "chapter": "01-17"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 4 — Basic Rules Combined: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-17-The-Derivative(1).md",
+      "line": 511,
+      "chapter": "01-17"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 5 — Product Rule, with an Independent Check: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-17-The-Derivative(1).md",
+      "line": 603,
+      "chapter": "01-17"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 6 — Quotient Rule: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-17-The-Derivative(1).md",
+      "line": 632,
+      "chapter": "01-17"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 7 — Chain Rule, Three Cases: missing labeled parts ['approach', 'check', 'given', 'solution']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-17-The-Derivative(1).md",
+      "line": 659,
+      "chapter": "01-17"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 8 — Combined Rules: missing labeled parts ['approach', 'check', 'given', 'solution']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-17-The-Derivative(1).md",
+      "line": 781,
+      "chapter": "01-17"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 9 — Kinematics: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-17-The-Derivative(1).md",
+      "line": 847,
+      "chapter": "01-17"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 10 — Implicit Differentiation: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-17-The-Derivative(1).md",
+      "line": 981,
+      "chapter": "01-17"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 11 — Pressure-Drop Sensitivity: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-17-The-Derivative(1).md",
+      "line": 1016,
+      "chapter": "01-17"
+    },
+    {
+      "severity": "ERROR",
+      "code": "BARE_FOREIGN_SECTION",
+      "message": "Bare §16.8 does not exist in this chapter; qualify a cross-chapter citation with its chapter ID",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-17-The-Derivative(1).md",
+      "line": 708,
+      "chapter": "01-17"
+    },
+    {
+      "severity": "ERROR",
+      "code": "NOTATION_BANNER_COLUMNS",
+      "message": "The notation contract requires Symbol / Meaning in this chapter / SI / USCS; Notes alone is not a units column",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-17-The-Derivative(1).md",
+      "line": 106,
+      "chapter": "01-17"
+    },
+    {
+      "severity": "WARNING",
+      "code": "FILENAME_STYLE",
+      "message": "Filename differs from the chapter-number-kebab-case.md convention; upload suffixes such as (1) can cause this",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-18-Applications-of-the-Derivative(1).md",
+      "line": null,
+      "chapter": "01-18"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 1 — Verifying the MVT: missing labeled parts ['approach', 'check']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-18-Applications-of-the-Derivative(1).md",
+      "line": 175,
+      "chapter": "01-18"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 2 — First Derivative Test: missing labeled parts ['approach', 'check']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-18-Applications-of-the-Derivative(1).md",
+      "line": 245,
+      "chapter": "01-18"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 3 — Concavity and the Second Derivative Test: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-18-Applications-of-the-Derivative(1).md",
+      "line": 328,
+      "chapter": "01-18"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 4 — When the Second Derivative Test Fails: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-18-Applications-of-the-Derivative(1).md",
+      "line": 363,
+      "chapter": "01-18"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 5 — Closed-Interval Method: missing labeled parts ['approach', 'check']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-18-Applications-of-the-Derivative(1).md",
+      "line": 427,
+      "chapter": "01-18"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 6 — Complete Sketch: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-18-Applications-of-the-Derivative(1).md",
+      "line": 478,
+      "chapter": "01-18"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 7 — Minimum Material for an Open Tank: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-18-Applications-of-the-Derivative(1).md",
+      "line": 550,
+      "chapter": "01-18"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 8 — Maximum Power Transfer: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-18-Applications-of-the-Derivative(1).md",
+      "line": 609,
+      "chapter": "01-18"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 9 — Draining Conical Tank: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-18-Applications-of-the-Derivative(1).md",
+      "line": 705,
+      "chapter": "01-18"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 10 — Isothermal Compression: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-18-Applications-of-the-Derivative(1).md",
+      "line": 756,
+      "chapter": "01-18"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 11 — Four Applications: missing labeled parts ['approach', 'find', 'given', 'solution']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-18-Applications-of-the-Derivative(1).md",
+      "line": 850,
+      "chapter": "01-18"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 12 — Linear Approximation: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-18-Applications-of-the-Derivative(1).md",
+      "line": 962,
+      "chapter": "01-18"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 13 — Error Propagation in a Sphere: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-18-Applications-of-the-Derivative(1).md",
+      "line": 980,
+      "chapter": "01-18"
+    },
+    {
+      "severity": "ERROR",
+      "code": "NOTATION_BANNER_COLUMNS",
+      "message": "The notation contract requires Symbol / Meaning in this chapter / SI / USCS; Notes alone is not a units column",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-18-Applications-of-the-Derivative(1).md",
+      "line": 107,
+      "chapter": "01-18"
+    },
+    {
+      "severity": "ERROR",
+      "code": "NONSTANDARD_HEADING",
+      "message": "'Where We Go From Here' supplies content but should use the standard heading \"what's next\"",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-19-Antiderivatives-and-the-Definite-Integral(1).md",
+      "line": 1401,
+      "chapter": "01-19"
+    },
+    {
+      "severity": "WARNING",
+      "code": "FILENAME_STYLE",
+      "message": "Filename differs from the chapter-number-kebab-case.md convention; upload suffixes such as (1) can cause this",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-19-Antiderivatives-and-the-Definite-Integral(1).md",
+      "line": null,
+      "chapter": "01-19"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 1 — Antiderivative with an Initial Condition: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-19-Antiderivatives-and-the-Definite-Integral(1).md",
+      "line": 183,
+      "chapter": "01-19"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 2 — Basic Integration: missing labeled parts ['approach', 'given', 'solution']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-19-Antiderivatives-and-the-Definite-Integral(1).md",
+      "line": 281,
+      "chapter": "01-19"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 3 — A Definite Integral from the Definition: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-19-Antiderivatives-and-the-Definite-Integral(1).md",
+      "line": 384,
+      "chapter": "01-19"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 4 — The Same Integral, Instantly: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-19-Antiderivatives-and-the-Definite-Integral(1).md",
+      "line": 545,
+      "chapter": "01-19"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 5 — Definite Integrals: missing labeled parts ['approach', 'check', 'find', 'given', 'solution']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-19-Antiderivatives-and-the-Definite-Integral(1).md",
+      "line": 559,
+      "chapter": "01-19"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 6 — Part 2 in Use: missing labeled parts ['approach', 'given', 'solution']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-19-Antiderivatives-and-the-Definite-Integral(1).md",
+      "line": 589,
+      "chapter": "01-19"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 7 — Substitution, Four Cases: missing labeled parts ['approach', 'find', 'given', 'solution']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-19-Antiderivatives-and-the-Definite-Integral(1).md",
+      "line": 659,
+      "chapter": "01-19"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 8 — Definite Integral by Substitution: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-19-Antiderivatives-and-the-Definite-Integral(1).md",
+      "line": 720,
+      "chapter": "01-19"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 9 — Average Value, Two Interpretations: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-19-Antiderivatives-and-the-Definite-Integral(1).md",
+      "line": 769,
+      "chapter": "01-19"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 10 — Volume Delivered from a Flow Rate: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-19-Antiderivatives-and-the-Definite-Integral(1).md",
+      "line": 806,
+      "chapter": "01-19"
+    },
+    {
+      "severity": "ERROR",
+      "code": "NOTATION_BANNER_COLUMNS",
+      "message": "The notation contract requires Symbol / Meaning in this chapter / SI / USCS; Notes alone is not a units column",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-19-Antiderivatives-and-the-Definite-Integral(1).md",
+      "line": 112,
+      "chapter": "01-19"
+    },
+    {
+      "severity": "ERROR",
+      "code": "NONSTANDARD_HEADING",
+      "message": "'Looking Ahead' supplies content but should use the standard heading \"what's next\"",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-20-Applications-of-the-Definite Integral(1).md",
+      "line": 2131,
+      "chapter": "01-20"
+    },
+    {
+      "severity": "WARNING",
+      "code": "FILENAME_STYLE",
+      "message": "Filename differs from the chapter-number-kebab-case.md convention; upload suffixes such as (1) can cause this",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-20-Applications-of-the-Definite Integral(1).md",
+      "line": null,
+      "chapter": "01-20"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 1 — Area Between a Line and a Parabola: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-20-Applications-of-the-Definite Integral(1).md",
+      "line": 186,
+      "chapter": "01-20"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 2 — Curves That Cross: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-20-Applications-of-the-Definite Integral(1).md",
+      "line": 240,
+      "chapter": "01-20"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 3 — Choosing the Slice Direction: missing labeled parts ['approach', 'check']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-20-Applications-of-the-Definite Integral(1).md",
+      "line": 288,
+      "chapter": "01-20"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 4 — Displacement Versus Distance: missing labeled parts ['approach', 'check']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-20-Applications-of-the-Definite Integral(1).md",
+      "line": 339,
+      "chapter": "01-20"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 5 — Disc and Washer: missing labeled parts ['approach', 'find', 'given', 'solution']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-20-Applications-of-the-Definite Integral(1).md",
+      "line": 424,
+      "chapter": "01-20"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 6 — Shells, With a Washer Cross-Check: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-20-Applications-of-the-Definite Integral(1).md",
+      "line": 490,
+      "chapter": "01-20"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 7 — Arc Length: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-20-Applications-of-the-Definite Integral(1).md",
+      "line": 556,
+      "chapter": "01-20"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 8 — Surface Area, Verified Against a Known Formula: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-20-Applications-of-the-Definite Integral(1).md",
+      "line": 599,
+      "chapter": "01-20"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 9 — Centroid of a Parabolic Spandrel: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-20-Applications-of-the-Definite Integral(1).md",
+      "line": 696,
+      "chapter": "01-20"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 10 — Rectangle About Two Axes: missing labeled parts ['approach', 'check']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-20-Applications-of-the-Definite Integral(1).md",
+      "line": 766,
+      "chapter": "01-20"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 11 — Numerical Second Moments: missing labeled parts ['approach', 'check']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-20-Applications-of-the-Definite Integral(1).md",
+      "line": 836,
+      "chapter": "01-20"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 12 — Spring Work: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-20-Applications-of-the-Definite Integral(1).md",
+      "line": 896,
+      "chapter": "01-20"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 13 — Pumping a Cylindrical Tank: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-20-Applications-of-the-Definite Integral(1).md",
+      "line": 940,
+      "chapter": "01-20"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 14 — RMS of a Sinusoid: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-20-Applications-of-the-Definite Integral(1).md",
+      "line": 1024,
+      "chapter": "01-20"
+    },
+    {
+      "severity": "ERROR",
+      "code": "NOTATION_BANNER_COLUMNS",
+      "message": "The notation contract requires Symbol / Meaning in this chapter / SI / USCS; Notes alone is not a units column",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-20-Applications-of-the-Definite Integral(1).md",
+      "line": 122,
+      "chapter": "01-20"
+    },
+    {
+      "severity": "ERROR",
+      "code": "COLLISION_NOTE_MISSING",
+      "message": "Reserved printed symbols ['A', 'T', 'V', 'W', 'k', 'ρ'] occur in the banner without its required Collision note label",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-20-Applications-of-the-Definite Integral(1).md",
+      "line": 120,
+      "chapter": "01-20"
+    },
+    {
+      "severity": "ERROR",
+      "code": "NONSTANDARD_HEADING",
+      "message": "'Summary Card' supplies content but should use the standard heading 'quick reference'",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-21-Techniques-of-Integration(1).md",
+      "line": 1414,
+      "chapter": "01-21"
+    },
+    {
+      "severity": "ERROR",
+      "code": "MISSING_SECTION",
+      "message": "Missing required section 'Answer Key with Explanations'",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-21-Techniques-of-Integration(1).md",
+      "line": null,
+      "chapter": "01-21"
+    },
+    {
+      "severity": "ERROR",
+      "code": "MISSING_SECTION",
+      "message": "Missing required section \"What's Next\"",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-21-Techniques-of-Integration(1).md",
+      "line": null,
+      "chapter": "01-21"
+    },
+    {
+      "severity": "WARNING",
+      "code": "FILENAME_STYLE",
+      "message": "Filename differs from the chapter-number-kebab-case.md convention; upload suffixes such as (1) can cause this",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-21-Techniques-of-Integration(1).md",
+      "line": null,
+      "chapter": "01-21"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 1 — The Paradigm Case: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-21-Techniques-of-Integration(1).md",
+      "line": 237,
+      "chapter": "01-21"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 2 — Integrating a Logarithm: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-21-Techniques-of-Integration(1).md",
+      "line": 265,
+      "chapter": "01-21"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 3 — Parts Applied Twice: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-21-Techniques-of-Integration(1).md",
+      "line": 294,
+      "chapter": "01-21"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 4 — Solving for the Integral: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-21-Techniques-of-Integration(1).md",
+      "line": 337,
+      "chapter": "01-21"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 5 — Definite Parts: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-21-Techniques-of-Integration(1).md",
+      "line": 400,
+      "chapter": "01-21"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 6 — Odd Power: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-21-Techniques-of-Integration(1).md",
+      "line": 442,
+      "chapter": "01-21"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 7 — Even Power, With an RMS Cross-Check: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-21-Techniques-of-Integration(1).md",
+      "line": 476,
+      "chapter": "01-21"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 8 — Sine Case, Verified Geometrically: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-21-Techniques-of-Integration(1).md",
+      "line": 527,
+      "chapter": "01-21"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 9 — Tangent Case: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-21-Techniques-of-Integration(1).md",
+      "line": 569,
+      "chapter": "01-21"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 10 — Distinct Linear Factors: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-21-Techniques-of-Integration(1).md",
+      "line": 663,
+      "chapter": "01-21"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 11 — Repeated Linear Factor: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-21-Techniques-of-Integration(1).md",
+      "line": 702,
+      "chapter": "01-21"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 12 — Irreducible Quadratic: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-21-Techniques-of-Integration(1).md",
+      "line": 747,
+      "chapter": "01-21"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 13 — Convergent and Divergent: missing labeled parts ['approach', 'check', 'find', 'given', 'solution']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-21-Techniques-of-Integration(1).md",
+      "line": 855,
+      "chapter": "01-21"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 14 — Total Volume from a Decaying Flow: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-21-Techniques-of-Integration(1).md",
+      "line": 898,
+      "chapter": "01-21"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 15 — Combining Four Chapters: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-21-Techniques-of-Integration(1).md",
+      "line": 998,
+      "chapter": "01-21"
+    },
+    {
+      "severity": "ERROR",
+      "code": "NOTATION_BANNER_COLUMNS",
+      "message": "The notation contract requires Symbol / Meaning in this chapter / SI / USCS; Notes alone is not a units column",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-21-Techniques-of-Integration(1).md",
+      "line": 120,
+      "chapter": "01-21"
+    },
+    {
+      "severity": "ERROR",
+      "code": "COLLISION_NOTE_MISSING",
+      "message": "Reserved printed symbols ['A', 'I', 'θ', 'τ'] occur in the banner without its required Collision note label",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-21-Techniques-of-Integration(1).md",
+      "line": 118,
+      "chapter": "01-21"
+    },
+    {
+      "severity": "ERROR",
+      "code": "DUPLICATE_HEADING",
+      "message": "Duplicate section 'Key Terms'",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 1340,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "DUPLICATE_HEADING",
+      "message": "Duplicate section 'Review Questions'",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 1374,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "NONSTANDARD_HEADING",
+      "message": "'Answers to Review Questions' supplies content but should use the standard heading 'answer key with explanations'",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 1519,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "NONSTANDARD_HEADING",
+      "message": "'Summary Card' supplies content but should use the standard heading 'quick reference'",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 1662,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "NONSTANDARD_HEADING",
+      "message": "'Looking Ahead' supplies content but should use the standard heading \"what's next\"",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 1710,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "WARNING",
+      "code": "FILENAME_STYLE",
+      "message": "Filename differs from the chapter-number-kebab-case.md convention; upload suffixes such as (1) can cause this",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": null,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 1 — The $n$th Term Test: missing labeled parts ['approach', 'check', 'find', 'given', 'solution']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 208,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 2 — Geometric Series: missing labeled parts ['approach', 'find', 'given', 'solution']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 244,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 3 — Integral Test: missing labeled parts ['approach', 'check', 'find', 'given', 'solution']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 302,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 4 — Comparison: missing labeled parts ['approach', 'check', 'find', 'given', 'solution']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 336,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 5 — Ratio Test: missing labeled parts ['approach', 'check', 'find', 'given', 'solution']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 396,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 6 — Radius and Interval of Convergence: missing labeled parts ['approach', 'check']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 475,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 7 — Deriving the Series for $e^x$: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 545,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 8 — Deriving the Series for $\\sin x$: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 567,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 9 — Building New Series from Old: missing labeled parts ['approach', 'find', 'given', 'solution']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 643,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 10 — Both Error Bounds: missing labeled parts ['approach', 'find', 'given', 'solution']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 718,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 11 — The Pendulum Linearization: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 808,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 12 — Binomial Approximation and the Error Rule: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 857,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 13 — Linearizing the Tank: missing labeled parts ['approach', 'check', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 906,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "NOTATION_BANNER_COLUMNS",
+      "message": "The notation contract requires Symbol / Meaning in this chapter / SI / USCS; Notes alone is not a units column",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 119,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "COLLISION_NOTE_MISSING",
+      "message": "Reserved printed symbols ['R', 'θ'] occur in the banner without its required Collision note label",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 117,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "NONSTANDARD_HEADING",
+      "message": "'Answers to Review Questions' supplies content but should use the standard heading 'answer key with explanations'",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-23-Partial-Derivatives-and-Vector-Calculus(1).md",
+      "line": 1133,
+      "chapter": "01-23"
+    },
+    {
+      "severity": "ERROR",
+      "code": "NONSTANDARD_HEADING",
+      "message": "'Summary Card' supplies content but should use the standard heading 'quick reference'",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-23-Partial-Derivatives-and-Vector-Calculus(1).md",
+      "line": 1240,
+      "chapter": "01-23"
+    },
+    {
+      "severity": "ERROR",
+      "code": "NONSTANDARD_HEADING",
+      "message": "'Looking Ahead' supplies content but should use the standard heading \"what's next\"",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-23-Partial-Derivatives-and-Vector-Calculus(1).md",
+      "line": 1290,
+      "chapter": "01-23"
+    },
+    {
+      "severity": "WARNING",
+      "code": "FILENAME_STYLE",
+      "message": "Filename differs from the chapter-number-kebab-case.md convention; upload suffixes such as (1) can cause this",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-23-Partial-Derivatives-and-Vector-Calculus(1).md",
+      "line": null,
+      "chapter": "01-23"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 1 — First Partials: missing labeled parts ['approach', 'check']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-23-Partial-Derivatives-and-Vector-Calculus(1).md",
+      "line": 219,
+      "chapter": "01-23"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 2 — Product and Chain Rules Still Apply: missing labeled parts ['approach', 'check']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-23-Partial-Derivatives-and-Vector-Calculus(1).md",
+      "line": 247,
+      "chapter": "01-23"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 3 — Mixed Partials Agree: missing labeled parts ['approach', 'find']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-23-Partial-Derivatives-and-Vector-Calculus(1).md",
+      "line": 287,
+      "chapter": "01-23"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 4 — Volume of a Cylinder: missing labeled parts ['approach', 'check']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-23-Partial-Derivatives-and-Vector-Calculus(1).md",
+      "line": 370,
+      "chapter": "01-23"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 5 — Flow Rate from Diameter and Velocity: missing labeled parts ['approach', 'check']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-23-Partial-Derivatives-and-Vector-Calculus(1).md",
+      "line": 421,
+      "chapter": "01-23"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 6 — Competing Rates: missing labeled parts ['approach', 'check']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-23-Partial-Derivatives-and-Vector-Calculus(1).md",
+      "line": 499,
+      "chapter": "01-23"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 7 — Gradient and Directional Derivative: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-23-Partial-Derivatives-and-Vector-Calculus(1).md",
+      "line": 588,
+      "chapter": "01-23"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 8 — Computing Both: missing labeled parts ['approach', 'check']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-23-Partial-Derivatives-and-Vector-Calculus(1).md",
+      "line": 676,
+      "chapter": "01-23"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 9 — Locating and Classifying: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-23-Partial-Derivatives-and-Vector-Calculus(1).md",
+      "line": 781,
+      "chapter": "01-23"
+    },
+    {
+      "severity": "ERROR",
+      "code": "EXAMPLE_PARTS_MISSING",
+      "message": "Worked Example 10 — Minimum-Material Tank: missing labeled parts ['approach']. Check numerically / Units check / Verify variants are recognized where labeled.",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-23-Partial-Derivatives-and-Vector-Calculus(1).md",
+      "line": 843,
+      "chapter": "01-23"
+    },
+    {
+      "severity": "ERROR",
+      "code": "NOTATION_BANNER_COLUMNS",
+      "message": "The notation contract requires Symbol / Meaning in this chapter / SI / USCS; Notes alone is not a units column",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-23-Partial-Derivatives-and-Vector-Calculus(1).md",
+      "line": 117,
+      "chapter": "01-23"
+    },
+    {
+      "severity": "ERROR",
+      "code": "COLLISION_NOTE_MISSING",
+      "message": "Reserved printed symbols ['λ'] occur in the banner without its required Collision note label",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-23-Partial-Derivatives-and-Vector-Calculus(1).md",
+      "line": 115,
+      "chapter": "01-23"
+    }
+  ]
+}

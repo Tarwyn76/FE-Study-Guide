@@ -1,0 +1,652 @@
+{
+  "tool": "lint_ledger",
+  "scope": "ledger, supplied chapters, glossary, and notation contract",
+  "status": "FAIL",
+  "exit_code": 1,
+  "counts": {
+    "WARNING": 11,
+    "INFO": 4,
+    "ERROR": 63
+  },
+  "statistics": {
+    "concepts": 100,
+    "chapter_ids": 29,
+    "dependency_edges": 204,
+    "quantities": 89,
+    "notation_tokens": 77,
+    "unique_terms": 481,
+    "figure_ids": 120,
+    "split_required": 45,
+    "unmapped_layer_1": 84,
+    "inline_figures": 120,
+    "image_assets_checked": false,
+    "manifest_records": 113,
+    "chapters_checked": 26
+  },
+  "diagnostics": [
+    {
+      "severity": "WARNING",
+      "code": "DECOMPOSITION_PENDING",
+      "message": "45 concepts retain split_required: true; this blocks release, not dependency sorting",
+      "path": "/workspace/scratch/234e8013f29d/upload/ledger.yaml",
+      "line": null,
+      "chapter": null
+    },
+    {
+      "severity": "WARNING",
+      "code": "SPEC_COVERAGE_PENDING",
+      "message": "84 Layer 1 concepts have no official specification mapping; no official specification inventory is validated by this tool",
+      "path": "/workspace/scratch/234e8013f29d/upload/ledger.yaml",
+      "line": null,
+      "chapter": null
+    },
+    {
+      "severity": "WARNING",
+      "code": "HANDBOOK_AUDIT_PENDING",
+      "message": "64 page/location claims remain unverified against the PDF",
+      "path": "/workspace/scratch/234e8013f29d/upload/ledger.yaml",
+      "line": null,
+      "chapter": null
+    },
+    {
+      "severity": "INFO",
+      "code": "CHAPTER_INCOMPLETE",
+      "message": "Recorded state: incomplete; findings are still reported, not suppressed",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-21-Techniques-of-Integration(1).md",
+      "line": 1,
+      "chapter": "01-21"
+    },
+    {
+      "severity": "INFO",
+      "code": "CHAPTER_INCOMPLETE",
+      "message": "Recorded state: incomplete; findings are still reported, not suppressed",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 1,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "INFO",
+      "code": "CHAPTER_INCOMPLETE",
+      "message": "Recorded state: work_in_progress; findings are still reported, not suppressed",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-23-Partial-Derivatives-and-Vector-Calculus(1).md",
+      "line": 1,
+      "chapter": "01-23"
+    },
+    {
+      "severity": "INFO",
+      "code": "PARTIAL_SCOPE",
+      "message": "Chapter checks apply only to the explicitly selected files",
+      "path": "/workspace/scratch/234e8013f29d/upload/ledger.yaml",
+      "line": null,
+      "chapter": null
+    },
+    {
+      "severity": "ERROR",
+      "code": "INTRODUCED_TERM_NOT_LISTED",
+      "message": "Introduced terms missing from the Key Terms table: ['computer-based test']",
+      "path": "/workspace/scratch/234e8013f29d/upload/00-02-the-exam-and-the-cbt-format(1).md",
+      "line": 567,
+      "chapter": "00-02"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'SI' is owned by ['ORIENT-0-002-01']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-02-units-dimensions-and-the-pound-problem(1).md",
+      "line": 1345,
+      "chapter": "01-02"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'USCS' is owned by ['ORIENT-0-002-01']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-02-units-dimensions-and-the-pound-problem(1).md",
+      "line": 1346,
+      "chapter": "01-02"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_UNREGISTERED",
+      "message": "'$g_c$' does not resolve to an introduced term or explicit alias; symbol-only rows are not glossary terms",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-02-units-dimensions-and-the-pound-problem(1).md",
+      "line": 1354,
+      "chapter": "01-02"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_UNREGISTERED",
+      "message": "'$g$' does not resolve to an introduced term or explicit alias; symbol-only rows are not glossary terms",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-02-units-dimensions-and-the-pound-problem(1).md",
+      "line": 1355,
+      "chapter": "01-02"
+    },
+    {
+      "severity": "ERROR",
+      "code": "INTRODUCED_TERM_NOT_LISTED",
+      "message": "Introduced terms missing from the Key Terms table: ['conversion factor', 'unit cancellation']",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-02-units-dimensions-and-the-pound-problem(1).md",
+      "line": 1336,
+      "chapter": "01-02"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Absolute value' is owned by ['MATH-1A-001-01']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-04-Expressions-Equations-and-Inequalities(1).md",
+      "line": 833,
+      "chapter": "01-04"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Exponent' is owned by ['MATH-1A-001-02']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-05-Exponents-Radicals-and-Logarithms(1).md",
+      "line": 781,
+      "chapter": "01-05"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Extraneous solution' is owned by ['MATH-1B-004-02']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-05-Exponents-Radicals-and-Logarithms(1).md",
+      "line": 794,
+      "chapter": "01-05"
+    },
+    {
+      "severity": "ERROR",
+      "code": "INTRODUCED_TERM_NOT_LISTED",
+      "message": "Introduced terms missing from the Key Terms table: ['horizontal asymptote', 'vertical asymptote']",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-06-Functions-Graphs-and-Transformations(1).md",
+      "line": 708,
+      "chapter": "01-06"
+    },
+    {
+      "severity": "ERROR",
+      "code": "INTRODUCED_TERM_NOT_LISTED",
+      "message": "Introduced terms missing from the Key Terms table: ['imaginary number', 'imaginary unit', 'physics-extraneous root', 'rational function']",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-07-Polynomials-and-Their-Roots(1).md",
+      "line": 900,
+      "chapter": "01-07"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Asymptote' is owned by ['MATH-1B-006-01']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-09-Analytic-Geometry(1).md",
+      "line": 1048,
+      "chapter": "01-09"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Completing the square' is owned by ['MATH-1B-007-03']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-09-Analytic-Geometry(1).md",
+      "line": 1050,
+      "chapter": "01-09"
+    },
+    {
+      "severity": "ERROR",
+      "code": "INTRODUCED_TERM_NOT_LISTED",
+      "message": "Introduced terms missing from the Key Terms table: ['completing the square conic', 'hyperbola asymptote', 'perpendicular slopes']",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-09-Analytic-Geometry(1).md",
+      "line": 1021,
+      "chapter": "01-09"
+    },
+    {
+      "severity": "ERROR",
+      "code": "INTRODUCED_TERM_NOT_LISTED",
+      "message": "Introduced terms missing from the Key Terms table: ['SSA configuration', 'difference formula', 'half-angle formula', 'oblique triangle']",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-11-Trigonometry(1).md",
+      "line": 956,
+      "chapter": "01-11"
+    },
+    {
+      "severity": "ERROR",
+      "code": "INTRODUCED_TERM_NOT_LISTED",
+      "message": "Introduced terms missing from the Key Terms table: ['angular frequency', 'nth root of a complex number', 'phase angle', 'powers-of-j cycle']",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-12-Complex-Numbers(1).md",
+      "line": 471,
+      "chapter": "01-12"
+    },
+    {
+      "severity": "ERROR",
+      "code": "INTRODUCED_TERM_NOT_LISTED",
+      "message": "Introduced terms missing from the Key Terms table: ['resolution', 'resultant of concurrent vectors', 'vector triple product', 'work by a constant force']",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-13-Vectors-and-Vector-Operations(1).md",
+      "line": 478,
+      "chapter": "01-13"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Determinant' is owned by ['MATH-1B-008-02']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-14-Matrices-Determinants-and-Eigenvalues(1).md",
+      "line": 932,
+      "chapter": "01-14"
+    },
+    {
+      "severity": "ERROR",
+      "code": "INTRODUCED_TERM_NOT_LISTED",
+      "message": "Introduced terms missing from the Key Terms table: ['geometric series', 'harmonic series']",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-15-Sequences-Series-and-Progressions(1).md",
+      "line": 697,
+      "chapter": "01-15"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Rationalizing' is owned by ['MATH-1B-005-01']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-16-Limits-and-Continuity(1).md",
+      "line": 979,
+      "chapter": "01-16"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Horizontal asymptote' is owned by ['MATH-1B-006-01']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-16-Limits-and-Continuity(1).md",
+      "line": 981,
+      "chapter": "01-16"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Vertical asymptote' is owned by ['MATH-1B-006-01']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-16-Limits-and-Continuity(1).md",
+      "line": 982,
+      "chapter": "01-16"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Difference quotient' is owned by ['MATH-1C-016-02']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-17-The-Derivative(1).md",
+      "line": 1195,
+      "chapter": "01-17"
+    },
+    {
+      "severity": "ERROR",
+      "code": "INTRODUCED_TERM_NOT_LISTED",
+      "message": "Introduced terms missing from the Key Terms table: ['transcendental derivative', 'vertical tangent']",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-17-The-Derivative(1).md",
+      "line": 1191,
+      "chapter": "01-17"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Concave up / down' is owned by ['MATH-1C-017-05', 'MATH-1C-017-05']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-18-Applications-of-the-Derivative(1).md",
+      "line": 1169,
+      "chapter": "01-18"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Linear approximation' is owned by ['MATH-1C-017-05']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-18-Applications-of-the-Derivative(1).md",
+      "line": 1177,
+      "chapter": "01-18"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Relative error' is owned by ['MATH-1A-003-01']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-18-Applications-of-the-Derivative(1).md",
+      "line": 1180,
+      "chapter": "01-18"
+    },
+    {
+      "severity": "ERROR",
+      "code": "INTRODUCED_TERM_NOT_LISTED",
+      "message": "Introduced terms missing from the Key Terms table: ['curve sketching']",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-18-Applications-of-the-Derivative(1).md",
+      "line": 1158,
+      "chapter": "01-18"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Centroid' is owned by ['MATH-1B-010-03']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-20-Applications-of-the-Definite Integral(1).md",
+      "line": 1250,
+      "chapter": "01-20"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Weight density' is owned by ['MATH-1A-002-03']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-20-Applications-of-the-Definite Integral(1).md",
+      "line": 1255,
+      "chapter": "01-20"
+    },
+    {
+      "severity": "ERROR",
+      "code": "INTRODUCED_TERM_NOT_LISTED",
+      "message": "Introduced terms missing from the Key Terms table: ['spring constant', 'total distance']",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-20-Applications-of-the-Definite Integral(1).md",
+      "line": 1238,
+      "chapter": "01-20"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Power reduction' is owned by ['MATH-1B-011-03']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-21-Techniques-of-Integration(1).md",
+      "line": 1252,
+      "chapter": "01-21"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Rational function' is owned by ['MATH-1B-007-01']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-21-Techniques-of-Integration(1).md",
+      "line": 1255,
+      "chapter": "01-21"
+    },
+    {
+      "severity": "ERROR",
+      "code": "INTRODUCED_TERM_NOT_LISTED",
+      "message": "Introduced terms missing from the Key Terms table: ['impulse', 'integration strategy', 'trigonometric integral']",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-21-Techniques-of-Integration(1).md",
+      "line": 1244,
+      "chapter": "01-21"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERMS_SECTION_COUNT",
+      "message": "Expected one Key Terms section; found 2",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 1125,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Series' is owned by ['MATH-1B-015-01']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 1129,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Partial sum $S_n$' is owned by ['MATH-1B-015-01']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 1130,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Converges' is owned by ['MATH-1B-015-04']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 1131,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Diverges' is owned by ['MATH-1B-015-04']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 1132,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Geometric series' is owned by ['MATH-1B-015-03']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 1134,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Harmonic series' is owned by ['MATH-1B-015-04']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 1135,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Small-angle approximation' is owned by ['MATH-1C-016-03']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 1152,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Linearization' is owned by ['MATH-1C-018-05']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 1153,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Sequence' is owned by ['MATH-1B-015-01']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 1344,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Series' is owned by ['MATH-1B-015-01']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 1345,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Partial sum $S_n$' is owned by ['MATH-1B-015-01']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 1346,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Converges' is owned by ['MATH-1B-015-04']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 1347,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Diverges' is owned by ['MATH-1B-015-04']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 1348,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Geometric series' is owned by ['MATH-1B-015-03']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 1350,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Harmonic series' is owned by ['MATH-1B-015-04']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 1351,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Small-angle approximation' is owned by ['MATH-1C-016-03']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 1369,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Linearization' is owned by ['MATH-1C-018-05']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 1370,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "INTRODUCED_TERM_NOT_LISTED",
+      "message": "Introduced terms missing from the Key Terms table: ['alternating series test']",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 1125,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "ERROR",
+      "code": "KEY_TERM_PREREQUISITE_REPEATED",
+      "message": "'Error propagation' is owned by ['MATH-1C-018-05']; the current invariant requires this table to contain this chapter’s introductions",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-23-Partial-Derivatives-and-Vector-Calculus(1).md",
+      "line": 1030,
+      "chapter": "01-23"
+    },
+    {
+      "severity": "ERROR",
+      "code": "INTRODUCED_TERM_NOT_LISTED",
+      "message": "Introduced terms missing from the Key Terms table: ['scalar field', 'vector field']",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-23-Partial-Derivatives-and-Vector-Calculus(1).md",
+      "line": 1019,
+      "chapter": "01-23"
+    },
+    {
+      "severity": "ERROR",
+      "code": "NOTATION_REGISTRY_MISSING",
+      "message": "No actual Symbol / Meaning / SI / USCS registry found outside fenced examples. A sample banner is not a populated registry.",
+      "path": "/workspace/scratch/234e8013f29d/upload/notation.md",
+      "line": null,
+      "chapter": null
+    },
+    {
+      "severity": "WARNING",
+      "code": "MANIFEST_SECTION_MISSING",
+      "message": "FIG-01-18-001 has no placement section",
+      "path": "/workspace/scratch/234e8013f29d/upload/figure-manifest(1).csv",
+      "line": 81,
+      "chapter": null
+    },
+    {
+      "severity": "WARNING",
+      "code": "MANIFEST_SECTION_MISSING",
+      "message": "FIG-01-18-002 has no placement section",
+      "path": "/workspace/scratch/234e8013f29d/upload/figure-manifest(1).csv",
+      "line": 82,
+      "chapter": null
+    },
+    {
+      "severity": "WARNING",
+      "code": "MANIFEST_SECTION_MISSING",
+      "message": "FIG-01-18-003 has no placement section",
+      "path": "/workspace/scratch/234e8013f29d/upload/figure-manifest(1).csv",
+      "line": 83,
+      "chapter": null
+    },
+    {
+      "severity": "WARNING",
+      "code": "MANIFEST_SECTION_MISSING",
+      "message": "FIG-01-18-004 has no placement section",
+      "path": "/workspace/scratch/234e8013f29d/upload/figure-manifest(1).csv",
+      "line": 84,
+      "chapter": null
+    },
+    {
+      "severity": "WARNING",
+      "code": "MANIFEST_SECTION_MISSING",
+      "message": "FIG-01-18-005 has no placement section",
+      "path": "/workspace/scratch/234e8013f29d/upload/figure-manifest(1).csv",
+      "line": 85,
+      "chapter": null
+    },
+    {
+      "severity": "WARNING",
+      "code": "MANIFEST_SECTION_MISSING",
+      "message": "FIG-01-18-006 has no placement section",
+      "path": "/workspace/scratch/234e8013f29d/upload/figure-manifest(1).csv",
+      "line": 86,
+      "chapter": null
+    },
+    {
+      "severity": "WARNING",
+      "code": "MANIFEST_SECTION_MISSING",
+      "message": "FIG-01-18-007 has no placement section",
+      "path": "/workspace/scratch/234e8013f29d/upload/figure-manifest(1).csv",
+      "line": 87,
+      "chapter": null
+    },
+    {
+      "severity": "WARNING",
+      "code": "MANIFEST_SECTION_MISSING",
+      "message": "FIG-01-18-008 has no placement section",
+      "path": "/workspace/scratch/234e8013f29d/upload/figure-manifest(1).csv",
+      "line": 88,
+      "chapter": null
+    },
+    {
+      "severity": "ERROR",
+      "code": "MANIFEST_FIGURE_MISSING",
+      "message": "FIG-01-23-001 is inline but missing from the manifest",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-23-Partial-Derivatives-and-Vector-Calculus(1).md",
+      "line": 186,
+      "chapter": "01-23"
+    },
+    {
+      "severity": "ERROR",
+      "code": "MANIFEST_FIGURE_MISSING",
+      "message": "FIG-01-23-002 is inline but missing from the manifest",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-23-Partial-Derivatives-and-Vector-Calculus(1).md",
+      "line": 217,
+      "chapter": "01-23"
+    },
+    {
+      "severity": "ERROR",
+      "code": "MANIFEST_FIGURE_MISSING",
+      "message": "FIG-01-23-003 is inline but missing from the manifest",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-23-Partial-Derivatives-and-Vector-Calculus(1).md",
+      "line": 340,
+      "chapter": "01-23"
+    },
+    {
+      "severity": "ERROR",
+      "code": "MANIFEST_FIGURE_MISSING",
+      "message": "FIG-01-23-004 is inline but missing from the manifest",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-23-Partial-Derivatives-and-Vector-Calculus(1).md",
+      "line": 555,
+      "chapter": "01-23"
+    },
+    {
+      "severity": "ERROR",
+      "code": "MANIFEST_FIGURE_MISSING",
+      "message": "FIG-01-23-005 is inline but missing from the manifest",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-23-Partial-Derivatives-and-Vector-Calculus(1).md",
+      "line": 674,
+      "chapter": "01-23"
+    },
+    {
+      "severity": "ERROR",
+      "code": "MANIFEST_FIGURE_MISSING",
+      "message": "FIG-01-23-006 is inline but missing from the manifest",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-23-Partial-Derivatives-and-Vector-Calculus(1).md",
+      "line": 779,
+      "chapter": "01-23"
+    },
+    {
+      "severity": "ERROR",
+      "code": "MANIFEST_FIGURE_MISSING",
+      "message": "FIG-01-23-007 is inline but missing from the manifest",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-23-Partial-Derivatives-and-Vector-Calculus(1).md",
+      "line": 841,
+      "chapter": "01-23"
+    }
+  ]
+}

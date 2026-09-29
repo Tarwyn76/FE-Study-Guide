@@ -1,0 +1,38 @@
+test_aliases_are_readable_but_not_rewritten (test_validators.AssessmentTests.test_aliases_are_readable_but_not_rewritten) ... ok
+test_contiguous_multiline_plain_and_bold_answer_items (test_validators.AssessmentTests.test_contiguous_multiline_plain_and_bold_answer_items) ... ok
+test_default_is_read_only (test_validators.AssessmentTests.test_default_is_read_only) ... ok
+test_distributed_legacy_counts_are_not_silently_reallocated (test_validators.AssessmentTests.test_distributed_legacy_counts_are_not_silently_reallocated) ... ok
+test_duplicate_question_sets_block_write (test_validators.AssessmentTests.test_duplicate_question_sets_block_write) ... ok
+test_fenced_examples_and_comments_do_not_count (test_validators.AssessmentTests.test_fenced_examples_and_comments_do_not_count) ... ok
+test_missing_answer_and_repeated_number_are_errors (test_validators.AssessmentTests.test_missing_answer_and_repeated_number_are_errors) ... ok
+test_missing_key_blocks_write (test_validators.AssessmentTests.test_missing_key_blocks_write) ... ok
+test_numbering_nested_subparts_and_wrapped_answer (test_validators.AssessmentTests.test_numbering_nested_subparts_and_wrapped_answer) ... ok
+test_separate_practice_inventory (test_validators.AssessmentTests.test_separate_practice_inventory) ... ok
+test_write_preserves_comments_bom_crlf_and_other_records (test_validators.AssessmentTests.test_write_preserves_comments_bom_crlf_and_other_records) ... ok
+test_write_refuses_stale_read_and_existing_lock (test_validators.AssessmentTests.test_write_refuses_stale_read_and_existing_lock) ... ok
+test_all_entry_points_missing_ledger_return_json_exit_2 (test_validators.CommandLineTests.test_all_entry_points_missing_ledger_return_json_exit_2) ... ok
+test_ledger_only_and_strict_exit_status (test_validators.CommandLineTests.test_ledger_only_and_strict_exit_status) ... ok
+test_duplicate_owner_and_verified_split (test_validators.LedgerLintTests.test_duplicate_owner_and_verified_split) ... ok
+test_figure_manifest_and_missing_asset (test_validators.LedgerLintTests.test_figure_manifest_and_missing_asset) ... ok
+test_glossary_alias_and_introduction_contract (test_validators.LedgerLintTests.test_glossary_alias_and_introduction_contract) ... ok
+test_notation_sample_is_not_an_actual_registry (test_validators.LedgerLintTests.test_notation_sample_is_not_an_actual_registry) ... ok
+test_ownership_terms_symbols_notation_and_transitive_uses (test_validators.LedgerLintTests.test_ownership_terms_symbols_notation_and_transitive_uses) ... ok
+test_bad_types_fail_cleanly (test_validators.LoaderTests.test_bad_types_fail_cleanly) ... ok
+test_duplicate_chapter_versions_are_not_silently_selected (test_validators.LoaderTests.test_duplicate_chapter_versions_are_not_silently_selected) ... ok
+test_loads_concepts_mapping_and_optional_notes (test_validators.LoaderTests.test_loads_concepts_mapping_and_optional_notes) ... ok
+test_missing_drafted_sources_fail_but_planned_seeds_are_allowed (test_validators.LoaderTests.test_missing_drafted_sources_fail_but_planned_seeds_are_allowed) ... ok
+test_rejects_cycle_with_descendants (test_validators.LoaderTests.test_rejects_cycle_with_descendants) ... ok
+test_rejects_duplicate_concept_ids (test_validators.LoaderTests.test_rejects_duplicate_concept_ids) ... ok
+test_rejects_duplicate_yaml_keys (test_validators.LoaderTests.test_rejects_duplicate_yaml_keys) ... ok
+test_rejects_unknown_prerequisite (test_validators.LoaderTests.test_rejects_unknown_prerequisite) ... ok
+test_rejects_unsafe_yaml (test_validators.LoaderTests.test_rejects_unsafe_yaml) ... ok
+test_rejects_zero_concepts (test_validators.LoaderTests.test_rejects_zero_concepts) ... ok
+test_transitive_order (test_validators.LoaderTests.test_transitive_order) ... ok
+test_examples_accept_explicit_check_variants (test_validators.StyleTests.test_examples_accept_explicit_check_variants) ... ok
+test_margin_box_and_cross_chapter_citations (test_validators.StyleTests.test_margin_box_and_cross_chapter_citations) ... ok
+test_orientation_exemptions_and_heading_aliases (test_validators.StyleTests.test_orientation_exemptions_and_heading_aliases) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 0.591s
+
+OK

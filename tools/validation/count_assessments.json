@@ -1,0 +1,407 @@
+{
+  "tool": "count_assessments",
+  "scope": "assessment inventory and ledger count agreement; answer correctness is not evaluated",
+  "status": "FAIL",
+  "exit_code": 1,
+  "counts": {
+    "INFO": 4,
+    "ERROR": 2
+  },
+  "statistics": {
+    "concepts_loaded": 100,
+    "chapters": 26,
+    "inventories": [
+      {
+        "chapter": "00-01",
+        "file": "/workspace/scratch/234e8013f29d/upload/00-01-how-to-use-this-guide(1).md",
+        "review_question_sets": [
+          18
+        ],
+        "practice_problem_sets": [],
+        "review_questions": 18,
+        "practice_problems": 0,
+        "review_answer_entries": 18,
+        "practice_answer_entries": 0,
+        "counts_unambiguous": true
+      },
+      {
+        "chapter": "00-02",
+        "file": "/workspace/scratch/234e8013f29d/upload/00-02-the-exam-and-the-cbt-format(1).md",
+        "review_question_sets": [
+          24
+        ],
+        "practice_problem_sets": [],
+        "review_questions": 24,
+        "practice_problems": 0,
+        "review_answer_entries": 24,
+        "practice_answer_entries": 0,
+        "counts_unambiguous": true
+      },
+      {
+        "chapter": "00-03",
+        "file": "/workspace/scratch/234e8013f29d/upload/00-03-navigating-the-fe-reference-book(1).md",
+        "review_question_sets": [
+          28
+        ],
+        "practice_problem_sets": [],
+        "review_questions": 28,
+        "practice_problems": 0,
+        "review_answer_entries": 28,
+        "practice_answer_entries": 0,
+        "counts_unambiguous": true
+      },
+      {
+        "chapter": "01-01",
+        "file": "/workspace/scratch/234e8013f29d/upload/01-01-numbers-magnitude-and-metric-prefixes(1).md",
+        "review_question_sets": [
+          35
+        ],
+        "practice_problem_sets": [],
+        "review_questions": 35,
+        "practice_problems": 0,
+        "review_answer_entries": 35,
+        "practice_answer_entries": 0,
+        "counts_unambiguous": true
+      },
+      {
+        "chapter": "01-02",
+        "file": "/workspace/scratch/234e8013f29d/upload/01-02-units-dimensions-and-the-pound-problem(1).md",
+        "review_question_sets": [
+          35
+        ],
+        "practice_problem_sets": [],
+        "review_questions": 35,
+        "practice_problems": 0,
+        "review_answer_entries": 35,
+        "practice_answer_entries": 0,
+        "counts_unambiguous": true
+      },
+      {
+        "chapter": "01-03",
+        "file": "/workspace/scratch/234e8013f29d/upload/01-03-Accuracy-Precision-and-Significant-Figures(1).md",
+        "review_question_sets": [
+          25
+        ],
+        "practice_problem_sets": [],
+        "review_questions": 25,
+        "practice_problems": 0,
+        "review_answer_entries": 25,
+        "practice_answer_entries": 0,
+        "counts_unambiguous": true
+      },
+      {
+        "chapter": "01-04",
+        "file": "/workspace/scratch/234e8013f29d/upload/01-04-Expressions-Equations-and-Inequalities(1).md",
+        "review_question_sets": [
+          26
+        ],
+        "practice_problem_sets": [],
+        "review_questions": 26,
+        "practice_problems": 0,
+        "review_answer_entries": 26,
+        "practice_answer_entries": 0,
+        "counts_unambiguous": true
+      },
+      {
+        "chapter": "01-05",
+        "file": "/workspace/scratch/234e8013f29d/upload/01-05-Exponents-Radicals-and-Logarithms(1).md",
+        "review_question_sets": [
+          26
+        ],
+        "practice_problem_sets": [],
+        "review_questions": 26,
+        "practice_problems": 0,
+        "review_answer_entries": 26,
+        "practice_answer_entries": 0,
+        "counts_unambiguous": true
+      },
+      {
+        "chapter": "01-06",
+        "file": "/workspace/scratch/234e8013f29d/upload/01-06-Functions-Graphs-and-Transformations(1).md",
+        "review_question_sets": [
+          24
+        ],
+        "practice_problem_sets": [],
+        "review_questions": 24,
+        "practice_problems": 0,
+        "review_answer_entries": 24,
+        "practice_answer_entries": 0,
+        "counts_unambiguous": true
+      },
+      {
+        "chapter": "01-07",
+        "file": "/workspace/scratch/234e8013f29d/upload/01-07-Polynomials-and-Their-Roots(1).md",
+        "review_question_sets": [
+          26
+        ],
+        "practice_problem_sets": [],
+        "review_questions": 26,
+        "practice_problems": 0,
+        "review_answer_entries": 26,
+        "practice_answer_entries": 0,
+        "counts_unambiguous": true
+      },
+      {
+        "chapter": "01-08",
+        "file": "/workspace/scratch/234e8013f29d/upload/01-08-Systems-of-Linear-Equations(1).md",
+        "review_question_sets": [
+          22
+        ],
+        "practice_problem_sets": [],
+        "review_questions": 22,
+        "practice_problems": 0,
+        "review_answer_entries": 22,
+        "practice_answer_entries": 0,
+        "counts_unambiguous": true
+      },
+      {
+        "chapter": "01-09",
+        "file": "/workspace/scratch/234e8013f29d/upload/01-09-Analytic-Geometry(1).md",
+        "review_question_sets": [
+          30
+        ],
+        "practice_problem_sets": [],
+        "review_questions": 30,
+        "practice_problems": 0,
+        "review_answer_entries": 30,
+        "practice_answer_entries": 0,
+        "counts_unambiguous": true
+      },
+      {
+        "chapter": "01-10",
+        "file": "/workspace/scratch/234e8013f29d/upload/01-10-Areas-Volumes-and-Mensuration(1).md",
+        "review_question_sets": [
+          18
+        ],
+        "practice_problem_sets": [],
+        "review_questions": 18,
+        "practice_problems": 0,
+        "review_answer_entries": 18,
+        "practice_answer_entries": 0,
+        "counts_unambiguous": true
+      },
+      {
+        "chapter": "01-11",
+        "file": "/workspace/scratch/234e8013f29d/upload/01-11-Trigonometry(1).md",
+        "review_question_sets": [
+          28
+        ],
+        "practice_problem_sets": [],
+        "review_questions": 28,
+        "practice_problems": 0,
+        "review_answer_entries": 28,
+        "practice_answer_entries": 0,
+        "counts_unambiguous": true
+      },
+      {
+        "chapter": "01-12",
+        "file": "/workspace/scratch/234e8013f29d/upload/01-12-Complex-Numbers(1).md",
+        "review_question_sets": [
+          25
+        ],
+        "practice_problem_sets": [],
+        "review_questions": 25,
+        "practice_problems": 0,
+        "review_answer_entries": 25,
+        "practice_answer_entries": 0,
+        "counts_unambiguous": true
+      },
+      {
+        "chapter": "01-13",
+        "file": "/workspace/scratch/234e8013f29d/upload/01-13-Vectors-and-Vector-Operations(1).md",
+        "review_question_sets": [
+          20
+        ],
+        "practice_problem_sets": [],
+        "review_questions": 20,
+        "practice_problems": 0,
+        "review_answer_entries": 20,
+        "practice_answer_entries": 0,
+        "counts_unambiguous": true
+      },
+      {
+        "chapter": "01-14",
+        "file": "/workspace/scratch/234e8013f29d/upload/01-14-Matrices-Determinants-and-Eigenvalues(1).md",
+        "review_question_sets": [
+          24
+        ],
+        "practice_problem_sets": [],
+        "review_questions": 24,
+        "practice_problems": 0,
+        "review_answer_entries": 24,
+        "practice_answer_entries": 0,
+        "counts_unambiguous": true
+      },
+      {
+        "chapter": "01-15",
+        "file": "/workspace/scratch/234e8013f29d/upload/01-15-Sequences-Series-and-Progressions(1).md",
+        "review_question_sets": [
+          26
+        ],
+        "practice_problem_sets": [],
+        "review_questions": 26,
+        "practice_problems": 0,
+        "review_answer_entries": 26,
+        "practice_answer_entries": 0,
+        "counts_unambiguous": true
+      },
+      {
+        "chapter": "01-16",
+        "file": "/workspace/scratch/234e8013f29d/upload/01-16-Limits-and-Continuity(1).md",
+        "review_question_sets": [
+          32
+        ],
+        "practice_problem_sets": [],
+        "review_questions": 32,
+        "practice_problems": 0,
+        "review_answer_entries": 32,
+        "practice_answer_entries": 0,
+        "counts_unambiguous": true
+      },
+      {
+        "chapter": "01-17",
+        "file": "/workspace/scratch/234e8013f29d/upload/01-17-The-Derivative(1).md",
+        "review_question_sets": [
+          31
+        ],
+        "practice_problem_sets": [],
+        "review_questions": 31,
+        "practice_problems": 0,
+        "review_answer_entries": 31,
+        "practice_answer_entries": 0,
+        "counts_unambiguous": true
+      },
+      {
+        "chapter": "01-18",
+        "file": "/workspace/scratch/234e8013f29d/upload/01-18-Applications-of-the-Derivative(1).md",
+        "review_question_sets": [
+          32
+        ],
+        "practice_problem_sets": [],
+        "review_questions": 32,
+        "practice_problems": 0,
+        "review_answer_entries": 32,
+        "practice_answer_entries": 0,
+        "counts_unambiguous": true
+      },
+      {
+        "chapter": "01-19",
+        "file": "/workspace/scratch/234e8013f29d/upload/01-19-Antiderivatives-and-the-Definite-Integral(1).md",
+        "review_question_sets": [
+          27
+        ],
+        "practice_problem_sets": [],
+        "review_questions": 27,
+        "practice_problems": 0,
+        "review_answer_entries": 27,
+        "practice_answer_entries": 0,
+        "counts_unambiguous": true
+      },
+      {
+        "chapter": "01-20",
+        "file": "/workspace/scratch/234e8013f29d/upload/01-20-Applications-of-the-Definite Integral(1).md",
+        "review_question_sets": [
+          42
+        ],
+        "practice_problem_sets": [],
+        "review_questions": 42,
+        "practice_problems": 0,
+        "review_answer_entries": 42,
+        "practice_answer_entries": 0,
+        "counts_unambiguous": true
+      },
+      {
+        "chapter": "01-21",
+        "file": "/workspace/scratch/234e8013f29d/upload/01-21-Techniques-of-Integration(1).md",
+        "review_question_sets": [
+          31
+        ],
+        "practice_problem_sets": [],
+        "review_questions": 31,
+        "practice_problems": 0,
+        "review_answer_entries": 0,
+        "practice_answer_entries": 0,
+        "counts_unambiguous": true
+      },
+      {
+        "chapter": "01-22",
+        "file": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+        "review_question_sets": [
+          30,
+          30
+        ],
+        "practice_problem_sets": [],
+        "review_questions": 60,
+        "practice_problems": 0,
+        "review_answer_entries": 30,
+        "practice_answer_entries": 0,
+        "counts_unambiguous": false
+      },
+      {
+        "chapter": "01-23",
+        "file": "/workspace/scratch/234e8013f29d/upload/01-23-Partial-Derivatives-and-Vector-Calculus(1).md",
+        "review_question_sets": [
+          27
+        ],
+        "practice_problem_sets": [],
+        "review_questions": 27,
+        "practice_problems": 0,
+        "review_answer_entries": 27,
+        "practice_answer_entries": 0,
+        "counts_unambiguous": true
+      }
+    ],
+    "records_requiring_update": 0,
+    "written": false
+  },
+  "diagnostics": [
+    {
+      "severity": "INFO",
+      "code": "CHAPTER_INCOMPLETE",
+      "message": "Recorded state: incomplete; findings are still reported, not suppressed",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-21-Techniques-of-Integration(1).md",
+      "line": 1,
+      "chapter": "01-21"
+    },
+    {
+      "severity": "INFO",
+      "code": "CHAPTER_INCOMPLETE",
+      "message": "Recorded state: incomplete; findings are still reported, not suppressed",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 1,
+      "chapter": "01-22"
+    },
+    {
+      "severity": "INFO",
+      "code": "CHAPTER_INCOMPLETE",
+      "message": "Recorded state: work_in_progress; findings are still reported, not suppressed",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-23-Partial-Derivatives-and-Vector-Calculus(1).md",
+      "line": 1,
+      "chapter": "01-23"
+    },
+    {
+      "severity": "INFO",
+      "code": "PARTIAL_SCOPE",
+      "message": "Chapter checks apply only to the explicitly selected files",
+      "path": "/workspace/scratch/234e8013f29d/upload/ledger.yaml",
+      "line": null,
+      "chapter": null
+    },
+    {
+      "severity": "ERROR",
+      "code": "MISSING_ANSWER_KEY",
+      "message": "31 review questions have no recognized answer-key section",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-21-Techniques-of-Integration(1).md",
+      "line": 1267,
+      "chapter": "01-21"
+    },
+    {
+      "severity": "ERROR",
+      "code": "DUPLICATE_ASSESSMENT_SECTION",
+      "message": "2 review sections make the assessment ambiguous",
+      "path": "/workspace/scratch/234e8013f29d/upload/01-22-Infinite-Series-and-Taylor-Expansions(inc)(1).md",
+      "line": 1374,
+      "chapter": "01-22"
+    }
+  ]
+}

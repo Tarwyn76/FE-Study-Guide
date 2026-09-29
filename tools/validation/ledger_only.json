@@ -1,0 +1,46 @@
+{
+  "tool": "lint_ledger",
+  "scope": "ledger structure and ownership only",
+  "status": "PASS_WITH_WARNINGS",
+  "exit_code": 0,
+  "counts": {
+    "WARNING": 3
+  },
+  "statistics": {
+    "concepts": 100,
+    "chapter_ids": 29,
+    "dependency_edges": 204,
+    "quantities": 89,
+    "notation_tokens": 77,
+    "unique_terms": 481,
+    "figure_ids": 120,
+    "split_required": 45,
+    "unmapped_layer_1": 84
+  },
+  "diagnostics": [
+    {
+      "severity": "WARNING",
+      "code": "DECOMPOSITION_PENDING",
+      "message": "45 concepts retain split_required: true; this blocks release, not dependency sorting",
+      "path": "/workspace/scratch/234e8013f29d/upload/ledger.yaml",
+      "line": null,
+      "chapter": null
+    },
+    {
+      "severity": "WARNING",
+      "code": "SPEC_COVERAGE_PENDING",
+      "message": "84 Layer 1 concepts have no official specification mapping; no official specification inventory is validated by this tool",
+      "path": "/workspace/scratch/234e8013f29d/upload/ledger.yaml",
+      "line": null,
+      "chapter": null
+    },
+    {
+      "severity": "WARNING",
+      "code": "HANDBOOK_AUDIT_PENDING",
+      "message": "64 page/location claims remain unverified against the PDF",
+      "path": "/workspace/scratch/234e8013f29d/upload/ledger.yaml",
+      "line": null,
+      "chapter": null
+    }
+  ]
+}
