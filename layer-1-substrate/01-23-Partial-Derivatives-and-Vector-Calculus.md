@@ -1096,40 +1096,51 @@ of assuming that a Lagrange solution must be a minimum.
 
 ## As the Handbook States It
 
-> **Source verification.** This guide's working edition is Handbook 10.6.
-> Its PDF was not available for direct page verification during this revision.
-> The formulas below are this chapter's reference forms, not asserted quotations
-> or verified page transcriptions. Confirm their location and printed notation
-> in the edition assigned to your exam. NCEES provides the Handbook through
-> [MyNCEES](https://ncees.org/exams/fe-exam/).
+> **Source verification.** Checked against the supplied *FE Reference Handbook
+> 10.6*, eighth printing, April 2026. Page numbers below are printed page numbers.
+> In this 506-page PDF, printed pages 47, 50, 61, 70, and 231 are PDF pages
+> 53, 56, 67, 76, and 237. The offset belongs to this file; use the section
+> headings when navigating another copy or the exam's reference.
 
 Use the lookup method from
 [00-03 Navigating the FE Reference Handbook](../layer-0-orientation/00-03-navigating-the-fe-reference-book.md):
 search a distinctive term, identify the variables, and check the assumptions
-before substituting values. Do not memorize an inferred page number.
+before substituting values. The table distinguishes a printed formula from
+the additional method developed in this chapter.
 
-| Search term | Form to recognize | What you must supply |
+| Handbook heading | Printed page | Verified coverage and its limit |
 |---|---|---|
-| Partial derivative | $f_x=\partial f/\partial x$ | which other inputs are fixed |
-| Total differential | $df=f_xdx+f_ydy+f_zdz$ | nominal evaluation point and signed increments |
-| Gradient | $\nabla f=\langle f_x,f_y,f_z\rangle$ | scalar input and consistent coordinate units |
-| Directional derivative | $D_{\mathbf u}f=\nabla f\cdot\mathbf u$ | a unit direction vector |
-| Divergence | $\nabla\cdot\mathbf F=(F_x)_x+(F_y)_y+(F_z)_z$ | matching component and differentiation variable |
-| Curl | determinant with basis vectors, derivative operators, and field components | component order and the middle minus sign |
-| Two-variable extrema | $D=f_{xx}f_{yy}-f_{xy}^2$ | a stationary point and the sign of $f_{xx}$ |
-| Lagrange multipliers | $\nabla f=\lambda\nabla g$ with $g=c_0$ | the constraint, allowed domain, and candidate checks |
+| Mathematics / Differential Calculus / The Partial Derivative | 47 | Defines a partial derivative by holding the other input fixed and prints $\partial z/\partial x=\partial f(x,y)/\partial x$. The mixed-partial equality condition used in §23.2 was not located. |
+| Mathematics / Derivatives, item 9 | 50 | Prints the one-input chain rule $d[f(u)]/dx=\{d[f(u)]/du\}\,du/dx$. The sum over multiple input paths in §23.4 was not located. |
+| Mathematics / Vectors / Gradient, Divergence, and Curl | 61 | Prints the Cartesian gradient, divergence, and curl in operator form, plus the Laplacian and vector identities. The directional-derivative formula and the global conditions for a conservative field were not located. |
+| Engineering Probability and Statistics / Measurement Uncertainty | 70 | Prints the Kline–McClintock root-sum-square formula for standard uncertainties of uncorrelated inputs. This differs from the first-order worst-case tolerance estimate in §23.3. |
+| Instrumentation, Measurement, and Control / Measurement Uncertainty | 231 | Prints the same root-sum-square structure using input uncertainties $w_i$ and output uncertainty $w_R$. Use the problem's uncertainty model. |
 
-**Notation translation.** This chapter prints $\lambda_L$ to distinguish the
-Lagrange multiplier from other uses of $\lambda$. Its algebraic role is unchanged.
-A reference that prints a vector field as $P\hat{\imath}+Q\hat{\jmath}+R\hat{k}$
-means the three component functions called $F_x,F_y,F_z$ here; those letters do
-not automatically mean pressure, heat, or resistance.
+**Methods to learn from this guide.** The general total differential and tangent
+plane, the sum-of-magnitudes tolerance estimate, the multivariable chain rule,
+the directional derivative, the two-variable second-partial test, and Lagrange
+multipliers were not located as general formulas in the supplied edition.
+The maximum and minimum tests on printed page 47 concern **one variable**;
+they do not supply the discriminant $D=f_{xx}f_{yy}-f_{xy}^2$ from §23.7.
+Keep these methods available through understanding and practice.
+
+**Uncertainty translation.** The Handbook's statistical formula squares each
+sensitivity-times-input-uncertainty contribution, adds the squares, and takes
+the square root. Section 23.3 adds absolute contributions because its inputs
+are tolerance bounds. A tolerance is not automatically a standard deviation.
+The input assumptions determine which calculation is appropriate.
+
+**Notation translation.** On printed page 61 the Handbook uses $\phi$ for the
+scalar field and $\mathbf V=V_1\hat{\imath}+V_2\hat{\jmath}+V_3\hat{k}$ for the
+vector field. These correspond to $f$ and
+$\mathbf F=F_x\hat{\imath}+F_y\hat{\jmath}+F_z\hat{k}$ here. The Handbook's
+$\nabla\times\mathbf V$ is the operator form of the component expansion in
+§23.6. This chapter uses $\lambda_L$ for its Lagrange multiplier; this is a
+local notation choice, not a transcription of a Handbook formula.
 
 **Know without a lookup:** what is held fixed; why uncertainty magnitudes and
 signed rates are different; the first-order limitation of a differential estimate;
 the need to normalize a direction; the three operator output types; and why
-stationary and Lagrange points must be checked. These are study priorities,
-not unverified claims that a formula is absent from the Handbook.
 
 ---
 
@@ -1764,9 +1775,12 @@ For independent mathematical reference and additional illustrations:
 - OpenStax, *Calculus Volume 3*, [4.6, Directional Derivatives and the Gradient](https://openstax.org/books/calculus-volume-3/pages/4-6-directional-derivatives-and-the-gradient).
 - OpenStax, *Calculus Volume 3*, [4.8, Lagrange Multipliers](https://openstax.org/books/calculus-volume-3/pages/4-8-lagrange-multipliers).
 - OpenStax, *Calculus Volume 3*, [6.5, Divergence and Curl](https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl).
-- NCEES, [FE exam and reference-handbook access](https://ncees.org/exams/fe-exam/).
-  This source establishes where to obtain the assigned reference; it does not
-  verify the page locations or coverage of individual formulas in this draft.
+- NCEES, *FE Reference Handbook 10.6*, eighth printing, April 2026,
+  printed pp. 47, 50, 61, 70, and 231. Locations and formula coverage were
+  checked directly against the supplied PDF. See the coverage distinctions
+  in “As the Handbook States It.”
+- NCEES, [FE exam and reference-handbook access](https://ncees.org/exams/fe-exam/),
+  for obtaining the reference assigned to an exam.
 
 ---
 
@@ -1836,7 +1850,6 @@ separate sensitivities, recombine actual changes, estimate measurement effects,
 and ask what a field is doing at one location. You can also distinguish a
 promising design candidate from a verified optimum.
 
-The next chapter, **01-24 Multiple Integration**, turns from local rates
 to accumulation over regions. The surfaces and level curves from §23.1 give us
 a way to picture the regions before setting up the sums. Keep that geometric
 picture; it will matter as much as the integration technique.

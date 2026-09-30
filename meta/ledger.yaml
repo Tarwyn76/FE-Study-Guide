@@ -111,13 +111,20 @@ _todo:
   spec_lines_layer_1: Official specification mappings remain incomplete through 01-23. Existing mappings
     were preserved, not independently reverified; no new area/item codes were inferred. Populate from
     the official specification sheets before coverage certification.
-  handbook_page_audit: All handbook_verified flags are false in this snapshot because the Handbook PDF
-    and a page-verification log were not supplied. References and availability claims are carried from
-    manuscript statements, including approximate ranges. Confirm against the PDF before promoting a flag.
-  figure_audit: All 120 inline figure IDs in the 26 supplied chapters now have one content-matched concept
-    owner. The separate manifest still lacks FIG-01-23-001 through FIG-01-23-007 and has eight blank Section
-    values for 01-18. Five earlier inserted 01-02 image links still differ from the generated asset filenames.
-    Ledger ownership does not certify image availability or artwork.
+  handbook_page_audit: 'Chapter 01-23 checked against the supplied Handbook 10.6, eighth printing April
+    2026. Three concept page claims are verified: MATH-1C-023-02 on printed page 47 and MATH-1C-023-05/06
+    on page 61. Each is limited to the formula coverage stated in its notes. Unsupported references for
+    01-23 total differentials and multivariable optimization were removed. Related pages 50, 70, and 231
+    are recorded in _verification_audit. Other chapters retain their previous unverified references; this
+    is not a whole-guide Handbook audit.'
+  figure_audit: All 120 inline figure IDs in the 26 supplied chapters have one concept owner. The manifest
+    now includes FIG-01-23-001 through FIG-01-23-007, with their actual sections and current descriptions.
+    Their status is specified, which does not claim generation. The user reports 35 figures generated
+    guide-wide; the IDs and current artwork files have not been reconciled in this audit. Existing manifest
+    status values are preserved. Eight 01-18 Section values remain blank, and the previously reported
+    five 01-02 filename mismatches remain pending. Specification, generation, and visual approval are
+    separate stages; missing planned artwork is an incomplete production task, not a broken manuscript
+    reference.
   split_required_atoms: Records retaining mixed Handbook lookup and memorization content are explicitly
     marked split_required. Preserving the chapter-declared ID set does not resolve these release-time
     decomposition requirements; no affected concept is marked verified.
@@ -125,11 +132,11 @@ _todo:
     sign-off required by the chapter anatomy convention.
 
     '
-  layer_coverage: Layer 1 is represented through 01-23 with 94 mathematical concepts. Chapter 01-23 has
-    been completed and revised; its Handbook references and image assets still need release verification;
-    01-21 lacks answers and 01-22 has duplicate endings. Differential equations, numerical methods, probability/statistics,
-    and later discipline layers remain outside this supplied snapshot. The three Layer 2 seeds remain
-    planned.
+  layer_coverage: Layer 1 is represented through 01-23 with 94 mathematical concepts. Chapter 01-23 is
+    content-complete and revised, with its Handbook coverage checked and figure specifications reconciled.
+    Its actual artwork and remaining release gates are still pending. Chapter 01-21 lacks answers and
+    01-22 has duplicate endings. Differential equations, numerical methods, probability/statistics, and
+    later discipline layers remain outside this supplied snapshot. The three Layer 2 seeds remain planned.
   assessment_integrity: 01-21 has 31 review questions and no key. 01-22 has two distinct 30-question sets
     with one key matching the second; its generated count of 60 is an occurrence count only. Counts elsewhere
     do not certify answer correctness or learning-objective coverage. The referenced count_assessments.py
@@ -4394,7 +4401,9 @@ concepts:
   status: revised
   source_sections:
   - '23.1'
-  notes: Mapped to the supplied chapter sections listed in source_sections.
+  notes: Reviewed against Handbook 10.6, eighth printing April 2026. The surface and level-curve methods
+    taught in 23.1 were not located as a general treatment. Page 47 uses a two-input function and page
+    61 uses a scalar field, but those mentions do not supply the geometry taught here.
   term_aliases:
     level curve:
     - Level curve / contour
@@ -4424,11 +4433,11 @@ concepts:
   uses_symbols: []
   uses_notation: []
   handbook_ref:
-    section: Mathematics / Differential Calculus
-    page: 43–45 (approximate)
-  handbook_verified: false
+    section: Mathematics / Differential Calculus / The Partial Derivative
+    page: 47
+  handbook_verified: true
   handbook_status: in_handbook
-  split_required: false
+  split_required: true
   spec_lines: []
   primer_source: null
   review_questions: 0
@@ -4438,8 +4447,9 @@ concepts:
   status: revised
   source_sections:
   - '23.2'
-  notes: Mapped to the supplied chapter sections listed in source_sections. Handbook location/status follows
-    the manuscript and is not PDF-verified.
+  notes: 'Verified printed page 47 (PDF page 53): partial-derivative definition and notation. Equality
+    of mixed partials and its continuity condition were not located. Verification covers the cited definition
+    only; split_required records the remaining mixture of lookup and learned content.'
 - id: MATH-1C-023-03
   title: Total differentials, tangent planes, and uncertainty bounds
   chapter: 01-23
@@ -4464,12 +4474,10 @@ concepts:
   - relative error
   uses_symbols: []
   uses_notation: []
-  handbook_ref:
-    section: Mathematics / Differential Calculus
-    page: 43–45 (approximate)
+  handbook_ref: null
   handbook_verified: false
-  handbook_status: in_handbook
-  split_required: true
+  handbook_status: not_in_handbook
+  split_required: false
   spec_lines: []
   primer_source: null
   review_questions: 0
@@ -4479,8 +4487,11 @@ concepts:
   status: revised
   source_sections:
   - '23.3'
-  notes: Mapped to the supplied chapter sections listed in source_sections. Handbook location/status follows
-    the manuscript and is not PDF-verified.
+  notes: The general total differential, tangent plane, and first-order sum-of-magnitudes tolerance bound
+    taught in 23.3 were not located. Printed pages 70 and 231 (PDF pages 76 and 237) instead give Kline-McClintock
+    root-sum-square statistical uncertainty; page 70 explicitly assumes uncorrelated inputs. These verified
+    related references are recorded in _verification_audit and must not be cited as the chapter tolerance-bound
+    formula. Removed the unsupported approximate Mathematics page claim.
 - id: MATH-1C-023-04
   title: The multivariable chain rule
   chapter: 01-23
@@ -4514,7 +4525,9 @@ concepts:
   status: revised
   source_sections:
   - '23.4'
-  notes: Mapped to the supplied chapter sections listed in source_sections.
+  notes: The multivariable sum-over-paths chain rule taught in 23.4 was not located. Printed page 50,
+    Derivatives item 9 (PDF page 56), supplies the single-input chain rule only. That supporting prerequisite
+    does not establish Handbook coverage of this atom.
 - id: MATH-1C-023-05
   title: Gradients and directional derivatives
   chapter: 01-23
@@ -4543,9 +4556,9 @@ concepts:
   uses_notation:
   - dot_product_notation
   handbook_ref:
-    section: Mathematics / Differential Calculus
-    page: 43–45 (approximate)
-  handbook_verified: false
+    section: Mathematics / Vectors / Gradient, Divergence, and Curl
+    page: 61
+  handbook_verified: true
   handbook_status: in_handbook
   split_required: true
   spec_lines: []
@@ -4557,8 +4570,9 @@ concepts:
   status: revised
   source_sections:
   - '23.5'
-  notes: Mapped to the supplied chapter sections listed in source_sections. Handbook location/status follows
-    the manuscript and is not PDF-verified.
+  notes: 'Verified printed page 61 (PDF page 67): Cartesian gradient operator acting on scalar phi. The
+    directional-derivative formula and contour interpretation were not located. Verification covers the
+    gradient formula only; normalization, directional derivatives, and interpretation remain learned content.'
   term_aliases:
     del operator:
     - Del operator $\nabla$
@@ -4597,9 +4611,9 @@ concepts:
   - del_operator
   - cross_product_notation
   handbook_ref:
-    section: Mathematics / Vectors
-    page: null
-  handbook_verified: false
+    section: Mathematics / Vectors / Gradient, Divergence, and Curl
+    page: 61
+  handbook_verified: true
   handbook_status: in_handbook
   split_required: true
   spec_lines: []
@@ -4611,9 +4625,11 @@ concepts:
   status: revised
   source_sections:
   - '23.6'
-  notes: The revised chapter states the smoothness and simply connected domain conditions for the zero-curl
-    implication. Mapped to the supplied chapter sections listed in source_sections. Handbook location/status
-    follows the manuscript and is not PDF-verified.
+  notes: 'Verified printed page 61 (PDF page 67): divergence and curl in operator form, Laplacian, and
+    vector identities including curl of a gradient. The Handbook uses V_1, V_2, V_3 for components. The
+    revised chapter supplies component expansions, physical interpretation, and the smoothness and simply
+    connected domain conditions for a global scalar potential; those conditions were not located in the
+    cited treatment.'
 - id: MATH-1C-023-07
   title: Multivariable extrema and Lagrange multipliers
   chapter: 01-23
@@ -4642,12 +4658,10 @@ concepts:
   - second derivative test
   uses_symbols: []
   uses_notation: []
-  handbook_ref:
-    section: Mathematics / Differential Calculus
-    page: 43–45 (approximate)
+  handbook_ref: null
   handbook_verified: false
-  handbook_status: in_handbook
-  split_required: true
+  handbook_status: not_in_handbook
+  split_required: false
   spec_lines: []
   primer_source: null
   review_questions: 0
@@ -4658,11 +4672,12 @@ concepts:
   status: revised
   source_sections:
   - '23.7'
-  notes: The revised chapter treats stationary interior points, nonsmooth candidates, boundaries, and
-    the inconclusive second-partial test. The multivariable critical-point term retains its separate qualified
-    ownership. D is distinct from both the quadratic discriminant and a matrix determinant. Mapped to
-    the supplied chapter sections listed in source_sections. Handbook location/status follows the manuscript
-    and is not PDF-verified.
+  notes: The two-variable second-partial test and Lagrange-multiplier method were not located in the supplied
+    Handbook 10.6. Printed page 47 contains single-variable maximum/minimum tests only; it does not support
+    the earlier approximate page claim for this atom. The revised chapter treats stationary interior points,
+    nonsmooth candidates, boundaries, and the inconclusive test. D retains its distinct qualified ownership.
+    The local multiplier notation is lambda_L. The lookup/memorization split flag is cleared because no
+    general formula for this atom was located.
   term_aliases:
     multivariable critical point:
     - Critical point (several variables)
@@ -5137,7 +5152,7 @@ _source_chapters:
         owner: MATH-1B-015-04
   01-23:
     source_file: 01-23-Partial-Derivatives-and-Vector-Calculus.md
-    source_sha256: 172ae6bd049d88bb7cf9e32b4e582d4d438021b84e5633c3c1d77a1836d1943c
+    source_sha256: d5e0fd065de5cd6de89fedd6e62c8ae2dbd26cbdcbe5542652608c3db5cfee81
     source_status: revised
     completion_state: content_complete_not_release_verified
     declared_concepts: 7
@@ -5146,8 +5161,9 @@ _source_chapters:
     numbered_answer_entries: 27
     assessment_count_verified: true
     notes: 'Completed chapter: 11 worked examples, 27 review questions with explanations, and 10 practice
-      problems with solutions. All 14 learning objectives are assessed. Structural and numerical checks
-      completed; Handbook page claims and figure assets remain separate release checks.'
+      problems with solutions. All 14 learning objectives are assessed. Handbook coverage checked against
+      the supplied 10.6 PDF, with printed/PDF page mapping and explicit limits. Seven figure specifications
+      are now in the manifest. Actual figure files and whole-guide release checks remain pending.'
     contextual_key_terms:
       Critical point:
         canonical_term: multivariable critical point
@@ -5448,3 +5464,50 @@ _update_audit:
     term_symbol_and_notation_uses_checked: 421
     source_chapters_unchanged: true
     split_required_records: 45
+
+_verification_audit:
+  date: '2026-09-30'
+  scope: Chapter 01-23 Handbook coverage and figure-manifest reconciliation
+  handbook_file: fe-handbook-10-6.pdf
+  handbook_sha256: 13677a25322344f0252e2c074b8b1aef56622edd39287463103227d15d6de69c
+  edition: '10.6'
+  printing: Eighth printing April 2026
+  pdf_pages: 506
+  method: Search the complete PDF text and index; review relevant section text; visually inspect formulas
+    and printed page labels on PDF pages 53, 56, 67, 76, and 237.
+  status_meaning: handbook_verified confirms the cited page and the limited coverage in notes. For reviewed
+    01-23 records, not_in_handbook means the general method taught by that atom was not located by this
+    audit. It is not a claim about every related formula or later editions.
+  verified_locations:
+  - printed_page: 47
+    pdf_page: 53
+    coverage: Definition and notation of a partial derivative; single-variable extrema tests
+  - printed_page: 50
+    pdf_page: 56
+    coverage: 'Derivatives item 9: single-input chain rule'
+  - printed_page: 61
+    pdf_page: 67
+    coverage: Gradient, divergence, curl, Laplacian, and vector identities
+  - printed_page: 70
+    pdf_page: 76
+    coverage: Kline-McClintock standard uncertainty for uncorrelated inputs
+  - printed_page: 231
+    pdf_page: 237
+    coverage: Kline-McClintock measurement uncertainty in w notation
+  figures:
+    manifest_rows_before: 113
+    manifest_rows_after: 120
+    added_ids:
+    - FIG-01-23-001
+    - FIG-01-23-002
+    - FIG-01-23-003
+    - FIG-01-23-004
+    - FIG-01-23-005
+    - FIG-01-23-006
+    - FIG-01-23-007
+    new_row_status: specified
+    generated_count_user_reported: 35
+    generated_ids_reconciled: false
+    artwork_review_performed: false
+    note: No individual figure was newly marked generated or verified. Current image files are needed
+      to reconcile the reported 35 and inspect the artwork.
