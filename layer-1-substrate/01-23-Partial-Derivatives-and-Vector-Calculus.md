@@ -6,81 +6,71 @@ tier: C
 template: technical
 ledger_ids: [MATH-1C-023-01, MATH-1C-023-02, MATH-1C-023-03, MATH-1C-023-04, MATH-1C-023-05, MATH-1C-023-06, MATH-1C-023-07]
 routes: [chemical, civil, electrical-computer, environmental, industrial-systems, mechanical, other-disciplines]
-status: drafted
+status: revised
 ---
 
 # Chapter 01-23: Partial Derivatives and Vector Calculus
 
-> *"Nothing in engineering depends on one variable. Pressure drop depends on flow
-> rate, diameter, roughness, and viscosity. Stress depends on load, area, and
-> geometry. Every measurement you combine carries its own uncertainty into the
-> result. Single-variable calculus cannot touch any of that. Partial
-> differentiation can, and it does it with one idea: hold everything else still
-> and differentiate the one thing you are varying."*
+> *"A result can depend on several measurements, and each measurement can move
+> it a different way. Before you decide which input matters most, ask what changes
+> when you move that input and hold the others still. That is the question a
+> partial derivative answers."*
 
 ---
 
 ## Before You Start
 
-**Prerequisites:** [01-09 Lines and Analytic Geometry](01-09-lines-analytic-geometry.md) · [01-11 Trigonometry](01-11-trigonometry.md) · [01-13 Vectors in Two and Three Dimensions](01-13-vectors.md) · [01-16 Limits and Continuity](01-16-limits-continuity.md) · [01-17 The Derivative](01-17-the-derivative.md) · [01-18 Applications of the Derivative](01-18-applications-of-the-derivative.md) · [01-22 Infinite Series and Taylor Expansions](01-22-infinite-series-taylor.md)
+**Prerequisites:** [01-06 Functions, Graphs, and Transformations](01-06-Functions-Graphs-and-Transformations.md) · [01-09 Analytic Geometry](01-09-Analytic-Geometry.md) · [01-11 Trigonometry](01-11-Trigonometry.md) · [01-13 Vectors and Vector Operations](01-13-Vectors-and-Vector-Operations.md) · [01-14 Matrices, Determinants, and Eigenvalues](01-14-Matrices-Determinants-and-Eigenvalues.md) · [01-16 Limits and Continuity](01-16-Limits-and-Continuity.md) · [01-17 The Derivative](01-17-The-Derivative.md) · [01-18 Applications of the Derivative](01-18-Applications-of-the-Derivative.md) · [01-22 Infinite Series and Taylor Expansions](01-22-Infinite-Series-and-Taylor-Expansions.md)
 
-**Skip if:** You pass the Tier 1C test-out quiz. Verify you can compute a mixed
-second partial, propagate uncertainty through a product of powers using the total
-differential, and write the gradient, divergence, and curl from memory before
-skipping. The total differential is the item to be honest about — it is the single
-most used result in this chapter across all seven disciplines, and it appears
-inside problems that never mention partial derivatives.
+**Skip if:** You pass the Tier 1C test-out quiz and can independently compute mixed
+partials, estimate uncertainty with a total differential, normalize a direction
+vector, and distinguish gradient, divergence, and curl. Also check that you can
+classify a two-variable critical point and set up an equality constraint. If any
+one of those is unfamiliar, work its section before moving on.
 
-**Time:** ~85 min read · ~30 min review questions · ~90 min practice problems
+**Time:** About 100–120 min reading and worked examples · 40–50 min review
+questions · 60–90 min practice problems. Split the work into two sittings if needed.
+
+**Working convention:** Bare algebraic examples use dimensionless variables.
+Engineering problems state their units and supply the physical model. You are
+responsible for differentiating that model, not for knowing an untaught circuit,
+heat-transfer, or beam-theory derivation.
 
 ---
 
 ## On the Board Today
 
-Apprentice, everything through Chapter 01-22 assumed one input and one output.
-Real engineering functions do not look like that.
+Apprentice, a cylinder's volume depends on its radius **and** its height. A
+calculated electrical power can change because a voltage changes, a resistance
+changes, or both change together. A temperature map has an uphill direction at
+each location, and that direction need not follow either coordinate axis.
 
-$$Q = \frac{\pi D^2}{4}v \qquad \sigma = \frac{Mc}{I} \qquad P = \frac{V^2}{R} \qquad pV = nRT$$
+The single-variable derivative from Chapter 01-17 still does the work. We need
+to organize it so that several inputs can share the same output.
 
-Four variables, three variables, two variables, four variables. Each of those is a
-function of several inputs, and the questions you need to answer about them are
-familiar in form but not in machinery.
+**First, one input at a time.** A partial derivative measures the sensitivity to
+one input while the others stay fixed. The differentiation rules do not change.
 
-**How sensitive is the output to each input?** That is a derivative question, but
-now there is one derivative per input. Those are the **partial derivatives**, and
-computing them requires no new technique at all — you differentiate with respect to
-one variable while treating the others as constants, using exactly the rules from
-Chapter 01-17.
+**Then, all the inputs together.** The total differential combines small input
+changes. It gives us a local approximation and a way to estimate how measurement
+uncertainties affect a computed result. Keep those two words together: *local
+approximation*. A first-order estimate is not an exact tolerance guarantee.
 
-**How do all the uncertainties combine?** Every measured input carries an error
-bar. The **total differential** assembles the individual sensitivities into one
-statement about the output's uncertainty, and it is the most practically valuable
-result in this chapter. It generalizes the differential from Chapter 01-18 and, as
-we will verify, it reproduces the power-law error rule you already met there.
+**Then, direction.** For an output that varies with position, the gradient points
+toward the fastest increase. A directional derivative tells you what happens
+along the particular direction you choose.
 
-**Which direction is uphill?** For a function of position — a temperature field, a
-pressure field, an elevation — the answer is a *vector*, because there are now many
-directions to choose from. That vector is the **gradient**, and it points the way
-heat flows, water runs, and charge moves.
+**Then, a field of arrows.** Divergence measures local net outflow; curl measures
+local rotation. Their formulas look similar enough to confuse under pressure,
+so we will build the distinction before using them.
 
-**What is a vector field doing locally?** Two questions, two answers.
-**Divergence** measures whether the field is spreading out from a point — whether
-there is a source or a sink there. **Curl** measures whether the field is
-circulating around a point. Both are built from partial derivatives combined with
-the dot and cross products from Chapter 01-13, and both are the mathematical
-content of conservation laws you will meet in fluids, heat transfer, and
-electromagnetics.
+**Finally, a design choice.** We will locate maxima, minima, and saddle points,
+then minimize material while keeping a tank's volume fixed. That constraint
+changes which moves are allowed, and the mathematics has to respect it.
 
-**Where are the extremes?** Optimization with several variables, including the case
-where a **constraint** ties the variables together. That last case — Lagrange
-multipliers — is how you minimize material for a fixed volume, or cost for a fixed
-capacity.
-
-A note on exam weight. Partial derivatives and the total differential are used
-constantly, often without announcement. The gradient, divergence, and curl are
-tested at the level of *computing them correctly from a formula in the Handbook*,
-and understanding what they mean physically. Lagrange multipliers appear
-occasionally. Drill the first two groups.
+The habit running through the chapter is the same one you already know: state
+what is held fixed, carry the units, and check whether the answer makes physical
+and mathematical sense.
 
 ---
 
@@ -88,77 +78,73 @@ occasionally. Drill the first two groups.
 
 By the end of this chapter, you will be able to:
 
-* 23.1 Interpret a function of two variables as a surface and sketch or read its
-  level curves
-* 23.2 Compute first partial derivatives and state what each one measures
-* 23.3 Compute higher-order and mixed partial derivatives, and apply the equality
-  of mixed partials
-* 23.4 Write the total differential of a function of several variables
-* 23.5 Propagate measurement uncertainty through a formula using the total
-  differential, and identify which input dominates
-* 23.6 Apply the power-law shortcut for uncertainty in a product of powers
-* 23.7 Write the equation of a tangent plane and recognize it as the first-order
-  multivariable Taylor polynomial
-* 23.8 Apply the multivariable chain rule to a related-rates problem
-* 23.9 Compute the gradient and state its two defining properties
-* 23.10 Compute a directional derivative and relate it to the gradient magnitude
-* 23.11 Compute the divergence of a vector field and interpret it as source
-  strength
-* 23.12 Compute the curl of a vector field and interpret it as local rotation
-* 23.13 Locate and classify critical points of a function of two variables using
-  the second-derivative test
-* 23.14 Solve a constrained optimization problem by the method of Lagrange
-  multipliers
+* 23.1 Interpret a function of two variables as a surface and read its level curves.
+* 23.2 Compute first partial derivatives and state what each measures.
+* 23.3 Compute higher-order and mixed partials and state the condition that permits interchange.
+* 23.4 Write the total differential of a function of several variables.
+* 23.5 Estimate propagated measurement uncertainty and identify the dominant input.
+* 23.6 Apply the power-law uncertainty shortcut and recognize its first-order limits.
+* 23.7 Write a tangent plane and use it as a local first-order Taylor approximation.
+* 23.8 Apply the multivariable chain rule to a related-rates problem.
+* 23.9 Compute a gradient and explain its direction and magnitude.
+* 23.10 Compute a directional derivative using a unit vector.
+* 23.11 Compute divergence and interpret its sign and units.
+* 23.12 Compute curl, interpret local rotation, and state when zero curl implies a conservative field.
+* 23.13 Locate and classify two-variable critical points and recognize an inconclusive test.
+* 23.14 Set up and check a constrained optimization using Lagrange multipliers.
 
 ---
 
 ## Notation Used Here
 
-| Symbol | Meaning in this chapter | Notes |
-|---|---|---|
-| $f(x,y)$, $f(x,y,z)$ | scalar function of several variables | output is a number |
-| $\dfrac{\partial f}{\partial x}$, $f_x$ | partial derivative with respect to $x$ | other variables held constant |
-| $f_{xx}$, $f_{yy}$ | second partials in the same variable | — |
-| $f_{xy}$, $f_{yx}$ | **mixed** second partials | equal for well-behaved $f$ |
-| $\partial$ | "partial" — the curly $d$ | signals that other variables are frozen |
-| $df$ | total differential of $f$ | sum of all partial contributions |
-| $\nabla$ | del operator, $\left(\frac{\partial}{\partial x}, \frac{\partial}{\partial y}, \frac{\partial}{\partial z}\right)$ | pronounced "del" or "nabla" |
-| $\nabla f$ | **gradient** of a scalar field | a **vector** |
-| $\mathbf{F}$ | vector field, $\mathbf{F} = F_x\hat{\imath} + F_y\hat{\jmath} + F_z\hat{k}$ | — |
-| $\nabla\cdot\mathbf{F}$ | **divergence** of a vector field | a **scalar** |
-| $\nabla\times\mathbf{F}$ | **curl** of a vector field | a **vector** |
-| $D_{\mathbf{u}}f$ | directional derivative of $f$ in direction $\mathbf{u}$ | $\mathbf{u}$ must be a **unit** vector |
-| $D$ | discriminant $f_{xx}f_{yy} - f_{xy}^2$ | second-derivative test |
-| $\lambda$ | Lagrange multiplier | — |
-| $g(x,y) = k$ | constraint equation | — |
+In the units below, $[f]$ means the units of the function's output and $[x]$ the
+units of its input. A derivative has output units divided by input units. The
+symbol $1$ means dimensionless; “operator” means that no standalone physical unit
+is assigned. Cartesian spatial coordinates use the same length unit on every axis.
+
+| Symbol | Meaning in this chapter | SI | USCS |
+|---|---|---|---|
+| $x,y,z$; $a,b$ | coordinates or named inputs; $a,b$ also identify an expansion point | m for spatial coordinates; otherwise stated | ft or in for spatial coordinates; otherwise stated |
+| $f,g$; $f_0$ | scalar functions; nominal output $f_0$ | problem-dependent | problem-dependent |
+| $f_x,f_y,f_{xx},f_{xy}$ | first and second partial derivatives | $[f]/[x]$, $[f]/[x]^2$, $[f]/([x][y])$ as appropriate | same dimensional ratios |
+| $\partial,\nabla$ | partial-derivative and del operators | operator | operator |
+| $dx,dy,df$; $\Delta x,\Delta f$ | differential increments; finite changes | corresponding input or output unit | corresponding input or output unit |
+| $\varepsilon_x,\varepsilon_f^{(1)}$ | nonnegative input tolerance; first-order output uncertainty estimate | corresponding input or output unit | corresponding input or output unit |
+| $\nabla f,D_{\mathbf u}f$ | gradient and derivative in a unit direction | $[f]/\mathrm{m}$ for spatial inputs | $[f]/\mathrm{ft}$ for spatial inputs |
+| $\mathbf u,\hat{\imath},\hat{\jmath},\hat{k}$ | unit direction and Cartesian basis vectors | 1 | 1 |
+| $\mathbf F,\mathbf v$; $F_x,F_y,F_z$ | vector field, velocity field, and scalar components | field-dependent; velocity m/s | field-dependent; velocity ft/s |
+| $\nabla\cdot\mathbf F,\nabla\times\mathbf F$ | divergence and curl | $[\mathbf F]/\mathrm{m}$ | $[\mathbf F]/\mathrm{ft}$ |
+| $\Psi$ | scalar potential satisfying $\mathbf F=\nabla\Psi$ | $[\mathbf F]\,\mathrm{m}$ | $[\mathbf F]\,\mathrm{ft}$ |
+| $D$ | second-partial discriminant $f_{xx}f_{yy}-f_{xy}^2$ | $[f]^2/([x]^2[y]^2)$ | same dimensional ratio |
+| $\lambda_L,c_0$ | Lagrange multiplier; fixed value in $g=c_0$ | $[f]/[g]$; $[g]$ | same dimensional ratios |
+| $r,h,d_p,L$ | radius, height, pipe diameter, and length | m or mm | ft or in |
+| $A,V,Q_v$ | area, volume, and volumetric flow rate | m², m³, m³/s | ft², ft³, ft³/s |
+| $P_w,U_V,R_e,I_e$ | electrical power, voltage, resistance, current in supplied models | W, V, Ω, A | W, V, Ω, A |
+| $t$ | time | s | s |
+| $T,\mathbf q,k$ | temperature, heat flux, positive thermal conductivity in a supplied model | K or °C; W/m²; W/(m·K) | °F; Btu/(h·ft²); Btu/(h·ft·°F) |
+| $F_L,E,I_A,\delta$ | load, elastic modulus, second moment of area, beam deflection in a supplied model | N, Pa, m⁴, m | lbf, psi, in⁴, in when inch units are used |
+| $\theta$ | angle between directions | rad | rad |
+| $C,p,q,s$ | fixed coefficient and exponents in a product of powers | coefficient units make the model consistent; exponents 1 | same rule |
+
+> **Collision note.** $D$ is the second-partial discriminant, not a diameter,
+> determinant, or diffusivity. Pipe diameter is $d_p$. The local multiplier is
+> $\lambda_L$; a reference may print $\lambda$ for the same quantity. Volume is
+> $V$, power is $P_w$, flow rate is $Q_v$, and the supplied circuit models use
+> $U_V,R_e,I_e$ to avoid assigning several meanings to $V,R,I$. $E$ means elastic
+> modulus and $I_A$ a second moment of area. $k$ means thermal conductivity;
+> $\hat{k}$ is a unit vector. See the [Notation Contract](../meta/notation.md).
 
 > ---
 > **Mentor's Margin**
 >
-> Two notation points that matter more than they look.
+> The curly $\partial$ is not decoration. It tells you that the other independent
+> inputs are frozen. An ordinary $d$ describes a total change along the path the
+> inputs actually follow. Before you differentiate, say aloud which question you
+> are answering.
 >
-> **The curly $\partial$ is not decoration.** Writing $\frac{df}{dx}$ when you
-> mean $\frac{\partial f}{\partial x}$ is a real error, because the two say
-> different things. $\frac{\partial f}{\partial x}$ means "the rate of change of
-> $f$ as $x$ varies **and $y$ is held fixed**." $\frac{df}{dx}$ means the total
-> rate including whatever $y$ does in response. When $y$ depends on $x$ — which it
-> often does in a physical system — those two numbers are different. The symbol
-> tells the reader which one you computed.
->
-> **Keep the output types straight.** The three vector operators do not all
-> produce the same kind of object, and confusing them produces answers that are
-> not merely wrong but ungrammatical.
->
-> | Operator | Input | Output |
-> |---|---|---|
-> | gradient $\nabla f$ | scalar field | **vector** |
-> | divergence $\nabla\cdot\mathbf{F}$ | vector field | **scalar** |
-> | curl $\nabla\times\mathbf{F}$ | vector field | **vector** |
->
-> The dot and cross in the notation are your reminders, and they are honest ones:
-> Chapter 01-13 established that a dot product returns a scalar and a cross product
-> returns a vector. Same rule here. If you report the divergence as a vector, you
-> have made a type error and the check is immediate.
+> Keep the output types straight, too: a gradient is a **vector**, divergence a
+> **scalar**, and curl a **vector**. The dot and cross symbols preserve the output
+> types you learned in Chapter 01-13. Check the type before checking the arithmetic.
 >
 > ---
 
@@ -166,30 +152,40 @@ By the end of this chapter, you will be able to:
 
 ## 23.1 Functions of Several Variables
 
-A function of two variables assigns a number to each point in a plane. Its graph
-is a **surface** in three dimensions: $z = f(x,y)$.
+A **function of several variables** assigns one output to each allowed combination
+of inputs. Its domain is the set of allowed combinations. For example,
+$f(x,y)=\ln(x^2+y)$ requires $x^2+y>0$; not every pair is admissible.
+This is the [domain idea from 01-06](01-06-Functions-Graphs-and-Transformations.md)
+with an extra input.
 
-For $f(x,y) = x^2 + y^2$ the surface is a bowl — a paraboloid opening upward, with
-its lowest point at the origin.
+The graph of $z=f(x,y)$ is a **surface**. For $f(x,y)=x^2+y^2$, it is an
+upward-opening bowl. When the inputs are position coordinates and the output is
+one number at each position, we call the function a **scalar field**. Temperature
+in a room is one example: each location has one temperature.
 
-Surfaces are hard to draw and harder to read. The practical alternative is a
-**level curve** (or contour): the set of points where $f$ takes one fixed value.
-Setting $x^2+y^2 = c$ gives circles of radius $\sqrt{c}$, so the bowl's contour map
-is a set of concentric circles.
+A **level curve**, also called a **contour**, joins the points where the function
+has one fixed value. Setting $x^2+y^2=c_0$ gives a circle of radius $\sqrt{c_0}$
+when $c_0>0$. At $c_0=0$ the level set is just the origin; negative levels do not
+occur for this bowl.
 
-You have read contour maps before, under other names. A topographic map shows level
-curves of elevation. A weather chart shows isobars — level curves of pressure. A
-thermal plot shows isotherms. In every case the spacing carries the information:
-**closely spaced contours mean the function is changing fast**, which is exactly
-the fact the gradient will make precise in §23.5.
+For levels $1,2,3,4$, the radii are $1,\sqrt2,\sqrt3,2$. The outward gaps shrink
+because the bowl gets steeper as you move outward. **Compare contour spacing only
+when the change in the labeled value is the same.** Levels $1,4,9,16$ would instead
+give equally spaced radii $1,2,3,4$; their unequal height increments prevent the
+same spacing comparison.
 
-![FIG-01-23-001: Two-panel figure. Left panel shows the surface z = x² + y² drawn in three dimensions as a bowl-shaped paraboloid, with four horizontal cutting planes at z = 1, 4, 9, and 16 slicing through it and the intersection circles traced on each plane. Right panel shows the same information as a flat contour map: four concentric circles labeled with their z-values 1, 4, 9, 16, with radii 1, 2, 3, 4. An annotation notes "contours bunch together where the surface is steep" with an arrow pointing to the closer-spaced outer rings.](../figures/FIG-01-23-001-surface-and-contours.png)
+A contour map is a compact way to read a surface. Closely spaced **equal-increment**
+contours indicate a larger rate of change across them. Moving along one contour
+leaves the output unchanged. We will turn those observations into calculations
+in §23.5.
+
+![FIG-01-23-001: Two panels show the dimensionless surface z=x²+y² and its contour map. The surface is cut by four horizontal planes at z=1,2,3,4. The matching map has four circles of radii 1, √2, √3, and 2 labeled with those levels. The equal height increments produce progressively smaller outward radial gaps, illustrating increasing steepness. Line styles and labels distinguish the levels without relying on color.](../figures/FIG-01-23-001-surface-and-contours.png)
 
 ---
 
 ## 23.2 Partial Derivatives
 
-Here is the whole idea, and it genuinely is this simple.
+The new discipline is choosing which input is allowed to move.
 
 To find $\dfrac{\partial f}{\partial x}$: treat $y$ as a **constant** and
 differentiate with respect to $x$ using every rule from Chapter 01-17.
@@ -197,9 +193,17 @@ differentiate with respect to $x$ using every rule from Chapter 01-17.
 To find $\dfrac{\partial f}{\partial y}$: treat $x$ as a constant and differentiate
 with respect to $y$.
 
-No new techniques. The product rule, quotient rule, chain rule, and every entry in
+The product rule, quotient rule, chain rule, and every entry in
 the derivative table apply unchanged. The only discipline required is remembering
 which letter is frozen.
+
+The limit definition from [01-17 The Derivative](01-17-The-Derivative.md)
+makes the instruction precise:
+
+$$f_x(a,b)=\lim_{\Delta x\to0}\frac{f(a+\Delta x,b)-f(a,b)}{\Delta x}.$$
+
+Only the first input changes. Interchange the roles of the inputs to define
+$f_y(a,b)$. The usual limit must exist for that partial derivative to exist.
 
 ### What a partial derivative measures
 
@@ -208,10 +212,9 @@ $x$-direction — the slope of the curve you get by slicing the surface with a
 vertical plane holding $y$ constant. Similarly $f_y$ is the slope along a slice
 holding $x$ constant.
 
-Physically, $f_x$ is the **sensitivity** of the output to that one input. If
-$\frac{\partial Q}{\partial D} = 0.57$ m²/s, then a one-millimetre change in
-diameter changes the flow by $0.57 \times 0.001$ m³/s, with everything else held
-where it was. That sensitivity reading is what makes partial derivatives an
+Physically, $f_x$ is the **sensitivity** of the output to that one input. If a flow model has $\partial Q_v/\partial d_p=0.57\ \mathrm{m^2/s}$,
+a small diameter increase of $0.001\ \mathrm m$ produces an estimated flow
+increase of $0.00057\ \mathrm{m^3/s}$, with the other inputs held fixed. That sensitivity reading is what makes partial derivatives an
 engineering tool rather than a formality.
 
 ![FIG-01-23-002: A surface z = f(x,y) drawn in three dimensions with a point P marked on it. Two vertical cutting planes pass through P: one holding y constant, producing a trace curve on the surface with a tangent line drawn along it labeled "slope = ∂f/∂x"; the other holding x constant, producing a second trace curve with a tangent line labeled "slope = ∂f/∂y". The two tangent lines are shown meeting at P, and a dashed parallelogram through them indicates the tangent plane they span.](../figures/FIG-01-23-002-partial-derivative-slices.png)
@@ -222,27 +225,36 @@ engineering tool rather than a formality.
 
 **Find.** $f_x$ and $f_y$, and evaluate both at $(2, 1)$.
 
+**Approach.** Freeze one input at a time, differentiate each term, then substitute the point. Check with small coordinate changes.
+
 **Solution.**
 
-**For $f_x$**, treat $y$ as a constant. Then $x^2y$ differentiates to $2xy$ (the
+**1. For $f_x$**, treat $y$ as a constant. Then $x^2y$ differentiates to $2xy$ (the
 $y$ rides along as a coefficient), $3xy^3$ differentiates to $3y^3$, and $-2y$ is a
 constant so it vanishes:
 
 $$f_x = 2xy + 3y^3$$
 
-**For $f_y$**, treat $x$ as a constant. Now $x^2y$ differentiates to $x^2$, $3xy^3$
+**2. For $f_y$**, treat $x$ as a constant. Now $x^2y$ differentiates to $x^2$, $3xy^3$
 differentiates to $9xy^2$, and $-2y$ differentiates to $-2$:
 
 $$f_y = x^2 + 9xy^2 - 2$$
 
-**At $(2,1)$:**
+**3. At $(2,1)$:**
 
 $$f_x = 2(2)(1) + 3(1)^3 = 4 + 3 = \boxed{7}$$
 $$f_y = (2)^2 + 9(2)(1)^2 - 2 = 4 + 18 - 2 = \boxed{20}$$
 
 **Interpretation.** At the point $(2,1)$ the surface is nearly three times steeper
-in the $y$-direction than in the $x$-direction. Moving one unit in $y$ changes $f$
-by roughly 20; moving one unit in $x$ changes it by roughly 7.
+in the $y$-direction than in the $x$-direction. These are **local rates**.
+For a sufficiently small increment, $\Delta f\approx20\Delta y$ with $x$ fixed,
+or $\Delta f\approx7\Delta x$ with $y$ fixed. A whole-unit step need not be small.
+
+**Check.** With $y=1$, $f(2.001,1)-f(2,1)=0.007001$,
+close to $7(0.001)=0.007$. With $x=2$,
+$f(2,1.001)-f(2,1)=0.020018006$, close to $20(0.001)=0.020$.
+These finite changes check the local slopes without claiming exact equality.
+
 
 ### Worked Example 2 — Product and Chain Rules Still Apply
 
@@ -250,20 +262,27 @@ by roughly 20; moving one unit in $x$ changes it by roughly 7.
 
 **Find.** $f_x$ and $f_y$.
 
+**Approach.** Use the power rule on the polynomial and the single-variable chain rule on the exponential, holding the other input fixed.
+
 **Solution.**
 
-**$f_x$**, with $y$ frozen. The second term needs the chain rule: the inner
+**1. $f_x$**, with $y$ frozen. The second term needs the chain rule: the inner
 function is $xy$, whose derivative with respect to $x$ is $y$:
 
 $$f_x = 3x^2y^2 + y\,e^{xy}$$
 
-**$f_y$**, with $x$ frozen. Now the inner derivative is $x$:
+**2. $f_y$**, with $x$ frozen. Now the inner derivative is $x$:
 
 $$f_y = 2x^3y + x\,e^{xy}$$
 
 Note how the frozen variable appears as the chain factor. That is the most common
 place to slip: differentiating $e^{xy}$ with respect to $x$ gives $y e^{xy}$, not
 $e^{xy}$ and not $xe^{xy}$.
+
+**Check.** At $y=0$, the function is the constant 1 as $x$ varies,
+so $f_x(x,0)=0$, which the formula gives. At $x=0$, it is the constant
+1 as $y$ varies, and the formula gives $f_y(0,y)=0$ as required.
+
 
 ### Higher-order and mixed partials
 
@@ -276,10 +295,10 @@ $$f_{xy} = \frac{\partial}{\partial y}\left(\frac{\partial f}{\partial x}\right)
 
 The last two are the **mixed partials**, and there is a theorem about them:
 
-> **Equality of mixed partials.** If the second partials are continuous, then
+> **Equality of mixed partials.** If the second partials are continuous in a neighborhood of the point, then
 > $$\boxed{f_{xy} = f_{yx}}$$
 
-The order of differentiation does not matter. This is not obvious — there is no
+Under that condition, the order of differentiation does not matter. There is no
 reason on inspection why differentiating in $x$ then $y$ should agree with $y$ then
 $x$ — and it is enormously convenient. It also gives you a free check: compute both
 and confirm they agree.
@@ -288,197 +307,265 @@ and confirm they agree.
 
 **Given.** $f(x,y) = x^3y^2 + e^{xy}$, continuing Worked Example 2.
 
-**Verify** that $f_{xy} = f_{yx}$.
+**Find.** Both mixed partials and determine whether they agree.
+
+**Approach.** Differentiate each first partial in the other variable. Use the product rule on the variable multiplying the exponential.
 
 **Solution.**
 
-From Worked Example 2, $f_x = 3x^2y^2 + ye^{xy}$. Differentiate with respect to
+**1. Differentiate $f_x$ in $y$.** From Worked Example 2, $f_x = 3x^2y^2 + ye^{xy}$. Differentiate with respect to
 $y$, using the product rule on the second term:
 
 $$f_{xy} = 6x^2y + \left[e^{xy} + y\cdot xe^{xy}\right] = 6x^2y + e^{xy}(1 + xy)$$
 
-And $f_y = 2x^3y + xe^{xy}$. Differentiate with respect to $x$:
+**2. Differentiate $f_y$ in $x$.** And $f_y = 2x^3y + xe^{xy}$. Differentiate with respect to $x$:
 
 $$f_{yx} = 6x^2y + \left[e^{xy} + x\cdot ye^{xy}\right] = 6x^2y + e^{xy}(1 + xy)$$
 
 $$\boxed{f_{xy} = f_{yx} \;\checkmark}$$
 
-Identical, as the theorem promised. When they do **not** agree, you have made an
-algebra error — the theorem holds for essentially every function you will meet in
-engineering.
+Here the polynomial and exponential terms have continuous derivatives
+everywhere, so the theorem applies. If the formulas disagree in this example,
+check the algebra. For a piecewise or singular function, check the continuity
+condition before assuming the partials must agree.
+
+**Check.** Both independent routes give the same expression.
+At $(0,0)$, each evaluates to 1; the polynomial contributions vanish and
+the product-rule derivative of the exponential contribution remains.
 
 ---
 
+
 ## 23.3 The Total Differential and Error Propagation
 
-This is the section that earns the chapter.
+Apprentice, this is where a collection of derivatives becomes a decision about
+measurements. Each input has a sensitivity and a possible change. Multiplying
+those two quantities puts every contribution into the output's units.
 
 ### The total differential
 
-Chapter 01-18 gave the single-variable differential $dy = f'(x)\,dx$: a small input
-change times the sensitivity gives the output change. With several inputs, each
-contributes its own term:
+Assume $f$ is differentiable near the nominal inputs. Continuous first partials
+in a neighborhood are a sufficient condition. Merely having two partials at one
+point is not enough to guarantee a tangent plane.
 
-$$\boxed{df = \frac{\partial f}{\partial x}dx + \frac{\partial f}{\partial y}dy + \frac{\partial f}{\partial z}dz + \cdots}$$
+The [single-variable linearization from 01-18](01-18-Applications-of-the-Derivative.md)
+uses sensitivity times a small input change. For two inputs, change the first
+while holding the second fixed, then change the second. To first order the
+contributions add:
 
-Read it as an accounting statement. Each input's change is multiplied by that
-input's sensitivity, and the contributions add.
+$$\Delta f\approx f_x(a,b)\Delta x+f_y(a,b)\Delta y.$$
+
+The linear expression on the right defines the **total differential**:
+
+$$\boxed{df=f_x\,dx+f_y\,dy+f_z\,dz+\cdots.}$$
+
+Evaluate the partials at the nominal point. The equation defining $df$ is exact;
+using $df$ to estimate the finite change $\Delta f$ is an approximation.
 
 ### Tangent plane and the first-order Taylor polynomial
 
-Truncating there gives the **tangent plane** at $(a,b)$:
+At $(a,b)$, the **tangent plane** has the correct height and the correct slope in
+each coordinate direction:
 
-$$\boxed{z = f(a,b) + f_x(a,b)(x-a) + f_y(a,b)(y-b)}$$
+$$\boxed{z=f(a,b)+f_x(a,b)(x-a)+f_y(a,b)(y-b).}$$
 
-Compare with the degree-1 Taylor polynomial from Chapter 01-22:
-$P_1(x) = f(a) + f'(a)(x-a)$. Same structure, one term per variable. The tangent
-plane **is** the first-order multivariable Taylor expansion, and "linearize about
-the operating point" means exactly this in a multi-input system. Everything
-Chapter 01-22 said about truncation error applies: the approximation is local, and
-its error grows as the square of the departure from $(a,b)$.
+Compare this with the degree-1 Taylor polynomial in
+[01-22 Infinite Series and Taylor Expansions](01-22-Infinite-Series-and-Taylor-Expansions.md).
+There is now one first-order term per input. If the second partials remain bounded
+near the point, the neglected terms are at most of second order in a small
+displacement. For two dimensionless inputs, with continuous second partials, the leading omitted expression (evaluated at the base point) is
 
-![FIG-01-23-003: A curved surface z = f(x,y) with a point P marked on it, and a flat tangent plane drawn touching the surface at P and extending outward. Near P the plane and surface are drawn nearly coincident; toward the edges of the plane a vertical gap opens between the plane and the surface, bracketed and labeled "error grows with distance from P — second order". Two arrows along the plane from P are labeled dx and dy, and a vertical arrow shows the resulting df built from f_x·dx plus f_y·dy.](../figures/FIG-01-23-003-tangent-plane.png)
+$$\frac12\left[f_{xx}(\Delta x)^2+2f_{xy}\Delta x\Delta y+f_{yy}(\Delta y)^2\right].$$
+
+This explains the locality warning: doubling a small step generally makes its
+leading quadratic error four times as large. Some directions or functions have
+cancellations, and a function consisting only of a constant and linear terms has zero error. “Second order” does not mean
+that every error is exactly proportional to distance squared.
+
+![FIG-01-23-003: A smooth curved surface and its tangent plane meet at a marked point P. The plane matches the surface closely near P and separates farther away. Horizontal input increments Δx and Δy identify a nearby point; the plane's output change df is distinguished from the true surface change Δf. A vertical bracket marks the approximation error, described as second order for bounded second partials and sufficiently small steps.](../figures/FIG-01-23-003-tangent-plane.png)
+
+### Worked Example 4 — A Tangent Plane You Can Check
+
+**Given.** The dimensionless surface $f(x,y)=x^2+xy+y^2$ near $(1,2)$.
+
+**Find.** Its tangent plane and an estimate of $f(1.02,1.97)$.
+
+**Approach.** Evaluate the output and both slopes at the base point. Apply the
+small input changes to those slopes, then compare with direct substitution.
+
+**Solution.**
+
+1. Evaluate the base value and slopes:
+
+   $$f(1,2)=7,\qquad f_x=2x+y=4,\qquad f_y=x+2y=5.$$
+
+2. Write the plane using those fixed slopes:
+
+   $$z=7+4(x-1)+5(y-2).$$
+
+3. Insert $\Delta x=0.02$ and $\Delta y=-0.03$:
+
+   $$df=4(0.02)+5(-0.03)=-0.07,\qquad \boxed{f(1.02,1.97)\approx6.93.}$$
+
+**Check.** Direct substitution gives $1.0404+2.0094+3.8809=6.9307$.
+The error is $0.0007$, exactly the omitted quadratic contribution
+$(0.02)^2+(0.02)(-0.03)+(-0.03)^2$. The decrease has the expected sign: the
+negative $y$ contribution exceeds the positive $x$ contribution.
 
 ### Error propagation
 
-Now interpret $dx$, $dy$ as **measurement uncertainties** rather than deliberate
-changes. Taking absolute values so that errors accumulate rather than cancel gives
-the worst-case bound:
+Use the [measurement-error idea from 01-18](01-18-Applications-of-the-Derivative.md)
+with several inputs. Let $\varepsilon_x,\varepsilon_y$ be nonnegative bounds on
+the input deviations: $|dx|\le\varepsilon_x$ and $|dy|\le\varepsilon_y$.
+The triangle inequality gives a bound for the **linearized** output change:
 
-$$\boxed{\lvert df\rvert \le \left\lvert\frac{\partial f}{\partial x}\right\rvert\lvert dx\rvert + \left\lvert\frac{\partial f}{\partial y}\right\rvert\lvert dy\rvert + \cdots}$$
+$$|df|\le |f_x|\varepsilon_x+|f_y|\varepsilon_y+\cdots.$$
 
-Each term tells you how much of the output uncertainty came from each input, which
-is the genuinely useful part: it tells you which instrument to upgrade.
+Define the first-order uncertainty estimate by
+
+$$\boxed{\varepsilon_f^{(1)}=\sum_i\left|\frac{\partial f}{\partial x_i}\right|\varepsilon_{x_i}.}$$
+
+It assumes the input deviations can combine in the most unfavorable direction.
+No probability distribution is assumed. For a nonlinear function this is **not
+automatically a rigorous bound on the finite error**: the derivatives vary over
+the tolerance range and the neglected terms may increase the true deviation.
+If a guaranteed tolerance is required, evaluate attainable extremes or bound the
+derivatives over the entire allowed input range.
+
+Each summand has output units and estimates that input's contribution. Divide it
+by $\varepsilon_f^{(1)}$ to obtain its share. This is how you decide which
+measurement improvement would help most.
 
 ### The power-law shortcut
 
-For a function that is a **product of powers**,
+Assume the inputs are nonzero, remain in a domain where the real powers are
+differentiable, and have small relative uncertainties. Let the coefficient be
+exact in the supplied model:
 
-$$f = C\,x^{a}y^{b}z^{c}$$
+$$f=Cx^py^qz^s.$$
 
-the relative uncertainties combine with the exponents as weights:
+Differentiate with respect to one input at a time and divide by $f$:
 
-$$\boxed{\frac{\lvert df\rvert}{f} \le \lvert a\rvert\frac{\lvert dx\rvert}{x} + \lvert b\rvert\frac{\lvert dy\rvert}{y} + \lvert c\rvert\frac{\lvert dz\rvert}{z}}$$
+$$\frac{f_x}{f}=\frac{p}{x},\qquad
+\frac{f_y}{f}=\frac{q}{y},\qquad
+\frac{f_z}{f}=\frac{s}{z}.$$
 
-This is the multivariable version of the rule from Chapter 01-18, and Chapter 01-22
-showed where it comes from — the first-order binomial expansion of
-$(1+\varepsilon)^a$. It saves a great deal of work, and it makes the structure
-obvious: **an exponent of 2 doubles that input's contribution**, an exponent of
-$\frac{1}{2}$ halves it, and a negative exponent contributes just as much as a
-positive one of the same size.
+Substitution into the differential gives
 
-### Worked Example 4 — Volume of a Cylinder
+$$\frac{df}{f}=p\frac{dx}{x}+q\frac{dy}{y}+s\frac{dz}{z}.$$
 
-**Given.** A cylinder measured as $r = 25.0 \pm 0.3$ mm and $h = 80.0 \pm 0.5$ mm.
+Take magnitudes for the uncertainty estimate:
 
-**Find.** The volume and its uncertainty, by the total differential and by the
-power-law shortcut. Identify which measurement dominates.
+$$\boxed{\frac{\varepsilon_f^{(1)}}{|f_0|}
+=|p|\frac{\varepsilon_x}{|x|}+|q|\frac{\varepsilon_y}{|y|}
++|s|\frac{\varepsilon_z}{|z|}.}$$
 
-**Solution.**
+An exponent of 2 doubles that input's relative contribution; an exponent of
+$-1$ has the same uncertainty weight as $+1$. The signs still matter for a
+known directional change. If the coefficient $C$ also has uncertainty, add its
+relative contribution. Do not use the shortcut across zero or outside the model's domain.
 
-$$V = \pi r^2 h = \pi(25.0)^2(80.0) = \pi(625)(80.0) = \pi(50{,}000) = 157{,}080 \text{ mm}^3$$
+### Worked Example 5 — Volume of a Cylinder
 
-**By the total differential.**
+**Given.** $r=25.0\pm0.3\ \mathrm{mm}$ and $h=80.0\pm0.5\ \mathrm{mm}$.
+Use $V=\pi r^2h$; the stated input tolerances may vary independently.
 
-$$\frac{\partial V}{\partial r} = 2\pi rh = 2\pi(25.0)(80.0) = 4000\pi = 12{,}566 \text{ mm}^2$$
-$$\frac{\partial V}{\partial h} = \pi r^2 = 625\pi = 1963.5 \text{ mm}^2$$
+**Find.** The volume, its first-order uncertainty estimate, and the dominant input.
 
-$$\lvert dV\rvert \le 12{,}566(0.3) + 1963.5(0.5) = 3769.9 + 981.7 = 4751.7 \text{ mm}^3$$
-
-$$\boxed{V = 157{,}100 \pm 4800 \text{ mm}^3}$$
-
-**Relative uncertainty.**
-
-$$\frac{4751.7}{157{,}080} = 0.03025 = 3.03\%$$
-
-**By the power-law shortcut.** $V = \pi r^2 h$ has exponents 2 on $r$ and 1 on $h$:
-
-$$\frac{dV}{V} \le 2\left(\frac{0.3}{25.0}\right) + 1\left(\frac{0.5}{80.0}\right) = 2(0.01200) + 0.00625$$
-
-$$= 0.02400 + 0.00625 = 0.03025 = 3.03\% \;\checkmark$$
-
-Identical, in a fraction of the work.
-
-**Which measurement dominates?**
-
-| Input | Relative uncertainty | Weighted contribution | Share of total |
-|---|---|---|---|
-| $r$ | $1.20\%$ | $2.40\%$ | $79.3\%$ |
-| $h$ | $0.63\%$ | $0.63\%$ | $20.7\%$ |
-
-**Interpretation, and this is the engineering content.** The radius is measured
-*better* than the height in relative terms — 1.2% against 0.63%... no, read it
-again: the radius is measured *worse*, 1.20% against 0.63%. And the squared
-dependence then doubles its weight, so the radius accounts for nearly 80% of the
-output uncertainty.
-
-The design conclusion follows immediately: **improving the height measurement is
-nearly pointless.** Even a perfect height measurement leaves 2.40% uncertainty in
-the volume. Halving the radius uncertainty, by contrast, cuts the total to 1.83%.
-That kind of ranking is why error propagation is done at all — not to decorate a
-result with an error bar, but to decide where to spend money.
-
-### Worked Example 5 — Flow Rate from Diameter and Velocity
-
-**Given.** Flow in a circular pipe, $Q = \frac{\pi D^2}{4}v$, with
-$D = 150 \pm 1$ mm and $v = 2.40 \pm 0.05$ m/s.
-
-**Find.** $Q$ and its uncertainty, and the contribution of each input.
+**Approach.** Compute nominal volume, form each absolute sensitivity contribution,
+and compare with the power-law shortcut. Check the finite upper endpoint.
 
 **Solution.**
 
-$$Q = \frac{\pi(0.150)^2}{4}(2.40) = \frac{\pi(0.0225)}{4}(2.40) = \frac{\pi(0.0540)}{4} = 0.042412 \text{ m}^3/\text{s}$$
+1. Compute the nominal volume:
 
-$$Q = 42.4 \text{ L/s}$$
+   $$V_0=\pi(25.0\ \mathrm{mm})^2(80.0\ \mathrm{mm})
+   =157079.63\ \mathrm{mm^3}.$$
 
-**Power-law shortcut**, exponents 2 on $D$ and 1 on $v$:
+2. Compute the partials and their tolerance contributions:
 
-$$\frac{dQ}{Q} \le 2\left(\frac{1}{150}\right) + \frac{0.05}{2.40} = 2(0.006667) + 0.020833$$
+   $$V_r=2\pi rh=12566.37\ \mathrm{mm^2},\qquad
+   V_h=\pi r^2=1963.50\ \mathrm{mm^2},$$
 
-$$= 0.013333 + 0.020833 = 0.034167 = 3.42\%$$
+   $$\varepsilon_V^{(1)}=(12566.37\ \mathrm{mm^2})(0.3\ \mathrm{mm})
+   +(1963.50\ \mathrm{mm^2})(0.5\ \mathrm{mm})
+   =4751.66\ \mathrm{mm^3}.$$
 
-$$dQ = 0.034167(42.4) = 1.45 \text{ L/s}$$
+3. Verify the relative estimate using the exponents:
 
-$$\boxed{Q = 42.4 \pm 1.4 \text{ L/s}}$$
+   $$\frac{\varepsilon_V^{(1)}}{V_0}=2\frac{0.3}{25.0}+\frac{0.5}{80.0}
+   =0.03025=3.025\%.$$
 
-| Input | Relative uncertainty | Weighted | Share |
+   Report the approximate first-order result as
+   $\boxed{V\approx(157100\pm4800)\ \mathrm{mm^3}}$.
+
+| Input | Relative tolerance | Weighted contribution | Share of linearized total |
 |---|---|---|---|
-| $D$ | $0.67\%$ | $1.33\%$ | $39.0\%$ |
-| $v$ | $2.08\%$ | $2.08\%$ | $61.0\%$ |
+| Radius | 1.20% | 2.40% | 79.3% |
+| Height | 0.625% | 0.625% | 20.7% |
 
-**Interpretation.** Here the ranking reverses from Worked Example 4. The diameter
-is measured far more precisely — 0.67% against 2.08% — and even after the squaring
-doubles its weight, the velocity still dominates. Buy a better flowmeter, not a
-better calliper.
+The radius measurement is less precise in relative terms and has twice the
+exponent. Halving its tolerance reduces the estimate to
+$1.20\%+0.625\%=1.825\%$. A perfect height measurement alone leaves 2.40%.
+Improve the radius first if the measurement cost is comparable.
 
-That the two examples come out opposite ways is the point. **You cannot rank the
-inputs by inspection.** The exponent matters and the measurement quality matters,
-and only computing both tells you which wins.
+**Check.** The exact upper endpoint is $\pi(25.3)^2(80.5)$, which is **3.05449%**
+above nominal. This is slightly larger than 3.025%, as the positive higher-order
+terms predict. The differential estimate is useful, but the endpoint calculation
+is the stronger tolerance check.
+
+### Worked Example 6 — Flow Rate from Diameter and Velocity
+
+**Given.** The supplied flow model is $Q_v=(\pi d_p^2/4)v$, with
+$d_p=150\pm1\ \mathrm{mm}$ and average speed $v=2.40\pm0.05\ \mathrm{m/s}$.
+
+**Find.** The flow rate, first-order uncertainty, and each input's contribution.
+
+**Approach.** Convert diameter to metres before computing flow. Weight its
+relative tolerance by 2 and the speed's by 1.
+
+**Solution.**
+
+1. Compute nominal flow:
+
+   $$Q_{v,0}=\frac{\pi(0.150\ \mathrm m)^2}{4}(2.40\ \mathrm{m/s})
+   =0.0424115\ \mathrm{m^3/s}=42.4115\ \mathrm{L/s}.$$
+
+2. Compute relative and absolute first-order uncertainty:
+
+   $$\frac{\varepsilon_{Q_v}^{(1)}}{Q_{v,0}}
+   =2\frac{1}{150}+\frac{0.05}{2.40}
+   =0.0341667=3.41667\%,$$
+
+   $$\varepsilon_{Q_v}^{(1)}=1.4491\ \mathrm{L/s},\qquad
+   \boxed{Q_v\approx(42.4\pm1.4)\ \mathrm{L/s}.}$$
+
+3. Compare the weighted contributions: diameter contributes 1.33333 percentage
+   points, or 39.0% of the total; speed contributes 2.08333 points, or 61.0%.
+
+Here speed dominates even though diameter is squared. The exponent and the
+measurement quality must both be included.
+
+**Check.** Area times speed has units $\mathrm{m^2}\,\mathrm{m/s}
+=\mathrm{m^3/s}$. The direct upper endpoint, using $0.151\ \mathrm m$ and
+$2.45\ \mathrm{m/s}$, is 3.44898% above nominal, close to and slightly above
+the first-order estimate.
 
 > ---
 > **Mentor's Margin**
 >
-> Two things about this section that will serve you beyond the exam.
+> “Worst case” needs a qualifier here: worst case **for the first-order model**.
+> A nominal slope does not know how much the slope changes farther away. If the
+> tolerance is large, the model is strongly curved, or the nominal derivative
+> vanishes, check the finite range directly.
 >
-> **First, the total differential gives you the worst case.** Taking absolute
-> values assumes every error happens to push the same way, which is conservative
-> and sometimes needlessly so. Independent random errors partially cancel, and the
-> statistically correct combination is the root-sum-square:
+> For example, $f(x)=x^2$ has zero derivative at zero. A first-order calculation
+> predicts zero change there, yet an input error of size $\varepsilon_x$ can
+> produce an output change of $\varepsilon_x^2$. The missing effect is second order.
 >
-> $$\frac{dQ}{Q} \approx \sqrt{(1.333\%)^2 + (2.083\%)^2} = \sqrt{1.777 + 4.339} = 2.47\%$$
->
-> against the 3.42% worst case. Which to report depends on whether the
-> uncertainties are independent random errors or possible systematic biases.
-> Chapter 01-40 develops the statistical version properly; the differential method
-> here is the one to use when you need a bound you can defend without assuming
-> anything about the error distributions. **Nothing in this chapter depends on that
-> later material** — I mention it so you know the 3.42% is a ceiling, not an
-> estimate.
->
-> **Second, this is the most portable thing in Tier 1C.** Every discipline exam
-> has problems where a quantity is computed from several measured inputs, and the
-> power-law rule handles a large fraction of them in one line. Memorize it. It is
-> not in the Handbook in the form you need it.
+> Statistical uncertainty is a different question. A stated tolerance is not
+> automatically a standard deviation, and averaging assumptions do not belong in
+> this calculation unless the problem supplies them.
 >
 > ---
 
@@ -486,47 +573,62 @@ and only computing both tells you which wins.
 
 ## 23.4 The Multivariable Chain Rule
 
-When the inputs themselves depend on a further variable — usually time — the
-total rate of change collects all the paths:
+Suppose several inputs change with time. Each contributes its own rate to the
+output, and those contributions can oppose one another. Keep the signs.
 
-$$\boxed{\frac{df}{dt} = \frac{\partial f}{\partial x}\frac{dx}{dt} + \frac{\partial f}{\partial y}\frac{dy}{dt} + \cdots}$$
+Assume $f$ is differentiable in its inputs and the inputs are differentiable
+functions of time. Divide the small-change relation by $\Delta t$ and take the
+limit. Each input change per unit time becomes its derivative:
 
-This is the total differential divided through by $dt$, and it is the multivariable
-generalization of the related-rates method from Chapter 01-18. Note the notation
-discipline: the left side is an ordinary $d$, because $f$ now depends on the single
-variable $t$; the partials on the right stay curly.
+$$\boxed{\frac{df}{dt}=
+\frac{\partial f}{\partial x}\frac{dx}{dt}
++\frac{\partial f}{\partial y}\frac{dy}{dt}
++\frac{\partial f}{\partial z}\frac{dz}{dt}.}$$
 
-### Worked Example 6 — Competing Rates
+This **multivariable chain rule** extends the related-rates method from
+[01-18 Applications of the Derivative](01-18-Applications-of-the-Derivative.md).
+The left side uses ordinary $d$ because the path has one independent variable,
+$t$. The partials on the right describe separate input sensitivities.
+If the model also depends explicitly on time, add $\partial f/\partial t$.
 
-**Given.** A resistor dissipates $P = \frac{V^2}{R}$. At a given instant
-$V = 12.0$ V and is rising at $0.15$ V/s, while $R = 48.0\ \Omega$ and is rising at
-$0.60\ \Omega$/s as the resistor heats.
+### Worked Example 7 — Competing Rates
 
-**Find.** $\frac{dP}{dt}$ and interpret it.
+**Given.** A supplied resistor model is $P_w=U_V^2/R_e$. At one instant,
+$U_V=12.0\ \mathrm V$, $dU_V/dt=0.15\ \mathrm{V/s}$,
+$R_e=48.0\ \Omega$, and $dR_e/dt=0.60\ \Omega/\mathrm s$.
+
+**Find.** The instantaneous power rate.
+
+**Approach.** Differentiate with respect to each input, multiply by that input's
+signed time rate, and add. Increasing resistance lowers power at fixed voltage.
 
 **Solution.**
 
-**Partials.**
+1. Evaluate the two sensitivities:
 
-$$\frac{\partial P}{\partial V} = \frac{2V}{R} = \frac{2(12.0)}{48.0} = 0.500 \text{ W/V}$$
+   $$\frac{\partial P_w}{\partial U_V}=\frac{2U_V}{R_e}
+   =0.500\ \mathrm{W/V},\qquad
+   \frac{\partial P_w}{\partial R_e}=-\frac{U_V^2}{R_e^2}
+   =-0.0625\ \mathrm{W}/\Omega.$$
 
-$$\frac{\partial P}{\partial R} = -\frac{V^2}{R^2} = -\frac{144}{2304} = -0.0625 \text{ W}/\Omega$$
+2. Combine the rates:
 
-**Chain rule.**
+   $$\frac{dP_w}{dt}=(0.500\ \mathrm{W/V})(0.15\ \mathrm{V/s})
+   +(-0.0625\ \mathrm{W}/\Omega)(0.60\ \Omega/\mathrm s)
+   =\boxed{+0.0375\ \mathrm{W/s}}.$$
 
-$$\frac{dP}{dt} = 0.500(0.15) + (-0.0625)(0.60) = 0.0750 - 0.0375$$
+Voltage contributes $+0.0750\ \mathrm{W/s}$; resistance contributes
+$-0.0375\ \mathrm{W/s}$. The net power is increasing.
 
-$$= \boxed{+0.0375 \text{ W/s}}$$
+**Check.** Nominal power is $3.00\ \mathrm W$. The signed relative-rate form gives
 
-**Interpretation.** Two effects oppose each other. Rising voltage pushes power up
-at $0.075$ W/s; rising resistance pulls it down at $0.0375$ W/s. The voltage wins
-by a factor of two, so power is rising — but at half the rate the voltage change
-alone would suggest.
+$$\frac{1}{P_w}\frac{dP_w}{dt}
+=2\frac{0.15}{12.0}-\frac{0.60}{48.0}
+=0.0125\ \mathrm{s^{-1}},$$
 
-The current power is $P = \frac{144}{48} = 3.00$ W, so the power is climbing at
-$1.25\%$ per second. Note that the negative sign on
-$\frac{\partial P}{\partial R}$ was essential; dropping it would have given
-$0.1125$ W/s, three times too large and in a way that no units check would catch.
+and $(3.00\ \mathrm W)(0.0125\ \mathrm{s^{-1}})=0.0375\ \mathrm{W/s}$.
+Taking absolute values would instead give $0.1125\ \mathrm{W/s}$, which answers
+the wrong question.
 
 ---
 
@@ -534,11 +636,19 @@ $0.1125$ W/s, three times too large and in a way that no units check would catch
 
 ### The gradient
 
-Collect the partials of a scalar field into a vector:
+A temperature map tells you the uphill slope in each coordinate direction.
+To combine those slopes into one directional instruction, collect the partials
+into a vector. The **del operator**, $\nabla$, is the shorthand vector of
+Cartesian differentiation operators:
+
+$$\nabla=\left\langle\frac{\partial}{\partial x},
+\frac{\partial}{\partial y},\frac{\partial}{\partial z}\right\rangle.$$
+
+Applied to a differentiable scalar field, it produces the **gradient**:
 
 $$\boxed{\nabla f = \frac{\partial f}{\partial x}\hat{\imath} + \frac{\partial f}{\partial y}\hat{\jmath} + \frac{\partial f}{\partial z}\hat{k}}$$
 
-The gradient has two properties, and together they are why it matters:
+Where the gradient is nonzero, it has two properties:
 
 **1. It points in the direction of steepest increase.** Of all the directions you
 could move from a point, $\nabla f$ is the one along which $f$ grows fastest.
@@ -546,38 +656,54 @@ could move from a point, $\nabla f$ is the one along which $f$ grows fastest.
 **2. Its magnitude is that maximum rate.** $\lvert\nabla f\rvert$ is the slope in
 the steepest direction. No direction gives a larger rate of change.
 
-A consequence worth stating separately: **the gradient is perpendicular to the
-level curves**. Moving along a contour, $f$ does not change at all, so the
-direction of maximum change must be at right angles to it. That is why a contour
-map lets you read gradients by eye — steepest descent runs perpendicular to the
-contour lines, and the closer the contours, the larger $\lvert\nabla f\rvert$.
+To justify both statements, use the
+[dot product from 01-13](01-13-Vectors-and-Vector-Operations.md).
+A small displacement of length $d\ell$ in a unit direction $\mathbf u$ has
+coordinate increments $\mathbf u\,d\ell$. Substituting into $df$ gives
+$df=(\nabla f\cdot\mathbf u)d\ell$.
+The dot product is $|\nabla f|\cos\theta$; its largest value occurs at $\theta=0$.
 
-![FIG-01-23-004: A contour map of a scalar field with five nested irregular closed contours labeled with increasing values, tightly spaced on the left side and widely spaced on the right. At six points around the map, gradient vectors are drawn as arrows, each perpendicular to the local contour and pointing toward the higher-valued contour. The arrows on the tightly spaced left side are drawn long and labeled "large |∇f| — steep"; those on the widely spaced right side are drawn short and labeled "small |∇f| — gentle". A note reads "gradient ⊥ contours, pointing uphill".](../figures/FIG-01-23-004-gradient-contours.png)
+The gradient is also **perpendicular to a regular level curve**. Along such a
+curve, $df=0$, so its tangent direction has zero dot product with $\nabla f$.
+This proves perpendicularity where the gradient is nonzero. Compare slopes by
+contour spacing only when the contour value increments are equal.
+
+If $\nabla f=\mathbf0$, every first-order directional derivative is zero.
+There is then no unique steepest first-order direction. Higher-order behavior
+still matters, as the bowl and saddle examples in §23.7 will show.
+
+![FIG-01-23-004: A contour map of a scalar field with five nested irregular closed contours labeled with equally spaced increasing values, tightly spaced on the left side and widely spaced on the right. At six points around the map, gradient vectors are drawn as arrows, each perpendicular to the local contour and pointing toward the higher-valued contour. The arrows on the tightly spaced left side are drawn long and labeled "large |∇f| — steep"; those on the widely spaced right side are drawn short and labeled "small |∇f| — gentle". A note reads "gradient ⊥ contours, pointing uphill".](../figures/FIG-01-23-004-gradient-contours.png)
 
 ### Why engineers care
 
-Nearly every transport law in engineering says that something flows **down a
-gradient**, at a rate proportional to the gradient's magnitude:
+Here is a supplied engineering model, with the physical quantities defined so
+that no heat-transfer prerequisite is needed. Let $T$ be temperature,
+$\mathbf q$ the heat crossing a unit area per unit time, and $k>0$ a constant
+thermal conductivity. In a material with the same conductivity in every direction,
+Fourier's conduction model is
 
-| Law | Statement | Field |
-|---|---|---|
-| Fourier's law | $\mathbf{q} = -k\nabla T$ | heat flux down a temperature gradient |
-| Fick's law | $\mathbf{J} = -D\nabla C$ | mass flux down a concentration gradient |
-| Darcy's law | $\mathbf{v} = -K\nabla h$ | groundwater flow down a head gradient |
-| Ohm's law (field form) | $\mathbf{E} = -\nabla V$ | electric field down a potential gradient |
+$$\mathbf q=-k\nabla T.$$
 
-The minus sign in each is the physics: things flow from high to low, while the
-gradient points from low to high. Memorize the pattern and four laws become one.
+The gradient points toward higher temperature. The minus sign makes the modeled
+heat flux point toward lower temperature. With $\nabla T$ in $\mathrm{K/m}$ and
+$k$ in $\mathrm{W/(m\cdot K)}$, the flux has units $\mathrm{W/m^2}$.
+A temperature difference of $1\ \mathrm K$ equals a difference of $1\,^\circ\mathrm C$.
+
+The mathematics is the lesson here: a vector made from local sensitivities can
+describe both a direction and a rate. The physical validity and limitations of a
+particular transport model must be established separately.
+
+---
 
 ### Directional derivatives
 
 To find the rate of change in an arbitrary direction, project the gradient onto
-that direction using the dot product from Chapter 01-13:
+that direction using the dot product from [01-13 Vectors and Vector Operations](01-13-Vectors-and-Vector-Operations.md):
 
 $$\boxed{D_{\mathbf{u}}f = \nabla f\cdot\mathbf{u} \qquad \text{where } \lvert\mathbf{u}\rvert = 1}$$
 
 The unit requirement is not optional. If $\mathbf{u}$ is not normalized, the answer
-is scaled by $\lvert\mathbf{u}\rvert$ and is simply wrong.
+is scaled by $\lvert\mathbf{u}\rvert$ and is not the rate per unit distance.
 
 Since $\nabla f\cdot\mathbf{u} = \lvert\nabla f\rvert\cos\theta$, the directional
 derivative ranges from $+\lvert\nabla f\rvert$ (straight uphill) through zero
@@ -585,23 +711,25 @@ derivative ranges from $+\lvert\nabla f\rvert$ (straight uphill) through zero
 free check: **any directional derivative must have magnitude no greater than
 $\lvert\nabla f\rvert$.**
 
-### Worked Example 7 — Gradient and Directional Derivative
+### Worked Example 8 — Gradient and Directional Derivative
 
 **Given.** $f(x,y) = x^2 + 3xy - y^2$ at the point $(1, 2)$.
 
 **Find.** (a) $\nabla f$, (b) the maximum rate of increase and its direction,
 (c) the rate of change toward the point $(4, 6)$.
 
+**Approach.** Compute the gradient first. Its magnitude gives the maximum rate; normalize the displacement before taking the requested dot product.
+
 **Solution.**
 
-**(a)**
+**1. Gradient.**
 
 $$f_x = 2x + 3y \implies f_x(1,2) = 2 + 6 = 8$$
 $$f_y = 3x - 2y \implies f_y(1,2) = 3 - 4 = -1$$
 
 $$\boxed{\nabla f = 8\hat{\imath} - \hat{\jmath}}$$
 
-**(b)**
+**2. Maximum rate and direction.**
 
 $$\lvert\nabla f\rvert = \sqrt{64 + 1} = \sqrt{65} = \boxed{8.06}$$
 
@@ -611,7 +739,7 @@ $$\hat{\mathbf{u}}_{\max} = \frac{8\hat{\imath} - \hat{\jmath}}{8.062} = \boxed{
 
 Almost due $+x$, tilted slightly toward $-y$.
 
-**(c)** The direction from $(1,2)$ to $(4,6)$ is $\langle 3, 4\rangle$, with
+**3. Requested direction.** The direction from $(1,2)$ to $(4,6)$ is $\langle 3, 4\rangle$, with
 magnitude $\sqrt{9+16} = 5$. Normalize:
 
 $$\mathbf{u} = \left\langle 0.600,\; 0.800\right\rangle$$
@@ -630,7 +758,9 @@ $\cos^{-1}(4.00/8.06) = \cos^{-1}(0.496) = 60.3°$ ✓
 
 ## 23.6 Divergence and Curl
 
-Now the operators that act on **vector** fields. Write
+A **vector field** assigns a vector to each position: a velocity arrow at every
+point in a moving fluid is one example. Its components are ordinary scalar
+functions. Write
 
 $$\mathbf{F} = F_x\hat{\imath} + F_y\hat{\jmath} + F_z\hat{k}$$
 
@@ -638,8 +768,18 @@ $$\mathbf{F} = F_x\hat{\imath} + F_y\hat{\jmath} + F_z\hat{k}$$
 
 $$\boxed{\nabla\cdot\mathbf{F} = \frac{\partial F_x}{\partial x} + \frac{\partial F_y}{\partial y} + \frac{\partial F_z}{\partial z}}$$
 
-Divergence measures **net outflow per unit volume** at a point. Picture a tiny box
-around the point and ask whether more field lines leave than enter.
+Divergence measures local **net outward flux per unit volume**. Here flux means
+the field component normal to a face, multiplied by that face's area. For velocity,
+that product is a volume flow rate.
+
+Picture a small box with side lengths $\Delta x,\Delta y,\Delta z$. The difference
+between the right-face and left-face contributions is approximately
+$(\partial F_x/\partial x)\Delta x\Delta y\Delta z$. The other two pairs of
+faces contribute the corresponding $y$ and $z$ terms. Divide by box volume and
+shrink the box: their sum is the divergence.
+
+Field-line sketches illustrate direction, but counting drawn arrows is not a
+quantitative flux calculation. The components and their changes determine the result.
 
 | Divergence | Meaning |
 |---|---|
@@ -647,17 +787,18 @@ around the point and ask whether more field lines leave than enter.
 | $\nabla\cdot\mathbf{F} < 0$ | **sink** — field converging on the point |
 | $\nabla\cdot\mathbf{F} = 0$ | **solenoidal** — whatever enters, leaves |
 
-The zero case is the important one in practice. For a fluid, $\nabla\cdot\mathbf{v}
-= 0$ is the **continuity equation for incompressible flow** — mass cannot
-accumulate anywhere. For a magnetic field, $\nabla\cdot\mathbf{B} = 0$ is the
-statement that magnetic monopoles do not exist.
+For a velocity field, divergence has units $\mathrm{s^{-1}}$.
+Zero divergence means no local volumetric expansion or contraction. For a
+constant-density fluid with no mass sources, this is the incompressible
+mass-conservation condition. Zero divergence alone is not a complete statement
+about mass accumulation when density varies.
 
 ### Curl — a vector
 
 $$\boxed{\nabla\times\mathbf{F} = \begin{vmatrix}\hat{\imath} & \hat{\jmath} & \hat{k}\\[1mm] \dfrac{\partial}{\partial x} & \dfrac{\partial}{\partial y} & \dfrac{\partial}{\partial z}\\[2mm] F_x & F_y & F_z\end{vmatrix}}$$
 
-Expanded, using the determinant machinery from Chapter 01-14 and the cross-product
-structure from Chapter 01-13:
+Expanded, using the determinant machinery from [01-14 Matrices, Determinants, and Eigenvalues](01-14-Matrices-Determinants-and-Eigenvalues.md) and the cross-product
+structure from [01-13 Vectors and Vector Operations](01-13-Vectors-and-Vector-Operations.md):
 
 $$\nabla\times\mathbf{F} = \left(\frac{\partial F_z}{\partial y} - \frac{\partial F_y}{\partial z}\right)\hat{\imath} + \left(\frac{\partial F_x}{\partial z} - \frac{\partial F_z}{\partial x}\right)\hat{\jmath} + \left(\frac{\partial F_y}{\partial x} - \frac{\partial F_x}{\partial y}\right)\hat{k}$$
 
@@ -665,24 +806,44 @@ Curl measures **local rotation**. Drop a tiny paddle wheel into the field: if it
 spins, the curl is nonzero, and the curl vector points along the spin axis by the
 right-hand rule.
 
-A field with $\nabla\times\mathbf{F} = \mathbf{0}$ is **irrotational**, and that
-condition has a consequence worth knowing: an irrotational field is
-**conservative**, meaning it can be written as the gradient of a scalar potential.
-That is why electrostatic fields have voltages and gravitational fields have
-potential energies.
+For a velocity field, curl also has units $\mathrm{s^{-1}}$ and measures twice
+the local rigid-body angular-velocity vector. For example, the planar velocity
+field $\mathbf v=\langle-y,x,0\rangle\,\mathrm{s^{-1}}$, with coordinates in metres,
+has curl $2\hat{k}\,\mathrm{s^{-1}}$, consistent with counterclockwise rotation
+at $1\ \mathrm{rad/s}$ viewed from the positive $z$ side.
+
+A field with zero curl is **irrotational**. A **conservative field** is one that
+can be written $\mathbf F=\nabla\Psi$ for a single scalar function $\Psi$ throughout
+its domain; $\Psi$ is a **scalar potential**.
+
+These statements need conditions before you call them equivalent. If the field
+has continuous first partials on an open **simply connected domain**, zero curl
+implies that it is conservative. Simply connected means that every closed loop
+can be continuously contracted to a point without leaving the domain. An ordinary
+open ball qualifies; a plane with its center removed does not. A hole or an
+excluded singularity can prevent a global potential even when curl vanishes
+everywhere the field is defined.
+
+In the other direction, a gradient field formed from a potential with continuous
+second partials has zero curl: each component cancels a pair of equal mixed
+partials. For instance, $\Psi=x^2y+z^2$ gives
+$\nabla\Psi=\langle2xy,x^2,2z\rangle$, whose curl is zero everywhere. Its domain
+is all of three-dimensional space, so there is no domain obstruction.
 
 ![FIG-01-23-005: Two-panel figure of field-line sketches with small test objects. Left panel titled "Divergence": three sub-sketches — arrows radiating outward from a point labeled "∇·F > 0, source", arrows converging inward labeled "∇·F < 0, sink", and uniform parallel arrows through a small dashed box with equal numbers entering and leaving labeled "∇·F = 0, solenoidal". Right panel titled "Curl": two sub-sketches — a shear field with arrows of increasing length, a small paddle wheel drawn in it shown rotating with a curved arrow and the curl vector drawn out of the page labeled "∇×F ≠ 0"; and a uniform field with an identical paddle wheel drawn stationary labeled "∇×F = 0, irrotational".](../figures/FIG-01-23-005-divergence-curl.png)
 
-### Worked Example 8 — Computing Both
+### Worked Example 9 — Computing Both
 
 **Given.** $\mathbf{F} = 3x^2y\,\hat{\imath} - 2yz\,\hat{\jmath} + xz^2\,\hat{k}$
 
 **Find.** $\nabla\cdot\mathbf{F}$ and $\nabla\times\mathbf{F}$, both evaluated at
 $(1, 2, 1)$.
 
+**Approach.** Differentiate matching components for divergence and cross components for curl. Evaluate only after forming the operator expressions.
+
 **Solution.**
 
-**Divergence.** Take each component's partial with respect to its own variable:
+**1. Divergence.** Take each component's partial with respect to its own variable:
 
 $$\frac{\partial}{\partial x}\left(3x^2y\right) = 6xy \qquad \frac{\partial}{\partial y}(-2yz) = -2z \qquad \frac{\partial}{\partial z}\left(xz^2\right) = 2xz$$
 
@@ -692,7 +853,7 @@ At $(1,2,1)$: $6(1)(2) - 2(1) + 2(1)(1) = 12 - 2 + 2 = \boxed{12}$
 
 Positive, so the point is a net source.
 
-**Curl.** Work the three components in order.
+**2. Curl.** Work the three components in order.
 
 $\hat{\imath}$: $\dfrac{\partial F_z}{\partial y} - \dfrac{\partial F_y}{\partial z}
 = 0 - (-2y) = 2y$
@@ -709,7 +870,7 @@ At $(1,2,1)$:
 
 $$\boxed{\nabla\times\mathbf{F} = 4\hat{\imath} - \hat{\jmath} - 3\hat{k}}$$
 
-**Type check.** Divergence came out a single number ✓ Curl came out a vector with
+**Check.** Divergence came out a single number ✓ Curl came out a vector with
 three components ✓ If either had the wrong type, the computation went wrong.
 
 > ---
@@ -731,9 +892,9 @@ three components ✓ If either had the wrong type, the computation went wrong.
 > matching pairs. If you find a matching pair inside a curl, or a mismatched pair
 > inside a divergence, you have crossed the two operators.
 >
-> The Handbook prints both formulas, including the determinant form of the curl.
-> Look them up. This is a case where the lookup is fast and the recall is error
-> prone, which is exactly when you should use the reference.
+> Practice locating the vector-operator formulas in your assigned reference.
+> Compare its component order with your own before substituting values. A short
+> lookup is useful only when you know what each entry means.
 >
 > ---
 
@@ -743,13 +904,15 @@ three components ✓ If either had the wrong type, the computation went wrong.
 
 ### Critical points
 
-At a local maximum or minimum of a smooth function, the surface is level in
+At an interior local maximum or minimum of a differentiable function, the surface is level in
 **every** direction, so every partial vanishes:
 
 $$\boxed{f_x = 0 \quad\text{and}\quad f_y = 0}$$
 
 Equivalently $\nabla f = \mathbf{0}$ — there is no uphill direction. Solve that
-system for the critical points.
+system for the stationary critical points. More generally, an interior point
+where a first derivative fails to exist is also a candidate requiring direct
+inspection. Boundary points require a separate check.
 
 As in Chapter 01-18, a critical point need not be an extremum. But now there is a
 new possibility that has no single-variable analogue: a **saddle point**, where the
@@ -758,7 +921,8 @@ the lowest point along the ridge and the highest point along the trail.
 
 ### The second-derivative test
 
-Form the discriminant
+Assume the second partials are continuous near the stationary point. Form the
+**second-partial discriminant**
 
 $$\boxed{D = f_{xx}f_{yy} - \left(f_{xy}\right)^2}$$
 
@@ -771,22 +935,35 @@ evaluated at the critical point. Then:
 | $D < 0$ | **saddle point** |
 | $D = 0$ | test fails — investigate directly |
 
-Note the structure. $D > 0$ says the surface curves the same way in both
-directions, and then $f_{xx}$ decides which way — the same role the second
-derivative played in Chapter 01-18. $D < 0$ says the curvatures disagree, which is
-a saddle.
+The second-order change near a stationary point is governed by
+$f_{xx}(\Delta x)^2+2f_{xy}\Delta x\Delta y+f_{yy}(\Delta y)^2$.
+When $f_{xx}\ne0$, completing the square rewrites this expression as
+
+$$f_{xx}\left(\Delta x+\frac{f_{xy}}{f_{xx}}\Delta y\right)^2
++\frac{D}{f_{xx}}(\Delta y)^2.$$
+
+If $D>0$, both squared terms have the sign of $f_{xx}$: upward change gives a
+minimum and downward change a maximum. If $D<0$, directions of opposite change
+exist, giving a saddle. The standard test also covers $f_{xx}=0$ when $D<0$.
+
+When $D=0$, higher-order terms decide. At the origin, $x^4+y^4$ has a minimum,
+$-x^4-y^4$ has a maximum, and $x^4-y^4$ has a saddle; all three give $D=0$.
+Finding one path up and another down proves a saddle. Testing a few lines that
+all go up does **not** prove a minimum over all possible approaches.
 
 ![FIG-01-23-006: Three three-dimensional surface sketches side by side, each with the critical point marked. Left, labeled "D > 0, f_xx > 0 — local minimum": a bowl opening upward with the point at the bottom, and two cross-section curves drawn through the point both curving upward. Centre, labeled "D > 0, f_xx < 0 — local maximum": a dome with the point at the top and both cross-sections curving downward. Right, labeled "D < 0 — saddle point": a saddle shape with one cross-section curving upward and the perpendicular one curving downward, annotated "curvatures disagree".](../figures/FIG-01-23-006-critical-point-classification.png)
 
-### Worked Example 9 — Locating and Classifying
+### Worked Example 10 — Locating and Classifying
 
 **Given.** $f(x,y) = x^3 + y^3 - 3xy$
 
 **Find.** All critical points and classify each.
 
+**Approach.** Solve both first-partial equations simultaneously, evaluate the second-partial discriminant at each solution, and test the saddle directly.
+
 **Solution.**
 
-**Critical points.**
+**1. Critical points.**
 
 $$f_x = 3x^2 - 3y = 0 \implies y = x^2$$
 $$f_y = 3y^2 - 3x = 0 \implies x = y^2$$
@@ -799,13 +976,13 @@ So $x = 0$ or $x = 1$, giving $y = 0$ and $y = 1$ respectively.
 
 $$\text{critical points: } (0,0) \text{ and } (1,1)$$
 
-**Second partials.**
+**2. Second partials.**
 
 $$f_{xx} = 6x \qquad f_{yy} = 6y \qquad f_{xy} = -3$$
 
 $$D = (6x)(6y) - (-3)^2 = 36xy - 9$$
 
-**Classify.**
+**3. Classify.**
 
 At $(0,0)$: $D = 0 - 9 = -9 < 0 \implies \boxed{\text{saddle point}}$
 
@@ -821,49 +998,61 @@ function increases. Down one way, up the other ✓ A saddle.
 
 ### Constrained optimization: Lagrange multipliers
 
-Often the variables are tied together. Minimize material for a **fixed** volume;
-maximize capacity for a **fixed** cost. The constraint means you cannot simply set
-all the partials to zero, because the unconstrained optimum is not reachable.
+A constraint restricts which moves are allowed. At the best feasible point, you
+may be unable to improve the objective **along the constraint**, even though it
+could improve if you were free to leave it.
 
-The method: to optimize $f(x,y)$ subject to $g(x,y) = k$, solve
+Let the objective $f$ and constraint function $g$ have continuous first partials.
+At a constrained optimum on the smooth curve $g(x,y)=c_0$, assume
+$\nabla g\ne\mathbf0$. Then the **Lagrange multiplier** condition is
 
-$$\boxed{\nabla f = \lambda\nabla g \qquad \text{together with} \qquad g(x,y) = k}$$
+$$\boxed{\nabla f=\lambda_L\nabla g,\qquad g=c_0.}$$
 
-The geometric reason is worth carrying, because it makes the method memorable
-rather than arbitrary. At the constrained optimum, the level curve of $f$ is
-**tangent** to the constraint curve. If they crossed instead, you could slide along
-the constraint to a better level curve. Tangent curves have parallel normals, and
-the gradients are the normals — hence $\nabla f = \lambda\nabla g$.
+To see why, move along the constraint in a unit tangent direction. The constraint
+does not change, so that tangent is perpendicular to $\nabla g$. At an optimum
+the objective's directional derivative along the same tangent is zero. Thus
+$\nabla f$ is also normal to the constraint; the two gradients are parallel
+(or $\nabla f=\mathbf0$), which introduces the scalar multiplier $\lambda_L$.
 
-The multiplier $\lambda$ is usually a means to an end, not the answer. Solve for
-the variables and discard it.
+Solve the component equations **and** the constraint. The solutions are
+candidates, not automatically minima or maxima. Compare objective values and
+check allowed boundaries, endpoints, and points where $\nabla g=\mathbf0$.
+The same method extends to three inputs with one smooth constraint surface.
 
-![FIG-01-23-007: A contour map showing several level curves of an objective function f as nested closed curves labeled with increasing values, overlaid with a single heavier constraint curve g = k winding across them. At one point the constraint curve is tangent to a level curve; at that point two arrows are drawn — ∇f and ∇g — shown parallel, and the point is labeled "constrained optimum, ∇f = λ∇g". At a second point where the constraint curve visibly crosses a level curve, the two gradient arrows are drawn non-parallel and an arrow along the constraint is labeled "can still improve — slide this way".](../figures/FIG-01-23-007-lagrange-tangency.png)
+The multiplier can have a useful sensitivity interpretation in later work.
+Here the requested design variables are the answer; do not stop after finding
+$\lambda_L$.
 
-### Worked Example 10 — Minimum-Material Tank
+![FIG-01-23-007: Equal-increment level curves of an objective function are crossed by a heavier smooth constraint curve g=c₀. At a regular candidate optimum the constraint is tangent to a level curve and nonzero gradient arrows ∇f and ∇g are parallel, labeled ∇f=λ_L∇g. At a crossing elsewhere, a tangent arrow along the constraint shows a feasible direction in which the objective changes. The drawing illustrates a necessary condition; the candidate still needs classification.](../figures/FIG-01-23-007-lagrange-tangency.png)
+
+---
+
+### Worked Example 11 — Minimum-Material Tank
 
 **Given.** A closed cylindrical tank must hold $2.00$ m³.
 
 **Find.** The radius and height that minimize surface area, and the resulting area.
 
+**Approach.** Write area as the objective and volume as the constraint. Solve their Lagrange equations, then verify both feasibility and minimality.
+
 **Solution.**
 
-**Objective and constraint.**
+**1. Objective and constraint.**
 
-$$A = 2\pi r^2 + 2\pi rh \qquad \text{subject to} \qquad V = \pi r^2 h = 2.00$$
+$$A = 2\pi r^2 + 2\pi rh \qquad \text{subject to} \qquad V = \pi r^2 h = 2.00\ \mathrm{m^3}$$
 
-**Gradients.**
+**2. Gradients.**
 
 $$\nabla A = \left\langle 4\pi r + 2\pi h,\; 2\pi r\right\rangle \qquad \nabla V = \left\langle 2\pi rh,\; \pi r^2\right\rangle$$
 
-**Set $\nabla A = \lambda\nabla V$.**
+**3. Set $\nabla A = \lambda_L\nabla V$.**
 
-$$4\pi r + 2\pi h = \lambda(2\pi rh) \tag{1}$$
-$$2\pi r = \lambda\left(\pi r^2\right) \tag{2}$$
+$$4\pi r + 2\pi h = \lambda_L(2\pi rh) \tag{1}$$
+$$2\pi r = \lambda_L\left(\pi r^2\right) \tag{2}$$
 
 From (2), cancelling $\pi r$ (valid since $r > 0$):
 
-$$2 = \lambda r \implies \lambda = \frac{2}{r}$$
+$$2 = \lambda_L r \implies \lambda_L = \frac{2}{r}$$
 
 Substitute into (1):
 
@@ -874,145 +1063,135 @@ $$4\pi r = 2\pi h \implies \boxed{h = 2r}$$
 **The height equals the diameter.** That is the classic result, and it is worth
 remembering: the most material-efficient closed cylinder is as tall as it is wide.
 
-**Apply the constraint.**
+**4. Apply the constraint.**
 
 $$\pi r^2(2r) = 2\pi r^3 = 2.00 \implies r^3 = \frac{1}{\pi} = 0.31831$$
 
 $$r = 0.68278 \text{ m} \qquad h = 1.36556 \text{ m}$$
 
-$$\boxed{r = 0.683 \text{ m}, \quad h = 1.366 \text{ m}}$$
+$$\boxed{r = 0.683\ \mathrm m,\quad h = 1.37\ \mathrm m}$$
 
-**Surface area.**
+**5. Surface area.** With $h=2r$,
 
-$$A = 2\pi(0.68278)^2 + 2\pi(0.68278)(1.36556) = 2\pi(0.46619) + 2\pi(0.93238)$$
+$$A=6\pi r^2=6\pi(0.682784\ \mathrm m)^2
+\approx8.78755\ \mathrm{m^2}\approx\boxed{8.79\ \mathrm{m^2}}.$$
 
-$$= 2.9293 + 5.8585 = \boxed{8.79 \text{ m}^2}$$
+**Check the constraint.** Using unrounded dimensions,
+$\pi(0.6827840633\ \mathrm m)^2(1.3655681265\ \mathrm m)
+\approx2.00000\ \mathrm{m^3}$, matching the required volume.
 
-**Check the constraint.** $\pi(0.46619)(1.36556) = \pi(0.63650) = 2.000$ m³ ✓
+**Check that it is a minimum.** Eliminate $h$ using the fixed volume
+$V_0=2.00\ \mathrm{m^3}$:
 
-**Check against the theoretical floor.** Of all shapes enclosing a given volume,
-the sphere has the least surface area. For $V = 2.00$ m³:
+$$A(r)=2\pi r^2+\frac{2V_0}{r},\qquad
+A'(r)=4\pi r-\frac{2V_0}{r^2},\qquad
+A''(r)=4\pi+\frac{4V_0}{r^3}>0\quad(r>0).$$
 
-$$\frac{4}{3}\pi r^3 = 2.00 \implies r^3 = 0.47746 \implies r = 0.78159 \text{ m}$$
-
-$$A_{\text{sphere}} = 4\pi r^2 = 4\pi(0.61088) = 7.68 \text{ m}^2$$
-
-Our cylinder needs $8.79$ m², which exceeds the sphere's $7.68$ m² by 14.5% ✓ The
-answer must be above the spherical floor, and it is — by a plausible margin. A
-cylinder coming out *below* the sphere would have been proof of an error.
+The area tends to infinity as $r$ tends to zero or grows without bound. The
+single stationary point is therefore the global minimum among positive-radius
+closed cylinders of this volume. This check establishes the conclusion instead
+of assuming that a Lagrange solution must be a minimum.
 
 ---
 
 ## As the Handbook States It
 
-> **Handbook 10.6, Mathematics section (begins p. 36)** — partial differentiation
-> and the vector operators appear in two places. The *Differential Calculus*
-> subsection, around pp. 43–45, carries partial derivatives, the total
-> differential, and the gradient. The *Vectors* subsection, near the analytic
-> geometry material, carries divergence and curl alongside the dot and cross
-> products from Chapter 01-13.
+> **Source verification.** This guide's working edition is Handbook 10.6.
+> Its PDF was not available for direct page verification during this revision.
+> The formulas below are this chapter's reference forms, not asserted quotations
+> or verified page transcriptions. Confirm their location and printed notation
+> in the edition assigned to your exam. NCEES provides the Handbook through
+> [MyNCEES](https://ncees.org/exams/fe-exam/).
 
-Coverage here is **good for the formulas and absent for the judgement**, which is
-the usual pattern.
+Use the lookup method from
+[00-03 Navigating the FE Reference Handbook](../layer-0-orientation/00-03-navigating-the-fe-reference-book.md):
+search a distinctive term, identify the variables, and check the assumptions
+before substituting values. Do not memorize an inferred page number.
 
-**What's in the Handbook — find it fast:**
+| Search term | Form to recognize | What you must supply |
+|---|---|---|
+| Partial derivative | $f_x=\partial f/\partial x$ | which other inputs are fixed |
+| Total differential | $df=f_xdx+f_ydy+f_zdz$ | nominal evaluation point and signed increments |
+| Gradient | $\nabla f=\langle f_x,f_y,f_z\rangle$ | scalar input and consistent coordinate units |
+| Directional derivative | $D_{\mathbf u}f=\nabla f\cdot\mathbf u$ | a unit direction vector |
+| Divergence | $\nabla\cdot\mathbf F=(F_x)_x+(F_y)_y+(F_z)_z$ | matching component and differentiation variable |
+| Curl | determinant with basis vectors, derivative operators, and field components | component order and the middle minus sign |
+| Two-variable extrema | $D=f_{xx}f_{yy}-f_{xy}^2$ | a stationary point and the sign of $f_{xx}$ |
+| Lagrange multipliers | $\nabla f=\lambda\nabla g$ with $g=c_0$ | the constraint, allowed domain, and candidate checks |
 
-- **Partial derivative notation** and the definition
-- **The total differential**, stated in the general form
-- **The gradient**, with the $\nabla$ operator defined
-- **Divergence and curl**, including the determinant form of the curl. This is the
-  single most worthwhile lookup in the chapter — the curl expansion is error prone
-  from memory and printed correctly in the reference.
-- Some vector identities, such as $\nabla\times\nabla f = \mathbf{0}$ and
-  $\nabla\cdot(\nabla\times\mathbf{F}) = 0$
-- The Laplacian $\nabla^2 f$
-- Tests for a maximum, minimum, and saddle point of a function of two variables,
-  usually including the discriminant
+**Notation translation.** This chapter prints $\lambda_L$ to distinguish the
+Lagrange multiplier from other uses of $\lambda$. Its algebraic role is unchanged.
+A reference that prints a vector field as $P\hat{\imath}+Q\hat{\jmath}+R\hat{k}$
+means the three component functions called $F_x,F_y,F_z$ here; those letters do
+not automatically mean pressure, heat, or resistance.
 
-**What's not in the Handbook — memorize:**
-
-- **The power-law uncertainty rule** $\frac{df}{f} = \sum\lvert n_i\rvert
-  \frac{dx_i}{x_i}$. The general total differential is printed; this
-  ready-to-use form is not, and it is what you actually need under time pressure.
-- That the total differential with absolute values gives a **worst-case** bound,
-  not a statistical estimate
-- **How to identify which input dominates** an uncertainty, and that you cannot
-  rank them by inspection
-- That the gradient points in the direction of **steepest increase**, that its
-  magnitude is the **maximum rate**, and that it is **perpendicular to level
-  curves**
-- That transport laws carry a **minus sign**: $\mathbf{q} = -k\nabla T$ and its
-  relatives
-- That a directional derivative requires a **unit** vector, and that
-  $\lvert D_{\mathbf{u}}f\rvert \le \lvert\nabla f\rvert$
-- The **output types**: gradient → vector, divergence → scalar, curl → vector
-- The physical readings: divergence as source strength, $\nabla\cdot\mathbf{v} = 0$
-  as incompressible continuity, curl as local rotation, zero curl as conservative
-- That the tangent plane **is** the first-order multivariable Taylor polynomial,
-  and inherits the locality warnings from Chapter 01-22
-- The **Lagrange condition** $\nabla f = \lambda\nabla g$ and the tangency picture
-  behind it
-- That $h = 2r$ minimizes the surface area of a closed cylinder — a result worth
-  recognizing rather than re-deriving
+**Know without a lookup:** what is held fixed; why uncertainty magnitudes and
+signed rates are different; the first-order limitation of a differential estimate;
+the need to normalize a direction; the three operator output types; and why
+stationary and Lagrange points must be checked. These are study priorities,
+not unverified claims that a formula is absent from the Handbook.
 
 ---
 
 ## Where This Goes Wrong
 
-**Using $d$ where $\partial$ belongs.** They mean different things.
-$\frac{\partial f}{\partial x}$ freezes the other variables;
-$\frac{df}{dx}$ does not.
+**Treating the frozen variable as zero.** In $f_x$ for $x^2y$, the answer is
+$2xy$, not $2x$. The value of $y$ stays in the coefficient.
 
-**Forgetting to freeze the other variable.** Differentiating $x^2y$ with respect
-to $x$ gives $2xy$, not $2x$. The frozen variable rides along as a coefficient.
+**Dropping the inner derivative.** $\partial(e^{xy})/\partial x=ye^{xy}$.
+The inner derivative is $y$ because $y$ is held constant.
 
-**Dropping the chain factor in a composite.**
-$\frac{\partial}{\partial x}e^{xy} = ye^{xy}$. The inner derivative is $y$, not 1.
+**Interchanging mixed partials without checking conditions.** Continuous second
+partials near the point are a sufficient condition. A singularity or piecewise
+definition deserves inspection.
 
-**Reporting the divergence as a vector or the curl as a scalar.** Check the output
-type before anything else. Gradient and curl are vectors; divergence is a scalar.
+**Using $df$ as an exact finite change.** The differential is a linear model.
+Its uncertainty sum bounds that model, not automatically the nonlinear output
+over a finite interval. Worked Example 5 shows the difference.
 
-**Sign error in the middle component of the curl.** The determinant expansion
-carries $+,-,+$, so the $\hat{\jmath}$ term is
-$\frac{\partial F_x}{\partial z} - \frac{\partial F_z}{\partial x}$. Write out the
-determinant rather than recalling the expansion.
+**Dividing by a nominal zero.** Relative uncertainty and the power-law shortcut
+need nonzero nominal quantities. Near zero, use an absolute-error analysis.
 
-**Pairing matched subscripts inside a curl.** Every curl term mixes different
-subscripts and variables. Matching pairs belong to the divergence.
+**Adding magnitudes in a rates problem.** For a first-order worst-case uncertainty
+estimate, take magnitudes. For a known change or time rate, keep signs. Worked
+Example 7 would be three times too large if both contributions were made positive.
 
-**Failing to normalize the direction vector.** A directional derivative requires
-$\lvert\mathbf{u}\rvert = 1$. Using an unnormalized vector scales the answer by its
-magnitude.
+**Ranking inputs using only their exponents.** Multiply each exponent's magnitude
+by its input's relative tolerance. Worked Examples 5 and 6 have different
+dominant measurements despite the same squared-dimension structure.
 
-**Omitting the minus sign in a transport law.** $\mathbf{q} = -k\nabla T$. Heat
-flows *down* the gradient; the gradient points *up*. Without the sign, your heat
-flows the wrong way.
+**Reading unequal contour intervals as equal.** Spacing alone is meaningful only
+after you compare the labels. Equal-radius circles on a paraboloid can have very
+different height increments.
 
-**Dropping the sign of a negative partial in error propagation or a chain rule.**
-For uncertainty, take the absolute value — errors accumulate rather than cancel.
-For a rate, **keep** the sign, because the effects genuinely oppose. Confusing
-those two conventions is the most common slip in §23.3 and §23.4.
+**Forgetting the unit direction.** Divide a direction vector by its magnitude
+before taking the dot product. Check
+$|D_{\mathbf u}f|\le|\nabla f|$.
 
-**Ranking uncertainty contributions by inspection.** The exponent and the
-measurement quality both matter. Worked Examples 4 and 5 come out opposite ways
-with the same formula structure.
+**Giving a zero gradient a direction.** A zero vector cannot be normalized.
+All first-order directional derivatives are zero there; inspect higher-order
+behavior before claiming a maximum or minimum.
 
-**Treating a critical point as an extremum without testing.** Saddle points have
-$\nabla f = \mathbf{0}$ too. Run the discriminant.
+**Confusing the three output types.** Gradient: vector. Divergence: scalar.
+Curl: vector. A type error is enough to reject an answer.
 
-**Reading $D = 0$ as a conclusion.** It means the test failed. Investigate along
-lines through the point, as in Worked Example 9's check.
+**Pairing the wrong subscripts.** Divergence uses matching pairs. Curl mixes
+different component and coordinate indices, with the middle determinant sign
+reversed.
 
-**Forgetting to apply the constraint in a Lagrange problem.** The condition
-$\nabla f = \lambda\nabla g$ alone is underdetermined; you need $g = k$ as well.
-The constraint is an equation, not background information.
+**Assuming zero curl always gives a global potential.** Check smoothness and the
+domain. An excluded hole or singularity can invalidate the implication.
 
-**Reporting $\lambda$ as the answer.** The multiplier is scaffolding. The answer is
-the values of the variables.
+**Treating $D=0$ as “saddle.”** It means the second-derivative test is inconclusive.
+Higher-order terms may give a minimum, maximum, or saddle. Two paths with opposite
+signs prove a saddle; a few favorable paths do not prove a minimum.
 
-**Extrapolating a tangent plane far from the point of tangency.** It is a
-first-order Taylor polynomial, and Chapter 01-22's locality warning applies
-unchanged: error grows as the square of the distance.
+**Ignoring boundaries.** The zero-gradient test concerns differentiable interior
+points. Absolute extrema can occur on boundaries or at nonsmooth points.
+
+**Stopping at the Lagrange equations.** Include the constraint, check its gradient,
+and establish whether each admissible candidate gives the required optimum.
+Report the requested dimensions or output, not just the multiplier.
 
 ---
 
@@ -1020,295 +1199,661 @@ unchanged: error grows as the square of the distance.
 
 | Term | Definition |
 |---|---|
-| Function of several variables | Assigns a scalar to each point of a multidimensional domain |
-| Surface | The graph $z = f(x,y)$ in three dimensions |
-| Level curve / contour | The set where $f$ equals a fixed value |
-| Partial derivative | Derivative with respect to one variable, others held constant |
-| Mixed partial | Second derivative taken in two different variables |
-| Equality of mixed partials | $f_{xy} = f_{yx}$ when the second partials are continuous |
-| Total differential | $df = f_x\,dx + f_y\,dy + \cdots$ |
-| Error propagation | Using the total differential to bound output uncertainty from input uncertainties |
-| Power-law rule | For a product of powers, relative errors add weighted by exponents |
-| Tangent plane | The first-order Taylor approximation to a surface at a point |
-| Multivariable chain rule | $\frac{df}{dt} = \sum \frac{\partial f}{\partial x_i}\frac{dx_i}{dt}$ |
-| Del operator $\nabla$ | The vector of partial derivative operators |
-| Gradient | $\nabla f$; a vector pointing in the direction of steepest increase |
-| Directional derivative | $D_{\mathbf{u}}f = \nabla f\cdot\mathbf{u}$ with $\mathbf{u}$ a unit vector |
-| Divergence | $\nabla\cdot\mathbf{F}$; a scalar measuring net outflow per unit volume |
+| Function of several variables | A scalar-valued function of two or more independent inputs |
+| Surface | The graph $z=f(x,y)$ in three dimensions |
+| Level curve / contour | Points in the input plane where the function has one fixed value |
+| Scalar field | A scalar-valued function of position |
+| Partial derivative | Rate with respect to one input while the other independent inputs are fixed |
+| Mixed partial | A second derivative taken with respect to two different inputs |
+| Equality of mixed partials | Interchanging differentiation order gives the same result when the appropriate second partials are continuous nearby |
+| Total differential | The linear output change $df=\sum f_{x_i}\,dx_i$ |
+| Power-law rule | First-order relative uncertainty in a product of powers is the sum of relative input tolerances weighted by exponent magnitudes |
+| Tangent plane | Plane matching a differentiable surface's value and first-order slopes at a point |
+| Multivariable chain rule | Total rate found by adding each input sensitivity multiplied by that input's rate |
+| Del operator | Cartesian vector of partial-derivative operators, written $\nabla$ |
+| Gradient | Vector of a scalar field's partials; where nonzero, its direction and magnitude give steepest first-order increase |
+| Directional derivative | Rate per unit distance in a specified unit direction |
+| Vector field | A function assigning a vector to each point in its domain |
+| Divergence | Scalar measuring local net outward flux per unit volume |
 | Solenoidal | Having zero divergence |
-| Curl | $\nabla\times\mathbf{F}$; a vector measuring local rotation |
-| Irrotational | Having zero curl; equivalently, conservative |
-| Conservative field | Expressible as the gradient of a scalar potential |
-| Critical point | A point where every first partial vanishes |
-| Saddle point | A critical point that rises in one direction and falls in another |
-| Discriminant $D$ | $f_{xx}f_{yy} - f_{xy}^2$; classifies critical points |
-| Constrained optimization | Optimizing subject to an equation relating the variables |
-| Lagrange multiplier | The scalar $\lambda$ in $\nabla f = \lambda\nabla g$ |
+| Curl | Vector measuring local circulation density; for velocity, twice the local angular-velocity vector |
+| Irrotational | Having zero curl |
+| Conservative field | A vector field expressible as the gradient of a single scalar potential over its domain |
+| Scalar potential | A scalar function $\Psi$ whose gradient produces a specified conservative field |
+| Simply connected domain | A connected region in which every closed loop can contract to a point while staying inside the region |
+| Multivariable critical point | An interior point where the gradient is zero or a needed first partial does not exist |
+| Saddle point | A stationary point with both higher and lower nearby function values |
+| Second-partial discriminant | $D=f_{xx}f_{yy}-f_{xy}^2$, used at a stationary point in the two-variable second-derivative test |
+| Constrained optimization | Maximizing or minimizing an objective while satisfying restrictions on the inputs |
+| Lagrange multiplier | Scalar relating the objective and constraint gradients at a regular constrained candidate |
+
+For earlier vocabulary, revisit error propagation, linearization, and critical
+points in [01-18](01-18-Applications-of-the-Derivative.md), and unit vectors in
+[01-13](01-13-Vectors-and-Vector-Operations.md).
 
 ---
 
 ## Review Questions
 
+Answer the conceptual questions before using a calculator. For calculations,
+state the model, carry the units, and include a check. Use first-order uncertainty
+estimates unless the question explicitly asks for finite endpoints.
+
 ### Conceptual
 
-1. Explain the difference between $\frac{\partial f}{\partial x}$ and
-   $\frac{df}{dx}$, and describe a situation where the two differ.
-2. State what the equality of mixed partials says, and explain how you can use it
-   as a check on your own work.
-3. Explain how the tangent plane relates to the multivariable Taylor expansion, and
-   what that implies about the range over which it is trustworthy.
-4. In an error propagation calculation you take absolute values; in a related-rates
-   calculation you keep signs. Explain why the two conventions differ.
-5. State the two defining properties of the gradient, and explain why it must be
-   perpendicular to the level curves.
-6. Why does Fourier's law carry a minus sign?
-7. State the output type of the gradient, divergence, and curl, and explain how the
-   notation itself tells you each one.
-8. Give a physical interpretation of $\nabla\cdot\mathbf{v} = 0$ for a fluid
-   velocity field.
-9. Describe a saddle point and explain why nothing analogous appears in
-   single-variable calculus.
-10. Explain the geometric reason behind the Lagrange condition
-    $\nabla f = \lambda\nabla g$.
+1. Explain the difference between $\partial f/\partial x$ and $df/dx$ when
+   another input depends on $x$. Give a short example.
+2. State a sufficient condition for equality of mixed partials. How does that
+   theorem help you check a calculation, and when should you be cautious?
+3. Explain how a tangent plane relates to Taylor approximation. Under what
+   smoothness condition can its error be bounded by a second-order quantity nearby?
+4. Write the total differential of $f(x,y,z)$. Explain why a known change keeps
+   signs while a first-order worst-case uncertainty estimate adds magnitudes.
+5. State the direction and magnitude properties of a nonzero gradient. What
+   changes when the gradient is zero?
+6. For $f(x,y)=x^2+y^2$, describe the surface and its level curves. Explain why
+   comparing the spacing of levels $1,4,9,16$ does not directly show the steepening
+   that equal-increment contour spacing shows.
+7. State the output type of gradient, divergence, and curl. What additional
+   conditions let you infer a conservative field from zero curl?
+8. Interpret $\nabla\cdot\mathbf v=0$ for a velocity field. Why is a statement
+   about mass accumulation incomplete if density is allowed to vary?
+9. Describe a saddle point. Does $D=0$ prove that a point is a saddle? Explain.
+10. Explain the geometric reason for $\nabla f=\lambda_L\nabla g$ at a regular
+    constrained optimum. Why must the candidate still be checked?
 
 ### Calculation
 
-11. For $f(x,y) = 4x^3y^2 - 5xy + 2y^4$, find $f_x$, $f_y$, $f_{xx}$, $f_{yy}$, and
-    both mixed partials. Verify they agree.
-12. For $f(x,y) = \ln(x^2 + y)$, find $f_x$ and $f_y$ at $(2, 1)$.
-13. A rectangular plate is measured as $a = 240 \pm 2$ mm and $b = 120 \pm 1$ mm.
-    Find the area and its relative uncertainty, and identify which measurement
-    contributes more.
-14. Power is computed as $P = I^2R$ with $I = 3.50 \pm 0.04$ A and
-    $R = 22.0 \pm 0.3\ \Omega$. Find $P$ and its uncertainty, and give each
-    input's share.
-15. For $f(x,y) = x^2y - y^3$ at $(3, 1)$: find $\nabla f$, the maximum rate of
-    increase, and the directional derivative toward $(3, 5)$.
-16. Find $\nabla\cdot\mathbf{F}$ and $\nabla\times\mathbf{F}$ at $(1,1,2)$ for
-    $\mathbf{F} = xy\,\hat{\imath} + yz^2\,\hat{\jmath} + z x\,\hat{k}$.
-17. Locate and classify all critical points of
-    $f(x,y) = x^2 + xy + y^2 - 6x$.
-18. A rectangular box with an open top must have volume $32$ m³. Use Lagrange
-    multipliers to find the dimensions minimizing surface area.
-19. **Engineering application.** Beam deflection at midspan under a central load is
-    $\delta = \frac{PL^3}{48EI}$. A beam has $P = 25.0 \pm 0.5$ kN,
-    $L = 4.00 \pm 0.01$ m, $E = 200 \pm 5$ GPa, and
-    $I = 85.0 \pm 1.5 \times 10^6$ mm⁴.
-    (a) Compute $\delta$ in mm.
-    (b) Find the relative uncertainty using the power-law rule.
-    (c) Rank the four inputs by contribution and state which measurement to
-    improve first.
+11. For $f(x,y)=4x^3y^2-5xy+2y^4$, find $f_x,f_y,f_{xx},f_{yy}$ and both mixed
+    partials. Verify that the mixed partials agree.
+12. For $f(x,y)=\ln(x^2+y)$, find $f_x,f_y$ at $(2,1)$, write the tangent plane,
+    and estimate $f(2.02,0.99)$. State the domain condition and check the estimate
+    by direct substitution.
+13. A plate has dimensions $a=240\pm2\ \mathrm{mm}$ and $b=120\pm1\ \mathrm{mm}$.
+    Find its area, first-order relative uncertainty, and each input's share.
+14. Use the supplied model $P_w=I_e^2R_e$, with
+    $I_e=3.50\pm0.04\ \mathrm A$ and $R_e=22.0\pm0.3\ \Omega$.
+    (a) Find power and first-order uncertainty, including input shares.
+    (b) Separately, at those nominal values, let
+    $dI_e/dt=0.020\ \mathrm{A/s}$ and $dR_e/dt=-0.10\ \Omega/\mathrm s$.
+    Find the signed power rate.
+15. For $f(x,y)=x^2y-y^3$ at $(3,1)$, find the gradient, maximum rate of increase,
+    and directional derivative toward $(3,5)$.
+16. Find divergence and curl at $(1,1,2)$ for
+    $\mathbf F=xy\,\hat{\imath}+yz^2\,\hat{\jmath}+zx\,\hat{k}$.
+17. Locate and classify all critical points of $f(x,y)=x^2+xy+y^2-6x$.
+18. An open-top rectangular box must hold $32\ \mathrm{m^3}$. Use Lagrange
+    multipliers to find the positive dimensions minimizing material area.
+19. **Supplied engineering model.** For a simply supported beam with a central
+    point load, use $\delta=F_LL^3/(48EI_A)$ without deriving beam theory.
+    Here $F_L$ is force, $E$ elastic modulus, and $I_A$ the second moment of area
+    introduced in 01-20. The data are $F_L=25.0\pm0.5\ \mathrm{kN}$,
+    $L=4.00\pm0.01\ \mathrm m$, $E=200\pm5\ \mathrm{GPa}$, and
+    $I_A=(85.0\pm1.5)\times10^6\ \mathrm{mm^4}$.
+    Find deflection in millimetres, its first-order relative uncertainty,
+    and the ranking of the four uncertainty contributions.
 
 ### Multiple Choice
 
-20. For $f(x,y) = x^2y^3$, $f_y$ equals:
-    A) $2xy^3$  B) $3x^2y^2$  C) $6xy^2$  D) $2x y^3 + 3x^2y^2$
+20. For $f(x,y)=x^2y^3$, $f_y$ equals:
+    A) $2xy^3$  B) $3x^2y^2$  C) $6xy^2$  D) $2xy^3+3x^2y^2$.
 
-21. The gradient of a scalar field is:
-    A) a scalar  B) a vector  C) a matrix  D) always zero
+21. The gradient of a differentiable scalar field is:
+    A) a scalar  B) a vector  C) a matrix  D) always zero.
 
-22. The divergence of a vector field is:
-    A) a scalar  B) a vector  C) perpendicular to the field  D) the same as the curl
+22. The divergence of a differentiable vector field is:
+    A) a scalar  B) a vector  C) necessarily perpendicular to the field  D) its curl.
 
-23. For $V = \pi r^2 h$ with $r$ known to 1% and $h$ to 1%, the worst-case relative
-    uncertainty in $V$ is about:
-    A) 1%  B) 2%  C) 3%  D) 4%
+23. For $V=\pi r^2h$, with radius and height each having 1% tolerances, the
+    first-order worst-case relative uncertainty estimate is:
+    A) 1%  B) 2%  C) 3%  D) 4%.
 
-24. At a critical point with $D = f_{xx}f_{yy} - f_{xy}^2 < 0$, the point is:
-    A) a local minimum  B) a local maximum  C) a saddle point  D) undetermined
+24. At a stationary point of a function with continuous second partials, $D<0$
+    indicates:
+    A) local minimum  B) local maximum  C) saddle point  D) an inconclusive test.
 
-25. A field with $\nabla\times\mathbf{F} = \mathbf{0}$ is called:
-    A) solenoidal  B) irrotational  C) divergent  D) incompressible
+25. A field with zero curl is called:
+    A) solenoidal  B) irrotational  C) divergent  D) incompressible.
 
-26. The directional derivative $D_{\mathbf{u}}f$ is largest when $\mathbf{u}$ is:
-    A) perpendicular to $\nabla f$  B) parallel to $\nabla f$  C) along a level
-    curve  D) the zero vector
+26. Where $\nabla f\ne\mathbf0$, the directional derivative is greatest when
+    the **unit** direction vector points:
+    A) perpendicular to $\nabla f$  B) in the same direction as $\nabla f$
+    C) along a level curve  D) opposite to $\nabla f$.
 
-27. In Fourier's law $\mathbf{q} = -k\nabla T$, the minus sign indicates that:
+27. In the supplied model $\mathbf q=-k\nabla T$ with $k>0$, the minus sign means:
     A) conductivity is negative  B) heat flows toward higher temperature
-    C) heat flows down the temperature gradient  D) the gradient is a scalar
+    C) heat flows toward lower temperature  D) the gradient is a scalar.
 
 ---
 
-## Answers to Review Questions
+## Answer Key with Explanations
 
 ### Conceptual
 
-1. $\frac{\partial f}{\partial x}$ holds the other variables fixed;
-   $\frac{df}{dx}$ includes their response. They differ whenever another variable
-   depends on $x$ — for instance in Worked Example 6, where both $V$ and $R$ change
-   with time and $\frac{dP}{dt}$ collects both effects while
-   $\frac{\partial P}{\partial V}$ collects one.
-2. $f_{xy} = f_{yx}$ for continuous second partials. Computing both and comparing
-   is a free verification: disagreement means an algebra error, since the theorem
-   holds for essentially all engineering functions.
-3. The tangent plane is the degree-1 multivariable Taylor polynomial. Chapter
-   01-22's Lagrange remainder applies, so the error grows as the **square** of the
-   distance from the point of tangency — the approximation is strictly local and
-   degrades by a power law.
-4. Uncertainties could push either way, so the conservative bound assumes they all
-   push the same way and adds magnitudes. A rate of change has a definite
-   direction, so opposing effects genuinely cancel and the signs must be kept.
-   Worked Example 6 would be three times too large with absolute values.
-5. It points in the direction of steepest increase, and its magnitude is that
-   maximum rate. Along a level curve $f$ does not change, so the direction of
-   greatest change must be perpendicular to it.
-6. The gradient points toward higher temperature; heat flows toward lower. The
-   minus sign reverses the direction so the flux vector points the way energy
-   actually moves.
-7. Gradient → vector, divergence → scalar, curl → vector. The dot in
-   $\nabla\cdot\mathbf{F}$ signals a scalar output and the cross in
-   $\nabla\times\mathbf{F}$ a vector output, matching the dot and cross products of
-   Chapter 01-13.
-8. Net outflow from every point is zero, so mass cannot accumulate anywhere — the
-   continuity equation for incompressible flow.
-9. A critical point where the surface rises along one direction and falls along a
-   perpendicular one. It requires at least two independent directions to exist, and
-   a single-variable function has only one.
-10. At the constrained optimum the level curve of $f$ is tangent to the constraint
-    curve; if they crossed, sliding along the constraint would reach a better level
-    curve. Tangent curves share a normal direction, and gradients are normals, so
-    the two gradients are parallel.
+1. A partial derivative freezes the other independent inputs. A total derivative
+   follows their actual dependence. With $f(x,y)=xy$ and $y=x$,
+   $\partial f/\partial x=y$, but along that path $f=x^2$ and $df/dx=2x$.
+   At $x=y=1$, the rates are 1 and 2 respectively. (§23.2, §23.4)
+2. Continuous second partials in a neighborhood are sufficient. Under that
+   condition, $f_{xy}=f_{yx}$, so independent calculations should agree.
+   Disagreement in the smooth polynomial/exponential examples signals an error;
+   a piecewise definition or singularity first requires checking the condition.
+   (§23.2)
+3. It keeps the function value and all first-order terms. Bounded second partials
+   nearby give a second-order error bound for small displacements. The error may
+   be smaller through cancellation, and the approximation is not automatically
+   reliable far from the base point. (§23.3)
+4. $df=f_xdx+f_ydy+f_zdz$. Known signed changes can cancel. A first-order
+   worst-case estimate instead permits each input deviation to push the output
+   in the unfavorable direction and uses
+   $\varepsilon_f^{(1)}=|f_x|\varepsilon_x+|f_y|\varepsilon_y+|f_z|\varepsilon_z$.
+   This bounds the linearized change, not necessarily the finite nonlinear error.
+   (§23.3, §23.4)
+5. The nonzero gradient points in the direction of greatest first-order increase;
+   its magnitude is that maximum rate. A tangent to a level curve has zero dot
+   product with it. At a zero gradient, all first-order directional derivatives
+   vanish and no unique gradient direction exists. (§23.5)
+6. The surface is an upward-opening paraboloid. Positive level curves are circles
+   of radius $\sqrt{c_0}$. Levels $1,4,9,16$ have radii $1,2,3,4$, so their radial
+   gaps are equal while their height gaps are not. Equal height increments are
+   needed for a direct spacing comparison of steepness. (§23.1)
+7. Gradient and curl are vectors; divergence is a scalar. Zero curl implies a
+   global scalar potential when the field has continuous first partials on an
+   open simply connected domain. Omitting the domain condition can make the
+   conclusion false. (§23.5, §23.6)
+8. It means no local volumetric expansion or contraction. For constant density
+   and no mass sources, it expresses incompressible mass conservation. With
+   variable density, density changes and transport also affect mass accumulation.
+   (§23.6)
+9. A saddle has both higher and lower nearby values despite a stationary point.
+   $D=0$ is inconclusive: $x^4+y^4$, $-x^4-y^4$, and $x^4-y^4$ give a minimum,
+   maximum, and saddle respectively at the origin, all with $D=0$. (§23.7)
+10. Feasible tangent directions are perpendicular to $\nabla g$. At an optimum,
+    the objective has zero derivative in those directions too, making its gradient
+    parallel to $\nabla g$ or zero. The condition assumes a regular constraint
+    point and finds candidates; it does not distinguish maxima, minima, or other
+    stationary behavior along the constraint. (§23.7)
 
 ### Calculation
 
-11. $f_x = 12x^2y^2 - 5y$; $f_y = 8x^3y - 5x + 8y^3$;
-    $f_{xx} = 24xy^2$; $f_{yy} = 8x^3 + 24y^2$;
-    $f_{xy} = f_{yx} = 24x^2y - 5$ ✓
-12. $f_x = \frac{2x}{x^2+y} = \frac{4}{5} = \mathbf{0.800}$;
-    $f_y = \frac{1}{x^2+y} = \frac{1}{5} = \mathbf{0.200}$
-13. $A = 28{,}800$ mm². $\frac{dA}{A} = \frac{2}{240} + \frac{1}{120} =
-    0.00833 + 0.00833 = \mathbf{1.67\%}$, so $dA = 480$ mm². The two contribute
-    **equally** — both are measured to the same relative precision and both carry
-    exponent 1.
-14. $P = (3.50)^2(22.0) = 269.5$ W.
-    $\frac{dP}{P} = 2\left(\frac{0.04}{3.50}\right) + \frac{0.3}{22.0} =
-    0.02286 + 0.01364 = \mathbf{3.65\%}$, so $dP = 9.8$ W.
-    Current: $62.6\%$; resistance: $37.4\%$.
-15. $f_x = 2xy = 6$; $f_y = x^2 - 3y^2 = 9 - 3 = 6$. So
-    $\nabla f = 6\hat{\imath} + 6\hat{\jmath}$,
-    $\lvert\nabla f\rvert = 6\sqrt{2} = \mathbf{8.49}$.
-    Toward $(3,5)$ the direction is $\langle 0,4\rangle$, unit vector
-    $\langle 0,1\rangle$, so $D_{\mathbf{u}}f = \mathbf{6.00}$. Check:
-    $6.00 \le 8.49$ ✓
-16. $\nabla\cdot\mathbf{F} = y + z^2 + x = 1 + 4 + 1 = \mathbf{6}$.
-    $\nabla\times\mathbf{F}$: $\hat{\imath}$: $0 - 2yz = -2yz = -4$;
-    $\hat{\jmath}$: $0 - z = -2$; $\hat{k}$: $0 - x = -1$.
-    So $\nabla\times\mathbf{F} = \mathbf{-4\hat{\imath} - 2\hat{\jmath} -
-    \hat{k}}$.
-17. $f_x = 2x + y - 6 = 0$ and $f_y = x + 2y = 0 \implies x = -2y$. Substituting:
-    $-4y + y - 6 = 0 \implies y = -2$, $x = 4$. Critical point $(4,-2)$.
-    $f_{xx} = 2$, $f_{yy} = 2$, $f_{xy} = 1$, so $D = 4 - 1 = 3 > 0$ with
-    $f_{xx} > 0$: **local minimum**, $f(4,-2) = 16 - 8 + 4 - 24 = -12$.
-18. Minimize $A = xy + 2xz + 2yz$ subject to $xyz = 32$. The conditions give
-    $x = y = 2z$, so $4z^3 = 32 \implies z = 2$, and
-    $\mathbf{x = y = 4\ m}$, $\mathbf{z = 2\ m}$, with
-    $A = 16 + 16 + 16 = \mathbf{48\ m^2}$.
-19. (a) With $I = 85.0\times10^6$ mm⁴ $= 85.0\times10^{-6}$ m⁴ and
-    $E = 200\times10^9$ Pa:
+11. Freeze the other input for each derivative:
 
-    $$\delta = \frac{25.0\times10^3(4.00)^3}{48\left(200\times10^9\right)\left(85.0\times10^{-6}\right)} = \frac{1.600\times10^6}{8.160\times10^8} = 1.961\times10^{-3}\text{ m} = \mathbf{1.96\ mm}$$
+    $$f_x=12x^2y^2-5y,\qquad f_y=8x^3y-5x+8y^3,$$
+    $$f_{xx}=24xy^2,\qquad f_{yy}=8x^3+24y^2,$$
+    $$\boxed{f_{xy}=f_{yx}=24x^2y-5.}$$
 
-    (b) Exponents are $1, 3, -1, -1$:
+    **Check:** the function is polynomial, so the mixed-partial condition holds
+    everywhere, and the two routes agree. (§23.2)
 
-    $$\frac{d\delta}{\delta} \le \frac{0.5}{25.0} + 3\left(\frac{0.01}{4.00}\right) + \frac{5}{200} + \frac{1.5}{85.0}$$
-    $$= 0.02000 + 0.00750 + 0.02500 + 0.01765 = \mathbf{7.02\%}$$
+12. The domain requires $x^2+y>0$. Differentiation gives
 
-    So $\delta = 1.96 \pm 0.14$ mm.
+    $$f_x=\frac{2x}{x^2+y},\quad f_y=\frac1{x^2+y},\quad
+    f_x(2,1)=0.8,\quad f_y(2,1)=0.2.$$
 
-    (c) Ranked: $E$ at $35.6\%$, $P$ at $28.5\%$, $I$ at $25.1\%$, $L$ at
-    $10.7\%$. **Improve the modulus first.** Note the lesson — length has the
-    largest exponent by far, yet contributes least, because it is measured to
-    0.25% while the modulus is known only to 2.5%. A large exponent on a
-    well-known quantity is harmless; a small exponent on a poorly known one is
-    not.
+    The plane is $z=\ln5+0.8(x-2)+0.2(y-1)$. Thus
+
+    $$\boxed{f(2.02,0.99)\approx\ln5+0.8(0.02)+0.2(-0.01)
+    =\ln5+0.014\approx1.62344.}$$
+
+    **Check:** the exact value is $\ln(5.0704)\approx1.62342$, within about
+    $0.00002$ of the estimate, and both points lie in the domain. (§23.2, §23.3)
+
+13. $A_0=(240)(120)=28800\ \mathrm{mm^2}$. Then
+
+    $$\frac{\varepsilon_A^{(1)}}{A_0}=\frac2{240}+\frac1{120}
+    =\frac1{60}=1.6667\%,\qquad
+    \boxed{\varepsilon_A^{(1)}=480\ \mathrm{mm^2}}.$$
+
+    Both inputs contribute 50%. **Check:** the direct differential is
+    $(120\ \mathrm{mm})(2\ \mathrm{mm})+(240\ \mathrm{mm})(1\ \mathrm{mm})$,
+    also $480\ \mathrm{mm^2}$. (§23.3)
+
+14. (a) $P_{w,0}=(3.50)^2(22.0)=269.5\ \mathrm W$.
+
+    $$\frac{\varepsilon_{P_w}^{(1)}}{P_{w,0}}
+    =2\frac{0.04}{3.50}+\frac{0.3}{22.0}
+    =0.0364935=3.64935\%,$$
+    $$\boxed{\varepsilon_{P_w}^{(1)}=9.835\ \mathrm W\approx9.8\ \mathrm W}.$$
+
+    Current supplies 62.6% and resistance 37.4% of the first-order total.
+    **Check:** their absolute contributions are
+    $(2I_eR_e)\varepsilon_{I_e}=6.160\ \mathrm W$ and
+    $I_e^2\varepsilon_{R_e}=3.675\ \mathrm W$, summing to $9.835\ \mathrm W$.
+
+    (b) Keep the signs of the time rates:
+
+    $$\frac{dP_w}{dt}=2I_eR_e\frac{dI_e}{dt}
+    +I_e^2\frac{dR_e}{dt}
+    =3.080-1.225=\boxed{1.855\ \mathrm{W/s}}.$$
+
+    Increasing current wins over decreasing resistance; the net is positive.
+    (§23.3, §23.4)
+
+15. $f_x=2xy$ and $f_y=x^2-3y^2$, so
+    $\boxed{\nabla f(3,1)=\langle6,6\rangle}$ and
+    $\boxed{|\nabla f|=6\sqrt2\approx8.49}$.
+    The direction toward $(3,5)$ is $\langle0,4\rangle$, whose unit vector is
+    $\langle0,1\rangle$. The directional derivative is $\boxed{6}$.
+    **Check:** $|6|\le6\sqrt2$. (§23.5)
+
+16. Differentiate matching components for divergence:
+    $\nabla\cdot\mathbf F=y+z^2+x$, giving $\boxed{6}$.
+    For curl,
+
+    $$\nabla\times\mathbf F
+    =\langle-2yz,-z,-x\rangle,\qquad
+    \boxed{\nabla\times\mathbf F(1,1,2)=\langle-4,-2,-1\rangle}.$$
+
+    **Check:** divergence is scalar and curl is vector. The middle curl component
+    is $(F_x)_z-(F_z)_x=0-z$, confirming its sign. (§23.6)
+
+17. Solve $2x+y-6=0$ and $x+2y=0$: $(x,y)=(4,-2)$.
+    Here $f_{xx}=f_{yy}=2$, $f_{xy}=1$, and $D=3>0$.
+    The point is a minimum with $\boxed{f(4,-2)=-12}$.
+    **Check:** writing $u=x-4$ and $v=y+2$ gives
+    $f+12=(u+v/2)^2+3v^2/4\ge0$, proving this minimum is global. (§23.7)
+
+18. Let $x,y$ be the base dimensions and $z$ the height, all positive.
+    The objective is $A=xy+2xz+2yz$ and the constraint is $xyz=32\ \mathrm{m^3}$.
+    Lagrange gives
+
+    $$y+2z=\lambda_L yz,\quad x+2z=\lambda_L xz,\quad
+    2x+2y=\lambda_L xy.$$
+
+    Multiplying the first two equations by $x$ and $y$ shows $x=y$.
+    The third then gives $\lambda_L=4/x$; the first gives $x=2z$.
+    Hence $4z^3=32$ in metre units:
+
+    $$\boxed{x=y=4\ \mathrm m,\quad z=2\ \mathrm m,\quad A=48\ \mathrm{m^2}}.$$
+
+    **Check:** volume is $4(4)(2)=32\ \mathrm{m^3}$. For fixed base product,
+    $(x-y)^2\ge0$ makes $x+y$ smallest at $x=y$. Among square bases,
+    $A(x)=x^2+128/x$ in consistent metre units has
+    $A''(x)=2+256/x^3>0$ and diverges at either positive-domain extreme.
+    The candidate is the global minimum. (§23.7)
+
+19. First convert $I_A=85.0\times10^{-6}\ \mathrm{m^4}$ and
+    $E=200\times10^9\ \mathrm{N/m^2}$. Then
+
+    $$\delta_0=\frac{(25.0\times10^3)(4.00)^3}
+    {48(200\times10^9)(85.0\times10^{-6})}
+    =0.00196078\ \mathrm m=\boxed{1.96078\ \mathrm{mm}}.$$
+
+    The exponent weights are $1,3,1,1$ in magnitude:
+
+    $$\frac{\varepsilon_\delta^{(1)}}{\delta_0}
+    =\frac{0.5}{25.0}+3\frac{0.01}{4.00}+\frac5{200}+\frac{1.5}{85.0}
+    =0.0701471=\boxed{7.01471\%}.$$
+
+    Thus $\varepsilon_\delta^{(1)}\approx0.13755\ \mathrm{mm}$ and the rounded
+    first-order result is $(1.96\pm0.14)\ \mathrm{mm}$.
+    Ranking: $E$ contributes 35.6%, load 28.5%, $I_A$ 25.2%, and length 10.7%.
+    Improve the modulus estimate first if comparable improvements cost the same.
+    **Check:** the model's units reduce to
+    $(\mathrm N\,\mathrm{m^3})/[(\mathrm{N/m^2})\mathrm{m^4}]=\mathrm m$.
+    The exponent of 3 does not make length dominant because its relative
+    tolerance is much smaller. (§23.3)
 
 ### Multiple Choice
 
-20. **B** — differentiate in $y$ with $x$ frozen.
-21. **B** — a vector.
-22. **A** — a scalar, as the dot product signals.
-23. **C** — $2(1\%) + 1(1\%) = 3\%$.
-24. **C** — saddle point.
-25. **B** — irrotational; solenoidal and incompressible refer to zero divergence.
-26. **B** — parallel to $\nabla f$, giving $D_{\mathbf{u}}f = \lvert\nabla
-    f\rvert$.
-27. **C** — heat flows down the gradient, opposite to the gradient's direction.
+20. **B.** Hold $x^2$ fixed and differentiate $y^3$ to $3y^2$.
+    A is $f_x$; C is the mixed partial $f_{xy}$; D adds two different first
+    partials and is not the requested derivative. (§23.2)
+21. **B.** The gradient collects coordinate sensitivities into a vector.
+    A omits direction, C is a different kind of object, and D is true only
+    at special points or for a constant field. (§23.5)
+22. **A.** Divergence adds three scalar partial derivatives.
+    B and C incorrectly assign it a vector direction; D confuses the dot and
+    cross operations and their output types. (§23.6)
+23. **C.** The first-order estimate is $2(1\%)+1(1\%)=3\%$.
+    A omits contributions, B ignores the radius exponent, and D adds an
+    unsupported extra percentage point. The exact finite upper deviation is
+    $(1.01)^3-1=3.0301\%$, reinforcing the first-order qualification. (§23.3)
+24. **C.** Negative discriminant gives quadratic changes of opposite signs
+    along suitable directions. A and B require positive $D$ with the appropriate
+    sign of $f_{xx}$; D describes the zero-discriminant case. (§23.7)
+25. **B.** Irrotational means zero curl. Solenoidal means zero divergence;
+    incompressible concerns a velocity field's volume changes. Neither follows
+    merely from zero curl. “Divergent” is not the name for this condition. (§23.6)
+26. **B.** The dot product is greatest when $\cos\theta=1$.
+    A and C give zero at a regular contour; D gives the most negative derivative.
+    The nonzero-gradient condition prevents an undefined preferred direction.
+    (§23.5)
+27. **C.** $\nabla T$ points toward higher temperature, so $-k\nabla T$ points
+    toward lower temperature when $k>0$. A contradicts the given coefficient,
+    B reverses the physical direction, and D gives the wrong output type. (§23.5)
 
 ---
 
-## Summary Card
+## Practice Problems
 
-**Partial derivatives** — differentiate in one variable, freeze the rest. All
-Chapter 01-17 rules apply. Mixed partials commute: $f_{xy} = f_{yx}$.
+Work these on paper before reading the solutions. The physical models are
+supplied. Use their stated units consistently; numerical coordinate values refer
+to those units. First-order uncertainty estimates do not replace finite-range
+tolerance checks.
 
-**Total differential and error propagation**
+1. **Temperature sensitivities — SI.** A plate has
+   $T(x,y)=20\,^\circ\mathrm C+(3\ \mathrm{K/m^2})x^2
+   +(2\ \mathrm{K/m^2})xy-(1\ \mathrm{K/m^2})y^2$.
+   At $(1,2)\ \mathrm m$, find $T$, $T_x$, $T_y$, both mixed partials, and
+   a unit direction along which the first-order temperature change is zero.
+2. **Surface approximation — SI.** A height model is
+   $z=x^2/(4\ \mathrm m)+y^2/(2\ \mathrm m)$.
+   Find the tangent plane at $(x,y)=(2,1)\ \mathrm m$.
+   Estimate the height at $(2.04,0.98)\ \mathrm m$ and compare with the exact value.
+3. **Tank-volume uncertainty — USCS.** A cylinder has
+   $r=1.50\pm0.01\ \mathrm{ft}$ and $h=4.00\pm0.02\ \mathrm{ft}$.
+   Find nominal volume, first-order uncertainty, and each input's share.
+   Compare the relative estimate with the exact upper endpoint.
+4. **Changing cylinder — SI.** At one instant, $r=0.250\ \mathrm m$,
+   $h=1.20\ \mathrm m$, $dr/dt=0.0020\ \mathrm{m/s}$, and
+   $dh/dt=-0.0050\ \mathrm{m/s}$. Find $dV/dt$ for $V=\pi r^2h$ and identify
+   which effect wins.
+5. **Direction matters — USCS.** Let
+   $T(x,y)=68\,^\circ\mathrm F+(4\,^\circ\mathrm{F/ft})x
+   -(3\,^\circ\mathrm{F/ft})y$.
+   Find the temperature rate per foot when moving from the origin toward
+   $(3,4)\ \mathrm{ft}$, the maximum rate, and its unit direction.
+6. **A supplied heat-flux model — SI.** Let
+   $T(x,y)=300\ \mathrm K+(2\ \mathrm{K/m^2})x^2
+   +(3\ \mathrm{K/m^2})y^2$ and
+   $\mathbf q=-k\nabla T$, with $k=15\ \mathrm{W/(m\cdot K)}$.
+   Find heat flux at $(1,2)\ \mathrm m$, its magnitude, and its unit direction.
+7. **Expansion without spin — USCS.** Coordinates are in feet and
+   $\mathbf v=\langle(2\ \mathrm{s^{-1}})x,
+   -(1\ \mathrm{s^{-1}})y,(0.5\ \mathrm{s^{-1}})z\rangle$.
+   Compute divergence and curl. Is the field solenoidal? Is it irrotational?
+8. **Spin without expansion — SI.** Coordinates are in metres and
+   $\mathbf v=\langle-(3\ \mathrm{s^{-1}})y,
+   (3\ \mathrm{s^{-1}})x,0\rangle$.
+   Find velocity at $(2,1,0)\ \mathrm m$, divergence, curl, and the local
+   angular-velocity vector.
+9. **An open box — USCS.** A rectangular box with no lid must hold
+   $108\ \mathrm{ft^3}$. With uniform material thickness and no allowance for
+   seams or waste, find the positive dimensions minimizing material area.
+   Use Lagrange multipliers and verify the minimum.
+10. **Largest inscribed rectangle — SI.** A rectangle centered at the origin has
+    vertices $(\pm x,\pm y)$ and lies inside a circle of radius $4\ \mathrm m$,
+    with $x,y>0$. Maximize its area using the boundary constraint
+    $x^2+y^2=16\ \mathrm{m^2}$. Find the full side lengths and area, and
+    prove that your candidate is a global maximum.
 
-$$df = \frac{\partial f}{\partial x}dx + \frac{\partial f}{\partial y}dy + \cdots \qquad \lvert df\rvert \le \sum\left\lvert\frac{\partial f}{\partial x_i}\right\rvert\lvert dx_i\rvert$$
+---
 
-**Power-law shortcut** — for $f = Cx^ay^bz^c$:
+## Practice Problem Solutions
 
-$$\frac{\lvert df\rvert}{f} \le \lvert a\rvert\frac{\lvert dx\rvert}{x} + \lvert b\rvert\frac{\lvert dy\rvert}{y} + \lvert c\rvert\frac{\lvert dz\rvert}{z}$$
+1. **Approach.** Differentiate the supplied temperature model, evaluate the
+   sensitivities, then choose a direction perpendicular to the gradient.
 
-Worst case, not statistical. Rank the terms to find the dominant input.
+   **Solution.** Substitution gives $T=20+3+4-4=23\,^\circ\mathrm C$.
+   The derivatives are
 
-**Tangent plane** — the first-order Taylor polynomial:
+   $$T_x=(6\ \mathrm{K/m^2})x+(2\ \mathrm{K/m^2})y,\qquad
+   T_y=(2\ \mathrm{K/m^2})x-(2\ \mathrm{K/m^2})y.$$
 
-$$z = f(a,b) + f_x(a,b)(x-a) + f_y(a,b)(y-b)$$
+   At the point, $\nabla T=\langle10,-2\rangle\ \mathrm{K/m}$ and
+   $T_{xy}=T_{yx}=2\ \mathrm{K/m^2}$.
+   A perpendicular unit direction is
+   $\boxed{\mathbf u=\langle1,5\rangle/\sqrt{26}}$ (its negative also works).
+   **Check.** $\nabla T\cdot\mathbf u=(10-10)/\sqrt{26}=0\ \mathrm{K/m}$,
+   and $|\mathbf u|=1$. Celsius temperature differences and kelvin differences
+   have equal size. (§23.2, §23.5)
 
-**Chain rule** — $\dfrac{df}{dt} = \sum \dfrac{\partial f}{\partial x_i}\dfrac{dx_i}{dt}$. Keep the signs.
+2. **Approach.** Evaluate height and slopes at the base point, keeping their
+   units. Compare the local plane with direct substitution.
 
-**Vector operators**
+   **Solution.** The base height is $1.50\ \mathrm m$.
+   The slopes are $z_x=x/(2\ \mathrm m)=1$ and
+   $z_y=y/(1\ \mathrm m)=1$, both dimensionless there. Thus
 
-| Operator | Formula | Output | Reading |
-|---|---|---|---|
-| $\nabla f$ | $\left\langle f_x, f_y, f_z\right\rangle$ | vector | steepest increase; $\perp$ contours |
-| $\nabla\cdot\mathbf{F}$ | $\frac{\partial F_x}{\partial x} + \frac{\partial F_y}{\partial y} + \frac{\partial F_z}{\partial z}$ | scalar | source $(+)$, sink $(-)$, solenoidal $(0)$ |
-| $\nabla\times\mathbf{F}$ | determinant with $\hat{\imath},\hat{\jmath},\hat{k}$ | vector | local rotation; $\mathbf{0}$ = conservative |
+   $$\boxed{z_{\mathrm{plane}}=1.50\ \mathrm m
+   +(x-2.00\ \mathrm m)+(y-1.00\ \mathrm m).}$$
 
-$$D_{\mathbf{u}}f = \nabla f\cdot\mathbf{u}, \quad \lvert\mathbf{u}\rvert = 1, \quad \lvert D_{\mathbf{u}}f\rvert \le \lvert\nabla f\rvert$$
+   The prediction is $1.50+0.04-0.02=\boxed{1.52\ \mathrm m}$.
+   **Check.** The exact height is
+   $2.04^2/4+0.98^2/2=1.5206\ \mathrm m$.
+   The error is $0.0006\ \mathrm m=0.6\ \mathrm{mm}$, equal to
+   $(0.04\ \mathrm m)^2/(4\ \mathrm m)
+   +(-0.02\ \mathrm m)^2/(2\ \mathrm m)$. (§23.3)
 
-**Transport laws** — all carry a minus sign:
-$\mathbf{q} = -k\nabla T$, $\mathbf{J} = -D\nabla C$, $\mathbf{v} = -K\nabla h$,
-$\mathbf{E} = -\nabla V$.
+3. **Approach.** Use the radius exponent 2 and height exponent 1. Then increase
+   both positive inputs to their upper endpoints for an exact comparison.
 
-**Optimization** — critical points where $\nabla f = \mathbf{0}$, then
-$D = f_{xx}f_{yy} - f_{xy}^2$:
+   **Solution.**
 
-| $D$ | $f_{xx}$ | Type |
+   $$V_0=\pi(1.50\ \mathrm{ft})^2(4.00\ \mathrm{ft})
+   =28.2743\ \mathrm{ft^3},$$
+   $$\frac{\varepsilon_V^{(1)}}{V_0}
+   =2\frac{0.01}{1.50}+\frac{0.02}{4.00}
+   =0.0183333,$$
+   $$\boxed{\varepsilon_V^{(1)}=0.51836\ \mathrm{ft^3},\quad
+   V\approx(28.27\pm0.52)\ \mathrm{ft^3}.}$$
+
+   Radius contributes 72.7% and height 27.3%.
+   **Check.** The exact relative upper deviation is
+   $(1.51/1.50)^2(4.02/4.00)-1=1.84447\%$,
+   slightly above the first-order 1.83333%. No mass/force conversion is involved;
+   this is purely a geometric volume model. (§23.3)
+
+4. **Approach.** Add the signed radius and height contributions to the volume rate.
+
+   **Solution.**
+
+   $$\frac{dV}{dt}=2\pi rh\frac{dr}{dt}+\pi r^2\frac{dh}{dt}$$
+   $$=2\pi(0.250)(1.20)(0.0020)+\pi(0.250)^2(-0.0050)
+   =0.0008875\pi\ \mathrm{m^3/s}$$
+   $$\boxed{\frac{dV}{dt}=0.0027882\ \mathrm{m^3/s}\approx2.79\ \mathrm{L/s}.}$$
+
+   **Check.** The positive radius term is $0.0037699\ \mathrm{m^3/s}$;
+   the negative height term is $-0.00098175\ \mathrm{m^3/s}$.
+   Their sum is positive, so the widening cylinder gains volume despite becoming
+   shorter. Each term is an area times a length rate. (§23.4)
+
+5. **Approach.** Normalize the displacement from the origin before taking its
+   dot product with the constant gradient.
+
+   **Solution.** $\nabla T=\langle4,-3\rangle\,^\circ\mathrm{F/ft}$.
+   Toward $(3,4)$, $\mathbf u=\langle3/5,4/5\rangle$, so
+
+   $$D_{\mathbf u}T=4(3/5)-3(4/5)=\boxed{0\,^\circ\mathrm{F/ft}}.$$
+
+   The maximum rate is
+   $\boxed{|\nabla T|=5\,^\circ\mathrm{F/ft}}$, in unit direction
+   $\boxed{\langle4/5,-3/5\rangle}$.
+   **Check.** Direct substitution at $(3,4)\ \mathrm{ft}$ gives
+   $68+12-12=68\,^\circ\mathrm F$, unchanged from the origin. Because the field
+   is affine, this entire straight path has zero change, not just zero local rate.
+   (§23.5)
+
+6. **Approach.** Compute the temperature gradient, then multiply by $-k$.
+
+   **Solution.** At $(1,2)\ \mathrm m$,
+   $\nabla T=\langle4,12\rangle\ \mathrm{K/m}$.
+
+   $$\boxed{\mathbf q=\langle-60,-180\rangle\ \mathrm{W/m^2}},\qquad
+   \boxed{|\mathbf q|=\sqrt{36000}=189.74\ \mathrm{W/m^2}}.$$
+
+   Its unit direction is
+   $\boxed{\langle-1,-3\rangle/\sqrt{10}}$.
+   **Check.** The direction is opposite the temperature gradient, its norm is
+   one, and conductivity times temperature gradient gives
+   $\mathrm{W/m^2}$ as required. (§23.5)
+
+7. **Approach.** Use matching derivatives for divergence and cross derivatives
+   for curl; each component depends only on its matching coordinate.
+
+   **Solution.**
+
+   $$\boxed{\nabla\cdot\mathbf v=2-1+0.5=1.5\ \mathrm{s^{-1}}},\qquad
+   \boxed{\nabla\times\mathbf v=\mathbf0\ \mathrm{s^{-1}}}.$$
+
+   The field is **not solenoidal** but is **irrotational**.
+   **Check.** Every cross derivative is zero. The positive divergence describes
+   local expansion; zero curl says that expansion need not involve local spin.
+   Differentiating ft/s with respect to ft leaves $\mathrm{s^{-1}}$. (§23.6)
+
+8. **Approach.** Substitute for velocity, then differentiate the field before
+   substituting for its operators.
+
+   **Solution.** At $(2,1,0)\ \mathrm m$,
+   $\boxed{\mathbf v=\langle-3,6,0\rangle\ \mathrm{m/s}}$.
+   All matching derivatives vanish, so divergence is zero.
+   The only nonzero curl component is
+
+   $$\frac{\partial v_y}{\partial x}-\frac{\partial v_x}{\partial y}
+   =3-(-3)=6\ \mathrm{s^{-1}}.$$
+
+   Therefore
+   $\boxed{\nabla\times\mathbf v=6\hat{k}\ \mathrm{s^{-1}}}$ and the local
+   angular-velocity vector is $\boxed{3\hat{k}\ \mathrm{rad/s}}$.
+   **Check.** A point on the positive $x$ axis moves toward positive $y$,
+   consistent with the positive $z$ rotation direction. Zero divergence and
+   nonzero curl can occur together. (§23.6)
+
+9. **Approach.** Include the base and four sides, but no lid. Use the volume
+   equation together with the three Lagrange component equations.
+
+   **Solution.** For base dimensions $x,y$ and height $z$,
+   $A=xy+2xz+2yz$ and $xyz=108\ \mathrm{ft^3}$. The equations are
+
+   $$y+2z=\lambda_L yz,\quad x+2z=\lambda_L xz,\quad
+   2x+2y=\lambda_L xy.$$
+
+   Multiplying the first two by $x$ and $y$ and subtracting gives $x=y$.
+   The third then gives $\lambda_L=4/x$; substitution into the first gives
+   $x=2z$. Consequently $4z^3=108\ \mathrm{ft^3}$:
+
+   $$\boxed{x=y=6\ \mathrm{ft},\qquad z=3\ \mathrm{ft},\qquad
+   A=108\ \mathrm{ft^2}.}$$
+
+   **Check.** Volume is $6(6)(3)=108\ \mathrm{ft^3}$.
+   For any fixed height, a square base minimizes the side-area contribution
+   because $(x-y)^2\ge0$ implies $x+y\ge2\sqrt{xy}$.
+   On square bases, $A(x)=x^2+432/x$ in consistent foot units has
+   $A''(x)=2+864/x^3>0$ and grows without bound at either positive-domain extreme.
+   The stationary dimensions give the global minimum. (§23.7)
+
+10. **Approach.** The full rectangle area is $A=4xy$, not $xy$.
+    At a maximum it reaches the circle; otherwise scaling both positive
+    dimensions upward would increase area while remaining feasible.
+
+    **Solution.** Let $g=x^2+y^2$. Lagrange gives
+
+    $$4y=2\lambda_L x,\qquad4x=2\lambda_L y,\qquad
+    x^2+y^2=16\ \mathrm{m^2}.$$
+
+    For positive $x,y$, the first two imply $x=y$ and $\lambda_L=2$.
+    Thus $x=y=2\sqrt2\ \mathrm m$ and
+
+    $$\boxed{\text{full sides}=4\sqrt2\ \mathrm m\approx5.657\ \mathrm m,\qquad
+    A_{\max}=32\ \mathrm{m^2}.}$$
+
+    **Check.** From $(x-y)^2\ge0$, $2xy\le x^2+y^2\le16\ \mathrm{m^2}$;
+    hence $4xy\le32\ \mathrm{m^2}$ throughout the feasible disk.
+    The candidate achieves this upper bound. Boundary-axis cases have zero area.
+    (§23.7)
+
+---
+
+## Source References
+
+The derivations and exercises above are presented in the guide's own notation.
+For independent mathematical reference and additional illustrations:
+
+- OpenStax, *Calculus Volume 3*, [4.4, Tangent Planes and Linear Approximations](https://openstax.org/books/calculus-volume-3/pages/4-4-tangent-planes-and-linear-approximations).
+- OpenStax, *Calculus Volume 3*, [4.6, Directional Derivatives and the Gradient](https://openstax.org/books/calculus-volume-3/pages/4-6-directional-derivatives-and-the-gradient).
+- OpenStax, *Calculus Volume 3*, [4.8, Lagrange Multipliers](https://openstax.org/books/calculus-volume-3/pages/4-8-lagrange-multipliers).
+- OpenStax, *Calculus Volume 3*, [6.5, Divergence and Curl](https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl).
+- NCEES, [FE exam and reference-handbook access](https://ncees.org/exams/fe-exam/).
+  This source establishes where to obtain the assigned reference; it does not
+  verify the page locations or coverage of individual formulas in this draft.
+
+---
+
+## Quick Reference
+
+**Partials:** freeze all other independent inputs. Continuous second partials
+nearby permit $f_{xy}=f_{yx}$.
+
+**Local change and tangent plane** — evaluate partials at the base point:
+
+$$df=f_xdx+f_ydy+f_zdz,\qquad
+z=f(a,b)+f_x(a,b)(x-a)+f_y(a,b)(y-b).$$
+
+$df$ estimates $\Delta f$. Bounded second partials give a second-order remainder
+bound nearby; the approximation can fail for large steps.
+
+**First-order uncertainty estimate:**
+
+$$\varepsilon_f^{(1)}=\sum_i|f_{x_i}|\varepsilon_{x_i}.$$
+
+For nonzero inputs and $f=Cx^py^qz^s$ with exact $C$,
+
+$$\frac{\varepsilon_f^{(1)}}{|f_0|}
+=|p|\frac{\varepsilon_x}{|x|}+|q|\frac{\varepsilon_y}{|y|}
++|s|\frac{\varepsilon_z}{|z|}.$$
+
+This is not automatically an exact finite-error bound. Rank the weighted terms,
+not just the exponents.
+
+**Chain rule:** $\displaystyle df/dt=\sum_i f_{x_i}\,dx_i/dt$.
+Keep signs; add $\partial f/\partial t$ if the model has explicit time dependence.
+
+| Operator | Formula | Output |
 |---|---|---|
-| $>0$ | $>0$ | minimum |
-| $>0$ | $<0$ | maximum |
-| $<0$ | — | saddle |
-| $=0$ | — | test fails |
+| Gradient | $\nabla f=\langle f_x,f_y,f_z\rangle$ | vector |
+| Divergence | $\nabla\cdot\mathbf F=(F_x)_x+(F_y)_y+(F_z)_z$ | scalar |
+| Curl | $\nabla\times\mathbf F=\langle(F_z)_y-(F_y)_z,(F_x)_z-(F_z)_x,(F_y)_x-(F_x)_y\rangle$ | vector |
 
-**Constrained** — solve $\nabla f = \lambda\nabla g$ **together with** $g = k$.
-Discard $\lambda$. Closed cylinder of minimum area: $h = 2r$.
+$$D_{\mathbf u}f=\nabla f\cdot\mathbf u,\qquad
+|\mathbf u|=1,\qquad |D_{\mathbf u}f|\le|\nabla f|.$$
+
+A nonzero gradient points toward steepest increase and is normal to a regular
+contour. Zero divergence means solenoidal; zero curl means irrotational.
+Zero curl implies a conservative field under the smoothness and domain
+conditions stated in §23.6.
+
+**Stationary points:** solve $f_x=f_y=0$ and evaluate $D=f_{xx}f_{yy}-f_{xy}^2$.
+
+| Condition | Conclusion |
+|---|---|
+| $D>0,\ f_{xx}>0$ | local minimum |
+| $D>0,\ f_{xx}<0$ | local maximum |
+| $D<0$ | saddle |
+| $D=0$ | inconclusive |
+
+**One smooth equality constraint:**
+$\nabla f=\lambda_L\nabla g$ **and** $g=c_0$, with $\nabla g\ne\mathbf0$.
+Classify candidates and inspect allowed boundaries and singular points.
+Minimum-area closed cylinder at fixed volume: $h=2r$.
 
 ---
 
-## Looking Ahead
+## What's Next
 
-Three threads leave this chapter.
+You have extended differentiation from one changing input to several. You can
+separate sensitivities, recombine actual changes, estimate measurement effects,
+and ask what a field is doing at one location. You can also distinguish a
+promising design candidate from a verified optimum.
 
-**Multiple integration** comes next, in Chapter 01-24. Partial differentiation
-sliced a multivariable function one direction at a time; double and triple
-integrals accumulate over a region instead. That is how the centroid and
-second-moment integrals from Chapter 01-20 generalize to shapes that cannot be
-described by a single vertical slice.
+The next chapter, **01-24 Multiple Integration**, turns from local rates
+to accumulation over regions. The surfaces and level curves from §23.1 give us
+a way to picture the regions before setting up the sums. Keep that geometric
+picture; it will matter as much as the integration technique.
 
-**Differential equations** follow in Chapter 01-25. An equation relating a
-function to its derivatives is the standard form of a physical law, and the
-gradient, divergence, and curl assembled here are the building blocks of the
-partial differential equations behind heat conduction, fluid flow, and
-electromagnetics. You will not solve those in Tier 1C, but you will recognize them.
+### Going further — optional
 
-**The transport laws** recur across every discipline track. Fourier's law appears
-in Chapter 02-55, Fick's law in the chemical and environmental tracks, Darcy's law
-in the civil and environmental tracks, and $\mathbf{E} = -\nabla V$ in Chapter
-02-61. All four are the same statement, and you now know what the statement says.
+Differential equations later describe unknown functions through their rates of
+change. Heat transfer, fluid flow, and electrical fields reuse the gradient,
+divergence, and curl. Statistical uncertainty methods later add information about
+measurement distributions and dependence. These are destinations, not prerequisites
+for the calculations you have just completed.
 
-More immediately, the error propagation habit from §23.3 belongs to you rather
-than to this chapter. Every time a later problem hands you measured inputs and asks
-for a computed output, the power-law rule tells you how much confidence the answer
-deserves — and which measurement to blame.
+Before leaving, do Practice Problems 3 and 4 back to back. One asks how uncertain
+an output might be; the other asks which way it is actually changing. If you can
+explain why one uses magnitudes and the other keeps signs, you have learned the
+distinction that makes this chapter useful.
+
+Bring that habit to the next page.
+
+See you there.
