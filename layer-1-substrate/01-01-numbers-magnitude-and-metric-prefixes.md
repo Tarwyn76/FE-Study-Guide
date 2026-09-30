@@ -128,7 +128,7 @@ same way.
 | **Irrational** | A real number not expressible as such a ratio | $\pi$, $e$, $\sqrt{2}$ |
 | **Real** | Any rational or irrational number | all of the above |
 
-![FIG-01-01-001: Nested-set diagram showing integers inside rationals inside reals, with irrationals occupying the remainder of the reals — pi, e, and root two labelled in the irrational region, and root nine labelled inside the integers to show that a radical sign does not make a number irrational](../figures/FIG-01-01-001-number-sets.png)
+![FIG-01-01-005: Nested-set diagram showing integers inside rationals inside reals, with irrationals occupying the remainder of the reals — pi, e, and root two labelled in the irrational region, and root nine labelled inside the integers to show that a radical sign does not make a number irrational](../figures/FIG-01-01-005-number-sets.png)
 
 Two notes with practical weight.
 
@@ -482,6 +482,8 @@ size. It's a deliberately crude measure, and its crudeness is the point.
 | Atmospheric pressure | $1.013 \times 10^5$ Pa | $10^5$ |
 | Elastic modulus of steel | $\sim 2 \times 10^{11}$ Pa | $10^{11}$ |
 
+![FIG-01-01-001: Logarithmic order-of-magnitude number line from 10^-19 to 10^11 with engineering reference points for electron charge, human hair diameter, standard gravity, atmospheric pressure, and elastic modulus of steel](../figures/FIG-01-01-001-order-of-magnitude-number-line.png)
+
 Convention: if the mantissa is below about 3, the order of magnitude is the
 exponent; above that, round up. So $7 \times 10^{-5}$ is closer to $10^{-4}$
 than to $10^{-5}$. (The exact crossover is $\sqrt{10} \approx 3.16$, which is
@@ -524,6 +526,8 @@ $$5{,}600 \text{ mm}^2 = 5{,}600 \times 10^{-6} \text{ m}^2 = 5.60 \times 10^{-3
 Note the area conversion. A millimetre is $10^{-3}$ m, so a *square*
 millimetre is $(10^{-3})^2 = 10^{-6}$ m². Squaring the prefix squares the
 power of ten.
+
+![FIG-01-01-004: Rectangular cross-section with an 840 kN axial load and an annotation showing conversion of 5,600 mm² to 5.60 × 10^-3 m² before computing stress](../figures/FIG-01-01-004-axial-load-area-conversion.png)
 
 Step 2 — Estimate first.
 
@@ -654,7 +658,7 @@ you need fewer of them.**
 | $4.7$ GPa | MPa | 3 right | $4{,}700$ MPa |
 | $250{,}000$ Pa | kPa | 3 left | $250$ kPa |
 
-![FIG-01-01-003: Two-directional arrow diagram over the prefix ladder — an upward arrow labelled "larger prefix, smaller number" and a downward arrow labelled "smaller prefix, larger number" — with the worked conversion 4,700 ohms to 4.7 kilohms traced as an example](../figures/FIG-01-01-003-prefix-direction.png)
+![FIG-01-01-006: Two-directional arrow diagram over the prefix ladder — an upward arrow labelled "larger prefix, smaller number" and a downward arrow labelled "smaller prefix, larger number" — with the worked conversion 4,700 ohms to 4.7 kilohms traced as an example](../figures/FIG-01-01-006-prefix-direction.png)
 
 ### Worked Example 5 — A Prefix Chain
 
@@ -823,6 +827,8 @@ That second method is worth learning. **Prefix pairs combine predictably:**
 | mega × nano | $10^6 \times 10^{-9} = 10^{-3}$ | milli |
 | kilo ÷ milli | $10^3 \div 10^{-3} = 10^6$ | mega |
 
+![FIG-01-01-003: Prefix-pair multiplication matrix showing the net SI prefix produced by common engineering prefix combinations](../figures/FIG-01-01-003-prefix-pair-matrix.png)
+
 ### Worked Example 7 — Squared and Cubed Prefixes
 
 **Given.** A rectangular duct measures $450 \text{ mm}$ by $300 \text{ mm}$.
@@ -850,7 +856,7 @@ $$135{,}000 \text{ mm}^2 \times \frac{10^{-6} \text{ m}^2}{1 \text{ mm}^2} = 0.1
 
 Both routes agree, confirming the $10^{-6}$ factor.
 
-![FIG-01-01-004: Three stacked panels showing a 1 mm length beside a 1 m length, then a 1 mm square inside a 1 m square, then a 1 mm cube inside a 1 m cube — each panel annotated with the corresponding factor of ten to the minus three, minus six, and minus nine, making visible that the prefix exponent multiplies by the power](../figures/FIG-01-01-004-squared-cubed-prefix.png)
+![FIG-01-01-007: Three stacked panels showing a 1 mm length beside a 1 m length, then a 1 mm square inside a 1 m square, then a 1 mm cube inside a 1 m cube — each panel annotated with the corresponding factor of ten to the minus three, minus six, and minus nine, making visible that the prefix exponent multiplies by the power](../figures/FIG-01-01-007-squared-cubed-prefix.png)
 
 (b) Step 3 — Volumetric flow rate.
 
