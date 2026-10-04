@@ -453,17 +453,15 @@ products.
 Every approved scientific calculator has an exponent-entry key, marked
 `EE`, `EXP`, or `×10ˣ`.
 
-To enter $4.7 \times 10^{-6}$: press `4.7`, then the exponent key, then `6`,
-then the sign-change key. **Do not** press `× 10 ^ −6`.
+To enter $4.7 \times 10^{-6}$: enter `4.7`, use your calculator's exponent-entry key (`EE`, `EXP`, or `×10ˣ`), and enter `−6` using that model's required negative-exponent sequence. **Do not** enter a separate `× 10` before using the exponent key.
 
 > ---
 > **Mentor's Margin**
 >
-> Pressing `4.7 × 10 EE −6` gives you $4.7 \times 10 \times 10^{-6}$, which
-> is ten times too large. I've watched this error destroy an otherwise
-> perfect solution. Learn your calculator's exponent key and use it
-> exclusively. Then verify with a known case: enter $1 \times 10^3$ and
-> confirm the display reads 1,000, not 10,000.
+> The exact keystroke sequence varies by calculator, but the failure mode is the same:
+> do not enter a separate `×10` and then also use the exponent-entry key. That applies
+> the power-of-ten factor twice. Learn your calculator's sequence and verify it once
+> with a known case such as $1 \times 10^3 = 1{,}000$.
 >
 > ---
 
@@ -632,8 +630,8 @@ are multiples of three, so every value maps directly onto a prefix.
 | $2.2 \times 10^{-5}$ F | $22 \times 10^{-6}$ F | $22$ µF |
 | $6.8 \times 10^{-10}$ F | $680 \times 10^{-12}$ F | $680$ pF |
 
-Because exponents come in steps of three, the mantissa in engineering
-notation ranges from 1 up to 1000 rather than 1 up to 10.
+Because exponents come in steps of three, the mantissa in normalized engineering
+notation satisfies $1 \le \lvert N \rvert < 1000$ rather than the scientific-notation range $1 \le \lvert N \rvert < 10$.
 
 Most calculators have an engineering-notation display mode. **Find it and
 use it.** It does this conversion for you, which removes an entire category
@@ -805,17 +803,15 @@ Mantissas: $4.7 \times 2.50 = 11.75$. Exponents: $3 + (-4) = -1$.
 
 $$V = 11.75 \times 10^{-1} \text{ V}$$
 
-Step 4 — Renormalize, then round to three significant figures.
+Step 4 — Renormalize. Keep the calculator result unrounded here; Chapter 01-03 develops the rules for final-answer precision.
 
-$$11.75 \times 10^{-1} \text{ V} = 1.175 \text{ V} \;\rightarrow\; \boxed{1.18 \text{ V}}$$
+$$11.75 \times 10^{-1} \text{ V} = \boxed{1.175 \text{ V}}$$
 
-**Check.** Estimate said "near 1 volt"; we got 1.18 V. ✓
+**Check.** Estimate said "near 1 volt"; we got 1.175 V. ✓
 
 Alternative check using prefix arithmetic directly: kilo times micro is
 $10^3 \times 10^{-6} = 10^{-3}$, which is milli. So $4.7 \times 250 = 1{,}175$
-in millivolts, which is $1{,}175 \text{ mV} = 1.175 \text{ V} \rightarrow
-1.18 \text{ V}$. ✓ Same answer by a different route, rounded the same way at
-the same point.
+in millivolts, which is $1{,}175 \text{ mV} = 1.175 \text{ V}$. ✓ Same answer by a different route. Final-answer rounding is deferred to Chapter 01-03.
 
 That second method is worth learning. **Prefix pairs combine predictably:**
 
@@ -866,16 +862,14 @@ Step 4 — Convert to litres per second, carrying full precision.
 
 $$1.1475 \frac{\text{m}^3}{\text{s}} \times \frac{1{,}000 \text{ L}}{1 \text{ m}^3} = 1{,}147.5 \text{ L/s}$$
 
-Step 5 — Round both forms to three significant figures, the precision of the
-given velocity.
+Step 5 — Express the same unrounded result in both requested unit forms. Final-answer precision is handled in Chapter 01-03.
 
-$$\boxed{Q_v = 1.15 \text{ m}^3/\text{s} = 1.15 \times 10^3 \text{ L/s} = 1{,}150 \text{ L/s}}$$
+$$\boxed{Q_v = 1.1475 \text{ m}^3/\text{s} = 1.1475 \times 10^3 \text{ L/s} = 1{,}147.5 \text{ L/s}}$$
 
 **Check.** Dimensional reasoning: area (m²) times velocity (m/s) gives m³/s.
 ✓ Magnitude: a duct roughly half a metre square, with air moving at about
 8 m/s, moving about one cubic metre per second — that's physically sensible.
-✓ Both reported forms carry three significant figures, so they describe the
-same quantity at the same precision. ✓
+✓ Both reported forms describe the same physical quantity. ✓
 
 **Where this would go wrong.** Using $10^{-3}$ instead of $10^{-6}$ for the
 mm²-to-m² conversion gives $135 \text{ m}^2$ — a duct the size of a tennis
@@ -1112,7 +1106,7 @@ anywhere in this exam.
     C) $27$
     D) $108$
 
-28. The product $(5 \times 10^{-4})(6 \times 10^{-3})$ equals:
+28. The product $(5 \times 10^{-4})(6 \times 10^{-3})$ written in proper scientific notation is:
     A) $3.0 \times 10^{-6}$
     B) $3.0 \times 10^{-7}$
     C) $30 \times 10^{-7}$
@@ -1432,15 +1426,15 @@ $$A = \frac{\pi D^2}{4} = \frac{\pi (0.150)^2}{4} = \frac{\pi (0.0225)}{4} = \fr
 
 $$Q_v = Av = (1.767 \times 10^{-2})(2.4) = 4.241 \times 10^{-2} \text{ m}^3/\text{s}$$
 
-Three significant figures: $\boxed{4.24 \times 10^{-2} \text{ m}^3/\text{s}}$
+Keeping the calculated digits for now: $\boxed{4.241 \times 10^{-2} \text{ m}^3/\text{s}}$. Chapter 01-03 covers final-answer precision.
 
 (c)
 
-$$4.241 \times 10^{-2} \frac{\text{m}^3}{\text{s}} \times \frac{1{,}000 \text{ L}}{1 \text{ m}^3} = \boxed{42.4 \text{ L/s}}$$
+$$4.241 \times 10^{-2} \frac{\text{m}^3}{\text{s}} \times \frac{1{,}000 \text{ L}}{1 \text{ m}^3} = \boxed{42.41 \text{ L/s}}$$
 
 (d) **Physical check.** A 150 mm pipe is roughly a 6-inch water main. Water at
 2.4 m/s is a normal design velocity for such a line — municipal systems
-typically run somewhere in the 1 to 3 m/s range. And 42.4 L/s works out to
+typically run somewhere in the 1 to 3 m/s range. And 42.41 L/s works out to
 about 670 gallons per minute, a sensible flow for a 6-inch main. Everything
 reconciles. ✓
 
@@ -1492,9 +1486,7 @@ that. (B) forgets to renormalize *and* keeps the mantissa at 3, and (D) is
 arithmetic noise. (§1.3)
 
 **29. B — $4.7 \text{ M}\Omega$.** All four choices are numerically equal;
-the question asks which is *most natural*. Engineering convention puts the
-mantissa between 1 and 1000, which 4.7 satisfies. (A) at 4,700 and (C) at
-0.0047 are both legal but awkward, and (D) isn't engineering notation at all
+the question asks which is *most natural*. Normalized engineering notation uses a mantissa satisfying $1 \le \lvert N \rvert < 1000$, which 4.7 satisfies. (A) at 4,700 and (C) at 0.0047 are numerically equivalent but not normalized engineering notation, and (D) isn't engineering notation at all
 since $10^5$ is not a multiple of three. (§1.5)
 
 **30. C — mega.** Prefixes for $10^6$ and above use capitals: M, G, T, P, E.
@@ -1515,8 +1507,7 @@ gives a wrong answer. (§1.2)
 
 **33. B — the exponent must be a multiple of three.** That's what makes every
 value map onto a prefix. (A) describes *scientific* notation, so it's the
-right statement about the wrong form — in engineering notation the mantissa
-runs from 1 up to 1000. (C) is false: $680$ pF is $680 \times 10^{-12}$. (D)
+right statement about the wrong form — in normalized engineering notation the mantissa satisfies $1 \le \lvert N \rvert < 1000$. (C) is false: $680$ pF is $680 \times 10^{-12}$. (D)
 is false: $4.7$ kΩ. (§1.5)
 
 **34. C — $\sqrt{2}$.** Irrational: it neither terminates nor repeats. (A) is
@@ -1566,7 +1557,7 @@ knowledge.
 **Engineering notation**
 
 Exponent restricted to multiples of three, so every value maps onto a prefix.
-Mantissa runs 1 to 1000. Use your calculator's ENG display mode.
+Mantissa satisfies $1 \le \lvert N \rvert < 1000$. Use your calculator's ENG display mode.
 
 **Prefix conversion**
 
