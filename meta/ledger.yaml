@@ -89,7 +89,18 @@ _conventions:
     Context-dependent homonyms remain explicitly qualified.
   assessment_scope: chapter_total on the first ID of a supplied chapter. Its generated review_questions value is
     the chapter total; other IDs carry zero to prevent double counting. This is not a per-objective assessment map.
+  term_aliases: Optional canonical introduced term -> source spelling variants. Aliases do not create a second owner.
+    Context-dependent homonyms remain explicitly qualified.
+  assessment_scope: chapter_total on the first ID of a supplied chapter. Its generated review_questions value is
+    the chapter total; other IDs carry zero to prevent double counting. This is not a per-objective assessment map.
 _conventions:
+  section_numbering: 'Use the section labels actually present in the authored chapter. Layer 0 chapters use 0.1,
+    0.2, etc. Layer 1 uses the chapter number as the local prefix: 01-17 has 17.1, 17.2, etc. Across a chapter boundary,
+    qualify the section with the chapter ID. Do not relabel every Layer 1 section as 1.x.'
+  citation_style: 'OPTION 1, chapter-qualified on crossing. Within a chapter, cite bare: "(§0.4)". When citing a
+    section in a different chapter, qualify with the chapter number: "(00-03 §0.4)". Never cite a bare section number
+    across a chapter boundary. Linter rule: in any answer key or cross-reference, a bare "§N.N" must resolve to
+    a section that exists in the SAME file. If it does not, the build fails and the citation must be qualified.
   section_numbering: 'Use the section labels actually present in the authored chapter. Layer 0 chapters use 0.1,
     0.2, etc. Layer 1 uses the chapter number as the local prefix: 01-17 has 17.1, 17.2, etc. Across a chapter boundary,
     qualify the section with the chapter ID. Do not relabel every Layer 1 section as 1.x.'
@@ -99,6 +110,17 @@ _conventions:
     a section that exists in the SAME file. If it does not, the build fails and the citation must be qualified.
 
     '
+  mentors_margin_format: "BOXED. Every Mentor's Margin uses the fenced blockquote form, with an opening and closing\
+    \ rule inside the quote, the label on its own line, and blank quoted lines separating label, body, and rules:\n\
+    \n    > ---\n    > **Mentor's Margin**\n    >\n    > Body text, wrapped to the same column as surrounding prose.\n\
+    \    >\n    > ---\n\nThe inline form \"> **Mentor's Margin:** text\" is deprecated and must not appear in any\
+    \ chapter. Mentor's Margin is not a numbered section and never appears in the anatomy table or a section list.\n"
+  preview_note_format: "Single blockquote, no rules, label in bold followed by a period:\n\n    > **Preview note.**\
+    \ One or two sentences naming the later concept,\n    > why it matters, and its chapter. Teaches nothing.\n"
+  source_verification_format: 'Single blockquote, no rules, label in bold followed by a period. Required wherever
+    the chapter states a fact originating outside this guide that can go stale: question counts, appointment structure,
+    Handbook page numbers and edition, calculator policy, fees, retake rules, scoring practice, and any route or
+    tier skip derived from an NCEES specification.
   mentors_margin_format: "BOXED. Every Mentor's Margin uses the fenced blockquote form, with an opening and closing\
     \ rule inside the quote, the label on its own line, and blank quoted lines separating label, body, and rules:\n\
     \n    > ---\n    > **Mentor's Margin**\n    >\n    > Body text, wrapped to the same column as surrounding prose.\n\
@@ -450,6 +472,7 @@ concepts:
   practice_problems: 0
   figures:
   - FIG-01-01-005
+  - FIG-01-01-005
   status: revised
   notes: 'PREREQUISITE ADDED: ORIENT-0-003-01. This makes the whole Layer 0 chain a transitive prerequisite of everything
 <<<<<<< HEAD
@@ -513,6 +536,9 @@ concepts:
   figures:
   - FIG-01-01-001
   - FIG-01-01-004
+  figures:
+  - FIG-01-01-001
+  - FIG-01-01-004
   status: revised
 <<<<<<< HEAD
   notes: 'Folded into the 001-01 chapter. Kept as a separate ledger entry to allow prerequisite tracking from downstream chapters.
@@ -561,6 +587,8 @@ concepts:
   figures:
   - FIG-01-01-002
   - FIG-01-01-003
+  - FIG-01-01-006
+  - FIG-01-01-007
   - FIG-01-01-006
   - FIG-01-01-007
   status: revised
@@ -3361,6 +3389,9 @@ concepts:
   source_sections:
   - '17.5'
   - '17.6'
+  notes: §17.6 uses a sine derivative before §17.7 teaches it. This source-order defect is retained as an open manuscript
+    issue; no reverse dependency is added to conceal it. Mapped to the supplied chapter sections listed in source_sections.
+    Handbook location/status follows the manuscript and is not PDF-verified.
   notes: §17.6 uses a sine derivative before §17.7 teaches it. This source-order defect is retained as an open manuscript
     issue; no reverse dependency is added to conceal it. Mapped to the supplied chapter sections listed in source_sections.
     Handbook location/status follows the manuscript and is not PDF-verified.
@@ -10591,6 +10622,7 @@ _symbol_catalog:
   lambda_lagrange:
     display: λ_L
     meaning: Lagrange multiplier in ∇f = λ_L∇g; the chapter explicitly maps reference notation λ to local λ_L.
+    meaning: Lagrange multiplier in ∇f = λ_L∇g; the chapter explicitly maps reference notation λ to local λ_L.
     SI: Units of f divided by units of g
     USCS: Units of f divided by units of g
   d_distance:
@@ -10665,6 +10697,7 @@ _symbol_catalog:
     USCS: lbf·s
 _update_audit:
   date: '2026-09-28'
+  source: 26 supplied Markdown chapters; current saved ledger; current figure manifest; README and notation contract
   source: 26 supplied Markdown chapters; current saved ledger; current figure manifest; README and notation contract
   scope: Ledger repair only. No manuscript, manifest, image, or tool source changes.
   previous_concepts: 60
@@ -10757,6 +10790,9 @@ _update_audit:
   assessment_counting: Generated from top-level numbered Review Questions lists; totals stored once per chapter
     on the lexically first ID. No separate Practice Problems sections were found. 01-22 retains both sets as an
     explicitly ambiguous source inventory.
+  assessment_counting: Generated from top-level numbered Review Questions lists; totals stored once per chapter
+    on the lexically first ID. No separate Practice Problems sections were found. 01-22 retains both sets as an
+    explicitly ambiguous source inventory.
   tool_results:
     build_order.py: 'PASS by direct DAG check: 121 concepts, 32 chapter IDs, no cycles or missing prerequisite IDs.'
     lint_forward_refs.py: 'FAIL: 26 files, 638 raw matches. This is not 638 independently confirmed errors; newly
@@ -10775,13 +10811,23 @@ _update_audit:
     supplied_chapters: 29
     declared_concepts_matched: 118
     added_concepts: 61
+    concepts: 121
+    chapter_ids: 32
+    supplied_chapters: 29
+    declared_concepts_matched: 118
+    added_concepts: 61
     replaced_placeholders: 25
+    inline_figures_owned_once: 144
+    terms_with_unique_owner: 549
     inline_figures_owned_once: 144
     terms_with_unique_owner: 549
     quantity_symbols_with_unique_owner: 89
     notation_tokens_with_unique_owner: 77
     dependency_edges: 250
+    dependency_edges: 250
     term_symbol_and_notation_uses_checked: 421
+    source_chapters_unchanged: false
+    split_required_records: 51
     source_chapters_unchanged: false
     split_required_records: 51
 _verification_audit:
