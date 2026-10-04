@@ -1,3 +1,21 @@
+# =====================================================================
+# CONCEPT LEDGER
+# =====================================================================
+# One record per teachable atom. Chapter numbering is OUTPUT of
+# tools/build_order.py, which topologically sorts the `concepts` list.
+# A dependency cycle means a concept is mis-decomposed and must be split.
+#
+# ID FORMAT:  {DOMAIN}-{LAYER}{TIER}-{CHAPTER}-{SEQ}
+#   DOMAIN  MATH ORIENT PROF PHYS MECH THRM ELEC CTRL
+#           CHE CIV ECE ENV IND MEC OTH  BRDG
+#   LAYER   0 1 2 3
+#   TIER    A-F for layers 1 and 2; omitted for layers 0 and 3
+#   Example: MECH-2C-024-01
+#
+# No other domain tokens are legal. MATH-TRIG-*, MATH-GEOM-* etc. will
+# fail the ID lint.
+# =====================================================================
+
 schema_version: 4
 handbook_edition: '10.6'
 _schema:
