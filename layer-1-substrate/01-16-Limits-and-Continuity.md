@@ -816,7 +816,7 @@ $-\frac{d}{a} = -1$: $(-2.1)(0.25)(1.86) = -0.976 \approx -1$ ✓
 > **Mentor's Margin**
 >
 > This example is the whole basis of the bisection method, which you will meet
-> formally in Chapter 01-36. The algorithm is nothing more than repeated
+> formally in Chapter 01-26. The algorithm is nothing more than repeated
 > application of what we just did: find a sign change, cut the interval in
 > half, keep whichever half still has the sign change, repeat. Each step
 > halves your uncertainty. The reason it is guaranteed to converge is the IVT,
