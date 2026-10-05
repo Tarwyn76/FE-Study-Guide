@@ -47,17 +47,17 @@ This map preserves the project structure already established in the guide:
 
 | Chapter | Title | Status |
 |---|---|---|
-| 02-11 | Atomic Structure, Bonding, and the Periodic Table | Planned |
-| 02-12 | Chemical Quantities, Stoichiometry, and Reaction Balancing | Planned |
-| 02-13 | Solutions, Concentration, Acids, Bases, and pH | Planned |
-| 02-14 | Chemical Equilibrium, Electrochemistry, and Corrosion | Planned |
-| 02-15 | Organic Chemistry and Biological Systems | Planned |
-| 02-16 | Materials Classes, Structure, and Bonding | Planned |
-| 02-17 | Material Properties and Engineering Selection | Planned |
-| 02-18 | Diffusion, Phase Change, Heat Treatment, and Processing | Planned |
-| 02-19 | Safety Systems, Hazard Communication, and Personal Protective Equipment | Planned |
-| 02-20 | Fire, Explosion, Electrical, and Confined-Space Hazards | Planned |
-| 02-21 | Toxicology, Exposure Limits, Risk, and Chemical Compatibility | Planned |
+| 02-11 | Atomic Structure, Bonding, and the Periodic Table | Drafted |
+| 02-12 | Chemical Quantities, Stoichiometry, and Reaction Balancing | Drafted |
+| 02-13 | Solutions, Concentration, Acids, Bases, and pH | Drafted |
+| 02-14 | Chemical Equilibrium, Electrochemistry, and Corrosion | Drafted |
+| 02-15 | Organic Chemistry and Biological Systems | Drafted |
+| 02-16 | Materials Classes, Structure, and Bonding | Drafted |
+| 02-17 | Material Properties and Engineering Selection | Drafted |
+| 02-18 | Diffusion, Phase Change, Heat Treatment, and Processing | Drafted |
+| 02-19 | Safety Systems, Hazard Communication, and Personal Protective Equipment | Drafted |
+| 02-20 | Fire, Explosion, Electrical, and Confined-Space Hazards | Drafted |
+| 02-21 | Toxicology, Exposure Limits, Risk, and Chemical Compatibility | Drafted |
 
 ## Tier 2C — Mechanics
 
