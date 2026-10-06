@@ -63,70 +63,70 @@ This map preserves the project structure already established in the guide:
 
 | Chapter | Title | Status |
 |---|---|---|
-| 02-22 | Constructing a Free-Body Diagram | Existing ledger seed |
-| 02-23 | Equilibrium Equations for a 2D Concurrent Force System | Existing ledger seed |
-| 02-24 | Method of Joints for Planar Trusses | Existing ledger seed |
-| 02-25 | Moments, Couples, and Equivalent Force Systems | Planned |
-| 02-26 | Rigid-Body Equilibrium and Support Reactions | Planned |
-| 02-27 | Method of Sections, Frames, and Machines | Planned |
-| 02-28 | Distributed Loads, Centroids, and Centers of Gravity | Planned |
-| 02-29 | Area Moments of Inertia and the Parallel-Axis Theorem | Planned |
-| 02-30 | Static Friction | Planned |
-| 02-31 | Particle Kinematics — Rectilinear Motion | Planned |
-| 02-32 | Particle Kinematics — Curvilinear and Relative Motion | Planned |
-| 02-33 | Particle Kinetics — Force and Acceleration | Planned |
-| 02-34 | Work, Energy, and Power | Planned |
-| 02-35 | Impulse, Momentum, and Impact | Planned |
-| 02-36 | Rigid-Body Planar Kinematics and Kinetics | Planned |
-| 02-37 | Stress, Strain, and Axial/Thermal Deformation | Planned |
-| 02-38 | Torsion | Planned |
-| 02-39 | Beams — Shear, Moment, Bending, and Deflection | Planned |
-| 02-40 | Combined Stress, Principal Stress, and Mohr's Circle | Planned |
+| 02-22 | Constructing a Free-Body Diagram | Drafted |
+| 02-23 | Equilibrium Equations for a 2D Concurrent Force System | Drafted |
+| 02-24 | Method of Joints for Planar Trusses | Drafted |
+| 02-25 | Moments, Couples, and Equivalent Force Systems | Drafted |
+| 02-26 | Rigid-Body Equilibrium and Support Reactions | Drafted |
+| 02-27 | Method of Sections, Frames, and Machines | Drafted |
+| 02-28 | Distributed Loads, Centroids, and Centers of Gravity | Drafted |
+| 02-29 | Area Moments of Inertia and the Parallel-Axis Theorem | Drafted |
+| 02-30 | Static Friction | Drafted |
+| 02-31 | Particle Kinematics — Rectilinear Motion | Drafted |
+| 02-32 | Particle Kinematics — Curvilinear and Relative Motion | Drafted |
+| 02-33 | Particle Kinetics — Force and Acceleration | Drafted |
+| 02-34 | Work, Energy, and Power | Drafted |
+| 02-35 | Impulse, Momentum, and Impact | Drafted |
+| 02-36 | Rigid-Body Planar Kinematics and Kinetics | Drafted |
+| 02-37 | Stress, Strain, and Axial/Thermal Deformation | Drafted |
+| 02-38 | Torsion | Drafted |
+| 02-39 | Beams — Shear, Moment, Bending, and Deflection | Drafted |
+| 02-40 | Combined Stress, Principal Stress, and Mohr's Circle | Drafted |
 
 ## Tier 2D — Thermal & Fluid Sciences
 
 | Chapter | Title | Status |
 |---|---|---|
-| 02-41 | Fluid Properties, Pressure, and Hydrostatics | Planned |
-| 02-42 | Buoyancy, Manometry, and Forces on Submerged Surfaces | Planned |
-| 02-43 | Continuity, Velocity Fields, and Flow Kinematics | Planned |
-| 02-44 | Bernoulli and Mechanical-Energy Equations | Planned |
-| 02-45 | Internal Flow — Reynolds Number, Friction, and Head Loss | Planned |
-| 02-46 | Momentum, Flow Measurement, Pumps, and Turbines | Planned |
-| 02-47 | Thermodynamic Systems, Properties, Work, and Heat | Planned |
-| 02-48 | Pure Substances, Phase Diagrams, and Property Tables | Planned |
-| 02-49 | Ideal Gases, Gas Mixtures, and Psychrometrics | Planned |
-| 02-50 | First Law — Closed Systems | Planned |
-| 02-51 | First Law — Control Volumes | Planned |
-| 02-52 | Second Law, Entropy, and Isentropic Processes | Planned |
-| 02-53 | Power Cycles | Planned |
-| 02-54 | Refrigeration and Heat Pumps | Planned |
-| 02-55 | Conduction and Thermal Resistance | Planned |
-| 02-56 | Extended Surfaces and Transient Conduction | Planned |
-| 02-57 | Convection and Thermal Radiation | Planned |
-| 02-58 | Heat Exchangers — LMTD and Effectiveness-NTU | Planned |
+| 02-41 | Fluid Properties, Pressure, and Hydrostatics | Drafted |
+| 02-42 | Buoyancy, Manometry, and Forces on Submerged Surfaces | Drafted |
+| 02-43 | Continuity, Velocity Fields, and Flow Kinematics | Drafted |
+| 02-44 | Bernoulli and Mechanical-Energy Equations | Drafted |
+| 02-45 | Internal Flow — Reynolds Number, Friction, and Head Loss | Drafted |
+| 02-46 | Momentum, Flow Measurement, Pumps, and Turbines | Drafted |
+| 02-47 | Thermodynamic Systems, Properties, Work, and Heat | Drafted |
+| 02-48 | Pure Substances, Phase Diagrams, and Property Tables | Drafted |
+| 02-49 | Ideal Gases, Gas Mixtures, and Psychrometrics | Drafted |
+| 02-50 | First Law — Closed Systems | Drafted |
+| 02-51 | First Law — Control Volumes | Drafted |
+| 02-52 | Second Law, Entropy, and Isentropic Processes | Drafted |
+| 02-53 | Power Cycles | Drafted |
+| 02-54 | Refrigeration and Heat Pumps | Drafted |
+| 02-55 | Conduction and Thermal Resistance | Drafted |
+| 02-56 | Extended Surfaces and Transient Conduction | Drafted |
+| 02-57 | Convection and Thermal Radiation | Drafted |
+| 02-58 | Heat Exchangers — LMTD and Effectiveness-NTU | Drafted |
 
 ## Tier 2E — Electrical
 
 | Chapter | Title | Status |
 |---|---|---|
-| 02-59 | Electrical Quantities, Ohm's Law, and DC Power | Planned |
-| 02-60 | Kirchhoff's Laws and Resistive Circuit Analysis | Planned |
-| 02-61 | Capacitance, Inductance, and First-Order Transients | Planned |
-| 02-62 | Sinusoids, Phasors, Impedance, and Resonance | Planned |
-| 02-63 | AC Power, Power Factor, and Three-Phase Systems | Planned |
-| 02-64 | Magnetics and Transformers | Planned |
-| 02-65 | Motors, Generators, and Electromechanical Energy Conversion | Planned |
+| 02-59 | Electrical Quantities, Ohm's Law, and DC Power | Drafted |
+| 02-60 | Kirchhoff's Laws and Resistive Circuit Analysis | Drafted |
+| 02-61 | Capacitance, Inductance, and First-Order Transients | Drafted |
+| 02-62 | Sinusoids, Phasors, Impedance, and Resonance | Drafted |
+| 02-63 | AC Power, Power Factor, and Three-Phase Systems | Drafted |
+| 02-64 | Magnetics and Transformers | Drafted |
+| 02-65 | Motors, Generators, and Electromechanical Energy Conversion | Drafted |
 
 ## Tier 2F — Measurement & Control
 
 | Chapter | Title | Status |
 |---|---|---|
-| 02-66 | Measurement Systems, Calibration, Accuracy, and Uncertainty | Planned |
-| 02-67 | Sensors, Transducers, Bridges, and Signal Conditioning | Planned |
-| 02-68 | Data Acquisition, Sampling, Dynamic Response, and Frequency Response | Planned |
-| 02-69 | Transfer Functions and Feedback Control Fundamentals | Planned |
-| 02-70 | PID Control, Stability, and Control-Loop Hardware | Planned |
+| 02-66 | Measurement Systems, Calibration, Accuracy, and Uncertainty | Drafted |
+| 02-67 | Sensors, Transducers, Bridges, and Signal Conditioning | Drafted |
+| 02-68 | Data Acquisition, Sampling, Dynamic Response, and Frequency Response | Drafted |
+| 02-69 | Transfer Functions and Feedback Control Fundamentals | Drafted |
+| 02-70 | PID Control, Stability, and Control-Loop Hardware | Drafted |
 
 ## Build-order intent
 
@@ -143,3 +143,7 @@ Before each chapter is drafted, its concept atoms should be added or expanded in
 ## Source boundary
 
 The following are source-established project facts: six Layer 2 tiers and their subjects, 70 total Layer 2 chapters, 19 chapters in Tier 2C, 18 chapters in Tier 2D, and the existing 02-22 through 02-24 ledger seeds. The remaining titles and tier-count allocations are the newly established planning map, not claims that those titles already existed in the prior ledger or Handbook.
+
+## Layer 2 build status
+
+**Layer 2 drafting is complete through 02-70.** Tiers 2A through 2F are registered in the concept ledger; their figure specifications are registered in the figure manifest. Figure status remains independent of chapter drafting status.
