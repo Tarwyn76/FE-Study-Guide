@@ -36,7 +36,9 @@ The specification explicitly requires PFDs, P&IDs, equipment selection, sizing/s
 
 ## Learning Objectives
 
-By the end of this chapter, you will be able to:* **12.1** Explain and apply **Process Flow Diagrams**.
+By the end of this chapter, you will be able to:
+
+* **12.1** Explain and apply **Process Flow Diagrams**.
 * **12.2** Explain and apply **Piping and Instrumentation Diagrams**.
 * **12.3** Explain and apply **Equipment Selection and First-Pass Sizing**.
 * **12.4** Explain and apply **Scale-Up and Similarity**.
@@ -66,7 +68,7 @@ A PFD is intended for process understanding and balance calculations, not detail
 
 **Problem.** What belongs on a PFD but not necessarily detailed valve-by-valve piping?
 
-**Solution.** Major equipment, principal streams, key conditions and flows.
+**Solution.** For **Process Flow Diagrams**, Major equipment, principal streams, key conditions and flows. This follows because **Specification-required; not directly tabulated in the Chemical Engineering Handbook pages.** A PFD shows major process equipment, principal process streams, stream numbering, key operating conditions, and major utilities.. That physical distinction controls the result for belongs on PFD but not necessarily detailed.
 
 ---
 
@@ -84,7 +86,7 @@ A P&ID contains much more implementation detail than a PFD but still does not re
 
 **Problem.** What drawing adds control valves and instrument loops?
 
-**Solution.** P&ID.
+**Solution.** For **Piping and Instrumentation Diagrams**, P&ID. This follows because **Specification-required; not directly tabulated in the Chemical Engineering Handbook pages.** A P&ID adds piping, valves, instruments, control loops, equipment tags, and interlocks needed to describe process control and safeguarding.. That physical distinction controls the result for drawing adds control valves instrument loops.
 
 ---
 
@@ -102,7 +104,7 @@ Sizing then applies the governing balance or rate relation—for example \(Q=UA\
 
 **Problem.** A heat exchanger duty is 500 kW, U=1 kW/(m²·K), corrected ΔTlm=25 K. Find area.
 
-**Solution.** A=500/(1×25)=20 m².
+**Solution.** For **Equipment Selection and First-Pass Sizing**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) U=1, Tlm=25, A=500/(1×25)=20 m². This is the section-specific result for heat exchanger duty kW kW corrected Tlm. The stated units/basis (m², s) are retained.
 
 ---
 
@@ -120,7 +122,7 @@ Depending on the equipment, relevant groups may include Reynolds, Froude, power 
 
 **Problem.** Why is geometric scale-up alone insufficient for mixing equipment?
 
-**Solution.** Hydrodynamic similarity such as Reynolds/Froude/power number may change.
+**Solution.** For **Scale-Up and Similarity**, Hydrodynamic similarity such as Reynolds/Froude/power number may change. This follows because **Specification-required; only partly supported by Handbook cost scaling.** Geometric scale-up does not guarantee equal heat transfer, mixing, pressure drop, or reaction performance.. That physical distinction controls the result for geometric scale-up alone insufficient mixing equipment.
 
 ---
 
@@ -138,7 +140,7 @@ Both costs must refer to comparable scope; a purchase-cost index should not be u
 
 **Problem.** Old equipment cost is $200,000 at index 500; new index is 650. Find updated cost.
 
-**Solution.** $260,000.
+**Solution.** For **Cost Indexes**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 200, 000, 500, $260,000. This is the section-specific result for Old equipment cost index new index updated. The stated units/basis (s) are retained.
 
 ---
 
@@ -156,7 +158,7 @@ These are screening-level methods, not detailed bid estimates.
 
 **Problem.** A similar unit doubles capacity with n=0.6. Find cost ratio.
 
-**Solution.** 2^0.6=1.516.
+**Solution.** For **Capacity Scaling and Lang Factors**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) n=0.6, 2^0.6=1.516. This is the section-specific result for similar unit doubles capacity cost ratio. The stated units/basis (s, h) are retained.
 
 ---
 
@@ -174,7 +176,7 @@ Match economic precision to design maturity. A Class 5 screening estimate should
 
 **Problem.** Which estimate class has the least project definition in the Handbook table?
 
-**Solution.** Class 5.
+**Solution.** For **Estimate Classes, Uncertainty, and Economic Screening**, Class 5. This follows because the Handbook classifies estimates from early screening/feasibility through more detailed bid/check estimates, with increasing project definition and preparation effort.. That physical distinction controls the result for Which estimate class has least project definition.
 
 ---
 
@@ -184,13 +186,13 @@ Match economic precision to design maturity. A Class 5 screening estimate should
 
 **Problem.** Purchased-equipment cost is $1.0M and a screening Lang factor is 5.0. Estimate fixed capital.
 
-**Solution.** $5.0M.
+**Solution.** For **Integrated Worked Examples**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 1.0, 5.0, $5.0M. This is the section-specific result for Purchased-equipment cost screening Lang factor Estimate fixed. The stated units/basis (s, h) are retained.
 
 ### Worked Example 9
 
 **Problem.** If project definition increases, what generally happens to expected estimate range?
 
-**Solution.** It narrows while preparation effort rises.
+**Solution.** For **Integrated Worked Examples**, It narrows while preparation effort rises. This follows because the section distinguishes the governing physical behavior from the alternatives. That physical distinction controls the result for project definition increases generally happens expected estimate.
 
 ---
 
@@ -341,59 +343,59 @@ D) It is always directly tabulated in the Handbook
 
 ## Answer Key with Explanations
 
-1. **process flow diagram** is developed in §12.1. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+1. **Process Flow Diagrams.** **Specification-required; not directly tabulated in the Chemical Engineering Handbook pages.** A PFD shows major process equipment, principal process streams, stream numbering, key operating conditions, and major utilities. In Process Flow Diagrams, P&IDs, Equipment Sizing, Scale-Up, and Cost Estimation, this is the definition or balance being tested by Question 1.
 
-2. **piping and instrumentation diagram** is developed in §12.2. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+2. **Piping and Instrumentation Diagrams.** **Specification-required; not directly tabulated in the Chemical Engineering Handbook pages.** A P&ID adds piping, valves, instruments, control loops, equipment tags, and interlocks needed to describe process control and safeguarding. In Process Flow Diagrams, P&IDs, Equipment Sizing, Scale-Up, and Cost Estimation, this is the definition or balance being tested by Question 2.
 
-3. **equipment first-pass sizing** is developed in §12.3. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+3. **Equipment Selection and First-Pass Sizing.** **Specification-required; guide-developed workflow.** First-pass equipment selection starts with duty: flow, phase, temperature, pressure, heat load, separation target, or reaction volume. In Process Flow Diagrams, P&IDs, Equipment Sizing, Scale-Up, and Cost Estimation, this is the definition or balance being tested by Question 3.
 
-4. **process equipment scale-up** is developed in §12.4. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+4. **Scale-Up and Similarity.** **Specification-required; only partly supported by Handbook cost scaling.** Geometric scale-up does not guarantee equal heat transfer, mixing, pressure drop, or reaction performance. In Process Flow Diagrams, P&IDs, Equipment Sizing, Scale-Up, and Cost Estimation, this is the definition or balance being tested by Question 4.
 
-5. **chemical cost index** is developed in §12.5. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+5. **Cost Indexes.** The Handbook provides the cost-index relation for updating a historical equipment cost to a new year. In Process Flow Diagrams, P&IDs, Equipment Sizing, Scale-Up, and Cost Estimation, this is the definition or balance being tested by Question 5.
 
-6. **equipment cost-capacity scaling** is developed in §12.6. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+6. **Capacity Scaling and Lang Factors.** The Handbook uses a power law to scale the cost of similar equipment between capacities and tabulates representative exponents. In Process Flow Diagrams, P&IDs, Equipment Sizing, Scale-Up, and Cost Estimation, this is the definition or balance being tested by Question 6.
 
-7. **chemical cost estimate class** is developed in §12.7. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+7. **Estimate Classes, Uncertainty, and Economic Screening.** The Handbook classifies estimates from early screening/feasibility through more detailed bid/check estimates, with increasing project definition and preparation effort. In Process Flow Diagrams, P&IDs, Equipment Sizing, Scale-Up, and Cost Estimation, this is the definition or balance being tested by Question 7.
 
-8. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+8. For **Process Flow Diagrams**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. **Specification-required; not directly tabulated in the Chemical Engineering Handbook pages.** A PFD shows major process equipment, principal process streams, stream numbering, key operating conditions, and major utilities. This is the specific failure mode emphasized in Process Flow Diagrams, P&IDs, Equipment Sizing, Scale-Up, and Cost Estimation.
 
-9. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+9. For **Piping and Instrumentation Diagrams**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. **Specification-required; not directly tabulated in the Chemical Engineering Handbook pages.** A P&ID adds piping, valves, instruments, control loops, equipment tags, and interlocks needed to describe process control and safeguarding. This is the specific failure mode emphasized in Process Flow Diagrams, P&IDs, Equipment Sizing, Scale-Up, and Cost Estimation.
 
-10. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+10. For **Equipment Selection and First-Pass Sizing**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. **Specification-required; guide-developed workflow.** First-pass equipment selection starts with duty: flow, phase, temperature, pressure, heat load, separation target, or reaction volume. This is the specific failure mode emphasized in Process Flow Diagrams, P&IDs, Equipment Sizing, Scale-Up, and Cost Estimation.
 
-11. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+11. For **Scale-Up and Similarity**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. **Specification-required; only partly supported by Handbook cost scaling.** Geometric scale-up does not guarantee equal heat transfer, mixing, pressure drop, or reaction performance. This is the specific failure mode emphasized in Process Flow Diagrams, P&IDs, Equipment Sizing, Scale-Up, and Cost Estimation.
 
-12. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+12. For **Cost Indexes**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. The Handbook provides the cost-index relation for updating a historical equipment cost to a new year. This is the specific failure mode emphasized in Process Flow Diagrams, P&IDs, Equipment Sizing, Scale-Up, and Cost Estimation.
 
-13. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+13. For **Capacity Scaling and Lang Factors**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. The Handbook uses a power law to scale the cost of similar equipment between capacities and tabulates representative exponents. This is the specific failure mode emphasized in Process Flow Diagrams, P&IDs, Equipment Sizing, Scale-Up, and Cost Estimation.
 
-14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+14. For **Estimate Classes, Uncertainty, and Economic Screening**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. The Handbook classifies estimates from early screening/feasibility through more detailed bid/check estimates, with increasing project definition and preparation effort. This is the specific failure mode emphasized in Process Flow Diagrams, P&IDs, Equipment Sizing, Scale-Up, and Cost Estimation.
 
-15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
+15. In **Process Flow Diagrams, P&IDs, Equipment Sizing, Scale-Up, and Cost Estimation**, close the material balance first because stream amounts and compositions feed the later energy calculation. Otherwise enthalpy and duty terms may be evaluated for unresolved streams.
 
-16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
+16. For **Process Flow Diagrams, P&IDs, Equipment Sizing, Scale-Up, and Cost Estimation**, a degrees-of-freedom check counts unknowns against independent equations before solving. Zero indicates a closed problem; a positive count signals missing independent information.
 
-17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
+17. In **Process Flow Diagrams, P&IDs, Equipment Sizing, Scale-Up, and Cost Estimation**, a relation supplied by the FE problem defines the intended model for that question. A remembered correlation can carry different assumptions, coefficients, validity limits, or reference states.
 
-18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
+18. For **Process Flow Diagrams, P&IDs, Equipment Sizing, Scale-Up, and Cost Estimation**, separating Handbook-supported material from specification-required learned material distinguishes lookup knowledge from material the guide develops. That boundary prevents guide-developed content from being presented as Handbook text.
 
-19. **A.** The relation or workflow for **process flow diagram** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+19. **A.** For **Process Flow Diagrams**, the relation is meaningful only with the correct basis and physical assumptions. **Specification-required; not directly tabulated in the Chemical Engineering Handbook pages.** A PFD shows major process equipment, principal process streams, stream numbering, key operating conditions, and major utilities. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-20. **A.** The relation or workflow for **piping and instrumentation diagram** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+20. **A.** For **Piping and Instrumentation Diagrams**, the relation is meaningful only with the correct basis and physical assumptions. **Specification-required; not directly tabulated in the Chemical Engineering Handbook pages.** A P&ID adds piping, valves, instruments, control loops, equipment tags, and interlocks needed to describe process control and safeguarding. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-21. **A.** The relation or workflow for **equipment first-pass sizing** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+21. **A.** For **Equipment Selection and First-Pass Sizing**, the relation is meaningful only with the correct basis and physical assumptions. **Specification-required; guide-developed workflow.** First-pass equipment selection starts with duty: flow, phase, temperature, pressure, heat load, separation target, or reaction volume. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-22. **A.** The relation or workflow for **process equipment scale-up** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+22. **A.** For **Scale-Up and Similarity**, the relation is meaningful only with the correct basis and physical assumptions. **Specification-required; only partly supported by Handbook cost scaling.** Geometric scale-up does not guarantee equal heat transfer, mixing, pressure drop, or reaction performance. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-23. **A.** The relation or workflow for **chemical cost index** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+23. **A.** For **Cost Indexes**, the relation is meaningful only with the correct basis and physical assumptions. The Handbook provides the cost-index relation for updating a historical equipment cost to a new year. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-24. **A.** The relation or workflow for **equipment cost-capacity scaling** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+24. **A.** For **Capacity Scaling and Lang Factors**, the relation is meaningful only with the correct basis and physical assumptions. The Handbook uses a power law to scale the cost of similar equipment between capacities and tabulates representative exponents. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-25. **A.** The relation or workflow for **chemical cost estimate class** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+25. **A.** For **Estimate Classes, Uncertainty, and Economic Screening**, the relation is meaningful only with the correct basis and physical assumptions. The Handbook classifies estimates from early screening/feasibility through more detailed bid/check estimates, with increasing project definition and preparation effort. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-26. **A.** The relation or workflow for **process flow diagram** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+26. **A.** This later check revisits **Process Flow Diagrams** from a different review position. **Specification-required; not directly tabulated in the Chemical Engineering Handbook pages.** A PFD shows major process equipment, principal process streams, stream numbering, key operating conditions, and major utilities. The correct choice remains A because the concept still depends on the defined basis and physical assumptions.
 
-27. **A.** The relation or workflow for **piping and instrumentation diagram** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+27. **A.** This later check revisits **Piping and Instrumentation Diagrams** from a different review position. **Specification-required; not directly tabulated in the Chemical Engineering Handbook pages.** A P&ID adds piping, valves, instruments, control loops, equipment tags, and interlocks needed to describe process control and safeguarding. The correct choice remains A because the concept still depends on the defined basis and physical assumptions.
 
 
 ---
@@ -425,25 +427,25 @@ D) It is always directly tabulated in the Handbook
 
 ## Practice Problem Solutions
 
-1. Major equipment, principal streams, key conditions and flows.
+1. For the practice case involving **belongs on PFD but not necessarily detailed**, Major equipment, principal streams, key conditions and flows. This is the chapter-specific distinction required by Practice Problem 1 in Process Flow Diagrams, P&IDs, Equipment Sizing, Scale-Up, and Cost Estimation.
 
-2. P&ID.
+2. For the practice case involving **drawing adds control valves instrument loops**, P&ID. This is the chapter-specific distinction required by Practice Problem 2 in Process Flow Diagrams, P&IDs, Equipment Sizing, Scale-Up, and Cost Estimation.
 
-3. A=500/(1×25)=20 m².
+3. For the practice case involving **heat exchanger duty kW kW corrected Tlm**, Using U=1, Tlm=25, A=500/(1×25)=20 m². This completes Practice Problem 3 in Process Flow Diagrams, P&IDs, Equipment Sizing, Scale-Up, and Cost Estimation. The original m², s basis is preserved.
 
-4. Hydrodynamic similarity such as Reynolds/Froude/power number may change.
+4. For the practice case involving **geometric scale-up alone insufficient mixing equipment**, Hydrodynamic similarity such as Reynolds/Froude/power number may change. This is the chapter-specific distinction required by Practice Problem 4 in Process Flow Diagrams, P&IDs, Equipment Sizing, Scale-Up, and Cost Estimation.
 
-5. $260,000.
+5. For the practice case involving **Old equipment cost index new index updated**, Using 200, 000, 500, $260,000. This completes Practice Problem 5 in Process Flow Diagrams, P&IDs, Equipment Sizing, Scale-Up, and Cost Estimation. The original s basis is preserved.
 
-6. 2^0.6=1.516.
+6. For the practice case involving **similar unit doubles capacity cost ratio**, Using n=0.6, 2^0.6=1.516. This completes Practice Problem 6 in Process Flow Diagrams, P&IDs, Equipment Sizing, Scale-Up, and Cost Estimation. The original s, h basis is preserved.
 
-7. Class 5.
+7. For the practice case involving **Which estimate class has least project definition**, Class 5. This is the chapter-specific distinction required by Practice Problem 7 in Process Flow Diagrams, P&IDs, Equipment Sizing, Scale-Up, and Cost Estimation.
 
-8. $5.0M.
+8. For the practice case involving **Purchased-equipment cost screening Lang factor Estimate fixed**, Using 1.0, 5.0, $5.0M. This completes Practice Problem 8 in Process Flow Diagrams, P&IDs, Equipment Sizing, Scale-Up, and Cost Estimation. The original s, h basis is preserved.
 
-9. It narrows while preparation effort rises.
+9. For the practice case involving **project definition increases generally happens expected estimate**, It narrows while preparation effort rises. This is the chapter-specific distinction required by Practice Problem 9 in Process Flow Diagrams, P&IDs, Equipment Sizing, Scale-Up, and Cost Estimation.
 
-10. The method's uncertainty is much larger than those digits imply.
+10. For the practice case involving **should screening estimate not be reported excessive**, The method's uncertainty is much larger than those digits imply. This is the chapter-specific distinction required by Practice Problem 10 in Process Flow Diagrams, P&IDs, Equipment Sizing, Scale-Up, and Cost Estimation.
 
 
 ---

@@ -36,7 +36,9 @@ The FE Chemical specification explicitly requires optimization, sustainability, 
 
 ## Learning Objectives
 
-By the end of this chapter, you will be able to:* **13.1** Explain and apply **Process Optimization — Objective Functions and Constraints**.
+By the end of this chapter, you will be able to:
+
+* **13.1** Explain and apply **Process Optimization — Objective Functions and Constraints**.
 * **13.2** Explain and apply **Sustainability, Efficiency, and Inherently Safer Design**.
 * **13.3** Explain and apply **Feedback, Feedforward, Cascade, and Ratio Control**.
 * **13.4** Explain and apply **Process Dynamics and Controller Tuning**.
@@ -66,7 +68,7 @@ The optimum is not necessarily the unconstrained maximum of one performance metr
 
 **Problem.** An objective is to minimize energy while product purity must be ≥99%. Classify purity statement.
 
-**Solution.** A constraint.
+**Solution.** For **Process Optimization — Objective Functions and Constraints**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) be ≥99%, A constraint. This is the section-specific result for objective minimize energy while product purity must. The stated units/basis (min, s) are retained.
 
 ---
 
@@ -84,7 +86,7 @@ Inherently safer strategies seek to eliminate or reduce hazards by choices such 
 
 **Problem.** Name one inherently safer strategy.
 
-**Solution.** Minimize inventory, substitute less hazardous material, moderate conditions, or simplify.
+**Solution.** For **Sustainability, Efficiency, and Inherently Safer Design**, Minimize inventory, substitute less hazardous material, moderate conditions, or simplify. This follows because the specification explicitly names sustainability, efficiency, green engineering, and inherently safer design.. That physical distinction controls the result for Name one inherently safer strategy.
 
 ---
 
@@ -102,7 +104,7 @@ These strategies are explicitly named in the FE Chemical specification; use the 
 
 **Problem.** A ratio controller maintains B/A=2.5 and A=4 kg/s. Find B setpoint.
 
-**Solution.** 10 kg/s.
+**Solution.** For **Feedback, Feedforward, Cascade, and Ratio Control**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) A=2.5, A=4, 10 kg/s. This is the section-specific result for ratio controller maintains kg setpoint. The stated units/basis (kg/s, s) are retained.
 
 ---
 
@@ -120,7 +122,7 @@ Tuning must respect actuator limits, process dead time, measurement noise, and s
 
 **Problem.** A process has K=2, τ=5 min, θ=1 min in FOPDT form. Identify gain, time constant, and dead time.
 
-**Solution.** K=2; τ=5 min; θ=1 min.
+**Solution.** For **Process Dynamics and Controller Tuning**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) K=2, =5, =1, K=2; τ=5 min; θ=1 min. This is the section-specific result for process has min min FOPDT form Identify. The stated units/basis (min, s) are retained.
 
 ---
 
@@ -138,7 +140,7 @@ A regulatory control loop maintains normal operation; an interlock or safety act
 
 **Problem.** What is the difference between a regulatory control loop and a safety interlock?
 
-**Solution.** Control maintains normal operation; an interlock forces a defined protective action on hazardous conditions.
+**Solution.** For **Control Valves, DCS/PLC, Alarms, and Interlocks**, Control maintains normal operation; an interlock forces a defined protective action on hazardous conditions. This follows because the FE Chemical specification explicitly includes sensors, control valves, distributed control systems, programmable logic controllers, alarms, and interlocks.. That physical distinction controls the result for difference between regulatory control loop safety interlock.
 
 ---
 
@@ -156,7 +158,7 @@ These tools organize reasoning about causes, consequences, and safeguards; they 
 
 **Problem.** Does a fault tree generally reason backward from a top event or forward from an initiator?
 
-**Solution.** Backward from a top event.
+**Solution.** For **HAZOP, LOPA, Fault Trees, and Event Trees**, Backward from a top event. This follows because **Specification-required; detailed methodology is guide-developed.** HAZOP systematically asks how process variables can deviate from design intent.. That physical distinction controls the result for Does fault tree generally reason backward from.
 
 ---
 
@@ -174,7 +176,7 @@ A relief device limits pressure but does not prevent the initiating event. Inert
 
 **Problem.** Does a relief valve eliminate the initiating cause of overpressure?
 
-**Solution.** No; it limits pressure/consequence after overpressure develops.
+**Solution.** For **Relief, Inerting, Runaway Reactions, and Protection Layers**, No; it limits pressure/consequence after overpressure develops. This follows because the FE Chemical specification includes over/underpressure protection, relief, redundant control, inerting, runaway reactions, and compatibility.. That physical distinction controls the result for Does relief valve eliminate initiating cause overpressure.
 
 ---
 
@@ -184,13 +186,13 @@ A relief device limits pressure but does not prevent the initiating event. Inert
 
 **Problem.** A feedforward controller requires measurement of what?
 
-**Solution.** A disturbance variable before its effect reaches the controlled variable.
+**Solution.** For **Integrated Worked Examples**, A disturbance variable before its effect reaches the controlled variable. This follows because the section distinguishes the governing physical behavior from the alternatives. That physical distinction controls the result for feedforward controller requires measurement.
 
 ### Worked Example 9
 
 **Problem.** What hazard is reduced by inerting?
 
-**Solution.** Oxidation/combustion hazard by lowering oxidizer concentration.
+**Solution.** For **Integrated Worked Examples**, Oxidation/combustion hazard by lowering oxidizer concentration. This follows because the section distinguishes the governing physical behavior from the alternatives. That physical distinction controls the result for hazard reduced by inerting.
 
 ---
 
@@ -341,59 +343,59 @@ D) It is always directly tabulated in the Handbook
 
 ## Answer Key with Explanations
 
-1. **process optimization problem** is developed in §13.1. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+1. **Process Optimization — Objective Functions and Constraints.** A process optimization problem requires an objective such as minimum cost, maximum profit, minimum energy use, or maximum yield, together with physical, safety, quality, and regulatory constraints. In Process Optimization, Advanced Control, and Process Safety, this is the definition or balance being tested by Question 1.
 
-2. **inherently safer process design** is developed in §13.2. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+2. **Sustainability, Efficiency, and Inherently Safer Design.** The specification explicitly names sustainability, efficiency, green engineering, and inherently safer design. In Process Optimization, Advanced Control, and Process Safety, this is the definition or balance being tested by Question 2.
 
-3. **process control strategy** is developed in §13.3. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+3. **Feedback, Feedforward, Cascade, and Ratio Control.** Feedback responds to measured error after a disturbance affects the controlled variable. In Process Optimization, Advanced Control, and Process Safety, this is the definition or balance being tested by Question 3.
 
-4. **chemical process dynamics** is developed in §13.4. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+4. **Process Dynamics and Controller Tuning.** First- and second-order process dynamics, time delay, stability, damping, and transfer functions are specification topics and are developed in Layer 2F. In Process Optimization, Advanced Control, and Process Safety, this is the definition or balance being tested by Question 4.
 
-5. **process control and interlock hardware** is developed in §13.5. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+5. **Control Valves, DCS/PLC, Alarms, and Interlocks.** The FE Chemical specification explicitly includes sensors, control valves, distributed control systems, programmable logic controllers, alarms, and interlocks. In Process Optimization, Advanced Control, and Process Safety, this is the definition or balance being tested by Question 5.
 
-6. **process hazard analysis** is developed in §13.6. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+6. **HAZOP, LOPA, Fault Trees, and Event Trees.** **Specification-required; detailed methodology is guide-developed.** HAZOP systematically asks how process variables can deviate from design intent. In Process Optimization, Advanced Control, and Process Safety, this is the definition or balance being tested by Question 6.
 
-7. **process safety protection layers** is developed in §13.7. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+7. **Relief, Inerting, Runaway Reactions, and Protection Layers.** The FE Chemical specification includes over/underpressure protection, relief, redundant control, inerting, runaway reactions, and compatibility. In Process Optimization, Advanced Control, and Process Safety, this is the definition or balance being tested by Question 7.
 
-8. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+8. For **Process Optimization — Objective Functions and Constraints**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. A process optimization problem requires an objective such as minimum cost, maximum profit, minimum energy use, or maximum yield, together with physical, safety, quality, and regulatory constraints. This is the specific failure mode emphasized in Process Optimization, Advanced Control, and Process Safety.
 
-9. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+9. For **Sustainability, Efficiency, and Inherently Safer Design**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. The specification explicitly names sustainability, efficiency, green engineering, and inherently safer design. This is the specific failure mode emphasized in Process Optimization, Advanced Control, and Process Safety.
 
-10. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+10. For **Feedback, Feedforward, Cascade, and Ratio Control**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. Feedback responds to measured error after a disturbance affects the controlled variable. This is the specific failure mode emphasized in Process Optimization, Advanced Control, and Process Safety.
 
-11. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+11. For **Process Dynamics and Controller Tuning**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. First- and second-order process dynamics, time delay, stability, damping, and transfer functions are specification topics and are developed in Layer 2F. This is the specific failure mode emphasized in Process Optimization, Advanced Control, and Process Safety.
 
-12. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+12. For **Control Valves, DCS/PLC, Alarms, and Interlocks**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. The FE Chemical specification explicitly includes sensors, control valves, distributed control systems, programmable logic controllers, alarms, and interlocks. This is the specific failure mode emphasized in Process Optimization, Advanced Control, and Process Safety.
 
-13. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+13. For **HAZOP, LOPA, Fault Trees, and Event Trees**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. **Specification-required; detailed methodology is guide-developed.** HAZOP systematically asks how process variables can deviate from design intent. This is the specific failure mode emphasized in Process Optimization, Advanced Control, and Process Safety.
 
-14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+14. For **Relief, Inerting, Runaway Reactions, and Protection Layers**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. The FE Chemical specification includes over/underpressure protection, relief, redundant control, inerting, runaway reactions, and compatibility. This is the specific failure mode emphasized in Process Optimization, Advanced Control, and Process Safety.
 
-15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
+15. In **Process Optimization, Advanced Control, and Process Safety**, close the material balance first because stream amounts and compositions feed the later energy calculation. Otherwise enthalpy and duty terms may be evaluated for unresolved streams.
 
-16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
+16. For **Process Optimization, Advanced Control, and Process Safety**, a degrees-of-freedom check counts unknowns against independent equations before solving. Zero indicates a closed problem; a positive count signals missing independent information.
 
-17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
+17. In **Process Optimization, Advanced Control, and Process Safety**, a relation supplied by the FE problem defines the intended model for that question. A remembered correlation can carry different assumptions, coefficients, validity limits, or reference states.
 
-18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
+18. For **Process Optimization, Advanced Control, and Process Safety**, separating Handbook-supported material from specification-required learned material distinguishes lookup knowledge from material the guide develops. That boundary prevents guide-developed content from being presented as Handbook text.
 
-19. **A.** The relation or workflow for **process optimization problem** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+19. **A.** For **Process Optimization — Objective Functions and Constraints**, the relation is meaningful only with the correct basis and physical assumptions. A process optimization problem requires an objective such as minimum cost, maximum profit, minimum energy use, or maximum yield, together with physical, safety, quality, and regulatory constraints. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-20. **A.** The relation or workflow for **inherently safer process design** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+20. **A.** For **Sustainability, Efficiency, and Inherently Safer Design**, the relation is meaningful only with the correct basis and physical assumptions. The specification explicitly names sustainability, efficiency, green engineering, and inherently safer design. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-21. **A.** The relation or workflow for **process control strategy** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+21. **A.** For **Feedback, Feedforward, Cascade, and Ratio Control**, the relation is meaningful only with the correct basis and physical assumptions. Feedback responds to measured error after a disturbance affects the controlled variable. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-22. **A.** The relation or workflow for **chemical process dynamics** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+22. **A.** For **Process Dynamics and Controller Tuning**, the relation is meaningful only with the correct basis and physical assumptions. First- and second-order process dynamics, time delay, stability, damping, and transfer functions are specification topics and are developed in Layer 2F. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-23. **A.** The relation or workflow for **process control and interlock hardware** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+23. **A.** For **Control Valves, DCS/PLC, Alarms, and Interlocks**, the relation is meaningful only with the correct basis and physical assumptions. The FE Chemical specification explicitly includes sensors, control valves, distributed control systems, programmable logic controllers, alarms, and interlocks. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-24. **A.** The relation or workflow for **process hazard analysis** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+24. **A.** For **HAZOP, LOPA, Fault Trees, and Event Trees**, the relation is meaningful only with the correct basis and physical assumptions. **Specification-required; detailed methodology is guide-developed.** HAZOP systematically asks how process variables can deviate from design intent. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-25. **A.** The relation or workflow for **process safety protection layers** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+25. **A.** For **Relief, Inerting, Runaway Reactions, and Protection Layers**, the relation is meaningful only with the correct basis and physical assumptions. The FE Chemical specification includes over/underpressure protection, relief, redundant control, inerting, runaway reactions, and compatibility. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-26. **A.** The relation or workflow for **process optimization problem** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+26. **A.** This later check revisits **Process Optimization — Objective Functions and Constraints** from a different review position. A process optimization problem requires an objective such as minimum cost, maximum profit, minimum energy use, or maximum yield, together with physical, safety, quality, and regulatory constraints. The correct choice remains A because the concept still depends on the defined basis and physical assumptions.
 
-27. **A.** The relation or workflow for **inherently safer process design** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+27. **A.** This later check revisits **Sustainability, Efficiency, and Inherently Safer Design** from a different review position. The specification explicitly names sustainability, efficiency, green engineering, and inherently safer design. The correct choice remains A because the concept still depends on the defined basis and physical assumptions.
 
 
 ---
@@ -425,25 +427,25 @@ D) It is always directly tabulated in the Handbook
 
 ## Practice Problem Solutions
 
-1. A constraint.
+1. For the practice case involving **objective minimize energy while product purity must**, Using be ≥99%, A constraint. This completes Practice Problem 1 in Process Optimization, Advanced Control, and Process Safety. The original min, s basis is preserved.
 
-2. Minimize inventory, substitute less hazardous material, moderate conditions, or simplify.
+2. For the practice case involving **Name one inherently safer strategy**, Minimize inventory, substitute less hazardous material, moderate conditions, or simplify. This is the chapter-specific distinction required by Practice Problem 2 in Process Optimization, Advanced Control, and Process Safety.
 
-3. 10 kg/s.
+3. For the practice case involving **ratio controller maintains kg setpoint**, Using A=2.5, A=4, 10 kg/s. This completes Practice Problem 3 in Process Optimization, Advanced Control, and Process Safety. The original kg/s, s basis is preserved.
 
-4. K=2; τ=5 min; θ=1 min.
+4. For the practice case involving **process has min min FOPDT form Identify**, Using K=2, =5, =1, K=2; τ=5 min; θ=1 min. This completes Practice Problem 4 in Process Optimization, Advanced Control, and Process Safety. The original min, s basis is preserved.
 
-5. Control maintains normal operation; an interlock forces a defined protective action on hazardous conditions.
+5. For the practice case involving **difference between regulatory control loop safety interlock**, Control maintains normal operation; an interlock forces a defined protective action on hazardous conditions. This is the chapter-specific distinction required by Practice Problem 5 in Process Optimization, Advanced Control, and Process Safety.
 
-6. Backward from a top event.
+6. For the practice case involving **Does fault tree generally reason backward from**, Backward from a top event. This is the chapter-specific distinction required by Practice Problem 6 in Process Optimization, Advanced Control, and Process Safety.
 
-7. No; it limits pressure/consequence after overpressure develops.
+7. For the practice case involving **Does relief valve eliminate initiating cause overpressure**, No; it limits pressure/consequence after overpressure develops. This is the chapter-specific distinction required by Practice Problem 7 in Process Optimization, Advanced Control, and Process Safety.
 
-8. A disturbance variable before its effect reaches the controlled variable.
+8. For the practice case involving **feedforward controller requires measurement**, A disturbance variable before its effect reaches the controlled variable. This is the chapter-specific distinction required by Practice Problem 8 in Process Optimization, Advanced Control, and Process Safety.
 
-9. Oxidation/combustion hazard by lowering oxidizer concentration.
+9. For the practice case involving **hazard reduced by inerting**, Oxidation/combustion hazard by lowering oxidizer concentration. This is the chapter-specific distinction required by Practice Problem 9 in Process Optimization, Advanced Control, and Process Safety.
 
-10. Fragility, oscillation, and instability risk.
+10. For the practice case involving **controller tuning increases speed but causes very**, Fragility, oscillation, and instability risk. This is the chapter-specific distinction required by Practice Problem 10 in Process Optimization, Advanced Control, and Process Safety.
 
 
 ---

@@ -36,7 +36,9 @@ The Handbook directly defines extent, conversion, limiting reactant, selectivity
 
 ## Learning Objectives
 
-By the end of this chapter, you will be able to:* **3.1** Explain and apply **Stoichiometric Coefficients, Extent, Conversion, Yield, and Selectivity**.
+By the end of this chapter, you will be able to:
+
+* **3.1** Explain and apply **Stoichiometric Coefficients, Extent, Conversion, Yield, and Selectivity**.
 * **3.2** Explain and apply **Reactive Species Balances**.
 * **3.3** Explain and apply **Limiting and Excess Reactants**.
 * **3.4** Explain and apply **Combustion, Theoretical Air, and Excess Air**.
@@ -66,7 +68,7 @@ Conversion measures reactant consumption. Yield and selectivity quantify desired
 
 **Problem.** For A→2B, feed 10 mol A and extent ξ=3 mol. Find outlet A and B if no B enters.
 
-**Solution.** A=7 mol; B=6 mol.
+**Solution.** For **Stoichiometric Coefficients, Extent, Conversion, Yield, and Selectivity**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) =3, A=7 mol; B=6 mol. This is the section-specific result for feed mol extent mol outlet no enters. The stated units/basis (s) are retained.
 
 ---
 
@@ -84,7 +86,7 @@ Element balances remain valid even when species are created or consumed.
 
 **Problem.** For A→B, 100 mol/h A enters and 25 mol/h remains. Find conversion.
 
-**Solution.** 75%.
+**Solution.** For **Reactive Species Balances**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 100, 25, 75%. This is the section-specific result for mol enters mol remains conversion. The stated units/basis (mol/h, s) are retained.
 
 ---
 
@@ -102,7 +104,7 @@ Percent excess is measured relative to the stoichiometric amount required for th
 
 **Problem.** Reaction 2A+B→P. Feed 10 mol A and 8 mol B. Identify limiting reactant.
 
-**Solution.** A requires 5 mol B, so A is limiting.
+**Solution.** For **Limiting and Excess Reactants**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 2, 10, 8, A requires 5 mol B, so A is limiting. This is the section-specific result for Reaction Feed mol mol Identify limiting reactant.
 
 ---
 
@@ -120,7 +122,7 @@ With excess air, unused oxygen appears in products. Incomplete combustion may al
 
 **Problem.** Methane burns with 20% excess air. Stoichiometric O2 is 2 mol/mol CH4. Find actual O2 feed per mol CH4.
 
-**Solution.** 2.4 mol O2/mol CH4; air also carries 2.4×3.76=9.024 mol N2.
+**Solution.** For **Combustion, Theoretical Air, and Excess Air**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 20%, 2, 2, 2.4 mol O2/mol CH4; air also carries 2.4×3.76=9.024 mol N2. This is the section-specific result for Methane burns excess air Stoichiometric mol mol. The stated units/basis (s, h) are retained.
 
 ---
 
@@ -138,7 +140,7 @@ Apply products minus reactants using signed stoichiometric coefficients.
 
 **Problem.** For a reaction with ΣνΔHf°=-100 kJ/mol reaction, find heat of reaction.
 
-**Solution.** -100 kJ/mol reaction (exothermic).
+**Solution.** For **Standard Heats of Formation and Heat of Reaction**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) =-100, -100 kJ/mol reaction (exothermic). This is the section-specific result for reaction Hf kJ mol reaction heat reaction. The stated units/basis (kJ/mol, h) are retained.
 
 ---
 
@@ -156,7 +158,7 @@ For constant heat capacities over a modest range, the integral becomes a heat-ca
 
 **Problem.** ΔCp=20 J/(mol·K), ΔHr°=-100 kJ/mol at 298 K. Estimate ΔHr at 398 K with constant ΔCp.
 
-**Solution.** -100+0.020×100=-98 kJ/mol.
+**Solution.** For **Heat of Reaction Away from the Reference Temperature**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) Cp=20, =-100, -100+0.020×100=-98 kJ/mol. This is the section-specific result for Cp mol Hr kJ mol Estimate Hr. The stated units/basis (kJ/mol, J/(mol·K)) are retained.
 
 ---
 
@@ -174,7 +176,7 @@ Solve reaction extent first, then close the energy balance on a common reference
 
 **Problem.** What must be solved before an adiabatic flame/reactor temperature?
 
-**Solution.** Reaction extent/composition and a reactive energy balance.
+**Solution.** For **Reactive Energy Balances and Adiabatic Temperature**, Reaction extent/composition and a reactive energy balance. This follows because a reactive process energy balance combines material stoichiometry with sensible enthalpies and reaction enthalpy.. That physical distinction controls the result for must be solved before adiabatic flame reactor.
 
 ---
 
@@ -184,13 +186,13 @@ Solve reaction extent first, then close the energy balance on a common reference
 
 **Problem.** For A→D and A→U, 80 mol D and 20 mol U form. Find D/U selectivity.
 
-**Solution.** 4.
+**Solution.** For **Integrated Worked Examples**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 80, 20, 4. This is the section-specific result for mol mol form selectivity. The stated units/basis (s) are retained.
 
 ### Worked Example 9
 
 **Problem.** Stoichiometric air/fuel mass ratio is 17.2; actual is 20.64. Find percent excess air.
 
-**Solution.** (20.64-17.2)/17.2×100=20%.
+**Solution.** For **Integrated Worked Examples**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 17.2, 20.64, (20.64-17.2)/17.2×100=20%. This is the section-specific result for Stoichiometric air fuel mass ratio actual percent. The stated units/basis (s, h) are retained.
 
 ---
 
@@ -341,59 +343,59 @@ D) It is always directly tabulated in the Handbook
 
 ## Answer Key with Explanations
 
-1. **reaction extent and performance measures** is developed in §3.1. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+1. **Stoichiometric Coefficients, Extent, Conversion, Yield, and Selectivity.** For reaction calculations, use signed stoichiometric coefficients \(\nu_i\): negative for reactants and positive for products. In Reactive Material Balances, Combustion, and Heats of Reaction, this is the definition or balance being tested by Question 1.
 
-2. **reactive material balance** is developed in §3.2. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+2. **Reactive Species Balances.** A reactive balance can be written using extent or explicit generation terms. In Reactive Material Balances, Combustion, and Heats of Reaction, this is the definition or balance being tested by Question 2.
 
-3. **limiting and excess reactants** is developed in §3.3. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+3. **Limiting and Excess Reactants.** The limiting reactant is consumed first if the reaction proceeds to completion. In Reactive Material Balances, Combustion, and Heats of Reaction, this is the definition or balance being tested by Question 3.
 
-4. **combustion air balance** is developed in §3.4. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+4. **Combustion, Theoretical Air, and Excess Air.** The Handbook states that dry air may be modeled as 3.76 mol nitrogen per mol oxygen for combustion calculations. In Reactive Material Balances, Combustion, and Heats of Reaction, this is the definition or balance being tested by Question 4.
 
-5. **heat of reaction** is developed in §3.5. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+5. **Standard Heats of Formation and Heat of Reaction.** The Handbook evaluates standard heat of reaction from stoichiometric sums of heats of formation. In Reactive Material Balances, Combustion, and Heats of Reaction, this is the definition or balance being tested by Question 5.
 
-6. **temperature-corrected reaction enthalpy** is developed in §3.6. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+6. **Heat of Reaction Away from the Reference Temperature.** If reaction temperature differs from the reference state, the Handbook corrects \(\Delta H_r\) using the difference between product and reactant heat capacities. In Reactive Material Balances, Combustion, and Heats of Reaction, this is the definition or balance being tested by Question 6.
 
-7. **reactive energy balance** is developed in §3.7. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+7. **Reactive Energy Balances and Adiabatic Temperature.** A reactive process energy balance combines material stoichiometry with sensible enthalpies and reaction enthalpy. In Reactive Material Balances, Combustion, and Heats of Reaction, this is the definition or balance being tested by Question 7.
 
-8. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+8. For **Stoichiometric Coefficients, Extent, Conversion, Yield, and Selectivity**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. For reaction calculations, use signed stoichiometric coefficients \(\nu_i\): negative for reactants and positive for products. This is the specific failure mode emphasized in Reactive Material Balances, Combustion, and Heats of Reaction.
 
-9. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+9. For **Reactive Species Balances**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. A reactive balance can be written using extent or explicit generation terms. This is the specific failure mode emphasized in Reactive Material Balances, Combustion, and Heats of Reaction.
 
-10. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+10. For **Limiting and Excess Reactants**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. The limiting reactant is consumed first if the reaction proceeds to completion. This is the specific failure mode emphasized in Reactive Material Balances, Combustion, and Heats of Reaction.
 
-11. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+11. For **Combustion, Theoretical Air, and Excess Air**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. The Handbook states that dry air may be modeled as 3.76 mol nitrogen per mol oxygen for combustion calculations. This is the specific failure mode emphasized in Reactive Material Balances, Combustion, and Heats of Reaction.
 
-12. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+12. For **Standard Heats of Formation and Heat of Reaction**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. The Handbook evaluates standard heat of reaction from stoichiometric sums of heats of formation. This is the specific failure mode emphasized in Reactive Material Balances, Combustion, and Heats of Reaction.
 
-13. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+13. For **Heat of Reaction Away from the Reference Temperature**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. If reaction temperature differs from the reference state, the Handbook corrects \(\Delta H_r\) using the difference between product and reactant heat capacities. This is the specific failure mode emphasized in Reactive Material Balances, Combustion, and Heats of Reaction.
 
-14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+14. For **Reactive Energy Balances and Adiabatic Temperature**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. A reactive process energy balance combines material stoichiometry with sensible enthalpies and reaction enthalpy. This is the specific failure mode emphasized in Reactive Material Balances, Combustion, and Heats of Reaction.
 
-15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
+15. In **Reactive Material Balances, Combustion, and Heats of Reaction**, close the material balance first because stream amounts and compositions feed the later energy calculation. Otherwise enthalpy and duty terms may be evaluated for unresolved streams.
 
-16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
+16. For **Reactive Material Balances, Combustion, and Heats of Reaction**, a degrees-of-freedom check counts unknowns against independent equations before solving. Zero indicates a closed problem; a positive count signals missing independent information.
 
-17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
+17. In **Reactive Material Balances, Combustion, and Heats of Reaction**, a relation supplied by the FE problem defines the intended model for that question. A remembered correlation can carry different assumptions, coefficients, validity limits, or reference states.
 
-18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
+18. For **Reactive Material Balances, Combustion, and Heats of Reaction**, separating Handbook-supported material from specification-required learned material distinguishes lookup knowledge from material the guide develops. That boundary prevents guide-developed content from being presented as Handbook text.
 
-19. **A.** The relation or workflow for **reaction extent and performance measures** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+19. **A.** For **Stoichiometric Coefficients, Extent, Conversion, Yield, and Selectivity**, the relation is meaningful only with the correct basis and physical assumptions. For reaction calculations, use signed stoichiometric coefficients \(\nu_i\): negative for reactants and positive for products. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-20. **A.** The relation or workflow for **reactive material balance** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+20. **A.** For **Reactive Species Balances**, the relation is meaningful only with the correct basis and physical assumptions. A reactive balance can be written using extent or explicit generation terms. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-21. **A.** The relation or workflow for **limiting and excess reactants** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+21. **A.** For **Limiting and Excess Reactants**, the relation is meaningful only with the correct basis and physical assumptions. The limiting reactant is consumed first if the reaction proceeds to completion. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-22. **A.** The relation or workflow for **combustion air balance** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+22. **A.** For **Combustion, Theoretical Air, and Excess Air**, the relation is meaningful only with the correct basis and physical assumptions. The Handbook states that dry air may be modeled as 3.76 mol nitrogen per mol oxygen for combustion calculations. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-23. **A.** The relation or workflow for **heat of reaction** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+23. **A.** For **Standard Heats of Formation and Heat of Reaction**, the relation is meaningful only with the correct basis and physical assumptions. The Handbook evaluates standard heat of reaction from stoichiometric sums of heats of formation. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-24. **A.** The relation or workflow for **temperature-corrected reaction enthalpy** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+24. **A.** For **Heat of Reaction Away from the Reference Temperature**, the relation is meaningful only with the correct basis and physical assumptions. If reaction temperature differs from the reference state, the Handbook corrects \(\Delta H_r\) using the difference between product and reactant heat capacities. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-25. **A.** The relation or workflow for **reactive energy balance** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+25. **A.** For **Reactive Energy Balances and Adiabatic Temperature**, the relation is meaningful only with the correct basis and physical assumptions. A reactive process energy balance combines material stoichiometry with sensible enthalpies and reaction enthalpy. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-26. **A.** The relation or workflow for **reaction extent and performance measures** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+26. **A.** This later check revisits **Stoichiometric Coefficients, Extent, Conversion, Yield, and Selectivity** from a different review position. For reaction calculations, use signed stoichiometric coefficients \(\nu_i\): negative for reactants and positive for products. The correct choice remains A because the concept still depends on the defined basis and physical assumptions.
 
-27. **A.** The relation or workflow for **reactive material balance** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+27. **A.** This later check revisits **Reactive Species Balances** from a different review position. A reactive balance can be written using extent or explicit generation terms. The correct choice remains A because the concept still depends on the defined basis and physical assumptions.
 
 
 ---
@@ -425,25 +427,25 @@ D) It is always directly tabulated in the Handbook
 
 ## Practice Problem Solutions
 
-1. A=7 mol; B=6 mol.
+1. For the practice case involving **feed mol extent mol outlet no enters**, Using =3, A=7 mol; B=6 mol. This completes Practice Problem 1 in Reactive Material Balances, Combustion, and Heats of Reaction. The original s basis is preserved.
 
-2. 75%.
+2. For the practice case involving **mol enters mol remains conversion**, Using 100, 25, 75%. This completes Practice Problem 2 in Reactive Material Balances, Combustion, and Heats of Reaction. The original mol/h, s basis is preserved.
 
-3. A requires 5 mol B, so A is limiting.
+3. For the practice case involving **Reaction Feed mol mol Identify limiting reactant**, Using 2, 10, 8, A requires 5 mol B, so A is limiting. This completes Practice Problem 3 in Reactive Material Balances, Combustion, and Heats of Reaction.
 
-4. 2.4 mol O2/mol CH4; air also carries 2.4×3.76=9.024 mol N2.
+4. For the practice case involving **Methane burns excess air Stoichiometric mol mol**, Using 20%, 2, 2, 2.4 mol O2/mol CH4; air also carries 2.4×3.76=9.024 mol N2. This completes Practice Problem 4 in Reactive Material Balances, Combustion, and Heats of Reaction. The original s, h basis is preserved.
 
-5. -100 kJ/mol reaction (exothermic).
+5. For the practice case involving **reaction Hf kJ mol reaction heat reaction**, Using =-100, -100 kJ/mol reaction (exothermic). This completes Practice Problem 5 in Reactive Material Balances, Combustion, and Heats of Reaction. The original kJ/mol, h basis is preserved.
 
-6. -100+0.020×100=-98 kJ/mol.
+6. For the practice case involving **Cp mol Hr kJ mol Estimate Hr**, Using Cp=20, =-100, -100+0.020×100=-98 kJ/mol. This completes Practice Problem 6 in Reactive Material Balances, Combustion, and Heats of Reaction. The original kJ/mol, J/(mol·K) basis is preserved.
 
-7. Reaction extent/composition and a reactive energy balance.
+7. For the practice case involving **must be solved before adiabatic flame reactor**, Reaction extent/composition and a reactive energy balance. This is the chapter-specific distinction required by Practice Problem 7 in Reactive Material Balances, Combustion, and Heats of Reaction.
 
-8. 4.
+8. For the practice case involving **mol mol form selectivity**, Using 80, 20, 4. This completes Practice Problem 8 in Reactive Material Balances, Combustion, and Heats of Reaction. The original s basis is preserved.
 
-9. (20.64-17.2)/17.2×100=20%.
+9. For the practice case involving **Stoichiometric air fuel mass ratio actual percent**, Using 17.2, 20.64, (20.64-17.2)/17.2×100=20%. This completes Practice Problem 9 in Reactive Material Balances, Combustion, and Heats of Reaction. The original s, h basis is preserved.
 
-10. 400 kW.
+10. For the practice case involving **fuel releases kJ mol mol reacts adiabatically**, Using 800, 0.5, 400 kW. This completes Practice Problem 10 in Reactive Material Balances, Combustion, and Heats of Reaction. The original kJ/mol, s basis is preserved.
 
 
 ---

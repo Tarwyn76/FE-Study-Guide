@@ -36,7 +36,9 @@ The Handbook directly provides flash and Rayleigh balances, binary continuous-di
 
 ## Learning Objectives
 
-By the end of this chapter, you will be able to:* **6.1** Explain and apply **Flash Distillation**.
+By the end of this chapter, you will be able to:
+
+* **6.1** Explain and apply **Flash Distillation**.
 * **6.2** Explain and apply **Differential or Rayleigh Distillation**.
 * **6.3** Explain and apply **Continuous Column Overall and Component Balances**.
 * **6.4** Explain and apply **Rectifying and Stripping Operating Lines**.
@@ -66,7 +68,7 @@ For a binary ideal flash, one composition variable and vapor fraction can often 
 
 **Problem.** Flash feed F=100 kmol/h produces V=40. Find L.
 
-**Solution.** 60 kmol/h.
+**Solution.** For **Flash Distillation**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) F=100, V=40, 60 kmol/h. This is the section-specific result for Flash feed kmol produces. The stated units/basis (kmol/h, mol/h) are retained.
 
 ---
 
@@ -84,7 +86,7 @@ The equilibrium relation \(y(x)\) must be known or modeled.
 
 **Problem.** Flash: F=100, zA=0.5, V=40, yA=0.8. Find xA in liquid.
 
-**Solution.** 50=32+60x → x=0.30.
+**Solution.** For **Differential or Rayleigh Distillation**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) F=100, zA=0.5, V=40, 50=32+60x → x=0.30. This is the section-specific result for Flash zA yA xA liquid. The stated units/basis (s, h) are retained.
 
 ---
 
@@ -102,7 +104,7 @@ Internal stage balances generate operating lines.
 
 **Problem.** Continuous column F=100, D=40. Find B.
 
-**Solution.** 60.
+**Solution.** For **Continuous Column Overall and Component Balances**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) F=100, D=40, 60. This is the section-specific result for Continuous column. The stated units/basis (s) are retained.
 
 ---
 
@@ -120,7 +122,7 @@ The rectifying line is tied to reflux ratio and distillate composition. The stri
 
 **Problem.** For RD=3 and xD=0.9, write rectifying line.
 
-**Solution.** y=3/4 x + 0.9/4 =0.75x+0.225.
+**Solution.** For **Rectifying and Stripping Operating Lines**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) RD=3, xD=0.9, y=3/4 x + 0.9/4 =0.75x+0.225. This is the section-specific result for RD xD write rectifying line.
 
 ---
 
@@ -138,7 +140,7 @@ The q-line slope is \(q/(q-1)\).
 
 **Problem.** What is q-line slope for q=1?
 
-**Solution.** Infinite/vertical.
+**Solution.** For **Feed Condition and the q-Line**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) q=1, Infinite/vertical. This is the section-specific result for q-line slope. The stated units/basis (s, h) are retained.
 
 ---
 
@@ -156,7 +158,7 @@ Minimum reflux occurs when the operating construction pinches the equilibrium cu
 
 **Problem.** Why does minimum reflux imply infinite theoretical stages?
 
-**Solution.** The operating construction pinches the equilibrium curve, driving local mass-transfer/stage progress to zero.
+**Solution.** For **McCabe–Thiele Stage Stepping**, The operating construction pinches the equilibrium curve, driving local mass-transfer/stage progress to zero. This follows because the McCabe–Thiele method alternates horizontal equilibrium moves and vertical operating-line moves between \(x_D\) and \(x_B\).. That physical distinction controls the result for does minimum reflux imply infinite theoretical stages.
 
 ---
 
@@ -174,7 +176,7 @@ Efficiency converts ideal-stage performance into a more realistic tray requireme
 
 **Problem.** yn=0.70, yn+1=0.50, yn*=0.80. Find Murphree vapor efficiency.
 
-**Solution.** E=(0.70-0.50)/(0.80-0.50)=0.667.
+**Solution.** For **Murphree Efficiency and Real Stages**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) yn=0.70, =0.50, =0.80, E=(0.70-0.50)/(0.80-0.50)=0.667. This is the section-specific result for yn yn yn Murphree vapor efficiency. The stated units/basis (h) are retained.
 
 ---
 
@@ -184,13 +186,13 @@ Efficiency converts ideal-stage performance into a more realistic tray requireme
 
 **Problem.** Overall binary balance: F=100, z=0.5, xD=0.9, xB=0.1. Find D and B.
 
-**Solution.** D=50; B=50.
+**Solution.** For **Integrated Worked Examples**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) F=100, z=0.5, xD=0.9, D=50; B=50. This is the section-specific result for Overall binary balance xD xB.
 
 ### Worked Example 9
 
 **Problem.** At total reflux, what happens to external product withdrawal in ideal analysis?
 
-**Solution.** Distillate and bottoms withdrawals go to zero; internal reflux is maximal.
+**Solution.** For **Integrated Worked Examples**, Distillate and bottoms withdrawals go to zero; internal reflux is maximal. This follows because the section distinguishes the governing physical behavior from the alternatives. That physical distinction controls the result for total reflux happens external product withdrawal ideal.
 
 ---
 
@@ -341,59 +343,59 @@ D) It is always directly tabulated in the Handbook
 
 ## Answer Key with Explanations
 
-1. **flash distillation** is developed in §6.1. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+1. **Flash Distillation.** A flash drum produces equilibrium vapor and liquid from one feed. In Distillation and Equilibrium-Stage Methods, this is the definition or balance being tested by Question 1.
 
-2. **Rayleigh distillation** is developed in §6.2. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+2. **Differential or Rayleigh Distillation.** In differential batch distillation, vapor is removed as it forms, so the still composition changes continuously. In Distillation and Equilibrium-Stage Methods, this is the definition or balance being tested by Question 2.
 
-3. **continuous distillation balance** is developed in §6.3. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+3. **Continuous Column Overall and Component Balances.** For a binary column, the external balance is \(F=D+B\) and \(Fz_F=Dx_D+Bx_B\). In Distillation and Equilibrium-Stage Methods, this is the definition or balance being tested by Question 3.
 
-4. **distillation operating line** is developed in §6.4. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+4. **Rectifying and Stripping Operating Lines.** Under constant molal overflow, the rectifying and stripping sections each have linear operating relations in \(x-y\) space. In Distillation and Equilibrium-Stage Methods, this is the definition or balance being tested by Question 4.
 
-5. **distillation q-line** is developed in §6.5. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+5. **Feed Condition and the q-Line.** Saturated liquid gives a vertical q-line; saturated vapor gives a horizontal q-line. In Distillation and Equilibrium-Stage Methods, this is the definition or balance being tested by Question 5.
 
-6. **McCabe-Thiele method** is developed in §6.6. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+6. **McCabe–Thiele Stage Stepping.** The McCabe–Thiele method alternates horizontal equilibrium moves and vertical operating-line moves between \(x_D\) and \(x_B\). In Distillation and Equilibrium-Stage Methods, this is the definition or balance being tested by Question 6.
 
-7. **Murphree plate efficiency** is developed in §6.7. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+7. **Murphree Efficiency and Real Stages.** The Handbook gives Murphree vapor efficiency based on actual vapor composition change relative to the equilibrium change possible from the leaving liquid. In Distillation and Equilibrium-Stage Methods, this is the definition or balance being tested by Question 7.
 
-8. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+8. For **Flash Distillation**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. A flash drum produces equilibrium vapor and liquid from one feed. This is the specific failure mode emphasized in Distillation and Equilibrium-Stage Methods.
 
-9. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+9. For **Differential or Rayleigh Distillation**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. In differential batch distillation, vapor is removed as it forms, so the still composition changes continuously. This is the specific failure mode emphasized in Distillation and Equilibrium-Stage Methods.
 
-10. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+10. For **Continuous Column Overall and Component Balances**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. For a binary column, the external balance is \(F=D+B\) and \(Fz_F=Dx_D+Bx_B\). This is the specific failure mode emphasized in Distillation and Equilibrium-Stage Methods.
 
-11. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+11. For **Rectifying and Stripping Operating Lines**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. Under constant molal overflow, the rectifying and stripping sections each have linear operating relations in \(x-y\) space. This is the specific failure mode emphasized in Distillation and Equilibrium-Stage Methods.
 
-12. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+12. For **Feed Condition and the q-Line**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. Saturated liquid gives a vertical q-line; saturated vapor gives a horizontal q-line. This is the specific failure mode emphasized in Distillation and Equilibrium-Stage Methods.
 
-13. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+13. For **McCabe–Thiele Stage Stepping**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. The McCabe–Thiele method alternates horizontal equilibrium moves and vertical operating-line moves between \(x_D\) and \(x_B\). This is the specific failure mode emphasized in Distillation and Equilibrium-Stage Methods.
 
-14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+14. For **Murphree Efficiency and Real Stages**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. The Handbook gives Murphree vapor efficiency based on actual vapor composition change relative to the equilibrium change possible from the leaving liquid. This is the specific failure mode emphasized in Distillation and Equilibrium-Stage Methods.
 
-15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
+15. In **Distillation and Equilibrium-Stage Methods**, close the material balance first because stream amounts and compositions feed the later energy calculation. Otherwise enthalpy and duty terms may be evaluated for unresolved streams.
 
-16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
+16. For **Distillation and Equilibrium-Stage Methods**, a degrees-of-freedom check counts unknowns against independent equations before solving. Zero indicates a closed problem; a positive count signals missing independent information.
 
-17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
+17. In **Distillation and Equilibrium-Stage Methods**, a relation supplied by the FE problem defines the intended model for that question. A remembered correlation can carry different assumptions, coefficients, validity limits, or reference states.
 
-18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
+18. For **Distillation and Equilibrium-Stage Methods**, separating Handbook-supported material from specification-required learned material distinguishes lookup knowledge from material the guide develops. That boundary prevents guide-developed content from being presented as Handbook text.
 
-19. **A.** The relation or workflow for **flash distillation** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+19. **A.** For **Flash Distillation**, the relation is meaningful only with the correct basis and physical assumptions. A flash drum produces equilibrium vapor and liquid from one feed. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-20. **A.** The relation or workflow for **Rayleigh distillation** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+20. **A.** For **Differential or Rayleigh Distillation**, the relation is meaningful only with the correct basis and physical assumptions. In differential batch distillation, vapor is removed as it forms, so the still composition changes continuously. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-21. **A.** The relation or workflow for **continuous distillation balance** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+21. **A.** For **Continuous Column Overall and Component Balances**, the relation is meaningful only with the correct basis and physical assumptions. For a binary column, the external balance is \(F=D+B\) and \(Fz_F=Dx_D+Bx_B\). Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-22. **A.** The relation or workflow for **distillation operating line** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+22. **A.** For **Rectifying and Stripping Operating Lines**, the relation is meaningful only with the correct basis and physical assumptions. Under constant molal overflow, the rectifying and stripping sections each have linear operating relations in \(x-y\) space. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-23. **A.** The relation or workflow for **distillation q-line** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+23. **A.** For **Feed Condition and the q-Line**, the relation is meaningful only with the correct basis and physical assumptions. Saturated liquid gives a vertical q-line; saturated vapor gives a horizontal q-line. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-24. **A.** The relation or workflow for **McCabe-Thiele method** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+24. **A.** For **McCabe–Thiele Stage Stepping**, the relation is meaningful only with the correct basis and physical assumptions. The McCabe–Thiele method alternates horizontal equilibrium moves and vertical operating-line moves between \(x_D\) and \(x_B\). Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-25. **A.** The relation or workflow for **Murphree plate efficiency** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+25. **A.** For **Murphree Efficiency and Real Stages**, the relation is meaningful only with the correct basis and physical assumptions. The Handbook gives Murphree vapor efficiency based on actual vapor composition change relative to the equilibrium change possible from the leaving liquid. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-26. **A.** The relation or workflow for **flash distillation** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+26. **A.** This later check revisits **Flash Distillation** from a different review position. A flash drum produces equilibrium vapor and liquid from one feed. The correct choice remains A because the concept still depends on the defined basis and physical assumptions.
 
-27. **A.** The relation or workflow for **Rayleigh distillation** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+27. **A.** This later check revisits **Differential or Rayleigh Distillation** from a different review position. In differential batch distillation, vapor is removed as it forms, so the still composition changes continuously. The correct choice remains A because the concept still depends on the defined basis and physical assumptions.
 
 
 ---
@@ -425,25 +427,25 @@ D) It is always directly tabulated in the Handbook
 
 ## Practice Problem Solutions
 
-1. 60 kmol/h.
+1. For the practice case involving **Flash feed kmol produces**, Using F=100, V=40, 60 kmol/h. This completes Practice Problem 1 in Distillation and Equilibrium-Stage Methods. The original kmol/h, mol/h basis is preserved.
 
-2. 50=32+60x → x=0.30.
+2. For the practice case involving **Flash zA yA xA liquid**, Using F=100, zA=0.5, V=40, 50=32+60x → x=0.30. This completes Practice Problem 2 in Distillation and Equilibrium-Stage Methods. The original s, h basis is preserved.
 
-3. 60.
+3. For the practice case involving **Continuous column**, Using F=100, D=40, 60. This completes Practice Problem 3 in Distillation and Equilibrium-Stage Methods. The original s basis is preserved.
 
-4. y=3/4 x + 0.9/4 =0.75x+0.225.
+4. For the practice case involving **RD xD write rectifying line**, Using RD=3, xD=0.9, y=3/4 x + 0.9/4 =0.75x+0.225. This completes Practice Problem 4 in Distillation and Equilibrium-Stage Methods.
 
-5. Infinite/vertical.
+5. For the practice case involving **q-line slope**, Using q=1, Infinite/vertical. This completes Practice Problem 5 in Distillation and Equilibrium-Stage Methods. The original s, h basis is preserved.
 
-6. The operating construction pinches the equilibrium curve, driving local mass-transfer/stage progress to zero.
+6. For the practice case involving **does minimum reflux imply infinite theoretical stages**, The operating construction pinches the equilibrium curve, driving local mass-transfer/stage progress to zero. This is the chapter-specific distinction required by Practice Problem 6 in Distillation and Equilibrium-Stage Methods.
 
-7. E=(0.70-0.50)/(0.80-0.50)=0.667.
+7. For the practice case involving **yn yn yn Murphree vapor efficiency**, Using yn=0.70, =0.50, =0.80, E=(0.70-0.50)/(0.80-0.50)=0.667. This completes Practice Problem 7 in Distillation and Equilibrium-Stage Methods. The original h basis is preserved.
 
-8. D=50; B=50.
+8. For the practice case involving **Overall binary balance xD xB**, Using F=100, z=0.5, xD=0.9, D=50; B=50. This completes Practice Problem 8 in Distillation and Equilibrium-Stage Methods.
 
-9. Distillate and bottoms withdrawals go to zero; internal reflux is maximal.
+9. For the practice case involving **total reflux happens external product withdrawal ideal**, Distillate and bottoms withdrawals go to zero; internal reflux is maximal. This is the chapter-specific distinction required by Practice Problem 9 in Distillation and Equilibrium-Stage Methods.
 
-10. q=0.
+10. For the practice case involving **feed saturated vapor**, q=0. This is the chapter-specific distinction required by Practice Problem 10 in Distillation and Equilibrium-Stage Methods.
 
 
 ---
