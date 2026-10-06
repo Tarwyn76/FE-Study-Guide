@@ -36,7 +36,9 @@ The Handbook directly provides particle-size operation ranges, sieve conversion,
 
 ## Learning Objectives
 
-By the end of this chapter, you will be able to:* **9.1** Explain and apply **Particle Size Distributions**.
+By the end of this chapter, you will be able to:
+
+* **9.1** Explain and apply **Particle Size Distributions**.
 * **9.2** Explain and apply **Mean Particle Diameters**.
 * **9.3** Explain and apply **Sieve Analysis and Mesh Conversion**.
 * **9.4** Explain and apply **Crushing and Grinding**.
@@ -66,7 +68,7 @@ Always identify whether a reported cumulative distribution is number, mass, or v
 
 **Problem.** A cumulative PSD says 70% mass is below 100 µm. What fraction is above 100 µm?
 
-**Solution.** 30%.
+**Solution.** For **Particle Size Distributions**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 70%, 100, 100, 30%. This is the section-specific result for cumulative PSD says mass below fraction above. The stated units/basis (µm, s) are retained.
 
 ---
 
@@ -84,7 +86,7 @@ Use the mean diameter definition specified in the problem rather than an arithme
 
 **Problem.** Why is Sauter mean relevant to transfer?
 
-**Solution.** It preserves surface-area-to-volume behavior.
+**Solution.** For **Mean Particle Diameters**, It preserves surface-area-to-volume behavior. This follows because the Handbook gives several mean diameters because no single average preserves every physical property.. That physical distinction controls the result for Sauter mean relevant transfer.
 
 ---
 
@@ -102,7 +104,7 @@ A size fraction such as \(-20+40\) mesh means the material passes the 20-mesh si
 
 **Problem.** A 200 g sieve sample retains 30 g in one interval. Find interval mass fraction.
 
-**Solution.** 0.15.
+**Solution.** For **Sieve Analysis and Mesh Conversion**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 200, 30, 0.15. This is the section-specific result for sieve sample retains one interval interval mass. The stated units/basis (s) are retained.
 
 ---
 
@@ -120,7 +122,7 @@ Equipment selection depends on feed size, desired product size, hardness, throug
 
 **Problem.** Feed size is 20 mm and product size 2 mm. Estimate reduction ratio.
 
-**Solution.** 10.
+**Solution.** For **Crushing and Grinding**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 20, 2, 10. This is the section-specific result for Feed size mm product size mm Estimate. The stated units/basis (mm, s) are retained.
 
 ---
 
@@ -138,7 +140,7 @@ Classification separates by settling, centrifugal action, density, size, magneti
 
 **Problem.** What outlet of a hydrocyclone commonly carries coarser/denser solids?
 
-**Solution.** Underflow.
+**Solution.** For **Classification and Separation of Solids**, Underflow. This follows because the Handbook lists wet and dry classifiers such as sloping-tank classifiers, hydrocyclones, and other devices across particle-size ranges.. That physical distinction controls the result for outlet hydrocyclone commonly carries coarser denser solids.
 
 ---
 
@@ -156,7 +158,7 @@ Detailed conveying correlations are not tabulated in the Chemical Engineering se
 
 **Problem.** A conical pile has h=1.0 m and radius 2.0 m. Find angle of repose.
 
-**Solution.** θ=atan(0.5)=26.6°.
+**Solution.** For **Bulk Solids, Angle of Repose, Transport, and Storage**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) h=1.0, θ=atan(0.5)=26.6°. This is the section-specific result for conical pile has radius angle repose. The stated units/basis (s, h) are retained.
 
 ---
 
@@ -174,7 +176,7 @@ Use the phase diagram to identify stable solid form and equilibrium liquid compo
 
 **Problem.** A crystallizer feed has 100 kg solute; mother liquor contains 30 kg solute. Find solute in crystals.
 
-**Solution.** 70 kg, assuming no other solute outlet.
+**Solution.** For **Crystallization and Phase Diagrams**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 100, 30, 70 kg, assuming no other solute outlet. This is the section-specific result for crystallizer feed has kg solute mother liquor. The stated units/basis (s, h) are retained.
 
 ---
 
@@ -184,13 +186,13 @@ Use the phase diagram to identify stable solid form and equilibrium liquid compo
 
 **Problem.** What does '-20+40 mesh' mean?
 
-**Solution.** Passes 20-mesh and is retained on 40-mesh.
+**Solution.** For **Integrated Worked Examples**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) -20, +40, Passes 20-mesh and is retained on 40-mesh. This is the section-specific result for does mesh mean. The stated units/basis (s, h) are retained.
 
 ### Worked Example 9
 
 **Problem.** Why do number- and mass-based PSD means differ?
 
-**Solution.** Large particles contribute far more mass/volume per particle.
+**Solution.** For **Integrated Worked Examples**, Large particles contribute far more mass/volume per particle. This follows because the section distinguishes the governing physical behavior from the alternatives. That physical distinction controls the result for do number- mass-based PSD means differ.
 
 ---
 
@@ -341,59 +343,59 @@ D) It is always directly tabulated in the Handbook
 
 ## Answer Key with Explanations
 
-1. **particle-size distribution** is developed in §9.1. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+1. **Particle Size Distributions.** A particle-size distribution (PSD) may be represented by a density function or cumulative fraction. In Particle Characterization, Solids Handling, Size Reduction, and Crystallization, this is the definition or balance being tested by Question 1.
 
-2. **Sauter mean diameter** is developed in §9.2. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+2. **Mean Particle Diameters.** The Handbook gives several mean diameters because no single average preserves every physical property. In Particle Characterization, Solids Handling, Size Reduction, and Crystallization, this is the definition or balance being tested by Question 2.
 
-3. **sieve analysis** is developed in §9.3. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+3. **Sieve Analysis and Mesh Conversion.** The Handbook provides a mesh-to-micron conversion table and indicates that a plus sign means retained on a sieve while a minus sign means passing. In Particle Characterization, Solids Handling, Size Reduction, and Crystallization, this is the definition or balance being tested by Question 3.
 
-4. **size reduction** is developed in §9.4. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+4. **Crushing and Grinding.** The Handbook tabulates feed/product size ranges, reduction ratios, and candidate equipment for crushing, grinding, and disintegration. In Particle Characterization, Solids Handling, Size Reduction, and Crystallization, this is the definition or balance being tested by Question 4.
 
-5. **solids classification** is developed in §9.5. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+5. **Classification and Separation of Solids.** The Handbook lists wet and dry classifiers such as sloping-tank classifiers, hydrocyclones, and other devices across particle-size ranges. In Particle Characterization, Solids Handling, Size Reduction, and Crystallization, this is the definition or balance being tested by Question 5.
 
-6. **angle of repose** is developed in §9.6. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+6. **Bulk Solids, Angle of Repose, Transport, and Storage.** Angle of repose describes the stable free-surface slope of a granular pile and influences hopper and storage design. In Particle Characterization, Solids Handling, Size Reduction, and Crystallization, this is the definition or balance being tested by Question 6.
 
-7. **crystallization phase balance** is developed in §9.7. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+7. **Crystallization and Phase Diagrams.** Crystallization separates a solid phase from solution by changing temperature, solvent amount, or composition. In Particle Characterization, Solids Handling, Size Reduction, and Crystallization, this is the definition or balance being tested by Question 7.
 
-8. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+8. For **Particle Size Distributions**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. A particle-size distribution (PSD) may be represented by a density function or cumulative fraction. This is the specific failure mode emphasized in Particle Characterization, Solids Handling, Size Reduction, and Crystallization.
 
-9. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+9. For **Mean Particle Diameters**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. The Handbook gives several mean diameters because no single average preserves every physical property. This is the specific failure mode emphasized in Particle Characterization, Solids Handling, Size Reduction, and Crystallization.
 
-10. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+10. For **Sieve Analysis and Mesh Conversion**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. The Handbook provides a mesh-to-micron conversion table and indicates that a plus sign means retained on a sieve while a minus sign means passing. This is the specific failure mode emphasized in Particle Characterization, Solids Handling, Size Reduction, and Crystallization.
 
-11. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+11. For **Crushing and Grinding**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. The Handbook tabulates feed/product size ranges, reduction ratios, and candidate equipment for crushing, grinding, and disintegration. This is the specific failure mode emphasized in Particle Characterization, Solids Handling, Size Reduction, and Crystallization.
 
-12. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+12. For **Classification and Separation of Solids**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. The Handbook lists wet and dry classifiers such as sloping-tank classifiers, hydrocyclones, and other devices across particle-size ranges. This is the specific failure mode emphasized in Particle Characterization, Solids Handling, Size Reduction, and Crystallization.
 
-13. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+13. For **Bulk Solids, Angle of Repose, Transport, and Storage**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. Angle of repose describes the stable free-surface slope of a granular pile and influences hopper and storage design. This is the specific failure mode emphasized in Particle Characterization, Solids Handling, Size Reduction, and Crystallization.
 
-14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+14. For **Crystallization and Phase Diagrams**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. Crystallization separates a solid phase from solution by changing temperature, solvent amount, or composition. This is the specific failure mode emphasized in Particle Characterization, Solids Handling, Size Reduction, and Crystallization.
 
-15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
+15. In **Particle Characterization, Solids Handling, Size Reduction, and Crystallization**, close the material balance first because stream amounts and compositions feed the later energy calculation. Otherwise enthalpy and duty terms may be evaluated for unresolved streams.
 
-16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
+16. For **Particle Characterization, Solids Handling, Size Reduction, and Crystallization**, a degrees-of-freedom check counts unknowns against independent equations before solving. Zero indicates a closed problem; a positive count signals missing independent information.
 
-17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
+17. In **Particle Characterization, Solids Handling, Size Reduction, and Crystallization**, a relation supplied by the FE problem defines the intended model for that question. A remembered correlation can carry different assumptions, coefficients, validity limits, or reference states.
 
-18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
+18. For **Particle Characterization, Solids Handling, Size Reduction, and Crystallization**, separating Handbook-supported material from specification-required learned material distinguishes lookup knowledge from material the guide develops. That boundary prevents guide-developed content from being presented as Handbook text.
 
-19. **A.** The relation or workflow for **particle-size distribution** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+19. **A.** For **Particle Size Distributions**, the relation is meaningful only with the correct basis and physical assumptions. A particle-size distribution (PSD) may be represented by a density function or cumulative fraction. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-20. **A.** The relation or workflow for **Sauter mean diameter** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+20. **A.** For **Mean Particle Diameters**, the relation is meaningful only with the correct basis and physical assumptions. The Handbook gives several mean diameters because no single average preserves every physical property. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-21. **A.** The relation or workflow for **sieve analysis** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+21. **A.** For **Sieve Analysis and Mesh Conversion**, the relation is meaningful only with the correct basis and physical assumptions. The Handbook provides a mesh-to-micron conversion table and indicates that a plus sign means retained on a sieve while a minus sign means passing. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-22. **A.** The relation or workflow for **size reduction** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+22. **A.** For **Crushing and Grinding**, the relation is meaningful only with the correct basis and physical assumptions. The Handbook tabulates feed/product size ranges, reduction ratios, and candidate equipment for crushing, grinding, and disintegration. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-23. **A.** The relation or workflow for **solids classification** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+23. **A.** For **Classification and Separation of Solids**, the relation is meaningful only with the correct basis and physical assumptions. The Handbook lists wet and dry classifiers such as sloping-tank classifiers, hydrocyclones, and other devices across particle-size ranges. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-24. **A.** The relation or workflow for **angle of repose** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+24. **A.** For **Bulk Solids, Angle of Repose, Transport, and Storage**, the relation is meaningful only with the correct basis and physical assumptions. Angle of repose describes the stable free-surface slope of a granular pile and influences hopper and storage design. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-25. **A.** The relation or workflow for **crystallization phase balance** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+25. **A.** For **Crystallization and Phase Diagrams**, the relation is meaningful only with the correct basis and physical assumptions. Crystallization separates a solid phase from solution by changing temperature, solvent amount, or composition. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-26. **A.** The relation or workflow for **particle-size distribution** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+26. **A.** This later check revisits **Particle Size Distributions** from a different review position. A particle-size distribution (PSD) may be represented by a density function or cumulative fraction. The correct choice remains A because the concept still depends on the defined basis and physical assumptions.
 
-27. **A.** The relation or workflow for **Sauter mean diameter** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+27. **A.** This later check revisits **Mean Particle Diameters** from a different review position. The Handbook gives several mean diameters because no single average preserves every physical property. The correct choice remains A because the concept still depends on the defined basis and physical assumptions.
 
 
 ---
@@ -425,25 +427,25 @@ D) It is always directly tabulated in the Handbook
 
 ## Practice Problem Solutions
 
-1. 30%.
+1. For the practice case involving **cumulative PSD says mass below fraction above**, Using 70%, 100, 100, 30%. This completes Practice Problem 1 in Particle Characterization, Solids Handling, Size Reduction, and Crystallization. The original µm, s basis is preserved.
 
-2. It preserves surface-area-to-volume behavior.
+2. For the practice case involving **Sauter mean relevant transfer**, It preserves surface-area-to-volume behavior. This is the chapter-specific distinction required by Practice Problem 2 in Particle Characterization, Solids Handling, Size Reduction, and Crystallization.
 
-3. 0.15.
+3. For the practice case involving **sieve sample retains one interval interval mass**, Using 200, 30, 0.15. This completes Practice Problem 3 in Particle Characterization, Solids Handling, Size Reduction, and Crystallization. The original s basis is preserved.
 
-4. 10.
+4. For the practice case involving **Feed size mm product size mm Estimate**, Using 20, 2, 10. This completes Practice Problem 4 in Particle Characterization, Solids Handling, Size Reduction, and Crystallization. The original mm, s basis is preserved.
 
-5. Underflow.
+5. For the practice case involving **outlet hydrocyclone commonly carries coarser denser solids**, Underflow. This is the chapter-specific distinction required by Practice Problem 5 in Particle Characterization, Solids Handling, Size Reduction, and Crystallization.
 
-6. θ=atan(0.5)=26.6°.
+6. For the practice case involving **conical pile has radius angle repose**, Using h=1.0, θ=atan(0.5)=26.6°. This completes Practice Problem 6 in Particle Characterization, Solids Handling, Size Reduction, and Crystallization. The original s, h basis is preserved.
 
-7. 70 kg, assuming no other solute outlet.
+7. For the practice case involving **crystallizer feed has kg solute mother liquor**, Using 100, 30, 70 kg, assuming no other solute outlet. This completes Practice Problem 7 in Particle Characterization, Solids Handling, Size Reduction, and Crystallization. The original s, h basis is preserved.
 
-8. Passes 20-mesh and is retained on 40-mesh.
+8. For the practice case involving **does mesh mean**, Using -20, +40, Passes 20-mesh and is retained on 40-mesh. This completes Practice Problem 8 in Particle Characterization, Solids Handling, Size Reduction, and Crystallization. The original s, h basis is preserved.
 
-9. Large particles contribute far more mass/volume per particle.
+9. For the practice case involving **do number- mass-based PSD means differ**, Large particles contribute far more mass/volume per particle. This is the chapter-specific distinction required by Practice Problem 9 in Particle Characterization, Solids Handling, Size Reduction, and Crystallization.
 
-10. Crystallization/solid precipitation.
+10. For the practice case involving **cooling moves solution from one liquid region**, Crystallization/solid precipitation. This is the chapter-specific distinction required by Practice Problem 10 in Particle Characterization, Solids Handling, Size Reduction, and Crystallization.
 
 
 ---

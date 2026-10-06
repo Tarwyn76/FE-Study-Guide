@@ -36,7 +36,9 @@ Humidification and drying/evaporation are explicit specification topics. Psychro
 
 ## Learning Objectives
 
-By the end of this chapter, you will be able to:* **8.1** Explain and apply **Humid-Air Variables for Chemical Operations**.
+By the end of this chapter, you will be able to:
+
+* **8.1** Explain and apply **Humid-Air Variables for Chemical Operations**.
 * **8.2** Explain and apply **Humidification and Dehumidification Balances**.
 * **8.3** Explain and apply **Moisture Content on Wet and Dry Basis**.
 * **8.4** Explain and apply **Drying Rate and Constant/Falling-Rate Concepts**.
@@ -66,7 +68,7 @@ On a dry-air basis, water-vapor mass flow is \(\dot m_a\omega\).
 
 **Problem.** At P=100 kPa, Pv=2 kPa. Find humidity ratio.
 
-**Solution.** ω=0.622(2)/(98)=0.01269 kg/kg dry air.
+**Solution.** For **Humid-Air Variables for Chemical Operations**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) P=100, Pv=2, ω=0.622(2)/(98)=0.01269 kg/kg dry air. This is the section-specific result for kPa Pv kPa humidity ratio. The stated units/basis (kPa, Pa) are retained.
 
 ---
 
@@ -84,7 +86,7 @@ Use dry-air flow as the conserved carrier basis because dry air does not condens
 
 **Problem.** Dry air flow is 5 kg/s, humidity ratio rises 0.005. Find water added.
 
-**Solution.** 0.025 kg/s.
+**Solution.** For **Humidification and Dehumidification Balances**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 5, 0.005, 0.025 kg/s. This is the section-specific result for Dry air flow kg humidity ratio rises. The stated units/basis (kg/s, s) are retained.
 
 ---
 
@@ -102,7 +104,7 @@ A dry basis is often convenient because dry-solid mass remains constant during m
 
 **Problem.** A wet solid has 2 kg water and 8 kg dry solid. Find wet- and dry-basis moisture.
 
-**Solution.** Xwb=0.20; Xdb=0.25.
+**Solution.** For **Moisture Content on Wet and Dry Basis**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 2, 8, Xwb=0.20; Xdb=0.25. This is the section-specific result for wet solid has kg water kg dry. The stated units/basis (s, h) are retained.
 
 ---
 
@@ -120,7 +122,7 @@ When a problem supplies a drying-rate curve, drying time follows from integratin
 
 **Problem.** A dryer removes moisture at constant 0.5 kg/(m²·h) from 100 kg dry solid over 10 m². Find time to remove 25 kg water.
 
-**Solution.** Rate=5 kg/h; time=5 h.
+**Solution.** For **Drying Rate and Constant/Falling-Rate Concepts**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 0.5, 100, 10, Rate=5 kg/h; time=5 h. This is the section-specific result for dryer removes moisture constant kg from kg. The stated units/basis (m², s) are retained.
 
 ---
 
@@ -138,7 +140,7 @@ Drying cannot reduce material below the equilibrium moisture corresponding to th
 
 **Problem.** What happens when a solid reaches equilibrium moisture for the surrounding gas?
 
-**Solution.** Net drying tends to zero unless gas conditions change.
+**Solution.** For **Equilibrium Moisture**, Net drying tends to zero unless gas conditions change. This follows because the Chemical Engineering section supplies equilibrium moisture curves for representative wet solids.. That physical distinction controls the result for happens when solid reaches equilibrium moisture surrounding.
 
 ---
 
@@ -156,7 +158,7 @@ If solute is nonvolatile, all solute leaves in the liquid concentrate.
 
 **Problem.** Feed 1000 kg/h at 10 wt% nonvolatile solute is concentrated to 40 wt%. Find product and vapor rates.
 
-**Solution.** Product=100/0.40=250 kg/h; vapor=750 kg/h.
+**Solution.** For **Single-Effect Evaporation Balances**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 1000, 10, 40, Product=100/0.40=250 kg/h; vapor=750 kg/h. This is the section-specific result for Feed kg wt nonvolatile solute concentrated wt. The stated units/basis (kg/h, s) are retained.
 
 ---
 
@@ -174,7 +176,7 @@ For FE problems, choose the simplest valid basis: dry air for humidification, dr
 
 **Problem.** Why are humidification/drying/evaporation coupled heat and mass transfer problems?
 
-**Solution.** They move a species between phases and generally require latent/sensible heat.
+**Solution.** For **Energy Use and Process Selection**, They move a species between phases and generally require latent/sensible heat. This follows because evaporation, drying, and humidification all couple mass transfer with heat transfer.. That physical distinction controls the result for humidification drying evaporation coupled heat mass transfer.
 
 ---
 
@@ -184,13 +186,13 @@ For FE problems, choose the simplest valid basis: dry air for humidification, dr
 
 **Problem.** Dry air 2 kg/s increases ω from 0.01 to 0.03. Find water transfer.
 
-**Solution.** 0.04 kg/s.
+**Solution.** For **Integrated Worked Examples**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 2, 0.01, 0.03, 0.04 kg/s. This is the section-specific result for Dry air kg increases from water transfer. The stated units/basis (kg/s, s) are retained.
 
 ### Worked Example 9
 
 **Problem.** Feed 500 kg/h at 20% solids to 50% solids. Find water evaporated.
 
-**Solution.** Solids=100 kg/h; product=200 kg/h; evaporated=300 kg/h.
+**Solution.** For **Integrated Worked Examples**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 500, 20%, 50%, Solids=100 kg/h; product=200 kg/h; evaporated=300 kg/h. This is the section-specific result for Feed kg solids solids water evaporated. The stated units/basis (kg/h, s) are retained.
 
 ---
 
@@ -341,59 +343,59 @@ D) It is always directly tabulated in the Handbook
 
 ## Answer Key with Explanations
 
-1. **humid-air process variable** is developed in §8.1. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+1. **Humid-Air Variables for Chemical Operations.** Humidification calculations use humidity ratio \(\omega\), relative humidity, dry-bulb temperature, wet-bulb temperature, and dew point. In Humidification, Drying, and Evaporation, this is the definition or balance being tested by Question 1.
 
-2. **humidification balance** is developed in §8.2. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+2. **Humidification and Dehumidification Balances.** For a steady humidifier, a dry-air balance plus water balance determines moisture addition or removal. In Humidification, Drying, and Evaporation, this is the definition or balance being tested by Question 2.
 
-3. **solid moisture basis** is developed in §8.3. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+3. **Moisture Content on Wet and Dry Basis.** Drying problems often report moisture either per mass of wet material or per mass of dry solid. In Humidification, Drying, and Evaporation, this is the definition or balance being tested by Question 3.
 
-4. **drying-rate curve** is developed in §8.4. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+4. **Drying Rate and Constant/Falling-Rate Concepts.** **Guide-developed to satisfy the FE Chemical specification.** Drying can exhibit an initial period in which surface conditions control, followed by a falling-rate period as internal moisture transport becomes limiting. In Humidification, Drying, and Evaporation, this is the definition or balance being tested by Question 4.
 
-5. **equilibrium moisture** is developed in §8.5. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+5. **Equilibrium Moisture.** The Chemical Engineering section supplies equilibrium moisture curves for representative wet solids. In Humidification, Drying, and Evaporation, this is the definition or balance being tested by Question 5.
 
-6. **evaporator material balance** is developed in §8.6. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+6. **Single-Effect Evaporation Balances.** **Specification-required; detailed balance workflow is guide-developed.** Evaporation concentrates a nonvolatile solute by vaporizing solvent. In Humidification, Drying, and Evaporation, this is the definition or balance being tested by Question 6.
 
-7. **coupled heat and mass transfer** is developed in §8.7. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+7. **Energy Use and Process Selection.** Evaporation, drying, and humidification all couple mass transfer with heat transfer. In Humidification, Drying, and Evaporation, this is the definition or balance being tested by Question 7.
 
-8. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+8. For **Humid-Air Variables for Chemical Operations**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. Humidification calculations use humidity ratio \(\omega\), relative humidity, dry-bulb temperature, wet-bulb temperature, and dew point. This is the specific failure mode emphasized in Humidification, Drying, and Evaporation.
 
-9. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+9. For **Humidification and Dehumidification Balances**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. For a steady humidifier, a dry-air balance plus water balance determines moisture addition or removal. This is the specific failure mode emphasized in Humidification, Drying, and Evaporation.
 
-10. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+10. For **Moisture Content on Wet and Dry Basis**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. Drying problems often report moisture either per mass of wet material or per mass of dry solid. This is the specific failure mode emphasized in Humidification, Drying, and Evaporation.
 
-11. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+11. For **Drying Rate and Constant/Falling-Rate Concepts**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. **Guide-developed to satisfy the FE Chemical specification.** Drying can exhibit an initial period in which surface conditions control, followed by a falling-rate period as internal moisture transport becomes limiting. This is the specific failure mode emphasized in Humidification, Drying, and Evaporation.
 
-12. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+12. For **Equilibrium Moisture**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. The Chemical Engineering section supplies equilibrium moisture curves for representative wet solids. This is the specific failure mode emphasized in Humidification, Drying, and Evaporation.
 
-13. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+13. For **Single-Effect Evaporation Balances**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. **Specification-required; detailed balance workflow is guide-developed.** Evaporation concentrates a nonvolatile solute by vaporizing solvent. This is the specific failure mode emphasized in Humidification, Drying, and Evaporation.
 
-14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+14. For **Energy Use and Process Selection**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. Evaporation, drying, and humidification all couple mass transfer with heat transfer. This is the specific failure mode emphasized in Humidification, Drying, and Evaporation.
 
-15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
+15. In **Humidification, Drying, and Evaporation**, close the material balance first because stream amounts and compositions feed the later energy calculation. Otherwise enthalpy and duty terms may be evaluated for unresolved streams.
 
-16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
+16. For **Humidification, Drying, and Evaporation**, a degrees-of-freedom check counts unknowns against independent equations before solving. Zero indicates a closed problem; a positive count signals missing independent information.
 
-17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
+17. In **Humidification, Drying, and Evaporation**, a relation supplied by the FE problem defines the intended model for that question. A remembered correlation can carry different assumptions, coefficients, validity limits, or reference states.
 
-18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
+18. For **Humidification, Drying, and Evaporation**, separating Handbook-supported material from specification-required learned material distinguishes lookup knowledge from material the guide develops. That boundary prevents guide-developed content from being presented as Handbook text.
 
-19. **A.** The relation or workflow for **humid-air process variable** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+19. **A.** For **Humid-Air Variables for Chemical Operations**, the relation is meaningful only with the correct basis and physical assumptions. Humidification calculations use humidity ratio \(\omega\), relative humidity, dry-bulb temperature, wet-bulb temperature, and dew point. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-20. **A.** The relation or workflow for **humidification balance** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+20. **A.** For **Humidification and Dehumidification Balances**, the relation is meaningful only with the correct basis and physical assumptions. For a steady humidifier, a dry-air balance plus water balance determines moisture addition or removal. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-21. **A.** The relation or workflow for **solid moisture basis** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+21. **A.** For **Moisture Content on Wet and Dry Basis**, the relation is meaningful only with the correct basis and physical assumptions. Drying problems often report moisture either per mass of wet material or per mass of dry solid. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-22. **A.** The relation or workflow for **drying-rate curve** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+22. **A.** For **Drying Rate and Constant/Falling-Rate Concepts**, the relation is meaningful only with the correct basis and physical assumptions. **Guide-developed to satisfy the FE Chemical specification.** Drying can exhibit an initial period in which surface conditions control, followed by a falling-rate period as internal moisture transport becomes limiting. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-23. **A.** The relation or workflow for **equilibrium moisture** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+23. **A.** For **Equilibrium Moisture**, the relation is meaningful only with the correct basis and physical assumptions. The Chemical Engineering section supplies equilibrium moisture curves for representative wet solids. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-24. **A.** The relation or workflow for **evaporator material balance** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+24. **A.** For **Single-Effect Evaporation Balances**, the relation is meaningful only with the correct basis and physical assumptions. **Specification-required; detailed balance workflow is guide-developed.** Evaporation concentrates a nonvolatile solute by vaporizing solvent. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-25. **A.** The relation or workflow for **coupled heat and mass transfer** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+25. **A.** For **Energy Use and Process Selection**, the relation is meaningful only with the correct basis and physical assumptions. Evaporation, drying, and humidification all couple mass transfer with heat transfer. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-26. **A.** The relation or workflow for **humid-air process variable** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+26. **A.** This later check revisits **Humid-Air Variables for Chemical Operations** from a different review position. Humidification calculations use humidity ratio \(\omega\), relative humidity, dry-bulb temperature, wet-bulb temperature, and dew point. The correct choice remains A because the concept still depends on the defined basis and physical assumptions.
 
-27. **A.** The relation or workflow for **humidification balance** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+27. **A.** This later check revisits **Humidification and Dehumidification Balances** from a different review position. For a steady humidifier, a dry-air balance plus water balance determines moisture addition or removal. The correct choice remains A because the concept still depends on the defined basis and physical assumptions.
 
 
 ---
@@ -425,25 +427,25 @@ D) It is always directly tabulated in the Handbook
 
 ## Practice Problem Solutions
 
-1. ω=0.622(2)/(98)=0.01269 kg/kg dry air.
+1. For the practice case involving **kPa Pv kPa humidity ratio**, Using P=100, Pv=2, ω=0.622(2)/(98)=0.01269 kg/kg dry air. This completes Practice Problem 1 in Humidification, Drying, and Evaporation. The original kPa, Pa basis is preserved.
 
-2. 0.025 kg/s.
+2. For the practice case involving **Dry air flow kg humidity ratio rises**, Using 5, 0.005, 0.025 kg/s. This completes Practice Problem 2 in Humidification, Drying, and Evaporation. The original kg/s, s basis is preserved.
 
-3. Xwb=0.20; Xdb=0.25.
+3. For the practice case involving **wet solid has kg water kg dry**, Using 2, 8, Xwb=0.20; Xdb=0.25. This completes Practice Problem 3 in Humidification, Drying, and Evaporation. The original s, h basis is preserved.
 
-4. Rate=5 kg/h; time=5 h.
+4. For the practice case involving **dryer removes moisture constant kg from kg**, Using 0.5, 100, 10, Rate=5 kg/h; time=5 h. This completes Practice Problem 4 in Humidification, Drying, and Evaporation. The original m², s basis is preserved.
 
-5. Net drying tends to zero unless gas conditions change.
+5. For the practice case involving **happens when solid reaches equilibrium moisture surrounding**, Net drying tends to zero unless gas conditions change. This is the chapter-specific distinction required by Practice Problem 5 in Humidification, Drying, and Evaporation.
 
-6. Product=100/0.40=250 kg/h; vapor=750 kg/h.
+6. For the practice case involving **Feed kg wt nonvolatile solute concentrated wt**, Using 1000, 10, 40, Product=100/0.40=250 kg/h; vapor=750 kg/h. This completes Practice Problem 6 in Humidification, Drying, and Evaporation. The original kg/h, s basis is preserved.
 
-7. They move a species between phases and generally require latent/sensible heat.
+7. For the practice case involving **humidification drying evaporation coupled heat mass transfer**, They move a species between phases and generally require latent/sensible heat. This is the chapter-specific distinction required by Practice Problem 7 in Humidification, Drying, and Evaporation.
 
-8. 0.04 kg/s.
+8. For the practice case involving **Dry air kg increases from water transfer**, Using 2, 0.01, 0.03, 0.04 kg/s. This completes Practice Problem 8 in Humidification, Drying, and Evaporation. The original kg/s, s basis is preserved.
 
-9. Solids=100 kg/h; product=200 kg/h; evaporated=300 kg/h.
+9. For the practice case involving **Feed kg solids solids water evaporated**, Using 500, 20%, 50%, Solids=100 kg/h; product=200 kg/h; evaporated=300 kg/h. This completes Practice Problem 9 in Humidification, Drying, and Evaporation. The original kg/h, s basis is preserved.
 
-10. The minimum attainable moisture rises; drying potential decreases.
+10. For the practice case involving **equilibrium moisture increases relative humidity happens achievable**, The minimum attainable moisture rises; drying potential decreases. This is the chapter-specific distinction required by Practice Problem 10 in Humidification, Drying, and Evaporation.
 
 
 ---

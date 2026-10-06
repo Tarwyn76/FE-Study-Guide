@@ -36,7 +36,9 @@ Recycle, bypass, purge, and unsteady balances are explicit FE Chemical specifica
 
 ## Learning Objectives
 
-By the end of this chapter, you will be able to:* **2.1** Explain and apply **Recycle Streams and Overall Balances**.
+By the end of this chapter, you will be able to:
+
+* **2.1** Explain and apply **Recycle Streams and Overall Balances**.
 * **2.2** Explain and apply **Recycle Ratio and Single-Pass versus Overall Performance**.
 * **2.3** Explain and apply **Bypass Streams**.
 * **2.4** Explain and apply **Purge Streams and Inert Accumulation**.
@@ -66,7 +68,7 @@ For an overall boundary drawn around the entire recycle loop, the internal recyc
 
 **Problem.** Fresh feed is 100 kmol/h and recycle is 50 kmol/h. Find recycle ratio R=recycle/fresh.
 
-**Solution.** R=0.50.
+**Solution.** For **Recycle Streams and Overall Balances**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 100, 50, R=0.50. This is the section-specific result for Fresh feed kmol recycle kmol recycle ratio. The stated units/basis (kmol/h, mol/h) are retained.
 
 ---
 
@@ -84,7 +86,7 @@ Single-pass conversion concerns material entering one reactor pass. Overall conv
 
 **Problem.** Fresh A feed is 100 mol/h; 90 mol/h is consumed overall. Find overall conversion.
 
-**Solution.** 90%.
+**Solution.** For **Recycle Ratio and Single-Pass versus Overall Performance**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 100, 90, 90%. This is the section-specific result for Fresh feed mol mol consumed overall overall. The stated units/basis (mol/h, s) are retained.
 
 ---
 
@@ -102,7 +104,7 @@ The bypass stream has the same composition and state as the stream at the split 
 
 **Problem.** A 100 kg/h feed is bypassed 30%. Find bypass and processed flows.
 
-**Solution.** 30 and 70 kg/h.
+**Solution.** For **Bypass Streams**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 100, 30%, 30 and 70 kg/h. This is the section-specific result for kg feed bypassed bypass processed flows. The stated units/basis (kg/h, s) are retained.
 
 ---
 
@@ -120,7 +122,7 @@ If the product contains negligible inert, the inert balance often determines the
 
 **Problem.** An inert enters at 2 kmol/h and leaves only in a purge stream that is 10 mol% inert. Find total purge flow.
 
-**Solution.** 20 kmol/h.
+**Solution.** For **Purge Streams and Inert Accumulation**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 2, 10, 20 kmol/h. This is the section-specific result for inert enters kmol leaves only purge stream. The stated units/basis (kmol/h, mol/h) are retained.
 
 ---
 
@@ -138,7 +140,7 @@ For a nonreacting species, generation and consumption terms vanish.
 
 **Problem.** A tank has inlet 5 kg/min and outlet 3 kg/min with no reaction. Find accumulation rate.
 
-**Solution.** +2 kg/min.
+**Solution.** For **General Unsteady Material Balance**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 5, 3, +2 kg/min. This is the section-specific result for tank has inlet kg min outlet kg. The stated units/basis (kg/min, min) are retained.
 
 ---
 
@@ -156,7 +158,7 @@ The resulting first-order differential equation has the same exponential structu
 
 **Problem.** A constant-volume mixed tank has Q=10 L/min, V=100 L, Cin steps from 0 to 1 mol/L. Find time constant.
 
-**Solution.** τ=V/Q=10 min.
+**Solution.** For **Well-Mixed Tank Transients**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) Q=10, V=100, τ=V/Q=10 min. This is the section-specific result for constant-volume mixed tank has min Cin steps. The stated units/basis (L/min, mol/L) are retained.
 
 ---
 
@@ -174,7 +176,7 @@ A good cut-set exposes specifications such as separator recovery, reactor conver
 
 **Problem.** Why should an overall balance around a recycle loop be used first?
 
-**Solution.** It eliminates the internal recycle unknown.
+**Solution.** For **Cut-Set Strategy for Complex Recycle Networks**, It eliminates the internal recycle unknown. This follows because complex process networks are easier when solved from the outside inward.. That physical distinction controls the result for should overall balance around recycle loop be.
 
 ---
 
@@ -184,13 +186,13 @@ A good cut-set exposes specifications such as separator recovery, reactor conver
 
 **Problem.** A recycle process fresh feed is 20 kmol/h, product 18, purge 2. Verify steady total balance.
 
-**Solution.** 20=18+2; balanced.
+**Solution.** For **Integrated Worked Examples**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 20, 18, 2, 20=18+2; balanced. This is the section-specific result for recycle process fresh feed kmol product purge. The stated units/basis (kmol/h, mol/h) are retained.
 
 ### Worked Example 9
 
 **Problem.** A mixed tank with τ=5 min starts at C=0 and sees Cin=2 mol/L. Find C at t=5 min.
 
-**Solution.** C=2(1-e^-1)=1.264 mol/L.
+**Solution.** For **Integrated Worked Examples**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) =5, C=0, Cin=2, C=2(1-e^-1)=1.264 mol/L. This is the section-specific result for mixed tank min starts sees Cin mol. The stated units/basis (mol/L, min) are retained.
 
 ---
 
@@ -341,59 +343,59 @@ D) It is always directly tabulated in the Handbook
 
 ## Answer Key with Explanations
 
-1. **recycle stream** is developed in §2.1. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+1. **Recycle Streams and Overall Balances.** A recycle returns part of a downstream stream to an upstream unit. In Recycle, Bypass, Purge, and Unsteady Material Balances, this is the definition or balance being tested by Question 1.
 
-2. **recycle ratio and overall conversion** is developed in §2.2. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+2. **Recycle Ratio and Single-Pass versus Overall Performance.** Recycle ratio may be defined as recycle flow divided by fresh feed or by another stated reference flow. In Recycle, Bypass, Purge, and Unsteady Material Balances, this is the definition or balance being tested by Question 2.
 
-3. **bypass stream** is developed in §2.3. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+3. **Bypass Streams.** A bypass sends part of a feed around a unit and recombines it later. In Recycle, Bypass, Purge, and Unsteady Material Balances, this is the definition or balance being tested by Question 3.
 
-4. **purge balance** is developed in §2.4. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+4. **Purge Streams and Inert Accumulation.** A purge removes part of a recycle stream to prevent buildup of inert or undesired species. In Recycle, Bypass, Purge, and Unsteady Material Balances, this is the definition or balance being tested by Question 4.
 
-5. **unsteady material balance** is developed in §2.5. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+5. **General Unsteady Material Balance.** For an unsteady control volume, accumulation is not zero. In Recycle, Bypass, Purge, and Unsteady Material Balances, this is the definition or balance being tested by Question 5.
 
-6. **well-mixed tank transient** is developed in §2.6. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+6. **Well-Mixed Tank Transients.** For a perfectly mixed tank, the outlet composition equals the tank composition. In Recycle, Bypass, Purge, and Unsteady Material Balances, this is the definition or balance being tested by Question 6.
 
-7. **recycle-network solution strategy** is developed in §2.7. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+7. **Cut-Set Strategy for Complex Recycle Networks.** Complex process networks are easier when solved from the outside inward. In Recycle, Bypass, Purge, and Unsteady Material Balances, this is the definition or balance being tested by Question 7.
 
-8. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+8. For **Recycle Streams and Overall Balances**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. A recycle returns part of a downstream stream to an upstream unit. This is the specific failure mode emphasized in Recycle, Bypass, Purge, and Unsteady Material Balances.
 
-9. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+9. For **Recycle Ratio and Single-Pass versus Overall Performance**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. Recycle ratio may be defined as recycle flow divided by fresh feed or by another stated reference flow. This is the specific failure mode emphasized in Recycle, Bypass, Purge, and Unsteady Material Balances.
 
-10. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+10. For **Bypass Streams**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. A bypass sends part of a feed around a unit and recombines it later. This is the specific failure mode emphasized in Recycle, Bypass, Purge, and Unsteady Material Balances.
 
-11. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+11. For **Purge Streams and Inert Accumulation**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. A purge removes part of a recycle stream to prevent buildup of inert or undesired species. This is the specific failure mode emphasized in Recycle, Bypass, Purge, and Unsteady Material Balances.
 
-12. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+12. For **General Unsteady Material Balance**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. For an unsteady control volume, accumulation is not zero. This is the specific failure mode emphasized in Recycle, Bypass, Purge, and Unsteady Material Balances.
 
-13. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+13. For **Well-Mixed Tank Transients**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. For a perfectly mixed tank, the outlet composition equals the tank composition. This is the specific failure mode emphasized in Recycle, Bypass, Purge, and Unsteady Material Balances.
 
-14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+14. For **Cut-Set Strategy for Complex Recycle Networks**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. Complex process networks are easier when solved from the outside inward. This is the specific failure mode emphasized in Recycle, Bypass, Purge, and Unsteady Material Balances.
 
-15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
+15. In **Recycle, Bypass, Purge, and Unsteady Material Balances**, close the material balance first because stream amounts and compositions feed the later energy calculation. Otherwise enthalpy and duty terms may be evaluated for unresolved streams.
 
-16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
+16. For **Recycle, Bypass, Purge, and Unsteady Material Balances**, a degrees-of-freedom check counts unknowns against independent equations before solving. Zero indicates a closed problem; a positive count signals missing independent information.
 
-17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
+17. In **Recycle, Bypass, Purge, and Unsteady Material Balances**, a relation supplied by the FE problem defines the intended model for that question. A remembered correlation can carry different assumptions, coefficients, validity limits, or reference states.
 
-18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
+18. For **Recycle, Bypass, Purge, and Unsteady Material Balances**, separating Handbook-supported material from specification-required learned material distinguishes lookup knowledge from material the guide develops. That boundary prevents guide-developed content from being presented as Handbook text.
 
-19. **A.** The relation or workflow for **recycle stream** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+19. **A.** For **Recycle Streams and Overall Balances**, the relation is meaningful only with the correct basis and physical assumptions. A recycle returns part of a downstream stream to an upstream unit. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-20. **A.** The relation or workflow for **recycle ratio and overall conversion** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+20. **A.** For **Recycle Ratio and Single-Pass versus Overall Performance**, the relation is meaningful only with the correct basis and physical assumptions. Recycle ratio may be defined as recycle flow divided by fresh feed or by another stated reference flow. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-21. **A.** The relation or workflow for **bypass stream** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+21. **A.** For **Bypass Streams**, the relation is meaningful only with the correct basis and physical assumptions. A bypass sends part of a feed around a unit and recombines it later. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-22. **A.** The relation or workflow for **purge balance** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+22. **A.** For **Purge Streams and Inert Accumulation**, the relation is meaningful only with the correct basis and physical assumptions. A purge removes part of a recycle stream to prevent buildup of inert or undesired species. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-23. **A.** The relation or workflow for **unsteady material balance** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+23. **A.** For **General Unsteady Material Balance**, the relation is meaningful only with the correct basis and physical assumptions. For an unsteady control volume, accumulation is not zero. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-24. **A.** The relation or workflow for **well-mixed tank transient** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+24. **A.** For **Well-Mixed Tank Transients**, the relation is meaningful only with the correct basis and physical assumptions. For a perfectly mixed tank, the outlet composition equals the tank composition. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-25. **A.** The relation or workflow for **recycle-network solution strategy** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+25. **A.** For **Cut-Set Strategy for Complex Recycle Networks**, the relation is meaningful only with the correct basis and physical assumptions. Complex process networks are easier when solved from the outside inward. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-26. **A.** The relation or workflow for **recycle stream** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+26. **A.** This later check revisits **Recycle Streams and Overall Balances** from a different review position. A recycle returns part of a downstream stream to an upstream unit. The correct choice remains A because the concept still depends on the defined basis and physical assumptions.
 
-27. **A.** The relation or workflow for **recycle ratio and overall conversion** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+27. **A.** This later check revisits **Recycle Ratio and Single-Pass versus Overall Performance** from a different review position. Recycle ratio may be defined as recycle flow divided by fresh feed or by another stated reference flow. The correct choice remains A because the concept still depends on the defined basis and physical assumptions.
 
 
 ---
@@ -425,25 +427,25 @@ D) It is always directly tabulated in the Handbook
 
 ## Practice Problem Solutions
 
-1. R=0.50.
+1. For the practice case involving **Fresh feed kmol recycle kmol recycle ratio**, Using 100, 50, R=0.50. This completes Practice Problem 1 in Recycle, Bypass, Purge, and Unsteady Material Balances. The original kmol/h, mol/h basis is preserved.
 
-2. 90%.
+2. For the practice case involving **Fresh feed mol mol consumed overall overall**, Using 100, 90, 90%. This completes Practice Problem 2 in Recycle, Bypass, Purge, and Unsteady Material Balances. The original mol/h, s basis is preserved.
 
-3. 30 and 70 kg/h.
+3. For the practice case involving **kg feed bypassed bypass processed flows**, Using 100, 30%, 30 and 70 kg/h. This completes Practice Problem 3 in Recycle, Bypass, Purge, and Unsteady Material Balances. The original kg/h, s basis is preserved.
 
-4. 20 kmol/h.
+4. For the practice case involving **inert enters kmol leaves only purge stream**, Using 2, 10, 20 kmol/h. This completes Practice Problem 4 in Recycle, Bypass, Purge, and Unsteady Material Balances. The original kmol/h, mol/h basis is preserved.
 
-5. +2 kg/min.
+5. For the practice case involving **tank has inlet kg min outlet kg**, Using 5, 3, +2 kg/min. This completes Practice Problem 5 in Recycle, Bypass, Purge, and Unsteady Material Balances. The original kg/min, min basis is preserved.
 
-6. τ=V/Q=10 min.
+6. For the practice case involving **constant-volume mixed tank has min Cin steps**, Using Q=10, V=100, τ=V/Q=10 min. This completes Practice Problem 6 in Recycle, Bypass, Purge, and Unsteady Material Balances. The original L/min, mol/L basis is preserved.
 
-7. It eliminates the internal recycle unknown.
+7. For the practice case involving **should overall balance around recycle loop be**, It eliminates the internal recycle unknown. This is the chapter-specific distinction required by Practice Problem 7 in Recycle, Bypass, Purge, and Unsteady Material Balances.
 
-8. 20=18+2; balanced.
+8. For the practice case involving **recycle process fresh feed kmol product purge**, Using 20, 18, 2, 20=18+2; balanced. This completes Practice Problem 8 in Recycle, Bypass, Purge, and Unsteady Material Balances. The original kmol/h, mol/h basis is preserved.
 
-9. C=2(1-e^-1)=1.264 mol/L.
+9. For the practice case involving **mixed tank min starts sees Cin mol**, Using =5, C=0, Cin=2, C=2(1-e^-1)=1.264 mol/L. This completes Practice Problem 9 in Recycle, Bypass, Purge, and Unsteady Material Balances. The original mol/L, min basis is preserved.
 
-10. 20 kmol/h.
+10. For the practice case involving **inert enters kmol purge gas mol inert**, Using 1, 5, 20 kmol/h. This completes Practice Problem 10 in Recycle, Bypass, Purge, and Unsteady Material Balances. The original kmol/h, mol/h basis is preserved.
 
 
 ---

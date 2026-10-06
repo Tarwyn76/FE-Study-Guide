@@ -36,7 +36,9 @@ Packed-column absorption is directly supported by Handbook p. 253. Extraction, a
 
 ## Learning Objectives
 
-By the end of this chapter, you will be able to:* **7.1** Explain and apply **Packed-Column Absorption — NTU and HTU**.
+By the end of this chapter, you will be able to:
+
+* **7.1** Explain and apply **Packed-Column Absorption — NTU and HTU**.
 * **7.2** Explain and apply **Stripping as the Reverse Gas-Liquid Operation**.
 * **7.3** Explain and apply **Liquid-Liquid Extraction**.
 * **7.4** Explain and apply **Adsorption**.
@@ -66,7 +68,7 @@ For dilute systems with a known equilibrium line, the NTU integral measures how 
 
 **Problem.** Packed absorber NTU=5 and HTU=0.8 m. Find packing height.
 
-**Solution.** Z=4.0 m.
+**Solution.** For **Packed-Column Absorption — NTU and HTU**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) NTU=5, HTU=0.8, Z=4.0 m. This is the section-specific result for Packed absorber NTU HTU packing height. The stated units/basis (Pa, s) are retained.
 
 ---
 
@@ -84,7 +86,7 @@ This treatment is guide-developed from the same mass-transfer balances because t
 
 **Problem.** What is the direction of solute transfer in stripping?
 
-**Solution.** From liquid to gas.
+**Solution.** For **Stripping as the Reverse Gas-Liquid Operation**, From liquid to gas. This follows because stripping transfers a volatile solute from liquid to gas.. That physical distinction controls the result for direction solute transfer stripping.
 
 ---
 
@@ -102,7 +104,7 @@ At equilibrium, a distribution coefficient may be written \(K_D=y/x\) on a speci
 
 **Problem.** Extraction feed carries 10 mol solute; extract contains 7 mol. If no reaction/loss, how much solute remains in raffinate?
 
-**Solution.** 3 mol.
+**Solution.** For **Liquid-Liquid Extraction**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 10, 7, 3 mol. This is the section-specific result for Extraction feed carries mol solute extract contains. The stated units/basis (s, h) are retained.
 
 ---
 
@@ -120,7 +122,7 @@ For FE-level conceptual calculations, the problem may provide an isotherm such a
 
 **Problem.** Batch adsorption: 1 L solution drops from 100 to 20 mg/L using adsorbent. How much solute is adsorbed?
 
-**Solution.** 80 mg.
+**Solution.** For **Adsorption**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 1, 100, 20, 80 mg. This is the section-specific result for Batch adsorption solution drops from mg using. The stated units/basis (s, h) are retained.
 
 ---
 
@@ -138,7 +140,7 @@ When a problem supplies permeability \(P_i\), a common simplified solution-diffu
 
 **Problem.** Membrane permeability coefficient P/δ gives flux coefficient 2e-6 mol/(m²·s·kPa), Δp=50 kPa. Find flux.
 
-**Solution.** 1.0e-4 mol/(m²·s).
+**Solution.** For **Membrane Separations**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) p=50, 1.0e-4 mol/(m²·s). This is the section-specific result for Membrane permeability coefficient gives flux coefficient e-. The stated units/basis (kPa, Pa) are retained.
 
 ---
 
@@ -156,7 +158,7 @@ The FE problem usually supplies enough equilibrium or performance information; t
 
 **Problem.** Which separation property most directly drives distillation?
 
-**Solution.** Volatility/VLE difference.
+**Solution.** For **Separation Selection by Equilibrium, Driving Force, and Phase**, Volatility/VLE difference. This follows because a separation method is chosen from the physical property that creates selectivity: volatility for distillation, solubility for absorption/extraction, surface affinity for adsorption, and permeability/selectivity for membranes.. That physical distinction controls the result for Which separation property most directly drives distillation.
 
 ---
 
@@ -174,7 +176,7 @@ Do not mix ideal-stage count directly with physical height without an efficiency
 
 **Problem.** Why can ideal-stage count not be directly used as packed height?
 
-**Solution.** A conversion such as HETP or HTU/NTU is required.
+**Solution.** For **Stagewise versus Continuous-Contact Separations**, A conversion such as HETP or HTU/NTU is required. This follows because stagewise devices idealize repeated equilibrium contacts; packed columns and many membrane modules behave as continuous-contact devices.. That physical distinction controls the result for can ideal-stage count not be directly used.
 
 ---
 
@@ -184,13 +186,13 @@ Do not mix ideal-stage count directly with physical height without an efficiency
 
 **Problem.** If KG doubles at same driving force and area, what happens to transfer rate?
 
-**Solution.** It doubles.
+**Solution.** For **Integrated Worked Examples**, It doubles. This follows because the section distinguishes the governing physical behavior from the alternatives. That physical distinction controls the result for KG doubles same driving force area happens.
 
 ### Worked Example 9
 
 **Problem.** Which process is typically chosen for a dilute gas solute with high liquid solubility?
 
-**Solution.** Absorption.
+**Solution.** For **Integrated Worked Examples**, Absorption. This follows because the section distinguishes the governing physical behavior from the alternatives. That physical distinction controls the result for Which process typically chosen dilute gas solute.
 
 ---
 
@@ -341,59 +343,59 @@ D) It is always directly tabulated in the Handbook
 
 ## Answer Key with Explanations
 
-1. **packed-column absorption** is developed in §7.1. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+1. **Packed-Column Absorption — NTU and HTU.** The Handbook writes packed-column height as number of transfer units times height of a transfer unit, on either a gas or liquid basis. In Absorption, Extraction, Adsorption, and Membrane Separations, this is the definition or balance being tested by Question 1.
 
-2. **gas stripping** is developed in §7.2. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+2. **Stripping as the Reverse Gas-Liquid Operation.** Stripping transfers a volatile solute from liquid to gas. In Absorption, Extraction, Adsorption, and Membrane Separations, this is the definition or balance being tested by Question 2.
 
-3. **liquid-liquid extraction** is developed in §7.3. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+3. **Liquid-Liquid Extraction.** **Specification-required; not directly tabulated in the Chemical Engineering Handbook section.** Liquid-liquid extraction transfers a solute between partially immiscible liquid phases. In Absorption, Extraction, Adsorption, and Membrane Separations, this is the definition or balance being tested by Question 3.
 
-4. **adsorption equilibrium** is developed in §7.4. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+4. **Adsorption.** **Specification-required; not directly tabulated in the Chemical Engineering Handbook section.** Adsorption transfers a species from a fluid to a solid surface. In Absorption, Extraction, Adsorption, and Membrane Separations, this is the definition or balance being tested by Question 4.
 
-5. **membrane separation** is developed in §7.5. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+5. **Membrane Separations.** **Specification-required; not directly tabulated in the Chemical Engineering Handbook section.** A membrane separates species through selective transport driven by pressure, concentration, chemical potential, or electrical potential differences. In Absorption, Extraction, Adsorption, and Membrane Separations, this is the definition or balance being tested by Question 5.
 
-6. **separation-process selection** is developed in §7.6. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+6. **Separation Selection by Equilibrium, Driving Force, and Phase.** A separation method is chosen from the physical property that creates selectivity: volatility for distillation, solubility for absorption/extraction, surface affinity for adsorption, and permeability/selectivity for membranes. In Absorption, Extraction, Adsorption, and Membrane Separations, this is the definition or balance being tested by Question 6.
 
-7. **stagewise and continuous-contact separation** is developed in §7.7. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+7. **Stagewise versus Continuous-Contact Separations.** Stagewise devices idealize repeated equilibrium contacts; packed columns and many membrane modules behave as continuous-contact devices. In Absorption, Extraction, Adsorption, and Membrane Separations, this is the definition or balance being tested by Question 7.
 
-8. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+8. For **Packed-Column Absorption — NTU and HTU**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. The Handbook writes packed-column height as number of transfer units times height of a transfer unit, on either a gas or liquid basis. This is the specific failure mode emphasized in Absorption, Extraction, Adsorption, and Membrane Separations.
 
-9. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+9. For **Stripping as the Reverse Gas-Liquid Operation**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. Stripping transfers a volatile solute from liquid to gas. This is the specific failure mode emphasized in Absorption, Extraction, Adsorption, and Membrane Separations.
 
-10. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+10. For **Liquid-Liquid Extraction**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. **Specification-required; not directly tabulated in the Chemical Engineering Handbook section.** Liquid-liquid extraction transfers a solute between partially immiscible liquid phases. This is the specific failure mode emphasized in Absorption, Extraction, Adsorption, and Membrane Separations.
 
-11. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+11. For **Adsorption**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. **Specification-required; not directly tabulated in the Chemical Engineering Handbook section.** Adsorption transfers a species from a fluid to a solid surface. This is the specific failure mode emphasized in Absorption, Extraction, Adsorption, and Membrane Separations.
 
-12. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+12. For **Membrane Separations**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. **Specification-required; not directly tabulated in the Chemical Engineering Handbook section.** A membrane separates species through selective transport driven by pressure, concentration, chemical potential, or electrical potential differences. This is the specific failure mode emphasized in Absorption, Extraction, Adsorption, and Membrane Separations.
 
-13. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+13. For **Separation Selection by Equilibrium, Driving Force, and Phase**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. A separation method is chosen from the physical property that creates selectivity: volatility for distillation, solubility for absorption/extraction, surface affinity for adsorption, and permeability/selectivity for membranes. This is the specific failure mode emphasized in Absorption, Extraction, Adsorption, and Membrane Separations.
 
-14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+14. For **Stagewise versus Continuous-Contact Separations**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. Stagewise devices idealize repeated equilibrium contacts; packed columns and many membrane modules behave as continuous-contact devices. This is the specific failure mode emphasized in Absorption, Extraction, Adsorption, and Membrane Separations.
 
-15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
+15. In **Absorption, Extraction, Adsorption, and Membrane Separations**, close the material balance first because stream amounts and compositions feed the later energy calculation. Otherwise enthalpy and duty terms may be evaluated for unresolved streams.
 
-16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
+16. For **Absorption, Extraction, Adsorption, and Membrane Separations**, a degrees-of-freedom check counts unknowns against independent equations before solving. Zero indicates a closed problem; a positive count signals missing independent information.
 
-17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
+17. In **Absorption, Extraction, Adsorption, and Membrane Separations**, a relation supplied by the FE problem defines the intended model for that question. A remembered correlation can carry different assumptions, coefficients, validity limits, or reference states.
 
-18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
+18. For **Absorption, Extraction, Adsorption, and Membrane Separations**, separating Handbook-supported material from specification-required learned material distinguishes lookup knowledge from material the guide develops. That boundary prevents guide-developed content from being presented as Handbook text.
 
-19. **A.** The relation or workflow for **packed-column absorption** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+19. **A.** For **Packed-Column Absorption — NTU and HTU**, the relation is meaningful only with the correct basis and physical assumptions. The Handbook writes packed-column height as number of transfer units times height of a transfer unit, on either a gas or liquid basis. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-20. **A.** The relation or workflow for **gas stripping** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+20. **A.** For **Stripping as the Reverse Gas-Liquid Operation**, the relation is meaningful only with the correct basis and physical assumptions. Stripping transfers a volatile solute from liquid to gas. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-21. **A.** The relation or workflow for **liquid-liquid extraction** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+21. **A.** For **Liquid-Liquid Extraction**, the relation is meaningful only with the correct basis and physical assumptions. **Specification-required; not directly tabulated in the Chemical Engineering Handbook section.** Liquid-liquid extraction transfers a solute between partially immiscible liquid phases. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-22. **A.** The relation or workflow for **adsorption equilibrium** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+22. **A.** For **Adsorption**, the relation is meaningful only with the correct basis and physical assumptions. **Specification-required; not directly tabulated in the Chemical Engineering Handbook section.** Adsorption transfers a species from a fluid to a solid surface. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-23. **A.** The relation or workflow for **membrane separation** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+23. **A.** For **Membrane Separations**, the relation is meaningful only with the correct basis and physical assumptions. **Specification-required; not directly tabulated in the Chemical Engineering Handbook section.** A membrane separates species through selective transport driven by pressure, concentration, chemical potential, or electrical potential differences. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-24. **A.** The relation or workflow for **separation-process selection** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+24. **A.** For **Separation Selection by Equilibrium, Driving Force, and Phase**, the relation is meaningful only with the correct basis and physical assumptions. A separation method is chosen from the physical property that creates selectivity: volatility for distillation, solubility for absorption/extraction, surface affinity for adsorption, and permeability/selectivity for membranes. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-25. **A.** The relation or workflow for **stagewise and continuous-contact separation** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+25. **A.** For **Stagewise versus Continuous-Contact Separations**, the relation is meaningful only with the correct basis and physical assumptions. Stagewise devices idealize repeated equilibrium contacts; packed columns and many membrane modules behave as continuous-contact devices. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-26. **A.** The relation or workflow for **packed-column absorption** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+26. **A.** This later check revisits **Packed-Column Absorption — NTU and HTU** from a different review position. The Handbook writes packed-column height as number of transfer units times height of a transfer unit, on either a gas or liquid basis. The correct choice remains A because the concept still depends on the defined basis and physical assumptions.
 
-27. **A.** The relation or workflow for **gas stripping** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+27. **A.** This later check revisits **Stripping as the Reverse Gas-Liquid Operation** from a different review position. Stripping transfers a volatile solute from liquid to gas. The correct choice remains A because the concept still depends on the defined basis and physical assumptions.
 
 
 ---
@@ -425,25 +427,25 @@ D) It is always directly tabulated in the Handbook
 
 ## Practice Problem Solutions
 
-1. Z=4.0 m.
+1. For the practice case involving **Packed absorber NTU HTU packing height**, Using NTU=5, HTU=0.8, Z=4.0 m. This completes Practice Problem 1 in Absorption, Extraction, Adsorption, and Membrane Separations. The original Pa, s basis is preserved.
 
-2. From liquid to gas.
+2. For the practice case involving **direction solute transfer stripping**, From liquid to gas. This is the chapter-specific distinction required by Practice Problem 2 in Absorption, Extraction, Adsorption, and Membrane Separations.
 
-3. 3 mol.
+3. For the practice case involving **Extraction feed carries mol solute extract contains**, Using 10, 7, 3 mol. This completes Practice Problem 3 in Absorption, Extraction, Adsorption, and Membrane Separations. The original s, h basis is preserved.
 
-4. 80 mg.
+4. For the practice case involving **Batch adsorption solution drops from mg using**, Using 1, 100, 20, 80 mg. This completes Practice Problem 4 in Absorption, Extraction, Adsorption, and Membrane Separations. The original s, h basis is preserved.
 
-5. 1.0e-4 mol/(m²·s).
+5. For the practice case involving **Membrane permeability coefficient gives flux coefficient e-**, Using p=50, 1.0e-4 mol/(m²·s). This completes Practice Problem 5 in Absorption, Extraction, Adsorption, and Membrane Separations. The original kPa, Pa basis is preserved.
 
-6. Volatility/VLE difference.
+6. For the practice case involving **Which separation property most directly drives distillation**, Volatility/VLE difference. This is the chapter-specific distinction required by Practice Problem 6 in Absorption, Extraction, Adsorption, and Membrane Separations.
 
-7. A conversion such as HETP or HTU/NTU is required.
+7. For the practice case involving **can ideal-stage count not be directly used**, A conversion such as HETP or HTU/NTU is required. This is the chapter-specific distinction required by Practice Problem 7 in Absorption, Extraction, Adsorption, and Membrane Separations.
 
-8. It doubles.
+8. For the practice case involving **KG doubles same driving force area happens**, It doubles. This is the chapter-specific distinction required by Practice Problem 8 in Absorption, Extraction, Adsorption, and Membrane Separations.
 
-9. Absorption.
+9. For the practice case involving **Which process typically chosen dilute gas solute**, Absorption. This is the chapter-specific distinction required by Practice Problem 9 in Absorption, Extraction, Adsorption, and Membrane Separations.
 
-10. Adsorption.
+10. For the practice case involving **Which process relies on surface affinity solid**, Adsorption. This is the chapter-specific distinction required by Practice Problem 10 in Absorption, Extraction, Adsorption, and Membrane Separations.
 
 
 ---

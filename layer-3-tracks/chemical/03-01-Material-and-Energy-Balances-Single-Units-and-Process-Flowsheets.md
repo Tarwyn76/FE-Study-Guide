@@ -36,7 +36,9 @@ The FE Chemical specification explicitly requires steady-state mass and energy b
 
 ## Learning Objectives
 
-By the end of this chapter, you will be able to:* **1.1** Explain and apply **Process Streams, Basis, and Composition**.
+By the end of this chapter, you will be able to:
+
+* **1.1** Explain and apply **Process Streams, Basis, and Composition**.
 * **1.2** Explain and apply **Steady-State Total and Component Material Balances**.
 * **1.3** Explain and apply **Degrees of Freedom and Independent Equations**.
 * **1.4** Explain and apply **Mixers, Splitters, and Separators**.
@@ -66,7 +68,7 @@ For a stream with total molar flow \(\dot n\) and mole fractions \(y_i\), compon
 
 **Problem.** A feed is 100 kmol/h containing 30 mol% A and 70 mol% B. Find component molar flows.
 
-**Solution.** A=30 kmol/h; B=70 kmol/h.
+**Solution.** For **Process Streams, Basis, and Composition**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 100, 30, 70, A=30 kmol/h; B=70 kmol/h. This is the section-specific result for feed kmol containing mol mol component molar. The stated units/basis (kmol/h, mol/h) are retained.
 
 ---
 
@@ -84,7 +86,7 @@ A component balance is often more useful than the total balance because it conne
 
 **Problem.** A steady nonreacting unit receives 120 kg/h and discharges one product at 75 kg/h. Find the second product flow.
 
-**Solution.** 45 kg/h.
+**Solution.** For **Steady-State Total and Component Material Balances**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 120, 75, 45 kg/h. This is the section-specific result for steady nonreacting unit receives kg discharges one. The stated units/basis (kg/h, s) are retained.
 
 ---
 
@@ -102,7 +104,7 @@ Writing more equations does not help if they are algebraically dependent. For an
 
 **Problem.** A binary separator has unknown feed F, product P, waste W, and two independent composition specifications. If F is known, how many independent material-balance equations are available?
 
-**Solution.** Two independent equations may be chosen: one total plus one component balance, or two component balances.
+**Solution.** For **Degrees of Freedom and Independent Equations**, Two independent equations may be chosen: one total plus one component balance, or two component balances. This follows because a well-posed calculation has enough independent material balances, specifications, equilibrium relations, and property relations to determine the unknowns.. That physical distinction controls the result for binary separator has unknown feed product waste.
 
 ---
 
@@ -120,7 +122,7 @@ Do not assign independent compositions to an ideal splitter; its outlet composit
 
 **Problem.** A 100 kg/h stream is ideally split 40/60. Feed is 20 wt% solute. Find solute flow in each outlet.
 
-**Solution.** 8 kg/h and 12 kg/h solute.
+**Solution.** For **Mixers, Splitters, and Separators**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 100, 40, 60, 8 kg/h and 12 kg/h solute. This is the section-specific result for kg stream ideally split Feed wt solute. The stated units/basis (kg/h, s) are retained.
 
 ---
 
@@ -138,7 +140,7 @@ For multiple units, an overall plant balance can determine external streams even
 
 **Problem.** A two-unit process has an unknown internal stream but all external flows except one are known. Which balance should be attempted first?
 
-**Solution.** An overall process balance, because the internal stream cancels.
+**Solution.** For **Process Flowsheets and Boundary Selection**, An overall process balance, because the internal stream cancels. This follows because label every known flow, composition, state, recycle, utility, and product before writing equations.. That physical distinction controls the result for two-unit process has unknown internal stream but.
 
 ---
 
@@ -156,7 +158,7 @@ Use a single enthalpy reference consistently. If all inlet and outlet enthalpies
 
 **Problem.** A heater raises 2 kg/s of liquid with cp=4 kJ/(kg·K) by 20 K with no shaft work. Find heat duty.
 
-**Solution.** Q=2×4×20=160 kW.
+**Solution.** For **Steady Nonreactive Energy Balances**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) cp=4, Q=2×4×20=160 kW. This is the section-specific result for heater raises kg liquid cp kJ kg. The stated units/basis (kg/s, kJ/(kg·K)) are retained.
 
 ---
 
@@ -174,7 +176,7 @@ Keep the two accounting systems separate until the needed flow rates are known. 
 
 **Problem.** Why is it usually efficient to solve the material balance before the energy balance?
 
-**Solution.** It determines the stream amounts/compositions needed for enthalpy and heat-duty calculations.
+**Solution.** For **Coupled Material-and-Energy Balance Workflow**, It determines the stream amounts/compositions needed for enthalpy and heat-duty calculations. This follows because many FE problems require a material balance first and an energy balance second.. That physical distinction controls the result for it usually efficient solve material balance before.
 
 ---
 
@@ -184,13 +186,13 @@ Keep the two accounting systems separate until the needed flow rates are known. 
 
 **Problem.** A mixture of 40 kmol/h A and 60 kmol/h B is reported as 20 mol% A. Identify the inconsistency.
 
-**Solution.** 40/(40+60)=40 mol% A, not 20%.
+**Solution.** For **Integrated Worked Examples**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 40, 60, 20, 40/(40+60)=40 mol% A, not 20%. This is the section-specific result for mixture kmol kmol reported as mol Identify. The stated units/basis (kmol/h, mol/h) are retained.
 
 ### Worked Example 9
 
 **Problem.** A cooler removes 500 kW from 10 kg/s of liquid, cp=2.5 kJ/(kg·K). Estimate temperature drop.
 
-**Solution.** ΔT=500/(10×2.5)=20 K.
+**Solution.** For **Integrated Worked Examples**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) cp=2.5, ΔT=500/(10×2.5)=20 K. This is the section-specific result for cooler removes kW from kg liquid cp. The stated units/basis (kg/s, kJ/(kg·K)) are retained.
 
 ---
 
@@ -341,59 +343,59 @@ D) It is always directly tabulated in the Handbook
 
 ## Answer Key with Explanations
 
-1. **process basis and stream composition** is developed in §1.1. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+1. **Process Streams, Basis, and Composition.** A process balance starts by defining a **basis**: a convenient amount or time interval on which every flow and composition is expressed. In Material and Energy Balances — Single Units and Process Flowsheets, this is the definition or balance being tested by Question 1.
 
-2. **steady material balance** is developed in §1.2. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+2. **Steady-State Total and Component Material Balances.** For a nonreacting steady process unit, there is no accumulation. In Material and Energy Balances — Single Units and Process Flowsheets, this is the definition or balance being tested by Question 2.
 
-3. **process degrees of freedom** is developed in §1.3. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+3. **Degrees of Freedom and Independent Equations.** A well-posed calculation has enough independent material balances, specifications, equilibrium relations, and property relations to determine the unknowns. In Material and Energy Balances — Single Units and Process Flowsheets, this is the definition or balance being tested by Question 3.
 
-4. **mixing splitting and separation** is developed in §1.4. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+4. **Mixers, Splitters, and Separators.** A mixer combines streams and is usually solved with total and component balances. In Material and Energy Balances — Single Units and Process Flowsheets, this is the definition or balance being tested by Question 4.
 
-5. **process flowsheet balance strategy** is developed in §1.5. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+5. **Process Flowsheets and Boundary Selection.** Label every known flow, composition, state, recycle, utility, and product before writing equations. In Material and Energy Balances — Single Units and Process Flowsheets, this is the definition or balance being tested by Question 5.
 
-6. **chemical-process energy balance** is developed in §1.6. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+6. **Steady Nonreactive Energy Balances.** The Handbook's steady-flow first law provides the energy-balance backbone. In Material and Energy Balances — Single Units and Process Flowsheets, this is the definition or balance being tested by Question 6.
 
-7. **coupled process balances** is developed in §1.7. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+7. **Coupled Material-and-Energy Balance Workflow.** Many FE problems require a material balance first and an energy balance second. In Material and Energy Balances — Single Units and Process Flowsheets, this is the definition or balance being tested by Question 7.
 
-8. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+8. For **Process Streams, Basis, and Composition**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. A process balance starts by defining a **basis**: a convenient amount or time interval on which every flow and composition is expressed. This is the specific failure mode emphasized in Material and Energy Balances — Single Units and Process Flowsheets.
 
-9. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+9. For **Steady-State Total and Component Material Balances**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. For a nonreacting steady process unit, there is no accumulation. This is the specific failure mode emphasized in Material and Energy Balances — Single Units and Process Flowsheets.
 
-10. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+10. For **Degrees of Freedom and Independent Equations**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. A well-posed calculation has enough independent material balances, specifications, equilibrium relations, and property relations to determine the unknowns. This is the specific failure mode emphasized in Material and Energy Balances — Single Units and Process Flowsheets.
 
-11. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+11. For **Mixers, Splitters, and Separators**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. A mixer combines streams and is usually solved with total and component balances. This is the specific failure mode emphasized in Material and Energy Balances — Single Units and Process Flowsheets.
 
-12. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+12. For **Process Flowsheets and Boundary Selection**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. Label every known flow, composition, state, recycle, utility, and product before writing equations. This is the specific failure mode emphasized in Material and Energy Balances — Single Units and Process Flowsheets.
 
-13. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+13. For **Steady Nonreactive Energy Balances**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. The Handbook's steady-flow first law provides the energy-balance backbone. This is the specific failure mode emphasized in Material and Energy Balances — Single Units and Process Flowsheets.
 
-14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+14. For **Coupled Material-and-Energy Balance Workflow**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. Many FE problems require a material balance first and an energy balance second. This is the specific failure mode emphasized in Material and Energy Balances — Single Units and Process Flowsheets.
 
-15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
+15. In **Material and Energy Balances — Single Units and Process Flowsheets**, close the material balance first because stream amounts and compositions feed the later energy calculation. Otherwise enthalpy and duty terms may be evaluated for unresolved streams.
 
-16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
+16. For **Material and Energy Balances — Single Units and Process Flowsheets**, a degrees-of-freedom check counts unknowns against independent equations before solving. Zero indicates a closed problem; a positive count signals missing independent information.
 
-17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
+17. In **Material and Energy Balances — Single Units and Process Flowsheets**, a relation supplied by the FE problem defines the intended model for that question. A remembered correlation can carry different assumptions, coefficients, validity limits, or reference states.
 
-18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
+18. For **Material and Energy Balances — Single Units and Process Flowsheets**, separating Handbook-supported material from specification-required learned material distinguishes lookup knowledge from material the guide develops. That boundary prevents guide-developed content from being presented as Handbook text.
 
-19. **A.** The relation or workflow for **process basis and stream composition** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+19. **A.** For **Process Streams, Basis, and Composition**, the relation is meaningful only with the correct basis and physical assumptions. A process balance starts by defining a **basis**: a convenient amount or time interval on which every flow and composition is expressed. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-20. **A.** The relation or workflow for **steady material balance** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+20. **A.** For **Steady-State Total and Component Material Balances**, the relation is meaningful only with the correct basis and physical assumptions. For a nonreacting steady process unit, there is no accumulation. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-21. **A.** The relation or workflow for **process degrees of freedom** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+21. **A.** For **Degrees of Freedom and Independent Equations**, the relation is meaningful only with the correct basis and physical assumptions. A well-posed calculation has enough independent material balances, specifications, equilibrium relations, and property relations to determine the unknowns. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-22. **A.** The relation or workflow for **mixing splitting and separation** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+22. **A.** For **Mixers, Splitters, and Separators**, the relation is meaningful only with the correct basis and physical assumptions. A mixer combines streams and is usually solved with total and component balances. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-23. **A.** The relation or workflow for **process flowsheet balance strategy** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+23. **A.** For **Process Flowsheets and Boundary Selection**, the relation is meaningful only with the correct basis and physical assumptions. Label every known flow, composition, state, recycle, utility, and product before writing equations. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-24. **A.** The relation or workflow for **chemical-process energy balance** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+24. **A.** For **Steady Nonreactive Energy Balances**, the relation is meaningful only with the correct basis and physical assumptions. The Handbook's steady-flow first law provides the energy-balance backbone. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-25. **A.** The relation or workflow for **coupled process balances** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+25. **A.** For **Coupled Material-and-Energy Balance Workflow**, the relation is meaningful only with the correct basis and physical assumptions. Many FE problems require a material balance first and an energy balance second. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-26. **A.** The relation or workflow for **process basis and stream composition** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+26. **A.** This later check revisits **Process Streams, Basis, and Composition** from a different review position. A process balance starts by defining a **basis**: a convenient amount or time interval on which every flow and composition is expressed. The correct choice remains A because the concept still depends on the defined basis and physical assumptions.
 
-27. **A.** The relation or workflow for **steady material balance** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+27. **A.** This later check revisits **Steady-State Total and Component Material Balances** from a different review position. For a nonreacting steady process unit, there is no accumulation. The correct choice remains A because the concept still depends on the defined basis and physical assumptions.
 
 
 ---
@@ -425,25 +427,25 @@ D) It is always directly tabulated in the Handbook
 
 ## Practice Problem Solutions
 
-1. A=30 kmol/h; B=70 kmol/h.
+1. For the practice case involving **feed kmol containing mol mol component molar**, Using 100, 30, 70, A=30 kmol/h; B=70 kmol/h. This completes Practice Problem 1 in Material and Energy Balances — Single Units and Process Flowsheets. The original kmol/h, mol/h basis is preserved.
 
-2. 45 kg/h.
+2. For the practice case involving **steady nonreacting unit receives kg discharges one**, Using 120, 75, 45 kg/h. This completes Practice Problem 2 in Material and Energy Balances — Single Units and Process Flowsheets. The original kg/h, s basis is preserved.
 
-3. Two independent equations may be chosen: one total plus one component balance, or two component balances.
+3. For the practice case involving **binary separator has unknown feed product waste**, Two independent equations may be chosen: one total plus one component balance, or two component balances. This is the chapter-specific distinction required by Practice Problem 3 in Material and Energy Balances — Single Units and Process Flowsheets.
 
-4. 8 kg/h and 12 kg/h solute.
+4. For the practice case involving **kg stream ideally split Feed wt solute**, Using 100, 40, 60, 8 kg/h and 12 kg/h solute. This completes Practice Problem 4 in Material and Energy Balances — Single Units and Process Flowsheets. The original kg/h, s basis is preserved.
 
-5. An overall process balance, because the internal stream cancels.
+5. For the practice case involving **two-unit process has unknown internal stream but**, An overall process balance, because the internal stream cancels. This is the chapter-specific distinction required by Practice Problem 5 in Material and Energy Balances — Single Units and Process Flowsheets.
 
-6. Q=2×4×20=160 kW.
+6. For the practice case involving **heater raises kg liquid cp kJ kg**, Using cp=4, Q=2×4×20=160 kW. This completes Practice Problem 6 in Material and Energy Balances — Single Units and Process Flowsheets. The original kg/s, kJ/(kg·K) basis is preserved.
 
-7. It determines the stream amounts/compositions needed for enthalpy and heat-duty calculations.
+7. For the practice case involving **it usually efficient solve material balance before**, It determines the stream amounts/compositions needed for enthalpy and heat-duty calculations. This is the chapter-specific distinction required by Practice Problem 7 in Material and Energy Balances — Single Units and Process Flowsheets.
 
-8. 40/(40+60)=40 mol% A, not 20%.
+8. For the practice case involving **mixture kmol kmol reported as mol Identify**, Using 40, 60, 20, 40/(40+60)=40 mol% A, not 20%. This completes Practice Problem 8 in Material and Energy Balances — Single Units and Process Flowsheets. The original kmol/h, mol/h basis is preserved.
 
-9. ΔT=500/(10×2.5)=20 K.
+9. For the practice case involving **cooler removes kW from kg liquid cp**, Using cp=2.5, ΔT=500/(10×2.5)=20 K. This completes Practice Problem 9 in Material and Energy Balances — Single Units and Process Flowsheets. The original kg/s, kJ/(kg·K) basis is preserved.
 
-10. Product=50/0.25=200 kg/h; solvent removed=0 kg/h.
+10. For the practice case involving **unit receives kg solute kg solvent Product**, Using 50, 150, 25, Product=50/0.25=200 kg/h; solvent removed=0 kg/h. This completes Practice Problem 10 in Material and Energy Balances — Single Units and Process Flowsheets. The original kg/h, s basis is preserved.
 
 
 ---

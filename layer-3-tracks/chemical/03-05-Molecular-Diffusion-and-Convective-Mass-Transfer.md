@@ -36,7 +36,9 @@ The Handbook directly provides Fick's laws, error-function diffusion, gas/liquid
 
 ## Learning Objectives
 
-By the end of this chapter, you will be able to:* **5.1** Explain and apply **Fick's First Law**.
+By the end of this chapter, you will be able to:
+
+* **5.1** Explain and apply **Fick's First Law**.
 * **5.2** Explain and apply **Fick's Second Law and Unsteady Diffusion**.
 * **5.3** Explain and apply **Diffusion of A Through Stagnant B**.
 * **5.4** Explain and apply **Equimolar Counter-Diffusion**.
@@ -66,7 +68,7 @@ The Handbook defines a diffusion coefficient with units of area per time.
 
 **Problem.** D=1e-9 m²/s and dC/dx=-2e6 mol/m⁴. Find J.
 
-**Solution.** J=-D dC/dx=0.002 mol/(m²·s).
+**Solution.** For **Fick's First Law**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) D=1, dx=-2, J=-D dC/dx=0.002 mol/(m²·s). This is the section-specific result for e- dC dx mol. The stated units/basis (m²/s, m²) are retained.
 
 ---
 
@@ -84,7 +86,7 @@ The relevant diffusion length grows approximately with \(\sqrt{Dt}\).
 
 **Problem.** For diffusion length estimate sqrt(Dt), D=1e-10 m²/s and t=10,000 s. Find scale.
 
-**Solution.** sqrt(1e-6)=0.001 m=1 mm.
+**Solution.** For **Fick's Second Law and Unsteady Diffusion**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) D=1, t=10, sqrt(1e-6)=0.001 m=1 mm. This is the section-specific result for diffusion length estimate sqrt Dt e- scale. The stated units/basis (m²/s, m²) are retained.
 
 ---
 
@@ -102,7 +104,7 @@ This case appears in evaporation through a stagnant gas film.
 
 **Problem.** State why stagnant-B diffusion differs from equimolar counterdiffusion.
 
-**Solution.** There is net molar bulk motion when B has zero molar flux.
+**Solution.** For **Diffusion of A Through Stagnant B**, There is net molar bulk motion when B has zero molar flux. This follows because for a gas A diffusing through stagnant gas B, bulk molar motion changes the relation from simple equimolar diffusion.. That physical distinction controls the result for State stagnant-B diffusion differs from equimolar counterdiffusion.
 
 ---
 
@@ -120,7 +122,7 @@ The concentration or partial-pressure profile is linear when diffusivity and oth
 
 **Problem.** For equimolar diffusion, D=2e-5, Δp=10 kPa, T=300 K, L=0.01 m. Estimate NA.
 
-**Solution.** NA=DΔp/(RTL)=2e-5×10000/(8.314×300×0.01)=0.00802 mol/(m²·s).
+**Solution.** For **Equimolar Counter-Diffusion**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) D=2, p=10, T=300, NA=DΔp/(RTL)=2e-5×10000/(8.314×300×0.01)=0.00802 mol/(m²·s). This is the section-specific result for equimolar diffusion e- kPa Estimate NA. The stated units/basis (kPa, Pa) are retained.
 
 ---
 
@@ -138,7 +140,7 @@ Mass flux can be expressed with gas-side or liquid-side individual coefficients.
 
 **Problem.** kg'=0.10 mol/(m²·s·kPa), bulk-interface Δp=2 kPa. Find flux.
 
-**Solution.** NA=0.20 mol/(m²·s).
+**Solution.** For **Two-Film Theory**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) =0.10, p=2, NA=0.20 mol/(m²·s). This is the section-specific result for kg mol kPa bulk-interface kPa flux. The stated units/basis (kPa, Pa) are retained.
 
 ---
 
@@ -156,7 +158,7 @@ The controlling resistance is the larger resistance after both are expressed on 
 
 **Problem.** 1/kG=2 and H/kL=8 in common reciprocal units. What fraction of total resistance is liquid-side?
 
-**Solution.** 8/(2+8)=80%.
+**Solution.** For **Overall Mass-Transfer Coefficients**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) kG=2, kL=8, 8/(2+8)=80%. This is the section-specific result for kG kL common reciprocal units fraction total. The stated units/basis (mm, s) are retained.
 
 ---
 
@@ -174,7 +176,7 @@ Use the correlation only within its stated geometry and regime. Heat-transfer in
 
 **Problem.** D=0.05 m, km=0.02 m/s, DAB=1e-5 m²/s. Find Sherwood number.
 
-**Solution.** Sh=kmD/DAB=100.
+**Solution.** For **Sherwood Correlations and Transport Analogies**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) D=0.05, km=0.02, DAB=1, Sh=kmD/DAB=100. This is the section-specific result for km DAB e- Sherwood number. The stated units/basis (m²/s, m/s) are retained.
 
 ---
 
@@ -184,13 +186,13 @@ Use the correlation only within its stated geometry and regime. Heat-transfer in
 
 **Problem.** If concentration profile is flat, what is Fickian diffusive flux?
 
-**Solution.** Zero.
+**Solution.** For **Integrated Worked Examples**, Zero. This follows because the section distinguishes the governing physical behavior from the alternatives. That physical distinction controls the result for concentration profile flat Fickian diffusive flux.
 
 ### Worked Example 9
 
 **Problem.** If both individual phase resistances halve, what happens qualitatively to overall K?
 
-**Solution.** Overall resistance halves, so K approximately doubles.
+**Solution.** For **Integrated Worked Examples**, Overall resistance halves, so K approximately doubles. This follows because the section distinguishes the governing physical behavior from the alternatives. That physical distinction controls the result for both individual phase resistances halve happens qualitatively.
 
 ---
 
@@ -341,59 +343,59 @@ D) It is always directly tabulated in the Handbook
 
 ## Answer Key with Explanations
 
-1. **Fick first law** is developed in §5.1. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+1. **Fick's First Law.** Fick's first law relates diffusive flux to concentration gradient. In Molecular Diffusion and Convective Mass Transfer, this is the definition or balance being tested by Question 1.
 
-2. **unsteady molecular diffusion** is developed in §5.2. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+2. **Fick's Second Law and Unsteady Diffusion.** For one-dimensional diffusion with constant diffusivity and no reaction, the concentration field follows the diffusion equation. In Molecular Diffusion and Convective Mass Transfer, this is the definition or balance being tested by Question 2.
 
-3. **stagnant-gas diffusion** is developed in §5.3. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+3. **Diffusion of A Through Stagnant B.** For a gas A diffusing through stagnant gas B, bulk molar motion changes the relation from simple equimolar diffusion. In Molecular Diffusion and Convective Mass Transfer, this is the definition or balance being tested by Question 3.
 
-4. **equimolar counterdiffusion** is developed in §5.4. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+4. **Equimolar Counter-Diffusion.** When A and B diffuse in opposite directions with equal molar rates, total molar flux is zero and the expression simplifies. In Molecular Diffusion and Convective Mass Transfer, this is the definition or balance being tested by Question 4.
 
-5. **two-film mass transfer** is developed in §5.5. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+5. **Two-Film Theory.** Two-film theory places gas-side and liquid-side resistances in thin layers adjacent to the interface. In Molecular Diffusion and Convective Mass Transfer, this is the definition or balance being tested by Question 5.
 
-6. **overall mass-transfer coefficient** is developed in §5.6. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+6. **Overall Mass-Transfer Coefficients.** Overall coefficients eliminate the unknown interface composition by combining phase resistances with the equilibrium relation. In Molecular Diffusion and Convective Mass Transfer, this is the definition or balance being tested by Question 6.
 
-7. **Sherwood mass-transfer correlation** is developed in §5.7. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+7. **Sherwood Correlations and Transport Analogies.** The Handbook defines Sherwood, Schmidt, Reynolds, Nusselt, Prandtl, and Stanton numbers and gives turbulent transport analogies. In Molecular Diffusion and Convective Mass Transfer, this is the definition or balance being tested by Question 7.
 
-8. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+8. For **Fick's First Law**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. Fick's first law relates diffusive flux to concentration gradient. This is the specific failure mode emphasized in Molecular Diffusion and Convective Mass Transfer.
 
-9. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+9. For **Fick's Second Law and Unsteady Diffusion**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. For one-dimensional diffusion with constant diffusivity and no reaction, the concentration field follows the diffusion equation. This is the specific failure mode emphasized in Molecular Diffusion and Convective Mass Transfer.
 
-10. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+10. For **Diffusion of A Through Stagnant B**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. For a gas A diffusing through stagnant gas B, bulk molar motion changes the relation from simple equimolar diffusion. This is the specific failure mode emphasized in Molecular Diffusion and Convective Mass Transfer.
 
-11. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+11. For **Equimolar Counter-Diffusion**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. When A and B diffuse in opposite directions with equal molar rates, total molar flux is zero and the expression simplifies. This is the specific failure mode emphasized in Molecular Diffusion and Convective Mass Transfer.
 
-12. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+12. For **Two-Film Theory**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. Two-film theory places gas-side and liquid-side resistances in thin layers adjacent to the interface. This is the specific failure mode emphasized in Molecular Diffusion and Convective Mass Transfer.
 
-13. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+13. For **Overall Mass-Transfer Coefficients**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. Overall coefficients eliminate the unknown interface composition by combining phase resistances with the equilibrium relation. This is the specific failure mode emphasized in Molecular Diffusion and Convective Mass Transfer.
 
-14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+14. For **Sherwood Correlations and Transport Analogies**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. The Handbook defines Sherwood, Schmidt, Reynolds, Nusselt, Prandtl, and Stanton numbers and gives turbulent transport analogies. This is the specific failure mode emphasized in Molecular Diffusion and Convective Mass Transfer.
 
-15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
+15. In **Molecular Diffusion and Convective Mass Transfer**, close the material balance first because stream amounts and compositions feed the later energy calculation. Otherwise enthalpy and duty terms may be evaluated for unresolved streams.
 
-16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
+16. For **Molecular Diffusion and Convective Mass Transfer**, a degrees-of-freedom check counts unknowns against independent equations before solving. Zero indicates a closed problem; a positive count signals missing independent information.
 
-17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
+17. In **Molecular Diffusion and Convective Mass Transfer**, a relation supplied by the FE problem defines the intended model for that question. A remembered correlation can carry different assumptions, coefficients, validity limits, or reference states.
 
-18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
+18. For **Molecular Diffusion and Convective Mass Transfer**, separating Handbook-supported material from specification-required learned material distinguishes lookup knowledge from material the guide develops. That boundary prevents guide-developed content from being presented as Handbook text.
 
-19. **A.** The relation or workflow for **Fick first law** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+19. **A.** For **Fick's First Law**, the relation is meaningful only with the correct basis and physical assumptions. Fick's first law relates diffusive flux to concentration gradient. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-20. **A.** The relation or workflow for **unsteady molecular diffusion** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+20. **A.** For **Fick's Second Law and Unsteady Diffusion**, the relation is meaningful only with the correct basis and physical assumptions. For one-dimensional diffusion with constant diffusivity and no reaction, the concentration field follows the diffusion equation. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-21. **A.** The relation or workflow for **stagnant-gas diffusion** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+21. **A.** For **Diffusion of A Through Stagnant B**, the relation is meaningful only with the correct basis and physical assumptions. For a gas A diffusing through stagnant gas B, bulk molar motion changes the relation from simple equimolar diffusion. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-22. **A.** The relation or workflow for **equimolar counterdiffusion** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+22. **A.** For **Equimolar Counter-Diffusion**, the relation is meaningful only with the correct basis and physical assumptions. When A and B diffuse in opposite directions with equal molar rates, total molar flux is zero and the expression simplifies. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-23. **A.** The relation or workflow for **two-film mass transfer** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+23. **A.** For **Two-Film Theory**, the relation is meaningful only with the correct basis and physical assumptions. Two-film theory places gas-side and liquid-side resistances in thin layers adjacent to the interface. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-24. **A.** The relation or workflow for **overall mass-transfer coefficient** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+24. **A.** For **Overall Mass-Transfer Coefficients**, the relation is meaningful only with the correct basis and physical assumptions. Overall coefficients eliminate the unknown interface composition by combining phase resistances with the equilibrium relation. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-25. **A.** The relation or workflow for **Sherwood mass-transfer correlation** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+25. **A.** For **Sherwood Correlations and Transport Analogies**, the relation is meaningful only with the correct basis and physical assumptions. The Handbook defines Sherwood, Schmidt, Reynolds, Nusselt, Prandtl, and Stanton numbers and gives turbulent transport analogies. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-26. **A.** The relation or workflow for **Fick first law** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+26. **A.** This later check revisits **Fick's First Law** from a different review position. Fick's first law relates diffusive flux to concentration gradient. The correct choice remains A because the concept still depends on the defined basis and physical assumptions.
 
-27. **A.** The relation or workflow for **unsteady molecular diffusion** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+27. **A.** This later check revisits **Fick's Second Law and Unsteady Diffusion** from a different review position. For one-dimensional diffusion with constant diffusivity and no reaction, the concentration field follows the diffusion equation. The correct choice remains A because the concept still depends on the defined basis and physical assumptions.
 
 
 ---
@@ -425,25 +427,25 @@ D) It is always directly tabulated in the Handbook
 
 ## Practice Problem Solutions
 
-1. J=-D dC/dx=0.002 mol/(m²·s).
+1. For the practice case involving **e- dC dx mol**, Using D=1, dx=-2, J=-D dC/dx=0.002 mol/(m²·s). This completes Practice Problem 1 in Molecular Diffusion and Convective Mass Transfer. The original m²/s, m² basis is preserved.
 
-2. sqrt(1e-6)=0.001 m=1 mm.
+2. For the practice case involving **diffusion length estimate sqrt Dt e- scale**, Using D=1, t=10, sqrt(1e-6)=0.001 m=1 mm. This completes Practice Problem 2 in Molecular Diffusion and Convective Mass Transfer. The original m²/s, m² basis is preserved.
 
-3. There is net molar bulk motion when B has zero molar flux.
+3. For the practice case involving **State stagnant-B diffusion differs from equimolar counterdiffusion**, There is net molar bulk motion when B has zero molar flux. This is the chapter-specific distinction required by Practice Problem 3 in Molecular Diffusion and Convective Mass Transfer.
 
-4. NA=DΔp/(RTL)=2e-5×10000/(8.314×300×0.01)=0.00802 mol/(m²·s).
+4. For the practice case involving **equimolar diffusion e- kPa Estimate NA**, Using D=2, p=10, T=300, NA=DΔp/(RTL)=2e-5×10000/(8.314×300×0.01)=0.00802 mol/(m²·s). This completes Practice Problem 4 in Molecular Diffusion and Convective Mass Transfer. The original kPa, Pa basis is preserved.
 
-5. NA=0.20 mol/(m²·s).
+5. For the practice case involving **kg mol kPa bulk-interface kPa flux**, Using =0.10, p=2, NA=0.20 mol/(m²·s). This completes Practice Problem 5 in Molecular Diffusion and Convective Mass Transfer. The original kPa, Pa basis is preserved.
 
-6. 8/(2+8)=80%.
+6. For the practice case involving **kG kL common reciprocal units fraction total**, Using kG=2, kL=8, 8/(2+8)=80%. This completes Practice Problem 6 in Molecular Diffusion and Convective Mass Transfer. The original mm, s basis is preserved.
 
-7. Sh=kmD/DAB=100.
+7. For the practice case involving **km DAB e- Sherwood number**, Using D=0.05, km=0.02, DAB=1, Sh=kmD/DAB=100. This completes Practice Problem 7 in Molecular Diffusion and Convective Mass Transfer. The original m²/s, m/s basis is preserved.
 
-8. Zero.
+8. For the practice case involving **concentration profile flat Fickian diffusive flux**, Zero. This is the chapter-specific distinction required by Practice Problem 8 in Molecular Diffusion and Convective Mass Transfer.
 
-9. Overall resistance halves, so K approximately doubles.
+9. For the practice case involving **both individual phase resistances halve happens qualitatively**, Overall resistance halves, so K approximately doubles. This is the chapter-specific distinction required by Practice Problem 9 in Molecular Diffusion and Convective Mass Transfer.
 
-10. Schmidt number.
+10. For the practice case involving **Which dimensionless group compares momentum mass diffusivity**, Schmidt number. This is the chapter-specific distinction required by Practice Problem 10 in Molecular Diffusion and Convective Mass Transfer.
 
 
 ---

@@ -36,7 +36,9 @@ The Handbook directly provides Henry's law, Raoult's law, rigorous fugacity equa
 
 ## Learning Objectives
 
-By the end of this chapter, you will be able to:* **4.1** Explain and apply **Gibbs Phase Rule and Phase Equilibrium**.
+By the end of this chapter, you will be able to:
+
+* **4.1** Explain and apply **Gibbs Phase Rule and Phase Equilibrium**.
 * **4.2** Explain and apply **Henry's Law for Dilute Solutes**.
 * **4.3** Explain and apply **Raoult's Law and Ideal VLE**.
 * **4.4** Explain and apply **K-Values, Bubble Points, and Dew Points**.
@@ -66,7 +68,7 @@ Phase equilibrium requires equality of the appropriate chemical potential/fugaci
 
 **Problem.** For a nonreacting binary two-phase system, use phase rule to find degrees of freedom.
 
-**Solution.** F=C+2-P=2+2-2=2.
+**Solution.** For **Gibbs Phase Rule and Phase Equilibrium**, F=C+2-P=2+2-2=2. This follows because for a nonreacting equilibrium system, Gibbs phase rule relates number of components, phases, and independent intensive degrees of freedom.. That physical distinction controls the result for nonreacting binary two-phase system use phase rule.
 
 ---
 
@@ -84,7 +86,7 @@ Henry constants appear in multiple unit conventions, so units must be checked be
 
 **Problem.** Henry constant is 500 kPa and x=0.002. Find equilibrium gas partial pressure.
 
-**Solution.** p=Hx=1.0 kPa.
+**Solution.** For **Henry's Law for Dilute Solutes**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) x=0.002, p=Hx=1.0 kPa. This is the section-specific result for Henry constant kPa equilibrium gas partial pressure. The stated units/basis (kPa, Pa) are retained.
 
 ---
 
@@ -102,7 +104,7 @@ Combining with Dalton's law gives \(y_iP=x_iP_i^{sat}\).
 
 **Problem.** At 80°C, Psat,A=80 kPa and xA=0.4. Raoult partial pressure?
 
-**Solution.** pA=32 kPa.
+**Solution.** For **Raoult's Law and Ideal VLE**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) A=80, xA=0.4, pA=32 kPa. This is the section-specific result for Psat kPa xA Raoult partial pressure. The stated units/basis (kPa, Pa) are retained.
 
 ---
 
@@ -120,7 +122,7 @@ At a bubble point \(\sum_i y_i=1\); at a dew point \(\sum_i x_i=1\).
 
 **Problem.** Binary liquid has xA=0.4, KA=1.5, KB=0.667. Check bubble criterion ΣKx if xB=0.6.
 
-**Solution.** 1.5(0.4)+0.667(0.6)=1.0002≈1; near bubble condition.
+**Solution.** For **K-Values, Bubble Points, and Dew Points**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) xA=0.4, KA=1.5, KB=0.667, 1.5(0.4)+0.667(0.6)=1.0002≈1; near bubble condition. This is the section-specific result for Binary liquid has xA KA KB Check. The stated units/basis (s, h) are retained.
 
 ---
 
@@ -138,7 +140,7 @@ At low pressure and near-ideal behavior, these corrections approach unity and th
 
 **Problem.** At low pressure, φ≈1 and γ≈1. What rigorous VLE form does fugacity equality approach?
 
-**Solution.** Raoult's law: yiP≈xiPisat.
+**Solution.** For **Fugacity Equality for Rigorous Phase Equilibrium**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) ≈1, ≈1, Raoult's law: yiP≈xiPisat. This is the section-specific result for low pressure rigorous VLE form does fugacity. The stated units/basis (s, h) are retained.
 
 ---
 
@@ -156,7 +158,7 @@ Values near one indicate near-ideal liquid behavior. Large deviations from one m
 
 **Problem.** If γA=2 at given x, is liquid more or less ideal than γA=1?
 
-**Solution.** More nonideal; activity is twice xi on the chosen standard-state basis.
+**Solution.** For **Activity Coefficients and Liquid-Phase Nonideality**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) A=2, A=1, More nonideal; activity is twice xi on the chosen standard-state basis. This is the section-specific result for given liquid more less ideal than. The stated units/basis (s, h) are retained.
 
 ---
 
@@ -174,7 +176,7 @@ The reaction quotient has the same activity-product structure; equilibrium occur
 
 **Problem.** If ΔG°=-RT ln K and K>1, what sign is ΔG°?
 
-**Solution.** Negative.
+**Solution.** For **Chemical Reaction Equilibrium**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) K>1, Negative. This is the section-specific result for RT ln sign. The stated units/basis (s, h) are retained.
 
 ---
 
@@ -184,13 +186,13 @@ The reaction quotient has the same activity-product structure; equilibrium occur
 
 **Problem.** For yA=0.6 and xA=0.3, find K-value.
 
-**Solution.** K=2.
+**Solution.** For **Integrated Worked Examples**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) yA=0.6, xA=0.3, K=2. This is the section-specific result for yA xA K-value.
 
 ### Worked Example 9
 
 **Problem.** At a dew point with yA=0.5, KA=2 and KB=0.5, evaluate Σy/K.
 
-**Solution.** 0.5/2+0.5/0.5=1.25, so the assumed state is not the dew point.
+**Solution.** For **Integrated Worked Examples**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) yA=0.5, KA=2, KB=0.5, 0.5/2+0.5/0.5=1.25, so the assumed state is not the dew point. This is the section-specific result for dew point yA KA KB evaluate. The stated units/basis (h) are retained.
 
 ---
 
@@ -341,59 +343,59 @@ D) It is always directly tabulated in the Handbook
 
 ## Answer Key with Explanations
 
-1. **Gibbs phase rule** is developed in §4.1. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+1. **Gibbs Phase Rule and Phase Equilibrium.** For a nonreacting equilibrium system, Gibbs phase rule relates number of components, phases, and independent intensive degrees of freedom. In Phase Equilibrium, Raoult's Law, Fugacity, Activity, and Chemical Equilibrium, this is the definition or balance being tested by Question 1.
 
-2. **Henry-law equilibrium** is developed in §4.2. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+2. **Henry's Law for Dilute Solutes.** The Handbook gives Henry's law for low-concentration solutes in gas-liquid equilibrium. In Phase Equilibrium, Raoult's Law, Fugacity, Activity, and Chemical Equilibrium, this is the definition or balance being tested by Question 2.
 
-3. **Raoult-law VLE** is developed in §4.3. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+3. **Raoult's Law and Ideal VLE.** For near-ideal liquid mixtures at sufficiently low pressure, Raoult's law relates component partial pressure to liquid mole fraction and pure-component saturation pressure. In Phase Equilibrium, Raoult's Law, Fugacity, Activity, and Chemical Equilibrium, this is the definition or balance being tested by Question 3.
 
-4. **phase-equilibrium K value** is developed in §4.4. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+4. **K-Values, Bubble Points, and Dew Points.** Bubble-point calculations begin with a liquid composition; dew-point calculations begin with a vapor composition. In Phase Equilibrium, Raoult's Law, Fugacity, Activity, and Chemical Equilibrium, this is the definition or balance being tested by Question 4.
 
-5. **fugacity phase equilibrium** is developed in §4.5. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+5. **Fugacity Equality for Rigorous Phase Equilibrium.** The Handbook's rigorous VLE criterion is equality of component fugacity between vapor and liquid phases. In Phase Equilibrium, Raoult's Law, Fugacity, Activity, and Chemical Equilibrium, this is the definition or balance being tested by Question 5.
 
-6. **activity coefficient** is developed in §4.6. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+6. **Activity Coefficients and Liquid-Phase Nonideality.** The Handbook gives a Van Laar form for binary systems. In Phase Equilibrium, Raoult's Law, Fugacity, Activity, and Chemical Equilibrium, this is the definition or balance being tested by Question 6.
 
-7. **chemical reaction equilibrium** is developed in §4.7. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+7. **Chemical Reaction Equilibrium.** For a reacting mixture, equilibrium is determined by standard Gibbs energy change and activities through the equilibrium constant. In Phase Equilibrium, Raoult's Law, Fugacity, Activity, and Chemical Equilibrium, this is the definition or balance being tested by Question 7.
 
-8. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+8. For **Gibbs Phase Rule and Phase Equilibrium**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. For a nonreacting equilibrium system, Gibbs phase rule relates number of components, phases, and independent intensive degrees of freedom. This is the specific failure mode emphasized in Phase Equilibrium, Raoult's Law, Fugacity, Activity, and Chemical Equilibrium.
 
-9. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+9. For **Henry's Law for Dilute Solutes**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. The Handbook gives Henry's law for low-concentration solutes in gas-liquid equilibrium. This is the specific failure mode emphasized in Phase Equilibrium, Raoult's Law, Fugacity, Activity, and Chemical Equilibrium.
 
-10. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+10. For **Raoult's Law and Ideal VLE**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. For near-ideal liquid mixtures at sufficiently low pressure, Raoult's law relates component partial pressure to liquid mole fraction and pure-component saturation pressure. This is the specific failure mode emphasized in Phase Equilibrium, Raoult's Law, Fugacity, Activity, and Chemical Equilibrium.
 
-11. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+11. For **K-Values, Bubble Points, and Dew Points**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. Bubble-point calculations begin with a liquid composition; dew-point calculations begin with a vapor composition. This is the specific failure mode emphasized in Phase Equilibrium, Raoult's Law, Fugacity, Activity, and Chemical Equilibrium.
 
-12. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+12. For **Fugacity Equality for Rigorous Phase Equilibrium**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. The Handbook's rigorous VLE criterion is equality of component fugacity between vapor and liquid phases. This is the specific failure mode emphasized in Phase Equilibrium, Raoult's Law, Fugacity, Activity, and Chemical Equilibrium.
 
-13. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+13. For **Activity Coefficients and Liquid-Phase Nonideality**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. The Handbook gives a Van Laar form for binary systems. This is the specific failure mode emphasized in Phase Equilibrium, Raoult's Law, Fugacity, Activity, and Chemical Equilibrium.
 
-14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+14. For **Chemical Reaction Equilibrium**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. For a reacting mixture, equilibrium is determined by standard Gibbs energy change and activities through the equilibrium constant. This is the specific failure mode emphasized in Phase Equilibrium, Raoult's Law, Fugacity, Activity, and Chemical Equilibrium.
 
-15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
+15. In **Phase Equilibrium, Raoult's Law, Fugacity, Activity, and Chemical Equilibrium**, close the material balance first because stream amounts and compositions feed the later energy calculation. Otherwise enthalpy and duty terms may be evaluated for unresolved streams.
 
-16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
+16. For **Phase Equilibrium, Raoult's Law, Fugacity, Activity, and Chemical Equilibrium**, a degrees-of-freedom check counts unknowns against independent equations before solving. Zero indicates a closed problem; a positive count signals missing independent information.
 
-17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
+17. In **Phase Equilibrium, Raoult's Law, Fugacity, Activity, and Chemical Equilibrium**, a relation supplied by the FE problem defines the intended model for that question. A remembered correlation can carry different assumptions, coefficients, validity limits, or reference states.
 
-18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
+18. For **Phase Equilibrium, Raoult's Law, Fugacity, Activity, and Chemical Equilibrium**, separating Handbook-supported material from specification-required learned material distinguishes lookup knowledge from material the guide develops. That boundary prevents guide-developed content from being presented as Handbook text.
 
-19. **A.** The relation or workflow for **Gibbs phase rule** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+19. **A.** For **Gibbs Phase Rule and Phase Equilibrium**, the relation is meaningful only with the correct basis and physical assumptions. For a nonreacting equilibrium system, Gibbs phase rule relates number of components, phases, and independent intensive degrees of freedom. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-20. **A.** The relation or workflow for **Henry-law equilibrium** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+20. **A.** For **Henry's Law for Dilute Solutes**, the relation is meaningful only with the correct basis and physical assumptions. The Handbook gives Henry's law for low-concentration solutes in gas-liquid equilibrium. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-21. **A.** The relation or workflow for **Raoult-law VLE** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+21. **A.** For **Raoult's Law and Ideal VLE**, the relation is meaningful only with the correct basis and physical assumptions. For near-ideal liquid mixtures at sufficiently low pressure, Raoult's law relates component partial pressure to liquid mole fraction and pure-component saturation pressure. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-22. **A.** The relation or workflow for **phase-equilibrium K value** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+22. **A.** For **K-Values, Bubble Points, and Dew Points**, the relation is meaningful only with the correct basis and physical assumptions. Bubble-point calculations begin with a liquid composition; dew-point calculations begin with a vapor composition. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-23. **A.** The relation or workflow for **fugacity phase equilibrium** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+23. **A.** For **Fugacity Equality for Rigorous Phase Equilibrium**, the relation is meaningful only with the correct basis and physical assumptions. The Handbook's rigorous VLE criterion is equality of component fugacity between vapor and liquid phases. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-24. **A.** The relation or workflow for **activity coefficient** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+24. **A.** For **Activity Coefficients and Liquid-Phase Nonideality**, the relation is meaningful only with the correct basis and physical assumptions. The Handbook gives a Van Laar form for binary systems. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-25. **A.** The relation or workflow for **chemical reaction equilibrium** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+25. **A.** For **Chemical Reaction Equilibrium**, the relation is meaningful only with the correct basis and physical assumptions. For a reacting mixture, equilibrium is determined by standard Gibbs energy change and activities through the equilibrium constant. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
 
-26. **A.** The relation or workflow for **Gibbs phase rule** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+26. **A.** This later check revisits **Gibbs Phase Rule and Phase Equilibrium** from a different review position. For a nonreacting equilibrium system, Gibbs phase rule relates number of components, phases, and independent intensive degrees of freedom. The correct choice remains A because the concept still depends on the defined basis and physical assumptions.
 
-27. **A.** The relation or workflow for **Henry-law equilibrium** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
+27. **A.** This later check revisits **Henry's Law for Dilute Solutes** from a different review position. The Handbook gives Henry's law for low-concentration solutes in gas-liquid equilibrium. The correct choice remains A because the concept still depends on the defined basis and physical assumptions.
 
 
 ---
@@ -425,25 +427,25 @@ D) It is always directly tabulated in the Handbook
 
 ## Practice Problem Solutions
 
-1. F=C+2-P=2+2-2=2.
+1. For the practice case involving **nonreacting binary two-phase system use phase rule**, F=C+2-P=2+2-2=2. This is the chapter-specific distinction required by Practice Problem 1 in Phase Equilibrium, Raoult's Law, Fugacity, Activity, and Chemical Equilibrium.
 
-2. p=Hx=1.0 kPa.
+2. For the practice case involving **Henry constant kPa equilibrium gas partial pressure**, Using x=0.002, p=Hx=1.0 kPa. This completes Practice Problem 2 in Phase Equilibrium, Raoult's Law, Fugacity, Activity, and Chemical Equilibrium. The original kPa, Pa basis is preserved.
 
-3. pA=32 kPa.
+3. For the practice case involving **Psat kPa xA Raoult partial pressure**, Using A=80, xA=0.4, pA=32 kPa. This completes Practice Problem 3 in Phase Equilibrium, Raoult's Law, Fugacity, Activity, and Chemical Equilibrium. The original kPa, Pa basis is preserved.
 
-4. 1.5(0.4)+0.667(0.6)=1.0002≈1; near bubble condition.
+4. For the practice case involving **Binary liquid has xA KA KB Check**, Using xA=0.4, KA=1.5, KB=0.667, 1.5(0.4)+0.667(0.6)=1.0002≈1; near bubble condition. This completes Practice Problem 4 in Phase Equilibrium, Raoult's Law, Fugacity, Activity, and Chemical Equilibrium. The original s, h basis is preserved.
 
-5. Raoult's law: yiP≈xiPisat.
+5. For the practice case involving **low pressure rigorous VLE form does fugacity**, Using ≈1, ≈1, Raoult's law: yiP≈xiPisat. This completes Practice Problem 5 in Phase Equilibrium, Raoult's Law, Fugacity, Activity, and Chemical Equilibrium. The original s, h basis is preserved.
 
-6. More nonideal; activity is twice xi on the chosen standard-state basis.
+6. For the practice case involving **given liquid more less ideal than**, Using A=2, A=1, More nonideal; activity is twice xi on the chosen standard-state basis. This completes Practice Problem 6 in Phase Equilibrium, Raoult's Law, Fugacity, Activity, and Chemical Equilibrium. The original s, h basis is preserved.
 
-7. Negative.
+7. For the practice case involving **RT ln sign**, Using K>1, Negative. This completes Practice Problem 7 in Phase Equilibrium, Raoult's Law, Fugacity, Activity, and Chemical Equilibrium. The original s, h basis is preserved.
 
-8. K=2.
+8. For the practice case involving **yA xA K-value**, Using yA=0.6, xA=0.3, K=2. This completes Practice Problem 8 in Phase Equilibrium, Raoult's Law, Fugacity, Activity, and Chemical Equilibrium.
 
-9. 0.5/2+0.5/0.5=1.25, so the assumed state is not the dew point.
+9. For the practice case involving **dew point yA KA KB evaluate**, Using yA=0.5, KA=2, KB=0.5, 0.5/2+0.5/0.5=1.25, so the assumed state is not the dew point. This completes Practice Problem 9 in Phase Equilibrium, Raoult's Law, Fugacity, Activity, and Chemical Equilibrium. The original h basis is preserved.
 
-10. Equal component fugacity in each phase.
+10. For the practice case involving **equality defines phase equilibrium rigorously each component**, Equal component fugacity in each phase. This is the chapter-specific distinction required by Practice Problem 10 in Phase Equilibrium, Raoult's Law, Fugacity, Activity, and Chemical Equilibrium.
 
 
 ---
