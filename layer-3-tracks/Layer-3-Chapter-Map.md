@@ -61,23 +61,23 @@ The current ledger tooling already recognizes Layer 3 concept-domain prefixes `C
 
 | Chapter | Title | Status |
 |---|---|---|
-| 03-14 | Civil Materials — Concrete, Asphalt, Aggregates, Wood, and Testing | Planned |
-| 03-15 | Surveying, Leveling, Coordinates, Grades, Earthwork, and Volumes | Planned |
-| 03-16 | Hydrology — Rainfall, Infiltration, Runoff, Watersheds, and Hydrographs | Planned |
-| 03-17 | Open-Channel Flow — Manning Equation, Specific Energy, and Hydraulic Jumps | Planned |
-| 03-18 | Pipe Networks, Water Distribution, Pumps, and Collection Systems | Planned |
-| 03-19 | Flood Control, Stormwater Detention, Routing, and Spillways | Planned |
-| 03-20 | Groundwater Flow, Aquifer Properties, Wells, and Drawdown | Planned |
-| 03-21 | Water Quality and Water/Wastewater Treatment for Civil Applications | Planned |
-| 03-22 | Structural Determinacy, Stability, Loads, Load Paths, and Influence Lines | Planned |
-| 03-23 | Structural Analysis — Beams, Trusses, Frames, and Deflections | Planned |
-| 03-24 | Columns, Buckling, and Elementary Indeterminate Structures | Planned |
-| 03-25 | Steel Design — Tension Members, Beams, Columns, and Connections | Planned |
-| 03-26 | Reinforced Concrete Design — Beams and Columns | Planned |
-| 03-27 | Soil Classification, Phase Relations, Compaction, and Effective Stress | Planned |
-| 03-28 | Shear Strength, Earth Pressure, Bearing Capacity, Foundations, Settlement, and Slope Stability | Planned |
-| 03-29 | Transportation Engineering — Geometric Design, Pavements, Traffic Flow, and Planning | Planned |
-| 03-30 | Construction Engineering — Administration, Operations, Scheduling, Estimating, and Drawings | Planned |
+| 03-14 | Civil Materials — Concrete, Asphalt, Aggregates, Wood, and Testing | Drafted |
+| 03-15 | Surveying, Leveling, Coordinates, Grades, Earthwork, and Volumes | Drafted |
+| 03-16 | Hydrology — Rainfall, Infiltration, Runoff, Watersheds, and Hydrographs | Drafted |
+| 03-17 | Open-Channel Flow — Manning Equation, Specific Energy, and Hydraulic Jumps | Drafted |
+| 03-18 | Pipe Networks, Water Distribution, Pumps, and Collection Systems | Drafted |
+| 03-19 | Flood Control, Stormwater Detention, Routing, and Spillways | Drafted |
+| 03-20 | Groundwater Flow, Aquifer Properties, Wells, and Drawdown | Drafted |
+| 03-21 | Water Quality and Water/Wastewater Treatment for Civil Applications | Drafted |
+| 03-22 | Structural Determinacy, Stability, Loads, Load Paths, and Influence Lines | Drafted |
+| 03-23 | Structural Analysis — Beams, Trusses, Frames, and Deflections | Drafted |
+| 03-24 | Columns, Buckling, and Elementary Indeterminate Structures | Drafted |
+| 03-25 | Steel Design — Tension Members, Beams, Columns, and Connections | Drafted |
+| 03-26 | Reinforced Concrete Design — Beams and Columns | Drafted |
+| 03-27 | Soil Classification, Phase Relations, Compaction, and Effective Stress | Drafted |
+| 03-28 | Shear Strength, Earth Pressure, Bearing Capacity, Foundations, Settlement, and Slope Stability | Drafted |
+| 03-29 | Transportation Engineering — Geometric Design, Pavements, Traffic Flow, and Planning | Drafted |
+| 03-30 | Construction Engineering — Administration, Operations, Scheduling, Estimating, and Drawings | Drafted |
 
 ## Track ECE — Electrical & Computer Engineering
 
@@ -85,23 +85,23 @@ The current ledger tooling already recognizes Layer 3 concept-domain prefixes `C
 
 | Chapter | Title | Status |
 |---|---|---|
-| 03-31 | Semiconductor Materials, Energy Bands, Doping, and p-n Junctions | Planned |
-| 03-32 | Diodes, Rectifiers, Thyristors, and Device Models | Planned |
-| 03-33 | BJT and MOSFET Biasing and Small-Signal Models | Planned |
-| 03-34 | Single-Stage, Differential, and Operational Amplifiers | Planned |
-| 03-35 | Power Electronics — Rectifiers, Converters, Inverters, and Switching | Planned |
-| 03-36 | Power Systems — Transmission, Distribution, Losses, and Voltage Regulation | Planned |
-| 03-37 | Electromagnetic Fields — Electrostatics, Magnetostatics, and Maxwell Foundations | Planned |
-| 03-38 | Electromagnetic Waves and Transmission Lines | Planned |
-| 03-39 | Signals and Linear Systems — Fourier Methods, Convolution, Filtering, and Transform Models | Planned |
-| 03-40 | Communications — AM, FM, PM, PCM, Bandwidth, and Noise | Planned |
-| 03-41 | Multiplexing and Digital Communications | Planned |
-| 03-42 | Digital Logic — Number Systems, Boolean Algebra, Gates, and Minimization | Planned |
-| 03-43 | Sequential Logic — Flip-Flops, Counters, State Machines, Timing, and PLDs | Planned |
-| 03-44 | Computer Systems — Microprocessors, Memory, and Interfacing | Planned |
-| 03-45 | Computer Networks — Routing, Switching, Topologies, and TCP/IP | Planned |
-| 03-46 | Cybersecurity — Security Triad, Firewalls, Detection, Scanning, and Vulnerability Testing | Planned |
-| 03-47 | Software Engineering — Data Structures, Algorithms, Complexity, Control Flow, and Testing | Planned |
+| 03-31 | Semiconductor Materials, Energy Bands, Doping, and p-n Junctions | Drafted |
+| 03-32 | Diodes, Rectifiers, Thyristors, and Device Models | Drafted |
+| 03-33 | BJT and MOSFET Biasing and Small-Signal Models | Drafted |
+| 03-34 | Single-Stage, Differential, and Operational Amplifiers | Drafted |
+| 03-35 | Power Electronics — Rectifiers, Converters, Inverters, and Switching | Drafted |
+| 03-36 | Power Systems — Transmission, Distribution, Losses, and Voltage Regulation | Drafted |
+| 03-37 | Electromagnetic Fields — Electrostatics, Magnetostatics, and Maxwell Foundations | Drafted |
+| 03-38 | Electromagnetic Waves and Transmission Lines | Drafted |
+| 03-39 | Signals and Linear Systems — Fourier Methods, Convolution, Filtering, and Transform Models | Drafted |
+| 03-40 | Communications — AM, FM, PM, PCM, Bandwidth, and Noise | Drafted |
+| 03-41 | Multiplexing and Digital Communications | Drafted |
+| 03-42 | Digital Logic — Number Systems, Boolean Algebra, Gates, and Minimization | Drafted |
+| 03-43 | Sequential Logic — Flip-Flops, Counters, State Machines, Timing, and PLDs | Drafted |
+| 03-44 | Computer Systems — Microprocessors, Memory, and Interfacing | Drafted |
+| 03-45 | Computer Networks — Routing, Switching, Topologies, and TCP/IP | Drafted |
+| 03-46 | Cybersecurity — Security Triad, Firewalls, Detection, Scanning, and Vulnerability Testing | Drafted |
+| 03-47 | Software Engineering — Data Structures, Algorithms, Complexity, Control Flow, and Testing | Drafted |
 
 ## Track ENV — Environmental Engineering
 
@@ -109,20 +109,20 @@ The current ledger tooling already recognizes Layer 3 concept-domain prefixes `C
 
 | Chapter | Title | Status |
 |---|---|---|
-| 03-48 | Population, Demand, Environmental Mass Balances, and Reactor Models | Planned |
-| 03-49 | Environmental Chemistry — Equilibrium, Kinetics, Partitioning, and pC-pH | Planned |
-| 03-50 | Health Hazards, Exposure Pathways, Toxicology, and Risk Assessment | Planned |
-| 03-51 | Environmental Hydraulics — Conduits, Open Channels, Pumps, Blowers, and Flow Measurement | Planned |
-| 03-52 | Surface-Water Hydrology — Runoff, Infiltration, Water Budgets, and Storage | Planned |
-| 03-53 | Routing, Stormwater/Watershed Quality, Streeter–Phelps, and Eutrophication | Planned |
-| 03-54 | Groundwater Flow, Aquifer Tests, Wells, and Drawdown | Planned |
-| 03-55 | Soil and Sediment Contamination, Site Characterization, and Groundwater Remediation | Planned |
-| 03-56 | Water/Wastewater Characteristics, Loading Rates, and Physical Treatment | Planned |
-| 03-57 | Chemical Water/Wastewater Treatment — Coagulation, Softening, Disinfection, Ion Exchange, and Precipitation | Planned |
-| 03-58 | Biological Treatment — Activated Sludge, Fixed Film, Lagoons, and Nutrient Removal | Planned |
-| 03-59 | Sludge/Biosolids Handling, Water Reuse, and Residuals Management | Planned |
-| 03-60 | Air Quality — Emissions, Dispersion, Indoor Air, and Gas/Particle Control | Planned |
-| 03-61 | Solid and Hazardous Waste, Landfills, Treatment, and Energy-Environment Impacts | Planned |
+| 03-48 | Population, Demand, Environmental Mass Balances, and Reactor Models | Drafted |
+| 03-49 | Environmental Chemistry — Equilibrium, Kinetics, Partitioning, and pC-pH | Drafted |
+| 03-50 | Health Hazards, Exposure Pathways, Toxicology, and Risk Assessment | Drafted |
+| 03-51 | Environmental Hydraulics — Conduits, Open Channels, Pumps, Blowers, and Flow Measurement | Drafted |
+| 03-52 | Surface-Water Hydrology — Runoff, Infiltration, Water Budgets, and Storage | Drafted |
+| 03-53 | Routing, Stormwater/Watershed Quality, Streeter–Phelps, and Eutrophication | Drafted |
+| 03-54 | Groundwater Flow, Aquifer Tests, Wells, and Drawdown | Drafted |
+| 03-55 | Soil and Sediment Contamination, Site Characterization, and Groundwater Remediation | Drafted |
+| 03-56 | Water/Wastewater Characteristics, Loading Rates, and Physical Treatment | Drafted |
+| 03-57 | Chemical Water/Wastewater Treatment — Coagulation, Softening, Disinfection, Ion Exchange, and Precipitation | Drafted |
+| 03-58 | Biological Treatment — Activated Sludge, Fixed Film, Lagoons, and Nutrient Removal | Drafted |
+| 03-59 | Sludge/Biosolids Handling, Water Reuse, and Residuals Management | Drafted |
+| 03-60 | Air Quality — Emissions, Dispersion, Indoor Air, and Gas/Particle Control | Drafted |
+| 03-61 | Solid and Hazardous Waste, Landfills, Treatment, and Energy-Environment Impacts | Drafted |
 
 ## Track IND — Industrial & Systems Engineering
 
@@ -130,20 +130,20 @@ The current ledger tooling already recognizes Layer 3 concept-domain prefixes `C
 
 | Chapter | Title | Status |
 |---|---|---|
-| 03-62 | Data, Logic, Databases, and Engineering Analytics | Planned |
-| 03-63 | Linear Programming and Optimization | Planned |
-| 03-64 | Queueing Models and Service Systems | Planned |
-| 03-65 | Markov Processes, Stochastic Models, and Simulation | Planned |
-| 03-66 | Engineering and Project Management — Organization, WBS, PERT/CPM, Earned Value, Agile, and KPIs | Planned |
-| 03-67 | Forecasting — Moving Averages, Exponential Smoothing, and Tracking Signals | Planned |
-| 03-68 | Inventory, Aggregate Planning, MRP, Sequencing, and Theory of Constraints | Planned |
-| 03-69 | Manufacturing and Service Systems — Processes, Automation, Throughput, and Line Balancing | Planned |
-| 03-70 | Lean Systems, Process Improvement, Sustainability, and Value Engineering | Planned |
-| 03-71 | Facility Location, Layout, Capacity, and Material Handling | Planned |
-| 03-72 | Supply Chains, Transportation Networks, Pooling, and Distribution | Planned |
-| 03-73 | Human Factors, Ergonomics, Work Design, Time Study, and Learning Curves | Planned |
-| 03-74 | Quality Management, SPC, Process Capability, Sampling, and DOE | Planned |
-| 03-75 | Systems Engineering, Reliability, FMEA, Fault Trees, and Life-Cycle Risk | Planned |
+| 03-62 | Data, Logic, Databases, and Engineering Analytics | Drafted |
+| 03-63 | Linear Programming and Optimization | Drafted |
+| 03-64 | Queueing Models and Service Systems | Drafted |
+| 03-65 | Markov Processes, Stochastic Models, and Simulation | Drafted |
+| 03-66 | Engineering and Project Management — Organization, WBS, PERT/CPM, Earned Value, Agile, and KPIs | Drafted |
+| 03-67 | Forecasting — Moving Averages, Exponential Smoothing, and Tracking Signals | Drafted |
+| 03-68 | Inventory, Aggregate Planning, MRP, Sequencing, and Theory of Constraints | Drafted |
+| 03-69 | Manufacturing and Service Systems — Processes, Automation, Throughput, and Line Balancing | Drafted |
+| 03-70 | Lean Systems, Process Improvement, Sustainability, and Value Engineering | Drafted |
+| 03-71 | Facility Location, Layout, Capacity, and Material Handling | Drafted |
+| 03-72 | Supply Chains, Transportation Networks, Pooling, and Distribution | Drafted |
+| 03-73 | Human Factors, Ergonomics, Work Design, Time Study, and Learning Curves | Drafted |
+| 03-74 | Quality Management, SPC, Process Capability, Sampling, and DOE | Drafted |
+| 03-75 | Systems Engineering, Reliability, FMEA, Fault Trees, and Life-Cycle Risk | Drafted |
 
 ## Track MEC — Mechanical Engineering
 
@@ -151,21 +151,21 @@ The current ledger tooling already recognizes Layer 3 concept-domain prefixes `C
 
 | Chapter | Title | Status |
 |---|---|---|
-| 03-76 | Mechanism Kinematics and Machine Motion | Planned |
-| 03-77 | Mechanical Vibrations — Free, Forced, Damped, and Resonant Response | Planned |
-| 03-78 | Failure Theories, Stress Concentrations, Fatigue, Fracture, and Creep | Planned |
-| 03-79 | Manufacturing Processes, Material Processing, Heat Treatment, and Selection | Planned |
-| 03-80 | External Flow — Drag, Lift, Boundary Layers, and Dimensional Similarity | Planned |
-| 03-81 | Compressible Flow — Mach Number, Nozzles, Isentropic Flow, and Normal Shocks | Planned |
-| 03-82 | Combustion and Combustion Products | Planned |
-| 03-83 | HVAC Processes, Loads, Psychrometrics, and Equipment Performance | Planned |
-| 03-84 | Mechanical Springs | Planned |
-| 03-85 | Pressure Vessels and Piping | Planned |
-| 03-86 | Bearings and Lubrication | Planned |
-| 03-87 | Power Screws, Threaded Fasteners, and Mechanical Joints | Planned |
-| 03-88 | Shafts, Keys, Couplings, Gears, Belts, Chains, and Power Transmission | Planned |
-| 03-89 | Hydraulic, Pneumatic, and Electromechanical Components | Planned |
-| 03-90 | Fits, Tolerances, GD&T, Manufacturability, Quality, and Reliability | Planned |
+| 03-76 | Mechanism Kinematics and Machine Motion | Drafted |
+| 03-77 | Mechanical Vibrations — Free, Forced, Damped, and Resonant Response | Drafted |
+| 03-78 | Failure Theories, Stress Concentrations, Fatigue, Fracture, and Creep | Drafted |
+| 03-79 | Manufacturing Processes, Material Processing, Heat Treatment, and Selection | Drafted |
+| 03-80 | External Flow — Drag, Lift, Boundary Layers, and Dimensional Similarity | Drafted |
+| 03-81 | Compressible Flow — Mach Number, Nozzles, Isentropic Flow, and Normal Shocks | Drafted |
+| 03-82 | Combustion and Combustion Products | Drafted |
+| 03-83 | HVAC Processes, Loads, Psychrometrics, and Equipment Performance | Drafted |
+| 03-84 | Mechanical Springs | Drafted |
+| 03-85 | Pressure Vessels and Piping | Drafted |
+| 03-86 | Bearings and Lubrication | Drafted |
+| 03-87 | Power Screws, Threaded Fasteners, and Mechanical Joints | Drafted |
+| 03-88 | Shafts, Keys, Couplings, Gears, Belts, Chains, and Power Transmission | Drafted |
+| 03-89 | Hydraulic, Pneumatic, and Electromechanical Components | Drafted |
+| 03-90 | Fits, Tolerances, GD&T, Manufacturability, Quality, and Reliability | Drafted |
 
 ## Track OTH — Other Disciplines — Integration Track
 
@@ -173,11 +173,11 @@ The current ledger tooling already recognizes Layer 3 concept-domain prefixes `C
 
 | Chapter | Title | Status |
 |---|---|---|
-| 03-91 | Other Disciplines Mechanics and Materials Integration | Planned |
-| 03-92 | Other Disciplines Thermal, Fluid, Heat-Transfer, and HVAC Integration | Planned |
-| 03-93 | Other Disciplines Electrical, Instrumentation, and Control Integration | Planned |
-| 03-94 | Other Disciplines Safety, Economics, and Cross-Domain Engineering Decisions | Planned |
-| 03-95 | Other Disciplines Mixed FE Synthesis and Handbook Strategy | Planned |
+| 03-91 | Other Disciplines Mechanics and Materials Integration | Drafted |
+| 03-92 | Other Disciplines Thermal, Fluid, Heat-Transfer, and HVAC Integration | Drafted |
+| 03-93 | Other Disciplines Electrical, Instrumentation, and Control Integration | Drafted |
+| 03-94 | Other Disciplines Safety, Economics, and Cross-Domain Engineering Decisions | Drafted |
+| 03-95 | Other Disciplines Mixed FE Synthesis and Handbook Strategy | Drafted |
 
 ## Reserved Layer 3 chapter slots
 
@@ -225,4 +225,4 @@ No Layer 3 concepts, source chapters, or figures are registered merely by creati
 
 ## Layer 3 build status
 
-**Chemical Engineering track drafted through 03-13.** Its 91 concept atoms are registered in the ledger and its 91 figure specifications are registered in the figure manifest. Figure status remains independent of chapter drafting status. The next planned track is Civil Engineering at 03-14.
+**Chemical, Civil, Electrical & Computer, Environmental, Industrial & Systems, and Mechanical Engineering tracks drafted through 03-90.** The MEC track adds 105 concept atoms and 105 figure specifications (7 per chapter across 15 chapters). Figure status remains independent of chapter drafting status. The next planned track is Other Disciplines integration at 03-91.
