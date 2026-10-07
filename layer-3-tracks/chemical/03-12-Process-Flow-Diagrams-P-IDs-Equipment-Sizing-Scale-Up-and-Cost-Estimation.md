@@ -202,7 +202,11 @@ Primary source basis: **FE Chemical specification Area 14A–E; Chemical Enginee
 
 **Source boundary:** The specification explicitly requires PFDs, P&IDs, equipment selection, sizing/scale-up, cost estimation, optimization, sustainability, and design standards. Handbook pp. 262–264 directly support cost indices, Lang factors, cost-capacity scaling, and estimate classes; PFD/P&ID conventions and most sizing/scale-up workflow are not directly tabulated and are guide-developed.
 
-Where the FE specification requires a topic that is not directly developed in the Handbook, this chapter marks that material as **specification-required / guide-developed** rather than implying that the formula or workflow is printed in the Handbook.
+**External source support:** Felder, Rousseau, and Bullard, 4th ed. (2016), supports process flowcharts (pp. 98–102, 110). **ANSI/ISA 5.1-2024, *Instrumentation Symbols and Identification*** is the standards authority for P&ID instrument symbols and identification; Perry's 9th ed. also indexes P&IDs at 8-33. Perry's provides equipment-specific sizing/design and operation-specific scale-up guidance, supplemented by Felder's dimensional homogeneity/dimensionless-group treatment (pp. 19–21).
+
+**Classification:** Cost-estimation relations remain FE-Handbook-supported. PFD/P&ID conventions and most equipment-selection/scale-up workflow are **specification-required, externally supported**; simplified FE-study diagrams remain guide synthesis and are not represented as the complete ISA standard.
+
+Where the FE specification requires material not directly developed in the Handbook, this chapter now distinguishes **FE-Handbook-supported**, **specification-required / externally supported**, and **guide synthesis based on cited sources**.
 
 ---
 

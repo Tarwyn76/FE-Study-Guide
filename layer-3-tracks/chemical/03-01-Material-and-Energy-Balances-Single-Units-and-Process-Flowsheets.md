@@ -202,7 +202,11 @@ Primary source basis: **FE Chemical specification, Area 8; general Thermodynamic
 
 **Source boundary:** The FE Chemical specification explicitly requires steady-state mass and energy balances. The Handbook supplies the control-volume energy equation but does not provide a comparable general chemical-process material-balance tutorial; process-basis, degrees-of-freedom, and flowsheet workflows below are guide-developed to meet the specification.
 
-Where the FE specification requires a topic that is not directly developed in the Handbook, this chapter marks that material as **specification-required / guide-developed** rather than implying that the formula or workflow is printed in the Handbook.
+**External source support:** Felder, Rousseau, and Bullard, *Elementary Principles of Chemical Processes*, 4th ed. (2016), supports the process/basis and balance workflow used in §§1.1–1.5 and 1.7: processes pp. 45–68; flowcharts pp. 98–102, 110; degree-of-freedom analysis pp. 107–111; multiple-unit processes pp. 116–122; material balances pp. 91–173; energy balances pp. 360–379; and nonreactive process balances pp. 402–456.
+
+**Classification:** FE-Handbook equations remain identified as Handbook-supported. Process-balance workflow that is not directly developed in the FE Handbook is **specification-required, externally supported**, with any sequencing or instructional synthesis identified as guide synthesis.
+
+Where the FE specification requires material not directly developed in the Handbook, this chapter now distinguishes **FE-Handbook-supported**, **specification-required / externally supported**, and **guide synthesis based on cited sources**.
 
 ---
 

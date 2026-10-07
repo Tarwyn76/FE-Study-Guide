@@ -202,7 +202,11 @@ Primary source basis: **FE Chemical specification Areas 14D–E, 15A–C, and 16
 
 **Source boundary:** The FE Chemical specification explicitly requires optimization, sustainability, process control strategies/hardware, and process safety methods including HAZOP, LOPA, fault/event trees, relief, inerting, and runaway-reaction concepts. The Handbook's general sections support control and safety fundamentals but do not supply detailed formula sets for every named process-safety method; those portions are guide-developed.
 
-Where the FE specification requires a topic that is not directly developed in the Handbook, this chapter marks that material as **specification-required / guide-developed** rather than implying that the formula or workflow is printed in the Handbook.
+**External source support:** Perry's 9th ed. supports optimization (8-28 to 8-29), process control (feedback/feedforward/cascade and controller tuning throughout Chapter 8), control hardware, process-safety design, HAZOP (23-24), runaway reactions (23-20), pressure relief (23-57 to 23-62), and SIS material (23-72 onward). *Guidelines for Inherently Safer Chemical Processes: A Life Cycle Approach*, 3rd ed. (2019), ISBN 978-1-119-52922-4, is the dedicated source for inherently safer design. *Layer of Protection Analysis: Simplified Process Risk Assessment* (2001), ISBN 978-0-8169-0811-0, is the dedicated source for LOPA/IPL methodology. IEC 61511-1/-2/-3:2016 supplies the functional-safety/SIS framework; Part 4 is retained as the supplied explanatory/rationale reference. 
+
+**Classification:** FE-Handbook control and safety fundamentals remain identified as Handbook-supported. Optimization, inherently safer design, HAZOP/LOPA, and detailed protection-layer/SIS application are **specification-required, externally supported**. Fault-tree and event-tree methodology is additionally supported by Ferdous, R., Khan, F., Sadiq, R., Amyotte, P., & Veitch, B. (2011), *Fault and Event Tree Analyses for Process Systems Risk Analysis: Uncertainty Handling Formulations*, *Risk Analysis*, 31(1), 86–107, DOI 10.1111/j.1539-6924.2010.01475.x.
+
+Where the FE specification requires material not directly developed in the Handbook, this chapter now distinguishes **FE-Handbook-supported**, **specification-required / externally supported**, and **guide synthesis based on cited sources**.
 
 ---
 

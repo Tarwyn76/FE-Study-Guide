@@ -202,7 +202,11 @@ Primary source basis: **FE Chemical specification Area 10F; general Thermodynami
 
 **Source boundary:** Humidification and drying/evaporation are explicit specification topics. Psychrometric relations and wet-solid equilibrium curves are directly in the Handbook; detailed dryer and evaporator balance workflows are guide-developed from mass/energy conservation.
 
-Where the FE specification requires a topic that is not directly developed in the Handbook, this chapter marks that material as **specification-required / guide-developed** rather than implying that the formula or workflow is printed in the Handbook.
+**External source support:** Felder, Rousseau, and Bullard, 4th ed. (2016), supports humidification/dehumidification, gas-liquid systems, and psychrometrics (p. 284; pp. 284–290; pp. 432–440). Green and Southard, eds., *Perry's*, 9th ed. (2019), supports drying terminology/kinetics and drying-rate curves (12-20 to 12-25) and single-effect evaporator design/calculations (11-94; 11-96 to 11-97).
+
+**Classification:** Psychrometric relations and wet-solids equilibrium data remain FE-Handbook-supported. Moisture-basis, drying-rate, evaporator-balance, and process-selection workflows are **specification-required, externally supported** or guide synthesis based on those sources.
+
+Where the FE specification requires material not directly developed in the Handbook, this chapter now distinguishes **FE-Handbook-supported**, **specification-required / externally supported**, and **guide synthesis based on cited sources**.
 
 ---
 

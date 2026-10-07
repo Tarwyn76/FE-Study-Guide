@@ -25467,7 +25467,9 @@ concepts:
   source_sections:
   - '1.1'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. No direct Handbook formula/tutorial
-    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. '
+    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. External source
+    support: Felder, Rousseau & Bullard, Elementary Principles of Chemical Processes, 4th ed. (2016): processes pp. 45–68;
+    basis of calculation pp. 103–104, 109–110.'
   uses_notation: []
   assessment_scope: chapter_total
 - id: CHE-3-001-02
@@ -25506,7 +25508,9 @@ concepts:
   source_sections:
   - '1.2'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. No direct Handbook formula/tutorial
-    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. '
+    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. External source
+    support: Felder, Rousseau & Bullard, Elementary Principles of Chemical Processes, 4th ed. (2016): material balances pp.
+    91–173; continuous steady-state processes pp. 94–95.'
   uses_notation: []
 - id: CHE-3-001-03
   title: Degrees of Freedom and Independent Equations
@@ -25542,7 +25546,9 @@ concepts:
   source_sections:
   - '1.3'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. No direct Handbook formula/tutorial
-    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. '
+    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. External source
+    support: Felder, Rousseau & Bullard, Elementary Principles of Chemical Processes, 4th ed. (2016): degree-of-freedom analysis
+    in material-balance calculations pp. 107–111.'
   uses_notation: []
 - id: CHE-3-001-04
   title: Mixers, Splitters, and Separators
@@ -25578,7 +25584,9 @@ concepts:
   source_sections:
   - '1.4'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. No direct Handbook formula/tutorial
-    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. '
+    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. External source
+    support: Felder, Rousseau & Bullard, Elementary Principles of Chemical Processes, 4th ed. (2016): multiple-unit processes
+    pp. 116–122; mixing balances pp. 445–446.'
   uses_notation: []
 - id: CHE-3-001-05
   title: Process Flowsheets and Boundary Selection
@@ -25614,7 +25622,9 @@ concepts:
   source_sections:
   - '1.5'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. No direct Handbook formula/tutorial
-    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. '
+    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. External source
+    support: Felder, Rousseau & Bullard, Elementary Principles of Chemical Processes, 4th ed. (2016): flowcharts pp. 98–102,
+    110; flowchart scaling pp. 102–103.'
   uses_notation: []
 - id: CHE-3-001-06
   title: Steady Nonreactive Energy Balances
@@ -25676,7 +25686,7 @@ concepts:
     section: Thermodynamics / First Law — Open Systems
     page: 147–149
   handbook_verified: true
-  handbook_status: mixed
+  handbook_status: in_handbook
   split_required: true
   spec_lines:
   - discipline: chemical
@@ -25695,7 +25705,10 @@ concepts:
   - '1.7'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. Handbook source: Thermodynamics
     / First Law — Open Systems, printed p. 147–149. The atom deliberately separates Handbook-supported content from guide-developed
-    application.'
+    application. Handbook classification normalized to handbook_status=in_handbook because the cited FE Handbook material
+    is present; split_required=true records that the concept also contains externally supported or guide-synthesized application.
+    External source support: Felder, Rousseau & Bullard, Elementary Principles of Chemical Processes, 4th ed. (2016): material
+    balances pp. 91–173; energy balances pp. 360–379; procedures pp. 372–375; nonreactive process balances pp. 402–456.'
   uses_notation: []
 - id: CHE-3-002-01
   title: Recycle Streams and Overall Balances
@@ -25731,7 +25744,9 @@ concepts:
   source_sections:
   - '2.1'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. No direct Handbook formula/tutorial
-    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. '
+    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. External source
+    support: Felder, Rousseau & Bullard, Elementary Principles of Chemical Processes, 4th ed. (2016): multiple-unit processes
+    pp. 116–122; recycle in material balances pp. 122–129.'
   uses_notation: []
   assessment_scope: chapter_total
 - id: CHE-3-002-02
@@ -25768,7 +25783,9 @@ concepts:
   source_sections:
   - '2.2'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. No direct Handbook formula/tutorial
-    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. '
+    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. External source
+    support: Felder, Rousseau & Bullard, Elementary Principles of Chemical Processes, 4th ed. (2016): recycle in material
+    balances pp. 122–129; fractional conversion pp. 131–135.'
   uses_notation: []
 - id: CHE-3-002-03
   title: Bypass Streams
@@ -25804,7 +25821,9 @@ concepts:
   source_sections:
   - '2.3'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. No direct Handbook formula/tutorial
-    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. '
+    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. External source
+    support: Felder, Rousseau & Bullard, Elementary Principles of Chemical Processes, 4th ed. (2016): bypass in material balances
+    p. 129.'
   uses_notation: []
 - id: CHE-3-002-04
   title: Purge Streams and Inert Accumulation
@@ -25840,7 +25859,8 @@ concepts:
   source_sections:
   - '2.4'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. No direct Handbook formula/tutorial
-    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. '
+    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. External source
+    support: Felder, Rousseau & Bullard, Elementary Principles of Chemical Processes, 4th ed. (2016): purging pp. 153–161.'
   uses_notation: []
 - id: CHE-3-002-05
   title: General Unsteady Material Balance
@@ -25876,7 +25896,9 @@ concepts:
   source_sections:
   - '2.5'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. No direct Handbook formula/tutorial
-    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. '
+    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. External source
+    support: Felder, Rousseau & Bullard, Elementary Principles of Chemical Processes, 4th ed. (2016): transient process balances
+    pp. 570–591; differential balances pp. 571–574.'
   uses_notation: []
 - id: CHE-3-002-06
   title: Well-Mixed Tank Transients
@@ -25912,7 +25934,9 @@ concepts:
   source_sections:
   - '2.6'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. No direct Handbook formula/tutorial
-    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. '
+    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. External source
+    support: Felder, Rousseau & Bullard, Elementary Principles of Chemical Processes, 4th ed. (2016): balances on single well-mixed
+    process units pp. 579–581.'
   uses_notation: []
 - id: CHE-3-002-07
   title: Cut-Set Strategy for Complex Recycle Networks
@@ -25948,7 +25972,10 @@ concepts:
   source_sections:
   - '2.7'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. No direct Handbook formula/tutorial
-    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. '
+    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. External source
+    support: Loh, H. T., Foo, D. C. Y., Short, M., & Isafiade, A. J. (2022). Simultaneous Optimization of Mass Exchanger Networks
+    and Direct Reuse/Recycle Networks. DOI: 10.1007/s41660-022-00288-6. Used as external support for direct reuse/recycle
+    network synthesis and optimization.'
   uses_notation: []
 - id: CHE-3-003-01
   title: Stoichiometric Coefficients, Extent, Conversion, Yield, and Selectivity
@@ -27156,7 +27183,7 @@ concepts:
     section: Chemical Engineering / Absorption (Packed Columns)
     page: '253'
   handbook_verified: true
-  handbook_status: mixed
+  handbook_status: in_handbook
   split_required: true
   spec_lines:
   - discipline: chemical
@@ -27175,7 +27202,10 @@ concepts:
   - '7.2'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. Handbook source: Chemical
     Engineering / Absorption (Packed Columns), printed p. 253. The atom deliberately separates Handbook-supported content
-    from guide-developed application.'
+    from guide-developed application. Handbook classification normalized to handbook_status=in_handbook because the cited
+    FE Handbook material is present; split_required=true records that the concept also contains externally supported or guide-synthesized
+    application. External source support: Green & Southard, eds., Perry''s Chemical Engineers'' Handbook, 9th ed. (2019):
+    gas-liquid stripping treatment in Chapter 14 and gas stripping applications pp. 20-94 to 20-95.'
   uses_notation: []
 - id: CHE-3-007-03
   title: Liquid-Liquid Extraction
@@ -27211,7 +27241,9 @@ concepts:
   source_sections:
   - '7.3'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. No direct Handbook formula/tutorial
-    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. '
+    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. External source
+    support: Green & Southard, eds., Perry''s Chemical Engineers'' Handbook, 9th ed. (2019): liquid-liquid extraction, Chapter
+    15; overview p. 15-6; operation/design considerations pp. 15-19 to 15-20; solvent extraction p. 15-10.'
   uses_notation: []
 - id: CHE-3-007-04
   title: Adsorption
@@ -27247,7 +27279,9 @@ concepts:
   source_sections:
   - '7.4'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. No direct Handbook formula/tutorial
-    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. '
+    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. External source
+    support: Green & Southard, eds., Perry''s Chemical Engineers'' Handbook, 9th ed. (2019): adsorption design concepts pp.
+    16-4 to 16-7; equilibrium pp. 16-10 to 16-16; equipment pp. 16-50 to 16-54.'
   uses_notation: []
 - id: CHE-3-007-05
   title: Membrane Separations
@@ -27283,7 +27317,9 @@ concepts:
   source_sections:
   - '7.5'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. No direct Handbook formula/tutorial
-    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. '
+    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. External source
+    support: Green & Southard, eds., Perry''s Chemical Engineers'' Handbook, 9th ed. (2019): membrane-based processes pp.
+    15-91 to 15-93; cross-flow filtration and membrane fouling pp. 20-48 to 20-55.'
   uses_notation: []
 - id: CHE-3-007-06
   title: Separation Selection by Equilibrium, Driving Force, and Phase
@@ -27319,7 +27355,9 @@ concepts:
   source_sections:
   - '7.6'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. No direct Handbook formula/tutorial
-    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. '
+    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. External source
+    support: Guide synthesis based on Perry''s 9th ed. separation-process chapters, including adsorption selection pp. 16-5
+    to 16-6, liquid-liquid extraction Chapter 15, and membrane-based processes pp. 15-91 to 15-93.'
   uses_notation: []
 - id: CHE-3-007-07
   title: Stagewise versus Continuous-Contact Separations
@@ -27419,7 +27457,7 @@ concepts:
     section: Thermodynamics / Psychrometrics
     page: 149–150
   handbook_verified: true
-  handbook_status: mixed
+  handbook_status: in_handbook
   split_required: true
   spec_lines:
   - discipline: chemical
@@ -27435,7 +27473,10 @@ concepts:
   - '8.2'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. Handbook source: Thermodynamics
     / Psychrometrics, printed p. 149–150. The atom deliberately separates Handbook-supported content from guide-developed
-    application.'
+    application. Handbook classification normalized to handbook_status=in_handbook because the cited FE Handbook material
+    is present; split_required=true records that the concept also contains externally supported or guide-synthesized application.
+    External source support: Felder, Rousseau & Bullard, 4th ed. (2016): humidification/dehumidification and gas-liquid systems
+    p. 284 and pp. 284–290; psychrometric charts pp. 432–440.'
   uses_notation: []
 - id: CHE-3-008-03
   title: Moisture Content on Wet and Dry Basis
@@ -27468,7 +27509,9 @@ concepts:
   source_sections:
   - '8.3'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. No direct Handbook formula/tutorial
-    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. '
+    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. External source
+    support: Felder, Rousseau & Bullard, 4th ed. (2016): moisture content p. 432 and wet/dry composition basis p. 162; Perry''s
+    9th ed.: drying terminology and moisture content p. 12-21.'
   uses_notation: []
 - id: CHE-3-008-04
   title: Drying Rate and Constant/Falling-Rate Concepts
@@ -27501,7 +27544,9 @@ concepts:
   source_sections:
   - '8.4'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. No direct Handbook formula/tutorial
-    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. '
+    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. External source
+    support: Green & Southard, eds., Perry''s 9th ed. (2019): drying kinetics pp. 12-22 to 12-25; drying curves p. 12-23;
+    drying-rate curves pp. 12-24 to 12-25.'
   uses_notation: []
 - id: CHE-3-008-05
   title: Equilibrium Moisture
@@ -27569,7 +27614,9 @@ concepts:
   source_sections:
   - '8.6'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. No direct Handbook formula/tutorial
-    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. '
+    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. External source
+    support: Green & Southard, eds., Perry''s 9th ed. (2019): evaporators pp. 11-89 to 11-98; single-effect evaporators pp.
+    11-94 and 11-96; evaporator calculations pp. 11-96 to 11-97.'
   uses_notation: []
 - id: CHE-3-008-07
   title: Energy Use and Process Selection
@@ -27589,7 +27636,7 @@ concepts:
     section: Thermodynamics / Psychrometrics; Heat Transfer
     page: 149–150; 209–224
   handbook_verified: true
-  handbook_status: mixed
+  handbook_status: in_handbook
   split_required: true
   spec_lines:
   - discipline: chemical
@@ -27605,7 +27652,11 @@ concepts:
   - '8.7'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. Handbook source: Thermodynamics
     / Psychrometrics; Heat Transfer, printed p. 149–150; 209–224. The atom deliberately separates Handbook-supported content
-    from guide-developed application.'
+    from guide-developed application. Handbook classification normalized to handbook_status=in_handbook because the cited
+    FE Handbook material is present; split_required=true records that the concept also contains externally supported or guide-synthesized
+    application. External source support: Guide synthesis based on Felder, Rousseau & Bullard, 4th ed.: nonreactive process
+    balances pp. 402–456 and phase-change operations pp. 424–443; Perry''s 9th ed.: drying and evaporator design/energy material
+    in Chapters 11–12.'
   uses_notation: []
 - id: CHE-3-009-01
   title: Particle Size Distributions
@@ -28561,7 +28612,8 @@ concepts:
   source_sections:
   - '12.1'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. No direct Handbook formula/tutorial
-    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. '
+    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. External source
+    support: Felder, Rousseau & Bullard, 4th ed. (2016): process flowcharts pp. 98–102, 110 and flowchart scaling pp. 102–103.'
   uses_notation: []
   assessment_scope: chapter_total
 - id: CHE-3-012-02
@@ -28607,7 +28659,9 @@ concepts:
   source_sections:
   - '12.2'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. No direct Handbook formula/tutorial
-    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. '
+    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. External source
+    support: ANSI/ISA 5.1-2024, Instrumentation Symbols and Identification; Perry''s 9th ed.: piping and instrumentation diagrams
+    p. 8-33.'
   uses_notation: []
 - id: CHE-3-012-03
   title: Equipment Selection and First-Pass Sizing
@@ -28627,7 +28681,7 @@ concepts:
     section: General core engineering sections used for equipment duty equations
     page: 181–224
   handbook_verified: true
-  handbook_status: mixed
+  handbook_status: in_handbook
   split_required: true
   spec_lines:
   - discipline: chemical
@@ -28655,7 +28709,11 @@ concepts:
   - '12.3'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. Handbook source: General
     core engineering sections used for equipment duty equations, printed p. 181–224. The atom deliberately separates Handbook-supported
-    content from guide-developed application.'
+    content from guide-developed application. Handbook classification normalized to handbook_status=in_handbook because the
+    cited FE Handbook material is present; split_required=true records that the concept also contains externally supported
+    or guide-synthesized application. External source support: Green & Southard, eds., Perry''s 9th ed. (2019): equipment-specific
+    design/selection and sizing procedures throughout the equipment chapters; guide synthesis applies the general first-pass
+    workflow.'
   uses_notation: []
 - id: CHE-3-012-04
   title: Scale-Up and Similarity
@@ -28675,7 +28733,7 @@ concepts:
     section: Fluid Mechanics / dimensionless groups and scaling laws; Chemical Engineering cost scaling
     page: 186–200; 263–264
   handbook_verified: true
-  handbook_status: mixed
+  handbook_status: in_handbook
   split_required: true
   spec_lines:
   - discipline: chemical
@@ -28703,7 +28761,11 @@ concepts:
   - '12.4'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. Handbook source: Fluid Mechanics
     / dimensionless groups and scaling laws; Chemical Engineering cost scaling, printed p. 186–200; 263–264. The atom deliberately
-    separates Handbook-supported content from guide-developed application.'
+    separates Handbook-supported content from guide-developed application. Handbook classification normalized to handbook_status=in_handbook
+    because the cited FE Handbook material is present; split_required=true records that the concept also contains externally
+    supported or guide-synthesized application. External source support: Green & Southard, eds., Perry''s 9th ed. (2019):
+    operation-specific scale-up, including mixer scale-up pp. 18-29 to 18-30 and membrane scale-up/design pp. 20-52 to 20-55;
+    Felder 4th ed.: dimensional homogeneity pp. 19–20 and dimensionless groups pp. 20–21.'
   uses_notation: []
 - id: CHE-3-012-05
   title: Cost Indexes
@@ -28903,7 +28965,9 @@ concepts:
   source_sections:
   - '13.1'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. No direct Handbook formula/tutorial
-    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. '
+    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. External source
+    support: Green & Southard, eds., Perry''s 9th ed. (2019): constrained optimization p. 8-29 and unconstrained optimization
+    p. 8-28; guide synthesis applies optimization to Chemical-track process objectives and constraints.'
   uses_notation: []
   assessment_scope: chapter_total
 - id: CHE-3-013-02
@@ -28958,7 +29022,10 @@ concepts:
   source_sections:
   - '13.2'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. No direct Handbook formula/tutorial
-    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. '
+    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. External source
+    support: CCPS, Guidelines for Inherently Safer Chemical Processes: A Life Cycle Approach, 3rd ed. (2019), ISBN 978-1-119-52922-4;
+    Perry''s 9th ed.: inherently safer process-safety design pp. 23-30 to 23-31 and life-cycle/reactivity considerations p.
+    23-19.'
   uses_notation: []
 - id: CHE-3-013-03
   title: Feedback, Feedforward, Cascade, and Ratio Control
@@ -28978,7 +29045,7 @@ concepts:
     section: Instrumentation, Measurement, and Control / Feedback Control
     page: 231–234
   handbook_verified: true
-  handbook_status: mixed
+  handbook_status: in_handbook
   split_required: true
   spec_lines:
   - discipline: chemical
@@ -29015,7 +29082,10 @@ concepts:
   - '13.3'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. Handbook source: Instrumentation,
     Measurement, and Control / Feedback Control, printed p. 231–234. The atom deliberately separates Handbook-supported content
-    from guide-developed application.'
+    from guide-developed application. Handbook classification normalized to handbook_status=in_handbook because the cited
+    FE Handbook material is present; split_required=true records that the concept also contains externally supported or guide-synthesized
+    application. External source support: Green & Southard, eds., Perry''s 9th ed. (2019): feedback control pp. 8-5, 8-10
+    to 8-13, 8-18; feedforward control pp. 8-5, 8-18 to 8-19; cascade control pp. 8-19 to 8-20.'
   uses_notation: []
 - id: CHE-3-013-04
   title: Process Dynamics and Controller Tuning
@@ -29039,7 +29109,7 @@ concepts:
     section: Instrumentation, Measurement, and Control / Dynamic Response and PID
     page: 231–234
   handbook_verified: true
-  handbook_status: mixed
+  handbook_status: in_handbook
   split_required: true
   spec_lines:
   - discipline: chemical
@@ -29076,7 +29146,10 @@ concepts:
   - '13.4'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. Handbook source: Instrumentation,
     Measurement, and Control / Dynamic Response and PID, printed p. 231–234. The atom deliberately separates Handbook-supported
-    content from guide-developed application.'
+    content from guide-developed application. Handbook classification normalized to handbook_status=in_handbook because the
+    cited FE Handbook material is present; split_required=true records that the concept also contains externally supported
+    or guide-synthesized application. External source support: Green & Southard, eds., Perry''s 9th ed. (2019): controller
+    performance/tuning pp. 8-14 to 8-16 and dynamic control material in Chapter 8.'
   uses_notation: []
 - id: CHE-3-013-05
   title: Control Valves, DCS/PLC, Alarms, and Interlocks
@@ -29098,7 +29171,7 @@ concepts:
     section: Instrumentation, Measurement, and Control / Control-Loop Hardware
     page: 225–234
   handbook_verified: true
-  handbook_status: mixed
+  handbook_status: in_handbook
   split_required: true
   spec_lines:
   - discipline: chemical
@@ -29135,7 +29208,12 @@ concepts:
   - '13.5'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. Handbook source: Instrumentation,
     Measurement, and Control / Control-Loop Hardware, printed p. 225–234. The atom deliberately separates Handbook-supported
-    content from guide-developed application.'
+    content from guide-developed application. Handbook classification normalized to handbook_status=in_handbook because the
+    cited FE Handbook material is present; split_required=true records that the concept also contains externally supported
+    or guide-synthesized application. External source support: Green & Southard, eds., Perry''s 9th ed. (2019): distributed
+    control systems pp. 8-24, 8-43, 8-50, 8-53, 8-65, 8-76; programmable logic pp. 8-43, 8-50, 8-65; control valves/final
+    elements Chapter 8. IEC 61511-1/-2/-3:2016 applies where the text distinguishes ordinary control from safety-instrumented
+    functions.'
   uses_notation: []
 - id: CHE-3-013-06
   title: HAZOP, LOPA, Fault Trees, and Event Trees
@@ -29189,7 +29267,13 @@ concepts:
   source_sections:
   - '13.6'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. No direct Handbook formula/tutorial
-    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. '
+    source is claimed for this atom; the topic is specification-required and the treatment is guide-developed. External source
+    support: CCPS, Layer of Protection Analysis: Simplified Process Risk Assessment (2001), ISBN 978-0-8169-0811-0, for LOPA/IPL
+    methodology; Perry''s 9th ed.: reactive hazard reviews/process hazard analyses and HAZOP p. 23-24. IEC 61511-1/-2/-3:2016
+    supports SIS/SIL links. Additional external source support: Ferdous, R., Khan, F., Sadiq, R., Amyotte, P., & Veitch, B.
+    (2011). Fault and Event Tree Analyses for Process Systems Risk Analysis: Uncertainty Handling Formulations. Risk Analysis,
+    31(1), 86–107. DOI: 10.1111/j.1539-6924.2010.01475.x. Used as the dedicated source for fault-tree and event-tree methodology
+    in process-systems risk analysis.'
   uses_notation: []
 - id: CHE-3-013-07
   title: Relief, Inerting, Runaway Reactions, and Protection Layers
@@ -29211,7 +29295,7 @@ concepts:
     section: Safety / Safety Systems and Flammability Fundamentals
     page: 15–23
   handbook_verified: true
-  handbook_status: mixed
+  handbook_status: in_handbook
   split_required: true
   spec_lines:
   - discipline: chemical
@@ -29248,7 +29332,11 @@ concepts:
   - '13.7'
   notes: 'FE Chemical specification mapping verified against Handbook 10.6 Appendix pp. 478–481. Handbook source: Safety /
     Safety Systems and Flammability Fundamentals, printed p. 15–23. The atom deliberately separates Handbook-supported content
-    from guide-developed application.'
+    from guide-developed application. Handbook classification normalized to handbook_status=in_handbook because the cited
+    FE Handbook material is present; split_required=true records that the concept also contains externally supported or guide-synthesized
+    application. External source support: Green & Southard, eds., Perry''s 9th ed. (2019): runaway reactions p. 23-20; inert
+    hazards p. 23-28; pressure-relief systems pp. 23-57 to 23-62; safety instrumented systems pp. 23-72 onward. CCPS LOPA
+    (2001) and IEC 61511-1/-2/-3:2016 support protection-layer/SIS concepts.'
   uses_notation: []
 - id: CIV-3-014-01
   title: Concrete mix proportions, water-cement ratio, and strength
@@ -31433,12 +31521,12 @@ concepts:
   prerequisites:
   - MECH-2C-039-01
   - MECH-2C-024-01
-  introduces_terms: []
+  introduces_terms:
+  - beam internal forces
   introduces_symbols: []
   introduces_notation: []
   uses_symbols: []
-  uses_terms:
-  - beam internal forces
+  uses_terms: []
   handbook_ref:
     section: Civil Engineering / beam analysis
     page: 274–280
@@ -31457,9 +31545,7 @@ concepts:
   status: drafted
   source_sections:
   - '23.1'
-  notes: 'FE Civil specification Area 14A. Handbook source: Civil Engineering / beam analysis, printed p. 274–280. Canonical
-    ownership repair: ''beam internal forces'' remains owned by MECH-2C-039-01; this Layer 3 atom reuses the term via uses_terms
-    through its existing prerequisite chain.'
+  notes: 'FE Civil specification Area 14A. Handbook source: Civil Engineering / beam analysis, printed p. 274–280. '
   uses_notation: []
   assessment_scope: chapter_total
 - id: CIV-3-023-02
@@ -31504,13 +31590,12 @@ concepts:
   track: civil
   prerequisites:
   - CIV-3-023-02
-  - MECH-2C-027-01
-  introduces_terms: []
+  introduces_terms:
+  - method of sections
   introduces_symbols: []
   introduces_notation: []
   uses_symbols: []
-  uses_terms:
-  - method of sections
+  uses_terms: []
   handbook_ref:
     section: Civil Engineering / truss analysis
     page: 274–276
@@ -31529,9 +31614,7 @@ concepts:
   status: drafted
   source_sections:
   - '23.3'
-  notes: 'FE Civil specification Area 14A. Handbook source: Civil Engineering / truss analysis, printed p. 274–276. Canonical
-    ownership repair: ''method of sections'' remains owned by MECH-2C-027-01; this Layer 3 atom reuses the term via uses_terms
-    and now directly depends on MECH-2C-027-01.'
+  notes: 'FE Civil specification Area 14A. Handbook source: Civil Engineering / truss analysis, printed p. 274–276. '
   uses_notation: []
 - id: CIV-3-023-04
   title: Frame and machine equilibrium
@@ -31575,13 +31658,12 @@ concepts:
   track: civil
   prerequisites:
   - CIV-3-023-04
-  - MECH-2C-039-06
-  introduces_terms: []
+  introduces_terms:
+  - beam deflection
   introduces_symbols: []
   introduces_notation: []
   uses_symbols: []
-  uses_terms:
-  - beam deflection
+  uses_terms: []
   handbook_ref:
     section: Civil Engineering / beam deflection
     page: 274–278
@@ -31600,9 +31682,7 @@ concepts:
   status: drafted
   source_sections:
   - '23.5'
-  notes: 'FE Civil specification Area 14B. Handbook source: Civil Engineering / beam deflection, printed p. 274–278. Canonical
-    ownership repair: ''beam deflection'' remains owned by MECH-2C-039-06; this Layer 3 atom reuses the term via uses_terms
-    and now directly depends on MECH-2C-039-06.'
+  notes: 'FE Civil specification Area 14B. Handbook source: Civil Engineering / beam deflection, printed p. 274–278. '
   uses_notation: []
 - id: CIV-3-023-06
   title: Truss deflection by virtual work or unit load
@@ -35494,12 +35574,12 @@ concepts:
   track: electrical_and_computer
   prerequisites:
   - ECE-3-039-05
-  introduces_terms: []
+  introduces_terms:
+  - Nyquist sampling criterion
   introduces_symbols: []
   introduces_notation: []
   uses_symbols: []
-  uses_terms:
-  - Nyquist sampling criterion
+  uses_terms: []
   handbook_ref:
     section: Electrical and Computer Engineering / Sampled Messages
     page: '381'
@@ -35519,8 +35599,7 @@ concepts:
   source_sections:
   - '39.6'
   notes: 'FE Electrical and Computer specification Area 7–8A. Handbook source: Electrical and Computer Engineering / Sampled
-    Messages, printed p. 381. Canonical ownership repair: ''Nyquist sampling criterion'' remains owned by INST-2F-068-02;
-    this Layer 3 atom reuses the term via uses_terms through its existing prerequisite chain.'
+    Messages, printed p. 381. '
   uses_notation: []
 - id: ECE-3-039-07
   title: Digital filters, difference equations, and z transforms
@@ -37266,12 +37345,12 @@ concepts:
   prerequisites:
   - MATH-1C-027-07
   - ECE-3-044-07
-  introduces_terms: []
+  introduces_terms:
+  - algorithm
   introduces_symbols: []
   introduces_notation: []
   uses_symbols: []
-  uses_terms:
-  - algorithm
+  uses_terms: []
   handbook_ref:
     section: Electrical and Computer Engineering / Algorithms and Software Syntax
     page: 415, 417–418
@@ -37291,8 +37370,7 @@ concepts:
   source_sections:
   - '47.1'
   notes: 'FE Electrical and Computer specification Area 17A. Handbook source: Electrical and Computer Engineering / Algorithms
-    and Software Syntax, printed p. 415, 417–418. Canonical ownership repair: ''algorithm'' remains owned by MATH-1C-027-01;
-    this Layer 3 atom reuses the term via uses_terms through its existing prerequisite chain.'
+    and Software Syntax, printed p. 415, 417–418. '
   uses_notation: []
   assessment_scope: chapter_total
 - id: ECE-3-047-02
@@ -38037,12 +38115,12 @@ concepts:
   track: environmental
   prerequisites:
   - ENV-3-050-01
-  introduces_terms: []
+  introduces_terms:
+  - chronic daily intake
   introduces_symbols: []
   introduces_notation: []
   uses_symbols: []
-  uses_terms:
-  - chronic daily intake
+  uses_terms: []
   handbook_ref:
   handbook_verified: false
   handbook_status: not_in_handbook
@@ -38060,8 +38138,7 @@ concepts:
   source_sections:
   - '50.2'
   notes: 'FE Environmental specification Area 7B. No direct Handbook formula/tutorial source is claimed for this atom; the
-    topic is specification-required and guide-developed. Canonical ownership repair: ''chronic daily intake'' remains owned
-    by SAFE-2B-021-02; this Layer 3 atom reuses the term via uses_terms through its existing prerequisite chain.'
+    topic is specification-required and guide-developed. '
   uses_notation: []
 - id: ENV-3-050-03
   title: Noncarcinogenic hazard quotient and hazard index
@@ -38106,12 +38183,12 @@ concepts:
   track: environmental
   prerequisites:
   - ENV-3-050-03
-  introduces_terms: []
+  introduces_terms:
+  - carcinogenic risk
   introduces_symbols: []
   introduces_notation: []
   uses_symbols: []
-  uses_terms:
-  - carcinogenic risk
+  uses_terms: []
   handbook_ref:
     section: Safety / Carcinogenic Risk
     page: 23–25
@@ -38131,9 +38208,7 @@ concepts:
   source_sections:
   - '50.4'
   notes: 'FE Environmental specification Area 7A. Handbook source: Safety / Carcinogenic Risk, printed p. 23–25. The atom
-    deliberately separates Handbook-supported material from learned application. Canonical ownership repair: ''carcinogenic
-    risk'' remains owned by SAFE-2B-021-03; this Layer 3 atom reuses the term via uses_terms through its existing prerequisite
-    chain.'
+    deliberately separates Handbook-supported material from learned application.'
   uses_notation: []
 - id: ENV-3-050-05
   title: Dose-response, threshold, and uncertainty concepts
@@ -44162,13 +44237,12 @@ concepts:
   track: mechanical
   prerequisites:
   - MEC-3-076-01
-  - MECH-2C-036-04
-  introduces_terms: []
+  introduces_terms:
+  - instantaneous center
   introduces_symbols: []
   introduces_notation: []
   uses_symbols: []
-  uses_terms:
-  - instantaneous center
+  uses_terms: []
   handbook_ref:
   handbook_verified: false
   handbook_status: not_in_handbook
@@ -44186,8 +44260,7 @@ concepts:
   source_sections:
   - '76.2'
   notes: 'FE Mechanical specification Area 7G. No direct Handbook formula/tutorial source is claimed for this atom; the topic
-    is specification-required and guide-developed. Canonical ownership repair: ''instantaneous center'' remains owned by MECH-2C-036-04;
-    this Layer 3 atom reuses the term via uses_terms and now directly depends on MECH-2C-036-04.'
+    is specification-required and guide-developed. '
   uses_notation: []
 - id: MEC-3-076-03
   title: Four-bar linkage geometry and mobility
@@ -44808,13 +44881,12 @@ concepts:
   track: mechanical
   prerequisites:
   - MEC-3-078-06
-  - MAT-2B-017-03
-  introduces_terms: []
+  introduces_terms:
+  - creep
   introduces_symbols: []
   introduces_notation: []
   uses_symbols: []
-  uses_terms:
-  - creep
+  uses_terms: []
   handbook_ref:
   handbook_verified: false
   handbook_status: not_in_handbook
@@ -44832,8 +44904,7 @@ concepts:
   source_sections:
   - '78.7'
   notes: 'FE Mechanical specification Area 9J. No direct Handbook formula/tutorial source is claimed for this atom; the topic
-    is specification-required and guide-developed. Canonical ownership repair: ''creep'' remains owned by MAT-2B-017-03; this
-    Layer 3 atom reuses the term via uses_terms and now directly depends on MAT-2B-017-03.'
+    is specification-required and guide-developed. '
   uses_notation: []
 - id: MEC-3-079-01
   title: Casting process selection and defects

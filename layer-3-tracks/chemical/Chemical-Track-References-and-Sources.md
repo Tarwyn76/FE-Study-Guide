@@ -38,6 +38,20 @@ ISBN: **9780470616291**
 
 Page references below use the printed-page numbers shown in the uploaded index.
 
+### Loh et al. — Direct Reuse/Recycle Network Optimization
+
+Loh, H. T., Foo, D. C. Y., Short, M., & Isafiade, A. J. (2022). *Simultaneous Optimization of Mass Exchanger Networks and Direct Reuse/Recycle Networks*. DOI: **10.1007/s41660-022-00288-6**.
+
+Used in this project to support direct reuse/recycle network synthesis and optimization associated with `CHE-3-002-07`.
+
+**Bibliographic note:** The DOI and paper title are retained as the authoritative identifiers. The journal/page metadata supplied for this reference should be checked against the publisher record before final publication.
+
+### Ferdous et al. — Fault and Event Tree Analysis
+
+Ferdous, R., Khan, F., Sadiq, R., Amyotte, P., & Veitch, B. (2011). *Fault and Event Tree Analyses for Process Systems Risk Analysis: Uncertainty Handling Formulations*. *Risk Analysis*, **31**(1), 86–107. DOI: **10.1111/j.1539-6924.2010.01475.x**.
+
+Used in this project as the dedicated external source for fault-tree and event-tree methodology in process-systems risk analysis.
+
 ### Layer of Protection Analysis: Simplified Process Risk Assessment
 
 *Layer of Protection Analysis: Simplified Process Risk Assessment*. Published October 2001.
@@ -67,7 +81,7 @@ The following IEC 61511 references are used for safety-instrumented-system conce
 - **IEC 61511-1:2016** — *Functional safety - Safety instrumented systems for the process industry sector - Part 1: Framework, definitions, system, hardware and application programming requirements*.
 - **IEC 61511-2:2016** — *Functional safety - Safety instrumented systems for the process industry sector - Part 2: Guidelines for the application of IEC 61511-1:2016*.
 - **IEC 61511-3:2016** — *Functional safety - Safety instrumented systems for the process industry sector - Part 3: Guidance for the determination of the required safety integrity levels*.
-- **IEC 61511-3:2020** — *Functional safety - Safety instrumented systems for the process industry sector - Part 4: Explanation and rationale for changes in IEC 61511-1 from Edition 1 to Edition 2*.
+- **IEC 61511 Part 4** — *Functional safety - Safety instrumented systems for the process industry sector - Part 4: Explanation and rationale for changes in IEC 61511-1 from Edition 1 to Edition 2*.
 
 **Metadata note:** The project information supplied for Part 4 did not include its publication year or document identifier beyond the Part 4 title; those fields are intentionally not inferred here.
 
@@ -375,7 +389,7 @@ Perry's directly supports the practical controller-tuning and dynamic-response g
   - Application guidance for IEC 61511-1.
 - IEC 61511-3:2016:
   - Guidance for determining required safety integrity levels.
-- IEC 61511-4:2020:
+- IEC 61511 Part 4:
   - Explanatory/rationale material concerning the Edition 1-to-Edition 2 changes in IEC 61511-1.
 
 Perry's remains the principal explanatory process-control source; IEC 61511 is the standards authority when the discussion crosses from ordinary control hardware into safety-instrumented functions.
@@ -421,6 +435,26 @@ Perry's is the primary broad process-safety reference; the LOPA publication and 
 ---
 
 # Additional Chemical Concepts Covered by the New Sources
+
+## CHE-3-002-07 — Cut-Set Strategy for Complex Recycle Networks
+
+**Chapter:** 03-02, §2.7  
+**Concept:** Cut-Set Strategy for Complex Recycle Networks  
+**Ledger status:** `not_in_handbook`
+
+**Primary external source**
+- Loh, H. T., Foo, D. C. Y., Short, M., & Isafiade, A. J. (2022). *Simultaneous Optimization of Mass Exchanger Networks and Direct Reuse/Recycle Networks*. DOI: 10.1007/s41660-022-00288-6.
+
+**Supporting source**
+- Felder, Rousseau, and Bullard, *Elementary Principles of Chemical Processes*, 4th ed. (2016): multiple-unit processes pp. 116–122, recycle pp. 122–129, and transient process balances pp. 570–591.
+
+**Source boundary**
+- Loh et al. supports network-level direct reuse/recycle synthesis and optimization.
+- The chapter's simplified FE-study “cut-set” workflow remains **guide synthesis based on** Loh et al. and the Felder balance framework.
+
+---
+
+
 
 ## CHE-3-012-02 — Piping and Instrumentation Diagrams
 
@@ -481,7 +515,7 @@ Perry's is the primary broad process-safety reference; the LOPA publication and 
 - IEC 61511-1:2016.
 - IEC 61511-2:2016.
 - IEC 61511-3:2016.
-- IEC 61511-4:2020, explanatory/rationale document for Edition 1-to-Edition 2 changes.
+- IEC 61511 Part 4, explanatory/rationale document for Edition 1-to-Edition 2 changes.
 
 **Supported content**
 - LOPA methodology and independent protection layers.
@@ -491,6 +525,12 @@ Perry's is the primary broad process-safety reference; the LOPA publication and 
 
 **Remaining source boundary**
 - The supplied references do not, from the metadata alone, establish detailed fault-tree or event-tree methodology. Perry's may support these topics, but the actual referenced pages should be verified before treating it as the direct source. If the chapter develops quantitative fault-tree/event-tree analysis beyond a conceptual FE-level description, a dedicated risk-analysis reference may still be warranted.
+
+
+**Dedicated fault/event-tree source**
+- Ferdous, R., Khan, F., Sadiq, R., Amyotte, P., & Veitch, B. (2011). *Fault and Event Tree Analyses for Process Systems Risk Analysis: Uncertainty Handling Formulations*. *Risk Analysis*, 31(1), 86–107. DOI: 10.1111/j.1539-6924.2010.01475.x.
+- This reference supports use of FTA and ETA within quantitative process-systems risk analysis, including uncertainty and event-dependence considerations.
+
 
 ---
 
@@ -504,7 +544,7 @@ Perry's is the primary broad process-safety reference; the LOPA publication and 
 - IEC 61511-1:2016 for the process-industry SIS framework and system requirements.
 - IEC 61511-2:2016 for application guidance.
 - IEC 61511-3:2016 for SIL determination guidance.
-- IEC 61511-4:2020 for explanatory/rationale context regarding the Edition 2 changes.
+- IEC 61511 Part 4 for explanatory/rationale context regarding the Edition 2 changes.
 
 **Use in the guide**
 - These standards are cited only when the chapter distinguishes a normal control function from a safety instrumented function or discusses SIL/SIS concepts.
@@ -531,9 +571,52 @@ Perry's is the primary broad process-safety reference; the LOPA publication and 
 
 ---
 
+# Complete Chemical External-Source Register
+
+This register covers all Chemical atoms requiring external-source provenance: the 24 atoms marked `not_in_handbook` and the 10 atoms marked `split_required: true`.
+
+**Status semantics:** `not_in_handbook` means the FE Reference Handbook does not directly develop the concept; it does **not** mean the concept is unsupported. `split_required: true` means FE-Handbook-supported material and externally supported/guide-synthesized application coexist in the same atom.
+
+| Concept ID | Chapter/Section | FE Handbook status | External source basis |
+|---|---|---|---|
+| CHE-3-001-01 — Process Streams, Basis, and Composition | 03-01 §1.1 | `not_in_handbook` | Felder, Rousseau & Bullard, Elementary Principles of Chemical Processes, 4th ed. (2016): processes pp. 45–68; basis of calculation pp. 103–104, 109–110. |
+| CHE-3-001-02 — Steady-State Total and Component Material Balances | 03-01 §1.2 | `not_in_handbook` | Felder, Rousseau & Bullard, Elementary Principles of Chemical Processes, 4th ed. (2016): material balances pp. 91–173; continuous steady-state processes pp. 94–95. |
+| CHE-3-001-03 — Degrees of Freedom and Independent Equations | 03-01 §1.3 | `not_in_handbook` | Felder, Rousseau & Bullard, Elementary Principles of Chemical Processes, 4th ed. (2016): degree-of-freedom analysis in material-balance calculations pp. 107–111. |
+| CHE-3-001-04 — Mixers, Splitters, and Separators | 03-01 §1.4 | `not_in_handbook` | Felder, Rousseau & Bullard, Elementary Principles of Chemical Processes, 4th ed. (2016): multiple-unit processes pp. 116–122; mixing balances pp. 445–446. |
+| CHE-3-001-05 — Process Flowsheets and Boundary Selection | 03-01 §1.5 | `not_in_handbook` | Felder, Rousseau & Bullard, Elementary Principles of Chemical Processes, 4th ed. (2016): flowcharts pp. 98–102, 110; flowchart scaling pp. 102–103. |
+| CHE-3-001-07 — Coupled Material-and-Energy Balance Workflow | 03-01 §1.7 | `in_handbook` + `split_required` | Felder, Rousseau & Bullard, Elementary Principles of Chemical Processes, 4th ed. (2016): material balances pp. 91–173; energy balances pp. 360–379; procedures pp. 372–375; nonreactive process balances pp. 402–456. |
+| CHE-3-002-01 — Recycle Streams and Overall Balances | 03-02 §2.1 | `not_in_handbook` | Felder, Rousseau & Bullard, Elementary Principles of Chemical Processes, 4th ed. (2016): multiple-unit processes pp. 116–122; recycle in material balances pp. 122–129. |
+| CHE-3-002-02 — Recycle Ratio and Single-Pass versus Overall Performance | 03-02 §2.2 | `not_in_handbook` | Felder, Rousseau & Bullard, Elementary Principles of Chemical Processes, 4th ed. (2016): recycle in material balances pp. 122–129; fractional conversion pp. 131–135. |
+| CHE-3-002-03 — Bypass Streams | 03-02 §2.3 | `not_in_handbook` | Felder, Rousseau & Bullard, Elementary Principles of Chemical Processes, 4th ed. (2016): bypass in material balances p. 129. |
+| CHE-3-002-04 — Purge Streams and Inert Accumulation | 03-02 §2.4 | `not_in_handbook` | Felder, Rousseau & Bullard, Elementary Principles of Chemical Processes, 4th ed. (2016): purging pp. 153–161. |
+| CHE-3-002-05 — General Unsteady Material Balance | 03-02 §2.5 | `not_in_handbook` | Felder, Rousseau & Bullard, Elementary Principles of Chemical Processes, 4th ed. (2016): transient process balances pp. 570–591; differential balances pp. 571–574. |
+| CHE-3-002-06 — Well-Mixed Tank Transients | 03-02 §2.6 | `not_in_handbook` | Felder, Rousseau & Bullard, Elementary Principles of Chemical Processes, 4th ed. (2016): balances on single well-mixed process units pp. 579–581. |
+| CHE-3-002-07 — Cut-Set Strategy for Complex Recycle Networks | 03-02 §2.7 | `not_in_handbook` | Guide synthesis based on Felder, Rousseau & Bullard, 4th ed.: multiple-unit processes pp. 116–122, recycle pp. 122–129, and transient process balances pp. 570–591. The uploaded index does not identify a dedicated 'cut-set strategy' treatment. |
+| CHE-3-007-02 — Stripping as the Reverse Gas-Liquid Operation | 03-07 §7.2 | `in_handbook` + `split_required` | Green & Southard, eds., Perry's Chemical Engineers' Handbook, 9th ed. (2019): gas-liquid stripping treatment in Chapter 14 and gas stripping applications pp. 20-94 to 20-95. |
+| CHE-3-007-03 — Liquid-Liquid Extraction | 03-07 §7.3 | `not_in_handbook` | Green & Southard, eds., Perry's Chemical Engineers' Handbook, 9th ed. (2019): liquid-liquid extraction, Chapter 15; overview p. 15-6; operation/design considerations pp. 15-19 to 15-20; solvent extraction p. 15-10. |
+| CHE-3-007-04 — Adsorption | 03-07 §7.4 | `not_in_handbook` | Green & Southard, eds., Perry's Chemical Engineers' Handbook, 9th ed. (2019): adsorption design concepts pp. 16-4 to 16-7; equilibrium pp. 16-10 to 16-16; equipment pp. 16-50 to 16-54. |
+| CHE-3-007-05 — Membrane Separations | 03-07 §7.5 | `not_in_handbook` | Green & Southard, eds., Perry's Chemical Engineers' Handbook, 9th ed. (2019): membrane-based processes pp. 15-91 to 15-93; cross-flow filtration and membrane fouling pp. 20-48 to 20-55. |
+| CHE-3-007-06 — Separation Selection by Equilibrium, Driving Force, and Phase | 03-07 §7.6 | `not_in_handbook` | Guide synthesis based on Perry's 9th ed. separation-process chapters, including adsorption selection pp. 16-5 to 16-6, liquid-liquid extraction Chapter 15, and membrane-based processes pp. 15-91 to 15-93. |
+| CHE-3-008-02 — Humidification and Dehumidification Balances | 03-08 §8.2 | `in_handbook` + `split_required` | Felder, Rousseau & Bullard, 4th ed. (2016): humidification/dehumidification and gas-liquid systems p. 284 and pp. 284–290; psychrometric charts pp. 432–440. |
+| CHE-3-008-03 — Moisture Content on Wet and Dry Basis | 03-08 §8.3 | `not_in_handbook` | Felder, Rousseau & Bullard, 4th ed. (2016): moisture content p. 432 and wet/dry composition basis p. 162; Perry's 9th ed.: drying terminology and moisture content p. 12-21. |
+| CHE-3-008-04 — Drying Rate and Constant/Falling-Rate Concepts | 03-08 §8.4 | `not_in_handbook` | Green & Southard, eds., Perry's 9th ed. (2019): drying kinetics pp. 12-22 to 12-25; drying curves p. 12-23; drying-rate curves pp. 12-24 to 12-25. |
+| CHE-3-008-06 — Single-Effect Evaporation Balances | 03-08 §8.6 | `not_in_handbook` | Green & Southard, eds., Perry's 9th ed. (2019): evaporators pp. 11-89 to 11-98; single-effect evaporators pp. 11-94 and 11-96; evaporator calculations pp. 11-96 to 11-97. |
+| CHE-3-008-07 — Energy Use and Process Selection | 03-08 §8.7 | `in_handbook` + `split_required` | Guide synthesis based on Felder, Rousseau & Bullard, 4th ed.: nonreactive process balances pp. 402–456 and phase-change operations pp. 424–443; Perry's 9th ed.: drying and evaporator design/energy material in Chapters 11–12. |
+| CHE-3-012-01 — Process Flow Diagrams | 03-12 §12.1 | `not_in_handbook` | Felder, Rousseau & Bullard, 4th ed. (2016): process flowcharts pp. 98–102, 110 and flowchart scaling pp. 102–103. |
+| CHE-3-012-02 — Piping and Instrumentation Diagrams | 03-12 §12.2 | `not_in_handbook` | ANSI/ISA 5.1-2024, Instrumentation Symbols and Identification; Perry's 9th ed.: piping and instrumentation diagrams p. 8-33. |
+| CHE-3-012-03 — Equipment Selection and First-Pass Sizing | 03-12 §12.3 | `in_handbook` + `split_required` | Green & Southard, eds., Perry's 9th ed. (2019): equipment-specific design/selection and sizing procedures throughout the equipment chapters; guide synthesis applies the general first-pass workflow. |
+| CHE-3-012-04 — Scale-Up and Similarity | 03-12 §12.4 | `in_handbook` + `split_required` | Green & Southard, eds., Perry's 9th ed. (2019): operation-specific scale-up, including mixer scale-up pp. 18-29 to 18-30 and membrane scale-up/design pp. 20-52 to 20-55; Felder 4th ed.: dimensional homogeneity pp. 19–20 and dimensionless groups pp. 20–21. |
+| CHE-3-013-01 — Process Optimization — Objective Functions and Constraints | 03-13 §13.1 | `not_in_handbook` | Green & Southard, eds., Perry's 9th ed. (2019): constrained optimization p. 8-29 and unconstrained optimization p. 8-28; guide synthesis applies optimization to Chemical-track process objectives and constraints. |
+| CHE-3-013-02 — Sustainability, Efficiency, and Inherently Safer Design | 03-13 §13.2 | `not_in_handbook` | CCPS, Guidelines for Inherently Safer Chemical Processes: A Life Cycle Approach, 3rd ed. (2019), ISBN 978-1-119-52922-4; Perry's 9th ed.: inherently safer process-safety design pp. 23-30 to 23-31 and life-cycle/reactivity considerations p. 23-19. |
+| CHE-3-013-03 — Feedback, Feedforward, Cascade, and Ratio Control | 03-13 §13.3 | `in_handbook` + `split_required` | Green & Southard, eds., Perry's 9th ed. (2019): feedback control pp. 8-5, 8-10 to 8-13, 8-18; feedforward control pp. 8-5, 8-18 to 8-19; cascade control pp. 8-19 to 8-20. |
+| CHE-3-013-04 — Process Dynamics and Controller Tuning | 03-13 §13.4 | `in_handbook` + `split_required` | Green & Southard, eds., Perry's 9th ed. (2019): controller performance/tuning pp. 8-14 to 8-16 and dynamic control material in Chapter 8. |
+| CHE-3-013-05 — Control Valves, DCS/PLC, Alarms, and Interlocks | 03-13 §13.5 | `in_handbook` + `split_required` | Green & Southard, eds., Perry's 9th ed. (2019): distributed control systems pp. 8-24, 8-43, 8-50, 8-53, 8-65, 8-76; programmable logic pp. 8-43, 8-50, 8-65; control valves/final elements Chapter 8. IEC 61511-1/-2/-3:2016 applies where the text distinguishes ordinary control from safety-instrumented functions. |
+| CHE-3-013-06 — HAZOP, LOPA, Fault Trees, and Event Trees | 03-13 §13.6 | `not_in_handbook` | CCPS, Layer of Protection Analysis: Simplified Process Risk Assessment (2001), ISBN 978-0-8169-0811-0, for LOPA/IPL methodology; Perry's 9th ed.: reactive hazard reviews/process hazard analyses and HAZOP p. 23-24. IEC 61511-1/-2/-3:2016 supports SIS/SIL links. Fault-tree and event-tree methodology is supported by Ferdous et al. (2011), *Risk Analysis*, 31(1), 86–107, DOI 10.1111/j.1539-6924.2010.01475.x. |
+| CHE-3-013-07 — Relief, Inerting, Runaway Reactions, and Protection Layers | 03-13 §13.7 | `in_handbook` + `split_required` | Green & Southard, eds., Perry's 9th ed. (2019): runaway reactions p. 23-20; inert hazards p. 23-28; pressure-relief systems pp. 23-57 to 23-62; safety instrumented systems pp. 23-72 onward. CCPS LOPA (2001) and IEC 61511-1/-2/-3:2016 support protection-layer/SIS concepts. |
+
 # Source Coverage Status
 
-The two added chemical-engineering references substantially close the earlier outside-source gap for the ten `split_required` concepts.
+The Chemical source set now provides an explicit outside-source trail for all 10 `split_required` atoms and all 24 Chemical atoms marked `not_in_handbook`.
 
 - **Elementary Principles of Chemical Processes, 4th ed.** is the principal outside source for coupled material/energy balances and humidification/dehumidification balance workflows.
 - **Perry's Chemical Engineers' Handbook, 9th ed.** is the principal broad outside source for stripping, equipment selection/sizing, scale-up, process control, control hardware, and process safety.

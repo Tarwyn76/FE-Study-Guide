@@ -202,7 +202,11 @@ Primary source basis: **FE Chemical specification, Area 8B and 8E. The Handbook 
 
 **Source boundary:** Recycle, bypass, purge, and unsteady balances are explicit FE Chemical specification topics. Their detailed process-balance development here is guide-developed; the Handbook does not provide a dedicated formula set for these topics.
 
-Where the FE specification requires a topic that is not directly developed in the Handbook, this chapter marks that material as **specification-required / guide-developed** rather than implying that the formula or workflow is printed in the Handbook.
+**External source support:** Felder, Rousseau, and Bullard, *Elementary Principles of Chemical Processes*, 4th ed. (2016): multiple-unit processes pp. 116–122; recycle pp. 122–129; bypass p. 129; purging pp. 153–161; transient process balances pp. 570–591; and single well-mixed process units pp. 579–581. The chapter's cut-set/recycle-network strategy is additionally supported by Loh, H. T., Foo, D. C. Y., Short, M., & Isafiade, A. J. (2022), *Simultaneous Optimization of Mass Exchanger Networks and Direct Reuse/Recycle Networks*, DOI 10.1007/s41660-022-00288-6. The FE-study workflow remains a guide synthesis based on that network-optimization reference plus the Felder recycle-balance framework.
+
+**Classification:** The FE Chemical specification establishes required coverage; these detailed workflows are **specification-required, externally supported**, not FE-Handbook lookup formulas.
+
+Where the FE specification requires material not directly developed in the Handbook, this chapter now distinguishes **FE-Handbook-supported**, **specification-required / externally supported**, and **guide synthesis based on cited sources**.
 
 ---
 

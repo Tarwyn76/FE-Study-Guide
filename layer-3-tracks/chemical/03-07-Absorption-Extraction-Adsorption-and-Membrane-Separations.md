@@ -202,7 +202,11 @@ Primary source basis: **Chemical Engineering absorption relations, printed p. 25
 
 **Source boundary:** Packed-column absorption is directly supported by Handbook p. 253. Extraction, adsorption, and membrane chapters are specification-required topics for which the Handbook provides limited or no dedicated formulas; those sections are guide-developed and explicitly marked as such.
 
-Where the FE specification requires a topic that is not directly developed in the Handbook, this chapter marks that material as **specification-required / guide-developed** rather than implying that the formula or workflow is printed in the Handbook.
+**External source support:** Green and Southard, eds., *Perry's Chemical Engineers' Handbook*, 9th ed. (2019), supports the non-Handbook separation material: liquid-liquid extraction in Chapter 15 (overview 15-6; design considerations 15-19 to 15-20); adsorption design/equilibrium/equipment in Chapter 16; and membrane-based processes 15-91 to 15-93 plus membrane filtration/scale-up material 20-48 to 20-55. Stripping is supported by Perry's gas-liquid stripping treatment and applications.
+
+**Classification:** Packed-column absorption remains FE-Handbook-supported. Extraction, adsorption, membranes, and broader separation-selection guidance are **specification-required, externally supported**; the final cross-process selection framework is guide synthesis based on the cited Perry sections.
+
+Where the FE specification requires material not directly developed in the Handbook, this chapter now distinguishes **FE-Handbook-supported**, **specification-required / externally supported**, and **guide synthesis based on cited sources**.
 
 ---
 
