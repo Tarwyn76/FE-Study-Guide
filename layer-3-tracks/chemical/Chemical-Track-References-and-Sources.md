@@ -2,11 +2,11 @@
 
 ## Purpose
 
-This file records the source provenance for the ten Chemical-track concept atoms currently marked `split_required: true`.
+This file records source provenance for the Chemical-track material that is either marked `split_required: true` or is specification-required but not directly developed in the FE Reference Handbook.
 
-A `split_required` concept combines material that is directly supported by the FE Reference Handbook with application, synthesis, workflow, or discipline-specific guidance developed in this guide. The entries below distinguish those two parts.
+A `split_required` concept combines material that is directly supported by the FE Reference Handbook with application, synthesis, workflow, or discipline-specific guidance developed in this guide. Other entries may be `not_in_handbook` concepts that require an authoritative external source.
 
-**Important provenance note:** The current ledger records the FE Reference Handbook 10.6 and the FE Chemical specification mapping as the actual external sources used for these atoms. For the guide-developed portions, no separate external textbook, standard, or journal source is presently recorded in the project ledger. Those portions should therefore be treated as **guide-developed synthesis**, not attributed to an external source that was not actually documented.
+**Provenance policy:** The FE Reference Handbook 10.6 and the FE Chemical specification remain the exam-facing authorities. Perry's, Felder/Rousseau/Bullard, CCPS publications, ANSI/ISA 5.1, and IEC 61511 are supplemental technical authorities used to support material that the FE Handbook does not fully develop. Where the guide combines several sources into a teaching workflow, the result is identified as **guide synthesis based on** those sources rather than being attributed to one source.
 
 ## Common sources
 
@@ -37,6 +37,39 @@ Felder, Richard M., Ronald W. Rousseau, and Lisa G. Bullard. *Elementary Princip
 ISBN: **9780470616291**
 
 Page references below use the printed-page numbers shown in the uploaded index.
+
+### Layer of Protection Analysis: Simplified Process Risk Assessment
+
+*Layer of Protection Analysis: Simplified Process Risk Assessment*. Published October 2001.
+
+ISBN: **978-0-8169-0811-0**
+
+Used in this project for Layer of Protection Analysis (LOPA), independent protection layer concepts, and risk-reduction logic in the Chemical process-safety material.
+
+### Guidelines for Inherently Safer Chemical Processes: A Life Cycle Approach, 3rd Edition
+
+*Guidelines for Inherently Safer Chemical Processes: A Life Cycle Approach*. 3rd ed. Published October 2019.
+
+ISBN: **978-1-119-52922-4**
+
+Used in this project for inherently safer design principles and life-cycle application of inherent-safety strategies.
+
+### ANSI/ISA 5.1-2024 — Instrumentation Symbols and Identification
+
+ANSI/ISA 5.1-2024. *Instrumentation Symbols and Identification*.
+
+Used in this project as the primary standards reference for instrumentation identification, P&ID symbols, tag conventions, and related drawing notation.
+
+### IEC 61511 — Functional Safety for the Process Industry Sector
+
+The following IEC 61511 references are used for safety-instrumented-system concepts, the relationship between process control and safety functions, and safety-integrity-level determination:
+
+- **IEC 61511-1:2016** — *Functional safety - Safety instrumented systems for the process industry sector - Part 1: Framework, definitions, system, hardware and application programming requirements*.
+- **IEC 61511-2:2016** — *Functional safety - Safety instrumented systems for the process industry sector - Part 2: Guidelines for the application of IEC 61511-1:2016*.
+- **IEC 61511-3:2016** — *Functional safety - Safety instrumented systems for the process industry sector - Part 3: Guidance for the determination of the required safety integrity levels*.
+- **IEC 61511-3:2020** — *Functional safety - Safety instrumented systems for the process industry sector - Part 4: Explanation and rationale for changes in IEC 61511-1 from Edition 1 to Edition 2*.
+
+**Metadata note:** The project information supplied for Part 4 did not include its publication year or document identifier beyond the Part 4 title; those fields are intentionally not inferred here.
 
 ---
 
@@ -335,8 +368,17 @@ Perry's directly supports the practical controller-tuning and dynamic-response g
   - Programmable-control material in Chapter 8.
   - Alarms, 8-84 to 8-85.
   - Actuators and final control elements, including 8-68 to 8-69 and 8-74.
+- IEC 61511-1:2016:
+  - Framework and requirements for safety instrumented systems in the process industry.
+  - Used to distinguish ordinary regulatory control from safety-instrumented protective functions where the guide makes that distinction.
+- IEC 61511-2:2016:
+  - Application guidance for IEC 61511-1.
+- IEC 61511-3:2016:
+  - Guidance for determining required safety integrity levels.
+- IEC 61511-4:2020:
+  - Explanatory/rationale material concerning the Edition 1-to-Edition 2 changes in IEC 61511-1.
 
-Perry's is the primary outside source for the integrated control-valve, DCS/PLC, alarm, and interlock discussion.
+Perry's remains the principal explanatory process-control source; IEC 61511 is the standards authority when the discussion crosses from ordinary control hardware into safety-instrumented functions.
 
 ---
 
@@ -369,8 +411,123 @@ Perry's is the primary outside source for the integrated control-valve, DCS/PLC,
   - HAZOP, approximately 23-24.
   - Inerting/inert-gas hazard-control material in Chapter 23.
   - Pressure-relief systems and relief-device design material beginning around 23-57.
+- *Layer of Protection Analysis: Simplified Process Risk Assessment* (October 2001), ISBN 978-0-8169-0811-0:
+  - Used for LOPA methodology, independent protection layers, and the relationship between initiating-event likelihood and risk reduction.
+- IEC 61511-1:2016, IEC 61511-2:2016, and IEC 61511-3:2016:
+  - Used when protection-layer discussion specifically involves safety instrumented systems or safety integrity levels.
 
-Perry's is the primary outside reference for relief, inerting, runaway-reaction protection, and layered process-safety practice.
+Perry's is the primary broad process-safety reference; the LOPA publication and IEC 61511 provide the specialized methodology and functional-safety framework.
+
+---
+
+# Additional Chemical Concepts Covered by the New Sources
+
+## CHE-3-012-02 — Piping and Instrumentation Diagrams
+
+**Chapter:** 03-12, §12.2  
+**Concept:** Piping and Instrumentation Diagrams  
+**Ledger status:** `not_in_handbook`
+
+**Primary external source**
+- ANSI/ISA 5.1-2024, *Instrumentation Symbols and Identification*.
+
+**Supported content**
+- Instrument identification.
+- P&ID instrumentation symbols and functional identification.
+- Tagging and drawing conventions used when the guide presents standardized instrumentation notation.
+
+**Secondary explanatory source**
+- Green and Southard, eds., *Perry's Chemical Engineers' Handbook*, 9th ed., process instrumentation/P&ID material in Chapter 8.
+
+**Source boundary**
+- ANSI/ISA 5.1 is the standards authority for symbol and identification conventions.
+- The guide may simplify a full industrial P&ID to FE-study scope; such simplification is guide synthesis and should not be represented as the complete ISA standard.
+
+---
+
+## CHE-3-013-02 — Sustainability, Efficiency, and Inherently Safer Design
+
+**Chapter:** 03-13, §13.2  
+**Concept:** Sustainability, Efficiency, and Inherently Safer Design  
+**Ledger status:** `not_in_handbook`
+
+**Primary external source**
+- *Guidelines for Inherently Safer Chemical Processes: A Life Cycle Approach*, 3rd ed., October 2019, ISBN 978-1-119-52922-4.
+
+**Supported content**
+- Inherently safer design philosophy.
+- Application of inherent-safety strategies over the process life cycle.
+- The concepts of reducing or eliminating hazards by design rather than relying solely on add-on protective systems.
+
+**Secondary source**
+- Green and Southard, eds., *Perry's Chemical Engineers' Handbook*, 9th ed., process-safety material in Chapter 23.
+
+**Source boundary**
+- Sustainability and efficiency material that is not specifically part of inherent-safety methodology may require separate support from the FE specification, Perry's, or another engineering-sustainability source.
+
+---
+
+## CHE-3-013-06 — HAZOP, LOPA, Fault Trees, and Event Trees
+
+**Chapter:** 03-13, §13.6  
+**Concept:** HAZOP, LOPA, Fault Trees, and Event Trees  
+**Ledger status:** `not_in_handbook`
+
+**Primary external sources**
+- *Layer of Protection Analysis: Simplified Process Risk Assessment*, October 2001, ISBN 978-0-8169-0811-0.
+- Green and Southard, eds., *Perry's Chemical Engineers' Handbook*, 9th ed., process-hazard-analysis material in Chapter 23, including HAZOP coverage around 23-24.
+
+**Functional-safety supporting sources**
+- IEC 61511-1:2016.
+- IEC 61511-2:2016.
+- IEC 61511-3:2016.
+- IEC 61511-4:2020, explanatory/rationale document for Edition 1-to-Edition 2 changes.
+
+**Supported content**
+- LOPA methodology and independent protection layers.
+- HAZOP as a structured hazard-identification method.
+- Relationship between protection layers and safety instrumented functions.
+- SIL determination where the guide explicitly introduces that connection.
+
+**Remaining source boundary**
+- The supplied references do not, from the metadata alone, establish detailed fault-tree or event-tree methodology. Perry's may support these topics, but the actual referenced pages should be verified before treating it as the direct source. If the chapter develops quantitative fault-tree/event-tree analysis beyond a conceptual FE-level description, a dedicated risk-analysis reference may still be warranted.
+
+---
+
+## CHE-3-013-05 — Control Valves, DCS/PLC, Alarms, and Interlocks
+
+**Chapter:** 03-13, §13.5  
+**Concept:** Control Valves, DCS/PLC, Alarms, and Interlocks  
+**Ledger status:** `split_required: true`
+
+**Additional standards support**
+- IEC 61511-1:2016 for the process-industry SIS framework and system requirements.
+- IEC 61511-2:2016 for application guidance.
+- IEC 61511-3:2016 for SIL determination guidance.
+- IEC 61511-4:2020 for explanatory/rationale context regarding the Edition 2 changes.
+
+**Use in the guide**
+- These standards are cited only when the chapter distinguishes a normal control function from a safety instrumented function or discusses SIL/SIS concepts.
+- Ordinary DCS, PLC, alarm, sensor, and control-valve descriptions remain primarily supported by Perry's and the FE Handbook control material.
+
+---
+
+## CHE-3-013-07 — Relief, Inerting, Runaway Reactions, and Protection Layers
+
+**Chapter:** 03-13, §13.7  
+**Concept:** Relief, Inerting, Runaway Reactions, and Protection Layers  
+**Ledger status:** `split_required: true`
+
+**Additional specialized sources**
+- *Layer of Protection Analysis: Simplified Process Risk Assessment*, October 2001, ISBN 978-0-8169-0811-0.
+- IEC 61511-1:2016.
+- IEC 61511-2:2016.
+- IEC 61511-3:2016.
+
+**Use in the guide**
+- LOPA source: protection-layer independence and risk-reduction logic.
+- IEC 61511 source: safety instrumented functions and safety integrity where those are part of the protection-layer discussion.
+- Perry's remains the broad source for relief, inerting, runaway-reaction hazards, and process-safety hardware.
 
 ---
 
@@ -379,7 +536,11 @@ Perry's is the primary outside reference for relief, inerting, runaway-reaction 
 The two added chemical-engineering references substantially close the earlier outside-source gap for the ten `split_required` concepts.
 
 - **Elementary Principles of Chemical Processes, 4th ed.** is the principal outside source for coupled material/energy balances and humidification/dehumidification balance workflows.
-- **Perry's Chemical Engineers' Handbook, 9th ed.** is the principal outside source for stripping, equipment selection/sizing, scale-up, process control, control hardware, and process safety.
+- **Perry's Chemical Engineers' Handbook, 9th ed.** is the principal broad outside source for stripping, equipment selection/sizing, scale-up, process control, control hardware, and process safety.
+- **ANSI/ISA 5.1-2024** is the standards authority used for P&ID instrumentation symbols and identification.
+- **Guidelines for Inherently Safer Chemical Processes: A Life Cycle Approach, 3rd ed. (2019)** is the dedicated source for inherently safer process design.
+- **Layer of Protection Analysis: Simplified Process Risk Assessment (2001)** is the dedicated source for LOPA and independent protection layer methodology.
+- **IEC 61511 Parts 1–3 (2016), plus the supplied Part 4 explanatory/rationale reference**, provide the functional-safety/SIS framework where the Chemical track discusses safety instrumented functions or SILs.
 - The **NCEES FE Reference Handbook 10.6** remains the exam-facing source and lookup reference.
 - The **FE Chemical specification** remains the route/coverage authority.
 
