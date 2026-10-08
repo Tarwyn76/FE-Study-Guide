@@ -65,7 +65,7 @@ Gas concentration conversions depend on temperature, pressure, and molecular wei
 
 **Problem.** For the same ppb concentration, a higher molecular-weight gas has a higher mass concentration at the same T and P.
 
-**Solution.** Apply the relation and environmental model in §60.1; then verify units, boundary conditions, and physical limits.
+**Solution.** At fixed temperature and pressure, ideal-gas conversion from ppb to mass concentration is proportional to molecular weight. Therefore two gases at the same ppb have different mg/m³ values, with the **higher-MW gas having the higher mass concentration**.
 
 ---
 
@@ -81,7 +81,7 @@ Emission inventories combine source activity with emission factors or measured s
 
 **Problem.** 100 units/hr at 0.2 kg/unit gives 20 kg/hr uncontrolled emission.
 
-**Solution.** Apply the relation and environmental model in §60.2; then verify units, boundary conditions, and physical limits.
+**Solution.** Emission rate equals emission factor times activity: \((0.2\ {\rm kg/unit})(100\ {\rm units/hr})=\mathbf{20\ kg/hr}\). Controls would be applied afterward if the stated factor is uncontrolled.
 
 ---
 
@@ -97,7 +97,7 @@ Atmospheric stability controls vertical mixing. The Handbook compares environmen
 
 **Problem.** Stable conditions suppress vertical mixing more than unstable conditions.
 
-**Solution.** Apply the relation and environmental model in §60.3; then verify units, boundary conditions, and physical limits.
+**Solution.** Stable stratification resists vertical displacement and suppresses turbulent mixing, so vertical dispersion is generally smaller than under unstable conditions for otherwise comparable meteorology.
 
 ---
 
@@ -113,7 +113,7 @@ The Gaussian plume model estimates steady-state concentration downwind of a cont
 
 **Problem.** Increasing wind speed lowers concentration in the simple model when other variables are unchanged.
 
-**Solution.** Apply the relation and environmental model in §60.4; then verify units, boundary conditions, and physical limits.
+**Solution.** In the simplified Gaussian plume form, centerline concentration contains a \(1/u\) dependence when source strength and dispersion parameters are treated as fixed. Increasing wind speed therefore **lowers predicted concentration** in that simplified comparison.
 
 ---
 
@@ -129,7 +129,7 @@ Indoor concentration reflects outdoor input, indoor sources, ventilation, remova
 
 **Problem.** Increasing clean ventilation lowers steady indoor concentration for a fixed indoor source when outdoor concentration is lower.
 
-**Solution.** Apply the relation and environmental model in §60.5; then verify units, boundary conditions, and physical limits.
+**Solution.** At steady state, \(C_i=(QC_o+S)/(Q+kV)\). If outdoor concentration is below the indoor level produced by the source, increasing clean ventilation \(Q\) drives the indoor concentration downward toward the outdoor value.
 
 ---
 
@@ -145,7 +145,7 @@ Gas controls are selected from contaminant solubility, reactivity, concentration
 
 **Problem.** A highly soluble acid gas is often amenable to wet scrubbing.
 
-**Solution.** Apply the relation and environmental model in §60.6; then verify units, boundary conditions, and physical limits.
+**Solution.** A highly soluble acid gas has a strong tendency to transfer into an appropriate scrubbing liquid, making **wet absorption/scrubbing** a plausible control. Reagent chemistry and mass-transfer limitations still determine actual performance.
 
 ---
 
@@ -161,7 +161,7 @@ Particle-control devices separate particles by inertia, filtration, or electrost
 
 **Problem.** Increasing ESP collection area A raises ideal Deutsch-Anderson efficiency when W and Q are unchanged.
 
-**Solution.** Apply the relation and environmental model in §60.7; then verify units, boundary conditions, and physical limits.
+**Solution.** Deutsch-Anderson gives \(\eta=1-e^{-WA/Q}\). Increasing collection area \(A\) increases \(WA/Q\), makes the exponential term smaller, and therefore **increases the ideal collection efficiency**.
 
 ---
 
@@ -171,13 +171,13 @@ Particle-control devices separate particles by inertia, filtration, or electrost
 
 **Problem.** A treatment calculation predicts a negative effluent concentration. What does that indicate?
 
-**Solution.** The algebra or model assumptions are invalid for that condition. Recheck the balance, reaction/order assumptions, time basis, units, and any zero-concentration limiting condition.
+**Solution.** A negative physical concentration can arise from a sign error in source/removal terms or an overextended steady-state model. Recheck emission rate, background concentration, ventilation, deposition/reaction losses, and unit conversions.
 
 ### Worked Example 9
 
 **Problem.** A remembered environmental correlation differs from the FE Reference Handbook relation. Which should govern the exam solution?
 
-**Solution.** Use the Handbook relation and its definitions unless the problem explicitly supplies a different model.
+**Solution.** For **Air Quality — Emissions, Dispersion, Indoor Air, and Gas/Particle Control**, the FE Reference Handbook equation, definitions, and unit convention govern whenever the Handbook supplies the needed relation. The external references in this chapter are used for specification-required learned material involving **emission factors, atmospheric/indoor dispersion, gas absorption, filtration, and electrostatic precipitation**. If a remembered correlation conflicts with the supplied Handbook equation, use the supplied Handbook relation unless the problem explicitly states a different model.
 
 ---
 
@@ -185,7 +185,13 @@ Particle-control devices separate particles by inertia, filtration, or electrost
 
 Primary source basis: **FE Environmental specification Area(s) 13; FE Reference Handbook 10.6 Environmental Engineering, printed pp. 318–360, plus general supporting sections where identified in the ledger.**
 
-**Source boundary:** Some Environmental specification topics are directly tabulated in the Handbook, while others require learned engineering knowledge. The chapter keeps those two categories separate.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required environmental-engineering knowledge that is not fully developed in the Handbook. **Guide synthesis** connects the Handbook and external material into exam-oriented explanations, examples, and checks; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Cooper, C. D., & Alley, F. C. (2011). *Air Pollution Control: A Design Approach* (4th ed.). Waveland Press. ISBN 978-1-57766-678-3. Supporting scope: Air-pollution emissions, dispersion, gas/particle control, scrubbers, adsorption, cyclones, filters, and electrostatic precipitation.
+- Mihelcic, J. R., & Zimmerman, J. B. (2021). *Environmental Engineering: Fundamentals, Sustainability, Design* (3rd ed.). Wiley. ISBN 978-1-119-60445-7. Supporting scope: Environmental measurements, chemistry, physical processes, biology, risk, water quantity/quality, water treatment, wastewater/stormwater, solid waste, and air quality.
+
+The external references support only the learned/application portion of the Environmental specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -356,31 +362,31 @@ D) It is always a Handbook lookup with no learned interpretation
 
 14. For **particulate air control**, check basis, units, steady/unsteady condition, phase/media, boundary conditions, and whether the selected idealization matches the system.
 
-15. The boundary determines what enters, leaves, accumulates, reacts, or transfers between media. Without it, terms are easily omitted or double counted.
+15. In **Air Quality — Emissions, Dispersion, Indoor Air, and Gas/Particle Control**, the control volume or conceptual boundary determines which sources, sinks, transfers, reactions, and receptors belong in the model. For this chapter specifically, check standard-state basis for gas concentrations, source versus controlled emission factor, meteorological stability, conservation in the indoor-air balance, and collection efficiency bounds from 0–1.
 
-16. Concentration is mass per volume; loading is mass per time. A low concentration at very high flow can still create a large load.
+16. Concentration and loading answer different questions in **Air Quality — Emissions, Dispersion, Indoor Air, and Gas/Particle Control**: concentration is mass per volume, while loading is mass per time. Always convert \(Q\) and \(C\) to compatible units before multiplying them.
 
-17. The FE Handbook is the supplied exam reference. Its variable definitions and unit conventions should govern unless the problem explicitly provides another relation.
+17. Use the FE Reference Handbook equation and definitions when it supplies the model for **Air Quality — Emissions, Dispersion, Indoor Air, and Gas/Particle Control**. The chapter's external references (COOPER_ALLEY, MIHELCIC) support learned specification content, not a competing exam formula.
 
-18. A mass/energy balance and physical check can reveal impossible signs, removal above 100%, negative concentrations, unrealistic flows, or model misuse.
+18. A physical check is needed because algebra alone can return impossible environmental states. For this chapter, set source \(S=0\) in the indoor-air balance and confirm the steady concentration tends toward the outdoor/background value as clean ventilation dominates.
 
-19. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+19. **A.** Section §60.1, **Air-pollutant concentration units and standard conditions**, is governed by \(C_{\mathrm{mg/m^3}}\propto \frac{\mathrm{ppb}\,MW\,P}{RT}\). Use that relation with its own environmental basis and then perform the specific validity check described for §60.1.
 
-20. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+20. **A.** Section §60.2, **Emission factors and source loading**, is governed by \(\dot m=EF\times \text{activity rate}\). Use that relation with its own environmental basis and then perform the specific validity check described for §60.2.
 
-21. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+21. **A.** Section §60.3, **Atmospheric stability and lapse rates**, is governed by \(\Gamma=\frac{\Delta T}{\Delta z}\). Use that relation with its own environmental basis and then perform the specific validity check described for §60.3.
 
-22. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+22. **A.** Section §60.4, **Gaussian plume dispersion**, is governed by \(C(x,y,z)=\frac{Q}{2\pi u\sigma_y\sigma_z}(\cdots)\). Use that relation with its own environmental basis and then perform the specific validity check described for §60.4.
 
-23. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+23. **A.** Section §60.5, **Indoor-air mass balance and ventilation**, is governed by \(V\frac{dC_i}{dt}=Q(C_o-C_i)+S-kVC_i\). Use that relation with its own environmental basis and then perform the specific validity check described for §60.5.
 
-24. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+24. **A.** Section §60.6, **Gas-phase control — absorption, adsorption, biofiltration, and oxidation**, is governed by \(\text{gas contaminant}\rightarrow\text{mass transfer/reaction}\rightarrow\text{controlled exhaust}\). Use that relation with its own environmental basis and then perform the specific validity check described for §60.6.
 
-25. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+25. **A.** Section §60.7, **Particle control — cyclones, baghouses, and electrostatic precipitators**, is governed by \(\eta_{\mathrm{ESP}}=1-e^{-WA/Q}\). Use that relation with its own environmental basis and then perform the specific validity check described for §60.7.
 
-26. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+26. **A.** An integrated **Air Quality — Emissions, Dispersion, Indoor Air, and Gas/Particle Control** solution is acceptable only after the governing balance/model is identified, units are reconciled, and the chapter-specific physical checks are satisfied.
 
-27. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+27. **A.** Source ownership is explicit in **Air Quality — Emissions, Dispersion, Indoor Air, and Gas/Particle Control**: FE-Handbook-supported material remains tied to the ledger, externally supported content uses COOPER_ALLEY, MIHELCIC, and guide synthesis is labeled as supplemental explanation.
 
 
 ---
@@ -412,25 +418,25 @@ D) It is always a Handbook lookup with no learned interpretation
 
 ## Practice Problem Solutions
 
-1. Use §60.1. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+1. **Independent recomputation for §60.1 — Air-pollutant concentration units and standard conditions.** Start from the stated givens rather than the worked-example answer. At fixed temperature and pressure, ideal-gas conversion from ppb to mass concentration is proportional to molecular weight. Therefore two gases at the same ppb have different mg/m³ values, with the **higher-MW gas having the higher mass concentration**. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-2. Use §60.2. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+2. **Independent recomputation for §60.2 — Emission factors and source loading.** Start from the stated givens rather than the worked-example answer. Emission rate equals emission factor times activity: \((0.2\ {\rm kg/unit})(100\ {\rm units/hr})=\mathbf{20\ kg/hr}\). Controls would be applied afterward if the stated factor is uncontrolled. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-3. Use §60.3. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+3. **Independent recomputation for §60.3 — Atmospheric stability and lapse rates.** Start from the stated givens rather than the worked-example answer. Stable stratification resists vertical displacement and suppresses turbulent mixing, so vertical dispersion is generally smaller than under unstable conditions for otherwise comparable meteorology. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-4. Use §60.4. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+4. **Independent recomputation for §60.4 — Gaussian plume dispersion.** Start from the stated givens rather than the worked-example answer. In the simplified Gaussian plume form, centerline concentration contains a \(1/u\) dependence when source strength and dispersion parameters are treated as fixed. Increasing wind speed therefore **lowers predicted concentration** in that simplified comparison. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-5. Use §60.5. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+5. **Independent recomputation for §60.5 — Indoor-air mass balance and ventilation.** Start from the stated givens rather than the worked-example answer. At steady state, \(C_i=(QC_o+S)/(Q+kV)\). If outdoor concentration is below the indoor level produced by the source, increasing clean ventilation \(Q\) drives the indoor concentration downward toward the outdoor value. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-6. Use §60.6. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+6. **Independent recomputation for §60.6 — Gas-phase control — absorption, adsorption, biofiltration, and oxidation.** Start from the stated givens rather than the worked-example answer. A highly soluble acid gas has a strong tendency to transfer into an appropriate scrubbing liquid, making **wet absorption/scrubbing** a plausible control. Reagent chemistry and mass-transfer limitations still determine actual performance. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-7. Use §60.7. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+7. **Independent recomputation for §60.7 — Particle control — cyclones, baghouses, and electrostatic precipitators.** Start from the stated givens rather than the worked-example answer. Deutsch-Anderson gives \(\eta=1-e^{-WA/Q}\). Increasing collection area \(A\) increases \(WA/Q\), makes the exponential term smaller, and therefore **increases the ideal collection efficiency**. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-8. Check dimensions, concentration-versus-loading basis, conservation of mass/energy, sign convention, and whether removal, risk, or efficiency values stay within physically meaningful limits.
+8. For this chapter, check the result against this failure screen: Check standard-state basis for gas concentrations, source versus controlled emission factor, meteorological stability, conservation in the indoor-air balance, and collection efficiency bounds from 0–1. A result that violates one of those conditions should be rejected even if the arithmetic is internally consistent.
 
-9. Start with FE Environmental specification Area(s) 13, then use the Handbook subsection named in the corresponding ledger entry.
+9. For **Air Quality — Emissions, Dispersion, Indoor Air, and Gas/Particle Control**, begin with the FE Environmental specification area and Handbook subsection recorded in the ledger. When the atom is `split_required`, use the reconciled external source set **COOPER_ALLEY, MIHELCIC** for the learned portion rather than inventing a Handbook page.
 
-10. Test a limiting case such as zero source, zero reaction, complete mixing, no flow, very large residence time, or 0/100% removal as appropriate. The result should reduce to a sensible physical state.
+10. A useful limiting case is to set source \(S=0\) in the indoor-air balance and confirm the steady concentration tends toward the outdoor/background value as clean ventilation dominates. The simplified case should reduce to the stated physical behavior before the full model is trusted.
 
 ---
 

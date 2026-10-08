@@ -65,7 +65,7 @@ Closed-conduit systems are solved by combining conservation of energy with conti
 
 **Problem.** Between equal-diameter reservoirs with no pump, elevation difference is consumed by head loss.
 
-**Solution.** Apply the relation and definitions in §18.1; the stated result follows with consistent units and sign convention.
+**Solution.** Apply the energy equation between the two reservoir free surfaces. With negligible surface velocities, equal atmospheric pressure, and no pump or turbine, the elevation-head difference must equal the total head loss: \(z_1-z_2=h_L\). This provides a direct check on any pipe-loss calculation.
 
 ---
 
@@ -81,7 +81,7 @@ Major and minor losses both scale with velocity head. Verify whether the frictio
 
 **Problem.** If K_total=4 and V²/(2g)=1.2 ft, minor loss is 4.8 ft.
 
-**Solution.** Apply the relation and definitions in §18.2; the stated result follows with consistent units and sign convention.
+**Solution.** Minor loss is \(h_m=K_{tot}V^2/(2g)\). With \(K_{tot}=4\) and \(V^2/(2g)=1.2\ \text{ft}\), \(h_m=4(1.2)=4.8\ \text{ft}\). The individual fitting coefficients may be summed only when they correspond to the same reference velocity.
 
 ---
 
@@ -97,7 +97,7 @@ Hazen-Williams is commonly used for water-distribution calculations. Use the Han
 
 **Problem.** Increasing diameter strongly reduces head loss because diameter appears to a high exponent.
 
-**Solution.** Apply the relation and definitions in §18.3; the stated result follows with consistent units and sign convention.
+**Solution.** In the Hazen-Williams relation, head loss varies approximately as \(D^{-4.87}\). Because the diameter exponent is large, even a modest increase in diameter can sharply reduce head loss for a given flow, length, and roughness coefficient. The comparison must keep the other variables fixed.
 
 ---
 
@@ -113,7 +113,7 @@ Network solutions must satisfy continuity at every junction and energy consisten
 
 **Problem.** At a junction with 3 cfs and 5 cfs entering, an 8 cfs outflow balances continuity.
 
-**Solution.** Apply the relation and definitions in §18.4; the stated result follows with consistent units and sign convention.
+**Solution.** Apply continuity at the junction using a consistent sign convention. Total inflow is \(3+5=8\ \text{cfs}\); therefore an 8-cfs outflow gives \(\sum Q=0\). A mismatch would indicate either storage at the node or an omitted branch.
 
 ---
 
@@ -129,7 +129,7 @@ The system operating point occurs where the pump curve intersects the system cur
 
 **Problem.** γQH=50 hp hydraulic and η=0.80 requires 62.5 hp input.
 
-**Solution.** Apply the relation and definitions in §18.5; the stated result follows with consistent units and sign convention.
+**Solution.** Pump input power is hydraulic power divided by efficiency. If \(\gamma QH=50\ \text{hp}\) and \(\eta=0.80\), \(P_{in}=50/0.80=62.5\ \text{hp}\). The difference between input and hydraulic power represents pump losses.
 
 ---
 
@@ -145,7 +145,7 @@ Distribution systems must maintain usable pressure while meeting demand and fire
 
 **Problem.** A 100-ft water head corresponds to about 43.3 psi.
 
-**Solution.** Apply the relation and definitions in §18.6; the stated result follows with consistent units and sign convention.
+**Solution.** Pressure head and pressure are related by \(p=\gamma h\). For water, 1 psi corresponds to about 2.31 ft of head, so \(p=100/2.31\approx43.3\ \text{psi}\). This assumes water near standard conditions and gauge pressure.
 
 ---
 
@@ -161,7 +161,7 @@ Sanitary and storm collection systems combine continuity with open-channel or pa
 
 **Problem.** A 4 ft² flowing area at 3 ft/s conveys 12 cfs.
 
-**Solution.** Apply the relation and definitions in §18.7; the stated result follows with consistent units and sign convention.
+**Solution.** Use continuity \(Q=VA\). With \(A=4\ \text{ft}^2\) and \(V=3\ \text{ft/s}\), \(Q=4(3)=12\ \text{ft}^3/\text{s}=12\ \text{cfs}\).
 
 ---
 
@@ -171,13 +171,13 @@ Sanitary and storm collection systems combine continuity with open-channel or pa
 
 **Problem.** A problem combines two ideas from this chapter. What should be done before calculation?
 
-**Solution.** Draw the system, identify the requested quantity, establish units and sign conventions, and list the governing relations before substituting numbers.
+**Solution.** For a combined distribution-system problem, first satisfy node continuity to determine flows, then evaluate pipe losses and pump head around the relevant path or loop. Only after the hydraulic grade is known should pressure constraints be checked at individual nodes.
 
 ### Worked Example 9
 
 **Problem.** A remembered equation differs from the FE Reference Handbook form. Which should govern the exam solution?
 
-**Solution.** Use the Handbook form and its unit convention unless the problem explicitly supplies a different relation.
+**Solution.** Use the Handbook equation that matches the stated pipe-flow model—Darcy-Weisbach, Hazen-Williams, pump power, or continuity—and retain its units and definitions. A remembered coefficient from another unit system can create a large error even when the algebra is otherwise correct.
 
 ---
 
@@ -185,11 +185,14 @@ Sanitary and storm collection systems combine continuity with open-channel or pa
 
 Primary source basis: **FE Civil specification Area 10; FE Reference Handbook 10.6 Civil Engineering and supporting general sections cited below.**
 
-**Source boundary:** Some Civil specification topics are directly tabulated in the Handbook; others are named by the specification but require learned engineering knowledge. This chapter does not imply that every workflow, code provision, or design factor is printed in the Handbook.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is retained because it is required by the FE Civil specification but needs engineering knowledge beyond what is printed in the Handbook. **Guide synthesis** connects those two sources into exam-oriented workflows and examples; it is not presented as Handbook text.
 
-Where the FE specification requires a topic that is not directly developed in the Handbook, the ledger marks it **specification-required / guide-developed** rather than inventing a Handbook citation.
+**External source support for split-required concepts:**
+- `CIV-3-018-04` — Robinson, L., Edwards, J. A., & Willnow, L. D. (2012). *Computer Modeling of Water Distribution Systems* (AWWA Manual M32, 3rd ed.). American Water Works Association. ISBN 978-1-58321-864-8. Verified location: Uploaded preview confirms Chapter 5, pp. 103–123 (steady-state simulation/system design criteria) and Chapter 6, pp. 125–146 (extended-period simulation); the preview does not contain the complete chapter text.
+- `CIV-3-018-06` — Robinson, L., Edwards, J. A., & Willnow, L. D. (2012). *Computer Modeling of Water Distribution Systems* (AWWA Manual M32, 3rd ed.). American Water Works Association. ISBN 978-1-58321-864-8. Verified location: Uploaded preview confirms Chapter 5, pp. 103–123 (steady-state simulation/system design criteria) and Chapter 6, pp. 125–146 (extended-period simulation); the preview does not contain the complete chapter text. American Water Works Association. (1998). *Steel Water-Storage Tanks* (AWWA Manual M42, 1st ed.). American Water Works Association. ISBN 0-89867-977-X. Verified location: Chapter 5, pp. 53–56 (storage sizing, peak demand, fire flow, operating levels); Chapter 8, pp. 85–86 (operation, pressure, controls).
+- `CIV-3-018-07` — Water Environment Federation & American Society of Civil Engineers. (2007). *Gravity Sanitary Sewer Design and Construction* (MOP FD-5, 2nd ed.). Water Environment Federation. Cited at publication/standard level; no page-level claim.
 
----
+No external source above is being used to replace the FE Reference Handbook. The external references support only the learned/application portion identified by `split_required: true`.
 
 ## Where This Goes Wrong
 
@@ -357,31 +360,31 @@ D) Treat it as optional
 
 14. For **collection system hydraulics**, common failures are wrong units, wrong sign convention, wrong geometry/boundary condition, or using a relation outside its assumptions.
 
-15. The sketch exposes geometry, boundaries, loads/flows, signs, and missing data before algebra begins.
+15. Sketch nodes, pipes, pumps, reservoirs, tanks, and the HGL/EGL before selecting equations so continuity and energy are applied to the correct branches and reference elevations.
 
-16. Use the Handbook form when it is available because the FE exam supplies that reference and its constants/unit conventions govern the problem.
+16. Use the Handbook pipe-flow or pump relation that matches the stated model because Darcy-Weisbach, Hazen-Williams, continuity, and pump-power forms use different assumptions and unit conventions.
 
-17. Mixed unit systems create hidden conversion errors and can invalidate dimensional consistency.
+17. Pressure in psi, head in feet, flow in cfs or gpm, and SI pressure/flow units cannot be mixed directly; convert them before combining pressure, velocity, elevation, and loss terms.
 
-18. A reasonableness check can catch sign, magnitude, boundary-condition, and unit errors that algebra alone does not reveal.
+18. Check both node continuity and path energy: flows should balance at junctions and the computed pressure or hydraulic grade should remain plausible relative to reservoir, pump, and elevation conditions.
 
-19. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+19. **A.** For **Pipe energy equation and hydraulic grade line**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-20. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+20. **A.** For **Darcy-Weisbach and minor losses**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-21. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+21. **A.** For **Hazen-Williams water-distribution relation**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-22. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+22. **A.** For **Network continuity and loop energy balance**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-23. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+23. **A.** For **Pump head, power, efficiency, and operating point**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-24. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+24. **A.** For **Water distribution storage, pressure, and service constraints**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-25. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+25. **A.** For **Gravity collection systems and sewer flow concepts**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-26. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+26. **A.** In Pipe Networks, Water Distribution, Pumps, and Collection Systems, dimensional consistency and an independent physical check are the fastest ways to detect a unit, sign, magnitude, or modeling error before accepting the result.
 
-27. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+27. **A.** Distribution-network, storage, and collection-system details beyond Handbook equations are labeled learned material and supported by AWWA M32/M42 and the sanitary-sewer reference where applicable.
 
 
 
@@ -414,25 +417,39 @@ D) Treat it as optional
 
 ## Practice Problem Solutions
 
-1. Use §18.1. Between equal-diameter reservoirs with no pump, elevation difference is consumed by head loss. The calculation or classification follows from the displayed section relation and the stated data.
+1. **Independent check for §18.1.** Rework the problem from the stated givens rather than copying the worked-example result. Apply the energy equation between the two reservoir free surfaces. With negligible surface velocities, equal atmospheric pressure, and no pump or turbine, the elevation-head difference must equal the total head loss: \(z_1-z_2=h_L\). This provides a direct check on any pipe-loss calculation. **Check:** confirm the final magnitude and units against the physical meaning of §18.1 before accepting the answer.
 
-2. Use §18.2. If K_total=4 and V²/(2g)=1.2 ft, minor loss is 4.8 ft. The calculation or classification follows from the displayed section relation and the stated data.
 
-3. Use §18.3. Increasing diameter strongly reduces head loss because diameter appears to a high exponent. The calculation or classification follows from the displayed section relation and the stated data.
 
-4. Use §18.4. At a junction with 3 cfs and 5 cfs entering, an 8 cfs outflow balances continuity. The calculation or classification follows from the displayed section relation and the stated data.
+2. **Independent check for §18.2.** Rework the problem from the stated givens rather than copying the worked-example result. Minor loss is \(h_m=K_{tot}V^2/(2g)\). With \(K_{tot}=4\) and \(V^2/(2g)=1.2\ \text{ft}\), \(h_m=4(1.2)=4.8\ \text{ft}\). The individual fitting coefficients may be summed only when they correspond to the same reference velocity. **Check:** confirm the final magnitude and units against the physical meaning of §18.2 before accepting the answer.
 
-5. Use §18.5. γQH=50 hp hydraulic and η=0.80 requires 62.5 hp input. The calculation or classification follows from the displayed section relation and the stated data.
 
-6. Use §18.6. A 100-ft water head corresponds to about 43.3 psi. The calculation or classification follows from the displayed section relation and the stated data.
 
-7. Use §18.7. A 4 ft² flowing area at 3 ft/s conveys 12 cfs. The calculation or classification follows from the displayed section relation and the stated data.
+3. **Independent check for §18.3.** Rework the problem from the stated givens rather than copying the worked-example result. In the Hazen-Williams relation, head loss varies approximately as \(D^{-4.87}\). Because the diameter exponent is large, even a modest increase in diameter can sharply reduce head loss for a given flow, length, and roughness coefficient. The comparison must keep the other variables fixed. **Check:** confirm the final magnitude and units against the physical meaning of §18.3 before accepting the answer.
 
-8. Check dimensions, unit conversion, sign convention, and whether the selected relation's assumptions match the physical situation.
 
-9. Start with FE Civil specification Area 10 and the Handbook sections identified in **As the Handbook States It** and the ledger entries for this chapter.
 
-10. A sketch exposes incompatible geometry, impossible flow/load directions, missing reactions/boundaries, and double-counted or omitted terms.
+4. **Independent check for §18.4.** Rework the problem from the stated givens rather than copying the worked-example result. Apply continuity at the junction using a consistent sign convention. Total inflow is \(3+5=8\ \text{cfs}\); therefore an 8-cfs outflow gives \(\sum Q=0\). A mismatch would indicate either storage at the node or an omitted branch. **Check:** confirm the final magnitude and units against the physical meaning of §18.4 before accepting the answer.
+
+
+
+5. **Independent check for §18.5.** Rework the problem from the stated givens rather than copying the worked-example result. Pump input power is hydraulic power divided by efficiency. If \(\gamma QH=50\ \text{hp}\) and \(\eta=0.80\), \(P_{in}=50/0.80=62.5\ \text{hp}\). The difference between input and hydraulic power represents pump losses. **Check:** confirm the final magnitude and units against the physical meaning of §18.5 before accepting the answer.
+
+
+
+6. **Independent check for §18.6.** Rework the problem from the stated givens rather than copying the worked-example result. Pressure head and pressure are related by \(p=\gamma h\). For water, 1 psi corresponds to about 2.31 ft of head, so \(p=100/2.31\approx43.3\ \text{psi}\). This assumes water near standard conditions and gauge pressure. **Check:** confirm the final magnitude and units against the physical meaning of §18.6 before accepting the answer.
+
+
+
+7. **Independent check for §18.7.** Rework the problem from the stated givens rather than copying the worked-example result. Use continuity \(Q=VA\). With \(A=4\ \text{ft}^2\) and \(V=3\ \text{ft/s}\), \(Q=4(3)=12\ \text{ft}^3/\text{s}=12\ \text{cfs}\). **Check:** confirm the final magnitude and units against the physical meaning of §18.7 before accepting the answer.
+
+
+
+8. Before accepting a pipe networks, water distribution, pumps, and collection systems result, verify the dimensional units, the chapter-specific sign or direction convention, and that the selected model matches the stated geometry and boundary conditions.
+
+9. Begin with **FE Civil specification Area 10** and the ledger's pipe-flow/pump equations; use the reconciled AWWA or gravity-sewer source only for system-model details beyond Handbook 10.6.
+
+10. For pipe networks, water distribution, pumps, and collection systems, a sketch makes the controlling geometry, direction, boundary, load/flow path, or sequence visible before algebra, which often reveals missing data or an impossible assumption immediately.
 
 ---
 

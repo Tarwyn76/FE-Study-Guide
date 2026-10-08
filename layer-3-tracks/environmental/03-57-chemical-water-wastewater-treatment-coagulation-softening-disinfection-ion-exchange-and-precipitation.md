@@ -65,7 +65,7 @@ Coagulation destabilizes colloids; flocculation provides controlled mixing so pa
 
 **Problem.** Coagulant addition and rapid mixing precede gentler flocculation.
 
-**Solution.** Apply the relation and environmental model in §57.1; then verify units, boundary conditions, and physical limits.
+**Solution.** Coagulation first destabilizes particles and is paired with rapid mixing to disperse the chemical. Flocculation then uses gentler mixing to promote collisions and growth of settleable floc; reversing those hydraulic roles defeats the intended sequence.
 
 ---
 
@@ -81,7 +81,7 @@ Chemical precipitation removes dissolved species by converting them to insoluble
 
 **Problem.** Raising pH may promote metal-hydroxide precipitation for some metals.
 
-**Solution.** Apply the relation and environmental model in §57.2; then verify units, boundary conditions, and physical limits.
+**Solution.** Precipitation becomes thermodynamically favored when the ion-activity product exceeds the solubility product, \(\mathrm{IAP}>K_{sp}\). Adjusting pH can change species activities and therefore drive metal-hydroxide precipitation for suitable metals.
 
 ---
 
@@ -97,7 +97,7 @@ Softening calculations convert calcium, magnesium, alkalinity, and reagent needs
 
 **Problem.** Convert species to mg/L as CaCO3 before summing hardness contributions.
 
-**Solution.** Apply the relation and environmental model in §57.3; then verify units, boundary conditions, and physical limits.
+**Solution.** Hardness contributions from different ions must be converted to a common **mg/L as CaCO\(_3\)** equivalent basis before addition. Summing raw mg/L of unlike ions directly would not preserve equivalent charge.
 
 ---
 
@@ -113,7 +113,7 @@ Disinfection depends on disinfectant concentration, contact time, organism susce
 
 **Problem.** Higher disinfectant residual or longer effective contact time generally increases inactivation under the same conditions.
 
-**Solution.** Apply the relation and environmental model in §57.4; then verify units, boundary conditions, and physical limits.
+**Solution.** Disinfection performance commonly depends on disinfectant residual and effective contact time, along with organism, temperature, pH, and water quality. Under otherwise equal conditions, increasing effective \(C\) or \(t\) generally increases inactivation.
 
 ---
 
@@ -129,7 +129,7 @@ Ion-exchange media reversibly trade ions with water until capacity is exhausted,
 
 **Problem.** A cation exchanger in sodium form can exchange sodium for hardness ions.
 
-**Solution.** Apply the relation and environmental model in §57.5; then verify units, boundary conditions, and physical limits.
+**Solution.** A sodium-form cation exchanger supplies exchange sites occupied by Na\(^+\). Ca\(^{2+}\) and Mg\(^{2+}\) can displace sodium according to equivalent charge capacity, thereby removing hardness until the resin approaches exhaustion.
 
 ---
 
@@ -145,7 +145,7 @@ Chemical feed calculations are mass-rate problems. Distinguish active chemical c
 
 **Problem.** A 10-MGD plant applying 5 mg/L active chemical requires about 417 lb/day active chemical.
 
-**Solution.** Apply the relation and environmental model in §57.6; then verify units, boundary conditions, and physical limits.
+**Solution.** Active chemical feed is \(8.34QC=(8.34)(10\ {\rm MGD})(5\ {\rm mg/L})=\mathbf{417\ lb/day}\). If the commercial solution is less than 100% active ingredient, the delivered product mass must be increased accordingly.
 
 ---
 
@@ -161,7 +161,7 @@ Chemical treatment frequently creates residual solids or changes pH/ionic compos
 
 **Problem.** Precipitation can remove a dissolved contaminant while creating sludge that requires dewatering/disposal.
 
-**Solution.** Apply the relation and environmental model in §57.7; then verify units, boundary conditions, and physical limits.
+**Solution.** Chemical precipitation transfers a dissolved constituent into a particulate residual rather than making its mass disappear. The treatment train therefore must include sludge separation, dewatering, handling, and final management.
 
 ---
 
@@ -171,13 +171,13 @@ Chemical treatment frequently creates residual solids or changes pH/ionic compos
 
 **Problem.** A treatment calculation predicts a negative effluent concentration. What does that indicate?
 
-**Solution.** The algebra or model assumptions are invalid for that condition. Recheck the balance, reaction/order assumptions, time basis, units, and any zero-concentration limiting condition.
+**Solution.** A negative chemical dose or precipitated mass indicates a stoichiometric/speciation error or an impossible target. Recheck equivalent basis, pH-dependent species, active strength, solubility constraints, and residual production.
 
 ### Worked Example 9
 
 **Problem.** A remembered environmental correlation differs from the FE Reference Handbook relation. Which should govern the exam solution?
 
-**Solution.** Use the Handbook relation and its definitions unless the problem explicitly supplies a different model.
+**Solution.** For **Chemical Water/Wastewater Treatment — Coagulation, Softening, Disinfection, Ion Exchange, and Precipitation**, the FE Reference Handbook equation, definitions, and unit convention govern whenever the Handbook supplies the needed relation. The external references in this chapter are used for specification-required learned material involving **coagulation/flocculation, precipitation, softening, disinfection, ion exchange, and chemical feed**. If a remembered correlation conflicts with the supplied Handbook equation, use the supplied Handbook relation unless the problem explicitly states a different model.
 
 ---
 
@@ -185,7 +185,14 @@ Chemical treatment frequently creates residual solids or changes pH/ionic compos
 
 Primary source basis: **FE Environmental specification Area(s) 12; FE Reference Handbook 10.6 Environmental Engineering, printed pp. 318–360, plus general supporting sections where identified in the ledger.**
 
-**Source boundary:** Some Environmental specification topics are directly tabulated in the Handbook, while others require learned engineering knowledge. The chapter keeps those two categories separate.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required environmental-engineering knowledge that is not fully developed in the Handbook. **Guide synthesis** connects the Handbook and external material into exam-oriented explanations, examples, and checks; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Sawyer, C. N., McCarty, P. L., & Parkin, G. F. (2003). *Chemistry for Environmental Engineering and Science* (5th ed.). McGraw-Hill. ISBN 978-0-07-119888-2. Supporting scope: Environmental stoichiometry, acid-base chemistry, oxidation-reduction, solubility/precipitation, partitioning, and reaction chemistry.
+- Mihelcic, J. R., & Zimmerman, J. B. (2021). *Environmental Engineering: Fundamentals, Sustainability, Design* (3rd ed.). Wiley. ISBN 978-1-119-60445-7. Supporting scope: Environmental measurements, chemistry, physical processes, biology, risk, water quantity/quality, water treatment, wastewater/stormwater, solid waste, and air quality.
+- Metcalf & Eddy/AECOM, Tchobanoglous, G., Stensel, H. D., Tsuchihashi, R., & Burton, F. L. (2014). *Wastewater Engineering: Treatment and Resource Recovery* (5th ed.). McGraw-Hill. ISBN 978-0-07-340118-8. Supporting scope: Wastewater characteristics, physical/chemical treatment, activated sludge, solids recycle, biosolids, residuals, and resource recovery.
+
+The external references support only the learned/application portion of the Environmental specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -356,31 +363,31 @@ D) It is always a Handbook lookup with no learned interpretation
 
 14. For **chemical-treatment selection**, check basis, units, steady/unsteady condition, phase/media, boundary conditions, and whether the selected idealization matches the system.
 
-15. The boundary determines what enters, leaves, accumulates, reacts, or transfers between media. Without it, terms are easily omitted or double counted.
+15. In **Chemical Water/Wastewater Treatment — Coagulation, Softening, Disinfection, Ion Exchange, and Precipitation**, the control volume or conceptual boundary determines which sources, sinks, transfers, reactions, and receptors belong in the model. For this chapter specifically, use equivalent/stoichiometric basis consistently, verify ph and solubility conditions, convert commercial strength to active chemical, and include sludge/residual mass created by treatment.
 
-16. Concentration is mass per volume; loading is mass per time. A low concentration at very high flow can still create a large load.
+16. Concentration and loading answer different questions in **Chemical Water/Wastewater Treatment — Coagulation, Softening, Disinfection, Ion Exchange, and Precipitation**: concentration is mass per volume, while loading is mass per time. Always convert \(Q\) and \(C\) to compatible units before multiplying them.
 
-17. The FE Handbook is the supplied exam reference. Its variable definitions and unit conventions should govern unless the problem explicitly provides another relation.
+17. Use the FE Reference Handbook equation and definitions when it supplies the model for **Chemical Water/Wastewater Treatment — Coagulation, Softening, Disinfection, Ion Exchange, and Precipitation**. The chapter's external references (SAWYER, MIHELCIC, METCALF) support learned specification content, not a competing exam formula.
 
-18. A mass/energy balance and physical check can reveal impossible signs, removal above 100%, negative concentrations, unrealistic flows, or model misuse.
+18. A physical check is needed because algebra alone can return impossible environmental states. For this chapter, set chemical dose to zero and confirm chemical feed mass is zero; at \(\mathrm{IAP}=K_{sp}\) verify the precipitation criterion is exactly at equilibrium.
 
-19. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+19. **A.** Section §57.1, **Coagulation, charge destabilization, and flocculation**, is governed by \(\text{destabilization}\rightarrow\text{collision}\rightarrow\text{floc growth}\). Use that relation with its own environmental basis and then perform the specific validity check described for §57.1.
 
-20. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+20. **A.** Section §57.2, **Chemical precipitation and solubility control**, is governed by \(\mathrm{IAP}>K_{sp}\Rightarrow\text{precipitation favored}\). Use that relation with its own environmental basis and then perform the specific validity check described for §57.2.
 
-21. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+21. **A.** Section §57.3, **Lime-soda softening**, is governed by \(\text{hardness components}\rightarrow\text{CaCO}_3\text{ equivalent basis}\). Use that relation with its own environmental basis and then perform the specific validity check described for §57.3.
 
-22. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+22. **A.** Section §57.4, **Disinfection kinetics and contact concepts**, is governed by \(\text{microbial inactivation}=f(C,t,\text{organism},T,\text{water quality})\). Use that relation with its own environmental basis and then perform the specific validity check described for §57.4.
 
-23. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+23. **A.** Section §57.5, **Ion exchange and exchange capacity**, is governed by \(\text{equivalent ions removed}\le\text{available exchange capacity}\). Use that relation with its own environmental basis and then perform the specific validity check described for §57.5.
 
-24. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+24. **A.** Section §57.6, **Chemical feed, dose, and solution strength**, is governed by \(\dot m_{\text{chem}}=Q\,C_{\text{dose}}\). Use that relation with its own environmental basis and then perform the specific validity check described for §57.6.
 
-25. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+25. **A.** Section §57.7, **Chemical-process selection and residuals**, is governed by \(\text{treatment benefit}\leftrightarrow\text{chemical use+residual solids+downstream effects}\). Use that relation with its own environmental basis and then perform the specific validity check described for §57.7.
 
-26. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+26. **A.** An integrated **Chemical Water/Wastewater Treatment — Coagulation, Softening, Disinfection, Ion Exchange, and Precipitation** solution is acceptable only after the governing balance/model is identified, units are reconciled, and the chapter-specific physical checks are satisfied.
 
-27. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+27. **A.** Source ownership is explicit in **Chemical Water/Wastewater Treatment — Coagulation, Softening, Disinfection, Ion Exchange, and Precipitation**: FE-Handbook-supported material remains tied to the ledger, externally supported content uses SAWYER, MIHELCIC, METCALF, and guide synthesis is labeled as supplemental explanation.
 
 
 ---
@@ -412,25 +419,25 @@ D) It is always a Handbook lookup with no learned interpretation
 
 ## Practice Problem Solutions
 
-1. Use §57.1. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+1. **Independent recomputation for §57.1 — Coagulation, charge destabilization, and flocculation.** Start from the stated givens rather than the worked-example answer. Coagulation first destabilizes particles and is paired with rapid mixing to disperse the chemical. Flocculation then uses gentler mixing to promote collisions and growth of settleable floc; reversing those hydraulic roles defeats the intended sequence. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-2. Use §57.2. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+2. **Independent recomputation for §57.2 — Chemical precipitation and solubility control.** Start from the stated givens rather than the worked-example answer. Precipitation becomes thermodynamically favored when the ion-activity product exceeds the solubility product, \(\mathrm{IAP}>K_{sp}\). Adjusting pH can change species activities and therefore drive metal-hydroxide precipitation for suitable metals. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-3. Use §57.3. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+3. **Independent recomputation for §57.3 — Lime-soda softening.** Start from the stated givens rather than the worked-example answer. Hardness contributions from different ions must be converted to a common **mg/L as CaCO\(_3\)** equivalent basis before addition. Summing raw mg/L of unlike ions directly would not preserve equivalent charge. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-4. Use §57.4. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+4. **Independent recomputation for §57.4 — Disinfection kinetics and contact concepts.** Start from the stated givens rather than the worked-example answer. Disinfection performance commonly depends on disinfectant residual and effective contact time, along with organism, temperature, pH, and water quality. Under otherwise equal conditions, increasing effective \(C\) or \(t\) generally increases inactivation. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-5. Use §57.5. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+5. **Independent recomputation for §57.5 — Ion exchange and exchange capacity.** Start from the stated givens rather than the worked-example answer. A sodium-form cation exchanger supplies exchange sites occupied by Na\(^+\). Ca\(^{2+}\) and Mg\(^{2+}\) can displace sodium according to equivalent charge capacity, thereby removing hardness until the resin approaches exhaustion. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-6. Use §57.6. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+6. **Independent recomputation for §57.6 — Chemical feed, dose, and solution strength.** Start from the stated givens rather than the worked-example answer. Active chemical feed is \(8.34QC=(8.34)(10\ {\rm MGD})(5\ {\rm mg/L})=\mathbf{417\ lb/day}\). If the commercial solution is less than 100% active ingredient, the delivered product mass must be increased accordingly. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-7. Use §57.7. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+7. **Independent recomputation for §57.7 — Chemical-process selection and residuals.** Start from the stated givens rather than the worked-example answer. Chemical precipitation transfers a dissolved constituent into a particulate residual rather than making its mass disappear. The treatment train therefore must include sludge separation, dewatering, handling, and final management. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-8. Check dimensions, concentration-versus-loading basis, conservation of mass/energy, sign convention, and whether removal, risk, or efficiency values stay within physically meaningful limits.
+8. For this chapter, check the result against this failure screen: Use equivalent/stoichiometric basis consistently, verify pH and solubility conditions, convert commercial strength to active chemical, and include sludge/residual mass created by treatment. A result that violates one of those conditions should be rejected even if the arithmetic is internally consistent.
 
-9. Start with FE Environmental specification Area(s) 12, then use the Handbook subsection named in the corresponding ledger entry.
+9. For **Chemical Water/Wastewater Treatment — Coagulation, Softening, Disinfection, Ion Exchange, and Precipitation**, begin with the FE Environmental specification area and Handbook subsection recorded in the ledger. When the atom is `split_required`, use the reconciled external source set **SAWYER, MIHELCIC, METCALF** for the learned portion rather than inventing a Handbook page.
 
-10. Test a limiting case such as zero source, zero reaction, complete mixing, no flow, very large residence time, or 0/100% removal as appropriate. The result should reduce to a sensible physical state.
+10. A useful limiting case is to set chemical dose to zero and confirm chemical feed mass is zero; at \(\mathrm{IAP}=K_{sp}\) verify the precipitation criterion is exactly at equilibrium. The simplified case should reduce to the stated physical behavior before the full model is trusted.
 
 ---
 

@@ -65,7 +65,7 @@ Groundwater systems are described by porosity, effective porosity, hydraulic con
 
 **Problem.** K=20 m/day and b=15 m gives T=300 m²/day.
 
-**Solution.** Apply the relation and environmental model in §54.1; then verify units, boundary conditions, and physical limits.
+**Solution.** Transmissivity is \(T=Kb=(20\ {\rm m/day})(15\ {\rm m})=\mathbf{300\ m^2/day}\). It represents the aquifer's capacity to transmit water through its saturated thickness.
 
 ---
 
@@ -81,7 +81,7 @@ Darcy flux is discharge divided by gross area; seepage or average linear velocit
 
 **Problem.** If Ki=0.3 m/day and ne=0.25, seepage velocity is 1.2 m/day.
 
-**Solution.** Apply the relation and environmental model in §54.2; then verify units, boundary conditions, and physical limits.
+**Solution.** Seepage velocity is \(v_s=Ki/n_e\). Given \(Ki=0.3\ {\rm m/day}\) and \(n_e=0.25\), \(v_s=0.3/0.25=\mathbf{1.2\ m/day}\).
 
 ---
 
@@ -97,7 +97,7 @@ Groundwater flows from higher hydraulic head toward lower hydraulic head. Elevat
 
 **Problem.** A 2-m head drop over 100 m gives i=0.02.
 
-**Solution.** Apply the relation and environmental model in §54.3; then verify units, boundary conditions, and physical limits.
+**Solution.** Hydraulic gradient is head change divided by flow-path length: \(i=\Delta h/L=2/100=\mathbf{0.02}\). It is dimensionless when head and distance use the same length unit.
 
 ---
 
@@ -113,7 +113,7 @@ Pumping creates a cone of depression. Drawdown varies with pumping rate, aquifer
 
 **Problem.** Static head 50 m and pumping head 44 m gives drawdown 6 m.
 
-**Solution.** Apply the relation and environmental model in §54.4; then verify units, boundary conditions, and physical limits.
+**Solution.** Drawdown is \(s=h_0-h=50-44=\mathbf{6\ m}\). The positive value indicates that pumping lowered hydraulic head by 6 m relative to static conditions.
 
 ---
 
@@ -129,7 +129,7 @@ Thiem/Dupuit-style steady relations connect pumping rate to head differences and
 
 **Problem.** Greater transmissivity produces less drawdown for the same pumping rate and geometry.
 
-**Solution.** Apply the relation and environmental model in §54.5; then verify units, boundary conditions, and physical limits.
+**Solution.** In the steady radial-flow relation, drawdown required to sustain a given \(Q\) is inversely related to transmissivity \(T\). Thus, for the same pumping rate and geometry, **larger \(T\) produces less drawdown**.
 
 ---
 
@@ -145,7 +145,7 @@ Transient pumping tests infer transmissivity and storage from drawdown versus ti
 
 **Problem.** At a fixed observation point, drawdown generally increases after pumping begins until boundaries or steady conditions alter the trend.
 
-**Solution.** Apply the relation and environmental model in §54.6; then verify units, boundary conditions, and physical limits.
+**Solution.** The Theis solution makes drawdown a function of \(Q,T,S,r,t\). At a fixed observation point after pumping starts, drawdown generally increases with time until boundaries, recharge, leakage, or a new steady/quasi-steady regime changes that trend.
 
 ---
 
@@ -161,7 +161,7 @@ Specific capacity is a practical well-performance measure. Nearby pumping wells 
 
 **Problem.** A well pumping 600 gpm with 20 ft drawdown has specific capacity 30 gpm/ft.
 
-**Solution.** Apply the relation and environmental model in §54.7; then verify units, boundary conditions, and physical limits.
+**Solution.** Specific capacity is \(Q/s=(600\ {\rm gpm})/(20\ {\rm ft})=\mathbf{30\ gpm/ft}\). It is a performance index tied to the test conditions, not a universal aquifer constant.
 
 ---
 
@@ -171,13 +171,13 @@ Specific capacity is a practical well-performance measure. Nearby pumping wells 
 
 **Problem.** A treatment calculation predicts a negative effluent concentration. What does that indicate?
 
-**Solution.** The algebra or model assumptions are invalid for that condition. Recheck the balance, reaction/order assumptions, time basis, units, and any zero-concentration limiting condition.
+**Solution.** A drawdown sign inconsistent with pumping or a negative transmissivity is a model/setup failure. Recheck head datum, observation radius, pumping sign, logarithm arguments, and aquifer assumptions.
 
 ### Worked Example 9
 
 **Problem.** A remembered environmental correlation differs from the FE Reference Handbook relation. Which should govern the exam solution?
 
-**Solution.** Use the Handbook relation and its definitions unless the problem explicitly supplies a different model.
+**Solution.** For **Groundwater Flow, Aquifer Tests, Wells, and Drawdown**, the FE Reference Handbook equation, definitions, and unit convention govern whenever the Handbook supplies the needed relation. The external references in this chapter are used for specification-required learned material involving **Darcy flow, head gradients, pumping wells, transient aquifer response, and specific capacity**. If a remembered correlation conflicts with the supplied Handbook equation, use the supplied Handbook relation unless the problem explicitly states a different model.
 
 ---
 
@@ -185,7 +185,12 @@ Specific capacity is a practical well-performance measure. Nearby pumping wells 
 
 Primary source basis: **FE Environmental specification Area(s) 11; FE Reference Handbook 10.6 Environmental Engineering, printed pp. 318–360, plus general supporting sections where identified in the ledger.**
 
-**Source boundary:** Some Environmental specification topics are directly tabulated in the Handbook, while others require learned engineering knowledge. The chapter keeps those two categories separate.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required environmental-engineering knowledge that is not fully developed in the Handbook. **Guide synthesis** connects the Handbook and external material into exam-oriented explanations, examples, and checks; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Fitts, C. R. (2023). *Groundwater Science* (3rd ed.). Elsevier. ISBN 978-0-12-811455-1. Supporting scope: Aquifer properties, Darcy flow, hydraulic head, wells, drawdown, aquifer tests, contaminant transport, and groundwater modeling.
+
+The external references support only the learned/application portion of the Environmental specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -356,31 +361,31 @@ D) It is always a Handbook lookup with no learned interpretation
 
 14. For **well specific capacity**, check basis, units, steady/unsteady condition, phase/media, boundary conditions, and whether the selected idealization matches the system.
 
-15. The boundary determines what enters, leaves, accumulates, reacts, or transfers between media. Without it, terms are easily omitted or double counted.
+15. In **Groundwater Flow, Aquifer Tests, Wells, and Drawdown**, the control volume or conceptual boundary determines which sources, sinks, transfers, reactions, and receptors belong in the model. For this chapter specifically, check head datum, gradient direction, aquifer type, radius/time domain, transmissivity/storativity positivity, and whether well-interference or boundaries invalidate the assumed solution.
 
-16. Concentration is mass per volume; loading is mass per time. A low concentration at very high flow can still create a large load.
+16. Concentration and loading answer different questions in **Groundwater Flow, Aquifer Tests, Wells, and Drawdown**: concentration is mass per volume, while loading is mass per time. Always convert \(Q\) and \(C\) to compatible units before multiplying them.
 
-17. The FE Handbook is the supplied exam reference. Its variable definitions and unit conventions should govern unless the problem explicitly provides another relation.
+17. Use the FE Reference Handbook equation and definitions when it supplies the model for **Groundwater Flow, Aquifer Tests, Wells, and Drawdown**. The chapter's external references (FITTS) support learned specification content, not a competing exam formula.
 
-18. A mass/energy balance and physical check can reveal impossible signs, removal above 100%, negative concentrations, unrealistic flows, or model misuse.
+18. A physical check is needed because algebra alone can return impossible environmental states. For this chapter, set hydraulic gradient to zero and confirm Darcy flow is zero; set pumping rate toward zero and confirm pumping-induced drawdown approaches zero.
 
-19. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+19. **A.** Section §54.1, **Aquifer properties, porosity, and hydraulic conductivity**, is governed by \(n=\frac{V_v}{V},\qquad T=Kb\). Use that relation with its own environmental basis and then perform the specific validity check described for §54.1.
 
-20. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+20. **A.** Section §54.2, **Darcy law and groundwater velocity**, is governed by \(Q=KiA,\qquad v_s=\frac{Ki}{n_e}\). Use that relation with its own environmental basis and then perform the specific validity check described for §54.2.
 
-21. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+21. **A.** Section §54.3, **Hydraulic head and gradient**, is governed by \(i=\frac{\Delta h}{L}\). Use that relation with its own environmental basis and then perform the specific validity check described for §54.3.
 
-22. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+22. **A.** Section §54.4, **Pumping wells and drawdown**, is governed by \(s=h_0-h\). Use that relation with its own environmental basis and then perform the specific validity check described for §54.4.
 
-23. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+23. **A.** Section §54.5, **Steady radial-flow well relations**, is governed by \(Q\propto \frac{T(h_1-h_2)}{\ln(r_2/r_1)}\). Use that relation with its own environmental basis and then perform the specific validity check described for §54.5.
 
-24. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+24. **A.** Section §54.6, **Transient aquifer tests — Theis and Jacob concepts**, is governed by \(\text{drawdown}=f(Q,T,S,r,t)\). Use that relation with its own environmental basis and then perform the specific validity check described for §54.6.
 
-25. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+25. **A.** Section §54.7, **Specific capacity, interference, and groundwater system checks**, is governed by \(\text{specific capacity}=\frac{Q}{s}\). Use that relation with its own environmental basis and then perform the specific validity check described for §54.7.
 
-26. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+26. **A.** An integrated **Groundwater Flow, Aquifer Tests, Wells, and Drawdown** solution is acceptable only after the governing balance/model is identified, units are reconciled, and the chapter-specific physical checks are satisfied.
 
-27. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+27. **A.** Source ownership is explicit in **Groundwater Flow, Aquifer Tests, Wells, and Drawdown**: FE-Handbook-supported material remains tied to the ledger, externally supported content uses FITTS, and guide synthesis is labeled as supplemental explanation.
 
 
 ---
@@ -412,25 +417,25 @@ D) It is always a Handbook lookup with no learned interpretation
 
 ## Practice Problem Solutions
 
-1. Use §54.1. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+1. **Independent recomputation for §54.1 — Aquifer properties, porosity, and hydraulic conductivity.** Start from the stated givens rather than the worked-example answer. Transmissivity is \(T=Kb=(20\ {\rm m/day})(15\ {\rm m})=\mathbf{300\ m^2/day}\). It represents the aquifer's capacity to transmit water through its saturated thickness. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-2. Use §54.2. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+2. **Independent recomputation for §54.2 — Darcy law and groundwater velocity.** Start from the stated givens rather than the worked-example answer. Seepage velocity is \(v_s=Ki/n_e\). Given \(Ki=0.3\ {\rm m/day}\) and \(n_e=0.25\), \(v_s=0.3/0.25=\mathbf{1.2\ m/day}\). As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-3. Use §54.3. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+3. **Independent recomputation for §54.3 — Hydraulic head and gradient.** Start from the stated givens rather than the worked-example answer. Hydraulic gradient is head change divided by flow-path length: \(i=\Delta h/L=2/100=\mathbf{0.02}\). It is dimensionless when head and distance use the same length unit. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-4. Use §54.4. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+4. **Independent recomputation for §54.4 — Pumping wells and drawdown.** Start from the stated givens rather than the worked-example answer. Drawdown is \(s=h_0-h=50-44=\mathbf{6\ m}\). The positive value indicates that pumping lowered hydraulic head by 6 m relative to static conditions. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-5. Use §54.5. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+5. **Independent recomputation for §54.5 — Steady radial-flow well relations.** Start from the stated givens rather than the worked-example answer. In the steady radial-flow relation, drawdown required to sustain a given \(Q\) is inversely related to transmissivity \(T\). Thus, for the same pumping rate and geometry, **larger \(T\) produces less drawdown**. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-6. Use §54.6. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+6. **Independent recomputation for §54.6 — Transient aquifer tests — Theis and Jacob concepts.** Start from the stated givens rather than the worked-example answer. The Theis solution makes drawdown a function of \(Q,T,S,r,t\). At a fixed observation point after pumping starts, drawdown generally increases with time until boundaries, recharge, leakage, or a new steady/quasi-steady regime changes that trend. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-7. Use §54.7. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+7. **Independent recomputation for §54.7 — Specific capacity, interference, and groundwater system checks.** Start from the stated givens rather than the worked-example answer. Specific capacity is \(Q/s=(600\ {\rm gpm})/(20\ {\rm ft})=\mathbf{30\ gpm/ft}\). It is a performance index tied to the test conditions, not a universal aquifer constant. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-8. Check dimensions, concentration-versus-loading basis, conservation of mass/energy, sign convention, and whether removal, risk, or efficiency values stay within physically meaningful limits.
+8. For this chapter, check the result against this failure screen: Check head datum, gradient direction, aquifer type, radius/time domain, transmissivity/storativity positivity, and whether well-interference or boundaries invalidate the assumed solution. A result that violates one of those conditions should be rejected even if the arithmetic is internally consistent.
 
-9. Start with FE Environmental specification Area(s) 11, then use the Handbook subsection named in the corresponding ledger entry.
+9. For **Groundwater Flow, Aquifer Tests, Wells, and Drawdown**, begin with the FE Environmental specification area and Handbook subsection recorded in the ledger. When the atom is `split_required`, use the reconciled external source set **FITTS** for the learned portion rather than inventing a Handbook page.
 
-10. Test a limiting case such as zero source, zero reaction, complete mixing, no flow, very large residence time, or 0/100% removal as appropriate. The result should reduce to a sensible physical state.
+10. A useful limiting case is to set hydraulic gradient to zero and confirm Darcy flow is zero; set pumping rate toward zero and confirm pumping-induced drawdown approaches zero. The simplified case should reduce to the stated physical behavior before the full model is trusted.
 
 ---
 

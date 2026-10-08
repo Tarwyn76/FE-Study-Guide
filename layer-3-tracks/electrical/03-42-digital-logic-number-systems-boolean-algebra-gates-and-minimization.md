@@ -65,7 +65,7 @@ Digital systems use positional number systems and finite-width signed representa
 
 **Problem.** For 8-bit two's complement, -1 is 11111111.
 
-**Solution.** Use the relation and model in §42.1, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §42.1 relation \(\text{two's complement}(M)=2^N-M\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: For 8-bit two's complement, -1 is 11111111. Carry the stated units through the calculation and accept the result only after confirming that the bit width, signed-number convention, Boolean expression, and propagation-delay model are consistent.
 
 ---
 
@@ -81,7 +81,7 @@ Boolean variables take two logic values. Truth tables define the exact function 
 
 **Problem.** XOR is 1 when its two inputs differ.
 
-**Solution.** Use the relation and model in §42.2, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §42.2 relation \(C=A\cdot B,\qquad C=A+B,\qquad C=A\oplus B\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: XOR is 1 when its two inputs differ. Carry the stated units through the calculation and accept the result only after confirming that the bit width, signed-number convention, Boolean expression, and propagation-delay model are consistent.
 
 ---
 
@@ -97,7 +97,7 @@ De Morgan's theorems move inversions across AND/OR operations and underpin NAND/
 
 **Problem.** The complement of A+B is A-bar times B-bar.
 
-**Solution.** Use the relation and model in §42.3, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §42.3 relation \(\overline{AB}=\bar A+\bar B,\qquad \overline{A+B}=\bar A\bar B\). The statement follows from the physical or logical meaning of **De Morgan laws, NAND, and NOR universality**: The complement of A+B is A-bar times B-bar. Accept that conclusion only while the bit width, signed-number convention, Boolean expression, and propagation-delay model are consistent.
 
 ---
 
@@ -113,7 +113,7 @@ Canonical forms provide a systematic bridge between truth tables and Boolean exp
 
 **Problem.** A three-variable truth table has eight possible minterms.
 
-**Solution.** Use the relation and model in §42.4, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §42.4 relation \(F=\sum m(\cdots),\qquad G=\prod M(\cdots)\). The statement follows from the physical or logical meaning of **Canonical SOP/POS, minterms, and maxterms**: A three-variable truth table has eight possible minterms. Accept that conclusion only while the bit width, signed-number convention, Boolean expression, and propagation-delay model are consistent.
 
 ---
 
@@ -129,7 +129,7 @@ K-maps simplify logic by combining adjacent minterms that differ in only one var
 
 **Problem.** A group of four adjacent cells eliminates two variables from a four-variable minterm expression.
 
-**Solution.** Use the relation and model in §42.5, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §42.5 relation \(\text{group adjacent 1s in powers of two}\). The statement follows from the physical or logical meaning of **Karnaugh maps and logic minimization**: A group of four adjacent cells eliminates two variables from a four-variable minterm expression. Accept that conclusion only while the bit width, signed-number convention, Boolean expression, and propagation-delay model are consistent.
 
 ---
 
@@ -145,7 +145,7 @@ Combinational outputs depend only on present inputs. Common structures such as a
 
 **Problem.** A 2-to-1 multiplexer selects one of two data inputs using one select bit.
 
-**Solution.** Use the relation and model in §42.6, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §42.6 relation \(\mathbf y=f(\mathbf x)\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: A 2-to-1 multiplexer selects one of two data inputs using one select bit. Carry the stated units through the calculation and accept the result only after confirming that the bit width, signed-number convention, Boolean expression, and propagation-delay model are consistent.
 
 ---
 
@@ -161,7 +161,7 @@ Real gates do not switch instantaneously. Unequal path delays can produce glitch
 
 **Problem.** Two paths with different gate counts can create a transient hazard during an input transition.
 
-**Solution.** Use the relation and model in §42.7, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §42.7 relation \(t_{pd,\text{path}}\approx\sum t_{pd,\text{gates}}\). The statement follows from the physical or logical meaning of **Propagation delay, hazards, and combinational timing**: Two paths with different gate counts can create a transient hazard during an input transition. Accept that conclusion only while the bit width, signed-number convention, Boolean expression, and propagation-delay model are consistent.
 
 ---
 
@@ -171,13 +171,13 @@ Real gates do not switch instantaneously. Unequal path delays can produce glitch
 
 **Problem.** A calculation gives a numerical answer but violates the assumed device region, logic state, or protocol condition. Is the answer valid?
 
-**Solution.** No. Re-select the appropriate piecewise model or system state and solve again. Algebraic consistency does not override the model's validity conditions.
+**Solution.** No. In **Digital Logic — Number Systems, Boolean Algebra, Gates, and Minimization**, a tidy numerical or logical result is still invalid if it contradicts the model assumptions. A representative failure is a signed-number result that exceeds the selected bit width or a Boolean simplification that changes the truth table. Return to the applicable section, choose the state/model consistent with the solved quantities, recompute if needed, and confirm that the bit width, signed-number convention, Boolean expression, and propagation-delay model are consistent.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the expression printed in the FE Reference Handbook. Which should govern an exam solution?
 
-**Solution.** Use the Handbook expression and its definitions unless the problem explicitly supplies a different model.
+**Solution.** Use the FE Reference Handbook expression and its definitions as the controlling exam reference unless the problem explicitly defines another model. For **Digital Logic — Number Systems, Boolean Algebra, Gates, and Minimization**, match symbols, units, reference directions, RMS/peak or digital conventions, and assumptions to the Handbook first. External references support only specification-required learned concepts that the Handbook does not directly develop.
 
 ---
 
@@ -185,7 +185,12 @@ Real gates do not switch instantaneously. Unequal path delays can produce glitch
 
 Primary source basis: **FE Electrical and Computer specification Area 15; FE Reference Handbook 10.6 Electrical and Computer Engineering, printed pp. 361–421, with the specific Handbook subsections identified in the ledger.**
 
-**Source boundary:** The FE Electrical and Computer specification includes both directly tabulated Handbook material and learned engineering/computing concepts. The chapter does not assign false Handbook pages to material that the specification requires but the Handbook does not directly develop.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required engineering/computing knowledge that is not fully developed in the Handbook. **Guide synthesis** connects those two bodies of material into exam-oriented explanations and examples; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Harris, S. L., & Harris, D. (2021). *Digital Design and Computer Architecture, RISC-V Edition*. Morgan Kaufmann. ISBN 978-0-12-820064-3. Supporting scope: Combinational/sequential logic, timing, finite-state machines, programmable logic, and digital-system organization.
+
+The external references support only the learned/application portion of the specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +359,31 @@ D) It is always only a qualitative concept
 
 14. For **logic propagation delay**, verify operating region/model validity, units or logic levels, sign/polarity convention, and loading or boundary conditions before accepting the result.
 
-15. The same symbol or equation can represent different physical behavior outside its valid device region, frequency range, timing model, or protocol abstraction.
+15. In Digital Logic — Number Systems, Boolean Algebra, Gates, and Minimization, the same equation or symbol can change meaning when the operating state, abstraction, timing model, or signal convention changes; verify that the bit width, signed-number convention, Boolean expression, and propagation-delay model are consistent.
 
-16. The Handbook is the exam reference; using its definitions prevents hidden differences in constants, RMS/peak values, sign convention, or model form.
+16. The FE Reference Handbook is the exam reference for Digital Logic — Number Systems, Boolean Algebra, Gates, and Minimization. Match its variable definitions and conventions before substitution; external references support only learned material not developed in the Handbook.
 
-17. Algebra can be internally consistent while predicting an impossible device state, voltage, timing relationship, address range, or complexity claim. The physical/logical model must also be satisfied.
+17. An algebraically consistent answer can still be invalid in Digital Logic — Number Systems, Boolean Algebra, Gates, and Minimization. Reject a result that implies a signed-number result that exceeds the selected bit width or a Boolean simplification that changes the truth table and reselect the appropriate model or state.
 
-18. Limiting cases and order-of-magnitude checks expose sign errors, impossible gains, invalid probabilities, unrealistic timing, and model misuse.
+18. A useful independent check for this chapter is to evaluate all-zero/all-one inputs or a one-bit boundary case and confirm the truth table and signed representation. If the result does not reduce correctly, recheck the model, sign convention, and arithmetic.
 
-19. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+19. **A.** For **Binary, hexadecimal, signed numbers, and two's complement**, the governing section model is \(\text{two's complement}(M)=2^N-M\). Apply it only with the definitions and assumptions stated in §42.1, then verify that the bit width, signed-number convention, Boolean expression, and propagation-delay model are consistent.
 
-20. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+20. **A.** For **Boolean operations and truth tables**, the governing section model is \(C=A\cdot B,\qquad C=A+B,\qquad C=A\oplus B\). Apply it only with the definitions and assumptions stated in §42.2, then verify that the bit width, signed-number convention, Boolean expression, and propagation-delay model are consistent.
 
-21. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+21. **A.** For **De Morgan laws, NAND, and NOR universality**, the governing section model is \(\overline{AB}=\bar A+\bar B,\qquad \overline{A+B}=\bar A\bar B\). Apply it only with the definitions and assumptions stated in §42.3, then verify that the bit width, signed-number convention, Boolean expression, and propagation-delay model are consistent.
 
-22. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+22. **A.** For **Canonical SOP/POS, minterms, and maxterms**, the governing section model is \(F=\sum m(\cdots),\qquad G=\prod M(\cdots)\). Apply it only with the definitions and assumptions stated in §42.4, then verify that the bit width, signed-number convention, Boolean expression, and propagation-delay model are consistent.
 
-23. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+23. **A.** For **Karnaugh maps and logic minimization**, the governing section model is \(\text{group adjacent 1s in powers of two}\). Apply it only with the definitions and assumptions stated in §42.5, then verify that the bit width, signed-number convention, Boolean expression, and propagation-delay model are consistent.
 
-24. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+24. **A.** For **Combinational circuits — adders, multiplexers, decoders**, the governing section model is \(\mathbf y=f(\mathbf x)\). Apply it only with the definitions and assumptions stated in §42.6, then verify that the bit width, signed-number convention, Boolean expression, and propagation-delay model are consistent.
 
-25. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+25. **A.** For **Propagation delay, hazards, and combinational timing**, the governing section model is \(t_{pd,\text{path}}\approx\sum t_{pd,\text{gates}}\). Apply it only with the definitions and assumptions stated in §42.7, then verify that the bit width, signed-number convention, Boolean expression, and propagation-delay model are consistent.
 
-26. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+26. **A.** For an integrated Digital Logic — Number Systems, Boolean Algebra, Gates, and Minimization problem, separate the physical/logical model from the arithmetic, solve with the relevant section relations, and cross-check the result against the chapter-specific validity conditions.
 
-27. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+27. **A.** In **Digital Logic — Number Systems, Boolean Algebra, Gates, and Minimization**, the source boundary is explicit: FE-Handbook-supported material remains tied to the ledger, externally supported material uses the chapter references for Boolean logic and combinational digital design (HARRIS), and guide synthesis is identified as supplemental explanation rather than Handbook text.
 
 
 ---
@@ -410,25 +415,25 @@ D) It is always only a qualitative concept
 
 ## Practice Problem Solutions
 
-1. Use §42.1. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+1. **Independent check for §42.1.** Begin independently with \(\text{two's complement}(M)=2^N-M\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: For 8-bit two's complement, -1 is 11111111. Then verify that the bit width, signed-number convention, Boolean expression, and propagation-delay model are consistent.
 
-2. Use §42.2. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+2. **Independent check for §42.2.** Begin independently with \(C=A\cdot B,\qquad C=A+B,\qquad C=A\oplus B\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: XOR is 1 when its two inputs differ. Then verify that the bit width, signed-number convention, Boolean expression, and propagation-delay model are consistent.
 
-3. Use §42.3. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+3. **Independent check for §42.3.** Begin independently with \(\overline{AB}=\bar A+\bar B,\qquad \overline{A+B}=\bar A\bar B\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: The complement of A+B is A-bar times B-bar. Then verify that the bit width, signed-number convention, Boolean expression, and propagation-delay model are consistent.
 
-4. Use §42.4. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+4. **Independent check for §42.4.** Begin independently with \(F=\sum m(\cdots),\qquad G=\prod M(\cdots)\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: A three-variable truth table has eight possible minterms. Then verify that the bit width, signed-number convention, Boolean expression, and propagation-delay model are consistent.
 
-5. Use §42.5. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+5. **Independent check for §42.5.** Begin independently with \(\text{group adjacent 1s in powers of two}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: A group of four adjacent cells eliminates two variables from a four-variable minterm expression. Then verify that the bit width, signed-number convention, Boolean expression, and propagation-delay model are consistent.
 
-6. Use §42.6. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+6. **Independent check for §42.6.** Begin independently with \(\mathbf y=f(\mathbf x)\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: A 2-to-1 multiplexer selects one of two data inputs using one select bit. Then verify that the bit width, signed-number convention, Boolean expression, and propagation-delay model are consistent.
 
-7. Use §42.7. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+7. **Independent check for §42.7.** Begin independently with \(t_{pd,\text{path}}\approx\sum t_{pd,\text{gates}}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: Two paths with different gate counts can create a transient hazard during an input transition. Then verify that the bit width, signed-number convention, Boolean expression, and propagation-delay model are consistent.
 
-8. Check device operating region, saturation/clipping, frequency range, RMS-versus-peak convention, timing constraints, address/bit width, or protocol/software preconditions as applicable.
+8. Check the chapter-specific failure mode first: a signed-number result that exceeds the selected bit width or a Boolean simplification that changes the truth table. Do not accept the numerical or logical result until the bit width, signed-number convention, Boolean expression, and propagation-delay model are consistent.
 
-9. Start with FE Electrical and Computer specification Area 15, then use the Handbook subsection named in the ledger for the specific concept.
+9. For **Digital Logic — Number Systems, Boolean Algebra, Gates, and Minimization**, start with the FE Electrical and Computer specification/Handbook location recorded in the ledger, then use the chapter's reconciled source set for Boolean logic and combinational digital design (HARRIS) when the concept is split-required. That preserves the Handbook-versus-learned-material boundary.
 
-10. Test a simple limiting case: zero input, matched load, very low/high frequency, all-zero/all-one logic, minimum/maximum address, or small input size as appropriate. The result should reduce to a physically or logically sensible form.
+10. Use this limiting check: evaluate all-zero/all-one inputs or a one-bit boundary case and confirm the truth table and signed representation. The simplified case should produce the expected physical, timing, logic, protocol, or complexity behavior before the full solution is trusted.
 
 ---
 

@@ -65,7 +65,7 @@ Water-quality calculations begin with a mass balance. Convert concentrations and
 
 **Problem.** Q=0.5 m³/s and C=10 mg/L gives 5 g/s.
 
-**Solution.** Apply the relation and definitions in §21.1; the stated result follows with consistent units and sign convention.
+**Solution.** For treatment-process loading, convert the influent concentration first: \(10\ \text{mg/L}=10\ \text{g/m}^3\). Then \(\dot m=QC=(0.5\ \text{m}^3/\text{s})(10\ \text{g/m}^3)=5\ \text{g/s}\). The **5 g/s** value is the contaminant mass entering the treatment process each second and is the basis for a subsequent removal-load calculation.
 
 ---
 
@@ -81,7 +81,7 @@ Civil FE problems may require basic chemistry interpretation even when detailed 
 
 **Problem.** If [H+]=1e-7 mol/L, pH=7.
 
-**Solution.** Apply the relation and definitions in §21.2; the stated result follows with consistent units and sign convention.
+**Solution.** Use \(\mathrm{pH}=-\log_{10}[H^+]\). With \([H^+]=1\times10^{-7}\ \text{mol/L}\), \(\mathrm{pH}=-\log_{10}(10^{-7})=7\).
 
 ---
 
@@ -97,7 +97,7 @@ Sampling plans must match the question being asked. A grab sample represents one
 
 **Problem.** Three equal-weight samples at 8, 10, and 12 mg/L average 10 mg/L.
 
-**Solution.** Apply the relation and definitions in §21.3; the stated result follows with consistent units and sign convention.
+**Solution.** For equal-weight samples, the arithmetic mean applies: \(\bar C=(8+10+12)/3=30/3=10\ \text{mg/L}\). If sample volumes or time intervals were unequal, a weighted average could be required instead.
 
 ---
 
@@ -113,7 +113,7 @@ Conventional drinking-water treatment removes particles and pathogens through se
 
 **Problem.** Turbidity removal is primarily associated with coagulation/flocculation, sedimentation, and filtration.
 
-**Solution.** Apply the relation and definitions in §21.4; the stated result follows with consistent units and sign convention.
+**Solution.** The conventional turbidity-removal train is coagulation, flocculation, sedimentation, and filtration. Coagulation destabilizes particles, flocculation builds settleable flocs, sedimentation removes much of the suspended mass, and filtration captures remaining particles. Disinfection serves a different primary purpose: pathogen inactivation.
 
 ---
 
@@ -129,7 +129,7 @@ Softening reduces calcium and magnesium hardness. FE questions often emphasize e
 
 **Problem.** Convert all hardness species to a common CaCO3 equivalent basis before summing.
 
-**Solution.** Apply the relation and definitions in §21.5; the stated result follows with consistent units and sign convention.
+**Solution.** Hardness species must be converted to an equivalent concentration on a common CaCO₃ basis before addition. This puts ions with different valence and molar mass on the same equivalent-weight basis, allowing total hardness to be summed consistently.
 
 ---
 
@@ -145,7 +145,7 @@ Biological treatment uses microorganisms to remove biodegradable organics. Recog
 
 **Problem.** Higher biodegradable loading generally increases oxygen demand.
 
-**Solution.** Apply the relation and definitions in §21.6; the stated result follows with consistent units and sign convention.
+**Solution.** Biodegradable organic matter consumes oxygen during biological oxidation and biomass synthesis. Therefore, all else equal, a higher biodegradable substrate loading increases the oxygen requirement of an aerobic treatment process and can raise aeration demand.
 
 ---
 
@@ -161,7 +161,7 @@ Treatment selection is driven by influent quality, target quality, residuals man
 
 **Problem.** If influent is 12 mg/L and target is 3 mg/L, required reduction is 9 mg/L.
 
-**Solution.** Apply the relation and definitions in §21.7; the stated result follows with consistent units and sign convention.
+**Solution.** Required concentration reduction is \(C_{in}-C_{target}=12-3=9\ \text{mg/L}\). As a fraction of the influent concentration, the removal efficiency is \(9/12=0.75\), or **75%**, if the problem also asks for percent removal.
 
 ---
 
@@ -171,13 +171,13 @@ Treatment selection is driven by influent quality, target quality, residuals man
 
 **Problem.** A problem combines two ideas from this chapter. What should be done before calculation?
 
-**Solution.** Draw the system, identify the requested quantity, establish units and sign conventions, and list the governing relations before substituting numbers.
+**Solution.** For a treatment problem, first perform the mass or concentration balance to determine the required removal, then select the process capable of achieving that removal for the contaminant type. Chemical-equilibrium quantities, solids removal, and biological oxygen demand should be kept conceptually separate.
 
 ### Worked Example 9
 
 **Problem.** A remembered equation differs from the FE Reference Handbook form. Which should govern the exam solution?
 
-**Solution.** Use the Handbook form and its unit convention unless the problem explicitly supplies a different relation.
+**Solution.** Use the FE Handbook relation for the calculation being asked—mass balance, pH, hardness, or treatment sizing—and then apply learned process-selection knowledge separately. Do not treat a process-flow sequence as though it were itself a numerical Handbook equation.
 
 ---
 
@@ -185,11 +185,15 @@ Treatment selection is driven by influent quality, target quality, residuals man
 
 Primary source basis: **FE Civil specification Area 10; FE Reference Handbook 10.6 Civil Engineering and supporting general sections cited below.**
 
-**Source boundary:** Some Civil specification topics are directly tabulated in the Handbook; others are named by the specification but require learned engineering knowledge. This chapter does not imply that every workflow, code provision, or design factor is printed in the Handbook.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is retained because it is required by the FE Civil specification but needs engineering knowledge beyond what is printed in the Handbook. **Guide synthesis** connects those two sources into exam-oriented workflows and examples; it is not presented as Handbook text.
 
-Where the FE specification requires a topic that is not directly developed in the Handbook, the ledger marks it **specification-required / guide-developed** rather than inventing a Handbook citation.
+**External source support for split-required concepts:**
+- `CIV-3-021-01` — Davis, M. L. (2020). *Water and Wastewater Engineering: Design Principles and Practice* (2nd ed.). McGraw Hill. ISBN 978-1-260-13227-4. Cited at publication/standard level; no page-level claim.
+- `CIV-3-021-02` — Davis, M. L. (2020). *Water and Wastewater Engineering: Design Principles and Practice* (2nd ed.). McGraw Hill. ISBN 978-1-260-13227-4. Cited at publication/standard level; no page-level claim.
+- `CIV-3-021-04` — Davis, M. L. (2020). *Water and Wastewater Engineering: Design Principles and Practice* (2nd ed.). McGraw Hill. ISBN 978-1-260-13227-4. Cited at publication/standard level; no page-level claim.
+- `CIV-3-021-06` — Metcalf & Eddy/AECOM, Tchobanoglous, G., Stensel, H. D., Tsuchihashi, R., & Burton, F. L. (2014). *Wastewater Engineering: Treatment and Resource Recovery* (5th ed.). McGraw Hill. ISBN 978-0-07-340118-8. Cited at publication/standard level; no page-level claim.
 
----
+No external source above is being used to replace the FE Reference Handbook. The external references support only the learned/application portion identified by `split_required: true`.
 
 ## Where This Goes Wrong
 
@@ -357,31 +361,31 @@ D) Treat it as optional
 
 14. For **treatment process selection**, common failures are wrong units, wrong sign convention, wrong geometry/boundary condition, or using a relation outside its assumptions.
 
-15. The sketch exposes geometry, boundaries, loads/flows, signs, and missing data before algebra begins.
+15. Draw the treatment-process control volume and identify influent, effluent, recycle, reaction, and removal terms before selecting a mass-balance or chemistry relation.
 
-16. Use the Handbook form when it is available because the FE exam supplies that reference and its constants/unit conventions govern the problem.
+16. Use the Handbook mass-balance, pH, or water-quality relation when supplied, then apply process-selection knowledge separately rather than substituting a remembered treatment rule for the reference equation.
 
-17. Mixed unit systems create hidden conversion errors and can invalidate dimensional consistency.
+17. Concentration and flow must be on compatible bases: mg/L, g/m³, L/s, and m³/s require explicit conversion before mass loading or removal rate is calculated.
 
-18. A reasonableness check can catch sign, magnitude, boundary-condition, and unit errors that algebra alone does not reveal.
+18. Check treatment bounds: concentrations and loads cannot be negative, percent removal should remain between 0 and 100 percent, and an effluent target must be lower than influent when removal is claimed.
 
-19. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+19. **A.** For **Water-quality concentration, loading, and mass balance**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-20. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+20. **A.** For **Basic water chemistry — pH, alkalinity, hardness, and equilibrium concepts**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-21. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+21. **A.** For **Water-quality sampling, testing, and standards**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-22. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+22. **A.** For **Drinking-water treatment train**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-23. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+23. **A.** For **Softening and hardness-removal concepts**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-24. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+24. **A.** For **Wastewater biological treatment and oxygen demand**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-25. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+25. **A.** For **Civil water-quality decisions and process selection**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-26. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+26. **A.** In Water Quality and Water/Wastewater Treatment for Civil Applications, dimensional consistency and an independent physical check are the fastest ways to detect a unit, sign, magnitude, or modeling error before accepting the result.
 
-27. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+27. **A.** Water/wastewater process-selection and biological-treatment details beyond Handbook formulas are labeled learned material and supported by the reconciled Davis and Metcalf & Eddy references.
 
 
 
@@ -414,25 +418,39 @@ D) Treat it as optional
 
 ## Practice Problem Solutions
 
-1. Use §21.1. Q=0.5 m³/s and C=10 mg/L gives 5 g/s. The calculation or classification follows from the displayed section relation and the stated data.
+1. **Independent check for §21.1.** Use the influent flow and concentration as a treatment loading calculation: \(10\ \text{mg/L}=10\ \text{g/m}^3\), so \(QC=(0.5)(10)=5\ \text{g/s}\). Verify the units collapse to mass per time and distinguish this influent load from the amount actually removed by the process.
 
-2. Use §21.2. If [H+]=1e-7 mol/L, pH=7. The calculation or classification follows from the displayed section relation and the stated data.
 
-3. Use §21.3. Three equal-weight samples at 8, 10, and 12 mg/L average 10 mg/L. The calculation or classification follows from the displayed section relation and the stated data.
 
-4. Use §21.4. Turbidity removal is primarily associated with coagulation/flocculation, sedimentation, and filtration. The calculation or classification follows from the displayed section relation and the stated data.
+2. **Independent check for §21.2.** Rework the problem from the stated givens rather than copying the worked-example result. Use \(\mathrm{pH}=-\log_{10}[H^+]\). With \([H^+]=1\times10^{-7}\ \text{mol/L}\), \(\mathrm{pH}=-\log_{10}(10^{-7})=7\). **Check:** confirm the final magnitude and units against the physical meaning of §21.2 before accepting the answer.
 
-5. Use §21.5. Convert all hardness species to a common CaCO3 equivalent basis before summing. The calculation or classification follows from the displayed section relation and the stated data.
 
-6. Use §21.6. Higher biodegradable loading generally increases oxygen demand. The calculation or classification follows from the displayed section relation and the stated data.
 
-7. Use §21.7. If influent is 12 mg/L and target is 3 mg/L, required reduction is 9 mg/L. The calculation or classification follows from the displayed section relation and the stated data.
+3. **Independent check for §21.3.** Rework the problem from the stated givens rather than copying the worked-example result. For equal-weight samples, the arithmetic mean applies: \(\bar C=(8+10+12)/3=30/3=10\ \text{mg/L}\). If sample volumes or time intervals were unequal, a weighted average could be required instead. **Check:** confirm the final magnitude and units against the physical meaning of §21.3 before accepting the answer.
 
-8. Check dimensions, unit conversion, sign convention, and whether the selected relation's assumptions match the physical situation.
 
-9. Start with FE Civil specification Area 10 and the Handbook sections identified in **As the Handbook States It** and the ledger entries for this chapter.
 
-10. A sketch exposes incompatible geometry, impossible flow/load directions, missing reactions/boundaries, and double-counted or omitted terms.
+4. **Independent check for §21.4.** Rework the problem from the stated givens rather than copying the worked-example result. The conventional turbidity-removal train is coagulation, flocculation, sedimentation, and filtration. Coagulation destabilizes particles, flocculation builds settleable flocs, sedimentation removes much of the suspended mass, and filtration captures remaining particles. Disinfection serves a different primary purpose: pathogen inactivation. **Check:** confirm the final magnitude and units against the physical meaning of §21.4 before accepting the answer.
+
+
+
+5. **Independent check for §21.5.** Rework the problem from the stated givens rather than copying the worked-example result. Hardness species must be converted to an equivalent concentration on a common CaCO₃ basis before addition. This puts ions with different valence and molar mass on the same equivalent-weight basis, allowing total hardness to be summed consistently. **Check:** confirm the final magnitude and units against the physical meaning of §21.5 before accepting the answer.
+
+
+
+6. **Independent check for §21.6.** Rework the problem from the stated givens rather than copying the worked-example result. Biodegradable organic matter consumes oxygen during biological oxidation and biomass synthesis. Therefore, all else equal, a higher biodegradable substrate loading increases the oxygen requirement of an aerobic treatment process and can raise aeration demand. **Check:** confirm the final magnitude and units against the physical meaning of §21.6 before accepting the answer.
+
+
+
+7. **Independent check for §21.7.** Rework the problem from the stated givens rather than copying the worked-example result. Required concentration reduction is \(C_{in}-C_{target}=12-3=9\ \text{mg/L}\). As a fraction of the influent concentration, the removal efficiency is \(9/12=0.75\), or **75%**, if the problem also asks for percent removal. **Check:** confirm the final magnitude and units against the physical meaning of §21.7 before accepting the answer.
+
+
+
+8. Before accepting a water quality and water/wastewater treatment for civil applications result, verify the dimensional units, the chapter-specific sign or direction convention, and that the selected model matches the stated geometry and boundary conditions.
+
+9. Start with **FE Civil specification Area 10** and the Handbook water-quality/mass-balance entries in the ledger; use Davis or Metcalf & Eddy for the reconciled learned treatment-process material.
+
+10. For water quality and water/wastewater treatment for civil applications, a sketch makes the controlling geometry, direction, boundary, load/flow path, or sequence visible before algebra, which often reveals missing data or an impossible assumption immediately.
 
 ---
 

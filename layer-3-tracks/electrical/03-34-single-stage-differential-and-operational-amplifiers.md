@@ -65,7 +65,7 @@ A common-emitter stage provides voltage gain and phase inversion. The effective 
 
 **Problem.** If gm=20 mS and effective collector load is 2 kΩ, the unloaded model gives Av≈-40.
 
-**Solution.** Use the relation and model in §34.1, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §34.1 relation \(A_v\approx -g_m R_{\text{effective}}\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: If gm=20 mS and effective collector load is 2 kΩ, the unloaded model gives Av≈-40. Carry the stated units through the calculation and accept the result only after confirming that the amplifier remains in its linear small-signal/negative-feedback range and does not violate output headroom.
 
 ---
 
@@ -81,7 +81,7 @@ Emitter and source followers trade voltage gain for buffering, typically providi
 
 **Problem.** A follower is useful between a high-impedance signal source and a lower-impedance load.
 
-**Solution.** Use the relation and model in §34.2, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §34.2 relation \(A_v\lesssim 1\). The statement follows from the physical or logical meaning of **Source/emitter followers and buffering**: A follower is useful between a high-impedance signal source and a lower-impedance load. Accept that conclusion only while the amplifier remains in its linear small-signal/negative-feedback range and does not violate output headroom.
 
 ---
 
@@ -97,7 +97,7 @@ A differential amplifier responds primarily to input difference while rejecting 
 
 **Problem.** If v1=1.01 V and v2=0.99 V, vid=20 mV and vicm=1.00 V.
 
-**Solution.** Use the relation and model in §34.3, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §34.3 relation \(v_{id}=v_1-v_2,\qquad v_{icm}=\frac{v_1+v_2}{2}\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: If v1=1.01 V and v2=0.99 V, vid=20 mV and vicm=1.00 V. Carry the stated units through the calculation and accept the result only after confirming that the amplifier remains in its linear small-signal/negative-feedback range and does not violate output headroom.
 
 ---
 
@@ -113,7 +113,7 @@ Ideal op-amp analysis uses zero input current and equal input-node voltage only 
 
 **Problem.** An op amp driven into saturation does not satisfy the virtual-short assumption.
 
-**Solution.** Use the relation and model in §34.4, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §34.4 relation \(i_+=i_-=0,\qquad v_+\approx v_-\text{ in linear negative feedback}\). The statement follows from the physical or logical meaning of **Ideal op-amp rules and negative feedback**: An op amp driven into saturation does not satisfy the virtual-short assumption. Accept that conclusion only while the amplifier remains in its linear small-signal/negative-feedback range and does not violate output headroom.
 
 ---
 
@@ -129,7 +129,7 @@ Closed-loop op-amp gains are set primarily by feedback networks when the ideal a
 
 **Problem.** Rf=20 kΩ and Rin=5 kΩ gives inverting gain -4.
 
-**Solution.** Use the relation and model in §34.5, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §34.5 relation \(A_{v,\text{inv}}=-\frac{R_f}{R_{in}},\qquad A_{v,\text{noninv}}=1+\frac{R_f}{R_g}\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: Rf=20 kΩ and Rin=5 kΩ gives inverting gain -4. Carry the stated units through the calculation and accept the result only after confirming that the amplifier remains in its linear small-signal/negative-feedback range and does not violate output headroom.
 
 ---
 
@@ -145,7 +145,7 @@ Finite open-loop gain, bandwidth, slew rate, input/output limits, offsets, and c
 
 **Problem.** A 10-V predicted output is impossible if the amplifier output saturates at ±5 V.
 
-**Solution.** Use the relation and model in §34.6, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §34.6 relation \(\mathrm{CMRR}=\frac{A_d}{A_{cm}},\qquad \mathrm{CMRR}_{dB}=20\log_{10}\!\frac{A_d}{A_{cm}}\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: A 10-V predicted output is impossible if the amplifier output saturates at ±5 V. Carry the stated units through the calculation and accept the result only after confirming that the amplifier remains in its linear small-signal/negative-feedback range and does not violate output headroom.
 
 ---
 
@@ -161,7 +161,7 @@ Instrumentation problems combine sensors, conditioning, conversion, and loading.
 
 **Problem.** Choose conditioning gain so the sensor's expected range fits the ADC input range without clipping.
 
-**Solution.** Use the relation and model in §34.7, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §34.7 relation \(\text{measurand}\rightarrow\text{transducer}\rightarrow\text{conditioning}\rightarrow\text{ADC}\rightarrow\text{processing}\). The statement follows from the physical or logical meaning of **Instrumentation chain, sensors, and data-acquisition interfaces**: Choose conditioning gain so the sensor's expected range fits the ADC input range without clipping. Accept that conclusion only while the amplifier remains in its linear small-signal/negative-feedback range and does not violate output headroom.
 
 ---
 
@@ -171,13 +171,13 @@ Instrumentation problems combine sensors, conditioning, conversion, and loading.
 
 **Problem.** A calculation gives a numerical answer but violates the assumed device region, logic state, or protocol condition. Is the answer valid?
 
-**Solution.** No. Re-select the appropriate piecewise model or system state and solve again. Algebraic consistency does not override the model's validity conditions.
+**Solution.** No. In **Single-Stage, Differential, and Operational Amplifiers**, a tidy numerical or logical result is still invalid if it contradicts the model assumptions. A representative failure is an op-amp calculation that demands output beyond the supply-limited swing or uses the virtual short while saturated. Return to the applicable section, choose the state/model consistent with the solved quantities, recompute if needed, and confirm that the amplifier remains in its linear small-signal/negative-feedback range and does not violate output headroom.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the expression printed in the FE Reference Handbook. Which should govern an exam solution?
 
-**Solution.** Use the Handbook expression and its definitions unless the problem explicitly supplies a different model.
+**Solution.** Use the FE Reference Handbook expression and its definitions as the controlling exam reference unless the problem explicitly defines another model. For **Single-Stage, Differential, and Operational Amplifiers**, match symbols, units, reference directions, RMS/peak or digital conventions, and assumptions to the Handbook first. External references support only specification-required learned concepts that the Handbook does not directly develop.
 
 ---
 
@@ -185,7 +185,14 @@ Instrumentation problems combine sensors, conditioning, conversion, and loading.
 
 Primary source basis: **FE Electrical and Computer specification Area 9; FE Reference Handbook 10.6 Electrical and Computer Engineering, printed pp. 361–421, with the specific Handbook subsections identified in the ledger.**
 
-**Source boundary:** The FE Electrical and Computer specification includes both directly tabulated Handbook material and learned engineering/computing concepts. The chapter does not assign false Handbook pages to material that the specification requires but the Handbook does not directly develop.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required engineering/computing knowledge that is not fully developed in the Handbook. **Guide synthesis** connects those two bodies of material into exam-oriented explanations and examples; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Sedra, A. S., Smith, K. C., Carusone, T. C., & Gaudet, V. (2020). *Microelectronic Circuits* (8th ed.). Oxford University Press. ISBN 978-0-19-085346-4. Supporting scope: Diodes, BJT/MOSFET bias, small-signal models, single-stage amplifiers, differential amplifiers, and op amps.
+- Webster, J. G., & Eren, H. (Eds.). (2014). *Measurement, Instrumentation, and Sensors Handbook* (2nd ed.). CRC Press. Supporting scope: Measurement chains, sensors, instrumentation, signal conditioning, and data acquisition.
+- IEEE. (2024). *IEEE Standard for a Smart Transducer Interface for Sensors and Actuators—Common Functions, Communication Protocols, and Transducer Electronic Data Sheet (TEDS) Formats* (IEEE Std 1451.0-2024). Supporting scope: Standardized smart-transducer interfaces, services, communications, and TEDS.
+
+The external references support only the learned/application portion of the specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +361,31 @@ D) It is always only a qualitative concept
 
 14. For **instrumentation amplifier chain**, verify operating region/model validity, units or logic levels, sign/polarity convention, and loading or boundary conditions before accepting the result.
 
-15. The same symbol or equation can represent different physical behavior outside its valid device region, frequency range, timing model, or protocol abstraction.
+15. In Single-Stage, Differential, and Operational Amplifiers, the same equation or symbol can change meaning when the operating state, abstraction, timing model, or signal convention changes; verify that the amplifier remains in its linear small-signal/negative-feedback range and does not violate output headroom.
 
-16. The Handbook is the exam reference; using its definitions prevents hidden differences in constants, RMS/peak values, sign convention, or model form.
+16. The FE Reference Handbook is the exam reference for Single-Stage, Differential, and Operational Amplifiers. Match its variable definitions and conventions before substitution; external references support only learned material not developed in the Handbook.
 
-17. Algebra can be internally consistent while predicting an impossible device state, voltage, timing relationship, address range, or complexity claim. The physical/logical model must also be satisfied.
+17. An algebraically consistent answer can still be invalid in Single-Stage, Differential, and Operational Amplifiers. Reject a result that implies an op-amp calculation that demands output beyond the supply-limited swing or uses the virtual short while saturated and reselect the appropriate model or state.
 
-18. Limiting cases and order-of-magnitude checks expose sign errors, impossible gains, invalid probabilities, unrealistic timing, and model misuse.
+18. A useful independent check for this chapter is to set differential input to zero or force the predicted output to the rail and verify the linear model's boundary. If the result does not reduce correctly, recheck the model, sign convention, and arithmetic.
 
-19. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+19. **A.** For **Common-emitter gain, inversion, and small-signal loading**, the governing section model is \(A_v\approx -g_m R_{\text{effective}}\). Apply it only with the definitions and assumptions stated in §34.1, then verify that the amplifier remains in its linear small-signal/negative-feedback range and does not violate output headroom.
 
-20. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+20. **A.** For **Source/emitter followers and buffering**, the governing section model is \(A_v\lesssim 1\). Apply it only with the definitions and assumptions stated in §34.2, then verify that the amplifier remains in its linear small-signal/negative-feedback range and does not violate output headroom.
 
-21. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+21. **A.** For **Differential-pair operation and common-mode rejection**, the governing section model is \(v_{id}=v_1-v_2,\qquad v_{icm}=\frac{v_1+v_2}{2}\). Apply it only with the definitions and assumptions stated in §34.3, then verify that the amplifier remains in its linear small-signal/negative-feedback range and does not violate output headroom.
 
-22. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+22. **A.** For **Ideal op-amp rules and negative feedback**, the governing section model is \(i_+=i_-=0,\qquad v_+\approx v_-\text{ in linear negative feedback}\). Apply it only with the definitions and assumptions stated in §34.4, then verify that the amplifier remains in its linear small-signal/negative-feedback range and does not violate output headroom.
 
-23. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+23. **A.** For **Inverting, noninverting, summing, and difference amplifiers**, the governing section model is \(A_{v,\text{inv}}=-\frac{R_f}{R_{in}},\qquad A_{v,\text{noninv}}=1+\frac{R_f}{R_g}\). Apply it only with the definitions and assumptions stated in §34.5, then verify that the amplifier remains in its linear small-signal/negative-feedback range and does not violate output headroom.
 
-24. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+24. **A.** For **Nonideal op amps, saturation, bandwidth, and CMRR**, the governing section model is \(\mathrm{CMRR}=\frac{A_d}{A_{cm}},\qquad \mathrm{CMRR}_{dB}=20\log_{10}\!\frac{A_d}{A_{cm}}\). Apply it only with the definitions and assumptions stated in §34.6, then verify that the amplifier remains in its linear small-signal/negative-feedback range and does not violate output headroom.
 
-25. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+25. **A.** For **Instrumentation chain, sensors, and data-acquisition interfaces**, the governing section model is \(\text{measurand}\rightarrow\text{transducer}\rightarrow\text{conditioning}\rightarrow\text{ADC}\rightarrow\text{processing}\). Apply it only with the definitions and assumptions stated in §34.7, then verify that the amplifier remains in its linear small-signal/negative-feedback range and does not violate output headroom.
 
-26. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+26. **A.** For an integrated Single-Stage, Differential, and Operational Amplifiers problem, separate the physical/logical model from the arithmetic, solve with the relevant section relations, and cross-check the result against the chapter-specific validity conditions.
 
-27. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+27. **A.** In **Single-Stage, Differential, and Operational Amplifiers**, the source boundary is explicit: FE-Handbook-supported material remains tied to the ledger, externally supported material uses the chapter references for amplifier analysis and instrumentation interfaces (SEDRA / WEBSTER_EREN / IEEE1451), and guide synthesis is identified as supplemental explanation rather than Handbook text.
 
 
 ---
@@ -410,25 +417,25 @@ D) It is always only a qualitative concept
 
 ## Practice Problem Solutions
 
-1. Use §34.1. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+1. **Independent check for §34.1.** Begin independently with \(A_v\approx -g_m R_{\text{effective}}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: If gm=20 mS and effective collector load is 2 kΩ, the unloaded model gives Av≈-40. Then verify that the amplifier remains in its linear small-signal/negative-feedback range and does not violate output headroom.
 
-2. Use §34.2. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+2. **Independent check for §34.2.** Begin independently with \(A_v\lesssim 1\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: A follower is useful between a high-impedance signal source and a lower-impedance load. Then verify that the amplifier remains in its linear small-signal/negative-feedback range and does not violate output headroom.
 
-3. Use §34.3. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+3. **Independent check for §34.3.** Begin independently with \(v_{id}=v_1-v_2,\qquad v_{icm}=\frac{v_1+v_2}{2}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: If v1=1.01 V and v2=0.99 V, vid=20 mV and vicm=1.00 V. Then verify that the amplifier remains in its linear small-signal/negative-feedback range and does not violate output headroom.
 
-4. Use §34.4. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+4. **Independent check for §34.4.** Begin independently with \(i_+=i_-=0,\qquad v_+\approx v_-\text{ in linear negative feedback}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: An op amp driven into saturation does not satisfy the virtual-short assumption. Then verify that the amplifier remains in its linear small-signal/negative-feedback range and does not violate output headroom.
 
-5. Use §34.5. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+5. **Independent check for §34.5.** Begin independently with \(A_{v,\text{inv}}=-\frac{R_f}{R_{in}},\qquad A_{v,\text{noninv}}=1+\frac{R_f}{R_g}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: Rf=20 kΩ and Rin=5 kΩ gives inverting gain -4. Then verify that the amplifier remains in its linear small-signal/negative-feedback range and does not violate output headroom.
 
-6. Use §34.6. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+6. **Independent check for §34.6.** Begin independently with \(\mathrm{CMRR}=\frac{A_d}{A_{cm}},\qquad \mathrm{CMRR}_{dB}=20\log_{10}\!\frac{A_d}{A_{cm}}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: A 10-V predicted output is impossible if the amplifier output saturates at ±5 V. Then verify that the amplifier remains in its linear small-signal/negative-feedback range and does not violate output headroom.
 
-7. Use §34.7. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+7. **Independent check for §34.7.** Begin independently with \(\text{measurand}\rightarrow\text{transducer}\rightarrow\text{conditioning}\rightarrow\text{ADC}\rightarrow\text{processing}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: Choose conditioning gain so the sensor's expected range fits the ADC input range without clipping. Then verify that the amplifier remains in its linear small-signal/negative-feedback range and does not violate output headroom.
 
-8. Check device operating region, saturation/clipping, frequency range, RMS-versus-peak convention, timing constraints, address/bit width, or protocol/software preconditions as applicable.
+8. Check the chapter-specific failure mode first: an op-amp calculation that demands output beyond the supply-limited swing or uses the virtual short while saturated. Do not accept the numerical or logical result until the amplifier remains in its linear small-signal/negative-feedback range and does not violate output headroom.
 
-9. Start with FE Electrical and Computer specification Area 9, then use the Handbook subsection named in the ledger for the specific concept.
+9. For **Single-Stage, Differential, and Operational Amplifiers**, start with the FE Electrical and Computer specification/Handbook location recorded in the ledger, then use the chapter's reconciled source set for amplifier analysis and instrumentation interfaces (SEDRA / WEBSTER_EREN / IEEE1451) when the concept is split-required. That preserves the Handbook-versus-learned-material boundary.
 
-10. Test a simple limiting case: zero input, matched load, very low/high frequency, all-zero/all-one logic, minimum/maximum address, or small input size as appropriate. The result should reduce to a physically or logically sensible form.
+10. Use this limiting check: set differential input to zero or force the predicted output to the rail and verify the linear model's boundary. The simplified case should produce the expected physical, timing, logic, protocol, or complexity behavior before the full solution is trusted.
 
 ---
 

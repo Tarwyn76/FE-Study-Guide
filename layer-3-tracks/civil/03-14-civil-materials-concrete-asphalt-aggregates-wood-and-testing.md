@@ -65,7 +65,7 @@ Concrete mix design balances workability, durability, and strength. For FE work,
 
 **Problem.** A batch contains 320 lb of water and 640 lb of cement. The water-cement ratio is 0.50.
 
-**Solution.** Apply the relation and definitions in §14.1; the stated result follows with consistent units and sign convention.
+**Solution.** Use the mass-based water-cement ratio, \(w/c=W_w/W_c\). Substituting the batch masses gives \(w/c=320/640=0.50\). Because both quantities are masses in the same unit, pounds (lbm) cancel and the ratio is dimensionless. The result is therefore a water-cement ratio of **0.50**. Both batch masses are expressed in **lb**, so the pounds cancel and the final ratio is dimensionless.
 
 ---
 
@@ -81,7 +81,7 @@ Asphalt performance depends on binder content, aggregate structure, air voids, a
 
 **Problem.** If G_mb = 2.35 and G_mm = 2.50, air voids are 6.0%.
 
-**Solution.** Apply the relation and definitions in §14.2; the stated result follows with consistent units and sign convention.
+**Solution.** Use \(V_a=100(1-G_{mb}/G_{mm})\). With \(G_{mb}=2.35\) and \(G_{mm}=2.50\), \(V_a=100[1-(2.35/2.50)]=100(0.06)=6.0\%\). The bulk specific gravity must be less than the theoretical maximum specific gravity for a positive air-void content.
 
 ---
 
@@ -97,7 +97,7 @@ Aggregate behavior is governed by gradation, particle shape, absorption, durabil
 
 **Problem.** A 1000 g sample has 620 g passing a sieve; percent passing is 62%.
 
-**Solution.** Apply the relation and definitions in §14.3; the stated result follows with consistent units and sign convention.
+**Solution.** Percent passing is the mass passing the sieve divided by the total sample mass. Thus \(\%\,passing=100(620/1000)=62\%\). A gradation table should also be checked to make sure cumulative percent passing decreases consistently as sieve opening decreases.
 
 ---
 
@@ -113,7 +113,7 @@ Field and laboratory concrete tests do not measure the same property. Slump indi
 
 **Problem.** A cylinder fails at 95 kip with area 28.27 in²; compressive stress is about 3.36 ksi.
 
-**Solution.** Apply the relation and definitions in §14.4; the stated result follows with consistent units and sign convention.
+**Solution.** Compressive stress is load divided by loaded area: \(f_c=P/A\). Convert \(95\) kip to \(95{,}000\) lb and divide by \(28.27\ \text{in}^2\): \(f_c=3360\ \text{psi}=3.36\ \text{ksi}\). The reported cylinder strength is therefore approximately **3.36 ksi**.
 
 ---
 
@@ -129,7 +129,7 @@ Civil materials questions often test what a procedure measures rather than requi
 
 **Problem.** A tension coupon carrying 24 kN over 120 mm² has stress 200 MPa.
 
-**Solution.** Apply the relation and definitions in §14.5; the stated result follows with consistent units and sign convention.
+**Solution.** Apply \(\sigma=P/A\). Since \(1\ \text{N/mm}^2=1\ \text{MPa}\), \(24\ \text{kN}=24{,}000\ \text{N}\), so \(\sigma=24{,}000/120=200\ \text{N/mm}^2=200\ \text{MPa}\). The unit conversion is built directly into the N/mm²-to-MPa equivalence.
 
 ---
 
@@ -145,7 +145,7 @@ Elastic modulus, yield strength, ultimate strength, density, thermal expansion, 
 
 **Problem.** Stress 12 ksi at strain 0.0010 corresponds to E = 12,000 ksi.
 
-**Solution.** Apply the relation and definitions in §14.6; the stated result follows with consistent units and sign convention.
+**Solution.** In the linear-elastic range, \(E=\sigma/\varepsilon\). Substituting \(12\ \text{ksi}\) and \(0.0010\) gives \(E=12/0.0010=12{,}000\ \text{ksi}\). Strain is dimensionless, so the modulus carries the same stress unit as the numerator.
 
 ---
 
@@ -161,7 +161,7 @@ Material selection is not based on strength alone. Exposure, durability, constru
 
 **Problem.** A high-strength material that is incompatible with freeze-thaw exposure may still be an unacceptable selection.
 
-**Solution.** Apply the relation and definitions in §14.7; the stated result follows with consistent units and sign convention.
+**Solution.** Strength alone does not establish suitability. Freeze-thaw exposure can govern durability through scaling, cracking, or deterioration even when nominal strength is high. The selection therefore fails unless the material system also satisfies the applicable exposure, air-entrainment, permeability, and durability requirements.
 
 ---
 
@@ -171,13 +171,13 @@ Material selection is not based on strength alone. Exposure, durability, constru
 
 **Problem.** A problem combines two ideas from this chapter. What should be done before calculation?
 
-**Solution.** Draw the system, identify the requested quantity, establish units and sign conventions, and list the governing relations before substituting numbers.
+**Solution.** First separate the problem into the two governing ideas—for example, a material-property calculation followed by an acceptance or durability decision. Sketch the specimen or material system, list the given quantities with units, perform the quantitative check, and then apply the second criterion. Keeping the numerical and specification checks separate prevents a correct calculation from being mistaken for an acceptable material selection.
 
 ### Worked Example 9
 
 **Problem.** A remembered equation differs from the FE Reference Handbook form. Which should govern the exam solution?
 
-**Solution.** Use the Handbook form and its unit convention unless the problem explicitly supplies a different relation.
+**Solution.** Use the FE Reference Handbook form when the exam provides that relation. Match its symbols and unit convention to the problem data, convert the givens as needed, and solve from that form. A remembered equation may be equivalent, but the Handbook version reduces the risk of using a different convention, coefficient, or definition.
 
 ---
 
@@ -185,11 +185,17 @@ Material selection is not based on strength alone. Exposure, durability, constru
 
 Primary source basis: **FE Civil specification Area 7; FE Reference Handbook 10.6 Civil Engineering and supporting general sections cited below.**
 
-**Source boundary:** Some Civil specification topics are directly tabulated in the Handbook; others are named by the specification but require learned engineering knowledge. This chapter does not imply that every workflow, code provision, or design factor is printed in the Handbook.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is retained because it is required by the FE Civil specification but needs engineering knowledge beyond what is printed in the Handbook. **Guide synthesis** connects those two sources into exam-oriented workflows and examples; it is not presented as Handbook text.
 
-Where the FE specification requires a topic that is not directly developed in the Handbook, the ledger marks it **specification-required / guide-developed** rather than inventing a Handbook citation.
+**External source support for split-required concepts:**
+- `CIV-3-014-01` — ACI Committee 211. (2022). *Selecting Proportions for Normal-Density and High-Density Concrete—Guide* (ACI PRC-211.1-22). American Concrete Institute. ISBN 978-1-64195-186-9. Verified location: Chapter 3 pp. 4–5 (w/cm, strength, durability); §4.7 p. 8; Chapter 5 pp. 13–14; Chapters 8–9 pp. 21–28.
+- `CIV-3-014-02` — Asphalt Institute. (2014). *Asphalt Mix Design Methods* (MS-2, 7th ed.). Asphalt Institute. ISBN 978-1-934154-70-0. Verified location: pp. 12–14 (volumetric characteristics); p. 24 (aggregate gradation); pp. 34–45 (laboratory mixture testing); pp. 46–61 (specific gravities, absorption, and volumetric properties).
+- `CIV-3-014-03` — Asphalt Institute. (2014). *Asphalt Mix Design Methods* (MS-2, 7th ed.). Asphalt Institute. ISBN 978-1-934154-70-0. Verified location: pp. 12–14 (volumetric characteristics); p. 24 (aggregate gradation); pp. 34–45 (laboratory mixture testing); pp. 46–61 (specific gravities, absorption, and volumetric properties). ASTM International. *ASTM C136/C136M, Standard Test Method for Sieve Analysis of Fine and Coarse Aggregates*; *ASTM C127, Standard Test Method for Relative Density (Specific Gravity) and Absorption of Coarse Aggregate*; *ASTM C128, Standard Test Method for Relative Density (Specific Gravity) and Absorption of Fine Aggregate*; and *ASTM C88/C88M, Standard Test Method for Soundness of Aggregates by Use of Sodium Sulfate or Magnesium Sulfate*. Cited at publication/standard level; no page-level claim.
+- `CIV-3-014-04` — ACI Committee 211. (2022). *Selecting Proportions for Normal-Density and High-Density Concrete—Guide* (ACI PRC-211.1-22). American Concrete Institute. ISBN 978-1-64195-186-9. Verified location: Chapter 3 pp. 4–5 (w/cm, strength, durability); §4.7 p. 8; Chapter 5 pp. 13–14; Chapters 8–9 pp. 21–28. ASTM International. *ASTM C143/C143M, Standard Test Method for Slump of Hydraulic-Cement Concrete*; *ASTM C39/C39M, Standard Test Method for Compressive Strength of Cylindrical Concrete Specimens*; *ASTM C231/C231M* and *ASTM C173/C173M* for air content; and *ASTM C138/C138M* for density (unit weight), yield, and gravimetric air content. Cited at publication/standard level; no page-level claim.
+- `CIV-3-014-05` — Asphalt Institute. (2014). *Asphalt Mix Design Methods* (MS-2, 7th ed.). Asphalt Institute. ISBN 978-1-934154-70-0. Verified location: pp. 12–14 (volumetric characteristics); p. 24 (aggregate gradation); pp. 34–45 (laboratory mixture testing); pp. 46–61 (specific gravities, absorption, and volumetric properties). Forest Products Laboratory. (2021). *Wood Handbook—Wood as an Engineering Material*. General Technical Report FPL-GTR-282. U.S. Department of Agriculture, Forest Service, Forest Products Laboratory. Verified location: Chapter 4, pp. 4-1–4-22 (physical/moisture properties); Chapter 5, pp. 5-1–5-44 (mechanical properties); p. 5-26 notes ASTM D143-based test procedures. ASTM International. *ASTM D143, Standard Test Methods for Small Clear Specimens of Timber*; and *ASTM E8/E8M, Standard Test Methods for Tension Testing of Metallic Materials*. Cited at publication/standard level; no page-level claim.
+- `CIV-3-014-06` — Forest Products Laboratory. (2021). *Wood Handbook—Wood as an Engineering Material*. General Technical Report FPL-GTR-282. U.S. Department of Agriculture, Forest Service, Forest Products Laboratory. Verified location: Chapter 4, pp. 4-1–4-22 (physical/moisture properties); Chapter 5, pp. 5-1–5-44 (mechanical properties); p. 5-26 notes ASTM D143-based test procedures. ASTM International. *ASTM D143, Standard Test Methods for Small Clear Specimens of Timber*; and *ASTM E8/E8M, Standard Test Methods for Tension Testing of Metallic Materials*. Cited at publication/standard level; no page-level claim.
 
----
+No external source above is being used to replace the FE Reference Handbook. The external references support only the learned/application portion identified by `split_required: true`.
 
 ## Where This Goes Wrong
 
@@ -357,31 +363,31 @@ D) Treat it as optional
 
 14. For **materials specification basis**, common failures are wrong units, wrong sign convention, wrong geometry/boundary condition, or using a relation outside its assumptions.
 
-15. The sketch exposes geometry, boundaries, loads/flows, signs, and missing data before algebra begins.
+15. Draw the batch/specimen model first so water, cementitious material, aggregate condition, loaded area, and test geometry are not confused before selecting a materials relation.
 
-16. Use the Handbook form when it is available because the FE exam supplies that reference and its constants/unit conventions govern the problem.
+16. Prefer the FE Handbook relation when it supplies the material-property or test equation because its definitions and unit convention are the ones the exam expects.
 
-17. Mixed unit systems create hidden conversion errors and can invalidate dimensional consistency.
+17. Concrete and materials problems commonly mix psi or ksi, MPa, inches, millimeters, and pounds; explicit conversion prevents a correct formula from producing a dimensionally invalid result.
 
-18. A reasonableness check can catch sign, magnitude, boundary-condition, and unit errors that algebra alone does not reveal.
+18. Check whether the result is physically credible: water-cement ratios should be plausible, strengths should match the stated material scale, and asphalt bulk specific gravity should remain below theoretical maximum specific gravity.
 
-19. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+19. **A.** For **Concrete mix proportions, water-cement ratio, and strength**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-20. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+20. **A.** For **Asphalt binder, aggregate gradation, and volumetrics**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-21. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+21. **A.** For **Aggregate gradation, specific gravity, absorption, and durability**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-22. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+22. **A.** For **Concrete testing — slump, cylinders, air, and unit weight**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-23. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+23. **A.** For **Asphalt, aggregate, and wood test methods**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-24. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+24. **A.** For **Physical and mechanical properties of metals and wood**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-25. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+25. **A.** For **Specification selection, durability, and failure modes**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-26. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+26. **A.** In Civil Materials — Concrete, Asphalt, Aggregates, Wood, and Testing, dimensional consistency and an independent physical check are the fastest ways to detect a unit, sign, magnitude, or modeling error before accepting the result.
 
-27. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+27. **A.** For this chapter, learned material beyond Handbook tables is labeled explicitly and supported by the reconciled ACI 211, Asphalt Institute MS-2, USDA Wood Handbook, and ASTM references rather than by an invented Handbook citation.
 
 
 
@@ -414,25 +420,39 @@ D) Treat it as optional
 
 ## Practice Problem Solutions
 
-1. Use §14.1. A batch contains 320 lb of water and 640 lb of cement. The water-cement ratio is 0.50. The calculation or classification follows from the displayed section relation and the stated data.
+1. **Independent check for §14.1.** Rework the problem from the stated givens rather than copying the worked-example result. Use the mass-based water-cement ratio, \(w/c=W_w/W_c\). Substituting the batch masses gives \(w/c=320/640=0.50\). Because both quantities are masses in the same unit, pounds cancel and the ratio is dimensionless. The result is therefore a water-cement ratio of **0.50**. **Check:** confirm the final magnitude and units against the physical meaning of §14.1 before accepting the answer.
 
-2. Use §14.2. If G_mb = 2.35 and G_mm = 2.50, air voids are 6.0%. The calculation or classification follows from the displayed section relation and the stated data.
 
-3. Use §14.3. A 1000 g sample has 620 g passing a sieve; percent passing is 62%. The calculation or classification follows from the displayed section relation and the stated data.
 
-4. Use §14.4. A cylinder fails at 95 kip with area 28.27 in²; compressive stress is about 3.36 ksi. The calculation or classification follows from the displayed section relation and the stated data.
+2. **Independent check for §14.2.** Rework the problem from the stated givens rather than copying the worked-example result. Use \(V_a=100(1-G_{mb}/G_{mm})\). With \(G_{mb}=2.35\) and \(G_{mm}=2.50\), \(V_a=100[1-(2.35/2.50)]=100(0.06)=6.0\%\). The bulk specific gravity must be less than the theoretical maximum specific gravity for a positive air-void content. **Check:** confirm the final magnitude and units against the physical meaning of §14.2 before accepting the answer.
 
-5. Use §14.5. A tension coupon carrying 24 kN over 120 mm² has stress 200 MPa. The calculation or classification follows from the displayed section relation and the stated data.
 
-6. Use §14.6. Stress 12 ksi at strain 0.0010 corresponds to E = 12,000 ksi. The calculation or classification follows from the displayed section relation and the stated data.
 
-7. Use §14.7. A high-strength material that is incompatible with freeze-thaw exposure may still be an unacceptable selection. The calculation or classification follows from the displayed section relation and the stated data.
+3. **Independent check for §14.3.** Rework the problem from the stated givens rather than copying the worked-example result. Percent passing is the mass passing the sieve divided by the total sample mass. Thus \(\%\,passing=100(620/1000)=62\%\). A gradation table should also be checked to make sure cumulative percent passing decreases consistently as sieve opening decreases. **Check:** confirm the final magnitude and units against the physical meaning of §14.3 before accepting the answer.
 
-8. Check dimensions, unit conversion, sign convention, and whether the selected relation's assumptions match the physical situation.
 
-9. Start with FE Civil specification Area 7 and the Handbook sections identified in **As the Handbook States It** and the ledger entries for this chapter.
 
-10. A sketch exposes incompatible geometry, impossible flow/load directions, missing reactions/boundaries, and double-counted or omitted terms.
+4. **Independent check for §14.4.** Rework the problem from the stated givens rather than copying the worked-example result. Compressive stress is load divided by loaded area: \(f_c=P/A\). Convert \(95\) kip to \(95{,}000\) lb and divide by \(28.27\ \text{in}^2\): \(f_c=3360\ \text{psi}=3.36\ \text{ksi}\). The reported cylinder strength is therefore approximately **3.36 ksi**. **Check:** confirm the final magnitude and units against the physical meaning of §14.4 before accepting the answer.
+
+
+
+5. **Independent check for §14.5.** Rework the problem from the stated givens rather than copying the worked-example result. Apply \(\sigma=P/A\). Since \(1\ \text{N/mm}^2=1\ \text{MPa}\), \(24\ \text{kN}=24{,}000\ \text{N}\), so \(\sigma=24{,}000/120=200\ \text{N/mm}^2=200\ \text{MPa}\). The unit conversion is built directly into the N/mm²-to-MPa equivalence. **Check:** confirm the final magnitude and units against the physical meaning of §14.5 before accepting the answer.
+
+
+
+6. **Independent check for §14.6.** Rework the problem from the stated givens rather than copying the worked-example result. In the linear-elastic range, \(E=\sigma/\varepsilon\). Substituting \(12\ \text{ksi}\) and \(0.0010\) gives \(E=12/0.0010=12{,}000\ \text{ksi}\). Strain is dimensionless, so the modulus carries the same stress unit as the numerator. **Check:** confirm the final magnitude and units against the physical meaning of §14.6 before accepting the answer.
+
+
+
+7. **Independent check for §14.7.** Rework the problem from the stated givens rather than copying the worked-example result. Strength alone does not establish suitability. Freeze-thaw exposure can govern durability through scaling, cracking, or deterioration even when nominal strength is high. The selection therefore fails unless the material system also satisfies the applicable exposure, air-entrainment, permeability, and durability requirements. **Check:** confirm the final magnitude and units against the physical meaning of §14.7 before accepting the answer.
+
+
+
+8. Before accepting a civil materials — concrete, asphalt, aggregates, wood, and testing result, verify the dimensional units, the chapter-specific sign or direction convention, and that the selected model matches the stated geometry and boundary conditions.
+
+9. Start with **FE Civil specification Area 7** and the Civil Engineering/material-property locations recorded in the ledger. For split-required material, use the chapter's reconciled ACI, Asphalt Institute, USDA, or ASTM source as applicable.
+
+10. For civil materials — concrete, asphalt, aggregates, wood, and testing, a sketch makes the controlling geometry, direction, boundary, load/flow path, or sequence visible before algebra, which often reveals missing data or an impossible assumption immediately.
 
 ---
 

@@ -65,7 +65,7 @@ Solid-waste systems track material by mass and volume through collection, recycl
 
 **Problem.** Diverting 30% of a 100-ton/day stream leaves 70 tons/day for other management routes.
 
-**Solution.** Apply the relation and environmental model in §61.1; then verify units, boundary conditions, and physical limits.
+**Solution.** A 30% diversion of \(100\ {\rm ton/day}\) removes \(0.30(100)=30\ {\rm ton/day}\). The remaining stream is therefore \(100-30=\mathbf{70\ ton/day}\) for other management routes.
 
 ---
 
@@ -81,7 +81,7 @@ Solid-waste management is a system problem. High recovery can reduce disposal vo
 
 **Problem.** A transfer station can reduce long-haul transportation cost when collection vehicles would otherwise travel far to disposal.
 
-**Solution.** Apply the relation and environmental model in §61.2; then verify units, boundary conditions, and physical limits.
+**Solution.** A transfer station can consolidate waste into higher-capacity long-haul vehicles. When disposal is distant, this reduces the time collection vehicles spend away from their routes and can reduce transportation cost and fuel use despite the added transfer operation.
 
 ---
 
@@ -97,7 +97,7 @@ Modern landfills manage water infiltration, leachate, gas, settlement, and cover
 
 **Problem.** Reducing percolation through final cover generally reduces leachate generation.
 
-**Solution.** Apply the relation and environmental model in §61.3; then verify units, boundary conditions, and physical limits.
+**Solution.** In a landfill-cover water balance, precipitation is partitioned among runoff, evapotranspiration, storage change, and percolation. Reducing percolation through the cover therefore directly reduces the water available to become **leachate**.
 
 ---
 
@@ -113,7 +113,7 @@ Hazardous wastes must be characterized before mixing, storage, transport, or tre
 
 **Problem.** Two individually manageable wastes may be unsafe to combine if they react vigorously.
 
-**Solution.** Apply the relation and environmental model in §61.4; then verify units, boundary conditions, and physical limits.
+**Solution.** Compatibility must be evaluated before combining hazardous wastes. Acids/bases, oxidizers/fuels, cyanide- or sulfide-bearing wastes, and water-reactive materials can produce heat, fire, pressure, or toxic gas even when each waste can be managed safely by itself.
 
 ---
 
@@ -129,7 +129,7 @@ Treatment selection depends on hazard, chemistry, phase, volume, and final dispo
 
 **Problem.** Solidification/stabilization primarily reduces mobility rather than destroying metals.
 
-**Solution.** Apply the relation and environmental model in §61.5; then verify units, boundary conditions, and physical limits.
+**Solution.** Solidification/stabilization primarily changes the physical/chemical form to reduce leaching and mobility. Metals are elements and are generally **not destroyed** by this treatment; they remain in the treated mass.
 
 ---
 
@@ -145,7 +145,7 @@ Energy technologies differ in greenhouse gases, air emissions, water use, land u
 
 **Problem.** Comparing emissions per plant-year can mislead if two plants deliver very different amounts of electricity.
 
-**Solution.** Apply the relation and environmental model in §61.6; then verify units, boundary conditions, and physical limits.
+**Solution.** Environmental comparison should use a functional denominator such as emissions per MWh delivered. Plant-year totals can be misleading if two facilities produce very different useful energy during that year.
 
 ---
 
@@ -161,7 +161,7 @@ Carbon footprint aggregates greenhouse gases on a common CO2-equivalent basis. E
 
 **Problem.** A lower direct-emission technology can still have upstream material or construction impacts that belong in a lifecycle comparison.
 
-**Solution.** Apply the relation and environmental model in §61.7; then verify units, boundary conditions, and physical limits.
+**Solution.** Lifecycle assessment extends beyond direct stack or operating emissions. Materials extraction, construction, fuel production, water use, maintenance, decommissioning, and other upstream/downstream burdens can change the comparative result.
 
 ---
 
@@ -171,13 +171,13 @@ Carbon footprint aggregates greenhouse gases on a common CO2-equivalent basis. E
 
 **Problem.** A treatment calculation predicts a negative effluent concentration. What does that indicate?
 
-**Solution.** The algebra or model assumptions are invalid for that condition. Recheck the balance, reaction/order assumptions, time basis, units, and any zero-concentration limiting condition.
+**Solution.** A negative waste flow or disposal mass violates the overall material balance. Recheck diversion fractions, recycling/processing streams, storage change, and whether a residual from one process was omitted from another management route.
 
 ### Worked Example 9
 
 **Problem.** A remembered environmental correlation differs from the FE Reference Handbook relation. Which should govern the exam solution?
 
-**Solution.** Use the Handbook relation and its definitions unless the problem explicitly supplies a different model.
+**Solution.** For **Solid and Hazardous Waste, Landfills, Treatment, and Energy-Environment Impacts**, the FE Reference Handbook equation, definitions, and unit convention govern whenever the Handbook supplies the needed relation. The external references in this chapter are used for specification-required learned material involving **MSW balances, collection/transfer, landfill water balance, waste compatibility, treatment, and lifecycle impacts**. If a remembered correlation conflicts with the supplied Handbook equation, use the supplied Handbook relation unless the problem explicitly states a different model.
 
 ---
 
@@ -185,7 +185,14 @@ Carbon footprint aggregates greenhouse gases on a common CO2-equivalent basis. E
 
 Primary source basis: **FE Environmental specification Area(s) 14, 15; FE Reference Handbook 10.6 Environmental Engineering, printed pp. 318–360, plus general supporting sections where identified in the ledger.**
 
-**Source boundary:** Some Environmental specification topics are directly tabulated in the Handbook, while others require learned engineering knowledge. The chapter keeps those two categories separate.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required environmental-engineering knowledge that is not fully developed in the Handbook. **Guide synthesis** connects the Handbook and external material into exam-oriented explanations, examples, and checks; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Mihelcic, J. R., & Zimmerman, J. B. (2021). *Environmental Engineering: Fundamentals, Sustainability, Design* (3rd ed.). Wiley. ISBN 978-1-119-60445-7. Supporting scope: Environmental measurements, chemistry, physical processes, biology, risk, water quantity/quality, water treatment, wastewater/stormwater, solid waste, and air quality.
+- Tchobanoglous, G., & Kreith, F. (Eds.). (2002). *Handbook of Solid Waste Management* (2nd ed.). McGraw-Hill. ISBN 978-0-07-135623-7. Supporting scope: Municipal solid-waste generation, collection, transfer, processing, recycling, treatment, and disposal systems.
+- U.S. Environmental Protection Agency. *National Overview: Facts and Figures on Materials, Wastes and Recycling*; 2018 national MSW data and related Sustainable Materials Management reports. Supporting scope: U.S. municipal-solid-waste generation, composition, recycling, combustion, composting, and landfilling data.
+
+The external references support only the learned/application portion of the Environmental specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -356,31 +363,31 @@ D) It is always a Handbook lookup with no learned interpretation
 
 14. For **environmental lifecycle impact**, check basis, units, steady/unsteady condition, phase/media, boundary conditions, and whether the selected idealization matches the system.
 
-15. The boundary determines what enters, leaves, accumulates, reacts, or transfers between media. Without it, terms are easily omitted or double counted.
+15. In **Solid and Hazardous Waste, Landfills, Treatment, and Energy-Environment Impacts**, the control volume or conceptual boundary determines which sources, sinks, transfers, reactions, and receptors belong in the model. For this chapter specifically, close the waste mass balance, keep diversion fractions between 0–1, segregate incompatible hazardous wastes, account for leachate/gas residuals, and compare energy technologies on the same functional basis.
 
-16. Concentration is mass per volume; loading is mass per time. A low concentration at very high flow can still create a large load.
+16. Concentration and loading answer different questions in **Solid and Hazardous Waste, Landfills, Treatment, and Energy-Environment Impacts**: concentration is mass per volume, while loading is mass per time. Always convert \(Q\) and \(C\) to compatible units before multiplying them.
 
-17. The FE Handbook is the supplied exam reference. Its variable definitions and unit conventions should govern unless the problem explicitly provides another relation.
+17. Use the FE Reference Handbook equation and definitions when it supplies the model for **Solid and Hazardous Waste, Landfills, Treatment, and Energy-Environment Impacts**. The chapter's external references (MIHELCIC, TCHOB_KREITH, EPA_MSW) support learned specification content, not a competing exam formula.
 
-18. A mass/energy balance and physical check can reveal impossible signs, removal above 100%, negative concentrations, unrealistic flows, or model misuse.
+18. A physical check is needed because algebra alone can return impossible environmental states. For this chapter, set diversion to zero and confirm all generated waste remains for downstream management; set diversion to 100% and confirm the residual stream tends to zero in the ideal balance.
 
-19. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+19. **A.** Section §61.1, **Municipal solid-waste generation, composition, and mass balance**, is governed by \(\text{generated}=\text{recycled}+\text{processed}+\text{disposed}+\Delta\text{storage}\). Use that relation with its own environmental basis and then perform the specific validity check described for §61.1.
 
-20. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+20. **A.** Section §61.2, **Collection, transfer, recycling, composting, and waste-to-energy**, is governed by \(\text{system cost/environmental impact}=f(\text{collection, transfer, processing, recovery, disposal})\). Use that relation with its own environmental basis and then perform the specific validity check described for §61.2.
 
-21. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+21. **A.** Section §61.3, **Landfill liners, leachate, gas, and cover water balance**, is governed by \(\Delta S_{LC}=P-R-ET-PER_{sw}\). Use that relation with its own environmental basis and then perform the specific validity check described for §61.3.
 
-22. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+22. **A.** Section §61.4, **Hazardous-waste compatibility and characterization**, is governed by \(\text{characterize}\rightarrow\text{segregate incompatible wastes}\rightarrow\text{select treatment/storage}\). Use that relation with its own environmental basis and then perform the specific validity check described for §61.4.
 
-23. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+23. **A.** Section §61.5, **Hazardous and radioactive waste treatment/disposal**, is governed by \(\text{treatment}= \text{physical}+\text{chemical}+\text{biological}+\text{thermal as appropriate}\). Use that relation with its own environmental basis and then perform the specific validity check described for §61.5.
 
-24. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+24. **A.** Section §61.6, **Energy sources, efficiency, and environmental burdens**, is governed by \(\text{impact intensity}=\frac{\text{environmental burden}}{\text{energy delivered}}\). Use that relation with its own environmental basis and then perform the specific validity check described for §61.6.
 
-25. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+25. **A.** Section §61.7, **Carbon footprint, water-energy links, and lifecycle perspective**, is governed by \(\mathrm{CO_2e}=\sum m_i\,GWP_i\). Use that relation with its own environmental basis and then perform the specific validity check described for §61.7.
 
-26. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+26. **A.** An integrated **Solid and Hazardous Waste, Landfills, Treatment, and Energy-Environment Impacts** solution is acceptable only after the governing balance/model is identified, units are reconciled, and the chapter-specific physical checks are satisfied.
 
-27. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+27. **A.** Source ownership is explicit in **Solid and Hazardous Waste, Landfills, Treatment, and Energy-Environment Impacts**: FE-Handbook-supported material remains tied to the ledger, externally supported content uses MIHELCIC, TCHOB_KREITH, EPA_MSW, and guide synthesis is labeled as supplemental explanation.
 
 
 ---
@@ -412,25 +419,25 @@ D) It is always a Handbook lookup with no learned interpretation
 
 ## Practice Problem Solutions
 
-1. Use §61.1. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+1. **Independent recomputation for §61.1 — Municipal solid-waste generation, composition, and mass balance.** Start from the stated givens rather than the worked-example answer. A 30% diversion of \(100\ {\rm ton/day}\) removes \(0.30(100)=30\ {\rm ton/day}\). The remaining stream is therefore \(100-30=\mathbf{70\ ton/day}\) for other management routes. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-2. Use §61.2. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+2. **Independent recomputation for §61.2 — Collection, transfer, recycling, composting, and waste-to-energy.** Start from the stated givens rather than the worked-example answer. A transfer station can consolidate waste into higher-capacity long-haul vehicles. When disposal is distant, this reduces the time collection vehicles spend away from their routes and can reduce transportation cost and fuel use despite the added transfer operation. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-3. Use §61.3. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+3. **Independent recomputation for §61.3 — Landfill liners, leachate, gas, and cover water balance.** Start from the stated givens rather than the worked-example answer. In a landfill-cover water balance, precipitation is partitioned among runoff, evapotranspiration, storage change, and percolation. Reducing percolation through the cover therefore directly reduces the water available to become **leachate**. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-4. Use §61.4. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+4. **Independent recomputation for §61.4 — Hazardous-waste compatibility and characterization.** Start from the stated givens rather than the worked-example answer. Compatibility must be evaluated before combining hazardous wastes. Acids/bases, oxidizers/fuels, cyanide- or sulfide-bearing wastes, and water-reactive materials can produce heat, fire, pressure, or toxic gas even when each waste can be managed safely by itself. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-5. Use §61.5. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+5. **Independent recomputation for §61.5 — Hazardous and radioactive waste treatment/disposal.** Start from the stated givens rather than the worked-example answer. Solidification/stabilization primarily changes the physical/chemical form to reduce leaching and mobility. Metals are elements and are generally **not destroyed** by this treatment; they remain in the treated mass. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-6. Use §61.6. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+6. **Independent recomputation for §61.6 — Energy sources, efficiency, and environmental burdens.** Start from the stated givens rather than the worked-example answer. Environmental comparison should use a functional denominator such as emissions per MWh delivered. Plant-year totals can be misleading if two facilities produce very different useful energy during that year. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-7. Use §61.7. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+7. **Independent recomputation for §61.7 — Carbon footprint, water-energy links, and lifecycle perspective.** Start from the stated givens rather than the worked-example answer. Lifecycle assessment extends beyond direct stack or operating emissions. Materials extraction, construction, fuel production, water use, maintenance, decommissioning, and other upstream/downstream burdens can change the comparative result. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-8. Check dimensions, concentration-versus-loading basis, conservation of mass/energy, sign convention, and whether removal, risk, or efficiency values stay within physically meaningful limits.
+8. For this chapter, check the result against this failure screen: Close the waste mass balance, keep diversion fractions between 0–1, segregate incompatible hazardous wastes, account for leachate/gas residuals, and compare energy technologies on the same functional basis. A result that violates one of those conditions should be rejected even if the arithmetic is internally consistent.
 
-9. Start with FE Environmental specification Area(s) 14, 15, then use the Handbook subsection named in the corresponding ledger entry.
+9. For **Solid and Hazardous Waste, Landfills, Treatment, and Energy-Environment Impacts**, begin with the FE Environmental specification area and Handbook subsection recorded in the ledger. When the atom is `split_required`, use the reconciled external source set **MIHELCIC, TCHOB_KREITH, EPA_MSW** for the learned portion rather than inventing a Handbook page.
 
-10. Test a limiting case such as zero source, zero reaction, complete mixing, no flow, very large residence time, or 0/100% removal as appropriate. The result should reduce to a sensible physical state.
+10. A useful limiting case is to set diversion to zero and confirm all generated waste remains for downstream management; set diversion to 100% and confirm the residual stream tends to zero in the ideal balance. The simplified case should reduce to the stated physical behavior before the full model is trusted.
 
 ---
 

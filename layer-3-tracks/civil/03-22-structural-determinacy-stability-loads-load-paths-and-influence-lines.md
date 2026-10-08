@@ -65,7 +65,7 @@ Structural analysis starts with the idealized model: supports, connectivity, loa
 
 **Problem.** A planar pin contributes two reaction components; a roller typically contributes one.
 
-**Solution.** Apply the relation and definitions in §22.1; the stated result follows with consistent units and sign convention.
+**Solution.** In a planar model, a pin support restrains translation in two directions and therefore contributes two reaction components, while an ideal roller restrains motion normal to its surface and contributes one. These reaction counts are the first step in checking external determinacy.
 
 ---
 
@@ -81,7 +81,7 @@ Determinacy is not the same as stability. A structure can have the right reactio
 
 **Problem.** Three independent reaction components can be statically determinate for a stable planar rigid body.
 
-**Solution.** Apply the relation and definitions in §22.2; the stated result follows with consistent units and sign convention.
+**Solution.** A planar rigid body provides three independent equilibrium equations: \(\sum F_x=0\), \(\sum F_y=0\), and \(\sum M=0\). A stable structure with three independent external reaction components can therefore be externally statically determinate; stability and reaction independence must still be verified.
 
 ---
 
@@ -97,7 +97,7 @@ For a simple planar truss, the member-joint-reaction count is a useful screening
 
 **Problem.** If m=11, r=3, j=7, then m+r=14=2j, a candidate for determinate behavior.
 
-**Solution.** Apply the relation and definitions in §22.3; the stated result follows with consistent units and sign convention.
+**Solution.** For a simple planar truss, compare \(m+r\) with \(2j\). Here \(m+r=11+3=14\) and \(2j=2(7)=14\), so the counting criterion is satisfied. This is only a candidate for determinacy because an unstable member arrangement can satisfy the count and still be a mechanism.
 
 ---
 
@@ -113,7 +113,7 @@ Loads differ in source, variability, and distribution. FE problems may supply lo
 
 **Problem.** A 0.15 kip/ft self-weight and 0.60 kip/ft imposed load total 0.75 kip/ft before factors.
 
-**Solution.** Apply the relation and definitions in §22.4; the stated result follows with consistent units and sign convention.
+**Solution.** Combine the unfactored distributed loads on the same basis: \(w=0.15+0.60=0.75\ \text{kip/ft}\). The unfactored total is therefore **0.75 kip/ft**, equivalent to **750 lbf/ft**. Load factors, if required, are applied afterward according to the specified load combination rather than being mixed into the service-load sum.
 
 ---
 
@@ -129,7 +129,7 @@ Tributary area converts distributed surface loading into beam, girder, or column
 
 **Problem.** q=80 psf over 200 ft² produces 16 kip.
 
-**Solution.** Apply the relation and definitions in §22.5; the stated result follows with consistent units and sign convention.
+**Solution.** Tributary load is \(P=qA_t\). With \(q=80\ \text{lb/ft}^2\) and \(A_t=200\ \text{ft}^2\), \(P=16{,}000\ \text{lb}=16\ \text{kip}\). The tributary load is therefore **16 kip**, or **16,000 lbf**.
 
 ---
 
@@ -145,7 +145,7 @@ An influence line shows how a response quantity changes as a unit load moves acr
 
 **Problem.** A moving 10-kip load at influence ordinate 0.6 contributes 6 kip to the chosen response.
 
-**Solution.** Apply the relation and definitions in §22.6; the stated result follows with consistent units and sign convention.
+**Solution.** Influence-line response from a concentrated load is \(P y\). A \(10\)-kip load at ordinate \(0.6\) contributes \(10(0.6)=6\ \text{kip}\) to the selected reaction or internal-force response, with sign determined by the influence-line ordinate.
 
 ---
 
@@ -161,7 +161,7 @@ Load combinations combine factored effects according to the governing design phi
 
 **Problem.** Apply each factor to the correct load type before combining effects.
 
-**Solution.** Apply the relation and definitions in §22.7; the stated result follows with consistent units and sign convention.
+**Solution.** Form the design demand by applying each prescribed load factor to the corresponding load effect and then summing algebraically. Dead, live, wind, seismic, and other effects are not interchangeable; the correct combination controls only after all applicable combinations are evaluated.
 
 ---
 
@@ -171,13 +171,13 @@ Load combinations combine factored effects according to the governing design phi
 
 **Problem.** A problem combines two ideas from this chapter. What should be done before calculation?
 
-**Solution.** Draw the system, identify the requested quantity, establish units and sign conventions, and list the governing relations before substituting numbers.
+**Solution.** For a moving-load structural problem, first establish the static load path and support reactions, then use the influence line to place the moving load where it maximizes the requested response. Determinacy and stability should be checked before any influence-line calculation.
 
 ### Worked Example 9
 
 **Problem.** A remembered equation differs from the FE Reference Handbook form. Which should govern the exam solution?
 
-**Solution.** Use the Handbook form and its unit convention unless the problem explicitly supplies a different relation.
+**Solution.** Use the Handbook equilibrium, tributary-load, and influence-line relations in their stated sign convention. If a remembered structural formula assumes a different support idealization or positive-moment convention, the Handbook/model definition should govern the exam solution.
 
 ---
 
@@ -185,11 +185,12 @@ Load combinations combine factored effects according to the governing design phi
 
 Primary source basis: **FE Civil specification Area 11; FE Reference Handbook 10.6 Civil Engineering and supporting general sections cited below.**
 
-**Source boundary:** Some Civil specification topics are directly tabulated in the Handbook; others are named by the specification but require learned engineering knowledge. This chapter does not imply that every workflow, code provision, or design factor is printed in the Handbook.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is retained because it is required by the FE Civil specification but needs engineering knowledge beyond what is printed in the Handbook. **Guide synthesis** connects those two sources into exam-oriented workflows and examples; it is not presented as Handbook text.
 
-Where the FE specification requires a topic that is not directly developed in the Handbook, the ledger marks it **specification-required / guide-developed** rather than inventing a Handbook citation.
+**External source support for split-required concepts:**
+- `CIV-3-022-07` — American Society of Civil Engineers. (2022). *Minimum Design Loads and Associated Criteria for Buildings and Other Structures* (ASCE/SEI 7-22). ASCE. Cited at publication/standard level; no page-level claim.
 
----
+No external source above is being used to replace the FE Reference Handbook. The external references support only the learned/application portion identified by `split_required: true`.
 
 ## Where This Goes Wrong
 
@@ -357,31 +358,31 @@ D) Treat it as optional
 
 14. For **design load combination**, common failures are wrong units, wrong sign convention, wrong geometry/boundary condition, or using a relation outside its assumptions.
 
-15. The sketch exposes geometry, boundaries, loads/flows, signs, and missing data before algebra begins.
+15. Draw the free-body diagram and support/member layout first so reaction directions, load paths, joint forces, and the location of the requested influence response are unambiguous.
 
-16. Use the Handbook form when it is available because the FE exam supplies that reference and its constants/unit conventions govern the problem.
+16. Use the Handbook equilibrium, tributary-load, and influence-line relations when provided because their sign and load conventions define the exam calculation.
 
-17. Mixed unit systems create hidden conversion errors and can invalidate dimensional consistency.
+17. Structural loads expressed in lb, lbf, kip, psf, or kN must be converted consistently before forces, distributed loads, reactions, and moments are combined.
 
-18. A reasonableness check can catch sign, magnitude, boundary-condition, and unit errors that algebra alone does not reveal.
+18. Check global equilibrium and load path: reactions must balance applied forces and moments, and an influence-line response should have the sign expected from the load position.
 
-19. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+19. **A.** For **Structural idealization, supports, and degrees of freedom**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-20. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+20. **A.** For **Determinacy and stability of beams and frames**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-21. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+21. **A.** For **Truss determinacy and load path**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-22. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+22. **A.** For **Dead, live, environmental, and moving loads**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-23. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+23. **A.** For **Tributary area and gravity load paths**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-24. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+24. **A.** For **Influence lines for reactions and member actions**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-25. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+25. **A.** For **Load combinations and design-demand organization**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-26. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+26. **A.** In Structural Determinacy, Stability, Loads, Load Paths, and Influence Lines, dimensional consistency and an independent physical check are the fastest ways to detect a unit, sign, magnitude, or modeling error before accepting the result.
 
-27. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+27. **A.** Load-combination material beyond the Handbook's basic structural relations is labeled learned material and supported by ASCE/SEI 7 rather than attributed to an unverified Handbook page.
 
 
 
@@ -414,25 +415,39 @@ D) Treat it as optional
 
 ## Practice Problem Solutions
 
-1. Use §22.1. A planar pin contributes two reaction components; a roller typically contributes one. The calculation or classification follows from the displayed section relation and the stated data.
+1. **Independent check for §22.1.** Rework the problem from the stated givens rather than copying the worked-example result. In a planar model, a pin support restrains translation in two directions and therefore contributes two reaction components, while an ideal roller restrains motion normal to its surface and contributes one. These reaction counts are the first step in checking external determinacy. **Check:** confirm the final magnitude and units against the physical meaning of §22.1 before accepting the answer.
 
-2. Use §22.2. Three independent reaction components can be statically determinate for a stable planar rigid body. The calculation or classification follows from the displayed section relation and the stated data.
 
-3. Use §22.3. If m=11, r=3, j=7, then m+r=14=2j, a candidate for determinate behavior. The calculation or classification follows from the displayed section relation and the stated data.
 
-4. Use §22.4. A 0.15 kip/ft self-weight and 0.60 kip/ft imposed load total 0.75 kip/ft before factors. The calculation or classification follows from the displayed section relation and the stated data.
+2. **Independent check for §22.2.** Rework the problem from the stated givens rather than copying the worked-example result. A planar rigid body provides three independent equilibrium equations: \(\sum F_x=0\), \(\sum F_y=0\), and \(\sum M=0\). A stable structure with three independent external reaction components can therefore be externally statically determinate; stability and reaction independence must still be verified. **Check:** confirm the final magnitude and units against the physical meaning of §22.2 before accepting the answer.
 
-5. Use §22.5. q=80 psf over 200 ft² produces 16 kip. The calculation or classification follows from the displayed section relation and the stated data.
 
-6. Use §22.6. A moving 10-kip load at influence ordinate 0.6 contributes 6 kip to the chosen response. The calculation or classification follows from the displayed section relation and the stated data.
 
-7. Use §22.7. Apply each factor to the correct load type before combining effects. The calculation or classification follows from the displayed section relation and the stated data.
+3. **Independent check for §22.3.** Rework the problem from the stated givens rather than copying the worked-example result. For a simple planar truss, compare \(m+r\) with \(2j\). Here \(m+r=11+3=14\) and \(2j=2(7)=14\), so the counting criterion is satisfied. This is only a candidate for determinacy because an unstable member arrangement can satisfy the count and still be a mechanism. **Check:** confirm the final magnitude and units against the physical meaning of §22.3 before accepting the answer.
 
-8. Check dimensions, unit conversion, sign convention, and whether the selected relation's assumptions match the physical situation.
 
-9. Start with FE Civil specification Area 11 and the Handbook sections identified in **As the Handbook States It** and the ledger entries for this chapter.
 
-10. A sketch exposes incompatible geometry, impossible flow/load directions, missing reactions/boundaries, and double-counted or omitted terms.
+4. **Independent check for §22.4.** Rework the problem from the stated givens rather than copying the worked-example result. Combine the unfactored distributed loads on the same basis: \(w=0.15+0.60=0.75\ \text{kip/ft}\). Load factors, if required, are applied afterward according to the specified load combination rather than being mixed into the service-load sum. **Check:** confirm the final magnitude and units against the physical meaning of §22.4 before accepting the answer.
+
+
+
+5. **Independent check for §22.5.** Rework the problem from the stated givens rather than copying the worked-example result. Tributary load is \(P=qA_t\). With \(q=80\ \text{lb/ft}^2\) and \(A_t=200\ \text{ft}^2\), \(P=16{,}000\ \text{lb}=16\ \text{kip}\). **Check:** confirm the final magnitude and units against the physical meaning of §22.5 before accepting the answer.
+
+
+
+6. **Independent check for §22.6.** Rework the problem from the stated givens rather than copying the worked-example result. Influence-line response from a concentrated load is \(P y\). A \(10\)-kip load at ordinate \(0.6\) contributes \(10(0.6)=6\ \text{kip}\) to the selected reaction or internal-force response, with sign determined by the influence-line ordinate. **Check:** confirm the final magnitude and units against the physical meaning of §22.6 before accepting the answer.
+
+
+
+7. **Independent check for §22.7.** Rework the problem from the stated givens rather than copying the worked-example result. Form the design demand by applying each prescribed load factor to the corresponding load effect and then summing algebraically. Dead, live, wind, seismic, and other effects are not interchangeable; the correct combination controls only after all applicable combinations are evaluated. **Check:** confirm the final magnitude and units against the physical meaning of §22.7 before accepting the answer.
+
+
+
+8. Before accepting a structural determinacy, stability, loads, load paths, and influence lines result, verify the dimensional units, the chapter-specific sign or direction convention, and that the selected model matches the stated geometry and boundary conditions.
+
+9. Begin with **FE Civil specification Area 11** and the structural-equilibrium/influence material in the ledger; use ASCE/SEI 7 only for the reconciled load-combination portion.
+
+10. For structural determinacy, stability, loads, load paths, and influence lines, a sketch makes the controlling geometry, direction, boundary, load/flow path, or sequence visible before algebra, which often reveals missing data or an impossible assumption immediately.
 
 ---
 

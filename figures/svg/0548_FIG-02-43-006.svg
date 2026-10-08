@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="648pt" viewBox="0 0 864 648" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-09T04:29:48.615469</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 648 
+L 864 648 
+L 864 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 262.8288 412.6464 
+L 601.1712 412.6464 
+L 601.1712 211.4424 
+L 262.8288 211.4424 
+z
+" clip-path="url(#p119eb05d79)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 239.76 426.06 
+L 624.24 426.06 
+L 624.24 198.0288 
+L 239.76 198.0288 
+L 239.76 426.06 
+z
+" clip-path="url(#p119eb05d79)" style="fill: none; stroke-dasharray: 5.55,2.4; stroke-dashoffset: 0; stroke: #b47722; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(324.027578 302.572173)">CONTROL VOLUME</text>
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(358.680312 333.570064)">M_CV=∫ρ dV</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="124.416" y="256.374138" transform="rotate(-0 124.416 256.374138)">Inlet 1: 3 kg/s</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="447.3792" y="484.405337" transform="rotate(-0 447.3792 484.405337)">Inlet 2: 2 kg/s</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="654.9984" y="256.374138" transform="rotate(-0 654.9984 256.374138)">Outlet 1: 4 kg/s</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="447.3792" y="140.122938" transform="rotate(-0 447.3792 140.122938)">Outlet 2: 0.5 kg/s</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="548.337919" transform="rotate(-0 432 548.337919)">dM_CV/dt=Σṁ_in−Σṁ_out=3+2−4−0.5=+0.5 kg/s</text>
+   </g>
+   <g id="patch_4">
+    <path d="M 64.897398 300.8664 
+Q 162.861905 300.8664 258.925754 300.8664 
+" clip-path="url(#p119eb05d79)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 252.925754 297.8664 
+L 258.925754 300.8664 
+L 252.925754 303.8664 
+z
+" clip-path="url(#p119eb05d79)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 424.3104 517.954294 
+Q 424.3104 466.301428 424.3104 416.549219 
+" clip-path="url(#p119eb05d79)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 421.3104 422.549219 
+L 424.3104 416.549219 
+L 427.3104 422.549219 
+z
+" clip-path="url(#p119eb05d79)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 603.168811 305.3376 
+Q 697.289967 305.3376 789.510466 305.3376 
+" clip-path="url(#p119eb05d79)" style="fill: none; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 783.510466 302.3376 
+L 789.510466 305.3376 
+L 783.510466 308.3376 
+z
+" clip-path="url(#p119eb05d79)" style="fill: #a23b34; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 424.3104 209.441494 
+Q 424.3104 157.788628 424.3104 108.036419 
+" clip-path="url(#p119eb05d79)" style="fill: none; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 421.3104 114.036419 
+L 424.3104 108.036419 
+L 427.3104 114.036419 
+z
+" clip-path="url(#p119eb05d79)" style="fill: #a23b34; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+  </g>
+  <g id="text_7">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">A fixed control volume balances all stream mass rates and accumulation</text>
+  </g>
+  <g id="text_8">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="47.52" y="630.504" transform="rotate(-0 47.52 630.504)">0548  •  FIG-02-43-006</text>
+  </g>
+  <g id="text_9">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(119.595312 590.616625)">Fixed control volume; each stream rate is positive in its labeled direction. Positive accumulation means mass stored inside is</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(404.683594 603.334125)">increasing.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p119eb05d79">
+   <rect x="47.52" y="90.72" width="768.96" height="447.12"/>
+  </clipPath>
+ </defs>
+</svg>

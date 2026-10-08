@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="936pt" height="792pt" viewBox="0 0 936 792" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-08T09:27:15.095815</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 792 
+L 936 792 
+L 936 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 42.12 95.04 
+L 425.412 95.04 
+L 425.412 290.2284 
+L 42.12 290.2284 
+z
+" clip-path="url(#p637a3cf90d)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 510.588 95.04 
+L 893.88 95.04 
+L 893.88 290.2284 
+L 510.588 290.2284 
+z
+" clip-path="url(#p637a3cf90d)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(121.261859 174.413653)">Finite lot: N = 200, D = 10</text>
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(79.476391 197.325137)">Sample n = 50 without replacement</text>
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(117.779516 220.236622)">Sample fraction n/N = 0.25</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(540.481656 174.413653)">Independent / large-lot approximation</text>
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(637.093453 197.325137)">p = D/N = 0.05</text>
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(572.824156 220.236622)">X approximately Binomial(n,p)</text>
+   </g>
+   <g id="text_3">
+    <!-- $P_a=\sum_{x=0}^c\frac{\binom{D}{x}\binom{N-D}{n-x}}{\binom{N}{n}}$ -->
+    <g style="fill: #23313d" transform="translate(161.7948 410.0736)">
+     <text>
+      <tspan x="0" y="-0.259375" style="font-style: oblique; font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d">P</tspan>
+      <tspan x="12.663574" y="3.185938" style="font-style: oblique; font-size: 14.7px; font-family: 'DejaVu Sans'; fill: #23313d">a</tspan>
+      <tspan x="48.02417" y="20.296875" style="font-style: oblique; font-size: 14.7px; font-family: 'DejaVu Sans'; fill: #23313d">x</tspan>
+      <tspan x="62.02417" y="-25.764063" style="font-style: oblique; font-size: 14.7px; font-family: 'DejaVu Sans'; fill: #23313d">c</tspan>
+      <tspan x="26.337158" y="-0.259375" style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d">=</tspan>
+      <tspan x="57.02417" y="-0.259375" style="font-size: 21px; font-family: 'DejaVu Sans Display'; fill: #23313d">∑</tspan>
+      <tspan x="59.5875" y="20.296875" style="font-size: 14.7px; font-family: 'DejaVu Sans'; fill: #23313d">=</tspan>
+      <tspan x="74.768408" y="20.296875" style="font-size: 14.7px; font-family: 'DejaVu Sans'; fill: #23313d">0</tspan>
+      <tspan x="84.120996" y="-11.889375" style="font-size: 13.663975px; font-family: 'STIXSizeOneSym'; fill: #23313d">(</tspan>
+      <tspan x="100.270191" y="-11.889375" style="font-size: 13.663975px; font-family: 'STIXSizeOneSym'; fill: #23313d">)</tspan>
+      <tspan x="90.50919" y="-18.894844" style="font-style: oblique; font-size: 10.29px; font-family: 'DejaVu Sans'; fill: #23313d">D</tspan>
+      <tspan x="91.50919" y="-9.5925" style="font-style: oblique; font-size: 10.29px; font-family: 'DejaVu Sans'; fill: #23313d">x</tspan>
+      <tspan x="112.550142" y="4.883281" style="font-style: oblique; font-size: 10.29px; font-family: 'DejaVu Sans'; fill: #23313d">N</tspan>
+      <tspan x="113.087531" y="-18.894844" style="font-style: oblique; font-size: 10.29px; font-family: 'DejaVu Sans'; fill: #23313d">N</tspan>
+      <tspan x="113.550142" y="14.323438" style="font-style: oblique; font-size: 10.29px; font-family: 'DejaVu Sans'; fill: #23313d">n</tspan>
+      <tspan x="115.087531" y="-9.454687" style="font-style: oblique; font-size: 10.29px; font-family: 'DejaVu Sans'; fill: #23313d">n</tspan>
+      <tspan x="133.416311" y="-18.894844" style="font-style: oblique; font-size: 10.29px; font-family: 'DejaVu Sans'; fill: #23313d">D</tspan>
+      <tspan x="134.240598" y="-9.454687" style="font-style: oblique; font-size: 10.29px; font-family: 'DejaVu Sans'; fill: #23313d">x</tspan>
+      <tspan x="106.120996" y="12.026563" style="font-size: 13.776025px; font-family: 'STIXSizeOneSym'; fill: #23313d">(</tspan>
+      <tspan x="106.658386" y="-11.751562" style="font-size: 13.776025px; font-family: 'STIXSizeOneSym'; fill: #23313d">(</tspan>
+      <tspan x="122.085044" y="12.026563" style="font-size: 13.776025px; font-family: 'STIXSizeOneSym'; fill: #23313d">)</tspan>
+      <tspan x="143.177312" y="-11.751562" style="font-size: 13.776025px; font-family: 'STIXSizeOneSym'; fill: #23313d">)</tspan>
+      <tspan x="122.789675" y="-18.894844" style="font-size: 10.29px; font-family: 'DejaVu Sans'; fill: #23313d">−</tspan>
+      <tspan x="123.613962" y="-9.454687" style="font-size: 10.29px; font-family: 'DejaVu Sans'; fill: #23313d">−</tspan>
+     </text>
+     <rect x="84.120996" y="-5.204687" width="65.485461" height="1.3125"/>
+    </g>
+   </g>
+   <g id="text_4">
+    <!-- $P_a=\sum_{x=0}^c\binom{n}{x} p^x(1-p)^{n-x}$ -->
+    <g style="fill: #23313d" transform="translate(577.0152 410.0736)">
+     <text>
+      <tspan x="0" y="-0.259375" style="font-style: oblique; font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d">P</tspan>
+      <tspan x="112.4427" y="-0.259375" style="font-style: oblique; font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d">p</tspan>
+      <tspan x="183.355708" y="-0.259375" style="font-style: oblique; font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d">p</tspan>
+      <tspan x="12.663574" y="3.185938" style="font-style: oblique; font-size: 14.7px; font-family: 'DejaVu Sans'; fill: #23313d">a</tspan>
+      <tspan x="48.02417" y="20.296875" style="font-style: oblique; font-size: 14.7px; font-family: 'DejaVu Sans'; fill: #23313d">x</tspan>
+      <tspan x="62.02417" y="-25.764063" style="font-style: oblique; font-size: 14.7px; font-family: 'DejaVu Sans'; fill: #23313d">c</tspan>
+      <tspan x="92.310999" y="-8.142187" style="font-style: oblique; font-size: 14.7px; font-family: 'DejaVu Sans'; fill: #23313d">n</tspan>
+      <tspan x="92.310999" y="5.146875" style="font-style: oblique; font-size: 14.7px; font-family: 'DejaVu Sans'; fill: #23313d">x</tspan>
+      <tspan x="126.750044" y="-8.298437" style="font-style: oblique; font-size: 14.7px; font-family: 'DejaVu Sans'; fill: #23313d">x</tspan>
+      <tspan x="205.079634" y="-8.298437" style="font-style: oblique; font-size: 14.7px; font-family: 'DejaVu Sans'; fill: #23313d">n</tspan>
+      <tspan x="232.441157" y="-8.298437" style="font-style: oblique; font-size: 14.7px; font-family: 'DejaVu Sans'; fill: #23313d">x</tspan>
+      <tspan x="26.337158" y="-0.259375" style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d">=</tspan>
+      <tspan x="136.023677" y="-0.259375" style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d">(</tspan>
+      <tspan x="144.216548" y="-0.259375" style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d">1</tspan>
+      <tspan x="161.668696" y="-0.259375" style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d">−</tspan>
+      <tspan x="196.685786" y="-0.259375" style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d">)</tspan>
+      <tspan x="57.02417" y="-0.259375" style="font-size: 21px; font-family: 'DejaVu Sans Display'; fill: #23313d">∑</tspan>
+      <tspan x="59.5875" y="20.296875" style="font-size: 14.7px; font-family: 'DejaVu Sans'; fill: #23313d">=</tspan>
+      <tspan x="74.768408" y="20.296875" style="font-size: 14.7px; font-family: 'DejaVu Sans'; fill: #23313d">0</tspan>
+      <tspan x="217.260249" y="-8.298437" style="font-size: 14.7px; font-family: 'DejaVu Sans'; fill: #23313d">−</tspan>
+      <tspan x="84.120996" y="2.19375" style="font-size: 17.50127px; font-family: 'STIXSizeOneSym'; fill: #23313d">(</tspan>
+      <tspan x="104.252698" y="2.19375" style="font-size: 17.50127px; font-family: 'STIXSizeOneSym'; fill: #23313d">)</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="238.0248" y="579.912963" transform="rotate(-0 238.0248 579.912963)">Exact Pₐ = 0.5237</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="697.9752" y="579.912963" transform="rotate(-0 697.9752 579.912963)">Approximate Pₐ = 0.5405</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="468" y="714.846575" transform="rotate(-0 468 714.846575)">Example c = 2. A 25% sample fraction is substantial; do not assume constant p across without-replacement draws.</text>
+   </g>
+  </g>
+  <g id="text_8">
+   <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="42.12" y="39.6" transform="rotate(-0 42.12 39.6)">Finite lots require the without-replacement model</text>
+  </g>
+  <g id="text_9">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="42.12" y="770.616" transform="rotate(-0 42.12 770.616)">0244  •  FIG-01-41-003</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p637a3cf90d">
+   <rect x="42.12" y="95.04" width="851.76" height="629.64"/>
+  </clipPath>
+ </defs>
+</svg>

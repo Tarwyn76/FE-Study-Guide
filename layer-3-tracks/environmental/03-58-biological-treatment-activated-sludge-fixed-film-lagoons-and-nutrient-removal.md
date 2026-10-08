@@ -65,7 +65,7 @@ Monod kinetics represent substrate-limited microbial growth. At S=Ks, the growth
 
 **Problem.** If S=Ks, μ=μmax/2.
 
-**Solution.** Apply the relation and environmental model in §58.1; then verify units, boundary conditions, and physical limits.
+**Solution.** Monod kinetics gives \(\mu=\mu_{max}S/(K_s+S)\). At \(S=K_s\), \(\mu=\mu_{max}K_s/(2K_s)=\mathbf{\mu_{max}/2}\).
 
 ---
 
@@ -81,7 +81,7 @@ Yield links substrate removal to biomass production. Endogenous decay reduces ne
 
 **Problem.** A yield of 0.5 kg biomass/kg substrate and 100 kg/day substrate consumption gives 50 kg/day gross biomass.
 
-**Solution.** Apply the relation and environmental model in §58.2; then verify units, boundary conditions, and physical limits.
+**Solution.** Gross biomass production is \(Y\) times substrate consumed: \((0.5\ {\rm kg\ biomass/kg\ substrate})(100\ {\rm kg/day})=\mathbf{50\ kg/day}\). Net observed production may be lower when decay is included.
 
 ---
 
@@ -97,7 +97,7 @@ Activated sludge suspends microorganisms in an aerated reactor and separates bio
 
 **Problem.** Increasing waste sludge rate generally decreases solids retention time.
 
-**Solution.** Apply the relation and environmental model in §58.3; then verify units, boundary conditions, and physical limits.
+**Solution.** Solids retention time is approximately solids inventory divided by solids wasted per time. Increasing the waste-sludge rate increases the denominator and therefore generally **decreases SRT**, all else equal.
 
 ---
 
@@ -113,7 +113,7 @@ Hydraulic retention time and solids retention time are distinct in systems with 
 
 **Problem.** A process can have an 8-hour HRT and a 10-day SRT because solids are recycled.
 
-**Solution.** Apply the relation and environmental model in §58.4; then verify units, boundary conditions, and physical limits.
+**Solution.** HRT is governed primarily by liquid volume and flow, while SRT tracks retained biomass solids. Clarification and return activated sludge recycle biomass, allowing **8 h HRT** and **10 d SRT** to coexist without contradiction.
 
 ---
 
@@ -129,7 +129,7 @@ Trickling filters and other attached-growth processes retain biomass on media. P
 
 **Problem.** A thicker biofilm can increase biomass inventory but also increases diffusion distance.
 
-**Solution.** Apply the relation and environmental model in §58.5; then verify units, boundary conditions, and physical limits.
+**Solution.** More biofilm thickness can increase total attached biomass, but substrate and oxygen must diffuse farther into the film. Beyond an effective depth, diffusion limitation and inactive regions can reduce the benefit of added thickness.
 
 ---
 
@@ -145,7 +145,7 @@ Biological processes use different electron-acceptor conditions. Aerobic systems
 
 **Problem.** Denitrification is commonly an anoxic process.
 
-**Solution.** Apply the relation and environmental model in §58.6; then verify units, boundary conditions, and physical limits.
+**Solution.** Denitrification uses oxidized nitrogen as an electron acceptor under **anoxic** conditions—little or no dissolved oxygen, but nitrate/nitrite present. This differs from aerobic and strictly anaerobic conditions.
 
 ---
 
@@ -161,7 +161,7 @@ Nutrient removal couples nitrification, denitrification, biological phosphorus u
 
 **Problem.** Nitrification converts ammonia toward oxidized nitrogen; denitrification removes oxidized nitrogen as gas.
 
-**Solution.** Apply the relation and environmental model in §58.7; then verify units, boundary conditions, and physical limits.
+**Solution.** Nitrification oxidizes ammonia toward nitrite/nitrate; denitrification reduces nitrate/nitrite to gaseous nitrogen species. Effective nitrogen removal therefore requires the proper sequence of **aerobic nitrification** and **anoxic denitrification** conditions.
 
 ---
 
@@ -171,13 +171,13 @@ Nutrient removal couples nitrification, denitrification, biological phosphorus u
 
 **Problem.** A treatment calculation predicts a negative effluent concentration. What does that indicate?
 
-**Solution.** The algebra or model assumptions are invalid for that condition. Recheck the balance, reaction/order assumptions, time basis, units, and any zero-concentration limiting condition.
+**Solution.** A negative biomass or substrate concentration indicates that the biological model has been applied outside its feasible range or with an incorrect sign. Recheck growth/decay terms, recycle/waste flows, and solids inventory.
 
 ### Worked Example 9
 
 **Problem.** A remembered environmental correlation differs from the FE Reference Handbook relation. Which should govern the exam solution?
 
-**Solution.** Use the Handbook relation and its definitions unless the problem explicitly supplies a different model.
+**Solution.** For **Biological Treatment — Activated Sludge, Fixed Film, Lagoons, and Nutrient Removal**, the FE Reference Handbook equation, definitions, and unit convention govern whenever the Handbook supplies the needed relation. The external references in this chapter are used for specification-required learned material involving **Monod growth, biomass yield, activated sludge, SRT/HRT, biofilms, and nutrient removal**. If a remembered correlation conflicts with the supplied Handbook equation, use the supplied Handbook relation unless the problem explicitly states a different model.
 
 ---
 
@@ -185,7 +185,13 @@ Nutrient removal couples nitrification, denitrification, biological phosphorus u
 
 Primary source basis: **FE Environmental specification Area(s) 12; FE Reference Handbook 10.6 Environmental Engineering, printed pp. 318–360, plus general supporting sections where identified in the ledger.**
 
-**Source boundary:** Some Environmental specification topics are directly tabulated in the Handbook, while others require learned engineering knowledge. The chapter keeps those two categories separate.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required environmental-engineering knowledge that is not fully developed in the Handbook. **Guide synthesis** connects the Handbook and external material into exam-oriented explanations, examples, and checks; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Metcalf & Eddy/AECOM, Tchobanoglous, G., Stensel, H. D., Tsuchihashi, R., & Burton, F. L. (2014). *Wastewater Engineering: Treatment and Resource Recovery* (5th ed.). McGraw-Hill. ISBN 978-0-07-340118-8. Supporting scope: Wastewater characteristics, physical/chemical treatment, activated sludge, solids recycle, biosolids, residuals, and resource recovery.
+- Mihelcic, J. R., & Zimmerman, J. B. (2021). *Environmental Engineering: Fundamentals, Sustainability, Design* (3rd ed.). Wiley. ISBN 978-1-119-60445-7. Supporting scope: Environmental measurements, chemistry, physical processes, biology, risk, water quantity/quality, water treatment, wastewater/stormwater, solid waste, and air quality.
+
+The external references support only the learned/application portion of the Environmental specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -356,31 +362,31 @@ D) It is always a Handbook lookup with no learned interpretation
 
 14. For **biological nutrient removal**, check basis, units, steady/unsteady condition, phase/media, boundary conditions, and whether the selected idealization matches the system.
 
-15. The boundary determines what enters, leaves, accumulates, reacts, or transfers between media. Without it, terms are easily omitted or double counted.
+15. In **Biological Treatment — Activated Sludge, Fixed Film, Lagoons, and Nutrient Removal**, the control volume or conceptual boundary determines which sources, sinks, transfers, reactions, and receptors belong in the model. For this chapter specifically, distinguish hrt from srt, close biomass/substrate balances, keep aerobic/anoxic/anaerobic conditions distinct, and verify growth/decay assumptions before interpreting nutrient removal.
 
-16. Concentration is mass per volume; loading is mass per time. A low concentration at very high flow can still create a large load.
+16. Concentration and loading answer different questions in **Biological Treatment — Activated Sludge, Fixed Film, Lagoons, and Nutrient Removal**: concentration is mass per volume, while loading is mass per time. Always convert \(Q\) and \(C\) to compatible units before multiplying them.
 
-17. The FE Handbook is the supplied exam reference. Its variable definitions and unit conventions should govern unless the problem explicitly provides another relation.
+17. Use the FE Reference Handbook equation and definitions when it supplies the model for **Biological Treatment — Activated Sludge, Fixed Film, Lagoons, and Nutrient Removal**. The chapter's external references (METCALF, MIHELCIC) support learned specification content, not a competing exam formula.
 
-18. A mass/energy balance and physical check can reveal impossible signs, removal above 100%, negative concentrations, unrealistic flows, or model misuse.
+18. A physical check is needed because algebra alone can return impossible environmental states. For this chapter, set substrate \(S	o0\) and confirm Monod growth \(\mu	o0\); set \(S=K_s\) and confirm \(\mu=\mu_{max}/2\).
 
-19. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+19. **A.** Section §58.1, **Microbial growth, substrate utilization, and Monod kinetics**, is governed by \(\mu=\mu_{max}\frac{S}{K_s+S}\). Use that relation with its own environmental basis and then perform the specific validity check described for §58.1.
 
-20. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+20. **A.** Section §58.2, **Biomass yield and substrate conversion**, is governed by \(Y=\frac{\text{biomass produced}}{\text{substrate consumed}}\). Use that relation with its own environmental basis and then perform the specific validity check described for §58.2.
 
-21. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+21. **A.** Section §58.3, **Activated-sludge process and solids recycle**, is governed by \(\text{aeration basin}\rightarrow\text{secondary clarifier}\rightarrow\text{RAS/WAS}\). Use that relation with its own environmental basis and then perform the specific validity check described for §58.3.
 
-22. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+22. **A.** Section §58.4, **Solids retention time and hydraulic retention time**, is governed by \(\theta_c=\frac{\text{mass of solids in system}}{\text{mass solids wasted per time}}\). Use that relation with its own environmental basis and then perform the specific validity check described for §58.4.
 
-23. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+23. **A.** Section §58.5, **Fixed-film processes and biofilm transport**, is governed by \(\text{bulk substrate}\rightarrow\text{biofilm diffusion}\rightarrow\text{biodegradation}\). Use that relation with its own environmental basis and then perform the specific validity check described for §58.5.
 
-24. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+24. **A.** Section §58.6, **Lagoons, aerobic, anaerobic, and anoxic environments**, is governed by \(\text{aerobic}\neq\text{anoxic}\neq\text{anaerobic}\). Use that relation with its own environmental basis and then perform the specific validity check described for §58.6.
 
-25. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+25. **A.** Section §58.7, **Nitrogen and phosphorus removal**, is governed by \(\text{N/P removal requires the correct sequence of biological/chemical conditions}\). Use that relation with its own environmental basis and then perform the specific validity check described for §58.7.
 
-26. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+26. **A.** An integrated **Biological Treatment — Activated Sludge, Fixed Film, Lagoons, and Nutrient Removal** solution is acceptable only after the governing balance/model is identified, units are reconciled, and the chapter-specific physical checks are satisfied.
 
-27. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+27. **A.** Source ownership is explicit in **Biological Treatment — Activated Sludge, Fixed Film, Lagoons, and Nutrient Removal**: FE-Handbook-supported material remains tied to the ledger, externally supported content uses METCALF, MIHELCIC, and guide synthesis is labeled as supplemental explanation.
 
 
 ---
@@ -412,25 +418,25 @@ D) It is always a Handbook lookup with no learned interpretation
 
 ## Practice Problem Solutions
 
-1. Use §58.1. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+1. **Independent recomputation for §58.1 — Microbial growth, substrate utilization, and Monod kinetics.** Start from the stated givens rather than the worked-example answer. Monod kinetics gives \(\mu=\mu_{max}S/(K_s+S)\). At \(S=K_s\), \(\mu=\mu_{max}K_s/(2K_s)=\mathbf{\mu_{max}/2}\). As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-2. Use §58.2. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+2. **Independent recomputation for §58.2 — Biomass yield and substrate conversion.** Start from the stated givens rather than the worked-example answer. Gross biomass production is \(Y\) times substrate consumed: \((0.5\ {\rm kg\ biomass/kg\ substrate})(100\ {\rm kg/day})=\mathbf{50\ kg/day}\). Net observed production may be lower when decay is included. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-3. Use §58.3. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+3. **Independent recomputation for §58.3 — Activated-sludge process and solids recycle.** Start from the stated givens rather than the worked-example answer. Solids retention time is approximately solids inventory divided by solids wasted per time. Increasing the waste-sludge rate increases the denominator and therefore generally **decreases SRT**, all else equal. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-4. Use §58.4. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+4. **Independent recomputation for §58.4 — Solids retention time and hydraulic retention time.** Start from the stated givens rather than the worked-example answer. HRT is governed primarily by liquid volume and flow, while SRT tracks retained biomass solids. Clarification and return activated sludge recycle biomass, allowing **8 h HRT** and **10 d SRT** to coexist without contradiction. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-5. Use §58.5. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+5. **Independent recomputation for §58.5 — Fixed-film processes and biofilm transport.** Start from the stated givens rather than the worked-example answer. More biofilm thickness can increase total attached biomass, but substrate and oxygen must diffuse farther into the film. Beyond an effective depth, diffusion limitation and inactive regions can reduce the benefit of added thickness. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-6. Use §58.6. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+6. **Independent recomputation for §58.6 — Lagoons, aerobic, anaerobic, and anoxic environments.** Start from the stated givens rather than the worked-example answer. Denitrification uses oxidized nitrogen as an electron acceptor under **anoxic** conditions—little or no dissolved oxygen, but nitrate/nitrite present. This differs from aerobic and strictly anaerobic conditions. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-7. Use §58.7. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+7. **Independent recomputation for §58.7 — Nitrogen and phosphorus removal.** Start from the stated givens rather than the worked-example answer. Nitrification oxidizes ammonia toward nitrite/nitrate; denitrification reduces nitrate/nitrite to gaseous nitrogen species. Effective nitrogen removal therefore requires the proper sequence of **aerobic nitrification** and **anoxic denitrification** conditions. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-8. Check dimensions, concentration-versus-loading basis, conservation of mass/energy, sign convention, and whether removal, risk, or efficiency values stay within physically meaningful limits.
+8. For this chapter, check the result against this failure screen: Distinguish HRT from SRT, close biomass/substrate balances, keep aerobic/anoxic/anaerobic conditions distinct, and verify growth/decay assumptions before interpreting nutrient removal. A result that violates one of those conditions should be rejected even if the arithmetic is internally consistent.
 
-9. Start with FE Environmental specification Area(s) 12, then use the Handbook subsection named in the corresponding ledger entry.
+9. For **Biological Treatment — Activated Sludge, Fixed Film, Lagoons, and Nutrient Removal**, begin with the FE Environmental specification area and Handbook subsection recorded in the ledger. When the atom is `split_required`, use the reconciled external source set **METCALF, MIHELCIC** for the learned portion rather than inventing a Handbook page.
 
-10. Test a limiting case such as zero source, zero reaction, complete mixing, no flow, very large residence time, or 0/100% removal as appropriate. The result should reduce to a sensible physical state.
+10. A useful limiting case is to set substrate \(S	o0\) and confirm Monod growth \(\mu	o0\); set \(S=K_s\) and confirm \(\mu=\mu_{max}/2\). The simplified case should reduce to the stated physical behavior before the full model is trusted.
 
 ---
 

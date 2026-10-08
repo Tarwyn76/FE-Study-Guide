@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1008pt" height="720pt" viewBox="0 0 1008 720" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-09T04:19:01.583119</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 720 
+L 1008 720 
+L 1008 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="text_1">
+    <text style="font-size: 26px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="817.992" y="207.334375" transform="rotate(-0 817.992 207.334375)">EI v″(x)=M(x)</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(772.480281 344.219758)">θ=v′(x)</text>
+    <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(739.867 377.913117)">v(0)=v(L)=0</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(702.352781 514.325547)">Symmetric midpoint:</text>
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(767.35075 543.975703)">v′(L/2)=0</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_2">
+    <path d="M 65.52 511.2 
+L 670.32 511.2 
+L 670.32 144 
+L 65.52 144 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 93.010909 511.2 
+L 93.010909 144 
+" clip-path="url(#pdffd759cd8)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2">
+      <defs>
+       <path id="m464ba93aec" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m464ba93aec" x="93.010909" y="511.2" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="93.010909" y="525.038594" transform="rotate(-0 93.010909 525.038594)">0.0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 161.738182 511.2 
+L 161.738182 144 
+" clip-path="url(#pdffd759cd8)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m464ba93aec" x="161.738182" y="511.2" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="161.738182" y="525.038594" transform="rotate(-0 161.738182 525.038594)">0.5</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 230.465455 511.2 
+L 230.465455 144 
+" clip-path="url(#pdffd759cd8)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m464ba93aec" x="230.465455" y="511.2" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="230.465455" y="525.038594" transform="rotate(-0 230.465455 525.038594)">1.0</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 299.192727 511.2 
+L 299.192727 144 
+" clip-path="url(#pdffd759cd8)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m464ba93aec" x="299.192727" y="511.2" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="299.192727" y="525.038594" transform="rotate(-0 299.192727 525.038594)">1.5</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 367.92 511.2 
+L 367.92 144 
+" clip-path="url(#pdffd759cd8)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m464ba93aec" x="367.92" y="511.2" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="367.92" y="525.038594" transform="rotate(-0 367.92 525.038594)">2.0</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_11">
+      <path d="M 436.647273 511.2 
+L 436.647273 144 
+" clip-path="url(#pdffd759cd8)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m464ba93aec" x="436.647273" y="511.2" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="436.647273" y="525.038594" transform="rotate(-0 436.647273 525.038594)">2.5</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_13">
+      <path d="M 505.374545 511.2 
+L 505.374545 144 
+" clip-path="url(#pdffd759cd8)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m464ba93aec" x="505.374545" y="511.2" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="505.374545" y="525.038594" transform="rotate(-0 505.374545 525.038594)">3.0</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_15">
+      <path d="M 574.101818 511.2 
+L 574.101818 144 
+" clip-path="url(#pdffd759cd8)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#m464ba93aec" x="574.101818" y="511.2" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="574.101818" y="525.038594" transform="rotate(-0 574.101818 525.038594)">3.5</text>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_17">
+      <path d="M 642.829091 511.2 
+L 642.829091 144 
+" clip-path="url(#pdffd759cd8)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#m464ba93aec" x="642.829091" y="511.2" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="642.829091" y="525.038594" transform="rotate(-0 642.829091 525.038594)">4.0</text>
+     </g>
+    </g>
+    <g id="text_13">
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="367.92" y="539.268594" transform="rotate(-0 367.92 539.268594)">x (m)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_19">
+      <path d="M 65.52 511.2 
+L 670.32 511.2 
+" clip-path="url(#pdffd759cd8)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_20">
+      <defs>
+       <path id="m9aae353341" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m9aae353341" x="65.52" y="511.2" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_14">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end" x="58.52" y="514.619297" transform="rotate(-0 58.52 514.619297)">−8</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_21">
+      <path d="M 65.52 437.76 
+L 670.32 437.76 
+" clip-path="url(#pdffd759cd8)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_22">
+      <g>
+       <use xlink:href="#m9aae353341" x="65.52" y="437.76" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_15">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end" x="58.52" y="441.179297" transform="rotate(-0 58.52 441.179297)">−6</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_23">
+      <path d="M 65.52 364.32 
+L 670.32 364.32 
+" clip-path="url(#pdffd759cd8)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_24">
+      <g>
+       <use xlink:href="#m9aae353341" x="65.52" y="364.32" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_16">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end" x="58.52" y="367.739297" transform="rotate(-0 58.52 367.739297)">−4</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_25">
+      <path d="M 65.52 290.88 
+L 670.32 290.88 
+" clip-path="url(#pdffd759cd8)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_26">
+      <g>
+       <use xlink:href="#m9aae353341" x="65.52" y="290.88" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_17">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end" x="58.52" y="294.299297" transform="rotate(-0 58.52 294.299297)">−2</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_27">
+      <path d="M 65.52 217.44 
+L 670.32 217.44 
+" clip-path="url(#pdffd759cd8)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_28">
+      <g>
+       <use xlink:href="#m9aae353341" x="65.52" y="217.44" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_18">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end" x="58.52" y="220.859297" transform="rotate(-0 58.52 220.859297)">0</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_29">
+      <path d="M 65.52 144 
+L 670.32 144 
+" clip-path="url(#pdffd759cd8)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_30">
+      <g>
+       <use xlink:href="#m9aae353341" x="65.52" y="144" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_19">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end" x="58.52" y="147.419297" transform="rotate(-0 58.52 147.419297)">2</text>
+     </g>
+    </g>
+    <g id="text_20">
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="38.964375" y="327.6" transform="rotate(-90 38.964375 327.6)">Deflection v (mm)</text>
+    </g>
+   </g>
+   <g id="line2d_31">
+    <path d="M 93.010909 217.44 
+L 124.271475 259.015212 
+L 140.821186 280.65703 
+L 155.53204 299.510593 
+L 168.404038 315.618981 
+L 179.437178 329.077583 
+L 190.470319 342.164299 
+L 199.664603 352.751566 
+L 208.858887 363.020136 
+L 218.053171 372.942537 
+L 227.247455 382.491293 
+L 234.602882 389.842812 
+L 241.95831 396.923549 
+L 249.313737 403.719437 
+L 256.669164 410.21641 
+L 264.024591 416.400402 
+L 271.380018 422.257345 
+L 278.735445 427.773173 
+L 286.090873 432.933819 
+L 291.607443 436.562754 
+L 297.124013 439.978052 
+L 302.640584 443.17378 
+L 308.157154 446.144003 
+L 313.673725 448.882786 
+L 319.190295 451.384195 
+L 324.706865 453.642296 
+L 330.223436 455.651154 
+L 335.740006 457.404836 
+L 341.256576 458.897406 
+L 346.773147 460.122931 
+L 352.289717 461.075476 
+L 357.806288 461.749107 
+L 363.322858 462.137889 
+L 368.839428 462.235897 
+L 374.355999 462.040311 
+L 379.872569 461.55592 
+L 385.38914 460.788659 
+L 390.90571 459.744461 
+L 396.42228 458.429262 
+L 401.938851 456.848995 
+L 407.455421 455.009595 
+L 412.971991 452.916996 
+L 418.488562 450.577133 
+L 424.005132 447.99594 
+L 429.521703 445.179351 
+L 435.038273 442.133301 
+L 440.554843 438.863723 
+L 446.071414 435.376553 
+L 451.587984 431.677725 
+L 458.943411 426.426964 
+L 466.298839 420.824539 
+L 473.654266 414.884515 
+L 481.009693 408.62096 
+L 488.36512 402.047939 
+L 495.720547 395.17952 
+L 503.075974 388.029769 
+L 510.431402 380.612752 
+L 519.625686 370.987069 
+L 528.81997 360.993237 
+L 538.014254 350.658729 
+L 547.208538 340.01102 
+L 558.241678 326.859026 
+L 569.274819 313.343059 
+L 582.146817 297.177745 
+L 595.018814 280.65703 
+L 611.568525 259.015212 
+L 633.634807 229.716357 
+L 642.829091 217.44 
+L 642.829091 217.44 
+" clip-path="url(#pdffd759cd8)" style="fill: none; stroke: #235a78; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_32">
+    <path d="M 65.52 217.44 
+L 670.32 217.44 
+" clip-path="url(#pdffd759cd8)" style="fill: none; stroke: #23313d; stroke-linecap: square"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 65.52 511.2 
+L 65.52 144 
+" style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 65.52 511.2 
+L 670.32 511.2 
+" style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #235a78" x="257.956364" y="485.496" transform="rotate(-0 257.956364 485.496)">Downward v_max=−6.667 mm</text>
+   </g>
+  </g>
+  <g id="text_22">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">The elastic curve connects bending moment to curvature and boundary conditions</text>
+  </g>
+  <g id="text_23">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="55.44" y="700.56" transform="rotate(-0 55.44 700.56)">0520  •  FIG-02-39-006</text>
+  </g>
+  <g id="text_24">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="662.999375" transform="rotate(-0 504 662.999375)">Simply supported L=4 m beam with central P=1 kN and constant EI=200,000 N·m². Upward deflection is positive; small-slope Euler–Bernoulli theory.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pdffd759cd8">
+   <rect x="65.52" y="144" width="604.8" height="367.2"/>
+  </clipPath>
+ </defs>
+</svg>

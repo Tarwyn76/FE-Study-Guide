@@ -65,7 +65,7 @@ Stopping sight distance combines distance traveled during perception-reaction wi
 
 **Problem.** Higher speed increases both components and substantially increases total SSD.
 
-**Solution.** Apply the relation and definitions in §29.1; the stated result follows with consistent units and sign convention.
+**Solution.** Stopping sight distance is the sum of perception-reaction distance and braking distance. Both increase with speed, and braking distance contains a strong speed dependence, so increasing design speed substantially increases total SSD even when grade and friction are unchanged.
 
 ---
 
@@ -81,7 +81,7 @@ Horizontal-curve design balances centripetal demand using superelevation and lat
 
 **Problem.** For a fixed speed, a larger radius reduces required lateral acceleration.
 
-**Solution.** Apply the relation and definitions in §29.2; the stated result follows with consistent units and sign convention.
+**Solution.** Centripetal acceleration is \(a=v^2/R\). At fixed speed, increasing curve radius \(R\) reduces required lateral acceleration and therefore reduces the combined demand that must be provided by superelevation and side friction.
 
 ---
 
@@ -97,7 +97,7 @@ Parabolic vertical curves provide gradual transition between grades. Crest and s
 
 **Problem.** Changing from +2% to -3% gives algebraic grade difference magnitude A=5%.
 
-**Solution.** Apply the relation and definitions in §29.3; the stated result follows with consistent units and sign convention.
+**Solution.** The algebraic grade difference is the magnitude of the change between grades. From \(+2\%\) to \(-3\%\), \(A=|(+2)-(-3)|=5\%\). This value is used in vertical-curve geometry rather than the arithmetic average of the two grades.
 
 ---
 
@@ -113,7 +113,7 @@ Flexible and rigid pavements distribute loads differently. Drainage and subgrade
 
 **Problem.** Weak saturated subgrade generally requires greater structural capacity or improved support.
 
-**Solution.** Apply the relation and definitions in §29.4; the stated result follows with consistent units and sign convention.
+**Solution.** A weak or saturated subgrade provides less support to the pavement structure and can be more susceptible to deformation. The design response may be greater structural thickness, improved drainage, stabilization, or subgrade improvement rather than assuming the same pavement section is adequate.
 
 ---
 
@@ -129,7 +129,7 @@ Traffic flow q equals density k times mean speed v. This relation connects speed
 
 **Problem.** k=30 veh/mi and v=50 mi/hr gives q=1500 veh/hr.
 
-**Solution.** Apply the relation and definitions in §29.5; the stated result follows with consistent units and sign convention.
+**Solution.** Traffic flow is \(q=kv\). With \(k=30\ \text{veh/mi}\) and \(v=50\ \text{mi/hr}\), \(q=30(50)=1500\ \text{veh/hr}\). The mile units cancel, leaving vehicles per hour.
 
 ---
 
@@ -145,7 +145,7 @@ Capacity and level of service summarize roadway operating conditions. Traffic-co
 
 **Problem.** v/c near 1 indicates operation near capacity.
 
-**Solution.** Apply the relation and definitions in §29.6; the stated result follows with consistent units and sign convention.
+**Solution.** The volume-to-capacity ratio compares demand with available capacity. A value \(v/c\) near 1 indicates the facility is operating near its nominal capacity, where small demand increases or disturbances can cause substantial delay and unstable flow.
 
 ---
 
@@ -161,7 +161,7 @@ Planning links land use, trip generation, distribution, mode choice, assignment,
 
 **Problem.** At 8 trips per dwelling for 250 dwellings, estimated trips are 2000 per selected period.
 
-**Solution.** Apply the relation and definitions in §29.7; the stated result follows with consistent units and sign convention.
+**Solution.** Trip generation is rate times number of land-use units. At 8 trips per dwelling for 250 dwellings, \(T=8(250)=2000\) trips during the period to which the stated rate applies. The time basis of the rate must match the requested analysis period.
 
 ---
 
@@ -171,13 +171,13 @@ Planning links land use, trip generation, distribution, mode choice, assignment,
 
 **Problem.** A problem combines two ideas from this chapter. What should be done before calculation?
 
-**Solution.** Draw the system, identify the requested quantity, establish units and sign conventions, and list the governing relations before substituting numbers.
+**Solution.** For a roadway-design problem, first determine the controlling demand or design speed, then apply the geometry or capacity relation. Sight distance, horizontal curvature, vertical curvature, pavement support, and traffic capacity are separate checks that may independently control the design.
 
 ### Worked Example 9
 
 **Problem.** A remembered equation differs from the FE Reference Handbook form. Which should govern the exam solution?
 
-**Solution.** Use the Handbook form and its unit convention unless the problem explicitly supplies a different relation.
+**Solution.** Use the Handbook transportation relation with its exact speed, grade, friction, and unit definitions. Many transportation equations contain unit-dependent constants, so a remembered SI/customary form should not replace the Handbook expression supplied for the exam.
 
 ---
 
@@ -357,31 +357,31 @@ D) Treat it as optional
 
 14. For **transportation planning**, common failures are wrong units, wrong sign convention, wrong geometry/boundary condition, or using a relation outside its assumptions.
 
-15. The sketch exposes geometry, boundaries, loads/flows, signs, and missing data before algebra begins.
+15. Draw roadway plan/profile geometry and identify design speed, grades, curve radius, sight line, pavement layers, or traffic stream before choosing the corresponding transportation relation.
 
-16. Use the Handbook form when it is available because the FE exam supplies that reference and its constants/unit conventions govern the problem.
+16. Use the Handbook transportation equation that matches the stated speed, grade, friction, and unit convention because many geometric-design relations contain unit-dependent constants.
 
-17. Mixed unit systems create hidden conversion errors and can invalidate dimensional consistency.
+17. Transportation problems commonly mix mph, ft/s, miles, feet, percentages, and veh/hr; explicit conversion is required before kinematic and geometric quantities are combined.
 
-18. A reasonableness check can catch sign, magnitude, boundary-condition, and unit errors that algebra alone does not reveal.
+18. Check geometry and scale: stopping distance and radius must be positive, grade changes should match the profile, and traffic-flow results should be plausible relative to the stated capacity.
 
-19. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+19. **A.** For **Stopping sight distance and roadway geometry**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-20. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+20. **A.** For **Horizontal curves, superelevation, and side friction**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-21. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+21. **A.** For **Vertical curves and grade transitions**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-22. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+22. **A.** For **Pavement layers, subgrade, drainage, and rehabilitation**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-23. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+23. **A.** For **Traffic flow variables and fundamental relationships**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-24. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+24. **A.** For **Capacity, level of service, and traffic-control devices**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-25. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+25. **A.** For **Transportation planning, trip generation, and safety**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-26. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+26. **A.** In Transportation Engineering — Geometric Design, Pavements, Traffic Flow, and Planning, dimensional consistency and an independent physical check are the fastest ways to detect a unit, sign, magnitude, or modeling error before accepting the result.
 
-27. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+27. **A.** Handbook relations remain the primary exam reference in this chapter; any additional planning or pavement discussion is identified as learned material or guide synthesis rather than assigned an unsupported Handbook page.
 
 
 
@@ -414,25 +414,39 @@ D) Treat it as optional
 
 ## Practice Problem Solutions
 
-1. Use §29.1. Higher speed increases both components and substantially increases total SSD. The calculation or classification follows from the displayed section relation and the stated data.
+1. **Independent check for §29.1.** Rework the problem from the stated givens rather than copying the worked-example result. Stopping sight distance is the sum of perception-reaction distance and braking distance. Both increase with speed, and braking distance contains a strong speed dependence, so increasing design speed substantially increases total SSD even when grade and friction are unchanged. **Check:** confirm the final magnitude and units against the physical meaning of §29.1 before accepting the answer.
 
-2. Use §29.2. For a fixed speed, a larger radius reduces required lateral acceleration. The calculation or classification follows from the displayed section relation and the stated data.
 
-3. Use §29.3. Changing from +2% to -3% gives algebraic grade difference magnitude A=5%. The calculation or classification follows from the displayed section relation and the stated data.
 
-4. Use §29.4. Weak saturated subgrade generally requires greater structural capacity or improved support. The calculation or classification follows from the displayed section relation and the stated data.
+2. **Independent check for §29.2.** Rework the problem from the stated givens rather than copying the worked-example result. Centripetal acceleration is \(a=v^2/R\). At fixed speed, increasing curve radius \(R\) reduces required lateral acceleration and therefore reduces the combined demand that must be provided by superelevation and side friction. **Check:** confirm the final magnitude and units against the physical meaning of §29.2 before accepting the answer.
 
-5. Use §29.5. k=30 veh/mi and v=50 mi/hr gives q=1500 veh/hr. The calculation or classification follows from the displayed section relation and the stated data.
 
-6. Use §29.6. v/c near 1 indicates operation near capacity. The calculation or classification follows from the displayed section relation and the stated data.
 
-7. Use §29.7. At 8 trips per dwelling for 250 dwellings, estimated trips are 2000 per selected period. The calculation or classification follows from the displayed section relation and the stated data.
+3. **Independent check for §29.3.** Rework the problem from the stated givens rather than copying the worked-example result. The algebraic grade difference is the magnitude of the change between grades. From \(+2\%\) to \(-3\%\), \(A=|(+2)-(-3)|=5\%\). This value is used in vertical-curve geometry rather than the arithmetic average of the two grades. **Check:** confirm the final magnitude and units against the physical meaning of §29.3 before accepting the answer.
 
-8. Check dimensions, unit conversion, sign convention, and whether the selected relation's assumptions match the physical situation.
 
-9. Start with FE Civil specification Area 13 and the Handbook sections identified in **As the Handbook States It** and the ledger entries for this chapter.
 
-10. A sketch exposes incompatible geometry, impossible flow/load directions, missing reactions/boundaries, and double-counted or omitted terms.
+4. **Independent check for §29.4.** Rework the problem from the stated givens rather than copying the worked-example result. A weak or saturated subgrade provides less support to the pavement structure and can be more susceptible to deformation. The design response may be greater structural thickness, improved drainage, stabilization, or subgrade improvement rather than assuming the same pavement section is adequate. **Check:** confirm the final magnitude and units against the physical meaning of §29.4 before accepting the answer.
+
+
+
+5. **Independent check for §29.5.** Rework the problem from the stated givens rather than copying the worked-example result. Traffic flow is \(q=kv\). With \(k=30\ \text{veh/mi}\) and \(v=50\ \text{mi/hr}\), \(q=30(50)=1500\ \text{veh/hr}\). The mile units cancel, leaving vehicles per hour. **Check:** confirm the final magnitude and units against the physical meaning of §29.5 before accepting the answer.
+
+
+
+6. **Independent check for §29.6.** Rework the problem from the stated givens rather than copying the worked-example result. The volume-to-capacity ratio compares demand with available capacity. A value \(v/c\) near 1 indicates the facility is operating near its nominal capacity, where small demand increases or disturbances can cause substantial delay and unstable flow. **Check:** confirm the final magnitude and units against the physical meaning of §29.6 before accepting the answer.
+
+
+
+7. **Independent check for §29.7.** Rework the problem from the stated givens rather than copying the worked-example result. Trip generation is rate times number of land-use units. At 8 trips per dwelling for 250 dwellings, \(T=8(250)=2000\) trips during the period to which the stated rate applies. The time basis of the rate must match the requested analysis period. **Check:** confirm the final magnitude and units against the physical meaning of §29.7 before accepting the answer.
+
+
+
+8. Before accepting a transportation engineering — geometric design, pavements, traffic flow, and planning result, verify the dimensional units, the chapter-specific sign or direction convention, and that the selected model matches the stated geometry and boundary conditions.
+
+9. Start with **FE Civil specification Area 13** and the transportation relation cited in the ledger for the specific geometry, pavement, or traffic-flow problem; keep any learned planning material explicitly separate.
+
+10. For transportation engineering — geometric design, pavements, traffic flow, and planning, a sketch makes the controlling geometry, direction, boundary, load/flow path, or sequence visible before algebra, which often reveals missing data or an impossible assumption immediately.
 
 ---
 

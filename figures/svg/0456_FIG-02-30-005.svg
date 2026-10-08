@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="648pt" viewBox="0 0 864 648" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-08T12:21:33.334466</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 648 
+L 864 648 
+L 864 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="text_1">
+    <text style="font-size: 19px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(558.873781 172.319117)">Sliding: P_slide = μₛW</text>
+    <text style="font-size: 19px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(574.839719 198.454508)">= 0.4(100) = 40 N</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(545.111437 319.178756)">Tipping: P_tip h = Wb/2</text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(584.588 346.689694)">P_tip = 33.33 N</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #a23b34" transform="translate(567.284875 467.284606)">Tipping occurs first</text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #a23b34" transform="translate(578.113 494.239294)">for this example.</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_2">
+    <path d="M 171.127742 409.285161 
+L 288.185806 409.285161 
+L 288.185806 175.169032 
+L 171.127742 175.169032 
+z
+" clip-path="url(#p4dd69f88be)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 112.59871 409.285161 
+L 434.508387 409.285161 
+" clip-path="url(#p4dd69f88be)" style="fill: none; stroke: #23313d; stroke-width: 1.5; stroke-linecap: square"/>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #235a78" x="381.832258" y="218.455716" transform="rotate(-0 381.832258 218.455716)">P</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #b47722" x="185.76" y="332.311391" transform="rotate(-0 185.76 332.311391)">W</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #26776f" x="299.891613" y="344.017198" transform="rotate(-0 299.891613 344.017198)">N</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="308.670968" y="433.35751" transform="rotate(-0 308.670968 433.35751)">Pivot edge</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #b47722" x="229.656774" y="452.396153" transform="rotate(-0 229.656774 452.396153)">b = 2 m</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #b47722" x="127.230968" y="314.267637" transform="rotate(-0 127.230968 314.267637)">h = 3 m</text>
+   </g>
+   <g id="patch_3">
+    <path d="M 173.126906 233.698065 
+Q 279.405858 233.698065 383.784151 233.698065 
+" clip-path="url(#p4dd69f88be)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 377.784151 230.698065 
+L 383.784151 233.698065 
+L 377.784151 236.698065 
+z
+" clip-path="url(#p4dd69f88be)" style="fill: #235a78; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 229.656774 294.224743 
+Q 229.656774 339.049254 229.656774 381.973107 
+" clip-path="url(#p4dd69f88be)" style="fill: none; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 232.656774 375.973107 
+L 229.656774 381.973107 
+L 226.656774 375.973107 
+z
+" clip-path="url(#p4dd69f88be)" style="fill: #b47722; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 288.185806 407.283764 
+Q 288.185806 365.38652 288.185806 325.389933 
+" clip-path="url(#p4dd69f88be)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 285.185806 331.389933 
+L 288.185806 325.389933 
+L 291.185806 331.389933 
+z
+" clip-path="url(#p4dd69f88be)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 286.18816 409.285161 
+Q 241.363649 409.285161 198.439796 409.285161 
+" clip-path="url(#p4dd69f88be)" style="fill: none; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 204.439796 412.285161 
+L 198.439796 409.285161 
+L 204.439796 406.285161 
+z
+" clip-path="url(#p4dd69f88be)" style="fill: #a23b34; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 174.242708 456.108387 
+Q 229.65625 456.108387 285.069793 456.108387 
+" clip-path="url(#p4dd69f88be)" style="fill: none; stroke: #b47722; stroke-linecap: round"/>
+    <path d="M 180.242708 459.108387 
+L 174.242708 456.108387 
+L 180.242708 453.108387 
+" clip-path="url(#p4dd69f88be)" style="fill: none; stroke: #b47722; stroke-linecap: round"/>
+    <path d="M 279.069793 453.108387 
+L 285.069793 456.108387 
+L 279.069793 459.108387 
+" clip-path="url(#p4dd69f88be)" style="fill: none; stroke: #b47722; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 127.230968 406.16573 
+Q 127.230968 321.490801 127.230968 236.815873 
+" clip-path="url(#p4dd69f88be)" style="fill: none; stroke: #b47722; stroke-linecap: round"/>
+    <path d="M 130.230968 400.16573 
+L 127.230968 406.16573 
+L 124.230968 400.16573 
+" clip-path="url(#p4dd69f88be)" style="fill: none; stroke: #b47722; stroke-linecap: round"/>
+    <path d="M 124.230968 242.815873 
+L 127.230968 236.815873 
+L 130.230968 242.815873 
+" clip-path="url(#p4dd69f88be)" style="fill: none; stroke: #b47722; stroke-linecap: round"/>
+   </g>
+  </g>
+  <g id="text_10">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Compare sliding and tipping thresholds before assuming the failure mode</text>
+  </g>
+  <g id="text_11">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="47.52" y="630.504" transform="rotate(-0 47.52 630.504)">0456  •  FIG-02-30-005</text>
+  </g>
+  <g id="text_12">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(98.538281 590.616625)">Quasistatic horizontal force, centered weight W=100 N, and μₛ=0.40. At tipping the contact resultant reaches the base edge; tipping</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(381.691406 603.334125)">can precede sliding.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p4dd69f88be">
+   <rect x="100.892903" y="116.64" width="351.174194" height="362.88"/>
+  </clipPath>
+ </defs>
+</svg>

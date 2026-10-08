@@ -65,7 +65,7 @@ Beam analysis proceeds from support reactions to shear and moment. Consistent si
 
 **Problem.** A region with constant positive shear has linearly increasing moment.
 
-**Solution.** Apply the relation and definitions in §23.1; the stated result follows with consistent units and sign convention.
+**Solution.** The beam differential relations are \(dV/dx=-w\) and \(dM/dx=V\). If shear is constant and positive over a region, integrating \(dM/dx=V\) gives a moment diagram that increases linearly with \(x\).
 
 ---
 
@@ -81,7 +81,7 @@ At each pin-jointed truss joint, member forces are axial. Start at a joint with 
 
 **Problem.** Assume unknown member forces in tension; a negative result indicates compression.
 
-**Solution.** Apply the relation and definitions in §23.2; the stated result follows with consistent units and sign convention.
+**Solution.** At a truss joint, assume each unknown member force acts in tension, pointing away from the joint, and solve \(\sum F_x=0\) and \(\sum F_y=0\). If the computed force is negative, the actual member force is opposite the assumed direction and the member is in compression.
 
 ---
 
@@ -97,7 +97,7 @@ A section cut can solve selected member forces without analyzing the entire trus
 
 **Problem.** Take moments about the intersection of two cut members to eliminate them.
 
-**Solution.** Apply the relation and definitions in §23.3; the stated result follows with consistent units and sign convention.
+**Solution.** For the method of sections, cut through no more than three unknown member forces in a planar truss. Taking moments about the intersection of two cut-member lines eliminates those two forces from the moment equation, allowing the third cut force to be found directly.
 
 ---
 
@@ -113,7 +113,7 @@ Frames include multi-force members and may transfer moments; do not apply truss 
 
 **Problem.** A pin-connected frame member with three applied forces is generally a multi-force member.
 
-**Solution.** Apply the relation and definitions in §23.4; the stated result follows with consistent units and sign convention.
+**Solution.** A two-force member carries forces only at two points and those forces must be equal, opposite, and collinear. A member acted on by three distinct forces does not satisfy that definition and must generally be analyzed as a multi-force rigid body using all planar equilibrium equations.
 
 ---
 
@@ -129,7 +129,7 @@ Elastic-curve relations connect bending moment, rotation, and deflection. Bounda
 
 **Problem.** A simply supported beam has zero deflection at both supports.
 
-**Solution.** Apply the relation and definitions in §23.5; the stated result follows with consistent units and sign convention.
+**Solution.** For a simply supported beam, the vertical displacement boundary conditions are \(v=0\) at each support. Integrating \(EI\,v''=M(x)\) introduces constants that are evaluated from those support conditions; rotations are generally not zero at simple supports.
 
 ---
 
@@ -145,7 +145,7 @@ The unit-load method evaluates displacement from real member force N and virtual
 
 **Problem.** Only members carrying force in either system contribute to the summation.
 
-**Solution.** Apply the relation and definitions in §23.6; the stated result follows with consistent units and sign convention.
+**Solution.** In the unit-load method for a truss, \(\delta=\sum NnL/(AE)\). A member contributes zero whenever either the real-load force \(N\) or unit-load force \(n\) is zero, because the product \(Nn\) vanishes.
 
 ---
 
@@ -161,7 +161,7 @@ Frame deflection may be dominated by bending. Use symmetry, boundary conditions,
 
 **Problem.** A fixed support has zero translation and zero rotation in the ideal model.
 
-**Solution.** Apply the relation and definitions in §23.7; the stated result follows with consistent units and sign convention.
+**Solution.** For a fixed support in the ideal planar model, both translation and rotation are restrained. Accordingly, the displacement and rotation compatibility conditions at that support are zero, providing the boundary conditions needed for frame-deflection calculations.
 
 ---
 
@@ -171,13 +171,13 @@ Frame deflection may be dominated by bending. Use symmetry, boundary conditions,
 
 **Problem.** A problem combines two ideas from this chapter. What should be done before calculation?
 
-**Solution.** Draw the system, identify the requested quantity, establish units and sign conventions, and list the governing relations before substituting numbers.
+**Solution.** For a combined beam/truss/frame problem, first solve the real-load internal forces using equilibrium, then define the displacement direction of interest and apply the corresponding unit load or integration method. Keep real-load and virtual/unit-load quantities clearly distinguished.
 
 ### Worked Example 9
 
 **Problem.** A remembered equation differs from the FE Reference Handbook form. Which should govern the exam solution?
 
-**Solution.** Use the Handbook form and its unit convention unless the problem explicitly supplies a different relation.
+**Solution.** Use the Handbook beam, truss, and deflection formulas only with the support conditions and loading cases for which they are derived. If a remembered table entry has different end restraints or load placement, the Handbook case that matches the actual model should govern.
 
 ---
 
@@ -357,31 +357,31 @@ D) Treat it as optional
 
 14. For **frame deflection**, common failures are wrong units, wrong sign convention, wrong geometry/boundary condition, or using a relation outside its assumptions.
 
-15. The sketch exposes geometry, boundaries, loads/flows, signs, and missing data before algebra begins.
+15. Sketch the beam, truss, or frame with supports, loads, member axes, and the requested displacement direction before analysis so internal-force and compatibility equations refer to the correct model.
 
-16. Use the Handbook form when it is available because the FE exam supplies that reference and its constants/unit conventions govern the problem.
+16. Use the Handbook beam, truss, and deflection case that matches the actual support and loading conditions because a table entry for a different restraint pattern is not interchangeable.
 
-17. Mixed unit systems create hidden conversion errors and can invalidate dimensional consistency.
+17. Keep force, length, modulus, area, and moment-of-inertia units consistent; mixing kN with inches or ksi with metric section properties corrupts both force and deflection results.
 
-18. A reasonableness check can catch sign, magnitude, boundary-condition, and unit errors that algebra alone does not reveal.
+18. Check diagram behavior and compatibility: shear changes with load, moment slope follows shear, simple supports have zero displacement, and computed deflection direction should agree with the loading.
 
-19. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+19. **A.** For **Beam reactions, shear, and moment**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-20. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+20. **A.** For **Truss analysis by joints**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-21. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+21. **A.** For **Truss analysis by sections**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-22. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+22. **A.** For **Frame and machine equilibrium**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-23. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+23. **A.** For **Beam deflection by integration and superposition**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-24. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+24. **A.** For **Truss deflection by virtual work or unit load**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-25. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+25. **A.** For **Frame deflection and structural-analysis checks**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-26. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+26. **A.** In Structural Analysis — Beams, Trusses, Frames, and Deflections, dimensional consistency and an independent physical check are the fastest ways to detect a unit, sign, magnitude, or modeling error before accepting the result.
 
-27. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+27. **A.** Core beam/truss/frame relations are tied to the Handbook and ledger; any additional derivation in this chapter is identified as guide synthesis rather than given a fabricated Handbook citation.
 
 
 
@@ -414,25 +414,39 @@ D) Treat it as optional
 
 ## Practice Problem Solutions
 
-1. Use §23.1. A region with constant positive shear has linearly increasing moment. The calculation or classification follows from the displayed section relation and the stated data.
+1. **Independent check for §23.1.** Rework the problem from the stated givens rather than copying the worked-example result. The beam differential relations are \(dV/dx=-w\) and \(dM/dx=V\). If shear is constant and positive over a region, integrating \(dM/dx=V\) gives a moment diagram that increases linearly with \(x\). **Check:** confirm the final magnitude and units against the physical meaning of §23.1 before accepting the answer.
 
-2. Use §23.2. Assume unknown member forces in tension; a negative result indicates compression. The calculation or classification follows from the displayed section relation and the stated data.
 
-3. Use §23.3. Take moments about the intersection of two cut members to eliminate them. The calculation or classification follows from the displayed section relation and the stated data.
 
-4. Use §23.4. A pin-connected frame member with three applied forces is generally a multi-force member. The calculation or classification follows from the displayed section relation and the stated data.
+2. **Independent check for §23.2.** Rework the problem from the stated givens rather than copying the worked-example result. At a truss joint, assume each unknown member force acts in tension, pointing away from the joint, and solve \(\sum F_x=0\) and \(\sum F_y=0\). If the computed force is negative, the actual member force is opposite the assumed direction and the member is in compression. **Check:** confirm the final magnitude and units against the physical meaning of §23.2 before accepting the answer.
 
-5. Use §23.5. A simply supported beam has zero deflection at both supports. The calculation or classification follows from the displayed section relation and the stated data.
 
-6. Use §23.6. Only members carrying force in either system contribute to the summation. The calculation or classification follows from the displayed section relation and the stated data.
 
-7. Use §23.7. A fixed support has zero translation and zero rotation in the ideal model. The calculation or classification follows from the displayed section relation and the stated data.
+3. **Independent check for §23.3.** Rework the problem from the stated givens rather than copying the worked-example result. For the method of sections, cut through no more than three unknown member forces in a planar truss. Taking moments about the intersection of two cut-member lines eliminates those two forces from the moment equation, allowing the third cut force to be found directly. **Check:** confirm the final magnitude and units against the physical meaning of §23.3 before accepting the answer.
 
-8. Check dimensions, unit conversion, sign convention, and whether the selected relation's assumptions match the physical situation.
 
-9. Start with FE Civil specification Area 11 and the Handbook sections identified in **As the Handbook States It** and the ledger entries for this chapter.
 
-10. A sketch exposes incompatible geometry, impossible flow/load directions, missing reactions/boundaries, and double-counted or omitted terms.
+4. **Independent check for §23.4.** Rework the problem from the stated givens rather than copying the worked-example result. A two-force member carries forces only at two points and those forces must be equal, opposite, and collinear. A member acted on by three distinct forces does not satisfy that definition and must generally be analyzed as a multi-force rigid body using all planar equilibrium equations. **Check:** confirm the final magnitude and units against the physical meaning of §23.4 before accepting the answer.
+
+
+
+5. **Independent check for §23.5.** Rework the problem from the stated givens rather than copying the worked-example result. For a simply supported beam, the vertical displacement boundary conditions are \(v=0\) at each support. Integrating \(EI\,v''=M(x)\) introduces constants that are evaluated from those support conditions; rotations are generally not zero at simple supports. **Check:** confirm the final magnitude and units against the physical meaning of §23.5 before accepting the answer.
+
+
+
+6. **Independent check for §23.6.** Rework the problem from the stated givens rather than copying the worked-example result. In the unit-load method for a truss, \(\delta=\sum NnL/(AE)\). A member contributes zero whenever either the real-load force \(N\) or unit-load force \(n\) is zero, because the product \(Nn\) vanishes. **Check:** confirm the final magnitude and units against the physical meaning of §23.6 before accepting the answer.
+
+
+
+7. **Independent check for §23.7.** Rework the problem from the stated givens rather than copying the worked-example result. For a fixed support in the ideal planar model, both translation and rotation are restrained. Accordingly, the displacement and rotation compatibility conditions at that support are zero, providing the boundary conditions needed for frame-deflection calculations. **Check:** confirm the final magnitude and units against the physical meaning of §23.7 before accepting the answer.
+
+
+
+8. Before accepting a structural analysis — beams, trusses, frames, and deflections result, verify the dimensional units, the chapter-specific sign or direction convention, and that the selected model matches the stated geometry and boundary conditions.
+
+9. Start with **FE Civil specification Area 11** and the specific beam, truss, frame, or deflection case cited in the chapter ledger; verify that its restraint and loading case matches the problem.
+
+10. For structural analysis — beams, trusses, frames, and deflections, a sketch makes the controlling geometry, direction, boundary, load/flow path, or sequence visible before algebra, which often reveals missing data or an impossible assumption immediately.
 
 ---
 

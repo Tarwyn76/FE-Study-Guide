@@ -65,7 +65,7 @@ A hazardous substance creates risk only when an exposure pathway connects source
 
 **Problem.** A contaminant sealed in an inaccessible vessel may be hazardous but present little current exposure.
 
-**Solution.** Apply the relation and environmental model in §50.1; then verify units, boundary conditions, and physical limits.
+**Solution.** Hazard is the intrinsic ability to cause harm; exposure requires a completed pathway from source to receptor. A sealed contaminant may therefore remain hazardous while current exposure is negligible because the pathway is interrupted.
 
 ---
 
@@ -81,7 +81,7 @@ Risk calculations normalize chemical intake by body weight and averaging time. T
 
 **Problem.** Doubling concentration doubles chronic daily intake if all other exposure factors are unchanged.
 
-**Solution.** Apply the relation and environmental model in §50.2; then verify units, boundary conditions, and physical limits.
+**Solution.** In the CDI expression, concentration \(C\) appears linearly in the numerator. Holding intake rate, frequency, duration, body weight, and averaging time fixed, doubling \(C\) therefore **doubles CDI**.
 
 ---
 
@@ -97,7 +97,7 @@ For noncarcinogenic effects, hazard quotient compares estimated dose to a refere
 
 **Problem.** CDI equal to RfD gives HQ=1.
 
-**Solution.** Apply the relation and environmental model in §50.3; then verify units, boundary conditions, and physical limits.
+**Solution.** \(HQ=\mathrm{CDI}/\mathrm{RfD}\). If \(\mathrm{CDI}=\mathrm{RfD}\), then \(HQ=1\). This is a screening ratio, not proof that an adverse effect will occur at that exact value.
 
 ---
 
@@ -113,7 +113,7 @@ Carcinogenic risk is commonly estimated as lifetime average daily dose times slo
 
 **Problem.** Halving LADD halves estimated risk when slope factor is unchanged.
 
-**Solution.** Apply the relation and environmental model in §50.4; then verify units, boundary conditions, and physical limits.
+**Solution.** Carcinogenic risk is estimated as \(\mathrm{Risk}=\mathrm{LADD}\times SF\) in the linear screening model. If slope factor is unchanged, halving LADD gives **one-half the estimated risk**.
 
 ---
 
@@ -129,7 +129,7 @@ Dose-response relationships may be treated differently for carcinogenic and nonc
 
 **Problem.** A reference dose is not a sharp boundary between safe and harmful outcomes.
 
-**Solution.** Apply the relation and environmental model in §50.5; then verify units, boundary conditions, and physical limits.
+**Solution.** A reference dose is a chronic exposure estimate intended to be without appreciable risk of deleterious effects during a lifetime, with uncertainty incorporated. It is therefore **not a sharp toxicological threshold** separating safe and harmful populations.
 
 ---
 
@@ -145,7 +145,7 @@ Occupational health questions may involve chemical exposure, noise, and PPE. PPE
 
 **Problem.** Enclosing a noisy machine is an engineering control; hearing protection is PPE.
 
-**Solution.** Apply the relation and environmental model in §50.6; then verify units, boundary conditions, and physical limits.
+**Solution.** Enclosing a noisy machine acts on the hazard/path before it reaches the worker, so it is an **engineering control**. Hearing protection is worn by the worker and is therefore **PPE**, lower in the control hierarchy.
 
 ---
 
@@ -161,7 +161,7 @@ Risk characterization combines the major assessment components and states assump
 
 **Problem.** Report both the central estimate and the assumptions that materially control it.
 
-**Solution.** Apply the relation and environmental model in §50.7; then verify units, boundary conditions, and physical limits.
+**Solution.** Risk characterization should report the numerical estimate together with important assumptions and uncertainty drivers. A central value without the exposure scenario, toxicity basis, and uncertainty context can imply more precision than the assessment supports.
 
 ---
 
@@ -171,13 +171,13 @@ Risk characterization combines the major assessment components and states assump
 
 **Problem.** A treatment calculation predicts a negative effluent concentration. What does that indicate?
 
-**Solution.** The algebra or model assumptions are invalid for that condition. Recheck the balance, reaction/order assumptions, time basis, units, and any zero-concentration limiting condition.
+**Solution.** A negative exposure or risk estimate is not physically meaningful for the screening models used here. Recheck intake signs, unit conversions, averaging time, toxicity factors, and whether the pathway was defined correctly.
 
 ### Worked Example 9
 
 **Problem.** A remembered environmental correlation differs from the FE Reference Handbook relation. Which should govern the exam solution?
 
-**Solution.** Use the Handbook relation and its definitions unless the problem explicitly supplies a different model.
+**Solution.** For **Health Hazards, Exposure Pathways, Toxicology, and Risk Assessment**, the FE Reference Handbook equation, definitions, and unit convention govern whenever the Handbook supplies the needed relation. The external references in this chapter are used for specification-required learned material involving **exposure pathways, chronic dose, hazard/cancer metrics, uncertainty, PPE, and occupational noise**. If a remembered correlation conflicts with the supplied Handbook equation, use the supplied Handbook relation unless the problem explicitly states a different model.
 
 ---
 
@@ -185,7 +185,16 @@ Risk characterization combines the major assessment components and states assump
 
 Primary source basis: **FE Environmental specification Area(s) 7; FE Reference Handbook 10.6 Environmental Engineering, printed pp. 318–360, plus general supporting sections where identified in the ledger.**
 
-**Source boundary:** Some Environmental specification topics are directly tabulated in the Handbook, while others require learned engineering knowledge. The chapter keeps those two categories separate.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required environmental-engineering knowledge that is not fully developed in the Handbook. **Guide synthesis** connects the Handbook and external material into exam-oriented explanations, examples, and checks; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- U.S. Environmental Protection Agency. (1989). *Risk Assessment Guidance for Superfund, Volume I: Human Health Evaluation Manual (Part A)*. U.S. EPA. Supporting scope: Baseline human-health risk assessment: data evaluation, exposure assessment, toxicity assessment, and risk characterization.
+- U.S. Environmental Protection Agency. (2011). *Exposure Factors Handbook: 2011 Edition* (EPA/600/R-09/052F), with subsequent chapter updates where applicable. U.S. EPA. Supporting scope: Exposure factors used for ingestion, inhalation, dermal, body-weight, activity, lifetime, and related human-exposure calculations.
+- Occupational Safety and Health Administration. *29 CFR 1910 Subpart I—Personal Protective Equipment*, current e-CFR version. Supporting scope: PPE hazard assessment, eye/face, respiratory, head, foot, hand, electrical, and fall protection requirements.
+- National Institute for Occupational Safety and Health. (1998). *Criteria for a Recommended Standard: Occupational Noise Exposure, Revised Criteria 1998* (DHHS (NIOSH) Publication No. 98-126). Supporting scope: Occupational-noise exposure and hearing-loss-prevention criteria.
+- Mihelcic, J. R., & Zimmerman, J. B. (2021). *Environmental Engineering: Fundamentals, Sustainability, Design* (3rd ed.). Wiley. ISBN 978-1-119-60445-7. Supporting scope: Environmental measurements, chemistry, physical processes, biology, risk, water quantity/quality, water treatment, wastewater/stormwater, solid waste, and air quality.
+
+The external references support only the learned/application portion of the Environmental specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -356,31 +365,31 @@ D) It is always a Handbook lookup with no learned interpretation
 
 14. For **environmental risk characterization**, check basis, units, steady/unsteady condition, phase/media, boundary conditions, and whether the selected idealization matches the system.
 
-15. The boundary determines what enters, leaves, accumulates, reacts, or transfers between media. Without it, terms are easily omitted or double counted.
+15. In **Health Hazards, Exposure Pathways, Toxicology, and Risk Assessment**, the control volume or conceptual boundary determines which sources, sinks, transfers, reactions, and receptors belong in the model. For this chapter specifically, verify a complete exposure pathway, consistent dose units, correct averaging time, toxicity-factor basis, and that hq/hi and cancer-risk metrics are interpreted as screening quantities rather than certainty.
 
-16. Concentration is mass per volume; loading is mass per time. A low concentration at very high flow can still create a large load.
+16. Concentration and loading answer different questions in **Health Hazards, Exposure Pathways, Toxicology, and Risk Assessment**: concentration is mass per volume, while loading is mass per time. Always convert \(Q\) and \(C\) to compatible units before multiplying them.
 
-17. The FE Handbook is the supplied exam reference. Its variable definitions and unit conventions should govern unless the problem explicitly provides another relation.
+17. Use the FE Reference Handbook equation and definitions when it supplies the model for **Health Hazards, Exposure Pathways, Toxicology, and Risk Assessment**. The chapter's external references (EPA_RAGS, EPA_EFH, OSHA_PPE, NIOSH_NOISE, MIHELCIC) support learned specification content, not a competing exam formula.
 
-18. A mass/energy balance and physical check can reveal impossible signs, removal above 100%, negative concentrations, unrealistic flows, or model misuse.
+18. A physical check is needed because algebra alone can return impossible environmental states. For this chapter, set concentration or intake rate to zero and confirm CDI, HQ contribution, and incremental cancer risk all fall to zero.
 
-19. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+19. **A.** Section §50.1, **Hazard, exposure, dose, and risk distinctions**, is governed by \(\text{source}\rightarrow\text{transport}\rightarrow\text{exposure point}\rightarrow\text{route}\rightarrow\text{receptor}\). Use that relation with its own environmental basis and then perform the specific validity check described for §50.1.
 
-20. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+20. **A.** Section §50.2, **Ingestion, inhalation, and dermal dose**, is governed by \(\mathrm{CDI}=\frac{C\,IR\,EF\,ED}{BW\,AT}\). Use that relation with its own environmental basis and then perform the specific validity check described for §50.2.
 
-21. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+21. **A.** Section §50.3, **Noncarcinogenic hazard quotient and hazard index**, is governed by \(HQ=\frac{\mathrm{CDI}}{\mathrm{RfD}},\qquad HI=\sum HQ_i\). Use that relation with its own environmental basis and then perform the specific validity check described for §50.3.
 
-22. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+22. **A.** Section §50.4, **Carcinogenic risk**, is governed by \(\text{Risk}=\mathrm{LADD}\times SF\). Use that relation with its own environmental basis and then perform the specific validity check described for §50.4.
 
-23. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+23. **A.** Section §50.5, **Dose-response, threshold, and uncertainty concepts**, is governed by \(\text{response}=f(\text{dose})\). Use that relation with its own environmental basis and then perform the specific validity check described for §50.5.
 
-24. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+24. **A.** Section §50.6, **Occupational exposure, PPE, and noise**, is governed by \(\text{control hierarchy: eliminate/substitute}\rightarrow\text{engineering}\rightarrow\text{administrative}\rightarrow\text{PPE}\). Use that relation with its own environmental basis and then perform the specific validity check described for §50.6.
 
-25. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+25. **A.** Section §50.7, **Risk characterization and uncertainty communication**, is governed by \(\text{risk characterization}=\text{hazard}+\text{dose-response}+\text{exposure}+\text{uncertainty}\). Use that relation with its own environmental basis and then perform the specific validity check described for §50.7.
 
-26. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+26. **A.** An integrated **Health Hazards, Exposure Pathways, Toxicology, and Risk Assessment** solution is acceptable only after the governing balance/model is identified, units are reconciled, and the chapter-specific physical checks are satisfied.
 
-27. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+27. **A.** Source ownership is explicit in **Health Hazards, Exposure Pathways, Toxicology, and Risk Assessment**: FE-Handbook-supported material remains tied to the ledger, externally supported content uses EPA_RAGS, EPA_EFH, OSHA_PPE, NIOSH_NOISE, MIHELCIC, and guide synthesis is labeled as supplemental explanation.
 
 
 ---
@@ -412,25 +421,25 @@ D) It is always a Handbook lookup with no learned interpretation
 
 ## Practice Problem Solutions
 
-1. Use §50.1. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+1. **Independent recomputation for §50.1 — Hazard, exposure, dose, and risk distinctions.** Start from the stated givens rather than the worked-example answer. Hazard is the intrinsic ability to cause harm; exposure requires a completed pathway from source to receptor. A sealed contaminant may therefore remain hazardous while current exposure is negligible because the pathway is interrupted. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-2. Use §50.2. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+2. **Independent recomputation for §50.2 — Ingestion, inhalation, and dermal dose.** Start from the stated givens rather than the worked-example answer. In the CDI expression, concentration \(C\) appears linearly in the numerator. Holding intake rate, frequency, duration, body weight, and averaging time fixed, doubling \(C\) therefore **doubles CDI**. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-3. Use §50.3. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+3. **Independent recomputation for §50.3 — Noncarcinogenic hazard quotient and hazard index.** Start from the stated givens rather than the worked-example answer. \(HQ=\mathrm{CDI}/\mathrm{RfD}\). If \(\mathrm{CDI}=\mathrm{RfD}\), then \(HQ=1\). This is a screening ratio, not proof that an adverse effect will occur at that exact value. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-4. Use §50.4. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+4. **Independent recomputation for §50.4 — Carcinogenic risk.** Start from the stated givens rather than the worked-example answer. Carcinogenic risk is estimated as \(\mathrm{Risk}=\mathrm{LADD}\times SF\) in the linear screening model. If slope factor is unchanged, halving LADD gives **one-half the estimated risk**. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-5. Use §50.5. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+5. **Independent recomputation for §50.5 — Dose-response, threshold, and uncertainty concepts.** Start from the stated givens rather than the worked-example answer. A reference dose is a chronic exposure estimate intended to be without appreciable risk of deleterious effects during a lifetime, with uncertainty incorporated. It is therefore **not a sharp toxicological threshold** separating safe and harmful populations. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-6. Use §50.6. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+6. **Independent recomputation for §50.6 — Occupational exposure, PPE, and noise.** Start from the stated givens rather than the worked-example answer. Enclosing a noisy machine acts on the hazard/path before it reaches the worker, so it is an **engineering control**. Hearing protection is worn by the worker and is therefore **PPE**, lower in the control hierarchy. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-7. Use §50.7. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+7. **Independent recomputation for §50.7 — Risk characterization and uncertainty communication.** Start from the stated givens rather than the worked-example answer. Risk characterization should report the numerical estimate together with important assumptions and uncertainty drivers. A central value without the exposure scenario, toxicity basis, and uncertainty context can imply more precision than the assessment supports. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-8. Check dimensions, concentration-versus-loading basis, conservation of mass/energy, sign convention, and whether removal, risk, or efficiency values stay within physically meaningful limits.
+8. For this chapter, check the result against this failure screen: Verify a complete exposure pathway, consistent dose units, correct averaging time, toxicity-factor basis, and that HQ/HI and cancer-risk metrics are interpreted as screening quantities rather than certainty. A result that violates one of those conditions should be rejected even if the arithmetic is internally consistent.
 
-9. Start with FE Environmental specification Area(s) 7, then use the Handbook subsection named in the corresponding ledger entry.
+9. For **Health Hazards, Exposure Pathways, Toxicology, and Risk Assessment**, begin with the FE Environmental specification area and Handbook subsection recorded in the ledger. When the atom is `split_required`, use the reconciled external source set **EPA_RAGS, EPA_EFH, OSHA_PPE, NIOSH_NOISE, MIHELCIC** for the learned portion rather than inventing a Handbook page.
 
-10. Test a limiting case such as zero source, zero reaction, complete mixing, no flow, very large residence time, or 0/100% removal as appropriate. The result should reduce to a sensible physical state.
+10. A useful limiting case is to set concentration or intake rate to zero and confirm CDI, HQ contribution, and incremental cancer risk all fall to zero. The simplified case should reduce to the stated physical behavior before the full model is trusted.
 
 ---
 

@@ -65,7 +65,7 @@ A linear time-invariant system is completely characterized by its impulse respon
 
 **Problem.** If h(t)=δ(t-t0), the output is a delayed copy x(t-t0).
 
-**Solution.** Use the relation and model in §39.1, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §39.1 relation \(y(t)=x(t)*h(t)=\int_{-\infty}^{\infty}x(\tau)h(t-\tau)\,d\tau\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: If h(t)=δ(t-t0), the output is a delayed copy x(t-t0). Carry the stated units through the calculation and accept the result only after confirming that the LTI/transform assumptions, stability interpretation, and sampling conditions match the stated signal model.
 
 ---
 
@@ -81,7 +81,7 @@ The Fourier transform converts convolution in time to multiplication in frequenc
 
 **Problem.** A frequency component where H(f)=0 is removed from the output.
 
-**Solution.** Use the relation and model in §39.2, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §39.2 relation \(Y(f)=H(f)X(f)\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: A frequency component where H(f)=0 is removed from the output. Carry the stated units through the calculation and accept the result only after confirming that the LTI/transform assumptions, stability interpretation, and sampling conditions match the stated signal model.
 
 ---
 
@@ -97,7 +97,7 @@ Periodic signals can be decomposed into DC and harmonic components. Parseval's r
 
 **Problem.** A square wave contains a fundamental plus harmonics even though its time waveform is not sinusoidal.
 
-**Solution.** Use the relation and model in §39.3, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §39.3 relation \(x(t)=\sum_{n=-\infty}^{\infty}X_n e^{j2\pi n f_0t}\). The statement follows from the physical or logical meaning of **Fourier series and harmonic content**: A square wave contains a fundamental plus harmonics even though its time waveform is not sinusoidal. Accept that conclusion only while the LTI/transform assumptions, stability interpretation, and sampling conditions match the stated signal model.
 
 ---
 
@@ -113,7 +113,7 @@ A transfer function encodes system dynamics under stated initial-condition conve
 
 **Problem.** A pole closer to the imaginary axis generally corresponds to a slower decaying mode than a far-left pole.
 
-**Solution.** Use the relation and model in §39.4, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §39.4 relation \(H(s)=\frac{Y(s)}{X(s)}\). The statement follows from the physical or logical meaning of **Transfer functions, poles, zeros, and frequency response**: A pole closer to the imaginary axis generally corresponds to a slower decaying mode than a far-left pole. Accept that conclusion only while the LTI/transform assumptions, stability interpretation, and sampling conditions match the stated signal model.
 
 ---
 
@@ -129,7 +129,7 @@ Bode plots display frequency response on logarithmic frequency scales. First-ord
 
 **Problem.** A single first-order pole contributes approximately -20 dB/decade well above its corner frequency.
 
-**Solution.** Use the relation and model in §39.5, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §39.5 relation \(\mathrm{dB}=20\log_{10}|H(j\omega)|\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: A single first-order pole contributes approximately -20 dB/decade well above its corner frequency. Carry the stated units through the calculation and accept the result only after confirming that the LTI/transform assumptions, stability interpretation, and sampling conditions match the stated signal model.
 
 ---
 
@@ -145,7 +145,7 @@ A bandlimited low-pass signal can be ideally reconstructed from uniform samples 
 
 **Problem.** A 4-kHz bandlimited message requires sampling above 8 kHz under the ideal criterion.
 
-**Solution.** Use the relation and model in §39.6, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §39.6 relation \(f_s>2W\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: A 4-kHz bandlimited message requires sampling above 8 kHz under the ideal criterion. Carry the stated units through the calculation and accept the result only after confirming that the LTI/transform assumptions, stability interpretation, and sampling conditions match the stated signal model.
 
 ---
 
@@ -161,7 +161,7 @@ Discrete-time LTI systems may be represented by difference equations, impulse re
 
 **Problem.** A pure delay y[n]=x[n-1] has transfer function z^-1.
 
-**Solution.** Use the relation and model in §39.7, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §39.7 relation \(H(z)=\frac{Y(z)}{X(z)}\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: A pure delay y[n]=x[n-1] has transfer function z^-1. Carry the stated units through the calculation and accept the result only after confirming that the LTI/transform assumptions, stability interpretation, and sampling conditions match the stated signal model.
 
 ---
 
@@ -171,13 +171,13 @@ Discrete-time LTI systems may be represented by difference equations, impulse re
 
 **Problem.** A calculation gives a numerical answer but violates the assumed device region, logic state, or protocol condition. Is the answer valid?
 
-**Solution.** No. Re-select the appropriate piecewise model or system state and solve again. Algebraic consistency does not override the model's validity conditions.
+**Solution.** No. In **Signals and Linear Systems — Fourier Methods, Convolution, Filtering, and Transform Models**, a tidy numerical or logical result is still invalid if it contradicts the model assumptions. A representative failure is a sampling result below the Nyquist requirement or a stability inference made from the wrong transform/model assumptions. Return to the applicable section, choose the state/model consistent with the solved quantities, recompute if needed, and confirm that the LTI/transform assumptions, stability interpretation, and sampling conditions match the stated signal model.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the expression printed in the FE Reference Handbook. Which should govern an exam solution?
 
-**Solution.** Use the Handbook expression and its definitions unless the problem explicitly supplies a different model.
+**Solution.** Use the FE Reference Handbook expression and its definitions as the controlling exam reference unless the problem explicitly defines another model. For **Signals and Linear Systems — Fourier Methods, Convolution, Filtering, and Transform Models**, match symbols, units, reference directions, RMS/peak or digital conventions, and assumptions to the Handbook first. External references support only specification-required learned concepts that the Handbook does not directly develop.
 
 ---
 
@@ -185,7 +185,13 @@ Discrete-time LTI systems may be represented by difference equations, impulse re
 
 Primary source basis: **FE Electrical and Computer specification Area 7–8; FE Reference Handbook 10.6 Electrical and Computer Engineering, printed pp. 361–421, with the specific Handbook subsections identified in the ledger.**
 
-**Source boundary:** The FE Electrical and Computer specification includes both directly tabulated Handbook material and learned engineering/computing concepts. The chapter does not assign false Handbook pages to material that the specification requires but the Handbook does not directly develop.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required engineering/computing knowledge that is not fully developed in the Handbook. **Guide synthesis** connects those two bodies of material into exam-oriented explanations and examples; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Oppenheim, A. V., Willsky, A. S., & Nawab, S. H. (1996). *Signals and Systems* (2nd ed.). Prentice Hall/Pearson. ISBN 978-0-13-814757-0. Supporting scope: LTI systems, convolution, Fourier methods, sampling, transform models, and discrete-time systems.
+- Dorf, R. C., & Bishop, R. H. (2021). *Modern Control Systems* (14th ed.). Pearson. Supporting scope: Transfer functions, poles, zeros, frequency response, Bode methods, and feedback-system interpretation.
+
+The external references support only the learned/application portion of the specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +360,31 @@ D) It is always only a qualitative concept
 
 14. For **digital filter transfer function**, verify operating region/model validity, units or logic levels, sign/polarity convention, and loading or boundary conditions before accepting the result.
 
-15. The same symbol or equation can represent different physical behavior outside its valid device region, frequency range, timing model, or protocol abstraction.
+15. In Signals and Linear Systems — Fourier Methods, Convolution, Filtering, and Transform Models, the same equation or symbol can change meaning when the operating state, abstraction, timing model, or signal convention changes; verify that the LTI/transform assumptions, stability interpretation, and sampling conditions match the stated signal model.
 
-16. The Handbook is the exam reference; using its definitions prevents hidden differences in constants, RMS/peak values, sign convention, or model form.
+16. The FE Reference Handbook is the exam reference for Signals and Linear Systems — Fourier Methods, Convolution, Filtering, and Transform Models. Match its variable definitions and conventions before substitution; external references support only learned material not developed in the Handbook.
 
-17. Algebra can be internally consistent while predicting an impossible device state, voltage, timing relationship, address range, or complexity claim. The physical/logical model must also be satisfied.
+17. An algebraically consistent answer can still be invalid in Signals and Linear Systems — Fourier Methods, Convolution, Filtering, and Transform Models. Reject a result that implies a sampling result below the Nyquist requirement or a stability inference made from the wrong transform/model assumptions and reselect the appropriate model or state.
 
-18. Limiting cases and order-of-magnitude checks expose sign errors, impossible gains, invalid probabilities, unrealistic timing, and model misuse.
+18. A useful independent check for this chapter is to apply an impulse or single sinusoid and verify that the LTI response reduces to the expected impulse/frequency response. If the result does not reduce correctly, recheck the model, sign convention, and arithmetic.
 
-19. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+19. **A.** For **LTI systems, impulse response, and convolution**, the governing section model is \(y(t)=x(t)*h(t)=\int_{-\infty}^{\infty}x(\tau)h(t-\tau)\,d\tau\). Apply it only with the definitions and assumptions stated in §39.1, then verify that the LTI/transform assumptions, stability interpretation, and sampling conditions match the stated signal model.
 
-20. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+20. **A.** For **Fourier transform pairs and frequency-domain response**, the governing section model is \(Y(f)=H(f)X(f)\). Apply it only with the definitions and assumptions stated in §39.2, then verify that the LTI/transform assumptions, stability interpretation, and sampling conditions match the stated signal model.
 
-21. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+21. **A.** For **Fourier series and harmonic content**, the governing section model is \(x(t)=\sum_{n=-\infty}^{\infty}X_n e^{j2\pi n f_0t}\). Apply it only with the definitions and assumptions stated in §39.3, then verify that the LTI/transform assumptions, stability interpretation, and sampling conditions match the stated signal model.
 
-22. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+22. **A.** For **Transfer functions, poles, zeros, and frequency response**, the governing section model is \(H(s)=\frac{Y(s)}{X(s)}\). Apply it only with the definitions and assumptions stated in §39.4, then verify that the LTI/transform assumptions, stability interpretation, and sampling conditions match the stated signal model.
 
-23. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+23. **A.** For **Bode magnitude and phase approximations**, the governing section model is \(\mathrm{dB}=20\log_{10}|H(j\omega)|\). Apply it only with the definitions and assumptions stated in §39.5, then verify that the LTI/transform assumptions, stability interpretation, and sampling conditions match the stated signal model.
 
-24. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+24. **A.** For **Sampling, Nyquist criterion, and aliasing**, the governing section model is \(f_s>2W\). Apply it only with the definitions and assumptions stated in §39.6, then verify that the LTI/transform assumptions, stability interpretation, and sampling conditions match the stated signal model.
 
-25. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+25. **A.** For **Digital filters, difference equations, and z transforms**, the governing section model is \(H(z)=\frac{Y(z)}{X(z)}\). Apply it only with the definitions and assumptions stated in §39.7, then verify that the LTI/transform assumptions, stability interpretation, and sampling conditions match the stated signal model.
 
-26. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+26. **A.** For an integrated Signals and Linear Systems — Fourier Methods, Convolution, Filtering, and Transform Models problem, separate the physical/logical model from the arithmetic, solve with the relevant section relations, and cross-check the result against the chapter-specific validity conditions.
 
-27. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+27. **A.** In **Signals and Linear Systems — Fourier Methods, Convolution, Filtering, and Transform Models**, the source boundary is explicit: FE-Handbook-supported material remains tied to the ledger, externally supported material uses the chapter references for signals, transforms, and frequency-response/control interpretation (OPPENHEIM / DORF), and guide synthesis is identified as supplemental explanation rather than Handbook text.
 
 
 ---
@@ -410,25 +416,25 @@ D) It is always only a qualitative concept
 
 ## Practice Problem Solutions
 
-1. Use §39.1. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+1. **Independent check for §39.1.** Begin independently with \(y(t)=x(t)*h(t)=\int_{-\infty}^{\infty}x(\tau)h(t-\tau)\,d\tau\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: If h(t)=δ(t-t0), the output is a delayed copy x(t-t0). Then verify that the LTI/transform assumptions, stability interpretation, and sampling conditions match the stated signal model.
 
-2. Use §39.2. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+2. **Independent check for §39.2.** Begin independently with \(Y(f)=H(f)X(f)\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: A frequency component where H(f)=0 is removed from the output. Then verify that the LTI/transform assumptions, stability interpretation, and sampling conditions match the stated signal model.
 
-3. Use §39.3. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+3. **Independent check for §39.3.** Begin independently with \(x(t)=\sum_{n=-\infty}^{\infty}X_n e^{j2\pi n f_0t}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: A square wave contains a fundamental plus harmonics even though its time waveform is not sinusoidal. Then verify that the LTI/transform assumptions, stability interpretation, and sampling conditions match the stated signal model.
 
-4. Use §39.4. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+4. **Independent check for §39.4.** Begin independently with \(H(s)=\frac{Y(s)}{X(s)}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: A pole closer to the imaginary axis generally corresponds to a slower decaying mode than a far-left pole. Then verify that the LTI/transform assumptions, stability interpretation, and sampling conditions match the stated signal model.
 
-5. Use §39.5. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+5. **Independent check for §39.5.** Begin independently with \(\mathrm{dB}=20\log_{10}|H(j\omega)|\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: A single first-order pole contributes approximately -20 dB/decade well above its corner frequency. Then verify that the LTI/transform assumptions, stability interpretation, and sampling conditions match the stated signal model.
 
-6. Use §39.6. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+6. **Independent check for §39.6.** Begin independently with \(f_s>2W\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: A 4-kHz bandlimited message requires sampling above 8 kHz under the ideal criterion. Then verify that the LTI/transform assumptions, stability interpretation, and sampling conditions match the stated signal model.
 
-7. Use §39.7. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+7. **Independent check for §39.7.** Begin independently with \(H(z)=\frac{Y(z)}{X(z)}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: A pure delay y[n]=x[n-1] has transfer function z^-1. Then verify that the LTI/transform assumptions, stability interpretation, and sampling conditions match the stated signal model.
 
-8. Check device operating region, saturation/clipping, frequency range, RMS-versus-peak convention, timing constraints, address/bit width, or protocol/software preconditions as applicable.
+8. Check the chapter-specific failure mode first: a sampling result below the Nyquist requirement or a stability inference made from the wrong transform/model assumptions. Do not accept the numerical or logical result until the LTI/transform assumptions, stability interpretation, and sampling conditions match the stated signal model.
 
-9. Start with FE Electrical and Computer specification Area 7–8, then use the Handbook subsection named in the ledger for the specific concept.
+9. For **Signals and Linear Systems — Fourier Methods, Convolution, Filtering, and Transform Models**, start with the FE Electrical and Computer specification/Handbook location recorded in the ledger, then use the chapter's reconciled source set for signals, transforms, and frequency-response/control interpretation (OPPENHEIM / DORF) when the concept is split-required. That preserves the Handbook-versus-learned-material boundary.
 
-10. Test a simple limiting case: zero input, matched load, very low/high frequency, all-zero/all-one logic, minimum/maximum address, or small input size as appropriate. The result should reduce to a physically or logically sensible form.
+10. Use this limiting check: apply an impulse or single sinusoid and verify that the LTI response reduces to the expected impulse/frequency response. The simplified case should produce the expected physical, timing, logic, protocol, or complexity behavior before the full solution is trusted.
 
 ---
 

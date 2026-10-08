@@ -65,7 +65,7 @@ Environmental chemistry calculations often require conversion between mass, mole
 
 **Problem.** 58.5 g NaCl is approximately 1 mol.
 
-**Solution.** Apply the relation and environmental model in §49.1; then verify units, boundary conditions, and physical limits.
+**Solution.** The molecular weight of NaCl is about \(58.44\ {\rm g/mol}\). Thus \(n=58.5/58.44=1.001\ {\rm mol}\), so **58.5 g NaCl is approximately 1 mol**.
 
 ---
 
@@ -81,7 +81,7 @@ Acid-base problems require charge, mass, and equilibrium relationships. Use acti
 
 **Problem.** If [H+]=10^-6 M, pH=6.
 
-**Solution.** Apply the relation and environmental model in §49.2; then verify units, boundary conditions, and physical limits.
+**Solution.** \(\mathrm{pH}=-\log_{10}[H^+]=-\log_{10}(10^{-6})=\mathbf{6}\). The result assumes concentration is being used as the activity approximation appropriate to the exercise.
 
 ---
 
@@ -97,7 +97,7 @@ Redox equations must conserve both atoms and charge. Environmental redox conditi
 
 **Problem.** Oxidation of Fe2+ to Fe3+ releases one electron per iron atom.
 
-**Solution.** Apply the relation and environmental model in §49.3; then verify units, boundary conditions, and physical limits.
+**Solution.** The oxidation half-reaction is \(\mathrm{Fe^{2+}\rightarrow Fe^{3+}+e^-}\). The oxidation state rises by one, so **one electron is released per Fe atom** and electron balance must be preserved when combining half-reactions.
 
 ---
 
@@ -113,7 +113,7 @@ Precipitation occurs when the ion activity product exceeds the equilibrium solub
 
 **Problem.** If IAP>Ksp, the solution is supersaturated with respect to the solid.
 
-**Solution.** Apply the relation and environmental model in §49.4; then verify units, boundary conditions, and physical limits.
+**Solution.** Compare the ion-activity product to the solubility product. If \(\mathrm{IAP}>K_{sp}\), the saturation ratio exceeds one and the solution is **supersaturated**; precipitation is thermodynamically favored until equilibrium is approached.
 
 ---
 
@@ -129,7 +129,7 @@ pC-pH diagrams compactly show concentration or predominance relationships across
 
 **Problem.** Crossing an acid/base boundary changes which protonation state predominates.
 
-**Solution.** Apply the relation and environmental model in §49.5; then verify units, boundary conditions, and physical limits.
+**Solution.** For a simple conjugate acid-base pair, the predominance boundary occurs near \(\mathrm{pH}=pK_a\). Crossing that boundary changes whether the protonated or deprotonated form is dominant, which is exactly what a pC-pH predominance diagram is intended to show.
 
 ---
 
@@ -145,7 +145,7 @@ Partition coefficients describe equilibrium preference between phases. Large hyd
 
 **Problem.** If Koc=500 L/kg and foc=0.02, Kd=10 L/kg.
 
-**Solution.** Apply the relation and environmental model in §49.6; then verify units, boundary conditions, and physical limits.
+**Solution.** Soil-water partitioning is \(K_d=K_{oc}f_{oc}\). Therefore \(K_d=(500\ {\rm L/kg})(0.02)=\mathbf{10\ L/kg}\). The organic-carbon fraction must be entered as 0.02, not 2.
 
 ---
 
@@ -161,7 +161,7 @@ Reaction rates usually change with temperature. The Handbook supplies representa
 
 **Problem.** For θ>1, a process rate generally increases as temperature rises above 20°C.
 
-**Solution.** Apply the relation and environmental model in §49.7; then verify units, boundary conditions, and physical limits.
+**Solution.** With \(k_T=k_{20}\theta^{T-20}\), if \(\theta>1\) and \(T>20^\circ{\rm C}\), then the exponent is positive and \(\theta^{T-20}>1\). Therefore **\(k_T>k_{20}\)** under the empirical temperature-correction model.
 
 ---
 
@@ -171,13 +171,13 @@ Reaction rates usually change with temperature. The Handbook supplies representa
 
 **Problem.** A treatment calculation predicts a negative effluent concentration. What does that indicate?
 
-**Solution.** The algebra or model assumptions are invalid for that condition. Recheck the balance, reaction/order assumptions, time basis, units, and any zero-concentration limiting condition.
+**Solution.** A negative concentration usually indicates an algebraic/speciation setup error or misuse of an equilibrium approximation. Check charge/mass balance, logarithms, activity assumptions, and whether a precipitated or alternative species should have been included.
 
 ### Worked Example 9
 
 **Problem.** A remembered environmental correlation differs from the FE Reference Handbook relation. Which should govern the exam solution?
 
-**Solution.** Use the Handbook relation and its definitions unless the problem explicitly supplies a different model.
+**Solution.** For **Environmental Chemistry — Equilibrium, Kinetics, Partitioning, and pC-pH**, the FE Reference Handbook equation, definitions, and unit convention govern whenever the Handbook supplies the needed relation. The external references in this chapter are used for specification-required learned material involving **aqueous stoichiometry, acid-base/redox equilibrium, solubility, partitioning, and environmental kinetics**. If a remembered correlation conflicts with the supplied Handbook equation, use the supplied Handbook relation unless the problem explicitly states a different model.
 
 ---
 
@@ -185,7 +185,13 @@ Reaction rates usually change with temperature. The Handbook supplies representa
 
 Primary source basis: **FE Environmental specification Area(s) 6; FE Reference Handbook 10.6 Environmental Engineering, printed pp. 318–360, plus general supporting sections where identified in the ledger.**
 
-**Source boundary:** Some Environmental specification topics are directly tabulated in the Handbook, while others require learned engineering knowledge. The chapter keeps those two categories separate.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required environmental-engineering knowledge that is not fully developed in the Handbook. **Guide synthesis** connects the Handbook and external material into exam-oriented explanations, examples, and checks; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Sawyer, C. N., McCarty, P. L., & Parkin, G. F. (2003). *Chemistry for Environmental Engineering and Science* (5th ed.). McGraw-Hill. ISBN 978-0-07-119888-2. Supporting scope: Environmental stoichiometry, acid-base chemistry, oxidation-reduction, solubility/precipitation, partitioning, and reaction chemistry.
+- Mihelcic, J. R., & Zimmerman, J. B. (2021). *Environmental Engineering: Fundamentals, Sustainability, Design* (3rd ed.). Wiley. ISBN 978-1-119-60445-7. Supporting scope: Environmental measurements, chemistry, physical processes, biology, risk, water quantity/quality, water treatment, wastewater/stormwater, solid waste, and air quality.
+
+The external references support only the learned/application portion of the Environmental specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -356,31 +362,31 @@ D) It is always a Handbook lookup with no learned interpretation
 
 14. For **environmental kinetic temperature correction**, check basis, units, steady/unsteady condition, phase/media, boundary conditions, and whether the selected idealization matches the system.
 
-15. The boundary determines what enters, leaves, accumulates, reacts, or transfers between media. Without it, terms are easily omitted or double counted.
+15. In **Environmental Chemistry — Equilibrium, Kinetics, Partitioning, and pC-pH**, the control volume or conceptual boundary determines which sources, sinks, transfers, reactions, and receptors belong in the model. For this chapter specifically, check charge/mass balance, activity-versus-concentration assumptions, saturation ratio, species predominance, and that logarithm arguments are positive and dimensionally appropriate.
 
-16. Concentration is mass per volume; loading is mass per time. A low concentration at very high flow can still create a large load.
+16. Concentration and loading answer different questions in **Environmental Chemistry — Equilibrium, Kinetics, Partitioning, and pC-pH**: concentration is mass per volume, while loading is mass per time. Always convert \(Q\) and \(C\) to compatible units before multiplying them.
 
-17. The FE Handbook is the supplied exam reference. Its variable definitions and unit conventions should govern unless the problem explicitly provides another relation.
+17. Use the FE Reference Handbook equation and definitions when it supplies the model for **Environmental Chemistry — Equilibrium, Kinetics, Partitioning, and pC-pH**. The chapter's external references (SAWYER, MIHELCIC) support learned specification content, not a competing exam formula.
 
-18. A mass/energy balance and physical check can reveal impossible signs, removal above 100%, negative concentrations, unrealistic flows, or model misuse.
+18. A physical check is needed because algebra alone can return impossible environmental states. For this chapter, at \([H^+]=10^{-7}\) M under the simplified dilute-water convention, verify pH 7; at \(\mathrm{IAP}=K_{sp}\), verify saturation equilibrium.
 
-19. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+19. **A.** Section §49.1, **Stoichiometry, equivalents, and environmental reaction bookkeeping**, is governed by \(\text{moles}=\frac{m}{MW}\). Use that relation with its own environmental basis and then perform the specific validity check described for §49.1.
 
-20. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+20. **A.** Section §49.2, **Acid-base equilibrium and pH**, is governed by \(\mathrm{pH}=-\log_{10}[H^+],\qquad K_a=\frac{[H^+][A^-]}{[HA]}\). Use that relation with its own environmental basis and then perform the specific validity check described for §49.2.
 
-21. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+21. **A.** Section §49.3, **Oxidation-reduction and electron balance**, is governed by \(\text{electrons lost}=\text{electrons gained}\). Use that relation with its own environmental basis and then perform the specific validity check described for §49.3.
 
-22. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+22. **A.** Section §49.4, **Precipitation, solubility products, and saturation**, is governed by \(K_{sp}=\prod a_i^{\nu_i}\). Use that relation with its own environmental basis and then perform the specific validity check described for §49.4.
 
-23. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+23. **A.** Section §49.5, **pC-pH diagrams and species predominance**, is governed by \(pC=-\log_{10}C\). Use that relation with its own environmental basis and then perform the specific validity check described for §49.5.
 
-24. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+24. **A.** Section §49.6, **Henry law, octanol-water, and soil partitioning**, is governed by \(K_{ow}=\frac{C_o}{C_w},\qquad K_d=K_{oc}f_{oc}\). Use that relation with its own environmental basis and then perform the specific validity check described for §49.6.
 
-25. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+25. **A.** Section §49.7, **Chemical kinetics and temperature correction**, is governed by \(k_T=k_{20}\theta^{T-20}\). Use that relation with its own environmental basis and then perform the specific validity check described for §49.7.
 
-26. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+26. **A.** An integrated **Environmental Chemistry — Equilibrium, Kinetics, Partitioning, and pC-pH** solution is acceptable only after the governing balance/model is identified, units are reconciled, and the chapter-specific physical checks are satisfied.
 
-27. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+27. **A.** Source ownership is explicit in **Environmental Chemistry — Equilibrium, Kinetics, Partitioning, and pC-pH**: FE-Handbook-supported material remains tied to the ledger, externally supported content uses SAWYER, MIHELCIC, and guide synthesis is labeled as supplemental explanation.
 
 
 ---
@@ -412,25 +418,25 @@ D) It is always a Handbook lookup with no learned interpretation
 
 ## Practice Problem Solutions
 
-1. Use §49.1. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+1. **Independent recomputation for §49.1 — Stoichiometry, equivalents, and environmental reaction bookkeeping.** Start from the stated givens rather than the worked-example answer. The molecular weight of NaCl is about \(58.44\ {\rm g/mol}\). Thus \(n=58.5/58.44=1.001\ {\rm mol}\), so **58.5 g NaCl is approximately 1 mol**. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-2. Use §49.2. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+2. **Independent recomputation for §49.2 — Acid-base equilibrium and pH.** Start from the stated givens rather than the worked-example answer. \(\mathrm{pH}=-\log_{10}[H^+]=-\log_{10}(10^{-6})=\mathbf{6}\). The result assumes concentration is being used as the activity approximation appropriate to the exercise. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-3. Use §49.3. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+3. **Independent recomputation for §49.3 — Oxidation-reduction and electron balance.** Start from the stated givens rather than the worked-example answer. The oxidation half-reaction is \(\mathrm{Fe^{2+}\rightarrow Fe^{3+}+e^-}\). The oxidation state rises by one, so **one electron is released per Fe atom** and electron balance must be preserved when combining half-reactions. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-4. Use §49.4. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+4. **Independent recomputation for §49.4 — Precipitation, solubility products, and saturation.** Start from the stated givens rather than the worked-example answer. Compare the ion-activity product to the solubility product. If \(\mathrm{IAP}>K_{sp}\), the saturation ratio exceeds one and the solution is **supersaturated**; precipitation is thermodynamically favored until equilibrium is approached. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-5. Use §49.5. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+5. **Independent recomputation for §49.5 — pC-pH diagrams and species predominance.** Start from the stated givens rather than the worked-example answer. For a simple conjugate acid-base pair, the predominance boundary occurs near \(\mathrm{pH}=pK_a\). Crossing that boundary changes whether the protonated or deprotonated form is dominant, which is exactly what a pC-pH predominance diagram is intended to show. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-6. Use §49.6. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+6. **Independent recomputation for §49.6 — Henry law, octanol-water, and soil partitioning.** Start from the stated givens rather than the worked-example answer. Soil-water partitioning is \(K_d=K_{oc}f_{oc}\). Therefore \(K_d=(500\ {\rm L/kg})(0.02)=\mathbf{10\ L/kg}\). The organic-carbon fraction must be entered as 0.02, not 2. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-7. Use §49.7. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+7. **Independent recomputation for §49.7 — Chemical kinetics and temperature correction.** Start from the stated givens rather than the worked-example answer. With \(k_T=k_{20}\theta^{T-20}\), if \(\theta>1\) and \(T>20^\circ{\rm C}\), then the exponent is positive and \(\theta^{T-20}>1\). Therefore **\(k_T>k_{20}\)** under the empirical temperature-correction model. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-8. Check dimensions, concentration-versus-loading basis, conservation of mass/energy, sign convention, and whether removal, risk, or efficiency values stay within physically meaningful limits.
+8. For this chapter, check the result against this failure screen: Check charge/mass balance, activity-versus-concentration assumptions, saturation ratio, species predominance, and that logarithm arguments are positive and dimensionally appropriate. A result that violates one of those conditions should be rejected even if the arithmetic is internally consistent.
 
-9. Start with FE Environmental specification Area(s) 6, then use the Handbook subsection named in the corresponding ledger entry.
+9. For **Environmental Chemistry — Equilibrium, Kinetics, Partitioning, and pC-pH**, begin with the FE Environmental specification area and Handbook subsection recorded in the ledger. When the atom is `split_required`, use the reconciled external source set **SAWYER, MIHELCIC** for the learned portion rather than inventing a Handbook page.
 
-10. Test a limiting case such as zero source, zero reaction, complete mixing, no flow, very large residence time, or 0/100% removal as appropriate. The result should reduce to a sensible physical state.
+10. A useful limiting case is to at \([H^+]=10^{-7}\) M under the simplified dilute-water convention, verify pH 7; at \(\mathrm{IAP}=K_{sp}\), verify saturation equilibrium. The simplified case should reduce to the stated physical behavior before the full model is trusted.
 
 ---
 

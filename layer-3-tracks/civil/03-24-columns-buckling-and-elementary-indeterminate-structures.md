@@ -65,7 +65,7 @@ Euler buckling describes ideal elastic instability of slender columns. End restr
 
 **Problem.** Doubling KL reduces Euler critical load by a factor of four.
 
-**Solution.** Apply the relation and definitions in §24.1; the stated result follows with consistent units and sign convention.
+**Solution.** Euler load is \(P_{cr}=\pi^2EI/(KL)^2\). If \(KL\) doubles while \(E\) and \(I\) remain unchanged, the denominator increases by \(2^2=4\), so \(P_{cr}\) becomes one-fourth of its original value.
 
 ---
 
@@ -81,7 +81,7 @@ Slenderness compares effective column length with cross-sectional stiffness dist
 
 **Problem.** If KL=120 in and r=2.0 in, slenderness is 60.
 
-**Solution.** Apply the relation and definitions in §24.2; the stated result follows with consistent units and sign convention.
+**Solution.** Slenderness is \(\lambda=KL/r\). With \(KL=120\ \text{in}\) and \(r=2.0\ \text{in}\), \(\lambda=120/2.0=60\). The inches cancel, so slenderness is dimensionless.
 
 ---
 
@@ -97,7 +97,7 @@ Real design columns transition from yielding-dominated behavior at low slenderne
 
 **Problem.** A short stocky column is less likely to be governed by Euler elastic buckling.
 
-**Solution.** Apply the relation and definitions in §24.3; the stated result follows with consistent units and sign convention.
+**Solution.** Euler buckling describes slender-column elastic instability. A short, stocky column has a relatively small \(KL/r\), so material yielding or inelastic column behavior is more likely to control before ideal Euler buckling is reached.
 
 ---
 
@@ -113,7 +113,7 @@ Statically indeterminate structures require deformation compatibility in additio
 
 **Problem.** A fixed-fixed beam has more reaction unknowns than planar equilibrium equations.
 
-**Solution.** Apply the relation and definitions in §24.4; the stated result follows with consistent units and sign convention.
+**Solution.** A fixed-fixed beam develops more reaction components than can be solved from the three independent planar equilibrium equations alone. The additional unknowns require deformation compatibility together with force-deformation relations, making the structure statically indeterminate.
 
 ---
 
@@ -129,7 +129,7 @@ The force method removes one or more redundants to create a determinate primary 
 
 **Problem.** For one redundant, solve the displacement caused by loads plus redundant effect equal to zero.
 
-**Solution.** Apply the relation and definitions in §24.5; the stated result follows with consistent units and sign convention.
+**Solution.** In the force method with one redundant \(R\), release the redundant to form a determinate primary structure. Compute the displacement at the released coordinate from the real loads, \(\delta_L\), and the flexibility coefficient \(f\); compatibility requires \(\delta_L+Rf=0\), so \(R=-\delta_L/f\).
 
 ---
 
@@ -145,7 +145,7 @@ Elementary indeterminate analysis may use relative stiffness to distribute joint
 
 **Problem.** A member with twice the stiffness of another at the joint receives twice the share before carryover effects.
 
-**Solution.** Apply the relation and definitions in §24.6; the stated result follows with consistent units and sign convention.
+**Solution.** A distribution factor is \(DF_i=K_i/\sum K\). If one member stiffness is \(2K\) and another is \(K\), their factors are \(2/3\) and \(1/3\), respectively, so the stiffer member receives twice the distributed unbalanced moment before carryover.
 
 ---
 
@@ -161,7 +161,7 @@ Axial compression acting through lateral displacement increases moments. FE-leve
 
 **Problem.** Greater axial load or drift increases P-Δ sensitivity.
 
-**Solution.** Apply the relation and definitions in §24.7; the stated result follows with consistent units and sign convention.
+**Solution.** Second-order \(P-\Delta\) effects arise because axial load acts through lateral displacement and creates additional moment. Increasing either axial load \(P\) or drift \(\Delta\) increases that secondary moment, so stability sensitivity grows as either quantity increases.
 
 ---
 
@@ -171,13 +171,13 @@ Axial compression acting through lateral displacement increases moments. FE-leve
 
 **Problem.** A problem combines two ideas from this chapter. What should be done before calculation?
 
-**Solution.** Draw the system, identify the requested quantity, establish units and sign conventions, and list the governing relations before substituting numbers.
+**Solution.** For an indeterminate-column/frame problem, first establish the first-order equilibrium solution, then impose compatibility or stiffness relations to obtain redundants. Only after the primary response is known should second-order stability effects be screened or amplified.
 
 ### Worked Example 9
 
 **Problem.** A remembered equation differs from the FE Reference Handbook form. Which should govern the exam solution?
 
-**Solution.** Use the Handbook form and its unit convention unless the problem explicitly supplies a different relation.
+**Solution.** Use the Handbook column-strength and buckling expressions that correspond to the stated end conditions and effective-length model. A remembered Euler equation is not sufficient when the Handbook indicates inelastic behavior, effective-length factors, or code-style column strength.
 
 ---
 
@@ -185,11 +185,13 @@ Axial compression acting through lateral displacement increases moments. FE-leve
 
 Primary source basis: **FE Civil specification Area 11; FE Reference Handbook 10.6 Civil Engineering and supporting general sections cited below.**
 
-**Source boundary:** Some Civil specification topics are directly tabulated in the Handbook; others are named by the specification but require learned engineering knowledge. This chapter does not imply that every workflow, code provision, or design factor is printed in the Handbook.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is retained because it is required by the FE Civil specification but needs engineering knowledge beyond what is printed in the Handbook. **Guide synthesis** connects those two sources into exam-oriented workflows and examples; it is not presented as Handbook text.
 
-Where the FE specification requires a topic that is not directly developed in the Handbook, the ledger marks it **specification-required / guide-developed** rather than inventing a Handbook citation.
+**External source support for split-required concepts:**
+- `CIV-3-024-03` — Hibbeler, R. C. (2023). *Mechanics of Materials* (11th ed.). Pearson. ISBN 978-0-13-760561-3. Cited at publication/standard level; no page-level claim.
+- `CIV-3-024-04` — Hibbeler, R. C. (2024). *Structural Analysis* (11th ed.). Pearson. ISBN 978-0-13-802625-7. Cited at publication/standard level; no page-level claim.
 
----
+No external source above is being used to replace the FE Reference Handbook. The external references support only the learned/application portion identified by `split_required: true`.
 
 ## Where This Goes Wrong
 
@@ -357,31 +359,31 @@ D) Treat it as optional
 
 14. For **second-order effect**, common failures are wrong units, wrong sign convention, wrong geometry/boundary condition, or using a relation outside its assumptions.
 
-15. The sketch exposes geometry, boundaries, loads/flows, signs, and missing data before algebra begins.
+15. Sketch the column end restraints and the released/compatible degrees of freedom first so effective length, redundant reactions, and second-order displacement are defined before solving.
 
-16. Use the Handbook form when it is available because the FE exam supplies that reference and its constants/unit conventions govern the problem.
+16. Use the Handbook buckling or stiffness relation that matches the end condition because Euler load and indeterminate-structure formulas depend directly on effective length and restraint assumptions.
 
-17. Mixed unit systems create hidden conversion errors and can invalidate dimensional consistency.
+17. Column calculations require consistent force, length, modulus, and inertia units; mixing ksi, kips, inches, and metric section properties changes both slenderness and critical load.
 
-18. A reasonableness check can catch sign, magnitude, boundary-condition, and unit errors that algebra alone does not reveal.
+18. Check trends: Euler critical load must be positive and should decrease as effective length increases, while an indeterminate solution must satisfy the imposed compatibility condition.
 
-19. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+19. **A.** For **Euler buckling and effective length**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-20. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+20. **A.** For **Radius of gyration and slenderness ratio**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-21. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+21. **A.** For **Inelastic versus elastic column behavior**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-22. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+22. **A.** For **Compatibility in indeterminate structures**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-23. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+23. **A.** For **Force method and redundant release**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-24. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+24. **A.** For **Moment-distribution and stiffness concepts**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-25. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+25. **A.** For **Second-order effects and stability screening**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-26. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+26. **A.** In Columns, Buckling, and Elementary Indeterminate Structures, dimensional consistency and an independent physical check are the fastest ways to detect a unit, sign, magnitude, or modeling error before accepting the result.
 
-27. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+27. **A.** Inelastic buckling and compatibility details beyond Handbook tables are labeled learned material and supported by the reconciled Hibbeler references rather than an invented Handbook page.
 
 
 
@@ -414,25 +416,39 @@ D) Treat it as optional
 
 ## Practice Problem Solutions
 
-1. Use §24.1. Doubling KL reduces Euler critical load by a factor of four. The calculation or classification follows from the displayed section relation and the stated data.
+1. **Independent check for §24.1.** Rework the problem from the stated givens rather than copying the worked-example result. Euler load is \(P_{cr}=\pi^2EI/(KL)^2\). If \(KL\) doubles while \(E\) and \(I\) remain unchanged, the denominator increases by \(2^2=4\), so \(P_{cr}\) becomes one-fourth of its original value. **Check:** confirm the final magnitude and units against the physical meaning of §24.1 before accepting the answer.
 
-2. Use §24.2. If KL=120 in and r=2.0 in, slenderness is 60. The calculation or classification follows from the displayed section relation and the stated data.
 
-3. Use §24.3. A short stocky column is less likely to be governed by Euler elastic buckling. The calculation or classification follows from the displayed section relation and the stated data.
 
-4. Use §24.4. A fixed-fixed beam has more reaction unknowns than planar equilibrium equations. The calculation or classification follows from the displayed section relation and the stated data.
+2. **Independent check for §24.2.** Rework the problem from the stated givens rather than copying the worked-example result. Slenderness is \(\lambda=KL/r\). With \(KL=120\ \text{in}\) and \(r=2.0\ \text{in}\), \(\lambda=120/2.0=60\). The inches cancel, so slenderness is dimensionless. **Check:** confirm the final magnitude and units against the physical meaning of §24.2 before accepting the answer.
 
-5. Use §24.5. For one redundant, solve the displacement caused by loads plus redundant effect equal to zero. The calculation or classification follows from the displayed section relation and the stated data.
 
-6. Use §24.6. A member with twice the stiffness of another at the joint receives twice the share before carryover effects. The calculation or classification follows from the displayed section relation and the stated data.
 
-7. Use §24.7. Greater axial load or drift increases P-Δ sensitivity. The calculation or classification follows from the displayed section relation and the stated data.
+3. **Independent check for §24.3.** Rework the problem from the stated givens rather than copying the worked-example result. Euler buckling describes slender-column elastic instability. A short, stocky column has a relatively small \(KL/r\), so material yielding or inelastic column behavior is more likely to control before ideal Euler buckling is reached. **Check:** confirm the final magnitude and units against the physical meaning of §24.3 before accepting the answer.
 
-8. Check dimensions, unit conversion, sign convention, and whether the selected relation's assumptions match the physical situation.
 
-9. Start with FE Civil specification Area 11 and the Handbook sections identified in **As the Handbook States It** and the ledger entries for this chapter.
 
-10. A sketch exposes incompatible geometry, impossible flow/load directions, missing reactions/boundaries, and double-counted or omitted terms.
+4. **Independent check for §24.4.** Rework the problem from the stated givens rather than copying the worked-example result. A fixed-fixed beam develops more reaction components than can be solved from the three independent planar equilibrium equations alone. The additional unknowns require deformation compatibility together with force-deformation relations, making the structure statically indeterminate. **Check:** confirm the final magnitude and units against the physical meaning of §24.4 before accepting the answer.
+
+
+
+5. **Independent check for §24.5.** Rework the problem from the stated givens rather than copying the worked-example result. In the force method with one redundant \(R\), release the redundant to form a determinate primary structure. Compute the displacement at the released coordinate from the real loads, \(\delta_L\), and the flexibility coefficient \(f\); compatibility requires \(\delta_L+Rf=0\), so \(R=-\delta_L/f\). **Check:** confirm the final magnitude and units against the physical meaning of §24.5 before accepting the answer.
+
+
+
+6. **Independent check for §24.6.** Rework the problem from the stated givens rather than copying the worked-example result. A distribution factor is \(DF_i=K_i/\sum K\). If one member stiffness is \(2K\) and another is \(K\), their factors are \(2/3\) and \(1/3\), respectively, so the stiffer member receives twice the distributed unbalanced moment before carryover. **Check:** confirm the final magnitude and units against the physical meaning of §24.6 before accepting the answer.
+
+
+
+7. **Independent check for §24.7.** Rework the problem from the stated givens rather than copying the worked-example result. Second-order \(P-\Delta\) effects arise because axial load acts through lateral displacement and creates additional moment. Increasing either axial load \(P\) or drift \(\Delta\) increases that secondary moment, so stability sensitivity grows as either quantity increases. **Check:** confirm the final magnitude and units against the physical meaning of §24.7 before accepting the answer.
+
+
+
+8. Before accepting a columns, buckling, and elementary indeterminate structures result, verify the dimensional units, the chapter-specific sign or direction convention, and that the selected model matches the stated geometry and boundary conditions.
+
+9. Begin with **FE Civil specification Area 11** and the Handbook column/buckling relations in the ledger; use the external mechanics/structural-analysis reference only for the reconciled learned portion.
+
+10. For columns, buckling, and elementary indeterminate structures, a sketch makes the controlling geometry, direction, boundary, load/flow path, or sequence visible before algebra, which often reveals missing data or an impossible assumption immediately.
 
 ---
 

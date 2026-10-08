@@ -65,7 +65,7 @@ Multiplexing allows several information streams to share a channel by assigning 
 
 **Problem.** TDM assigns different time slots; FDM assigns different frequency bands.
 
-**Solution.** Use the relation and model in §41.1, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §41.1 relation \(\text{shared channel resource}\rightarrow\text{separated by time, frequency, or code}\). The statement follows from the physical or logical meaning of **Time-, frequency-, and code-division multiplexing**: TDM assigns different time slots; FDM assigns different frequency bands. Accept that conclusion only while the modulation alphabet, coding model, packet/link definitions, and delay assumptions match the stated communication system.
 
 ---
 
@@ -81,7 +81,7 @@ An M-ary symbol carries log2(M) bits when symbols are used equiprobably. Symbol 
 
 **Problem.** QPSK has M=4 and ideally carries 2 bits per symbol.
 
-**Solution.** Use the relation and model in §41.2, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §41.2 relation \(R_b=R_s\log_2 M\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: QPSK has M=4 and ideally carries 2 bits per symbol. Carry the stated units through the calculation and accept the result only after confirming that the modulation alphabet, coding model, packet/link definitions, and delay assumptions match the stated communication system.
 
 ---
 
@@ -97,7 +97,7 @@ Digital modulation maps bits to discrete carrier states. ASK varies amplitude, F
 
 **Problem.** BPSK uses two carrier phases to represent one bit per symbol.
 
-**Solution.** Use the relation and model in §41.3, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §41.3 relation \(\text{symbol}\rightarrow\text{amplitude/frequency/phase state}\). The statement follows from the physical or logical meaning of **Digital modulation concepts — ASK, FSK, PSK, and QAM**: BPSK uses two carrier phases to represent one bit per symbol. Accept that conclusion only while the modulation alphabet, coding model, packet/link definitions, and delay assumptions match the stated communication system.
 
 ---
 
@@ -113,7 +113,7 @@ Parity detects certain bit errors with minimal overhead; CRC treats bit strings 
 
 **Problem.** A single parity bit can detect any odd number of bit flips but cannot correct them.
 
-**Solution.** Use the relation and model in §41.4, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §41.4 relation \(\frac{T(x)+E(x)}{G(x)}\rightarrow 0\text{ remainder for a valid CRC check}\). The statement follows from the physical or logical meaning of **Error detection — parity and CRC**: A single parity bit can detect any odd number of bit flips but cannot correct them. Accept that conclusion only while the modulation alphabet, coding model, packet/link definitions, and delay assumptions match the stated communication system.
 
 ---
 
@@ -129,7 +129,7 @@ Error-correcting codes add structured redundancy so a receiver can infer and cor
 
 **Problem.** Correction requires more redundancy than mere detection for the same error pattern class.
 
-**Solution.** Use the relation and model in §41.5, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §41.5 relation \(\text{redundancy}\uparrow \Rightarrow \text{error-correction capability}\uparrow\text{, with rate cost}\). The statement follows from the physical or logical meaning of **Forward error correction and redundancy**: Correction requires more redundancy than mere detection for the same error pattern class. Accept that conclusion only while the modulation alphabet, coding model, packet/link definitions, and delay assumptions match the stated communication system.
 
 ---
 
@@ -145,7 +145,7 @@ Digital communication over networks accumulates several distinct delays. Packet 
 
 **Problem.** A 1-Mbit packet on a 10-Mbit/s link has 0.1-s transmission delay.
 
-**Solution.** Use the relation and model in §41.6, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §41.6 relation \(d_{trans}=\frac{L}{R},\qquad d_{prop}=\frac{d}{s}\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: A 1-Mbit packet on a 10-Mbit/s link has 0.1-s transmission delay. Carry the stated units through the calculation and accept the result only after confirming that the modulation alphabet, coding model, packet/link definitions, and delay assumptions match the stated communication system.
 
 ---
 
@@ -161,7 +161,7 @@ ARQ retransmits frames when errors or timeouts occur. Sliding-window protocols p
 
 **Problem.** Stop-and-wait utilization becomes poor when propagation delay greatly exceeds transmission delay.
 
-**Solution.** Use the relation and model in §41.7, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §41.7 relation \(U_{\text{stop-wait}}\approx \frac{d_{trans}}{D}\). The statement follows from the physical or logical meaning of **Reliable transmission, ARQ, sliding windows, and throughput**: Stop-and-wait utilization becomes poor when propagation delay greatly exceeds transmission delay. Accept that conclusion only while the modulation alphabet, coding model, packet/link definitions, and delay assumptions match the stated communication system.
 
 ---
 
@@ -171,13 +171,13 @@ ARQ retransmits frames when errors or timeouts occur. Sliding-window protocols p
 
 **Problem.** A calculation gives a numerical answer but violates the assumed device region, logic state, or protocol condition. Is the answer valid?
 
-**Solution.** No. Re-select the appropriate piecewise model or system state and solve again. Algebraic consistency does not override the model's validity conditions.
+**Solution.** No. In **Multiplexing and Digital Communications**, a tidy numerical or logical result is still invalid if it contradicts the model assumptions. A representative failure is a symbol-rate calculation using the wrong modulation alphabet or a stop-and-wait model that omits relevant propagation delay. Return to the applicable section, choose the state/model consistent with the solved quantities, recompute if needed, and confirm that the modulation alphabet, coding model, packet/link definitions, and delay assumptions match the stated communication system.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the expression printed in the FE Reference Handbook. Which should govern an exam solution?
 
-**Solution.** Use the Handbook expression and its definitions unless the problem explicitly supplies a different model.
+**Solution.** Use the FE Reference Handbook expression and its definitions as the controlling exam reference unless the problem explicitly defines another model. For **Multiplexing and Digital Communications**, match symbols, units, reference directions, RMS/peak or digital conventions, and assumptions to the Handbook first. External references support only specification-required learned concepts that the Handbook does not directly develop.
 
 ---
 
@@ -185,7 +185,12 @@ ARQ retransmits frames when errors or timeouts occur. Sliding-window protocols p
 
 Primary source basis: **FE Electrical and Computer specification Area 13; FE Reference Handbook 10.6 Electrical and Computer Engineering, printed pp. 361–421, with the specific Handbook subsections identified in the ledger.**
 
-**Source boundary:** The FE Electrical and Computer specification includes both directly tabulated Handbook material and learned engineering/computing concepts. The chapter does not assign false Handbook pages to material that the specification requires but the Handbook does not directly develop.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required engineering/computing knowledge that is not fully developed in the Handbook. **Guide synthesis** connects those two bodies of material into exam-oriented explanations and examples; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Proakis, J. G., & Salehi, M. (2008). *Digital Communications* (5th ed.). McGraw-Hill. ISBN 978-0-07-295716-7. Supporting scope: Digital modulation, bandwidth, coding, detection, error control, and digital communication systems.
+
+The external references support only the learned/application portion of the specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +359,31 @@ D) It is always only a qualitative concept
 
 14. For **automatic repeat request**, verify operating region/model validity, units or logic levels, sign/polarity convention, and loading or boundary conditions before accepting the result.
 
-15. The same symbol or equation can represent different physical behavior outside its valid device region, frequency range, timing model, or protocol abstraction.
+15. In Multiplexing and Digital Communications, the same equation or symbol can change meaning when the operating state, abstraction, timing model, or signal convention changes; verify that the modulation alphabet, coding model, packet/link definitions, and delay assumptions match the stated communication system.
 
-16. The Handbook is the exam reference; using its definitions prevents hidden differences in constants, RMS/peak values, sign convention, or model form.
+16. The FE Reference Handbook is the exam reference for Multiplexing and Digital Communications. Match its variable definitions and conventions before substitution; external references support only learned material not developed in the Handbook.
 
-17. Algebra can be internally consistent while predicting an impossible device state, voltage, timing relationship, address range, or complexity claim. The physical/logical model must also be satisfied.
+17. An algebraically consistent answer can still be invalid in Multiplexing and Digital Communications. Reject a result that implies a symbol-rate calculation using the wrong modulation alphabet or a stop-and-wait model that omits relevant propagation delay and reselect the appropriate model or state.
 
-18. Limiting cases and order-of-magnitude checks expose sign errors, impossible gains, invalid probabilities, unrealistic timing, and model misuse.
+18. A useful independent check for this chapter is to let propagation delay become negligible and verify that utilization approaches the transmission-limited case. If the result does not reduce correctly, recheck the model, sign convention, and arithmetic.
 
-19. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+19. **A.** For **Time-, frequency-, and code-division multiplexing**, the governing section model is \(\text{shared channel resource}\rightarrow\text{separated by time, frequency, or code}\). Apply it only with the definitions and assumptions stated in §41.1, then verify that the modulation alphabet, coding model, packet/link definitions, and delay assumptions match the stated communication system.
 
-20. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+20. **A.** For **Binary data rate, symbol rate, and modulation alphabet**, the governing section model is \(R_b=R_s\log_2 M\). Apply it only with the definitions and assumptions stated in §41.2, then verify that the modulation alphabet, coding model, packet/link definitions, and delay assumptions match the stated communication system.
 
-21. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+21. **A.** For **Digital modulation concepts — ASK, FSK, PSK, and QAM**, the governing section model is \(\text{symbol}\rightarrow\text{amplitude/frequency/phase state}\). Apply it only with the definitions and assumptions stated in §41.3, then verify that the modulation alphabet, coding model, packet/link definitions, and delay assumptions match the stated communication system.
 
-22. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+22. **A.** For **Error detection — parity and CRC**, the governing section model is \(\frac{T(x)+E(x)}{G(x)}\rightarrow 0\text{ remainder for a valid CRC check}\). Apply it only with the definitions and assumptions stated in §41.4, then verify that the modulation alphabet, coding model, packet/link definitions, and delay assumptions match the stated communication system.
 
-23. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+23. **A.** For **Forward error correction and redundancy**, the governing section model is \(\text{redundancy}\uparrow \Rightarrow \text{error-correction capability}\uparrow\text{, with rate cost}\). Apply it only with the definitions and assumptions stated in §41.5, then verify that the modulation alphabet, coding model, packet/link definitions, and delay assumptions match the stated communication system.
 
-24. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+24. **A.** For **Transmission, propagation, queueing, and processing delay**, the governing section model is \(d_{trans}=\frac{L}{R},\qquad d_{prop}=\frac{d}{s}\). Apply it only with the definitions and assumptions stated in §41.6, then verify that the modulation alphabet, coding model, packet/link definitions, and delay assumptions match the stated communication system.
 
-25. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+25. **A.** For **Reliable transmission, ARQ, sliding windows, and throughput**, the governing section model is \(U_{\text{stop-wait}}\approx \frac{d_{trans}}{D}\). Apply it only with the definitions and assumptions stated in §41.7, then verify that the modulation alphabet, coding model, packet/link definitions, and delay assumptions match the stated communication system.
 
-26. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+26. **A.** For an integrated Multiplexing and Digital Communications problem, separate the physical/logical model from the arithmetic, solve with the relevant section relations, and cross-check the result against the chapter-specific validity conditions.
 
-27. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+27. **A.** In **Multiplexing and Digital Communications**, the source boundary is explicit: FE-Handbook-supported material remains tied to the ledger, externally supported material uses the chapter references for digital modulation, multiplexing, error control, and link performance (PROAKIS), and guide synthesis is identified as supplemental explanation rather than Handbook text.
 
 
 ---
@@ -410,25 +415,25 @@ D) It is always only a qualitative concept
 
 ## Practice Problem Solutions
 
-1. Use §41.1. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+1. **Independent check for §41.1.** Begin independently with \(\text{shared channel resource}\rightarrow\text{separated by time, frequency, or code}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: TDM assigns different time slots; FDM assigns different frequency bands. Then verify that the modulation alphabet, coding model, packet/link definitions, and delay assumptions match the stated communication system.
 
-2. Use §41.2. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+2. **Independent check for §41.2.** Begin independently with \(R_b=R_s\log_2 M\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: QPSK has M=4 and ideally carries 2 bits per symbol. Then verify that the modulation alphabet, coding model, packet/link definitions, and delay assumptions match the stated communication system.
 
-3. Use §41.3. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+3. **Independent check for §41.3.** Begin independently with \(\text{symbol}\rightarrow\text{amplitude/frequency/phase state}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: BPSK uses two carrier phases to represent one bit per symbol. Then verify that the modulation alphabet, coding model, packet/link definitions, and delay assumptions match the stated communication system.
 
-4. Use §41.4. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+4. **Independent check for §41.4.** Begin independently with \(\frac{T(x)+E(x)}{G(x)}\rightarrow 0\text{ remainder for a valid CRC check}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: A single parity bit can detect any odd number of bit flips but cannot correct them. Then verify that the modulation alphabet, coding model, packet/link definitions, and delay assumptions match the stated communication system.
 
-5. Use §41.5. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+5. **Independent check for §41.5.** Begin independently with \(\text{redundancy}\uparrow \Rightarrow \text{error-correction capability}\uparrow\text{, with rate cost}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: Correction requires more redundancy than mere detection for the same error pattern class. Then verify that the modulation alphabet, coding model, packet/link definitions, and delay assumptions match the stated communication system.
 
-6. Use §41.6. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+6. **Independent check for §41.6.** Begin independently with \(d_{trans}=\frac{L}{R},\qquad d_{prop}=\frac{d}{s}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: A 1-Mbit packet on a 10-Mbit/s link has 0.1-s transmission delay. Then verify that the modulation alphabet, coding model, packet/link definitions, and delay assumptions match the stated communication system.
 
-7. Use §41.7. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+7. **Independent check for §41.7.** Begin independently with \(U_{\text{stop-wait}}\approx \frac{d_{trans}}{D}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: Stop-and-wait utilization becomes poor when propagation delay greatly exceeds transmission delay. Then verify that the modulation alphabet, coding model, packet/link definitions, and delay assumptions match the stated communication system.
 
-8. Check device operating region, saturation/clipping, frequency range, RMS-versus-peak convention, timing constraints, address/bit width, or protocol/software preconditions as applicable.
+8. Check the chapter-specific failure mode first: a symbol-rate calculation using the wrong modulation alphabet or a stop-and-wait model that omits relevant propagation delay. Do not accept the numerical or logical result until the modulation alphabet, coding model, packet/link definitions, and delay assumptions match the stated communication system.
 
-9. Start with FE Electrical and Computer specification Area 13, then use the Handbook subsection named in the ledger for the specific concept.
+9. For **Multiplexing and Digital Communications**, start with the FE Electrical and Computer specification/Handbook location recorded in the ledger, then use the chapter's reconciled source set for digital modulation, multiplexing, error control, and link performance (PROAKIS) when the concept is split-required. That preserves the Handbook-versus-learned-material boundary.
 
-10. Test a simple limiting case: zero input, matched load, very low/high frequency, all-zero/all-one logic, minimum/maximum address, or small input size as appropriate. The result should reduce to a physically or logically sensible form.
+10. Use this limiting check: let propagation delay become negligible and verify that utilization approaches the transmission-limited case. The simplified case should produce the expected physical, timing, logic, protocol, or complexity behavior before the full solution is trusted.
 
 ---
 

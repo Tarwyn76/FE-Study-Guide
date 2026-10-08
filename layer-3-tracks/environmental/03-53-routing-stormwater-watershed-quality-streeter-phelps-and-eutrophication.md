@@ -65,7 +65,7 @@ Routing translates an inflow hydrograph through storage and outlet behavior to p
 
 **Problem.** When inflow exceeds outflow, reservoir storage increases.
 
-**Solution.** Apply the relation and environmental model in §53.1; then verify units, boundary conditions, and physical limits.
+**Solution.** Reservoir continuity is \(dS/dt=I-O\). Whenever \(I>O\), the derivative is positive, so **storage increases**; when outflow exceeds inflow, storage decreases.
 
 ---
 
@@ -81,7 +81,7 @@ Channel routing accounts for travel time and temporary channel storage. The exac
 
 **Problem.** A routed downstream hydrograph generally peaks later than the upstream hydrograph.
 
-**Solution.** Apply the relation and environmental model in §53.2; then verify units, boundary conditions, and physical limits.
+**Solution.** Routing redistributes a hydrograph in time and usually attenuates it. Storage and travel time cause the downstream peak to occur **later**, and often lower, than the corresponding upstream peak.
 
 ---
 
@@ -97,7 +97,7 @@ Stormwater quality depends on runoff volume, concentration, land use, sediment t
 
 **Problem.** At 5 m³/s and 2 mg/L, instantaneous pollutant load is 10 g/s.
 
-**Solution.** Apply the relation and environmental model in §53.3; then verify units, boundary conditions, and physical limits.
+**Solution.** \(\dot m=QC=(5\ {\rm m^3/s})(2\ {\rm mg/L})\). Since \(1\ {\rm mg/L}=1\ {\rm g/m^3}\), the concentration is \(2\ {\rm g/m^3}\), giving \(\dot m=\mathbf{10\ g/s}\).
 
 ---
 
@@ -113,7 +113,7 @@ Erosion and channel stability depend on hydraulic forcing and material resistanc
 
 **Problem.** Increasing bare-soil exposure generally increases erosion risk under the same runoff.
 
-**Solution.** Apply the relation and environmental model in §53.4; then verify units, boundary conditions, and physical limits.
+**Solution.** Removing protective cover exposes soil to raindrop impact and flowing-water shear. With the same slope and runoff forcing, greater bare-soil exposure therefore generally **increases erosion and sediment-yield risk**.
 
 ---
 
@@ -129,7 +129,7 @@ BOD exertion describes oxygen demand realized over time as biodegradable materia
 
 **Problem.** At t=0, exerted BOD is zero in the ideal first-order model.
 
-**Solution.** Apply the relation and environmental model in §53.5; then verify units, boundary conditions, and physical limits.
+**Solution.** \(\mathrm{BOD}_t=L_0(1-e^{-kt})\). At \(t=0\ {\rm day}\), \(e^0=1\), so \(\mathrm{BOD}_0=L_0(1-1)=\mathbf{0\ mg/L}\) exerted BOD: no ultimate demand has yet been exerted at the initial instant.
 
 ---
 
@@ -145,7 +145,7 @@ The Streeter–Phelps model balances deoxygenation and reaeration to estimate di
 
 **Problem.** The critical point occurs where the oxygen deficit reaches its maximum.
 
-**Solution.** Apply the relation and environmental model in §53.6; then verify units, boundary conditions, and physical limits.
+**Solution.** In a Streeter-Phelps oxygen-sag calculation, the critical location/time corresponds to the **maximum oxygen deficit**, so \(dD/dt=0\) at the critical point; equivalently, the deoxygenation and reaeration contributions balance there.
 
 ---
 
@@ -161,7 +161,7 @@ Excess nutrient loading can stimulate algal productivity, alter clarity, and con
 
 **Problem.** Reducing a limiting nutrient can reduce eutrophication pressure even when total water volume is unchanged.
 
-**Solution.** Apply the relation and environmental model in §53.7; then verify units, boundary conditions, and physical limits.
+**Solution.** Eutrophication responds strongly to nutrient loading. If a nutrient is limiting, reducing its load can reduce algal productivity and associated oxygen impacts even though the receiving-water volume itself is unchanged.
 
 ---
 
@@ -171,13 +171,13 @@ Excess nutrient loading can stimulate algal productivity, alter clarity, and con
 
 **Problem.** A treatment calculation predicts a negative effluent concentration. What does that indicate?
 
-**Solution.** The algebra or model assumptions are invalid for that condition. Recheck the balance, reaction/order assumptions, time basis, units, and any zero-concentration limiting condition.
+**Solution.** A negative pollutant concentration or impossible oxygen result indicates a balance/kinetics problem. Check the routing interval, reaction signs, saturation limit, deoxygenation/re-aeration terms, and units before accepting the result.
 
 ### Worked Example 9
 
 **Problem.** A remembered environmental correlation differs from the FE Reference Handbook relation. Which should govern the exam solution?
 
-**Solution.** Use the Handbook relation and its definitions unless the problem explicitly supplies a different model.
+**Solution.** For **Routing, Stormwater/Watershed Quality, Streeter–Phelps, and Eutrophication**, the FE Reference Handbook equation, definitions, and unit convention govern whenever the Handbook supplies the needed relation. The external references in this chapter are used for specification-required learned material involving **reservoir/channel routing, watershed loading, BOD/DO response, and eutrophication**. If a remembered correlation conflicts with the supplied Handbook equation, use the supplied Handbook relation unless the problem explicitly states a different model.
 
 ---
 
@@ -185,7 +185,14 @@ Excess nutrient loading can stimulate algal productivity, alter clarity, and con
 
 Primary source basis: **FE Environmental specification Area(s) 10; FE Reference Handbook 10.6 Environmental Engineering, printed pp. 318–360, plus general supporting sections where identified in the ledger.**
 
-**Source boundary:** Some Environmental specification topics are directly tabulated in the Handbook, while others require learned engineering knowledge. The chapter keeps those two categories separate.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required environmental-engineering knowledge that is not fully developed in the Handbook. **Guide synthesis** connects the Handbook and external material into exam-oriented explanations, examples, and checks; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- U.S. Army Corps of Engineers, Hydrologic Engineering Center. *HEC-HMS Technical Reference Manual* (CPD-74B), current online edition. Supporting scope: Precipitation-runoff transformation, loss methods, hydrographs, channel/reservoir routing, and hydrologic-model assumptions.
+- Chapra, S. C. (1997). *Surface Water-Quality Modeling*. McGraw-Hill. ISBN 978-0-07-115242-6. Supporting scope: Surface-water mass balances, dissolved oxygen, Streeter-Phelps behavior, eutrophication, kinetics, and contaminant fate.
+- Mihelcic, J. R., & Zimmerman, J. B. (2021). *Environmental Engineering: Fundamentals, Sustainability, Design* (3rd ed.). Wiley. ISBN 978-1-119-60445-7. Supporting scope: Environmental measurements, chemistry, physical processes, biology, risk, water quantity/quality, water treatment, wastewater/stormwater, solid waste, and air quality.
+
+The external references support only the learned/application portion of the Environmental specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -356,31 +363,31 @@ D) It is always a Handbook lookup with no learned interpretation
 
 14. For **eutrophication**, check basis, units, steady/unsteady condition, phase/media, boundary conditions, and whether the selected idealization matches the system.
 
-15. The boundary determines what enters, leaves, accumulates, reacts, or transfers between media. Without it, terms are easily omitted or double counted.
+15. In **Routing, Stormwater/Watershed Quality, Streeter–Phelps, and Eutrophication**, the control volume or conceptual boundary determines which sources, sinks, transfers, reactions, and receptors belong in the model. For this chapter specifically, close continuity through each routing step, keep mass loading distinct from concentration, enforce nonnegative do/bod quantities, and test whether nutrient/erosion assumptions match the receiving system.
 
-16. Concentration is mass per volume; loading is mass per time. A low concentration at very high flow can still create a large load.
+16. Concentration and loading answer different questions in **Routing, Stormwater/Watershed Quality, Streeter–Phelps, and Eutrophication**: concentration is mass per volume, while loading is mass per time. Always convert \(Q\) and \(C\) to compatible units before multiplying them.
 
-17. The FE Handbook is the supplied exam reference. Its variable definitions and unit conventions should govern unless the problem explicitly provides another relation.
+17. Use the FE Reference Handbook equation and definitions when it supplies the model for **Routing, Stormwater/Watershed Quality, Streeter–Phelps, and Eutrophication**. The chapter's external references (HECHMS, CHAPRA, MIHELCIC) support learned specification content, not a competing exam formula.
 
-18. A mass/energy balance and physical check can reveal impossible signs, removal above 100%, negative concentrations, unrealistic flows, or model misuse.
+18. A physical check is needed because algebra alone can return impossible environmental states. For this chapter, set \(I=O\) and confirm reservoir storage is constant; set \(t=0\) and confirm exerted first-order BOD is zero.
 
-19. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+19. **A.** Section §53.1, **Reservoir routing by continuity**, is governed by \(\frac{dS}{dt}=I-O\). Use that relation with its own environmental basis and then perform the specific validity check described for §53.1.
 
-20. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+20. **A.** Section §53.2, **Channel routing concepts**, is governed by \(\text{inflow hydrograph}\rightarrow\text{translation+attenuation}\rightarrow\text{outflow hydrograph}\). Use that relation with its own environmental basis and then perform the specific validity check described for §53.2.
 
-21. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+21. **A.** Section §53.3, **Stormwater pollutant loading and best-management concepts**, is governed by \(\dot m=QC\). Use that relation with its own environmental basis and then perform the specific validity check described for §53.3.
 
-22. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+22. **A.** Section §53.4, **Erosion, sediment transport, and channel stability concepts**, is governed by \(\text{erosion risk}=f(\text{flow shear, soil, slope, cover, duration})\). Use that relation with its own environmental basis and then perform the specific validity check described for §53.4.
 
-23. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+23. **A.** Section §53.5, **BOD exertion and stream oxygen demand**, is governed by \(\mathrm{BOD}_t=L_0(1-e^{-kt})\). Use that relation with its own environmental basis and then perform the specific validity check described for §53.5.
 
-24. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+24. **A.** Section §53.6, **Streeter–Phelps dissolved-oxygen sag**, is governed by \(\mathrm{DO}=\mathrm{DO}_{sat}-D\). Use that relation with its own environmental basis and then perform the specific validity check described for §53.6.
 
-25. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+25. **A.** Section §53.7, **Eutrophication, nutrients, and receiving-water response**, is governed by \(\text{nutrient loading}\uparrow\Rightarrow\text{productivity/oxygen impacts may increase}\). Use that relation with its own environmental basis and then perform the specific validity check described for §53.7.
 
-26. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+26. **A.** An integrated **Routing, Stormwater/Watershed Quality, Streeter–Phelps, and Eutrophication** solution is acceptable only after the governing balance/model is identified, units are reconciled, and the chapter-specific physical checks are satisfied.
 
-27. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+27. **A.** Source ownership is explicit in **Routing, Stormwater/Watershed Quality, Streeter–Phelps, and Eutrophication**: FE-Handbook-supported material remains tied to the ledger, externally supported content uses HECHMS, CHAPRA, MIHELCIC, and guide synthesis is labeled as supplemental explanation.
 
 
 ---
@@ -412,25 +419,25 @@ D) It is always a Handbook lookup with no learned interpretation
 
 ## Practice Problem Solutions
 
-1. Use §53.1. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+1. **Independent recomputation for §53.1 — Reservoir routing by continuity.** Start from the stated givens rather than the worked-example answer. Reservoir continuity is \(dS/dt=I-O\). Whenever \(I>O\), the derivative is positive, so **storage increases**; when outflow exceeds inflow, storage decreases. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-2. Use §53.2. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+2. **Independent recomputation for §53.2 — Channel routing concepts.** Start from the stated givens rather than the worked-example answer. Routing redistributes a hydrograph in time and usually attenuates it. Storage and travel time cause the downstream peak to occur **later**, and often lower, than the corresponding upstream peak. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-3. Use §53.3. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+3. **Independent recomputation for §53.3 — Stormwater pollutant loading and best-management concepts.** Start from the stated givens rather than the worked-example answer. \(\dot m=QC=(5\ {\rm m^3/s})(2\ {\rm mg/L})\). Since \(1\ {\rm mg/L}=1\ {\rm g/m^3}\), the concentration is \(2\ {\rm g/m^3}\), giving \(\dot m=\mathbf{10\ g/s}\). As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-4. Use §53.4. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+4. **Independent recomputation for §53.4 — Erosion, sediment transport, and channel stability concepts.** Start from the stated givens rather than the worked-example answer. Removing protective cover exposes soil to raindrop impact and flowing-water shear. With the same slope and runoff forcing, greater bare-soil exposure therefore generally **increases erosion and sediment-yield risk**. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-5. Use §53.5. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+5. **Independent recomputation for §53.5 — BOD exertion and stream oxygen demand.** Start from the stated givens rather than the worked-example answer. \(\mathrm{BOD}_t=L_0(1-e^{-kt})\). At \(t=0\), \(e^0=1\), so \(\mathrm{BOD}_0=L_0(1-1)=\mathbf{0}\): no ultimate demand has yet been exerted at the initial instant. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-6. Use §53.6. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+6. **Independent recomputation for §53.6 — Streeter–Phelps dissolved-oxygen sag.** Start from the stated givens rather than the worked-example answer. In a Streeter-Phelps oxygen-sag calculation, the critical location/time corresponds to the **maximum oxygen deficit**, so \(dD/dt=0\) at the critical point; equivalently, the deoxygenation and reaeration contributions balance there. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-7. Use §53.7. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+7. **Independent recomputation for §53.7 — Eutrophication, nutrients, and receiving-water response.** Start from the stated givens rather than the worked-example answer. Eutrophication responds strongly to nutrient loading. If a nutrient is limiting, reducing its load can reduce algal productivity and associated oxygen impacts even though the receiving-water volume itself is unchanged. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-8. Check dimensions, concentration-versus-loading basis, conservation of mass/energy, sign convention, and whether removal, risk, or efficiency values stay within physically meaningful limits.
+8. For this chapter, check the result against this failure screen: Close continuity through each routing step, keep mass loading distinct from concentration, enforce nonnegative DO/BOD quantities, and test whether nutrient/erosion assumptions match the receiving system. A result that violates one of those conditions should be rejected even if the arithmetic is internally consistent.
 
-9. Start with FE Environmental specification Area(s) 10, then use the Handbook subsection named in the corresponding ledger entry.
+9. For **Routing, Stormwater/Watershed Quality, Streeter–Phelps, and Eutrophication**, begin with the FE Environmental specification area and Handbook subsection recorded in the ledger. When the atom is `split_required`, use the reconciled external source set **HECHMS, CHAPRA, MIHELCIC** for the learned portion rather than inventing a Handbook page.
 
-10. Test a limiting case such as zero source, zero reaction, complete mixing, no flow, very large residence time, or 0/100% removal as appropriate. The result should reduce to a sensible physical state.
+10. A useful limiting case is to set \(I=O\) and confirm reservoir storage is constant; set \(t=0\) and confirm exerted first-order BOD is zero. The simplified case should reduce to the stated physical behavior before the full model is trusted.
 
 ---
 

@@ -65,7 +65,7 @@ A BJT bias calculation must first identify cutoff, active, or saturation operati
 
 **Problem.** If β=100 and IB=20 μA in active operation, IC≈2.0 mA.
 
-**Solution.** Use the relation and model in §33.1, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §33.1 relation \(I_C\approx \beta I_B,\qquad I_E=I_B+I_C\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: If β=100 and IB=20 μA in active operation, IC≈2.0 mA. Carry the stated units through the calculation and accept the result only after confirming that the BJT or FET remains in the region assumed by the bias or small-signal model.
 
 ---
 
@@ -81,7 +81,7 @@ The DC load line constrains transistor collector current and collector-emitter v
 
 **Problem.** For VCC=10 V and RC=2 kΩ, the load-line intercept current is 5 mA.
 
-**Solution.** Use the relation and model in §33.2, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §33.2 relation \(V_{CE}=V_{CC}-I_C R_C\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: For VCC=10 V and RC=2 kΩ, the load-line intercept current is 5 mA. Carry the stated units through the calculation and accept the result only after confirming that the BJT or FET remains in the region assumed by the bias or small-signal model.
 
 ---
 
@@ -97,7 +97,7 @@ Small-signal analysis linearizes the transistor about its Q point. Device parame
 
 **Problem.** At ICQ=1 mA and VT=25 mV, gm≈40 mS.
 
-**Solution.** Use the relation and model in §33.3, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §33.3 relation \(g_m\approx \frac{I_{CQ}}{V_T},\qquad r_\pi\approx \frac{\beta}{g_m}\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: At ICQ=1 mA and VT=25 mV, gm≈40 mS. Carry the stated units through the calculation and accept the result only after confirming that the BJT or FET remains in the region assumed by the bias or small-signal model.
 
 ---
 
@@ -113,7 +113,7 @@ JFET and depletion-MOSFET devices can conduct at zero gate-source voltage. Check
 
 **Problem.** At VGS=0, the saturation drain current is IDSS.
 
-**Solution.** Use the relation and model in §33.4, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §33.4 relation \(I_D=I_{DSS}\left(1-\frac{V_{GS}}{V_P}\right)^2\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: At VGS=0, the saturation drain current is IDSS. Carry the stated units through the calculation and accept the result only after confirming that the BJT or FET remains in the region assumed by the bias or small-signal model.
 
 ---
 
@@ -129,7 +129,7 @@ An enhancement MOSFET requires gate overdrive above threshold before it conducts
 
 **Problem.** If VGS≤Vt in the ideal model, ID=0.
 
-**Solution.** Use the relation and model in §33.5, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §33.5 relation \(I_D=K(V_{GS}-V_t)^2\quad\text{in saturation under the Handbook model}\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: If VGS≤Vt in the ideal model, ID=0. Carry the stated units through the calculation and accept the result only after confirming that the BJT or FET remains in the region assumed by the bias or small-signal model.
 
 ---
 
@@ -145,7 +145,7 @@ The MOSFET small-signal model converts small gate-voltage changes into drain-cur
 
 **Problem.** For K=1 mA/V² and overdrive 2 V, gm=4 mS in the Handbook model.
 
-**Solution.** Use the relation and model in §33.6, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §33.6 relation \(g_m=2K(V_{GS}-V_t)\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: For K=1 mA/V² and overdrive 2 V, gm=4 mS in the Handbook model. Carry the stated units through the calculation and accept the result only after confirming that the BJT or FET remains in the region assumed by the bias or small-signal model.
 
 ---
 
@@ -161,7 +161,7 @@ A useful bias design provides headroom for the signal and reasonable tolerance t
 
 **Problem.** A calculated VCE below the assumed saturation threshold invalidates an active-region BJT solution.
 
-**Solution.** Use the relation and model in §33.7, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §33.7 relation \(\text{Q-point must remain in intended region over expected variation}\). The statement follows from the physical or logical meaning of **Bias stability, headroom, and device-model verification**: A calculated VCE below the assumed saturation threshold invalidates an active-region BJT solution. Accept that conclusion only while the BJT or FET remains in the region assumed by the bias or small-signal model.
 
 ---
 
@@ -171,13 +171,13 @@ A useful bias design provides headroom for the signal and reasonable tolerance t
 
 **Problem.** A calculation gives a numerical answer but violates the assumed device region, logic state, or protocol condition. Is the answer valid?
 
-**Solution.** No. Re-select the appropriate piecewise model or system state and solve again. Algebraic consistency does not override the model's validity conditions.
+**Solution.** No. In **BJT and MOSFET Biasing and Small-Signal Models**, a tidy numerical or logical result is still invalid if it contradicts the model assumptions. A representative failure is a BJT assumed active that solves below saturation headroom or a MOSFET assumed saturated outside its saturation condition. Return to the applicable section, choose the state/model consistent with the solved quantities, recompute if needed, and confirm that the BJT or FET remains in the region assumed by the bias or small-signal model.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the expression printed in the FE Reference Handbook. Which should govern an exam solution?
 
-**Solution.** Use the Handbook expression and its definitions unless the problem explicitly supplies a different model.
+**Solution.** Use the FE Reference Handbook expression and its definitions as the controlling exam reference unless the problem explicitly defines another model. For **BJT and MOSFET Biasing and Small-Signal Models**, match symbols, units, reference directions, RMS/peak or digital conventions, and assumptions to the Handbook first. External references support only specification-required learned concepts that the Handbook does not directly develop.
 
 ---
 
@@ -185,7 +185,12 @@ A useful bias design provides headroom for the signal and reasonable tolerance t
 
 Primary source basis: **FE Electrical and Computer specification Area 9; FE Reference Handbook 10.6 Electrical and Computer Engineering, printed pp. 361–421, with the specific Handbook subsections identified in the ledger.**
 
-**Source boundary:** The FE Electrical and Computer specification includes both directly tabulated Handbook material and learned engineering/computing concepts. The chapter does not assign false Handbook pages to material that the specification requires but the Handbook does not directly develop.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required engineering/computing knowledge that is not fully developed in the Handbook. **Guide synthesis** connects those two bodies of material into exam-oriented explanations and examples; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Sedra, A. S., Smith, K. C., Carusone, T. C., & Gaudet, V. (2020). *Microelectronic Circuits* (8th ed.). Oxford University Press. ISBN 978-0-19-085346-4. Supporting scope: Diodes, BJT/MOSFET bias, small-signal models, single-stage amplifiers, differential amplifiers, and op amps.
+
+The external references support only the learned/application portion of the specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +359,31 @@ D) It is always only a qualitative concept
 
 14. For **transistor bias stability**, verify operating region/model validity, units or logic levels, sign/polarity convention, and loading or boundary conditions before accepting the result.
 
-15. The same symbol or equation can represent different physical behavior outside its valid device region, frequency range, timing model, or protocol abstraction.
+15. In BJT and MOSFET Biasing and Small-Signal Models, the same equation or symbol can change meaning when the operating state, abstraction, timing model, or signal convention changes; verify that the BJT or FET remains in the region assumed by the bias or small-signal model.
 
-16. The Handbook is the exam reference; using its definitions prevents hidden differences in constants, RMS/peak values, sign convention, or model form.
+16. The FE Reference Handbook is the exam reference for BJT and MOSFET Biasing and Small-Signal Models. Match its variable definitions and conventions before substitution; external references support only learned material not developed in the Handbook.
 
-17. Algebra can be internally consistent while predicting an impossible device state, voltage, timing relationship, address range, or complexity claim. The physical/logical model must also be satisfied.
+17. An algebraically consistent answer can still be invalid in BJT and MOSFET Biasing and Small-Signal Models. Reject a result that implies a BJT assumed active that solves below saturation headroom or a MOSFET assumed saturated outside its saturation condition and reselect the appropriate model or state.
 
-18. Limiting cases and order-of-magnitude checks expose sign errors, impossible gains, invalid probabilities, unrealistic timing, and model misuse.
+18. A useful independent check for this chapter is to drive the base or gate toward cutoff and verify that device current approaches the model's cutoff value. If the result does not reduce correctly, recheck the model, sign convention, and arithmetic.
 
-19. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+19. **A.** For **BJT regions, current relations, and DC bias**, the governing section model is \(I_C\approx \beta I_B,\qquad I_E=I_B+I_C\). Apply it only with the definitions and assumptions stated in §33.1, then verify that the BJT or FET remains in the region assumed by the bias or small-signal model.
 
-20. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+20. **A.** For **BJT load line and Q-point selection**, the governing section model is \(V_{CE}=V_{CC}-I_C R_C\). Apply it only with the definitions and assumptions stated in §33.2, then verify that the BJT or FET remains in the region assumed by the bias or small-signal model.
 
-21. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+21. **A.** For **BJT transconductance and hybrid-pi small-signal model**, the governing section model is \(g_m\approx \frac{I_{CQ}}{V_T},\qquad r_\pi\approx \frac{\beta}{g_m}\). Apply it only with the definitions and assumptions stated in §33.3, then verify that the BJT or FET remains in the region assumed by the bias or small-signal model.
 
-22. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+22. **A.** For **JFET and depletion-MOSFET biasing**, the governing section model is \(I_D=I_{DSS}\left(1-\frac{V_{GS}}{V_P}\right)^2\). Apply it only with the definitions and assumptions stated in §33.4, then verify that the BJT or FET remains in the region assumed by the bias or small-signal model.
 
-23. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+23. **A.** For **Enhancement MOSFET regions and DC bias**, the governing section model is \(I_D=K(V_{GS}-V_t)^2\quad\text{in saturation under the Handbook model}\). Apply it only with the definitions and assumptions stated in §33.5, then verify that the BJT or FET remains in the region assumed by the bias or small-signal model.
 
-24. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+24. **A.** For **MOSFET transconductance and small-signal model**, the governing section model is \(g_m=2K(V_{GS}-V_t)\). Apply it only with the definitions and assumptions stated in §33.6, then verify that the BJT or FET remains in the region assumed by the bias or small-signal model.
 
-25. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+25. **A.** For **Bias stability, headroom, and device-model verification**, the governing section model is \(\text{Q-point must remain in intended region over expected variation}\). Apply it only with the definitions and assumptions stated in §33.7, then verify that the BJT or FET remains in the region assumed by the bias or small-signal model.
 
-26. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+26. **A.** For an integrated BJT and MOSFET Biasing and Small-Signal Models problem, separate the physical/logical model from the arithmetic, solve with the relevant section relations, and cross-check the result against the chapter-specific validity conditions.
 
-27. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+27. **A.** In **BJT and MOSFET Biasing and Small-Signal Models**, the source boundary is explicit: FE-Handbook-supported material remains tied to the ledger, externally supported material uses the chapter references for transistor bias and Q-point selection (SEDRA), and guide synthesis is identified as supplemental explanation rather than Handbook text.
 
 
 ---
@@ -410,25 +415,25 @@ D) It is always only a qualitative concept
 
 ## Practice Problem Solutions
 
-1. Use §33.1. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+1. **Independent check for §33.1.** Begin independently with \(I_C\approx \beta I_B,\qquad I_E=I_B+I_C\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: If β=100 and IB=20 μA in active operation, IC≈2.0 mA. Then verify that the BJT or FET remains in the region assumed by the bias or small-signal model.
 
-2. Use §33.2. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+2. **Independent check for §33.2.** Begin independently with \(V_{CE}=V_{CC}-I_C R_C\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: For VCC=10 V and RC=2 kΩ, the load-line intercept current is 5 mA. Then verify that the BJT or FET remains in the region assumed by the bias or small-signal model.
 
-3. Use §33.3. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+3. **Independent check for §33.3.** Begin independently with \(g_m\approx \frac{I_{CQ}}{V_T},\qquad r_\pi\approx \frac{\beta}{g_m}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: At ICQ=1 mA and VT=25 mV, gm≈40 mS. Then verify that the BJT or FET remains in the region assumed by the bias or small-signal model.
 
-4. Use §33.4. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+4. **Independent check for §33.4.** Begin independently with \(I_D=I_{DSS}\left(1-\frac{V_{GS}}{V_P}\right)^2\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: At VGS=0, the saturation drain current is IDSS. Then verify that the BJT or FET remains in the region assumed by the bias or small-signal model.
 
-5. Use §33.5. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+5. **Independent check for §33.5.** Begin independently with \(I_D=K(V_{GS}-V_t)^2\quad\text{in saturation under the Handbook model}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: If VGS≤Vt in the ideal model, ID=0. Then verify that the BJT or FET remains in the region assumed by the bias or small-signal model.
 
-6. Use §33.6. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+6. **Independent check for §33.6.** Begin independently with \(g_m=2K(V_{GS}-V_t)\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: For K=1 mA/V² and overdrive 2 V, gm=4 mS in the Handbook model. Then verify that the BJT or FET remains in the region assumed by the bias or small-signal model.
 
-7. Use §33.7. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+7. **Independent check for §33.7.** Begin independently with \(\text{Q-point must remain in intended region over expected variation}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: A calculated VCE below the assumed saturation threshold invalidates an active-region BJT solution. Then verify that the BJT or FET remains in the region assumed by the bias or small-signal model.
 
-8. Check device operating region, saturation/clipping, frequency range, RMS-versus-peak convention, timing constraints, address/bit width, or protocol/software preconditions as applicable.
+8. Check the chapter-specific failure mode first: a BJT assumed active that solves below saturation headroom or a MOSFET assumed saturated outside its saturation condition. Do not accept the numerical or logical result until the BJT or FET remains in the region assumed by the bias or small-signal model.
 
-9. Start with FE Electrical and Computer specification Area 9, then use the Handbook subsection named in the ledger for the specific concept.
+9. For **BJT and MOSFET Biasing and Small-Signal Models**, start with the FE Electrical and Computer specification/Handbook location recorded in the ledger, then use the chapter's reconciled source set for transistor bias and Q-point selection (SEDRA) when the concept is split-required. That preserves the Handbook-versus-learned-material boundary.
 
-10. Test a simple limiting case: zero input, matched load, very low/high frequency, all-zero/all-one logic, minimum/maximum address, or small input size as appropriate. The result should reduce to a physically or logically sensible form.
+10. Use this limiting check: drive the base or gate toward cutoff and verify that device current approaches the model's cutoff value. The simplified case should produce the expected physical, timing, logic, protocol, or complexity behavior before the full solution is trusted.
 
 ---
 

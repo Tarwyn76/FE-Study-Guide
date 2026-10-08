@@ -65,7 +65,7 @@ An algorithm is a precise sequence of steps. Correctness requires that it produc
 
 **Problem.** A sorting algorithm is correct only if its output is ordered and contains exactly the input elements.
 
-**Solution.** Use the relation and model in §47.1, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §47.1 relation \(\text{input}\rightarrow\text{finite steps}\rightarrow\text{output}\). The statement follows from the physical or logical meaning of **Algorithm specification, correctness, and pseudocode**: A sorting algorithm is correct only if its output is ordered and contains exactly the input elements. Accept that conclusion only while the data-structure preconditions, algorithm invariant, complexity model, and testing terminology match the problem.
 
 ---
 
@@ -81,7 +81,7 @@ Data structures organize data for particular access patterns. Arrays support ind
 
 **Problem.** Breadth-first search naturally uses a queue; depth-first search can use a stack.
 
-**Solution.** Use the relation and model in §47.2, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §47.2 relation \(\text{choose structure to match access/update operations}\). The statement follows from the physical or logical meaning of **Arrays, lists, stacks, queues, maps, sets, graphs, and trees**: Breadth-first search naturally uses a queue; depth-first search can use a stack. Accept that conclusion only while the data-structure preconditions, algorithm invariant, complexity model, and testing terminology match the problem.
 
 ---
 
@@ -97,7 +97,7 @@ Algorithm choice depends on data organization, size, update patterns, and requir
 
 **Problem.** Binary search repeatedly discards half of a sorted search interval.
 
-**Solution.** Use the relation and model in §47.3, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §47.3 relation \(\text{binary search requires sorted data}\). The statement follows from the physical or logical meaning of **Searching and sorting algorithms**: Binary search repeatedly discards half of a sorted search interval. Accept that conclusion only while the data-structure preconditions, algorithm invariant, complexity model, and testing terminology match the problem.
 
 ---
 
@@ -113,7 +113,7 @@ Big-O describes growth rate as problem size increases, ignoring constant factors
 
 **Problem.** Binary search is O(log n) average/worst on a sorted array, while a simple full scan is O(n).
 
-**Solution.** Use the relation and model in §47.4, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §47.4 relation \(O(1),\ O(\log n),\ O(n),\ O(n\log n),\ O(n^2)\). The statement follows from the physical or logical meaning of **Big-O time complexity**: Binary search is O(log n) average/worst on a sorted array, while a simple full scan is O(n). Accept that conclusion only while the data-structure preconditions, algorithm invariant, complexity model, and testing terminology match the problem.
 
 ---
 
@@ -129,7 +129,7 @@ Software implementation is built from control-flow structures that determine exe
 
 **Problem.** A loop with no reachable termination condition can run indefinitely.
 
-**Solution.** Use the relation and model in §47.5, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §47.5 relation \(\text{sequence}+\text{selection}+\text{iteration/recursion}\). The statement follows from the physical or logical meaning of **Iteration, conditionals, recursion, and control flow**: A loop with no reachable termination condition can run indefinitely. Accept that conclusion only while the data-structure preconditions, algorithm invariant, complexity model, and testing terminology match the problem.
 
 ---
 
@@ -145,7 +145,7 @@ Breadth-first search explores neighbors by layers; depth-first search follows a 
 
 **Problem.** In-order traversal of a binary search tree visits keys in sorted order under standard BST assumptions.
 
-**Solution.** Use the relation and model in §47.6, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §47.6 relation \(\text{BFS}\leftrightarrow\text{queue},\qquad \text{DFS}\leftrightarrow\text{stack/recursion}\). The statement follows from the physical or logical meaning of **Graph and tree traversal**: In-order traversal of a binary search tree visits keys in sorted order under standard BST assumptions. Accept that conclusion only while the data-structure preconditions, algorithm invariant, complexity model, and testing terminology match the problem.
 
 ---
 
@@ -161,7 +161,7 @@ Static testing examines artifacts without executing code; dynamic testing execut
 
 **Problem.** A code review is static testing; a unit test that executes a function is dynamic testing.
 
-**Solution.** Use the relation and model in §47.7, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §47.7 relation \(\text{test evidence}\rightarrow\text{confidence, not proof of absence of defects}\). The statement follows from the physical or logical meaning of **Static, dynamic, black-box, and white-box testing**: A code review is static testing; a unit test that executes a function is dynamic testing. Accept that conclusion only while the data-structure preconditions, algorithm invariant, complexity model, and testing terminology match the problem.
 
 ---
 
@@ -171,13 +171,13 @@ Static testing examines artifacts without executing code; dynamic testing execut
 
 **Problem.** A calculation gives a numerical answer but violates the assumed device region, logic state, or protocol condition. Is the answer valid?
 
-**Solution.** No. Re-select the appropriate piecewise model or system state and solve again. Algebraic consistency does not override the model's validity conditions.
+**Solution.** No. In **Software Engineering — Data Structures, Algorithms, Complexity, Control Flow, and Testing**, a tidy numerical or logical result is still invalid if it contradicts the model assumptions. A representative failure is binary search applied to unsorted data, an algorithm claimed correct without its invariant, or a test result treated as proof of defect absence. Return to the applicable section, choose the state/model consistent with the solved quantities, recompute if needed, and confirm that the data-structure preconditions, algorithm invariant, complexity model, and testing terminology match the problem.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the expression printed in the FE Reference Handbook. Which should govern an exam solution?
 
-**Solution.** Use the Handbook expression and its definitions unless the problem explicitly supplies a different model.
+**Solution.** Use the FE Reference Handbook expression and its definitions as the controlling exam reference unless the problem explicitly defines another model. For **Software Engineering — Data Structures, Algorithms, Complexity, Control Flow, and Testing**, match symbols, units, reference directions, RMS/peak or digital conventions, and assumptions to the Handbook first. External references support only specification-required learned concepts that the Handbook does not directly develop.
 
 ---
 
@@ -185,7 +185,13 @@ Static testing examines artifacts without executing code; dynamic testing execut
 
 Primary source basis: **FE Electrical and Computer specification Area 17; FE Reference Handbook 10.6 Electrical and Computer Engineering, printed pp. 361–421, with the specific Handbook subsections identified in the ledger.**
 
-**Source boundary:** The FE Electrical and Computer specification includes both directly tabulated Handbook material and learned engineering/computing concepts. The chapter does not assign false Handbook pages to material that the specification requires but the Handbook does not directly develop.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required engineering/computing knowledge that is not fully developed in the Handbook. **Guide synthesis** connects those two bodies of material into exam-oriented explanations and examples; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2022). *Introduction to Algorithms* (4th ed.). MIT Press. ISBN 978-0-262-04630-5. Supporting scope: Algorithms, asymptotic complexity, searching, sorting, data structures, trees, and graph algorithms.
+- ISO/IEC/IEEE. (2022). *Software and systems engineering—Software testing—Part 1: General concepts* (ISO/IEC/IEEE 29119-1:2022). Supporting scope: General concepts and terminology for software testing.
+
+The external references support only the learned/application portion of the specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +360,31 @@ D) It is always only a qualitative concept
 
 14. For **software testing**, verify operating region/model validity, units or logic levels, sign/polarity convention, and loading or boundary conditions before accepting the result.
 
-15. The same symbol or equation can represent different physical behavior outside its valid device region, frequency range, timing model, or protocol abstraction.
+15. In Software Engineering — Data Structures, Algorithms, Complexity, Control Flow, and Testing, the same equation or symbol can change meaning when the operating state, abstraction, timing model, or signal convention changes; verify that the data-structure preconditions, algorithm invariant, complexity model, and testing terminology match the problem.
 
-16. The Handbook is the exam reference; using its definitions prevents hidden differences in constants, RMS/peak values, sign convention, or model form.
+16. The FE Reference Handbook is the exam reference for Software Engineering — Data Structures, Algorithms, Complexity, Control Flow, and Testing. Match its variable definitions and conventions before substitution; external references support only learned material not developed in the Handbook.
 
-17. Algebra can be internally consistent while predicting an impossible device state, voltage, timing relationship, address range, or complexity claim. The physical/logical model must also be satisfied.
+17. An algebraically consistent answer can still be invalid in Software Engineering — Data Structures, Algorithms, Complexity, Control Flow, and Testing. Reject a result that implies binary search applied to unsorted data, an algorithm claimed correct without its invariant, or a test result treated as proof of defect absence and reselect the appropriate model or state.
 
-18. Limiting cases and order-of-magnitude checks expose sign errors, impossible gains, invalid probabilities, unrealistic timing, and model misuse.
+18. A useful independent check for this chapter is to use n=0, n=1, or an already sorted/minimal input and verify the result and complexity interpretation remain sensible. If the result does not reduce correctly, recheck the model, sign convention, and arithmetic.
 
-19. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+19. **A.** For **Algorithm specification, correctness, and pseudocode**, the governing section model is \(\text{input}\rightarrow\text{finite steps}\rightarrow\text{output}\). Apply it only with the definitions and assumptions stated in §47.1, then verify that the data-structure preconditions, algorithm invariant, complexity model, and testing terminology match the problem.
 
-20. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+20. **A.** For **Arrays, lists, stacks, queues, maps, sets, graphs, and trees**, the governing section model is \(\text{choose structure to match access/update operations}\). Apply it only with the definitions and assumptions stated in §47.2, then verify that the data-structure preconditions, algorithm invariant, complexity model, and testing terminology match the problem.
 
-21. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+21. **A.** For **Searching and sorting algorithms**, the governing section model is \(\text{binary search requires sorted data}\). Apply it only with the definitions and assumptions stated in §47.3, then verify that the data-structure preconditions, algorithm invariant, complexity model, and testing terminology match the problem.
 
-22. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+22. **A.** For **Big-O time complexity**, the governing section model is \(O(1),\ O(\log n),\ O(n),\ O(n\log n),\ O(n^2)\). Apply it only with the definitions and assumptions stated in §47.4, then verify that the data-structure preconditions, algorithm invariant, complexity model, and testing terminology match the problem.
 
-23. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+23. **A.** For **Iteration, conditionals, recursion, and control flow**, the governing section model is \(\text{sequence}+\text{selection}+\text{iteration/recursion}\). Apply it only with the definitions and assumptions stated in §47.5, then verify that the data-structure preconditions, algorithm invariant, complexity model, and testing terminology match the problem.
 
-24. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+24. **A.** For **Graph and tree traversal**, the governing section model is \(\text{BFS}\leftrightarrow\text{queue},\qquad \text{DFS}\leftrightarrow\text{stack/recursion}\). Apply it only with the definitions and assumptions stated in §47.6, then verify that the data-structure preconditions, algorithm invariant, complexity model, and testing terminology match the problem.
 
-25. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+25. **A.** For **Static, dynamic, black-box, and white-box testing**, the governing section model is \(\text{test evidence}\rightarrow\text{confidence, not proof of absence of defects}\). Apply it only with the definitions and assumptions stated in §47.7, then verify that the data-structure preconditions, algorithm invariant, complexity model, and testing terminology match the problem.
 
-26. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+26. **A.** For an integrated Software Engineering — Data Structures, Algorithms, Complexity, Control Flow, and Testing problem, separate the physical/logical model from the arithmetic, solve with the relevant section relations, and cross-check the result against the chapter-specific validity conditions.
 
-27. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+27. **A.** In **Software Engineering — Data Structures, Algorithms, Complexity, Control Flow, and Testing**, the source boundary is explicit: FE-Handbook-supported material remains tied to the ledger, externally supported material uses the chapter references for algorithms, data structures, complexity, and software testing (CLRS / ISO29119), and guide synthesis is identified as supplemental explanation rather than Handbook text.
 
 
 ---
@@ -410,25 +416,25 @@ D) It is always only a qualitative concept
 
 ## Practice Problem Solutions
 
-1. Use §47.1. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+1. **Independent check for §47.1.** Begin independently with \(\text{input}\rightarrow\text{finite steps}\rightarrow\text{output}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: A sorting algorithm is correct only if its output is ordered and contains exactly the input elements. Then verify that the data-structure preconditions, algorithm invariant, complexity model, and testing terminology match the problem.
 
-2. Use §47.2. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+2. **Independent check for §47.2.** Begin independently with \(\text{choose structure to match access/update operations}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: Breadth-first search naturally uses a queue; depth-first search can use a stack. Then verify that the data-structure preconditions, algorithm invariant, complexity model, and testing terminology match the problem.
 
-3. Use §47.3. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+3. **Independent check for §47.3.** Begin independently with \(\text{binary search requires sorted data}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: Binary search repeatedly discards half of a sorted search interval. Then verify that the data-structure preconditions, algorithm invariant, complexity model, and testing terminology match the problem.
 
-4. Use §47.4. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+4. **Independent check for §47.4.** Begin independently with \(O(1),\ O(\log n),\ O(n),\ O(n\log n),\ O(n^2)\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: Binary search is O(log n) average/worst on a sorted array, while a simple full scan is O(n). Then verify that the data-structure preconditions, algorithm invariant, complexity model, and testing terminology match the problem.
 
-5. Use §47.5. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+5. **Independent check for §47.5.** Begin independently with \(\text{sequence}+\text{selection}+\text{iteration/recursion}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: A loop with no reachable termination condition can run indefinitely. Then verify that the data-structure preconditions, algorithm invariant, complexity model, and testing terminology match the problem.
 
-6. Use §47.6. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+6. **Independent check for §47.6.** Begin independently with \(\text{BFS}\leftrightarrow\text{queue},\qquad \text{DFS}\leftrightarrow\text{stack/recursion}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: In-order traversal of a binary search tree visits keys in sorted order under standard BST assumptions. Then verify that the data-structure preconditions, algorithm invariant, complexity model, and testing terminology match the problem.
 
-7. Use §47.7. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+7. **Independent check for §47.7.** Begin independently with \(\text{test evidence}\rightarrow\text{confidence, not proof of absence of defects}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: A code review is static testing; a unit test that executes a function is dynamic testing. Then verify that the data-structure preconditions, algorithm invariant, complexity model, and testing terminology match the problem.
 
-8. Check device operating region, saturation/clipping, frequency range, RMS-versus-peak convention, timing constraints, address/bit width, or protocol/software preconditions as applicable.
+8. Check the chapter-specific failure mode first: binary search applied to unsorted data, an algorithm claimed correct without its invariant, or a test result treated as proof of defect absence. Do not accept the numerical or logical result until the data-structure preconditions, algorithm invariant, complexity model, and testing terminology match the problem.
 
-9. Start with FE Electrical and Computer specification Area 17, then use the Handbook subsection named in the ledger for the specific concept.
+9. For **Software Engineering — Data Structures, Algorithms, Complexity, Control Flow, and Testing**, start with the FE Electrical and Computer specification/Handbook location recorded in the ledger, then use the chapter's reconciled source set for algorithms, data structures, complexity, and software testing (CLRS / ISO29119) when the concept is split-required. That preserves the Handbook-versus-learned-material boundary.
 
-10. Test a simple limiting case: zero input, matched load, very low/high frequency, all-zero/all-one logic, minimum/maximum address, or small input size as appropriate. The result should reduce to a physically or logically sensible form.
+10. Use this limiting check: use n=0, n=1, or an already sorted/minimal input and verify the result and complexity interpretation remain sensible. The simplified case should produce the expected physical, timing, logic, protocol, or complexity behavior before the full solution is trusted.
 
 ---
 

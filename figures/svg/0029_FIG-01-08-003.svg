@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="576pt" viewBox="0 0 864 576" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-07T17:29:25.286574</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 576 
+L 864 576 
+L 864 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 447.7248 114.912 
+L 825.12 114.912 
+L 825.12 206.496 
+L 447.7248 206.496 
+z
+" clip-path="url(#p19964742f0)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(555.985838 155.132984)">ΣFx = 0: 3q₁ − 2q₂ = 6</text>
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(556.624588 174.001266)">ΣFy = 0: q₁ + 4q₂ = 16</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(471.312 277.131834)">Direction ratios: (3, 1) and (−2, 4)</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(471.312 291.956912)">q₁, q₂ are scaled force unknowns.</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(471.312 306.781991)">Actual force magnitudes include normalization.</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(471.312 393.251384)">q₁ = 4, q₂ = 3</text>
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(471.312 412.119666)">F₁ = 4√10, F₂ = 3√20</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="520.640975" transform="rotate(-0 432 520.640975)">Draw members in tension; a negative solved magnitude reverses that direction.</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_3">
+    <path d="M 209.828571 296.919771 
+C 211.321225 296.919771 212.752945 296.326734 213.808411 295.271268 
+C 214.863877 294.215802 215.456914 292.784083 215.456914 291.291429 
+C 215.456914 289.798775 214.863877 288.367055 213.808411 287.311589 
+C 212.752945 286.256123 211.321225 285.663086 209.828571 285.663086 
+C 208.335917 285.663086 206.904198 286.256123 205.848732 287.311589 
+C 204.793266 288.367055 204.200229 289.798775 204.200229 291.291429 
+C 204.200229 292.784083 204.793266 294.215802 205.848732 295.271268 
+C 206.904198 296.326734 208.335917 296.919771 209.828571 296.919771 
+z
+" clip-path="url(#p244e5ad58a)" style="fill: #23313d; stroke: #23313d; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 211.722263 290.660198 
+Q 280.182891 267.839989 346.946463 245.585465 
+" style="fill: none; stroke: #235a78; stroke-width: 1.6; stroke-linecap: round"/>
+    <path d="M 342.076556 244.889764 
+L 346.946463 245.585465 
+L 343.467958 249.06397 
+" style="fill: none; stroke: #235a78; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <!-- $F_1=\sqrt{10}\,q_1$ -->
+    <g style="fill: #235a78" transform="translate(280.182857 267.84)">
+     <text>
+      <tspan x="0" y="-0.4625" style="font-style: oblique; font-size: 10px; font-family: 'DejaVu Sans'; fill: #235a78">F</tspan>
+      <tspan x="45.680315" y="-0.4625" style="font-style: oblique; font-size: 10px; font-family: 'DejaVu Sans'; fill: #235a78">q</tspan>
+      <tspan x="5.751953" y="1.178125" style="font-size: 7px; font-family: 'DejaVu Sans'; fill: #235a78">1</tspan>
+      <tspan x="52.027971" y="1.178125" style="font-size: 7px; font-family: 'DejaVu Sans'; fill: #235a78">1</tspan>
+      <tspan x="12.427246" y="-0.4625" style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #235a78">=</tspan>
+      <tspan x="30.082138" y="-0.953125" style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #235a78">1</tspan>
+      <tspan x="36.444443" y="-0.953125" style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #235a78">0</tspan>
+      <tspan x="22.754395" y="-2.0875" style="font-size: 5.786802px; font-family: 'STIXSizeOneSym'; fill: #235a78">√</tspan>
+     </text>
+     <rect x="28.832138" y="-11.75" width="15.224609" height="0.625"/>
+    </g>
+   </g>
+   <g id="patch_5">
+    <path d="M 208.933541 289.501368 
+Q 179.340646 230.315577 150.54775 172.729786 
+" style="fill: none; stroke: #26776f; stroke-width: 1.6; stroke-linecap: round"/>
+    <path d="M 150.54775 177.649136 
+L 150.54775 172.729786 
+L 154.48323 175.681396 
+" style="fill: none; stroke: #26776f; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="text_6">
+    <!-- $F_2=\sqrt{20}\,q_2$ -->
+    <g style="fill: #26776f" transform="translate(179.341714 230.317714)">
+     <text>
+      <tspan x="0" y="-0.4625" style="font-style: oblique; font-size: 10px; font-family: 'DejaVu Sans'; fill: #26776f">F</tspan>
+      <tspan x="45.680315" y="-0.4625" style="font-style: oblique; font-size: 10px; font-family: 'DejaVu Sans'; fill: #26776f">q</tspan>
+      <tspan x="5.751953" y="1.178125" style="font-size: 7px; font-family: 'DejaVu Sans'; fill: #26776f">2</tspan>
+      <tspan x="52.027971" y="1.178125" style="font-size: 7px; font-family: 'DejaVu Sans'; fill: #26776f">2</tspan>
+      <tspan x="12.427246" y="-0.4625" style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #26776f">=</tspan>
+      <tspan x="30.082138" y="-0.953125" style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #26776f">2</tspan>
+      <tspan x="36.444443" y="-0.953125" style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #26776f">0</tspan>
+      <tspan x="22.754395" y="-2.0875" style="font-size: 5.786802px; font-family: 'STIXSizeOneSym'; fill: #26776f">√</tspan>
+     </text>
+     <rect x="28.832138" y="-11.75" width="15.224609" height="0.625"/>
+    </g>
+   </g>
+   <g id="patch_6">
+    <path d="M 209.125558 293.163664 
+Q 187.549522 350.624056 166.602319 406.409763 
+" style="fill: none; stroke: #a23b34; stroke-width: 1.6; stroke-linecap: round"/>
+    <path d="M 170.208636 403.063948 
+L 166.602319 406.409763 
+L 166.089457 401.517221 
+" style="fill: none; stroke: #a23b34; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #a23b34" x="187.549714" y="350.623543" transform="rotate(-0 187.549714 350.623543)">Applied load</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="247.350857" y="427.309714" transform="rotate(-0 247.350857 427.309714)">(−6, −16) force units</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 94.572472 408.548571 
+Q 116.024434 408.548571 135.687542 408.548571 
+" style="fill: none; stroke: #23313d; stroke-width: 1.6; stroke-linecap: round"/>
+    <path d="M 131.287542 406.348571 
+L 135.687542 408.548571 
+L 131.287542 410.748571 
+" style="fill: none; stroke: #23313d; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="116.022857" y="408.548571" transform="rotate(-0 116.022857 408.548571)">x</text>
+   </g>
+   <g id="patch_8">
+    <path d="M 92.571429 406.547528 
+Q 92.571429 385.095566 92.571429 365.432458 
+" style="fill: none; stroke: #23313d; stroke-width: 1.6; stroke-linecap: round"/>
+    <path d="M 90.371429 369.832458 
+L 92.571429 365.432458 
+L 94.771429 369.832458 
+" style="fill: none; stroke: #23313d; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="92.571429" y="385.097143" transform="rotate(-0 92.571429 385.097143)">y</text>
+   </g>
+  </g>
+  <g id="text_11">
+   <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="28.8" transform="rotate(-0 38.88 28.8)">Two-force pin joint: equilibrium and direction ratios</text>
+  </g>
+  <g id="text_12">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="38.88" y="560.448" transform="rotate(-0 38.88 560.448)">0029  •  FIG-01-08-003</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p19964742f0">
+   <rect x="38.88" y="69.12" width="786.24" height="457.92"/>
+  </clipPath>
+  <clipPath id="p244e5ad58a">
+   <rect x="69.12" y="103.68" width="328.32" height="328.32"/>
+  </clipPath>
+ </defs>
+</svg>

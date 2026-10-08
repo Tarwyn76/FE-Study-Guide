@@ -65,7 +65,7 @@ The three-phase diagram is the bookkeeping foundation for geotechnical calculati
 
 **Problem.** If Vv=0.4 m³ and Vs=0.6 m³, e=0.667 and n=0.40.
 
-**Solution.** Apply the relation and definitions in §27.1; the stated result follows with consistent units and sign convention.
+**Solution.** Void ratio is \(e=V_v/V_s=0.4/0.6=0.667\). Porosity is \(n=V_v/V_t=0.4/(0.4+0.6)=0.40\). The two quantities are related but not interchangeable: \(e\) uses solids volume in the denominator, while \(n\) uses total volume.
 
 ---
 
@@ -81,7 +81,7 @@ Specific gravity describes soil solids; saturation describes how much of the voi
 
 **Problem.** If Vw=0.30 and Vv=0.40 m³, S=75%.
 
-**Solution.** Apply the relation and definitions in §27.2; the stated result follows with consistent units and sign convention.
+**Solution.** Degree of saturation is \(S=V_w/V_v\). With \(V_w=0.30\ \text{m}^3\) and \(V_v=0.40\ \text{m}^3\), \(S=0.30/0.40=0.75=75\%\).
 
 ---
 
@@ -97,7 +97,7 @@ Gradation parameters help classify coarse-grained soils. Read D-values from the 
 
 **Problem.** D60=0.60 mm and D10=0.10 mm gives Cu=6.
 
-**Solution.** Apply the relation and definitions in §27.3; the stated result follows with consistent units and sign convention.
+**Solution.** The coefficient of uniformity is \(C_u=D_{60}/D_{10}\). Thus \(C_u=0.60/0.10=6\). Both particle sizes are given in **mm**, which cancel in the ratio; the result is dimensionless.
 
 ---
 
@@ -113,7 +113,7 @@ Liquid and plastic limits characterize fine-grained soil consistency. The plasti
 
 **Problem.** LL=45 and PL=25 gives PI=20.
 
-**Solution.** Apply the relation and definitions in §27.4; the stated result follows with consistent units and sign convention.
+**Solution.** Plasticity index is \(PI=LL-PL\). With \(LL=45\) and \(PL=25\), \(PI=20\). The liquid and plastic limits are reported as water-content percentages, so the index is expressed in percentage points.
 
 ---
 
@@ -129,7 +129,7 @@ USCS classification combines grain-size distribution and plasticity. Follow the 
 
 **Problem.** A clean sand with appropriate gradation may classify as SW or SP depending on Cu and Cc.
 
-**Solution.** Apply the relation and definitions in §27.5; the stated result follows with consistent units and sign convention.
+**Solution.** For clean sands in USCS, the distinction between well graded and poorly graded depends on gradation criteria involving \(C_u\) and \(C_c\), in addition to fines content. A clean sand meeting the well-graded limits is SW; one failing them is SP.
 
 ---
 
@@ -145,7 +145,7 @@ Compaction increases dry unit weight by reducing air voids. Optimum moisture con
 
 **Problem.** Field dry unit weight 118 pcf and lab maximum 124 pcf gives RC≈95.2%.
 
-**Solution.** Apply the relation and definitions in §27.6; the stated result follows with consistent units and sign convention.
+**Solution.** Relative compaction is \(RC=\gamma_{d,field}/\gamma_{d,max}\times100\). Thus \(RC=118/124\times100=95.16\%\approx95.2\%\). Both dry unit weights are in **pcf** and must be based on comparable moisture/density test conditions.
 
 ---
 
@@ -161,7 +161,7 @@ Effective stress controls many soil strength and deformation behaviors. Water-ta
 
 **Problem.** Total vertical stress 100 kPa and pore pressure 35 kPa gives effective stress 65 kPa.
 
-**Solution.** Apply the relation and definitions in §27.7; the stated result follows with consistent units and sign convention.
+**Solution.** Terzaghi effective stress is \(\sigma'=\sigma-u\). With total vertical stress \(100\ \text{kPa}\) and pore-water pressure \(35\ \text{kPa}\), \(\sigma'=100-35=65\ \text{kPa}\).
 
 ---
 
@@ -171,13 +171,13 @@ Effective stress controls many soil strength and deformation behaviors. Water-ta
 
 **Problem.** A problem combines two ideas from this chapter. What should be done before calculation?
 
-**Solution.** Draw the system, identify the requested quantity, establish units and sign conventions, and list the governing relations before substituting numbers.
+**Solution.** For a soil-profile problem, first compute phase relationships or classification quantities, then determine total stress, pore pressure, and effective stress at the depth of interest. Do not mix total and effective stress parameters in the same shear-strength or settlement calculation.
 
 ### Worked Example 9
 
 **Problem.** A remembered equation differs from the FE Reference Handbook form. Which should govern the exam solution?
 
-**Solution.** Use the Handbook form and its unit convention unless the problem explicitly supplies a different relation.
+**Solution.** Use the Handbook definitions for void ratio, saturation, gradation coefficients, compaction, and effective stress. These quantities have similar symbols and percentages, so the exact Handbook denominator and basis should control rather than a remembered shortcut.
 
 ---
 
@@ -357,31 +357,31 @@ D) Treat it as optional
 
 14. For **effective stress**, common failures are wrong units, wrong sign convention, wrong geometry/boundary condition, or using a relation outside its assumptions.
 
-15. The sketch exposes geometry, boundaries, loads/flows, signs, and missing data before algebra begins.
+15. Draw the soil phase diagram and layer profile first so volumes, weights, groundwater level, total stress, pore pressure, and effective stress use the correct reference quantities.
 
-16. Use the Handbook form when it is available because the FE exam supplies that reference and its constants/unit conventions govern the problem.
+16. Use the Handbook soil relation when available because void ratio, porosity, saturation, gradation, compaction, and effective stress have similar symbols but different definitions.
 
-17. Mixed unit systems create hidden conversion errors and can invalidate dimensional consistency.
+17. Do not mix pcf, kN/m³, feet, meters, kPa, and psf without conversion; soil phase and stress calculations require one consistent unit system.
 
-18. A reasonableness check can catch sign, magnitude, boundary-condition, and unit errors that algebra alone does not reveal.
+18. Check physical bounds: saturation must lie between 0 and 100 percent, porosity between 0 and 1, and effective stress should not exceed total stress when pore pressure is positive.
 
-19. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+19. **A.** For **Soil phase relationships and unit weights**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-20. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+20. **A.** For **Specific gravity, saturation, and unit-weight relations**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-21. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+21. **A.** For **Grain-size distribution and gradation parameters**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-22. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+22. **A.** For **Atterberg limits and plasticity index**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-23. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+23. **A.** For **Unified Soil Classification System**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-24. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+24. **A.** For **Compaction, moisture-density relation, and relative compaction**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-25. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+25. **A.** For **Total stress, pore pressure, and effective stress**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-26. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+26. **A.** In Soil Classification, Phase Relations, Compaction, and Effective Stress, dimensional consistency and an independent physical check are the fastest ways to detect a unit, sign, magnitude, or modeling error before accepting the result.
 
-27. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+27. **A.** Soil-classification and application details beyond Handbook formulas are labeled learned material and supported by the reconciled geotechnical reference rather than an invented Handbook page.
 
 
 
@@ -414,25 +414,39 @@ D) Treat it as optional
 
 ## Practice Problem Solutions
 
-1. Use §27.1. If Vv=0.4 m³ and Vs=0.6 m³, e=0.667 and n=0.40. The calculation or classification follows from the displayed section relation and the stated data.
+1. **Independent check for §27.1.** Rework the problem from the stated givens rather than copying the worked-example result. Void ratio is \(e=V_v/V_s=0.4/0.6=0.667\). Porosity is \(n=V_v/V_t=0.4/(0.4+0.6)=0.40\). The two quantities are related but not interchangeable: \(e\) uses solids volume in the denominator, while \(n\) uses total volume. **Check:** confirm the final magnitude and units against the physical meaning of §27.1 before accepting the answer.
 
-2. Use §27.2. If Vw=0.30 and Vv=0.40 m³, S=75%. The calculation or classification follows from the displayed section relation and the stated data.
 
-3. Use §27.3. D60=0.60 mm and D10=0.10 mm gives Cu=6. The calculation or classification follows from the displayed section relation and the stated data.
 
-4. Use §27.4. LL=45 and PL=25 gives PI=20. The calculation or classification follows from the displayed section relation and the stated data.
+2. **Independent check for §27.2.** Rework the problem from the stated givens rather than copying the worked-example result. Degree of saturation is \(S=V_w/V_v\). With \(V_w=0.30\ \text{m}^3\) and \(V_v=0.40\ \text{m}^3\), \(S=0.30/0.40=0.75=75\%\). **Check:** confirm the final magnitude and units against the physical meaning of §27.2 before accepting the answer.
 
-5. Use §27.5. A clean sand with appropriate gradation may classify as SW or SP depending on Cu and Cc. The calculation or classification follows from the displayed section relation and the stated data.
 
-6. Use §27.6. Field dry unit weight 118 pcf and lab maximum 124 pcf gives RC≈95.2%. The calculation or classification follows from the displayed section relation and the stated data.
 
-7. Use §27.7. Total vertical stress 100 kPa and pore pressure 35 kPa gives effective stress 65 kPa. The calculation or classification follows from the displayed section relation and the stated data.
+3. **Independent check for §27.3.** Rework the problem from the stated givens rather than copying the worked-example result. The coefficient of uniformity is \(C_u=D_{60}/D_{10}\). Thus \(C_u=0.60/0.10=6\). The result is dimensionless because both particle sizes use the same length unit. **Check:** confirm the final magnitude and units against the physical meaning of §27.3 before accepting the answer.
 
-8. Check dimensions, unit conversion, sign convention, and whether the selected relation's assumptions match the physical situation.
 
-9. Start with FE Civil specification Area 12 and the Handbook sections identified in **As the Handbook States It** and the ledger entries for this chapter.
 
-10. A sketch exposes incompatible geometry, impossible flow/load directions, missing reactions/boundaries, and double-counted or omitted terms.
+4. **Independent check for §27.4.** Rework the problem from the stated givens rather than copying the worked-example result. Plasticity index is \(PI=LL-PL\). With \(LL=45\) and \(PL=25\), \(PI=20\). The liquid and plastic limits are reported as water-content percentages, so the index is expressed in percentage points. **Check:** confirm the final magnitude and units against the physical meaning of §27.4 before accepting the answer.
+
+
+
+5. **Independent check for §27.5.** Rework the problem from the stated givens rather than copying the worked-example result. For clean sands in USCS, the distinction between well graded and poorly graded depends on gradation criteria involving \(C_u\) and \(C_c\), in addition to fines content. A clean sand meeting the well-graded limits is SW; one failing them is SP. **Check:** confirm the final magnitude and units against the physical meaning of §27.5 before accepting the answer.
+
+
+
+6. **Independent check for §27.6.** Rework the problem from the stated givens rather than copying the worked-example result. Relative compaction is \(RC=\gamma_{d,field}/\gamma_{d,max}\times100\). Thus \(RC=118/124\times100=95.16\%\approx95.2\%\). Both dry unit weights must be based on comparable moisture/density test conditions. **Check:** confirm the final magnitude and units against the physical meaning of §27.6 before accepting the answer.
+
+
+
+7. **Independent check for §27.7.** Rework the problem from the stated givens rather than copying the worked-example result. Terzaghi effective stress is \(\sigma'=\sigma-u\). With total vertical stress \(100\ \text{kPa}\) and pore-water pressure \(35\ \text{kPa}\), \(\sigma'=100-35=65\ \text{kPa}\). **Check:** confirm the final magnitude and units against the physical meaning of §27.7 before accepting the answer.
+
+
+
+8. Before accepting a soil classification, phase relations, compaction, and effective stress result, verify the dimensional units, the chapter-specific sign or direction convention, and that the selected model matches the stated geometry and boundary conditions.
+
+9. Start with **FE Civil specification Area 12** and the soil/effective-stress relations in the ledger; use the external geotechnical source for the reconciled learned classification/application material.
+
+10. For soil classification, phase relations, compaction, and effective stress, a sketch makes the controlling geometry, direction, boundary, load/flow path, or sequence visible before algebra, which often reveals missing data or an impossible assumption immediately.
 
 ---
 

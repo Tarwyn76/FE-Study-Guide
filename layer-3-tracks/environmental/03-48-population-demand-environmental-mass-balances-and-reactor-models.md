@@ -65,7 +65,7 @@ Environmental facilities are sized from projected population and per-capita or u
 
 **Problem.** A population of 50,000 growing at 1.5%/yr for 20 years becomes about 67,300 under geometric growth.
 
-**Solution.** Apply the relation and environmental model in §48.1; then verify units, boundary conditions, and physical limits.
+**Solution.** Use geometric growth: \(P_{20}=50{,}000(1+0.015)^{20}=67{,}342\), so the projected population is about **67,300 people**. A design-demand calculation would then multiply this population by the specified per-capita demand.
 
 ---
 
@@ -81,7 +81,7 @@ Mass balances are the foundation of fate, treatment, and reactor calculations. D
 
 **Problem.** At steady state with no reaction, 100 mg/s entering requires 100 mg/s leaving.
 
-**Solution.** Apply the relation and environmental model in §48.2; then verify units, boundary conditions, and physical limits.
+**Solution.** At steady state, \(dM/dt=0\). With no reaction, \(rV=0\), so the mass balance reduces to \(\sum \dot M_{in}=\sum \dot M_{out}\). Therefore an inflow of **100 mg/s** requires an outflow of **100 mg/s**.
 
 ---
 
@@ -97,7 +97,7 @@ Loading is mass per time, not concentration. Convert flow and concentration to c
 
 **Problem.** 2 MGD at 15 mg/L corresponds to about 250 lb/day.
 
-**Solution.** Apply the relation and environmental model in §48.3; then verify units, boundary conditions, and physical limits.
+**Solution.** For wastewater units, \(\dot m=8.34QC\) with \(Q\) in MGD and \(C\) in mg/L. Thus \(\dot m=8.34(2)(15)=250.2\ {\rm lb/day}\), or about **250 lb/day**.
 
 ---
 
@@ -113,7 +113,7 @@ Zero-, first-, and second-order decay have different concentration-time relation
 
 **Problem.** For first-order decay with k=0.20 day^-1, half-life is ln2/k≈3.47 days.
 
-**Solution.** Apply the relation and environmental model in §48.4; then verify units, boundary conditions, and physical limits.
+**Solution.** For first-order decay, \(t_{1/2}=\ln 2/k\). With \(k=0.20\ {\rm day^{-1}}\), \(t_{1/2}=0.693/0.20=3.47\ {\rm days}\).
 
 ---
 
@@ -129,7 +129,7 @@ An ideal batch reactor has no continuous inflow/outflow during reaction; an idea
 
 **Problem.** For first-order decay, C/C0=e^{-kθ}.
 
-**Solution.** Apply the relation and environmental model in §48.5; then verify units, boundary conditions, and physical limits.
+**Solution.** First-order decay obeys \(dC/dt=-kC\). Integrating from \(C_0\) at \(t=0\) to \(C\) at residence time \(\theta\) gives \(\ln(C/C_0)=-k\theta\), hence **\(C/C_0=e^{-k\theta}\)** for an ideal batch reactor or PFR under this model.
 
 ---
 
@@ -145,7 +145,7 @@ A CMFR/CSTR is perfectly mixed, so reactor concentration equals effluent concent
 
 **Problem.** At kθ=1, a first-order CMFR has C/C0=0.5.
 
-**Solution.** Apply the relation and environmental model in §48.6; then verify units, boundary conditions, and physical limits.
+**Solution.** For a first-order CMFR, \(C/C_0=1/(1+k\theta)\). Setting \(k\theta=1\) gives \(C/C_0=1/(1+1)=\mathbf{0.50}\). Complete mixing therefore leaves 50% of the influent concentration at this residence-time product.
 
 ---
 
@@ -161,7 +161,7 @@ The most important reactor step is choosing the correct idealization. A correct 
 
 **Problem.** A long narrow contact basin with limited axial mixing is often approximated more closely by plug flow than by complete mix.
 
-**Solution.** Apply the relation and environmental model in §48.7; then verify units, boundary conditions, and physical limits.
+**Solution.** A long, narrow basin with little longitudinal mixing better matches the **plug-flow** idealization: fluid elements advance through the basin with limited back-mixing. A completely mixed model would instead assume the effluent concentration exists throughout the entire reactor volume.
 
 ---
 
@@ -171,13 +171,13 @@ The most important reactor step is choosing the correct idealization. A correct 
 
 **Problem.** A treatment calculation predicts a negative effluent concentration. What does that indicate?
 
-**Solution.** The algebra or model assumptions are invalid for that condition. Recheck the balance, reaction/order assumptions, time basis, units, and any zero-concentration limiting condition.
+**Solution.** A negative effluent concentration violates the nonnegative concentration bound. Recheck the mass balance, reaction sign, residence time, and kinetic model; a linear removal approximation may have been extrapolated beyond the range where it is physically meaningful.
 
 ### Worked Example 9
 
 **Problem.** A remembered environmental correlation differs from the FE Reference Handbook relation. Which should govern the exam solution?
 
-**Solution.** Use the Handbook relation and its definitions unless the problem explicitly supplies a different model.
+**Solution.** For **Population, Demand, Environmental Mass Balances, and Reactor Models**, the FE Reference Handbook equation, definitions, and unit convention govern whenever the Handbook supplies the needed relation. The external references in this chapter are used for specification-required learned material involving **population projection, conservation balances, pollutant loading, and ideal-reactor models**. If a remembered correlation conflicts with the supplied Handbook equation, use the supplied Handbook relation unless the problem explicitly states a different model.
 
 ---
 
@@ -185,7 +185,13 @@ The most important reactor step is choosing the correct idealization. A correct 
 
 Primary source basis: **FE Environmental specification Area(s) 5; FE Reference Handbook 10.6 Environmental Engineering, printed pp. 318–360, plus general supporting sections where identified in the ledger.**
 
-**Source boundary:** Some Environmental specification topics are directly tabulated in the Handbook, while others require learned engineering knowledge. The chapter keeps those two categories separate.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required environmental-engineering knowledge that is not fully developed in the Handbook. **Guide synthesis** connects the Handbook and external material into exam-oriented explanations, examples, and checks; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Mihelcic, J. R., & Zimmerman, J. B. (2021). *Environmental Engineering: Fundamentals, Sustainability, Design* (3rd ed.). Wiley. ISBN 978-1-119-60445-7. Supporting scope: Environmental measurements, chemistry, physical processes, biology, risk, water quantity/quality, water treatment, wastewater/stormwater, solid waste, and air quality.
+- Metcalf & Eddy/AECOM, Tchobanoglous, G., Stensel, H. D., Tsuchihashi, R., & Burton, F. L. (2014). *Wastewater Engineering: Treatment and Resource Recovery* (5th ed.). McGraw-Hill. ISBN 978-0-07-340118-8. Supporting scope: Wastewater characteristics, physical/chemical treatment, activated sludge, solids recycle, biosolids, residuals, and resource recovery.
+
+The external references support only the learned/application portion of the Environmental specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -356,31 +362,31 @@ D) It is always a Handbook lookup with no learned interpretation
 
 14. For **environmental reactor selection**, check basis, units, steady/unsteady condition, phase/media, boundary conditions, and whether the selected idealization matches the system.
 
-15. The boundary determines what enters, leaves, accumulates, reacts, or transfers between media. Without it, terms are easily omitted or double counted.
+15. In **Population, Demand, Environmental Mass Balances, and Reactor Models**, the control volume or conceptual boundary determines which sources, sinks, transfers, reactions, and receptors belong in the model. For this chapter specifically, confirm population and flow bases, conservation of mass, nonnegative concentrations, and whether batch, plug-flow, or complete-mix assumptions match the physical reactor.
 
-16. Concentration is mass per volume; loading is mass per time. A low concentration at very high flow can still create a large load.
+16. Concentration and loading answer different questions in **Population, Demand, Environmental Mass Balances, and Reactor Models**: concentration is mass per volume, while loading is mass per time. Always convert \(Q\) and \(C\) to compatible units before multiplying them.
 
-17. The FE Handbook is the supplied exam reference. Its variable definitions and unit conventions should govern unless the problem explicitly provides another relation.
+17. Use the FE Reference Handbook equation and definitions when it supplies the model for **Population, Demand, Environmental Mass Balances, and Reactor Models**. The chapter's external references (MIHELCIC, METCALF) support learned specification content, not a competing exam formula.
 
-18. A mass/energy balance and physical check can reveal impossible signs, removal above 100%, negative concentrations, unrealistic flows, or model misuse.
+18. A physical check is needed because algebra alone can return impossible environmental states. For this chapter, set reaction rate to zero and verify the reactor balance reduces to pure flow-through conservation; also confirm \(k	heta	o0\) gives \(C/C_0	o1\).
 
-19. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+19. **A.** Section §48.1, **Population projections and demand forecasting**, is governed by \(P_t=P_0(1+r)^t,\qquad D=P_t\,d_{pc}\). Use that relation with its own environmental basis and then perform the specific validity check described for §48.1.
 
-20. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+20. **A.** Section §48.2, **Control volumes, steady and unsteady environmental mass balances**, is governed by \(\frac{dM}{dt}=\sum \dot M_{in}-\sum \dot M_{out}+rV\). Use that relation with its own environmental basis and then perform the specific validity check described for §48.2.
 
-21. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+21. **A.** Section §48.3, **Concentration-flow loading calculations**, is governed by \(\dot m=QC\). Use that relation with its own environmental basis and then perform the specific validity check described for §48.3.
 
-22. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+22. **A.** Section §48.4, **Reaction order and environmental decay kinetics**, is governed by \(r=-kC^n\). Use that relation with its own environmental basis and then perform the specific validity check described for §48.4.
 
-23. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+23. **A.** Section §48.5, **Ideal batch and plug-flow reactors**, is governed by \(\theta=\frac{V}{Q}\quad\text{for flowing reactors}\). Use that relation with its own environmental basis and then perform the specific validity check described for §48.5.
 
-24. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+24. **A.** Section §48.6, **Completely mixed flow reactors**, is governed by \(C=\frac{C_0}{1+k\theta}\quad\text{for first-order steady decay}\). Use that relation with its own environmental basis and then perform the specific validity check described for §48.6.
 
-25. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+25. **A.** Section §48.7, **Reactor selection, residence time, and model verification**, is governed by \(\text{select reactor model from mixing, flow, reaction order, and steady/unsteady assumptions}\). Use that relation with its own environmental basis and then perform the specific validity check described for §48.7.
 
-26. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+26. **A.** An integrated **Population, Demand, Environmental Mass Balances, and Reactor Models** solution is acceptable only after the governing balance/model is identified, units are reconciled, and the chapter-specific physical checks are satisfied.
 
-27. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+27. **A.** Source ownership is explicit in **Population, Demand, Environmental Mass Balances, and Reactor Models**: FE-Handbook-supported material remains tied to the ledger, externally supported content uses MIHELCIC, METCALF, and guide synthesis is labeled as supplemental explanation.
 
 
 ---
@@ -412,25 +418,25 @@ D) It is always a Handbook lookup with no learned interpretation
 
 ## Practice Problem Solutions
 
-1. Use §48.1. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+1. **Independent recomputation for §48.1 — Population projections and demand forecasting.** Start from the stated givens rather than the worked-example answer. Use geometric growth: \(P_{20}=50{,}000(1+0.015)^{20}=67{,}342\), so the projected population is about **67,300 people**. A design-demand calculation would then multiply this population by the specified per-capita demand. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-2. Use §48.2. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+2. **Independent recomputation for §48.2 — Control volumes, steady and unsteady environmental mass balances.** Start from the stated givens rather than the worked-example answer. At steady state, \(dM/dt=0\). With no reaction, \(rV=0\), so the mass balance reduces to \(\sum \dot M_{in}=\sum \dot M_{out}\). Therefore an inflow of **100 mg/s** requires an outflow of **100 mg/s**. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-3. Use §48.3. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+3. **Independent recomputation for §48.3 — Concentration-flow loading calculations.** Start from the stated givens rather than the worked-example answer. For wastewater units, \(\dot m=8.34QC\) with \(Q\) in MGD and \(C\) in mg/L. Thus \(\dot m=8.34(2)(15)=250.2\ {\rm lb/day}\), or about **250 lb/day**. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-4. Use §48.4. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+4. **Independent recomputation for §48.4 — Reaction order and environmental decay kinetics.** Start from the stated givens rather than the worked-example answer. For first-order decay, \(t_{1/2}=\ln 2/k\). With \(k=0.20\ {\rm day^{-1}}\), \(t_{1/2}=0.693/0.20=3.47\ {\rm days}\). As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-5. Use §48.5. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+5. **Independent recomputation for §48.5 — Ideal batch and plug-flow reactors.** Start from the stated givens rather than the worked-example answer. First-order decay obeys \(dC/dt=-kC\). Integrating from \(C_0\) at \(t=0\) to \(C\) at residence time \(\theta\) gives \(\ln(C/C_0)=-k\theta\), hence **\(C/C_0=e^{-k\theta}\)** for an ideal batch reactor or PFR under this model. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-6. Use §48.6. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+6. **Independent recomputation for §48.6 — Completely mixed flow reactors.** Start from the stated givens rather than the worked-example answer. For a first-order CMFR, \(C/C_0=1/(1+k\theta)\). Setting \(k\theta=1\) gives \(C/C_0=1/(1+1)=\mathbf{0.50}\). Complete mixing therefore leaves 50% of the influent concentration at this residence-time product. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-7. Use §48.7. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+7. **Independent recomputation for §48.7 — Reactor selection, residence time, and model verification.** Start from the stated givens rather than the worked-example answer. A long, narrow basin with little longitudinal mixing better matches the **plug-flow** idealization: fluid elements advance through the basin with limited back-mixing. A completely mixed model would instead assume the effluent concentration exists throughout the entire reactor volume. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-8. Check dimensions, concentration-versus-loading basis, conservation of mass/energy, sign convention, and whether removal, risk, or efficiency values stay within physically meaningful limits.
+8. For this chapter, check the result against this failure screen: Confirm population and flow bases, conservation of mass, nonnegative concentrations, and whether batch, plug-flow, or complete-mix assumptions match the physical reactor. A result that violates one of those conditions should be rejected even if the arithmetic is internally consistent.
 
-9. Start with FE Environmental specification Area(s) 5, then use the Handbook subsection named in the corresponding ledger entry.
+9. For **Population, Demand, Environmental Mass Balances, and Reactor Models**, begin with the FE Environmental specification area and Handbook subsection recorded in the ledger. When the atom is `split_required`, use the reconciled external source set **MIHELCIC, METCALF** for the learned portion rather than inventing a Handbook page.
 
-10. Test a limiting case such as zero source, zero reaction, complete mixing, no flow, very large residence time, or 0/100% removal as appropriate. The result should reduce to a sensible physical state.
+10. A useful limiting case is to set reaction rate to zero and verify the reactor balance reduces to pure flow-through conservation; also confirm \(k	heta	o0\) gives \(C/C_0	o1\). The simplified case should reduce to the stated physical behavior before the full model is trusted.
 
 ---
 

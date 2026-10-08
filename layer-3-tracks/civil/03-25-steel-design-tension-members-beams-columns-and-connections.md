@@ -65,7 +65,7 @@ Steel design compares factored demand with design resistance. Identify the contr
 
 **Problem.** If φRn=180 kip and demand is 165 kip, the checked limit state passes.
 
-**Solution.** Apply the relation and definitions in §25.1; the stated result follows with consistent units and sign convention.
+**Solution.** The strength check is \(\phi R_n\ge U\). Here the available design strength is \(180\ \text{kip}\) and the factored demand is \(165\ \text{kip}\), so \(180\ge165\) and the checked limit state passes with a 15-kip margin.
 
 ---
 
@@ -81,7 +81,7 @@ Gross-section yielding and effective-net-section fracture are distinct tension l
 
 **Problem.** A bolted connection may have a smaller net area than gross area, causing fracture to control.
 
-**Solution.** Apply the relation and definitions in §25.2; the stated result follows with consistent units and sign convention.
+**Solution.** A tension member must be checked for both gross-section yielding and net/effective-section fracture. Bolt holes reduce the net area, so the fracture strength based on \(F_uA_e\) can be less than the yielding strength based on \(F_yA_g\) even when the gross section is adequate.
 
 ---
 
@@ -97,7 +97,7 @@ Connections can be governed by fastener shear, bearing, block shear, weld streng
 
 **Problem.** A stronger bolt does not prevent net-section fracture of the plate.
 
-**Solution.** Apply the relation and definitions in §25.3; the stated result follows with consistent units and sign convention.
+**Solution.** Connection design is governed by the weakest applicable limit state. Increasing bolt strength may raise bolt shear or bearing capacity, but it does not increase the plate net area; therefore net-section fracture of the connected member can still control.
 
 ---
 
@@ -113,7 +113,7 @@ Beam flexural strength depends on section compactness, unbraced length, yielding
 
 **Problem.** Increasing unbraced length can reduce available moment strength.
 
-**Solution.** Apply the relation and definitions in §25.4; the stated result follows with consistent units and sign convention.
+**Solution.** Lateral-torsional buckling resistance generally decreases as the unbraced length of the compression flange increases. Thus a beam that is adequate when continuously braced can have a lower available moment strength when the lateral bracing spacing is increased.
 
 ---
 
@@ -129,7 +129,7 @@ Shear strength and deflection are separate checks. A beam can satisfy strength b
 
 **Problem.** A shallow long-span beam may be deflection-controlled even when flexural strength is adequate.
 
-**Solution.** Apply the relation and definitions in §25.5; the stated result follows with consistent units and sign convention.
+**Solution.** Strength and serviceability are separate checks. A beam may satisfy \(\phi M_n\ge M_u\) and \(\phi V_n\ge V_u\) yet still deflect excessively under service loads, especially when the member is shallow or the span is long.
 
 ---
 
@@ -145,7 +145,7 @@ Column design uses critical stress based on slenderness and material properties.
 
 **Problem.** Compare KL/r about both principal axes before selecting the governing Fcr.
 
-**Solution.** Apply the relation and definitions in §25.6; the stated result follows with consistent units and sign convention.
+**Solution.** Column slenderness must be checked about both principal axes because \(KL/r\) depends on effective length and radius of gyration. Compute the slenderness for each axis and use the axis producing the smaller compression strength or larger controlling slenderness.
 
 ---
 
@@ -161,7 +161,7 @@ FE problems may rely on handbook tabulations for W-shape dimensions, properties,
 
 **Problem.** A section with adequate moment strength may still require a larger Ix for deflection.
 
-**Solution.** Apply the relation and definitions in §25.7; the stated result follows with consistent units and sign convention.
+**Solution.** Section selection is iterative. A shape that passes flexure may fail shear, lateral-torsional buckling, column strength, connection geometry, or deflection. If deflection controls, a section with larger \(I_x\) may be required even when nominal moment strength is already sufficient.
 
 ---
 
@@ -171,13 +171,13 @@ FE problems may rely on handbook tabulations for W-shape dimensions, properties,
 
 **Problem.** A problem combines two ideas from this chapter. What should be done before calculation?
 
-**Solution.** Draw the system, identify the requested quantity, establish units and sign conventions, and list the governing relations before substituting numbers.
+**Solution.** For a steel member problem, identify all relevant limit states before calculating. Compute factored demand, evaluate gross/net section or flexural/compression strength as applicable, and then perform the serviceability check. The smallest available strength or most restrictive service criterion governs.
 
 ### Worked Example 9
 
 **Problem.** A remembered equation differs from the FE Reference Handbook form. Which should govern the exam solution?
 
-**Solution.** Use the Handbook form and its unit convention unless the problem explicitly supplies a different relation.
+**Solution.** Use the Handbook steel-design equations and tabulated properties that match the member and limit state being checked. Remembered code expressions can differ by edition, resistance factor, or effective-area definition, so the supplied Handbook form should control the exam solution.
 
 ---
 
@@ -185,11 +185,12 @@ FE problems may rely on handbook tabulations for W-shape dimensions, properties,
 
 Primary source basis: **FE Civil specification Area 11; FE Reference Handbook 10.6 Civil Engineering and supporting general sections cited below.**
 
-**Source boundary:** Some Civil specification topics are directly tabulated in the Handbook; others are named by the specification but require learned engineering knowledge. This chapter does not imply that every workflow, code provision, or design factor is printed in the Handbook.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is retained because it is required by the FE Civil specification but needs engineering knowledge beyond what is printed in the Handbook. **Guide synthesis** connects those two sources into exam-oriented workflows and examples; it is not presented as Handbook text.
 
-Where the FE specification requires a topic that is not directly developed in the Handbook, the ledger marks it **specification-required / guide-developed** rather than inventing a Handbook citation.
+**External source support for split-required concepts:**
+- `CIV-3-025-05` — American Institute of Steel Construction. (2022). *Specification for Structural Steel Buildings* (ANSI/AISC 360-22). AISC. See also *Steel Construction Manual*, 16th ed. (2023). Cited at publication/standard level; no page-level claim.
 
----
+No external source above is being used to replace the FE Reference Handbook. The external references support only the learned/application portion identified by `split_required: true`.
 
 ## Where This Goes Wrong
 
@@ -357,31 +358,31 @@ D) Treat it as optional
 
 14. For **steel section selection**, common failures are wrong units, wrong sign convention, wrong geometry/boundary condition, or using a relation outside its assumptions.
 
-15. The sketch exposes geometry, boundaries, loads/flows, signs, and missing data before algebra begins.
+15. Draw the steel member and connection with load path, unbraced length, gross/net sections, and connection geometry before selecting the controlling limit-state equations.
 
-16. Use the Handbook form when it is available because the FE exam supplies that reference and its constants/unit conventions govern the problem.
+16. Use the Handbook steel relation for the requested limit state, while code-specific learned details are checked against the cited AISC specification rather than a remembered equation from another edition.
 
-17. Mixed unit systems create hidden conversion errors and can invalidate dimensional consistency.
+17. Keep ksi, psi, kip, lbf, inches, and section-property units consistent before combining stress, area, shear, moment, and column-strength terms.
 
-18. A reasonableness check can catch sign, magnitude, boundary-condition, and unit errors that algebra alone does not reveal.
+18. Check the governing limit state and margin: available strength must exceed factored demand, and a member that passes strength still requires any stated serviceability or stability check.
 
-19. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+19. **A.** For **Steel design philosophies and limit states**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-20. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+20. **A.** For **Tension-member yielding and fracture**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-21. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+21. **A.** For **Bolted and welded connection concepts**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-22. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+22. **A.** For **Steel beam flexure and lateral-torsional buckling**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-23. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+23. **A.** For **Beam shear and serviceability**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-24. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+24. **A.** For **Steel column compression strength**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-25. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+25. **A.** For **Section selection and handbook-table use**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-26. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+26. **A.** In Steel Design — Tension Members, Beams, Columns, and Connections, dimensional consistency and an independent physical check are the fastest ways to detect a unit, sign, magnitude, or modeling error before accepting the result.
 
-27. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+27. **A.** Steel-design details beyond the FE Handbook are explicitly supported by ANSI/AISC 360-22 and the Steel Construction Manual, not by a fabricated Handbook citation.
 
 
 
@@ -414,25 +415,39 @@ D) Treat it as optional
 
 ## Practice Problem Solutions
 
-1. Use §25.1. If φRn=180 kip and demand is 165 kip, the checked limit state passes. The calculation or classification follows from the displayed section relation and the stated data.
+1. **Independent check for §25.1.** Rework the problem from the stated givens rather than copying the worked-example result. The strength check is \(\phi R_n\ge U\). Here the available design strength is \(180\ \text{kip}\) and the factored demand is \(165\ \text{kip}\), so \(180\ge165\) and the checked limit state passes with a 15-kip margin. **Check:** confirm the final magnitude and units against the physical meaning of §25.1 before accepting the answer.
 
-2. Use §25.2. A bolted connection may have a smaller net area than gross area, causing fracture to control. The calculation or classification follows from the displayed section relation and the stated data.
 
-3. Use §25.3. A stronger bolt does not prevent net-section fracture of the plate. The calculation or classification follows from the displayed section relation and the stated data.
 
-4. Use §25.4. Increasing unbraced length can reduce available moment strength. The calculation or classification follows from the displayed section relation and the stated data.
+2. **Independent check for §25.2.** Rework the problem from the stated givens rather than copying the worked-example result. A tension member must be checked for both gross-section yielding and net/effective-section fracture. Bolt holes reduce the net area, so the fracture strength based on \(F_uA_e\) can be less than the yielding strength based on \(F_yA_g\) even when the gross section is adequate. **Check:** confirm the final magnitude and units against the physical meaning of §25.2 before accepting the answer.
 
-5. Use §25.5. A shallow long-span beam may be deflection-controlled even when flexural strength is adequate. The calculation or classification follows from the displayed section relation and the stated data.
 
-6. Use §25.6. Compare KL/r about both principal axes before selecting the governing Fcr. The calculation or classification follows from the displayed section relation and the stated data.
 
-7. Use §25.7. A section with adequate moment strength may still require a larger Ix for deflection. The calculation or classification follows from the displayed section relation and the stated data.
+3. **Independent check for §25.3.** Rework the problem from the stated givens rather than copying the worked-example result. Connection design is governed by the weakest applicable limit state. Increasing bolt strength may raise bolt shear or bearing capacity, but it does not increase the plate net area; therefore net-section fracture of the connected member can still control. **Check:** confirm the final magnitude and units against the physical meaning of §25.3 before accepting the answer.
 
-8. Check dimensions, unit conversion, sign convention, and whether the selected relation's assumptions match the physical situation.
 
-9. Start with FE Civil specification Area 11 and the Handbook sections identified in **As the Handbook States It** and the ledger entries for this chapter.
 
-10. A sketch exposes incompatible geometry, impossible flow/load directions, missing reactions/boundaries, and double-counted or omitted terms.
+4. **Independent check for §25.4.** Rework the problem from the stated givens rather than copying the worked-example result. Lateral-torsional buckling resistance generally decreases as the unbraced length of the compression flange increases. Thus a beam that is adequate when continuously braced can have a lower available moment strength when the lateral bracing spacing is increased. **Check:** confirm the final magnitude and units against the physical meaning of §25.4 before accepting the answer.
+
+
+
+5. **Independent check for §25.5.** Rework the problem from the stated givens rather than copying the worked-example result. Strength and serviceability are separate checks. A beam may satisfy \(\phi M_n\ge M_u\) and \(\phi V_n\ge V_u\) yet still deflect excessively under service loads, especially when the member is shallow or the span is long. **Check:** confirm the final magnitude and units against the physical meaning of §25.5 before accepting the answer.
+
+
+
+6. **Independent check for §25.6.** Rework the problem from the stated givens rather than copying the worked-example result. Column slenderness must be checked about both principal axes because \(KL/r\) depends on effective length and radius of gyration. Compute the slenderness for each axis and use the axis producing the smaller compression strength or larger controlling slenderness. **Check:** confirm the final magnitude and units against the physical meaning of §25.6 before accepting the answer.
+
+
+
+7. **Independent check for §25.7.** Rework the problem from the stated givens rather than copying the worked-example result. Section selection is iterative. A shape that passes flexure may fail shear, lateral-torsional buckling, column strength, connection geometry, or deflection. If deflection controls, a section with larger \(I_x\) may be required even when nominal moment strength is already sufficient. **Check:** confirm the final magnitude and units against the physical meaning of §25.7 before accepting the answer.
+
+
+
+8. Before accepting a steel design — tension members, beams, columns, and connections result, verify the dimensional units, the chapter-specific sign or direction convention, and that the selected model matches the stated geometry and boundary conditions.
+
+9. Start with **FE Civil specification Area 11** and the Handbook steel/member relations recorded in the ledger; use AISC only for the reconciled code-level learned material.
+
+10. For steel design — tension members, beams, columns, and connections, a sketch makes the controlling geometry, direction, boundary, load/flow path, or sequence visible before algebra, which often reveals missing data or an impossible assumption immediately.
 
 ---
 

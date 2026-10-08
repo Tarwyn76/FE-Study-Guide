@@ -65,7 +65,7 @@ Packet-switched networks divide application data into packets that may traverse 
 
 **Problem.** A router normally makes forwarding decisions using network-layer addressing.
 
-**Solution.** Use the relation and model in §45.1, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §45.1 relation \(\text{message}\rightarrow\text{packets}\rightarrow\text{network}\rightarrow\text{reassembly}\). The statement follows from the physical or logical meaning of **Packet switching, hosts, routers, and link-layer switches**: A router normally makes forwarding decisions using network-layer addressing. Accept that conclusion only while the protocol layer, address scope, forwarding role, and link-rate/propagation assumptions match the network model.
 
 ---
 
@@ -81,7 +81,7 @@ Layering separates functions and interfaces. Encapsulation adds protocol headers
 
 **Problem.** A TCP segment is encapsulated inside an IP packet and then a link-layer frame.
 
-**Solution.** Use the relation and model in §45.2, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §45.2 relation \(\text{application}\rightarrow\text{transport}\rightarrow\text{internet/network}\rightarrow\text{link}\). The statement follows from the physical or logical meaning of **OSI and TCP/IP layered models**: A TCP segment is encapsulated inside an IP packet and then a link-layer frame. Accept that conclusion only while the protocol layer, address scope, forwarding role, and link-rate/propagation assumptions match the network model.
 
 ---
 
@@ -97,7 +97,7 @@ IPv4 uses 32-bit addresses and IPv6 uses 128-bit addresses. CIDR prefix length i
 
 **Problem.** A /24 IPv4 prefix leaves 8 address bits outside the network prefix.
 
-**Solution.** Use the relation and model in §45.3, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §45.3 relation \(\text{prefix length}=\text{number of leading network bits}\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: A /24 IPv4 prefix leaves 8 address bits outside the network prefix. Carry the stated units through the calculation and accept the result only after confirming that the protocol layer, address scope, forwarding role, and link-rate/propagation assumptions match the network model.
 
 ---
 
@@ -113,7 +113,7 @@ Switches use link-layer information to forward frames within a LAN; routers use 
 
 **Problem.** Traffic between two IP subnets normally requires a router or Layer-3 forwarding function.
 
-**Solution.** Use the relation and model in §45.4, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §45.4 relation \(\text{destination}\rightarrow\text{lookup}\rightarrow\text{next hop or output port}\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: Traffic between two IP subnets normally requires a router or Layer-3 forwarding function. Carry the stated units through the calculation and accept the result only after confirming that the protocol layer, address scope, forwarding role, and link-rate/propagation assumptions match the network model.
 
 ---
 
@@ -129,7 +129,7 @@ TCP is connection-oriented and supplies mechanisms for reliable ordered delivery
 
 **Problem.** Streaming or request/response applications choose transport behavior based on reliability, latency, and application requirements.
 
-**Solution.** Use the relation and model in §45.5, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §45.5 relation \(d_{trans}=\frac{L}{R}\). The statement follows from the physical or logical meaning of **TCP, UDP, reliability, and transport behavior**: Streaming or request/response applications choose transport behavior based on reliability, latency, and application requirements. Accept that conclusion only while the protocol layer, address scope, forwarding role, and link-rate/propagation assumptions match the network model.
 
 ---
 
@@ -145,7 +145,7 @@ LANs may use static configuration, DHCP for IPv4-style configuration, or IPv6 au
 
 **Problem.** Modern switched Ethernet LANs are commonly arranged physically as stars around switches.
 
-**Solution.** Use the relation and model in §45.6, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §45.6 relation \(\text{device joins network}\rightarrow\text{address/configuration}\rightarrow\text{local forwarding}\). The statement follows from the physical or logical meaning of **LAN configuration, DHCP, SLAAC, and topologies**: Modern switched Ethernet LANs are commonly arranged physically as stars around switches. Accept that conclusion only while the protocol layer, address scope, forwarding role, and link-rate/propagation assumptions match the network model.
 
 ---
 
@@ -161,7 +161,7 @@ Network performance is limited by the slowest relevant resource and by accumulat
 
 **Problem.** On a long high-speed link, propagation delay can dominate even when transmission delay is small.
 
-**Solution.** Use the relation and model in §45.7, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §45.7 relation \(d_{total}=d_{proc}+d_{queue}+d_{trans}+d_{prop}\). The statement follows from the physical or logical meaning of **End-to-end delay, throughput, and bottlenecks**: On a long high-speed link, propagation delay can dominate even when transmission delay is small. Accept that conclusion only while the protocol layer, address scope, forwarding role, and link-rate/propagation assumptions match the network model.
 
 ---
 
@@ -171,13 +171,13 @@ Network performance is limited by the slowest relevant resource and by accumulat
 
 **Problem.** A calculation gives a numerical answer but violates the assumed device region, logic state, or protocol condition. Is the answer valid?
 
-**Solution.** No. Re-select the appropriate piecewise model or system state and solve again. Algebraic consistency does not override the model's validity conditions.
+**Solution.** No. In **Computer Networks — Routing, Switching, Topologies, and TCP/IP**, a tidy numerical or logical result is still invalid if it contradicts the model assumptions. A representative failure is a Layer-2 switch treated as an IP router or a forwarding decision made with the wrong address scope. Return to the applicable section, choose the state/model consistent with the solved quantities, recompute if needed, and confirm that the protocol layer, address scope, forwarding role, and link-rate/propagation assumptions match the network model.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the expression printed in the FE Reference Handbook. Which should govern an exam solution?
 
-**Solution.** Use the Handbook expression and its definitions unless the problem explicitly supplies a different model.
+**Solution.** Use the FE Reference Handbook expression and its definitions as the controlling exam reference unless the problem explicitly defines another model. For **Computer Networks — Routing, Switching, Topologies, and TCP/IP**, match symbols, units, reference directions, RMS/peak or digital conventions, and assumptions to the Handbook first. External references support only specification-required learned concepts that the Handbook does not directly develop.
 
 ---
 
@@ -185,7 +185,14 @@ Network performance is limited by the slowest relevant resource and by accumulat
 
 Primary source basis: **FE Electrical and Computer specification Area 14; FE Reference Handbook 10.6 Electrical and Computer Engineering, printed pp. 361–421, with the specific Handbook subsections identified in the ledger.**
 
-**Source boundary:** The FE Electrical and Computer specification includes both directly tabulated Handbook material and learned engineering/computing concepts. The chapter does not assign false Handbook pages to material that the specification requires but the Handbook does not directly develop.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required engineering/computing knowledge that is not fully developed in the Handbook. **Guide synthesis** connects those two bodies of material into exam-oriented explanations and examples; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Kurose, J. F., & Ross, K. W. (2025). *Computer Networking: A Top-Down Approach* (9th ed.). Pearson. Print ISBN 978-0-13-542933-4. Supporting scope: Layered networking, routing and forwarding, IP addressing, transport behavior, LANs, and network delay.
+- Baker, F. (Ed.). (1995). *Requirements for IP Version 4 Routers* (RFC 1812). Internet Engineering Task Force / RFC Editor. Supporting scope: IPv4 router forwarding behavior and forwarding decisions.
+- IEEE. (2022). *IEEE Standard for Local and Metropolitan Area Networks—Bridges and Bridged Networks* (IEEE Std 802.1Q-2022). Supporting scope: MAC bridges, bridged networks, switching, and VLAN operation.
+
+The external references support only the learned/application portion of the specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +361,31 @@ D) It is always only a qualitative concept
 
 14. For **network performance**, verify operating region/model validity, units or logic levels, sign/polarity convention, and loading or boundary conditions before accepting the result.
 
-15. The same symbol or equation can represent different physical behavior outside its valid device region, frequency range, timing model, or protocol abstraction.
+15. In Computer Networks — Routing, Switching, Topologies, and TCP/IP, the same equation or symbol can change meaning when the operating state, abstraction, timing model, or signal convention changes; verify that the protocol layer, address scope, forwarding role, and link-rate/propagation assumptions match the network model.
 
-16. The Handbook is the exam reference; using its definitions prevents hidden differences in constants, RMS/peak values, sign convention, or model form.
+16. The FE Reference Handbook is the exam reference for Computer Networks — Routing, Switching, Topologies, and TCP/IP. Match its variable definitions and conventions before substitution; external references support only learned material not developed in the Handbook.
 
-17. Algebra can be internally consistent while predicting an impossible device state, voltage, timing relationship, address range, or complexity claim. The physical/logical model must also be satisfied.
+17. An algebraically consistent answer can still be invalid in Computer Networks — Routing, Switching, Topologies, and TCP/IP. Reject a result that implies a Layer-2 switch treated as an IP router or a forwarding decision made with the wrong address scope and reselect the appropriate model or state.
 
-18. Limiting cases and order-of-magnitude checks expose sign errors, impossible gains, invalid probabilities, unrealistic timing, and model misuse.
+18. A useful independent check for this chapter is to let queueing delay go to zero and verify total delay reduces to processing, transmission, and propagation terms. If the result does not reduce correctly, recheck the model, sign convention, and arithmetic.
 
-19. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+19. **A.** For **Packet switching, hosts, routers, and link-layer switches**, the governing section model is \(\text{message}\rightarrow\text{packets}\rightarrow\text{network}\rightarrow\text{reassembly}\). Apply it only with the definitions and assumptions stated in §45.1, then verify that the protocol layer, address scope, forwarding role, and link-rate/propagation assumptions match the network model.
 
-20. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+20. **A.** For **OSI and TCP/IP layered models**, the governing section model is \(\text{application}\rightarrow\text{transport}\rightarrow\text{internet/network}\rightarrow\text{link}\). Apply it only with the definitions and assumptions stated in §45.2, then verify that the protocol layer, address scope, forwarding role, and link-rate/propagation assumptions match the network model.
 
-21. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+21. **A.** For **IPv4/IPv6 addressing and CIDR**, the governing section model is \(\text{prefix length}=\text{number of leading network bits}\). Apply it only with the definitions and assumptions stated in §45.3, then verify that the protocol layer, address scope, forwarding role, and link-rate/propagation assumptions match the network model.
 
-22. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+22. **A.** For **Routing, switching, and forwarding decisions**, the governing section model is \(\text{destination}\rightarrow\text{lookup}\rightarrow\text{next hop or output port}\). Apply it only with the definitions and assumptions stated in §45.4, then verify that the protocol layer, address scope, forwarding role, and link-rate/propagation assumptions match the network model.
 
-23. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+23. **A.** For **TCP, UDP, reliability, and transport behavior**, the governing section model is \(d_{trans}=\frac{L}{R}\). Apply it only with the definitions and assumptions stated in §45.5, then verify that the protocol layer, address scope, forwarding role, and link-rate/propagation assumptions match the network model.
 
-24. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+24. **A.** For **LAN configuration, DHCP, SLAAC, and topologies**, the governing section model is \(\text{device joins network}\rightarrow\text{address/configuration}\rightarrow\text{local forwarding}\). Apply it only with the definitions and assumptions stated in §45.6, then verify that the protocol layer, address scope, forwarding role, and link-rate/propagation assumptions match the network model.
 
-25. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+25. **A.** For **End-to-end delay, throughput, and bottlenecks**, the governing section model is \(d_{total}=d_{proc}+d_{queue}+d_{trans}+d_{prop}\). Apply it only with the definitions and assumptions stated in §45.7, then verify that the protocol layer, address scope, forwarding role, and link-rate/propagation assumptions match the network model.
 
-26. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+26. **A.** For an integrated Computer Networks — Routing, Switching, Topologies, and TCP/IP problem, separate the physical/logical model from the arithmetic, solve with the relevant section relations, and cross-check the result against the chapter-specific validity conditions.
 
-27. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+27. **A.** In **Computer Networks — Routing, Switching, Topologies, and TCP/IP**, the source boundary is explicit: FE-Handbook-supported material remains tied to the ledger, externally supported material uses the chapter references for routing, switching, and forwarding (KUROSE / RFC1812 / IEEE8021Q), and guide synthesis is identified as supplemental explanation rather than Handbook text.
 
 
 ---
@@ -410,25 +417,25 @@ D) It is always only a qualitative concept
 
 ## Practice Problem Solutions
 
-1. Use §45.1. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+1. **Independent check for §45.1.** Begin independently with \(\text{message}\rightarrow\text{packets}\rightarrow\text{network}\rightarrow\text{reassembly}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: A router normally makes forwarding decisions using network-layer addressing. Then verify that the protocol layer, address scope, forwarding role, and link-rate/propagation assumptions match the network model.
 
-2. Use §45.2. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+2. **Independent check for §45.2.** Begin independently with \(\text{application}\rightarrow\text{transport}\rightarrow\text{internet/network}\rightarrow\text{link}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: A TCP segment is encapsulated inside an IP packet and then a link-layer frame. Then verify that the protocol layer, address scope, forwarding role, and link-rate/propagation assumptions match the network model.
 
-3. Use §45.3. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+3. **Independent check for §45.3.** Begin independently with \(\text{prefix length}=\text{number of leading network bits}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: A /24 IPv4 prefix leaves 8 address bits outside the network prefix. Then verify that the protocol layer, address scope, forwarding role, and link-rate/propagation assumptions match the network model.
 
-4. Use §45.4. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+4. **Independent check for §45.4.** Begin independently with \(\text{destination}\rightarrow\text{lookup}\rightarrow\text{next hop or output port}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: Traffic between two IP subnets normally requires a router or Layer-3 forwarding function. Then verify that the protocol layer, address scope, forwarding role, and link-rate/propagation assumptions match the network model.
 
-5. Use §45.5. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+5. **Independent check for §45.5.** Begin independently with \(d_{trans}=\frac{L}{R}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: Streaming or request/response applications choose transport behavior based on reliability, latency, and application requirements. Then verify that the protocol layer, address scope, forwarding role, and link-rate/propagation assumptions match the network model.
 
-6. Use §45.6. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+6. **Independent check for §45.6.** Begin independently with \(\text{device joins network}\rightarrow\text{address/configuration}\rightarrow\text{local forwarding}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: Modern switched Ethernet LANs are commonly arranged physically as stars around switches. Then verify that the protocol layer, address scope, forwarding role, and link-rate/propagation assumptions match the network model.
 
-7. Use §45.7. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+7. **Independent check for §45.7.** Begin independently with \(d_{total}=d_{proc}+d_{queue}+d_{trans}+d_{prop}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: On a long high-speed link, propagation delay can dominate even when transmission delay is small. Then verify that the protocol layer, address scope, forwarding role, and link-rate/propagation assumptions match the network model.
 
-8. Check device operating region, saturation/clipping, frequency range, RMS-versus-peak convention, timing constraints, address/bit width, or protocol/software preconditions as applicable.
+8. Check the chapter-specific failure mode first: a Layer-2 switch treated as an IP router or a forwarding decision made with the wrong address scope. Do not accept the numerical or logical result until the protocol layer, address scope, forwarding role, and link-rate/propagation assumptions match the network model.
 
-9. Start with FE Electrical and Computer specification Area 14, then use the Handbook subsection named in the ledger for the specific concept.
+9. For **Computer Networks — Routing, Switching, Topologies, and TCP/IP**, start with the FE Electrical and Computer specification/Handbook location recorded in the ledger, then use the chapter's reconciled source set for routing, switching, and forwarding (KUROSE / RFC1812 / IEEE8021Q) when the concept is split-required. That preserves the Handbook-versus-learned-material boundary.
 
-10. Test a simple limiting case: zero input, matched load, very low/high frequency, all-zero/all-one logic, minimum/maximum address, or small input size as appropriate. The result should reduce to a physically or logically sensible form.
+10. Use this limiting check: let queueing delay go to zero and verify total delay reduces to processing, transmission, and propagation terms. The simplified case should produce the expected physical, timing, logic, protocol, or complexity behavior before the full solution is trusted.
 
 ---
 

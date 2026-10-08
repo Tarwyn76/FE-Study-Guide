@@ -65,7 +65,7 @@ Treatment design begins by characterizing the influent and target effluent. Diff
 
 **Problem.** Turbidity, BOD, ammonia, hardness, and coliform counts represent different water-quality categories.
 
-**Solution.** Apply the relation and environmental model in §56.1; then verify units, boundary conditions, and physical limits.
+**Solution.** Turbidity is primarily a physical/optical characteristic; BOD reflects biodegradable organic demand; ammonia is a nutrient/reduced nitrogen species; hardness is largely an inorganic-ion characteristic; and coliform counts are microbiological indicators. Treating them as one interchangeable 'water quality' metric would obscure process selection.
 
 ---
 
@@ -81,7 +81,7 @@ Removal efficiency is concentration-based only when influent and effluent flow a
 
 **Problem.** 100 mg/L reduced to 20 mg/L gives 80% concentration removal.
 
-**Solution.** Apply the relation and environmental model in §56.2; then verify units, boundary conditions, and physical limits.
+**Solution.** Removal efficiency is \(\eta=(100\ {\rm mg/L}-20\ {\rm mg/L})/(100\ {\rm mg/L})\times100\%=\mathbf{80\%}\). This is concentration removal and assumes influent and effluent flows are comparable for the stated calculation.
 
 ---
 
@@ -97,7 +97,7 @@ Headworks protect downstream equipment by removing screenings, grit, and debris 
 
 **Problem.** Grit removal targets dense inorganic particles rather than dissolved organics.
 
-**Solution.** Apply the relation and environmental model in §56.3; then verify units, boundary conditions, and physical limits.
+**Solution.** Grit chambers target dense, settleable inorganic material such as sand and gravel so it does not abrade or accumulate in downstream equipment. They are not intended to remove dissolved organic matter.
 
 ---
 
@@ -113,7 +113,7 @@ Ideal discrete settling performance is often organized around surface overflow r
 
 **Problem.** A flow of 2,000 m³/day over 200 m² gives overflow rate 10 m/day.
 
-**Solution.** Apply the relation and environmental model in §56.4; then verify units, boundary conditions, and physical limits.
+**Solution.** Surface overflow rate is \(v_o=Q/A_s=(2000\ {\rm m^3/day})/(200\ {\rm m^2})=\mathbf{10\ m/day}\). The area is plan surface area, not tank sidewall area.
 
 ---
 
@@ -129,7 +129,7 @@ Filters remove suspended material by transport and attachment within porous medi
 
 **Problem.** Doubling flow through the same filter area doubles hydraulic loading rate.
 
-**Solution.** Apply the relation and environmental model in §56.5; then verify units, boundary conditions, and physical limits.
+**Solution.** Hydraulic loading is \(Q/A\). If filter area stays fixed and flow doubles, the loading rate also **doubles**, which can change head loss, run length, and effluent quality.
 
 ---
 
@@ -145,7 +145,7 @@ Activated carbon removes many dissolved organic contaminants by adsorption. Isot
 
 **Problem.** A bed is not fully effective forever; breakthrough advances as adsorption capacity is used.
 
-**Solution.** Apply the relation and environmental model in §56.6; then verify units, boundary conditions, and physical limits.
+**Solution.** Adsorbent capacity is finite. As upstream sites are occupied, the mass-transfer zone advances through the bed until contaminant appears at the effluent—**breakthrough**—so a fixed bed cannot be assumed fully effective indefinitely.
 
 ---
 
@@ -161,7 +161,7 @@ Membranes separate by selective transport and pressure/osmotic driving force; ai
 
 **Problem.** A highly volatile dissolved organic may be more amenable to air stripping than a nonvolatile dissolved salt.
 
-**Solution.** Apply the relation and environmental model in §56.7; then verify units, boundary conditions, and physical limits.
+**Solution.** Air stripping is favored for sufficiently volatile compounds that partition from water to gas. A nonvolatile dissolved salt has little tendency to transfer to air and therefore requires a different separation mechanism.
 
 ---
 
@@ -171,13 +171,13 @@ Membranes separate by selective transport and pressure/osmotic driving force; ai
 
 **Problem.** A treatment calculation predicts a negative effluent concentration. What does that indicate?
 
-**Solution.** The algebra or model assumptions are invalid for that condition. Recheck the balance, reaction/order assumptions, time basis, units, and any zero-concentration limiting condition.
+**Solution.** A negative effluent concentration or removal above 100% is impossible for a simple concentration-removal calculation. Recheck flow basis, influent/effluent units, residual streams, and whether the selected process relation applies.
 
 ### Worked Example 9
 
 **Problem.** A remembered environmental correlation differs from the FE Reference Handbook relation. Which should govern the exam solution?
 
-**Solution.** Use the Handbook relation and its definitions unless the problem explicitly supplies a different model.
+**Solution.** For **Water/Wastewater Characteristics, Loading Rates, and Physical Treatment**, the FE Reference Handbook equation, definitions, and unit convention govern whenever the Handbook supplies the needed relation. The external references in this chapter are used for specification-required learned material involving **water-quality characteristics, physical treatment, clarification, filtration, adsorption, and stripping**. If a remembered correlation conflicts with the supplied Handbook equation, use the supplied Handbook relation unless the problem explicitly states a different model.
 
 ---
 
@@ -185,7 +185,13 @@ Membranes separate by selective transport and pressure/osmotic driving force; ai
 
 Primary source basis: **FE Environmental specification Area(s) 12; FE Reference Handbook 10.6 Environmental Engineering, printed pp. 318–360, plus general supporting sections where identified in the ledger.**
 
-**Source boundary:** Some Environmental specification topics are directly tabulated in the Handbook, while others require learned engineering knowledge. The chapter keeps those two categories separate.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required environmental-engineering knowledge that is not fully developed in the Handbook. **Guide synthesis** connects the Handbook and external material into exam-oriented explanations, examples, and checks; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Mihelcic, J. R., & Zimmerman, J. B. (2021). *Environmental Engineering: Fundamentals, Sustainability, Design* (3rd ed.). Wiley. ISBN 978-1-119-60445-7. Supporting scope: Environmental measurements, chemistry, physical processes, biology, risk, water quantity/quality, water treatment, wastewater/stormwater, solid waste, and air quality.
+- Metcalf & Eddy/AECOM, Tchobanoglous, G., Stensel, H. D., Tsuchihashi, R., & Burton, F. L. (2014). *Wastewater Engineering: Treatment and Resource Recovery* (5th ed.). McGraw-Hill. ISBN 978-0-07-340118-8. Supporting scope: Wastewater characteristics, physical/chemical treatment, activated sludge, solids recycle, biosolids, residuals, and resource recovery.
+
+The external references support only the learned/application portion of the Environmental specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -356,31 +362,31 @@ D) It is always a Handbook lookup with no learned interpretation
 
 14. For **physical treatment selection**, check basis, units, steady/unsteady condition, phase/media, boundary conditions, and whether the selected idealization matches the system.
 
-15. The boundary determines what enters, leaves, accumulates, reacts, or transfers between media. Without it, terms are easily omitted or double counted.
+15. In **Water/Wastewater Characteristics, Loading Rates, and Physical Treatment**, the control volume or conceptual boundary determines which sources, sinks, transfers, reactions, and receptors belong in the model. For this chapter specifically, check influent/effluent flow basis, loading units, surface/filtration area definitions, removal bounds from 0–100%, and whether the contaminant property matches the selected physical process.
 
-16. Concentration is mass per volume; loading is mass per time. A low concentration at very high flow can still create a large load.
+16. Concentration and loading answer different questions in **Water/Wastewater Characteristics, Loading Rates, and Physical Treatment**: concentration is mass per volume, while loading is mass per time. Always convert \(Q\) and \(C\) to compatible units before multiplying them.
 
-17. The FE Handbook is the supplied exam reference. Its variable definitions and unit conventions should govern unless the problem explicitly provides another relation.
+17. Use the FE Reference Handbook equation and definitions when it supplies the model for **Water/Wastewater Characteristics, Loading Rates, and Physical Treatment**. The chapter's external references (MIHELCIC, METCALF) support learned specification content, not a competing exam formula.
 
-18. A mass/energy balance and physical check can reveal impossible signs, removal above 100%, negative concentrations, unrealistic flows, or model misuse.
+18. A physical check is needed because algebra alone can return impossible environmental states. For this chapter, set \(C_{out}=C_{in}\) and confirm removal is 0%; set \(C_{out}=0\) and confirm the ideal concentration-removal expression gives 100%.
 
-19. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+19. **A.** Section §56.1, **Physical, chemical, and biological water-quality characteristics**, is governed by \(\text{quality}=\{\text{solids, organics, nutrients, microbes, ions, physical properties}\}\). Use that relation with its own environmental basis and then perform the specific validity check described for §56.1.
 
-20. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+20. **A.** Section §56.2, **Mass loading and removal efficiency**, is governed by \(\eta=\frac{C_{in}-C_{out}}{C_{in}}\times100\%\). Use that relation with its own environmental basis and then perform the specific validity check described for §56.2.
 
-21. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+21. **A.** Section §56.3, **Screening, grit removal, and headworks**, is governed by \(\text{coarse solids/grit removal precedes downstream treatment}\). Use that relation with its own environmental basis and then perform the specific validity check described for §56.3.
 
-22. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+22. **A.** Section §56.4, **Sedimentation and clarification**, is governed by \(v_o=\frac{Q}{A_s}\). Use that relation with its own environmental basis and then perform the specific validity check described for §56.4.
 
-23. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+23. **A.** Section §56.5, **Filtration and granular-media concepts**, is governed by \(\text{loading rate}=\frac{Q}{A}\). Use that relation with its own environmental basis and then perform the specific validity check described for §56.5.
 
-24. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+24. **A.** Section §56.6, **Adsorption and activated carbon**, is governed by \(q=\frac{\text{mass adsorbed}}{\text{mass adsorbent}}\). Use that relation with its own environmental basis and then perform the specific validity check described for §56.6.
 
-25. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+25. **A.** Section §56.7, **Membranes, air stripping, and physical-process selection**, is governed by \(\text{process selection}=f(\text{contaminant size/volatility/phase, target, fouling, energy})\). Use that relation with its own environmental basis and then perform the specific validity check described for §56.7.
 
-26. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+26. **A.** An integrated **Water/Wastewater Characteristics, Loading Rates, and Physical Treatment** solution is acceptable only after the governing balance/model is identified, units are reconciled, and the chapter-specific physical checks are satisfied.
 
-27. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+27. **A.** Source ownership is explicit in **Water/Wastewater Characteristics, Loading Rates, and Physical Treatment**: FE-Handbook-supported material remains tied to the ledger, externally supported content uses MIHELCIC, METCALF, and guide synthesis is labeled as supplemental explanation.
 
 
 ---
@@ -412,25 +418,25 @@ D) It is always a Handbook lookup with no learned interpretation
 
 ## Practice Problem Solutions
 
-1. Use §56.1. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+1. **Independent recomputation for §56.1 — Physical, chemical, and biological water-quality characteristics.** Start from the stated givens rather than the worked-example answer. Turbidity is primarily a physical/optical characteristic; BOD reflects biodegradable organic demand; ammonia is a nutrient/reduced nitrogen species; hardness is largely an inorganic-ion characteristic; and coliform counts are microbiological indicators. Treating them as one interchangeable 'water quality' metric would obscure process selection. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-2. Use §56.2. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+2. **Independent recomputation for §56.2 — Mass loading and removal efficiency.** Start from the stated givens rather than the worked-example answer. Removal efficiency is \(\eta=(100-20)/100\times100\%=\mathbf{80\%}\). This is concentration removal and assumes influent and effluent flows are comparable for the stated calculation. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-3. Use §56.3. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+3. **Independent recomputation for §56.3 — Screening, grit removal, and headworks.** Start from the stated givens rather than the worked-example answer. Grit chambers target dense, settleable inorganic material such as sand and gravel so it does not abrade or accumulate in downstream equipment. They are not intended to remove dissolved organic matter. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-4. Use §56.4. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+4. **Independent recomputation for §56.4 — Sedimentation and clarification.** Start from the stated givens rather than the worked-example answer. Surface overflow rate is \(v_o=Q/A_s=(2000\ {\rm m^3/day})/(200\ {\rm m^2})=\mathbf{10\ m/day}\). The area is plan surface area, not tank sidewall area. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-5. Use §56.5. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+5. **Independent recomputation for §56.5 — Filtration and granular-media concepts.** Start from the stated givens rather than the worked-example answer. Hydraulic loading is \(Q/A\). If filter area stays fixed and flow doubles, the loading rate also **doubles**, which can change head loss, run length, and effluent quality. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-6. Use §56.6. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+6. **Independent recomputation for §56.6 — Adsorption and activated carbon.** Start from the stated givens rather than the worked-example answer. Adsorbent capacity is finite. As upstream sites are occupied, the mass-transfer zone advances through the bed until contaminant appears at the effluent—**breakthrough**—so a fixed bed cannot be assumed fully effective indefinitely. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-7. Use §56.7. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+7. **Independent recomputation for §56.7 — Membranes, air stripping, and physical-process selection.** Start from the stated givens rather than the worked-example answer. Air stripping is favored for sufficiently volatile compounds that partition from water to gas. A nonvolatile dissolved salt has little tendency to transfer to air and therefore requires a different separation mechanism. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-8. Check dimensions, concentration-versus-loading basis, conservation of mass/energy, sign convention, and whether removal, risk, or efficiency values stay within physically meaningful limits.
+8. For this chapter, check the result against this failure screen: Check influent/effluent flow basis, loading units, surface/filtration area definitions, removal bounds from 0–100%, and whether the contaminant property matches the selected physical process. A result that violates one of those conditions should be rejected even if the arithmetic is internally consistent.
 
-9. Start with FE Environmental specification Area(s) 12, then use the Handbook subsection named in the corresponding ledger entry.
+9. For **Water/Wastewater Characteristics, Loading Rates, and Physical Treatment**, begin with the FE Environmental specification area and Handbook subsection recorded in the ledger. When the atom is `split_required`, use the reconciled external source set **MIHELCIC, METCALF** for the learned portion rather than inventing a Handbook page.
 
-10. Test a limiting case such as zero source, zero reaction, complete mixing, no flow, very large residence time, or 0/100% removal as appropriate. The result should reduce to a sensible physical state.
+10. A useful limiting case is to set \(C_{out}=C_{in}\) and confirm removal is 0%; set \(C_{out}=0\) and confirm the ideal concentration-removal expression gives 100%. The simplified case should reduce to the stated physical behavior before the full model is trusted.
 
 ---
 

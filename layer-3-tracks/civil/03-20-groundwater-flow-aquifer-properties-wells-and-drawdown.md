@@ -65,7 +65,7 @@ Darcy's law relates discharge to hydraulic conductivity, gradient, and area for 
 
 **Problem.** K=1e-4 m/s, i=0.02, A=50 m² gives Q=1e-4 m³/s.
 
-**Solution.** Apply the relation and definitions in §20.1; the stated result follows with consistent units and sign convention.
+**Solution.** Darcy's law is \(Q=KiA\). Substituting \(K=1\times10^{-4}\ \text{m/s}\), \(i=0.02\), and \(A=50\ \text{m}^2\) gives \(Q=(10^{-4})(0.02)(50)=1.0\times10^{-4}\ \text{m}^3/\text{s}\).
 
 ---
 
@@ -81,7 +81,7 @@ Laboratory constant-head and falling-head tests infer hydraulic conductivity fro
 
 **Problem.** Given measured volume, elapsed time, gradient, and area, solve for K with consistent units.
 
-**Solution.** Apply the relation and definitions in §20.2; the stated result follows with consistent units and sign convention.
+**Solution.** For a constant-head style calculation, determine discharge rate from measured volume divided by elapsed time, then rearrange Darcy's law: \(K=Q/(iA)\). If a measured volume \(V\) is supplied instead of \(Q\), use \(K=V/(t\,iA)\). Convert time, length, and volume to one consistent unit system before substitution.
 
 ---
 
@@ -97,7 +97,7 @@ Transmissivity combines hydraulic conductivity and saturated thickness. It is es
 
 **Problem.** K=30 m/day and b=20 m gives T=600 m²/day.
 
-**Solution.** Apply the relation and definitions in §20.3; the stated result follows with consistent units and sign convention.
+**Solution.** Transmissivity is \(T=Kb\). With \(K=30\ \text{m/day}\) and saturated thickness \(b=20\ \text{m}\), \(T=30(20)=600\ \text{m}^2/\text{day}\).
 
 ---
 
@@ -113,7 +113,7 @@ In an unconfined aquifer, the water table is a free surface. Saturated thickness
 
 **Problem.** At the water table, gauge pressure is approximately zero, so hydraulic head equals elevation head.
 
-**Solution.** Apply the relation and definitions in §20.4; the stated result follows with consistent units and sign convention.
+**Solution.** Hydraulic head is \(h=z+p/\gamma\). At the water table the pore pressure is atmospheric, so gauge pressure is approximately zero and \(p/\gamma=0\). Therefore the hydraulic head at the water table is approximately equal to the elevation head \(z\).
 
 ---
 
@@ -129,7 +129,7 @@ Pumping lowers hydraulic head near a well, creating a cone of depression. FE pro
 
 **Problem.** If static head is 120 ft and pumping head is 108 ft, drawdown is 12 ft.
 
-**Solution.** Apply the relation and definitions in §20.5; the stated result follows with consistent units and sign convention.
+**Solution.** Drawdown is the difference between static and pumping head: \(s=h_0-h(r)\). With \(h_0=120\ \text{ft}\) and pumping head \(108\ \text{ft}\), \(s=120-108=12\ \text{ft}\).
 
 ---
 
@@ -145,7 +145,7 @@ When the governing groundwater equation is linear over the modeled range, drawdo
 
 **Problem.** Two wells causing 3 ft and 5 ft drawdown at a point produce about 8 ft total by superposition.
 
-**Solution.** Apply the relation and definitions in §20.6; the stated result follows with consistent units and sign convention.
+**Solution.** Under linear confined-aquifer assumptions, drawdowns from multiple wells may be superposed. At the point of interest, \(s_{total}=3+5=8\ \text{ft}\). This approximation depends on the individual solutions being based on compatible aquifer assumptions.
 
 ---
 
@@ -161,7 +161,7 @@ Groundwater flow affects uplift, piping, effective stress, and excavation stabil
 
 **Problem.** A 6 m head drop over 30 m gives gradient 0.20.
 
-**Solution.** Apply the relation and definitions in §20.7; the stated result follows with consistent units and sign convention.
+**Solution.** Hydraulic gradient is head loss per flow-path length: \(i=\Delta h/L\). Thus \(i=6/30=0.20\). The gradient is dimensionless because both quantities are lengths.
 
 ---
 
@@ -171,13 +171,13 @@ Groundwater flow affects uplift, piping, effective stress, and excavation stabil
 
 **Problem.** A problem combines two ideas from this chapter. What should be done before calculation?
 
-**Solution.** Draw the system, identify the requested quantity, establish units and sign conventions, and list the governing relations before substituting numbers.
+**Solution.** For a well/seepage problem, first establish the aquifer geometry and hydraulic gradient, then use Darcy flow or the applicable radial-flow relation. If more than one well acts on the same point, compute each drawdown using the same datum and assumptions before superposing them.
 
 ### Worked Example 9
 
 **Problem.** A remembered equation differs from the FE Reference Handbook form. Which should govern the exam solution?
 
-**Solution.** Use the Handbook form and its unit convention unless the problem explicitly supplies a different relation.
+**Solution.** Use the Handbook groundwater relation that matches the aquifer model—Darcy flow, confined flow, unconfined flow, or well drawdown. A remembered equation with a different logarithm base, geometry factor, or unit convention can change the answer materially.
 
 ---
 
@@ -185,11 +185,14 @@ Groundwater flow affects uplift, piping, effective stress, and excavation stabil
 
 Primary source basis: **FE Civil specification Area 10; FE Reference Handbook 10.6 Civil Engineering and supporting general sections cited below.**
 
-**Source boundary:** Some Civil specification topics are directly tabulated in the Handbook; others are named by the specification but require learned engineering knowledge. This chapter does not imply that every workflow, code provision, or design factor is printed in the Handbook.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is retained because it is required by the FE Civil specification but needs engineering knowledge beyond what is printed in the Handbook. **Guide synthesis** connects those two sources into exam-oriented workflows and examples; it is not presented as Handbook text.
 
-Where the FE specification requires a topic that is not directly developed in the Handbook, the ledger marks it **specification-required / guide-developed** rather than inventing a Handbook citation.
+**External source support for split-required concepts:**
+- `CIV-3-020-04` — Fitts, C. R. (2022). *Groundwater Science* (3rd ed.). Elsevier. ISBN 978-0-12-811455-1. Cited at publication/standard level; no page-level claim.
+- `CIV-3-020-06` — Fitts, C. R. (2022). *Groundwater Science* (3rd ed.). Elsevier. ISBN 978-0-12-811455-1. Cited at publication/standard level; no page-level claim.
+- `CIV-3-020-07` — Fitts, C. R. (2022). *Groundwater Science* (3rd ed.). Elsevier. ISBN 978-0-12-811455-1. Cited at publication/standard level; no page-level claim. Das, B. M. (2022). *Principles of Geotechnical Engineering* (10th ed.). Cengage. ISBN 978-0-357-42047-8. Cited at publication/standard level; no page-level claim.
 
----
+No external source above is being used to replace the FE Reference Handbook. The external references support only the learned/application portion identified by `split_required: true`.
 
 ## Where This Goes Wrong
 
@@ -357,31 +360,31 @@ D) Treat it as optional
 
 14. For **seepage gradient**, common failures are wrong units, wrong sign convention, wrong geometry/boundary condition, or using a relation outside its assumptions.
 
-15. The sketch exposes geometry, boundaries, loads/flows, signs, and missing data before algebra begins.
+15. Sketch the aquifer boundaries, saturated thickness, wells, observation point, and hydraulic-head datum first so the selected Darcy or well-flow model matches the actual geometry.
 
-16. Use the Handbook form when it is available because the FE exam supplies that reference and its constants/unit conventions govern the problem.
+16. Use the Handbook groundwater relation when available because confined, unconfined, and radial-flow equations differ in geometry assumptions, logarithm form, and variable definitions.
 
-17. Mixed unit systems create hidden conversion errors and can invalidate dimensional consistency.
+17. Hydraulic conductivity may be given in m/day, ft/day, or m/s while head and radius use separate length units; convert to one consistent system before computing discharge or drawdown.
 
-18. A reasonableness check can catch sign, magnitude, boundary-condition, and unit errors that algebra alone does not reveal.
+18. Check the hydraulic pattern: head should decline toward a pumping well, drawdown should be nonnegative for pumping, and computed flow direction should follow the hydraulic gradient.
 
-19. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+19. **A.** For **Darcy law and hydraulic gradient**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-20. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+20. **A.** For **Hydraulic conductivity, permeability tests, and anisotropy**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-21. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+21. **A.** For **Aquifer transmissivity and confined flow**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-22. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+22. **A.** For **Unconfined aquifers and water-table concepts**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-23. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+23. **A.** For **Well drawdown and radial flow**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-24. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+24. **A.** For **Multiple wells, superposition, and interference**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-25. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+25. **A.** For **Seepage, effective stress, and groundwater-structure interaction**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-26. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+26. **A.** In Groundwater Flow, Aquifer Properties, Wells, and Drawdown, dimensional consistency and an independent physical check are the fastest ways to detect a unit, sign, magnitude, or modeling error before accepting the result.
 
-27. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+27. **A.** Aquifer and multiple-well application details beyond Handbook equations are labeled learned material and supported by the reconciled groundwater reference instead of an invented Handbook location.
 
 
 
@@ -414,25 +417,39 @@ D) Treat it as optional
 
 ## Practice Problem Solutions
 
-1. Use §20.1. K=1e-4 m/s, i=0.02, A=50 m² gives Q=1e-4 m³/s. The calculation or classification follows from the displayed section relation and the stated data.
+1. **Independent check for §20.1.** Rework the problem from the stated givens rather than copying the worked-example result. Darcy's law is \(Q=KiA\). Substituting \(K=1\times10^{-4}\ \text{m/s}\), \(i=0.02\), and \(A=50\ \text{m}^2\) gives \(Q=(10^{-4})(0.02)(50)=1.0\times10^{-4}\ \text{m}^3/\text{s}\). **Check:** confirm the final magnitude and units against the physical meaning of §20.1 before accepting the answer.
 
-2. Use §20.2. Given measured volume, elapsed time, gradient, and area, solve for K with consistent units. The calculation or classification follows from the displayed section relation and the stated data.
 
-3. Use §20.3. K=30 m/day and b=20 m gives T=600 m²/day. The calculation or classification follows from the displayed section relation and the stated data.
 
-4. Use §20.4. At the water table, gauge pressure is approximately zero, so hydraulic head equals elevation head. The calculation or classification follows from the displayed section relation and the stated data.
+2. **Independent check for §20.2.** Rework the problem from the stated givens rather than copying the worked-example result. For a constant-head style calculation, determine discharge rate from measured volume divided by elapsed time, then rearrange Darcy's law: \(K=Q/(iA)\). If a measured volume \(V\) is supplied instead of \(Q\), use \(K=V/(t\,iA)\). Convert time, length, and volume to one consistent unit system before substitution. **Check:** confirm the final magnitude and units against the physical meaning of §20.2 before accepting the answer.
 
-5. Use §20.5. If static head is 120 ft and pumping head is 108 ft, drawdown is 12 ft. The calculation or classification follows from the displayed section relation and the stated data.
 
-6. Use §20.6. Two wells causing 3 ft and 5 ft drawdown at a point produce about 8 ft total by superposition. The calculation or classification follows from the displayed section relation and the stated data.
 
-7. Use §20.7. A 6 m head drop over 30 m gives gradient 0.20. The calculation or classification follows from the displayed section relation and the stated data.
+3. **Independent check for §20.3.** Rework the problem from the stated givens rather than copying the worked-example result. Transmissivity is \(T=Kb\). With \(K=30\ \text{m/day}\) and saturated thickness \(b=20\ \text{m}\), \(T=30(20)=600\ \text{m}^2/\text{day}\). **Check:** confirm the final magnitude and units against the physical meaning of §20.3 before accepting the answer.
 
-8. Check dimensions, unit conversion, sign convention, and whether the selected relation's assumptions match the physical situation.
 
-9. Start with FE Civil specification Area 10 and the Handbook sections identified in **As the Handbook States It** and the ledger entries for this chapter.
 
-10. A sketch exposes incompatible geometry, impossible flow/load directions, missing reactions/boundaries, and double-counted or omitted terms.
+4. **Independent check for §20.4.** Rework the problem from the stated givens rather than copying the worked-example result. Hydraulic head is \(h=z+p/\gamma\). At the water table the pore pressure is atmospheric, so gauge pressure is approximately zero and \(p/\gamma=0\). Therefore the hydraulic head at the water table is approximately equal to the elevation head \(z\). **Check:** confirm the final magnitude and units against the physical meaning of §20.4 before accepting the answer.
+
+
+
+5. **Independent check for §20.5.** Rework the problem from the stated givens rather than copying the worked-example result. Drawdown is the difference between static and pumping head: \(s=h_0-h(r)\). With \(h_0=120\ \text{ft}\) and pumping head \(108\ \text{ft}\), \(s=120-108=12\ \text{ft}\). **Check:** confirm the final magnitude and units against the physical meaning of §20.5 before accepting the answer.
+
+
+
+6. **Independent check for §20.6.** Rework the problem from the stated givens rather than copying the worked-example result. Under linear confined-aquifer assumptions, drawdowns from multiple wells may be superposed. At the point of interest, \(s_{total}=3+5=8\ \text{ft}\). This approximation depends on the individual solutions being based on compatible aquifer assumptions. **Check:** confirm the final magnitude and units against the physical meaning of §20.6 before accepting the answer.
+
+
+
+7. **Independent check for §20.7.** Rework the problem from the stated givens rather than copying the worked-example result. Hydraulic gradient is head loss per flow-path length: \(i=\Delta h/L\). Thus \(i=6/30=0.20\). The gradient is dimensionless because both quantities are lengths. **Check:** confirm the final magnitude and units against the physical meaning of §20.7 before accepting the answer.
+
+
+
+8. Before accepting a groundwater flow, aquifer properties, wells, and drawdown result, verify the dimensional units, the chapter-specific sign or direction convention, and that the selected model matches the stated geometry and boundary conditions.
+
+9. Begin with **FE Civil specification Area 10** and the groundwater/Darcy relation cited in the ledger; use the external groundwater text only for the split-required aquifer and well-analysis detail.
+
+10. For groundwater flow, aquifer properties, wells, and drawdown, a sketch makes the controlling geometry, direction, boundary, load/flow path, or sequence visible before algebra, which often reveals missing data or an impossible assumption immediately.
 
 ---
 

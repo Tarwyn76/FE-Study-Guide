@@ -65,7 +65,7 @@ A conceptual site model organizes sources, pathways, media, and receptors before
 
 **Problem.** A leaking tank above a shallow aquifer can create soil-vapor, soil, and groundwater pathways.
 
-**Solution.** Apply the relation and environmental model in §55.1; then verify units, boundary conditions, and physical limits.
+**Solution.** A release from a leaking tank above a shallow aquifer can migrate through the vadose zone, generate soil vapor where volatile constituents are present, contaminate soil, and reach groundwater. The conceptual site model must show each plausible source-pathway-receptor connection separately.
 
 ---
 
@@ -81,7 +81,7 @@ The Handbook provides a simplified hydrocarbon penetration relation using spill 
 
 **Problem.** Larger spill volume increases estimated penetration depth when A and Rv are unchanged.
 
-**Solution.** Apply the relation and environmental model in §55.2; then verify units, boundary conditions, and physical limits.
+**Solution.** With \(D=V/(AR_v)\), holding footprint area \(A\) and retention term \(R_v\) fixed makes penetration depth directly proportional to spill volume \(V\). A larger spill therefore gives a **larger estimated penetration depth** in this idealization.
 
 ---
 
@@ -97,7 +97,7 @@ Sorption slows the dissolved-phase migration of chemicals relative to groundwate
 
 **Problem.** If R=5, the idealized contaminant velocity is one-fifth of the groundwater seepage velocity.
 
-**Solution.** Apply the relation and environmental model in §55.3; then verify units, boundary conditions, and physical limits.
+**Solution.** Retardation reduces contaminant velocity relative to groundwater: \(v_c=v_s/R\). For \(R=5\), \(v_c=\mathbf{v_s/5}\), so the idealized contaminant front moves at one-fifth the seepage velocity.
 
 ---
 
@@ -113,7 +113,7 @@ Sampling locations, depths, media, detection limits, and QA/QC must match the de
 
 **Problem.** Monitoring wells should be positioned to characterize background, source, and downgradient plume behavior.
 
-**Solution.** Apply the relation and environmental model in §55.4; then verify units, boundary conditions, and physical limits.
+**Solution.** A monitoring network should establish **background/upgradient**, source-area, and **downgradient** conditions, with locations and screened intervals chosen to test the conceptual plume geometry rather than merely filling a regular grid.
 
 ---
 
@@ -129,7 +129,7 @@ Pump-and-treat uses groundwater extraction to remove dissolved mass and/or contr
 
 **Problem.** A containment system can reduce downgradient migration even if contaminant mass removal is slow.
 
-**Solution.** Apply the relation and environmental model in §55.5; then verify units, boundary conditions, and physical limits.
+**Solution.** Hydraulic containment can control plume migration by changing groundwater gradients and capturing contaminated flow. It may therefore protect downgradient receptors even when contaminant mass removal is slow and cleanup requires long operation.
 
 ---
 
@@ -145,7 +145,7 @@ In-situ methods treat contaminants without excavating all media. Options may inc
 
 **Problem.** An oxygen-limited biodegradable plume may respond to enhanced bioremediation if delivery is feasible.
 
-**Solution.** Apply the relation and environmental model in §55.6; then verify units, boundary conditions, and physical limits.
+**Solution.** If biodegradation is feasible but electron acceptor or donor delivery is limiting, enhanced bioremediation can improve reaction conditions. Feasibility still depends on contaminant degradability, hydrogeology, geochemistry, distribution of amendments, and monitoring.
 
 ---
 
@@ -161,7 +161,7 @@ Remedy selection balances protectiveness, implementability, time, cost, residual
 
 **Problem.** A falling concentration trend alone may be insufficient if plume extent continues to expand.
 
-**Solution.** Apply the relation and environmental model in §55.7; then verify units, boundary conditions, and physical limits.
+**Solution.** A falling concentration at one well is not sufficient evidence of remedy completion. Plume footprint, mass flux, rebound, daughter products, and downgradient trends must also support the conclusion that objectives are being met.
 
 ---
 
@@ -171,13 +171,13 @@ Remedy selection balances protectiveness, implementability, time, cost, residual
 
 **Problem.** A treatment calculation predicts a negative effluent concentration. What does that indicate?
 
-**Solution.** The algebra or model assumptions are invalid for that condition. Recheck the balance, reaction/order assumptions, time basis, units, and any zero-concentration limiting condition.
+**Solution.** A remediation calculation that predicts negative mass or concentration has exceeded the physical bounds of its conceptual model. Recheck source mass, retardation/decay assumptions, extraction rates, and whether rebound or inaccessible mass was omitted.
 
 ### Worked Example 9
 
 **Problem.** A remembered environmental correlation differs from the FE Reference Handbook relation. Which should govern the exam solution?
 
-**Solution.** Use the Handbook relation and its definitions unless the problem explicitly supplies a different model.
+**Solution.** For **Soil and Sediment Contamination, Site Characterization, and Groundwater Remediation**, the FE Reference Handbook equation, definitions, and unit convention govern whenever the Handbook supplies the needed relation. The external references in this chapter are used for specification-required learned material involving **vadose/saturated transport, retardation, monitoring networks, hydraulic containment, and groundwater remediation**. If a remembered correlation conflicts with the supplied Handbook equation, use the supplied Handbook relation unless the problem explicitly states a different model.
 
 ---
 
@@ -185,7 +185,13 @@ Remedy selection balances protectiveness, implementability, time, cost, residual
 
 Primary source basis: **FE Environmental specification Area(s) 11, 14; FE Reference Handbook 10.6 Environmental Engineering, printed pp. 318–360, plus general supporting sections where identified in the ledger.**
 
-**Source boundary:** Some Environmental specification topics are directly tabulated in the Handbook, while others require learned engineering knowledge. The chapter keeps those two categories separate.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required environmental-engineering knowledge that is not fully developed in the Handbook. **Guide synthesis** connects the Handbook and external material into exam-oriented explanations, examples, and checks; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Fitts, C. R. (2023). *Groundwater Science* (3rd ed.). Elsevier. ISBN 978-0-12-811455-1. Supporting scope: Aquifer properties, Darcy flow, hydraulic head, wells, drawdown, aquifer tests, contaminant transport, and groundwater modeling.
+- U.S. Environmental Protection Agency. *Groundwater Technologies*. Superfund technical guidance and information, current online resource. Supporting scope: Groundwater characterization, pump-and-treat, in-situ treatment, monitored natural attenuation, containment, and remediation monitoring.
+
+The external references support only the learned/application portion of the Environmental specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -356,31 +362,31 @@ D) It is always a Handbook lookup with no learned interpretation
 
 14. For **remediation performance**, check basis, units, steady/unsteady condition, phase/media, boundary conditions, and whether the selected idealization matches the system.
 
-15. The boundary determines what enters, leaves, accumulates, reacts, or transfers between media. Without it, terms are easily omitted or double counted.
+15. In **Soil and Sediment Contamination, Site Characterization, and Groundwater Remediation**, the control volume or conceptual boundary determines which sources, sinks, transfers, reactions, and receptors belong in the model. For this chapter specifically, check the conceptual site model, source mass, hydrostratigraphy, retardation/decay assumptions, monitoring coverage, and whether remedy performance is evaluated by plume behavior as well as point concentrations.
 
-16. Concentration is mass per volume; loading is mass per time. A low concentration at very high flow can still create a large load.
+16. Concentration and loading answer different questions in **Soil and Sediment Contamination, Site Characterization, and Groundwater Remediation**: concentration is mass per volume, while loading is mass per time. Always convert \(Q\) and \(C\) to compatible units before multiplying them.
 
-17. The FE Handbook is the supplied exam reference. Its variable definitions and unit conventions should govern unless the problem explicitly provides another relation.
+17. Use the FE Reference Handbook equation and definitions when it supplies the model for **Soil and Sediment Contamination, Site Characterization, and Groundwater Remediation**. The chapter's external references (FITTS, EPA_GW) support learned specification content, not a competing exam formula.
 
-18. A mass/energy balance and physical check can reveal impossible signs, removal above 100%, negative concentrations, unrealistic flows, or model misuse.
+18. A physical check is needed because algebra alone can return impossible environmental states. For this chapter, set sorption \(K_d\) to zero and confirm retardation approaches one; remove the source and verify no new contaminant mass is generated by the transport model.
 
-19. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+19. **A.** Section §55.1, **Contaminant source, vadose zone, and saturated-zone conceptual models**, is governed by \(\text{source}\rightarrow\text{release}\rightarrow\text{transport}\rightarrow\text{receptor}\). Use that relation with its own environmental basis and then perform the specific validity check described for §55.1.
 
-20. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+20. **A.** Section §55.2, **Vadose-zone penetration and retention**, is governed by \(D=\frac{V}{A R_v}\). Use that relation with its own environmental basis and then perform the specific validity check described for §55.2.
 
-21. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+21. **A.** Section §55.3, **Sorption, retardation, and contaminant mobility**, is governed by \(R=1+\frac{\rho_b K_d}{n_e}\). Use that relation with its own environmental basis and then perform the specific validity check described for §55.3.
 
-22. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+22. **A.** Section §55.4, **Site investigation, sampling, and monitoring networks**, is governed by \(\text{data quality objective}\rightarrow\text{sampling design}\rightarrow\text{analysis}\rightarrow\text{conceptual-model update}\). Use that relation with its own environmental basis and then perform the specific validity check described for §55.4.
 
-23. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+23. **A.** Section §55.5, **Pump-and-treat and hydraulic containment**, is governed by \(\text{extraction}\rightarrow\text{treatment}\rightarrow\text{discharge/reuse}\). Use that relation with its own environmental basis and then perform the specific validity check described for §55.5.
 
-24. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+24. **A.** Section §55.6, **In-situ treatment and monitored natural attenuation**, is governed by \(\text{remediation}=f(\text{contaminant, geology, geochemistry, access, time})\). Use that relation with its own environmental basis and then perform the specific validity check described for §55.6.
 
-25. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+25. **A.** Section §55.7, **Remedy selection, performance monitoring, and closure**, is governed by \(\text{baseline}\rightarrow\text{remedy}\rightarrow\text{monitor}\rightarrow\text{compare to objectives}\). Use that relation with its own environmental basis and then perform the specific validity check described for §55.7.
 
-26. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+26. **A.** An integrated **Soil and Sediment Contamination, Site Characterization, and Groundwater Remediation** solution is acceptable only after the governing balance/model is identified, units are reconciled, and the chapter-specific physical checks are satisfied.
 
-27. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+27. **A.** Source ownership is explicit in **Soil and Sediment Contamination, Site Characterization, and Groundwater Remediation**: FE-Handbook-supported material remains tied to the ledger, externally supported content uses FITTS, EPA_GW, and guide synthesis is labeled as supplemental explanation.
 
 
 ---
@@ -412,25 +418,25 @@ D) It is always a Handbook lookup with no learned interpretation
 
 ## Practice Problem Solutions
 
-1. Use §55.1. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+1. **Independent recomputation for §55.1 — Contaminant source, vadose zone, and saturated-zone conceptual models.** Start from the stated givens rather than the worked-example answer. A release from a leaking tank above a shallow aquifer can migrate through the vadose zone, generate soil vapor where volatile constituents are present, contaminate soil, and reach groundwater. The conceptual site model must show each plausible source-pathway-receptor connection separately. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-2. Use §55.2. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+2. **Independent recomputation for §55.2 — Vadose-zone penetration and retention.** Start from the stated givens rather than the worked-example answer. With \(D=V/(AR_v)\), holding footprint area \(A\) and retention term \(R_v\) fixed makes penetration depth directly proportional to spill volume \(V\). A larger spill therefore gives a **larger estimated penetration depth** in this idealization. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-3. Use §55.3. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+3. **Independent recomputation for §55.3 — Sorption, retardation, and contaminant mobility.** Start from the stated givens rather than the worked-example answer. Retardation reduces contaminant velocity relative to groundwater: \(v_c=v_s/R\). For \(R=5\), \(v_c=\mathbf{v_s/5}\), so the idealized contaminant front moves at one-fifth the seepage velocity. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-4. Use §55.4. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+4. **Independent recomputation for §55.4 — Site investigation, sampling, and monitoring networks.** Start from the stated givens rather than the worked-example answer. A monitoring network should establish **background/upgradient**, source-area, and **downgradient** conditions, with locations and screened intervals chosen to test the conceptual plume geometry rather than merely filling a regular grid. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-5. Use §55.5. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+5. **Independent recomputation for §55.5 — Pump-and-treat and hydraulic containment.** Start from the stated givens rather than the worked-example answer. Hydraulic containment can control plume migration by changing groundwater gradients and capturing contaminated flow. It may therefore protect downgradient receptors even when contaminant mass removal is slow and cleanup requires long operation. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-6. Use §55.6. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+6. **Independent recomputation for §55.6 — In-situ treatment and monitored natural attenuation.** Start from the stated givens rather than the worked-example answer. If biodegradation is feasible but electron acceptor or donor delivery is limiting, enhanced bioremediation can improve reaction conditions. Feasibility still depends on contaminant degradability, hydrogeology, geochemistry, distribution of amendments, and monitoring. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-7. Use §55.7. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+7. **Independent recomputation for §55.7 — Remedy selection, performance monitoring, and closure.** Start from the stated givens rather than the worked-example answer. A falling concentration at one well is not sufficient evidence of remedy completion. Plume footprint, mass flux, rebound, daughter products, and downgradient trends must also support the conclusion that objectives are being met. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-8. Check dimensions, concentration-versus-loading basis, conservation of mass/energy, sign convention, and whether removal, risk, or efficiency values stay within physically meaningful limits.
+8. For this chapter, check the result against this failure screen: Check the conceptual site model, source mass, hydrostratigraphy, retardation/decay assumptions, monitoring coverage, and whether remedy performance is evaluated by plume behavior as well as point concentrations. A result that violates one of those conditions should be rejected even if the arithmetic is internally consistent.
 
-9. Start with FE Environmental specification Area(s) 11, 14, then use the Handbook subsection named in the corresponding ledger entry.
+9. For **Soil and Sediment Contamination, Site Characterization, and Groundwater Remediation**, begin with the FE Environmental specification area and Handbook subsection recorded in the ledger. When the atom is `split_required`, use the reconciled external source set **FITTS, EPA_GW** for the learned portion rather than inventing a Handbook page.
 
-10. Test a limiting case such as zero source, zero reaction, complete mixing, no flow, very large residence time, or 0/100% removal as appropriate. The result should reduce to a sensible physical state.
+10. A useful limiting case is to set sorption \(K_d\) to zero and confirm retardation approaches one; remove the source and verify no new contaminant mass is generated by the transport model. The simplified case should reduce to the stated physical behavior before the full model is trusted.
 
 ---
 

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="648pt" viewBox="0 0 864 648" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-09T04:25:56.825918</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 648 
+L 864 648 
+L 864 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="text_1">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(613.615881 171.389547)">C=50 MPa</text>
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(518.318069 201.039703)">R=√(30²+30²)=42.426 MPa</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(540.87135 313.672087)">σ₁=C+R=92.426 MPa</text>
+    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(548.50635 346.017713)">σ₂=C−R=7.574 MPa</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="670.3776" y="476.29075" transform="rotate(-0 670.3776 476.29075)">Plane stress also has σ₃=0.</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_2">
+    <path d="M 218.293986 355.827645 
+L 313.707645 316.306014 
+L 274.186014 220.892355 
+L 178.772355 260.413986 
+z
+" clip-path="url(#p14b11a1167)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #235a78" x="351.195025" y="249.301205" transform="rotate(-0 351.195025 249.301205)">σx′</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #235a78" x="202.766205" y="187.819975" transform="rotate(-0 202.766205 187.819975)">σy′</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #a23b34" x="330.065993" y="285.447275" transform="rotate(-0 330.065993 285.447275)">τx′y′</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="246.24" y="442.866094" transform="rotate(-0 246.24 442.866094)">θp=22.5° CCW; τx′y′=0</text>
+   </g>
+   <g id="patch_3">
+    <path d="M 295.795673 267.833368 
+Q 314.22186 260.200992 330.892068 253.295965 
+" clip-path="url(#p14b11a1167)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 324.200741 252.820427 
+L 330.892068 253.295965 
+L 326.496841 258.363704 
+z
+" clip-path="url(#p14b11a1167)" style="fill: #235a78; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 196.684327 308.886632 
+Q 178.25814 316.519008 161.587932 323.424035 
+" clip-path="url(#p14b11a1167)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 168.279259 323.899573 
+L 161.587932 323.424035 
+L 165.983159 318.356296 
+z
+" clip-path="url(#p14b11a1167)" style="fill: #235a78; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 225.713368 238.804327 
+Q 218.080992 220.37814 211.175965 203.707932 
+" clip-path="url(#p14b11a1167)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 210.700427 210.399259 
+L 211.175965 203.707932 
+L 216.243704 208.103159 
+z
+" clip-path="url(#p14b11a1167)" style="fill: #235a78; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 266.766632 337.915673 
+Q 274.399008 356.34186 281.304035 373.012068 
+" clip-path="url(#p14b11a1167)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 281.779573 366.320741 
+L 281.304035 373.012068 
+L 276.236296 368.616841 
+z
+" clip-path="url(#p14b11a1167)" style="fill: #235a78; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+  </g>
+  <g id="text_8">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Principal orientations eliminate the in-plane shear stress</text>
+  </g>
+  <g id="text_9">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="47.52" y="630.504" transform="rotate(-0 47.52 630.504)">0524  •  FIG-02-40-003</text>
+  </g>
+  <g id="text_10">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(113.211719 590.616625)">This example has both in-plane principal stresses positive, so the full ordered stresses are σ₁&gt;σ₂&gt;σ₃=0. Principal directions are</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(403.252344 603.334125)">orthogonal.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p14b11a1167">
+   <rect x="81" y="123.12" width="330.48" height="330.48"/>
+  </clipPath>
+ </defs>
+</svg>

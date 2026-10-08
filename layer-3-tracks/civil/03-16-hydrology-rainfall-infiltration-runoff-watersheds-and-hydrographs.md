@@ -65,7 +65,7 @@ A watershed is a control volume. Water-balance terms must be assigned signs cons
 
 **Problem.** If inflows total 12 cm, losses total 9 cm, storage increases 3 cm.
 
-**Solution.** Apply the relation and definitions in §16.1; the stated result follows with consistent units and sign convention.
+**Solution.** Apply the watershed water balance: precipitation/inflow equals losses plus change in storage. With 12 cm of inflow and 9 cm of combined losses, \(\Delta S=12-9=3\ \text{cm}\). The positive sign means watershed storage increased by **3 cm of equivalent depth**.
 
 ---
 
@@ -81,7 +81,7 @@ Design rainfall intensity depends on storm duration and return period. The selec
 
 **Problem.** For a Rational Method problem, use rainfall intensity corresponding to the time of concentration.
 
-**Solution.** Apply the relation and definitions in §16.2; the stated result follows with consistent units and sign convention.
+**Solution.** For the Rational Method, the design rainfall intensity must correspond to a duration equal to the watershed time of concentration for the selected return period. That choice represents the condition in which runoff from the hydraulically most remote point can contribute at the design location.
 
 ---
 
@@ -97,7 +97,7 @@ Only rainfall excess contributes directly to surface runoff in a simplified even
 
 **Problem.** Rainfall 2.0 in with 0.3 in abstraction and 0.7 in infiltration gives 1.0 in excess.
 
-**Solution.** Apply the relation and definitions in §16.3; the stated result follows with consistent units and sign convention.
+**Solution.** Effective rainfall equals gross rainfall minus abstractions and infiltration for this simplified balance. Thus \(P_e=2.0-0.3-0.7=1.0\ \text{in}\). The resulting **1.0 in** is the depth available to produce direct runoff under the stated assumptions.
 
 ---
 
@@ -113,7 +113,7 @@ The Rational Method estimates peak discharge for small watersheds using a runoff
 
 **Problem.** C=0.6, I=3 in/hr, A=10 acres gives Q=18 cfs in the common US customary form.
 
-**Solution.** Apply the relation and definitions in §16.4; the stated result follows with consistent units and sign convention.
+**Solution.** Using the common U.S. customary Rational Method form, \(Q=CIA\) when \(I\) is in in/hr and \(A\) is in acres. Substitution gives \(Q=0.6(3)(10)=18\ \text{cfs}\). The coefficient \(C\) is dimensionless and represents the runoff response of the drainage area.
 
 ---
 
@@ -127,9 +127,9 @@ The curve-number method relates storm depth, soil-cover condition, and retention
 
 ### Worked Example 5
 
-**Problem.** CN=80 gives S=2.5 in; if P=4 in, Q≈1.80 in.
+**Problem.** CN=80 gives S=2.5 in; if P=4 in, Q≈2.04 in.
 
-**Solution.** Apply the relation and definitions in §16.5; the stated result follows with consistent units and sign convention.
+**Solution.** For \(CN=80\), \(S=1000/CN-10=2.5\ \text{in}\). With \(P=4\ \text{in}\), the standard NRCS runoff expression gives \(Q=(P-0.2S)^2/(P+0.8S)=(4-0.5)^2/(4+2.0)=12.25/6\approx2.04\ \text{in}\). The result is therefore approximately **2.04 in of direct runoff** under the standard initial-abstraction assumption \(I_a=0.2S\).
 
 ---
 
@@ -145,7 +145,7 @@ A runoff hydrograph separates baseflow from direct runoff. A unit hydrograph rep
 
 **Problem.** Scaling a 1-in unit hydrograph by 1.5 in effective rainfall multiplies ordinates by 1.5.
 
-**Solution.** Apply the relation and definitions in §16.6; the stated result follows with consistent units and sign convention.
+**Solution.** A unit hydrograph represents the direct-runoff hydrograph produced by one unit of effective rainfall. Therefore 1.5 in of effective rainfall scales every ordinate of a 1-in unit hydrograph by 1.5, provided the watershed response is treated as linear and time invariant over the event.
 
 ---
 
@@ -161,7 +161,7 @@ Evaporation and evapotranspiration are losses in a water balance. Pan evaporatio
 
 **Problem.** Ep=8 mm/day and Pc=0.70 gives EL=5.6 mm/day.
 
-**Solution.** Apply the relation and definitions in §16.7; the stated result follows with consistent units and sign convention.
+**Solution.** Actual evapotranspiration is estimated from pan evaporation using the pan coefficient: \(E_L=P_cE_p\). With \(P_c=0.70\) and \(E_p=8\ \text{mm/day}\), \(E_L=0.70(8)=5.6\ \text{mm/day}\).
 
 ---
 
@@ -171,13 +171,13 @@ Evaporation and evapotranspiration are losses in a water balance. Pan evaporatio
 
 **Problem.** A problem combines two ideas from this chapter. What should be done before calculation?
 
-**Solution.** Draw the system, identify the requested quantity, establish units and sign conventions, and list the governing relations before substituting numbers.
+**Solution.** Separate the problem into rainfall/runoff transformation and routing or storage. First determine excess rainfall or peak runoff using the appropriate loss/runoff method; then use that output as the input to the hydrograph or storage calculation. Keep rainfall depth, rainfall intensity, discharge, and volume units distinct throughout.
 
 ### Worked Example 9
 
 **Problem.** A remembered equation differs from the FE Reference Handbook form. Which should govern the exam solution?
 
-**Solution.** Use the Handbook form and its unit convention unless the problem explicitly supplies a different relation.
+**Solution.** Use the FE Handbook relation when available, but verify that its coefficient matches the unit system. Hydrology equations such as the Rational Method are especially sensitive to customary-versus-SI conventions, so the Handbook form and units should govern.
 
 ---
 
@@ -185,11 +185,13 @@ Evaporation and evapotranspiration are losses in a water balance. Pan evaporatio
 
 Primary source basis: **FE Civil specification Area 10; FE Reference Handbook 10.6 Civil Engineering and supporting general sections cited below.**
 
-**Source boundary:** Some Civil specification topics are directly tabulated in the Handbook; others are named by the specification but require learned engineering knowledge. This chapter does not imply that every workflow, code provision, or design factor is printed in the Handbook.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is retained because it is required by the FE Civil specification but needs engineering knowledge beyond what is printed in the Handbook. **Guide synthesis** connects those two sources into exam-oriented workflows and examples; it is not presented as Handbook text.
 
-Where the FE specification requires a topic that is not directly developed in the Handbook, the ledger marks it **specification-required / guide-developed** rather than inventing a Handbook citation.
+**External source support for split-required concepts:**
+- `CIV-3-016-02` — Kilgore, R., Atayee, A. T., & Herrmann, G. R. (2024). *Urban Drainage Design* (Hydraulic Engineering Circular No. 22, 4th ed., FHWA-HIF-24-006). Federal Highway Administration. Verified location: Chapter 4, pp. 21–24 for rainfall/IDF/design-storm and runoff concepts; Chapter 10, pp. 182–229 for detention, stage-storage/stage-discharge, routing, and outlet control.
+- `CIV-3-016-03` — Kilgore, R., Atayee, A. T., & Herrmann, G. R. (2024). *Urban Drainage Design* (Hydraulic Engineering Circular No. 22, 4th ed., FHWA-HIF-24-006). Federal Highway Administration. Verified location: Chapter 4, pp. 21–24 for rainfall/IDF/design-storm and runoff concepts; Chapter 10, pp. 182–229 for detention, stage-storage/stage-discharge, routing, and outlet control. U.S. Army Corps of Engineers, Hydrologic Engineering Center. *HEC-HMS Technical Reference Manual* (CPD-74B), current online edition. Cited at publication/standard level; no page-level claim.
 
----
+No external source above is being used to replace the FE Reference Handbook. The external references support only the learned/application portion identified by `split_required: true`.
 
 ## Where This Goes Wrong
 
@@ -357,31 +359,31 @@ D) Treat it as optional
 
 14. For **evapotranspiration loss**, common failures are wrong units, wrong sign convention, wrong geometry/boundary condition, or using a relation outside its assumptions.
 
-15. The sketch exposes geometry, boundaries, loads/flows, signs, and missing data before algebra begins.
+15. Sketch the watershed boundary, outlet, rainfall input, abstractions, and routing path first so the analysis uses the correct drainage area and distinguishes rainfall depth, intensity, runoff depth, and discharge.
 
-16. Use the Handbook form when it is available because the FE exam supplies that reference and its constants/unit conventions govern the problem.
+16. When the Handbook gives the hydrologic relation, use that form and its coefficient because Rational Method and related equations are sensitive to the stated unit system and variable definitions.
 
-17. Mixed unit systems create hidden conversion errors and can invalidate dimensional consistency.
+17. Do not combine inches per hour, acres, cubic feet per second, millimeters, and SI areas without conversion; hydrology formulas often hide unit-dependent coefficients.
 
-18. A reasonableness check can catch sign, magnitude, boundary-condition, and unit errors that algebra alone does not reveal.
+18. Check hydrologic bounds: runoff depth should not exceed rainfall depth, runoff coefficients should remain physically meaningful, and the selected rainfall intensity should be compatible with the chosen duration or time of concentration.
 
-19. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+19. **A.** For **Watershed boundaries and hydrologic mass balance**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-20. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+20. **A.** For **Rainfall intensity, duration, frequency, and design storms**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-21. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+21. **A.** For **Infiltration, abstraction, and effective rainfall**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-22. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+22. **A.** For **Rational Method peak runoff**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-23. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+23. **A.** For **NRCS curve-number rainfall-runoff relation**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-24. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+24. **A.** For **Hydrographs, unit hydrographs, and baseflow**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-25. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+25. **A.** For **Evaporation, evapotranspiration, and storage change**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-26. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+26. **A.** In Hydrology — Rainfall, Infiltration, Runoff, Watersheds, and Hydrographs, dimensional consistency and an independent physical check are the fastest ways to detect a unit, sign, magnitude, or modeling error before accepting the result.
 
-27. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+27. **A.** IDF/design-storm and loss-model details beyond Handbook tables are identified as learned material and supported by FHWA HEC-22 and, where needed, HEC-HMS rather than by fabricated Handbook references.
 
 
 
@@ -397,7 +399,7 @@ D) Treat it as optional
 
 4. C=0.6, I=3 in/hr, A=10 acres gives Q=18 cfs in the common US customary form.
 
-5. CN=80 gives S=2.5 in; if P=4 in, Q≈1.80 in.
+5. CN=80 gives S=2.5 in; if P=4 in, Q≈2.04 in.
 
 6. Scaling a 1-in unit hydrograph by 1.5 in effective rainfall multiplies ordinates by 1.5.
 
@@ -414,25 +416,39 @@ D) Treat it as optional
 
 ## Practice Problem Solutions
 
-1. Use §16.1. If inflows total 12 cm, losses total 9 cm, storage increases 3 cm. The calculation or classification follows from the displayed section relation and the stated data.
+1. **Independent check for §16.1.** Rework the problem from the stated givens rather than copying the worked-example result. Apply the watershed water balance: precipitation/inflow equals losses plus change in storage. With 12 cm of inflow and 9 cm of combined losses, \(\Delta S=12-9=3\ \text{cm}\). The positive sign means watershed storage increased by **3 cm of equivalent depth**. **Check:** confirm the final magnitude and units against the physical meaning of §16.1 before accepting the answer.
 
-2. Use §16.2. For a Rational Method problem, use rainfall intensity corresponding to the time of concentration. The calculation or classification follows from the displayed section relation and the stated data.
 
-3. Use §16.3. Rainfall 2.0 in with 0.3 in abstraction and 0.7 in infiltration gives 1.0 in excess. The calculation or classification follows from the displayed section relation and the stated data.
 
-4. Use §16.4. C=0.6, I=3 in/hr, A=10 acres gives Q=18 cfs in the common US customary form. The calculation or classification follows from the displayed section relation and the stated data.
+2. **Independent check for §16.2.** Rework the problem from the stated givens rather than copying the worked-example result. For the Rational Method, the design rainfall intensity must correspond to a duration equal to the watershed time of concentration for the selected return period. That choice represents the condition in which runoff from the hydraulically most remote point can contribute at the design location. **Check:** confirm the final magnitude and units against the physical meaning of §16.2 before accepting the answer.
 
-5. Use §16.5. CN=80 gives S=2.5 in; if P=4 in, Q≈1.80 in. The calculation or classification follows from the displayed section relation and the stated data.
 
-6. Use §16.6. Scaling a 1-in unit hydrograph by 1.5 in effective rainfall multiplies ordinates by 1.5. The calculation or classification follows from the displayed section relation and the stated data.
 
-7. Use §16.7. Ep=8 mm/day and Pc=0.70 gives EL=5.6 mm/day. The calculation or classification follows from the displayed section relation and the stated data.
+3. **Independent check for §16.3.** Rework the problem from the stated givens rather than copying the worked-example result. Effective rainfall equals gross rainfall minus abstractions and infiltration for this simplified balance. Thus \(P_e=2.0-0.3-0.7=1.0\ \text{in}\). The resulting **1.0 in** is the depth available to produce direct runoff under the stated assumptions. **Check:** confirm the final magnitude and units against the physical meaning of §16.3 before accepting the answer.
 
-8. Check dimensions, unit conversion, sign convention, and whether the selected relation's assumptions match the physical situation.
 
-9. Start with FE Civil specification Area 10 and the Handbook sections identified in **As the Handbook States It** and the ledger entries for this chapter.
 
-10. A sketch exposes incompatible geometry, impossible flow/load directions, missing reactions/boundaries, and double-counted or omitted terms.
+4. **Independent check for §16.4.** Rework the problem from the stated givens rather than copying the worked-example result. Using the common U.S. customary Rational Method form, \(Q=CIA\) when \(I\) is in in/hr and \(A\) is in acres. Substitution gives \(Q=0.6(3)(10)=18\ \text{cfs}\). The coefficient \(C\) is dimensionless and represents the runoff response of the drainage area. **Check:** confirm the final magnitude and units against the physical meaning of §16.4 before accepting the answer.
+
+
+
+5. **Independent check for §16.5.** Rework the problem from the stated givens rather than copying the worked-example result. For \(CN=80\), \(S=1000/CN-10=2.5\ \text{in}\). With \(P=4\ \text{in}\), the standard NRCS runoff expression gives \(Q=(P-0.2S)^2/(P+0.8S)=(4-0.5)^2/(4+2.0)=12.25/6\approx2.04\ \text{in}\). The result is therefore approximately **2.04 in of direct runoff** under the standard initial-abstraction assumption \(I_a=0.2S\). **Check:** confirm the final magnitude and units against the physical meaning of §16.5 before accepting the answer.
+
+
+
+6. **Independent check for §16.6.** Rework the problem from the stated givens rather than copying the worked-example result. A unit hydrograph represents the direct-runoff hydrograph produced by one unit of effective rainfall. Therefore 1.5 in of effective rainfall scales every ordinate of a 1-in unit hydrograph by 1.5, provided the watershed response is treated as linear and time invariant over the event. **Check:** confirm the final magnitude and units against the physical meaning of §16.6 before accepting the answer.
+
+
+
+7. **Independent check for §16.7.** Rework the problem from the stated givens rather than copying the worked-example result. Actual evapotranspiration is estimated from pan evaporation using the pan coefficient: \(E_L=P_cE_p\). With \(P_c=0.70\) and \(E_p=8\ \text{mm/day}\), \(E_L=0.70(8)=5.6\ \text{mm/day}\). **Check:** confirm the final magnitude and units against the physical meaning of §16.7 before accepting the answer.
+
+
+
+8. Before accepting a hydrology — rainfall, infiltration, runoff, watersheds, and hydrographs result, verify the dimensional units, the chapter-specific sign or direction convention, and that the selected model matches the stated geometry and boundary conditions.
+
+9. Start with **FE Civil specification Area 10** and the Handbook hydrology relations recorded in the ledger; for IDF, design-storm, or loss-model details use the reconciled FHWA HEC-22/HEC-HMS support.
+
+10. For hydrology — rainfall, infiltration, runoff, watersheds, and hydrographs, a sketch makes the controlling geometry, direction, boundary, load/flow path, or sequence visible before algebra, which often reveals missing data or an impossible assumption immediately.
 
 ---
 

@@ -65,7 +65,7 @@ Pressure in tanks, basins, pipes, and treatment vessels follows hydrostatic prin
 
 **Problem.** 10 m of water head corresponds to about 98.1 kPa gauge pressure.
 
-**Solution.** Apply the relation and environmental model in §51.1; then verify units, boundary conditions, and physical limits.
+**Solution.** Hydrostatic pressure is \(p=\rho gh=(1000)(9.81)(10)=98{,}100\ {\rm Pa}=\mathbf{98.1\ kPa}\) gauge. The calculation neglects atmospheric pressure because gauge pressure is requested.
 
 ---
 
@@ -81,7 +81,7 @@ Environmental pipe systems combine continuity, energy, friction, and minor losse
 
 **Problem.** Doubling velocity increases Darcy-Weisbach loss by approximately four if f is unchanged.
 
-**Solution.** Apply the relation and environmental model in §51.2; then verify units, boundary conditions, and physical limits.
+**Solution.** Darcy-Weisbach loss is proportional to \(V^2\) when \(f,L,D\) are unchanged. Doubling velocity gives \(h_{f,2}/h_{f,1}=2^2=\mathbf{4}\), so the friction head loss is approximately four times larger.
 
 ---
 
@@ -97,7 +97,7 @@ Hazen-Williams is frequently used for water conveyance. Use the Handbook's unit-
 
 **Problem.** Increasing diameter substantially reduces head loss for fixed flow.
 
-**Solution.** Apply the relation and environmental model in §51.3; then verify units, boundary conditions, and physical limits.
+**Solution.** For fixed flow, increasing pipe diameter lowers velocity and also reduces the \(L/D\) factor. In Darcy-Weisbach form this produces a strong reduction in head loss; the exact change depends on how friction factor varies with Reynolds number and roughness.
 
 ---
 
@@ -113,7 +113,7 @@ Open channels in treatment and stormwater systems are commonly analyzed with Man
 
 **Problem.** For fixed geometry and roughness, discharge scales with square root of slope.
 
-**Solution.** Apply the relation and environmental model in §51.4; then verify units, boundary conditions, and physical limits.
+**Solution.** Manning discharge contains \(S^{1/2}\). With geometry, roughness, and hydraulic radius fixed, \(Q_2/Q_1=(S_2/S_1)^{1/2}\); discharge therefore scales with the **square root of slope**.
 
 ---
 
@@ -129,7 +129,7 @@ Pump selection requires matching the pump curve to the system curve. Parallel an
 
 **Problem.** Two identical pumps in series ideally add head at the same flow; in parallel they add flow at similar head.
 
-**Solution.** Apply the relation and environmental model in §51.5; then verify units, boundary conditions, and physical limits.
+**Solution.** Ideal pumps in **series** pass essentially the same flow through each machine while their developed heads add. Ideal pumps in **parallel** operate at approximately the same head while their flow contributions add.
 
 ---
 
@@ -145,7 +145,7 @@ Blowers supply air for aeration, stripping, combustion, and gas handling. Compre
 
 **Problem.** At the same flow and pressure rise, lower efficiency requires higher shaft power.
 
-**Solution.** Apply the relation and environmental model in §51.6; then verify units, boundary conditions, and physical limits.
+**Solution.** For an incompressible approximation, shaft input power is \(P_{in}=Q\Delta p/\eta\) (or \(\gamma QH/\eta\)). At fixed \(Q\) and pressure rise, decreasing efficiency increases the required shaft power because \(\eta\) is in the denominator.
 
 ---
 
@@ -161,7 +161,7 @@ Environmental flow measurement commonly uses head-discharge devices. The coeffic
 
 **Problem.** For a rectangular-weir form with exponent 3/2, doubling head multiplies flow by 2^(3/2).
 
-**Solution.** Apply the relation and environmental model in §51.7; then verify units, boundary conditions, and physical limits.
+**Solution.** For \(Q=CH^{3/2}\), doubling head gives \(Q_2/Q_1=2^{3/2}=2.828\). The flow therefore increases by about **2.83 times**, assuming the same coefficient and weir geometry.
 
 ---
 
@@ -171,13 +171,13 @@ Environmental flow measurement commonly uses head-discharge devices. The coeffic
 
 **Problem.** A treatment calculation predicts a negative effluent concentration. What does that indicate?
 
-**Solution.** The algebra or model assumptions are invalid for that condition. Recheck the balance, reaction/order assumptions, time basis, units, and any zero-concentration limiting condition.
+**Solution.** A negative required head loss or impossible pump power usually signals a sign/reference error or an inconsistent assumed flow direction. Re-establish the energy-grade reference, flow direction, and pump/turbine sign convention before recalculating.
 
 ### Worked Example 9
 
 **Problem.** A remembered environmental correlation differs from the FE Reference Handbook relation. Which should govern the exam solution?
 
-**Solution.** Use the Handbook relation and its definitions unless the problem explicitly supplies a different model.
+**Solution.** For **Environmental Hydraulics — Conduits, Open Channels, Pumps, Blowers, and Flow Measurement**, the FE Reference Handbook equation, definitions, and unit convention govern whenever the Handbook supplies the needed relation. The external references in this chapter are used for specification-required learned material involving **pressure/head, conduit friction, open-channel flow, pumps/blowers, and hydraulic flow measurement**. If a remembered correlation conflicts with the supplied Handbook equation, use the supplied Handbook relation unless the problem explicitly states a different model.
 
 ---
 
@@ -185,7 +185,13 @@ Environmental flow measurement commonly uses head-discharge devices. The coeffic
 
 Primary source basis: **FE Environmental specification Area(s) 8; FE Reference Handbook 10.6 Environmental Engineering, printed pp. 318–360, plus general supporting sections where identified in the ledger.**
 
-**Source boundary:** Some Environmental specification topics are directly tabulated in the Handbook, while others require learned engineering knowledge. The chapter keeps those two categories separate.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required environmental-engineering knowledge that is not fully developed in the Handbook. **Guide synthesis** connects the Handbook and external material into exam-oriented explanations, examples, and checks; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Mihelcic, J. R., & Zimmerman, J. B. (2021). *Environmental Engineering: Fundamentals, Sustainability, Design* (3rd ed.). Wiley. ISBN 978-1-119-60445-7. Supporting scope: Environmental measurements, chemistry, physical processes, biology, risk, water quantity/quality, water treatment, wastewater/stormwater, solid waste, and air quality.
+- Metcalf & Eddy/AECOM, Tchobanoglous, G., Stensel, H. D., Tsuchihashi, R., & Burton, F. L. (2014). *Wastewater Engineering: Treatment and Resource Recovery* (5th ed.). McGraw-Hill. ISBN 978-0-07-340118-8. Supporting scope: Wastewater characteristics, physical/chemical treatment, activated sludge, solids recycle, biosolids, residuals, and resource recovery.
+
+The external references support only the learned/application portion of the Environmental specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -356,31 +362,31 @@ D) It is always a Handbook lookup with no learned interpretation
 
 14. For **environmental flow measurement**, check basis, units, steady/unsteady condition, phase/media, boundary conditions, and whether the selected idealization matches the system.
 
-15. The boundary determines what enters, leaves, accumulates, reacts, or transfers between media. Without it, terms are easily omitted or double counted.
+15. In **Environmental Hydraulics — Conduits, Open Channels, Pumps, Blowers, and Flow Measurement**, the control volume or conceptual boundary determines which sources, sinks, transfers, reactions, and receptors belong in the model. For this chapter specifically, check datum and pressure reference, flow direction, energy conservation, reynolds/roughness assumptions, pump efficiency bounds, and that calculated head/flow lies on a physically possible operating condition.
 
-16. Concentration is mass per volume; loading is mass per time. A low concentration at very high flow can still create a large load.
+16. Concentration and loading answer different questions in **Environmental Hydraulics — Conduits, Open Channels, Pumps, Blowers, and Flow Measurement**: concentration is mass per volume, while loading is mass per time. Always convert \(Q\) and \(C\) to compatible units before multiplying them.
 
-17. The FE Handbook is the supplied exam reference. Its variable definitions and unit conventions should govern unless the problem explicitly provides another relation.
+17. Use the FE Reference Handbook equation and definitions when it supplies the model for **Environmental Hydraulics — Conduits, Open Channels, Pumps, Blowers, and Flow Measurement**. The chapter's external references (MIHELCIC, METCALF) support learned specification content, not a competing exam formula.
 
-18. A mass/energy balance and physical check can reveal impossible signs, removal above 100%, negative concentrations, unrealistic flows, or model misuse.
+18. A physical check is needed because algebra alone can return impossible environmental states. For this chapter, set velocity to zero and confirm friction loss vanishes; set efficiency toward 1 and confirm input power approaches hydraulic power.
 
-19. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+19. **A.** Section §51.1, **Fluid statics and environmental pressure calculations**, is governed by \(p=\gamma h\). Use that relation with its own environmental basis and then perform the specific validity check described for §51.1.
 
-20. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+20. **A.** Section §51.2, **Closed conduits and Darcy-Weisbach loss**, is governed by \(h_f=f\frac{L}{D}\frac{V^2}{2g}\). Use that relation with its own environmental basis and then perform the specific validity check described for §51.2.
 
-21. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+21. **A.** Section §51.3, **Hazen-Williams and water-system sizing**, is governed by \(h_f\propto \frac{LQ^{1.852}}{C^{1.852}D^{4.87}}\). Use that relation with its own environmental basis and then perform the specific validity check described for §51.3.
 
-22. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+22. **A.** Section §51.4, **Open-channel flow and Manning equation**, is governed by \(Q=\frac{1}{n}AR^{2/3}S^{1/2}\quad\text{SI}\). Use that relation with its own environmental basis and then perform the specific validity check described for §51.4.
 
-23. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+23. **A.** Section §51.5, **Pumps, operating points, and efficiency**, is governed by \(P_{in}=\frac{\gamma QH}{\eta}\). Use that relation with its own environmental basis and then perform the specific validity check described for §51.5.
 
-24. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+24. **A.** Section §51.6, **Blowers and gas-handling power**, is governed by \(P\approx \frac{Q\,\Delta p}{\eta}\). Use that relation with its own environmental basis and then perform the specific validity check described for §51.6.
 
-25. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+25. **A.** Section §51.7, **Weirs, orifices, flumes, and environmental flow measurement**, is governed by \(Q=C\,H^n\). Use that relation with its own environmental basis and then perform the specific validity check described for §51.7.
 
-26. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+26. **A.** An integrated **Environmental Hydraulics — Conduits, Open Channels, Pumps, Blowers, and Flow Measurement** solution is acceptable only after the governing balance/model is identified, units are reconciled, and the chapter-specific physical checks are satisfied.
 
-27. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+27. **A.** Source ownership is explicit in **Environmental Hydraulics — Conduits, Open Channels, Pumps, Blowers, and Flow Measurement**: FE-Handbook-supported material remains tied to the ledger, externally supported content uses MIHELCIC, METCALF, and guide synthesis is labeled as supplemental explanation.
 
 
 ---
@@ -412,25 +418,25 @@ D) It is always a Handbook lookup with no learned interpretation
 
 ## Practice Problem Solutions
 
-1. Use §51.1. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+1. **Independent recomputation for §51.1 — Fluid statics and environmental pressure calculations.** Start from the stated givens rather than the worked-example answer. Hydrostatic pressure is \(p=\rho gh=(1000)(9.81)(10)=98{,}100\ {\rm Pa}=\mathbf{98.1\ kPa}\) gauge. The calculation neglects atmospheric pressure because gauge pressure is requested. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-2. Use §51.2. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+2. **Independent recomputation for §51.2 — Closed conduits and Darcy-Weisbach loss.** Start from the stated givens rather than the worked-example answer. Darcy-Weisbach loss is proportional to \(V^2\) when \(f,L,D\) are unchanged. Doubling velocity gives \(h_{f,2}/h_{f,1}=2^2=\mathbf{4}\), so the friction head loss is approximately four times larger. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-3. Use §51.3. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+3. **Independent recomputation for §51.3 — Hazen-Williams and water-system sizing.** Start from the stated givens rather than the worked-example answer. For fixed flow, increasing pipe diameter lowers velocity and also reduces the \(L/D\) factor. In Darcy-Weisbach form this produces a strong reduction in head loss; the exact change depends on how friction factor varies with Reynolds number and roughness. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-4. Use §51.4. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+4. **Independent recomputation for §51.4 — Open-channel flow and Manning equation.** Start from the stated givens rather than the worked-example answer. Manning discharge contains \(S^{1/2}\). With geometry, roughness, and hydraulic radius fixed, \(Q_2/Q_1=(S_2/S_1)^{1/2}\); discharge therefore scales with the **square root of slope**. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-5. Use §51.5. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+5. **Independent recomputation for §51.5 — Pumps, operating points, and efficiency.** Start from the stated givens rather than the worked-example answer. Ideal pumps in **series** pass essentially the same flow through each machine while their developed heads add. Ideal pumps in **parallel** operate at approximately the same head while their flow contributions add. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-6. Use §51.6. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+6. **Independent recomputation for §51.6 — Blowers and gas-handling power.** Start from the stated givens rather than the worked-example answer. For an incompressible approximation, shaft input power is \(P_{in}=Q\Delta p/\eta\) (or \(\gamma QH/\eta\)). At fixed \(Q\) and pressure rise, decreasing efficiency increases the required shaft power because \(\eta\) is in the denominator. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-7. Use §51.7. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+7. **Independent recomputation for §51.7 — Weirs, orifices, flumes, and environmental flow measurement.** Start from the stated givens rather than the worked-example answer. For \(Q=CH^{3/2}\), doubling head gives \(Q_2/Q_1=2^{3/2}=2.828\). The flow therefore increases by about **2.83 times**, assuming the same coefficient and weir geometry. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-8. Check dimensions, concentration-versus-loading basis, conservation of mass/energy, sign convention, and whether removal, risk, or efficiency values stay within physically meaningful limits.
+8. For this chapter, check the result against this failure screen: Check datum and pressure reference, flow direction, energy conservation, Reynolds/roughness assumptions, pump efficiency bounds, and that calculated head/flow lies on a physically possible operating condition. A result that violates one of those conditions should be rejected even if the arithmetic is internally consistent.
 
-9. Start with FE Environmental specification Area(s) 8, then use the Handbook subsection named in the corresponding ledger entry.
+9. For **Environmental Hydraulics — Conduits, Open Channels, Pumps, Blowers, and Flow Measurement**, begin with the FE Environmental specification area and Handbook subsection recorded in the ledger. When the atom is `split_required`, use the reconciled external source set **MIHELCIC, METCALF** for the learned portion rather than inventing a Handbook page.
 
-10. Test a limiting case such as zero source, zero reaction, complete mixing, no flow, very large residence time, or 0/100% removal as appropriate. The result should reduce to a sensible physical state.
+10. A useful limiting case is to set velocity to zero and confirm friction loss vanishes; set efficiency toward 1 and confirm input power approaches hydraulic power. The simplified case should reduce to the stated physical behavior before the full model is trusted.
 
 ---
 

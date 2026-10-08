@@ -65,7 +65,7 @@ Construction administration coordinates contractual responsibilities, submittals
 
 **Problem.** A design-bid-build project separates designer and constructor contracts with the owner.
 
-**Solution.** Apply the relation and definitions in §30.1; the stated result follows with consistent units and sign convention.
+**Solution.** Design-bid-build uses separate contractual relationships: the owner contracts with the designer for design services and separately with the contractor for construction after bidding. This separation differs from design-build, where design and construction responsibility are combined under one entity.
 
 ---
 
@@ -81,7 +81,7 @@ Construction means and methods govern how work is performed. Safety planning, te
 
 **Problem.** A safe excavation plan must address soil, depth, surcharge, access, and protective system.
 
-**Solution.** Apply the relation and definitions in §30.2; the stated result follows with consistent units and sign convention.
+**Solution.** Excavation safety depends on more than depth. The plan must consider soil classification, excavation geometry, surcharge loads, groundwater, adjacent structures, access/egress, and the required protective system such as sloping, benching, shoring, or shielding.
 
 ---
 
@@ -97,7 +97,7 @@ Equipment cycles, utilization, crew balance, and delays control production. Comp
 
 **Problem.** A crew placing 240 yd³ in 8 hr averages 30 yd³/hr.
 
-**Solution.** Apply the relation and definitions in §30.3; the stated result follows with consistent units and sign convention.
+**Solution.** Average production rate is quantity divided by time. \(240\ \text{yd}^3/8\ \text{hr}=30\ \text{yd}^3/\text{hr}\). The final production rate is **30 yd³/hr** (approximately **22.9 m^3/h**). This is an average crew production rate over the stated shift and does not by itself include utilization or delay factors.
 
 ---
 
@@ -113,7 +113,7 @@ Critical-path scheduling computes early and late dates from activity logic. Zero
 
 **Problem.** An activity with ES=5 days and LS=5 days has zero total float.
 
-**Solution.** Apply the relation and definitions in §30.4; the stated result follows with consistent units and sign convention.
+**Solution.** Total float may be computed as \(TF=LS-ES\) when durations are unchanged. With \(LS=5\) days and \(ES=5\) days, \(TF=0\) days, so the activity is critical under the current schedule logic.
 
 ---
 
@@ -129,7 +129,7 @@ Earned value separates planned work, performed work, and actual cost. Sign conve
 
 **Problem.** EV=90k and AC=100k gives CV=-10k, over budget.
 
-**Solution.** Apply the relation and definitions in §30.5; the stated result follows with consistent units and sign convention.
+**Solution.** Cost variance is \(CV=EV-AC\). With \(EV=\$90{,}000\) and \(AC=\$100{,}000\), \(CV=-\$10{,}000\). A negative cost variance indicates the work accomplished has cost more than its earned value, so the project is over budget for that measure.
 
 ---
 
@@ -145,7 +145,7 @@ Estimating starts with scope and measured quantities, then applies labor, equipm
 
 **Problem.** 500 ft of pipe at $42/ft has $21,000 direct line-item cost before adders.
 
-**Solution.** Apply the relation and definitions in §30.6; the stated result follows with consistent units and sign convention.
+**Solution.** Direct line-item cost is quantity times unit price: \(500\ \text{ft}\times\$42/\text{ft}=\$21{,}000\). This is the direct item cost before mobilization, overhead, contingency, profit, or other project adders.
 
 ---
 
@@ -161,7 +161,7 @@ Plans, elevations, sections, details, schedules, notes, and specifications must 
 
 **Problem.** At 1/4 in = 1 ft, a 6-in drawing length represents 24 ft.
 
-**Solution.** Apply the relation and definitions in §30.7; the stated result follows with consistent units and sign convention.
+**Solution.** At a scale of \(1/4\ \text{in}=1\ \text{ft}\), each drawing inch represents \(1/(1/4)=4\ \text{ft}\). Therefore a 6-in drawing length represents \(6(4)=24\ \text{ft}\) in the field.
 
 ---
 
@@ -171,13 +171,13 @@ Plans, elevations, sections, details, schedules, notes, and specifications must 
 
 **Problem.** A problem combines two ideas from this chapter. What should be done before calculation?
 
-**Solution.** Draw the system, identify the requested quantity, establish units and sign conventions, and list the governing relations before substituting numbers.
+**Solution.** For a construction-planning problem, establish the work quantity and method first, convert them into production rate and duration, then place the activity into the schedule and cost framework. Keeping quantity takeoff, productivity, schedule logic, and earned-value metrics distinct prevents circular calculations.
 
 ### Worked Example 9
 
 **Problem.** A remembered equation differs from the FE Reference Handbook form. Which should govern the exam solution?
 
-**Solution.** Use the Handbook form and its unit convention unless the problem explicitly supplies a different relation.
+**Solution.** Use the Handbook equation or definition for the requested metric—production, float, earned value, estimating, or scale—and preserve its sign convention. Construction metrics often use similar abbreviations with different meanings, so the Handbook definition should control the exam solution.
 
 ---
 
@@ -357,31 +357,31 @@ D) Treat it as optional
 
 14. For **construction drawing interpretation**, common failures are wrong units, wrong sign convention, wrong geometry/boundary condition, or using a relation outside its assumptions.
 
-15. The sketch exposes geometry, boundaries, loads/flows, signs, and missing data before algebra begins.
+15. Draw the activity network, site operation, quantity takeoff, or contractual relationship before calculating so precedence, work scope, production quantity, and responsibility are defined correctly.
 
-16. Use the Handbook form when it is available because the FE exam supplies that reference and its constants/unit conventions govern the problem.
+16. Use the Handbook schedule, estimating, earned-value, or scale definition when provided because the sign convention and metric definition determine how float and cost/schedule variances are interpreted.
 
-17. Mixed unit systems create hidden conversion errors and can invalidate dimensional consistency.
+17. Construction problems can mix days, hours, feet, cubic yards, dollars, and production rates; convert the time and quantity bases before comparing productivity, duration, or cost.
 
-18. A reasonableness check can catch sign, magnitude, boundary-condition, and unit errors that algebra alone does not reveal.
+18. Check schedule and cost logic: critical activities should have zero total float under the current network, production rate times duration should reproduce quantity, and earned-value variance signs should match the stated performance.
 
-19. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+19. **A.** For **Project delivery, contracts, procurement, and administration**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-20. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+20. **A.** For **Construction safety, means and methods, and temporary works**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-21. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+21. **A.** For **Equipment production and productivity analysis**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-22. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+22. **A.** For **Network scheduling, precedence, and critical path**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-23. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+23. **A.** For **Earned value and project controls**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-24. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+24. **A.** For **Quantity takeoff and construction estimating**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-25. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+25. **A.** For **Engineering drawings, sections, scales, and coordination**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-26. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+26. **A.** In Construction Engineering — Administration, Operations, Scheduling, Estimating, and Drawings, dimensional consistency and an independent physical check are the fastest ways to detect a unit, sign, magnitude, or modeling error before accepting the result.
 
-27. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+27. **A.** Core construction metrics are tied to the FE Handbook and ledger; delivery-method or administration discussion beyond those definitions is labeled learned material or guide synthesis rather than given an unsupported Handbook citation.
 
 
 
@@ -414,25 +414,39 @@ D) Treat it as optional
 
 ## Practice Problem Solutions
 
-1. Use §30.1. A design-bid-build project separates designer and constructor contracts with the owner. The calculation or classification follows from the displayed section relation and the stated data.
+1. **Independent check for §30.1.** Rework the problem from the stated givens rather than copying the worked-example result. Design-bid-build uses separate contractual relationships: the owner contracts with the designer for design services and separately with the contractor for construction after bidding. This separation differs from design-build, where design and construction responsibility are combined under one entity. **Check:** confirm the final magnitude and units against the physical meaning of §30.1 before accepting the answer.
 
-2. Use §30.2. A safe excavation plan must address soil, depth, surcharge, access, and protective system. The calculation or classification follows from the displayed section relation and the stated data.
 
-3. Use §30.3. A crew placing 240 yd³ in 8 hr averages 30 yd³/hr. The calculation or classification follows from the displayed section relation and the stated data.
 
-4. Use §30.4. An activity with ES=5 days and LS=5 days has zero total float. The calculation or classification follows from the displayed section relation and the stated data.
+2. **Independent check for §30.2.** Rework the problem from the stated givens rather than copying the worked-example result. Excavation safety depends on more than depth. The plan must consider soil classification, excavation geometry, surcharge loads, groundwater, adjacent structures, access/egress, and the required protective system such as sloping, benching, shoring, or shielding. **Check:** confirm the final magnitude and units against the physical meaning of §30.2 before accepting the answer.
 
-5. Use §30.5. EV=90k and AC=100k gives CV=-10k, over budget. The calculation or classification follows from the displayed section relation and the stated data.
 
-6. Use §30.6. 500 ft of pipe at $42/ft has $21,000 direct line-item cost before adders. The calculation or classification follows from the displayed section relation and the stated data.
 
-7. Use §30.7. At 1/4 in = 1 ft, a 6-in drawing length represents 24 ft. The calculation or classification follows from the displayed section relation and the stated data.
+3. **Independent check for §30.3.** Rework the problem from the stated givens rather than copying the worked-example result. Average production rate is quantity divided by time. \(240\ \text{yd}^3/8\ \text{hr}=30\ \text{yd}^3/\text{hr}\). This is an average crew production rate over the stated shift and does not by itself include utilization or delay factors. **Check:** confirm the final magnitude and units against the physical meaning of §30.3 before accepting the answer.
 
-8. Check dimensions, unit conversion, sign convention, and whether the selected relation's assumptions match the physical situation.
 
-9. Start with FE Civil specification Area 14 and the Handbook sections identified in **As the Handbook States It** and the ledger entries for this chapter.
 
-10. A sketch exposes incompatible geometry, impossible flow/load directions, missing reactions/boundaries, and double-counted or omitted terms.
+4. **Independent check for §30.4.** Rework the problem from the stated givens rather than copying the worked-example result. Total float may be computed as \(TF=LS-ES\) when durations are unchanged. With \(LS=5\) days and \(ES=5\) days, \(TF=0\) days, so the activity is critical under the current schedule logic. **Check:** confirm the final magnitude and units against the physical meaning of §30.4 before accepting the answer.
+
+
+
+5. **Independent check for §30.5.** Rework the problem from the stated givens rather than copying the worked-example result. Cost variance is \(CV=EV-AC\). With \(EV=\$90{,}000\) and \(AC=\$100{,}000\), \(CV=-\$10{,}000\). A negative cost variance indicates the work accomplished has cost more than its earned value, so the project is over budget for that measure. **Check:** confirm the final magnitude and units against the physical meaning of §30.5 before accepting the answer.
+
+
+
+6. **Independent check for §30.6.** Rework the problem from the stated givens rather than copying the worked-example result. Direct line-item cost is quantity times unit price: \(500\ \text{ft}\times\$42/\text{ft}=\$21{,}000\). This is the direct item cost before mobilization, overhead, contingency, profit, or other project adders. **Check:** confirm the final magnitude and units against the physical meaning of §30.6 before accepting the answer.
+
+
+
+7. **Independent check for §30.7.** Rework the problem from the stated givens rather than copying the worked-example result. At a scale of \(1/4\ \text{in}=1\ \text{ft}\), each drawing inch represents \(1/(1/4)=4\ \text{ft}\). Therefore a 6-in drawing length represents \(6(4)=24\ \text{ft}\) in the field. **Check:** confirm the final magnitude and units against the physical meaning of §30.7 before accepting the answer.
+
+
+
+8. Before accepting a construction engineering — administration, operations, scheduling, estimating, and drawings result, verify the dimensional units, the chapter-specific sign or direction convention, and that the selected model matches the stated geometry and boundary conditions.
+
+9. Begin with **FE Civil specification Area 14** and the construction/scheduling/estimating definition recorded in the ledger; keep any delivery-method or administration knowledge clearly labeled when it is outside Handbook tables.
+
+10. For construction engineering — administration, operations, scheduling, estimating, and drawings, a sketch makes the controlling geometry, direction, boundary, load/flow path, or sequence visible before algebra, which often reveals missing data or an impossible assumption immediately.
 
 ---
 

@@ -65,7 +65,7 @@ Select the diode model that matches the requested accuracy. Ideal, constant-volt
 
 **Problem.** With a constant 0.7-V model, a 5-V source and 1-kΩ series resistor give about 4.3 mA when forward biased.
 
-**Solution.** Use the relation and model in §32.1, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §32.1 relation \(i_D\approx I_S\!\left(e^{v_D/(\eta V_T)}-1\right)\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: With a constant 0.7-V model, a 5-V source and 1-kΩ series resistor give about 4.3 mA when forward biased. Carry the stated units through the calculation and accept the result only after confirming that the assumed diode, Zener, or SCR state is self-consistent with the solved current and voltage.
 
 ---
 
@@ -81,7 +81,7 @@ The operating point is the simultaneous solution of the diode characteristic and
 
 **Problem.** For an assumed 0.7-V diode drop, verify that the resulting current is positive before accepting the forward-conduction state.
 
-**Solution.** Use the relation and model in §32.2, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §32.2 relation \(V_S=i_D R+v_D\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: For an assumed 0.7-V diode drop, verify that the resulting current is positive before accepting the forward-conduction state. Carry the stated units through the calculation and accept the result only after confirming that the assumed diode, Zener, or SCR state is self-consistent with the solved current and voltage.
 
 ---
 
@@ -97,7 +97,7 @@ Rectifiers convert alternating polarity to unidirectional output. Distinguish av
 
 **Problem.** For Vm=10 V, an ideal full-wave rectified sine has average value 6.37 V.
 
-**Solution.** Use the relation and model in §32.3, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §32.3 relation \(V_{\text{avg,full-wave}}=\frac{2V_m}{\pi},\qquad V_{\text{rms,full-wave}}=\frac{V_m}{\sqrt2}\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: For Vm=10 V, an ideal full-wave rectified sine has average value 6.37 V. Carry the stated units through the calculation and accept the result only after confirming that the assumed diode, Zener, or SCR state is self-consistent with the solved current and voltage.
 
 ---
 
@@ -113,7 +113,7 @@ A reservoir capacitor charges near waveform peaks and discharges into the load b
 
 **Problem.** Doubling C approximately halves ripple for the same load current and ripple frequency.
 
-**Solution.** Use the relation and model in §32.4, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §32.4 relation \(\Delta V\approx \frac{I_L}{f_r C}\). The statement follows from the physical or logical meaning of **Filter capacitors and ripple concepts**: Doubling C approximately halves ripple for the same load current and ripple frequency. Accept that conclusion only while the assumed diode, Zener, or SCR state is self-consistent with the solved current and voltage.
 
 ---
 
@@ -129,7 +129,7 @@ A Zener regulator requires the diode to remain in its intended reverse-breakdown
 
 **Problem.** If VS=12 V, VZ=5.1 V, R=470 Ω, and IL=5 mA, IZ≈9.7 mA.
 
-**Solution.** Use the relation and model in §32.5, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §32.5 relation \(I_Z=\frac{V_S-V_Z}{R}-I_L\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: If VS=12 V, VZ=5.1 V, R=470 Ω, and IL=5 mA, IZ≈9.7 mA. Carry the stated units through the calculation and accept the result only after confirming that the assumed diode, Zener, or SCR state is self-consistent with the solved current and voltage.
 
 ---
 
@@ -145,7 +145,7 @@ An SCR remains off in forward blocking until triggered or driven past breakover,
 
 **Problem.** A gate pulse can initiate conduction, but removing the pulse does not necessarily turn the SCR off.
 
-**Solution.** Use the relation and model in §32.6, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §32.6 relation \(\text{forward blocking}\xrightarrow{i_G\text{ trigger}}\text{on state}\). The statement follows from the physical or logical meaning of **SCR operation, triggering, latching, and commutation**: A gate pulse can initiate conduction, but removing the pulse does not necessarily turn the SCR off. Accept that conclusion only while the assumed diode, Zener, or SCR state is self-consistent with the solved current and voltage.
 
 ---
 
@@ -161,7 +161,7 @@ Nonlinear device circuits are often solved by assuming conduction states, replac
 
 **Problem.** If an assumed conducting diode yields negative forward current, reject that state and re-solve.
 
-**Solution.** Use the relation and model in §32.7, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §32.7 relation \(\text{assume state}\rightarrow\text{solve}\rightarrow\text{verify state}\). The statement follows from the physical or logical meaning of **Device-model selection and piecewise circuit solving**: If an assumed conducting diode yields negative forward current, reject that state and re-solve. Accept that conclusion only while the assumed diode, Zener, or SCR state is self-consistent with the solved current and voltage.
 
 ---
 
@@ -171,13 +171,13 @@ Nonlinear device circuits are often solved by assuming conduction states, replac
 
 **Problem.** A calculation gives a numerical answer but violates the assumed device region, logic state, or protocol condition. Is the answer valid?
 
-**Solution.** No. Re-select the appropriate piecewise model or system state and solve again. Algebraic consistency does not override the model's validity conditions.
+**Solution.** No. In **Diodes, Rectifiers, Thyristors, and Device Models**, a tidy numerical or logical result is still invalid if it contradicts the model assumptions. A representative failure is a conducting diode that solves to negative forward current or a Zener assumed in breakdown without sufficient current. Return to the applicable section, choose the state/model consistent with the solved quantities, recompute if needed, and confirm that the assumed diode, Zener, or SCR state is self-consistent with the solved current and voltage.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the expression printed in the FE Reference Handbook. Which should govern an exam solution?
 
-**Solution.** Use the Handbook expression and its definitions unless the problem explicitly supplies a different model.
+**Solution.** Use the FE Reference Handbook expression and its definitions as the controlling exam reference unless the problem explicitly defines another model. For **Diodes, Rectifiers, Thyristors, and Device Models**, match symbols, units, reference directions, RMS/peak or digital conventions, and assumptions to the Handbook first. External references support only specification-required learned concepts that the Handbook does not directly develop.
 
 ---
 
@@ -185,7 +185,12 @@ Nonlinear device circuits are often solved by assuming conduction states, replac
 
 Primary source basis: **FE Electrical and Computer specification Area 9; FE Reference Handbook 10.6 Electrical and Computer Engineering, printed pp. 361–421, with the specific Handbook subsections identified in the ledger.**
 
-**Source boundary:** The FE Electrical and Computer specification includes both directly tabulated Handbook material and learned engineering/computing concepts. The chapter does not assign false Handbook pages to material that the specification requires but the Handbook does not directly develop.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required engineering/computing knowledge that is not fully developed in the Handbook. **Guide synthesis** connects those two bodies of material into exam-oriented explanations and examples; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Sedra, A. S., Smith, K. C., Carusone, T. C., & Gaudet, V. (2020). *Microelectronic Circuits* (8th ed.). Oxford University Press. ISBN 978-0-19-085346-4. Supporting scope: Diodes, BJT/MOSFET bias, small-signal models, single-stage amplifiers, differential amplifiers, and op amps.
+
+The external references support only the learned/application portion of the specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +359,31 @@ D) It is always only a qualitative concept
 
 14. For **piecewise-linear device analysis**, verify operating region/model validity, units or logic levels, sign/polarity convention, and loading or boundary conditions before accepting the result.
 
-15. The same symbol or equation can represent different physical behavior outside its valid device region, frequency range, timing model, or protocol abstraction.
+15. In Diodes, Rectifiers, Thyristors, and Device Models, the same equation or symbol can change meaning when the operating state, abstraction, timing model, or signal convention changes; verify that the assumed diode, Zener, or SCR state is self-consistent with the solved current and voltage.
 
-16. The Handbook is the exam reference; using its definitions prevents hidden differences in constants, RMS/peak values, sign convention, or model form.
+16. The FE Reference Handbook is the exam reference for Diodes, Rectifiers, Thyristors, and Device Models. Match its variable definitions and conventions before substitution; external references support only learned material not developed in the Handbook.
 
-17. Algebra can be internally consistent while predicting an impossible device state, voltage, timing relationship, address range, or complexity claim. The physical/logical model must also be satisfied.
+17. An algebraically consistent answer can still be invalid in Diodes, Rectifiers, Thyristors, and Device Models. Reject a result that implies a conducting diode that solves to negative forward current or a Zener assumed in breakdown without sufficient current and reselect the appropriate model or state.
 
-18. Limiting cases and order-of-magnitude checks expose sign errors, impossible gains, invalid probabilities, unrealistic timing, and model misuse.
+18. A useful independent check for this chapter is to reverse the diode polarity and verify that the selected piecewise state changes appropriately. If the result does not reduce correctly, recheck the model, sign convention, and arithmetic.
 
-19. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+19. **A.** For **Ideal, constant-drop, and exponential diode models**, the governing section model is \(i_D\approx I_S\!\left(e^{v_D/(\eta V_T)}-1\right)\). Apply it only with the definitions and assumptions stated in §32.1, then verify that the assumed diode, Zener, or SCR state is self-consistent with the solved current and voltage.
 
-20. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+20. **A.** For **Diode operating point and load-line analysis**, the governing section model is \(V_S=i_D R+v_D\). Apply it only with the definitions and assumptions stated in §32.2, then verify that the assumed diode, Zener, or SCR state is self-consistent with the solved current and voltage.
 
-21. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+21. **A.** For **Half-wave and full-wave rectification**, the governing section model is \(V_{\text{avg,full-wave}}=\frac{2V_m}{\pi},\qquad V_{\text{rms,full-wave}}=\frac{V_m}{\sqrt2}\). Apply it only with the definitions and assumptions stated in §32.3, then verify that the assumed diode, Zener, or SCR state is self-consistent with the solved current and voltage.
 
-22. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+22. **A.** For **Filter capacitors and ripple concepts**, the governing section model is \(\Delta V\approx \frac{I_L}{f_r C}\). Apply it only with the definitions and assumptions stated in §32.4, then verify that the assumed diode, Zener, or SCR state is self-consistent with the solved current and voltage.
 
-23. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+23. **A.** For **Zener regulation and breakdown operation**, the governing section model is \(I_Z=\frac{V_S-V_Z}{R}-I_L\). Apply it only with the definitions and assumptions stated in §32.5, then verify that the assumed diode, Zener, or SCR state is self-consistent with the solved current and voltage.
 
-24. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+24. **A.** For **SCR operation, triggering, latching, and commutation**, the governing section model is \(\text{forward blocking}\xrightarrow{i_G\text{ trigger}}\text{on state}\). Apply it only with the definitions and assumptions stated in §32.6, then verify that the assumed diode, Zener, or SCR state is self-consistent with the solved current and voltage.
 
-25. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+25. **A.** For **Device-model selection and piecewise circuit solving**, the governing section model is \(\text{assume state}\rightarrow\text{solve}\rightarrow\text{verify state}\). Apply it only with the definitions and assumptions stated in §32.7, then verify that the assumed diode, Zener, or SCR state is self-consistent with the solved current and voltage.
 
-26. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+26. **A.** For an integrated Diodes, Rectifiers, Thyristors, and Device Models problem, separate the physical/logical model from the arithmetic, solve with the relevant section relations, and cross-check the result against the chapter-specific validity conditions.
 
-27. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+27. **A.** In **Diodes, Rectifiers, Thyristors, and Device Models**, the source boundary is explicit: FE-Handbook-supported material remains tied to the ledger, externally supported material uses the chapter references for diode operating-point analysis (SEDRA), and guide synthesis is identified as supplemental explanation rather than Handbook text.
 
 
 ---
@@ -410,25 +415,25 @@ D) It is always only a qualitative concept
 
 ## Practice Problem Solutions
 
-1. Use §32.1. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+1. **Independent check for §32.1.** Begin independently with \(i_D\approx I_S\!\left(e^{v_D/(\eta V_T)}-1\right)\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: With a constant 0.7-V model, a 5-V source and 1-kΩ series resistor give about 4.3 mA when forward biased. Then verify that the assumed diode, Zener, or SCR state is self-consistent with the solved current and voltage.
 
-2. Use §32.2. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+2. **Independent check for §32.2.** Begin independently with \(V_S=i_D R+v_D\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: For an assumed 0.7-V diode drop, verify that the resulting current is positive before accepting the forward-conduction state. Then verify that the assumed diode, Zener, or SCR state is self-consistent with the solved current and voltage.
 
-3. Use §32.3. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+3. **Independent check for §32.3.** Begin independently with \(V_{\text{avg,full-wave}}=\frac{2V_m}{\pi},\qquad V_{\text{rms,full-wave}}=\frac{V_m}{\sqrt2}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: For Vm=10 V, an ideal full-wave rectified sine has average value 6.37 V. Then verify that the assumed diode, Zener, or SCR state is self-consistent with the solved current and voltage.
 
-4. Use §32.4. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+4. **Independent check for §32.4.** Begin independently with \(\Delta V\approx \frac{I_L}{f_r C}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: Doubling C approximately halves ripple for the same load current and ripple frequency. Then verify that the assumed diode, Zener, or SCR state is self-consistent with the solved current and voltage.
 
-5. Use §32.5. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+5. **Independent check for §32.5.** Begin independently with \(I_Z=\frac{V_S-V_Z}{R}-I_L\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: If VS=12 V, VZ=5.1 V, R=470 Ω, and IL=5 mA, IZ≈9.7 mA. Then verify that the assumed diode, Zener, or SCR state is self-consistent with the solved current and voltage.
 
-6. Use §32.6. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+6. **Independent check for §32.6.** Begin independently with \(\text{forward blocking}\xrightarrow{i_G\text{ trigger}}\text{on state}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: A gate pulse can initiate conduction, but removing the pulse does not necessarily turn the SCR off. Then verify that the assumed diode, Zener, or SCR state is self-consistent with the solved current and voltage.
 
-7. Use §32.7. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+7. **Independent check for §32.7.** Begin independently with \(\text{assume state}\rightarrow\text{solve}\rightarrow\text{verify state}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: If an assumed conducting diode yields negative forward current, reject that state and re-solve. Then verify that the assumed diode, Zener, or SCR state is self-consistent with the solved current and voltage.
 
-8. Check device operating region, saturation/clipping, frequency range, RMS-versus-peak convention, timing constraints, address/bit width, or protocol/software preconditions as applicable.
+8. Check the chapter-specific failure mode first: a conducting diode that solves to negative forward current or a Zener assumed in breakdown without sufficient current. Do not accept the numerical or logical result until the assumed diode, Zener, or SCR state is self-consistent with the solved current and voltage.
 
-9. Start with FE Electrical and Computer specification Area 9, then use the Handbook subsection named in the ledger for the specific concept.
+9. For **Diodes, Rectifiers, Thyristors, and Device Models**, start with the FE Electrical and Computer specification/Handbook location recorded in the ledger, then use the chapter's reconciled source set for diode operating-point analysis (SEDRA) when the concept is split-required. That preserves the Handbook-versus-learned-material boundary.
 
-10. Test a simple limiting case: zero input, matched load, very low/high frequency, all-zero/all-one logic, minimum/maximum address, or small input size as appropriate. The result should reduce to a physically or logically sensible form.
+10. Use this limiting check: reverse the diode polarity and verify that the selected piecewise state changes appropriately. The simplified case should produce the expected physical, timing, logic, protocol, or complexity behavior before the full solution is trusted.
 
 ---
 

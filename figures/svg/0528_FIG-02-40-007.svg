@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="648pt" viewBox="0 0 864 648" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-09T04:29:47.695052</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 648 
+L 864 648 
+L 864 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 93.6576 274.0392 
+L 770.3424 274.0392 
+" clip-path="url(#p9919072e65)" style="fill: none; stroke: #23313d; stroke-width: 1.5; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 109.0368 291.924 
+L 109.0368 256.1544 
+" clip-path="url(#p9919072e65)" style="fill: none; stroke: #235a78; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 162.864 291.924 
+L 162.864 256.1544 
+" clip-path="url(#p9919072e65)" style="fill: none; stroke: #235a78; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 739.584 291.924 
+L 739.584 256.1544 
+" clip-path="url(#p9919072e65)" style="fill: none; stroke: #235a78; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="109.0368" y="198.248537" transform="rotate(-0 109.0368 198.248537)">σ₃=0</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="162.864" y="238.489338" transform="rotate(-0 162.864 238.489338)">σ₂=7.574</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="739.584" y="198.248537" transform="rotate(-0 739.584 198.248537)">σ₁=92.426</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #b47722" x="424.3104" y="355.650108" transform="rotate(-0 424.3104 355.650108)">σ₁−σ₃=92.426 MPa</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(159.289062 478.360902)">τ_abs,max=(σ_max−σ_min)/2=46.213 MPa</text>
+    <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(95.171875 512.749573)">In-plane maximum from figures 525–526: 42.426 MPa</text>
+   </g>
+   <g id="patch_2">
+    <path d="M 112.151272 372.4056 
+Q 424.308765 372.4056 736.466258 372.4056 
+" clip-path="url(#p9919072e65)" style="fill: none; stroke: #b47722; stroke-linecap: round"/>
+    <path d="M 118.151272 375.4056 
+L 112.151272 372.4056 
+L 118.151272 369.4056 
+" clip-path="url(#p9919072e65)" style="fill: none; stroke: #b47722; stroke-linecap: round"/>
+    <path d="M 730.466258 369.4056 
+L 736.466258 372.4056 
+L 730.466258 375.4056 
+" clip-path="url(#p9919072e65)" style="fill: none; stroke: #b47722; stroke-linecap: round"/>
+   </g>
+  </g>
+  <g id="text_6">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Absolute maximum shear uses the largest three-dimensional principal separation</text>
+  </g>
+  <g id="text_7">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="47.52" y="630.504" transform="rotate(-0 47.52 630.504)">0528  •  FIG-02-40-007</text>
+  </g>
+  <g id="text_8">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(122.307812 590.616625)">Plane stress contributes a third principal stress of zero. Sort all three algebraically before taking half the largest separation;</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(360.495313 603.334125)">line positions are schematic.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p9919072e65">
+   <rect x="47.52" y="90.72" width="768.96" height="447.12"/>
+  </clipPath>
+ </defs>
+</svg>

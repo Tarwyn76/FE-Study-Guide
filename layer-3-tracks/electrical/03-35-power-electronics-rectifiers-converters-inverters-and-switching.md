@@ -65,7 +65,7 @@ Power electronics uses semiconductor devices as switches rather than linear diss
 
 **Problem.** A switch with 1.5-V on-state drop at 20 A dissipates 30 W while on.
 
-**Solution.** Use the relation and model in §35.1, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §35.1 relation \(P_{\text{switch,cond}}\approx V_{\text{on}}I\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: A switch with 1.5-V on-state drop at 20 A dissipates 30 W while on. Carry the stated units through the calculation and accept the result only after confirming that the stated ideal-converter model, duty-cycle range, conduction mode, and device limits are satisfied.
 
 ---
 
@@ -81,7 +81,7 @@ Power rectifiers convert AC to DC. The Handbook provides a general n-pulse recti
 
 **Problem.** Increasing pulse number generally raises ripple frequency and can reduce filtering burden.
 
-**Solution.** Use the relation and model in §35.2, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §35.2 relation \(\overline V_o=\text{rectifier average determined by pulse number and input RMS}\). The statement follows from the physical or logical meaning of **Single-phase and multipulse rectifier concepts**: Increasing pulse number generally raises ripple frequency and can reduce filtering burden. Accept that conclusion only while the stated ideal-converter model, duty-cycle range, conduction mode, and device limits are satisfied.
 
 ---
 
@@ -97,7 +97,7 @@ For an ideal buck converter in continuous steady operation, duty ratio controls 
 
 **Problem.** Vin=24 V and D=0.25 gives Vo=6 V ideally.
 
-**Solution.** Use the relation and model in §35.3, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §35.3 relation \(\frac{V_o}{V_{in}}=D\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: Vin=24 V and D=0.25 gives Vo=6 V ideally. Carry the stated units through the calculation and accept the result only after confirming that the stated ideal-converter model, duty-cycle range, conduction mode, and device limits are satisfied.
 
 ---
 
@@ -113,7 +113,7 @@ Ideal boost and inverting buck-boost gains follow from inductor volt-second bala
 
 **Problem.** For a boost converter at D=0.5, ideal voltage gain is 2.
 
-**Solution.** Use the relation and model in §35.4, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §35.4 relation \(\frac{V_o}{V_{in}}=\frac{1}{1-D},\qquad \frac{V_o}{V_{in}}=-\frac{D}{1-D}\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: For a boost converter at D=0.5, ideal voltage gain is 2. Carry the stated units through the calculation and accept the result only after confirming that the stated ideal-converter model, duty-cycle range, conduction mode, and device limits are satisfied.
 
 ---
 
@@ -129,7 +129,7 @@ Switching ripple follows directly from inductor and capacitor constitutive relat
 
 **Problem.** Doubling switching frequency approximately halves a triangular ripple increment under otherwise identical conditions.
 
-**Solution.** Use the relation and model in §35.5, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §35.5 relation \(\Delta i_L\approx \frac{V_L\Delta t}{L},\qquad \Delta v_C\approx \frac{I_C\Delta t}{C}\). The statement follows from the physical or logical meaning of **Inductor current ripple and capacitor voltage ripple**: Doubling switching frequency approximately halves a triangular ripple increment under otherwise identical conditions. Accept that conclusion only while the stated ideal-converter model, duty-cycle range, conduction mode, and device limits are satisfied.
 
 ---
 
@@ -145,7 +145,7 @@ A voltage-source inverter synthesizes AC from DC by controlled switching. In sin
 
 **Problem.** Increasing m within the linear range increases the fundamental AC output voltage.
 
-**Solution.** Use the relation and model in §35.6, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §35.6 relation \(V_{LL,1,\mathrm{rms}}\propto mV_{dc}\). The statement follows from the physical or logical meaning of **Voltage-source inverters and PWM**: Increasing m within the linear range increases the fundamental AC output voltage. Accept that conclusion only while the stated ideal-converter model, duty-cycle range, conduction mode, and device limits are satisfied.
 
 ---
 
@@ -161,7 +161,7 @@ Higher switching frequency can reduce passive size and ripple but increase switc
 
 **Problem.** A 1-kW converter with 50 W total loss has efficiency about 95.2%.
 
-**Solution.** Use the relation and model in §35.7, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §35.7 relation \(\eta=\frac{P_o}{P_{in}}=\frac{P_o}{P_o+P_{\text{loss}}}\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: A 1-kW converter with 50 W total loss has efficiency about 95.2%. Carry the stated units through the calculation and accept the result only after confirming that the stated ideal-converter model, duty-cycle range, conduction mode, and device limits are satisfied.
 
 ---
 
@@ -171,13 +171,13 @@ Higher switching frequency can reduce passive size and ripple but increase switc
 
 **Problem.** A calculation gives a numerical answer but violates the assumed device region, logic state, or protocol condition. Is the answer valid?
 
-**Solution.** No. Re-select the appropriate piecewise model or system state and solve again. Algebraic consistency does not override the model's validity conditions.
+**Solution.** No. In **Power Electronics — Rectifiers, Converters, Inverters, and Switching**, a tidy numerical or logical result is still invalid if it contradicts the model assumptions. A representative failure is a duty ratio outside 0–1 or a ripple relation used after its conduction-mode assumption fails. Return to the applicable section, choose the state/model consistent with the solved quantities, recompute if needed, and confirm that the stated ideal-converter model, duty-cycle range, conduction mode, and device limits are satisfied.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the expression printed in the FE Reference Handbook. Which should govern an exam solution?
 
-**Solution.** Use the Handbook expression and its definitions unless the problem explicitly supplies a different model.
+**Solution.** Use the FE Reference Handbook expression and its definitions as the controlling exam reference unless the problem explicitly defines another model. For **Power Electronics — Rectifiers, Converters, Inverters, and Switching**, match symbols, units, reference directions, RMS/peak or digital conventions, and assumptions to the Handbook first. External references support only specification-required learned concepts that the Handbook does not directly develop.
 
 ---
 
@@ -185,7 +185,12 @@ Higher switching frequency can reduce passive size and ripple but increase switc
 
 Primary source basis: **FE Electrical and Computer specification Area 9; FE Reference Handbook 10.6 Electrical and Computer Engineering, printed pp. 361–421, with the specific Handbook subsections identified in the ledger.**
 
-**Source boundary:** The FE Electrical and Computer specification includes both directly tabulated Handbook material and learned engineering/computing concepts. The chapter does not assign false Handbook pages to material that the specification requires but the Handbook does not directly develop.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required engineering/computing knowledge that is not fully developed in the Handbook. **Guide synthesis** connects those two bodies of material into exam-oriented explanations and examples; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Erickson, R. W., & Maksimović, D. (2020). *Fundamentals of Power Electronics* (3rd ed.). Springer. Hardcover ISBN 978-3-030-43879-1. DOI: 10.1007/978-3-030-43881-4. Supporting scope: Power-switching devices, converter steady-state models, ripple, switching losses, and efficiency.
+
+The external references support only the learned/application portion of the specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +359,31 @@ D) It is always only a qualitative concept
 
 14. For **power-converter efficiency**, verify operating region/model validity, units or logic levels, sign/polarity convention, and loading or boundary conditions before accepting the result.
 
-15. The same symbol or equation can represent different physical behavior outside its valid device region, frequency range, timing model, or protocol abstraction.
+15. In Power Electronics — Rectifiers, Converters, Inverters, and Switching, the same equation or symbol can change meaning when the operating state, abstraction, timing model, or signal convention changes; verify that the stated ideal-converter model, duty-cycle range, conduction mode, and device limits are satisfied.
 
-16. The Handbook is the exam reference; using its definitions prevents hidden differences in constants, RMS/peak values, sign convention, or model form.
+16. The FE Reference Handbook is the exam reference for Power Electronics — Rectifiers, Converters, Inverters, and Switching. Match its variable definitions and conventions before substitution; external references support only learned material not developed in the Handbook.
 
-17. Algebra can be internally consistent while predicting an impossible device state, voltage, timing relationship, address range, or complexity claim. The physical/logical model must also be satisfied.
+17. An algebraically consistent answer can still be invalid in Power Electronics — Rectifiers, Converters, Inverters, and Switching. Reject a result that implies a duty ratio outside 0–1 or a ripple relation used after its conduction-mode assumption fails and reselect the appropriate model or state.
 
-18. Limiting cases and order-of-magnitude checks expose sign errors, impossible gains, invalid probabilities, unrealistic timing, and model misuse.
+18. A useful independent check for this chapter is to check D→0 and the applicable D→1 limit only inside the converter model's valid range. If the result does not reduce correctly, recheck the model, sign convention, and arithmetic.
 
-19. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+19. **A.** For **Power-switching devices and idealized switching states**, the governing section model is \(P_{\text{switch,cond}}\approx V_{\text{on}}I\). Apply it only with the definitions and assumptions stated in §35.1, then verify that the stated ideal-converter model, duty-cycle range, conduction mode, and device limits are satisfied.
 
-20. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+20. **A.** For **Single-phase and multipulse rectifier concepts**, the governing section model is \(\overline V_o=\text{rectifier average determined by pulse number and input RMS}\). Apply it only with the definitions and assumptions stated in §35.2, then verify that the stated ideal-converter model, duty-cycle range, conduction mode, and device limits are satisfied.
 
-21. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+21. **A.** For **Buck converter steady-state gain**, the governing section model is \(\frac{V_o}{V_{in}}=D\). Apply it only with the definitions and assumptions stated in §35.3, then verify that the stated ideal-converter model, duty-cycle range, conduction mode, and device limits are satisfied.
 
-22. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+22. **A.** For **Boost and buck-boost converter gains**, the governing section model is \(\frac{V_o}{V_{in}}=\frac{1}{1-D},\qquad \frac{V_o}{V_{in}}=-\frac{D}{1-D}\). Apply it only with the definitions and assumptions stated in §35.4, then verify that the stated ideal-converter model, duty-cycle range, conduction mode, and device limits are satisfied.
 
-23. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+23. **A.** For **Inductor current ripple and capacitor voltage ripple**, the governing section model is \(\Delta i_L\approx \frac{V_L\Delta t}{L},\qquad \Delta v_C\approx \frac{I_C\Delta t}{C}\). Apply it only with the definitions and assumptions stated in §35.5, then verify that the stated ideal-converter model, duty-cycle range, conduction mode, and device limits are satisfied.
 
-24. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+24. **A.** For **Voltage-source inverters and PWM**, the governing section model is \(V_{LL,1,\mathrm{rms}}\propto mV_{dc}\). Apply it only with the definitions and assumptions stated in §35.6, then verify that the stated ideal-converter model, duty-cycle range, conduction mode, and device limits are satisfied.
 
-25. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+25. **A.** For **Efficiency, thermal stress, and switching tradeoffs**, the governing section model is \(\eta=\frac{P_o}{P_{in}}=\frac{P_o}{P_o+P_{\text{loss}}}\). Apply it only with the definitions and assumptions stated in §35.7, then verify that the stated ideal-converter model, duty-cycle range, conduction mode, and device limits are satisfied.
 
-26. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+26. **A.** For an integrated Power Electronics — Rectifiers, Converters, Inverters, and Switching problem, separate the physical/logical model from the arithmetic, solve with the relevant section relations, and cross-check the result against the chapter-specific validity conditions.
 
-27. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+27. **A.** In **Power Electronics — Rectifiers, Converters, Inverters, and Switching**, the source boundary is explicit: FE-Handbook-supported material remains tied to the ledger, externally supported material uses the chapter references for switch-mode conversion and ripple analysis (ERICKSON), and guide synthesis is identified as supplemental explanation rather than Handbook text.
 
 
 ---
@@ -410,25 +415,25 @@ D) It is always only a qualitative concept
 
 ## Practice Problem Solutions
 
-1. Use §35.1. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+1. **Independent check for §35.1.** Begin independently with \(P_{\text{switch,cond}}\approx V_{\text{on}}I\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: A switch with 1.5-V on-state drop at 20 A dissipates 30 W while on. Then verify that the stated ideal-converter model, duty-cycle range, conduction mode, and device limits are satisfied.
 
-2. Use §35.2. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+2. **Independent check for §35.2.** Begin independently with \(\overline V_o=\text{rectifier average determined by pulse number and input RMS}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: Increasing pulse number generally raises ripple frequency and can reduce filtering burden. Then verify that the stated ideal-converter model, duty-cycle range, conduction mode, and device limits are satisfied.
 
-3. Use §35.3. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+3. **Independent check for §35.3.** Begin independently with \(\frac{V_o}{V_{in}}=D\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: Vin=24 V and D=0.25 gives Vo=6 V ideally. Then verify that the stated ideal-converter model, duty-cycle range, conduction mode, and device limits are satisfied.
 
-4. Use §35.4. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+4. **Independent check for §35.4.** Begin independently with \(\frac{V_o}{V_{in}}=\frac{1}{1-D},\qquad \frac{V_o}{V_{in}}=-\frac{D}{1-D}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: For a boost converter at D=0.5, ideal voltage gain is 2. Then verify that the stated ideal-converter model, duty-cycle range, conduction mode, and device limits are satisfied.
 
-5. Use §35.5. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+5. **Independent check for §35.5.** Begin independently with \(\Delta i_L\approx \frac{V_L\Delta t}{L},\qquad \Delta v_C\approx \frac{I_C\Delta t}{C}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: Doubling switching frequency approximately halves a triangular ripple increment under otherwise identical conditions. Then verify that the stated ideal-converter model, duty-cycle range, conduction mode, and device limits are satisfied.
 
-6. Use §35.6. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+6. **Independent check for §35.6.** Begin independently with \(V_{LL,1,\mathrm{rms}}\propto mV_{dc}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: Increasing m within the linear range increases the fundamental AC output voltage. Then verify that the stated ideal-converter model, duty-cycle range, conduction mode, and device limits are satisfied.
 
-7. Use §35.7. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+7. **Independent check for §35.7.** Begin independently with \(\eta=\frac{P_o}{P_{in}}=\frac{P_o}{P_o+P_{\text{loss}}}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: A 1-kW converter with 50 W total loss has efficiency about 95.2%. Then verify that the stated ideal-converter model, duty-cycle range, conduction mode, and device limits are satisfied.
 
-8. Check device operating region, saturation/clipping, frequency range, RMS-versus-peak convention, timing constraints, address/bit width, or protocol/software preconditions as applicable.
+8. Check the chapter-specific failure mode first: a duty ratio outside 0–1 or a ripple relation used after its conduction-mode assumption fails. Do not accept the numerical or logical result until the stated ideal-converter model, duty-cycle range, conduction mode, and device limits are satisfied.
 
-9. Start with FE Electrical and Computer specification Area 9, then use the Handbook subsection named in the ledger for the specific concept.
+9. For **Power Electronics — Rectifiers, Converters, Inverters, and Switching**, start with the FE Electrical and Computer specification/Handbook location recorded in the ledger, then use the chapter's reconciled source set for switch-mode conversion and ripple analysis (ERICKSON) when the concept is split-required. That preserves the Handbook-versus-learned-material boundary.
 
-10. Test a simple limiting case: zero input, matched load, very low/high frequency, all-zero/all-one logic, minimum/maximum address, or small input size as appropriate. The result should reduce to a physically or logically sensible form.
+10. Use this limiting check: check D→0 and the applicable D→1 limit only inside the converter model's valid range. The simplified case should produce the expected physical, timing, logic, protocol, or complexity behavior before the full solution is trusted.
 
 ---
 

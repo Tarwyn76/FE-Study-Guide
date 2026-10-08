@@ -65,7 +65,7 @@ A processor combines datapath resources with control logic to execute instructio
 
 **Problem.** An arithmetic instruction typically reads operands, executes in the ALU, and writes a result.
 
-**Solution.** Use the relation and model in §44.1, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §44.1 relation \(\text{fetch}\rightarrow\text{decode}\rightarrow\text{execute}\rightarrow\text{memory/writeback}\). The statement follows from the physical or logical meaning of **Processor datapath, control, and instruction execution**: An arithmetic instruction typically reads operands, executes in the ALU, and writes a result. Accept that conclusion only while the instruction, address-field, cache, memory, and concurrency assumptions match the stated computer architecture.
 
 ---
 
@@ -81,7 +81,7 @@ Harvard architecture separates instruction and data memories/paths, while von Ne
 
 **Problem.** Separate instruction and data paths can permit concurrent instruction fetch and data access.
 
-**Solution.** Use the relation and model in §44.2, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §44.2 relation \(\text{instruction memory path}\neq\text{data memory path}\). The statement follows from the physical or logical meaning of **Harvard and von Neumann organization**: Separate instruction and data paths can permit concurrent instruction fetch and data access. Accept that conclusion only while the instruction, address-field, cache, memory, and concurrency assumptions match the stated computer architecture.
 
 ---
 
@@ -97,7 +97,7 @@ Memory hierarchy trades capacity, latency, cost, and volatility. Cache reduces a
 
 **Problem.** L1 cache is typically smaller and faster than main memory.
 
-**Solution.** Use the relation and model in §44.3, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §44.3 relation \(\text{speed}\uparrow\ \text{usually as capacity}\downarrow\text{ near the CPU}\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: L1 cache is typically smaller and faster than main memory. Carry the stated units through the calculation and accept the result only after confirming that the instruction, address-field, cache, memory, and concurrency assumptions match the stated computer architecture.
 
 ---
 
@@ -113,7 +113,7 @@ Cache addresses divide into tag, index, and block-offset fields. Associativity c
 
 **Problem.** A 64-byte block requires 6 block-offset bits.
 
-**Solution.** Use the relation and model in §44.4, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §44.4 relation \(C=SAB,\quad b_{\text{offset}}=\log_2 B,\quad b_{\text{index}}=\log_2 S\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: A 64-byte block requires 6 block-offset bits. Carry the stated units through the calculation and accept the result only after confirming that the instruction, address-field, cache, memory, and concurrency assumptions match the stated computer architecture.
 
 ---
 
@@ -129,7 +129,7 @@ Replacement policies such as LRU and FIFO choose victims; write-through and writ
 
 **Problem.** A dirty line in a write-back cache must be written to memory before eviction.
 
-**Solution.** Use the relation and model in §44.5, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §44.5 relation \(\text{miss}+\text{full candidate set}\rightarrow\text{replacement policy}\). The statement follows from the physical or logical meaning of **Cache replacement and write policies**: A dirty line in a write-back cache must be written to memory before eviction. Accept that conclusion only while the instruction, address-field, cache, memory, and concurrency assumptions match the stated computer architecture.
 
 ---
 
@@ -145,7 +145,7 @@ Interfacing connects processors to sensors, converters, storage, and communicati
 
 **Problem.** A memory-mapped peripheral register is accessed using address-space operations defined by the processor architecture.
 
-**Solution.** Use the relation and model in §44.6, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §44.6 relation \(\text{processor bus}\leftrightarrow\text{address/data/control}\leftrightarrow\text{peripheral}\). The statement follows from the physical or logical meaning of **Memory-mapped I/O, buses, and peripheral interfacing**: A memory-mapped peripheral register is accessed using address-space operations defined by the processor architecture. Accept that conclusion only while the instruction, address-field, cache, memory, and concurrency assumptions match the stated computer architecture.
 
 ---
 
@@ -161,7 +161,7 @@ Multiple cores can execute instructions concurrently, while software threads sha
 
 **Problem.** Two cores do not automatically halve runtime for a program that cannot execute its work in parallel.
 
-**Solution.** Use the relation and model in §44.7, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §44.7 relation \(\text{parallel speedup limited by serial work and shared-resource effects}\). The statement follows from the physical or logical meaning of **Multicore, threading, and concurrency concepts**: Two cores do not automatically halve runtime for a program that cannot execute its work in parallel. Accept that conclusion only while the instruction, address-field, cache, memory, and concurrency assumptions match the stated computer architecture.
 
 ---
 
@@ -171,13 +171,13 @@ Multiple cores can execute instructions concurrently, while software threads sha
 
 **Problem.** A calculation gives a numerical answer but violates the assumed device region, logic state, or protocol condition. Is the answer valid?
 
-**Solution.** No. Re-select the appropriate piecewise model or system state and solve again. Algebraic consistency does not override the model's validity conditions.
+**Solution.** No. In **Computer Systems — Microprocessors, Memory, and Interfacing**, a tidy numerical or logical result is still invalid if it contradicts the model assumptions. A representative failure is an address-field split inconsistent with block size/associativity or a speedup claim that ignores serial work. Return to the applicable section, choose the state/model consistent with the solved quantities, recompute if needed, and confirm that the instruction, address-field, cache, memory, and concurrency assumptions match the stated computer architecture.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the expression printed in the FE Reference Handbook. Which should govern an exam solution?
 
-**Solution.** Use the Handbook expression and its definitions unless the problem explicitly supplies a different model.
+**Solution.** Use the FE Reference Handbook expression and its definitions as the controlling exam reference unless the problem explicitly defines another model. For **Computer Systems — Microprocessors, Memory, and Interfacing**, match symbols, units, reference directions, RMS/peak or digital conventions, and assumptions to the Handbook first. External references support only specification-required learned concepts that the Handbook does not directly develop.
 
 ---
 
@@ -185,7 +185,12 @@ Multiple cores can execute instructions concurrently, while software threads sha
 
 Primary source basis: **FE Electrical and Computer specification Area 16; FE Reference Handbook 10.6 Electrical and Computer Engineering, printed pp. 361–421, with the specific Handbook subsections identified in the ledger.**
 
-**Source boundary:** The FE Electrical and Computer specification includes both directly tabulated Handbook material and learned engineering/computing concepts. The chapter does not assign false Handbook pages to material that the specification requires but the Handbook does not directly develop.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required engineering/computing knowledge that is not fully developed in the Handbook. **Guide synthesis** connects those two bodies of material into exam-oriented explanations and examples; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Patterson, D. A., & Hennessy, J. L. (2020). *Computer Organization and Design RISC-V Edition: The Hardware/Software Interface* (2nd ed.). Morgan Kaufmann/Elsevier. ISBN 978-0-12-820331-6. Supporting scope: Processor datapaths, control, instruction execution, memory hierarchy, cache organization, I/O, and parallelism.
+
+The external references support only the learned/application portion of the specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +359,31 @@ D) It is always only a qualitative concept
 
 14. For **multicore processing**, verify operating region/model validity, units or logic levels, sign/polarity convention, and loading or boundary conditions before accepting the result.
 
-15. The same symbol or equation can represent different physical behavior outside its valid device region, frequency range, timing model, or protocol abstraction.
+15. In Computer Systems — Microprocessors, Memory, and Interfacing, the same equation or symbol can change meaning when the operating state, abstraction, timing model, or signal convention changes; verify that the instruction, address-field, cache, memory, and concurrency assumptions match the stated computer architecture.
 
-16. The Handbook is the exam reference; using its definitions prevents hidden differences in constants, RMS/peak values, sign convention, or model form.
+16. The FE Reference Handbook is the exam reference for Computer Systems — Microprocessors, Memory, and Interfacing. Match its variable definitions and conventions before substitution; external references support only learned material not developed in the Handbook.
 
-17. Algebra can be internally consistent while predicting an impossible device state, voltage, timing relationship, address range, or complexity claim. The physical/logical model must also be satisfied.
+17. An algebraically consistent answer can still be invalid in Computer Systems — Microprocessors, Memory, and Interfacing. Reject a result that implies an address-field split inconsistent with block size/associativity or a speedup claim that ignores serial work and reselect the appropriate model or state.
 
-18. Limiting cases and order-of-magnitude checks expose sign errors, impossible gains, invalid probabilities, unrealistic timing, and model misuse.
+18. A useful independent check for this chapter is to use a power-of-two block size and verify that offset bits equal log2(block bytes). If the result does not reduce correctly, recheck the model, sign convention, and arithmetic.
 
-19. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+19. **A.** For **Processor datapath, control, and instruction execution**, the governing section model is \(\text{fetch}\rightarrow\text{decode}\rightarrow\text{execute}\rightarrow\text{memory/writeback}\). Apply it only with the definitions and assumptions stated in §44.1, then verify that the instruction, address-field, cache, memory, and concurrency assumptions match the stated computer architecture.
 
-20. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+20. **A.** For **Harvard and von Neumann organization**, the governing section model is \(\text{instruction memory path}\neq\text{data memory path}\). Apply it only with the definitions and assumptions stated in §44.2, then verify that the instruction, address-field, cache, memory, and concurrency assumptions match the stated computer architecture.
 
-21. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+21. **A.** For **RAM, ROM, cache, and storage hierarchy**, the governing section model is \(\text{speed}\uparrow\ \text{usually as capacity}\downarrow\text{ near the CPU}\). Apply it only with the definitions and assumptions stated in §44.3, then verify that the instruction, address-field, cache, memory, and concurrency assumptions match the stated computer architecture.
 
-22. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+22. **A.** For **Cache size, associativity, and address fields**, the governing section model is \(C=SAB,\quad b_{\text{offset}}=\log_2 B,\quad b_{\text{index}}=\log_2 S\). Apply it only with the definitions and assumptions stated in §44.4, then verify that the instruction, address-field, cache, memory, and concurrency assumptions match the stated computer architecture.
 
-23. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+23. **A.** For **Cache replacement and write policies**, the governing section model is \(\text{miss}+\text{full candidate set}\rightarrow\text{replacement policy}\). Apply it only with the definitions and assumptions stated in §44.5, then verify that the instruction, address-field, cache, memory, and concurrency assumptions match the stated computer architecture.
 
-24. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+24. **A.** For **Memory-mapped I/O, buses, and peripheral interfacing**, the governing section model is \(\text{processor bus}\leftrightarrow\text{address/data/control}\leftrightarrow\text{peripheral}\). Apply it only with the definitions and assumptions stated in §44.6, then verify that the instruction, address-field, cache, memory, and concurrency assumptions match the stated computer architecture.
 
-25. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+25. **A.** For **Multicore, threading, and concurrency concepts**, the governing section model is \(\text{parallel speedup limited by serial work and shared-resource effects}\). Apply it only with the definitions and assumptions stated in §44.7, then verify that the instruction, address-field, cache, memory, and concurrency assumptions match the stated computer architecture.
 
-26. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+26. **A.** For an integrated Computer Systems — Microprocessors, Memory, and Interfacing problem, separate the physical/logical model from the arithmetic, solve with the relevant section relations, and cross-check the result against the chapter-specific validity conditions.
 
-27. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+27. **A.** In **Computer Systems — Microprocessors, Memory, and Interfacing**, the source boundary is explicit: FE-Handbook-supported material remains tied to the ledger, externally supported material uses the chapter references for processor datapath, memory hierarchy, and computer organization (PATTERSON), and guide synthesis is identified as supplemental explanation rather than Handbook text.
 
 
 ---
@@ -410,25 +415,25 @@ D) It is always only a qualitative concept
 
 ## Practice Problem Solutions
 
-1. Use §44.1. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+1. **Independent check for §44.1.** Begin independently with \(\text{fetch}\rightarrow\text{decode}\rightarrow\text{execute}\rightarrow\text{memory/writeback}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: An arithmetic instruction typically reads operands, executes in the ALU, and writes a result. Then verify that the instruction, address-field, cache, memory, and concurrency assumptions match the stated computer architecture.
 
-2. Use §44.2. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+2. **Independent check for §44.2.** Begin independently with \(\text{instruction memory path}\neq\text{data memory path}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: Separate instruction and data paths can permit concurrent instruction fetch and data access. Then verify that the instruction, address-field, cache, memory, and concurrency assumptions match the stated computer architecture.
 
-3. Use §44.3. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+3. **Independent check for §44.3.** Begin independently with \(\text{speed}\uparrow\ \text{usually as capacity}\downarrow\text{ near the CPU}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: L1 cache is typically smaller and faster than main memory. Then verify that the instruction, address-field, cache, memory, and concurrency assumptions match the stated computer architecture.
 
-4. Use §44.4. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+4. **Independent check for §44.4.** Begin independently with \(C=SAB,\quad b_{\text{offset}}=\log_2 B,\quad b_{\text{index}}=\log_2 S\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: A 64-byte block requires 6 block-offset bits. Then verify that the instruction, address-field, cache, memory, and concurrency assumptions match the stated computer architecture.
 
-5. Use §44.5. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+5. **Independent check for §44.5.** Begin independently with \(\text{miss}+\text{full candidate set}\rightarrow\text{replacement policy}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: A dirty line in a write-back cache must be written to memory before eviction. Then verify that the instruction, address-field, cache, memory, and concurrency assumptions match the stated computer architecture.
 
-6. Use §44.6. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+6. **Independent check for §44.6.** Begin independently with \(\text{processor bus}\leftrightarrow\text{address/data/control}\leftrightarrow\text{peripheral}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: A memory-mapped peripheral register is accessed using address-space operations defined by the processor architecture. Then verify that the instruction, address-field, cache, memory, and concurrency assumptions match the stated computer architecture.
 
-7. Use §44.7. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+7. **Independent check for §44.7.** Begin independently with \(\text{parallel speedup limited by serial work and shared-resource effects}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: Two cores do not automatically halve runtime for a program that cannot execute its work in parallel. Then verify that the instruction, address-field, cache, memory, and concurrency assumptions match the stated computer architecture.
 
-8. Check device operating region, saturation/clipping, frequency range, RMS-versus-peak convention, timing constraints, address/bit width, or protocol/software preconditions as applicable.
+8. Check the chapter-specific failure mode first: an address-field split inconsistent with block size/associativity or a speedup claim that ignores serial work. Do not accept the numerical or logical result until the instruction, address-field, cache, memory, and concurrency assumptions match the stated computer architecture.
 
-9. Start with FE Electrical and Computer specification Area 16, then use the Handbook subsection named in the ledger for the specific concept.
+9. For **Computer Systems — Microprocessors, Memory, and Interfacing**, start with the FE Electrical and Computer specification/Handbook location recorded in the ledger, then use the chapter's reconciled source set for processor datapath, memory hierarchy, and computer organization (PATTERSON) when the concept is split-required. That preserves the Handbook-versus-learned-material boundary.
 
-10. Test a simple limiting case: zero input, matched load, very low/high frequency, all-zero/all-one logic, minimum/maximum address, or small input size as appropriate. The result should reduce to a physically or logically sensible form.
+10. Use this limiting check: use a power-of-two block size and verify that offset bits equal log2(block bytes). The simplified case should produce the expected physical, timing, logic, protocol, or complexity behavior before the full solution is trusted.
 
 ---
 

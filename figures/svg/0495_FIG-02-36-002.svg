@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="648pt" viewBox="0 0 864 648" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-08T12:21:46.593882</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 648 
+L 864 648 
+L 864 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="text_1">
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(619.769387 147.676086)">a_B = a_A</text>
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(548.844934 179.313664)">+ α × r_B/A − ω²r_B/A</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(578.69845 310.792606)">AB=2 m; ω=3 rad/s</text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(616.000012 337.747294)">α=+2 rad/s²</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(584.999466 447.388172)">a_t,rel=(0,4) m/s²</text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(566.982122 476.274656)">a_n,rel=(−18,0) m/s²</text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(583.227591 505.161141)">a_B=(−17,4) m/s²</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="line2d_1">
+    <path d="M 170.762727 348.447273 
+L 320.980909 348.447273 
+" clip-path="url(#p81e892cce6)" style="fill: none; stroke: #235a78; stroke-width: 6; stroke-linecap: square"/>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="151.985455" y="383.457784" transform="rotate(-0 151.985455 383.457784)">A</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="328.491818" y="383.457784" transform="rotate(-0 328.491818 383.457784)">B</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #a23b34" x="223.339091" y="322.708089" transform="rotate(-0 223.339091 322.708089)">−ω²r_B/A</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #b47722" x="336.002727" y="239.753636" transform="rotate(-0 336.002727 239.753636)">α × r_B/A</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #26776f" x="193.295455" y="434.989538" transform="rotate(-0 193.295455 434.989538)">a_A=(1,0)</text>
+   </g>
+   <g id="patch_2">
+    <path d="M 318.981927 348.447273 
+Q 257.137877 348.447273 197.194484 348.447273 
+" clip-path="url(#p81e892cce6)" style="fill: none; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 203.194484 351.447273 
+L 197.194484 348.447273 
+L 203.194484 345.447273 
+z
+" clip-path="url(#p81e892cce6)" style="fill: #a23b34; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 320.980909 346.446228 
+Q 320.980909 280.850541 320.980909 217.155513 
+" clip-path="url(#p81e892cce6)" style="fill: none; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 317.980909 223.155513 
+L 320.980909 217.155513 
+L 323.980909 223.155513 
+z
+" clip-path="url(#p81e892cce6)" style="fill: #b47722; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 172.766064 393.512727 
+Q 208.317217 393.512727 241.967713 393.512727 
+" clip-path="url(#p81e892cce6)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 235.967713 390.512727 
+L 241.967713 393.512727 
+L 235.967713 396.512727 
+z
+" clip-path="url(#p81e892cce6)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 170.762727 357.460364 
+C 173.153027 357.460364 175.445748 356.510688 177.135945 354.82049 
+C 178.826142 353.130293 179.775818 350.837572 179.775818 348.447273 
+C 179.775818 346.056973 178.826142 343.764252 177.135945 342.074055 
+C 175.445748 340.383858 173.153027 339.434182 170.762727 339.434182 
+C 168.372428 339.434182 166.079707 340.383858 164.38951 342.074055 
+C 162.699312 343.764252 161.749636 346.056973 161.749636 348.447273 
+C 161.749636 350.837572 162.699312 353.130293 164.38951 354.82049 
+C 166.079707 356.510688 168.372428 357.460364 170.762727 357.460364 
+z
+" clip-path="url(#p81e892cce6)" style="fill: #ffffff; stroke: #23313d; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 320.980909 357.460364 
+C 323.371209 357.460364 325.66393 356.510688 327.354127 354.82049 
+C 329.044324 353.130293 329.994 350.837572 329.994 348.447273 
+C 329.994 346.056973 329.044324 343.764252 327.354127 342.074055 
+C 325.66393 340.383858 323.371209 339.434182 320.980909 339.434182 
+C 318.590609 339.434182 316.297888 340.383858 314.607691 342.074055 
+C 312.917494 343.764252 311.967818 346.056973 311.967818 348.447273 
+C 311.967818 350.837572 312.917494 353.130293 314.607691 354.82049 
+C 316.297888 356.510688 318.590609 357.460364 320.980909 357.460364 
+z
+" clip-path="url(#p81e892cce6)" style="fill: #ffffff; stroke: #23313d; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+  </g>
+  <g id="text_9">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Relative acceleration has tangential and inward normal components</text>
+  </g>
+  <g id="text_10">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="47.52" y="630.504" transform="rotate(-0 47.52 630.504)">0495  •  FIG-02-36-002</text>
+  </g>
+  <g id="text_11">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(118.5875 590.616625)">Fixed-length rigid link in planar motion. The normal relative term points from B toward A. Arrows are schematic and are not a</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(331.177344 603.334125)">comparison of acceleration magnitudes.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p81e892cce6">
+   <rect x="73.120909" y="123.12" width="398.078182" height="330.48"/>
+  </clipPath>
+ </defs>
+</svg>

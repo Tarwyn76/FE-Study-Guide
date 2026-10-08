@@ -65,7 +65,7 @@ Survey directions must be carried in one convention at a time. Bearings are quad
 
 **Problem.** Bearing S30°E corresponds to azimuth 150°.
 
-**Solution.** Apply the relation and definitions in §15.1; the stated result follows with consistent units and sign convention.
+**Solution.** Convert quadrant bearing S30°E to azimuth measured clockwise from north. In the southeast quadrant the azimuth is \(180^\circ-30^\circ=150^\circ\). Therefore **S30°E = 150° azimuth**.
 
 ---
 
@@ -81,7 +81,7 @@ A traverse converts line length and direction into north-south and east-west com
 
 **Problem.** For L=100 ft at azimuth 30°, ΔN=86.6 ft and ΔE=50.0 ft.
 
-**Solution.** Apply the relation and definitions in §15.2; the stated result follows with consistent units and sign convention.
+**Solution.** Resolve the 100-ft line into northing and easting components using \(\Delta N=L\cos\theta\) and \(\Delta E=L\sin\theta\). With \(\theta=30^\circ\), \(\Delta N=100\cos30^\circ=86.6\ \text{ft}\) and \(\Delta E=100\sin30^\circ=50.0\ \text{ft}\). Both components are positive because the line lies in the northeast quadrant.
 
 ---
 
@@ -97,7 +97,7 @@ FE questions may use local coordinates, state-plane style coordinates, or latitu
 
 **Problem.** Points differing by 300 ft east and 400 ft north are 500 ft apart.
 
-**Solution.** Apply the relation and definitions in §15.3; the stated result follows with consistent units and sign convention.
+**Solution.** Use the coordinate-distance relation \(d=\sqrt{(\Delta E)^2+(\Delta N)^2}\). With \(\Delta E=300\ \text{ft}\) and \(\Delta N=400\ \text{ft}\), \(d=\sqrt{300^2+400^2}=500\ \text{ft}\). This is the familiar 3-4-5 right-triangle proportion.
 
 ---
 
@@ -113,7 +113,7 @@ Differential leveling propagates elevations from a benchmark. A backsight establ
 
 **Problem.** Benchmark 100.00 ft, BS 4.20 ft, FS 6.35 ft gives next elevation 97.85 ft.
 
-**Solution.** Apply the relation and definitions in §15.4; the stated result follows with consistent units and sign convention.
+**Solution.** For differential leveling, first compute height of instrument: \(HI=100.00+4.20=104.20\ \text{ft}\). Then subtract the foresight: \(E_{next}=104.20-6.35=97.85\ \text{ft}\). The next point elevation is therefore **97.85 ft**.
 
 ---
 
@@ -129,7 +129,7 @@ Grade is rise or fall divided by horizontal distance. Keep sign convention expli
 
 **Problem.** A 3.0 ft rise over 150 ft is a +2.0% grade.
 
-**Solution.** Apply the relation and definitions in §15.5; the stated result follows with consistent units and sign convention.
+**Solution.** Grade is rise divided by horizontal run times 100 percent. Thus \(g=(3.0/150)\times100=+2.0\%\). The positive sign indicates that elevation increases in the direction of stationing.
 
 ---
 
@@ -145,7 +145,7 @@ Areas may be found from geometry, coordinates, or numerical approximations. Conf
 
 **Problem.** A rectangle with coordinates (0,0), (40,0), (40,25), (0,25) has area 1000 ft².
 
-**Solution.** Apply the relation and definitions in §15.6; the stated result follows with consistent units and sign convention.
+**Solution.** The coordinates define a rectangle 40 ft by 25 ft. Its area is \(A=40\times25=1000\ \text{ft}^2\); applying the coordinate/shoelace method gives the same result. The polygon should be traversed in a consistent clockwise or counterclockwise order.
 
 ---
 
@@ -161,7 +161,7 @@ Earthwork calculations convert cross-sectional areas into volumes. A mass-haul d
 
 **Problem.** A1=200 ft², A2=260 ft², L=100 ft gives 23,000 ft³ by average end area.
 
-**Solution.** Apply the relation and definitions in §15.7; the stated result follows with consistent units and sign convention.
+**Solution.** Use the average-end-area formula \(V=L(A_1+A_2)/2\). Substituting \(L=100\ \text{ft}\), \(A_1=200\ \text{ft}^2\), and \(A_2=260\ \text{ft}^2\) gives \(V=100(200+260)/2=23{,}000\ \text{ft}^3\).
 
 ---
 
@@ -171,13 +171,13 @@ Earthwork calculations convert cross-sectional areas into volumes. A mass-haul d
 
 **Problem.** A problem combines two ideas from this chapter. What should be done before calculation?
 
-**Solution.** Draw the system, identify the requested quantity, establish units and sign conventions, and list the governing relations before substituting numbers.
+**Solution.** Establish the horizontal control before computing the derived quantity. For example, determine coordinate differences or elevations first, then use those results in the area, grade, or earthwork calculation. A quick sketch showing station direction, north/east axes, and cut/fill sign convention prevents the two calculations from using inconsistent reference systems.
 
 ### Worked Example 9
 
 **Problem.** A remembered equation differs from the FE Reference Handbook form. Which should govern the exam solution?
 
-**Solution.** Use the Handbook form and its unit convention unless the problem explicitly supplies a different relation.
+**Solution.** Use the FE Handbook relation and its stated angle, coordinate, and sign conventions. Surveying errors often come from a correct formula paired with the wrong quadrant, azimuth reference, or elevation sign, so the Handbook convention should control the exam calculation.
 
 ---
 
@@ -185,11 +185,13 @@ Earthwork calculations convert cross-sectional areas into volumes. A mass-haul d
 
 Primary source basis: **FE Civil specification Area 9; FE Reference Handbook 10.6 Civil Engineering and supporting general sections cited below.**
 
-**Source boundary:** Some Civil specification topics are directly tabulated in the Handbook; others are named by the specification but require learned engineering knowledge. This chapter does not imply that every workflow, code provision, or design factor is printed in the Handbook.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is retained because it is required by the FE Civil specification but needs engineering knowledge beyond what is printed in the Handbook. **Guide synthesis** connects those two sources into exam-oriented workflows and examples; it is not presented as Handbook text.
 
-Where the FE specification requires a topic that is not directly developed in the Handbook, the ledger marks it **specification-required / guide-developed** rather than inventing a Handbook citation.
+**External source support for split-required concepts:**
+- `CIV-3-015-03` — Ghilani, C. D. (2022). *Elementary Surveying: An Introduction to Geomatics* (16th ed.). Pearson. ISBN 978-0-13-682282-0. Cited at publication/standard level; no page-level claim.
+- `CIV-3-015-06` — Ghilani, C. D. (2022). *Elementary Surveying: An Introduction to Geomatics* (16th ed.). Pearson. ISBN 978-0-13-682282-0. Cited at publication/standard level; no page-level claim.
 
----
+No external source above is being used to replace the FE Reference Handbook. The external references support only the learned/application portion identified by `split_required: true`.
 
 ## Where This Goes Wrong
 
@@ -357,31 +359,31 @@ D) Treat it as optional
 
 14. For **earthwork volume**, common failures are wrong units, wrong sign convention, wrong geometry/boundary condition, or using a relation outside its assumptions.
 
-15. The sketch exposes geometry, boundaries, loads/flows, signs, and missing data before algebra begins.
+15. A plan/profile sketch fixes north/east directions, stationing, backsight/foresight roles, and cut-fill geometry before coordinate, leveling, grade, or volume equations are chosen.
 
-16. Use the Handbook form when it is available because the FE exam supplies that reference and its constants/unit conventions govern the problem.
+16. Use the Handbook surveying relation when available so the azimuth, bearing, coordinate, elevation, and sign conventions match the reference supplied on the FE exam.
 
-17. Mixed unit systems create hidden conversion errors and can invalidate dimensional consistency.
+17. Surveying work often mixes feet and meters or degrees and angular subdivisions; convert explicitly before combining distances, elevations, and angles in one computation.
 
-18. A reasonableness check can catch sign, magnitude, boundary-condition, and unit errors that algebra alone does not reveal.
+18. Use closure and geometry as checks: a traverse should nearly close, an elevation sequence should follow the BS/FS arithmetic, and an area or volume should have a magnitude consistent with the plotted dimensions.
 
-19. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+19. **A.** For **Angles, bearings, azimuths, and distance reduction**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-20. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+20. **A.** For **Traverse coordinates, latitudes, departures, and closure**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-21. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+21. **A.** For **Coordinate systems and horizontal positioning**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-22. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+22. **A.** For **Differential leveling and elevation determination**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-23. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+23. **A.** For **Grades, profiles, and vertical control**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-24. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+24. **A.** For **Area computations from coordinates and offsets**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-25. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+25. **A.** For **Earthwork volumes, average end area, prismoidal formula, and mass haul**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-26. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+26. **A.** In Surveying, Leveling, Coordinates, Grades, Earthwork, and Volumes, dimensional consistency and an independent physical check are the fastest ways to detect a unit, sign, magnitude, or modeling error before accepting the result.
 
-27. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+27. **A.** Surveying methods that extend beyond the Handbook's tabulated relations remain specification-required learned material and are supported by the chapter's surveying reference rather than assigned a false Handbook page.
 
 
 
@@ -414,25 +416,39 @@ D) Treat it as optional
 
 ## Practice Problem Solutions
 
-1. Use §15.1. Bearing S30°E corresponds to azimuth 150°. The calculation or classification follows from the displayed section relation and the stated data.
+1. **Independent check for §15.1.** Rework the problem from the stated givens rather than copying the worked-example result. Convert quadrant bearing S30°E to azimuth measured clockwise from north. In the southeast quadrant the azimuth is \(180^\circ-30^\circ=150^\circ\). Therefore **S30°E = 150° azimuth**. **Check:** confirm the final magnitude and units against the physical meaning of §15.1 before accepting the answer.
 
-2. Use §15.2. For L=100 ft at azimuth 30°, ΔN=86.6 ft and ΔE=50.0 ft. The calculation or classification follows from the displayed section relation and the stated data.
 
-3. Use §15.3. Points differing by 300 ft east and 400 ft north are 500 ft apart. The calculation or classification follows from the displayed section relation and the stated data.
 
-4. Use §15.4. Benchmark 100.00 ft, BS 4.20 ft, FS 6.35 ft gives next elevation 97.85 ft. The calculation or classification follows from the displayed section relation and the stated data.
+2. **Independent check for §15.2.** Rework the problem from the stated givens rather than copying the worked-example result. Resolve the 100-ft line into northing and easting components using \(\Delta N=L\cos\theta\) and \(\Delta E=L\sin\theta\). With \(\theta=30^\circ\), \(\Delta N=100\cos30^\circ=86.6\ \text{ft}\) and \(\Delta E=100\sin30^\circ=50.0\ \text{ft}\). Both components are positive because the line lies in the northeast quadrant. **Check:** confirm the final magnitude and units against the physical meaning of §15.2 before accepting the answer.
 
-5. Use §15.5. A 3.0 ft rise over 150 ft is a +2.0% grade. The calculation or classification follows from the displayed section relation and the stated data.
 
-6. Use §15.6. A rectangle with coordinates (0,0), (40,0), (40,25), (0,25) has area 1000 ft². The calculation or classification follows from the displayed section relation and the stated data.
 
-7. Use §15.7. A1=200 ft², A2=260 ft², L=100 ft gives 23,000 ft³ by average end area. The calculation or classification follows from the displayed section relation and the stated data.
+3. **Independent check for §15.3.** Rework the problem from the stated givens rather than copying the worked-example result. Use the coordinate-distance relation \(d=\sqrt{(\Delta E)^2+(\Delta N)^2}\). With \(\Delta E=300\ \text{ft}\) and \(\Delta N=400\ \text{ft}\), \(d=\sqrt{300^2+400^2}=500\ \text{ft}\). This is the familiar 3-4-5 right-triangle proportion. **Check:** confirm the final magnitude and units against the physical meaning of §15.3 before accepting the answer.
 
-8. Check dimensions, unit conversion, sign convention, and whether the selected relation's assumptions match the physical situation.
 
-9. Start with FE Civil specification Area 9 and the Handbook sections identified in **As the Handbook States It** and the ledger entries for this chapter.
 
-10. A sketch exposes incompatible geometry, impossible flow/load directions, missing reactions/boundaries, and double-counted or omitted terms.
+4. **Independent check for §15.4.** Rework the problem from the stated givens rather than copying the worked-example result. For differential leveling, first compute height of instrument: \(HI=100.00+4.20=104.20\ \text{ft}\). Then subtract the foresight: \(E_{next}=104.20-6.35=97.85\ \text{ft}\). The next point elevation is therefore **97.85 ft**. **Check:** confirm the final magnitude and units against the physical meaning of §15.4 before accepting the answer.
+
+
+
+5. **Independent check for §15.5.** Rework the problem from the stated givens rather than copying the worked-example result. Grade is rise divided by horizontal run times 100 percent. Thus \(g=(3.0/150)\times100=+2.0\%\). The positive sign indicates that elevation increases in the direction of stationing. **Check:** confirm the final magnitude and units against the physical meaning of §15.5 before accepting the answer.
+
+
+
+6. **Independent check for §15.6.** Rework the problem from the stated givens rather than copying the worked-example result. The coordinates define a rectangle 40 ft by 25 ft. Its area is \(A=40\times25=1000\ \text{ft}^2\); applying the coordinate/shoelace method gives the same result. The polygon should be traversed in a consistent clockwise or counterclockwise order. **Check:** confirm the final magnitude and units against the physical meaning of §15.6 before accepting the answer.
+
+
+
+7. **Independent check for §15.7.** Rework the problem from the stated givens rather than copying the worked-example result. Use the average-end-area formula \(V=L(A_1+A_2)/2\). Substituting \(L=100\ \text{ft}\), \(A_1=200\ \text{ft}^2\), and \(A_2=260\ \text{ft}^2\) gives \(V=100(200+260)/2=23{,}000\ \text{ft}^3\). **Check:** confirm the final magnitude and units against the physical meaning of §15.7 before accepting the answer.
+
+
+
+8. Before accepting a surveying, leveling, coordinates, grades, earthwork, and volumes result, verify the dimensional units, the chapter-specific sign or direction convention, and that the selected model matches the stated geometry and boundary conditions.
+
+9. Begin with **FE Civil specification Area 9**, then use the surveying/coordinate or leveling material identified in the chapter ledger. Use the external surveying reference only for the learned portion not printed in Handbook 10.6.
+
+10. For surveying, leveling, coordinates, grades, earthwork, and volumes, a sketch makes the controlling geometry, direction, boundary, load/flow path, or sequence visible before algebra, which often reveals missing data or an impossible assumption immediately.
 
 ---
 

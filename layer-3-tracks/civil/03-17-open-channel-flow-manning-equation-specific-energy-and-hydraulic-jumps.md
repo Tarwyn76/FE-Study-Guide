@@ -65,7 +65,7 @@ Open-channel calculations use flow area and wetted perimeter, not total perimete
 
 **Problem.** For A=20 ft² and wetted perimeter 12 ft, R=1.667 ft.
 
-**Solution.** Apply the relation and definitions in §17.1; the stated result follows with consistent units and sign convention.
+**Solution.** Hydraulic radius is \(R=A/P_w\). With \(A=20\ \text{ft}^2\) and wetted perimeter \(P_w=12\ \text{ft}\), \(R=20/12=1.667\ \text{ft}\). Do not substitute top width for wetted perimeter.
 
 ---
 
@@ -81,7 +81,7 @@ Manning flow assumes approximately uniform, steady open-channel flow. Use the co
 
 **Problem.** With n, A, R, and slope given, solve directly for discharge or invert numerically for depth.
 
-**Solution.** Apply the relation and definitions in §17.2; the stated result follows with consistent units and sign convention.
+**Solution.** Manning's equation relates \(Q\) to roughness \(n\), flow area \(A\), hydraulic radius \(R\), and energy slope \(S\). If depth is known, compute \(A\) and \(R\) and solve directly for \(Q\); if discharge is known and depth is unknown, depth appears inside both \(A\) and \(R\), so an iterative or numerical solution is normally required.
 
 ---
 
@@ -97,7 +97,7 @@ Froude number distinguishes subcritical, critical, and supercritical open-channe
 
 **Problem.** Fr<1 is subcritical; Fr=1 critical; Fr>1 supercritical.
 
-**Solution.** Apply the relation and definitions in §17.3; the stated result follows with consistent units and sign convention.
+**Solution.** The Froude number compares inertial and gravity-wave effects. \(Fr<1\) indicates subcritical flow, \(Fr=1\) critical flow, and \(Fr>1\) supercritical flow. The classification determines how disturbances propagate and is central to evaluating transitions and hydraulic jumps.
 
 ---
 
@@ -113,7 +113,7 @@ Specific energy is measured relative to the channel bottom. At a given discharge
 
 **Problem.** For V=6 ft/s and y=2 ft, E≈2.56 ft.
 
-**Solution.** Apply the relation and definitions in §17.4; the stated result follows with consistent units and sign convention.
+**Solution.** Specific energy is \(E=y+V^2/(2g)\). With \(y=2\ \text{ft}\), \(V=6\ \text{ft/s}\), and \(g=32.2\ \text{ft/s}^2\), the velocity head is \(36/(64.4)=0.559\ \text{ft}\), so \(E\approx2.56\ \text{ft}\).
 
 ---
 
@@ -129,7 +129,7 @@ Weirs relate upstream head to discharge. The exact coefficient and exponent depe
 
 **Problem.** Doubling head increases discharge by 2^(3/2) for a rectangular-weir form.
 
-**Solution.** Apply the relation and definitions in §17.5; the stated result follows with consistent units and sign convention.
+**Solution.** For a rectangular-weir relation \(Q\propto H^{3/2}\). If the head doubles, \(Q_2/Q_1=(2H/H)^{3/2}=2^{3/2}\approx2.83\). Thus the discharge increases by about a factor of **2.83**, not merely by a factor of two.
 
 ---
 
@@ -145,7 +145,7 @@ A hydraulic jump converts supercritical flow to subcritical flow with substantia
 
 **Problem.** A supercritical approach flow can be forced through a jump in a stilling basin to dissipate energy.
 
-**Solution.** Apply the relation and definitions in §17.6; the stated result follows with consistent units and sign convention.
+**Solution.** A hydraulic jump occurs when supercritical flow transitions to subcritical flow, converting part of the kinetic energy into turbulence and heat. A stilling basin deliberately provides the geometry and tailwater condition needed to force and contain that jump so downstream erosion is reduced.
 
 ---
 
@@ -161,7 +161,7 @@ Normal depth follows from the uniform-flow relation. Controls such as gates, wei
 
 **Problem.** If tailwater rises above normal depth, a backwater profile may develop upstream.
 
-**Solution.** Apply the relation and definitions in §17.7; the stated result follows with consistent units and sign convention.
+**Solution.** When downstream tailwater exceeds the normal-depth condition, the downstream control raises the water surface upstream. The resulting gradually varied profile is a backwater curve; its exact classification depends on channel slope and the relative positions of normal and critical depth.
 
 ---
 
@@ -171,13 +171,13 @@ Normal depth follows from the uniform-flow relation. Controls such as gates, wei
 
 **Problem.** A problem combines two ideas from this chapter. What should be done before calculation?
 
-**Solution.** Draw the system, identify the requested quantity, establish units and sign conventions, and list the governing relations before substituting numbers.
+**Solution.** First establish the flow regime with depth, velocity, and Froude number; then apply the appropriate energy, momentum, or Manning relation. Mixing a gradually varied-flow assumption with a rapid hydraulic-jump relation in the same step is a common error, so identify the control section and regime before calculating.
 
 ### Worked Example 9
 
 **Problem.** A remembered equation differs from the FE Reference Handbook form. Which should govern the exam solution?
 
-**Solution.** Use the Handbook form and its unit convention unless the problem explicitly supplies a different relation.
+**Solution.** Use the Handbook form and coefficient for the chosen unit system. Open-channel formulas often contain empirical coefficients that differ between SI and U.S. customary units, so a remembered version should not override the supplied Handbook relation.
 
 ---
 
@@ -185,11 +185,12 @@ Normal depth follows from the uniform-flow relation. Controls such as gates, wei
 
 Primary source basis: **FE Civil specification Area 10; FE Reference Handbook 10.6 Civil Engineering and supporting general sections cited below.**
 
-**Source boundary:** Some Civil specification topics are directly tabulated in the Handbook; others are named by the specification but require learned engineering knowledge. This chapter does not imply that every workflow, code provision, or design factor is printed in the Handbook.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is retained because it is required by the FE Civil specification but needs engineering knowledge beyond what is printed in the Handbook. **Guide synthesis** connects those two sources into exam-oriented workflows and examples; it is not presented as Handbook text.
 
-Where the FE specification requires a topic that is not directly developed in the Handbook, the ledger marks it **specification-required / guide-developed** rather than inventing a Handbook citation.
+**External source support for split-required concepts:**
+- `CIV-3-017-07` — U.S. Army Corps of Engineers, Hydrologic Engineering Center. *HEC-RAS Hydraulic Reference Manual*, Version 6.6. Cited at publication/standard level; no page-level claim.
 
----
+No external source above is being used to replace the FE Reference Handbook. The external references support only the learned/application portion identified by `split_required: true`.
 
 ## Where This Goes Wrong
 
@@ -357,31 +358,31 @@ D) Treat it as optional
 
 14. For **channel control**, common failures are wrong units, wrong sign convention, wrong geometry/boundary condition, or using a relation outside its assumptions.
 
-15. The sketch exposes geometry, boundaries, loads/flows, signs, and missing data before algebra begins.
+15. Draw the channel cross-section and water surface before solving so flow area, top width, wetted perimeter, hydraulic radius, depth, and control location are defined consistently.
 
-16. Use the Handbook form when it is available because the FE exam supplies that reference and its constants/unit conventions govern the problem.
+16. Use the Handbook open-channel relation when provided because Manning coefficients, hydraulic-radius definitions, and unit-system constants must match the supplied reference.
 
-17. Mixed unit systems create hidden conversion errors and can invalidate dimensional consistency.
+17. Open-channel calculations can mix feet, meters, cfs, and m³/s; explicit conversion is required before velocity, discharge, energy, or Froude-number calculations are combined.
 
-18. A reasonableness check can catch sign, magnitude, boundary-condition, and unit errors that algebra alone does not reveal.
+18. Check the implied regime and geometry: depth and velocity must be positive, Froude classification should agree with the assumed flow state, and the computed water surface should be compatible with the channel control.
 
-19. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+19. **A.** For **Open-channel geometry and hydraulic radius**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-20. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+20. **A.** For **Manning equation and uniform flow**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-21. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+21. **A.** For **Froude number and flow regime**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-22. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+22. **A.** For **Specific energy and critical depth**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-23. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+23. **A.** For **Weirs and open-channel flow measurement**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-24. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+24. **A.** For **Momentum function and hydraulic jump**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-25. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+25. **A.** For **Channel controls, normal depth, and gradually varied flow**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-26. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+26. **A.** In Open-Channel Flow — Manning Equation, Specific Energy, and Hydraulic Jumps, dimensional consistency and an independent physical check are the fastest ways to detect a unit, sign, magnitude, or modeling error before accepting the result.
 
-27. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+27. **A.** Gradually varied-flow and control details not fully printed in Handbook 10.6 are treated as learned material and supported by the HEC-RAS hydraulic reference rather than by an invented page citation.
 
 
 
@@ -414,25 +415,39 @@ D) Treat it as optional
 
 ## Practice Problem Solutions
 
-1. Use §17.1. For A=20 ft² and wetted perimeter 12 ft, R=1.667 ft. The calculation or classification follows from the displayed section relation and the stated data.
+1. **Independent check for §17.1.** Rework the problem from the stated givens rather than copying the worked-example result. Hydraulic radius is \(R=A/P_w\). With \(A=20\ \text{ft}^2\) and wetted perimeter \(P_w=12\ \text{ft}\), \(R=20/12=1.667\ \text{ft}\). Do not substitute top width for wetted perimeter. **Check:** confirm the final magnitude and units against the physical meaning of §17.1 before accepting the answer.
 
-2. Use §17.2. With n, A, R, and slope given, solve directly for discharge or invert numerically for depth. The calculation or classification follows from the displayed section relation and the stated data.
 
-3. Use §17.3. Fr<1 is subcritical; Fr=1 critical; Fr>1 supercritical. The calculation or classification follows from the displayed section relation and the stated data.
 
-4. Use §17.4. For V=6 ft/s and y=2 ft, E≈2.56 ft. The calculation or classification follows from the displayed section relation and the stated data.
+2. **Independent check for §17.2.** Rework the problem from the stated givens rather than copying the worked-example result. Manning's equation relates \(Q\) to roughness \(n\), flow area \(A\), hydraulic radius \(R\), and energy slope \(S\). If depth is known, compute \(A\) and \(R\) and solve directly for \(Q\); if discharge is known and depth is unknown, depth appears inside both \(A\) and \(R\), so an iterative or numerical solution is normally required. **Check:** confirm the final magnitude and units against the physical meaning of §17.2 before accepting the answer.
 
-5. Use §17.5. Doubling head increases discharge by 2^(3/2) for a rectangular-weir form. The calculation or classification follows from the displayed section relation and the stated data.
 
-6. Use §17.6. A supercritical approach flow can be forced through a jump in a stilling basin to dissipate energy. The calculation or classification follows from the displayed section relation and the stated data.
 
-7. Use §17.7. If tailwater rises above normal depth, a backwater profile may develop upstream. The calculation or classification follows from the displayed section relation and the stated data.
+3. **Independent check for §17.3.** Rework the problem from the stated givens rather than copying the worked-example result. The Froude number compares inertial and gravity-wave effects. \(Fr<1\) indicates subcritical flow, \(Fr=1\) critical flow, and \(Fr>1\) supercritical flow. The classification determines how disturbances propagate and is central to evaluating transitions and hydraulic jumps. **Check:** confirm the final magnitude and units against the physical meaning of §17.3 before accepting the answer.
 
-8. Check dimensions, unit conversion, sign convention, and whether the selected relation's assumptions match the physical situation.
 
-9. Start with FE Civil specification Area 10 and the Handbook sections identified in **As the Handbook States It** and the ledger entries for this chapter.
 
-10. A sketch exposes incompatible geometry, impossible flow/load directions, missing reactions/boundaries, and double-counted or omitted terms.
+4. **Independent check for §17.4.** Rework the problem from the stated givens rather than copying the worked-example result. Specific energy is \(E=y+V^2/(2g)\). With \(y=2\ \text{ft}\), \(V=6\ \text{ft/s}\), and \(g=32.2\ \text{ft/s}^2\), the velocity head is \(36/(64.4)=0.559\ \text{ft}\), so \(E\approx2.56\ \text{ft}\). **Check:** confirm the final magnitude and units against the physical meaning of §17.4 before accepting the answer.
+
+
+
+5. **Independent check for §17.5.** Rework the problem from the stated givens rather than copying the worked-example result. For a rectangular-weir relation \(Q\propto H^{3/2}\). If the head doubles, \(Q_2/Q_1=(2H/H)^{3/2}=2^{3/2}\approx2.83\). Thus the discharge increases by about a factor of **2.83**, not merely by a factor of two. **Check:** confirm the final magnitude and units against the physical meaning of §17.5 before accepting the answer.
+
+
+
+6. **Independent check for §17.6.** Rework the problem from the stated givens rather than copying the worked-example result. A hydraulic jump occurs when supercritical flow transitions to subcritical flow, converting part of the kinetic energy into turbulence and heat. A stilling basin deliberately provides the geometry and tailwater condition needed to force and contain that jump so downstream erosion is reduced. **Check:** confirm the final magnitude and units against the physical meaning of §17.6 before accepting the answer.
+
+
+
+7. **Independent check for §17.7.** Rework the problem from the stated givens rather than copying the worked-example result. When downstream tailwater exceeds the normal-depth condition, the downstream control raises the water surface upstream. The resulting gradually varied profile is a backwater curve; its exact classification depends on channel slope and the relative positions of normal and critical depth. **Check:** confirm the final magnitude and units against the physical meaning of §17.7 before accepting the answer.
+
+
+
+8. Before accepting a open-channel flow — manning equation, specific energy, and hydraulic jumps result, verify the dimensional units, the chapter-specific sign or direction convention, and that the selected model matches the stated geometry and boundary conditions.
+
+9. Use **FE Civil specification Area 10** first, followed by the Handbook open-channel-flow relations in the ledger; use HEC-RAS only for the reconciled learned/application portion.
+
+10. For open-channel flow — manning equation, specific energy, and hydraulic jumps, a sketch makes the controlling geometry, direction, boundary, load/flow path, or sequence visible before algebra, which often reveals missing data or an impossible assumption immediately.
 
 ---
 

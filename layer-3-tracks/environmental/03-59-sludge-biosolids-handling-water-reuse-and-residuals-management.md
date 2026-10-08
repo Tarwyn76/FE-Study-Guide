@@ -65,7 +65,7 @@ Water and wastewater treatment transfers contaminants into residual streams. Sol
 
 **Problem.** Higher chemical precipitation can improve liquid treatment while increasing sludge production.
 
-**Solution.** Apply the relation and environmental model in §59.1; then verify units, boundary conditions, and physical limits.
+**Solution.** Chemical precipitation can improve liquid-phase contaminant removal while converting dissolved mass into additional solids. A plant optimization must therefore include the increased sludge mass and downstream handling burden in the overall balance.
 
 ---
 
@@ -81,7 +81,7 @@ Thickening raises solids concentration while removing water, reducing downstream
 
 **Problem.** Doubling solids concentration at constant solids mass halves sludge volumetric flow approximately.
 
-**Solution.** Apply the relation and environmental model in §59.2; then verify units, boundary conditions, and physical limits.
+**Solution.** Solids mass flow is \(\dot m_s=Q_sX_s\), so \(Q_s=\dot m_s/X_s\). At constant solids mass, doubling concentration \(X_s\) makes the required sludge volumetric flow approximately **one-half**.
 
 ---
 
@@ -97,7 +97,7 @@ Digestion stabilizes biodegradable solids and can generate biogas. Temperature, 
 
 **Problem.** 1000 kg/day volatile solids reduced to 600 kg/day gives 40% reduction.
 
-**Solution.** Apply the relation and environmental model in §59.3; then verify units, boundary conditions, and physical limits.
+**Solution.** Volatile-solids reduction is \((1000\ {\rm kg/day}-600\ {\rm kg/day})/(1000\ {\rm kg/day})\times100\%=\mathbf{40\%}\). The calculation compares volatile solids on the same mass/time basis before and after digestion.
 
 ---
 
@@ -113,7 +113,7 @@ Dewatering reduces residual volume and hauling cost. Centrifuges, belt presses, 
 
 **Problem.** A 1000-kg wet cake containing 200 kg dry solids is 20% solids by mass.
 
-**Solution.** Apply the relation and environmental model in §59.4; then verify units, boundary conditions, and physical limits.
+**Solution.** Percent cake solids is \((200\ {\rm kg})/(1000\ {\rm kg})\times100\%=\mathbf{20\%}\). The remaining 80% of the wet cake mass is water plus any other non-dry-solids mass represented by the problem.
 
 ---
 
@@ -129,7 +129,7 @@ Biosolids may be land applied, composted, further processed, incinerated, or dis
 
 **Problem.** A beneficial-use option is acceptable only if treatment and site criteria are met.
 
-**Solution.** Apply the relation and environmental model in §59.5; then verify units, boundary conditions, and physical limits.
+**Solution.** Beneficial use is conditional, not automatic. Biosolids or residuals must meet applicable treatment quality, contaminant/pathogen criteria, site loading, management, and regulatory requirements for the proposed end use.
 
 ---
 
@@ -145,7 +145,7 @@ Reuse should be fit for purpose: irrigation, industrial use, recharge, or potabl
 
 **Problem.** A reuse application with human exposure generally requires more stringent treatment and monitoring than low-contact industrial reuse.
 
-**Solution.** Apply the relation and environmental model in §59.6; then verify units, boundary conditions, and physical limits.
+**Solution.** Fit-for-purpose reuse links treatment to exposure. An application with substantial human contact generally needs more stringent treatment, disinfection, monitoring, and reliability than a low-contact industrial reuse application.
 
 ---
 
@@ -161,7 +161,7 @@ A process that performs well in the liquid stream can shift cost, energy use, em
 
 **Problem.** Activated carbon can remove organics from water but creates spent carbon requiring regeneration or disposal.
 
-**Solution.** Apply the relation and environmental model in §59.7; then verify units, boundary conditions, and physical limits.
+**Solution.** Activated carbon can shift organic contaminants from water onto a solid phase. The spent or regenerated carbon is therefore part of the residuals system and must be included in lifecycle, handling, and disposal/regeneration decisions.
 
 ---
 
@@ -171,13 +171,13 @@ A process that performs well in the liquid stream can shift cost, energy use, em
 
 **Problem.** A treatment calculation predicts a negative effluent concentration. What does that indicate?
 
-**Solution.** The algebra or model assumptions are invalid for that condition. Recheck the balance, reaction/order assumptions, time basis, units, and any zero-concentration limiting condition.
+**Solution.** A negative residuals mass or impossible solids percentage violates the solids balance. Recheck dry-versus-wet basis, concentration units, destruction terms, recycle streams, and moisture content.
 
 ### Worked Example 9
 
 **Problem.** A remembered environmental correlation differs from the FE Reference Handbook relation. Which should govern the exam solution?
 
-**Solution.** Use the Handbook relation and its definitions unless the problem explicitly supplies a different model.
+**Solution.** For **Sludge/Biosolids Handling, Water Reuse, and Residuals Management**, the FE Reference Handbook equation, definitions, and unit convention govern whenever the Handbook supplies the needed relation. The external references in this chapter are used for specification-required learned material involving **sludge mass balances, thickening, digestion, dewatering, reuse, and residuals management**. If a remembered correlation conflicts with the supplied Handbook equation, use the supplied Handbook relation unless the problem explicitly states a different model.
 
 ---
 
@@ -185,7 +185,13 @@ A process that performs well in the liquid stream can shift cost, energy use, em
 
 Primary source basis: **FE Environmental specification Area(s) 12; FE Reference Handbook 10.6 Environmental Engineering, printed pp. 318–360, plus general supporting sections where identified in the ledger.**
 
-**Source boundary:** Some Environmental specification topics are directly tabulated in the Handbook, while others require learned engineering knowledge. The chapter keeps those two categories separate.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required environmental-engineering knowledge that is not fully developed in the Handbook. **Guide synthesis** connects the Handbook and external material into exam-oriented explanations, examples, and checks; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Metcalf & Eddy/AECOM, Tchobanoglous, G., Stensel, H. D., Tsuchihashi, R., & Burton, F. L. (2014). *Wastewater Engineering: Treatment and Resource Recovery* (5th ed.). McGraw-Hill. ISBN 978-0-07-340118-8. Supporting scope: Wastewater characteristics, physical/chemical treatment, activated sludge, solids recycle, biosolids, residuals, and resource recovery.
+- U.S. Environmental Protection Agency. (2012). *2012 Guidelines for Water Reuse* (EPA/600/R-12/618). U.S. EPA and U.S. Agency for International Development. Supporting scope: Fit-for-purpose water reuse, treatment expectations, reuse applications, and management considerations.
+
+The external references support only the learned/application portion of the Environmental specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -356,31 +362,31 @@ D) It is always a Handbook lookup with no learned interpretation
 
 14. For **residuals management**, check basis, units, steady/unsteady condition, phase/media, boundary conditions, and whether the selected idealization matches the system.
 
-15. The boundary determines what enters, leaves, accumulates, reacts, or transfers between media. Without it, terms are easily omitted or double counted.
+15. In **Sludge/Biosolids Handling, Water Reuse, and Residuals Management**, the control volume or conceptual boundary determines which sources, sinks, transfers, reactions, and receptors belong in the model. For this chapter specifically, keep dry-solids and wet-sludge bases separate, close the solids balance, constrain percent solids/reduction to physical ranges, and match reuse/residual quality to the intended end use.
 
-16. Concentration is mass per volume; loading is mass per time. A low concentration at very high flow can still create a large load.
+16. Concentration and loading answer different questions in **Sludge/Biosolids Handling, Water Reuse, and Residuals Management**: concentration is mass per volume, while loading is mass per time. Always convert \(Q\) and \(C\) to compatible units before multiplying them.
 
-17. The FE Handbook is the supplied exam reference. Its variable definitions and unit conventions should govern unless the problem explicitly provides another relation.
+17. Use the FE Reference Handbook equation and definitions when it supplies the model for **Sludge/Biosolids Handling, Water Reuse, and Residuals Management**. The chapter's external references (METCALF, EPA_REUSE) support learned specification content, not a competing exam formula.
 
-18. A mass/energy balance and physical check can reveal impossible signs, removal above 100%, negative concentrations, unrealistic flows, or model misuse.
+18. A physical check is needed because algebra alone can return impossible environmental states. For this chapter, set dry-solids mass to zero and confirm percent solids is zero; hold solids mass fixed while concentration doubles and confirm sludge volume halves.
 
-19. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+19. **A.** Section §59.1, **Sludge production and solids mass balance**, is governed by \(\text{solids generated}-\text{solids destroyed}=\text{solids requiring handling}\). Use that relation with its own environmental basis and then perform the specific validity check described for §59.1.
 
-20. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+20. **A.** Section §59.2, **Thickening and concentration**, is governed by \(\dot m_s=Q_s X_s\). Use that relation with its own environmental basis and then perform the specific validity check described for §59.2.
 
-21. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+21. **A.** Section §59.3, **Anaerobic digestion and volatile-solids reduction**, is governed by \(\%\mathrm{VS\ reduction}=\frac{VS_{in}-VS_{out}}{VS_{in}}\times100\%\). Use that relation with its own environmental basis and then perform the specific validity check described for §59.3.
 
-22. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+22. **A.** Section §59.4, **Dewatering and cake solids**, is governed by \(\%\text{solids}=\frac{m_{\text{dry solids}}}{m_{\text{wet cake}}}\times100\%\). Use that relation with its own environmental basis and then perform the specific validity check described for §59.4.
 
-23. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+23. **A.** Section §59.5, **Land application, composting, and residuals end use**, is governed by \(\text{beneficial use requires treatment quality+site loading+regulatory controls}\). Use that relation with its own environmental basis and then perform the specific validity check described for §59.5.
 
-24. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+24. **A.** Section §59.6, **Water conservation and reuse fit-for-purpose concepts**, is governed by \(\text{required treatment depends on source water and intended end use}\). Use that relation with its own environmental basis and then perform the specific validity check described for §59.6.
 
-25. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+25. **A.** Section §59.7, **Residuals minimization and life-cycle integration**, is governed by \(\text{optimize liquid treatment and residuals management together}\). Use that relation with its own environmental basis and then perform the specific validity check described for §59.7.
 
-26. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+26. **A.** An integrated **Sludge/Biosolids Handling, Water Reuse, and Residuals Management** solution is acceptable only after the governing balance/model is identified, units are reconciled, and the chapter-specific physical checks are satisfied.
 
-27. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+27. **A.** Source ownership is explicit in **Sludge/Biosolids Handling, Water Reuse, and Residuals Management**: FE-Handbook-supported material remains tied to the ledger, externally supported content uses METCALF, EPA_REUSE, and guide synthesis is labeled as supplemental explanation.
 
 
 ---
@@ -412,25 +418,25 @@ D) It is always a Handbook lookup with no learned interpretation
 
 ## Practice Problem Solutions
 
-1. Use §59.1. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+1. **Independent recomputation for §59.1 — Sludge production and solids mass balance.** Start from the stated givens rather than the worked-example answer. Chemical precipitation can improve liquid-phase contaminant removal while converting dissolved mass into additional solids. A plant optimization must therefore include the increased sludge mass and downstream handling burden in the overall balance. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-2. Use §59.2. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+2. **Independent recomputation for §59.2 — Thickening and concentration.** Start from the stated givens rather than the worked-example answer. Solids mass flow is \(\dot m_s=Q_sX_s\), so \(Q_s=\dot m_s/X_s\). At constant solids mass, doubling concentration \(X_s\) makes the required sludge volumetric flow approximately **one-half**. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-3. Use §59.3. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+3. **Independent recomputation for §59.3 — Anaerobic digestion and volatile-solids reduction.** Start from the stated givens rather than the worked-example answer. Volatile-solids reduction is \((1000-600)/1000\times100\%=\mathbf{40\%}\). The calculation compares volatile solids on the same mass/time basis before and after digestion. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-4. Use §59.4. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+4. **Independent recomputation for §59.4 — Dewatering and cake solids.** Start from the stated givens rather than the worked-example answer. Percent cake solids is \(200/1000\times100\%=\mathbf{20\%}\). The remaining 80% of the wet cake mass is water plus any other non-dry-solids mass represented by the problem. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-5. Use §59.5. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+5. **Independent recomputation for §59.5 — Land application, composting, and residuals end use.** Start from the stated givens rather than the worked-example answer. Beneficial use is conditional, not automatic. Biosolids or residuals must meet applicable treatment quality, contaminant/pathogen criteria, site loading, management, and regulatory requirements for the proposed end use. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-6. Use §59.6. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+6. **Independent recomputation for §59.6 — Water conservation and reuse fit-for-purpose concepts.** Start from the stated givens rather than the worked-example answer. Fit-for-purpose reuse links treatment to exposure. An application with substantial human contact generally needs more stringent treatment, disinfection, monitoring, and reliability than a low-contact industrial reuse application. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-7. Use §59.7. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+7. **Independent recomputation for §59.7 — Residuals minimization and life-cycle integration.** Start from the stated givens rather than the worked-example answer. Activated carbon can shift organic contaminants from water onto a solid phase. The spent or regenerated carbon is therefore part of the residuals system and must be included in lifecycle, handling, and disposal/regeneration decisions. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-8. Check dimensions, concentration-versus-loading basis, conservation of mass/energy, sign convention, and whether removal, risk, or efficiency values stay within physically meaningful limits.
+8. For this chapter, check the result against this failure screen: Keep dry-solids and wet-sludge bases separate, close the solids balance, constrain percent solids/reduction to physical ranges, and match reuse/residual quality to the intended end use. A result that violates one of those conditions should be rejected even if the arithmetic is internally consistent.
 
-9. Start with FE Environmental specification Area(s) 12, then use the Handbook subsection named in the corresponding ledger entry.
+9. For **Sludge/Biosolids Handling, Water Reuse, and Residuals Management**, begin with the FE Environmental specification area and Handbook subsection recorded in the ledger. When the atom is `split_required`, use the reconciled external source set **METCALF, EPA_REUSE** for the learned portion rather than inventing a Handbook page.
 
-10. Test a limiting case such as zero source, zero reaction, complete mixing, no flow, very large residence time, or 0/100% removal as appropriate. The result should reduce to a sensible physical state.
+10. A useful limiting case is to set dry-solids mass to zero and confirm percent solids is zero; hold solids mass fixed while concentration doubles and confirm sludge volume halves. The simplified case should reduce to the stated physical behavior before the full model is trusted.
 
 ---
 

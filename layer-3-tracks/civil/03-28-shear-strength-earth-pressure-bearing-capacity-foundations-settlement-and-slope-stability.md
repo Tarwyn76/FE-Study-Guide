@@ -65,7 +65,7 @@ Shear strength depends on effective normal stress, cohesion intercept, and frict
 
 **Problem.** If c'=0, σ'=100 kPa, φ'=30°, τf≈57.7 kPa.
 
-**Solution.** Apply the relation and definitions in §28.1; the stated result follows with consistent units and sign convention.
+**Solution.** Use the Mohr-Coulomb relation \(\tau_f=c'+\sigma'\tan\phi'\). With \(c'=0\), \(\sigma'=100\ \text{kPa}\), and \(\phi'=30^\circ\), \(\tau_f=100\tan30^\circ=57.7\ \text{kPa}\).
 
 ---
 
@@ -81,7 +81,7 @@ Lateral earth pressure depends on wall movement and soil state. Active pressure 
 
 **Problem.** Use the K value corresponding to at-rest, active, or passive condition.
 
-**Solution.** Apply the relation and definitions in §28.2; the stated result follows with consistent units and sign convention.
+**Solution.** Earth-pressure coefficient selection depends on wall movement and boundary condition. Use \(K_0\) for at-rest conditions, \(K_a\) when sufficient movement mobilizes active conditions, and \(K_p\) when movement into the soil mobilizes passive resistance. Selecting the wrong state can dominate the error.
 
 ---
 
@@ -97,7 +97,7 @@ Retaining structures are checked for sliding, overturning, bearing, and global s
 
 **Problem.** For overturning, compare resisting moments with overturning moments about the toe.
 
-**Solution.** Apply the relation and definitions in §28.3; the stated result follows with consistent units and sign convention.
+**Solution.** For overturning stability, choose a consistent pivot—commonly the toe—and sum resisting and overturning moments about that point. A factor of safety may be formed as \(FS=M_R/M_O\); forces passing through the toe have no moment about that pivot.
 
 ---
 
@@ -113,7 +113,7 @@ Bearing capacity limits shear failure beneath foundations. The exact qult relati
 
 **Problem.** If qult=600 kPa and FS=3, qallow=200 kPa.
 
-**Solution.** Apply the relation and definitions in §28.4; the stated result follows with consistent units and sign convention.
+**Solution.** Allowable bearing pressure is ultimate capacity divided by the specified factor of safety. Thus \(q_{allow}=600/3=200\ \text{kPa}\). This value must be distinguished from net versus gross bearing pressure if the problem defines those separately.
 
 ---
 
@@ -129,7 +129,7 @@ Spread footings, mats, wall footings, and deep foundations transfer load differe
 
 **Problem.** A 900-kN column on a 9 m² footing applies 100 kPa average contact pressure.
 
-**Solution.** Apply the relation and definitions in §28.5; the stated result follows with consistent units and sign convention.
+**Solution.** Average footing contact pressure is \(q=P/A\). With \(P=900\ \text{kN}\) and \(A=9\ \text{m}^2\), \(q=100\ \text{kN/m}^2=100\ \text{kPa}\).
 
 ---
 
@@ -145,7 +145,7 @@ Settlement can include immediate, primary consolidation, and secondary component
 
 **Problem.** Two supports settling equally may cause little distortion; unequal settlement induces rotation and internal force.
 
-**Solution.** Apply the relation and definitions in §28.6; the stated result follows with consistent units and sign convention.
+**Solution.** Equal settlement of two supports produces translation with little relative distortion, whereas differential settlement changes the relative support elevations. That rotation or curvature can induce additional member forces and serviceability problems even when the total average settlement is modest.
 
 ---
 
@@ -161,7 +161,7 @@ Slope stability depends on geometry, soil strength, groundwater, loading, and po
 
 **Problem.** Lowering groundwater can improve effective stress and slope stability.
 
-**Solution.** Apply the relation and definitions in §28.7; the stated result follows with consistent units and sign convention.
+**Solution.** Lowering the groundwater table generally reduces pore-water pressure \(u\). Since effective stress is \(\sigma'=\sigma-u\), a reduction in \(u\) increases effective stress and can increase available shear strength, improving stability under otherwise comparable conditions.
 
 ---
 
@@ -171,13 +171,13 @@ Slope stability depends on geometry, soil strength, groundwater, loading, and po
 
 **Problem.** A problem combines two ideas from this chapter. What should be done before calculation?
 
-**Solution.** Draw the system, identify the requested quantity, establish units and sign conventions, and list the governing relations before substituting numbers.
+**Solution.** For a foundation/slope problem, compute effective stress first, then select the correct strength parameters and failure mechanism. Bearing, sliding, overturning, settlement, and slope stability are distinct checks; a satisfactory factor of safety in one mode does not guarantee acceptable performance in the others.
 
 ### Worked Example 9
 
 **Problem.** A remembered equation differs from the FE Reference Handbook form. Which should govern the exam solution?
 
-**Solution.** Use the Handbook form and its unit convention unless the problem explicitly supplies a different relation.
+**Solution.** Use the Handbook relation that matches the stated geotechnical failure mode and drainage condition. Remembered bearing-capacity or earth-pressure formulas can differ in assumptions and factors, so the Handbook definitions and effective-stress basis should govern.
 
 ---
 
@@ -185,11 +185,14 @@ Slope stability depends on geometry, soil strength, groundwater, loading, and po
 
 Primary source basis: **FE Civil specification Area 12; FE Reference Handbook 10.6 Civil Engineering and supporting general sections cited below.**
 
-**Source boundary:** Some Civil specification topics are directly tabulated in the Handbook; others are named by the specification but require learned engineering knowledge. This chapter does not imply that every workflow, code provision, or design factor is printed in the Handbook.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is retained because it is required by the FE Civil specification but needs engineering knowledge beyond what is printed in the Handbook. **Guide synthesis** connects those two sources into exam-oriented workflows and examples; it is not presented as Handbook text.
 
-Where the FE specification requires a topic that is not directly developed in the Handbook, the ledger marks it **specification-required / guide-developed** rather than inventing a Handbook citation.
+**External source support for split-required concepts:**
+- `CIV-3-028-03` — Das, B. M. (2024). *Principles of Foundation Engineering* (10th ed.). Cengage. ISBN 978-0-357-68465-8. Cited at publication/standard level; no page-level claim.
+- `CIV-3-028-06` — Das, B. M. (2022). *Principles of Geotechnical Engineering* (10th ed.). Cengage. ISBN 978-0-357-42047-8. Cited at publication/standard level; no page-level claim. Das, B. M. (2024). *Principles of Foundation Engineering* (10th ed.). Cengage. ISBN 978-0-357-68465-8. Cited at publication/standard level; no page-level claim.
+- `CIV-3-028-07` — Das, B. M. (2022). *Principles of Geotechnical Engineering* (10th ed.). Cengage. ISBN 978-0-357-42047-8. Cited at publication/standard level; no page-level claim.
 
----
+No external source above is being used to replace the FE Reference Handbook. The external references support only the learned/application portion identified by `split_required: true`.
 
 ## Where This Goes Wrong
 
@@ -357,31 +360,31 @@ D) Treat it as optional
 
 14. For **slope stability**, common failures are wrong units, wrong sign convention, wrong geometry/boundary condition, or using a relation outside its assumptions.
 
-15. The sketch exposes geometry, boundaries, loads/flows, signs, and missing data before algebra begins.
+15. Sketch the retaining wall, footing, soil layers, groundwater, slope, and candidate failure surface before selecting earth-pressure, bearing, settlement, or stability equations.
 
-16. Use the Handbook form when it is available because the FE exam supplies that reference and its constants/unit conventions govern the problem.
+16. Use the Handbook geotechnical relation that matches the drainage and failure mode because active/passive pressure, bearing capacity, and slope-stability models are not interchangeable.
 
-17. Mixed unit systems create hidden conversion errors and can invalidate dimensional consistency.
+17. Convert kPa, kN, kN/m, pcf, psf, feet, and meters consistently before computing stresses, resultants, moments, or factors of safety.
 
-18. A reasonableness check can catch sign, magnitude, boundary-condition, and unit errors that algebra alone does not reveal.
+18. Check the failure mode separately: sliding, overturning, bearing, settlement, and slope stability each require a physically sensible resistance-to-demand result and none is automatically satisfied by another.
 
-19. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+19. **A.** For **Mohr-Coulomb shear strength**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-20. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+20. **A.** For **At-rest, active, and passive earth pressure**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-21. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+21. **A.** For **Retaining-wall stability checks**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-22. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+22. **A.** For **Ultimate bearing capacity and allowable pressure**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-23. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+23. **A.** For **Foundation types and load transfer**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-24. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+24. **A.** For **Consolidation and settlement**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-25. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+25. **A.** For **Slope stability and stabilization**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-26. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+26. **A.** In Shear Strength, Earth Pressure, Bearing Capacity, Foundations, Settlement, and Slope Stability, dimensional consistency and an independent physical check are the fastest ways to detect a unit, sign, magnitude, or modeling error before accepting the result.
 
-27. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+27. **A.** Retaining-wall, settlement, and slope-stability detail beyond Handbook relations is labeled learned material and supported by the reconciled Das geotechnical/foundation references.
 
 
 
@@ -414,25 +417,39 @@ D) Treat it as optional
 
 ## Practice Problem Solutions
 
-1. Use §28.1. If c'=0, σ'=100 kPa, φ'=30°, τf≈57.7 kPa. The calculation or classification follows from the displayed section relation and the stated data.
+1. **Independent check for §28.1.** Rework the problem from the stated givens rather than copying the worked-example result. Use the Mohr-Coulomb relation \(\tau_f=c'+\sigma'\tan\phi'\). With \(c'=0\), \(\sigma'=100\ \text{kPa}\), and \(\phi'=30^\circ\), \(\tau_f=100\tan30^\circ=57.7\ \text{kPa}\). **Check:** confirm the final magnitude and units against the physical meaning of §28.1 before accepting the answer.
 
-2. Use §28.2. Use the K value corresponding to at-rest, active, or passive condition. The calculation or classification follows from the displayed section relation and the stated data.
 
-3. Use §28.3. For overturning, compare resisting moments with overturning moments about the toe. The calculation or classification follows from the displayed section relation and the stated data.
 
-4. Use §28.4. If qult=600 kPa and FS=3, qallow=200 kPa. The calculation or classification follows from the displayed section relation and the stated data.
+2. **Independent check for §28.2.** Rework the problem from the stated givens rather than copying the worked-example result. Earth-pressure coefficient selection depends on wall movement and boundary condition. Use \(K_0\) for at-rest conditions, \(K_a\) when sufficient movement mobilizes active conditions, and \(K_p\) when movement into the soil mobilizes passive resistance. Selecting the wrong state can dominate the error. **Check:** confirm the final magnitude and units against the physical meaning of §28.2 before accepting the answer.
 
-5. Use §28.5. A 900-kN column on a 9 m² footing applies 100 kPa average contact pressure. The calculation or classification follows from the displayed section relation and the stated data.
 
-6. Use §28.6. Two supports settling equally may cause little distortion; unequal settlement induces rotation and internal force. The calculation or classification follows from the displayed section relation and the stated data.
 
-7. Use §28.7. Lowering groundwater can improve effective stress and slope stability. The calculation or classification follows from the displayed section relation and the stated data.
+3. **Independent check for §28.3.** Rework the problem from the stated givens rather than copying the worked-example result. For overturning stability, choose a consistent pivot—commonly the toe—and sum resisting and overturning moments about that point. A factor of safety may be formed as \(FS=M_R/M_O\); forces passing through the toe have no moment about that pivot. **Check:** confirm the final magnitude and units against the physical meaning of §28.3 before accepting the answer.
 
-8. Check dimensions, unit conversion, sign convention, and whether the selected relation's assumptions match the physical situation.
 
-9. Start with FE Civil specification Area 12 and the Handbook sections identified in **As the Handbook States It** and the ledger entries for this chapter.
 
-10. A sketch exposes incompatible geometry, impossible flow/load directions, missing reactions/boundaries, and double-counted or omitted terms.
+4. **Independent check for §28.4.** Rework the problem from the stated givens rather than copying the worked-example result. Allowable bearing pressure is ultimate capacity divided by the specified factor of safety. Thus \(q_{allow}=600/3=200\ \text{kPa}\). This value must be distinguished from net versus gross bearing pressure if the problem defines those separately. **Check:** confirm the final magnitude and units against the physical meaning of §28.4 before accepting the answer.
+
+
+
+5. **Independent check for §28.5.** Rework the problem from the stated givens rather than copying the worked-example result. Average footing contact pressure is \(q=P/A\). With \(P=900\ \text{kN}\) and \(A=9\ \text{m}^2\), \(q=100\ \text{kN/m}^2=100\ \text{kPa}\). **Check:** confirm the final magnitude and units against the physical meaning of §28.5 before accepting the answer.
+
+
+
+6. **Independent check for §28.6.** Rework the problem from the stated givens rather than copying the worked-example result. Equal settlement of two supports produces translation with little relative distortion, whereas differential settlement changes the relative support elevations. That rotation or curvature can induce additional member forces and serviceability problems even when the total average settlement is modest. **Check:** confirm the final magnitude and units against the physical meaning of §28.6 before accepting the answer.
+
+
+
+7. **Independent check for §28.7.** Rework the problem from the stated givens rather than copying the worked-example result. Lowering the groundwater table generally reduces pore-water pressure \(u\). Since effective stress is \(\sigma'=\sigma-u\), a reduction in \(u\) increases effective stress and can increase available shear strength, improving stability under otherwise comparable conditions. **Check:** confirm the final magnitude and units against the physical meaning of §28.7 before accepting the answer.
+
+
+
+8. Before accepting a shear strength, earth pressure, bearing capacity, foundations, settlement, and slope stability result, verify the dimensional units, the chapter-specific sign or direction convention, and that the selected model matches the stated geometry and boundary conditions.
+
+9. Begin with **FE Civil specification Area 12** and the applicable Handbook soil/foundation relation in the ledger; use the Das references only for the reconciled learned-design detail.
+
+10. For shear strength, earth pressure, bearing capacity, foundations, settlement, and slope stability, a sketch makes the controlling geometry, direction, boundary, load/flow path, or sequence visible before algebra, which often reveals missing data or an impossible assumption immediately.
 
 ---
 

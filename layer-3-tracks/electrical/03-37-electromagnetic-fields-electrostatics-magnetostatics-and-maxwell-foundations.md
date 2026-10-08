@@ -65,7 +65,7 @@ Electrostatic field problems require direction as well as magnitude. Superpositi
 
 **Problem.** Doubling distance from a point charge reduces field magnitude by a factor of four.
 
-**Solution.** Use the relation and model in §37.1, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §37.1 relation \(\mathbf E=\frac{Q}{4\pi\varepsilon r^2}\mathbf a_r,\qquad \mathbf F=Q_t\mathbf E\). The statement follows from the physical or logical meaning of **Coulomb force and electric field intensity**: Doubling distance from a point charge reduces field magnitude by a factor of four. Accept that conclusion only while the stated field symmetry, material assumptions, orientation, and SI units match the electromagnetic model.
 
 ---
 
@@ -81,7 +81,7 @@ Gauss law is most useful when symmetry makes field magnitude constant over a sui
 
 **Problem.** For a spherically symmetric point charge, choose a spherical Gaussian surface centered on the charge.
 
-**Solution.** Use the relation and model in §37.2, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §37.2 relation \(\oint_S \mathbf D\cdot d\mathbf S=Q_{\text{encl}},\qquad \mathbf D=\varepsilon\mathbf E\). The statement follows from the physical or logical meaning of **Electric flux density, Gauss law, and symmetry**: For a spherically symmetric point charge, choose a spherical Gaussian surface centered on the charge. Accept that conclusion only while the stated field symmetry, material assumptions, orientation, and SI units match the electromagnetic model.
 
 ---
 
@@ -97,7 +97,7 @@ Potential difference is energy per unit charge. Capacitors store energy in the e
 
 **Problem.** A 10-μF capacitor at 20 V stores 2.0 mJ.
 
-**Solution.** Use the relation and model in §37.3, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §37.3 relation \(V_{12}=-\int_1^2 \mathbf E\cdot d\mathbf l,\qquad W_E=\frac12CV^2\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: A 10-μF capacitor at 20 V stores 2.0 mJ. Carry the stated units through the calculation and accept the result only after confirming that the stated field symmetry, material assumptions, orientation, and SI units match the electromagnetic model.
 
 ---
 
@@ -113,7 +113,7 @@ Current creates magnetic field circulation according to the right-hand rule. Mag
 
 **Problem.** Reversing current reverses force direction for a fixed magnetic field.
 
-**Solution.** Use the relation and model in §37.4, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §37.4 relation \(\mathbf H=\frac{I}{2\pi r}\mathbf a_\phi,\qquad \mathbf F=I\mathbf L\times\mathbf B\). The statement follows from the physical or logical meaning of **Magnetic field around currents and force on conductors**: Reversing current reverses force direction for a fixed magnetic field. Accept that conclusion only while the stated field symmetry, material assumptions, orientation, and SI units match the electromagnetic model.
 
 ---
 
@@ -129,7 +129,7 @@ Flux linkage connects field quantities to circuit inductance. Core permeability 
 
 **Problem.** Doubling current doubles flux linkage in a linear inductor and quadruples stored magnetic energy.
 
-**Solution.** Use the relation and model in §37.5, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §37.5 relation \(N\Phi=Li,\qquad W_H=\frac12Li^2\). The statement follows from the physical or logical meaning of **Magnetic flux, inductance, and magnetic energy**: Doubling current doubles flux linkage in a linear inductor and quadruples stored magnetic energy. Accept that conclusion only while the stated field symmetry, material assumptions, orientation, and SI units match the electromagnetic model.
 
 ---
 
@@ -145,7 +145,7 @@ Time-varying magnetic flux induces voltage. The negative sign embodies Lenz's la
 
 **Problem.** A constant flux produces zero induced voltage.
 
-**Solution.** Use the relation and model in §37.6, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §37.6 relation \(v=-N\frac{d\Phi}{dt}\). The statement follows from the physical or logical meaning of **Faraday law and electromagnetic induction**: A constant flux produces zero induced voltage. Accept that conclusion only while the stated field symmetry, material assumptions, orientation, and SI units match the electromagnetic model.
 
 ---
 
@@ -161,7 +161,7 @@ Maxwell's equations unify electrostatics, magnetostatics, induction, and wave pr
 
 **Problem.** A time-varying magnetic field produces a circulating electric field through Faraday's law.
 
-**Solution.** Use the relation and model in §37.7, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §37.7 relation \(\nabla\times\mathbf E=-\frac{\partial\mathbf B}{\partial t},\qquad \nabla\times\mathbf H=\mathbf J+\frac{\partial\mathbf D}{\partial t}\). The statement follows from the physical or logical meaning of **Maxwell equations as the electromagnetic foundation**: A time-varying magnetic field produces a circulating electric field through Faraday's law. Accept that conclusion only while the stated field symmetry, material assumptions, orientation, and SI units match the electromagnetic model.
 
 ---
 
@@ -171,13 +171,13 @@ Maxwell's equations unify electrostatics, magnetostatics, induction, and wave pr
 
 **Problem.** A calculation gives a numerical answer but violates the assumed device region, logic state, or protocol condition. Is the answer valid?
 
-**Solution.** No. Re-select the appropriate piecewise model or system state and solve again. Algebraic consistency does not override the model's validity conditions.
+**Solution.** No. In **Electromagnetic Fields — Electrostatics, Magnetostatics, and Maxwell Foundations**, a tidy numerical or logical result is still invalid if it contradicts the model assumptions. A representative failure is a symmetry-based field result used where the geometry does not have the required symmetry. Return to the applicable section, choose the state/model consistent with the solved quantities, recompute if needed, and confirm that the stated field symmetry, material assumptions, orientation, and SI units match the electromagnetic model.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the expression printed in the FE Reference Handbook. Which should govern an exam solution?
 
-**Solution.** Use the Handbook expression and its definitions unless the problem explicitly supplies a different model.
+**Solution.** Use the FE Reference Handbook expression and its definitions as the controlling exam reference unless the problem explicitly defines another model. For **Electromagnetic Fields — Electrostatics, Magnetostatics, and Maxwell Foundations**, match symbols, units, reference directions, RMS/peak or digital conventions, and assumptions to the Handbook first. External references support only specification-required learned concepts that the Handbook does not directly develop.
 
 ---
 
@@ -185,7 +185,12 @@ Maxwell's equations unify electrostatics, magnetostatics, induction, and wave pr
 
 Primary source basis: **FE Electrical and Computer specification Area 11; FE Reference Handbook 10.6 Electrical and Computer Engineering, printed pp. 361–421, with the specific Handbook subsections identified in the ledger.**
 
-**Source boundary:** The FE Electrical and Computer specification includes both directly tabulated Handbook material and learned engineering/computing concepts. The chapter does not assign false Handbook pages to material that the specification requires but the Handbook does not directly develop.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required engineering/computing knowledge that is not fully developed in the Handbook. **Guide synthesis** connects those two bodies of material into exam-oriented explanations and examples; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Griffiths, D. J. (2023). *Introduction to Electrodynamics* (5th ed.). Cambridge University Press. ISBN 978-1-009-39775-9. DOI: 10.1017/9781009397735. Supporting scope: Electrostatics, magnetostatics, induction, Maxwell equations, and electromagnetic waves.
+
+The external references support only the learned/application portion of the specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +359,31 @@ D) It is always only a qualitative concept
 
 14. For **Maxwell equations**, verify operating region/model validity, units or logic levels, sign/polarity convention, and loading or boundary conditions before accepting the result.
 
-15. The same symbol or equation can represent different physical behavior outside its valid device region, frequency range, timing model, or protocol abstraction.
+15. In Electromagnetic Fields — Electrostatics, Magnetostatics, and Maxwell Foundations, the same equation or symbol can change meaning when the operating state, abstraction, timing model, or signal convention changes; verify that the stated field symmetry, material assumptions, orientation, and SI units match the electromagnetic model.
 
-16. The Handbook is the exam reference; using its definitions prevents hidden differences in constants, RMS/peak values, sign convention, or model form.
+16. The FE Reference Handbook is the exam reference for Electromagnetic Fields — Electrostatics, Magnetostatics, and Maxwell Foundations. Match its variable definitions and conventions before substitution; external references support only learned material not developed in the Handbook.
 
-17. Algebra can be internally consistent while predicting an impossible device state, voltage, timing relationship, address range, or complexity claim. The physical/logical model must also be satisfied.
+17. An algebraically consistent answer can still be invalid in Electromagnetic Fields — Electrostatics, Magnetostatics, and Maxwell Foundations. Reject a result that implies a symmetry-based field result used where the geometry does not have the required symmetry and reselect the appropriate model or state.
 
-18. Limiting cases and order-of-magnitude checks expose sign errors, impossible gains, invalid probabilities, unrealistic timing, and model misuse.
+18. A useful independent check for this chapter is to increase distance from an isolated point source and verify the inverse-square electric-field trend. If the result does not reduce correctly, recheck the model, sign convention, and arithmetic.
 
-19. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+19. **A.** For **Coulomb force and electric field intensity**, the governing section model is \(\mathbf E=\frac{Q}{4\pi\varepsilon r^2}\mathbf a_r,\qquad \mathbf F=Q_t\mathbf E\). Apply it only with the definitions and assumptions stated in §37.1, then verify that the stated field symmetry, material assumptions, orientation, and SI units match the electromagnetic model.
 
-20. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+20. **A.** For **Electric flux density, Gauss law, and symmetry**, the governing section model is \(\oint_S \mathbf D\cdot d\mathbf S=Q_{\text{encl}},\qquad \mathbf D=\varepsilon\mathbf E\). Apply it only with the definitions and assumptions stated in §37.2, then verify that the stated field symmetry, material assumptions, orientation, and SI units match the electromagnetic model.
 
-21. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+21. **A.** For **Electric potential, work, capacitance, and stored energy**, the governing section model is \(V_{12}=-\int_1^2 \mathbf E\cdot d\mathbf l,\qquad W_E=\frac12CV^2\). Apply it only with the definitions and assumptions stated in §37.3, then verify that the stated field symmetry, material assumptions, orientation, and SI units match the electromagnetic model.
 
-22. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+22. **A.** For **Magnetic field around currents and force on conductors**, the governing section model is \(\mathbf H=\frac{I}{2\pi r}\mathbf a_\phi,\qquad \mathbf F=I\mathbf L\times\mathbf B\). Apply it only with the definitions and assumptions stated in §37.4, then verify that the stated field symmetry, material assumptions, orientation, and SI units match the electromagnetic model.
 
-23. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+23. **A.** For **Magnetic flux, inductance, and magnetic energy**, the governing section model is \(N\Phi=Li,\qquad W_H=\frac12Li^2\). Apply it only with the definitions and assumptions stated in §37.5, then verify that the stated field symmetry, material assumptions, orientation, and SI units match the electromagnetic model.
 
-24. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+24. **A.** For **Faraday law and electromagnetic induction**, the governing section model is \(v=-N\frac{d\Phi}{dt}\). Apply it only with the definitions and assumptions stated in §37.6, then verify that the stated field symmetry, material assumptions, orientation, and SI units match the electromagnetic model.
 
-25. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+25. **A.** For **Maxwell equations as the electromagnetic foundation**, the governing section model is \(\nabla\times\mathbf E=-\frac{\partial\mathbf B}{\partial t},\qquad \nabla\times\mathbf H=\mathbf J+\frac{\partial\mathbf D}{\partial t}\). Apply it only with the definitions and assumptions stated in §37.7, then verify that the stated field symmetry, material assumptions, orientation, and SI units match the electromagnetic model.
 
-26. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+26. **A.** For an integrated Electromagnetic Fields — Electrostatics, Magnetostatics, and Maxwell Foundations problem, separate the physical/logical model from the arithmetic, solve with the relevant section relations, and cross-check the result against the chapter-specific validity conditions.
 
-27. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+27. **A.** In **Electromagnetic Fields — Electrostatics, Magnetostatics, and Maxwell Foundations**, the source boundary is explicit: FE-Handbook-supported material remains tied to the ledger, externally supported material uses the chapter references for electrostatic, magnetic, and Maxwell-field foundations (GRIFFITHS), and guide synthesis is identified as supplemental explanation rather than Handbook text.
 
 
 ---
@@ -410,25 +415,25 @@ D) It is always only a qualitative concept
 
 ## Practice Problem Solutions
 
-1. Use §37.1. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+1. **Independent check for §37.1.** Begin independently with \(\mathbf E=\frac{Q}{4\pi\varepsilon r^2}\mathbf a_r,\qquad \mathbf F=Q_t\mathbf E\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: Doubling distance from a point charge reduces field magnitude by a factor of four. Then verify that the stated field symmetry, material assumptions, orientation, and SI units match the electromagnetic model.
 
-2. Use §37.2. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+2. **Independent check for §37.2.** Begin independently with \(\oint_S \mathbf D\cdot d\mathbf S=Q_{\text{encl}},\qquad \mathbf D=\varepsilon\mathbf E\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: For a spherically symmetric point charge, choose a spherical Gaussian surface centered on the charge. Then verify that the stated field symmetry, material assumptions, orientation, and SI units match the electromagnetic model.
 
-3. Use §37.3. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+3. **Independent check for §37.3.** Begin independently with \(V_{12}=-\int_1^2 \mathbf E\cdot d\mathbf l,\qquad W_E=\frac12CV^2\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: A 10-μF capacitor at 20 V stores 2.0 mJ. Then verify that the stated field symmetry, material assumptions, orientation, and SI units match the electromagnetic model.
 
-4. Use §37.4. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+4. **Independent check for §37.4.** Begin independently with \(\mathbf H=\frac{I}{2\pi r}\mathbf a_\phi,\qquad \mathbf F=I\mathbf L\times\mathbf B\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: Reversing current reverses force direction for a fixed magnetic field. Then verify that the stated field symmetry, material assumptions, orientation, and SI units match the electromagnetic model.
 
-5. Use §37.5. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+5. **Independent check for §37.5.** Begin independently with \(N\Phi=Li,\qquad W_H=\frac12Li^2\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: Doubling current doubles flux linkage in a linear inductor and quadruples stored magnetic energy. Then verify that the stated field symmetry, material assumptions, orientation, and SI units match the electromagnetic model.
 
-6. Use §37.6. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+6. **Independent check for §37.6.** Begin independently with \(v=-N\frac{d\Phi}{dt}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: A constant flux produces zero induced voltage. Then verify that the stated field symmetry, material assumptions, orientation, and SI units match the electromagnetic model.
 
-7. Use §37.7. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+7. **Independent check for §37.7.** Begin independently with \(\nabla\times\mathbf E=-\frac{\partial\mathbf B}{\partial t},\qquad \nabla\times\mathbf H=\mathbf J+\frac{\partial\mathbf D}{\partial t}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: A time-varying magnetic field produces a circulating electric field through Faraday's law. Then verify that the stated field symmetry, material assumptions, orientation, and SI units match the electromagnetic model.
 
-8. Check device operating region, saturation/clipping, frequency range, RMS-versus-peak convention, timing constraints, address/bit width, or protocol/software preconditions as applicable.
+8. Check the chapter-specific failure mode first: a symmetry-based field result used where the geometry does not have the required symmetry. Do not accept the numerical or logical result until the stated field symmetry, material assumptions, orientation, and SI units match the electromagnetic model.
 
-9. Start with FE Electrical and Computer specification Area 11, then use the Handbook subsection named in the ledger for the specific concept.
+9. For **Electromagnetic Fields — Electrostatics, Magnetostatics, and Maxwell Foundations**, start with the FE Electrical and Computer specification/Handbook location recorded in the ledger, then use the chapter's reconciled source set for electrostatic, magnetic, and Maxwell-field foundations (GRIFFITHS) when the concept is split-required. That preserves the Handbook-versus-learned-material boundary.
 
-10. Test a simple limiting case: zero input, matched load, very low/high frequency, all-zero/all-one logic, minimum/maximum address, or small input size as appropriate. The result should reduce to a physically or logically sensible form.
+10. Use this limiting check: increase distance from an isolated point source and verify the inverse-square electric-field trend. The simplified case should produce the expected physical, timing, logic, protocol, or complexity behavior before the full solution is trusted.
 
 ---
 

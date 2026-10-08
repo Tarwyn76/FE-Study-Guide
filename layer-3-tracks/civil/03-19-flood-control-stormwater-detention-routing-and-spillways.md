@@ -65,7 +65,7 @@ Return period is the reciprocal of annual exceedance probability under the usual
 
 **Problem.** A 100-year event has 1% annual exceedance probability.
 
-**Solution.** Apply the relation and definitions in §19.1; the stated result follows with consistent units and sign convention.
+**Solution.** Annual exceedance probability is approximately \(P=1/T_r\). For a 100-year return period, \(P=1/100=0.01=1\%\) per year. A 100-year designation does not mean the event occurs only once every 100 years.
 
 ---
 
@@ -81,7 +81,7 @@ Detention attenuates peaks by temporarily storing inflow and releasing it more s
 
 **Problem.** If inflow exceeds outflow by 20 cfs for 10 min, storage rises by 12,000 ft³.
 
-**Solution.** Apply the relation and definitions in §19.2; the stated result follows with consistent units and sign convention.
+**Solution.** Use reservoir continuity over the time interval. The net inflow is \(20\ \text{ft}^3/\text{s}\) for \(10\ \text{min}=600\ \text{s}\), so \(\Delta S=(20)(600)=12{,}000\ \text{ft}^3\). Storage therefore increases by **12,000 ft³**.
 
 ---
 
@@ -97,7 +97,7 @@ Level-pool routing assumes the water surface is essentially horizontal across th
 
 **Problem.** Trapezoidal integration of inflow and outflow gives the storage change over a step.
 
-**Solution.** Apply the relation and definitions in §19.3; the stated result follows with consistent units and sign convention.
+**Solution.** For a finite routing step, approximate the storage change with trapezoidal integration: \(\Delta S\approx\Delta t[(I_1+I_2)-(O_1+O_2)]/2\). This is the average net inflow over the interval multiplied by the step duration; all flow rates and time units must be compatible.
 
 ---
 
@@ -113,7 +113,7 @@ Peak-flow reduction depends on available storage and the outlet rating. The maxi
 
 **Problem.** The area between inflow and outflow hydrographs up to their crossing represents stored volume.
 
-**Solution.** Apply the relation and definitions in §19.4; the stated result follows with consistent units and sign convention.
+**Solution.** Storage accumulation is the time integral of \(I-O\). On superimposed inflow and outflow hydrographs, the signed area between the curves gives the change in storage; positive area while inflow exceeds outflow represents detention volume accumulating in the basin.
 
 ---
 
@@ -129,7 +129,7 @@ Spillways safely pass flows that exceed normal outlet capacity. The controlling 
 
 **Problem.** If head doubles and coefficient remains constant, discharge scales by 2^(3/2).
 
-**Solution.** Apply the relation and definitions in §19.5; the stated result follows with consistent units and sign convention.
+**Solution.** With \(Q=CLH^{3/2}\), holding \(C\) and \(L\) constant gives \(Q\propto H^{3/2}\). Doubling head produces \(Q_2/Q_1=2^{3/2}\approx2.83\), so spillway discharge becomes about 2.83 times the original value.
 
 ---
 
@@ -145,7 +145,7 @@ A flood-control structure requires hydraulic capacity plus margin for uncertaint
 
 **Problem.** A crest at 1010 ft and design water surface at 1004 ft provides 6 ft freeboard.
 
-**Solution.** Apply the relation and definitions in §19.6; the stated result follows with consistent units and sign convention.
+**Solution.** Freeboard is crest elevation minus design water-surface elevation. Thus \(1010-1004=6\ \text{ft}\). The final freeboard is **6 ft** (about **1.83 m**). That vertical safety margin should not be confused with storage depth or spillway head.
 
 ---
 
@@ -161,7 +161,7 @@ Stormwater design addresses both flow and pollutant transport. Temporary and per
 
 **Problem.** At Q=2 m³/s and C=20 mg/L, instantaneous mass rate is 40 g/s.
 
-**Solution.** Apply the relation and definitions in §19.7; the stated result follows with consistent units and sign convention.
+**Solution.** For a flood-control water-quality screening calculation, first put concentration on a discharge-compatible basis: \(20\ \text{mg/L}=20\ \text{g/m}^3\). The instantaneous constituent flux is then \(\dot m=QC=(2\ \text{m}^3/\text{s})(20\ \text{g/m}^3)=40\ \text{g/s}\). This is a mass rate through the control section, not the mass stored in the basin.
 
 ---
 
@@ -171,13 +171,13 @@ Stormwater design addresses both flow and pollutant transport. Temporary and per
 
 **Problem.** A problem combines two ideas from this chapter. What should be done before calculation?
 
-**Solution.** Draw the system, identify the requested quantity, establish units and sign conventions, and list the governing relations before substituting numbers.
+**Solution.** For a detention problem, first generate or interpret the inflow hydrograph, then route it through the storage/outflow relation. After peak storage and outflow are known, check spillway capacity and freeboard. Keeping hydrologic input generation separate from hydraulic outlet control prevents double counting.
 
 ### Worked Example 9
 
 **Problem.** A remembered equation differs from the FE Reference Handbook form. Which should govern the exam solution?
 
-**Solution.** Use the Handbook form and its unit convention unless the problem explicitly supplies a different relation.
+**Solution.** Use the Handbook relation that corresponds to the routing or hydraulic-control model stated in the problem. Return-period probability, storage continuity, and spillway equations describe different parts of the system and should not be substituted for one another simply because they all involve flood design.
 
 ---
 
@@ -185,11 +185,15 @@ Stormwater design addresses both flow and pollutant transport. Temporary and per
 
 Primary source basis: **FE Civil specification Area 10; FE Reference Handbook 10.6 Civil Engineering and supporting general sections cited below.**
 
-**Source boundary:** Some Civil specification topics are directly tabulated in the Handbook; others are named by the specification but require learned engineering knowledge. This chapter does not imply that every workflow, code provision, or design factor is printed in the Handbook.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is retained because it is required by the FE Civil specification but needs engineering knowledge beyond what is printed in the Handbook. **Guide synthesis** connects those two sources into exam-oriented workflows and examples; it is not presented as Handbook text.
 
-Where the FE specification requires a topic that is not directly developed in the Handbook, the ledger marks it **specification-required / guide-developed** rather than inventing a Handbook citation.
+**External source support for split-required concepts:**
+- `CIV-3-019-01` — England, J. F., Jr., Cohn, T. A., Faber, B. A., Stedinger, J. R., Thomas, W. O., Jr., Veilleux, A. G., Kiang, J. E., & Mason, R. R., Jr. (2018). *Guidelines for Determining Flood Flow Frequency—Bulletin 17C* (ver. 1.1, May 2019). U.S. Geological Survey Techniques and Methods, Book 4, Chapter B5. https://doi.org/10.3133/tm4B5 Cited at publication/standard level; no page-level claim.
+- `CIV-3-019-02` — Kilgore, R., Atayee, A. T., & Herrmann, G. R. (2024). *Urban Drainage Design* (Hydraulic Engineering Circular No. 22, 4th ed., FHWA-HIF-24-006). Federal Highway Administration. Verified location: Chapter 4, pp. 21–24 for rainfall/IDF/design-storm and runoff concepts; Chapter 10, pp. 182–229 for detention, stage-storage/stage-discharge, routing, and outlet control. U.S. Army Corps of Engineers, Hydrologic Engineering Center. *HEC-HMS Technical Reference Manual* (CPD-74B), current online edition. Cited at publication/standard level; no page-level claim.
+- `CIV-3-019-04` — Kilgore, R., Atayee, A. T., & Herrmann, G. R. (2024). *Urban Drainage Design* (Hydraulic Engineering Circular No. 22, 4th ed., FHWA-HIF-24-006). Federal Highway Administration. Verified location: Chapter 4, pp. 21–24 for rainfall/IDF/design-storm and runoff concepts; Chapter 10, pp. 182–229 for detention, stage-storage/stage-discharge, routing, and outlet control.
+- `CIV-3-019-06` — U.S. Bureau of Reclamation. (2021). *Design Standards No. 13: Embankment Dams, Chapter 6—Freeboard* (DS-13(6)-2.1, Phase 4 Final). U.S. Department of the Interior. Verified location: Chapter 6, pp. 6-1–6-22; especially §§6.2.1–6.2.3 for minimum, normal, and intermediate freeboard and §6.5 for other freeboard factors.
 
----
+No external source above is being used to replace the FE Reference Handbook. The external references support only the learned/application portion identified by `split_required: true`.
 
 ## Where This Goes Wrong
 
@@ -357,31 +361,31 @@ D) Treat it as optional
 
 14. For **stormwater quality control**, common failures are wrong units, wrong sign convention, wrong geometry/boundary condition, or using a relation outside its assumptions.
 
-15. The sketch exposes geometry, boundaries, loads/flows, signs, and missing data before algebra begins.
+15. Draw the detention basin, inflow hydrograph, outlet, spillway, stage-storage relation, and routing interval before calculating so storage continuity and hydraulic controls are not conflated.
 
-16. Use the Handbook form when it is available because the FE exam supplies that reference and its constants/unit conventions govern the problem.
+16. Use the Handbook routing or hydraulic-control equation when it is supplied, and then apply the external detention/freeboard guidance only to the learned design details not contained in the Handbook.
 
-17. Mixed unit systems create hidden conversion errors and can invalidate dimensional consistency.
+17. Flood-routing work can mix cfs, seconds or hours, acre-feet, cubic feet, and elevations; all flow-time products must be converted to consistent storage-volume units.
 
-18. A reasonableness check can catch sign, magnitude, boundary-condition, and unit errors that algebra alone does not reveal.
+18. Check conservation and attenuation: routed storage must stay nonnegative, outflow should follow the outlet rating, and a detention basin intended to attenuate a peak should not produce an unexplained peak larger than inflow.
 
-19. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+19. **A.** For **Flood-frequency concepts and design-event selection**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-20. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+20. **A.** For **Reservoir and detention continuity**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-21. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+21. **A.** For **Level-pool routing and storage-indication concepts**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-22. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+22. **A.** For **Stormwater detention sizing and outlet control**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-23. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+23. **A.** For **Spillway discharge and hydraulic control**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-24. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+24. **A.** For **Dams, freeboard, and flood-control operating concepts**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-25. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+25. **A.** For **Stormwater quality and erosion-control integration**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-26. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+26. **A.** In Flood Control, Stormwater Detention, Routing, and Spillways, dimensional consistency and an independent physical check are the fastest ways to detect a unit, sign, magnitude, or modeling error before accepting the result.
 
-27. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+27. **A.** Detention, routing, and dam-freeboard details outside Handbook tables are explicitly sourced to FHWA HEC-22 and USBR Design Standards No. 13 instead of being misidentified as Handbook text.
 
 
 
@@ -414,25 +418,39 @@ D) Treat it as optional
 
 ## Practice Problem Solutions
 
-1. Use §19.1. A 100-year event has 1% annual exceedance probability. The calculation or classification follows from the displayed section relation and the stated data.
+1. **Independent check for §19.1.** Rework the problem from the stated givens rather than copying the worked-example result. Annual exceedance probability is approximately \(P=1/T_r\). For a 100-year return period, \(P=1/100=0.01=1\%\) per year. A 100-year designation does not mean the event occurs only once every 100 years. **Check:** confirm the final magnitude and units against the physical meaning of §19.1 before accepting the answer.
 
-2. Use §19.2. If inflow exceeds outflow by 20 cfs for 10 min, storage rises by 12,000 ft³. The calculation or classification follows from the displayed section relation and the stated data.
 
-3. Use §19.3. Trapezoidal integration of inflow and outflow gives the storage change over a step. The calculation or classification follows from the displayed section relation and the stated data.
 
-4. Use §19.4. The area between inflow and outflow hydrographs up to their crossing represents stored volume. The calculation or classification follows from the displayed section relation and the stated data.
+2. **Independent check for §19.2.** Rework the problem from the stated givens rather than copying the worked-example result. Use reservoir continuity over the time interval. The net inflow is \(20\ \text{ft}^3/\text{s}\) for \(10\ \text{min}=600\ \text{s}\), so \(\Delta S=(20)(600)=12{,}000\ \text{ft}^3\). Storage therefore increases by **12,000 ft³**. **Check:** confirm the final magnitude and units against the physical meaning of §19.2 before accepting the answer.
 
-5. Use §19.5. If head doubles and coefficient remains constant, discharge scales by 2^(3/2). The calculation or classification follows from the displayed section relation and the stated data.
 
-6. Use §19.6. A crest at 1010 ft and design water surface at 1004 ft provides 6 ft freeboard. The calculation or classification follows from the displayed section relation and the stated data.
 
-7. Use §19.7. At Q=2 m³/s and C=20 mg/L, instantaneous mass rate is 40 g/s. The calculation or classification follows from the displayed section relation and the stated data.
+3. **Independent check for §19.3.** Rework the problem from the stated givens rather than copying the worked-example result. For a finite routing step, approximate the storage change with trapezoidal integration: \(\Delta S\approx\Delta t[(I_1+I_2)-(O_1+O_2)]/2\). This is the average net inflow over the interval multiplied by the step duration; all flow rates and time units must be compatible. **Check:** confirm the final magnitude and units against the physical meaning of §19.3 before accepting the answer.
 
-8. Check dimensions, unit conversion, sign convention, and whether the selected relation's assumptions match the physical situation.
 
-9. Start with FE Civil specification Area 10 and the Handbook sections identified in **As the Handbook States It** and the ledger entries for this chapter.
 
-10. A sketch exposes incompatible geometry, impossible flow/load directions, missing reactions/boundaries, and double-counted or omitted terms.
+4. **Independent check for §19.4.** Rework the problem from the stated givens rather than copying the worked-example result. Storage accumulation is the time integral of \(I-O\). On superimposed inflow and outflow hydrographs, the signed area between the curves gives the change in storage; positive area while inflow exceeds outflow represents detention volume accumulating in the basin. **Check:** confirm the final magnitude and units against the physical meaning of §19.4 before accepting the answer.
+
+
+
+5. **Independent check for §19.5.** Rework the problem from the stated givens rather than copying the worked-example result. With \(Q=CLH^{3/2}\), holding \(C\) and \(L\) constant gives \(Q\propto H^{3/2}\). Doubling head produces \(Q_2/Q_1=2^{3/2}\approx2.83\), so spillway discharge becomes about 2.83 times the original value. **Check:** confirm the final magnitude and units against the physical meaning of §19.5 before accepting the answer.
+
+
+
+6. **Independent check for §19.6.** Rework the problem from the stated givens rather than copying the worked-example result. Freeboard is crest elevation minus design water-surface elevation. Thus \(1010-1004=6\ \text{ft}\). The **6-ft freeboard** is a vertical safety margin and should not be confused with storage depth or spillway head. **Check:** confirm the final magnitude and units against the physical meaning of §19.6 before accepting the answer.
+
+
+
+7. **Independent check for §19.7.** Treat the concentration as a constituent flux through the flood-control section. Convert \(20\ \text{mg/L}\) to \(20\ \text{g/m}^3\), multiply by the \(2\ \text{m}^3/\text{s}\) discharge, and obtain \(40\ \text{g/s}\). The check is that discharge times concentration reduces to mass per time; basin storage would require an additional time integration.
+
+
+
+8. Before accepting a flood control, stormwater detention, routing, and spillways result, verify the dimensional units, the chapter-specific sign or direction convention, and that the selected model matches the stated geometry and boundary conditions.
+
+9. Start with **FE Civil specification Area 10** and the Handbook hydrology/hydraulics entries in the ledger; use FHWA HEC-22 or USBR freeboard guidance for the reconciled learned-design portion.
+
+10. For flood control, stormwater detention, routing, and spillways, a sketch makes the controlling geometry, direction, boundary, load/flow path, or sequence visible before algebra, which often reveals missing data or an impossible assumption immediately.
 
 ---
 

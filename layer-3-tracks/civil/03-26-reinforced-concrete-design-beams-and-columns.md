@@ -65,7 +65,7 @@ At nominal flexural strength, internal concrete compression and steel tension re
 
 **Problem.** For a singly reinforced rectangular beam, locate the compression block so C equals T.
 
-**Solution.** Apply the relation and definitions in §26.1; the stated result follows with consistent units and sign convention.
+**Solution.** For a singly reinforced rectangular section, equilibrium requires compression equal tension: \(C=T\). With the rectangular stress block, \(C=0.85f'_cba\) and \(T=A_sf_y\) when the steel yields; solve \(0.85f'_cba=A_sf_y\) for the compression-block depth \(a\).
 
 ---
 
@@ -81,7 +81,7 @@ Beam flexural strength depends on tensile steel area, yield strength, effective 
 
 **Problem.** Once a is known from force equilibrium, compute Mn from the internal couple.
 
-**Solution.** Apply the relation and definitions in §26.2; the stated result follows with consistent units and sign convention.
+**Solution.** Once \(a\) is obtained from force equilibrium, the internal tensile and compressive resultants form a couple with lever arm \(d-a/2\). Therefore \(M_n=A_sf_y(d-a/2)\). Maintain consistent force and length units so the resulting moment unit is correct.
 
 ---
 
@@ -97,7 +97,7 @@ Use the strength-reduction factor associated with the strain condition or relati
 
 **Problem.** If Mn=200 kip-ft and φ=0.90, design strength is 180 kip-ft.
 
-**Solution.** Apply the relation and definitions in §26.3; the stated result follows with consistent units and sign convention.
+**Solution.** Design strength is \(\phi M_n\). With \(M_n=200\ \text{kip-ft}\) and \(\phi=0.90\), \(\phi M_n=0.90(200)=180\ \text{kip-ft}\). This available strength is then compared with the factored moment demand.
 
 ---
 
@@ -113,7 +113,7 @@ Concrete and transverse reinforcement may both contribute to shear resistance. C
 
 **Problem.** Stirrups increase Vs by providing transverse reinforcement crossing diagonal cracks.
 
-**Solution.** Apply the relation and definitions in §26.4; the stated result follows with consistent units and sign convention.
+**Solution.** Concrete alone has limited diagonal-tension capacity after cracking. Stirrups cross potential diagonal cracks and develop tensile force, adding a shear contribution \(V_s\) to the concrete contribution \(V_c\). The design check uses the applicable strength-reduction factor on the total nominal shear strength.
 
 ---
 
@@ -129,7 +129,7 @@ Reinforcing steel must develop stress through bond. Bar placement affects effect
 
 **Problem.** A bar cut off too close to a high-moment region may not develop the assumed tensile force.
 
-**Solution.** Apply the relation and definitions in §26.5; the stated result follows with consistent units and sign convention.
+**Solution.** Development length ensures that reinforcement can transfer its required stress into the surrounding concrete through bond. Cutting a bar off before sufficient development length is available can prevent the assumed tensile force from developing, even if the flexural calculation based on full yield strength appears adequate.
 
 ---
 
@@ -145,7 +145,7 @@ Concrete columns carry load through both concrete and longitudinal reinforcement
 
 **Problem.** Increasing gross area generally increases axial nominal strength, all else equal.
 
-**Solution.** Apply the relation and definitions in §26.6; the stated result follows with consistent units and sign convention.
+**Solution.** For a reinforced-concrete column, axial nominal strength depends strongly on gross concrete area and longitudinal reinforcement. Increasing gross area generally raises axial capacity when material strengths and reinforcement ratio are otherwise comparable, although slenderness and eccentricity may still govern.
 
 ---
 
@@ -161,7 +161,7 @@ Columns rarely carry perfectly concentric load. Axial force and bending moment i
 
 **Problem.** More eccentricity generally shifts demand toward a flexure-dominated condition.
 
-**Solution.** Apply the relation and definitions in §26.7; the stated result follows with consistent units and sign convention.
+**Solution.** Axial load with increasing eccentricity produces a larger bending moment \(M=Pe\). As eccentricity grows, the demand point moves along the axial-force/moment interaction relationship toward a flexure-dominated condition and away from nearly concentric compression.
 
 ---
 
@@ -171,13 +171,13 @@ Columns rarely carry perfectly concentric load. Axial force and bending moment i
 
 **Problem.** A problem combines two ideas from this chapter. What should be done before calculation?
 
-**Solution.** Draw the system, identify the requested quantity, establish units and sign conventions, and list the governing relations before substituting numbers.
+**Solution.** For a reinforced-concrete member, first establish equilibrium and strain-compatible section forces, then apply the strength-reduction factor and compare with factored demand. Development, shear reinforcement, and interaction effects are separate checks and should not be assumed satisfied by a flexural-strength calculation.
 
 ### Worked Example 9
 
 **Problem.** A remembered equation differs from the FE Reference Handbook form. Which should govern the exam solution?
 
-**Solution.** Use the Handbook form and its unit convention unless the problem explicitly supplies a different relation.
+**Solution.** Use the Handbook reinforced-concrete expressions and stated resistance factors for the exam. Remembered code provisions may come from another edition or may use different assumptions for stress blocks, development, or column interaction; the Handbook form should govern.
 
 ---
 
@@ -185,11 +185,13 @@ Columns rarely carry perfectly concentric load. Axial force and bending moment i
 
 Primary source basis: **FE Civil specification Area 11; FE Reference Handbook 10.6 Civil Engineering and supporting general sections cited below.**
 
-**Source boundary:** Some Civil specification topics are directly tabulated in the Handbook; others are named by the specification but require learned engineering knowledge. This chapter does not imply that every workflow, code provision, or design factor is printed in the Handbook.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is retained because it is required by the FE Civil specification but needs engineering knowledge beyond what is printed in the Handbook. **Guide synthesis** connects those two sources into exam-oriented workflows and examples; it is not presented as Handbook text.
 
-Where the FE specification requires a topic that is not directly developed in the Handbook, the ledger marks it **specification-required / guide-developed** rather than inventing a Handbook citation.
+**External source support for split-required concepts:**
+- `CIV-3-026-04` — ACI Committee 318. (2025). *Building Code for Structural Concrete—Code Requirements and Commentary* (ACI CODE-318-25). American Concrete Institute. Cited at publication/standard level; no page-level claim.
+- `CIV-3-026-07` — ACI Committee 318. (2025). *Building Code for Structural Concrete—Code Requirements and Commentary* (ACI CODE-318-25). American Concrete Institute. Cited at publication/standard level; no page-level claim.
 
----
+No external source above is being used to replace the FE Reference Handbook. The external references support only the learned/application portion identified by `split_required: true`.
 
 ## Where This Goes Wrong
 
@@ -357,31 +359,31 @@ D) Treat it as optional
 
 14. For **RC interaction**, common failures are wrong units, wrong sign convention, wrong geometry/boundary condition, or using a relation outside its assumptions.
 
-15. The sketch exposes geometry, boundaries, loads/flows, signs, and missing data before algebra begins.
+15. Sketch the reinforced-concrete section, neutral axis, compression block, reinforcement location, and eccentric load before selecting flexural, shear, or interaction equations.
 
-16. Use the Handbook form when it is available because the FE exam supplies that reference and its constants/unit conventions govern the problem.
+16. Use the Handbook reinforced-concrete relation where supplied, and use the cited ACI code only for learned design provisions not printed in the Handbook.
 
-17. Mixed unit systems create hidden conversion errors and can invalidate dimensional consistency.
+17. Concrete design mixes psi or ksi, inches, square inches, and kip-in or kip-ft; convert consistently before section forces and moments are compared.
 
-18. A reasonableness check can catch sign, magnitude, boundary-condition, and unit errors that algebra alone does not reveal.
+18. Check equilibrium and capacity: compression and tension resultants should balance for the assumed section state, and the reduced design strength must meet or exceed the factored demand.
 
-19. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+19. **A.** For **Concrete flexural design assumptions**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-20. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+20. **A.** For **Singly reinforced rectangular beam strength**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-21. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+21. **A.** For **Strength-reduction and design check**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-22. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+22. **A.** For **Reinforced concrete beam shear**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-23. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+23. **A.** For **Development, anchorage, and reinforcement placement**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-24. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+24. **A.** For **Axially loaded concrete columns**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-25. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+25. **A.** For **Beam-column interaction and eccentric loading**, the governing relation or workflow is valid only for its stated variables, units, physical model, and assumptions; those conditions must be checked before accepting the result.
 
-26. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+26. **A.** In Reinforced Concrete Design — Beams and Columns, dimensional consistency and an independent physical check are the fastest ways to detect a unit, sign, magnitude, or modeling error before accepting the result.
 
-27. **A.** The relation or workflow depends on the stated units, assumptions, geometry, and boundary conditions.
+27. **A.** Shear and beam-column interaction provisions beyond Handbook equations are labeled learned material and supported by ACI CODE-318-25 rather than assigned a false Handbook page.
 
 
 
@@ -414,25 +416,39 @@ D) Treat it as optional
 
 ## Practice Problem Solutions
 
-1. Use §26.1. For a singly reinforced rectangular beam, locate the compression block so C equals T. The calculation or classification follows from the displayed section relation and the stated data.
+1. **Independent check for §26.1.** Rework the problem from the stated givens rather than copying the worked-example result. For a singly reinforced rectangular section, equilibrium requires compression equal tension: \(C=T\). With the rectangular stress block, \(C=0.85f'_cba\) and \(T=A_sf_y\) when the steel yields; solve \(0.85f'_cba=A_sf_y\) for the compression-block depth \(a\). **Check:** confirm the final magnitude and units against the physical meaning of §26.1 before accepting the answer.
 
-2. Use §26.2. Once a is known from force equilibrium, compute Mn from the internal couple. The calculation or classification follows from the displayed section relation and the stated data.
 
-3. Use §26.3. If Mn=200 kip-ft and φ=0.90, design strength is 180 kip-ft. The calculation or classification follows from the displayed section relation and the stated data.
 
-4. Use §26.4. Stirrups increase Vs by providing transverse reinforcement crossing diagonal cracks. The calculation or classification follows from the displayed section relation and the stated data.
+2. **Independent check for §26.2.** Rework the problem from the stated givens rather than copying the worked-example result. Once \(a\) is obtained from force equilibrium, the internal tensile and compressive resultants form a couple with lever arm \(d-a/2\). Therefore \(M_n=A_sf_y(d-a/2)\). Maintain consistent force and length units so the resulting moment unit is correct. **Check:** confirm the final magnitude and units against the physical meaning of §26.2 before accepting the answer.
 
-5. Use §26.5. A bar cut off too close to a high-moment region may not develop the assumed tensile force. The calculation or classification follows from the displayed section relation and the stated data.
 
-6. Use §26.6. Increasing gross area generally increases axial nominal strength, all else equal. The calculation or classification follows from the displayed section relation and the stated data.
 
-7. Use §26.7. More eccentricity generally shifts demand toward a flexure-dominated condition. The calculation or classification follows from the displayed section relation and the stated data.
+3. **Independent check for §26.3.** Rework the problem from the stated givens rather than copying the worked-example result. Design strength is \(\phi M_n\). With \(M_n=200\ \text{kip-ft}\) and \(\phi=0.90\), \(\phi M_n=0.90(200)=180\ \text{kip-ft}\). This available strength is then compared with the factored moment demand. **Check:** confirm the final magnitude and units against the physical meaning of §26.3 before accepting the answer.
 
-8. Check dimensions, unit conversion, sign convention, and whether the selected relation's assumptions match the physical situation.
 
-9. Start with FE Civil specification Area 11 and the Handbook sections identified in **As the Handbook States It** and the ledger entries for this chapter.
 
-10. A sketch exposes incompatible geometry, impossible flow/load directions, missing reactions/boundaries, and double-counted or omitted terms.
+4. **Independent check for §26.4.** Rework the problem from the stated givens rather than copying the worked-example result. Concrete alone has limited diagonal-tension capacity after cracking. Stirrups cross potential diagonal cracks and develop tensile force, adding a shear contribution \(V_s\) to the concrete contribution \(V_c\). The design check uses the applicable strength-reduction factor on the total nominal shear strength. **Check:** confirm the final magnitude and units against the physical meaning of §26.4 before accepting the answer.
+
+
+
+5. **Independent check for §26.5.** Rework the problem from the stated givens rather than copying the worked-example result. Development length ensures that reinforcement can transfer its required stress into the surrounding concrete through bond. Cutting a bar off before sufficient development length is available can prevent the assumed tensile force from developing, even if the flexural calculation based on full yield strength appears adequate. **Check:** confirm the final magnitude and units against the physical meaning of §26.5 before accepting the answer.
+
+
+
+6. **Independent check for §26.6.** Rework the problem from the stated givens rather than copying the worked-example result. For a reinforced-concrete column, axial nominal strength depends strongly on gross concrete area and longitudinal reinforcement. Increasing gross area generally raises axial capacity when material strengths and reinforcement ratio are otherwise comparable, although slenderness and eccentricity may still govern. **Check:** confirm the final magnitude and units against the physical meaning of §26.6 before accepting the answer.
+
+
+
+7. **Independent check for §26.7.** Rework the problem from the stated givens rather than copying the worked-example result. Axial load with increasing eccentricity produces a larger bending moment \(M=Pe\). As eccentricity grows, the demand point moves along the axial-force/moment interaction relationship toward a flexure-dominated condition and away from nearly concentric compression. **Check:** confirm the final magnitude and units against the physical meaning of §26.7 before accepting the answer.
+
+
+
+8. Before accepting a reinforced concrete design — beams and columns result, verify the dimensional units, the chapter-specific sign or direction convention, and that the selected model matches the stated geometry and boundary conditions.
+
+9. Begin with **FE Civil specification Area 11** and the reinforced-concrete relations identified in the ledger; use ACI 318 only for the reconciled learned/code portion.
+
+10. For reinforced concrete design — beams and columns, a sketch makes the controlling geometry, direction, boundary, load/flow path, or sequence visible before algebra, which often reveals missing data or an impossible assumption immediately.
 
 ---
 

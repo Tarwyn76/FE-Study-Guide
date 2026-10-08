@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="648pt" viewBox="0 0 864 648" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-08T12:21:41.595539</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 648 
+L 864 648 
+L 864 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="text_1">
+    <!-- $dU=\mathbf{F}\cdot d\mathbf{r}$ -->
+    <g style="fill: #23313d" transform="translate(603.8176 200.731975)">
+     <text>
+      <tspan x="0" y="-0.25" style="font-style: oblique; font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d">d</tspan>
+      <tspan x="16.503906" y="-0.25" style="font-style: oblique; font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d">U</tspan>
+      <tspan x="103.606445" y="-0.25" style="font-style: oblique; font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d">d</tspan>
+      <tspan x="40.599609" y="-0.25" style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d">=</tspan>
+      <tspan x="90.276367" y="-0.25" style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d">⋅</tspan>
+      <tspan x="67.450195" y="-0.25" style="font-weight: 700; font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d">F</tspan>
+      <tspan x="120.110352" y="-0.25" style="font-weight: 700; font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d">r</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 26px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="670.3776" y="334.867975" transform="rotate(-0 670.3776 334.867975)">dU = F cos θ ds</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(565.710725 455.064795)">Positive / zero / negative</text>
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(552.999241 477.97628)">according to the projection.</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_2">
+    <path d="M 305.435003 352.659598 
+C 303.633902 350.158069 301.611911 347.823234 299.393377 345.683206 
+C 297.174842 343.543179 294.768704 341.606583 292.203935 339.896737 
+" clip-path="url(#p2edb3441b5)" style="fill: none; stroke: #b47722; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 126.252 432.216 
+L 132.603051 432.110298 
+L 138.954103 431.793192 
+L 145.305154 431.264683 
+L 151.656205 430.524769 
+L 158.007256 429.573452 
+L 164.358308 428.410731 
+L 170.709359 427.036606 
+L 177.06041 425.451077 
+L 183.411461 423.654145 
+L 189.762513 421.645808 
+L 196.113564 419.426068 
+L 202.464615 416.994924 
+L 208.815666 414.352376 
+L 215.166718 411.498424 
+L 221.517769 408.433068 
+L 227.86882 405.156309 
+L 234.219871 401.668146 
+L 240.570923 397.968578 
+L 246.921974 394.057607 
+L 253.273025 389.935233 
+L 261.211839 384.484977 
+L 269.150653 378.704404 
+L 277.089467 372.593512 
+L 285.028281 366.152301 
+L 292.967095 359.380772 
+L 300.90591 352.278924 
+L 308.844724 344.846758 
+L 316.783538 337.084273 
+L 324.722352 328.99147 
+L 332.661166 320.568349 
+L 340.59998 311.814909 
+L 348.538794 302.73115 
+L 356.477608 293.317073 
+L 364.416422 283.572677 
+L 372.355236 273.497963 
+L 380.29405 263.092931 
+L 388.232864 252.357579 
+L 396.171678 241.29191 
+L 404.110492 229.895922 
+L 412.049307 218.169615 
+L 421.575883 203.662027 
+L 431.10246 188.67878 
+L 440.629037 173.219874 
+L 442.2168 170.597146 
+L 442.2168 170.597146 
+" clip-path="url(#p2edb3441b5)" style="fill: none; stroke: #235a78; stroke-width: 1.5; stroke-linecap: square"/>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #b47722" x="315.144" y="326.7302" transform="rotate(-0 315.144 326.7302)">θ</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #a23b34" x="370.0944" y="245.40835" transform="rotate(-0 370.0944 245.40835)">F</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #26776f" x="366.66" y="339.983269" transform="rotate(-0 366.66 339.983269)">dr = e_t ds</text>
+   </g>
+   <g id="patch_3">
+    <path d="M 265.250452 381.592474 
+Q 304.839507 353.088355 342.886112 325.694799 
+" clip-path="url(#p2edb3441b5)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 336.263992 326.766025 
+L 342.886112 325.694799 
+L 339.76982 331.635231 
+z
+" clip-path="url(#p2edb3441b5)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 264.737095 381.096998 
+Q 308.274014 315.791619 350.756638 252.067682 
+" clip-path="url(#p2edb3441b5)" style="fill: none; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 344.932286 255.395884 
+L 350.756638 252.067682 
+L 349.924588 258.724085 
+z
+" clip-path="url(#p2edb3441b5)" style="fill: #a23b34; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 263.628 391.0032 
+C 265.813952 391.0032 267.910668 390.134712 269.45637 388.58901 
+C 271.002072 387.043308 271.87056 384.946592 271.87056 382.76064 
+C 271.87056 380.574688 271.002072 378.477972 269.45637 376.93227 
+C 267.910668 375.386568 265.813952 374.51808 263.628 374.51808 
+C 261.442048 374.51808 259.345332 375.386568 257.79963 376.93227 
+C 256.253928 378.477972 255.38544 380.574688 255.38544 382.76064 
+C 255.38544 384.946592 256.253928 387.043308 257.79963 388.58901 
+C 259.345332 390.134712 261.442048 391.0032 263.628 391.0032 
+z
+" clip-path="url(#p2edb3441b5)" style="fill: #ffffff; stroke: #23313d; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+  </g>
+  <g id="text_7">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Work uses the component of force along the displacement</text>
+  </g>
+  <g id="text_8">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="47.52" y="630.504" transform="rotate(-0 47.52 630.504)">0480  •  FIG-02-34-001</text>
+  </g>
+  <g id="text_9">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="596.975375" transform="rotate(-0 432 596.975375)">Differential displacement is tangent to the path. Work is a scalar; the force magnitude alone does not determine its sign.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p2edb3441b5">
+   <rect x="91.908" y="123.12" width="377.784" height="343.44"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -65,7 +65,7 @@ A watershed water budget accounts for precipitation, runoff, groundwater exchang
 
 **Problem.** If inputs exceed outputs by 20 mm over a period, storage rises by 20 mm.
 
-**Solution.** Apply the relation and environmental model in §52.1; then verify units, boundary conditions, and physical limits.
+**Solution.** Apply the watershed water balance. If total inputs exceed total outputs by 20 mm over the stated period, then \(\Delta S=\mathbf{+20\ mm}\); positive \(\Delta S\) means water stored in the watershed increases.
 
 ---
 
@@ -81,7 +81,7 @@ Design runoff depends on storm intensity and duration relative to watershed resp
 
 **Problem.** For Rational Method design, intensity is commonly selected at a duration tied to time of concentration.
 
-**Solution.** Apply the relation and environmental model in §52.2; then verify units, boundary conditions, and physical limits.
+**Solution.** In the Rational Method, the design intensity is selected for a duration commonly tied to the watershed **time of concentration**, because the peak assumption requires the contributing area to be effectively participating at the design intensity.
 
 ---
 
@@ -97,7 +97,7 @@ The Rational Method estimates peak flow from runoff coefficient, rainfall intens
 
 **Problem.** C=0.5, I=4 in/hr, A=20 acres gives 40 cfs in the common U.S. form.
 
-**Solution.** Apply the relation and environmental model in §52.3; then verify units, boundary conditions, and physical limits.
+**Solution.** Using the common U.S. customary Rational form, \(Q=CIA=(0.5)(4)(20)=\mathbf{40\ cfs}\). The compact \(Q=CIA\) form relies on the customary unit conversion embedded in the usual approximation.
 
 ---
 
@@ -113,7 +113,7 @@ The curve-number method relates storm depth and watershed condition to runoff de
 
 **Problem.** Higher CN generally produces more runoff from the same rainfall depth.
 
-**Solution.** Apply the relation and environmental model in §52.4; then verify units, boundary conditions, and physical limits.
+**Solution.** In the NRCS relation, \(S=1000/CN-10\) in U.S. customary units. Increasing CN decreases potential retention \(S\); for the same rainfall depth above initial abstraction, that produces **greater direct runoff**.
 
 ---
 
@@ -129,7 +129,7 @@ Infiltration, interception, depression storage, and evapotranspiration reduce wa
 
 **Problem.** A storm with 50 mm rainfall and 20 mm total abstractions yields 30 mm effective rainfall.
 
-**Solution.** Apply the relation and environmental model in §52.5; then verify units, boundary conditions, and physical limits.
+**Solution.** Effective rainfall is rainfall remaining after losses. With 50 mm precipitation and 20 mm of total abstractions, \(P_e=50-20=\mathbf{30\ mm}\).
 
 ---
 
@@ -145,7 +145,7 @@ Storage is the cumulative difference between inflow and outflow. Detention tempo
 
 **Problem.** Maximum required storage occurs at the maximum cumulative inflow-minus-outflow difference.
 
-**Solution.** Apply the relation and environmental model in §52.6; then verify units, boundary conditions, and physical limits.
+**Solution.** Storage accumulates according to \(\Delta S=\int(I-O)\,dt\). The required detention storage is the **maximum cumulative positive difference** between inflow volume and outflow volume over the event.
 
 ---
 
@@ -161,7 +161,7 @@ A hydrograph contains both timing and volume information. Peak discharge alone c
 
 **Problem.** A narrow high peak and a broad lower peak can have the same runoff volume.
 
-**Solution.** Apply the relation and environmental model in §52.7; then verify units, boundary conditions, and physical limits.
+**Solution.** Hydrograph volume is the area under \(Q(t)\). A narrow high peak and a wider lower peak can integrate to the same total volume even though their peak discharges and timing are very different.
 
 ---
 
@@ -171,13 +171,13 @@ A hydrograph contains both timing and volume information. Peak discharge alone c
 
 **Problem.** A treatment calculation predicts a negative effluent concentration. What does that indicate?
 
-**Solution.** The algebra or model assumptions are invalid for that condition. Recheck the balance, reaction/order assumptions, time basis, units, and any zero-concentration limiting condition.
+**Solution.** A negative runoff depth or storage requirement under conditions that should produce positive runoff indicates a water-balance or abstraction error. Check precipitation, loss terms, initial conditions, and the cumulative inflow-minus-outflow calculation.
 
 ### Worked Example 9
 
 **Problem.** A remembered environmental correlation differs from the FE Reference Handbook relation. Which should govern the exam solution?
 
-**Solution.** Use the Handbook relation and its definitions unless the problem explicitly supplies a different model.
+**Solution.** For **Surface-Water Hydrology — Runoff, Infiltration, Water Budgets, and Storage**, the FE Reference Handbook equation, definitions, and unit convention govern whenever the Handbook supplies the needed relation. The external references in this chapter are used for specification-required learned material involving **IDF rainfall, runoff transformation, abstractions, watershed storage, and hydrograph response**. If a remembered correlation conflicts with the supplied Handbook equation, use the supplied Handbook relation unless the problem explicitly states a different model.
 
 ---
 
@@ -185,7 +185,14 @@ A hydrograph contains both timing and volume information. Peak discharge alone c
 
 Primary source basis: **FE Environmental specification Area(s) 10; FE Reference Handbook 10.6 Environmental Engineering, printed pp. 318–360, plus general supporting sections where identified in the ledger.**
 
-**Source boundary:** Some Environmental specification topics are directly tabulated in the Handbook, while others require learned engineering knowledge. The chapter keeps those two categories separate.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required environmental-engineering knowledge that is not fully developed in the Handbook. **Guide synthesis** connects the Handbook and external material into exam-oriented explanations, examples, and checks; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Kilgore, R., Atayee, A. T., & Herrmann, G. R. (2024). *Urban Drainage Design* (Hydraulic Engineering Circular No. 22, 4th ed., FHWA-HIF-24-006). Federal Highway Administration. Supporting scope: Rainfall/IDF, Rational Method, runoff, detention/retention, storage routing, storm drainage, and stormwater-quality practice.
+- U.S. Army Corps of Engineers, Hydrologic Engineering Center. *HEC-HMS Technical Reference Manual* (CPD-74B), current online edition. Supporting scope: Precipitation-runoff transformation, loss methods, hydrographs, channel/reservoir routing, and hydrologic-model assumptions.
+- Mihelcic, J. R., & Zimmerman, J. B. (2021). *Environmental Engineering: Fundamentals, Sustainability, Design* (3rd ed.). Wiley. ISBN 978-1-119-60445-7. Supporting scope: Environmental measurements, chemistry, physical processes, biology, risk, water quantity/quality, water treatment, wastewater/stormwater, solid waste, and air quality.
+
+The external references support only the learned/application portion of the Environmental specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -356,31 +363,31 @@ D) It is always a Handbook lookup with no learned interpretation
 
 14. For **environmental runoff hydrograph**, check basis, units, steady/unsteady condition, phase/media, boundary conditions, and whether the selected idealization matches the system.
 
-15. The boundary determines what enters, leaves, accumulates, reacts, or transfers between media. Without it, terms are easily omitted or double counted.
+15. In **Surface-Water Hydrology — Runoff, Infiltration, Water Budgets, and Storage**, the control volume or conceptual boundary determines which sources, sinks, transfers, reactions, and receptors belong in the model. For this chapter specifically, close the watershed water balance, keep rainfall/runoff depth and discharge distinct, use the correct idf duration, and verify storage never becomes negative unless the initial condition permits release.
 
-16. Concentration is mass per volume; loading is mass per time. A low concentration at very high flow can still create a large load.
+16. Concentration and loading answer different questions in **Surface-Water Hydrology — Runoff, Infiltration, Water Budgets, and Storage**: concentration is mass per volume, while loading is mass per time. Always convert \(Q\) and \(C\) to compatible units before multiplying them.
 
-17. The FE Handbook is the supplied exam reference. Its variable definitions and unit conventions should govern unless the problem explicitly provides another relation.
+17. Use the FE Reference Handbook equation and definitions when it supplies the model for **Surface-Water Hydrology — Runoff, Infiltration, Water Budgets, and Storage**. The chapter's external references (HEC22, HECHMS, MIHELCIC) support learned specification content, not a competing exam formula.
 
-18. A mass/energy balance and physical check can reveal impossible signs, removal above 100%, negative concentrations, unrealistic flows, or model misuse.
+18. A physical check is needed because algebra alone can return impossible environmental states. For this chapter, set rainfall excess to zero and confirm direct runoff becomes zero; set inflow equal to outflow and confirm storage stops changing.
 
-19. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+19. **A.** Section §52.1, **Watersheds, precipitation, runoff, and hydrologic control volumes**, is governed by \(P+Q_{in}+Q_g-Q_{out}-ET-I=\Delta S\). Use that relation with its own environmental basis and then perform the specific validity check described for §52.1.
 
-20. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+20. **A.** Section §52.2, **Rainfall intensity, duration, frequency, and time of concentration**, is governed by \(i=i(T_r,t_d)\). Use that relation with its own environmental basis and then perform the specific validity check described for §52.2.
 
-21. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+21. **A.** Section §52.3, **Rational Method runoff**, is governed by \(Q=CIA\). Use that relation with its own environmental basis and then perform the specific validity check described for §52.3.
 
-22. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+22. **A.** Section §52.4, **NRCS curve-number runoff**, is governed by \(Q=\frac{(P-0.2S)^2}{P+0.8S},\qquad S=\frac{1000}{CN}-10\). Use that relation with its own environmental basis and then perform the specific validity check described for §52.4.
 
-23. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+23. **A.** Section §52.5, **Infiltration, evapotranspiration, and soil-moisture storage**, is governed by \(\text{effective rainfall}=P-\text{abstractions}\). Use that relation with its own environmental basis and then perform the specific validity check described for §52.5.
 
-24. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+24. **A.** Section §52.6, **Reservoir, detention, and retention storage sizing**, is governed by \(\Delta S=\int(I-O)\,dt\). Use that relation with its own environmental basis and then perform the specific validity check described for §52.6.
 
-25. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+25. **A.** Section §52.7, **Hydrographs and watershed response checks**, is governed by \(\text{runoff volume}=\int Q(t)\,dt\). Use that relation with its own environmental basis and then perform the specific validity check described for §52.7.
 
-26. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+26. **A.** An integrated **Surface-Water Hydrology — Runoff, Infiltration, Water Budgets, and Storage** solution is acceptable only after the governing balance/model is identified, units are reconciled, and the chapter-specific physical checks are satisfied.
 
-27. **A.** The method depends on consistent units, boundaries, process assumptions, and the intended environmental model.
+27. **A.** Source ownership is explicit in **Surface-Water Hydrology — Runoff, Infiltration, Water Budgets, and Storage**: FE-Handbook-supported material remains tied to the ledger, externally supported content uses HEC22, HECHMS, MIHELCIC, and guide synthesis is labeled as supplemental explanation.
 
 
 ---
@@ -412,25 +419,25 @@ D) It is always a Handbook lookup with no learned interpretation
 
 ## Practice Problem Solutions
 
-1. Use §52.1. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+1. **Independent recomputation for §52.1 — Watersheds, precipitation, runoff, and hydrologic control volumes.** Start from the stated givens rather than the worked-example answer. Apply the watershed water balance. If total inputs exceed total outputs by 20 mm over the stated period, then \(\Delta S=\mathbf{+20\ mm}\); positive \(\Delta S\) means water stored in the watershed increases. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-2. Use §52.2. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+2. **Independent recomputation for §52.2 — Rainfall intensity, duration, frequency, and time of concentration.** Start from the stated givens rather than the worked-example answer. In the Rational Method, the design intensity is selected for a duration commonly tied to the watershed **time of concentration**, because the peak assumption requires the contributing area to be effectively participating at the design intensity. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-3. Use §52.3. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+3. **Independent recomputation for §52.3 — Rational Method runoff.** Start from the stated givens rather than the worked-example answer. Using the common U.S. customary Rational form, \(Q=CIA=(0.5)(4)(20)=\mathbf{40\ cfs}\). The compact \(Q=CIA\) form relies on the customary unit conversion embedded in the usual approximation. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-4. Use §52.4. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+4. **Independent recomputation for §52.4 — NRCS curve-number runoff.** Start from the stated givens rather than the worked-example answer. In the NRCS relation, \(S=1000/CN-10\) in U.S. customary units. Increasing CN decreases potential retention \(S\); for the same rainfall depth above initial abstraction, that produces **greater direct runoff**. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-5. Use §52.5. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+5. **Independent recomputation for §52.5 — Infiltration, evapotranspiration, and soil-moisture storage.** Start from the stated givens rather than the worked-example answer. Effective rainfall is rainfall remaining after losses. With 50 mm precipitation and 20 mm of total abstractions, \(P_e=50-20=\mathbf{30\ mm}\). As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-6. Use §52.6. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+6. **Independent recomputation for §52.6 — Reservoir, detention, and retention storage sizing.** Start from the stated givens rather than the worked-example answer. Storage accumulates according to \(\Delta S=\int(I-O)\,dt\). The required detention storage is the **maximum cumulative positive difference** between inflow volume and outflow volume over the event. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-7. Use §52.7. The stated result follows from the displayed relation or process definition; verify the environmental basis and physical constraints.
+7. **Independent recomputation for §52.7 — Hydrographs and watershed response checks.** Start from the stated givens rather than the worked-example answer. Hydrograph volume is the area under \(Q(t)\). A narrow high peak and a wider lower peak can integrate to the same total volume even though their peak discharges and timing are very different. As a separate check, confirm the result is consistent with the section's physical interpretation.
 
-8. Check dimensions, concentration-versus-loading basis, conservation of mass/energy, sign convention, and whether removal, risk, or efficiency values stay within physically meaningful limits.
+8. For this chapter, check the result against this failure screen: Close the watershed water balance, keep rainfall/runoff depth and discharge distinct, use the correct IDF duration, and verify storage never becomes negative unless the initial condition permits release. A result that violates one of those conditions should be rejected even if the arithmetic is internally consistent.
 
-9. Start with FE Environmental specification Area(s) 10, then use the Handbook subsection named in the corresponding ledger entry.
+9. For **Surface-Water Hydrology — Runoff, Infiltration, Water Budgets, and Storage**, begin with the FE Environmental specification area and Handbook subsection recorded in the ledger. When the atom is `split_required`, use the reconciled external source set **HEC22, HECHMS, MIHELCIC** for the learned portion rather than inventing a Handbook page.
 
-10. Test a limiting case such as zero source, zero reaction, complete mixing, no flow, very large residence time, or 0/100% removal as appropriate. The result should reduce to a sensible physical state.
+10. A useful limiting case is to set rainfall excess to zero and confirm direct runoff becomes zero; set inflow equal to outflow and confirm storage stops changing. The simplified case should reduce to the stated physical behavior before the full model is trusted.
 
 ---
 

@@ -65,7 +65,7 @@ A sinusoidal wave advances one wavelength in one period. Propagation speed depen
 
 **Problem.** At 100 MHz in free space, wavelength is approximately 3 m.
 
-**Solution.** Use the relation and model in §38.1, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §38.1 relation \(\lambda=\frac{u}{f},\qquad \beta=\frac{2\pi}{\lambda}\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: At 100 MHz in free space, wavelength is approximately 3 m. Carry the stated units through the calculation and accept the result only after confirming that the line model, lossless approximation, termination, and electrical length are appropriate at the stated frequency.
 
 ---
 
@@ -81,7 +81,7 @@ Characteristic impedance is the voltage-to-current ratio of a single traveling w
 
 **Problem.** If L'=250 nH/m and C'=100 pF/m, Z0=50 Ω.
 
-**Solution.** Use the relation and model in §38.2, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §38.2 relation \(Z_0=\sqrt{\frac{L'}{C'}}\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: If L'=250 nH/m and C'=100 pF/m, Z0=50 Ω. Carry the stated units through the calculation and accept the result only after confirming that the line model, lossless approximation, termination, and electrical length are appropriate at the stated frequency.
 
 ---
 
@@ -97,7 +97,7 @@ A mismatch causes part of the incident wave to reflect. The magnitude of Γ indi
 
 **Problem.** For ZL=Z0, ΓL=0 and there is no load reflection.
 
-**Solution.** Use the relation and model in §38.3, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §38.3 relation \(\Gamma_L=\frac{Z_L-Z_0}{Z_L+Z_0}\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: For ZL=Z0, ΓL=0 and there is no load reflection. Carry the stated units through the calculation and accept the result only after confirming that the line model, lossless approximation, termination, and electrical length are appropriate at the stated frequency.
 
 ---
 
@@ -113,7 +113,7 @@ Incident and reflected waves interfere to produce standing-wave maxima and minim
 
 **Problem.** If |Γ|=0.5, SWR=3.
 
-**Solution.** Use the relation and model in §38.4, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §38.4 relation \(\mathrm{SWR}=\frac{1+|\Gamma|}{1-|\Gamma|}\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: If |Γ|=0.5, SWR=3. Carry the stated units through the calculation and accept the result only after confirming that the line model, lossless approximation, termination, and electrical length are appropriate at the stated frequency.
 
 ---
 
@@ -129,7 +129,7 @@ A transmission line transforms load impedance as a function of electrical length
 
 **Problem.** A quarter-wave line can strongly transform impedance even though the load itself is unchanged.
 
-**Solution.** Use the relation and model in §38.5, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §38.5 relation \(Z_{in}=Z_0\frac{Z_L+jZ_0\tan(\beta l)}{Z_0+jZ_L\tan(\beta l)}\). The statement follows from the physical or logical meaning of **Input impedance versus line length**: A quarter-wave line can strongly transform impedance even though the load itself is unchanged. Accept that conclusion only while the line model, lossless approximation, termination, and electrical length are appropriate at the stated frequency.
 
 ---
 
@@ -145,7 +145,7 @@ Matching suppresses reflections and maximizes forward power delivery under the l
 
 **Problem.** A 50-Ω coaxial line terminated in 50 Ω is matched at the load.
 
-**Solution.** Use the relation and model in §38.6, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §38.6 relation \(Z_L=Z_0\Rightarrow \Gamma=0\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: A 50-Ω coaxial line terminated in 50 Ω is matched at the load. Carry the stated units through the calculation and accept the result only after confirming that the line model, lossless approximation, termination, and electrical length are appropriate at the stated frequency.
 
 ---
 
@@ -161,7 +161,7 @@ Lumped-circuit assumptions degrade when interconnect electrical length becomes a
 
 **Problem.** A 0.3-m trace is electrically much longer at 1 GHz than at 1 MHz.
 
-**Solution.** Use the relation and model in §38.7, then verify the operating region, units, polarity, timing, or logic assumptions that apply.
+**Solution.** Start from the §38.7 relation \(\theta=\beta l=\frac{2\pi l}{\lambda}\). Substitute or interpret the stated quantities using that model; the calculation reproduces the stated result: A 0.3-m trace is electrically much longer at 1 GHz than at 1 MHz. Carry the stated units through the calculation and accept the result only after confirming that the line model, lossless approximation, termination, and electrical length are appropriate at the stated frequency.
 
 ---
 
@@ -171,13 +171,13 @@ Lumped-circuit assumptions degrade when interconnect electrical length becomes a
 
 **Problem.** A calculation gives a numerical answer but violates the assumed device region, logic state, or protocol condition. Is the answer valid?
 
-**Solution.** No. Re-select the appropriate piecewise model or system state and solve again. Algebraic consistency does not override the model's validity conditions.
+**Solution.** No. In **Electromagnetic Waves and Transmission Lines**, a tidy numerical or logical result is still invalid if it contradicts the model assumptions. A representative failure is a lumped-circuit assumption used when the interconnect is electrically long or a matched-line relation used with ZL≠Z0. Return to the applicable section, choose the state/model consistent with the solved quantities, recompute if needed, and confirm that the line model, lossless approximation, termination, and electrical length are appropriate at the stated frequency.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the expression printed in the FE Reference Handbook. Which should govern an exam solution?
 
-**Solution.** Use the Handbook expression and its definitions unless the problem explicitly supplies a different model.
+**Solution.** Use the FE Reference Handbook expression and its definitions as the controlling exam reference unless the problem explicitly defines another model. For **Electromagnetic Waves and Transmission Lines**, match symbols, units, reference directions, RMS/peak or digital conventions, and assumptions to the Handbook first. External references support only specification-required learned concepts that the Handbook does not directly develop.
 
 ---
 
@@ -185,7 +185,12 @@ Lumped-circuit assumptions degrade when interconnect electrical length becomes a
 
 Primary source basis: **FE Electrical and Computer specification Area 11; FE Reference Handbook 10.6 Electrical and Computer Engineering, printed pp. 361–421, with the specific Handbook subsections identified in the ledger.**
 
-**Source boundary:** The FE Electrical and Computer specification includes both directly tabulated Handbook material and learned engineering/computing concepts. The chapter does not assign false Handbook pages to material that the specification requires but the Handbook does not directly develop.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required engineering/computing knowledge that is not fully developed in the Handbook. **Guide synthesis** connects those two bodies of material into exam-oriented explanations and examples; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Pozar, D. M. (2011). *Microwave Engineering* (4th ed.). Wiley. ISBN 978-0-470-63155-3. Supporting scope: Transmission lines, characteristic impedance, reflection, standing waves, matching, and impedance transformation.
+
+The external references support only the learned/application portion of the specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +359,31 @@ D) It is always only a qualitative concept
 
 14. For **electrical length**, verify operating region/model validity, units or logic levels, sign/polarity convention, and loading or boundary conditions before accepting the result.
 
-15. The same symbol or equation can represent different physical behavior outside its valid device region, frequency range, timing model, or protocol abstraction.
+15. In Electromagnetic Waves and Transmission Lines, the same equation or symbol can change meaning when the operating state, abstraction, timing model, or signal convention changes; verify that the line model, lossless approximation, termination, and electrical length are appropriate at the stated frequency.
 
-16. The Handbook is the exam reference; using its definitions prevents hidden differences in constants, RMS/peak values, sign convention, or model form.
+16. The FE Reference Handbook is the exam reference for Electromagnetic Waves and Transmission Lines. Match its variable definitions and conventions before substitution; external references support only learned material not developed in the Handbook.
 
-17. Algebra can be internally consistent while predicting an impossible device state, voltage, timing relationship, address range, or complexity claim. The physical/logical model must also be satisfied.
+17. An algebraically consistent answer can still be invalid in Electromagnetic Waves and Transmission Lines. Reject a result that implies a lumped-circuit assumption used when the interconnect is electrically long or a matched-line relation used with ZL≠Z0 and reselect the appropriate model or state.
 
-18. Limiting cases and order-of-magnitude checks expose sign errors, impossible gains, invalid probabilities, unrealistic timing, and model misuse.
+18. A useful independent check for this chapter is to set ZL=Z0 and verify Γ=0 and SWR=1 before analyzing a general termination. If the result does not reduce correctly, recheck the model, sign convention, and arithmetic.
 
-19. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+19. **A.** For **Wave speed, frequency, wavelength, and phase constant**, the governing section model is \(\lambda=\frac{u}{f},\qquad \beta=\frac{2\pi}{\lambda}\). Apply it only with the definitions and assumptions stated in §38.1, then verify that the line model, lossless approximation, termination, and electrical length are appropriate at the stated frequency.
 
-20. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+20. **A.** For **Lossless transmission-line characteristic impedance**, the governing section model is \(Z_0=\sqrt{\frac{L'}{C'}}\). Apply it only with the definitions and assumptions stated in §38.2, then verify that the line model, lossless approximation, termination, and electrical length are appropriate at the stated frequency.
 
-21. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+21. **A.** For **Load reflection coefficient**, the governing section model is \(\Gamma_L=\frac{Z_L-Z_0}{Z_L+Z_0}\). Apply it only with the definitions and assumptions stated in §38.3, then verify that the line model, lossless approximation, termination, and electrical length are appropriate at the stated frequency.
 
-22. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+22. **A.** For **Standing waves and SWR**, the governing section model is \(\mathrm{SWR}=\frac{1+|\Gamma|}{1-|\Gamma|}\). Apply it only with the definitions and assumptions stated in §38.4, then verify that the line model, lossless approximation, termination, and electrical length are appropriate at the stated frequency.
 
-23. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+23. **A.** For **Input impedance versus line length**, the governing section model is \(Z_{in}=Z_0\frac{Z_L+jZ_0\tan(\beta l)}{Z_0+jZ_L\tan(\beta l)}\). Apply it only with the definitions and assumptions stated in §38.5, then verify that the line model, lossless approximation, termination, and electrical length are appropriate at the stated frequency.
 
-24. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+24. **A.** For **Matched lines, power transfer, and termination**, the governing section model is \(Z_L=Z_0\Rightarrow \Gamma=0\). Apply it only with the definitions and assumptions stated in §38.6, then verify that the line model, lossless approximation, termination, and electrical length are appropriate at the stated frequency.
 
-25. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+25. **A.** For **When distributed behavior matters**, the governing section model is \(\theta=\beta l=\frac{2\pi l}{\lambda}\). Apply it only with the definitions and assumptions stated in §38.7, then verify that the line model, lossless approximation, termination, and electrical length are appropriate at the stated frequency.
 
-26. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+26. **A.** For an integrated Electromagnetic Waves and Transmission Lines problem, separate the physical/logical model from the arithmetic, solve with the relevant section relations, and cross-check the result against the chapter-specific validity conditions.
 
-27. **A.** The relation or workflow depends on the stated model, operating region, units, and conventions.
+27. **A.** In **Electromagnetic Waves and Transmission Lines**, the source boundary is explicit: FE-Handbook-supported material remains tied to the ledger, externally supported material uses the chapter references for transmission-line matching and termination (POZAR), and guide synthesis is identified as supplemental explanation rather than Handbook text.
 
 
 ---
@@ -410,25 +415,25 @@ D) It is always only a qualitative concept
 
 ## Practice Problem Solutions
 
-1. Use §38.1. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+1. **Independent check for §38.1.** Begin independently with \(\lambda=\frac{u}{f},\qquad \beta=\frac{2\pi}{\lambda}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: At 100 MHz in free space, wavelength is approximately 3 m. Then verify that the line model, lossless approximation, termination, and electrical length are appropriate at the stated frequency.
 
-2. Use §38.2. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+2. **Independent check for §38.2.** Begin independently with \(Z_0=\sqrt{\frac{L'}{C'}}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: If L'=250 nH/m and C'=100 pF/m, Z0=50 Ω. Then verify that the line model, lossless approximation, termination, and electrical length are appropriate at the stated frequency.
 
-3. Use §38.3. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+3. **Independent check for §38.3.** Begin independently with \(\Gamma_L=\frac{Z_L-Z_0}{Z_L+Z_0}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: For ZL=Z0, ΓL=0 and there is no load reflection. Then verify that the line model, lossless approximation, termination, and electrical length are appropriate at the stated frequency.
 
-4. Use §38.4. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+4. **Independent check for §38.4.** Begin independently with \(\mathrm{SWR}=\frac{1+|\Gamma|}{1-|\Gamma|}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: If |Γ|=0.5, SWR=3. Then verify that the line model, lossless approximation, termination, and electrical length are appropriate at the stated frequency.
 
-5. Use §38.5. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+5. **Independent check for §38.5.** Begin independently with \(Z_{in}=Z_0\frac{Z_L+jZ_0\tan(\beta l)}{Z_0+jZ_L\tan(\beta l)}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: A quarter-wave line can strongly transform impedance even though the load itself is unchanged. Then verify that the line model, lossless approximation, termination, and electrical length are appropriate at the stated frequency.
 
-6. Use §38.6. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+6. **Independent check for §38.6.** Begin independently with \(Z_L=Z_0\Rightarrow \Gamma=0\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: A 50-Ω coaxial line terminated in 50 Ω is matched at the load. Then verify that the line model, lossless approximation, termination, and electrical length are appropriate at the stated frequency.
 
-7. Use §38.7. The stated result follows from the displayed relation or state definition; verify that the model assumptions remain satisfied.
+7. **Independent check for §38.7.** Begin independently with \(\theta=\beta l=\frac{2\pi l}{\lambda}\), rather than copying the worked-example conclusion. Applying it to the practice statement gives the same result or interpretation: A 0.3-m trace is electrically much longer at 1 GHz than at 1 MHz. Then verify that the line model, lossless approximation, termination, and electrical length are appropriate at the stated frequency.
 
-8. Check device operating region, saturation/clipping, frequency range, RMS-versus-peak convention, timing constraints, address/bit width, or protocol/software preconditions as applicable.
+8. Check the chapter-specific failure mode first: a lumped-circuit assumption used when the interconnect is electrically long or a matched-line relation used with ZL≠Z0. Do not accept the numerical or logical result until the line model, lossless approximation, termination, and electrical length are appropriate at the stated frequency.
 
-9. Start with FE Electrical and Computer specification Area 11, then use the Handbook subsection named in the ledger for the specific concept.
+9. For **Electromagnetic Waves and Transmission Lines**, start with the FE Electrical and Computer specification/Handbook location recorded in the ledger, then use the chapter's reconciled source set for transmission-line matching and termination (POZAR) when the concept is split-required. That preserves the Handbook-versus-learned-material boundary.
 
-10. Test a simple limiting case: zero input, matched load, very low/high frequency, all-zero/all-one logic, minimum/maximum address, or small input size as appropriate. The result should reduce to a physically or logically sensible form.
+10. Use this limiting check: set ZL=Z0 and verify Γ=0 and SWR=1 before analyzing a general termination. The simplified case should produce the expected physical, timing, logic, protocol, or complexity behavior before the full solution is trusted.
 
 ---
 
