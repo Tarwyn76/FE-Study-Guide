@@ -1,0 +1,20 @@
+Consolidated FE Technical Audit v3 Validation
+============================================
+
+- PASS | math delimiter | 01-16-Limits-and-Continuity.md | true open=0, true close=0
+- PASS | math delimiter | 01-21-Techniques-of-Integration.md | true open=0, true close=0
+- PASS | math delimiter | 01-23-Partial-Derivatives-and-Vector-Calculus.md | true open=0, true close=0
+- PASS | math delimiter | 01-24-Multiple-Integration.md | true open=0, true close=0
+- PASS | math delimiter | 01-38-Common-Engineering-Probability-Distributions.md | true open=0, true close=0
+- PASS | worked-example parser | 01-33-Hypothesis-Testing-and-Statistical-Decisions.md / 3 — Two-Sided $z$ Test | no missing-problem/solution parser error
+- PASS | worked-example parser | 01-33-Hypothesis-Testing-and-Statistical-Decisions.md / 6 — Chi-Square Variance Test | no missing-problem/solution parser error
+- PASS | worked-example parser | 01-36-Measurement-Uncertainty-and-Statistical-Error-Propagation.md / 3 — Cylinder Volume with Standard Uncertainties | no missing-problem/solution parser error
+- PASS | artwork scanner | Artwork archive/backup exclusion | PNG candidates=1; SVG candidates=1
+
+Overall: PASS
+
+Validated v3 corrections:
+- LaTeX row-spacing commands such as \\[4pt], \\[2mm], and \\[8pt] no longer count as display-math openers.
+- Substantive Layer 1 worked examples no longer require a literal **Solution.** label to avoid a parser ERROR.
+- archive, archives, backup, and backups directories are excluded from live artwork indexing.
+- Descriptive artwork filenames containing a valid Figure ID remain supported.

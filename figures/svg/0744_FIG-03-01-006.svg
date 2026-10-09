@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1008pt" height="720pt" viewBox="0 0 1008 720" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-09T14:01:31.471103</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 720 
+L 1008 720 
+L 1008 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 297.6624 428.688 
+L 710.3376 428.688 
+L 710.3376 239.904 
+L 297.6624 239.904 
+z
+" clip-path="url(#p5c62f9d2ae)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 57.439547 334.296 
+Q 176.552122 334.296 293.764039 334.296 
+" clip-path="url(#p5c62f9d2ae)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 287.764039 331.296 
+L 293.764039 334.296 
+L 287.764039 337.296 
+z
+" clip-path="url(#p5c62f9d2ae)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 712.337147 334.296 
+Q 831.449722 334.296 948.661639 334.296 
+" clip-path="url(#p5c62f9d2ae)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 942.661639 331.296 
+L 948.661639 334.296 
+L 942.661639 337.296 
+z
+" clip-path="url(#p5c62f9d2ae)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 423.2592 112.734541 
+Q 423.2592 175.319938 423.2592 236.004677 
+" clip-path="url(#p5c62f9d2ae)" style="fill: none; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 426.2592 230.004677 
+L 423.2592 236.004677 
+L 420.2592 230.004677 
+z
+" clip-path="url(#p5c62f9d2ae)" style="fill: #a23b34; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 593.712 430.68836 
+Q 593.712 473.40103 593.712 514.213042 
+" clip-path="url(#p5c62f9d2ae)" style="fill: none; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 596.712 508.213042 
+L 593.712 514.213042 
+L 590.712 508.213042 
+z
+" clip-path="url(#p5c62f9d2ae)" style="fill: #b47722; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="340.090688" transform="rotate(-0 504 340.090688)">STEADY PROCESS UNIT</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="82.3536" y="245.144625" transform="rotate(-0 82.3536 245.144625)">Feed: ṁ_in h_in</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="746.2224" y="245.144625" transform="rotate(-0 746.2224 245.144625)">Product: ṁ_out h_out</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #a23b34" x="459.144" y="171.730563" transform="rotate(-0 459.144 171.730563)">Q̇ in</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #b47722" x="629.5968" y="488.576625" transform="rotate(-0 629.5968 488.576625)">Ẇ_s out</text>
+   </g>
+   <g id="text_6">
+    <!-- $0=\dot Q-\dot W_s+\sum_{in}\dot m h-\sum_{out}\dot m h$ -->
+    <g style="fill: #23313d" transform="translate(348 578.568)">
+     <text>
+      <tspan x="0" y="-0.390625" style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">0</tspan>
+      <tspan x="19.945312" y="-0.390625" style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">=</tspan>
+      <tspan x="61.074219" y="-7.765625" style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">̇</tspan>
+      <tspan x="68.296875" y="-0.390625" style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">−</tspan>
+      <tspan x="112.734375" y="-7.453125" style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">̇</tspan>
+      <tspan x="131.126953" y="-0.390625" style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">+</tspan>
+      <tspan x="197.025391" y="-3.390625" style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">̇</tspan>
+      <tspan x="220.958984" y="-0.390625" style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">−</tspan>
+      <tspan x="292.589453" y="-3.390625" style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">̇</tspan>
+      <tspan x="44.730469" y="-0.390625" style="font-style: oblique; font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">Q</tspan>
+      <tspan x="93.082031" y="-0.390625" style="font-style: oblique; font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">W</tspan>
+      <tspan x="177.693359" y="-0.390625" style="font-style: oblique; font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">m</tspan>
+      <tspan x="201.072266" y="-0.390625" style="font-style: oblique; font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">h</tspan>
+      <tspan x="273.257422" y="-0.390625" style="font-style: oblique; font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">m</tspan>
+      <tspan x="296.636328" y="-0.390625" style="font-style: oblique; font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">h</tspan>
+      <tspan x="117.042187" y="3.546875" style="font-style: oblique; font-size: 16.8px; font-family: 'DejaVu Sans'; fill: #23313d">s</tspan>
+      <tspan x="158.912109" y="23.389063" style="font-style: oblique; font-size: 16.8px; font-family: 'DejaVu Sans'; fill: #23313d">i</tspan>
+      <tspan x="163.579688" y="23.389063" style="font-style: oblique; font-size: 16.8px; font-family: 'DejaVu Sans'; fill: #23313d">n</tspan>
+      <tspan x="245.744141" y="22.426562" style="font-style: oblique; font-size: 16.8px; font-family: 'DejaVu Sans'; fill: #23313d">o</tspan>
+      <tspan x="256.022656" y="22.426562" style="font-style: oblique; font-size: 16.8px; font-family: 'DejaVu Sans'; fill: #23313d">u</tspan>
+      <tspan x="266.670313" y="22.426562" style="font-style: oblique; font-size: 16.8px; font-family: 'DejaVu Sans'; fill: #23313d">t</tspan>
+      <tspan x="155.912109" y="-0.390625" style="font-size: 24px; font-family: 'DejaVu Sans Display'; fill: #23313d">∑</tspan>
+      <tspan x="248.744141" y="-0.390625" style="font-size: 24px; font-family: 'DejaVu Sans Display'; fill: #23313d">∑</tspan>
+     </text>
+    </g>
+   </g>
+  </g>
+  <g id="text_7">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">A steady process energy balance includes enthalpy flow, heat, and shaft work</text>
+  </g>
+  <g id="text_8">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="55.44" y="700.56" transform="rotate(-0 55.44 700.56)">0744  •  FIG-03-01-006</text>
+  </g>
+  <g id="text_9">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(116.948437 656.640625)">Steady open-system balance with negligible kinetic/potential energy changes. Heat is positive in and shaft work positive out. Enthalpy includes flow work;</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(143.382812 669.358125)">do not add it again. Use one consistent enthalpy reference for all streams; include reaction/phase effects through a compatible property model.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p5c62f9d2ae">
+   <rect x="55.44" y="100.8" width="897.12" height="496.8"/>
+  </clipPath>
+ </defs>
+</svg>

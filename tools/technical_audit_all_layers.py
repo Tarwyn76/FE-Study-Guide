@@ -3,7 +3,7 @@
 technical_audit_all_layers.py
 =========================
 
-Consolidated technical-content audit for FE Supplemental Guide Layers 1, 2, and 3 (v2).
+Consolidated technical-content audit for FE Supplemental Guide Layers 1, 2, and 3 (v3).
 
 Revision 6 adds generated-artwork discovery.  By default the audit now checks
 figures/png/<Figure ID>.png and figures/svg/<Figure ID>.svg, reports generated
@@ -834,6 +834,67 @@ def word_count(text: str) -> int:
 # Worked-example extraction
 # ---------------------------------------------------------------------------
 
+def has_substantive_unlabeled_solution(block: str) -> bool:
+    """Conservatively detect a worked solution when no explicit Solution label exists.
+
+    Some Layer 1 chapters use Given/Find followed directly by equations, or use
+    labels such as Hypotheses, Statistic, Critical value, Decision, and
+    Conclusion.  This helper prevents those formats from being reported as
+    missing-solution ERRORs while still leaving genuinely prompt-only examples
+    eligible for that error.
+    """
+    if not block or word_count(block) < 18:
+        return False
+
+    # Strong structural indicators used by the Layer-1 manuscript.
+    structural = re.search(
+        r"(?mi)^\s*\*\*(?:Hypotheses?|Statistic|Test\s+statistic|Critical\s+value|"
+        r"Decision|Conclusion|Interpretation|Sensitivity\s+coefficients?|"
+        r"Nominal\s+(?:value|volume)|Relative\s+uncertainty|Degrees?\s+of\s+freedom|"
+        r"p[- ]?value|Reject|Fail\s+to\s+reject)\.?\*\*",
+        block,
+    )
+    if structural:
+        return True
+
+    # Quantitative reasoning indicators.  Require more than one so a prompt
+    # containing a single formula is not mistaken for a completed solution.
+    math_blocks = len(re.findall(r"\$\$(.*?)\$\$|\\\[(.*?)\\\]", block, re.S))
+    equalities = len(re.findall(r"(?<![<>!])=(?!=)", block))
+    result_markers = len(re.findall(
+        r"(?i)\\boxed\{|\b(?:therefore|thus|hence|so|approximately|approx\.?|"
+        r"reject\s+H_0|fail\s+to\s+reject|final|result)\b",
+        block,
+    ))
+
+    return (math_blocks >= 2 and equalities >= 2) or (equalities >= 2 and result_markers >= 1)
+
+
+def count_display_math_delimiters(text: str, bracket: str) -> int:
+    """Count true LaTeX display delimiters while ignoring row-spacing commands.
+
+    A real display opener/closer has an odd-length run of backslashes before
+    ``[`` or ``]`` (normally one: ``\\[`` / ``\\]``).  Array/cases row spacing
+    such as ``\\\\[4pt]`` has an even-length run and must not be counted as a
+    display delimiter.
+    """
+    if bracket not in "[]":
+        raise ValueError("bracket must be '[' or ']'")
+
+    count = 0
+    for i, ch in enumerate(text):
+        if ch != bracket:
+            continue
+        j = i - 1
+        nslashes = 0
+        while j >= 0 and text[j] == "\\":
+            nslashes += 1
+            j -= 1
+        if nslashes % 2 == 1:
+            count += 1
+    return count
+
+
 def extract_worked_examples(doc: ChapterDoc) -> list[dict[str, Any]]:
     """
     Extract Worked Example blocks across Layers 1, 2, and 3.
@@ -887,6 +948,11 @@ def extract_worked_examples(doc: ChapterDoc) -> list[dict[str, Any]]:
 
         if sm:
             solution = post_solution
+        elif prompt_markers and has_substantive_unlabeled_solution(block):
+            # Some Layer-1 worked examples use Given/Find and then proceed
+            # directly into equations or headings such as Hypotheses/Statistic.
+            # Treat the full block as the worked solution for audit purposes.
+            solution = block
         elif prompt_markers:
             solution = ""
         else:
@@ -910,12 +976,19 @@ def audit_formulas(doc: ChapterDoc, issues: list[Issue]) -> list[dict[str, Any]]
     rows = []
     blocks = extract_math_blocks(doc.raw)
 
-    # Raw delimiter sanity.
-    if doc.raw.count(r"\[") != doc.raw.count(r"\]"):
+    # Raw delimiter sanity. Ignore array/cases row-spacing commands such as
+    # \\[4pt], \\[2mm], etc.; those contain an even number of backslashes and
+    # are not display-math openers.
+    open_display = count_display_math_delimiters(doc.raw, "[")
+    close_display = count_display_math_delimiters(doc.raw, "]")
+    if open_display != close_display:
         add_issue(
             issues, "ERROR", "math_delimiter_mismatch",
             chapter=doc.chapter, file=str(doc.path),
-            message=r"Count of \[ and \] display-math delimiters does not match.",
+            message=(
+                rf"Count of true \\[ and \\] display-math delimiters does not match "
+                f"({open_display} open, {close_display} close)."
+            ),
             recommendation="Repair the malformed LaTeX display-math block.",
         )
 
@@ -1200,8 +1273,7 @@ def build_artwork_index(primary_dir: Path, extension: str) -> dict[str, list[Pat
     directory and its parent figures directory.
 
     Accepts exact filenames and descriptive filenames such as
-    FIG-01-14-003-cofactor-expansion.png.
-    """
+    FIG-01-14-003-cofactor-expansion.png. Archive/archives/backup/backups\n    directories are excluded from live-artwork duplicate checks.\n    """
     roots: list[Path] = []
     for candidate in (primary_dir, primary_dir.parent):
         if candidate.exists():
@@ -1213,10 +1285,22 @@ def build_artwork_index(primary_dir: Path, extension: str) -> dict[str, list[Pat
     index: dict[str, list[Path]] = defaultdict(list)
     seen: set[Path] = set()
 
+    excluded_artwork_dirs = {"archive", "archives", "backup", "backups"}
+
     for root_dir in roots:
         for path in root_dir.rglob(f"*{extension.lower()}"):
             if not path.is_file():
                 continue
+
+            # Archived/backup artwork is intentionally retained for history but
+            # must not compete with the live file for duplicate-artwork checks.
+            try:
+                rel_parts = {p.lower() for p in path.relative_to(root_dir).parts[:-1]}
+            except Exception:
+                rel_parts = {p.lower() for p in path.parts[:-1]}
+            if rel_parts & excluded_artwork_dirs:
+                continue
+
             rp = path.resolve()
             if rp in seen:
                 continue
