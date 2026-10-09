@@ -65,7 +65,7 @@ For a thin-walled closed cylinder, hoop stress is twice the longitudinal membran
 
 **Problem.** p=2 MPa, r=0.5 m, t=0.01 m gives σh=100 MPa.
 
-**Solution.** Apply the relation and model in §85.1; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** \(\sigma_h=pr/t=(2\ {\rm MPa})(0.5\ {\rm m})/(0.01\ {\rm m})=\mathbf{100\ MPa}\). This thin-wall membrane result requires a sufficiently small wall-thickness-to-radius ratio.
 
 ---
 
@@ -81,7 +81,7 @@ Closed-end pressure creates axial force carried by the shell. This gives half th
 
 **Problem.** Using the prior example gives σl=50 MPa.
 
-**Solution.** Apply the relation and model in §85.2; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** \(\sigma_l=pr/(2t)=\mathbf{50\ MPa}\) using the same \(p,r,t\). Thus the ideal cylindrical hoop stress is twice the longitudinal membrane stress.
 
 ---
 
@@ -97,7 +97,7 @@ A thin sphere carries equal membrane stress in all tangent directions and is str
 
 **Problem.** At the same p, r, and t, sphere membrane stress equals the cylindrical longitudinal stress.
 
-**Solution.** Apply the relation and model in §85.3; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** A thin spherical vessel has membrane stress \(\sigma=pr/(2t)\), so with the same \(p,r,t\) its ideal membrane stress equals the cylindrical longitudinal stress: **50 MPa** for the preceding values.
 
 ---
 
@@ -113,7 +113,7 @@ Piping design adds code factors, corrosion allowance, joints, temperature, and l
 
 **Problem.** Increasing allowable stress reduces required idealized wall thickness, all else equal.
 
-**Solution.** Apply the relation and model in §85.4; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** In the simple thin-wall screening form \(t\sim pr/S_{allow}\), increasing allowable stress decreases the required ideal thickness. A code design must still include the applicable factors, corrosion allowance, joint efficiency, load cases, and minimum-thickness rules.
 
 ---
 
@@ -129,7 +129,7 @@ Unrestrained pipe expands thermally without stress; restraint converts expansion
 
 **Problem.** A freely expanding pipe has thermal strain but ideally no axial thermal stress.
 
-**Solution.** Apply the relation and model in §85.5; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** For free expansion, \(\Delta L=\alpha L\Delta T\) and the member develops strain without ideal axial thermal stress. If fully restrained and still elastic, \(\sigma=E\alpha\Delta T\); partial restraint lies between those limiting cases.
 
 ---
 
@@ -145,7 +145,7 @@ Real vessels and piping experience support reactions, weight, wind/seismic, nozz
 
 **Problem.** A nozzle load can create local bending not represented by simple membrane equations.
 
-**Solution.** Apply the relation and model in §85.6; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** Simple membrane pressure stress does not capture local nozzle forces/moments. Connected piping, weight, thermal displacement, and external loads can create local bending and stress intensification that require separate evaluation.
 
 ---
 
@@ -161,7 +161,7 @@ FE equations are screening models, not substitutes for pressure-vessel or piping
 
 **Problem.** A thick-walled vessel should not be analyzed with thin-wall membrane equations without justification.
 
-**Solution.** Apply the relation and model in §85.7; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** Thin-wall equations are screening relations, not universal vessel rules. Verify geometry validity, material allowable stress, temperature, joints, cyclic service, openings/local loads, and the applicable pressure-vessel or piping code before release.
 
 ---
 
@@ -171,13 +171,13 @@ FE equations are screening models, not substitutes for pressure-vessel or piping
 
 **Problem.** A calculation produces a stress or operating point that violates the model assumption used to obtain it. Is the result acceptable?
 
-**Solution.** No. Select the correct model or failure/operating region and solve again. Algebra does not override geometry, material behavior, or component-state validity.
+**Solution.** No. A pressure-boundary result is invalid when thin-wall assumptions, temperature, local loads, fatigue, or code requirements are violated. Use the appropriate vessel/piping method rather than extrapolating a membrane formula.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the FE Reference Handbook expression. Which should govern the exam solution?
 
-**Solution.** Use the Handbook expression and its definitions unless the problem explicitly provides another model.
+**Solution.** For **Pressure Vessels and Piping**, use the FE Reference Handbook expression, symbols, and unit convention whenever it supplies the required model. The external source set **SHIGLEY, BPVCVIII, B313** supports specification-required learned/application material that is not fully developed in the Handbook. If a remembered textbook formula conflicts with a supplied Handbook relation, the supplied Handbook relation governs unless the problem explicitly defines another model.
 
 ---
 
@@ -185,7 +185,14 @@ FE equations are screening models, not substitutes for pressure-vessel or piping
 
 Primary source basis: **FE Mechanical specification Area(s) 14; FE Reference Handbook 10.6 Mechanical Engineering and supporting general sections, with the specific subsection/page identified in the ledger.**
 
-**Source boundary:** The Mechanical specification includes both directly tabulated Handbook equations and learned design concepts. This chapter does not assign invented Handbook pages to specification-required material that is not directly tabulated.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required mechanical-engineering knowledge that is not fully developed in the Handbook. **Guide synthesis** connects those sources into exam-oriented explanations, examples, model checks, and design context; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Nisbett, K. J., & Budynas, R. G. *Shigley's Mechanical Engineering Design* (2024 Release). McGraw Hill. ISBN 978-1-265-47269-6. Supporting scope: Failure theories, fatigue, springs, pressure-vessel screening, bearings, fasteners, shafts, keys, couplings, gears, and machine-element design.
+- ASME. (2025). *Boiler and Pressure Vessel Code, Section VIII—Rules for Construction of Pressure Vessels, Division 1*. Supporting scope: Pressure-vessel construction requirements, pressure boundary design context, materials, fabrication, examination, and testing.
+- ASME. (2024). *Process Piping* (ASME B31.3-2024). Supporting scope: Process piping materials, design, flexibility, fabrication, assembly, examination, inspection, and testing.
+
+The external references support only the learned/application portion of the FE Mechanical specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +361,31 @@ D) It is always qualitative
 
 14. For **pressure vessel design check**, verify geometry, load direction, material model, units, operating regime, and whether the assumed failure or performance mode remains valid.
 
-15. The sketch exposes supports, force directions, geometry, constraints, energy/flow paths, and missing load cases before algebra obscures them.
+15. In **Pressure Vessels and Piping**, start from the physical model and system/component state, not from an isolated formula. A valid solution must verify thin-wall applicability, pressure/temperature/material basis, thermal restraint, local/nozzle/piping loads, and the applicable pressure-boundary code.
 
-16. Mechanical equations are model-dependent. The result must remain compatible with yielding/buckling/fatigue, flow regime, thermal state, contact, or kinematic constraints.
+16. Units and sign/reference conventions are part of the model in **Pressure Vessels and Piping**. Convert all quantities to a consistent basis before substitution and state whether values are absolute/gauge, static/stagnation, nominal/local, input/output, or other relevant basis.
 
-17. The Handbook is the supplied exam reference; its definitions, correction factors, unit conventions, and tables should govern unless the problem explicitly supplies another relation.
+17. The FE Reference Handbook is the controlling exam reference when it supplies the relation for **Pressure Vessels and Piping**. External sources **SHIGLEY, BPVCVIII, B313** support only the learned material not fully developed in the Handbook.
 
-18. These checks catch impossible motion, unit errors, invalid thin-wall or linear assumptions, unrealistic stresses, interference, and parts that cannot be manufactured or assembled.
+18. Use a limiting or reversal check before accepting the result: halve internal pressure and confirm ideal thin-wall membrane stresses halve; remove restraint and confirm ideal thermal stress falls to zero while free expansion remains. A failure to reduce correctly indicates a geometry, regime, sign, unit, or model-selection error.
 
-19. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+19. **A.** Section §85.1, **Thin-walled cylindrical hoop stress**, uses \(\sigma_h=\frac{pr}{t}\). Apply it only under the geometry/material/operating assumptions stated in §85.1, then compare the result with the physical behavior described there.
 
-20. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+20. **A.** Section §85.2, **Longitudinal stress in cylindrical vessels**, uses \(\sigma_l=\frac{pr}{2t}\). Apply it only under the geometry/material/operating assumptions stated in §85.2, then compare the result with the physical behavior described there.
 
-21. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+21. **A.** Section §85.3, **Thin spherical pressure vessels**, uses \(\sigma=\frac{pr}{2t}\). Apply it only under the geometry/material/operating assumptions stated in §85.3, then compare the result with the physical behavior described there.
 
-22. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+22. **A.** Section §85.4, **Piping pressure stress and wall-thickness reasoning**, uses \(t\gtrsim\frac{pr}{S_{allow}}\text{ in a simplified thin-wall screen}\). Apply it only under the geometry/material/operating assumptions stated in §85.4, then compare the result with the physical behavior described there.
 
-23. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+23. **A.** Section §85.5, **Thermal expansion and restraint in piping**, uses \(\Delta L=\alpha L\Delta T,\qquad \sigma=E\alpha\Delta T\text{ if fully restrained elastically}\). Apply it only under the geometry/material/operating assumptions stated in §85.5, then compare the result with the physical behavior described there.
 
-24. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+24. **A.** Section §85.6, **Nozzles, supports, and combined vessel loads**, uses \(\text{combined stress includes pressure plus weight, piping, thermal, and local loads}\). Apply it only under the geometry/material/operating assumptions stated in §85.6, then compare the result with the physical behavior described there.
 
-25. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+25. **A.** Section §85.7, **Pressure-boundary safety and model validity**, uses \(\text{verify thin-wall validity, allowable stress, joints, cyclic loading, temperature, and code requirements}\). Apply it only under the geometry/material/operating assumptions stated in §85.7, then compare the result with the physical behavior described there.
 
-26. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+26. **A.** An integrated **Pressure Vessels and Piping** result is acceptable only after the governing physical model, geometry, operating/failure regime, units, and independent plausibility checks agree.
 
-27. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+27. **A.** Source ownership is explicit in this chapter: FE-Handbook-supported material remains tied to the ledger; externally supported material uses **SHIGLEY, BPVCVIII, B313**; guide synthesis is supplemental explanation and exam-oriented workflow.
 
 
 ---
@@ -410,25 +417,25 @@ D) It is always qualitative
 
 ## Practice Problem Solutions
 
-1. Use §85.1. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+1. **Independent check for §85.1 — Thin-walled cylindrical hoop stress.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. \(\sigma_h=pr/t=(2\ {\rm MPa})(0.5\ {\rm m})/(0.01\ {\rm m})=\mathbf{100\ MPa}\). This thin-wall membrane result requires a sufficiently small wall-thickness-to-radius ratio.
 
-2. Use §85.2. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+2. **Independent check for §85.2 — Longitudinal stress in cylindrical vessels.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. \(\sigma_l=pr/(2t)=\mathbf{50\ MPa}\) using the same \(p,r,t\). Thus the ideal cylindrical hoop stress is twice the longitudinal membrane stress.
 
-3. Use §85.3. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+3. **Independent check for §85.3 — Thin spherical pressure vessels.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. A thin spherical vessel has membrane stress \(\sigma=pr/(2t)\), so with the same \(p,r,t\) its ideal membrane stress equals the cylindrical longitudinal stress: **50 MPa** for the preceding values.
 
-4. Use §85.4. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+4. **Independent check for §85.4 — Piping pressure stress and wall-thickness reasoning.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. In the simple thin-wall screening form \(t\sim pr/S_{allow}\), increasing allowable stress decreases the required ideal thickness. A code design must still include the applicable factors, corrosion allowance, joint efficiency, load cases, and minimum-thickness rules.
 
-5. Use §85.5. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+5. **Independent check for §85.5 — Thermal expansion and restraint in piping.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. For free expansion, \(\Delta L=\alpha L\Delta T\) and the member develops strain without ideal axial thermal stress. If fully restrained and still elastic, \(\sigma=E\alpha\Delta T\); partial restraint lies between those limiting cases.
 
-6. Use §85.6. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+6. **Independent check for §85.6 — Nozzles, supports, and combined vessel loads.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. Simple membrane pressure stress does not capture local nozzle forces/moments. Connected piping, weight, thermal displacement, and external loads can create local bending and stress intensification that require separate evaluation.
 
-7. Use §85.7. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+7. **Independent check for §85.7 — Pressure-boundary safety and model validity.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. Thin-wall equations are screening relations, not universal vessel rules. Verify geometry validity, material allowable stress, temperature, joints, cyclic service, openings/local loads, and the applicable pressure-vessel or piping code before release.
 
-8. Check dimensions, load direction, support/interface assumptions, material regime, fatigue/static basis, operating speed/temperature/pressure, and any geometric validity limit such as thin-wall or small-deflection assumptions.
+8. For **Pressure Vessels and Piping**, one required acceptance screen is: verify thin-wall applicability, pressure/temperature/material basis, thermal restraint, local/nozzle/piping loads, and the applicable pressure-boundary code. A result that violates this screen must be rejected or recomputed with the proper model.
 
-9. Start with FE Mechanical specification Area(s) 14, then use the Handbook subsection named in the corresponding ledger entry.
+9. Start with the FE Mechanical specification area and FE Reference Handbook location recorded in the ledger for **Pressure Vessels and Piping**. For `split_required` concepts, use **SHIGLEY, BPVCVIII, B313** for the learned/application portion without inventing a Handbook page or clause.
 
-10. Test a simple limit such as zero load, very large stiffness, matched speed ratio, zero pressure, zero damping, or maximum/minimum fit. Confirm the result trends in the physically expected direction and remains manufacturable.
+10. Apply this limiting-case test independently: halve internal pressure and confirm ideal thin-wall membrane stresses halve; remove restraint and confirm ideal thermal stress falls to zero while free expansion remains. If the simplified case does not behave as expected, revisit the setup before trusting the full calculation.
 
 ---
 

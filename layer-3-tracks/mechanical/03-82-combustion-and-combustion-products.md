@@ -65,7 +65,7 @@ Complete stoichiometric combustion balances atoms to determine theoretical oxyge
 
 **Problem.** Methane requires 2 mol O2 per mol CH4 for complete combustion.
 
-**Solution.** Apply the relation and model in §82.1; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** Balance atoms: \(\mathrm{CH_4}+2\mathrm{O_2}\rightarrow\mathrm{CO_2}+2\mathrm{H_2O}\). Therefore complete stoichiometric combustion requires **2 mol O\(_2\)** per mol CH\(_4\).
 
 ---
 
@@ -81,7 +81,7 @@ Real burners often operate with excess air to promote complete combustion. Exces
 
 **Problem.** 120% theoretical air corresponds to 20% excess air.
 
-**Solution.** Apply the relation and model in §82.2; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** \(120\%\) theoretical air means \(A_{actual}=1.20A_{theoretical}\). Thus excess air is \((1.20-1.00)\times100\%=\mathbf{20\%}\).
 
 ---
 
@@ -97,7 +97,7 @@ Product analysis distinguishes wet and dry basis and can be used to infer excess
 
 **Problem.** Dry-basis analysis excludes water vapor from the composition denominator.
 
-**Solution.** Apply the relation and model in §82.3; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** Dry-basis product composition excludes water vapor from the mole-fraction denominator. The same product stream therefore has different wet- and dry-basis percentages; atom balances must be performed before choosing the reporting basis.
 
 ---
 
@@ -113,7 +113,7 @@ Heating value connects fuel consumption with released chemical energy. Higher an
 
 **Problem.** A 0.01 kg/s fuel flow at 40 MJ/kg represents 400 kW fuel-energy rate.
 
-**Solution.** Apply the relation and model in §82.4; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** \(\dot Q_{fuel}=\dot m_fHV=(0.01\ {\rm kg/s})(40\ {\rm MJ/kg})=0.40\ {\rm MJ/s}=\mathbf{400\ kW}\).
 
 ---
 
@@ -129,7 +129,7 @@ The ideal adiabatic flame temperature follows from an energy balance with no hea
 
 **Problem.** Preheating reactants generally raises the ideal adiabatic flame temperature.
 
-**Solution.** Apply the relation and model in §82.5; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** Under an adiabatic model, reactant enthalpy plus chemical energy is balanced by product enthalpy. Preheating the reactants raises their initial sensible enthalpy, so the ideal adiabatic flame temperature generally rises when the product set is otherwise comparable.
 
 ---
 
@@ -145,7 +145,7 @@ Incomplete combustion can create carbon monoxide, soot, and unburned hydrocarbon
 
 **Problem.** CO in products indicates incomplete oxidation of carbon under the simplified interpretation.
 
-**Solution.** Apply the relation and model in §82.6; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** CO in the products means some carbon did not reach complete oxidation to CO\(_2\). Insufficient oxygen, mixing, residence time, or temperature can cause incomplete combustion and leave CO/unburned species.
 
 ---
 
@@ -161,7 +161,7 @@ Combustion calculations are sensitive to molar versus mass basis and wet versus 
 
 **Problem.** A dry flue-gas oxygen percentage cannot be inserted directly into a wet-basis balance without conversion.
 
-**Solution.** Apply the relation and model in §82.7; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** Always state fuel basis, actual/theoretical-air basis, and wet/dry product basis. For example, a dry flue-gas O\(_2\) percentage cannot be inserted directly into a wet-basis mole balance because water is absent from the dry denominator.
 
 ---
 
@@ -171,13 +171,13 @@ Combustion calculations are sensitive to molar versus mass basis and wet versus 
 
 **Problem.** A calculation produces a stress or operating point that violates the model assumption used to obtain it. Is the result acceptable?
 
-**Solution.** No. Select the correct model or failure/operating region and solve again. Algebra does not override geometry, material behavior, or component-state validity.
+**Solution.** No. Combustion calculations must conserve each element and energy on one wet/dry and actual/theoretical-air basis. Negative species or unbalanced atoms identify an invalid product model.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the FE Reference Handbook expression. Which should govern the exam solution?
 
-**Solution.** Use the Handbook expression and its definitions unless the problem explicitly provides another model.
+**Solution.** For **Combustion and Combustion Products**, use the FE Reference Handbook expression, symbols, and unit convention whenever it supplies the required model. The external source set **TURNS** supports specification-required learned/application material that is not fully developed in the Handbook. If a remembered textbook formula conflicts with a supplied Handbook relation, the supplied Handbook relation governs unless the problem explicitly defines another model.
 
 ---
 
@@ -185,7 +185,12 @@ Combustion calculations are sensitive to molar versus mass basis and wet versus 
 
 Primary source basis: **FE Mechanical specification Area(s) 11; FE Reference Handbook 10.6 Mechanical Engineering and supporting general sections, with the specific subsection/page identified in the ledger.**
 
-**Source boundary:** The Mechanical specification includes both directly tabulated Handbook equations and learned design concepts. This chapter does not assign invented Handbook pages to specification-required material that is not directly tabulated.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required mechanical-engineering knowledge that is not fully developed in the Handbook. **Guide synthesis** connects those sources into exam-oriented explanations, examples, model checks, and design context; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Turns, S. R., & Haworth, D. C. (2021). *An Introduction to Combustion: Concepts and Applications* (4th ed.). McGraw Hill. ISBN 978-1-260-47769-6. Supporting scope: Stoichiometry, theoretical/excess air, combustion products, heating values, flame temperature, and emissions.
+
+The external references support only the learned/application portion of the FE Mechanical specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +359,31 @@ D) It is always qualitative
 
 14. For **combustion design check**, verify geometry, load direction, material model, units, operating regime, and whether the assumed failure or performance mode remains valid.
 
-15. The sketch exposes supports, force directions, geometry, constraints, energy/flow paths, and missing load cases before algebra obscures them.
+15. In **Combustion and Combustion Products**, start from the physical model and system/component state, not from an isolated formula. A valid solution must balance C/H/O/N atoms, state theoretical versus excess air, keep wet/dry product basis explicit, and close the combustion energy balance.
 
-16. Mechanical equations are model-dependent. The result must remain compatible with yielding/buckling/fatigue, flow regime, thermal state, contact, or kinematic constraints.
+16. Units and sign/reference conventions are part of the model in **Combustion and Combustion Products**. Convert all quantities to a consistent basis before substitution and state whether values are absolute/gauge, static/stagnation, nominal/local, input/output, or other relevant basis.
 
-17. The Handbook is the supplied exam reference; its definitions, correction factors, unit conventions, and tables should govern unless the problem explicitly supplies another relation.
+17. The FE Reference Handbook is the controlling exam reference when it supplies the relation for **Combustion and Combustion Products**. External sources **TURNS** support only the learned material not fully developed in the Handbook.
 
-18. These checks catch impossible motion, unit errors, invalid thin-wall or linear assumptions, unrealistic stresses, interference, and parts that cannot be manufactured or assembled.
+18. Use a limiting or reversal check before accepting the result: use methane and verify atom balance requires two O2 per CH4; set actual air equal to theoretical air and confirm excess air is zero. A failure to reduce correctly indicates a geometry, regime, sign, unit, or model-selection error.
 
-19. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+19. **A.** Section §82.1, **Fuel formulas and stoichiometric oxygen demand**, uses \(\mathrm{C_xH_y}+\left(x+\frac y4\right)\mathrm{O_2}\rightarrow x\mathrm{CO_2}+\frac y2\mathrm{H_2O}\). Apply it only under the geometry/material/operating assumptions stated in §82.1, then compare the result with the physical behavior described there.
 
-20. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+20. **A.** Section §82.2, **Theoretical air and excess air**, uses \(\%\text{excess air}=100\frac{A_{actual}-A_{theoretical}}{A_{theoretical}}\). Apply it only under the geometry/material/operating assumptions stated in §82.2, then compare the result with the physical behavior described there.
 
-21. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+21. **A.** Section §82.3, **Combustion-product analysis**, uses \(\text{atom balances constrain CO}_2,\mathrm{H_2O},\mathrm{O_2},\mathrm{N_2},\mathrm{CO}\). Apply it only under the geometry/material/operating assumptions stated in §82.3, then compare the result with the physical behavior described there.
 
-22. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+22. **A.** Section §82.4, **Heating value and combustion energy balance**, uses \(\dot Q\approx \dot m_f\,HV\). Apply it only under the geometry/material/operating assumptions stated in §82.4, then compare the result with the physical behavior described there.
 
-23. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+23. **A.** Section §82.5, **Adiabatic flame temperature concept**, uses \(\sum H_{reactants}=\sum H_{products}\). Apply it only under the geometry/material/operating assumptions stated in §82.5, then compare the result with the physical behavior described there.
 
-24. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+24. **A.** Section §82.6, **Incomplete combustion and emissions**, uses \(\text{insufficient mixing/oxygen/time/temperature can produce CO and unburned species}\). Apply it only under the geometry/material/operating assumptions stated in §82.6, then compare the result with the physical behavior described there.
 
-25. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+25. **A.** Section §82.7, **Combustion safety and model verification**, uses \(\text{verify fuel basis, air basis, wet/dry products, energy basis, and safe operating limits}\). Apply it only under the geometry/material/operating assumptions stated in §82.7, then compare the result with the physical behavior described there.
 
-26. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+26. **A.** An integrated **Combustion and Combustion Products** result is acceptable only after the governing physical model, geometry, operating/failure regime, units, and independent plausibility checks agree.
 
-27. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+27. **A.** Source ownership is explicit in this chapter: FE-Handbook-supported material remains tied to the ledger; externally supported material uses **TURNS**; guide synthesis is supplemental explanation and exam-oriented workflow.
 
 
 ---
@@ -410,25 +415,25 @@ D) It is always qualitative
 
 ## Practice Problem Solutions
 
-1. Use §82.1. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+1. **Independent check for §82.1 — Fuel formulas and stoichiometric oxygen demand.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. Balance atoms: \(\mathrm{CH_4}+2\mathrm{O_2}\rightarrow\mathrm{CO_2}+2\mathrm{H_2O}\). Therefore complete stoichiometric combustion requires **2 mol O\(_2\)** per mol CH\(_4\).
 
-2. Use §82.2. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+2. **Independent check for §82.2 — Theoretical air and excess air.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. \(120\%\) theoretical air means \(A_{actual}=1.20A_{theoretical}\). Thus excess air is \((1.20-1.00)\times100\%=\mathbf{20\%}\).
 
-3. Use §82.3. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+3. **Independent check for §82.3 — Combustion-product analysis.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. Dry-basis product composition excludes water vapor from the mole-fraction denominator. The same product stream therefore has different wet- and dry-basis percentages; atom balances must be performed before choosing the reporting basis.
 
-4. Use §82.4. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+4. **Independent check for §82.4 — Heating value and combustion energy balance.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. \(\dot Q_{fuel}=\dot m_fHV=(0.01\ {\rm kg/s})(40\ {\rm MJ/kg})=0.40\ {\rm MJ/s}=\mathbf{400\ kW}\).
 
-5. Use §82.5. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+5. **Independent check for §82.5 — Adiabatic flame temperature concept.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. Under an adiabatic model, reactant enthalpy plus chemical energy is balanced by product enthalpy. Preheating the reactants raises their initial sensible enthalpy, so the ideal adiabatic flame temperature generally rises when the product set is otherwise comparable.
 
-6. Use §82.6. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+6. **Independent check for §82.6 — Incomplete combustion and emissions.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. CO in the products means some carbon did not reach complete oxidation to CO\(_2\). Insufficient oxygen, mixing, residence time, or temperature can cause incomplete combustion and leave CO/unburned species.
 
-7. Use §82.7. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+7. **Independent check for §82.7 — Combustion safety and model verification.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. Always state fuel basis, actual/theoretical-air basis, and wet/dry product basis. For example, a dry flue-gas O\(_2\) percentage cannot be inserted directly into a wet-basis mole balance because water is absent from the dry denominator.
 
-8. Check dimensions, load direction, support/interface assumptions, material regime, fatigue/static basis, operating speed/temperature/pressure, and any geometric validity limit such as thin-wall or small-deflection assumptions.
+8. For **Combustion and Combustion Products**, one required acceptance screen is: balance C/H/O/N atoms, state theoretical versus excess air, keep wet/dry product basis explicit, and close the combustion energy balance. A result that violates this screen must be rejected or recomputed with the proper model.
 
-9. Start with FE Mechanical specification Area(s) 11, then use the Handbook subsection named in the corresponding ledger entry.
+9. Start with the FE Mechanical specification area and FE Reference Handbook location recorded in the ledger for **Combustion and Combustion Products**. For `split_required` concepts, use **TURNS** for the learned/application portion without inventing a Handbook page or clause.
 
-10. Test a simple limit such as zero load, very large stiffness, matched speed ratio, zero pressure, zero damping, or maximum/minimum fit. Confirm the result trends in the physically expected direction and remains manufacturable.
+10. Apply this limiting-case test independently: use methane and verify atom balance requires two O2 per CH4; set actual air equal to theoretical air and confirm excess air is zero. If the simplified case does not behave as expected, revisit the setup before trusting the full calculation.
 
 ---
 

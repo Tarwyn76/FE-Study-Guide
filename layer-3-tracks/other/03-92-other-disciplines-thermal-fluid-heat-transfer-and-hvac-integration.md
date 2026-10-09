@@ -65,7 +65,7 @@ Thermal-fluid problems often hinge on choosing closed-system versus control-volu
 
 **Problem.** A steady insulated nozzle with no shaft work converts enthalpy primarily into kinetic energy.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §92.1.
+**Solution.** For a steady, adiabatic nozzle with no shaft work and negligible potential-energy change, the steady-flow energy equation reduces to \(h_1+V_1^2/2=h_2+V_2^2/2\). The enthalpy drop therefore appears primarily as increased kinetic energy.
 
 ---
 
@@ -81,7 +81,8 @@ Before selecting friction, drag, heat-transfer, or pressure-drop relations, iden
 
 **Problem.** A viscosity change caused by temperature can move a pipe-flow calculation between laminar and turbulent regimes.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §92.2.
+**Solution.** Reynolds number is \(\mathrm{Re}=
+ho VD/\mu\). Because viscosity can change strongly with temperature, a temperature change can shift \(\mathrm{Re}\) across the laminar/transition/turbulent boundaries even when pipe diameter and bulk velocity are unchanged.
 
 ---
 
@@ -97,7 +98,7 @@ A complete fluid-transport problem links Bernoulli/energy balance, distributed/m
 
 **Problem.** Increasing pump speed can move the operating point because both pump and system behavior determine actual flow.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §92.3.
+**Solution.** The actual operating point is the intersection of the pump curve and the system curve, not a pump property alone. Changing pump speed shifts the pump curve through the affinity laws; the resulting flow must then be found where the shifted pump head again equals the system head requirement.
 
 ---
 
@@ -113,7 +114,7 @@ Convective heat-transfer coefficients are not arbitrary constants; they arise fr
 
 **Problem.** Increasing air speed over a hot surface usually increases h and heat transfer, but the correct correlation must match geometry and regime.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §92.4.
+**Solution.** For external or internal forced convection, increasing velocity usually raises Reynolds number and often raises the convective coefficient \(h\). The numerical change must come from a Nusselt correlation valid for the actual geometry, entrance/development condition, and flow regime.
 
 ---
 
@@ -129,7 +130,7 @@ Multimode heat-transfer problems can often be organized as thermal resistances w
 
 **Problem.** Insulation adds conduction resistance but also changes outer area and convection/radiation conditions.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §92.5.
+**Solution.** Adding insulation increases conduction resistance, but cylindrical or spherical systems also change outer area and therefore the convection/radiation terms. Build the entire resistance network with the new geometry before concluding how total heat loss changes.
 
 ---
 
@@ -145,7 +146,7 @@ Cycle questions combine component energy balances with state-property diagrams. 
 
 **Problem.** A throttling valve changes pressure without producing shaft work in the ideal steady model and is approximately isenthalpic.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §92.6.
+**Solution.** For an ideal steady throttling device with negligible heat transfer, shaft work, and kinetic/potential changes, the energy balance gives \(h_1\approx h_2\). Pressure falls while enthalpy remains approximately constant; temperature need not remain constant.
 
 ---
 
@@ -153,7 +154,7 @@ Cycle questions combine component energy balances with state-property diagrams. 
 
 Other Disciplines thermal questions may combine moist-air properties, combustion products, energy balance, and heat transfer. Keep dry-air, water-vapor, fuel, and product bases explicit.
 
-\[\text{state properties}+\text{mass balance}+\text{energy balance}\rightarrow\text{HVAC/combustion result}\]
+\[\sum \dot m_{da,in}=\sum \dot m_{da,out},\qquad \sum \dot m_{da}\omega_{in}+\dot m_{w,in}=\sum \dot m_{da}\omega_{out}+\dot m_{w,out},\qquad \dot Q-\dot W+\sum \dot m h_{in}-\sum \dot m h_{out}=0\]
 
 ![FIG-03-92-007: Integrated HVAC/combustion workflow linking psychrometrics, combustion basis, heat loads, and equipment performance.](../figures/FIG-03-92-007-psychrometrics-hvac-combustion-and-integrated-thermal-checks.png)
 
@@ -161,7 +162,7 @@ Other Disciplines thermal questions may combine moist-air properties, combustion
 
 **Problem.** Mixing two moist-air streams requires both dry-air mass and enthalpy/humidity-ratio balances.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §92.7.
+**Solution.** For adiabatic mixing of two moist-air streams, conserve dry-air mass first, then water vapor and enthalpy on a dry-air basis. The outlet humidity ratio and enthalpy must satisfy both balances and correspond to a physically valid psychrometric state.
 
 ---
 
@@ -171,13 +172,13 @@ Other Disciplines thermal questions may combine moist-air properties, combustion
 
 **Problem.** A mixed question contains electrical, mechanical, and economic information. Must every datum be used?
 
-**Solution.** No. First identify the requested quantity and governing model. Use only the data needed for the current stage, then carry the resulting intermediate quantity—clearly labeled with units—into the next stage if required.
+**Solution.** No. Thermal-fluid synthesis is staged. Use the quantities needed to establish state, mass flow, energy transfer, pressure loss, or heat-transfer coefficient; discard unrelated electrical/economic data until a later stage actually requires the resulting heat rate, shaft power, or flow.
 
 ### Worked Example 9
 
 **Problem.** You find a familiar equation in memory but a different-looking form in the FE Reference Handbook. What should you do?
 
-**Solution.** Use the Handbook form after checking its definitions and assumptions. Do not force a remembered formula onto a problem merely because it resembles the topic.
+**Solution.** Prefer the Handbook relation for the identified fluid, thermodynamic, heat-transfer, or psychrometric regime. Similar-looking correlations can embed different characteristic lengths, property temperatures, or reference states, so reconcile definitions before substituting.
 
 ---
 
@@ -185,7 +186,14 @@ Other Disciplines thermal questions may combine moist-air properties, combustion
 
 **Primary source basis:** FE Other Disciplines CBT specification, printed pp. 498–500. Unlike the six discipline-specific FE routes, Other Disciplines has no dedicated discipline section in Handbook 10.6; it relies on the general Handbook sections across the book.
 
-**Source boundary:** The integration workflow, classification strategy, and cross-domain transfer methods are guide-developed. Underlying equations remain owned and sourced by their canonical earlier chapters.
+**Source boundary:** **FE-Handbook-supported** material consists of the underlying equations, tables, definitions, and discipline models located in the FE Reference Handbook and recorded in the ledger. **Externally supported** material covers Other Disciplines specification knowledge, application context, standards, and integration details that are not fully developed in the Handbook. **Guide synthesis** is the cross-domain classification, transfer, verification, and exam-strategy workflow created for this supplemental guide; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- White, F. M., & Xue, H. *Fluid Mechanics* (9th ed.). McGraw Hill. ISBN 978-1-260-25831-8. Supporting scope: Fluid properties, Reynolds number, internal/external flow, losses, dimensional analysis, and convection-relevant flow behavior.
+- ASHRAE. (2025). *2025 ASHRAE Handbook—Fundamentals*, SI edition. ISBN 978-1-964173-11-5. Supporting scope: Psychrometrics, thermodynamics, fluid flow, heat transfer, controls, loads, and HVAC&R fundamentals.
+- Turns, S. R., & Haworth, D. C. (2021). *An Introduction to Combustion: Concepts and Applications* (4th ed.). McGraw Hill. ISBN 978-1-260-47769-6. Supporting scope: Combustion stoichiometry, theoretical/excess air, products, heating values, flame temperature, and emissions.
+
+Because Other Disciplines intentionally integrates material owned by earlier chapters, external references support the learned/application and cross-domain portions only. The FE Reference Handbook remains the exam reference, and the ledger retains the canonical Handbook locations for the underlying equations.
 
 ---
 
@@ -344,31 +352,31 @@ D) It is unrelated to Handbook navigation
 
 14. For **thermal systems synthesis**, check the controlling domain, system boundary, units, model assumptions, and the prerequisite concept being reused.
 
-15. Classification narrows the search space and prevents using a familiar equation from the wrong discipline or physical model.
+15. Thermal-fluid classification identifies whether the problem is a control volume, internal/external flow, heat-transfer resistance, cycle component, psychrometric process, or combustion balance. That decision sharply narrows the relevant Handbook equations and property data.
 
-16. The canonical concept already exists in an earlier layer/track; the integration atom teaches when and how to reuse it in a mixed problem.
+16. Mass conservation, energy conservation, Reynolds-number relations, convection correlations, and cycle equations remain owned by their earlier technical chapters. The synthesis layer teaches how outputs such as mass flow, \(h\), or shaft work become inputs to the next thermal-fluid stage.
 
-17. Compare variable definitions, units, boundary conditions, and operating assumptions. Use the relation that matches the actual problem and Handbook context.
+17. Check reference state, steady/transient assumption, compressibility, flow regime, geometry, property basis, and whether the equation uses total/static or dry-air/wet-air quantities. The correct relation is the one whose regime matches the actual process.
 
-18. These checks catch wrong-domain solutions, hidden conversion errors, impossible signs or efficiencies, and decisions that violate physical, safety, or professional constraints.
+18. A final thermal-fluid result should satisfy conservation, dimensional consistency, feasible temperature/pressure/state limits, and efficiency/COP direction. Those checks catch impossible negative absolute states, wrong property bases, and correlations used outside their regimes.
 
-19. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+19. **A.** A control-volume thermal problem begins with mass and energy balances and the correct steady/transient terms. Kinetic, potential, shaft-work, and heat-transfer terms are kept or neglected only after the device model justifies it.
 
-20. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+20. **A.** Reynolds number links velocity, length, density, and viscosity to regime selection. Because correlations and friction factors depend on regime, property evaluation and characteristic length must be established before using downstream formulas.
 
-21. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+21. **A.** Pipe-system flow is set by the simultaneous pump and system behavior. Bernoulli/mechanical-energy terms, head losses, static lift, and pump head must share one datum and sign convention before an operating point is meaningful.
 
-22. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+22. **A.** Convection requires both a flow model and a heat-transfer correlation. Reynolds/Prandtl behavior, geometry, boundary condition, and development length determine which Nusselt relation can be used to obtain \(h\).
 
-23. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+23. **A.** Thermal-resistance networks convert conduction and convection paths into a common heat-rate model. Series/parallel construction must follow the real heat-flow path, including area changes and radiation when it is significant.
 
-24. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+24. **A.** Cycle performance is determined by component states and energy transfers. Turbine, compressor, pump, condenser, boiler, or refrigeration relations must use the correct input/output enthalpies and efficiency definitions for that component.
 
-25. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+25. **A.** HVAC/combustion synthesis keeps dry-air, water-vapor, fuel, oxidizer, and product bases explicit. Moist-air and combustion balances must close mass and energy simultaneously before equipment performance can be evaluated.
 
-26. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+26. **A.** In a thermal-fluid control-volume problem, write the complete balance before deleting terms. Only then justify steady state, adiabatic behavior, negligible kinetic/potential energy, or zero shaft work from the device description.
 
-27. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+27. **A.** Flow-regime selection is upstream of friction and convection correlations. Evaluate properties on the specified basis, calculate the relevant dimensionless groups, and only then choose the correlation whose geometry and regime match.
 
 
 ---
@@ -400,25 +408,25 @@ D) It is unrelated to Handbook navigation
 
 ## Practice Problem Solutions
 
-1. Use §92.1. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+1. Apply the §92.1 model independently. A control-volume thermal problem begins with mass and energy balances and the correct steady/transient terms. Kinetic, potential, shaft-work, and heat-transfer terms are kept or neglected only after the device model justifies it. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-2. Use §92.2. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+2. Apply the §92.2 model independently. Reynolds number links velocity, length, density, and viscosity to regime selection. Because correlations and friction factors depend on regime, property evaluation and characteristic length must be established before using downstream formulas. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-3. Use §92.3. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+3. Apply the §92.3 model independently. Pipe-system flow is set by the simultaneous pump and system behavior. Bernoulli/mechanical-energy terms, head losses, static lift, and pump head must share one datum and sign convention before an operating point is meaningful. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-4. Use §92.4. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+4. Apply the §92.4 model independently. Convection requires both a flow model and a heat-transfer correlation. Reynolds/Prandtl behavior, geometry, boundary condition, and development length determine which Nusselt relation can be used to obtain \(h\). Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-5. Use §92.5. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+5. Apply the §92.5 model independently. Thermal-resistance networks convert conduction and convection paths into a common heat-rate model. Series/parallel construction must follow the real heat-flow path, including area changes and radiation when it is significant. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-6. Use §92.6. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+6. Apply the §92.6 model independently. Cycle performance is determined by component states and energy transfers. Turbine, compressor, pump, condenser, boiler, or refrigeration relations must use the correct input/output enthalpies and efficiency definitions for that component. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-7. Use §92.7. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+7. Apply the §92.7 model independently. HVAC/combustion synthesis keeps dry-air, water-vapor, fuel, oxidizer, and product bases explicit. Moist-air and combustion balances must close mass and energy simultaneously before equipment performance can be evaluated. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-8. Example structure: electrical input power → motor efficiency → shaft power → pump/fluid model → operating cost. Every arrow must carry a defined quantity and units.
+8. A typical chain is thermodynamic state/control volume → mass/energy rate → pipe or fan/pump operating point → heat-transfer coefficient/load → HVAC or combustion equipment result. Carry each \( \dot m, h, Q, \dot Q,\) or \(W\) value on one declared basis.
 
-9. The FE Other Disciplines specification is printed on pp. 498–500. The route has no dedicated discipline chapter in Handbook 10.6, so examinees use the relevant general sections instead.
+9. The Other Disciplines scope is on printed pp. 498–500 of the specification, while the equations come from the Handbook's general thermodynamics, fluid mechanics, heat-transfer, and related sections rather than a dedicated Other Disciplines chapter.
 
-10. Reject answers with impossible units, efficiencies above 100% where not physically meaningful, negative absolute quantities, violated support/device states, broken conservation, or unsafe/unethical implementation assumptions.
+10. Reject a result that violates a physical state or conservation bound—for example negative absolute temperature, efficiency above unity for a heat engine, or an outlet mass/energy balance that does not close.
 
 ---
 

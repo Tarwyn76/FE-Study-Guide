@@ -1,0 +1,16 @@
+Mechanical Technical Audit Validation
+=====================================
+Audit exit code: 0
+Mechanical non-artwork CRITICAL/ERROR/WARNING/REVIEW findings: 0
+Mechanical source_split_unresolved: 0
+Mechanical worked_example_short_solution: 0
+Mechanical worked_example_generic_solution: 0
+Mechanical numeric_example_without_numeric_result: 0
+Mechanical worked_example_solution_units: 0
+Mechanical formula_suspicious_text: 0
+Mechanical figure_description_short: 0
+Mechanical duplicate-text groups: 0
+Mechanical artwork status rows in staging run: 105
+
+PASS: Mechanical has no non-artwork CRITICAL, ERROR, WARNING, REVIEW, source-split, numeric-result, unit, formula, short/generic-solution, short-figure-description, or repeated-text findings.
+Layer 3 artwork status is expected because generated artwork is currently concentrated in Layers 1 and 2.

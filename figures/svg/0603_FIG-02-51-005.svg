@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1008pt" height="720pt" viewBox="0 0 1008 720" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-08T19:28:18.163217</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 720 
+L 1008 720 
+L 1008 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 55.44 344.232 
+L 450.1728 344.232 
+L 450.1728 205.128 
+L 55.44 205.128 
+z
+" clip-path="url(#p059994050a)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 557.8272 344.232 
+L 952.56 344.232 
+L 952.56 205.128 
+L 557.8272 205.128 
+z
+" clip-path="url(#p059994050a)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="252.8064" y="280.474687" transform="rotate(-0 252.8064 280.474687)">COMPRESSOR</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #b47722" x="279.72" y="433.404562" transform="rotate(-0 279.72 433.404562)">w_in</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="755.1936" y="280.474687" transform="rotate(-0 755.1936 280.474687)">LIQUID PUMP</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #b47722" x="782.1072" y="433.404562" transform="rotate(-0 782.1072 433.404562)">w_in</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 27px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="147.618844" transform="rotate(-0 504 147.618844)">η_c or η_p=(h₂s−h₁)/(h₂−h₁)</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="252.8064" y="563.650688" transform="rotate(-0 252.8064 563.650688)">Compressor: 40/50=0.80</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="755.1936" y="563.347172" transform="rotate(-0 755.1936 563.347172)">Pump: w_s≈v₁(P₂−P₁)</text>
+   </g>
+   <g id="patch_4">
+    <path d="M 252.8064 476.366276 
+Q 252.8064 411.297161 252.8064 348.128705 
+" clip-path="url(#p059994050a)" style="fill: none; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 249.8064 354.128705 
+L 252.8064 348.128705 
+L 255.8064 354.128705 
+z
+" clip-path="url(#p059994050a)" style="fill: #b47722; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 755.1936 476.366276 
+Q 755.1936 411.297161 755.1936 348.128705 
+" clip-path="url(#p059994050a)" style="fill: none; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 752.1936 354.128705 
+L 755.1936 348.128705 
+L 758.1936 354.128705 
+z
+" clip-path="url(#p059994050a)" style="fill: #b47722; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+  </g>
+  <g id="text_8">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Compressor and pump efficiencies divide ideal input work by actual input work</text>
+  </g>
+  <g id="text_9">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="55.44" y="700.56" transform="rotate(-0 55.44 700.56)">0603  •  FIG-02-51-005</text>
+  </g>
+  <g id="text_10">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(123.330469 656.501562)">Steady adiabatic devices with negligible KE/PE changes; 2s is at the same exit pressure as 2 and s₂s=s₁. Incompressible pump ideal work uses absolute</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(180.1375 669.219062)">pressure difference and liquid specific volume. Work input is a positive magnitude here; work-out convention gives negative w_s.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p059994050a">
+   <rect x="55.44" y="100.8" width="897.12" height="496.8"/>
+  </clipPath>
+ </defs>
+</svg>

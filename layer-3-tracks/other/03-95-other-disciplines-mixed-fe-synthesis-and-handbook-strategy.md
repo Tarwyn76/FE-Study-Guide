@@ -65,7 +65,8 @@ The first skill in a mixed Other Disciplines question is recognizing the dominan
 
 **Problem.** A problem asking for pump shaft power from flow and head points first to fluid mechanics, then to power/efficiency.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §95.1.
+**Solution.** Classify the requested quantity first. Flow and head belong to the fluid model, where hydraulic power is \(P_h=
+ho gQH\); shaft power then follows from pump efficiency. This sequence prevents mixing electrical or economic data into the hydraulic step prematurely.
 
 ---
 
@@ -81,7 +82,7 @@ Efficient Handbook use requires searching for the engineering concept rather tha
 
 **Problem.** Searching 'Manning' is more efficient than searching every given channel dimension.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §95.2.
+**Solution.** Search by the distinctive governing concept rather than by every number in the prompt. The term 'Manning' points directly to open-channel resistance relations, after which you verify that the listed variables and assumptions match the problem.
 
 ---
 
@@ -97,7 +98,7 @@ The Other Disciplines exam uses both SI and U.S. customary units. Convert delibe
 
 **Problem.** A pressure in psi cannot be inserted into an SI formula expecting pascals unless the formula's constants explicitly support USCS.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §95.3.
+**Solution.** Dimensional consistency requires one coherent unit system for a given equation unless a documented conversion constant is built into it. Convert psi to pascals before using a pure-SI relation, then verify both sides reduce to the same physical dimensions.
 
 ---
 
@@ -105,7 +106,7 @@ The Other Disciplines exam uses both SI and U.S. customary units. Convert delibe
 
 Fast estimation catches many FE errors. Ask what happens at zero input, infinite resistance/stiffness, no friction, no heat loss, matched load, or very low/high speed.
 
-\[\text{computed result}\approx\text{expected scale and limiting behavior}\]
+\[\rho_x=\frac{x_{calc}}{x_{est}},\qquad \lim_{u\to u_0}x(u)=x_0\]
 
 ![FIG-03-95-004: Checklist of dimensional, sign, magnitude, limiting-case, and conservation checks across disciplines.](../figures/FIG-03-95-004-estimation-order-of-magnitude-and-limiting-case-checks.png)
 
@@ -113,7 +114,7 @@ Fast estimation catches many FE errors. Ask what happens at zero input, infinite
 
 **Problem.** A pump efficiency above 100% immediately signals a wrong basis or arithmetic error.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §95.4.
+**Solution.** Efficiency is an output-to-input ratio for the stated energy basis, so a passive pump or motor efficiency above 1.00 is impossible. A value over 100% is therefore a diagnostic flag for a reversed ratio, mixed units, or mismatched input/output definitions.
 
 ---
 
@@ -121,7 +122,7 @@ Fast estimation catches many FE errors. Ask what happens at zero input, infinite
 
 Mixed problems often require solving one discipline to generate the input for another—for example electrical power to mechanical shaft power, pump power to economics, or thermal load to HVAC energy use.
 
-\[\text{Stage 1 result}\rightarrow\text{Stage 2 governing model}\]
+\[y=f(x),\qquad z=g(y)\quad\Rightarrow\quad z=g\!\left(f(x)\right)\]
 
 ![FIG-03-95-005: Cross-domain chain electrical input → motor → shaft power → pump → fluid head → economic energy cost.](../figures/FIG-03-95-005-two-stage-and-cross-domain-problem-decomposition.png)
 
@@ -129,7 +130,7 @@ Mixed problems often require solving one discipline to generate the input for an
 
 **Problem.** Motor electrical input can be converted through motor efficiency to shaft power, then used in a pump calculation.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §95.5.
+**Solution.** Decompose the chain: electrical input \(P_e\) gives shaft power \(P_s=\eta_mP_e\); the pump then converts shaft power to hydraulic power \(P_h=\eta_pP_s\). Keep each efficiency tied to its own device so the intermediate power is not double-counted.
 
 ---
 
@@ -145,7 +146,7 @@ A difficult question should not consume time needed for several routine question
 
 **Problem.** A problem requiring lengthy algebra but only one point may be deferred while shorter direct-Handbook questions are completed.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §95.6.
+**Solution.** Time management is an optimization under a fixed exam clock. A long algebraic item can be marked and deferred when several shorter, high-confidence items can be completed first; return after securing the easier points and preserving enough time for review.
 
 ---
 
@@ -161,7 +162,7 @@ The integration track does not create new copies of mechanics, chemistry, fluids
 
 **Problem.** For a process skid, identify fluid head loss, pump power, motor electrical demand, control/safety requirements, and lifecycle economics as linked but distinct subproblems.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §95.7.
+**Solution.** For a process skid, solve the linked subproblems in dependency order: hydraulic losses determine pump duty, pump duty and efficiencies determine motor demand, controls/safeguards address operating hazards, and the resulting energy/maintenance requirements feed lifecycle economics.
 
 ---
 
@@ -171,13 +172,13 @@ The integration track does not create new copies of mechanics, chemistry, fluids
 
 **Problem.** A mixed question contains electrical, mechanical, and economic information. Must every datum be used?
 
-**Solution.** No. First identify the requested quantity and governing model. Use only the data needed for the current stage, then carry the resulting intermediate quantity—clearly labeled with units—into the next stage if required.
+**Solution.** No. Mixed FE questions often include context that is not computational input. Identify the final requested quantity, draw the dependency chain, and use each datum only at the stage where it enters a governing equation or decision criterion.
 
 ### Worked Example 9
 
 **Problem.** You find a familiar equation in memory but a different-looking form in the FE Reference Handbook. What should you do?
 
-**Solution.** Use the Handbook form after checking its definitions and assumptions. Do not force a remembered formula onto a problem merely because it resembles the topic.
+**Solution.** Treat the Handbook equation as authoritative for the exam once you have confirmed the variables and assumptions. If memory gives another form, algebraically reconcile it or abandon it; do not mix constants or unit conventions from two formulations.
 
 ---
 
@@ -185,7 +186,12 @@ The integration track does not create new copies of mechanics, chemistry, fluids
 
 **Primary source basis:** FE Other Disciplines CBT specification, printed pp. 498–500. Unlike the six discipline-specific FE routes, Other Disciplines has no dedicated discipline section in Handbook 10.6; it relies on the general Handbook sections across the book.
 
-**Source boundary:** The integration workflow, classification strategy, and cross-domain transfer methods are guide-developed. Underlying equations remain owned and sourced by their canonical earlier chapters.
+**Source boundary:** **FE-Handbook-supported** material consists of the underlying equations, tables, definitions, and discipline models located in the FE Reference Handbook and recorded in the ledger. **Externally supported** material covers Other Disciplines specification knowledge, application context, standards, and integration details that are not fully developed in the Handbook. **Guide synthesis** is the cross-domain classification, transfer, verification, and exam-strategy workflow created for this supplemental guide; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Thompson, A., & Taylor, B. N. (2008). *Guide for the Use of the International System of Units (SI)* (NIST Special Publication 811, 2008 ed.). National Institute of Standards and Technology. DOI 10.6028/NIST.SP.811e2008. Supporting scope: SI base/derived units, prefixes, symbols, conversions, coherent use of units, and dimensional/unit-expression practice.
+
+Because Other Disciplines intentionally integrates material owned by earlier chapters, external references support the learned/application and cross-domain portions only. The FE Reference Handbook remains the exam reference, and the ledger retains the canonical Handbook locations for the underlying equations.
 
 ---
 
@@ -344,31 +350,31 @@ D) It is unrelated to Handbook navigation
 
 14. For **Other Disciplines capstone workflow**, check the controlling domain, system boundary, units, model assumptions, and the prerequisite concept being reused.
 
-15. Classification narrows the search space and prevents using a familiar equation from the wrong discipline or physical model.
+15. Rapid classification converts a mixed narrative into a small set of candidate disciplines and equations. Keywords, units, and the requested output tell you where to search first, which prevents wasting exam time scanning unrelated Handbook sections.
 
-16. The canonical concept already exists in an earlier layer/track; the integration atom teaches when and how to reuse it in a mixed problem.
+16. Synthesis should reuse prior canonical models in sequence rather than create new parallel versions. The important skill is passing a correctly defined intermediate quantity from one discipline to the next while preserving units and assumptions.
 
-17. Compare variable definitions, units, boundary conditions, and operating assumptions. Use the relation that matches the actual problem and Handbook context.
+17. Read every symbol definition and note the unit convention attached to the candidate equations. If the two forms use different reference quantities or embedded constants, convert or re-derive one form instead of combining pieces from both.
 
-18. These checks catch wrong-domain solutions, hidden conversion errors, impossible signs or efficiencies, and decisions that violate physical, safety, or professional constraints.
+18. Dimensional, sign, order-of-magnitude, limiting-case, conservation, and feasibility checks are fast error filters. They often identify a bad answer sooner than reworking the entire derivation and are especially valuable when the problem crosses disciplines.
 
-19. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+19. **A.** Classification should identify the requested quantity, units, dominant physics, and likely Handbook location before computation. The first model chosen should directly govern the quantity being solved, not merely match a keyword.
 
-20. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+20. **A.** Search with the governing concept or distinctive relation, then verify every variable and assumption on the candidate Handbook page. Efficient navigation is targeted retrieval followed by technical triage, not keyword matching alone.
 
-21. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+21. **A.** Unit-system control requires dimensional consistency across every stage. Convert inputs before substitution unless the equation explicitly includes a conversion constant, and verify the final units independently.
 
-22. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+22. **A.** A reasonableness check compares the solution with an estimate, sign expectation, conservation law, physical bound, and limiting behavior. Large disagreement is evidence to revisit the setup before spending time polishing arithmetic.
 
-23. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+23. **A.** Cross-domain decomposition turns one complicated prompt into a dependency graph. Solve the upstream model first, label the intermediate output with units, and pass only that quantity into the downstream governing model.
 
-24. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+24. **A.** Time management favors high-confidence points first while preserving a return path to longer items. Mark/defer is a deliberate scheduling decision, not abandonment; leave enough information to resume quickly.
 
-25. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+25. **A.** The capstone workflow is classify → select model → locate/verify Handbook relation → solve → cross-check → decide. Mixed-domain success depends on preserving assumptions and units at every handoff.
 
-26. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+26. **A.** FE mixed-problem classification can be done from three clues: requested output, units, and the physical noun/verb pair in the prompt. That triage usually identifies the correct discipline before any equation search.
 
-27. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+27. **A.** Handbook navigation is complete only after equation triage: confirm symbols, units, geometry/regime, and assumptions. A search hit that merely contains the right keyword is not yet a valid equation choice.
 
 
 ---
@@ -400,25 +406,25 @@ D) It is unrelated to Handbook navigation
 
 ## Practice Problem Solutions
 
-1. Use §95.1. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+1. Apply the §95.1 model independently. Classification should identify the requested quantity, units, dominant physics, and likely Handbook location before computation. The first model chosen should directly govern the quantity being solved, not merely match a keyword. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-2. Use §95.2. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+2. Apply the §95.2 model independently. Search with the governing concept or distinctive relation, then verify every variable and assumption on the candidate Handbook page. Efficient navigation is targeted retrieval followed by technical triage, not keyword matching alone. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-3. Use §95.3. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+3. Apply the §95.3 model independently. Unit-system control requires dimensional consistency across every stage. Convert inputs before substitution unless the equation explicitly includes a conversion constant, and verify the final units independently. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-4. Use §95.4. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+4. Apply the §95.4 model independently. A reasonableness check compares the solution with an estimate, sign expectation, conservation law, physical bound, and limiting behavior. Large disagreement is evidence to revisit the setup before spending time polishing arithmetic. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-5. Use §95.5. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+5. Apply the §95.5 model independently. Cross-domain decomposition turns one complicated prompt into a dependency graph. Solve the upstream model first, label the intermediate output with units, and pass only that quantity into the downstream governing model. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-6. Use §95.6. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+6. Apply the §95.6 model independently. Time management favors high-confidence points first while preserving a return path to longer items. Mark/defer is a deliberate scheduling decision, not abandonment; leave enough information to resume quickly. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-7. Use §95.7. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+7. Apply the §95.7 model independently. The capstone workflow is classify → select model → locate/verify Handbook relation → solve → cross-check → decide. Mixed-domain success depends on preserving assumptions and units at every handoff. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-8. Example structure: electrical input power → motor efficiency → shaft power → pump/fluid model → operating cost. Every arrow must carry a defined quantity and units.
+8. Draw a dependency graph from the requested output backward. Example: annual energy cost ← electrical input ← motor shaft power ← pump hydraulic power ← \(Q,H\). Solve from the earliest known stage forward and label every intermediate value.
 
-9. The FE Other Disciplines specification is printed on pp. 498–500. The route has no dedicated discipline chapter in Handbook 10.6, so examinees use the relevant general sections instead.
+9. The FE Other Disciplines specification is printed pp. 498–500. The route deliberately reuses equations from the Handbook's general subject sections, so no standalone Other Disciplines formula chapter is expected.
 
-10. Reject answers with impossible units, efficiencies above 100% where not physically meaningful, negative absolute quantities, violated support/device states, broken conservation, or unsafe/unethical implementation assumptions.
+10. Reject any result that fails a fast invariant: incompatible dimensions, impossible sign, efficiency outside its physical range, order of magnitude far from an estimate, or a limiting case that moves in the wrong direction.
 
 ---
 

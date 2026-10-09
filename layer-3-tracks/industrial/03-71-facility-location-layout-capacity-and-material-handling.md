@@ -65,7 +65,7 @@ From-to analysis combines movement frequency/volume and distance to compare layo
 
 **Problem.** Bringing a high-flow department pair closer can reduce total handling distance.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** Load-distance is \(LD=\sum F_{ij}D_{ij}\). Because each pair's contribution is flow times distance, reducing distance for a high-flow pair typically produces a larger LD reduction than moving a rarely interacting pair the same distance.
 
 ---
 
@@ -81,7 +81,7 @@ Distance metric must match physical movement constraints.
 
 **Problem.** (0,0) to (3,4) is 5 Euclidean and 7 rectilinear.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** From \((0,0)\) to \((3,4)\), Euclidean distance is \(\sqrt{3^2+4^2}=\mathbf{5}\) distance units; rectilinear distance is \(|3|+|4|=\mathbf{7}\). Choose the metric that matches permitted travel paths.
 
 ---
 
@@ -97,7 +97,7 @@ Layout types serve different volume-variety and movement patterns.
 
 **Problem.** High-volume repetitive assembly often favors product layout.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** A product layout aligns resources with a repetitive flow and is favored by high volume/low variety. Process layouts group similar functions and provide more routing flexibility for high-variety work; cellular layouts seek family flow, while fixed-position layouts keep the product stationary.
 
 ---
 
@@ -113,7 +113,7 @@ Facility location balances fixed opening cost and customer supply cost.
 
 **Problem.** Opening another site can reduce shipping cost while increasing fixed cost.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** A facility-location model trades opening cost against assignment/transport cost. Opening an additional facility can reduce \(c_{ij}y_{ij}\) by shortening routes while adding a fixed \(f_j\); the economically preferred network minimizes the combined cost while meeting demand/capacity constraints.
 
 ---
 
@@ -129,7 +129,7 @@ Machine requirements are workload divided by available productive time.
 
 **Problem.** 1000 pieces/day at 0.1 hr each with 20 available hr/day requires 5 machines.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** Machine requirement is workload divided by usable machine capacity: \(1000(0.1\ {\rm hr})/(20\ {\rm hr/day})=100/20=\mathbf{5\ machines}\). Round upward when a fractional machine cannot satisfy the required workload.
 
 ---
 
@@ -145,7 +145,7 @@ Crew sizing follows required labor content divided by available labor time with 
 
 **Problem.** 4800 labor-min/day with 400 usable min/person requires 12 people.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** Required labor is \(4800\ {\rm min/day}/(400\ {\rm min/person\cdot day})=\mathbf{12\ people}\). The usable-time denominator should already reflect the allowance/utilization assumptions intended by the problem.
 
 ---
 
@@ -161,7 +161,7 @@ Conveyors, forklifts, AGVs, cranes, and manual handling suit different movement 
 
 **Problem.** A fixed conveyor suits stable repetitive flow better than frequently changing routes.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** A fixed conveyor fits high-frequency, stable, repeatable paths because it offers high flow with limited routing flexibility. Forklifts, carts, AGVs/AMRs, cranes, or other systems may be better when load form, path variability, volume, interface, safety, or expansion needs differ.
 
 ---
 
@@ -171,13 +171,13 @@ Conveyors, forklifts, AGVs, cranes, and manual handling suit different movement 
 
 **Problem.** A numerical optimum violates an operating rule omitted from the model. Is it implementable?
 
-**Solution.** No. Add the missing operational restriction and re-solve. Mathematical feasibility applies only to the stated model.
+**Solution.** In **Facility Location, Layout, Capacity, and Material Handling**, do not accept a local optimum or locally improved metric until it is checked against the chapter's system boundary and feasibility conditions. Industrial-and-systems problems commonly fail when a local improvement shifts delay, cost, risk, inventory, workload, defects, or constraints elsewhere in the system.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the FE Reference Handbook expression. Which should govern?
 
-**Solution.** Use the Handbook expression and definitions unless the problem explicitly provides another model.
+**Solution.** For this chapter, the FE Reference Handbook relation and variable definitions control whenever the Handbook supplies them. Use the external source set **TOMPKINS** only for specification-required learned material not fully developed in the Handbook.
 
 ---
 
@@ -185,7 +185,12 @@ Conveyors, forklifts, AGVs, cranes, and manual handling suit different movement 
 
 Primary source basis: **FE Industrial & Systems specification Area(s) 9; FE Reference Handbook 10.6 Industrial and Systems Engineering, printed pp. 422–435.**
 
-Specification-required management/design topics that are not directly tabulated are identified as learned or guide-developed rather than assigned false Handbook pages.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required industrial/systems engineering knowledge not fully developed in the Handbook. **Guide synthesis** connects those sources into exam-oriented explanations, worked examples, and decision checks; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Tompkins, J. A., White, J. A., Bozer, Y. A., & Tanchoco, J. M. A. (2010/2014 electronic issue). *Facilities Planning* (4th ed.). Wiley. ISBN 978-0-470-44404-7. Supporting scope: Facility location/layout, flow, capacity, material handling, and quantitative facilities-planning methods.
+
+External references support the learned/application portion of the Industrial and Systems specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +359,31 @@ D) It is always only qualitative
 
 14. For **material handling system selection**, verify data basis, units, capacity/probability conditions, and operational feasibility.
 
-15. The boundary and objective determine what counts as performance and which constraints matter.
+15. In **Facility Location, Layout, Capacity, and Material Handling**, the model boundary determines what is included in the decision. A valid solution must use the correct distance metric, maintain facility/machine/labor capacity feasibility, round indivisible resources upward when needed, and match handling equipment to the actual load/path/frequency/safety environment.
 
-16. Optimization and statistics answer questions inside a model; implementation, causality, and stakeholder objectives still require engineering judgment.
+16. Units and operational definitions are part of the model, not formatting details. For **Facility Location, Layout, Capacity, and Material Handling**, convert quantities to a common basis before combining them and state the denominator/capacity/time basis explicitly.
 
-17. The FE Handbook is the supplied reference and its definitions should govern unless the problem explicitly supplies another model.
+17. The FE Reference Handbook is the exam reference when it supplies the relation for **Facility Location, Layout, Capacity, and Material Handling**. The external sources TOMPKINS support learned specification content not fully developed in the Handbook.
 
-18. Check feasibility, units, scale, probability bounds, and upstream/downstream effects.
+18. A quick limiting check for **Facility Location, Layout, Capacity, and Material Handling** is to co-locate two departments and confirm their pairwise distance contribution to load-distance becomes zero. Failure to reduce correctly indicates a model, sign, boundary, or arithmetic problem.
 
-19. **A.** The method depends on assumptions, units, data basis, and decision context.
+19. **A.** Section §71.1, **From-To Charts and Load-Distance**, is based on \(LD=\\sum_{i,j}F_{ij}D_{ij}\\). Interpret the result within the specific assumptions and system boundary of §71.1; do not transfer it automatically to a different operating regime.
 
-20. **A.** The method depends on assumptions, units, data basis, and decision context.
+20. **A.** Section §71.2, **Euclidean, Rectilinear, and Chebyshev Distance**, is based on \(D_E=\\sqrt{(\\Delta x)^2+(\\Delta y)^2},\\quad D_R=|\\Delta x|+|\\Delta y|\\). Interpret the result within the specific assumptions and system boundary of §71.2; do not transfer it automatically to a different operating regime.
 
-21. **A.** The method depends on assumptions, units, data basis, and decision context.
+21. **A.** Section §71.3, **Product, Process, Cellular, and Fixed-Position Layouts**, is based on \(\\text{layout}=f(\\text{volume, variety, flow, flexibility})\\). Interpret the result within the specific assumptions and system boundary of §71.3; do not transfer it automatically to a different operating regime.
 
-22. **A.** The method depends on assumptions, units, data basis, and decision context.
+22. **A.** Section §71.4, **Plant Location Models**, is based on \(\\min\\sum_jf_jx_j+\\sum_i\\sum_jc_{ij}y_{ij}\\). Interpret the result within the specific assumptions and system boundary of §71.4; do not transfer it automatically to a different operating regime.
 
-23. **A.** The method depends on assumptions, units, data basis, and decision context.
+23. **A.** Section §71.5, **Machine Requirements and Capacity**, is based on \(M_j=\\sum_i\\frac{P_{ij}T_{ij}}{C_{ij}}\\). Interpret the result within the specific assumptions and system boundary of §71.5; do not transfer it automatically to a different operating regime.
 
-24. **A.** The method depends on assumptions, units, data basis, and decision context.
+24. **A.** Section §71.6, **Labor and Crew Requirements**, is based on \(A_j=\\sum_i\\frac{P_{ij}T_{ij}}{C_{ij}}\\). Interpret the result within the specific assumptions and system boundary of §71.6; do not transfer it automatically to a different operating regime.
 
-25. **A.** The method depends on assumptions, units, data basis, and decision context.
+25. **A.** Section §71.7, **Material-Handling System Selection**, is based on \(\\text{choice}=f(\\text{load, distance, frequency, path, flexibility, safety})\\). Interpret the result within the specific assumptions and system boundary of §71.7; do not transfer it automatically to a different operating regime.
 
-26. **A.** The method depends on assumptions, units, data basis, and decision context.
+26. **A.** An integrated Facility Location, Layout, Capacity, and Material Handling decision must remain mathematically feasible and operationally implementable after resource, integer, timing, uncertainty, quality, safety, and system-boundary constraints are considered.
 
-27. **A.** The method depends on assumptions, units, data basis, and decision context.
+27. **A.** This chapter separates FE-Handbook-supported material from externally supported material and guide synthesis. The source-boundary section lists the external references used for Facility Location, Layout, Capacity, and Material Handling.
 
 
 ---
@@ -410,25 +415,25 @@ D) It is always only qualitative
 
 ## Practice Problem Solutions
 
-1. Use §71.1. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+1. **Independent solution for §71.1 — From-To Charts and Load-Distance.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: Load-distance is \(LD=\sum F_{ij}D_{ij}\). Because each pair's contribution is flow times distance, reducing distance for a high-flow pair typically produces a larger LD reduction than moving a rarely interacting pair the same distance.
 
-2. Use §71.2. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+2. **Independent solution for §71.2 — Euclidean, Rectilinear, and Chebyshev Distance.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: From \((0,0)\) to \((3,4)\), Euclidean distance is \(\sqrt{3^2+4^2}=\mathbf{5}\) distance units; rectilinear distance is \(|3|+|4|=\mathbf{7}\). Choose the metric that matches permitted travel paths.
 
-3. Use §71.3. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+3. **Independent solution for §71.3 — Product, Process, Cellular, and Fixed-Position Layouts.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: A product layout aligns resources with a repetitive flow and is favored by high volume/low variety. Process layouts group similar functions and provide more routing flexibility for high-variety work; cellular layouts seek family flow, while fixed-position layouts keep the product stationary.
 
-4. Use §71.4. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+4. **Independent solution for §71.4 — Plant Location Models.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: A facility-location model trades opening cost against assignment/transport cost. Opening an additional facility can reduce \(c_{ij}y_{ij}\) by shortening routes while adding a fixed \(f_j\); the economically preferred network minimizes the combined cost while meeting demand/capacity constraints.
 
-5. Use §71.5. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+5. **Independent solution for §71.5 — Machine Requirements and Capacity.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: Machine requirement is workload divided by usable machine capacity: \(1000(0.1\ {\rm hr})/(20\ {\rm hr/day})=100/20=\mathbf{5\ machines}\). Round upward when a fractional machine cannot satisfy the required workload.
 
-6. Use §71.6. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+6. **Independent solution for §71.6 — Labor and Crew Requirements.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: Required labor is \(4800\ {\rm min/day}/(400\ {\rm min/person\cdot day})=\mathbf{12\ people}\). The usable-time denominator should already reflect the allowance/utilization assumptions intended by the problem.
 
-7. Use §71.7. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+7. **Independent solution for §71.7 — Material-Handling System Selection.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: A fixed conveyor fits high-frequency, stable, repeatable paths because it offers high flow with limited routing flexibility. Forklifts, carts, AGVs/AMRs, cranes, or other systems may be better when load form, path variability, volume, interface, safety, or expansion needs differ.
 
-8. Check units, probability bounds, utilization/stability, integer or physical constraints, denominator definitions, and model assumptions.
+8. For an integrated **Facility Location, Layout, Capacity, and Material Handling** problem, reject any result that violates this chapter-specific screen: use the correct distance metric, maintain facility/machine/labor capacity feasibility, round indivisible resources upward when needed, and match handling equipment to the actual load/path/frequency/safety environment.
 
-9. Start with FE Industrial & Systems specification Area(s) 9, then use the corresponding Handbook subsection where one exists.
+9. For **Facility Location, Layout, Capacity, and Material Handling**, start with the FE Industrial and Systems specification area and Handbook location recorded in the ledger. For `split_required` material, use **TOMPKINS** for the learned portion rather than inventing a Handbook page.
 
-10. Compare the result against upstream/downstream throughput, quality, inventory, safety, staffing, cost, and service.
+10. Use this independent limiting case: co-locate two departments and confirm their pairwise distance contribution to load-distance becomes zero. The reduced case should behave as stated before the full model is trusted.
 
 ---
 

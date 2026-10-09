@@ -65,7 +65,7 @@ Limits and fits define acceptable size variation around a basic size. Upper/lowe
 
 **Problem.** A hole from 20.000 to 20.021 mm has 0.021-mm size tolerance.
 
-**Solution.** Apply the relation and model in §90.1; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** Size tolerance is the upper minus lower limit: \(20.021-20.000=\mathbf{0.021\ mm}\). The nominal/basic size is not itself the tolerance.
 
 ---
 
@@ -81,7 +81,7 @@ Clearance fits always permit assembly clearance; interference fits always requir
 
 **Problem.** A minimum hole larger than maximum shaft guarantees clearance.
 
-**Solution.** Apply the relation and model in §90.2; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** If the minimum permissible hole is larger than the maximum permissible shaft, every allowed assembly has positive clearance, so the fit is guaranteed **clearance**. Overlapping tolerance zones permit transition; a shaft zone wholly above the hole zone gives interference.
 
 ---
 
@@ -97,7 +97,7 @@ Hole-basis fits keep the basic hole reference fixed while shaft tolerance positi
 
 **Problem.** 34H7/s6 identifies a 34-mm basic size, H7 hole, and s6 shaft.
 
-**Solution.** Apply the relation and model in §90.3; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** In \(34H7/s6\), 34 mm is the basic size, H7 is the hole tolerance class, and s6 is the shaft class. In the ISO basic-hole system the H-hole lower deviation is at the basic size.
 
 ---
 
@@ -113,7 +113,7 @@ GD&T communicates geometric design intent separately from size tolerances. Datum
 
 **Problem.** A position tolerance referenced to A|B|C is interpreted relative to that datum reference frame.
 
-**Solution.** Apply the relation and model in §90.4; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** A position tolerance referenced to A|B|C is evaluated relative to the datum reference frame established in that precedence order. The tolerance value cannot be interpreted independently of datum simulators, modifiers, and the controlled feature.
 
 ---
 
@@ -129,7 +129,7 @@ Material-condition modifiers connect feature size to allowable geometric variati
 
 **Problem.** For a shaft, MMC is its largest permissible diameter.
 
-**Solution.** Apply the relation and model in §90.5; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** For an external cylindrical feature, MMC is the **largest** allowed shaft diameter. Its external virtual condition combines the MMC size boundary with the applicable geometric tolerance according to the stated material-condition modifier.
 
 ---
 
@@ -145,7 +145,7 @@ Assembly variation accumulates from part dimensions. Worst-case stack-up guarant
 
 **Problem.** Three independent ±0.10-mm worst-case contributors can create ±0.30-mm stack range.
 
-**Solution.** Apply the relation and model in §90.6; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** Worst-case stack-up adds absolute contributors: \(\pm0.10\pm0.10\pm0.10\ {\rm mm}\) gives a possible total of \(\mathbf{\pm0.30\ mm}\). Thus the maximum magnitude of the accumulated worst-case variation is **0.30 mm**. Statistical stack methods require an explicit statistical basis and are not the same as worst-case.
 
 ---
 
@@ -161,7 +161,7 @@ A mechanical drawing must communicate geometry, materials, tolerances, finishes,
 
 **Problem.** A dimensioned part can still be unreleasable if datums, material, finish, or inspection requirements are ambiguous.
 
-**Solution.** Apply the relation and model in §90.7; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** A part is not ready for release merely because nominal dimensions exist. Datums/GD&T, material and heat treatment, surface finish, fit/tolerance intent, inspection method, manufacturability, special processes, reliability/safety requirements, and configuration status must be unambiguous.
 
 ---
 
@@ -171,13 +171,13 @@ A mechanical drawing must communicate geometry, materials, tolerances, finishes,
 
 **Problem.** A calculation produces a stress or operating point that violates the model assumption used to obtain it. Is the result acceptable?
 
-**Solution.** No. Select the correct model or failure/operating region and solve again. Algebra does not override geometry, material behavior, or component-state validity.
+**Solution.** No. A dimension or tolerance solution is invalid if its fit/GD&T interpretation conflicts with the datum scheme, material condition, manufacturability, or inspection method. Product definition must be internally consistent.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the FE Reference Handbook expression. Which should govern the exam solution?
 
-**Solution.** Use the Handbook expression and its definitions unless the problem explicitly provides another model.
+**Solution.** For **Fits, Tolerances, GD&T, Manufacturability, Quality, and Reliability**, use the FE Reference Handbook expression, symbols, and unit convention whenever it supplies the required model. The external source set **SHIGLEY, Y145, ISO286** supports specification-required learned/application material that is not fully developed in the Handbook. If a remembered textbook formula conflicts with a supplied Handbook relation, the supplied Handbook relation governs unless the problem explicitly defines another model.
 
 ---
 
@@ -185,7 +185,14 @@ A mechanical drawing must communicate geometry, materials, tolerances, finishes,
 
 Primary source basis: **FE Mechanical specification Area(s) 14; FE Reference Handbook 10.6 Mechanical Engineering and supporting general sections, with the specific subsection/page identified in the ledger.**
 
-**Source boundary:** The Mechanical specification includes both directly tabulated Handbook equations and learned design concepts. This chapter does not assign invented Handbook pages to specification-required material that is not directly tabulated.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required mechanical-engineering knowledge that is not fully developed in the Handbook. **Guide synthesis** connects those sources into exam-oriented explanations, examples, model checks, and design context; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Nisbett, K. J., & Budynas, R. G. *Shigley's Mechanical Engineering Design* (2024 Release). McGraw Hill. ISBN 978-1-265-47269-6. Supporting scope: Failure theories, fatigue, springs, pressure-vessel screening, bearings, fasteners, shafts, keys, couplings, gears, and machine-element design.
+- ASME. (2018, reaffirmed 2024). *Dimensioning and Tolerancing* (ASME Y14.5-2018 (R2024)). Supporting scope: GD&T symbols, datums, feature control frames, material-condition modifiers, and product-definition tolerancing.
+- ISO. (2010). *Geometrical product specifications (GPS)—ISO code system for tolerances on linear sizes—Part 1: Basis of tolerances, deviations and fits* (ISO 286-1:2010; confirmed current in 2026). Supporting scope: Basic size, deviations, tolerance classes, fits, basic-hole and basic-shaft systems.
+
+The external references support only the learned/application portion of the FE Mechanical specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +361,31 @@ D) It is always qualitative
 
 14. For **mechanical design release check**, verify geometry, load direction, material model, units, operating regime, and whether the assumed failure or performance mode remains valid.
 
-15. The sketch exposes supports, force directions, geometry, constraints, energy/flow paths, and missing load cases before algebra obscures them.
+15. In **Fits, Tolerances, GD&T, Manufacturability, Quality, and Reliability**, start from the physical model and system/component state, not from an isolated formula. A valid solution must separate size tolerance from allowance, classify the fit from limit sizes, construct the correct datum/GD&T interpretation, evaluate MMC/LMC/RFS correctly, and close tolerance stacks against functional/manufacturing limits.
 
-16. Mechanical equations are model-dependent. The result must remain compatible with yielding/buckling/fatigue, flow regime, thermal state, contact, or kinematic constraints.
+16. Units and sign/reference conventions are part of the model in **Fits, Tolerances, GD&T, Manufacturability, Quality, and Reliability**. Convert all quantities to a consistent basis before substitution and state whether values are absolute/gauge, static/stagnation, nominal/local, input/output, or other relevant basis.
 
-17. The Handbook is the supplied exam reference; its definitions, correction factors, unit conventions, and tables should govern unless the problem explicitly supplies another relation.
+17. The FE Reference Handbook is the controlling exam reference when it supplies the relation for **Fits, Tolerances, GD&T, Manufacturability, Quality, and Reliability**. External sources **SHIGLEY, Y145, ISO286** support only the learned material not fully developed in the Handbook.
 
-18. These checks catch impossible motion, unit errors, invalid thin-wall or linear assumptions, unrealistic stresses, interference, and parts that cannot be manufactured or assembled.
+18. Use a limiting or reversal check before accepting the result: make shaft and hole tolerance zones identical at the same limits and confirm zero nominal clearance at coincident sizes; set every stack contributor to zero and confirm total stack variation is zero. A failure to reduce correctly indicates a geometry, regime, sign, unit, or model-selection error.
 
-19. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+19. **A.** Section §90.1, **Basic size, deviations, tolerance, and allowance**, uses \(\Delta D=D_{max}-D_{min}\). Apply it only under the geometry/material/operating assumptions stated in §90.1, then compare the result with the physical behavior described there.
 
-20. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+20. **A.** Section §90.2, **Clearance, transition, and interference fits**, uses \(\text{clearance}=D_{hole}-d_{shaft}\). Apply it only under the geometry/material/operating assumptions stated in §90.2, then compare the result with the physical behavior described there.
 
-21. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+21. **A.** Section §90.3, **Hole-basis system and IT grades**, uses \(\text{H hole has fundamental lower deviation at the basic size}\). Apply it only under the geometry/material/operating assumptions stated in §90.3, then compare the result with the physical behavior described there.
 
-22. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+22. **A.** Section §90.4, **GD&T datums and feature control frames**, uses \(\text{feature control frame}=\text{symbol+tolerance+modifiers+datum references}\). Apply it only under the geometry/material/operating assumptions stated in §90.4, then compare the result with the physical behavior described there.
 
-23. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+23. **A.** Section §90.5, **MMC, LMC, RFS, and virtual condition**, uses \(\text{external virtual condition}=\mathrm{MMC}+\text{geometric tolerance}\). Apply it only under the geometry/material/operating assumptions stated in §90.5, then compare the result with the physical behavior described there.
 
-24. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+24. **A.** Section §90.6, **Tolerance stack-up and manufacturability**, uses \(\Delta_{worst}\approx\sum |\Delta_i|\). Apply it only under the geometry/material/operating assumptions stated in §90.6, then compare the result with the physical behavior described there.
 
-25. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+25. **A.** Section §90.7, **Quality, reliability, drawing interpretation, and release checks**, uses \(\text{release requires function+strength+fit+manufacturability+inspection+reliability}\). Apply it only under the geometry/material/operating assumptions stated in §90.7, then compare the result with the physical behavior described there.
 
-26. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+26. **A.** An integrated **Fits, Tolerances, GD&T, Manufacturability, Quality, and Reliability** result is acceptable only after the governing physical model, geometry, operating/failure regime, units, and independent plausibility checks agree.
 
-27. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+27. **A.** Source ownership is explicit in this chapter: FE-Handbook-supported material remains tied to the ledger; externally supported material uses **SHIGLEY, Y145, ISO286**; guide synthesis is supplemental explanation and exam-oriented workflow.
 
 
 ---
@@ -410,25 +417,25 @@ D) It is always qualitative
 
 ## Practice Problem Solutions
 
-1. Use §90.1. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+1. **Independent check for §90.1 — Basic size, deviations, tolerance, and allowance.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. Size tolerance is the upper minus lower limit: \(20.021-20.000=\mathbf{0.021\ mm}\). The nominal/basic size is not itself the tolerance.
 
-2. Use §90.2. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+2. **Independent check for §90.2 — Clearance, transition, and interference fits.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. If the minimum permissible hole is larger than the maximum permissible shaft, every allowed assembly has positive clearance, so the fit is guaranteed **clearance**. Overlapping tolerance zones permit transition; a shaft zone wholly above the hole zone gives interference.
 
-3. Use §90.3. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+3. **Independent check for §90.3 — Hole-basis system and IT grades.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. In \(34H7/s6\), 34 mm is the basic size, H7 is the hole tolerance class, and s6 is the shaft class. In the ISO basic-hole system the H-hole lower deviation is at the basic size.
 
-4. Use §90.4. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+4. **Independent check for §90.4 — GD&T datums and feature control frames.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. A position tolerance referenced to A|B|C is evaluated relative to the datum reference frame established in that precedence order. The tolerance value cannot be interpreted independently of datum simulators, modifiers, and the controlled feature.
 
-5. Use §90.5. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+5. **Independent check for §90.5 — MMC, LMC, RFS, and virtual condition.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. For an external cylindrical feature, MMC is the **largest** allowed shaft diameter. Its external virtual condition combines the MMC size boundary with the applicable geometric tolerance according to the stated material-condition modifier.
 
-6. Use §90.6. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+6. **Independent check for §90.6 — Tolerance stack-up and manufacturability.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. Worst-case stack-up adds absolute contributors: \(\pm0.10\pm0.10\pm0.10\ {\rm mm}\) gives a possible total of \(\mathbf{\pm0.30\ mm}\). Statistical stack methods require an explicit statistical basis and are not the same as worst-case.
 
-7. Use §90.7. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+7. **Independent check for §90.7 — Quality, reliability, drawing interpretation, and release checks.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. A part is not ready for release merely because nominal dimensions exist. Datums/GD&T, material and heat treatment, surface finish, fit/tolerance intent, inspection method, manufacturability, special processes, reliability/safety requirements, and configuration status must be unambiguous.
 
-8. Check dimensions, load direction, support/interface assumptions, material regime, fatigue/static basis, operating speed/temperature/pressure, and any geometric validity limit such as thin-wall or small-deflection assumptions.
+8. For **Fits, Tolerances, GD&T, Manufacturability, Quality, and Reliability**, one required acceptance screen is: separate size tolerance from allowance, classify the fit from limit sizes, construct the correct datum/GD&T interpretation, evaluate MMC/LMC/RFS correctly, and close tolerance stacks against functional/manufacturing limits. A result that violates this screen must be rejected or recomputed with the proper model.
 
-9. Start with FE Mechanical specification Area(s) 14, then use the Handbook subsection named in the corresponding ledger entry.
+9. Start with the FE Mechanical specification area and FE Reference Handbook location recorded in the ledger for **Fits, Tolerances, GD&T, Manufacturability, Quality, and Reliability**. For `split_required` concepts, use **SHIGLEY, Y145, ISO286** for the learned/application portion without inventing a Handbook page or clause.
 
-10. Test a simple limit such as zero load, very large stiffness, matched speed ratio, zero pressure, zero damping, or maximum/minimum fit. Confirm the result trends in the physically expected direction and remains manufacturable.
+10. Apply this limiting-case test independently: make shaft and hole tolerance zones identical at the same limits and confirm zero nominal clearance at coincident sizes; set every stack contributor to zero and confirm total stack variation is zero. If the simplified case does not behave as expected, revisit the setup before trusting the full calculation.
 
 ---
 

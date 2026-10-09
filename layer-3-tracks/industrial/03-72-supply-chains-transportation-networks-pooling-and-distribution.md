@@ -65,7 +65,7 @@ Supply chains coordinate material, information, and cash across echelons.
 
 **Problem.** A DC stockout can affect many customers even if upstream inventory exists.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** Inventory located upstream cannot instantly satisfy a downstream stockout. A distribution-center shortage can interrupt service to many customers until replenishment traverses the remaining lead time, so echelon position and response time matter in addition to total network inventory.
 
 ---
 
@@ -81,7 +81,7 @@ Transportation models allocate supply to demand at minimum shipping cost under b
 
 **Problem.** If one lane becomes more expensive, the optimal allocation may shift.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** The transportation LP minimizes \(\sum c_{ij}x_{ij}\) subject to source supply and destination demand constraints. If one lane's unit cost rises, the current basis may cease to be optimal and flow can shift to alternate lanes with available supply/demand capacity.
 
 ---
 
@@ -97,7 +97,7 @@ Network design chooses facility count, location, capacity, and assignments.
 
 **Problem.** Warehouse consolidation can lower inventory while increasing delivery distance.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** Consolidating warehouses can reduce safety-stock duplication through pooling but may lengthen delivery distances or response times. Network design therefore evaluates facility fixed cost, transportation, inventory, capacity, and service simultaneously.
 
 ---
 
@@ -113,7 +113,7 @@ Pooling independent demand reduces relative uncertainty compared with separate s
 
 **Problem.** Two independent σ=10 demands pool to σ≈14.1, not 20.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** For two independent demands with \(\sigma_1=\sigma_2=10\), pooled standard deviation is \(\sqrt{10^2+10^2}=\sqrt{200}=\mathbf{14.14}\), less than the separate sum 20. Correlation would change the pooling benefit.
 
 ---
 
@@ -129,7 +129,7 @@ Multilevel systems coordinate inventory across plants, central DCs, regional DCs
 
 **Problem.** A regional replenishment can be constrained by an upstream DC shortage.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** Inventory position is on-hand plus on-order minus backorders. A regional location may appear to need replenishment while the upstream distribution center is itself constrained, so multiechelon decisions must respect upstream availability and lead times.
 
 ---
 
@@ -145,7 +145,7 @@ Resilience balances normal efficiency against disruption tolerance and recovery.
 
 **Problem.** Dual sourcing can cost more normally but reduce single-supplier risk.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** Dual sourcing can increase normal procurement/coordination cost but reduce exposure to a single supplier's outage. Resilience analysis weighs disruption probability/impact, recovery time, substitutability, lead time, and service consequences rather than unit price alone.
 
 ---
 
@@ -161,7 +161,7 @@ Forecast updating, batching, promotions, allocation, and delay can amplify upstr
 
 **Problem.** Small retail-demand changes can cause larger distributor order swings.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** The bullwhip effect is amplification of order variability upstream relative to customer demand. Forecast updating, batching, rationing/gaming, promotions, and long lead times can contribute; sharing demand information and reducing delay/batching can dampen amplification.
 
 ---
 
@@ -171,13 +171,13 @@ Forecast updating, batching, promotions, allocation, and delay can amplify upstr
 
 **Problem.** A numerical optimum violates an operating rule omitted from the model. Is it implementable?
 
-**Solution.** No. Add the missing operational restriction and re-solve. Mathematical feasibility applies only to the stated model.
+**Solution.** In **Supply Chains, Transportation Networks, Pooling, and Distribution**, do not accept a local optimum or locally improved metric until it is checked against the chapter's system boundary and feasibility conditions. Industrial-and-systems problems commonly fail when a local improvement shifts delay, cost, risk, inventory, workload, defects, or constraints elsewhere in the system.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the FE Reference Handbook expression. Which should govern?
 
-**Solution.** Use the Handbook expression and definitions unless the problem explicitly provides another model.
+**Solution.** For this chapter, the FE Reference Handbook relation and variable definitions control whenever the Handbook supplies them. Use the external source set **CHOPRA8, HILLIER** only for specification-required learned material not fully developed in the Handbook.
 
 ---
 
@@ -185,7 +185,13 @@ Forecast updating, batching, promotions, allocation, and delay can amplify upstr
 
 Primary source basis: **FE Industrial & Systems specification Area(s) 9; FE Reference Handbook 10.6 Industrial and Systems Engineering, printed pp. 422–435.**
 
-Specification-required management/design topics that are not directly tabulated are identified as learned or guide-developed rather than assigned false Handbook pages.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required industrial/systems engineering knowledge not fully developed in the Handbook. **Guide synthesis** connects those sources into exam-oriented explanations, worked examples, and decision checks; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Chopra, S. (2025). *Supply Chain Management: Strategy, Planning, and Operation* (8th ed.). Pearson. ISBN 978-0-13-535029-4. Supporting scope: Supply-chain network design, inventory, transportation, information, sourcing, pooling, resilience, and coordination.
+- Hillier, F. S., & Lieberman, G. J. (2021). *Introduction to Operations Research* (11th ed.). McGraw-Hill Education. ISBN 978-1-260-57587-3. Supporting scope: Linear programming, duality/sensitivity, transportation/network models, queueing, inventory, Markov models, and simulation.
+
+External references support the learned/application portion of the Industrial and Systems specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +360,31 @@ D) It is always only qualitative
 
 14. For **bullwhip effect**, verify data basis, units, capacity/probability conditions, and operational feasibility.
 
-15. The boundary and objective determine what counts as performance and which constraints matter.
+15. In **Supply Chains, Transportation Networks, Pooling, and Distribution**, the model boundary determines what is included in the decision. A valid solution must balance supply and demand, include facility/inventory/transport/service tradeoffs, model correlation when pooling demand, preserve echelon inventory logic, and distinguish resilience from lowest normal cost.
 
-16. Optimization and statistics answer questions inside a model; implementation, causality, and stakeholder objectives still require engineering judgment.
+16. Units and operational definitions are part of the model, not formatting details. For **Supply Chains, Transportation Networks, Pooling, and Distribution**, convert quantities to a common basis before combining them and state the denominator/capacity/time basis explicitly.
 
-17. The FE Handbook is the supplied reference and its definitions should govern unless the problem explicitly supplies another model.
+17. The FE Reference Handbook is the exam reference when it supplies the relation for **Supply Chains, Transportation Networks, Pooling, and Distribution**. The external sources CHOPRA8, HILLIER support learned specification content not fully developed in the Handbook.
 
-18. Check feasibility, units, scale, probability bounds, and upstream/downstream effects.
+18. A quick limiting check for **Supply Chains, Transportation Networks, Pooling, and Distribution** is to set independent demand variance of one pooled location to zero and confirm pooled variance reduces to the remaining variance; set one lane prohibitively costly and confirm an optimal model avoids it if alternatives are feasible. Failure to reduce correctly indicates a model, sign, boundary, or arithmetic problem.
 
-19. **A.** The method depends on assumptions, units, data basis, and decision context.
+19. **A.** Section §72.1, **Supply-Chain Structure and Flows**, is based on \(\\text{suppliers}\\rightarrow\\text{plants}\\rightarrow\\text{DCs}\\rightarrow\\text{customers}\\). Interpret the result within the specific assumptions and system boundary of §72.1; do not transfer it automatically to a different operating regime.
 
-20. **A.** The method depends on assumptions, units, data basis, and decision context.
+20. **A.** Section §72.2, **Transportation Allocation Models**, is based on \(\\min\\sum_i\\sum_j c_{ij}x_{ij}\\). Interpret the result within the specific assumptions and system boundary of §72.2; do not transfer it automatically to a different operating regime.
 
-21. **A.** The method depends on assumptions, units, data basis, and decision context.
+21. **A.** Section §72.3, **Supply-Chain Network Design**, is based on \(Total\\ cost=facility+transport+inventory+service\\ effects\\). Interpret the result within the specific assumptions and system boundary of §72.3; do not transfer it automatically to a different operating regime.
 
-22. **A.** The method depends on assumptions, units, data basis, and decision context.
+22. **A.** Section §72.4, **Risk Pooling and Inventory Aggregation**, is based on \(\\sigma_{pooled}=\\sqrt{\\sum_i\\sigma_i^2}\\quad\\text{for independent demand}\\). Interpret the result within the specific assumptions and system boundary of §72.4; do not transfer it automatically to a different operating regime.
 
-23. **A.** The method depends on assumptions, units, data basis, and decision context.
+23. **A.** Section §72.5, **Multiechelon Distribution**, is based on \(Inventory\\ position=on\\ hand+on\\ order-backorders\\). Interpret the result within the specific assumptions and system boundary of §72.5; do not transfer it automatically to a different operating regime.
 
-24. **A.** The method depends on assumptions, units, data basis, and decision context.
+24. **A.** Section §72.6, **Lead Time, Service, and Resilience**, is based on \(\\text{resilience}=\\text{ability to absorb disruption and recover service}\\). Interpret the result within the specific assumptions and system boundary of §72.6; do not transfer it automatically to a different operating regime.
 
-25. **A.** The method depends on assumptions, units, data basis, and decision context.
+25. **A.** Section §72.7, **Bullwhip Effect and Information Coordination**, is based on \(Var(orders\\ upstream)>Var(customer\\ demand)\\text{ can occur}\\). Interpret the result within the specific assumptions and system boundary of §72.7; do not transfer it automatically to a different operating regime.
 
-26. **A.** The method depends on assumptions, units, data basis, and decision context.
+26. **A.** An integrated Supply Chains, Transportation Networks, Pooling, and Distribution decision must remain mathematically feasible and operationally implementable after resource, integer, timing, uncertainty, quality, safety, and system-boundary constraints are considered.
 
-27. **A.** The method depends on assumptions, units, data basis, and decision context.
+27. **A.** This chapter separates FE-Handbook-supported material from externally supported material and guide synthesis. The source-boundary section lists the external references used for Supply Chains, Transportation Networks, Pooling, and Distribution.
 
 
 ---
@@ -410,25 +416,25 @@ D) It is always only qualitative
 
 ## Practice Problem Solutions
 
-1. Use §72.1. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+1. **Independent solution for §72.1 — Supply-Chain Structure and Flows.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: Inventory located upstream cannot instantly satisfy a downstream stockout. A distribution-center shortage can interrupt service to many customers until replenishment traverses the remaining lead time, so echelon position and response time matter in addition to total network inventory.
 
-2. Use §72.2. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+2. **Independent solution for §72.2 — Transportation Allocation Models.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: The transportation LP minimizes \(\sum c_{ij}x_{ij}\) subject to source supply and destination demand constraints. If one lane's unit cost rises, the current basis may cease to be optimal and flow can shift to alternate lanes with available supply/demand capacity.
 
-3. Use §72.3. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+3. **Independent solution for §72.3 — Supply-Chain Network Design.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: Consolidating warehouses can reduce safety-stock duplication through pooling but may lengthen delivery distances or response times. Network design therefore evaluates facility fixed cost, transportation, inventory, capacity, and service simultaneously.
 
-4. Use §72.4. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+4. **Independent solution for §72.4 — Risk Pooling and Inventory Aggregation.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: For two independent demands with \(\sigma_1=\sigma_2=10\), pooled standard deviation is \(\sqrt{10^2+10^2}=\sqrt{200}=\mathbf{14.14}\), less than the separate sum 20. Correlation would change the pooling benefit.
 
-5. Use §72.5. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+5. **Independent solution for §72.5 — Multiechelon Distribution.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: Inventory position is on-hand plus on-order minus backorders. A regional location may appear to need replenishment while the upstream distribution center is itself constrained, so multiechelon decisions must respect upstream availability and lead times.
 
-6. Use §72.6. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+6. **Independent solution for §72.6 — Lead Time, Service, and Resilience.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: Dual sourcing can increase normal procurement/coordination cost but reduce exposure to a single supplier's outage. Resilience analysis weighs disruption probability/impact, recovery time, substitutability, lead time, and service consequences rather than unit price alone.
 
-7. Use §72.7. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+7. **Independent solution for §72.7 — Bullwhip Effect and Information Coordination.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: The bullwhip effect is amplification of order variability upstream relative to customer demand. Forecast updating, batching, rationing/gaming, promotions, and long lead times can contribute; sharing demand information and reducing delay/batching can dampen amplification.
 
-8. Check units, probability bounds, utilization/stability, integer or physical constraints, denominator definitions, and model assumptions.
+8. For an integrated **Supply Chains, Transportation Networks, Pooling, and Distribution** problem, reject any result that violates this chapter-specific screen: balance supply and demand, include facility/inventory/transport/service tradeoffs, model correlation when pooling demand, preserve echelon inventory logic, and distinguish resilience from lowest normal cost.
 
-9. Start with FE Industrial & Systems specification Area(s) 9, then use the corresponding Handbook subsection where one exists.
+9. For **Supply Chains, Transportation Networks, Pooling, and Distribution**, start with the FE Industrial and Systems specification area and Handbook location recorded in the ledger. For `split_required` material, use **CHOPRA8, HILLIER** for the learned portion rather than inventing a Handbook page.
 
-10. Compare the result against upstream/downstream throughput, quality, inventory, safety, staffing, cost, and service.
+10. Use this independent limiting case: set independent demand variance of one pooled location to zero and confirm pooled variance reduces to the remaining variance; set one lane prohibitively costly and confirm an optimal model avoids it if alternatives are feasible. The reduced case should behave as stated before the full model is trusted.
 
 ---
 

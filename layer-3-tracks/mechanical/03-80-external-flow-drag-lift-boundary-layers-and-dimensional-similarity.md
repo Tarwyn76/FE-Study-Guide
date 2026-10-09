@@ -65,7 +65,7 @@ External-flow behavior depends strongly on Reynolds number and geometry. Transit
 
 **Problem.** For fixed fluid and length, doubling velocity doubles Reynolds number.
 
-**Solution.** Apply the relation and model in §80.1; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** \(\mathrm{Re}=\rho VL/\mu\). With fluid properties and characteristic length fixed, \(\mathrm{Re}\propto V\); doubling velocity therefore **doubles Reynolds number** and can move the flow toward a different regime.
 
 ---
 
@@ -81,7 +81,7 @@ No-slip creates velocity gradients near a solid surface. Wall shear and boundary
 
 **Problem.** A larger near-wall velocity gradient produces larger viscous wall shear in a Newtonian fluid.
 
-**Solution.** Apply the relation and model in §80.2; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** For a Newtonian fluid, \(\tau_w=\mu(\partial u/\partial y)_w\). A steeper near-wall velocity gradient at the same viscosity produces a larger magnitude of wall shear stress.
 
 ---
 
@@ -97,7 +97,7 @@ Adverse pressure gradients can separate a boundary layer, producing a wake and p
 
 **Problem.** A bluff cylinder has substantial pressure drag because of its separated wake.
 
-**Solution.** Apply the relation and model in §80.3; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** A bluff body promotes boundary-layer separation and creates a broad low-pressure wake. The resulting front-to-back pressure imbalance produces substantial **pressure (form) drag**, often dominating skin-friction drag.
 
 ---
 
@@ -113,7 +113,7 @@ Drag coefficient packages geometry and flow-regime effects into a dimensionless 
 
 **Problem.** Doubling velocity quadruples drag if CD remains unchanged.
 
-**Solution.** Apply the relation and model in §80.4; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** \(F_D=\tfrac12\rho V^2C_DA\). If \(\rho,C_D,A\) stay fixed, \(F_D\propto V^2\); doubling speed gives \(F_{D,2}/F_{D,1}=4\), so drag **quadruples**.
 
 ---
 
@@ -129,7 +129,7 @@ Lift arises from pressure and shear distributions with a component normal to the
 
 **Problem.** At constant CL, doubling speed quadruples ideal lift.
 
-**Solution.** Apply the relation and model in §80.5; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** \(F_L=\tfrac12\rho V^2C_LA\). Under the stated constant-\(C_L\) assumption, doubling speed also multiplies lift by \(2^2=\mathbf4\).
 
 ---
 
@@ -145,7 +145,7 @@ Model testing requires matching the dimensionless groups governing the physics, 
 
 **Problem.** A small wind-tunnel model at the same speed as a full-size vehicle does not necessarily match Reynolds number.
 
-**Solution.** Apply the relation and model in §80.6; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** Geometric similarity alone is not enough. For the same fluid, \(\mathrm{Re}=VL/\nu\), so a smaller model at the same speed has a proportionally smaller Reynolds number; matching the relevant dimensionless groups may require changing velocity, fluid, pressure, or scale.
 
 ---
 
@@ -161,7 +161,7 @@ Affinity/scaling laws estimate performance changes for geometrically similar rot
 
 **Problem.** At fixed diameter, doubling speed approximately doubles flow and quadruples head.
 
-**Solution.** Apply the relation and model in §80.7; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** At fixed diameter, the affinity laws give \(Q\propto N\), \(H\propto N^2\), and \(P\propto N^3\). Doubling speed therefore gives approximately **2× flow, 4× head, and 8× power** within the similarity range.
 
 ---
 
@@ -171,13 +171,13 @@ Affinity/scaling laws estimate performance changes for geometrically similar rot
 
 **Problem.** A calculation produces a stress or operating point that violates the model assumption used to obtain it. Is the result acceptable?
 
-**Solution.** No. Select the correct model or failure/operating region and solve again. Algebra does not override geometry, material behavior, or component-state validity.
+**Solution.** No. Drag/lift or similarity equations are only valid for the stated flow regime and dimensionless similarity. A Reynolds-number or separation-regime mismatch invalidates a coefficient copied from another condition.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the FE Reference Handbook expression. Which should govern the exam solution?
 
-**Solution.** Use the Handbook expression and its definitions unless the problem explicitly provides another model.
+**Solution.** For **External Flow — Drag, Lift, Boundary Layers, and Dimensional Similarity**, use the FE Reference Handbook expression, symbols, and unit convention whenever it supplies the required model. The external source set **WHITE** supports specification-required learned/application material that is not fully developed in the Handbook. If a remembered textbook formula conflicts with a supplied Handbook relation, the supplied Handbook relation governs unless the problem explicitly defines another model.
 
 ---
 
@@ -185,7 +185,12 @@ Affinity/scaling laws estimate performance changes for geometrically similar rot
 
 Primary source basis: **FE Mechanical specification Area(s) 10; FE Reference Handbook 10.6 Mechanical Engineering and supporting general sections, with the specific subsection/page identified in the ledger.**
 
-**Source boundary:** The Mechanical specification includes both directly tabulated Handbook equations and learned design concepts. This chapter does not assign invented Handbook pages to specification-required material that is not directly tabulated.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required mechanical-engineering knowledge that is not fully developed in the Handbook. **Guide synthesis** connects those sources into exam-oriented explanations, examples, model checks, and design context; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- White, F. M., & Xue, H. *Fluid Mechanics* (9th ed.). McGraw Hill. ISBN 978-1-260-25831-8. Supporting scope: External flow, Reynolds number, boundary layers, drag/lift, dimensional analysis, similarity, and turbomachinery scaling.
+
+The external references support only the learned/application portion of the FE Mechanical specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +359,31 @@ D) It is always qualitative
 
 14. For **rotating-fluid-machine scaling**, verify geometry, load direction, material model, units, operating regime, and whether the assumed failure or performance mode remains valid.
 
-15. The sketch exposes supports, force directions, geometry, constraints, energy/flow paths, and missing load cases before algebra obscures them.
+15. In **External Flow — Drag, Lift, Boundary Layers, and Dimensional Similarity**, start from the physical model and system/component state, not from an isolated formula. A valid solution must check Reynolds number, boundary-layer/separation regime, reference area/coefficient definition, and whether the required dimensionless groups are matched before using model or correlation data.
 
-16. Mechanical equations are model-dependent. The result must remain compatible with yielding/buckling/fatigue, flow regime, thermal state, contact, or kinematic constraints.
+16. Units and sign/reference conventions are part of the model in **External Flow — Drag, Lift, Boundary Layers, and Dimensional Similarity**. Convert all quantities to a consistent basis before substitution and state whether values are absolute/gauge, static/stagnation, nominal/local, input/output, or other relevant basis.
 
-17. The Handbook is the supplied exam reference; its definitions, correction factors, unit conventions, and tables should govern unless the problem explicitly supplies another relation.
+17. The FE Reference Handbook is the controlling exam reference when it supplies the relation for **External Flow — Drag, Lift, Boundary Layers, and Dimensional Similarity**. External sources **WHITE** support only the learned material not fully developed in the Handbook.
 
-18. These checks catch impossible motion, unit errors, invalid thin-wall or linear assumptions, unrealistic stresses, interference, and parts that cannot be manufactured or assembled.
+18. Use a limiting or reversal check before accepting the result: double velocity at fixed \(C_D,C_L\) and confirm ideal drag/lift become four times larger; at fixed diameter double fan speed and confirm the affinity-law 2/4/8 trend. A failure to reduce correctly indicates a geometry, regime, sign, unit, or model-selection error.
 
-19. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+19. **A.** Section §80.1, **Reynolds number and external-flow regimes**, uses \(\mathrm{Re}=\frac{\rho VL}{\mu}=\frac{VL}{\nu}\). Apply it only under the geometry/material/operating assumptions stated in §80.1, then compare the result with the physical behavior described there.
 
-20. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+20. **A.** Section §80.2, **Boundary-layer thickness and wall shear**, uses \(\tau_w=\mu\left.\frac{\partial u}{\partial y}\right|_w\). Apply it only under the geometry/material/operating assumptions stated in §80.2, then compare the result with the physical behavior described there.
 
-21. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+21. **A.** Section §80.3, **Pressure drag and flow separation**, uses \(D=D_{\text{friction}}+D_{\text{pressure}}\). Apply it only under the geometry/material/operating assumptions stated in §80.3, then compare the result with the physical behavior described there.
 
-22. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+22. **A.** Section §80.4, **Drag coefficient**, uses \(F_D=\frac12\rho V^2 C_DA\). Apply it only under the geometry/material/operating assumptions stated in §80.4, then compare the result with the physical behavior described there.
 
-23. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+23. **A.** Section §80.5, **Lift coefficient**, uses \(F_L=\frac12\rho V^2 C_LA\). Apply it only under the geometry/material/operating assumptions stated in §80.5, then compare the result with the physical behavior described there.
 
-24. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+24. **A.** Section §80.6, **Dimensional analysis and similarity**, uses \(\Pi_i=f(\Pi_1,\Pi_2,\ldots)\). Apply it only under the geometry/material/operating assumptions stated in §80.6, then compare the result with the physical behavior described there.
 
-25. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+25. **A.** Section §80.7, **Fan/pump/compressor similarity laws**, uses \(Q\propto ND^3,\quad H\propto N^2D^2,\quad P\propto N^3D^5\). Apply it only under the geometry/material/operating assumptions stated in §80.7, then compare the result with the physical behavior described there.
 
-26. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+26. **A.** An integrated **External Flow — Drag, Lift, Boundary Layers, and Dimensional Similarity** result is acceptable only after the governing physical model, geometry, operating/failure regime, units, and independent plausibility checks agree.
 
-27. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+27. **A.** Source ownership is explicit in this chapter: FE-Handbook-supported material remains tied to the ledger; externally supported material uses **WHITE**; guide synthesis is supplemental explanation and exam-oriented workflow.
 
 
 ---
@@ -410,25 +415,25 @@ D) It is always qualitative
 
 ## Practice Problem Solutions
 
-1. Use §80.1. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+1. **Independent check for §80.1 — Reynolds number and external-flow regimes.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. \(\mathrm{Re}=\rho VL/\mu\). With fluid properties and characteristic length fixed, \(\mathrm{Re}\propto V\); doubling velocity therefore **doubles Reynolds number** and can move the flow toward a different regime.
 
-2. Use §80.2. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+2. **Independent check for §80.2 — Boundary-layer thickness and wall shear.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. For a Newtonian fluid, \(\tau_w=\mu(\partial u/\partial y)_w\). A steeper near-wall velocity gradient at the same viscosity produces a larger magnitude of wall shear stress.
 
-3. Use §80.3. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+3. **Independent check for §80.3 — Pressure drag and flow separation.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. A bluff body promotes boundary-layer separation and creates a broad low-pressure wake. The resulting front-to-back pressure imbalance produces substantial **pressure (form) drag**, often dominating skin-friction drag.
 
-4. Use §80.4. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+4. **Independent check for §80.4 — Drag coefficient.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. \(F_D=\tfrac12\rho V^2C_DA\). If \(\rho,C_D,A\) stay fixed, \(F_D\propto V^2\); doubling speed gives \(F_{D,2}/F_{D,1}=4\), so drag **quadruples**.
 
-5. Use §80.5. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+5. **Independent check for §80.5 — Lift coefficient.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. \(F_L=\tfrac12\rho V^2C_LA\). Under the stated constant-\(C_L\) assumption, doubling speed also multiplies lift by \(2^2=\mathbf4\).
 
-6. Use §80.6. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+6. **Independent check for §80.6 — Dimensional analysis and similarity.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. Geometric similarity alone is not enough. For the same fluid, \(\mathrm{Re}=VL/\nu\), so a smaller model at the same speed has a proportionally smaller Reynolds number; matching the relevant dimensionless groups may require changing velocity, fluid, pressure, or scale.
 
-7. Use §80.7. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+7. **Independent check for §80.7 — Fan/pump/compressor similarity laws.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. At fixed diameter, the affinity laws give \(Q\propto N\), \(H\propto N^2\), and \(P\propto N^3\). Doubling speed therefore gives approximately **2× flow, 4× head, and 8× power** within the similarity range.
 
-8. Check dimensions, load direction, support/interface assumptions, material regime, fatigue/static basis, operating speed/temperature/pressure, and any geometric validity limit such as thin-wall or small-deflection assumptions.
+8. For **External Flow — Drag, Lift, Boundary Layers, and Dimensional Similarity**, one required acceptance screen is: check Reynolds number, boundary-layer/separation regime, reference area/coefficient definition, and whether the required dimensionless groups are matched before using model or correlation data. A result that violates this screen must be rejected or recomputed with the proper model.
 
-9. Start with FE Mechanical specification Area(s) 10, then use the Handbook subsection named in the corresponding ledger entry.
+9. Start with the FE Mechanical specification area and FE Reference Handbook location recorded in the ledger for **External Flow — Drag, Lift, Boundary Layers, and Dimensional Similarity**. For `split_required` concepts, use **WHITE** for the learned/application portion without inventing a Handbook page or clause.
 
-10. Test a simple limit such as zero load, very large stiffness, matched speed ratio, zero pressure, zero damping, or maximum/minimum fit. Confirm the result trends in the physically expected direction and remains manufacturable.
+10. Apply this limiting-case test independently: double velocity at fixed \(C_D,C_L\) and confirm ideal drag/lift become four times larger; at fixed diameter double fan speed and confirm the affinity-law 2/4/8 trend. If the simplified case does not behave as expected, revisit the setup before trusting the full calculation.
 
 ---
 

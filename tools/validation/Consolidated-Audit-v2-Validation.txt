@@ -1,0 +1,28 @@
+Consolidated FE Technical Audit v2 Validation
+============================================
+
+Worked-example parser regression:
+- 01-14-Matrices-Determinants-and-Eigenvalues.md: 6 worked examples; missing problem=0; missing solution=0; implicit Model-Check prompts=0
+- 02-16-Materials-Classes-Structure-and-Bonding.md: 7 worked examples; missing problem=0; missing solution=0; implicit Model-Check prompts=7
+- 02-53-Power-Cycles.md: 9 worked examples; missing problem=0; missing solution=0; implicit Model-Check prompts=0
+
+Arithmetic-display regression:
+- fraction to percent: PASS
+- seconds to milliseconds: PASS
+- volts to millivolts: PASS
+
+Recursive/descriptive-suffix artwork probe: PASS
+
+Layer 3 regression against current staging repository:
+- CRITICAL=0
+- ERROR=0
+- WARNING=43
+- REVIEW=49
+- INFO=665
+
+PASS criteria:
+- Layer 1 Given/Find/Approach examples are parsed without false missing-problem/missing-solution errors.
+- Early Layer 2 Model Check blocks are parsed as solution-only instructional examples rather than concrete parser defects.
+- Percent and common engineering-prefix RHS displays are normalized for arithmetic checking.
+- Artwork may be nested under figures and may include descriptive filename suffixes after the Figure ID.
+- Layer 3 audit behavior is preserved.

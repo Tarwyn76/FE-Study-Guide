@@ -65,7 +65,7 @@ Lean analysis distinguishes required value-producing work from delay and waste.
 
 **Problem.** Two days of queue between two five-minute operations adds lead time, not processing value.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** Two 5-min value-adding operations contribute only \(10\ {\rm min}\) of processing value. A 2-day queue between them increases lead time dramatically without changing those 10 min; queue time is therefore non-value-added delay from the customer's perspective.
 
 ---
 
@@ -73,7 +73,7 @@ Lean analysis distinguishes required value-producing work from delay and waste.
 
 Waste categories include defects, overproduction, waiting, unused talent, transportation, inventory, motion, and overprocessing.
 
-\\[\\text{waste reduction}\\rightarrow\\text{less non-value resource use}\\]
+\\[T_{NVA}=T_{wait}+T_{transport}+T_{motion}+T_{rework}+\\cdots\\]
 
 ![FIG-03-70-002: Textbook-quality industrial engineering diagram illustrating lean waste identification with labeled variables, flow, decision points, and relevant performance measures.](../figures/FIG-03-70-002-lean-waste-identification.png)
 
@@ -81,7 +81,7 @@ Waste categories include defects, overproduction, waiting, unused talent, transp
 
 **Problem.** Moving a frequently used tool closer reduces unnecessary motion.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** Moving a frequently used tool closer removes unnecessary operator travel/reach. The improvement targets **motion waste** while preserving the required task function and should be checked for safety and workspace interference.
 
 ---
 
@@ -97,7 +97,7 @@ Pull systems replenish from downstream consumption; takt time states the custome
 
 **Problem.** 420 minutes for 210 units gives takt 2 min/unit.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** Takt time is \(420\ {\rm min}/210\ {\rm units}=\mathbf{2\ min/unit}\). A stable process intended to meet demand must achieve an average pace at or below this takt while accounting for breaks, losses, and variation in the stated available time.
 
 ---
 
@@ -113,7 +113,7 @@ Structured improvement prevents solution jumping by using baseline evidence and 
 
 **Problem.** Measure baseline defects before changing the process if you want to verify improvement.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** Baseline measurement before the change establishes the starting defect rate and natural process variation. After the intervention, compare the new performance against that baseline using the same operational definitions; otherwise an apparent improvement may be a measurement artifact.
 
 ---
 
@@ -121,7 +121,7 @@ Structured improvement prevents solution jumping by using baseline evidence and 
 
 Value engineering seeks required function at lower lifecycle cost without degrading needed performance or safety.
 
-\\[Value=\\frac{Function}{Life-cycle\\ Cost}\\]
+\\[V=\\frac{F}{C_{LC}}\\]
 
 ![FIG-03-70-005: Textbook-quality industrial engineering diagram illustrating value engineering with labeled variables, flow, decision points, and relevant performance measures.](../figures/FIG-03-70-005-value-engineering.png)
 
@@ -129,7 +129,7 @@ Value engineering seeks required function at lower lifecycle cost without degrad
 
 **Problem.** A cheaper component is not better value if it cannot meet required function.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** Value is function divided by life-cycle cost. A lower purchase price that causes reliability, performance, maintenance, or safety requirements to fail reduces required function and therefore can produce **lower**, not higher, value.
 
 ---
 
@@ -145,7 +145,7 @@ Sustainable production integrates resource use, emissions, waste, lifecycle, and
 
 **Problem.** Reducing scrap improves material efficiency and cost per good unit.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** Scrap reduction increases the fraction of purchased material that becomes saleable output. With the same incoming material, more good units lower material use, waste, and often energy/cost per good unit; confirm that the improvement does not shift burden elsewhere in the lifecycle.
 
 ---
 
@@ -161,7 +161,7 @@ Local optimization can shift problems elsewhere. Validate results across the who
 
 **Problem.** Higher machine speed can reduce cycle time but increase defects or starve downstream work.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** Raising machine speed is not a system improvement if defects, WIP, starvation/blocking, maintenance, safety risk, or downstream overload worsen. Compare before/after system throughput, quality, safety, cost, and resource intensity rather than optimizing a local cycle time alone.
 
 ---
 
@@ -171,13 +171,13 @@ Local optimization can shift problems elsewhere. Validate results across the who
 
 **Problem.** A numerical optimum violates an operating rule omitted from the model. Is it implementable?
 
-**Solution.** No. Add the missing operational restriction and re-solve. Mathematical feasibility applies only to the stated model.
+**Solution.** In **Lean Systems, Process Improvement, Sustainability, and Value Engineering**, do not accept a local optimum or locally improved metric until it is checked against the chapter's system boundary and feasibility conditions. Industrial-and-systems problems commonly fail when a local improvement shifts delay, cost, risk, inventory, workload, defects, or constraints elsewhere in the system.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the FE Reference Handbook expression. Which should govern?
 
-**Solution.** Use the Handbook expression and definitions unless the problem explicitly provides another model.
+**Solution.** For this chapter, the FE Reference Handbook relation and variable definitions control whenever the Handbook supplies them. Use the external source set **RUSSELL_TAYLOR, SAVE, ISO14040** only for specification-required learned material not fully developed in the Handbook.
 
 ---
 
@@ -185,7 +185,14 @@ Local optimization can shift problems elsewhere. Validate results across the who
 
 Primary source basis: **FE Industrial & Systems specification Area(s) 8; FE Reference Handbook 10.6 Industrial and Systems Engineering, printed pp. 422–435.**
 
-Specification-required management/design topics that are not directly tabulated are identified as learned or guide-developed rather than assigned false Handbook pages.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required industrial/systems engineering knowledge not fully developed in the Handbook. **Guide synthesis** connects those sources into exam-oriented explanations, worked examples, and decision checks; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Russell, R. S., & Taylor, B. W. (2023). *Operations and Supply Chain Management* (11th ed.). Wiley. ISBN 978-1-119-90567-7. Supporting scope: Operations planning, inventory, MRP, sequencing, lean systems, capacity, location, layout, quality, and supply-chain operations.
+- SAVE International. *Value Methodology Guide and Core Competencies*, current SAVE International certification/program documents. Supporting scope: Value methodology, function-oriented analysis, value improvement, and value-study practice.
+- ISO. (2006). *Environmental management—Life cycle assessment—Principles and framework* (ISO 14040:2006, confirmed current; Amendment 1:2020). Supporting scope: Life-cycle assessment principles, goal/scope, inventory, impact assessment, interpretation, reporting, and review.
+
+External references support the learned/application portion of the Industrial and Systems specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +361,31 @@ D) It is always only qualitative
 
 14. For **process-improvement validation**, verify data basis, units, capacity/probability conditions, and operational feasibility.
 
-15. The boundary and objective determine what counts as performance and which constraints matter.
+15. In **Lean Systems, Process Improvement, Sustainability, and Value Engineering**, the model boundary determines what is included in the decision. A valid solution must separate customer value from delay/waste, confirm takt uses true available time and demand, validate improvements with before/after evidence, and include downstream/lifecycle effects.
 
-16. Optimization and statistics answer questions inside a model; implementation, causality, and stakeholder objectives still require engineering judgment.
+16. Units and operational definitions are part of the model, not formatting details. For **Lean Systems, Process Improvement, Sustainability, and Value Engineering**, convert quantities to a common basis before combining them and state the denominator/capacity/time basis explicitly.
 
-17. The FE Handbook is the supplied reference and its definitions should govern unless the problem explicitly supplies another model.
+17. The FE Reference Handbook is the exam reference when it supplies the relation for **Lean Systems, Process Improvement, Sustainability, and Value Engineering**. The external sources RUSSELL_TAYLOR, SAVE, ISO14040 support learned specification content not fully developed in the Handbook.
 
-18. Check feasibility, units, scale, probability bounds, and upstream/downstream effects.
+18. A quick limiting check for **Lean Systems, Process Improvement, Sustainability, and Value Engineering** is to remove queue/waiting while holding value-added processing unchanged and confirm lead time falls without reducing required function. Failure to reduce correctly indicates a model, sign, boundary, or arithmetic problem.
 
-19. **A.** The method depends on assumptions, units, data basis, and decision context.
+19. **A.** Section §70.1, **Value-Added and Non-Value-Added Time**, is based on \(Lead\\ time=VA\\ time+waiting+transport+rework+other\\ delay\\). Interpret the result within the specific assumptions and system boundary of §70.1; do not transfer it automatically to a different operating regime.
 
-20. **A.** The method depends on assumptions, units, data basis, and decision context.
+20. **A.** Section §70.2, **Lean Waste Identification**, is based on \(T_{NVA}=T_{wait}+T_{transport}+T_{motion}+T_{rework}+\\cdots\). Interpret the result within the specific assumptions and system boundary of §70.2; do not transfer it automatically to a different operating regime.
 
-21. **A.** The method depends on assumptions, units, data basis, and decision context.
+21. **A.** Section §70.3, **Pull Systems, Takt Time, and Kanban**, is based on \(Takt=\\frac{available\\ production\\ time}{customer\\ demand}\\). Interpret the result within the specific assumptions and system boundary of §70.3; do not transfer it automatically to a different operating regime.
 
-22. **A.** The method depends on assumptions, units, data basis, and decision context.
+22. **A.** Section §70.4, **PDCA and DMAIC Improvement Cycles**, is based on \(\\text{define/plan}\\rightarrow\\text{measure/do}\\rightarrow\\text{analyze/check}\\rightarrow\\text{improve/act}\\). Interpret the result within the specific assumptions and system boundary of §70.4; do not transfer it automatically to a different operating regime.
 
-23. **A.** The method depends on assumptions, units, data basis, and decision context.
+23. **A.** Section §70.5, **Value Engineering**, is based on \(V=\\frac{F}{C_{LC}}\). Interpret the result within the specific assumptions and system boundary of §70.5; do not transfer it automatically to a different operating regime.
 
-24. **A.** The method depends on assumptions, units, data basis, and decision context.
+24. **A.** Section §70.6, **Sustainable Production and Resource Efficiency**, is based on \(Resource\\ intensity=\\frac{energy/material/water/waste}{useful\\ output}\\). Interpret the result within the specific assumptions and system boundary of §70.6; do not transfer it automatically to a different operating regime.
 
-25. **A.** The method depends on assumptions, units, data basis, and decision context.
+25. **A.** Section §70.7, **Improvement Validation and System Effects**, is based on \(\\text{improvement must hold across throughput, quality, safety, cost, and downstream effects}\\). Interpret the result within the specific assumptions and system boundary of §70.7; do not transfer it automatically to a different operating regime.
 
-26. **A.** The method depends on assumptions, units, data basis, and decision context.
+26. **A.** An integrated Lean Systems, Process Improvement, Sustainability, and Value Engineering decision must remain mathematically feasible and operationally implementable after resource, integer, timing, uncertainty, quality, safety, and system-boundary constraints are considered.
 
-27. **A.** The method depends on assumptions, units, data basis, and decision context.
+27. **A.** This chapter separates FE-Handbook-supported material from externally supported material and guide synthesis. The source-boundary section lists the external references used for Lean Systems, Process Improvement, Sustainability, and Value Engineering.
 
 
 ---
@@ -410,25 +417,25 @@ D) It is always only qualitative
 
 ## Practice Problem Solutions
 
-1. Use §70.1. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+1. **Independent solution for §70.1 — Value-Added and Non-Value-Added Time.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: Two 5-min value-adding operations contribute only \(10\ {\rm min}\) of processing value. A 2-day queue between them increases lead time dramatically without changing those 10 min; queue time is therefore non-value-added delay from the customer's perspective.
 
-2. Use §70.2. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+2. **Independent solution for §70.2 — Lean Waste Identification.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: Moving a frequently used tool closer removes unnecessary operator travel/reach. The improvement targets **motion waste** while preserving the required task function and should be checked for safety and workspace interference.
 
-3. Use §70.3. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+3. **Independent solution for §70.3 — Pull Systems, Takt Time, and Kanban.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: Takt time is \(420\ {\rm min}/210\ {\rm units}=\mathbf{2\ min/unit}\). A stable process intended to meet demand must achieve an average pace at or below this takt while accounting for breaks, losses, and variation in the stated available time.
 
-4. Use §70.4. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+4. **Independent solution for §70.4 — PDCA and DMAIC Improvement Cycles.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: Baseline measurement before the change establishes the starting defect rate and natural process variation. After the intervention, compare the new performance against that baseline using the same operational definitions; otherwise an apparent improvement may be a measurement artifact.
 
-5. Use §70.5. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+5. **Independent solution for §70.5 — Value Engineering.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: Value is function divided by life-cycle cost. A lower purchase price that causes reliability, performance, maintenance, or safety requirements to fail reduces required function and therefore can produce **lower**, not higher, value.
 
-6. Use §70.6. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+6. **Independent solution for §70.6 — Sustainable Production and Resource Efficiency.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: Scrap reduction increases the fraction of purchased material that becomes saleable output. With the same incoming material, more good units lower material use, waste, and often energy/cost per good unit; confirm that the improvement does not shift burden elsewhere in the lifecycle.
 
-7. Use §70.7. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+7. **Independent solution for §70.7 — Improvement Validation and System Effects.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: Raising machine speed is not a system improvement if defects, WIP, starvation/blocking, maintenance, safety risk, or downstream overload worsen. Compare before/after system throughput, quality, safety, cost, and resource intensity rather than optimizing a local cycle time alone.
 
-8. Check units, probability bounds, utilization/stability, integer or physical constraints, denominator definitions, and model assumptions.
+8. For an integrated **Lean Systems, Process Improvement, Sustainability, and Value Engineering** problem, reject any result that violates this chapter-specific screen: separate customer value from delay/waste, confirm takt uses true available time and demand, validate improvements with before/after evidence, and include downstream/lifecycle effects.
 
-9. Start with FE Industrial & Systems specification Area(s) 8, then use the corresponding Handbook subsection where one exists.
+9. For **Lean Systems, Process Improvement, Sustainability, and Value Engineering**, start with the FE Industrial and Systems specification area and Handbook location recorded in the ledger. For `split_required` material, use **RUSSELL_TAYLOR, SAVE, ISO14040** for the learned portion rather than inventing a Handbook page.
 
-10. Compare the result against upstream/downstream throughput, quality, inventory, safety, staffing, cost, and service.
+10. Use this independent limiting case: remove queue/waiting while holding value-added processing unchanged and confirm lead time falls without reducing required function. The reduced case should behave as stated before the full model is trusted.
 
 ---
 

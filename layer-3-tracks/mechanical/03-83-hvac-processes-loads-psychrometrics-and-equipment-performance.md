@@ -65,7 +65,7 @@ Moist-air state is described by pressure plus two independent properties. Psychr
 
 **Problem.** At a fixed pressure and humidity ratio, heating air lowers relative humidity.
 
-**Solution.** Apply the relation and model in §83.1; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** Humidity ratio \(\omega\) is unchanged by sensible heating when no water is added or removed. Raising dry-bulb temperature increases the saturation vapor pressure while \(P_v\) stays essentially fixed, so relative humidity **decreases**.
 
 ---
 
@@ -81,7 +81,7 @@ Sensible processes change dry-bulb temperature without changing humidity ratio, 
 
 **Problem.** Heating 1 kg/s of air by 10 K requires about 10 kW per kJ/(kg·K) of cp.
 
-**Solution.** Apply the relation and model in §83.2; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** \(\dot Q_s=\dot m_ac_p\Delta T=(1\ {\rm kg/s})(1\ {\rm kJ/(kg\cdot K)})(10\ {\rm K})=\mathbf{10\ kW}\).
 
 ---
 
@@ -97,7 +97,7 @@ Cooling below dew point removes both sensible and latent heat and condenses wate
 
 **Problem.** A dehumidifying coil reduces both enthalpy and humidity ratio.
 
-**Solution.** Apply the relation and model in §83.3; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** A cooling/dehumidifying coil lowers moist-air enthalpy and, once the air is cooled below its dew point, condenses water so humidity ratio also decreases. The total coil load is \(\dot m_a(h_1-h_2)\).
 
 ---
 
@@ -113,7 +113,7 @@ Humidification adds moisture. Adiabatic evaporative humidification can lower dry
 
 **Problem.** If humidity ratio rises by 0.004 kg/kg for 2 kg/s dry air, water addition is 0.008 kg/s.
 
-**Solution.** Apply the relation and model in §83.4; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** \(\dot m_w=\dot m_a(\omega_2-\omega_1)=(2\ {\rm kg_{da}/s})(0.004\ {\rm kg_w/kg_{da}})=\mathbf{0.008\ kg_w/s}\).
 
 ---
 
@@ -129,7 +129,7 @@ Two air streams mix to an intermediate state governed by mass and energy balance
 
 **Problem.** Equal dry-air mass flows mix to a state midway along the connecting line under the ideal model.
 
-**Solution.** Apply the relation and model in §83.5; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** For equal dry-air mass flow rates, conservation of dry air and enthalpy gives \(h_3=(h_1+h_2)/2\) and similarly \(\omega_3=(\omega_1+\omega_2)/2\). The mixed state lies midway along the straight connecting line on the psychrometric chart under the ideal model.
 
 ---
 
@@ -145,7 +145,7 @@ HVAC equipment is selected from heating/cooling loads, not only indoor setpoint.
 
 **Problem.** Increasing outdoor-air ventilation can increase both sensible and latent cooling load.
 
-**Solution.** Apply the relation and model in §83.6; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** Outdoor ventilation introduces both temperature difference and moisture difference. Increasing outside-air flow can therefore increase sensible load and latent load simultaneously when outdoor air is hotter and more humid than the conditioned space.
 
 ---
 
@@ -161,7 +161,7 @@ Equipment performance connects thermal capacity to input power. Operating condit
 
 **Problem.** A refrigerator removing 30 kW with 10 kW input has COPR=3.
 
-**Solution.** Apply the relation and model in §83.7; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** \(\mathrm{COP_R}=Q_L/W_{in}=30/10=\mathbf{3.0}\). This means the refrigerator removes three units of heat from the cooled space per unit of input work under the stated operating condition.
 
 ---
 
@@ -171,13 +171,13 @@ Equipment performance connects thermal capacity to input power. Operating condit
 
 **Problem.** A calculation produces a stress or operating point that violates the model assumption used to obtain it. Is the result acceptable?
 
-**Solution.** No. Select the correct model or failure/operating region and solve again. Algebra does not override geometry, material behavior, or component-state validity.
+**Solution.** No. A psychrometric state must satisfy pressure, saturation, humidity-ratio, and energy constraints. A result above saturation without condensation or with inconsistent dry-air basis must be corrected.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the FE Reference Handbook expression. Which should govern the exam solution?
 
-**Solution.** Use the Handbook expression and its definitions unless the problem explicitly provides another model.
+**Solution.** For **HVAC Processes, Loads, Psychrometrics, and Equipment Performance**, use the FE Reference Handbook expression, symbols, and unit convention whenever it supplies the required model. The external source set **ASHRAE** supports specification-required learned/application material that is not fully developed in the Handbook. If a remembered textbook formula conflicts with a supplied Handbook relation, the supplied Handbook relation governs unless the problem explicitly defines another model.
 
 ---
 
@@ -185,7 +185,12 @@ Equipment performance connects thermal capacity to input power. Operating condit
 
 Primary source basis: **FE Mechanical specification Area(s) 11; FE Reference Handbook 10.6 Mechanical Engineering and supporting general sections, with the specific subsection/page identified in the ledger.**
 
-**Source boundary:** The Mechanical specification includes both directly tabulated Handbook equations and learned design concepts. This chapter does not assign invented Handbook pages to specification-required material that is not directly tabulated.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required mechanical-engineering knowledge that is not fully developed in the Handbook. **Guide synthesis** connects those sources into exam-oriented explanations, examples, model checks, and design context; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- ASHRAE. (2025). *2025 ASHRAE Handbook—Fundamentals*, SI edition. ISBN 978-1-964173-11-5. Supporting scope: Psychrometrics, thermodynamics, heat transfer, load calculations, HVAC&R fundamentals, duct/piping design, and building environmental calculations.
+
+The external references support only the learned/application portion of the FE Mechanical specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +359,31 @@ D) It is always qualitative
 
 14. For **HVAC coefficient of performance**, verify geometry, load direction, material model, units, operating regime, and whether the assumed failure or performance mode remains valid.
 
-15. The sketch exposes supports, force directions, geometry, constraints, energy/flow paths, and missing load cases before algebra obscures them.
+15. In **HVAC Processes, Loads, Psychrometrics, and Equipment Performance**, start from the physical model and system/component state, not from an isolated formula. A valid solution must use dry-air basis consistently, verify the state lies physically on/below saturation, close moist-air mass/enthalpy balances, and distinguish sensible, latent, and total load.
 
-16. Mechanical equations are model-dependent. The result must remain compatible with yielding/buckling/fatigue, flow regime, thermal state, contact, or kinematic constraints.
+16. Units and sign/reference conventions are part of the model in **HVAC Processes, Loads, Psychrometrics, and Equipment Performance**. Convert all quantities to a consistent basis before substitution and state whether values are absolute/gauge, static/stagnation, nominal/local, input/output, or other relevant basis.
 
-17. The Handbook is the supplied exam reference; its definitions, correction factors, unit conventions, and tables should govern unless the problem explicitly supplies another relation.
+17. The FE Reference Handbook is the controlling exam reference when it supplies the relation for **HVAC Processes, Loads, Psychrometrics, and Equipment Performance**. External sources **ASHRAE** support only the learned material not fully developed in the Handbook.
 
-18. These checks catch impossible motion, unit errors, invalid thin-wall or linear assumptions, unrealistic stresses, interference, and parts that cannot be manufactured or assembled.
+18. Use a limiting or reversal check before accepting the result: set water addition/removal to zero and confirm sensible heating keeps humidity ratio constant; set \(W_{in}=Q_L/3\) and confirm \(COP_R=3\). A failure to reduce correctly indicates a geometry, regime, sign, unit, or model-selection error.
 
-19. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+19. **A.** Section §83.1, **Dry-bulb, wet-bulb, humidity ratio, and relative humidity**, uses \(\omega=0.622\frac{P_v}{P-P_v}\). Apply it only under the geometry/material/operating assumptions stated in §83.1, then compare the result with the physical behavior described there.
 
-20. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+20. **A.** Section §83.2, **Sensible heating and cooling**, uses \(\dot Q_s=\dot m_a c_p(T_2-T_1)\). Apply it only under the geometry/material/operating assumptions stated in §83.2, then compare the result with the physical behavior described there.
 
-21. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+21. **A.** Section §83.3, **Cooling and dehumidification**, uses \(\dot Q=\dot m_a(h_1-h_2)\). Apply it only under the geometry/material/operating assumptions stated in §83.3, then compare the result with the physical behavior described there.
 
-22. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+22. **A.** Section §83.4, **Humidification and evaporative cooling**, uses \(\dot m_w=\dot m_a(\omega_2-\omega_1)\). Apply it only under the geometry/material/operating assumptions stated in §83.4, then compare the result with the physical behavior described there.
 
-23. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+23. **A.** Section §83.5, **Mixing of moist-air streams**, uses \(\dot m_1 h_1+\dot m_2 h_2=(\dot m_1+\dot m_2)h_3\). Apply it only under the geometry/material/operating assumptions stated in §83.5, then compare the result with the physical behavior described there.
 
-24. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+24. **A.** Section §83.6, **Building sensible and latent loads**, uses \(\dot Q_{load}=\dot Q_{envelope}+\dot Q_{solar}+\dot Q_{people}+\dot Q_{equipment}+\dot Q_{vent}\). Apply it only under the geometry/material/operating assumptions stated in §83.6, then compare the result with the physical behavior described there.
 
-25. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+25. **A.** Section §83.7, **COP, equipment capacity, and HVAC performance**, uses \(\mathrm{COP_R}=\frac{Q_L}{W_{in}},\qquad \mathrm{COP_{HP}}=\frac{Q_H}{W_{in}}\). Apply it only under the geometry/material/operating assumptions stated in §83.7, then compare the result with the physical behavior described there.
 
-26. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+26. **A.** An integrated **HVAC Processes, Loads, Psychrometrics, and Equipment Performance** result is acceptable only after the governing physical model, geometry, operating/failure regime, units, and independent plausibility checks agree.
 
-27. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+27. **A.** Source ownership is explicit in this chapter: FE-Handbook-supported material remains tied to the ledger; externally supported material uses **ASHRAE**; guide synthesis is supplemental explanation and exam-oriented workflow.
 
 
 ---
@@ -410,25 +415,25 @@ D) It is always qualitative
 
 ## Practice Problem Solutions
 
-1. Use §83.1. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+1. **Independent check for §83.1 — Dry-bulb, wet-bulb, humidity ratio, and relative humidity.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. Humidity ratio \(\omega\) is unchanged by sensible heating when no water is added or removed. Raising dry-bulb temperature increases the saturation vapor pressure while \(P_v\) stays essentially fixed, so relative humidity **decreases**.
 
-2. Use §83.2. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+2. **Independent check for §83.2 — Sensible heating and cooling.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. \(\dot Q_s=\dot m_ac_p\Delta T=(1\ {\rm kg/s})(1\ {\rm kJ/(kg\cdot K)})(10\ {\rm K})=\mathbf{10\ kW}\).
 
-3. Use §83.3. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+3. **Independent check for §83.3 — Cooling and dehumidification.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. A cooling/dehumidifying coil lowers moist-air enthalpy and, once the air is cooled below its dew point, condenses water so humidity ratio also decreases. The total coil load is \(\dot m_a(h_1-h_2)\).
 
-4. Use §83.4. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+4. **Independent check for §83.4 — Humidification and evaporative cooling.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. \(\dot m_w=\dot m_a(\omega_2-\omega_1)=(2\ {\rm kg_{da}/s})(0.004\ {\rm kg_w/kg_{da}})=\mathbf{0.008\ kg_w/s}\).
 
-5. Use §83.5. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+5. **Independent check for §83.5 — Mixing of moist-air streams.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. For equal dry-air mass flow rates, conservation of dry air and enthalpy gives \(h_3=(h_1+h_2)/2\) and similarly \(\omega_3=(\omega_1+\omega_2)/2\). The mixed state lies midway along the straight connecting line on the psychrometric chart under the ideal model.
 
-6. Use §83.6. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+6. **Independent check for §83.6 — Building sensible and latent loads.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. Outdoor ventilation introduces both temperature difference and moisture difference. Increasing outside-air flow can therefore increase sensible load and latent load simultaneously when outdoor air is hotter and more humid than the conditioned space.
 
-7. Use §83.7. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+7. **Independent check for §83.7 — COP, equipment capacity, and HVAC performance.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. \(\mathrm{COP_R}=Q_L/W_{in}=30/10=\mathbf{3.0}\). This means the refrigerator removes three units of heat from the cooled space per unit of input work under the stated operating condition.
 
-8. Check dimensions, load direction, support/interface assumptions, material regime, fatigue/static basis, operating speed/temperature/pressure, and any geometric validity limit such as thin-wall or small-deflection assumptions.
+8. For **HVAC Processes, Loads, Psychrometrics, and Equipment Performance**, one required acceptance screen is: use dry-air basis consistently, verify the state lies physically on/below saturation, close moist-air mass/enthalpy balances, and distinguish sensible, latent, and total load. A result that violates this screen must be rejected or recomputed with the proper model.
 
-9. Start with FE Mechanical specification Area(s) 11, then use the Handbook subsection named in the corresponding ledger entry.
+9. Start with the FE Mechanical specification area and FE Reference Handbook location recorded in the ledger for **HVAC Processes, Loads, Psychrometrics, and Equipment Performance**. For `split_required` concepts, use **ASHRAE** for the learned/application portion without inventing a Handbook page or clause.
 
-10. Test a simple limit such as zero load, very large stiffness, matched speed ratio, zero pressure, zero damping, or maximum/minimum fit. Confirm the result trends in the physically expected direction and remains manufacturable.
+10. Apply this limiting-case test independently: set water addition/removal to zero and confirm sensible heating keeps humidity ratio constant; set \(W_{in}=Q_L/3\) and confirm \(COP_R=3\). If the simplified case does not behave as expected, revisit the setup before trusting the full calculation.
 
 ---
 

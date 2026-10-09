@@ -65,7 +65,7 @@ Power screws convert torque to axial force. Raising and lowering torque depend o
 
 **Problem.** Higher thread friction increases required raising torque.
 
-**Solution.** Apply the relation and model in §87.1; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** In the raising-torque relation, thread friction \(\mu\) appears in the numerator and also reduces the denominator margin. Increasing friction therefore increases the torque required to raise the load, all else equal.
 
 ---
 
@@ -81,7 +81,7 @@ Efficiency compares useful lifting work per revolution with input work. Friction
 
 **Problem.** At fixed load and lead, more torque means lower efficiency.
 
-**Solution.** Apply the relation and model in §87.2; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** \(\eta=Fl/(2\pi T_R)\). At fixed load and lead, increasing required raising torque increases the denominator, so power-screw efficiency **decreases**. Self-locking must be checked separately from efficiency.
 
 ---
 
@@ -97,7 +97,7 @@ In a preloaded joint, only a fraction C of an external separating load adds to b
 
 **Problem.** A stiff member stack relative to the bolt gives a smaller fraction of external load added to the bolt.
 
-**Solution.** Apply the relation and model in §87.3; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** \(C=k_b/(k_b+k_m)\). Making the clamped members much stiffer than the bolt increases \(k_m\), making \(C\) smaller; consequently a smaller fraction \(CP\) of external tensile load is added to the bolt before separation.
 
 ---
 
@@ -113,7 +113,7 @@ These relations apply while the members remain in compression/contact according 
 
 **Problem.** If the member compression reaches zero, the pre-separation equations should no longer be extrapolated.
 
-**Solution.** Apply the relation and model in §87.4; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** Before separation, \(F_b=F_i+CP\) and member compression is \(F_i-(1-C)P\). Once member compression reaches zero, contact is lost and those pre-separation load-sharing equations cannot be extrapolated unchanged.
 
 ---
 
@@ -129,7 +129,7 @@ Joint design checks both bolt strength and separation. Adequate preload can impr
 
 **Problem.** Increasing preload raises separation margin but also raises mean bolt stress.
 
-**Solution.** Apply the relation and model in §87.5; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** Separation factor \(n_s=F_i/[P(1-C)]\) increases with preload \(F_i\), but higher preload also raises mean bolt stress. A sound design therefore balances separation margin against proof/fatigue limits and tightening uncertainty.
 
 ---
 
@@ -145,7 +145,7 @@ Bolted or riveted shear joints may fail by fastener shear, member bearing/crushi
 
 **Problem.** A thicker plate increases projected bearing area dt and reduces bearing stress for fixed load.
 
-**Solution.** Apply the relation and model in §87.6; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** Bearing stress is \(\sigma_b=F/(dt)\). For fixed load and bolt diameter, increasing plate thickness \(t\) increases projected bearing area and reduces bearing stress; net-section and shear failure modes still need separate checks.
 
 ---
 
@@ -161,7 +161,7 @@ An eccentric load creates direct shear plus a moment-induced shear pattern about
 
 **Problem.** Fasteners farther from the centroid carry larger moment-induced force in the simplified elastic model.
 
-**Solution.** Apply the relation and model in §87.7; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** In the elastic fastener-group model, the moment-induced force contribution is \(F_{2i}=Mr_i/\sum r_i^2\). Fasteners farther from the centroid therefore carry larger moment-induced force and often govern the combined direct-plus-moment check.
 
 ---
 
@@ -171,13 +171,13 @@ An eccentric load creates direct shear plus a moment-induced shear pattern about
 
 **Problem.** A calculation produces a stress or operating point that violates the model assumption used to obtain it. Is the result acceptable?
 
-**Solution.** No. Select the correct model or failure/operating region and solve again. Algebra does not override geometry, material behavior, or component-state validity.
+**Solution.** No. A joint solution that predicts separation while still using pre-separation bolt/member equations is internally inconsistent. Change the load-sharing state and check bolt, member, bearing, shear, and fatigue modes.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the FE Reference Handbook expression. Which should govern the exam solution?
 
-**Solution.** Use the Handbook expression and its definitions unless the problem explicitly provides another model.
+**Solution.** For **Power Screws, Threaded Fasteners, and Mechanical Joints**, use the FE Reference Handbook expression, symbols, and unit convention whenever it supplies the required model. The external source set **SHIGLEY** supports specification-required learned/application material that is not fully developed in the Handbook. If a remembered textbook formula conflicts with a supplied Handbook relation, the supplied Handbook relation governs unless the problem explicitly defines another model.
 
 ---
 
@@ -185,7 +185,12 @@ An eccentric load creates direct shear plus a moment-induced shear pattern about
 
 Primary source basis: **FE Mechanical specification Area(s) 14; FE Reference Handbook 10.6 Mechanical Engineering and supporting general sections, with the specific subsection/page identified in the ledger.**
 
-**Source boundary:** The Mechanical specification includes both directly tabulated Handbook equations and learned design concepts. This chapter does not assign invented Handbook pages to specification-required material that is not directly tabulated.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required mechanical-engineering knowledge that is not fully developed in the Handbook. **Guide synthesis** connects those sources into exam-oriented explanations, examples, model checks, and design context; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Nisbett, K. J., & Budynas, R. G. *Shigley's Mechanical Engineering Design* (2024 Release). McGraw Hill. ISBN 978-1-265-47269-6. Supporting scope: Failure theories, fatigue, springs, pressure-vessel screening, bearings, fasteners, shafts, keys, couplings, gears, and machine-element design.
+
+The external references support only the learned/application portion of the FE Mechanical specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +359,31 @@ D) It is always qualitative
 
 14. For **fastener group**, verify geometry, load direction, material model, units, operating regime, and whether the assumed failure or performance mode remains valid.
 
-15. The sketch exposes supports, force directions, geometry, constraints, energy/flow paths, and missing load cases before algebra obscures them.
+15. In **Power Screws, Threaded Fasteners, and Mechanical Joints**, start from the physical model and system/component state, not from an isolated formula. A valid solution must state thread geometry/friction, preserve the pre-separation load-sharing regime, and check bolt proof/fatigue plus member, shear, bearing, net-section, and fastener-group effects.
 
-16. Mechanical equations are model-dependent. The result must remain compatible with yielding/buckling/fatigue, flow regime, thermal state, contact, or kinematic constraints.
+16. Units and sign/reference conventions are part of the model in **Power Screws, Threaded Fasteners, and Mechanical Joints**. Convert all quantities to a consistent basis before substitution and state whether values are absolute/gauge, static/stagnation, nominal/local, input/output, or other relevant basis.
 
-17. The Handbook is the supplied exam reference; its definitions, correction factors, unit conventions, and tables should govern unless the problem explicitly supplies another relation.
+17. The FE Reference Handbook is the controlling exam reference when it supplies the relation for **Power Screws, Threaded Fasteners, and Mechanical Joints**. External sources **SHIGLEY** support only the learned material not fully developed in the Handbook.
 
-18. These checks catch impossible motion, unit errors, invalid thin-wall or linear assumptions, unrealistic stresses, interference, and parts that cannot be manufactured or assembled.
+18. Use a limiting or reversal check before accepting the result: let external tensile load approach zero and confirm bolt load approaches preload; increase member stiffness and confirm the bolt load fraction \(C\) decreases. A failure to reduce correctly indicates a geometry, regime, sign, unit, or model-selection error.
 
-19. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+19. **A.** Section §87.1, **Square-thread power screw torque**, uses \(T_R=\frac{Fd_m}{2}\frac{\pi\mu d_m+l}{\pi d_m-\mu l}+\frac{F\mu_cd_c}{2}\). Apply it only under the geometry/material/operating assumptions stated in §87.1, then compare the result with the physical behavior described there.
 
-20. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+20. **A.** Section §87.2, **Power-screw efficiency and self-locking**, uses \(\eta=\frac{Fl}{2\pi T_R}\). Apply it only under the geometry/material/operating assumptions stated in §87.2, then compare the result with the physical behavior described there.
 
-21. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+21. **A.** Section §87.3, **Preloaded bolted joints and stiffness ratio**, uses \(C=\frac{k_b}{k_b+k_m}\). Apply it only under the geometry/material/operating assumptions stated in §87.3, then compare the result with the physical behavior described there.
 
-22. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+22. **A.** Section §87.4, **Bolt and member load under external tension**, uses \(F_b=CP+F_i,\qquad F_m=(1-C)P-F_i\). Apply it only under the geometry/material/operating assumptions stated in §87.4, then compare the result with the physical behavior described there.
 
-23. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+23. **A.** Section §87.5, **Joint separation and bolt design factors**, uses \(n_s=\frac{F_i}{P(1-C)}\). Apply it only under the geometry/material/operating assumptions stated in §87.5, then compare the result with the physical behavior described there.
 
-24. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+24. **A.** Section §87.6, **Shear joints, bearing/crushing, and net-section rupture**, uses \(\tau=\frac FA,\qquad \sigma_{bearing}=\frac{F}{dt}\). Apply it only under the geometry/material/operating assumptions stated in §87.6, then compare the result with the physical behavior described there.
 
-25. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+25. **A.** Section §87.7, **Eccentrically loaded fastener groups and joining alternatives**, uses \(F_{2i}=\frac{Mr_i}{\sum r_i^2}\). Apply it only under the geometry/material/operating assumptions stated in §87.7, then compare the result with the physical behavior described there.
 
-26. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+26. **A.** An integrated **Power Screws, Threaded Fasteners, and Mechanical Joints** result is acceptable only after the governing physical model, geometry, operating/failure regime, units, and independent plausibility checks agree.
 
-27. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+27. **A.** In the fastener/joint chapter, Handbook relations remain tied to the ledger; Shigley supplies learned power-screw, preload, separation, bearing, and fastener-group context, while guide synthesis separates the applicable joint states.
 
 
 ---
@@ -410,25 +415,25 @@ D) It is always qualitative
 
 ## Practice Problem Solutions
 
-1. Use §87.1. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+1. **Independent check for §87.1 — Square-thread power screw torque.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. In the raising-torque relation, thread friction \(\mu\) appears in the numerator and also reduces the denominator margin. Increasing friction therefore increases the torque required to raise the load, all else equal.
 
-2. Use §87.2. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+2. **Independent check for §87.2 — Power-screw efficiency and self-locking.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. \(\eta=Fl/(2\pi T_R)\). At fixed load and lead, increasing required raising torque increases the denominator, so power-screw efficiency **decreases**. Self-locking must be checked separately from efficiency.
 
-3. Use §87.3. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+3. **Independent check for §87.3 — Preloaded bolted joints and stiffness ratio.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. \(C=k_b/(k_b+k_m)\). Making the clamped members much stiffer than the bolt increases \(k_m\), making \(C\) smaller; consequently a smaller fraction \(CP\) of external tensile load is added to the bolt before separation.
 
-4. Use §87.4. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+4. **Independent check for §87.4 — Bolt and member load under external tension.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. Before separation, \(F_b=F_i+CP\) and member compression is \(F_i-(1-C)P\). Once member compression reaches zero, contact is lost and those pre-separation load-sharing equations cannot be extrapolated unchanged.
 
-5. Use §87.5. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+5. **Independent check for §87.5 — Joint separation and bolt design factors.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. Separation factor \(n_s=F_i/[P(1-C)]\) increases with preload \(F_i\), but higher preload also raises mean bolt stress. A sound design therefore balances separation margin against proof/fatigue limits and tightening uncertainty.
 
-6. Use §87.6. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+6. **Independent check for §87.6 — Shear joints, bearing/crushing, and net-section rupture.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. Bearing stress is \(\sigma_b=F/(dt)\). For fixed load and bolt diameter, increasing plate thickness \(t\) increases projected bearing area and reduces bearing stress; net-section and shear failure modes still need separate checks.
 
-7. Use §87.7. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+7. **Independent check for §87.7 — Eccentrically loaded fastener groups and joining alternatives.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. In the elastic fastener-group model, the moment-induced force contribution is \(F_{2i}=Mr_i/\sum r_i^2\). Fasteners farther from the centroid therefore carry larger moment-induced force and often govern the combined direct-plus-moment check.
 
-8. Check dimensions, load direction, support/interface assumptions, material regime, fatigue/static basis, operating speed/temperature/pressure, and any geometric validity limit such as thin-wall or small-deflection assumptions.
+8. For **Power Screws, Threaded Fasteners, and Mechanical Joints**, one required acceptance screen is: state thread geometry/friction, preserve the pre-separation load-sharing regime, and check bolt proof/fatigue plus member, shear, bearing, net-section, and fastener-group effects. A result that violates this screen must be rejected or recomputed with the proper model.
 
-9. Start with FE Mechanical specification Area(s) 14, then use the Handbook subsection named in the corresponding ledger entry.
+9. Start with the FE Mechanical specification area and FE Reference Handbook location recorded in the ledger for **Power Screws, Threaded Fasteners, and Mechanical Joints**. For `split_required` concepts, use **SHIGLEY** for the learned/application portion without inventing a Handbook page or clause.
 
-10. Test a simple limit such as zero load, very large stiffness, matched speed ratio, zero pressure, zero damping, or maximum/minimum fit. Confirm the result trends in the physically expected direction and remains manufacturable.
+10. Apply this limiting-case test independently: let external tensile load approach zero and confirm bolt load approaches preload; increase member stiffness and confirm the bolt load fraction \(C\) decreases. If the simplified case does not behave as expected, revisit the setup before trusting the full calculation.
 
 ---
 

@@ -65,7 +65,7 @@ Safety decisions should control hazards at the source where practical rather tha
 
 **Problem.** A fixed machine guard is generally a stronger control than warning signage alone.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §94.1.
+**Solution.** A fixed guard is an engineering control because it physically prevents contact with the hazard without relying on a worker to remember a rule. Warning signs are administrative controls and generally rank lower in the hierarchy because effectiveness depends more heavily on human behavior.
 
 ---
 
@@ -81,7 +81,7 @@ Other Disciplines safety questions may involve chemical, radiation, biological, 
 
 **Problem.** A short-term exposure limit cannot be evaluated using only an 8-hour average if the peak matters.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §94.2.
+**Solution.** An 8-hour TWA and a short-term exposure limit answer different questions. A compliant daily average can still contain an unacceptable 15-minute peak, so compare each averaging interval with the corresponding occupational exposure criterion.
 
 ---
 
@@ -97,7 +97,7 @@ Protection layers must match the hazard: pressure relief for overpressure, emerg
 
 **Problem.** A relief valve protects pressure equipment from overpressure but does not substitute for eliminating an ignition source.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §94.3.
+**Solution.** A relief valve mitigates one consequence—overpressure—by opening a discharge path at its set condition. Ignition control addresses a different hazard pathway. Layered protection requires each safeguard to be credited only for the failure mode it can actually prevent or mitigate.
 
 ---
 
@@ -113,7 +113,7 @@ Economic decisions require a common time basis. Present worth, annual worth, fut
 
 **Problem.** Two projects with unequal lives should not be compared by raw total cash flow alone.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §94.4.
+**Solution.** Unequal-life alternatives should be compared on an equivalent economic basis such as present worth over a common study period, annual worth, or repeatability assumptions. Adding undiscounted cash flows ignores both time value and unequal service duration.
 
 ---
 
@@ -129,7 +129,7 @@ Expected value combines outcomes with probabilities, but risk tolerance, safety 
 
 **Problem.** A low-probability catastrophic safety consequence may dominate a design decision even when expected monetary loss is modest.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §94.5.
+**Solution.** Expected monetary value is not a complete safety criterion when consequences are severe, irreversible, or constrained by law/ethics. A low-probability fatal or catastrophic outcome may require risk reduction even when \(p\times\) monetary consequence appears small.
 
 ---
 
@@ -145,7 +145,7 @@ FE ethics questions test professional obligations, conflicts, competence, disclo
 
 **Problem.** An engineer who discovers a material safety defect must address the public-safety implications rather than treating it as only a cost issue.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §94.6.
+**Solution.** Professional duty is not reduced to a cost trade. Once a material defect can affect public safety, the engineer must communicate and address the hazard through the applicable professional, organizational, and legal channels rather than suppressing it for schedule or budget reasons.
 
 ---
 
@@ -161,7 +161,7 @@ A sound cross-domain decision integrates technical performance, safety, reliabil
 
 **Problem.** A cheaper pump with lower efficiency and shorter life can have a higher lifecycle cost and larger environmental impact than a higher first-cost alternative.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §94.7.
+**Solution.** Compare the alternatives over the same service function and life. A lower-price pump can lose economically through higher energy use, maintenance, downtime, and earlier replacement; those same inefficiencies can also increase lifecycle resource use and emissions.
 
 ---
 
@@ -171,13 +171,13 @@ A sound cross-domain decision integrates technical performance, safety, reliabil
 
 **Problem.** A mixed question contains electrical, mechanical, and economic information. Must every datum be used?
 
-**Solution.** No. First identify the requested quantity and governing model. Use only the data needed for the current stage, then carry the resulting intermediate quantity—clearly labeled with units—into the next stage if required.
+**Solution.** No. A safety/economics decision should use only data tied to the hazard, exposure, safeguard, cash-flow, probability, or ethical constraint being evaluated. A datum becomes relevant only when it enters that decision model or a preceding dependency.
 
 ### Worked Example 9
 
 **Problem.** You find a familiar equation in memory but a different-looking form in the FE Reference Handbook. What should you do?
 
-**Solution.** Use the Handbook form after checking its definitions and assumptions. Do not force a remembered formula onto a problem merely because it resembles the topic.
+**Solution.** For economics, probability, and safety calculations, use the Handbook equation or table whose averaging basis, cash-flow timing, probability definition, or risk metric matches the prompt. External standards supply context, not a reason to override the exam reference.
 
 ---
 
@@ -185,7 +185,17 @@ A sound cross-domain decision integrates technical performance, safety, reliabil
 
 **Primary source basis:** FE Other Disciplines CBT specification, printed pp. 498–500. Unlike the six discipline-specific FE routes, Other Disciplines has no dedicated discipline section in Handbook 10.6; it relies on the general Handbook sections across the book.
 
-**Source boundary:** The integration workflow, classification strategy, and cross-domain transfer methods are guide-developed. Underlying equations remain owned and sourced by their canonical earlier chapters.
+**Source boundary:** **FE-Handbook-supported** material consists of the underlying equations, tables, definitions, and discipline models located in the FE Reference Handbook and recorded in the ledger. **Externally supported** material covers Other Disciplines specification knowledge, application context, standards, and integration details that are not fully developed in the Handbook. **Guide synthesis** is the cross-domain classification, transfer, verification, and exam-strategy workflow created for this supplemental guide; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- National Institute for Occupational Safety and Health. (2024). *Hierarchy of Controls*. Centers for Disease Control and Prevention. Supporting scope: Preferred sequence of elimination, substitution, engineering controls, administrative controls, and PPE.
+- National Institute for Occupational Safety and Health. *NIOSH Pocket Guide to Chemical Hazards*, current online edition. Supporting scope: Industrial-hygiene chemical data, RELs/PELs, exposure routes, symptoms, target organs, control information, and measurement methods.
+- U.S. Environmental Protection Agency. (2011). *Exposure Factors Handbook: 2011 Edition* (EPA/600/R-09/052F), with subsequent chapter updates where applicable. Supporting scope: Exposure factors, variability/uncertainty, inhalation/ingestion/dermal inputs, body weight, activity patterns, and human-exposure calculations.
+- Newnan, D. G., Eschenbach, T. G., Lavelle, J. P., & Lewis, N. A. *Engineering Economic Analysis* (14th ed.). Oxford University Press. Supporting scope: Engineering-economic equivalence, alternative comparison, life-cycle cost, uncertainty, expected value, and economic decision making.
+- Montgomery, D. C., & Runger, G. C. (2018). *Applied Statistics and Probability for Engineers* (7th ed.). Wiley. Supporting scope: Probability, random variables, expected value, statistical inference, uncertainty, and engineering data analysis.
+- National Society of Professional Engineers. *NSPE Code of Ethics for Engineers* (rev. July 2019). Supporting scope: Public safety, health and welfare, competence, truthfulness, professional conduct, and engineering ethics.
+
+Because Other Disciplines intentionally integrates material owned by earlier chapters, external references support the learned/application and cross-domain portions only. The FE Reference Handbook remains the exam reference, and the ledger retains the canonical Handbook locations for the underlying equations.
 
 ---
 
@@ -344,31 +354,31 @@ D) It is unrelated to Handbook navigation
 
 14. For **life-cycle engineering decision**, check the controlling domain, system boundary, units, model assumptions, and the prerequisite concept being reused.
 
-15. Classification narrows the search space and prevents using a familiar equation from the wrong discipline or physical model.
+15. Safety/economics problems must first be classified as hazard control, exposure assessment, protective-system design, economic comparison, uncertainty, or ethics. That keeps exposure limits, discounted cash-flow equations, and professional-duty rules from being mixed into the wrong decision.
 
-16. The canonical concept already exists in an earlier layer/track; the integration atom teaches when and how to reuse it in a mixed problem.
+16. The component risk, economics, probability, and ethics concepts are sourced elsewhere; this chapter combines them when one engineering choice has several consequences. Integration is therefore about trade-space structure and constraints rather than duplicating each specialty model.
 
-17. Compare variable definitions, units, boundary conditions, and operating assumptions. Use the relation that matches the actual problem and Handbook context.
+17. Match the averaging period, exposure route, cash-flow timing, probability model, and legal/ethical constraint before choosing among plausible equations. A TWA, STEL, present-worth factor, or expected-value model is valid only for its own defined basis.
 
-18. These checks catch wrong-domain solutions, hidden conversion errors, impossible signs or efficiencies, and decisions that violate physical, safety, or professional constraints.
+18. A decision can fail even when the arithmetic is right. Check exposure limits, safeguard independence, probability bounds, equivalent economic basis, public-safety obligations, and lifecycle consequences before accepting the preferred alternative.
 
-19. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+19. **A.** Hazard control should preferentially remove or reduce the hazard at its source through elimination, substitution, or engineering controls before relying on procedures or PPE. The chosen control must address the actual exposure pathway.
 
-20. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+20. **A.** Exposure assessment requires concentration/intensity, duration, frequency, route, and the averaging period tied to the applicable limit or toxicity metric. A single average cannot represent every acute and chronic criterion.
 
-21. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+21. **A.** Relief, shutdown, fire protection, electrical protection, and similar safeguards are engineered layers with specific initiating conditions and failure modes. Credit only safeguards that are independent enough and actually act on the scenario being evaluated.
 
-22. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+22. **A.** Economic comparison requires equivalent service and time basis. Discounted present/annual worth, replacement assumptions, and operating costs are needed before alternatives with different timing or lives can be compared fairly.
 
-23. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+23. **A.** Expected value is useful for uncertain outcomes, but decision trees must retain conditional probabilities and consequence structure. Safety/legal constraints may dominate even when expected monetary value favors a riskier alternative.
 
-24. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+24. **A.** Professional judgment is bounded by protection of the public, competence, truthful communication, and applicable law/standards. Cost or schedule pressure does not cancel those duties.
 
-25. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+25. **A.** Lifecycle decisions combine acquisition, energy, maintenance, reliability, safety, environmental burden, and end-of-life effects. The least first-cost option is not automatically the best engineering choice.
 
-26. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+26. **A.** A hazard-control decision should document the hazard, exposure path, selected layer of control, residual risk, and verification method. A lower-ranked control is not equivalent to eliminating or engineering out the hazard merely because it is cheaper.
 
-27. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+27. **A.** Exposure assessment must distinguish concentration from dose, acute from chronic averaging periods, and legal limits from recommended or risk-based values. Those distinctions determine which number can be compared with which criterion.
 
 
 ---
@@ -400,25 +410,25 @@ D) It is unrelated to Handbook navigation
 
 ## Practice Problem Solutions
 
-1. Use §94.1. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+1. Apply the §94.1 model independently. Hazard control should preferentially remove or reduce the hazard at its source through elimination, substitution, or engineering controls before relying on procedures or PPE. The chosen control must address the actual exposure pathway. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-2. Use §94.2. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+2. Apply the §94.2 model independently. Exposure assessment requires concentration/intensity, duration, frequency, route, and the averaging period tied to the applicable limit or toxicity metric. A single average cannot represent every acute and chronic criterion. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-3. Use §94.3. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+3. Apply the §94.3 model independently. Relief, shutdown, fire protection, electrical protection, and similar safeguards are engineered layers with specific initiating conditions and failure modes. Credit only safeguards that are independent enough and actually act on the scenario being evaluated. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-4. Use §94.4. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+4. Apply the §94.4 model independently. Economic comparison requires equivalent service and time basis. Discounted present/annual worth, replacement assumptions, and operating costs are needed before alternatives with different timing or lives can be compared fairly. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-5. Use §94.5. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+5. Apply the §94.5 model independently. Expected value is useful for uncertain outcomes, but decision trees must retain conditional probabilities and consequence structure. Safety/legal constraints may dominate even when expected monetary value favors a riskier alternative. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-6. Use §94.6. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+6. Apply the §94.6 model independently. Professional judgment is bounded by protection of the public, competence, truthful communication, and applicable law/standards. Cost or schedule pressure does not cancel those duties. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-7. Use §94.7. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+7. Apply the §94.7 model independently. Lifecycle decisions combine acquisition, energy, maintenance, reliability, safety, environmental burden, and end-of-life effects. The least first-cost option is not automatically the best engineering choice. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-8. Example structure: electrical input power → motor efficiency → shaft power → pump/fluid model → operating cost. Every arrow must carry a defined quantity and units.
+8. For a cross-domain decision, sequence hazard/exposure identification → safeguard or design alternatives → probability/consequence assessment → equivalent economic comparison → ethics/legal/public-safety constraint check. Some constraints can eliminate an option before cost comparison.
 
-9. The FE Other Disciplines specification is printed on pp. 498–500. The route has no dedicated discipline chapter in Handbook 10.6, so examinees use the relevant general sections instead.
+9. The specification defines Other Disciplines on printed pp. 498–500; safety, probability, economics, and ethics material is distributed through the general Handbook sections instead of being repeated in a separate Other Disciplines section.
 
-10. Reject answers with impossible units, efficiencies above 100% where not physically meaningful, negative absolute quantities, violated support/device states, broken conservation, or unsafe/unethical implementation assumptions.
+10. Reject an economically attractive option if it violates a safety limit, depends on an invalid probability, ignores a required safeguard, or conflicts with the engineer's duty to protect the public.
 
 ---
 

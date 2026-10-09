@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="648pt" viewBox="0 0 864 648" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-08T19:31:01.694290</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 648 
+L 864 648 
+L 864 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 47.52 332.1648 
+L 308.9664 332.1648 
+L 308.9664 166.7304 
+L 47.52 166.7304 
+z
+" clip-path="url(#p78755d26d2)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 555.0336 332.1648 
+L 816.48 332.1648 
+L 816.48 166.7304 
+L 555.0336 166.7304 
+z
+" clip-path="url(#p78755d26d2)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(132.936169 238.739866)">INITIAL</text>
+    <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(108.906481 273.780959)">T_i=100°C</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(641.983362 239.101428)">AT t=τ</text>
+    <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(614.128831 274.142522)">T=49.43°C</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #235a78" x="432" y="199.628225" transform="rotate(-0 432 199.628225)">Cooling</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 26px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="423.930412" transform="rotate(-0 432 423.930412)">Q_out=mc(T_i−T)=500(100−49.43)</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 26px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="522.296812" transform="rotate(-0 432 522.296812)">Q_out=25.28 kJ; Q_in=−25.28 kJ</text>
+   </g>
+   <g id="patch_4">
+    <path d="M 310.967648 249.4476 
+Q 432.00069 249.4476 551.133073 249.4476 
+" clip-path="url(#p78755d26d2)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 545.133073 246.4476 
+L 551.133073 249.4476 
+L 545.133073 252.4476 
+z
+" clip-path="url(#p78755d26d2)" style="fill: #235a78; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+  </g>
+  <g id="text_6">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Cumulative cooling equals the body’s decrease in sensible internal energy</text>
+  </g>
+  <g id="text_7">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="47.52" y="630.504" transform="rotate(-0 47.52 630.504)">0636  •  FIG-02-56-003</text>
+  </g>
+  <g id="text_8">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(90.496094 590.616625)">Same lumped example as figure 635: m=1 kg,c=500 J/(kg·K),τ=200 s,T∞=20°C. Heat-out is a positive magnitude; heat-positive-in uses</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(320.583594 603.334125)">its negative. Negligible work/KE/PE changes.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p78755d26d2">
+   <rect x="47.52" y="90.72" width="768.96" height="447.12"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -65,7 +65,7 @@ Shafts commonly carry bending and torque simultaneously. Combined-stress criteri
 
 **Problem.** Increasing shaft diameter strongly reduces bending and torsional stress because stress scales roughly with 1/d^3.
 
-**Solution.** Apply the relation and model in §88.1; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** For a solid circular shaft, \(\tau_{max}\sim16T/(\pi d^3)\) and \(\sigma_b\sim32M/(\pi d^3)\). Both therefore fall roughly with \(d^{-3}\); a modest diameter increase can substantially reduce bending and torsional stress.
 
 ---
 
@@ -81,7 +81,7 @@ Rotating shafts often experience alternating bending plus steady or fluctuating 
 
 **Problem.** A stationary transverse load on a rotating shaft creates fully reversed bending at a material point.
 
-**Solution.** Apply the relation and model in §88.2; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** A material point on a rotating shaft under a fixed transverse load cycles from tension to compression once per revolution, producing approximately fully reversed bending. Fatigue design must therefore use the alternating component even though the external load is stationary.
 
 ---
 
@@ -97,7 +97,7 @@ Keys, splines, and couplings transmit torque between shafts and hubs while allow
 
 **Problem.** A key must be checked for both shear and bearing/crushing under transmitted torque.
 
-**Solution.** Apply the relation and model in §88.3; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** A key transmits torque through contact and shear. The same transmitted load can fail the key in shear or create excessive bearing/crushing stress on the key/shaft/hub surfaces, so both modes must be checked.
 
 ---
 
@@ -113,7 +113,7 @@ Gear pitch geometry links tooth count, pitch diameter, circular pitch, module, a
 
 **Problem.** A 40-tooth gear with module 2 mm has pitch diameter 80 mm.
 
-**Solution.** Apply the relation and model in §88.4; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** Module is \(m=d/N\), hence \(d=mN=(2\ {\rm mm})(40)=\mathbf{80\ mm}\) pitch diameter. The tooth count is dimensionless, so multiplying module in millimeters per tooth by 40 teeth leaves the pitch diameter in millimeters.
 
 ---
 
@@ -129,7 +129,7 @@ Only the tangential tooth-force component transmits torque; the radial component
 
 **Problem.** For fixed torque, increasing pitch diameter reduces tangential tooth force.
 
-**Solution.** Apply the relation and model in §88.5; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** Torque and tangential force satisfy \(T=W_td/2\), so \(W_t=2T/d\). At fixed torque, increasing pitch diameter reduces tooth tangential force; the radial component follows \(W_r=W_t\tan\phi\).
 
 ---
 
@@ -145,7 +145,7 @@ The Lewis equation idealizes a gear tooth as a beam and estimates bending capaci
 
 **Problem.** Larger face width increases tooth bending capacity under the simplified relation.
 
-**Solution.** Apply the relation and model in §88.6; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** The Lewis-type bending capacity is proportional to face width \(F\) when the other geometry/material terms are fixed. Increasing face width therefore increases ideal tooth bending capacity, while contact stress, alignment, and manufacturing limits still matter.
 
 ---
 
@@ -161,7 +161,7 @@ Belt and chain drives provide flexible center distance and speed reduction/incre
 
 **Problem.** A 2-in driver pulley and 6-in driven pulley give approximately 3:1 speed reduction without slip.
 
-**Solution.** Apply the relation and model in §88.7; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** For a no-slip belt, \(\omega_2/\omega_1\approx D_1/D_2=2/6=\mathbf{1/3}\). The 6-in driven pulley therefore turns at one-third the driver speed, a **3:1 speed reduction**.
 
 ---
 
@@ -171,13 +171,13 @@ Belt and chain drives provide flexible center distance and speed reduction/incre
 
 **Problem.** A calculation produces a stress or operating point that violates the model assumption used to obtain it. Is the result acceptable?
 
-**Solution.** No. Select the correct model or failure/operating region and solve again. Algebra does not override geometry, material behavior, or component-state validity.
+**Solution.** No. A power-transmission design must satisfy combined stress, fatigue, geometry, connection, tooth/belt/chain capacity, alignment, and speed-ratio constraints. A single passing equation is not sufficient.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the FE Reference Handbook expression. Which should govern the exam solution?
 
-**Solution.** Use the Handbook expression and its definitions unless the problem explicitly provides another model.
+**Solution.** For **Shafts, Keys, Couplings, Gears, Belts, Chains, and Power Transmission**, use the FE Reference Handbook expression, symbols, and unit convention whenever it supplies the required model. The external source set **SHIGLEY** supports specification-required learned/application material that is not fully developed in the Handbook. If a remembered textbook formula conflicts with a supplied Handbook relation, the supplied Handbook relation governs unless the problem explicitly defines another model.
 
 ---
 
@@ -185,7 +185,12 @@ Belt and chain drives provide flexible center distance and speed reduction/incre
 
 Primary source basis: **FE Mechanical specification Area(s) 14; FE Reference Handbook 10.6 Mechanical Engineering and supporting general sections, with the specific subsection/page identified in the ledger.**
 
-**Source boundary:** The Mechanical specification includes both directly tabulated Handbook equations and learned design concepts. This chapter does not assign invented Handbook pages to specification-required material that is not directly tabulated.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required mechanical-engineering knowledge that is not fully developed in the Handbook. **Guide synthesis** connects those sources into exam-oriented explanations, examples, model checks, and design context; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Nisbett, K. J., & Budynas, R. G. *Shigley's Mechanical Engineering Design* (2024 Release). McGraw Hill. ISBN 978-1-265-47269-6. Supporting scope: Failure theories, fatigue, springs, pressure-vessel screening, bearings, fasteners, shafts, keys, couplings, gears, and machine-element design.
+
+The external references support only the learned/application portion of the FE Mechanical specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +359,31 @@ D) It is always qualitative
 
 14. For **belt and chain drive**, verify geometry, load direction, material model, units, operating regime, and whether the assumed failure or performance mode remains valid.
 
-15. The sketch exposes supports, force directions, geometry, constraints, energy/flow paths, and missing load cases before algebra obscures them.
+15. In **Shafts, Keys, Couplings, Gears, Belts, Chains, and Power Transmission**, start from the physical model and system/component state, not from an isolated formula. A valid solution must keep torque/power/speed consistent, check combined shaft fatigue/static stress, connection capacity, gear geometry/tooth loading, and belt/chain ratio and service factors.
 
-16. Mechanical equations are model-dependent. The result must remain compatible with yielding/buckling/fatigue, flow regime, thermal state, contact, or kinematic constraints.
+16. Units and sign/reference conventions are part of the model in **Shafts, Keys, Couplings, Gears, Belts, Chains, and Power Transmission**. Convert all quantities to a consistent basis before substitution and state whether values are absolute/gauge, static/stagnation, nominal/local, input/output, or other relevant basis.
 
-17. The Handbook is the supplied exam reference; its definitions, correction factors, unit conventions, and tables should govern unless the problem explicitly supplies another relation.
+17. The FE Reference Handbook is the controlling exam reference when it supplies the relation for **Shafts, Keys, Couplings, Gears, Belts, Chains, and Power Transmission**. External sources **SHIGLEY** support only the learned material not fully developed in the Handbook.
 
-18. These checks catch impossible motion, unit errors, invalid thin-wall or linear assumptions, unrealistic stresses, interference, and parts that cannot be manufactured or assembled.
+18. Use a limiting or reversal check before accepting the result: double shaft diameter at fixed moment/torque and confirm ideal stress drops by a factor of eight; use equal pulley diameters and confirm speed ratio approaches one. A failure to reduce correctly indicates a geometry, regime, sign, unit, or model-selection error.
 
-19. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+19. **A.** Section §88.1, **Shaft bending, torsion, and combined stress**, uses \(\tau_{max}\sim \frac{16T}{\pi d^3},\qquad \sigma_b\sim\frac{32M}{\pi d^3}\). Apply it only under the geometry/material/operating assumptions stated in §88.1, then compare the result with the physical behavior described there.
 
-20. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+20. **A.** Section §88.2, **Fatigue design of rotating shafts**, uses \(d^3\propto n\sqrt{\left(\frac{K_fM_a}{S_e}+\frac{M_m}{S_y}\right)^2+\left(\frac{K_{fs}T_a}{S_e}+\frac{T_m}{S_y}\right)^2}\). Apply it only under the geometry/material/operating assumptions stated in §88.2, then compare the result with the physical behavior described there.
 
-21. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+21. **A.** Section §88.3, **Keys, splines, and couplings**, uses \(\text{torque transmitted by shear/bearing through the connection}\). Apply it only under the geometry/material/operating assumptions stated in §88.3, then compare the result with the physical behavior described there.
 
-22. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+22. **A.** Section §88.4, **Spur-gear geometry and pitch relationships**, uses \(p_c=\frac{\pi d}{N},\qquad m=\frac dN\). Apply it only under the geometry/material/operating assumptions stated in §88.4, then compare the result with the physical behavior described there.
 
-23. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+23. **A.** Section §88.5, **Gear forces and power transmission**, uses \(W_r=W_t\tan\phi,\qquad T=\frac{W_td}{2}\). Apply it only under the geometry/material/operating assumptions stated in §88.5, then compare the result with the physical behavior described there.
 
-24. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+24. **A.** Section §88.6, **Lewis bending equation and gear-tooth strength**, uses \(W_t=F Y\frac{1}{P}\sigma_{allow}\text{ in equivalent form}\). Apply it only under the geometry/material/operating assumptions stated in §88.6, then compare the result with the physical behavior described there.
 
-25. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+25. **A.** Section §88.7, **Belts, chains, speed ratio, and transmission selection**, uses \(\frac{\omega_2}{\omega_1}\approx\frac{D_1}{D_2}\). Apply it only under the geometry/material/operating assumptions stated in §88.7, then compare the result with the physical behavior described there.
 
-26. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+26. **A.** An integrated **Shafts, Keys, Couplings, Gears, Belts, Chains, and Power Transmission** result is acceptable only after the governing physical model, geometry, operating/failure regime, units, and independent plausibility checks agree.
 
-27. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+27. **A.** In the power-transmission chapter, Handbook-supported shaft/gear relations remain primary; Shigley supplies learned fatigue and machine-element design context for shafts, keys, gears, belts, and couplings, while guide synthesis integrates the checks.
 
 
 ---
@@ -410,25 +415,25 @@ D) It is always qualitative
 
 ## Practice Problem Solutions
 
-1. Use §88.1. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+1. **Independent check for §88.1 — Shaft bending, torsion, and combined stress.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. For a solid circular shaft, \(\tau_{max}\sim16T/(\pi d^3)\) and \(\sigma_b\sim32M/(\pi d^3)\). Both therefore fall roughly with \(d^{-3}\); a modest diameter increase can substantially reduce bending and torsional stress.
 
-2. Use §88.2. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+2. **Independent check for §88.2 — Fatigue design of rotating shafts.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. A material point on a rotating shaft under a fixed transverse load cycles from tension to compression once per revolution, producing approximately fully reversed bending. Fatigue design must therefore use the alternating component even though the external load is stationary.
 
-3. Use §88.3. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+3. **Independent check for §88.3 — Keys, splines, and couplings.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. A key transmits torque through contact and shear. The same transmitted load can fail the key in shear or create excessive bearing/crushing stress on the key/shaft/hub surfaces, so both modes must be checked.
 
-4. Use §88.4. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+4. **Independent check for §88.4 — Spur-gear geometry and pitch relationships.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. Module is \(m=d/N\), hence \(d=mN=(2\ {\rm mm})(40)=\mathbf{80\ mm}\) pitch diameter.
 
-5. Use §88.5. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+5. **Independent check for §88.5 — Gear forces and power transmission.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. Torque and tangential force satisfy \(T=W_td/2\), so \(W_t=2T/d\). At fixed torque, increasing pitch diameter reduces tooth tangential force; the radial component follows \(W_r=W_t\tan\phi\).
 
-6. Use §88.6. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+6. **Independent check for §88.6 — Lewis bending equation and gear-tooth strength.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. The Lewis-type bending capacity is proportional to face width \(F\) when the other geometry/material terms are fixed. Increasing face width therefore increases ideal tooth bending capacity, while contact stress, alignment, and manufacturing limits still matter.
 
-7. Use §88.7. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+7. **Independent check for §88.7 — Belts, chains, speed ratio, and transmission selection.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. For a no-slip belt, \(\omega_2/\omega_1\approx D_1/D_2=2/6=\mathbf{1/3}\). The 6-in driven pulley therefore turns at one-third the driver speed, a **3:1 speed reduction**.
 
-8. Check dimensions, load direction, support/interface assumptions, material regime, fatigue/static basis, operating speed/temperature/pressure, and any geometric validity limit such as thin-wall or small-deflection assumptions.
+8. For **Shafts, Keys, Couplings, Gears, Belts, Chains, and Power Transmission**, one required acceptance screen is: keep torque/power/speed consistent, check combined shaft fatigue/static stress, connection capacity, gear geometry/tooth loading, and belt/chain ratio and service factors. A result that violates this screen must be rejected or recomputed with the proper model.
 
-9. Start with FE Mechanical specification Area(s) 14, then use the Handbook subsection named in the corresponding ledger entry.
+9. Start with the FE Mechanical specification area and FE Reference Handbook location recorded in the ledger for **Shafts, Keys, Couplings, Gears, Belts, Chains, and Power Transmission**. For `split_required` concepts, use **SHIGLEY** for the learned/application portion without inventing a Handbook page or clause.
 
-10. Test a simple limit such as zero load, very large stiffness, matched speed ratio, zero pressure, zero damping, or maximum/minimum fit. Confirm the result trends in the physically expected direction and remains manufacturable.
+10. Apply this limiting-case test independently: double shaft diameter at fixed moment/torque and confirm ideal stress drops by a factor of eight; use equal pulley diameters and confirm speed ratio approaches one. If the simplified case does not behave as expected, revisit the setup before trusting the full calculation.
 
 ---
 

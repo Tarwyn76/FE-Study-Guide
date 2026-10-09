@@ -65,7 +65,7 @@ Inspection alone is not a quality system; quality spans requirements, process co
 
 **Problem.** A capable process still needs measurement and control to sustain performance.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** Capability describes what a stable process distribution can potentially meet relative to specifications; control describes whether the process is statistically stable over time. A capable process can drift out of control, and an in-control process can still be incapable.
 
 ---
 
@@ -81,7 +81,7 @@ QFD translates customer needs into measurable engineering characteristics and pr
 
 **Problem.** A desire for quiet operation can map to a sound-pressure requirement.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** QFD translates a customer statement such as 'quiet operation' into measurable engineering characteristics—e.g., sound-pressure level at a defined distance/operating condition—then records relationships and tradeoffs in the House of Quality.
 
 ---
 
@@ -97,7 +97,7 @@ Cause-and-effect tools organize possible variation sources; Taguchi loss emphasi
 
 **Problem.** Two parts within specification can have different expected loss if one is farther from target.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** Taguchi loss \(L(y)=k(y-T)^2\) increases continuously with squared deviation from target. Two units can both lie inside specification limits yet have different expected loss if one is farther from the target value.
 
 ---
 
@@ -113,7 +113,7 @@ Control charts distinguish common-cause behavior from evidence of special causes
 
 **Problem.** A point beyond UCL triggers investigation even if the item is still within specification.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** A point outside a control limit is evidence of special-cause behavior under the chart model, even when the measured item remains within engineering specification limits. Control limits come from process statistics; specification limits come from design/customer requirements.
 
 ---
 
@@ -129,7 +129,7 @@ Cp measures potential centered capability; Cpk also reflects centering.
 
 **Problem.** For a centered process, Cp=Cpk.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** For a centered process, \(\mu=(USL+LSL)/2\), so the upper and lower \(C_{pk}\) terms are equal to \((USL-LSL)/(6\sigma)=C_p\). Therefore **\(C_{pk}=C_p\)** only when centering and the model assumptions hold.
 
 ---
 
@@ -145,7 +145,7 @@ Acceptance sampling makes lot decisions from samples; the OC curve shows accepta
 
 **Problem.** A stricter plan reduces acceptance of poor lots but may reject more good lots.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** An acceptance-sampling plan trades producer and consumer risks. Tightening \(n,c\) to reduce acceptance probability for poor lots generally also reduces acceptance probability for some good lots; the OC curve shows this operating characteristic versus incoming defect level.
 
 ---
 
@@ -161,7 +161,7 @@ Factorial experiments estimate main effects and interactions efficiently; ANOVA 
 
 **Problem.** An interaction means one factor’s effect depends on another factor’s level.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** In a factorial experiment, an interaction means the effect of factor A changes across levels of factor B. Main-effect averages alone can therefore be misleading; inspect interaction estimates/plots and use ANOVA with appropriate randomization, replication, and error structure.
 
 ---
 
@@ -171,13 +171,13 @@ Factorial experiments estimate main effects and interactions efficiently; ANOVA 
 
 **Problem.** A numerical optimum violates an operating rule omitted from the model. Is it implementable?
 
-**Solution.** No. Add the missing operational restriction and re-solve. Mathematical feasibility applies only to the stated model.
+**Solution.** In **Quality Management, SPC, Process Capability, Sampling, and DOE**, do not accept a local optimum or locally improved metric until it is checked against the chapter's system boundary and feasibility conditions. Industrial-and-systems problems commonly fail when a local improvement shifts delay, cost, risk, inventory, workload, defects, or constraints elsewhere in the system.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the FE Reference Handbook expression. Which should govern?
 
-**Solution.** Use the Handbook expression and definitions unless the problem explicitly provides another model.
+**Solution.** For this chapter, the FE Reference Handbook relation and variable definitions control whenever the Handbook supplies them. Use the external source set **MONT_QC, MONT_DOE** only for specification-required learned material not fully developed in the Handbook.
 
 ---
 
@@ -185,7 +185,13 @@ Factorial experiments estimate main effects and interactions efficiently; ANOVA 
 
 Primary source basis: **FE Industrial & Systems specification Area(s) 12; FE Reference Handbook 10.6 Industrial and Systems Engineering, printed pp. 422–435.**
 
-Specification-required management/design topics that are not directly tabulated are identified as learned or guide-developed rather than assigned false Handbook pages.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required industrial/systems engineering knowledge not fully developed in the Handbook. **Guide synthesis** connects those sources into exam-oriented explanations, worked examples, and decision checks; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Montgomery, D. C. (2019). *Introduction to Statistical Quality Control* (8th ed.). Wiley. ISBN 978-1-119-39930-8. Supporting scope: SPC, control charts, process capability, acceptance sampling, quality improvement, and experimental methods.
+- Montgomery, D. C. (2019). *Design and Analysis of Experiments* (10th ed.). Wiley. Supporting scope: Factorial experiments, interaction effects, ANOVA, randomization, replication, and experimental design.
+
+External references support the learned/application portion of the Industrial and Systems specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +360,31 @@ D) It is always only qualitative
 
 14. For **industrial factorial design**, verify data basis, units, capacity/probability conditions, and operational feasibility.
 
-15. The boundary and objective determine what counts as performance and which constraints matter.
+15. In **Quality Management, SPC, Process Capability, Sampling, and DOE**, the model boundary determines what is included in the decision. A valid solution must separate control limits from specifications, require a stable process before capability interpretation, state sampling risks, and preserve randomization/replication/error assumptions in DOE.
 
-16. Optimization and statistics answer questions inside a model; implementation, causality, and stakeholder objectives still require engineering judgment.
+16. Units and operational definitions are part of the model, not formatting details. For **Quality Management, SPC, Process Capability, Sampling, and DOE**, convert quantities to a common basis before combining them and state the denominator/capacity/time basis explicitly.
 
-17. The FE Handbook is the supplied reference and its definitions should govern unless the problem explicitly supplies another model.
+17. The FE Reference Handbook is the exam reference when it supplies the relation for **Quality Management, SPC, Process Capability, Sampling, and DOE**. The external sources MONT_QC, MONT_DOE support learned specification content not fully developed in the Handbook.
 
-18. Check feasibility, units, scale, probability bounds, and upstream/downstream effects.
+18. A quick limiting check for **Quality Management, SPC, Process Capability, Sampling, and DOE** is to center the process mean at the midpoint of the specs and confirm \(C_p=C_{pk}\); set a factorial interaction to zero and confirm the simple main-effect interpretation is restored. Failure to reduce correctly indicates a model, sign, boundary, or arithmetic problem.
 
-19. **A.** The method depends on assumptions, units, data basis, and decision context.
+19. **A.** Section §74.1, **Quality Planning, Assurance, Control, and Improvement**, is based on \(Quality=plan+assure+control+improve\\). Interpret the result within the specific assumptions and system boundary of §74.1; do not transfer it automatically to a different operating regime.
 
-20. **A.** The method depends on assumptions, units, data basis, and decision context.
+20. **A.** Section §74.2, **QFD and House of Quality**, is based on \(Customer\\ needs\\rightarrow Engineering\\ characteristics\\). Interpret the result within the specific assumptions and system boundary of §74.2; do not transfer it automatically to a different operating regime.
 
-21. **A.** The method depends on assumptions, units, data basis, and decision context.
+21. **A.** Section §74.3, **Cause-and-Effect and Taguchi Loss**, is based on \(L(y)=k(y-T)^2\\). Interpret the result within the specific assumptions and system boundary of §74.3; do not transfer it automatically to a different operating regime.
 
-22. **A.** The method depends on assumptions, units, data basis, and decision context.
+22. **A.** Section §74.4, **Control Charts and SPC**, is based on \(UCL=CL+3\\sigma_{stat},\\quad LCL=CL-3\\sigma_{stat}\\). Interpret the result within the specific assumptions and system boundary of §74.4; do not transfer it automatically to a different operating regime.
 
-23. **A.** The method depends on assumptions, units, data basis, and decision context.
+23. **A.** Section §74.5, **Process Capability Cp and Cpk**, is based on \(C_p=\\frac{USL-LSL}{6\\sigma},\\quad C_{pk}=\\min(\\frac{USL-\\mu}{3\\sigma},\\frac{\\mu-LSL}{3\\sigma})\\). Interpret the result within the specific assumptions and system boundary of §74.5; do not transfer it automatically to a different operating regime.
 
-24. **A.** The method depends on assumptions, units, data basis, and decision context.
+24. **A.** Section §74.6, **Acceptance Sampling and OC Curves**, is based on \(P_a=P(\\text{lot accepted}\\mid p)\\). Interpret the result within the specific assumptions and system boundary of §74.6; do not transfer it automatically to a different operating regime.
 
-25. **A.** The method depends on assumptions, units, data basis, and decision context.
+25. **A.** Section §74.7, **Factorial DOE, Interactions, and ANOVA**, is based on \(E_i=\\bar Y_{i,+}-\\bar Y_{i,-}\\). Interpret the result within the specific assumptions and system boundary of §74.7; do not transfer it automatically to a different operating regime.
 
-26. **A.** The method depends on assumptions, units, data basis, and decision context.
+26. **A.** An integrated Quality Management, SPC, Process Capability, Sampling, and DOE decision must remain mathematically feasible and operationally implementable after resource, integer, timing, uncertainty, quality, safety, and system-boundary constraints are considered.
 
-27. **A.** The method depends on assumptions, units, data basis, and decision context.
+27. **A.** This chapter separates FE-Handbook-supported material from externally supported material and guide synthesis. The source-boundary section lists the external references used for Quality Management, SPC, Process Capability, Sampling, and DOE.
 
 
 ---
@@ -410,25 +416,25 @@ D) It is always only qualitative
 
 ## Practice Problem Solutions
 
-1. Use §74.1. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+1. **Independent solution for §74.1 — Quality Planning, Assurance, Control, and Improvement.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: Capability describes what a stable process distribution can potentially meet relative to specifications; control describes whether the process is statistically stable over time. A capable process can drift out of control, and an in-control process can still be incapable.
 
-2. Use §74.2. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+2. **Independent solution for §74.2 — QFD and House of Quality.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: QFD translates a customer statement such as 'quiet operation' into measurable engineering characteristics—e.g., sound-pressure level at a defined distance/operating condition—then records relationships and tradeoffs in the House of Quality.
 
-3. Use §74.3. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+3. **Independent solution for §74.3 — Cause-and-Effect and Taguchi Loss.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: Taguchi loss \(L(y)=k(y-T)^2\) increases continuously with squared deviation from target. Two units can both lie inside specification limits yet have different expected loss if one is farther from the target value.
 
-4. Use §74.4. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+4. **Independent solution for §74.4 — Control Charts and SPC.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: A point outside a control limit is evidence of special-cause behavior under the chart model, even when the measured item remains within engineering specification limits. Control limits come from process statistics; specification limits come from design/customer requirements.
 
-5. Use §74.5. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+5. **Independent solution for §74.5 — Process Capability Cp and Cpk.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: For a centered process, \(\mu=(USL+LSL)/2\), so the upper and lower \(C_{pk}\) terms are equal to \((USL-LSL)/(6\sigma)=C_p\). Therefore **\(C_{pk}=C_p\)** only when centering and the model assumptions hold.
 
-6. Use §74.6. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+6. **Independent solution for §74.6 — Acceptance Sampling and OC Curves.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: An acceptance-sampling plan trades producer and consumer risks. Tightening \(n,c\) to reduce acceptance probability for poor lots generally also reduces acceptance probability for some good lots; the OC curve shows this operating characteristic versus incoming defect level.
 
-7. Use §74.7. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+7. **Independent solution for §74.7 — Factorial DOE, Interactions, and ANOVA.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: In a factorial experiment, an interaction means the effect of factor A changes across levels of factor B. Main-effect averages alone can therefore be misleading; inspect interaction estimates/plots and use ANOVA with appropriate randomization, replication, and error structure.
 
-8. Check units, probability bounds, utilization/stability, integer or physical constraints, denominator definitions, and model assumptions.
+8. For an integrated **Quality Management, SPC, Process Capability, Sampling, and DOE** problem, reject any result that violates this chapter-specific screen: separate control limits from specifications, require a stable process before capability interpretation, state sampling risks, and preserve randomization/replication/error assumptions in DOE.
 
-9. Start with FE Industrial & Systems specification Area(s) 12, then use the corresponding Handbook subsection where one exists.
+9. For **Quality Management, SPC, Process Capability, Sampling, and DOE**, start with the FE Industrial and Systems specification area and Handbook location recorded in the ledger. For `split_required` material, use **MONT_QC, MONT_DOE** for the learned portion rather than inventing a Handbook page.
 
-10. Compare the result against upstream/downstream throughput, quality, inventory, safety, staffing, cost, and service.
+10. Use this independent limiting case: center the process mean at the midpoint of the specs and confirm \(C_p=C_{pk}\); set a factorial interaction to zero and confirm the simple main-effect interpretation is restored. The reduced case should behave as stated before the full model is trusted.
 
 ---
 

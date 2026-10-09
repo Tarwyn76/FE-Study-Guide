@@ -65,7 +65,7 @@ Geometric discontinuities raise local stress. The theoretical concentration fact
 
 **Problem.** Kt=2.0 and nominal stress 80 MPa gives local elastic stress 160 MPa.
 
-**Solution.** Apply the relation and model in §78.1; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** \(\sigma_{max}=K_t\sigma_{nom}=(2.0)(80\ {\rm MPa})=\mathbf{160\ MPa}\). This is the elastic local peak associated with the notch model; fatigue sensitivity can require a separate \(K_f\) treatment.
 
 ---
 
@@ -81,7 +81,7 @@ Ductile static design commonly uses maximum-shear-stress or distortion-energy cr
 
 **Problem.** A uniaxial tensile stress has von Mises stress equal to the tensile stress magnitude.
 
-**Solution.** Apply the relation and model in §78.2; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** For uniaxial tension the principal stresses are \((\sigma,0,0)\). Substitution into the distortion-energy relation gives \(\sigma_{vm}=|\sigma|\), so the von Mises equivalent stress equals the tensile-stress magnitude.
 
 ---
 
@@ -97,7 +97,7 @@ Brittle materials fail with limited plastic redistribution. Principal stresses a
 
 **Problem.** A compressive stress state can be less critical than an equal tensile state for many brittle materials.
 
-**Solution.** Apply the relation and model in §78.3; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** Brittle materials often have much lower tensile than compressive strength because cracks open in tension but tend to close in compression. Failure assessment therefore tracks principal tensile and compressive stresses separately rather than using a ductile-yield criterion blindly.
 
 ---
 
@@ -113,7 +113,7 @@ Fatigue depends on cyclic amplitude, mean stress, stress concentration, material
 
 **Problem.** Stress cycling between 20 and 100 MPa has σa=40 MPa and σm=60 MPa.
 
-**Solution.** Apply the relation and model in §78.4; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** \(\sigma_a=(100-20)/2=\mathbf{40\ MPa}\) and \(\sigma_m=(100+20)/2=\mathbf{60\ MPa}\). The same stress history can therefore have both alternating and nonzero mean components.
 
 ---
 
@@ -129,7 +129,7 @@ An S-N curve relates cyclic stress amplitude to cycles to failure. Some steels e
 
 **Problem.** Reducing alternating stress generally increases fatigue life.
 
-**Solution.** Apply the relation and model in §78.5; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** An S-N curve relates cyclic stress amplitude to cycles to failure. Moving to a lower alternating stress generally shifts the intersection to a larger \(N\), so expected fatigue life increases, subject to material/environment/mean-stress effects.
 
 ---
 
@@ -145,7 +145,7 @@ Fracture mechanics links flaw size, stress, geometry, and fracture toughness. Cr
 
 **Problem.** At fixed stress, increasing crack size raises KI.
 
-**Solution.** Apply the relation and model in §78.6; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** \(K_I=Y\sigma\sqrt{\pi a}\). With \(Y\) and \(\sigma\) fixed, \(K_I\propto\sqrt a\); increasing crack size therefore increases the crack-tip driving force and moves the component closer to fracture toughness.
 
 ---
 
@@ -161,7 +161,7 @@ Creep is time-dependent deformation under sustained load, especially important a
 
 **Problem.** A turbine component at high temperature can accumulate creep even below room-temperature yield strength.
 
-**Solution.** Apply the relation and model in §78.7; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** Creep is time- and temperature-dependent deformation. At sufficiently high homologous temperature, a component can accumulate creep strain under a sustained stress below its room-temperature yield strength; ordinary short-time yield checks do not bound that failure mode.
 
 ---
 
@@ -171,13 +171,13 @@ Creep is time-dependent deformation under sustained load, especially important a
 
 **Problem.** A calculation produces a stress or operating point that violates the model assumption used to obtain it. Is the result acceptable?
 
-**Solution.** No. Select the correct model or failure/operating region and solve again. Algebra does not override geometry, material behavior, or component-state validity.
+**Solution.** No. Failure criteria must match material behavior and loading. A stress state that violates yield, fatigue, fracture, or creep assumptions cannot be rescued by algebra; use the appropriate failure model and safety factor.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the FE Reference Handbook expression. Which should govern the exam solution?
 
-**Solution.** Use the Handbook expression and its definitions unless the problem explicitly provides another model.
+**Solution.** For **Failure Theories, Stress Concentrations, Fatigue, Fracture, and Creep**, use the FE Reference Handbook expression, symbols, and unit convention whenever it supplies the required model. The external source set **SHIGLEY** supports specification-required learned/application material that is not fully developed in the Handbook. If a remembered textbook formula conflicts with a supplied Handbook relation, the supplied Handbook relation governs unless the problem explicitly defines another model.
 
 ---
 
@@ -185,7 +185,12 @@ Creep is time-dependent deformation under sustained load, especially important a
 
 Primary source basis: **FE Mechanical specification Area(s) 8, 9, 14; FE Reference Handbook 10.6 Mechanical Engineering and supporting general sections, with the specific subsection/page identified in the ledger.**
 
-**Source boundary:** The Mechanical specification includes both directly tabulated Handbook equations and learned design concepts. This chapter does not assign invented Handbook pages to specification-required material that is not directly tabulated.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required mechanical-engineering knowledge that is not fully developed in the Handbook. **Guide synthesis** connects those sources into exam-oriented explanations, examples, model checks, and design context; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Nisbett, K. J., & Budynas, R. G. *Shigley's Mechanical Engineering Design* (2024 Release). McGraw Hill. ISBN 978-1-265-47269-6. Supporting scope: Failure theories, fatigue, springs, pressure-vessel screening, bearings, fasteners, shafts, keys, couplings, gears, and machine-element design.
+
+The external references support only the learned/application portion of the FE Mechanical specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +359,31 @@ D) It is always qualitative
 
 14. For **creep**, verify geometry, load direction, material model, units, operating regime, and whether the assumed failure or performance mode remains valid.
 
-15. The sketch exposes supports, force directions, geometry, constraints, energy/flow paths, and missing load cases before algebra obscures them.
+15. In **Failure Theories, Stress Concentrations, Fatigue, Fracture, and Creep**, start from the physical model and system/component state, not from an isolated formula. A valid solution must match the criterion to ductile/brittle/fatigue/fracture/creep behavior, distinguish nominal from local stress, and keep alternating/mean stress definitions consistent.
 
-16. Mechanical equations are model-dependent. The result must remain compatible with yielding/buckling/fatigue, flow regime, thermal state, contact, or kinematic constraints.
+16. Units and sign/reference conventions are part of the model in **Failure Theories, Stress Concentrations, Fatigue, Fracture, and Creep**. Convert all quantities to a consistent basis before substitution and state whether values are absolute/gauge, static/stagnation, nominal/local, input/output, or other relevant basis.
 
-17. The Handbook is the supplied exam reference; its definitions, correction factors, unit conventions, and tables should govern unless the problem explicitly supplies another relation.
+17. The FE Reference Handbook is the controlling exam reference when it supplies the relation for **Failure Theories, Stress Concentrations, Fatigue, Fracture, and Creep**. External sources **SHIGLEY** support only the learned material not fully developed in the Handbook.
 
-18. These checks catch impossible motion, unit errors, invalid thin-wall or linear assumptions, unrealistic stresses, interference, and parts that cannot be manufactured or assembled.
+18. Use a limiting or reversal check before accepting the result: set \(K_t=1\) and confirm local elastic stress reduces to nominal stress; for \(\sigma_{max}=\sigma_{min}\), confirm alternating stress becomes zero. A failure to reduce correctly indicates a geometry, regime, sign, unit, or model-selection error.
 
-19. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+19. **A.** Section §78.1, **Stress concentration and notch effects**, uses \(\sigma_{max}=K_t\sigma_{nom}\). Apply it only under the geometry/material/operating assumptions stated in §78.1, then compare the result with the physical behavior described there.
 
-20. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+20. **A.** Section §78.2, **Ductile failure — maximum shear and distortion energy**, uses \(\sigma_{vm}\le \frac{S_y}{n}\). Apply it only under the geometry/material/operating assumptions stated in §78.2, then compare the result with the physical behavior described there.
 
-21. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+21. **A.** Section §78.3, **Brittle failure concepts**, uses \(\text{compare principal tensile/compressive stresses to brittle strengths}\). Apply it only under the geometry/material/operating assumptions stated in §78.3, then compare the result with the physical behavior described there.
 
-22. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+22. **A.** Section §78.4, **Fatigue life, alternating and mean stress**, uses \(\sigma_a=\frac{\sigma_{max}-\sigma_{min}}2,\quad \sigma_m=\frac{\sigma_{max}+\sigma_{min}}2\). Apply it only under the geometry/material/operating assumptions stated in §78.4, then compare the result with the physical behavior described there.
 
-23. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+23. **A.** Section §78.5, **S-N behavior and endurance limits**, uses \(\text{stress amplitude}=f(N)\). Apply it only under the geometry/material/operating assumptions stated in §78.5, then compare the result with the physical behavior described there.
 
-24. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+24. **A.** Section §78.6, **Fracture mechanics concepts**, uses \(K_I=Y\sigma\sqrt{\pi a}\). Apply it only under the geometry/material/operating assumptions stated in §78.6, then compare the result with the physical behavior described there.
 
-25. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+25. **A.** Section §78.7, **Creep and time-dependent failure**, uses \(\epsilon=\epsilon(t,\sigma,T)\). Apply it only under the geometry/material/operating assumptions stated in §78.7, then compare the result with the physical behavior described there.
 
-26. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+26. **A.** An integrated **Failure Theories, Stress Concentrations, Fatigue, Fracture, and Creep** result is acceptable only after the governing physical model, geometry, operating/failure regime, units, and independent plausibility checks agree.
 
-27. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+27. **A.** In this failure-analysis chapter, FE-Handbook-supported stress relations stay tied to the ledger; Shigley supplies the learned stress-concentration, ductile-failure, and fatigue context, while guide synthesis connects those models to FE-style checks.
 
 
 ---
@@ -410,25 +415,25 @@ D) It is always qualitative
 
 ## Practice Problem Solutions
 
-1. Use §78.1. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+1. **Independent check for §78.1 — Stress concentration and notch effects.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. \(\sigma_{max}=K_t\sigma_{nom}=(2.0)(80\ {\rm MPa})=\mathbf{160\ MPa}\). This is the elastic local peak associated with the notch model; fatigue sensitivity can require a separate \(K_f\) treatment.
 
-2. Use §78.2. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+2. **Independent check for §78.2 — Ductile failure — maximum shear and distortion energy.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. For uniaxial tension the principal stresses are \((\sigma,0,0)\). Substitution into the distortion-energy relation gives \(\sigma_{vm}=|\sigma|\), so the von Mises equivalent stress equals the tensile-stress magnitude.
 
-3. Use §78.3. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+3. **Independent check for §78.3 — Brittle failure concepts.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. Brittle materials often have much lower tensile than compressive strength because cracks open in tension but tend to close in compression. Failure assessment therefore tracks principal tensile and compressive stresses separately rather than using a ductile-yield criterion blindly.
 
-4. Use §78.4. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+4. **Independent check for §78.4 — Fatigue life, alternating and mean stress.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. \(\sigma_a=(100-20)/2=\mathbf{40\ MPa}\) and \(\sigma_m=(100+20)/2=\mathbf{60\ MPa}\). The same stress history can therefore have both alternating and nonzero mean components.
 
-5. Use §78.5. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+5. **Independent check for §78.5 — S-N behavior and endurance limits.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. An S-N curve relates cyclic stress amplitude to cycles to failure. Moving to a lower alternating stress generally shifts the intersection to a larger \(N\), so expected fatigue life increases, subject to material/environment/mean-stress effects.
 
-6. Use §78.6. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+6. **Independent check for §78.6 — Fracture mechanics concepts.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. \(K_I=Y\sigma\sqrt{\pi a}\). With \(Y\) and \(\sigma\) fixed, \(K_I\propto\sqrt a\); increasing crack size therefore increases the crack-tip driving force and moves the component closer to fracture toughness.
 
-7. Use §78.7. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+7. **Independent check for §78.7 — Creep and time-dependent failure.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. Creep is time- and temperature-dependent deformation. At sufficiently high homologous temperature, a component can accumulate creep strain under a sustained stress below its room-temperature yield strength; ordinary short-time yield checks do not bound that failure mode.
 
-8. Check dimensions, load direction, support/interface assumptions, material regime, fatigue/static basis, operating speed/temperature/pressure, and any geometric validity limit such as thin-wall or small-deflection assumptions.
+8. For **Failure Theories, Stress Concentrations, Fatigue, Fracture, and Creep**, one required acceptance screen is: match the criterion to ductile/brittle/fatigue/fracture/creep behavior, distinguish nominal from local stress, and keep alternating/mean stress definitions consistent. A result that violates this screen must be rejected or recomputed with the proper model.
 
-9. Start with FE Mechanical specification Area(s) 8, 9, 14, then use the Handbook subsection named in the corresponding ledger entry.
+9. Start with the FE Mechanical specification area and FE Reference Handbook location recorded in the ledger for **Failure Theories, Stress Concentrations, Fatigue, Fracture, and Creep**. For `split_required` concepts, use **SHIGLEY** for the learned/application portion without inventing a Handbook page or clause.
 
-10. Test a simple limit such as zero load, very large stiffness, matched speed ratio, zero pressure, zero damping, or maximum/minimum fit. Confirm the result trends in the physically expected direction and remains manufacturable.
+10. Apply this limiting-case test independently: set \(K_t=1\) and confirm local elastic stress reduces to nominal stress; for \(\sigma_{max}=\sigma_{min}\), confirm alternating stress becomes zero. If the simplified case does not behave as expected, revisit the setup before trusting the full calculation.
 
 ---
 

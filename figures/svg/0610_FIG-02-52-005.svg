@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1008pt" height="720pt" viewBox="0 0 1008 720" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-08T19:28:20.326315</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 720 
+L 1008 720 
+L 1008 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 55.44 344.232 
+L 477.0864 344.232 
+L 477.0864 170.352 
+L 55.44 170.352 
+z
+" clip-path="url(#pc644bd2b21)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 530.9136 344.232 
+L 952.56 344.232 
+L 952.56 170.352 
+L 530.9136 170.352 
+z
+" clip-path="url(#pc644bd2b21)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(220.450387 248.643445)">T–P form</text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(119.422341 276.945867)">Δs=c_p ln(T₂/T₁)−R ln(P₂/P₁)</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(696.040472 248.643445)">T–v form</text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(595.580081 276.945867)">Δs=c_v ln(T₂/T₁)+R ln(v₂/v₁)</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="449.094656" transform="rotate(-0 504 449.094656)">Air: c_p=1.005, c_v=0.718, R=0.287 kJ/(kg·K)</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="553.990625" transform="rotate(-0 504 553.990625)">T₂/T₁=2; P₂/P₁=2 → v₂/v₁=1 → Δs=0.4977 kJ/(kg·K)</text>
+   </g>
+  </g>
+  <g id="text_5">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Ideal-gas entropy change can use either pressure or specific-volume data</text>
+  </g>
+  <g id="text_6">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="55.44" y="700.56" transform="rotate(-0 55.44 700.56)">0610  •  FIG-02-52-005</text>
+  </g>
+  <g id="text_7">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(155.835156 656.640625)">Ideal gas with constant heat capacities. T and P are absolute. Both forms describe a state-property difference, even if the actual process is</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(365.838281 669.358125)">irreversible; they do not alone determine heat transfer.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pc644bd2b21">
+   <rect x="55.44" y="100.8" width="897.12" height="496.8"/>
+  </clipPath>
+ </defs>
+</svg>

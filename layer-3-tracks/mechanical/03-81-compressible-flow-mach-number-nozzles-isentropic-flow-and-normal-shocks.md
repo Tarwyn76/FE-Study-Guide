@@ -65,7 +65,7 @@ Mach number compares flow speed with acoustic propagation speed and organizes co
 
 **Problem.** At V=340 m/s and a=340 m/s, M=1.
 
-**Solution.** Apply the relation and model in §81.1; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** \(M=V/a=(340\ {\rm m/s})/(340\ {\rm m/s})=\mathbf{1.00}\). The flow is sonic relative to the stated local speed of sound.
 
 ---
 
@@ -81,7 +81,7 @@ Isentropic flow relations connect static and stagnation temperature, pressure, a
 
 **Problem.** At M=0, stagnation and static properties are equal.
 
-**Solution.** Apply the relation and model in §81.2; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** At \(M=0\), the kinetic contribution vanishes. Thus \(T_0/T=1+[(\gamma-1)/2](0)^2=1\), so stagnation and static temperature are equal; analogous stagnation/static differences also vanish.
 
 ---
 
@@ -97,7 +97,7 @@ For one-dimensional isentropic flow, nozzle area and Mach number are coupled. On
 
 **Problem.** At choking, throat Mach number is 1.
 
-**Solution.** Apply the relation and model in §81.3; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** For ideal one-dimensional nozzle flow, choking places the throat at **Mach number 1.00**, i.e. \(\mathbf{M_t=1.00}\) (dimensionless), at the minimum-area section. Further lowering downstream pressure cannot increase the throat Mach number above one in a purely converging throat.
 
 ---
 
@@ -113,7 +113,7 @@ Continuity still governs compressible flow, but density varies with pressure and
 
 **Problem.** At fixed stagnation conditions and throat area, choked mass flow is insensitive to further downstream-pressure reduction in the ideal model.
 
-**Solution.** Apply the relation and model in §81.4; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** Once an ideal nozzle is choked, mass flow is fixed primarily by upstream stagnation state, throat area, and gas properties. Further downstream-pressure reduction changes downstream behavior but not the ideal choked mass-flow rate until the governing regime changes.
 
 ---
 
@@ -129,7 +129,7 @@ A normal shock abruptly converts supersonic flow to subsonic flow, raising stati
 
 **Problem.** A normal shock cannot be treated as isentropic.
 
-**Solution.** Apply the relation and model in §81.5; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** A normal shock is irreversible: upstream \(M_1>1\), downstream \(M_2<1\), stagnation pressure decreases, and entropy increases. Treating the shock itself as isentropic would violate the second law.
 
 ---
 
@@ -145,7 +145,7 @@ A converging-diverging nozzle can exhibit entirely subsonic flow, choking, inter
 
 **Problem.** The diverging section acts as a diffuser for subsonic flow but a nozzle for supersonic flow.
 
-**Solution.** Apply the relation and model in §81.6; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** The area effect reverses across Mach 1. In a diverging passage subsonic flow tends to decelerate, whereas supersonic flow can accelerate; back pressure determines whether the nozzle is fully subsonic, choked, shock-containing, or supersonic downstream.
 
 ---
 
@@ -161,7 +161,7 @@ Before using incompressible formulas, check Mach number and pressure/temperature
 
 **Problem.** Gas flow through a large pressure ratio requires compressible treatment even if inlet speed is modest.
 
-**Solution.** Apply the relation and model in §81.7; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** A large pressure ratio can create substantial density and temperature changes even when the inlet velocity is modest. In that case a constant-density incompressible model is not adequate; compressible continuity/energy/state relations are required.
 
 ---
 
@@ -171,13 +171,13 @@ Before using incompressible formulas, check Mach number and pressure/temperature
 
 **Problem.** A calculation produces a stress or operating point that violates the model assumption used to obtain it. Is the result acceptable?
 
-**Solution.** No. Select the correct model or failure/operating region and solve again. Algebra does not override geometry, material behavior, or component-state validity.
+**Solution.** No. Compressible-flow equations are regime specific. If the solution crosses Mach 1, choking, or a shock without using the corresponding model, the operating point must be reclassified and recalculated.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the FE Reference Handbook expression. Which should govern the exam solution?
 
-**Solution.** Use the Handbook expression and its definitions unless the problem explicitly provides another model.
+**Solution.** For **Compressible Flow — Mach Number, Nozzles, Isentropic Flow, and Normal Shocks**, use the FE Reference Handbook expression, symbols, and unit convention whenever it supplies the required model. The external source set **ANDERSON** supports specification-required learned/application material that is not fully developed in the Handbook. If a remembered textbook formula conflicts with a supplied Handbook relation, the supplied Handbook relation governs unless the problem explicitly defines another model.
 
 ---
 
@@ -185,7 +185,12 @@ Before using incompressible formulas, check Mach number and pressure/temperature
 
 Primary source basis: **FE Mechanical specification Area(s) 10; FE Reference Handbook 10.6 Mechanical Engineering and supporting general sections, with the specific subsection/page identified in the ledger.**
 
-**Source boundary:** The Mechanical specification includes both directly tabulated Handbook equations and learned design concepts. This chapter does not assign invented Handbook pages to specification-required material that is not directly tabulated.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required mechanical-engineering knowledge that is not fully developed in the Handbook. **Guide synthesis** connects those sources into exam-oriented explanations, examples, model checks, and design context; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Anderson, J. D., Jr. (2021). *Modern Compressible Flow: With Historical Perspective* (4th ed.). McGraw Hill. ISBN 978-1-260-47144-1. Supporting scope: Mach number, speed of sound, stagnation properties, choking, nozzle flow, and normal shocks.
+
+The external references support only the learned/application portion of the FE Mechanical specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +359,31 @@ D) It is always qualitative
 
 14. For **compressible-flow validity**, verify geometry, load direction, material model, units, operating regime, and whether the assumed failure or performance mode remains valid.
 
-15. The sketch exposes supports, force directions, geometry, constraints, energy/flow paths, and missing load cases before algebra obscures them.
+15. In **Compressible Flow — Mach Number, Nozzles, Isentropic Flow, and Normal Shocks**, start from the physical model and system/component state, not from an isolated formula. A valid solution must identify Mach regime, choking state, stagnation/static basis, nozzle geometry, and whether a shock or isentropic relation is actually applicable.
 
-16. Mechanical equations are model-dependent. The result must remain compatible with yielding/buckling/fatigue, flow regime, thermal state, contact, or kinematic constraints.
+16. Units and sign/reference conventions are part of the model in **Compressible Flow — Mach Number, Nozzles, Isentropic Flow, and Normal Shocks**. Convert all quantities to a consistent basis before substitution and state whether values are absolute/gauge, static/stagnation, nominal/local, input/output, or other relevant basis.
 
-17. The Handbook is the supplied exam reference; its definitions, correction factors, unit conventions, and tables should govern unless the problem explicitly supplies another relation.
+17. The FE Reference Handbook is the controlling exam reference when it supplies the relation for **Compressible Flow — Mach Number, Nozzles, Isentropic Flow, and Normal Shocks**. External sources **ANDERSON** support only the learned material not fully developed in the Handbook.
 
-18. These checks catch impossible motion, unit errors, invalid thin-wall or linear assumptions, unrealistic stresses, interference, and parts that cannot be manufactured or assembled.
+18. Use a limiting or reversal check before accepting the result: set \(M=0\) and confirm stagnation and static properties coincide; at an ideal choked throat confirm \(M=1\). A failure to reduce correctly indicates a geometry, regime, sign, unit, or model-selection error.
 
-19. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+19. **A.** Section §81.1, **Speed of sound and Mach number**, uses \(M=\frac{V}{a},\qquad a=\sqrt{\gamma RT}\). Apply it only under the geometry/material/operating assumptions stated in §81.1, then compare the result with the physical behavior described there.
 
-20. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+20. **A.** Section §81.2, **Stagnation and static properties**, uses \(\frac{T_0}{T}=1+\frac{\gamma-1}{2}M^2\). Apply it only under the geometry/material/operating assumptions stated in §81.2, then compare the result with the physical behavior described there.
 
-21. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+21. **A.** Section §81.3, **Area-Mach relation and choking**, uses \(M=1\text{ at the minimum-area throat of an ideal choked nozzle}\). Apply it only under the geometry/material/operating assumptions stated in §81.3, then compare the result with the physical behavior described there.
 
-22. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+22. **A.** Section §81.4, **Mass flow through compressible nozzles**, uses \(\dot m=\rho AV\). Apply it only under the geometry/material/operating assumptions stated in §81.4, then compare the result with the physical behavior described there.
 
-23. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+23. **A.** Section §81.5, **Normal shock relations and entropy rise**, uses \(M_1>1,\quad M_2<1\). Apply it only under the geometry/material/operating assumptions stated in §81.5, then compare the result with the physical behavior described there.
 
-24. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+24. **A.** Section §81.6, **Converging-diverging nozzle operating regimes**, uses \(\text{back pressure controls subsonic, choked, shocked, or fully supersonic states}\). Apply it only under the geometry/material/operating assumptions stated in §81.6, then compare the result with the physical behavior described there.
 
-25. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+25. **A.** Section §81.7, **Compressible-flow model checks**, uses \(\text{compressibility becomes important as density changes are no longer negligible}\). Apply it only under the geometry/material/operating assumptions stated in §81.7, then compare the result with the physical behavior described there.
 
-26. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+26. **A.** An integrated **Compressible Flow — Mach Number, Nozzles, Isentropic Flow, and Normal Shocks** result is acceptable only after the governing physical model, geometry, operating/failure regime, units, and independent plausibility checks agree.
 
-27. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+27. **A.** Source ownership is explicit in this chapter: FE-Handbook-supported material remains tied to the ledger; externally supported material uses **ANDERSON**; guide synthesis is supplemental explanation and exam-oriented workflow.
 
 
 ---
@@ -410,25 +415,25 @@ D) It is always qualitative
 
 ## Practice Problem Solutions
 
-1. Use §81.1. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+1. **Independent check for §81.1 — Speed of sound and Mach number.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. \(M=V/a=(340\ {\rm m/s})/(340\ {\rm m/s})=\mathbf{1.00}\). The flow is sonic relative to the stated local speed of sound.
 
-2. Use §81.2. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+2. **Independent check for §81.2 — Stagnation and static properties.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. At \(M=0\), the kinetic contribution vanishes. Thus \(T_0/T=1+[(\gamma-1)/2](0)^2=1\), so stagnation and static temperature are equal; analogous stagnation/static differences also vanish.
 
-3. Use §81.3. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+3. **Independent check for §81.3 — Area-Mach relation and choking.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. For ideal one-dimensional nozzle flow, choking places \(M=\mathbf1\) at the minimum-area throat. Further lowering downstream pressure cannot increase the throat Mach number above one in a purely converging throat.
 
-4. Use §81.4. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+4. **Independent check for §81.4 — Mass flow through compressible nozzles.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. Once an ideal nozzle is choked, mass flow is fixed primarily by upstream stagnation state, throat area, and gas properties. Further downstream-pressure reduction changes downstream behavior but not the ideal choked mass-flow rate until the governing regime changes.
 
-5. Use §81.5. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+5. **Independent check for §81.5 — Normal shock relations and entropy rise.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. A normal shock is irreversible: upstream \(M_1>1\), downstream \(M_2<1\), stagnation pressure decreases, and entropy increases. Treating the shock itself as isentropic would violate the second law.
 
-6. Use §81.6. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+6. **Independent check for §81.6 — Converging-diverging nozzle operating regimes.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. The area effect reverses across Mach 1. In a diverging passage subsonic flow tends to decelerate, whereas supersonic flow can accelerate; back pressure determines whether the nozzle is fully subsonic, choked, shock-containing, or supersonic downstream.
 
-7. Use §81.7. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+7. **Independent check for §81.7 — Compressible-flow model checks.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. A large pressure ratio can create substantial density and temperature changes even when the inlet velocity is modest. In that case a constant-density incompressible model is not adequate; compressible continuity/energy/state relations are required.
 
-8. Check dimensions, load direction, support/interface assumptions, material regime, fatigue/static basis, operating speed/temperature/pressure, and any geometric validity limit such as thin-wall or small-deflection assumptions.
+8. For **Compressible Flow — Mach Number, Nozzles, Isentropic Flow, and Normal Shocks**, one required acceptance screen is: identify Mach regime, choking state, stagnation/static basis, nozzle geometry, and whether a shock or isentropic relation is actually applicable. A result that violates this screen must be rejected or recomputed with the proper model.
 
-9. Start with FE Mechanical specification Area(s) 10, then use the Handbook subsection named in the corresponding ledger entry.
+9. Start with the FE Mechanical specification area and FE Reference Handbook location recorded in the ledger for **Compressible Flow — Mach Number, Nozzles, Isentropic Flow, and Normal Shocks**. For `split_required` concepts, use **ANDERSON** for the learned/application portion without inventing a Handbook page or clause.
 
-10. Test a simple limit such as zero load, very large stiffness, matched speed ratio, zero pressure, zero damping, or maximum/minimum fit. Confirm the result trends in the physically expected direction and remains manufacturable.
+10. Apply this limiting-case test independently: set \(M=0\) and confirm stagnation and static properties coincide; at an ideal choked throat confirm \(M=1\). If the simplified case does not behave as expected, revisit the setup before trusting the full calculation.
 
 ---
 

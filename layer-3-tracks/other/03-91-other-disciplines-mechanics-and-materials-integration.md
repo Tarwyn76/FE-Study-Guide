@@ -65,7 +65,7 @@ Other Disciplines mechanics questions often combine statics, dynamics, and stren
 
 **Problem.** A supported bracket with an attached moving mass may require a static support-reaction model for the bracket plus a dynamic force model for the mass.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §91.1.
+**Solution.** Treat the bracket and moving mass as coupled but distinct models. Draw the bracket FBD and solve its support reactions from equilibrium; represent the mass interaction using the appropriate dynamic force from its acceleration. Transfer only the interface force between models, with one consistent sign convention.
 
 ---
 
@@ -81,7 +81,7 @@ Support reactions do not finish the problem. Convert external loads into interna
 
 **Problem.** A transverse load on a cantilever creates both shear and bending moment; bending stress often governs near the fixed end.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §91.2.
+**Solution.** For the cantilever, first recover the internal resultants at the section of interest. A transverse tip load produces shear \(V\) and bending moment \(M\); then use the applicable shear- and bending-stress relations. Near the fixed end, \(M\) is largest, so bending stress commonly controls.
 
 ---
 
@@ -97,7 +97,7 @@ The same motion can often be solved by force-acceleration, impulse-momentum, or 
 
 **Problem.** If only speeds before and after a conservative motion are needed, work-energy may be shorter than solving acceleration as a function of position.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §91.3.
+**Solution.** Work-energy is efficient when the unknown is speed rather than the time history. Write \(T_1+V_1+W_{nc}=T_2+V_2\), include only forces that do work in the chosen system, and solve directly for the final speed instead of first finding \(a(x)\) and integrating the motion.
 
 ---
 
@@ -113,7 +113,7 @@ Other Disciplines questions may stop at stress transformation or continue into y
 
 **Problem.** A ductile shaft under bending and torsion should be reduced to an appropriate equivalent-stress measure before comparison with yield strength.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §91.4.
+**Solution.** Bending creates normal stress and torque creates shear stress. Evaluate both at the same material point, transform or combine them into the required principal/von-Mises measure, and compare that equivalent stress with the ductile yield criterion using the stated factor of safety.
 
 ---
 
@@ -129,7 +129,8 @@ Material tables become useful when tied to a failure or performance mode. Stiffn
 
 **Problem.** Changing from steel to aluminum may reduce mass while increasing elastic deflection if geometry is unchanged.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §91.5.
+**Solution.** With unchanged geometry and load, elastic deflection scales roughly with \(1/E\), while mass scales with density. Aluminum therefore can reduce weight because of lower \(
+ho\) yet increase deflection because its \(E\) is substantially lower than steel's; strength must be checked separately.
 
 ---
 
@@ -145,7 +146,7 @@ A member can fail by instability before material yield. Slenderness, effective l
 
 **Problem.** Doubling effective length reduces ideal Euler buckling load by a factor of four.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §91.6.
+**Solution.** Euler buckling gives \(P_{cr}=\pi^2EI/(KL)^2\). Replacing \(KL\) by \(2KL\) makes the denominator four times larger, so the ideal critical load becomes \(P_{cr}/4\). This is a stability effect, not a material-yield calculation.
 
 ---
 
@@ -153,7 +154,7 @@ A member can fail by instability before material yield. Slenderness, effective l
 
 The Other Disciplines route rewards fast switching among mechanics topics. A compact verification routine prevents using a correct formula on the wrong body, axis, or failure mode.
 
-\[\text{answer check}=\text{units}+\text{sign}+\text{load path}+\text{limiting case}+\text{failure mode}\]
+\[[\mathrm{LHS}]=[\mathrm{RHS}],\qquad \mathbf R_F=\sum\mathbf F-m\mathbf a,\qquad R_M=\sum M_G-I_G\alpha\]
 
 ![FIG-03-91-007: Mechanics synthesis checklist covering FBD, reactions, internal resultants, constitutive law, failure mode, and units.](../figures/FIG-03-91-007-integrated-mechanics-reasonableness-and-unit-strategy.png)
 
@@ -161,7 +162,7 @@ The Other Disciplines route rewards fast switching among mechanics topics. A com
 
 **Problem.** A negative support reaction can be physically valid, but only if the support can actually act in that direction.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §91.7.
+**Solution.** The algebraic sign of a reaction is referenced to the assumed direction. A negative result means the actual force acts opposite that assumption; it is physically admissible only if the support can supply force in that direction. A cable or unilateral contact, for example, cannot push.
 
 ---
 
@@ -171,13 +172,13 @@ The Other Disciplines route rewards fast switching among mechanics topics. A com
 
 **Problem.** A mixed question contains electrical, mechanical, and economic information. Must every datum be used?
 
-**Solution.** No. First identify the requested quantity and governing model. Use only the data needed for the current stage, then carry the resulting intermediate quantity—clearly labeled with units—into the next stage if required.
+**Solution.** No. In a mechanics/materials synthesis question, keep only data that affect the current free-body, motion, stress, deformation, stability, or material check. For example, motor voltage is irrelevant to a bracket stress calculation unless it is first needed to determine the transmitted mechanical load.
 
 ### Worked Example 9
 
 **Problem.** You find a familiar equation in memory but a different-looking form in the FE Reference Handbook. What should you do?
 
-**Solution.** Use the Handbook form after checking its definitions and assumptions. Do not force a remembered formula onto a problem merely because it resembles the topic.
+**Solution.** Use the Handbook form that matches the selected mechanics model and its sign/variable definitions. A memorized beam, energy, or failure equation is acceptable only after you verify that its loading case, coordinate system, and assumptions are identical to the Handbook/problem setup.
 
 ---
 
@@ -185,7 +186,15 @@ The Other Disciplines route rewards fast switching among mechanics topics. A com
 
 **Primary source basis:** FE Other Disciplines CBT specification, printed pp. 498–500. Unlike the six discipline-specific FE routes, Other Disciplines has no dedicated discipline section in Handbook 10.6; it relies on the general Handbook sections across the book.
 
-**Source boundary:** The integration workflow, classification strategy, and cross-domain transfer methods are guide-developed. Underlying equations remain owned and sourced by their canonical earlier chapters.
+**Source boundary:** **FE-Handbook-supported** material consists of the underlying equations, tables, definitions, and discipline models located in the FE Reference Handbook and recorded in the ledger. **Externally supported** material covers Other Disciplines specification knowledge, application context, standards, and integration details that are not fully developed in the Handbook. **Guide synthesis** is the cross-domain classification, transfer, verification, and exam-strategy workflow created for this supplemental guide; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Hibbeler, R. C. (2022). *Engineering Mechanics: Statics & Dynamics* (15th ed.). Pearson. ISBN 978-0-13-751472-4. Supporting scope: Free-body diagrams, equilibrium, internal resultants, kinematics, kinetics, work-energy, impulse-momentum, and engineering mechanics modeling.
+- Hibbeler, R. C. (2022). *Mechanics of Materials* (11th ed.). Pearson. ISBN 978-0-13-760561-3. Supporting scope: Axial/torsional/bending stress, stress transformation, combined loading, deflection, columns, buckling, and mechanics-of-materials design checks.
+- Nisbett, K. J., & Budynas, R. G. *Shigley's Mechanical Engineering Design* (2024 Release). McGraw Hill. ISBN 978-1-265-47269-6. Supporting scope: Failure theories, fatigue, materials/design properties, stress concentrations, stability screening, and machine-design context.
+- Callister, W. D., Jr., & Rethwisch, D. G. (2018). *Materials Science and Engineering: An Introduction* (10th ed.). Wiley. ISBN 978-1-119-40549-8. Supporting scope: Structure-property relations for metals, ceramics, polymers, and composites; mechanical properties, processing, and materials selection.
+
+Because Other Disciplines intentionally integrates material owned by earlier chapters, external references support the learned/application and cross-domain portions only. The FE Reference Handbook remains the exam reference, and the ledger retains the canonical Handbook locations for the underlying equations.
 
 ---
 
@@ -344,31 +353,33 @@ D) It is unrelated to Handbook navigation
 
 14. For **mechanics synthesis check**, check the controlling domain, system boundary, units, model assumptions, and the prerequisite concept being reused.
 
-15. Classification narrows the search space and prevents using a familiar equation from the wrong discipline or physical model.
+15. Classify the problem first so you know whether the governing object is a particle, rigid body, beam/shaft, column, or material failure state. That classification determines the correct Handbook section and prevents combining equations from incompatible mechanical models.
 
-16. The canonical concept already exists in an earlier layer/track; the integration atom teaches when and how to reuse it in a mixed problem.
+16. The underlying statics, dynamics, stress, and materials relations already have canonical owners earlier in the guide. This chapter adds the transfer logic between them—such as reaction → internal force → stress—not a second independent version of those equations.
 
-17. Compare variable definitions, units, boundary conditions, and operating assumptions. Use the relation that matches the actual problem and Handbook context.
+17. Compare the free-body definition, coordinate/sign convention, loading case, constitutive assumptions, and variable meanings. Use the relation whose assumptions match the actual structure or motion, even if another remembered form looks algebraically familiar.
 
-18. These checks catch wrong-domain solutions, hidden conversion errors, impossible signs or efficiencies, and decisions that violate physical, safety, or professional constraints.
+18. Mechanics answers can be numerically tidy yet physically impossible. Units, reaction direction, load path, stress sign/magnitude, stability, and material limits provide independent checks that expose the wrong body, wrong section, or wrong failure mode.
 
-19. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+19. **A.** Start by choosing the correct physical body and free-body diagram, then decide whether equilibrium or dynamics supplies the interface loads. Cross-domain mechanics begins with the load path, not with a stress equation.
 
-20. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+20. **A.** External reactions are not yet stresses. Resolve them into internal \(N,V,M,T\) at the section and only then apply the matching normal/shear stress relation with the actual cross-section properties.
 
-21. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+21. **A.** Kinematics describes motion, dynamics relates forces to acceleration, and work-energy connects force work to speed/energy. Choose the shortest model that directly contains the requested quantity and known data.
 
-22. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+22. **A.** Multiaxial stress must be reduced using the material-appropriate failure measure. For a ductile metal, principal stresses or von Mises stress are commonly compared with yield after the component stresses are formed consistently.
 
-23. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+23. **A.** Mechanical response depends on both geometry/load and properties such as \(E,G,
+u,S_y,S_u,K_{IC},\alpha,
+ho\). A material substitution can improve one metric, such as mass, while degrading stiffness, fatigue, fracture, or thermal response.
 
-24. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+24. **A.** Column buckling is a stability limit governed strongly by \(EI\), end condition, and effective length. A member can buckle at a load below its material yield load, so strength and stability must be checked separately.
 
-25. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+25. **A.** A synthesis check verifies dimensions, sign, support/load-path feasibility, limiting behavior, and the relevant failure mode. Passing the algebra alone is not enough when the result contradicts the physical restraints or material behavior.
 
-26. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+26. **A.** When several mechanics routes are possible, choose the body and unknown first, then use equilibrium, dynamics, or energy only if it actually contains the requested quantity and available data. This prevents solving the wrong mechanical subsystem correctly.
 
-27. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+27. **A.** The load-path chain should be explicit: applied load → support/internal resultant → section stress/deformation → failure or serviceability check. Skipping an intermediate step is a common way to attach the right stress formula to the wrong load.
 
 
 ---
@@ -400,25 +411,27 @@ D) It is unrelated to Handbook navigation
 
 ## Practice Problem Solutions
 
-1. Use §91.1. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+1. Apply the §91.1 model independently. Start by choosing the correct physical body and free-body diagram, then decide whether equilibrium or dynamics supplies the interface loads. Cross-domain mechanics begins with the load path, not with a stress equation. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-2. Use §91.2. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+2. Apply the §91.2 model independently. External reactions are not yet stresses. Resolve them into internal \(N,V,M,T\) at the section and only then apply the matching normal/shear stress relation with the actual cross-section properties. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-3. Use §91.3. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+3. Apply the §91.3 model independently. Kinematics describes motion, dynamics relates forces to acceleration, and work-energy connects force work to speed/energy. Choose the shortest model that directly contains the requested quantity and known data. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-4. Use §91.4. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+4. Apply the §91.4 model independently. Multiaxial stress must be reduced using the material-appropriate failure measure. For a ductile metal, principal stresses or von Mises stress are commonly compared with yield after the component stresses are formed consistently. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-5. Use §91.5. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+5. Apply the §91.5 model independently. Mechanical response depends on both geometry/load and properties such as \(E,G,
+u,S_y,S_u,K_{IC},\alpha,
+ho\). A material substitution can improve one metric, such as mass, while degrading stiffness, fatigue, fracture, or thermal response. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-6. Use §91.6. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+6. Apply the §91.6 model independently. Column buckling is a stability limit governed strongly by \(EI\), end condition, and effective length. A member can buckle at a load below its material yield load, so strength and stability must be checked separately. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-7. Use §91.7. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+7. Apply the §91.7 model independently. A synthesis check verifies dimensions, sign, support/load-path feasibility, limiting behavior, and the relevant failure mode. Passing the algebra alone is not enough when the result contradicts the physical restraints or material behavior. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-8. Example structure: electrical input power → motor efficiency → shaft power → pump/fluid model → operating cost. Every arrow must carry a defined quantity and units.
+8. Write the mechanics dependency chain explicitly—for example support equilibrium → section \(N,V,M,T\) → stress state → failure/stability/material check. Record the interface force, moment, stress, or displacement passed between stages with sign and units.
 
-9. The FE Other Disciplines specification is printed on pp. 498–500. The route has no dedicated discipline chapter in Handbook 10.6, so examinees use the relevant general sections instead.
+9. Use the FE Other Disciplines specification at printed pp. 498–500 for scope. There is no separate Other Disciplines formula section because this route intentionally draws equations from the general discipline sections of the FE Reference Handbook.
 
-10. Reject answers with impossible units, efficiencies above 100% where not physically meaningful, negative absolute quantities, violated support/device states, broken conservation, or unsafe/unethical implementation assumptions.
+10. Reject the answer immediately if the support/load path is impossible—for example a cable carrying compression, a contact surface pulling, or an equilibrium solution whose forces do not close.
 
 ---
 

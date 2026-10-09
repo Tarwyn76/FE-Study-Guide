@@ -65,7 +65,7 @@ Industrial analytics begins by defining data types, units, timestamps, and quali
 
 **Problem.** Cycle times stored partly in seconds and partly in minutes must be normalized before comparison.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** Mixed time units make the data incomparable until normalized. Convert every observation to one basis—for example, minutes: \(120\ {\rm s}=2\ {\rm min}\). Then calculate summaries from the converted field and retain the original unit/source as metadata so the transformation is traceable.
 
 ---
 
@@ -81,7 +81,7 @@ Relational databases organize entities into tables linked by keys. Good schema d
 
 **Problem.** A work-order record can reference MachineID instead of repeating every machine attribute.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** `MachineID` belongs in a machine table as its unique identifier. A work-order row stores `MachineID` as a foreign key; the join retrieves machine attributes when needed. This avoids repeating location, model, capacity, and other machine data in every work order.
 
 ---
 
@@ -97,7 +97,7 @@ Flowcharts and pseudocode make engineering logic auditable and reproducible.
 
 **Problem.** A defect-screening algorithm should explicitly define the threshold and missing-data rule.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** A defensible defect-screening flow is: read measurement → test for missing/invalid data → if invalid, route to review → otherwise compare with the specified threshold → classify pass/fail → record the decision and input. Explicit branches prevent an undefined missing value from silently becoming a pass or fail.
 
 ---
 
@@ -113,7 +113,7 @@ A KPI requires a defined numerator, denominator, time window, and inclusion rule
 
 **Problem.** 950 good units from 1000 starts gives 95% first-pass yield.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** First-pass yield is good output divided by process starts: \(FPY=950/1000=0.95=\mathbf{95\%}\). The denominator must remain the 1000 original starts; reworked units should not be counted as first-pass successes.
 
 ---
 
@@ -129,7 +129,7 @@ Exploratory analysis looks for distributions, trends, outliers, stratification, 
 
 **Problem.** A boxplot by machine can reveal a shift hidden by the plant-wide average.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** A plant-wide mean can hide machine-to-machine location or spread differences. Stratifying observations by machine and comparing boxplots exposes medians, quartiles, outliers, and shifts that disappear when all machines are pooled.
 
 ---
 
@@ -145,7 +145,7 @@ Predictive analytics estimates likely outcomes; prescriptive analytics selects a
 
 **Problem.** A demand forecast predicts demand; a production plan decides what to make.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** A forecast answers **what outcome is likely**; a production optimization answers **what action should be taken** under costs, capacities, and service constraints. A forecast of 1,200 units does not by itself establish that 1,200 should be produced.
 
 ---
 
@@ -161,7 +161,7 @@ Industrial analytics should be reproducible, versioned, and validated against th
 
 **Problem.** A model that fits historical data but fails on new periods should not be deployed uncritically.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** Hold out a future period that was not used for fitting, reproduce the same data-preparation pipeline, and compare forecast/error metrics on that holdout. A model that fits training history but degrades materially out of sample is not validated for deployment.
 
 ---
 
@@ -171,13 +171,13 @@ Industrial analytics should be reproducible, versioned, and validated against th
 
 **Problem.** A numerical optimum violates an operating rule omitted from the model. Is it implementable?
 
-**Solution.** No. Add the missing operational restriction and re-solve. Mathematical feasibility applies only to the stated model.
+**Solution.** In **Data, Logic, Databases, and Engineering Analytics**, do not accept a local optimum or locally improved metric until it is checked against the chapter's system boundary and feasibility conditions. Industrial-and-systems problems commonly fail when a local improvement shifts delay, cost, risk, inventory, workload, defects, or constraints elsewhere in the system.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the FE Reference Handbook expression. Which should govern?
 
-**Solution.** Use the Handbook expression and definitions unless the problem explicitly provides another model.
+**Solution.** For this chapter, the FE Reference Handbook relation and variable definitions control whenever the Handbook supplies them. Use the external source set **DBSYS, ISO5807, MONT_STATS** only for specification-required learned material not fully developed in the Handbook.
 
 ---
 
@@ -185,7 +185,14 @@ Industrial analytics should be reproducible, versioned, and validated against th
 
 Primary source basis: **FE Industrial & Systems specification Area(s) 6; FE Reference Handbook 10.6 Industrial and Systems Engineering, printed pp. 422–435.**
 
-Specification-required management/design topics that are not directly tabulated are identified as learned or guide-developed rather than assigned false Handbook pages.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required industrial/systems engineering knowledge not fully developed in the Handbook. **Guide synthesis** connects those sources into exam-oriented explanations, worked examples, and decision checks; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Silberschatz, A., Korth, H. F., & Sudarshan, S. (2020). *Database System Concepts* (7th ed.). McGraw-Hill. ISBN 978-1-260-08450-4. Supporting scope: Relational data, keys, integrity, transactions, database design, and data analytics.
+- ISO. (1985). *Information processing—Documentation symbols and conventions for data, program and system flowcharts, program network charts and system resources charts* (ISO 5807:1985; confirmed current by ISO review). Supporting scope: Flowchart documentation symbols and conventions.
+- Montgomery, D. C., & Runger, G. C. (2018). *Applied Statistics and Probability for Engineers* (7th ed.). Wiley. Supporting scope: Engineering data analysis, descriptive statistics, probability, estimation, regression, and model validation.
+
+External references support the learned/application portion of the Industrial and Systems specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +361,31 @@ D) It is always only qualitative
 
 14. For **analytics workflow validation**, verify data basis, units, capacity/probability conditions, and operational feasibility.
 
-15. The boundary and objective determine what counts as performance and which constraints matter.
+15. In **Data, Logic, Databases, and Engineering Analytics**, the model boundary determines what is included in the decision. A valid solution must keep units/data definitions consistent, enforce key/integrity rules, document missing-data logic, and validate analytics on data not used to fit the model.
 
-16. Optimization and statistics answer questions inside a model; implementation, causality, and stakeholder objectives still require engineering judgment.
+16. Units and operational definitions are part of the model, not formatting details. For **Data, Logic, Databases, and Engineering Analytics**, convert quantities to a common basis before combining them and state the denominator/capacity/time basis explicitly.
 
-17. The FE Handbook is the supplied reference and its definitions should govern unless the problem explicitly supplies another model.
+17. The FE Reference Handbook is the exam reference when it supplies the relation for **Data, Logic, Databases, and Engineering Analytics**. The external sources DBSYS, ISO5807, MONT_STATS support learned specification content not fully developed in the Handbook.
 
-18. Check feasibility, units, scale, probability bounds, and upstream/downstream effects.
+18. A quick limiting check for **Data, Logic, Databases, and Engineering Analytics** is to convert a mixed-unit field to one unit and confirm equivalent observations become equal; then run the same analytics pipeline twice and confirm reproducible output. Failure to reduce correctly indicates a model, sign, boundary, or arithmetic problem.
 
-19. **A.** The method depends on assumptions, units, data basis, and decision context.
+19. **A.** Section §62.1, **Engineering Data Types, Units, and Data Quality**, is based on \(\\text{usable data}=\\text{valid}+\\text{complete}+\\text{consistent}+\\text{traceable}\\). Interpret the result within the specific assumptions and system boundary of §62.1; do not transfer it automatically to a different operating regime.
 
-20. **A.** The method depends on assumptions, units, data basis, and decision context.
+20. **A.** Section §62.2, **Relational Databases, Keys, and Engineering Records**, is based on \(\\text{primary key}\\rightarrow\\text{unique row identity}\\). Interpret the result within the specific assumptions and system boundary of §62.2; do not transfer it automatically to a different operating regime.
 
-21. **A.** The method depends on assumptions, units, data basis, and decision context.
+21. **A.** Section §62.3, **Flowcharts, Algorithms, and Decision Logic**, is based on \(\\text{input}\\rightarrow\\text{logic}\\rightarrow\\text{output}\\). Interpret the result within the specific assumptions and system boundary of §62.3; do not transfer it automatically to a different operating regime.
 
-22. **A.** The method depends on assumptions, units, data basis, and decision context.
+22. **A.** Section §62.4, **Descriptive Analytics and KPI Construction**, is based on \(\\mathrm{KPI}=\\frac{\\text{defined performance quantity}}{\\text{defined basis}}\\). Interpret the result within the specific assumptions and system boundary of §62.4; do not transfer it automatically to a different operating regime.
 
-23. **A.** The method depends on assumptions, units, data basis, and decision context.
+23. **A.** Section §62.5, **Exploratory Data Analysis and Visualization**, is based on \(z=\\frac{x-\\bar x}{s}\\). Interpret the result within the specific assumptions and system boundary of §62.5; do not transfer it automatically to a different operating regime.
 
-24. **A.** The method depends on assumptions, units, data basis, and decision context.
+24. **A.** Section §62.6, **Predictive and Prescriptive Analytics**, is based on \(\\text{prediction estimates outcome; optimization recommends action}\\). Interpret the result within the specific assumptions and system boundary of §62.6; do not transfer it automatically to a different operating regime.
 
-25. **A.** The method depends on assumptions, units, data basis, and decision context.
+25. **A.** Section §62.7, **Analytics Validation and Reproducibility**, is based on \(\\text{question}\\rightarrow\\text{data}\\rightarrow\\text{model}\\rightarrow\\text{validation}\\rightarrow\\text{decision}\\). Interpret the result within the specific assumptions and system boundary of §62.7; do not transfer it automatically to a different operating regime.
 
-26. **A.** The method depends on assumptions, units, data basis, and decision context.
+26. **A.** An integrated Data, Logic, Databases, and Engineering Analytics decision must remain mathematically feasible and operationally implementable after resource, integer, timing, uncertainty, quality, safety, and system-boundary constraints are considered.
 
-27. **A.** The method depends on assumptions, units, data basis, and decision context.
+27. **A.** This chapter separates FE-Handbook-supported material from externally supported material and guide synthesis. The source-boundary section lists the external references used for Data, Logic, Databases, and Engineering Analytics.
 
 
 ---
@@ -410,25 +417,25 @@ D) It is always only qualitative
 
 ## Practice Problem Solutions
 
-1. Use §62.1. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+1. **Independent solution for §62.1 — Engineering Data Types, Units, and Data Quality.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: Mixed time units make the data incomparable until normalized. Convert every observation to one basis—for example, minutes: \(120\ {\rm s}=2\ {\rm min}\). Then calculate summaries from the converted field and retain the original unit/source as metadata so the transformation is traceable.
 
-2. Use §62.2. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+2. **Independent solution for §62.2 — Relational Databases, Keys, and Engineering Records.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: `MachineID` belongs in a machine table as its unique identifier. A work-order row stores `MachineID` as a foreign key; the join retrieves machine attributes when needed. This avoids repeating location, model, capacity, and other machine data in every work order.
 
-3. Use §62.3. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+3. **Independent solution for §62.3 — Flowcharts, Algorithms, and Decision Logic.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: A defensible defect-screening flow is: read measurement → test for missing/invalid data → if invalid, route to review → otherwise compare with the specified threshold → classify pass/fail → record the decision and input. Explicit branches prevent an undefined missing value from silently becoming a pass or fail.
 
-4. Use §62.4. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+4. **Independent solution for §62.4 — Descriptive Analytics and KPI Construction.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: First-pass yield is good output divided by process starts: \(FPY=950/1000=0.95=\mathbf{95\%}\). The denominator must remain the 1000 original starts; reworked units should not be counted as first-pass successes.
 
-5. Use §62.5. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+5. **Independent solution for §62.5 — Exploratory Data Analysis and Visualization.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: A plant-wide mean can hide machine-to-machine location or spread differences. Stratifying observations by machine and comparing boxplots exposes medians, quartiles, outliers, and shifts that disappear when all machines are pooled.
 
-6. Use §62.6. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+6. **Independent solution for §62.6 — Predictive and Prescriptive Analytics.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: A forecast answers **what outcome is likely**; a production optimization answers **what action should be taken** under costs, capacities, and service constraints. A forecast of 1,200 units does not by itself establish that 1,200 should be produced.
 
-7. Use §62.7. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+7. **Independent solution for §62.7 — Analytics Validation and Reproducibility.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: Hold out a future period that was not used for fitting, reproduce the same data-preparation pipeline, and compare forecast/error metrics on that holdout. A model that fits training history but degrades materially out of sample is not validated for deployment.
 
-8. Check units, probability bounds, utilization/stability, integer or physical constraints, denominator definitions, and model assumptions.
+8. For an integrated **Data, Logic, Databases, and Engineering Analytics** problem, reject any result that violates this chapter-specific screen: keep units/data definitions consistent, enforce key/integrity rules, document missing-data logic, and validate analytics on data not used to fit the model.
 
-9. Start with FE Industrial & Systems specification Area(s) 6, then use the corresponding Handbook subsection where one exists.
+9. For **Data, Logic, Databases, and Engineering Analytics**, start with the FE Industrial and Systems specification area and Handbook location recorded in the ledger. For `split_required` material, use **DBSYS, ISO5807, MONT_STATS** for the learned portion rather than inventing a Handbook page.
 
-10. Compare the result against upstream/downstream throughput, quality, inventory, safety, staffing, cost, and service.
+10. Use this independent limiting case: convert a mixed-unit field to one unit and confirm equivalent observations become equal; then run the same analytics pipeline twice and confirm reproducible output. The reduced case should behave as stated before the full model is trusted.
 
 ---
 

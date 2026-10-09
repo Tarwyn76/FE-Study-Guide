@@ -65,7 +65,7 @@ Rolling-element, journal, thrust, and specialty bearings support different load/
 
 **Problem.** A deep-groove ball bearing can support radial load and some axial load, unlike a pure radial journal bearing concept.
 
-**Solution.** Apply the relation and model in §86.1; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** A deep-groove ball bearing can carry substantial radial load plus some thrust load, whereas a plain journal-bearing model is primarily radial. Bearing family selection must match radial/thrust load, speed, required life, stiffness, environment, and lubrication.
 
 ---
 
@@ -81,7 +81,7 @@ The Handbook defines the basic dynamic rating associated with 90% survival to th
 
 **Problem.** For the same P and life, roller and ball bearing rating relations use different exponents.
 
-**Solution.** Apply the relation and model in §86.2; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** Basic rating life and dynamic rating are related by \(C=P L^{1/a}\) when \(L\) is on the required normalized basis. Ball and roller bearings use different life exponents, so the same \(P,L\) do not imply the same required \(C\).
 
 ---
 
@@ -97,7 +97,7 @@ Combined radial and axial load is converted to an equivalent radial load using f
 
 **Problem.** If axial load is negligible under the applicable criterion, X=1 and Y=0 for the cited deep-groove relation.
 
-**Solution.** Apply the relation and model in §86.3; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** When the applicable deep-groove criterion makes thrust negligible, \(X=1\) and \(Y=0\), so \(P_{eq}=VF_r\) (and \(P_{eq}=F_r\) if \(V=1\)). Do not discard axial load unless the specified bearing relation permits it.
 
 ---
 
@@ -113,7 +113,7 @@ Bearing life often comes from operating hours and shaft speed. Convert to millio
 
 **Problem.** At 1200 rpm for 10,000 h, life is 720 million revolutions.
 
-**Solution.** Apply the relation and model in §86.4; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** \(L_{rev}=60nL_h=60(1200\ {\rm rev/min})(10{,}000\ {\rm h})=\mathbf{720{,}000{,}000\ rev}\), or **720 million revolutions**.
 
 ---
 
@@ -129,7 +129,7 @@ Boundary, mixed, hydrodynamic, and elastohydrodynamic lubrication represent incr
 
 **Problem.** Higher temperature generally lowers oil viscosity, which can reduce film thickness.
 
-**Solution.** Apply the relation and model in §86.5; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** Oil viscosity normally decreases as temperature rises. Lower viscosity can reduce hydrodynamic/elastohydrodynamic film thickness, making surface roughness and mixed/boundary lubrication more important under the same speed/load.
 
 ---
 
@@ -145,7 +145,7 @@ Hydrodynamic journal bearings develop a pressure wedge from relative motion and 
 
 **Problem.** A stationary shaft does not generate the same hydrodynamic pressure wedge as a rotating shaft under otherwise similar conditions.
 
-**Solution.** Apply the relation and model in §86.6; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** A hydrodynamic journal bearing develops pressure from relative surface motion and a converging lubricant wedge. With the shaft stationary, that self-generated pressure mechanism is absent; only externally supplied/static effects remain.
 
 ---
 
@@ -161,7 +161,7 @@ Bearing design also checks static load, speed limit, lubrication, contamination,
 
 **Problem.** A bearing with adequate calculated L10 life can still fail early from contamination or incorrect fit.
 
-**Solution.** Apply the relation and model in §86.7; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** Calculated L10 life addresses rolling-fatigue probability under the rating model, not every failure cause. Contamination, poor lubrication, mounting damage, electrical erosion, misalignment, overload, or incorrect fit can cause much earlier service failure.
 
 ---
 
@@ -171,13 +171,13 @@ Bearing design also checks static load, speed limit, lubrication, contamination,
 
 **Problem.** A calculation produces a stress or operating point that violates the model assumption used to obtain it. Is the result acceptable?
 
-**Solution.** No. Select the correct model or failure/operating region and solve again. Algebra does not override geometry, material behavior, or component-state validity.
+**Solution.** No. Bearing rating life is only one suitability check. A selection that violates speed, lubrication, fit, load direction, contamination, or mounting conditions must be changed even if L10 life is numerically adequate.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the FE Reference Handbook expression. Which should govern the exam solution?
 
-**Solution.** Use the Handbook expression and its definitions unless the problem explicitly provides another model.
+**Solution.** For **Bearings and Lubrication**, use the FE Reference Handbook expression, symbols, and unit convention whenever it supplies the required model. The external source set **SHIGLEY, ISO281** supports specification-required learned/application material that is not fully developed in the Handbook. If a remembered textbook formula conflicts with a supplied Handbook relation, the supplied Handbook relation governs unless the problem explicitly defines another model.
 
 ---
 
@@ -185,7 +185,13 @@ Bearing design also checks static load, speed limit, lubrication, contamination,
 
 Primary source basis: **FE Mechanical specification Area(s) 14; FE Reference Handbook 10.6 Mechanical Engineering and supporting general sections, with the specific subsection/page identified in the ledger.**
 
-**Source boundary:** The Mechanical specification includes both directly tabulated Handbook equations and learned design concepts. This chapter does not assign invented Handbook pages to specification-required material that is not directly tabulated.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required mechanical-engineering knowledge that is not fully developed in the Handbook. **Guide synthesis** connects those sources into exam-oriented explanations, examples, model checks, and design context; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Nisbett, K. J., & Budynas, R. G. *Shigley's Mechanical Engineering Design* (2024 Release). McGraw Hill. ISBN 978-1-265-47269-6. Supporting scope: Failure theories, fatigue, springs, pressure-vessel screening, bearings, fasteners, shafts, keys, couplings, gears, and machine-element design.
+- ISO. (2007). *Rolling bearings—Dynamic load ratings and rating life* (ISO 281:2007; confirmed current by ISO in 2021). Supporting scope: Basic dynamic load ratings and basic rating life of rolling bearings.
+
+The external references support only the learned/application portion of the FE Mechanical specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +360,31 @@ D) It is always qualitative
 
 14. For **bearing service check**, verify geometry, load direction, material model, units, operating regime, and whether the assumed failure or performance mode remains valid.
 
-15. The sketch exposes supports, force directions, geometry, constraints, energy/flow paths, and missing load cases before algebra obscures them.
+15. In **Bearings and Lubrication**, start from the physical model and system/component state, not from an isolated formula. A valid solution must match bearing type to radial/thrust load and speed, use the correct equivalent load and life exponent, and check lubrication, fit, contamination, and mounting.
 
-16. Mechanical equations are model-dependent. The result must remain compatible with yielding/buckling/fatigue, flow regime, thermal state, contact, or kinematic constraints.
+16. Units and sign/reference conventions are part of the model in **Bearings and Lubrication**. Convert all quantities to a consistent basis before substitution and state whether values are absolute/gauge, static/stagnation, nominal/local, input/output, or other relevant basis.
 
-17. The Handbook is the supplied exam reference; its definitions, correction factors, unit conventions, and tables should govern unless the problem explicitly supplies another relation.
+17. The FE Reference Handbook is the controlling exam reference when it supplies the relation for **Bearings and Lubrication**. External sources **SHIGLEY, ISO281** support only the learned material not fully developed in the Handbook.
 
-18. These checks catch impossible motion, unit errors, invalid thin-wall or linear assumptions, unrealistic stresses, interference, and parts that cannot be manufactured or assembled.
+18. Use a limiting or reversal check before accepting the result: let axial load become negligible and confirm the stated equivalent-load relation reduces to radial loading; set MTBF-style service hours to zero and confirm accumulated bearing revolutions are zero. A failure to reduce correctly indicates a geometry, regime, sign, unit, or model-selection error.
 
-19. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+19. **A.** Section §86.1, **Bearing types and load directions**, uses \(\text{bearing choice}=f(\text{radial load, thrust, speed, life, stiffness, environment})\). Apply it only under the geometry/material/operating assumptions stated in §86.1, then compare the result with the physical behavior described there.
 
-20. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+20. **A.** Section §86.2, **Basic dynamic load rating and L10 life**, uses \(C=P L^{1/a}\). Apply it only under the geometry/material/operating assumptions stated in §86.2, then compare the result with the physical behavior described there.
 
-21. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+21. **A.** Section §86.3, **Equivalent radial bearing load**, uses \(P_{eq}=XVF_r+YF_a\). Apply it only under the geometry/material/operating assumptions stated in §86.3, then compare the result with the physical behavior described there.
 
-22. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+22. **A.** Section §86.4, **Bearing life conversion from revolutions to hours**, uses \(L_{rev}=60n\,L_h\). Apply it only under the geometry/material/operating assumptions stated in §86.4, then compare the result with the physical behavior described there.
 
-23. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+23. **A.** Section §86.5, **Lubrication regimes**, uses \(\text{film thickness/roughness and speed-load-viscosity determine regime}\). Apply it only under the geometry/material/operating assumptions stated in §86.5, then compare the result with the physical behavior described there.
 
-24. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+24. **A.** Section §86.6, **Journal-bearing concepts**, uses \(\text{load supported by pressure generated in the lubricant film}\). Apply it only under the geometry/material/operating assumptions stated in §86.6, then compare the result with the physical behavior described there.
 
-25. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+25. **A.** Section §86.7, **Bearing failure, fits, mounting, and service checks**, uses \(\text{life calculation is only one part of bearing suitability}\). Apply it only under the geometry/material/operating assumptions stated in §86.7, then compare the result with the physical behavior described there.
 
-26. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+26. **A.** An integrated **Bearings and Lubrication** result is acceptable only after the governing physical model, geometry, operating/failure regime, units, and independent plausibility checks agree.
 
-27. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+27. **A.** Source ownership is explicit in this chapter: FE-Handbook-supported material remains tied to the ledger; externally supported material uses **SHIGLEY, ISO281**; guide synthesis is supplemental explanation and exam-oriented workflow.
 
 
 ---
@@ -410,25 +416,25 @@ D) It is always qualitative
 
 ## Practice Problem Solutions
 
-1. Use §86.1. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+1. **Independent check for §86.1 — Bearing types and load directions.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. A deep-groove ball bearing can carry substantial radial load plus some thrust load, whereas a plain journal-bearing model is primarily radial. Bearing family selection must match radial/thrust load, speed, required life, stiffness, environment, and lubrication.
 
-2. Use §86.2. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+2. **Independent check for §86.2 — Basic dynamic load rating and L10 life.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. Basic rating life and dynamic rating are related by \(C=P L^{1/a}\) when \(L\) is on the required normalized basis. Ball and roller bearings use different life exponents, so the same \(P,L\) do not imply the same required \(C\).
 
-3. Use §86.3. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+3. **Independent check for §86.3 — Equivalent radial bearing load.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. When the applicable deep-groove criterion makes thrust negligible, \(X=1\) and \(Y=0\), so \(P_{eq}=VF_r\) (and \(P_{eq}=F_r\) if \(V=1\)). Do not discard axial load unless the specified bearing relation permits it.
 
-4. Use §86.4. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+4. **Independent check for §86.4 — Bearing life conversion from revolutions to hours.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. \(L_{rev}=60nL_h=60(1200\ {\rm rev/min})(10{,}000\ {\rm h})=\mathbf{720{,}000{,}000\ rev}\), or **720 million revolutions**.
 
-5. Use §86.5. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+5. **Independent check for §86.5 — Lubrication regimes.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. Oil viscosity normally decreases as temperature rises. Lower viscosity can reduce hydrodynamic/elastohydrodynamic film thickness, making surface roughness and mixed/boundary lubrication more important under the same speed/load.
 
-6. Use §86.6. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+6. **Independent check for §86.6 — Journal-bearing concepts.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. A hydrodynamic journal bearing develops pressure from relative surface motion and a converging lubricant wedge. With the shaft stationary, that self-generated pressure mechanism is absent; only externally supplied/static effects remain.
 
-7. Use §86.7. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+7. **Independent check for §86.7 — Bearing failure, fits, mounting, and service checks.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. Calculated L10 life addresses rolling-fatigue probability under the rating model, not every failure cause. Contamination, poor lubrication, mounting damage, electrical erosion, misalignment, overload, or incorrect fit can cause much earlier service failure.
 
-8. Check dimensions, load direction, support/interface assumptions, material regime, fatigue/static basis, operating speed/temperature/pressure, and any geometric validity limit such as thin-wall or small-deflection assumptions.
+8. For **Bearings and Lubrication**, one required acceptance screen is: match bearing type to radial/thrust load and speed, use the correct equivalent load and life exponent, and check lubrication, fit, contamination, and mounting. A result that violates this screen must be rejected or recomputed with the proper model.
 
-9. Start with FE Mechanical specification Area(s) 14, then use the Handbook subsection named in the corresponding ledger entry.
+9. Start with the FE Mechanical specification area and FE Reference Handbook location recorded in the ledger for **Bearings and Lubrication**. For `split_required` concepts, use **SHIGLEY, ISO281** for the learned/application portion without inventing a Handbook page or clause.
 
-10. Test a simple limit such as zero load, very large stiffness, matched speed ratio, zero pressure, zero damping, or maximum/minimum fit. Confirm the result trends in the physically expected direction and remains manufacturable.
+10. Apply this limiting-case test independently: let axial load become negligible and confirm the stated equivalent-load relation reduces to radial loading; set MTBF-style service hours to zero and confirm accumulated bearing revolutions are zero. If the simplified case does not behave as expected, revisit the setup before trusting the full calculation.
 
 ---
 

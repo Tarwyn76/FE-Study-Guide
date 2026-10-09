@@ -65,7 +65,7 @@ Requirements should be clear and testable. Verification checks conformance; vali
 
 **Problem.** “Easy to use” needs measurable criteria to become a testable requirement.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** 'Easy to use' is not directly verifiable. Convert the need into measurable requirements such as task-completion time, error rate, training limit, accessibility criterion, or user-success percentage under defined conditions, then trace verification evidence back to each requirement.
 
 ---
 
@@ -81,7 +81,7 @@ Functional decomposition separates what the system must do from how it is implem
 
 **Problem.** A power subsystem requirement must specify interfaces to the loads it serves.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** Functional analysis decomposes mission capability into functions and subfunctions before allocating them to solution elements. Interfaces must specify what crosses the boundary—power, data, material, mechanical loads, timing, environment, or other exchanges—so local designs remain compatible.
 
 ---
 
@@ -97,7 +97,7 @@ Configuration management preserves coherent versions and interfaces through cont
 
 **Problem.** Changing a drawing without its interface specification creates inconsistency.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** Configuration management preserves consistency among requirements, interfaces, drawings, software, test evidence, and approved baselines. A drawing change that bypasses impact review can create an interface mismatch even if the changed component itself is correct.
 
 ---
 
@@ -113,7 +113,7 @@ FMEA identifies failure modes, effects, causes, controls, and actions. RPN is a 
 
 **Problem.** A severe safety failure deserves attention even when occurrence is low.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** An RPN is one possible prioritization aid, \(RPN=S\times O\times D\), but severity must not be hidden by multiplication. IEC 60812 explicitly permits different prioritization approaches; a low-occurrence catastrophic hazard can still require action despite a moderate numeric RPN.
 
 ---
 
@@ -129,7 +129,7 @@ Fault trees represent top-event logic with AND/OR gates and basic events.
 
 **Problem.** An OR gate occurs if either input event occurs.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** For independent basic events A and B, an AND gate probability is \(P(A\cap B)=P(A)P(B)\). An OR gate occurs if either input occurs; for independent inputs its exact probability is \(1-[1-P(A)][1-P(B)]\), not simply the sum when overlap is non-negligible.
 
 ---
 
@@ -145,7 +145,7 @@ Series systems require all components to work; parallel redundancy can preserve 
 
 **Problem.** Two independent 0.9 components in series give reliability 0.81.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** Two independent components of reliability 0.9 in series give \(R_s=0.9(0.9)=\mathbf{0.81}\). The same two in active parallel give \(R_p=1-(0.1)(0.1)=\mathbf{0.99}\), assuming either component can satisfy the function and failures are independent.
 
 ---
 
@@ -161,7 +161,7 @@ Availability depends on both reliability and restoration time. Life-cycle engine
 
 **Problem.** Reducing MTTR improves availability even if MTBF is unchanged.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** Availability is \(A=MTBF/(MTBF+MTTR)\). Reducing MTTR lowers the downtime term, so availability increases even if MTBF is unchanged. Life-cycle risk also depends on failure consequences, support resources, detection, maintenance policy, logistics, and changing operational context.
 
 ---
 
@@ -171,13 +171,13 @@ Availability depends on both reliability and restoration time. Life-cycle engine
 
 **Problem.** A numerical optimum violates an operating rule omitted from the model. Is it implementable?
 
-**Solution.** No. Add the missing operational restriction and re-solve. Mathematical feasibility applies only to the stated model.
+**Solution.** In **Systems Engineering, Reliability, FMEA, Fault Trees, and Life-Cycle Risk**, do not accept a local optimum or locally improved metric until it is checked against the chapter's system boundary and feasibility conditions. Industrial-and-systems problems commonly fail when a local improvement shifts delay, cost, risk, inventory, workload, defects, or constraints elsewhere in the system.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the FE Reference Handbook expression. Which should govern?
 
-**Solution.** Use the Handbook expression and definitions unless the problem explicitly provides another model.
+**Solution.** For this chapter, the FE Reference Handbook relation and variable definitions control whenever the Handbook supplies them. Use the external source set **INCOSE5, IEC60812, IEC61025** only for specification-required learned material not fully developed in the Handbook.
 
 ---
 
@@ -185,7 +185,14 @@ Availability depends on both reliability and restoration time. Life-cycle engine
 
 Primary source basis: **FE Industrial & Systems specification Area(s) 13; FE Reference Handbook 10.6 Industrial and Systems Engineering, printed pp. 422–435.**
 
-Specification-required management/design topics that are not directly tabulated are identified as learned or guide-developed rather than assigned false Handbook pages.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required industrial/systems engineering knowledge not fully developed in the Handbook. **Guide synthesis** connects those sources into exam-oriented explanations, worked examples, and decision checks; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- INCOSE. (2023). *Systems Engineering Handbook: A Guide for System Life Cycle Processes and Activities* (5th ed.). Wiley. ISBN 978-1-119-81429-0. Supporting scope: Requirements, lifecycle processes, verification/validation, interfaces, configuration, risk, reliability/maintainability integration, and systems engineering practice.
+- IEC. (2018). *Failure modes and effects analysis (FMEA and FMECA)* (IEC 60812:2018). Supporting scope: Planning, performing, documenting, maintaining, and prioritizing FMEA/FMECA analyses.
+- IEC. (2006). *Fault tree analysis (FTA)* (IEC 61025:2006, Ed. 2.0; stability date 2029). Supporting scope: Fault-tree-analysis assumptions, events, gates, failure modes, symbols, and analysis procedure.
+
+External references support the learned/application portion of the Industrial and Systems specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +361,31 @@ D) It is always only qualitative
 
 14. For **system availability**, verify data basis, units, capacity/probability conditions, and operational feasibility.
 
-15. The boundary and objective determine what counts as performance and which constraints matter.
+15. In **Systems Engineering, Reliability, FMEA, Fault Trees, and Life-Cycle Risk**, the model boundary determines what is included in the decision. A valid solution must make requirements measurable and traceable, preserve interface/configuration consistency, treat FMEA/FTA assumptions explicitly, avoid assuming failure independence without basis, and distinguish reliability from availability.
 
-16. Optimization and statistics answer questions inside a model; implementation, causality, and stakeholder objectives still require engineering judgment.
+16. Units and operational definitions are part of the model, not formatting details. For **Systems Engineering, Reliability, FMEA, Fault Trees, and Life-Cycle Risk**, convert quantities to a common basis before combining them and state the denominator/capacity/time basis explicitly.
 
-17. The FE Handbook is the supplied reference and its definitions should govern unless the problem explicitly supplies another model.
+17. The FE Reference Handbook is the exam reference when it supplies the relation for **Systems Engineering, Reliability, FMEA, Fault Trees, and Life-Cycle Risk**. The external sources INCOSE5, IEC60812, IEC61025 support learned specification content not fully developed in the Handbook.
 
-18. Check feasibility, units, scale, probability bounds, and upstream/downstream effects.
+18. A quick limiting check for **Systems Engineering, Reliability, FMEA, Fault Trees, and Life-Cycle Risk** is to set MTTR to zero and confirm ideal inherent availability approaches 1; set one series component reliability to zero and confirm series-system reliability becomes zero. Failure to reduce correctly indicates a model, sign, boundary, or arithmetic problem.
 
-19. **A.** The method depends on assumptions, units, data basis, and decision context.
+19. **A.** Section §75.1, **Requirements, Verification, and Validation**, is based on \(Need\\rightarrow Requirement\\rightarrow Design\\rightarrow Verification/Validation\\). Interpret the result within the specific assumptions and system boundary of §75.1; do not transfer it automatically to a different operating regime.
 
-20. **A.** The method depends on assumptions, units, data basis, and decision context.
+20. **A.** Section §75.2, **Functional Analysis and Interfaces**, is based on \(Mission\\rightarrow Functions\\rightarrow Subfunctions\\rightarrow Components\\). Interpret the result within the specific assumptions and system boundary of §75.2; do not transfer it automatically to a different operating regime.
 
-21. **A.** The method depends on assumptions, units, data basis, and decision context.
+21. **A.** Section §75.3, **Configuration Management and Change Control**, is based on \(Baseline\\rightarrow Change\\ proposal\\rightarrow Impact\\ review\\rightarrow Approved\\ baseline\\). Interpret the result within the specific assumptions and system boundary of §75.3; do not transfer it automatically to a different operating regime.
 
-22. **A.** The method depends on assumptions, units, data basis, and decision context.
+22. **A.** Section §75.4, **FMEA and Risk Prioritization**, is based on \(RPN=S\\times O\\times D\\). Interpret the result within the specific assumptions and system boundary of §75.4; do not transfer it automatically to a different operating regime.
 
-23. **A.** The method depends on assumptions, units, data basis, and decision context.
+23. **A.** Section §75.5, **Fault-Tree Analysis**, is based on \(P(A\\cap B)=P(A)P(B)\\text{ for independent events}\\). Interpret the result within the specific assumptions and system boundary of §75.5; do not transfer it automatically to a different operating regime.
 
-24. **A.** The method depends on assumptions, units, data basis, and decision context.
+24. **A.** Section §75.6, **Series and Parallel Reliability**, is based on \(R_s=\\prod_iR_i,\\quad R_p=1-\\prod_i(1-R_i)\\). Interpret the result within the specific assumptions and system boundary of §75.6; do not transfer it automatically to a different operating regime.
 
-25. **A.** The method depends on assumptions, units, data basis, and decision context.
+25. **A.** Section §75.7, **Availability, Maintainability, and Life-Cycle Risk**, is based on \(A=\\frac{MTBF}{MTBF+MTTR}\\). Interpret the result within the specific assumptions and system boundary of §75.7; do not transfer it automatically to a different operating regime.
 
-26. **A.** The method depends on assumptions, units, data basis, and decision context.
+26. **A.** An integrated Systems Engineering, Reliability, FMEA, Fault Trees, and Life-Cycle Risk decision must remain mathematically feasible and operationally implementable after resource, integer, timing, uncertainty, quality, safety, and system-boundary constraints are considered.
 
-27. **A.** The method depends on assumptions, units, data basis, and decision context.
+27. **A.** This chapter separates FE-Handbook-supported material from externally supported material and guide synthesis. The source-boundary section lists the external references used for Systems Engineering, Reliability, FMEA, Fault Trees, and Life-Cycle Risk.
 
 
 ---
@@ -410,25 +417,25 @@ D) It is always only qualitative
 
 ## Practice Problem Solutions
 
-1. Use §75.1. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+1. **Independent solution for §75.1 — Requirements, Verification, and Validation.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: 'Easy to use' is not directly verifiable. Convert the need into measurable requirements such as task-completion time, error rate, training limit, accessibility criterion, or user-success percentage under defined conditions, then trace verification evidence back to each requirement.
 
-2. Use §75.2. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+2. **Independent solution for §75.2 — Functional Analysis and Interfaces.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: Functional analysis decomposes mission capability into functions and subfunctions before allocating them to solution elements. Interfaces must specify what crosses the boundary—power, data, material, mechanical loads, timing, environment, or other exchanges—so local designs remain compatible.
 
-3. Use §75.3. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+3. **Independent solution for §75.3 — Configuration Management and Change Control.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: Configuration management preserves consistency among requirements, interfaces, drawings, software, test evidence, and approved baselines. A drawing change that bypasses impact review can create an interface mismatch even if the changed component itself is correct.
 
-4. Use §75.4. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+4. **Independent solution for §75.4 — FMEA and Risk Prioritization.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: An RPN is one possible prioritization aid, \(RPN=S\times O\times D\), but severity must not be hidden by multiplication. IEC 60812 explicitly permits different prioritization approaches; a low-occurrence catastrophic hazard can still require action despite a moderate numeric RPN.
 
-5. Use §75.5. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+5. **Independent solution for §75.5 — Fault-Tree Analysis.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: For independent basic events A and B, an AND gate probability is \(P(A\cap B)=P(A)P(B)\). An OR gate occurs if either input occurs; for independent inputs its exact probability is \(1-[1-P(A)][1-P(B)]\), not simply the sum when overlap is non-negligible.
 
-6. Use §75.6. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+6. **Independent solution for §75.6 — Series and Parallel Reliability.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: Two independent components of reliability 0.9 in series give \(R_s=0.9(0.9)=\mathbf{0.81}\). The same two in active parallel give \(R_p=1-(0.1)(0.1)=\mathbf{0.99}\), assuming either component can satisfy the function and failures are independent.
 
-7. Use §75.7. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+7. **Independent solution for §75.7 — Availability, Maintainability, and Life-Cycle Risk.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: Availability is \(A=MTBF/(MTBF+MTTR)\). Reducing MTTR lowers the downtime term, so availability increases even if MTBF is unchanged. Life-cycle risk also depends on failure consequences, support resources, detection, maintenance policy, logistics, and changing operational context.
 
-8. Check units, probability bounds, utilization/stability, integer or physical constraints, denominator definitions, and model assumptions.
+8. For an integrated **Systems Engineering, Reliability, FMEA, Fault Trees, and Life-Cycle Risk** problem, reject any result that violates this chapter-specific screen: make requirements measurable and traceable, preserve interface/configuration consistency, treat FMEA/FTA assumptions explicitly, avoid assuming failure independence without basis, and distinguish reliability from availability.
 
-9. Start with FE Industrial & Systems specification Area(s) 13, then use the corresponding Handbook subsection where one exists.
+9. For **Systems Engineering, Reliability, FMEA, Fault Trees, and Life-Cycle Risk**, start with the FE Industrial and Systems specification area and Handbook location recorded in the ledger. For `split_required` material, use **INCOSE5, IEC60812, IEC61025** for the learned portion rather than inventing a Handbook page.
 
-10. Compare the result against upstream/downstream throughput, quality, inventory, safety, staffing, cost, and service.
+10. Use this independent limiting case: set MTTR to zero and confirm ideal inherent availability approaches 1; set one series component reliability to zero and confirm series-system reliability becomes zero. The reduced case should behave as stated before the full model is trusted.
 
 ---
 

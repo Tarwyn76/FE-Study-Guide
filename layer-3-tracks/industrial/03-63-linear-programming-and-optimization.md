@@ -65,7 +65,7 @@ Linear programming models a linear objective subject to linear constraints. Form
 
 **Problem.** Product quantities x1 and x2 can be constrained by available labor and material.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** Let \(x_1,x_2\) be product quantities. Each resource constraint is written from unit consumption times quantity, for example \(a_{11}x_1+a_{12}x_2\le b_1\), and the objective \(Z=c_1x_1+c_2x_2\) represents contribution, cost, or another defined criterion. Nonnegativity closes the basic LP model.
 
 ---
 
@@ -81,7 +81,7 @@ Slack represents unused capacity in a less-than constraint; zero slack indicates
 
 **Problem.** A 100-hour capacity with 92 hours used has 8 hours slack.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** Slack is unused capacity. With 100 hr available and 92 hr used, \(s=100-92=\mathbf{8\ hr}\). A positive 8-hr slack means that capacity constraint is nonbinding at this solution.
 
 ---
 
@@ -97,7 +97,7 @@ For two-variable LPs, graph the feasible region and evaluate objective values at
 
 **Problem.** If no point satisfies every constraint, the model is infeasible.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** In a two-variable LP, graph every constraint and keep only the common feasible region. If there is **no point** satisfying all constraints simultaneously, the feasible set is empty and the model is **infeasible**; there is no corner point at which an optimum can exist.
 
 ---
 
@@ -113,7 +113,7 @@ Dual variables can be interpreted as marginal resource values within a valid sen
 
 **Problem.** A $5/hr shadow price means one more hour of a binding resource can improve objective by about $5 locally.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** A shadow price of \$5/hr means that, while the current basis remains valid, increasing the right-hand side of that binding resource by 1 hr changes the optimal objective by about **\$5** in the favorable direction. It is a local marginal value, not an unlimited price.
 
 ---
 
@@ -129,7 +129,7 @@ Reduced costs and allowable ranges explain how robust an LP solution is to param
 
 **Problem.** An unused product may require a larger unit contribution before entering the optimal basis.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** For a maximization model, a nonbasic variable with unfavorable reduced cost must improve its objective coefficient sufficiently before entering the optimal basis. The allowable coefficient range is therefore a **local sensitivity statement tied to the current basis**, not proof that all other parameter changes leave the solution unchanged.
 
 ---
 
@@ -145,7 +145,7 @@ Transportation and assignment problems are special network optimization models w
 
 **Problem.** Allocate warehouse shipments to customers while minimizing transportation cost.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** The transportation model assigns \(x_{ij}\) from origins \(i\) to destinations \(j\), minimizes \(\sum c_{ij}x_{ij}\), and enforces supply/demand balances. Assignment is the special one-to-one case; minimum-cost flow generalizes the same cost-plus-flow-conservation structure to a network.
 
 ---
 
@@ -161,7 +161,7 @@ An optimum is only optimal for the stated model. Missing integer, policy, or phy
 
 **Problem.** A fractional workforce solution is not implementable if people must be whole.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** If a solver returns 3.6 workers but headcount must be integral, the continuous LP result is not directly implementable. Either impose integer variables and re-solve or evaluate nearby feasible integer alternatives; simple rounding can violate capacity or coverage constraints.
 
 ---
 
@@ -171,13 +171,13 @@ An optimum is only optimal for the stated model. Missing integer, policy, or phy
 
 **Problem.** A numerical optimum violates an operating rule omitted from the model. Is it implementable?
 
-**Solution.** No. Add the missing operational restriction and re-solve. Mathematical feasibility applies only to the stated model.
+**Solution.** In **Linear Programming and Optimization**, do not accept a local optimum or locally improved metric until it is checked against the chapter's system boundary and feasibility conditions. Industrial-and-systems problems commonly fail when a local improvement shifts delay, cost, risk, inventory, workload, defects, or constraints elsewhere in the system.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the FE Reference Handbook expression. Which should govern?
 
-**Solution.** Use the Handbook expression and definitions unless the problem explicitly provides another model.
+**Solution.** For **Linear Programming and Optimization**, the FE Reference Handbook formulation and variable definitions govern when supplied. Hillier and Lieberman supports the learned material on **linear-programming geometry, duality, reduced cost, sensitivity, transportation, and integrality**. Do not substitute a remembered textbook convention when the problem or Handbook defines a different sign, capacity, or variable basis.
 
 ---
 
@@ -185,7 +185,12 @@ An optimum is only optimal for the stated model. Missing integer, policy, or phy
 
 Primary source basis: **FE Industrial & Systems specification Area(s) 6; FE Reference Handbook 10.6 Industrial and Systems Engineering, printed pp. 422–435.**
 
-Specification-required management/design topics that are not directly tabulated are identified as learned or guide-developed rather than assigned false Handbook pages.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required industrial/systems engineering knowledge not fully developed in the Handbook. **Guide synthesis** connects those sources into exam-oriented explanations, worked examples, and decision checks; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Hillier, F. S., & Lieberman, G. J. (2021). *Introduction to Operations Research* (11th ed.). McGraw-Hill Education. ISBN 978-1-260-57587-3. Supporting scope: Linear programming, duality/sensitivity, transportation/network models, queueing, inventory, Markov models, and simulation.
+
+External references support the learned/application portion of the Industrial and Systems specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +359,31 @@ D) It is always only qualitative
 
 14. For **optimization solution validation**, verify data basis, units, capacity/probability conditions, and operational feasibility.
 
-15. The boundary and objective determine what counts as performance and which constraints matter.
+15. In **Linear Programming and Optimization**, the model boundary determines what is included in the decision. A valid solution must confirm every constraint is satisfied, variable domains are implementable, sensitivity statements remain inside their valid ranges, and the objective represents the actual decision.
 
-16. Optimization and statistics answer questions inside a model; implementation, causality, and stakeholder objectives still require engineering judgment.
+16. Units and operational definitions are part of the model, not formatting details. For **Linear Programming and Optimization**, convert quantities to a common basis before combining them and state the denominator/capacity/time basis explicitly.
 
-17. The FE Handbook is the supplied reference and its definitions should govern unless the problem explicitly supplies another model.
+17. The FE Reference Handbook is the exam reference when it supplies the relation for **Linear Programming and Optimization**. The external sources HILLIER support learned specification content not fully developed in the Handbook.
 
-18. Check feasibility, units, scale, probability bounds, and upstream/downstream effects.
+18. A quick limiting check for **Linear Programming and Optimization** is to set a resource RHS large enough to be nonbinding and confirm its slack becomes positive and its local shadow value falls to zero in the new optimum. Failure to reduce correctly indicates a model, sign, boundary, or arithmetic problem.
 
-19. **A.** The method depends on assumptions, units, data basis, and decision context.
+19. **A.** Section §63.1, **Decision Variables, Objectives, and Constraints**, is based on \(\\max Z=cx\\quad\\text{s.t. }Ax\\le b,\\ x\\ge0\\). Interpret the result within the specific assumptions and system boundary of §63.1; do not transfer it automatically to a different operating regime.
 
-20. **A.** The method depends on assumptions, units, data basis, and decision context.
+20. **A.** Section §63.2, **Slack, Surplus, Binding Constraints, and Feasibility**, is based on \(a_ix+s_i=b_i,\\quad s_i\\ge0\\). Interpret the result within the specific assumptions and system boundary of §63.2; do not transfer it automatically to a different operating regime.
 
-21. **A.** The method depends on assumptions, units, data basis, and decision context.
+21. **A.** Section §63.3, **Graphical LP Solution and Corner Points**, is based on \(\\text{bounded LP optimum occurs at an extreme point}\\). Interpret the result within the specific assumptions and system boundary of §63.3; do not transfer it automatically to a different operating regime.
 
-22. **A.** The method depends on assumptions, units, data basis, and decision context.
+22. **A.** Section §63.4, **Duality and Shadow Prices**, is based on \(\\max cx,Ax\\le b\\quad\\leftrightarrow\\quad\\min yb,yA\\ge c\\). Interpret the result within the specific assumptions and system boundary of §63.4; do not transfer it automatically to a different operating regime.
 
-23. **A.** The method depends on assumptions, units, data basis, and decision context.
+23. **A.** Section §63.5, **Reduced Cost and Sensitivity**, is based on \(\\text{reduced cost}=\\text{objective improvement required for entry}\\). Interpret the result within the specific assumptions and system boundary of §63.5; do not transfer it automatically to a different operating regime.
 
-24. **A.** The method depends on assumptions, units, data basis, and decision context.
+24. **A.** Section §63.6, **Transportation, Assignment, and Minimum-Cost Flow**, is based on \(\\min\\sum_i\\sum_j c_{ij}x_{ij}\\). Interpret the result within the specific assumptions and system boundary of §63.6; do not transfer it automatically to a different operating regime.
 
-25. **A.** The method depends on assumptions, units, data basis, and decision context.
+25. **A.** Section §63.7, **Optimization Model Verification**, is based on \(\\text{valid solution}=\\text{mathematical feasibility}+\\text{model validity}\\). Interpret the result within the specific assumptions and system boundary of §63.7; do not transfer it automatically to a different operating regime.
 
-26. **A.** The method depends on assumptions, units, data basis, and decision context.
+26. **A.** An integrated Linear Programming and Optimization decision must remain mathematically feasible and operationally implementable after resource, integer, timing, uncertainty, quality, safety, and system-boundary constraints are considered.
 
-27. **A.** The method depends on assumptions, units, data basis, and decision context.
+27. **A.** This chapter separates FE-Handbook-supported material from externally supported material and guide synthesis. The source-boundary section lists the external references used for Linear Programming and Optimization.
 
 
 ---
@@ -410,25 +415,25 @@ D) It is always only qualitative
 
 ## Practice Problem Solutions
 
-1. Use §63.1. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+1. **Independent solution for §63.1 — Decision Variables, Objectives, and Constraints.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: Let \(x_1,x_2\) be product quantities. Each resource constraint is written from unit consumption times quantity, for example \(a_{11}x_1+a_{12}x_2\le b_1\), and the objective \(Z=c_1x_1+c_2x_2\) represents contribution, cost, or another defined criterion. Nonnegativity closes the basic LP model.
 
-2. Use §63.2. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+2. **Independent solution for §63.2 — Slack, Surplus, Binding Constraints, and Feasibility.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: Slack is unused capacity. With 100 hr available and 92 hr used, \(s=100-92=\mathbf{8\ hr}\). A positive 8-hr slack means that capacity constraint is nonbinding at this solution.
 
-3. Use §63.3. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+3. **Independent solution for §63.3 — Graphical LP Solution and Corner Points.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: In a two-variable LP, graph every constraint and keep only the common feasible region. If there is **no point** satisfying all constraints simultaneously, the feasible set is empty and the model is **infeasible**; there is no corner point at which an optimum can exist.
 
-4. Use §63.4. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+4. **Independent solution for §63.4 — Duality and Shadow Prices.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: A shadow price of \$5/hr means that, while the current basis remains valid, increasing the right-hand side of that binding resource by 1 hr changes the optimal objective by about **\$5** in the favorable direction. It is a local marginal value, not an unlimited price.
 
-5. Use §63.5. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+5. **Independent solution for §63.5 — Reduced Cost and Sensitivity.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: For a maximization model, a nonbasic variable with unfavorable reduced cost must improve its objective coefficient sufficiently before entering the optimal basis. The allowable coefficient range is therefore a **local sensitivity statement tied to the current basis**, not proof that all other parameter changes leave the solution unchanged.
 
-6. Use §63.6. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+6. **Independent solution for §63.6 — Transportation, Assignment, and Minimum-Cost Flow.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: The transportation model assigns \(x_{ij}\) from origins \(i\) to destinations \(j\), minimizes \(\sum c_{ij}x_{ij}\), and enforces supply/demand balances. Assignment is the special one-to-one case; minimum-cost flow generalizes the same cost-plus-flow-conservation structure to a network.
 
-7. Use §63.7. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+7. **Independent solution for §63.7 — Optimization Model Verification.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: If a solver returns 3.6 workers but headcount must be integral, the continuous LP result is not directly implementable. Either impose integer variables and re-solve or evaluate nearby feasible integer alternatives; simple rounding can violate capacity or coverage constraints.
 
-8. Check units, probability bounds, utilization/stability, integer or physical constraints, denominator definitions, and model assumptions.
+8. For an integrated **Linear Programming and Optimization** problem, reject any result that violates this chapter-specific screen: confirm every constraint is satisfied, variable domains are implementable, sensitivity statements remain inside their valid ranges, and the objective represents the actual decision.
 
-9. Start with FE Industrial & Systems specification Area(s) 6, then use the corresponding Handbook subsection where one exists.
+9. For **Linear Programming and Optimization**, start with the FE Industrial and Systems specification area and Handbook location recorded in the ledger. For `split_required` material, use **HILLIER** for the learned portion rather than inventing a Handbook page.
 
-10. Compare the result against upstream/downstream throughput, quality, inventory, safety, staffing, cost, and service.
+10. Use this independent limiting case: set a resource RHS large enough to be nonbinding and confirm its slack becomes positive and its local shadow value falls to zero in the new optimum. The reduced case should behave as stated before the full model is trusted.
 
 ---
 

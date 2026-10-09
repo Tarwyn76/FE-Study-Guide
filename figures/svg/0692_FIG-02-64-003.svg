@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1008pt" height="720pt" viewBox="0 0 1008 720" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-09T15:06:53.363484</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 720 
+L 1008 720 
+L 1008 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="text_1">
+    <!-- $v_{ind}=-N\,d\Phi/dt$ -->
+    <g style="fill: #23313d" transform="translate(668.556 217.82225)">
+     <text>
+      <tspan x="0" y="-0.71875" style="font-style: oblique; font-size: 28px; font-family: 'DejaVu Sans'; fill: #23313d">v</tspan>
+      <tspan x="105.477148" y="-0.71875" style="font-style: oblique; font-size: 28px; font-family: 'DejaVu Sans'; fill: #23313d">N</tspan>
+      <tspan x="130.96845" y="-0.71875" style="font-style: oblique; font-size: 28px; font-family: 'DejaVu Sans'; fill: #23313d">d</tspan>
+      <tspan x="180.214544" y="-0.71875" style="font-style: oblique; font-size: 28px; font-family: 'DejaVu Sans'; fill: #23313d">d</tspan>
+      <tspan x="197.987982" y="-0.71875" style="font-style: oblique; font-size: 28px; font-family: 'DejaVu Sans'; fill: #23313d">t</tspan>
+      <tspan x="16.570312" y="3.875" style="font-style: oblique; font-size: 19.6px; font-family: 'DejaVu Sans'; fill: #23313d">i</tspan>
+      <tspan x="22.01582" y="3.875" style="font-style: oblique; font-size: 19.6px; font-family: 'DejaVu Sans'; fill: #23313d">n</tspan>
+      <tspan x="34.438086" y="3.875" style="font-style: oblique; font-size: 19.6px; font-family: 'DejaVu Sans'; fill: #23313d">d</tspan>
+      <tspan x="53.100195" y="-0.71875" style="font-size: 28px; font-family: 'DejaVu Sans'; fill: #23313d">=</tspan>
+      <tspan x="82.016211" y="-0.71875" style="font-size: 28px; font-family: 'DejaVu Sans'; fill: #23313d">−</tspan>
+      <tspan x="148.741888" y="-0.71875" style="font-size: 28px; font-family: 'DejaVu Sans'; fill: #23313d">Φ</tspan>
+      <tspan x="170.78095" y="-0.71875" style="font-size: 28px; font-family: 'DejaVu Sans'; fill: #23313d">/</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(670.301469 360.317547)">Positive loop: CCW</text>
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(635.462406 389.967703)">Positive area normal: out</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(664.67475 533.401687)">Φ&lt;0 and dΦ/dt&lt;0</text>
+    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(633.510375 565.747312)">⇒ positive induced emf</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_2">
+    <path d="M 297.36 450.3375 
+C 333.72929 450.3375 368.613885 435.887828 394.330856 410.170856 
+C 420.047828 384.453885 434.4975 349.56929 434.4975 313.2 
+C 434.4975 276.83071 420.047828 241.946115 394.330856 216.229144 
+C 368.613885 190.512172 333.72929 176.0625 297.36 176.0625 
+C 260.99071 176.0625 226.106115 190.512172 200.389144 216.229144 
+C 174.672172 241.946115 160.2225 276.83071 160.2225 313.2 
+C 160.2225 349.56929 174.672172 384.453885 200.389144 410.170856 
+C 226.106115 435.887828 260.99071 450.3375 297.36 450.3375 
+L 297.36 450.3375 
+z
+" clip-path="url(#p62cdc6794f)" style="fill: none; stroke: #b47722; stroke-width: 3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 429.019308 281.515849 
+Q 421.379616 261.325235 414.531251 243.225984 
+" clip-path="url(#p62cdc6794f)" style="fill: none; stroke: #a23b34; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 413.848745 249.899378 
+L 414.531251 243.225984 
+L 419.460462 247.776026 
+z
+" clip-path="url(#p62cdc6794f)" style="fill: #a23b34; stroke: #a23b34; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #235a78" x="231.7725" y="385.134063" transform="rotate(-0 231.7725 385.134063)">×</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #235a78" x="231.7725" y="319.546562" transform="rotate(-0 231.7725 319.546562)">×</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #235a78" x="231.7725" y="253.959062" transform="rotate(-0 231.7725 253.959062)">×</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #235a78" x="297.36" y="385.134063" transform="rotate(-0 297.36 385.134063)">×</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #235a78" x="297.36" y="319.546562" transform="rotate(-0 297.36 319.546562)">×</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #235a78" x="297.36" y="253.959062" transform="rotate(-0 297.36 253.959062)">×</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #235a78" x="362.9475" y="385.134063" transform="rotate(-0 362.9475 385.134063)">×</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #235a78" x="362.9475" y="319.546562" transform="rotate(-0 362.9475 319.546562)">×</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #235a78" x="362.9475" y="253.959062" transform="rotate(-0 362.9475 253.959062)">×</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #a23b34" x="297.36" y="145.80625" transform="rotate(-0 297.36 145.80625)">Induced current: CCW</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #235a78" x="297.36" y="494.380937" transform="rotate(-0 297.36 494.380937)">External B into page is increasing</text>
+   </g>
+  </g>
+  <g id="text_15">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Lenz’s law makes the induced current oppose the change in linked flux</text>
+  </g>
+  <g id="text_16">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="55.44" y="700.56" transform="rotate(-0 55.44 700.56)">0692  •  FIG-02-64-003</text>
+  </g>
+  <g id="text_17">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(134.261719 656.640625)">Closed resistive coil with N turns and increasing external field into the page. CCW induced current produces an outward induced field, opposing the</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(148.796094 669.358125)">increase of inward flux. Faraday emf is signed around the chosen positive loop, not an arbitrary terminal voltage without a winding reference.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p62cdc6794f">
+   <rect x="106.56" y="122.4" width="381.6" height="381.6"/>
+  </clipPath>
+ </defs>
+</svg>

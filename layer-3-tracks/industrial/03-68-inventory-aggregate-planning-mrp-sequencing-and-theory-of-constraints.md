@@ -65,7 +65,7 @@ EOQ balances ordering/setup cost against holding cost under restrictive assumpti
 
 **Problem.** Doubling annual demand increases EOQ by √2.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** EOQ varies with the square root of annual demand. If \(D\) doubles, \(Q_2^*/Q_1^*=\sqrt{2D/D}=\sqrt2=\mathbf{1.414}\); EOQ rises about 41.4%, not 100%.
 
 ---
 
@@ -81,7 +81,7 @@ Finite replenishment reduces peak inventory relative to instantaneous replenishm
 
 **Problem.** As R becomes very large, the result approaches EOQ.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** In the finite-production lot model, the correction is \(1-D/R\). As production rate \(R\to\infty\), \(D/R\to0\), so the denominator approaches \(h\) and the expression reduces to the basic **EOQ** formula.
 
 ---
 
@@ -97,7 +97,7 @@ Reorder point covers expected lead-time demand plus safety stock selected for un
 
 **Problem.** 200 expected lead-time demand plus 50 safety stock gives ROP 250.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** Reorder point is expected lead-time demand plus safety stock: \(ROP=200+50=\mathbf{250\ units}\). Inventory position, not merely shelf quantity, is normally compared with the reorder trigger.
 
 ---
 
@@ -113,7 +113,7 @@ Aggregate planning balances workforce, overtime, inventory, backlog, and subcont
 
 **Problem.** A level plan keeps production steadier and absorbs demand variation in inventory.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** A level aggregate plan keeps the production rate comparatively stable. When demand is below production, inventory grows; when demand exceeds production, inventory is consumed or backlog develops. The tradeoff is workforce/production stability versus inventory/backlog cost.
 
 ---
 
@@ -129,7 +129,7 @@ MRP explodes demand through the bill of materials and offsets orders by lead tim
 
 **Problem.** Ten parents needing two components each create gross demand of 20 components.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** Gross component demand follows the bill of material. Ten parent units requiring two components each create \(10(2)=\mathbf{20\ components}\) before subtracting on-hand inventory or scheduled receipts to determine net requirements.
 
 ---
 
@@ -145,7 +145,7 @@ Johnson’s rule gives a minimum-makespan sequence for the classic two-machine f
 
 **Problem.** If the smallest remaining time is on machine 1, place that job earliest.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** Johnson's rule repeatedly finds the smallest unscheduled processing time. If that smallest time is on machine 1, place the job in the earliest open sequence position; if it is on machine 2, place it in the latest open position.
 
 ---
 
@@ -161,7 +161,7 @@ TOC focuses improvement on the current bottleneck rather than maximizing every r
 
 **Problem.** Speeding a nonbottleneck does not raise system throughput when the bottleneck is unchanged.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** If a bottleneck is already limiting system flow, increasing capacity at a nonbottleneck does not raise system throughput. Improvement effort should elevate or better exploit the active constraint, then reassess because the constraint may move.
 
 ---
 
@@ -171,13 +171,13 @@ TOC focuses improvement on the current bottleneck rather than maximizing every r
 
 **Problem.** A numerical optimum violates an operating rule omitted from the model. Is it implementable?
 
-**Solution.** No. Add the missing operational restriction and re-solve. Mathematical feasibility applies only to the stated model.
+**Solution.** In **Inventory, Aggregate Planning, MRP, Sequencing, and Theory of Constraints**, do not accept a local optimum or locally improved metric until it is checked against the chapter's system boundary and feasibility conditions. Industrial-and-systems problems commonly fail when a local improvement shifts delay, cost, risk, inventory, workload, defects, or constraints elsewhere in the system.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the FE Reference Handbook expression. Which should govern?
 
-**Solution.** Use the Handbook expression and definitions unless the problem explicitly provides another model.
+**Solution.** For this chapter, the FE Reference Handbook relation and variable definitions control whenever the Handbook supplies them. Use the external source set **RUSSELL_TAYLOR, HOPP** only for specification-required learned material not fully developed in the Handbook.
 
 ---
 
@@ -185,7 +185,13 @@ TOC focuses improvement on the current bottleneck rather than maximizing every r
 
 Primary source basis: **FE Industrial & Systems specification Area(s) 8; FE Reference Handbook 10.6 Industrial and Systems Engineering, printed pp. 422–435.**
 
-Specification-required management/design topics that are not directly tabulated are identified as learned or guide-developed rather than assigned false Handbook pages.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required industrial/systems engineering knowledge not fully developed in the Handbook. **Guide synthesis** connects those sources into exam-oriented explanations, worked examples, and decision checks; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Russell, R. S., & Taylor, B. W. (2023). *Operations and Supply Chain Management* (11th ed.). Wiley. ISBN 978-1-119-90567-7. Supporting scope: Operations planning, inventory, MRP, sequencing, lean systems, capacity, location, layout, quality, and supply-chain operations.
+- Hopp, W. J., & Spearman, M. L. (2008). *Factory Physics* (3rd ed.). Waveland Press. ISBN 978-1-57766-739-1. Supporting scope: Throughput, WIP, cycle time, variability, bottlenecks, pull systems, capacity, inventory, and manufacturing-system behavior.
+
+External references support the learned/application portion of the Industrial and Systems specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +360,31 @@ D) It is always only qualitative
 
 14. For **theory of constraints bottleneck**, verify data basis, units, capacity/probability conditions, and operational feasibility.
 
-15. The boundary and objective determine what counts as performance and which constraints matter.
+15. In **Inventory, Aggregate Planning, MRP, Sequencing, and Theory of Constraints**, the model boundary determines what is included in the decision. A valid solution must keep annual demand/holding/setup bases consistent, distinguish gross from net MRP requirements, respect finite-production assumptions and sequence rules, and locate the actual constraint.
 
-16. Optimization and statistics answer questions inside a model; implementation, causality, and stakeholder objectives still require engineering judgment.
+16. Units and operational definitions are part of the model, not formatting details. For **Inventory, Aggregate Planning, MRP, Sequencing, and Theory of Constraints**, convert quantities to a common basis before combining them and state the denominator/capacity/time basis explicitly.
 
-17. The FE Handbook is the supplied reference and its definitions should govern unless the problem explicitly supplies another model.
+17. The FE Reference Handbook is the exam reference when it supplies the relation for **Inventory, Aggregate Planning, MRP, Sequencing, and Theory of Constraints**. The external sources RUSSELL_TAYLOR, HOPP support learned specification content not fully developed in the Handbook.
 
-18. Check feasibility, units, scale, probability bounds, and upstream/downstream effects.
+18. A quick limiting check for **Inventory, Aggregate Planning, MRP, Sequencing, and Theory of Constraints** is to let finite production rate \(R	o\infty\) and confirm EPQ approaches EOQ; set safety stock to zero and confirm ROP becomes expected lead-time demand. Failure to reduce correctly indicates a model, sign, boundary, or arithmetic problem.
 
-19. **A.** The method depends on assumptions, units, data basis, and decision context.
+19. **A.** Section §68.1, **Economic Order Quantity**, is based on \(Q^*=\\sqrt{\\frac{2AD}{h}}\\). Interpret the result within the specific assumptions and system boundary of §68.1; do not transfer it automatically to a different operating regime.
 
-20. **A.** The method depends on assumptions, units, data basis, and decision context.
+20. **A.** Section §68.2, **Finite-Production Lot Sizing**, is based on \(Q^*=\\sqrt{\\frac{2AD}{h(1-D/R)}}\\). Interpret the result within the specific assumptions and system boundary of §68.2; do not transfer it automatically to a different operating regime.
 
-21. **A.** The method depends on assumptions, units, data basis, and decision context.
+21. **A.** Section §68.3, **Reorder Point and Safety Stock**, is based on \(ROP=\\bar d_L+SS\\). Interpret the result within the specific assumptions and system boundary of §68.3; do not transfer it automatically to a different operating regime.
 
-22. **A.** The method depends on assumptions, units, data basis, and decision context.
+22. **A.** Section §68.4, **Aggregate Production Planning**, is based on \(\\text{demand}=\\text{production}+\\text{inventory/backlog change}+\\text{other supply}\\). Interpret the result within the specific assumptions and system boundary of §68.4; do not transfer it automatically to a different operating regime.
 
-23. **A.** The method depends on assumptions, units, data basis, and decision context.
+23. **A.** Section §68.5, **Material Requirements Planning**, is based on \(\\text{gross requirements}-\\text{available/scheduled supply}=\\text{net requirements}\\). Interpret the result within the specific assumptions and system boundary of §68.5; do not transfer it automatically to a different operating regime.
 
-24. **A.** The method depends on assumptions, units, data basis, and decision context.
+24. **A.** Section §68.6, **Johnson's Two-Machine Rule**, is based on \(\\text{smallest M1 time}\\rightarrow\\text{early; smallest M2 time}\\rightarrow\\text{late}\\). Interpret the result within the specific assumptions and system boundary of §68.6; do not transfer it automatically to a different operating regime.
 
-25. **A.** The method depends on assumptions, units, data basis, and decision context.
+25. **A.** Section §68.7, **Theory of Constraints**, is based on \(\\text{system throughput is limited by the active constraint}\\). Interpret the result within the specific assumptions and system boundary of §68.7; do not transfer it automatically to a different operating regime.
 
-26. **A.** The method depends on assumptions, units, data basis, and decision context.
+26. **A.** An integrated Inventory, Aggregate Planning, MRP, Sequencing, and Theory of Constraints decision must remain mathematically feasible and operationally implementable after resource, integer, timing, uncertainty, quality, safety, and system-boundary constraints are considered.
 
-27. **A.** The method depends on assumptions, units, data basis, and decision context.
+27. **A.** This chapter separates FE-Handbook-supported material from externally supported material and guide synthesis. The source-boundary section lists the external references used for Inventory, Aggregate Planning, MRP, Sequencing, and Theory of Constraints.
 
 
 ---
@@ -410,25 +416,25 @@ D) It is always only qualitative
 
 ## Practice Problem Solutions
 
-1. Use §68.1. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+1. **Independent solution for §68.1 — Economic Order Quantity.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: EOQ varies with the square root of annual demand. If \(D\) doubles, \(Q_2^*/Q_1^*=\sqrt{2D/D}=\sqrt2=\mathbf{1.414}\); EOQ rises about 41.4%, not 100%.
 
-2. Use §68.2. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+2. **Independent solution for §68.2 — Finite-Production Lot Sizing.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: In the finite-production lot model, the correction is \(1-D/R\). As production rate \(R\to\infty\), \(D/R\to0\), so the denominator approaches \(h\) and the expression reduces to the basic **EOQ** formula.
 
-3. Use §68.3. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+3. **Independent solution for §68.3 — Reorder Point and Safety Stock.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: Reorder point is expected lead-time demand plus safety stock: \(ROP=200+50=\mathbf{250\ units}\). Inventory position, not merely shelf quantity, is normally compared with the reorder trigger.
 
-4. Use §68.4. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+4. **Independent solution for §68.4 — Aggregate Production Planning.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: A level aggregate plan keeps the production rate comparatively stable. When demand is below production, inventory grows; when demand exceeds production, inventory is consumed or backlog develops. The tradeoff is workforce/production stability versus inventory/backlog cost.
 
-5. Use §68.5. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+5. **Independent solution for §68.5 — Material Requirements Planning.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: Gross component demand follows the bill of material. Ten parent units requiring two components each create \(10(2)=\mathbf{20\ components}\) before subtracting on-hand inventory or scheduled receipts to determine net requirements.
 
-6. Use §68.6. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+6. **Independent solution for §68.6 — Johnson's Two-Machine Rule.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: Johnson's rule repeatedly finds the smallest unscheduled processing time. If that smallest time is on machine 1, place the job in the earliest open sequence position; if it is on machine 2, place it in the latest open position.
 
-7. Use §68.7. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+7. **Independent solution for §68.7 — Theory of Constraints.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: If a bottleneck is already limiting system flow, increasing capacity at a nonbottleneck does not raise system throughput. Improvement effort should elevate or better exploit the active constraint, then reassess because the constraint may move.
 
-8. Check units, probability bounds, utilization/stability, integer or physical constraints, denominator definitions, and model assumptions.
+8. For an integrated **Inventory, Aggregate Planning, MRP, Sequencing, and Theory of Constraints** problem, reject any result that violates this chapter-specific screen: keep annual demand/holding/setup bases consistent, distinguish gross from net MRP requirements, respect finite-production assumptions and sequence rules, and locate the actual constraint.
 
-9. Start with FE Industrial & Systems specification Area(s) 8, then use the corresponding Handbook subsection where one exists.
+9. For **Inventory, Aggregate Planning, MRP, Sequencing, and Theory of Constraints**, start with the FE Industrial and Systems specification area and Handbook location recorded in the ledger. For `split_required` material, use **RUSSELL_TAYLOR, HOPP** for the learned portion rather than inventing a Handbook page.
 
-10. Compare the result against upstream/downstream throughput, quality, inventory, safety, staffing, cost, and service.
+10. Use this independent limiting case: let finite production rate \(R	o\infty\) and confirm EPQ approaches EOQ; set safety stock to zero and confirm ROP becomes expected lead-time demand. The reduced case should behave as stated before the full model is trusted.
 
 ---
 

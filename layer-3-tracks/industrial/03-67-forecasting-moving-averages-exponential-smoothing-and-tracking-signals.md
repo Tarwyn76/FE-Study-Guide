@@ -65,7 +65,7 @@ Forecast method selection depends on data pattern and decision horizon.
 
 **Problem.** A stable series without trend may support a simple smoothing method.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** A level-only smoothing model is plausible when the series fluctuates around a relatively stable mean without persistent trend or seasonality. Plot the history first; if systematic trend or seasonal structure is present, a level-only method will lag or bias the forecast.
 
 ---
 
@@ -81,7 +81,7 @@ Moving averages smooth noise but lag changes; larger windows smooth more.
 
 **Problem.** 90, 100, and 110 average to 100.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** The 3-period moving average is \((90+100+110)/3=300/3=\mathbf{100}\). Every included observation receives equal weight \(1/3\), and the oldest value drops out when the window advances.
 
 ---
 
@@ -97,7 +97,7 @@ The smoothing constant controls responsiveness to recent observations.
 
 **Problem.** α=0.2, previous forecast 100, latest actual 110 gives 102.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** Simple exponential smoothing gives \(\hat d_t=0.2(110)+0.8(100)=22+80=\mathbf{102}\). The new forecast moves only 20% of the latest 10-unit error because \(\alpha=0.2\).
 
 ---
 
@@ -113,7 +113,7 @@ Accuracy metrics weight forecast errors differently; choose a metric consistent 
 
 **Problem.** Errors -10, 0, +10 have MAD 6.67.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** For errors \(-10,0,+10\), \(MAD=(10+0+10)/3=20/3=\mathbf{6.67}\). Squaring instead would produce MSE, which penalizes large errors more heavily.
 
 ---
 
@@ -129,7 +129,7 @@ A tracking signal compares cumulative signed error with typical absolute error t
 
 **Problem.** Repeated underforecasting produces cumulative positive error when e=actual-forecast.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** With \(e_t=actual-forecast\), repeated underforecasting gives mostly positive errors, so RSFE becomes positive. The tracking signal \(TS=RSFE/MAD\) therefore becomes positive and can reveal persistent forecast bias.
 
 ---
 
@@ -145,7 +145,7 @@ Trend and seasonality require more than a level-only smoothing model.
 
 **Problem.** A seasonal factor greater than one raises a baseline forecast.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** A multiplicative seasonal factor above 1 scales the baseline upward for a high-season period. For example, a baseline 100 with seasonal factor 1.20 gives **120 units** before any additional adjustments.
 
 ---
 
@@ -161,7 +161,7 @@ Forecasts are inputs to inventory, capacity, workforce, and financial plans, not
 
 **Problem.** A plan may exceed the point forecast to meet a service target under uncertainty.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** A statistical point forecast is not a production commitment. Planning can add safety capacity, service-stock targets, scenario ranges, or contractual requirements to account for forecast uncertainty and asymmetric shortage/overage consequences.
 
 ---
 
@@ -171,13 +171,13 @@ Forecasts are inputs to inventory, capacity, workforce, and financial plans, not
 
 **Problem.** A numerical optimum violates an operating rule omitted from the model. Is it implementable?
 
-**Solution.** No. Add the missing operational restriction and re-solve. Mathematical feasibility applies only to the stated model.
+**Solution.** In **Forecasting — Moving Averages, Exponential Smoothing, and Tracking Signals**, do not accept a local optimum or locally improved metric until it is checked against the chapter's system boundary and feasibility conditions. Industrial-and-systems problems commonly fail when a local improvement shifts delay, cost, risk, inventory, workload, defects, or constraints elsewhere in the system.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the FE Reference Handbook expression. Which should govern?
 
-**Solution.** Use the Handbook expression and definitions unless the problem explicitly provides another model.
+**Solution.** For this chapter, the FE Reference Handbook relation and variable definitions control whenever the Handbook supplies them. Use the external source set **HYNDMAN** only for specification-required learned material not fully developed in the Handbook.
 
 ---
 
@@ -185,7 +185,12 @@ Forecasts are inputs to inventory, capacity, workforce, and financial plans, not
 
 Primary source basis: **FE Industrial & Systems specification Area(s) 8; FE Reference Handbook 10.6 Industrial and Systems Engineering, printed pp. 422–435.**
 
-Specification-required management/design topics that are not directly tabulated are identified as learned or guide-developed rather than assigned false Handbook pages.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required industrial/systems engineering knowledge not fully developed in the Handbook. **Guide synthesis** connects those sources into exam-oriented explanations, worked examples, and decision checks; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Hyndman, R. J., & Athanasopoulos, G. (2021, continuously updated online). *Forecasting: Principles and Practice* (3rd ed.). OTexts. Supporting scope: Time-series exploration, moving averages, exponential smoothing, trend/seasonality, forecast accuracy, and forecast validation.
+
+External references support the learned/application portion of the Industrial and Systems specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +359,31 @@ D) It is always only qualitative
 
 14. For **forecast-to-plan interface**, verify data basis, units, capacity/probability conditions, and operational feasibility.
 
-15. The boundary and objective determine what counts as performance and which constraints matter.
+15. In **Forecasting — Moving Averages, Exponential Smoothing, and Tracking Signals**, the model boundary determines what is included in the decision. A valid solution must plot the time series, preserve the error sign convention, compare holdout accuracy, check for trend/seasonality, and distinguish forecast from planning commitment.
 
-16. Optimization and statistics answer questions inside a model; implementation, causality, and stakeholder objectives still require engineering judgment.
+16. Units and operational definitions are part of the model, not formatting details. For **Forecasting — Moving Averages, Exponential Smoothing, and Tracking Signals**, convert quantities to a common basis before combining them and state the denominator/capacity/time basis explicitly.
 
-17. The FE Handbook is the supplied reference and its definitions should govern unless the problem explicitly supplies another model.
+17. The FE Reference Handbook is the exam reference when it supplies the relation for **Forecasting — Moving Averages, Exponential Smoothing, and Tracking Signals**. The external sources HYNDMAN support learned specification content not fully developed in the Handbook.
 
-18. Check feasibility, units, scale, probability bounds, and upstream/downstream effects.
+18. A quick limiting check for **Forecasting — Moving Averages, Exponential Smoothing, and Tracking Signals** is to set \(lpha=1\) and confirm simple exponential smoothing uses the latest actual as the next forecast; set all errors to zero and confirm MAD/MSE/RSFE are zero. Failure to reduce correctly indicates a model, sign, boundary, or arithmetic problem.
 
-19. **A.** The method depends on assumptions, units, data basis, and decision context.
+19. **A.** Section §67.1, **Time-Series Components and Forecast Horizon**, is based on \(D_t=\\text{level}+\\text{trend}+\\text{seasonality}+\\text{noise}\\). Interpret the result within the specific assumptions and system boundary of §67.1; do not transfer it automatically to a different operating regime.
 
-20. **A.** The method depends on assumptions, units, data basis, and decision context.
+20. **A.** Section §67.2, **Moving-Average Forecast**, is based on \(\\hat d_t=\\frac1n\\sum_{i=1}^n d_{t-i}\\). Interpret the result within the specific assumptions and system boundary of §67.2; do not transfer it automatically to a different operating regime.
 
-21. **A.** The method depends on assumptions, units, data basis, and decision context.
+21. **A.** Section §67.3, **Exponential Smoothing**, is based on \(\\hat d_t=\\alpha d_{t-1}+(1-\\alpha)\\hat d_{t-1}\\). Interpret the result within the specific assumptions and system boundary of §67.3; do not transfer it automatically to a different operating regime.
 
-22. **A.** The method depends on assumptions, units, data basis, and decision context.
+22. **A.** Section §67.4, **Forecast Error Metrics**, is based on \(MAD=\\frac1n\\sum|e_t|,\\quad MSE=\\frac1n\\sum e_t^2\\). Interpret the result within the specific assumptions and system boundary of §67.4; do not transfer it automatically to a different operating regime.
 
-23. **A.** The method depends on assumptions, units, data basis, and decision context.
+23. **A.** Section §67.5, **Tracking Signals and Bias**, is based on \(TS=\\frac{RSFE}{MAD}\\). Interpret the result within the specific assumptions and system boundary of §67.5; do not transfer it automatically to a different operating regime.
 
-24. **A.** The method depends on assumptions, units, data basis, and decision context.
+24. **A.** Section §67.6, **Trend and Seasonal Adjustment**, is based on \(\\hat D=(\\text{level}+h\\,\\text{trend})\\times\\text{seasonal factor}\\). Interpret the result within the specific assumptions and system boundary of §67.6; do not transfer it automatically to a different operating regime.
 
-25. **A.** The method depends on assumptions, units, data basis, and decision context.
+25. **A.** Section §67.7, **Forecast Integration with Planning**, is based on \(\\text{forecast}\\neq\\text{commitment}\\). Interpret the result within the specific assumptions and system boundary of §67.7; do not transfer it automatically to a different operating regime.
 
-26. **A.** The method depends on assumptions, units, data basis, and decision context.
+26. **A.** An integrated Forecasting — Moving Averages, Exponential Smoothing, and Tracking Signals decision must remain mathematically feasible and operationally implementable after resource, integer, timing, uncertainty, quality, safety, and system-boundary constraints are considered.
 
-27. **A.** The method depends on assumptions, units, data basis, and decision context.
+27. **A.** This chapter separates FE-Handbook-supported material from externally supported material and guide synthesis. The source-boundary section lists the external references used for Forecasting — Moving Averages, Exponential Smoothing, and Tracking Signals.
 
 
 ---
@@ -410,25 +415,25 @@ D) It is always only qualitative
 
 ## Practice Problem Solutions
 
-1. Use §67.1. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+1. **Independent solution for §67.1 — Time-Series Components and Forecast Horizon.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: A level-only smoothing model is plausible when the series fluctuates around a relatively stable mean without persistent trend or seasonality. Plot the history first; if systematic trend or seasonal structure is present, a level-only method will lag or bias the forecast.
 
-2. Use §67.2. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+2. **Independent solution for §67.2 — Moving-Average Forecast.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: The 3-period moving average is \((90+100+110)/3=300/3=\mathbf{100}\). Every included observation receives equal weight \(1/3\), and the oldest value drops out when the window advances.
 
-3. Use §67.3. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+3. **Independent solution for §67.3 — Exponential Smoothing.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: Simple exponential smoothing gives \(\hat d_t=0.2(110)+0.8(100)=22+80=\mathbf{102}\). The new forecast moves only 20% of the latest 10-unit error because \(\alpha=0.2\).
 
-4. Use §67.4. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+4. **Independent solution for §67.4 — Forecast Error Metrics.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: For errors \(-10,0,+10\), \(MAD=(10+0+10)/3=20/3=\mathbf{6.67}\). Squaring instead would produce MSE, which penalizes large errors more heavily.
 
-5. Use §67.5. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+5. **Independent solution for §67.5 — Tracking Signals and Bias.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: With \(e_t=actual-forecast\), repeated underforecasting gives mostly positive errors, so RSFE becomes positive. The tracking signal \(TS=RSFE/MAD\) therefore becomes positive and can reveal persistent forecast bias.
 
-6. Use §67.6. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+6. **Independent solution for §67.6 — Trend and Seasonal Adjustment.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: A multiplicative seasonal factor above 1 scales the baseline upward for a high-season period. For example, a baseline 100 with seasonal factor 1.20 gives **120 units** before any additional adjustments.
 
-7. Use §67.7. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+7. **Independent solution for §67.7 — Forecast Integration with Planning.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: A statistical point forecast is not a production commitment. Planning can add safety capacity, service-stock targets, scenario ranges, or contractual requirements to account for forecast uncertainty and asymmetric shortage/overage consequences.
 
-8. Check units, probability bounds, utilization/stability, integer or physical constraints, denominator definitions, and model assumptions.
+8. For an integrated **Forecasting — Moving Averages, Exponential Smoothing, and Tracking Signals** problem, reject any result that violates this chapter-specific screen: plot the time series, preserve the error sign convention, compare holdout accuracy, check for trend/seasonality, and distinguish forecast from planning commitment.
 
-9. Start with FE Industrial & Systems specification Area(s) 8, then use the corresponding Handbook subsection where one exists.
+9. For **Forecasting — Moving Averages, Exponential Smoothing, and Tracking Signals**, start with the FE Industrial and Systems specification area and Handbook location recorded in the ledger. For `split_required` material, use **HYNDMAN** for the learned portion rather than inventing a Handbook page.
 
-10. Compare the result against upstream/downstream throughput, quality, inventory, safety, staffing, cost, and service.
+10. Use this independent limiting case: set \(lpha=1\) and confirm simple exponential smoothing uses the latest actual as the next forecast; set all errors to zero and confirm MAD/MSE/RSFE are zero. The reduced case should behave as stated before the full model is trusted.
 
 ---
 

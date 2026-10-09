@@ -65,7 +65,7 @@ The undamped SDOF oscillator is the base vibration model. Natural frequency depe
 
 **Problem.** m=4 kg and k=400 N/m gives ωn=10 rad/s.
 
-**Solution.** Apply the relation and model in §77.1; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** \(\omega_n=\sqrt{k/m}=\sqrt{400/4}=\mathbf{10\ rad/s}\). The corresponding natural frequency is \(f_n=\omega_n/(2\pi)=\mathbf{1.59\ Hz}\).
 
 ---
 
@@ -81,7 +81,7 @@ Viscous damping controls decay and response type. Underdamped systems oscillate 
 
 **Problem.** ζ=0.2 is underdamped.
 
-**Solution.** Apply the relation and model in §77.2; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** \(\zeta=0.20<1\), so the response is **underdamped** and oscillatory. Its damped natural frequency is \(\omega_d=\omega_n\sqrt{1-\zeta^2}\approx0.980\,\omega_n\).
 
 ---
 
@@ -97,7 +97,7 @@ Successive peak amplitudes can be used to estimate damping for an underdamped sy
 
 **Problem.** If successive peaks are 10 mm and 8 mm, δ=ln(1.25)=0.223.
 
-**Solution.** Apply the relation and model in §77.3; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** \(\delta=\ln(x_n/x_{n+1})=\ln(10/8)=\ln(1.25)=\mathbf{0.223}\). A positive decrement means the measured free-vibration peaks are decaying.
 
 ---
 
@@ -113,7 +113,7 @@ Steady harmonic response depends on forcing frequency relative to natural freque
 
 **Problem.** A forcing frequency equal to the undamped natural frequency gives r=1.
 
-**Solution.** Apply the relation and model in §77.4; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** The frequency ratio is \(r=\omega/\omega_n\). Because both \(\omega\) and \(\omega_n\) are measured on the same angular-frequency basis (rad/s), equal values give \(\mathbf{r=1.00}\), the resonance neighborhood for the linear SDOF model.
 
 ---
 
@@ -129,7 +129,7 @@ Dynamic magnification shows why small periodic forces can produce large motion n
 
 **Problem.** At r≈1, increasing ζ reduces peak response.
 
-**Solution.** Apply the relation and model in §77.5; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** At \(r=1\), \(M=1/(2\zeta)\) for the stated force-excited SDOF expression. Increasing \(\zeta\) increases the denominator, so the resonance peak **decreases**.
 
 ---
 
@@ -145,7 +145,7 @@ Isolation mounts reduce transmitted vibration when the system operates in the is
 
 **Problem.** A soft mount may lower natural frequency enough to move a machine operating frequency into the isolation region.
 
-**Solution.** Apply the relation and model in §77.6; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** Softening the mount lowers \(\omega_n=\sqrt{k/m}\), which raises the operating ratio \(r=\omega/\omega_n\). When the ratio is sufficiently above the resonance region, transmissibility can fall below unity and the mount acts as an isolator.
 
 ---
 
@@ -161,7 +161,7 @@ Real machines can have multiple modes, nonlinear stiffness, and nonviscous dampi
 
 **Problem.** Changing mass or stiffness can shift a resonance away from operating speed.
 
-**Solution.** Apply the relation and model in §77.7; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** Because \(\omega_n=\sqrt{k/m}\), increasing mass lowers natural frequency and increasing stiffness raises it. Either change can move a structural resonance away from a fixed operating speed, but the resulting static deflection, loads, and isolation behavior must also be checked.
 
 ---
 
@@ -171,13 +171,13 @@ Real machines can have multiple modes, nonlinear stiffness, and nonviscous dampi
 
 **Problem.** A calculation produces a stress or operating point that violates the model assumption used to obtain it. Is the result acceptable?
 
-**Solution.** No. Select the correct model or failure/operating region and solve again. Algebra does not override geometry, material behavior, or component-state validity.
+**Solution.** No. A vibration result is invalid if the assumed damping/forcing model contradicts the solved regime—for example, using an undamped resonance expression after damping has been specified. Re-select the transfer function and recompute.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the FE Reference Handbook expression. Which should govern the exam solution?
 
-**Solution.** Use the Handbook expression and its definitions unless the problem explicitly provides another model.
+**Solution.** For **Mechanical Vibrations — Free, Forced, Damped, and Resonant Response**, use the FE Reference Handbook expression, symbols, and unit convention whenever it supplies the required model. The external source set **RAO** supports specification-required learned/application material that is not fully developed in the Handbook. If a remembered textbook formula conflicts with a supplied Handbook relation, the supplied Handbook relation governs unless the problem explicitly defines another model.
 
 ---
 
@@ -185,7 +185,12 @@ Real machines can have multiple modes, nonlinear stiffness, and nonviscous dampi
 
 Primary source basis: **FE Mechanical specification Area(s) 7; FE Reference Handbook 10.6 Mechanical Engineering and supporting general sections, with the specific subsection/page identified in the ledger.**
 
-**Source boundary:** The Mechanical specification includes both directly tabulated Handbook equations and learned design concepts. This chapter does not assign invented Handbook pages to specification-required material that is not directly tabulated.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required mechanical-engineering knowledge that is not fully developed in the Handbook. **Guide synthesis** connects those sources into exam-oriented explanations, examples, model checks, and design context; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Rao, S. S. (2022). *Mechanical Vibrations* (6th ed.). Pearson. eText ISBN 978-0-13-751528-8. Supporting scope: Free, damped, and forced vibration; resonance; vibration isolation; and SDOF/MDOF modeling.
+
+The external references support only the learned/application portion of the FE Mechanical specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +359,31 @@ D) It is always qualitative
 
 14. For **vibration design check**, verify geometry, load direction, material model, units, operating regime, and whether the assumed failure or performance mode remains valid.
 
-15. The sketch exposes supports, force directions, geometry, constraints, energy/flow paths, and missing load cases before algebra obscures them.
+15. In **Mechanical Vibrations — Free, Forced, Damped, and Resonant Response**, start from the physical model and system/component state, not from an isolated formula. A valid solution must identify free versus forced response, damping regime, frequency ratio, and whether the chosen transfer/amplification expression matches the excitation model.
 
-16. Mechanical equations are model-dependent. The result must remain compatible with yielding/buckling/fatigue, flow regime, thermal state, contact, or kinematic constraints.
+16. Units and sign/reference conventions are part of the model in **Mechanical Vibrations — Free, Forced, Damped, and Resonant Response**. Convert all quantities to a consistent basis before substitution and state whether values are absolute/gauge, static/stagnation, nominal/local, input/output, or other relevant basis.
 
-17. The Handbook is the supplied exam reference; its definitions, correction factors, unit conventions, and tables should govern unless the problem explicitly supplies another relation.
+17. The FE Reference Handbook is the controlling exam reference when it supplies the relation for **Mechanical Vibrations — Free, Forced, Damped, and Resonant Response**. External sources **RAO** support only the learned material not fully developed in the Handbook.
 
-18. These checks catch impossible motion, unit errors, invalid thin-wall or linear assumptions, unrealistic stresses, interference, and parts that cannot be manufactured or assembled.
+18. Use a limiting or reversal check before accepting the result: let damping approach zero away from resonance and confirm the damped response approaches the undamped expression; at \(r=1\), confirm increasing damping lowers the peak. A failure to reduce correctly indicates a geometry, regime, sign, unit, or model-selection error.
 
-19. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+19. **A.** Section §77.1, **Single-degree-of-freedom mass-spring model**, uses \(\omega_n=\sqrt{\frac{k}{m}},\qquad f_n=\frac{\omega_n}{2\pi}\). Apply it only under the geometry/material/operating assumptions stated in §77.1, then compare the result with the physical behavior described there.
 
-20. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+20. **A.** Section §77.2, **Damped free vibration**, uses \(\zeta=\frac{c}{2\sqrt{km}}\). Apply it only under the geometry/material/operating assumptions stated in §77.2, then compare the result with the physical behavior described there.
 
-21. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+21. **A.** Section §77.3, **Logarithmic decrement and decay measurement**, uses \(\delta=\ln\!\left(\frac{x_n}{x_{n+1}}\right)\). Apply it only under the geometry/material/operating assumptions stated in §77.3, then compare the result with the physical behavior described there.
 
-22. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+22. **A.** Section §77.4, **Harmonic forced vibration**, uses \(r=\frac{\omega}{\omega_n}\). Apply it only under the geometry/material/operating assumptions stated in §77.4, then compare the result with the physical behavior described there.
 
-23. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+23. **A.** Section §77.5, **Resonance and dynamic amplification**, uses \(M=\frac{1}{\sqrt{(1-r^2)^2+(2\zeta r)^2}}\). Apply it only under the geometry/material/operating assumptions stated in §77.5, then compare the result with the physical behavior described there.
 
-24. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+24. **A.** Section §77.6, **Base excitation and vibration isolation**, uses \(\text{isolation improves when excitation frequency is sufficiently above } \omega_n\). Apply it only under the geometry/material/operating assumptions stated in §77.6, then compare the result with the physical behavior described there.
 
-25. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+25. **A.** Section §77.7, **Vibration model selection and resonance avoidance**, uses \(\text{operating frequencies should be separated from damaging resonances}\). Apply it only under the geometry/material/operating assumptions stated in §77.7, then compare the result with the physical behavior described there.
 
-26. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+26. **A.** An integrated **Mechanical Vibrations — Free, Forced, Damped, and Resonant Response** result is acceptable only after the governing physical model, geometry, operating/failure regime, units, and independent plausibility checks agree.
 
-27. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+27. **A.** Source ownership is explicit in this chapter: FE-Handbook-supported material remains tied to the ledger; externally supported material uses **RAO**; guide synthesis is supplemental explanation and exam-oriented workflow.
 
 
 ---
@@ -410,25 +415,25 @@ D) It is always qualitative
 
 ## Practice Problem Solutions
 
-1. Use §77.1. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+1. **Independent check for §77.1 — Single-degree-of-freedom mass-spring model.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. \(\omega_n=\sqrt{k/m}=\sqrt{400/4}=\mathbf{10\ rad/s}\). The corresponding natural frequency is \(f_n=\omega_n/(2\pi)=\mathbf{1.59\ Hz}\).
 
-2. Use §77.2. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+2. **Independent check for §77.2 — Damped free vibration.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. \(\zeta=0.20<1\), so the response is **underdamped** and oscillatory. Its damped natural frequency is \(\omega_d=\omega_n\sqrt{1-\zeta^2}\approx0.980\,\omega_n\).
 
-3. Use §77.3. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+3. **Independent check for §77.3 — Logarithmic decrement and decay measurement.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. \(\delta=\ln(x_n/x_{n+1})=\ln(10/8)=\ln(1.25)=\mathbf{0.223}\). A positive decrement means the measured free-vibration peaks are decaying.
 
-4. Use §77.4. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+4. **Independent check for §77.4 — Harmonic forced vibration.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. The frequency ratio is \(r=\omega/\omega_n\). Equal forcing and undamped natural frequencies give \(\mathbf{r=1}\), the resonance neighborhood for the linear SDOF model.
 
-5. Use §77.5. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+5. **Independent check for §77.5 — Resonance and dynamic amplification.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. At \(r=1\), \(M=1/(2\zeta)\) for the stated force-excited SDOF expression. Increasing \(\zeta\) increases the denominator, so the resonance peak **decreases**.
 
-6. Use §77.6. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+6. **Independent check for §77.6 — Base excitation and vibration isolation.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. Softening the mount lowers \(\omega_n=\sqrt{k/m}\), which raises the operating ratio \(r=\omega/\omega_n\). When the ratio is sufficiently above the resonance region, transmissibility can fall below unity and the mount acts as an isolator.
 
-7. Use §77.7. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+7. **Independent check for §77.7 — Vibration model selection and resonance avoidance.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. Because \(\omega_n=\sqrt{k/m}\), increasing mass lowers natural frequency and increasing stiffness raises it. Either change can move a structural resonance away from a fixed operating speed, but the resulting static deflection, loads, and isolation behavior must also be checked.
 
-8. Check dimensions, load direction, support/interface assumptions, material regime, fatigue/static basis, operating speed/temperature/pressure, and any geometric validity limit such as thin-wall or small-deflection assumptions.
+8. For **Mechanical Vibrations — Free, Forced, Damped, and Resonant Response**, one required acceptance screen is: identify free versus forced response, damping regime, frequency ratio, and whether the chosen transfer/amplification expression matches the excitation model. A result that violates this screen must be rejected or recomputed with the proper model.
 
-9. Start with FE Mechanical specification Area(s) 7, then use the Handbook subsection named in the corresponding ledger entry.
+9. Start with the FE Mechanical specification area and FE Reference Handbook location recorded in the ledger for **Mechanical Vibrations — Free, Forced, Damped, and Resonant Response**. For `split_required` concepts, use **RAO** for the learned/application portion without inventing a Handbook page or clause.
 
-10. Test a simple limit such as zero load, very large stiffness, matched speed ratio, zero pressure, zero damping, or maximum/minimum fit. Confirm the result trends in the physically expected direction and remains manufacturable.
+10. Apply this limiting-case test independently: let damping approach zero away from resonance and confirm the damped response approaches the undamped expression; at \(r=1\), confirm increasing damping lowers the peak. If the simplified case does not behave as expected, revisit the setup before trusting the full calculation.
 
 ---
 

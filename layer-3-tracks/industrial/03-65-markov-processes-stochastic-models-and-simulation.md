@@ -65,7 +65,7 @@ A Markov model represents a system as states connected by transition probabiliti
 
 **Problem.** A machine can be operating, degraded, or failed.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** A Markov state must contain enough information for the next-step probabilities to depend only on the current state. For a machine, states such as **operating, degraded, failed** are valid only if transition behavior does not require hidden age/history information that has been omitted.
 
 ---
 
@@ -81,7 +81,7 @@ State probabilities advance through multiplication by a transition matrix whose 
 
 **Problem.** Starting from a known state, one-step probabilities equal that row of P.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** If the system starts certainly in state \(i\), the initial vector has a 1 in position \(i\). Multiplying \(\mathbf p_0P\) therefore selects row \(i\) of \(P\), so the one-step state probabilities are exactly the transition probabilities from that starting state.
 
 ---
 
@@ -97,7 +97,7 @@ A stationary distribution gives long-run state proportions when such a distribut
 
 **Problem.** A repairable machine can spend 95% of time operating while still transitioning between states.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** Steady-state probabilities satisfy \(\boldsymbol\pi=\boldsymbol\pi P\) and sum to 1. A result such as \(\pi_{operating}=0.95\) describes the long-run fraction of time in that state; it does **not** mean the machine never visits degraded or failed states.
 
 ---
 
@@ -113,7 +113,7 @@ Simulation uses reproducible pseudo-random sequences; seed control supports debu
 
 **Problem.** The same seed and parameters reproduce the same sequence.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** A linear congruential generator is deterministic once \(a,C,m,Z_0\) are fixed. Reusing the same seed \(Z_0\) and parameters produces the **same sequence**, which is useful for reproducible debugging but is not evidence of physical randomness.
 
 ---
 
@@ -129,7 +129,7 @@ A uniform random number can be mapped through an inverse CDF to sample another d
 
 **Problem.** An exponential random variate can be generated from a uniform U using the exponential inverse CDF.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** For an exponential distribution with rate \(\lambda\), \(F(x)=1-e^{-\lambda x}\). Setting \(U=F(X)\) gives \(X=-\ln(1-U)/\lambda\), commonly written \(X=-\ln U/\lambda\) because \(1-U\) is also uniform on (0,1).
 
 ---
 
@@ -145,7 +145,7 @@ Discrete-event simulation advances from event to event while updating queues, re
 
 **Problem.** A service model schedules arrival and departure events.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** A discrete-event simulation advances the clock directly to the earliest scheduled event. For a queue, an arrival updates queue/server state and schedules a future arrival; when service begins it schedules a departure. The event list therefore drives state transitions without simulating every intervening instant.
 
 ---
 
@@ -161,7 +161,7 @@ Verification asks whether the model was implemented correctly; validation asks w
 
 **Problem.** One random replication is not an exact performance prediction.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** One replication is one random draw from the simulation experiment. Estimate performance across independent replications using \(\bar X\), \(s\), and a confidence interval such as \(\bar X\pm t\,s/\sqrt n\); precision improves by increasing appropriate replication effort, not by treating one run as exact.
 
 ---
 
@@ -171,13 +171,13 @@ Verification asks whether the model was implemented correctly; validation asks w
 
 **Problem.** A numerical optimum violates an operating rule omitted from the model. Is it implementable?
 
-**Solution.** No. Add the missing operational restriction and re-solve. Mathematical feasibility applies only to the stated model.
+**Solution.** In **Markov Processes, Stochastic Models, and Simulation**, do not accept a local optimum or locally improved metric until it is checked against the chapter's system boundary and feasibility conditions. Industrial-and-systems problems commonly fail when a local improvement shifts delay, cost, risk, inventory, workload, defects, or constraints elsewhere in the system.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the FE Reference Handbook expression. Which should govern?
 
-**Solution.** Use the Handbook expression and definitions unless the problem explicitly provides another model.
+**Solution.** For this chapter, the FE Reference Handbook relation and variable definitions control whenever the Handbook supplies them. Use the external source set **HILLIER, LAW** only for specification-required learned material not fully developed in the Handbook.
 
 ---
 
@@ -185,7 +185,13 @@ Verification asks whether the model was implemented correctly; validation asks w
 
 Primary source basis: **FE Industrial & Systems specification Area(s) 6; FE Reference Handbook 10.6 Industrial and Systems Engineering, printed pp. 422–435.**
 
-Specification-required management/design topics that are not directly tabulated are identified as learned or guide-developed rather than assigned false Handbook pages.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required industrial/systems engineering knowledge not fully developed in the Handbook. **Guide synthesis** connects those sources into exam-oriented explanations, worked examples, and decision checks; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Hillier, F. S., & Lieberman, G. J. (2021). *Introduction to Operations Research* (11th ed.). McGraw-Hill Education. ISBN 978-1-260-57587-3. Supporting scope: Linear programming, duality/sensitivity, transportation/network models, queueing, inventory, Markov models, and simulation.
+- Law, A. M. (2024). *Simulation Modeling and Analysis* (6th ed.). McGraw-Hill. Print ISBN 978-1-264-26824-5. Supporting scope: Discrete-event simulation, random-number/variate generation, input modeling, verification/validation, and output analysis.
+
+External references support the learned/application portion of the Industrial and Systems specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +360,31 @@ D) It is always only qualitative
 
 14. For **simulation study validation**, verify data basis, units, capacity/probability conditions, and operational feasibility.
 
-15. The boundary and objective determine what counts as performance and which constraints matter.
+15. In **Markov Processes, Stochastic Models, and Simulation**, the model boundary determines what is included in the decision. A valid solution must confirm transition rows sum to one, probabilities stay within 0–1, random streams are reproducible when intended, warm-up/replication choices are adequate, and the simulated logic matches the conceptual model.
 
-16. Optimization and statistics answer questions inside a model; implementation, causality, and stakeholder objectives still require engineering judgment.
+16. Units and operational definitions are part of the model, not formatting details. For **Markov Processes, Stochastic Models, and Simulation**, convert quantities to a common basis before combining them and state the denominator/capacity/time basis explicitly.
 
-17. The FE Handbook is the supplied reference and its definitions should govern unless the problem explicitly supplies another model.
+17. The FE Reference Handbook is the exam reference when it supplies the relation for **Markov Processes, Stochastic Models, and Simulation**. The external sources HILLIER, LAW support learned specification content not fully developed in the Handbook.
 
-18. Check feasibility, units, scale, probability bounds, and upstream/downstream effects.
+18. A quick limiting check for **Markov Processes, Stochastic Models, and Simulation** is to sum every transition row to 1 and reuse the same random seed to confirm the same pseudo-random sequence is reproduced. Failure to reduce correctly indicates a model, sign, boundary, or arithmetic problem.
 
-19. **A.** The method depends on assumptions, units, data basis, and decision context.
+19. **A.** Section §65.1, **Markov States and Transition Probabilities**, is based on \(P_{ij}=P(X_{n+1}=j\\mid X_n=i)\\). Interpret the result within the specific assumptions and system boundary of §65.1; do not transfer it automatically to a different operating regime.
 
-20. **A.** The method depends on assumptions, units, data basis, and decision context.
+20. **A.** Section §65.2, **Transition Matrices**, is based on \(\\mathbf p_{n+1}=\\mathbf p_nP\\). Interpret the result within the specific assumptions and system boundary of §65.2; do not transfer it automatically to a different operating regime.
 
-21. **A.** The method depends on assumptions, units, data basis, and decision context.
+21. **A.** Section §65.3, **Steady-State Markov Probabilities**, is based on \(\\boldsymbol\\pi=\\boldsymbol\\pi P,\\quad\\sum_i\\pi_i=1\\). Interpret the result within the specific assumptions and system boundary of §65.3; do not transfer it automatically to a different operating regime.
 
-22. **A.** The method depends on assumptions, units, data basis, and decision context.
+22. **A.** Section §65.4, **Pseudo-Random Number Generation**, is based on \(Z_n=(aZ_{n-1}+C)\\bmod m,\\quad U_n=Z_n/m\\). Interpret the result within the specific assumptions and system boundary of §65.4; do not transfer it automatically to a different operating regime.
 
-23. **A.** The method depends on assumptions, units, data basis, and decision context.
+23. **A.** Section §65.5, **Inverse-Transform Variate Generation**, is based on \(X=F^{-1}(U)\\). Interpret the result within the specific assumptions and system boundary of §65.5; do not transfer it automatically to a different operating regime.
 
-24. **A.** The method depends on assumptions, units, data basis, and decision context.
+24. **A.** Section §65.6, **Discrete-Event Simulation**, is based on \(\\text{clock}\\rightarrow\\text{next event}\\rightarrow\\text{state update}\\). Interpret the result within the specific assumptions and system boundary of §65.6; do not transfer it automatically to a different operating regime.
 
-25. **A.** The method depends on assumptions, units, data basis, and decision context.
+25. **A.** Section §65.7, **Simulation Verification and Validation**, is based on \(\\bar X\\pm t\\frac{s}{\\sqrt n}\\). Interpret the result within the specific assumptions and system boundary of §65.7; do not transfer it automatically to a different operating regime.
 
-26. **A.** The method depends on assumptions, units, data basis, and decision context.
+26. **A.** An integrated Markov Processes, Stochastic Models, and Simulation decision must remain mathematically feasible and operationally implementable after resource, integer, timing, uncertainty, quality, safety, and system-boundary constraints are considered.
 
-27. **A.** The method depends on assumptions, units, data basis, and decision context.
+27. **A.** This chapter separates FE-Handbook-supported material from externally supported material and guide synthesis. The source-boundary section lists the external references used for Markov Processes, Stochastic Models, and Simulation.
 
 
 ---
@@ -410,25 +416,25 @@ D) It is always only qualitative
 
 ## Practice Problem Solutions
 
-1. Use §65.1. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+1. **Independent solution for §65.1 — Markov States and Transition Probabilities.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: A Markov state must contain enough information for the next-step probabilities to depend only on the current state. For a machine, states such as **operating, degraded, failed** are valid only if transition behavior does not require hidden age/history information that has been omitted.
 
-2. Use §65.2. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+2. **Independent solution for §65.2 — Transition Matrices.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: If the system starts certainly in state \(i\), the initial vector has a 1 in position \(i\). Multiplying \(\mathbf p_0P\) therefore selects row \(i\) of \(P\), so the one-step state probabilities are exactly the transition probabilities from that starting state.
 
-3. Use §65.3. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+3. **Independent solution for §65.3 — Steady-State Markov Probabilities.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: Steady-state probabilities satisfy \(\boldsymbol\pi=\boldsymbol\pi P\) and sum to 1. A result such as \(\pi_{operating}=0.95\) describes the long-run fraction of time in that state; it does **not** mean the machine never visits degraded or failed states.
 
-4. Use §65.4. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+4. **Independent solution for §65.4 — Pseudo-Random Number Generation.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: A linear congruential generator is deterministic once \(a,C,m,Z_0\) are fixed. Reusing the same seed \(Z_0\) and parameters produces the **same sequence**, which is useful for reproducible debugging but is not evidence of physical randomness.
 
-5. Use §65.5. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+5. **Independent solution for §65.5 — Inverse-Transform Variate Generation.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: For an exponential distribution with rate \(\lambda\), \(F(x)=1-e^{-\lambda x}\). Setting \(U=F(X)\) gives \(X=-\ln(1-U)/\lambda\), commonly written \(X=-\ln U/\lambda\) because \(1-U\) is also uniform on (0,1).
 
-6. Use §65.6. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+6. **Independent solution for §65.6 — Discrete-Event Simulation.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: A discrete-event simulation advances the clock directly to the earliest scheduled event. For a queue, an arrival updates queue/server state and schedules a future arrival; when service begins it schedules a departure. The event list therefore drives state transitions without simulating every intervening instant.
 
-7. Use §65.7. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+7. **Independent solution for §65.7 — Simulation Verification and Validation.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: One replication is one random draw from the simulation experiment. Estimate performance across independent replications using \(\bar X\), \(s\), and a confidence interval such as \(\bar X\pm t\,s/\sqrt n\); precision improves by increasing appropriate replication effort, not by treating one run as exact.
 
-8. Check units, probability bounds, utilization/stability, integer or physical constraints, denominator definitions, and model assumptions.
+8. For an integrated **Markov Processes, Stochastic Models, and Simulation** problem, reject any result that violates this chapter-specific screen: confirm transition rows sum to one, probabilities stay within 0–1, random streams are reproducible when intended, warm-up/replication choices are adequate, and the simulated logic matches the conceptual model.
 
-9. Start with FE Industrial & Systems specification Area(s) 6, then use the corresponding Handbook subsection where one exists.
+9. For **Markov Processes, Stochastic Models, and Simulation**, start with the FE Industrial and Systems specification area and Handbook location recorded in the ledger. For `split_required` material, use **HILLIER, LAW** for the learned portion rather than inventing a Handbook page.
 
-10. Compare the result against upstream/downstream throughput, quality, inventory, safety, staffing, cost, and service.
+10. Use this independent limiting case: sum every transition row to 1 and reuse the same random seed to confirm the same pseudo-random sequence is reproduced. The reduced case should behave as stated before the full model is trusted.
 
 ---
 

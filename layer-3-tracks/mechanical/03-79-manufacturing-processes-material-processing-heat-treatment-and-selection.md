@@ -65,7 +65,7 @@ Casting creates near-net shapes from molten material. Mold type, solidification,
 
 **Problem.** A riser supplies liquid metal to compensate for solidification shrinkage.
 
-**Solution.** Apply the relation and model in §79.1; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** A riser is a reservoir of liquid metal connected to the casting. As the casting contracts during solidification, the riser feeds liquid into the shrinking region so the casting is less likely to form internal shrinkage voids.
 
 ---
 
@@ -81,7 +81,7 @@ Machining performance depends on cutting speed, feed, depth of cut, tool/work ma
 
 **Problem.** Doubling spindle speed doubles surface speed for the same diameter.
 
-**Solution.** Apply the relation and model in §79.2; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** Surface speed is \(V=\pi DN\). Holding diameter \(D\) fixed while doubling spindle speed \(N\) gives \(V_2/V_1=2\), so the cutting speed **doubles**.
 
 ---
 
@@ -97,7 +97,7 @@ Taylor's relation captures the strong tradeoff between cutting speed and tool li
 
 **Problem.** If n>0, increasing V decreases T.
 
-**Solution.** Apply the relation and model in §79.3; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** From \(VT^n=C\), \(T=(C/V)^{1/n}\). For \(n>0\), increasing cutting speed increases the denominator and therefore **decreases tool life**, often strongly because the exponent \(1/n\) is large.
 
 ---
 
@@ -113,7 +113,7 @@ Rolling, forging, extrusion, and drawing reshape ductile metals through plastic 
 
 **Problem.** Hot working generally reduces flow stress and can permit larger deformation.
 
-**Solution.** Apply the relation and model in §79.4; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** Hot working occurs at elevated temperature where recovery/recrystallization can reduce flow stress and permit larger plastic strains before fracture. The benefit is not free: oxidation, scale, dimensional accuracy, and grain/microstructure effects still matter.
 
 ---
 
@@ -129,7 +129,7 @@ Equilibrium phase diagrams show stable phase fields; heat treatment deliberately
 
 **Problem.** Rapid quenching can suppress equilibrium transformation and create harder microstructures in appropriate steels.
 
-**Solution.** Apply the relation and model in §79.5; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** In suitable steels, rapid quenching suppresses slower diffusional transformations and can form a hard nonequilibrium microstructure such as martensite. The result depends on alloy composition, austenitizing condition, section size, cooling rate, and subsequent tempering.
 
 ---
 
@@ -145,7 +145,7 @@ Mechanical design may favor polymers or composites for corrosion resistance, wei
 
 **Problem.** A composite may have high specific stiffness even if its absolute modulus is below steel.
 
-**Solution.** Apply the relation and model in §79.6; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** Specific stiffness is \(E/\rho\). A composite with a lower absolute modulus than steel can still have a larger stiffness-to-weight ratio if its density is sufficiently lower; this is why specific properties matter in weight-sensitive design.
 
 ---
 
@@ -161,7 +161,7 @@ A material is acceptable only when its properties, environment, processing route
 
 **Problem.** High strength does not compensate for unacceptable corrosion in the intended environment.
 
-**Solution.** Apply the relation and model in §79.7; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** Materials selection is a constrained problem. A high-strength material that corrodes unacceptably in the service environment fails the durability requirement, so strength alone cannot justify selection without corrosion protection or a different material/process.
 
 ---
 
@@ -171,13 +171,13 @@ A material is acceptable only when its properties, environment, processing route
 
 **Problem.** A calculation produces a stress or operating point that violates the model assumption used to obtain it. Is the result acceptable?
 
-**Solution.** No. Select the correct model or failure/operating region and solve again. Algebra does not override geometry, material behavior, or component-state validity.
+**Solution.** No. A manufacturing result is not acceptable if the selected process cannot produce the material/geometry/tolerance or if the assumed microstructure is incompatible with the thermal history. Process and material constraints govern.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the FE Reference Handbook expression. Which should govern the exam solution?
 
-**Solution.** Use the Handbook expression and its definitions unless the problem explicitly provides another model.
+**Solution.** For **Manufacturing Processes, Material Processing, Heat Treatment, and Selection**, use the FE Reference Handbook expression, symbols, and unit convention whenever it supplies the required model. The external source set **KALPAKJIAN, CALLISTER** supports specification-required learned/application material that is not fully developed in the Handbook. If a remembered textbook formula conflicts with a supplied Handbook relation, the supplied Handbook relation governs unless the problem explicitly defines another model.
 
 ---
 
@@ -185,7 +185,13 @@ A material is acceptable only when its properties, environment, processing route
 
 Primary source basis: **FE Mechanical specification Area(s) 9; FE Reference Handbook 10.6 Mechanical Engineering and supporting general sections, with the specific subsection/page identified in the ledger.**
 
-**Source boundary:** The Mechanical specification includes both directly tabulated Handbook equations and learned design concepts. This chapter does not assign invented Handbook pages to specification-required material that is not directly tabulated.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required mechanical-engineering knowledge that is not fully developed in the Handbook. **Guide synthesis** connects those sources into exam-oriented explanations, examples, model checks, and design context; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Kalpakjian, S., & Schmid, S. R. (2026). *Manufacturing Engineering and Technology* (9th ed.). Pearson. Print ISBN 978-0-13-824022-6. Supporting scope: Casting, machining, forming, heat treatment, manufacturing processes, process selection, and manufacturability.
+- Callister, W. D., Jr., & Rethwisch, D. G. (2018). *Materials Science and Engineering: An Introduction* (10th ed.). Wiley. ISBN 978-1-119-40549-8. Supporting scope: Phase diagrams, heat treatment, polymers, composites, structure-property relations, and materials selection.
+
+The external references support only the learned/application portion of the FE Mechanical specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +360,31 @@ D) It is always qualitative
 
 14. For **mechanical material selection**, verify geometry, load direction, material model, units, operating regime, and whether the assumed failure or performance mode remains valid.
 
-15. The sketch exposes supports, force directions, geometry, constraints, energy/flow paths, and missing load cases before algebra obscures them.
+15. In **Manufacturing Processes, Material Processing, Heat Treatment, and Selection**, start from the physical model and system/component state, not from an isolated formula. A valid solution must match process capability to geometry/material/tolerance, keep cutting and thermal-history variables consistent, and verify that the selected microstructure/material survives the service environment.
 
-16. Mechanical equations are model-dependent. The result must remain compatible with yielding/buckling/fatigue, flow regime, thermal state, contact, or kinematic constraints.
+16. Units and sign/reference conventions are part of the model in **Manufacturing Processes, Material Processing, Heat Treatment, and Selection**. Convert all quantities to a consistent basis before substitution and state whether values are absolute/gauge, static/stagnation, nominal/local, input/output, or other relevant basis.
 
-17. The Handbook is the supplied exam reference; its definitions, correction factors, unit conventions, and tables should govern unless the problem explicitly supplies another relation.
+17. The FE Reference Handbook is the controlling exam reference when it supplies the relation for **Manufacturing Processes, Material Processing, Heat Treatment, and Selection**. External sources **KALPAKJIAN, CALLISTER** support only the learned material not fully developed in the Handbook.
 
-18. These checks catch impossible motion, unit errors, invalid thin-wall or linear assumptions, unrealistic stresses, interference, and parts that cannot be manufactured or assembled.
+18. Use a limiting or reversal check before accepting the result: hold diameter fixed and double spindle speed to confirm cutting speed doubles; in the Taylor relation, increase cutting speed and confirm predicted tool life falls. A failure to reduce correctly indicates a geometry, regime, sign, unit, or model-selection error.
 
-19. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+19. **A.** Section §79.1, **Casting process selection and defects**, uses \(\text{process choice}=f(\text{alloy, size, geometry, surface, quantity})\). Apply it only under the geometry/material/operating assumptions stated in §79.1, then compare the result with the physical behavior described there.
 
-20. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+20. **A.** Section §79.2, **Machining mechanics and cutting parameters**, uses \(V=\pi DN,\qquad \mathrm{MRR}\sim\text{speed}\times\text{feed}\times\text{depth}\). Apply it only under the geometry/material/operating assumptions stated in §79.2, then compare the result with the physical behavior described there.
 
-21. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+21. **A.** Section §79.3, **Taylor tool-life relation**, uses \(VT^n=C\). Apply it only under the geometry/material/operating assumptions stated in §79.3, then compare the result with the physical behavior described there.
 
-22. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+22. **A.** Section §79.4, **Metal forming and plastic deformation**, uses \(\text{forming requires stress beyond yield while controlling fracture and springback}\). Apply it only under the geometry/material/operating assumptions stated in §79.4, then compare the result with the physical behavior described there.
 
-23. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+23. **A.** Section §79.5, **Phase diagrams and heat treatment**, uses \(\text{microstructure}=f(\text{composition, temperature, time, cooling path})\). Apply it only under the geometry/material/operating assumptions stated in §79.5, then compare the result with the physical behavior described there.
 
-24. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+24. **A.** Section §79.6, **Polymers, composites, and engineered materials**, uses \(\text{specific property}=\frac{\text{property}}{\rho}\). Apply it only under the geometry/material/operating assumptions stated in §79.6, then compare the result with the physical behavior described there.
 
-25. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+25. **A.** Section §79.7, **Materials selection, corrosion, and manufacturability**, uses \(\text{selection}=f(\text{loads, environment, process, life, cost, availability})\). Apply it only under the geometry/material/operating assumptions stated in §79.7, then compare the result with the physical behavior described there.
 
-26. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+26. **A.** An integrated **Manufacturing Processes, Material Processing, Heat Treatment, and Selection** result is acceptable only after the governing physical model, geometry, operating/failure regime, units, and independent plausibility checks agree.
 
-27. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+27. **A.** Source ownership is explicit in this chapter: FE-Handbook-supported material remains tied to the ledger; externally supported material uses **KALPAKJIAN, CALLISTER**; guide synthesis is supplemental explanation and exam-oriented workflow.
 
 
 ---
@@ -410,25 +416,25 @@ D) It is always qualitative
 
 ## Practice Problem Solutions
 
-1. Use §79.1. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+1. **Independent check for §79.1 — Casting process selection and defects.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. A riser is a reservoir of liquid metal connected to the casting. As the casting contracts during solidification, the riser feeds liquid into the shrinking region so the casting is less likely to form internal shrinkage voids.
 
-2. Use §79.2. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+2. **Independent check for §79.2 — Machining mechanics and cutting parameters.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. Surface speed is \(V=\pi DN\). Holding diameter \(D\) fixed while doubling spindle speed \(N\) gives \(V_2/V_1=2\), so the cutting speed **doubles**.
 
-3. Use §79.3. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+3. **Independent check for §79.3 — Taylor tool-life relation.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. From \(VT^n=C\), \(T=(C/V)^{1/n}\). For \(n>0\), increasing cutting speed increases the denominator and therefore **decreases tool life**, often strongly because the exponent \(1/n\) is large.
 
-4. Use §79.4. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+4. **Independent check for §79.4 — Metal forming and plastic deformation.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. Hot working occurs at elevated temperature where recovery/recrystallization can reduce flow stress and permit larger plastic strains before fracture. The benefit is not free: oxidation, scale, dimensional accuracy, and grain/microstructure effects still matter.
 
-5. Use §79.5. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+5. **Independent check for §79.5 — Phase diagrams and heat treatment.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. In suitable steels, rapid quenching suppresses slower diffusional transformations and can form a hard nonequilibrium microstructure such as martensite. The result depends on alloy composition, austenitizing condition, section size, cooling rate, and subsequent tempering.
 
-6. Use §79.6. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+6. **Independent check for §79.6 — Polymers, composites, and engineered materials.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. Specific stiffness is \(E/\rho\). A composite with a lower absolute modulus than steel can still have a larger stiffness-to-weight ratio if its density is sufficiently lower; this is why specific properties matter in weight-sensitive design.
 
-7. Use §79.7. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+7. **Independent check for §79.7 — Materials selection, corrosion, and manufacturability.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. Materials selection is a constrained problem. A high-strength material that corrodes unacceptably in the service environment fails the durability requirement, so strength alone cannot justify selection without corrosion protection or a different material/process.
 
-8. Check dimensions, load direction, support/interface assumptions, material regime, fatigue/static basis, operating speed/temperature/pressure, and any geometric validity limit such as thin-wall or small-deflection assumptions.
+8. For **Manufacturing Processes, Material Processing, Heat Treatment, and Selection**, one required acceptance screen is: match process capability to geometry/material/tolerance, keep cutting and thermal-history variables consistent, and verify that the selected microstructure/material survives the service environment. A result that violates this screen must be rejected or recomputed with the proper model.
 
-9. Start with FE Mechanical specification Area(s) 9, then use the Handbook subsection named in the corresponding ledger entry.
+9. Start with the FE Mechanical specification area and FE Reference Handbook location recorded in the ledger for **Manufacturing Processes, Material Processing, Heat Treatment, and Selection**. For `split_required` concepts, use **KALPAKJIAN, CALLISTER** for the learned/application portion without inventing a Handbook page or clause.
 
-10. Test a simple limit such as zero load, very large stiffness, matched speed ratio, zero pressure, zero damping, or maximum/minimum fit. Confirm the result trends in the physically expected direction and remains manufacturable.
+10. Apply this limiting-case test independently: hold diameter fixed and double spindle speed to confirm cutting speed doubles; in the Taylor relation, increase cutting speed and confirm predicted tool life falls. If the simplified case does not behave as expected, revisit the setup before trusting the full calculation.
 
 ---
 

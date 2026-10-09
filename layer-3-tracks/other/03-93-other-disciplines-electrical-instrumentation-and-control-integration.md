@@ -65,7 +65,9 @@ Other Disciplines electrical questions emphasize fundamentals rather than deep e
 
 **Problem.** A 24-V load drawing 2 A consumes 48 W.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §93.1.
+**Solution.** Use \(P=VI\): \(P=(24\ {
+m V})(2\ {
+m A})=\mathbf{48\ W}\). That is the electrical input absorbed by the load under the stated DC conditions; any downstream mechanical or thermal output would require the appropriate efficiency model.
 
 ---
 
@@ -81,7 +83,7 @@ Use node/loop laws consistently with complex impedance for sinusoidal steady-sta
 
 **Problem.** A resistor and inductor in series have impedance R+jωL.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §93.2.
+**Solution.** Series impedances add, so \(Z=R+j\omega L\). The resistive part is in phase with current and the inductive reactance \(X_L=\omega L\) contributes the positive imaginary term; magnitude and phase follow from the complex impedance.
 
 ---
 
@@ -97,7 +99,9 @@ Power questions may connect motors, heaters, pumps, and process equipment. Appar
 
 **Problem.** A 480-V balanced three-phase motor at 20 A and 0.8 power factor draws about 13.3 kW real power.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §93.3.
+**Solution.** For a balanced three-phase load, \(P=\sqrt3V_LI_L\cos\phi\). Thus \(P=\sqrt3(480\ {
+m V})(20\ {
+m A})(0.8)=\mathbf{13.3\ kW}\) approximately.
 
 ---
 
@@ -113,7 +117,9 @@ Measurement problems connect sensor physics to usable electrical signals. Range,
 
 **Problem.** A 0–100 psi transmitter producing 4–20 mA has 0.16 mA/psi sensitivity.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §93.4.
+**Solution.** Sensitivity is output span divided by input span: \((20-4)\ {
+m mA}/(100-0)\ {
+m psi}=\mathbf{0.16\ mA/psi}\). The nonzero 4-mA live zero is offset, not part of the sensitivity denominator.
 
 ---
 
@@ -129,7 +135,7 @@ DAQ design must sample fast enough to represent the signal and provide enough re
 
 **Problem.** A 12-bit ADC over 0–10 V has ideal step size about 2.44 mV.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §93.5.
+**Solution.** An ideal 12-bit converter has \(2^{12}=4096\) codes across the 10-V full-scale span, so \(\Delta=10/4096=\mathbf{2.44\ mV/code}\). Practical accuracy can be worse because of offset, gain, noise, and nonlinearity.
 
 ---
 
@@ -145,7 +151,7 @@ Control questions connect sensors, controllers, actuators, and process dynamics.
 
 **Problem.** Increasing loop gain can reduce steady tracking error while potentially reducing stability margin.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §93.6.
+**Solution.** Increasing loop gain can reduce low-frequency tracking error because the closed-loop sensitivity to command/load disturbances decreases. The same gain change also moves crossover behavior and can reduce phase/gain margin, so stability must be checked rather than inferred from error alone.
 
 ---
 
@@ -161,7 +167,7 @@ Industrial systems use Boolean logic to convert sensor states into alarms, permi
 
 **Problem.** A normally energized trip circuit can be designed so loss of power produces a safe shutdown.
 
-**Solution.** Identify the governing prior concept, apply its model with consistent units, then perform the cross-domain verification described in §93.7.
+**Solution.** A normally energized safety output can be arranged so loss of control power de-energizes the final element into its defined safe state. That is a fail-safe design principle only if the de-energized mechanical/process state is itself safe and diagnostic/common-cause failures are addressed.
 
 ---
 
@@ -171,13 +177,13 @@ Industrial systems use Boolean logic to convert sensor states into alarms, permi
 
 **Problem.** A mixed question contains electrical, mechanical, and economic information. Must every datum be used?
 
-**Solution.** No. First identify the requested quantity and governing model. Use only the data needed for the current stage, then carry the resulting intermediate quantity—clearly labeled with units—into the next stage if required.
+**Solution.** No. First determine whether the requested result is circuit power, sensor output, sampled data, or control response. Mechanical or economic data do not enter that stage unless they establish the electrical load, measurement range, or performance requirement.
 
 ### Worked Example 9
 
 **Problem.** You find a familiar equation in memory but a different-looking form in the FE Reference Handbook. What should you do?
 
-**Solution.** Use the Handbook form after checking its definitions and assumptions. Do not force a remembered formula onto a problem merely because it resembles the topic.
+**Solution.** Use the Handbook's circuit/control notation after checking RMS versus peak values, line versus phase quantities, sign conventions, and block-diagram definitions. Familiar electrical formulas are not interchangeable when those definitions differ.
 
 ---
 
@@ -185,7 +191,16 @@ Industrial systems use Boolean logic to convert sensor states into alarms, permi
 
 **Primary source basis:** FE Other Disciplines CBT specification, printed pp. 498–500. Unlike the six discipline-specific FE routes, Other Disciplines has no dedicated discipline section in Handbook 10.6; it relies on the general Handbook sections across the book.
 
-**Source boundary:** The integration workflow, classification strategy, and cross-domain transfer methods are guide-developed. Underlying equations remain owned and sourced by their canonical earlier chapters.
+**Source boundary:** **FE-Handbook-supported** material consists of the underlying equations, tables, definitions, and discipline models located in the FE Reference Handbook and recorded in the ledger. **Externally supported** material covers Other Disciplines specification knowledge, application context, standards, and integration details that are not fully developed in the Handbook. **Guide synthesis** is the cross-domain classification, transfer, verification, and exam-strategy workflow created for this supplemental guide; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Alexander, C. K., & Sadiku, M. N. O. *Fundamentals of Electric Circuits* (7th ed., 2026 Release). McGraw Hill. ISBN 978-1-266-02040-7. Supporting scope: DC/AC circuit abstraction, Kirchhoff laws, impedance, power, and three-phase/circuit-analysis foundations.
+- Webster, J. G., & Eren, H. (Eds.). (2014). *Measurement, Instrumentation, and Sensors Handbook* (2nd ed.). CRC Press. Supporting scope: Measurement chains, sensors, range, sensitivity, signal conditioning, instrumentation, and data acquisition.
+- IEEE. (2024). *IEEE Standard for a Smart Transducer Interface for Sensors and Actuators—Common Functions, Communication Protocols, and Transducer Electronic Data Sheet (TEDS) Formats* (IEEE Std 1451.0-2024). Supporting scope: Standardized transducer interfaces, sensor/actuator services, network communication, and TEDS.
+- Oppenheim, A. V., Willsky, A. S., & Nawab, S. H. (1996). *Signals and Systems* (2nd ed.). Prentice Hall/Pearson. ISBN 978-0-13-814757-0. Supporting scope: Sampling, aliasing, filtering, continuous/discrete-time signals, transforms, and system response.
+- Dorf, R. C., & Bishop, R. H. (2021). *Modern Control Systems* (14th ed.). Pearson. ISBN 978-0-13-730727-2. Supporting scope: Feedback, block diagrams, transfer functions, transient response, stability, and frequency-domain control analysis.
+
+Because Other Disciplines intentionally integrates material owned by earlier chapters, external references support the learned/application and cross-domain portions only. The FE Reference Handbook remains the exam reference, and the ledger retains the canonical Handbook locations for the underlying equations.
 
 ---
 
@@ -344,31 +359,31 @@ D) It is unrelated to Handbook navigation
 
 14. For **engineering interlock logic**, check the controlling domain, system boundary, units, model assumptions, and the prerequisite concept being reused.
 
-15. Classification narrows the search space and prevents using a familiar equation from the wrong discipline or physical model.
+15. Electrical/instrumentation classification separates circuit analysis, AC power, sensor scaling, sampling, and feedback control. Each uses different variables and abstractions, so identifying the domain before searching avoids applying a power formula to a signal-conditioning or control question.
 
-16. The canonical concept already exists in an earlier layer/track; the integration atom teaches when and how to reuse it in a mixed problem.
+16. Ohm/Kirchhoff laws, three-phase power, ADC resolution, and transfer functions are already developed in earlier chapters. Integration here is about moving a result—such as current, sensor voltage, or sampled value—into the next electrical/control model without redefining the source concept.
 
-17. Compare variable definitions, units, boundary conditions, and operating assumptions. Use the relation that matches the actual problem and Handbook context.
+17. Verify peak versus RMS, line versus phase, passive-sign convention, sensor span/offset, sample-rate definition, and feedback sign. Two formulas that differ in those definitions are not substitutes even when their symbols look similar.
 
-18. These checks catch wrong-domain solutions, hidden conversion errors, impossible signs or efficiencies, and decisions that violate physical, safety, or professional constraints.
+18. Check volts/amps/watts, phase and sign, sensor range, Nyquist margin, code resolution, stability, and fail-safe behavior. These checks can reject a mathematically computed value that would saturate hardware, alias a signal, or destabilize a loop.
 
-19. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+19. **A.** Reduce the electrical system to the quantities needed by the requested model—voltage, current, impedance, and power—while preserving source/load reference directions and safe operating limits.
 
-20. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+20. **A.** KCL and KVL still govern AC networks, but voltage/current may be complex phasors and passive elements contribute impedance. Solve the network in one representation, then convert magnitude/phase back to the requested physical quantity.
 
-21. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+21. **A.** Balanced three-phase real power depends on the correct line/phase convention and power factor. The \(\sqrt3V_LI_L\cos\phi\) form applies to line quantities, not arbitrary phase values.
 
-22. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+22. **A.** An instrumentation chain must map measurand range through sensor sensitivity, offset, conditioning, and DAQ input range. Each stage must preserve usable signal span without clipping, excessive noise, or unit ambiguity.
 
-23. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+23. **A.** Sample fast enough to represent the highest relevant signal frequency and use anti-alias filtering when higher-frequency content exists. ADC bit depth sets ideal quantization step but does not by itself guarantee total measurement accuracy.
 
-24. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+24. **A.** Closed-loop behavior follows the plant/controller/feedback interconnection. Loop gain can improve tracking and disturbance rejection while changing pole locations and stability margins, so steady-state and dynamic performance must be assessed together.
 
-25. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+25. **A.** Interlocks and trips should be defined from the safe process state backward. Logic state, sensor failure, power loss, actuator failure, and reset/permissive behavior must all be considered when claiming fail-safe operation.
 
-26. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+26. **A.** Electrical abstraction should preserve the source/load behavior needed for the question while omitting irrelevant physical detail. The reduced model must still respect voltage/current reference directions, ratings, and energy flow.
 
-27. **A.** The integration concept coordinates earlier canonical owners and still requires assumption and unit checks.
+27. **A.** Circuit synthesis is sequential: establish topology and phasor/DC model, solve KCL/KVL, determine power or signal quantities, then pass those results to instrumentation or control blocks without changing their basis.
 
 
 ---
@@ -400,25 +415,25 @@ D) It is unrelated to Handbook navigation
 
 ## Practice Problem Solutions
 
-1. Use §93.1. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+1. Apply the §93.1 model independently. Reduce the electrical system to the quantities needed by the requested model—voltage, current, impedance, and power—while preserving source/load reference directions and safe operating limits. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-2. Use §93.2. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+2. Apply the §93.2 model independently. KCL and KVL still govern AC networks, but voltage/current may be complex phasors and passive elements contribute impedance. Solve the network in one representation, then convert magnitude/phase back to the requested physical quantity. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-3. Use §93.3. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+3. Apply the §93.3 model independently. Balanced three-phase real power depends on the correct line/phase convention and power factor. The \(\sqrt3V_LI_L\cos\phi\) form applies to line quantities, not arbitrary phase values. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-4. Use §93.4. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+4. Apply the §93.4 model independently. An instrumentation chain must map measurand range through sensor sensitivity, offset, conditioning, and DAQ input range. Each stage must preserve usable signal span without clipping, excessive noise, or unit ambiguity. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-5. Use §93.5. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+5. Apply the §93.5 model independently. Sample fast enough to represent the highest relevant signal frequency and use anti-alias filtering when higher-frequency content exists. ADC bit depth sets ideal quantization step but does not by itself guarantee total measurement accuracy. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-6. Use §93.6. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+6. Apply the §93.6 model independently. Closed-loop behavior follows the plant/controller/feedback interconnection. Loop gain can improve tracking and disturbance rejection while changing pole locations and stability margins, so steady-state and dynamic performance must be assessed together. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-7. Use §93.7. Identify the canonical prerequisite, solve with that model, and carry only verified intermediate quantities into the next domain.
+7. Apply the §93.7 model independently. Interlocks and trips should be defined from the safe process state backward. Logic state, sensor failure, power loss, actuator failure, and reset/permissive behavior must all be considered when claiming fail-safe operation. Use the stated example as a qualitative/numerical check, but rebuild the reasoning from the governing relation.
 
-8. Example structure: electrical input power → motor efficiency → shaft power → pump/fluid model → operating cost. Every arrow must carry a defined quantity and units.
+8. One valid sequence is source/circuit model → voltage/current/power → sensor or actuator range → conditioning/ADC representation → controller/interlock action. Preserve RMS/peak, line/phase, analog/digital, and engineering-unit bases at every handoff.
 
-9. The FE Other Disciplines specification is printed on pp. 498–500. The route has no dedicated discipline chapter in Handbook 10.6, so examinees use the relevant general sections instead.
+9. Other Disciplines is defined by specification pp. 498–500, but the FE Handbook uses its general electrical, instrumentation, and control material for these equations. The integration chapter therefore points back to those canonical sections.
 
-10. Reject answers with impossible units, efficiencies above 100% where not physically meaningful, negative absolute quantities, violated support/device states, broken conservation, or unsafe/unethical implementation assumptions.
+10. Reject a result that violates hardware or signal limits—for example an ADC input outside its range, an aliased sampled signal, or a claimed stable closed loop with poles in the unstable region.
 
 ---
 

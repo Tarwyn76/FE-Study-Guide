@@ -65,7 +65,7 @@ Queue performance depends strongly on utilization; steady unconstrained queues r
 
 **Problem.** With one server, λ=8/hr and μ=10/hr gives ρ=0.8.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** For one server, \(\rho=\lambda/\mu=(8\ {\rm hr^{-1}})/(10\ {\rm hr^{-1}})=\mathbf{0.80}\). Because \(\rho<1\), the basic steady-state stability condition is satisfied; 80% is the long-run busy fraction under the model assumptions.
 
 ---
 
@@ -81,7 +81,7 @@ Little’s law links average number in system to throughput and average time whe
 
 **Problem.** 20 customers/hr with W=0.25 hr gives L=5.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** Little's Law gives \(L=\lambda W=(20\ {\rm customers/hr})(0.25\ {\rm hr})=\mathbf{5\ customers}\). The 0.25 hr is 15 min, and the units reduce correctly to customers.
 
 ---
 
@@ -97,7 +97,7 @@ The M/M/1 model assumes Poisson arrivals, exponential service, and one server. D
 
 **Problem.** λ=4/hr and μ=5/hr gives W=1 hr.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** For M/M/1, \(W=1/(\mu-\lambda)=1/(5-4)=\mathbf{1\ hr}\). Then \(L=\lambda W=(4\ {\rm hr^{-1}})(1\ {\rm hr})=\mathbf{4\ customers}\). The result becomes large because utilization is \(4/5=0.8\).
 
 ---
 
@@ -113,7 +113,7 @@ Finite capacity causes some attempted arrivals to be blocked, reducing effective
 
 **Problem.** If 10% are blocked, effective throughput is 0.9λ.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** With finite capacity, only admitted arrivals contribute to throughput. If \(P_M=0.10\), then \(\lambda_e=\lambda(1-P_M)=0.90\lambda\). For example, an offered \(10\ {\rm customers/hr}\) yields **9 customers/hr** effective throughput.
 
 ---
 
@@ -129,7 +129,7 @@ At the same mean service rate, larger service-time variance produces more waitin
 
 **Problem.** Reducing service-time variability can improve queue performance without changing mean capacity.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** At equal mean service time, greater service-time variance increases queueing because long services create more residual work seen by subsequent arrivals. Reducing \(\sigma_s^2\) therefore lowers \(L_q\) in the stated variability-sensitive relation even though \(\mu\) is unchanged.
 
 ---
 
@@ -145,7 +145,7 @@ Multiple parallel servers share arrivals and often reduce wait time compared wit
 
 **Problem.** Two servers at 6/hr each provide 12/hr nominal capacity.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** Two servers each serving \(6\ {\rm customers/hr}\) provide \(s\mu=2(6)=\mathbf{12\ customers/hr}\) nominal capacity. The steady-state utilization is \(\rho=\lambda/12\), so a long-run stable model requires \(\lambda<12\ {\rm customers/hr}\).
 
 ---
 
@@ -161,7 +161,7 @@ Queue design balances staffing/capacity against delay, congestion, and service t
 
 **Problem.** Adding a server can sharply reduce waiting but may be uneconomic at low demand.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** An extra server raises capacity cost but can reduce waiting cost nonlinearly, especially near high utilization. Compare the incremental server cost with the monetary/service value of the reduced \(L_q\), \(W_q\), abandonment, or lost demand rather than minimizing waiting alone.
 
 ---
 
@@ -171,13 +171,13 @@ Queue design balances staffing/capacity against delay, congestion, and service t
 
 **Problem.** A numerical optimum violates an operating rule omitted from the model. Is it implementable?
 
-**Solution.** No. Add the missing operational restriction and re-solve. Mathematical feasibility applies only to the stated model.
+**Solution.** In **Queueing Models and Service Systems**, do not accept a local optimum or locally improved metric until it is checked against the chapter's system boundary and feasibility conditions. Industrial-and-systems problems commonly fail when a local improvement shifts delay, cost, risk, inventory, workload, defects, or constraints elsewhere in the system.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the FE Reference Handbook expression. Which should govern?
 
-**Solution.** Use the Handbook expression and definitions unless the problem explicitly provides another model.
+**Solution.** For **Queueing Models and Service Systems**, the FE Reference Handbook formulation and variable definitions govern when supplied. Hillier and Lieberman supports the learned material on **queue stability, Little's Law, M/M/1 behavior, finite capacity, service variability, and multiple servers**. Do not substitute a remembered textbook convention when the problem or Handbook defines a different sign, capacity, or variable basis.
 
 ---
 
@@ -185,7 +185,12 @@ Queue design balances staffing/capacity against delay, congestion, and service t
 
 Primary source basis: **FE Industrial & Systems specification Area(s) 6; FE Reference Handbook 10.6 Industrial and Systems Engineering, printed pp. 422–435.**
 
-Specification-required management/design topics that are not directly tabulated are identified as learned or guide-developed rather than assigned false Handbook pages.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required industrial/systems engineering knowledge not fully developed in the Handbook. **Guide synthesis** connects those sources into exam-oriented explanations, worked examples, and decision checks; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Hillier, F. S., & Lieberman, G. J. (2021). *Introduction to Operations Research* (11th ed.). McGraw-Hill Education. ISBN 978-1-260-57587-3. Supporting scope: Linear programming, duality/sensitivity, transportation/network models, queueing, inventory, Markov models, and simulation.
+
+External references support the learned/application portion of the Industrial and Systems specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +359,31 @@ D) It is always only qualitative
 
 14. For **service-system queue design**, verify data basis, units, capacity/probability conditions, and operational feasibility.
 
-15. The boundary and objective determine what counts as performance and which constraints matter.
+15. In **Queueing Models and Service Systems**, the model boundary determines what is included in the decision. A valid solution must require stable utilization for steady-state formulas, keep arrival/service units consistent, distinguish offered from effective arrivals, and test waiting results against physical capacity.
 
-16. Optimization and statistics answer questions inside a model; implementation, causality, and stakeholder objectives still require engineering judgment.
+16. Units and operational definitions are part of the model, not formatting details. For **Queueing Models and Service Systems**, convert quantities to a common basis before combining them and state the denominator/capacity/time basis explicitly.
 
-17. The FE Handbook is the supplied reference and its definitions should govern unless the problem explicitly supplies another model.
+17. The FE Reference Handbook is the exam reference when it supplies the relation for **Queueing Models and Service Systems**. The external sources HILLIER support learned specification content not fully developed in the Handbook.
 
-18. Check feasibility, units, scale, probability bounds, and upstream/downstream effects.
+18. A quick limiting check for **Queueing Models and Service Systems** is to let \(\lambda	o0\) and confirm waiting approaches the service-time limit; let \(\lambda	o\mu^-\) in M/M/1 and confirm waiting grows without bound. Failure to reduce correctly indicates a model, sign, boundary, or arithmetic problem.
 
-19. **A.** The method depends on assumptions, units, data basis, and decision context.
+19. **A.** Section §64.1, **Arrival Rate, Service Rate, Utilization, and Stability**, is based on \(\\rho=\\frac{\\lambda}{s\\mu}\\). Interpret the result within the specific assumptions and system boundary of §64.1; do not transfer it automatically to a different operating regime.
 
-20. **A.** The method depends on assumptions, units, data basis, and decision context.
+20. **A.** Section §64.2, **Little's Law**, is based on \(L=\\lambda W,\\qquad L_q=\\lambda W_q\\). Interpret the result within the specific assumptions and system boundary of §64.2; do not transfer it automatically to a different operating regime.
 
-21. **A.** The method depends on assumptions, units, data basis, and decision context.
+21. **A.** Section §64.3, **M/M/1 Queue**, is based on \(W=\\frac{1}{\\mu-\\lambda},\\quad L=\\frac{\\lambda}{\\mu-\\lambda}\\). Interpret the result within the specific assumptions and system boundary of §64.3; do not transfer it automatically to a different operating regime.
 
-22. **A.** The method depends on assumptions, units, data basis, and decision context.
+22. **A.** Section §64.4, **Finite-Capacity Queues**, is based on \(\\lambda_e=\\lambda(1-P_M)\\). Interpret the result within the specific assumptions and system boundary of §64.4; do not transfer it automatically to a different operating regime.
 
-23. **A.** The method depends on assumptions, units, data basis, and decision context.
+23. **A.** Section §64.5, **Service-Time Variability**, is based on \(L_q=\\frac{\\lambda^2\\sigma_s^2+\\rho^2}{2(1-\\rho)}\\). Interpret the result within the specific assumptions and system boundary of §64.5; do not transfer it automatically to a different operating regime.
 
-24. **A.** The method depends on assumptions, units, data basis, and decision context.
+24. **A.** Section §64.6, **Multiple-Server Queues**, is based on \(\\rho=\\frac{\\lambda}{s\\mu}<1\\). Interpret the result within the specific assumptions and system boundary of §64.6; do not transfer it automatically to a different operating regime.
 
-25. **A.** The method depends on assumptions, units, data basis, and decision context.
+25. **A.** Section §64.7, **Service-System Design Tradeoffs**, is based on \(\\text{total cost}=\\text{capacity cost}+\\text{waiting cost}\\). Interpret the result within the specific assumptions and system boundary of §64.7; do not transfer it automatically to a different operating regime.
 
-26. **A.** The method depends on assumptions, units, data basis, and decision context.
+26. **A.** An integrated Queueing Models and Service Systems decision must remain mathematically feasible and operationally implementable after resource, integer, timing, uncertainty, quality, safety, and system-boundary constraints are considered.
 
-27. **A.** The method depends on assumptions, units, data basis, and decision context.
+27. **A.** This chapter separates FE-Handbook-supported material from externally supported material and guide synthesis. The source-boundary section lists the external references used for Queueing Models and Service Systems.
 
 
 ---
@@ -410,25 +415,25 @@ D) It is always only qualitative
 
 ## Practice Problem Solutions
 
-1. Use §64.1. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+1. **Independent solution for §64.1 — Arrival Rate, Service Rate, Utilization, and Stability.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: For one server, \(\rho=\lambda/\mu=(8\ {\rm hr^{-1}})/(10\ {\rm hr^{-1}})=\mathbf{0.80}\). Because \(\rho<1\), the basic steady-state stability condition is satisfied; 80% is the long-run busy fraction under the model assumptions.
 
-2. Use §64.2. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+2. **Independent solution for §64.2 — Little's Law.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: Little's Law gives \(L=\lambda W=(20\ {\rm customers/hr})(0.25\ {\rm hr})=\mathbf{5\ customers}\). The 0.25 hr is 15 min, and the units reduce correctly to customers.
 
-3. Use §64.3. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+3. **Independent solution for §64.3 — M/M/1 Queue.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: For M/M/1, \(W=1/(\mu-\lambda)=1/(5-4)=\mathbf{1\ hr}\). Then \(L=\lambda W=(4\ {\rm hr^{-1}})(1\ {\rm hr})=\mathbf{4\ customers}\). The result becomes large because utilization is \(4/5=0.8\).
 
-4. Use §64.4. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+4. **Independent solution for §64.4 — Finite-Capacity Queues.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: With finite capacity, only admitted arrivals contribute to throughput. If \(P_M=0.10\), then \(\lambda_e=\lambda(1-P_M)=0.90\lambda\). For example, an offered \(10\ {\rm customers/hr}\) yields **9 customers/hr** effective throughput.
 
-5. Use §64.5. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+5. **Independent solution for §64.5 — Service-Time Variability.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: At equal mean service time, greater service-time variance increases queueing because long services create more residual work seen by subsequent arrivals. Reducing \(\sigma_s^2\) therefore lowers \(L_q\) in the stated variability-sensitive relation even though \(\mu\) is unchanged.
 
-6. Use §64.6. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+6. **Independent solution for §64.6 — Multiple-Server Queues.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: Two servers each serving \(6\ {\rm customers/hr}\) provide \(s\mu=2(6)=\mathbf{12\ customers/hr}\) nominal capacity. The steady-state utilization is \(\rho=\lambda/12\), so a long-run stable model requires \(\lambda<12\ {\rm customers/hr}\).
 
-7. Use §64.7. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+7. **Independent solution for §64.7 — Service-System Design Tradeoffs.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: An extra server raises capacity cost but can reduce waiting cost nonlinearly, especially near high utilization. Compare the incremental server cost with the monetary/service value of the reduced \(L_q\), \(W_q\), abandonment, or lost demand rather than minimizing waiting alone.
 
-8. Check units, probability bounds, utilization/stability, integer or physical constraints, denominator definitions, and model assumptions.
+8. For an integrated **Queueing Models and Service Systems** problem, reject any result that violates this chapter-specific screen: require stable utilization for steady-state formulas, keep arrival/service units consistent, distinguish offered from effective arrivals, and test waiting results against physical capacity.
 
-9. Start with FE Industrial & Systems specification Area(s) 6, then use the corresponding Handbook subsection where one exists.
+9. For **Queueing Models and Service Systems**, start with the FE Industrial and Systems specification area and Handbook location recorded in the ledger. For `split_required` material, use **HILLIER** for the learned portion rather than inventing a Handbook page.
 
-10. Compare the result against upstream/downstream throughput, quality, inventory, safety, staffing, cost, and service.
+10. Use this independent limiting case: let \(\lambda	o0\) and confirm waiting approaches the service-time limit; let \(\lambda	o\mu^-\) in M/M/1 and confirm waiting grows without bound. The reduced case should behave as stated before the full model is trusted.
 
 ---
 

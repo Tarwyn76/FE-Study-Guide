@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="648pt" viewBox="0 0 864 648" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-08T19:28:20.666197</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 648 
+L 864 648 
+L 864 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 47.52 345.5784 
+L 301.2768 345.5784 
+L 301.2768 180.144 
+L 47.52 180.144 
+z
+" clip-path="url(#pdb564be230)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 562.7232 345.5784 
+L 816.48 345.5784 
+L 816.48 180.144 
+L 562.7232 180.144 
+z
+" clip-path="url(#pdb564be230)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(122.770119 252.515028)">STATE 1</text>
+    <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(112.881994 287.556122)">T₁=300 K</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(637.973319 252.515028)">STATE 2</text>
+    <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(628.085194 287.556122)">T₂=400 K</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #a23b34" x="432" y="225.90355" transform="rotate(-0 432 225.90355)">Heating</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 25px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="432.90375" transform="rotate(-0 432 432.90375)">Δs=∫ c(T)dT/T; constant c: Δs=c ln(T₂/T₁)</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 24px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="526.5777" transform="rotate(-0 432 526.5777)">c=4.00 kJ/(kg·K) → Δs=1.1507 kJ/(kg·K)</text>
+   </g>
+   <g id="patch_4">
+    <path d="M 303.275467 262.8612 
+Q 431.999722 262.8612 558.823319 262.8612 
+" clip-path="url(#pdb564be230)" style="fill: none; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 552.823319 259.8612 
+L 558.823319 262.8612 
+L 552.823319 265.8612 
+z
+" clip-path="url(#pdb564be230)" style="fill: #a23b34; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+  </g>
+  <g id="text_6">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">An incompressible solid or liquid gains entropy as its absolute temperature rises</text>
+  </g>
+  <g id="text_7">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="47.52" y="630.504" transform="rotate(-0 47.52 630.504)">0611  •  FIG-02-52-006</text>
+  </g>
+  <g id="text_8">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(101.834375 590.616625)">Incompressible approximation, no phase change, illustrative constant heat capacity. Heating can generate additional entropy in the</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(267.278125 603.334125)">surroundings; the body’s entropy change is a property difference.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pdb564be230">
+   <rect x="47.52" y="90.72" width="768.96" height="447.12"/>
+  </clipPath>
+ </defs>
+</svg>

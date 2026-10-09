@@ -65,7 +65,7 @@ Functional, projectized, and matrix organizations distribute authority different
 
 **Problem.** In a matrix, a project manager can share authority with functional managers.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** In a matrix organization, the project manager coordinates scope, schedule, integration, and project priorities while functional managers retain discipline resources and technical authority. The shared-authority arrangement must therefore define escalation and responsibility rather than assume a single chain of command.
 
 ---
 
@@ -81,7 +81,7 @@ A WBS decomposes project scope into manageable deliverables and work packages.
 
 **Problem.** Design, procurement, installation, and commissioning can be separate deliverables.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** A WBS decomposes **scope**, not calendar time. For an equipment project, design, procurement, installation, and commissioning can each be deliverables, then be decomposed into work packages that are small enough to estimate, assign, monitor, and control.
 
 ---
 
@@ -97,7 +97,7 @@ CPM identifies the longest path through a deterministic activity network.
 
 **Problem.** Zero-total-float activities lie on at least one critical path.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** The project duration is governed by the longest-duration path through the precedence network. Activities with zero total float lie on at least one critical path; delaying one without offsetting action delays the current project completion date.
 
 ---
 
@@ -113,7 +113,7 @@ PERT uses optimistic, most-likely, and pessimistic estimates to approximate acti
 
 **Problem.** a=2, m=5, b=8 gives expected duration 5.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** PERT expected duration is \(\mu=(a+4m+b)/6=(2+4(5)+8)/6=30/6=\mathbf{5\ days}\). The standard deviation is \(\sigma=(8-2)/6=\mathbf{1\ day}\) under the three-point approximation.
 
 ---
 
@@ -129,7 +129,7 @@ Earned value separates planned work, completed work value, and actual cost.
 
 **Problem.** EV=80 and AC=100 gives CV=-20.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** Cost variance is \(CV=EV-AC=80-100=\mathbf{-20}\). A negative CV means the value of completed work is 20 cost units below the amount spent—i.e., the project is over cost relative to earned value at that status date.
 
 ---
 
@@ -145,7 +145,7 @@ Agile methods use short iterative cycles and frequent stakeholder feedback while
 
 **Problem.** A sprint review can expose changed requirements early.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** A sprint review creates a short feedback loop: stakeholders inspect the increment, compare it with current needs, and update the backlog or priorities. The benefit is earlier discovery of changed requirements, not elimination of planning or governance.
 
 ---
 
@@ -161,7 +161,7 @@ Balanced performance measurement avoids optimizing cost or throughput while igno
 
 **Problem.** A throughput increase paired with higher defects is not an unqualified improvement.
 
-**Solution.** Apply the relation or workflow above, then verify assumptions, units, feasibility, and system-level interpretation.
+**Solution.** A throughput KPI cannot be interpreted alone. If throughput rises while defect rate, injury risk, overtime, or customer returns worsen, the balanced performance picture may have deteriorated. Link each metric to the objective and monitor counter-metrics.
 
 ---
 
@@ -171,13 +171,13 @@ Balanced performance measurement avoids optimizing cost or throughput while igno
 
 **Problem.** A numerical optimum violates an operating rule omitted from the model. Is it implementable?
 
-**Solution.** No. Add the missing operational restriction and re-solve. Mathematical feasibility applies only to the stated model.
+**Solution.** In **Engineering and Project Management — Organization, WBS, PERT/CPM, Earned Value, Agile, and KPIs**, do not accept a local optimum or locally improved metric until it is checked against the chapter's system boundary and feasibility conditions. Industrial-and-systems problems commonly fail when a local improvement shifts delay, cost, risk, inventory, workload, defects, or constraints elsewhere in the system.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the FE Reference Handbook expression. Which should govern?
 
-**Solution.** Use the Handbook expression and definitions unless the problem explicitly provides another model.
+**Solution.** For this chapter, the FE Reference Handbook relation and variable definitions control whenever the Handbook supplies them. Use the external source set **PMBOK8** only for specification-required learned material not fully developed in the Handbook.
 
 ---
 
@@ -185,7 +185,12 @@ Balanced performance measurement avoids optimizing cost or throughput while igno
 
 Primary source basis: **FE Industrial & Systems specification Area(s) 7; FE Reference Handbook 10.6 Industrial and Systems Engineering, printed pp. 422–435.**
 
-Specification-required management/design topics that are not directly tabulated are identified as learned or guide-developed rather than assigned false Handbook pages.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required industrial/systems engineering knowledge not fully developed in the Handbook. **Guide synthesis** connects those sources into exam-oriented explanations, worked examples, and decision checks; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Project Management Institute. (2025). *A Guide to the Project Management Body of Knowledge (PMBOK® Guide)* (8th ed.), including *The Standard for Project Management*. ANSI/PMI 99-001-2025. Supporting scope: Project governance, scope/WBS, scheduling, earned value/performance measurement, adaptive approaches, and metrics.
+
+External references support the learned/application portion of the Industrial and Systems specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +359,31 @@ D) It is always only qualitative
 
 14. For **management performance measurement**, verify data basis, units, capacity/probability conditions, and operational feasibility.
 
-15. The boundary and objective determine what counts as performance and which constraints matter.
+15. In **Engineering and Project Management — Organization, WBS, PERT/CPM, Earned Value, Agile, and KPIs**, the model boundary determines what is included in the decision. A valid solution must trace scope to work packages, respect precedence, distinguish EV/PV/AC, state the schedule/cost status date, and avoid treating agile feedback or KPIs as substitutes for governance.
 
-16. Optimization and statistics answer questions inside a model; implementation, causality, and stakeholder objectives still require engineering judgment.
+16. Units and operational definitions are part of the model, not formatting details. For **Engineering and Project Management — Organization, WBS, PERT/CPM, Earned Value, Agile, and KPIs**, convert quantities to a common basis before combining them and state the denominator/capacity/time basis explicitly.
 
-17. The FE Handbook is the supplied reference and its definitions should govern unless the problem explicitly supplies another model.
+17. The FE Reference Handbook is the exam reference when it supplies the relation for **Engineering and Project Management — Organization, WBS, PERT/CPM, Earned Value, Agile, and KPIs**. The external sources PMBOK8 support learned specification content not fully developed in the Handbook.
 
-18. Check feasibility, units, scale, probability bounds, and upstream/downstream effects.
+18. A quick limiting check for **Engineering and Project Management — Organization, WBS, PERT/CPM, Earned Value, Agile, and KPIs** is to set EV=AC and confirm cost variance is zero; remove a critical-path activity duration and confirm project duration cannot increase. Failure to reduce correctly indicates a model, sign, boundary, or arithmetic problem.
 
-19. **A.** The method depends on assumptions, units, data basis, and decision context.
+19. **A.** Section §66.1, **Organization, Responsibility, and Motivation**, is based on \(\\text{strategy}\\rightarrow\\text{structure}\\rightarrow\\text{responsibility}\\). Interpret the result within the specific assumptions and system boundary of §66.1; do not transfer it automatically to a different operating regime.
 
-20. **A.** The method depends on assumptions, units, data basis, and decision context.
+20. **A.** Section §66.2, **Work Breakdown Structures**, is based on \(\\text{scope}\\rightarrow\\text{deliverables}\\rightarrow\\text{work packages}\\). Interpret the result within the specific assumptions and system boundary of §66.2; do not transfer it automatically to a different operating regime.
 
-21. **A.** The method depends on assumptions, units, data basis, and decision context.
+21. **A.** Section §66.3, **Critical Path Method**, is based on \(T=\\sum_{(i,j)\\in CP}d_{ij}\\). Interpret the result within the specific assumptions and system boundary of §66.3; do not transfer it automatically to a different operating regime.
 
-22. **A.** The method depends on assumptions, units, data basis, and decision context.
+22. **A.** Section §66.4, **PERT Duration and Uncertainty**, is based on \(\\mu=\\frac{a+4m+b}{6},\\quad\\sigma=\\frac{b-a}{6}\\). Interpret the result within the specific assumptions and system boundary of §66.4; do not transfer it automatically to a different operating regime.
 
-23. **A.** The method depends on assumptions, units, data basis, and decision context.
+23. **A.** Section §66.5, **Earned Value Management**, is based on \(CV=EV-AC,\\quad SV=EV-PV\\). Interpret the result within the specific assumptions and system boundary of §66.5; do not transfer it automatically to a different operating regime.
 
-24. **A.** The method depends on assumptions, units, data basis, and decision context.
+24. **A.** Section §66.6, **Agile Project Management**, is based on \(\\text{iteration}\\rightarrow\\text{increment}\\rightarrow\\text{feedback}\\). Interpret the result within the specific assumptions and system boundary of §66.6; do not transfer it automatically to a different operating regime.
 
-25. **A.** The method depends on assumptions, units, data basis, and decision context.
+25. **A.** Section §66.7, **KPIs and Balanced Scorecards**, is based on \(\\text{metric}\\rightarrow\\text{objective}\\rightarrow\\text{decision}\\). Interpret the result within the specific assumptions and system boundary of §66.7; do not transfer it automatically to a different operating regime.
 
-26. **A.** The method depends on assumptions, units, data basis, and decision context.
+26. **A.** An integrated Engineering and Project Management — Organization, WBS, PERT/CPM, Earned Value, Agile, and KPIs decision must remain mathematically feasible and operationally implementable after resource, integer, timing, uncertainty, quality, safety, and system-boundary constraints are considered.
 
-27. **A.** The method depends on assumptions, units, data basis, and decision context.
+27. **A.** This chapter separates FE-Handbook-supported material from externally supported material and guide synthesis. The source-boundary section lists the external references used for Engineering and Project Management — Organization, WBS, PERT/CPM, Earned Value, Agile, and KPIs.
 
 
 ---
@@ -410,25 +415,25 @@ D) It is always only qualitative
 
 ## Practice Problem Solutions
 
-1. Use §66.1. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+1. **Independent solution for §66.1 — Organization, Responsibility, and Motivation.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: In a matrix organization, the project manager coordinates scope, schedule, integration, and project priorities while functional managers retain discipline resources and technical authority. The shared-authority arrangement must therefore define escalation and responsibility rather than assume a single chain of command.
 
-2. Use §66.2. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+2. **Independent solution for §66.2 — Work Breakdown Structures.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: A WBS decomposes **scope**, not calendar time. For an equipment project, design, procurement, installation, and commissioning can each be deliverables, then be decomposed into work packages that are small enough to estimate, assign, monitor, and control.
 
-3. Use §66.3. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+3. **Independent solution for §66.3 — Critical Path Method.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: The project duration is governed by the longest-duration path through the precedence network. Activities with zero total float lie on at least one critical path; delaying one without offsetting action delays the current project completion date.
 
-4. Use §66.4. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+4. **Independent solution for §66.4 — PERT Duration and Uncertainty.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: PERT expected duration is \(\mu=(a+4m+b)/6=(2+4(5)+8)/6=30/6=\mathbf{5\ days}\). The standard deviation is \(\sigma=(8-2)/6=\mathbf{1\ day}\) under the three-point approximation.
 
-5. Use §66.5. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+5. **Independent solution for §66.5 — Earned Value Management.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: Cost variance is \(CV=EV-AC=80-100=\mathbf{-20}\). A negative CV means the value of completed work is 20 cost units below the amount spent—i.e., the project is over cost relative to earned value at that status date.
 
-6. Use §66.6. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+6. **Independent solution for §66.6 — Agile Project Management.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: A sprint review creates a short feedback loop: stakeholders inspect the increment, compare it with current needs, and update the backlog or priorities. The benefit is earlier discovery of changed requirements, not elimination of planning or governance.
 
-7. Use §66.7. Apply the stated relation/workflow and verify feasibility, assumptions, and operational meaning.
+7. **Independent solution for §66.7 — KPIs and Balanced Scorecards.** Recompute from the practice givens using the section model, then compare the result with the physical/operational interpretation. The corresponding chapter example demonstrates the key reasoning: A throughput KPI cannot be interpreted alone. If throughput rises while defect rate, injury risk, overtime, or customer returns worsen, the balanced performance picture may have deteriorated. Link each metric to the objective and monitor counter-metrics.
 
-8. Check units, probability bounds, utilization/stability, integer or physical constraints, denominator definitions, and model assumptions.
+8. For an integrated **Engineering and Project Management — Organization, WBS, PERT/CPM, Earned Value, Agile, and KPIs** problem, reject any result that violates this chapter-specific screen: trace scope to work packages, respect precedence, distinguish EV/PV/AC, state the schedule/cost status date, and avoid treating agile feedback or KPIs as substitutes for governance.
 
-9. Start with FE Industrial & Systems specification Area(s) 7, then use the corresponding Handbook subsection where one exists.
+9. For **Engineering and Project Management — Organization, WBS, PERT/CPM, Earned Value, Agile, and KPIs**, start with the FE Industrial and Systems specification area and Handbook location recorded in the ledger. For `split_required` material, use **PMBOK8** for the learned portion rather than inventing a Handbook page.
 
-10. Compare the result against upstream/downstream throughput, quality, inventory, safety, staffing, cost, and service.
+10. Use this independent limiting case: set EV=AC and confirm cost variance is zero; remove a critical-path activity duration and confirm project duration cannot increase. The reduced case should behave as stated before the full model is trusted.
 
 ---
 

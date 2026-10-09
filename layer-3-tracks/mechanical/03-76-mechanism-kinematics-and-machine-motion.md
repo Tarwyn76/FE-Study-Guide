@@ -65,7 +65,7 @@ Mechanism analysis builds on rigid-body kinematics. Points on the same rigid lin
 
 **Problem.** A point 0.20 m from a fixed pivot on a link rotating at 10 rad/s has speed 2.0 m/s.
 
-**Solution.** Apply the relation and model in §76.1; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** For fixed-axis rotation the speed magnitude is \(v=\omega r=(10\ {\rm rad/s})(0.20\ {\rm m})=\mathbf{2.0\ m/s}\). The velocity is tangent to the circular path, perpendicular to the radius.
 
 ---
 
@@ -81,7 +81,7 @@ For planar motion, a rigid body can be viewed instantaneously as rotating about 
 
 **Problem.** If a coupler point is 0.30 m from the IC and the link angular speed is 4 rad/s, its speed is 1.2 m/s.
 
-**Solution.** Apply the relation and model in §76.2; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** Using the instantaneous center, \(v_P=\omega r_{P/IC}=(4\ {\rm rad/s})(0.30\ {\rm m})=\mathbf{1.2\ m/s}\). The direction is perpendicular to the line from the IC to the point.
 
 ---
 
@@ -97,7 +97,7 @@ A four-bar mechanism consists of ground plus three moving links connected by rev
 
 **Problem.** A valid configuration must satisfy the vector loop closure; arbitrary link angles generally do not.
 
-**Solution.** Apply the relation and model in §76.3; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** The link vectors must form a closed polygon: \(\mathbf r_1+\mathbf r_2+\mathbf r_3+\mathbf r_4=\mathbf0\) when written with consistent directions. Arbitrary angles that do not satisfy both x- and y-component closure do not describe a possible four-bar configuration.
 
 ---
 
@@ -113,7 +113,7 @@ Slider-crank motion converts rotation to reciprocating translation. Differentiat
 
 **Problem.** At top-dead-center the slider velocity is zero even though crank angular speed can be nonzero.
 
-**Solution.** Apply the relation and model in §76.4; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** At top-dead-center the crank and connecting rod are collinear with the slider axis. The instantaneous slider displacement is at an extremum, so \(dx/dt=\mathbf0\) even though the crank can have nonzero \(\omega\); the slider acceleration need not be zero.
 
 ---
 
@@ -129,7 +129,7 @@ External gears reverse direction and scale speed according to tooth count. Idler
 
 **Problem.** A 20-tooth driver turning at 1200 rpm drives a 60-tooth gear at 400 rpm in the opposite direction.
 
-**Solution.** Apply the relation and model in §76.5; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** For external gears, \(\omega_{out}/\omega_{in}=-N_{in}/N_{out}=-(20/60)\). Thus \(\omega_{out}=-(20/60)(1200)=\mathbf{-400\ rpm}\): 400 rpm in the opposite direction.
 
 ---
 
@@ -145,7 +145,7 @@ Compound trains multiply stage ratios. Planetary trains require relative-motion 
 
 **Problem.** Two 3:1 reduction stages in series provide 9:1 speed reduction.
 
-**Solution.** Apply the relation and model in §76.6; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** Stage ratios multiply. Two 3:1 reductions give \(3\times3=\mathbf{9:1}\), so the final speed magnitude is one-ninth of the input speed. If speed is expressed in rpm, \(n_{out}=n_{in}/9\); the 9:1 ratio itself is dimensionless.
 
 ---
 
@@ -161,7 +161,7 @@ A numerical mechanism solution must satisfy link lengths, joint constraints, ass
 
 **Problem.** A calculated position that stretches a rigid link is invalid regardless of algebra.
 
-**Solution.** Apply the relation and model in §76.7; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** A rigid link must preserve its specified length. If a computed configuration changes the distance between its joints, the geometry violates the rigid-body constraint; the algebraic root must be rejected and the compatible configuration solved instead.
 
 ---
 
@@ -171,13 +171,13 @@ A numerical mechanism solution must satisfy link lengths, joint constraints, ass
 
 **Problem.** A calculation produces a stress or operating point that violates the model assumption used to obtain it. Is the result acceptable?
 
-**Solution.** No. Select the correct model or failure/operating region and solve again. Algebra does not override geometry, material behavior, or component-state validity.
+**Solution.** No. A mechanism solution that violates fixed link lengths or loop closure is not a physically admissible configuration. Rebuild the vector loop and choose the compatible root before using velocity or acceleration relations.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the FE Reference Handbook expression. Which should govern the exam solution?
 
-**Solution.** Use the Handbook expression and its definitions unless the problem explicitly provides another model.
+**Solution.** For **Mechanism Kinematics and Machine Motion**, use the FE Reference Handbook expression, symbols, and unit convention whenever it supplies the required model. The external source set **NORTON** supports specification-required learned/application material that is not fully developed in the Handbook. If a remembered textbook formula conflicts with a supplied Handbook relation, the supplied Handbook relation governs unless the problem explicitly defines another model.
 
 ---
 
@@ -185,7 +185,12 @@ A numerical mechanism solution must satisfy link lengths, joint constraints, ass
 
 Primary source basis: **FE Mechanical specification Area(s) 7; FE Reference Handbook 10.6 Mechanical Engineering and supporting general sections, with the specific subsection/page identified in the ledger.**
 
-**Source boundary:** The Mechanical specification includes both directly tabulated Handbook equations and learned design concepts. This chapter does not assign invented Handbook pages to specification-required material that is not directly tabulated.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required mechanical-engineering knowledge that is not fully developed in the Handbook. **Guide synthesis** connects those sources into exam-oriented explanations, examples, model checks, and design context; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- Norton, R. L. (2020). *Design of Machinery* (6th ed.). McGraw Hill. ISBN 978-1-260-11331-0. Supporting scope: Mechanism kinematics, linkages, slider-cranks, gear trains, motion analysis, and machine dynamics.
+
+The external references support only the learned/application portion of the FE Mechanical specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +359,31 @@ D) It is always qualitative
 
 14. For **mechanism motion verification**, verify geometry, load direction, material model, units, operating regime, and whether the assumed failure or performance mode remains valid.
 
-15. The sketch exposes supports, force directions, geometry, constraints, energy/flow paths, and missing load cases before algebra obscures them.
+15. In **Mechanism Kinematics and Machine Motion**, start from the physical model and system/component state, not from an isolated formula. A valid solution must preserve rigid link lengths, close every kinematic loop, use the correct gear sign/ratio, and reject alternate mathematical roots that cannot assemble physically.
 
-16. Mechanical equations are model-dependent. The result must remain compatible with yielding/buckling/fatigue, flow regime, thermal state, contact, or kinematic constraints.
+16. Units and sign/reference conventions are part of the model in **Mechanism Kinematics and Machine Motion**. Convert all quantities to a consistent basis before substitution and state whether values are absolute/gauge, static/stagnation, nominal/local, input/output, or other relevant basis.
 
-17. The Handbook is the supplied exam reference; its definitions, correction factors, unit conventions, and tables should govern unless the problem explicitly supplies another relation.
+17. The FE Reference Handbook is the controlling exam reference when it supplies the relation for **Mechanism Kinematics and Machine Motion**. External sources **NORTON** support only the learned material not fully developed in the Handbook.
 
-18. These checks catch impossible motion, unit errors, invalid thin-wall or linear assumptions, unrealistic stresses, interference, and parts that cannot be manufactured or assembled.
+18. Use a limiting or reversal check before accepting the result: let one angular speed approach zero and confirm the associated rigid-body point velocities reduce consistently while link lengths remain unchanged. A failure to reduce correctly indicates a geometry, regime, sign, unit, or model-selection error.
 
-19. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+19. **A.** Section §76.1, **Rigid-body translation and rotation review**, uses \(\mathbf v_B=\mathbf v_A+\boldsymbol\omega\times\mathbf r_{B/A}\). Apply it only under the geometry/material/operating assumptions stated in §76.1, then compare the result with the physical behavior described there.
 
-20. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+20. **A.** Section §76.2, **Instantaneous centers of zero velocity**, uses \(v_P=\omega r_{P/IC}\). Apply it only under the geometry/material/operating assumptions stated in §76.2, then compare the result with the physical behavior described there.
 
-21. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+21. **A.** Section §76.3, **Four-bar linkage geometry and mobility**, uses \(L_1+L_2+L_3+L_4\text{ close geometrically around the loop}\). Apply it only under the geometry/material/operating assumptions stated in §76.3, then compare the result with the physical behavior described there.
 
-22. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+22. **A.** Section §76.4, **Slider-crank displacement, velocity, and acceleration**, uses \(\mathbf r_{crank}+\mathbf r_{rod}=\mathbf r_{slider}\). Apply it only under the geometry/material/operating assumptions stated in §76.4, then compare the result with the physical behavior described there.
 
-23. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+23. **A.** Section §76.5, **Gear-pair angular speed relationships**, uses \(\frac{\omega_{out}}{\omega_{in}}=-\frac{N_{in}}{N_{out}}\). Apply it only under the geometry/material/operating assumptions stated in §76.5, then compare the result with the physical behavior described there.
 
-24. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+24. **A.** Section §76.6, **Compound and planetary gear trains**, uses \(m_v=\frac{\prod N_{driven}}{\prod N_{driver}}\). Apply it only under the geometry/material/operating assumptions stated in §76.6, then compare the result with the physical behavior described there.
 
-25. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+25. **A.** Section §76.7, **Mechanism mobility, interference, and motion verification**, uses \(\text{geometry}+\text{constraints}\rightarrow\text{physically possible motion}\). Apply it only under the geometry/material/operating assumptions stated in §76.7, then compare the result with the physical behavior described there.
 
-26. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+26. **A.** An integrated **Mechanism Kinematics and Machine Motion** result is acceptable only after the governing physical model, geometry, operating/failure regime, units, and independent plausibility checks agree.
 
-27. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+27. **A.** Source ownership is explicit in this chapter: FE-Handbook-supported material remains tied to the ledger; externally supported material uses **NORTON**; guide synthesis is supplemental explanation and exam-oriented workflow.
 
 
 ---
@@ -410,25 +415,25 @@ D) It is always qualitative
 
 ## Practice Problem Solutions
 
-1. Use §76.1. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+1. **Independent check for §76.1 — Rigid-body translation and rotation review.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. For fixed-axis rotation the speed magnitude is \(v=\omega r=(10\ {\rm rad/s})(0.20\ {\rm m})=\mathbf{2.0\ m/s}\). The velocity is tangent to the circular path, perpendicular to the radius.
 
-2. Use §76.2. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+2. **Independent check for §76.2 — Instantaneous centers of zero velocity.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. Using the instantaneous center, \(v_P=\omega r_{P/IC}=(4\ {\rm rad/s})(0.30\ {\rm m})=\mathbf{1.2\ m/s}\). The direction is perpendicular to the line from the IC to the point.
 
-3. Use §76.3. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+3. **Independent check for §76.3 — Four-bar linkage geometry and mobility.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. The link vectors must form a closed polygon: \(\mathbf r_1+\mathbf r_2+\mathbf r_3+\mathbf r_4=\mathbf0\) when written with consistent directions. Arbitrary angles that do not satisfy both x- and y-component closure do not describe a possible four-bar configuration.
 
-4. Use §76.4. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+4. **Independent check for §76.4 — Slider-crank displacement, velocity, and acceleration.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. At top-dead-center the crank and connecting rod are collinear with the slider axis. The instantaneous slider displacement is at an extremum, so \(dx/dt=\mathbf0\) even though the crank can have nonzero \(\omega\); the slider acceleration need not be zero.
 
-5. Use §76.5. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+5. **Independent check for §76.5 — Gear-pair angular speed relationships.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. For external gears, \(\omega_{out}/\omega_{in}=-N_{in}/N_{out}=-(20/60)\). Thus \(\omega_{out}=-(20/60)(1200)=\mathbf{-400\ rpm}\): 400 rpm in the opposite direction.
 
-6. Use §76.6. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+6. **Independent check for §76.6 — Compound and planetary gear trains.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. Stage ratios multiply. Two 3:1 reductions give \(3\times3=\mathbf{9:1}\), so the final speed magnitude is one-ninth of the input speed, neglecting slip/compliance.
 
-7. Use §76.7. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+7. **Independent check for §76.7 — Mechanism mobility, interference, and motion verification.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. A rigid link must preserve its specified length. If a computed configuration changes the distance between its joints, the geometry violates the rigid-body constraint; the algebraic root must be rejected and the compatible configuration solved instead.
 
-8. Check dimensions, load direction, support/interface assumptions, material regime, fatigue/static basis, operating speed/temperature/pressure, and any geometric validity limit such as thin-wall or small-deflection assumptions.
+8. For **Mechanism Kinematics and Machine Motion**, one required acceptance screen is: preserve rigid link lengths, close every kinematic loop, use the correct gear sign/ratio, and reject alternate mathematical roots that cannot assemble physically. A result that violates this screen must be rejected or recomputed with the proper model.
 
-9. Start with FE Mechanical specification Area(s) 7, then use the Handbook subsection named in the corresponding ledger entry.
+9. Start with the FE Mechanical specification area and FE Reference Handbook location recorded in the ledger for **Mechanism Kinematics and Machine Motion**. For `split_required` concepts, use **NORTON** for the learned/application portion without inventing a Handbook page or clause.
 
-10. Test a simple limit such as zero load, very large stiffness, matched speed ratio, zero pressure, zero damping, or maximum/minimum fit. Confirm the result trends in the physically expected direction and remains manufacturable.
+10. Apply this limiting-case test independently: let one angular speed approach zero and confirm the associated rigid-body point velocities reduce consistently while link lengths remain unchanged. If the simplified case does not behave as expected, revisit the setup before trusting the full calculation.
 
 ---
 

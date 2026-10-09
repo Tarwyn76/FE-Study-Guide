@@ -65,7 +65,7 @@ Hydraulic systems use pressurized nearly incompressible fluid to transmit force 
 
 **Problem.** 10 MPa acting on 0.001 m² produces 10 kN ideal force.
 
-**Solution.** Apply the relation and model in §89.1; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** \(F=pA=(10\ {\rm MPa})(0.001\ {\rm m^2})=(10\times10^6)(0.001)=\mathbf{10{,}000\ N=10\ kN}\) ideal force.
 
 ---
 
@@ -81,7 +81,7 @@ Hydraulic actuator speed follows flow rate and area; hydraulic power follows pre
 
 **Problem.** 5 MPa at 0.002 m³/s is 10 kW ideal hydraulic power.
 
-**Solution.** Apply the relation and model in §89.2; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** \(P_h=pQ=(5\ {\rm MPa})(0.002\ {\rm m^3/s})=(5\times10^6)(0.002)=\mathbf{10{,}000\ W=10\ kW}\). Actual input power is higher when pump/system efficiency is below unity.
 
 ---
 
@@ -97,7 +97,7 @@ Directional valves route flow, pressure-control valves limit/regulate pressure, 
 
 **Problem.** A relief valve protects a hydraulic circuit by opening when pressure reaches its setting.
 
-**Solution.** Apply the relation and model in §89.3; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** A relief valve is normally closed below its set pressure and opens a flow path when pressure reaches the setting, limiting further pressure rise by diverting flow. It protects against overpressure but does not replace lockout or stored-energy control.
 
 ---
 
@@ -113,7 +113,7 @@ Pneumatic systems use compressed gas and are generally more compliant than hydra
 
 **Problem.** The same nominal pressure-area product can produce different dynamic behavior in pneumatic versus hydraulic actuators.
 
-**Solution.** Apply the relation and model in §89.4; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** Both actuator types can have \(F\approx pA\), but compressed gas stores substantial elastic energy and pressure changes with volume. Pneumatic systems therefore tend to have more compliance and different dynamic response than nearly incompressible hydraulic systems.
 
 ---
 
@@ -129,7 +129,7 @@ Motors convert electrical power to torque and speed. Mechanical design focuses o
 
 **Problem.** A shaft delivering 20 N·m at 100 rad/s transmits 2 kW.
 
-**Solution.** Apply the relation and model in §89.5; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** \(P=T\omega=(20\ {\rm N\,m})(100\ {\rm rad/s})=\mathbf{2000\ W=2.0\ kW}\) mechanical shaft power.
 
 ---
 
@@ -145,7 +145,7 @@ Electromechanical components convert electrical control into motion or force. Re
 
 **Problem.** A spring-return solenoid can provide a defined de-energized position.
 
-**Solution.** Apply the relation and model in §89.6; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** A spring-return solenoid uses stored spring force to drive the mechanism to a defined position after de-energization. Whether that de-energized state is actually safe depends on the full machine hazard analysis and any retained fluid/mechanical energy.
 
 ---
 
@@ -161,7 +161,7 @@ Modern mechanical systems often combine sensors, controllers, electrical drives,
 
 **Problem.** A hydraulic accumulator can retain hazardous stored energy even after electrical power is removed.
 
-**Solution.** Apply the relation and model in §89.7; then verify geometry, units, operating regime, and the relevant failure/performance check.
+**Solution.** Electrical power removal does not guarantee zero stored energy. Hydraulic accumulators, trapped pneumatic pressure, raised loads, springs, and rotating inertia can remain hazardous; safe design requires isolation, dissipation/blocking, verification, and appropriate control architecture.
 
 ---
 
@@ -171,13 +171,13 @@ Modern mechanical systems often combine sensors, controllers, electrical drives,
 
 **Problem.** A calculation produces a stress or operating point that violates the model assumption used to obtain it. Is the result acceptable?
 
-**Solution.** No. Select the correct model or failure/operating region and solve again. Algebra does not override geometry, material behavior, or component-state validity.
+**Solution.** No. Component equations do not override system state or safety. Pressure, flow, electrical command, actuator behavior, and retained energy must describe the same operating condition before a fluid-power/electromechanical result is accepted.
 
 ### Worked Example 9
 
 **Problem.** A remembered formula differs from the FE Reference Handbook expression. Which should govern the exam solution?
 
-**Solution.** Use the Handbook expression and its definitions unless the problem explicitly provides another model.
+**Solution.** For **Hydraulic, Pneumatic, and Electromechanical Components**, use the FE Reference Handbook expression, symbols, and unit convention whenever it supplies the required model. The external source set **WHITE, ISO4413, ISO4414, IEC60034** supports specification-required learned/application material that is not fully developed in the Handbook. If a remembered textbook formula conflicts with a supplied Handbook relation, the supplied Handbook relation governs unless the problem explicitly defines another model.
 
 ---
 
@@ -185,7 +185,15 @@ Modern mechanical systems often combine sensors, controllers, electrical drives,
 
 Primary source basis: **FE Mechanical specification Area(s) 14; FE Reference Handbook 10.6 Mechanical Engineering and supporting general sections, with the specific subsection/page identified in the ledger.**
 
-**Source boundary:** The Mechanical specification includes both directly tabulated Handbook equations and learned design concepts. This chapter does not assign invented Handbook pages to specification-required material that is not directly tabulated.
+**Source boundary:** **FE-Handbook-supported** material is the portion directly supported by the FE Reference Handbook locations recorded in the ledger. **Externally supported** material is specification-required mechanical-engineering knowledge that is not fully developed in the Handbook. **Guide synthesis** connects those sources into exam-oriented explanations, examples, model checks, and design context; it is not presented as Handbook text.
+
+**Recommended external references for this chapter:**
+- White, F. M., & Xue, H. *Fluid Mechanics* (9th ed.). McGraw Hill. ISBN 978-1-260-25831-8. Supporting scope: External flow, Reynolds number, boundary layers, drag/lift, dimensional analysis, similarity, and turbomachinery scaling.
+- ISO. (2010). *Hydraulic fluid power—General rules and safety requirements for systems and their components* (ISO 4413:2010; confirmed current in 2021). Supporting scope: Hydraulic fluid-power design, component/system rules, stored-energy hazards, and safety requirements.
+- ISO. (2010). *Pneumatic fluid power—General rules and safety requirements for systems and their components* (ISO 4414:2010; confirmed current in 2021). Supporting scope: Pneumatic fluid-power system/component rules and safety requirements.
+- IEC. (2026). *Rotating electrical machines—Part 1: Rating and performance* (IEC 60034-1:2026). Supporting scope: Ratings and performance requirements for rotating electrical machines, including motor components.
+
+The external references support only the learned/application portion of the FE Mechanical specification. They do not replace the FE Reference Handbook as the exam reference.
 
 ---
 
@@ -354,31 +362,31 @@ D) It is always qualitative
 
 14. For **actuation system integration**, verify geometry, load direction, material model, units, operating regime, and whether the assumed failure or performance mode remains valid.
 
-15. The sketch exposes supports, force directions, geometry, constraints, energy/flow paths, and missing load cases before algebra obscures them.
+15. In **Hydraulic, Pneumatic, and Electromechanical Components**, start from the physical model and system/component state, not from an isolated formula. A valid solution must close hydraulic/pneumatic power and flow relations, match valve/actuator states to the command, include motor/mechanical power conversion, and control stored energy during safe shutdown.
 
-16. Mechanical equations are model-dependent. The result must remain compatible with yielding/buckling/fatigue, flow regime, thermal state, contact, or kinematic constraints.
+16. Units and sign/reference conventions are part of the model in **Hydraulic, Pneumatic, and Electromechanical Components**. Convert all quantities to a consistent basis before substitution and state whether values are absolute/gauge, static/stagnation, nominal/local, input/output, or other relevant basis.
 
-17. The Handbook is the supplied exam reference; its definitions, correction factors, unit conventions, and tables should govern unless the problem explicitly supplies another relation.
+17. The FE Reference Handbook is the controlling exam reference when it supplies the relation for **Hydraulic, Pneumatic, and Electromechanical Components**. External sources **WHITE, ISO4413, ISO4414, IEC60034** support only the learned material not fully developed in the Handbook.
 
-18. These checks catch impossible motion, unit errors, invalid thin-wall or linear assumptions, unrealistic stresses, interference, and parts that cannot be manufactured or assembled.
+18. Use a limiting or reversal check before accepting the result: set pressure or flow to zero and confirm hydraulic power becomes zero; set shaft torque or angular speed to zero and confirm mechanical motor output power becomes zero. A failure to reduce correctly indicates a geometry, regime, sign, unit, or model-selection error.
 
-19. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+19. **A.** Section §89.1, **Hydraulic force multiplication**, uses \(F=pA\). Apply it only under the geometry/material/operating assumptions stated in §89.1, then compare the result with the physical behavior described there.
 
-20. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+20. **A.** Section §89.2, **Hydraulic power and flow-speed relationships**, uses \(P_h=pQ,\qquad v=\frac QA\). Apply it only under the geometry/material/operating assumptions stated in §89.2, then compare the result with the physical behavior described there.
 
-21. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+21. **A.** Section §89.3, **Directional, pressure, and flow-control valves**, uses \(\text{valve state determines flow path or restriction}\). Apply it only under the geometry/material/operating assumptions stated in §89.3, then compare the result with the physical behavior described there.
 
-22. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+22. **A.** Section §89.4, **Pneumatic actuators and compressibility**, uses \(F\approx pA\text{, with compressibility affecting dynamics}\). Apply it only under the geometry/material/operating assumptions stated in §89.4, then compare the result with the physical behavior described there.
 
-23. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+23. **A.** Section §89.5, **Electric motors as mechanical actuators**, uses \(P=T\omega\). Apply it only under the geometry/material/operating assumptions stated in §89.5, then compare the result with the physical behavior described there.
 
-24. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+24. **A.** Section §89.6, **Solenoids, relays, clutches, and brakes**, uses \(\text{electrical command}\rightarrow\text{magnetic force/torque}\rightarrow\text{mechanical action}\). Apply it only under the geometry/material/operating assumptions stated in §89.6, then compare the result with the physical behavior described there.
 
-25. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+25. **A.** Section §89.7, **Integrated fluid-power/electromechanical control and safety**, uses \(\text{command}\rightarrow\text{controller}\rightarrow\text{power element}\rightarrow\text{actuator}\rightarrow\text{feedback}\). Apply it only under the geometry/material/operating assumptions stated in §89.7, then compare the result with the physical behavior described there.
 
-26. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+26. **A.** An integrated **Hydraulic, Pneumatic, and Electromechanical Components** result is acceptable only after the governing physical model, geometry, operating/failure regime, units, and independent plausibility checks agree.
 
-27. **A.** The relation depends on its geometry, loading, material/operating assumptions, and unit convention.
+27. **A.** Source ownership is explicit in this chapter: FE-Handbook-supported material remains tied to the ledger; externally supported material uses **WHITE, ISO4413, ISO4414, IEC60034**; guide synthesis is supplemental explanation and exam-oriented workflow.
 
 
 ---
@@ -410,25 +418,25 @@ D) It is always qualitative
 
 ## Practice Problem Solutions
 
-1. Use §89.1. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+1. **Independent check for §89.1 — Hydraulic force multiplication.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. \(F=pA=(10\ {\rm MPa})(0.001\ {\rm m^2})=(10\times10^6)(0.001)=\mathbf{10{,}000\ N=10\ kN}\) ideal force.
 
-2. Use §89.2. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+2. **Independent check for §89.2 — Hydraulic power and flow-speed relationships.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. \(P_h=pQ=(5\ {\rm MPa})(0.002\ {\rm m^3/s})=(5\times10^6)(0.002)=\mathbf{10{,}000\ W=10\ kW}\). Actual input power is higher when pump/system efficiency is below unity.
 
-3. Use §89.3. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+3. **Independent check for §89.3 — Directional, pressure, and flow-control valves.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. A relief valve is normally closed below its set pressure and opens a flow path when pressure reaches the setting, limiting further pressure rise by diverting flow. It protects against overpressure but does not replace lockout or stored-energy control.
 
-4. Use §89.4. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+4. **Independent check for §89.4 — Pneumatic actuators and compressibility.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. Both actuator types can have \(F\approx pA\), but compressed gas stores substantial elastic energy and pressure changes with volume. Pneumatic systems therefore tend to have more compliance and different dynamic response than nearly incompressible hydraulic systems.
 
-5. Use §89.5. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+5. **Independent check for §89.5 — Electric motors as mechanical actuators.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. \(P=T\omega=(20\ {\rm N\,m})(100\ {\rm rad/s})=\mathbf{2000\ W=2.0\ kW}\) mechanical shaft power.
 
-6. Use §89.6. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+6. **Independent check for §89.6 — Solenoids, relays, clutches, and brakes.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. A spring-return solenoid uses stored spring force to drive the mechanism to a defined position after de-energization. Whether that de-energized state is actually safe depends on the full machine hazard analysis and any retained fluid/mechanical energy.
 
-7. Use §89.7. Apply the stated relation/workflow, then verify model validity and physical feasibility.
+7. **Independent check for §89.7 — Integrated fluid-power/electromechanical control and safety.** Rebuild the result from the stated givens and governing relation rather than copying a memorized answer. Electrical power removal does not guarantee zero stored energy. Hydraulic accumulators, trapped pneumatic pressure, raised loads, springs, and rotating inertia can remain hazardous; safe design requires isolation, dissipation/blocking, verification, and appropriate control architecture.
 
-8. Check dimensions, load direction, support/interface assumptions, material regime, fatigue/static basis, operating speed/temperature/pressure, and any geometric validity limit such as thin-wall or small-deflection assumptions.
+8. For **Hydraulic, Pneumatic, and Electromechanical Components**, one required acceptance screen is: close hydraulic/pneumatic power and flow relations, match valve/actuator states to the command, include motor/mechanical power conversion, and control stored energy during safe shutdown. A result that violates this screen must be rejected or recomputed with the proper model.
 
-9. Start with FE Mechanical specification Area(s) 14, then use the Handbook subsection named in the corresponding ledger entry.
+9. Start with the FE Mechanical specification area and FE Reference Handbook location recorded in the ledger for **Hydraulic, Pneumatic, and Electromechanical Components**. For `split_required` concepts, use **WHITE, ISO4413, ISO4414, IEC60034** for the learned/application portion without inventing a Handbook page or clause.
 
-10. Test a simple limit such as zero load, very large stiffness, matched speed ratio, zero pressure, zero damping, or maximum/minimum fit. Confirm the result trends in the physically expected direction and remains manufacturable.
+10. Apply this limiting-case test independently: set pressure or flow to zero and confirm hydraulic power becomes zero; set shaft torque or angular speed to zero and confirm mechanical motor output power becomes zero. If the simplified case does not behave as expected, revisit the setup before trusting the full calculation.
 
 ---
 
