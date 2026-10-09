@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1008pt" height="720pt" viewBox="0 0 1008 720" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-08T19:03:22.039999</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 720 
+L 1008 720 
+L 1008 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 306.6336 210.096 
+L 701.3664 210.096 
+L 701.3664 130.608 
+L 306.6336 130.608 
+z
+" clip-path="url(#pb49060d321)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 55.44 388.944 
+L 387.3744 388.944 
+L 387.3744 294.552 
+L 55.44 294.552 
+z
+" clip-path="url(#pb49060d321)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 486.0576 388.944 
+L 952.56 388.944 
+L 952.56 294.552 
+L 486.0576 294.552 
+z
+" clip-path="url(#pb49060d321)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 369.432 597.6 
+L 620.6256 597.6 
+L 620.6256 498.24 
+L 369.432 498.24 
+z
+" clip-path="url(#pb49060d321)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 683.424 597.6 
+L 952.56 597.6 
+L 952.56 498.24 
+L 683.424 498.24 
+z
+" clip-path="url(#pb49060d321)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="175.87075" transform="rotate(-0 504 175.87075)">Fluid at rest?</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 19px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(139.141653 334.187336)">YES: hydrostatics</text>
+    <text style="font-size: 19px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(167.144387 359.794289)">dp/dz=−ρg</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(600.07505 334.983195)">NO: steady, incompressible,</text>
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(599.942238 357.89468)">lossless along a streamline?</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(432.5688 540.757266)">YES: Bernoulli</text>
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(466.733644 565.016484)">H₁=H₂</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(739.951375 541.155195)">NO: include losses</text>
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(754.829031 564.06668)">and shaft work</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 305.502207 172.000773 
+Q 264.020589 232.451724 223.614368 291.335505 
+" clip-path="url(#pb49060d321)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 229.482805 288.085666 
+L 223.614368 291.335505 
+L 224.53556 284.690852 
+z
+" clip-path="url(#pb49060d321)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 701.652773 172.334318 
+Q 710.33773 232.4529 718.750932 290.690353 
+" clip-path="url(#pb49060d321)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 720.862232 284.323061 
+L 718.750932 290.690353 
+L 714.923878 285.180938 
+z
+" clip-path="url(#pb49060d321)" style="fill: #235a78; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 601.280355 390.368237 
+Q 548.856587 443.591404 497.76658 495.460472 
+" clip-path="url(#pb49060d321)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 504.114308 493.291059 
+L 497.76658 495.460472 
+L 499.839687 489.080642 
+z
+" clip-path="url(#pb49060d321)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 835.610793 390.91525 
+Q 826.963508 443.590125 818.62412 494.389446 
+" clip-path="url(#pb49060d321)" style="fill: none; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 822.556465 488.954682 
+L 818.62412 494.389446 
+L 816.635715 487.982712 
+z
+" clip-path="url(#pb49060d321)" style="fill: #a23b34; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+  </g>
+  <g id="text_6">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Choose an energy model from the physical flow conditions</text>
+  </g>
+  <g id="text_7">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="55.44" y="700.56" transform="rotate(-0 55.44 700.56)">0556  •  FIG-02-44-007</text>
+  </g>
+  <g id="text_8">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(99.53125 656.640625)">Mechanical-energy equations also need stated assumptions. Unsteady or compressible flow may require a fuller momentum/energy model; the last branch is not</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(333.403125 669.358125)">permission to apply a steady incompressible equation to every flow.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pb49060d321">
+   <rect x="55.44" y="100.8" width="897.12" height="496.8"/>
+  </clipPath>
+ </defs>
+</svg>

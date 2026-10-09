@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="648pt" viewBox="0 0 864 648" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-08T19:10:00.677536</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 648 
+L 864 648 
+L 864 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="text_1">
+    <text style="font-size: 27px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="654.9984" y="178.276444" transform="rotate(-0 654.9984 178.276444)">P_fluid=ρgQh_T</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 26px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="654.9984" y="312.150413" transform="rotate(-0 654.9984 312.150413)">P_shaft=η_TρgQh_T</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(520.176759 424.00253)">Q=0.030 m³/s; h_T=20 m</text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(521.384259 452.889014)">ρ=1000 kg/m³; η_T=0.90</text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(561.909337 481.775498)">P_fluid=5.886 kW</text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(558.572306 510.661983)">P_shaft=5.297 kW</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="line2d_1">
+    <path d="M 65.709474 239.930526 
+L 183.941053 239.930526 
+L 183.941053 322.692632 
+L 420.404211 322.692632 
+" clip-path="url(#p47af97a810)" style="fill: none; stroke: #235a78; stroke-width: 14"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 65.709474 239.930526 
+L 183.941053 239.930526 
+L 183.941053 322.692632 
+L 420.404211 322.692632 
+" clip-path="url(#p47af97a810)" style="fill: none; stroke: #edf3f6; stroke-width: 11.2"/>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #b47722" x="207.587368" y="386.223421" transform="rotate(-0 207.587368 386.223421)">Shaft output</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="124.825263" y="191.693191" transform="rotate(-0 124.825263 191.693191)">Inlet H₁</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="361.288421" y="286.278454" transform="rotate(-0 361.288421 286.278454)">Outlet H₂</text>
+   </g>
+   <g id="patch_2">
+    <path d="M 79.529016 239.930526 
+Q 110.046184 239.930526 138.662694 239.930526 
+" clip-path="url(#p47af97a810)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 132.662694 236.930526 
+L 138.662694 239.930526 
+L 132.662694 242.930526 
+z
+" clip-path="url(#p47af97a810)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 304.172444 322.692632 
+Q 346.508218 322.692632 386.943335 322.692632 
+" clip-path="url(#p47af97a810)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 380.943335 319.692632 
+L 386.943335 322.692632 
+L 380.943335 325.692632 
+z
+" clip-path="url(#p47af97a810)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 183.941053 354.248354 
+Q 183.941053 372.937598 183.941053 389.726184 
+" clip-path="url(#p47af97a810)" style="fill: none; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 186.941053 383.726184 
+L 183.941053 389.726184 
+L 180.941053 383.726184 
+z
+" clip-path="url(#p47af97a810)" style="fill: #b47722; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 183.941053 352.250526 
+C 191.779898 352.250526 199.29874 349.13612 204.84164 343.593219 
+C 210.384541 338.050319 213.498947 330.531477 213.498947 322.692632 
+C 213.498947 314.853786 210.384541 307.334944 204.84164 301.792044 
+C 199.29874 296.249143 191.779898 293.134737 183.941053 293.134737 
+C 176.102207 293.134737 168.583366 296.249143 163.040465 301.792044 
+C 157.497564 307.334944 154.383158 314.853786 154.383158 322.692632 
+C 154.383158 330.531477 157.497564 338.050319 163.040465 343.593219 
+C 168.583366 349.13612 176.102207 352.250526 183.941053 352.250526 
+z
+" clip-path="url(#p47af97a810)" style="fill: #ffffff; stroke: #235a78; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="183.941053" y="327.659507" transform="rotate(-0 183.941053 327.659507)">T</text>
+   </g>
+  </g>
+  <g id="text_8">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">A hydraulic turbine converts available fluid head into shaft power</text>
+  </g>
+  <g id="text_9">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="47.52" y="630.504" transform="rotate(-0 47.52 630.504)">0570  •  FIG-02-46-007</text>
+  </g>
+  <g id="text_10">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(110.580469 590.477562)">h_T denotes the available total-head drop assigned to the turbine; connecting-pipe losses are separate. Efficiency multiplies the</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(221.923437 603.473187)">available fluid power for a turbine, whereas pump input power divides by efficiency.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p47af97a810">
+   <rect x="30.24" y="145.345263" width="449.28" height="260.109474"/>
+  </clipPath>
+ </defs>
+</svg>

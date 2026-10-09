@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="648pt" viewBox="0 0 864 648" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-08T19:08:42.465516</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 648 
+L 864 648 
+L 864 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="text_1">
+    <text style="font-size: 24px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="654.9984" y="177.8241" transform="rotate(-0 654.9984 177.8241)">x=0.20/(0.80+0.20)=0.20</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(536.7959 285.687466)">y=y_f+x(y_g−y_f)</text>
+    <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(576.098556 321.451684)">y∈{v,u,h,s}</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(498.602462 448.298009)">If h_f=419.04, h_fg=2257.0:</text>
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(570.150587 478.560041)">h=870.44 kJ/kg</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_2">
+    <path d="M 127.125818 416.369455 
+L 314.456727 416.369455 
+L 314.456727 166.594909 
+L 127.125818 166.594909 
+z
+" clip-path="url(#pf493553df3)" style="fill: #edf3f6; stroke: #235a78; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 127.125818 416.369455 
+L 314.456727 416.369455 
+L 314.456727 347.681455 
+L 127.125818 347.681455 
+z
+" clip-path="url(#pf493553df3)" style="fill: #dbe9e6"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 127.125818 347.681455 
+L 314.456727 347.681455 
+" clip-path="url(#pf493553df3)" style="fill: none; stroke: #26776f; stroke-width: 1.5; stroke-linecap: square"/>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(181.81346 244.543773)">VAPOR</text>
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(143.681976 275.541664)">m_g=0.20 kg</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="220.791273" y="385.955923" transform="rotate(-0 220.791273 385.955923)">LIQUID: m_f=0.80 kg</text>
+   </g>
+  </g>
+  <g id="text_6">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Two-phase properties use vapor mass fraction, not occupied volume fraction</text>
+  </g>
+  <g id="text_7">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="47.52" y="630.504" transform="rotate(-0 47.52 630.504)">0580  •  FIG-02-48-003</text>
+  </g>
+  <g id="text_8">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(96.907812 590.477562)">Saturated water example at 100°C (about 101.35 kPa), using rounded handbook table values. Sketch volumes are schematic; a small</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(282.875781 603.195062)">vapor mass can occupy most of the volume. h_fg=h_g−h_f.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pf493553df3">
+   <rect x="89.659636" y="116.64" width="287.240727" height="343.44"/>
+  </clipPath>
+ </defs>
+</svg>
