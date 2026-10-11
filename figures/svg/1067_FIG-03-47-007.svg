@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1080pt" height="792pt" viewBox="0 0 1080 792" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-10T10:09:54.539293</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 792 
+L 1080 792 
+L 1080 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 59.4 324.0072 
+L 290.088 324.0072 
+L 290.088 192.852 
+L 59.4 192.852 
+z
+" clip-path="url(#p3787df6fc8)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 290.088 324.0072 
+L 655.344 324.0072 
+L 655.344 192.852 
+L 290.088 192.852 
+z
+" clip-path="url(#p3787df6fc8)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 655.344 324.0072 
+L 1020.6 324.0072 
+L 1020.6 192.852 
+L 655.344 192.852 
+z
+" clip-path="url(#p3787df6fc8)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 59.4 455.1624 
+L 290.088 455.1624 
+L 290.088 324.0072 
+L 59.4 324.0072 
+z
+" clip-path="url(#p3787df6fc8)" style="fill: #ffffff; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 290.088 455.1624 
+L 655.344 455.1624 
+L 655.344 324.0072 
+L 290.088 324.0072 
+z
+" clip-path="url(#p3787df6fc8)" style="fill: #ffffff; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 655.344 455.1624 
+L 1020.6 455.1624 
+L 1020.6 324.0072 
+L 655.344 324.0072 
+z
+" clip-path="url(#p3787df6fc8)" style="fill: #ffffff; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 59.4 586.3176 
+L 290.088 586.3176 
+L 290.088 455.1624 
+L 59.4 455.1624 
+z
+" clip-path="url(#p3787df6fc8)" style="fill: #ffffff; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 290.088 586.3176 
+L 655.344 586.3176 
+L 655.344 455.1624 
+L 290.088 455.1624 
+z
+" clip-path="url(#p3787df6fc8)" style="fill: #ffffff; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 655.344 586.3176 
+L 1020.6 586.3176 
+L 1020.6 455.1624 
+L 655.344 455.1624 
+z
+" clip-path="url(#p3787df6fc8)" style="fill: #ffffff; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="174.744" y="261.74085" transform="rotate(-0 174.744 261.74085)">Method</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="472.716" y="261.74085" transform="rotate(-0 472.716 261.74085)">Black-box/specification focus</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="837.972" y="261.74085" transform="rotate(-0 837.972 261.74085)">White-box/internal focus</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="174.744" y="392.89605" transform="rotate(-0 174.744 392.89605)">Static:without executing</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(409.259437 385.26555)">Requirements review</text>
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(397.581 400.52655)">specification consistency</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(795.6195 385.26555)">Source review</text>
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(760.919813 400.52655)">control/data-flow analysis</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="174.744" y="524.05125" transform="rotate(-0 174.744 524.05125)">Dynamic:execute program</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(418.814437 516.42075)">Input/output tests</text>
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(406.357875 531.68175)">functional acceptance</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(774.481688 516.42075)">Branch/path exercise</text>
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(767.478562 531.68175)">instrumented unit tests</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="540" y="652.225087" transform="rotate(-0 540 652.225087)">A static black-box review examines the specification; it is not executable testing.</text>
+   </g>
+  </g>
+  <g id="text_11">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="43.56" transform="rotate(-0 59.4 43.56)">Static/dynamic and black-box/white-box describe different testing dimensions</text>
+  </g>
+  <g id="text_12">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="59.4" y="770.616" transform="rotate(-0 59.4 770.616)">1067  •  FIG-03-47-007</text>
+  </g>
+  <g id="text_13">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 717.097875)">Terminology matrix emphasizes independent dimensions. Static activities include verification and analysis as well as testing-related reviews; classic</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 729.815375)">black/white-box test-design terminology more often describes dynamic tests. Tool classification depends on what is examined and whether execution occurs,</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 742.532875)">not simply the tool name.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p3787df6fc8">
+   <rect x="59.4" y="110.88" width="961.2" height="546.48"/>
+  </clipPath>
+ </defs>
+</svg>

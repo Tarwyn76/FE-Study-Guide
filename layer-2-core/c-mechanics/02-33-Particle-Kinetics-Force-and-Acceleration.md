@@ -63,7 +63,7 @@ Draw the FBD first; then choose coordinates and write component equations.
 
 **Problem.** A 10-kg particle has net force 50 N in +x. Find acceleration.
 
-**Solution.** a=5 m/s².
+**Solution.** a=5 m/s². Reasoning: this uses the **33.1 Newton's Second Law for a Particle** model from Chapter 02-33: Particle Kinetics — Force and Acceleration. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -87,7 +87,7 @@ Do not substitute a weight value in newtons where mass in kilograms is required 
 
 **Problem.** A 5-kg block weighs how much at g=9.81?
 
-**Solution.** 49.05 N.
+**Solution.** 49.05 N. Reasoning: this uses the **33.2 Weight and Mass** model from Chapter 02-33: Particle Kinetics — Force and Acceleration. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -105,7 +105,7 @@ The equations remain valid even when acceleration varies with time, position, or
 
 **Problem.** A 2-kg particle travels at 6 m/s on radius 3 m. Find required inward resultant force.
 
-**Solution.** Fn=m v²/r=2(36)/3=24 N.
+**Solution.** Fn=m v²/r=2(36)/3=24 N. Reasoning: this uses the **33.3 Cartesian Force-Acceleration Equations** model from Chapter 02-33: Particle Kinetics — Force and Acceleration. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -123,7 +123,7 @@ The normal direction is toward the center of curvature.
 
 **Problem.** A 20-kg crate is pulled horizontally by 100 N with kinetic friction 30 N. Find acceleration.
 
-**Solution.** a=(100-30)/20=3.5 m/s².
+**Solution.** a=(100-30)/20=3.5 m/s². Reasoning: this uses the **33.4 Normal-Tangential Kinetics** model from Chapter 02-33: Particle Kinetics — Force and Acceleration. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -141,7 +141,7 @@ Ideal pulley/cable models may use equal tension in a continuous massless cable, 
 
 **Problem.** Why must a cable constraint be differentiated to relate accelerations?
 
-**Solution.** The fixed-length relation is geometric in positions; differentiating gives velocity then acceleration relations.
+**Solution.** The fixed-length relation is geometric in positions; differentiating gives velocity then acceleration relations. Reasoning: this uses the **33.5 Connected Particles and Constraint Forces** model from Chapter 02-33: Particle Kinetics — Force and Acceleration. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -159,7 +159,7 @@ Do not automatically set static friction equal to its maximum.
 
 **Problem.** Can static friction always be set to μsN?
 
-**Solution.** No, only at impending slip.
+**Solution.** No, only at impending slip. Reasoning: this uses the **33.6 Friction in Particle Kinetics** model from Chapter 02-33: Particle Kinetics — Force and Acceleration. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -177,7 +177,7 @@ If the assumed contact force becomes tensile where contact can only push, the as
 
 **Problem.** What is the first step in a kinetics problem?
 
-**Solution.** Isolate the body and draw the FBD.
+**Solution.** Isolate the body and draw the FBD. Reasoning: this uses the **33.7 Kinetics Solution Workflow** model from Chapter 02-33: Particle Kinetics — Force and Acceleration. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -187,17 +187,24 @@ If the assumed contact force becomes tensile where contact can only push, the as
 
 **Problem.** If a normal reaction solves negative for a simple contact that can only push, what does it imply?
 
-**Solution.** Contact assumption is invalid/separation occurs or model is wrong.
+**Solution.** Contact assumption is invalid/separation occurs or model is wrong. Reasoning: this uses the **Integrated Worked Examples** model from Chapter 02-33: Particle Kinetics — Force and Acceleration. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ### Worked Example 9
 
 **Problem.** What is the normal force equation in n-t coordinates?
 
-**Solution.** ΣFn=m v²/ρ.
+**Solution.** ΣFn=m v²/ρ. Reasoning: this uses the **Integrated Worked Examples** model from Chapter 02-33: Particle Kinetics — Force and Acceleration. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — Engineering LibreTexts, Introductory Dynamics (Steeneken, Delft University of Technology) (https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Introductory_Dynamics%3A_2D_Kinematics_and_Kinetics_of_Point_Masses_and_Rigid_Bodies_%28Steeneken%29) supports particle kinetics, Newton’s second law, connected-particle constraints, and force-acceleration solution workflow.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Dynamics, printed pp. 106–107**.
 
@@ -369,32 +376,31 @@ D) It replaces the need for an FBD or kinematic model
 
 14. The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first, then apply **kinetics workflow**.
 
-15. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+15. Create the chapter-specific mechanics model for **Chapter 02-33: Particle Kinetics — Force and Acceleration** before solving: define the body or system, coordinates, geometry, loads, constraints, and unknowns that enter the governing equations.
 
-16. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+16. Independently verify a result in **Chapter 02-33: Particle Kinetics — Force and Acceleration** by substituting it back into the governing equation, checking units and signs, and testing equilibrium, compatibility, or a limiting case as appropriate.
 
-17. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+17. A negative result reverses an assumed direction only when the physical element can act in that opposite sense. In **Chapter 02-33: Particle Kinetics — Force and Acceleration**, also test whether unilateral contact, tension-only, or compression-only behavior changes the model.
 
-18. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+18. Match the Handbook coordinate and sign convention before comparing expressions in **Chapter 02-33: Particle Kinetics — Force and Acceleration**. A different positive direction can reverse component or moment signs while leaving the physical state unchanged.
 
-19. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+19. **A.** The nineteenth review item tests **particle kinetics** in **Chapter 02-33: Particle Kinetics — Force and Acceleration**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-20. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+20. **A.** The twentieth review item tests **weight-mass distinction** in **Chapter 02-33: Particle Kinetics — Force and Acceleration**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-21. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+21. **A.** The twenty-first review item tests **Cartesian kinetics** in **Chapter 02-33: Particle Kinetics — Force and Acceleration**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-22. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+22. **A.** The twenty-second review item tests **normal-tangential kinetics** in **Chapter 02-33: Particle Kinetics — Force and Acceleration**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-23. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+23. **A.** The twenty-third review item tests **connected particles** in **Chapter 02-33: Particle Kinetics — Force and Acceleration**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-24. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+24. **A.** The twenty-fourth review item tests **dynamic friction** in **Chapter 02-33: Particle Kinetics — Force and Acceleration**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-25. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+25. **A.** The twenty-fifth review item tests **kinetics workflow** in **Chapter 02-33: Particle Kinetics — Force and Acceleration**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-26. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+26. **A.** The twenty-sixth review item tests **particle kinetics** in **Chapter 02-33: Particle Kinetics — Force and Acceleration**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This application check also tests whether the model assumptions are established before any numerical or symbolic manipulation.
 
-27. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
-
+27. **A.** The twenty-seventh review item tests **weight-mass distinction** in **Chapter 02-33: Particle Kinetics — Force and Acceleration**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This final application check emphasizes that a valid mechanics relation cannot replace the diagram, geometry, and constraints that define the problem.
 
 ---
 
@@ -425,9 +431,9 @@ D) It replaces the need for an FBD or kinematic model
 
 ## Practice Problem Solutions
 
-1. a=5 m/s².
+1. a=5 m/s². Practice verification: use the **33.1 Newton's Second Law for a Particle** relation for Chapter 02-33: Particle Kinetics — Force and Acceleration, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
-2. 49.05 N.
+2. 49.05 N. Practice verification: use the **33.2 Weight and Mass** relation for Chapter 02-33: Particle Kinetics — Force and Acceleration, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
 3. Fn=m v²/r=2(36)/3=24 N.
 
@@ -435,16 +441,15 @@ D) It replaces the need for an FBD or kinematic model
 
 5. The fixed-length relation is geometric in positions; differentiating gives velocity then acceleration relations.
 
-6. No, only at impending slip.
+6. No, only at impending slip. Practice verification: use the **33.6 Friction in Particle Kinetics** relation for Chapter 02-33: Particle Kinetics — Force and Acceleration, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
 7. Isolate the body and draw the FBD.
 
 8. Contact assumption is invalid/separation occurs or model is wrong.
 
-9. ΣFn=m v²/ρ.
+9. ΣFn=m v²/ρ. Practice verification: use the **Integrated Worked Examples** relation for Chapter 02-33: Particle Kinetics — Force and Acceleration, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
 10. Newton's law equates vector components along the same axes.
-
 
 ---
 

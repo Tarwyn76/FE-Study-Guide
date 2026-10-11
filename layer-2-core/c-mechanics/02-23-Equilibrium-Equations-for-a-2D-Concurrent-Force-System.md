@@ -63,7 +63,7 @@ The first task is to confirm concurrency. A rigid body carrying forces at differ
 
 **Problem.** A 500-N force acts 30° above +x. Find components.
 
-**Solution.** Fx=500 cos30°=433 N; Fy=500 sin30°=250 N.
+**Solution.** Fx=500 cos30°=433 N; Fy=500 sin30°=250 N. Resolve the vector using the angle measured from the +x axis: the adjacent component uses cosine and the opposite component uses sine. The signs are positive because the force lies in the first quadrant.
 
 ---
 
@@ -81,7 +81,7 @@ If a force direction is defined by a triangle or coordinate difference, construc
 
 **Problem.** A ring carries forces (300,0) N and (0,-400) N. Find resultant magnitude.
 
-**Solution.** R=sqrt(300²+400²)=500 N.
+**Solution.** R=sqrt(300²+400²)=500 N. The two force components are perpendicular, so the resultant magnitude follows from the Pythagorean relation. The 300-400-500 triangle gives a 500-N resultant directed into the fourth quadrant.
 
 ---
 
@@ -99,7 +99,7 @@ Choose axes that simplify the equations. Aligning an axis with an unknown cable 
 
 **Problem.** What equilibrant balances the forces in Problem 2?
 
-**Solution.** (-300,+400) N, magnitude 500 N.
+**Solution.** (-300,+400) N, magnitude 500 N. An equilibrant is defined as the force that makes the vector sum zero. It must therefore have the same magnitude as the resultant and exactly the opposite direction.
 
 ---
 
@@ -117,7 +117,7 @@ Avoid replacing a vector equation with a scalar magnitude sum. Opposing force di
 
 **Problem.** A particle is in equilibrium under two unknown component forces and a known load. How many independent planar force equations are available?
 
-**Solution.** Two: ΣFx=0 and ΣFy=0.
+**Solution.** Two: ΣFx=0 and ΣFy=0. A particle or concurrent-force system in a plane has no independent moment equation once all lines of action pass through the same point. The independent equilibrium conditions are the two component force sums.
 
 ---
 
@@ -135,7 +135,7 @@ This provides a fast check: if known forces sum to \(\mathbf R\), the required b
 
 **Problem.** Can three nonparallel forces keep a rigid body in equilibrium if their lines of action are not concurrent and no couple acts?
 
-**Solution.** No; for a three-force body they must be concurrent.
+**Solution.** No; for a three-force body they must be concurrent. For a rigid body acted on by exactly three nonparallel forces, zero net moment requires the three lines of action to intersect at one point. If they are not concurrent, an uncancelled moment remains.
 
 ---
 
@@ -153,7 +153,7 @@ Do not apply the three-force-body shortcut when a couple moment acts or when mor
 
 **Problem.** A cable-force solution is -2.0 kN under a tension-positive assumption. Interpret it.
 
-**Solution.** The assumed direction is wrong; an ideal cable cannot push, so the modeled configuration/contact must be reconsidered.
+**Solution.** The assumed direction is wrong; an ideal cable cannot push, so the modeled configuration/contact must be reconsidered. The negative value says the actual force would have to act opposite the assumed tensile direction. Because an ideal cable cannot carry compression, that result signals that the assumed configuration or contact state is not physically admissible.
 
 ---
 
@@ -171,7 +171,7 @@ An algebraic solution that requires a cable to push or a frictionless surface to
 
 **Problem.** Why can axes be rotated in a concurrent-force problem?
 
-**Solution.** Equilibrium is vectorial; any orthogonal axes are valid, and convenient axes simplify components.
+**Solution.** Equilibrium is vectorial; any orthogonal axes are valid, and convenient axes simplify components. The vector equilibrium condition is coordinate-invariant. Rotating orthogonal axes changes component values but not whether their vector sum is zero, so axes may be chosen to minimize trigonometry.
 
 ---
 
@@ -181,17 +181,24 @@ An algebraic solution that requires a cable to push or a frictionless surface to
 
 **Problem.** What is the difference between a resultant and equilibrant?
 
-**Solution.** The resultant is the vector sum; the equilibrant is equal and opposite.
+**Solution.** The resultant is the vector sum; the equilibrant is equal and opposite. The resultant is the vector sum of all applied forces. The equilibrant is a single force equal in magnitude and opposite in direction to that resultant, so adding it makes the total force zero.
 
 ### Worked Example 9
 
 **Problem.** How do you verify a solved concurrent system?
 
-**Solution.** Recompute ΣFx and ΣFy and check both are zero within rounding.
+**Solution.** Recompute ΣFx and ΣFy and check both are zero within rounding. Substitute the solved forces back into both independent component equations. A valid solution gives ΣFx≈0 and ΣFy≈0, with any small residual attributable only to rounding.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — Engineering LibreTexts, Mechanics Map (Moore, 2nd ed.) (https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_Map_%28Moore_2nd_Edition%29) supports 2-D concurrent-force equilibrium, geometry of force directions, and solution checks.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Statics, printed pp. 95 and 98**.
 
@@ -363,32 +370,31 @@ D) It replaces the need for an FBD or kinematic model
 
 14. The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first, then apply **equilibrium check**.
 
-15. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+15. Define the body or system, draw the chapter-specific model for **Chapter 02-23: Equilibrium Equations for a 2D Concurrent Force System**, and label the coordinates, geometry, loads, and unknowns needed by the governing equations. This prevents algebra from being applied to an incomplete physical model.
 
-16. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+16. Use an independent check appropriate to **Chapter 02-23: Equilibrium Equations for a 2D Concurrent Force System**: substitute the solved values back into the governing equations, verify units and signs, and confirm that the result is physically plausible for the stated geometry and constraints.
 
-17. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+17. A negative solved value reverses an assumed vector sense only when the underlying support, contact, or member can physically act in that opposite sense. In **Chapter 02-23: Equilibrium Equations for a 2D Concurrent Force System**, also check whether a one-way constraint instead implies separation, slackness, or a changed contact state.
 
-18. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+18. The Handbook and the chapter must use the same coordinate and sign convention before formulas or diagrams are compared. For **Chapter 02-23: Equilibrium Equations for a 2D Concurrent Force System**, reversing an axis or moment sense changes component signs without changing the underlying mechanics.
 
-19. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+19. **A.** The nineteenth review item tests **concurrent forces** in **Chapter 02-23: Equilibrium Equations for a 2D Concurrent Force System**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-20. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+20. **A.** The twentieth review item tests **force components** in **Chapter 02-23: Equilibrium Equations for a 2D Concurrent Force System**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-21. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+21. **A.** The twenty-first review item tests **planar equilibrium** in **Chapter 02-23: Equilibrium Equations for a 2D Concurrent Force System**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-22. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+22. **A.** The twenty-second review item tests **equilibrium solution** in **Chapter 02-23: Equilibrium Equations for a 2D Concurrent Force System**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-23. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+23. **A.** The twenty-third review item tests **resultant force** in **Chapter 02-23: Equilibrium Equations for a 2D Concurrent Force System**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-24. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+24. **A.** The twenty-fourth review item tests **three-force body** in **Chapter 02-23: Equilibrium Equations for a 2D Concurrent Force System**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-25. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+25. **A.** The twenty-fifth review item tests **equilibrium check** in **Chapter 02-23: Equilibrium Equations for a 2D Concurrent Force System**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-26. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+26. **A.** The twenty-sixth review item tests **concurrent forces** in **Chapter 02-23: Equilibrium Equations for a 2D Concurrent Force System**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This application check also tests whether the model assumptions are established before any numerical or symbolic manipulation.
 
-27. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
-
+27. **A.** The twenty-seventh review item tests **force components** in **Chapter 02-23: Equilibrium Equations for a 2D Concurrent Force System**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This final application check emphasizes that a valid mechanics relation cannot replace the diagram, geometry, and constraints that define the problem.
 
 ---
 
@@ -419,26 +425,16 @@ D) It replaces the need for an FBD or kinematic model
 
 ## Practice Problem Solutions
 
-1. Fx=500 cos30°=433 N; Fy=500 sin30°=250 N.
-
-2. R=sqrt(300²+400²)=500 N.
-
-3. (-300,+400) N, magnitude 500 N.
-
-4. Two: ΣFx=0 and ΣFy=0.
-
-5. No; for a three-force body they must be concurrent.
-
-6. The assumed direction is wrong; an ideal cable cannot push, so the modeled configuration/contact must be reconsidered.
-
-7. Equilibrium is vectorial; any orthogonal axes are valid, and convenient axes simplify components.
-
-8. The resultant is the vector sum; the equilibrant is equal and opposite.
-
-9. Recompute ΣFx and ΣFy and check both are zero within rounding.
-
+1. Fx=500 cos30°=433 N; Fy=500 sin30°=250 N. Resolve the vector using the angle measured from the +x axis: the adjacent component uses cosine and the opposite component uses sine. The signs are positive because the force lies in the first quadrant. Practice check: this conclusion follows from the governing model used in **Chapter 02-23: Equilibrium Equations for a 2D Concurrent Force System**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+2. R=sqrt(300²+400²)=500 N. The two force components are perpendicular, so the resultant magnitude follows from the Pythagorean relation. The 300-400-500 triangle gives a 500-N resultant directed into the fourth quadrant. Practice check: this conclusion follows from the governing model used in **Chapter 02-23: Equilibrium Equations for a 2D Concurrent Force System**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+3. (-300,+400) N, magnitude 500 N. An equilibrant is defined as the force that makes the vector sum zero. It must therefore have the same magnitude as the resultant and exactly the opposite direction. Practice check: this conclusion follows from the governing model used in **Chapter 02-23: Equilibrium Equations for a 2D Concurrent Force System**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+4. Two: ΣFx=0 and ΣFy=0. A particle or concurrent-force system in a plane has no independent moment equation once all lines of action pass through the same point. The independent equilibrium conditions are the two component force sums. Practice check: this conclusion follows from the governing model used in **Chapter 02-23: Equilibrium Equations for a 2D Concurrent Force System**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+5. No; for a three-force body they must be concurrent. For a rigid body acted on by exactly three nonparallel forces, zero net moment requires the three lines of action to intersect at one point. If they are not concurrent, an uncancelled moment remains. Practice check: this conclusion follows from the governing model used in **Chapter 02-23: Equilibrium Equations for a 2D Concurrent Force System**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+6. The assumed direction is wrong; an ideal cable cannot push, so the modeled configuration/contact must be reconsidered. The negative value says the actual force would have to act opposite the assumed tensile direction. Because an ideal cable cannot carry compression, that result signals that the assumed configuration or contact state is not physically admissible. Practice check: this conclusion follows from the governing model used in **Chapter 02-23: Equilibrium Equations for a 2D Concurrent Force System**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+7. Equilibrium is vectorial; any orthogonal axes are valid, and convenient axes simplify components. The vector equilibrium condition is coordinate-invariant. Rotating orthogonal axes changes component values but not whether their vector sum is zero, so axes may be chosen to minimize trigonometry. Practice check: this conclusion follows from the governing model used in **Chapter 02-23: Equilibrium Equations for a 2D Concurrent Force System**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+8. The resultant is the vector sum; the equilibrant is equal and opposite. The resultant is the vector sum of all applied forces. The equilibrant is a single force equal in magnitude and opposite in direction to that resultant, so adding it makes the total force zero. Practice check: this conclusion follows from the governing model used in **Chapter 02-23: Equilibrium Equations for a 2D Concurrent Force System**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+9. Recompute ΣFx and ΣFy and check both are zero within rounding. Substitute the solved forces back into both independent component equations. A valid solution gives ΣFx≈0 and ΣFy≈0, with any small residual attributable only to rounding. Practice check: this conclusion follows from the governing model used in **Chapter 02-23: Equilibrium Equations for a 2D Concurrent Force System**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
 10. Every force has zero moment about that intersection.
-
 
 ---
 

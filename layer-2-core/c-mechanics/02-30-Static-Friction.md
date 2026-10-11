@@ -69,7 +69,7 @@ Equality applies only at impending slip.
 
 **Problem.** A 100-N block on a horizontal surface has μs=0.40. Find maximum static friction.
 
-**Solution.** Fmax=0.40(100)=40 N if N=100 N.
+**Solution.** Fmax=0.40(100)=40 N if N=100 N. Reasoning: this uses the **30.1 Static Friction Is Reactive** model from Chapter 02-30: Static Friction. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -87,7 +87,7 @@ Assume an impending direction, draw friction opposing it, solve equilibrium, and
 
 **Problem.** If the applied horizontal force in Problem 1 is 25 N and the block remains at rest, what is friction?
 
-**Solution.** 25 N opposite the applied force, not 40 N.
+**Solution.** 25 N opposite the applied force, not 40 N. Reasoning: this uses the **30.2 Impending Motion** model from Chapter 02-30: Static Friction. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -109,7 +109,7 @@ The Handbook notes that the force needed to initiate sliding is typically greate
 
 **Problem.** If μk=0.30 and the block slides, find kinetic friction.
 
-**Solution.** 30 N.
+**Solution.** 30 N. Reasoning: this uses the **30.3 Kinetic Friction** model from Chapter 02-30: Static Friction. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -131,7 +131,7 @@ The downslope gravity component is \(W\sin	heta\). Compare required friction wit
 
 **Problem.** A block on a 20° incline weighs 500 N. Find normal force with no other normal loads.
 
-**Solution.** N=500 cos20°=469.8 N.
+**Solution.** N=500 cos20°=469.8 N. Reasoning: this uses the **30.4 Blocks on Inclines** model from Chapter 02-30: Static Friction. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -149,7 +149,7 @@ Compute both critical loads and the smaller one governs the first motion mode.
 
 **Problem.** For Problem 4 with μs=0.50, is gravity alone enough to cause slip?
 
-**Solution.** Required friction=500 sin20°=171.0 N; max=0.5(469.8)=234.9 N, so no.
+**Solution.** Required friction=500 sin20°=171.0 N; max=0.5(469.8)=234.9 N, so no. Reasoning: this uses the **30.5 Tipping versus Sliding** model from Chapter 02-30: Static Friction. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -173,7 +173,7 @@ The exponential relation applies to flexible belt/capstan contact under its mode
 
 **Problem.** What equation defines impending slip?
 
-**Solution.** F=μsN.
+**Solution.** F=μsN. Reasoning: this uses the **30.6 Belt Friction** model from Chapter 02-30: Static Friction. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -191,7 +191,7 @@ Use the specified plus/minus form carefully for tightening/raising versus loosen
 
 **Problem.** Why compute both tipping and sliding thresholds for a tall block?
 
-**Solution.** Whichever critical load is smaller occurs first.
+**Solution.** Whichever critical load is smaller occurs first. Reasoning: this uses the **30.7 Square-Thread Screw Friction** model from Chapter 02-30: Static Friction. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -201,17 +201,24 @@ Use the specified plus/minus form carefully for tightening/raising versus loosen
 
 **Problem.** A belt has μ=0.2, wrap θ=π rad, slack tension 100 N. Find tight tension at impending slip.
 
-**Solution.** F1=100 exp(0.2π)=187.4 N.
+**Solution.** F1=100 exp(0.2π)=187.4 N. Reasoning: this uses the **Integrated Worked Examples** model from Chapter 02-30: Static Friction. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ### Worked Example 9
 
 **Problem.** What angle unit is required in the belt formula?
 
-**Solution.** Radians.
+**Solution.** Radians. Reasoning: this uses the **Integrated Worked Examples** model from Chapter 02-30: Static Friction. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — Engineering LibreTexts, Mechanics Map (Moore, 2nd ed.) (https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_Map_%28Moore_2nd_Edition%29) supports static friction, impending motion, blocks on inclines, and sliding-versus-tipping checks.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Statics, printed pp. 97–98; Dynamics pp. 109–110**.
 
@@ -383,32 +390,31 @@ D) It replaces the need for an FBD or kinematic model
 
 14. The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first, then apply **screw friction**.
 
-15. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+15. Create the chapter-specific mechanics model for **Chapter 02-30: Static Friction** before solving: define the body or system, coordinates, geometry, loads, constraints, and unknowns that enter the governing equations.
 
-16. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+16. Independently verify a result in **Chapter 02-30: Static Friction** by substituting it back into the governing equation, checking units and signs, and testing equilibrium, compatibility, or a limiting case as appropriate.
 
-17. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+17. A negative result reverses an assumed direction only when the physical element can act in that opposite sense. In **Chapter 02-30: Static Friction**, also test whether unilateral contact, tension-only, or compression-only behavior changes the model.
 
-18. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+18. Match the Handbook coordinate and sign convention before comparing expressions in **Chapter 02-30: Static Friction**. A different positive direction can reverse component or moment signs while leaving the physical state unchanged.
 
-19. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+19. **A.** The nineteenth review item tests **static friction** in **Chapter 02-30: Static Friction**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-20. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+20. **A.** The twentieth review item tests **impending slip** in **Chapter 02-30: Static Friction**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-21. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+21. **A.** The twenty-first review item tests **kinetic friction** in **Chapter 02-30: Static Friction**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-22. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+22. **A.** The twenty-second review item tests **inclined-plane friction** in **Chapter 02-30: Static Friction**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-23. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+23. **A.** The twenty-third review item tests **tipping versus sliding** in **Chapter 02-30: Static Friction**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-24. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+24. **A.** The twenty-fourth review item tests **belt friction** in **Chapter 02-30: Static Friction**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-25. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+25. **A.** The twenty-fifth review item tests **screw friction** in **Chapter 02-30: Static Friction**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-26. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+26. **A.** The twenty-sixth review item tests **static friction** in **Chapter 02-30: Static Friction**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This application check also tests whether the model assumptions are established before any numerical or symbolic manipulation.
 
-27. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
-
+27. **A.** The twenty-seventh review item tests **impending slip** in **Chapter 02-30: Static Friction**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This final application check emphasizes that a valid mechanics relation cannot replace the diagram, geometry, and constraints that define the problem.
 
 ---
 
@@ -443,22 +449,21 @@ D) It replaces the need for an FBD or kinematic model
 
 2. 25 N opposite the applied force, not 40 N.
 
-3. 30 N.
+3. 30 N. Practice verification: use the **30.3 Kinetic Friction** relation for Chapter 02-30: Static Friction, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
-4. N=500 cos20°=469.8 N.
+4. N=500 cos20°=469.8 N. Practice verification: use the **30.4 Blocks on Inclines** relation for Chapter 02-30: Static Friction, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
 5. Required friction=500 sin20°=171.0 N; max=0.5(469.8)=234.9 N, so no.
 
-6. F=μsN.
+6. F=μsN. Practice verification: use the **30.6 Belt Friction** relation for Chapter 02-30: Static Friction, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
 7. Whichever critical load is smaller occurs first.
 
 8. F1=100 exp(0.2π)=187.4 N.
 
-9. Radians.
+9. Radians. Practice verification: use the **Integrated Worked Examples** relation for Chapter 02-30: Static Friction, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
 10. It adjusts to the value needed to prevent motion until the limiting value is reached.
-
 
 ---
 

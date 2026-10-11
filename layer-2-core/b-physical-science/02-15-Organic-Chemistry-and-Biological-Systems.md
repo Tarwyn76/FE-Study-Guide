@@ -167,6 +167,13 @@ Before calculation, identify the governing state, composition, reaction, exposur
 
 ## As the Handbook States It
 
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — OpenStax Chemistry 2e and OpenStax Biology 2e (https://openstax.org/details/books/chemistry-2e ; https://openstax.org/details/books/biology-2e) supports organic functional/reaction patterns, proteins and enzymes, genetic information, photosynthesis, respiration, and bioconversion.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
+
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Chemistry and Biology pp. 87–94**.
 
 **Source boundary:** The Handbook directly supplies selected organic nomenclature/families, industrial chemical names, photosynthesis, biodegradation equations, instrumental-analysis capabilities, and cell diagrams. Detailed reaction mechanisms, genetics, and metabolic pathways are guide-developed only at an introductory level.
@@ -315,20 +322,17 @@ B) A universal rule independent of conditions
 C) A unit-conversion constant only
 D) A substitute for verified data
 
-26. Which answer best describes **hydrocarbon families**?
-A) A conditional engineering concept used under stated assumptions
-B) A universal rule independent of conditions
-C) A unit-conversion constant only
-D) A substitute for verified data
+26. A new problem requires **hydrocarbon families**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which answer best describes **functional groups**?
-A) A conditional engineering concept used under stated assumptions
-B) A universal rule independent of conditions
-C) A unit-conversion constant only
-D) A substitute for verified data
-
-
----
+27. After applying **functional groups**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -346,28 +350,24 @@ D) A substitute for verified data
 
 7. **analytical methods** is the central concept of §15.7; apply the definition, assumptions, and engineering consequence developed in that section.
 
-8. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+8. For §15.1, **Hydrocarbon Families and Carbon Skeletons**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-9. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+9. For §15.2, **Functional Groups and Nomenclature**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-10. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+10. For §15.3, **Organic Reaction Patterns**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-11. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+11. For §15.4, **Cells and Biological Organization**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-12. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+12. For §15.5, **Enzymes, Proteins, and Genetic Information**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-13. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+13. For §15.6, **Photosynthesis, Respiration, and Bioconversion**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-14. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+14. For §15.7, **Analytical Methods for Chemical and Biological Systems**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-15. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-16. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-17. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-18. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
+15. Locate the Handbook functional-group definitions, representative organic-property data, biochemical stoichiometry, and any reaction or biological-system relations referenced by the problem.
+16. Check elemental and charge balance, confirm molecular formulas and functional groups are chemically possible, and keep concentration or yield quantities within physically meaningful bounds.
+17. Use measured partition coefficients, solubilities, reaction yields, biodegradation data, or organism-specific values when provided instead of inferring performance solely from structural trends.
+18. Using structural features as a first-pass engineering screening method before consulting property data is guide-developed interpretation rather than a Handbook rule.
 19. **A.** The chapter applies **hydrocarbon families** only under its stated physical/model assumptions.
 
 20. **A.** The chapter applies **functional groups** only under its stated physical/model assumptions.
@@ -382,12 +382,9 @@ D) A substitute for verified data
 
 25. **A.** The chapter applies **analytical methods** only under its stated physical/model assumptions.
 
-26. **A.** The chapter applies **hydrocarbon families** only under its stated physical/model assumptions.
+26. **A.** For **hydrocarbon families** in *Organic Chemistry and Biological Systems*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter applies **functional groups** only under its stated physical/model assumptions.
-
-
----
+27. **A.** For **functional groups** in *Organic Chemistry and Biological Systems*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -416,29 +413,25 @@ D) A substitute for verified data
 
 ## Practice Problem Solutions
 
-1. 1. Alcohol.
+1. Alcohol. The hydroxyl functional group $(-OH)$ attached to carbon identifies the compound as an alcohol.
 
-2. 2. Carboxylic acid.
+2. Carboxylic acid. The $-COOH$ functional group identifies the compound as a carboxylic acid.
 
 3. 3. An alkene contains at least one C=C double bond; an alkane contains only single C–C bonds.
 
-4. 4. 6CO2+6H2O→C6H12O6+6O2.
+4. $\mathrm{6CO_2+6H_2O\rightarrow C_6H_{12}O_6+6O_2}$. The balanced equation represents the overall stoichiometry of photosynthesis.
 
-5. 5. Mitochondrion.
+5. Mitochondrion. In eukaryotic cells, mitochondria are the principal organelles for aerobic cellular respiration and ATP production.
 
-6. 6. Nucleus.
+6. Nucleus. In a eukaryotic cell, the nucleus contains most of the cell’s genomic DNA and organizes gene expression.
 
 7. 7. They alter biological reaction rates without changing the equilibrium position as a consumed reagent.
 
 8. 8. Aerobic uses oxygen; anaerobic proceeds without molecular oxygen and often produces reduced products such as methane.
 
-9. 9. Chromatography primarily separates components.
+9. Chromatography primarily separates mixture components by differential partitioning between a stationary phase and a mobile phase.
 
-10. 10. Atomic absorption spectrometry.
-
-
----
-
+10. Atomic absorption spectrometry. It quantifies selected elements by measuring absorption of element-specific wavelengths by free atoms. ---
 ## Quick Reference
 
 **Handbook anchor:** Chemistry and Biology pp. 87–94.

@@ -66,19 +66,17 @@ All of that starts here.
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-
-* 12.1 Define the imaginary unit $j$ and perform arithmetic with $j$
-* 12.2 Write complex numbers in rectangular form and identify real and
+- **12.1** Define the imaginary unit $j$ and perform arithmetic with $j$
+- **12.2** Write complex numbers in rectangular form and identify real and
   imaginary parts
-* 12.3 Add, subtract, multiply, and divide complex numbers in rectangular
+- **12.3** Add, subtract, multiply, and divide complex numbers in rectangular
   form
-* 12.4 Compute the complex conjugate and use it for division
-* 12.5 Convert between rectangular and polar form
-* 12.6 State and apply Euler's identity
-* 12.7 Multiply and divide complex numbers in polar form
-* 12.8 Find powers and roots using De Moivre's theorem
-* 12.9 Recognize the phasor representation of AC signals
-
+- **12.4** Compute the complex conjugate and use it for division
+- **12.5** Convert between rectangular and polar form
+- **12.6** State and apply Euler's identity
+- **12.7** Multiply and divide complex numbers in polar form
+- **12.8** Find powers and roots using De Moivre's theorem
+- **12.9** Recognize the phasor representation of AC signals
 ---
 
 ## Notation Used Here
@@ -437,6 +435,17 @@ This guide uses $j$ throughout.
 
 ---
 
+
+### Source Boundary
+
+**FE-Handbook-supported.** The equations, definitions, tables, and relations explicitly identified above are supported by the cited FE Reference Handbook 10.6 pages.
+
+**Externally supported.** Material in this chapter that extends beyond the Handbook is supported by the following external educational/standards references:
+
+- OpenStax, Precalculus 2e, §8.5, “Polar Form of Complex Numbers” — complex plane, modulus, argument, polar/rectangular conversion, products, quotients, powers, and roots.
+
+**Guide synthesis.** Exam-navigation advice, memory cues, sequencing, worked-example framing, and study heuristics are guide-developed synthesis unless separately attributed.
+
 ## Where This Goes Wrong
 
 **$j^2$ treated as $+1$.** $j^2 = -1$. Every time. This is the definition.
@@ -467,6 +476,13 @@ $-160°$ are the same phasor (differ by 360°). The Handbook and most circuit
 analyses express phase angles in $(-180°, 180°]$.
 
 ---
+
+
+### Ledger terminology alignment
+
+- **imaginary unit j** — the electrical-engineering symbol for $\sqrt{-1}$.
+- **nth root of a complex number** — any complex value whose $n$th power equals the original complex number.
+- **powers-of-j cycle** — the repeating sequence $j^0=1$, $j^1=j$, $j^2=-1$, $j^3=-j$, $j^4=1$.
 
 ## Key Terms
 

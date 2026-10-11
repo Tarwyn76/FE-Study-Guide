@@ -75,18 +75,16 @@ does when you try to eliminate.
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-
-* 8.1 Classify a linear system as consistent and independent, consistent and
+- **8.1** Classify a linear system as consistent and independent, consistent and
   dependent, or inconsistent
-* 8.2 Solve 2×2 systems by substitution and by elimination
-* 8.3 Solve 3×3 systems by Gaussian elimination with back substitution
-* 8.4 Recognize when a system has no solution or infinitely many solutions
+- **8.2** Solve 2×2 systems by substitution and by elimination
+- **8.3** Solve 3×3 systems by Gaussian elimination with back substitution
+- **8.4** Recognize when a system has no solution or infinitely many solutions
   from algebraic signals, in both 2×2 and 3×3 systems
-* 8.5 Evaluate a 2×2 determinant and apply Cramer's rule to a 2×2 system
-* 8.6 Set up a system of equations from a physical problem, checking the
+- **8.5** Evaluate a 2×2 determinant and apply Cramer's rule to a 2×2 system
+- **8.6** Set up a system of equations from a physical problem, checking the
   count of unknowns against the count of independent conditions
-* 8.7 Verify a solution by substituting into every original equation
-
+- **8.7** Verify a solution by substituting into every original equation
 ---
 
 ## Notation Used Here
@@ -811,6 +809,17 @@ worth over-learning.
 
 ---
 
+
+### Source Boundary
+
+**FE-Handbook-supported.** The equations, definitions, tables, and relations explicitly identified above are supported by the cited FE Reference Handbook 10.6 pages.
+
+**Externally supported.** Material in this chapter that extends beyond the Handbook is supported by the following external educational/standards references:
+
+- OpenStax, College Algebra 2e, §7.6, “Solving Systems with Gaussian Elimination” — augmented/coefficient matrices, row operations, row-echelon form, Gaussian elimination, back-substitution.
+
+**Guide synthesis.** Exam-navigation advice, memory cues, sequencing, worked-example framing, and study heuristics are guide-developed synthesis unless separately attributed.
+
 ## Where This Goes Wrong
 
 **Verifying in only one equation.** Back-substitution into the equation you
@@ -860,6 +869,11 @@ end. Rounding first creates small residuals that you then have to classify as
 harmless or not.
 
 ---
+
+
+### Ledger terminology alignment
+
+- **substitution (linear systems)** — solving one equation for one unknown and substituting that expression into the remaining equations.
 
 ## Key Terms
 

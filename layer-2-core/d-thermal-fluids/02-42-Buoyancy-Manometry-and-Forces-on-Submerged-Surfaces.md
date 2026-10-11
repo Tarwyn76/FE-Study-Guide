@@ -63,7 +63,7 @@ For multiple fluids, apply each fluid's own specific weight over its vertical he
 
 **Problem.** A water manometer shows 0.40 m difference. Find pressure difference.
 
-**Solution.** ΔP=ρgh=3.924 kPa.
+**Solution.** ΔP=ρgh=3.924 kPa. The governing model here is **§42.1 Simple Manometers**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of simple manometers.
 
 ---
 
@@ -81,7 +81,7 @@ Use absolute pressure for atmospheric/barometric relations.
 
 **Problem.** Mercury density is 13,600 kg/m³. A barometer column is 0.760 m and vapor pressure is neglected. Find atmospheric pressure.
 
-**Solution.** P=ρgh≈101.4 kPa.
+**Solution.** P=ρgh≈101.4 kPa. The governing model here is **§42.2 Barometers and Atmospheric Pressure**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of barometers and atmospheric pressure.
 
 ---
 
@@ -99,7 +99,7 @@ For a fully submerged object in a uniform fluid, buoyant-force magnitude depends
 
 **Problem.** A 0.020 m³ object is fully submerged in water. Find buoyant force.
 
-**Solution.** FB=1000(9.81)(0.020)=196.2 N.
+**Solution.** FB=1000(9.81)(0.020)=196.2 N. The governing model here is **§42.3 Buoyant Force and Archimedes' Principle**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of buoyant force and archimedes' principle.
 
 ---
 
@@ -117,7 +117,7 @@ For a body crossing two immiscible fluids, the total buoyancy is the sum of the 
 
 **Problem.** A floating object weighs 490.5 N in water. Find displaced volume.
 
-**Solution.** V=W/(ρg)=0.0500 m³.
+**Solution.** V=W/(ρg)=0.0500 m³. The governing model here is **§42.4 Floating Bodies**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of floating bodies.
 
 ---
 
@@ -125,7 +125,8 @@ For a body crossing two immiscible fluids, the total buoyancy is the sum of the 
 
 Hydrostatic pressure varies linearly with depth. The resultant force on a plane surface equals pressure at the area centroid times area when the atmospheric contribution cancels on both sides.
 
-Use vertical centroid depth \(h_C\), not slant distance, in \(P_C=ho gh_C\).
+Use vertical centroid depth \(h_C\), not slant distance, in \(P_C=
+ho gh_C\).
 
 \[F_R=P_CA=\rho g h_C A\]
 
@@ -135,7 +136,7 @@ Use vertical centroid depth \(h_C\), not slant distance, in \(P_C=ho gh_C\).
 
 **Problem.** A vertical gate area 2 m² has centroid 3 m below water surface. Find net hydrostatic force with atmospheric pressure both sides.
 
-**Solution.** FR=ρghC A=58.86 kN.
+**Solution.** FR=ρghC A=58.86 kN. The governing model here is **§42.5 Resultant Force on a Plane Submerged Surface**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of resultant force on a plane submerged surface.
 
 ---
 
@@ -153,7 +154,7 @@ The geometry must match the axis used for \(I_{xC}\).
 
 **Problem.** Why is center of pressure below centroid for a vertical submerged plate?
 
-**Solution.** Pressure increases with depth, weighting lower area more heavily.
+**Solution.** Pressure increases with depth, weighting lower area more heavily. The governing model here is **§42.6 Center of Pressure**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of center of pressure.
 
 ---
 
@@ -171,7 +172,7 @@ Separate the fluid problem from the rigid-body equilibrium problem rather than m
 
 **Problem.** If an object density is less than fluid density, what does it do if free?
 
-**Solution.** It rises until partially submerged and buoyancy equals weight.
+**Solution.** It rises until partially submerged and buoyancy equals weight. The governing model here is **§42.7 Combined Hydrostatic Force and Equilibrium**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of combined hydrostatic force and equilibrium.
 
 ---
 
@@ -181,17 +182,24 @@ Separate the fluid problem from the rigid-body equilibrium problem rather than m
 
 **Problem.** What must a manometer traversal preserve?
 
-**Solution.** Continuous pressure accounting across interfaces using each fluid density.
+**Solution.** Continuous pressure accounting across interfaces using each fluid density. The governing model here is **§42.7 Combined Hydrostatic Force and Equilibrium**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of combined hydrostatic force and equilibrium.
 
 ### Worked Example 9
 
 **Problem.** Where does buoyant force act?
 
-**Solution.** Through centroid of displaced fluid volume, the center of buoyancy.
+**Solution.** Through centroid of displaced fluid volume, the center of buoyancy. The governing model here is **§42.7 Combined Hydrostatic Force and Equilibrium**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of combined hydrostatic force and equilibrium.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — OpenStax University Physics Volume 1, Chapter 14 — Fluid Mechanics (https://openstax.org/books/university-physics-volume-1/pages/14-introduction) supports Archimedes’ principle, buoyancy, manometry/hydrostatics, floating bodies, and force-equilibrium checks.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Fluid Mechanics, printed pp. 183–185**.
 
@@ -318,20 +326,17 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. Which statement best describes **manometer**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
+26. A new problem requires **manometer**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which statement best describes **barometer**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
-
-
----
+27. After applying **barometer**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -363,17 +368,17 @@ D) It replaces conservation laws
 
 14. The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then apply **hydrostatic equilibrium**.
 
-15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Buoyancy, Manometry, and Forces on Submerged Surfaces**, apply this check specifically through **§42.1 Simple Manometers**, including that section's stated assumptions and reference quantities.
 
-16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Buoyancy, Manometry, and Forces on Submerged Surfaces**, apply this check specifically through **§42.2 Barometers and Atmospheric Pressure**, including that section's stated assumptions and reference quantities.
 
-17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Buoyancy, Manometry, and Forces on Submerged Surfaces**, apply this check specifically through **§42.3 Buoyant Force and Archimedes' Principle**, including that section's stated assumptions and reference quantities.
 
-18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Buoyancy, Manometry, and Forces on Submerged Surfaces**, apply this check specifically through **§42.4 Floating Bodies**, including that section's stated assumptions and reference quantities.
 
-19. **A.** The chapter applies **manometer** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+19. **A.** The chapter applies **manometer** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Buoyancy, Manometry, and Forces on Submerged Surfaces**, apply this check specifically through **§42.5 Resultant Force on a Plane Submerged Surface**, including that section's stated assumptions and reference quantities.
 
-20. **A.** The chapter applies **barometer** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+20. **A.** The chapter applies **barometer** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Buoyancy, Manometry, and Forces on Submerged Surfaces**, apply this check specifically through **§42.6 Center of Pressure**, including that section's stated assumptions and reference quantities.
 
 21. **A.** The chapter applies **buoyant force** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
@@ -385,12 +390,9 @@ D) It replaces conservation laws
 
 25. **A.** The chapter applies **hydrostatic equilibrium** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** The chapter applies **manometer** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+26. **A.** For **manometer** in *Buoyancy, Manometry, and Forces on Submerged Surfaces*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter applies **barometer** only after the state, geometry, flow/thermal regime, and assumptions are defined.
-
-
----
+27. **A.** For **barometer** in *Buoyancy, Manometry, and Forces on Submerged Surfaces*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -419,15 +421,15 @@ D) It replaces conservation laws
 
 ## Practice Problem Solutions
 
-1. ΔP=ρgh=3.924 kPa.
+1. ΔP=ρgh=3.924 kPa. This result follows from **§42.1 Simple Manometers**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-2. P=ρgh≈101.4 kPa.
+2. P=ρgh≈101.4 kPa. This result follows from **§42.2 Barometers and Atmospheric Pressure**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 3. FB=1000(9.81)(0.020)=196.2 N.
 
-4. V=W/(ρg)=0.0500 m³.
+4. V=W/(ρg)=0.0500 m³. This result follows from **§42.4 Floating Bodies**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-5. FR=ρghC A=58.86 kN.
+5. FR=ρghC A=58.86 kN. This result follows from **§42.5 Resultant Force on a Plane Submerged Surface**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 6. Pressure increases with depth, weighting lower area more heavily.
 
@@ -437,7 +439,7 @@ D) It replaces conservation laws
 
 9. Through centroid of displaced fluid volume, the center of buoyancy.
 
-10. Rigid-body equilibrium.
+10. Rigid-body equilibrium. This result follows from **§42.3 Buoyant Force and Archimedes' Principle**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 
 ---

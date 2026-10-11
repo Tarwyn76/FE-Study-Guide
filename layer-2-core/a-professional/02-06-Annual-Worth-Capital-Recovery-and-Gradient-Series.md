@@ -298,20 +298,17 @@ B) An unrelated calculation method
 C) A guaranteed outcome
 D) A substitute for engineering judgment
 
-26. Which choice best matches the chapter's use of **AW**?
-A) The section-specific engineering concept or criterion
-B) An unrelated calculation method
-C) A guaranteed outcome
-D) A substitute for engineering judgment
+26. A new problem requires **AW**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which choice best matches the chapter's use of **CR**?
-A) The section-specific engineering concept or criterion
-B) An unrelated calculation method
-C) A guaranteed outcome
-D) A substitute for engineering judgment
-
-
----
+27. After applying **CR**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -343,14 +340,10 @@ D) A substitute for engineering judgment
 
 14. It would apply the wrong professional or economic rule. First distinguish **Timing** from nearby concepts, then apply it under the section's stated conditions.
 
-15. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
-16. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
-17. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
-18. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
+15. Establish the analysis period, interest rate, uniform-series timing, and gradient start point before selecting the annual-worth or gradient factor; a one-period timing shift changes the equivalent annual result.
+16. Annual-worth and gradient factors assume specific timing conventions; using the right equation with the wrong series origin or gradient definition produces a systematically shifted result.
+17. A labeled cash-flow timeline makes the base annuity and gradient increments visible, preventing the gradient from being applied one period too early or too late.
+18. Check that the annual worth reproduces the same present worth over the stated analysis period and that each capital-recovery or gradient factor uses the correct period count.
 19. **A.** The chapter uses **AW** as the section-specific engineering concept or criterion.
 
 20. **A.** The chapter uses **CR** as the section-specific engineering concept or criterion.
@@ -365,12 +358,9 @@ D) A substitute for engineering judgment
 
 25. **A.** The chapter uses **Timing** as the section-specific engineering concept or criterion.
 
-26. **A.** The chapter uses **AW** as the section-specific engineering concept or criterion.
+26. **A.** For **AW** in *Annual Worth, Capital Recovery, and Gradient Series*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter uses **CR** as the section-specific engineering concept or criterion.
-
-
----
+27. **A.** For **CR** in *Annual Worth, Capital Recovery, and Gradient Series*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -420,7 +410,7 @@ D) A substitute for engineering judgment
 10. $(A/G,i,n)$.
 
 
----
+--- Why this fits: the question asks about identify the Handbook factor that converts G to A. --- The stated answer is the chapter concept that directly addresses that condition.
 
 ## Quick Reference
 

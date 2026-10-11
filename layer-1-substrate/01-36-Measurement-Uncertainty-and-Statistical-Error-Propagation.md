@@ -1195,6 +1195,13 @@ That sentence tells the next engineer what the number means.
 
 ## As the Handbook States It
 
+### Source Boundary
+
+- **FE-Handbook-supported** — The FE Reference Handbook pages cited by the ledger supply the equations, tables, definitions, or exam-scope statements identified for the split-required concepts in this chapter.
+- **Externally supported** — NIST Technical Note 1297, Guidelines for Evaluating and Expressing the Uncertainty of NIST Measurement Results (https://www.nist.gov/pml/nist-technical-note-1297) supports Type A/Type B uncertainty, combined standard uncertainty, sensitivity coefficients, covariance, and the law of propagation of uncertainty.
+- **Guide synthesis** — The worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, and explanatory derivations that go beyond the cited Handbook/external-source statements are instructional synthesis developed for this guide.
+
+
 > **Source verification.** Checked against the supplied *FE Reference Handbook
 > 10.6*, eighth printing, April 2026. Printed p. 69 begins *Propagation of
 > Error* and defines measurement error, systematic disturbance, random
@@ -1641,7 +1648,7 @@ D) be multiplied by two.
 
 24. **A.** Worst-case first-order bounds use the sum of magnitudes. (§36.4)
 
-25. **B.** $U=ku$. (§36.5)
+25. **B.** Expanded uncertainty equals the coverage factor times the standard uncertainty, so $U=ku$. (§36.5)
 
 26. **C.** Standard error decreases as $1/\sqrt n$. (§36.6)
 

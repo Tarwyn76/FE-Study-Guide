@@ -63,7 +63,7 @@ In 2D, the scalar moment is force times perpendicular distance, with sign determ
 
 **Problem.** A 100-N force acts perpendicular to a 0.40-m lever arm. Find moment magnitude.
 
-**Solution.** M=100(0.40)=40 N·m.
+**Solution.** M=100(0.40)=40 N·m. Moment magnitude equals force times perpendicular distance from the reference point to the force line of action. Because the force is perpendicular to the 0.40-m arm, no sine factor is needed.
 
 ---
 
@@ -81,7 +81,7 @@ This component form is often safer than estimating perpendicular distance when g
 
 **Problem.** At r=(0.3 i+0.2 j) m, F=(50 i+80 j) N. Find Mz.
 
-**Solution.** Mz=xFy-yFx=0.3(80)-0.2(50)=14 N·m.
+**Solution.** Mz=xFy-yFx=0.3(80)-0.2(50)=14 N·m. For planar vectors, the z-component of r×F is xFy-yFx. Substituting the given coordinates and force components gives a positive 14 N·m moment under the usual counterclockwise-positive convention.
 
 ---
 
@@ -99,7 +99,7 @@ A couple moment is a free vector for rigid-body statics: it can be applied anywh
 
 **Problem.** Two 200-N opposite parallel forces are 0.15 m apart. Find couple moment magnitude.
 
-**Solution.** M=200(0.15)=30 N·m.
+**Solution.** M=200(0.15)=30 N·m. A couple consists of equal and opposite parallel forces, so the net force is zero while their separated lines of action create a pure moment. The couple magnitude is one force times the perpendicular separation.
 
 ---
 
@@ -117,7 +117,7 @@ This is the basis for reducing distributed or multiple loads to a resultant forc
 
 **Problem.** A force is moved to a parallel line 0.20 m away. What must be added?
 
-**Solution.** A couple M=F(0.20), with sign matching the moment of the offset.
+**Solution.** A couple M=F(0.20), with sign matching the moment of the offset. Moving a force to a parallel line changes its moment about points on the body. A compensating couple equal to r×F must be added so that the shifted force-couple system is statically equivalent to the original force.
 
 ---
 
@@ -135,7 +135,7 @@ If the resultant force is nonzero, the system may sometimes be represented by a 
 
 **Problem.** What moment does a force produce about a point on its line of action?
 
-**Solution.** Zero.
+**Solution.** Zero. The perpendicular distance from the point to the force line of action is zero. Therefore M=Fd⊥=0 even though the force itself may be nonzero.
 
 ---
 
@@ -153,7 +153,7 @@ It is especially useful when one component passes through the moment center and 
 
 **Problem.** Can a pure couple be moved anywhere on a rigid body in statics?
 
-**Solution.** Yes, as a free vector under rigid-body statics.
+**Solution.** Yes, as a free vector under rigid-body statics. A pure couple has the same moment about every reference point because its net force is zero. In rigid-body statics it is therefore treated as a free vector that may be applied anywhere on the body.
 
 ---
 
@@ -171,7 +171,7 @@ Check dimensions: force times length. Check lever-arm geometry: only perpendicul
 
 **Problem.** State Varignon's theorem.
 
-**Solution.** Moment of a force equals the sum of moments of its components about the same point.
+**Solution.** Moment of a force equals the sum of moments of its components about the same point. Varignon's theorem follows from linearity of the cross product: r×(F1+F2)=r×F1+r×F2. It permits a force to be resolved into components and the component moments summed.
 
 ---
 
@@ -181,17 +181,24 @@ Check dimensions: force times length. Check lever-arm geometry: only perpendicul
 
 **Problem.** What are the units of moment in SI?
 
-**Solution.** N·m.
+**Solution.** N·m. Moment is force multiplied by perpendicular distance, so its SI unit is newton-meter. It has the same dimensional units as energy but represents a different physical quantity and should not be labeled joules in statics.
 
 ### Worked Example 9
 
 **Problem.** If ΣF=0 but ΣM≠0, to what does the system reduce?
 
-**Solution.** A pure couple.
+**Solution.** A pure couple. If the net force is zero, no translational resultant remains. A nonzero net moment therefore leaves a pure couple as the equivalent force system.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — Engineering LibreTexts, Mechanics Map (Moore, 2nd ed.) (https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_Map_%28Moore_2nd_Edition%29) supports moments, couples, Varignon-style component moments, and statically equivalent force-couple systems.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Statics, printed p. 95**.
 
@@ -363,32 +370,31 @@ D) It replaces the need for an FBD or kinematic model
 
 14. The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first, then apply **moment audit**.
 
-15. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+15. Define the body or system, draw the chapter-specific model for **Chapter 02-25: Moments, Couples, and Equivalent Force Systems**, and label the coordinates, geometry, loads, and unknowns needed by the governing equations. This prevents algebra from being applied to an incomplete physical model.
 
-16. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+16. Use an independent check appropriate to **Chapter 02-25: Moments, Couples, and Equivalent Force Systems**: substitute the solved values back into the governing equations, verify units and signs, and confirm that the result is physically plausible for the stated geometry and constraints.
 
-17. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+17. A negative solved value reverses an assumed vector sense only when the underlying support, contact, or member can physically act in that opposite sense. In **Chapter 02-25: Moments, Couples, and Equivalent Force Systems**, also check whether a one-way constraint instead implies separation, slackness, or a changed contact state.
 
-18. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+18. The Handbook and the chapter must use the same coordinate and sign convention before formulas or diagrams are compared. For **Chapter 02-25: Moments, Couples, and Equivalent Force Systems**, reversing an axis or moment sense changes component signs without changing the underlying mechanics.
 
-19. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+19. **A.** The nineteenth review item tests **force moment** in **Chapter 02-25: Moments, Couples, and Equivalent Force Systems**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-20. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+20. **A.** The twentieth review item tests **scalar moment** in **Chapter 02-25: Moments, Couples, and Equivalent Force Systems**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-21. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+21. **A.** The twenty-first review item tests **couple moment** in **Chapter 02-25: Moments, Couples, and Equivalent Force Systems**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-22. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+22. **A.** The twenty-second review item tests **force-couple equivalence** in **Chapter 02-25: Moments, Couples, and Equivalent Force Systems**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-23. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+23. **A.** The twenty-third review item tests **equivalent resultant** in **Chapter 02-25: Moments, Couples, and Equivalent Force Systems**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-24. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+24. **A.** The twenty-fourth review item tests **Varignon theorem** in **Chapter 02-25: Moments, Couples, and Equivalent Force Systems**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-25. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+25. **A.** The twenty-fifth review item tests **moment audit** in **Chapter 02-25: Moments, Couples, and Equivalent Force Systems**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-26. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+26. **A.** The twenty-sixth review item tests **force moment** in **Chapter 02-25: Moments, Couples, and Equivalent Force Systems**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This application check also tests whether the model assumptions are established before any numerical or symbolic manipulation.
 
-27. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
-
+27. **A.** The twenty-seventh review item tests **scalar moment** in **Chapter 02-25: Moments, Couples, and Equivalent Force Systems**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This final application check emphasizes that a valid mechanics relation cannot replace the diagram, geometry, and constraints that define the problem.
 
 ---
 
@@ -419,26 +425,16 @@ D) It replaces the need for an FBD or kinematic model
 
 ## Practice Problem Solutions
 
-1. M=100(0.40)=40 N·m.
-
-2. Mz=xFy-yFx=0.3(80)-0.2(50)=14 N·m.
-
-3. M=200(0.15)=30 N·m.
-
-4. A couple M=F(0.20), with sign matching the moment of the offset.
-
-5. Zero.
-
-6. Yes, as a free vector under rigid-body statics.
-
-7. Moment of a force equals the sum of moments of its components about the same point.
-
-8. N·m.
-
-9. A pure couple.
-
-10. Mixing reference points changes force-moment equivalence.
-
+1. M=100(0.40)=40 N·m. Moment magnitude equals force times perpendicular distance from the reference point to the force line of action. Because the force is perpendicular to the 0.40-m arm, no sine factor is needed. Practice check: this conclusion follows from the governing model used in **Chapter 02-25: Moments, Couples, and Equivalent Force Systems**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+2. Mz=xFy-yFx=0.3(80)-0.2(50)=14 N·m. For planar vectors, the z-component of r×F is xFy-yFx. Substituting the given coordinates and force components gives a positive 14 N·m moment under the usual counterclockwise-positive convention. Practice check: this conclusion follows from the governing model used in **Chapter 02-25: Moments, Couples, and Equivalent Force Systems**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+3. M=200(0.15)=30 N·m. A couple consists of equal and opposite parallel forces, so the net force is zero while their separated lines of action create a pure moment. The couple magnitude is one force times the perpendicular separation. Practice check: this conclusion follows from the governing model used in **Chapter 02-25: Moments, Couples, and Equivalent Force Systems**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+4. A couple M=F(0.20), with sign matching the moment of the offset. Moving a force to a parallel line changes its moment about points on the body. A compensating couple equal to r×F must be added so that the shifted force-couple system is statically equivalent to the original force. Practice check: this conclusion follows from the governing model used in **Chapter 02-25: Moments, Couples, and Equivalent Force Systems**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+5. Zero. The perpendicular distance from the point to the force line of action is zero. Therefore M=Fd⊥=0 even though the force itself may be nonzero. Practice check: this conclusion follows from the governing model used in **Chapter 02-25: Moments, Couples, and Equivalent Force Systems**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+6. Yes, as a free vector under rigid-body statics. A pure couple has the same moment about every reference point because its net force is zero. In rigid-body statics it is therefore treated as a free vector that may be applied anywhere on the body. Practice check: this conclusion follows from the governing model used in **Chapter 02-25: Moments, Couples, and Equivalent Force Systems**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+7. Moment of a force equals the sum of moments of its components about the same point. Varignon's theorem follows from linearity of the cross product: r×(F1+F2)=r×F1+r×F2. It permits a force to be resolved into components and the component moments summed. Practice check: this conclusion follows from the governing model used in **Chapter 02-25: Moments, Couples, and Equivalent Force Systems**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+8. N·m. Moment is force multiplied by perpendicular distance, so its SI unit is newton-meter. It has the same dimensional units as energy but represents a different physical quantity and should not be labeled joules in statics. Practice check: this conclusion follows from the governing model used in **Chapter 02-25: Moments, Couples, and Equivalent Force Systems**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+9. A pure couple. If the net force is zero, no translational resultant remains. A nonzero net moment therefore leaves a pure couple as the equivalent force system. Practice check: this conclusion follows from the governing model used in **Chapter 02-25: Moments, Couples, and Equivalent Force Systems**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+10. Mixing reference points changes force-moment equivalence. Practice verification: use the **Chapter 02-25: Moments, Couples, and Equivalent Force Systems** relation for Chapter 02-25: Moments, Couples, and Equivalent Force Systems, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
 ---
 

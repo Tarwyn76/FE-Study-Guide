@@ -67,7 +67,7 @@ Only the component of force along the differential displacement performs work. A
 
 **Problem.** A 50-N constant force acts through 4 m in its direction. Find work.
 
-**Solution.** U=200 J.
+**Solution.** U=200 J. Reasoning: this uses the **34.1 Work of a Force** model from Chapter 02-34: Work, Energy, and Power. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -89,7 +89,7 @@ Kinetic energy is scalar; direction of velocity does not appear directly. For ri
 
 **Problem.** A 2-kg particle moves at 5 m/s. Find kinetic energy.
 
-**Solution.** T=0.5(2)(25)=25 J.
+**Solution.** T=0.5(2)(25)=25 J. Reasoning: this uses the **34.2 Kinetic Energy** model from Chapter 02-34: Work, Energy, and Power. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -107,7 +107,7 @@ Only changes in potential energy affect energy equations; the zero datum is arbi
 
 **Problem.** A 3-kg mass rises 2 m. Find ΔVg using g=9.81.
 
-**Solution.** ΔV=3(9.81)(2)=58.86 J.
+**Solution.** ΔV=3(9.81)(2)=58.86 J. Reasoning: this uses the **34.3 Gravitational Potential Energy** model from Chapter 02-34: Work, Energy, and Power. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -129,7 +129,7 @@ relative to its undeformed length. Spring force is \(F_s=ks\), opposite the disp
 
 **Problem.** A spring k=400 N/m is compressed 0.10 m. Find stored energy.
 
-**Solution.** V=0.5(400)(0.1²)=2 J.
+**Solution.** V=0.5(400)(0.1²)=2 J. Reasoning: this uses the **34.4 Elastic Potential Energy** model from Chapter 02-34: Work, Energy, and Power. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -147,7 +147,7 @@ This method often avoids solving for acceleration and time.
 
 **Problem.** A force of 100 N acts on a point moving 3 m/s in same direction. Find power.
 
-**Solution.** P=300 W.
+**Solution.** P=300 W. Reasoning: this uses the **34.5 Work-Energy Equation** model from Chapter 02-34: Work, Energy, and Power. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -169,7 +169,7 @@ For a rotating torque, \(P=T\omega\). Efficiency compares useful output to input
 
 **Problem.** A shaft transmits 20 N·m at 100 rad/s. Find power.
 
-**Solution.** P=Tω=2000 W.
+**Solution.** P=Tω=2000 W. Reasoning: this uses the **34.6 Power and Efficiency** model from Chapter 02-34: Work, Energy, and Power. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -187,7 +187,7 @@ This bridges dynamics energy methods to structural deformation.
 
 **Problem.** If input power is 5 kW and output is 4 kW, find efficiency.
 
-**Solution.** η=0.80=80%.
+**Solution.** η=0.80=80%. Reasoning: this uses the **34.7 Elastic Strain Energy** model from Chapter 02-34: Work, Energy, and Power. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -197,17 +197,24 @@ This bridges dynamics energy methods to structural deformation.
 
 **Problem.** What sign does friction work usually have when it dissipates energy?
 
-**Solution.** Negative.
+**Solution.** Negative. Reasoning: this uses the **Integrated Worked Examples** model from Chapter 02-34: Work, Energy, and Power. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ### Worked Example 9
 
 **Problem.** Why can energy methods avoid solving time?
 
-**Solution.** They relate states through work and energy without requiring the detailed time history.
+**Solution.** They relate states through work and energy without requiring the detailed time history. Reasoning: this uses the **Integrated Worked Examples** model from Chapter 02-34: Work, Energy, and Power. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — Engineering LibreTexts, Introductory Dynamics (Steeneken, Delft University of Technology) (https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Introductory_Dynamics%3A_2D_Kinematics_and_Kinetics_of_Point_Masses_and_Rigid_Bodies_%28Steeneken%29) supports work, kinetic and potential energy, power, and elastic strain-energy methods.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Dynamics, printed pp. 107–108; Mechanics of Materials p. 138**.
 
@@ -379,32 +386,31 @@ D) It replaces the need for an FBD or kinematic model
 
 14. The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first, then apply **strain energy**.
 
-15. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+15. Create the chapter-specific mechanics model for **Chapter 02-34: Work, Energy, and Power** before solving: define the body or system, coordinates, geometry, loads, constraints, and unknowns that enter the governing equations.
 
-16. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+16. Independently verify a result in **Chapter 02-34: Work, Energy, and Power** by substituting it back into the governing equation, checking units and signs, and testing equilibrium, compatibility, or a limiting case as appropriate.
 
-17. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+17. A negative result reverses an assumed direction only when the physical element can act in that opposite sense. In **Chapter 02-34: Work, Energy, and Power**, also test whether unilateral contact, tension-only, or compression-only behavior changes the model.
 
-18. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+18. Match the Handbook coordinate and sign convention before comparing expressions in **Chapter 02-34: Work, Energy, and Power**. A different positive direction can reverse component or moment signs while leaving the physical state unchanged.
 
-19. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+19. **A.** The nineteenth review item tests **work** in **Chapter 02-34: Work, Energy, and Power**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-20. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+20. **A.** The twentieth review item tests **kinetic energy** in **Chapter 02-34: Work, Energy, and Power**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-21. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+21. **A.** The twenty-first review item tests **gravitational potential energy** in **Chapter 02-34: Work, Energy, and Power**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-22. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+22. **A.** The twenty-second review item tests **elastic potential energy** in **Chapter 02-34: Work, Energy, and Power**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-23. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+23. **A.** The twenty-third review item tests **work-energy principle** in **Chapter 02-34: Work, Energy, and Power**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-24. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+24. **A.** The twenty-fourth review item tests **power** in **Chapter 02-34: Work, Energy, and Power**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-25. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+25. **A.** The twenty-fifth review item tests **strain energy** in **Chapter 02-34: Work, Energy, and Power**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-26. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+26. **A.** The twenty-sixth review item tests **work** in **Chapter 02-34: Work, Energy, and Power**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This application check also tests whether the model assumptions are established before any numerical or symbolic manipulation.
 
-27. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
-
+27. **A.** The twenty-seventh review item tests **kinetic energy** in **Chapter 02-34: Work, Energy, and Power**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This final application check emphasizes that a valid mechanics relation cannot replace the diagram, geometry, and constraints that define the problem.
 
 ---
 
@@ -435,7 +441,7 @@ D) It replaces the need for an FBD or kinematic model
 
 ## Practice Problem Solutions
 
-1. U=200 J.
+1. U=200 J. Practice verification: use the **34.1 Work of a Force** relation for Chapter 02-34: Work, Energy, and Power, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
 2. T=0.5(2)(25)=25 J.
 
@@ -443,18 +449,17 @@ D) It replaces the need for an FBD or kinematic model
 
 4. V=0.5(400)(0.1²)=2 J.
 
-5. P=300 W.
+5. P=300 W. Practice verification: use the **34.5 Work-Energy Equation** relation for Chapter 02-34: Work, Energy, and Power, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
-6. P=Tω=2000 W.
+6. P=Tω=2000 W. Practice verification: use the **34.6 Power and Efficiency** relation for Chapter 02-34: Work, Energy, and Power, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
-7. η=0.80=80%.
+7. η=0.80=80%. Practice verification: use the **34.7 Elastic Strain Energy** relation for Chapter 02-34: Work, Energy, and Power, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
-8. Negative.
+8. Negative. Practice verification: use the **Integrated Worked Examples** relation for Chapter 02-34: Work, Energy, and Power, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
 9. They relate states through work and energy without requiring the detailed time history.
 
 10. U=0.5 Pδ=0.5(10000)(0.002)=10 J.
-
 
 ---
 

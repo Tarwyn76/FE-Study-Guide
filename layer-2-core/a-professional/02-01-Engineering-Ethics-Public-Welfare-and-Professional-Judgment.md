@@ -61,7 +61,7 @@ A useful exam rule is to separate inconvenience from danger. A design change tha
 
 ### Worked Example 1 — Apply the Rule
 
-Identify the governing professional duty before choosing an action. Separate what is known from what is assumed, then document the basis for the decision.
+Apply the governing duty for **01.1 Public Welfare Comes First**: separate established facts from assumptions, identify the controlling professional obligation, and document why the selected action satisfies it.
 
 ---
 
@@ -77,7 +77,7 @@ On an exam scenario, look for the phrase "qualified by education or experience."
 
 ### Worked Example 2 — Apply the Rule
 
-Do not let schedule or hierarchy substitute for competence, responsible charge, truthful communication, or the applicable legal authority.
+In **01.2 Competence and Scope of Practice**, schedule pressure or organizational hierarchy cannot displace the specific competence, responsible-charge, disclosure, or legal requirement that governs the decision.
 
 ---
 
@@ -93,8 +93,7 @@ The practical test is whether a reasonable decision maker would be misled by wha
 
 ### Worked Example 3 — Apply the Rule
 
-Classify the issue first. Contract, licensure/ethics, intellectual property, and liability can overlap, but they are not the same body of rules.
-
+Treat this as an ethics and public-welfare question first: identify the engineer's duty to the public, competence limits, and any disclosure obligation before considering contract terms.
 ---
 
 ## 01.4 Conflicts of Interest and Compensation
@@ -109,7 +108,7 @@ The exam often tests appearance as well as actual corruption. A disclosed relati
 
 ### Worked Example 4 — Apply the Rule
 
-Identify the governing professional duty before choosing an action. Separate what is known from what is assumed, then document the basis for the decision.
+Apply the governing duty for **01.4 Conflicts of Interest and Compensation**: separate established facts from assumptions, identify the controlling professional obligation, and document why the selected action satisfies it.
 
 ---
 
@@ -125,7 +124,7 @@ When confidentiality and public safety appear to conflict, identify the governin
 
 ### Worked Example 5 — Apply the Rule
 
-Do not let schedule or hierarchy substitute for competence, responsible charge, truthful communication, or the applicable legal authority.
+In **01.5 Confidentiality and Proper Use of Information**, schedule pressure or organizational hierarchy cannot displace the specific competence, responsible-charge, disclosure, or legal requirement that governs the decision.
 
 ---
 
@@ -141,8 +140,7 @@ On exam questions, distinguish a minor stylistic disagreement from a material di
 
 ### Worked Example 6 — Apply the Rule
 
-Classify the issue first. Contract, licensure/ethics, intellectual property, and liability can overlap, but they are not the same body of rules.
-
+Professional judgment begins after the controlling ethical duties are identified: separate facts from assumptions, identify stakeholders, obtain missing information, compare consequences, and document the rationale.
 ---
 
 ## 01.7 Professional Judgment in Difficult Cases
@@ -157,11 +155,18 @@ The point of professional judgment is not to escape the rules. It is to apply th
 
 ### Worked Example 7 — Apply the Rule
 
-Identify the governing professional duty before choosing an action. Separate what is known from what is assumed, then document the basis for the decision.
+Apply the governing duty for **01.7 Professional Judgment in Difficult Cases**: separate established facts from assumptions, identify the controlling professional obligation, and document why the selected action satisfies it.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — National Society of Professional Engineers (NSPE), Code of Ethics and Board of Ethical Review materials (https://www.nspe.org/career-growth/ethics/code-ethics) supports public-welfare priority, competence, truthful communication, conflicts, confidentiality, faithful-agent duties, and professional judgment.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. The principal Handbook basis for this chapter is **Ethics and Professional Practice / Rules of Professional Conduct**, printed p. **4–5**. Where the chapter adds interpretation, decision workflow, contract/liability context, or derived relationships not printed explicitly in that section, those additions are guide-developed and should not be mistaken for quoted Handbook language.
 
@@ -285,20 +290,17 @@ B) An unrelated calculation method
 C) A guaranteed outcome
 D) A substitute for engineering judgment
 
-26. Which choice best matches the chapter's use of **Public welfare**?
-A) The section-specific engineering concept or criterion
-B) An unrelated calculation method
-C) A guaranteed outcome
-D) A substitute for engineering judgment
+26. A new problem requires **Public welfare**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which choice best matches the chapter's use of **Competence**?
-A) The section-specific engineering concept or criterion
-B) An unrelated calculation method
-C) A guaranteed outcome
-D) A substitute for engineering judgment
-
-
----
+27. After applying **Competence**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -330,14 +332,10 @@ D) A substitute for engineering judgment
 
 14. It would apply the wrong professional or economic rule. First distinguish **Judgment** from nearby concepts, then apply it under the section's stated conditions.
 
-15. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
-16. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
-17. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
-18. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
+15. First verify the facts that affect public welfare: who could be harmed, how severe the consequence could be, and whether reliable evidence supports the suspected hazard.
+16. A rule can be applied correctly to the wrong ethical issue. The decision must still account for public safety, competence, conflicts of interest, disclosure duties, and the actual facts.
+17. A written chronology shows what the engineer knew, when it was known, what warnings were issued, and how responsible parties responded; that record matters when professional conduct is evaluated.
+18. Check that the proposed action protects public welfare, stays within the engineer's competence and authority, and is supported by documented facts rather than assumption.
 19. **A.** The chapter uses **Public welfare** as the section-specific engineering concept or criterion.
 
 20. **A.** The chapter uses **Competence** as the section-specific engineering concept or criterion.
@@ -352,12 +350,9 @@ D) A substitute for engineering judgment
 
 25. **A.** The chapter uses **Judgment** as the section-specific engineering concept or criterion.
 
-26. **A.** The chapter uses **Public welfare** as the section-specific engineering concept or criterion.
+26. **A.** For **Public welfare** in *Engineering Ethics, Public Welfare, and Professional Judgment*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter uses **Competence** as the section-specific engineering concept or criterion.
-
-
----
+27. **A.** For **Competence** in *Engineering Ethics, Public Welfare, and Professional Judgment*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 

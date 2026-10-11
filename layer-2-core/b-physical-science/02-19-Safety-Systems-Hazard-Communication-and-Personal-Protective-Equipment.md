@@ -186,6 +186,13 @@ Before calculation, identify the governing state, composition, reaction, exposur
 
 ## As the Handbook States It
 
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — OSHA, Hazard Prevention and Control / Hierarchy of Controls and PPE guidance (https://www.osha.gov/safety-management/hazard-prevention ; https://www.osha.gov/personal-protective-equipment) supports hierarchy of controls, engineering/administrative controls, PPE selection and limitations, and emergency/safety-system planning.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
+
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Safety pp. 15–20**.
 
 **Source boundary:** The Handbook directly defines safety, hazard, risk, JSA/JHA, NFPA-style hazard ratings, GHS label elements/pictograms, acute-toxicity categories, and SDS sections. Control hierarchy and detailed PPE-selection workflow are guide-developed safety practice.
@@ -212,6 +219,13 @@ Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, Apri
 
 
 ---
+
+
+### Ledger terminology alignment
+
+- **occupational exposure** — worker contact with a workplace chemical, physical, or biological agent by inhalation, skin contact, ingestion, or another route.
+- **safety hazard** — a source or condition with the potential to cause injury, illness, damage, or another adverse consequence.
+- **safety risk** — the combination of likelihood and consequence of harm arising from a safety hazard.
 
 ## Key Terms
 
@@ -326,20 +340,17 @@ B) A universal rule independent of conditions
 C) A unit-conversion constant only
 D) A substitute for verified data
 
-26. Which answer best describes **hazard and risk**?
-A) A conditional engineering concept used under stated assumptions
-B) A universal rule independent of conditions
-C) A unit-conversion constant only
-D) A substitute for verified data
+26. A new problem requires **hazard and risk**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which answer best describes **JSA**?
-A) A conditional engineering concept used under stated assumptions
-B) A universal rule independent of conditions
-C) A unit-conversion constant only
-D) A substitute for verified data
-
-
----
+27. After applying **JSA**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -357,28 +368,24 @@ D) A substitute for verified data
 
 7. **safety systems** is the central concept of §19.7; apply the definition, assumptions, and engineering consequence developed in that section.
 
-8. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+8. For §19.1, **Safety, Hazard, Risk, and Exposure**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-9. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+9. For §19.2, **Job Safety Analysis and Hazard Identification**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-10. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+10. For §19.3, **Hazard Controls and the Control Hierarchy**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-11. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+11. For §19.4, **Hazard Ratings and GHS Labels**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-12. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+12. For §19.5, **Safety Data Sheets**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-13. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+13. For §19.6, **PPE Selection and Limitations**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-14. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+14. For §19.7, **Safety Systems and Emergency Protection**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-15. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-16. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-17. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-18. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
+15. Locate the Handbook safety definitions and any tables relevant to hazard identification, exposure control, hazard communication, PPE, and the hierarchy of controls.
+16. Check that exposure quantities use the stated averaging period and units, and verify that the selected control actually addresses the identified hazard.
+17. Use measured exposure data, the current safety data sheet, equipment ratings, or applicable exposure limits whenever provided; these control over generalized assumptions about hazard severity.
+18. The stepwise review identify the hazard, apply the hierarchy of controls, then evaluate residual risk and PPE is guide-developed workflow.
 19. **A.** The chapter applies **hazard and risk** only under its stated physical/model assumptions.
 
 20. **A.** The chapter applies **JSA** only under its stated physical/model assumptions.
@@ -393,12 +400,9 @@ D) A substitute for verified data
 
 25. **A.** The chapter applies **safety systems** only under its stated physical/model assumptions.
 
-26. **A.** The chapter applies **hazard and risk** only under its stated physical/model assumptions.
+26. **A.** For **hazard and risk** in *Safety Systems, Hazard Communication, and Personal Protective Equipment*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter applies **JSA** only under its stated physical/model assumptions.
-
-
----
+27. **A.** For **JSA** in *Safety Systems, Hazard Communication, and Personal Protective Equipment*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -435,9 +439,9 @@ D) A substitute for verified data
 
 4. 4. Elimination, substitution, engineering controls, administrative/work-practice controls, PPE.
 
-5. 5. Section 8.
+5. Section 8. An SDS uses Section 8 for exposure controls and personal-protection information, including applicable exposure limits and PPE guidance.
 
-6. 6. Section 10.
+6. Section 10. An SDS uses Section 10 for stability and reactivity information, including incompatible materials and hazardous reactions.
 
 7. 7. Examples: product identifier, signal word, hazard statements, precautionary statements, pictograms, supplier identification.
 

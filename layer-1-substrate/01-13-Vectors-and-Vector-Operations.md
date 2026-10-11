@@ -60,19 +60,17 @@ computation.
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-
-* 13.1 Distinguish scalar and vector quantities and represent vectors in
+- **13.1** Distinguish scalar and vector quantities and represent vectors in
   component form
-* 13.2 Add and subtract vectors geometrically and algebraically
-* 13.3 Find the magnitude of a vector and compute a unit vector
-* 13.4 Resolve a vector into rectangular components in 2D and 3D
-* 13.5 Compute the dot product and use it to find the angle between vectors
+- **13.2** Add and subtract vectors geometrically and algebraically
+- **13.3** Find the magnitude of a vector and compute a unit vector
+- **13.4** Resolve a vector into rectangular components in 2D and 3D
+- **13.5** Compute the dot product and use it to find the angle between vectors
   and projections
-* 13.6 Test vectors for perpendicularity and parallelism using the dot product
-* 13.7 Compute the cross product using the determinant method
-* 13.8 Use the cross product to find a moment and a unit normal
-* 13.9 Apply the scalar and vector triple products
-
+- **13.6** Test vectors for perpendicularity and parallelism using the dot product
+- **13.7** Compute the cross product using the determinant method
+- **13.8** Use the cross product to find a moment and a unit normal
+- **13.9** Apply the scalar and vector triple products
 ---
 
 ## Notation Used Here
@@ -418,7 +416,7 @@ additional operations.
 
 ## As the Handbook States It
 
-> **Handbook 10.6, pp. 37–38** — *Mathematics / Vectors*
+> **Handbook 10.6, pp. 60–61** — *Mathematics / Vectors*
 
 The Handbook includes:
 
@@ -441,6 +439,18 @@ The Handbook includes:
 - The scalar triple product as coplanarity test
 
 ---
+
+
+### Source Boundary
+
+**FE-Handbook-supported.** The equations, definitions, tables, and relations explicitly identified above are supported by the cited FE Reference Handbook 10.6 pages.
+
+**Externally supported.** Material in this chapter that extends beyond the Handbook is supported by the following external educational/standards references:
+
+- OpenStax, Calculus Volume 3, §2.3, “The Dot Product” — dot products, projections, angles, and work.
+- OpenStax, Calculus Volume 3, §2.4, “The Cross Product” — cross products, right-hand rule, torque, and scalar triple product.
+
+**Guide synthesis.** Exam-navigation advice, memory cues, sequencing, worked-example framing, and study heuristics are guide-developed synthesis unless separately attributed.
 
 ## Where This Goes Wrong
 
@@ -474,6 +484,13 @@ $\hat{k}$ component. That is correct and expected — moments about an in-plane
 axis point out of plane.
 
 ---
+
+
+### Ledger terminology alignment
+
+- **resolution** — decomposing a vector into specified component directions.
+- **resultant of concurrent vectors** — the single vector equal to the vector sum of vectors whose lines of action meet at a common point.
+- **work by a constant force** — the scalar product $W=\mathbf F\cdot\mathbf d=Fd\cos\theta$.
 
 ## Key Terms
 

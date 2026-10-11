@@ -1098,6 +1098,16 @@ interpolation is safer than extrapolation; and why a numerical ODE solution must
 be checked for step-size sensitivity and stability.
 
 ---
+### Source boundary for split-required material
+**FE-Handbook-supported.** The formulas, definitions, tables, and methods identified in the verified Handbook table above are supported by the cited printed pages of the NCEES FE Reference Handbook 10.6.
+**Externally supported.** The following material extends beyond what is explicitly supplied in the Handbook and is supported by the listed educational references:
+- Engineering LibreTexts, “Differentiation of Univariate Functions” — finite-difference stencils and truncation error. https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Math_Numerics_and_Programming_%28for_Mechanical_Engineers%29/01%3A_Unit_I_-_%28Numerical%29_Calculus._Elementary_Programming_Concepts/03%3A_Differentiation/3.01%3A_Differentiation_of_Univariate_Functions
+- Mathematics LibreTexts (Chasnov), “Bisection Method” — bracketing, bisection, and interval-halving error control. https://math.libretexts.org/Bookshelves/Applied_Mathematics/Numerical_Methods_%28Chasnov%29/02%3A_Root_Finding/2.01%3A_Bisection_Method
+- OpenStax *Calculus Volume 1*, §4.9 “Newton’s Method” — Newton iteration and convergence limitations. https://openstax.org/books/calculus-volume-1/pages/4-9-newtons-method
+- Mathematics LibreTexts (Chasnov), “Numerical Methods — Initial Value Problem” — Euler’s method and local/global error order. https://math.libretexts.org/Bookshelves/Applied_Mathematics/Numerical_Methods_%28Chasnov%29/07%3A_Ordinary_Differential_Equations/7.02%3A_Numerical_Methods_-_Initial_Value_Problem
+
+**Guide synthesis.** Worked-example sequencing, FE-oriented lookup strategy, decision rules, cautions, mnemonics, and explanatory bridges are guide-developed synthesis unless specifically attributed above.
+
 
 ## Where This Goes Wrong
 

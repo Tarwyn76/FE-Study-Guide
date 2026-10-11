@@ -63,7 +63,7 @@ Phase compares the timing of sinusoids at the same frequency. A phase lead means
 
 **Problem.** A sinusoid has f=60 Hz. Find period and angular frequency.
 
-**Solution.** T=1/60=16.67 ms; ω=2π60=377 rad/s.
+**Solution.** T=1/60=16.67 ms; ω=2π60=377 rad/s. The governing model here is **§62.1 Sinusoidal Waveforms, Frequency, Period, and Phase**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of sinusoidal waveforms, frequency, period, and phase.
 
 ---
 
@@ -81,7 +81,7 @@ For a sinusoid, \(X_{rms}=X_{\max}/\sqrt2\).
 
 **Problem.** A sine wave has 170 V peak. Find RMS voltage.
 
-**Solution.** Vrms=170/√2=120.2 V.
+**Solution.** Vrms=170/√2=120.2 V. The governing model here is **§62.2 Average and RMS Values**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of average and rms values.
 
 ---
 
@@ -99,7 +99,7 @@ Do not mix peak-value phasors with RMS-value phasors in the same calculation.
 
 **Problem.** Convert 10∠30° to rectangular form.
 
-**Solution.** 8.66+j5.00.
+**Solution.** Using θ=30 deg, 10∠30°=8.66+j5.00 in rectangular form. The governing model here is **§62.3 Phasor Representation**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of phasor representation.
 
 ---
 
@@ -117,7 +117,7 @@ Admittance is the reciprocal of impedance and is often convenient for parallel n
 
 **Problem.** Find XL for L=0.10 H at 60 Hz.
 
-**Solution.** XL=ωL=37.7 Ω.
+**Solution.** XL=ωL=37.7 Ω. The governing model here is **§62.4 Impedance and Admittance of R, L, and C**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of impedance and admittance of r, l, and c.
 
 ---
 
@@ -135,7 +135,7 @@ Once equivalent impedance is known, apply phasor Ohm's law \(\underline V=\under
 
 **Problem.** Find XC for C=100 µF at 60 Hz.
 
-**Solution.** XC=1/(ωC)=26.5 Ω.
+**Solution.** XC=1/(ωC)=26.5 Ω. The governing model here is **§62.5 Series and Parallel AC Networks**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of series and parallel ac networks.
 
 ---
 
@@ -153,7 +153,7 @@ At series resonance the input impedance is purely resistive and minimum for the 
 
 **Problem.** For L=0.10 H and C=100 µF, find ideal resonant frequency.
 
-**Solution.** f0=1/(2π√LC)=50.3 Hz.
+**Solution.** f0=1/(2π√LC)=50.3 Hz. The governing model here is **§62.6 Series and Parallel Resonance**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of series and parallel resonance.
 
 ---
 
@@ -171,7 +171,7 @@ This condition cancels the load/source reactance pair and matches the resistive 
 
 **Problem.** A Thévenin impedance is 4+j3 Ω. What load impedance gives AC maximum power transfer?
 
-**Solution.** ZL=4-j3 Ω.
+**Solution.** ZL=4-j3 Ω. The governing model here is **§62.7 AC Maximum Power Transfer**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of ac maximum power transfer.
 
 ---
 
@@ -181,13 +181,13 @@ This condition cancels the load/source reactance pair and matches the resistive 
 
 **Problem.** A series circuit has R=10 Ω and XL-XC=10 Ω. Find |Z| and phase angle.
 
-**Solution.** |Z|=14.14 Ω; θ=45° inductive.
+**Solution.** |Z|=14.14 Ω; θ=45° inductive. The governing model here is **§62.7 AC Maximum Power Transfer**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of ac maximum power transfer.
 
 ### Worked Example 9
 
 **Problem.** A 120 V RMS source sees Z=30∠-20° Ω. Find current phasor.
 
-**Solution.** I=4∠20° A.
+**Solution.** I=4∠20° A. The governing model here is **§62.7 AC Maximum Power Transfer**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of ac maximum power transfer.
 
 ---
 
@@ -318,20 +318,17 @@ B) It is independent of topology and frequency
 C) It always represents a scalar DC quantity
 D) It replaces conservation laws
 
-26. Which statement is most accurate for **sinusoidal waveform**?
-A) It must be used with its defined reference and assumptions
-B) It is independent of topology and frequency
-C) It always represents a scalar DC quantity
-D) It replaces conservation laws
+26. A new problem requires **sinusoidal waveform**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which statement is most accurate for **RMS value**?
-A) It must be used with its defined reference and assumptions
-B) It is independent of topology and frequency
-C) It always represents a scalar DC quantity
-D) It replaces conservation laws
-
-
----
+27. After applying **RMS value**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -363,17 +360,17 @@ D) It replaces conservation laws
 
 14. Applying **AC maximum power transfer** without checking topology, reference direction, steady/transient condition, RMS/peak basis, or machine/circuit assumptions can produce a formally calculated but physically wrong result.
 
-15. Because the sign of power depends on the chosen voltage/current references and the passive sign convention.
+15. Because the sign of power depends on the chosen voltage/current references and the passive sign convention. For **Sinusoids, Phasors, Impedance, and Resonance**, apply this check specifically through **§62.1 Sinusoidal Waveforms, Frequency, Period, and Phase**, including that section's stated assumptions and reference quantities.
 
-16. Charge/KCL, energy/power balance, and where applicable KVL should close consistently.
+16. Charge/KCL, energy/power balance, and where applicable KVL should close consistently. For **Sinusoids, Phasors, Impedance, and Resonance**, apply this check specifically through **§62.2 Average and RMS Values**, including that section's stated assumptions and reference quantities.
 
-17. Whenever the Handbook supplies the relation or when the shortcut's assumptions are uncertain.
+17. Whenever the Handbook supplies the relation or when the shortcut's assumptions are uncertain. For **Sinusoids, Phasors, Impedance, and Resonance**, apply this check specifically through **§62.3 Phasor Representation**, including that section's stated assumptions and reference quantities.
 
-18. They represent different magnitudes; mixing them introduces factors such as √2 and gives incorrect power.
+18. They represent different magnitudes; mixing them introduces factors such as √2 and gives incorrect power. For **Sinusoids, Phasors, Impedance, and Resonance**, apply this check specifically through **§62.4 Impedance and Admittance of R, L, and C**, including that section's stated assumptions and reference quantities.
 
-19. **A.** The chapter treats **sinusoidal waveform** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
+19. **A.** The chapter treats **sinusoidal waveform** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **Sinusoids, Phasors, Impedance, and Resonance**, apply this check specifically through **§62.5 Series and Parallel AC Networks**, including that section's stated assumptions and reference quantities.
 
-20. **A.** The chapter treats **RMS value** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
+20. **A.** The chapter treats **RMS value** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **Sinusoids, Phasors, Impedance, and Resonance**, apply this check specifically through **§62.6 Series and Parallel Resonance**, including that section's stated assumptions and reference quantities.
 
 21. **A.** The chapter treats **phasor representation** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
 
@@ -385,12 +382,9 @@ D) It replaces conservation laws
 
 25. **A.** The chapter treats **AC maximum power transfer** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
 
-26. **A.** The chapter treats **sinusoidal waveform** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
+26. **A.** For **sinusoidal waveform** in *Sinusoids, Phasors, Impedance, and Resonance*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter treats **RMS value** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
-
-
----
+27. **A.** For **RMS value** in *Sinusoids, Phasors, Impedance, and Resonance*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -421,23 +415,23 @@ D) It replaces conservation laws
 
 1. T=1/60=16.67 ms; ω=2π60=377 rad/s.
 
-2. Vrms=170/√2=120.2 V.
+2. Vrms=170/√2=120.2 V. This result follows from **§62.2 Average and RMS Values**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-3. 8.66+j5.00.
+3. 8.66+j5.00. This result follows from **§62.3 Phasor Representation**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-4. XL=ωL=37.7 Ω.
+4. XL=ωL=37.7 Ω. This result follows from **§62.4 Impedance and Admittance of R, L, and C**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-5. XC=1/(ωC)=26.5 Ω.
+5. XC=1/(ωC)=26.5 Ω. This result follows from **§62.5 Series and Parallel AC Networks**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 6. f0=1/(2π√LC)=50.3 Hz.
 
-7. ZL=4-j3 Ω.
+7. ZL=4-j3 Ω. This result follows from **§62.7 AC Maximum Power Transfer**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 8. |Z|=14.14 Ω; θ=45° inductive.
 
-9. I=4∠20° A.
+9. I=4∠20° A. This result follows from **§62.2 Average and RMS Values**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-10. I=120/8=15 A.
+10. I=120/8=15 A. This result follows from **§62.3 Phasor Representation**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 
 ---

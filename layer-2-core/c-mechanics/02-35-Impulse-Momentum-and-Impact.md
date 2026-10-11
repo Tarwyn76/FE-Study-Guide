@@ -63,7 +63,7 @@ For a system of particles, total momentum is the vector sum over all particles.
 
 **Problem.** A 2-kg mass moves at 5 m/s. Find momentum.
 
-**Solution.** p=10 kg·m/s.
+**Solution.** p=10 kg·m/s. Reasoning: this uses the **35.1 Linear Momentum** model from Chapter 02-35: Impulse, Momentum, and Impact. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -81,7 +81,7 @@ This is especially effective for short-duration forces or when force is known as
 
 **Problem.** A constant 20-N force acts for 0.5 s. Find impulse.
 
-**Solution.** J=10 N·s.
+**Solution.** J=10 N·s. Reasoning: this uses the **35.2 Linear Impulse-Momentum** model from Chapter 02-35: Impulse, Momentum, and Impact. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -99,7 +99,7 @@ Internal forces cancel in the system sum, which is why collisions can often be a
 
 **Problem.** If the mass in Problem 1 receives -4 N·s impulse along its motion, find new velocity.
 
-**Solution.** p2=10-4=6; v2=3 m/s.
+**Solution.** p2=10-4=6; v2=3 m/s. Reasoning: this uses the **35.3 Conservation of Linear Momentum** model from Chapter 02-35: Impulse, Momentum, and Impact. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -117,7 +117,7 @@ Choose O to eliminate unknown impulsive forces when their lines of action pass t
 
 **Problem.** Two masses 2 kg at 4 m/s and 3 kg at 0 collide and stick. Find final velocity.
 
-**Solution.** v=(2·4)/(5)=1.6 m/s.
+**Solution.** v=(2·4)/(5)=1.6 m/s. Reasoning: this uses the **35.4 Angular Momentum and Angular Impulse** model from Chapter 02-35: Impulse, Momentum, and Impact. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -135,7 +135,7 @@ Momentum conservation alone provides one equation for two unknown post-impact ve
 
 **Problem.** For a perfectly elastic direct impact, what is e?
 
-**Solution.** 1.
+**Solution.** 1. Reasoning: this uses the **35.5 Direct Central Impact** model from Chapter 02-35: Impulse, Momentum, and Impact. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -153,7 +153,7 @@ Its physical range is \(0\le e\le1\).
 
 **Problem.** For no rebound in the restitution model, what is e?
 
-**Solution.** 0.
+**Solution.** 0. Reasoning: this uses the **35.6 Coefficient of Restitution** model from Chapter 02-35: Impulse, Momentum, and Impact. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -171,7 +171,7 @@ Most real impacts lie between these limits and dissipate mechanical energy.
 
 **Problem.** Can momentum be conserved while kinetic energy decreases?
 
-**Solution.** Yes; inelastic impacts conserve momentum when external impulse is negligible but dissipate kinetic energy.
+**Solution.** Yes; inelastic impacts conserve momentum when external impulse is negligible but dissipate kinetic energy. Reasoning: this uses the **35.7 Elastic, Inelastic, and Perfectly Plastic Impact** model from Chapter 02-35: Impulse, Momentum, and Impact. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -181,17 +181,24 @@ Most real impacts lie between these limits and dissipate mechanical energy.
 
 **Problem.** What is angular momentum of a particle about O?
 
-**Solution.** H_O=r×mv.
+**Solution.** H_O=r×mv. Reasoning: this uses the **Integrated Worked Examples** model from Chapter 02-35: Impulse, Momentum, and Impact. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ### Worked Example 9
 
 **Problem.** Why choose a moment point through an unknown impulsive reaction?
 
-**Solution.** That reaction has zero moment about the point and drops out of angular impulse-momentum.
+**Solution.** That reaction has zero moment about the point and drops out of angular impulse-momentum. Reasoning: this uses the **Integrated Worked Examples** model from Chapter 02-35: Impulse, Momentum, and Impact. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — Engineering LibreTexts, Introductory Dynamics (Steeneken, Delft University of Technology) (https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Introductory_Dynamics%3A_2D_Kinematics_and_Kinetics_of_Point_Masses_and_Rigid_Bodies_%28Steeneken%29) supports linear impulse-momentum, conservation of momentum, coefficient-of-restitution concepts, and impact classification.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Dynamics, printed pp. 108–109**.
 
@@ -363,32 +370,31 @@ D) It replaces the need for an FBD or kinematic model
 
 14. The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first, then apply **impact classification**.
 
-15. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+15. Create the chapter-specific mechanics model for **Chapter 02-35: Impulse, Momentum, and Impact** before solving: define the body or system, coordinates, geometry, loads, constraints, and unknowns that enter the governing equations.
 
-16. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+16. Independently verify a result in **Chapter 02-35: Impulse, Momentum, and Impact** by substituting it back into the governing equation, checking units and signs, and testing equilibrium, compatibility, or a limiting case as appropriate.
 
-17. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+17. A negative result reverses an assumed direction only when the physical element can act in that opposite sense. In **Chapter 02-35: Impulse, Momentum, and Impact**, also test whether unilateral contact, tension-only, or compression-only behavior changes the model.
 
-18. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+18. Match the Handbook coordinate and sign convention before comparing expressions in **Chapter 02-35: Impulse, Momentum, and Impact**. A different positive direction can reverse component or moment signs while leaving the physical state unchanged.
 
-19. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+19. **A.** The nineteenth review item tests **linear momentum** in **Chapter 02-35: Impulse, Momentum, and Impact**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-20. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+20. **A.** The twentieth review item tests **linear impulse** in **Chapter 02-35: Impulse, Momentum, and Impact**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-21. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+21. **A.** The twenty-first review item tests **momentum conservation** in **Chapter 02-35: Impulse, Momentum, and Impact**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-22. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+22. **A.** The twenty-second review item tests **angular impulse-momentum** in **Chapter 02-35: Impulse, Momentum, and Impact**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-23. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+23. **A.** The twenty-third review item tests **direct central impact** in **Chapter 02-35: Impulse, Momentum, and Impact**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-24. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+24. **A.** The twenty-fourth review item tests **coefficient of restitution** in **Chapter 02-35: Impulse, Momentum, and Impact**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-25. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+25. **A.** The twenty-fifth review item tests **impact classification** in **Chapter 02-35: Impulse, Momentum, and Impact**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-26. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+26. **A.** The twenty-sixth review item tests **linear momentum** in **Chapter 02-35: Impulse, Momentum, and Impact**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This application check also tests whether the model assumptions are established before any numerical or symbolic manipulation.
 
-27. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
-
+27. **A.** The twenty-seventh review item tests **linear impulse** in **Chapter 02-35: Impulse, Momentum, and Impact**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This final application check emphasizes that a valid mechanics relation cannot replace the diagram, geometry, and constraints that define the problem.
 
 ---
 
@@ -419,26 +425,25 @@ D) It replaces the need for an FBD or kinematic model
 
 ## Practice Problem Solutions
 
-1. p=10 kg·m/s.
+1. p=10 kg·m/s. Practice verification: use the **35.1 Linear Momentum** relation for Chapter 02-35: Impulse, Momentum, and Impact, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
-2. J=10 N·s.
+2. J=10 N·s. Practice verification: use the **35.2 Linear Impulse-Momentum** relation for Chapter 02-35: Impulse, Momentum, and Impact, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
 3. p2=10-4=6; v2=3 m/s.
 
 4. v=(2·4)/(5)=1.6 m/s.
 
-5. 1.
+5. 1. Practice verification: use the **35.5 Direct Central Impact** relation for Chapter 02-35: Impulse, Momentum, and Impact, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
-6. 0.
+6. 0. Practice verification: use the **35.6 Coefficient of Restitution** relation for Chapter 02-35: Impulse, Momentum, and Impact, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
 7. Yes; inelastic impacts conserve momentum when external impulse is negligible but dissipate kinetic energy.
 
-8. H_O=r×mv.
+8. H_O=r×mv. Practice verification: use the **Integrated Worked Examples** relation for Chapter 02-35: Impulse, Momentum, and Impact, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
 9. That reaction has zero moment about the point and drops out of angular impulse-momentum.
 
 10. 0≤e≤1 for the Handbook impact model.
-
 
 ---
 

@@ -63,7 +63,7 @@ Pure translation has the same velocity and acceleration for all points at an ins
 
 **Problem.** A point on a disk radius 0.5 m rotates at 8 rad/s. Find speed.
 
-**Solution.** v=rω=4 m/s.
+**Solution.** v=rω=4 m/s. Reasoning: this uses the **36.1 Translation and Rotation of a Rigid Body** model from Chapter 02-36: Rigid-Body Planar Kinematics and Kinetics. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -85,7 +85,7 @@ The tangential term depends on angular acceleration; the normal term points towa
 
 **Problem.** Same disk has α=3 rad/s². Find tangential acceleration at rim.
 
-**Solution.** at=rα=1.5 m/s².
+**Solution.** at=rα=1.5 m/s². Reasoning: this uses the **36.2 Relative Acceleration on a Rigid Body** model from Chapter 02-36: Rigid-Body Planar Kinematics and Kinetics. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -103,7 +103,7 @@ Point speed grows linearly with radius.
 
 **Problem.** Find normal acceleration at rim for Problem 1.
 
-**Solution.** an=rω²=0.5(64)=32 m/s².
+**Solution.** an=rω²=0.5(64)=32 m/s². Reasoning: this uses the **36.3 Fixed-Axis Rotation** model from Chapter 02-36: Rigid-Body Planar Kinematics and Kinetics. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -121,7 +121,7 @@ The instantaneous center is a velocity construction, not generally a zero-accele
 
 **Problem.** A solid disk has m=10 kg, I_G=0.5mr² with r=0.4 m. Find I_G.
 
-**Solution.** I=0.5(10)(0.16)=0.8 kg·m².
+**Solution.** I=0.5(10)(0.16)=0.8 kg·m². Reasoning: this uses the **36.4 Instantaneous Center of Zero Velocity** model from Chapter 02-36: Rigid-Body Planar Kinematics and Kinetics. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -139,7 +139,7 @@ The Handbook gives the mass parallel-axis theorem for shifting from a centroidal
 
 **Problem.** Shift the inertia in Problem 4 to a parallel axis 0.3 m away.
 
-**Solution.** I=0.8+10(0.3²)=1.7 kg·m².
+**Solution.** I=0.8+10(0.3²)=1.7 kg·m². Reasoning: this uses the **36.5 Mass Moment of Inertia** model from Chapter 02-36: Rigid-Body Planar Kinematics and Kinetics. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -161,7 +161,7 @@ The force and moment equations are coupled through the body's constraints and ge
 
 **Problem.** A body has m=5 kg, vG=2 m/s, IG=0.4 kg·m², ω=3 rad/s. Find kinetic energy.
 
-**Solution.** T=0.5(5)(4)+0.5(0.4)(9)=11.8 J.
+**Solution.** T=0.5(5)(4)+0.5(0.4)(9)=11.8 J. Reasoning: this uses the **36.6 Rigid-Body Equations of Motion** model from Chapter 02-36: Rigid-Body Planar Kinematics and Kinetics. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -179,7 +179,7 @@ Angular impulse-momentum can be written about the mass center or another suitabl
 
 **Problem.** Is an instantaneous center generally a zero-acceleration point?
 
-**Solution.** No; it is a zero-velocity point at that instant.
+**Solution.** No; it is a zero-velocity point at that instant. Reasoning: this uses the **36.7 Rigid-Body Energy and Angular Momentum** model from Chapter 02-36: Rigid-Body Planar Kinematics and Kinetics. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -189,17 +189,24 @@ Angular impulse-momentum can be written about the mass center or another suitabl
 
 **Problem.** State the planar rotational equation about G.
 
-**Solution.** ΣM_G=I_G α.
+**Solution.** ΣM_G=I_G α. Reasoning: this uses the **Integrated Worked Examples** model from Chapter 02-36: Rigid-Body Planar Kinematics and Kinetics. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ### Worked Example 9
 
 **Problem.** How many instant centers exist for n links?
 
-**Solution.** n(n−1)/2.
+**Solution.** n(n−1)/2. Reasoning: this uses the **Integrated Worked Examples** model from Chapter 02-36: Rigid-Body Planar Kinematics and Kinetics. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — Engineering LibreTexts, Introductory Dynamics (Steeneken, Delft University of Technology) (https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Introductory_Dynamics%3A_2D_Kinematics_and_Kinetics_of_Point_Masses_and_Rigid_Bodies_%28Steeneken%29) supports rigid-body planar translation/rotation, relative velocity/acceleration, rigid-body kinetics, and motion constraints.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Dynamics, printed pp. 110–112**.
 
@@ -373,32 +380,31 @@ D) It replaces the need for an FBD or kinematic model
 
 14. The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first, then apply **rigid-body energy**.
 
-15. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+15. Create the chapter-specific mechanics model for **Chapter 02-36: Rigid-Body Planar Kinematics and Kinetics** before solving: define the body or system, coordinates, geometry, loads, constraints, and unknowns that enter the governing equations.
 
-16. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+16. Independently verify a result in **Chapter 02-36: Rigid-Body Planar Kinematics and Kinetics** by substituting it back into the governing equation, checking units and signs, and testing equilibrium, compatibility, or a limiting case as appropriate.
 
-17. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+17. A negative result reverses an assumed direction only when the physical element can act in that opposite sense. In **Chapter 02-36: Rigid-Body Planar Kinematics and Kinetics**, also test whether unilateral contact, tension-only, or compression-only behavior changes the model.
 
-18. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+18. Match the Handbook coordinate and sign convention before comparing expressions in **Chapter 02-36: Rigid-Body Planar Kinematics and Kinetics**. A different positive direction can reverse component or moment signs while leaving the physical state unchanged.
 
-19. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+19. **A.** The nineteenth review item tests **rigid-body kinematics** in **Chapter 02-36: Rigid-Body Planar Kinematics and Kinetics**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-20. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+20. **A.** The twentieth review item tests **rigid-body acceleration** in **Chapter 02-36: Rigid-Body Planar Kinematics and Kinetics**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-21. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+21. **A.** The twenty-first review item tests **fixed-axis rotation** in **Chapter 02-36: Rigid-Body Planar Kinematics and Kinetics**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-22. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+22. **A.** The twenty-second review item tests **instantaneous center** in **Chapter 02-36: Rigid-Body Planar Kinematics and Kinetics**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-23. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+23. **A.** The twenty-third review item tests **mass moment of inertia** in **Chapter 02-36: Rigid-Body Planar Kinematics and Kinetics**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-24. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+24. **A.** The twenty-fourth review item tests **rigid-body kinetics** in **Chapter 02-36: Rigid-Body Planar Kinematics and Kinetics**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-25. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+25. **A.** The twenty-fifth review item tests **rigid-body energy** in **Chapter 02-36: Rigid-Body Planar Kinematics and Kinetics**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-26. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+26. **A.** The twenty-sixth review item tests **rigid-body kinematics** in **Chapter 02-36: Rigid-Body Planar Kinematics and Kinetics**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This application check also tests whether the model assumptions are established before any numerical or symbolic manipulation.
 
-27. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
-
+27. **A.** The twenty-seventh review item tests **rigid-body acceleration** in **Chapter 02-36: Rigid-Body Planar Kinematics and Kinetics**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This final application check emphasizes that a valid mechanics relation cannot replace the diagram, geometry, and constraints that define the problem.
 
 ---
 
@@ -429,9 +435,9 @@ D) It replaces the need for an FBD or kinematic model
 
 ## Practice Problem Solutions
 
-1. v=rω=4 m/s.
+1. v=rω=4 m/s. Practice verification: use the **36.1 Translation and Rotation of a Rigid Body** relation for Chapter 02-36: Rigid-Body Planar Kinematics and Kinetics, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
-2. at=rα=1.5 m/s².
+2. at=rα=1.5 m/s². Practice verification: use the **36.2 Relative Acceleration on a Rigid Body** relation for Chapter 02-36: Rigid-Body Planar Kinematics and Kinetics, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
 3. an=rω²=0.5(64)=32 m/s².
 
@@ -443,12 +449,11 @@ D) It replaces the need for an FBD or kinematic model
 
 7. No; it is a zero-velocity point at that instant.
 
-8. ΣM_G=I_G α.
+8. ΣM_G=I_G α. Practice verification: use the **Integrated Worked Examples** relation for Chapter 02-36: Rigid-Body Planar Kinematics and Kinetics, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
-9. n(n−1)/2.
+9. n(n−1)/2. Practice verification: use the **Integrated Worked Examples** relation for Chapter 02-36: Rigid-Body Planar Kinematics and Kinetics, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
 10. Distance between every pair of material points.
-
 
 ---
 

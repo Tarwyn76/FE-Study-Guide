@@ -65,20 +65,19 @@ logarithm.
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-
-* 5.1 Apply the seven laws of exponents to simplify expressions with
+- **5.1** Apply the seven laws of exponents to simplify expressions with
   integer, fractional, and negative exponents
-* 5.2 Convert between radical notation and fractional exponent notation
-* 5.3 Simplify expressions containing radicals
-* 5.4 Define the exponential function $b^x$ for any base $b > 0$, $b \ne 1$
-* 5.5 Define $e$ and the natural exponential function $e^x$
-* 5.6 Solve exponential equations by matching bases and by using logarithms
-* 5.7 Define the logarithm as the inverse of the exponential
-* 5.8 Apply the four laws of logarithms to expand and compress expressions
-* 5.9 Evaluate common logarithms (base 10) and natural logarithms (base $e$)
-* 5.10 Apply the change-of-base formula
-* 5.11 Solve logarithmic equations
-* 5.12 Recognize and apply exponential and logarithmic models in engineering
+- **5.2** Convert between radical notation and fractional exponent notation
+- **5.3** Simplify expressions containing radicals
+- **5.4** Define the exponential function $b^x$ for any base $b > 0$, $b \ne 1$
+- **5.5** Define $e$ and the natural exponential function $e^x$
+- **5.6** Solve exponential equations by matching bases and by using logarithms
+- **5.7** Define the logarithm as the inverse of the exponential
+- **5.8** Apply the four laws of logarithms to expand and compress expressions
+- **5.9** Evaluate common logarithms (base 10) and natural logarithms (base $e$)
+- **5.10** Apply the change-of-base formula
+- **5.11** Solve logarithmic equations
+- **5.12** Recognize and apply exponential and logarithmic models in engineering
   contexts
 
 ---
@@ -730,6 +729,19 @@ conversion factor between $\ln$ and $\log_{10}$.
 
 ---
 
+
+### Source Boundary
+
+**FE-Handbook-supported.** The equations, definitions, tables, and relations explicitly identified above are supported by the cited FE Reference Handbook 10.6 pages.
+
+**Externally supported.** Material in this chapter that extends beyond the Handbook is supported by the following external educational/standards references:
+
+- OpenStax, College Algebra 2e, §1.3, “Radicals and Rational Exponents” — radicals, rational exponents, simplification, rationalization.
+- OpenStax, College Algebra 2e, §6.3, “Logarithmic Functions” — logarithm definitions, common/natural logs, inverse exponential relationship.
+- NIST SP 811, Ch. 8 §8.7 — logarithmic level quantities and bel/decibel units.
+
+**Guide synthesis.** Exam-navigation advice, memory cues, sequencing, worked-example framing, and study heuristics are guide-developed synthesis unless separately attributed.
+
 ## Where This Goes Wrong
 
 **Negative exponent meaning "negative result."** $4^{-2} = 1/16$, not $-16$.
@@ -772,6 +784,13 @@ of the initial value, not 63.2% — that's the value at $t = \tau$ of the
 *rising* form $1 - e^{-t/\tau}$.
 
 ---
+
+
+### Ledger terminology alignment
+
+- **Euler's number e** — the natural-logarithm base, approximately $2.71828$.
+- **five-tau rule** — a first-order exponential response is effectively settled after about five time constants ($5\tau$).
+- **time constant tau** — the characteristic time $\tau$ in a first-order exponential response.
 
 ## Key Terms
 

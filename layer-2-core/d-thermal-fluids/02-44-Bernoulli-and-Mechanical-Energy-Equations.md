@@ -63,7 +63,7 @@ Each term has units of length and can be compared on one energy-line diagram.
 
 **Problem.** Water pressure head is 12 m. Find gauge pressure using γ=9810 N/m³.
 
-**Solution.** P=117.7 kPa.
+**Solution.** P=117.7 kPa. The governing model here is **§44.1 Pressure, Velocity, and Elevation Head**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of pressure, velocity, and elevation head.
 
 ---
 
@@ -81,7 +81,7 @@ It is not a universal pressure equation. If losses or machinery matter, use the 
 
 **Problem.** Velocity is 6 m/s. Find velocity head.
 
-**Solution.** v²/(2g)=1.835 m.
+**Solution.** v²/(2g)=1.835 m. The governing model here is **§44.2 Bernoulli Equation and Its Assumptions**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of bernoulli equation and its assumptions.
 
 ---
 
@@ -99,7 +99,7 @@ In a constant-diameter pipe without pumps/turbines, both lines decrease in the f
 
 **Problem.** A large reservoir free surface is 20 m above a nozzle, both at atmospheric pressure; neglect losses. Find exit speed.
 
-**Solution.** v=sqrt(2gΔz)=19.81 m/s.
+**Solution.** v=sqrt(2gΔz)=19.81 m/s. The governing model here is **§44.3 Hydraulic Grade Line and Energy Grade Line**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of hydraulic grade line and energy grade line.
 
 ---
 
@@ -117,7 +117,7 @@ Keep the sign convention explicit.
 
 **Problem.** A pump adds 15 m head and total losses are 5 m between equal reservoirs. What elevation rise is possible if velocities negligible?
 
-**Solution.** Δz=10 m.
+**Solution.** Δz=10 m. The governing model here is **§44.4 Mechanical-Energy Equation with Head Loss**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of mechanical-energy equation with head loss.
 
 ---
 
@@ -135,7 +135,7 @@ Use continuity together with Bernoulli when cross-sectional areas differ.
 
 **Problem.** For constant-diameter horizontal pipe with 4 m head loss, what is pressure drop in water?
 
-**Solution.** ΔP=ρg hL=39.24 kPa.
+**Solution.** ΔP=ρg hL=39.24 kPa. The governing model here is **§44.5 Pressure-Velocity-Elevation Tradeoffs**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of pressure-velocity-elevation tradeoffs.
 
 ---
 
@@ -153,7 +153,7 @@ This is a reminder that hydrostatic and Bernoulli relations may fail when signif
 
 **Problem.** What separates EGL from HGL?
 
-**Solution.** Velocity head v²/(2g).
+**Solution.** Velocity head v²/(2g). The governing model here is **§44.6 Euler Equation for Local Acceleration**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of euler equation for local acceleration.
 
 ---
 
@@ -171,7 +171,7 @@ If any answer is no, use the more general balance or include the missing term.
 
 **Problem.** When is Bernoulli invalid without extra terms?
 
-**Solution.** When losses, shaft work, compressibility, unsteadiness, or violated streamline assumptions matter.
+**Solution.** When losses, shaft work, compressibility, unsteadiness, or violated streamline assumptions matter. The governing model here is **§44.7 Energy-Equation Selection Checklist**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of energy-equation selection checklist.
 
 ---
 
@@ -181,17 +181,24 @@ If any answer is no, use the more general balance or include the missing term.
 
 **Problem.** If area decreases in incompressible steady flow, what happens to velocity?
 
-**Solution.** It increases.
+**Solution.** It increases. The governing model here is **§44.7 Energy-Equation Selection Checklist**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of energy-equation selection checklist.
 
 ### Worked Example 9
 
 **Problem.** What does a pump do to EGL?
 
-**Solution.** Raises it by pump head.
+**Solution.** Raises it by pump head. The governing model here is **§44.7 Energy-Equation Selection Checklist**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of energy-equation selection checklist.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — OpenStax University Physics Volume 1, Chapter 14 — Fluid Mechanics (https://openstax.org/books/university-physics-volume-1/pages/14-introduction) supports Bernoulli’s equation, pressure-velocity-elevation tradeoffs, and conservation-of-energy interpretation for flowing fluids.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Fluid Mechanics, printed pp. 185–186**.
 
@@ -318,20 +325,17 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. Which statement best describes **fluid head**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
+26. A new problem requires **fluid head**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which statement best describes **Bernoulli equation**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
-
-
----
+27. After applying **Bernoulli equation**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -363,17 +367,17 @@ D) It replaces conservation laws
 
 14. The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then apply **energy-equation audit**.
 
-15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Bernoulli and Mechanical-Energy Equations**, apply this check specifically through **§44.1 Pressure, Velocity, and Elevation Head**, including that section's stated assumptions and reference quantities.
 
-16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Bernoulli and Mechanical-Energy Equations**, apply this check specifically through **§44.2 Bernoulli Equation and Its Assumptions**, including that section's stated assumptions and reference quantities.
 
-17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Bernoulli and Mechanical-Energy Equations**, apply this check specifically through **§44.3 Hydraulic Grade Line and Energy Grade Line**, including that section's stated assumptions and reference quantities.
 
-18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Bernoulli and Mechanical-Energy Equations**, apply this check specifically through **§44.4 Mechanical-Energy Equation with Head Loss**, including that section's stated assumptions and reference quantities.
 
-19. **A.** The chapter applies **fluid head** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+19. **A.** The chapter applies **fluid head** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Bernoulli and Mechanical-Energy Equations**, apply this check specifically through **§44.5 Pressure-Velocity-Elevation Tradeoffs**, including that section's stated assumptions and reference quantities.
 
-20. **A.** The chapter applies **Bernoulli equation** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+20. **A.** The chapter applies **Bernoulli equation** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Bernoulli and Mechanical-Energy Equations**, apply this check specifically through **§44.6 Euler Equation for Local Acceleration**, including that section's stated assumptions and reference quantities.
 
 21. **A.** The chapter applies **hydraulic grade line** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
@@ -385,12 +389,9 @@ D) It replaces conservation laws
 
 25. **A.** The chapter applies **energy-equation audit** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** The chapter applies **fluid head** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+26. **A.** For **fluid head** in *Bernoulli and Mechanical-Energy Equations*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter applies **Bernoulli equation** only after the state, geometry, flow/thermal regime, and assumptions are defined.
-
-
----
+27. **A.** For **Bernoulli equation** in *Bernoulli and Mechanical-Energy Equations*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -419,25 +420,25 @@ D) It replaces conservation laws
 
 ## Practice Problem Solutions
 
-1. P=117.7 kPa.
+1. P=117.7 kPa. This result follows from **§44.1 Pressure, Velocity, and Elevation Head**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-2. v²/(2g)=1.835 m.
+2. v²/(2g)=1.835 m. This result follows from **§44.2 Bernoulli Equation and Its Assumptions**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 3. v=sqrt(2gΔz)=19.81 m/s.
 
-4. Δz=10 m.
+4. Δz=10 m. This result follows from **§44.4 Mechanical-Energy Equation with Head Loss**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-5. ΔP=ρg hL=39.24 kPa.
+5. ΔP=ρg hL=39.24 kPa. This result follows from **§44.5 Pressure-Velocity-Elevation Tradeoffs**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-6. Velocity head v²/(2g).
+6. Velocity head v²/(2g). This result follows from **§44.6 Euler Equation for Local Acceleration**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 7. When losses, shaft work, compressibility, unsteadiness, or violated streamline assumptions matter.
 
-8. It increases.
+8. It increases. This result follows from **§44.1 Pressure, Velocity, and Elevation Head**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-9. Raises it by pump head.
+9. Raises it by pump head. This result follows from **§44.2 Bernoulli Equation and Its Assumptions**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-10. Decreases it in the flow direction.
+10. Decreases it in the flow direction. This result follows from **§44.3 Hydraulic Grade Line and Energy Grade Line**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 
 ---

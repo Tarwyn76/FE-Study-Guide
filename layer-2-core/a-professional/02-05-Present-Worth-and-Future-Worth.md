@@ -296,20 +296,17 @@ B) An unrelated calculation method
 C) A guaranteed outcome
 D) A substitute for engineering judgment
 
-26. Which choice best matches the chapter's use of **Single PW**?
-A) The section-specific engineering concept or criterion
-B) An unrelated calculation method
-C) A guaranteed outcome
-D) A substitute for engineering judgment
+26. A new problem requires **Single PW**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which choice best matches the chapter's use of **Single FW**?
-A) The section-specific engineering concept or criterion
-B) An unrelated calculation method
-C) A guaranteed outcome
-D) A substitute for engineering judgment
-
-
----
+27. After applying **Single FW**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -341,14 +338,10 @@ D) A substitute for engineering judgment
 
 14. It would apply the wrong professional or economic rule. First distinguish **FW criterion** from nearby concepts, then apply it under the section's stated conditions.
 
-15. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
-16. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
-17. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
-18. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
+15. First verify the comparison date, interest rate, number of periods, and whether each amount is a single payment or a uniform series before selecting a present- or future-worth factor.
+16. A correct P/F, F/P, P/A, or F/A factor gives the wrong result if the conversion direction or series timing does not match the cash-flow diagram.
+17. A timeline shows whether the first payment occurs at time zero or at the end of period one and prevents an off-by-one error in the period count.
+18. Reconstruct the equivalent amount in the opposite direction when practical and confirm that the factor, period count, units, and cash-flow signs are internally consistent.
 19. **A.** The chapter uses **Single PW** as the section-specific engineering concept or criterion.
 
 20. **A.** The chapter uses **Single FW** as the section-specific engineering concept or criterion.
@@ -363,12 +356,9 @@ D) A substitute for engineering judgment
 
 25. **A.** The chapter uses **FW criterion** as the section-specific engineering concept or criterion.
 
-26. **A.** The chapter uses **Single PW** as the section-specific engineering concept or criterion.
+26. **A.** For **Single PW** in *Present Worth and Future Worth*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter uses **Single FW** as the section-specific engineering concept or criterion.
-
-
----
+27. **A.** For **Single FW** in *Present Worth and Future Worth*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -411,10 +401,8 @@ D) A substitute for engineering judgment
 
 7. Economic comparison must include all relevant equivalent cash flows, not only acquisition cost.
 
-8. $(P/A,i,n)$.
-
-9. $(F/A,i,n)$.
-
+8. $(P/A,i,n)$. Why this fits: the question asks about state the factor converting A to P. The stated answer is the chapter concept that directly addresses that condition.
+9. $(F/A,i,n)$. Why this fits: the question asks about state the factor converting A to F. The stated answer is the chapter concept that directly addresses that condition.
 10. Multiplying every equivalent present value by the same positive $(F/P,i,n)$ factor preserves ranking.
 
 

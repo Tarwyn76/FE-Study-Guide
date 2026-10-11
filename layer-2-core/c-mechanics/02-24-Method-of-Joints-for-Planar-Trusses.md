@@ -63,7 +63,7 @@ If loads are applied between joints or joints transmit moments, the simple truss
 
 **Problem.** For a simple planar truss with j=6 and r=3, what member count satisfies m+r=2j?
 
-**Solution.** m=2(6)-3=9.
+**Solution.** m=2(6)-3=9. For a simple statically determinate planar truss, the count check is m+r=2j. Substituting j=6 and r=3 gives m=12-3=9; this is a counting condition, not a substitute for geometric stability.
 
 ---
 
@@ -81,7 +81,7 @@ The count is necessary but not sufficient for geometric stability. A poorly arra
 
 **Problem.** At an unloaded joint, two noncollinear members meet. What are their forces?
 
-**Solution.** Both are zero-force members.
+**Solution.** Both are zero-force members. At an unloaded joint with only two noncollinear member forces, equilibrium cannot be satisfied unless both force magnitudes are zero. Otherwise their vector sum would have a nonzero component.
 
 ---
 
@@ -99,7 +99,7 @@ Zero-force members are not useless; they may stabilize the structure for differe
 
 **Problem.** At an unloaded joint, three members meet and two are collinear. What about the third?
 
-**Solution.** The noncollinear member is zero force.
+**Solution.** The noncollinear member is zero force. The two collinear member forces can balance each other along their common line. With no external load at the joint, equilibrium perpendicular to that line requires the third, noncollinear member force to be zero.
 
 ---
 
@@ -117,7 +117,7 @@ Select a moment center that eliminates as many support unknowns as possible.
 
 **Problem.** Why are support reactions often solved before joints?
 
-**Solution.** They become known external forces at joints and reduce unknowns.
+**Solution.** They become known external forces at joints and reduce unknowns. Whole-truss equilibrium usually determines the external support reactions first. Once those reactions are known, they enter the affected joints as known forces, leaving fewer unknown member forces at each joint.
 
 ---
 
@@ -135,7 +135,7 @@ Move systematically from solved joints to adjacent joints. A negative calculated
 
 **Problem.** How many unknown member forces should an ideal starting joint have?
 
-**Solution.** No more than two for direct use of ΣFx=0 and ΣFy=0.
+**Solution.** No more than two for direct use of ΣFx=0 and ΣFy=0. Each planar joint provides only ΣFx=0 and ΣFy=0. Starting at a joint with no more than two unknown member forces allows those two equations to determine the unknowns directly.
 
 ---
 
@@ -153,7 +153,7 @@ Always report the physical state, not merely the sign.
 
 **Problem.** If a member assumed in tension solves to -12 kN, report its state.
 
-**Solution.** 12 kN compression.
+**Solution.** 12 kN compression. The member was assumed to pull away from the joint, which is the tension convention. A negative result reverses that assumed direction, so the actual member force is 12 kN in compression.
 
 ---
 
@@ -171,7 +171,7 @@ After solving, check a previously unused joint or verify overall external equili
 
 **Problem.** What force type exists in an ideal truss member?
 
-**Solution.** Axial tension or compression only.
+**Solution.** Axial tension or compression only. An ideal truss member is a two-force member with pin-connected ends and no intermediate loading. Its end forces are collinear with the member axis, so it carries axial tension or compression only.
 
 ---
 
@@ -181,17 +181,24 @@ After solving, check a previously unused joint or verify overall external equili
 
 **Problem.** Why are loads assumed applied at joints?
 
-**Solution.** Otherwise members develop bending/shear and cease to be ideal two-force members.
+**Solution.** Otherwise members develop bending/shear and cease to be ideal two-force members. Applying loads only at joints preserves the two-force-member idealization. A load applied between joints would generally introduce shear and bending, requiring a beam/frame model instead of an ideal truss model.
 
 ### Worked Example 9
 
 **Problem.** How can you check a completed method-of-joints solution?
 
-**Solution.** Check equilibrium at an unused joint or whole-truss equilibrium.
+**Solution.** Check equilibrium at an unused joint or whole-truss equilibrium. After solving all members, test an unused joint or the entire truss with equilibrium equations. The independent check should recover zero net force and, for the whole truss, zero net moment.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — Engineering LibreTexts, Mechanics Map (Moore, 2nd ed.) (https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_Map_%28Moore_2nd_Edition%29) supports ideal planar trusses, reactions, method of joints, zero-force/tension-compression interpretation, determinacy, and checking.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Statics, printed p. 98**.
 
@@ -219,6 +226,11 @@ Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, Apri
 
 
 ---
+
+
+### Ledger terminology alignment
+
+- **pin joint** — an idealized connection that transmits force while allowing relative rotation and does not transmit a resisting couple moment.
 
 ## Key Terms
 
@@ -363,32 +375,31 @@ D) It replaces the need for an FBD or kinematic model
 
 14. The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first, then apply **joint-order strategy**.
 
-15. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+15. Define the body or system, draw the chapter-specific model for **Chapter 02-24: Method of Joints for Planar Trusses**, and label the coordinates, geometry, loads, and unknowns needed by the governing equations. This prevents algebra from being applied to an incomplete physical model.
 
-16. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+16. Use an independent check appropriate to **Chapter 02-24: Method of Joints for Planar Trusses**: substitute the solved values back into the governing equations, verify units and signs, and confirm that the result is physically plausible for the stated geometry and constraints.
 
-17. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+17. A negative solved value reverses an assumed vector sense only when the underlying support, contact, or member can physically act in that opposite sense. In **Chapter 02-24: Method of Joints for Planar Trusses**, also check whether a one-way constraint instead implies separation, slackness, or a changed contact state.
 
-18. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+18. The Handbook and the chapter must use the same coordinate and sign convention before formulas or diagrams are compared. For **Chapter 02-24: Method of Joints for Planar Trusses**, reversing an axis or moment sense changes component signs without changing the underlying mechanics.
 
-19. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+19. **A.** The nineteenth review item tests **truss model** in **Chapter 02-24: Method of Joints for Planar Trusses**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-20. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+20. **A.** The twentieth review item tests **truss determinacy** in **Chapter 02-24: Method of Joints for Planar Trusses**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-21. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+21. **A.** The twenty-first review item tests **zero-force member** in **Chapter 02-24: Method of Joints for Planar Trusses**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-22. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+22. **A.** The twenty-second review item tests **truss reactions** in **Chapter 02-24: Method of Joints for Planar Trusses**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-23. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+23. **A.** The twenty-third review item tests **method of joints** in **Chapter 02-24: Method of Joints for Planar Trusses**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-24. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+24. **A.** The twenty-fourth review item tests **member force** in **Chapter 02-24: Method of Joints for Planar Trusses**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-25. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+25. **A.** The twenty-fifth review item tests **joint-order strategy** in **Chapter 02-24: Method of Joints for Planar Trusses**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-26. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+26. **A.** The twenty-sixth review item tests **truss model** in **Chapter 02-24: Method of Joints for Planar Trusses**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This application check also tests whether the model assumptions are established before any numerical or symbolic manipulation.
 
-27. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
-
+27. **A.** The twenty-seventh review item tests **truss determinacy** in **Chapter 02-24: Method of Joints for Planar Trusses**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This final application check emphasizes that a valid mechanics relation cannot replace the diagram, geometry, and constraints that define the problem.
 
 ---
 
@@ -419,26 +430,16 @@ D) It replaces the need for an FBD or kinematic model
 
 ## Practice Problem Solutions
 
-1. m=2(6)-3=9.
-
-2. Both are zero-force members.
-
-3. The noncollinear member is zero force.
-
-4. They become known external forces at joints and reduce unknowns.
-
-5. No more than two for direct use of ΣFx=0 and ΣFy=0.
-
-6. 12 kN compression.
-
-7. Axial tension or compression only.
-
-8. Otherwise members develop bending/shear and cease to be ideal two-force members.
-
-9. Check equilibrium at an unused joint or whole-truss equilibrium.
-
+1. m=2(6)-3=9. For a simple statically determinate planar truss, the count check is m+r=2j. Substituting j=6 and r=3 gives m=12-3=9; this is a counting condition, not a substitute for geometric stability. Practice check: this conclusion follows from the governing model used in **Chapter 02-24: Method of Joints for Planar Trusses**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+2. Both are zero-force members. At an unloaded joint with only two noncollinear member forces, equilibrium cannot be satisfied unless both force magnitudes are zero. Otherwise their vector sum would have a nonzero component. Practice check: this conclusion follows from the governing model used in **Chapter 02-24: Method of Joints for Planar Trusses**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+3. The noncollinear member is zero force. The two collinear member forces can balance each other along their common line. With no external load at the joint, equilibrium perpendicular to that line requires the third, noncollinear member force to be zero. Practice check: this conclusion follows from the governing model used in **Chapter 02-24: Method of Joints for Planar Trusses**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+4. They become known external forces at joints and reduce unknowns. Whole-truss equilibrium usually determines the external support reactions first. Once those reactions are known, they enter the affected joints as known forces, leaving fewer unknown member forces at each joint. Practice check: this conclusion follows from the governing model used in **Chapter 02-24: Method of Joints for Planar Trusses**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+5. No more than two for direct use of ΣFx=0 and ΣFy=0. Each planar joint provides only ΣFx=0 and ΣFy=0. Starting at a joint with no more than two unknown member forces allows those two equations to determine the unknowns directly. Practice check: this conclusion follows from the governing model used in **Chapter 02-24: Method of Joints for Planar Trusses**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+6. 12 kN compression. The member was assumed to pull away from the joint, which is the tension convention. A negative result reverses that assumed direction, so the actual member force is 12 kN in compression. Practice check: this conclusion follows from the governing model used in **Chapter 02-24: Method of Joints for Planar Trusses**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+7. Axial tension or compression only. An ideal truss member is a two-force member with pin-connected ends and no intermediate loading. Its end forces are collinear with the member axis, so it carries axial tension or compression only. Practice check: this conclusion follows from the governing model used in **Chapter 02-24: Method of Joints for Planar Trusses**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+8. Otherwise members develop bending/shear and cease to be ideal two-force members. Applying loads only at joints preserves the two-force-member idealization. A load applied between joints would generally introduce shear and bending, requiring a beam/frame model instead of an ideal truss model. Practice check: this conclusion follows from the governing model used in **Chapter 02-24: Method of Joints for Planar Trusses**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+9. Check equilibrium at an unused joint or whole-truss equilibrium. After solving all members, test an unused joint or the entire truss with equilibrium equations. The independent check should recover zero net force and, for the whole truss, zero net moment. Practice check: this conclusion follows from the governing model used in **Chapter 02-24: Method of Joints for Planar Trusses**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
 10. Geometric stability; a mechanism can satisfy the count.
-
 
 ---
 

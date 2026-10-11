@@ -63,7 +63,7 @@ The coefficient is not a pure fluid property; it depends on geometry, flow regim
 
 **Problem.** h=50 W/m²K, A=2 m², Ts=100°C, T∞=20°C. Find convection heat rate.
 
-**Solution.** Q=8000 W.
+**Solution.** Q=8000 W. The governing model here is **§57.1 Newton's Law of Cooling**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of newton's law of cooling.
 
 ---
 
@@ -81,7 +81,7 @@ Evaluate properties at the temperature basis specified by the correlation.
 
 **Problem.** Fluid k=0.6 W/mK, h=120 W/m²K, L=0.05 m. Find Nu.
 
-**Solution.** Nu=hL/k=10.
+**Solution.** Nu=(120 W/m²)(0.05 m)/(0.6 W/m·K)=10, dimensionless. The governing model here is **§57.2 Nusselt, Reynolds, and Prandtl Numbers**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of nusselt, reynolds, and prandtl numbers.
 
 ---
 
@@ -99,7 +99,7 @@ A coefficient from one geometry or regime should not be transferred to another w
 
 **Problem.** ρ=1000, V=2, L=0.05, μ=0.001. Find Re.
 
-**Solution.** Re=100,000.
+**Solution.** Re=100,000. The governing model here is **§57.3 External Forced Convection**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of external forced convection.
 
 ---
 
@@ -117,7 +117,7 @@ The bulk-mean fluid temperature changes along the tube as heat is transferred.
 
 **Problem.** cp=4180, μ=0.001, k=0.6. Find Pr.
 
-**Solution.** Pr=6.97.
+**Solution.** Pr=6.97. The governing model here is **§57.4 Internal Forced Convection**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of internal forced convection.
 
 ---
 
@@ -135,7 +135,7 @@ Orientation and characteristic length matter strongly.
 
 **Problem.** Laminar fully developed circular tube, constant wall temperature. What Nu does Handbook give?
 
-**Solution.** 3.66.
+**Solution.** 3.66. The governing model here is **§57.5 Natural Convection**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of natural convection.
 
 ---
 
@@ -143,7 +143,8 @@ Orientation and characteristic length matter strongly.
 
 Radiation can occur through vacuum. The Handbook gives emitted radiation proportional to emissivity, area, and absolute temperature to the fourth power.
 
-For opaque surfaces, absorptivity plus reflectivity equals 1; a blackbody has \(arepsilon=lpha=1\).
+For opaque surfaces, absorptivity plus reflectivity equals 1; a blackbody has \(
+arepsilon=lpha=1\).
 
 \[\dot Q_{\rm emit}=\varepsilon\sigma AT^4\]
 
@@ -153,7 +154,7 @@ For opaque surfaces, absorptivity plus reflectivity equals 1; a blackbody has \(
 
 **Problem.** A gray surface ε=0.8, A=1 m², T=500 K. Find emitted radiation using σ=5.67e-8.
 
-**Solution.** Q=0.8*5.67e-8*500^4=2835 W.
+**Solution.** Q=0.8*5.67e-8*500^4=2835 W. The governing model here is **§57.6 Radiation Properties and Blackbody Emission**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of radiation properties and blackbody emission.
 
 ---
 
@@ -161,7 +162,8 @@ For opaque surfaces, absorptivity plus reflectivity equals 1; a blackbody has \(
 
 View factor is the fraction of radiation leaving one surface that reaches another. Reciprocity and summation rules reduce enclosure calculations.
 
-For a small gray body in large surroundings, net exchange simplifies to \(arepsilon\sigma A(T_s^4-T_{sur}^4)\).
+For a small gray body in large surroundings, net exchange simplifies to \(
+arepsilon\sigma A(T_s^4-T_{sur}^4)\).
 
 \[A_iF_{ij}=A_jF_{ji},\qquad \sum_jF_{ij}=1\]
 
@@ -171,7 +173,7 @@ For a small gray body in large surroundings, net exchange simplifies to \(areps
 
 **Problem.** Small gray body ε=0.8, A=1 m², Ts=500 K, surroundings 300 K. Find net radiation.
 
-**Solution.** Q=0.8σ(500^4-300^4)=2467 W.
+**Solution.** Q=0.8σ(500^4-300^4)=2467 W. The governing model here is **§57.7 View Factors and Net Radiation Exchange**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of view factors and net radiation exchange.
 
 ---
 
@@ -181,13 +183,13 @@ For a small gray body in large surroundings, net exchange simplifies to \(areps
 
 **Problem.** What does view factor Fij represent?
 
-**Solution.** Fraction of radiation leaving surface i intercepted by j.
+**Solution.** Fraction of radiation leaving surface i intercepted by j. The governing model here is **§57.7 View Factors and Net Radiation Exchange**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of view factors and net radiation exchange.
 
 ### Worked Example 9
 
 **Problem.** State reciprocity relation.
 
-**Solution.** AiFij=AjFji.
+**Solution.** AiFij=AjFji. The governing model here is **§57.7 View Factors and Net Radiation Exchange**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of view factors and net radiation exchange.
 
 ---
 
@@ -318,20 +320,17 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. Which statement best describes **convective heat transfer**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
+26. A new problem requires **convective heat transfer**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which statement best describes **convection dimensionless groups**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
-
-
----
+27. After applying **convection dimensionless groups**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -363,17 +362,17 @@ D) It replaces conservation laws
 
 14. The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then apply **view factor**.
 
-15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Convection and Thermal Radiation**, apply this check specifically through **§57.1 Newton's Law of Cooling**, including that section's stated assumptions and reference quantities.
 
-16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Convection and Thermal Radiation**, apply this check specifically through **§57.2 Nusselt, Reynolds, and Prandtl Numbers**, including that section's stated assumptions and reference quantities.
 
-17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Convection and Thermal Radiation**, apply this check specifically through **§57.3 External Forced Convection**, including that section's stated assumptions and reference quantities.
 
-18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Convection and Thermal Radiation**, apply this check specifically through **§57.4 Internal Forced Convection**, including that section's stated assumptions and reference quantities.
 
-19. **A.** The chapter applies **convective heat transfer** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+19. **A.** The chapter applies **convective heat transfer** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Convection and Thermal Radiation**, apply this check specifically through **§57.5 Natural Convection**, including that section's stated assumptions and reference quantities.
 
-20. **A.** The chapter applies **convection dimensionless groups** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+20. **A.** The chapter applies **convection dimensionless groups** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Convection and Thermal Radiation**, apply this check specifically through **§57.6 Radiation Properties and Blackbody Emission**, including that section's stated assumptions and reference quantities.
 
 21. **A.** The chapter applies **external convection** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
@@ -385,12 +384,9 @@ D) It replaces conservation laws
 
 25. **A.** The chapter applies **view factor** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** The chapter applies **convective heat transfer** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+26. **A.** For **convective heat transfer** in *Convection and Thermal Radiation*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter applies **convection dimensionless groups** only after the state, geometry, flow/thermal regime, and assumptions are defined.
-
-
----
+27. **A.** For **convection dimensionless groups** in *Convection and Thermal Radiation*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -419,15 +415,15 @@ D) It replaces conservation laws
 
 ## Practice Problem Solutions
 
-1. Q=8000 W.
+1. Q=8000 W. This result follows from **§57.1 Newton's Law of Cooling**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-2. Nu=hL/k=10.
+2. Nu=hL/k=10. This result follows from **§57.2 Nusselt, Reynolds, and Prandtl Numbers**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-3. Re=100,000.
+3. Re=100,000. This result follows from **§57.3 External Forced Convection**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-4. Pr=6.97.
+4. Pr=6.97. This result follows from **§57.4 Internal Forced Convection**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-5. 3.66.
+5. 3.66. This result follows from **§57.5 Natural Convection**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 6. Q=0.8*5.67e-8*500^4=2835 W.
 
@@ -435,7 +431,7 @@ D) It replaces conservation laws
 
 8. Fraction of radiation leaving surface i intercepted by j.
 
-9. AiFij=AjFji.
+9. AiFij=AjFji. This result follows from **§57.2 Nusselt, Reynolds, and Prandtl Numbers**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 10. Stefan-Boltzmann law uses T^4 measured from absolute zero.
 

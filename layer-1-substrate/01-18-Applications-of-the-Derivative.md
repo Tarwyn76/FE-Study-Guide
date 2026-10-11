@@ -77,27 +77,26 @@ One theorem underpins the first two uses, so we start there.
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-
-* 18.1 State the Mean Value Theorem and explain what it guarantees
-* 18.2 Determine intervals where a function increases and decreases from the
+- **18.1** State the Mean Value Theorem and explain what it guarantees
+- **18.2** Determine intervals where a function increases and decreases from the
   sign of $f'$
-* 18.3 Locate critical points and classify them with the first derivative test
-* 18.4 Apply the second derivative test and recognize when it is inconclusive
-* 18.5 Determine concavity and locate inflection points from $f''$
-* 18.6 Find absolute extrema on a closed interval using the closed-interval
+- **18.3** Locate critical points and classify them with the first derivative test
+- **18.4** Apply the second derivative test and recognize when it is inconclusive
+- **18.5** Determine concavity and locate inflection points from $f''$
+- **18.6** Find absolute extrema on a closed interval using the closed-interval
   method
-* 18.7 Sketch a curve from information carried by $f'$ and $f''$
-* 18.8 Set up and solve constrained optimization problems, including
+- **18.7** Sketch a curve from information carried by $f'$ and $f''$
+- **18.8** Set up and solve constrained optimization problems, including
   identifying the objective function and the constraint
-* 18.9 Verify that an optimization result is a minimum or maximum rather than
+- **18.9** Verify that an optimization result is a minimum or maximum rather than
   assuming it
-* 18.10 Set up and solve related-rates problems, including correct signs and
+- **18.10** Set up and solve related-rates problems, including correct signs and
   units
-* 18.11 Apply L'Hôpital's rule to $0/0$ and $\infty/\infty$ forms, and convert
+- **18.11** Apply L'Hôpital's rule to $0/0$ and $\infty/\infty$ forms, and convert
   other indeterminate forms into one of those two
-* 18.12 Use the tangent line to make linear approximations and estimate
+- **18.12** Use the tangent line to make linear approximations and estimate
   function values
-* 18.13 Propagate measurement uncertainty through a calculation using
+- **18.13** Propagate measurement uncertainty through a calculation using
   differentials, and compute relative error for power-law relationships
 
 ---
@@ -1092,6 +1091,17 @@ What you will find:
 > ---
 
 ---
+
+
+### Source Boundary
+
+**FE-Handbook-supported.** The formulas, definitions, tables, and relations explicitly identified above are supported by the cited FE Reference Handbook 10.6 pages.
+
+**Externally supported.** Material extending beyond the Handbook is supported by:
+
+- OpenStax, Calculus Volume 1, Ch. 4 — extrema, concavity/curve shape, and L’Hôpital’s rule.
+
+**Guide synthesis.** Exam-navigation advice, mnemonic devices, sequencing, worked-example framing, interpretation cues, and study heuristics are guide-developed synthesis unless separately attributed.
 
 ## Where This Goes Wrong
 

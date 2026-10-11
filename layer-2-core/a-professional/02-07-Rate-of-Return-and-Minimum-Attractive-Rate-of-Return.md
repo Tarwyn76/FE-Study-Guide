@@ -285,20 +285,17 @@ B) An unrelated calculation method
 C) A guaranteed outcome
 D) A substitute for engineering judgment
 
-26. Which choice best matches the chapter's use of **ROR**?
-A) The section-specific engineering concept or criterion
-B) An unrelated calculation method
-C) A guaranteed outcome
-D) A substitute for engineering judgment
+26. A new problem requires **ROR**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which choice best matches the chapter's use of **MARR**?
-A) The section-specific engineering concept or criterion
-B) An unrelated calculation method
-C) A guaranteed outcome
-D) A substitute for engineering judgment
-
-
----
+27. After applying **MARR**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -330,14 +327,10 @@ D) A substitute for engineering judgment
 
 14. It would apply the wrong professional or economic rule. First distinguish **Limits** from nearby concepts, then apply it under the section's stated conditions.
 
-15. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
-16. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
-17. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
-18. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
+15. First verify the complete cash-flow pattern and the decision criterion, especially whether the problem asks for internal rate of return, another return measure, or comparison with a stated MARR.
+16. An IRR equation may be solved correctly but still mislead when cash-flow signs change more than once, multiple roots exist, or mutually exclusive projects require incremental analysis.
+17. A timeline exposes sign changes and identifies the periods creating multiple-root or reinvestment issues, making it easier to decide whether ordinary IRR is appropriate.
+18. Substitute the computed rate back into the present-worth equation, check for additional roots when sign changes permit them, and compare the relevant rate with the MARR using the proper rule.
 19. **A.** The chapter uses **ROR** as the section-specific engineering concept or criterion.
 
 20. **A.** The chapter uses **MARR** as the section-specific engineering concept or criterion.
@@ -352,12 +345,9 @@ D) A substitute for engineering judgment
 
 25. **A.** The chapter uses **Limits** as the section-specific engineering concept or criterion.
 
-26. **A.** The chapter uses **ROR** as the section-specific engineering concept or criterion.
+26. **A.** For **ROR** in *Rate of Return and Minimum Attractive Rate of Return*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter uses **MARR** as the section-specific engineering concept or criterion.
-
-
----
+27. **A.** For **MARR** in *Rate of Return and Minimum Attractive Rate of Return*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 

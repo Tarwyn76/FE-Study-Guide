@@ -173,6 +173,13 @@ Before calculation, identify the governing state, composition, reaction, exposur
 
 ## As the Handbook States It
 
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — Engineering LibreTexts, Materials Science (https://eng.libretexts.org/Bookshelves/Materials_Science) supports engineering material classes, crystal structures, defects, grains/grain boundaries, bonding, compatibility, and service-environment effects.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
+
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Materials Science/Structure of Matter pp. 117, 124, 127**.
 
 **Source boundary:** The Handbook directly identifies primary bonds, composite relations, amorphous materials, thermoplastics/thermosets, and several processing concepts. Crystal-structure and defect explanations are guide-developed foundations.
@@ -314,20 +321,17 @@ B) A universal rule independent of conditions
 C) A unit-conversion constant only
 D) A substitute for verified data
 
-26. Which answer best describes **material classes**?
-A) A conditional engineering concept used under stated assumptions
-B) A universal rule independent of conditions
-C) A unit-conversion constant only
-D) A substitute for verified data
+26. A new problem requires **material classes**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which answer best describes **materials bonding**?
-A) A conditional engineering concept used under stated assumptions
-B) A universal rule independent of conditions
-C) A unit-conversion constant only
-D) A substitute for verified data
-
-
----
+27. After applying **materials bonding**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -345,28 +349,24 @@ D) A substitute for verified data
 
 7. **compatibility** is the central concept of §16.7; apply the definition, assumptions, and engineering consequence developed in that section.
 
-8. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+8. For §16.1, **Engineering Material Classes**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-9. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+9. For §16.2, **Bonding as the Structural Foundation**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-10. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+10. For §16.3, **Crystalline Structures — BCC, FCC, and HCP**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-11. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+11. For §16.4, **Defects, Grains, and Grain Boundaries**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-12. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+12. For §16.5, **Amorphous, Semicrystalline, and Polymer Structure**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-13. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+13. For §16.6, **Composite Structure and Rule-of-Mixtures Thinking**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-14. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+14. For §16.7, **Structure, Compatibility, and Service Environment**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-15. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-16. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-17. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-18. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
+15. Locate the Handbook definitions and property tables that distinguish metals, ceramics, polymers, composites, crystal structures, and the principal bonding mechanisms.
+16. Check that density, modulus, strength, and temperature values use consistent units and fall in a plausible range for the stated material class and structure.
+17. Use measured or specified material properties, phase information, or manufacturer data when provided; these values control over broad trends associated with bonding or material class.
+18. The structure-bonding-property chain is used as a guide-developed reasoning framework for screening materials, not as a substitute for actual property data.
 19. **A.** The chapter applies **material classes** only under its stated physical/model assumptions.
 
 20. **A.** The chapter applies **materials bonding** only under its stated physical/model assumptions.
@@ -381,12 +381,9 @@ D) A substitute for verified data
 
 25. **A.** The chapter applies **compatibility** only under its stated physical/model assumptions.
 
-26. **A.** The chapter applies **material classes** only under its stated physical/model assumptions.
+26. **A.** For **material classes** in *Materials Classes, Structure, and Bonding*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter applies **materials bonding** only under its stated physical/model assumptions.
-
-
----
+27. **A.** For **materials bonding** in *Materials Classes, Structure, and Bonding*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -406,7 +403,7 @@ D) A substitute for verified data
 
 8. 8. Define anisotropy.
 
-9. 9. What is Tg?
+9. Explain the meaning of the glass-transition temperature for an amorphous polymer.
 
 10. 10. Why should material selection use service-specific property data even when bonding trends are known?
 
@@ -417,11 +414,11 @@ D) A substitute for verified data
 
 1. 1. Metals/alloys, ceramics/glasses, polymers, and composites.
 
-2. 2. Metallic bond.
+2. Metallic bond. Delocalized valence electrons shared through the lattice characterize metallic bonding and help explain electrical conductivity.
 
-3. 3. BCC.
+3. BCC. A body-centered cubic unit cell has lattice points at the eight corners and one at the cube center.
 
-4. 4. FCC.
+4. FCC. A face-centered cubic unit cell has lattice points at the corners and at the center of each face.
 
 5. 5. Thermoplastics can be melted/reformed; thermosets are crosslinked and do not simply remelt for reshaping.
 
@@ -429,9 +426,9 @@ D) A substitute for verified data
 
 7. 7. Boundaries impede dislocations but can provide high-energy paths/sites for diffusion and electrochemical activity.
 
-8. 8. Properties depend on direction.
+8. Properties depend on direction. This directional dependence is anisotropy and results from structure or orientation within the material.
 
-9. 9. Glass-transition temperature for amorphous regions.
+9. The glass-transition temperature marks the range where amorphous polymer regions change from glassy, stiff behavior to rubbery, more mobile behavior. No numeric calculation is required.
 
 10. 10. Trends are qualitative; actual composition, processing, temperature, environment, geometry, and failure mode control performance.
 

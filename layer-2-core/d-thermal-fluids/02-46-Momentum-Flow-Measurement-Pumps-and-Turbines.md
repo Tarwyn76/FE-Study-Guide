@@ -63,7 +63,7 @@ Pressure forces, body forces, and support forces all belong in the external-forc
 
 **Problem.** Water flow 0.05 m³/s turns from +x at 4 m/s to +y at 4 m/s. Find momentum-flow change vector using ρ=1000 kg/m³.
 
-**Solution.** ṁ=50 kg/s; Δ(momentum rate)=(-200 i+200 j) N.
+**Solution.** ṁ=50 kg/s; Δ(momentum rate)=(-200 i+200 j) N. The governing model here is **§46.1 Control-Volume Linear Momentum**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of control-volume linear momentum.
 
 ---
 
@@ -81,7 +81,7 @@ Pressure forces use pressure times area and act inward on the control surface.
 
 **Problem.** A jet Q=0.01 m³/s, ρ=1000 kg/m³ is brought to rest from 20 m/s in x. Find force magnitude on plate.
 
-**Solution.** F=ρQv=200 N.
+**Solution.** F=ρQv=200 N. The governing model here is **§46.2 Forces on Pipe Bends, Jets, and Blades**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of forces on pipe bends, jets, and blades.
 
 ---
 
@@ -99,7 +99,7 @@ Pitot measurements determine local velocity, not automatically section-average f
 
 **Problem.** Water stagnation-static pressure difference is 5 kPa. Find velocity.
 
-**Solution.** v=sqrt(2ΔP/ρ)=3.162 m/s.
+**Solution.** v=sqrt(2ΔP/ρ)=3.162 m/s. The governing model here is **§46.3 Pitot/Stagnation Measurements**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of pitot/stagnation measurements.
 
 ---
 
@@ -117,13 +117,14 @@ Orifices use the same energy idea but generally produce greater permanent pressu
 
 **Problem.** A pump moves water Q=0.02 m³/s through 30 m head at total efficiency 0.75. Find input power.
 
-**Solution.** Win=ρgQH/η=7.85 kW.
+**Solution.** Win=ρgQH/η=7.85 kW. The governing model here is **§46.4 Venturi and Differential-Pressure Flowmeters**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of venturi and differential-pressure flowmeters.
 
 ---
 
 ## 46.5 Pump Head, Power, and Efficiency
 
-A pump adds mechanical energy to a liquid. Hydraulic power is \(ho gQH\); required input power is higher when efficiency is below 1.
+A pump adds mechanical energy to a liquid. Hydraulic power is \(
+ho gQH\); required input power is higher when efficiency is below 1.
 
 The operating point is set by both the pump curve and the system curve.
 
@@ -135,13 +136,14 @@ The operating point is set by both the pump curve and the system curve.
 
 **Problem.** If pump speed rises 10% at same diameter/density, estimate flow ratio by affinity laws.
 
-**Solution.** Q2/Q1=1.10.
+**Solution.** Q2/Q1=1.10. The governing model here is **§46.5 Pump Head, Power, and Efficiency**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of pump head, power, and efficiency.
 
 ---
 
 ## 46.6 Pump/Fan Affinity Laws and Performance Curves
 
-For geometrically similar machines or speed changes under the Handbook scaling assumptions, flow scales with \(ND^3\), head with \(N^2D^2\), and power with \(ho N^3D^5\).
+For geometrically similar machines or speed changes under the Handbook scaling assumptions, flow scales with \(ND^3\), head with \(N^2D^2\), and power with \(
+ho N^3D^5\).
 
 Use affinity laws only when dynamic similarity assumptions are reasonable.
 
@@ -153,7 +155,7 @@ Use affinity laws only when dynamic similarity assumptions are reasonable.
 
 **Problem.** Under same speed change, estimate head ratio.
 
-**Solution.** H2/H1=1.10²=1.21.
+**Solution.** H2/H1=1.10²=1.21. The governing model here is **§46.6 Pump/Fan Affinity Laws and Performance Curves**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of pump/fan affinity laws and performance curves.
 
 ---
 
@@ -171,7 +173,7 @@ Keep the chosen energy basis consistent.
 
 **Problem.** Under same speed change, estimate power ratio.
 
-**Solution.** W2/W1=1.10³=1.331.
+**Solution.** W2/W1=1.10³=1.331. The governing model here is **§46.7 Turbines and Energy Extraction**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of turbines and energy extraction.
 
 ---
 
@@ -181,17 +183,24 @@ Keep the chosen energy basis consistent.
 
 **Problem.** What pressure does a Pitot tube measure at its forward stagnation opening?
 
-**Solution.** Stagnation pressure.
+**Solution.** Stagnation pressure. The governing model here is **§46.7 Turbines and Energy Extraction**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of turbines and energy extraction.
 
 ### Worked Example 9
 
 **Problem.** What does a turbine do to fluid mechanical energy?
 
-**Solution.** Extracts it and converts part to shaft work.
+**Solution.** Extracts it and converts part to shaft work. The governing model here is **§46.7 Turbines and Energy Extraction**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of turbines and energy extraction.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — Engineering LibreTexts, Fluid Mechanics references on momentum and turbomachinery (https://eng.libretexts.org/Bookshelves/Civil_Engineering/Fluid_Mechanics) supports control-volume momentum, flow measurement, pump head/power, turbine energy extraction, and mechanical-energy balances.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Fluid Mechanics, printed pp. 191–200**.
 
@@ -318,20 +327,17 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. Which statement best describes **fluid momentum balance**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
+26. A new problem requires **fluid momentum balance**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which statement best describes **flow-induced force**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
-
-
----
+27. After applying **flow-induced force**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -363,17 +369,17 @@ D) It replaces conservation laws
 
 14. The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then apply **fluid turbine**.
 
-15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Momentum, Flow Measurement, Pumps, and Turbines**, apply this check specifically through **§46.1 Control-Volume Linear Momentum**, including that section's stated assumptions and reference quantities.
 
-16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Momentum, Flow Measurement, Pumps, and Turbines**, apply this check specifically through **§46.2 Forces on Pipe Bends, Jets, and Blades**, including that section's stated assumptions and reference quantities.
 
-17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Momentum, Flow Measurement, Pumps, and Turbines**, apply this check specifically through **§46.3 Pitot/Stagnation Measurements**, including that section's stated assumptions and reference quantities.
 
-18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Momentum, Flow Measurement, Pumps, and Turbines**, apply this check specifically through **§46.4 Venturi and Differential-Pressure Flowmeters**, including that section's stated assumptions and reference quantities.
 
-19. **A.** The chapter applies **fluid momentum balance** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+19. **A.** The chapter applies **fluid momentum balance** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Momentum, Flow Measurement, Pumps, and Turbines**, apply this check specifically through **§46.5 Pump Head, Power, and Efficiency**, including that section's stated assumptions and reference quantities.
 
-20. **A.** The chapter applies **flow-induced force** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+20. **A.** The chapter applies **flow-induced force** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Momentum, Flow Measurement, Pumps, and Turbines**, apply this check specifically through **§46.6 Pump/Fan Affinity Laws and Performance Curves**, including that section's stated assumptions and reference quantities.
 
 21. **A.** The chapter applies **Pitot tube** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
@@ -385,12 +391,9 @@ D) It replaces conservation laws
 
 25. **A.** The chapter applies **fluid turbine** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** The chapter applies **fluid momentum balance** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+26. **A.** For **fluid momentum balance** in *Momentum, Flow Measurement, Pumps, and Turbines*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter applies **flow-induced force** only after the state, geometry, flow/thermal regime, and assumptions are defined.
-
-
----
+27. **A.** For **flow-induced force** in *Momentum, Flow Measurement, Pumps, and Turbines*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -421,23 +424,23 @@ D) It replaces conservation laws
 
 1. ṁ=50 kg/s; Δ(momentum rate)=(-200 i+200 j) N.
 
-2. F=ρQv=200 N.
+2. F=ρQv=200 N. This result follows from **§46.2 Forces on Pipe Bends, Jets, and Blades**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 3. v=sqrt(2ΔP/ρ)=3.162 m/s.
 
-4. Win=ρgQH/η=7.85 kW.
+4. Win=ρgQH/η=7.85 kW. This result follows from **§46.4 Venturi and Differential-Pressure Flowmeters**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-5. Q2/Q1=1.10.
+5. Q2/Q1=1.10. This result follows from **§46.5 Pump Head, Power, and Efficiency**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-6. H2/H1=1.10²=1.21.
+6. H2/H1=1.10²=1.21. This result follows from **§46.6 Pump/Fan Affinity Laws and Performance Curves**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-7. W2/W1=1.10³=1.331.
+7. W2/W1=1.10³=1.331. This result follows from **§46.7 Turbines and Energy Extraction**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-8. Stagnation pressure.
+8. Stagnation pressure. This result follows from **§46.1 Control-Volume Linear Momentum**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 9. Extracts it and converts part to shaft work.
 
-10. Newton's third law.
+10. Newton's third law. This result follows from **§46.3 Pitot/Stagnation Measurements**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 
 ---

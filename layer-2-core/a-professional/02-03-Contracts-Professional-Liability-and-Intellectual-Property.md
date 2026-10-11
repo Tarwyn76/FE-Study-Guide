@@ -61,7 +61,7 @@ For exam-style reasoning, separate contractual allocation of work from nondelega
 
 ### Worked Example 1 — Apply the Rule
 
-Identify the governing professional duty before choosing an action. Separate what is known from what is assumed, then document the basis for the decision.
+Apply the governing duty for **03.1 Engineering Agreements and Scope**: separate established facts from assumptions, identify the controlling professional obligation, and document why the selected action satisfies it.
 
 ---
 
@@ -77,7 +77,7 @@ This section is guide-developed legal context. The Handbook does not provide a s
 
 ### Worked Example 2 — Apply the Rule
 
-Do not let schedule or hierarchy substitute for competence, responsible charge, truthful communication, or the applicable legal authority.
+In **03.2 Standard of Care and Professional Liability**, schedule pressure or organizational hierarchy cannot displace the specific competence, responsible-charge, disclosure, or legal requirement that governs the decision.
 
 ---
 
@@ -93,8 +93,7 @@ For FE preparation, the key is conceptual: contract clauses can allocate commerc
 
 ### Worked Example 3 — Apply the Rule
 
-Classify the issue first. Contract, licensure/ethics, intellectual property, and liability can overlap, but they are not the same body of rules.
-
+For records and confidentiality, identify what must be preserved, who may receive it, and whether disclosure is authorized; contemporaneous factual records support accountability without defeating confidentiality.
 ---
 
 ## 03.4 Confidentiality, Records, and Documentation
@@ -109,7 +108,7 @@ A professional record should be contemporaneous, factual, and traceable.
 
 ### Worked Example 4 — Apply the Rule
 
-Identify the governing professional duty before choosing an action. Separate what is known from what is assumed, then document the basis for the decision.
+Apply the governing duty for **03.4 Confidentiality, Records, and Documentation**: separate established facts from assumptions, identify the controlling professional obligation, and document why the selected action satisfies it.
 
 ---
 
@@ -125,7 +124,7 @@ This chapter does not determine ownership for a specific situation; it teaches t
 
 ### Worked Example 5 — Apply the Rule
 
-Do not let schedule or hierarchy substitute for competence, responsible charge, truthful communication, or the applicable legal authority.
+In **03.5 Patents and Inventions**, schedule pressure or organizational hierarchy cannot displace the specific competence, responsible-charge, disclosure, or legal requirement that governs the decision.
 
 ---
 
@@ -141,8 +140,7 @@ The exam task is usually classification.
 
 ### Worked Example 6 — Apply the Rule
 
-Classify the issue first. Contract, licensure/ethics, intellectual property, and liability can overlap, but they are not the same body of rules.
-
+Classify the dispute by source of authority: contract governs agreed scope, professional rules govern licensure and ethics, intellectual-property law governs protected rights, and liability turns on the applicable standard of care and damages.
 ---
 
 ## 03.7 Engineering Judgment at the Legal/Ethical Boundary
@@ -157,11 +155,18 @@ For actual practice, legal counsel may be necessary. For the FE exam, the goal i
 
 ### Worked Example 7 — Apply the Rule
 
-Identify the governing professional duty before choosing an action. Separate what is known from what is assumed, then document the basis for the decision.
+Apply the governing duty for **03.7 Engineering Judgment at the Legal/Ethical Boundary**: separate established facts from assumptions, identify the controlling professional obligation, and document why the selected action satisfies it.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — ASCE standard-of-care guidance; EJCDC C-700 contract guidance; NSPE confidentiality guidance; and USPTO Patent Basics (https://www.asce.org/publications-and-news/civil-engineering-source/article/2025/12/17/the-design-professionals-standard-of-care-legal-foundations-contractual-risks-and-evolving-protections ; https://ejcdc.org/product/c-700-standard-general-conditions-of-the-construction-contract/ ; https://www.nspe.org/career-growth/ethics/board-ethical-review-cases/public-welfare-client-action-following-engineers ; https://www.uspto.gov/patents/basics/patent-basics) supports engineering agreements, standard of care, professional liability and risk allocation, confidentiality/documentation, intellectual-property rights, and the legal/ethical boundary.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. The principal Handbook basis for this chapter is **Ethics and Professional Practice / Intellectual Property and Professional Practice**, printed p. **13–14**. Where the chapter adds interpretation, decision workflow, contract/liability context, or derived relationships not printed explicitly in that section, those additions are guide-developed and should not be mistaken for quoted Handbook language.
 
@@ -292,20 +297,17 @@ B) An unrelated calculation method
 C) A guaranteed outcome
 D) A substitute for engineering judgment
 
-26. Which choice best matches the chapter's use of **Contracts**?
-A) The section-specific engineering concept or criterion
-B) An unrelated calculation method
-C) A guaranteed outcome
-D) A substitute for engineering judgment
+26. A new problem requires **Contracts**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which choice best matches the chapter's use of **Liability**?
-A) The section-specific engineering concept or criterion
-B) An unrelated calculation method
-C) A guaranteed outcome
-D) A substitute for engineering judgment
-
-
----
+27. After applying **Liability**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -337,14 +339,10 @@ D) A substitute for engineering judgment
 
 14. It would apply the wrong professional or economic rule. First distinguish **Integration** from nearby concepts, then apply it under the section's stated conditions.
 
-15. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
-16. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
-17. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
-18. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
+15. First verify the controlling contract language and the parties' actual duties, including scope, standard of care, indemnity, ownership, confidentiality, and any notice or limitation provisions.
+16. A correct legal or economic rule gives the wrong result when applied to the wrong contract term, duty, jurisdiction, or sequence of events.
+17. A timeline connects notice, performance, change orders, alleged breach, damages, and intellectual-property events, helping determine which obligations existed at each stage.
+18. Confirm the relevant contract provision, identify the duty and alleged breach, separate facts from assumptions, and check whether the conclusion fits the stated allocation of risk.
 19. **A.** The chapter uses **Contracts** as the section-specific engineering concept or criterion.
 
 20. **A.** The chapter uses **Liability** as the section-specific engineering concept or criterion.
@@ -359,12 +357,9 @@ D) A substitute for engineering judgment
 
 25. **A.** The chapter uses **Integration** as the section-specific engineering concept or criterion.
 
-26. **A.** The chapter uses **Contracts** as the section-specific engineering concept or criterion.
+26. **A.** For **Contracts** in *Contracts, Professional Liability, and Intellectual Property*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter uses **Liability** as the section-specific engineering concept or criterion.
-
-
----
+27. **A.** For **Liability** in *Contracts, Professional Liability, and Intellectual Property*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -401,21 +396,17 @@ D) A substitute for engineering judgment
 
 4. The original assumption, date and basis of the change, analysis of impacts, communications, approvals, and resulting decision.
 
-5. Patent.
+5. Patent protection applies to qualifying inventions and gives the owner time-limited exclusionary rights under patent law.
 
-6. Trademark.
+6. Trademark protection applies to source-identifying words, names, symbols, or other marks used to distinguish goods or services.
 
-7. Copyright.
+7. Copyright protects qualifying original expression, such as drawings, reports, software, and other authored works, rather than the underlying idea.
 
-8. Trade secret.
+8. Trade-secret protection applies to valuable confidential information that derives value from secrecy and is subject to reasonable secrecy measures.
 
-9. Licensure/ethics and responsible charge.
+9. This is primarily a licensure, ethics, and responsible-charge issue because professional authority and supervision govern the required action.
 
-10. Professional liability/standard of care.
-
-
----
-
+10. This is a professional-liability and standard-of-care issue because the question concerns whether professional performance met the required duty. ---
 ## Quick Reference
 
 **Handbook anchor:** Ethics and Professional Practice / Intellectual Property and Professional Practice, printed p. 13–14.

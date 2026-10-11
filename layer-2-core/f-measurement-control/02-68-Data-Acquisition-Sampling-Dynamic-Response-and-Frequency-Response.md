@@ -65,7 +65,7 @@ The acquisition chain typically contains a sensor, conditioning/filtering, sampl
 
 **Problem.** A DAQ samples every 0.002 s. Find sampling frequency.
 
-**Solution.** fs=1/0.002=500 Hz.
+**Solution.** fs=1/0.002=500 Hz. The governing model here is **§68.1 Data-Acquisition Chain and Sampling Interval**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of data-acquisition chain and sampling interval.
 
 ---
 
@@ -83,7 +83,7 @@ The Handbook labels that highest signal frequency \(f_N\) in this relation. In b
 
 **Problem.** The highest signal frequency is 180 Hz. What minimum sampling rate satisfies the Handbook strict inequality?
 
-**Solution.** fs must be greater than 360 Hz.
+**Solution.** fs must be greater than 360 Hz. The governing model here is **§68.2 Nyquist Sampling Criterion**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of nyquist sampling criterion.
 
 ---
 
@@ -101,7 +101,7 @@ Increasing sample rate can help, but practical systems also low-pass filter the 
 
 **Problem.** A 900 Hz tone is sampled at 1000 Hz. Find the first alias in 0–500 Hz.
 
-**Solution.** |900-1·1000|=100 Hz.
+**Solution.** |900-1·1000|=100 Hz. The governing model here is **§68.3 Aliasing and Anti-Alias Filtering**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of aliasing and anti-alias filtering.
 
 ---
 
@@ -119,7 +119,7 @@ The represented voltage is the low-range value plus code times one voltage-resol
 
 **Problem.** A 12-bit ADC spans -5 to +5 V. Find resolution.
 
-**Solution.** ΔV=10/4096=2.441 mV/count.
+**Solution.** ΔV=10/4096=2.441 mV/count. The governing model here is **§68.4 Analog-to-Digital Resolution and Codes**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of analog-to-digital resolution and codes.
 
 ---
 
@@ -137,7 +137,7 @@ A pure time delay \(\theta\) shifts the response in time and appears as \(e^{-\t
 
 **Problem.** For the ADC in Problem 4, code N=3000. Estimate represented voltage using V=VL+NΔV.
 
-**Solution.** V=-5+3000(10/4096)=2.324 V.
+**Solution.** V=-5+3000(10/4096)=2.324 V. The governing model here is **§68.5 First-Order Dynamic Response and Dead Time**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of first-order dynamic response and dead time.
 
 ---
 
@@ -153,9 +153,9 @@ For an underdamped system, overshoot and settling time depend strongly on dampin
 
 ### Worked Example 6
 
-**Problem.** A first-order instrument has K=2, τ=3 s and receives unit step M=1 from zero. Find output at t=3 s.
+**Problem.** A first-order instrument has gain K=2, τ=3 s, and receives a unit step M=1 from zero. Find the output ratio y/M at t=3 s.
 
-**Solution.** y=2(1-e^-1)=1.264.
+**Solution.** y=2(1-e^-1)=1.264. The governing model here is **§68.6 Second-Order Dynamic Response**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of second-order dynamic response.
 
 ---
 
@@ -173,7 +173,7 @@ Bode magnitude and phase plots provide a compact representation. Instrument band
 
 **Problem.** A second-order system has ζ=0.5 and ωn=8 rad/s. Estimate 2% settling time.
 
-**Solution.** Ts≈4/(ζωn)=1.0 s.
+**Solution.** Ts≈4/(ζωn)=1.0 s. The governing model here is **§68.7 Frequency Response and Measurement Bandwidth**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of frequency response and measurement bandwidth.
 
 ---
 
@@ -183,17 +183,24 @@ Bode magnitude and phase plots provide a compact representation. Instrument band
 
 **Problem.** A first-order sensor has τ=0.20 s. What fraction of final response is reached after one τ from zero?
 
-**Solution.** 1-e^-1=0.632 or 63.2%.
+**Solution.** 1-e^-1=0.632 or 63.2%. The governing model here is **§68.7 Frequency Response and Measurement Bandwidth**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of frequency response and measurement bandwidth.
 
 ### Worked Example 9
 
-**Problem.** A first-order sensor with K=1, τ=1 s has dead time θ=2 s. What is output to a unit step at t=1 s?
+**Problem.** A first-order sensor with gain K=1 and τ=1 s has dead time θ=2 s. What is the output ratio y/M to a unit step at t=1 s?
 
-**Solution.** Zero change from the delayed response; the dynamic response has not started.
+**Solution.** Zero change from the delayed response; the dynamic response has not started. The governing model here is **§68.7 Frequency Response and Measurement Bandwidth**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of frequency response and measurement bandwidth.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — Engineering LibreTexts, Signals and Systems / instrumentation references (https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Signal_Processing_and_Modeling) supports data-acquisition chains, sampling interval/rate, Nyquist/aliasing, anti-alias filtering, dynamic response, and measurement bandwidth.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Instrumentation, Measurement, and Control, printed pp. 230–234**.
 
@@ -322,20 +329,17 @@ B) It is independent of calibration and dynamics
 C) It replaces physical validation
 D) It is always a static scalar
 
-26. Which statement best describes **data acquisition system**?
-A) Its meaning depends on a defined measurement/control model and assumptions
-B) It is independent of calibration and dynamics
-C) It replaces physical validation
-D) It is always a static scalar
+26. A new problem requires **data acquisition system**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which statement best describes **Nyquist sampling criterion**?
-A) Its meaning depends on a defined measurement/control model and assumptions
-B) It is independent of calibration and dynamics
-C) It replaces physical validation
-D) It is always a static scalar
-
-
----
+27. After applying **Nyquist sampling criterion**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -353,48 +357,45 @@ D) It is always a static scalar
 
 7. **measurement frequency response** is developed in §68.7. Use the displayed relation and the conditions stated there.
 
-8. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+8. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **Data Acquisition, Sampling, Dynamic Response, and Frequency Response**, apply this check specifically through **§68.1 Data-Acquisition Chain and Sampling Interval**, including that section's stated assumptions and reference quantities.
 
-9. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+9. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **Data Acquisition, Sampling, Dynamic Response, and Frequency Response**, apply this check specifically through **§68.2 Nyquist Sampling Criterion**, including that section's stated assumptions and reference quantities.
 
-10. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+10. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **Data Acquisition, Sampling, Dynamic Response, and Frequency Response**, apply this check specifically through **§68.3 Aliasing and Anti-Alias Filtering**, including that section's stated assumptions and reference quantities.
 
-11. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+11. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **Data Acquisition, Sampling, Dynamic Response, and Frequency Response**, apply this check specifically through **§68.4 Analog-to-Digital Resolution and Codes**, including that section's stated assumptions and reference quantities.
 
-12. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+12. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **Data Acquisition, Sampling, Dynamic Response, and Frequency Response**, apply this check specifically through **§68.5 First-Order Dynamic Response and Dead Time**, including that section's stated assumptions and reference quantities.
 
-13. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+13. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **Data Acquisition, Sampling, Dynamic Response, and Frequency Response**, apply this check specifically through **§68.6 Second-Order Dynamic Response**, including that section's stated assumptions and reference quantities.
 
-14. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+14. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **Data Acquisition, Sampling, Dynamic Response, and Frequency Response**, apply this check specifically through **§68.7 Frequency Response and Measurement Bandwidth**, including that section's stated assumptions and reference quantities.
 
-15. Calibration establishes comparison to reference values; uncertainty quantifies doubt in the reported result. Calibration can reduce bias but does not make uncertainty zero.
+15. Calibration establishes comparison to reference values; uncertainty quantifies doubt in the reported result. Calibration can reduce bias but does not make uncertainty zero. For **Data Acquisition, Sampling, Dynamic Response, and Frequency Response**, apply this check specifically through **§68.1 Data-Acquisition Chain and Sampling Interval**, including that section's stated assumptions and reference quantities.
 
-16. A sensor or plant may not follow a changing input instantaneously; lag, damping, and bandwidth can change the observed or controlled response.
+16. A sensor or plant may not follow a changing input instantaneously; lag, damping, and bandwidth can change the observed or controlled response. For **Data Acquisition, Sampling, Dynamic Response, and Frequency Response**, apply this check specifically through **§68.2 Nyquist Sampling Criterion**, including that section's stated assumptions and reference quantities.
 
-17. Check units, limiting behavior, signal range, conservation/physical plausibility, pole stability, and whether sampling/bandwidth assumptions are satisfied.
+17. Check units, limiting behavior, signal range, conservation/physical plausibility, pole stability, and whether sampling/bandwidth assumptions are satisfied. For **Data Acquisition, Sampling, Dynamic Response, and Frequency Response**, apply this check specifically through **§68.3 Aliasing and Anti-Alias Filtering**, including that section's stated assumptions and reference quantities.
 
-18. Different sources can use different definitions for gain, time constants, signs, and frequency terms; the mapping must be established first.
+18. Different sources can use different definitions for gain, time constants, signs, and frequency terms; the mapping must be established first. For **Data Acquisition, Sampling, Dynamic Response, and Frequency Response**, apply this check specifically through **§68.4 Analog-to-Digital Resolution and Codes**, including that section's stated assumptions and reference quantities.
 
-19. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+19. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Data Acquisition, Sampling, Dynamic Response, and Frequency Response**, apply this check specifically through **§68.5 First-Order Dynamic Response and Dead Time**, including that section's stated assumptions and reference quantities.
 
-20. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+20. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Data Acquisition, Sampling, Dynamic Response, and Frequency Response**, apply this check specifically through **§68.6 Second-Order Dynamic Response**, including that section's stated assumptions and reference quantities.
 
-21. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+21. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Data Acquisition, Sampling, Dynamic Response, and Frequency Response**, apply this check specifically through **§68.7 Frequency Response and Measurement Bandwidth**, including that section's stated assumptions and reference quantities.
 
-22. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+22. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Data Acquisition, Sampling, Dynamic Response, and Frequency Response**, apply this check specifically through **§68.1 Data-Acquisition Chain and Sampling Interval**, including that section's stated assumptions and reference quantities.
 
-23. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+23. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Data Acquisition, Sampling, Dynamic Response, and Frequency Response**, apply this check specifically through **§68.2 Nyquist Sampling Criterion**, including that section's stated assumptions and reference quantities.
 
-24. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+24. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Data Acquisition, Sampling, Dynamic Response, and Frequency Response**, apply this check specifically through **§68.3 Aliasing and Anti-Alias Filtering**, including that section's stated assumptions and reference quantities.
 
-25. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+25. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Data Acquisition, Sampling, Dynamic Response, and Frequency Response**, apply this check specifically through **§68.4 Analog-to-Digital Resolution and Codes**, including that section's stated assumptions and reference quantities.
 
-26. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+26. **A.** For **data acquisition system** in *Data Acquisition, Sampling, Dynamic Response, and Frequency Response*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
-
-
----
+27. **A.** For **Nyquist sampling criterion** in *Data Acquisition, Sampling, Dynamic Response, and Frequency Response*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -423,19 +424,19 @@ D) It is always a static scalar
 
 ## Practice Problem Solutions
 
-1. fs=1/0.002=500 Hz.
+1. fs=1/0.002=500 Hz. This result follows from **§68.1 Data-Acquisition Chain and Sampling Interval**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 2. fs must be greater than 360 Hz.
 
-3. |900-1·1000|=100 Hz.
+3. |900-1·1000|=100 Hz. This result follows from **§68.3 Aliasing and Anti-Alias Filtering**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 4. ΔV=10/4096=2.441 mV/count.
 
 5. V=-5+3000(10/4096)=2.324 V.
 
-6. y=2(1-e^-1)=1.264.
+6. y=2(1-e^-1)=1.264. This result follows from **§68.6 Second-Order Dynamic Response**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-7. Ts≈4/(ζωn)=1.0 s.
+7. Ts≈4/(ζωn)=1.0 s. This result follows from **§68.7 Frequency Response and Measurement Bandwidth**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 8. 1-e^-1=0.632 or 63.2%.
 

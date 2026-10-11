@@ -63,7 +63,7 @@ For a cycle, total energy change of the working fluid is zero, so \(W_{net}=Q_H-
 
 **Problem.** Heat engine receives 1000 kJ and rejects 600 kJ. Find efficiency.
 
-**Solution.** η=(1000-600)/1000=40%.
+**Solution.** η=(1000-600)/1000=40%. The governing model here is **§53.1 Heat Engines and Thermal Efficiency**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of heat engines and thermal efficiency.
 
 ---
 
@@ -81,7 +81,7 @@ Absolute temperature must be used.
 
 **Problem.** Carnot engine between 900 K and 300 K. Find maximum efficiency.
 
-**Solution.** η=1-300/900=66.7%.
+**Solution.** η=1-300/900=66.7%. The governing model here is **§53.2 Carnot Cycle and Maximum Efficiency**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of carnot cycle and maximum efficiency.
 
 ---
 
@@ -99,7 +99,7 @@ Under constant-specific-heat assumptions, efficiency depends strongly on compres
 
 **Problem.** Otto cycle r=8, k=1.4. Find ideal efficiency.
 
-**Solution.** η=1-1/(8^0.4)=56.5%.
+**Solution.** η=1-1/(8^0.4)=56.5%. The governing model here is **§53.3 Otto Cycle**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of otto cycle.
 
 ---
 
@@ -117,7 +117,7 @@ Net work is turbine work minus compressor work.
 
 **Problem.** Rankine states h1=200, h2=210, h3=3200, h4=2300 kJ/kg. Find efficiency.
 
-**Solution.** η=[(3200-2300)-(210-200)]/(3200-210)=29.77%.
+**Solution.** η=[(3200-2300)-(210-200)]/(3200-210)=29.77%. The governing model here is **§53.4 Brayton Cycle**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of brayton cycle.
 
 ---
 
@@ -135,7 +135,7 @@ Pump work is often small relative to turbine work but should not be discarded au
 
 **Problem.** A Brayton turbine produces 500 kJ/kg and compressor consumes 300 kJ/kg. Find net work.
 
-**Solution.** 200 kJ/kg.
+**Solution.** 200 kJ/kg. The governing model here is **§53.5 Rankine Cycle**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of rankine cycle.
 
 ---
 
@@ -153,7 +153,7 @@ Do not apply turbine efficiency formula to a compressor or vice versa; numerator
 
 **Problem.** What four components define a simple Rankine cycle?
 
-**Solution.** Pump, boiler, turbine, condenser.
+**Solution.** Pump, boiler, turbine, condenser. The governing model here is **§53.6 Cycle Component Efficiencies**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of cycle component efficiencies.
 
 ---
 
@@ -171,7 +171,7 @@ Regeneration, reheating, intercooling, and feedwater heating are engineering mod
 
 **Problem.** Which cycle idealizes spark-ignition engines?
 
-**Solution.** Otto cycle.
+**Solution.** Otto cycle. The governing model here is **§53.7 Cycle Improvement and Limits**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of cycle improvement and limits.
 
 ---
 
@@ -181,17 +181,24 @@ Regeneration, reheating, intercooling, and feedwater heating are engineering mod
 
 **Problem.** Which cycle idealizes gas turbines?
 
-**Solution.** Brayton cycle.
+**Solution.** Brayton cycle. The governing model here is **§53.7 Cycle Improvement and Limits**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of cycle improvement and limits.
 
 ### Worked Example 9
 
 **Problem.** What is the reversible upper efficiency bound between two reservoirs?
 
-**Solution.** Carnot efficiency.
+**Solution.** Carnot efficiency. The governing model here is **§53.7 Cycle Improvement and Limits**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of cycle improvement and limits.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — OpenStax University Physics Volume 2, Heat Engines (https://openstax.org/books/university-physics-volume-2/pages/4-2-heat-engines) supports cyclic heat engines, efficiency, hot/cold reservoirs, cycle limits, and improvement tradeoffs.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Thermodynamics, printed pp. 149 and 176; Mechanical Engineering supplemental cycle material pp. 462–465**.
 
@@ -318,20 +325,17 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. Which statement best describes **thermal efficiency**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
+26. A new problem requires **thermal efficiency**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which statement best describes **Carnot efficiency**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
-
-
----
+27. After applying **Carnot efficiency**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -363,17 +367,17 @@ D) It replaces conservation laws
 
 14. The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then apply **cycle performance**.
 
-15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Power Cycles**, apply this check specifically through **§53.1 Heat Engines and Thermal Efficiency**, including that section's stated assumptions and reference quantities.
 
-16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Power Cycles**, apply this check specifically through **§53.2 Carnot Cycle and Maximum Efficiency**, including that section's stated assumptions and reference quantities.
 
-17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Power Cycles**, apply this check specifically through **§53.3 Otto Cycle**, including that section's stated assumptions and reference quantities.
 
-18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Power Cycles**, apply this check specifically through **§53.4 Brayton Cycle**, including that section's stated assumptions and reference quantities.
 
-19. **A.** The chapter applies **thermal efficiency** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+19. **A.** The chapter applies **thermal efficiency** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Power Cycles**, apply this check specifically through **§53.5 Rankine Cycle**, including that section's stated assumptions and reference quantities.
 
-20. **A.** The chapter applies **Carnot efficiency** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+20. **A.** The chapter applies **Carnot efficiency** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Power Cycles**, apply this check specifically through **§53.6 Cycle Component Efficiencies**, including that section's stated assumptions and reference quantities.
 
 21. **A.** The chapter applies **Otto cycle** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
@@ -385,12 +389,9 @@ D) It replaces conservation laws
 
 25. **A.** The chapter applies **cycle performance** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** The chapter applies **thermal efficiency** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+26. **A.** For **thermal efficiency** in *Power Cycles*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter applies **Carnot efficiency** only after the state, geometry, flow/thermal regime, and assumptions are defined.
-
-
----
+27. **A.** For **Carnot efficiency** in *Power Cycles*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -419,23 +420,23 @@ D) It replaces conservation laws
 
 ## Practice Problem Solutions
 
-1. η=(1000-600)/1000=40%.
+1. η=(1000-600)/1000=40%. This result follows from **§53.1 Heat Engines and Thermal Efficiency**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-2. η=1-300/900=66.7%.
+2. η=1-300/900=66.7%. This result follows from **§53.2 Carnot Cycle and Maximum Efficiency**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 3. η=1-1/(8^0.4)=56.5%.
 
-4. η=[(3200-2300)-(210-200)]/(3200-210)=29.77%.
+4. η=[(3200-2300)-(210-200)]/(3200-210)=29.77%. This result follows from **§53.4 Brayton Cycle**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-5. 200 kJ/kg.
+5. 200 kJ/kg. This result follows from **§53.5 Rankine Cycle**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-6. Pump, boiler, turbine, condenser.
+6. Pump, boiler, turbine, condenser. This result follows from **§53.6 Cycle Component Efficiencies**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-7. Otto cycle.
+7. Otto cycle. This result follows from **§53.7 Cycle Improvement and Limits**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-8. Brayton cycle.
+8. Brayton cycle. This result follows from **§53.1 Heat Engines and Thermal Efficiency**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-9. Carnot efficiency.
+9. Carnot efficiency. This result follows from **§53.2 Carnot Cycle and Maximum Efficiency**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 10. Actual turbine produces less work than the isentropic reference for the same inlet/exit pressure conditions.
 

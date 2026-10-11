@@ -143,8 +143,7 @@ Identify breakpoints where the preferred alternative switches. These thresholds 
 
 ### Worked Example 6 — Read the Model Before Calculating
 
-Identify the cash-flow pattern, comparison date, rate basis, and sign convention. Then apply **Sensitivity**. A numerical result is valid only when every cash flow has been placed on the same economic basis.
-
+For project selection, first place every alternative on the same economic basis, then perform sensitivity analysis by varying one uncertain input at a time. The break-even value is the point where the preferred alternative changes, so it is the relevant decision threshold.
 ---
 
 ## 10.7 Integrated Decision Rule
@@ -170,6 +169,13 @@ Identify the cash-flow pattern, comparison date, rate basis, and sign convention
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — Engineering LibreTexts, quantitative risk analysis and engineering-economic decision methods (https://eng.libretexts.org/Courses/De_Anza_College/Project_Management%3A_Delivering_Business_Objectives/09%3A_Risk_Management/9.02%3A_Risk_Management_Guide/9.2.05%3A_Performing_Quantitative_Risk_Analysis) supports expected monetary value, alternatives under uncertainty, sensitivity/scenario analysis, and decision-tree reasoning used with engineering-economic project selection.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. The principal Handbook basis for this chapter is **Engineering Economics / Economic Decision Trees and Project Comparison**, printed p. **236–237**. Where the chapter adds interpretation, decision workflow, contract/liability context, or derived relationships not printed explicitly in that section, those additions are guide-developed and should not be mistaken for quoted Handbook language.
 
@@ -297,20 +303,17 @@ B) An unrelated calculation method
 C) A guaranteed outcome
 D) A substitute for engineering judgment
 
-26. Which choice best matches the chapter's use of **Project type**?
-A) The section-specific engineering concept or criterion
-B) An unrelated calculation method
-C) A guaranteed outcome
-D) A substitute for engineering judgment
+26. A new problem requires **Project type**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which choice best matches the chapter's use of **Unequal lives**?
-A) The section-specific engineering concept or criterion
-B) An unrelated calculation method
-C) A guaranteed outcome
-D) A substitute for engineering judgment
-
-
----
+27. After applying **Unequal lives**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -324,10 +327,8 @@ D) A substitute for engineering judgment
 
 5. The central principle is **Capital rationing**. Apply that section's rule to the governing facts and assumptions.
 
-6. The central principle is **Sensitivity**. Apply that section's rule to the governing facts and assumptions.
-
-7. The central principle is **Integration**. Apply that section's rule to the governing facts and assumptions.
-
+6. The central principle is **Sensitivity**. Apply that section's rule to the governing facts and assumptions. For project selection, sensitivity analysis varies uncertain inputs and checks whether the preferred alternative changes; the break-even value is the decision threshold.
+7. The central principle is **Integration**. Apply that section's rule to the governing facts and assumptions. In project selection, integration means placing alternatives on a common economic basis before combining equivalence, risk, and decision criteria.
 8. It would apply the wrong professional or economic rule. First distinguish **Project type** from nearby concepts, then apply it under the section's stated conditions.
 
 9. It would apply the wrong professional or economic rule. First distinguish **Unequal lives** from nearby concepts, then apply it under the section's stated conditions.
@@ -338,18 +339,12 @@ D) A substitute for engineering judgment
 
 12. It would apply the wrong professional or economic rule. First distinguish **Capital rationing** from nearby concepts, then apply it under the section's stated conditions.
 
-13. It would apply the wrong professional or economic rule. First distinguish **Sensitivity** from nearby concepts, then apply it under the section's stated conditions.
-
-14. It would apply the wrong professional or economic rule. First distinguish **Integration** from nearby concepts, then apply it under the section's stated conditions.
-
-15. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
-16. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
-17. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
-18. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
+13. It would apply the wrong professional or economic rule. First distinguish **Sensitivity** from nearby concepts, then apply it under the section's stated conditions. For sensitivity analysis, changing the wrong variable or holding inconsistent bases fixed can create a false comparison; keep the economic basis common across alternatives.
+14. It would apply the wrong professional or economic rule. First distinguish **Integration** from nearby concepts, then apply it under the section's stated conditions. For an economic decision, choosing the wrong method can reverse the preferred alternative; first distinguish equivalence, sensitivity, and risk treatment before calculating.
+15. First verify the feasible alternatives, decision constraints, evaluation criterion, and any probabilities or ranges assigned to uncertain outcomes before calculating a preferred project.
+16. A mathematically correct ranking can be wrong when mutually exclusive and independent projects are mixed, constraints are omitted, or expected values are treated as certain outcomes.
+17. A decision timeline or tree makes the order of decisions, uncertain events, and information availability explicit, preventing future knowledge from being used prematurely.
+18. Check feasibility first, then confirm the ranking uses a consistent economic criterion and test the recommendation against the stated uncertainty and sensitivity assumptions.
 19. **A.** The chapter uses **Project type** as the section-specific engineering concept or criterion.
 
 20. **A.** The chapter uses **Unequal lives** as the section-specific engineering concept or criterion.
@@ -360,16 +355,11 @@ D) A substitute for engineering judgment
 
 23. **A.** The chapter uses **Capital rationing** as the section-specific engineering concept or criterion.
 
-24. **A.** The chapter uses **Sensitivity** as the section-specific engineering concept or criterion.
+24. **A.** The chapter uses **Sensitivity** as the section-specific engineering concept or criterion. Sensitivity is used here to test robustness of the preferred project to changes in uncertain inputs, not as a substitute for the base economic-equivalence calculation.
+25. **A.** The chapter uses **Integration** as the section-specific engineering concept or criterion. Here integration means combining economic equivalence and risk information consistently rather than treating a single metric as sufficient.
+26. **A.** For **Project type** in *Economic Decision-Making, Project Selection, and Risk*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-25. **A.** The chapter uses **Integration** as the section-specific engineering concept or criterion.
-
-26. **A.** The chapter uses **Project type** as the section-specific engineering concept or criterion.
-
-27. **A.** The chapter uses **Unequal lives** as the section-specific engineering concept or criterion.
-
-
----
+27. **A.** For **Unequal lives** in *Economic Decision-Making, Project Selection, and Risk*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 

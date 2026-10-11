@@ -63,7 +63,7 @@ Different components may have different functional forms, but they share the sam
 
 **Problem.** Projectile speed 20 m/s at 30°. Find horizontal and vertical initial components.
 
-**Solution.** vx0=17.32 m/s; vy0=10.0 m/s.
+**Solution.** vx0=17.32 m/s; vy0=10.0 m/s. Reasoning: this uses the **32.1 Cartesian Curvilinear Motion** model from Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -81,7 +81,7 @@ Resolve the initial velocity first, then use the same time in both directions.
 
 **Problem.** For Problem 1 from ground level, find time to return to same height with g=9.81.
 
-**Solution.** t=2vy0/g=2.039 s.
+**Solution.** t=2vy0/g=2.039 s. Reasoning: this uses the **32.2 Projectile Motion** model from Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -99,7 +99,7 @@ The normal component points toward the instantaneous center of curvature.
 
 **Problem.** A particle moves at 12 m/s on a path of radius 8 m. Find normal acceleration.
 
-**Solution.** an=v²/ρ=144/8=18 m/s².
+**Solution.** an=v²/ρ=144/8=18 m/s². Reasoning: this uses the **32.3 Normal and Tangential Coordinates** model from Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -117,7 +117,7 @@ The acceleration includes coupling terms; radial acceleration is not simply \(\d
 
 **Problem.** A wheel radius 0.4 m rotates at 10 rad/s. Find rim speed.
 
-**Solution.** v=rω=4 m/s.
+**Solution.** v=rω=4 m/s. Reasoning: this uses the **32.4 Radial and Transverse Coordinates** model from Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -135,7 +135,7 @@ Constant angular speed still produces acceleration because velocity direction ch
 
 **Problem.** For Problem 4 at constant ω, find inward acceleration.
 
-**Solution.** an=rω²=0.4(100)=40 m/s².
+**Solution.** an=rω²=0.4(100)=40 m/s². Reasoning: this uses the **32.5 Plane Circular Motion** model from Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -159,7 +159,7 @@ This is useful for moving-platform, vehicle, and mechanism problems.
 
 **Problem.** What does tangential acceleration change?
 
-**Solution.** Speed magnitude.
+**Solution.** Speed magnitude. Reasoning: this uses the **32.6 Relative Motion with Translating Axes** model from Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -177,7 +177,7 @@ Changing coordinates does not change the physics; it changes the algebra.
 
 **Problem.** What does normal acceleration change?
 
-**Solution.** Velocity direction.
+**Solution.** Velocity direction. Reasoning: this uses the **32.7 Choosing the Best Coordinate System** model from Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -187,17 +187,24 @@ Changing coordinates does not change the physics; it changes the algebra.
 
 **Problem.** State the radial velocity component in polar coordinates.
 
-**Solution.** vr=rdot.
+**Solution.** vr=rdot. Reasoning: this uses the **Integrated Worked Examples** model from Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ### Worked Example 9
 
 **Problem.** Two particles have vA=(5,2), vB=(1,-1) m/s. Find vA/B.
 
-**Solution.** (4,3) m/s.
+**Solution.** (4,3) m/s. Reasoning: this uses the **Integrated Worked Examples** model from Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — Engineering LibreTexts, Introductory Dynamics (Steeneken, Delft University of Technology) (https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Introductory_Dynamics%3A_2D_Kinematics_and_Kinetics_of_Point_Masses_and_Rigid_Bodies_%28Steeneken%29) supports curvilinear particle kinematics, coordinate-system selection, normal-tangential/polar descriptions, and relative motion.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Dynamics, printed pp. 102–106**.
 
@@ -369,32 +376,31 @@ D) It replaces the need for an FBD or kinematic model
 
 14. The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first, then apply **coordinate-system selection**.
 
-15. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+15. Create the chapter-specific mechanics model for **Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion** before solving: define the body or system, coordinates, geometry, loads, constraints, and unknowns that enter the governing equations.
 
-16. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+16. Independently verify a result in **Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion** by substituting it back into the governing equation, checking units and signs, and testing equilibrium, compatibility, or a limiting case as appropriate.
 
-17. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+17. A negative result reverses an assumed direction only when the physical element can act in that opposite sense. In **Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion**, also test whether unilateral contact, tension-only, or compression-only behavior changes the model.
 
-18. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+18. Match the Handbook coordinate and sign convention before comparing expressions in **Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion**. A different positive direction can reverse component or moment signs while leaving the physical state unchanged.
 
-19. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+19. **A.** The nineteenth review item tests **Cartesian kinematics** in **Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-20. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+20. **A.** The twentieth review item tests **projectile motion** in **Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-21. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+21. **A.** The twenty-first review item tests **normal-tangential motion** in **Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-22. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+22. **A.** The twenty-second review item tests **polar kinematics** in **Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-23. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+23. **A.** The twenty-third review item tests **circular motion** in **Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-24. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+24. **A.** The twenty-fourth review item tests **relative motion** in **Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-25. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+25. **A.** The twenty-fifth review item tests **coordinate-system selection** in **Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-26. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+26. **A.** The twenty-sixth review item tests **Cartesian kinematics** in **Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This application check also tests whether the model assumptions are established before any numerical or symbolic manipulation.
 
-27. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
-
+27. **A.** The twenty-seventh review item tests **projectile motion** in **Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This final application check emphasizes that a valid mechanics relation cannot replace the diagram, geometry, and constraints that define the problem.
 
 ---
 
@@ -427,24 +433,23 @@ D) It replaces the need for an FBD or kinematic model
 
 1. vx0=17.32 m/s; vy0=10.0 m/s.
 
-2. t=2vy0/g=2.039 s.
+2. t=2vy0/g=2.039 s. Practice verification: use the **32.2 Projectile Motion** relation for Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
 3. an=v²/ρ=144/8=18 m/s².
 
-4. v=rω=4 m/s.
+4. v=rω=4 m/s. Practice verification: use the **32.4 Radial and Transverse Coordinates** relation for Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
 5. an=rω²=0.4(100)=40 m/s².
 
-6. Speed magnitude.
+6. Speed magnitude. Practice verification: use the **32.6 Relative Motion with Translating Axes** relation for Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
-7. Velocity direction.
+7. Velocity direction. Practice verification: use the **32.7 Choosing the Best Coordinate System** relation for Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
-8. vr=rdot.
+8. vr=rdot. Practice verification: use the **Integrated Worked Examples** relation for Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
-9. (4,3) m/s.
+9. (4,3) m/s. Practice verification: use the **Integrated Worked Examples** relation for Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
-10. Normal-tangential coordinates.
-
+10. Normal-tangential coordinates. Practice verification: use the **Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion** relation for Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
 ---
 

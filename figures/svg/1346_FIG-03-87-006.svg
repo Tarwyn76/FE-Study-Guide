@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1080pt" height="792pt" viewBox="0 0 1080 792" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-10T12:59:52.443012</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 792 
+L 1080 792 
+L 1080 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="text_1">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="866.808" y="220.22995" transform="rotate(-0 866.808 220.22995)">F=10 kN; one bolt</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(790.209562 390.58325)">τbolt=F/(πd²/4)</text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(806.286125 416.01825)">=127.3 MPa</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(784.12675 560.93655)">σnet=F/[(w−d)t]</text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(812.648625 586.37155)">=66.7 MPa</text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(735.712688 611.80655)">σbearing=F/(dt)=200 MPa</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_2">
+    <path d="M 137.7 364.14 
+L 450.9 364.14 
+L 450.9 332.82 
+L 137.7 332.82 
+z
+" clip-path="url(#p6f7f6e0ecb)" style="fill: #edf3f6; stroke: #235a78; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 294.3 395.46 
+L 607.5 395.46 
+L 607.5 364.14 
+L 294.3 364.14 
+z
+" clip-path="url(#p6f7f6e0ecb)" style="fill: #d3e1e8; stroke: #235a78; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 356.94 415.035 
+L 388.26 415.035 
+L 388.26 313.245 
+L 356.94 313.245 
+z
+" clip-path="url(#p6f7f6e0ecb)" style="fill: #f4e4c8; stroke: #b47722; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 325.62 364.14 
+L 419.58 364.14 
+" clip-path="url(#p6f7f6e0ecb)" style="fill: none; stroke: #a23b34; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 135.700444 348.48 
+Q 106.381396 348.48 78.963006 348.48 
+" clip-path="url(#p6f7f6e0ecb)" style="fill: none; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 84.963006 351.48 
+L 78.963006 348.48 
+L 84.963006 345.48 
+z
+" clip-path="url(#p6f7f6e0ecb)" style="fill: #a23b34; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 609.499556 379.8 
+Q 638.818604 379.8 666.236994 379.8 
+" clip-path="url(#p6f7f6e0ecb)" style="fill: none; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 660.236994 376.8 
+L 666.236994 379.8 
+L 660.236994 382.8 
+z
+" clip-path="url(#p6f7f6e0ecb)" style="fill: #a23b34; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #a23b34" x="372.6" y="282.700938" transform="rotate(-0 372.6 282.700938)">Single shear plane</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="216" y="298.085" transform="rotate(-0 216 298.085)">Plate width w=40 mm</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="513.54" y="446.855" transform="rotate(-0 513.54 446.855)">t=5 mm; d=10 mm</text>
+   </g>
+  </g>
+  <g id="text_7">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="43.56" transform="rotate(-0 59.4 43.56)">A single-lap bolted joint has distinct bolt shear, plate net-section, and bearing stresses</text>
+  </g>
+  <g id="text_8">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="59.4" y="770.616" transform="rotate(-0 59.4 770.616)">1346  •  FIG-03-87-006</text>
+  </g>
+  <g id="text_9">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 723.456625)">Assigned single-lap single-bolt example, threads excluded from shear plane, hole diameter assumed equal to bolt diameter for the net area. Plate widths are</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 736.174125)">out-of-page; sketch is a side view. Edge tear-out, joint eccentricity, friction slip, clearances, and actual hole size require separate checks.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p6f7f6e0ecb">
+   <rect x="59.4" y="215.37" width="626.4" height="266.22"/>
+  </clipPath>
+ </defs>
+</svg>

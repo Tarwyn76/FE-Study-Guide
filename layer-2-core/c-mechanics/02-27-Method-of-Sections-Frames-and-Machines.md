@@ -63,7 +63,7 @@ For a planar truss, choose a cut that passes through no more than three unknown 
 
 **Problem.** A truss cut exposes three unknown members. How many planar equilibrium equations can the isolated section use?
 
-**Solution.** Three.
+**Solution.** Three. A planar rigid-body section has three independent equilibrium equations: ΣFx=0, ΣFy=0, and ΣM=0. A cut exposing at most three unknown member forces can therefore be solved directly when the equations are independent.
 
 ---
 
@@ -81,7 +81,7 @@ If two cut members are parallel, choose equations that exploit their geometry ra
 
 **Problem.** Why choose a moment center at the intersection of two cut-member lines?
 
-**Solution.** Their moments vanish, allowing the third force to be solved directly.
+**Solution.** Their moments vanish, allowing the third force to be solved directly. For a moment taken about the intersection of two unknown cut-member lines, those two forces have zero moment arms. The moment equation then contains the third cut force without the other two unknowns.
 
 ---
 
@@ -99,7 +99,7 @@ For the opposite isolated half, all exposed internal member-force arrows reverse
 
 **Problem.** A cut-member force assumed tensile solves negative. Interpret it.
 
-**Solution.** Compression.
+**Solution.** Compression. Tension is commonly assumed by drawing the cut-member force away from the cut. A negative result reverses the assumed sense, so the actual member is in compression.
 
 ---
 
@@ -117,7 +117,7 @@ Therefore a frame is solved by isolating individual members and applying rigid-b
 
 **Problem.** What distinguishes a frame member from an ideal truss member?
 
-**Solution.** A frame member may be a multi-force member carrying shear and moment; an ideal truss member is axial two-force.
+**Solution.** A frame member may be a multi-force member carrying shear and moment; an ideal truss member is axial two-force. An ideal truss member is a two-force member and carries only axial load. A frame member may have three or more forces and can therefore carry axial force, shear, and bending moment.
 
 ---
 
@@ -135,7 +135,7 @@ Pins transmit equal-and-opposite forces between connected members. Two-force lin
 
 **Problem.** What force relation acts at an internal pin between two isolated members?
 
-**Solution.** Equal and opposite pin-force components.
+**Solution.** Equal and opposite pin-force components. The internal pin interaction forms a Newton's third-law pair. When the two connected members are isolated separately, the pin-force components on one member are equal in magnitude and opposite in direction to those on the other.
 
 ---
 
@@ -153,7 +153,7 @@ Do not also draw the internal pin force on a combined FBD that includes both mem
 
 **Problem.** Should an internal pin force be shown on an FBD of the entire assembly containing both connected members?
 
-**Solution.** No; it is internal to that system.
+**Solution.** No; it is internal to that system. For an FBD of the entire assembly, forces at a connection between included members are internal and cancel as a pair. They appear only when the system is cut so that the connected members are analyzed separately.
 
 ---
 
@@ -171,7 +171,7 @@ At the end, check each member independently and verify action-reaction consisten
 
 **Problem.** What is the first useful analysis step for many frames/machines?
 
-**Solution.** Whole-assembly FBD to find external support reactions.
+**Solution.** Whole-assembly FBD to find external support reactions. A whole-assembly FBD exposes the external loads and support reactions while internal pin forces cancel. Solving those external reactions first usually reduces the unknowns when individual members are then isolated.
 
 ---
 
@@ -181,17 +181,24 @@ At the end, check each member independently and verify action-reaction consisten
 
 **Problem.** Why identify two-force members early?
 
-**Solution.** Their force direction becomes known along the member axis, reducing unknown components.
+**Solution.** Their force direction becomes known along the member axis, reducing unknown components. A two-force member has a known force line along its axis even when the magnitude is unknown. Recognizing it early converts two possible component unknowns into one scalar member force.
 
 ### Worked Example 9
 
 **Problem.** What is a machine in statics context?
 
-**Solution.** An assembly intended to transmit or modify forces; individual members are isolated and equilibrated.
+**Solution.** An assembly intended to transmit or modify forces; individual members are isolated and equilibrated. In statics, a machine is an assembly whose connected members transmit or modify forces. Analysis proceeds by isolating the entire assembly and then individual members so internal interaction forces can be solved.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — Engineering LibreTexts, Mechanics Map (Moore, 2nd ed.) (https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_Map_%28Moore_2nd_Edition%29) supports method of sections, frames and machines, member isolation, pin forces, and solution order.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Statics, printed p. 98**.
 
@@ -363,32 +370,31 @@ D) It replaces the need for an FBD or kinematic model
 
 14. The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first, then apply **member-by-member equilibrium**.
 
-15. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+15. Define the body or system, draw the chapter-specific model for **Chapter 02-27: Method of Sections, Frames, and Machines**, and label the coordinates, geometry, loads, and unknowns needed by the governing equations. This prevents algebra from being applied to an incomplete physical model.
 
-16. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+16. Use an independent check appropriate to **Chapter 02-27: Method of Sections, Frames, and Machines**: substitute the solved values back into the governing equations, verify units and signs, and confirm that the result is physically plausible for the stated geometry and constraints.
 
-17. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+17. A negative solved value reverses an assumed vector sense only when the underlying support, contact, or member can physically act in that opposite sense. In **Chapter 02-27: Method of Sections, Frames, and Machines**, also check whether a one-way constraint instead implies separation, slackness, or a changed contact state.
 
-18. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+18. The Handbook and the chapter must use the same coordinate and sign convention before formulas or diagrams are compared. For **Chapter 02-27: Method of Sections, Frames, and Machines**, reversing an axis or moment sense changes component signs without changing the underlying mechanics.
 
-19. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+19. **A.** The nineteenth review item tests **method of sections** in **Chapter 02-27: Method of Sections, Frames, and Machines**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-20. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+20. **A.** The twentieth review item tests **section-cut strategy** in **Chapter 02-27: Method of Sections, Frames, and Machines**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-21. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+21. **A.** The twenty-first review item tests **section force sign** in **Chapter 02-27: Method of Sections, Frames, and Machines**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-22. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+22. **A.** The twenty-second review item tests **frame** in **Chapter 02-27: Method of Sections, Frames, and Machines**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-23. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+23. **A.** The twenty-third review item tests **machine member** in **Chapter 02-27: Method of Sections, Frames, and Machines**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-24. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+24. **A.** The twenty-fourth review item tests **internal pin force** in **Chapter 02-27: Method of Sections, Frames, and Machines**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-25. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+25. **A.** The twenty-fifth review item tests **member-by-member equilibrium** in **Chapter 02-27: Method of Sections, Frames, and Machines**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-26. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+26. **A.** The twenty-sixth review item tests **method of sections** in **Chapter 02-27: Method of Sections, Frames, and Machines**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This application check also tests whether the model assumptions are established before any numerical or symbolic manipulation.
 
-27. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
-
+27. **A.** The twenty-seventh review item tests **section-cut strategy** in **Chapter 02-27: Method of Sections, Frames, and Machines**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This final application check emphasizes that a valid mechanics relation cannot replace the diagram, geometry, and constraints that define the problem.
 
 ---
 
@@ -419,26 +425,16 @@ D) It replaces the need for an FBD or kinematic model
 
 ## Practice Problem Solutions
 
-1. Three.
-
-2. Their moments vanish, allowing the third force to be solved directly.
-
-3. Compression.
-
-4. A frame member may be a multi-force member carrying shear and moment; an ideal truss member is axial two-force.
-
-5. Equal and opposite pin-force components.
-
-6. No; it is internal to that system.
-
-7. Whole-assembly FBD to find external support reactions.
-
-8. Their force direction becomes known along the member axis, reducing unknown components.
-
-9. An assembly intended to transmit or modify forces; individual members are isolated and equilibrated.
-
+1. Three. A planar rigid-body section has three independent equilibrium equations: ΣFx=0, ΣFy=0, and ΣM=0. A cut exposing at most three unknown member forces can therefore be solved directly when the equations are independent. Practice check: this conclusion follows from the governing model used in **Chapter 02-27: Method of Sections, Frames, and Machines**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+2. Their moments vanish, allowing the third force to be solved directly. For a moment taken about the intersection of two unknown cut-member lines, those two forces have zero moment arms. The moment equation then contains the third cut force without the other two unknowns. Practice check: this conclusion follows from the governing model used in **Chapter 02-27: Method of Sections, Frames, and Machines**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+3. Compression. Tension is commonly assumed by drawing the cut-member force away from the cut. A negative result reverses the assumed sense, so the actual member is in compression. Practice check: this conclusion follows from the governing model used in **Chapter 02-27: Method of Sections, Frames, and Machines**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+4. A frame member may be a multi-force member carrying shear and moment; an ideal truss member is axial two-force. An ideal truss member is a two-force member and carries only axial load. A frame member may have three or more forces and can therefore carry axial force, shear, and bending moment. Practice check: this conclusion follows from the governing model used in **Chapter 02-27: Method of Sections, Frames, and Machines**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+5. Equal and opposite pin-force components. The internal pin interaction forms a Newton's third-law pair. When the two connected members are isolated separately, the pin-force components on one member are equal in magnitude and opposite in direction to those on the other. Practice check: this conclusion follows from the governing model used in **Chapter 02-27: Method of Sections, Frames, and Machines**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+6. No; it is internal to that system. For an FBD of the entire assembly, forces at a connection between included members are internal and cancel as a pair. They appear only when the system is cut so that the connected members are analyzed separately. Practice check: this conclusion follows from the governing model used in **Chapter 02-27: Method of Sections, Frames, and Machines**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+7. Whole-assembly FBD to find external support reactions. A whole-assembly FBD exposes the external loads and support reactions while internal pin forces cancel. Solving those external reactions first usually reduces the unknowns when individual members are then isolated. Practice check: this conclusion follows from the governing model used in **Chapter 02-27: Method of Sections, Frames, and Machines**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+8. Their force direction becomes known along the member axis, reducing unknown components. A two-force member has a known force line along its axis even when the magnitude is unknown. Recognizing it early converts two possible component unknowns into one scalar member force. Practice check: this conclusion follows from the governing model used in **Chapter 02-27: Method of Sections, Frames, and Machines**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+9. An assembly intended to transmit or modify forces; individual members are isolated and equilibrated. In statics, a machine is an assembly whose connected members transmit or modify forces. Analysis proceeds by isolating the entire assembly and then individual members so internal interaction forces can be solved. Practice check: this conclusion follows from the governing model used in **Chapter 02-27: Method of Sections, Frames, and Machines**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
 10. Verify equilibrium of the isolated section and consistency with the opposite side/action-reaction.
-
 
 ---
 

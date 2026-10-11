@@ -310,20 +310,17 @@ B) An unrelated calculation method
 C) A guaranteed outcome
 D) A substitute for engineering judgment
 
-26. Which choice best matches the chapter's use of **Breakeven**?
-A) The section-specific engineering concept or criterion
-B) An unrelated calculation method
-C) A guaranteed outcome
-D) A substitute for engineering judgment
+26. A new problem requires **Breakeven**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which choice best matches the chapter's use of **Cost-volume**?
-A) The section-specific engineering concept or criterion
-B) An unrelated calculation method
-C) A guaranteed outcome
-D) A substitute for engineering judgment
-
-
----
+27. After applying **Cost-volume**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -355,14 +352,10 @@ D) A substitute for engineering judgment
 
 14. It would apply the wrong professional or economic rule. First distinguish **Sensitivity** from nearby concepts, then apply it under the section's stated conditions.
 
-15. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
-16. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
-17. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
-18. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
+15. First verify which costs are fixed, which vary with output, what revenue or benefit changes with the decision variable, and whether the comparison is incremental or total.
+16. A breakeven or benefit-cost equation can be algebraically correct but decisionally wrong if sunk costs, nonincremental benefits, or inconsistent time bases are included.
+17. A timeline or documented cost model shows when costs and benefits occur and prevents annual, present, and one-time amounts from being compared directly.
+18. Check that only relevant incremental quantities are included, all alternatives use the same economic basis, and the calculated breakeven or B/C result lies in a physically meaningful range.
 19. **A.** The chapter uses **Breakeven** as the section-specific engineering concept or criterion.
 
 20. **A.** The chapter uses **Cost-volume** as the section-specific engineering concept or criterion.
@@ -377,12 +370,9 @@ D) A substitute for engineering judgment
 
 25. **A.** The chapter uses **Sensitivity** as the section-specific engineering concept or criterion.
 
-26. **A.** The chapter uses **Breakeven** as the section-specific engineering concept or criterion.
+26. **A.** For **Breakeven** in *Breakeven, Benefit-Cost, and Payback Analysis*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter uses **Cost-volume** as the section-specific engineering concept or criterion.
-
-
----
+27. **A.** For **Cost-volume** in *Breakeven, Benefit-Cost, and Payback Analysis*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -417,14 +407,11 @@ D) A substitute for engineering judgment
 
 3. $B-C=\boxed{20,000}$ and $B/C=\boxed{1.20}$.
 
-4. $60000/15000=\boxed{4}$ years.
-
+4. $60000/15000=\boxed{4}$ years. Verification: the stated value follows from the chapter relation applied to the quantities in the problem; retain the indicated units and check the result against the problem statement.
 5. It ignores cash flows after payback and commonly ignores time value of money.
 
-6. Breakeven analysis.
-
-7. Payback period.
-
+6. Breakeven analysis. Why this fits: the question asks about which metric answers 'At what annual production does alternative B become cheaper?' The stated answer is the chapter concept that directly addresses that condition.
+7. Payback period. Why this fits: the question asks about which metric answers 'How many years until initial cost is recovered?' The stated answer is the chapter concept that directly addresses that condition.
 8. Benefits are less than equivalent costs under the stated comparison; it fails the $B/C\ge1$ test.
 
 9. Breakeven/economic equivalence of benefits and costs.

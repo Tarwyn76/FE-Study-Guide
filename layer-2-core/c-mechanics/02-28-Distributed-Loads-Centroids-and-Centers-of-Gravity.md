@@ -63,7 +63,7 @@ The resultant location is found by matching the moment of the distribution, so i
 
 **Problem.** A uniform 4 kN/m load acts over 3 m. Find resultant and location.
 
-**Solution.** R=12 kN at the midpoint, 1.5 m from either end.
+**Solution.** R=12 kN at the midpoint, 1.5 m from either end. Reasoning: this uses the **28.1 Distributed Load Resultant** model from Chapter 02-28: Distributed Loads, Centroids, and Centers of Gravity. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -81,7 +81,7 @@ These are centroid results, not separate force laws.
 
 **Problem.** A triangular load rises from 0 to 6 kN/m over 4 m. Find resultant.
 
-**Solution.** R=0.5(6)(4)=12 kN.
+**Solution.** R=0.5(6)(4)=12 kN. Reasoning: this uses the **28.2 Uniform and Triangular Loads** model from Chapter 02-28: Distributed Loads, Centroids, and Centers of Gravity. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -99,7 +99,7 @@ Holes are conveniently handled as negative areas. Use one common reference axis 
 
 **Problem.** Where does the triangular-load resultant in Problem 2 act from the larger end?
 
-**Solution.** One-third of 4 m = 1.333 m from the larger end.
+**Solution.** One-third of 4 m = 1.333 m from the larger end. Reasoning: this uses the **28.3 Centroid of Discrete Areas** model from Chapter 02-28: Distributed Loads, Centroids, and Centers of Gravity. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -121,7 +121,7 @@ Choose differential elements that make the boundary function simple. Symmetry sh
 
 **Problem.** Areas 2 m² at x=1 m and 3 m² at x=5 m form a composite area. Find xbar.
 
-**Solution.** xbar=(2·1+3·5)/5=3.4 m.
+**Solution.** xbar=(2·1+3·5)/5=3.4 m. Reasoning: this uses the **28.4 Centroids by Integration** model from Chapter 02-28: Distributed Loads, Centroids, and Centers of Gravity. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -139,7 +139,7 @@ For nonuniform density, the mass center requires weighting by density rather tha
 
 **Problem.** How is a hole handled in composite centroid calculation?
 
-**Solution.** As negative area with its centroid coordinate.
+**Solution.** As negative area with its centroid coordinate. Reasoning: this uses the **28.5 Center of Mass and Center of Gravity** model from Chapter 02-28: Distributed Loads, Centroids, and Centers of Gravity. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -157,7 +157,7 @@ A centroid may lie outside the material itself, as with a semicircular arc or C-
 
 **Problem.** Can a centroid lie outside the material?
 
-**Solution.** Yes.
+**Solution.** Yes. Reasoning: this uses the **28.6 Composite Bodies and Symmetry** model from Chapter 02-28: Distributed Loads, Centroids, and Centers of Gravity. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -179,7 +179,7 @@ The same first-moment logic underlies area centroids and centers of gravity.
 
 **Problem.** What must an equivalent distributed-load resultant preserve?
 
-**Solution.** Total force and total moment.
+**Solution.** Total force and total moment. Reasoning: this uses the **28.7 Resultant-Location Verification** model from Chapter 02-28: Distributed Loads, Centroids, and Centers of Gravity. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -189,17 +189,24 @@ The same first-moment logic underlies area centroids and centers of gravity.
 
 **Problem.** For uniform density in uniform gravity, how are center of mass and center of gravity related?
 
-**Solution.** They coincide.
+**Solution.** They coincide. Reasoning: this uses the **Integrated Worked Examples** model from Chapter 02-28: Distributed Loads, Centroids, and Centers of Gravity. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ### Worked Example 9
 
 **Problem.** What does symmetry tell you about centroid location?
 
-**Solution.** The centroid lies on every axis/plane of symmetry.
+**Solution.** The centroid lies on every axis/plane of symmetry. Reasoning: this uses the **Integrated Worked Examples** model from Chapter 02-28: Distributed Loads, Centroids, and Centers of Gravity. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — Engineering LibreTexts, Mechanics Map (Moore, 2nd ed.) (https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_Map_%28Moore_2nd_Edition%29) supports distributed-load resultants, centroids/centers of gravity, composite bodies, and resultant-location checks.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Statics, printed pp. 96 and 99–101**.
 
@@ -371,32 +378,31 @@ D) It replaces the need for an FBD or kinematic model
 
 14. The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first, then apply **first moment**.
 
-15. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+15. Create the chapter-specific mechanics model for **Chapter 02-28: Distributed Loads, Centroids, and Centers of Gravity** before solving: define the body or system, coordinates, geometry, loads, constraints, and unknowns that enter the governing equations.
 
-16. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+16. Independently verify a result in **Chapter 02-28: Distributed Loads, Centroids, and Centers of Gravity** by substituting it back into the governing equation, checking units and signs, and testing equilibrium, compatibility, or a limiting case as appropriate.
 
-17. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+17. A negative result reverses an assumed direction only when the physical element can act in that opposite sense. In **Chapter 02-28: Distributed Loads, Centroids, and Centers of Gravity**, also test whether unilateral contact, tension-only, or compression-only behavior changes the model.
 
-18. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+18. Match the Handbook coordinate and sign convention before comparing expressions in **Chapter 02-28: Distributed Loads, Centroids, and Centers of Gravity**. A different positive direction can reverse component or moment signs while leaving the physical state unchanged.
 
-19. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+19. **A.** The nineteenth review item tests **distributed-load resultant** in **Chapter 02-28: Distributed Loads, Centroids, and Centers of Gravity**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-20. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+20. **A.** The twentieth review item tests **common load resultants** in **Chapter 02-28: Distributed Loads, Centroids, and Centers of Gravity**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-21. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+21. **A.** The twenty-first review item tests **area centroid** in **Chapter 02-28: Distributed Loads, Centroids, and Centers of Gravity**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-22. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+22. **A.** The twenty-second review item tests **centroid integration** in **Chapter 02-28: Distributed Loads, Centroids, and Centers of Gravity**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-23. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+23. **A.** The twenty-third review item tests **center of mass** in **Chapter 02-28: Distributed Loads, Centroids, and Centers of Gravity**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-24. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+24. **A.** The twenty-fourth review item tests **composite centroid** in **Chapter 02-28: Distributed Loads, Centroids, and Centers of Gravity**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-25. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+25. **A.** The twenty-fifth review item tests **first moment** in **Chapter 02-28: Distributed Loads, Centroids, and Centers of Gravity**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-26. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+26. **A.** The twenty-sixth review item tests **distributed-load resultant** in **Chapter 02-28: Distributed Loads, Centroids, and Centers of Gravity**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This application check also tests whether the model assumptions are established before any numerical or symbolic manipulation.
 
-27. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
-
+27. **A.** The twenty-seventh review item tests **common load resultants** in **Chapter 02-28: Distributed Loads, Centroids, and Centers of Gravity**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This final application check emphasizes that a valid mechanics relation cannot replace the diagram, geometry, and constraints that define the problem.
 
 ---
 
@@ -437,16 +443,15 @@ D) It replaces the need for an FBD or kinematic model
 
 5. As negative area with its centroid coordinate.
 
-6. Yes.
+6. Yes. Practice verification: use the **28.6 Composite Bodies and Symmetry** relation for Chapter 02-28: Distributed Loads, Centroids, and Centers of Gravity, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
-7. Total force and total moment.
+7. Total force and total moment. Practice verification: use the **28.7 Resultant-Location Verification** relation for Chapter 02-28: Distributed Loads, Centroids, and Centers of Gravity, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
-8. They coincide.
+8. They coincide. Practice verification: use the **Integrated Worked Examples** relation for Chapter 02-28: Distributed Loads, Centroids, and Centers of Gravity, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
 9. The centroid lies on every axis/plane of symmetry.
 
-10. xbar=(1/A)∫x dA.
-
+10. xbar=(1/A)∫x dA. Practice verification: use the **Chapter 02-28: Distributed Loads, Centroids, and Centers of Gravity** relation for Chapter 02-28: Distributed Loads, Centroids, and Centers of Gravity, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
 ---
 

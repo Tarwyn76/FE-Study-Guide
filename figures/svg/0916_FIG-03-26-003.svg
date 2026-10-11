@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1008pt" height="720pt" viewBox="0 0 1008 720" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-10T02:51:34.582654</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 720 
+L 1008 720 
+L 1008 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 127.2096 210.096 
+L 880.7904 210.096 
+L 880.7904 125.64 
+L 127.2096 125.64 
+z
+" clip-path="url(#p5abc65a7eb)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 127.2096 339.264 
+L 880.7904 339.264 
+L 880.7904 254.808 
+L 127.2096 254.808 
+z
+" clip-path="url(#p5abc65a7eb)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 127.2096 468.432 
+L 880.7904 468.432 
+L 880.7904 383.976 
+L 127.2096 383.976 
+z
+" clip-path="url(#p5abc65a7eb)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 504 212.09636 
+Q 504 232.452429 504 250.907841 
+" clip-path="url(#p5abc65a7eb)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 507 244.907841 
+L 504 250.907841 
+L 501 244.907841 
+z
+" clip-path="url(#p5abc65a7eb)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 504 341.26436 
+Q 504 361.620429 504 380.075841 
+" clip-path="url(#p5abc65a7eb)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 507 374.075841 
+L 504 380.075841 
+L 501 374.075841 
+z
+" clip-path="url(#p5abc65a7eb)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="173.938625" transform="rotate(-0 504 173.938625)">Geometry + materials → strain compatibility</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="302.800687" transform="rotate(-0 504 302.800687)">Equilibrium C=T → a, c, ε_t and steel stress</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="431.968687" transform="rotate(-0 504 431.968687)">M_n=T(d−a/2) → select φ for stated code edition</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="568.588687" transform="rotate(-0 504 568.588687)">Example: ε_t=0.0090; assumed φ=0.90 → φM_n=304.179 kN·m ≥ M_u</text>
+   </g>
+  </g>
+  <g id="text_5">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Concrete flexural design checks strain before reducing nominal moment capacity</text>
+  </g>
+  <g id="text_6">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="55.44" y="700.56" transform="rotate(-0 55.44 700.56)">0916  •  FIG-03-26-003</text>
+  </g>
+  <g id="text_7">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(113.300781 650.142812)">Same yielding-steel example as914–915. The displayed φ=0.90 is a stated tension-controlled teaching assumption consistent with the supplied handbook’s</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(120.449219 662.860312)">ACI318-14 context. Determine φ from the governing code edition and strain limits for an actual design. No numerical M_u is supplied, so the inequality is</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(381.653906 675.855937)">a check to perform, not an adequacy conclusion.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p5abc65a7eb">
+   <rect x="55.44" y="100.8" width="897.12" height="496.8"/>
+  </clipPath>
+ </defs>
+</svg>

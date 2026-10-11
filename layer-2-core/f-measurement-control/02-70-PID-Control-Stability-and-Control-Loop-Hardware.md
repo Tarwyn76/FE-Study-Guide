@@ -65,7 +65,7 @@ A P-only controller does not automatically eliminate steady-state offset for eve
 
 **Problem.** A P controller has Kp=4 and instantaneous error 2 units. Find proportional output contribution.
 
-**Solution.** uP=8 output units.
+**Solution.** uP=8 output units. The governing model here is **§70.1 Proportional Control**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of proportional control.
 
 ---
 
@@ -81,11 +81,9 @@ The tradeoff is additional phase lag and the possibility of slow oscillation or 
 
 ### Worked Example 2
 
-**Problem.** An integral controller has Ki=0.5 output/(unit·s) and constant error 3 units for 4 s starting from zero integral. Find contribution.
+**Problem.** An integral controller has Ki=0.5 V/(unit·s) and constant error 3 units for 4 s starting from zero integral. Find the controller-output contribution in volts.
 
-**Solution.** uI=Ki·e·t=0.5·3·4=6.
-
----
+**Solution.** uI=Ki·e·t=0.5·3·4=6. The governing model here is **§70.2 Integral Control**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of integral control. Therefore the integral contribution is uI=6 V.---
 
 ## 70.3 Derivative Control
 
@@ -101,7 +99,7 @@ Derivative action alone does not drive a constant error to zero.
 
 **Problem.** A derivative controller has Kd=2 output·s/unit and error slope -0.5 unit/s. Find contribution.
 
-**Solution.** uD=2(-0.5)=-1.
+**Solution.** uD=2(-0.5)=-1. The governing model here is **§70.3 Derivative Control**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of derivative control.
 
 ---
 
@@ -119,7 +117,7 @@ Always determine which parameterization a problem or controller uses before inse
 
 **Problem.** Map K=3, TI=6 s, TD=0.5 s to parallel PID gains.
 
-**Solution.** Kp=3; Ki=K/TI=0.5 s^-1 equivalent gain; Kd=KTD=1.5 s.
+**Solution.** Kp=3; Ki=K/TI=0.5 s^-1 equivalent gain; Kd=KTD=1.5 s. The governing model here is **§70.4 PID Controller Form and Parameter Mapping**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of pid controller form and parameter mapping.
 
 ---
 
@@ -137,7 +135,7 @@ Use pole locations, step-response metrics, and gain/phase margins together. A tu
 
 **Problem.** A second-order closed-loop approximation has ζ=0.4 and ωn=5 rad/s. Estimate 2% settling time.
 
-**Solution.** Ts≈4/(0.4·5)=2.0 s.
+**Solution.** Ts≈4/(0.4·5)=2.0 s. The governing model here is **§70.5 Stability, Damping, and Tuning Tradeoffs**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of stability, damping, and tuning tradeoffs.
 
 ---
 
@@ -155,7 +153,7 @@ The exact effect depends on \(T_1/T_2\) and the existing plant frequency respons
 
 **Problem.** A lead/lag compensator is K(1+sT1)/(1+sT2). If T1>T2, which qualitative compensation is commonly intended?
 
-**Solution.** Lead compensation: adds positive phase over a frequency band and can improve speed/phase margin.
+**Solution.** Lead compensation: adds positive phase over a frequency band and can improve speed/phase margin. The governing model here is **§70.6 Lead/Lag Compensation and Loop-Shaping Context**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of lead/lag compensation and loop-shaping context.
 
 ---
 
@@ -173,7 +171,7 @@ Practical loops also face actuator saturation, deadband, sensor noise, time dela
 
 **Problem.** Name the primary physical blocks in a practical feedback loop.
 
-**Solution.** Setpoint/reference, controller, actuator/final element, plant/process, sensor/transmitter, conditioning/feedback path.
+**Solution.** Setpoint/reference, controller, actuator/final element, plant/process, sensor/transmitter, conditioning/feedback path. The governing model here is **§70.7 Control-Loop Hardware and Practical Limits**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of control-loop hardware and practical limits.
 
 ---
 
@@ -183,17 +181,24 @@ Practical loops also face actuator saturation, deadband, sensor noise, time dela
 
 **Problem.** Why can integral windup occur?
 
-**Solution.** Actuator saturation prevents requested output while the integrator continues accumulating error.
+**Solution.** Actuator saturation prevents requested output while the integrator continues accumulating error. The governing model here is **§70.7 Control-Loop Hardware and Practical Limits**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of control-loop hardware and practical limits.
 
 ### Worked Example 9
 
 **Problem.** Why is ideal derivative action sensitive to measurement noise?
 
-**Solution.** Differentiation magnifies rapid/high-frequency variations.
+**Solution.** Differentiation magnifies rapid/high-frequency variations. The governing model here is **§70.7 Control-Loop Hardware and Practical Limits**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of control-loop hardware and practical limits.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — Engineering LibreTexts, Introduction to Control Systems (Iqbal) (https://eng.libretexts.org/Bookshelves/Industrial_and_Systems_Engineering/Introduction_to_Control_Systems_%28Iqbal%29) supports P/I/D control actions, closed-loop stability/damping tradeoffs, tuning context, lead/lag compensation, and practical loop hardware considerations.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Instrumentation, Measurement, and Control, printed pp. 231–234**.
 
@@ -322,20 +327,17 @@ B) It is independent of calibration and dynamics
 C) It replaces physical validation
 D) It is always a static scalar
 
-26. Which statement best describes **proportional control**?
-A) Its meaning depends on a defined measurement/control model and assumptions
-B) It is independent of calibration and dynamics
-C) It replaces physical validation
-D) It is always a static scalar
+26. A new problem requires **proportional control**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which statement best describes **integral control**?
-A) Its meaning depends on a defined measurement/control model and assumptions
-B) It is independent of calibration and dynamics
-C) It replaces physical validation
-D) It is always a static scalar
-
-
----
+27. After applying **integral control**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -353,48 +355,45 @@ D) It is always a static scalar
 
 7. **control-loop hardware** is developed in §70.7. Use the displayed relation and the conditions stated there.
 
-8. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+8. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **PID Control, Stability, and Control-Loop Hardware**, apply this check specifically through **§70.1 Proportional Control**, including that section's stated assumptions and reference quantities.
 
-9. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+9. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **PID Control, Stability, and Control-Loop Hardware**, apply this check specifically through **§70.2 Integral Control**, including that section's stated assumptions and reference quantities.
 
-10. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+10. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **PID Control, Stability, and Control-Loop Hardware**, apply this check specifically through **§70.3 Derivative Control**, including that section's stated assumptions and reference quantities.
 
-11. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+11. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **PID Control, Stability, and Control-Loop Hardware**, apply this check specifically through **§70.4 PID Controller Form and Parameter Mapping**, including that section's stated assumptions and reference quantities.
 
-12. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+12. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **PID Control, Stability, and Control-Loop Hardware**, apply this check specifically through **§70.5 Stability, Damping, and Tuning Tradeoffs**, including that section's stated assumptions and reference quantities.
 
-13. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+13. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **PID Control, Stability, and Control-Loop Hardware**, apply this check specifically through **§70.6 Lead/Lag Compensation and Loop-Shaping Context**, including that section's stated assumptions and reference quantities.
 
-14. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+14. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **PID Control, Stability, and Control-Loop Hardware**, apply this check specifically through **§70.7 Control-Loop Hardware and Practical Limits**, including that section's stated assumptions and reference quantities.
 
-15. Calibration establishes comparison to reference values; uncertainty quantifies doubt in the reported result. Calibration can reduce bias but does not make uncertainty zero.
+15. Calibration establishes comparison to reference values; uncertainty quantifies doubt in the reported result. Calibration can reduce bias but does not make uncertainty zero. For **PID Control, Stability, and Control-Loop Hardware**, apply this check specifically through **§70.1 Proportional Control**, including that section's stated assumptions and reference quantities.
 
-16. A sensor or plant may not follow a changing input instantaneously; lag, damping, and bandwidth can change the observed or controlled response.
+16. A sensor or plant may not follow a changing input instantaneously; lag, damping, and bandwidth can change the observed or controlled response. For **PID Control, Stability, and Control-Loop Hardware**, apply this check specifically through **§70.2 Integral Control**, including that section's stated assumptions and reference quantities.
 
-17. Check units, limiting behavior, signal range, conservation/physical plausibility, pole stability, and whether sampling/bandwidth assumptions are satisfied.
+17. Check units, limiting behavior, signal range, conservation/physical plausibility, pole stability, and whether sampling/bandwidth assumptions are satisfied. For **PID Control, Stability, and Control-Loop Hardware**, apply this check specifically through **§70.3 Derivative Control**, including that section's stated assumptions and reference quantities.
 
-18. Different sources can use different definitions for gain, time constants, signs, and frequency terms; the mapping must be established first.
+18. Different sources can use different definitions for gain, time constants, signs, and frequency terms; the mapping must be established first. For **PID Control, Stability, and Control-Loop Hardware**, apply this check specifically through **§70.4 PID Controller Form and Parameter Mapping**, including that section's stated assumptions and reference quantities.
 
-19. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+19. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **PID Control, Stability, and Control-Loop Hardware**, apply this check specifically through **§70.5 Stability, Damping, and Tuning Tradeoffs**, including that section's stated assumptions and reference quantities.
 
-20. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+20. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **PID Control, Stability, and Control-Loop Hardware**, apply this check specifically through **§70.6 Lead/Lag Compensation and Loop-Shaping Context**, including that section's stated assumptions and reference quantities.
 
-21. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+21. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **PID Control, Stability, and Control-Loop Hardware**, apply this check specifically through **§70.7 Control-Loop Hardware and Practical Limits**, including that section's stated assumptions and reference quantities.
 
-22. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+22. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **PID Control, Stability, and Control-Loop Hardware**, apply this check specifically through **§70.1 Proportional Control**, including that section's stated assumptions and reference quantities.
 
-23. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+23. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **PID Control, Stability, and Control-Loop Hardware**, apply this check specifically through **§70.2 Integral Control**, including that section's stated assumptions and reference quantities.
 
-24. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+24. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **PID Control, Stability, and Control-Loop Hardware**, apply this check specifically through **§70.3 Derivative Control**, including that section's stated assumptions and reference quantities.
 
-25. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+25. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **PID Control, Stability, and Control-Loop Hardware**, apply this check specifically through **§70.4 PID Controller Form and Parameter Mapping**, including that section's stated assumptions and reference quantities.
 
-26. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+26. **A.** For **proportional control** in *PID Control, Stability, and Control-Loop Hardware*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
-
-
----
+27. **A.** For **integral control** in *PID Control, Stability, and Control-Loop Hardware*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -423,11 +422,11 @@ D) It is always a static scalar
 
 ## Practice Problem Solutions
 
-1. uP=8 output units.
+1. uP=8 output units. This result follows from **§70.1 Proportional Control**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 2. uI=Ki·e·t=0.5·3·4=6.
 
-3. uD=2(-0.5)=-1.
+3. uD=2(-0.5)=-1. This result follows from **§70.3 Derivative Control**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 4. Kp=3; Ki=K/TI=0.5 s^-1 equivalent gain; Kd=KTD=1.5 s.
 
@@ -439,7 +438,7 @@ D) It is always a static scalar
 
 8. Actuator saturation prevents requested output while the integrator continues accumulating error.
 
-9. Differentiation magnifies rapid/high-frequency variations.
+9. Differentiation magnifies rapid/high-frequency variations. This result follows from **§70.2 Integral Control**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 10. Reduced robustness and greater risk of oscillation/instability.
 

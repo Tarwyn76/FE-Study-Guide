@@ -237,6 +237,13 @@ Before calculation, identify the governing state, composition, reaction, exposur
 
 ## As the Handbook States It
 
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — OpenStax Chemistry 2e (https://openstax.org/details/books/chemistry-2e) supports solution concentration and dilution, acid-base equilibria, buffers, titration reasoning, and colligative-property checks.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
+
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Chemistry and Biology pp. 86–87**.
 
 **Source boundary:** The Handbook directly defines molarity, molality, normality, pH, acid/base pH regions, water ion product, Ka/pKa, solubility product, and boiling/freezing-point effects. Buffer equations and titration workflow are guide-developed background.
@@ -374,20 +381,17 @@ B) A universal rule independent of conditions
 C) A unit-conversion constant only
 D) A substitute for verified data
 
-26. Which answer best describes **solution concentration**?
-A) A conditional engineering concept used under stated assumptions
-B) A universal rule independent of conditions
-C) A unit-conversion constant only
-D) A substitute for verified data
+26. A new problem requires **solution concentration**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which answer best describes **dilution**?
-A) A conditional engineering concept used under stated assumptions
-B) A universal rule independent of conditions
-C) A unit-conversion constant only
-D) A substitute for verified data
-
-
----
+27. After applying **dilution**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -405,28 +409,24 @@ D) A substitute for verified data
 
 7. **colligative effects** is the central concept of §13.7; apply the definition, assumptions, and engineering consequence developed in that section.
 
-8. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+8. For §13.1, **Molarity, Molality, and Normality**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-9. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+9. For §13.2, **Dilution and Mixing**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-10. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+10. For §13.3, **Acids, Bases, pH, and pOH**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-11. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+11. For §13.4, **Weak Acids, Ka, and pKa**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-12. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+12. For §13.5, **Buffers and Titration Logic**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-13. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+13. For §13.6, **Solubility Product and Precipitation**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-14. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+14. For §13.7, **Colligative Effects and Concentration Checks**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-15. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-16. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-17. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-18. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
+15. Locate the Handbook concentration definitions, acid-base relations, pH/pOH equations, and any required dissociation or equilibrium constants before solving the solution problem.
+16. Check concentration units, require mole and mass fractions to remain between zero and one, and verify that calculated pH and species concentrations are physically consistent.
+17. Use measured composition, density, activity data, or tabulated equilibrium constants when supplied; those values supersede qualitative expectations about acid or base strength.
+18. The chapter's recommendation to perform a concentration-basis check before applying an acid-base equation is guide-developed quality control rather than a verbatim Handbook rule.
 19. **A.** The chapter applies **solution concentration** only under its stated physical/model assumptions.
 
 20. **A.** The chapter applies **dilution** only under its stated physical/model assumptions.
@@ -441,12 +441,9 @@ D) A substitute for verified data
 
 25. **A.** The chapter applies **colligative effects** only under its stated physical/model assumptions.
 
-26. **A.** The chapter applies **solution concentration** only under its stated physical/model assumptions.
+26. **A.** For **solution concentration** in *Solutions, Concentration, Acids, Bases, and pH*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter applies **dilution** only under its stated physical/model assumptions.
-
-
----
+27. **A.** For **dilution** in *Solutions, Concentration, Acids, Bases, and pH*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -481,7 +478,7 @@ D) A substitute for verified data
 
 3. 3. M2=M1V1/V2=2.0(100/500)=0.40 M.
 
-4. 4. pH=3.00.
+4. $\mathrm{pH}=3.00$. Using $\mathrm{pH}=-\log_{10}[H^+]$ with the stated hydrogen-ion concentration gives this value.
 
 5. 5. [H+]=10^−5.20=6.31×10^−6 M.
 

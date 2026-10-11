@@ -63,7 +63,7 @@ Unlike a concurrent-force system, moments cannot generally be omitted because fo
 
 **Problem.** A simply supported 6-m beam carries a 12-kN midspan point load. Find vertical reactions.
 
-**Solution.** By symmetry Ay=By=6 kN upward.
+**Solution.** By symmetry Ay=By=6 kN upward. The geometry and loading are symmetric about midspan, so the two vertical reactions must be equal. Vertical equilibrium requires Ay+By=12 kN, giving 6 kN at each support.
 
 ---
 
@@ -81,7 +81,7 @@ Over-modeling a support creates fictitious unknowns and can make a determinate p
 
 **Problem.** A 10-kN load acts 2 m from A on a 5-m simply supported beam. Find By.
 
-**Solution.** ΣMA=0: By(5)=10(2), so By=4 kN; Ay=6 kN.
+**Solution.** ΣMA=0: By(5)=10(2), so By=4 kN; Ay=6 kN. Taking moments about A eliminates the reaction at A and isolates By. After finding By=4 kN, vertical force equilibrium gives Ay=10-4=6 kN; both equations are satisfied.
 
 ---
 
@@ -99,7 +99,7 @@ The equilibrium equations are valid about any point; strategic point selection o
 
 **Problem.** How many 2D reactions does a fixed support provide?
 
-**Solution.** Three: Ax, Ay, and a couple moment.
+**Solution.** Three: Ax, Ay, and a couple moment. A planar fixed support restrains translation in x and y and also restrains rotation. Its idealized reactions are therefore Ax, Ay, and a reaction couple moment.
 
 ---
 
@@ -117,7 +117,7 @@ Keep any horizontal applied load and pin horizontal reaction in the model.
 
 **Problem.** How many independent planar rigid-body equilibrium equations are available?
 
-**Solution.** Three.
+**Solution.** Three. A general planar rigid body has three independent equilibrium equations: ΣFx=0, ΣFy=0, and ΣM=0. They correspond to two translational degrees of freedom and one rotational degree of freedom.
 
 ---
 
@@ -135,7 +135,7 @@ Do not discard an out-of-plane reaction simply because it is inconvenient; estab
 
 **Problem.** What is gained by taking moments about a pin support?
 
-**Solution.** Both pin reaction components have zero moment and are eliminated from that equation.
+**Solution.** Both pin reaction components have zero moment and are eliminated from that equation. Both pin-reaction components act through the pin point, so each has zero moment about that point. Choosing the pin as moment center removes both unknowns from the moment equation.
 
 ---
 
@@ -153,7 +153,7 @@ More reaction unknowns than independent equations does not mean equilibrium fail
 
 **Problem.** If a system has four independent reaction unknowns but only three equilibrium equations, what is it externally?
 
-**Solution.** Statically indeterminate by one degree, absent additional special relations.
+**Solution.** Statically indeterminate by one degree, absent additional special relations. Three independent planar equilibrium equations cannot uniquely determine four independent external reaction components. One additional compatibility or deformation relation would be needed, so the structure is externally indeterminate to degree one.
 
 ---
 
@@ -171,7 +171,7 @@ A negative assumed reaction direction is not automatically wrong—it indicates 
 
 **Problem.** Can a negative roller reaction always occur physically?
 
-**Solution.** Not if the roller/contact cannot sustain tension; it may imply separation or an incorrect assumed loading state.
+**Solution.** Not if the roller/contact cannot sustain tension; it may imply separation or an incorrect assumed loading state. A simple roller contact generally pushes but does not pull. A negative reaction under a compression-positive assumption can therefore indicate loss of contact rather than merely an arrow reversal.
 
 ---
 
@@ -181,17 +181,24 @@ A negative assumed reaction direction is not automatically wrong—it indicates 
 
 **Problem.** Why may a distributed load be replaced by a resultant for reaction calculations?
 
-**Solution.** Because the equivalent force and moment produce the same external static effect.
+**Solution.** Because the equivalent force and moment produce the same external static effect. For external rigid-body equilibrium, a distributed load may be replaced by a resultant with the same magnitude and line of action through the distribution centroid. That replacement preserves both net force and net moment.
 
 ### Worked Example 9
 
 **Problem.** What symmetry check applies to symmetric loading on symmetric supports?
 
-**Solution.** Corresponding reactions should be symmetric/equal where geometry and support conditions are symmetric.
+**Solution.** Corresponding reactions should be symmetric/equal where geometry and support conditions are symmetric. When geometry, loading, and support conditions are mirror-symmetric, the corresponding reactions must also be symmetric. Unequal symmetric reactions would violate the symmetry of the equilibrium problem.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — Engineering LibreTexts, Mechanics Map (Moore, 2nd ed.) (https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_Map_%28Moore_2nd_Edition%29) supports rigid-body equilibrium, pin/roller/fixed reactions, moment-center selection, beam reactions, and determinacy.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Statics, printed p. 95**.
 
@@ -363,32 +370,31 @@ D) It replaces the need for an FBD or kinematic model
 
 14. The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first, then apply **reaction check**.
 
-15. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+15. Define the body or system, draw the chapter-specific model for **Chapter 02-26: Rigid-Body Equilibrium and Support Reactions**, and label the coordinates, geometry, loads, and unknowns needed by the governing equations. This prevents algebra from being applied to an incomplete physical model.
 
-16. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+16. Use an independent check appropriate to **Chapter 02-26: Rigid-Body Equilibrium and Support Reactions**: substitute the solved values back into the governing equations, verify units and signs, and confirm that the result is physically plausible for the stated geometry and constraints.
 
-17. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+17. A negative solved value reverses an assumed vector sense only when the underlying support, contact, or member can physically act in that opposite sense. In **Chapter 02-26: Rigid-Body Equilibrium and Support Reactions**, also check whether a one-way constraint instead implies separation, slackness, or a changed contact state.
 
-18. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+18. The Handbook and the chapter must use the same coordinate and sign convention before formulas or diagrams are compared. For **Chapter 02-26: Rigid-Body Equilibrium and Support Reactions**, reversing an axis or moment sense changes component signs without changing the underlying mechanics.
 
-19. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+19. **A.** The nineteenth review item tests **rigid-body equilibrium** in **Chapter 02-26: Rigid-Body Equilibrium and Support Reactions**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-20. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+20. **A.** The twentieth review item tests **support reaction** in **Chapter 02-26: Rigid-Body Equilibrium and Support Reactions**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-21. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+21. **A.** The twenty-first review item tests **moment-center strategy** in **Chapter 02-26: Rigid-Body Equilibrium and Support Reactions**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-22. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+22. **A.** The twenty-second review item tests **beam reactions** in **Chapter 02-26: Rigid-Body Equilibrium and Support Reactions**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-23. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+23. **A.** The twenty-third review item tests **planar reduction** in **Chapter 02-26: Rigid-Body Equilibrium and Support Reactions**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-24. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+24. **A.** The twenty-fourth review item tests **static determinacy** in **Chapter 02-26: Rigid-Body Equilibrium and Support Reactions**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-25. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+25. **A.** The twenty-fifth review item tests **reaction check** in **Chapter 02-26: Rigid-Body Equilibrium and Support Reactions**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-26. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+26. **A.** The twenty-sixth review item tests **rigid-body equilibrium** in **Chapter 02-26: Rigid-Body Equilibrium and Support Reactions**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This application check also tests whether the model assumptions are established before any numerical or symbolic manipulation.
 
-27. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
-
+27. **A.** The twenty-seventh review item tests **support reaction** in **Chapter 02-26: Rigid-Body Equilibrium and Support Reactions**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This final application check emphasizes that a valid mechanics relation cannot replace the diagram, geometry, and constraints that define the problem.
 
 ---
 
@@ -419,26 +425,16 @@ D) It replaces the need for an FBD or kinematic model
 
 ## Practice Problem Solutions
 
-1. By symmetry Ay=By=6 kN upward.
-
-2. ΣMA=0: By(5)=10(2), so By=4 kN; Ay=6 kN.
-
-3. Three: Ax, Ay, and a couple moment.
-
-4. Three.
-
-5. Both pin reaction components have zero moment and are eliminated from that equation.
-
-6. Statically indeterminate by one degree, absent additional special relations.
-
-7. Not if the roller/contact cannot sustain tension; it may imply separation or an incorrect assumed loading state.
-
-8. Because the equivalent force and moment produce the same external static effect.
-
-9. Corresponding reactions should be symmetric/equal where geometry and support conditions are symmetric.
-
-10. ΣFx=0, ΣFy=0, ΣM=0.
-
+1. By symmetry Ay=By=6 kN upward. The geometry and loading are symmetric about midspan, so the two vertical reactions must be equal. Vertical equilibrium requires Ay+By=12 kN, giving 6 kN at each support. Practice check: this conclusion follows from the governing model used in **Chapter 02-26: Rigid-Body Equilibrium and Support Reactions**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+2. ΣMA=0: By(5)=10(2), so By=4 kN; Ay=6 kN. Taking moments about A eliminates the reaction at A and isolates By. After finding By=4 kN, vertical force equilibrium gives Ay=10-4=6 kN; both equations are satisfied. Practice check: this conclusion follows from the governing model used in **Chapter 02-26: Rigid-Body Equilibrium and Support Reactions**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+3. Three: Ax, Ay, and a couple moment. A planar fixed support restrains translation in x and y and also restrains rotation. Its idealized reactions are therefore Ax, Ay, and a reaction couple moment. Practice check: this conclusion follows from the governing model used in **Chapter 02-26: Rigid-Body Equilibrium and Support Reactions**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+4. Three. A general planar rigid body has three independent equilibrium equations: ΣFx=0, ΣFy=0, and ΣM=0. They correspond to two translational degrees of freedom and one rotational degree of freedom. Practice check: this conclusion follows from the governing model used in **Chapter 02-26: Rigid-Body Equilibrium and Support Reactions**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+5. Both pin reaction components have zero moment and are eliminated from that equation. Both pin-reaction components act through the pin point, so each has zero moment about that point. Choosing the pin as moment center removes both unknowns from the moment equation. Practice check: this conclusion follows from the governing model used in **Chapter 02-26: Rigid-Body Equilibrium and Support Reactions**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+6. Statically indeterminate by one degree, absent additional special relations. Three independent planar equilibrium equations cannot uniquely determine four independent external reaction components. One additional compatibility or deformation relation would be needed, so the structure is externally indeterminate to degree one. Practice check: this conclusion follows from the governing model used in **Chapter 02-26: Rigid-Body Equilibrium and Support Reactions**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+7. Not if the roller/contact cannot sustain tension; it may imply separation or an incorrect assumed loading state. A simple roller contact generally pushes but does not pull. A negative reaction under a compression-positive assumption can therefore indicate loss of contact rather than merely an arrow reversal. Practice check: this conclusion follows from the governing model used in **Chapter 02-26: Rigid-Body Equilibrium and Support Reactions**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+8. Because the equivalent force and moment produce the same external static effect. For external rigid-body equilibrium, a distributed load may be replaced by a resultant with the same magnitude and line of action through the distribution centroid. That replacement preserves both net force and net moment. Practice check: this conclusion follows from the governing model used in **Chapter 02-26: Rigid-Body Equilibrium and Support Reactions**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+9. Corresponding reactions should be symmetric/equal where geometry and support conditions are symmetric. When geometry, loading, and support conditions are mirror-symmetric, the corresponding reactions must also be symmetric. Unequal symmetric reactions would violate the symmetry of the equilibrium problem. Practice check: this conclusion follows from the governing model used in **Chapter 02-26: Rigid-Body Equilibrium and Support Reactions**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+10. ΣFx=0, ΣFy=0, ΣM=0. Practice verification: use the **Chapter 02-26: Rigid-Body Equilibrium and Support Reactions** relation for Chapter 02-26: Rigid-Body Equilibrium and Support Reactions, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
 ---
 

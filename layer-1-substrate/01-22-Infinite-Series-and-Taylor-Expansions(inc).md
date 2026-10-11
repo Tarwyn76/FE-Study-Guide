@@ -89,27 +89,26 @@ the convergence tests.
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-
-* 22.1 Distinguish a sequence from a series and define convergence in terms of
+- **22.1** Distinguish a sequence from a series and define convergence in terms of
   partial sums
-* 22.2 Apply the $n$th term test for divergence and explain why it cannot prove
+- **22.2** Apply the $n$th term test for divergence and explain why it cannot prove
   convergence
-* 22.3 Evaluate a convergent geometric series and state its convergence
+- **22.3** Evaluate a convergent geometric series and state its convergence
   condition
-* 22.4 Apply the integral test and derive the $p$-series result from it
-* 22.5 Apply the comparison test to a series of positive terms
-* 22.6 Apply the ratio test, including recognizing the inconclusive case
-* 22.7 Apply the alternating series test and distinguish absolute from
+- **22.4** Apply the integral test and derive the $p$-series result from it
+- **22.5** Apply the comparison test to a series of positive terms
+- **22.6** Apply the ratio test, including recognizing the inconclusive case
+- **22.7** Apply the alternating series test and distinguish absolute from
   conditional convergence
-* 22.8 Determine the radius and interval of convergence of a power series
-* 22.9 Construct the Taylor series of a function about a given point
-* 22.10 Write the Maclaurin series for $e^x$, $\sin x$, $\cos x$, $\ln(1+x)$,
+- **22.8** Determine the radius and interval of convergence of a power series
+- **22.9** Construct the Taylor series of a function about a given point
+- **22.10** Write the Maclaurin series for $e^x$, $\sin x$, $\cos x$, $\ln(1+x)$,
   $\frac{1}{1-x}$, and $(1+x)^n$ from memory
-* 22.11 Bound the truncation error of a Taylor polynomial using the Lagrange
+- **22.11** Bound the truncation error of a Taylor polynomial using the Lagrange
   remainder, and of an alternating series using the first omitted term
-* 22.12 Apply small-angle approximations and quantify the angle range over which
+- **22.12** Apply small-angle approximations and quantify the angle range over which
   they meet a stated error tolerance
-* 22.13 Linearize a nonlinear relationship about an operating point and state the
+- **22.13** Linearize a nonlinear relationship about an operating point and state the
   range of validity
 
 ---
@@ -1067,6 +1066,17 @@ should shape your preparation.
 
 ---
 
+
+### Source Boundary
+
+**FE-Handbook-supported.** The formulas, definitions, tables, and relations explicitly identified above are supported by the cited FE Reference Handbook 10.6 pages.
+
+**Externally supported.** Material extending beyond the Handbook is supported by:
+
+- OpenStax, Calculus Volume 2, Chs. 5–6 — convergence tests, power series, Taylor/Maclaurin series, and remainder/error bounds.
+
+**Guide synthesis.** Exam-navigation advice, mnemonic devices, sequencing, worked-example framing, interpretation cues, and study heuristics are guide-developed synthesis unless separately attributed.
+
 ## Where This Goes Wrong
 
 **Concluding convergence because the terms go to zero.** The $n$th term test only
@@ -1121,6 +1131,12 @@ tangent there — the $\lvert x\rvert$ and $x^{1/3}$ cases from Chapter 01-17 �
 no Maclaurin series at all.
 
 ---
+
+
+### Ledger terminology alignment
+
+- **centre of expansion** — the point $a$ about which a Taylor series is written in powers of $(x-a)$.
+- **nth-term test** — if series terms do not approach zero, the series diverges; a zero term limit alone does not prove convergence.
 
 ## Key Terms
 
@@ -1646,13 +1662,13 @@ than gracefully.
 
 ### Multiple Choice
 
-21. **B** — $p = 3 > 1$, converges.
+21. **B** — This is a p-series with $p=3>1$, so it converges by the p-series convergence test.
 22. **C** — the test has failed; use another.
 23. **C** — even powers, alternating signs, even factorials.
 24. **B** — the geometric series with $r = x$.
 25. **B** — $0.1 - \frac{0.001}{6} = 0.099833$; true value $0.0998334$.
 26. **D** — $\sin x$ converges for all $x$; the other three have $R = 1$.
-27. **C** — alternation is required.
+27. **C** — The alternating-series test requires alternating signs as well as decreasing term magnitude and a zero term limit.
 28. **B** — about $1.15\%$ at $15°$; the 1% crossing is near $14°$.
 29. **B** — $P_1(x) = f(a) + f'(a)(x-a)$ is the tangent line.
 30. **C** — diverges, the standard counterexample to answer D's reasoning.

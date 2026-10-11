@@ -61,7 +61,7 @@ For exam questions, keep titles straight: passing the FE is an important step, b
 
 ### Worked Example 1 — Apply the Rule
 
-Identify the governing professional duty before choosing an action. Separate what is known from what is assumed, then document the basis for the decision.
+Apply the governing duty for **02.1 Professional Engineer, Engineer Intern, and the Board**: separate established facts from assumptions, identify the controlling professional obligation, and document why the selected action satisfies it.
 
 ---
 
@@ -77,7 +77,7 @@ The legal boundary matters because unlicensed practice and misuse of protected t
 
 ### Worked Example 2 — Apply the Rule
 
-Do not let schedule or hierarchy substitute for competence, responsible charge, truthful communication, or the applicable legal authority.
+In **02.2 Practice of Engineering**, schedule pressure or organizational hierarchy cannot displace the specific competence, responsible-charge, disclosure, or legal requirement that governs the decision.
 
 ---
 
@@ -93,8 +93,7 @@ This concept is central to signing and sealing.
 
 ### Worked Example 3 — Apply the Rule
 
-Classify the issue first. Contract, licensure/ethics, intellectual property, and liability can overlap, but they are not the same body of rules.
-
+For sealing questions, ask whether the licensee exercised responsible charge and is competent for the work; a seal is not a substitute for supervision or technical responsibility.
 ---
 
 ## 02.4 Signatures, Seals, and Technical Responsibility
@@ -109,7 +108,7 @@ The exam trap is the ceremonial-signature idea: a PE cannot ethically or legally
 
 ### Worked Example 4 — Apply the Rule
 
-Identify the governing professional duty before choosing an action. Separate what is known from what is assumed, then document the basis for the decision.
+Apply the governing duty for **02.4 Signatures, Seals, and Technical Responsibility**: separate established facts from assumptions, identify the controlling professional obligation, and document why the selected action satisfies it.
 
 ---
 
@@ -125,7 +124,7 @@ The Handbook's Model Law is therefore a model, not a substitute for checking the
 
 ### Worked Example 5 — Apply the Rule
 
-Do not let schedule or hierarchy substitute for competence, responsible charge, truthful communication, or the applicable legal authority.
+In **02.5 Jurisdiction and Comity**, schedule pressure or organizational hierarchy cannot displace the specific competence, responsible-charge, disclosure, or legal requirement that governs the decision.
 
 ---
 
@@ -141,8 +140,7 @@ The public-protection purpose links discipline back to Chapter 02-01.
 
 ### Worked Example 6 — Apply the Rule
 
-Classify the issue first. Contract, licensure/ethics, intellectual property, and liability can overlap, but they are not the same body of rules.
-
+Separate individual licensure from firm authorization and statutory exemptions; an exemption does not erase responsible-charge or jurisdictional requirements.
 ---
 
 ## 02.7 Firms, Certificates of Authorization, and Exemptions
@@ -157,11 +155,18 @@ The exam-level principle is that firm authorization, individual licensure, compe
 
 ### Worked Example 7 — Apply the Rule
 
-Identify the governing professional duty before choosing an action. Separate what is known from what is assumed, then document the basis for the decision.
+Apply the governing duty for **02.7 Firms, Certificates of Authorization, and Exemptions**: separate established facts from assumptions, identify the controlling professional obligation, and document why the selected action satisfies it.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — NCEES, Model Law and Model Rules (https://ncees.org/wp-content/uploads/dlm_uploads/Model_Rules_2022_web.pdf) supports licensure terminology, responsible charge, sealing/signing, professional practice, board authority, and comity.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. The principal Handbook basis for this chapter is **Ethics and Professional Practice / 2025–26 Model Law**, printed p. **6–13**. Where the chapter adds interpretation, decision workflow, contract/liability context, or derived relationships not printed explicitly in that section, those additions are guide-developed and should not be mistaken for quoted Handbook language.
 
@@ -290,20 +295,17 @@ B) An unrelated calculation method
 C) A guaranteed outcome
 D) A substitute for engineering judgment
 
-26. Which choice best matches the chapter's use of **Licensure roles**?
-A) The section-specific engineering concept or criterion
-B) An unrelated calculation method
-C) A guaranteed outcome
-D) A substitute for engineering judgment
+26. A new problem requires **Licensure roles**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which choice best matches the chapter's use of **Practice**?
-A) The section-specific engineering concept or criterion
-B) An unrelated calculation method
-C) A guaranteed outcome
-D) A substitute for engineering judgment
-
-
----
+27. After applying **Practice**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -335,14 +337,10 @@ D) A substitute for engineering judgment
 
 14. It would apply the wrong professional or economic rule. First distinguish **Firms** from nearby concepts, then apply it under the section's stated conditions.
 
-15. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
-16. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
-17. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
-18. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
+15. First verify the governing jurisdiction and the engineer's legal role, because licensure requirements, exemptions, sealing authority, and responsible-charge duties depend on where and how the work is performed.
+16. A correctly remembered Model Law rule may not control the case if the jurisdiction adopted different language or if the engineer is not actually the person in responsible charge.
+17. Documenting who made technical decisions and when they were reviewed establishes whether responsible charge was genuinely exercised rather than merely claimed afterward.
+18. Check the applicable jurisdictional requirement, the engineer's license status and scope, and whether any signing or sealing action reflects genuine responsible charge over the work.
 19. **A.** The chapter uses **Licensure roles** as the section-specific engineering concept or criterion.
 
 20. **A.** The chapter uses **Practice** as the section-specific engineering concept or criterion.
@@ -357,12 +355,9 @@ D) A substitute for engineering judgment
 
 25. **A.** The chapter uses **Firms** as the section-specific engineering concept or criterion.
 
-26. **A.** The chapter uses **Licensure roles** as the section-specific engineering concept or criterion.
+26. **A.** For **Licensure roles** in *Licensure, Model Law, Model Rules, and Responsible Charge*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter uses **Practice** as the section-specific engineering concept or criterion.
-
-
----
+27. **A.** For **Practice** in *Licensure, Model Law, Model Rules, and Responsible Charge*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -399,7 +394,7 @@ D) A substitute for engineering judgment
 
 4. Each technical segment should be under the responsible charge of a qualified licensee responsible for that segment, while overall coordination may be separate.
 
-5. Unlicensed practice/misuse of protected title.
+5. This is unlicensed practice or misuse of a protected professional title because the person lacks the required authorization.
 
 6. Grounds for discipline and a competence violation.
 

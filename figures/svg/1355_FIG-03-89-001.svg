@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1080pt" height="792pt" viewBox="0 0 1080 792" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-10T17:48:05.427542</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 792 
+L 1080 792 
+L 1080 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 136.296 427.8384 
+L 597.672 427.8384 
+L 597.672 291.2184 
+L 136.296 291.2184 
+z
+" clip-path="url(#p8556cc08cb)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 390.0528 427.8384 
+L 390.0528 291.2184 
+" clip-path="url(#p8556cc08cb)" style="fill: none; stroke: #23313d; stroke-width: 3; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 390.0528 359.5284 
+L 741.852 359.5284 
+" clip-path="url(#p8556cc08cb)" style="fill: none; stroke: #235a78; stroke-width: 5; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 511.164 291.2184 
+L 511.164 258.4296 
+L 751.464 258.4296 
+" clip-path="url(#p8556cc08cb)" style="fill: none; stroke: #23313d; stroke-width: 1.8; stroke-linecap: square"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 638.122891 258.4296 
+Q 693.792095 258.4296 747.560641 258.4296 
+" clip-path="url(#p8556cc08cb)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 741.560641 255.4296 
+L 747.560641 258.4296 
+L 741.560641 261.4296 
+z
+" clip-path="url(#p8556cc08cb)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 61.404064 367.7256 
+Q 97.85126 367.7256 132.397797 367.7256 
+" clip-path="url(#p8556cc08cb)" style="fill: none; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 126.397797 364.7256 
+L 132.397797 367.7256 
+L 126.397797 370.7256 
+z
+" clip-path="url(#p8556cc08cb)" style="fill: #a23b34; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 734.237611 362.2608 
+Q 828.358767 362.2608 920.579266 362.2608 
+" clip-path="url(#p8556cc08cb)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 914.579266 359.2608 
+L 920.579266 362.2608 
+L 914.579266 365.2608 
+z
+" clip-path="url(#p8556cc08cb)" style="fill: #235a78; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="251.64" y="220.505887" transform="rotate(-0 251.64 220.505887)">Cap port pA=5 MPa</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="751.464" y="220.505887" transform="rotate(-0 751.464 220.505887)">Rod port pB=0 gauge</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="366.984" y="504.951425" transform="rotate(-0 366.984 504.951425)">D=40 mm; drod=20 mm</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(332.572656 600.258175)">Afull=1256.6 mm²; Aring=942.5 mm²</text>
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(144.775156 628.236675)">Extend F=pA Afull−pB Aring=6.283 kN; ideal retract at5 MPa=4.712 kN</text>
+   </g>
+  </g>
+  <g id="text_5">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="43.56" transform="rotate(-0 59.4 43.56)">Rod area makes hydraulic-cylinder retract force smaller than extend force</text>
+  </g>
+  <g id="text_6">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="59.4" y="770.616" transform="rotate(-0 59.4 770.616)">1355  •  FIG-03-89-001</text>
+  </g>
+  <g id="text_7">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 723.456625)">Assigned double-acting cylinder. Pressure acts on full piston area at the cap and annular area on the rod side. Gauge pressures are referenced consistently</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 736.174125)">to ambient; seals, friction, acceleration, and side load are omitted. Retract comparison reverses pressure ports with the opposite port at0 gauge.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p8556cc08cb">
+   <rect x="59.4" y="110.88" width="961.2" height="546.48"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1172,6 +1172,13 @@ the long-run process state.
 
 ## As the Handbook States It
 
+### Source Boundary
+
+- **FE-Handbook-supported** — The FE Reference Handbook pages cited by the ledger supply the equations, tables, definitions, or exam-scope statements identified for the split-required concepts in this chapter.
+- **Externally supported** — NIST/SEMATECH e-Handbook of Statistical Methods, Lot Acceptance Sampling (https://www.itl.nist.gov/div898/handbook/pmc/section2/pmc21.htm) supports Acceptance sampling purpose, single/double/multiple plans, acceptance numbers, and operating-characteristic curves.
+- **Guide synthesis** — The worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, and explanatory derivations that go beyond the cited Handbook/external-source statements are instructional synthesis developed for this guide.
+
+
 > **Source verification.** Checked against the supplied *FE Reference Handbook
 > 10.6*, eighth printing, April 2026. The Industrial and Systems FE exam
 > specification on printed p. 493 explicitly includes **sampling plans** and
@@ -1552,21 +1559,11 @@ D) process-control limits.
 
 17.
 
-    $$
-    \alpha
-    =
-    1-0.95
-    =
-    \boxed{0.05}.
-    $$
+    $$\alpha=1-0.95=\boxed{0.05}.$$ Thus the producer’s risk is five percent for the stated acceptance probability.
 
 18.
 
-    $$
-    \beta
-    =
-    \boxed{0.08}.
-    $$
+    $$\beta=\boxed{0.08}.$$ Thus the consumer’s risk is eight percent at the stated poor-quality lot condition.
 
 19. The
 

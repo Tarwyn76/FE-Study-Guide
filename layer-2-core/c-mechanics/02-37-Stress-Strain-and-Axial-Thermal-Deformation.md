@@ -67,7 +67,7 @@ Tension is commonly positive and compression negative. The relation is an averag
 
 **Problem.** A 20-kN axial load acts on 400 mm². Find stress.
 
-**Solution.** σ=20000/400=50 MPa.
+**Solution.** σ=20000/400=50 MPa. Reasoning: this uses the **37.1 Normal Stress and Average Axial Stress** model from Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -83,9 +83,9 @@ Modulus measures stiffness, not strength.
 
 ### Worked Example 2
 
-**Problem.** A 2-m bar elongates 1 mm. Find engineering strain.
+**Problem.** A 2-m bar elongates 1 mm. Find engineering strain, expressed as the dimensionless ratio ΔL/L.
 
-**Solution.** ε=0.001/2=0.0005.
+**Solution.** ε=0.001/2=0.0005. Reasoning: this uses the **37.2 Engineering Strain and Elastic Modulus** model from Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -103,7 +103,7 @@ For multiple segments, sum each segment's signed deformation. For continuously v
 
 **Problem.** If E=200 GPa and ε=0.0005, find stress.
 
-**Solution.** σ=100 MPa.
+**Solution.** σ=100 MPa. Reasoning: this uses the **37.3 Axial Deformation** model from Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -121,7 +121,7 @@ For isotropic linear elastic material, the Handbook gives a relation among Young
 
 **Problem.** A uniform bar P=30 kN, L=2 m, A=300 mm², E=200 GPa. Find elongation.
 
-**Solution.** δ=PL/AE=0.001 m=1.0 mm.
+**Solution.** δ=PL/AE=0.001 m=1.0 mm. Reasoning: this uses the **37.4 Poisson's Ratio and Elastic Constants** model from Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -143,7 +143,7 @@ If expansion or contraction is restrained, thermal strain contributes to stress.
 
 **Problem.** A steel bar α=12e-6/K, L=3 m, ΔT=50 K. Find free expansion.
 
-**Solution.** δ=12e-6(3)(50)=0.0018 m=1.8 mm.
+**Solution.** δ=12e-6(3)(50)=0.0018 m=1.8 mm. Reasoning: this uses the **37.5 Thermal Deformation** model from Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -161,7 +161,7 @@ Typical compatibility statements specify equal displacements at connected points
 
 **Problem.** If the bar in Problem 5 is fully restrained and E=200 GPa, find thermal stress magnitude.
 
-**Solution.** |σ|=EαΔT=120 MPa compressive for heating.
+**Solution.** |σ|=EαΔT=120 MPa compressive for heating. Reasoning: this uses the **37.6 Statically Indeterminate Axial Members** model from Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -179,7 +179,7 @@ Hoop stress is twice the axial stress for the same pressure, radius, and thickne
 
 **Problem.** If ν=0.30 and E=200 GPa, find G.
 
-**Solution.** G=E/[2(1+ν)]=76.9 GPa.
+**Solution.** G=E/[2(1+ν)]=76.9 GPa. Reasoning: this uses the **37.7 Thin-Walled Pressure Vessels** model from Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -189,17 +189,24 @@ Hoop stress is twice the axial stress for the same pressure, radius, and thickne
 
 **Problem.** Thin cylinder p=2 MPa, r=0.25 m, t=5 mm. Find hoop stress.
 
-**Solution.** σh=pr/t=100 MPa.
+**Solution.** σh=pr/t=100 MPa. Reasoning: this uses the **Integrated Worked Examples** model from Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ### Worked Example 9
 
 **Problem.** For Problem 8, find axial stress.
 
-**Solution.** σa=pr/(2t)=50 MPa.
+**Solution.** σa=pr/(2t)=50 MPa. Reasoning: this uses the **Integrated Worked Examples** model from Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — Engineering LibreTexts, Mechanics of Materials (Roylance) (https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_of_Materials_%28Roylance%29) supports stress-strain relationships, axial deformation, elastic behavior, and thermal strain/deformation.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Mechanics of Materials, printed pp. 130–134**.
 
@@ -371,32 +378,31 @@ D) It replaces the need for an FBD or kinematic model
 
 14. The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first, then apply **thin-wall pressure vessel**.
 
-15. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+15. Create the chapter-specific mechanics model for **Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation** before solving: define the body or system, coordinates, geometry, loads, constraints, and unknowns that enter the governing equations.
 
-16. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+16. Independently verify a result in **Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation** by substituting it back into the governing equation, checking units and signs, and testing equilibrium, compatibility, or a limiting case as appropriate.
 
-17. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+17. A negative result reverses an assumed direction only when the physical element can act in that opposite sense. In **Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation**, also test whether unilateral contact, tension-only, or compression-only behavior changes the model.
 
-18. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+18. Match the Handbook coordinate and sign convention before comparing expressions in **Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation**. A different positive direction can reverse component or moment signs while leaving the physical state unchanged.
 
-19. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+19. **A.** The nineteenth review item tests **axial stress** in **Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-20. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+20. **A.** The twentieth review item tests **axial strain** in **Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-21. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+21. **A.** The twenty-first review item tests **axial deformation** in **Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-22. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+22. **A.** The twenty-second review item tests **Poisson ratio** in **Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-23. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+23. **A.** The twenty-third review item tests **thermal deformation** in **Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-24. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+24. **A.** The twenty-fourth review item tests **axial compatibility** in **Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-25. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+25. **A.** The twenty-fifth review item tests **thin-wall pressure vessel** in **Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-26. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+26. **A.** The twenty-sixth review item tests **axial stress** in **Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This application check also tests whether the model assumptions are established before any numerical or symbolic manipulation.
 
-27. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
-
+27. **A.** The twenty-seventh review item tests **axial strain** in **Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This final application check emphasizes that a valid mechanics relation cannot replace the diagram, geometry, and constraints that define the problem.
 
 ---
 
@@ -427,11 +433,11 @@ D) It replaces the need for an FBD or kinematic model
 
 ## Practice Problem Solutions
 
-1. σ=20000/400=50 MPa.
+1. σ=20000/400=50 MPa. Practice verification: use the **37.1 Normal Stress and Average Axial Stress** relation for Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
-2. ε=0.001/2=0.0005.
+2. ε=0.001/2=0.0005. Practice verification: use the **37.2 Engineering Strain and Elastic Modulus** relation for Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
-3. σ=100 MPa.
+3. σ=100 MPa. Practice verification: use the **37.3 Axial Deformation** relation for Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
 4. δ=PL/AE=0.001 m=1.0 mm.
 
@@ -441,12 +447,11 @@ D) It replaces the need for an FBD or kinematic model
 
 7. G=E/[2(1+ν)]=76.9 GPa.
 
-8. σh=pr/t=100 MPa.
+8. σh=pr/t=100 MPa. Practice verification: use the **Integrated Worked Examples** relation for Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
-9. σa=pr/(2t)=50 MPa.
+9. σa=pr/(2t)=50 MPa. Practice verification: use the **Integrated Worked Examples** relation for Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
-10. A deformation compatibility equation.
-
+10. A deformation compatibility equation. Practice verification: use the **Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation** relation for Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
 ---
 

@@ -92,27 +92,26 @@ exams.
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-
-* 20.1 Compute the area between two curves, integrating with respect to $x$ or
+- **20.1** Compute the area between two curves, integrating with respect to $x$ or
   $y$ as appropriate
-* 20.2 Split an integral at intersection points when the upper and lower curves
+- **20.2** Split an integral at intersection points when the upper and lower curves
   exchange roles
-* 20.3 Distinguish net and total accumulation, and compute total distance
+- **20.3** Distinguish net and total accumulation, and compute total distance
   travelled from a velocity function
-* 20.4 Compute volumes by slicing, using the disc and washer methods
-* 20.5 Compute volumes by the shell method and choose between shells and washers
-* 20.6 Compute arc length and the surface area of a solid of revolution
-* 20.7 Compute the centroid of a plane area by integration and verify against
+- **20.4** Compute volumes by slicing, using the disc and washer methods
+- **20.5** Compute volumes by the shell method and choose between shells and washers
+- **20.6** Compute arc length and the surface area of a solid of revolution
+- **20.7** Compute the centroid of a plane area by integration and verify against
   tabulated results
-* 20.8 Compute first moments of area and relate them to the centroid
-* 20.9 Compute second moments of area about a stated axis
-* 20.10 Apply the parallel axis theorem to transfer a second moment between
+- **20.8** Compute first moments of area and relate them to the centroid
+- **20.9** Compute second moments of area about a stated axis
+- **20.10** Apply the parallel axis theorem to transfer a second moment between
   parallel axes
-* 20.11 Compute work done by a variable force, including spring and pumping
+- **20.11** Compute work done by a variable force, including spring and pumping
   problems
-* 20.12 Compute the root-mean-square value of a periodic function and explain
+- **20.12** Compute the root-mean-square value of a periodic function and explain
   its physical meaning
-* 20.13 Set up an integral from a physical description by identifying the
+- **20.13** Set up an integral from a physical description by identifying the
   contribution of a single slice
 
 ---
@@ -1158,6 +1157,18 @@ you are in is the skill.
 > ---
 
 ---
+
+
+### Source Boundary
+
+**FE-Handbook-supported.** The formulas, definitions, tables, and relations explicitly identified above are supported by the cited FE Reference Handbook 10.6 pages.
+
+**Externally supported.** Material extending beyond the Handbook is supported by:
+
+- OpenStax, Calculus Volume 2, §§2.4 and 2.6 — arc length/surface area and centroids/first moments.
+- Engineering LibreTexts, Engineering Statics: Open and Interactive, Ch. 10 and §10.3 — area moments of inertia and the parallel-axis theorem.
+
+**Guide synthesis.** Exam-navigation advice, mnemonic devices, sequencing, worked-example framing, interpretation cues, and study heuristics are guide-developed synthesis unless separately attributed.
 
 ## Where This Goes Wrong
 

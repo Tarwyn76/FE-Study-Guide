@@ -63,7 +63,7 @@ Signs convey direction along the chosen axis. Speed is the magnitude of velocity
 
 **Problem.** A car starts at 5 m/s and accelerates at 2 m/s² for 4 s. Find final velocity.
 
-**Solution.** v=5+2(4)=13 m/s.
+**Solution.** v=5+2(4)=13 m/s. Reasoning: this uses the **31.1 Position, Displacement, Velocity, and Acceleration** model from Chapter 02-31: Particle Kinematics — Rectilinear Motion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -81,7 +81,7 @@ Choose the equation that eliminates the variable you do not need.
 
 **Problem.** For Problem 1, find displacement over 4 s.
 
-**Solution.** Δs=5(4)+0.5(2)(16)=36 m.
+**Solution.** Δs=5(4)+0.5(2)(16)=36 m. Reasoning: this uses the **31.2 Constant-Acceleration Equations** model from Chapter 02-31: Particle Kinematics — Rectilinear Motion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -99,7 +99,7 @@ If upward is positive, \(a=-g\). If downward is positive, \(a=+g\). The physics 
 
 **Problem.** An object is dropped from rest for 2 s. Find speed using g=9.81 m/s².
 
-**Solution.** Speed=19.62 m/s downward.
+**Solution.** Speed=19.62 m/s downward. Reasoning: this uses the **31.3 Free Fall and Sign Convention** model from Chapter 02-31: Particle Kinematics — Rectilinear Motion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -117,7 +117,7 @@ Definite-integral form often reduces constant-of-integration mistakes.
 
 **Problem.** A particle has s=3t²+2t m. Find v and a.
 
-**Solution.** v=6t+2 m/s; a=6 m/s².
+**Solution.** v=6t+2 m/s; a=6 m/s². Reasoning: this uses the **31.4 Variable Acceleration as a Function of Time** model from Chapter 02-31: Particle Kinematics — Rectilinear Motion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -139,7 +139,7 @@ Integrate \(v\,dv=a(s)\,ds\) between known states.
 
 **Problem.** If v changes sign during an interval, how should total distance be found?
 
-**Solution.** Break at the turning point and sum absolute displacements.
+**Solution.** Break at the turning point and sum absolute displacements. Reasoning: this uses the **31.5 Acceleration as a Function of Position** model from Chapter 02-31: Particle Kinematics — Rectilinear Motion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -157,7 +157,7 @@ Distance traveled differs from displacement when velocity changes sign. Break th
 
 **Problem.** What is the area under an a-t curve?
 
-**Solution.** Change in velocity.
+**Solution.** Change in velocity. Reasoning: this uses the **31.6 Interpreting Motion Graphs** model from Chapter 02-31: Particle Kinematics — Rectilinear Motion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -175,7 +175,7 @@ A positive \(v_{A/B}\) means A moves in the positive direction relative to B; cl
 
 **Problem.** What is the slope of an s-t curve?
 
-**Solution.** Velocity.
+**Solution.** Velocity. Reasoning: this uses the **31.7 Relative Rectilinear Motion** model from Chapter 02-31: Particle Kinematics — Rectilinear Motion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -185,17 +185,24 @@ A positive \(v_{A/B}\) means A moves in the positive direction relative to B; cl
 
 **Problem.** When is a=v dv/ds useful?
 
-**Solution.** When acceleration is given as a function of position and time is absent.
+**Solution.** When acceleration is given as a function of position and time is absent. Reasoning: this uses the **Integrated Worked Examples** model from Chapter 02-31: Particle Kinematics — Rectilinear Motion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ### Worked Example 9
 
 **Problem.** Two cars move +x at 20 and 15 m/s. Find vA/B if A is first.
 
-**Solution.** 5 m/s.
+**Solution.** 5 m/s. Reasoning: this uses the **Integrated Worked Examples** model from Chapter 02-31: Particle Kinematics — Rectilinear Motion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — Engineering LibreTexts, Introductory Dynamics (Steeneken, Delft University of Technology) (https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Introductory_Dynamics%3A_2D_Kinematics_and_Kinetics_of_Point_Masses_and_Rigid_Bodies_%28Steeneken%29) supports rectilinear particle kinematics, motion graphs, derivatives/integrals of motion, and relative motion.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Dynamics, printed pp. 102–106**.
 
@@ -367,32 +374,31 @@ D) It replaces the need for an FBD or kinematic model
 
 14. The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first, then apply **relative rectilinear motion**.
 
-15. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+15. Create the chapter-specific mechanics model for **Chapter 02-31: Particle Kinematics — Rectilinear Motion** before solving: define the body or system, coordinates, geometry, loads, constraints, and unknowns that enter the governing equations.
 
-16. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+16. Independently verify a result in **Chapter 02-31: Particle Kinematics — Rectilinear Motion** by substituting it back into the governing equation, checking units and signs, and testing equilibrium, compatibility, or a limiting case as appropriate.
 
-17. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+17. A negative result reverses an assumed direction only when the physical element can act in that opposite sense. In **Chapter 02-31: Particle Kinematics — Rectilinear Motion**, also test whether unilateral contact, tension-only, or compression-only behavior changes the model.
 
-18. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+18. Match the Handbook coordinate and sign convention before comparing expressions in **Chapter 02-31: Particle Kinematics — Rectilinear Motion**. A different positive direction can reverse component or moment signs while leaving the physical state unchanged.
 
-19. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+19. **A.** The nineteenth review item tests **rectilinear kinematics** in **Chapter 02-31: Particle Kinematics — Rectilinear Motion**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-20. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+20. **A.** The twentieth review item tests **constant acceleration** in **Chapter 02-31: Particle Kinematics — Rectilinear Motion**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-21. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+21. **A.** The twenty-first review item tests **free fall** in **Chapter 02-31: Particle Kinematics — Rectilinear Motion**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-22. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+22. **A.** The twenty-second review item tests **time-dependent acceleration** in **Chapter 02-31: Particle Kinematics — Rectilinear Motion**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-23. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+23. **A.** The twenty-third review item tests **position-dependent acceleration** in **Chapter 02-31: Particle Kinematics — Rectilinear Motion**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-24. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+24. **A.** The twenty-fourth review item tests **motion graphs** in **Chapter 02-31: Particle Kinematics — Rectilinear Motion**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-25. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+25. **A.** The twenty-fifth review item tests **relative rectilinear motion** in **Chapter 02-31: Particle Kinematics — Rectilinear Motion**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-26. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+26. **A.** The twenty-sixth review item tests **rectilinear kinematics** in **Chapter 02-31: Particle Kinematics — Rectilinear Motion**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This application check also tests whether the model assumptions are established before any numerical or symbolic manipulation.
 
-27. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
-
+27. **A.** The twenty-seventh review item tests **constant acceleration** in **Chapter 02-31: Particle Kinematics — Rectilinear Motion**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This final application check emphasizes that a valid mechanics relation cannot replace the diagram, geometry, and constraints that define the problem.
 
 ---
 
@@ -427,22 +433,21 @@ D) It replaces the need for an FBD or kinematic model
 
 2. Δs=5(4)+0.5(2)(16)=36 m.
 
-3. Speed=19.62 m/s downward.
+3. Speed=19.62 m/s downward. Practice verification: use the **31.3 Free Fall and Sign Convention** relation for Chapter 02-31: Particle Kinematics — Rectilinear Motion, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
 4. v=6t+2 m/s; a=6 m/s².
 
 5. Break at the turning point and sum absolute displacements.
 
-6. Change in velocity.
+6. Change in velocity. Practice verification: use the **31.6 Interpreting Motion Graphs** relation for Chapter 02-31: Particle Kinematics — Rectilinear Motion, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
-7. Velocity.
+7. Velocity. Practice verification: use the **31.7 Relative Rectilinear Motion** relation for Chapter 02-31: Particle Kinematics — Rectilinear Motion, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
 8. When acceleration is given as a function of position and time is absent.
 
-9. 5 m/s.
+9. 5 m/s. Practice verification: use the **Integrated Worked Examples** relation for Chapter 02-31: Particle Kinematics — Rectilinear Motion, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
 10. They were derived assuming a is constant.
-
 
 ---
 

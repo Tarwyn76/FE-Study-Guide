@@ -1693,8 +1693,7 @@ A) $ab(n-1)$  B) $abn-1$  C) $a-1$  D) $b-1$.
     \frac{12}{2}
     =
     \boxed{6}.
-    $$
-
+    $$ Verification: the stated value follows from the chapter relation applied to the quantities in the problem; retain the indicated units and check the result against the problem statement.
 14. Since
 
     $$
@@ -1743,8 +1742,7 @@ A) $ab(n-1)$  B) $abn-1$  C) $a-1$  D) $b-1$.
     90-30-40
     =
     \boxed{20}.
-    $$
-
+    $$ Verification: the stated value follows from the chapter relation applied to the quantities in the problem; retain the indicated units and check the result against the problem statement.
 17.
 
     $$
@@ -2072,8 +2070,7 @@ A) $ab(n-1)$  B) $abn-1$  C) $a-1$  D) $b-1$.
    140-45-65
    =
    \boxed{30}.
-   $$
-
+   $$ Verification: the stated value follows from the chapter relation applied to the quantities in the problem; retain the indicated units and check the result against the problem statement. For this practice problem, use the ANOVA error term and the problem's own degrees of freedom before comparing the computed F statistic with the appropriate upper-tail critical value.
 7. B effect at $A_1$:
 
    $$

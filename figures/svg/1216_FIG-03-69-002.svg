@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1080pt" height="792pt" viewBox="0 0 1080 792" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-10T12:12:30.483186</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 792 
+L 1080 792 
+L 1080 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 309.312 433.3032 
+L 770.688 433.3032 
+L 770.688 269.3592 
+L 309.312 269.3592 
+z
+" clip-path="url(#pdccc0f90dc)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 80.626891 351.3312 
+Q 193.969716 351.3312 305.411883 351.3312 
+" clip-path="url(#pdccc0f90dc)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 299.411883 348.3312 
+L 305.411883 351.3312 
+L 299.411883 354.3312 
+z
+" clip-path="url(#pdccc0f90dc)" style="fill: #235a78; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 772.690891 351.3312 
+Q 886.033716 351.3312 997.475883 351.3312 
+" clip-path="url(#pdccc0f90dc)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 991.475883 348.3312 
+L 997.475883 351.3312 
+L 991.475883 354.3312 
+z
+" clip-path="url(#pdccc0f90dc)" style="fill: #235a78; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(424.339844 342.332762)">Production system</text>
+    <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(392.076172 374.126512)">Average WIP=120 units</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="165.132" y="253.01875" transform="rotate(-0 165.132 253.01875)">Arrivals</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(847.176312 240.30125)">Throughput</text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(855.063812 265.73625)">30 units/h</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 29px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="540" y="561.530987" transform="rotate(-0 540 561.530987)">WIP=TH×FT → FT=120/30=4 h</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="540" y="662.87875" transform="rotate(-0 540 662.87875)">Same boundary, same population, stable long-run averages</text>
+   </g>
+  </g>
+  <g id="text_6">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="43.56" transform="rotate(-0 59.4 43.56)">Little's law connects work in process, throughput, and average flow time</text>
+  </g>
+  <g id="text_7">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="59.4" y="770.616" transform="rotate(-0 59.4 770.616)">1216  •  FIG-03-69-002</text>
+  </g>
+  <g id="text_8">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 717.097875)">Assigned stable production flow without loss or hidden off-system queues. WIP counts units inside the chosen boundary and flow time spans their entry to</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 729.815375)">exit. Little’s law is not a deterministic individual-unit time guarantee. Reducing inventory without preserving flow can starve equipment; variability and</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 742.532875)">release rules matter.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pdccc0f90dc">
+   <rect x="59.4" y="110.88" width="961.2" height="546.48"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -197,6 +197,13 @@ Before calculation, identify the governing state, composition, reaction, exposur
 
 ## As the Handbook States It
 
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — Engineering LibreTexts, Materials Science (https://eng.libretexts.org/Bookshelves/Materials_Science) supports iron-carbon transformations, heat treatment, quenching, hardenability, diffusion, phase change, and processing-property relationships.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
+
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Materials Science/Structure of Matter pp. 117, 124–129**.
 
 **Source boundary:** The Handbook directly supplies Arrhenius diffusion coefficient, cold-work/recovery/recrystallization/grain-growth descriptions, quenching/martensite notes, hardenability, binary phase-diagram uses, invariant reactions, lever rule, and iron-iron-carbide diagram.
@@ -338,20 +345,17 @@ B) A universal rule independent of conditions
 C) A unit-conversion constant only
 D) A substitute for verified data
 
-26. Which answer best describes **diffusion**?
-A) A conditional engineering concept used under stated assumptions
-B) A universal rule independent of conditions
-C) A unit-conversion constant only
-D) A substitute for verified data
+26. A new problem requires **diffusion**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which answer best describes **thermomechanical processing**?
-A) A conditional engineering concept used under stated assumptions
-B) A universal rule independent of conditions
-C) A unit-conversion constant only
-D) A substitute for verified data
-
-
----
+27. After applying **thermomechanical processing**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -369,28 +373,24 @@ D) A substitute for verified data
 
 7. **heat treatment** is the central concept of §18.7; apply the definition, assumptions, and engineering consequence developed in that section.
 
-8. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+8. For §18.1, **Diffusion and the Arrhenius Temperature Dependence**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-9. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+9. For §18.2, **Cold Work, Recovery, Recrystallization, and Grain Growth**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-10. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+10. For §18.3, **Binary Phase Diagrams — What They Tell You**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-11. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+11. For §18.4, **The Lever Rule**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-12. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+12. For §18.5, **Invariant Reactions**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-13. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+13. For §18.6, **Iron-Iron Carbide and Steel Transformations**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-14. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+14. For §18.7, **Quenching, Hardenability, and Processing Choice**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-15. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-16. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-17. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-18. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
+15. Locate the Handbook diffusion relations, phase-diagram definitions, heat-treatment terminology, and any temperature- or composition-dependent data needed for the process.
+16. Check diffusion dimensions and temperature units, require phase fractions to remain between zero and one, and verify that the predicted phase path matches composition and temperature.
+17. Use the supplied phase diagram, diffusion coefficient, transformation data, or processing specification rather than substituting a generic trend from another material system.
+18. Tracing processing history through structure and then to properties is a guide-developed engineering interpretation used to organize the analysis.
 19. **A.** The chapter applies **diffusion** only under its stated physical/model assumptions.
 
 20. **A.** The chapter applies **thermomechanical processing** only under its stated physical/model assumptions.
@@ -405,12 +405,9 @@ D) A substitute for verified data
 
 25. **A.** The chapter applies **heat treatment** only under its stated physical/model assumptions.
 
-26. **A.** The chapter applies **diffusion** only under its stated physical/model assumptions.
+26. **A.** For **diffusion** in *Diffusion, Phase Change, Heat Treatment, and Processing*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter applies **thermomechanical processing** only under its stated physical/model assumptions.
-
-
----
+27. **A.** For **thermomechanical processing** in *Diffusion, Phase Change, Heat Treatment, and Processing*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -441,19 +438,19 @@ D) A substitute for verified data
 
 1. 1. D2/D1=exp[-Q/R(1/T2−1/T1)] = 36.91.
 
-2. 2. Strength generally increases; ductility decreases.
+2. Strength generally increases while ductility decreases because cold work raises dislocation density and impedes further dislocation motion.
 
-3. 3. Recovery → recrystallization → grain growth.
+3. Recovery → recrystallization → grain growth. This is the typical sequence as a cold-worked metal is heated to progressively higher annealing conditions.
 
 4. 4. wα=(80−50)/(80−20)=0.50; wβ=(50−20)/(80−20)=0.50.
 
-5. 5. Eutectic reaction.
+5. Eutectic reaction. At the eutectic composition and temperature, one liquid phase transforms into two solid phases simultaneously.
 
-6. 6. Eutectoid reaction.
+6. Eutectoid reaction. At the eutectoid condition, one solid phase transforms into two different solid phases.
 
-7. 7. Austenite.
+7. Austenite. Austenite is the face-centered-cubic iron phase that can dissolve substantially more carbon than ferrite.
 
-8. 8. Martensite.
+8. Martensite. Rapid quenching can produce this hard, supersaturated transformation product by suppressing diffusional decomposition of austenite.
 
 9. 9. Hardness is resistance to penetration; hardenability is the ability/ease of developing hardness through a section during heat treatment.
 

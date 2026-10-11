@@ -191,6 +191,13 @@ Before calculation, identify the governing state, composition, reaction, exposur
 
 ## As the Handbook States It
 
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — NIOSH Pocket Guide to Chemical Hazards and NIOSH occupational exposure-limit guidance (https://www.cdc.gov/niosh/npg/default.html ; https://www.cdc.gov/niosh/exposure-banding/about/index.html) supports exposure routes, toxicological effects, PEL/REL/IDLH interpretation, incompatibilities/reactivities, and chemical-risk controls.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
+
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Safety pp. 23–28**.
 
 **Source boundary:** The Handbook directly supplies dose-response definitions, LD50/LC50, chemical interaction types, exposure-limit examples, carcinogenic risk relation, noncarcinogen hazard index/RfD/NOAEL relations, and chemical compatibility/corrosion charts. Detailed exposure assessment workflow is guide-developed.
@@ -330,20 +337,17 @@ B) A universal rule independent of conditions
 C) A unit-conversion constant only
 D) A substitute for verified data
 
-26. Which answer best describes **acute toxicity**?
-A) A conditional engineering concept used under stated assumptions
-B) A universal rule independent of conditions
-C) A unit-conversion constant only
-D) A substitute for verified data
+26. A new problem requires **acute toxicity**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which answer best describes **exposure assessment**?
-A) A conditional engineering concept used under stated assumptions
-B) A universal rule independent of conditions
-C) A unit-conversion constant only
-D) A substitute for verified data
-
-
----
+27. After applying **exposure assessment**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -361,28 +365,24 @@ D) A substitute for verified data
 
 7. **chemical compatibility** is the central concept of §21.7; apply the definition, assumptions, and engineering consequence developed in that section.
 
-8. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+8. For §21.1, **Dose-Response, LD50, and LC50**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-9. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+9. For §21.2, **Exposure Routes, Dose, and Chronic Daily Intake**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-10. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+10. For §21.3, **Carcinogenic Risk**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-11. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+11. For §21.4, **Noncarcinogenic Risk — RfD and Hazard Index**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-12. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+12. For §21.5, **Workplace Exposure Limits**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-13. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+13. For §21.6, **Chemical Interaction Effects**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-14. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+14. For §21.7, **Chemical Compatibility and Storage Segregation**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-15. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-16. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-17. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-18. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
+15. Locate the Handbook toxicology definitions, dose or concentration relations, exposure-limit terminology, risk equations, and chemical-compatibility data applicable to the substance and exposure route.
+16. Check dose and concentration units, distinguish acute from time-weighted exposure, and verify that calculated probabilities or risk values remain within valid bounds.
+17. Use measured concentrations, toxicological reference values, exposure limits, mixture data, and compatibility charts when available instead of extrapolating from a qualitative hazard label.
+18. Separating hazard, exposure, dose-response, risk, and compatibility questions before selecting controls is guide-developed analytical structure.
 19. **A.** The chapter applies **acute toxicity** only under its stated physical/model assumptions.
 
 20. **A.** The chapter applies **exposure assessment** only under its stated physical/model assumptions.
@@ -397,12 +397,9 @@ D) A substitute for verified data
 
 25. **A.** The chapter applies **chemical compatibility** only under its stated physical/model assumptions.
 
-26. **A.** The chapter applies **acute toxicity** only under its stated physical/model assumptions.
+26. **A.** For **acute toxicity** in *Toxicology, Exposure Limits, Risk, and Chemical Compatibility*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter applies **exposure assessment** only under its stated physical/model assumptions.
-
-
----
+27. **A.** For **exposure assessment** in *Toxicology, Exposure Limits, Risk, and Chemical Compatibility*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -443,7 +440,7 @@ D) A substitute for verified data
 
 6. 6. It exceeds 1, indicating the possibility of adverse effects under the Handbook screening framework; it is not a probability.
 
-7. 7. Additive; synergistic; antagonistic.
+7. Additive, synergistic, and antagonistic describe combined toxic effects that are respectively equal to, greater than, or less than the expected sum.
 
 8. 8. PEL is an OSHA regulatory exposure limit; TLV is a threshold guideline from a different authority/source context. Use the limit specified by the problem.
 

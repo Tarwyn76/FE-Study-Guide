@@ -63,7 +63,7 @@ Thermal conductivity \(k\) is a material property and may depend on temperature.
 
 **Problem.** Plane wall k=2 W/m·K, A=4 m², L=0.1 m, ΔT=20 K. Find heat rate.
 
-**Solution.** Q=1600 W.
+**Solution.** Q=1600 W. The governing model here is **§55.1 Fourier's Law of Conduction**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of fourier's law of conduction.
 
 ---
 
@@ -81,7 +81,7 @@ The heat rate depends on area, conductivity, thickness, and temperature differen
 
 **Problem.** Plane-wall resistance L=0.05 m, k=0.5, A=2. Find R.
 
-**Solution.** R=0.05 K/W.
+**Solution.** R=0.05 K/W. The governing model here is **§55.2 Plane-Wall Conduction**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of plane-wall conduction.
 
 ---
 
@@ -99,7 +99,7 @@ Do not use the plane-wall \(L/kA\) expression across a thick cylinder unless a t
 
 **Problem.** Convection h=25 W/m²K, A=4 m². Find Rconv.
 
-**Solution.** 0.010 K/W.
+**Solution.** 0.010 K/W. The governing model here is **§55.3 Cylindrical-Wall Conduction**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of cylindrical-wall conduction.
 
 ---
 
@@ -117,7 +117,7 @@ Series resistances add directly. Parallel paths require conductance addition.
 
 **Problem.** Composite series resistances 0.02, 0.04, 0.01 K/W with ΔT=70 K. Find heat rate.
 
-**Solution.** Q=70/0.07=1000 W.
+**Solution.** Q=70/0.07=1000 W. The governing model here is **§55.4 Thermal Resistance Networks**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of thermal resistance networks.
 
 ---
 
@@ -135,7 +135,7 @@ Interface temperatures are useful for checking condensation, material limits, an
 
 **Problem.** Cylinder r1=0.02, r2=0.04 m, k=0.2, L=1 m. Find Rcond.
 
-**Solution.** R=ln2/(2π0.2)=0.552 K/W.
+**Solution.** R=ln2/(2π0.2)=0.552 K/W. The governing model here is **§55.5 Composite Walls and Interface Temperatures**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of composite walls and interface temperatures.
 
 ---
 
@@ -153,7 +153,7 @@ Beyond the critical radius, additional insulation decreases heat loss; below it,
 
 **Problem.** What does negative sign in Fourier's law indicate?
 
-**Solution.** Heat flows down the temperature gradient.
+**Solution.** Heat flows down the temperature gradient. The governing model here is **§55.6 Critical Radius of Insulation**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of critical radius of insulation.
 
 ---
 
@@ -171,7 +171,7 @@ Use kelvin or Celsius temperature differences interchangeably, but absolute temp
 
 **Problem.** Do series thermal resistances add?
 
-**Solution.** Yes.
+**Solution.** Yes. The governing model here is **§55.7 Conduction Modeling Checks**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of conduction modeling checks.
 
 ---
 
@@ -181,17 +181,24 @@ Use kelvin or Celsius temperature differences interchangeably, but absolute temp
 
 **Problem.** What is critical insulation radius for k=0.05 W/mK and h=10 W/m²K?
 
-**Solution.** rcr=0.005 m.
+**Solution.** rcr=0.005 m. The governing model here is **§55.7 Conduction Modeling Checks**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of conduction modeling checks.
 
 ### Worked Example 9
 
 **Problem.** Can Celsius differences be used in conduction equations?
 
-**Solution.** Yes; a temperature difference in °C equals the same difference in K.
+**Solution.** Yes; a temperature difference in °C equals the same difference in K. The governing model here is **§55.7 Conduction Modeling Checks**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of conduction modeling checks.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — OpenStax University Physics Volume 2, mechanisms of heat transfer (https://openstax.org/books/university-physics-volume-2/pages/1-6-mechanisms-of-heat-transfer) supports steady conduction, Fourier-law interpretation, thermal resistance, series/parallel heat-flow reasoning, and model checks.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Heat Transfer, printed pp. 209–211**.
 
@@ -318,20 +325,17 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. Which statement best describes **Fourier conduction**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
+26. A new problem requires **Fourier conduction**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which statement best describes **plane-wall conduction**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
-
-
----
+27. After applying **plane-wall conduction**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -363,17 +367,17 @@ D) It replaces conservation laws
 
 14. The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then apply **conduction audit**.
 
-15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Conduction and Thermal Resistance**, apply this check specifically through **§55.1 Fourier's Law of Conduction**, including that section's stated assumptions and reference quantities.
 
-16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Conduction and Thermal Resistance**, apply this check specifically through **§55.2 Plane-Wall Conduction**, including that section's stated assumptions and reference quantities.
 
-17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Conduction and Thermal Resistance**, apply this check specifically through **§55.3 Cylindrical-Wall Conduction**, including that section's stated assumptions and reference quantities.
 
-18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Conduction and Thermal Resistance**, apply this check specifically through **§55.4 Thermal Resistance Networks**, including that section's stated assumptions and reference quantities.
 
-19. **A.** The chapter applies **Fourier conduction** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+19. **A.** The chapter applies **Fourier conduction** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Conduction and Thermal Resistance**, apply this check specifically through **§55.5 Composite Walls and Interface Temperatures**, including that section's stated assumptions and reference quantities.
 
-20. **A.** The chapter applies **plane-wall conduction** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+20. **A.** The chapter applies **plane-wall conduction** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Conduction and Thermal Resistance**, apply this check specifically through **§55.6 Critical Radius of Insulation**, including that section's stated assumptions and reference quantities.
 
 21. **A.** The chapter applies **cylindrical conduction** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
@@ -385,12 +389,9 @@ D) It replaces conservation laws
 
 25. **A.** The chapter applies **conduction audit** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** The chapter applies **Fourier conduction** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+26. **A.** For **Fourier conduction** in *Conduction and Thermal Resistance*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter applies **plane-wall conduction** only after the state, geometry, flow/thermal regime, and assumptions are defined.
-
-
----
+27. **A.** For **plane-wall conduction** in *Conduction and Thermal Resistance*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -419,25 +420,25 @@ D) It replaces conservation laws
 
 ## Practice Problem Solutions
 
-1. Q=1600 W.
+1. Q=1600 W. This result follows from **§55.1 Fourier's Law of Conduction**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-2. R=0.05 K/W.
+2. R=0.05 K/W. This result follows from **§55.2 Plane-Wall Conduction**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-3. 0.010 K/W.
+3. 0.010 K/W. This result follows from **§55.3 Cylindrical-Wall Conduction**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-4. Q=70/0.07=1000 W.
+4. Q=70/0.07=1000 W. This result follows from **§55.4 Thermal Resistance Networks**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 5. R=ln2/(2π0.2)=0.552 K/W.
 
-6. Heat flows down the temperature gradient.
+6. Heat flows down the temperature gradient. This result follows from **§55.6 Critical Radius of Insulation**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-7. Yes.
+7. Yes. This result follows from **§55.7 Conduction Modeling Checks**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-8. rcr=0.005 m.
+8. rcr=0.005 m. This result follows from **§55.1 Fourier's Law of Conduction**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 9. Yes; a temperature difference in °C equals the same difference in K.
 
-10. When radial area variation is significant.
+10. When radial area variation is significant. This result follows from **§55.3 Cylindrical-Wall Conduction**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 
 ---

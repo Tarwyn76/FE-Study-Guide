@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1008pt" height="720pt" viewBox="0 0 1008 720" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-09T14:22:56.167756</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 720 
+L 1008 720 
+L 1008 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 297.6624 398.88 
+L 710.3376 398.88 
+L 710.3376 220.032 
+L 297.6624 220.032 
+z
+" clip-path="url(#pa240d16932)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 57.439547 309.456 
+Q 176.552122 309.456 293.764039 309.456 
+" clip-path="url(#pa240d16932)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 287.764039 306.456 
+L 293.764039 309.456 
+L 287.764039 312.456 
+z
+" clip-path="url(#pa240d16932)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 712.337147 309.456 
+Q 831.449722 309.456 948.661639 309.456 
+" clip-path="url(#pa240d16932)" style="fill: none; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 942.661639 306.456 
+L 948.661639 309.456 
+L 942.661639 312.456 
+z
+" clip-path="url(#pa240d16932)" style="fill: #a23b34; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="315.250687" transform="rotate(-0 504 315.250687)">ADIABATIC REACTOR</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(67.301794 180.751773)">A feed: 1 mol/s</text>
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(88.082653 211.749664)">T_in=300 K</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(718.404947 181.575445)">A=0.20; B=0.80 mol/s</text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(768.012525 209.877867)">T_out=700 K</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="469.228687" transform="rotate(-0 504 469.228687)">A→B; ξ̇=0.80 mol/s; ΔH_r(300 K)=−50 kJ/mol</text>
+   </g>
+   <g id="text_5">
+    <!-- $0=\dot\xi\Delta H_r+\sum_{out}\dot n_iC_{p,i}(T_{out}-300)$ -->
+    <g style="fill: #23313d" transform="translate(325.8 574.2)">
+     <text>
+      <tspan x="0" y="-0.96875" style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">0</tspan>
+      <tspan x="19.945312" y="-0.96875" style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">=</tspan>
+      <tspan x="58.339844" y="-0.96875" style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">Δ</tspan>
+      <tspan x="59.242188" y="-8.765625" style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">̇</tspan>
+      <tspan x="105.04375" y="-0.96875" style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">+</tspan>
+      <tspan x="171.635156" y="-3.96875" style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">̇</tspan>
+      <tspan x="219.465625" y="-0.96875" style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">(</tspan>
+      <tspan x="276.334375" y="-0.96875" style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">−</tspan>
+      <tspan x="301.119531" y="-0.96875" style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">3</tspan>
+      <tspan x="316.389062" y="-0.96875" style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">0</tspan>
+      <tspan x="331.658594" y="-0.96875" style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">0</tspan>
+      <tspan x="346.928125" y="-0.96875" style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">)</tspan>
+      <tspan x="44.730469" y="-0.96875" style="font-style: oblique; font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">ξ</tspan>
+      <tspan x="74.757812" y="-0.96875" style="font-style: oblique; font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">H</tspan>
+      <tspan x="157.342187" y="-0.96875" style="font-style: oblique; font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">n</tspan>
+      <tspan x="178.106641" y="-0.96875" style="font-style: oblique; font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">C</tspan>
+      <tspan x="228.828906" y="-0.96875" style="font-style: oblique; font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">T</tspan>
+      <tspan x="92.804688" y="2.96875" style="font-style: oblique; font-size: 16.8px; font-family: 'DejaVu Sans'; fill: #23313d">r</tspan>
+      <tspan x="129.828906" y="21.848437" style="font-style: oblique; font-size: 16.8px; font-family: 'DejaVu Sans'; fill: #23313d">o</tspan>
+      <tspan x="140.107422" y="21.848437" style="font-style: oblique; font-size: 16.8px; font-family: 'DejaVu Sans'; fill: #23313d">u</tspan>
+      <tspan x="150.755078" y="21.848437" style="font-style: oblique; font-size: 16.8px; font-family: 'DejaVu Sans'; fill: #23313d">t</tspan>
+      <tspan x="172.782813" y="2.96875" style="font-style: oblique; font-size: 16.8px; font-family: 'DejaVu Sans'; fill: #23313d">i</tspan>
+      <tspan x="194.864453" y="2.96875" style="font-style: oblique; font-size: 16.8px; font-family: 'DejaVu Sans'; fill: #23313d">p</tspan>
+      <tspan x="214.141797" y="2.96875" style="font-style: oblique; font-size: 16.8px; font-family: 'DejaVu Sans'; fill: #23313d">i</tspan>
+      <tspan x="243.489062" y="2.96875" style="font-style: oblique; font-size: 16.8px; font-family: 'DejaVu Sans'; fill: #23313d">o</tspan>
+      <tspan x="253.767578" y="2.96875" style="font-style: oblique; font-size: 16.8px; font-family: 'DejaVu Sans'; fill: #23313d">u</tspan>
+      <tspan x="264.415234" y="2.96875" style="font-style: oblique; font-size: 16.8px; font-family: 'DejaVu Sans'; fill: #23313d">t</tspan>
+      <tspan x="132.828906" y="-0.96875" style="font-size: 24px; font-family: 'DejaVu Sans Display'; fill: #23313d">∑</tspan>
+      <tspan x="205.528516" y="2.96875" style="font-size: 16.8px; font-family: 'DejaVu Sans'; fill: #23313d">,</tspan>
+     </text>
+    </g>
+   </g>
+  </g>
+  <g id="text_6">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">An adiabatic reactor converts reaction enthalpy into stream sensible enthalpy</text>
+  </g>
+  <g id="text_7">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="55.44" y="700.56" transform="rotate(-0 55.44 700.56)">0759  •  FIG-03-03-007</text>
+  </g>
+  <g id="text_8">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(108.460156 650.142812)">Hypothetical one-to-one reaction, constant C_p,A=C_p,B=0.100 kJ/(mol·K), no heat/shaft work/KE/PE change and feed at the reference temperature. Reaction</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(124.367188 663.138438)">releases 40 kW; outlet heat-capacity rate is 0.100 kW/K, giving a 400 K rise. Actual adiabatic temperature also depends on conversion, equilibrium and</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(464.242969 675.855937)">phase behavior.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pa240d16932">
+   <rect x="55.44" y="100.8" width="897.12" height="496.8"/>
+  </clipPath>
+ </defs>
+</svg>

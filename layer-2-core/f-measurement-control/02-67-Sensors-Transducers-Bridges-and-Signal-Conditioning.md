@@ -65,7 +65,7 @@ RTDs are resistive sensors, so the measurement circuit must supply excitation an
 
 **Problem.** A Pt100 RTD has R0=100 Ω at 0°C and α=0.00385/°C. Find R at 100°C using the linear Handbook relation.
 
-**Solution.** R=100[1+0.00385(100)]=138.5 Ω.
+**Solution.** R=100[1+0.00385(100)]=138.5 Ω. The governing model here is **§67.1 Resistance Temperature Detectors — RTDs**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of resistance temperature detectors — rtds.
 
 ---
 
@@ -83,9 +83,7 @@ Temperature in the exponential and Steinhart–Hart relations is absolute temper
 
 **Problem.** An NTC thermistor has R0=10 kΩ at T0=298.15 K and β=3950 K. Estimate R at 323.15 K.
 
-**Solution.** R=10000 exp[3950(1/323.15-1/298.15)]≈3.59 kΩ.
-
----
+**Solution.** R=10000 exp[3950(1/323.15-1/298.15)]≈3.59 kΩ. The governing model here is **§67.2 Thermistors**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of thermistors. Thus R ≈ 3.59×10^3 Ω.---
 
 ## 67.3 Thermocouples and the Seebeck Effect
 
@@ -101,7 +99,7 @@ The Handbook supplies common J, K, T, and E material combinations and temperatur
 
 **Problem.** A thermocouple sensitivity is approximated as 41 µV/°C and junction difference is 100°C. Estimate output.
 
-**Solution.** 4.1 mV.
+**Solution.** 4.1 mV. The governing model here is **§67.3 Thermocouples and the Seebeck Effect**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of thermocouples and the seebeck effect.
 
 ---
 
@@ -119,7 +117,7 @@ Piezoresistive materials can have much larger gauge factors than metallic gauges
 
 **Problem.** A metallic strain gauge has GF=2.0 and strain 500 µε. Find ΔR/R.
 
-**Solution.** ΔR/R=GF·ε=2(500×10^-6)=0.001.
+**Solution.** ΔR/R=GF·ε=2(500×10^-6)=0.001. The governing model here is **§67.4 Strain Gauges, Piezoresistive, and Piezoelectric Transducers**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of strain gauges, piezoresistive, and piezoelectric transducers.
 
 ---
 
@@ -137,7 +135,7 @@ For one small resistance change in an otherwise equal bridge, the Handbook gives
 
 **Problem.** A 350 Ω gauge has ΔR/R=0.001 in a quarter bridge with Vs=5 V. Estimate bridge output.
 
-**Solution.** Vo≈(0.001/4)(5)=1.25 mV.
+**Solution.** Vo≈(0.001/4)(5)=1.25 mV. The governing model here is **§67.5 Wheatstone Bridges**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of wheatstone bridges.
 
 ---
 
@@ -155,7 +153,7 @@ The governing transduction principle must match the measurand and environment.
 
 **Problem.** Classify a pressure reading referenced to atmosphere.
 
-**Solution.** Gauge pressure.
+**Solution.** Gauge pressure. The governing model here is **§67.6 Pressure, pH, and Chemical Sensors**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of pressure, ph, and chemical sensors.
 
 ---
 
@@ -173,7 +171,7 @@ The conditioner should make the signal compatible with the acquisition system wi
 
 **Problem.** Why is signal conditioning often needed before an ADC?
 
-**Solution.** To amplify/scale/filter/isolate/complete excitation so the signal fits the ADC and high-frequency content does not alias.
+**Solution.** To amplify/scale/filter/isolate/complete excitation so the signal fits the ADC and high-frequency content does not alias. The governing model here is **§67.7 Signal Conditioning**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of signal conditioning.
 
 ---
 
@@ -183,17 +181,24 @@ The conditioner should make the signal compatible with the acquisition system wi
 
 **Problem.** A pressure sensor reports 250 kPa absolute when atmosphere is 100 kPa. Find gauge pressure.
 
-**Solution.** 150 kPa.
+**Solution.** 150 kPa. The governing model here is **§67.7 Signal Conditioning**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of signal conditioning.
 
 ### Worked Example 9
 
 **Problem.** A pH electrode has E0=0, S=59 mV/pH, pHi=7 and pHa=5. Find Eel from the Handbook form.
 
-**Solution.** Eel=0-59(5-7)=+118 mV.
+**Solution.** Eel=0-59(5-7)=+118 mV. The governing model here is **§67.7 Signal Conditioning**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of signal conditioning.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — Engineering LibreTexts, Instrumentation and Measurement references (https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/Instrumentation) supports sensors/transducers, bridge circuits, amplification/filtering, loading, and signal-conditioning chains.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Instrumentation, Measurement, and Control, printed pp. 225–231**.
 
@@ -322,20 +327,17 @@ B) It is independent of calibration and dynamics
 C) It replaces physical validation
 D) It is always a static scalar
 
-26. Which statement best describes **resistance temperature detector**?
-A) Its meaning depends on a defined measurement/control model and assumptions
-B) It is independent of calibration and dynamics
-C) It replaces physical validation
-D) It is always a static scalar
+26. A new problem requires **resistance temperature detector**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which statement best describes **thermistor**?
-A) Its meaning depends on a defined measurement/control model and assumptions
-B) It is independent of calibration and dynamics
-C) It replaces physical validation
-D) It is always a static scalar
-
-
----
+27. After applying **thermistor**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -353,48 +355,45 @@ D) It is always a static scalar
 
 7. **signal conditioning** is developed in §67.7. Use the displayed relation and the conditions stated there.
 
-8. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+8. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **Sensors, Transducers, Bridges, and Signal Conditioning**, apply this check specifically through **§67.1 Resistance Temperature Detectors — RTDs**, including that section's stated assumptions and reference quantities.
 
-9. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+9. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **Sensors, Transducers, Bridges, and Signal Conditioning**, apply this check specifically through **§67.2 Thermistors**, including that section's stated assumptions and reference quantities.
 
-10. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+10. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **Sensors, Transducers, Bridges, and Signal Conditioning**, apply this check specifically through **§67.3 Thermocouples and the Seebeck Effect**, including that section's stated assumptions and reference quantities.
 
-11. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+11. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **Sensors, Transducers, Bridges, and Signal Conditioning**, apply this check specifically through **§67.4 Strain Gauges, Piezoresistive, and Piezoelectric Transducers**, including that section's stated assumptions and reference quantities.
 
-12. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+12. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **Sensors, Transducers, Bridges, and Signal Conditioning**, apply this check specifically through **§67.5 Wheatstone Bridges**, including that section's stated assumptions and reference quantities.
 
-13. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+13. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **Sensors, Transducers, Bridges, and Signal Conditioning**, apply this check specifically through **§67.6 Pressure, pH, and Chemical Sensors**, including that section's stated assumptions and reference quantities.
 
-14. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+14. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **Sensors, Transducers, Bridges, and Signal Conditioning**, apply this check specifically through **§67.7 Signal Conditioning**, including that section's stated assumptions and reference quantities.
 
-15. Calibration establishes comparison to reference values; uncertainty quantifies doubt in the reported result. Calibration can reduce bias but does not make uncertainty zero.
+15. Calibration establishes comparison to reference values; uncertainty quantifies doubt in the reported result. Calibration can reduce bias but does not make uncertainty zero. For **Sensors, Transducers, Bridges, and Signal Conditioning**, apply this check specifically through **§67.1 Resistance Temperature Detectors — RTDs**, including that section's stated assumptions and reference quantities.
 
-16. A sensor or plant may not follow a changing input instantaneously; lag, damping, and bandwidth can change the observed or controlled response.
+16. A sensor or plant may not follow a changing input instantaneously; lag, damping, and bandwidth can change the observed or controlled response. For **Sensors, Transducers, Bridges, and Signal Conditioning**, apply this check specifically through **§67.2 Thermistors**, including that section's stated assumptions and reference quantities.
 
-17. Check units, limiting behavior, signal range, conservation/physical plausibility, pole stability, and whether sampling/bandwidth assumptions are satisfied.
+17. Check units, limiting behavior, signal range, conservation/physical plausibility, pole stability, and whether sampling/bandwidth assumptions are satisfied. For **Sensors, Transducers, Bridges, and Signal Conditioning**, apply this check specifically through **§67.3 Thermocouples and the Seebeck Effect**, including that section's stated assumptions and reference quantities.
 
-18. Different sources can use different definitions for gain, time constants, signs, and frequency terms; the mapping must be established first.
+18. Different sources can use different definitions for gain, time constants, signs, and frequency terms; the mapping must be established first. For **Sensors, Transducers, Bridges, and Signal Conditioning**, apply this check specifically through **§67.4 Strain Gauges, Piezoresistive, and Piezoelectric Transducers**, including that section's stated assumptions and reference quantities.
 
-19. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+19. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Sensors, Transducers, Bridges, and Signal Conditioning**, apply this check specifically through **§67.5 Wheatstone Bridges**, including that section's stated assumptions and reference quantities.
 
-20. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+20. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Sensors, Transducers, Bridges, and Signal Conditioning**, apply this check specifically through **§67.6 Pressure, pH, and Chemical Sensors**, including that section's stated assumptions and reference quantities.
 
-21. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+21. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Sensors, Transducers, Bridges, and Signal Conditioning**, apply this check specifically through **§67.7 Signal Conditioning**, including that section's stated assumptions and reference quantities.
 
-22. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+22. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Sensors, Transducers, Bridges, and Signal Conditioning**, apply this check specifically through **§67.1 Resistance Temperature Detectors — RTDs**, including that section's stated assumptions and reference quantities.
 
-23. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+23. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Sensors, Transducers, Bridges, and Signal Conditioning**, apply this check specifically through **§67.2 Thermistors**, including that section's stated assumptions and reference quantities.
 
-24. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+24. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Sensors, Transducers, Bridges, and Signal Conditioning**, apply this check specifically through **§67.3 Thermocouples and the Seebeck Effect**, including that section's stated assumptions and reference quantities.
 
-25. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+25. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Sensors, Transducers, Bridges, and Signal Conditioning**, apply this check specifically through **§67.4 Strain Gauges, Piezoresistive, and Piezoelectric Transducers**, including that section's stated assumptions and reference quantities.
 
-26. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+26. **A.** For **resistance temperature detector** in *Sensors, Transducers, Bridges, and Signal Conditioning*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
-
-
----
+27. **A.** For **thermistor** in *Sensors, Transducers, Bridges, and Signal Conditioning*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -427,19 +426,19 @@ D) It is always a static scalar
 
 2. R=10000 exp[3950(1/323.15-1/298.15)]≈3.59 kΩ.
 
-3. 4.1 mV.
+3. 4.1 mV. This result follows from **§67.3 Thermocouples and the Seebeck Effect**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 4. ΔR/R=GF·ε=2(500×10^-6)=0.001.
 
 5. Vo≈(0.001/4)(5)=1.25 mV.
 
-6. Gauge pressure.
+6. Gauge pressure. This result follows from **§67.6 Pressure, pH, and Chemical Sensors**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 7. To amplify/scale/filter/isolate/complete excitation so the signal fits the ADC and high-frequency content does not alias.
 
-8. 150 kPa.
+8. 150 kPa. This result follows from **§67.1 Resistance Temperature Detectors — RTDs**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-9. Eel=0-59(5-7)=+118 mV.
+9. Eel=0-59(5-7)=+118 mV. This result follows from **§67.2 Thermistors**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 10. Its charge output is produced by changing deformation and practical leakage makes long-term static measurement difficult.
 

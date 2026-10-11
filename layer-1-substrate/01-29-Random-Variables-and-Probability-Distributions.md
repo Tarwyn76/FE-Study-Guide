@@ -1056,6 +1056,14 @@ Handbook correctly:
 - and the four binomial assumptions.
 
 ---
+### Source boundary for split-required material
+**FE-Handbook-supported.** The formulas, definitions, tables, and methods identified in the verified Handbook table above are supported by the cited printed pages of the NCEES FE Reference Handbook 10.6.
+**Externally supported.** The following material extends beyond what is explicitly supplied in the Handbook and is supported by the listed educational references:
+- Penn State STAT 414, Lesson 24 “Several Independent Random Variables” — mean and variance of linear combinations of independent random variables. https://online.stat.psu.edu/stat414/Lesson24
+- OpenStax *Introductory Statistics 2e*, §4.3 “Binomial Distribution” — Bernoulli assumptions, binomial probability model, mean, and variance. https://openstax.org/books/introductory-statistics-2e/pages/4-3-binomial-distribution
+
+**Guide synthesis.** Worked-example sequencing, FE-oriented lookup strategy, decision rules, cautions, mnemonics, and explanatory bridges are guide-developed synthesis unless specifically attributed above.
+
 
 ## Where This Goes Wrong
 

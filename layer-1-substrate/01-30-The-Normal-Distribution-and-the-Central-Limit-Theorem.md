@@ -597,6 +597,13 @@ The **68–95–99.7 rule** is presented here as a useful interpretation of norm
 **Know without a lookup:** $z=(x-\mu)/\sigma$; positive $z$ is above the mean; negative $z$ is below; $F$ is left area; $R$ is right area; $W$ is symmetric center area; sample-mean standard error is $\sigma/\sqrt n$; and the CLT concerns the distribution of sums/averages, not transformation of the original population itself.
 
 ---
+### Source boundary for split-required material
+**FE-Handbook-supported.** The formulas, definitions, tables, and methods identified in the verified Handbook table above are supported by the cited printed pages of the NCEES FE Reference Handbook 10.6.
+**Externally supported.** The following material extends beyond what is explicitly supplied in the Handbook and is supported by the listed educational references:
+- OpenStax *Introductory Statistics 2e*, §7.3 “Using the Central Limit Theorem” — CLT application to sample means and sums, standard error, and normal approximation. https://openstax.org/books/introductory-statistics-2e/pages/7-3-using-the-central-limit-theorem
+
+**Guide synthesis.** Worked-example sequencing, FE-oriented lookup strategy, decision rules, cautions, mnemonics, and explanatory bridges are guide-developed synthesis unless specifically attributed above.
+
 
 ## Where This Goes Wrong
 
@@ -736,7 +743,7 @@ D) every sample of size 30 being exactly normal.
 
 ### Calculation
 
-11. $z=(95-80)/10=\boxed{1.5}$.
+11. $z=(95-80)/10=\boxed{1.5}$. The observation is therefore 1.5 standard deviations above the stated mean.
 12. $x=80+(-1.2)(10)=\boxed{68}$.
 13. $P(Z>1)=1-0.8413=\boxed{0.1587}$.
 14. $P(1<Z<2)=0.9772-0.8413=\boxed{0.1359}$.

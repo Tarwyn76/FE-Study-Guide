@@ -63,7 +63,7 @@ Energy may cross by heat and work in either system type. Define the boundary bef
 
 **Problem.** Classify pressure as intensive or extensive.
 
-**Solution.** Intensive.
+**Solution.** Intensive. The governing model here is **§47.1 Systems, Surroundings, and Boundaries**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of systems, surroundings, and boundaries.
 
 ---
 
@@ -81,7 +81,7 @@ Pressure and temperature are intensive. Total volume and total internal energy a
 
 **Problem.** Classify total internal energy U as intensive or extensive.
 
-**Solution.** Extensive.
+**Solution.** Extensive. The governing model here is **§47.2 Intensive, Extensive, and Specific Properties**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of intensive, extensive, and specific properties.
 
 ---
 
@@ -99,7 +99,7 @@ Entropy is a state property central to the second law; it is not simply 'waste h
 
 **Problem.** If U=500 kJ and m=10 kg, find u.
 
-**Solution.** u=50 kJ/kg.
+**Solution.** u=50 kJ/kg. The governing model here is **§47.3 Internal Energy, Enthalpy, and Entropy**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of internal energy, enthalpy, and entropy.
 
 ---
 
@@ -117,7 +117,7 @@ Heat and work are energy transfers, not stored properties. A system does not 'co
 
 **Problem.** If u=200 kJ/kg, P=300 kPa, v=0.5 m³/kg, find h.
 
-**Solution.** h=u+Pv=200+150=350 kJ/kg.
+**Solution.** h=u+Pv=200+150=350 kJ/kg. The governing model here is **§47.4 Heat and Work Sign Convention**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of heat and work sign convention.
 
 ---
 
@@ -135,7 +135,7 @@ On a \(P-v\) diagram, boundary work is the area under the process curve between 
 
 **Problem.** A constant-pressure specific-volume change is 0.2 m³/kg at P=500 kPa. Find specific boundary work.
 
-**Solution.** wb=PΔv=100 kJ/kg.
+**Solution.** wb=PΔv=100 kJ/kg. The governing model here is **§47.5 Boundary Work**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of boundary work.
 
 ---
 
@@ -153,7 +153,7 @@ Do not apply a process formula because the endpoint states happen to fit; the pr
 
 **Problem.** What is positive heat under Handbook sign convention?
 
-**Solution.** Heat into the system.
+**Solution.** Heat into the system. The governing model here is **§47.6 Common Thermodynamic Processes**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of common thermodynamic processes.
 
 ---
 
@@ -171,7 +171,7 @@ The first step in any thermodynamics problem is therefore state identification, 
 
 **Problem.** What is positive work?
 
-**Solution.** Work done by the system/outward.
+**Solution.** Work done by the system/outward. The governing model here is **§47.7 State Principle and Modeling Discipline**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of state principle and modeling discipline.
 
 ---
 
@@ -181,17 +181,24 @@ The first step in any thermodynamics problem is therefore state identification, 
 
 **Problem.** Is heat a state property?
 
-**Solution.** No.
+**Solution.** No. The governing model here is **§47.7 State Principle and Modeling Discipline**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of state principle and modeling discipline.
 
 ### Worked Example 9
 
 **Problem.** How many independent intensive properties fix a simple single-phase pure-substance state?
 
-**Solution.** Two.
+**Solution.** Two. The governing model here is **§47.7 State Principle and Modeling Discipline**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of state principle and modeling discipline.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — OpenStax University Physics Volume 2, thermodynamics chapters (https://openstax.org/books/university-physics-volume-2/pages/3-introduction) supports thermodynamic systems, equilibrium state variables, heat/work interactions, path versus state functions, and modeling discipline.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Thermodynamics, printed pp. 143 and 147–148**.
 
@@ -318,20 +325,17 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. Which statement best describes **thermodynamic system**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
+26. A new problem requires **thermodynamic system**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which statement best describes **thermodynamic property**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
-
-
----
+27. After applying **thermodynamic property**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -363,17 +367,17 @@ D) It replaces conservation laws
 
 14. The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then apply **thermodynamic state**.
 
-15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Thermodynamic Systems, Properties, Work, and Heat**, apply this check specifically through **§47.1 Systems, Surroundings, and Boundaries**, including that section's stated assumptions and reference quantities.
 
-16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Thermodynamic Systems, Properties, Work, and Heat**, apply this check specifically through **§47.2 Intensive, Extensive, and Specific Properties**, including that section's stated assumptions and reference quantities.
 
-17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Thermodynamic Systems, Properties, Work, and Heat**, apply this check specifically through **§47.3 Internal Energy, Enthalpy, and Entropy**, including that section's stated assumptions and reference quantities.
 
-18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Thermodynamic Systems, Properties, Work, and Heat**, apply this check specifically through **§47.4 Heat and Work Sign Convention**, including that section's stated assumptions and reference quantities.
 
-19. **A.** The chapter applies **thermodynamic system** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+19. **A.** The chapter applies **thermodynamic system** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Thermodynamic Systems, Properties, Work, and Heat**, apply this check specifically through **§47.5 Boundary Work**, including that section's stated assumptions and reference quantities.
 
-20. **A.** The chapter applies **thermodynamic property** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+20. **A.** The chapter applies **thermodynamic property** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Thermodynamic Systems, Properties, Work, and Heat**, apply this check specifically through **§47.6 Common Thermodynamic Processes**, including that section's stated assumptions and reference quantities.
 
 21. **A.** The chapter applies **enthalpy** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
@@ -385,12 +389,9 @@ D) It replaces conservation laws
 
 25. **A.** The chapter applies **thermodynamic state** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** The chapter applies **thermodynamic system** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+26. **A.** For **thermodynamic system** in *Thermodynamic Systems, Properties, Work, and Heat*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter applies **thermodynamic property** only after the state, geometry, flow/thermal regime, and assumptions are defined.
-
-
----
+27. **A.** For **thermodynamic property** in *Thermodynamic Systems, Properties, Work, and Heat*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -419,23 +420,23 @@ D) It replaces conservation laws
 
 ## Practice Problem Solutions
 
-1. Intensive.
+1. Intensive. This result follows from **§47.1 Systems, Surroundings, and Boundaries**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-2. Extensive.
+2. Extensive. This result follows from **§47.2 Intensive, Extensive, and Specific Properties**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-3. u=50 kJ/kg.
+3. u=50 kJ/kg. This result follows from **§47.3 Internal Energy, Enthalpy, and Entropy**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 4. h=u+Pv=200+150=350 kJ/kg.
 
-5. wb=PΔv=100 kJ/kg.
+5. wb=PΔv=100 kJ/kg. This result follows from **§47.5 Boundary Work**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-6. Heat into the system.
+6. Heat into the system. This result follows from **§47.6 Common Thermodynamic Processes**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-7. Work done by the system/outward.
+7. Work done by the system/outward. This result follows from **§47.7 State Principle and Modeling Discipline**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-8. No.
+8. No. This result follows from **§47.1 Systems, Surroundings, and Boundaries**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-9. Two.
+9. Two. This result follows from **§47.2 Intensive, Extensive, and Specific Properties**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 10. They are linked by the saturation relation.
 

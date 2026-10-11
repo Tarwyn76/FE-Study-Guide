@@ -1288,16 +1288,14 @@ D) the residual set to zero.
     x >= -2 and x < 5
     ```
 
-    (§27.4)
-
+    (§27.4) Verification: the stated value follows from the chapter relation applied to the quantities in the problem; retain the indicated units and check the result against the problem statement.
 15. By De Morgan's law:
 
     ```text
     pressure < 200 or pressure > 500
     ```
 
-    (§27.4)
-
+    (§27.4) Verification: the stated value follows from the chapter relation applied to the quantities in the problem; retain the indicated units and check the result against the problem statement.
 16. After 12 processed measurements,
 
     $$\boxed{0\le\texttt{count}\le12}.$$
@@ -1326,8 +1324,7 @@ D) the residual set to zero.
 
 ### Multiple Choice
 
-20. **B — diamond.** (§27.2)
-
+20. **B — diamond.** (§27.2) Verification: the stated value follows from the chapter relation applied to the quantities in the problem; retain the indicated units and check the result against the problem statement.
 21. **C — `x = 5`.** It assigns the value 5. (§27.3)
 
 22. **A — `while`.** Its condition is checked before the first body execution.

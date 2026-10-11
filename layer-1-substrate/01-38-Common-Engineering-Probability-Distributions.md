@@ -1294,6 +1294,13 @@ distributions.
 
 ## As the Handbook States It
 
+### Source Boundary
+
+- **FE-Handbook-supported** — The FE Reference Handbook pages cited by the ledger supply the equations, tables, definitions, or exam-scope statements identified for the split-required concepts in this chapter.
+- **Externally supported** — NIST/SEMATECH e-Handbook of Statistical Methods, Gallery of Distributions and Reliability Distribution Models (https://www.itl.nist.gov/div898/handbook/eda/section3/eda366.htm) supports Distribution families and engineering interpretation, including Poisson, uniform, exponential, and Weibull models; reliability pages support survival/failure-rate interpretation.
+- **Guide synthesis** — The worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, and explanatory derivations that go beyond the cited Handbook/external-source statements are instructional synthesis developed for this guide.
+
+
 > **Source verification.** Checked against the supplied *FE Reference Handbook
 > 10.6*, eighth printing, April 2026. Printed p. 85 contains the table
 > *Probability and Density Functions: Means and Variances*. It lists binomial
@@ -1414,6 +1421,11 @@ that generated the data.**
 
 ---
 
+
+### Ledger terminology alignment
+
+- **negative binomial distribution** — a discrete distribution for the trials or failures needed to obtain a specified number of successes in independent Bernoulli trials.
+
 ## Key Terms
 
 | Term | Definition |
@@ -1522,11 +1534,7 @@ D) $a=b$ always.
 
 7.
 
-   $$
-   \boxed{\mu=\beta}.
-   $$
-
-   (§38.6)
+   $$\boxed{\mu=\beta}.$$ For this parameterization of the exponential distribution, the mean equals the scale parameter $\beta$. (§38.6)
 
 8. Conditional on having already survived for time $s$, the additional
    exponential waiting-time distribution is the same as from a fresh start.

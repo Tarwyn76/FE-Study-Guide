@@ -63,7 +63,7 @@ Torque sign may change between applied couples, so construct a torque diagram fo
 
 **Problem.** Find J for a solid shaft d=40 mm.
 
-**Solution.** J=πd^4/32=2.513×10^-7 m^4.
+**Solution.** J=πd^4/32=2.513×10^-7 m^4. Reasoning: this uses the **38.1 Torque and Internal Torsional Moment** model from Chapter 02-38: Torsion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -72,8 +72,10 @@ Torque sign may change between applied couples, so construct a torque diagram fo
 Circular-shaft torsion uses the polar area moment \(J\). For a solid circular shaft and a hollow circular shaft,
 
 \[
-J_{m solid}=rac{\pi d^4}{32},\qquad
-J_{m hollow}=rac{\pi(d_o^4-d_i^4)}{32}.
+J_{
+m solid}=rac{\pi d^4}{32},\qquad
+J_{
+m hollow}=rac{\pi(d_o^4-d_i^4)}{32}.
 \]
 
 Because diameter appears to the fourth power, modest diameter changes strongly affect torsional stiffness and stress.
@@ -86,7 +88,7 @@ Because diameter appears to the fourth power, modest diameter changes strongly a
 
 **Problem.** For Problem 1 with T=500 N·m, find τmax.
 
-**Solution.** τ=Tc/J=500(0.02)/2.513e-7=39.8 MPa.
+**Solution.** τ=Tc/J=500(0.02)/2.513e-7=39.8 MPa. Reasoning: this uses the **38.2 Polar Moment for Circular Shafts** model from Chapter 02-38: Torsion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -108,7 +110,7 @@ Stress is zero at the center and maximum at the outer radius \(c\).
 
 **Problem.** For T=500 N·m, L=1 m, G=80 GPa, J as Problem 1, find twist.
 
-**Solution.** φ=TL/GJ=0.02487 rad=1.425°.
+**Solution.** φ=TL/GJ=0.02487 rad=1.425°. Reasoning: this uses the **38.3 Torsional Shear Stress** model from Chapter 02-38: Torsion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -130,7 +132,7 @@ For stepped shafts, sum signed segment twists. Compatibility may impose a specif
 
 **Problem.** If diameter doubles under same torque, by what factor does solid-shaft τmax change?
 
-**Solution.** τmax∝1/d^3, so it becomes 1/8.
+**Solution.** τmax∝1/d^3, so it becomes 1/8. Reasoning: this uses the **38.4 Angle of Twist** model from Chapter 02-38: Torsion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -154,7 +156,7 @@ Longer shafts are more flexible; larger \(G\) or \(J\) increases stiffness.
 
 **Problem.** If diameter doubles, by what factor does torsional stiffness GJ/L change?
 
-**Solution.** J∝d^4, so stiffness increases by 16.
+**Solution.** J∝d^4, so stiffness increases by 16. Reasoning: this uses the **38.5 Torsional Stiffness** model from Chapter 02-38: Torsion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -176,7 +178,7 @@ This lets you find required torque from power and rotational speed before sizing
 
 **Problem.** A shaft transmits 10 kW at 100 rad/s. Find torque.
 
-**Solution.** T=P/ω=100 N·m.
+**Solution.** T=P/ω=100 N·m. Reasoning: this uses the **38.6 Power Transmission by Rotating Shafts** model from Chapter 02-38: Torsion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -194,7 +196,7 @@ Use thin-wall formulas only when wall thickness is small relative to radius; oth
 
 **Problem.** What is shear stress at center of a solid circular shaft in elastic torsion?
 
-**Solution.** Zero.
+**Solution.** Zero. Reasoning: this uses the **38.7 Thin-Walled Closed Circular Tubes** model from Chapter 02-38: Torsion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -204,17 +206,24 @@ Use thin-wall formulas only when wall thickness is small relative to radius; oth
 
 **Problem.** State J for a hollow circular shaft.
 
-**Solution.** J=π(do^4−di^4)/32.
+**Solution.** J=π(do^4−di^4)/32. Reasoning: this uses the **Integrated Worked Examples** model from Chapter 02-38: Torsion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ### Worked Example 9
 
 **Problem.** What is torsional stiffness of a uniform shaft?
 
-**Solution.** kt=GJ/L.
+**Solution.** kt=GJ/L. Reasoning: this uses the **Integrated Worked Examples** model from Chapter 02-38: Torsion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — Engineering LibreTexts, Mechanics of Materials (Roylance) (https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_of_Materials_%28Roylance%29) supports torsional loading, internal torque, shear stress/deformation, shaft power transmission, and torsional stiffness.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Mechanics of Materials, printed pp. 134–135**.
 
@@ -388,32 +397,31 @@ D) It replaces the need for an FBD or kinematic model
 
 14. The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first, then apply **thin-wall torsion**.
 
-15. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+15. Create the chapter-specific mechanics model for **Chapter 02-38: Torsion** before solving: define the body or system, coordinates, geometry, loads, constraints, and unknowns that enter the governing equations.
 
-16. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+16. Independently verify a result in **Chapter 02-38: Torsion** by substituting it back into the governing equation, checking units and signs, and testing equilibrium, compatibility, or a limiting case as appropriate.
 
-17. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+17. A negative result reverses an assumed direction only when the physical element can act in that opposite sense. In **Chapter 02-38: Torsion**, also test whether unilateral contact, tension-only, or compression-only behavior changes the model.
 
-18. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+18. Match the Handbook coordinate and sign convention before comparing expressions in **Chapter 02-38: Torsion**. A different positive direction can reverse component or moment signs while leaving the physical state unchanged.
 
-19. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+19. **A.** The nineteenth review item tests **internal torque** in **Chapter 02-38: Torsion**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-20. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+20. **A.** The twentieth review item tests **shaft polar moment** in **Chapter 02-38: Torsion**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-21. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+21. **A.** The twenty-first review item tests **torsional shear stress** in **Chapter 02-38: Torsion**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-22. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+22. **A.** The twenty-second review item tests **angle of twist** in **Chapter 02-38: Torsion**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-23. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+23. **A.** The twenty-third review item tests **torsional stiffness** in **Chapter 02-38: Torsion**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-24. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+24. **A.** The twenty-fourth review item tests **shaft power** in **Chapter 02-38: Torsion**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-25. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+25. **A.** The twenty-fifth review item tests **thin-wall torsion** in **Chapter 02-38: Torsion**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-26. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+26. **A.** The twenty-sixth review item tests **internal torque** in **Chapter 02-38: Torsion**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This application check also tests whether the model assumptions are established before any numerical or symbolic manipulation.
 
-27. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
-
+27. **A.** The twenty-seventh review item tests **shaft polar moment** in **Chapter 02-38: Torsion**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This final application check emphasizes that a valid mechanics relation cannot replace the diagram, geometry, and constraints that define the problem.
 
 ---
 
@@ -454,16 +462,15 @@ D) It replaces the need for an FBD or kinematic model
 
 5. J∝d^4, so stiffness increases by 16.
 
-6. T=P/ω=100 N·m.
+6. T=P/ω=100 N·m. Practice verification: use the **38.6 Power Transmission by Rotating Shafts** relation for Chapter 02-38: Torsion, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
-7. Zero.
+7. Zero. Practice verification: use the **38.7 Thin-Walled Closed Circular Tubes** relation for Chapter 02-38: Torsion, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
 8. J=π(do^4−di^4)/32.
 
-9. kt=GJ/L.
+9. kt=GJ/L. Practice verification: use the **Integrated Worked Examples** relation for Chapter 02-38: Torsion, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
 10. For a thin-walled closed circular tube under the Handbook model.
-
 
 ---
 

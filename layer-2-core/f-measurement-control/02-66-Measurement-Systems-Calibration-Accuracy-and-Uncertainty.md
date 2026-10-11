@@ -65,7 +65,7 @@ Each stage can affect the reported result. A correct measurement therefore requi
 
 **Problem.** A pressure transducer produces 1.0 V at 0 kPa and 5.0 V at 200 kPa. Find sensitivity.
 
-**Solution.** S=(5-1)/(200-0)=0.020 V/kPa.
+**Solution.** S=(5-1)/(200-0)=0.020 V/kPa. The governing model here is **§66.1 The Measurement Chain and the Measurand**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of the measurement chain and the measurand.
 
 ---
 
@@ -83,7 +83,7 @@ Calibration is not simply 'adjusting the zero.' A calibration may reveal offset,
 
 **Problem.** A calibrated reference is 100.00 °C and an instrument reads 100.80 °C. Find signed error measured minus reference.
 
-**Solution.** e=+0.80 °C.
+**Solution.** e=+0.80 °C. The governing model here is **§66.2 Calibration Against Reference Values**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of calibration against reference values.
 
 ---
 
@@ -101,7 +101,7 @@ Sensitivity describes slope, not accuracy. A highly sensitive device can still b
 
 **Problem.** Five repeated measurements cluster within 0.02 units but are all 0.5 unit high. Are they precise, accurate, both, or neither?
 
-**Solution.** Precise but inaccurate/biased relative to the reference.
+**Solution.** Precise but inaccurate/biased relative to the reference. The governing model here is **§66.3 Transducer Sensitivity**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of transducer sensitivity.
 
 ---
 
@@ -137,7 +137,7 @@ For a calculated result \(R=f(x_1,\ldots,x_n)\) from uncorrelated input uncertai
 
 **Problem.** An instrument range is 0–100 V with 0.1 V display increments. State the nominal display resolution.
 
-**Solution.** 0.1 V.
+**Solution.** 0.1 V. The governing model here is **§66.5 Error, Uncertainty, and Kline–McClintock Propagation**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of error, uncertainty, and kline–mcclintock propagation.
 
 ---
 
@@ -155,7 +155,7 @@ These quantities are related in design but are not interchangeable. A digital di
 
 **Problem.** A sensor has twice the sensitivity after a redesign. Does that alone prove twice the accuracy?
 
-**Solution.** No. Sensitivity is slope; accuracy depends on agreement with the reference and other errors.
+**Solution.** No. Sensitivity is slope; accuracy depends on agreement with the reference and other errors. The governing model here is **§66.6 Range, Resolution, Sensitivity, and Uncertainty Are Different**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of range, resolution, sensitivity, and uncertainty are different.
 
 ---
 
@@ -173,7 +173,7 @@ Before accepting a result, check whether the instrument range was exceeded, whet
 
 **Problem.** List the minimum elements of a defensible measurement report.
 
-**Solution.** Measurand/result, units, instrument/range, calibration/reference basis, conditions, uncertainty basis, and important assumptions.
+**Solution.** Measurand/result, units, instrument/range, calibration/reference basis, conditions, uncertainty basis, and important assumptions. The governing model here is **§66.7 Measurement Planning and Reporting**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of measurement planning and reporting.
 
 ---
 
@@ -183,17 +183,24 @@ Before accepting a result, check whether the instrument range was exceeded, whet
 
 **Problem.** A 12-bit converter spans 0–10 V. Estimate one-count resolution.
 
-**Solution.** 10/4096=2.441 mV.
+**Solution.** 10/4096=2.441 mV. The governing model here is **§66.7 Measurement Planning and Reporting**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of measurement planning and reporting.
 
 ### Worked Example 9
 
 **Problem.** If a result is 25.0±0.4 kPa with expanded uncertainty k=2, what is the associated standard uncertainty if U=ku?
 
-**Solution.** u=0.2 kPa.
+**Solution.** u=0.2 kPa. The governing model here is **§66.7 Measurement Planning and Reporting**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of measurement planning and reporting.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — NIST Technical Note 1297 — Guidelines for Evaluating and Expressing Measurement Uncertainty (https://www.nist.gov/pml/nist-technical-note-1297) supports measurand definition, calibration context, uncertainty components, reporting, and distinctions among measurement result, uncertainty, and instrument characteristics.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Instrumentation, Measurement, and Control, printed pp. 225 and 231; Engineering Probability and Statistics, printed pp. 69–70**.
 
@@ -322,20 +329,17 @@ B) It is independent of calibration and dynamics
 C) It replaces physical validation
 D) It is always a static scalar
 
-26. Which statement best describes **measurement chain**?
-A) Its meaning depends on a defined measurement/control model and assumptions
-B) It is independent of calibration and dynamics
-C) It replaces physical validation
-D) It is always a static scalar
+26. A new problem requires **measurement chain**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which statement best describes **calibration process**?
-A) Its meaning depends on a defined measurement/control model and assumptions
-B) It is independent of calibration and dynamics
-C) It replaces physical validation
-D) It is always a static scalar
-
-
----
+27. After applying **calibration process**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -353,48 +357,45 @@ D) It is always a static scalar
 
 7. **measurement reporting workflow** is developed in §66.7. Use the displayed relation and the conditions stated there.
 
-8. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+8. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **Measurement Systems, Calibration, Accuracy, and Uncertainty**, apply this check specifically through **§66.1 The Measurement Chain and the Measurand**, including that section's stated assumptions and reference quantities.
 
-9. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+9. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **Measurement Systems, Calibration, Accuracy, and Uncertainty**, apply this check specifically through **§66.2 Calibration Against Reference Values**, including that section's stated assumptions and reference quantities.
 
-10. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+10. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **Measurement Systems, Calibration, Accuracy, and Uncertainty**, apply this check specifically through **§66.3 Transducer Sensitivity**, including that section's stated assumptions and reference quantities.
 
-11. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+11. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **Measurement Systems, Calibration, Accuracy, and Uncertainty**, apply this check specifically through **§66.4 Accuracy and Precision**, including that section's stated assumptions and reference quantities.
 
-12. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+12. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **Measurement Systems, Calibration, Accuracy, and Uncertainty**, apply this check specifically through **§66.5 Error, Uncertainty, and Kline–McClintock Propagation**, including that section's stated assumptions and reference quantities.
 
-13. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+13. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **Measurement Systems, Calibration, Accuracy, and Uncertainty**, apply this check specifically through **§66.6 Range, Resolution, Sensitivity, and Uncertainty Are Different**, including that section's stated assumptions and reference quantities.
 
-14. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+14. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **Measurement Systems, Calibration, Accuracy, and Uncertainty**, apply this check specifically through **§66.7 Measurement Planning and Reporting**, including that section's stated assumptions and reference quantities.
 
-15. Calibration establishes comparison to reference values; uncertainty quantifies doubt in the reported result. Calibration can reduce bias but does not make uncertainty zero.
+15. Calibration establishes comparison to reference values; uncertainty quantifies doubt in the reported result. Calibration can reduce bias but does not make uncertainty zero. For **Measurement Systems, Calibration, Accuracy, and Uncertainty**, apply this check specifically through **§66.1 The Measurement Chain and the Measurand**, including that section's stated assumptions and reference quantities.
 
-16. A sensor or plant may not follow a changing input instantaneously; lag, damping, and bandwidth can change the observed or controlled response.
+16. A sensor or plant may not follow a changing input instantaneously; lag, damping, and bandwidth can change the observed or controlled response. For **Measurement Systems, Calibration, Accuracy, and Uncertainty**, apply this check specifically through **§66.2 Calibration Against Reference Values**, including that section's stated assumptions and reference quantities.
 
-17. Check units, limiting behavior, signal range, conservation/physical plausibility, pole stability, and whether sampling/bandwidth assumptions are satisfied.
+17. Check units, limiting behavior, signal range, conservation/physical plausibility, pole stability, and whether sampling/bandwidth assumptions are satisfied. For **Measurement Systems, Calibration, Accuracy, and Uncertainty**, apply this check specifically through **§66.3 Transducer Sensitivity**, including that section's stated assumptions and reference quantities.
 
-18. Different sources can use different definitions for gain, time constants, signs, and frequency terms; the mapping must be established first.
+18. Different sources can use different definitions for gain, time constants, signs, and frequency terms; the mapping must be established first. For **Measurement Systems, Calibration, Accuracy, and Uncertainty**, apply this check specifically through **§66.4 Accuracy and Precision**, including that section's stated assumptions and reference quantities.
 
-19. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+19. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Measurement Systems, Calibration, Accuracy, and Uncertainty**, apply this check specifically through **§66.5 Error, Uncertainty, and Kline–McClintock Propagation**, including that section's stated assumptions and reference quantities.
 
-20. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+20. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Measurement Systems, Calibration, Accuracy, and Uncertainty**, apply this check specifically through **§66.6 Range, Resolution, Sensitivity, and Uncertainty Are Different**, including that section's stated assumptions and reference quantities.
 
-21. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+21. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Measurement Systems, Calibration, Accuracy, and Uncertainty**, apply this check specifically through **§66.7 Measurement Planning and Reporting**, including that section's stated assumptions and reference quantities.
 
-22. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+22. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Measurement Systems, Calibration, Accuracy, and Uncertainty**, apply this check specifically through **§66.1 The Measurement Chain and the Measurand**, including that section's stated assumptions and reference quantities.
 
-23. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+23. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Measurement Systems, Calibration, Accuracy, and Uncertainty**, apply this check specifically through **§66.2 Calibration Against Reference Values**, including that section's stated assumptions and reference quantities.
 
-24. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+24. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Measurement Systems, Calibration, Accuracy, and Uncertainty**, apply this check specifically through **§66.3 Transducer Sensitivity**, including that section's stated assumptions and reference quantities.
 
-25. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+25. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Measurement Systems, Calibration, Accuracy, and Uncertainty**, apply this check specifically through **§66.4 Accuracy and Precision**, including that section's stated assumptions and reference quantities.
 
-26. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+26. **A.** For **measurement chain** in *Measurement Systems, Calibration, Accuracy, and Uncertainty*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
-
-
----
+27. **A.** For **calibration process** in *Measurement Systems, Calibration, Accuracy, and Uncertainty*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -425,21 +426,21 @@ D) It is always a static scalar
 
 1. S=(5-1)/(200-0)=0.020 V/kPa.
 
-2. e=+0.80 °C.
+2. e=+0.80 °C. This result follows from **§66.2 Calibration Against Reference Values**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 3. Precise but inaccurate/biased relative to the reference.
 
 4. ∂R/∂x=y=5 and ∂R/∂y=x=10; wR=sqrt[(5·0.2)^2+(10·0.1)^2]=1.414.
 
-5. 0.1 V.
+5. 0.1 V. This result follows from **§66.5 Error, Uncertainty, and Kline–McClintock Propagation**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 6. No. Sensitivity is slope; accuracy depends on agreement with the reference and other errors.
 
 7. Measurand/result, units, instrument/range, calibration/reference basis, conditions, uncertainty basis, and important assumptions.
 
-8. 10/4096=2.441 mV.
+8. 10/4096=2.441 mV. This result follows from **§66.1 The Measurement Chain and the Measurand**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-9. u=0.2 kPa.
+9. u=0.2 kPa. This result follows from **§66.2 Calibration Against Reference Values**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 10. Display resolution can be much finer than actual accuracy or measurement uncertainty.
 

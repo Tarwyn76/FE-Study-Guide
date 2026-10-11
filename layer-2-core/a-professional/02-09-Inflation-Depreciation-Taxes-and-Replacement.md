@@ -306,20 +306,17 @@ B) An unrelated calculation method
 C) A guaranteed outcome
 D) A substitute for engineering judgment
 
-26. Which choice best matches the chapter's use of **Inflation**?
-A) The section-specific engineering concept or criterion
-B) An unrelated calculation method
-C) A guaranteed outcome
-D) A substitute for engineering judgment
+26. A new problem requires **Inflation**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which choice best matches the chapter's use of **Compounding**?
-A) The section-specific engineering concept or criterion
-B) An unrelated calculation method
-C) A guaranteed outcome
-D) A substitute for engineering judgment
-
-
----
+27. After applying **Compounding**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -351,14 +348,10 @@ D) A substitute for engineering judgment
 
 14. It would apply the wrong professional or economic rule. First distinguish **Replacement** from nearby concepts, then apply it under the section's stated conditions.
 
-15. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
-16. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
-17. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
-18. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
+15. First verify whether monetary values and rates are on a real or nominal basis, then identify the depreciation method, tax rate, recovery period, and replacement assumptions supplied.
+16. A correct depreciation or after-tax formula gives the wrong decision if inflation treatment, tax basis, salvage value, or nominal-versus-real interest conventions are mixed.
+17. A year-by-year timeline separates depreciation, taxable income, taxes, operating cash flow, salvage, and replacement events so each occurs in the proper period.
+18. Check that nominal cash flows use a nominal discount rate or real cash flows use a real rate, verify depreciation and tax effects, and confirm equivalent service in replacement comparisons.
 19. **A.** The chapter uses **Inflation** as the section-specific engineering concept or criterion.
 
 20. **A.** The chapter uses **Compounding** as the section-specific engineering concept or criterion.
@@ -373,12 +366,9 @@ D) A substitute for engineering judgment
 
 25. **A.** The chapter uses **Replacement** as the section-specific engineering concept or criterion.
 
-26. **A.** The chapter uses **Inflation** as the section-specific engineering concept or criterion.
+26. **A.** For **Inflation** in *Inflation, Depreciation, Taxes, and Replacement*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter uses **Compounding** as the section-specific engineering concept or criterion.
-
-
----
+27. **A.** For **Compounding** in *Inflation, Depreciation, Taxes, and Replacement*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -409,12 +399,10 @@ D) A substitute for engineering judgment
 
 1. $D=(50000-5000)/5=\boxed{9,000}$ per year.
 
-2. $BV=50000-3(9000)=\boxed{23,000}$.
-
+2. $BV=50000-3(9000)=\boxed{23,000}$. Verification: the stated value follows from the chapter relation applied to the quantities in the problem; retain the indicated units and check the result against the problem statement.
 3. $D=0.32(40000)=\boxed{12,800}$.
 
-4. Taxable income $=100000-55000-15000=\boxed{30,000}$.
-
+4. Taxable income $=100000-55000-15000=\boxed{30,000}$. Verification: the stated value follows from the chapter relation applied to the quantities in the problem; retain the indicated units and check the result against the problem statement.
 5. Tax $=0.25(30000)=\boxed{7,500}$.
 
 6. $i_e=(1+0.09/12)^{12}-1=\boxed{9.381\%}$.

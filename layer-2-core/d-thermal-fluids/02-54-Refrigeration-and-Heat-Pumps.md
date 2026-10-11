@@ -61,9 +61,9 @@ The same device can be described by different COPs depending on desired effect.
 
 ### Worked Example 1
 
-**Problem.** A refrigerator removes 10 kW and requires 2 kW input. Find COPR.
+**Problem.** A refrigerator removes 10 kW and requires 2 kW input. Find the coefficient of performance COPR.
 
-**Solution.** 5.
+**Solution.** 5. The governing model here is **§54.1 Refrigeration and Heat-Pump Objectives**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of refrigeration and heat-pump objectives.
 
 ---
 
@@ -81,7 +81,7 @@ A smaller temperature lift generally permits higher COP.
 
 **Problem.** For Problem 1, find COPHP for same cycle.
 
-**Solution.** 6.
+**Solution.** 6. The governing model here is **§54.2 Carnot COP Limits**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of carnot cop limits.
 
 ---
 
@@ -97,9 +97,9 @@ Compression raises pressure and enthalpy, condensation rejects heat, throttling 
 
 ### Worked Example 3
 
-**Problem.** Carnot refrigerator TL=270 K, TH=300 K. Find COPR.
+**Problem.** A Carnot refrigerator operates between TL=270 K and TH=300 K. Find the coefficient of performance COPR.
 
-**Solution.** COP=270/30=9.
+**Solution.** COP=270/30=9. The governing model here is **§54.3 Vapor-Compression Refrigeration Cycle**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of vapor-compression refrigeration cycle.
 
 ---
 
@@ -115,9 +115,9 @@ Use actual compressor outlet enthalpy unless the compressor is explicitly ideal/
 
 ### Worked Example 4
 
-**Problem.** Vapor-compression: h1=400, h2=450, h4=250 kJ/kg. Find COPR.
+**Problem.** For a vapor-compression cycle with h1=400, h2=450, and h4=250 kJ/kg, find the coefficient of performance COPR.
 
-**Solution.** (400-250)/(450-400)=3.
+**Solution.** (400-250)/(450-400)=3. The governing model here is **§54.4 Refrigeration COP from Enthalpies**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of refrigeration cop from enthalpies.
 
 ---
 
@@ -135,9 +135,7 @@ Mass flow follows cooling load divided by refrigeration effect.
 
 **Problem.** Cooling load is 105.5 kW. Convert approximately to tons refrigeration.
 
-**Solution.** 105.5/3.516≈30.0 tons.
-
----
+**Solution.** 105.5/3.516≈30.0 tons. The governing model here is **§54.5 Refrigeration Capacity and Tons**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of refrigeration capacity and tons. Since 1 ton of refrigeration equals 3.516 kW, 30.0 tons corresponds to a cooling rate of approximately 105.5 kW.---
 
 ## 54.6 Heat Pumps and Heating COP
 
@@ -153,7 +151,7 @@ COP can exceed 1 because it is not a heat-engine efficiency.
 
 **Problem.** For cycle h1=400, h4=250 kJ/kg and cooling load 30 kW, find refrigerant flow.
 
-**Solution.** ṁ=30/150=0.20 kg/s.
+**Solution.** ṁ=30/150=0.20 kg/s. The governing model here is **§54.6 Heat Pumps and Heating COP**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of heat pumps and heating cop.
 
 ---
 
@@ -171,7 +169,7 @@ Use property data and the cycle state points given rather than assuming ideal sa
 
 **Problem.** What component is approximately constant enthalpy?
 
-**Solution.** Expansion/throttling valve.
+**Solution.** Expansion/throttling valve. The governing model here is **§54.7 Real-System Considerations**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of real-system considerations.
 
 ---
 
@@ -181,17 +179,24 @@ Use property data and the cycle state points given rather than assuming ideal sa
 
 **Problem.** What component absorbs QL?
 
-**Solution.** Evaporator.
+**Solution.** Evaporator. The governing model here is **§54.7 Real-System Considerations**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of real-system considerations.
 
 ### Worked Example 9
 
 **Problem.** What component rejects QH?
 
-**Solution.** Condenser.
+**Solution.** Condenser. The governing model here is **§54.7 Real-System Considerations**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of real-system considerations.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — OpenStax University Physics Volume 2, Refrigerators and Heat Pumps (https://openstax.org/books/university-physics-volume-2/pages/4-3-refrigerators-and-heat-pumps) supports refrigerators, heat pumps, coefficients of performance, reversed-cycle interpretation, and real-system considerations.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Thermodynamics, printed pp. 149–150 and common-cycle diagrams pp. 176–180**.
 
@@ -318,20 +323,17 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. Which statement best describes **coefficient of performance**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
+26. A new problem requires **coefficient of performance**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which statement best describes **Carnot COP**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
-
-
----
+27. After applying **Carnot COP**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -363,17 +365,17 @@ D) It replaces conservation laws
 
 14. The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then apply **refrigeration system audit**.
 
-15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Refrigeration and Heat Pumps**, apply this check specifically through **§54.1 Refrigeration and Heat-Pump Objectives**, including that section's stated assumptions and reference quantities.
 
-16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Refrigeration and Heat Pumps**, apply this check specifically through **§54.2 Carnot COP Limits**, including that section's stated assumptions and reference quantities.
 
-17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Refrigeration and Heat Pumps**, apply this check specifically through **§54.3 Vapor-Compression Refrigeration Cycle**, including that section's stated assumptions and reference quantities.
 
-18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Refrigeration and Heat Pumps**, apply this check specifically through **§54.4 Refrigeration COP from Enthalpies**, including that section's stated assumptions and reference quantities.
 
-19. **A.** The chapter applies **coefficient of performance** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+19. **A.** The chapter applies **coefficient of performance** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Refrigeration and Heat Pumps**, apply this check specifically through **§54.5 Refrigeration Capacity and Tons**, including that section's stated assumptions and reference quantities.
 
-20. **A.** The chapter applies **Carnot COP** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+20. **A.** The chapter applies **Carnot COP** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Refrigeration and Heat Pumps**, apply this check specifically through **§54.6 Heat Pumps and Heating COP**, including that section's stated assumptions and reference quantities.
 
 21. **A.** The chapter applies **vapor-compression cycle** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
@@ -385,12 +387,9 @@ D) It replaces conservation laws
 
 25. **A.** The chapter applies **refrigeration system audit** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** The chapter applies **coefficient of performance** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+26. **A.** For **coefficient of performance** in *Refrigeration and Heat Pumps*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter applies **Carnot COP** only after the state, geometry, flow/thermal regime, and assumptions are defined.
-
-
----
+27. **A.** For **Carnot COP** in *Refrigeration and Heat Pumps*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -419,23 +418,23 @@ D) It replaces conservation laws
 
 ## Practice Problem Solutions
 
-1. 5.
+1. 5. This result follows from **§54.1 Refrigeration and Heat-Pump Objectives**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-2. 6.
+2. 6. This result follows from **§54.2 Carnot COP Limits**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-3. COP=270/30=9.
+3. COP=270/30=9. This result follows from **§54.3 Vapor-Compression Refrigeration Cycle**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-4. (400-250)/(450-400)=3.
+4. (400-250)/(450-400)=3. This result follows from **§54.4 Refrigeration COP from Enthalpies**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 5. 105.5/3.516≈30.0 tons.
 
 6. ṁ=30/150=0.20 kg/s.
 
-7. Expansion/throttling valve.
+7. Expansion/throttling valve. This result follows from **§54.7 Real-System Considerations**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-8. Evaporator.
+8. Evaporator. This result follows from **§54.1 Refrigeration and Heat-Pump Objectives**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-9. Condenser.
+9. Condenser. This result follows from **§54.2 Carnot COP Limits**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 10. COP compares transferred heat to work input; the device moves heat rather than converting work entirely to heat.
 

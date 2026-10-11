@@ -63,7 +63,7 @@ Complex power combines them as \(S=P+jQ\).
 
 **Problem.** A load takes 120 V RMS, 10 A RMS at pf=0.8 lagging. Find P, Q, and |S|.
 
-**Solution.** |S|=1200 VA; P=960 W; Q=720 var.
+**Solution.** |S|=1200 VA; P=960 W; Q=720 var. The governing model here is **§63.1 Real, Reactive, Apparent, and Complex Power**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of real, reactive, apparent, and complex power.
 
 ---
 
@@ -81,9 +81,7 @@ Power factor carries both magnitude and lead/lag information.
 
 **Problem.** A 5 kW load operates at pf=0.60 lagging. Find apparent power.
 
-**Solution.** S=P/pf=8.33 kVA.
-
----
+**Solution.** S=P/pf=8.33 kVA. The governing model here is **§63.2 Power Factor — Leading and Lagging**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of power factor — leading and lagging. Apparent power 8.33 kVA is 8.33×10^3 V·A.---
 
 ## 63.3 Power-Factor Correction
 
@@ -99,9 +97,7 @@ For a desired final power factor, compute the original and target reactive power
 
 **Problem.** A 10 kW load improves from pf=0.70 to 0.95 lagging. Find required capacitor reactive power magnitude.
 
-**Solution.** Qc=P[tan(cos^-1 .70)-tan(cos^-1 .95)]≈6.92 kVAR.
-
----
+**Solution.** Qc=P[tan(cos^-1 .70)-tan(cos^-1 .95)]≈6.92 kVAR. The governing model here is **§63.3 Power-Factor Correction**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of power-factor correction. The required reactive-power magnitude is 6.92 kVAR, dimensionally 6.92×10^3 V·A reactive.---
 
 ## 63.4 Balanced Three-Phase Sources and Phase Sequence
 
@@ -117,7 +113,7 @@ Balanced systems permit one-phase analysis followed by a factor of three for tot
 
 **Problem.** A balanced positive-sequence set has Van=120∠0° V. State Vbn and Vcn.
 
-**Solution.** Vbn=120∠-120° V; Vcn=120∠120° V.
+**Solution.** Vbn=120∠-120° V; Vcn=120∠120° V. The governing model here is **§63.4 Balanced Three-Phase Sources and Phase Sequence**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of balanced three-phase sources and phase sequence.
 
 ---
 
@@ -135,7 +131,7 @@ Use line quantities and phase quantities deliberately; do not substitute one for
 
 **Problem.** Balanced wye load has phase voltage 277 V. Find line voltage.
 
-**Solution.** VL=√3×277=479.8 V.
+**Solution.** VL=√3×277=479.8 V. The governing model here is **§63.5 Wye Line-to-Phase Relationships**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of wye line-to-phase relationships.
 
 ---
 
@@ -153,7 +149,7 @@ A balanced delta impedance can be converted to an equivalent wye with \(Z_\Delta
 
 **Problem.** Balanced delta load has phase current 20 A. Find line current.
 
-**Solution.** IL=√3×20=34.64 A.
+**Solution.** IL=√3×20=34.64 A. The governing model here is **§63.6 Delta Line-to-Phase Relationships**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of delta line-to-phase relationships.
 
 ---
 
@@ -171,7 +167,7 @@ This line formula avoids separately solving three identical phases once the syst
 
 **Problem.** Balanced 3φ load has VL=480 V, IL=30 A, pf=0.90. Find real power.
 
-**Solution.** P=√3(480)(30)(0.90)=22.45 kW.
+**Solution.** P=√3(480)(30)(0.90)=22.45 kW. The governing model here is **§63.7 Balanced Three-Phase Power**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of balanced three-phase power.
 
 ---
 
@@ -181,17 +177,22 @@ This line formula avoids separately solving three identical phases once the syst
 
 **Problem.** Balanced 3φ load has VL=208 V and IL=15 A. Find apparent power.
 
-**Solution.** S=√3×208×15=5.40 kVA.
-
-### Worked Example 9
+**Solution.** S=√3×208×15=5.40 kVA. The governing model here is **§63.7 Balanced Three-Phase Power**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of balanced three-phase power. The apparent power is 5.40 kVA = 5.40×10^3 V·A.### Worked Example 9
 
 **Problem.** A delta impedance is 12+j6 Ω per phase. Find equivalent wye impedance.
 
-**Solution.** ZY=ZΔ/3=4+j2 Ω.
+**Solution.** ZY=ZΔ/3=4+j2 Ω. The governing model here is **§63.7 Balanced Three-Phase Power**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of balanced three-phase power.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — OpenStax University Physics Volume 2, AC Circuits and Power (https://openstax.org/books/university-physics-volume-2/pages/15-introduction) supports RMS/effective values, real/reactive/apparent power, power factor, power-factor correction, and AC system interpretation.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Electrical and Computer Engineering, printed pp. 368–370**.
 
@@ -318,20 +319,17 @@ B) It is independent of topology and frequency
 C) It always represents a scalar DC quantity
 D) It replaces conservation laws
 
-26. Which statement is most accurate for **complex power**?
-A) It must be used with its defined reference and assumptions
-B) It is independent of topology and frequency
-C) It always represents a scalar DC quantity
-D) It replaces conservation laws
+26. A new problem requires **complex power**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which statement is most accurate for **power factor**?
-A) It must be used with its defined reference and assumptions
-B) It is independent of topology and frequency
-C) It always represents a scalar DC quantity
-D) It replaces conservation laws
-
-
----
+27. After applying **power factor**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -363,17 +361,17 @@ D) It replaces conservation laws
 
 14. Applying **three-phase power** without checking topology, reference direction, steady/transient condition, RMS/peak basis, or machine/circuit assumptions can produce a formally calculated but physically wrong result.
 
-15. Because the sign of power depends on the chosen voltage/current references and the passive sign convention.
+15. Because the sign of power depends on the chosen voltage/current references and the passive sign convention. For **AC Power, Power Factor, and Three-Phase Systems**, apply this check specifically through **§63.1 Real, Reactive, Apparent, and Complex Power**, including that section's stated assumptions and reference quantities.
 
-16. Charge/KCL, energy/power balance, and where applicable KVL should close consistently.
+16. Charge/KCL, energy/power balance, and where applicable KVL should close consistently. For **AC Power, Power Factor, and Three-Phase Systems**, apply this check specifically through **§63.2 Power Factor — Leading and Lagging**, including that section's stated assumptions and reference quantities.
 
-17. Whenever the Handbook supplies the relation or when the shortcut's assumptions are uncertain.
+17. Whenever the Handbook supplies the relation or when the shortcut's assumptions are uncertain. For **AC Power, Power Factor, and Three-Phase Systems**, apply this check specifically through **§63.3 Power-Factor Correction**, including that section's stated assumptions and reference quantities.
 
-18. They represent different magnitudes; mixing them introduces factors such as √2 and gives incorrect power.
+18. They represent different magnitudes; mixing them introduces factors such as √2 and gives incorrect power. For **AC Power, Power Factor, and Three-Phase Systems**, apply this check specifically through **§63.4 Balanced Three-Phase Sources and Phase Sequence**, including that section's stated assumptions and reference quantities.
 
-19. **A.** The chapter treats **complex power** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
+19. **A.** The chapter treats **complex power** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **AC Power, Power Factor, and Three-Phase Systems**, apply this check specifically through **§63.5 Wye Line-to-Phase Relationships**, including that section's stated assumptions and reference quantities.
 
-20. **A.** The chapter treats **power factor** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
+20. **A.** The chapter treats **power factor** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **AC Power, Power Factor, and Three-Phase Systems**, apply this check specifically through **§63.6 Delta Line-to-Phase Relationships**, including that section's stated assumptions and reference quantities.
 
 21. **A.** The chapter treats **power-factor correction** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
 
@@ -385,12 +383,9 @@ D) It replaces conservation laws
 
 25. **A.** The chapter treats **three-phase power** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
 
-26. **A.** The chapter treats **complex power** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
+26. **A.** For **complex power** in *AC Power, Power Factor, and Three-Phase Systems*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter treats **power factor** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
-
-
----
+27. **A.** For **power factor** in *AC Power, Power Factor, and Three-Phase Systems*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -421,23 +416,23 @@ D) It replaces conservation laws
 
 1. |S|=1200 VA; P=960 W; Q=720 var.
 
-2. S=P/pf=8.33 kVA.
+2. S=P/pf=8.33 kVA. This result follows from **§63.2 Power Factor — Leading and Lagging**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 3. Qc=P[tan(cos^-1 .70)-tan(cos^-1 .95)]≈6.92 kVAR.
 
 4. Vbn=120∠-120° V; Vcn=120∠120° V.
 
-5. VL=√3×277=479.8 V.
+5. VL=√3×277=479.8 V. This result follows from **§63.5 Wye Line-to-Phase Relationships**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-6. IL=√3×20=34.64 A.
+6. IL=√3×20=34.64 A. This result follows from **§63.6 Delta Line-to-Phase Relationships**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 7. P=√3(480)(30)(0.90)=22.45 kW.
 
 8. S=√3×208×15=5.40 kVA.
 
-9. ZY=ZΔ/3=4+j2 Ω.
+9. ZY=ZΔ/3=4+j2 Ω. This result follows from **§63.2 Power Factor — Leading and Lagging**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-10. Current leads voltage; leading power factor.
+10. Current leads voltage; leading power factor. This result follows from **§63.3 Power-Factor Correction**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 
 ---

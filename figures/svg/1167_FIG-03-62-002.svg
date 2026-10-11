@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1080pt" height="864pt" viewBox="0 0 1080 864" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-10T11:40:09.482152</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 864 
+L 1080 864 
+L 1080 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 465.102491 347.5008 
+Q 506.357873 347.5008 545.712597 347.5008 
+" clip-path="url(#pf150819e38)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 539.712597 344.5008 
+L 545.712597 347.5008 
+L 539.712597 350.5008 
+z
+" clip-path="url(#pf150819e38)" style="fill: #235a78; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="540" y="526.457825" transform="rotate(-0 540 526.457825)">One asset →many measurements; FK values must reference a valid asset.</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="540" y="669.492319" transform="rotate(-0 540 669.492319)">Join on asset_id; check keys before aggregation and KPI construction.</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_3">
+    <path d="M 54 258.1632 
+L 245.808 258.1632 
+L 245.808 201.1392 
+L 54 201.1392 
+z
+" clip-path="url(#p8ab8569063)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 245.808 258.1632 
+L 453.6 258.1632 
+L 453.6 201.1392 
+L 245.808 201.1392 
+z
+" clip-path="url(#p8ab8569063)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 54 315.1872 
+L 245.808 315.1872 
+L 245.808 258.1632 
+L 54 258.1632 
+z
+" clip-path="url(#p8ab8569063)" style="fill: #ffffff; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 245.808 315.1872 
+L 453.6 315.1872 
+L 453.6 258.1632 
+L 245.808 258.1632 
+z
+" clip-path="url(#p8ab8569063)" style="fill: #ffffff; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 54 372.2112 
+L 245.808 372.2112 
+L 245.808 315.1872 
+L 54 315.1872 
+z
+" clip-path="url(#p8ab8569063)" style="fill: #ffffff; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 245.808 372.2112 
+L 453.6 372.2112 
+L 453.6 315.1872 
+L 245.808 315.1872 
+z
+" clip-path="url(#p8ab8569063)" style="fill: #ffffff; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="253.8" y="165.6374" transform="rotate(-0 253.8 165.6374)">Asset table</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="149.904" y="232.795575" transform="rotate(-0 149.904 232.795575)">asset_id (PK)</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="349.704" y="232.96245" transform="rotate(-0 349.704 232.96245)">Type</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="149.904" y="289.98645" transform="rotate(-0 149.904 289.98645)">A01</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="349.704" y="289.98645" transform="rotate(-0 349.704 289.98645)">Pump</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="149.904" y="347.01045" transform="rotate(-0 149.904 347.01045)">A02</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="349.704" y="347.01045" transform="rotate(-0 349.704 347.01045)">Fan</text>
+   </g>
+  </g>
+  <g id="axes_3">
+   <g id="patch_9">
+    <path d="M 550.8 258.1632 
+L 731.376 258.1632 
+L 731.376 201.1392 
+L 550.8 201.1392 
+z
+" clip-path="url(#pb9e3f9902c)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 731.376 258.1632 
+L 883.44 258.1632 
+L 883.44 201.1392 
+L 731.376 201.1392 
+z
+" clip-path="url(#pb9e3f9902c)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 883.44 258.1632 
+L 1026 258.1632 
+L 1026 201.1392 
+L 883.44 201.1392 
+z
+" clip-path="url(#pb9e3f9902c)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 550.8 315.1872 
+L 731.376 315.1872 
+L 731.376 258.1632 
+L 550.8 258.1632 
+z
+" clip-path="url(#pb9e3f9902c)" style="fill: #ffffff; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 731.376 315.1872 
+L 883.44 315.1872 
+L 883.44 258.1632 
+L 731.376 258.1632 
+z
+" clip-path="url(#pb9e3f9902c)" style="fill: #ffffff; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 883.44 315.1872 
+L 1026 315.1872 
+L 1026 258.1632 
+L 883.44 258.1632 
+z
+" clip-path="url(#pb9e3f9902c)" style="fill: #ffffff; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 550.8 372.2112 
+L 731.376 372.2112 
+L 731.376 315.1872 
+L 550.8 315.1872 
+z
+" clip-path="url(#pb9e3f9902c)" style="fill: #ffffff; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 731.376 372.2112 
+L 883.44 372.2112 
+L 883.44 315.1872 
+L 731.376 315.1872 
+z
+" clip-path="url(#pb9e3f9902c)" style="fill: #ffffff; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 883.44 372.2112 
+L 1026 372.2112 
+L 1026 315.1872 
+L 883.44 315.1872 
+z
+" clip-path="url(#pb9e3f9902c)" style="fill: #ffffff; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="788.4" y="165.6374" transform="rotate(-0 788.4 165.6374)">Measurement table</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="641.088" y="232.795575" transform="rotate(-0 641.088 232.795575)">measure_id (PK)</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="807.408" y="232.795575" transform="rotate(-0 807.408 232.795575)">asset_id (FK)</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="954.72" y="232.96245" transform="rotate(-0 954.72 232.96245)">cycle (min)</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="641.088" y="289.98645" transform="rotate(-0 641.088 289.98645)">M01</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="807.408" y="289.98645" transform="rotate(-0 807.408 289.98645)">A01</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="954.72" y="289.98645" transform="rotate(-0 954.72 289.98645)">8</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="641.088" y="347.01045" transform="rotate(-0 641.088 347.01045)">M02</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="807.408" y="347.01045" transform="rotate(-0 807.408 347.01045)">A01</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="954.72" y="347.01045" transform="rotate(-0 954.72 347.01045)">9</text>
+   </g>
+  </g>
+  <g id="text_20">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="47.52" transform="rotate(-0 59.4 47.52)">Primary and foreign keys connect engineering records without duplicating asset definitions</text>
+  </g>
+  <g id="text_21">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="59.4" y="840.672" transform="rotate(-0 59.4 840.672)">1167  •  FIG-03-62-002</text>
+  </g>
+  <g id="text_22">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 783.193875)">Synthetic relational records with a one-to-many relationship. Primary keys uniquely identify their rows; repeated foreign keys are expected when an asset</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 795.911375)">has multiple measurements. Join cardinality matters: an unintended many-to-many join can inflate totals. AssetA02 has no shown measurement; it is not</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 808.628875)">thereby invalid or absent from the asset table.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pf150819e38">
+   <rect x="59.4" y="120.96" width="961.2" height="596.16"/>
+  </clipPath>
+  <clipPath id="p8ab8569063">
+   <rect x="54" y="155.52" width="399.6" height="285.12"/>
+  </clipPath>
+  <clipPath id="pb9e3f9902c">
+   <rect x="550.8" y="155.52" width="475.2" height="285.12"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -66,23 +66,21 @@ lines follows in one step.
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-
-* 11.1 Convert between degrees and radians
-* 11.2 Define sine, cosine, and tangent from the unit circle, and evaluate
+- **11.1** Convert between degrees and radians
+- **11.2** Define sine, cosine, and tangent from the unit circle, and evaluate
   all six trig functions for standard angles without a calculator
-* 11.3 Recognize and apply the signs of trig functions in all four
+- **11.3** Recognize and apply the signs of trig functions in all four
   quadrants using CAST and reference angles
-* 11.4 State, derive, and apply the Pythagorean identities
-* 11.5 Solve right triangles completely
-* 11.6 Apply the law of sines, including recognizing the ambiguous case
-* 11.7 Apply the law of cosines
-* 11.8 State the sum, difference, double-angle, and power-reduction
+- **11.4** State, derive, and apply the Pythagorean identities
+- **11.5** Solve right triangles completely
+- **11.6** Apply the law of sines, including recognizing the ambiguous case
+- **11.7** Apply the law of cosines
+- **11.8** State the sum, difference, double-angle, and power-reduction
   formulas and use them to find exact values
-* 11.9 Apply inverse trig functions with the correct quadrant correction
-* 11.10 Find the angle of inclination of a line and the acute angle between
+- **11.9** Apply inverse trig functions with the correct quadrant correction
+- **11.10** Find the angle of inclination of a line and the acute angle between
   two lines from their slopes
-* 11.11 Apply trigonometry to force decomposition and vector addition
-
+- **11.11** Apply trigonometry to force decomposition and vector addition
 Objective numbers match section numbers throughout.
 
 ---
@@ -905,6 +903,17 @@ exactly why we built it from the unit circle rather than handing you a table.
 
 ---
 
+
+### Source Boundary
+
+**FE-Handbook-supported.** The equations, definitions, tables, and relations explicitly identified above are supported by the cited FE Reference Handbook 10.6 pages.
+
+**Externally supported.** Material in this chapter that extends beyond the Handbook is supported by the following external educational/standards references:
+
+- OpenStax, Precalculus 2e, §5.4, “Right Triangle Trigonometry” — right-triangle trig functions and their connection to unit-circle definitions.
+
+**Guide synthesis.** Exam-navigation advice, memory cues, sequencing, worked-example framing, and study heuristics are guide-developed synthesis unless separately attributed.
+
 ## Where This Goes Wrong
 
 **Calculator mode.** Check before every trig calculation. Degree and radian
@@ -952,6 +961,11 @@ $\sin(\theta^2)$. They are different. The convention is universal in
 engineering but trips people coming from certain calculator notations.
 
 ---
+
+
+### Ledger terminology alignment
+
+- **oblique triangle** — a triangle with no right angle, generally solved with the laws of sines and cosines.
 
 ## Key Terms
 

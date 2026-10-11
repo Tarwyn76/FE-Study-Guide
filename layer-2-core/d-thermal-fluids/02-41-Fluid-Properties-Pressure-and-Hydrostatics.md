@@ -51,7 +51,10 @@ Symbols are defined at first use. Use SI units unless the problem or Handbook ta
 
 ## 41.1 Density, Specific Volume, Specific Weight, and Specific Gravity
 
-Fluid-property calculations begin by distinguishing mass per volume from weight per volume. Density is \(ho=m/V\), specific volume is \(v=1/ho\), and specific weight is \(\gamma=ho g\). Specific gravity compares fluid density or specific weight to water at the stated reference condition.
+Fluid-property calculations begin by distinguishing mass per volume from weight per volume. Density is \(
+ho=m/V\), specific volume is \(v=1/
+ho\), and specific weight is \(\gamma=
+ho g\). Specific gravity compares fluid density or specific weight to water at the stated reference condition.
 
 Do not mix mass density and specific weight. In SI, density has units kg/m³ while specific weight has units N/m³.
 
@@ -63,7 +66,7 @@ Do not mix mass density and specific weight. In SI, density has units kg/m³ whi
 
 **Problem.** Water has density 1000 kg/m³. Find specific weight at g=9.81 m/s².
 
-**Solution.** γ=ρg=9.81 kN/m³.
+**Solution.** γ=ρg=9.81 kN/m³. The governing model here is **§41.1 Density, Specific Volume, Specific Weight, and Specific Gravity**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of density, specific volume, specific weight, and specific gravity.
 
 ---
 
@@ -81,7 +84,7 @@ A vacuum gauge reports how far pressure lies below atmospheric pressure. Always 
 
 **Problem.** An oil has SG=0.85. Find density using ρw=1000 kg/m³.
 
-**Solution.** ρ=850 kg/m³.
+**Solution.** ρ=850 kg/m³. The governing model here is **§41.2 Pressure, Absolute Pressure, Gauge Pressure, and Vacuum**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of pressure, absolute pressure, gauge pressure, and vacuum.
 
 ---
 
@@ -99,7 +102,7 @@ Viscosity is strongly temperature-dependent for many fluids, so use properties a
 
 **Problem.** A gauge reads 250 kPa with atmospheric pressure 101 kPa. Find absolute pressure.
 
-**Solution.** Pabs=351 kPa.
+**Solution.** Pabs=351 kPa. The governing model here is **§41.3 Dynamic and Kinematic Viscosity**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of dynamic and kinematic viscosity.
 
 ---
 
@@ -117,7 +120,7 @@ For \(n<1\), the model is pseudoplastic/shear-thinning; for \(n>1\), it is dilat
 
 **Problem.** Dynamic viscosity is 0.002 Pa·s and density is 800 kg/m³. Find kinematic viscosity.
 
-**Solution.** ν=μ/ρ=2.50×10^-6 m²/s.
+**Solution.** ν=μ/ρ=2.50×10^-6 m²/s. The governing model here is **§41.4 Newtonian and Non-Newtonian Behavior**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of newtonian and non-newtonian behavior.
 
 ---
 
@@ -135,7 +138,7 @@ The contact angle determines the sign through \(\coseta\). The capillary effect
 
 **Problem.** A Newtonian fluid has μ=0.5 Pa·s and dv/dy=4 s^-1. Find shear stress.
 
-**Solution.** τ=2.0 Pa.
+**Solution.** τ=2.0 Pa. The governing model here is **§41.5 Surface Tension and Capillarity**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of surface tension and capillarity.
 
 ---
 
@@ -153,7 +156,7 @@ The pressure difference depends only on vertical elevation difference, not conta
 
 **Problem.** A point is 3 m below a free water surface. Find gauge pressure using ρ=1000 kg/m³.
 
-**Solution.** P=ρgh=29.43 kPa.
+**Solution.** P=ρgh=29.43 kPa. The governing model here is **§41.6 Hydrostatic Pressure Variation**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of hydrostatic pressure variation.
 
 ---
 
@@ -171,7 +174,7 @@ Hydrostatic equations do not apply through regions with significant fluid accele
 
 **Problem.** A 1-mm capillary contains water with σ=0.072 N/m, β=0°, γ=9810 N/m³. Estimate rise.
 
-**Solution.** h=4σ/(γd)=0.0294 m.
+**Solution.** h=4σ/(γd)=0.0294 m. The governing model here is **§41.7 Hydrostatic Modeling Checks**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of hydrostatic modeling checks.
 
 ---
 
@@ -181,17 +184,24 @@ Hydrostatic equations do not apply through regions with significant fluid accele
 
 **Problem.** Distinguish gauge pressure from absolute pressure.
 
-**Solution.** Gauge is relative to atmosphere; absolute is relative to vacuum.
+**Solution.** Gauge is relative to atmosphere; absolute is relative to vacuum. The governing model here is **§41.7 Hydrostatic Modeling Checks**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of hydrostatic modeling checks.
 
 ### Worked Example 9
 
 **Problem.** What does n<1 mean in the power-law model?
 
-**Solution.** Shear-thinning/pseudoplastic behavior.
+**Solution.** Shear-thinning/pseudoplastic behavior. The governing model here is **§41.7 Hydrostatic Modeling Checks**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of hydrostatic modeling checks.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — OpenStax University Physics Volume 1, Chapter 14 — Fluid Mechanics (https://openstax.org/books/university-physics-volume-1/pages/14-introduction) supports fluid pressure, hydrostatic pressure variation, density/specific gravity, and hydrostatic modeling checks.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Fluid Mechanics, printed pp. 181–182**.
 
@@ -318,20 +328,17 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. Which statement best describes **fluid density**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
+26. A new problem requires **fluid density**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which statement best describes **fluid pressure**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
-
-
----
+27. After applying **fluid pressure**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -363,17 +370,17 @@ D) It replaces conservation laws
 
 14. The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then apply **hydrostatic model**.
 
-15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Fluid Properties, Pressure, and Hydrostatics**, apply this check specifically through **§41.1 Density, Specific Volume, Specific Weight, and Specific Gravity**, including that section's stated assumptions and reference quantities.
 
-16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Fluid Properties, Pressure, and Hydrostatics**, apply this check specifically through **§41.2 Pressure, Absolute Pressure, Gauge Pressure, and Vacuum**, including that section's stated assumptions and reference quantities.
 
-17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Fluid Properties, Pressure, and Hydrostatics**, apply this check specifically through **§41.3 Dynamic and Kinematic Viscosity**, including that section's stated assumptions and reference quantities.
 
-18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Fluid Properties, Pressure, and Hydrostatics**, apply this check specifically through **§41.4 Newtonian and Non-Newtonian Behavior**, including that section's stated assumptions and reference quantities.
 
-19. **A.** The chapter applies **fluid density** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+19. **A.** The chapter applies **fluid density** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Fluid Properties, Pressure, and Hydrostatics**, apply this check specifically through **§41.5 Surface Tension and Capillarity**, including that section's stated assumptions and reference quantities.
 
-20. **A.** The chapter applies **fluid pressure** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+20. **A.** The chapter applies **fluid pressure** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Fluid Properties, Pressure, and Hydrostatics**, apply this check specifically through **§41.6 Hydrostatic Pressure Variation**, including that section's stated assumptions and reference quantities.
 
 21. **A.** The chapter applies **viscosity** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
@@ -385,12 +392,9 @@ D) It replaces conservation laws
 
 25. **A.** The chapter applies **hydrostatic model** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** The chapter applies **fluid density** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+26. **A.** For **fluid density** in *Fluid Properties, Pressure, and Hydrostatics*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter applies **fluid pressure** only after the state, geometry, flow/thermal regime, and assumptions are defined.
-
-
----
+27. **A.** For **fluid pressure** in *Fluid Properties, Pressure, and Hydrostatics*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -419,23 +423,23 @@ D) It replaces conservation laws
 
 ## Practice Problem Solutions
 
-1. γ=ρg=9.81 kN/m³.
+1. γ=ρg=9.81 kN/m³. This result follows from **§41.1 Density, Specific Volume, Specific Weight, and Specific Gravity**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-2. ρ=850 kg/m³.
+2. ρ=850 kg/m³. This result follows from **§41.2 Pressure, Absolute Pressure, Gauge Pressure, and Vacuum**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-3. Pabs=351 kPa.
+3. Pabs=351 kPa. This result follows from **§41.3 Dynamic and Kinematic Viscosity**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 4. ν=μ/ρ=2.50×10^-6 m²/s.
 
-5. τ=2.0 Pa.
+5. τ=2.0 Pa. This result follows from **§41.5 Surface Tension and Capillarity**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-6. P=ρgh=29.43 kPa.
+6. P=ρgh=29.43 kPa. This result follows from **§41.6 Hydrostatic Pressure Variation**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-7. h=4σ/(γd)=0.0294 m.
+7. h=4σ/(γd)=0.0294 m. This result follows from **§41.7 Hydrostatic Modeling Checks**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 8. Gauge is relative to atmosphere; absolute is relative to vacuum.
 
-9. Shear-thinning/pseudoplastic behavior.
+9. Shear-thinning/pseudoplastic behavior. This result follows from **§41.2 Pressure, Absolute Pressure, Gauge Pressure, and Vacuum**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 10. Hydrostatic pressure depends on elevation; equal z gives equal P within the same connected fluid.
 

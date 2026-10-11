@@ -63,7 +63,7 @@ Before reducing a network, verify that components truly share a single series pa
 
 **Problem.** Find equivalent resistance of 4 Ω, 6 Ω, and 10 Ω in series.
 
-**Solution.** 20 Ω.
+**Solution.** 20 Ω. The governing model here is **§60.1 Series and Parallel Resistance**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of series and parallel resistance.
 
 ---
 
@@ -81,7 +81,7 @@ Choose a sign convention once—currents entering positive or currents leaving p
 
 **Problem.** Find equivalent resistance of 6 Ω and 3 Ω in parallel.
 
-**Solution.** 2 Ω.
+**Solution.** 2 Ω. The governing model here is **§60.2 Kirchhoff's Current Law**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of kirchhoff's current law.
 
 ---
 
@@ -99,7 +99,7 @@ Traverse the loop in either direction. The sign of each term follows how the tra
 
 **Problem.** At a node, 5 A enters and 2 A plus I leave. Find I.
 
-**Solution.** I=3 A.
+**Solution.** I=3 A. The governing model here is **§60.3 Kirchhoff's Voltage Law**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of kirchhoff's voltage law.
 
 ---
 
@@ -117,7 +117,7 @@ Do not apply a divider formula after a load changes the topology unless the load
 
 **Problem.** A loop contains a 12 V source and 2 Ω + 4 Ω series resistors. Find current.
 
-**Solution.** I=12/6=2 A.
+**Solution.** I=12/6=2 A. The governing model here is **§60.4 Voltage and Current Dividers**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of voltage and current dividers.
 
 ---
 
@@ -135,7 +135,7 @@ It is especially efficient when the desired outputs are node voltages and the ci
 
 **Problem.** A 12 V divider has 2 kΩ on top and 4 kΩ on bottom. Find unloaded output across 4 kΩ.
 
-**Solution.** Vout=12×4/(2+4)=8 V.
+**Solution.** Vout=12×4/(2+4)=8 V. The governing model here is **§60.5 Nodal Analysis with KCL**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of nodal analysis with kcl.
 
 ---
 
@@ -153,7 +153,7 @@ This method is guide-developed workflow; the governing law is the Handbook KVL r
 
 **Problem.** Node V is connected to 12 V through 3 kΩ and to ground through 6 kΩ. Find V.
 
-**Solution.** (V-12)/3k + V/6k=0 → V=8 V.
+**Solution.** (V-12)/3k + V/6k=0 → V=8 V. The governing model here is **§60.6 Mesh and Loop Analysis with KVL**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of mesh and loop analysis with kvl.
 
 ---
 
@@ -171,7 +171,7 @@ For a purely resistive DC load, maximum power occurs when \(R_L=R_{Th}\). Maximu
 
 **Problem.** A Thévenin source has VTh=10 V and RTh=5 Ω. Find load for maximum power and maximum load power.
 
-**Solution.** RL=5 Ω; Pmax=VTh²/(4RTh)=5 W.
+**Solution.** RL=5 Ω; Pmax=VTh²/(4RTh)=5 W. The governing model here is **§60.7 Thévenin, Norton, and Maximum Power Transfer**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of thévenin, norton, and maximum power transfer.
 
 ---
 
@@ -181,17 +181,24 @@ For a purely resistive DC load, maximum power occurs when \(R_L=R_{Th}\). Maximu
 
 **Problem.** Convert a Norton source IN=2 A in parallel with RN=4 Ω to Thévenin form.
 
-**Solution.** VTh=IN RN=8 V; RTh=4 Ω.
+**Solution.** VTh=IN RN=8 V; RTh=4 Ω. The governing model here is **§60.7 Thévenin, Norton, and Maximum Power Transfer**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of thévenin, norton, and maximum power transfer.
 
 ### Worked Example 9
 
 **Problem.** Two mesh currents I1 and I2 share a 5 Ω resistor. What voltage drop in mesh-1 direction is attributed to the shared resistor?
 
-**Solution.** 5(I1-I2).
+**Solution.** 5(I1-I2). The governing model here is **§60.7 Thévenin, Norton, and Maximum Power Transfer**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of thévenin, norton, and maximum power transfer.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — OpenStax University Physics Volume 2, Direct-Current Circuits (https://openstax.org/books/university-physics-volume-2/pages/10-introduction) supports Kirchhoff’s junction/loop rules, resistor dividers, nodal/loop reasoning, equivalent resistance, and resistive-circuit analysis.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Electrical and Computer Engineering, printed pp. 363–364**.
 
@@ -318,20 +325,17 @@ B) It is independent of topology and frequency
 C) It always represents a scalar DC quantity
 D) It replaces conservation laws
 
-26. Which statement is most accurate for **resistive network reduction**?
-A) It must be used with its defined reference and assumptions
-B) It is independent of topology and frequency
-C) It always represents a scalar DC quantity
-D) It replaces conservation laws
+26. A new problem requires **resistive network reduction**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which statement is most accurate for **Kirchhoff current law**?
-A) It must be used with its defined reference and assumptions
-B) It is independent of topology and frequency
-C) It always represents a scalar DC quantity
-D) It replaces conservation laws
-
-
----
+27. After applying **Kirchhoff current law**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -363,17 +367,17 @@ D) It replaces conservation laws
 
 14. Applying **Thevenin-Norton equivalence** without checking topology, reference direction, steady/transient condition, RMS/peak basis, or machine/circuit assumptions can produce a formally calculated but physically wrong result.
 
-15. Because the sign of power depends on the chosen voltage/current references and the passive sign convention.
+15. Because the sign of power depends on the chosen voltage/current references and the passive sign convention. For **Kirchhoff's Laws and Resistive Circuit Analysis**, apply this check specifically through **§60.1 Series and Parallel Resistance**, including that section's stated assumptions and reference quantities.
 
-16. Charge/KCL, energy/power balance, and where applicable KVL should close consistently.
+16. Charge/KCL, energy/power balance, and where applicable KVL should close consistently. For **Kirchhoff's Laws and Resistive Circuit Analysis**, apply this check specifically through **§60.2 Kirchhoff's Current Law**, including that section's stated assumptions and reference quantities.
 
-17. Whenever the Handbook supplies the relation or when the shortcut's assumptions are uncertain.
+17. Whenever the Handbook supplies the relation or when the shortcut's assumptions are uncertain. For **Kirchhoff's Laws and Resistive Circuit Analysis**, apply this check specifically through **§60.3 Kirchhoff's Voltage Law**, including that section's stated assumptions and reference quantities.
 
-18. They represent different magnitudes; mixing them introduces factors such as √2 and gives incorrect power.
+18. They represent different magnitudes; mixing them introduces factors such as √2 and gives incorrect power. For **Kirchhoff's Laws and Resistive Circuit Analysis**, apply this check specifically through **§60.4 Voltage and Current Dividers**, including that section's stated assumptions and reference quantities.
 
-19. **A.** The chapter treats **resistive network reduction** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
+19. **A.** The chapter treats **resistive network reduction** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **Kirchhoff's Laws and Resistive Circuit Analysis**, apply this check specifically through **§60.5 Nodal Analysis with KCL**, including that section's stated assumptions and reference quantities.
 
-20. **A.** The chapter treats **Kirchhoff current law** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
+20. **A.** The chapter treats **Kirchhoff current law** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **Kirchhoff's Laws and Resistive Circuit Analysis**, apply this check specifically through **§60.6 Mesh and Loop Analysis with KVL**, including that section's stated assumptions and reference quantities.
 
 21. **A.** The chapter treats **Kirchhoff voltage law** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
 
@@ -385,12 +389,9 @@ D) It replaces conservation laws
 
 25. **A.** The chapter treats **Thevenin-Norton equivalence** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
 
-26. **A.** The chapter treats **resistive network reduction** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
+26. **A.** For **resistive network reduction** in *Kirchhoff's Laws and Resistive Circuit Analysis*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter treats **Kirchhoff current law** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
-
-
----
+27. **A.** For **Kirchhoff current law** in *Kirchhoff's Laws and Resistive Circuit Analysis*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -419,13 +420,13 @@ D) It replaces conservation laws
 
 ## Practice Problem Solutions
 
-1. 20 Ω.
+1. 20 Ω. This result follows from **§60.1 Series and Parallel Resistance**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-2. 2 Ω.
+2. 2 Ω. This result follows from **§60.2 Kirchhoff's Current Law**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-3. I=3 A.
+3. I=3 A. This result follows from **§60.3 Kirchhoff's Voltage Law**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-4. I=12/6=2 A.
+4. I=12/6=2 A. This result follows from **§60.4 Voltage and Current Dividers**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 5. Vout=12×4/(2+4)=8 V.
 
@@ -435,7 +436,7 @@ D) It replaces conservation laws
 
 8. VTh=IN RN=8 V; RTh=4 Ω.
 
-9. 5(I1-I2).
+9. 5(I1-I2). This result follows from **§60.2 Kirchhoff's Current Law**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 10. I=12/(3+9)=1 A; PL=9 W.
 

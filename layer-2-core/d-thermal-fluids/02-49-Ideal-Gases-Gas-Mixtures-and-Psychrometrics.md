@@ -63,7 +63,7 @@ The specific gas constant is \(R=ar R/M\), where \(M\) is molar mass.
 
 **Problem.** Air: m=2 kg, R=0.287 kJ/kg·K, T=300 K, V=1 m³. Find pressure.
 
-**Solution.** P=mRT/V=172.2 kPa.
+**Solution.** P=mRT/V=172.2 kPa. The governing model here is **§49.1 Ideal-Gas Equation of State**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of ideal-gas equation of state.
 
 ---
 
@@ -81,7 +81,7 @@ The ratio \(k=c_p/c_v\) appears in isentropic relations.
 
 **Problem.** Ideal gas cp=1.005 and cv=0.718 kJ/kg·K. Find R and k.
 
-**Solution.** R=0.287 kJ/kg·K; k=1.400.
+**Solution.** R=0.287 kJ/kg·K; k=1.400. The governing model here is **§49.2 Specific Heats and Ideal-Gas Property Changes**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of specific heats and ideal-gas property changes.
 
 ---
 
@@ -99,7 +99,7 @@ These relations require both ideal-gas behavior and an isentropic process.
 
 **Problem.** Ideal gas at constant cv=0.718 warms 50 K. Find Δu.
 
-**Solution.** 35.9 kJ/kg.
+**Solution.** 35.9 kJ/kg. The governing model here is **§49.3 Isentropic Ideal-Gas Relations**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of isentropic ideal-gas relations.
 
 ---
 
@@ -117,7 +117,7 @@ Mixture molecular weight is mole-fraction weighted.
 
 **Problem.** Mixture x1=0.3 with M1=28, x2=0.7 with M2=44 kg/kmol. Find mixture M.
 
-**Solution.** M=39.2 kg/kmol.
+**Solution.** M=39.2 kg/kmol. The governing model here is **§49.4 Ideal-Gas Mixtures**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of ideal-gas mixtures.
 
 ---
 
@@ -135,7 +135,7 @@ When \(Zpprox1\), ideal-gas behavior is a good approximation.
 
 **Problem.** At total P=100 kPa and water-vapor partial pressure 2 kPa, find humidity ratio.
 
-**Solution.** ω=0.622(2)/(98)=0.01269 kg/kg dry air.
+**Solution.** ω=0.622(2)/(98)=0.01269 kg/kg dry air. The governing model here is **§49.5 Real-Gas Correction with Compressibility Factor**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of real-gas correction with compressibility factor.
 
 ---
 
@@ -151,9 +151,9 @@ Dew point is the saturation temperature corresponding to the existing vapor part
 
 ### Worked Example 6
 
-**Problem.** If saturation pressure at T is 4 kPa, find RH for Pv=2 kPa.
+**Problem.** If saturation pressure at T is 4 kPa, find relative humidity as a percentage for Pv=2 kPa.
 
-**Solution.** φ=0.50=50%.
+**Solution.** φ=0.50=50%. The governing model here is **§49.6 Humidity Ratio, Relative Humidity, and Dew Point**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of humidity ratio, relative humidity, and dew point.
 
 ---
 
@@ -171,7 +171,7 @@ Humidification, evaporative cooling, and mixing processes are read from the psyc
 
 **Problem.** What is dew point?
 
-**Solution.** Saturation temperature corresponding to the current water-vapor partial pressure.
+**Solution.** Saturation temperature corresponding to the current water-vapor partial pressure. The governing model here is **§49.7 Common Psychrometric Processes**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of common psychrometric processes.
 
 ---
 
@@ -181,17 +181,24 @@ Humidification, evaporative cooling, and mixing processes are read from the psyc
 
 **Problem.** What does Z=1 mean?
 
-**Solution.** Ideal-gas behavior.
+**Solution.** Ideal-gas behavior. The governing model here is **§49.7 Common Psychrometric Processes**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of common psychrometric processes.
 
 ### Worked Example 9
 
 **Problem.** What is Dalton's law?
 
-**Solution.** Total pressure equals sum of component partial pressures.
+**Solution.** Total pressure equals sum of component partial pressures. The governing model here is **§49.7 Common Psychrometric Processes**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of common psychrometric processes.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — Engineering LibreTexts, Thermodynamics/HVAC psychrometric references (https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Thermodynamics) supports ideal-gas mixtures, humidity measures, psychrometric properties, and common heating/cooling/humidification/dehumidification processes.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Thermodynamics, printed pp. 144–150 and psychrometric charts pp. 179–180**.
 
@@ -318,20 +325,17 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. Which statement best describes **ideal gas**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
+26. A new problem requires **ideal gas**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which statement best describes **ideal-gas specific heat**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
-
-
----
+27. After applying **ideal-gas specific heat**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -363,17 +367,17 @@ D) It replaces conservation laws
 
 14. The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then apply **psychrometric process**.
 
-15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Ideal Gases, Gas Mixtures, and Psychrometrics**, apply this check specifically through **§49.1 Ideal-Gas Equation of State**, including that section's stated assumptions and reference quantities.
 
-16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Ideal Gases, Gas Mixtures, and Psychrometrics**, apply this check specifically through **§49.2 Specific Heats and Ideal-Gas Property Changes**, including that section's stated assumptions and reference quantities.
 
-17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Ideal Gases, Gas Mixtures, and Psychrometrics**, apply this check specifically through **§49.3 Isentropic Ideal-Gas Relations**, including that section's stated assumptions and reference quantities.
 
-18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Ideal Gases, Gas Mixtures, and Psychrometrics**, apply this check specifically through **§49.4 Ideal-Gas Mixtures**, including that section's stated assumptions and reference quantities.
 
-19. **A.** The chapter applies **ideal gas** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+19. **A.** The chapter applies **ideal gas** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Ideal Gases, Gas Mixtures, and Psychrometrics**, apply this check specifically through **§49.5 Real-Gas Correction with Compressibility Factor**, including that section's stated assumptions and reference quantities.
 
-20. **A.** The chapter applies **ideal-gas specific heat** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+20. **A.** The chapter applies **ideal-gas specific heat** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Ideal Gases, Gas Mixtures, and Psychrometrics**, apply this check specifically through **§49.6 Humidity Ratio, Relative Humidity, and Dew Point**, including that section's stated assumptions and reference quantities.
 
 21. **A.** The chapter applies **isentropic ideal gas** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
@@ -385,12 +389,9 @@ D) It replaces conservation laws
 
 25. **A.** The chapter applies **psychrometric process** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** The chapter applies **ideal gas** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+26. **A.** For **ideal gas** in *Ideal Gases, Gas Mixtures, and Psychrometrics*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter applies **ideal-gas specific heat** only after the state, geometry, flow/thermal regime, and assumptions are defined.
-
-
----
+27. **A.** For **ideal-gas specific heat** in *Ideal Gases, Gas Mixtures, and Psychrometrics*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -419,25 +420,25 @@ D) It replaces conservation laws
 
 ## Practice Problem Solutions
 
-1. P=mRT/V=172.2 kPa.
+1. P=mRT/V=172.2 kPa. This result follows from **§49.1 Ideal-Gas Equation of State**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 2. R=0.287 kJ/kg·K; k=1.400.
 
-3. 35.9 kJ/kg.
+3. 35.9 kJ/kg. This result follows from **§49.3 Isentropic Ideal-Gas Relations**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-4. M=39.2 kg/kmol.
+4. M=39.2 kg/kmol. This result follows from **§49.4 Ideal-Gas Mixtures**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 5. ω=0.622(2)/(98)=0.01269 kg/kg dry air.
 
-6. φ=0.50=50%.
+6. φ=0.50=50%. This result follows from **§49.6 Humidity Ratio, Relative Humidity, and Dew Point**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 7. Saturation temperature corresponding to the current water-vapor partial pressure.
 
-8. Ideal-gas behavior.
+8. Ideal-gas behavior. This result follows from **§49.1 Ideal-Gas Equation of State**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 9. Total pressure equals sum of component partial pressures.
 
-10. Approximately constant.
+10. Approximately constant. This result follows from **§49.3 Isentropic Ideal-Gas Relations**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 
 ---

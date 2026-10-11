@@ -63,13 +63,14 @@ If velocity varies across the section, the exact relation is an area integral an
 
 **Problem.** A pipe has A=0.020 m² and average velocity 3 m/s. Find Q.
 
-**Solution.** Q=0.060 m³/s.
+**Solution.** Q=0.060 m³/s. The governing model here is **§43.1 Volumetric Flow Rate and Average Velocity**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of volumetric flow rate and average velocity.
 
 ---
 
 ## 43.2 Mass Flow Rate
 
-Mass flow rate combines volumetric flow and density. For a uniform one-dimensional stream, \(\dot m=ho Av\).
+Mass flow rate combines volumetric flow and density. For a uniform one-dimensional stream, \(\dot m=
+ho Av\).
 
 For gases or varying-density flow, constant volumetric flow does not imply constant mass flow.
 
@@ -81,7 +82,7 @@ For gases or varying-density flow, constant volumetric flow does not imply const
 
 **Problem.** Water at ρ=1000 kg/m³ flows at Q=0.060 m³/s. Find mass flow.
 
-**Solution.** ṁ=60 kg/s.
+**Solution.** ṁ=60 kg/s. The governing model here is **§43.2 Mass Flow Rate**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of mass flow rate.
 
 ---
 
@@ -99,7 +100,7 @@ If density is constant, the relation reduces to equal volumetric flow and \(A_1v
 
 **Problem.** Incompressible flow enters a 0.040 m² section at 2 m/s and exits through 0.010 m². Find exit speed.
 
-**Solution.** v2=A1v1/A2=8 m/s.
+**Solution.** v2=A1v1/A2=8 m/s. The governing model here is **§43.3 Steady One-Dimensional Continuity**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of steady one-dimensional continuity.
 
 ---
 
@@ -117,7 +118,7 @@ This full material-derivative form is guide-developed background; the Handbook s
 
 **Problem.** Air enters at ρ1=1.2, A1=0.10, v1=5 and exits at ρ2=0.9, A2=0.08. Find v2 for steady one-stream flow.
 
-**Solution.** v2=ρ1A1v1/(ρ2A2)=8.33 m/s.
+**Solution.** v2=ρ1A1v1/(ρ2A2)=8.33 m/s. The governing model here is **§43.4 Velocity Fields and Acceleration**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of velocity fields and acceleration.
 
 ---
 
@@ -135,7 +136,7 @@ In steady flow, streamlines and pathlines coincide. In unsteady flow they need n
 
 **Problem.** At steady state, a mixer has inflows 2 and 3 kg/s. Find total outflow.
 
-**Solution.** 5 kg/s.
+**Solution.** 5 kg/s. The governing model here is **§43.5 Streamlines, Pathlines, and Steady Flow**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of streamlines, pathlines, and steady flow.
 
 ---
 
@@ -153,7 +154,7 @@ This framing extends continuity to multiple inlets, multiple outlets, tanks, and
 
 **Problem.** What is area under a velocity profile integrated over area?
 
-**Solution.** Volumetric flow rate.
+**Solution.** Volumetric flow rate. The governing model here is **§43.6 Control-Volume Mass Balance**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of control-volume mass balance.
 
 ---
 
@@ -171,7 +172,7 @@ At a junction, total mass inflow must equal total mass outflow at steady state e
 
 **Problem.** Distinguish streamline from pathline.
 
-**Solution.** Streamline is instantaneous tangent field; pathline is a particle trajectory.
+**Solution.** Streamline is instantaneous tangent field; pathline is a particle trajectory. The governing model here is **§43.7 Flow-Kinematics Checks**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of flow-kinematics checks.
 
 ---
 
@@ -181,17 +182,24 @@ At a junction, total mass inflow must equal total mass outflow at steady state e
 
 **Problem.** When do streamlines and pathlines coincide?
 
-**Solution.** Steady flow.
+**Solution.** Steady flow. The governing model here is **§43.7 Flow-Kinematics Checks**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of flow-kinematics checks.
 
 ### Worked Example 9
 
 **Problem.** What does the accumulation term equal at steady state?
 
-**Solution.** Zero.
+**Solution.** Zero. The governing model here is **§43.7 Flow-Kinematics Checks**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of flow-kinematics checks.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — OpenStax University Physics Volume 1, Chapter 14 — Fluid Mechanics (https://openstax.org/books/university-physics-volume-1/pages/14-introduction) supports flow rate, continuity, velocity fields/kinematics, streamlines/pathlines, and control-volume mass conservation.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Fluid Mechanics, printed pp. 185–186**.
 
@@ -318,20 +326,17 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. Which statement best describes **volumetric flow rate**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
+26. A new problem requires **volumetric flow rate**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which statement best describes **mass flow rate**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
-
-
----
+27. After applying **mass flow rate**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -363,17 +368,17 @@ D) It replaces conservation laws
 
 14. The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then apply **flow kinematics audit**.
 
-15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Continuity, Velocity Fields, and Flow Kinematics**, apply this check specifically through **§43.1 Volumetric Flow Rate and Average Velocity**, including that section's stated assumptions and reference quantities.
 
-16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Continuity, Velocity Fields, and Flow Kinematics**, apply this check specifically through **§43.2 Mass Flow Rate**, including that section's stated assumptions and reference quantities.
 
-17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Continuity, Velocity Fields, and Flow Kinematics**, apply this check specifically through **§43.3 Steady One-Dimensional Continuity**, including that section's stated assumptions and reference quantities.
 
-18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Continuity, Velocity Fields, and Flow Kinematics**, apply this check specifically through **§43.4 Velocity Fields and Acceleration**, including that section's stated assumptions and reference quantities.
 
-19. **A.** The chapter applies **volumetric flow rate** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+19. **A.** The chapter applies **volumetric flow rate** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Continuity, Velocity Fields, and Flow Kinematics**, apply this check specifically through **§43.5 Streamlines, Pathlines, and Steady Flow**, including that section's stated assumptions and reference quantities.
 
-20. **A.** The chapter applies **mass flow rate** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+20. **A.** The chapter applies **mass flow rate** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Continuity, Velocity Fields, and Flow Kinematics**, apply this check specifically through **§43.6 Control-Volume Mass Balance**, including that section's stated assumptions and reference quantities.
 
 21. **A.** The chapter applies **continuity equation** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
@@ -385,12 +390,9 @@ D) It replaces conservation laws
 
 25. **A.** The chapter applies **flow kinematics audit** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** The chapter applies **volumetric flow rate** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+26. **A.** For **volumetric flow rate** in *Continuity, Velocity Fields, and Flow Kinematics*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter applies **mass flow rate** only after the state, geometry, flow/thermal regime, and assumptions are defined.
-
-
----
+27. **A.** For **mass flow rate** in *Continuity, Velocity Fields, and Flow Kinematics*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -419,25 +421,25 @@ D) It replaces conservation laws
 
 ## Practice Problem Solutions
 
-1. Q=0.060 m³/s.
+1. Q=0.060 m³/s. This result follows from **§43.1 Volumetric Flow Rate and Average Velocity**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-2. ṁ=60 kg/s.
+2. ṁ=60 kg/s. This result follows from **§43.2 Mass Flow Rate**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-3. v2=A1v1/A2=8 m/s.
+3. v2=A1v1/A2=8 m/s. This result follows from **§43.3 Steady One-Dimensional Continuity**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 4. v2=ρ1A1v1/(ρ2A2)=8.33 m/s.
 
-5. 5 kg/s.
+5. 5 kg/s. This result follows from **§43.5 Streamlines, Pathlines, and Steady Flow**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-6. Volumetric flow rate.
+6. Volumetric flow rate. This result follows from **§43.6 Control-Volume Mass Balance**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 7. Streamline is instantaneous tangent field; pathline is a particle trajectory.
 
-8. Steady flow.
+8. Steady flow. This result follows from **§43.1 Volumetric Flow Rate and Average Velocity**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-9. Zero.
+9. Zero. This result follows from **§43.2 Mass Flow Rate**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-10. Density changes.
+10. Density changes. This result follows from **§43.3 Steady One-Dimensional Continuity**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 
 ---

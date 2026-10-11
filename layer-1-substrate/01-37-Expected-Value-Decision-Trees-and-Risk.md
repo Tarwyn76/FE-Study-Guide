@@ -495,17 +495,9 @@ Decision trees are evaluated from right to left.
 
 This is **rollback**.
 
-At each chance node:
+At each chance node, **replace the node by its expected value**.
 
-$$
-\boxed{\text{replace the node by its expected value}.}
-$$
-
-At each decision node:
-
-$$
-\boxed{\text{replace the node by the preferred branch value}.}
-$$
+At each decision node, **replace the node by the preferred branch value**.
 
 Continue until the initial decision node is reached.
 
@@ -1019,6 +1011,13 @@ Expected value does not override mandatory feasibility.
 
 ## As the Handbook States It
 
+### Source Boundary
+
+- **FE-Handbook-supported** — The FE Reference Handbook pages cited by the ledger supply the equations, tables, definitions, or exam-scope statements identified for the split-required concepts in this chapter.
+- **Externally supported** — Engineering LibreTexts, Performing Quantitative Risk Analysis (https://eng.libretexts.org/Courses/De_Anza_College/Project_Management%3A_Delivering_Business_Objectives/09%3A_Risk_Management/9.02%3A_Risk_Management_Guide/9.2.05%3A_Performing_Quantitative_Risk_Analysis) supports Expected monetary value and rollback-style decision-tree analysis for sequential decisions under uncertainty.
+- **Guide synthesis** — The worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, and explanatory derivations that go beyond the cited Handbook/external-source statements are instructional synthesis developed for this guide.
+
+
 > **Source verification.** Checked against the supplied *FE Reference Handbook
 > 10.6*, eighth printing, April 2026. Printed pp. 66–67 define expected value
 > for discrete and continuous random variables. Printed p. 237 in
@@ -1230,11 +1229,7 @@ D) never in decision analysis.
 
 4.
 
-   $$
-   \boxed{1}.
-   $$
-
-   (§37.1, §37.3)
+   $$\boxed{1}.$$ The listed probabilities exhaust the mutually exclusive outcomes, so their total must equal one. (§37.1, §37.3)
 
 5. Evaluate terminal outcomes first, reduce chance nodes to expected values,
    reduce later decision nodes to preferred branches, and continue backward.

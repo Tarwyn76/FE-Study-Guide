@@ -3,9 +3,9 @@
 technical_audit_all_layers.py
 =========================
 
-Consolidated technical-content audit for FE Supplemental Guide Layers 1, 2, and 3 (v3).
+Consolidated technical-content audit for FE Supplemental Guide Layers 1, 2, and 3 (v7).
 
-Revision 6 adds generated-artwork discovery.  By default the audit now checks
+Revision v5 preserves generated-artwork discovery and fixes assessment numbering and unit heuristics.  By default the audit now checks
 figures/png/<Figure ID>.png and figures/svg/<Figure ID>.svg, reports generated
 artwork counts, flags incomplete PNG/SVG pairs, and preserves manifest Status as
 the engineering-QA gate.  It also retains the arithmetic and source-split fixes from
@@ -537,7 +537,10 @@ def numbered_blocks(text: str) -> list[tuple[int, str]]:
       body
       2. ...
     """
-    matches = list(re.finditer(r"(?m)^\s*(\d+)\.\s+", text))
+    matches = list(re.finditer(
+        r"(?m)^(?:\*\*)?(\d+)\.(?:\*\*)?(?:[ \t]+|(?=\r?$))",
+        text,
+    ))
     out = []
     for i, m in enumerate(matches):
         n = int(m.group(1))
@@ -551,6 +554,16 @@ def find_h2(text: str, heading_prefix: str) -> str:
     sections = split_h2_sections(text)
     for heading, body in sections:
         if heading.lower().startswith(heading_prefix.lower()):
+            return body
+    return ""
+
+
+def find_h2_any(text: str, heading_prefixes: tuple[str, ...]) -> str:
+    """Return the first H2 body matching any accepted heading prefix."""
+    sections = split_h2_sections(text)
+    for heading, body in sections:
+        low = heading.lower()
+        if any(low.startswith(prefix.lower()) for prefix in heading_prefixes):
             return body
     return ""
 
@@ -596,8 +609,122 @@ def numeric_tokens(text: str) -> list[str]:
     return NUM_TOKEN_RE.findall(text)
 
 
+def has_numeric_result_token(text: str) -> bool:
+    """Recognize numeric answers written with digits or a leading number word."""
+    if has_numeric_token(text):
+        return True
+    s = strip_markdown(text).lower().strip()
+    return bool(re.match(
+        r"^(?:zero|one|two|three|four|five|six|seven|eight|nine|ten)\b",
+        s,
+    ))
+
+
 def has_unit_token(text: str) -> bool:
-    return bool(UNIT_TOKEN_RE.search(text))
+    """Return True when an engineering unit is attached to a numeric quantity.
+
+    Normalize common LaTeX wrappers before checking.  This allows forms such as
+    ``157079.6\\ \\mathrm{mm^3}``, ``2.79\\ \\mathrm{m^3/s}``, and
+    ``26.6^\\circ`` to be recognized without treating ordinary prose as units.
+    """
+    normalized = text
+
+    # Preserve the contents of simple unit wrappers.
+    normalized = re.sub(
+        r"\\(?:text|mathrm)\{\s*([^{}]+?)\s*\}",
+        lambda m: m.group(1),
+        normalized,
+    )
+    normalized = normalized.replace(r"\,", " ")
+    normalized = normalized.replace(r"\ ", " ")
+    normalized = normalized.replace(r"\cdot", "·")
+    normalized = normalized.replace(r"^\circ", "°")
+    normalized = normalized.replace(r"^{\circ}", "°")
+
+    unit = (
+        r"(?:V|mV|kV|A|mA|W|kW|MW|mW|Pa|kPa|MPa|psi|psf|ksi|pcf|"
+        r"N|kN|lbf|lbm|lb|kip|kg|g|mg|"
+        r"m|mm|cm|km|in|ft|yd|mi|"
+        r"s|min|h|hr|day|Hz|kHz|MHz|rad|deg|°|°C|°F|K|J|kJ|MJ|Btu|"
+        r"mol|kmol|"
+        r"m/s|m/s\^2|ft/s|ft/s\^2|mi/hr|veh/hr|in/hr|cfs|gpm|cfm|rpm|"
+        r"m\^2|m\^3|mm\^2|mm\^3|cm\^2|cm\^3|ft\^2|ft\^3|in\^2|in\^3|yd\^2|yd\^3|"
+        r"m²|m³|mm²|mm³|cm²|cm³|ft²|ft³|in²|in³|yd²|yd³|"
+        r"m\^3/s|mm\^3/s|cm\^3/s|m³/s|mm³/s|cm³/s|"
+        r"kip/ft|lb/ft|lbf/ft|lb/ft\^2|lb/ft²|lb/in\^2|lb/in²|acre|acres|"
+        r"L|mL|gal|ohm|Ω|F|H|S|C|ppm|ppb|"
+        r"mg/L|g/L|kg/m\^3|kg/m³|Pa·s|cP|"
+        r"W/m\^2|W/m²|W/m·K|W/m-K|"
+        r"kPa/s|Pa/s|MPa/s|psi/s)"
+    )
+    number = r"[-+]?\d+(?:\.\d+)?(?:[eE][-+]?\d+)?"
+
+    if re.search(rf"{number}\s*{unit}(?![A-Za-z])", normalized):
+        return True
+
+    # Currency is a dimensional monetary quantity for this audit.
+    if re.search(rf"\\\$\s*{number}", text):
+        return True
+
+    return False
+
+
+def expects_numeric_result(text: str) -> bool:
+    """Heuristically decide whether a prompt is asking for a numeric result.
+
+    Numeric context alone is insufficient: classification, model-selection,
+    hypothesis-translation, and explanation questions routinely contain numbers
+    but correctly return categorical or symbolic answers.
+    """
+    s = strip_markdown(text).lower()
+
+    conceptual = re.search(
+        r"\b(?:classify|identify|explain|interpret|select|choose|describe|state which|"
+        r"which (?:model|design|distribution|procedure|method|alternative)|"
+        r"test whether|write|formulate|translate|why|whether)\b",
+        s,
+    )
+    quantitative = re.search(
+        r"\b(?:calculate|compute|evaluate|find|determine|solve|estimate|convert)\b",
+        s,
+    )
+
+    # Explicit quantitative verbs normally win unless the requested object is
+    # plainly categorical/symbolic rather than numerical.
+    if quantitative:
+        categorical_object = re.search(
+            r"\b(?:find|determine|choose|select)\b.{0,80}"
+            r"\b(?:model|design|distribution|procedure|method|classification|"
+            r"hypotheses?|decision structure|alternative|boolean|condition|"
+            r"pseudocode|logic|flowchart|algorithm|code)\b",
+            s,
+        )
+        if categorical_object:
+            return False
+        return True
+
+    if conceptual:
+        return False
+
+    # "What is/how many/how much" normally requests a value.
+    if re.search(r"\b(?:what is|how many|how much)\b", s):
+        return True
+
+    return False
+
+
+def result_is_dimensionless_or_count(text: str) -> bool:
+    """Recognize prompts whose requested final result should not carry units."""
+    s = strip_markdown(text).lower()
+    return bool(re.search(
+        r"\b(?:probability|fraction|percentage|percent|ratio|efficiency|"
+        r"conversion|yield|selectivity|moisture content|wet[- ]basis moisture|"
+        r"dry[- ]basis moisture|wet[- ]and[- ]dry[- ]basis moisture|"
+        r"coefficient|index|degrees? of freedom|sample size|number of|count|"
+        r"z(?:[- ]?score)?|t statistic|chi[- ]?square|f statistic|"
+        r"reynolds number|nusselt number|sherwood number|biot number|fourier number|cop)\b",
+        s,
+    ))
 
 
 def balanced_braces(s: str) -> bool:
@@ -914,9 +1041,7 @@ def extract_worked_examples(doc: ChapterDoc) -> list[dict[str, Any]]:
         r"Calculation(?:\s*[—:\-]\s*[^*]+)?|"
         r"Work(?:\s*[—:\-]\s*[^*]+)?|"
         r"Analysis(?:\s*[—:\-]\s*[^*]+)?|"
-        r"Answer(?:\s*[—:\-]\s*[^*]+)?|"
-        r"Verification(?:\s*[—:\-]\s*[^*]+)?|"
-        r"Check(?:\s*[—:\-]\s*[^*]+)?"
+        r"Answer(?:\s*[—:\-]\s*[^*]+)?"
         r")\.?\*\*\s*"
     )
     prompt_marker_re = re.compile(
@@ -941,8 +1066,15 @@ def extract_worked_examples(doc: ChapterDoc) -> list[dict[str, Any]]:
 
         if prompt_markers:
             problem = prompt_marker_re.sub("", pre_solution).strip()
+        elif sm:
+            # No explicit Problem/Given/Find marker, but an explicit solution
+            # marker exists.  The text before that marker is the actual prompt;
+            # do not use the Worked Example heading number as "numeric data."
+            problem = pre_solution
         elif block:
-            problem = label
+            # Implicit-prompt examples cannot be split reliably.  Use the block
+            # itself for audit intent rather than the numbered heading label.
+            problem = block
         else:
             problem = ""
 
@@ -961,6 +1093,7 @@ def extract_worked_examples(doc: ChapterDoc) -> list[dict[str, Any]]:
         examples.append({
             "label": label,
             "problem": problem,
+            "prompt_text": pre_solution,
             "solution": solution,
             "block": block,
             "implicit_prompt": bool(block and not prompt_markers),
@@ -1122,23 +1255,31 @@ def audit_worked_examples(
                     recommendation="Replace with a problem-specific derivation/calculation and final result.",
                 )
 
-            if p_num and not s_num:
+            intent_text = f"{label} {ex.get('prompt_text', problem)}"
+
+            if p_num and expects_numeric_result(intent_text) and not has_numeric_result_token(solution):
                 flags.append("numeric_problem_no_numeric_solution")
                 add_issue(
                     issues, "WARNING", "numeric_example_without_numeric_result",
                     chapter=doc.chapter, section=f"Worked Example {label}", file=str(doc.path),
                     excerpt_text=solution,
-                    message="Problem contains numeric data, but the parsed solution contains no numeric result.",
+                    message="Problem requests a numeric result, but the parsed solution contains no numeric result.",
                     recommendation="Verify the example is fully solved and includes the computed answer.",
                 )
 
-            if p_unit and not s_unit and p_num:
+            if (
+                p_unit
+                and p_num
+                and expects_numeric_result(intent_text)
+                and not result_is_dimensionless_or_count(intent_text)
+                and not s_unit
+            ):
                 flags.append("solution_lacks_units")
                 add_issue(
                     issues, "REVIEW", "worked_example_solution_units",
                     chapter=doc.chapter, section=f"Worked Example {label}", file=str(doc.path),
                     excerpt_text=solution,
-                    message="Numeric problem includes engineering units, but no recognized unit was found in the solution.",
+                    message="Problem requests a dimensional numeric result, but no recognized engineering unit was found in the solution.",
                     recommendation="Check dimensional consistency and include units on intermediate/final quantities where appropriate.",
                 )
 
@@ -1184,10 +1325,30 @@ def audit_assessments(
     rows = []
 
     sections = {
-        "review_questions": find_h2(doc.raw, "Review Questions"),
-        "answer_key": find_h2(doc.raw, "Answer Key"),
-        "practice_problems": find_h2(doc.raw, "Practice Problems"),
-        "practice_solutions": find_h2(doc.raw, "Practice Problem Solutions"),
+        "review_questions": find_h2_any(
+            doc.raw, ("Review Questions",)
+        ),
+        "answer_key": find_h2_any(
+            doc.raw,
+            (
+                "Answer Key",
+                "Answers to Review Questions",
+                "Review Answers",
+                "Review Question Answers",
+            ),
+        ),
+        "practice_problems": find_h2_any(
+            doc.raw, ("Practice Problems",)
+        ),
+        "practice_solutions": find_h2_any(
+            doc.raw,
+            (
+                "Practice Problem Solutions",
+                "Solutions to Practice Problems",
+                "Practice Answers",
+                "Answers to Practice Problems",
+            ),
+        ),
     }
 
     parsed = {k: numbered_blocks(v) for k, v in sections.items()}
@@ -1255,12 +1416,16 @@ def audit_assessments(
         if n not in sols:
             continue
         solution = sols[n]
-        if has_numeric_token(problem) and not has_numeric_token(solution):
+        if (
+            has_numeric_token(problem)
+            and expects_numeric_result(problem)
+            and not has_numeric_result_token(solution)
+        ):
             add_issue(
                 issues, "WARNING", "practice_numeric_without_numeric_solution",
                 chapter=doc.chapter, section=f"Practice Problem {n}", file=str(doc.path),
                 excerpt_text=solution,
-                message="Practice problem contains numeric data but its solution contains no numeric result.",
+                message="Practice problem requests a numeric result but its parsed solution contains no numeric result.",
                 recommendation="Verify the practice solution is fully worked and not a procedural placeholder.",
             )
 

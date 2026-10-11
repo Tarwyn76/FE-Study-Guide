@@ -81,26 +81,26 @@ and important, and you need to be able to spot them.
 
 By the end of this chapter, you will be able to:
 
-* 16.1 State informally what $\lim_{x \to a}f(x) = L$ means and distinguish
+* **16.1** State informally what $\lim_{x \to a}f(x) = L$ means and distinguish
   it from $f(a)$
-* 16.2 Evaluate one-sided limits and use them to determine whether a
+* **16.2** Evaluate one-sided limits and use them to determine whether a
   two-sided limit exists
-* 16.3 Identify the three ways a limit can fail to exist
-* 16.4 Apply the limit laws for sums, products, quotients, powers, and roots
-* 16.5 Evaluate limits by direct substitution, factoring, rationalizing, and
+* **16.3** Identify the three ways a limit can fail to exist
+* **16.4** Apply the limit laws for sums, products, quotients, powers, and roots
+* **16.5** Evaluate limits by direct substitution, factoring, rationalizing, and
   combining fractions
-* 16.6 Recognize the indeterminate form $0/0$ and explain why it requires
+* **16.6** Recognize the indeterminate form $0/0$ and explain why it requires
   algebraic work
-* 16.7 Evaluate limits at infinity for rational and exponential functions and
+* **16.7** Evaluate limits at infinity for rational and exponential functions and
   locate horizontal asymptotes
-* 16.8 Evaluate infinite limits and locate vertical asymptotes
-* 16.9 Apply the special trigonometric limits
+* **16.8** Evaluate infinite limits and locate vertical asymptotes
+* **16.9** Apply the special trigonometric limits
   $\lim_{\theta \to 0}\frac{\sin\theta}{\theta} = 1$ and
   $\lim_{\theta \to 0}\frac{1 - \cos\theta}{\theta} = 0$
-* 16.10 State the three conditions for continuity at a point and classify
+* **16.10** State the three conditions for continuity at a point and classify
   removable, jump, and infinite discontinuities
-* 16.11 Determine a parameter value that makes a piecewise function continuous
-* 16.12 Apply the Intermediate Value Theorem to establish that a root exists
+* **16.11** Determine a parameter value that makes a piecewise function continuous
+* **16.12** Apply the Intermediate Value Theorem to establish that a root exists
   within an interval
 
 ---
@@ -337,7 +337,11 @@ does not determine the answer. Different functions producing $\frac{0}{0}$ at
 the same point have different limits — some finite, some infinite, some
 nonexistent. The symbol tells you nothing except *do more work*.
 
-$$\frac{0}{0} \quad \text{means: the substitution was inconclusive, not that the answer is 0 or 1 or } \infty$$
+$$\boxed{\frac{0}{0}}.$$
+
+This means only that direct substitution was inconclusive. It does not
+mean that the limit equals \(0\), \(1\), or \(\infty\); additional
+algebraic analysis is required.
 
 The cause is always the same: numerator and denominator share a factor that
 vanishes at $x = a$. Cancel it and the obstruction disappears.

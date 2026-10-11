@@ -876,6 +876,15 @@ P(A\cap B)=P(A)P(B\mid A)=P(B)P(A\mid B).
 Those are interpretation skills; a formula table cannot choose them for you.
 
 ---
+### Source boundary for split-required material
+**FE-Handbook-supported.** The formulas, definitions, tables, and methods identified in the verified Handbook table above are supported by the cited printed pages of the NCEES FE Reference Handbook 10.6.
+**Externally supported.** The following material extends beyond what is explicitly supplied in the Handbook and is supported by the listed educational references:
+- OpenStax *Introductory Statistics 2e*, Chapter 3 key terms — experiments, outcomes, sample spaces, events, independence, and mutually exclusive events. https://openstax.org/books/introductory-statistics-2e/pages/3-key-terms
+- OpenStax *Introductory Statistics 2e*, §3.3 “Two Basic Rules of Probability” — addition and multiplication rules. https://openstax.org/books/introductory-statistics-2e/pages/3-3-two-basic-rules-of-probability
+- OpenStax *Introductory Statistics 2e*, §3.5 “Tree and Venn Diagrams” — conditional-probability trees and partition-style branch summation. https://openstax.org/books/introductory-statistics-2e/pages/3-5-tree-and-venn-diagrams
+
+**Guide synthesis.** Worked-example sequencing, FE-oriented lookup strategy, decision rules, cautions, mnemonics, and explanatory bridges are guide-developed synthesis unless specifically attributed above.
+
 
 ## Where This Goes Wrong
 
@@ -938,6 +947,11 @@ added directly.
 **Accepting an answer outside $[0,1]$.** Stop and repair the setup.
 
 ---
+
+
+### Ledger terminology alignment
+
+- **probability partition** — mutually exclusive and collectively exhaustive events whose probabilities sum to one.
 
 ## Key Terms
 
@@ -1081,7 +1095,7 @@ D) a certain event.
 
 12.
 
-    $$4(3)=\boxed{12}.$$
+    $$4(3)=\boxed{12}.$$ There are four connector choices and three cable-length choices, so the multiplication principle gives twelve combinations.
 
 13. Assigned roles mean order matters:
 

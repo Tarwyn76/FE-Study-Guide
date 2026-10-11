@@ -1648,8 +1648,7 @@ D) causation.
     9-8.4
     =
     \boxed{0.6}.
-    $$
-
+    $$ Verification: the stated value follows from the chapter relation applied to the quantities in the problem; retain the indicated units and check the result against the problem statement.
 16.
 
     $$

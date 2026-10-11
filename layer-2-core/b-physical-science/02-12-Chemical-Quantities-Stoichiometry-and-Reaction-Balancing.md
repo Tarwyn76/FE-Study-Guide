@@ -216,6 +216,13 @@ Before calculation, identify the governing state, composition, reaction, exposur
 
 ## As the Handbook States It
 
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — OpenStax Chemistry 2e, Reaction Stoichiometry (https://openstax.org/books/chemistry-2e/pages/4-3-reaction-stoichiometry) supports balanced equations, stoichiometric factors, limiting/excess reactants, theoretical yield, actual yield, and percent yield.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
+
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Chemistry and Biology p. 86; periodic table p. 89**.
 
 **Source boundary:** The Handbook directly supplies Avogadro's number, mole definitions, molar volume at the stated standard condition, and atomic weights. Reaction balancing, limiting-reactant workflow, and yield calculations are guide-developed fundamentals expected by the exam specifications.
@@ -346,20 +353,17 @@ B) A universal rule independent of conditions
 C) A unit-conversion constant only
 D) A substitute for verified data
 
-26. Which answer best describes **mole**?
-A) A conditional engineering concept used under stated assumptions
-B) A universal rule independent of conditions
-C) A unit-conversion constant only
-D) A substitute for verified data
+26. A new problem requires **mole**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which answer best describes **molar mass**?
-A) A conditional engineering concept used under stated assumptions
-B) A universal rule independent of conditions
-C) A unit-conversion constant only
-D) A substitute for verified data
-
-
----
+27. After applying **molar mass**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -377,28 +381,24 @@ D) A substitute for verified data
 
 7. **molar gas volume** is the central concept of §12.7; apply the definition, assumptions, and engineering consequence developed in that section.
 
-8. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+8. For §12.1, **The Mole and Avogadro's Number**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-9. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+9. For §12.2, **Molar Mass and Composition**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-10. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+10. For §12.3, **Balancing Chemical Reactions**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-11. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+11. For §12.4, **Stoichiometric Ratios**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-12. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+12. For §12.5, **Limiting and Excess Reactants**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-13. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+13. For §12.6, **Theoretical Yield, Actual Yield, and Percent Yield**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-14. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+14. For §12.7, **Gas Stoichiometry and Standard Molar Volume**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-15. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-16. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-17. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-18. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
+15. Locate the Handbook definitions for mole, molar mass, stoichiometric coefficients, limiting reactant, and any reaction-property tables needed for the stated chemical equation.
+16. Verify conservation of each element and electric charge, and confirm that mole-to-mass conversions cancel units correctly before accepting the stoichiometric result.
+17. Use supplied composition, purity, yield, conversion, or tabulated molar data whenever available instead of substituting an idealized value or remembered trend.
+18. The sequence balance first, convert to moles, apply the stoichiometric ratio, then convert to the requested quantity is guide-developed problem-solving structure.
 19. **A.** The chapter applies **mole** only under its stated physical/model assumptions.
 
 20. **A.** The chapter applies **molar mass** only under its stated physical/model assumptions.
@@ -413,12 +413,9 @@ D) A substitute for verified data
 
 25. **A.** The chapter applies **molar gas volume** only under its stated physical/model assumptions.
 
-26. **A.** The chapter applies **mole** only under its stated physical/model assumptions.
+26. **A.** For **mole** in *Chemical Quantities, Stoichiometry, and Reaction Balancing*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter applies **molar mass** only under its stated physical/model assumptions.
-
-
----
+27. **A.** For **molar mass** in *Chemical Quantities, Stoichiometry, and Reaction Balancing*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -451,7 +448,7 @@ D) A substitute for verified data
 
 2. 2. n=36.03/18.015=2.000 mol.
 
-3. 3. C3H8 + 5O2 → 3CO2 + 4H2O.
+3. $\mathrm{C_3H_8+5O_2\rightarrow3CO_2+4H_2O}$. These coefficients conserve three carbon atoms, eight hydrogen atoms, and ten oxygen atoms.
 
 4. 4. 2.5×5=12.5 mol O2.
 
@@ -459,7 +456,7 @@ D) A substitute for verified data
 
 6. 6. 2 mol O2 × (2 mol H2O/1 mol O2)=4 mol H2O.
 
-7. 7. 3.4/4×100%=85%.
+7. $3.4/4\times100\%=85\%$. Percent yield is actual yield divided by theoretical yield, multiplied by one hundred percent.
 
 8. 8. V=1.50×22.4=33.6 L.
 

@@ -311,20 +311,17 @@ B) An unrelated calculation method
 C) A guaranteed outcome
 D) A substitute for engineering judgment
 
-26. Which choice best matches the chapter's use of **Cash flows**?
-A) The section-specific engineering concept or criterion
-B) An unrelated calculation method
-C) A guaranteed outcome
-D) A substitute for engineering judgment
+26. A new problem requires **Cash flows**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which choice best matches the chapter's use of **Interest**?
-A) The section-specific engineering concept or criterion
-B) An unrelated calculation method
-C) A guaranteed outcome
-D) A substitute for engineering judgment
-
-
----
+27. After applying **Interest**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -356,14 +353,10 @@ D) A substitute for engineering judgment
 
 14. It would apply the wrong professional or economic rule. First distinguish **Checks** from nearby concepts, then apply it under the section's stated conditions.
 
-15. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
-16. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
-17. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
-18. Verify the governing assumptions, authority, timing, units, or factual basis first; then confirm the selected rule answers the actual engineering question.
-
+15. First verify the sign and timing of every cash flow and the interest period, because economic equivalence depends on when each amount occurs as well as its magnitude.
+16. A factor formula can be used correctly yet give a wrong answer if the cash-flow direction, compounding period, effective rate, or focal date is mismatched.
+17. A cash-flow timeline prevents beginning-of-period and end-of-period amounts from being confused and makes the chosen equivalence date explicit.
+18. Check that all cash flows are moved to the same focal date with a rate consistent with the compounding period, then verify the sign and order of magnitude.
 19. **A.** The chapter uses **Cash flows** as the section-specific engineering concept or criterion.
 
 20. **A.** The chapter uses **Interest** as the section-specific engineering concept or criterion.
@@ -378,12 +371,9 @@ D) A substitute for engineering judgment
 
 25. **A.** The chapter uses **Checks** as the section-specific engineering concept or criterion.
 
-26. **A.** The chapter uses **Cash flows** as the section-specific engineering concept or criterion.
+26. **A.** For **Cash flows** in *Cash Flows, Interest, and Economic Equivalence*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter uses **Interest** as the section-specific engineering concept or criterion.
-
-
----
+27. **A.** For **Interest** in *Cash Flows, Interest, and Economic Equivalence*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -426,8 +416,7 @@ D) A substitute for engineering judgment
 
 7. Move four periods forward: $F=4000(1.07)^4=\boxed{5,243.18}$ cost magnitude.
 
-8. $(P/F,i,n)$.
-
+8. $(P/F,i,n)$. Why this fits: the question asks about state the factor notation that converts future F to present P. The stated answer is the chapter concept that directly addresses that condition.
 9. Different cash-flow patterns are economically equivalent when they have equal value at a common date for the stated interest rate.
 
 10. Viewpoint/signs; time zero; cash-flow timing; rate period; number of periods/common comparison date.

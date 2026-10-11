@@ -63,7 +63,7 @@ For constant \(c_p\), define capacity rate \(C=\dot m c_p\).
 
 **Problem.** Hot stream C=4 kW/K cools 120→80°C. Find heat transfer.
 
-**Solution.** Q=4(40)=160 kW.
+**Solution.** Q=4(40)=160 kW. The governing model here is **§58.1 Heat-Exchanger Energy Balance**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of heat-exchanger energy balance.
 
 ---
 
@@ -81,7 +81,7 @@ Temperature profiles must not cross in an ideal sensible-only exchanger model wi
 
 **Problem.** If cold stream capacity rate is 2 kW/K and receives 160 kW starting at 20°C, find outlet temperature.
 
-**Solution.** Tco=20+160/2=100°C.
+**Solution.** Tco=20+160/2=100°C. The governing model here is **§58.2 Parallel-Flow and Counterflow Temperature Profiles**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of parallel-flow and counterflow temperature profiles.
 
 ---
 
@@ -99,7 +99,7 @@ Use the appropriate terminal differences for the selected arrangement.
 
 **Problem.** Counterflow terminal differences are 20 K and 40 K. Find LMTD.
 
-**Solution.** ΔTlm=(40-20)/ln(40/20)=28.85 K.
+**Solution.** ΔTlm=(40-20)/ln(40/20)=28.85 K. The governing model here is **§58.3 Log-Mean Temperature Difference**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of log-mean temperature difference.
 
 ---
 
@@ -117,7 +117,7 @@ The area basis must match the definition of \(U\).
 
 **Problem.** If U=500 W/m²K, A=10 m², F=1, ΔTlm=30 K, find heat rate.
 
-**Solution.** Q=150 kW.
+**Solution.** Q=150 kW. The governing model here is **§58.4 Overall Heat-Transfer Coefficient**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of overall heat-transfer coefficient.
 
 ---
 
@@ -135,7 +135,7 @@ Use the supplied chart/data for \(F\); do not assume \(F=1\) for a complex arran
 
 **Problem.** CH=5 kW/K, CC=3 kW/K, THi=120°C, TCi=20°C. Find Qmax.
 
-**Solution.** Cmin=3; Qmax=300 kW.
+**Solution.** Cmin=3; Qmax=300 kW. The governing model here is **§58.5 Correction Factor for Multipass/Crossflow Exchangers**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of correction factor for multipass/crossflow exchangers.
 
 ---
 
@@ -151,9 +151,9 @@ This method is useful when outlet temperatures are unknown.
 
 ### Worked Example 6
 
-**Problem.** If actual Q=180 kW in Problem 5, find effectiveness.
+**Problem.** If actual Q=180 kW in Problem 5, find heat-exchanger effectiveness as a dimensionless ratio.
 
-**Solution.** ε=0.60.
+**Solution.** ε=0.60. The governing model here is **§58.6 Effectiveness and Maximum Possible Heat Transfer**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of effectiveness and maximum possible heat transfer.
 
 ---
 
@@ -161,7 +161,8 @@ This method is useful when outlet temperatures are unknown.
 
 Number of transfer units is \(NTU=UA/C_{\min}\), and capacity ratio is \(C_r=C_{\min}/C_{\max}\). The Handbook gives effectiveness-NTU relations for common configurations.
 
-Use LMTD when all terminal temperatures are known or easily obtained; use \(arepsilon\)-NTU when outlet temperatures are unknown and \(UA\) is known.
+Use LMTD when all terminal temperatures are known or easily obtained; use \(
+arepsilon\)-NTU when outlet temperatures are unknown and \(UA\) is known.
 
 \[NTU=\frac{UA}{C_{\min}},\qquad C_r=\frac{C_{\min}}{C_{\max}}\]
 
@@ -169,9 +170,9 @@ Use LMTD when all terminal temperatures are known or easily obtained; use \(are
 
 ### Worked Example 7
 
-**Problem.** If UA=6 kW/K and Cmin=3 kW/K, find NTU.
+**Problem.** If UA=6 kW/K and Cmin=3 kW/K, find NTU as a dimensionless heat-transfer index.
 
-**Solution.** NTU=2.
+**Solution.** NTU=2. The governing model here is **§58.7 NTU Method and Method Selection**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of ntu method and method selection.
 
 ---
 
@@ -181,17 +182,24 @@ Use LMTD when all terminal temperatures are known or easily obtained; use \(are
 
 **Problem.** Find capacity ratio for Cmin=3, Cmax=5.
 
-**Solution.** Cr=0.60.
+**Solution.** Cr=0.60. The governing model here is **§58.7 NTU Method and Method Selection**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of ntu method and method selection.
 
 ### Worked Example 9
 
 **Problem.** When is LMTD usually convenient?
 
-**Solution.** When terminal temperatures are known or can be found.
+**Solution.** When terminal temperatures are known or can be found. The governing model here is **§58.7 NTU Method and Method Selection**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of ntu method and method selection.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — Engineering LibreTexts, Heat Transfer references on heat exchangers (https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Heat_Transfer) supports heat-exchanger energy balances, LMTD, effectiveness-NTU methods, capacity-rate ratio, and method selection.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Heat Transfer, printed pp. 220–222**.
 
@@ -318,20 +326,17 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. Which statement best describes **heat-exchanger energy balance**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
+26. A new problem requires **heat-exchanger energy balance**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which statement best describes **heat-exchanger flow arrangement**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
-
-
----
+27. After applying **heat-exchanger flow arrangement**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -363,17 +368,17 @@ D) It replaces conservation laws
 
 14. The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then apply **effectiveness-NTU method**.
 
-15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Heat Exchangers — LMTD and Effectiveness-NTU**, apply this check specifically through **§58.1 Heat-Exchanger Energy Balance**, including that section's stated assumptions and reference quantities.
 
-16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Heat Exchangers — LMTD and Effectiveness-NTU**, apply this check specifically through **§58.2 Parallel-Flow and Counterflow Temperature Profiles**, including that section's stated assumptions and reference quantities.
 
-17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Heat Exchangers — LMTD and Effectiveness-NTU**, apply this check specifically through **§58.3 Log-Mean Temperature Difference**, including that section's stated assumptions and reference quantities.
 
-18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Heat Exchangers — LMTD and Effectiveness-NTU**, apply this check specifically through **§58.4 Overall Heat-Transfer Coefficient**, including that section's stated assumptions and reference quantities.
 
-19. **A.** The chapter applies **heat-exchanger energy balance** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+19. **A.** The chapter applies **heat-exchanger energy balance** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Heat Exchangers — LMTD and Effectiveness-NTU**, apply this check specifically through **§58.5 Correction Factor for Multipass/Crossflow Exchangers**, including that section's stated assumptions and reference quantities.
 
-20. **A.** The chapter applies **heat-exchanger flow arrangement** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+20. **A.** The chapter applies **heat-exchanger flow arrangement** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Heat Exchangers — LMTD and Effectiveness-NTU**, apply this check specifically through **§58.6 Effectiveness and Maximum Possible Heat Transfer**, including that section's stated assumptions and reference quantities.
 
 21. **A.** The chapter applies **log-mean temperature difference** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
@@ -385,12 +390,9 @@ D) It replaces conservation laws
 
 25. **A.** The chapter applies **effectiveness-NTU method** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** The chapter applies **heat-exchanger energy balance** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+26. **A.** For **heat-exchanger energy balance** in *Heat Exchangers — LMTD and Effectiveness-NTU*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter applies **heat-exchanger flow arrangement** only after the state, geometry, flow/thermal regime, and assumptions are defined.
-
-
----
+27. **A.** For **heat-exchanger flow arrangement** in *Heat Exchangers — LMTD and Effectiveness-NTU*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -419,21 +421,21 @@ D) It replaces conservation laws
 
 ## Practice Problem Solutions
 
-1. Q=4(40)=160 kW.
+1. Q=4(40)=160 kW. This result follows from **§58.1 Heat-Exchanger Energy Balance**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-2. Tco=20+160/2=100°C.
+2. Tco=20+160/2=100°C. This result follows from **§58.2 Parallel-Flow and Counterflow Temperature Profiles**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 3. ΔTlm=(40-20)/ln(40/20)=28.85 K.
 
-4. Q=150 kW.
+4. Q=150 kW. This result follows from **§58.4 Overall Heat-Transfer Coefficient**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-5. Cmin=3; Qmax=300 kW.
+5. Cmin=3; Qmax=300 kW. This result follows from **§58.5 Correction Factor for Multipass/Crossflow Exchangers**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-6. ε=0.60.
+6. ε=0.60. This result follows from **§58.6 Effectiveness and Maximum Possible Heat Transfer**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-7. NTU=2.
+7. NTU=2. This result follows from **§58.7 NTU Method and Method Selection**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-8. Cr=0.60.
+8. Cr=0.60. This result follows from **§58.1 Heat-Exchanger Energy Balance**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 9. When terminal temperatures are known or can be found.
 

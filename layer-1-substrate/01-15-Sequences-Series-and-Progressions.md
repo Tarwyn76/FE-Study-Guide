@@ -73,20 +73,19 @@ cousin. Get comfortable reading it here, where the terms are simple.
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-
-* 15.1 Distinguish a sequence from a series and identify a general term
-* 15.2 Read, write, and evaluate summation notation, including changing
+- **15.1** Distinguish a sequence from a series and identify a general term
+- **15.2** Read, write, and evaluate summation notation, including changing
   the index limits
-* 15.3 Apply the linearity properties of summation
-* 15.4 Identify an arithmetic progression and find its $n$th term and
+- **15.3** Apply the linearity properties of summation
+- **15.4** Identify an arithmetic progression and find its $n$th term and
   partial sum
-* 15.5 Identify a geometric progression and find its $n$th term and
+- **15.5** Identify a geometric progression and find its $n$th term and
   partial sum
-* 15.6 State the convergence condition for an infinite geometric series and
+- **15.6** State the convergence condition for an infinite geometric series and
   evaluate the sum when it converges
-* 15.7 Apply the closed-form sums for $\sum k$, $\sum k^2$, and $\sum k^3$
-* 15.8 Use factorial notation
-* 15.9 Recognize arithmetic and geometric structure in staged engineering
+- **15.7** Apply the closed-form sums for $\sum k$, $\sum k^2$, and $\sum k^3$
+- **15.8** Use factorial notation
+- **15.9** Recognize arithmetic and geometric structure in staged engineering
   processes
 
 ---
@@ -609,7 +608,7 @@ Never compute $10! = 3{,}628{,}800$ and then divide. Cancel first.
 
 ## As the Handbook States It
 
-> **Handbook 10.6, pp. 38–39** — *Mathematics / Progressions and Series*
+> **Handbook 10.6, p. 52** — *Mathematics / Progressions and Series*
 
 The Handbook includes:
 
@@ -652,6 +651,17 @@ $n$ or $n-1$, the printed formula settles it.
 > ---
 
 ---
+
+
+### Source Boundary
+
+**FE-Handbook-supported.** The equations, definitions, tables, and relations explicitly identified above are supported by the cited FE Reference Handbook 10.6 pages.
+
+**Externally supported.** Material in this chapter that extends beyond the Handbook is supported by the following external educational/standards references:
+
+- OpenStax, College Algebra 2e, Ch. 9 / §9.4 — sequences, factorials, partial sums, sigma notation, arithmetic/geometric series, and infinite geometric-series convergence.
+
+**Guide synthesis.** Exam-navigation advice, memory cues, sequencing, worked-example framing, and study heuristics are guide-developed synthesis unless separately attributed.
 
 ## Where This Goes Wrong
 

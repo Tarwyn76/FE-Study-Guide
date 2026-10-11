@@ -63,9 +63,7 @@ An ideal capacitor voltage cannot change instantaneously without infinite curren
 
 **Problem.** A 10 µF capacitor has 12 V across it. Find charge.
 
-**Solution.** q=CV=120 µC.
-
----
+**Solution.** q=CV=120 µC. The governing model here is **§61.1 Capacitance and Capacitor Current-Voltage Relation**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of capacitance and capacitor current-voltage relation. In SI base notation, 120 µC = 120×10^-6 C.---
 
 ## 61.2 Capacitor Energy and Equivalent Capacitance
 
@@ -81,7 +79,7 @@ Series capacitors carry equal magnitude charge in the ideal two-terminal series 
 
 **Problem.** A 100 µF capacitor is at 20 V. Find stored energy.
 
-**Solution.** W=0.5CV²=0.020 J.
+**Solution.** W=0.5CV²=0.020 J. The governing model here is **§61.2 Capacitor Energy and Equivalent Capacitance**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of capacitor energy and equivalent capacitance.
 
 ---
 
@@ -99,7 +97,7 @@ An ideal inductor current cannot change instantaneously without infinite voltage
 
 **Problem.** Two capacitors 6 µF and 3 µF are in series. Find equivalent capacitance.
 
-**Solution.** Cs=(6×3)/(6+3)=2 µF.
+**Solution.** Cs=(6×3)/(6+3)=2 µF. The governing model here is **§61.3 Inductance and Inductor Voltage-Current Relation**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of inductance and inductor voltage-current relation.
 
 ---
 
@@ -117,7 +115,7 @@ Mutual coupling changes these simple rules; use them only when coupling is absen
 
 **Problem.** A 0.50 H inductor current changes at 4 A/s. Find voltage.
 
-**Solution.** v=L di/dt=2 V.
+**Solution.** v=L di/dt=2 V. The governing model here is **§61.4 Inductor Energy and Equivalent Inductance**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of inductor energy and equivalent inductance.
 
 ---
 
@@ -135,7 +133,7 @@ Then determine the long-time DC final value. At DC steady state, an ideal capaci
 
 **Problem.** A 2 H inductor carries 3 A. Find stored energy.
 
-**Solution.** W=0.5LI²=9 J.
+**Solution.** W=0.5LI²=9 J. The governing model here is **§61.5 Switching, Initial Conditions, and Final Values**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of switching, initial conditions, and final values.
 
 ---
 
@@ -153,7 +151,7 @@ The universal form is final value plus initial error times \(e^{-t/\tau}\).
 
 **Problem.** An RC circuit has Req=20 kΩ and C=50 µF. Find time constant.
 
-**Solution.** τ=RC=1.0 s.
+**Solution.** τ=RC=1.0 s. The governing model here is **§61.6 RC First-Order Transients**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of rc first-order transients.
 
 ---
 
@@ -171,7 +169,7 @@ Use current continuity at the switching instant and solve the DC final circuit f
 
 **Problem.** An RL circuit has L=2 H and Req=10 Ω. Find time constant.
 
-**Solution.** τ=L/R=0.20 s.
+**Solution.** τ=L/R=0.20 s. The governing model here is **§61.7 RL First-Order Transients**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of rl first-order transients.
 
 ---
 
@@ -181,17 +179,24 @@ Use current continuity at the switching instant and solve the DC final circuit f
 
 **Problem.** A capacitor moves from 0 V toward 10 V with τ=2 s. Find vC at t=2 s.
 
-**Solution.** v=10(1-e^-1)=6.32 V.
+**Solution.** v=10(1-e^-1)=6.32 V. The governing model here is **§61.7 RL First-Order Transients**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of rl first-order transients.
 
 ### Worked Example 9
 
 **Problem.** An inductor current decays from 5 A to 0 with τ=0.5 s. Find current at 1.0 s.
 
-**Solution.** i=5e^-2=0.677 A.
+**Solution.** i=5e^-2=0.677 A. The governing model here is **§61.7 RL First-Order Transients**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of rl first-order transients.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — OpenStax University Physics Volume 2, RC Circuits and inductive transients (https://openstax.org/books/university-physics-volume-2/pages/10-6-rc-circuits) supports capacitor/inductor energy-storage behavior, first-order switching, continuity of state variables, and initial/final-value reasoning.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Electrical and Computer Engineering, printed pp. 364–367**.
 
@@ -318,20 +323,17 @@ B) It is independent of topology and frequency
 C) It always represents a scalar DC quantity
 D) It replaces conservation laws
 
-26. Which statement is most accurate for **capacitance**?
-A) It must be used with its defined reference and assumptions
-B) It is independent of topology and frequency
-C) It always represents a scalar DC quantity
-D) It replaces conservation laws
+26. A new problem requires **capacitance**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which statement is most accurate for **capacitor energy and combination**?
-A) It must be used with its defined reference and assumptions
-B) It is independent of topology and frequency
-C) It always represents a scalar DC quantity
-D) It replaces conservation laws
-
-
----
+27. After applying **capacitor energy and combination**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -363,17 +365,17 @@ D) It replaces conservation laws
 
 14. Applying **RL transient** without checking topology, reference direction, steady/transient condition, RMS/peak basis, or machine/circuit assumptions can produce a formally calculated but physically wrong result.
 
-15. Because the sign of power depends on the chosen voltage/current references and the passive sign convention.
+15. Because the sign of power depends on the chosen voltage/current references and the passive sign convention. For **Capacitance, Inductance, and First-Order Transients**, apply this check specifically through **§61.1 Capacitance and Capacitor Current-Voltage Relation**, including that section's stated assumptions and reference quantities.
 
-16. Charge/KCL, energy/power balance, and where applicable KVL should close consistently.
+16. Charge/KCL, energy/power balance, and where applicable KVL should close consistently. For **Capacitance, Inductance, and First-Order Transients**, apply this check specifically through **§61.2 Capacitor Energy and Equivalent Capacitance**, including that section's stated assumptions and reference quantities.
 
-17. Whenever the Handbook supplies the relation or when the shortcut's assumptions are uncertain.
+17. Whenever the Handbook supplies the relation or when the shortcut's assumptions are uncertain. For **Capacitance, Inductance, and First-Order Transients**, apply this check specifically through **§61.3 Inductance and Inductor Voltage-Current Relation**, including that section's stated assumptions and reference quantities.
 
-18. They represent different magnitudes; mixing them introduces factors such as √2 and gives incorrect power.
+18. They represent different magnitudes; mixing them introduces factors such as √2 and gives incorrect power. For **Capacitance, Inductance, and First-Order Transients**, apply this check specifically through **§61.4 Inductor Energy and Equivalent Inductance**, including that section's stated assumptions and reference quantities.
 
-19. **A.** The chapter treats **capacitance** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
+19. **A.** The chapter treats **capacitance** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **Capacitance, Inductance, and First-Order Transients**, apply this check specifically through **§61.5 Switching, Initial Conditions, and Final Values**, including that section's stated assumptions and reference quantities.
 
-20. **A.** The chapter treats **capacitor energy and combination** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
+20. **A.** The chapter treats **capacitor energy and combination** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **Capacitance, Inductance, and First-Order Transients**, apply this check specifically through **§61.6 RC First-Order Transients**, including that section's stated assumptions and reference quantities.
 
 21. **A.** The chapter treats **inductance** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
 
@@ -385,12 +387,9 @@ D) It replaces conservation laws
 
 25. **A.** The chapter treats **RL transient** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
 
-26. **A.** The chapter treats **capacitance** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
+26. **A.** For **capacitance** in *Capacitance, Inductance, and First-Order Transients*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter treats **capacitor energy and combination** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
-
-
----
+27. **A.** For **capacitor energy and combination** in *Capacitance, Inductance, and First-Order Transients*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -419,23 +418,23 @@ D) It replaces conservation laws
 
 ## Practice Problem Solutions
 
-1. q=CV=120 µC.
+1. q=CV=120 µC. This result follows from **§61.1 Capacitance and Capacitor Current-Voltage Relation**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-2. W=0.5CV²=0.020 J.
+2. W=0.5CV²=0.020 J. This result follows from **§61.2 Capacitor Energy and Equivalent Capacitance**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 3. Cs=(6×3)/(6+3)=2 µF.
 
-4. v=L di/dt=2 V.
+4. v=L di/dt=2 V. This result follows from **§61.4 Inductor Energy and Equivalent Inductance**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-5. W=0.5LI²=9 J.
+5. W=0.5LI²=9 J. This result follows from **§61.5 Switching, Initial Conditions, and Final Values**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-6. τ=RC=1.0 s.
+6. τ=RC=1.0 s. This result follows from **§61.6 RC First-Order Transients**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-7. τ=L/R=0.20 s.
+7. τ=L/R=0.20 s. This result follows from **§61.7 RL First-Order Transients**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 8. v=10(1-e^-1)=6.32 V.
 
-9. i=5e^-2=0.677 A.
+9. i=5e^-2=0.677 A. This result follows from **§61.2 Capacitor Energy and Equivalent Capacitance**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 10. 7 V for an ideal finite-current circuit.
 

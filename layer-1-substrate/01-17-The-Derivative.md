@@ -79,24 +79,23 @@ about building the tool.
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-
-* 17.1 Write the difference quotient for a function and use it to compute a
+- **17.1** Write the difference quotient for a function and use it to compute a
   derivative from the definition
-* 17.2 Interpret the derivative as the slope of the tangent line and find
+- **17.2** Interpret the derivative as the slope of the tangent line and find
   equations of tangent and normal lines
-* 17.3 Interpret the derivative as a rate of change and determine its units
-* 17.4 Use Leibniz, Lagrange, and dot notation interchangeably
-* 17.5 State the relationship between differentiability and continuity and
+- **17.3** Interpret the derivative as a rate of change and determine its units
+- **17.4** Use Leibniz, Lagrange, and dot notation interchangeably
+- **17.5** State the relationship between differentiability and continuity and
   identify points where a function fails to be differentiable
-* 17.6 Apply the constant, power, constant-multiple, and sum rules
-* 17.7 Apply the product rule
-* 17.8 Apply the quotient rule
-* 17.9 Apply the chain rule, including to nested compositions
-* 17.10 Differentiate all six trigonometric functions and the three principal
+- **17.6** Apply the constant, power, constant-multiple, and sum rules
+- **17.7** Apply the product rule
+- **17.8** Apply the quotient rule
+- **17.9** Apply the chain rule, including to nested compositions
+- **17.10** Differentiate all six trigonometric functions and the three principal
   inverse trigonometric functions
-* 17.11 Differentiate exponential and logarithmic functions with any base
-* 17.12 Compute higher-order derivatives and interpret the second derivative
-* 17.13 Differentiate implicitly and use the technique to obtain derivatives of
+- **17.11** Differentiate exponential and logarithmic functions with any base
+- **17.12** Compute higher-order derivatives and interpret the second derivative
+- **17.13** Differentiate implicitly and use the technique to obtain derivatives of
   inverse functions
 
 ---
@@ -1135,6 +1134,17 @@ repeatedly.
 
 ---
 
+
+### Source Boundary
+
+**FE-Handbook-supported.** The formulas, definitions, tables, and relations explicitly identified above are supported by the cited FE Reference Handbook 10.6 pages.
+
+**Externally supported.** Material extending beyond the Handbook is supported by:
+
+- OpenStax, Calculus Volume 1, §§3.1, 3.3, 3.6, 3.8–3.9 — derivative definition, differentiation rules, chain rule, implicit differentiation, and exponential/logarithmic derivatives.
+
+**Guide synthesis.** Exam-navigation advice, mnemonic devices, sequencing, worked-example framing, interpretation cues, and study heuristics are guide-developed synthesis unless separately attributed.
+
 ## Where This Goes Wrong
 
 **Forgetting the chain rule on a composition.** $\frac{d}{dx}\sin(3x)$ is
@@ -1187,6 +1197,11 @@ and $dx$ are not numbers you can manipulate independently at this stage.
 Acceleration is the *second* derivative of position. Read what is being asked.
 
 ---
+
+
+### Ledger terminology alignment
+
+- **linear approximation** — the local tangent-line estimate $f(x)\approx f(a)+f'(a)(x-a)$ near $x=a$.
 
 ## Key Terms
 

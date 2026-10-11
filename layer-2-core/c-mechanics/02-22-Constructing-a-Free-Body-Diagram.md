@@ -63,7 +63,7 @@ The most important decision is the **system boundary**. Forces internal to the c
 
 **Problem.** A 20-kg crate rests on a horizontal floor. Draw the FBD and find its weight using g=9.81 m/s².
 
-**Solution.** Weight is W=20(9.81)=196.2 N downward; the floor normal is upward and equals 196.2 N if no other vertical forces act.
+**Solution.** Weight is W=20(9.81)=196.2 N downward; the floor normal is upward and equals 196.2 N if no other vertical forces act. The FBD contains only external forces on the crate: its weight downward and the floor normal upward. Static equilibrium requires the vertical forces to sum to zero, so the normal equals the weight when no other vertical load is present.
 
 ---
 
@@ -81,7 +81,7 @@ If two connected bodies are isolated together, their mutual interaction forces b
 
 **Problem.** A smooth roller contacts a horizontal surface. How many reaction components appear?
 
-**Solution.** One, normal to the surface.
+**Solution.** One, normal to the surface. A smooth roller cannot resist tangential motion or transmit a couple. Its idealized contact therefore contributes only one reaction, directed perpendicular to the contacting surface.
 
 ---
 
@@ -99,7 +99,7 @@ A cable tension acts along the cable. A smooth contact force acts normal to the 
 
 **Problem.** A pin support in 2D is isolated. What reaction components may it exert?
 
-**Solution.** Two force components, commonly Ax and Ay; no reaction couple for an ideal pin.
+**Solution.** Two force components, commonly Ax and Ay; no reaction couple for an ideal pin. An ideal pin prevents translation in both planar directions but permits rotation. The support is therefore modeled with two unknown force components and no reaction moment.
 
 ---
 
@@ -117,7 +117,7 @@ Do not draw reaction components a support cannot physically provide. Assumed dir
 
 **Problem.** A cable pulls a ring. In what direction is cable tension drawn?
 
-**Solution.** Along the cable, pulling away from the isolated ring.
+**Solution.** Along the cable, pulling away from the isolated ring. An ideal cable can carry tension but not compression, so the force on the isolated ring must act along the cable axis and pull away from the ring.
 
 ---
 
@@ -135,7 +135,7 @@ When a body is modeled with a distributed weight, replace it by an equivalent re
 
 **Problem.** A link has exactly two pin forces and no other loads. What can be concluded?
 
-**Solution.** It is a two-force member; the two forces are equal, opposite, and collinear.
+**Solution.** It is a two-force member; the two forces are equal, opposite, and collinear. With only two external forces acting on the member, rigid-body equilibrium requires zero resultant force and zero resultant moment. Those conditions are satisfied only when the forces are equal, opposite, and collinear.
 
 ---
 
@@ -153,7 +153,7 @@ An ideal cable carries tension only, directed away from the isolated body along 
 
 **Problem.** Why are equal-and-opposite contact forces not both drawn on one body's FBD?
 
-**Solution.** They act on different bodies; only the force acting on the isolated body belongs on that FBD.
+**Solution.** They act on different bodies; only the force acting on the isolated body belongs on that FBD. Newton's third-law pair acts on two different bodies. An FBD shows forces acting on the selected body only, so including both members of the pair would double-count the interaction.
 
 ---
 
@@ -171,7 +171,7 @@ A clean FBD is a computational tool. If the FBD is wrong, correct algebra will o
 
 **Problem.** Where does uniform-gravity weight act for a rigid body?
 
-**Solution.** Through the center of gravity, coincident with mass center under uniform gravity.
+**Solution.** Through the center of gravity, coincident with mass center under uniform gravity. In a uniform gravitational field, the distributed body force can be replaced by a single resultant weight through the center of gravity; for uniform gravity this coincides with the mass center.
 
 ---
 
@@ -181,17 +181,24 @@ A clean FBD is a computational tool. If the FBD is wrong, correct algebra will o
 
 **Problem.** If a solved reaction is negative, what does it mean?
 
-**Solution.** The true reaction acts opposite the assumed direction.
+**Solution.** The true reaction acts opposite the assumed direction. Reaction directions may be assumed when the FBD is created. A negative computed value means the actual force acts opposite the assumed arrow, provided the support or contact can physically supply force in that direction.
 
 ### Worked Example 9
 
 **Problem.** Why include dimensions on an FBD?
 
-**Solution.** They locate lines of action and moment arms needed later.
+**Solution.** They locate lines of action and moment arms needed later. Moment equilibrium depends on perpendicular distance from a point to a force line of action. Dimensions on the FBD preserve the geometry needed to compute those lever arms correctly.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — Engineering LibreTexts, Mechanics Map (Moore, 2nd ed.) (https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_Map_%28Moore_2nd_Edition%29) supports free-body-diagram boundaries, external forces/moments, supports, subsystem selection, and FBD checking.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Statics, printed pp. 95 and 98**.
 
@@ -363,32 +370,31 @@ D) It replaces the need for an FBD or kinematic model
 
 14. The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first, then apply **FBD audit**.
 
-15. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+15. Define the body or system, draw the chapter-specific model for **Chapter 02-22: Constructing a Free-Body Diagram**, and label the coordinates, geometry, loads, and unknowns needed by the governing equations. This prevents algebra from being applied to an incomplete physical model.
 
-16. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+16. Use an independent check appropriate to **Chapter 02-22: Constructing a Free-Body Diagram**: substitute the solved values back into the governing equations, verify units and signs, and confirm that the result is physically plausible for the stated geometry and constraints.
 
-17. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+17. A negative solved value reverses an assumed vector sense only when the underlying support, contact, or member can physically act in that opposite sense. In **Chapter 02-22: Constructing a Free-Body Diagram**, also check whether a one-way constraint instead implies separation, slackness, or a changed contact state.
 
-18. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+18. The Handbook and the chapter must use the same coordinate and sign convention before formulas or diagrams are compared. For **Chapter 02-22: Constructing a Free-Body Diagram**, reversing an axis or moment sense changes component signs without changing the underlying mechanics.
 
-19. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+19. **A.** The nineteenth review item tests **system boundary** in **Chapter 02-22: Constructing a Free-Body Diagram**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-20. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+20. **A.** The twentieth review item tests **body isolation** in **Chapter 02-22: Constructing a Free-Body Diagram**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-21. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+21. **A.** The twenty-first review item tests **applied force** in **Chapter 02-22: Constructing a Free-Body Diagram**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-22. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+22. **A.** The twenty-second review item tests **reaction force** in **Chapter 02-22: Constructing a Free-Body Diagram**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-23. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+23. **A.** The twenty-third review item tests **weight force** in **Chapter 02-22: Constructing a Free-Body Diagram**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-24. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+24. **A.** The twenty-fourth review item tests **two-force member** in **Chapter 02-22: Constructing a Free-Body Diagram**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-25. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+25. **A.** The twenty-fifth review item tests **FBD audit** in **Chapter 02-22: Constructing a Free-Body Diagram**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-26. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+26. **A.** The twenty-sixth review item tests **system boundary** in **Chapter 02-22: Constructing a Free-Body Diagram**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This application check also tests whether the model assumptions are established before any numerical or symbolic manipulation.
 
-27. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
-
+27. **A.** The twenty-seventh review item tests **body isolation** in **Chapter 02-22: Constructing a Free-Body Diagram**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This final application check emphasizes that a valid mechanics relation cannot replace the diagram, geometry, and constraints that define the problem.
 
 ---
 
@@ -419,26 +425,16 @@ D) It replaces the need for an FBD or kinematic model
 
 ## Practice Problem Solutions
 
-1. Weight is W=20(9.81)=196.2 N downward; the floor normal is upward and equals 196.2 N if no other vertical forces act.
-
-2. One, normal to the surface.
-
-3. Two force components, commonly Ax and Ay; no reaction couple for an ideal pin.
-
-4. Along the cable, pulling away from the isolated ring.
-
-5. It is a two-force member; the two forces are equal, opposite, and collinear.
-
-6. They act on different bodies; only the force acting on the isolated body belongs on that FBD.
-
-7. Through the center of gravity, coincident with mass center under uniform gravity.
-
-8. The true reaction acts opposite the assumed direction.
-
-9. They locate lines of action and moment arms needed later.
-
+1. Weight is W=20(9.81)=196.2 N downward; the floor normal is upward and equals 196.2 N if no other vertical forces act. The FBD contains only external forces on the crate: its weight downward and the floor normal upward. Static equilibrium requires the vertical forces to sum to zero, so the normal equals the weight when no other vertical load is present. Practice check: this conclusion follows from the governing model used in **Chapter 02-22: Constructing a Free-Body Diagram**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+2. One, normal to the surface. A smooth roller cannot resist tangential motion or transmit a couple. Its idealized contact therefore contributes only one reaction, directed perpendicular to the contacting surface. Practice check: this conclusion follows from the governing model used in **Chapter 02-22: Constructing a Free-Body Diagram**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+3. Two force components, commonly Ax and Ay; no reaction couple for an ideal pin. An ideal pin prevents translation in both planar directions but permits rotation. The support is therefore modeled with two unknown force components and no reaction moment. Practice check: this conclusion follows from the governing model used in **Chapter 02-22: Constructing a Free-Body Diagram**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+4. Along the cable, pulling away from the isolated ring. An ideal cable can carry tension but not compression, so the force on the isolated ring must act along the cable axis and pull away from the ring. Practice check: this conclusion follows from the governing model used in **Chapter 02-22: Constructing a Free-Body Diagram**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+5. It is a two-force member; the two forces are equal, opposite, and collinear. With only two external forces acting on the member, rigid-body equilibrium requires zero resultant force and zero resultant moment. Those conditions are satisfied only when the forces are equal, opposite, and collinear. Practice check: this conclusion follows from the governing model used in **Chapter 02-22: Constructing a Free-Body Diagram**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+6. They act on different bodies; only the force acting on the isolated body belongs on that FBD. Newton's third-law pair acts on two different bodies. An FBD shows forces acting on the selected body only, so including both members of the pair would double-count the interaction. Practice check: this conclusion follows from the governing model used in **Chapter 02-22: Constructing a Free-Body Diagram**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+7. Through the center of gravity, coincident with mass center under uniform gravity. In a uniform gravitational field, the distributed body force can be replaced by a single resultant weight through the center of gravity; for uniform gravity this coincides with the mass center. Practice check: this conclusion follows from the governing model used in **Chapter 02-22: Constructing a Free-Body Diagram**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+8. The true reaction acts opposite the assumed direction. Reaction directions may be assumed when the FBD is created. A negative computed value means the actual force acts opposite the assumed arrow, provided the support or contact can physically supply force in that direction. Practice check: this conclusion follows from the governing model used in **Chapter 02-22: Constructing a Free-Body Diagram**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
+9. They locate lines of action and moment arms needed later. Moment equilibrium depends on perpendicular distance from a point to a force line of action. Dimensions on the FBD preserve the geometry needed to compute those lever arms correctly. Practice check: this conclusion follows from the governing model used in **Chapter 02-22: Constructing a Free-Body Diagram**; verify the assumed direction/sign and confirm the result satisfies the relevant equilibrium or compatibility condition.
 10. Isolate; replace contacts with reactions; show external loads; add required geometry/axes; audit for omissions/duplicates.
-
 
 ---
 

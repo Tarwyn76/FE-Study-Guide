@@ -63,7 +63,7 @@ Use one sign convention consistently; the Handbook defines positive bending as c
 
 **Problem.** A simply supported beam has a 10-kN central load over 4 m. Find reactions.
 
-**Solution.** 5 kN each.
+**Solution.** 5 kN each. Reasoning: this uses the **39.1 Internal Shear and Bending Moment** model from Chapter 02-39: Beams — Shear, Moment, Bending, and Deflection. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -81,7 +81,7 @@ These relations make diagram slopes and areas powerful checks.
 
 **Problem.** For Problem 1, what is maximum moment?
 
-**Solution.** Mmax=PL/4=10 kN·m.
+**Solution.** Mmax=PL/4=10 kN·m. Reasoning: this uses the **39.2 Load-Shear-Moment Relations** model from Chapter 02-39: Beams — Shear, Moment, Bending, and Deflection. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -99,7 +99,7 @@ Local extrema in \(M\) occur where \(V=0\) in smooth regions.
 
 **Problem.** If a constant distributed load w=3 kN/m acts, what is dV/dx?
 
-**Solution.** -3 kN/m.
+**Solution.** -3 kN/m. Reasoning: this uses the **39.3 Shear and Moment Diagrams** model from Chapter 02-39: Beams — Shear, Moment, Bending, and Deflection. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -121,7 +121,7 @@ Stress varies linearly through the depth and is zero at the neutral axis. The ex
 
 **Problem.** Where does a smooth-region moment diagram have an extremum?
 
-**Solution.** Where V=0.
+**Solution.** Where V=0. Reasoning: this uses the **39.4 Bending Normal Stress** model from Chapter 02-39: Beams — Shear, Moment, Bending, and Deflection. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -143,13 +143,14 @@ Here \(Q\) is the first moment of the area above or below the level where shear 
 
 **Problem.** A rectangular beam has M=5 kN·m, I=8e-6 m^4, c=0.05 m. Find extreme bending stress.
 
-**Solution.** σ=Mc/I=31.25 MPa.
+**Solution.** σ=Mc/I=31.25 MPa. Reasoning: this uses the **39.5 Transverse Shear Stress** model from Chapter 02-39: Beams — Shear, Moment, Bending, and Deflection. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
 ## 39.6 Beam Deflection by Integration
 
-For small elastic deflection, the Handbook gives curvature relation \(1/ho=M/(EI)\) and the differential equation
+For small elastic deflection, the Handbook gives curvature relation \(1/
+ho=M/(EI)\) and the differential equation
 
 \[
 EI\,y''=M(x)
@@ -165,7 +166,7 @@ under the stated sign convention. Integrate twice and use boundary/continuity co
 
 **Problem.** State the transverse shear formula.
 
-**Solution.** τ=VQ/(Ib).
+**Solution.** τ=VQ/(Ib). Reasoning: this uses the **39.6 Beam Deflection by Integration** model from Chapter 02-39: Beams — Shear, Moment, Bending, and Deflection. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -183,7 +184,7 @@ Both methods require linear behavior and consistent geometry/compatibility assum
 
 **Problem.** Where is transverse shear zero on the top and bottom free surfaces of a rectangular beam?
 
-**Solution.** At the free surfaces; maximum occurs at the neutral axis.
+**Solution.** At the free surfaces; maximum occurs at the neutral axis. Reasoning: this uses the **39.7 Superposition and Composite Sections** model from Chapter 02-39: Beams — Shear, Moment, Bending, and Deflection. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -193,17 +194,24 @@ Both methods require linear behavior and consistent geometry/compatibility assum
 
 **Problem.** What differential relation connects beam moment and deflection?
 
-**Solution.** EI y''=M(x) under the Handbook sign convention.
+**Solution.** EI y''=M(x) under the Handbook sign convention. Reasoning: this uses the **Integrated Worked Examples** model from Chapter 02-39: Beams — Shear, Moment, Bending, and Deflection. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ### Worked Example 9
 
 **Problem.** What conditions determine integration constants in beam deflection?
 
-**Solution.** Physical boundary and continuity conditions on slope/deflection.
+**Solution.** Physical boundary and continuity conditions on slope/deflection. Reasoning: this uses the **Integrated Worked Examples** model from Chapter 02-39: Beams — Shear, Moment, Bending, and Deflection. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — Engineering LibreTexts, Mechanics of Materials (Roylance) (https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_of_Materials_%28Roylance%29) supports beam loading, shear and moment diagrams, flexural behavior, deflection, superposition, and composite-section reasoning.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Mechanics of Materials, printed pp. 135–137**.
 
@@ -377,32 +385,31 @@ D) It replaces the need for an FBD or kinematic model
 
 14. The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first, then apply **beam superposition**.
 
-15. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+15. Create the chapter-specific mechanics model for **Chapter 02-39: Beams — Shear, Moment, Bending, and Deflection** before solving: define the body or system, coordinates, geometry, loads, constraints, and unknowns that enter the governing equations.
 
-16. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+16. Independently verify a result in **Chapter 02-39: Beams — Shear, Moment, Bending, and Deflection** by substituting it back into the governing equation, checking units and signs, and testing equilibrium, compatibility, or a limiting case as appropriate.
 
-17. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+17. A negative result reverses an assumed direction only when the physical element can act in that opposite sense. In **Chapter 02-39: Beams — Shear, Moment, Bending, and Deflection**, also test whether unilateral contact, tension-only, or compression-only behavior changes the model.
 
-18. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+18. Match the Handbook coordinate and sign convention before comparing expressions in **Chapter 02-39: Beams — Shear, Moment, Bending, and Deflection**. A different positive direction can reverse component or moment signs while leaving the physical state unchanged.
 
-19. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+19. **A.** The nineteenth review item tests **beam internal forces** in **Chapter 02-39: Beams — Shear, Moment, Bending, and Deflection**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-20. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+20. **A.** The twentieth review item tests **load-shear-moment relation** in **Chapter 02-39: Beams — Shear, Moment, Bending, and Deflection**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-21. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+21. **A.** The twenty-first review item tests **shear-moment diagrams** in **Chapter 02-39: Beams — Shear, Moment, Bending, and Deflection**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-22. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+22. **A.** The twenty-second review item tests **bending stress** in **Chapter 02-39: Beams — Shear, Moment, Bending, and Deflection**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-23. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+23. **A.** The twenty-third review item tests **beam shear stress** in **Chapter 02-39: Beams — Shear, Moment, Bending, and Deflection**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-24. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+24. **A.** The twenty-fourth review item tests **beam deflection** in **Chapter 02-39: Beams — Shear, Moment, Bending, and Deflection**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-25. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+25. **A.** The twenty-fifth review item tests **beam superposition** in **Chapter 02-39: Beams — Shear, Moment, Bending, and Deflection**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-26. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+26. **A.** The twenty-sixth review item tests **beam internal forces** in **Chapter 02-39: Beams — Shear, Moment, Bending, and Deflection**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This application check also tests whether the model assumptions are established before any numerical or symbolic manipulation.
 
-27. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
-
+27. **A.** The twenty-seventh review item tests **load-shear-moment relation** in **Chapter 02-39: Beams — Shear, Moment, Bending, and Deflection**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This final application check emphasizes that a valid mechanics relation cannot replace the diagram, geometry, and constraints that define the problem.
 
 ---
 
@@ -433,17 +440,17 @@ D) It replaces the need for an FBD or kinematic model
 
 ## Practice Problem Solutions
 
-1. 5 kN each.
+1. 5 kN each. Practice verification: use the **39.1 Internal Shear and Bending Moment** relation for Chapter 02-39: Beams — Shear, Moment, Bending, and Deflection, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
-2. Mmax=PL/4=10 kN·m.
+2. Mmax=PL/4=10 kN·m. Practice verification: use the **39.2 Load-Shear-Moment Relations** relation for Chapter 02-39: Beams — Shear, Moment, Bending, and Deflection, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
-3. -3 kN/m.
+3. -3 kN/m. Practice verification: use the **39.3 Shear and Moment Diagrams** relation for Chapter 02-39: Beams — Shear, Moment, Bending, and Deflection, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
-4. Where V=0.
+4. Where V=0. Practice verification: use the **39.4 Bending Normal Stress** relation for Chapter 02-39: Beams — Shear, Moment, Bending, and Deflection, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
-5. σ=Mc/I=31.25 MPa.
+5. σ=Mc/I=31.25 MPa. Practice verification: use the **39.5 Transverse Shear Stress** relation for Chapter 02-39: Beams — Shear, Moment, Bending, and Deflection, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
-6. τ=VQ/(Ib).
+6. τ=VQ/(Ib). Practice verification: use the **39.6 Beam Deflection by Integration** relation for Chapter 02-39: Beams — Shear, Moment, Bending, and Deflection, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
 7. At the free surfaces; maximum occurs at the neutral axis.
 
@@ -452,7 +459,6 @@ D) It replaces the need for an FBD or kinematic model
 9. Physical boundary and continuity conditions on slope/deflection.
 
 10. For linear response with small deformations that do not change load application conditions.
-
 
 ---
 

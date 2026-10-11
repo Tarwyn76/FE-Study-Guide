@@ -79,22 +79,20 @@ We build all of it here.
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-
-* 14.1 State the dimensions of a matrix and identify square, diagonal,
+- **14.1** State the dimensions of a matrix and identify square, diagonal,
   identity, symmetric, and triangular matrices
-* 14.2 Add, subtract, and scalar-multiply matrices
-* 14.3 Determine whether a matrix product is defined and compute it
-* 14.4 Compute the transpose and recognize symmetric matrices
-* 14.5 Evaluate 2×2 and 3×3 determinants and apply determinant properties
-* 14.6 Compute the inverse of a 2×2 matrix and recognize when no inverse
+- **14.2** Add, subtract, and scalar-multiply matrices
+- **14.3** Determine whether a matrix product is defined and compute it
+- **14.4** Compute the transpose and recognize symmetric matrices
+- **14.5** Evaluate 2×2 and 3×3 determinants and apply determinant properties
+- **14.6** Compute the inverse of a 2×2 matrix and recognize when no inverse
   exists
-* 14.7 Write a linear system in matrix form $A\mathbf{x} = \mathbf{b}$ and
+- **14.7** Write a linear system in matrix form $A\mathbf{x} = \mathbf{b}$ and
   solve it by matrix inversion or Cramer's rule
-* 14.8 Define rank and singularity and connect them to system solvability
-* 14.9 Find eigenvalues from the characteristic equation
-* 14.10 Find eigenvectors corresponding to given eigenvalues
-* 14.11 Verify eigenvalues using the trace and determinant checks
-
+- **14.8** Define rank and singularity and connect them to system solvability
+- **14.9** Find eigenvalues from the characteristic equation
+- **14.10** Find eigenvectors corresponding to given eigenvalues
+- **14.11** Verify eigenvalues using the trace and determinant checks
 ---
 
 ## Notation Used Here
@@ -814,7 +812,7 @@ the abstraction worth the effort.
 
 ## As the Handbook States It
 
-> **Handbook 10.6, pp. 37–38** — *Mathematics / Matrices, Determinants,
+> **Handbook 10.6, pp. 59–61** — *Mathematics / Matrices, Determinants,
 > and Vectors*
 
 The Handbook includes:
@@ -867,6 +865,19 @@ cofactor expansion, the checkerboard is printed there.
 
 ---
 
+
+### Source Boundary
+
+**FE-Handbook-supported.** The equations, definitions, tables, and relations explicitly identified above are supported by the cited FE Reference Handbook 10.6 pages.
+
+**Externally supported.** Material in this chapter that extends beyond the Handbook is supported by the following external educational/standards references:
+
+- OpenStax, College Algebra 2e, §7.6, “Solving Systems with Gaussian Elimination” — matrix representations and row operations.
+- MIT OpenCourseWare 18.06/18.06SC Linear Algebra — matrices, determinants/cofactors, rank/inverses, and linear systems.
+- MIT OpenCourseWare 18.06SC, “Eigenvalues and Eigenvectors” — eigenvalue/eigenvector definitions, characteristic equation, and solution methods.
+
+**Guide synthesis.** Exam-navigation advice, memory cues, sequencing, worked-example framing, and study heuristics are guide-developed synthesis unless separately attributed.
+
 ## Where This Goes Wrong
 
 **Reversing rows and columns.** A $3\times 4$ matrix has three rows. Element
@@ -914,6 +925,12 @@ two rows give you *contradictory* conditions, your eigenvalue is wrong.
 catch most eigenvalue arithmetic errors.
 
 ---
+
+
+### Ledger terminology alignment
+
+- **matrix dimensions** — the ordered pair rows-by-columns, written $m\times n$, that specifies matrix size.
+- **matrix element** — an entry $a_{ij}$ located in row $i$ and column $j$.
 
 ## Key Terms
 

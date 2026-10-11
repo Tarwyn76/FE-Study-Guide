@@ -62,20 +62,18 @@ the answer but wrong enough to mark incorrect.
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-
-* 3.1 Distinguish accuracy from precision
-* 3.2 Distinguish systematic error from random error
-* 3.3 Apply the six Handbook rules to determine the number of significant
+- **3.1** Distinguish accuracy from precision
+- **3.2** Distinguish systematic error from random error
+- **3.3** Apply the six Handbook rules to determine the number of significant
   figures in any given number
-* 3.4 Carry significant figures correctly through addition, subtraction,
+- **3.4** Carry significant figures correctly through addition, subtraction,
   multiplication, and division
-* 3.5 Apply the engineering convention of three to four significant figures
+- **3.5** Apply the engineering convention of three to four significant figures
   in a final answer
-* 3.6 Identify intermediate rounding as a source of compounding error and
+- **3.6** Identify intermediate rounding as a source of compounding error and
   describe the correct practice
-* 3.7 Compute absolute error, relative error, and percent error
-* 3.8 Distinguish error from uncertainty in a measurement context
-
+- **3.7** Compute absolute error, relative error, and percent error
+- **3.8** Distinguish error from uncertainty in a measurement context
 ---
 
 ## Notation Used Here
@@ -96,8 +94,6 @@ context.
 ---
 
 ## 3.1 Accuracy and Precision
-
-![FIG-01-03-001: Four dartboards in a two-by-two matrix showing accurate and precise, precise only, accurate only, and neither](../figures/FIG-01-03-001-accuracy-precision-matrix.png)
 
 Two words that mean different things and get used interchangeably everywhere
 except engineering.
@@ -221,8 +217,6 @@ three significant figures gives $E_{\%} = 2.5\%$.
 ---
 
 ## 3.3 Significant Figures — The Six Rules
-
-![FIG-01-03-002: Decision flowchart for deciding whether a digit is significant based on the position of nonzero digits and zeros](../figures/FIG-01-03-002-significant-figures-flowchart.png)
 
 The Handbook prints six numbered rules on page 2. Here they are, with the
 tricky cases named explicitly.
@@ -474,8 +468,6 @@ and got 150, none of the choices would look right.
 
 ## 3.6 The Intermediate Rounding Problem
 
-![FIG-01-03-003: Side-by-side calculations showing the correct full-precision result and the error caused by premature rounding](../figures/FIG-01-03-003-catastrophic-cancellation.png)
-
 This is the section I asked you not to skip even if you tested out of Tier 1A.
 
 Here is the failure mode, precisely described.
@@ -547,7 +539,7 @@ difference used in further arithmetic.
 
 Whenever your calculation has the form:
 
-$$\frac{\text{something}}{(\text{large number}) - (\text{large number close to the first})}$$
+$$\frac{X}{A-B},\qquad A\approx B$$
 
 flag it before you compute. The denominator's absolute error is small, but its
 *relative* error may be enormous after subtraction.
@@ -660,6 +652,19 @@ with more steps, the accumulated error would not stay lucky.
 ---
 
 ## As the Handbook States It
+
+**Source boundary**
+
+- **FE-Handbook-supported —** FE Reference Handbook 10.6, p. 2: the six significant-figure rules and the engineering convention for final reported digits.
+- **Externally supported —** accuracy, precision, measurement uncertainty, significant-figure arithmetic, and rounding are supported by OpenStax *Chemistry 2e* §§1.5–1.6; one-step rounding and retention of unrounded values for later calculations are supported by NIST Handbook 130 (2025).
+- **Guide synthesis —** the chapter’s intermediate-rounding workflow, catastrophic-cancellation warning, diagnostic examples, and exam-oriented decision rules are instructional synthesis developed for this guide.
+
+**External reference provenance**
+
+1. OpenStax. *Chemistry 2e*, §1.5, “Measurement Uncertainty, Accuracy, and Precision.” https://openstax.org/books/chemistry-2e/pages/1-5-measurement-uncertainty-accuracy-and-precision
+2. OpenStax. *Chemistry 2e*, §1.6, “Mathematical Treatment of Measurement Results.” https://openstax.org/books/chemistry-2e/pages/1-6-mathematical-treatment-of-measurement-results
+3. National Institute of Standards and Technology. *NIST Handbook 130 (2025)*, rounding and significant-digits guidance. https://www.nist.gov/document/2025-nist-handbook-130
+
 
 > **Handbook 10.6, p. 2** — *Units and Conversion Factors*
 
@@ -1171,7 +1176,7 @@ Final results: **three or four significant figures.**
 
 **Intermediate rounding**
 
-$$\boxed{\text{ONE rounding. At the final answer. Never before.}}$$
+**Rounding rule:** carry full precision through intermediate steps and round once, at the final reported answer.
 
 Carrying full precision costs nothing and eliminates an entire class of errors.
 
@@ -1180,7 +1185,7 @@ Carrying full precision costs nothing and eliminates an entire class of errors.
 Subtract two nearly equal numbers → small absolute error becomes large
 relative error. Flag any calculation of the form:
 
-$$\frac{\text{something}}{(\text{large}) - (\text{large, slightly smaller})}$$
+$$\frac{X}{A-B},\qquad A\approx B$$
 
 Keep full precision through the subtraction.
 

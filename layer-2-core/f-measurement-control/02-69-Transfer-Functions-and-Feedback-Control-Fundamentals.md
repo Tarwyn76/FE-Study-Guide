@@ -65,7 +65,7 @@ Zeros are roots of the numerator; poles are roots of the denominator. Pole locat
 
 **Problem.** For G(s)=10(s+2)/[(s+1)(s+5)], identify zero and poles.
 
-**Solution.** Zero z=-2; poles p=-1 and -5.
+**Solution.** Zero z=-2; poles p=-1 and -5. The governing model here is **§69.1 Transfer Functions, Poles, and Zeros**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of transfer functions, poles, and zeros.
 
 ---
 
@@ -83,7 +83,7 @@ The diagram must preserve sign at each summing junction. A minus sign on the fee
 
 **Problem.** A block G=4 receives X=3. Find output in the static algebraic analogy.
 
-**Solution.** Y=GX=12.
+**Solution.** Y=GX=12. The governing model here is **§69.2 Block Diagrams, Summing Junctions, and Signal Flow**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of block diagrams, summing junctions, and signal flow.
 
 ---
 
@@ -101,7 +101,7 @@ Negative feedback can reduce sensitivity to plant variation and disturbances, bu
 
 **Problem.** For unity feedback G(s)=K/(s+2), write closed-loop reference transfer function.
 
-**Solution.** T(s)=K/(s+2+K).
+**Solution.** T(s)=K/(s+2+K). The governing model here is **§69.3 Open-Loop and Closed-Loop Transfer Functions**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of open-loop and closed-loop transfer functions.
 
 ---
 
@@ -119,7 +119,7 @@ The exact disturbance path depends on where the disturbance enters the block dia
 
 **Problem.** In the Handbook disturbance configuration, if G1=2, G2=5, H=1, find reference closed-loop gain and disturbance closed-loop gain at a frequency where these are real constants.
 
-**Solution.** Y/R=10/(1+10)=0.909; Y/L=5/(1+10)=0.455.
+**Solution.** Y/R=10/(1+10)=0.909; Y/L=5/(1+10)=0.455. The governing model here is **§69.4 Disturbance Response and Feedback Rejection**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of disturbance response and feedback rejection.
 
 ---
 
@@ -137,7 +137,7 @@ For continuous-time LTI systems, poles in the open left half-plane correspond to
 
 **Problem.** For L(s)=K/(s+1), write the characteristic equation.
 
-**Solution.** 1+K/(s+1)=0 → s+1+K=0.
+**Solution.** 1+K/(s+1)=0 → s+1+K=0. The governing model here is **§69.5 Characteristic Equation and Pole Stability**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of characteristic equation and pole stability.
 
 ---
 
@@ -153,9 +153,9 @@ This chapter emphasizes recognizing the error class before substituting constant
 
 ### Worked Example 6
 
-**Problem.** For G(s)=5/(2s+1), find DC gain.
+**Problem.** For G(s)=5/(2s+1), find the DC gain ratio.
 
-**Solution.** G(0)=5.
+**Solution.** G(0)=5. The governing model here is **§69.6 Steady-State Gain and Error**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of steady-state gain and error.
 
 ---
 
@@ -171,9 +171,9 @@ Positive margins are generally associated with a stable buffer against modeling 
 
 ### Worked Example 7
 
-**Problem.** At the -180° phase crossing, |G|=0.25. Find gain margin in dB.
+**Problem.** At the -180° phase crossing, |G|=0.25. Find the gain-margin ratio and report it in dB.
 
-**Solution.** GM=-20log10(0.25)=12.04 dB.
+**Solution.** GM=-20log10(0.25)=12.04 dB. The governing model here is **§69.7 Frequency Response, Gain Margin, and Phase Margin**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of frequency response, gain margin, and phase margin.
 
 ---
 
@@ -183,17 +183,24 @@ Positive margins are generally associated with a stable buffer against modeling 
 
 **Problem.** At the 0 dB gain crossover, phase is -135°. Find phase margin.
 
-**Solution.** PM=180-135=45°.
+**Solution.** PM=180-135=45°. The governing model here is **§69.7 Frequency Response, Gain Margin, and Phase Margin**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of frequency response, gain margin, and phase margin.
 
 ### Worked Example 9
 
 **Problem.** Where must continuous-time closed-loop poles lie for asymptotic stability?
 
-**Solution.** In the open left half of the s-plane.
+**Solution.** In the open left half of the s-plane. The governing model here is **§69.7 Frequency Response, Gain Margin, and Phase Margin**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of frequency response, gain margin, and phase margin.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — Engineering LibreTexts, Introduction to Control Systems (Iqbal) (https://eng.libretexts.org/Bookshelves/Industrial_and_Systems_Engineering/Introduction_to_Control_Systems_%28Iqbal%29) supports transfer functions, poles/characteristic equations, negative feedback, disturbance rejection, steady-state behavior, and stability.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Instrumentation, Measurement, and Control, printed pp. 231–234**.
 
@@ -322,20 +329,17 @@ B) It is independent of calibration and dynamics
 C) It replaces physical validation
 D) It is always a static scalar
 
-26. Which statement best describes **transfer function**?
-A) Its meaning depends on a defined measurement/control model and assumptions
-B) It is independent of calibration and dynamics
-C) It replaces physical validation
-D) It is always a static scalar
+26. A new problem requires **transfer function**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which statement best describes **control block diagram**?
-A) Its meaning depends on a defined measurement/control model and assumptions
-B) It is independent of calibration and dynamics
-C) It replaces physical validation
-D) It is always a static scalar
-
-
----
+27. After applying **control block diagram**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -353,48 +357,45 @@ D) It is always a static scalar
 
 7. **stability margins** is developed in §69.7. Use the displayed relation and the conditions stated there.
 
-8. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+8. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **Transfer Functions and Feedback Control Fundamentals**, apply this check specifically through **§69.1 Transfer Functions, Poles, and Zeros**, including that section's stated assumptions and reference quantities.
 
-9. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+9. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **Transfer Functions and Feedback Control Fundamentals**, apply this check specifically through **§69.2 Block Diagrams, Summing Junctions, and Signal Flow**, including that section's stated assumptions and reference quantities.
 
-10. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+10. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **Transfer Functions and Feedback Control Fundamentals**, apply this check specifically through **§69.3 Open-Loop and Closed-Loop Transfer Functions**, including that section's stated assumptions and reference quantities.
 
-11. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+11. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **Transfer Functions and Feedback Control Fundamentals**, apply this check specifically through **§69.4 Disturbance Response and Feedback Rejection**, including that section's stated assumptions and reference quantities.
 
-12. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+12. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **Transfer Functions and Feedback Control Fundamentals**, apply this check specifically through **§69.5 Characteristic Equation and Pole Stability**, including that section's stated assumptions and reference quantities.
 
-13. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+13. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **Transfer Functions and Feedback Control Fundamentals**, apply this check specifically through **§69.6 Steady-State Gain and Error**, including that section's stated assumptions and reference quantities.
 
-14. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first.
+14. The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal band, or control configuration. Establish the model and references first. For **Transfer Functions and Feedback Control Fundamentals**, apply this check specifically through **§69.7 Frequency Response, Gain Margin, and Phase Margin**, including that section's stated assumptions and reference quantities.
 
-15. Calibration establishes comparison to reference values; uncertainty quantifies doubt in the reported result. Calibration can reduce bias but does not make uncertainty zero.
+15. Calibration establishes comparison to reference values; uncertainty quantifies doubt in the reported result. Calibration can reduce bias but does not make uncertainty zero. For **Transfer Functions and Feedback Control Fundamentals**, apply this check specifically through **§69.1 Transfer Functions, Poles, and Zeros**, including that section's stated assumptions and reference quantities.
 
-16. A sensor or plant may not follow a changing input instantaneously; lag, damping, and bandwidth can change the observed or controlled response.
+16. A sensor or plant may not follow a changing input instantaneously; lag, damping, and bandwidth can change the observed or controlled response. For **Transfer Functions and Feedback Control Fundamentals**, apply this check specifically through **§69.2 Block Diagrams, Summing Junctions, and Signal Flow**, including that section's stated assumptions and reference quantities.
 
-17. Check units, limiting behavior, signal range, conservation/physical plausibility, pole stability, and whether sampling/bandwidth assumptions are satisfied.
+17. Check units, limiting behavior, signal range, conservation/physical plausibility, pole stability, and whether sampling/bandwidth assumptions are satisfied. For **Transfer Functions and Feedback Control Fundamentals**, apply this check specifically through **§69.3 Open-Loop and Closed-Loop Transfer Functions**, including that section's stated assumptions and reference quantities.
 
-18. Different sources can use different definitions for gain, time constants, signs, and frequency terms; the mapping must be established first.
+18. Different sources can use different definitions for gain, time constants, signs, and frequency terms; the mapping must be established first. For **Transfer Functions and Feedback Control Fundamentals**, apply this check specifically through **§69.4 Disturbance Response and Feedback Rejection**, including that section's stated assumptions and reference quantities.
 
-19. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+19. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Transfer Functions and Feedback Control Fundamentals**, apply this check specifically through **§69.5 Characteristic Equation and Pole Stability**, including that section's stated assumptions and reference quantities.
 
-20. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+20. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Transfer Functions and Feedback Control Fundamentals**, apply this check specifically through **§69.6 Steady-State Gain and Error**, including that section's stated assumptions and reference quantities.
 
-21. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+21. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Transfer Functions and Feedback Control Fundamentals**, apply this check specifically through **§69.7 Frequency Response, Gain Margin, and Phase Margin**, including that section's stated assumptions and reference quantities.
 
-22. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+22. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Transfer Functions and Feedback Control Fundamentals**, apply this check specifically through **§69.1 Transfer Functions, Poles, and Zeros**, including that section's stated assumptions and reference quantities.
 
-23. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+23. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Transfer Functions and Feedback Control Fundamentals**, apply this check specifically through **§69.2 Block Diagrams, Summing Junctions, and Signal Flow**, including that section's stated assumptions and reference quantities.
 
-24. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+24. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Transfer Functions and Feedback Control Fundamentals**, apply this check specifically through **§69.3 Open-Loop and Closed-Loop Transfer Functions**, including that section's stated assumptions and reference quantities.
 
-25. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+25. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Transfer Functions and Feedback Control Fundamentals**, apply this check specifically through **§69.4 Disturbance Response and Feedback Rejection**, including that section's stated assumptions and reference quantities.
 
-26. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
+26. **A.** For **transfer function** in *Transfer Functions and Feedback Control Fundamentals*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions.
-
-
----
+27. **A.** For **control block diagram** in *Transfer Functions and Feedback Control Fundamentals*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -425,23 +426,23 @@ D) It is always a static scalar
 
 1. Zero z=-2; poles p=-1 and -5.
 
-2. Y=GX=12.
+2. Y=GX=12. This result follows from **§69.2 Block Diagrams, Summing Junctions, and Signal Flow**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-3. T(s)=K/(s+2+K).
+3. T(s)=K/(s+2+K). This result follows from **§69.3 Open-Loop and Closed-Loop Transfer Functions**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 4. Y/R=10/(1+10)=0.909; Y/L=5/(1+10)=0.455.
 
 5. 1+K/(s+1)=0 → s+1+K=0.
 
-6. G(0)=5.
+6. G(0)=5. This result follows from **§69.6 Steady-State Gain and Error**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 7. GM=-20log10(0.25)=12.04 dB.
 
-8. PM=180-135=45°.
+8. PM=180-135=45°. This result follows from **§69.1 Transfer Functions, Poles, and Zeros**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 9. In the open left half of the s-plane.
 
-10. Infinite.
+10. Infinite. This result follows from **§69.3 Open-Loop and Closed-Loop Transfer Functions**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 
 ---

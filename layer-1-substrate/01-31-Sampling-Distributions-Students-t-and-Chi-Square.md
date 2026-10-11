@@ -1177,6 +1177,16 @@ table's $F(z)$ column does.
   what is known.
 
 ---
+### Source boundary for split-required material
+**FE-Handbook-supported.** The formulas, definitions, tables, and methods identified in the verified Handbook table above are supported by the cited printed pages of the NCEES FE Reference Handbook 10.6.
+**Externally supported.** The following material extends beyond what is explicitly supplied in the Handbook and is supported by the listed educational references:
+- Penn State STAT 414, Lesson 26 “Random Functions Associated with Normal Distributions” — Student’s t statistic and sampling-distribution basis. https://online.stat.psu.edu/stat414/Lesson26
+- OpenStax *Introductory Statistics 2e*, §11.1 “Facts About the Chi-Square Distribution” — chi-square distribution and degrees of freedom. https://openstax.org/books/introductory-statistics-2e/pages/11-1-facts-about-the-chi-square-distribution
+- OpenStax *Introductory Statistics 2e*, §13.4 “Test of Two Variances” — F-based comparison of normal-population variances. https://openstax.org/books/introductory-statistics-2e/pages/13-4-test-of-two-variances
+- OpenStax *Introductory Statistics 2e*, §10.1 “Two Population Means with Unknown Standard Deviations” — two-sample t inference. https://openstax.org/books/introductory-statistics-2e/pages/10-1-two-population-means-with-unknown-standard-deviations
+
+**Guide synthesis.** Worked-example sequencing, FE-oriented lookup strategy, decision rules, cautions, mnemonics, and explanatory bridges are guide-developed synthesis unless specifically attributed above.
+
 
 ## Where This Goes Wrong
 
@@ -1497,7 +1507,7 @@ D) $s/\bar X$.
 
 21. **C.** Sample variance uses $n-1$. (§31.1–31.2)
 
-22. **B.** $\nu=n-1=13$. (§31.2)
+22. **B.** For a one-sample t procedure, the degrees of freedom are $\nu=n-1=14-1=13$. (§31.2)
 
 23. **B.** Replacing unknown population $\sigma$ with sample $s$ leads to
     Student's $t$ under the stated assumptions. (§31.3)

@@ -66,16 +66,16 @@ in the library looks like when it's been modified.
 
 By the end of this chapter, you will be able to:
 
-* 6.1 Define a function and distinguish it from a general relation
-* 6.2 Determine the domain and range of a function from its equation or
+* **6.1** Define a function and distinguish it from a general relation
+* **6.2** Determine the domain and range of a function from its equation or
   graph
-* 6.3 Evaluate and interpret composite functions
-* 6.4 Find the inverse of a function algebraically and graphically
-* 6.5 Recognize and sketch the eight parent functions
-* 6.6 Apply the six transformation rules to predict graph shapes from
+* **6.3** Evaluate and interpret composite functions
+* **6.4** Find the inverse of a function algebraically and graphically
+* **6.5** Recognize and sketch the eight parent functions
+* **6.6** Apply the six transformation rules to predict graph shapes from
   equations
-* 6.7 Interpret engineering graphs using function concepts
-* 6.8 Distinguish even and odd functions from equations and graphs
+* **6.7** Interpret engineering graphs using function concepts
+* **6.8** Distinguish even and odd functions from equations and graphs
 
 ---
 

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1080pt" height="792pt" viewBox="0 0 1080 792" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-10T12:59:39.793904</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 792 
+L 1080 792 
+L 1080 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="text_1">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(795.76425 207.51245)">Pressure force</text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(821.729875 232.94745)">62.83 kN</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(788.1455 390.58325)">Shell area≈2πrt</text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(796.768937 416.01825)">=3141.6 mm²</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(794.268937 573.65405)">σlong=20 MPa</text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(835.367375 599.08905)">Fs=Fp</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 25px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="540" y="653.328837" transform="rotate(-0 540 653.328837)">pπr²=σlong(2πrt) → σlong=pr/(2t)</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_2">
+    <path d="M 326.52 474.804 
+C 334.711593 474.804 342.568783 462.328208 348.361114 440.124271 
+C 354.153445 417.920335 357.408 387.801108 357.408 356.4 
+C 357.408 324.998892 354.153445 294.879665 348.361114 272.675729 
+C 342.568783 250.471792 334.711593 237.996 326.52 237.996 
+C 318.328407 237.996 310.471217 250.471792 304.678886 272.675729 
+C 298.886555 294.879665 295.632 324.998892 295.632 356.4 
+C 295.632 387.801108 298.886555 417.920335 304.678886 440.124271 
+C 310.471217 462.328208 318.328407 474.804 326.52 474.804 
+z
+" clip-path="url(#p4ddeb8e199)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 328.521511 356.4 
+Q 429.480393 356.4 527.085172 356.4 
+" clip-path="url(#p4ddeb8e199)" style="fill: none; stroke: #a23b34; stroke-width: 3; stroke-linecap: round"/>
+    <path d="M 521.085172 353.4 
+L 527.085172 356.4 
+L 521.085172 359.4 
+z
+" clip-path="url(#p4ddeb8e199)" style="fill: #a23b34; stroke: #a23b34; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 324.516918 459.36 
+Q 249.296314 459.36 175.976368 459.36 
+" clip-path="url(#p4ddeb8e199)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 181.976368 462.36 
+L 175.976368 459.36 
+L 181.976368 456.36 
+z
+" clip-path="url(#p4ddeb8e199)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 324.516918 253.44 
+Q 249.296314 253.44 175.976368 253.44 
+" clip-path="url(#p4ddeb8e199)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 181.976368 256.44 
+L 175.976368 253.44 
+L 181.976368 250.44 
+z
+" clip-path="url(#p4ddeb8e199)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #a23b34" x="450.072" y="325.330875" transform="rotate(-0 450.072 325.330875)">Fp=pπr²</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #26776f" x="213.264" y="196.354937" transform="rotate(-0 213.264 196.354937)">Fs=σlong(2πrt)</text>
+   </g>
+  </g>
+  <g id="text_7">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="43.56" transform="rotate(-0 59.4 43.56)">End-cap pressure force is balanced by longitudinal shell tension</text>
+  </g>
+  <g id="text_8">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="59.4" y="770.616" transform="rotate(-0 59.4 770.616)">1328  •  FIG-03-85-002</text>
+  </g>
+  <g id="text_9">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 723.456625)">Same closed thin cylinder as1327. Forces are drawn on the isolated end-cap segment: pressure pushes outward and shell tension pulls inward. Mean-radius</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 736.174125)">thin-wall areas are used consistently; exact inner/outer radii would introduce small corrections.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p4ddeb8e199">
+   <rect x="120.6" y="150.48" width="514.8" height="411.84"/>
+  </clipPath>
+ </defs>
+</svg>

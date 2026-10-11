@@ -1136,6 +1136,13 @@ a score.
 
 ## As the Handbook States It
 
+### Source Boundary
+
+- **FE-Handbook-supported** — The FE Reference Handbook pages cited by the ledger supply the equations, tables, definitions, or exam-scope statements identified for the split-required concepts in this chapter.
+- **Externally supported** — NIST/SEMATECH e-Handbook of Statistical Methods, Assessing Process Capability (https://www.itl.nist.gov/div898/handbook/ppc/section4/ppc46.htm) supports Capability analysis, specification limits, process spread, capability indices, and the prerequisite role of process stability.
+- **Guide synthesis** — The worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, and explanatory derivations that go beyond the cited Handbook/external-source statements are instructional synthesis developed for this guide.
+
+
 > **Source verification.** Checked against the supplied *FE Reference Handbook
 > 10.6*, eighth printing, April 2026. In the Industrial and Systems Engineering
 > section, printed p. 423 contains *Process Capability*. It gives actual
@@ -1490,6 +1497,8 @@ D) a specification limit.
     \boxed{0.0860}.
     $$
 
+This range-based estimate supplies the process standard deviation used in the capability calculation that follows.
+
 17. Use
 
     $$
@@ -1726,6 +1735,8 @@ D) a specification limit.
    \approx
    \boxed{0.06449}.
    $$
+
+This practice estimate converts the baseline range into $\hat\sigma$ before comparing process spread with specification limits.
 
 6. Using
 

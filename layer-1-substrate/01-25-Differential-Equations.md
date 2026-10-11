@@ -724,6 +724,18 @@ conditions enter a Laplace-transform solution.
 
 ---
 
+
+### Source Boundary
+
+**FE-Handbook-supported.** The formulas, definitions, tables, and relations explicitly identified above are supported by the cited FE Reference Handbook 10.6 pages.
+
+**Externally supported.** Material extending beyond the Handbook is supported by:
+
+- OpenStax, Calculus Volume 2, Ch. 4 and §4.5 — differential-equation classification, initial-value problems, and first-order linear equations/integrating factors.
+- OpenStax, Calculus Volume 3, Ch. 7 — second-order linear and nonhomogeneous equations, complementary/particular solutions, and forcing/resonance.
+
+**Guide synthesis.** Exam-navigation advice, mnemonic devices, sequencing, worked-example framing, interpretation cues, and study heuristics are guide-developed synthesis unless separately attributed.
+
 ## Where This Goes Wrong
 
 **Solving before classifying.** The characteristic equation is not a universal
@@ -770,6 +782,11 @@ $0.25$ carries reciprocal units matching $t$.
 sum uses the same power $t^n$ before equating coefficients.
 
 ---
+
+
+### Ledger terminology alignment
+
+- **differential equation order** — the order of the highest derivative present in the equation.
 
 ## Key Terms
 

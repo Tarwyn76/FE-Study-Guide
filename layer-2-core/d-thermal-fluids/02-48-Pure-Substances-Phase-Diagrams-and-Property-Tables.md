@@ -63,7 +63,7 @@ At saturation, pressure and temperature are linked. Specifying both does not pro
 
 **Problem.** A saturated mixture has x=0.30, hf=500 kJ/kg, hfg=2200 kJ/kg. Find h.
 
-**Solution.** h=500+0.30(2200)=1160 kJ/kg.
+**Solution.** h=500+0.30(2200)=1160 kJ/kg. The governing model here is **§48.1 Pure-Substance Phases and Saturation**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of pure-substance phases and saturation.
 
 ---
 
@@ -79,9 +79,9 @@ The triple point is the unique equilibrium of solid, liquid, and vapor phases.
 
 ### Worked Example 2
 
-**Problem.** A mixture contains 2 kg vapor and 6 kg liquid. Find quality.
+**Problem.** A mixture contains 2 kg vapor and 6 kg liquid. Find vapor quality x as a dimensionless fraction.
 
-**Solution.** x=2/8=0.25.
+**Solution.** x=2/8=0.25. The governing model here is **§48.2 Saturation Dome and Critical Point**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of saturation dome and critical point.
 
 ---
 
@@ -99,7 +99,7 @@ Any specific extensive property \(y\in\{v,u,h,s\}\) follows \(y=y_f+x(y_g-y_f)\)
 
 **Problem.** At fixed P, T is above Tsat. Identify region.
 
-**Solution.** Superheated vapor.
+**Solution.** Superheated vapor. The governing model here is **§48.3 Quality in the Two-Phase Region**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of quality in the two-phase region.
 
 ---
 
@@ -117,13 +117,15 @@ Do not interpolate between a saturated table and a superheated table as though t
 
 **Problem.** At fixed P, T is below Tsat. Identify region.
 
-**Solution.** Compressed/subcooled liquid.
+**Solution.** Compressed/subcooled liquid. The governing model here is **§48.4 Using Saturated Property Tables**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of using saturated property tables.
 
 ---
 
 ## 48.5 Superheated Vapor and Compressed Liquid
 
-If \(T>T_{m sat}(P)\), the state is superheated vapor. If \(T<T_{m sat}(P)\), it is compressed/subcooled liquid.
+If \(T>T_{
+m sat}(P)\), the state is superheated vapor. If \(T<T_{
+m sat}(P)\), it is compressed/subcooled liquid.
 
 Use the appropriate table or stated approximation. A common liquid approximation uses saturated-liquid properties at the same temperature when permitted.
 
@@ -135,7 +137,7 @@ Use the appropriate table or stated approximation. A common liquid approximation
 
 **Problem.** What is quality of saturated liquid?
 
-**Solution.** 0.
+**Solution.** 0. The governing model here is **§48.5 Superheated Vapor and Compressed Liquid**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of superheated vapor and compressed liquid.
 
 ---
 
@@ -153,7 +155,7 @@ Read axes and phase region before tracing a process.
 
 **Problem.** What is quality of saturated vapor?
 
-**Solution.** 1.
+**Solution.** 1. The governing model here is **§48.6 P-v, T-s, and P-h Diagrams**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of p-v, t-s, and p-h diagrams.
 
 ---
 
@@ -171,7 +173,7 @@ After obtaining properties, verify they are consistent with the identified phase
 
 **Problem.** Can quality be used for superheated vapor?
 
-**Solution.** No.
+**Solution.** No. The governing model here is **§48.7 Interpolation and State Consistency**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of interpolation and state consistency.
 
 ---
 
@@ -181,17 +183,24 @@ After obtaining properties, verify they are consistent with the identified phase
 
 **Problem.** Which diagram is especially convenient for vapor-compression refrigeration?
 
-**Solution.** P-h diagram.
+**Solution.** P-h diagram. The governing model here is **§48.7 Interpolation and State Consistency**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of interpolation and state consistency.
 
 ### Worked Example 9
 
 **Problem.** Which diagram makes reversible heat transfer appear as area under a curve?
 
-**Solution.** T-s diagram.
+**Solution.** T-s diagram. The governing model here is **§48.7 Interpolation and State Consistency**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of interpolation and state consistency.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — Engineering LibreTexts, Thermodynamics references on pure substances and property data (https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Thermodynamics) supports pure-substance phase behavior, phase diagrams, saturation/superheat/compressed states, interpolation, and property-table consistency.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Thermodynamics, printed pp. 143–144 and property tables/diagrams in pp. 157–180**.
 
@@ -318,20 +327,17 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. Which statement best describes **pure substance**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
+26. A new problem requires **pure substance**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which statement best describes **saturation dome**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
-
-
----
+27. After applying **saturation dome**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -363,17 +369,17 @@ D) It replaces conservation laws
 
 14. The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then apply **property interpolation**.
 
-15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Pure Substances, Phase Diagrams, and Property Tables**, apply this check specifically through **§48.1 Pure-Substance Phases and Saturation**, including that section's stated assumptions and reference quantities.
 
-16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Pure Substances, Phase Diagrams, and Property Tables**, apply this check specifically through **§48.2 Saturation Dome and Critical Point**, including that section's stated assumptions and reference quantities.
 
-17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Pure Substances, Phase Diagrams, and Property Tables**, apply this check specifically through **§48.3 Quality in the Two-Phase Region**, including that section's stated assumptions and reference quantities.
 
-18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Pure Substances, Phase Diagrams, and Property Tables**, apply this check specifically through **§48.4 Using Saturated Property Tables**, including that section's stated assumptions and reference quantities.
 
-19. **A.** The chapter applies **pure substance** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+19. **A.** The chapter applies **pure substance** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Pure Substances, Phase Diagrams, and Property Tables**, apply this check specifically through **§48.5 Superheated Vapor and Compressed Liquid**, including that section's stated assumptions and reference quantities.
 
-20. **A.** The chapter applies **saturation dome** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+20. **A.** The chapter applies **saturation dome** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Pure Substances, Phase Diagrams, and Property Tables**, apply this check specifically through **§48.6 P-v, T-s, and P-h Diagrams**, including that section's stated assumptions and reference quantities.
 
 21. **A.** The chapter applies **vapor quality** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
@@ -385,12 +391,9 @@ D) It replaces conservation laws
 
 25. **A.** The chapter applies **property interpolation** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** The chapter applies **pure substance** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+26. **A.** For **pure substance** in *Pure Substances, Phase Diagrams, and Property Tables*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter applies **saturation dome** only after the state, geometry, flow/thermal regime, and assumptions are defined.
-
-
----
+27. **A.** For **saturation dome** in *Pure Substances, Phase Diagrams, and Property Tables*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -421,21 +424,21 @@ D) It replaces conservation laws
 
 1. h=500+0.30(2200)=1160 kJ/kg.
 
-2. x=2/8=0.25.
+2. x=2/8=0.25. This result follows from **§48.2 Saturation Dome and Critical Point**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-3. Superheated vapor.
+3. Superheated vapor. This result follows from **§48.3 Quality in the Two-Phase Region**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-4. Compressed/subcooled liquid.
+4. Compressed/subcooled liquid. This result follows from **§48.4 Using Saturated Property Tables**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-5. 0.
+5. 0. This result follows from **§48.5 Superheated Vapor and Compressed Liquid**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-6. 1.
+6. 1. This result follows from **§48.6 P-v, T-s, and P-h Diagrams**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-7. No.
+7. No. This result follows from **§48.7 Interpolation and State Consistency**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-8. P-h diagram.
+8. P-h diagram. This result follows from **§48.1 Pure-Substance Phases and Saturation**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-9. T-s diagram.
+9. T-s diagram. This result follows from **§48.2 Saturation Dome and Critical Point**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 10. Same phase region and same independent variables.
 

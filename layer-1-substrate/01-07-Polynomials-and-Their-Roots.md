@@ -65,20 +65,18 @@ Laplace transforms, and transfer function analysis.
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-
-* 7.1 Define polynomial, degree, leading coefficient, and identify each in
+- **7.1** Define polynomial, degree, leading coefficient, and identify each in
   a given expression
-* 7.2 Perform polynomial addition, subtraction, and multiplication
-* 7.3 Perform polynomial long division and synthetic division
-* 7.4 Apply the remainder theorem and factor theorem
-* 7.5 Solve quadratic equations by factoring, completing the square, and
+- **7.2** Perform polynomial addition, subtraction, and multiplication
+- **7.3** Perform polynomial long division and synthetic division
+- **7.4** Apply the remainder theorem and factor theorem
+- **7.5** Solve quadratic equations by factoring, completing the square, and
   the quadratic formula
-* 7.6 Interpret the discriminant and predict the nature of quadratic roots
-* 7.7 Apply the rational root theorem and Descartes' rule of signs to narrow
+- **7.6** Interpret the discriminant and predict the nature of quadratic roots
+- **7.7** Apply the rational root theorem and Descartes' rule of signs to narrow
   the search for real roots of higher-degree polynomials
-* 7.8 Solve polynomial equations by combining root-finding strategies
-* 7.9 Recognize the connection between roots, factors, and graph zeros
-
+- **7.8** Solve polynomial equations by combining root-finding strategies
+- **7.9** Recognize the connection between roots, factors, and graph zeros
 ---
 
 ## Notation Used Here
@@ -846,6 +844,18 @@ uses $\Delta$ throughout.
 
 ---
 
+
+### Source Boundary
+
+**FE-Handbook-supported.** The equations, definitions, tables, and relations explicitly identified above are supported by the cited FE Reference Handbook 10.6 pages.
+
+**Externally supported.** Material in this chapter that extends beyond the Handbook is supported by the following external educational/standards references:
+
+- OpenStax, College Algebra 2e, §2.5, “Quadratic Equations” — completing the square, quadratic formula, discriminant, complex quadratic roots.
+- OpenStax, College Algebra 2e, §5.5 / Ch. 5 key concepts — Factor/Remainder/Rational Zero theorems, synthetic division, complex zeros.
+
+**Guide synthesis.** Exam-navigation advice, memory cues, sequencing, worked-example framing, and study heuristics are guide-developed synthesis unless separately attributed.
+
 ## Where This Goes Wrong
 
 **Wrong denominator in the quadratic formula.** The denominator is $2a$,
@@ -896,6 +906,13 @@ Specifying only one of a complex pair produces a polynomial with complex
 coefficients.
 
 ---
+
+
+### Ledger terminology alignment
+
+- **complex conjugate root pair** — for a polynomial with real coefficients, any nonreal root $a+jb$ is accompanied by $a-jb$.
+- **imaginary number** — a number represented using the imaginary unit $j=\sqrt{-1}$.
+- **physics-extraneous root** — an algebraic root that violates the physical domain, geometry, sign, or modeling constraints.
 
 ## Key Terms
 

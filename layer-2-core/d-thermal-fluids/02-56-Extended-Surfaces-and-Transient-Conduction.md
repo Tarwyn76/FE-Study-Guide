@@ -61,9 +61,9 @@ Use characteristic length \(L_c=V/A_s\) for the lumped model.
 
 ### Worked Example 1
 
-**Problem.** A lumped body has h=20, V=0.001 m³, As=0.06 m², k=50 W/mK. Find Bi.
+**Problem.** A lumped body has h=20, V=0.001 m³, As=0.06 m², and k=50 W/mK. Find the dimensionless Biot number Bi.
 
-**Solution.** Bi=hV/(kAs)=0.00667.
+**Solution.** Bi=hV/(kAs)=0.00667. The governing model here is **§56.1 Biot Number and Lumped-Capacitance Criterion**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of biot number and lumped-capacitance criterion.
 
 ---
 
@@ -71,7 +71,8 @@ Use characteristic length \(L_c=V/A_s\) for the lumped model.
 
 For a body with uniform internal temperature exposed to a constant-temperature fluid, the lumped solution is exponential.
 
-The thermal time constant is \(	au=ho Vc_p/(hA_s)\).
+The thermal time constant is \(	au=
+ho Vc_p/(hA_s)\).
 
 \[\frac{T-T_\infty}{T_i-T_\infty}=\exp\left(-\frac{hA_s}{\rho Vc_p}t\right)\]
 
@@ -81,7 +82,7 @@ The thermal time constant is \(	au=ho Vc_p/(hA_s)\).
 
 **Problem.** Is lumped capacitance valid for Problem 1 under Bi<0.1?
 
-**Solution.** Yes.
+**Solution.** Yes. The governing model here is **§56.2 Lumped Transient Temperature Response**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of lumped transient temperature response.
 
 ---
 
@@ -99,7 +100,7 @@ The sign depends on whether the body heats or cools; magnitude follows \(mc_p|T-
 
 **Problem.** ρ=7800, V=0.001, cp=500, h=20, As=0.06. Find time constant.
 
-**Solution.** τ=ρVcp/(hAs)=3250 s.
+**Solution.** τ=ρVcp/(hAs)=3250 s. The governing model here is **§56.3 Total Heat Transfer During Lumped Cooling/Heating**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of total heat transfer during lumped cooling/heating.
 
 ---
 
@@ -117,7 +118,7 @@ The Handbook provides one-term approximations for plane walls, infinite cylinder
 
 **Problem.** For Problem 3, find temperature ratio θ/θi after one time constant.
 
-**Solution.** e^-1=0.3679.
+**Solution.** e^-1=0.3679. The governing model here is **§56.4 Fourier Number and Distributed Transient Conduction**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of fourier number and distributed transient conduction.
 
 ---
 
@@ -135,7 +136,7 @@ Spatial temperature ratios are then obtained from the corresponding eigenfunctio
 
 **Problem.** k=15, ρ=8000, cp=500. Find thermal diffusivity.
 
-**Solution.** α=15/(8000*500)=3.75e-6 m²/s.
+**Solution.** α=15/(8000*500)=3.75e-6 m²/s. The governing model here is **§56.5 One-Term Approximation**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of one-term approximation.
 
 ---
 
@@ -151,9 +152,9 @@ High fin conductivity, large perimeter, and adequate length improve performance,
 
 ### Worked Example 6
 
-**Problem.** For L=0.02 m and t=100 s with α from Problem 5, find Fo.
+**Problem.** For L=0.02 m and t=100 s with α from Problem 5, find the dimensionless Fourier number Fo.
 
-**Solution.** Fo=0.9375.
+**Solution.** Fo=0.9375. The governing model here is **§56.6 Straight Fins and Corrected Length**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of straight fins and corrected length.
 
 ---
 
@@ -171,7 +172,7 @@ Fin effectiveness compares heat transfer with the fin to what the base area woul
 
 **Problem.** What does Bi compare?
 
-**Solution.** Internal conduction resistance to external convection resistance.
+**Solution.** Internal conduction resistance to external convection resistance. The governing model here is **§56.7 Fin Heat Rate and Effectiveness**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of fin heat rate and effectiveness.
 
 ---
 
@@ -181,17 +182,24 @@ Fin effectiveness compares heat transfer with the fin to what the base area woul
 
 **Problem.** What does Fo represent?
 
-**Solution.** Nondimensional elapsed diffusion time.
+**Solution.** Nondimensional elapsed diffusion time. The governing model here is **§56.7 Fin Heat Rate and Effectiveness**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of fin heat rate and effectiveness.
 
 ### Worked Example 9
 
 **Problem.** Why do fins help heat transfer?
 
-**Solution.** They increase exposed convective area.
+**Solution.** They increase exposed convective area. The governing model here is **§56.7 Fin Heat Rate and Effectiveness**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of fin heat rate and effectiveness.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — Engineering LibreTexts, Heat Transfer references on extended surfaces and transient conduction (https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Heat_Transfer) supports fin temperature/heat-rate behavior, fin efficiency/effectiveness, lumped-capacitance logic, Biot/Fourier numbers, and transient-conduction checks.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Heat Transfer, printed pp. 211–214**.
 
@@ -318,20 +326,17 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. Which statement best describes **Biot number**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
+26. A new problem requires **Biot number**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which statement best describes **lumped capacitance**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
-
-
----
+27. After applying **lumped capacitance**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -363,17 +368,17 @@ D) It replaces conservation laws
 
 14. The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then apply **fin effectiveness**.
 
-15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Extended Surfaces and Transient Conduction**, apply this check specifically through **§56.1 Biot Number and Lumped-Capacitance Criterion**, including that section's stated assumptions and reference quantities.
 
-16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Extended Surfaces and Transient Conduction**, apply this check specifically through **§56.2 Lumped Transient Temperature Response**, including that section's stated assumptions and reference quantities.
 
-17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Extended Surfaces and Transient Conduction**, apply this check specifically through **§56.3 Total Heat Transfer During Lumped Cooling/Heating**, including that section's stated assumptions and reference quantities.
 
-18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Extended Surfaces and Transient Conduction**, apply this check specifically through **§56.4 Fourier Number and Distributed Transient Conduction**, including that section's stated assumptions and reference quantities.
 
-19. **A.** The chapter applies **Biot number** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+19. **A.** The chapter applies **Biot number** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Extended Surfaces and Transient Conduction**, apply this check specifically through **§56.5 One-Term Approximation**, including that section's stated assumptions and reference quantities.
 
-20. **A.** The chapter applies **lumped capacitance** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+20. **A.** The chapter applies **lumped capacitance** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Extended Surfaces and Transient Conduction**, apply this check specifically through **§56.6 Straight Fins and Corrected Length**, including that section's stated assumptions and reference quantities.
 
 21. **A.** The chapter applies **transient heat content** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
@@ -385,12 +390,9 @@ D) It replaces conservation laws
 
 25. **A.** The chapter applies **fin effectiveness** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** The chapter applies **Biot number** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+26. **A.** For **Biot number** in *Extended Surfaces and Transient Conduction*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter applies **lumped capacitance** only after the state, geometry, flow/thermal regime, and assumptions are defined.
-
-
----
+27. **A.** For **lumped capacitance** in *Extended Surfaces and Transient Conduction*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -419,23 +421,23 @@ D) It replaces conservation laws
 
 ## Practice Problem Solutions
 
-1. Bi=hV/(kAs)=0.00667.
+1. Bi=hV/(kAs)=0.00667. This result follows from **§56.1 Biot Number and Lumped-Capacitance Criterion**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-2. Yes.
+2. Yes. This result follows from **§56.2 Lumped Transient Temperature Response**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-3. τ=ρVcp/(hAs)=3250 s.
+3. τ=ρVcp/(hAs)=3250 s. This result follows from **§56.3 Total Heat Transfer During Lumped Cooling/Heating**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-4. e^-1=0.3679.
+4. e^-1=0.3679. This result follows from **§56.4 Fourier Number and Distributed Transient Conduction**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 5. α=15/(8000*500)=3.75e-6 m²/s.
 
-6. Fo=0.9375.
+6. Fo=0.9375. This result follows from **§56.6 Straight Fins and Corrected Length**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 7. Internal conduction resistance to external convection resistance.
 
-8. Nondimensional elapsed diffusion time.
+8. Nondimensional elapsed diffusion time. This result follows from **§56.1 Biot Number and Lumped-Capacitance Criterion**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-9. They increase exposed convective area.
+9. They increase exposed convective area. This result follows from **§56.2 Lumped Transient Temperature Response**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 10. Heat transfer with fin to heat transfer from the same base area without the fin.
 

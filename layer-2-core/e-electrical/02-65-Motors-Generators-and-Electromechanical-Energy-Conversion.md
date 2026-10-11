@@ -63,7 +63,7 @@ Efficiency is output divided by input and must be based on the correct input/out
 
 **Problem.** A motor takes 10 kW electrical input and delivers 8.5 kW mechanical output. Find efficiency and losses.
 
-**Solution.** η=85%; losses=1.5 kW.
+**Solution.** η=85%; losses=1.5 kW. The governing model here is **§65.1 Rotating-Machine Power Flow, Losses, and Efficiency**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of rotating-machine power flow, losses, and efficiency.
 
 ---
 
@@ -81,7 +81,7 @@ At fixed power, torque and speed are inversely related.
 
 **Problem.** A shaft delivers 20 N·m at 1800 rpm. Find mechanical power.
 
-**Solution.** ω=2π(1800)/60=188.5 rad/s; P=3.77 kW.
+**Solution.** ω=2π(1800)/60=188.5 rad/s; P=3.77 kW. The governing model here is **§65.2 Torque, Speed, and Mechanical Power**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of torque, speed, and mechanical power.
 
 ---
 
@@ -99,7 +99,7 @@ Synchronous machines operate at synchronous speed in steady operation; induction
 
 **Problem.** Find synchronous speed for 60 Hz, 4 poles.
 
-**Solution.** ns=120f/p=1800 rpm.
+**Solution.** ns=120f/p=1800 rpm. The governing model here is **§65.3 Synchronous Speed and AC Machine Families**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of synchronous speed and ac machine families.
 
 ---
 
@@ -117,7 +117,7 @@ When armature resistance is neglected, developed power varies approximately with
 
 **Problem.** A synchronous machine has Ea=240 V phase, Va=230 V phase, Xs=2 Ω, δ=20°, neglect Ra. Find developed 3φ power.
 
-**Solution.** P=3(EaVa/Xs)sinδ≈28.3 kW.
+**Solution.** P=3(EaVa/Xs)sinδ≈28.3 kW. The governing model here is **§65.4 Synchronous Machines and Power Angle**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of synchronous machines and power angle.
 
 ---
 
@@ -133,9 +133,9 @@ The Handbook includes a representative torque-speed curve with starting torque, 
 
 ### Worked Example 5
 
-**Problem.** An induction motor has ns=1800 rpm and n=1746 rpm. Find slip.
+**Problem.** An induction motor has ns=1800 rpm and n=1746 rpm. Find slip as a percentage.
 
-**Solution.** s=(1800-1746)/1800=0.030=3.0%.
+**Solution.** s=(1800-1746)/1800=0.030=3.0%. The governing model here is **§65.5 Induction Machines — Slip and Torque-Speed Behavior**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of induction machines — slip and torque-speed behavior.
 
 ---
 
@@ -153,7 +153,7 @@ Mechanical power and torque are proportional to armature current and flux under 
 
 **Problem.** A PM DC motor has KE=0.20 V/(rad/s), R=1 Ω, V=24 V and ω=100 rad/s. Find current; if KT=0.20 N·m/A, find torque.
 
-**Solution.** I=(24-20)/1=4 A; T=0.8 N·m.
+**Solution.** I=(24-20)/1=4 A; T=0.8 N·m. The governing model here is **§65.6 DC Machines — Back EMF, Flux, and Torque**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of dc machines — back emf, flux, and torque.
 
 ---
 
@@ -171,7 +171,7 @@ For any electromechanical device, verify electrical input/output power, mechanic
 
 **Problem.** A generator receives 5 kW mechanical input at 90% efficiency. Find electrical output.
 
-**Solution.** 4.5 kW.
+**Solution.** 4.5 kW. The governing model here is **§65.7 Servomotors, Tachogenerators, and Conversion Checks**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of servomotors, tachogenerators, and conversion checks.
 
 ---
 
@@ -181,17 +181,24 @@ For any electromechanical device, verify electrical input/output power, mechanic
 
 **Problem.** For a 50 Hz, 6-pole AC machine, find synchronous speed.
 
-**Solution.** ns=120(50)/6=1000 rpm.
+**Solution.** ns=120(50)/6=1000 rpm. The governing model here is **§65.7 Servomotors, Tachogenerators, and Conversion Checks**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of servomotors, tachogenerators, and conversion checks.
 
 ### Worked Example 9
 
-**Problem.** An induction motor runs at 970 rpm on a 1000 rpm synchronous field. Find slip.
+**Problem.** An induction motor runs at 970 rpm on a 1000 rpm synchronous field. Find slip as a percentage.
 
-**Solution.** 3.0%.
+**Solution.** 3.0%. The governing model here is **§65.7 Servomotors, Tachogenerators, and Conversion Checks**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of servomotors, tachogenerators, and conversion checks.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — OpenStax University Physics Volume 2, Electromagnetic Induction and AC machinery fundamentals (https://openstax.org/books/university-physics-volume-2/pages/13-introduction) supports electromechanical energy conversion, motors/generators, torque/back-emf concepts, and speed/feedback device context.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Electrical and Computer Engineering, printed pp. 370–373**.
 
@@ -318,20 +325,17 @@ B) It is independent of topology and frequency
 C) It always represents a scalar DC quantity
 D) It replaces conservation laws
 
-26. Which statement is most accurate for **rotating-machine efficiency**?
-A) It must be used with its defined reference and assumptions
-B) It is independent of topology and frequency
-C) It always represents a scalar DC quantity
-D) It replaces conservation laws
+26. A new problem requires **rotating-machine efficiency**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which statement is most accurate for **electromechanical torque and speed**?
-A) It must be used with its defined reference and assumptions
-B) It is independent of topology and frequency
-C) It always represents a scalar DC quantity
-D) It replaces conservation laws
-
-
----
+27. After applying **electromechanical torque and speed**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -363,17 +367,17 @@ D) It replaces conservation laws
 
 14. Applying **servomotor electromechanical model** without checking topology, reference direction, steady/transient condition, RMS/peak basis, or machine/circuit assumptions can produce a formally calculated but physically wrong result.
 
-15. Because the sign of power depends on the chosen voltage/current references and the passive sign convention.
+15. Because the sign of power depends on the chosen voltage/current references and the passive sign convention. For **Motors, Generators, and Electromechanical Energy Conversion**, apply this check specifically through **§65.1 Rotating-Machine Power Flow, Losses, and Efficiency**, including that section's stated assumptions and reference quantities.
 
-16. Charge/KCL, energy/power balance, and where applicable KVL should close consistently.
+16. Charge/KCL, energy/power balance, and where applicable KVL should close consistently. For **Motors, Generators, and Electromechanical Energy Conversion**, apply this check specifically through **§65.2 Torque, Speed, and Mechanical Power**, including that section's stated assumptions and reference quantities.
 
-17. Whenever the Handbook supplies the relation or when the shortcut's assumptions are uncertain.
+17. Whenever the Handbook supplies the relation or when the shortcut's assumptions are uncertain. For **Motors, Generators, and Electromechanical Energy Conversion**, apply this check specifically through **§65.3 Synchronous Speed and AC Machine Families**, including that section's stated assumptions and reference quantities.
 
-18. They represent different magnitudes; mixing them introduces factors such as √2 and gives incorrect power.
+18. They represent different magnitudes; mixing them introduces factors such as √2 and gives incorrect power. For **Motors, Generators, and Electromechanical Energy Conversion**, apply this check specifically through **§65.4 Synchronous Machines and Power Angle**, including that section's stated assumptions and reference quantities.
 
-19. **A.** The chapter treats **rotating-machine efficiency** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
+19. **A.** The chapter treats **rotating-machine efficiency** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **Motors, Generators, and Electromechanical Energy Conversion**, apply this check specifically through **§65.5 Induction Machines — Slip and Torque-Speed Behavior**, including that section's stated assumptions and reference quantities.
 
-20. **A.** The chapter treats **electromechanical torque and speed** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
+20. **A.** The chapter treats **electromechanical torque and speed** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **Motors, Generators, and Electromechanical Energy Conversion**, apply this check specifically through **§65.6 DC Machines — Back EMF, Flux, and Torque**, including that section's stated assumptions and reference quantities.
 
 21. **A.** The chapter treats **synchronous speed** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
 
@@ -385,12 +389,9 @@ D) It replaces conservation laws
 
 25. **A.** The chapter treats **servomotor electromechanical model** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
 
-26. **A.** The chapter treats **rotating-machine efficiency** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
+26. **A.** For **rotating-machine efficiency** in *Motors, Generators, and Electromechanical Energy Conversion*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter treats **electromechanical torque and speed** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
-
-
----
+27. **A.** For **electromechanical torque and speed** in *Motors, Generators, and Electromechanical Energy Conversion*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -419,11 +420,11 @@ D) It replaces conservation laws
 
 ## Practice Problem Solutions
 
-1. η=85%; losses=1.5 kW.
+1. η=85%; losses=1.5 kW. This result follows from **§65.1 Rotating-Machine Power Flow, Losses, and Efficiency**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 2. ω=2π(1800)/60=188.5 rad/s; P=3.77 kW.
 
-3. ns=120f/p=1800 rpm.
+3. ns=120f/p=1800 rpm. This result follows from **§65.3 Synchronous Speed and AC Machine Families**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 4. P=3(EaVa/Xs)sinδ≈28.3 kW.
 
@@ -431,11 +432,11 @@ D) It replaces conservation laws
 
 6. I=(24-20)/1=4 A; T=0.8 N·m.
 
-7. 4.5 kW.
+7. 4.5 kW. This result follows from **§65.7 Servomotors, Tachogenerators, and Conversion Checks**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-8. ns=120(50)/6=1000 rpm.
+8. ns=120(50)/6=1000 rpm. This result follows from **§65.1 Rotating-Machine Power Flow, Losses, and Efficiency**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-9. 3.0%.
+9. 3.0%. This result follows from **§65.2 Torque, Speed, and Mechanical Power**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 10. Energy conversion is reversible in principle; power-flow direction distinguishes motor from generator operation.
 

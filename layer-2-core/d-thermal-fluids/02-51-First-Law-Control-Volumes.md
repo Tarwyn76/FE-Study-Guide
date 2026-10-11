@@ -63,7 +63,7 @@ The general balance includes accumulation plus heat, work, enthalpy, kinetic ene
 
 **Problem.** Steady nozzle: h1=500 kJ/kg, h2=450 kJ/kg, V1≈0. Find exit speed neglecting heat/work/PE.
 
-**Solution.** V2=sqrt(2*50,000)=316.2 m/s.
+**Solution.** V2=sqrt(2*50,000)=316.2 m/s. The governing model here is **§51.1 Open-System Energy Balance**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of open-system energy balance.
 
 ---
 
@@ -81,7 +81,7 @@ Mass flow is constant through a one-stream steady device.
 
 **Problem.** Adiabatic turbine h1=1200, h2=900 kJ/kg. Find specific work output.
 
-**Solution.** 300 kJ/kg.
+**Solution.** 300 kJ/kg. The governing model here is **§51.2 Steady-Flow Energy Equation**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of steady-flow energy equation.
 
 ---
 
@@ -99,7 +99,7 @@ Velocity changes may dominate the balance.
 
 **Problem.** Compressor h1=300, h2=420 kJ/kg. Find specific work input.
 
-**Solution.** 120 kJ/kg.
+**Solution.** 120 kJ/kg. The governing model here is **§51.3 Nozzles and Diffusers**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of nozzles and diffusers.
 
 ---
 
@@ -117,7 +117,7 @@ Actual turbine efficiency compares actual work with the isentropic reference exp
 
 **Problem.** Throttling valve inlet h=250 kJ/kg. What is outlet h under ideal throttling assumptions?
 
-**Solution.** 250 kJ/kg.
+**Solution.** 250 kJ/kg. The governing model here is **§51.4 Turbines**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of turbines.
 
 ---
 
@@ -135,7 +135,7 @@ For an incompressible pump, the isentropic enthalpy rise is approximated by \(v(
 
 **Problem.** Adiabatic pump v=0.001 m³/kg raises pressure by 5 MPa ideally. Find specific work.
 
-**Solution.** w=vΔP=5 kJ/kg.
+**Solution.** w=vΔP=5 kJ/kg. The governing model here is **§51.5 Compressors and Pumps**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of compressors and pumps.
 
 ---
 
@@ -153,7 +153,7 @@ Pressure can fall substantially even though \(h_1=h_2\).
 
 **Problem.** What energy property naturally includes flow work?
 
-**Solution.** Enthalpy.
+**Solution.** Enthalpy. The governing model here is **§51.6 Throttling Valves**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of throttling valves.
 
 ---
 
@@ -171,7 +171,7 @@ Mixers require both mass and energy balances.
 
 **Problem.** At steady state, what happens to energy accumulation in the control volume?
 
-**Solution.** Zero.
+**Solution.** Zero. The governing model here is **§51.7 Heat Exchangers, Boilers, Condensers, and Mixers**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of heat exchangers, boilers, condensers, and mixers.
 
 ---
 
@@ -181,13 +181,13 @@ Mixers require both mass and energy balances.
 
 **Problem.** A boiler with one stream and no work has h1=500, h2=1500 kJ/kg. Find q.
 
-**Solution.** 1000 kJ/kg added.
+**Solution.** 1000 kJ/kg added. The governing model here is **§51.7 Heat Exchangers, Boilers, Condensers, and Mixers**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of heat exchangers, boilers, condensers, and mixers.
 
 ### Worked Example 9
 
 **Problem.** An insulated two-stream heat exchanger loses no heat externally. What relation holds?
 
-**Solution.** Energy lost by hot stream equals energy gained by cold stream.
+**Solution.** Energy lost by hot stream equals energy gained by cold stream. The governing model here is **§51.7 Heat Exchangers, Boilers, Condensers, and Mixers**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of heat exchangers, boilers, condensers, and mixers.
 
 ---
 
@@ -318,20 +318,17 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. Which statement best describes **control-volume energy balance**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
+26. A new problem requires **control-volume energy balance**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which statement best describes **steady-flow energy equation**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
-
-
----
+27. After applying **steady-flow energy equation**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -363,17 +360,17 @@ D) It replaces conservation laws
 
 14. The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then apply **steady-flow components**.
 
-15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **First Law — Control Volumes**, apply this check specifically through **§51.1 Open-System Energy Balance**, including that section's stated assumptions and reference quantities.
 
-16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **First Law — Control Volumes**, apply this check specifically through **§51.2 Steady-Flow Energy Equation**, including that section's stated assumptions and reference quantities.
 
-17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **First Law — Control Volumes**, apply this check specifically through **§51.3 Nozzles and Diffusers**, including that section's stated assumptions and reference quantities.
 
-18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **First Law — Control Volumes**, apply this check specifically through **§51.4 Turbines**, including that section's stated assumptions and reference quantities.
 
-19. **A.** The chapter applies **control-volume energy balance** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+19. **A.** The chapter applies **control-volume energy balance** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **First Law — Control Volumes**, apply this check specifically through **§51.5 Compressors and Pumps**, including that section's stated assumptions and reference quantities.
 
-20. **A.** The chapter applies **steady-flow energy equation** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+20. **A.** The chapter applies **steady-flow energy equation** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **First Law — Control Volumes**, apply this check specifically through **§51.6 Throttling Valves**, including that section's stated assumptions and reference quantities.
 
 21. **A.** The chapter applies **nozzle energy balance** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
@@ -385,12 +382,9 @@ D) It replaces conservation laws
 
 25. **A.** The chapter applies **steady-flow components** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** The chapter applies **control-volume energy balance** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+26. **A.** For **control-volume energy balance** in *First Law — Control Volumes*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter applies **steady-flow energy equation** only after the state, geometry, flow/thermal regime, and assumptions are defined.
-
-
----
+27. **A.** For **steady-flow energy equation** in *First Law — Control Volumes*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -421,19 +415,19 @@ D) It replaces conservation laws
 
 1. V2=sqrt(2*50,000)=316.2 m/s.
 
-2. 300 kJ/kg.
+2. 300 kJ/kg. This result follows from **§51.2 Steady-Flow Energy Equation**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-3. 120 kJ/kg.
+3. 120 kJ/kg. This result follows from **§51.3 Nozzles and Diffusers**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-4. 250 kJ/kg.
+4. 250 kJ/kg. This result follows from **§51.4 Turbines**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-5. w=vΔP=5 kJ/kg.
+5. w=vΔP=5 kJ/kg. This result follows from **§51.5 Compressors and Pumps**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-6. Enthalpy.
+6. Enthalpy. This result follows from **§51.6 Throttling Valves**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-7. Zero.
+7. Zero. This result follows from **§51.7 Heat Exchangers, Boilers, Condensers, and Mixers**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-8. 1000 kJ/kg added.
+8. 1000 kJ/kg added. This result follows from **§51.1 Open-System Energy Balance**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 9. Energy lost by hot stream equals energy gained by cold stream.
 

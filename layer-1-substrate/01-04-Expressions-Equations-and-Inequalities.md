@@ -65,16 +65,16 @@ practice it until it's impossible to miss.
 
 By the end of this chapter, you will be able to:
 
-* 4.1 Distinguish an expression from an equation from an inequality
-* 4.2 Apply the properties of real numbers to simplify expressions
-* 4.3 Expand and factor algebraic expressions including difference of
+* **4.1** Distinguish an expression from an equation from an inequality
+* **4.2** Apply the properties of real numbers to simplify expressions
+* **4.3** Expand and factor algebraic expressions including difference of
   squares and perfect square trinomials
-* 4.4 Isolate any variable in a multi-term equation using legal operations
-* 4.5 Solve equations involving absolute values
-* 4.6 Solve linear inequalities and express solutions on a number line
+* **4.4** Isolate any variable in a multi-term equation using legal operations
+* **4.5** Solve equations involving absolute values
+* **4.6** Solve linear inequalities and express solutions on a number line
   and in interval notation
-* 4.7 Solve compound inequalities
-* 4.8 Set up an algebraic equation from a physical relationship and solve
+* **4.7** Solve compound inequalities
+* **4.8** Set up an algebraic equation from a physical relationship and solve
   for a specified variable
 
 ---

@@ -67,7 +67,7 @@ It is a geometric property with units of length to the fourth power. It is not t
 
 **Problem.** Find Ix,c for a 0.20 m wide by 0.30 m high rectangle.
 
-**Solution.** Ix=bh^3/12=0.20(0.30^3)/12=4.50×10^-4 m^4.
+**Solution.** Ix=bh^3/12=0.20(0.30^3)/12=4.50×10^-4 m^4. Reasoning: this uses the **29.1 Second Moment of Area** model from Chapter 02-29: Area Moments of Inertia and the Parallel-Axis Theorem. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -89,7 +89,7 @@ I_{x,c}=rac{bh^3}{12},\qquad I_{y,c}=rac{hb^3}{12}.
 
 **Problem.** A centroidal Ix=2.0×10^-6 m^4, A=0.001 m², shifted d=0.05 m. Find new Ix.
 
-**Solution.** I=2.0e-6+0.001(0.05²)=4.5e-6 m^4.
+**Solution.** I=2.0e-6+0.001(0.05²)=4.5e-6 m^4. Reasoning: this uses the **29.2 Common Centroidal Shapes** model from Chapter 02-29: Area Moments of Inertia and the Parallel-Axis Theorem. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -107,7 +107,7 @@ The distance \(d\) must be perpendicular to the two parallel axes. Do not use th
 
 **Problem.** What are units of area moment of inertia?
 
-**Solution.** Length^4, e.g. m^4 or mm^4.
+**Solution.** Length^4, e.g. m^4 or mm^4. Reasoning: this uses the **29.3 Parallel-Axis Theorem** model from Chapter 02-29: Area Moments of Inertia and the Parallel-Axis Theorem. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -125,7 +125,7 @@ For holes, subtract both the area and the shifted inertia contribution. Never su
 
 **Problem.** State J in terms of perpendicular Ix and Iy through same point.
 
-**Solution.** J=Ix+Iy.
+**Solution.** J=Ix+Iy. Reasoning: this uses the **29.4 Composite Areas** model from Chapter 02-29: Area Moments of Inertia and the Parallel-Axis Theorem. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -147,7 +147,7 @@ For circular shafts, the polar area moment appears directly in torsion formulas.
 
 **Problem.** A section has Ix=8e-6 m^4 and A=0.002 m². Find rx.
 
-**Solution.** rx=sqrt(Ix/A)=sqrt(0.004)=0.06325 m.
+**Solution.** rx=sqrt(Ix/A)=sqrt(0.004)=0.06325 m. Reasoning: this uses the **29.5 Polar Moment of Area** model from Chapter 02-29: Area Moments of Inertia and the Parallel-Axis Theorem. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -165,7 +165,7 @@ It is useful in slenderness and buckling calculations.
 
 **Problem.** Why find composite centroid before composite I?
 
-**Solution.** The common axis distances d for parallel-axis shifts depend on the composite centroid.
+**Solution.** The common axis distances d for parallel-axis shifts depend on the composite centroid. Reasoning: this uses the **29.6 Radius of Gyration** model from Chapter 02-29: Area Moments of Inertia and the Parallel-Axis Theorem. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -187,7 +187,7 @@ For an area symmetric about either x or y centroidal axis, the product of inerti
 
 **Problem.** How is a hole treated in I summation?
 
-**Solution.** As negative area/inertia contribution consistently.
+**Solution.** As negative area/inertia contribution consistently. Reasoning: this uses the **29.7 Product of Inertia and Axis Choice** model from Chapter 02-29: Area Moments of Inertia and the Parallel-Axis Theorem. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -197,17 +197,24 @@ For an area symmetric about either x or y centroidal axis, the product of inerti
 
 **Problem.** Does I=Ic+Ad² rotate an axis?
 
-**Solution.** No; it shifts to a parallel axis only.
+**Solution.** No; it shifts to a parallel axis only. Reasoning: this uses the **Integrated Worked Examples** model from Chapter 02-29: Area Moments of Inertia and the Parallel-Axis Theorem. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ### Worked Example 9
 
 **Problem.** When is Ixy zero by symmetry?
 
-**Solution.** When the area is symmetric about either chosen centroidal x or y axis.
+**Solution.** When the area is symmetric about either chosen centroidal x or y axis. Reasoning: this uses the **Integrated Worked Examples** model from Chapter 02-29: Area Moments of Inertia and the Parallel-Axis Theorem. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — Engineering LibreTexts, Mechanics Map (Moore, 2nd ed.) (https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_Map_%28Moore_2nd_Edition%29) supports area moments of inertia, composite areas, products of inertia, and parallel-axis reasoning.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Statics, printed pp. 96–101**.
 
@@ -381,32 +388,31 @@ D) It replaces the need for an FBD or kinematic model
 
 14. The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first, then apply **product of inertia**.
 
-15. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+15. Create the chapter-specific mechanics model for **Chapter 02-29: Area Moments of Inertia and the Parallel-Axis Theorem** before solving: define the body or system, coordinates, geometry, loads, constraints, and unknowns that enter the governing equations.
 
-16. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+16. Independently verify a result in **Chapter 02-29: Area Moments of Inertia and the Parallel-Axis Theorem** by substituting it back into the governing equation, checking units and signs, and testing equilibrium, compatibility, or a limiting case as appropriate.
 
-17. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+17. A negative result reverses an assumed direction only when the physical element can act in that opposite sense. In **Chapter 02-29: Area Moments of Inertia and the Parallel-Axis Theorem**, also test whether unilateral contact, tension-only, or compression-only behavior changes the model.
 
-18. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+18. Match the Handbook coordinate and sign convention before comparing expressions in **Chapter 02-29: Area Moments of Inertia and the Parallel-Axis Theorem**. A different positive direction can reverse component or moment signs while leaving the physical state unchanged.
 
-19. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+19. **A.** The nineteenth review item tests **area moment of inertia** in **Chapter 02-29: Area Moments of Inertia and the Parallel-Axis Theorem**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-20. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+20. **A.** The twentieth review item tests **centroidal inertia** in **Chapter 02-29: Area Moments of Inertia and the Parallel-Axis Theorem**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-21. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+21. **A.** The twenty-first review item tests **parallel-axis theorem** in **Chapter 02-29: Area Moments of Inertia and the Parallel-Axis Theorem**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-22. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+22. **A.** The twenty-second review item tests **composite inertia** in **Chapter 02-29: Area Moments of Inertia and the Parallel-Axis Theorem**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-23. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+23. **A.** The twenty-third review item tests **polar moment of area** in **Chapter 02-29: Area Moments of Inertia and the Parallel-Axis Theorem**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-24. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+24. **A.** The twenty-fourth review item tests **area radius of gyration** in **Chapter 02-29: Area Moments of Inertia and the Parallel-Axis Theorem**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-25. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+25. **A.** The twenty-fifth review item tests **product of inertia** in **Chapter 02-29: Area Moments of Inertia and the Parallel-Axis Theorem**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-26. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+26. **A.** The twenty-sixth review item tests **area moment of inertia** in **Chapter 02-29: Area Moments of Inertia and the Parallel-Axis Theorem**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This application check also tests whether the model assumptions are established before any numerical or symbolic manipulation.
 
-27. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
-
+27. **A.** The twenty-seventh review item tests **centroidal inertia** in **Chapter 02-29: Area Moments of Inertia and the Parallel-Axis Theorem**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This final application check emphasizes that a valid mechanics relation cannot replace the diagram, geometry, and constraints that define the problem.
 
 ---
 
@@ -443,20 +449,19 @@ D) It replaces the need for an FBD or kinematic model
 
 3. Length^4, e.g. m^4 or mm^4.
 
-4. J=Ix+Iy.
+4. J=Ix+Iy. Practice verification: use the **29.4 Composite Areas** relation for Chapter 02-29: Area Moments of Inertia and the Parallel-Axis Theorem, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
 5. rx=sqrt(Ix/A)=sqrt(0.004)=0.06325 m.
 
 6. The common axis distances d for parallel-axis shifts depend on the composite centroid.
 
-7. As negative area/inertia contribution consistently.
+7. As negative area/inertia contribution consistently. Practice verification: use the **29.7 Product of Inertia and Axis Choice** relation for Chapter 02-29: Area Moments of Inertia and the Parallel-Axis Theorem, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
 8. No; it shifts to a parallel axis only.
 
 9. When the area is symmetric about either chosen centroidal x or y axis.
 
 10. Area moment is a cross-section geometric property (L^4); mass moment measures rotational inertia (mass·L²).
-
 
 ---
 

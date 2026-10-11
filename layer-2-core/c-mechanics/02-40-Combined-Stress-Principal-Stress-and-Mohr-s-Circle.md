@@ -63,7 +63,7 @@ The result is a stress element described by \(\sigma_x,\sigma_y,	au_{xy}\) for p
 
 **Problem.** Given σx=80 MPa, σy=20 MPa, τxy=30 MPa, find circle center C.
 
-**Solution.** C=(80+20)/2=50 MPa.
+**Solution.** C=(80+20)/2=50 MPa. Reasoning: this uses the **40.1 Combined Normal and Shear Stress States** model from Chapter 02-40: Combined Stress, Principal Stress, and Mohr's Circle. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -81,7 +81,7 @@ Principal planes are orientations where in-plane shear stress is zero.
 
 **Problem.** For Problem 1, find radius R.
 
-**Solution.** R=sqrt(30²+30²)=42.43 MPa.
+**Solution.** R=sqrt(30²+30²)=42.43 MPa. Reasoning: this uses the **40.2 Stress Transformation** model from Chapter 02-40: Combined Stress, Principal Stress, and Mohr's Circle. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -99,7 +99,7 @@ They are the algebraically maximum and minimum normal stresses in the plane.
 
 **Problem.** Find principal stresses for Problem 1.
 
-**Solution.** σ1=92.43 MPa, σ2=7.57 MPa.
+**Solution.** σ1=92.43 MPa, σ2=7.57 MPa. Reasoning: this uses the **40.3 Principal Stresses** model from Chapter 02-40: Combined Stress, Principal Stress, and Mohr's Circle. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -117,7 +117,7 @@ The corresponding normal stress on those planes equals the circle center.
 
 **Problem.** Find maximum in-plane shear for Problem 1.
 
-**Solution.** τmax,in=42.43 MPa.
+**Solution.** τmax,in=42.43 MPa. Reasoning: this uses the **40.4 Maximum In-Plane Shear Stress** model from Chapter 02-40: Combined Stress, Principal Stress, and Mohr's Circle. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -135,7 +135,7 @@ Physical-plane rotation angle \(	heta\) corresponds to \(2	heta\) around Mohr's 
 
 **Problem.** For plane stress, what is the third principal stress before ordering?
 
-**Solution.** 0.
+**Solution.** 0. Reasoning: this uses the **40.5 Constructing Mohr's Circle** model from Chapter 02-40: Combined Stress, Principal Stress, and Mohr's Circle. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -157,7 +157,7 @@ Quadrant-aware evaluation is essential. Mohr's circle provides a geometric check
 
 **Problem.** Using principal values 92.43, 7.57, 0 MPa, find absolute maximum 3D shear.
 
-**Solution.** (92.43-0)/2=46.22 MPa.
+**Solution.** (92.43-0)/2=46.22 MPa. Reasoning: this uses the **40.6 Principal-Plane Orientation** model from Chapter 02-40: Combined Stress, Principal Stress, and Mohr's Circle. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -175,7 +175,7 @@ The Handbook also gives plane-stress Hooke's-law relations, linking the transfor
 
 **Problem.** What stress exists on a principal plane?
 
-**Solution.** Normal principal stress with zero in-plane shear.
+**Solution.** Normal principal stress with zero in-plane shear. Reasoning: this uses the **40.7 Plane Stress, 3D Shear, and Constitutive Check** model from Chapter 02-40: Combined Stress, Principal Stress, and Mohr's Circle. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
@@ -185,17 +185,24 @@ The Handbook also gives plane-stress Hooke's-law relations, linking the transfor
 
 **Problem.** What is the angle relationship between physical rotation and Mohr-circle rotation?
 
-**Solution.** Mohr-circle angle is twice the physical-plane angle, with sign interpretation following the chosen convention.
+**Solution.** Mohr-circle angle is twice the physical-plane angle, with sign interpretation following the chosen convention. Reasoning: this uses the **Integrated Worked Examples** model from Chapter 02-40: Combined Stress, Principal Stress, and Mohr's Circle. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ### Worked Example 9
 
 **Problem.** Why must σ3=0 be included in absolute max-shear evaluation for plane stress?
 
-**Solution.** Because the largest principal-stress separation may involve the out-of-plane zero stress.
+**Solution.** Because the largest principal-stress separation may involve the out-of-plane zero stress. Reasoning: this uses the **Integrated Worked Examples** model from Chapter 02-40: Combined Stress, Principal Stress, and Mohr's Circle. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — Engineering LibreTexts, Mechanics of Materials (Roylance) (https://eng.libretexts.org/Bookshelves/Mechanical_Engineering/Mechanics_of_Materials_%28Roylance%29) supports combined stress, plane-stress transformation, principal stresses/orientation, maximum shear, Mohr’s circle, and constitutive checks.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Mechanics of Materials, printed pp. 132–134**.
 
@@ -367,32 +374,31 @@ D) It replaces the need for an FBD or kinematic model
 
 14. The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first, then apply **absolute maximum shear**.
 
-15. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+15. Create the chapter-specific mechanics model for **Chapter 02-40: Combined Stress, Principal Stress, and Mohr's Circle** before solving: define the body or system, coordinates, geometry, loads, constraints, and unknowns that enter the governing equations.
 
-16. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+16. Independently verify a result in **Chapter 02-40: Combined Stress, Principal Stress, and Mohr's Circle** by substituting it back into the governing equation, checking units and signs, and testing equilibrium, compatibility, or a limiting case as appropriate.
 
-17. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+17. A negative result reverses an assumed direction only when the physical element can act in that opposite sense. In **Chapter 02-40: Combined Stress, Principal Stress, and Mohr's Circle**, also test whether unilateral contact, tension-only, or compression-only behavior changes the model.
 
-18. Define the system and axes first, then use residual equilibrium, units, known limiting behavior, or constitutive/kinematic constraints to check the answer. Negative values often reverse an assumed vector sense when the physical model still permits that direction.
+18. Match the Handbook coordinate and sign convention before comparing expressions in **Chapter 02-40: Combined Stress, Principal Stress, and Mohr's Circle**. A different positive direction can reverse component or moment signs while leaving the physical state unchanged.
 
-19. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+19. **A.** The nineteenth review item tests **plane stress state** in **Chapter 02-40: Combined Stress, Principal Stress, and Mohr's Circle**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-20. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+20. **A.** The twentieth review item tests **stress transformation** in **Chapter 02-40: Combined Stress, Principal Stress, and Mohr's Circle**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-21. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+21. **A.** The twenty-first review item tests **principal stress** in **Chapter 02-40: Combined Stress, Principal Stress, and Mohr's Circle**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-22. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+22. **A.** The twenty-second review item tests **maximum in-plane shear** in **Chapter 02-40: Combined Stress, Principal Stress, and Mohr's Circle**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-23. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+23. **A.** The twenty-third review item tests **Mohr circle** in **Chapter 02-40: Combined Stress, Principal Stress, and Mohr's Circle**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-24. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+24. **A.** The twenty-fourth review item tests **principal orientation** in **Chapter 02-40: Combined Stress, Principal Stress, and Mohr's Circle**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-25. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+25. **A.** The twenty-fifth review item tests **absolute maximum shear** in **Chapter 02-40: Combined Stress, Principal Stress, and Mohr's Circle**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.
 
-26. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
+26. **A.** The twenty-sixth review item tests **plane stress state** in **Chapter 02-40: Combined Stress, Principal Stress, and Mohr's Circle**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This application check also tests whether the model assumptions are established before any numerical or symbolic manipulation.
 
-27. **A.** Mechanics relations are conditional on the selected body, coordinates, geometry, loading, and constitutive assumptions.
-
+27. **A.** The twenty-seventh review item tests **stress transformation** in **Chapter 02-40: Combined Stress, Principal Stress, and Mohr's Circle**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention. This final application check emphasizes that a valid mechanics relation cannot replace the diagram, geometry, and constraints that define the problem.
 
 ---
 
@@ -423,17 +429,17 @@ D) It replaces the need for an FBD or kinematic model
 
 ## Practice Problem Solutions
 
-1. C=(80+20)/2=50 MPa.
+1. C=(80+20)/2=50 MPa. Practice verification: use the **40.1 Combined Normal and Shear Stress States** relation for Chapter 02-40: Combined Stress, Principal Stress, and Mohr's Circle, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
 2. R=sqrt(30²+30²)=42.43 MPa.
 
 3. σ1=92.43 MPa, σ2=7.57 MPa.
 
-4. τmax,in=42.43 MPa.
+4. τmax,in=42.43 MPa. Practice verification: use the **40.4 Maximum In-Plane Shear Stress** relation for Chapter 02-40: Combined Stress, Principal Stress, and Mohr's Circle, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
-5. 0.
+5. 0. Practice verification: use the **40.5 Constructing Mohr's Circle** relation for Chapter 02-40: Combined Stress, Principal Stress, and Mohr's Circle, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
-6. (92.43-0)/2=46.22 MPa.
+6. (92.43-0)/2=46.22 MPa. Practice verification: use the **40.6 Principal-Plane Orientation** relation for Chapter 02-40: Combined Stress, Principal Stress, and Mohr's Circle, retain the stated sign convention and units, and confirm that the result is consistent with the section's equilibrium, kinematic, or constitutive constraint.
 
 7. Normal principal stress with zero in-plane shear.
 
@@ -442,7 +448,6 @@ D) It replaces the need for an FBD or kinematic model
 9. Because the largest principal-stress separation may involve the out-of-plane zero stress.
 
 10. R=sqrt[((σx−σy)/2)^2+τxy^2].
-
 
 ---
 

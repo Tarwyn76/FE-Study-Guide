@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1008pt" height="792pt" viewBox="0 0 1008 792" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-10T10:01:12.582088</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 792 
+L 1008 792 
+L 1008 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 55.44 302.148 
+L 952.56 302.148 
+" clip-path="url(#peba3113632)" style="fill: none; stroke: #235a78; stroke-width: 3; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 55.44 411.444 
+L 952.56 411.444 
+" clip-path="url(#peba3113632)" style="fill: none; stroke: #235a78; stroke-width: 3; stroke-linecap: square"/>
+   </g>
+   <g id="patch_2">
+    <path d="M 102.294931 356.796 
+Q 503.999402 356.796 903.803215 356.796 
+" clip-path="url(#peba3113632)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 897.803215 353.796 
+L 903.803215 356.796 
+L 897.803215 359.796 
+z
+" clip-path="url(#peba3113632)" style="fill: #235a78; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 25px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="205.215237" transform="rotate(-0 504 205.215237)">Q=5,000 m³/day • C=20 mg/L</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 26px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="506.055175" transform="rotate(-0 504 506.055175)">SI:5,000×20×0.001=100 kg/day</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 25px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="620.540037" transform="rotate(-0 504 620.540037)">US:1 MGD ×20 mg/L ×8.3454=166.91 lb/day</text>
+   </g>
+  </g>
+  <g id="text_4">
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="43.56" transform="rotate(-0 55.44 43.56)">Concentration times flow gives mass loading after unit conversion</text>
+  </g>
+  <g id="text_5">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="55.44" y="770.616" transform="rotate(-0 55.44 770.616)">1070  •  FIG-03-48-003</text>
+  </g>
+  <g id="text_6">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 723.456625)">Separate SI and US example flows; they are not claimed to be equivalent.1 mg/L=0.001 kg/m³. US gallon=3.785411784 L; pound=0.45359237 kg. The familiar8.34</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 736.174125)">coefficient is rounded. Variable-flow daily loading requires integrating Q(t)C(t), not multiplying unrelated averages.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="peba3113632">
+   <rect x="55.44" y="110.88" width="897.12" height="546.48"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -63,7 +63,7 @@ Use the Handbook sign convention consistently.
 
 **Problem.** A closed system receives 100 kJ heat and does 40 kJ work, with negligible KE/PE. Find ΔU.
 
-**Solution.** ΔU=60 kJ.
+**Solution.** ΔU=60 kJ. The governing model here is **§50.1 Closed-System Energy Balance**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of closed-system energy balance.
 
 ---
 
@@ -81,7 +81,7 @@ Internal-energy change for an ideal gas can often be obtained from \(c_v\Delta T
 
 **Problem.** A rigid tank receives 80 kJ heat, no other work. Find ΔU.
 
-**Solution.** 80 kJ.
+**Solution.** 80 kJ. The governing model here is **§50.2 Internal, Kinetic, and Potential Energy Changes**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of internal, kinetic, and potential energy changes.
 
 ---
 
@@ -99,7 +99,7 @@ For an ideal gas under constant pressure, temperature is proportional to specifi
 
 **Problem.** Constant pressure 200 kPa, volume increases 0.5 m³. Find boundary work.
 
-**Solution.** W=100 kJ.
+**Solution.** W=100 kJ. The governing model here is **§50.3 Constant-Pressure Boundary Work**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of constant-pressure boundary work.
 
 ---
 
@@ -117,7 +117,7 @@ Pressure may still change significantly as temperature changes.
 
 **Problem.** Ideal gas m=1 kg, R=0.287, T=300 K expands isothermally V2/V1=2. Find work.
 
-**Solution.** W=0.287*300*ln2=59.67 kJ.
+**Solution.** W=0.287*300*ln2=59.67 kJ. The governing model here is **§50.4 Constant-Volume Process**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of constant-volume process.
 
 ---
 
@@ -135,7 +135,7 @@ Thus, for a simple isothermal ideal-gas closed process with negligible other wor
 
 **Problem.** Polytropic process P1V1=200 kJ, P2V2=150 kJ, n=1.3. Find W.
 
-**Solution.** W=(150-200)/(1-1.3)=166.7 kJ.
+**Solution.** W=(150-200)/(1-1.3)=166.7 kJ. The governing model here is **§50.5 Isothermal Ideal-Gas Process**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of isothermal ideal-gas process.
 
 ---
 
@@ -154,7 +154,7 @@ Use the actual process model stated in the problem.
 
 **Problem.** For an expansion under Handbook sign convention, is boundary work generally positive or negative?
 
-**Solution.** Positive, if the system does work on surroundings.
+**Solution.** Positive, if the system does work on surroundings. The governing model here is **§50.6 Polytropic and Isentropic Processes**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of polytropic and isentropic processes.
 
 ---
 
@@ -172,7 +172,7 @@ Finally, verify that work sign matches expansion/compression and that energy uni
 
 **Problem.** What is boundary work in a constant-volume process?
 
-**Solution.** Zero.
+**Solution.** Zero. The governing model here is **§50.7 Closed-System Solution Workflow**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of closed-system solution workflow.
 
 ---
 
@@ -182,17 +182,22 @@ Finally, verify that work sign matches expansion/compression and that energy uni
 
 **Problem.** If ideal-gas temperature is constant, what is ΔU under ideal-gas assumption?
 
-**Solution.** Zero.
-
-### Worked Example 9
+**Solution.** Zero. The governing model here is **§50.7 Closed-System Solution Workflow**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of closed-system solution workflow. For an ideal gas, internal energy depends only on temperature, so constant temperature gives ΔU=0 even though boundary work and heat transfer may be nonzero.### Worked Example 9
 
 **Problem.** Why is process path needed for boundary work?
 
-**Solution.** Work is path-dependent and equals ∫P dV.
+**Solution.** Work is path-dependent and equals ∫P dV. The governing model here is **§50.7 Closed-System Solution Workflow**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of closed-system solution workflow.
 
 ---
 
 ## As the Handbook States It
+
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — OpenStax University Physics Volume 2, First Law of Thermodynamics (https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics) supports closed-system energy accounting, heat/work sign convention, internal-energy change, and first-law solution workflow.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
 
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Thermodynamics, printed p. 147**.
 
@@ -319,20 +324,17 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. Which statement best describes **closed-system first law**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
+26. A new problem requires **closed-system first law**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which statement best describes **closed-system energy change**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
-
-
----
+27. After applying **closed-system energy change**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -364,17 +366,17 @@ D) It replaces conservation laws
 
 14. The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then apply **closed-system workflow**.
 
-15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **First Law — Closed Systems**, apply this check specifically through **§50.1 Closed-System Energy Balance**, including that section's stated assumptions and reference quantities.
 
-16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **First Law — Closed Systems**, apply this check specifically through **§50.2 Internal, Kinetic, and Potential Energy Changes**, including that section's stated assumptions and reference quantities.
 
-17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **First Law — Closed Systems**, apply this check specifically through **§50.3 Constant-Pressure Boundary Work**, including that section's stated assumptions and reference quantities.
 
-18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **First Law — Closed Systems**, apply this check specifically through **§50.4 Constant-Volume Process**, including that section's stated assumptions and reference quantities.
 
-19. **A.** The chapter applies **closed-system first law** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+19. **A.** The chapter applies **closed-system first law** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **First Law — Closed Systems**, apply this check specifically through **§50.5 Isothermal Ideal-Gas Process**, including that section's stated assumptions and reference quantities.
 
-20. **A.** The chapter applies **closed-system energy change** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+20. **A.** The chapter applies **closed-system energy change** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **First Law — Closed Systems**, apply this check specifically through **§50.6 Polytropic and Isentropic Processes**, including that section's stated assumptions and reference quantities.
 
 21. **A.** The chapter applies **constant-pressure process** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
@@ -386,12 +388,9 @@ D) It replaces conservation laws
 
 25. **A.** The chapter applies **closed-system workflow** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** The chapter applies **closed-system first law** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+26. **A.** For **closed-system first law** in *First Law — Closed Systems*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter applies **closed-system energy change** only after the state, geometry, flow/thermal regime, and assumptions are defined.
-
-
----
+27. **A.** For **closed-system energy change** in *First Law — Closed Systems*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -420,11 +419,11 @@ D) It replaces conservation laws
 
 ## Practice Problem Solutions
 
-1. ΔU=60 kJ.
+1. ΔU=60 kJ. This result follows from **§50.1 Closed-System Energy Balance**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-2. 80 kJ.
+2. 80 kJ. This result follows from **§50.2 Internal, Kinetic, and Potential Energy Changes**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-3. W=100 kJ.
+3. W=100 kJ. This result follows from **§50.3 Constant-Pressure Boundary Work**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 4. W=0.287*300*ln2=59.67 kJ.
 
@@ -432,9 +431,9 @@ D) It replaces conservation laws
 
 6. Positive, if the system does work on surroundings.
 
-7. Zero.
+7. Zero. This result follows from **§50.7 Closed-System Solution Workflow**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-8. Zero.
+8. Zero. This result follows from **§50.1 Closed-System Energy Balance**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 9. Work is path-dependent and equals ∫P dV.
 

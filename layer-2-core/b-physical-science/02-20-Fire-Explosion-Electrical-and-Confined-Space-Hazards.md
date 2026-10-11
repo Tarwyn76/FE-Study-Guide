@@ -167,6 +167,13 @@ Before calculation, identify the governing state, composition, reaction, exposur
 
 ## As the Handbook States It
 
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — OSHA, Control of Hazardous Energy (Lockout/Tagout) and Permit-Required Confined Spaces (https://www.osha.gov/control-hazardous-energy ; https://www.osha.gov/confined-spaces) supports energy isolation, integrated hazard control, confined-space atmospheric hazards, monitoring, and gas-detection considerations.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
+
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Safety pp. 21–23**.
 
 **Source boundary:** The Handbook directly supplies flammability definitions/LFL/UFL, Le Chatelier mixture rule, LOC/AIT definitions, confined-space criteria and gas notes, and electrical-shock current effects. Fire tetrahedron, lockout/tagout, and general prevention hierarchy are guide-developed.
@@ -302,20 +309,17 @@ B) A universal rule independent of conditions
 C) A unit-conversion constant only
 D) A substitute for verified data
 
-26. Which answer best describes **flammability range**?
-A) A conditional engineering concept used under stated assumptions
-B) A universal rule independent of conditions
-C) A unit-conversion constant only
-D) A substitute for verified data
+26. A new problem requires **flammability range**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which answer best describes **AIT and LOC**?
-A) A conditional engineering concept used under stated assumptions
-B) A universal rule independent of conditions
-C) A unit-conversion constant only
-D) A substitute for verified data
-
-
----
+27. After applying **AIT and LOC**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -333,28 +337,24 @@ D) A substitute for verified data
 
 7. **energy isolation** is the central concept of §20.7; apply the definition, assumptions, and engineering consequence developed in that section.
 
-8. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+8. For §20.1, **Combustion and the Flammable Range**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-9. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+9. For §20.2, **Autoignition and Limiting Oxygen Concentration**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-10. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+10. For §20.3, **Flammable Gas Mixtures — Le Chatelier's Rule**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-11. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+11. For §20.4, **Confined Spaces and Permit-Required Hazards**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-12. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+12. For §20.5, **Gas Detection and Sensor Placement**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-13. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+13. For §20.6, **Electrical Shock Hazards**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-14. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+14. For §20.7, **Energy Isolation and Integrated Hazard Control**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-15. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-16. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-17. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-18. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
+15. Locate the Handbook equations and definitions for fire and explosion limits, electrical hazards, energy isolation, and confined-space conditions that apply to the scenario.
+16. Check concentration and energy units, verify calculated values are physically meaningful, and confirm that the proposed control matches the actual hazardous-energy source.
+17. Use measured gas concentrations, equipment nameplate data, protective-device ratings, ventilation measurements, and current entry-permit data whenever supplied.
+18. Separating ignition, fuel, oxidizer, electrical-energy, and atmospheric hazards before selecting controls is guide-developed diagnostic structure.
 19. **A.** The chapter applies **flammability range** only under its stated physical/model assumptions.
 
 20. **A.** The chapter applies **AIT and LOC** only under its stated physical/model assumptions.
@@ -369,12 +369,9 @@ D) A substitute for verified data
 
 25. **A.** The chapter applies **energy isolation** only under its stated physical/model assumptions.
 
-26. **A.** The chapter applies **flammability range** only under its stated physical/model assumptions.
+26. **A.** For **flammability range** in *Fire, Explosion, Electrical, and Confined-Space Hazards*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter applies **AIT and LOC** only under its stated physical/model assumptions.
-
-
----
+27. **A.** For **AIT and LOC** in *Fire, Explosion, Electrical, and Confined-Space Hazards*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -415,9 +412,9 @@ D) A substitute for verified data
 
 6. 6. Airflow, turbulence, temperature, release source, and enclosure geometry can dominate simple density stratification.
 
-7. 7. Methane.
+7. Methane. Methane is a common combustible gas and can create a flammable atmosphere when its concentration enters the flammable range.
 
-8. 8. Hydrogen sulfide.
+8. Hydrogen sulfide. H₂S is a toxic gas associated with confined-space hazards and requires appropriate atmospheric detection and controls.
 
 9. 9. Removing hazardous energy reduces the source risk rather than relying on a barrier worn by the worker.
 

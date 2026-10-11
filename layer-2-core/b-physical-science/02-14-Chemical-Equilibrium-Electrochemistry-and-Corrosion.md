@@ -206,6 +206,13 @@ Before calculation, identify the governing state, composition, reaction, exposur
 
 ## As the Handbook States It
 
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — OpenStax Chemistry 2e plus NACE/AMPP-style electrochemical corrosion fundamentals as summarized in engineering chemistry references (https://openstax.org/details/books/chemistry-2e) supports equilibrium shifts, temperature/catalyst effects, electrochemistry, galvanic cells, and electrochemical corrosion/control concepts.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
+
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Chemistry and Biology pp. 86–87, 93; Materials Science/Structure of Matter p. 117**.
 
 **Source boundary:** The Handbook directly provides equilibrium-constant structure, catalyst note, Ksp, Faraday's equation, Nernst equation, electrochemical definitions and standard oxidation potentials, and corrosion-cell requirements. Le Chatelier interpretation and corrosion-control examples are guide-developed.
@@ -341,20 +348,17 @@ B) A universal rule independent of conditions
 C) A unit-conversion constant only
 D) A substitute for verified data
 
-26. Which answer best describes **equilibrium constant**?
-A) A conditional engineering concept used under stated assumptions
-B) A universal rule independent of conditions
-C) A unit-conversion constant only
-D) A substitute for verified data
+26. A new problem requires **equilibrium constant**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which answer best describes **equilibrium disturbance**?
-A) A conditional engineering concept used under stated assumptions
-B) A universal rule independent of conditions
-C) A unit-conversion constant only
-D) A substitute for verified data
-
-
----
+27. After applying **equilibrium disturbance**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -372,28 +376,24 @@ D) A substitute for verified data
 
 7. **corrosion** is the central concept of §14.7; apply the definition, assumptions, and engineering consequence developed in that section.
 
-8. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+8. For §14.1, **Chemical Equilibrium and the Equilibrium Constant**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-9. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+9. For §14.2, **Disturbance, Temperature, and Catalysts**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-10. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+10. For §14.3, **Oxidation and Reduction**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-11. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+11. For §14.4, **Cell Potentials and Spontaneity**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-12. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+12. For §14.5, **The Nernst Equation**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-13. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+13. For §14.6, **Faraday's Equation and Electrolysis**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-14. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+14. For §14.7, **Corrosion Cells and Corrosion Control**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-15. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-16. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-17. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-18. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
+15. Locate the Handbook equilibrium-constant relations, reaction-quotient definitions, electrochemical equations, standard-potential data, and corrosion terminology relevant to the problem.
+16. Check that equilibrium expressions use the correct species and exponents, cell-potential signs follow reaction direction, and half-reactions conserve both mass and charge.
+17. Use supplied equilibrium constants, activities, standard potentials, polarization data, or measured corrosion rates rather than relying on a qualitative statement that a reaction is favored.
+18. Pairing the thermodynamic driving-force calculation with an explicit kinetics or corrosion-environment caution is a guide-developed interpretation.
 19. **A.** The chapter applies **equilibrium constant** only under its stated physical/model assumptions.
 
 20. **A.** The chapter applies **equilibrium disturbance** only under its stated physical/model assumptions.
@@ -408,12 +408,9 @@ D) A substitute for verified data
 
 25. **A.** The chapter applies **corrosion** only under its stated physical/model assumptions.
 
-26. **A.** The chapter applies **equilibrium constant** only under its stated physical/model assumptions.
+26. **A.** For **equilibrium constant** in *Chemical Equilibrium, Electrochemistry, and Corrosion*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter applies **equilibrium disturbance** only under its stated physical/model assumptions.
-
-
----
+27. **A.** For **equilibrium disturbance** in *Chemical Equilibrium, Electrochemistry, and Corrosion*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -458,7 +455,7 @@ D) A substitute for verified data
 
 8. 8. An anode, a cathode, electrical contact, and an electrolyte are required; the core corrosion-cell conditions include both electrodes electrically connected in electrolyte.
 
-9. 9. The anode is oxidized/consumed.
+9. The anode is oxidized and is therefore consumed because oxidation removes electrons from the anodic material.
 
 10. 10. Examples: coating, electrical isolation, cathodic protection, inhibitors, or environmental control.
 

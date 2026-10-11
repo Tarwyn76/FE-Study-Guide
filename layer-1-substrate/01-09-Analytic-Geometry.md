@@ -70,23 +70,23 @@ section is the one that makes the rest stick.
 
 By the end of this chapter, you will be able to:
 
-* 9.1 Find the equation of a line from two points, from a point and a slope,
+* **9.1** Find the equation of a line from two points, from a point and a slope,
   or from a point and a parallel or perpendicular condition; compute the
   distance from a point to a line and the angle between two lines
-* 9.2 Compute the distance between two points and the midpoint of a segment,
+* **9.2** Compute the distance between two points and the midpoint of a segment,
   in two and three dimensions
-* 9.3 Describe the four conic sections as slices of a cone and state what
+* **9.3** Describe the four conic sections as slices of a cone and state what
   distinguishes them
-* 9.4 Write the equation of a circle in standard form, and convert a general
+* **9.4** Write the equation of a circle in standard form, and convert a general
   equation to standard form by completing the square
-* 9.5 Identify the vertex, focus, directrix, axis, and opening direction of a
+* **9.5** Identify the vertex, focus, directrix, axis, and opening direction of a
   parabola from its equation
-* 9.6 Identify the centre, axes, vertices, and foci of an ellipse, and apply
+* **9.6** Identify the centre, axes, vertices, and foci of an ellipse, and apply
   $c^2 = a^2 - b^2$
-* 9.7 Identify the centre, vertices, foci, and asymptotes of a hyperbola, and
+* **9.7** Identify the centre, vertices, foci, and asymptotes of a hyperbola, and
   apply $c^2 = a^2 + b^2$
-* 9.8 Define eccentricity and use it to classify and compare all four conics
-* 9.9 Classify any second-degree equation by inspection and reduce it to
+* **9.8** Define eccentricity and use it to classify and compare all four conics
+* **9.9** Classify any second-degree equation by inspection and reduce it to
   standard form
 
 ---
@@ -895,42 +895,15 @@ $4(4) - 9(4) + 8(2) + 36(2) - 68 = 16 - 36 + 16 + 72 - 68 = 0$ ✓
 
 ## As the Handbook States It
 
-> **Handbook 10.6, pp. 37–40** — *Mathematics / Analytic Geometry*
+> **Verified against FE Reference Handbook 10.6.** Printed p. 37 directly supplies straight-line forms, slope, the angle between lines, the perpendicular-slope relation, and the distance between two points. The Handbook's mensuration pages contain selected geometric formulas, but they do **not** provide the complete midpoint, point-to-line-distance, focal-geometry, or eccentricity treatment used in this chapter.
 
-The Handbook provides:
+### Source Boundary
 
-- Straight-line equations in all three forms, with slope relationships
-- The angle between two lines
-- Distance from a point to a line
-- The distance formula
-- Standard-form equations for circle, parabola, ellipse, and hyperbola, with
-  their parameter relations
-- Eccentricity definitions
-- The $B^2 - 4AC$ discriminant for rotated conics
+- **FE-Handbook-supported** — Straight-line equations, slope/perpendicularity, angle between lines, and point-to-point distance are supported by FE Reference Handbook 10.6 printed p. 37.
+- **Externally supported** — OpenStax Intermediate Algebra 2e §11.1 supports distance and midpoint formulas. OpenStax Precalculus 2e Chapter 10 and OpenStax Calculus Volume 2 §7.5 support analytic conic equations, foci/directrices, and eccentricity.
+- **Guide synthesis** — Point-to-line derivations, completing-square procedures, conic-classification workflow, worked examples, and exam-navigation advice are instructional synthesis based on the cited sources rather than claims of direct Handbook coverage.
 
-**The Handbook does not provide:**
-
-- Any derivation from the focus-directrix definitions
-- The procedure for completing the square
-- Rules for classifying a general equation by inspecting $A$ and $C$
-- How to find a conic from geometric conditions — a circle through three
-  points, a parabola from vertex and a passing point, and so on
-- The reflective property of the parabola
-
-Those are memorize-and-practise material. Note the pattern, which holds across
-the whole Handbook: it stores **formulas**, not **methods**. Anything
-procedural has to come from you.
-
-**Notation note.** The Handbook uses $(h,k)$ for centres and vertices, $a \ge b$
-for the ellipse, and $c^2 = a^2 - b^2$ for ellipses against $c^2 = a^2 + b^2$
-for hyperbolas — all matching this chapter. Match its notation in final
-answers.
-
-**A caveat on page numbers.** Section and page references track the Handbook
-edition. Verify them against the version you will actually sit with, since
-NCEES renumbers between editions.
-
----
+**Exam-use implication.** Treat the Handbook as a direct lookup for the p. 37 straight-line relations. Do not assume that midpoint, full analytic-conic geometry, or eccentricity formulas are available there; know the method or use the externally supported guide treatment.
 
 ## Where This Goes Wrong
 
@@ -1557,6 +1530,15 @@ satisfies the equation. (A) and (B) take a root of a negative right side; (C)
 would require a right side of exactly zero. (§9.4)
 
 ---
+
+
+
+## Terminology Alignment
+
+- **general form line** — the line equation Ax+By+C=0.
+- **perpendicular slopes** — the relationship m1 m2=-1 for nonvertical perpendicular lines.
+- **hyperbola asymptote** — a line approached by a hyperbola that helps define its orientation and limiting geometry.
+- **completing the square conic** — the completing-the-square procedure used to convert a conic equation into standard form.
 
 ## Quick Reference
 

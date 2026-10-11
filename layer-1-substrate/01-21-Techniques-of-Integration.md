@@ -88,29 +88,28 @@ deliverable of the chapter.
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-
-* 21.1 Derive the integration-by-parts formula from the product rule
-* 21.2 Choose $u$ and $dv$ effectively and apply integration by parts
-* 21.3 Apply integration by parts repeatedly, and resolve the cyclic case
+- **21.1** Derive the integration-by-parts formula from the product rule
+- **21.2** Choose $u$ and $dv$ effectively and apply integration by parts
+- **21.3** Apply integration by parts repeatedly, and resolve the cyclic case
   algebraically
-* 21.4 Apply integration by parts to a definite integral, including the boundary
+- **21.4** Apply integration by parts to a definite integral, including the boundary
   term
-* 21.5 Integrate odd and even powers of sine and cosine using the appropriate
+- **21.5** Integrate odd and even powers of sine and cosine using the appropriate
   identity
-* 21.6 Select the correct trigonometric substitution for $\sqrt{a^2-x^2}$,
+- **21.6** Select the correct trigonometric substitution for $\sqrt{a^2-x^2}$,
   $\sqrt{a^2+x^2}$, and $\sqrt{x^2-a^2}$
-* 21.7 Use a reference triangle to convert a result back to the original
+- **21.7** Use a reference triangle to convert a result back to the original
   variable
-* 21.8 Decompose a proper rational function into partial fractions for distinct
+- **21.8** Decompose a proper rational function into partial fractions for distinct
   linear, repeated linear, and irreducible quadratic factors
-* 21.9 Reduce an improper rational function by polynomial division before
+- **21.9** Reduce an improper rational function by polynomial division before
   decomposing
-* 21.10 Evaluate improper integrals with infinite limits of integration and
+- **21.10** Evaluate improper integrals with infinite limits of integration and
   determine convergence
-* 21.11 Evaluate improper integrals with an infinite discontinuity in the
+- **21.11** Evaluate improper integrals with an infinite discontinuity in the
   integrand
-* 21.12 Apply the $p$-test for convergence
-* 21.13 Select an appropriate technique for an unfamiliar integral using a
+- **21.12** Apply the $p$-test for convergence
+- **21.13** Select an appropriate technique for an unfamiliar integral using a
   systematic strategy
 
 ---
@@ -1170,6 +1169,17 @@ before exam day.
 
 ---
 
+
+### Source Boundary
+
+**FE-Handbook-supported.** The formulas, definitions, tables, and relations explicitly identified above are supported by the cited FE Reference Handbook 10.6 pages.
+
+**Externally supported.** Material extending beyond the Handbook is supported by:
+
+- OpenStax, Calculus Volume 2, §§1.1–1.3 — integration by parts, trigonometric integrals, and trigonometric substitution.
+
+**Guide synthesis.** Exam-navigation advice, mnemonic devices, sequencing, worked-example framing, interpretation cues, and study heuristics are guide-developed synthesis unless separately attributed.
+
 ## Where This Goes Wrong
 
 **Choosing $u$ and $dv$ backwards.** If the new integral is worse than the
@@ -1240,6 +1250,14 @@ antiderivative. If nothing on the strategy list applies, the honest answer may
 be a numerical one.
 
 ---
+
+
+### Ledger terminology alignment
+
+- **convergent improper integral** — an improper integral whose defining limit exists and is finite.
+- **divergent improper integral** — an improper integral whose defining limit does not exist as a finite value.
+- **integration strategy** — selecting substitution, parts, partial fractions, identities, or numerical methods from the integrand structure.
+- **p-test for improper integrals** — $\int_1^\infty x^{-p}\,dx$ converges for $p>1$ and diverges for $p\le1$.
 
 ## Key Terms
 

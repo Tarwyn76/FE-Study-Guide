@@ -991,6 +991,13 @@ materials, setup, and operating conditions before assigning a cause.
 
 ## As the Handbook States It
 
+### Source Boundary
+
+- **FE-Handbook-supported** — The FE Reference Handbook pages cited by the ledger supply the equations, tables, definitions, or exam-scope statements identified for the split-required concepts in this chapter.
+- **Externally supported** — NIST/SEMATECH e-Handbook of Statistical Methods, Process or Product Monitoring and Control (https://www.itl.nist.gov/div898/handbook/pmc/pmc.htm) supports Process control, control charts, stability, assignable/special-cause interpretation, and the distinction between process control and product acceptance.
+- **Guide synthesis** — The worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, and explanatory derivations that go beyond the cited Handbook/external-source statements are instructional synthesis developed for this guide.
+
+
 > **Source verification.** Checked against the supplied *FE Reference Handbook
 > 10.6*, eighth printing, April 2026. Printed p. 83 contains *Statistical
 > Quality Control*, including the $A_2$, $D_3$, $D_4$ table for average-and-range
@@ -1340,6 +1347,8 @@ D) ignored whenever a control chart is used.
     \boxed{0.2580}.
     $$
 
+This range-based estimate converts the average subgroup range into a process standard-deviation estimate using the $d_2$ constant.
+
 19. Three-sigma distance:
 
     $$
@@ -1589,6 +1598,8 @@ D) ignored whenever a control chart is used.
    \approx
    \boxed{0.3009}.
    $$
+
+This practice calculation repeats the range estimator so the result can be checked against the control-chart baseline.
 
 7.
 

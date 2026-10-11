@@ -78,31 +78,30 @@ the applications are Chapter 01-20. This chapter builds the tool.
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-
-* 19.1 Define an antiderivative and explain why the constant of integration is
+- **19.1** Define an antiderivative and explain why the constant of integration is
   required
-* 19.2 Apply the basic integration rules for powers, exponentials, logarithms,
+- **19.2** Apply the basic integration rules for powers, exponentials, logarithms,
   and trigonometric functions
-* 19.3 Handle the $n = -1$ exception to the power rule and explain why the
+- **19.3** Handle the $n = -1$ exception to the power rule and explain why the
   absolute value appears
-* 19.4 Construct a Riemann sum for a function on an interval and evaluate a
+- **19.4** Construct a Riemann sum for a function on an interval and evaluate a
   definite integral as the limit of Riemann sums
-* 19.5 Interpret the definite integral as signed area and determine the sign of
+- **19.5** Interpret the definite integral as signed area and determine the sign of
   a contribution
-* 19.6 Apply the properties of definite integrals, including reversal of limits
+- **19.6** Apply the properties of definite integrals, including reversal of limits
   and additivity over subintervals
-* 19.7 State both parts of the Fundamental Theorem of Calculus and explain what
+- **19.7** State both parts of the Fundamental Theorem of Calculus and explain what
   each one does
-* 19.8 Evaluate definite integrals using antiderivatives and the evaluation
+- **19.8** Evaluate definite integrals using antiderivatives and the evaluation
   notation
-* 19.9 Differentiate an accumulation function using the second part of the
+- **19.9** Differentiate an accumulation function using the second part of the
   Fundamental Theorem
-* 19.10 Integrate by substitution, recognizing when the technique applies
-* 19.11 Change the limits of integration when substituting in a definite
+- **19.10** Integrate by substitution, recognizing when the technique applies
+- **19.11** Change the limits of integration when substituting in a definite
   integral
-* 19.12 Exploit even and odd symmetry to simplify definite integrals over
+- **19.12** Exploit even and odd symmetry to simplify definite integrals over
   symmetric intervals
-* 19.13 Compute the average value of a function over an interval and interpret
+- **19.13** Compute the average value of a function over an interval and interpret
   it physically
 
 ---
@@ -941,6 +940,17 @@ the limits and the subtraction.
 > ---
 
 ---
+
+
+### Source Boundary
+
+**FE-Handbook-supported.** The formulas, definitions, tables, and relations explicitly identified above are supported by the cited FE Reference Handbook 10.6 pages.
+
+**Externally supported.** Material extending beyond the Handbook is supported by:
+
+- OpenStax, Calculus Volume 1, §§5.2–5.5 — definite integrals, Fundamental Theorem of Calculus, accumulation, average value, and substitution.
+
+**Guide synthesis.** Exam-navigation advice, mnemonic devices, sequencing, worked-example framing, interpretation cues, and study heuristics are guide-developed synthesis unless separately attributed.
 
 ## Where This Goes Wrong
 

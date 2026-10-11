@@ -63,7 +63,7 @@ These statements explain why first-law energy conservation alone cannot determin
 
 **Problem.** A reversible reservoir receives 100 kJ at 500 K. Find entropy change of reservoir.
 
-**Solution.** ΔS=Q/T=0.200 kJ/K.
+**Solution.** ΔS=Q/T=0.200 kJ/K. The governing model here is **§52.1 Kelvin-Planck and Clausius Statements**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of kelvin-planck and clausius statements.
 
 ---
 
@@ -81,7 +81,7 @@ For irreversible processes, entropy generation accounts for the difference.
 
 **Problem.** An ideal gas cp=1.0, R=0.287 kJ/kg·K changes T 300→600 K at constant P. Find Δs.
 
-**Solution.** Δs=cp ln2=0.693 kJ/kg·K.
+**Solution.** Δs=cp ln2=0.693 kJ/kg·K. The governing model here is **§52.2 Entropy as a State Property**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of entropy as a state property.
 
 ---
 
@@ -99,7 +99,7 @@ A reversible process has zero entropy generation; a real irreversible process ha
 
 **Problem.** A solid c=0.5 kJ/kg·K heats 300→600 K. Find Δs.
 
-**Solution.** 0.5 ln2=0.347 kJ/kg·K.
+**Solution.** 0.5 ln2=0.347 kJ/kg·K. The governing model here is **§52.3 Entropy Balance and Entropy Generation**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of entropy balance and entropy generation.
 
 ---
 
@@ -117,7 +117,7 @@ This distinction is central to turbine/compressor efficiency calculations.
 
 **Problem.** If an adiabatic process has positive entropy generation, is it isentropic?
 
-**Solution.** No.
+**Solution.** No. The governing model here is **§52.4 Adiabatic versus Isentropic**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of adiabatic versus isentropic.
 
 ---
 
@@ -135,7 +135,7 @@ These formulas apply to state changes, regardless of whether the actual path is 
 
 **Problem.** What condition makes an adiabatic process isentropic?
 
-**Solution.** Reversibility/zero entropy generation.
+**Solution.** Reversibility/zero entropy generation. The governing model here is **§52.5 Ideal-Gas Entropy Change**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of ideal-gas entropy change.
 
 ---
 
@@ -153,7 +153,7 @@ Pressure effects are often small under the Handbook approximation unless a more 
 
 **Problem.** Can a cyclic heat engine convert all QH from one reservoir into work?
 
-**Solution.** No, Kelvin-Planck statement.
+**Solution.** No, Kelvin-Planck statement. The governing model here is **§52.6 Entropy Change of Solids and Liquids**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of entropy change of solids and liquids.
 
 ---
 
@@ -171,7 +171,7 @@ The Handbook gives \(I=T_0\Delta S_{total}\) for the stated environment model.
 
 **Problem.** Can a refrigerator operate cyclically without work input?
 
-**Solution.** No, Clausius statement.
+**Solution.** No, Clausius statement. The governing model here is **§52.7 Exergy and Irreversibility**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of exergy and irreversibility.
 
 ---
 
@@ -181,13 +181,13 @@ The Handbook gives \(I=T_0\Delta S_{total}\) for the stated environment model.
 
 **Problem.** What is sign of entropy generation in a real irreversible process?
 
-**Solution.** Positive.
+**Solution.** Positive. The governing model here is **§52.7 Exergy and Irreversibility**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of exergy and irreversibility.
 
 ### Worked Example 9
 
 **Problem.** What does exergy measure?
 
-**Solution.** Maximum useful work potential relative to an environment.
+**Solution.** Maximum useful work potential relative to an environment. The governing model here is **§52.7 Exergy and Irreversibility**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of exergy and irreversibility.
 
 ---
 
@@ -318,20 +318,17 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. Which statement best describes **second law**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
+26. A new problem requires **second law**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which statement best describes **entropy**?
-A) It is conditional on the physical model and assumptions
-B) It is valid independent of state and geometry
-C) It is only a unit conversion
-D) It replaces conservation laws
-
-
----
+27. After applying **entropy**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -363,17 +360,17 @@ D) It replaces conservation laws
 
 14. The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then apply **exergy destruction**.
 
-15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+15. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Second Law, Entropy, and Isentropic Processes**, apply this check specifically through **§52.1 Kelvin-Planck and Clausius Statements**, including that section's stated assumptions and reference quantities.
 
-16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+16. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Second Law, Entropy, and Isentropic Processes**, apply this check specifically through **§52.2 Entropy as a State Property**, including that section's stated assumptions and reference quantities.
 
-17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+17. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Second Law, Entropy, and Isentropic Processes**, apply this check specifically through **§52.3 Entropy Balance and Entropy Generation**, including that section's stated assumptions and reference quantities.
 
-18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them.
+18. Define the physical model first, use conservation and units as checks, rely on supplied Handbook/property data, and use absolute scales whenever the governing equation requires them. For **Second Law, Entropy, and Isentropic Processes**, apply this check specifically through **§52.4 Adiabatic versus Isentropic**, including that section's stated assumptions and reference quantities.
 
-19. **A.** The chapter applies **second law** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+19. **A.** The chapter applies **second law** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Second Law, Entropy, and Isentropic Processes**, apply this check specifically through **§52.5 Ideal-Gas Entropy Change**, including that section's stated assumptions and reference quantities.
 
-20. **A.** The chapter applies **entropy** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+20. **A.** The chapter applies **entropy** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Second Law, Entropy, and Isentropic Processes**, apply this check specifically through **§52.6 Entropy Change of Solids and Liquids**, including that section's stated assumptions and reference quantities.
 
 21. **A.** The chapter applies **entropy generation** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
@@ -385,12 +382,9 @@ D) It replaces conservation laws
 
 25. **A.** The chapter applies **exergy destruction** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** The chapter applies **second law** only after the state, geometry, flow/thermal regime, and assumptions are defined.
+26. **A.** For **second law** in *Second Law, Entropy, and Isentropic Processes*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter applies **entropy** only after the state, geometry, flow/thermal regime, and assumptions are defined.
-
-
----
+27. **A.** For **entropy** in *Second Law, Entropy, and Isentropic Processes*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -425,19 +419,19 @@ D) It replaces conservation laws
 
 3. 0.5 ln2=0.347 kJ/kg·K.
 
-4. No.
+4. No. This result follows from **§52.4 Adiabatic versus Isentropic**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-5. Reversibility/zero entropy generation.
+5. Reversibility/zero entropy generation. This result follows from **§52.5 Ideal-Gas Entropy Change**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-6. No, Kelvin-Planck statement.
+6. No, Kelvin-Planck statement. This result follows from **§52.6 Entropy Change of Solids and Liquids**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-7. No, Clausius statement.
+7. No, Clausius statement. This result follows from **§52.7 Exergy and Irreversibility**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
-8. Positive.
+8. Positive. This result follows from **§52.1 Kelvin-Planck and Clausius Statements**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 9. Maximum useful work potential relative to an environment.
 
-10. I=600 kJ.
+10. I=600 kJ. This result follows from **§52.3 Entropy Balance and Entropy Generation**; use the section model with the stated basis and verify that the final units and physical trend are consistent.
 
 
 ---

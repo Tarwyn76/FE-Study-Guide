@@ -1361,6 +1361,14 @@ distributions. They should not be mistaken for quotations from the Handbook.
 - and fail to reject is not the same as prove true.
 
 ---
+### Source boundary for split-required material
+**FE-Handbook-supported.** The formulas, definitions, tables, and methods identified in the verified Handbook table above are supported by the cited printed pages of the NCEES FE Reference Handbook 10.6.
+**Externally supported.** The following material extends beyond what is explicitly supplied in the Handbook and is supported by the listed educational references:
+- OpenStax *Introductory Statistics 2e*, Chapter 9 and §9.3 — hypothesis-test structure, Type I/II errors, significance, and distribution selection. https://openstax.org/books/introductory-statistics-2e/pages/9-introduction
+- OpenStax *Introductory Statistics 2e*, §10.1 — two-population mean tests with unknown standard deviations. https://openstax.org/books/introductory-statistics-2e/pages/9-3-probability-distribution-needed-for-hypothesis-testing
+
+**Guide synthesis.** Worked-example sequencing, FE-oriented lookup strategy, decision rules, cautions, mnemonics, and explanatory bridges are guide-developed synthesis unless specifically attributed above.
+
 
 ## Where This Goes Wrong
 

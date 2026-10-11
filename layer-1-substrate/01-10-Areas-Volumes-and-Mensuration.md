@@ -62,16 +62,14 @@ start using areas and volumes in physics problems in Tier 2.
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-
-* 10.1 Compute the area and perimeter of standard plane figures using
+- **10.1** Compute the area and perimeter of standard plane figures using
   Handbook formulas
-* 10.2 Compute the surface area and volume of standard solids
-* 10.3 Find the area and centroid of a composite plane figure
-* 10.4 Apply area and volume unit conversions correctly
-* 10.5 Compute the volume of a solid of revolution using the disk/washer
+- **10.2** Compute the surface area and volume of standard solids
+- **10.3** Find the area and centroid of a composite plane figure
+- **10.4** Apply area and volume unit conversions correctly
+- **10.5** Compute the volume of a solid of revolution using the disk/washer
   concept (preview; full integration treatment in Chapter 01-22)
-* 10.6 Locate the centroid of a standard shape from the Handbook tables
-
+- **10.6** Locate the centroid of a standard shape from the Handbook tables
 ---
 
 ## Notation Used Here
@@ -425,6 +423,17 @@ section doesn't explicitly convert. Carry units and the conversions will
 tell you what's needed.
 
 ---
+
+
+### Source Boundary
+
+**FE-Handbook-supported.** The equations, definitions, tables, and relations explicitly identified above are supported by the cited FE Reference Handbook 10.6 pages.
+
+**Externally supported.** Material in this chapter that extends beyond the Handbook is supported by the following external educational/standards references:
+
+- OpenStax, Calculus Volume 2, §2.6, “Moments and Centers of Mass” — centroid/moment formulas and the Theorem of Pappus for volume.
+
+**Guide synthesis.** Exam-navigation advice, memory cues, sequencing, worked-example framing, and study heuristics are guide-developed synthesis unless separately attributed.
 
 ## Where This Goes Wrong
 

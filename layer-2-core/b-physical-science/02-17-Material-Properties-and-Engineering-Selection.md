@@ -209,6 +209,13 @@ Before calculation, identify the governing state, composition, reaction, exposur
 
 ## As the Handbook States It
 
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — Engineering LibreTexts, Materials Science (https://eng.libretexts.org/Bookshelves/Materials_Science) supports physical/chemical/material properties and constraint-and-objective approaches to engineering material selection.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
+
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Materials Science/Structure of Matter pp. 118–128**.
 
 **Source boundary:** The Handbook directly supplies electrical properties, strain relations, mechanical-property and failure formulas/tables, concrete behavior, polymer thermal behavior, and thermal-property definitions. Selection methodology is guide-developed.
@@ -353,20 +360,17 @@ B) A universal rule independent of conditions
 C) A unit-conversion constant only
 D) A substitute for verified data
 
-26. Which answer best describes **stress-strain behavior**?
-A) A conditional engineering concept used under stated assumptions
-B) A universal rule independent of conditions
-C) A unit-conversion constant only
-D) A substitute for verified data
+26. A new problem requires **stress-strain behavior**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which answer best describes **mechanical properties**?
-A) A conditional engineering concept used under stated assumptions
-B) A universal rule independent of conditions
-C) A unit-conversion constant only
-D) A substitute for verified data
-
-
----
+27. After applying **mechanical properties**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -384,28 +388,24 @@ D) A substitute for verified data
 
 7. **materials selection** is the central concept of §17.7; apply the definition, assumptions, and engineering consequence developed in that section.
 
-8. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+8. For §17.1, **Stress, Strain, and the Stress-Strain Curve**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-9. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+9. For §17.2, **Ductility, Toughness, Hardness, and Impact**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-10. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+10. For §17.3, **Fracture, Fatigue, and Creep**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-11. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+11. For §17.4, **Electrical Properties**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-12. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+12. For §17.5, **Thermal Properties**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-13. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+13. For §17.6, **Physical and Chemical Properties**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-14. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+14. For §17.7, **Materials Selection as a Constraint-and-Objective Problem**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-15. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-16. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-17. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-18. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
+15. Locate the Handbook definitions and tables for strength, stiffness, toughness, hardness, ductility, fatigue, creep, thermal properties, and any material-selection indices used.
+16. Check property units and orders of magnitude, distinguish stress from force and modulus from strength, and verify that a selected material satisfies every stated constraint.
+17. Use certified material data, design allowables, temperature-dependent properties, or test results whenever supplied instead of relying on typical values for a material family.
+18. The staged process of screening constraints first, ranking objectives second, and then considering secondary factors is guide-developed selection strategy.
 19. **A.** The chapter applies **stress-strain behavior** only under its stated physical/model assumptions.
 
 20. **A.** The chapter applies **mechanical properties** only under its stated physical/model assumptions.
@@ -420,12 +420,9 @@ D) A substitute for verified data
 
 25. **A.** The chapter applies **materials selection** only under its stated physical/model assumptions.
 
-26. **A.** The chapter applies **stress-strain behavior** only under its stated physical/model assumptions.
+26. **A.** For **stress-strain behavior** in *Material Properties and Engineering Selection*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter applies **mechanical properties** only under its stated physical/model assumptions.
-
-
----
+27. **A.** For **mechanical properties** in *Material Properties and Engineering Selection*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -468,9 +465,9 @@ D) A substitute for verified data
 
 7. 7. σ=Eε=200 GPa×0.001=200 MPa.
 
-8. 8. Hardness.
+8. Hardness. Hardness measures resistance to localized plastic deformation, commonly assessed by indentation or related standardized tests.
 
-9. 9. Fatigue.
+9. Fatigue. Fatigue is progressive damage and possible fracture caused by repeated or fluctuating cyclic loading.
 
 10. 10. Selection depends on specific stiffness/strength, durability, temperature, manufacturing, cost, and failure requirements, not density alone.
 

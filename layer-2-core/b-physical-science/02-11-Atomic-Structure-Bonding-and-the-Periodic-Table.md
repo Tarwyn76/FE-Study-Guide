@@ -179,6 +179,13 @@ Before calculation, identify the governing state, composition, reaction, exposur
 
 ## As the Handbook States It
 
+### Source Boundary
+
+- **FE-Handbook-supported** — For concepts marked `in_handbook` in the ledger, the cited FE Reference Handbook section/page supplies the formula, table, definition, or exam-scope anchor used by this chapter.
+- **Externally supported** — OpenStax Chemistry 2e (https://openstax.org/details/books/chemistry-2e) supports atomic structure, valence electrons, ions, periodic trends, chemical bonding, polarity, and links between bonding and bulk properties.
+- **Guide synthesis** — Worked-example sequencing, engineering interpretation, exam strategy, comparison heuristics, checklists, and explanatory derivations beyond the cited source statements are instructional synthesis developed for this guide.
+
+
 Checked against the supplied *FE Reference Handbook 10.6*, eighth printing, April 2026. Principal source anchor: **Chemistry and Biology pp. 86, 89; Materials Science/Structure of Matter p. 117**.
 
 **Source boundary:** The Handbook directly supplies atomic number, Avogadro's number, a periodic table, and the three primary bond classes. Electron-configuration detail and periodic-trend interpretation are guide-developed background expected for FE chemistry/materials questions.
@@ -317,20 +324,17 @@ B) A universal rule independent of conditions
 C) A unit-conversion constant only
 D) A substitute for verified data
 
-26. Which answer best describes **atomic number**?
-A) A conditional engineering concept used under stated assumptions
-B) A universal rule independent of conditions
-C) A unit-conversion constant only
-D) A substitute for verified data
+26. A new problem requires **atomic number**. Which step should come before numerical substitution?
+A) Confirm the governing model, stated assumptions, and reference quantities
+B) Ignore the model and use any dimensionally similar equation
+C) Convert every quantity to a percentage before analysis
+D) Skip the physical or economic checks if a calculator gives a result
 
-27. Which answer best describes **valence electrons**?
-A) A conditional engineering concept used under stated assumptions
-B) A universal rule independent of conditions
-C) A unit-conversion constant only
-D) A substitute for verified data
-
-
----
+27. After applying **valence electrons**, which validation step best supports accepting the result?
+A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
+B) Accept the result solely because the arithmetic converged
+C) Replace the governing relation with a nearby formula
+D) Ignore the stated reference basis
 
 ## Answer Key with Explanations
 
@@ -348,28 +352,24 @@ D) A substitute for verified data
 
 7. **bond-property link** is the central concept of §11.7; apply the definition, assumptions, and engineering consequence developed in that section.
 
-8. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+8. For §11.1, **Atoms, Atomic Number, and Isotopes**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-9. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+9. For §11.2, **Electrons, Valence, and Ion Formation**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-10. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+10. For §11.3, **Reading the Periodic Table**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-11. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+11. For §11.4, **Periodic Trends for Engineering Reasoning**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-12. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+12. For §11.5, **Primary Bonds — Ionic, Covalent, and Metallic**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-13. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+13. For §11.6, **Secondary Interactions and Molecular Polarity**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-14. The wrong model or data may be applied. The section requires checking the governing conditions before calculation or qualitative prediction.
+14. For §11.7, **From Bonding to Engineering Properties**, use that section’s governing definitions, assumptions, and applicability limits before calculating or predicting behavior; substituting a model from another section can change the conclusion.
 
-15. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-16. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-17. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
-18. Use the Handbook source identified in the chapter, then verify dimensions/physical bounds; supplied data controls over remembered trends. Guide-developed interpretations are explicitly identified in the source-boundary note.
-
+15. Locate the Handbook definitions and tabulated atomic information used for atomic number, atomic mass, electron configuration, periodic trends, and the principal bonding types.
+16. Check that atomic counts and charges are conserved, electron configurations do not exceed orbital capacities, and any predicted trend is consistent with periodic-table position.
+17. Use measured or tabulated atomic radii, electronegativities, ionization energies, or material data whenever supplied; those values control over a qualitative periodic-trend expectation.
+18. The chapter's use of bonding and periodic trends as a screening tool for likely engineering behavior is an instructional interpretation, not a verbatim Handbook decision rule.
 19. **A.** The chapter applies **atomic number** only under its stated physical/model assumptions.
 
 20. **A.** The chapter applies **valence electrons** only under its stated physical/model assumptions.
@@ -384,12 +384,9 @@ D) A substitute for verified data
 
 25. **A.** The chapter applies **bond-property link** only under its stated physical/model assumptions.
 
-26. **A.** The chapter applies **atomic number** only under its stated physical/model assumptions.
+26. **A.** For **atomic number** in *Atomic Structure, Bonding, and the Periodic Table*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
 
-27. **A.** The chapter applies **valence electrons** only under its stated physical/model assumptions.
-
-
----
+27. **A.** For **valence electrons** in *Atomic Structure, Bonding, and the Periodic Table*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
 
 ## Practice Problems
 
@@ -424,7 +421,7 @@ D) A substitute for verified data
 
 3. 3. M = 2(1.008)+15.999 = 18.015 g/mol.
 
-4. 4. MgO.
+4. MgO. Magnesium forms $\mathrm{Mg^{2+}}$ and oxygen forms $\mathrm{O^{2-}}$, so charge neutrality gives a one-to-one formula.
 
 5. 5. NaCl: ionic; diamond: covalent; copper: metallic.
 
