@@ -1,0 +1,169 @@
+schema_version: 1
+batch: 01-06-to-01-10
+verified_examples: 20
+verify_checks: 83
+curated_exclusions: 5
+records:
+- chapter: 01-06
+  example: 6 — Evaluating and Graphing a Piecewise Function
+  checks: 5
+  verify_ids:
+  - WE-01-06-006-fneg2
+  - WE-01-06-006-f1
+  - WE-01-06-006-f3
+  - WE-01-06-006-left-limit
+  - WE-01-06-006-right-value
+- chapter: 01-07
+  example: 3 — The Quadratic Formula and Discriminant
+  checks: 8
+  verify_ids:
+  - WE-01-07-003-disc-a
+  - WE-01-07-003-root-a1
+  - WE-01-07-003-root-a2
+  - WE-01-07-003-disc-b
+  - WE-01-07-003-root-b
+  - WE-01-07-003-disc-c
+  - WE-01-07-003-root-c-real
+  - WE-01-07-003-root-c-imag-mag
+- chapter: 01-07
+  example: 4 — Using Vieta's
+  checks: 2
+  verify_ids:
+  - WE-01-07-004-r2
+  - WE-01-07-004-k
+- chapter: 01-07
+  example: 5 — The Full Search
+  checks: 5
+  verify_ids:
+  - WE-01-07-005-root1
+  - WE-01-07-005-root2
+  - WE-01-07-005-root3
+  - WE-01-07-005-sum
+  - WE-01-07-005-product
+- chapter: 01-07
+  example: 7 — Engineering Quadratic
+  checks: 5
+  verify_ids:
+  - WE-01-07-007-discriminant
+  - WE-01-07-007-negative-time
+  - WE-01-07-007-impact-time
+  - WE-01-07-007-tmax
+  - WE-01-07-007-hmax
+- chapter: 01-07
+  example: 8 — Building a Polynomial
+  checks: 5
+  verify_ids:
+  - WE-01-07-008-complex-constant
+  - WE-01-07-008-c3
+  - WE-01-07-008-c2
+  - WE-01-07-008-c1
+  - WE-01-07-008-c0
+- chapter: 01-08
+  example: 1 — Substitution
+  checks: 2
+  verify_ids:
+  - WE-01-08-001-x
+  - WE-01-08-001-y
+- chapter: 01-08
+  example: 2 — Elimination in an Equilibrium Problem
+  checks: 2
+  verify_ids:
+  - WE-01-08-002-f2
+  - WE-01-08-002-f1
+- chapter: 01-08
+  example: 3 — Full 3×3 System
+  checks: 3
+  verify_ids:
+  - WE-01-08-003-z
+  - WE-01-08-003-y
+  - WE-01-08-003-x
+- chapter: 01-08
+  example: 6 — Cramer's Rule
+  checks: 5
+  verify_ids:
+  - WE-01-08-006-D
+  - WE-01-08-006-Dx
+  - WE-01-08-006-Dy
+  - WE-01-08-006-x
+  - WE-01-08-006-y
+- chapter: 01-08
+  example: 7 — Mixture Problem
+  checks: 3
+  verify_ids:
+  - WE-01-08-007-v2
+  - WE-01-08-007-v1
+  - WE-01-08-007-acid
+- chapter: 01-08
+  example: 8 — Kirchhoff's Laws
+  checks: 5
+  verify_ids:
+  - WE-01-08-008-i1
+  - WE-01-08-008-i2
+  - WE-01-08-008-i3
+  - WE-01-08-008-loop1
+  - WE-01-08-008-loop2
+- chapter: 01-09
+  example: 1 — Line Equations
+  checks: 6
+  verify_ids:
+  - WE-01-09-001-slope-a
+  - WE-01-09-001-intercept-a
+  - WE-01-09-001-perp-slope
+  - WE-01-09-001-intercept-b
+  - WE-01-09-001-distance
+  - WE-01-09-001-angle
+- chapter: 01-09
+  example: 2 — Circle Identification
+  checks: 3
+  verify_ids:
+  - WE-01-09-002-radius-a-sq
+  - WE-01-09-002-radius-b
+  - WE-01-09-002-check-point
+- chapter: 01-09
+  example: 3 — Circle Through Three Points
+  checks: 5
+  verify_ids:
+  - WE-01-09-003-D
+  - WE-01-09-003-E
+  - WE-01-09-003-center-x
+  - WE-01-09-003-center-y
+  - WE-01-09-003-radius
+- chapter: 01-09
+  example: 5 — Elliptical Cross-Section
+  checks: 3
+  verify_ids:
+  - WE-01-09-005-c
+  - WE-01-09-005-e
+  - WE-01-09-005-area
+- chapter: 01-09
+  example: 6 — Cooling Tower Profile
+  checks: 5
+  verify_ids:
+  - WE-01-09-006-b2
+  - WE-01-09-006-b
+  - WE-01-09-006-diameter40
+  - WE-01-09-006-c
+  - WE-01-09-006-e
+- chapter: 01-10
+  example: 1 — Hollow Cylinder Volume
+  checks: 4
+  verify_ids:
+  - WE-01-10-001-id
+  - WE-01-10-001-area
+  - WE-01-10-001-volume-in3
+  - WE-01-10-001-volume-ft3
+- chapter: 01-10
+  example: 2 — Composite Centroid
+  checks: 4
+  verify_ids:
+  - WE-01-10-002-area-flange
+  - WE-01-10-002-area-web
+  - WE-01-10-002-ybar
+  - WE-01-10-002-xbar
+- chapter: 01-10
+  example: 3 — Composite Area With a Hole
+  checks: 3
+  verify_ids:
+  - WE-01-10-003-area
+  - WE-01-10-003-xbar
+  - WE-01-10-003-ybar

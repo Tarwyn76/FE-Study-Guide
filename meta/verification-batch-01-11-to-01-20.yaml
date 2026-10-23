@@ -1,0 +1,505 @@
+schema_version: 1
+batch: 01-11-to-01-20
+candidate_examples: 79
+verified_examples: 72
+verify_checks: 210
+curated_exclusions: 7
+records:
+- chapter: 01-11
+  example: 1 — Evaluating Trig Functions in Any Quadrant
+  checks: 3
+  verify_ids:
+  - WE-01-11-001-cos225
+  - WE-01-11-001-tan300
+  - WE-01-11-001-sin-neg60
+- chapter: 01-11
+  example: 2 — Right Triangle, Force Decomposition
+  checks: 3
+  verify_ids:
+  - WE-01-11-002-fx
+  - WE-01-11-002-fy
+  - WE-01-11-002-recombine
+- chapter: 01-11
+  example: 3 — Law of Sines
+  checks: 1
+  verify_ids:
+  - WE-01-11-003-b
+- chapter: 01-11
+  example: 4 — Law of Cosines
+  checks: 3
+  verify_ids:
+  - WE-01-11-004-resultant
+  - WE-01-11-004-rx
+  - WE-01-11-004-ry
+- chapter: 01-11
+  example: 5 — Using Identities to Find an Exact Value
+  checks: 1
+  verify_ids:
+  - WE-01-11-005-sin75
+- chapter: 01-11
+  example: 6 — Finding an Angle From Components
+  checks: 2
+  verify_ids:
+  - WE-01-11-006-angle
+  - WE-01-11-006-magnitude
+- chapter: 01-11
+  example: 7 — Angle Between Two Lines
+  checks: 1
+  verify_ids:
+  - WE-01-11-007-angle
+- chapter: 01-11
+  example: 8 — Why the Absolute Value Matters
+  checks: 2
+  verify_ids:
+  - WE-01-11-008-angle
+  - WE-01-11-008-vertical-case
+- chapter: 01-11
+  example: 9 — Resultant of Three Forces
+  checks: 4
+  verify_ids:
+  - WE-01-11-009-rx
+  - WE-01-11-009-ry
+  - WE-01-11-009-r
+  - WE-01-11-009-angle
+- chapter: 01-12
+  example: 1 — Rectangular Arithmetic
+  checks: 6
+  verify_ids:
+  - WE-01-12-001-sum-real
+  - WE-01-12-001-sum-imag
+  - WE-01-12-001-prod-real
+  - WE-01-12-001-prod-imag
+  - WE-01-12-001-quot-real
+  - WE-01-12-001-quot-imag
+- chapter: 01-12
+  example: 2 — Converting Between Forms
+  checks: 4
+  verify_ids:
+  - WE-01-12-002-modulus
+  - WE-01-12-002-angle
+  - WE-01-12-002-real
+  - WE-01-12-002-imag
+- chapter: 01-12
+  example: 4 — Finding Cube Roots
+  checks: 7
+  verify_ids:
+  - WE-01-12-004-modulus
+  - WE-01-12-004-z0-real
+  - WE-01-12-004-z0-imag
+  - WE-01-12-004-z1-real
+  - WE-01-12-004-z1-imag
+  - WE-01-12-004-z2-real
+  - WE-01-12-004-z2-imag
+- chapter: 01-13
+  example: 1 — Magnitude, Unit Vector, Direction Cosines
+  checks: 5
+  verify_ids:
+  - WE-01-13-001-mag
+  - WE-01-13-001-unit-x
+  - WE-01-13-001-unit-y
+  - WE-01-13-001-unit-z
+  - WE-01-13-001-cos-sum
+- chapter: 01-13
+  example: 2 — Dot Product and Angle
+  checks: 3
+  verify_ids:
+  - WE-01-13-002-dot
+  - WE-01-13-002-angle
+  - WE-01-13-002-projection
+- chapter: 01-13
+  example: 3 — Work Done by a Force
+  checks: 1
+  verify_ids:
+  - WE-01-13-003-work
+- chapter: 01-13
+  example: 4 — Moment of a Force
+  checks: 4
+  verify_ids:
+  - WE-01-13-004-mx
+  - WE-01-13-004-my
+  - WE-01-13-004-mz
+  - WE-01-13-004-mag
+- chapter: 01-14
+  example: 1 — Matrix Multiplication
+  checks: 4
+  verify_ids:
+  - WE-01-14-001-a11
+  - WE-01-14-001-a12
+  - WE-01-14-001-a21
+  - WE-01-14-001-a22
+- chapter: 01-14
+  example: 2 — 3×3 Determinant, Two Ways
+  checks: 1
+  verify_ids:
+  - WE-01-14-002-det
+- chapter: 01-14
+  example: 3 — Detecting a Singular Matrix
+  checks: 1
+  verify_ids:
+  - WE-01-14-003-det
+- chapter: 01-14
+  example: 4 — 2×2 Inverse with Verification
+  checks: 5
+  verify_ids:
+  - WE-01-14-004-det
+  - WE-01-14-004-inv11
+  - WE-01-14-004-inv12
+  - WE-01-14-004-inv21
+  - WE-01-14-004-inv22
+- chapter: 01-14
+  example: 5 — Solve by Matrix Inversion
+  checks: 2
+  verify_ids:
+  - WE-01-14-005-x
+  - WE-01-14-005-y
+- chapter: 01-14
+  example: 6 — Eigenvalues and Eigenvectors
+  checks: 6
+  verify_ids:
+  - WE-01-14-006-lambda1
+  - WE-01-14-006-lambda2
+  - WE-01-14-006-v1-row1
+  - WE-01-14-006-v1-row2
+  - WE-01-14-006-v2-row1
+  - WE-01-14-006-v2-row2
+- chapter: 01-15
+  example: 1 — Evaluating and Reindexing a Sum
+  checks: 1
+  verify_ids:
+  - WE-01-15-001-sum
+- chapter: 01-15
+  example: 2 — Construction Schedule
+  checks: 5
+  verify_ids:
+  - WE-01-15-002-day15
+  - WE-01-15-002-s15
+  - WE-01-15-002-root
+  - WE-01-15-002-s22
+  - WE-01-15-002-s23
+- chapter: 01-15
+  example: 3 — Cascaded Signal Stages
+  checks: 3
+  verify_ids:
+  - WE-01-15-003-out
+  - WE-01-15-003-diss
+  - WE-01-15-003-series
+- chapter: 01-15
+  example: 4 — Total Distance of a Bouncing Ball
+  checks: 1
+  verify_ids:
+  - WE-01-15-004-distance
+- chapter: 01-15
+  example: 6 — Polynomial Summand
+  checks: 3
+  verify_ids:
+  - WE-01-15-006-sumsq
+  - WE-01-15-006-sumk
+  - WE-01-15-006-total
+- chapter: 01-16
+  example: 1 — One-Sided Limits of a Piecewise Function
+  checks: 2
+  verify_ids:
+  - WE-01-16-001-left
+  - WE-01-16-001-right
+- chapter: 01-16
+  example: 2 — Factoring
+  checks: 1
+  verify_ids:
+  - WE-01-16-002-limit
+- chapter: 01-16
+  example: 3 — Rationalizing
+  checks: 1
+  verify_ids:
+  - WE-01-16-003-limit
+- chapter: 01-16
+  example: 4 — Combining Fractions
+  checks: 1
+  verify_ids:
+  - WE-01-16-004-limit
+- chapter: 01-16
+  example: 5 — All Three Degree Cases
+  checks: 2
+  verify_ids:
+  - WE-01-16-005-a-approx
+  - WE-01-16-005-b
+- chapter: 01-16
+  example: 6 — Terminal Behaviour of a Saturating Response
+  checks: 3
+  verify_ids:
+  - WE-01-16-006-terminal
+  - WE-01-16-006-five-tau
+  - WE-01-16-006-percent
+- chapter: 01-16
+  example: 7 — Variations on the Sine Limit
+  checks: 2
+  verify_ids:
+  - WE-01-16-007-a
+  - WE-01-16-007-b-small-angle
+- chapter: 01-16
+  example: 8 — Making a Piecewise Function Continuous
+  checks: 2
+  verify_ids:
+  - WE-01-16-008-value
+  - WE-01-16-008-k
+- chapter: 01-16
+  example: 9 — Bracketing the Roots of a Cubic
+  checks: 5
+  verify_ids:
+  - WE-01-16-009-fneg3
+  - WE-01-16-009-fneg2
+  - WE-01-16-009-f0
+  - WE-01-16-009-f1
+  - WE-01-16-009-f2
+- chapter: 01-17
+  example: 1 — Derivative from the Definition
+  checks: 1
+  verify_ids:
+  - WE-01-17-001-fprime2
+- chapter: 01-17
+  example: 10 — Implicit Differentiation
+  checks: 3
+  verify_ids:
+  - WE-01-17-010-curve-check
+  - WE-01-17-010-rhs-check
+  - WE-01-17-010-slope
+- chapter: 01-17
+  example: 11 — Pressure-Drop Sensitivity
+  checks: 5
+  verify_ids:
+  - WE-01-17-011-dp
+  - WE-01-17-011-deriv
+  - WE-01-17-011-linear
+  - WE-01-17-011-exact125
+  - WE-01-17-011-exact-increase
+- chapter: 01-17
+  example: 2 — Tangent and Normal Lines
+  checks: 5
+  verify_ids:
+  - WE-01-17-002-point-y
+  - WE-01-17-002-tangent-slope
+  - WE-01-17-002-tangent-intercept
+  - WE-01-17-002-normal-slope
+  - WE-01-17-002-normal-intercept
+- chapter: 01-17
+  example: 3 — Rate of Change with Units
+  checks: 3
+  verify_ids:
+  - WE-01-17-003-rate0
+  - WE-01-17-003-rate6
+  - WE-01-17-003-rate5tau
+- chapter: 01-17
+  example: 4 — Basic Rules Combined
+  checks: 1
+  verify_ids:
+  - WE-01-17-004-at1
+- chapter: 01-17
+  example: 6 — Quotient Rule
+  checks: 1
+  verify_ids:
+  - WE-01-17-006-at0
+- chapter: 01-17
+  example: 9 — Kinematics
+  checks: 8
+  verify_ids:
+  - WE-01-17-009-rest1
+  - WE-01-17-009-rest2
+  - WE-01-17-009-azero
+  - WE-01-17-009-v2
+  - WE-01-17-009-s1
+  - WE-01-17-009-s3
+  - WE-01-17-009-v0
+  - WE-01-17-009-v4
+- chapter: 01-18
+  example: 1 — Verifying the MVT
+  checks: 2
+  verify_ids:
+  - WE-01-18-001-average
+  - WE-01-18-001-c
+- chapter: 01-18
+  example: 10 — Isothermal Compression
+  checks: 3
+  verify_ids:
+  - WE-01-18-010-dpdt
+  - WE-01-18-010-relative-p
+  - WE-01-18-010-relative-v
+- chapter: 01-18
+  example: 12 — Linear Approximation
+  checks: 2
+  verify_ids:
+  - WE-01-18-012-linear
+  - WE-01-18-012-exact
+- chapter: 01-18
+  example: 13 — Error Propagation in a Sphere
+  checks: 5
+  verify_ids:
+  - WE-01-18-013-volume
+  - WE-01-18-013-sensitivity
+  - WE-01-18-013-dv
+  - WE-01-18-013-relative
+  - WE-01-18-013-percent
+- chapter: 01-18
+  example: 2 — First Derivative Test
+  checks: 4
+  verify_ids:
+  - WE-01-18-002-critical1
+  - WE-01-18-002-critical2
+  - WE-01-18-002-fneg1
+  - WE-01-18-002-f3
+- chapter: 01-18
+  example: 3 — Concavity and the Second Derivative Test
+  checks: 4
+  verify_ids:
+  - WE-01-18-003-infl-x
+  - WE-01-18-003-infl-y
+  - WE-01-18-003-second-neg1
+  - WE-01-18-003-second3
+- chapter: 01-18
+  example: 5 — Closed-Interval Method
+  checks: 5
+  verify_ids:
+  - WE-01-18-005-fneg2
+  - WE-01-18-005-f4
+  - WE-01-18-005-fneg1
+  - WE-01-18-005-f3
+  - WE-01-18-005-f6
+- chapter: 01-18
+  example: 7 — Minimum Material for an Open Tank
+  checks: 4
+  verify_ids:
+  - WE-01-18-007-x
+  - WE-01-18-007-h
+  - WE-01-18-007-area
+  - WE-01-18-007-second
+- chapter: 01-18
+  example: 8 — Maximum Power Transfer
+  checks: 3
+  verify_ids:
+  - WE-01-18-008-load
+  - WE-01-18-008-pmax
+  - WE-01-18-008-pmax-check
+- chapter: 01-18
+  example: 9 — Draining Conical Tank
+  checks: 3
+  verify_ids:
+  - WE-01-18-009-radius
+  - WE-01-18-009-area
+  - WE-01-18-009-dhdt
+- chapter: 01-19
+  example: 10 — Volume Delivered from a Flow Rate
+  checks: 2
+  verify_ids:
+  - WE-01-19-010-rise
+  - WE-01-19-010-average
+- chapter: 01-19
+  example: 3 — A Definite Integral from the Definition
+  checks: 1
+  verify_ids:
+  - WE-01-19-003-integral
+- chapter: 01-19
+  example: 4 — The Same Integral, Instantly
+  checks: 1
+  verify_ids:
+  - WE-01-19-004-integral
+- chapter: 01-19
+  example: 5 — Definite Integrals
+  checks: 4
+  verify_ids:
+  - WE-01-19-005-a
+  - WE-01-19-005-b
+  - WE-01-19-005-c
+  - WE-01-19-005-d
+- chapter: 01-19
+  example: 8 — Definite Integral by Substitution
+  checks: 1
+  verify_ids:
+  - WE-01-19-008-integral
+- chapter: 01-19
+  example: 9 — Average Value, Two Interpretations
+  checks: 1
+  verify_ids:
+  - WE-01-19-009-average
+- chapter: 01-20
+  example: 1 — Area Between a Line and a Parabola
+  checks: 3
+  verify_ids:
+  - WE-01-20-001-x1
+  - WE-01-20-001-x2
+  - WE-01-20-001-area
+- chapter: 01-20
+  example: 11 — Numerical Second Moments
+  checks: 4
+  verify_ids:
+  - WE-01-20-011-centroidal
+  - WE-01-20-011-base
+  - WE-01-20-011-depth400
+  - WE-01-20-011-width200
+- chapter: 01-20
+  example: 13 — Pumping a Cylindrical Tank
+  checks: 5
+  verify_ids:
+  - WE-01-20-013-area
+  - WE-01-20-013-gammaA
+  - WE-01-20-013-work
+  - WE-01-20-013-volume
+  - WE-01-20-013-weight
+- chapter: 01-20
+  example: 14 — RMS of a Sinusoid
+  checks: 2
+  verify_ids:
+  - WE-01-20-014-rms
+  - WE-01-20-014-average
+- chapter: 01-20
+  example: 2 — Curves That Cross
+  checks: 3
+  verify_ids:
+  - WE-01-20-002-a1
+  - WE-01-20-002-a2
+  - WE-01-20-002-total
+- chapter: 01-20
+  example: 3 — Choosing the Slice Direction
+  checks: 1
+  verify_ids:
+  - WE-01-20-003-area
+- chapter: 01-20
+  example: 4 — Displacement Versus Distance
+  checks: 3
+  verify_ids:
+  - WE-01-20-004-displacement
+  - WE-01-20-004-distance
+  - WE-01-20-004-average-speed
+- chapter: 01-20
+  example: 5 — Disc and Washer
+  checks: 4
+  verify_ids:
+  - WE-01-20-005-disc
+  - WE-01-20-005-washer
+  - WE-01-20-005-outer
+  - WE-01-20-005-inner
+- chapter: 01-20
+  example: 6 — Shells, With a Washer Cross-Check
+  checks: 1
+  verify_ids:
+  - WE-01-20-006-volume
+- chapter: 01-20
+  example: 7 — Arc Length
+  checks: 3
+  verify_ids:
+  - WE-01-20-007-length
+  - WE-01-20-007-y3
+  - WE-01-20-007-chord
+- chapter: 01-20
+  example: 8 — Surface Area, Verified Against a Known Formula
+  checks: 3
+  verify_ids:
+  - WE-01-20-008-factor
+  - WE-01-20-008-area
+  - WE-01-20-008-slant
+- chapter: 01-20
+  example: 9 — Centroid of a Parabolic Spandrel
+  checks: 5
+  verify_ids:
+  - WE-01-20-009-area
+  - WE-01-20-009-qy
+  - WE-01-20-009-xbar
+  - WE-01-20-009-qx
+  - WE-01-20-009-ybar

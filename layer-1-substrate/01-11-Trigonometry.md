@@ -66,21 +66,23 @@ lines follows in one step.
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-- **11.1** Convert between degrees and radians
-- **11.2** Define sine, cosine, and tangent from the unit circle, and evaluate
+
+* 11.1 Convert between degrees and radians
+* 11.2 Define sine, cosine, and tangent from the unit circle, and evaluate
   all six trig functions for standard angles without a calculator
-- **11.3** Recognize and apply the signs of trig functions in all four
+* 11.3 Recognize and apply the signs of trig functions in all four
   quadrants using CAST and reference angles
-- **11.4** State, derive, and apply the Pythagorean identities
-- **11.5** Solve right triangles completely
-- **11.6** Apply the law of sines, including recognizing the ambiguous case
-- **11.7** Apply the law of cosines
-- **11.8** State the sum, difference, double-angle, and power-reduction
+* 11.4 State, derive, and apply the Pythagorean identities
+* 11.5 Solve right triangles completely
+* 11.6 Apply the law of sines, including recognizing the ambiguous case
+* 11.7 Apply the law of cosines
+* 11.8 State the sum, difference, double-angle, and power-reduction
   formulas and use them to find exact values
-- **11.9** Apply inverse trig functions with the correct quadrant correction
-- **11.10** Find the angle of inclination of a line and the acute angle between
+* 11.9 Apply inverse trig functions with the correct quadrant correction
+* 11.10 Find the angle of inclination of a line and the acute angle between
   two lines from their slopes
-- **11.11** Apply trigonometry to force decomposition and vector addition
+* 11.11 Apply trigonometry to force decomposition and vector addition
+
 Objective numbers match section numbers throughout.
 
 ---
@@ -307,6 +309,11 @@ $$\sin(-60°) = -\frac{\sqrt{3}}{2}$$
 **Check using symmetry.** Sine is an odd function: $\sin(-\theta) =
 -\sin(\theta)$. So $\sin(-60°) = -\sin(60°) = -\sqrt{3}/2$. ✓
 
+
+<!-- VERIFY id="WE-01-11-001-cos225" expr="cos(radians(225))" expected="-0.7071067811865476" units="" atol="1e-12" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-11-001-tan300" expr="tan(radians(300))" expected="-1.7320508075688772" units="" atol="1e-12" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-11-001-sin-neg60" expr="sin(radians(-60))" expected="-0.8660254037844386" units="" atol="1e-12" rtol="1e-09" -->
+
 ---
 
 ## 11.4 The Pythagorean Identities
@@ -389,6 +396,11 @@ $$\sqrt{409.6^2 + 286.8^2} = \sqrt{167{,}772 + 82{,}254} = \sqrt{250{,}026} = 50
 Both checks recover the inputs, which is what a check is for: it confirms
 you resolved along the right axes, not just that you multiplied correctly.
 
+
+<!-- VERIFY id="WE-01-11-002-fx" expr="500*cos(radians(35))" expected="409.6" units="N" atol="0.05" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-11-002-fy" expr="500*sin(radians(35))" expected="286.8" units="N" atol="0.05" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-11-002-recombine" expr="sqrt((500*cos(radians(35)))**2+(500*sin(radians(35)))**2)" expected="500.0" units="N" atol="0.01" rtol="1e-09" -->
+
 ---
 
 ## 11.6 The Law of Sines
@@ -448,11 +460,14 @@ Apply the law of sines:
 
 $$\frac{b}{\sin B} = \frac{a}{\sin A} \implies b = a \cdot \frac{\sin B}{\sin A} = 12 \cdot \frac{\sin 70°}{\sin 45°}$$
 
-$$b = 12 \cdot \frac{0.9397}{0.7071} = 12 \times 1.329 = \boxed{15.94 \text{ cm}}$$
+$$b = 12 \cdot \frac{0.9397}{0.7071} = 12 \times 1.329 = \boxed{15.95 \text{ cm}}$$
 
 **Check.** The larger side sits opposite the larger angle. Angle $B = 70°$
 exceeds angle $A = 45°$, so side $b$ must exceed side $a$. It does:
 $15.94 > 12$ ✓
+
+
+<!-- VERIFY id="WE-01-11-003-b" expr="12*sin(radians(70))/sin(radians(45))" expected="15.95" units="cm" atol="0.005" rtol="1e-09" -->
 
 ---
 
@@ -513,6 +528,11 @@ $8 - 6 = 2$ kN. The resultant falls monotonically as the angle opens, so a
 > needing to spot the sign mistake. Trust the bracket over the algebra.
 >
 > ---
+
+
+<!-- VERIFY id="WE-01-11-004-resultant" expr="sqrt(8**2+6**2+2*8*6*cos(radians(110)))" expected="8.2" units="kN" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-11-004-rx" expr="8+6*cos(radians(110))" expected="5.95" units="kN" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-11-004-ry" expr="6*sin(radians(110))" expected="5.64" units="kN" atol="0.005" rtol="1e-09" -->
 
 ---
 
@@ -586,6 +606,9 @@ Sum $\approx 3.863$. Divided by 4: $\approx 0.9659$.
 
 Calculator: $\sin(75°) = 0.9659$ ✓
 
+
+<!-- VERIFY id="WE-01-11-005-sin75" expr="sin(radians(75))" expected="0.9659" units="" atol="5e-05" rtol="1e-09" -->
+
 ---
 
 ## 11.9 Inverse Trig Functions
@@ -636,9 +659,14 @@ $$\theta = -38.7° + 180° = \boxed{141.3°}$$
 
 **Check.** In Q II, the angle should be between 90° and 180°. ✓
 
-At 141.3°: $\cos(141.3°) = -0.780$ and $F \cdot (-0.780) = F_x$, so
-$F = 350/0.780 = 449$ N. Also $F_y = 449 \sin(141.3°) = 449(0.625) = 280.6$
-N ✓
+Using the components directly, the magnitude is
+$F = \sqrt{(-350)^2 + 280^2} = 448.2$ N. At 141.3°, this gives
+$F_x \approx 448.2\cos(141.3°) = -350.0$ N and
+$F_y \approx 448.2\sin(141.3°) = 280.0$ N ✓
+
+
+<!-- VERIFY id="WE-01-11-006-angle" expr="180+degrees(atan(280/(-350)))" expected="141.3" units="deg" atol="0.05" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-11-006-magnitude" expr="sqrt((-350)**2+280**2)" expected="448.2" units="N" atol="0.05" rtol="1e-09" -->
 
 ---
 
@@ -750,6 +778,9 @@ $\left(\tfrac{1}{2} \times -3 = -\tfrac{3}{2} \ne -1\right)$, so the answer
 must fall strictly between 0° and 90°. It does, and it sits near the upper
 end — consistent with one line rising gently while the other falls steeply.
 
+
+
+<!-- VERIFY id="WE-01-11-007-angle" expr="degrees(atan(abs((-3-0.5)/(1+0.5*(-3)))))" expected="81.9" units="deg" atol="0.05" rtol="1e-09" -->
 ### Worked Example 8 — Why the Absolute Value Matters
 
 **Given.** Find the acute angle between $L_1: y = 2x$ and $L_2: y = x + 3$.
@@ -788,6 +819,10 @@ $$\alpha_1 = 90°, \quad \alpha_2 = 45° \implies \theta = 90° - 45° = \boxed{
 
 If the difference comes out obtuse, take its supplement to get the acute
 angle.
+
+
+<!-- VERIFY id="WE-01-11-008-angle" expr="degrees(atan(abs((1-2)/(1+2))))" expected="18.4" units="deg" atol="0.05" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-11-008-vertical-case" expr="90-45" expected="45" units="deg" atol="1e-12" rtol="1e-09" -->
 
 ---
 
@@ -841,6 +876,12 @@ $$\boxed{R = 283.7 \text{ N} \text{ at } 86.0°}$$
 **Check.** $R_y \gg R_x$, so the resultant should be nearly vertical —
 86° is close to 90°. ✓ Also: $283.7 \cos(86°) = 283.7(0.0698) = 19.8 \approx
 R_x = 19.6$ ✓
+
+
+<!-- VERIFY id="WE-01-11-009-rx" expr="400*cos(radians(30))+300*cos(radians(120))+250*cos(radians(225))" expected="19.6" units="N" atol="0.05" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-11-009-ry" expr="400*sin(radians(30))+300*sin(radians(120))+250*sin(radians(225))" expected="283.0" units="N" atol="0.05" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-11-009-r" expr="sqrt((400*cos(radians(30))+300*cos(radians(120))+250*cos(radians(225)))**2+(400*sin(radians(30))+300*sin(radians(120))+250*sin(radians(225)))**2)" expected="283.7" units="N" atol="0.05" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-11-009-angle" expr="degrees(atan((400*sin(radians(30))+300*sin(radians(120))+250*sin(radians(225)))/(400*cos(radians(30))+300*cos(radians(120))+250*cos(radians(225)))))" expected="86.0" units="deg" atol="0.05" rtol="1e-09" -->
 
 ---
 

@@ -66,16 +66,16 @@ in the library looks like when it's been modified.
 
 By the end of this chapter, you will be able to:
 
-* **6.1** Define a function and distinguish it from a general relation
-* **6.2** Determine the domain and range of a function from its equation or
+* 6.1 Define a function and distinguish it from a general relation
+* 6.2 Determine the domain and range of a function from its equation or
   graph
-* **6.3** Evaluate and interpret composite functions
-* **6.4** Find the inverse of a function algebraically and graphically
-* **6.5** Recognize and sketch the eight parent functions
-* **6.6** Apply the six transformation rules to predict graph shapes from
+* 6.3 Evaluate and interpret composite functions
+* 6.4 Find the inverse of a function algebraically and graphically
+* 6.5 Recognize and sketch the eight parent functions
+* 6.6 Apply the six transformation rules to predict graph shapes from
   equations
-* **6.7** Interpret engineering graphs using function concepts
-* **6.8** Distinguish even and odd functions from equations and graphs
+* 6.7 Interpret engineering graphs using function concepts
+* 6.8 Distinguish even and odd functions from equations and graphs
 
 ---
 
@@ -594,6 +594,13 @@ at and above 1, second piece):
 $(x^2 - 1) = 1^2 - 1 = 0$.
 
 Since $1 \ne 0$, the graph breaks.
+
+
+<!-- VERIFY id="WE-01-06-006-fneg2" expr="-(-2)+2" expected="4" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-06-006-f1" expr="1**2-1" expected="0" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-06-006-f3" expr="3**2-1" expected="8" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-06-006-left-limit" expr="-1+2" expected="1" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-06-006-right-value" expr="1**2-1" expected="0" units="" atol="1e-12" rtol="1e-9" -->
 
 ---
 

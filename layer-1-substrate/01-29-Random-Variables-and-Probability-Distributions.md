@@ -292,6 +292,10 @@ identical.
 
 ---
 
+
+<!-- VERIFY id="WE-01-29-002-k" expr="1-(0.18+0.34+0.16)" expected="0.32" units="" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-29-002-cdf" expr="0.18+0.34" expected="0.52" units="" atol="0.005" rtol="1e-09" -->
+
 ## 29.3 Probability Density Functions — Continuous Distributions
 
 For a continuous random variable, probability is represented by **area under a
@@ -407,6 +411,10 @@ This is one reason not to interpret the vertical PDF axis as "probability at x."
 
 ---
 
+
+<!-- VERIFY id="WE-01-29-003-norm" expr="0.10*10" expected="1" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-29-003-interval" expr="0.10*(5-2)" expected="0.30" units="" atol="0.005" rtol="1e-09" -->
+
 ## 29.4 Cumulative Distribution Functions — Probability Up to a Value
 
 The **cumulative distribution function (CDF)** is
@@ -494,6 +502,10 @@ $$0.15+0.05=0.20.$$
 **Check.** The two methods agree.
 
 ---
+
+
+<!-- VERIFY id="WE-01-29-004-cdf" expr="1.00-0.80" expected="0.20" units="" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-29-004-pmf" expr="0.15+0.05" expected="0.20" units="" atol="0.005" rtol="1e-09" -->
 
 ## 29.5 Expected Value, Variance, and Standard Deviation
 
@@ -657,6 +669,12 @@ $$
 
 **Check.** The random variable ranges only from 0 to 3, so a mean of 0.75 and
 standard deviation under 1 are plausible.
+
+
+<!-- VERIFY id="WE-01-29-005-mean" expr="0*0.50+1*0.30+2*0.15+3*0.05" expected="0.75" units="" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-29-005-second" expr="0*0.50+1*0.30+4*0.15+9*0.05" expected="1.35" units="" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-29-005-var" expr="1.35-(0.75**2)" expected="0.7875" units="" atol="0.00005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-29-005-sd" expr="sqrt(1.35-(0.75**2))" expected="0.8874" units="" atol="0.00005" rtol="1e-09" -->
 
 ### Worked Example 6 — Expected Cost Without Deriving a New Distribution
 
@@ -829,6 +847,11 @@ direct sum 3.0 min. It does.
 
 ---
 
+
+<!-- VERIFY id="WE-01-29-007-mean" expr="4+6" expected="10.0" units="min" atol="0.05" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-29-007-var" expr="1**2+2**2" expected="5.0" units="min^2" atol="0.05" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-29-007-sd" expr="sqrt(1**2+2**2)" expected="2.236" units="min" atol="0.0005" rtol="1e-09" -->
+
 ## 29.7 The Binomial Distribution
 
 The **binomial distribution** models the number of successes in a fixed number of
@@ -934,6 +957,10 @@ $$
 number of failures is only
 
 $$np=5(0.08)=0.40.$$
+
+
+<!-- VERIFY id="WE-01-29-008-prob" expr="10*(0.08**2)*(0.92**3)" expected="0.0498360" units="" atol="5e-08" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-29-008-mean" expr="5*0.08" expected="0.40" units="" atol="0.005" rtol="1e-09" -->
 
 ### Worked Example 9 — At Least One Failure
 

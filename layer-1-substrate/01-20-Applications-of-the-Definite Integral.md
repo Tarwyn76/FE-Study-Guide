@@ -92,26 +92,27 @@ exams.
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-- **20.1** Compute the area between two curves, integrating with respect to $x$ or
+
+* 20.1 Compute the area between two curves, integrating with respect to $x$ or
   $y$ as appropriate
-- **20.2** Split an integral at intersection points when the upper and lower curves
+* 20.2 Split an integral at intersection points when the upper and lower curves
   exchange roles
-- **20.3** Distinguish net and total accumulation, and compute total distance
+* 20.3 Distinguish net and total accumulation, and compute total distance
   travelled from a velocity function
-- **20.4** Compute volumes by slicing, using the disc and washer methods
-- **20.5** Compute volumes by the shell method and choose between shells and washers
-- **20.6** Compute arc length and the surface area of a solid of revolution
-- **20.7** Compute the centroid of a plane area by integration and verify against
+* 20.4 Compute volumes by slicing, using the disc and washer methods
+* 20.5 Compute volumes by the shell method and choose between shells and washers
+* 20.6 Compute arc length and the surface area of a solid of revolution
+* 20.7 Compute the centroid of a plane area by integration and verify against
   tabulated results
-- **20.8** Compute first moments of area and relate them to the centroid
-- **20.9** Compute second moments of area about a stated axis
-- **20.10** Apply the parallel axis theorem to transfer a second moment between
+* 20.8 Compute first moments of area and relate them to the centroid
+* 20.9 Compute second moments of area about a stated axis
+* 20.10 Apply the parallel axis theorem to transfer a second moment between
   parallel axes
-- **20.11** Compute work done by a variable force, including spring and pumping
+* 20.11 Compute work done by a variable force, including spring and pumping
   problems
-- **20.12** Compute the root-mean-square value of a periodic function and explain
+* 20.12 Compute the root-mean-square value of a periodic function and explain
   its physical meaning
-- **20.13** Set up an integral from a physical description by identifying the
+* 20.13 Set up an integral from a physical description by identifying the
   contribution of a single slice
 
 ---
@@ -236,6 +237,11 @@ difference and the crossing regions partially cancel. For geometric area you mus
 split at the crossing, using the additivity property from Chapter 01-19, and take
 each piece with its own top curve.
 
+
+
+<!-- VERIFY id="WE-01-20-001-x1" expr="-1" expected="-1" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-20-001-x2" expr="2" expected="2" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-20-001-area" expr="((2**2)/2+2*2-(2**3)/3)-(((-1)**2)/2+2*(-1)-((-1)**3)/3)" expected="4.5" units="" atol="1e-09" rtol="1e-09" -->
 ### Worked Example 2 — Curves That Cross
 
 **Given.** The region between $y = x^3$ and $y = x$ on $[-1, 1]$.
@@ -284,6 +290,11 @@ Use $dy$ when the region's left and right boundaries are single functions of $y$
 but its top or bottom boundary would require splitting into multiple functions of
 $x$.
 
+
+
+<!-- VERIFY id="WE-01-20-002-a1" expr="1/2-1/4" expected="0.25" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-20-002-a2" expr="0-(1/4-1/2)" expected="0.25" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-20-002-total" expr="2*(1/2-1/4)" expected="0.5" units="" atol="1e-09" rtol="1e-09" -->
 ### Worked Example 3 — Choosing the Slice Direction
 
 **Given.** The region bounded by $x = y^2$ and $x = 4$.
@@ -318,6 +329,9 @@ while vertical slices force you to handle two branches. Look at the region and
 pick the direction with fewer pieces.
 
 ![FIG-01-20-002: Two panels of the same region bounded by x = y² and the vertical line x = 4. Left panel titled "horizontal slices — one function": a representative horizontal rectangle inside the region with height dy, left edge on the parabola labeled x = y², right edge on the line labeled x = 4, and a bracket labeled "width = 4 − y²". Right panel titled "vertical slices — two branches": a representative vertical rectangle with width dx, top edge on the upper branch labeled y = +√x, bottom edge on the lower branch labeled y = −√x, with a note "one slice spans two functions".](../figures/FIG-01-20-002-slice-direction.png)
+
+
+<!-- VERIFY id="WE-01-20-003-area" expr="2*(4*2-(2**3)/3)" expected="10.666666666666666" units="" atol="1e-09" rtol="1e-09" -->
 
 ---
 
@@ -373,6 +387,11 @@ different questions.
 $[0,4]$ to be 1.00 m/s, which is displacement over time: $4/4 = 1$ ✓ Note that
 average *speed* is different: $12/4 = 3.00$ m/s. Average velocity uses net
 displacement, average speed uses total distance.
+
+
+<!-- VERIFY id="WE-01-20-004-displacement" expr="4**3-6*4**2+9*4" expected="4.0" units="m" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-20-004-distance" expr="4+4+4" expected="12.0" units="m" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-20-004-average-speed" expr="12/4" expected="3.0" units="m/s" atol="1e-09" rtol="1e-09" -->
 
 ---
 
@@ -454,6 +473,12 @@ by $y = x^2$ has volume $\pi\int_0^2 x^4 dx = \pi(32/5) = 20.1$. Difference:
 $33.5 - 20.1 = 13.4$ ✓ Subtracting the two solids gives the same answer as
 integrating the washer, as it must.
 
+
+<!-- VERIFY id="WE-01-20-005-disc" expr="8*pi" expected="25.1" units="" atol="0.05" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-20-005-washer" expr="64*pi/15" expected="13.4" units="" atol="0.05" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-20-005-outer" expr="(1/3)*pi*(4**2)*2" expected="33.5" units="" atol="0.05" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-20-005-inner" expr="pi*(32/5)" expected="20.1" units="" atol="0.05" rtol="1e-09" -->
+
 ---
 
 ## 20.4 Volume by Shells
@@ -520,6 +545,9 @@ $$= \pi\left[\frac{y^2}{2} - \frac{y^3}{12}\right]_0^4 = \pi\left[8 - \frac{64}{
 Identical. Note that the shell integral required no algebraic inversion of either
 curve, while the washer integral required solving both for $x$. That is the usual
 reason to prefer shells for revolution about the $y$-axis.
+
+
+<!-- VERIFY id="WE-01-20-006-volume" expr="8*pi/3" expected="8.38" units="" atol="0.005" rtol="1e-09" -->
 
 ---
 
@@ -595,6 +623,11 @@ The distinction from the volume formulas matters: volume uses the *perpendicular
 thickness $dx$, while surface area uses the *slant* length $dL$. Using $dx$ in a
 surface area integral understates the answer.
 
+
+
+<!-- VERIFY id="WE-01-20-007-length" expr="14/3" expected="4.67" units="" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-20-007-y3" expr="(2/3)*(3**1.5)" expected="3.464" units="" atol="0.0005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-20-007-chord" expr="sqrt(3**2+((2/3)*(3**1.5))**2)" expected="4.583" units="" atol="0.0005" rtol="1e-09" -->
 ### Worked Example 8 — Surface Area, Verified Against a Known Formula
 
 **Given.** The line $y = \frac{x}{2}$ from $x = 0$ to $x = 4$, revolved about the
@@ -627,6 +660,11 @@ it recovered $\ell$ automatically. That is the geometric content of the formula.
 **What the wrong integral would give.** Omitting the radical:
 $2\pi\int_0^4\frac{x}{2}dx = 2\pi(4) = 25.1$ — an 11% understatement. The radical
 is not a refinement.
+
+
+<!-- VERIFY id="WE-01-20-008-factor" expr="sqrt(1+0.5**2)" expected="1.11803" units="" atol="5e-06" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-20-008-area" expr="pi*2*sqrt(2**2+4**2)" expected="28.1" units="" atol="0.05" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-20-008-slant" expr="sqrt(2**2+4**2)" expected="4.47214" units="" atol="5e-06" rtol="1e-09" -->
 
 ---
 
@@ -736,6 +774,13 @@ nothing more than these integrals, evaluated in advance by somebody else.
 $(2.25, 2.70)$ is inside ✓ The centroid sits well right of centre and well below
 mid-height, which matches the shape — nearly all the area is bunched near
 $x = 3$ and near the bottom.
+
+
+<!-- VERIFY id="WE-01-20-009-area" expr="3**3/3" expected="9.0" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-20-009-qy" expr="3**4/4" expected="20.25" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-20-009-xbar" expr="(3**4/4)/(3**3/3)" expected="2.25" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-20-009-qx" expr="0.5*(3**5/5)" expected="24.3" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-20-009-ybar" expr="(0.5*(3**5/5))/(3**3/3)" expected="2.7" units="" atol="1e-09" rtol="1e-09" -->
 
 ---
 
@@ -871,6 +916,12 @@ That single fact, which fell out of an exponent in an integral, explains why flo
 joists are installed on edge rather than flat, and it is the beginning of section
 design.
 
+
+<!-- VERIFY id="WE-01-20-011-centroidal" expr="100*(200**3)/12" expected="66700000.0" units="mm^4" atol="50000" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-20-011-base" expr="100*(200**3)/3" expected="267000000.0" units="mm^4" atol="500000" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-20-011-depth400" expr="100*(400**3)/12" expected="533000000.0" units="mm^4" atol="500000" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-20-011-width200" expr="200*(200**3)/12" expected="133000000.0" units="mm^4" atol="500000" rtol="1e-09" -->
+
 ---
 
 ## 20.8 Work by a Variable Force
@@ -997,6 +1048,13 @@ Exact agreement.
 >
 > ---
 
+
+<!-- VERIFY id="WE-01-20-013-area" expr="pi*(1.5**2)" expected="7.0686" units="m^2" atol="5e-05" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-20-013-gammaA" expr="9810*pi*(1.5**2)" expected="69343" units="N/m" atol="0.5" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-20-013-work" expr="9810*pi*(1.5**2)*8" expected="554740" units="J" atol="5" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-20-013-volume" expr="pi*(1.5**2)*4" expected="28.274" units="m^3" atol="0.0005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-20-013-weight" expr="9810*pi*(1.5**2)*4" expected="277370" units="N" atol="5" rtol="1e-09" -->
+
 ---
 
 ## 20.9 Root-Mean-Square Value
@@ -1075,6 +1133,10 @@ ordinary average carries no useful information and the RMS value does.
 > waveform. Chapter 02-63 develops AC circuit analysis on an RMS basis and treats
 > non-sinusoidal waveforms. Nothing here depends on that chapter; the integral
 > above is complete on its own.
+
+
+<!-- VERIFY id="WE-01-20-014-rms" expr="170/sqrt(2)" expected="120.2" units="V" atol="0.05" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-20-014-average" expr="-cos(2*pi)+cos(0)" expected="0" units="" atol="1e-09" rtol="1e-09" -->
 
 ---
 

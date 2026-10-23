@@ -763,6 +763,12 @@ Goodness of fit requires more than one number.
 
 ---
 
+
+
+<!-- VERIFY id="WE-01-35-004-r" expr="9/sqrt(10*10)" expected="0.90" units="" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-35-004-r2" expr="(9/sqrt(10*10))**2" expected="0.81" units="" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-35-004-r2-residual" expr="1-1.9/10" expected="0.81" units="" atol="0.005" rtol="1e-09" -->
+
 ## 35.5 Confidence Intervals for Slope and Intercept
 
 The supplied Handbook provides confidence intervals for both the fitted intercept
@@ -1648,7 +1654,8 @@ D) causation.
     9-8.4
     =
     \boxed{0.6}.
-    $$ Verification: the stated value follows from the chapter relation applied to the quantities in the problem; retain the indicated units and check the result against the problem statement.
+    $$
+
 16.
 
     $$

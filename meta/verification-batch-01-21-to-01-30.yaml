@@ -1,0 +1,395 @@
+schema_version: 1
+batch: 01-21-to-01-30
+candidate_examples: 60
+verified_examples: 53
+verify_checks: 176
+curated_exclusions: 7
+records:
+- chapter: 01-21
+  example: 14 — Total Volume from a Decaying Flow
+  checks: 2
+  verify_ids:
+  - WE-01-21-014-total
+  - WE-01-21-014-60s
+- chapter: 01-21
+  example: 15 — Combining Four Chapters
+  checks: 4
+  verify_ids:
+  - WE-01-21-015-tpeak
+  - WE-01-21-015-fmax
+  - WE-01-21-015-impulse
+  - WE-01-21-015-frac
+- chapter: 01-22
+  example: 6 — Radius and Interval of Convergence
+  checks: 3
+  verify_ids:
+  - WE-01-22-006-radius
+  - WE-01-22-006-left
+  - WE-01-22-006-right
+- chapter: 01-22
+  example: 9 — Building New Series from Old
+  checks: 2
+  verify_ids:
+  - WE-01-22-009-sqrt-approx
+  - WE-01-22-009-sqrt-exact
+- chapter: 01-22
+  example: 10 — Both Error Bounds
+  checks: 6
+  verify_ids:
+  - WE-01-22-010-exp-p3
+  - WE-01-22-010-exp-bound
+  - WE-01-22-010-exp-error
+  - WE-01-22-010-ln4
+  - WE-01-22-010-ln-next
+  - WE-01-22-010-ln-error
+- chapter: 01-22
+  example: 11 — The Pendulum Linearization
+  checks: 3
+  verify_ids:
+  - WE-01-22-011-period
+  - WE-01-22-011-err5
+  - WE-01-22-011-err30
+- chapter: 01-22
+  example: 12 — Binomial Approximation and the Error Rule
+  checks: 3
+  verify_ids:
+  - WE-01-22-012-linear
+  - WE-01-22-012-exact
+  - WE-01-22-012-quadratic
+- chapter: 01-22
+  example: 13 — Linearizing the Tank
+  checks: 11
+  verify_ids:
+  - WE-01-22-013-c1
+  - WE-01-22-013-c2
+  - WE-01-22-013-c3
+  - WE-01-22-013-t1pct
+  - WE-01-22-013-t1pct-sec
+  - WE-01-22-013-true1
+  - WE-01-22-013-two
+  - WE-01-22-013-three
+  - WE-01-22-013-rel-linear
+  - WE-01-22-013-rel-two
+  - WE-01-22-013-rel-three
+- chapter: 01-23
+  example: 1 — First Partials
+  checks: 2
+  verify_ids:
+  - WE-01-23-001-fx
+  - WE-01-23-001-fy
+- chapter: 01-23
+  example: 4 — Volume of a Cylinder
+  checks: 7
+  verify_ids:
+  - WE-01-23-004-vraw
+  - WE-01-23-004-dr
+  - WE-01-23-004-dh
+  - WE-01-23-004-dv
+  - WE-01-23-004-rel
+  - WE-01-23-004-vreport
+  - WE-01-23-004-dvreport
+- chapter: 01-23
+  example: 5 — Flow Rate from Diameter and Velocity
+  checks: 4
+  verify_ids:
+  - WE-01-23-005-qm3
+  - WE-01-23-005-qls
+  - WE-01-23-005-rel
+  - WE-01-23-005-dq
+- chapter: 01-23
+  example: 6 — Competing Rates
+  checks: 4
+  verify_ids:
+  - WE-01-23-006-vterm
+  - WE-01-23-006-rterm
+  - WE-01-23-006-net
+  - WE-01-23-006-power
+- chapter: 01-23
+  example: 7 — Gradient and Directional Derivative
+  checks: 7
+  verify_ids:
+  - WE-01-23-007-gx
+  - WE-01-23-007-gy
+  - WE-01-23-007-mag
+  - WE-01-23-007-ux
+  - WE-01-23-007-uy
+  - WE-01-23-007-dir
+  - WE-01-23-007-angle
+- chapter: 01-23
+  example: 8 — Computing Both
+  checks: 4
+  verify_ids:
+  - WE-01-23-008-div
+  - WE-01-23-008-curlx
+  - WE-01-23-008-curly
+  - WE-01-23-008-curlz
+- chapter: 01-23
+  example: 9 — Locating and Classifying
+  checks: 7
+  verify_ids:
+  - WE-01-23-009-grad00x
+  - WE-01-23-009-grad00y
+  - WE-01-23-009-grad11x
+  - WE-01-23-009-grad11y
+  - WE-01-23-009-d00
+  - WE-01-23-009-d11
+  - WE-01-23-009-f11
+- chapter: 01-23
+  example: 10 — Minimum-Material Tank
+  checks: 4
+  verify_ids:
+  - WE-01-23-010-r
+  - WE-01-23-010-h
+  - WE-01-23-010-area
+  - WE-01-23-010-volume
+- chapter: 01-24
+  example: 1 — A Rectangular Region
+  checks: 2
+  verify_ids:
+  - WE-01-24-001-dydx
+  - WE-01-24-001-dxdy
+- chapter: 01-24
+  example: 2 — One Region, Two Orders
+  checks: 2
+  verify_ids:
+  - WE-01-24-002-dydx
+  - WE-01-24-002-dxdy
+- chapter: 01-24
+  example: 3 — Volume Under a Plane
+  checks: 2
+  verify_ids:
+  - WE-01-24-003-volume
+  - WE-01-24-003-average
+- chapter: 01-24
+  example: 4 — Variable-Density Plate
+  checks: 3
+  verify_ids:
+  - WE-01-24-004-mass
+  - WE-01-24-004-xbar
+  - WE-01-24-004-ybar
+- chapter: 01-24
+  example: 5 — A Radially Symmetric Integral
+  checks: 3
+  verify_ids:
+  - WE-01-24-005-integral
+  - WE-01-24-005-average
+  - WE-01-24-005-area
+- chapter: 01-24
+  example: 6 — Density Varying with Height
+  checks: 3
+  verify_ids:
+  - WE-01-24-006-mass
+  - WE-01-24-006-zbar
+  - WE-01-24-006-rhoavg
+- chapter: 01-25
+  example: 2 — Exponential Decay
+  checks: 3
+  verify_ids:
+  - WE-01-25-002-half
+  - WE-01-25-002-y0
+  - WE-01-25-002-yhalf
+- chapter: 01-26
+  example: 1 — Forward versus Centered Difference
+  checks: 6
+  verify_ids:
+  - WE-01-26-001-forward
+  - WE-01-26-001-centered
+  - WE-01-26-001-ef
+  - WE-01-26-001-ec
+  - WE-01-26-001-forward05
+  - WE-01-26-001-centered05
+- chapter: 01-26
+  example: 2 — Guaranteed Root by Bisection
+  checks: 5
+  verify_ids:
+  - WE-01-26-002-low
+  - WE-01-26-002-high
+  - WE-01-26-002-width
+  - WE-01-26-002-mid
+  - WE-01-26-002-error
+- chapter: 01-26
+  example: 3 — Newton Converges Rapidly
+  checks: 3
+  verify_ids:
+  - WE-01-26-003-x1
+  - WE-01-26-003-x2
+  - WE-01-26-003-rootres
+- chapter: 01-26
+  example: 4 — One-Dimensional Newton Minimization
+  checks: 3
+  verify_ids:
+  - WE-01-26-004-minx
+  - WE-01-26-004-second
+  - WE-01-26-004-hmin
+- chapter: 01-26
+  example: 5 — Sensor Calibration
+  checks: 2
+  verify_ids:
+  - WE-01-26-005-lambda
+  - WE-01-26-005-v
+- chapter: 01-26
+  example: 6 — Three Rules on the Same Integral
+  checks: 4
+  verify_ids:
+  - WE-01-26-006-rect
+  - WE-01-26-006-trap
+  - WE-01-26-006-simpson
+  - WE-01-26-006-exact
+- chapter: 01-26
+  example: 7 — Step Size Matters
+  checks: 3
+  verify_ids:
+  - WE-01-26-007-dt02
+  - WE-01-26-007-dt01
+  - WE-01-26-007-exact
+- chapter: 01-26
+  example: 8 — Recasting a Second-Order ODE
+  checks: 6
+  verify_ids:
+  - WE-01-26-008-x1
+  - WE-01-26-008-v1
+  - WE-01-26-008-x2
+  - WE-01-26-008-v2
+  - WE-01-26-008-xexact
+  - WE-01-26-008-vexact
+- chapter: 01-27
+  example: 3 — Trace Before You Calculate
+  checks: 2
+  verify_ids:
+  - WE-01-27-003-x
+  - WE-01-27-003-y
+- chapter: 01-28
+  example: 1 — At Least One Success by Complement
+  checks: 1
+  verify_ids:
+  - WE-01-28-001-prob
+- chapter: 01-28
+  example: 3 — Overlap Matters
+  checks: 1
+  verify_ids:
+  - WE-01-28-003-union
+- chapter: 01-28
+  example: 4 — Conditional Probability from Counts
+  checks: 3
+  verify_ids:
+  - WE-01-28-004-fail
+  - WE-01-28-004-a-given-f
+  - WE-01-28-004-f-given-a
+- chapter: 01-28
+  example: 5 — At Least One Defect in Three Independent Items
+  checks: 1
+  verify_ids:
+  - WE-01-28-005-prob
+- chapter: 01-28
+  example: 6 — Which Supplier Produced the Failed Part?
+  checks: 3
+  verify_ids:
+  - WE-01-28-006-totalf
+  - WE-01-28-006-b-given-f
+  - WE-01-28-006-a-given-f
+- chapter: 01-28
+  example: 7 — Positive Test Does Not Mean 98% Probability of Defect
+  checks: 3
+  verify_ids:
+  - WE-01-28-007-pplus
+  - WE-01-28-007-posterior
+  - WE-01-28-007-frequency
+- chapter: 01-29
+  example: 2 — Find an Unknown PMF Entry
+  checks: 2
+  verify_ids:
+  - WE-01-29-002-k
+  - WE-01-29-002-cdf
+- chapter: 01-29
+  example: 3 — Constant Density on an Interval
+  checks: 2
+  verify_ids:
+  - WE-01-29-003-norm
+  - WE-01-29-003-interval
+- chapter: 01-29
+  example: 4 — Use the CDF Instead of Re-Summing
+  checks: 2
+  verify_ids:
+  - WE-01-29-004-cdf
+  - WE-01-29-004-pmf
+- chapter: 01-29
+  example: 5 — Mean and Spread of a Discrete Distribution
+  checks: 4
+  verify_ids:
+  - WE-01-29-005-mean
+  - WE-01-29-005-second
+  - WE-01-29-005-var
+  - WE-01-29-005-sd
+- chapter: 01-29
+  example: 7 — Total Process Time
+  checks: 3
+  verify_ids:
+  - WE-01-29-007-mean
+  - WE-01-29-007-var
+  - WE-01-29-007-sd
+- chapter: 01-29
+  example: 8 — Exactly Two Failures
+  checks: 2
+  verify_ids:
+  - WE-01-29-008-prob
+  - WE-01-29-008-mean
+- chapter: 01-30
+  example: 2 — Convert a Measurement to $z$
+  checks: 1
+  verify_ids:
+  - WE-01-30-002-z
+- chapter: 01-30
+  example: 3 — Convert a $z$ Threshold Back to Units
+  checks: 1
+  verify_ids:
+  - WE-01-30-003-x
+- chapter: 01-30
+  example: 4 — Left Tail
+  checks: 2
+  verify_ids:
+  - WE-01-30-004-z
+  - WE-01-30-004-left
+- chapter: 01-30
+  example: 5 — Right Tail
+  checks: 2
+  verify_ids:
+  - WE-01-30-005-z
+  - WE-01-30-005-right
+- chapter: 01-30
+  example: 6 — Engineering Tolerance Band
+  checks: 4
+  verify_ids:
+  - WE-01-30-006-zl
+  - WE-01-30-006-zu
+  - WE-01-30-006-band
+  - WE-01-30-006-nonconforming
+- chapter: 01-30
+  example: 7 — Set a One-Sided Threshold
+  checks: 2
+  verify_ids:
+  - WE-01-30-007-threshold
+  - WE-01-30-007-central95
+- chapter: 01-30
+  example: 8 — Individual Observation versus Sample Mean
+  checks: 5
+  verify_ids:
+  - WE-01-30-008-mean
+  - WE-01-30-008-se
+  - WE-01-30-008-z
+  - WE-01-30-008-tail
+  - WE-01-30-008-individual-z
+- chapter: 01-30
+  example: 9 — CLT for a Skewed Population
+  checks: 3
+  verify_ids:
+  - WE-01-30-009-se
+  - WE-01-30-009-z
+  - WE-01-30-009-tail
+- chapter: 01-30
+  example: 10 — CLT for a Sum
+  checks: 4
+  verify_ids:
+  - WE-01-30-010-mean
+  - WE-01-30-010-sd
+  - WE-01-30-010-z
+  - WE-01-30-010-tail

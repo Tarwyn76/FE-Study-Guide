@@ -1,0 +1,184 @@
+schema_version: 1
+batch: "01-01-to-01-05"
+verified_examples: 29
+verify_checks: 62
+curated_exclusions: 2
+records:
+  - chapter: "01-01"
+    example: "1 — Order of Operations"
+    checks: 1
+    verify_ids:
+      - "WE-01-01-001-main"
+  - chapter: "01-01"
+    example: "2 — Multiplication and Division"
+    checks: 4
+    verify_ids:
+      - "WE-01-01-002-a"
+      - "WE-01-01-002-b"
+      - "WE-01-01-002-c"
+      - "WE-01-01-002-d"
+  - chapter: "01-01"
+    example: "3 — Addition and Subtraction"
+    checks: 3
+    verify_ids:
+      - "WE-01-01-003-a"
+      - "WE-01-01-003-b"
+      - "WE-01-01-003-c"
+  - chapter: "01-01"
+    example: "4 — Estimation as a Check"
+    checks: 1
+    verify_ids:
+      - "WE-01-01-004-stress"
+  - chapter: "01-01"
+    example: "5 — A Prefix Chain"
+    checks: 2
+    verify_ids:
+      - "WE-01-01-005-base"
+      - "WE-01-01-005-pf"
+  - chapter: "01-01"
+    example: "6 — Mixed Prefixes in One Calculation"
+    checks: 1
+    verify_ids:
+      - "WE-01-01-006-voltage"
+  - chapter: "01-01"
+    example: "7 — Squared and Cubed Prefixes"
+    checks: 3
+    verify_ids:
+      - "WE-01-01-007-area"
+      - "WE-01-01-007-flow-m3s"
+      - "WE-01-01-007-flow-ls"
+  - chapter: "01-02"
+    example: "3 — A Multi-Step SI Conversion"
+    checks: 1
+    verify_ids:
+      - "WE-01-02-003-flow"
+  - chapter: "01-02"
+    example: "4 — USCS to SI, With a Squared Prefix"
+    checks: 2
+    verify_ids:
+      - "WE-01-02-004-route-a"
+      - "WE-01-02-004-route-b"
+  - chapter: "01-02"
+    example: "5 — Force on an Accelerating Mass"
+    checks: 2
+    verify_ids:
+      - "WE-01-02-005-uscs"
+      - "WE-01-02-005-si-check"
+  - chapter: "01-02"
+    example: "6 — Weight at Non-Standard Gravity"
+    checks: 2
+    verify_ids:
+      - "WE-01-02-006-weight"
+      - "WE-01-02-006-force"
+  - chapter: "01-02"
+    example: "7 — Kinetic Energy in USCS"
+    checks: 2
+    verify_ids:
+      - "WE-01-02-007-uscs"
+      - "WE-01-02-007-si"
+  - chapter: "01-02"
+    example: "8 — Fluid Pressure and Specific Weight"
+    checks: 3
+    verify_ids:
+      - "WE-01-02-008-sw"
+      - "WE-01-02-008-psf"
+      - "WE-01-02-008-psi"
+  - chapter: "01-02"
+    example: "9 — Value, Difference, and Ratio"
+    checks: 8
+    verify_ids:
+      - "WE-01-02-009-hot-r"
+      - "WE-01-02-009-cold-r"
+      - "WE-01-02-009-hot-k"
+      - "WE-01-02-009-cold-k"
+      - "WE-01-02-009-delta-f"
+      - "WE-01-02-009-delta-k"
+      - "WE-01-02-009-efficiency"
+      - "WE-01-02-009-wrong-fahrenheit"
+  - chapter: "01-03"
+    example: "1 — Computing Errors"
+    checks: 3
+    verify_ids:
+      - "WE-01-03-001-absolute"
+      - "WE-01-03-001-relative"
+      - "WE-01-03-001-percent"
+  - chapter: "01-03"
+    example: "3 — Mixed Operations"
+    checks: 1
+    verify_ids:
+      - "WE-01-03-003-raw"
+  - chapter: "01-03"
+    example: "4 — Rounding a Multi-Step Problem"
+    checks: 1
+    verify_ids:
+      - "WE-01-03-004-stress"
+  - chapter: "01-04"
+    example: "10 — Setting Up and Solving"
+    checks: 2
+    verify_ids:
+      - "WE-01-04-010-volume"
+      - "WE-01-04-010-weight"
+  - chapter: "01-04"
+    example: "11 — Inequality in Engineering Context"
+    checks: 2
+    verify_ids:
+      - "WE-01-04-011-max-load"
+      - "WE-01-04-011-safety-factor"
+  - chapter: "01-04"
+    example: "2 — Single Variable, Linear"
+    checks: 1
+    verify_ids:
+      - "WE-01-04-002-x"
+  - chapter: "01-04"
+    example: "4 — Clearing Fractions First"
+    checks: 1
+    verify_ids:
+      - "WE-01-04-004-x"
+  - chapter: "01-04"
+    example: "5 — Physics Equation, Explicit Solve"
+    checks: 1
+    verify_ids:
+      - "WE-01-04-005-temperature"
+  - chapter: "01-04"
+    example: "6 — Absolute Value Equation"
+    checks: 2
+    verify_ids:
+      - "WE-01-04-006-root-a"
+      - "WE-01-04-006-root-b"
+  - chapter: "01-04"
+    example: "7 — No Solution and One Solution Cases"
+    checks: 1
+    verify_ids:
+      - "WE-01-04-007-root-b"
+  - chapter: "01-04"
+    example: "8 — Linear Inequality with Direction Flip"
+    checks: 1
+    verify_ids:
+      - "WE-01-04-008-boundary"
+  - chapter: "01-04"
+    example: "9 — Compound Inequality"
+    checks: 2
+    verify_ids:
+      - "WE-01-04-009-lower"
+      - "WE-01-04-009-upper"
+  - chapter: "01-05"
+    example: "3 — Evaluating Logarithms Without a Calculator"
+    checks: 4
+    verify_ids:
+      - "WE-01-05-003-a"
+      - "WE-01-05-003-b"
+      - "WE-01-05-003-c"
+      - "WE-01-05-003-d"
+  - chapter: "01-05"
+    example: "4 — Exponential Decay Problem"
+    checks: 3
+    verify_ids:
+      - "WE-01-05-004-voltage"
+      - "WE-01-05-004-time-5v"
+      - "WE-01-05-004-time-1pct"
+  - chapter: "01-05"
+    example: "5 — Decibels and Back"
+    checks: 2
+    verify_ids:
+      - "WE-01-05-005-gain"
+      - "WE-01-05-005-voltage"

@@ -212,6 +212,9 @@ and it does.
 
 ---
 
+
+<!-- VERIFY id="WE-01-28-001-prob" expr="1-(1-0.92)**2" expected="0.9936" units="" atol="5e-07" rtol="1e-09" -->
+
 ## 28.2 Counting — When Probability Depends on How Many Ways
 
 When outcomes are equally likely,
@@ -472,6 +475,9 @@ That sum-to-one condition becomes a powerful check later.
 
 ---
 
+
+<!-- VERIFY id="WE-01-28-003-union" expr="0.55+0.40-0.25" expected="0.70" units="" atol="0.005" rtol="1e-09" -->
+
 ## 28.5 Conditional Probability, Joint Probability, and Independence
 
 A conditional probability changes the sample space.
@@ -577,6 +583,11 @@ This distinction is the foundation of Bayes' theorem.
 
 ---
 
+
+<!-- VERIFY id="WE-01-28-004-fail" expr="23/200" expected="0.115" units="" atol="0.0005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-28-004-a-given-f" expr="8/23" expected="0.3478" units="" atol="0.00005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-28-004-f-given-a" expr="8/100" expected="0.0800" units="" atol="0.00005" rtol="1e-09" -->
+
 ## 28.6 Probability Trees and Multi-Stage Events
 
 A probability tree is useful when a process unfolds in stages.
@@ -641,6 +652,9 @@ $$P(\text{at least one defect})
 cases with multiple defects would otherwise be double-counted in that simple sum.
 
 ---
+
+
+<!-- VERIFY id="WE-01-28-005-prob" expr="1-(1-0.04)**3" expected="0.115264" units="" atol="5e-07" rtol="1e-09" -->
 
 ## 28.7 Bayes' Theorem — Updating After Evidence
 
@@ -718,6 +732,11 @@ and
 $$0.375+0.625=1.$$
 
 ![FIG-01-28-007: Bayes update diagram using the supplier example. Left column shows priors A=0.60 and B=0.40. Middle multiplies each prior by failure likelihood: A path 0.60*0.02=0.012, B path 0.40*0.05=0.020. These combine to evidence total P(F)=0.032. Right column normalizes the failure-path weights to posterior shares A|F=0.375 and B|F=0.625. Arrows emphasize "prior × likelihood → joint weight → normalize".](../figures/FIG-01-28-007-bayes-update.png)
+
+
+<!-- VERIFY id="WE-01-28-006-totalf" expr="0.60*0.02+0.40*0.05" expected="0.032" units="" atol="5e-07" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-28-006-b-given-f" expr="(0.05*0.40)/(0.60*0.02+0.40*0.05)" expected="0.625" units="" atol="0.0005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-28-006-a-given-f" expr="(0.02*0.60)/(0.60*0.02+0.40*0.05)" expected="0.375" units="" atol="0.0005" rtol="1e-09" -->
 
 ### Worked Example 7 — Positive Test Does Not Mean 98% Probability of Defect
 
@@ -803,6 +822,11 @@ The frequency check agrees exactly with Bayes.
 > ---
 
 ---
+
+
+<!-- VERIFY id="WE-01-28-007-pplus" expr="0.98*0.01+0.04*0.99" expected="0.0494" units="" atol="0.00005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-28-007-posterior" expr="(0.98*0.01)/(0.98*0.01+0.04*0.99)" expected="0.1984" units="" atol="0.00005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-28-007-frequency" expr="98/494" expected="0.1984" units="" atol="0.00005" rtol="1e-09" -->
 
 ## As the Handbook States It
 

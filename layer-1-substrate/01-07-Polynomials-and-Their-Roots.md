@@ -65,18 +65,20 @@ Laplace transforms, and transfer function analysis.
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-- **7.1** Define polynomial, degree, leading coefficient, and identify each in
+
+* 7.1 Define polynomial, degree, leading coefficient, and identify each in
   a given expression
-- **7.2** Perform polynomial addition, subtraction, and multiplication
-- **7.3** Perform polynomial long division and synthetic division
-- **7.4** Apply the remainder theorem and factor theorem
-- **7.5** Solve quadratic equations by factoring, completing the square, and
+* 7.2 Perform polynomial addition, subtraction, and multiplication
+* 7.3 Perform polynomial long division and synthetic division
+* 7.4 Apply the remainder theorem and factor theorem
+* 7.5 Solve quadratic equations by factoring, completing the square, and
   the quadratic formula
-- **7.6** Interpret the discriminant and predict the nature of quadratic roots
-- **7.7** Apply the rational root theorem and Descartes' rule of signs to narrow
+* 7.6 Interpret the discriminant and predict the nature of quadratic roots
+* 7.7 Apply the rational root theorem and Descartes' rule of signs to narrow
   the search for real roots of higher-degree polynomials
-- **7.8** Solve polynomial equations by combining root-finding strategies
-- **7.9** Recognize the connection between roots, factors, and graph zeros
+* 7.8 Solve polynomial equations by combining root-finding strategies
+* 7.9 Recognize the connection between roots, factors, and graph zeros
+
 ---
 
 ## Notation Used Here
@@ -354,6 +356,16 @@ oscillations decay — the system is stable. We'll see this in Chapter 02-33
 (vibrations) and Chapter 02-69 (control systems). The complex roots are telling you something true about
 the physics, not indicating a calculation error.
 
+
+<!-- VERIFY id="WE-01-07-003-disc-a" expr="(-5)**2-4*1*4" expected="9" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-07-003-root-a1" expr="(5+sqrt(9))/2" expected="4" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-07-003-root-a2" expr="(5-sqrt(9))/2" expected="1" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-07-003-disc-b" expr="(-4)**2-4*1*4" expected="0" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-07-003-root-b" expr="4/2" expected="2" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-07-003-disc-c" expr="(-2)**2-4*1*5" expected="-16" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-07-003-root-c-real" expr="2/2" expected="1" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-07-003-root-c-imag-mag" expr="sqrt(16)/2" expected="2" units="" atol="1e-12" rtol="1e-9" -->
+
 ---
 
 ## 7.5 Vieta's Formulas — Roots Without Solving
@@ -389,6 +401,10 @@ $$4 + (-1) = 3 = -k/3 \implies k = -9$$
 
 **Verify:** $3x^2 - 9x - 12 = 3(x^2 - 3x - 4) = 3(x-4)(x+1) = 0$.
 Roots are $4$ and $-1$. ✓
+
+
+<!-- VERIFY id="WE-01-07-004-r2" expr="(-12/3)/4" expected="-1" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-07-004-k" expr="-3*(4+(-1))" expected="-9" units="" atol="1e-12" rtol="1e-9" -->
 
 ---
 
@@ -606,6 +622,13 @@ first guess misses, Descartes does more visible work: knowing that only one
 negative root exists means that once you find it, the five remaining negative
 candidates can be dropped without testing.
 
+
+<!-- VERIFY id="WE-01-07-005-root1" expr="2*1**3-1**2-7*1+6" expected="0" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-07-005-root2" expr="2*(3/2)**3-(3/2)**2-7*(3/2)+6" expected="0" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-07-005-root3" expr="2*(-2)**3-(-2)**2-7*(-2)+6" expected="0" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-07-005-sum" expr="1+3/2-2" expected="0.5" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-07-005-product" expr="1*(3/2)*(-2)" expected="-3" units="" atol="1e-12" rtol="1e-9" -->
+
 ---
 
 ## 7.7 Polynomial Graphs and Root Multiplicity
@@ -750,6 +773,13 @@ up if you extend the timeline backwards, once on the way down).
 >
 > ---
 
+
+<!-- VERIFY id="WE-01-07-007-discriminant" expr="30**2-4*(-4.905)*2" expected="939.24" units="" atol="1e-09" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-07-007-negative-time" expr="(-30+sqrt(939.24))/(2*(-4.905))" expected="-0.066" units="s" atol="0.0005" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-07-007-impact-time" expr="(-30-sqrt(939.24))/(2*(-4.905))" expected="6.182" units="s" atol="0.0005" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-07-007-tmax" expr="-30/(2*(-4.905))" expected="3.058" units="s" atol="0.0005" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-07-007-hmax" expr="-4.905*(-30/(2*(-4.905)))**2+30*(-30/(2*(-4.905)))+2" expected="47.9" units="m" atol="0.05" rtol="1e-9" -->
+
 ---
 
 ## 7.9 Building a Polynomial from Its Roots
@@ -810,6 +840,13 @@ Check: $-(-3)/1 = 3$. ✓
 
 Product of roots: $2 \times (-1) \times (1+3i)(1-3i) = (-2)(10) = -20$.
 Check: $(-1)^4 \times (-20)/1 = -20$. ✓
+
+
+<!-- VERIFY id="WE-01-07-008-complex-constant" expr="1**2+3**2" expected="10" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-07-008-c3" expr="-2-1" expected="-3" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-07-008-c2" expr="10+2-2" expected="10" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-07-008-c1" expr="-10+4" expected="-6" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-07-008-c0" expr="-2*10" expected="-20" units="" atol="1e-12" rtol="1e-9" -->
 
 ---
 

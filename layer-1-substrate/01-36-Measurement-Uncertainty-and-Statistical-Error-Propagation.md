@@ -456,6 +456,12 @@ increase output uncertainty.
 
 ---
 
+
+
+<!-- VERIFY id="WE-01-36-002-contrib1" expr="3*0.20" expected="0.60" units="" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-36-002-contrib2" expr="-2*0.40" expected="-0.80" units="" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-36-002-uy" expr="sqrt((3*0.20)**2+(-2*0.40)**2)" expected="1.00" units="" atol="0.005" rtol="1e-09" -->
+
 ## 36.3 Products, Powers, and Relative Standard Uncertainty
 
 Many engineering equations have the form

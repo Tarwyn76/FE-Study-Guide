@@ -79,20 +79,22 @@ We build all of it here.
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-- **14.1** State the dimensions of a matrix and identify square, diagonal,
+
+* 14.1 State the dimensions of a matrix and identify square, diagonal,
   identity, symmetric, and triangular matrices
-- **14.2** Add, subtract, and scalar-multiply matrices
-- **14.3** Determine whether a matrix product is defined and compute it
-- **14.4** Compute the transpose and recognize symmetric matrices
-- **14.5** Evaluate 2×2 and 3×3 determinants and apply determinant properties
-- **14.6** Compute the inverse of a 2×2 matrix and recognize when no inverse
+* 14.2 Add, subtract, and scalar-multiply matrices
+* 14.3 Determine whether a matrix product is defined and compute it
+* 14.4 Compute the transpose and recognize symmetric matrices
+* 14.5 Evaluate 2×2 and 3×3 determinants and apply determinant properties
+* 14.6 Compute the inverse of a 2×2 matrix and recognize when no inverse
   exists
-- **14.7** Write a linear system in matrix form $A\mathbf{x} = \mathbf{b}$ and
+* 14.7 Write a linear system in matrix form $A\mathbf{x} = \mathbf{b}$ and
   solve it by matrix inversion or Cramer's rule
-- **14.8** Define rank and singularity and connect them to system solvability
-- **14.9** Find eigenvalues from the characteristic equation
-- **14.10** Find eigenvectors corresponding to given eigenvalues
-- **14.11** Verify eigenvalues using the trace and determinant checks
+* 14.8 Define rank and singularity and connect them to system solvability
+* 14.9 Find eigenvalues from the characteristic equation
+* 14.10 Find eigenvectors corresponding to given eigenvalues
+* 14.11 Verify eigenvalues using the trace and determinant checks
+
 ---
 
 ## Notation Used Here
@@ -290,6 +292,12 @@ $$\boxed{AB = \begin{bmatrix} 20 & 1 \\ -7 & -1 \end{bmatrix}}$$
 $BA$ is defined and is $\boxed{3 \times 3}$ — a completely different size
 from $AB$. This is the clearest possible demonstration that $AB \ne BA$.
 
+
+<!-- VERIFY id="WE-01-14-001-a11" expr="2*1+(-1)*(-3)+3*5" expected="20" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-14-001-a12" expr="2*2+(-1)*0+3*(-1)" expected="1" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-14-001-a21" expr="0*1+4*(-3)+1*5" expected="-7" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-14-001-a22" expr="0*2+4*0+1*(-1)" expected="-1" units="" atol="1e-09" rtol="1e-09" -->
+
 ---
 
 ## 14.4 The Transpose
@@ -427,6 +435,9 @@ $$= 3(-10) + 9 = -30 + 9 = -21 \;\checkmark$$
 Both expansions agree. Note that the row-3 expansion required two minors
 instead of three.
 
+
+
+<!-- VERIFY id="WE-01-14-002-det" expr="2*(4*1-(-2)*0)-(-1)*(1*1-(-2)*3)+3*(1*0-4*3)" expected="-21" units="" atol="1e-09" rtol="1e-09" -->
 ### Worked Example 3 — Detecting a Singular Matrix
 
 **Given.**
@@ -453,6 +464,9 @@ $$= 4 - 2(-4) - 12 = 4 + 8 - 12 = 0 \;\checkmark$$
 
 The inspection took five seconds; the expansion took a minute. Learn to look
 first.
+
+
+<!-- VERIFY id="WE-01-14-003-det" expr="1*(4*1-6*0)-2*(2*1-6*1)+3*(2*0-4*1)" expected="0" units="" atol="1e-09" rtol="1e-09" -->
 
 ---
 
@@ -533,6 +547,13 @@ $$AA^{-1} = \begin{bmatrix} 1 & 0 \\ 0 & 1\end{bmatrix} = I \;\checkmark$$
 > into the rest of your solution.
 >
 > ---
+
+
+<!-- VERIFY id="WE-01-14-004-det" expr="3*2-5*1" expected="1" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-14-004-inv11" expr="2/(3*2-5*1)" expected="2" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-14-004-inv12" expr="-5/(3*2-5*1)" expected="-5" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-14-004-inv21" expr="-1/(3*2-5*1)" expected="-1" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-14-004-inv22" expr="3/(3*2-5*1)" expected="3" units="" atol="1e-09" rtol="1e-09" -->
 
 ---
 
@@ -615,6 +636,10 @@ For hand computation on a $3 \times 3$ system, Cramer's rule is usually
 faster than computing a full $3 \times 3$ inverse — four determinants versus
 nine cofactors plus a transpose. For $2 \times 2$, inversion is fine either
 way.
+
+
+<!-- VERIFY id="WE-01-14-005-x" expr="(1/5)*8+(3/5)*(-1)" expected="1" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-14-005-y" expr="(1/5)*8+(-2/5)*(-1)" expected="2" units="" atol="1e-09" rtol="1e-09" -->
 
 ---
 
@@ -807,6 +832,14 @@ the abstraction worth the effort.
 > mass-and-stiffness matrix pair to find natural frequencies of a multi-degree
 > -of-freedom system, and the eigenvectors give the mode shapes. Nothing in
 > this chapter depends on that; it is where the tool gets used.
+
+
+<!-- VERIFY id="WE-01-14-006-lambda1" expr="(7+sqrt(7**2-4*10))/2" expected="5" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-14-006-lambda2" expr="(7-sqrt(7**2-4*10))/2" expected="2" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-14-006-v1-row1" expr="4*1+1*1" expected="5" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-14-006-v1-row2" expr="2*1+3*1" expected="5" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-14-006-v2-row1" expr="4*1+1*(-2)" expected="2" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-14-006-v2-row2" expr="2*1+3*(-2)" expected="-4" units="" atol="1e-09" rtol="1e-09" -->
 
 ---
 

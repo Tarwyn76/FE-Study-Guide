@@ -79,23 +79,24 @@ about building the tool.
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-- **17.1** Write the difference quotient for a function and use it to compute a
+
+* 17.1 Write the difference quotient for a function and use it to compute a
   derivative from the definition
-- **17.2** Interpret the derivative as the slope of the tangent line and find
+* 17.2 Interpret the derivative as the slope of the tangent line and find
   equations of tangent and normal lines
-- **17.3** Interpret the derivative as a rate of change and determine its units
-- **17.4** Use Leibniz, Lagrange, and dot notation interchangeably
-- **17.5** State the relationship between differentiability and continuity and
+* 17.3 Interpret the derivative as a rate of change and determine its units
+* 17.4 Use Leibniz, Lagrange, and dot notation interchangeably
+* 17.5 State the relationship between differentiability and continuity and
   identify points where a function fails to be differentiable
-- **17.6** Apply the constant, power, constant-multiple, and sum rules
-- **17.7** Apply the product rule
-- **17.8** Apply the quotient rule
-- **17.9** Apply the chain rule, including to nested compositions
-- **17.10** Differentiate all six trigonometric functions and the three principal
+* 17.6 Apply the constant, power, constant-multiple, and sum rules
+* 17.7 Apply the product rule
+* 17.8 Apply the quotient rule
+* 17.9 Apply the chain rule, including to nested compositions
+* 17.10 Differentiate all six trigonometric functions and the three principal
   inverse trigonometric functions
-- **17.11** Differentiate exponential and logarithmic functions with any base
-- **17.12** Compute higher-order derivatives and interpret the second derivative
-- **17.13** Differentiate implicitly and use the technique to obtain derivatives of
+* 17.11 Differentiate exponential and logarithmic functions with any base
+* 17.12 Compute higher-order derivatives and interpret the second derivative
+* 17.13 Differentiate implicitly and use the technique to obtain derivatives of
   inverse functions
 
 ---
@@ -242,6 +243,9 @@ which is a stronger check than mere proximity.
 >
 > ---
 
+
+<!-- VERIFY id="WE-01-17-001-fprime2" expr="6*2-5" expected="7" units="" atol="1e-09" rtol="1e-09" -->
+
 ---
 
 ## 17.2 Geometric Meaning: Tangent and Normal Lines
@@ -314,6 +318,13 @@ Normal: $-0.1(2) + 4.2 = -0.2 + 4.2 = 4$ ✓
 
 And the slopes must satisfy $m_{\text{tan}} \cdot m_{\text{norm}} = -1$:
 $(10)(-0.1) = -1$ ✓
+
+
+<!-- VERIFY id="WE-01-17-002-point-y" expr="2**3-2*2" expected="4" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-17-002-tangent-slope" expr="3*2**2-2" expected="10" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-17-002-tangent-intercept" expr="4-10*2" expected="-16" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-17-002-normal-slope" expr="-1/10" expected="-0.1" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-17-002-normal-intercept" expr="4-(-0.1)*2" expected="4.2" units="" atol="1e-09" rtol="1e-09" -->
 
 ---
 
@@ -390,6 +401,11 @@ approaches 4.5 m asymptotically rather than overshooting.
 4.5 m and the level reaches 99.3% of it at $t = 5\tau$. Consistent: the rate
 at $t = 5\tau$ is $0.75e^{-5} = 0.0051$ m/min, essentially zero. The level has
 stopped changing, which is what "terminal" means ✓
+
+
+<!-- VERIFY id="WE-01-17-003-rate0" expr="4.5/6" expected="0.75" units="m/min" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-17-003-rate6" expr="0.75*exp(-1)" expected="0.276" units="m/min" atol="0.0005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-17-003-rate5tau" expr="0.75*exp(-5)" expected="0.0051" units="m/min" atol="5e-05" rtol="1e-09" -->
 
 ---
 
@@ -536,6 +552,9 @@ $= 5.020030 - 2.994006 + 2.001000 - 7 = -2.972976$
 
 $$\frac{-2.972976 - (-3)}{0.001} = \frac{0.027024}{0.001} = 27.02 \;\checkmark$$
 
+
+<!-- VERIFY id="WE-01-17-004-at1" expr="20+6+1" expected="27" units="" atol="1e-09" rtol="1e-09" -->
+
 ---
 
 ## 17.6 Product, Quotient, and Chain Rules
@@ -655,6 +674,9 @@ $y(0.001) = \dfrac{0.002 - 1}{3.000001} = \dfrac{-0.998}{3.000001} = -0.332666$
 
 $$\frac{-0.332666 - (-0.333333)}{0.001} = \frac{0.000667}{0.001} = 0.667 \;\checkmark$$
 
+
+
+<!-- VERIFY id="WE-01-17-006-at0" expr="6/9" expected="0.6666666666666666" units="" atol="1e-09" rtol="1e-09" -->
 ### Worked Example 7 — Chain Rule, Three Cases
 
 **Find each derivative.**
@@ -911,6 +933,16 @@ the origin, then advances again — consistent with the top panel of the figure.
 > develops that relationship properly. Nothing here depends on it; it is
 > mentioned so you know the second derivative is not the end of the line.
 
+
+<!-- VERIFY id="WE-01-17-009-rest1" expr="(12-sqrt(12**2-4*3*9))/(2*3)" expected="1" units="s" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-17-009-rest2" expr="(12+sqrt(12**2-4*3*9))/(2*3)" expected="3" units="s" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-17-009-azero" expr="12/6" expected="2" units="s" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-17-009-v2" expr="3*2**2-12*2+9" expected="-3" units="m/s" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-17-009-s1" expr="1**3-6*1**2+9*1" expected="4" units="m" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-17-009-s3" expr="3**3-6*3**2+9*3" expected="0" units="m" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-17-009-v0" expr="9" expected="9" units="m/s" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-17-009-v4" expr="3*4**2-12*4+9" expected="9" units="m/s" atol="1e-09" rtol="1e-09" -->
+
 ---
 
 ## 17.9 Implicit Differentiation
@@ -1008,6 +1040,11 @@ $$\frac{dy}{dx}\bigg|_{(3,3)} = \frac{2(3) - 9}{9 - 2(3)} = \frac{6-9}{9-6} = \f
 
 The tangent at $(3,3)$ has slope $-1$.
 
+
+<!-- VERIFY id="WE-01-17-010-curve-check" expr="3**3+3**3" expected="54" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-17-010-rhs-check" expr="6*3*3" expected="54" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-17-010-slope" expr="(2*3-3**2)/(3**2-2*3)" expected="-1" units="" atol="1e-09" rtol="1e-09" -->
+
 ---
 
 ## 17.10 Engineering Sensitivity: A Worked Application
@@ -1071,6 +1108,13 @@ $$1.85 \times 3.472 = 6.42 \text{ kPa per L/s} \;\checkmark$$
 This confirms (b) by a completely independent route, and it is a check worth
 knowing: for any power law, the derivative equals the exponent times the
 secant ratio through the origin.
+
+
+<!-- VERIFY id="WE-01-17-011-dp" expr="0.42*(12**1.85)" expected="41.66" units="kPa" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-17-011-deriv" expr="1.85*0.42*(12**0.85)" expected="6.42" units="kPa per L/s" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-17-011-linear" expr="(1.85*0.42*(12**0.85))*0.5" expected="3.21" units="kPa" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-17-011-exact125" expr="0.42*(12.5**1.85)" expected="44.93" units="kPa" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-17-011-exact-increase" expr="0.42*(12.5**1.85)-0.42*(12**1.85)" expected="3.27" units="kPa" atol="0.005" rtol="1e-09" -->
 
 ---
 

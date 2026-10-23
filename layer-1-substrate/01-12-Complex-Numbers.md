@@ -66,17 +66,19 @@ All of that starts here.
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-- **12.1** Define the imaginary unit $j$ and perform arithmetic with $j$
-- **12.2** Write complex numbers in rectangular form and identify real and
+
+* 12.1 Define the imaginary unit $j$ and perform arithmetic with $j$
+* 12.2 Write complex numbers in rectangular form and identify real and
   imaginary parts
-- **12.3** Add, subtract, multiply, and divide complex numbers in rectangular
+* 12.3 Add, subtract, multiply, and divide complex numbers in rectangular
   form
-- **12.4** Compute the complex conjugate and use it for division
-- **12.5** Convert between rectangular and polar form
-- **12.6** State and apply Euler's identity
-- **12.7** Multiply and divide complex numbers in polar form
-- **12.8** Find powers and roots using De Moivre's theorem
-- **12.9** Recognize the phasor representation of AC signals
+* 12.4 Compute the complex conjugate and use it for division
+* 12.5 Convert between rectangular and polar form
+* 12.6 State and apply Euler's identity
+* 12.7 Multiply and divide complex numbers in polar form
+* 12.8 Find powers and roots using De Moivre's theorem
+* 12.9 Recognize the phasor representation of AC signals
+
 ---
 
 ## Notation Used Here
@@ -188,6 +190,14 @@ $$= \frac{3 + 6j + 4j + 8j^2}{5} = \frac{3 - 8 + 10j}{5} = \frac{-5 + 10j}{5} = 
 
 **Check (c).** Verify: $(-1+2j)(1-2j) = -1+2j+2j-4j^2 = -1+4j+4 = 3+4j = z_1$ ✓
 
+
+<!-- VERIFY id="WE-01-12-001-sum-real" expr="3+1" expected="4" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-12-001-sum-imag" expr="4+(-2)" expected="2" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-12-001-prod-real" expr="3*1-4*(-2)" expected="11" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-12-001-prod-imag" expr="3*(-2)+4*1" expected="-2" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-12-001-quot-real" expr="(3*1+4*(-2))/(1**2+(-2)**2)" expected="-1" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-12-001-quot-imag" expr="(4*1-3*(-2))/(1**2+(-2)**2)" expected="2" units="" atol="1e-09" rtol="1e-09" -->
+
 ---
 
 ## 12.3 Polar Form and the Modulus
@@ -223,14 +233,20 @@ correction.
 
 $$\boxed{z = 5\angle 53.1°}$$
 
-(b) $a = 5\cos(-37°) = 5(0.7986) = 3.993 \approx 4.00$
+(b) $a = 5\cos(-37°) = 5(0.7986) = 3.993 \approx 3.99$
 
 $b = 5\sin(-37°) = 5(-0.6018) = -3.009 \approx -3.01$
 
-$$\boxed{z = 4.00 - 3.01j}$$
+$$\boxed{z = 3.99 - 3.01j}$$
 
-**Check (b).** $\sqrt{4^2 + 3.01^2} = \sqrt{16 + 9.06} = \sqrt{25.06} \approx
+**Check (b).** $\sqrt{3.99^2 + 3.01^2} = \sqrt{15.92 + 9.06} = \sqrt{24.98} \approx
 5$ ✓
+
+
+<!-- VERIFY id="WE-01-12-002-modulus" expr="sqrt(3**2+4**2)" expected="5" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-12-002-angle" expr="degrees(atan(4/3))" expected="53.1" units="deg" atol="0.05" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-12-002-real" expr="5*cos(radians(-37))" expected="3.99" units="" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-12-002-imag" expr="5*sin(radians(-37))" expected="-3.01" units="" atol="0.005" rtol="1e-09" -->
 
 ---
 
@@ -359,6 +375,15 @@ $z_2 = 2(\cos 240° + j\sin 240°) = 2(-1/2 - j\sqrt{3}/2) = -1 - j\sqrt{3}$
 **Check $z_1$:** $(-1+j\sqrt{3})^3$. Let me verify via modulus: $\lvert z_1
 \rvert = \sqrt{1+3} = 2$, and $\lvert z_1^3 \rvert = 2^3 = 8$ ✓. Angle of
 $z_1^3 = 3 \times 120° = 360° = 0°$ ✓, so $z_1^3 = 8\angle 0° = 8$ ✓.
+
+
+<!-- VERIFY id="WE-01-12-004-modulus" expr="8**(1/3)" expected="2" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-12-004-z0-real" expr="2*cos(radians(0))" expected="2" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-12-004-z0-imag" expr="2*sin(radians(0))" expected="0" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-12-004-z1-real" expr="2*cos(radians(120))" expected="-1" units="" atol="1e-12" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-12-004-z1-imag" expr="2*sin(radians(120))" expected="1.7320508075688772" units="" atol="1e-12" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-12-004-z2-real" expr="2*cos(radians(240))" expected="-1" units="" atol="1e-12" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-12-004-z2-imag" expr="2*sin(radians(240))" expected="-1.7320508075688772" units="" atol="1e-12" rtol="1e-09" -->
 
 ---
 

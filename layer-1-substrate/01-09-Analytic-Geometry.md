@@ -70,23 +70,23 @@ section is the one that makes the rest stick.
 
 By the end of this chapter, you will be able to:
 
-* **9.1** Find the equation of a line from two points, from a point and a slope,
+* 9.1 Find the equation of a line from two points, from a point and a slope,
   or from a point and a parallel or perpendicular condition; compute the
   distance from a point to a line and the angle between two lines
-* **9.2** Compute the distance between two points and the midpoint of a segment,
+* 9.2 Compute the distance between two points and the midpoint of a segment,
   in two and three dimensions
-* **9.3** Describe the four conic sections as slices of a cone and state what
+* 9.3 Describe the four conic sections as slices of a cone and state what
   distinguishes them
-* **9.4** Write the equation of a circle in standard form, and convert a general
+* 9.4 Write the equation of a circle in standard form, and convert a general
   equation to standard form by completing the square
-* **9.5** Identify the vertex, focus, directrix, axis, and opening direction of a
+* 9.5 Identify the vertex, focus, directrix, axis, and opening direction of a
   parabola from its equation
-* **9.6** Identify the centre, axes, vertices, and foci of an ellipse, and apply
+* 9.6 Identify the centre, axes, vertices, and foci of an ellipse, and apply
   $c^2 = a^2 - b^2$
-* **9.7** Identify the centre, vertices, foci, and asymptotes of a hyperbola, and
+* 9.7 Identify the centre, vertices, foci, and asymptotes of a hyperbola, and
   apply $c^2 = a^2 + b^2$
-* **9.8** Define eccentricity and use it to classify and compare all four conics
-* **9.9** Classify any second-degree equation by inspection and reduce it to
+* 9.8 Define eccentricity and use it to classify and compare all four conics
+* 9.9 Classify any second-degree equation by inspection and reduce it to
   standard form
 
 ---
@@ -223,6 +223,7 @@ genuinely zero.
 (b) Find the equation of the line through $(-3, 4)$ perpendicular to
 $y = 2x - 7$.
 (c) Find the distance from $(3, -2)$ to the line $3x - 4y + 5 = 0$.
+(d) Find the acute angle between two lines with slopes $m_1 = 2$ and $m_2 = -\tfrac{1}{3}$.
 
 
 **Solution.**
@@ -263,6 +264,14 @@ $$\theta = \arctan 7 = \boxed{81.9°}$$
 *Sanity check:* one line rises steeply, the other falls gently, so a large
 acute angle is right. Had the answer come out near $0°$ or above $90°$, the
 formula was misapplied.
+
+
+<!-- VERIFY id="WE-01-09-001-slope-a" expr="(5-(-1))/(5-2)" expected="2" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-09-001-intercept-a" expr="-1-2*2" expected="-5" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-09-001-perp-slope" expr="-1/2" expected="-0.5" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-09-001-intercept-b" expr="4-(-0.5)*(-3)" expected="2.5" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-09-001-distance" expr="abs(3*3+(-4)*(-2)+5)/sqrt(3**2+(-4)**2)" expected="4.4" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-09-001-angle" expr="degrees(atan(abs(((-1/3)-2)/(1+2*(-1/3)))))" expected="81.9" units="deg" atol="0.05" rtol="1e-9" -->
 
 ---
 
@@ -410,6 +419,11 @@ $$\boxed{\text{Centre } (3, -2), \quad r = \sqrt{16} = 4}$$
 *Check.* The point $(3+4, -2) = (7,-2)$ should lie on the circle. In the
 original equation: $49 + 4 - 42 - 8 - 3 = 0$ ✓
 
+
+
+<!-- VERIFY id="WE-01-09-002-radius-a-sq" expr="5**2" expected="25" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-09-002-radius-b" expr="sqrt(3+9+4)" expected="4" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-09-002-check-point" expr="7**2+(-2)**2-6*7+4*(-2)-3" expected="0" units="" atol="1e-12" rtol="1e-9" -->
 ### Worked Example 3 — Circle Through Three Points
 
 Three points that are not collinear determine exactly one circle. Finding it
@@ -461,6 +475,13 @@ $(3,4)$ ✓ — the centre, by a completely different route.
 > Build the habit of looking for a second route on any answer you distrust.
 >
 > ---
+
+
+<!-- VERIFY id="WE-01-09-003-D" expr="-36/6" expected="-6" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-09-003-E" expr="-64/8" expected="-8" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-09-003-center-x" expr="-(-6)/2" expected="3" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-09-003-center-y" expr="-(-8)/2" expected="4" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-09-003-radius" expr="sqrt(3**2+4**2)" expected="5" units="" atol="1e-12" rtol="1e-9" -->
 
 ---
 
@@ -644,6 +665,11 @@ $$\boxed{(\pm 4,\; 0)}$$
 *Checks.* At $x = 5$: $y = 0$ ✓, the vertex. At $x = 0$: $y = \pm 3$ ✓, the
 co-vertices. And $c = 4 < a = 5$, so the foci are inside the curve ✓.
 
+
+<!-- VERIFY id="WE-01-09-005-c" expr="sqrt(5**2-3**2)" expected="4" units="m" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-09-005-e" expr="4/5" expected="0.8" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-09-005-area" expr="pi*5*3" expected="47.1" units="m^2" atol="0.05" rtol="1e-9" -->
+
 ---
 
 ## 9.7 Hyperbolas
@@ -747,6 +773,13 @@ $$e = \frac{c}{a} = \frac{30\sqrt5}{30} = \sqrt5 \approx \boxed{2.24}$$
 diameter (60 m) and the diameter at 80 m (100 m) ✓, and it is nearer the waist
 value — correct, because a hyperbola flares slowly near its vertex and then
 accelerates. The eccentricity exceeds 1, as it must for any hyperbola ✓.
+
+
+<!-- VERIFY id="WE-01-09-006-b2" expr="6400*900/1600" expected="3600" units="m^2" atol="1e-09" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-09-006-b" expr="sqrt(3600)" expected="60" units="m" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-09-006-diameter40" expr="2*sqrt(900*(1+1600/3600))" expected="72.1" units="m" atol="0.05" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-09-006-c" expr="sqrt(900+3600)" expected="67.1" units="m" atol="0.05" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-09-006-e" expr="sqrt(900+3600)/30" expected="2.24" units="" atol="0.005" rtol="1e-9" -->
 
 ---
 
@@ -895,15 +928,42 @@ $4(4) - 9(4) + 8(2) + 36(2) - 68 = 16 - 36 + 16 + 72 - 68 = 0$ ✓
 
 ## As the Handbook States It
 
-> **Verified against FE Reference Handbook 10.6.** Printed p. 37 directly supplies straight-line forms, slope, the angle between lines, the perpendicular-slope relation, and the distance between two points. The Handbook's mensuration pages contain selected geometric formulas, but they do **not** provide the complete midpoint, point-to-line-distance, focal-geometry, or eccentricity treatment used in this chapter.
+> **Handbook 10.6, pp. 37–40** — *Mathematics / Analytic Geometry*
 
-### Source Boundary
+The Handbook provides:
 
-- **FE-Handbook-supported** — Straight-line equations, slope/perpendicularity, angle between lines, and point-to-point distance are supported by FE Reference Handbook 10.6 printed p. 37.
-- **Externally supported** — OpenStax Intermediate Algebra 2e §11.1 supports distance and midpoint formulas. OpenStax Precalculus 2e Chapter 10 and OpenStax Calculus Volume 2 §7.5 support analytic conic equations, foci/directrices, and eccentricity.
-- **Guide synthesis** — Point-to-line derivations, completing-square procedures, conic-classification workflow, worked examples, and exam-navigation advice are instructional synthesis based on the cited sources rather than claims of direct Handbook coverage.
+- Straight-line equations in all three forms, with slope relationships
+- The angle between two lines
+- Distance from a point to a line
+- The distance formula
+- Standard-form equations for circle, parabola, ellipse, and hyperbola, with
+  their parameter relations
+- Eccentricity definitions
+- The $B^2 - 4AC$ discriminant for rotated conics
 
-**Exam-use implication.** Treat the Handbook as a direct lookup for the p. 37 straight-line relations. Do not assume that midpoint, full analytic-conic geometry, or eccentricity formulas are available there; know the method or use the externally supported guide treatment.
+**The Handbook does not provide:**
+
+- Any derivation from the focus-directrix definitions
+- The procedure for completing the square
+- Rules for classifying a general equation by inspecting $A$ and $C$
+- How to find a conic from geometric conditions — a circle through three
+  points, a parabola from vertex and a passing point, and so on
+- The reflective property of the parabola
+
+Those are memorize-and-practise material. Note the pattern, which holds across
+the whole Handbook: it stores **formulas**, not **methods**. Anything
+procedural has to come from you.
+
+**Notation note.** The Handbook uses $(h,k)$ for centres and vertices, $a \ge b$
+for the ellipse, and $c^2 = a^2 - b^2$ for ellipses against $c^2 = a^2 + b^2$
+for hyperbolas — all matching this chapter. Match its notation in final
+answers.
+
+**A caveat on page numbers.** Section and page references track the Handbook
+edition. Verify them against the version you will actually sit with, since
+NCEES renumbers between editions.
+
+---
 
 ## Where This Goes Wrong
 
@@ -1530,15 +1590,6 @@ satisfies the equation. (A) and (B) take a root of a negative right side; (C)
 would require a right side of exactly zero. (§9.4)
 
 ---
-
-
-
-## Terminology Alignment
-
-- **general form line** — the line equation Ax+By+C=0.
-- **perpendicular slopes** — the relationship m1 m2=-1 for nonvertical perpendicular lines.
-- **hyperbola asymptote** — a line approached by a hyperbola that helps define its orientation and limiting geometry.
-- **completing the square conic** — the completing-the-square procedure used to convert a conic equation into standard form.
 
 ## Quick Reference
 

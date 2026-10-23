@@ -78,30 +78,31 @@ the applications are Chapter 01-20. This chapter builds the tool.
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-- **19.1** Define an antiderivative and explain why the constant of integration is
+
+* 19.1 Define an antiderivative and explain why the constant of integration is
   required
-- **19.2** Apply the basic integration rules for powers, exponentials, logarithms,
+* 19.2 Apply the basic integration rules for powers, exponentials, logarithms,
   and trigonometric functions
-- **19.3** Handle the $n = -1$ exception to the power rule and explain why the
+* 19.3 Handle the $n = -1$ exception to the power rule and explain why the
   absolute value appears
-- **19.4** Construct a Riemann sum for a function on an interval and evaluate a
+* 19.4 Construct a Riemann sum for a function on an interval and evaluate a
   definite integral as the limit of Riemann sums
-- **19.5** Interpret the definite integral as signed area and determine the sign of
+* 19.5 Interpret the definite integral as signed area and determine the sign of
   a contribution
-- **19.6** Apply the properties of definite integrals, including reversal of limits
+* 19.6 Apply the properties of definite integrals, including reversal of limits
   and additivity over subintervals
-- **19.7** State both parts of the Fundamental Theorem of Calculus and explain what
+* 19.7 State both parts of the Fundamental Theorem of Calculus and explain what
   each one does
-- **19.8** Evaluate definite integrals using antiderivatives and the evaluation
+* 19.8 Evaluate definite integrals using antiderivatives and the evaluation
   notation
-- **19.9** Differentiate an accumulation function using the second part of the
+* 19.9 Differentiate an accumulation function using the second part of the
   Fundamental Theorem
-- **19.10** Integrate by substitution, recognizing when the technique applies
-- **19.11** Change the limits of integration when substituting in a definite
+* 19.10 Integrate by substitution, recognizing when the technique applies
+* 19.11 Change the limits of integration when substituting in a definite
   integral
-- **19.12** Exploit even and odd symmetry to simplify definite integrals over
+* 19.12 Exploit even and odd symmetry to simplify definite integrals over
   symmetric intervals
-- **19.13** Compute the average value of a function over an interval and interpret
+* 19.13 Compute the average value of a function over an interval and interpret
   it physically
 
 ---
@@ -415,6 +416,9 @@ is right for a parabola ✓
 a limit from another, and a page of algebra. In §19.6 we will get $\frac{8}{3}$ in
 one line.
 
+
+<!-- VERIFY id="WE-01-19-003-integral" expr="8/3" expected="2.6666666666666665" units="" atol="1e-09" rtol="1e-09" -->
+
 ---
 
 ## 19.4 Signed Area and the Properties of Definite Integrals
@@ -555,6 +559,9 @@ $$\int_0^2 x^2\,dx = \left[\frac{x^3}{3}\right]_0^2 = \frac{8}{3} - 0 = \boxed{\
 Compare with Worked Example 3: same answer, one line instead of a page. That
 contrast is the entire value of the theorem.
 
+
+
+<!-- VERIFY id="WE-01-19-004-integral" expr="(2**3)/3" expected="2.6666666666666665" units="" atol="1e-09" rtol="1e-09" -->
 ### Worked Example 5 — Definite Integrals
 
 **Evaluate each.**
@@ -585,6 +592,12 @@ $$= \boxed{0}$$
 Verify the long way: $\left[\frac{x^4}{4}\right]_{-2}^{2} = 4 - 4 = 0$ ✓ The
 symmetry check took two seconds.
 
+
+
+<!-- VERIFY id="WE-01-19-005-a" expr="(4**3-4**2+4)-(1**3-1**2+1)" expected="51" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-19-005-b" expr="1" expected="1" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-19-005-c" expr="log(e)-log(1)" expected="1" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-19-005-d" expr="(2**4)/4-((-2)**4)/4" expected="0" units="" atol="1e-09" rtol="1e-09" -->
 ### Worked Example 6 — Part 2 in Use
 
 **Find each derivative.**
@@ -740,6 +753,9 @@ $$\left[\frac{\left(x^2+1\right)^4}{8}\right]_0^1 = \frac{16}{8} - \frac{1}{8} =
 
 Both routes agree. Note how Route 1 never required writing $(x^2+1)^4$ at all.
 
+
+<!-- VERIFY id="WE-01-19-008-integral" expr="(2**4-1**4)/8" expected="1.875" units="" atol="1e-09" rtol="1e-09" -->
+
 ---
 
 ## 19.7 Average Value of a Function
@@ -797,6 +813,9 @@ spent the interval $1 < t < 3$ moving backward. Average velocity uses net
 displacement; total distance travelled would be larger. That is the signed-area
 distinction from §19.4 appearing in physical form, and Chapter 01-20 handles it
 properly.
+
+
+<!-- VERIFY id="WE-01-19-009-average" expr="(4**3-6*4**2+9*4)/4" expected="1.0" units="m/s" atol="1e-09" rtol="1e-09" -->
 
 ---
 
@@ -869,6 +888,10 @@ $t = -6\ln(0.432) = 5.04$ min, comfortably inside the interval ✓
 > reading the question.
 >
 > ---
+
+
+<!-- VERIFY id="WE-01-19-010-rise" expr="4.5*(1-exp(-2))" expected="3.891" units="m" atol="0.0005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-19-010-average" expr="4.5*(1-exp(-2))/12" expected="0.324" units="m/min" atol="0.0005" rtol="1e-09" -->
 
 ---
 

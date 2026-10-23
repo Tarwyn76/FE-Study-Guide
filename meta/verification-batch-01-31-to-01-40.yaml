@@ -1,0 +1,35 @@
+schema_version: 1
+batch: 01-31-to-01-40
+date: '2026-10-23'
+chapters:
+- 01-31
+- 01-32
+- 01-33
+- 01-34
+- 01-35
+- 01-36
+- 01-37
+- 01-38
+- 01-39
+- 01-40
+corrections:
+- chapter: 01-38
+  example: 6 — Third Success on Trial 7
+  old: '0.0973'
+  new: '0.0972'
+  reason: 15*(0.30)^3*(0.70)^4 = 0.0972405, which rounds to 0.0972 at four decimal
+    places.
+- chapter: 01-40
+  example: 5 — Capability from R-bar
+  old: '2.067'
+  new: '2.068'
+  reason: (25.02-24.70)/(3*(0.12/2.326)) = 2.067555..., which rounds to 2.068 at three
+    decimal places.
+verifier_updates:
+- Added ceil/floor helpers for sample-size rounding checks.
+- Added comb/factorial helpers for discrete-distribution checks.
+- Added min/max helpers for capability-index checks.
+- Added statistics.NormalDist().inv_cdf as norm_ppf for independent standard-normal
+  critical-value checks.
+planned_verify_checks: 67
+targeted_candidates: 25

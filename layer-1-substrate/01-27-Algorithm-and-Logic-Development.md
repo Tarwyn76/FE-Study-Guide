@@ -456,6 +456,10 @@ The procedure swaps the two values without a temporary variable.
 
 ---
 
+
+<!-- VERIFY id="WE-01-27-003-x" expr="(3+8)-((3+8)-8)" expected="8" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-27-003-y" expr="(3+8)-8" expected="3" units="" atol="1e-09" rtol="1e-09" -->
+
 ## 27.4 Boolean Logic and Branch Design
 
 A **Boolean expression** evaluates to either true or false.
@@ -1288,14 +1292,16 @@ D) the residual set to zero.
     x >= -2 and x < 5
     ```
 
-    (§27.4) Verification: the stated value follows from the chapter relation applied to the quantities in the problem; retain the indicated units and check the result against the problem statement.
+    (§27.4)
+
 15. By De Morgan's law:
 
     ```text
     pressure < 200 or pressure > 500
     ```
 
-    (§27.4) Verification: the stated value follows from the chapter relation applied to the quantities in the problem; retain the indicated units and check the result against the problem statement.
+    (§27.4)
+
 16. After 12 processed measurements,
 
     $$\boxed{0\le\texttt{count}\le12}.$$
@@ -1324,7 +1330,8 @@ D) the residual set to zero.
 
 ### Multiple Choice
 
-20. **B — diamond.** (§27.2) Verification: the stated value follows from the chapter relation applied to the quantities in the problem; retain the indicated units and check the result against the problem statement.
+20. **B — diamond.** (§27.2)
+
 21. **C — `x = 5`.** It assigns the value 5. (§27.3)
 
 22. **A — `while`.** Its condition is checked before the first body execution.

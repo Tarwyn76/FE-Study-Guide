@@ -266,6 +266,12 @@ value must exceed 1.9600. It does.
 
 ---
 
+
+
+<!-- VERIFY id="WE-01-32-001-alpha" expr="1-0.98" expected="0.02" units="" atol="1e-9" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-32-001-tail" expr="(1-0.98)/2" expected="0.01" units="" atol="1e-9" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-32-001-zcrit" expr="norm_ppf(0.99)" expected="2.3263" units="" atol="0.00005" rtol="1e-09" -->
+
 ## 32.2 Confidence Interval for a Mean — Population $\sigma$ Known
 
 Suppose a population mean $\mu$ is unknown but the population standard deviation
@@ -453,6 +459,13 @@ requires approximately four times as many observations.
 
 ---
 
+
+
+<!-- VERIFY id="WE-01-32-002-se" expr="12/sqrt(36)" expected="2" units="g" atol="1e-9" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-32-002-margin" expr="1.96*(12/sqrt(36))" expected="3.92" units="g" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-32-002-lower" expr="503.0-1.96*(12/sqrt(36))" expected="499.08" units="g" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-32-002-upper" expr="503.0+1.96*(12/sqrt(36))" expected="506.92" units="g" atol="0.005" rtol="1e-09" -->
+
 ## 32.3 Confidence Interval for a Mean — Population $\sigma$ Unknown
 
 When population $\sigma$ is unknown and estimated using sample standard deviation
@@ -590,6 +603,14 @@ $$
 $$
 
 **Check.** The point estimate 52.4 lies at the interval center.
+
+
+
+<!-- VERIFY id="WE-01-32-003-df" expr="10-1" expected="9" units="" atol="1e-9" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-32-003-se" expr="3/sqrt(10)" expected="0.94868" units="" atol="0.000005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-32-003-margin" expr="2.262*(3/sqrt(10))" expected="2.146" units="" atol="0.0005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-32-003-lower" expr="52.4-2.262*(3/sqrt(10))" expected="50.254" units="" atol="0.0005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-32-003-upper" expr="52.4+2.262*(3/sqrt(10))" expected="54.546" units="" atol="0.0005" rtol="1e-09" -->
 
 ### Worked Example 4 — Why $t$ Is Wider Than $z$
 
@@ -888,6 +909,14 @@ that fact will be developed formally in the hypothesis-testing chapter.
 
 ---
 
+
+
+<!-- VERIFY id="WE-01-32-005-difference" expr="102-98" expected="4" units="" atol="1e-9" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-32-005-se" expr="sqrt(4**2/25+6**2/36)" expected="1.2806" units="" atol="0.00005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-32-005-margin" expr="1.96*sqrt(4**2/25+6**2/36)" expected="2.510" units="" atol="0.0005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-32-005-lower" expr="(102-98)-1.96*sqrt(4**2/25+6**2/36)" expected="1.49" units="" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-32-005-upper" expr="(102-98)+1.96*sqrt(4**2/25+6**2/36)" expected="6.51" units="" atol="0.005" rtol="1e-09" -->
+
 ## 32.5 Confidence Interval for a Normal-Population Variance
 
 Mean intervals were symmetric because $z$ and $t$ are symmetric.
@@ -1076,6 +1105,15 @@ nonnormal variance problem.
 
 ---
 
+
+
+<!-- VERIFY id="WE-01-32-006-df" expr="10-1" expected="9" units="" atol="1e-9" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-32-006-numerator" expr="(10-1)*4" expected="36" units="" atol="1e-9" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-32-006-var-lower" expr="((10-1)*4)/19.0228" expected="1.8925" units="" atol="0.00005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-32-006-var-upper" expr="((10-1)*4)/2.7004" expected="13.331" units="" atol="0.0005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-32-006-sd-lower" expr="sqrt(((10-1)*4)/19.0228)" expected="1.3757" units="" atol="0.00005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-32-006-sd-upper" expr="sqrt(((10-1)*4)/2.7004)" expected="3.6512" units="" atol="0.00005" rtol="1e-09" -->
+
 ## 32.6 Margin of Error and Sample-Size Planning
 
 For a known-$\sigma$ mean interval,
@@ -1209,6 +1247,11 @@ $$
 
 **Check.** Using 61 instead would make the margin slightly larger than the design
 target.
+
+
+
+<!-- VERIFY id="WE-01-32-007-n-raw" expr="(1.96*12/3)**2" expected="61.4656" units="" atol="0.00005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-32-007-n-required" expr="ceil((1.96*12/3)**2)" expected="62" units="" atol="1e-9" rtol="1e-09" -->
 
 ### Worked Example 8 — Sample Size and Diminishing Returns
 

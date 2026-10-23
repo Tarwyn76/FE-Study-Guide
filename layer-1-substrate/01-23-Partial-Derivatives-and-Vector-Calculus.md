@@ -87,26 +87,27 @@ occasionally. Drill the first two groups.
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-- **23.1** Interpret a function of two variables as a surface and sketch or read its
+
+* 23.1 Interpret a function of two variables as a surface and sketch or read its
   level curves
-- **23.2** Compute first partial derivatives and state what each one measures
-- **23.3** Compute higher-order and mixed partial derivatives, and apply the equality
+* 23.2 Compute first partial derivatives and state what each one measures
+* 23.3 Compute higher-order and mixed partial derivatives, and apply the equality
   of mixed partials
-- **23.4** Write the total differential of a function of several variables
-- **23.5** Propagate measurement uncertainty through a formula using the total
+* 23.4 Write the total differential of a function of several variables
+* 23.5 Propagate measurement uncertainty through a formula using the total
   differential, and identify which input dominates
-- **23.6** Apply the power-law shortcut for uncertainty in a product of powers
-- **23.7** Write the equation of a tangent plane and recognize it as the first-order
+* 23.6 Apply the power-law shortcut for uncertainty in a product of powers
+* 23.7 Write the equation of a tangent plane and recognize it as the first-order
   multivariable Taylor polynomial
-- **23.8** Apply the multivariable chain rule to a related-rates problem
-- **23.9** Compute the gradient and state its two defining properties
-- **23.10** Compute a directional derivative and relate it to the gradient magnitude
-- **23.11** Compute the divergence of a vector field and interpret it as source
+* 23.8 Apply the multivariable chain rule to a related-rates problem
+* 23.9 Compute the gradient and state its two defining properties
+* 23.10 Compute a directional derivative and relate it to the gradient magnitude
+* 23.11 Compute the divergence of a vector field and interpret it as source
   strength
-- **23.12** Compute the curl of a vector field and interpret it as local rotation
-- **23.13** Locate and classify critical points of a function of two variables using
+* 23.12 Compute the curl of a vector field and interpret it as local rotation
+* 23.13 Locate and classify critical points of a function of two variables using
   the second-derivative test
-- **23.14** Solve a constrained optimization problem by the method of Lagrange
+* 23.14 Solve a constrained optimization problem by the method of Lagrange
   multipliers
 
 ---
@@ -242,6 +243,10 @@ $$f_y = (2)^2 + 9(2)(1)^2 - 2 = 4 + 18 - 2 = \boxed{20}$$
 **Interpretation.** At the point $(2,1)$ the surface is nearly three times steeper
 in the $y$-direction than in the $x$-direction. Moving one unit in $y$ changes $f$
 by roughly 20; moving one unit in $x$ changes it by roughly 7.
+
+
+<!-- VERIFY id="WE-01-23-001-fx" expr="2*2*1+3*(1**3)" expected="7" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-23-001-fy" expr="2**2+9*2*(1**2)-2" expected="20" units="" atol="1e-09" rtol="1e-09" -->
 
 ### Worked Example 2 — Product and Chain Rules Still Apply
 
@@ -417,6 +422,15 @@ the volume. Halving the radius uncertainty, by contrast, cuts the total to 1.83%
 That kind of ranking is why error propagation is done at all — not to decorate a
 result with an error bar, but to decide where to spend money.
 
+
+<!-- VERIFY id="WE-01-23-004-vraw" expr="pi*(25**2)*80" expected="157080" units="mm^3" atol="0.5" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-23-004-dr" expr="2*pi*25*80*0.3" expected="3769.9" units="mm^3" atol="0.05" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-23-004-dh" expr="pi*(25**2)*0.5" expected="981.7" units="mm^3" atol="0.05" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-23-004-dv" expr="2*pi*25*80*0.3+pi*(25**2)*0.5" expected="4751.7" units="mm^3" atol="0.05" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-23-004-rel" expr="100*(2*pi*25*80*0.3+pi*(25**2)*0.5)/(pi*(25**2)*80)" expected="3.03" units="%" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-23-004-vreport" expr="pi*(25**2)*80" expected="157100" units="mm^3" atol="50" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-23-004-dvreport" expr="2*pi*25*80*0.3+pi*(25**2)*0.5" expected="4800" units="mm^3" atol="50" rtol="1e-09" -->
+
 ### Worked Example 5 — Flow Rate from Diameter and Velocity
 
 **Given.** Flow in a circular pipe, $Q = \frac{\pi D^2}{4}v$, with
@@ -483,6 +497,12 @@ and only computing both tells you which wins.
 
 ---
 
+
+<!-- VERIFY id="WE-01-23-005-qm3" expr="pi*(0.150**2)*2.40/4" expected="0.042412" units="m^3/s" atol="5e-07" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-23-005-qls" expr="1000*pi*(0.150**2)*2.40/4" expected="42.4" units="L/s" atol="0.05" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-23-005-rel" expr="100*(2*(1/150)+0.05/2.40)" expected="3.42" units="%" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-23-005-dq" expr="(1000*pi*(0.150**2)*2.40/4)*(2*(1/150)+0.05/2.40)" expected="1.45" units="L/s" atol="0.005" rtol="1e-09" -->
+
 ## 23.4 The Multivariable Chain Rule
 
 When the inputs themselves depend on a further variable — usually time — the
@@ -528,6 +548,12 @@ $\frac{\partial P}{\partial R}$ was essential; dropping it would have given
 $0.1125$ W/s, three times too large and in a way that no units check would catch.
 
 ---
+
+
+<!-- VERIFY id="WE-01-23-006-vterm" expr="(2*12/48)*0.15" expected="0.0750" units="W/s" atol="5e-05" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-23-006-rterm" expr="(-(12**2)/(48**2))*0.60" expected="-0.0375" units="W/s" atol="5e-05" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-23-006-net" expr="(2*12/48)*0.15+(-(12**2)/(48**2))*0.60" expected="0.0375" units="W/s" atol="5e-05" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-23-006-power" expr="12**2/48" expected="3.00" units="W" atol="0.005" rtol="1e-09" -->
 
 ## 23.5 The Gradient and Directional Derivatives
 
@@ -626,6 +652,15 @@ roughly $60°$ off the steepest line. Confirm:
 $\cos^{-1}(4.00/8.06) = \cos^{-1}(0.496) = 60.3°$ ✓
 
 ---
+
+
+<!-- VERIFY id="WE-01-23-007-gx" expr="2*1+3*2" expected="8" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-23-007-gy" expr="3*1-2*2" expected="-1" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-23-007-mag" expr="sqrt(8**2+(-1)**2)" expected="8.06" units="" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-23-007-ux" expr="8/sqrt(65)" expected="0.992" units="" atol="0.0005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-23-007-uy" expr="-1/sqrt(65)" expected="-0.124" units="" atol="0.0005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-23-007-dir" expr="8*(3/5)+(-1)*(4/5)" expected="4.00" units="" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-23-007-angle" expr="degrees(acos(4/sqrt(65)))" expected="60.3" units="deg" atol="0.05" rtol="1e-09" -->
 
 ## 23.6 Divergence and Curl
 
@@ -738,6 +773,12 @@ three components ✓ If either had the wrong type, the computation went wrong.
 
 ---
 
+
+<!-- VERIFY id="WE-01-23-008-div" expr="6*1*2-2*1+2*1*1" expected="12" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-23-008-curlx" expr="2*2" expected="4" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-23-008-curly" expr="-(1**2)" expected="-1" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-23-008-curlz" expr="-3*(1**2)" expected="-3" units="" atol="1e-09" rtol="1e-09" -->
+
 ## 23.7 Optimization with Several Variables
 
 ### Critical points
@@ -839,6 +880,15 @@ the variables and discard it.
 
 ![FIG-01-23-007: A contour map showing several level curves of an objective function f as nested closed curves labeled with increasing values, overlaid with a single heavier constraint curve g = k winding across them. At one point the constraint curve is tangent to a level curve; at that point two arrows are drawn — ∇f and ∇g — shown parallel, and the point is labeled "constrained optimum, ∇f = λ∇g". At a second point where the constraint curve visibly crosses a level curve, the two gradient arrows are drawn non-parallel and an arrow along the constraint is labeled "can still improve — slide this way".](../figures/FIG-01-23-007-lagrange-tangency.png)
 
+
+<!-- VERIFY id="WE-01-23-009-grad00x" expr="3*(0**2)-3*0" expected="0" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-23-009-grad00y" expr="3*(0**2)-3*0" expected="0" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-23-009-grad11x" expr="3*(1**2)-3*1" expected="0" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-23-009-grad11y" expr="3*(1**2)-3*1" expected="0" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-23-009-d00" expr="36*0*0-9" expected="-9" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-23-009-d11" expr="36*1*1-9" expected="27" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-23-009-f11" expr="1**3+1**3-3*1*1" expected="-1" units="" atol="1e-09" rtol="1e-09" -->
+
 ### Worked Example 10 — Minimum-Material Tank
 
 **Given.** A closed cylindrical tank must hold $2.00$ m³.
@@ -901,6 +951,12 @@ answer must be above the spherical floor, and it is — by a plausible margin. A
 cylinder coming out *below* the sphere would have been proof of an error.
 
 ---
+
+
+<!-- VERIFY id="WE-01-23-010-r" expr="(1/pi)**(1/3)" expected="0.683" units="m" atol="0.0005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-23-010-h" expr="2*(1/pi)**(1/3)" expected="1.366" units="m" atol="0.0005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-23-010-area" expr="2*pi*((1/pi)**(2/3))+2*pi*((1/pi)**(1/3))*(2*(1/pi)**(1/3))" expected="8.79" units="m^2" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-23-010-volume" expr="pi*((1/pi)**(2/3))*(2*(1/pi)**(1/3))" expected="2.00" units="m^3" atol="0.005" rtol="1e-09" -->
 
 ## As the Handbook States It
 
@@ -1031,6 +1087,7 @@ unchanged: error grows as the square of the distance.
 ### Ledger terminology alignment
 
 - **multivariable critical point** — a point where the gradient is zero or required first partial derivatives fail to exist.
+- **second-partial discriminant** — $D=f_{xx}f_{yy}-(f_{xy})^2$, used to classify a two-variable critical point.
 - **simply connected domain** — a connected domain with no holes that obstruct contraction of closed curves to a point.
 
 ## Key Terms

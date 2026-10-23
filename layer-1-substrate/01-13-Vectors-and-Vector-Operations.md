@@ -60,17 +60,19 @@ computation.
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-- **13.1** Distinguish scalar and vector quantities and represent vectors in
+
+* 13.1 Distinguish scalar and vector quantities and represent vectors in
   component form
-- **13.2** Add and subtract vectors geometrically and algebraically
-- **13.3** Find the magnitude of a vector and compute a unit vector
-- **13.4** Resolve a vector into rectangular components in 2D and 3D
-- **13.5** Compute the dot product and use it to find the angle between vectors
+* 13.2 Add and subtract vectors geometrically and algebraically
+* 13.3 Find the magnitude of a vector and compute a unit vector
+* 13.4 Resolve a vector into rectangular components in 2D and 3D
+* 13.5 Compute the dot product and use it to find the angle between vectors
   and projections
-- **13.6** Test vectors for perpendicularity and parallelism using the dot product
-- **13.7** Compute the cross product using the determinant method
-- **13.8** Use the cross product to find a moment and a unit normal
-- **13.9** Apply the scalar and vector triple products
+* 13.6 Test vectors for perpendicularity and parallelism using the dot product
+* 13.7 Compute the cross product using the determinant method
+* 13.8 Use the cross product to find a moment and a unit normal
+* 13.9 Apply the scalar and vector triple products
+
 ---
 
 ## Notation Used Here
@@ -192,6 +194,13 @@ This is the 3D analogue of $\sin^2\theta + \cos^2\theta = 1$.
 
 Verify: $(3/13)^2 + (-4/13)^2 + (12/13)^2 = (9+16+144)/169 = 169/169 = 1$ ✓
 
+
+<!-- VERIFY id="WE-01-13-001-mag" expr="sqrt(3**2+(-4)**2+12**2)" expected="13" units="kN" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-13-001-unit-x" expr="3/13" expected="0.23076923076923078" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-13-001-unit-y" expr="-4/13" expected="-0.3076923076923077" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-13-001-unit-z" expr="12/13" expected="0.9230769230769231" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-13-001-cos-sum" expr="(3/13)**2+(-4/13)**2+(12/13)**2" expected="1" units="" atol="1e-09" rtol="1e-09" -->
+
 ---
 
 ## 13.4 The Dot Product
@@ -270,6 +279,11 @@ $\text{comp}_{\vec{A}}\vec{B} = \frac{0}{\sqrt{14}} = 0$
 This makes sense: if $\vec{B}$ is perpendicular to $\vec{A}$, it has zero
 component along $\vec{A}$.
 
+
+
+<!-- VERIFY id="WE-01-13-002-dot" expr="2*(-1)+(-1)*4+3*2" expected="0" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-13-002-angle" expr="90" expected="90" units="deg" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-13-002-projection" expr="0/sqrt(14)" expected="0" units="" atol="1e-09" rtol="1e-09" -->
 ### Worked Example 3 — Work Done by a Force
 
 **Given.** A force $\vec{F} = (5\hat{\imath} + 3\hat{\jmath} - 2\hat{k})$ kN
@@ -284,6 +298,9 @@ $$W = \vec{F}\cdot\vec{d} = (5)(4) + (3)(-1) + (-2)(6) = 20 - 3 - 12 = \boxed{5 
 
 **Check.** Units: kN × m = kJ ✓. The work is positive, meaning $\vec{F}$
 has a net component in the direction of motion.
+
+
+<!-- VERIFY id="WE-01-13-003-work" expr="5*4+3*(-1)+(-2)*6" expected="5" units="kJ" atol="1e-09" rtol="1e-09" -->
 
 ---
 
@@ -373,6 +390,12 @@ $\vec{r}\cdot\vec{F} = (3)(0)+(0)(-5)+(4)(0) = 0$, so $\theta = 90°$,
 $\sin\theta = 1$.
 
 $M = 5 \times 5 \times 1 = 25$ kN·m ✓
+
+
+<!-- VERIFY id="WE-01-13-004-mx" expr="0*0-4*(-5)" expected="20" units="kN*m" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-13-004-my" expr="-(3*0-4*0)" expected="0" units="kN*m" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-13-004-mz" expr="3*(-5)-0*0" expected="-15" units="kN*m" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-13-004-mag" expr="sqrt(20**2+(-15)**2)" expected="25" units="kN*m" atol="1e-09" rtol="1e-09" -->
 
 ---
 

@@ -198,6 +198,9 @@ The shaft is two standard deviations above the process mean.
 
 **Unit check.** mm/mm = 1, so $z$ is dimensionless.
 
+
+<!-- VERIFY id="WE-01-30-002-z" expr="(25.20-25.00)/0.10" expected="2.00" units="" atol="0.005" rtol="1e-09" -->
+
 ### Worked Example 3 — Convert a $z$ Threshold Back to Units
 
 For the same process, find the diameter corresponding to $z=-1.5$.
@@ -207,6 +210,9 @@ $$x=\mu+z\sigma=25.00+(-1.5)(0.10)=\boxed{24.85\text{ mm}}.$$
 **Check.** A negative $z$ must produce a value below the mean.
 
 ---
+
+
+<!-- VERIFY id="WE-01-30-003-x" expr="25.00+(-1.5)*0.10" expected="24.85" units="mm" atol="0.005" rtol="1e-09" -->
 
 ## 30.3 Using the Handbook Unit-Normal Table
 
@@ -267,6 +273,10 @@ $$P(X\le115)=F(1.0)=\boxed{0.8413}.$$
 
 **Check.** 115 is above the mean, so the left-tail probability must exceed 0.5.
 
+
+<!-- VERIFY id="WE-01-30-004-z" expr="(115-100)/15" expected="1.0" units="" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-30-004-left" expr="0.5*(1+erf(1/sqrt(2)))" expected="0.8413" units="" atol="0.00005" rtol="1e-09" -->
+
 ### Worked Example 5 — Right Tail
 
 Using the same distribution, find $P(X>130)$.
@@ -280,6 +290,10 @@ $$P(X>130)=R(2.0)=\boxed{0.0228}.$$
 **Check.** Two standard deviations above the mean should leave only a few percent in the upper tail.
 
 ---
+
+
+<!-- VERIFY id="WE-01-30-005-z" expr="(130-100)/15" expected="2.0" units="" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-30-005-right" expr="1-0.5*(1+erf(2/sqrt(2)))" expected="0.0228" units="" atol="0.00005" rtol="1e-09" -->
 
 ## 30.4 Symmetry and Finite Intervals
 
@@ -332,6 +346,12 @@ Because the limits are symmetric, each tail contains $0.0668$.
 **Check.** The tail result agrees with $R(1.5)$.
 
 ---
+
+
+<!-- VERIFY id="WE-01-30-006-zl" expr="(47-50)/2" expected="-1.5" units="" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-30-006-zu" expr="(53-50)/2" expected="1.5" units="" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-30-006-band" expr="erf(1.5/sqrt(2))" expected="0.8664" units="" atol="0.00005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-30-006-nonconforming" expr="1-erf(1.5/sqrt(2))" expected="0.1336" units="" atol="0.00005" rtol="1e-09" -->
 
 ## 30.5 Inverse Normal Problems and Fractiles
 
@@ -387,6 +407,10 @@ $$\boxed{P(\mu-1.96\sigma\le X\le\mu+1.96\sigma)\approx0.95.}$$
 This geometry will reappear in confidence intervals. The interpretation changes there: a confidence interval is about an estimated parameter, not simply the probability that one observation falls inside a band.
 
 ---
+
+
+<!-- VERIFY id="WE-01-30-007-threshold" expr="500+1.6449*25" expected="541.1" units="MPa" atol="0.05" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-30-007-central95" expr="erf(1.96/sqrt(2))" expected="0.95" units="" atol="0.00005" rtol="1e-09" -->
 
 ## 30.6 Sums, Averages, and Standard Error
 
@@ -470,6 +494,13 @@ not 2.0. The standard deviation of individual observations and the standard erro
 
 ---
 
+
+<!-- VERIFY id="WE-01-30-008-mean" expr="500" expected="500" units="g" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-30-008-se" expr="12/sqrt(36)" expected="2" units="g" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-30-008-z" expr="(504-500)/(12/sqrt(36))" expected="2.0" units="" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-30-008-tail" expr="1-0.5*(1+erf(2/sqrt(2)))" expected="0.0228" units="" atol="0.00005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-30-008-individual-z" expr="(504-500)/12" expected="0.3333333333333333" units="" atol="1e-09" rtol="1e-09" -->
+
 ## 30.7 The Central Limit Theorem
 
 The Central Limit Theorem explains why normal methods apply far beyond perfectly normal populations.
@@ -529,6 +560,11 @@ $$P(\bar X>9.2)\approx R(2.0)=\boxed{0.0228}.$$
 
 **Check.** The original variable need not be normal. The approximation is being applied to the mean of 100 independent observations.
 
+
+<!-- VERIFY id="WE-01-30-009-se" expr="6/sqrt(100)" expected="0.60" units="min" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-30-009-z" expr="(9.2-8.0)/(6/sqrt(100))" expected="2.0" units="" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-30-009-tail" expr="1-0.5*(1+erf(2/sqrt(2)))" expected="0.0228" units="" atol="0.00005" rtol="1e-09" -->
+
 ### Worked Example 10 — CLT for a Sum
 
 Suppose independent daily demand has $\mu=40$ units/day and $\sigma=8$ units/day. For 25 days, let total demand be
@@ -552,6 +588,12 @@ $$P(Y>1080)\approx R(2.0)=\boxed{0.0228}.$$
 **Check.** Sum and mean spreads move in opposite ways with $n$: $\sigma\sqrt n$ for a sum, $\sigma/\sqrt n$ for a mean.
 
 ---
+
+
+<!-- VERIFY id="WE-01-30-010-mean" expr="25*40" expected="1000" units="units" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-30-010-sd" expr="8*sqrt(25)" expected="40" units="units" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-30-010-z" expr="(1080-25*40)/(8*sqrt(25))" expected="2.0" units="" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-30-010-tail" expr="1-0.5*(1+erf(2/sqrt(2)))" expected="0.0228" units="" atol="0.00005" rtol="1e-09" -->
 
 ## As the Handbook States It
 

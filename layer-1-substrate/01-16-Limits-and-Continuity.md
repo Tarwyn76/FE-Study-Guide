@@ -81,26 +81,26 @@ and important, and you need to be able to spot them.
 
 By the end of this chapter, you will be able to:
 
-* **16.1** State informally what $\lim_{x \to a}f(x) = L$ means and distinguish
+* 16.1 State informally what $\lim_{x \to a}f(x) = L$ means and distinguish
   it from $f(a)$
-* **16.2** Evaluate one-sided limits and use them to determine whether a
+* 16.2 Evaluate one-sided limits and use them to determine whether a
   two-sided limit exists
-* **16.3** Identify the three ways a limit can fail to exist
-* **16.4** Apply the limit laws for sums, products, quotients, powers, and roots
-* **16.5** Evaluate limits by direct substitution, factoring, rationalizing, and
+* 16.3 Identify the three ways a limit can fail to exist
+* 16.4 Apply the limit laws for sums, products, quotients, powers, and roots
+* 16.5 Evaluate limits by direct substitution, factoring, rationalizing, and
   combining fractions
-* **16.6** Recognize the indeterminate form $0/0$ and explain why it requires
+* 16.6 Recognize the indeterminate form $0/0$ and explain why it requires
   algebraic work
-* **16.7** Evaluate limits at infinity for rational and exponential functions and
+* 16.7 Evaluate limits at infinity for rational and exponential functions and
   locate horizontal asymptotes
-* **16.8** Evaluate infinite limits and locate vertical asymptotes
-* **16.9** Apply the special trigonometric limits
+* 16.8 Evaluate infinite limits and locate vertical asymptotes
+* 16.9 Apply the special trigonometric limits
   $\lim_{\theta \to 0}\frac{\sin\theta}{\theta} = 1$ and
   $\lim_{\theta \to 0}\frac{1 - \cos\theta}{\theta} = 0$
-* **16.10** State the three conditions for continuity at a point and classify
+* 16.10 State the three conditions for continuity at a point and classify
   removable, jump, and infinite discontinuities
-* **16.11** Determine a parameter value that makes a piecewise function continuous
-* **16.12** Apply the Intermediate Value Theorem to establish that a root exists
+* 16.11 Determine a parameter value that makes a piecewise function continuous
+* 16.12 Apply the Intermediate Value Theorem to establish that a root exists
   within an interval
 
 ---
@@ -268,6 +268,10 @@ the point and only cares that the two approaches disagree.
 >
 > ---
 
+
+<!-- VERIFY id="WE-01-16-001-left" expr="2*1+1" expected="3" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-16-001-right" expr="5-1" expected="4" units="" atol="1e-09" rtol="1e-09" -->
+
 ---
 
 ## 16.3 The Three Ways a Limit Fails
@@ -337,11 +341,7 @@ does not determine the answer. Different functions producing $\frac{0}{0}$ at
 the same point have different limits — some finite, some infinite, some
 nonexistent. The symbol tells you nothing except *do more work*.
 
-$$\boxed{\frac{0}{0}}.$$
-
-This means only that direct substitution was inconclusive. It does not
-mean that the limit equals \(0\), \(1\), or \(\infty\); additional
-algebraic analysis is required.
+$$\frac{0}{0} \quad \text{means: the substitution was inconclusive, not that the answer is 0 or 1 or } \infty$$
 
 The cause is always the same: numerator and denominator share a factor that
 vanishes at $x = a$. Cancel it and the obstruction disappears.
@@ -386,6 +386,9 @@ denominator $= 9.006001 - 9 = 0.006001$. Ratio $= 0.8334$.
 
 And $5/6 = 0.8333$ ✓
 
+
+
+<!-- VERIFY id="WE-01-16-002-limit" expr="(-3-2)/(-3-3)" expected="0.8333333333333334" units="" atol="1e-09" rtol="1e-09" -->
 ### Worked Example 3 — Rationalizing
 
 **Given.** Evaluate $\displaystyle\lim_{x\to 0}\frac{\sqrt{x+4}-2}{x}$.
@@ -406,6 +409,9 @@ $$\lim_{x\to 0}\frac{1}{\sqrt{x+4}+2} = \frac{1}{\sqrt{4}+2} = \frac{1}{4} = \bo
 **Check numerically.** At $x = 0.01$: $\sqrt{4.01} = 2.002498$, so the
 numerator is $0.002498$ and the quotient is $0.2498$ ✓
 
+
+
+<!-- VERIFY id="WE-01-16-003-limit" expr="1/(sqrt(4)+2)" expected="0.25" units="" atol="1e-09" rtol="1e-09" -->
 ### Worked Example 4 — Combining Fractions
 
 **Given.** Evaluate $\displaystyle\lim_{h\to 0}\frac{\frac{1}{4+h} - \frac{1}{4}}{h}$.
@@ -447,6 +453,9 @@ $$\lim_{h\to 0}\frac{-1}{4(4+h)} = \frac{-1}{4(4)} = \boxed{-\frac{1}{16}}$$
 > rationalizing, or combining fractions, and those techniques will remain
 > faster than L'Hôpital's rule for most polynomial and radical cases even
 > after you learn it. Nothing in this chapter depends on that later material.
+
+
+<!-- VERIFY id="WE-01-16-004-limit" expr="-1/(4*4)" expected="-0.0625" units="" atol="1e-09" rtol="1e-09" -->
 
 ---
 
@@ -520,6 +529,10 @@ $$\lim_{x\to\infty}e^{-x} = 0 \qquad \lim_{x\to\infty}e^{x} = \infty \;(\text{un
 The first is the mathematical statement behind the five-tau rule from
 Chapter 01-05, and it is what makes the saturating exponential model behave.
 
+
+
+<!-- VERIFY id="WE-01-16-005-a-approx" expr="(4*1e12+1)/(1e24-3)" expected="0" units="" atol="1e-10" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-16-005-b" expr="3/7" expected="0.42857142857142855" units="" atol="1e-09" rtol="1e-09" -->
 ### Worked Example 6 — Terminal Behaviour of a Saturating Response
 
 **Given.** A first-order system responds to a step input as
@@ -555,6 +568,11 @@ the arithmetic behind that rule of thumb, and here is the limit that defines
 what "final value" means. For engineering purposes 99.3% is
 indistinguishable from complete, which is why five time constants is the
 standard settling criterion.
+
+
+<!-- VERIFY id="WE-01-16-006-terminal" expr="18*(1-0)" expected="18" units="m/s" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-16-006-five-tau" expr="18*(1-exp(-5))" expected="17.879" units="m/s" atol="0.0005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-16-006-percent" expr="100*(1-exp(-5))" expected="99.33" units="percent" atol="0.005" rtol="1e-09" -->
 
 ---
 
@@ -662,6 +680,10 @@ $$\lim_{\theta\to 0}\frac{1-\cos\theta}{\theta} = (1)(0) = \boxed{0}$$
 the numerator is $0.00005000$ and the quotient is $0.005000$ — small and
 heading to 0 ✓
 
+
+<!-- VERIFY id="WE-01-16-007-a" expr="5/3" expected="1.6666666666666667" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-16-007-b-small-angle" expr="(sin(1e-6)/1e-6)*(sin(1e-6)/(1+cos(1e-6)))" expected="0" units="" atol="1e-06" rtol="1e-09" -->
+
 ---
 
 ## 16.9 Continuity
@@ -745,6 +767,10 @@ $f$ is continuous on all of $\mathbb{R}$.
 is 5, and we have a **jump discontinuity** of size 2 at $x = 2$ — not
 removable by any choice of $f(2)$.
 
+
+<!-- VERIFY id="WE-01-16-008-value" expr="3*2-1" expected="5" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-16-008-k" expr="(3*2-1)-2**2" expected="1" units="" atol="1e-09" rtol="1e-09" -->
+
 ---
 
 ## 16.10 The Intermediate Value Theorem
@@ -820,7 +846,7 @@ $-\frac{d}{a} = -1$: $(-2.1)(0.25)(1.86) = -0.976 \approx -1$ ✓
 > **Mentor's Margin**
 >
 > This example is the whole basis of the bisection method, which you will meet
-> formally in Chapter 01-26. The algorithm is nothing more than repeated
+> formally in Chapter 01-36. The algorithm is nothing more than repeated
 > application of what we just did: find a sign change, cut the interval in
 > half, keep whichever half still has the sign change, repeat. Each step
 > halves your uncertainty. The reason it is guaranteed to converge is the IVT,
@@ -829,6 +855,13 @@ $-\frac{d}{a} = -1$: $(-2.1)(0.25)(1.86) = -0.976 \approx -1$ ✓
 > continuity on the bracket before trusting a sign change.
 >
 > ---
+
+
+<!-- VERIFY id="WE-01-16-009-fneg3" expr="(-3)**3-4*(-3)+1" expected="-14" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-16-009-fneg2" expr="(-2)**3-4*(-2)+1" expected="1" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-16-009-f0" expr="0**3-4*0+1" expected="1" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-16-009-f1" expr="1**3-4*1+1" expected="-2" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-16-009-f2" expr="2**3-4*2+1" expected="1" units="" atol="1e-09" rtol="1e-09" -->
 
 ---
 

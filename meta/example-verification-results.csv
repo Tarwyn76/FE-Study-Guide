@@ -1,0 +1,68 @@
+chapter,example,numeric_candidate,verify_id,expr,expected,units,status,detail,computed,difference,allowed
+01-31,1 — Compute Sample Statistics,True,WE-01-31-001-mean,(10+12+13+15+20)/5,14,,ok,,14.0,0.0,1.5000000000000002e-08
+01-31,1 — Compute Sample Statistics,True,WE-01-31-001-ss,(10-14)**2+(12-14)**2+(13-14)**2+(15-14)**2+(20-14)**2,58,,ok,,58.0,0.0,5.9000000000000006e-08
+01-31,1 — Compute Sample Statistics,True,WE-01-31-001-variance,((10-14)**2+(12-14)**2+(13-14)**2+(15-14)**2+(20-14)**2)/(5-1),14.5,,ok,,14.5,0.0,1.55e-08
+01-31,1 — Compute Sample Statistics,True,WE-01-31-001-sd,sqrt(((10-14)**2+(12-14)**2+(13-14)**2+(15-14)**2+(20-14)**2)/(5-1)),3.8079,,ok,,3.8078865529319543,1.3447068045735477e-05,5.00038079e-05
+01-31,2 — The Last Deviation Is Not Free,True,WE-01-31-002-d4,-(-3+1+4),-2,,ok,,-2.0,0.0,3.0000000000000004e-09
+01-31,2 — The Last Deviation Is Not Free,True,WE-01-31-002-df,4-1,3,,ok,,3.0,0.0,4e-09
+01-31,3 — Compute a $t$ Statistic,True,WE-01-31-003-se,3/sqrt(10),0.94868,,ok,,0.9486832980505138,3.298050513800277e-06,5.00094868e-06
+01-31,3 — Compute a $t$ Statistic,True,WE-01-31-003-t,(52.4-50)/(3/sqrt(10)),2.5298,,ok,,2.529822128134702,2.2128134702370517e-05,5.00025298e-05
+01-31,3 — Compute a $t$ Statistic,True,WE-01-31-003-df,10-1,9,,ok,,9.0,0.0,1.0000000000000002e-08
+01-31,6 — Build a Chi-Square Value from Standard Normals,True,WE-01-31-006-chisq,1.0**2+(-0.5)**2+2.0**2,5.25,,ok,,5.25,0.0,6.2500000000000005e-09
+01-31,6 — Build a Chi-Square Value from Standard Normals,True,WE-01-31-006-df,3,3,,ok,,3.0,0.0,4e-09
+01-31,7 — Form the Chi-Square Variance Statistic,True,WE-01-31-007-df,10-1,9,,ok,,9.0,0.0,1.0000000000000002e-08
+01-31,7 — Form the Chi-Square Variance Statistic,True,WE-01-31-007-chisq,(10-1)*4/9,4.00,,ok,,4.0,0.0,5e-09
+01-32,1 — Convert Confidence Level to Tail Area,True,WE-01-32-001-alpha,1-0.98,0.02,,ok,,0.020000000000000018,1.734723475976807e-17,1.02e-09
+01-32,1 — Convert Confidence Level to Tail Area,True,WE-01-32-001-tail,(1-0.98)/2,0.01,,ok,,0.010000000000000009,8.673617379884035e-18,1.01e-09
+01-32,1 — Convert Confidence Level to Tail Area,True,WE-01-32-001-zcrit,norm_ppf(0.99),2.3263,,ok,,2.3263478740408408,4.787404084094504e-05,5.00023263e-05
+01-32,2 — Mean Interval with Known $\sigma$,True,WE-01-32-002-se,12/sqrt(36),2,g,ok,,2.0,0.0,3.0000000000000004e-09
+01-32,2 — Mean Interval with Known $\sigma$,True,WE-01-32-002-margin,1.96*(12/sqrt(36)),3.92,g,ok,,3.92,0.0,0.00500000392
+01-32,2 — Mean Interval with Known $\sigma$,True,WE-01-32-002-lower,503.0-1.96*(12/sqrt(36)),499.08,g,ok,,499.08,0.0,0.00500049908
+01-32,2 — Mean Interval with Known $\sigma$,True,WE-01-32-002-upper,503.0+1.96*(12/sqrt(36)),506.92,g,ok,,506.92,0.0,0.00500050692
+01-32,3 — Mean Interval with Unknown $\sigma$,True,WE-01-32-003-df,10-1,9,,ok,,9.0,0.0,1.0000000000000002e-08
+01-32,3 — Mean Interval with Unknown $\sigma$,True,WE-01-32-003-se,3/sqrt(10),0.94868,,ok,,0.9486832980505138,3.298050513800277e-06,5.00094868e-06
+01-32,3 — Mean Interval with Unknown $\sigma$,True,WE-01-32-003-margin,2.262*(3/sqrt(10)),2.146,,ok,,2.1459216201902622,7.83798097376831e-05,0.000500002146
+01-32,3 — Mean Interval with Unknown $\sigma$,True,WE-01-32-003-lower,52.4-2.262*(3/sqrt(10)),50.254,,ok,,50.254078379809734,7.837980973590675e-05,0.000500050254
+01-32,3 — Mean Interval with Unknown $\sigma$,True,WE-01-32-003-upper,52.4+2.262*(3/sqrt(10)),54.546,,ok,,54.54592162019026,7.837980973590675e-05,0.000500054546
+01-32,5 — Difference of Two Means with Known Spread,True,WE-01-32-005-difference,102-98,4,,ok,,4.0,0.0,5e-09
+01-32,5 — Difference of Two Means with Known Spread,True,WE-01-32-005-se,sqrt(4**2/25+6**2/36),1.2806,,ok,,1.2806248474865698,2.4847486569834487e-05,5.00012806e-05
+01-32,5 — Difference of Two Means with Known Spread,True,WE-01-32-005-margin,1.96*sqrt(4**2/25+6**2/36),2.510,,ok,,2.510024701073677,2.470107367713581e-05,0.0005000025100000001
+01-32,5 — Difference of Two Means with Known Spread,True,WE-01-32-005-lower,(102-98)-1.96*sqrt(4**2/25+6**2/36),1.49,,ok,,1.489975298926323,2.4701073676913765e-05,0.00500000149
+01-32,5 — Difference of Two Means with Known Spread,True,WE-01-32-005-upper,(102-98)+1.96*sqrt(4**2/25+6**2/36),6.51,,ok,,6.510024701073677,2.470107367713581e-05,0.00500000651
+01-32,6 — Variance and Standard-Deviation Interval,True,WE-01-32-006-df,10-1,9,,ok,,9.0,0.0,1.0000000000000002e-08
+01-32,6 — Variance and Standard-Deviation Interval,True,WE-01-32-006-numerator,(10-1)*4,36,,ok,,36.0,0.0,3.700000000000001e-08
+01-32,6 — Variance and Standard-Deviation Interval,True,WE-01-32-006-var-lower,((10-1)*4)/19.0228,1.8925,,ok,,1.8924658830456085,3.4116954391594234e-05,5.00018925e-05
+01-32,6 — Variance and Standard-Deviation Interval,True,WE-01-32-006-var-upper,((10-1)*4)/2.7004,13.331,,ok,,13.331358317286327,0.0003583172863272921,0.000500013331
+01-32,6 — Variance and Standard-Deviation Interval,True,WE-01-32-006-sd-lower,sqrt(((10-1)*4)/19.0228),1.3757,,ok,,1.375669249145887,3.075085411285983e-05,5.0001375700000005e-05
+01-32,6 — Variance and Standard-Deviation Interval,True,WE-01-32-006-sd-upper,sqrt(((10-1)*4)/2.7004),3.6512,,ok,,3.65121326647545,1.3266475450190995e-05,5.00036512e-05
+01-32,7 — Required Sample Size,True,WE-01-32-007-n-raw,(1.96*12/3)**2,61.4656,,ok,,61.465599999999995,7.105427357601002e-15,5.00614656e-05
+01-32,7 — Required Sample Size,True,WE-01-32-007-n-required,ceil((1.96*12/3)**2),62,,ok,,62.0,0.0,6.3e-08
+01-34,2 — Compute the One-Way Sums of Squares,True,WE-01-34-002-grand-mean,(8+9+7+12+11+13+9+10+8)/9,9.6667,,ok,,9.666666666666666,3.3333333334439885e-05,5.0009666700000005e-05
+01-34,2 — Compute the One-Way Sums of Squares,True,WE-01-34-002-ss-treatment,3*((8-29/3)**2+(12-29/3)**2+(9-29/3)**2),26,,ok,,26.0,0.0,2.7e-08
+01-34,2 — Compute the One-Way Sums of Squares,True,WE-01-34-002-ss-error,((8-8)**2+(9-8)**2+(7-8)**2)+((12-12)**2+(11-12)**2+(13-12)**2)+((9-9)**2+(10-9)**2+(8-9)**2),6,,ok,,6.0,0.0,7.000000000000001e-09
+01-34,2 — Compute the One-Way Sums of Squares,True,WE-01-34-002-ss-total,3*((8-29/3)**2+(12-29/3)**2+(9-29/3)**2)+6,32,,ok,,32.0,0.0,3.3000000000000004e-08
+01-34,7 — Why Replication Matters,True,WE-01-34-007-df-error,2*2*(1-1),0,,ok,,0.0,0.0,1e-09
+01-35,4 — Compute $R$ and $R^2$,True,WE-01-35-004-r,9/sqrt(10*10),0.90,,ok,,0.9,0.0,0.0050000009
+01-35,4 — Compute $R$ and $R^2$,True,WE-01-35-004-r2,(9/sqrt(10*10))**2,0.81,,ok,,0.81,0.0,0.00500000081
+01-35,4 — Compute $R$ and $R^2$,True,WE-01-35-004-r2-residual,1-1.9/10,0.81,,ok,,0.81,0.0,0.00500000081
+01-36,2 — Linear Combination,True,WE-01-36-002-contrib1,3*0.20,0.60,,ok,,0.6000000000000001,1.1102230246251565e-16,0.0050000006
+01-36,2 — Linear Combination,True,WE-01-36-002-contrib2,-2*0.40,-0.80,,ok,,-0.8,0.0,0.0050000008
+01-36,2 — Linear Combination,True,WE-01-36-002-uy,sqrt((3*0.20)**2+(-2*0.40)**2),1.00,,ok,,1.0,0.0,0.0050000010000000004
+01-38,2 — Defectives in a Finite Lot,True,WE-01-38-002-prob,"comb(4,2)*comb(16,3)/comb(20,5)",0.2167,,ok,,0.21671826625386997,1.8266253869969606e-05,5.00002167e-05
+01-38,2 — Defectives in a Finite Lot,True,WE-01-38-002-mean,5*4/20,1,,ok,,1.0,0.0,2e-09
+01-38,3 — Events in a Fixed Interval,True,WE-01-38-003-prob,exp(-2.5)*2.5**3/factorial(3),0.2138,,ok,,0.21376301724973645,3.69827502635367e-05,5.0000213800000005e-05
+01-38,5 — First Success,True,WE-01-38-005-prob,0.80**3*0.20,0.1024,,ok,,0.10240000000000003,2.7755575615628914e-17,5.00001024e-05
+01-38,5 — First Success,True,WE-01-38-005-mean,1/0.20,5,,ok,,5.0,0.0,6e-09
+01-38,6 — Third Success on Trial 7,True,WE-01-38-006-prob,"comb(6,2)*0.30**3*0.70**4",0.0972,,ok,,0.09724049999999997,4.0499999999971115e-05,5.0000097200000004e-05
+01-38,7 — Uniform Probability,True,WE-01-38-007-prob,(0.2-(-0.1))/(0.5-(-0.5)),0.30,,ok,,0.30000000000000004,5.551115123125783e-17,0.0050000003
+01-38,9 — Exponential Lifetime,True,WE-01-38-009-survival,exp(-800/500),0.2019,,ok,,0.20189651799465538,3.4820053446127375e-06,5.00002019e-05
+01-38,9 — Exponential Lifetime,True,WE-01-38-009-failure,1-exp(-800/500),0.7981,,ok,,0.7981034820053446,3.4820053446127375e-06,5.0000798100000004e-05
+01-38,10 — Weibull Survival,True,WE-01-38-010-survival,exp(-(800/1000)**2),0.5273,,ok,,0.5272924240430485,7.575956951444418e-06,5.0000527300000006e-05
+01-38,10 — Weibull Survival,True,WE-01-38-010-failure,1-exp(-(800/1000)**2),0.4727,,ok,,0.47270757595695145,7.575956951444418e-06,5.00004727e-05
+01-39,6 — Estimate $\sigma$ from $\bar R$,True,WE-01-39-006-sigma,0.40/2.326,0.1720,,ok,,0.17196904557179707,3.095442820291727e-05,5.0000172e-05
+01-39,7 — Estimate $\sigma$ from $\bar S$,True,WE-01-39-007-sigma,0.20/0.9400,0.2128,,ok,,0.21276595744680854,3.4042553191449e-05,5.00002128e-05
+01-40,5 — Capability from $\bar R$,True,WE-01-40-005-sigma,0.12/2.326,0.05159,mm,ok,,0.05159071367153912,7.136715391223292e-07,5.0000515900000006e-06
+01-40,5 — Capability from $\bar R$,True,WE-01-40-005-cp,(25.30-24.70)/(6*(0.12/2.326)),1.938,,ok,,1.938333333333338,0.00033333333333795956,0.000500001938
+01-40,5 — Capability from $\bar R$,True,WE-01-40-005-cpl,(25.02-24.70)/(3*(0.12/2.326)),2.068,,ok,,2.0675555555555576,0.0004444444444424711,0.000500002068
+01-40,5 — Capability from $\bar R$,True,WE-01-40-005-cpu,(25.30-25.02)/(3*(0.12/2.326)),1.809,,ok,,1.8091111111111184,0.00011111111111850036,0.000500001809
+01-40,5 — Capability from $\bar R$,True,WE-01-40-005-cpk,"min((25.02-24.70)/(3*(0.12/2.326)),(25.30-25.02)/(3*(0.12/2.326)))",1.809,,ok,,1.8091111111111184,0.00011111111111850036,0.000500001809

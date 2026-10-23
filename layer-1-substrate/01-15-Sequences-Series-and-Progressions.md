@@ -73,19 +73,20 @@ cousin. Get comfortable reading it here, where the terms are simple.
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-- **15.1** Distinguish a sequence from a series and identify a general term
-- **15.2** Read, write, and evaluate summation notation, including changing
+
+* 15.1 Distinguish a sequence from a series and identify a general term
+* 15.2 Read, write, and evaluate summation notation, including changing
   the index limits
-- **15.3** Apply the linearity properties of summation
-- **15.4** Identify an arithmetic progression and find its $n$th term and
+* 15.3 Apply the linearity properties of summation
+* 15.4 Identify an arithmetic progression and find its $n$th term and
   partial sum
-- **15.5** Identify a geometric progression and find its $n$th term and
+* 15.5 Identify a geometric progression and find its $n$th term and
   partial sum
-- **15.6** State the convergence condition for an infinite geometric series and
+* 15.6 State the convergence condition for an infinite geometric series and
   evaluate the sum when it converges
-- **15.7** Apply the closed-form sums for $\sum k$, $\sum k^2$, and $\sum k^3$
-- **15.8** Use factorial notation
-- **15.9** Recognize arithmetic and geometric structure in staged engineering
+* 15.7 Apply the closed-form sums for $\sum k$, $\sum k^2$, and $\sum k^3$
+* 15.8 Use factorial notation
+* 15.9 Recognize arithmetic and geometric structure in staged engineering
   processes
 
 ---
@@ -215,6 +216,9 @@ $5 \times 3 = 15$, not 3.
 an arithmetic progression, which is where we go next — and there is a formula
 that would have given 15 in one line.
 
+
+<!-- VERIFY id="WE-01-15-001-sum" expr="2*(5*6/2)-5*3" expected="15" units="" atol="1e-09" rtol="1e-09" -->
+
 ---
 
 ## 15.3 Arithmetic Progressions
@@ -306,6 +310,13 @@ $S_{23} = \dfrac{23[24 + 22(3)]}{2} = \dfrac{23(90)}{2} = 23(45) = 1035$ m³
 > wrapped around algebra you already own.
 >
 > ---
+
+
+<!-- VERIFY id="WE-01-15-002-day15" expr="12+(15-1)*3" expected="54" units="m^3" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-15-002-s15" expr="15*(12+54)/2" expected="495" units="m^3" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-15-002-root" expr="(-21+sqrt(21**2+4*3*2000))/(2*3)" expected="22.56" units="day" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-15-002-s22" expr="22*(24+21*3)/2" expected="957" units="m^3" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-15-002-s23" expr="23*(24+22*3)/2" expected="1035" units="m^3" atol="1e-09" rtol="1e-09" -->
 
 ---
 
@@ -399,6 +410,11 @@ Two independent routes to 24.91 mW. That agreement is the check.
 >
 > ---
 
+
+<!-- VERIFY id="WE-01-15-003-out" expr="40*(0.85**6)" expected="15.09" units="mW" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-15-003-diss" expr="40-40*(0.85**6)" expected="24.91" units="mW" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-15-003-series" expr="6*(1-0.85**6)/(1-0.85)" expected="24.91" units="mW" atol="0.005" rtol="1e-09" -->
+
 ---
 
 ## 15.5 Infinite Geometric Series
@@ -490,6 +506,9 @@ finite total *distance* — and, it turns out, a finite total *time*. The model
 breaks down at small amplitudes where the ball simply stops, but the
 geometric total is an excellent estimate of the real distance.
 
+
+
+<!-- VERIFY id="WE-01-15-004-distance" expr="2.4+2*(2.4*0.65/(1-0.65))" expected="11.31" units="m" atol="0.005" rtol="1e-09" -->
 ### Worked Example 5 — Multi-Stage Settling (Preview of Tier 2)
 
 **Given.** Wastewater enters a train of five identical settling stages at
@@ -560,6 +579,11 @@ $$= 3(2870) - 2(210) + 100 = 8610 - 420 + 100 = \boxed{8290}$$
 **Check on the magnitude.** The dominant term is $3k^2$, whose average over
 $k = 1$ to $20$ is roughly $3(2870)/20 = 430$ per term, giving about $8600$
 before the corrections. Our answer of 8290 sits just below that ✓
+
+
+<!-- VERIFY id="WE-01-15-006-sumsq" expr="20*21*41/6" expected="2870" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-15-006-sumk" expr="20*21/2" expected="210" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-15-006-total" expr="3*(20*21*41/6)-2*(20*21/2)+20*5" expected="8290" units="" atol="1e-09" rtol="1e-09" -->
 
 ---
 

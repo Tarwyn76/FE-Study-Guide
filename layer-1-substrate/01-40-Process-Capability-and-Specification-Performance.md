@@ -775,7 +775,7 @@ $$
 
 $$
 \approx
-2.067.
+2.068.
 $$
 
 Upper-side capability:
@@ -802,6 +802,14 @@ $$
 The upper specification is the limiting side.
 
 ---
+
+
+
+<!-- VERIFY id="WE-01-40-005-sigma" expr="0.12/2.326" expected="0.05159" units="mm" atol="0.000005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-40-005-cp" expr="(25.30-24.70)/(6*(0.12/2.326))" expected="1.938" units="" atol="0.0005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-40-005-cpl" expr="(25.02-24.70)/(3*(0.12/2.326))" expected="2.068" units="" atol="0.0005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-40-005-cpu" expr="(25.30-25.02)/(3*(0.12/2.326))" expected="1.809" units="" atol="0.0005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-40-005-cpk" expr="min((25.02-24.70)/(3*(0.12/2.326)),(25.30-25.02)/(3*(0.12/2.326)))" expected="1.809" units="" atol="0.0005" rtol="1e-09" -->
 
 ## 40.6 Capability and Expected Nonconformance
 

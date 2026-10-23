@@ -84,24 +84,25 @@ Get the Handbook open to page 1. Let's go.
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-- **2.1** Distinguish a physical quantity, a dimension, and a unit
-- **2.2** Name the seven SI base units and their quantities
-- **2.3** Express common derived SI units in terms of base units
-- **2.4** Test an equation for dimensional homogeneity and use the result as an
+
+* 2.1 Distinguish a physical quantity, a dimension, and a unit
+* 2.2 Name the seven SI base units and their quantities
+* 2.3 Express common derived SI units in terms of base units
+* 2.4 Test an equation for dimensional homogeneity and use the result as an
   error check
-- **2.5** Convert between units using the factor-label method, carrying units
+* 2.5 Convert between units using the factor-label method, carrying units
   through every step
-- **2.6** Explain why the pound-mass / pound-force ambiguity exists in structural
+* 2.6 Explain why the pound-mass / pound-force ambiguity exists in structural
   terms, not just as a rule
-- **2.7** State the value, units, and meaning of $g_c$, and distinguish it from
+* 2.7 State the value, units, and meaning of $g_c$, and distinguish it from
   local gravitational acceleration $g$
-- **2.8** Apply Newton's second law correctly in USCS units using either the $g_c$
+* 2.8 Apply Newton's second law correctly in USCS units using either the $g_c$
   method or the slug method
-- **2.9** Distinguish mass from weight and compute weight at non-standard gravity
-- **2.10** Identify the other common equations in which $g_c$ appears
-- **2.11** Convert among the four temperature scales, and distinguish a
+* 2.9 Distinguish mass from weight and compute weight at non-standard gravity
+* 2.10 Identify the other common equations in which $g_c$ appears
+* 2.11 Convert among the four temperature scales, and distinguish a
   temperature value from a temperature difference
-- **2.12** Locate and correctly select among the four printed forms of the
+* 2.12 Locate and correctly select among the four printed forms of the
   universal gas constant
 
 ---
@@ -484,6 +485,9 @@ Note that both L and min cancelled, leaving exactly m³/s. If I'd inverted
 either factor, I'd have ended up with something like L²·min/(m³·s), which is
 visibly nonsense. **The cancellation is the check.**
 
+
+
+<!-- VERIFY id="WE-01-02-003-flow" expr="1250/1000/60" expected="0.0208" units="m^3/s" atol="5e-05" rtol="1e-9" -->
 ### Worked Example 4 — USCS to SI, With a Squared Prefix
 
 **Given.** A hydraulic system operates at $150 \text{ psi}$.
@@ -545,6 +549,10 @@ enough that a lookup is a waste of your seconds.
 | Btu | J | 1,055 |
 | hp | W | 745.7 |
 | kW | hp | 1.341 |
+
+
+<!-- VERIFY id="WE-01-02-004-route-a" expr="150*6895/1000" expected="1034" units="kPa" atol="0.5" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-02-004-route-b" expr="150*4.448/(0.0254**2)/1000" expected="1034" units="kPa" atol="0.5" rtol="1e-9" -->
 
 ---
 
@@ -766,6 +774,10 @@ design goal of the system, achieved.
 
 But move off the Earth's surface and the cancellation stops.
 
+
+
+<!-- VERIFY id="WE-01-02-005-uscs" expr="20*32.174/50" expected="12.9" units="ft/s^2" atol="0.05" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-02-005-si-check" expr="((20*4.448)/(50*0.4536))/0.3048" expected="12.87" units="ft/s^2" atol="0.02" rtol="1e-9" -->
 ### Worked Example 6 — Weight at Non-Standard Gravity
 
 **Given.** The crate from Worked Example 5, $m = 50 \text{ lbm}$, is taken to
@@ -839,6 +851,10 @@ how the equation was printed.**
 The defense is the same as always: carry your units through the arithmetic. If
 lbm survives into an answer that should be in lbf, you dropped a $g_c$.
 
+
+
+<!-- VERIFY id="WE-01-02-006-weight" expr="50*5.32/32.174" expected="8.27" units="lbf" atol="0.005" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-02-006-force" expr="50*12.87/32.174" expected="20.0" units="lbf" atol="0.01" rtol="1e-9" -->
 ### Worked Example 7 — Kinetic Energy in USCS
 
 **Given.** A car of mass $3{,}000 \text{ lbm}$ travels at $60 \text{ mph}$.
@@ -883,6 +899,10 @@ physics.
 **60 mph = 88 ft/s** is worth memorizing outright. It comes up constantly in
 transportation and dynamics problems.
 
+
+
+<!-- VERIFY id="WE-01-02-007-uscs" expr="3000*88**2/(2*32.174)" expected="361000.0" units="ft*lbf" atol="500" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-02-007-si" expr="0.5*(3000*0.4536)*(88*0.3048)**2/1000" expected="490" units="kJ" atol="1" rtol="1e-9" -->
 ### Worked Example 8 — Fluid Pressure and Specific Weight
 
 **Given.** An open tank holds water to a depth of $30 \text{ ft}$. Take the
@@ -935,6 +955,11 @@ and the coincidence holds only at standard gravity.
 At any other $g$, they part company — and if you've been treating them as
 interchangeable rather than understanding why they happened to agree, you'll
 be wrong and won't know it.
+
+
+<!-- VERIFY id="WE-01-02-008-sw" expr="62.4*32.174/32.174" expected="62.4" units="lbf/ft^3" atol="1e-09" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-02-008-psf" expr="62.4*30" expected="1872" units="lbf/ft^2" atol="1e-09" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-02-008-psi" expr="62.4*30/144" expected="13.0" units="psi" atol="1e-09" rtol="1e-9" -->
 
 ---
 
@@ -1109,6 +1134,16 @@ answer sheet.
 differences are *identical* because both scales share a degree size, while
 converting to the SI degree required division by 1.8. Values need offsets;
 differences don't. ✓
+
+
+<!-- VERIFY id="WE-01-02-009-hot-r" expr="450+459.69" expected="909.7" units="degR" atol="0.05" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-02-009-cold-r" expr="85+459.69" expected="544.7" units="degR" atol="0.05" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-02-009-hot-k" expr="(450+459.69)/1.8" expected="505.4" units="K" atol="0.05" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-02-009-cold-k" expr="(85+459.69)/1.8" expected="302.6" units="K" atol="0.05" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-02-009-delta-f" expr="450-85" expected="365" units="degF" atol="1e-09" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-02-009-delta-k" expr="(450-85)/1.8" expected="202.8" units="K" atol="0.05" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-02-009-efficiency" expr="100*(1-(85+459.69)/(450+459.69))" expected="40.1" units="percent" atol="0.05" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-02-009-wrong-fahrenheit" expr="100*(1-85/450)" expected="81.1" units="percent" atol="0.05" rtol="1e-9" -->
 
 ---
 

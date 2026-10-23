@@ -393,6 +393,11 @@ the exact hypergeometric model for finite sampling without replacement.
 
 ---
 
+
+
+<!-- VERIFY id="WE-01-38-002-prob" expr="comb(4,2)*comb(16,3)/comb(20,5)" expected="0.2167" units="" atol="0.00005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-38-002-mean" expr="5*4/20" expected="1" units="" atol="1e-9" rtol="1e-09" -->
+
 ## 38.3 Poisson Distribution — Counts Over an Exposure
 
 The **Poisson distribution** models a nonnegative event count under a constant
@@ -486,6 +491,10 @@ P(X=3)
 \approx
 \boxed{0.2138}.
 $$
+
+
+
+<!-- VERIFY id="WE-01-38-003-prob" expr="exp(-2.5)*2.5**3/factorial(3)" expected="0.2138" units="" atol="0.00005" rtol="1e-09" -->
 
 ### Worked Example 4 — No Events and At Least One Event
 
@@ -688,6 +697,11 @@ E[X]
 \boxed{5}.
 $$
 
+
+
+<!-- VERIFY id="WE-01-38-005-prob" expr="0.80**3*0.20" expected="0.1024" units="" atol="0.00005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-38-005-mean" expr="1/0.20" expected="5" units="" atol="1e-9" rtol="1e-09" -->
+
 ### Worked Example 6 — Third Success on Trial 7
 
 Let
@@ -717,7 +731,7 @@ Thus
 $$
 P(Y=7)
 \approx
-\boxed{0.0973}.
+\boxed{0.0972}.
 $$
 
 The combination term is
@@ -735,6 +749,10 @@ $$
 because the final trial is already fixed as the $r$th success.
 
 ---
+
+
+
+<!-- VERIFY id="WE-01-38-006-prob" expr="comb(6,2)*0.30**3*0.70**4" expected="0.0972" units="" atol="0.00005" rtol="1e-09" -->
 
 ## 38.5 Uniform and Triangular Distributions — Bounded Continuous Models
 
@@ -898,6 +916,10 @@ P(-0.1\le X\le0.2)
 =
 \boxed{0.30}.
 $$
+
+
+
+<!-- VERIFY id="WE-01-38-007-prob" expr="(0.2-(-0.1))/(0.5-(-0.5))" expected="0.30" units="" atol="0.005" rtol="1e-09" -->
 
 ### Worked Example 8 — Triangular Mean and Variance
 
@@ -1109,6 +1131,11 @@ well below 0.5.
 
 ---
 
+
+
+<!-- VERIFY id="WE-01-38-009-survival" expr="exp(-800/500)" expected="0.2019" units="" atol="0.00005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-38-009-failure" expr="1-exp(-800/500)" expected="0.7981" units="" atol="0.00005" rtol="1e-09" -->
+
 ## 38.7 Weibull Distribution — Flexible Lifetime Modeling
 
 The Weibull distribution generalizes the exponential lifetime model.
@@ -1291,6 +1318,11 @@ This special-case relationship is a useful check when moving between the two
 distributions.
 
 ---
+
+
+
+<!-- VERIFY id="WE-01-38-010-survival" expr="exp(-(800/1000)**2)" expected="0.5273" units="" atol="0.00005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-38-010-failure" expr="1-exp(-(800/1000)**2)" expected="0.4727" units="" atol="0.00005" rtol="1e-09" -->
 
 ## As the Handbook States It
 

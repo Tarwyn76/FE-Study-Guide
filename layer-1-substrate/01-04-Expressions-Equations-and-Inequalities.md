@@ -65,16 +65,16 @@ practice it until it's impossible to miss.
 
 By the end of this chapter, you will be able to:
 
-* **4.1** Distinguish an expression from an equation from an inequality
-* **4.2** Apply the properties of real numbers to simplify expressions
-* **4.3** Expand and factor algebraic expressions including difference of
+* 4.1 Distinguish an expression from an equation from an inequality
+* 4.2 Apply the properties of real numbers to simplify expressions
+* 4.3 Expand and factor algebraic expressions including difference of
   squares and perfect square trinomials
-* **4.4** Isolate any variable in a multi-term equation using legal operations
-* **4.5** Solve equations involving absolute values
-* **4.6** Solve linear inequalities and express solutions on a number line
+* 4.4 Isolate any variable in a multi-term equation using legal operations
+* 4.5 Solve equations involving absolute values
+* 4.6 Solve linear inequalities and express solutions on a number line
   and in interval notation
-* **4.7** Solve compound inequalities
-* **4.8** Set up an algebraic equation from a physical relationship and solve
+* 4.7 Solve compound inequalities
+* 4.8 Set up an algebraic equation from a physical relationship and solve
   for a specified variable
 
 ---
@@ -325,6 +325,9 @@ $$x = 21$$
 **Verify:** $3(2 \cdot 21 - 4) = 3(38) = 114$. And $5(21) + 9 = 105 + 9 =
 114$. ✓
 
+
+
+<!-- VERIFY id="WE-01-04-002-x" expr="(9+12)/(6-5)" expected="21" units="" atol="1e-09" rtol="1e-9" -->
 ### Worked Example 3 — Rearranging for a Specified Variable
 
 This is the exam skill: rearrange a physics equation for a non-obvious
@@ -406,6 +409,9 @@ $$x + 6 = 12 \implies x = 6$$
 
 **Verify:** $\dfrac{6}{3} - \dfrac{6-2}{4} = 2 - 1 = 1$ ✓
 
+
+
+<!-- VERIFY id="WE-01-04-004-x" expr="6" expected="6" units="" atol="1e-09" rtol="1e-9" -->
 ### Worked Example 5 — Physics Equation, Explicit Solve
 
 **Given.** From the ideal gas law:
@@ -428,7 +434,7 @@ $$T = \frac{(150 \text{ kPa})(2.0 \text{ m}^3)}{(3.5 \text{ kg})(0.287 \text{ kJ
 
 Note: $1 \text{ kPa} \cdot \text{m}^3 = 1 \text{ kJ}$, so the units work out:
 
-$$T = \frac{300 \text{ kJ}}{1.0045 \text{ kJ/K}} = 298.6 \text{ K}$$
+$$T = \frac{300 \text{ kJ}}{1.0045 \text{ kJ/K}} = 298.7 \text{ K}$$
 
 $$\boxed{T \approx 299 \text{ K} \approx 26 \; ^\circ\text{C}}$$
 
@@ -447,6 +453,9 @@ consistent with near-room conditions. ✓
 > Tier 2D.
 >
 > ---
+
+
+<!-- VERIFY id="WE-01-04-005-temperature" expr="150*2.0/(3.5*0.287)" expected="299" units="K" atol="0.5" rtol="1e-9" -->
 
 ---
 
@@ -497,6 +506,10 @@ $$\boxed{x = 5 \quad \text{or} \quad x = -2}$$
 **Geometric interpretation.** The two solutions are 5 and $-2$, and the expression $2x - 3$ equals 0 when $x = 1.5$. The solutions 5 and $-2$ are each 3.5 units away from the point where $x = 1.5$, since the distance of 7 applies to the expression $2x-3$ and the coeefficient 2 halves it on the x-axis.
 That's not a coincidence — it's what absolute value distance means.
 
+
+
+<!-- VERIFY id="WE-01-04-006-root-a" expr="(7+3)/2" expected="5" units="" atol="1e-09" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-04-006-root-b" expr="(-7+3)/2" expected="-2" units="" atol="1e-09" rtol="1e-9" -->
 ### Worked Example 7 — No Solution and One Solution Cases
 
 **Given.** Solve: (a) $\lvert 3x + 1 \rvert = -4$ (b) $\lvert x - 2 \rvert = 0$
@@ -511,6 +524,9 @@ $$\boxed{\text{No solution.}}$$
 cases" both give the same equation when the right side is zero.
 
 $$\boxed{x = 2}$$
+
+
+<!-- VERIFY id="WE-01-04-007-root-b" expr="2" expected="2" units="" atol="1e-09" rtol="1e-9" -->
 
 ---
 
@@ -568,6 +584,9 @@ $$-3(-5) + 2 = 15 + 2 = 17 > 11 \;\checkmark$$
 Pick $x = 0$ (outside the claimed solution):
 
 $$-3(0) + 2 = 2 \not> 11 \;\checkmark \quad \text{(correctly not a solution)}$$
+
+
+<!-- VERIFY id="WE-01-04-008-boundary" expr="(11-2)/(-3)" expected="-3" units="" atol="1e-09" rtol="1e-9" -->
 
 ---
 
@@ -662,6 +681,10 @@ $$\boxed{[-8, 7)}$$
 >
 > ---
 
+
+<!-- VERIFY id="WE-01-04-009-lower" expr="(-15-1)/2" expected="-8" units="" atol="1e-09" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-04-009-upper" expr="(15-1)/2" expected="7" units="" atol="1e-09" rtol="1e-9" -->
+
 ---
 
 ## 4.9 Setting Up Equations From Physical Relationships
@@ -715,6 +738,10 @@ reasonable. ✓
 
 *(Note: 1 kip = 1,000 lbf, a unit used commonly in structural engineering.)*
 
+
+
+<!-- VERIFY id="WE-01-04-010-volume" expr="6.0*4.0*2.0" expected="48.0" units="ft^3" atol="1e-09" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-04-010-weight" expr="150*6.0*4.0*2.0" expected="7200" units="lbf" atol="1e-09" rtol="1e-9" -->
 ### Worked Example 11 — Inequality in Engineering Context
 
 **Given.** A cable has a safe working load (SWL) of $8{,}500 \text{ lbf}$.
@@ -751,6 +778,10 @@ Interval notation: $(0, 2{,}125]$ lbf. (Load must be positive.)
 > is in recognizing the inequality structure and writing the safe direction.
 >
 > ---
+
+
+<!-- VERIFY id="WE-01-04-011-max-load" expr="8500/4" expected="2125" units="lbf" atol="1e-09" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-04-011-safety-factor" expr="8500/1800" expected="4.72" units="" atol="0.01" rtol="1e-9" -->
 
 ---
 

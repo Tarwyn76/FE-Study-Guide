@@ -62,14 +62,16 @@ start using areas and volumes in physics problems in Tier 2.
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-- **10.1** Compute the area and perimeter of standard plane figures using
+
+* 10.1 Compute the area and perimeter of standard plane figures using
   Handbook formulas
-- **10.2** Compute the surface area and volume of standard solids
-- **10.3** Find the area and centroid of a composite plane figure
-- **10.4** Apply area and volume unit conversions correctly
-- **10.5** Compute the volume of a solid of revolution using the disk/washer
+* 10.2 Compute the surface area and volume of standard solids
+* 10.3 Find the area and centroid of a composite plane figure
+* 10.4 Apply area and volume unit conversions correctly
+* 10.5 Compute the volume of a solid of revolution using the disk/washer
   concept (preview; full integration treatment in Chapter 01-22)
-- **10.6** Locate the centroid of a standard shape from the Handbook tables
+* 10.6 Locate the centroid of a standard shape from the Handbook tables
+
 ---
 
 ## Notation Used Here
@@ -180,20 +182,26 @@ $r_o = 3.0$ in, $r_i = 2.75$ in.
 
 Cross-sectional area:
 
-$$A = \pi(r_o^2 - r_i^2) = \pi(9.00 - 7.5625) = \pi(1.4375) = 4.515 \text{ in}^2$$
+$$A = \pi(r_o^2 - r_i^2) = \pi(9.00 - 7.5625) = \pi(1.4375) = 4.516 \text{ in}^2$$
 
 Volume for 10 ft = 120 in length:
 
-$$V = A \cdot L = 4.515 \times 120 = 541.8 \text{ in}^3$$
+$$V = A \cdot L = 4.516 \times 120 = 541.9 \text{ in}^3$$
 
 **Convert to ft³:** $1 \text{ ft}^3 = 1728 \text{ in}^3$
 
 $$V = \frac{541.8}{1728} = \boxed{0.314 \text{ ft}^3}$$
 
-**Check order of magnitude:** a 6-inch pipe, 1-inch thick steel... a circle of
+**Check order of magnitude:** a 6-inch pipe with a 0.25-inch wall... a circle of
 area $\approx \pi(3)^2 = 28$ in² minus inner $\approx \pi(2.75)^2 = 23.8$
 in² gives about 4.5 in² cross-section. At 10 feet = 120 inches: $4.5 \times
 120 = 540$ in³ ≈ 0.31 ft³. ✓
+
+
+<!-- VERIFY id="WE-01-10-001-id" expr="6-2*0.25" expected="5.5" units="in" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-10-001-area" expr="pi*(3**2-2.75**2)" expected="4.516" units="in^2" atol="0.0005" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-10-001-volume-in3" expr="pi*(3**2-2.75**2)*120" expected="541.9" units="in^3" atol="0.05" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-10-001-volume-ft3" expr="pi*(3**2-2.75**2)*120/1728" expected="0.314" units="ft^3" atol="0.0005" rtol="1e-9" -->
 
 ---
 
@@ -285,6 +293,12 @@ the web), which 30 mm is. ✓
 >
 > ---
 
+
+
+<!-- VERIFY id="WE-01-10-002-area-flange" expr="120*20" expected="2400" units="mm^2" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-10-002-area-web" expr="20*80" expected="1600" units="mm^2" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-10-002-ybar" expr="(2400*10+1600*60)/(2400+1600)" expected="30" units="mm" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-10-002-xbar" expr="60" expected="60" units="mm" atol="1e-12" rtol="1e-9" -->
 ### Worked Example 3 — Composite Area With a Hole
 
 **Given.** A rectangular plate $200 \times 300$ mm has a circular hole of
@@ -313,6 +327,11 @@ because the hole at $y = 120$ mm removes material below center, pulling
 the centroid upward. The shift from 150 to 152.7 mm is small because
 the hole is small relative to the total area: $5,027/60,000 \approx 8\%$.
 A small hole causes a small shift. ✓
+
+
+<!-- VERIFY id="WE-01-10-003-area" expr="200*300-pi*40**2" expected="54973" units="mm^2" atol="0.5" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-10-003-xbar" expr="(200*300*100-pi*40**2*100)/(200*300-pi*40**2)" expected="100" units="mm" atol="1e-09" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-10-003-ybar" expr="(200*300*150-pi*40**2*120)/(200*300-pi*40**2)" expected="152.7" units="mm" atol="0.05" rtol="1e-9" -->
 
 ---
 

@@ -65,19 +65,20 @@ logarithm.
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-- **5.1** Apply the seven laws of exponents to simplify expressions with
+
+* 5.1 Apply the seven laws of exponents to simplify expressions with
   integer, fractional, and negative exponents
-- **5.2** Convert between radical notation and fractional exponent notation
-- **5.3** Simplify expressions containing radicals
-- **5.4** Define the exponential function $b^x$ for any base $b > 0$, $b \ne 1$
-- **5.5** Define $e$ and the natural exponential function $e^x$
-- **5.6** Solve exponential equations by matching bases and by using logarithms
-- **5.7** Define the logarithm as the inverse of the exponential
-- **5.8** Apply the four laws of logarithms to expand and compress expressions
-- **5.9** Evaluate common logarithms (base 10) and natural logarithms (base $e$)
-- **5.10** Apply the change-of-base formula
-- **5.11** Solve logarithmic equations
-- **5.12** Recognize and apply exponential and logarithmic models in engineering
+* 5.2 Convert between radical notation and fractional exponent notation
+* 5.3 Simplify expressions containing radicals
+* 5.4 Define the exponential function $b^x$ for any base $b > 0$, $b \ne 1$
+* 5.5 Define $e$ and the natural exponential function $e^x$
+* 5.6 Solve exponential equations by matching bases and by using logarithms
+* 5.7 Define the logarithm as the inverse of the exponential
+* 5.8 Apply the four laws of logarithms to expand and compress expressions
+* 5.9 Evaluate common logarithms (base 10) and natural logarithms (base $e$)
+* 5.10 Apply the change-of-base formula
+* 5.11 Solve logarithmic equations
+* 5.12 Recognize and apply exponential and logarithmic models in engineering
   contexts
 
 ---
@@ -419,6 +420,12 @@ $3^{-3} = 1/27 \Rightarrow \boxed{\log_3 \tfrac{1}{27} = -3}$
 **Check.** Every answer can be verified by raising the base to the answer:
 $2^5 = 32$ ✓, $3^{-3} = 1/27$ ✓, $10^{-3} = 0.001$ ✓, $e^5 = e^5$ ✓.
 
+
+<!-- VERIFY id="WE-01-05-003-a" expr="log(32)/log(2)" expected="5" units="" atol="1e-09" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-05-003-b" expr="log(1/27)/log(3)" expected="-3" units="" atol="1e-09" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-05-003-c" expr="log10(0.001)" expected="-3" units="" atol="1e-09" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-05-003-d" expr="log(e**5)" expected="5" units="" atol="1e-09" rtol="1e-9" -->
+
 ---
 
 ## 5.5 Laws of Logarithms
@@ -570,6 +577,11 @@ $$t = 0.050 \times 4.605 = \boxed{0.230 \text{ s} = 4.6\tau}$$
 is $24e^{-5} = 0.162$ V, which is about 0.67% — less than 1%. At $4.6\tau$
 the voltage is about 1% as calculated. ✓
 
+
+<!-- VERIFY id="WE-01-05-004-voltage" expr="24*exp(-0.10/0.050)" expected="3.25" units="V" atol="0.01" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-05-004-time-5v" expr="-0.050*log(5.0/24)" expected="0.0784" units="s" atol="0.0001" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-05-004-time-1pct" expr="-0.050*log(0.01)" expected="0.23" units="s" atol="0.001" rtol="1e-9" -->
+
 ---
 
 ## 5.7 Solving Logarithmic Equations
@@ -688,6 +700,10 @@ $$k = \frac{\ln(N_1/N_0)}{t_1 - t_0}$$
 We'll derive this properly in Chapter 01-25 (first-order ODEs). For now,
 recognize the form: wherever you see a ratio inside a logarithm set equal to
 a product involving time, you're looking at an exponential model.
+
+
+<!-- VERIFY id="WE-01-05-005-gain" expr="10*log10(400/2)" expected="23.0" units="dB" atol="0.05" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-05-005-voltage" expr="10**(-12/20)" expected="0.251" units="V" atol="0.001" rtol="1e-9" -->
 
 ---
 

@@ -344,6 +344,14 @@ real endpoints.
 
 ---
 
+
+<!-- VERIFY id="WE-01-26-001-forward" expr="(exp(0.1)-1)/0.1" expected="1.05170918" units="" atol="5e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-26-001-centered" expr="(exp(0.1)-exp(-0.1))/0.2" expected="1.00166750" units="" atol="5e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-26-001-ef" expr="abs((exp(0.1)-1)/0.1-1)" expected="0.05170918" units="" atol="5e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-26-001-ec" expr="abs((exp(0.1)-exp(-0.1))/0.2-1)" expected="0.00166750" units="" atol="5e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-26-001-forward05" expr="(exp(0.05)-1)/0.05" expected="1.02542193" units="" atol="5e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-26-001-centered05" expr="(exp(0.05)-exp(-0.05))/0.1" expected="1.00041672" units="" atol="5e-09" rtol="1e-09" -->
+
 ## 26.3 Root Finding — Bracketing and Newton's Method
 
 A root is a value $x^\*$ satisfying
@@ -454,6 +462,13 @@ $$\boxed{0.015625}.$$
 **Check.** The retained endpoints still have opposite signs, so the root remains
 inside the interval.
 
+
+<!-- VERIFY id="WE-01-26-002-low" expr="1.5" expected="1.5" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-26-002-high" expr="1.53125" expected="1.53125" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-26-002-width" expr="1.53125-1.5" expected="0.03125" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-26-002-mid" expr="(1.5+1.53125)/2" expected="1.515625" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-26-002-error" expr="(1.53125-1.5)/2" expected="0.015625" units="" atol="1e-09" rtol="1e-09" -->
+
 ### Worked Example 3 — Newton Converges Rapidly
 
 **Given.** Use Newton's method on
@@ -529,6 +544,11 @@ a Newton step that leaves a trusted bracket.
 > ---
 
 ---
+
+
+<!-- VERIFY id="WE-01-26-003-x1" expr="1.5-((1.5**3)-1.5-2)/(3*(1.5**2)-1)" expected="1.52173913" units="" atol="5e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-26-003-x2" expr="1.5217391304347827-((1.5217391304347827**3)-1.5217391304347827-2)/(3*(1.5217391304347827**2)-1)" expected="1.52137981" units="" atol="5e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-26-003-rootres" expr="abs((1.52137971**3)-1.52137971-2)" expected="0" units="" atol="5e-08" rtol="1e-09" -->
 
 ## 26.4 Newton Minimization and Curvature
 
@@ -641,6 +661,11 @@ If the engineering problem has bounds or constraints, inspect them separately.
 
 ---
 
+
+<!-- VERIFY id="WE-01-26-004-minx" expr="sqrt(3/2)" expected="1.22474487" units="" atol="5e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-26-004-second" expr="12*(3/2)-6" expected="12" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-26-004-hmin" expr="(sqrt(3/2)**4)-3*(sqrt(3/2)**2)+2" expected="-0.25" units="" atol="1e-09" rtol="1e-09" -->
+
 ## 26.5 Interpolation and Discrete Data
 
 Engineering data often come as tables:
@@ -724,6 +749,10 @@ Regression belongs with probability and statistics later in the guide. Do not
 use the words interchangeably.
 
 ---
+
+
+<!-- VERIFY id="WE-01-26-005-lambda" expr="(52-40)/(60-40)" expected="0.60" units="" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-26-005-v" expr="2.18+((52-40)/(60-40))*(2.82-2.18)" expected="2.564" units="V" atol="0.0005" rtol="1e-09" -->
 
 ## 26.6 Numerical Integration
 
@@ -865,6 +894,12 @@ Do not force unequal data into the uniform-grid formula.
 
 ---
 
+
+<!-- VERIFY id="WE-01-26-006-rect" expr="0.5*(0+0.25+1+2.25)" expected="1.7500" units="" atol="0.00005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-26-006-trap" expr="0.5/2*(0+2*(0.25+1+2.25)+4)" expected="2.7500" units="" atol="0.00005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-26-006-simpson" expr="0.5/3*(0+4*0.25+2*1+4*2.25+4)" expected="2.6666667" units="" atol="5e-08" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-26-006-exact" expr="8/3" expected="2.6666667" units="" atol="5e-08" rtol="1e-09" -->
+
 ## 26.7 Numerical ODEs — Euler Marching and Step-Size Control
 
 For the initial-value problem
@@ -934,7 +969,7 @@ $$y=e^{-2t},$$
 
 so
 
-$$y(0.6)=e^{-1.2}\approx\boxed{0.3010}.$$
+$$y(0.6)=e^{-1.2}\approx\boxed{0.3012}.$$
 
 The smaller step is substantially closer.
 
@@ -990,6 +1025,11 @@ Euler updates both states using values from the current step:
 $$x_{k+1}=x_k+\Delta t\,v_k,$$
 
 $$v_{k+1}=v_k-4\Delta t\,x_k.$$
+
+
+<!-- VERIFY id="WE-01-26-007-dt02" expr="0.6**3" expected="0.216" units="" atol="5e-07" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-26-007-dt01" expr="0.8**6" expected="0.262144" units="" atol="5e-07" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-26-007-exact" expr="exp(-1.2)" expected="0.3012" units="" atol="0.00005" rtol="1e-09" -->
 
 ### Worked Example 8 — Recasting a Second-Order ODE
 
@@ -1053,6 +1093,14 @@ For most FE-scale numerical calculations:
 That workflow matters more than memorizing a long catalog of algorithms.
 
 ---
+
+
+<!-- VERIFY id="WE-01-26-008-x1" expr="1+0.1*0" expected="1.000" units="" atol="0.0005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-26-008-v1" expr="0-0.4*1" expected="-0.400" units="" atol="0.0005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-26-008-x2" expr="1+0.1*(-0.4)" expected="0.960" units="" atol="0.0005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-26-008-v2" expr="-0.4-0.4*1" expected="-0.800" units="" atol="0.0005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-26-008-xexact" expr="cos(0.4)" expected="0.9211" units="" atol="0.00005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-26-008-vexact" expr="-2*sin(0.4)" expected="-0.7788" units="" atol="0.00005" rtol="1e-09" -->
 
 ## As the Handbook States It
 

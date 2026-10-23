@@ -75,16 +75,18 @@ does when you try to eliminate.
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-- **8.1** Classify a linear system as consistent and independent, consistent and
+
+* 8.1 Classify a linear system as consistent and independent, consistent and
   dependent, or inconsistent
-- **8.2** Solve 2×2 systems by substitution and by elimination
-- **8.3** Solve 3×3 systems by Gaussian elimination with back substitution
-- **8.4** Recognize when a system has no solution or infinitely many solutions
+* 8.2 Solve 2×2 systems by substitution and by elimination
+* 8.3 Solve 3×3 systems by Gaussian elimination with back substitution
+* 8.4 Recognize when a system has no solution or infinitely many solutions
   from algebraic signals, in both 2×2 and 3×3 systems
-- **8.5** Evaluate a 2×2 determinant and apply Cramer's rule to a 2×2 system
-- **8.6** Set up a system of equations from a physical problem, checking the
+* 8.5 Evaluate a 2×2 determinant and apply Cramer's rule to a 2×2 system
+* 8.6 Set up a system of equations from a physical problem, checking the
   count of unknowns against the count of independent conditions
-- **8.7** Verify a solution by substituting into every original equation
+* 8.7 Verify a solution by substituting into every original equation
+
 ---
 
 ## Notation Used Here
@@ -244,6 +246,10 @@ coefficients happen to be.
 
 ![FIG-01-08-002: Two parallel columns solving the same system 2x + y = 7 and 3x − y = 8. Left column headed 'substitution': four stacked boxes reading 'isolate y in the first equation, y = 7 − 2x', 'substitute into the second, 3x − (7 − 2x) = 8', 'solve, 5x = 15 so x = 3', 'back-substitute, y = 1'. A margin tag reads 'best when a variable already has coefficient 1'. Right column headed 'elimination': four stacked boxes reading 'the y coefficients are already +1 and −1', 'add the equations, the y terms cancel', 'solve, 5x = 15 so x = 3', 'back-substitute, y = 1'. A margin tag reads 'best when coefficients line up, and it scales to 3x3 and beyond'. Both columns converge on a single shared box at the bottom reading 'verify (3, 1) in BOTH original equations' with two checkmarks. A footer note reads 'same answer, different labour — pick the method the coefficients are offering you'.](../figures/FIG-01-08-002-substitution-versus-elimination.png)
 
+
+
+<!-- VERIFY id="WE-01-08-001-x" expr="(7+8)/5" expected="3" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-08-001-y" expr="7-2*3" expected="1" units="" atol="1e-12" rtol="1e-9" -->
 ### Worked Example 2 — Elimination in an Equilibrium Problem
 
 **Given.** Two members meet at a pin joint carrying an applied load. Writing
@@ -301,6 +307,10 @@ got.
 > seconds in the problem.
 >
 > ---
+
+
+<!-- VERIFY id="WE-01-08-002-f2" expr="(-42)/(-14)" expected="3" units="kN" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-08-002-f1" expr="16-4*3" expected="4" units="kN" atol="1e-12" rtol="1e-9" -->
 
 ---
 
@@ -415,6 +425,11 @@ $$\boxed{x = 2, \quad y = 3, \quad z = -1}$$
 > problem.
 >
 > ---
+
+
+<!-- VERIFY id="WE-01-08-003-z" expr="-1" expected="-1" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-08-003-y" expr="2-(-1)" expected="3" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-08-003-x" expr="(8-3+(-1))/2" expected="2" units="" atol="1e-12" rtol="1e-9" -->
 
 ---
 
@@ -604,6 +619,13 @@ $$\boxed{x = 2, \quad y = -1}$$
 $4(2) - 3(-1) = 8 + 3 = 11$ ✓
 $2(2) + 5(-1) = 4 - 5 = -1$ ✓
 
+
+<!-- VERIFY id="WE-01-08-006-D" expr="4*5-2*(-3)" expected="26" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-08-006-Dx" expr="11*5-(-1)*(-3)" expected="52" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-08-006-Dy" expr="4*(-1)-2*11" expected="-26" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-08-006-x" expr="52/26" expected="2" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-08-006-y" expr="-26/26" expected="-1" units="" atol="1e-12" rtol="1e-9" -->
+
 ---
 
 ## 8.6 Setting Up Systems from Engineering Problems
@@ -700,6 +722,11 @@ solution. Two-thirds versus one-third. Consistent.
 >
 > ---
 
+
+
+<!-- VERIFY id="WE-01-08-007-v2" expr="50/0.30" expected="166.66666666666666" units="mL" atol="1e-09" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-08-007-v1" expr="500-500/3" expected="333.3333333333333" units="mL" atol="1e-09" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-08-007-acid" expr="0.20*(1000/3)+0.50*(500/3)" expected="150" units="mL" atol="1e-09" rtol="1e-9" -->
 ### Worked Example 8 — Kirchhoff's Laws
 
 **Given.** The two-loop circuit shown. Two loops share a common branch
@@ -772,6 +799,13 @@ the sum of the other two.
 > running full Gaussian elimination on the original three.
 >
 > ---
+
+
+<!-- VERIFY id="WE-01-08-008-i1" expr="44/31" expected="1.419" units="A" atol="0.0005" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-08-008-i2" expr="32/31" expected="1.032" units="A" atol="0.0005" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-08-008-i3" expr="76/31" expected="2.452" units="A" atol="0.0005" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-08-008-loop1" expr="5*(44/31)+2*(76/31)" expected="12" units="V" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-08-008-loop2" expr="3*(32/31)+2*(76/31)" expected="8" units="V" atol="1e-12" rtol="1e-9" -->
 
 ---
 

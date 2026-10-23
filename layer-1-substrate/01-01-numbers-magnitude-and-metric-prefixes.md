@@ -128,7 +128,7 @@ same way.
 | **Irrational** | A real number not expressible as such a ratio | $\pi$, $e$, $\sqrt{2}$ |
 | **Real** | Any rational or irrational number | all of the above |
 
-![FIG-01-01-005: Nested-set diagram showing integers inside rationals inside reals, with irrationals occupying the remainder of the reals — pi, e, and root two labelled in the irrational region, and root nine labelled inside the integers to show that a radical sign does not make a number irrational](../figures/FIG-01-01-005-number-sets.png)
+![FIG-01-01-001: Nested-set diagram showing integers inside rationals inside reals, with irrationals occupying the remainder of the reals — pi, e, and root two labelled in the irrational region, and root nine labelled inside the integers to show that a radical sign does not make a number irrational](../figures/FIG-01-01-001-number-sets.png)
 
 Two notes with practical weight.
 
@@ -237,6 +237,9 @@ then $80 \div 2 = 40$.
 **6.4** — ignoring the grouping implied by the fraction bar, and evaluating
 $3 + 2 \times 4^2 \div 5 - 3$ instead. That gives $3 + 6.4 - 3 = 6.4$. This
 is exactly what an unparenthesized calculator entry produces.
+
+
+<!-- VERIFY id="WE-01-01-001-main" expr="(3+2*4**2)/(5-3)" expected="17.5" units="" atol="1e-12" rtol="1e-9" -->
 
 ---
 
@@ -405,6 +408,12 @@ about two.
 >
 > ---
 
+
+
+<!-- VERIFY id="WE-01-01-002-a" expr="4e6*2e-3" expected="8000.0" units="" atol="1e-09" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-01-002-b" expr="8e8/(4e2)" expected="2000000.0" units="" atol="1e-06" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-01-002-c" expr="3e-5*5e-4" expected="1.5e-08" units="" atol="1e-15" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-01-002-d" expr="1.44e-3/(1.2e-6)" expected="1200.0" units="" atol="1e-09" rtol="1e-9" -->
 ### Worked Example 3 — Addition and Subtraction
 
 **Given.** Evaluate, expressing each answer in proper scientific notation:
@@ -453,17 +462,24 @@ products.
 Every approved scientific calculator has an exponent-entry key, marked
 `EE`, `EXP`, or `×10ˣ`.
 
-To enter $4.7 \times 10^{-6}$: enter `4.7`, use your calculator's exponent-entry key (`EE`, `EXP`, or `×10ˣ`), and enter `−6` using that model's required negative-exponent sequence. **Do not** enter a separate `× 10` before using the exponent key.
+To enter $4.7 \times 10^{-6}$: press `4.7`, then the exponent key, then `6`,
+then the sign-change key. **Do not** press `× 10 ^ −6`.
 
 > ---
 > **Mentor's Margin**
 >
-> The exact keystroke sequence varies by calculator, but the failure mode is the same:
-> do not enter a separate `×10` and then also use the exponent-entry key. That applies
-> the power-of-ten factor twice. Learn your calculator's sequence and verify it once
-> with a known case such as $1 \times 10^3 = 1{,}000$.
+> Pressing `4.7 × 10 EE −6` gives you $4.7 \times 10 \times 10^{-6}$, which
+> is ten times too large. I've watched this error destroy an otherwise
+> perfect solution. Learn your calculator's exponent key and use it
+> exclusively. Then verify with a known case: enter $1 \times 10^3$ and
+> confirm the display reads 1,000, not 10,000.
 >
 > ---
+
+
+<!-- VERIFY id="WE-01-01-003-a" expr="3e5+4e4" expected="340000.0" units="" atol="1e-06" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-01-003-b" expr="6.2e-3-8e-4" expected="0.0054" units="" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-01-003-c" expr="9.5e6+7e6" expected="16500000.0" units="" atol="1e-06" rtol="1e-9" -->
 
 ---
 
@@ -479,8 +495,6 @@ size. It's a deliberately crude measure, and its crudeness is the point.
 | Standard gravity | $9.807$ m/s² | $10^1$ |
 | Atmospheric pressure | $1.013 \times 10^5$ Pa | $10^5$ |
 | Elastic modulus of steel | $\sim 2 \times 10^{11}$ Pa | $10^{11}$ |
-
-![FIG-01-01-001: Logarithmic order-of-magnitude number line from 10^-19 to 10^11 with engineering reference points for electron charge, human hair diameter, standard gravity, atmospheric pressure, and elastic modulus of steel](../figures/FIG-01-01-001-order-of-magnitude-number-line.png)
 
 Convention: if the mantissa is below about 3, the order of magnitude is the
 exponent; above that, round up. So $7 \times 10^{-5}$ is closer to $10^{-4}$
@@ -525,8 +539,6 @@ Note the area conversion. A millimetre is $10^{-3}$ m, so a *square*
 millimetre is $(10^{-3})^2 = 10^{-6}$ m². Squaring the prefix squares the
 power of ten.
 
-![FIG-01-01-004: Rectangular cross-section with an 840 kN axial load and an annotation showing conversion of 5,600 mm² to 5.60 × 10^-3 m² before computing stress](../figures/FIG-01-01-004-axial-load-area-conversion.png)
-
 Step 2 — Estimate first.
 
 $$\frac{8 \times 10^5}{6 \times 10^{-3}} \approx 1.3 \times 10^{8} \text{ Pa}$$
@@ -566,6 +578,9 @@ conversion is $10^{-6}$, not $10^{-3}$. Getting it wrong gives 150 kPa
 instead of 150 MPa — off by a thousand, and completely plausible-looking on
 the page. Cubic prefixes cube: $\text{mm}^3 \rightarrow \text{m}^3$ is
 $10^{-9}$.
+
+
+<!-- VERIFY id="WE-01-01-004-stress" expr="840e3/(5600e-6)" expected="150000000.0" units="Pa" atol="1" rtol="1e-9" -->
 
 ---
 
@@ -630,8 +645,8 @@ are multiples of three, so every value maps directly onto a prefix.
 | $2.2 \times 10^{-5}$ F | $22 \times 10^{-6}$ F | $22$ µF |
 | $6.8 \times 10^{-10}$ F | $680 \times 10^{-12}$ F | $680$ pF |
 
-Because exponents come in steps of three, the mantissa in normalized engineering
-notation satisfies $1 \le \lvert N \rvert < 1000$ rather than the scientific-notation range $1 \le \lvert N \rvert < 10$.
+Because exponents come in steps of three, the mantissa in engineering
+notation ranges from 1 up to 1000 rather than 1 up to 10.
 
 Most calculators have an engineering-notation display mode. **Find it and
 use it.** It does this conversion for you, which removes an entire category
@@ -656,7 +671,7 @@ you need fewer of them.**
 | $4.7$ GPa | MPa | 3 right | $4{,}700$ MPa |
 | $250{,}000$ Pa | kPa | 3 left | $250$ kPa |
 
-![FIG-01-01-006: Two-directional arrow diagram over the prefix ladder — an upward arrow labelled "larger prefix, smaller number" and a downward arrow labelled "smaller prefix, larger number" — with the worked conversion 4,700 ohms to 4.7 kilohms traced as an example](../figures/FIG-01-01-006-prefix-direction.png)
+![FIG-01-01-003: Two-directional arrow diagram over the prefix ladder — an upward arrow labelled "larger prefix, smaller number" and a downward arrow labelled "smaller prefix, larger number" — with the worked conversion 4,700 ohms to 4.7 kilohms traced as an example](../figures/FIG-01-01-003-prefix-direction.png)
 
 ### Worked Example 5 — A Prefix Chain
 
@@ -702,6 +717,10 @@ Matches Step 1. ✓
 > Everybody occasionally counts them the wrong way.
 >
 > ---
+
+
+<!-- VERIFY id="WE-01-01-005-base" expr="4.7e-9" expected="4.7e-09" units="F" atol="1e-18" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-01-005-pf" expr="4.7e-9/1e-12" expected="4700" units="pF" atol="1e-09" rtol="1e-9" -->
 
 ---
 
@@ -803,15 +822,17 @@ Mantissas: $4.7 \times 2.50 = 11.75$. Exponents: $3 + (-4) = -1$.
 
 $$V = 11.75 \times 10^{-1} \text{ V}$$
 
-Step 4 — Renormalize. Keep the calculator result unrounded here; Chapter 01-03 develops the rules for final-answer precision.
+Step 4 — Renormalize, then round to three significant figures.
 
-$$11.75 \times 10^{-1} \text{ V} = \boxed{1.175 \text{ V}}$$
+$$11.75 \times 10^{-1} \text{ V} = 1.175 \text{ V} \;\rightarrow\; \boxed{1.18 \text{ V}}$$
 
-**Check.** Estimate said "near 1 volt"; we got 1.175 V. ✓
+**Check.** Estimate said "near 1 volt"; we got 1.18 V. ✓
 
 Alternative check using prefix arithmetic directly: kilo times micro is
 $10^3 \times 10^{-6} = 10^{-3}$, which is milli. So $4.7 \times 250 = 1{,}175$
-in millivolts, which is $1{,}175 \text{ mV} = 1.175 \text{ V}$. ✓ Same answer by a different route. Final-answer rounding is deferred to Chapter 01-03.
+in millivolts, which is $1{,}175 \text{ mV} = 1.175 \text{ V} \rightarrow
+1.18 \text{ V}$. ✓ Same answer by a different route, rounded the same way at
+the same point.
 
 That second method is worth learning. **Prefix pairs combine predictably:**
 
@@ -823,8 +844,9 @@ That second method is worth learning. **Prefix pairs combine predictably:**
 | mega × nano | $10^6 \times 10^{-9} = 10^{-3}$ | milli |
 | kilo ÷ milli | $10^3 \div 10^{-3} = 10^6$ | mega |
 
-![FIG-01-01-003: Prefix-pair multiplication matrix showing the net SI prefix produced by common engineering prefix combinations](../figures/FIG-01-01-003-prefix-pair-matrix.png)
 
+
+<!-- VERIFY id="WE-01-01-006-voltage" expr="4.7e3*250e-6" expected="1.18" units="V" atol="0.006" rtol="1e-9" -->
 ### Worked Example 7 — Squared and Cubed Prefixes
 
 **Given.** A rectangular duct measures $450 \text{ mm}$ by $300 \text{ mm}$.
@@ -852,7 +874,7 @@ $$135{,}000 \text{ mm}^2 \times \frac{10^{-6} \text{ m}^2}{1 \text{ mm}^2} = 0.1
 
 Both routes agree, confirming the $10^{-6}$ factor.
 
-![FIG-01-01-007: Three stacked panels showing a 1 mm length beside a 1 m length, then a 1 mm square inside a 1 m square, then a 1 mm cube inside a 1 m cube — each panel annotated with the corresponding factor of ten to the minus three, minus six, and minus nine, making visible that the prefix exponent multiplies by the power](../figures/FIG-01-01-007-squared-cubed-prefix.png)
+![FIG-01-01-004: Three stacked panels showing a 1 mm length beside a 1 m length, then a 1 mm square inside a 1 m square, then a 1 mm cube inside a 1 m cube — each panel annotated with the corresponding factor of ten to the minus three, minus six, and minus nine, making visible that the prefix exponent multiplies by the power](../figures/FIG-01-01-004-squared-cubed-prefix.png)
 
 (b) Step 3 — Volumetric flow rate.
 
@@ -862,14 +884,16 @@ Step 4 — Convert to litres per second, carrying full precision.
 
 $$1.1475 \frac{\text{m}^3}{\text{s}} \times \frac{1{,}000 \text{ L}}{1 \text{ m}^3} = 1{,}147.5 \text{ L/s}$$
 
-Step 5 — Express the same unrounded result in both requested unit forms. Final-answer precision is handled in Chapter 01-03.
+Step 5 — Round both forms to three significant figures, the precision of the
+given velocity.
 
-$$\boxed{Q_v = 1.1475 \text{ m}^3/\text{s} = 1.1475 \times 10^3 \text{ L/s} = 1{,}147.5 \text{ L/s}}$$
+$$\boxed{Q_v = 1.15 \text{ m}^3/\text{s} = 1.15 \times 10^3 \text{ L/s} = 1{,}150 \text{ L/s}}$$
 
 **Check.** Dimensional reasoning: area (m²) times velocity (m/s) gives m³/s.
 ✓ Magnitude: a duct roughly half a metre square, with air moving at about
 8 m/s, moving about one cubic metre per second — that's physically sensible.
-✓ Both reported forms describe the same physical quantity. ✓
+✓ Both reported forms carry three significant figures, so they describe the
+same quantity at the same precision. ✓
 
 **Where this would go wrong.** Using $10^{-3}$ instead of $10^{-6}$ for the
 mm²-to-m² conversion gives $135 \text{ m}^2$ — a duct the size of a tennis
@@ -887,6 +911,11 @@ reasonable?" catches it.
 > defense is a habit of asking whether the answer makes physical sense.
 >
 > ---
+
+
+<!-- VERIFY id="WE-01-01-007-area" expr="0.450*0.300" expected="0.135" units="m^2" atol="1e-12" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-01-007-flow-m3s" expr="0.450*0.300*8.5" expected="1.15" units="m^3/s" atol="0.005" rtol="1e-9" -->
+<!-- VERIFY id="WE-01-01-007-flow-ls" expr="0.450*0.300*8.5*1000" expected="1150" units="L/s" atol="5" rtol="1e-9" -->
 
 ---
 
@@ -1106,7 +1135,7 @@ anywhere in this exam.
     C) $27$
     D) $108$
 
-28. The product $(5 \times 10^{-4})(6 \times 10^{-3})$ written in proper scientific notation is:
+28. The product $(5 \times 10^{-4})(6 \times 10^{-3})$ equals:
     A) $3.0 \times 10^{-6}$
     B) $3.0 \times 10^{-7}$
     C) $30 \times 10^{-7}$
@@ -1426,15 +1455,15 @@ $$A = \frac{\pi D^2}{4} = \frac{\pi (0.150)^2}{4} = \frac{\pi (0.0225)}{4} = \fr
 
 $$Q_v = Av = (1.767 \times 10^{-2})(2.4) = 4.241 \times 10^{-2} \text{ m}^3/\text{s}$$
 
-Keeping the calculated digits for now: $\boxed{4.241 \times 10^{-2} \text{ m}^3/\text{s}}$. Chapter 01-03 covers final-answer precision.
+Three significant figures: $\boxed{4.24 \times 10^{-2} \text{ m}^3/\text{s}}$
 
 (c)
 
-$$4.241 \times 10^{-2} \frac{\text{m}^3}{\text{s}} \times \frac{1{,}000 \text{ L}}{1 \text{ m}^3} = \boxed{42.41 \text{ L/s}}$$
+$$4.241 \times 10^{-2} \frac{\text{m}^3}{\text{s}} \times \frac{1{,}000 \text{ L}}{1 \text{ m}^3} = \boxed{42.4 \text{ L/s}}$$
 
 (d) **Physical check.** A 150 mm pipe is roughly a 6-inch water main. Water at
 2.4 m/s is a normal design velocity for such a line — municipal systems
-typically run somewhere in the 1 to 3 m/s range. And 42.41 L/s works out to
+typically run somewhere in the 1 to 3 m/s range. And 42.4 L/s works out to
 about 670 gallons per minute, a sensible flow for a 6-inch main. Everything
 reconciles. ✓
 
@@ -1486,7 +1515,9 @@ that. (B) forgets to renormalize *and* keeps the mantissa at 3, and (D) is
 arithmetic noise. (§1.3)
 
 **29. B — $4.7 \text{ M}\Omega$.** All four choices are numerically equal;
-the question asks which is *most natural*. Normalized engineering notation uses a mantissa satisfying $1 \le \lvert N \rvert < 1000$, which 4.7 satisfies. (A) at 4,700 and (C) at 0.0047 are numerically equivalent but not normalized engineering notation, and (D) isn't engineering notation at all
+the question asks which is *most natural*. Engineering convention puts the
+mantissa between 1 and 1000, which 4.7 satisfies. (A) at 4,700 and (C) at
+0.0047 are both legal but awkward, and (D) isn't engineering notation at all
 since $10^5$ is not a multiple of three. (§1.5)
 
 **30. C — mega.** Prefixes for $10^6$ and above use capitals: M, G, T, P, E.
@@ -1507,7 +1538,8 @@ gives a wrong answer. (§1.2)
 
 **33. B — the exponent must be a multiple of three.** That's what makes every
 value map onto a prefix. (A) describes *scientific* notation, so it's the
-right statement about the wrong form — in normalized engineering notation the mantissa satisfies $1 \le \lvert N \rvert < 1000$. (C) is false: $680$ pF is $680 \times 10^{-12}$. (D)
+right statement about the wrong form — in engineering notation the mantissa
+runs from 1 up to 1000. (C) is false: $680$ pF is $680 \times 10^{-12}$. (D)
 is false: $4.7$ kΩ. (§1.5)
 
 **34. C — $\sqrt{2}$.** Irrational: it neither terminates nor repeats. (A) is
@@ -1557,7 +1589,7 @@ knowledge.
 **Engineering notation**
 
 Exponent restricted to multiples of three, so every value maps onto a prefix.
-Mantissa satisfies $1 \le \lvert N \rvert < 1000$. Use your calculator's ENG display mode.
+Mantissa runs 1 to 1000. Use your calculator's ENG display mode.
 
 **Prefix conversion**
 

@@ -293,6 +293,11 @@ $$\frac12=e^{-0.25t}\implies
 
 ---
 
+
+<!-- VERIFY id="WE-01-25-002-half" expr="log(2)/0.25" expected="2.77" units="s" atol="0.005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-25-002-y0" expr="80*exp(-0.25*0)" expected="80" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-25-002-yhalf" expr="80*exp(-0.25*(log(2)/0.25))" expected="40" units="" atol="1e-09" rtol="1e-09" -->
+
 ## 25.3 First-Order Linear Equations
 
 The standard first-order linear form is

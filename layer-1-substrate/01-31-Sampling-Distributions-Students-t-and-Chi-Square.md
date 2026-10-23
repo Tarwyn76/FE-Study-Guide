@@ -270,6 +270,13 @@ standard deviation of a few units is plausible.
 
 ---
 
+
+
+<!-- VERIFY id="WE-01-31-001-mean" expr="(10+12+13+15+20)/5" expected="14" units="" atol="1e-9" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-31-001-ss" expr="(10-14)**2+(12-14)**2+(13-14)**2+(15-14)**2+(20-14)**2" expected="58" units="" atol="1e-9" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-31-001-variance" expr="((10-14)**2+(12-14)**2+(13-14)**2+(15-14)**2+(20-14)**2)/(5-1)" expected="14.5" units="" atol="1e-9" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-31-001-sd" expr="sqrt(((10-14)**2+(12-14)**2+(13-14)**2+(15-14)**2+(20-14)**2)/(5-1))" expected="3.8079" units="" atol="0.00005" rtol="1e-09" -->
+
 ## 31.2 Sampling Distributions and Degrees of Freedom
 
 A **sampling distribution** is the probability distribution of a statistic over
@@ -378,6 +385,11 @@ The rule to remember is:
 > after required constraints or estimated parameters are accounted for.
 
 ---
+
+
+
+<!-- VERIFY id="WE-01-31-002-d4" expr="-(-3+1+4)" expected="-2" units="" atol="1e-9" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-31-002-df" expr="4-1" expected="3" units="" atol="1e-9" rtol="1e-09" -->
 
 ## 31.3 Student's $t$ Distribution — Unknown Population Standard Deviation
 
@@ -510,6 +522,12 @@ reasonable.
 > ---
 
 ---
+
+
+
+<!-- VERIFY id="WE-01-31-003-se" expr="3/sqrt(10)" expected="0.94868" units="" atol="0.000005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-31-003-t" expr="(52.4-50)/(3/sqrt(10))" expected="2.5298" units="" atol="0.00005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-31-003-df" expr="10-1" expected="9" units="" atol="1e-9" rtol="1e-09" -->
 
 ## 31.4 Reading the Handbook $t$ Table
 
@@ -789,6 +807,11 @@ be negative.
 
 ---
 
+
+
+<!-- VERIFY id="WE-01-31-006-chisq" expr="1.0**2+(-0.5)**2+2.0**2" expected="5.25" units="" atol="1e-9" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-31-006-df" expr="3" expected="3" units="" atol="1e-9" rtol="1e-09" -->
+
 ## 31.6 Sample Variance and Chi-Square Scaling
 
 For a random sample of size $n$ from a normal population with variance
@@ -934,6 +957,11 @@ $$
 $$
 
 That wide asymmetry is exactly what the shape predicts.
+
+
+
+<!-- VERIFY id="WE-01-31-007-df" expr="10-1" expected="9" units="" atol="1e-9" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-31-007-chisq" expr="(10-1)*4/9" expected="4.00" units="" atol="1e-9" rtol="1e-09" -->
 
 ### Worked Example 8 — Interpret Two Chi-Square Critical Values
 

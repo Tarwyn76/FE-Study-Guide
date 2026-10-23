@@ -932,6 +932,10 @@ is substantially complete after a few time constants ✓
 
 ---
 
+
+<!-- VERIFY id="WE-01-21-014-total" expr="18*25" expected="450" units="L" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-21-014-60s" expr="18*25*(1-exp(-60/25))" expected="409.2" units="L" atol="0.05" rtol="1e-09" -->
+
 ## 21.6 A Strategy for Integration
 
 This is the section to return to when an unfamiliar integral appears. Work down
@@ -1089,6 +1093,12 @@ the peak.
 ![FIG-01-21-006: Plot of F(t) = 500(t/0.04)e^(−t/0.04) N against t from 0 to 0.25 s. The curve rises steeply from the origin to a marked peak at (0.040, 184) with a horizontal tangent segment and label "F_max = 184 N at t = τ", then decays with a long tail approaching zero. The region under the curve from 0 to τ is shaded dark and labeled "26.4% of impulse"; the region from τ onward is shaded light and labeled "73.6% of impulse", with an arrow indicating continuation to infinity. A dashed horizontal line at F₀ = 500 N is labeled "scale constant F₀ — not the peak".](../figures/FIG-01-21-006-force-pulse-impulse.png)
 
 ---
+
+
+<!-- VERIFY id="WE-01-21-015-tpeak" expr="0.040" expected="0.040" units="s" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-21-015-fmax" expr="500*exp(-1)" expected="184" units="N" atol="0.5" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-21-015-impulse" expr="500*0.040" expected="20.0" units="N*s" atol="0.05" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-21-015-frac" expr="100*(1-2*exp(-1))" expected="26.4" units="%" atol="0.05" rtol="1e-09" -->
 
 ## As the Handbook States It
 

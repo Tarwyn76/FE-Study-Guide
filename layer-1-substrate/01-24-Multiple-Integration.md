@@ -260,6 +260,10 @@ $$\int_0^1(2+4y)\,dy=[2y+2y^2]_0^1=\boxed{4}.$$
 
 ---
 
+
+<!-- VERIFY id="WE-01-24-001-dydx" expr="(2**2)/2+2" expected="4" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-24-001-dxdy" expr="2+2" expected="4" units="" atol="1e-09" rtol="1e-09" -->
+
 ## 24.2 General Regions and Choosing the Order
 
 Rectangles are the easy case because every boundary is constant. Engineering
@@ -372,6 +376,10 @@ Then split the region into two or more simple pieces and add the integrals.
 
 ---
 
+
+<!-- VERIFY id="WE-01-24-002-dydx" expr="4-8/3" expected="1.3333333333333333" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-24-002-dxdy" expr="(2/3)*(4**1.5)-(4**2)/4" expected="1.3333333333333333" units="" atol="1e-09" rtol="1e-09" -->
+
 ## 24.3 Area, Volume, and Average Value
 
 The same double integral changes meaning when the integrand changes.
@@ -483,6 +491,10 @@ must therefore lie between $4(2)=8$ m³ and $6(2)=12$ m³; $9.33$ m³ does. ✓
 
 ---
 
+
+<!-- VERIFY id="WE-01-24-003-volume" expr="20-12+8/6" expected="9.333333333333334" units="m^3" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-24-003-average" expr="(20-12+8/6)/2" expected="4.666666666666667" units="m" atol="1e-09" rtol="1e-09" -->
+
 ## 24.4 Mass, Moments, and Centroid of a Lamina
 
 A **lamina** is a thin two-dimensional body. If its area density varies with
@@ -578,6 +590,11 @@ and probability density all use the same mathematical skeleton when their models
 are stated appropriately. The units tell you what total you are computing.
 
 ---
+
+
+<!-- VERIFY id="WE-01-24-004-mass" expr="2*(2+2)" expected="8" units="kg" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-24-004-xbar" expr="(2*(2+8/3))/8" expected="1.1666666666666667" units="m" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-24-004-ybar" expr="0.5" expected="0.5" units="m" atol="1e-09" rtol="1e-09" -->
 
 ## 24.5 Polar Coordinates and the Area Factor
 
@@ -683,6 +700,11 @@ matching the circle formula from the Handbook mensuration table. ✓
 
 ---
 
+
+<!-- VERIFY id="WE-01-24-005-integral" expr="2*pi*(2**4/4)" expected="25.132741228718345" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-24-005-average" expr="(2*pi*(2**4/4))/(pi*(2**2))" expected="2" units="" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-24-005-area" expr="pi*(2**2)" expected="12.566370614359172" units="" atol="1e-09" rtol="1e-09" -->
+
 ## 24.6 Triple Integrals — Accumulation Through Volume
 
 A triple integral adds contributions over a three-dimensional region $E$:
@@ -783,6 +805,11 @@ $$\rho_{\mathrm{avg}}=\frac{M}{V}
 which lies between the bottom value 800 and top value 900 kg/m³. ✓
 
 ---
+
+
+<!-- VERIFY id="WE-01-24-006-mass" expr="2*(800+100/2)" expected="1700" units="kg" atol="1e-09" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-24-006-zbar" expr="(2*(400+100/3))/1700" expected="0.5098" units="m" atol="0.00005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-24-006-rhoavg" expr="1700/2" expected="850" units="kg/m^3" atol="1e-09" rtol="1e-09" -->
 
 ## 24.7 Cylindrical, Spherical, and General Coordinate Changes
 

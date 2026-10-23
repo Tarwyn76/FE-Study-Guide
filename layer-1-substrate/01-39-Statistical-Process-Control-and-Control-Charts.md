@@ -741,6 +741,10 @@ $$
 \boxed{0.1720}.
 $$
 
+
+
+<!-- VERIFY id="WE-01-39-006-sigma" expr="0.40/2.326" expected="0.1720" units="" atol="0.00005" rtol="1e-09" -->
+
 ### Worked Example 7 — Estimate $\sigma$ from $\bar S$
 
 Use the $S$-chart example:
@@ -771,6 +775,10 @@ These examples use different baseline datasets, so their two numerical estimates
 are not expected to match.
 
 ---
+
+
+
+<!-- VERIFY id="WE-01-39-007-sigma" expr="0.20/0.9400" expected="0.2128" units="" atol="0.00005" rtol="1e-09" -->
 
 ## 39.6 Handbook Tests for Out-of-Control Behavior
 

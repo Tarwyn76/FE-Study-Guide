@@ -1,0 +1,34 @@
+REVIEW  00-02 Worked Example 1 — Building a Time Budget: numeric example has no independent VERIFY tag
+REVIEW  00-03 Worked Example 1 — A Lookup Drill: numeric example has no independent VERIFY tag
+REVIEW  00-03 Worked Example 2 — When the Answer Is a Table: numeric example has no independent VERIFY tag
+REVIEW  01-01 Worked Example 1 — Order of Operations: numeric example has no independent VERIFY tag
+REVIEW  01-01 Worked Example 2 — Multiplication and Division: numeric example has no independent VERIFY tag
+REVIEW  01-01 Worked Example 3 — Addition and Subtraction: numeric example has no independent VERIFY tag
+REVIEW  01-01 Worked Example 4 — Estimation as a Check: numeric example has no independent VERIFY tag
+REVIEW  01-01 Worked Example 5 — A Prefix Chain: numeric example has no independent VERIFY tag
+REVIEW  01-01 Worked Example 6 — Mixed Prefixes in One Calculation: numeric example has no independent VERIFY tag
+REVIEW  01-01 Worked Example 7 — Squared and Cubed Prefixes: numeric example has no independent VERIFY tag
+REVIEW  01-02 Worked Example 1 — Catching a Wrong Equation: numeric example has no independent VERIFY tag
+REVIEW  01-02 Worked Example 2 — Verifying a Valid Term: numeric example has no independent VERIFY tag
+REVIEW  01-02 Worked Example 3 — A Multi-Step SI Conversion: numeric example has no independent VERIFY tag
+REVIEW  01-02 Worked Example 4 — USCS to SI, With a Squared Prefix: numeric example has no independent VERIFY tag
+REVIEW  01-02 Worked Example 5 — Force on an Accelerating Mass: numeric example has no independent VERIFY tag
+REVIEW  01-02 Worked Example 6 — Weight at Non-Standard Gravity: numeric example has no independent VERIFY tag
+REVIEW  01-02 Worked Example 7 — Kinetic Energy in USCS: numeric example has no independent VERIFY tag
+REVIEW  01-02 Worked Example 8 — Fluid Pressure and Specific Weight: numeric example has no independent VERIFY tag
+REVIEW  01-02 Worked Example 9 — Value, Difference, and Ratio: numeric example has no independent VERIFY tag
+REVIEW  01-03 Worked Example 1 — Computing Errors: numeric example has no independent VERIFY tag
+REVIEW  ... 831 additional coverage reviews omitted.
+
+PASS WITH REVIEW REQUIRED  1127 worked examples; 851 numeric candidates; 0 tagged examples; 0 independent VERIFY checks; 0 failures; 851 coverage reviews.
+INFO  Use --strict for the release gate. Strict mode requires independent VERIFY metadata on every detected numeric worked example.
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.

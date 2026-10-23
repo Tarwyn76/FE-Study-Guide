@@ -448,6 +448,13 @@ $$
 
 ---
 
+
+
+<!-- VERIFY id="WE-01-34-002-grand-mean" expr="(8+9+7+12+11+13+9+10+8)/9" expected="9.6667" units="" atol="0.00005" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-34-002-ss-treatment" expr="3*((8-29/3)**2+(12-29/3)**2+(9-29/3)**2)" expected="26" units="" atol="1e-9" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-34-002-ss-error" expr="((8-8)**2+(9-8)**2+(7-8)**2)+((12-12)**2+(11-12)**2+(13-12)**2)+((9-9)**2+(10-9)**2+(8-9)**2)" expected="6" units="" atol="1e-9" rtol="1e-09" -->
+<!-- VERIFY id="WE-01-34-002-ss-total" expr="3*((8-29/3)**2+(12-29/3)**2+(9-29/3)**2)+6" expected="32" units="" atol="1e-9" rtol="1e-09" -->
+
 ## 34.3 The One-Way ANOVA Table and $F$ Test
 
 The Handbook gives the one-way ANOVA table in the following structure:
@@ -1218,6 +1225,10 @@ Design determines what can be estimated.
 
 ---
 
+
+
+<!-- VERIFY id="WE-01-34-007-df-error" expr="2*2*(1-1)" expected="0" units="" atol="1e-9" rtol="1e-09" -->
+
 ## 34.7 Designing, Checking, and Interpreting an ANOVA
 
 Before computing an ANOVA, ask whether the experimental design supports the
@@ -1693,7 +1704,8 @@ A) $ab(n-1)$  B) $abn-1$  C) $a-1$  D) $b-1$.
     \frac{12}{2}
     =
     \boxed{6}.
-    $$ Verification: the stated value follows from the chapter relation applied to the quantities in the problem; retain the indicated units and check the result against the problem statement.
+    $$
+
 14. Since
 
     $$
@@ -1742,7 +1754,8 @@ A) $ab(n-1)$  B) $abn-1$  C) $a-1$  D) $b-1$.
     90-30-40
     =
     \boxed{20}.
-    $$ Verification: the stated value follows from the chapter relation applied to the quantities in the problem; retain the indicated units and check the result against the problem statement.
+    $$
+
 17.
 
     $$
@@ -2070,7 +2083,8 @@ A) $ab(n-1)$  B) $abn-1$  C) $a-1$  D) $b-1$.
    140-45-65
    =
    \boxed{30}.
-   $$ Verification: the stated value follows from the chapter relation applied to the quantities in the problem; retain the indicated units and check the result against the problem statement. For this practice problem, use the ANOVA error term and the problem's own degrees of freedom before comparing the computed F statistic with the appropriate upper-tail critical value.
+   $$
+
 7. B effect at $A_1$:
 
    $$
