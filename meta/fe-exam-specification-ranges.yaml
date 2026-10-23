@@ -1,0 +1,323 @@
+schema_version: 1
+effective: July 2020
+verified_current: '2026-10-23'
+disciplines:
+  chemical:
+  - name: Mathematics
+    min: 6
+    max: 9
+  - name: Probability and Statistics
+    min: 4
+    max: 6
+  - name: Engineering Sciences
+    min: 4
+    max: 6
+  - name: Materials Science
+    min: 4
+    max: 6
+  - name: Chemistry and Biology
+    min: 7
+    max: 11
+  - name: Fluid Mechanics/Dynamics
+    min: 8
+    max: 12
+  - name: Thermodynamics
+    min: 8
+    max: 12
+  - name: Material/Energy Balances
+    min: 10
+    max: 15
+  - name: Heat Transfer
+    min: 8
+    max: 12
+  - name: Mass Transfer and Separation
+    min: 8
+    max: 12
+  - name: Solids Handling
+    min: 3
+    max: 5
+  - name: Chemical Reaction Engineering
+    min: 7
+    max: 11
+  - name: Economics
+    min: 4
+    max: 6
+  - name: Process Design
+    min: 7
+    max: 11
+  - name: Process Control
+    min: 4
+    max: 6
+  - name: Safety, Health, and Environment
+    min: 5
+    max: 8
+  - name: Ethics and Professional Practice
+    min: 3
+    max: 5
+  civil:
+  - name: Mathematics and Statistics
+    min: 8
+    max: 12
+  - name: Ethics and Professional Practice
+    min: 4
+    max: 6
+  - name: Engineering Economics
+    min: 5
+    max: 8
+  - name: Statics
+    min: 8
+    max: 12
+  - name: Dynamics
+    min: 4
+    max: 6
+  - name: Mechanics of Materials
+    min: 7
+    max: 11
+  - name: Materials
+    min: 5
+    max: 8
+  - name: Fluid Mechanics
+    min: 6
+    max: 9
+  - name: Surveying
+    min: 6
+    max: 9
+  - name: Water Resources and Environmental Engineering
+    min: 10
+    max: 15
+  - name: Structural Engineering
+    min: 10
+    max: 15
+  - name: Geotechnical Engineering
+    min: 10
+    max: 15
+  - name: Transportation Engineering
+    min: 9
+    max: 14
+  - name: Construction Engineering
+    min: 8
+    max: 12
+  electrical-computer:
+  - name: Mathematics
+    min: 11
+    max: 17
+  - name: Probability and Statistics
+    min: 4
+    max: 6
+  - name: Ethics and Professional Practice
+    min: 4
+    max: 6
+  - name: Engineering Economics
+    min: 5
+    max: 8
+  - name: Properties of Electrical Materials
+    min: 4
+    max: 6
+  - name: Circuit Analysis (DC and AC Steady State)
+    min: 11
+    max: 17
+  - name: Linear Systems
+    min: 5
+    max: 8
+  - name: Signal Processing
+    min: 5
+    max: 8
+  - name: Electronics
+    min: 7
+    max: 11
+  - name: Power Systems
+    min: 8
+    max: 12
+  - name: Electromagnetics
+    min: 4
+    max: 6
+  - name: Control Systems
+    min: 6
+    max: 9
+  - name: Communications
+    min: 5
+    max: 8
+  - name: Computer Networks
+    min: 4
+    max: 6
+  - name: Digital Systems
+    min: 8
+    max: 12
+  - name: Computer Systems
+    min: 5
+    max: 8
+  - name: Software Engineering
+    min: 4
+    max: 6
+  environmental:
+  - name: Mathematics
+    min: 5
+    max: 8
+  - name: Probability and Statistics
+    min: 4
+    max: 6
+  - name: Ethics and Professional Practice
+    min: 5
+    max: 8
+  - name: Engineering Economics
+    min: 5
+    max: 8
+  - name: Fundamental Principles
+    min: 7
+    max: 11
+  - name: Environmental Chemistry
+    min: 7
+    max: 11
+  - name: Health Hazards and Risk Assessment
+    min: 4
+    max: 6
+  - name: Fluid Mechanics and Hydraulics
+    min: 12
+    max: 18
+  - name: Thermodynamics
+    min: 3
+    max: 5
+  - name: Surface Water Resources and Hydrology
+    min: 9
+    max: 14
+  - name: Groundwater, Soils, and Sediments
+    min: 8
+    max: 12
+  - name: Water and Wastewater
+    min: 12
+    max: 18
+  - name: Air Quality and Control
+    min: 8
+    max: 12
+  - name: Solid and Hazardous Waste
+    min: 7
+    max: 11
+  - name: Energy and Environment
+    min: 4
+    max: 6
+  industrial-systems:
+  - name: Mathematics
+    min: 6
+    max: 9
+  - name: Engineering Sciences
+    min: 4
+    max: 6
+  - name: Ethics and Professional Practice
+    min: 4
+    max: 6
+  - name: Engineering Economics
+    min: 9
+    max: 14
+  - name: Probability and Statistics
+    min: 10
+    max: 15
+  - name: Modeling and Quantitative Analysis
+    min: 9
+    max: 14
+  - name: Engineering Management
+    min: 8
+    max: 12
+  - name: Manufacturing, Service, and Other Production Systems
+    min: 9
+    max: 14
+  - name: Facilities and Supply Chain
+    min: 9
+    max: 14
+  - name: Human Factors, Ergonomics, and Safety
+    min: 8
+    max: 12
+  - name: Work Design
+    min: 7
+    max: 11
+  - name: Quality
+    min: 9
+    max: 14
+  - name: Systems Engineering, Analysis, and Design
+    min: 8
+    max: 12
+  mechanical:
+  - name: Mathematics
+    min: 6
+    max: 9
+  - name: Probability and Statistics
+    min: 4
+    max: 6
+  - name: Ethics and Professional Practice
+    min: 4
+    max: 6
+  - name: Engineering Economics
+    min: 4
+    max: 6
+  - name: Electricity and Magnetism
+    min: 5
+    max: 8
+  - name: Statics
+    min: 9
+    max: 14
+  - name: Dynamics, Kinematics, and Vibrations
+    min: 10
+    max: 15
+  - name: Mechanics of Materials
+    min: 9
+    max: 14
+  - name: Material Properties and Processing
+    min: 7
+    max: 11
+  - name: Fluid Mechanics
+    min: 10
+    max: 15
+  - name: Thermodynamics
+    min: 10
+    max: 15
+  - name: Heat Transfer
+    min: 7
+    max: 11
+  - name: Measurements, Instrumentation, and Controls
+    min: 5
+    max: 8
+  - name: Mechanical Design and Analysis
+    min: 10
+    max: 15
+  other-disciplines:
+  - name: Mathematics
+    min: 8
+    max: 12
+  - name: Probability and Statistics
+    min: 6
+    max: 9
+  - name: Chemistry
+    min: 5
+    max: 8
+  - name: Instrumentation and Controls
+    min: 4
+    max: 6
+  - name: Engineering Ethics and Societal Impacts
+    min: 5
+    max: 8
+  - name: Safety, Health, and Environment
+    min: 6
+    max: 9
+  - name: Engineering Economics
+    min: 6
+    max: 9
+  - name: Statics
+    min: 9
+    max: 14
+  - name: Dynamics
+    min: 9
+    max: 14
+  - name: Strength of Materials
+    min: 9
+    max: 14
+  - name: Materials
+    min: 6
+    max: 9
+  - name: Fluid Mechanics
+    min: 12
+    max: 18
+  - name: Basic Electrical Engineering
+    min: 6
+    max: 9
+  - name: Thermodynamics and Heat Transfer
+    min: 9
+    max: 14

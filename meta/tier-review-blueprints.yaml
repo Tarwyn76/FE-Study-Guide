@@ -1,0 +1,375 @@
+schema_version: 1
+review_exams:
+- tier: 1A
+  question_count: 20
+  recommended_working_time_minutes: 40
+  chapters:
+  - chapter: 01-01
+    concept_atoms: 3
+    allocated: 7
+  - chapter: 01-02
+    concept_atoms: 4
+    allocated: 8
+  - chapter: 01-03
+    concept_atoms: 2
+    allocated: 5
+- tier: 1B
+  question_count: 32
+  recommended_working_time_minutes: 64
+  chapters:
+  - chapter: 01-04
+    concept_atoms: 3
+    allocated: 3
+  - chapter: 01-05
+    concept_atoms: 3
+    allocated: 3
+  - chapter: 01-06
+    concept_atoms: 3
+    allocated: 3
+  - chapter: 01-07
+    concept_atoms: 3
+    allocated: 3
+  - chapter: 01-08
+    concept_atoms: 3
+    allocated: 2
+  - chapter: 01-09
+    concept_atoms: 3
+    allocated: 2
+  - chapter: 01-10
+    concept_atoms: 3
+    allocated: 2
+  - chapter: 01-11
+    concept_atoms: 5
+    allocated: 3
+  - chapter: 01-12
+    concept_atoms: 3
+    allocated: 2
+  - chapter: 01-13
+    concept_atoms: 4
+    allocated: 3
+  - chapter: 01-14
+    concept_atoms: 4
+    allocated: 3
+  - chapter: 01-15
+    concept_atoms: 4
+    allocated: 3
+- tier: 1C
+  question_count: 34
+  recommended_working_time_minutes: 68
+  chapters:
+  - chapter: 01-16
+    concept_atoms: 4
+    allocated: 2
+  - chapter: 01-17
+    concept_atoms: 5
+    allocated: 3
+  - chapter: 01-18
+    concept_atoms: 5
+    allocated: 3
+  - chapter: 01-19
+    concept_atoms: 5
+    allocated: 2
+  - chapter: 01-20
+    concept_atoms: 6
+    allocated: 3
+  - chapter: 01-21
+    concept_atoms: 6
+    allocated: 3
+  - chapter: 01-22
+    concept_atoms: 6
+    allocated: 3
+  - chapter: 01-23
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 01-24
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 01-25
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 01-26
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 01-27
+    concept_atoms: 7
+    allocated: 3
+- tier: 1D
+  question_count: 38
+  recommended_working_time_minutes: 76
+  chapters:
+  - chapter: 01-28
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 01-29
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 01-30
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 01-31
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 01-32
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 01-33
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 01-34
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 01-35
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 01-36
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 01-37
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 01-38
+    concept_atoms: 7
+    allocated: 2
+  - chapter: 01-39
+    concept_atoms: 7
+    allocated: 2
+  - chapter: 01-40
+    concept_atoms: 7
+    allocated: 2
+  - chapter: 01-41
+    concept_atoms: 7
+    allocated: 2
+- tier: 2A
+  question_count: 30
+  recommended_working_time_minutes: 60
+  chapters:
+  - chapter: 02-01
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-02
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-03
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-04
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-05
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-06
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-07
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-08
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-09
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-10
+    concept_atoms: 7
+    allocated: 3
+- tier: 2B
+  question_count: 32
+  recommended_working_time_minutes: 64
+  chapters:
+  - chapter: 02-11
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-12
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-13
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-14
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-15
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-16
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-17
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-18
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-19
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-20
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-21
+    concept_atoms: 7
+    allocated: 2
+- tier: 2C
+  question_count: 45
+  recommended_working_time_minutes: 90
+  chapters:
+  - chapter: 02-22
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-23
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-24
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-25
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-26
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-27
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-28
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-29
+    concept_atoms: 7
+    allocated: 2
+  - chapter: 02-30
+    concept_atoms: 7
+    allocated: 2
+  - chapter: 02-31
+    concept_atoms: 7
+    allocated: 2
+  - chapter: 02-32
+    concept_atoms: 7
+    allocated: 2
+  - chapter: 02-33
+    concept_atoms: 7
+    allocated: 2
+  - chapter: 02-34
+    concept_atoms: 7
+    allocated: 2
+  - chapter: 02-35
+    concept_atoms: 7
+    allocated: 2
+  - chapter: 02-36
+    concept_atoms: 7
+    allocated: 2
+  - chapter: 02-37
+    concept_atoms: 7
+    allocated: 2
+  - chapter: 02-38
+    concept_atoms: 7
+    allocated: 2
+  - chapter: 02-39
+    concept_atoms: 7
+    allocated: 2
+  - chapter: 02-40
+    concept_atoms: 7
+    allocated: 2
+- tier: 2D
+  question_count: 45
+  recommended_working_time_minutes: 90
+  chapters:
+  - chapter: 02-41
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-42
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-43
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-44
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-45
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-46
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-47
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-48
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-49
+    concept_atoms: 7
+    allocated: 3
+  - chapter: 02-50
+    concept_atoms: 7
+    allocated: 2
+  - chapter: 02-51
+    concept_atoms: 7
+    allocated: 2
+  - chapter: 02-52
+    concept_atoms: 7
+    allocated: 2
+  - chapter: 02-53
+    concept_atoms: 7
+    allocated: 2
+  - chapter: 02-54
+    concept_atoms: 7
+    allocated: 2
+  - chapter: 02-55
+    concept_atoms: 7
+    allocated: 2
+  - chapter: 02-56
+    concept_atoms: 7
+    allocated: 2
+  - chapter: 02-57
+    concept_atoms: 7
+    allocated: 2
+  - chapter: 02-58
+    concept_atoms: 7
+    allocated: 2
+- tier: 2E
+  question_count: 28
+  recommended_working_time_minutes: 56
+  chapters:
+  - chapter: 02-59
+    concept_atoms: 7
+    allocated: 4
+  - chapter: 02-60
+    concept_atoms: 7
+    allocated: 4
+  - chapter: 02-61
+    concept_atoms: 7
+    allocated: 4
+  - chapter: 02-62
+    concept_atoms: 7
+    allocated: 4
+  - chapter: 02-63
+    concept_atoms: 7
+    allocated: 4
+  - chapter: 02-64
+    concept_atoms: 7
+    allocated: 4
+  - chapter: 02-65
+    concept_atoms: 7
+    allocated: 4
+- tier: 2F
+  question_count: 20
+  recommended_working_time_minutes: 40
+  chapters:
+  - chapter: 02-66
+    concept_atoms: 7
+    allocated: 4
+  - chapter: 02-67
+    concept_atoms: 7
+    allocated: 4
+  - chapter: 02-68
+    concept_atoms: 7
+    allocated: 4
+  - chapter: 02-69
+    concept_atoms: 7
+    allocated: 4
+  - chapter: 02-70
+    concept_atoms: 7
+    allocated: 4

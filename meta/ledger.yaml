@@ -392,10 +392,10 @@ concepts:
   uses_terms:
   - SI
   handbook_ref:
-    section: 'Units and Conversion Factors'
+    section: Units and Conversion Factors
     page: 1
-  handbook_verified: true
-  handbook_status: 'in_handbook_memorize_anyway'
+  handbook_verified: false
+  handbook_status: in_handbook_memorize_anyway
   split_required: false
   spec_lines: []
   primer_source: 00-03
@@ -407,7 +407,15 @@ concepts:
   - FIG-01-01-006
   - FIG-01-01-007
   status: revised
-  notes: 'Prefix table IS in the Handbook p.1 but status is in_handbook_memorize_anyway: a lookup costs 15-20 seconds and prefixes appear on a large fraction of questions. Time cost of lookup exceeds benefit for this high-frequency reference. This atom is the canonical example of that category and 00-03 §0.2 now cites it as such. primer_source set to 00-03: Worked Example 2 in that chapter borrows one row of the prefix table to demonstrate a table lookup, under a Preview Note stating the reader is not expected to know the prefixes yet. FIGURE RECONCILIATION 2026-10-01: this atom now owns FIG-01-01-002, FIG-01-01-003, FIG-01-01-006, and FIG-01-01-007, all referenced by the authored markdown. FIG-01-01-001 and FIG-01-01-004 were reassigned to MATH-1A-001-02, and FIG-01-01-005 to MATH-1A-001-01. Verified against FE Reference Handbook 10.6 printed p. 1: the metric-prefix table is present. Memorize-anyway status is retained because rapid recall avoids repeated lookup time.'
+  notes: 'Prefix table IS in the Handbook p.1 but status is in_handbook_memorize_anyway: a lookup costs 15-20 seconds and
+    prefixes appear on a large fraction of questions. Time cost of lookup exceeds benefit for this high-frequency reference.
+    This atom is the canonical example of that category and 00-03 §0.2 now cites it as such. primer_source set to 00-03: Worked
+    Example 2 in that chapter borrows one row of the prefix table to demonstrate a table lookup, under a Preview Note stating
+    the reader is not expected to know the prefixes yet. FIGURE RECONCILIATION 2026-10-01: this atom now owns FIG-01-01-002,
+    FIG-01-01-003, FIG-01-01-006, and FIG-01-01-007, all referenced by the authored markdown. FIG-01-01-001 and FIG-01-01-004
+    were reassigned to MATH-1A-001-02, and FIG-01-01-005 to MATH-1A-001-01.
+
+    '
   source_sections:
   - '1.5'
   uses_notation: []
@@ -1199,9 +1207,11 @@ concepts:
   - polynomial
   - degree
   - root
-  handbook_ref: null
+  handbook_ref:
+    section: Mathematics / Algebra
+    page: 37
   handbook_verified: false
-  handbook_status: 'not_in_handbook'
+  handbook_status: in_handbook
   split_required: false
   spec_lines: []
   primer_source: null
@@ -1209,7 +1219,8 @@ concepts:
   practice_problems: 0
   figures: []
   status: drafted
-  notes: 'Mapped to the supplied chapter sections listed in source_sections. External source support: OpenStax College Algebra 2e §§5.4-5.5 supports polynomial long/synthetic division and the Remainder and Factor Theorems. The FE Reference Handbook does not provide these procedures/theorems as a dedicated reference entry.'
+  notes: Mapped to the supplied chapter sections listed in source_sections. Handbook location/status follows the manuscript
+    and is not PDF-verified.
   uses_notation: []
   source_sections:
   - '7.3'
@@ -1452,10 +1463,10 @@ concepts:
   uses_symbols: []
   uses_terms: []
   handbook_ref:
-    section: 'Mathematics / Algebra / Straight Line'
+    section: Mathematics / Algebra
     page: 37
-  handbook_verified: true
-  handbook_status: 'in_handbook'
+  handbook_verified: false
+  handbook_status: in_handbook
   split_required: false
   spec_lines: []
   primer_source: null
@@ -1465,7 +1476,8 @@ concepts:
   - FIG-01-09-001
   - FIG-01-09-002
   status: drafted
-  notes: 'Mapped to the supplied chapter sections listed in source_sections. Verified against FE Reference Handbook 10.6 printed p. 37: straight-line forms, slope, angle between lines, and the perpendicular-slope relation are present.'
+  notes: Mapped to the supplied chapter sections listed in source_sections. Handbook location/status follows the manuscript
+    and is not PDF-verified.
   uses_notation: []
   source_sections:
   - '9.1'
@@ -1492,11 +1504,11 @@ concepts:
   - m_slope
   uses_terms: []
   handbook_ref:
-    section: 'Mathematics / Algebra / Straight Line'
+    section: Mathematics / Algebra
     page: 37
-  handbook_verified: true
-  handbook_status: 'in_handbook'
-  split_required: true
+  handbook_verified: false
+  handbook_status: in_handbook
+  split_required: false
   spec_lines: []
   primer_source: null
   review_questions: 0
@@ -1505,7 +1517,9 @@ concepts:
   - FIG-01-09-003
   - FIG-01-09-004
   status: drafted
-  notes: 'Point-to-line distance is taught in §9.1; point-to-point distance and midpoint are taught in §9.2. Both distance figures belong to this atom. Mapped to the supplied chapter sections listed in source_sections. Verified Handbook support: FE Reference Handbook 10.6 printed p. 37 gives point-to-point distance. External source support: OpenStax Intermediate Algebra 2e §11.1 supports the midpoint formula; point-to-line distance is treated as externally supported guide content. This atom is therefore intentionally split between Handbook support and external support.'
+  notes: Point-to-line distance is taught in §9.1; point-to-point distance and midpoint are taught in §9.2. Both distance
+    figures belong to this atom. Mapped to the supplied chapter sections listed in source_sections. Handbook location/status
+    follows the manuscript and is not PDF-verified.
   uses_notation: []
   source_sections:
   - '9.1'
@@ -1548,9 +1562,11 @@ concepts:
   uses_terms:
   - completing the square
   - asymptote
-  handbook_ref: null
+  handbook_ref:
+    section: Mathematics / Algebra
+    page: 37
   handbook_verified: false
-  handbook_status: 'not_in_handbook'
+  handbook_status: in_handbook
   split_required: false
   spec_lines: []
   primer_source: null
@@ -1566,7 +1582,8 @@ concepts:
   - FIG-01-09-011
   - FIG-01-09-012
   status: drafted
-  notes: 'Mapped to the supplied chapter sections listed in source_sections. External source support: OpenStax Precalculus 2e Chapter 10 and OpenStax Calculus Volume 2 §7.5 support analytic conic equations, foci/directrices, and eccentricity. FE Reference Handbook mensuration pages contain selected geometric formulas but not the full analytic-conic/eccentricity treatment represented by this atom.'
+  notes: Mapped to the supplied chapter sections listed in source_sections. Handbook location/status follows the manuscript
+    and is not PDF-verified.
   uses_notation: []
   source_sections:
   - '9.3'
@@ -1601,10 +1618,10 @@ concepts:
   - circle
   - factor-label method
   handbook_ref:
-    section: 'Mathematics / Mensuration of Areas and Volumes'
-    page: '41–44'
-  handbook_verified: true
-  handbook_status: 'in_handbook'
+    section: Mathematics / Mensuration
+    page: 41
+  handbook_verified: false
+  handbook_status: in_handbook
   split_required: false
   spec_lines: []
   primer_source: null
@@ -1612,7 +1629,8 @@ concepts:
   practice_problems: 0
   figures: []
   status: drafted
-  notes: 'Mapped to the supplied chapter sections listed in source_sections. Verified against FE Reference Handbook 10.6 printed pp. 41–44: standard plane-area, perimeter, solid-volume, surface-area, and related mensuration formulas are tabulated.'
+  notes: Mapped to the supplied chapter sections listed in source_sections. Handbook location/status follows the manuscript
+    and is not PDF-verified.
   uses_notation: []
   source_sections:
   - '10.1'
@@ -1781,10 +1799,10 @@ concepts:
   - theta_angle
   uses_terms: []
   handbook_ref:
-    section: 'Mathematics / Trigonometry'
-    page: 39
-  handbook_verified: true
-  handbook_status: 'in_handbook'
+    section: Mathematics / Trigonometry
+    page: 39–40
+  handbook_verified: false
+  handbook_status: in_handbook
   split_required: false
   spec_lines:
   - discipline: civil
@@ -1799,7 +1817,8 @@ concepts:
   figures:
   - FIG-01-11-005
   status: drafted
-  notes: 'Mapped to the supplied chapter sections listed in source_sections. Verified against FE Reference Handbook 10.6 printed p. 39: the Law of Sines and Law of Cosines are explicitly tabulated.'
+  notes: Mapped to the supplied chapter sections listed in source_sections. Handbook location/status follows the manuscript
+    and is not PDF-verified.
   uses_notation:
   - sin_theta
   - cos_theta
@@ -1827,10 +1846,10 @@ concepts:
   - phi_angle
   uses_terms: []
   handbook_ref:
-    section: 'Mathematics / Trigonometry'
-    page: 40
-  handbook_verified: true
-  handbook_status: 'in_handbook'
+    section: Mathematics / Trigonometry
+    page: 39–40
+  handbook_verified: false
+  handbook_status: in_handbook
   split_required: false
   spec_lines: []
   primer_source: null
@@ -1844,7 +1863,8 @@ concepts:
   - tan_theta
   source_sections:
   - '11.8'
-  notes: 'Mapped to the supplied chapter sections listed in source_sections. Verified against FE Reference Handbook 10.6 printed p. 40: trigonometric identities, including sum/difference and multiple-angle forms, are tabulated.'
+  notes: Mapped to the supplied chapter sections listed in source_sections. Handbook location/status follows the manuscript
+    and is not PDF-verified.
   term_aliases:
     power reduction:
     - Power-reduction form
@@ -2027,10 +2047,10 @@ concepts:
   - polar form
   - complex conjugate
   handbook_ref:
-    section: 'Mathematics / Algebra of Complex Numbers'
-    page: '38–39'
-  handbook_verified: true
-  handbook_status: 'in_handbook'
+    section: Mathematics / Complex numbers
+    page: 38
+  handbook_verified: false
+  handbook_status: in_handbook
   split_required: false
   spec_lines: []
   primer_source: null
@@ -2044,7 +2064,8 @@ concepts:
   source_sections:
   - '12.5'
   - '12.6'
-  notes: 'Mapped to the supplied chapter sections listed in source_sections. Verified against FE Reference Handbook 10.6 printed pp. 38–39: polar/rectangular complex-number forms, multiplication/division, powers, and roots are included.'
+  notes: Mapped to the supplied chapter sections listed in source_sections. Handbook location/status follows the manuscript
+    and is not PDF-verified.
 - id: MATH-1B-012-03
   title: Phasor representation of sinusoidal signals
   chapter: 01-12
@@ -2119,10 +2140,10 @@ concepts:
   - theta_angle
   uses_terms: []
   handbook_ref:
-    section: 'Mathematics / Vectors'
-    page: '60–61'
-  handbook_verified: true
-  handbook_status: 'in_handbook'
+    section: Mathematics / Vectors
+    page: 37
+  handbook_verified: false
+  handbook_status: in_handbook
   split_required: false
   spec_lines: []
   primer_source: null
@@ -2131,7 +2152,8 @@ concepts:
   figures:
   - FIG-01-13-001
   status: drafted
-  notes: 'Mapped to the supplied chapter sections listed in source_sections. Verified against FE Reference Handbook 10.6 printed pp. 60–61: vector components, magnitude, direction cosines, dot product, cross product, and related vector relations are included.'
+  notes: Mapped to the supplied chapter sections listed in source_sections. Handbook location/status follows the manuscript
+    and is not PDF-verified.
   uses_notation: []
   source_sections:
   - '13.1'
@@ -2608,10 +2630,10 @@ concepts:
   - sequence
   - partial sum
   handbook_ref:
-    section: 'Mathematics / Progression and Series'
-    page: 52
-  handbook_verified: true
-  handbook_status: 'in_handbook'
+    section: Mathematics / Progressions and Series
+    page: 38–39
+  handbook_verified: false
+  handbook_status: in_handbook
   split_required: false
   spec_lines: []
   primer_source: null
@@ -2620,7 +2642,8 @@ concepts:
   figures:
   - FIG-01-15-002
   status: drafted
-  notes: 'Mapped to the supplied chapter sections listed in source_sections. Verified against FE Reference Handbook 10.6 printed p. 52: arithmetic progression nth-term and finite-sum relations are tabulated.'
+  notes: Mapped to the supplied chapter sections listed in source_sections. Handbook location/status follows the manuscript
+    and is not PDF-verified.
   uses_notation: []
   source_sections:
   - '15.3'
@@ -2651,10 +2674,10 @@ concepts:
   - partial sum
   - exponential function
   handbook_ref:
-    section: 'Mathematics / Progression and Series'
-    page: 52
-  handbook_verified: true
-  handbook_status: 'in_handbook'
+    section: Mathematics / Progressions and Series
+    page: 38–39
+  handbook_verified: false
+  handbook_status: in_handbook
   split_required: false
   spec_lines: []
   primer_source: null
@@ -2663,7 +2686,8 @@ concepts:
   figures:
   - FIG-01-15-003
   status: drafted
-  notes: 'Mapped to the supplied chapter sections listed in source_sections. Verified against FE Reference Handbook 10.6 printed p. 52: geometric progression nth-term, finite-sum, and convergent infinite-sum relations are tabulated.'
+  notes: Mapped to the supplied chapter sections listed in source_sections. Handbook location/status follows the manuscript
+    and is not PDF-verified.
   uses_notation: []
   source_sections:
   - '15.4'

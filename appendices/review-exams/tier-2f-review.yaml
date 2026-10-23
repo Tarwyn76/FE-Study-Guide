@@ -1,0 +1,297 @@
+schema_version: 1
+exam_type: tier-review
+discipline: shared
+tier: 2F
+covers_through_chapter: 02-70
+question_count: 20
+time_limit_minutes: 40
+source_basis: Existing chapter review banks; 01-21 items are derived directly from the chapter body because the available
+  Library snapshot lacks its answer key.
+items:
+- id: T2F-Q001
+  source_chapter: 02-69
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - CTRL-2F-069-05
+  prompt: 'Which statement best describes **closed-loop characteristic equation**?
+
+    A) Its meaning depends on a defined measurement/control model and assumptions
+
+    B) It is independent of calibration and dynamics
+
+    C) It replaces physical validation
+
+    D) It is always a static scalar'
+  solution: '**A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal
+    conditions, and assumptions. For **Transfer Functions and Feedback Control Fundamentals**, apply this check specifically
+    through **§69.2 Block Diagrams, Summing Junctions, and Signal Flow**, including that section''s stated assumptions and
+    reference quantities.'
+- id: T2F-Q002
+  source_chapter: 02-66
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - INST-2F-066-05
+  prompt: 'Which statement best describes **measurement uncertainty application**?
+
+    A) Its meaning depends on a defined measurement/control model and assumptions
+
+    B) It is independent of calibration and dynamics
+
+    C) It replaces physical validation
+
+    D) It is always a static scalar'
+  solution: '**A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal
+    conditions, and assumptions. For **Measurement Systems, Calibration, Accuracy, and Uncertainty**, apply this check specifically
+    through **§66.2 Calibration Against Reference Values**, including that section''s stated assumptions and reference quantities.'
+- id: T2F-Q003
+  source_chapter: 02-69
+  source_question: 9
+  source_category: conceptual
+  requires_concepts:
+  - CTRL-2F-069-02
+  prompt: What is a likely engineering error if **control block diagram** is used without checking its assumptions, reference,
+    bandwidth, or calibration basis?
+  solution: The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal
+    band, or control configuration. Establish the model and references first. For **Transfer Functions and Feedback Control
+    Fundamentals**, apply this check specifically through **§69.2 Block Diagrams, Summing Junctions, and Signal Flow**, including
+    that section's stated assumptions and reference quantities.
+- id: T2F-Q004
+  source_chapter: 02-66
+  source_question: 9
+  source_category: conceptual
+  requires_concepts:
+  - INST-2F-066-02
+  prompt: What is a likely engineering error if **calibration process** is used without checking its assumptions, reference,
+    bandwidth, or calibration basis?
+  solution: The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal
+    band, or control configuration. Establish the model and references first. For **Measurement Systems, Calibration, Accuracy,
+    and Uncertainty**, apply this check specifically through **§66.2 Calibration Against Reference Values**, including that
+    section's stated assumptions and reference quantities.
+- id: T2F-Q005
+  source_chapter: 02-70
+  source_question: 9
+  source_category: conceptual
+  requires_concepts:
+  - CTRL-2F-070-02
+  prompt: What is a likely engineering error if **integral control** is used without checking its assumptions, reference,
+    bandwidth, or calibration basis?
+  solution: The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal
+    band, or control configuration. Establish the model and references first. For **PID Control, Stability, and Control-Loop
+    Hardware**, apply this check specifically through **§70.2 Integral Control**, including that section's stated assumptions
+    and reference quantities.
+- id: T2F-Q006
+  source_chapter: 02-68
+  source_question: 7
+  source_category: conceptual
+  requires_concepts:
+  - INST-2F-068-07
+  prompt: Define **measurement frequency response** and state its governing relation or operational meaning.
+  solution: '**measurement frequency response** is developed in §68.7. Use the displayed relation and the conditions stated
+    there.'
+- id: T2F-Q007
+  source_chapter: 02-68
+  source_question: 9
+  source_category: conceptual
+  requires_concepts:
+  - INST-2F-068-02
+  prompt: What is a likely engineering error if **Nyquist sampling criterion** is used without checking its assumptions, reference,
+    bandwidth, or calibration basis?
+  solution: The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal
+    band, or control configuration. Establish the model and references first. For **Data Acquisition, Sampling, Dynamic Response,
+    and Frequency Response**, apply this check specifically through **§68.2 Nyquist Sampling Criterion**, including that section's
+    stated assumptions and reference quantities.
+- id: T2F-Q008
+  source_chapter: 02-67
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - INST-2F-067-05
+  prompt: 'Which statement best describes **Wheatstone bridge**?
+
+    A) Its meaning depends on a defined measurement/control model and assumptions
+
+    B) It is independent of calibration and dynamics
+
+    C) It replaces physical validation
+
+    D) It is always a static scalar'
+  solution: '**A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal
+    conditions, and assumptions. For **Sensors, Transducers, Bridges, and Signal Conditioning**, apply this check specifically
+    through **§67.2 Thermistors**, including that section''s stated assumptions and reference quantities.'
+- id: T2F-Q009
+  source_chapter: 02-70
+  source_question: 7
+  source_category: conceptual
+  requires_concepts:
+  - CTRL-2F-070-07
+  prompt: Define **control-loop hardware** and state its governing relation or operational meaning.
+  solution: '**control-loop hardware** is developed in §70.7. Use the displayed relation and the conditions stated there.'
+- id: T2F-Q010
+  source_chapter: 02-66
+  source_question: 20
+  source_category: multiple-choice
+  requires_concepts:
+  - INST-2F-066-02
+  prompt: 'Which statement best describes **calibration process**?
+
+    A) Its meaning depends on a defined measurement/control model and assumptions
+
+    B) It is independent of calibration and dynamics
+
+    C) It replaces physical validation
+
+    D) It is always a static scalar'
+  solution: '**A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal
+    conditions, and assumptions. For **Measurement Systems, Calibration, Accuracy, and Uncertainty**, apply this check specifically
+    through **§66.6 Range, Resolution, Sensitivity, and Uncertainty Are Different**, including that section''s stated assumptions
+    and reference quantities.'
+- id: T2F-Q011
+  source_chapter: 02-70
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - CTRL-2F-070-05
+  prompt: 'Which statement best describes **PID tuning tradeoff**?
+
+    A) Its meaning depends on a defined measurement/control model and assumptions
+
+    B) It is independent of calibration and dynamics
+
+    C) It replaces physical validation
+
+    D) It is always a static scalar'
+  solution: '**A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal
+    conditions, and assumptions. For **PID Control, Stability, and Control-Loop Hardware**, apply this check specifically
+    through **§70.2 Integral Control**, including that section''s stated assumptions and reference quantities.'
+- id: T2F-Q012
+  source_chapter: 02-68
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - INST-2F-068-05
+  prompt: 'Which statement best describes **first-order measurement dynamics**?
+
+    A) Its meaning depends on a defined measurement/control model and assumptions
+
+    B) It is independent of calibration and dynamics
+
+    C) It replaces physical validation
+
+    D) It is always a static scalar'
+  solution: '**A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal
+    conditions, and assumptions. For **Data Acquisition, Sampling, Dynamic Response, and Frequency Response**, apply this
+    check specifically through **§68.2 Nyquist Sampling Criterion**, including that section''s stated assumptions and reference
+    quantities.'
+- id: T2F-Q013
+  source_chapter: 02-67
+  source_question: 9
+  source_category: conceptual
+  requires_concepts:
+  - INST-2F-067-02
+  prompt: What is a likely engineering error if **thermistor** is used without checking its assumptions, reference, bandwidth,
+    or calibration basis?
+  solution: The numerical calculation may be valid algebraically but represent the wrong measurand, dynamic model, signal
+    band, or control configuration. Establish the model and references first. For **Sensors, Transducers, Bridges, and Signal
+    Conditioning**, apply this check specifically through **§67.2 Thermistors**, including that section's stated assumptions
+    and reference quantities.
+- id: T2F-Q014
+  source_chapter: 02-66
+  source_question: 7
+  source_category: conceptual
+  requires_concepts:
+  - INST-2F-066-07
+  prompt: Define **measurement reporting workflow** and state its governing relation or operational meaning.
+  solution: '**measurement reporting workflow** is developed in §66.7. Use the displayed relation and the conditions stated
+    there.'
+- id: T2F-Q015
+  source_chapter: 02-69
+  source_question: 7
+  source_category: conceptual
+  requires_concepts:
+  - CTRL-2F-069-07
+  prompt: Define **stability margins** and state its governing relation or operational meaning.
+  solution: '**stability margins** is developed in §69.7. Use the displayed relation and the conditions stated there.'
+- id: T2F-Q016
+  source_chapter: 02-68
+  source_question: 20
+  source_category: multiple-choice
+  requires_concepts:
+  - INST-2F-068-02
+  prompt: 'Which statement best describes **Nyquist sampling criterion**?
+
+    A) Its meaning depends on a defined measurement/control model and assumptions
+
+    B) It is independent of calibration and dynamics
+
+    C) It replaces physical validation
+
+    D) It is always a static scalar'
+  solution: '**A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal
+    conditions, and assumptions. For **Data Acquisition, Sampling, Dynamic Response, and Frequency Response**, apply this
+    check specifically through **§68.6 Second-Order Dynamic Response**, including that section''s stated assumptions and reference
+    quantities.'
+- id: T2F-Q017
+  source_chapter: 02-69
+  source_question: 20
+  source_category: multiple-choice
+  requires_concepts:
+  - CTRL-2F-069-02
+  prompt: 'Which statement best describes **control block diagram**?
+
+    A) Its meaning depends on a defined measurement/control model and assumptions
+
+    B) It is independent of calibration and dynamics
+
+    C) It replaces physical validation
+
+    D) It is always a static scalar'
+  solution: '**A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal
+    conditions, and assumptions. For **Transfer Functions and Feedback Control Fundamentals**, apply this check specifically
+    through **§69.6 Steady-State Gain and Error**, including that section''s stated assumptions and reference quantities.'
+- id: T2F-Q018
+  source_chapter: 02-67
+  source_question: 7
+  source_category: conceptual
+  requires_concepts:
+  - INST-2F-067-07
+  prompt: Define **signal conditioning** and state its governing relation or operational meaning.
+  solution: '**signal conditioning** is developed in §67.7. Use the displayed relation and the conditions stated there.'
+- id: T2F-Q019
+  source_chapter: 02-70
+  source_question: 20
+  source_category: multiple-choice
+  requires_concepts:
+  - CTRL-2F-070-02
+  prompt: 'Which statement best describes **integral control**?
+
+    A) Its meaning depends on a defined measurement/control model and assumptions
+
+    B) It is independent of calibration and dynamics
+
+    C) It replaces physical validation
+
+    D) It is always a static scalar'
+  solution: '**A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal
+    conditions, and assumptions. For **PID Control, Stability, and Control-Loop Hardware**, apply this check specifically
+    through **§70.6 Lead/Lag Compensation and Loop-Shaping Context**, including that section''s stated assumptions and reference
+    quantities.'
+- id: T2F-Q020
+  source_chapter: 02-67
+  source_question: 20
+  source_category: multiple-choice
+  requires_concepts:
+  - INST-2F-067-02
+  prompt: 'Which statement best describes **thermistor**?
+
+    A) Its meaning depends on a defined measurement/control model and assumptions
+
+    B) It is independent of calibration and dynamics
+
+    C) It replaces physical validation
+
+    D) It is always a static scalar'
+  solution: '**A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal
+    conditions, and assumptions. For **Sensors, Transducers, Bridges, and Signal Conditioning**, apply this check specifically
+    through **§67.6 Pressure, pH, and Chemical Sensors**, including that section''s stated assumptions and reference quantities.'

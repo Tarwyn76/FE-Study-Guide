@@ -1,0 +1,586 @@
+schema_version: 1
+exam_type: tier-review
+discipline: shared
+tier: 2D
+covers_through_chapter: 02-58
+question_count: 45
+time_limit_minutes: 90
+source_basis: Existing chapter review banks; 01-21 items are derived directly from the chapter body because the available
+  Library snapshot lacks its answer key.
+items:
+- id: T2D-Q001
+  source_chapter: 02-41
+  source_question: 9
+  source_category: conceptual
+  requires_concepts:
+  - FLUID-2D-041-02
+  prompt: What is the most likely error if **fluid pressure** is used without checking state, geometry, flow regime, or property
+    assumptions?
+  solution: The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then
+    apply **fluid pressure**.
+- id: T2D-Q002
+  source_chapter: 02-42
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - FLUID-2D-042-05
+  prompt: 'Which statement best describes **hydrostatic resultant**?
+
+    A) It is conditional on the physical model and assumptions
+
+    B) It is valid independent of state and geometry
+
+    C) It is only a unit conversion
+
+    D) It replaces conservation laws'
+  solution: '**A.** The chapter applies **hydrostatic resultant** only after the state, geometry, flow/thermal regime, and
+    assumptions are defined.'
+- id: T2D-Q003
+  source_chapter: 02-50
+  source_question: 13
+  source_category: conceptual
+  requires_concepts:
+  - THERMO-2D-050-06
+  prompt: What is the most likely error if **polytropic process** is used without checking state, geometry, flow regime, or
+    property assumptions?
+  solution: The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then
+    apply **polytropic process**.
+- id: T2D-Q004
+  source_chapter: 02-58
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - HT-2D-058-05
+  prompt: 'Which statement best describes **LMTD correction factor**?
+
+    A) It is conditional on the physical model and assumptions
+
+    B) It is valid independent of state and geometry
+
+    C) It is only a unit conversion
+
+    D) It replaces conservation laws'
+  solution: '**A.** The chapter applies **LMTD correction factor** only after the state, geometry, flow/thermal regime, and
+    assumptions are defined.'
+- id: T2D-Q005
+  source_chapter: 02-55
+  source_question: 13
+  source_category: conceptual
+  requires_concepts:
+  - HT-2D-055-06
+  prompt: What is the most likely error if **critical insulation radius** is used without checking state, geometry, flow regime,
+    or property assumptions?
+  solution: The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then
+    apply **critical insulation radius**.
+- id: T2D-Q006
+  source_chapter: 02-56
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - HT-2D-056-05
+  prompt: 'Which statement best describes **one-term transient solution**?
+
+    A) It is conditional on the physical model and assumptions
+
+    B) It is valid independent of state and geometry
+
+    C) It is only a unit conversion
+
+    D) It replaces conservation laws'
+  solution: '**A.** The chapter applies **one-term transient solution** only after the state, geometry, flow/thermal regime,
+    and assumptions are defined.'
+- id: T2D-Q007
+  source_chapter: 02-52
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - THERMO-2D-052-05
+  prompt: 'Which statement best describes **ideal-gas entropy**?
+
+    A) It is conditional on the physical model and assumptions
+
+    B) It is valid independent of state and geometry
+
+    C) It is only a unit conversion
+
+    D) It replaces conservation laws'
+  solution: '**A.** The chapter applies **ideal-gas entropy** only after the state, geometry, flow/thermal regime, and assumptions
+    are defined.'
+- id: T2D-Q008
+  source_chapter: 02-45
+  source_question: 14
+  source_category: conceptual
+  requires_concepts:
+  - FLUID-2D-045-07
+  prompt: What is the most likely error if **pipe-network flow** is used without checking state, geometry, flow regime, or
+    property assumptions?
+  solution: The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then
+    apply **pipe-network flow**.
+- id: T2D-Q009
+  source_chapter: 02-46
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - FLUID-2D-046-05
+  prompt: 'Which statement best describes **pump power**?
+
+    A) It is conditional on the physical model and assumptions
+
+    B) It is valid independent of state and geometry
+
+    C) It is only a unit conversion
+
+    D) It replaces conservation laws'
+  solution: '**A.** The chapter applies **pump power** only after the state, geometry, flow/thermal regime, and assumptions
+    are defined.'
+- id: T2D-Q010
+  source_chapter: 02-44
+  source_question: 9
+  source_category: conceptual
+  requires_concepts:
+  - FLUID-2D-044-02
+  prompt: What is the most likely error if **Bernoulli equation** is used without checking state, geometry, flow regime, or
+    property assumptions?
+  solution: The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then
+    apply **Bernoulli equation**.
+- id: T2D-Q011
+  source_chapter: 02-57
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - HT-2D-057-05
+  prompt: 'Which statement best describes **natural convection**?
+
+    A) It is conditional on the physical model and assumptions
+
+    B) It is valid independent of state and geometry
+
+    C) It is only a unit conversion
+
+    D) It replaces conservation laws'
+  solution: '**A.** The chapter applies **natural convection** only after the state, geometry, flow/thermal regime, and assumptions
+    are defined.'
+- id: T2D-Q012
+  source_chapter: 02-53
+  source_question: 13
+  source_category: conceptual
+  requires_concepts:
+  - THERMO-2D-053-06
+  prompt: What is the most likely error if **isentropic efficiency** is used without checking state, geometry, flow regime,
+    or property assumptions?
+  solution: The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then
+    apply **isentropic efficiency**.
+- id: T2D-Q013
+  source_chapter: 02-57
+  source_question: 13
+  source_category: conceptual
+  requires_concepts:
+  - HT-2D-057-06
+  prompt: What is the most likely error if **thermal radiation** is used without checking state, geometry, flow regime, or
+    property assumptions?
+  solution: The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then
+    apply **thermal radiation**.
+- id: T2D-Q014
+  source_chapter: 02-41
+  source_question: 14
+  source_category: conceptual
+  requires_concepts:
+  - FLUID-2D-041-07
+  prompt: What is the most likely error if **hydrostatic model** is used without checking state, geometry, flow regime, or
+    property assumptions?
+  solution: The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then
+    apply **hydrostatic model**.
+- id: T2D-Q015
+  source_chapter: 02-49
+  source_question: 14
+  source_category: conceptual
+  requires_concepts:
+  - THERMO-2D-049-07
+  prompt: What is the most likely error if **psychrometric process** is used without checking state, geometry, flow regime,
+    or property assumptions?
+  solution: The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then
+    apply **psychrometric process**.
+- id: T2D-Q016
+  source_chapter: 02-43
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - FLUID-2D-043-05
+  prompt: 'Which statement best describes **streamline**?
+
+    A) It is conditional on the physical model and assumptions
+
+    B) It is valid independent of state and geometry
+
+    C) It is only a unit conversion
+
+    D) It replaces conservation laws'
+  solution: '**A.** The chapter applies **streamline** only after the state, geometry, flow/thermal regime, and assumptions
+    are defined.'
+- id: T2D-Q017
+  source_chapter: 02-41
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-05
+  prompt: 'Which statement best describes **capillarity**?
+
+    A) It is conditional on the physical model and assumptions
+
+    B) It is valid independent of state and geometry
+
+    C) It is only a unit conversion
+
+    D) It replaces conservation laws'
+  solution: '**A.** The chapter applies **capillarity** only after the state, geometry, flow/thermal regime, and assumptions
+    are defined.'
+- id: T2D-Q018
+  source_chapter: 02-45
+  source_question: 9
+  source_category: conceptual
+  requires_concepts:
+  - FLUID-2D-045-07
+  prompt: What is the most likely error if **laminar pipe flow** is used without checking state, geometry, flow regime, or
+    property assumptions?
+  solution: The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then
+    apply **laminar pipe flow**.
+- id: T2D-Q019
+  source_chapter: 02-43
+  source_question: 14
+  source_category: conceptual
+  requires_concepts:
+  - FLUID-2D-043-07
+  prompt: What is the most likely error if **flow kinematics audit** is used without checking state, geometry, flow regime,
+    or property assumptions?
+  solution: The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then
+    apply **flow kinematics audit**.
+- id: T2D-Q020
+  source_chapter: 02-58
+  source_question: 13
+  source_category: conceptual
+  requires_concepts:
+  - HT-2D-058-06
+  prompt: What is the most likely error if **heat-exchanger effectiveness** is used without checking state, geometry, flow
+    regime, or property assumptions?
+  solution: The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then
+    apply **heat-exchanger effectiveness**.
+- id: T2D-Q021
+  source_chapter: 02-45
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - FLUID-2D-045-05
+  prompt: 'Which statement best describes **minor loss**?
+
+    A) It is conditional on the physical model and assumptions
+
+    B) It is valid independent of state and geometry
+
+    C) It is only a unit conversion
+
+    D) It replaces conservation laws'
+  solution: '**A.** The chapter applies **minor loss** only after the state, geometry, flow/thermal regime, and assumptions
+    are defined.'
+- id: T2D-Q022
+  source_chapter: 02-50
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - THERMO-2D-050-05
+  prompt: 'Which statement best describes **isothermal process**?
+
+    A) It is conditional on the physical model and assumptions
+
+    B) It is valid independent of state and geometry
+
+    C) It is only a unit conversion
+
+    D) It replaces conservation laws'
+  solution: '**A.** The chapter applies **isothermal process** only after the state, geometry, flow/thermal regime, and assumptions
+    are defined.'
+- id: T2D-Q023
+  source_chapter: 02-48
+  source_question: 9
+  source_category: conceptual
+  requires_concepts:
+  - THERMO-2D-048-02
+  prompt: What is the most likely error if **saturation dome** is used without checking state, geometry, flow regime, or property
+    assumptions?
+  solution: The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then
+    apply **saturation dome**.
+- id: T2D-Q024
+  source_chapter: 02-47
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - THERMO-2D-047-05
+  prompt: 'Which statement best describes **boundary work**?
+
+    A) It is conditional on the physical model and assumptions
+
+    B) It is valid independent of state and geometry
+
+    C) It is only a unit conversion
+
+    D) It replaces conservation laws'
+  solution: '**A.** The chapter applies **boundary work** only after the state, geometry, flow/thermal regime, and assumptions
+    are defined.'
+- id: T2D-Q025
+  source_chapter: 02-43
+  source_question: 9
+  source_category: conceptual
+  requires_concepts:
+  - FLUID-2D-043-02
+  prompt: What is the most likely error if **mass flow rate** is used without checking state, geometry, flow regime, or property
+    assumptions?
+  solution: The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then
+    apply **mass flow rate**.
+- id: T2D-Q026
+  source_chapter: 02-53
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - THERMO-2D-053-05
+  prompt: 'Which statement best describes **Rankine cycle**?
+
+    A) It is conditional on the physical model and assumptions
+
+    B) It is valid independent of state and geometry
+
+    C) It is only a unit conversion
+
+    D) It replaces conservation laws'
+  solution: '**A.** The chapter applies **Rankine cycle** only after the state, geometry, flow/thermal regime, and assumptions
+    are defined.'
+- id: T2D-Q027
+  source_chapter: 02-46
+  source_question: 9
+  source_category: conceptual
+  requires_concepts:
+  - FLUID-2D-046-02
+  prompt: What is the most likely error if **flow-induced force** is used without checking state, geometry, flow regime, or
+    property assumptions?
+  solution: The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then
+    apply **flow-induced force**.
+- id: T2D-Q028
+  source_chapter: 02-51
+  source_question: 13
+  source_category: conceptual
+  requires_concepts:
+  - THERMO-2D-051-06
+  prompt: What is the most likely error if **throttling process** is used without checking state, geometry, flow regime, or
+    property assumptions?
+  solution: The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then
+    apply **throttling process**.
+- id: T2D-Q029
+  source_chapter: 02-49
+  source_question: 9
+  source_category: conceptual
+  requires_concepts:
+  - THERMO-2D-049-02
+  prompt: What is the most likely error if **ideal-gas specific heat** is used without checking state, geometry, flow regime,
+    or property assumptions?
+  solution: The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then
+    apply **ideal-gas specific heat**.
+- id: T2D-Q030
+  source_chapter: 02-47
+  source_question: 9
+  source_category: conceptual
+  requires_concepts:
+  - THERMO-2D-047-02
+  prompt: What is the most likely error if **thermodynamic property** is used without checking state, geometry, flow regime,
+    or property assumptions?
+  solution: The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then
+    apply **thermodynamic property**.
+- id: T2D-Q031
+  source_chapter: 02-56
+  source_question: 13
+  source_category: conceptual
+  requires_concepts:
+  - HT-2D-056-06
+  prompt: What is the most likely error if **fin parameter** is used without checking state, geometry, flow regime, or property
+    assumptions?
+  solution: The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then
+    apply **fin parameter**.
+- id: T2D-Q032
+  source_chapter: 02-49
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - THERMO-2D-049-05
+  prompt: 'Which statement best describes **compressibility factor**?
+
+    A) It is conditional on the physical model and assumptions
+
+    B) It is valid independent of state and geometry
+
+    C) It is only a unit conversion
+
+    D) It replaces conservation laws'
+  solution: '**A.** The chapter applies **compressibility factor** only after the state, geometry, flow/thermal regime, and
+    assumptions are defined.'
+- id: T2D-Q033
+  source_chapter: 02-48
+  source_question: 14
+  source_category: conceptual
+  requires_concepts:
+  - THERMO-2D-048-07
+  prompt: What is the most likely error if **property interpolation** is used without checking state, geometry, flow regime,
+    or property assumptions?
+  solution: The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then
+    apply **property interpolation**.
+- id: T2D-Q034
+  source_chapter: 02-48
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - THERMO-2D-048-05
+  prompt: 'Which statement best describes **superheated vapor**?
+
+    A) It is conditional on the physical model and assumptions
+
+    B) It is valid independent of state and geometry
+
+    C) It is only a unit conversion
+
+    D) It replaces conservation laws'
+  solution: '**A.** The chapter applies **superheated vapor** only after the state, geometry, flow/thermal regime, and assumptions
+    are defined.'
+- id: T2D-Q035
+  source_chapter: 02-54
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - THERMO-2D-054-05
+  prompt: 'Which statement best describes **refrigeration capacity**?
+
+    A) It is conditional on the physical model and assumptions
+
+    B) It is valid independent of state and geometry
+
+    C) It is only a unit conversion
+
+    D) It replaces conservation laws'
+  solution: '**A.** The chapter applies **refrigeration capacity** only after the state, geometry, flow/thermal regime, and
+    assumptions are defined.'
+- id: T2D-Q036
+  source_chapter: 02-46
+  source_question: 14
+  source_category: conceptual
+  requires_concepts:
+  - FLUID-2D-046-07
+  prompt: What is the most likely error if **fluid turbine** is used without checking state, geometry, flow regime, or property
+    assumptions?
+  solution: The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then
+    apply **fluid turbine**.
+- id: T2D-Q037
+  source_chapter: 02-47
+  source_question: 14
+  source_category: conceptual
+  requires_concepts:
+  - THERMO-2D-047-02
+  prompt: What is the most likely error if **thermodynamic state** is used without checking state, geometry, flow regime,
+    or property assumptions?
+  solution: The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then
+    apply **thermodynamic state**.
+- id: T2D-Q038
+  source_chapter: 02-42
+  source_question: 9
+  source_category: conceptual
+  requires_concepts:
+  - FLUID-2D-042-02
+  prompt: What is the most likely error if **barometer** is used without checking state, geometry, flow regime, or property
+    assumptions?
+  solution: The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then
+    apply **barometer**.
+- id: T2D-Q039
+  source_chapter: 02-54
+  source_question: 13
+  source_category: conceptual
+  requires_concepts:
+  - THERMO-2D-054-06
+  prompt: What is the most likely error if **heat pump** is used without checking state, geometry, flow regime, or property
+    assumptions?
+  solution: The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then
+    apply **heat pump**.
+- id: T2D-Q040
+  source_chapter: 02-44
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - FLUID-2D-044-05
+  prompt: 'Which statement best describes **energy-continuity coupling**?
+
+    A) It is conditional on the physical model and assumptions
+
+    B) It is valid independent of state and geometry
+
+    C) It is only a unit conversion
+
+    D) It replaces conservation laws'
+  solution: '**A.** The chapter applies **energy-continuity coupling** only after the state, geometry, flow/thermal regime,
+    and assumptions are defined.'
+- id: T2D-Q041
+  source_chapter: 02-52
+  source_question: 13
+  source_category: conceptual
+  requires_concepts:
+  - THERMO-2D-052-02
+  prompt: What is the most likely error if **incompressible entropy** is used without checking state, geometry, flow regime,
+    or property assumptions?
+  solution: The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then
+    apply **incompressible entropy**.
+- id: T2D-Q042
+  source_chapter: 02-42
+  source_question: 14
+  source_category: conceptual
+  requires_concepts:
+  - FLUID-2D-042-07
+  prompt: What is the most likely error if **hydrostatic equilibrium** is used without checking state, geometry, flow regime,
+    or property assumptions?
+  solution: The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then
+    apply **hydrostatic equilibrium**.
+- id: T2D-Q043
+  source_chapter: 02-44
+  source_question: 14
+  source_category: conceptual
+  requires_concepts:
+  - FLUID-2D-044-07
+  prompt: What is the most likely error if **energy-equation audit** is used without checking state, geometry, flow regime,
+    or property assumptions?
+  solution: The equation or property may be applied outside its valid model. Identify the state/geometry/regime first, then
+    apply **energy-equation audit**.
+- id: T2D-Q044
+  source_chapter: 02-55
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - HT-2D-055-05
+  prompt: 'Which statement best describes **composite wall**?
+
+    A) It is conditional on the physical model and assumptions
+
+    B) It is valid independent of state and geometry
+
+    C) It is only a unit conversion
+
+    D) It replaces conservation laws'
+  solution: '**A.** The chapter applies **composite wall** only after the state, geometry, flow/thermal regime, and assumptions
+    are defined.'
+- id: T2D-Q045
+  source_chapter: 02-51
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - THERMO-2D-051-05
+  prompt: 'Which statement best describes **compressor and pump**?
+
+    A) It is conditional on the physical model and assumptions
+
+    B) It is valid independent of state and geometry
+
+    C) It is only a unit conversion
+
+    D) It replaces conservation laws'
+  solution: '**A.** The chapter applies **compressor and pump** only after the state, geometry, flow/thermal regime, and assumptions
+    are defined.'

@@ -1,0 +1,600 @@
+schema_version: 1
+exam_type: tier-review
+discipline: shared
+tier: 2C
+covers_through_chapter: 02-40
+question_count: 45
+time_limit_minutes: 90
+source_basis: Existing chapter review banks; 01-21 items are derived directly from the chapter body because the available
+  Library snapshot lacks its answer key.
+items:
+- id: T2C-Q001
+  source_chapter: 02-38
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - MECH-2C-038-05
+  prompt: 'Which statement best describes **torsional stiffness**?
+
+    A) It is applied only after the mechanics model and assumptions are defined
+
+    B) It is independent of geometry and sign convention
+
+    C) It is only a unit conversion
+
+    D) It replaces the need for an FBD or kinematic model'
+  solution: '**A.** The twenty-third review item tests **torsional stiffness** in **Chapter 02-38: Torsion**. The correct
+    choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.'
+- id: T2C-Q002
+  source_chapter: 02-24
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - MECH-2C-024-01
+  prompt: 'Which statement best describes **method of joints**?
+
+    A) It is applied only after the mechanics model and assumptions are defined
+
+    B) It is independent of geometry and sign convention
+
+    C) It is only a unit conversion
+
+    D) It replaces the need for an FBD or kinematic model'
+  solution: '**A.** The twenty-third review item tests **method of joints** in **Chapter 02-24: Method of Joints for Planar
+    Trusses**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign
+    convention.'
+- id: T2C-Q003
+  source_chapter: 02-34
+  source_question: 13
+  source_category: conceptual
+  requires_concepts:
+  - MECH-2C-034-06
+  prompt: What error is likely if **power** is applied before the body, coordinate system, or sign convention is established?
+  solution: The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first,
+    then apply **power**.
+- id: T2C-Q004
+  source_chapter: 02-39
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - MECH-2C-039-05
+  prompt: 'Which statement best describes **beam shear stress**?
+
+    A) It is applied only after the mechanics model and assumptions are defined
+
+    B) It is independent of geometry and sign convention
+
+    C) It is only a unit conversion
+
+    D) It replaces the need for an FBD or kinematic model'
+  solution: '**A.** The twenty-third review item tests **beam shear stress** in **Chapter 02-39: Beams — Shear, Moment, Bending,
+    and Deflection**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints,
+    and sign convention.'
+- id: T2C-Q005
+  source_chapter: 02-30
+  source_question: 13
+  source_category: conceptual
+  requires_concepts:
+  - MECH-2C-030-06
+  prompt: What error is likely if **belt friction** is applied before the body, coordinate system, or sign convention is established?
+  solution: The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first,
+    then apply **belt friction**.
+- id: T2C-Q006
+  source_chapter: 02-29
+  source_question: 13
+  source_category: conceptual
+  requires_concepts:
+  - MECH-2C-029-06
+  prompt: What error is likely if **area radius of gyration** is applied before the body, coordinate system, or sign convention
+    is established?
+  solution: The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first,
+    then apply **area radius of gyration**.
+- id: T2C-Q007
+  source_chapter: 02-31
+  source_question: 13
+  source_category: conceptual
+  requires_concepts:
+  - MECH-2C-031-03
+  prompt: What error is likely if **motion graphs** is applied before the body, coordinate system, or sign convention is established?
+  solution: The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first,
+    then apply **motion graphs**.
+- id: T2C-Q008
+  source_chapter: 02-22
+  source_question: 9
+  source_category: conceptual
+  requires_concepts:
+  - MECH-2C-022-03
+  prompt: What error is likely if **body isolation** is applied before the body, coordinate system, or sign convention is
+    established?
+  solution: The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first,
+    then apply **body isolation**.
+- id: T2C-Q009
+  source_chapter: 02-33
+  source_question: 13
+  source_category: conceptual
+  requires_concepts:
+  - MECH-2C-033-06
+  prompt: What error is likely if **dynamic friction** is applied before the body, coordinate system, or sign convention is
+    established?
+  solution: The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first,
+    then apply **dynamic friction**.
+- id: T2C-Q010
+  source_chapter: 02-25
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - MECH-2C-025-05
+  prompt: 'Which statement best describes **equivalent resultant**?
+
+    A) It is applied only after the mechanics model and assumptions are defined
+
+    B) It is independent of geometry and sign convention
+
+    C) It is only a unit conversion
+
+    D) It replaces the need for an FBD or kinematic model'
+  solution: '**A.** The twenty-third review item tests **equivalent resultant** in **Chapter 02-25: Moments, Couples, and
+    Equivalent Force Systems**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints,
+    and sign convention.'
+- id: T2C-Q011
+  source_chapter: 02-39
+  source_question: 13
+  source_category: conceptual
+  requires_concepts:
+  - MECH-2C-039-06
+  prompt: What error is likely if **beam deflection** is applied before the body, coordinate system, or sign convention is
+    established?
+  solution: The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first,
+    then apply **beam deflection**.
+- id: T2C-Q012
+  source_chapter: 02-34
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - MECH-2C-034-05
+  prompt: 'Which statement best describes **work-energy principle**?
+
+    A) It is applied only after the mechanics model and assumptions are defined
+
+    B) It is independent of geometry and sign convention
+
+    C) It is only a unit conversion
+
+    D) It replaces the need for an FBD or kinematic model'
+  solution: '**A.** The twenty-third review item tests **work-energy principle** in **Chapter 02-34: Work, Energy, and Power**.
+    The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.'
+- id: T2C-Q013
+  source_chapter: 02-25
+  source_question: 9
+  source_category: conceptual
+  requires_concepts:
+  - MECH-2C-025-07
+  prompt: What error is likely if **scalar moment** is applied before the body, coordinate system, or sign convention is established?
+  solution: The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first,
+    then apply **scalar moment**.
+- id: T2C-Q014
+  source_chapter: 02-32
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - MECH-2C-032-05
+  prompt: 'Which statement best describes **circular motion**?
+
+    A) It is applied only after the mechanics model and assumptions are defined
+
+    B) It is independent of geometry and sign convention
+
+    C) It is only a unit conversion
+
+    D) It replaces the need for an FBD or kinematic model'
+  solution: '**A.** The twenty-third review item tests **circular motion** in **Chapter 02-32: Particle Kinematics — Curvilinear
+    and Relative Motion**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints,
+    and sign convention.'
+- id: T2C-Q015
+  source_chapter: 02-30
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - MECH-2C-030-05
+  prompt: 'Which statement best describes **tipping versus sliding**?
+
+    A) It is applied only after the mechanics model and assumptions are defined
+
+    B) It is independent of geometry and sign convention
+
+    C) It is only a unit conversion
+
+    D) It replaces the need for an FBD or kinematic model'
+  solution: '**A.** The twenty-third review item tests **tipping versus sliding** in **Chapter 02-30: Static Friction**. The
+    correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.'
+- id: T2C-Q016
+  source_chapter: 02-22
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-05
+  prompt: 'Which statement best describes **weight force**?
+
+    A) It is applied only after the mechanics model and assumptions are defined
+
+    B) It is independent of geometry and sign convention
+
+    C) It is only a unit conversion
+
+    D) It replaces the need for an FBD or kinematic model'
+  solution: '**A.** The twenty-third review item tests **weight force** in **Chapter 02-22: Constructing a Free-Body Diagram**.
+    The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign convention.'
+- id: T2C-Q017
+  source_chapter: 02-37
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - MECH-2C-037-05
+  prompt: 'Which statement best describes **thermal deformation**?
+
+    A) It is applied only after the mechanics model and assumptions are defined
+
+    B) It is independent of geometry and sign convention
+
+    C) It is only a unit conversion
+
+    D) It replaces the need for an FBD or kinematic model'
+  solution: '**A.** The twenty-third review item tests **thermal deformation** in **Chapter 02-37: Stress, Strain, and Axial/Thermal
+    Deformation**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and
+    sign convention.'
+- id: T2C-Q018
+  source_chapter: 02-24
+  source_question: 9
+  source_category: conceptual
+  requires_concepts:
+  - MECH-2C-024-03
+  prompt: What error is likely if **truss determinacy** is applied before the body, coordinate system, or sign convention
+    is established?
+  solution: The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first,
+    then apply **truss determinacy**.
+- id: T2C-Q019
+  source_chapter: 02-26
+  source_question: 9
+  source_category: conceptual
+  requires_concepts:
+  - MECH-2C-026-02
+  prompt: What error is likely if **support reaction** is applied before the body, coordinate system, or sign convention is
+    established?
+  solution: The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first,
+    then apply **support reaction**.
+- id: T2C-Q020
+  source_chapter: 02-22
+  source_question: 14
+  source_category: conceptual
+  requires_concepts:
+  - MECH-2C-022-03
+  prompt: What error is likely if **FBD audit** is applied before the body, coordinate system, or sign convention is established?
+  solution: The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first,
+    then apply **FBD audit**.
+- id: T2C-Q021
+  source_chapter: 02-25
+  source_question: 14
+  source_category: conceptual
+  requires_concepts:
+  - MECH-2C-025-07
+  prompt: What error is likely if **moment audit** is applied before the body, coordinate system, or sign convention is established?
+  solution: The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first,
+    then apply **moment audit**.
+- id: T2C-Q022
+  source_chapter: 02-38
+  source_question: 13
+  source_category: conceptual
+  requires_concepts:
+  - MECH-2C-038-06
+  prompt: What error is likely if **shaft power** is applied before the body, coordinate system, or sign convention is established?
+  solution: The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first,
+    then apply **shaft power**.
+- id: T2C-Q023
+  source_chapter: 02-27
+  source_question: 14
+  source_category: conceptual
+  requires_concepts:
+  - MECH-2C-027-07
+  prompt: What error is likely if **member-by-member equilibrium** is applied before the body, coordinate system, or sign
+    convention is established?
+  solution: The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first,
+    then apply **member-by-member equilibrium**.
+- id: T2C-Q024
+  source_chapter: 02-26
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - MECH-2C-026-05
+  prompt: 'Which statement best describes **planar reduction**?
+
+    A) It is applied only after the mechanics model and assumptions are defined
+
+    B) It is independent of geometry and sign convention
+
+    C) It is only a unit conversion
+
+    D) It replaces the need for an FBD or kinematic model'
+  solution: '**A.** The twenty-third review item tests **planar reduction** in **Chapter 02-26: Rigid-Body Equilibrium and
+    Support Reactions**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints,
+    and sign convention.'
+- id: T2C-Q025
+  source_chapter: 02-36
+  source_question: 13
+  source_category: conceptual
+  requires_concepts:
+  - MECH-2C-036-01
+  prompt: What error is likely if **rigid-body kinetics** is applied before the body, coordinate system, or sign convention
+    is established?
+  solution: The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first,
+    then apply **rigid-body kinetics**.
+- id: T2C-Q026
+  source_chapter: 02-23
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - MECH-2C-023-01
+  prompt: 'Which statement best describes **resultant force**?
+
+    A) It is applied only after the mechanics model and assumptions are defined
+
+    B) It is independent of geometry and sign convention
+
+    C) It is only a unit conversion
+
+    D) It replaces the need for an FBD or kinematic model'
+  solution: '**A.** The twenty-third review item tests **resultant force** in **Chapter 02-23: Equilibrium Equations for a
+    2D Concurrent Force System**. The correct choice is the one consistent with the stated body/system, geometry, loading,
+    constraints, and sign convention.'
+- id: T2C-Q027
+  source_chapter: 02-32
+  source_question: 13
+  source_category: conceptual
+  requires_concepts:
+  - MECH-2C-032-06
+  prompt: What error is likely if **relative motion** is applied before the body, coordinate system, or sign convention is
+    established?
+  solution: The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first,
+    then apply **relative motion**.
+- id: T2C-Q028
+  source_chapter: 02-28
+  source_question: 14
+  source_category: conceptual
+  requires_concepts:
+  - MECH-2C-028-07
+  prompt: What error is likely if **first moment** is applied before the body, coordinate system, or sign convention is established?
+  solution: The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first,
+    then apply **first moment**.
+- id: T2C-Q029
+  source_chapter: 02-35
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - MECH-2C-035-05
+  prompt: 'Which statement best describes **direct central impact**?
+
+    A) It is applied only after the mechanics model and assumptions are defined
+
+    B) It is independent of geometry and sign convention
+
+    C) It is only a unit conversion
+
+    D) It replaces the need for an FBD or kinematic model'
+  solution: '**A.** The twenty-third review item tests **direct central impact** in **Chapter 02-35: Impulse, Momentum, and
+    Impact**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints, and sign
+    convention.'
+- id: T2C-Q030
+  source_chapter: 02-29
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - MECH-2C-029-05
+  prompt: 'Which statement best describes **polar moment of area**?
+
+    A) It is applied only after the mechanics model and assumptions are defined
+
+    B) It is independent of geometry and sign convention
+
+    C) It is only a unit conversion
+
+    D) It replaces the need for an FBD or kinematic model'
+  solution: '**A.** The twenty-third review item tests **polar moment of area** in **Chapter 02-29: Area Moments of Inertia
+    and the Parallel-Axis Theorem**. The correct choice is the one consistent with the stated body/system, geometry, loading,
+    constraints, and sign convention.'
+- id: T2C-Q031
+  source_chapter: 02-35
+  source_question: 13
+  source_category: conceptual
+  requires_concepts:
+  - MECH-2C-035-06
+  prompt: What error is likely if **coefficient of restitution** is applied before the body, coordinate system, or sign convention
+    is established?
+  solution: The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first,
+    then apply **coefficient of restitution**.
+- id: T2C-Q032
+  source_chapter: 02-27
+  source_question: 9
+  source_category: conceptual
+  requires_concepts:
+  - MECH-2C-027-02
+  prompt: What error is likely if **section-cut strategy** is applied before the body, coordinate system, or sign convention
+    is established?
+  solution: The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first,
+    then apply **section-cut strategy**.
+- id: T2C-Q033
+  source_chapter: 02-28
+  source_question: 9
+  source_category: conceptual
+  requires_concepts:
+  - MECH-2C-028-02
+  prompt: What error is likely if **common load resultants** is applied before the body, coordinate system, or sign convention
+    is established?
+  solution: The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first,
+    then apply **common load resultants**.
+- id: T2C-Q034
+  source_chapter: 02-26
+  source_question: 14
+  source_category: conceptual
+  requires_concepts:
+  - MECH-2C-026-07
+  prompt: What error is likely if **reaction check** is applied before the body, coordinate system, or sign convention is
+    established?
+  solution: The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first,
+    then apply **reaction check**.
+- id: T2C-Q035
+  source_chapter: 02-23
+  source_question: 14
+  source_category: conceptual
+  requires_concepts:
+  - MECH-2C-023-06
+  prompt: What error is likely if **equilibrium check** is applied before the body, coordinate system, or sign convention
+    is established?
+  solution: The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first,
+    then apply **equilibrium check**.
+- id: T2C-Q036
+  source_chapter: 02-24
+  source_question: 14
+  source_category: conceptual
+  requires_concepts:
+  - MECH-2C-024-07
+  prompt: What error is likely if **joint-order strategy** is applied before the body, coordinate system, or sign convention
+    is established?
+  solution: The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first,
+    then apply **joint-order strategy**.
+- id: T2C-Q037
+  source_chapter: 02-37
+  source_question: 13
+  source_category: conceptual
+  requires_concepts:
+  - MECH-2C-037-06
+  prompt: What error is likely if **axial compatibility** is applied before the body, coordinate system, or sign convention
+    is established?
+  solution: The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first,
+    then apply **axial compatibility**.
+- id: T2C-Q038
+  source_chapter: 02-23
+  source_question: 9
+  source_category: conceptual
+  requires_concepts:
+  - MECH-2C-023-03
+  prompt: What error is likely if **force components** is applied before the body, coordinate system, or sign convention is
+    established?
+  solution: The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first,
+    then apply **force components**.
+- id: T2C-Q039
+  source_chapter: 02-33
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - MECH-2C-033-05
+  prompt: 'Which statement best describes **connected particles**?
+
+    A) It is applied only after the mechanics model and assumptions are defined
+
+    B) It is independent of geometry and sign convention
+
+    C) It is only a unit conversion
+
+    D) It replaces the need for an FBD or kinematic model'
+  solution: '**A.** The twenty-third review item tests **connected particles** in **Chapter 02-33: Particle Kinetics — Force
+    and Acceleration**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints,
+    and sign convention.'
+- id: T2C-Q040
+  source_chapter: 02-28
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - MECH-2C-028-05
+  prompt: 'Which statement best describes **center of mass**?
+
+    A) It is applied only after the mechanics model and assumptions are defined
+
+    B) It is independent of geometry and sign convention
+
+    C) It is only a unit conversion
+
+    D) It replaces the need for an FBD or kinematic model'
+  solution: '**A.** The twenty-third review item tests **center of mass** in **Chapter 02-28: Distributed Loads, Centroids,
+    and Centers of Gravity**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints,
+    and sign convention.'
+- id: T2C-Q041
+  source_chapter: 02-40
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - MECH-2C-040-05
+  prompt: 'Which statement best describes **Mohr circle**?
+
+    A) It is applied only after the mechanics model and assumptions are defined
+
+    B) It is independent of geometry and sign convention
+
+    C) It is only a unit conversion
+
+    D) It replaces the need for an FBD or kinematic model'
+  solution: '**A.** The twenty-third review item tests **Mohr circle** in **Chapter 02-40: Combined Stress, Principal Stress,
+    and Mohr''s Circle**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints,
+    and sign convention.'
+- id: T2C-Q042
+  source_chapter: 02-27
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - MECH-2C-027-05
+  prompt: 'Which statement best describes **machine member**?
+
+    A) It is applied only after the mechanics model and assumptions are defined
+
+    B) It is independent of geometry and sign convention
+
+    C) It is only a unit conversion
+
+    D) It replaces the need for an FBD or kinematic model'
+  solution: '**A.** The twenty-third review item tests **machine member** in **Chapter 02-27: Method of Sections, Frames,
+    and Machines**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints,
+    and sign convention.'
+- id: T2C-Q043
+  source_chapter: 02-40
+  source_question: 13
+  source_category: conceptual
+  requires_concepts:
+  - MECH-2C-040-06
+  prompt: What error is likely if **principal orientation** is applied before the body, coordinate system, or sign convention
+    is established?
+  solution: The mechanics model can be wrong even if the algebra is correct. Establish the FBD/kinematics/stress state first,
+    then apply **principal orientation**.
+- id: T2C-Q044
+  source_chapter: 02-36
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - MECH-2C-036-05
+  prompt: 'Which statement best describes **mass moment of inertia**?
+
+    A) It is applied only after the mechanics model and assumptions are defined
+
+    B) It is independent of geometry and sign convention
+
+    C) It is only a unit conversion
+
+    D) It replaces the need for an FBD or kinematic model'
+  solution: '**A.** The twenty-third review item tests **mass moment of inertia** in **Chapter 02-36: Rigid-Body Planar Kinematics
+    and Kinetics**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints,
+    and sign convention.'
+- id: T2C-Q045
+  source_chapter: 02-31
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - MECH-2C-031-03
+  prompt: 'Which statement best describes **position-dependent acceleration**?
+
+    A) It is applied only after the mechanics model and assumptions are defined
+
+    B) It is independent of geometry and sign convention
+
+    C) It is only a unit conversion
+
+    D) It replaces the need for an FBD or kinematic model'
+  solution: '**A.** The twenty-third review item tests **position-dependent acceleration** in **Chapter 02-31: Particle Kinematics
+    — Rectilinear Motion**. The correct choice is the one consistent with the stated body/system, geometry, loading, constraints,
+    and sign convention.'

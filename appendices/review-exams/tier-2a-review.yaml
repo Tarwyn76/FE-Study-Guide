@@ -1,0 +1,353 @@
+schema_version: 1
+exam_type: tier-review
+discipline: shared
+tier: 2A
+covers_through_chapter: 02-10
+question_count: 30
+time_limit_minutes: 60
+source_basis: Existing chapter review banks; 01-21 items are derived directly from the chapter body because the available
+  Library snapshot lacks its answer key.
+items:
+- id: T2A-Q001
+  source_chapter: 02-09
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - ECON-2A-009-05
+  prompt: 'Which choice best matches the chapter''s use of **Book value**?
+
+    A) The section-specific engineering concept or criterion
+
+    B) An unrelated calculation method
+
+    C) A guaranteed outcome
+
+    D) A substitute for engineering judgment'
+  solution: '**A.** The chapter uses **Book value** as the section-specific engineering concept or criterion.'
+- id: T2A-Q002
+  source_chapter: 02-05
+  source_question: 14
+  source_category: conceptual
+  requires_concepts:
+  - ECON-2A-005-07
+  prompt: What common error would result from ignoring the distinction emphasized in **Future Worth as an Equivalent Criterion**?
+  solution: It would apply the wrong professional or economic rule. First distinguish **FW criterion** from nearby concepts,
+    then apply it under the section's stated conditions.
+- id: T2A-Q003
+  source_chapter: 02-02
+  source_question: 14
+  source_category: conceptual
+  requires_concepts:
+  - PROF-2A-002-07
+  prompt: What common error would result from ignoring the distinction emphasized in **Firms, Certificates of Authorization,
+    and Exemptions**?
+  solution: It would apply the wrong professional or economic rule. First distinguish **Firms** from nearby concepts, then
+    apply it under the section's stated conditions.
+- id: T2A-Q004
+  source_chapter: 02-02
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - PROF-2A-002-05
+  prompt: 'Which choice best matches the chapter''s use of **Jurisdiction**?
+
+    A) The section-specific engineering concept or criterion
+
+    B) An unrelated calculation method
+
+    C) A guaranteed outcome
+
+    D) A substitute for engineering judgment'
+  solution: '**A.** The chapter uses **Jurisdiction** as the section-specific engineering concept or criterion.'
+- id: T2A-Q005
+  source_chapter: 02-10
+  source_question: 9
+  source_category: conceptual
+  requires_concepts:
+  - ECON-2A-010-02
+  prompt: What common error would result from ignoring the distinction emphasized in **Common Study Period and Unequal Lives**?
+  solution: It would apply the wrong professional or economic rule. First distinguish **Unequal lives** from nearby concepts,
+    then apply it under the section's stated conditions.
+- id: T2A-Q006
+  source_chapter: 02-07
+  source_question: 14
+  source_category: conceptual
+  requires_concepts:
+  - ECON-2A-007-07
+  prompt: What common error would result from ignoring the distinction emphasized in **Decision Limits**?
+  solution: It would apply the wrong professional or economic rule. First distinguish **Limits** from nearby concepts, then
+    apply it under the section's stated conditions.
+- id: T2A-Q007
+  source_chapter: 02-04
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-02
+  prompt: 'Which choice best matches the chapter''s use of **Factors**?
+
+    A) The section-specific engineering concept or criterion
+
+    B) An unrelated calculation method
+
+    C) A guaranteed outcome
+
+    D) A substitute for engineering judgment'
+  solution: '**A.** The chapter uses **Factors** as the section-specific engineering concept or criterion.'
+- id: T2A-Q008
+  source_chapter: 02-10
+  source_question: 14
+  source_category: conceptual
+  requires_concepts:
+  - ECON-2A-010-07
+  prompt: What common error would result from ignoring the distinction emphasized in **Integrated Decision Rule**?
+  solution: It would apply the wrong professional or economic rule. First distinguish **Integration** from nearby concepts,
+    then apply it under the section's stated conditions.
+- id: T2A-Q009
+  source_chapter: 02-08
+  source_question: 14
+  source_category: conceptual
+  requires_concepts:
+  - ECON-2A-008-07
+  prompt: What common error would result from ignoring the distinction emphasized in **Limitations and Sensitivity**?
+  solution: It would apply the wrong professional or economic rule. First distinguish **Sensitivity** from nearby concepts,
+    then apply it under the section's stated conditions.
+- id: T2A-Q010
+  source_chapter: 02-06
+  source_question: 14
+  source_category: conceptual
+  requires_concepts:
+  - ECON-2A-006-07
+  prompt: What common error would result from ignoring the distinction emphasized in **Timing and Sign Checks**?
+  solution: It would apply the wrong professional or economic rule. First distinguish **Timing** from nearby concepts, then
+    apply it under the section's stated conditions.
+- id: T2A-Q011
+  source_chapter: 02-01
+  source_question: 9
+  source_category: conceptual
+  requires_concepts:
+  - PROF-2A-001-02
+  prompt: What common error would result from ignoring the distinction emphasized in **Competence and Scope of Practice**?
+  solution: It would apply the wrong professional or economic rule. First distinguish **Competence** from nearby concepts,
+    then apply it under the section's stated conditions.
+- id: T2A-Q012
+  source_chapter: 02-09
+  source_question: 14
+  source_category: conceptual
+  requires_concepts:
+  - ECON-2A-009-07
+  prompt: What common error would result from ignoring the distinction emphasized in **Replacement and Capitalized Cost**?
+  solution: It would apply the wrong professional or economic rule. First distinguish **Replacement** from nearby concepts,
+    then apply it under the section's stated conditions.
+- id: T2A-Q013
+  source_chapter: 02-03
+  source_question: 14
+  source_category: conceptual
+  requires_concepts:
+  - PROF-2A-003-07
+  prompt: What common error would result from ignoring the distinction emphasized in **Engineering Judgment at the Legal/Ethical
+    Boundary**?
+  solution: It would apply the wrong professional or economic rule. First distinguish **Integration** from nearby concepts,
+    then apply it under the section's stated conditions.
+- id: T2A-Q014
+  source_chapter: 02-01
+  source_question: 14
+  source_category: conceptual
+  requires_concepts:
+  - PROF-2A-001-07
+  prompt: What common error would result from ignoring the distinction emphasized in **Professional Judgment in Difficult
+    Cases**?
+  solution: It would apply the wrong professional or economic rule. First distinguish **Judgment** from nearby concepts, then
+    apply it under the section's stated conditions.
+- id: T2A-Q015
+  source_chapter: 02-08
+  source_question: 9
+  source_category: conceptual
+  requires_concepts:
+  - ECON-2A-008-02
+  prompt: What common error would result from ignoring the distinction emphasized in **Fixed and Variable Cost Model**?
+  solution: It would apply the wrong professional or economic rule. First distinguish **Cost-volume** from nearby concepts,
+    then apply it under the section's stated conditions.
+- id: T2A-Q016
+  source_chapter: 02-02
+  source_question: 9
+  source_category: conceptual
+  requires_concepts:
+  - PROF-2A-002-02
+  prompt: What common error would result from ignoring the distinction emphasized in **Practice of Engineering**?
+  solution: It would apply the wrong professional or economic rule. First distinguish **Practice** from nearby concepts, then
+    apply it under the section's stated conditions.
+- id: T2A-Q017
+  source_chapter: 02-06
+  source_question: 9
+  source_category: conceptual
+  requires_concepts:
+  - ECON-2A-006-02
+  prompt: What common error would result from ignoring the distinction emphasized in **Capital Recovery**?
+  solution: It would apply the wrong professional or economic rule. First distinguish **CR** from nearby concepts, then apply
+    it under the section's stated conditions.
+- id: T2A-Q018
+  source_chapter: 02-03
+  source_question: 9
+  source_category: conceptual
+  requires_concepts:
+  - PROF-2A-003-02
+  prompt: What common error would result from ignoring the distinction emphasized in **Standard of Care and Professional Liability**?
+  solution: It would apply the wrong professional or economic rule. First distinguish **Liability** from nearby concepts,
+    then apply it under the section's stated conditions.
+- id: T2A-Q019
+  source_chapter: 02-10
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - ECON-2A-010-05
+  prompt: 'Which choice best matches the chapter''s use of **Capital rationing**?
+
+    A) The section-specific engineering concept or criterion
+
+    B) An unrelated calculation method
+
+    C) A guaranteed outcome
+
+    D) A substitute for engineering judgment'
+  solution: '**A.** The chapter uses **Capital rationing** as the section-specific engineering concept or criterion.'
+- id: T2A-Q020
+  source_chapter: 02-05
+  source_question: 9
+  source_category: conceptual
+  requires_concepts:
+  - ECON-2A-005-02
+  prompt: What common error would result from ignoring the distinction emphasized in **Single-Payment Future Worth**?
+  solution: It would apply the wrong professional or economic rule. First distinguish **Single FW** from nearby concepts,
+    then apply it under the section's stated conditions.
+- id: T2A-Q021
+  source_chapter: 02-09
+  source_question: 9
+  source_category: conceptual
+  requires_concepts:
+  - ECON-2A-009-02
+  prompt: What common error would result from ignoring the distinction emphasized in **Non-Annual Compounding Review**?
+  solution: It would apply the wrong professional or economic rule. First distinguish **Compounding** from nearby concepts,
+    then apply it under the section's stated conditions.
+- id: T2A-Q022
+  source_chapter: 02-07
+  source_question: 9
+  source_category: conceptual
+  requires_concepts:
+  - ECON-2A-007-02
+  prompt: What common error would result from ignoring the distinction emphasized in **Minimum Attractive Rate of Return**?
+  solution: It would apply the wrong professional or economic rule. First distinguish **MARR** from nearby concepts, then
+    apply it under the section's stated conditions.
+- id: T2A-Q023
+  source_chapter: 02-06
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - ECON-2A-006-05
+  prompt: 'Which choice best matches the chapter''s use of **Gradient factors**?
+
+    A) The section-specific engineering concept or criterion
+
+    B) An unrelated calculation method
+
+    C) A guaranteed outcome
+
+    D) A substitute for engineering judgment'
+  solution: '**A.** The chapter uses **Gradient factors** as the section-specific engineering concept or criterion.'
+- id: T2A-Q024
+  source_chapter: 02-04
+  source_question: 14
+  source_category: conceptual
+  requires_concepts:
+  - ECON-2A-004-07
+  prompt: What common error would result from ignoring the distinction emphasized in **Model Discipline and Common Errors**?
+  solution: It would apply the wrong professional or economic rule. First distinguish **Checks** from nearby concepts, then
+    apply it under the section's stated conditions.
+- id: T2A-Q025
+  source_chapter: 02-03
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - PROF-2A-003-07
+  prompt: 'Which choice best matches the chapter''s use of **Patents**?
+
+    A) The section-specific engineering concept or criterion
+
+    B) An unrelated calculation method
+
+    C) A guaranteed outcome
+
+    D) A substitute for engineering judgment'
+  solution: '**A.** The chapter uses **Patents** as the section-specific engineering concept or criterion.'
+- id: T2A-Q026
+  source_chapter: 02-05
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - ECON-2A-005-05
+  prompt: 'Which choice best matches the chapter''s use of **Mixed PW**?
+
+    A) The section-specific engineering concept or criterion
+
+    B) An unrelated calculation method
+
+    C) A guaranteed outcome
+
+    D) A substitute for engineering judgment'
+  solution: '**A.** The chapter uses **Mixed PW** as the section-specific engineering concept or criterion.'
+- id: T2A-Q027
+  source_chapter: 02-07
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - ECON-2A-007-05
+  prompt: 'Which choice best matches the chapter''s use of **Incremental**?
+
+    A) The section-specific engineering concept or criterion
+
+    B) An unrelated calculation method
+
+    C) A guaranteed outcome
+
+    D) A substitute for engineering judgment'
+  solution: '**A.** The chapter uses **Incremental** as the section-specific engineering concept or criterion.'
+- id: T2A-Q028
+  source_chapter: 02-08
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - ECON-2A-008-05
+  prompt: 'Which choice best matches the chapter''s use of **Payback**?
+
+    A) The section-specific engineering concept or criterion
+
+    B) An unrelated calculation method
+
+    C) A guaranteed outcome
+
+    D) A substitute for engineering judgment'
+  solution: '**A.** The chapter uses **Payback** as the section-specific engineering concept or criterion.'
+- id: T2A-Q029
+  source_chapter: 02-01
+  source_question: 23
+  source_category: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-05
+  prompt: 'Which choice best matches the chapter''s use of **Confidentiality**?
+
+    A) The section-specific engineering concept or criterion
+
+    B) An unrelated calculation method
+
+    C) A guaranteed outcome
+
+    D) A substitute for engineering judgment'
+  solution: '**A.** The chapter uses **Confidentiality** as the section-specific engineering concept or criterion.'
+- id: T2A-Q030
+  source_chapter: 02-04
+  source_question: 9
+  source_category: conceptual
+  requires_concepts:
+  - ECON-2A-004-02
+  prompt: What common error would result from ignoring the distinction emphasized in **Interest and Compounding**?
+  solution: It would apply the wrong professional or economic rule. First distinguish **Interest** from nearby concepts, then
+    apply it under the section's stated conditions.

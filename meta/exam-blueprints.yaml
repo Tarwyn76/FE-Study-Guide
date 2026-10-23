@@ -1,0 +1,1157 @@
+schema_version: 1
+source:
+  authority: NCEES
+  specification_effective: July 2020
+  verification_date: '2026-10-23'
+  current_fe_page: https://ncees.org/exams/fe-exam/
+  specification_snapshot: NCEES FE exam specifications effective beginning with the
+    July 2020 examinations
+  timing_source: NCEES Examinee Guide, May 2026
+exam_format:
+  questions: 110
+  appointment_minutes: 355
+  nondisclosure_minutes: 2
+  tutorial_minutes: 8
+  exam_minutes: 320
+  scheduled_break_minutes: 25
+  note: Practice-exam working time should emulate the 5 h 20 min exam block. The full
+    NCEES appointment is 5 h 55 min.
+blueprints:
+- discipline: chemical
+  exam: A
+  exam_type: practice-A
+  total_questions: 110
+  appointment_minutes: 355
+  working_time_minutes: 320
+  areas:
+  - name: Mathematics
+    spec_range:
+    - 6
+    - 9
+    allocated: 6
+  - name: Probability and Statistics
+    spec_range:
+    - 4
+    - 6
+    allocated: 4
+  - name: Engineering Sciences
+    spec_range:
+    - 4
+    - 6
+    allocated: 4
+  - name: Materials Science
+    spec_range:
+    - 4
+    - 6
+    allocated: 4
+  - name: Chemistry and Biology
+    spec_range:
+    - 7
+    - 11
+    allocated: 8
+  - name: Fluid Mechanics/Dynamics
+    spec_range:
+    - 8
+    - 12
+    allocated: 9
+  - name: Thermodynamics
+    spec_range:
+    - 8
+    - 12
+    allocated: 9
+  - name: Material/Energy Balances
+    spec_range:
+    - 10
+    - 15
+    allocated: 11
+  - name: Heat Transfer
+    spec_range:
+    - 8
+    - 12
+    allocated: 9
+  - name: Mass Transfer and Separation
+    spec_range:
+    - 8
+    - 12
+    allocated: 9
+  - name: Solids Handling
+    spec_range:
+    - 3
+    - 5
+    allocated: 3
+  - name: Chemical Reaction Engineering
+    spec_range:
+    - 7
+    - 11
+    allocated: 8
+  - name: Economics
+    spec_range:
+    - 4
+    - 6
+    allocated: 4
+  - name: Process Design
+    spec_range:
+    - 7
+    - 11
+    allocated: 8
+  - name: Process Control
+    spec_range:
+    - 4
+    - 6
+    allocated: 5
+  - name: Safety, Health, and Environment
+    spec_range:
+    - 5
+    - 8
+    allocated: 5
+  - name: Ethics and Professional Practice
+    spec_range:
+    - 3
+    - 5
+    allocated: 4
+- discipline: chemical
+  exam: B
+  exam_type: practice-B
+  total_questions: 110
+  appointment_minutes: 355
+  working_time_minutes: 320
+  areas:
+  - name: Mathematics
+    spec_range:
+    - 6
+    - 9
+    allocated: 7
+  - name: Probability and Statistics
+    spec_range:
+    - 4
+    - 6
+    allocated: 4
+  - name: Engineering Sciences
+    spec_range:
+    - 4
+    - 6
+    allocated: 4
+  - name: Materials Science
+    spec_range:
+    - 4
+    - 6
+    allocated: 5
+  - name: Chemistry and Biology
+    spec_range:
+    - 7
+    - 11
+    allocated: 7
+  - name: Fluid Mechanics/Dynamics
+    spec_range:
+    - 8
+    - 12
+    allocated: 9
+  - name: Thermodynamics
+    spec_range:
+    - 8
+    - 12
+    allocated: 9
+  - name: Material/Energy Balances
+    spec_range:
+    - 10
+    - 15
+    allocated: 10
+  - name: Heat Transfer
+    spec_range:
+    - 8
+    - 12
+    allocated: 9
+  - name: Mass Transfer and Separation
+    spec_range:
+    - 8
+    - 12
+    allocated: 10
+  - name: Solids Handling
+    spec_range:
+    - 3
+    - 5
+    allocated: 3
+  - name: Chemical Reaction Engineering
+    spec_range:
+    - 7
+    - 11
+    allocated: 8
+  - name: Economics
+    spec_range:
+    - 4
+    - 6
+    allocated: 5
+  - name: Process Design
+    spec_range:
+    - 7
+    - 11
+    allocated: 7
+  - name: Process Control
+    spec_range:
+    - 4
+    - 6
+    allocated: 4
+  - name: Safety, Health, and Environment
+    spec_range:
+    - 5
+    - 8
+    allocated: 6
+  - name: Ethics and Professional Practice
+    spec_range:
+    - 3
+    - 5
+    allocated: 3
+- discipline: civil
+  exam: A
+  exam_type: practice-A
+  total_questions: 110
+  appointment_minutes: 355
+  working_time_minutes: 320
+  areas:
+  - name: Mathematics and Statistics
+    spec_range:
+    - 8
+    - 12
+    allocated: 9
+  - name: Ethics and Professional Practice
+    spec_range:
+    - 4
+    - 6
+    allocated: 5
+  - name: Engineering Economics
+    spec_range:
+    - 5
+    - 8
+    allocated: 5
+  - name: Statics
+    spec_range:
+    - 8
+    - 12
+    allocated: 9
+  - name: Dynamics
+    spec_range:
+    - 4
+    - 6
+    allocated: 5
+  - name: Mechanics of Materials
+    spec_range:
+    - 7
+    - 11
+    allocated: 8
+  - name: Materials
+    spec_range:
+    - 5
+    - 8
+    allocated: 5
+  - name: Fluid Mechanics
+    spec_range:
+    - 6
+    - 9
+    allocated: 6
+  - name: Surveying
+    spec_range:
+    - 6
+    - 9
+    allocated: 6
+  - name: Water Resources and Environmental Engineering
+    spec_range:
+    - 10
+    - 15
+    allocated: 11
+  - name: Structural Engineering
+    spec_range:
+    - 10
+    - 15
+    allocated: 11
+  - name: Geotechnical Engineering
+    spec_range:
+    - 10
+    - 15
+    allocated: 11
+  - name: Transportation Engineering
+    spec_range:
+    - 9
+    - 14
+    allocated: 10
+  - name: Construction Engineering
+    spec_range:
+    - 8
+    - 12
+    allocated: 9
+- discipline: civil
+  exam: B
+  exam_type: practice-B
+  total_questions: 110
+  appointment_minutes: 355
+  working_time_minutes: 320
+  areas:
+  - name: Mathematics and Statistics
+    spec_range:
+    - 8
+    - 12
+    allocated: 10
+  - name: Ethics and Professional Practice
+    spec_range:
+    - 4
+    - 6
+    allocated: 4
+  - name: Engineering Economics
+    spec_range:
+    - 5
+    - 8
+    allocated: 5
+  - name: Statics
+    spec_range:
+    - 8
+    - 12
+    allocated: 10
+  - name: Dynamics
+    spec_range:
+    - 4
+    - 6
+    allocated: 4
+  - name: Mechanics of Materials
+    spec_range:
+    - 7
+    - 11
+    allocated: 8
+  - name: Materials
+    spec_range:
+    - 5
+    - 8
+    allocated: 6
+  - name: Fluid Mechanics
+    spec_range:
+    - 6
+    - 9
+    allocated: 6
+  - name: Surveying
+    spec_range:
+    - 6
+    - 9
+    allocated: 6
+  - name: Water Resources and Environmental Engineering
+    spec_range:
+    - 10
+    - 15
+    allocated: 11
+  - name: Structural Engineering
+    spec_range:
+    - 10
+    - 15
+    allocated: 10
+  - name: Geotechnical Engineering
+    spec_range:
+    - 10
+    - 15
+    allocated: 11
+  - name: Transportation Engineering
+    spec_range:
+    - 9
+    - 14
+    allocated: 11
+  - name: Construction Engineering
+    spec_range:
+    - 8
+    - 12
+    allocated: 8
+- discipline: electrical-computer
+  exam: A
+  exam_type: practice-A
+  total_questions: 110
+  appointment_minutes: 355
+  working_time_minutes: 320
+  areas:
+  - name: Mathematics
+    spec_range:
+    - 11
+    - 17
+    allocated: 13
+  - name: Probability and Statistics
+    spec_range:
+    - 4
+    - 6
+    allocated: 4
+  - name: Ethics and Professional Practice
+    spec_range:
+    - 4
+    - 6
+    allocated: 4
+  - name: Engineering Economics
+    spec_range:
+    - 5
+    - 8
+    allocated: 5
+  - name: Properties of Electrical Materials
+    spec_range:
+    - 4
+    - 6
+    allocated: 4
+  - name: Circuit Analysis (DC and AC Steady State)
+    spec_range:
+    - 11
+    - 17
+    allocated: 13
+  - name: Linear Systems
+    spec_range:
+    - 5
+    - 8
+    allocated: 5
+  - name: Signal Processing
+    spec_range:
+    - 5
+    - 8
+    allocated: 5
+  - name: Electronics
+    spec_range:
+    - 7
+    - 11
+    allocated: 8
+  - name: Power Systems
+    spec_range:
+    - 8
+    - 12
+    allocated: 9
+  - name: Electromagnetics
+    spec_range:
+    - 4
+    - 6
+    allocated: 5
+  - name: Control Systems
+    spec_range:
+    - 6
+    - 9
+    allocated: 6
+  - name: Communications
+    spec_range:
+    - 5
+    - 8
+    allocated: 5
+  - name: Computer Networks
+    spec_range:
+    - 4
+    - 6
+    allocated: 5
+  - name: Digital Systems
+    spec_range:
+    - 8
+    - 12
+    allocated: 9
+  - name: Computer Systems
+    spec_range:
+    - 5
+    - 8
+    allocated: 5
+  - name: Software Engineering
+    spec_range:
+    - 4
+    - 6
+    allocated: 5
+- discipline: electrical-computer
+  exam: B
+  exam_type: practice-B
+  total_questions: 110
+  appointment_minutes: 355
+  working_time_minutes: 320
+  areas:
+  - name: Mathematics
+    spec_range:
+    - 11
+    - 17
+    allocated: 13
+  - name: Probability and Statistics
+    spec_range:
+    - 4
+    - 6
+    allocated: 4
+  - name: Ethics and Professional Practice
+    spec_range:
+    - 4
+    - 6
+    allocated: 4
+  - name: Engineering Economics
+    spec_range:
+    - 5
+    - 8
+    allocated: 6
+  - name: Properties of Electrical Materials
+    spec_range:
+    - 4
+    - 6
+    allocated: 4
+  - name: Circuit Analysis (DC and AC Steady State)
+    spec_range:
+    - 11
+    - 17
+    allocated: 12
+  - name: Linear Systems
+    spec_range:
+    - 5
+    - 8
+    allocated: 6
+  - name: Signal Processing
+    spec_range:
+    - 5
+    - 8
+    allocated: 5
+  - name: Electronics
+    spec_range:
+    - 7
+    - 11
+    allocated: 8
+  - name: Power Systems
+    spec_range:
+    - 8
+    - 12
+    allocated: 9
+  - name: Electromagnetics
+    spec_range:
+    - 4
+    - 6
+    allocated: 4
+  - name: Control Systems
+    spec_range:
+    - 6
+    - 9
+    allocated: 6
+  - name: Communications
+    spec_range:
+    - 5
+    - 8
+    allocated: 6
+  - name: Computer Networks
+    spec_range:
+    - 4
+    - 6
+    allocated: 4
+  - name: Digital Systems
+    spec_range:
+    - 8
+    - 12
+    allocated: 9
+  - name: Computer Systems
+    spec_range:
+    - 5
+    - 8
+    allocated: 6
+  - name: Software Engineering
+    spec_range:
+    - 4
+    - 6
+    allocated: 4
+- discipline: environmental
+  exam: A
+  exam_type: practice-A
+  total_questions: 110
+  appointment_minutes: 355
+  working_time_minutes: 320
+  areas:
+  - name: Mathematics
+    spec_range:
+    - 5
+    - 8
+    allocated: 5
+  - name: Probability and Statistics
+    spec_range:
+    - 4
+    - 6
+    allocated: 4
+  - name: Ethics and Professional Practice
+    spec_range:
+    - 5
+    - 8
+    allocated: 5
+  - name: Engineering Economics
+    spec_range:
+    - 5
+    - 8
+    allocated: 5
+  - name: Fundamental Principles
+    spec_range:
+    - 7
+    - 11
+    allocated: 8
+  - name: Environmental Chemistry
+    spec_range:
+    - 7
+    - 11
+    allocated: 8
+  - name: Health Hazards and Risk Assessment
+    spec_range:
+    - 4
+    - 6
+    allocated: 4
+  - name: Fluid Mechanics and Hydraulics
+    spec_range:
+    - 12
+    - 18
+    allocated: 14
+  - name: Thermodynamics
+    spec_range:
+    - 3
+    - 5
+    allocated: 3
+  - name: Surface Water Resources and Hydrology
+    spec_range:
+    - 9
+    - 14
+    allocated: 10
+  - name: Groundwater, Soils, and Sediments
+    spec_range:
+    - 8
+    - 12
+    allocated: 9
+  - name: Water and Wastewater
+    spec_range:
+    - 12
+    - 18
+    allocated: 14
+  - name: Air Quality and Control
+    spec_range:
+    - 8
+    - 12
+    allocated: 9
+  - name: Solid and Hazardous Waste
+    spec_range:
+    - 7
+    - 11
+    allocated: 8
+  - name: Energy and Environment
+    spec_range:
+    - 4
+    - 6
+    allocated: 4
+- discipline: environmental
+  exam: B
+  exam_type: practice-B
+  total_questions: 110
+  appointment_minutes: 355
+  working_time_minutes: 320
+  areas:
+  - name: Mathematics
+    spec_range:
+    - 5
+    - 8
+    allocated: 6
+  - name: Probability and Statistics
+    spec_range:
+    - 4
+    - 6
+    allocated: 4
+  - name: Ethics and Professional Practice
+    spec_range:
+    - 5
+    - 8
+    allocated: 5
+  - name: Engineering Economics
+    spec_range:
+    - 5
+    - 8
+    allocated: 6
+  - name: Fundamental Principles
+    spec_range:
+    - 7
+    - 11
+    allocated: 7
+  - name: Environmental Chemistry
+    spec_range:
+    - 7
+    - 11
+    allocated: 8
+  - name: Health Hazards and Risk Assessment
+    spec_range:
+    - 4
+    - 6
+    allocated: 5
+  - name: Fluid Mechanics and Hydraulics
+    spec_range:
+    - 12
+    - 18
+    allocated: 13
+  - name: Thermodynamics
+    spec_range:
+    - 3
+    - 5
+    allocated: 3
+  - name: Surface Water Resources and Hydrology
+    spec_range:
+    - 9
+    - 14
+    allocated: 11
+  - name: Groundwater, Soils, and Sediments
+    spec_range:
+    - 8
+    - 12
+    allocated: 8
+  - name: Water and Wastewater
+    spec_range:
+    - 12
+    - 18
+    allocated: 13
+  - name: Air Quality and Control
+    spec_range:
+    - 8
+    - 12
+    allocated: 10
+  - name: Solid and Hazardous Waste
+    spec_range:
+    - 7
+    - 11
+    allocated: 7
+  - name: Energy and Environment
+    spec_range:
+    - 4
+    - 6
+    allocated: 4
+- discipline: industrial-systems
+  exam: A
+  exam_type: practice-A
+  total_questions: 110
+  appointment_minutes: 355
+  working_time_minutes: 320
+  areas:
+  - name: Mathematics
+    spec_range:
+    - 6
+    - 9
+    allocated: 6
+  - name: Engineering Sciences
+    spec_range:
+    - 4
+    - 6
+    allocated: 4
+  - name: Ethics and Professional Practice
+    spec_range:
+    - 4
+    - 6
+    allocated: 4
+  - name: Engineering Economics
+    spec_range:
+    - 9
+    - 14
+    allocated: 10
+  - name: Probability and Statistics
+    spec_range:
+    - 10
+    - 15
+    allocated: 11
+  - name: Modeling and Quantitative Analysis
+    spec_range:
+    - 9
+    - 14
+    allocated: 10
+  - name: Engineering Management
+    spec_range:
+    - 8
+    - 12
+    allocated: 9
+  - name: Manufacturing, Service, and Other Production Systems
+    spec_range:
+    - 9
+    - 14
+    allocated: 10
+  - name: Facilities and Supply Chain
+    spec_range:
+    - 9
+    - 14
+    allocated: 10
+  - name: Human Factors, Ergonomics, and Safety
+    spec_range:
+    - 8
+    - 12
+    allocated: 9
+  - name: Work Design
+    spec_range:
+    - 7
+    - 11
+    allocated: 8
+  - name: Quality
+    spec_range:
+    - 9
+    - 14
+    allocated: 10
+  - name: Systems Engineering, Analysis, and Design
+    spec_range:
+    - 8
+    - 12
+    allocated: 9
+- discipline: industrial-systems
+  exam: B
+  exam_type: practice-B
+  total_questions: 110
+  appointment_minutes: 355
+  working_time_minutes: 320
+  areas:
+  - name: Mathematics
+    spec_range:
+    - 6
+    - 9
+    allocated: 7
+  - name: Engineering Sciences
+    spec_range:
+    - 4
+    - 6
+    allocated: 4
+  - name: Ethics and Professional Practice
+    spec_range:
+    - 4
+    - 6
+    allocated: 4
+  - name: Engineering Economics
+    spec_range:
+    - 9
+    - 14
+    allocated: 10
+  - name: Probability and Statistics
+    spec_range:
+    - 10
+    - 15
+    allocated: 10
+  - name: Modeling and Quantitative Analysis
+    spec_range:
+    - 9
+    - 14
+    allocated: 10
+  - name: Engineering Management
+    spec_range:
+    - 8
+    - 12
+    allocated: 9
+  - name: Manufacturing, Service, and Other Production Systems
+    spec_range:
+    - 9
+    - 14
+    allocated: 9
+  - name: Facilities and Supply Chain
+    spec_range:
+    - 9
+    - 14
+    allocated: 10
+  - name: Human Factors, Ergonomics, and Safety
+    spec_range:
+    - 8
+    - 12
+    allocated: 10
+  - name: Work Design
+    spec_range:
+    - 7
+    - 11
+    allocated: 7
+  - name: Quality
+    spec_range:
+    - 9
+    - 14
+    allocated: 10
+  - name: Systems Engineering, Analysis, and Design
+    spec_range:
+    - 8
+    - 12
+    allocated: 10
+- discipline: mechanical
+  exam: A
+  exam_type: practice-A
+  total_questions: 110
+  appointment_minutes: 355
+  working_time_minutes: 320
+  areas:
+  - name: Mathematics
+    spec_range:
+    - 6
+    - 9
+    allocated: 6
+  - name: Probability and Statistics
+    spec_range:
+    - 4
+    - 6
+    allocated: 4
+  - name: Ethics and Professional Practice
+    spec_range:
+    - 4
+    - 6
+    allocated: 5
+  - name: Engineering Economics
+    spec_range:
+    - 4
+    - 6
+    allocated: 5
+  - name: Electricity and Magnetism
+    spec_range:
+    - 5
+    - 8
+    allocated: 5
+  - name: Statics
+    spec_range:
+    - 9
+    - 14
+    allocated: 10
+  - name: Dynamics, Kinematics, and Vibrations
+    spec_range:
+    - 10
+    - 15
+    allocated: 11
+  - name: Mechanics of Materials
+    spec_range:
+    - 9
+    - 14
+    allocated: 10
+  - name: Material Properties and Processing
+    spec_range:
+    - 7
+    - 11
+    allocated: 8
+  - name: Fluid Mechanics
+    spec_range:
+    - 10
+    - 15
+    allocated: 11
+  - name: Thermodynamics
+    spec_range:
+    - 10
+    - 15
+    allocated: 11
+  - name: Heat Transfer
+    spec_range:
+    - 7
+    - 11
+    allocated: 8
+  - name: Measurements, Instrumentation, and Controls
+    spec_range:
+    - 5
+    - 8
+    allocated: 5
+  - name: Mechanical Design and Analysis
+    spec_range:
+    - 10
+    - 15
+    allocated: 11
+- discipline: mechanical
+  exam: B
+  exam_type: practice-B
+  total_questions: 110
+  appointment_minutes: 355
+  working_time_minutes: 320
+  areas:
+  - name: Mathematics
+    spec_range:
+    - 6
+    - 9
+    allocated: 7
+  - name: Probability and Statistics
+    spec_range:
+    - 4
+    - 6
+    allocated: 4
+  - name: Ethics and Professional Practice
+    spec_range:
+    - 4
+    - 6
+    allocated: 4
+  - name: Engineering Economics
+    spec_range:
+    - 4
+    - 6
+    allocated: 5
+  - name: Electricity and Magnetism
+    spec_range:
+    - 5
+    - 8
+    allocated: 5
+  - name: Statics
+    spec_range:
+    - 9
+    - 14
+    allocated: 10
+  - name: Dynamics, Kinematics, and Vibrations
+    spec_range:
+    - 10
+    - 15
+    allocated: 12
+  - name: Mechanics of Materials
+    spec_range:
+    - 9
+    - 14
+    allocated: 9
+  - name: Material Properties and Processing
+    spec_range:
+    - 7
+    - 11
+    allocated: 8
+  - name: Fluid Mechanics
+    spec_range:
+    - 10
+    - 15
+    allocated: 12
+  - name: Thermodynamics
+    spec_range:
+    - 10
+    - 15
+    allocated: 10
+  - name: Heat Transfer
+    spec_range:
+    - 7
+    - 11
+    allocated: 8
+  - name: Measurements, Instrumentation, and Controls
+    spec_range:
+    - 5
+    - 8
+    allocated: 6
+  - name: Mechanical Design and Analysis
+    spec_range:
+    - 10
+    - 15
+    allocated: 10
+- discipline: other-disciplines
+  exam: A
+  exam_type: practice-A
+  total_questions: 110
+  appointment_minutes: 355
+  working_time_minutes: 320
+  areas:
+  - name: Mathematics
+    spec_range:
+    - 8
+    - 12
+    allocated: 9
+  - name: Probability and Statistics
+    spec_range:
+    - 6
+    - 9
+    allocated: 6
+  - name: Chemistry
+    spec_range:
+    - 5
+    - 8
+    allocated: 5
+  - name: Instrumentation and Controls
+    spec_range:
+    - 4
+    - 6
+    allocated: 5
+  - name: Engineering Ethics and Societal Impacts
+    spec_range:
+    - 5
+    - 8
+    allocated: 5
+  - name: Safety, Health, and Environment
+    spec_range:
+    - 6
+    - 9
+    allocated: 6
+  - name: Engineering Economics
+    spec_range:
+    - 6
+    - 9
+    allocated: 6
+  - name: Statics
+    spec_range:
+    - 9
+    - 14
+    allocated: 10
+  - name: Dynamics
+    spec_range:
+    - 9
+    - 14
+    allocated: 10
+  - name: Strength of Materials
+    spec_range:
+    - 9
+    - 14
+    allocated: 10
+  - name: Materials
+    spec_range:
+    - 6
+    - 9
+    allocated: 7
+  - name: Fluid Mechanics
+    spec_range:
+    - 12
+    - 18
+    allocated: 14
+  - name: Basic Electrical Engineering
+    spec_range:
+    - 6
+    - 9
+    allocated: 7
+  - name: Thermodynamics and Heat Transfer
+    spec_range:
+    - 9
+    - 14
+    allocated: 10
+- discipline: other-disciplines
+  exam: B
+  exam_type: practice-B
+  total_questions: 110
+  appointment_minutes: 355
+  working_time_minutes: 320
+  areas:
+  - name: Mathematics
+    spec_range:
+    - 8
+    - 12
+    allocated: 10
+  - name: Probability and Statistics
+    spec_range:
+    - 6
+    - 9
+    allocated: 6
+  - name: Chemistry
+    spec_range:
+    - 5
+    - 8
+    allocated: 5
+  - name: Instrumentation and Controls
+    spec_range:
+    - 4
+    - 6
+    allocated: 5
+  - name: Engineering Ethics and Societal Impacts
+    spec_range:
+    - 5
+    - 8
+    allocated: 5
+  - name: Safety, Health, and Environment
+    spec_range:
+    - 6
+    - 9
+    allocated: 6
+  - name: Engineering Economics
+    spec_range:
+    - 6
+    - 9
+    allocated: 7
+  - name: Statics
+    spec_range:
+    - 9
+    - 14
+    allocated: 9
+  - name: Dynamics
+    spec_range:
+    - 9
+    - 14
+    allocated: 10
+  - name: Strength of Materials
+    spec_range:
+    - 9
+    - 14
+    allocated: 11
+  - name: Materials
+    spec_range:
+    - 6
+    - 9
+    allocated: 6
+  - name: Fluid Mechanics
+    spec_range:
+    - 12
+    - 18
+    allocated: 14
+  - name: Basic Electrical Engineering
+    spec_range:
+    - 6
+    - 9
+    allocated: 7
+  - name: Thermodynamics and Heat Transfer
+    spec_range:
+    - 9
+    - 14
+    allocated: 9

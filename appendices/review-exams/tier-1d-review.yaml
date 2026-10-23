@@ -1,0 +1,392 @@
+schema_version: 1
+exam_type: tier-review
+discipline: shared
+tier: 1D
+covers_through_chapter: 01-41
+question_count: 38
+time_limit_minutes: 76
+source_basis: Existing chapter review banks; 01-21 items are derived directly from the chapter body because the available
+  Library snapshot lacks its answer key.
+items:
+- id: T1D-Q001
+  source_chapter: 01-30
+  source_question: 15
+  source_category: calculation
+  requires_concepts:
+  - MATH-1D-030-02
+  prompt: Using $R(1.5)=0.0668$, find $P(|Z|>1.5)$.
+  solution: $P(|Z|>1.5)=2(0.0668)=\boxed{0.1336}$.
+- id: T1D-Q002
+  source_chapter: 01-40
+  source_question: 17
+  source_category: calculation
+  requires_concepts:
+  - MATH-1D-040-01
+  prompt: Using Question 16, with $LSL=19.5$, $USL=20.5$, and $\mu=20.1$, find $C_p$ and $C_{pk}$.
+  solution: "Use\n\n    $$\n    \\hat\\sigma\\approx0.08598.\n    $$\n\n    Then\n\n    $$\n    C_p\n    =\n    \\frac{1.0}{6(0.08598)}\n\
+    \    \\approx\n    \\boxed{1.938}.\n    $$\n\n    Lower side:\n\n    $$\n    C_{pl}\n    =\n    \\frac{20.1-19.5}{3(0.08598)}\n\
+    \    \\approx\n    2.326.\n    $$\n\n    Upper side:\n\n    $$\n    C_{pu}\n    =\n    \\frac{20.5-20.1}{3(0.08598)}\n\
+    \    \\approx\n    1.551.\n    $$\n\n    Therefore\n\n    $$\n    \\boxed{C_{pk}\\approx1.551}.\n    $$\n\n18.\n\n   \
+    \ $$\n    C_{pu}\n    =\n    \\frac{12-9}{3(0.5)}\n    =\n    \\frac3{1.5}\n    =\n    \\boxed2.\n    $$"
+- id: T1D-Q003
+  source_chapter: 01-35
+  source_question: 19
+  source_category: calculation
+  requires_concepts:
+  - MATH-1D-035-05
+  prompt: A regression has $\hat b=3.0$, $S_e=2.0$, $S_{xx}=25$, and $n=12$. Using $t_{0.025,10}=2.228$, find a 95% confidence
+    interval for the slope.
+  solution: "Slope standard error:\n\n    $$\n    SE_{\\hat b}\n    =\n    \\frac{2}{\\sqrt{25}}\n    =\n    0.4.\n    $$\n\
+    \n    Margin:\n\n    $$\n    2.228(0.4)\n    =\n    0.8912.\n    $$\n\n    Interval:\n\n    $$\n    3.0\\pm0.8912,\n \
+    \   $$\n\n    so\n\n    $$\n    \\boxed{\n    2.109<b<3.891.\n    }\n    $$\n\n### Multiple Choice"
+- id: T1D-Q004
+  source_chapter: 01-33
+  source_question: 5
+  source_category: conceptual
+  requires_concepts:
+  - MATH-1D-033-03
+  prompt: What does the significance level $\alpha$ control?
+  solution: "$\\alpha$ controls the designed probability of rejecting a true null\n   hypothesis—the Type I error probability.\
+    \ (§33.2)"
+- id: T1D-Q005
+  source_chapter: 01-32
+  source_question: 5
+  source_category: conceptual
+  requires_concepts:
+  - MATH-1D-032-03
+  prompt: Why does an unknown population $\sigma$ lead to a $t$ interval?
+  solution: "Replacing fixed $\\sigma$ with random sample $s$ adds uncertainty. Student's\n   $t$ accounts for that uncertainty\
+    \ using degrees of freedom. (§32.3)"
+- id: T1D-Q006
+  source_chapter: 01-32
+  source_question: 24
+  source_category: multiple-choice
+  requires_concepts:
+  - MATH-1D-032-02
+  prompt: "Increasing confidence level while holding sample data fixed generally:\nA) narrows the interval  \nB) widens the\
+    \ interval  \nC) leaves width unchanged  \nD) sets margin of error to zero."
+  solution: "**B.** Greater confidence requires more central sampling-distribution area,\n    which pushes critical values\
+    \ farther into the tails. (§32.2–32.3)"
+- id: T1D-Q007
+  source_chapter: 01-34
+  source_question: 24
+  source_category: multiple-choice
+  requires_concepts:
+  - MATH-1D-034-04
+  prompt: 'A randomized complete block design adds which modeled source?
+
+    A) block variation  B) only interaction  C) regression slope  D) covariance only.'
+  solution: '**A.** Blocking adds a modeled nuisance source. (§34.4)'
+- id: T1D-Q008
+  source_chapter: 01-29
+  source_question: 24
+  source_category: multiple-choice
+  requires_concepts:
+  - MATH-1D-029-05
+  prompt: "Variance may be computed as:\nA) $E[X^2]-E[X]^2$  \nB) $E[X^2]+E[X]^2$  \nC) $\\sqrt{E[X]}$  \nD) $1-E[X]$."
+  solution: '**A.** $V[X]=E[X^2]-E[X]^2$. (§29.5)'
+- id: T1D-Q009
+  source_chapter: 01-29
+  source_question: 14
+  source_category: calculation
+  requires_concepts:
+  - MATH-1D-029-03
+  prompt: Using the same density, find $P(X=2)$.
+  solution: "Continuous point probability:\n\n    $$\\boxed{P(X=2)=0}.$$\n\n15.\n\n    $$E[X]\n    =0(0.2)+1(0.5)+2(0.3)\n\
+    \    =0.5+0.6\n    =\\boxed{1.1}.$$\n\n16.\n\n    $$E[X^2]\n    =0^2(0.2)+1^2(0.5)+2^2(0.3)\n    =0.5+1.2\n    =\\boxed{1.7}.$$\n\
+    \n    Therefore\n\n    $$V[X]\n    =1.7-(1.1)^2\n    =1.7-1.21\n    =\\boxed{0.49}.$$\n\n17.\n\n    $$E[Y]\n    =2(5)-8\n\
+    \    =\\boxed{2}.$$\n\n    Because the variables are independent,\n\n    $$V[Y]\n    =2^2(2^2)+(-1)^2(3^2)\n    =16+9\n\
+    \    =\\boxed{25}.$$\n\n18.\n\n    $$\\mu=np=6(0.20)=\\boxed{1.20}.$$\n\n    With $q=0.80$,\n\n    $$\\sigma^2=npq\n \
+    \   =6(0.20)(0.80)\n    =\\boxed{0.96}.$$\n\n19.\n\n    $$P(X=0)\n    =\\binom60(0.20)^0(0.80)^6\n    =(0.80)^6\n    =\\\
+    boxed{0.262144}.$$\n\n### Multiple Choice"
+- id: T1D-Q010
+  source_chapter: 01-31
+  source_question: 15
+  source_category: calculation
+  requires_concepts:
+  - MATH-1D-031-04
+  prompt: For $\nu=9$, the Handbook gives $t_{0.05,9}=1.833$. What upper-tail probability is associated with $t=1.833$?
+  solution: "By definition,\n\n    $$\n    P(T>1.833)\n    =\n    \\boxed{0.05}\n    $$\n\n    for $\\nu=9$."
+- id: T1D-Q011
+  source_chapter: 01-34
+  source_question: 15
+  source_category: calculation
+  requires_concepts:
+  - MATH-1D-034-04
+  prompt: In a complete block design with $k=4$ treatments and $b=5$ blocks, find treatment, block, error, and total df.
+  solution: "Treatment df:\n\n    $$\n    4-1=\\boxed{3}.\n    $$\n\n    Block df:\n\n    $$\n    5-1=\\boxed{4}.\n    $$\n\
+    \n    Error df:\n\n    $$\n    (4-1)(5-1)\n    =\n    3(4)\n    =\n    \\boxed{12}.\n    $$\n\n    Total df:\n\n    $$\n\
+    \    4(5)-1\n    =\n    \\boxed{19}.\n    $$\n\n16.\n\n    $$\n    SS_{\\text{error}}\n    =\n    90-30-40\n    =\n  \
+    \  \\boxed{20}.\n    $$\n\n17.\n\n    $$\n    df_A=a-1=2,\n    $$\n\n    $$\n    df_B=b-1=1,\n    $$\n\n    $$\n    df_{AB}=(a-1)(b-1)=2,\n\
+    \    $$\n\n    $$\n    df_E=ab(n-1)\n    =(3)(2)(3)\n    =\n    18,\n    $$\n\n    $$\n    df_{\\text{total}}\n    =abn-1\n\
+    \    =24-1\n    =\n    23.\n    $$\n\n    Therefore\n\n    $$\n    \\boxed{2,\\ 1,\\ 2,\\ 18,\\ 23}.\n    $$\n\n18.\n\n\
+    \    $$\n    F_A\n    =\n    \\frac{18}{3}\n    =\n    \\boxed{6}.\n    $$"
+- id: T1D-Q012
+  source_chapter: 01-28
+  source_question: 14
+  source_category: calculation
+  requires_concepts:
+  - MATH-1D-028-02
+  prompt: From the same 8 candidates, how many two-person teams can be selected?
+  solution: "Team membership only:\n\n    $$C(8,2)=\\frac{8!}{2!6!}\n    =\\boxed{28}.$$\n\n15.\n\n    $$P(A\\cup B)=0.60+0.35-0.20\n\
+    \    =\\boxed{0.75}.$$\n\n16.\n\n    $$P(A\\cap B)=P(A)P(B\\mid A)\n    =(0.40)(0.25)\n    =\\boxed{0.10}.$$\n\n17.\n\n\
+    \    $$P(A\\mid B)\n    =\\frac{P(A\\cap B)}{P(B)}\n    =\\frac{0.12}{0.30}\n    =\\boxed{0.40}.$$"
+- id: T1D-Q013
+  source_chapter: 01-34
+  source_question: 5
+  source_category: conceptual
+  requires_concepts:
+  - MATH-1D-034-01
+  prompt: What problem is blocking intended to reduce?
+  solution: "Blocking isolates a known nuisance source so its variation does not remain\n   entirely inside the residual error\
+    \ term. (§34.1, §34.4)\n\n6.\n\n   $$\n   \\boxed{\n   H_0:\\mu_1=\\mu_2=\\cdots=\\mu_k.\n   }\n   $$\n\n   (§34.2)"
+- id: T1D-Q014
+  source_chapter: 01-31
+  source_question: 24
+  source_category: multiple-choice
+  requires_concepts:
+  - MATH-1D-031-03
+  prompt: "As $\\nu$ increases, Student's $t$:\nA) becomes more skewed  \nB) approaches the standard normal  \nC) becomes\
+    \ nonnegative only  \nD) loses symmetry."
+  solution: "**B.** The $t$ distribution approaches standard normal as degrees of freedom\n    increase. (§31.3)"
+- id: T1D-Q015
+  source_chapter: 01-35
+  source_question: 24
+  source_category: multiple-choice
+  requires_concepts:
+  - MATH-1D-035-07
+  prompt: "$R=-0.95$ indicates:\nA) strong positive linear association  \nB) strong negative linear association  \nC) no association\
+    \ of any kind  \nD) causation."
+  solution: "**B.** Magnitude near 1 with negative sign indicates strong negative linear\n    association. (§35.4)"
+- id: T1D-Q016
+  source_chapter: 01-33
+  source_question: 24
+  source_category: multiple-choice
+  requires_concepts:
+  - MATH-1D-033-03
+  prompt: 'Mean test with known population $\sigma$ uses:
+
+    A) $z$  B) $t$  C) $\chi^2$  D) $F$.'
+  solution: "**A.** Known population $\\sigma$ gives the standard-normal $z$ statistic.\n    (§33.3)"
+- id: T1D-Q017
+  source_chapter: 01-30
+  source_question: 24
+  source_category: multiple-choice
+  requires_concepts:
+  - MATH-1D-030-03
+  prompt: 'A one-sided upper 5% threshold uses approximately:
+
+    A) $z=0$  B) $z=1.0000$  C) $z=1.6449$  D) $z=1.9600$.'
+  solution: '**C.** The 95th percentile has left area 0.95 and $z=1.6449$. (§30.5)'
+- id: T1D-Q018
+  source_chapter: 01-41
+  source_question: 24
+  source_category: multiple-choice
+  requires_concepts:
+  - MATH-1D-041-05
+  prompt: "Producer's risk is associated with:\nA) rejecting a stated relatively good lot  \nB) accepting a stated poor lot\
+    \  \nC) process capability only  \nD) control-chart UCL only."
+  solution: "**A.** Producer's risk is rejection at the stated good-quality design point.\n    (§41.5)"
+- id: T1D-Q019
+  source_chapter: 01-38
+  source_question: 24
+  source_category: multiple-choice
+  requires_concepts:
+  - MATH-1D-038-05
+  prompt: "The variance of a uniform distribution on $[a,b]$ is:\nA) $(b-a)^2/12$  \nB) $(a+b)/2$  \nC) $\\beta^2$  \nD) $\\\
+    lambda$."
+  solution: '**A.** Uniform variance is $(b-a)^2/12$. (§38.5)'
+- id: T1D-Q020
+  source_chapter: 01-39
+  source_question: 24
+  source_category: multiple-choice
+  requires_concepts:
+  - MATH-1D-039-06
+  prompt: "Which sequence triggers a Handbook rule even when all points are inside the three-sigma limits?\nA) eight successive\
+    \ points on one side of center  \nB) two points total anywhere  \nC) one point exactly on center  \nD) alternating points."
+  solution: "**A.** Eight successive points on one side of the center line trigger the\n    fourth Handbook rule. (§39.6)"
+- id: T1D-Q021
+  source_chapter: 01-37
+  source_question: 24
+  source_category: multiple-choice
+  requires_concepts:
+  - MATH-1D-037-06
+  prompt: "EVPI is:\nA) always negative  \nB) the value improvement available from perfect state information under the model\
+    \  \nC) the largest single payoff  \nD) the probability of the best outcome."
+  solution: "**B.** EVPI is the expected-value improvement from knowing the state before\n    choosing. (§37.6)"
+- id: T1D-Q022
+  source_chapter: 01-28
+  source_question: 24
+  source_category: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-05
+  prompt: "If $A$ and $B$ are independent:\nA) $P(A\\cap B)=P(A)P(B)$  \nB) $P(A\\cup B)=0$  \nC) $P(A\\mid B)=0$  \nD) they\
+    \ cannot occur together."
+  solution: "**A.** Independence gives\n    $P(A\\cap B)=P(A)P(B)$. (§28.5)"
+- id: T1D-Q023
+  source_chapter: 01-35
+  source_question: 5
+  source_category: conceptual
+  requires_concepts:
+  - MATH-1D-035-01
+  prompt: What are the units of a regression slope?
+  solution: Response units divided by predictor units. (§35.1)
+- id: T1D-Q024
+  source_chapter: 01-37
+  source_question: 6
+  source_category: conceptual
+  requires_concepts:
+  - MATH-1D-037-02
+  prompt: Distinguish expected loss from opportunity loss.
+  solution: "Expected loss averages actual losses. Opportunity loss measures the shortfall\n   from the best decision that\
+    \ could have been chosen for the realized state.\n   (§37.2)"
+- id: T1D-Q025
+  source_chapter: 01-39
+  source_question: 19
+  source_category: calculation
+  requires_concepts:
+  - MATH-1D-039-03
+  prompt: A chart has $CL=50$ and $UCL=56$. Find the upper one-sigma and two-sigma zone boundaries.
+  solution: "Three-sigma distance:\n\n    $$\n    d=56-50=6.\n    $$\n\n    One-sigma upper boundary:\n\n    $$\n    50+\\\
+    frac63\n    =\n    \\boxed{52}.\n    $$\n\n    Two-sigma upper boundary:\n\n    $$\n    50+\\frac{2(6)}3\n    =\n    \\\
+    boxed{54}.\n    $$\n\n### Multiple Choice"
+- id: T1D-Q026
+  source_chapter: 01-30
+  source_question: 5
+  source_category: conceptual
+  requires_concepts:
+  - MATH-1D-030-01
+  prompt: Why is $P(Z<-1.5)=P(Z>1.5)$?
+  solution: The standard normal distribution is symmetric about zero, so mirror-image tails have equal area. (§30.4)
+- id: T1D-Q027
+  source_chapter: 01-36
+  source_question: 24
+  source_category: multiple-choice
+  requires_concepts:
+  - MATH-1D-036-02
+  prompt: "Worst-case bounded contributions are commonly combined by:\nA) sum of magnitudes  \nB) multiplying standard deviations\
+    \  \nC) taking their average  \nD) ignoring the largest."
+  solution: '**A.** Worst-case first-order bounds use the sum of magnitudes. (§36.4)'
+- id: T1D-Q028
+  source_chapter: 01-28
+  source_question: 5
+  source_category: conceptual
+  requires_concepts:
+  - MATH-1D-028-01
+  prompt: State De Morgan's two event laws in words.
+  solution: "Not(A or B) means not A **and** not B. Not(A and B) means not A **or**\n   not B. (§28.3)"
+- id: T1D-Q029
+  source_chapter: 01-36
+  source_question: 5
+  source_category: conceptual
+  requires_concepts:
+  - MATH-1D-036-01
+  prompt: Why do sensitivity-weighted uncertainty contributions have output units?
+  solution: "$c_i$ has output-units/input-units, so multiplying by an input uncertainty\n   produces output units. (§36.2)"
+- id: T1D-Q030
+  source_chapter: 01-38
+  source_question: 10
+  source_category: conceptual
+  requires_concepts:
+  - MATH-1D-038-01
+  prompt: Why should distribution selection begin with the experiment rather than the equation?
+  solution: "Different formulas represent different data-generation assumptions. A\n    physically invalid assumption cannot\
+    \ be repaired by correct arithmetic.\n    (§38.1)\n\n### Calculation\n\n11.\n\n    $$\n    \\mu\n    =\n    \\frac{nr}{N}\n\
+    \    =\n    \\frac{(5)(6)}{30}\n    =\n    \\boxed1.\n    $$\n\n12.\n\n    $$\n    \\sigma^2\n    =\n    n\n    \\left(\\\
+    frac rN\\right)\n    \\left(1-\\frac rN\\right)\n    \\frac{N-n}{N-1}\n    $$\n\n    $$\n    =\n    5(0.2)(0.8)\\frac{25}{29}\n\
+    \    $$\n\n    $$\n    \\approx\n    \\boxed{0.6897}.\n    $$\n\n13.\n\n    $$\n    P(X=0)\n    =\n    e^{-4}\n    \\\
+    approx\n    \\boxed{0.01832}.\n    $$\n\n14.\n\n    $$\n    P(X\\ge1)\n    =\n    1-e^{-4}\n    $$\n\n    $$\n    \\approx\n\
+    \    \\boxed{0.98168}.\n    $$\n\n15.\n\n    $$\n    \\mu\n    =\n    \\frac1{0.25}\n    =\n    \\boxed4.\n    $$\n\n\
+    \    $$\n    \\sigma^2\n    =\n    \\frac{1-0.25}{0.25^2}\n    =\n    \\frac{0.75}{0.0625}\n    =\n    \\boxed{12}.\n\
+    \    $$\n\n16.\n\n    $$\n    \\mu\n    =\n    \\frac rp\n    =\n    \\frac3{0.40}\n    =\n    \\boxed{7.5}.\n    $$\n\
+    \n17.\n\n    $$\n    \\mu\n    =\n    \\frac{2+10}{2}\n    =\n    \\boxed6.\n    $$\n\n    $$\n    \\sigma^2\n    =\n\
+    \    \\frac{(10-2)^2}{12}\n    =\n    \\frac{64}{12}\n    =\n    \\boxed{5.3333}.\n    $$\n\n18.\n\n    $$\n    P(X>300)\n\
+    \    =\n    e^{-300/200}\n    =\n    e^{-1.5}\n    $$\n\n    $$\n    \\approx\n    \\boxed{0.2231}.\n    $$\n\n19.\n\n\
+    \    $$\n    \\mu\n    =\n    \\frac{2+5+8}{3}\n    =\n    \\boxed5.\n    $$\n\n### Multiple Choice"
+- id: T1D-Q031
+  source_chapter: 01-32
+  source_question: 17
+  source_category: calculation
+  requires_concepts:
+  - MATH-1D-032-01
+  prompt: Using Question 16 and $z_{0.025}=1.96$, construct the 95% confidence interval for $\mu_1-\mu_2$.
+  solution: "Point estimate:\n\n    $$\n    30-26=4.\n    $$\n\n    Margin:\n\n    $$\n    E\n    =\n    1.96(1.2806)\n  \
+    \  \\approx\n    2.510.\n    $$\n\n    Therefore\n\n    $$\n    \\boxed{\n    1.49<\\mu_1-\\mu_2<6.51.\n    }\n    $$"
+- id: T1D-Q032
+  source_chapter: 01-33
+  source_question: 14
+  source_category: calculation
+  requires_concepts:
+  - MATH-1D-033-03
+  prompt: For Question 13, use $\alpha=0.05$ and a two-sided critical value 1.96. State the decision.
+  solution: "For a two-sided 5% test:\n\n    $$\n    |Z_0|=2.00>1.96.\n    $$\n\n    Therefore\n\n    $$\n    \\boxed{\\text{reject\
+    \ }H_0.}\n    $$\n\n15.\n\n    $$\n    t_0\n    =\n    \\frac{21.5-20}{3/\\sqrt9}\n    =\n    \\frac{1.5}{1}\n    =\n\
+    \    \\boxed{1.50}.\n    $$\n\n    Degrees of freedom:\n\n    $$\n    \\boxed{\\nu=8}.\n    $$\n\n16.\n\n    $$\n    |1.50|<2.306.\n\
+    \    $$\n\n    Therefore\n\n    $$\n    \\boxed{\\text{fail to reject }H_0.}\n    $$\n\n17.\n\n    $$\n    \\boxed{p=0.0359}.\n\
+    \    $$\n\n    Since\n\n    $$\n    0.0359<0.05,\n    $$\n\n    $$\n    \\boxed{\\text{reject }H_0.}\n    $$\n\n18.\n\n\
+    \    $$\n    \\chi_0^2\n    =\n    \\frac{(12-1)(25)}{16}\n    =\n    \\frac{275}{16}\n    =\n    \\boxed{17.1875}.\n\
+    \    $$\n\n19.\n\n    $$\n    F_0\n    =\n    \\frac{18}{6}\n    =\n    \\boxed{3.00}.\n    $$\n\n### Multiple Choice"
+- id: T1D-Q033
+  source_chapter: 01-29
+  source_question: 5
+  source_category: conceptual
+  requires_concepts:
+  - MATH-1D-029-01
+  prompt: Why is $P(X=a)=0$ for a continuous random variable?
+  solution: "A single point has zero width and therefore zero area under a continuous\n   density. (§29.3)"
+- id: T1D-Q034
+  source_chapter: 01-36
+  source_question: 12
+  source_category: calculation
+  requires_concepts:
+  - MATH-1D-036-07
+  prompt: For $y=4x_1+3x_2$, with uncorrelated $u_{x_1}=0.20$ and $u_{x_2}=0.10$, find $u_y$.
+  solution: "Sensitivities:\n\n    $$\n    c_1=4,\\qquad c_2=3.\n    $$\n\n    Therefore\n\n    $$\n    u_y\n    =\n    \\\
+    sqrt{\n    (4(0.20))^2+(3(0.10))^2\n    }\n    $$\n\n    $$\n    =\n    \\sqrt{0.64+0.09}\n    =\n    \\sqrt{0.73}\n \
+    \   \\approx\n    \\boxed{0.854}.\n    $$\n\n13.\n\n    $$\n    y=x^2=100.\n    $$\n\n    Relative standard uncertainty:\n\
+    \n    $$\n    \\frac{u_y}{y}\n    =\n    2\\frac{0.20}{10.0}\n    =\n    \\boxed{0.040=4.0\\%}.\n    $$\n\n    Absolute:\n\
+    \n    $$\n    u_y\n    =\n    0.04(100)\n    =\n    \\boxed4.\n    $$\n\n14.\n\n    $$\n    \\frac{u_y}{y}\n    =\n  \
+    \  \\sqrt{\n    (0.02)^2+(0.03)^2\n    }\n    $$\n\n    $$\n    =\n    \\sqrt{0.0013}\n    \\approx\n    \\boxed{0.0361=3.61\\\
+    %}.\n    $$\n\n15.\n\n    $$\n    u\n    =\n    \\sqrt{6^2+8^2}\n    =\n    \\sqrt{100}\n    =\n    \\boxed{10}.\n   \
+    \ $$\n\n16.\n\n    $$\n    \\Delta_{\\text{worst}}\n    =\n    6+8\n    =\n    \\boxed{14}.\n    $$\n\n17.\n\n    $$\n\
+    \    U\n    =\n    ku\n    =\n    2(0.45)\n    =\n    \\boxed{0.90\\text{ mm}}.\n    $$\n\n18.\n\n    $$\n    s_{\\bar\
+    \ x}\n    =\n    \\frac{1.2}{\\sqrt{36}}\n    =\n    \\frac{1.2}{6}\n    =\n    \\boxed{0.20}.\n    $$"
+- id: T1D-Q035
+  source_chapter: 01-40
+  source_question: 24
+  source_category: multiple-choice
+  requires_concepts:
+  - MATH-1D-040-01
+  prompt: "$C_p<1$ means:\nA) the six-sigma process spread is wider than the specification width  \nB) the process is automatically\
+    \ unstable  \nC) every unit is defective  \nD) the process mean equals the midpoint."
+  solution: "**A.** The process six-sigma spread is wider than the specification width.\n    (§40.2)"
+- id: T1D-Q036
+  source_chapter: 01-37
+  source_question: 18
+  source_category: calculation
+  requires_concepts:
+  - MATH-1D-037-06
+  prompt: A decision gives certain value 55. Another gives 0.5 probability of 90 and 0.5 probability of 30. Which has higher
+    expected value?
+  solution: "Certain alternative:\n\n    $$\n    EV_A=55.\n    $$\n\n    Uncertain alternative:\n\n    $$\n    EV_B\n    =\n\
+    \    0.5(90)+0.5(30)\n    =\n    45+15\n    =\n    60.\n    $$\n\n    Thus\n\n    $$\n    \\boxed{\\text{the uncertain\
+    \ alternative has higher EV}.}\n    $$"
+- id: T1D-Q037
+  source_chapter: 01-41
+  source_question: 16
+  source_category: calculation
+  requires_concepts:
+  - MATH-1D-041-03
+  prompt: Evaluate the hypergeometric probability in Question 15.
+  solution: "Numerically,\n\n    $$\n    P_a\n    =\n    \\boxed{0.7513\\text{ approximately}}.\n    $$\n\n17.\n\n    $$\\\
+    alpha=1-0.95=\\boxed{0.05}.$$ Thus the producer’s risk is five percent for the stated acceptance probability.\n\n18.\n\
+    \n    $$\\beta=\\boxed{0.08}.$$ Thus the consumer’s risk is eight percent at the stated poor-quality lot condition."
+- id: T1D-Q038
+  source_chapter: 01-31
+  source_question: 5
+  source_category: conceptual
+  requires_concepts:
+  - MATH-1D-031-03
+  prompt: Why does replacing $\sigma$ with $s$ change the standard normal statistic into a $t$ statistic?
+  solution: "$s$ is itself random. Its uncertainty makes the standardized sample mean more\n   variable than when the true\
+    \ population $\\sigma$ is known; Student's $t$\n   captures that extra uncertainty. (§31.3)"

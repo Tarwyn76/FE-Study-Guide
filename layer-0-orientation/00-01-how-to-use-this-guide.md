@@ -376,7 +376,7 @@ something valuable for the cost of fifteen minutes.
 Use these. Especially in Layer 1. If you've got recent calculus, testing out
 of Tier 1C saves you ten chapters and about three weeks.
 
-**Tier review exams.** Twelve of them, one per tier, at the end of the tier.
+**Tier review exams.** Ten of them, one per tier, at the end of the tier.
 Twenty to forty-five questions, timed. Every question maps back to the
 chapter it came from, so a wrong answer isn't a vague instruction to study
 harder — it's a specific chapter to reread.
@@ -384,8 +384,7 @@ harder — it's a specific chapter to reread.
 Take these seriously. A tier review is the last checkpoint before that
 material becomes the foundation for something else. Weak spots here compound.
 
-**Full practice exams.** Two per discipline, fourteen in all. 110 questions,
-six hours, built to the same blueprint proportions as the real exam. Each
+**Full practice exams.** Two per discipline, fourteen in all. Each contains 110 questions and uses the current NCEES FE timing model: 5 hours 20 minutes of exam working time within a 5-hour-55-minute appointment. Each is built to the same knowledge-area blueprint ranges as the real exam. Each
 comes with a quick answer key, full worked solutions, a blueprint showing
 which knowledge area every question tested, and a scoring guide that turns
 your results into a reading list.
@@ -517,7 +516,7 @@ you.
 | Illustrative mention | A name used purely as an example of a category, which nothing in the chapter depends on |
 | Test-out quiz | A short diagnostic at the front of a tier; passing lets you skip the tier |
 | Tier review exam | A timed exam at the end of a tier, mapped back to source chapters |
-| Practice exam | A full 110-question, six-hour simulation; two per discipline |
+| Practice exam | A full 110-question simulation using the current NCEES FE timing model; two per discipline |
 | Version A / Version B | Diagnostic and simulation forms of the practice exam |
 | Forward reference | Use of a concept before the chapter that teaches it; prohibited and machine-checked |
 

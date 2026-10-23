@@ -88,28 +88,29 @@ deliverable of the chapter.
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
-- **21.1** Derive the integration-by-parts formula from the product rule
-- **21.2** Choose $u$ and $dv$ effectively and apply integration by parts
-- **21.3** Apply integration by parts repeatedly, and resolve the cyclic case
+
+* 21.1 Derive the integration-by-parts formula from the product rule
+* 21.2 Choose $u$ and $dv$ effectively and apply integration by parts
+* 21.3 Apply integration by parts repeatedly, and resolve the cyclic case
   algebraically
-- **21.4** Apply integration by parts to a definite integral, including the boundary
+* 21.4 Apply integration by parts to a definite integral, including the boundary
   term
-- **21.5** Integrate odd and even powers of sine and cosine using the appropriate
+* 21.5 Integrate odd and even powers of sine and cosine using the appropriate
   identity
-- **21.6** Select the correct trigonometric substitution for $\sqrt{a^2-x^2}$,
+* 21.6 Select the correct trigonometric substitution for $\sqrt{a^2-x^2}$,
   $\sqrt{a^2+x^2}$, and $\sqrt{x^2-a^2}$
-- **21.7** Use a reference triangle to convert a result back to the original
+* 21.7 Use a reference triangle to convert a result back to the original
   variable
-- **21.8** Decompose a proper rational function into partial fractions for distinct
+* 21.8 Decompose a proper rational function into partial fractions for distinct
   linear, repeated linear, and irreducible quadratic factors
-- **21.9** Reduce an improper rational function by polynomial division before
+* 21.9 Reduce an improper rational function by polynomial division before
   decomposing
-- **21.10** Evaluate improper integrals with infinite limits of integration and
+* 21.10 Evaluate improper integrals with infinite limits of integration and
   determine convergence
-- **21.11** Evaluate improper integrals with an infinite discontinuity in the
+* 21.11 Evaluate improper integrals with an infinite discontinuity in the
   integrand
-- **21.12** Apply the $p$-test for convergence
-- **21.13** Select an appropriate technique for an unfamiliar integral using a
+* 21.12 Apply the $p$-test for convergence
+* 21.13 Select an appropriate technique for an unfamiliar integral using a
   systematic strategy
 
 ---
@@ -965,7 +966,7 @@ interval? It is improper — write the limit.
 
 **6. Differentiate your answer.** Always.
 
-![FIG-01-21-005: A vertical decision flowchart titled "which technique?". Starting box: "unfamiliar integral". Sequential decision diamonds, each with a "yes" branch exiting right to a labeled technique box and a "no" branch continuing down: "can algebra simplify it?" → simplify and restart; "is it in the table?" → look it up; "inner function with its derivative present?" → substitution; "product of unlike species?" → by parts; "powers of sin/cos?" → identities; "radical of a² ± x²?" → trig substitution; "rational function?" → partial fractions. The bottom box reads "no elementary antiderivative — use numerical methods (Ch 01-37)". A final box across the base, connected to every technique box by dashed lines, reads "differentiate your answer to verify".](../figures/FIG-01-21-005-integration-strategy.png)
+![FIG-01-21-005: A vertical decision flowchart titled "which technique?". Starting box: "unfamiliar integral". Sequential decision diamonds, each with a "yes" branch exiting right to a labeled technique box and a "no" branch continuing down: "can algebra simplify it?" → simplify and restart; "is it in the table?" → look it up; "inner function with its derivative present?" → substitution; "product of unlike species?" → by parts; "powers of sin/cos?" → identities; "radical of a² ± x²?" → trig substitution; "rational function?" → partial fractions. The bottom box reads "no elementary antiderivative — use numerical methods (Ch 01-26)". A final box across the base, connected to every technique box by dashed lines, reads "differentiate your answer to verify".](../figures/FIG-01-21-005-integration-strategy.png)
 
 > ---
 > **Mentor's Margin**
@@ -974,13 +975,13 @@ interval? It is improper — write the limit.
 >
 > **Most functions have no elementary antiderivative.** Not "are hard to
 > integrate" — have none, provably, no matter how clever you are. $e^{-x^2}$,
-> whose integral defines the normal distribution you will meet in Chapter 01-40.
+> whose integral defines the normal distribution you will meet in Chapter 01-30.
 > $\frac{\sin x}{x}$. $\sqrt{1+x^4}$, which is an ordinary arc length integrand.
 > These are not exotic; the first two are among the most important functions in
 > engineering.
 >
 > This is not a gap in your technique. It is a fact about the elementary
-> functions, and it is why numerical integration in Chapter 01-37 is not a
+> functions, and it is why numerical integration in Chapter 01-26 is not a
 > fallback for the lazy — it is the primary method for a large fraction of real
 > integrals, and the only method for some.
 >
@@ -1429,7 +1430,335 @@ be a numerical one.
 
 ---
 
-## Summary Card
+## Answer Key with Explanations
+
+**1.** From $d(uv)=u\,dv+v\,du$, integrate both sides:
+
+$$uv=\int u\,dv+\int v\,du,$$
+
+then rearrange:
+
+$$\boxed{\int u\,dv=uv-\int v\,du}.$$
+
+The $u$ factor is differentiated and the $dv$ factor is integrated. Choose
+them so the new integral is simpler.
+
+**2.** LIATE ranks functions by how much they tend to improve under
+differentiation. A logarithm becomes $1/x$, usually a large simplification;
+a polynomial merely drops in degree. Therefore the logarithm normally becomes
+$u$.
+
+**3.** The role assignment did not simplify the integral. Stop, reconsider
+$u$ and $dv$, and check whether another method should be used before applying
+parts again.
+
+**4.** A cyclic calculation works only if the original integral $I$ reappears.
+Keeping the same role pattern on the second pass makes that happen. Changing
+roles usually produces a different integral and prevents the algebraic closure.
+
+**5.** Treat $\ln x$ as $(\ln x)(1)$ and choose $u=\ln x$, $dv=dx$:
+
+$$\boxed{\int\ln x\,dx=x\ln x-x+C}.$$
+
+**6.** Peel one factor from the odd cosine power:
+
+$$\sin^4x\cos^3x=\sin^4x(1-\sin^2x)\cos x.$$
+
+Then use $u=\sin x$, $du=\cos x\,dx$.
+
+**7.** With $x=a\tan\theta$,
+
+$$a^2+x^2=a^2(1+\tan^2\theta)=a^2\sec^2\theta,$$
+
+so $\sqrt{a^2+x^2}=a\sec\theta$. The identity is
+$1+\tan^2\theta=\sec^2\theta$.
+
+**8.** The rational function must be proper; otherwise divide first. Its
+denominator must also be factored into real linear and irreducible quadratic
+factors before writing the decomposition.
+
+**9.** A repeated linear factor needs one term for each power through its
+multiplicity:
+
+$$
+\frac{A}{x-2}+\frac{B}{(x-2)^2}+\frac{C}{(x-2)^3}.
+$$
+
+Therefore $(x-2)^3$ requires three constants.
+
+**10.** Approaching zero does not guarantee convergence. By the $p$-test,
+$\int_1^\infty x^{-p}dx$ converges only for $p>1$. Thus $1/x$ diverges and
+$1/x^2$ converges.
+
+**11.** Infinity is not a number. An infinite endpoint represents a limiting
+process:
+
+$$
+\int_a^\infty f(x)\,dx
+=
+\lim_{b\to\infty}\int_a^b f(x)\,dx.
+$$
+
+The improper integral exists only if the limit is finite.
+
+**12.** The integrand is undefined at $x=0$, so the interval must be split:
+
+$$
+\int_{-1}^{1}\frac{dx}{x^2}
+=
+\lim_{a\to0^-}\int_{-1}^{a}\frac{dx}{x^2}
++
+\lim_{b\to0^+}\int_b^1\frac{dx}{x^2}.
+$$
+
+Both sides diverge to $+\infty$. The student's direct endpoint evaluation
+crossed a singularity, and the negative answer is impossible for a positive
+integrand.
+
+**13.** No elementary antiderivative means no finite combination of elementary
+functions differentiates to the integrand. Examples given in the chapter are
+$e^{-x^2}$ and $\sin x/x$.
+
+**14.**
+
+(a)
+$$\boxed{\int xe^{-3x}dx=-\frac{3x+1}{9}e^{-3x}+C}.$$
+
+(b)
+$$\boxed{\int x\cos x\,dx=x\sin x+\cos x+C}.$$
+
+(c)
+$$\boxed{\int x\ln x\,dx=\frac{x^2}{2}\ln x-\frac{x^2}{4}+C}.$$
+
+(d)
+$$\boxed{\int\arctan x\,dx=x\arctan x-\frac12\ln(1+x^2)+C}.$$
+
+**15.**
+
+(a)
+$$\boxed{\int x^2e^x\,dx=e^x(x^2-2x+2)+C}.$$
+
+(b)
+$$\boxed{\int(\ln x)^2dx=x[(\ln x)^2-2\ln x+2]+C}.$$
+
+**16.**
+
+$$
+\boxed{
+\int e^{-2t}\cos(3t)\,dt
+=
+\frac{e^{-2t}}{13}\left[-2\cos(3t)+3\sin(3t)\right]+C
+}.
+$$
+
+Two applications of parts with consistent roles reproduce the original
+integral, which is then solved for algebraically.
+
+**17.**
+
+(a)
+$$\boxed{\int_0^\pi x\sin x\,dx=\pi}.$$
+
+(b)
+$$\boxed{\int_1^e\ln x\,dx=1}.$$
+
+**18.**
+
+(a)
+$$\boxed{\int\cos^3x\,dx=\sin x-\frac{\sin^3x}{3}+C}.$$
+
+(b)
+$$\boxed{\int\sin^2x\cos^2x\,dx=\frac{x}{8}-\frac{\sin4x}{32}+C}.$$
+
+(c)
+$$\boxed{\int_0^\pi\sin^2x\,dx=\frac{\pi}{2}}.$$
+
+**19.**
+
+(a)
+$$
+\boxed{
+\int\frac{dx}{\sqrt{9-x^2}}
+=
+\sin^{-1}\left(\frac{x}{3}\right)+C
+}.
+$$
+
+This matches the Handbook's inverse-sine table form.
+
+(b)
+$$
+\boxed{
+\int\sqrt{25-x^2}\,dx
+=
+\frac{x}{2}\sqrt{25-x^2}
++\frac{25}{2}\sin^{-1}\left(\frac{x}{5}\right)+C
+}.
+$$
+
+Therefore
+
+$$
+\boxed{
+\int_0^5\sqrt{25-x^2}\,dx=\frac{25\pi}{4}
+},
+$$
+
+the area of a quarter circle of radius 5.
+
+**20.**
+
+(a)
+$$\boxed{\int\frac{dx}{x^2-4}
+=\frac14\ln\left|\frac{x-2}{x+2}\right|+C}.$$
+
+(b)
+$$\boxed{\int\frac{3x+11}{x^2-x-6}dx
+=4\ln|x-3|-\ln|x+2|+C}.$$
+
+(c)
+$$\boxed{\int\frac{2x-1}{(x-1)^2}dx
+=2\ln|x-1|-\frac1{x-1}+C}.$$
+
+(d)
+$$\boxed{\int\frac{x^2+1}{x(x^2+4)}dx
+=\frac14\ln|x|+\frac38\ln(x^2+4)+C}.$$
+
+**21.** Divide first:
+
+$$
+\frac{x^2+3x+1}{x^2-1}
+=
+1+\frac{3x+2}{(x-1)(x+1)}
+=
+1+\frac{5/2}{x-1}+\frac{1/2}{x+1}.
+$$
+
+Hence
+
+$$
+\boxed{
+x+\frac52\ln|x-1|+\frac12\ln|x+1|+C
+}.
+$$
+
+**22.**
+
+(a)
+$$\boxed{\int_1^\infty x^{-3}dx=\frac12}\quad\text{(converges)}.$$
+
+(b)
+$$\boxed{\int_1^\infty x^{-1/2}dx\text{ diverges}}.$$
+
+(c)
+$$\boxed{\int_0^\infty e^{-4t}dt=\frac14}.$$
+
+(d)
+$$\boxed{\int_0^1x^{-2/3}dx=3}\quad\text{(converges)}.$$
+
+(e)
+$$\boxed{\int_0^2\frac{dx}{x-2}\text{ diverges}}.$$
+
+**23.**
+
+(a)
+$$Q=\int_0^\infty2.5e^{-t/0.020}\,dt,$$
+with units A·s = C.
+
+(b)
+$$\boxed{Q=(2.5)(0.020)=0.050\ \mathrm C}.$$
+
+(c)
+$$
+\boxed{
+\frac{Q(0\to20\text{ ms})}{Q_{\rm total}}
+=
+1-e^{-1}=0.6321\approx63.2\%
+}.
+$$
+
+(d)
+$$
+E=(2.5)^2(15)\int_0^\infty e^{-2t/0.020}dt.
+$$
+
+The squared current has time constant $0.010$ s, so
+
+$$\boxed{E=(6.25)(15)(0.010)=0.9375\ \mathrm J}.$$
+
+**24.**
+
+(a)
+$$
+V
+=
+0.040\int_0^4e^{-x/6}dx
+=
+0.24(1-e^{-2/3})
+=
+0.11678\ \mathrm{m^3}.
+$$
+
+Thus
+
+$$
+\boxed{
+W=(24{,}000)(0.11678)
+=2.803\times10^3\ \mathrm N
+}.
+$$
+
+(b)
+$$
+\int_0^4xA(x)dx
+=
+1.44-2.40e^{-2/3}
+=
+0.20780\ \mathrm{m^4}.
+$$
+
+Therefore
+
+$$
+\boxed{
+\bar{x}
+=
+\frac{0.20780}{0.11678}
+=
+1.779\ \mathrm m
+}.
+$$
+
+(c) $A\,dx$ has units $\mathrm{m^3}$; $\gamma A\,dx$ has units N.
+The centroid numerator has units $\mathrm{m^4}$, and dividing by volume leaves
+metres.
+
+**25.** **A — $-x\cos x+\sin x+C$.** Choose $u=x$ and
+$dv=\sin x\,dx$.
+
+**26.** **B — $\ln x$.** LIATE places logarithmic functions ahead of
+algebraic ones.
+
+**27.** **C — $x=4\sec\theta$.** This converts $x^2-16$ using
+$\sec^2\theta-1=\tan^2\theta$.
+
+**28.** **B — 3.** The required terms are
+$A/(x-1)+B/(x-1)^2+C/(x+2)$.
+
+**29.** **C — converges to 2.**
+
+$$\int_1^\infty x^{-3/2}dx=\boxed{2}.$$
+
+**30.** **C — 40.**
+
+$$\int_0^\infty5e^{-t/8}dt=5(8)=\boxed{40}.$$
+
+**31.** **B — $e^{-x^2}$.** The chapter identifies the Gaussian integrand as
+having no elementary antiderivative.
+
+---
+
+## Quick Reference
 
 **Integration by parts**
 
@@ -1490,8 +1819,13 @@ Simplify algebraically → check the table → substitution → classify and mat
 **differentiate to verify**.
 
 Many integrands have no elementary antiderivative. Set those up correctly and
-integrate numerically (Chapter 01-37).
+integrate numerically (Chapter 01-26).
 
 ---
 
-*Next: [Chapter 01-22 — Partial Derivatives and Multivariable Calculus](01-22-partial-derivatives.md)*
+## What's Next
+
+Next: [Chapter 01-22 — Infinite Series and Taylor Expansions](01-22-Infinite-Series-and-Taylor-Expansions(inc).md)
+
+Chapter 01-22 extends the convergence ideas introduced here from improper
+integrals to infinite series and develops Taylor-series approximations.

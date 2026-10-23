@@ -1,0 +1,595 @@
+schema_version: 1
+exam_type: tier-review
+discipline: shared
+tier: 1C
+covers_through_chapter: 01-27
+question_count: 34
+time_limit_minutes: 68
+source_basis: Existing chapter review banks; 01-21 items are derived directly from the chapter body because the available
+  Library snapshot lacks its answer key.
+items:
+- id: T1C-Q001
+  source_chapter: 01-26
+  source_question: 24
+  source_category: multiple-choice
+  requires_concepts:
+  - MATH-1C-026-06
+  prompt: "Which weight pattern corresponds to composite Simpson's rule?\nA) 1,1,1,1,1  \nB) 1,2,2,2,1  \nC) 1,4,2,4,1  \n\
+    D) 1,3,3,1."
+  solution: "**C.** Simpson's composite weights alternate 4 and 2 between endpoint\n    weights of 1. (§26.6)"
+- id: T1C-Q002
+  source_chapter: 01-18
+  source_question: 17
+  source_category: calculation
+  requires_concepts:
+  - MATH-1C-018-02
+  prompt: "A 5.0 m ladder leans against a vertical wall. The base is pulled away from\n    the wall at 0.40 m/s.\n    (a)\
+    \ How fast is the top descending when the base is 3.0 m from the wall?\n    (b) What happens to that rate as the base\
+    \ approaches 5.0 m, and what does\n    that tell you about the model?"
+  solution: '** Let $x$ be the base distance from the wall and $y$ the height of the top.
+
+
+    **Relating equation:** $x^2 + y^2 = 25$ (fixed ladder length).
+
+
+    **Differentiate with respect to $t$:**
+
+
+    $$2x\frac{dx}{dt} + 2y\frac{dy}{dt} = 0 \implies \frac{dy}{dt} = -\frac{x}{y}\cdot\frac{dx}{dt}$$
+
+
+    (a) At $x = 3.0$ m: $y = \sqrt{25-9} = 4.0$ m. With $\frac{dx}{dt} = +0.40$ m/s:
+
+
+    $$\frac{dy}{dt} = -\frac{3.0}{4.0}(0.40) = \boxed{-0.30 \text{ m/s}}$$
+
+
+    The top descends at 0.30 m/s. Negative ✓
+
+
+    (b) As $x \to 5.0$ m, $y \to 0$ and the factor $\frac{x}{y}$ grows without
+
+    bound, so $\frac{dy}{dt} \to -\infty$. The model predicts the top falling at
+
+    unbounded speed.
+
+
+    That is physically impossible, so the model has broken down. The idealization
+
+    that fails is the assumption that the ladder''s top stays in contact with the
+
+    wall while the base moves at constant speed — near the end the ladder separates
+
+    from the wall and simply falls under gravity. This is the same lesson as the
+
+    pile-driving model in Chapter 01-15 and the extraneous roots in Chapter 01-07:
+
+    the mathematics returns an answer the physics rejects, and recognizing the
+
+    domain of validity is part of the engineering.'
+- id: T1C-Q003
+  source_chapter: 01-26
+  source_question: 5
+  source_category: conceptual
+  requires_concepts:
+  - MATH-1C-026-03
+  prompt: Why does a sign-changing bracket require continuity before it guarantees a root?
+  solution: "Opposite signs alone do not prevent a discontinuous jump over zero. Continuity\n   is the hypothesis that forces\
+    \ the function to pass through every intermediate\n   value. (§26.3)"
+- id: T1C-Q004
+  source_chapter: 01-27
+  source_question: 24
+  source_category: multiple-choice
+  requires_concepts:
+  - MATH-1C-027-07
+  prompt: "Which test case is most likely to expose an inequality-boundary defect?\nA) a typical middle-range value  \nB)\
+    \ a random decimal value  \nC) a value exactly equal to the threshold  \nD) a very large unrelated value."
+  solution: "**C.** Exact threshold values expose incorrect `<` versus `<=` choices.\n    (§27.7)"
+- id: T1C-Q005
+  source_chapter: 01-22
+  source_question: 7
+  source_category: conceptual
+  requires_concepts:
+  - MATH-1C-022-03
+  prompt: Why must the endpoints of an interval of convergence be tested separately?
+  solution: "The ratio test yields $L = 1$ at both endpoints by construction, since the\n   radius is defined by $L = 1$.\
+    \ Each endpoint produces a specific numerical series\n   requiring its own test, and the two frequently behave differently."
+- id: T1C-Q006
+  source_chapter: 01-24
+  source_question: 5
+  source_category: conceptual
+  requires_concepts:
+  - MATH-1C-024-03
+  prompt: 'How is average value over a region related to total accumulation? Why does the
+
+    average have the same units as the integrand?'
+  solution: 'Average value equals total accumulated field divided by region area or volume.
+
+    Dividing units such as $(\mathrm K)(\mathrm{m^2})$ by $\mathrm{m^2}$ returns K,
+
+    so the average has the field''s units. (§24.3)'
+- id: T1C-Q007
+  source_chapter: 01-22
+  source_question: 27
+  source_category: multiple-choice
+  requires_concepts:
+  - MATH-1C-022-02
+  prompt: "The ratio test applied to $\\displaystyle\\sum_{n=1}^{\\infty}\\frac{1}{n^3}$\n    gives $L = 1$. This means:\n\
+    \    A) the series diverges\n    B) the series converges\n    C) the test is inconclusive and another test is needed\n\
+    \    D) the series converges conditionally"
+  solution: '**C** — The alternating-series test requires alternating signs as well as decreasing term magnitude and a zero
+    term limit.'
+- id: T1C-Q008
+  source_chapter: 01-20
+  source_question: 37
+  source_category: multiple-choice
+  requires_concepts:
+  - MATH-1C-020-05
+  prompt: "The parallel axis theorem states:\n    A) $I = \\bar{I} - Ad^2$\n    B) $I = \\bar{I} + Ad^2$\n    C) $I = \\bar{I}\
+    \ + Ad$\n    D) $\\bar{I} = I + Ad^2$"
+  solution: 'B — $I = \bar{I} + Ad^2$.** The transfer term is added and $d$ is squared. Choice
+
+    A has the sign backwards, which would make some second moments negative. Choice C
+
+    omits the square. Choice D has the roles of $I$ and $\bar{I}$ reversed, which would
+
+    make the centroidal axis the maximum rather than the minimum. (§20.7)'
+- id: T1C-Q009
+  source_chapter: 01-25
+  source_question: 5
+  source_category: conceptual
+  requires_concepts:
+  - MATH-1C-025-02
+  prompt: "Explain why dividing by $q(y)$ while separating variables can lose an\n   equilibrium solution."
+  solution: "If $q(y_*)=0$, then $y=y_*$ may be a constant solution. Dividing by $q(y)$\n   excludes that value from the algebra,\
+    \ so it must be checked first. (§25.2)"
+- id: T1C-Q010
+  source_chapter: 01-21
+  source_question: Worked Example 7
+  source_category: calculation
+  requires_concepts:
+  - MATH-1C-021-02
+  prompt: Evaluate $\displaystyle\int_0^{\pi/2}\sin^2 x\,dx$ using the power-reduction identity, and give the exact result.
+  solution: 'Use $\sin^2x=(1-\cos2x)/2$: $\int_0^{\pi/2}\sin^2x\,dx=\tfrac12[x-\tfrac12\sin2x]_0^{\pi/2}=\boxed{\pi/4}$.'
+- id: T1C-Q011
+  source_chapter: 01-18
+  source_question: 5
+  source_category: conceptual
+  requires_concepts:
+  - MATH-1C-018-02
+  prompt: "Why must endpoints be checked in the closed-interval method, when the\n   derivative tests do not apply there?\
+    \ Give a physical situation where the\n   optimum is at a boundary."
+  solution: '** The derivative tests locate *interior* extrema. On a closed interval the
+
+    absolute extremum may occur at a boundary where the function is still rising or
+
+    falling — the interval simply stops. Physically, a constrained design often
+
+    performs best at the edge of its allowable range: maximum flow at the maximum
+
+    allowable pump speed, maximum stress at a support, maximum load at the rated
+
+    limit. (§18.4)'
+- id: T1C-Q012
+  source_chapter: 01-24
+  source_question: 24
+  source_category: multiple-choice
+  requires_concepts:
+  - MATH-1C-024-06
+  prompt: 'For cylindrical coordinates, the volume element is:
+
+    A) $dr\,d\theta\,dz$  B) $r\,dr\,d\theta\,dz$
+
+    C) $r^2\sin\theta\,dr\,d\theta\,dz$  D) $dx\,dy\,dz/r$.'
+  solution: '**B.** Cylindrical coordinates inherit the polar factor $r$ and add $dz$.'
+- id: T1C-Q013
+  source_chapter: 01-27
+  source_question: 16
+  source_category: calculation
+  requires_concepts:
+  - MATH-1C-027-06
+  prompt: "A loop begins with `count = 0` and increments `count` once for each valid\n    measurement. After processing 12\
+    \ measurements, what bounds must the invariant\n    place on `count`?"
+  solution: "After 12 processed measurements,\n\n    $$\\boxed{0\\le\\texttt{count}\\le12}.$$\n\n    (§27.7)"
+- id: T1C-Q014
+  source_chapter: 01-17
+  source_question: 5
+  source_category: conceptual
+  requires_concepts:
+  - MATH-1C-017-02
+  prompt: "Give an engineering example of a function with a genuine corner, and\n   explain what the corner means physically."
+  solution: '** Several valid answers. A shear diagram has a corner (in fact a jump in
+
+    the diagram itself, and a corner in the moment diagram) at every concentrated
+
+    load. A stress–strain curve has a corner at the yield point where the slope
+
+    drops abruptly from the elastic modulus to the much smaller plastic slope. A
+
+    saturating control signal has corners at the saturation limits.
+
+
+    Physically the corner means the *rate* changes abruptly — the material''s
+
+    stiffness, or the system''s responsiveness, switches to a different value at
+
+    that threshold. The derivative genuinely does not exist there, and a model
+
+    that smooths it over is hiding real behaviour. (§17.4)'
+- id: T1C-Q015
+  source_chapter: 01-20
+  source_question: 9
+  source_category: conceptual
+  requires_concepts:
+  - MATH-1C-020-01
+  prompt: "Explain why a surface-of-revolution integral uses $dL$ while a volume integral\n   uses $dx$."
+  solution: '** A volume slice is a plate of **thickness** $dx$ measured perpendicular to
+
+    its face, so its volume is (face area)$\times dx$. A surface band follows the
+
+    **surface**, whose width is measured along the slant, so it is
+
+    (circumference)$\times dL$. Worked Example 8 quantifies the difference: on a cone
+
+    of radius 2 and height 4, using $dx$ gives 25.1 against the correct 28.1, an 11%
+
+    understatement. The steeper the curve, the larger the discrepancy. (§20.5)'
+- id: T1C-Q016
+  source_chapter: 01-17
+  source_question: 28
+  source_category: multiple-choice
+  requires_concepts:
+  - MATH-1C-017-02
+  prompt: "A function that is continuous at $x = a$ is:\n    A) necessarily differentiable at $a$\n    B) not necessarily\
+    \ differentiable at $a$\n    C) necessarily discontinuous somewhere else\n    D) necessarily equal to its limit at every\
+    \ other point"
+  solution: 'B — not necessarily differentiable at $a$.** Continuity is the weaker
+
+    condition. $\lvert x - a\rvert$ is continuous at $a$ with a corner there, so
+
+    no derivative exists. The implication runs the other way: differentiable
+
+    $\Rightarrow$ continuous. (§17.4)'
+- id: T1C-Q017
+  source_chapter: 01-18
+  source_question: 29
+  source_category: multiple-choice
+  requires_concepts:
+  - MATH-1C-018-03
+  prompt: "$\\displaystyle\\lim_{x\\to 0}\\frac{e^{3x}-1}{x}$ equals:\n    A) $0$\n    B) $1$\n    C) $3$\n    D) Does not\
+    \ exist"
+  solution: 'C — 3.** Form $\frac{0}{0}$ ✓ L''Hôpital gives
+
+    $\lim_{x\to 0}\frac{3e^{3x}}{1} = 3$. Choice B is the answer you would get by
+
+    dropping the chain rule factor. (§18.8)'
+- id: T1C-Q018
+  source_chapter: 01-26
+  source_question: 15
+  source_category: calculation
+  requires_concepts:
+  - MATH-1C-026-03
+  prompt: Starting at $x_0=0.7000$, perform two Newton iterations for $f(x)=\cos x-x$.
+  solution: "For $f(x)=\\cos x-x$,\n\n    $$f'(x)=-\\sin x-1.$$\n\n    Starting at $x_0=0.7000$:\n\n    $$x_1\n    =0.7000-\\\
+    frac{\\cos0.7-0.7}{-\\sin0.7-1}\n    =\\boxed{0.73943650},$$\n\n    $$x_2\n    =x_1-\\frac{\\cos x_1-x_1}{-\\sin x_1-1}\n\
+    \    =\\boxed{0.73908516}.$$\n\n    The root is already stable to about six decimal places. (§26.3)\n\n16.\n\n    $$h'(1.5)=4(1.5)^3-6(1.5)=4.5,$$\n\
+    \n    $$h''(1.5)=12(1.5)^2-6=21.$$\n\n    Therefore\n\n    $$x_1=1.5-\\frac{4.5}{21}\n    =\\boxed{1.28571429}.$$\n\n\
+    \    (§26.4)\n\n17.\n\n    $$\\lambda=\\frac{38-20}{50-20}=\\frac{18}{30}=0.6,$$\n\n    $$y=1.40+0.6(2.15-1.40)\n    =1.40+0.45\n\
+    \    =\\boxed{1.85}.$$\n\n    (§26.5)"
+- id: T1C-Q019
+  source_chapter: 01-22
+  source_question: 17
+  source_category: calculation
+  requires_concepts:
+  - MATH-1C-022-04
+  prompt: "Find the Taylor series for $f(x) = \\sqrt{x}$ centred at $a = 4$, through the\n    quadratic term. Use it to estimate\
+    \ $\\sqrt{4.3}$ and compare with the exact\n    value."
+  solution: "$1 - \\frac{0.04}{2} + \\frac{0.0016}{24} = \\mathbf{0.9800667}$.\n    First omitted term $\\frac{(0.2)^6}{720}\
+    \ = 8.9\\times10^{-8}$.\n    True value $0.98006658$, actual error $8.9\\times10^{-8}$ — at the bound, as\n    expected\
+    \ when the following term is negligible ✓"
+- id: T1C-Q020
+  source_chapter: 01-20
+  source_question: 25
+  source_category: calculation
+  requires_concepts:
+  - MATH-1C-020-05
+  prompt: "For a triangle of base $b$ and height $h$ with its base on the $x$-axis and\n    its apex directly above the left\
+    \ end:\n    (a) Find $A$ by integration.\n    (b) Find $\\bar{x}$ and $\\bar{y}$ by integration.\n    (c) Verify against\
+    \ the tabulated triangle centroid."
+  solution: '**
+
+
+    Place the apex above the left end, so the hypotenuse runs from $(0,h)$ down to
+
+    $(b,0)$:
+
+
+    $$y = h\left(1 - \frac{x}{b}\right)$$
+
+
+    **(a)**
+
+
+    $$A = \int_0^b h\left(1-\frac{x}{b}\right)dx = h\left[x - \frac{x^2}{2b}\right]_0^b = h\left(b - \frac{b}{2}\right) =
+    \boxed{\frac{bh}{2}}$$
+
+
+    **(b)**
+
+
+    $$Q_y = \int_0^b x\,h\left(1-\frac{x}{b}\right)dx = h\left[\frac{x^2}{2} - \frac{x^3}{3b}\right]_0^b = h\left(\frac{b^2}{2}
+    - \frac{b^2}{3}\right) = \frac{hb^2}{6}$$
+
+
+    $$\bar{x} = \frac{hb^2/6}{bh/2} = \boxed{\frac{b}{3}}$$
+
+
+    $$Q_x = \int_0^b\frac{y}{2}(y)\,dx = \frac{h^2}{2}\int_0^b\left(1-\frac{x}{b}\right)^2 dx$$
+
+
+    Substituting $u = 1 - \frac{x}{b}$, $du = -\frac{dx}{b}$, limits $u = 1$ to $0$:
+
+
+    $$= \frac{h^2}{2}(b)\int_0^1 u^2 du = \frac{h^2 b}{2}\cdot\frac{1}{3} = \frac{bh^2}{6}$$
+
+
+    $$\bar{y} = \frac{bh^2/6}{bh/2} = \boxed{\frac{h}{3}}$$
+
+
+    **(c)** The tabulated triangle centroid lies one third of the way from each side
+
+    toward the opposite vertex. Measuring from the left edge, $\bar{x} = \frac{b}{3}$ ✓
+
+    Measuring from the base, $\bar{y} = \frac{h}{3}$ ✓ Both match.'
+- id: T1C-Q021
+  source_chapter: 01-27
+  source_question: 5
+  source_category: conceptual
+  requires_concepts:
+  - MATH-1C-027-03
+  prompt: In Handbook-style pseudocode, what is the difference between `=` and `==`?
+  solution: "In the Handbook pseudocode convention, `=` assigns a value to a variable;\n   `==` compares two values and returns\
+    \ true or false. (§27.3)"
+- id: T1C-Q022
+  source_chapter: 01-25
+  source_question: 24
+  source_category: multiple-choice
+  requires_concepts:
+  - MATH-1C-025-05
+  prompt: "If $g(t)=5\\cos3t$ and $\\pm3j$ are not characteristic roots, a suitable\n    particular trial begins as:\n   \
+    \ A) $A\\cos3t+B\\sin3t$  B) $Ae^{3t}$  C) $At^3$  D) $A/t$."
+  solution: "**A.** Sinusoidal forcing requires both sine and cosine in the ordinary trial.\n    (§25.5)"
+- id: T1C-Q023
+  source_chapter: 01-23
+  source_question: 15
+  source_category: calculation
+  requires_concepts:
+  - MATH-1C-023-05
+  prompt: "For $f(x,y) = x^2y - y^3$ at $(3, 1)$: find $\\nabla f$, the maximum rate of\n    increase, and the directional\
+    \ derivative toward $(3, 5)$."
+  solution: "$f_x = 2xy = 6$; $f_y = x^2 - 3y^2 = 9 - 3 = 6$. So\n    $\\nabla f = 6\\hat{\\imath} + 6\\hat{\\jmath}$,\n \
+    \   $\\lvert\\nabla f\\rvert = 6\\sqrt{2} = \\mathbf{8.49}$.\n    Toward $(3,5)$ the direction is $\\langle 0,4\\rangle$,\
+    \ unit vector\n    $\\langle 0,1\\rangle$, so $D_{\\mathbf{u}}f = \\mathbf{6.00}$. Check:\n    $6.00 \\le 8.49$ ✓"
+- id: T1C-Q024
+  source_chapter: 01-23
+  source_question: 5
+  source_category: conceptual
+  requires_concepts:
+  - MATH-1C-023-01
+  prompt: "State the two defining properties of the gradient, and explain why it must be\n   perpendicular to the level curves."
+  solution: "It points in the direction of steepest increase, and its magnitude is that\n   maximum rate. Along a level curve\
+    \ $f$ does not change, so the direction of\n   greatest change must be perpendicular to it."
+- id: T1C-Q025
+  source_chapter: 01-16
+  source_question: 28
+  source_category: multiple-choice
+  requires_concepts:
+  - MATH-1C-016-04
+  prompt: "The function $f(x) = \\dfrac{x-2}{x^2-4}$ has:\n    A) A removable discontinuity at $x = 2$ and an infinite one\
+    \ at $x = -2$\n    B) Infinite discontinuities at both $x = 2$ and $x = -2$\n    C) A jump discontinuity at $x = 2$\n\
+    \    D) No discontinuities"
+  solution: 'A.** Factor the denominator: $x^2 - 4 = (x-2)(x+2)$.
+
+
+    $$\frac{x-2}{(x-2)(x+2)} = \frac{1}{x+2} \quad (x \ne 2)$$
+
+
+    At $x = 2$ the factor cancels, the limit is $\frac{1}{4}$, and the
+
+    discontinuity is **removable**. At $x = -2$ nothing cancels, the form is
+
+    $\frac{-4}{0}$, and the discontinuity is **infinite**. (§16.9)'
+- id: T1C-Q026
+  source_chapter: 01-19
+  source_question: 24
+  source_category: multiple-choice
+  requires_concepts:
+  - MATH-1C-019-02
+  prompt: "$\\displaystyle\\int_{-4}^{4}x^7\\,dx$ equals:\n    A) $0$\n    B) $4096$\n    C) $8192$\n    D) $2048$"
+  solution: 'A — 0.** $x^7$ is odd and the interval is symmetric about the origin.
+
+    (§19.4)'
+- id: T1C-Q027
+  source_chapter: 01-21
+  source_question: 1
+  source_category: conceptual
+  requires_concepts:
+  - MATH-1C-021-01
+  prompt: Starting from the product rule in differential form, derive the integration-by-parts identity $\int u\,dv=uv-\int
+    v\,du$. In one sentence, state the practical rule for choosing $u$.
+  solution: The chapter writes the product rule as $d(uv)=u\,dv+v\,du$. Integrating gives $uv=\int u\,dv+\int v\,du$, so rearrangement
+    yields $\int u\,dv=uv-\int v\,du$. The practical choice is to make $u$ the factor that becomes simpler when differentiated
+    while leaving $dv$ as something that can be integrated.
+- id: T1C-Q028
+  source_chapter: 01-21
+  source_question: p-test
+  source_category: calculation
+  requires_concepts:
+  - MATH-1C-021-05
+  prompt: Use the chapter's $p$-test to classify $\displaystyle\int_1^\infty x^{-2}\,dx$ and, if it converges, give its value.
+  solution: For $\int_1^\infty x^{-p}\,dx$, the chapter gives convergence for $p>1$ with value $1/(p-1)$. Here $p=2$, so the
+    integral converges to $\boxed{1}$.
+- id: T1C-Q029
+  source_chapter: 01-25
+  source_question: 15
+  source_category: calculation
+  requires_concepts:
+  - MATH-1C-025-02
+  prompt: Solve $y''+5y'+6y=0$, $y(0)=2$, $y'(0)=-5$.
+  solution: "Roots are $-2,-3$. Conditions give $C_1=C_2=1$:\n    $\\boxed{y=e^{-2t}+e^{-3t}}$. (§25.4)"
+- id: T1C-Q030
+  source_chapter: 01-16
+  source_question: 17
+  source_category: calculation
+  requires_concepts:
+  - MATH-1C-016-01
+  prompt: "Evaluate:\n    (a) $\\displaystyle\\lim_{x\\to 0}\\frac{\\sin 7x}{x}$\n    (b) $\\displaystyle\\lim_{x\\to 0}\\\
+    frac{\\sin 3x}{\\sin 8x}$\n    (c) $\\displaystyle\\lim_{\\theta\\to 0}\\frac{\\theta}{\\tan\\theta}$\n    (d) $\\displaystyle\\\
+    lim_{\\theta\\to 0}\\frac{1-\\cos 2\\theta}{\\theta}$"
+  solution: '**
+
+
+    (a) $\dfrac{\sin 7x}{x} = 7\cdot\dfrac{\sin 7x}{7x} \to 7(1) = \boxed{7}$
+
+
+    (b) Force both arguments to match their denominators:
+
+
+    $$\frac{\sin 3x}{\sin 8x} = \frac{\frac{\sin 3x}{3x}\cdot 3x}{\frac{\sin 8x}{8x}\cdot 8x} \to \frac{(1)(3x)}{(1)(8x)}
+    = \boxed{\frac{3}{8} = 0.375}$$
+
+
+    (c) $\tan\theta = \dfrac{\sin\theta}{\cos\theta}$, so
+
+
+    $$\frac{\theta}{\tan\theta} = \frac{\theta\cos\theta}{\sin\theta} = \frac{\theta}{\sin\theta}\cdot\cos\theta \to (1)(1)
+    = \boxed{1}$$
+
+
+    (using that $\frac{\theta}{\sin\theta}$ is the reciprocal of the standard
+
+    limit, hence also 1).
+
+
+    (d) Substitute $u = 2\theta$, so $\theta = u/2$ and $u \to 0$:
+
+
+    $$\frac{1-\cos 2\theta}{\theta} = \frac{1-\cos u}{u/2} = 2\cdot\frac{1-\cos u}{u} \to 2(0) = \boxed{0}$$'
+- id: T1C-Q031
+  source_chapter: 01-24
+  source_question: 15
+  source_category: calculation
+  requires_concepts:
+  - MATH-1C-024-04
+  prompt: 'A lamina occupies $0\le x\le2$, $0\le y\le1$ and has
+
+    $\rho_A=1+x$ in consistent mass-per-area units. Find total mass and center of
+
+    mass.'
+  solution: 'Mass:
+
+
+    $$M=\int_0^2\int_0^1(1+x)\,dy\,dx
+
+    =\left[x+\frac{x^2}{2}\right]_0^2=\boxed{4}.$$
+
+
+    Then
+
+
+    $$\bar x=\frac1{4}\int_0^2x(1+x)dx
+
+    =\frac14\left(2+\frac83\right)
+
+    =\boxed{\frac76},$$
+
+
+    and symmetry in $y$ gives
+
+
+    $$\boxed{\bar y=\frac12}.$$'
+- id: T1C-Q032
+  source_chapter: 01-17
+  source_question: 17
+  source_category: calculation
+  requires_concepts:
+  - MATH-1C-017-01
+  prompt: "Find the equations of the tangent and normal lines:\n    (a) $y = x^2 - 3x$ at $x = 2$\n    (b) $y = e^{-x}$ at\
+    \ $x = 0$\n    (c) $y = \\ln x$ at $x = 1$"
+  solution: '**
+
+
+    **(a)** $y(2) = 4 - 6 = -2$; $y'' = 2x - 3$, so $y''(2) = 1$
+
+
+    Tangent: $y + 2 = 1(x-2) \implies \boxed{y = x - 4}$
+
+
+    Normal: slope $-1$, so $y + 2 = -1(x-2) \implies \boxed{y = -x}$
+
+
+    Check both pass through $(2,-2)$: $2-4 = -2$ ✓; $-2$ ✓
+
+
+    **(b)** $y(0) = 1$; $y'' = -e^{-x}$, so $y''(0) = -1$
+
+
+    Tangent: $y - 1 = -1(x-0) \implies \boxed{y = 1 - x}$
+
+
+    Normal: slope $+1$, so $\boxed{y = x + 1}$
+
+
+    **(c)** $y(1) = 0$; $y'' = \frac1x$, so $y''(1) = 1$
+
+
+    Tangent: $y - 0 = 1(x-1) \implies \boxed{y = x - 1}$
+
+
+    Normal: slope $-1$, so $y = -(x-1) \implies \boxed{y = 1 - x}$'
+- id: T1C-Q033
+  source_chapter: 01-19
+  source_question: 15
+  source_category: calculation
+  requires_concepts:
+  - MATH-1C-019-04
+  prompt: "Integrate by substitution:\n    (a) $\\displaystyle\\int 3x^2\\left(x^3-4\\right)^7 dx$\n    (b) $\\displaystyle\\\
+    int\\frac{2x}{x^2+5}\\,dx$\n    (c) $\\displaystyle\\int \\sin x\\cos^4 x\\,dx$\n    (d) $\\displaystyle\\int e^{4t}\\\
+    ,dt$\n    (e) $\\displaystyle\\int\\frac{\\ln x}{x}\\,dx$"
+  solution: '**
+
+
+    (a) $u = x^3-4$, $du = 3x^2dx$: $\int u^7du =
+
+    \boxed{\frac{\left(x^3-4\right)^8}{8} + C}$
+
+
+    (b) $u = x^2+5$, $du = 2x\,dx$: $\int\frac{du}{u} =
+
+    \boxed{\ln\left(x^2+5\right) + C}$ (the argument is always positive, so the
+
+    absolute value is unnecessary here)
+
+
+    (c) $u = \cos x$, $du = -\sin x\,dx$: $-\int u^4du =
+
+    \boxed{-\frac{\cos^5 x}{5} + C}$
+
+
+    (d) $u = 4t$, $du = 4\,dt$: $\frac{1}{4}\int e^u du =
+
+    \boxed{\frac{1}{4}e^{4t} + C}$
+
+
+    (e) $u = \ln x$, $du = \frac{dx}{x}$: $\int u\,du =
+
+    \boxed{\frac{\left(\ln x\right)^2}{2} + C}$'
+- id: T1C-Q034
+  source_chapter: 01-23
+  source_question: 24
+  source_category: multiple-choice
+  requires_concepts:
+  - MATH-1C-023-07
+  prompt: "At a critical point with $D = f_{xx}f_{yy} - f_{xy}^2 < 0$, the point is:\n    A) a local minimum  B) a local maximum\
+    \  C) a saddle point  D) undetermined"
+  solution: '**C** — The second-partial discriminant is negative at this critical point, which classifies it as a saddle point.'
