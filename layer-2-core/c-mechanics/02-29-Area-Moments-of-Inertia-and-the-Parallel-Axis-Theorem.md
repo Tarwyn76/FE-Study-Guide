@@ -71,6 +71,8 @@ It is a geometric property with units of length to the fourth power. It is not t
 
 ---
 
+<!-- VERIFY id="WE-02-29-001-ix" expr="0.20*0.30**3/12" expected="0.000450" units="m^4" atol="5e-10" rtol="1e-9" -->
+
 ## 29.2 Common Centroidal Shapes
 
 Use Handbook tables for rectangles, circles, triangles, and other standard shapes. Always confirm whether the listed expression is about a centroidal axis, an edge axis, or another reference.
@@ -92,6 +94,8 @@ I_{x,c}=rac{bh^3}{12},\qquad I_{y,c}=rac{hb^3}{12}.
 **Solution.** I=2.0e-6+0.001(0.05²)=4.5e-6 m^4. Reasoning: this uses the **29.2 Common Centroidal Shapes** model from Chapter 02-29: Area Moments of Inertia and the Parallel-Axis Theorem. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
+
+<!-- VERIFY id="WE-02-29-002-ix" expr="2.0e-6+0.001*0.05**2" expected="4.5e-6" units="m^4" atol="5e-12" rtol="1e-9" -->
 
 ## 29.3 Parallel-Axis Theorem
 
@@ -150,6 +154,8 @@ For circular shafts, the polar area moment appears directly in torsion formulas.
 **Solution.** rx=sqrt(Ix/A)=sqrt(0.004)=0.06325 m. Reasoning: this uses the **29.5 Polar Moment of Area** model from Chapter 02-29: Area Moments of Inertia and the Parallel-Axis Theorem. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
+
+<!-- VERIFY id="WE-02-29-005-rx" expr="sqrt(8e-6/0.002)" expected="0.06325" units="m" atol="0.000005" rtol="1e-9" -->
 
 ## 29.6 Radius of Gyration
 

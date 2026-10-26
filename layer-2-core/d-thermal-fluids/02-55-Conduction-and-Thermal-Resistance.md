@@ -67,6 +67,8 @@ Thermal conductivity \(k\) is a material property and may depend on temperature.
 
 ---
 
+<!-- VERIFY id="WE-02-55-001-Q" expr="2*4*20/0.1" expected="1600" units="W" atol="1e-9" rtol="1e-9" -->
+
 ## 55.2 Plane-Wall Conduction
 
 For steady one-dimensional conduction through a constant-k plane wall with no internal generation, the temperature profile is linear.
@@ -84,6 +86,8 @@ The heat rate depends on area, conductivity, thickness, and temperature differen
 **Solution.** R=0.05 K/W. The governing model here is **§55.2 Plane-Wall Conduction**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of plane-wall conduction.
 
 ---
+
+<!-- VERIFY id="WE-02-55-002-R" expr="0.05/(0.5*2)" expected="0.05" units="K/W" atol="1e-9" rtol="1e-9" -->
 
 ## 55.3 Cylindrical-Wall Conduction
 
@@ -103,6 +107,8 @@ Do not use the plane-wall \(L/kA\) expression across a thick cylinder unless a t
 
 ---
 
+<!-- VERIFY id="WE-02-55-003-Rconv" expr="1/(25*4)" expected="0.010" units="K/W" atol="0.0005" rtol="1e-9" -->
+
 ## 55.4 Thermal Resistance Networks
 
 Heat transfer can be written like an electrical-resistance analogy: heat rate equals temperature difference divided by total thermal resistance.
@@ -121,6 +127,8 @@ Series resistances add directly. Parallel paths require conductance addition.
 
 ---
 
+<!-- VERIFY id="WE-02-55-004-Q" expr="70/(0.02+0.04+0.01)" expected="1000" units="W" atol="1e-9" rtol="1e-9" -->
+
 ## 55.5 Composite Walls and Interface Temperatures
 
 A composite wall combines multiple conduction layers and convection films. Once heat rate is known, intermediate temperatures follow from temperature drops \(\Delta T_i=\dot Q R_i\).
@@ -138,6 +146,8 @@ Interface temperatures are useful for checking condensation, material limits, an
 **Solution.** R=ln2/(2π0.2)=0.552 K/W. The governing model here is **§55.5 Composite Walls and Interface Temperatures**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of composite walls and interface temperatures.
 
 ---
+
+<!-- VERIFY id="WE-02-55-005-R" expr="ln(0.04/0.02)/(2*pi*0.2*1)" expected="0.552" units="K/W" atol="0.0005" rtol="1e-9" -->
 
 ## 55.6 Critical Radius of Insulation
 
@@ -182,6 +192,8 @@ Use kelvin or Celsius temperature differences interchangeably, but absolute temp
 **Problem.** What is critical insulation radius for k=0.05 W/mK and h=10 W/m²K?
 
 **Solution.** rcr=0.005 m. The governing model here is **§55.7 Conduction Modeling Checks**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of conduction modeling checks.
+
+<!-- VERIFY id="WE-02-55-008-rcrit" expr="0.05/10" expected="0.005" units="m" atol="0.0000005" rtol="1e-9" -->
 
 ### Worked Example 9
 
@@ -325,17 +337,20 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. A new problem requires **Fourier conduction**. Which step should come before numerical substitution?
-A) Confirm the governing model, stated assumptions, and reference quantities
-B) Ignore the model and use any dimensionally similar equation
-C) Convert every quantity to a percentage before analysis
-D) Skip the physical or economic checks if a calculator gives a result
+26. Which statement best describes **Fourier conduction**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
 
-27. After applying **plane-wall conduction**, which validation step best supports accepting the result?
-A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
-B) Accept the result solely because the arithmetic converged
-C) Replace the governing relation with a nearby formula
-D) Ignore the stated reference basis
+27. Which statement best describes **plane-wall conduction**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
+
+
+---
 
 ## Answer Key with Explanations
 
@@ -389,9 +404,12 @@ D) Ignore the stated reference basis
 
 25. **A.** The chapter applies **conduction audit** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** For **Fourier conduction** in *Conduction and Thermal Resistance*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
+26. **A.** The chapter applies **Fourier conduction** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Conduction and Thermal Resistance**, apply this check specifically through **§55.5 Composite Walls and Interface Temperatures**, including that section's stated assumptions and reference quantities.
 
-27. **A.** For **plane-wall conduction** in *Conduction and Thermal Resistance*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
+27. **A.** The chapter applies **plane-wall conduction** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Conduction and Thermal Resistance**, apply this check specifically through **§55.6 Critical Radius of Insulation**, including that section's stated assumptions and reference quantities.
+
+
+---
 
 ## Practice Problems
 

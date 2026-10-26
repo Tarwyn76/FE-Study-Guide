@@ -69,6 +69,8 @@ A P-only controller does not automatically eliminate steady-state offset for eve
 
 ---
 
+<!-- VERIFY id="WE-02-70-001-uP" expr="4*2" expected="8" units="output units" atol="1e-9" rtol="1e-9" -->
+
 ## 70.2 Integral Control
 
 Integral action accumulates error over time. It can remove steady-state offset for many constant-reference problems because persistent error continues to change controller output.
@@ -81,9 +83,13 @@ The tradeoff is additional phase lag and the possibility of slow oscillation or 
 
 ### Worked Example 2
 
-**Problem.** An integral controller has Ki=0.5 V/(unit·s) and constant error 3 units for 4 s starting from zero integral. Find the controller-output contribution in volts.
+**Problem.** An integral controller has Ki=0.5 output/(unit·s) and constant error 3 units for 4 s starting from zero integral. Find contribution.
 
-**Solution.** uI=Ki·e·t=0.5·3·4=6. The governing model here is **§70.2 Integral Control**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of integral control. Therefore the integral contribution is uI=6 V.---
+**Solution.** uI=Ki·e·t=0.5·3·4=6. The governing model here is **§70.2 Integral Control**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of integral control.
+
+---
+
+<!-- VERIFY id="WE-02-70-002-uI" expr="0.5*3*4" expected="6" units="output units" atol="1e-9" rtol="1e-9" -->
 
 ## 70.3 Derivative Control
 
@@ -102,6 +108,8 @@ Derivative action alone does not drive a constant error to zero.
 **Solution.** uD=2(-0.5)=-1. The governing model here is **§70.3 Derivative Control**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of derivative control.
 
 ---
+
+<!-- VERIFY id="WE-02-70-003-uD" expr="2*(-0.5)" expected="-1" units="output units" atol="1e-9" rtol="1e-9" -->
 
 ## 70.4 PID Controller Form and Parameter Mapping
 
@@ -138,6 +146,8 @@ Use pole locations, step-response metrics, and gain/phase margins together. A tu
 **Solution.** Ts≈4/(0.4·5)=2.0 s. The governing model here is **§70.5 Stability, Damping, and Tuning Tradeoffs**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of stability, damping, and tuning tradeoffs.
 
 ---
+
+<!-- VERIFY id="WE-02-70-005-Ts" expr="4/(0.4*5)" expected="2.0" units="s" atol="0.005" rtol="1e-9" -->
 
 ## 70.6 Lead/Lag Compensation and Loop-Shaping Context
 
@@ -327,17 +337,20 @@ B) It is independent of calibration and dynamics
 C) It replaces physical validation
 D) It is always a static scalar
 
-26. A new problem requires **proportional control**. Which step should come before numerical substitution?
-A) Confirm the governing model, stated assumptions, and reference quantities
-B) Ignore the model and use any dimensionally similar equation
-C) Convert every quantity to a percentage before analysis
-D) Skip the physical or economic checks if a calculator gives a result
+26. Which statement best describes **proportional control**?
+A) Its meaning depends on a defined measurement/control model and assumptions
+B) It is independent of calibration and dynamics
+C) It replaces physical validation
+D) It is always a static scalar
 
-27. After applying **integral control**, which validation step best supports accepting the result?
-A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
-B) Accept the result solely because the arithmetic converged
-C) Replace the governing relation with a nearby formula
-D) Ignore the stated reference basis
+27. Which statement best describes **integral control**?
+A) Its meaning depends on a defined measurement/control model and assumptions
+B) It is independent of calibration and dynamics
+C) It replaces physical validation
+D) It is always a static scalar
+
+
+---
 
 ## Answer Key with Explanations
 
@@ -391,9 +404,12 @@ D) Ignore the stated reference basis
 
 25. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **PID Control, Stability, and Control-Loop Hardware**, apply this check specifically through **§70.4 PID Controller Form and Parameter Mapping**, including that section's stated assumptions and reference quantities.
 
-26. **A.** For **proportional control** in *PID Control, Stability, and Control-Loop Hardware*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
+26. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **PID Control, Stability, and Control-Loop Hardware**, apply this check specifically through **§70.5 Stability, Damping, and Tuning Tradeoffs**, including that section's stated assumptions and reference quantities.
 
-27. **A.** For **integral control** in *PID Control, Stability, and Control-Loop Hardware*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
+27. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **PID Control, Stability, and Control-Loop Hardware**, apply this check specifically through **§70.6 Lead/Lag Compensation and Loop-Shaping Context**, including that section's stated assumptions and reference quantities.
+
+
+---
 
 ## Practice Problems
 

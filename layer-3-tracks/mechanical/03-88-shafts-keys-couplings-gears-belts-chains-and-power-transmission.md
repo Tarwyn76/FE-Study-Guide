@@ -115,6 +115,9 @@ Gear pitch geometry links tooth count, pitch diameter, circular pitch, module, a
 
 **Solution.** Module is \(m=d/N\), hence \(d=mN=(2\ {\rm mm})(40)=\mathbf{80\ mm}\) pitch diameter. The tooth count is dimensionless, so multiplying module in millimeters per tooth by 40 teeth leaves the pitch diameter in millimeters.
 
+
+<!-- VERIFY id="WE-03-88-004-pitch-diameter" expr="2*40" expected="80" units="mm" atol="1e-9" rtol="1e-12" -->
+
 ---
 
 ## 88.5 Gear forces and power transmission
@@ -162,6 +165,10 @@ Belt and chain drives provide flexible center distance and speed reduction/incre
 **Problem.** A 2-in driver pulley and 6-in driven pulley give approximately 3:1 speed reduction without slip.
 
 **Solution.** For a no-slip belt, \(\omega_2/\omega_1\approx D_1/D_2=2/6=\mathbf{1/3}\). The 6-in driven pulley therefore turns at one-third the driver speed, a **3:1 speed reduction**.
+
+
+<!-- VERIFY id="WE-03-88-007-speed-ratio" expr="2/6" expected="0.3333333333333333" units="dimensionless" atol="1e-12" rtol="1e-12" -->
+<!-- VERIFY id="WE-03-88-007-reduction" expr="6/2" expected="3" units="dimensionless" atol="1e-12" rtol="1e-12" -->
 
 ---
 

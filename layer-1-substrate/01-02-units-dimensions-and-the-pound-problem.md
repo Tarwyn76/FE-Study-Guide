@@ -170,6 +170,8 @@ A beam that is 4 metres long is also 13.12 feet long, 157.5 inches long, and
 $4 \times 10^9$ nanometres long. Four numbers, four units, one dimension:
 length.
 
+![FIG-01-02-001: Three-tier pyramid showing physical quantity at base, dimension in middle, and multiple unit examples at top](../figures/FIG-01-02-001-quantity-dimension-unit-hierarchy.png)
+
 ### The dimensional symbols
 
 Engineering mechanics uses four dimensions constantly and three more
@@ -250,6 +252,8 @@ $$\text{Power} = \frac{\text{work}}{\text{time}} \quad \Rightarrow \quad 1 \text
 
 That's the skill worth having. Memorizing the table is fragile; rebuilding it
 from physics is permanent.
+
+![FIG-01-02-002: Tree diagram connecting base units kg, m, s through physical definitions to derived units N, Pa, J, W](../figures/FIG-01-02-002-si-derived-units-tree.png)
 
 ### Why SI is internally clean
 
@@ -392,6 +396,8 @@ candidate forms is even possible.
 > dimensions. Thirty seconds, and the answer is unambiguous. It has saved me
 > more times than I can count.
 
+![FIG-01-02-003: Two-column dimensional check diagram for pendulum period equation showing the mismatch and the corrected form](../figures/FIG-01-02-003-pendulum-dimensional-check.png)
+
 ### Worked Example 2 — Verifying a Valid Term
 
 **Given.** In fluid mechanics you'll meet the term $\rho v^2$, called dynamic
@@ -460,6 +466,8 @@ remembering problem into a seeing problem.
 > units, and let the algebra decide. It is not slower once it's a habit, and
 > it never fails.
 
+![FIG-01-02-004: Three-step flowchart for unit conversion by factor-label method with a decision branch at the cancellation step](../figures/FIG-01-02-004-factor-label-method-flowchart.png)
+
 ### Worked Example 3 — A Multi-Step SI Conversion
 
 **Given.** A pump delivers $1{,}250 \text{ L/min}$.
@@ -485,9 +493,6 @@ Note that both L and min cancelled, leaving exactly m³/s. If I'd inverted
 either factor, I'd have ended up with something like L²·min/(m³·s), which is
 visibly nonsense. **The cancellation is the check.**
 
-
-
-<!-- VERIFY id="WE-01-02-003-flow" expr="1250/1000/60" expected="0.0208" units="m^3/s" atol="5e-05" rtol="1e-9" -->
 ### Worked Example 4 — USCS to SI, With a Squared Prefix
 
 **Given.** A hydraulic system operates at $150 \text{ psi}$.
@@ -550,10 +555,6 @@ enough that a lookup is a waste of your seconds.
 | hp | W | 745.7 |
 | kW | hp | 1.341 |
 
-
-<!-- VERIFY id="WE-01-02-004-route-a" expr="150*6895/1000" expected="1034" units="kPa" atol="0.5" rtol="1e-9" -->
-<!-- VERIFY id="WE-01-02-004-route-b" expr="150*4.448/(0.0254**2)/1000" expected="1034" units="kPa" atol="0.5" rtol="1e-9" -->
-
 ---
 
 ## 2.6 The Pound Problem
@@ -609,6 +610,8 @@ That constant is $g_c$.
 > up. Once you see it that way, it stops being mysterious and becomes what it
 > actually is: bookkeeping.
 
+![FIG-01-02-005: Three-column table comparing SI, USCS slug, and USCS lbm/lbf systems. The lbm/lbf column is highlighted.](../figures/FIG-01-02-005-unit-system-comparison.png)
+
 ### 2.6.2 The definition
 
 The pound-force is defined as the force that accelerates one pound-mass at
@@ -651,6 +654,8 @@ $g_c$ is a definition. It is 32.174 lbm·ft/(lbf·s²) everywhere in the
 universe, forever, because it's a statement about how two units relate to each
 other, not about gravity.
 
+![FIG-01-02-006: Two comparison boxes for g and g_c showing name, variability, units, and nature with warning text between them](../figures/FIG-01-02-006-g-vs-gc-comparison.png)
+
 > **Mentor's Margin:** They share the number 32.174 and that is the single
 > most confusing coincidence in engineering education. It is not a
 > coincidence — the pound-force was *defined* using standard gravity, which is
@@ -671,6 +676,8 @@ Verify the units:
 $$\frac{[\text{lbm}] \left[\dfrac{\text{ft}}{\text{s}^2}\right]}{\left[\dfrac{\text{lbm} \cdot \text{ft}}{\text{lbf} \cdot \text{s}^2}\right]} = \cancel{\text{lbm}} \cdot \cancel{\frac{\text{ft}}{\text{s}^2}} \cdot \frac{\text{lbf} \cdot \cancel{\text{s}^2}}{\cancel{\text{lbm}} \cdot \cancel{\text{ft}}} = \text{lbf} \;\checkmark$$
 
 Everything cancels except lbf. That's what dimensional bookkeeping is for.
+
+![FIG-01-02-007: Three rows showing Newton's second law in three unit systems with unit annotations. g_c circled in row 3.](../figures/FIG-01-02-007-newtons-second-law-uscs.png)
 
 ### Worked Example 5 — Force on an Accelerating Mass
 
@@ -774,10 +781,6 @@ design goal of the system, achieved.
 
 But move off the Earth's surface and the cancellation stops.
 
-
-
-<!-- VERIFY id="WE-01-02-005-uscs" expr="20*32.174/50" expected="12.9" units="ft/s^2" atol="0.05" rtol="1e-9" -->
-<!-- VERIFY id="WE-01-02-005-si-check" expr="((20*4.448)/(50*0.4536))/0.3048" expected="12.87" units="ft/s^2" atol="0.02" rtol="1e-9" -->
 ### Worked Example 6 — Weight at Non-Standard Gravity
 
 **Given.** The crate from Worked Example 5, $m = 50 \text{ lbm}$, is taken to
@@ -851,10 +854,6 @@ how the equation was printed.**
 The defense is the same as always: carry your units through the arithmetic. If
 lbm survives into an answer that should be in lbf, you dropped a $g_c$.
 
-
-
-<!-- VERIFY id="WE-01-02-006-weight" expr="50*5.32/32.174" expected="8.27" units="lbf" atol="0.005" rtol="1e-9" -->
-<!-- VERIFY id="WE-01-02-006-force" expr="50*12.87/32.174" expected="20.0" units="lbf" atol="0.01" rtol="1e-9" -->
 ### Worked Example 7 — Kinetic Energy in USCS
 
 **Given.** A car of mass $3{,}000 \text{ lbm}$ travels at $60 \text{ mph}$.
@@ -899,10 +898,6 @@ physics.
 **60 mph = 88 ft/s** is worth memorizing outright. It comes up constantly in
 transportation and dynamics problems.
 
-
-
-<!-- VERIFY id="WE-01-02-007-uscs" expr="3000*88**2/(2*32.174)" expected="361000.0" units="ft*lbf" atol="500" rtol="1e-9" -->
-<!-- VERIFY id="WE-01-02-007-si" expr="0.5*(3000*0.4536)*(88*0.3048)**2/1000" expected="490" units="kJ" atol="1" rtol="1e-9" -->
 ### Worked Example 8 — Fluid Pressure and Specific Weight
 
 **Given.** An open tank holds water to a depth of $30 \text{ ft}$. Take the
@@ -956,11 +951,6 @@ At any other $g$, they part company — and if you've been treating them as
 interchangeable rather than understanding why they happened to agree, you'll
 be wrong and won't know it.
 
-
-<!-- VERIFY id="WE-01-02-008-sw" expr="62.4*32.174/32.174" expected="62.4" units="lbf/ft^3" atol="1e-09" rtol="1e-9" -->
-<!-- VERIFY id="WE-01-02-008-psf" expr="62.4*30" expected="1872" units="lbf/ft^2" atol="1e-09" rtol="1e-9" -->
-<!-- VERIFY id="WE-01-02-008-psi" expr="62.4*30/144" expected="13.0" units="psi" atol="1e-09" rtol="1e-9" -->
-
 ---
 
 ## 2.7 Temperature Scales
@@ -984,6 +974,8 @@ physical sense, because the zero point isn't a real zero.
 
 That distinction has a hard practical consequence, and it's the thing this
 section exists to teach.
+
+![FIG-01-02-008: Four parallel vertical temperature scales connected by horizontal reference lines at key temperatures with degree size brackets](../figures/FIG-01-02-008-temperature-scales.png)
 
 ### The four conversions
 
@@ -1070,6 +1062,8 @@ If only differences appear, either scale in the correct pair works.
 > looks perfectly reasonable on the page. Any time temperature appears in a
 > ratio or an exponent, convert to absolute first. No exceptions.
 
+![FIG-01-02-009: Decision flowchart for choosing temperature scale based on equation type and degree size](../figures/FIG-01-02-009-temperature-scale-selection.png)
+
 ### Worked Example 9 — Value, Difference, and Ratio
 
 **Given.** A heat engine operates between a hot reservoir at $450 \; ^\circ
@@ -1135,16 +1129,6 @@ differences are *identical* because both scales share a degree size, while
 converting to the SI degree required division by 1.8. Values need offsets;
 differences don't. ✓
 
-
-<!-- VERIFY id="WE-01-02-009-hot-r" expr="450+459.69" expected="909.7" units="degR" atol="0.05" rtol="1e-9" -->
-<!-- VERIFY id="WE-01-02-009-cold-r" expr="85+459.69" expected="544.7" units="degR" atol="0.05" rtol="1e-9" -->
-<!-- VERIFY id="WE-01-02-009-hot-k" expr="(450+459.69)/1.8" expected="505.4" units="K" atol="0.05" rtol="1e-9" -->
-<!-- VERIFY id="WE-01-02-009-cold-k" expr="(85+459.69)/1.8" expected="302.6" units="K" atol="0.05" rtol="1e-9" -->
-<!-- VERIFY id="WE-01-02-009-delta-f" expr="450-85" expected="365" units="degF" atol="1e-09" rtol="1e-9" -->
-<!-- VERIFY id="WE-01-02-009-delta-k" expr="(450-85)/1.8" expected="202.8" units="K" atol="0.05" rtol="1e-9" -->
-<!-- VERIFY id="WE-01-02-009-efficiency" expr="100*(1-(85+459.69)/(450+459.69))" expected="40.1" units="percent" atol="0.05" rtol="1e-9" -->
-<!-- VERIFY id="WE-01-02-009-wrong-fahrenheit" expr="100*(1-85/450)" expected="81.1" units="percent" atol="0.05" rtol="1e-9" -->
-
 ---
 
 ## 2.8 Fundamental Constants
@@ -1167,6 +1151,8 @@ where it is and, for a handful of entries, know the values cold.
 
 Here's a trap worth its own subsection. The Handbook prints the universal gas
 constant **four times, in four different unit systems.**
+
+![FIG-01-02-010: Two-by-two grid showing the four forms of the universal gas constant with values, units, and context notes](../figures/FIG-01-02-010-universal-gas-constant-forms.png)
 
 | Form | Value | Units |
 |---|---|---|

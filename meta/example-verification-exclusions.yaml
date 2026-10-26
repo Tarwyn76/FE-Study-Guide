@@ -1,2 +1,5 @@
 schema_version: 1
-exclusions: []
+exclusions:
+- chapter: 00-03
+  example: '2 — When the Answer Is a Table'
+  reason: The requested result is a categorical lookup-table mapping (10^-12 corresponds to the SI prefix pico, symbol p), not a finite scalar calculation that the numeric expression schema can independently validate.

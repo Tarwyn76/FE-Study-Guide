@@ -1,0 +1,28 @@
+schema_version: 1
+batch: 03-sparse-mechanical
+chapters:
+- 03-76
+- 03-77
+- 03-78
+- 03-81
+- 03-84
+- 03-87
+- 03-88
+- 03-90
+worked_examples: 72
+numeric_candidates: 0
+proactive_verify_checks: 19
+curated_exclusions: 0
+failures: 0
+coverage_reviews: 0
+chapter_corrections: 0
+cumulative:
+  chapters: 132
+  worked_examples: 1124
+  numeric_candidates: 537
+  tagged_numeric_candidates: 514
+  independent_verify_checks: 988
+  nonrequired_verify_checks: 22
+  curated_exclusions: 23
+  failures: 0
+  coverage_reviews: 0

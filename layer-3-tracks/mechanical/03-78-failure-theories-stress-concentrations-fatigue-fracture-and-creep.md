@@ -67,6 +67,9 @@ Geometric discontinuities raise local stress. The theoretical concentration fact
 
 **Solution.** \(\sigma_{max}=K_t\sigma_{nom}=(2.0)(80\ {\rm MPa})=\mathbf{160\ MPa}\). This is the elastic local peak associated with the notch model; fatigue sensitivity can require a separate \(K_f\) treatment.
 
+
+<!-- VERIFY id="WE-03-78-001-local-stress" expr="2.0*80" expected="160" units="MPa" atol="1e-9" rtol="1e-12" -->
+
 ---
 
 ## 78.2 Ductile failure — maximum shear and distortion energy
@@ -114,6 +117,10 @@ Fatigue depends on cyclic amplitude, mean stress, stress concentration, material
 **Problem.** Stress cycling between 20 and 100 MPa has σa=40 MPa and σm=60 MPa.
 
 **Solution.** \(\sigma_a=(100-20)/2=\mathbf{40\ MPa}\) and \(\sigma_m=(100+20)/2=\mathbf{60\ MPa}\). The same stress history can therefore have both alternating and nonzero mean components.
+
+
+<!-- VERIFY id="WE-03-78-004-amplitude" expr="(100-20)/2" expected="40" units="MPa" atol="1e-9" rtol="1e-12" -->
+<!-- VERIFY id="WE-03-78-004-mean" expr="(100+20)/2" expected="60" units="MPa" atol="1e-9" rtol="1e-12" -->
 
 ---
 

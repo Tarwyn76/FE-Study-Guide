@@ -67,6 +67,8 @@ For multiple fluids, apply each fluid's own specific weight over its vertical he
 
 ---
 
+<!-- VERIFY id="WE-02-42-001-dp" expr="1000*9.81*0.40/1000" expected="3.924" units="kPa" atol="0.0005" rtol="1e-9" -->
+
 ## 42.2 Barometers and Atmospheric Pressure
 
 A barometer balances atmospheric pressure against a liquid column plus any vapor pressure above the column. The measured column height therefore depends on fluid density and vapor pressure.
@@ -84,6 +86,8 @@ Use absolute pressure for atmospheric/barometric relations.
 **Solution.** P=ρgh≈101.4 kPa. The governing model here is **§42.2 Barometers and Atmospheric Pressure**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of barometers and atmospheric pressure.
 
 ---
+
+<!-- VERIFY id="WE-02-42-002-patm" expr="13600*9.81*0.760/1000" expected="101.4" units="kPa" atol="0.005" rtol="1e-9" -->
 
 ## 42.3 Buoyant Force and Archimedes' Principle
 
@@ -103,6 +107,8 @@ For a fully submerged object in a uniform fluid, buoyant-force magnitude depends
 
 ---
 
+<!-- VERIFY id="WE-02-42-003-fb" expr="1000*9.81*0.020" expected="196.2" units="N" atol="0.05" rtol="1e-9" -->
+
 ## 42.4 Floating Bodies
 
 A floating body in static equilibrium displaces a weight of fluid equal to its own weight. The submerged volume adjusts until \(F_B=W\).
@@ -120,6 +126,8 @@ For a body crossing two immiscible fluids, the total buoyancy is the sum of the 
 **Solution.** V=W/(ρg)=0.0500 m³. The governing model here is **§42.4 Floating Bodies**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of floating bodies.
 
 ---
+
+<!-- VERIFY id="WE-02-42-004-volume" expr="490.5/(1000*9.81)" expected="0.0500" units="m^3" atol="0.00005" rtol="1e-9" -->
 
 ## 42.5 Resultant Force on a Plane Submerged Surface
 
@@ -139,6 +147,8 @@ ho gh_C\).
 **Solution.** FR=ρghC A=58.86 kN. The governing model here is **§42.5 Resultant Force on a Plane Submerged Surface**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of resultant force on a plane submerged surface.
 
 ---
+
+<!-- VERIFY id="WE-02-42-005-force" expr="1000*9.81*3*2/1000" expected="58.86" units="kN" atol="0.005" rtol="1e-9" -->
 
 ## 42.6 Center of Pressure
 
@@ -326,17 +336,20 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. A new problem requires **manometer**. Which step should come before numerical substitution?
-A) Confirm the governing model, stated assumptions, and reference quantities
-B) Ignore the model and use any dimensionally similar equation
-C) Convert every quantity to a percentage before analysis
-D) Skip the physical or economic checks if a calculator gives a result
+26. Which statement best describes **manometer**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
 
-27. After applying **barometer**, which validation step best supports accepting the result?
-A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
-B) Accept the result solely because the arithmetic converged
-C) Replace the governing relation with a nearby formula
-D) Ignore the stated reference basis
+27. Which statement best describes **barometer**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
+
+
+---
 
 ## Answer Key with Explanations
 
@@ -390,9 +403,12 @@ D) Ignore the stated reference basis
 
 25. **A.** The chapter applies **hydrostatic equilibrium** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** For **manometer** in *Buoyancy, Manometry, and Forces on Submerged Surfaces*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
+26. **A.** The chapter applies **manometer** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Buoyancy, Manometry, and Forces on Submerged Surfaces**, apply this check specifically through **§42.5 Resultant Force on a Plane Submerged Surface**, including that section's stated assumptions and reference quantities.
 
-27. **A.** For **barometer** in *Buoyancy, Manometry, and Forces on Submerged Surfaces*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
+27. **A.** The chapter applies **barometer** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Buoyancy, Manometry, and Forces on Submerged Surfaces**, apply this check specifically through **§42.6 Center of Pressure**, including that section's stated assumptions and reference quantities.
+
+
+---
 
 ## Practice Problems
 

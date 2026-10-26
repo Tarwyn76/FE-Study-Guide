@@ -67,6 +67,9 @@ The resultant location is found by matching the moment of the distribution, so i
 
 ---
 
+<!-- VERIFY id="WE-02-28-001-resultant" expr="4*3" expected="12" units="kN" atol="1e-9" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-28-001-location" expr="3/2" expected="1.5" units="m" atol="1e-9" rtol="1e-9" -->
+
 ## 28.2 Uniform and Triangular Loads
 
 A uniform load has resultant \(wL\) at the segment midpoint. A triangular load has resultant equal to the triangle area and acts one-third of the base length from the larger-intensity end.
@@ -84,6 +87,8 @@ These are centroid results, not separate force laws.
 **Solution.** R=0.5(6)(4)=12 kN. Reasoning: this uses the **28.2 Uniform and Triangular Loads** model from Chapter 02-28: Distributed Loads, Centroids, and Centers of Gravity. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
+
+<!-- VERIFY id="WE-02-28-002-resultant" expr="0.5*6*4" expected="12" units="kN" atol="1e-9" rtol="1e-9" -->
 
 ## 28.3 Centroid of Discrete Areas
 
@@ -124,6 +129,8 @@ Choose differential elements that make the boundary function simple. Symmetry sh
 **Solution.** xbar=(2·1+3·5)/5=3.4 m. Reasoning: this uses the **28.4 Centroids by Integration** model from Chapter 02-28: Distributed Loads, Centroids, and Centers of Gravity. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
+
+<!-- VERIFY id="WE-02-28-004-xbar" expr="(2*1+3*5)/(2+3)" expected="3.4" units="m" atol="1e-9" rtol="1e-9" -->
 
 ## 28.5 Center of Mass and Center of Gravity
 

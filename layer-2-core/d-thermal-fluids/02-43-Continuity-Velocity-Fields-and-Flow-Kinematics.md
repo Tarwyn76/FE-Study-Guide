@@ -67,6 +67,8 @@ If velocity varies across the section, the exact relation is an area integral an
 
 ---
 
+<!-- VERIFY id="WE-02-43-001-Q" expr="0.020*3" expected="0.060" units="m^3/s" atol="0.0005" rtol="1e-9" -->
+
 ## 43.2 Mass Flow Rate
 
 Mass flow rate combines volumetric flow and density. For a uniform one-dimensional stream, \(\dot m=
@@ -86,6 +88,8 @@ For gases or varying-density flow, constant volumetric flow does not imply const
 
 ---
 
+<!-- VERIFY id="WE-02-43-002-mdot" expr="1000*0.060" expected="60" units="kg/s" atol="1e-9" rtol="1e-9" -->
+
 ## 43.3 Steady One-Dimensional Continuity
 
 For steady flow through a control volume with one inlet and one outlet, mass flow in equals mass flow out.
@@ -103,6 +107,8 @@ If density is constant, the relation reduces to equal volumetric flow and \(A_1v
 **Solution.** v2=A1v1/A2=8 m/s. The governing model here is **§43.3 Steady One-Dimensional Continuity**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of steady one-dimensional continuity.
 
 ---
+
+<!-- VERIFY id="WE-02-43-003-v2" expr="0.040*2/0.010" expected="8" units="m/s" atol="1e-9" rtol="1e-9" -->
 
 ## 43.4 Velocity Fields and Acceleration
 
@@ -122,6 +128,8 @@ This full material-derivative form is guide-developed background; the Handbook s
 
 ---
 
+<!-- VERIFY id="WE-02-43-004-v2" expr="1.2*0.10*5/(0.9*0.08)" expected="8.33" units="m/s" atol="0.005" rtol="1e-9" -->
+
 ## 43.5 Streamlines, Pathlines, and Steady Flow
 
 A streamline is tangent to the instantaneous velocity field. A pathline is the actual trajectory of one fluid particle.
@@ -139,6 +147,8 @@ In steady flow, streamlines and pathlines coincide. In unsteady flow they need n
 **Solution.** 5 kg/s. The governing model here is **§43.5 Streamlines, Pathlines, and Steady Flow**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of streamlines, pathlines, and steady flow.
 
 ---
+
+<!-- VERIFY id="WE-02-43-005-outflow" expr="2+3" expected="5" units="kg/s" atol="1e-9" rtol="1e-9" -->
 
 ## 43.6 Control-Volume Mass Balance
 
@@ -326,17 +336,20 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. A new problem requires **volumetric flow rate**. Which step should come before numerical substitution?
-A) Confirm the governing model, stated assumptions, and reference quantities
-B) Ignore the model and use any dimensionally similar equation
-C) Convert every quantity to a percentage before analysis
-D) Skip the physical or economic checks if a calculator gives a result
+26. Which statement best describes **volumetric flow rate**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
 
-27. After applying **mass flow rate**, which validation step best supports accepting the result?
-A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
-B) Accept the result solely because the arithmetic converged
-C) Replace the governing relation with a nearby formula
-D) Ignore the stated reference basis
+27. Which statement best describes **mass flow rate**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
+
+
+---
 
 ## Answer Key with Explanations
 
@@ -390,9 +403,12 @@ D) Ignore the stated reference basis
 
 25. **A.** The chapter applies **flow kinematics audit** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** For **volumetric flow rate** in *Continuity, Velocity Fields, and Flow Kinematics*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
+26. **A.** The chapter applies **volumetric flow rate** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Continuity, Velocity Fields, and Flow Kinematics**, apply this check specifically through **§43.5 Streamlines, Pathlines, and Steady Flow**, including that section's stated assumptions and reference quantities.
 
-27. **A.** For **mass flow rate** in *Continuity, Velocity Fields, and Flow Kinematics*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
+27. **A.** The chapter applies **mass flow rate** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Continuity, Velocity Fields, and Flow Kinematics**, apply this check specifically through **§43.6 Control-Volume Mass Balance**, including that section's stated assumptions and reference quantities.
+
+
+---
 
 ## Practice Problems
 

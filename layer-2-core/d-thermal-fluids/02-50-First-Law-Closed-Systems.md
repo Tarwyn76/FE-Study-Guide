@@ -67,6 +67,8 @@ Use the Handbook sign convention consistently.
 
 ---
 
+<!-- VERIFY id="WE-02-50-001-dU" expr="100-40" expected="60" units="kJ" atol="1e-9" rtol="1e-9" -->
+
 ## 50.2 Internal, Kinetic, and Potential Energy Changes
 
 Many piston-cylinder problems neglect kinetic and potential energy, but this must be justified. If they are negligible, the balance reduces to \(Q-W=\Delta U\).
@@ -84,6 +86,8 @@ Internal-energy change for an ideal gas can often be obtained from \(c_v\Delta T
 **Solution.** 80 kJ. The governing model here is **§50.2 Internal, Kinetic, and Potential Energy Changes**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of internal, kinetic, and potential energy changes.
 
 ---
+
+<!-- VERIFY id="WE-02-50-002-dU" expr="80" expected="80" units="kJ" atol="1e-9" rtol="1e-9" -->
 
 ## 50.3 Constant-Pressure Boundary Work
 
@@ -103,6 +107,8 @@ For an ideal gas under constant pressure, temperature is proportional to specifi
 
 ---
 
+<!-- VERIFY id="WE-02-50-003-W" expr="200*0.5" expected="100" units="kJ" atol="1e-9" rtol="1e-9" -->
+
 ## 50.4 Constant-Volume Process
 
 A rigid tank has no moving boundary, so boundary work is zero. Heat transfer then changes internal energy when other work modes and KE/PE are absent.
@@ -117,9 +123,11 @@ Pressure may still change significantly as temperature changes.
 
 **Problem.** Ideal gas m=1 kg, R=0.287, T=300 K expands isothermally V2/V1=2. Find work.
 
-**Solution.** W=0.287*300*ln2=59.67 kJ. The governing model here is **§50.4 Constant-Volume Process**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of constant-volume process.
+**Solution.** W=0.287*300*ln2=59.68 kJ. The governing model here is **§50.4 Constant-Volume Process**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of constant-volume process.
 
 ---
+
+<!-- VERIFY id="WE-02-50-004-W" expr="0.287*300*ln(2)" expected="59.68" units="kJ" atol="0.005" rtol="1e-9" -->
 
 ## 50.5 Isothermal Ideal-Gas Process
 
@@ -138,6 +146,8 @@ Thus, for a simple isothermal ideal-gas closed process with negligible other wor
 **Solution.** W=(150-200)/(1-1.3)=166.7 kJ. The governing model here is **§50.5 Isothermal Ideal-Gas Process**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of isothermal ideal-gas process.
 
 ---
+
+<!-- VERIFY id="WE-02-50-005-W" expr="(150-200)/(1-1.3)" expected="166.7" units="kJ" atol="0.05" rtol="1e-9" -->
 
 ## 50.6 Polytropic and Isentropic Processes
 
@@ -182,7 +192,9 @@ Finally, verify that work sign matches expansion/compression and that energy uni
 
 **Problem.** If ideal-gas temperature is constant, what is ΔU under ideal-gas assumption?
 
-**Solution.** Zero. The governing model here is **§50.7 Closed-System Solution Workflow**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of closed-system solution workflow. For an ideal gas, internal energy depends only on temperature, so constant temperature gives ΔU=0 even though boundary work and heat transfer may be nonzero.### Worked Example 9
+**Solution.** Zero. The governing model here is **§50.7 Closed-System Solution Workflow**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of closed-system solution workflow.
+
+### Worked Example 9
 
 **Problem.** Why is process path needed for boundary work?
 
@@ -324,17 +336,20 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. A new problem requires **closed-system first law**. Which step should come before numerical substitution?
-A) Confirm the governing model, stated assumptions, and reference quantities
-B) Ignore the model and use any dimensionally similar equation
-C) Convert every quantity to a percentage before analysis
-D) Skip the physical or economic checks if a calculator gives a result
+26. Which statement best describes **closed-system first law**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
 
-27. After applying **closed-system energy change**, which validation step best supports accepting the result?
-A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
-B) Accept the result solely because the arithmetic converged
-C) Replace the governing relation with a nearby formula
-D) Ignore the stated reference basis
+27. Which statement best describes **closed-system energy change**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
+
+
+---
 
 ## Answer Key with Explanations
 
@@ -388,9 +403,12 @@ D) Ignore the stated reference basis
 
 25. **A.** The chapter applies **closed-system workflow** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** For **closed-system first law** in *First Law — Closed Systems*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
+26. **A.** The chapter applies **closed-system first law** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **First Law — Closed Systems**, apply this check specifically through **§50.5 Isothermal Ideal-Gas Process**, including that section's stated assumptions and reference quantities.
 
-27. **A.** For **closed-system energy change** in *First Law — Closed Systems*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
+27. **A.** The chapter applies **closed-system energy change** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **First Law — Closed Systems**, apply this check specifically through **§50.6 Polytropic and Isentropic Processes**, including that section's stated assumptions and reference quantities.
+
+
+---
 
 ## Practice Problems
 

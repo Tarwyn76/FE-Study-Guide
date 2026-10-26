@@ -70,6 +70,8 @@ Do not mix mass density and specific weight. In SI, density has units kg/m³ whi
 
 ---
 
+<!-- VERIFY id="WE-02-41-001-gamma" expr="1000*9.81/1000" expected="9.81" units="kN/m^3" atol="1e-9" rtol="1e-9" -->
+
 ## 41.2 Pressure, Absolute Pressure, Gauge Pressure, and Vacuum
 
 Pressure is normal compressive stress in a fluid. Engineering instruments often report gauge pressure relative to local atmosphere, while thermodynamic equations require absolute pressure.
@@ -87,6 +89,8 @@ A vacuum gauge reports how far pressure lies below atmospheric pressure. Always 
 **Solution.** ρ=850 kg/m³. The governing model here is **§41.2 Pressure, Absolute Pressure, Gauge Pressure, and Vacuum**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of pressure, absolute pressure, gauge pressure, and vacuum.
 
 ---
+
+<!-- VERIFY id="WE-02-41-002-rho" expr="0.85*1000" expected="850" units="kg/m^3" atol="1e-9" rtol="1e-9" -->
 
 ## 41.3 Dynamic and Kinematic Viscosity
 
@@ -106,6 +110,8 @@ Viscosity is strongly temperature-dependent for many fluids, so use properties a
 
 ---
 
+<!-- VERIFY id="WE-02-41-003-pabs" expr="250+101" expected="351" units="kPa" atol="1e-9" rtol="1e-9" -->
+
 ## 41.4 Newtonian and Non-Newtonian Behavior
 
 A Newtonian fluid has a linear shear-stress versus shear-rate relation with constant \(\mu\). The Handbook also gives a power-law model \(	au=K(dv/dy)^n\).
@@ -123,6 +129,8 @@ For \(n<1\), the model is pseudoplastic/shear-thinning; for \(n>1\), it is dilat
 **Solution.** ν=μ/ρ=2.50×10^-6 m²/s. The governing model here is **§41.4 Newtonian and Non-Newtonian Behavior**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of newtonian and non-newtonian behavior.
 
 ---
+
+<!-- VERIFY id="WE-02-41-004-nu" expr="0.002/800" expected="2.50e-6" units="m^2/s" atol="1e-12" rtol="1e-9" -->
 
 ## 41.5 Surface Tension and Capillarity
 
@@ -142,6 +150,8 @@ The contact angle determines the sign through \(\coseta\). The capillary effect
 
 ---
 
+<!-- VERIFY id="WE-02-41-005-tau" expr="0.5*4" expected="2.0" units="Pa" atol="1e-9" rtol="1e-9" -->
+
 ## 41.6 Hydrostatic Pressure Variation
 
 In a static fluid of constant density, pressure increases with depth. Pressure at points on the same horizontal level in the same connected static fluid is equal.
@@ -160,6 +170,8 @@ The pressure difference depends only on vertical elevation difference, not conta
 
 ---
 
+<!-- VERIFY id="WE-02-41-006-pressure" expr="1000*9.81*3/1000" expected="29.43" units="kPa" atol="0.005" rtol="1e-9" -->
+
 ## 41.7 Hydrostatic Modeling Checks
 
 Before solving a fluid-statics problem, identify the fluid, density or specific weight, gravitational field, vertical coordinate sign, and pressure reference.
@@ -177,6 +189,8 @@ Hydrostatic equations do not apply through regions with significant fluid accele
 **Solution.** h=4σ/(γd)=0.0294 m. The governing model here is **§41.7 Hydrostatic Modeling Checks**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of hydrostatic modeling checks.
 
 ---
+
+<!-- VERIFY id="WE-02-41-007-rise" expr="4*0.072/(9810*0.001)" expected="0.0294" units="m" atol="0.00005" rtol="1e-9" -->
 
 ## Integrated Worked Examples
 
@@ -328,17 +342,20 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. A new problem requires **fluid density**. Which step should come before numerical substitution?
-A) Confirm the governing model, stated assumptions, and reference quantities
-B) Ignore the model and use any dimensionally similar equation
-C) Convert every quantity to a percentage before analysis
-D) Skip the physical or economic checks if a calculator gives a result
+26. Which statement best describes **fluid density**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
 
-27. After applying **fluid pressure**, which validation step best supports accepting the result?
-A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
-B) Accept the result solely because the arithmetic converged
-C) Replace the governing relation with a nearby formula
-D) Ignore the stated reference basis
+27. Which statement best describes **fluid pressure**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
+
+
+---
 
 ## Answer Key with Explanations
 
@@ -392,9 +409,12 @@ D) Ignore the stated reference basis
 
 25. **A.** The chapter applies **hydrostatic model** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** For **fluid density** in *Fluid Properties, Pressure, and Hydrostatics*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
+26. **A.** The chapter applies **fluid density** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Fluid Properties, Pressure, and Hydrostatics**, apply this check specifically through **§41.5 Surface Tension and Capillarity**, including that section's stated assumptions and reference quantities.
 
-27. **A.** For **fluid pressure** in *Fluid Properties, Pressure, and Hydrostatics*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
+27. **A.** The chapter applies **fluid pressure** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Fluid Properties, Pressure, and Hydrostatics**, apply this check specifically through **§41.6 Hydrostatic Pressure Variation**, including that section's stated assumptions and reference quantities.
+
+
+---
 
 ## Practice Problems
 

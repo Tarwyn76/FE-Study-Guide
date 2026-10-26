@@ -67,6 +67,8 @@ Conventional current direction follows positive-charge motion. Electron drift in
 
 ---
 
+<!-- VERIFY id="WE-02-59-001-q" expr="2*15" expected="30" units="C" atol="1e-9" rtol="1e-9" -->
+
 ## 59.2 Voltage and Electric Potential Difference
 
 Voltage is energy or work per unit charge between two points. It is always defined between two nodes and therefore requires a polarity reference.
@@ -103,6 +105,8 @@ Resistivity is a material property; resistance is a property of a specific piece
 
 ---
 
+<!-- VERIFY id="WE-02-59-003-R" expr="1.72e-8*10/(1.0e-6)" expected="0.172" units="ohm" atol="0.0005" rtol="1e-9" -->
+
 ## 59.4 Ohm's Law and the Passive Sign Convention
 
 For an ohmic resistor, voltage and current are related linearly by \(V=IR\). The passive sign convention places current entering the terminal marked positive for the element voltage.
@@ -120,6 +124,8 @@ Under the passive convention, positive \(p=vi\) means the element absorbs power.
 **Solution.** I=V/R=2 A. The governing model here is **§59.4 Ohm's Law and the Passive Sign Convention**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of ohm's law and the passive sign convention.
 
 ---
+
+<!-- VERIFY id="WE-02-59-004-I" expr="12/6" expected="2" units="A" atol="1e-9" rtol="1e-9" -->
 
 ## 59.5 Temperature Dependence of Resistance
 
@@ -139,6 +145,8 @@ Use the stated reference resistance \(R_0\) and reference temperature \(T_0\). T
 
 ---
 
+<!-- VERIFY id="WE-02-59-005-R" expr="10*(1+0.004*(70-20))" expected="12" units="ohm" atol="1e-9" rtol="1e-9" -->
+
 ## 59.6 DC Power in Resistive Elements
 
 Electrical power is the rate of energy transfer. Combining \(P=VI\) with Ohm's law gives convenient resistor forms.
@@ -156,6 +164,8 @@ Use \(I^2R\) or \(V^2/R\) only when \(V\) and \(I\) refer to the same resistor.
 **Solution.** P=VI=72 W. The governing model here is **§59.6 DC Power in Resistive Elements**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of dc power in resistive elements.
 
 ---
+
+<!-- VERIFY id="WE-02-59-006-P" expr="24*3" expected="72" units="W" atol="1e-9" rtol="1e-9" -->
 
 ## 59.7 Electrical Energy and Source-Load Checks
 
@@ -175,6 +185,9 @@ A source can absorb or deliver power depending on operating condition. Always us
 
 ---
 
+<!-- VERIFY id="WE-02-59-007-EkWh" expr="100/1000*5" expected="0.500" units="kWh" atol="0.0005" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-59-007-EMJ" expr="100*5*3600/1e6" expected="1.80" units="MJ" atol="0.005" rtol="1e-9" -->
+
 ## Integrated Worked Examples
 
 ### Worked Example 8
@@ -183,11 +196,17 @@ A source can absorb or deliver power depending on operating condition. Always us
 
 **Solution.** P=25×4=100 W. The governing model here is **§59.7 Electrical Energy and Source-Load Checks**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of electrical energy and source-load checks.
 
+<!-- VERIFY id="WE-02-59-008-P" expr="5**2*4" expected="100" units="W" atol="1e-9" rtol="1e-9" -->
+
 ### Worked Example 9
 
 **Problem.** A 20 Ω resistor has 10 V across it. Find power by V²/R.
 
-**Solution.** P=100/20=5 W. The governing model here is **§59.7 Electrical Energy and Source-Load Checks**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of electrical energy and source-load checks. Using V²/R provides an independent check against I²R after I=V/R; both methods must give the same resistor power.---
+**Solution.** P=100/20=5 W. The governing model here is **§59.7 Electrical Energy and Source-Load Checks**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of electrical energy and source-load checks.
+
+---
+
+<!-- VERIFY id="WE-02-59-009-P" expr="10**2/20" expected="5" units="W" atol="1e-9" rtol="1e-9" -->
 
 ## As the Handbook States It
 
@@ -323,17 +342,20 @@ B) It is independent of topology and frequency
 C) It always represents a scalar DC quantity
 D) It replaces conservation laws
 
-26. A new problem requires **electric charge and current**. Which step should come before numerical substitution?
-A) Confirm the governing model, stated assumptions, and reference quantities
-B) Ignore the model and use any dimensionally similar equation
-C) Convert every quantity to a percentage before analysis
-D) Skip the physical or economic checks if a calculator gives a result
+26. Which statement is most accurate for **electric charge and current**?
+A) It must be used with its defined reference and assumptions
+B) It is independent of topology and frequency
+C) It always represents a scalar DC quantity
+D) It replaces conservation laws
 
-27. After applying **electric potential difference**, which validation step best supports accepting the result?
-A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
-B) Accept the result solely because the arithmetic converged
-C) Replace the governing relation with a nearby formula
-D) Ignore the stated reference basis
+27. Which statement is most accurate for **electric potential difference**?
+A) It must be used with its defined reference and assumptions
+B) It is independent of topology and frequency
+C) It always represents a scalar DC quantity
+D) It replaces conservation laws
+
+
+---
 
 ## Answer Key with Explanations
 
@@ -387,9 +409,12 @@ D) Ignore the stated reference basis
 
 25. **A.** The chapter treats **electrical energy balance** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
 
-26. **A.** For **electric charge and current** in *Electrical Quantities, Ohm's Law, and DC Power*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
+26. **A.** The chapter treats **electric charge and current** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **Electrical Quantities, Ohm's Law, and DC Power**, apply this check specifically through **§59.5 Temperature Dependence of Resistance**, including that section's stated assumptions and reference quantities.
 
-27. **A.** For **electric potential difference** in *Electrical Quantities, Ohm's Law, and DC Power*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
+27. **A.** The chapter treats **electric potential difference** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **Electrical Quantities, Ohm's Law, and DC Power**, apply this check specifically through **§59.6 DC Power in Resistive Elements**, including that section's stated assumptions and reference quantities.
+
+
+---
 
 ## Practice Problems
 

@@ -337,17 +337,20 @@ B) A universal rule independent of conditions
 C) A unit-conversion constant only
 D) A substitute for verified data
 
-26. A new problem requires **acute toxicity**. Which step should come before numerical substitution?
-A) Confirm the governing model, stated assumptions, and reference quantities
-B) Ignore the model and use any dimensionally similar equation
-C) Convert every quantity to a percentage before analysis
-D) Skip the physical or economic checks if a calculator gives a result
+26. Which answer best describes **acute toxicity**?
+A) A conditional engineering concept used under stated assumptions
+B) A universal rule independent of conditions
+C) A unit-conversion constant only
+D) A substitute for verified data
 
-27. After applying **exposure assessment**, which validation step best supports accepting the result?
-A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
-B) Accept the result solely because the arithmetic converged
-C) Replace the governing relation with a nearby formula
-D) Ignore the stated reference basis
+27. Which answer best describes **exposure assessment**?
+A) A conditional engineering concept used under stated assumptions
+B) A universal rule independent of conditions
+C) A unit-conversion constant only
+D) A substitute for verified data
+
+
+---
 
 ## Answer Key with Explanations
 
@@ -397,9 +400,12 @@ D) Ignore the stated reference basis
 
 25. **A.** The chapter applies **chemical compatibility** only under its stated physical/model assumptions.
 
-26. **A.** For **acute toxicity** in *Toxicology, Exposure Limits, Risk, and Chemical Compatibility*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
+26. **A.** The chapter applies **acute toxicity** only under its stated physical/model assumptions.
 
-27. **A.** For **exposure assessment** in *Toxicology, Exposure Limits, Risk, and Chemical Compatibility*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
+27. **A.** The chapter applies **exposure assessment** only under its stated physical/model assumptions.
+
+
+---
 
 ## Practice Problems
 

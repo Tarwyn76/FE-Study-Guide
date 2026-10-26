@@ -83,6 +83,9 @@ Spring stiffness increases strongly with wire diameter and decreases with coil d
 
 **Solution.** \(k=Gd^4/(8D^3N)\). With all other quantities fixed, doubling active coils gives \(k_2/k_1=N_1/N_2=1/2\), so spring rate is **halved**.
 
+
+<!-- VERIFY id="WE-03-84-002-rate-ratio" expr="1/2" expected="0.5" units="dimensionless" atol="1e-12" rtol="1e-12" -->
+
 ---
 
 ## 84.3 Series and parallel spring combinations

@@ -87,6 +87,8 @@ The diagram must preserve sign at each summing junction. A minus sign on the fee
 
 ---
 
+<!-- VERIFY id="WE-02-69-002-Y" expr="4*3" expected="12" units="dimensionless" atol="1e-09" rtol="1e-9" -->
+
 ## 69.3 Open-Loop and Closed-Loop Transfer Functions
 
 For the Handbook's classical loop, the product around the feedback path is the open-loop transfer function. Closing the feedback loop changes the reference-to-output transfer by the denominator \(1+L(s)\).
@@ -123,6 +125,9 @@ The exact disturbance path depends on where the disturbance enters the block dia
 
 ---
 
+<!-- VERIFY id="WE-02-69-004-YR" expr="(2*5)/(1+2*5*1)" expected="0.909" units="dimensionless" atol="0.0005" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-69-004-YL" expr="5/(1+2*5*1)" expected="0.455" units="dimensionless" atol="0.0005" rtol="1e-9" -->
+
 ## 69.5 Characteristic Equation and Pole Stability
 
 Closed-loop poles are roots of the characteristic equation. The Handbook gives \(1+G_1G_2H=0\) for the classical negative-feedback loop.
@@ -153,11 +158,13 @@ This chapter emphasizes recognizing the error class before substituting constant
 
 ### Worked Example 6
 
-**Problem.** For G(s)=5/(2s+1), find the DC gain ratio.
+**Problem.** For G(s)=5/(2s+1), find DC gain.
 
 **Solution.** G(0)=5. The governing model here is **§69.6 Steady-State Gain and Error**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of steady-state gain and error.
 
 ---
+
+<!-- VERIFY id="WE-02-69-006-G0" expr="5/(2*0+1)" expected="5" units="dimensionless" atol="1e-09" rtol="1e-9" -->
 
 ## 69.7 Frequency Response, Gain Margin, and Phase Margin
 
@@ -171,11 +178,13 @@ Positive margins are generally associated with a stable buffer against modeling 
 
 ### Worked Example 7
 
-**Problem.** At the -180° phase crossing, |G|=0.25. Find the gain-margin ratio and report it in dB.
+**Problem.** At the -180° phase crossing, |G|=0.25. Find gain margin in dB.
 
 **Solution.** GM=-20log10(0.25)=12.04 dB. The governing model here is **§69.7 Frequency Response, Gain Margin, and Phase Margin**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of frequency response, gain margin, and phase margin.
 
 ---
+
+<!-- VERIFY id="WE-02-69-007-GM" expr="-20*log10(0.25)" expected="12.04" units="dB" atol="0.005" rtol="1e-9" -->
 
 ## Integrated Worked Examples
 
@@ -184,6 +193,8 @@ Positive margins are generally associated with a stable buffer against modeling 
 **Problem.** At the 0 dB gain crossover, phase is -135°. Find phase margin.
 
 **Solution.** PM=180-135=45°. The governing model here is **§69.7 Frequency Response, Gain Margin, and Phase Margin**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of frequency response, gain margin, and phase margin.
+
+<!-- VERIFY id="WE-02-69-008-PM" expr="180-135" expected="45" units="deg" atol="0.05" rtol="1e-9" -->
 
 ### Worked Example 9
 
@@ -329,17 +340,20 @@ B) It is independent of calibration and dynamics
 C) It replaces physical validation
 D) It is always a static scalar
 
-26. A new problem requires **transfer function**. Which step should come before numerical substitution?
-A) Confirm the governing model, stated assumptions, and reference quantities
-B) Ignore the model and use any dimensionally similar equation
-C) Convert every quantity to a percentage before analysis
-D) Skip the physical or economic checks if a calculator gives a result
+26. Which statement best describes **transfer function**?
+A) Its meaning depends on a defined measurement/control model and assumptions
+B) It is independent of calibration and dynamics
+C) It replaces physical validation
+D) It is always a static scalar
 
-27. After applying **control block diagram**, which validation step best supports accepting the result?
-A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
-B) Accept the result solely because the arithmetic converged
-C) Replace the governing relation with a nearby formula
-D) Ignore the stated reference basis
+27. Which statement best describes **control block diagram**?
+A) Its meaning depends on a defined measurement/control model and assumptions
+B) It is independent of calibration and dynamics
+C) It replaces physical validation
+D) It is always a static scalar
+
+
+---
 
 ## Answer Key with Explanations
 
@@ -393,9 +407,12 @@ D) Ignore the stated reference basis
 
 25. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Transfer Functions and Feedback Control Fundamentals**, apply this check specifically through **§69.4 Disturbance Response and Feedback Rejection**, including that section's stated assumptions and reference quantities.
 
-26. **A.** For **transfer function** in *Transfer Functions and Feedback Control Fundamentals*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
+26. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Transfer Functions and Feedback Control Fundamentals**, apply this check specifically through **§69.5 Characteristic Equation and Pole Stability**, including that section's stated assumptions and reference quantities.
 
-27. **A.** For **control block diagram** in *Transfer Functions and Feedback Control Fundamentals*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
+27. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Transfer Functions and Feedback Control Fundamentals**, apply this check specifically through **§69.6 Steady-State Gain and Error**, including that section's stated assumptions and reference quantities.
+
+
+---
 
 ## Practice Problems
 

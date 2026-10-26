@@ -67,6 +67,9 @@ Use one sign convention consistently; the Handbook defines positive bending as c
 
 ---
 
+<!-- VERIFY id="WE-02-39-001-RA" expr="10/2" expected="5" units="kN" atol="1e-9" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-39-001-RB" expr="10/2" expected="5" units="kN" atol="1e-9" rtol="1e-9" -->
+
 ## 39.2 Load-Shear-Moment Relations
 
 The Handbook relates distributed load, shear, and bending moment through differentiation/integration.
@@ -85,6 +88,8 @@ These relations make diagram slopes and areas powerful checks.
 
 ---
 
+<!-- VERIFY id="WE-02-39-002-Mmax" expr="10*4/4" expected="10" units="kN*m" atol="1e-9" rtol="1e-9" -->
+
 ## 39.3 Shear and Moment Diagrams
 
 Start with support reactions, then move along the beam. Point loads cause jumps in shear; applied concentrated moments cause jumps in the moment diagram. Distributed load changes shear continuously.
@@ -102,6 +107,8 @@ Local extrema in \(M\) occur where \(V=0\) in smooth regions.
 **Solution.** -3 kN/m. Reasoning: this uses the **39.3 Shear and Moment Diagrams** model from Chapter 02-39: Beams — Shear, Moment, Bending, and Deflection. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
+
+<!-- VERIFY id="WE-02-39-003-dVdx" expr="-3" expected="-3" units="kN/m" atol="1e-9" rtol="1e-9" -->
 
 ## 39.4 Bending Normal Stress
 
@@ -146,6 +153,8 @@ Here \(Q\) is the first moment of the area above or below the level where shear 
 **Solution.** σ=Mc/I=31.25 MPa. Reasoning: this uses the **39.5 Transverse Shear Stress** model from Chapter 02-39: Beams — Shear, Moment, Bending, and Deflection. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
+
+<!-- VERIFY id="WE-02-39-005-stress" expr="5000*0.05/8e-6/1e6" expected="31.25" units="MPa" atol="1e-9" rtol="1e-9" -->
 
 ## 39.6 Beam Deflection by Integration
 

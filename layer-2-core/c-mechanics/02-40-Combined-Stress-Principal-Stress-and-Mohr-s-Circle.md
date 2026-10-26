@@ -67,6 +67,8 @@ The result is a stress element described by \(\sigma_x,\sigma_y,	au_{xy}\) for p
 
 ---
 
+<!-- VERIFY id="WE-02-40-001-center" expr="(80+20)/2" expected="50" units="MPa" atol="1e-9" rtol="1e-9" -->
+
 ## 40.2 Stress Transformation
 
 Normal and shear stress on a rotated plane depend on orientation. The transformation equations can be evaluated directly or represented geometrically by Mohr's circle.
@@ -84,6 +86,8 @@ Principal planes are orientations where in-plane shear stress is zero.
 **Solution.** R=sqrt(30²+30²)=42.43 MPa. Reasoning: this uses the **40.2 Stress Transformation** model from Chapter 02-40: Combined Stress, Principal Stress, and Mohr's Circle. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
+
+<!-- VERIFY id="WE-02-40-002-radius" expr="sqrt(((80-20)/2)**2+30**2)" expected="42.43" units="MPa" atol="0.005" rtol="1e-9" -->
 
 ## 40.3 Principal Stresses
 
@@ -103,6 +107,9 @@ They are the algebraically maximum and minimum normal stresses in the plane.
 
 ---
 
+<!-- VERIFY id="WE-02-40-003-sigma1" expr="(80+20)/2+sqrt(((80-20)/2)**2+30**2)" expected="92.43" units="MPa" atol="0.005" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-40-003-sigma2" expr="(80+20)/2-sqrt(((80-20)/2)**2+30**2)" expected="7.57" units="MPa" atol="0.005" rtol="1e-9" -->
+
 ## 40.4 Maximum In-Plane Shear Stress
 
 The maximum in-plane shear stress equals the radius of Mohr's circle.
@@ -120,6 +127,8 @@ The corresponding normal stress on those planes equals the circle center.
 **Solution.** τmax,in=42.43 MPa. Reasoning: this uses the **40.4 Maximum In-Plane Shear Stress** model from Chapter 02-40: Combined Stress, Principal Stress, and Mohr's Circle. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
+
+<!-- VERIFY id="WE-02-40-004-taumax-in" expr="sqrt(((80-20)/2)**2+30**2)" expected="42.43" units="MPa" atol="0.005" rtol="1e-9" -->
 
 ## 40.5 Constructing Mohr's Circle
 
@@ -160,6 +169,8 @@ Quadrant-aware evaluation is essential. Mohr's circle provides a geometric check
 **Solution.** (92.43-0)/2=46.22 MPa. Reasoning: this uses the **40.6 Principal-Plane Orientation** model from Chapter 02-40: Combined Stress, Principal Stress, and Mohr's Circle. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
+
+<!-- VERIFY id="WE-02-40-006-taumax-3d" expr="(92.43-0)/2" expected="46.22" units="MPa" atol="0.0051" rtol="1e-9" -->
 
 ## 40.7 Plane Stress, 3D Shear, and Constitutive Check
 

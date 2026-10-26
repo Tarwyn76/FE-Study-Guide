@@ -67,6 +67,9 @@ Phase compares the timing of sinusoids at the same frequency. A phase lead means
 
 ---
 
+<!-- VERIFY id="WE-02-62-001-T" expr="1000/60" expected="16.67" units="ms" atol="0.005" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-62-001-omega" expr="2*pi*60" expected="377" units="rad/s" atol="0.5" rtol="1e-9" -->
+
 ## 62.2 Average and RMS Values
 
 Average value is the time average over one period. RMS is the square-root of the mean square and is the effective value for resistive heating.
@@ -85,6 +88,8 @@ For a sinusoid, \(X_{rms}=X_{\max}/\sqrt2\).
 
 ---
 
+<!-- VERIFY id="WE-02-62-002-Vrms" expr="170/sqrt(2)" expected="120.2" units="V" atol="0.05" rtol="1e-9" -->
+
 ## 62.3 Phasor Representation
 
 A phasor represents sinusoidal magnitude and phase at one frequency as a complex number, suppressing the common time factor. Differential equations for steady-state sinusoidal circuits become algebraic impedance equations.
@@ -99,9 +104,12 @@ Do not mix peak-value phasors with RMS-value phasors in the same calculation.
 
 **Problem.** Convert 10∠30° to rectangular form.
 
-**Solution.** Using θ=30 deg, 10∠30°=8.66+j5.00 in rectangular form. The governing model here is **§62.3 Phasor Representation**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of phasor representation.
+**Solution.** 8.66+j5.00. The governing model here is **§62.3 Phasor Representation**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of phasor representation.
 
 ---
+
+<!-- VERIFY id="WE-02-62-003-real" expr="10*cos(radians(30))" expected="8.66" units="" atol="0.005" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-62-003-imag" expr="10*sin(radians(30))" expected="5" units="" atol="0.005" rtol="1e-9" -->
 
 ## 62.4 Impedance and Admittance of R, L, and C
 
@@ -121,6 +129,8 @@ Admittance is the reciprocal of impedance and is often convenient for parallel n
 
 ---
 
+<!-- VERIFY id="WE-02-62-004-XL" expr="2*pi*60*0.10" expected="37.7" units="ohm" atol="0.05" rtol="1e-9" -->
+
 ## 62.5 Series and Parallel AC Networks
 
 Series impedances add directly. Parallel impedances combine reciprocally, or their admittances add directly.
@@ -139,6 +149,8 @@ Once equivalent impedance is known, apply phasor Ohm's law \(\underline V=\under
 
 ---
 
+<!-- VERIFY id="WE-02-62-005-XC" expr="1/(2*pi*60*100e-6)" expected="26.5" units="ohm" atol="0.05" rtol="1e-9" -->
+
 ## 62.6 Series and Parallel Resonance
 
 Ideal RLC resonance occurs when inductive and capacitive reactances cancel. Both series and parallel resonance share the ideal resonant frequency \( \omega_0=1/\sqrt{LC}\).
@@ -156,6 +168,8 @@ At series resonance the input impedance is purely resistive and minimum for the 
 **Solution.** f0=1/(2π√LC)=50.3 Hz. The governing model here is **§62.6 Series and Parallel Resonance**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of series and parallel resonance.
 
 ---
+
+<!-- VERIFY id="WE-02-62-006-f0" expr="1/(2*pi*sqrt(0.10*100e-6))" expected="50.3" units="Hz" atol="0.05" rtol="1e-9" -->
 
 ## 62.7 AC Maximum Power Transfer
 
@@ -183,6 +197,9 @@ This condition cancels the load/source reactance pair and matches the resistive 
 
 **Solution.** |Z|=14.14 Ω; θ=45° inductive. The governing model here is **§62.7 AC Maximum Power Transfer**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of ac maximum power transfer.
 
+<!-- VERIFY id="WE-02-62-008-Zmag" expr="sqrt(10**2+10**2)" expected="14.14" units="ohm" atol="0.005" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-62-008-theta" expr="degrees(atan(10/10))" expected="45" units="deg" atol="0.05" rtol="1e-9" -->
+
 ### Worked Example 9
 
 **Problem.** A 120 V RMS source sees Z=30∠-20° Ω. Find current phasor.
@@ -190,6 +207,9 @@ This condition cancels the load/source reactance pair and matches the resistive 
 **Solution.** I=4∠20° A. The governing model here is **§62.7 AC Maximum Power Transfer**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of ac maximum power transfer.
 
 ---
+
+<!-- VERIFY id="WE-02-62-009-Imag" expr="120/30" expected="4" units="A" atol="1e-09" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-62-009-Iangle" expr="0-(-20)" expected="20" units="deg" atol="0.05" rtol="1e-9" -->
 
 ## As the Handbook States It
 
@@ -318,17 +338,20 @@ B) It is independent of topology and frequency
 C) It always represents a scalar DC quantity
 D) It replaces conservation laws
 
-26. A new problem requires **sinusoidal waveform**. Which step should come before numerical substitution?
-A) Confirm the governing model, stated assumptions, and reference quantities
-B) Ignore the model and use any dimensionally similar equation
-C) Convert every quantity to a percentage before analysis
-D) Skip the physical or economic checks if a calculator gives a result
+26. Which statement is most accurate for **sinusoidal waveform**?
+A) It must be used with its defined reference and assumptions
+B) It is independent of topology and frequency
+C) It always represents a scalar DC quantity
+D) It replaces conservation laws
 
-27. After applying **RMS value**, which validation step best supports accepting the result?
-A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
-B) Accept the result solely because the arithmetic converged
-C) Replace the governing relation with a nearby formula
-D) Ignore the stated reference basis
+27. Which statement is most accurate for **RMS value**?
+A) It must be used with its defined reference and assumptions
+B) It is independent of topology and frequency
+C) It always represents a scalar DC quantity
+D) It replaces conservation laws
+
+
+---
 
 ## Answer Key with Explanations
 
@@ -382,9 +405,12 @@ D) Ignore the stated reference basis
 
 25. **A.** The chapter treats **AC maximum power transfer** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
 
-26. **A.** For **sinusoidal waveform** in *Sinusoids, Phasors, Impedance, and Resonance*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
+26. **A.** The chapter treats **sinusoidal waveform** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **Sinusoids, Phasors, Impedance, and Resonance**, apply this check specifically through **§62.5 Series and Parallel AC Networks**, including that section's stated assumptions and reference quantities.
 
-27. **A.** For **RMS value** in *Sinusoids, Phasors, Impedance, and Resonance*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
+27. **A.** The chapter treats **RMS value** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **Sinusoids, Phasors, Impedance, and Resonance**, apply this check specifically through **§62.6 Series and Parallel Resonance**, including that section's stated assumptions and reference quantities.
+
+
+---
 
 ## Practice Problems
 

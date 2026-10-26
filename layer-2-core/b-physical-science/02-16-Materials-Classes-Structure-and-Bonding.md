@@ -321,17 +321,20 @@ B) A universal rule independent of conditions
 C) A unit-conversion constant only
 D) A substitute for verified data
 
-26. A new problem requires **material classes**. Which step should come before numerical substitution?
-A) Confirm the governing model, stated assumptions, and reference quantities
-B) Ignore the model and use any dimensionally similar equation
-C) Convert every quantity to a percentage before analysis
-D) Skip the physical or economic checks if a calculator gives a result
+26. Which answer best describes **material classes**?
+A) A conditional engineering concept used under stated assumptions
+B) A universal rule independent of conditions
+C) A unit-conversion constant only
+D) A substitute for verified data
 
-27. After applying **materials bonding**, which validation step best supports accepting the result?
-A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
-B) Accept the result solely because the arithmetic converged
-C) Replace the governing relation with a nearby formula
-D) Ignore the stated reference basis
+27. Which answer best describes **materials bonding**?
+A) A conditional engineering concept used under stated assumptions
+B) A universal rule independent of conditions
+C) A unit-conversion constant only
+D) A substitute for verified data
+
+
+---
 
 ## Answer Key with Explanations
 
@@ -381,9 +384,12 @@ D) Ignore the stated reference basis
 
 25. **A.** The chapter applies **compatibility** only under its stated physical/model assumptions.
 
-26. **A.** For **material classes** in *Materials Classes, Structure, and Bonding*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
+26. **A.** The chapter applies **material classes** only under its stated physical/model assumptions.
 
-27. **A.** For **materials bonding** in *Materials Classes, Structure, and Bonding*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
+27. **A.** The chapter applies **materials bonding** only under its stated physical/model assumptions.
+
+
+---
 
 ## Practice Problems
 
@@ -403,7 +409,7 @@ D) Ignore the stated reference basis
 
 8. 8. Define anisotropy.
 
-9. Explain the meaning of the glass-transition temperature for an amorphous polymer.
+9. 9. What is Tg?
 
 10. 10. Why should material selection use service-specific property data even when bonding trends are known?
 
@@ -428,7 +434,7 @@ D) Ignore the stated reference basis
 
 8. Properties depend on direction. This directional dependence is anisotropy and results from structure or orientation within the material.
 
-9. The glass-transition temperature marks the range where amorphous polymer regions change from glassy, stiff behavior to rubbery, more mobile behavior. No numeric calculation is required.
+9. The glass-transition temperature marks the temperature range where amorphous polymer regions change from glassy to rubbery behavior.
 
 10. 10. Trends are qualitative; actual composition, processing, temperature, environment, geometry, and failure mode control performance.
 

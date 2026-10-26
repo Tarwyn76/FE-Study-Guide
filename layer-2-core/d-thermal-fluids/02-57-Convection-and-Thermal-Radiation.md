@@ -67,6 +67,8 @@ The coefficient is not a pure fluid property; it depends on geometry, flow regim
 
 ---
 
+<!-- VERIFY id="WE-02-57-001-Q" expr="50*2*(100-20)" expected="8000" units="W" atol="1e-9" rtol="1e-9" -->
+
 ## 57.2 Nusselt, Reynolds, and Prandtl Numbers
 
 Convection correlations are commonly written in terms of dimensionless groups. Nusselt number represents nondimensional heat-transfer coefficient, Reynolds represents inertia/viscosity, and Prandtl compares momentum and thermal diffusivities.
@@ -81,9 +83,11 @@ Evaluate properties at the temperature basis specified by the correlation.
 
 **Problem.** Fluid k=0.6 W/mK, h=120 W/m²K, L=0.05 m. Find Nu.
 
-**Solution.** Nu=(120 W/m²)(0.05 m)/(0.6 W/m·K)=10, dimensionless. The governing model here is **§57.2 Nusselt, Reynolds, and Prandtl Numbers**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of nusselt, reynolds, and prandtl numbers.
+**Solution.** Nu=hL/k=10. The governing model here is **§57.2 Nusselt, Reynolds, and Prandtl Numbers**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of nusselt, reynolds, and prandtl numbers.
 
 ---
+
+<!-- VERIFY id="WE-02-57-002-Nu" expr="120*0.05/0.6" expected="10" units="dimensionless" atol="1e-9" rtol="1e-9" -->
 
 ## 57.3 External Forced Convection
 
@@ -103,6 +107,8 @@ A coefficient from one geometry or regime should not be transferred to another w
 
 ---
 
+<!-- VERIFY id="WE-02-57-003-Re" expr="1000*2*0.05/0.001" expected="100000" units="dimensionless" atol="1e-6" rtol="1e-9" -->
+
 ## 57.4 Internal Forced Convection
 
 For fully developed laminar flow in circular tubes, the Handbook gives constant Nusselt numbers for constant heat flux or constant wall temperature. Turbulent internal-flow correlations depend on Reynolds and Prandtl numbers.
@@ -120,6 +126,8 @@ The bulk-mean fluid temperature changes along the tube as heat is transferred.
 **Solution.** Pr=6.97. The governing model here is **§57.4 Internal Forced Convection**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of internal forced convection.
 
 ---
+
+<!-- VERIFY id="WE-02-57-004-Pr" expr="4180*0.001/0.6" expected="6.97" units="dimensionless" atol="0.005" rtol="1e-9" -->
 
 ## 57.5 Natural Convection
 
@@ -158,6 +166,8 @@ arepsilon=lpha=1\).
 
 ---
 
+<!-- VERIFY id="WE-02-57-006-Qemit" expr="0.8*5.67e-8*500**4" expected="2835" units="W" atol="0.5" rtol="1e-9" -->
+
 ## 57.7 View Factors and Net Radiation Exchange
 
 View factor is the fraction of radiation leaving one surface that reaches another. Reciprocity and summation rules reduce enclosure calculations.
@@ -173,9 +183,11 @@ arepsilon\sigma A(T_s^4-T_{sur}^4)\).
 
 **Problem.** Small gray body ε=0.8, A=1 m², Ts=500 K, surroundings 300 K. Find net radiation.
 
-**Solution.** Q=0.8σ(500^4-300^4)=2467 W. The governing model here is **§57.7 View Factors and Net Radiation Exchange**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of view factors and net radiation exchange.
+**Solution.** Q=0.8σ(500^4-300^4)=2468 W. The governing model here is **§57.7 View Factors and Net Radiation Exchange**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of view factors and net radiation exchange.
 
 ---
+
+<!-- VERIFY id="WE-02-57-007-Qnet" expr="0.8*5.67e-8*(500**4-300**4)" expected="2468" units="W" atol="0.5" rtol="1e-9" -->
 
 ## Integrated Worked Examples
 
@@ -320,17 +332,20 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. A new problem requires **convective heat transfer**. Which step should come before numerical substitution?
-A) Confirm the governing model, stated assumptions, and reference quantities
-B) Ignore the model and use any dimensionally similar equation
-C) Convert every quantity to a percentage before analysis
-D) Skip the physical or economic checks if a calculator gives a result
+26. Which statement best describes **convective heat transfer**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
 
-27. After applying **convection dimensionless groups**, which validation step best supports accepting the result?
-A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
-B) Accept the result solely because the arithmetic converged
-C) Replace the governing relation with a nearby formula
-D) Ignore the stated reference basis
+27. Which statement best describes **convection dimensionless groups**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
+
+
+---
 
 ## Answer Key with Explanations
 
@@ -384,9 +399,12 @@ D) Ignore the stated reference basis
 
 25. **A.** The chapter applies **view factor** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** For **convective heat transfer** in *Convection and Thermal Radiation*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
+26. **A.** The chapter applies **convective heat transfer** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Convection and Thermal Radiation**, apply this check specifically through **§57.5 Natural Convection**, including that section's stated assumptions and reference quantities.
 
-27. **A.** For **convection dimensionless groups** in *Convection and Thermal Radiation*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
+27. **A.** The chapter applies **convection dimensionless groups** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Convection and Thermal Radiation**, apply this check specifically through **§57.6 Radiation Properties and Blackbody Emission**, including that section's stated assumptions and reference quantities.
+
+
+---
 
 ## Practice Problems
 

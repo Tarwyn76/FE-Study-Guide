@@ -1,0 +1,30 @@
+schema_version: 1
+batch:
+  chapters:
+    - 02-70
+    - 03-01
+    - 03-02
+    - 03-03
+    - 03-04
+    - 03-05
+    - 03-06
+    - 03-07
+    - 03-08
+    - 03-09
+  worked_examples: 90
+  numeric_candidates: 52
+  tagged_candidates: 51
+  independent_checks: 62
+  curated_exclusions: 1
+  failures: 0
+  coverage_reviews: 0
+  chapter_corrections: 0
+cumulative_through: 03-09
+cumulative:
+  worked_examples: 1016
+  numeric_candidates: 521
+  tagged_candidates: 498
+  independent_checks: 949
+  curated_exclusions: 23
+  failures: 0
+  coverage_reviews: 0

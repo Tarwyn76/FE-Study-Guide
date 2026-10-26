@@ -1,12 +1,12 @@
 # Worked Example Verification Summary
 
-- Scope: **Layers 1-3**
-- Worked examples found: **90**
-- Numeric-result candidates: **25**
-- Tagged numeric candidates: **25**
-- Independent VERIFY checks: **67**
+- Scope: **Layers 0-3**
+- Worked examples found: **3**
+- Numeric-result candidates: **2**
+- Tagged numeric candidates: **1**
+- Independent VERIFY checks: **4**
 - VERIFY tags on non-required examples: **0**
-- Curated numeric-candidate exclusions: **0**
+- Curated numeric-candidate exclusions: **1**
 - Failures: **0**
 - Coverage reviews: **0**
 

@@ -67,6 +67,9 @@ Mach number compares flow speed with acoustic propagation speed and organizes co
 
 **Solution.** \(M=V/a=(340\ {\rm m/s})/(340\ {\rm m/s})=\mathbf{1.00}\). The flow is sonic relative to the stated local speed of sound.
 
+
+<!-- VERIFY id="WE-03-81-001-mach" expr="340/340" expected="1.00" units="dimensionless" atol="1e-12" rtol="1e-12" -->
+
 ---
 
 ## 81.2 Stagnation and static properties

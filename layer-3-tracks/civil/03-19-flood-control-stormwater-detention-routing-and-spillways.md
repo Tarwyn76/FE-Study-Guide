@@ -91,7 +91,7 @@ Level-pool routing assumes the water surface is essentially horizontal across th
 
 \[\Delta S\approx \frac{\Delta t}{2}\left[(I_1+I_2)-(O_1+O_2)\right]\]
 
-![FIG-03-19-003: Stage-storage-outflow curves beside a time-step routing table.](../figures/FIG-03-19-003-level-pool-routing-and-storage-indication-concepts.png)
+![FIG-03-19-003: Level-pool reservoir routing diagram with inflow and outflow hydrographs over a routing interval, a storage curve, a reservoir cross-section, and the storage-update relationship.](../figures/FIG-03-19-003-level-pool-routing-and-storage-indication-concepts.png)
 
 ### Worked Example 3
 

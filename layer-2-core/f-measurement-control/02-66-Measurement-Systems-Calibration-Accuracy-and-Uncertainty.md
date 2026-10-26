@@ -69,6 +69,8 @@ Each stage can affect the reported result. A correct measurement therefore requi
 
 ---
 
+<!-- VERIFY id="WE-02-66-001-S" expr="(5-1)/(200-0)" expected="0.02" units="V/kPa" atol="0.0005" rtol="1e-9" -->
+
 ## 66.2 Calibration Against Reference Values
 
 The Handbook defines calibration as comparison of an instrument's output with accepted input reference values, including evaluation of associated uncertainties.
@@ -86,6 +88,8 @@ Calibration is not simply 'adjusting the zero.' A calibration may reveal offset,
 **Solution.** e=+0.80 °C. The governing model here is **§66.2 Calibration Against Reference Values**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of calibration against reference values.
 
 ---
+
+<!-- VERIFY id="WE-02-66-002-error" expr="100.80-100.00" expected="0.8" units="degC" atol="0.005" rtol="1e-9" -->
 
 ## 66.3 Transducer Sensitivity
 
@@ -122,6 +126,8 @@ A measurement set can be precise but inaccurate if it is tightly clustered aroun
 **Solution.** ∂R/∂x=y=5 and ∂R/∂y=x=10; wR=sqrt[(5·0.2)^2+(10·0.1)^2]=1.414.
 
 ---
+
+<!-- VERIFY id="WE-02-66-004-wR" expr="sqrt((5*0.2)**2+(10*0.1)**2)" expected="1.414" units="units" atol="0.0005" rtol="1e-9" -->
 
 ## 66.5 Error, Uncertainty, and Kline–McClintock Propagation
 
@@ -185,6 +191,8 @@ Before accepting a result, check whether the instrument range was exceeded, whet
 
 **Solution.** 10/4096=2.441 mV. The governing model here is **§66.7 Measurement Planning and Reporting**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of measurement planning and reporting.
 
+<!-- VERIFY id="WE-02-66-008-resolution" expr="10/4096*1000" expected="2.441" units="mV" atol="0.0005" rtol="1e-9" -->
+
 ### Worked Example 9
 
 **Problem.** If a result is 25.0±0.4 kPa with expanded uncertainty k=2, what is the associated standard uncertainty if U=ku?
@@ -192,6 +200,8 @@ Before accepting a result, check whether the instrument range was exceeded, whet
 **Solution.** u=0.2 kPa. The governing model here is **§66.7 Measurement Planning and Reporting**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of measurement planning and reporting.
 
 ---
+
+<!-- VERIFY id="WE-02-66-009-u" expr="0.4/2" expected="0.2" units="kPa" atol="0.0005" rtol="1e-9" -->
 
 ## As the Handbook States It
 
@@ -329,17 +339,20 @@ B) It is independent of calibration and dynamics
 C) It replaces physical validation
 D) It is always a static scalar
 
-26. A new problem requires **measurement chain**. Which step should come before numerical substitution?
-A) Confirm the governing model, stated assumptions, and reference quantities
-B) Ignore the model and use any dimensionally similar equation
-C) Convert every quantity to a percentage before analysis
-D) Skip the physical or economic checks if a calculator gives a result
+26. Which statement best describes **measurement chain**?
+A) Its meaning depends on a defined measurement/control model and assumptions
+B) It is independent of calibration and dynamics
+C) It replaces physical validation
+D) It is always a static scalar
 
-27. After applying **calibration process**, which validation step best supports accepting the result?
-A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
-B) Accept the result solely because the arithmetic converged
-C) Replace the governing relation with a nearby formula
-D) Ignore the stated reference basis
+27. Which statement best describes **calibration process**?
+A) Its meaning depends on a defined measurement/control model and assumptions
+B) It is independent of calibration and dynamics
+C) It replaces physical validation
+D) It is always a static scalar
+
+
+---
 
 ## Answer Key with Explanations
 
@@ -393,9 +406,12 @@ D) Ignore the stated reference basis
 
 25. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Measurement Systems, Calibration, Accuracy, and Uncertainty**, apply this check specifically through **§66.4 Accuracy and Precision**, including that section's stated assumptions and reference quantities.
 
-26. **A.** For **measurement chain** in *Measurement Systems, Calibration, Accuracy, and Uncertainty*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
+26. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Measurement Systems, Calibration, Accuracy, and Uncertainty**, apply this check specifically through **§66.5 Error, Uncertainty, and Kline–McClintock Propagation**, including that section's stated assumptions and reference quantities.
 
-27. **A.** For **calibration process** in *Measurement Systems, Calibration, Accuracy, and Uncertainty*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
+27. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Measurement Systems, Calibration, Accuracy, and Uncertainty**, apply this check specifically through **§66.6 Range, Resolution, Sensitivity, and Uncertainty Are Different**, including that section's stated assumptions and reference quantities.
+
+
+---
 
 ## Practice Problems
 

@@ -61,11 +61,13 @@ These ranges are guidance, not universal sharp boundaries for every geometry and
 
 ### Worked Example 1
 
-**Problem.** Water flows at 2 m/s in D=0.05 m with ν=1.0e-6 m²/s. Find the dimensionless Reynolds number Re.
+**Problem.** Water flows at 2 m/s in D=0.05 m with ν=1.0e-6 m²/s. Find Re.
 
 **Solution.** Re=100,000. The governing model here is **§45.1 Reynolds Number and Flow Regimes**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of reynolds number and flow regimes.
 
 ---
+
+<!-- VERIFY id="WE-02-45-001-Re" expr="2*0.05/1.0e-6" expected="100000" units="dimensionless" atol="1e-6" rtol="1e-9" -->
 
 ## 45.2 Laminar Velocity Profile
 
@@ -85,6 +87,8 @@ The wall velocity is zero under the no-slip model.
 
 ---
 
+<!-- VERIFY id="WE-02-45-002-f" expr="64/1000" expected="0.064" units="dimensionless" atol="1e-9" rtol="1e-9" -->
+
 ## 45.3 Darcy-Weisbach Head Loss
 
 Major head loss in a straight pipe is represented by Darcy-Weisbach. The friction factor is dimensionless and depends on Reynolds number and relative roughness.
@@ -102,6 +106,8 @@ Use the Darcy factor with the Darcy-Weisbach equation; do not mix it with Fannin
 **Solution.** hf=0.02(50/0.1)(4/(2*9.81))=2.04 m. The governing model here is **§45.3 Darcy-Weisbach Head Loss**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of darcy-weisbach head loss.
 
 ---
+
+<!-- VERIFY id="WE-02-45-003-hf" expr="0.02*(50/0.10)*(2**2/(2*9.81))" expected="2.04" units="m" atol="0.005" rtol="1e-9" -->
 
 ## 45.4 Moody Chart and Friction Factor
 
@@ -122,6 +128,8 @@ The Handbook notes the Fanning factor is one-fourth the Darcy factor.
 
 ---
 
+<!-- VERIFY id="WE-02-45-004-hm" expr="1.5*(3**2/(2*9.81))" expected="0.688" units="m" atol="0.0005" rtol="1e-9" -->
+
 ## 45.5 Minor Losses
 
 Fittings, valves, entrances, exits, contractions, and expansions add localized losses often written using a loss coefficient \(K\).
@@ -139,6 +147,8 @@ The problem may provide \(K\) directly. Sum individual minor losses using the ve
 **Solution.** Dh=4A/P=4(0.02)/0.6=0.133 m. The governing model here is **§45.5 Minor Losses**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of minor losses.
 
 ---
+
+<!-- VERIFY id="WE-02-45-005-Dh" expr="4*(0.2*0.1)/(2*(0.2+0.1))" expected="0.133" units="m" atol="0.0005" rtol="1e-9" -->
 
 ## 45.6 Noncircular Conduits and Hydraulic Diameter
 
@@ -326,17 +336,20 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. A new problem requires **Reynolds number**. Which step should come before numerical substitution?
-A) Confirm the governing model, stated assumptions, and reference quantities
-B) Ignore the model and use any dimensionally similar equation
-C) Convert every quantity to a percentage before analysis
-D) Skip the physical or economic checks if a calculator gives a result
+26. Which statement best describes **Reynolds number**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
 
-27. After applying **laminar pipe flow**, which validation step best supports accepting the result?
-A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
-B) Accept the result solely because the arithmetic converged
-C) Replace the governing relation with a nearby formula
-D) Ignore the stated reference basis
+27. Which statement best describes **laminar pipe flow**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
+
+
+---
 
 ## Answer Key with Explanations
 
@@ -390,9 +403,12 @@ D) Ignore the stated reference basis
 
 25. **A.** The chapter applies **pipe-network flow** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** For **Reynolds number** in *Internal Flow — Reynolds Number, Friction, and Head Loss*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
+26. **A.** The chapter applies **Reynolds number** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Internal Flow — Reynolds Number, Friction, and Head Loss**, apply this check specifically through **§45.5 Minor Losses**, including that section's stated assumptions and reference quantities.
 
-27. **A.** For **laminar pipe flow** in *Internal Flow — Reynolds Number, Friction, and Head Loss*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
+27. **A.** The chapter applies **laminar pipe flow** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Internal Flow — Reynolds Number, Friction, and Head Loss**, apply this check specifically through **§45.6 Noncircular Conduits and Hydraulic Diameter**, including that section's stated assumptions and reference quantities.
+
+
+---
 
 ## Practice Problems
 

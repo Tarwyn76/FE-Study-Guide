@@ -67,6 +67,8 @@ For a system of particles, total momentum is the vector sum over all particles.
 
 ---
 
+<!-- VERIFY id="WE-02-35-001-p" expr="2*5" expected="10" units="kg*m/s" atol="1e-9" rtol="1e-9" -->
+
 ## 35.2 Linear Impulse-Momentum
 
 Integrating Newton's second law over time gives change in momentum equal to impulse.
@@ -84,6 +86,8 @@ This is especially effective for short-duration forces or when force is known as
 **Solution.** J=10 N·s. Reasoning: this uses the **35.2 Linear Impulse-Momentum** model from Chapter 02-35: Impulse, Momentum, and Impact. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
+
+<!-- VERIFY id="WE-02-35-002-impulse" expr="20*0.5" expected="10" units="N*s" atol="1e-9" rtol="1e-9" -->
 
 ## 35.3 Conservation of Linear Momentum
 
@@ -103,6 +107,9 @@ Internal forces cancel in the system sum, which is why collisions can often be a
 
 ---
 
+<!-- VERIFY id="WE-02-35-003-p2" expr="2*5-4" expected="6" units="kg*m/s" atol="1e-9" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-35-003-v2" expr="(2*5-4)/2" expected="3" units="m/s" atol="1e-9" rtol="1e-9" -->
+
 ## 35.4 Angular Momentum and Angular Impulse
 
 Angular momentum about point O for a particle is \(\mathbf H_O=\mathbf r	imes m\mathbf v\). The time integral of external moment about O changes angular momentum.
@@ -120,6 +127,8 @@ Choose O to eliminate unknown impulsive forces when their lines of action pass t
 **Solution.** v=(2·4)/(5)=1.6 m/s. Reasoning: this uses the **35.4 Angular Momentum and Angular Impulse** model from Chapter 02-35: Impulse, Momentum, and Impact. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
+
+<!-- VERIFY id="WE-02-35-004-v" expr="(2*4+3*0)/(2+3)" expected="1.6" units="m/s" atol="1e-9" rtol="1e-9" -->
 
 ## 35.5 Direct Central Impact
 

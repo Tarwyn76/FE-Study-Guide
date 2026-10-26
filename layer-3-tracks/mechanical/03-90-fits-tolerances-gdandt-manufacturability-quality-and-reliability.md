@@ -67,6 +67,9 @@ Limits and fits define acceptable size variation around a basic size. Upper/lowe
 
 **Solution.** Size tolerance is the upper minus lower limit: \(20.021-20.000=\mathbf{0.021\ mm}\). The nominal/basic size is not itself the tolerance.
 
+
+<!-- VERIFY id="WE-03-90-001-size-tolerance" expr="20.021-20.000" expected="0.021" units="mm" atol="1e-12" rtol="1e-12" -->
+
 ---
 
 ## 90.2 Clearance, transition, and interference fits
@@ -146,6 +149,9 @@ Assembly variation accumulates from part dimensions. Worst-case stack-up guarant
 **Problem.** Three independent ±0.10-mm worst-case contributors can create ±0.30-mm stack range.
 
 **Solution.** Worst-case stack-up adds absolute contributors: \(\pm0.10\pm0.10\pm0.10\ {\rm mm}\) gives a possible total of \(\mathbf{\pm0.30\ mm}\). Thus the maximum magnitude of the accumulated worst-case variation is **0.30 mm**. Statistical stack methods require an explicit statistical basis and are not the same as worst-case.
+
+
+<!-- VERIFY id="WE-03-90-006-stack" expr="0.10+0.10+0.10" expected="0.30" units="mm" atol="1e-12" rtol="1e-12" -->
 
 ---
 

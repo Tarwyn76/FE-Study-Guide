@@ -67,6 +67,10 @@ Pressure forces, body forces, and support forces all belong in the external-forc
 
 ---
 
+<!-- VERIFY id="WE-02-46-001-mdot" expr="1000*0.05" expected="50" units="kg/s" atol="1e-9" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-46-001-dpx" expr="(1000*0.05)*(0-4)" expected="-200" units="N" atol="1e-9" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-46-001-dpy" expr="(1000*0.05)*(4-0)" expected="200" units="N" atol="1e-9" rtol="1e-9" -->
+
 ## 46.2 Forces on Pipe Bends, Jets, and Blades
 
 Apply momentum separately in coordinate directions. The force solved in the fluid control volume is the force of surroundings on the fluid; the force of the fluid on the hardware is equal and opposite.
@@ -84,6 +88,8 @@ Pressure forces use pressure times area and act inward on the control surface.
 **Solution.** F=ρQv=200 N. The governing model here is **§46.2 Forces on Pipe Bends, Jets, and Blades**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of forces on pipe bends, jets, and blades.
 
 ---
+
+<!-- VERIFY id="WE-02-46-002-force" expr="1000*0.01*20" expected="200" units="N" atol="1e-9" rtol="1e-9" -->
 
 ## 46.3 Pitot/Stagnation Measurements
 
@@ -103,6 +109,8 @@ Pitot measurements determine local velocity, not automatically section-average f
 
 ---
 
+<!-- VERIFY id="WE-02-46-003-speed" expr="sqrt(2*5000/1000)" expected="3.162" units="m/s" atol="0.0005" rtol="1e-9" -->
+
 ## 46.4 Venturi and Differential-Pressure Flowmeters
 
 A venturi meter combines continuity with Bernoulli and a calibration coefficient. Reduced throat area increases speed and lowers static pressure.
@@ -120,6 +128,8 @@ Orifices use the same energy idea but generally produce greater permanent pressu
 **Solution.** Win=ρgQH/η=7.85 kW. The governing model here is **§46.4 Venturi and Differential-Pressure Flowmeters**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of venturi and differential-pressure flowmeters.
 
 ---
+
+<!-- VERIFY id="WE-02-46-004-power" expr="1000*9.81*0.02*30/0.75/1000" expected="7.85" units="kW" atol="0.005" rtol="1e-9" -->
 
 ## 46.5 Pump Head, Power, and Efficiency
 
@@ -139,6 +149,8 @@ The operating point is set by both the pump curve and the system curve.
 **Solution.** Q2/Q1=1.10. The governing model here is **§46.5 Pump Head, Power, and Efficiency**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of pump head, power, and efficiency.
 
 ---
+
+<!-- VERIFY id="WE-02-46-005-flow-ratio" expr="1.10" expected="1.10" units="ratio" atol="1e-9" rtol="1e-9" -->
 
 ## 46.6 Pump/Fan Affinity Laws and Performance Curves
 
@@ -327,17 +339,20 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. A new problem requires **fluid momentum balance**. Which step should come before numerical substitution?
-A) Confirm the governing model, stated assumptions, and reference quantities
-B) Ignore the model and use any dimensionally similar equation
-C) Convert every quantity to a percentage before analysis
-D) Skip the physical or economic checks if a calculator gives a result
+26. Which statement best describes **fluid momentum balance**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
 
-27. After applying **flow-induced force**, which validation step best supports accepting the result?
-A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
-B) Accept the result solely because the arithmetic converged
-C) Replace the governing relation with a nearby formula
-D) Ignore the stated reference basis
+27. Which statement best describes **flow-induced force**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
+
+
+---
 
 ## Answer Key with Explanations
 
@@ -391,9 +406,12 @@ D) Ignore the stated reference basis
 
 25. **A.** The chapter applies **fluid turbine** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** For **fluid momentum balance** in *Momentum, Flow Measurement, Pumps, and Turbines*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
+26. **A.** The chapter applies **fluid momentum balance** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Momentum, Flow Measurement, Pumps, and Turbines**, apply this check specifically through **§46.5 Pump Head, Power, and Efficiency**, including that section's stated assumptions and reference quantities.
 
-27. **A.** For **flow-induced force** in *Momentum, Flow Measurement, Pumps, and Turbines*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
+27. **A.** The chapter applies **flow-induced force** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Momentum, Flow Measurement, Pumps, and Turbines**, apply this check specifically through **§46.6 Pump/Fan Affinity Laws and Performance Curves**, including that section's stated assumptions and reference quantities.
+
+
+---
 
 ## Practice Problems
 

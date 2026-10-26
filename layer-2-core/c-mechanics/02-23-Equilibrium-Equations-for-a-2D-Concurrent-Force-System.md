@@ -67,6 +67,9 @@ The first task is to confirm concurrency. A rigid body carrying forces at differ
 
 ---
 
+<!-- VERIFY id="WE-02-23-001-fx" expr="500*cos(radians(30))" expected="433" units="N" atol="0.05" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-23-001-fy" expr="500*sin(radians(30))" expected="250" units="N" atol="0.05" rtol="1e-9" -->
+
 ## 23.2 Resolving Forces into Components
 
 Resolve each inclined force into signed Cartesian components. Use geometry, not a memorized sign pattern. Components inherit their signs from the chosen positive axes.
@@ -84,6 +87,8 @@ If a force direction is defined by a triangle or coordinate difference, construc
 **Solution.** R=sqrt(300²+400²)=500 N. The two force components are perpendicular, so the resultant magnitude follows from the Pythagorean relation. The 300-400-500 triangle gives a 500-N resultant directed into the fourth quadrant.
 
 ---
+
+<!-- VERIFY id="WE-02-23-002-resultant" expr="sqrt(300**2+400**2)" expected="500" units="N" atol="1e-9" rtol="1e-9" -->
 
 ## 23.3 The Two Scalar Equilibrium Equations
 

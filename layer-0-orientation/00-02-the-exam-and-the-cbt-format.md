@@ -396,6 +396,11 @@ Step 3 — Build checkpoints. Divide the exam into quarters.
 **Check.** Four checkpoints at 80 minutes each gives 320 minutes total, and
 27–28 questions per checkpoint gives 110. Both figures reconcile. ✓
 
+<!-- VERIFY id="WE-00-02-001-working-minutes" expr="5*60+20" expected="320" units="min" atol="1e-12" rtol="1e-12" -->
+<!-- VERIFY id="WE-00-02-001-average-minutes" expr="320/110" expected="2.91" units="min/question" atol="0.005" rtol="1e-12" -->
+<!-- VERIFY id="WE-00-02-001-rounded-seconds" expr="(320/110)*60" expected="175" units="s/question" atol="0.5" rtol="1e-12" -->
+<!-- VERIFY id="WE-00-02-001-quarter-checkpoint" expr="320/4" expected="80" units="min" atol="1e-12" rtol="1e-12" -->
+
 **Interpretation.** You now have four moments in the exam where you glance
 at the clock and the question counter and know instantly whether you're
 ahead or behind. No mental arithmetic required. That's the entire point of

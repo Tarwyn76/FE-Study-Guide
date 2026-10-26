@@ -67,6 +67,8 @@ Pure translation has the same velocity and acceleration for all points at an ins
 
 ---
 
+<!-- VERIFY id="WE-02-36-001-v" expr="0.5*8" expected="4" units="m/s" atol="1e-9" rtol="1e-9" -->
+
 ## 36.2 Relative Acceleration on a Rigid Body
 
 For two points fixed in the same rigid body,
@@ -89,6 +91,8 @@ The tangential term depends on angular acceleration; the normal term points towa
 
 ---
 
+<!-- VERIFY id="WE-02-36-002-at" expr="0.5*3" expected="1.5" units="m/s^2" atol="1e-9" rtol="1e-9" -->
+
 ## 36.3 Fixed-Axis Rotation
 
 For rotation about a fixed axis, angular position, velocity, and acceleration obey the same constant-acceleration structure as rectilinear motion when \(lpha\) is constant.
@@ -107,6 +111,8 @@ Point speed grows linearly with radius.
 
 ---
 
+<!-- VERIFY id="WE-02-36-003-an" expr="0.5*8**2" expected="32" units="m/s^2" atol="1e-9" rtol="1e-9" -->
+
 ## 36.4 Instantaneous Center of Zero Velocity
 
 In general plane motion, there is often an instantaneous center about which the body is momentarily rotating. Velocities are perpendicular to lines from the instant center and have magnitude \(v=\omega r\).
@@ -124,6 +130,8 @@ The instantaneous center is a velocity construction, not generally a zero-accele
 **Solution.** I=0.5(10)(0.16)=0.8 kg·m². Reasoning: this uses the **36.4 Instantaneous Center of Zero Velocity** model from Chapter 02-36: Rigid-Body Planar Kinematics and Kinetics. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
+
+<!-- VERIFY id="WE-02-36-004-I" expr="0.5*10*0.4**2" expected="0.8" units="kg*m^2" atol="1e-9" rtol="1e-9" -->
 
 ## 36.5 Mass Moment of Inertia
 
@@ -164,6 +172,8 @@ The force and moment equations are coupled through the body's constraints and ge
 **Solution.** T=0.5(5)(4)+0.5(0.4)(9)=11.8 J. Reasoning: this uses the **36.6 Rigid-Body Equations of Motion** model from Chapter 02-36: Rigid-Body Planar Kinematics and Kinetics. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
+
+<!-- VERIFY id="WE-02-36-006-ke" expr="0.5*5*2**2+0.5*0.4*3**2" expected="11.8" units="J" atol="1e-9" rtol="1e-9" -->
 
 ## 36.7 Rigid-Body Energy and Angular Momentum
 

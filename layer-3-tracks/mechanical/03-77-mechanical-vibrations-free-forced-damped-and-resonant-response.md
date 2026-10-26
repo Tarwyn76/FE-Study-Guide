@@ -67,6 +67,10 @@ The undamped SDOF oscillator is the base vibration model. Natural frequency depe
 
 **Solution.** \(\omega_n=\sqrt{k/m}=\sqrt{400/4}=\mathbf{10\ rad/s}\). The corresponding natural frequency is \(f_n=\omega_n/(2\pi)=\mathbf{1.59\ Hz}\).
 
+
+<!-- VERIFY id="WE-03-77-001-omega" expr="sqrt(400/4)" expected="10" units="rad/s" atol="1e-12" rtol="1e-12" -->
+<!-- VERIFY id="WE-03-77-001-freq" expr="sqrt(400/4)/(2*pi)" expected="1.59" units="Hz" atol="0.005" rtol="1e-12" -->
+
 ---
 
 ## 77.2 Damped free vibration
@@ -82,6 +86,9 @@ Viscous damping controls decay and response type. Underdamped systems oscillate 
 **Problem.** ζ=0.2 is underdamped.
 
 **Solution.** \(\zeta=0.20<1\), so the response is **underdamped** and oscillatory. Its damped natural frequency is \(\omega_d=\omega_n\sqrt{1-\zeta^2}\approx0.980\,\omega_n\).
+
+
+<!-- VERIFY id="WE-03-77-002-damped-ratio" expr="sqrt(1-0.2**2)" expected="0.980" units="dimensionless" atol="0.0005" rtol="1e-12" -->
 
 ---
 
@@ -99,6 +106,9 @@ Successive peak amplitudes can be used to estimate damping for an underdamped sy
 
 **Solution.** \(\delta=\ln(x_n/x_{n+1})=\ln(10/8)=\ln(1.25)=\mathbf{0.223}\). A positive decrement means the measured free-vibration peaks are decaying.
 
+
+<!-- VERIFY id="WE-03-77-003-decrement" expr="ln(10/8)" expected="0.223" units="dimensionless" atol="0.0005" rtol="1e-12" -->
+
 ---
 
 ## 77.4 Harmonic forced vibration
@@ -114,6 +124,9 @@ Steady harmonic response depends on forcing frequency relative to natural freque
 **Problem.** A forcing frequency equal to the undamped natural frequency gives r=1.
 
 **Solution.** The frequency ratio is \(r=\omega/\omega_n\). Because both \(\omega\) and \(\omega_n\) are measured on the same angular-frequency basis (rad/s), equal values give \(\mathbf{r=1.00}\), the resonance neighborhood for the linear SDOF model.
+
+
+<!-- VERIFY id="WE-03-77-004-ratio" expr="10/10" expected="1.00" units="dimensionless" atol="1e-12" rtol="1e-12" -->
 
 ---
 

@@ -67,6 +67,8 @@ At saturation, pressure and temperature are linked. Specifying both does not pro
 
 ---
 
+<!-- VERIFY id="WE-02-48-001-h" expr="500+0.30*2200" expected="1160" units="kJ/kg" atol="1e-9" rtol="1e-9" -->
+
 ## 48.2 Saturation Dome and Critical Point
 
 The liquid-vapor dome is bounded by saturated-liquid and saturated-vapor lines. The critical point is where the distinction between liquid and vapor disappears.
@@ -79,11 +81,13 @@ The triple point is the unique equilibrium of solid, liquid, and vapor phases.
 
 ### Worked Example 2
 
-**Problem.** A mixture contains 2 kg vapor and 6 kg liquid. Find vapor quality x as a dimensionless fraction.
+**Problem.** A mixture contains 2 kg vapor and 6 kg liquid. Find quality.
 
 **Solution.** x=2/8=0.25. The governing model here is **§48.2 Saturation Dome and Critical Point**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of saturation dome and critical point.
 
 ---
+
+<!-- VERIFY id="WE-02-48-002-quality" expr="2/(2+6)" expected="0.25" units="fraction" atol="1e-9" rtol="1e-9" -->
 
 ## 48.3 Quality in the Two-Phase Region
 
@@ -327,17 +331,20 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. A new problem requires **pure substance**. Which step should come before numerical substitution?
-A) Confirm the governing model, stated assumptions, and reference quantities
-B) Ignore the model and use any dimensionally similar equation
-C) Convert every quantity to a percentage before analysis
-D) Skip the physical or economic checks if a calculator gives a result
+26. Which statement best describes **pure substance**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
 
-27. After applying **saturation dome**, which validation step best supports accepting the result?
-A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
-B) Accept the result solely because the arithmetic converged
-C) Replace the governing relation with a nearby formula
-D) Ignore the stated reference basis
+27. Which statement best describes **saturation dome**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
+
+
+---
 
 ## Answer Key with Explanations
 
@@ -391,9 +398,12 @@ D) Ignore the stated reference basis
 
 25. **A.** The chapter applies **property interpolation** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** For **pure substance** in *Pure Substances, Phase Diagrams, and Property Tables*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
+26. **A.** The chapter applies **pure substance** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Pure Substances, Phase Diagrams, and Property Tables**, apply this check specifically through **§48.5 Superheated Vapor and Compressed Liquid**, including that section's stated assumptions and reference quantities.
 
-27. **A.** For **saturation dome** in *Pure Substances, Phase Diagrams, and Property Tables*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
+27. **A.** The chapter applies **saturation dome** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Pure Substances, Phase Diagrams, and Property Tables**, apply this check specifically through **§48.6 P-v, T-s, and P-h Diagrams**, including that section's stated assumptions and reference quantities.
+
+
+---
 
 ## Practice Problems
 

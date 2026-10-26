@@ -71,6 +71,8 @@ Only the component of force along the differential displacement performs work. A
 
 ---
 
+<!-- VERIFY id="WE-02-34-001-work" expr="50*4" expected="200" units="J" atol="1e-9" rtol="1e-9" -->
+
 ## 34.2 Kinetic Energy
 
 For a particle,
@@ -93,6 +95,8 @@ Kinetic energy is scalar; direction of velocity does not appear directly. For ri
 
 ---
 
+<!-- VERIFY id="WE-02-34-002-ke" expr="0.5*2*5**2" expected="25" units="J" atol="1e-9" rtol="1e-9" -->
+
 ## 34.3 Gravitational Potential Energy
 
 Near Earth's surface with constant \(g\), gravitational potential energy is \(V_g=mgh\) relative to a chosen datum.
@@ -110,6 +114,8 @@ Only changes in potential energy affect energy equations; the zero datum is arbi
 **Solution.** ΔV=3(9.81)(2)=58.86 J. Reasoning: this uses the **34.3 Gravitational Potential Energy** model from Chapter 02-34: Work, Energy, and Power. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
+
+<!-- VERIFY id="WE-02-34-003-dv" expr="3*9.81*2" expected="58.86" units="J" atol="0.005" rtol="1e-9" -->
 
 ## 34.4 Elastic Potential Energy
 
@@ -133,6 +139,8 @@ relative to its undeformed length. Spring force is \(F_s=ks\), opposite the disp
 
 ---
 
+<!-- VERIFY id="WE-02-34-004-spring" expr="0.5*400*0.10**2" expected="2" units="J" atol="1e-9" rtol="1e-9" -->
+
 ## 34.5 Work-Energy Equation
 
 For conservative systems, total kinetic plus potential energy is conserved. Nonconservative work is added explicitly.
@@ -150,6 +158,8 @@ This method often avoids solving for acceleration and time.
 **Solution.** P=300 W. Reasoning: this uses the **34.5 Work-Energy Equation** model from Chapter 02-34: Work, Energy, and Power. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
+
+<!-- VERIFY id="WE-02-34-005-power" expr="100*3" expected="300" units="W" atol="1e-9" rtol="1e-9" -->
 
 ## 34.6 Power and Efficiency
 
@@ -173,6 +183,8 @@ For a rotating torque, \(P=T\omega\). Efficiency compares useful output to input
 
 ---
 
+<!-- VERIFY id="WE-02-34-006-power" expr="20*100" expected="2000" units="W" atol="1e-9" rtol="1e-9" -->
+
 ## 34.7 Elastic Strain Energy
 
 Within the linear elastic range, the Mechanics of Materials section gives strain energy for an axially loaded member.
@@ -190,6 +202,9 @@ This bridges dynamics energy methods to structural deformation.
 **Solution.** η=0.80=80%. Reasoning: this uses the **34.7 Elastic Strain Energy** model from Chapter 02-34: Work, Energy, and Power. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
+
+<!-- VERIFY id="WE-02-34-007-eff-frac" expr="4/5" expected="0.80" units="fraction" atol="1e-9" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-34-007-eff-pct" expr="100*4/5" expected="80" units="percent" atol="1e-9" rtol="1e-9" -->
 
 ## Integrated Worked Examples
 

@@ -67,6 +67,8 @@ The general balance includes accumulation plus heat, work, enthalpy, kinetic ene
 
 ---
 
+<!-- VERIFY id="WE-02-51-001-V2" expr="sqrt(2*(500-450)*1000)" expected="316.2" units="m/s" atol="0.05" rtol="1e-9" -->
+
 ## 51.2 Steady-Flow Energy Equation
 
 At steady state, energy stored inside the control volume does not change with time. For one inlet and one outlet, the balance simplifies substantially.
@@ -84,6 +86,8 @@ Mass flow is constant through a one-stream steady device.
 **Solution.** 300 kJ/kg. The governing model here is **§51.2 Steady-Flow Energy Equation**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of steady-flow energy equation.
 
 ---
+
+<!-- VERIFY id="WE-02-51-002-work" expr="1200-900" expected="300" units="kJ/kg" atol="1e-9" rtol="1e-9" -->
 
 ## 51.3 Nozzles and Diffusers
 
@@ -103,6 +107,8 @@ Velocity changes may dominate the balance.
 
 ---
 
+<!-- VERIFY id="WE-02-51-003-work" expr="420-300" expected="120" units="kJ/kg" atol="1e-9" rtol="1e-9" -->
+
 ## 51.4 Turbines
 
 An adiabatic turbine with negligible KE/PE change produces shaft work as enthalpy decreases.
@@ -121,6 +127,8 @@ Actual turbine efficiency compares actual work with the isentropic reference exp
 
 ---
 
+<!-- VERIFY id="WE-02-51-004-h2" expr="250" expected="250" units="kJ/kg" atol="1e-9" rtol="1e-9" -->
+
 ## 51.5 Compressors and Pumps
 
 Compressors and pumps require work input. For an adiabatic compressor with negligible KE/PE change, \(w_{in}=h_2-h_1\).
@@ -138,6 +146,8 @@ For an incompressible pump, the isentropic enthalpy rise is approximated by \(v(
 **Solution.** w=vΔP=5 kJ/kg. The governing model here is **§51.5 Compressors and Pumps**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of compressors and pumps.
 
 ---
+
+<!-- VERIFY id="WE-02-51-005-work" expr="0.001*5e6/1000" expected="5" units="kJ/kg" atol="1e-9" rtol="1e-9" -->
 
 ## 51.6 Throttling Valves
 
@@ -182,6 +192,8 @@ Mixers require both mass and energy balances.
 **Problem.** A boiler with one stream and no work has h1=500, h2=1500 kJ/kg. Find q.
 
 **Solution.** 1000 kJ/kg added. The governing model here is **§51.7 Heat Exchangers, Boilers, Condensers, and Mixers**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of heat exchangers, boilers, condensers, and mixers.
+
+<!-- VERIFY id="WE-02-51-008-q" expr="1500-500" expected="1000" units="kJ/kg" atol="1e-9" rtol="1e-9" -->
 
 ### Worked Example 9
 
@@ -318,17 +330,20 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. A new problem requires **control-volume energy balance**. Which step should come before numerical substitution?
-A) Confirm the governing model, stated assumptions, and reference quantities
-B) Ignore the model and use any dimensionally similar equation
-C) Convert every quantity to a percentage before analysis
-D) Skip the physical or economic checks if a calculator gives a result
+26. Which statement best describes **control-volume energy balance**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
 
-27. After applying **steady-flow energy equation**, which validation step best supports accepting the result?
-A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
-B) Accept the result solely because the arithmetic converged
-C) Replace the governing relation with a nearby formula
-D) Ignore the stated reference basis
+27. Which statement best describes **steady-flow energy equation**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
+
+
+---
 
 ## Answer Key with Explanations
 
@@ -382,9 +397,12 @@ D) Ignore the stated reference basis
 
 25. **A.** The chapter applies **steady-flow components** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** For **control-volume energy balance** in *First Law — Control Volumes*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
+26. **A.** The chapter applies **control-volume energy balance** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **First Law — Control Volumes**, apply this check specifically through **§51.5 Compressors and Pumps**, including that section's stated assumptions and reference quantities.
 
-27. **A.** For **steady-flow energy equation** in *First Law — Control Volumes*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
+27. **A.** The chapter applies **steady-flow energy equation** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **First Law — Control Volumes**, apply this check specifically through **§51.6 Throttling Valves**, including that section's stated assumptions and reference quantities.
+
+
+---
 
 ## Practice Problems
 

@@ -36,9 +36,7 @@ The Handbook directly defines reaction rate, power-law order, Arrhenius temperat
 
 ## Learning Objectives
 
-By the end of this chapter, you will be able to:
-
-* **10.1** Explain and apply **Reaction-Rate Definition**.
+By the end of this chapter, you will be able to:* **10.1** Explain and apply **Reaction-Rate Definition**.
 * **10.2** Explain and apply **Power-Law Rate Laws and Reaction Order**.
 * **10.3** Explain and apply **Integrated Zero-, First-, and Second-Order Batch Kinetics**.
 * **10.4** Explain and apply **Arrhenius Temperature Dependence**.
@@ -68,9 +66,11 @@ Rate can be written in concentration form for a constant-volume batch reactor or
 
 **Problem.** NA decreases 10 mol in a 2 L reactor over 5 min. Find average -rA.
 
-**Solution.** For **Reaction-Rate Definition**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 10, 2, 5, 10/(2×5)=1 mol/(L·min). This is the section-specific result for NA decreases mol reactor over min average. The stated units/basis (min, s) are retained.
+**Solution.** 10/(2×5)=1 mol/(L·min).
 
 ---
+
+<!-- VERIFY id="WE-03-10-001-rate" expr="10/(2*5)" expected="1" units="mol/(L*min)" atol="1e-9" rtol="1e-9" -->
 
 ## 10.2 Power-Law Rate Laws and Reaction Order
 
@@ -86,9 +86,11 @@ Reaction order is obtained from kinetics; it need not equal stoichiometric coeff
 
 **Problem.** Rate law is k CA^2 CB. What is overall order?
 
-**Solution.** For **Power-Law Rate Laws and Reaction Order**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 2, 3. This is the section-specific result for Rate law CA CB overall order. The stated units/basis (s, h) are retained.
+**Solution.** 3.
 
 ---
+
+<!-- VERIFY id="WE-03-10-002-order" expr="2+1" expected="3" units="dimensionless" atol="1e-9" rtol="1e-9" -->
 
 ## 10.3 Integrated Zero-, First-, and Second-Order Batch Kinetics
 
@@ -104,9 +106,11 @@ Recognize the characteristic linear plots: \(C_A\) vs \(t\) for zero order, \(\l
 
 **Problem.** First-order k=0.2 min^-1. Find fraction remaining after 5 min.
 
-**Solution.** For **Integrated Zero-, First-, and Second-Order Batch Kinetics**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) k=0.2, CA/CA0=e^-1=0.3679. This is the section-specific result for First-order min fraction remaining after min. The stated units/basis (min^-1, min) are retained.
+**Solution.** CA/CA0=e^-1=0.3679.
 
 ---
+
+<!-- VERIFY id="WE-03-10-003-fraction" expr="exp(-0.2*5)" expected="0.3679" units="dimensionless" atol="0.00005" rtol="1e-9" -->
 
 ## 10.4 Arrhenius Temperature Dependence
 
@@ -122,7 +126,7 @@ Even a modest temperature increase can strongly increase rate when activation en
 
 **Problem.** k1=0.10 s^-1 at T1 and Ea=50 kJ/mol. Qualitatively what happens to k if T increases?
 
-**Solution.** For **Arrhenius Temperature Dependence**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) k1=0.10, Ea=50, k increases exponentially. This is the section-specific result for Ea kJ mol Qualitatively happens increases. The stated units/basis (kJ/mol, s^-1) are retained.
+**Solution.** k increases exponentially.
 
 ---
 
@@ -140,7 +144,7 @@ The Handbook gives a first-order reversible form and identifies equilibrium conv
 
 **Problem.** At equilibrium, what is net rate of a reversible reaction?
 
-**Solution.** For **Reversible Reactions and Approach to Equilibrium**, Zero. This follows because for reversible reactions, net rate is forward rate minus reverse rate.. That physical distinction controls the result for equilibrium net rate reversible reaction.
+**Solution.** Zero.
 
 ---
 
@@ -158,9 +162,11 @@ This saturation behavior is also representative of some surface-catalyzed kineti
 
 **Problem.** For Michaelis-Menten, C=Km. What fraction of Vmax is rate?
 
-**Solution.** For **Michaelis–Menten and Saturating Kinetics**, 1/2. This follows because the Handbook gives the Michaelis–Menten form for enzyme-catalyzed reactions.. That physical distinction controls the result for Michaelis-Menten Km fraction Vmax rate.
+**Solution.** 1/2.
 
 ---
+
+<!-- VERIFY id="WE-03-10-006-vmaxfrac" expr="1/(1+1)" expected="0.5" units="dimensionless" atol="1e-9" rtol="1e-9" -->
 
 ## 10.7 Parallel and Series Reaction Networks
 
@@ -176,9 +182,11 @@ For parallel power-law reactions, operating concentration and temperature can af
 
 **Problem.** D/U selectivity is 5. If 10 mol U forms, how much D forms?
 
-**Solution.** For **Parallel and Series Reaction Networks**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 5, 10, 50 mol. This is the section-specific result for selectivity mol forms much forms. The stated units/basis (s, h) are retained.
+**Solution.** 50 mol.
 
 ---
+
+<!-- VERIFY id="WE-03-10-007-D" expr="5*10" expected="50" units="mol" atol="1e-9" rtol="1e-9" -->
 
 ## Integrated Worked Examples
 
@@ -186,15 +194,19 @@ For parallel power-law reactions, operating concentration and temperature can af
 
 **Problem.** Zero-order reaction k=2 mol/(L·min), CA0=10 mol/L. Time to depletion?
 
-**Solution.** For **Integrated Worked Examples**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) k=2, CA0=10, 5 min. This is the section-specific result for Zero-order reaction mol min CA mol Time. The stated units/basis (mol/L, min) are retained.
+**Solution.** 5 min.
+
+<!-- VERIFY id="WE-03-10-008-time" expr="10/2" expected="5" units="min" atol="1e-9" rtol="1e-9" -->
 
 ### Worked Example 9
 
 **Problem.** Second-order k=0.1 L/(mol·min), CA0=2 mol/L. Find CA after 5 min.
 
-**Solution.** For **Integrated Worked Examples**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) k=0.1, CA0=2, 1/CA=1/2+0.1×5=1 → CA=1 mol/L. This is the section-specific result for Second-order mol min CA mol CA after. The stated units/basis (mol/L, min) are retained.
+**Solution.** 1/CA=1/2+0.1×5=1 → CA=1 mol/L.
 
 ---
+
+<!-- VERIFY id="WE-03-10-009-CA" expr="1/(1/2+0.1*5)" expected="1" units="mol/L" atol="1e-9" rtol="1e-9" -->
 
 ## As the Handbook States It
 
@@ -343,59 +355,59 @@ D) It is always directly tabulated in the Handbook
 
 ## Answer Key with Explanations
 
-1. **Reaction-Rate Definition.** The Handbook defines species reaction rate as moles formed per unit time per unit reactor volume. In Reaction Kinetics, Rate Laws, and Arrhenius Behavior, this is the definition or balance being tested by Question 1.
+1. **reaction rate** is developed in §10.1. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
 
-2. **Power-Law Rate Laws and Reaction Order.** Order with respect to each reactant is the exponent, and overall order is their sum. In Reaction Kinetics, Rate Laws, and Arrhenius Behavior, this is the definition or balance being tested by Question 2.
+2. **reaction order** is developed in §10.2. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
 
-3. **Integrated Zero-, First-, and Second-Order Batch Kinetics.** For constant-volume batch reactors, the Handbook provides integrated concentration or conversion relations for zero-, first-, and second-order irreversible reactions. In Reaction Kinetics, Rate Laws, and Arrhenius Behavior, this is the definition or balance being tested by Question 3.
+3. **integrated reaction kinetics** is developed in §10.3. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
 
-4. **Arrhenius Temperature Dependence.** The Arrhenius equation relates rate constant to absolute temperature through activation energy. In Reaction Kinetics, Rate Laws, and Arrhenius Behavior, this is the definition or balance being tested by Question 4.
+4. **Arrhenius kinetics** is developed in §10.4. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
 
-5. **Reversible Reactions and Approach to Equilibrium.** For reversible reactions, net rate is forward rate minus reverse rate. In Reaction Kinetics, Rate Laws, and Arrhenius Behavior, this is the definition or balance being tested by Question 5.
+5. **reversible reaction kinetics** is developed in §10.5. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
 
-6. **Michaelis–Menten and Saturating Kinetics.** The Handbook gives the Michaelis–Menten form for enzyme-catalyzed reactions. In Reaction Kinetics, Rate Laws, and Arrhenius Behavior, this is the definition or balance being tested by Question 6.
+6. **Michaelis-Menten kinetics** is developed in §10.6. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
 
-7. **Parallel and Series Reaction Networks.** Desired-product yield depends on competition among reaction pathways. In Reaction Kinetics, Rate Laws, and Arrhenius Behavior, this is the definition or balance being tested by Question 7.
+7. **reaction-network selectivity** is developed in §10.7. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
 
-8. For **Reaction-Rate Definition**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. The Handbook defines species reaction rate as moles formed per unit time per unit reactor volume. This is the specific failure mode emphasized in Reaction Kinetics, Rate Laws, and Arrhenius Behavior.
+8. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
 
-9. For **Power-Law Rate Laws and Reaction Order**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. Order with respect to each reactant is the exponent, and overall order is their sum. This is the specific failure mode emphasized in Reaction Kinetics, Rate Laws, and Arrhenius Behavior.
+9. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
 
-10. For **Integrated Zero-, First-, and Second-Order Batch Kinetics**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. For constant-volume batch reactors, the Handbook provides integrated concentration or conversion relations for zero-, first-, and second-order irreversible reactions. This is the specific failure mode emphasized in Reaction Kinetics, Rate Laws, and Arrhenius Behavior.
+10. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
 
-11. For **Arrhenius Temperature Dependence**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. The Arrhenius equation relates rate constant to absolute temperature through activation energy. This is the specific failure mode emphasized in Reaction Kinetics, Rate Laws, and Arrhenius Behavior.
+11. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
 
-12. For **Reversible Reactions and Approach to Equilibrium**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. For reversible reactions, net rate is forward rate minus reverse rate. This is the specific failure mode emphasized in Reaction Kinetics, Rate Laws, and Arrhenius Behavior.
+12. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
 
-13. For **Michaelis–Menten and Saturating Kinetics**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. The Handbook gives the Michaelis–Menten form for enzyme-catalyzed reactions. This is the specific failure mode emphasized in Reaction Kinetics, Rate Laws, and Arrhenius Behavior.
+13. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
 
-14. For **Parallel and Series Reaction Networks**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. Desired-product yield depends on competition among reaction pathways. This is the specific failure mode emphasized in Reaction Kinetics, Rate Laws, and Arrhenius Behavior.
+14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
 
-15. In **Reaction Kinetics, Rate Laws, and Arrhenius Behavior**, close the material balance first because stream amounts and compositions feed the later energy calculation. Otherwise enthalpy and duty terms may be evaluated for unresolved streams.
+15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
 
-16. For **Reaction Kinetics, Rate Laws, and Arrhenius Behavior**, a degrees-of-freedom check counts unknowns against independent equations before solving. Zero indicates a closed problem; a positive count signals missing independent information.
+16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
 
-17. In **Reaction Kinetics, Rate Laws, and Arrhenius Behavior**, a relation supplied by the FE problem defines the intended model for that question. A remembered correlation can carry different assumptions, coefficients, validity limits, or reference states.
+17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
 
-18. For **Reaction Kinetics, Rate Laws, and Arrhenius Behavior**, separating Handbook-supported material from specification-required learned material distinguishes lookup knowledge from material the guide develops. That boundary prevents guide-developed content from being presented as Handbook text.
+18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
 
-19. **A.** For **Reaction-Rate Definition**, the relation is meaningful only with the correct basis and physical assumptions. The Handbook defines species reaction rate as moles formed per unit time per unit reactor volume. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
+19. **A.** The relation or workflow for **reaction rate** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 
-20. **A.** For **Power-Law Rate Laws and Reaction Order**, the relation is meaningful only with the correct basis and physical assumptions. Order with respect to each reactant is the exponent, and overall order is their sum. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
+20. **A.** The relation or workflow for **reaction order** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 
-21. **A.** For **Integrated Zero-, First-, and Second-Order Batch Kinetics**, the relation is meaningful only with the correct basis and physical assumptions. For constant-volume batch reactors, the Handbook provides integrated concentration or conversion relations for zero-, first-, and second-order irreversible reactions. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
+21. **A.** The relation or workflow for **integrated reaction kinetics** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 
-22. **A.** For **Arrhenius Temperature Dependence**, the relation is meaningful only with the correct basis and physical assumptions. The Arrhenius equation relates rate constant to absolute temperature through activation energy. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
+22. **A.** The relation or workflow for **Arrhenius kinetics** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 
-23. **A.** For **Reversible Reactions and Approach to Equilibrium**, the relation is meaningful only with the correct basis and physical assumptions. For reversible reactions, net rate is forward rate minus reverse rate. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
+23. **A.** The relation or workflow for **reversible reaction kinetics** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 
-24. **A.** For **Michaelis–Menten and Saturating Kinetics**, the relation is meaningful only with the correct basis and physical assumptions. The Handbook gives the Michaelis–Menten form for enzyme-catalyzed reactions. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
+24. **A.** The relation or workflow for **Michaelis-Menten kinetics** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 
-25. **A.** For **Parallel and Series Reaction Networks**, the relation is meaningful only with the correct basis and physical assumptions. Desired-product yield depends on competition among reaction pathways. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
+25. **A.** The relation or workflow for **reaction-network selectivity** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 
-26. **A.** This later check revisits **Reaction-Rate Definition** from a different review position. The Handbook defines species reaction rate as moles formed per unit time per unit reactor volume. The correct choice remains A because the concept still depends on the defined basis and physical assumptions.
+26. **A.** The relation or workflow for **reaction rate** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 
-27. **A.** This later check revisits **Power-Law Rate Laws and Reaction Order** from a different review position. Order with respect to each reactant is the exponent, and overall order is their sum. The correct choice remains A because the concept still depends on the defined basis and physical assumptions.
+27. **A.** The relation or workflow for **reaction order** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 
 
 ---
@@ -427,25 +439,25 @@ D) It is always directly tabulated in the Handbook
 
 ## Practice Problem Solutions
 
-1. For the practice case involving **NA decreases mol reactor over min average**, Using 10, 2, 5, 10/(2×5)=1 mol/(L·min). This completes Practice Problem 1 in Reaction Kinetics, Rate Laws, and Arrhenius Behavior. The original min, s basis is preserved.
+1. 10/(2×5)=1 mol/(L·min).
 
-2. For the practice case involving **Rate law CA CB overall order**, Using 2, 3. This completes Practice Problem 2 in Reaction Kinetics, Rate Laws, and Arrhenius Behavior. The original s, h basis is preserved.
+2. 3.
 
-3. For the practice case involving **First-order min fraction remaining after min**, Using k=0.2, CA/CA0=e^-1=0.3679. This completes Practice Problem 3 in Reaction Kinetics, Rate Laws, and Arrhenius Behavior. The original min^-1, min basis is preserved.
+3. CA/CA0=e^-1=0.3679.
 
-4. For the practice case involving **Ea kJ mol Qualitatively happens increases**, Using k1=0.10, Ea=50, k increases exponentially. This completes Practice Problem 4 in Reaction Kinetics, Rate Laws, and Arrhenius Behavior. The original kJ/mol, s^-1 basis is preserved.
+4. k increases exponentially.
 
-5. For the practice case involving **equilibrium net rate reversible reaction**, Zero. This is the chapter-specific distinction required by Practice Problem 5 in Reaction Kinetics, Rate Laws, and Arrhenius Behavior.
+5. Zero.
 
-6. For the practice case involving **Michaelis-Menten Km fraction Vmax rate**, 1/2. This is the chapter-specific distinction required by Practice Problem 6 in Reaction Kinetics, Rate Laws, and Arrhenius Behavior.
+6. 1/2.
 
-7. For the practice case involving **selectivity mol forms much forms**, Using 5, 10, 50 mol. This completes Practice Problem 7 in Reaction Kinetics, Rate Laws, and Arrhenius Behavior. The original s, h basis is preserved.
+7. 50 mol.
 
-8. For the practice case involving **Zero-order reaction mol min CA mol Time**, Using k=2, CA0=10, 5 min. This completes Practice Problem 8 in Reaction Kinetics, Rate Laws, and Arrhenius Behavior. The original mol/L, min basis is preserved.
+8. 5 min.
 
-9. For the practice case involving **Second-order mol min CA mol CA after**, Using k=0.1, CA0=2, 1/CA=1/2+0.1×5=1 → CA=1 mol/L. This completes Practice Problem 9 in Reaction Kinetics, Rate Laws, and Arrhenius Behavior. The original mol/L, min basis is preserved.
+9. 1/CA=1/2+0.1×5=1 → CA=1 mol/L.
 
-10. For the practice case involving **kinetic quantity obtained from slope ln versus**, Using 1, -Ea/R. This completes Practice Problem 10 in Reaction Kinetics, Rate Laws, and Arrhenius Behavior. The original s, h basis is preserved.
+10. -Ea/R.
 
 
 ---

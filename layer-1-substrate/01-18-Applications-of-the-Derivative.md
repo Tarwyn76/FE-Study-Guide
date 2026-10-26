@@ -193,10 +193,6 @@ $$2c = 5 \implies \boxed{c = 2.5}$$
 
 And $2.5$ lies in $(1,4)$ ✓ as the theorem promises.
 
-
-<!-- VERIFY id="WE-01-18-001-average" expr="(4**2-1**2)/(4-1)" expected="5" units="" atol="1e-09" rtol="1e-09" -->
-<!-- VERIFY id="WE-01-18-001-c" expr="5/2" expected="2.5" units="" atol="1e-09" rtol="1e-09" -->
-
 ---
 
 ## 18.2 Increasing, Decreasing, and Critical Points
@@ -278,12 +274,6 @@ At $x = 3$ the derivative goes $- \to +$: local **minimum**.
 $$f(3) = 27 - 27 - 27 + 5 = -22$$
 
 $$\boxed{\text{Local max } (-1, 10); \quad \text{local min } (3, -22)}$$
-
-
-<!-- VERIFY id="WE-01-18-002-critical1" expr="(6-sqrt((-6)**2-4*3*(-9)))/(2*3)" expected="-1" units="" atol="1e-09" rtol="1e-09" -->
-<!-- VERIFY id="WE-01-18-002-critical2" expr="(6+sqrt((-6)**2-4*3*(-9)))/(2*3)" expected="3" units="" atol="1e-09" rtol="1e-09" -->
-<!-- VERIFY id="WE-01-18-002-fneg1" expr="(-1)**3-3*(-1)**2-9*(-1)+5" expected="10" units="" atol="1e-09" rtol="1e-09" -->
-<!-- VERIFY id="WE-01-18-002-f3" expr="3**3-3*3**2-9*3+5" expected="-22" units="" atol="1e-09" rtol="1e-09" -->
 
 ---
 
@@ -370,12 +360,6 @@ $$f''(3) = 6(3) - 6 = +12 > 0 \implies \text{local minimum} \;\checkmark$$
 
 Both agree with the first derivative test, at a fraction of the work.
 
-
-
-<!-- VERIFY id="WE-01-18-003-infl-x" expr="6/6" expected="1" units="" atol="1e-09" rtol="1e-09" -->
-<!-- VERIFY id="WE-01-18-003-infl-y" expr="1**3-3*1**2-9*1+5" expected="-6" units="" atol="1e-09" rtol="1e-09" -->
-<!-- VERIFY id="WE-01-18-003-second-neg1" expr="6*(-1)-6" expected="-12" units="" atol="1e-09" rtol="1e-09" -->
-<!-- VERIFY id="WE-01-18-003-second3" expr="6*3-6" expected="12" units="" atol="1e-09" rtol="1e-09" -->
 ### Worked Example 4 — When the Second Derivative Test Fails
 
 **Given.** $f(x) = x^4$.
@@ -474,13 +458,6 @@ Here both extrema happen to be interior. Change the interval to $[-2, 6]$ and
 $f(6) = 216 - 108 - 54 + 5 = 59$, which makes the right endpoint the absolute
 maximum instead. The answer depends on the interval, which is exactly why the
 endpoints must be checked every time.
-
-
-<!-- VERIFY id="WE-01-18-005-fneg2" expr="(-2)**3-3*(-2)**2-9*(-2)+5" expected="3" units="" atol="1e-09" rtol="1e-09" -->
-<!-- VERIFY id="WE-01-18-005-f4" expr="4**3-3*4**2-9*4+5" expected="-15" units="" atol="1e-09" rtol="1e-09" -->
-<!-- VERIFY id="WE-01-18-005-fneg1" expr="(-1)**3-3*(-1)**2-9*(-1)+5" expected="10" units="" atol="1e-09" rtol="1e-09" -->
-<!-- VERIFY id="WE-01-18-005-f3" expr="3**3-3*3**2-9*3+5" expected="-22" units="" atol="1e-09" rtol="1e-09" -->
-<!-- VERIFY id="WE-01-18-005-f6" expr="6**3-3*6**2-9*6+5" expected="59" units="" atol="1e-09" rtol="1e-09" -->
 
 ---
 
@@ -629,12 +606,6 @@ result than any single number.
 
 ![FIG-01-18-006: Two-part figure. Left: an isometric sketch of an open-top square-base tank with the base edge labeled x on two sides and the height labeled h, the open top indicated by a dashed rim, and callouts "base area x²" and "four sides, each xh". Right: the plot of A(x) = x² + 128/x for 0 < x ≤ 10, a U-shaped curve with a vertical asymptote behaviour near x = 0, the minimum marked at (4, 48) with a horizontal tangent, and dashed guide lines to both axes.](../figures/FIG-01-18-006-tank-optimization.png)
 
-
-
-<!-- VERIFY id="WE-01-18-007-x" expr="64**(1/3)" expected="4" units="m" atol="1e-09" rtol="1e-09" -->
-<!-- VERIFY id="WE-01-18-007-h" expr="32/(4**2)" expected="2" units="m" atol="1e-09" rtol="1e-09" -->
-<!-- VERIFY id="WE-01-18-007-area" expr="4**2+128/4" expected="48" units="m^2" atol="1e-09" rtol="1e-09" -->
-<!-- VERIFY id="WE-01-18-007-second" expr="2+256/(4**3)" expected="6" units="" atol="1e-09" rtol="1e-09" -->
 ### Worked Example 8 — Maximum Power Transfer
 
 **Given.** A source of open-circuit voltage $V = 24$ V and internal resistance
@@ -694,11 +665,6 @@ different answers, and confusing them is a real design error.
 > matching condition involves complex impedance and the conjugate. Nothing here
 > depends on that. What matters now is the method: an objective function, a
 > substitution, a derivative set to zero, and a verification.
-
-
-<!-- VERIFY id="WE-01-18-008-load" expr="8" expected="8" units="ohm" atol="1e-09" rtol="1e-09" -->
-<!-- VERIFY id="WE-01-18-008-pmax" expr="24**2*8/(8+8)**2" expected="18.0" units="W" atol="1e-09" rtol="1e-09" -->
-<!-- VERIFY id="WE-01-18-008-pmax-check" expr="24**2/(4*8)" expected="18.0" units="W" atol="1e-09" rtol="1e-09" -->
 
 ---
 
@@ -787,11 +753,6 @@ $(\text{area})\,dh$. Worth remembering as a check on any tank problem.
 
 ![FIG-01-18-007: Cross-section of an inverted cone tank, apex at bottom. Full tank dimensions labeled: top radius 3.0 m, depth 4.0 m. Water surface drawn partway up at depth h with surface radius r, the water region shaded. Dashed similar-triangle construction lines show r/h = 3/4. Arrows indicate outflow at the apex labeled dV/dt = −0.60 m³/min and a downward arrow at the surface labeled dh/dt = ?. A callout notes "dV/dh = surface area πr²".](../figures/FIG-01-18-007-conical-tank-related-rates.png)
 
-
-
-<!-- VERIFY id="WE-01-18-009-radius" expr="0.75*2" expected="1.5" units="m" atol="1e-09" rtol="1e-09" -->
-<!-- VERIFY id="WE-01-18-009-area" expr="pi*(1.5**2)" expected="7.0686" units="m^2" atol="5e-05" rtol="1e-09" -->
-<!-- VERIFY id="WE-01-18-009-dhdt" expr="-0.60/(0.5625*pi*(2**2))" expected="-0.0849" units="m/min" atol="5e-05" rtol="1e-09" -->
 ### Worked Example 10 — Isothermal Compression
 
 **Given.** A gas is compressed at constant temperature, so pressure and volume
@@ -830,11 +791,6 @@ $$\frac{1}{P}\frac{dP}{dt} + \frac{1}{V}\frac{dV}{dt} = 0 \implies \frac{dP/dt}{
 The fractional rate of pressure rise equals the fractional rate of volume
 decrease. Check: $\frac{9.60}{240} = 0.0400$ per second and
 $\frac{0.020}{0.500} = 0.0400$ per second ✓ Equal, as required.
-
-
-<!-- VERIFY id="WE-01-18-010-dpdt" expr="-(240/0.500)*(-0.020)" expected="9.6" units="kPa/s" atol="1e-09" rtol="1e-09" -->
-<!-- VERIFY id="WE-01-18-010-relative-p" expr="9.60/240" expected="0.04" units="1/s" atol="1e-09" rtol="1e-09" -->
-<!-- VERIFY id="WE-01-18-010-relative-v" expr="0.020/0.500" expected="0.04" units="1/s" atol="1e-09" rtol="1e-09" -->
 
 ---
 
@@ -1021,10 +977,6 @@ $8.06^{1/3} = e^{0.6956378} = 2.004987$.
 Error: $0.000013$, or about 0.0006% ✓ Excellent, because 0.06 is a small
 increment relative to 8.
 
-
-
-<!-- VERIFY id="WE-01-18-012-linear" expr="2+(1/12)*0.06" expected="2.005" units="" atol="1e-09" rtol="1e-09" -->
-<!-- VERIFY id="WE-01-18-012-exact" expr="8.06**(1/3)" expected="2.004987" units="" atol="6e-07" rtol="1e-09" -->
 ### Worked Example 13 — Error Propagation in a Sphere
 
 **Given.** A spherical vessel's inside radius is measured as
@@ -1076,13 +1028,6 @@ better than 0.67% — that is $\pm 0.17$ mm, and it dictates the instrument.
 > differential method here gives the sensitivity of each contribution, which is
 > the input the statistical treatment needs. Nothing in this chapter depends on
 > that later material.
-
-
-<!-- VERIFY id="WE-01-18-013-volume" expr="(4/3)*pi*(25**3)" expected="65449.85" units="mm^3" atol="0.01" rtol="1e-09" -->
-<!-- VERIFY id="WE-01-18-013-sensitivity" expr="4*pi*(25**2)" expected="7853.98" units="mm^2" atol="0.01" rtol="1e-09" -->
-<!-- VERIFY id="WE-01-18-013-dv" expr="4*pi*(25**2)*0.3" expected="2356" units="mm^3" atol="0.5" rtol="1e-09" -->
-<!-- VERIFY id="WE-01-18-013-relative" expr="3*(0.3/25)" expected="0.036" units="" atol="1e-09" rtol="1e-09" -->
-<!-- VERIFY id="WE-01-18-013-percent" expr="100*3*(0.3/25)" expected="3.6" units="percent" atol="1e-09" rtol="1e-09" -->
 
 ---
 

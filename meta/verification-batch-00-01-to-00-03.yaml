@@ -1,0 +1,24 @@
+schema_version: 1
+batch: 00-01-to-00-03
+chapters:
+  - 00-01
+  - 00-02
+  - 00-03
+worked_examples: 3
+numeric_candidates: 2
+tagged_numeric_candidates: 1
+independent_verify_checks: 4
+curated_exclusions: 1
+failures: 0
+coverage_reviews: 0
+chapter_corrections: 0
+cumulative:
+  unique_numbered_chapters: 135
+  worked_examples: 1127
+  numeric_candidates: 539
+  tagged_numeric_candidates: 515
+  independent_verify_checks: 992
+  verify_tags_on_nonrequired_examples: 22
+  curated_exclusions: 24
+  failures: 0
+  coverage_reviews: 0

@@ -1,37 +1,24 @@
-# FE Audit Framework — 2026-10-23
+# Applying the Phase-1 figure repairs
 
-This package adds validation for the new exam and route assets without changing the stable manuscript audit.
+This package contains corrected chapter copies, repaired/aliased figure assets, a corrected canonical manifest, and updated QA records.
 
-## Files
+## Automatic application
 
-- `tools/technical_audit_exams.py` — technical/content audit for tier, practice, and test-out exam YAML.
-- `tools/audit_routes.py` — checks the seven route markdown files against chapter front-matter route assignments.
-- `tools/run_release_audit.py` — master runner that executes manuscript, blueprint, prerequisite, exam, and route audits.
+Run:
 
-## Development mode
-
-While the 14 full practice exams and seven routes are unfinished:
-
-```powershell
-python .\tools\technical_audit_exams.py "E:\Documents\GitHub\FE-Study-Guide" --allow-incomplete
-python .\tools\audit_routes.py "E:\Documents\GitHub\FE-Study-Guide" --allow-incomplete
-python .\tools\run_release_audit.py "E:\Documents\GitHub\FE-Study-Guide" --development
+```bash
+python tools/apply_figure_repairs.py --root /path/to/FE-Supplemental-Guide --manifest /path/to/figure-manifest.csv
 ```
 
-## Strict release mode
+`--manifest` is optional. When supplied, that file is replaced with `manifests/figure-manifest-fixed.csv`. The script searches the repository recursively for the corrected chapter filenames and copies the supplied figure files into the shortest existing `figures` directory.
 
-```powershell
-python .\tools\run_release_audit.py "E:\Documents\GitHub\FE-Study-Guide"
-```
+The script is idempotent: rerunning it after a successful application makes no additional changes.
 
-Strict mode requires all 10 tier exams, all 14 practice exams, and all seven route files.
+## Manual application
 
-## Exam audit outputs
+1. Replace the matching files in `chapters/`.
+2. Copy all files from `figures/` into the guide's figure asset directory.
+3. Replace the canonical manifest with `manifests/figure-manifest-fixed.csv`.
+4. Keep the files under `meta/` as QA records; they are not manuscript content.
 
-The exam audit writes timestamped files under `audit-results/exams/`:
-
-- `Exam-Audit-Summary(...).md`
-- `Exam-Audit-Issues(...).csv`
-- `Exam-Audit-Inventory(...).csv`
-
-The route audit writes analogous files under `audit-results/routes/`.
+The original project/library files were not overwritten by creation of this package.

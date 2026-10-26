@@ -67,6 +67,8 @@ Signs convey direction along the chosen axis. Speed is the magnitude of velocity
 
 ---
 
+<!-- VERIFY id="WE-02-31-001-v" expr="5+2*4" expected="13" units="m/s" atol="1e-9" rtol="1e-9" -->
+
 ## 31.2 Constant-Acceleration Equations
 
 When acceleration is constant, the Handbook gives the familiar kinematic equations. Use them only when acceleration truly is constant over the interval.
@@ -84,6 +86,8 @@ Choose the equation that eliminates the variable you do not need.
 **Solution.** Δs=5(4)+0.5(2)(16)=36 m. Reasoning: this uses the **31.2 Constant-Acceleration Equations** model from Chapter 02-31: Particle Kinematics — Rectilinear Motion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
+
+<!-- VERIFY id="WE-02-31-002-ds" expr="5*4+0.5*2*4**2" expected="36" units="m" atol="1e-9" rtol="1e-9" -->
 
 ## 31.3 Free Fall and Sign Convention
 
@@ -103,6 +107,8 @@ If upward is positive, \(a=-g\). If downward is positive, \(a=+g\). The physics 
 
 ---
 
+<!-- VERIFY id="WE-02-31-003-speed" expr="9.81*2" expected="19.62" units="m/s" atol="0.005" rtol="1e-9" -->
+
 ## 31.4 Variable Acceleration as a Function of Time
 
 For known \(a(t)\), integrate acceleration to obtain velocity and then integrate velocity to obtain position. Include initial conditions in each integration.
@@ -120,6 +126,8 @@ Definite-integral form often reduces constant-of-integration mistakes.
 **Solution.** v=6t+2 m/s; a=6 m/s². Reasoning: this uses the **31.4 Variable Acceleration as a Function of Time** model from Chapter 02-31: Particle Kinematics — Rectilinear Motion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
+
+<!-- VERIFY id="WE-02-31-004-a" expr="2*3" expected="6" units="m/s^2" atol="1e-9" rtol="1e-9" -->
 
 ## 31.5 Acceleration as a Function of Position
 
@@ -194,6 +202,8 @@ A positive \(v_{A/B}\) means A moves in the positive direction relative to B; cl
 **Solution.** 5 m/s. Reasoning: this uses the **Integrated Worked Examples** model from Chapter 02-31: Particle Kinematics — Rectilinear Motion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
+
+<!-- VERIFY id="WE-02-31-009-vrel" expr="20-15" expected="5" units="m/s" atol="1e-9" rtol="1e-9" -->
 
 ## As the Handbook States It
 

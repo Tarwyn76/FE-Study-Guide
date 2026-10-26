@@ -67,6 +67,8 @@ Each term has units of length and can be compared on one energy-line diagram.
 
 ---
 
+<!-- VERIFY id="WE-02-44-001-pressure" expr="9810*12/1000" expected="117.7" units="kPa" atol="0.05" rtol="1e-9" -->
+
 ## 44.2 Bernoulli Equation and Its Assumptions
 
 Bernoulli relates two points in steady, incompressible, frictionless flow when no pump or turbine work occurs between them along the modeled streamline.
@@ -85,6 +87,8 @@ It is not a universal pressure equation. If losses or machinery matter, use the 
 
 ---
 
+<!-- VERIFY id="WE-02-44-002-vhead" expr="6**2/(2*9.81)" expected="1.835" units="m" atol="0.0005" rtol="1e-9" -->
+
 ## 44.3 Hydraulic Grade Line and Energy Grade Line
 
 The hydraulic grade line (HGL) is \(P/\gamma+z\). The energy grade line (EGL) adds velocity head. Their vertical separation is \(v^2/(2g)\).
@@ -102,6 +106,8 @@ In a constant-diameter pipe without pumps/turbines, both lines decrease in the f
 **Solution.** v=sqrt(2gΔz)=19.81 m/s. The governing model here is **§44.3 Hydraulic Grade Line and Energy Grade Line**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of hydraulic grade line and energy grade line.
 
 ---
+
+<!-- VERIFY id="WE-02-44-003-speed" expr="sqrt(2*9.81*20)" expected="19.81" units="m/s" atol="0.005" rtol="1e-9" -->
 
 ## 44.4 Mechanical-Energy Equation with Head Loss
 
@@ -138,6 +144,8 @@ Use continuity together with Bernoulli when cross-sectional areas differ.
 **Solution.** ΔP=ρg hL=39.24 kPa. The governing model here is **§44.5 Pressure-Velocity-Elevation Tradeoffs**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of pressure-velocity-elevation tradeoffs.
 
 ---
+
+<!-- VERIFY id="WE-02-44-005-dp" expr="1000*9.81*4/1000" expected="39.24" units="kPa" atol="0.005" rtol="1e-9" -->
 
 ## 44.6 Euler Equation for Local Acceleration
 
@@ -325,17 +333,20 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. A new problem requires **fluid head**. Which step should come before numerical substitution?
-A) Confirm the governing model, stated assumptions, and reference quantities
-B) Ignore the model and use any dimensionally similar equation
-C) Convert every quantity to a percentage before analysis
-D) Skip the physical or economic checks if a calculator gives a result
+26. Which statement best describes **fluid head**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
 
-27. After applying **Bernoulli equation**, which validation step best supports accepting the result?
-A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
-B) Accept the result solely because the arithmetic converged
-C) Replace the governing relation with a nearby formula
-D) Ignore the stated reference basis
+27. Which statement best describes **Bernoulli equation**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
+
+
+---
 
 ## Answer Key with Explanations
 
@@ -389,9 +400,12 @@ D) Ignore the stated reference basis
 
 25. **A.** The chapter applies **energy-equation audit** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** For **fluid head** in *Bernoulli and Mechanical-Energy Equations*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
+26. **A.** The chapter applies **fluid head** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Bernoulli and Mechanical-Energy Equations**, apply this check specifically through **§44.5 Pressure-Velocity-Elevation Tradeoffs**, including that section's stated assumptions and reference quantities.
 
-27. **A.** For **Bernoulli equation** in *Bernoulli and Mechanical-Energy Equations*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
+27. **A.** The chapter applies **Bernoulli equation** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Bernoulli and Mechanical-Energy Equations**, apply this check specifically through **§44.6 Euler Equation for Local Acceleration**, including that section's stated assumptions and reference quantities.
+
+
+---
 
 ## Practice Problems
 

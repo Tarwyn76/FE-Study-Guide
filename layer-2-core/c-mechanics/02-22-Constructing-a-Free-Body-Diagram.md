@@ -67,6 +67,9 @@ The most important decision is the **system boundary**. Forces internal to the c
 
 ---
 
+<!-- VERIFY id="WE-02-22-001-weight" expr="20*9.81" expected="196.2" units="N" atol="0.01" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-22-001-normal" expr="20*9.81" expected="196.2" units="N" atol="0.01" rtol="1e-9" -->
+
 ## 22.2 Choosing the Body or Subsystem
 
 Choose the smallest body or subsystem that exposes the unknowns you need without creating unnecessary internal forces. A whole structure may be useful for finding support reactions; a cut member or joint may be better for finding internal forces.

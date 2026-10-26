@@ -71,6 +71,8 @@ Tension is commonly positive and compression negative. The relation is an averag
 
 ---
 
+<!-- VERIFY id="WE-02-37-001-stress" expr="20000/400" expected="50" units="MPa" atol="1e-9" rtol="1e-9" -->
+
 ## 37.2 Engineering Strain and Elastic Modulus
 
 Engineering strain is change in length divided by original length. In the linear elastic uniaxial range, Hooke's law relates stress and strain through Young's modulus \(E\).
@@ -83,11 +85,13 @@ Modulus measures stiffness, not strength.
 
 ### Worked Example 2
 
-**Problem.** A 2-m bar elongates 1 mm. Find engineering strain, expressed as the dimensionless ratio ΔL/L.
+**Problem.** A 2-m bar elongates 1 mm. Find engineering strain.
 
 **Solution.** ε=0.001/2=0.0005. Reasoning: this uses the **37.2 Engineering Strain and Elastic Modulus** model from Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
+
+<!-- VERIFY id="WE-02-37-002-strain" expr="0.001/2" expected="0.0005" units="strain" atol="1e-12" rtol="1e-9" -->
 
 ## 37.3 Axial Deformation
 
@@ -107,6 +111,8 @@ For multiple segments, sum each segment's signed deformation. For continuously v
 
 ---
 
+<!-- VERIFY id="WE-02-37-003-stress" expr="200000*0.0005" expected="100" units="MPa" atol="1e-9" rtol="1e-9" -->
+
 ## 37.4 Poisson's Ratio and Elastic Constants
 
 Poisson's ratio relates lateral contraction to longitudinal extension in uniaxial loading.
@@ -124,6 +130,9 @@ For isotropic linear elastic material, the Handbook gives a relation among Young
 **Solution.** δ=PL/AE=0.001 m=1.0 mm. Reasoning: this uses the **37.4 Poisson's Ratio and Elastic Constants** model from Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
+
+<!-- VERIFY id="WE-02-37-004-delta-m" expr="30000*2/(300e-6*200e9)" expected="0.001" units="m" atol="1e-9" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-37-004-delta-mm" expr="1000*30000*2/(300e-6*200e9)" expected="1.0" units="mm" atol="1e-9" rtol="1e-9" -->
 
 ## 37.5 Thermal Deformation
 
@@ -147,6 +156,9 @@ If expansion or contraction is restrained, thermal strain contributes to stress.
 
 ---
 
+<!-- VERIFY id="WE-02-37-005-delta-m" expr="12e-6*3*50" expected="0.0018" units="m" atol="1e-9" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-37-005-delta-mm" expr="1000*12e-6*3*50" expected="1.8" units="mm" atol="1e-9" rtol="1e-9" -->
+
 ## 37.6 Statically Indeterminate Axial Members
 
 When reaction unknowns exceed available equilibrium equations, compatibility of deformation supplies additional equations.
@@ -164,6 +176,8 @@ Typical compatibility statements specify equal displacements at connected points
 **Solution.** |σ|=EαΔT=120 MPa compressive for heating. Reasoning: this uses the **37.6 Statically Indeterminate Axial Members** model from Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
+
+<!-- VERIFY id="WE-02-37-006-stress" expr="200e9*12e-6*50/1e6" expected="120" units="MPa" atol="1e-9" rtol="1e-9" -->
 
 ## 37.7 Thin-Walled Pressure Vessels
 
@@ -183,6 +197,8 @@ Hoop stress is twice the axial stress for the same pressure, radius, and thickne
 
 ---
 
+<!-- VERIFY id="WE-02-37-007-G" expr="200/(2*(1+0.30))" expected="76.9" units="GPa" atol="0.05" rtol="1e-9" -->
+
 ## Integrated Worked Examples
 
 ### Worked Example 8
@@ -191,6 +207,8 @@ Hoop stress is twice the axial stress for the same pressure, radius, and thickne
 
 **Solution.** σh=pr/t=100 MPa. Reasoning: this uses the **Integrated Worked Examples** model from Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
+<!-- VERIFY id="WE-02-37-008-hoop" expr="2e6*0.25/0.005/1e6" expected="100" units="MPa" atol="1e-9" rtol="1e-9" -->
+
 ### Worked Example 9
 
 **Problem.** For Problem 8, find axial stress.
@@ -198,6 +216,8 @@ Hoop stress is twice the axial stress for the same pressure, radius, and thickne
 **Solution.** σa=pr/(2t)=50 MPa. Reasoning: this uses the **Integrated Worked Examples** model from Chapter 02-37: Stress, Strain, and Axial/Thermal Deformation. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
+
+<!-- VERIFY id="WE-02-37-009-axial" expr="2e6*0.25/(2*0.005)/1e6" expected="50" units="MPa" atol="1e-9" rtol="1e-9" -->
 
 ## As the Handbook States It
 

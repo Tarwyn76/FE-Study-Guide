@@ -73,6 +73,8 @@ Equality applies only at impending slip.
 
 ---
 
+<!-- VERIFY id="WE-02-30-001-fmax" expr="0.40*100" expected="40" units="N" atol="1e-9" rtol="1e-9" -->
+
 ## 30.2 Impending Motion
 
 At the threshold of sliding, static friction reaches its limiting magnitude and acts opposite the impending relative motion.
@@ -90,6 +92,8 @@ Assume an impending direction, draw friction opposing it, solve equilibrium, and
 **Solution.** 25 N opposite the applied force, not 40 N. Reasoning: this uses the **30.2 Impending Motion** model from Chapter 02-30: Static Friction. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
+
+<!-- VERIFY id="WE-02-30-002-friction" expr="min(25,0.40*100)" expected="25" units="N" atol="1e-9" rtol="1e-9" -->
 
 ## 30.3 Kinetic Friction
 
@@ -113,6 +117,8 @@ The Handbook notes that the force needed to initiate sliding is typically greate
 
 ---
 
+<!-- VERIFY id="WE-02-30-003-fk" expr="0.30*100" expected="30" units="N" atol="1e-9" rtol="1e-9" -->
+
 ## 30.4 Blocks on Inclines
 
 Resolve weight into components parallel and normal to the incline. For a simple block with no other normal-direction forces,
@@ -134,6 +140,8 @@ The downslope gravity component is \(W\sin	heta\). Compare required friction wit
 **Solution.** N=500 cos20°=469.8 N. Reasoning: this uses the **30.4 Blocks on Inclines** model from Chapter 02-30: Static Friction. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
+
+<!-- VERIFY id="WE-02-30-004-normal" expr="500*cos(radians(20))" expected="469.8" units="N" atol="0.05" rtol="1e-9" -->
 
 ## 30.5 Tipping versus Sliding
 
@@ -202,6 +210,8 @@ Use the specified plus/minus form carefully for tightening/raising versus loosen
 **Problem.** A belt has μ=0.2, wrap θ=π rad, slack tension 100 N. Find tight tension at impending slip.
 
 **Solution.** F1=100 exp(0.2π)=187.4 N. Reasoning: this uses the **Integrated Worked Examples** model from Chapter 02-30: Static Friction. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
+
+<!-- VERIFY id="WE-02-30-008-tight" expr="100*exp(0.2*pi)" expected="187.4" units="N" atol="0.05" rtol="1e-9" -->
 
 ### Worked Example 9
 

@@ -67,6 +67,8 @@ The specific gas constant is \(R=ar R/M\), where \(M\) is molar mass.
 
 ---
 
+<!-- VERIFY id="WE-02-49-001-pressure" expr="2*0.287*300/1" expected="172.2" units="kPa" atol="0.05" rtol="1e-9" -->
+
 ## 49.2 Specific Heats and Ideal-Gas Property Changes
 
 For ideal gases with constant specific heats, \(\Delta u=c_v\Delta T\) and \(\Delta h=c_p\Delta T\), with \(c_p-c_v=R\).
@@ -84,6 +86,9 @@ The ratio \(k=c_p/c_v\) appears in isentropic relations.
 **Solution.** R=0.287 kJ/kg·K; k=1.400. The governing model here is **§49.2 Specific Heats and Ideal-Gas Property Changes**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of specific heats and ideal-gas property changes.
 
 ---
+
+<!-- VERIFY id="WE-02-49-002-R" expr="1.005-0.718" expected="0.287" units="kJ/kg*K" atol="0.0005" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-49-002-k" expr="1.005/0.718" expected="1.400" units="dimensionless" atol="0.0005" rtol="1e-9" -->
 
 ## 49.3 Isentropic Ideal-Gas Relations
 
@@ -103,6 +108,8 @@ These relations require both ideal-gas behavior and an isentropic process.
 
 ---
 
+<!-- VERIFY id="WE-02-49-003-du" expr="0.718*50" expected="35.9" units="kJ/kg" atol="0.05" rtol="1e-9" -->
+
 ## 49.4 Ideal-Gas Mixtures
 
 Mixtures use mole fraction \(x_i\) and mass fraction \(y_i\). Dalton's law gives total pressure as the sum of partial pressures; for ideal gases, \(x_i=P_i/P\).
@@ -120,6 +127,8 @@ Mixture molecular weight is mole-fraction weighted.
 **Solution.** M=39.2 kg/kmol. The governing model here is **§49.4 Ideal-Gas Mixtures**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of ideal-gas mixtures.
 
 ---
+
+<!-- VERIFY id="WE-02-49-004-M" expr="0.3*28+0.7*44" expected="39.2" units="kg/kmol" atol="0.05" rtol="1e-9" -->
 
 ## 49.5 Real-Gas Correction with Compressibility Factor
 
@@ -139,6 +148,8 @@ When \(Zpprox1\), ideal-gas behavior is a good approximation.
 
 ---
 
+<!-- VERIFY id="WE-02-49-005-omega" expr="0.622*2/(100-2)" expected="0.01269" units="kg/kg dry air" atol="0.000005" rtol="1e-9" -->
+
 ## 49.6 Humidity Ratio, Relative Humidity, and Dew Point
 
 For moist air modeled as an ideal mixture, humidity ratio relates vapor and dry-air mass. Relative humidity compares water-vapor partial pressure with saturation pressure at the same dry-bulb temperature.
@@ -151,11 +162,14 @@ Dew point is the saturation temperature corresponding to the existing vapor part
 
 ### Worked Example 6
 
-**Problem.** If saturation pressure at T is 4 kPa, find relative humidity as a percentage for Pv=2 kPa.
+**Problem.** If saturation pressure at T is 4 kPa, find RH for Pv=2 kPa.
 
 **Solution.** φ=0.50=50%. The governing model here is **§49.6 Humidity Ratio, Relative Humidity, and Dew Point**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of humidity ratio, relative humidity, and dew point.
 
 ---
+
+<!-- VERIFY id="WE-02-49-006-rh-frac" expr="2/4" expected="0.50" units="fraction" atol="1e-9" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-49-006-rh-pct" expr="100*2/4" expected="50" units="percent" atol="1e-9" rtol="1e-9" -->
 
 ## 49.7 Common Psychrometric Processes
 
@@ -325,17 +339,20 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. A new problem requires **ideal gas**. Which step should come before numerical substitution?
-A) Confirm the governing model, stated assumptions, and reference quantities
-B) Ignore the model and use any dimensionally similar equation
-C) Convert every quantity to a percentage before analysis
-D) Skip the physical or economic checks if a calculator gives a result
+26. Which statement best describes **ideal gas**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
 
-27. After applying **ideal-gas specific heat**, which validation step best supports accepting the result?
-A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
-B) Accept the result solely because the arithmetic converged
-C) Replace the governing relation with a nearby formula
-D) Ignore the stated reference basis
+27. Which statement best describes **ideal-gas specific heat**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
+
+
+---
 
 ## Answer Key with Explanations
 
@@ -389,9 +406,12 @@ D) Ignore the stated reference basis
 
 25. **A.** The chapter applies **psychrometric process** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** For **ideal gas** in *Ideal Gases, Gas Mixtures, and Psychrometrics*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
+26. **A.** The chapter applies **ideal gas** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Ideal Gases, Gas Mixtures, and Psychrometrics**, apply this check specifically through **§49.5 Real-Gas Correction with Compressibility Factor**, including that section's stated assumptions and reference quantities.
 
-27. **A.** For **ideal-gas specific heat** in *Ideal Gases, Gas Mixtures, and Psychrometrics*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
+27. **A.** The chapter applies **ideal-gas specific heat** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Ideal Gases, Gas Mixtures, and Psychrometrics**, apply this check specifically through **§49.6 Humidity Ratio, Relative Humidity, and Dew Point**, including that section's stated assumptions and reference quantities.
+
+
+---
 
 ## Practice Problems
 

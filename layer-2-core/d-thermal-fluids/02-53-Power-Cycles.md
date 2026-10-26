@@ -67,6 +67,8 @@ For a cycle, total energy change of the working fluid is zero, so \(W_{net}=Q_H-
 
 ---
 
+<!-- VERIFY id="WE-02-53-001-eff" expr="100*(1000-600)/1000" expected="40" units="percent" atol="0.05" rtol="1e-9" -->
+
 ## 53.2 Carnot Cycle and Maximum Efficiency
 
 The Carnot cycle establishes the maximum possible efficiency between two thermal reservoirs.
@@ -84,6 +86,8 @@ Absolute temperature must be used.
 **Solution.** η=1-300/900=66.7%. The governing model here is **§53.2 Carnot Cycle and Maximum Efficiency**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of carnot cycle and maximum efficiency.
 
 ---
+
+<!-- VERIFY id="WE-02-53-002-eff" expr="100*(1-300/900)" expected="66.7" units="percent" atol="0.05" rtol="1e-9" -->
 
 ## 53.3 Otto Cycle
 
@@ -103,6 +107,8 @@ Under constant-specific-heat assumptions, efficiency depends strongly on compres
 
 ---
 
+<!-- VERIFY id="WE-02-53-003-eff" expr="100*(1-1/(8**(1.4-1)))" expected="56.5" units="percent" atol="0.05" rtol="1e-9" -->
+
 ## 53.4 Brayton Cycle
 
 The Brayton cycle models ideal gas turbines: isentropic compression, constant-pressure heat addition, isentropic expansion, and constant-pressure heat rejection.
@@ -121,6 +127,8 @@ Net work is turbine work minus compressor work.
 
 ---
 
+<!-- VERIFY id="WE-02-53-004-eff" expr="100*((3200-2300)-(210-200))/(3200-210)" expected="29.77" units="percent" atol="0.005" rtol="1e-9" -->
+
 ## 53.5 Rankine Cycle
 
 The Rankine cycle models steam power plants using pump, boiler, turbine, and condenser. Enthalpy differences at each component determine work and heat transfer.
@@ -138,6 +146,8 @@ Pump work is often small relative to turbine work but should not be discarded au
 **Solution.** 200 kJ/kg. The governing model here is **§53.5 Rankine Cycle**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of rankine cycle.
 
 ---
+
+<!-- VERIFY id="WE-02-53-005-net-work" expr="500-300" expected="200" units="kJ/kg" atol="1e-9" rtol="1e-9" -->
 
 ## 53.6 Cycle Component Efficiencies
 
@@ -325,17 +335,20 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. A new problem requires **thermal efficiency**. Which step should come before numerical substitution?
-A) Confirm the governing model, stated assumptions, and reference quantities
-B) Ignore the model and use any dimensionally similar equation
-C) Convert every quantity to a percentage before analysis
-D) Skip the physical or economic checks if a calculator gives a result
+26. Which statement best describes **thermal efficiency**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
 
-27. After applying **Carnot efficiency**, which validation step best supports accepting the result?
-A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
-B) Accept the result solely because the arithmetic converged
-C) Replace the governing relation with a nearby formula
-D) Ignore the stated reference basis
+27. Which statement best describes **Carnot efficiency**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
+
+
+---
 
 ## Answer Key with Explanations
 
@@ -389,9 +402,12 @@ D) Ignore the stated reference basis
 
 25. **A.** The chapter applies **cycle performance** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** For **thermal efficiency** in *Power Cycles*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
+26. **A.** The chapter applies **thermal efficiency** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Power Cycles**, apply this check specifically through **§53.5 Rankine Cycle**, including that section's stated assumptions and reference quantities.
 
-27. **A.** For **Carnot efficiency** in *Power Cycles*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
+27. **A.** The chapter applies **Carnot efficiency** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Power Cycles**, apply this check specifically through **§53.6 Cycle Component Efficiencies**, including that section's stated assumptions and reference quantities.
+
+
+---
 
 ## Practice Problems
 

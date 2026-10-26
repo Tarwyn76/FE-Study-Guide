@@ -67,6 +67,9 @@ Mechanism analysis builds on rigid-body kinematics. Points on the same rigid lin
 
 **Solution.** For fixed-axis rotation the speed magnitude is \(v=\omega r=(10\ {\rm rad/s})(0.20\ {\rm m})=\mathbf{2.0\ m/s}\). The velocity is tangent to the circular path, perpendicular to the radius.
 
+
+<!-- VERIFY id="WE-03-76-001-speed" expr="10*0.20" expected="2.0" units="m/s" atol="1e-12" rtol="1e-12" -->
+
 ---
 
 ## 76.2 Instantaneous centers of zero velocity
@@ -82,6 +85,9 @@ For planar motion, a rigid body can be viewed instantaneously as rotating about 
 **Problem.** If a coupler point is 0.30 m from the IC and the link angular speed is 4 rad/s, its speed is 1.2 m/s.
 
 **Solution.** Using the instantaneous center, \(v_P=\omega r_{P/IC}=(4\ {\rm rad/s})(0.30\ {\rm m})=\mathbf{1.2\ m/s}\). The direction is perpendicular to the line from the IC to the point.
+
+
+<!-- VERIFY id="WE-03-76-002-speed" expr="4*0.30" expected="1.2" units="m/s" atol="1e-12" rtol="1e-12" -->
 
 ---
 
@@ -131,6 +137,9 @@ External gears reverse direction and scale speed according to tooth count. Idler
 
 **Solution.** For external gears, \(\omega_{out}/\omega_{in}=-N_{in}/N_{out}=-(20/60)\). Thus \(\omega_{out}=-(20/60)(1200)=\mathbf{-400\ rpm}\): 400 rpm in the opposite direction.
 
+
+<!-- VERIFY id="WE-03-76-005-rpm" expr="-(20/60)*1200" expected="-400" units="rpm" atol="1e-9" rtol="1e-12" -->
+
 ---
 
 ## 76.6 Compound and planetary gear trains
@@ -146,6 +155,9 @@ Compound trains multiply stage ratios. Planetary trains require relative-motion 
 **Problem.** Two 3:1 reduction stages in series provide 9:1 speed reduction.
 
 **Solution.** Stage ratios multiply. Two 3:1 reductions give \(3\times3=\mathbf{9:1}\), so the final speed magnitude is one-ninth of the input speed. If speed is expressed in rpm, \(n_{out}=n_{in}/9\); the 9:1 ratio itself is dimensionless.
+
+
+<!-- VERIFY id="WE-03-76-006-reduction" expr="3*3" expected="9" units="dimensionless" atol="1e-12" rtol="1e-12" -->
 
 ---
 

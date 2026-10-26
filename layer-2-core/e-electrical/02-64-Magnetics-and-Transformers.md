@@ -63,7 +63,11 @@ Permeability describes how strongly a material supports magnetic flux for a give
 
 **Problem.** A linear magnetic material has μ=2.0×10^-3 H/m and H=500 A/m. Find B.
 
-**Solution.** B=μH=1.0 T. The governing model here is **§64.1 Magnetic Field, Flux Density, and Permeability**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of magnetic field, flux density, and permeability. The flux density is 1.0 T, equivalently 1.0 N/(A·m).---
+**Solution.** B=μH=1.0 T. The governing model here is **§64.1 Magnetic Field, Flux Density, and Permeability**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of magnetic field, flux density, and permeability.
+
+---
+
+<!-- VERIFY id="WE-02-64-001-B" expr="2.0e-3*500" expected="1" units="T" atol="0.0005" rtol="1e-9" -->
 
 ## 64.2 Force on a Current-Carrying Conductor
 
@@ -83,6 +87,8 @@ Magnitude depends on conductor length in the field and the sine of the angle bet
 
 ---
 
+<!-- VERIFY id="WE-02-64-002-F" expr="10*0.50*0.8" expected="4" units="N" atol="1e-09" rtol="1e-9" -->
+
 ## 64.3 Faraday's Law and Lenz's Law
 
 A changing magnetic flux linking a coil induces voltage. The negative sign in Faraday's law represents Lenz's law: induced effects oppose the change that produced them.
@@ -100,6 +106,8 @@ Induced voltage increases with turns count and rate of flux change.
 **Solution.** |v|=N|ΔΦ/Δt|=200(0.002/0.01)=40 V. The governing model here is **§64.3 Faraday's Law and Lenz's Law**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of faraday's law and lenz's law.
 
 ---
+
+<!-- VERIFY id="WE-02-64-003-v" expr="200*abs((3e-3-1e-3)/0.01)" expected="40" units="V" atol="1e-09" rtol="1e-9" -->
 
 ## 64.4 Reluctance, Flux Linkage, and Inductance
 
@@ -119,6 +127,8 @@ Air gaps can dominate reluctance because air has much lower permeability than fe
 
 ---
 
+<!-- VERIFY id="WE-02-64-004-Rmag" expr="0.20/(1.0e-3*4e-4)" expected="500000" units="H^-1" atol="0.5" rtol="1e-9" -->
+
 ## 64.5 Ideal Transformer Turns and Current Ratios
 
 For an ideal transformer, voltage ratio equals turns ratio, while current ratio is inverse. Ideal input and output apparent power are equal.
@@ -137,6 +147,9 @@ Define \(a=N_P/N_S\) and apply the polarity/dot convention supplied by the probl
 
 ---
 
+<!-- VERIFY id="WE-02-64-005-a" expr="1000/250" expected="4" units="dimensionless" atol="1e-09" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-64-005-Vs" expr="480/(1000/250)" expected="120" units="V" atol="1e-09" rtol="1e-9" -->
+
 ## 64.6 Reflected Impedance
 
 A load impedance connected to the secondary appears at the primary multiplied by the square of the turns ratio.
@@ -154,6 +167,8 @@ This is why transformers can match impedances as well as step voltage up or down
 **Solution.** ZP=a²ZS=16×12=192 Ω. The governing model here is **§64.6 Reflected Impedance**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of reflected impedance.
 
 ---
+
+<!-- VERIFY id="WE-02-64-006-Zp" expr="(1000/250)**2*12" expected="192" units="ohm" atol="1e-09" rtol="1e-9" -->
 
 ## 64.7 Three-Phase Transformer Connections
 
@@ -180,6 +195,8 @@ Detailed grounding, harmonic, and protection design is outside this chapter; use
 **Problem.** An ideal transformer has VP/VS=5. If secondary current is 10 A, find primary current.
 
 **Solution.** IP=IS/5=2 A. The governing model here is **§64.7 Three-Phase Transformer Connections**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of three-phase transformer connections.
+
+<!-- VERIFY id="WE-02-64-008-Ip" expr="10/5" expected="2" units="A" atol="1e-09" rtol="1e-9" -->
 
 ### Worked Example 9
 
@@ -323,17 +340,20 @@ B) It is independent of topology and frequency
 C) It always represents a scalar DC quantity
 D) It replaces conservation laws
 
-26. A new problem requires **magnetic flux**. Which step should come before numerical substitution?
-A) Confirm the governing model, stated assumptions, and reference quantities
-B) Ignore the model and use any dimensionally similar equation
-C) Convert every quantity to a percentage before analysis
-D) Skip the physical or economic checks if a calculator gives a result
+26. Which statement is most accurate for **magnetic flux**?
+A) It must be used with its defined reference and assumptions
+B) It is independent of topology and frequency
+C) It always represents a scalar DC quantity
+D) It replaces conservation laws
 
-27. After applying **magnetic force on conductor**, which validation step best supports accepting the result?
-A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
-B) Accept the result solely because the arithmetic converged
-C) Replace the governing relation with a nearby formula
-D) Ignore the stated reference basis
+27. Which statement is most accurate for **magnetic force on conductor**?
+A) It must be used with its defined reference and assumptions
+B) It is independent of topology and frequency
+C) It always represents a scalar DC quantity
+D) It replaces conservation laws
+
+
+---
 
 ## Answer Key with Explanations
 
@@ -387,9 +407,12 @@ D) Ignore the stated reference basis
 
 25. **A.** The chapter treats **three-phase transformer connection** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
 
-26. **A.** For **magnetic flux** in *Magnetics and Transformers*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
+26. **A.** The chapter treats **magnetic flux** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **Magnetics and Transformers**, apply this check specifically through **§64.5 Ideal Transformer Turns and Current Ratios**, including that section's stated assumptions and reference quantities.
 
-27. **A.** For **magnetic force on conductor** in *Magnetics and Transformers*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
+27. **A.** The chapter treats **magnetic force on conductor** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **Magnetics and Transformers**, apply this check specifically through **§64.6 Reflected Impedance**, including that section's stated assumptions and reference quantities.
+
+
+---
 
 ## Practice Problems
 

@@ -67,6 +67,10 @@ Complex power combines them as \(S=P+jQ\).
 
 ---
 
+<!-- VERIFY id="WE-02-63-001-S" expr="120*10" expected="1200" units="VA" atol="1e-09" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-63-001-P" expr="120*10*0.8" expected="960" units="W" atol="1e-09" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-63-001-Q" expr="120*10*sqrt(1-0.8**2)" expected="720" units="var" atol="1e-09" rtol="1e-9" -->
+
 ## 63.2 Power Factor — Leading and Lagging
 
 Power factor is \(P/|S|=\cos\theta\), where \(\theta\) is measured from voltage to current under the Handbook convention. Inductive loads commonly have lagging current; capacitive loads commonly have leading current.
@@ -81,7 +85,11 @@ Power factor carries both magnitude and lead/lag information.
 
 **Problem.** A 5 kW load operates at pf=0.60 lagging. Find apparent power.
 
-**Solution.** S=P/pf=8.33 kVA. The governing model here is **§63.2 Power Factor — Leading and Lagging**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of power factor — leading and lagging. Apparent power 8.33 kVA is 8.33×10^3 V·A.---
+**Solution.** S=P/pf=8.33 kVA. The governing model here is **§63.2 Power Factor — Leading and Lagging**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of power factor — leading and lagging.
+
+---
+
+<!-- VERIFY id="WE-02-63-002-S" expr="5/0.60" expected="8.33" units="kVA" atol="0.005" rtol="1e-9" -->
 
 ## 63.3 Power-Factor Correction
 
@@ -97,7 +105,11 @@ For a desired final power factor, compute the original and target reactive power
 
 **Problem.** A 10 kW load improves from pf=0.70 to 0.95 lagging. Find required capacitor reactive power magnitude.
 
-**Solution.** Qc=P[tan(cos^-1 .70)-tan(cos^-1 .95)]≈6.92 kVAR. The governing model here is **§63.3 Power-Factor Correction**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of power-factor correction. The required reactive-power magnitude is 6.92 kVAR, dimensionally 6.92×10^3 V·A reactive.---
+**Solution.** Qc=P[tan(cos^-1 .70)-tan(cos^-1 .95)]≈6.92 kVAR. The governing model here is **§63.3 Power-Factor Correction**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of power-factor correction.
+
+---
+
+<!-- VERIFY id="WE-02-63-003-Qc" expr="10*(tan(acos(0.70))-tan(acos(0.95)))" expected="6.92" units="kVAR" atol="0.005" rtol="1e-9" -->
 
 ## 63.4 Balanced Three-Phase Sources and Phase Sequence
 
@@ -135,6 +147,8 @@ Use line quantities and phase quantities deliberately; do not substitute one for
 
 ---
 
+<!-- VERIFY id="WE-02-63-005-VL" expr="sqrt(3)*277" expected="479.8" units="V" atol="0.05" rtol="1e-9" -->
+
 ## 63.6 Delta Line-to-Phase Relationships
 
 For a balanced delta connection, line voltage equals phase voltage. Line current magnitude is \(\sqrt3\) times phase current.
@@ -152,6 +166,8 @@ A balanced delta impedance can be converted to an equivalent wye with \(Z_\Delta
 **Solution.** IL=√3×20=34.64 A. The governing model here is **§63.6 Delta Line-to-Phase Relationships**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of delta line-to-phase relationships.
 
 ---
+
+<!-- VERIFY id="WE-02-63-006-IL" expr="sqrt(3)*20" expected="34.64" units="A" atol="0.005" rtol="1e-9" -->
 
 ## 63.7 Balanced Three-Phase Power
 
@@ -171,19 +187,28 @@ This line formula avoids separately solving three identical phases once the syst
 
 ---
 
+<!-- VERIFY id="WE-02-63-007-P" expr="sqrt(3)*480*30*0.90/1000" expected="22.45" units="kW" atol="0.005" rtol="1e-9" -->
+
 ## Integrated Worked Examples
 
 ### Worked Example 8
 
 **Problem.** Balanced 3φ load has VL=208 V and IL=15 A. Find apparent power.
 
-**Solution.** S=√3×208×15=5.40 kVA. The governing model here is **§63.7 Balanced Three-Phase Power**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of balanced three-phase power. The apparent power is 5.40 kVA = 5.40×10^3 V·A.### Worked Example 9
+**Solution.** S=√3×208×15=5.40 kVA. The governing model here is **§63.7 Balanced Three-Phase Power**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of balanced three-phase power.
+
+<!-- VERIFY id="WE-02-63-008-S" expr="sqrt(3)*208*15/1000" expected="5.4" units="kVA" atol="0.005" rtol="1e-9" -->
+
+### Worked Example 9
 
 **Problem.** A delta impedance is 12+j6 Ω per phase. Find equivalent wye impedance.
 
 **Solution.** ZY=ZΔ/3=4+j2 Ω. The governing model here is **§63.7 Balanced Three-Phase Power**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of balanced three-phase power.
 
 ---
+
+<!-- VERIFY id="WE-02-63-009-Zreal" expr="12/3" expected="4" units="ohm" atol="1e-09" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-63-009-Zimag" expr="6/3" expected="2" units="ohm" atol="1e-09" rtol="1e-9" -->
 
 ## As the Handbook States It
 
@@ -319,17 +344,20 @@ B) It is independent of topology and frequency
 C) It always represents a scalar DC quantity
 D) It replaces conservation laws
 
-26. A new problem requires **complex power**. Which step should come before numerical substitution?
-A) Confirm the governing model, stated assumptions, and reference quantities
-B) Ignore the model and use any dimensionally similar equation
-C) Convert every quantity to a percentage before analysis
-D) Skip the physical or economic checks if a calculator gives a result
+26. Which statement is most accurate for **complex power**?
+A) It must be used with its defined reference and assumptions
+B) It is independent of topology and frequency
+C) It always represents a scalar DC quantity
+D) It replaces conservation laws
 
-27. After applying **power factor**, which validation step best supports accepting the result?
-A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
-B) Accept the result solely because the arithmetic converged
-C) Replace the governing relation with a nearby formula
-D) Ignore the stated reference basis
+27. Which statement is most accurate for **power factor**?
+A) It must be used with its defined reference and assumptions
+B) It is independent of topology and frequency
+C) It always represents a scalar DC quantity
+D) It replaces conservation laws
+
+
+---
 
 ## Answer Key with Explanations
 
@@ -383,9 +411,12 @@ D) Ignore the stated reference basis
 
 25. **A.** The chapter treats **three-phase power** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
 
-26. **A.** For **complex power** in *AC Power, Power Factor, and Three-Phase Systems*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
+26. **A.** The chapter treats **complex power** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **AC Power, Power Factor, and Three-Phase Systems**, apply this check specifically through **§63.5 Wye Line-to-Phase Relationships**, including that section's stated assumptions and reference quantities.
 
-27. **A.** For **power factor** in *AC Power, Power Factor, and Three-Phase Systems*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
+27. **A.** The chapter treats **power factor** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **AC Power, Power Factor, and Three-Phase Systems**, apply this check specifically through **§63.6 Delta Line-to-Phase Relationships**, including that section's stated assumptions and reference quantities.
+
+
+---
 
 ## Practice Problems
 

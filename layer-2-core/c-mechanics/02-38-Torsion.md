@@ -67,6 +67,8 @@ Torque sign may change between applied couples, so construct a torque diagram fo
 
 ---
 
+<!-- VERIFY id="WE-02-38-001-J" expr="pi*0.04**4/32" expected="2.513e-7" units="m^4" atol="5e-11" rtol="1e-9" -->
+
 ## 38.2 Polar Moment for Circular Shafts
 
 Circular-shaft torsion uses the polar area moment \(J\). For a solid circular shaft and a hollow circular shaft,
@@ -92,6 +94,8 @@ Because diameter appears to the fourth power, modest diameter changes strongly a
 
 ---
 
+<!-- VERIFY id="WE-02-38-002-tau" expr="500*0.02/(pi*0.04**4/32)/1e6" expected="39.8" units="MPa" atol="0.05" rtol="1e-9" -->
+
 ## 38.3 Torsional Shear Stress
 
 For linear elastic circular-shaft torsion,
@@ -113,6 +117,9 @@ Stress is zero at the center and maximum at the outer radius \(c\).
 **Solution.** φ=TL/GJ=0.02487 rad=1.425°. Reasoning: this uses the **38.3 Torsional Shear Stress** model from Chapter 02-38: Torsion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
+
+<!-- VERIFY id="WE-02-38-003-phi-rad" expr="500*1/(80e9*(pi*0.04**4/32))" expected="0.02487" units="rad" atol="0.000005" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-38-003-phi-deg" expr="degrees(500*1/(80e9*(pi*0.04**4/32)))" expected="1.425" units="deg" atol="0.0005" rtol="1e-9" -->
 
 ## 38.4 Angle of Twist
 
@@ -181,6 +188,8 @@ This lets you find required torque from power and rotational speed before sizing
 **Solution.** T=P/ω=100 N·m. Reasoning: this uses the **38.6 Power Transmission by Rotating Shafts** model from Chapter 02-38: Torsion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
+
+<!-- VERIFY id="WE-02-38-006-torque" expr="10000/100" expected="100" units="N*m" atol="1e-9" rtol="1e-9" -->
 
 ## 38.7 Thin-Walled Closed Circular Tubes
 

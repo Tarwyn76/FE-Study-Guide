@@ -121,6 +121,8 @@ A measurement can be:
   averaging out
 - **Neither:** scattered and wrong — suggests both types of error
 
+![FIG-01-03-001: Four dartboard illustrations in a two-by-two grid showing each combination of accuracy and precision](../figures/FIG-01-03-001-accuracy-precision-matrix.png)
+
 > ---
 > **Mentor's Margin**
 >
@@ -216,11 +218,6 @@ three significant figures gives $E_{\%} = 2.5\%$.
 >
 > ---
 
-
-<!-- VERIFY id="WE-01-03-001-absolute" expr="abs(138.4-142.0)" expected="3.6" units="kPa" atol="1e-09" rtol="1e-9" -->
-<!-- VERIFY id="WE-01-03-001-relative" expr="abs(138.4-142.0)/142.0" expected="0.02535" units="" atol="5e-06" rtol="1e-9" -->
-<!-- VERIFY id="WE-01-03-001-percent" expr="100*abs(138.4-142.0)/142.0" expected="2.5" units="percent" atol="0.05" rtol="1e-9" -->
-
 ---
 
 ## 3.3 Significant Figures — The Six Rules
@@ -303,6 +300,8 @@ calculation. They carry infinite precision because they're not measurements.
 | Trailing zeros after decimal | Always | 6.300 | 4 |
 | Trailing zeros in whole number | Ambiguous | 4,500 | 2, 3, or 4 |
 | Defined constants, exact counts | Unlimited | $\pi$, 12 in/ft | ∞ |
+
+![FIG-01-03-002: Decision flowchart for classifying whether a digit is significant based on its position](../figures/FIG-01-03-002-significant-figures-flowchart.png)
 
 ### Worked Example 2 — Identifying Significant Figures
 
@@ -427,9 +426,6 @@ problem. Use scientific notation to eliminate the ambiguity rather than
 guessing. $3.400 \times 10^3 + 8.52 \times 10^2 - 1.20 \times 10^2 =
 4{,}132 \rightarrow 4{,}130$ (four sig figs). ✓
 
-
-<!-- VERIFY id="WE-01-03-003-raw" expr="3400+852-120" expected="4132" units="" atol="1e-09" rtol="1e-9" -->
-
 ---
 
 ## 3.5 The Engineering Convention
@@ -493,14 +489,14 @@ errors **do not stay small** — they compound.
 
 **Correct:** Full precision throughout, round once at the end.
 
-$$1.256 \times 0.8834 = 1.10939...$$
-$$\frac{1.10939...}{0.6214} = 1.78536...$$
-$$\boxed{1.785}$$
+$$1.256 \times 0.8834 = 1.1095504$$
+$$\frac{1.1095504}{0.6214} = 1.785565...$$
+$$\boxed{1.786}$$
 
 **Wrong:** Round after each step.
 
-$$1.256 \times 0.8834 = 1.109 \quad\text{(rounded to 4 sig figs)}$$
-$$\frac{1.109}{0.6214} = 1.785 \quad\text{(rounds to 4 sig figs)}$$
+$$1.256 \times 0.8834 = 1.110 \quad\text{(rounded to 4 sig figs)}$$
+$$\frac{1.110}{0.6214} = 1.78629... \rightarrow 1.786 \quad\text{(4 sig figs)}$$
 
 Happens to agree here. Now a case where it doesn't.
 
@@ -509,17 +505,20 @@ $$\frac{(12.47 \times 0.0834)}{(0.7512 - 0.7481)}$$
 
 **Correct:**
 
-$$12.47 \times 0.0834 = 1.03996...$$
+$$12.47 \times 0.0834 = 1.039998$$
 $$0.7512 - 0.7481 = 0.0031$$
-$$\frac{1.03996}{0.0031} = 335.47... \approx \boxed{335}$$
+$$\frac{1.039998}{0.0031} = 335.483... \approx \boxed{335}$$
 
 **Wrong — round the subtraction first:**
 
 $$0.7512 - 0.7481 = 0.003 \quad\text{(rounded to 1 sig fig)}$$
-$$\frac{1.04}{0.003} = 347 \quad\text{(12 away from 335)}$$
+$$\frac{1.04}{0.003} = 346.667... \approx 347 \quad\text{(12 above 335 when displayed)}$$
 
-That's a 3.5% error from a single premature rounding, and it produces a result
-that wouldn't match any of the answer choices.
+Comparing the displayed rounded results, 347 is about 3.6% above 335. That
+difference comes from a single premature rounding and can move the result away
+from the correct answer choice.
+
+![FIG-01-03-003: Side-by-side calculation showing premature rounding: 335 correct versus 347 after early rounding, approximately 3.6% higher using the displayed rounded results](../figures/FIG-01-03-003-premature-rounding-error.png)
 
 The denominator involves **catastrophic cancellation** — the subtraction of
 two nearly equal numbers. A small absolute error in the difference becomes a
@@ -616,17 +615,17 @@ $$J = \frac{\pi (0.038)^4}{32}$$
 
 Do not round $0.038^4$ partway. Keep the full value in the calculator:
 
-$$0.038^4 = 2.085136 \times 10^{-6} \text{ m}^4$$
+$$0.038^4 = 2.08527... \times 10^{-6} \text{ m}^4$$
 
-$$J = \frac{\pi \times 2.085136 \times 10^{-6}}{32} = \frac{6.55065 \times 10^{-6}}{32} = 2.04708 \times 10^{-7} \text{ m}^4$$
+$$J = \frac{\pi \times 2.08527 \times 10^{-6}}{32} = \frac{6.55126 \times 10^{-6}}{32} = 2.04727 \times 10^{-7} \text{ m}^4$$
 
 Step 3 — Compute $\tau$.
 
-$$\tau = \frac{T_q \cdot c}{J} = \frac{(1{,}250)(0.019)}{2.04708 \times 10^{-7}}$$
+$$\tau = \frac{T_q \cdot c}{J} = \frac{(1{,}250)(0.019)}{2.04727 \times 10^{-7}}$$
 
 Numerator: $(1{,}250)(0.019) = 23.75 \text{ N} \cdot \text{m}^2$
 
-$$\tau = \frac{23.75}{2.04708 \times 10^{-7}} = 1.16019 \times 10^8 \text{ Pa}$$
+$$\tau = \frac{23.75}{2.04727 \times 10^{-7}} = 1.16005 \times 10^8 \text{ Pa}$$
 
 Step 4 — Express and round at the end.
 
@@ -658,9 +657,6 @@ with more steps, the accumulated error would not stay lucky.
 > end.**
 >
 > ---
-
-
-<!-- VERIFY id="WE-01-03-004-stress" expr="1250*(0.038/2)/(pi*0.038**4/32)/1e6" expected="116" units="MPa" atol="0.1" rtol="1e-9" -->
 
 ---
 

@@ -67,6 +67,9 @@ Efficiency is output divided by input and must be based on the correct input/out
 
 ---
 
+<!-- VERIFY id="WE-02-65-001-eff" expr="100*8.5/10" expected="85" units="percent" atol="0.05" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-65-001-loss" expr="10-8.5" expected="1.5" units="kW" atol="0.005" rtol="1e-9" -->
+
 ## 65.2 Torque, Speed, and Mechanical Power
 
 Mechanical power in a rotating shaft is torque times angular speed. Convert rpm to rad/s before using SI torque-power equations.
@@ -84,6 +87,9 @@ At fixed power, torque and speed are inversely related.
 **Solution.** ω=2π(1800)/60=188.5 rad/s; P=3.77 kW. The governing model here is **§65.2 Torque, Speed, and Mechanical Power**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of torque, speed, and mechanical power.
 
 ---
+
+<!-- VERIFY id="WE-02-65-002-omega" expr="2*pi*1800/60" expected="188.5" units="rad/s" atol="0.05" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-65-002-P" expr="20*(2*pi*1800/60)/1000" expected="3.77" units="kW" atol="0.005" rtol="1e-9" -->
 
 ## 65.3 Synchronous Speed and AC Machine Families
 
@@ -103,6 +109,8 @@ Synchronous machines operate at synchronous speed in steady operation; induction
 
 ---
 
+<!-- VERIFY id="WE-02-65-003-ns" expr="120*60/4" expected="1800" units="rpm" atol="1e-09" rtol="1e-9" -->
+
 ## 65.4 Synchronous Machines and Power Angle
 
 The Handbook models a Y-connected synchronous machine with internal induced voltage \(E_a\), synchronous reactance \(X_s\), armature resistance, and torque/power angle \(\delta\).
@@ -121,6 +129,8 @@ When armature resistance is neglected, developed power varies approximately with
 
 ---
 
+<!-- VERIFY id="WE-02-65-004-P" expr="3*(240*230/2)*sin(radians(20))/1000" expected="28.3" units="kW" atol="0.05" rtol="1e-9" -->
+
 ## 65.5 Induction Machines — Slip and Torque-Speed Behavior
 
 Induction-machine slip measures the fractional difference between synchronous speed and rotor speed. At synchronous speed, slip is zero.
@@ -133,11 +143,13 @@ The Handbook includes a representative torque-speed curve with starting torque, 
 
 ### Worked Example 5
 
-**Problem.** An induction motor has ns=1800 rpm and n=1746 rpm. Find slip as a percentage.
+**Problem.** An induction motor has ns=1800 rpm and n=1746 rpm. Find slip.
 
 **Solution.** s=(1800-1746)/1800=0.030=3.0%. The governing model here is **§65.5 Induction Machines — Slip and Torque-Speed Behavior**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of induction machines — slip and torque-speed behavior.
 
 ---
+
+<!-- VERIFY id="WE-02-65-005-slip" expr="100*(1800-1746)/1800" expected="3" units="percent" atol="0.05" rtol="1e-9" -->
 
 ## 65.6 DC Machines — Back EMF, Flux, and Torque
 
@@ -157,6 +169,9 @@ Mechanical power and torque are proportional to armature current and flux under 
 
 ---
 
+<!-- VERIFY id="WE-02-65-006-I" expr="(24-0.20*100)/1" expected="4" units="A" atol="1e-09" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-65-006-T" expr="0.20*((24-0.20*100)/1)" expected="0.8" units="N*m" atol="0.0005" rtol="1e-9" -->
+
 ## 65.7 Servomotors, Tachogenerators, and Conversion Checks
 
 The Handbook gives an idealized permanent-magnet DC motor relation \(V=IR+K_E\omega\) and torque \(T=K_TI\), with \(K_T=K_E\) in consistent SI units. A permanent-magnet generator can produce a speed-proportional voltage for tachometry.
@@ -175,6 +190,8 @@ For any electromechanical device, verify electrical input/output power, mechanic
 
 ---
 
+<!-- VERIFY id="WE-02-65-007-Pout" expr="5*0.90" expected="4.5" units="kW" atol="0.005" rtol="1e-9" -->
+
 ## Integrated Worked Examples
 
 ### Worked Example 8
@@ -183,13 +200,17 @@ For any electromechanical device, verify electrical input/output power, mechanic
 
 **Solution.** ns=120(50)/6=1000 rpm. The governing model here is **§65.7 Servomotors, Tachogenerators, and Conversion Checks**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of servomotors, tachogenerators, and conversion checks.
 
+<!-- VERIFY id="WE-02-65-008-ns" expr="120*50/6" expected="1000" units="rpm" atol="1e-09" rtol="1e-9" -->
+
 ### Worked Example 9
 
-**Problem.** An induction motor runs at 970 rpm on a 1000 rpm synchronous field. Find slip as a percentage.
+**Problem.** An induction motor runs at 970 rpm on a 1000 rpm synchronous field. Find slip.
 
 **Solution.** 3.0%. The governing model here is **§65.7 Servomotors, Tachogenerators, and Conversion Checks**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of servomotors, tachogenerators, and conversion checks.
 
 ---
+
+<!-- VERIFY id="WE-02-65-009-slip" expr="100*(1000-970)/1000" expected="3" units="percent" atol="0.05" rtol="1e-9" -->
 
 ## As the Handbook States It
 
@@ -325,17 +346,20 @@ B) It is independent of topology and frequency
 C) It always represents a scalar DC quantity
 D) It replaces conservation laws
 
-26. A new problem requires **rotating-machine efficiency**. Which step should come before numerical substitution?
-A) Confirm the governing model, stated assumptions, and reference quantities
-B) Ignore the model and use any dimensionally similar equation
-C) Convert every quantity to a percentage before analysis
-D) Skip the physical or economic checks if a calculator gives a result
+26. Which statement is most accurate for **rotating-machine efficiency**?
+A) It must be used with its defined reference and assumptions
+B) It is independent of topology and frequency
+C) It always represents a scalar DC quantity
+D) It replaces conservation laws
 
-27. After applying **electromechanical torque and speed**, which validation step best supports accepting the result?
-A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
-B) Accept the result solely because the arithmetic converged
-C) Replace the governing relation with a nearby formula
-D) Ignore the stated reference basis
+27. Which statement is most accurate for **electromechanical torque and speed**?
+A) It must be used with its defined reference and assumptions
+B) It is independent of topology and frequency
+C) It always represents a scalar DC quantity
+D) It replaces conservation laws
+
+
+---
 
 ## Answer Key with Explanations
 
@@ -389,9 +413,12 @@ D) Ignore the stated reference basis
 
 25. **A.** The chapter treats **servomotor electromechanical model** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
 
-26. **A.** For **rotating-machine efficiency** in *Motors, Generators, and Electromechanical Energy Conversion*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
+26. **A.** The chapter treats **rotating-machine efficiency** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **Motors, Generators, and Electromechanical Energy Conversion**, apply this check specifically through **§65.5 Induction Machines — Slip and Torque-Speed Behavior**, including that section's stated assumptions and reference quantities.
 
-27. **A.** For **electromechanical torque and speed** in *Motors, Generators, and Electromechanical Energy Conversion*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
+27. **A.** The chapter treats **electromechanical torque and speed** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **Motors, Generators, and Electromechanical Energy Conversion**, apply this check specifically through **§65.6 DC Machines — Back EMF, Flux, and Torque**, including that section's stated assumptions and reference quantities.
+
+
+---
 
 ## Practice Problems
 

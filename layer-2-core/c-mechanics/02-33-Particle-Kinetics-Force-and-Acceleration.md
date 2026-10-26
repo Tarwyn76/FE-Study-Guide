@@ -67,6 +67,8 @@ Draw the FBD first; then choose coordinates and write component equations.
 
 ---
 
+<!-- VERIFY id="WE-02-33-001-a" expr="50/10" expected="5" units="m/s^2" atol="1e-9" rtol="1e-9" -->
+
 ## 33.2 Weight and Mass
 
 Mass measures inertia; weight is the gravitational force.
@@ -91,6 +93,8 @@ Do not substitute a weight value in newtons where mass in kilograms is required 
 
 ---
 
+<!-- VERIFY id="WE-02-33-002-weight" expr="5*9.81" expected="49.05" units="N" atol="0.005" rtol="1e-9" -->
+
 ## 33.3 Cartesian Force-Acceleration Equations
 
 Resolve forces and acceleration along fixed Cartesian axes.
@@ -109,6 +113,8 @@ The equations remain valid even when acceleration varies with time, position, or
 
 ---
 
+<!-- VERIFY id="WE-02-33-003-fn" expr="2*6**2/3" expected="24" units="N" atol="1e-9" rtol="1e-9" -->
+
 ## 33.4 Normal-Tangential Kinetics
 
 For curved motion, normal force balance determines the force required to bend the trajectory, while tangential force balance governs change in speed.
@@ -126,6 +132,8 @@ The normal direction is toward the center of curvature.
 **Solution.** a=(100-30)/20=3.5 m/s². Reasoning: this uses the **33.4 Normal-Tangential Kinetics** model from Chapter 02-33: Particle Kinetics — Force and Acceleration. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
+
+<!-- VERIFY id="WE-02-33-004-a" expr="(100-30)/20" expected="3.5" units="m/s^2" atol="1e-9" rtol="1e-9" -->
 
 ## 33.5 Connected Particles and Constraint Forces
 

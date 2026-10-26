@@ -69,6 +69,8 @@ The acquisition chain typically contains a sensor, conditioning/filtering, sampl
 
 ---
 
+<!-- VERIFY id="WE-02-68-001-fs" expr="1/0.002" expected="500" units="Hz" atol="1e-09" rtol="1e-9" -->
+
 ## 68.2 Nyquist Sampling Criterion
 
 The Handbook states that the sampling rate must exceed twice the highest frequency contained in the measured signal for accurate reconstruction under the sampling-theorem assumptions.
@@ -105,6 +107,8 @@ Increasing sample rate can help, but practical systems also low-pass filter the 
 
 ---
 
+<!-- VERIFY id="WE-02-68-003-alias" expr="abs(900-1000)" expected="100" units="Hz" atol="1e-09" rtol="1e-9" -->
+
 ## 68.4 Analog-to-Digital Resolution and Codes
 
 For an \(n\)-bit ADC over nominal range \([V_L,V_H]\), the Handbook gives voltage resolution as full-scale span divided by \(2^n\). The digital code ranges from \(0\) to \(2^n-1\).
@@ -122,6 +126,8 @@ The represented voltage is the low-range value plus code times one voltage-resol
 **Solution.** ΔV=10/4096=2.441 mV/count. The governing model here is **§68.4 Analog-to-Digital Resolution and Codes**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of analog-to-digital resolution and codes.
 
 ---
+
+<!-- VERIFY id="WE-02-68-004-resolution" expr="10/4096*1000" expected="2.441" units="mV/count" atol="0.0005" rtol="1e-9" -->
 
 ## 68.5 First-Order Dynamic Response and Dead Time
 
@@ -141,6 +147,8 @@ A pure time delay \(\theta\) shifts the response in time and appears as \(e^{-\t
 
 ---
 
+<!-- VERIFY id="WE-02-68-005-V" expr="-5+3000*(10/4096)" expected="2.324" units="V" atol="0.0005" rtol="1e-9" -->
+
 ## 68.6 Second-Order Dynamic Response
 
 The Handbook's standard second-order model uses steady-state gain \(K\), damping ratio \(\zeta\), and natural frequency \(\omega_n\). Underdamped systems have \(\zeta<1\), critically damped systems \(\zeta=1\), and overdamped systems \(\zeta>1\).
@@ -153,11 +161,13 @@ For an underdamped system, overshoot and settling time depend strongly on dampin
 
 ### Worked Example 6
 
-**Problem.** A first-order instrument has gain K=2, τ=3 s, and receives a unit step M=1 from zero. Find the output ratio y/M at t=3 s.
+**Problem.** A first-order instrument has K=2, τ=3 s and receives unit step M=1 from zero. Find output at t=3 s.
 
 **Solution.** y=2(1-e^-1)=1.264. The governing model here is **§68.6 Second-Order Dynamic Response**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of second-order dynamic response.
 
 ---
+
+<!-- VERIFY id="WE-02-68-006-y" expr="2*(1-exp(-3/3))" expected="1.264" units="dimensionless" atol="0.0005" rtol="1e-9" -->
 
 ## 68.7 Frequency Response and Measurement Bandwidth
 
@@ -177,6 +187,8 @@ Bode magnitude and phase plots provide a compact representation. Instrument band
 
 ---
 
+<!-- VERIFY id="WE-02-68-007-Ts" expr="4/(0.5*8)" expected="1" units="s" atol="0.0005" rtol="1e-9" -->
+
 ## Integrated Worked Examples
 
 ### Worked Example 8
@@ -187,7 +199,7 @@ Bode magnitude and phase plots provide a compact representation. Instrument band
 
 ### Worked Example 9
 
-**Problem.** A first-order sensor with gain K=1 and τ=1 s has dead time θ=2 s. What is the output ratio y/M to a unit step at t=1 s?
+**Problem.** A first-order sensor with K=1, τ=1 s has dead time θ=2 s. What is output to a unit step at t=1 s?
 
 **Solution.** Zero change from the delayed response; the dynamic response has not started. The governing model here is **§68.7 Frequency Response and Measurement Bandwidth**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of frequency response and measurement bandwidth.
 
@@ -329,17 +341,20 @@ B) It is independent of calibration and dynamics
 C) It replaces physical validation
 D) It is always a static scalar
 
-26. A new problem requires **data acquisition system**. Which step should come before numerical substitution?
-A) Confirm the governing model, stated assumptions, and reference quantities
-B) Ignore the model and use any dimensionally similar equation
-C) Convert every quantity to a percentage before analysis
-D) Skip the physical or economic checks if a calculator gives a result
+26. Which statement best describes **data acquisition system**?
+A) Its meaning depends on a defined measurement/control model and assumptions
+B) It is independent of calibration and dynamics
+C) It replaces physical validation
+D) It is always a static scalar
 
-27. After applying **Nyquist sampling criterion**, which validation step best supports accepting the result?
-A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
-B) Accept the result solely because the arithmetic converged
-C) Replace the governing relation with a nearby formula
-D) Ignore the stated reference basis
+27. Which statement best describes **Nyquist sampling criterion**?
+A) Its meaning depends on a defined measurement/control model and assumptions
+B) It is independent of calibration and dynamics
+C) It replaces physical validation
+D) It is always a static scalar
+
+
+---
 
 ## Answer Key with Explanations
 
@@ -393,9 +408,12 @@ D) Ignore the stated reference basis
 
 25. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Data Acquisition, Sampling, Dynamic Response, and Frequency Response**, apply this check specifically through **§68.4 Analog-to-Digital Resolution and Codes**, including that section's stated assumptions and reference quantities.
 
-26. **A.** For **data acquisition system** in *Data Acquisition, Sampling, Dynamic Response, and Frequency Response*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
+26. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Data Acquisition, Sampling, Dynamic Response, and Frequency Response**, apply this check specifically through **§68.5 First-Order Dynamic Response and Dead Time**, including that section's stated assumptions and reference quantities.
 
-27. **A.** For **Nyquist sampling criterion** in *Data Acquisition, Sampling, Dynamic Response, and Frequency Response*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
+27. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Data Acquisition, Sampling, Dynamic Response, and Frequency Response**, apply this check specifically through **§68.6 Second-Order Dynamic Response**, including that section's stated assumptions and reference quantities.
+
+
+---
 
 ## Practice Problems
 

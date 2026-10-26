@@ -67,6 +67,8 @@ In 2D, the scalar moment is force times perpendicular distance, with sign determ
 
 ---
 
+<!-- VERIFY id="WE-02-25-001-moment" expr="100*0.40" expected="40" units="N*m" atol="1e-9" rtol="1e-9" -->
+
 ## 25.2 2D Moment Components
 
 For \(\mathbf r=x\hat i+y\hat j\) and \(\mathbf F=F_x\hat i+F_y\hat j\), the out-of-plane moment is \(M_z=xF_y-yF_x\).
@@ -85,6 +87,8 @@ This component form is often safer than estimating perpendicular distance when g
 
 ---
 
+<!-- VERIFY id="WE-02-25-002-mz" expr="0.3*80-0.2*50" expected="14" units="N*m" atol="1e-9" rtol="1e-9" -->
+
 ## 25.3 Couples
 
 A couple consists of equal, opposite, parallel forces separated by a distance. Net force is zero, but the pair creates a pure moment.
@@ -102,6 +106,8 @@ A couple moment is a free vector for rigid-body statics: it can be applied anywh
 **Solution.** M=200(0.15)=30 N·m. A couple consists of equal and opposite parallel forces, so the net force is zero while their separated lines of action create a pure moment. The couple magnitude is one force times the perpendicular separation.
 
 ---
+
+<!-- VERIFY id="WE-02-25-003-couple" expr="200*0.15" expected="30" units="N*m" atol="1e-9" rtol="1e-9" -->
 
 ## 25.4 Equivalent Force-Couple Systems
 

@@ -67,6 +67,9 @@ Unlike a concurrent-force system, moments cannot generally be omitted because fo
 
 ---
 
+<!-- VERIFY id="WE-02-26-001-ay" expr="12/2" expected="6" units="kN" atol="1e-9" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-26-001-by" expr="12/2" expected="6" units="kN" atol="1e-9" rtol="1e-9" -->
+
 ## 26.2 Pins, Rollers, and Fixed Supports
 
 Model support reactions according to constrained motion. A roller or smooth contact supplies one force normal to the contact. A pin prevents translation in two directions but permits rotation. A fixed support prevents translation and rotation, supplying two force components and a couple moment in 2D.
@@ -85,6 +88,9 @@ Over-modeling a support creates fictitious unknowns and can make a determinate p
 
 ---
 
+<!-- VERIFY id="WE-02-26-002-by" expr="10*2/5" expected="4" units="kN" atol="1e-9" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-26-002-ay" expr="10-(10*2/5)" expected="6" units="kN" atol="1e-9" rtol="1e-9" -->
+
 ## 26.3 Moment-Center Selection
 
 Moment equations are most efficient when the moment center lies at the intersection of unknown reaction lines. Those forces then contribute zero moment.
@@ -102,6 +108,8 @@ The equilibrium equations are valid about any point; strategic point selection o
 **Solution.** Three: Ax, Ay, and a couple moment. A planar fixed support restrains translation in x and y and also restrains rotation. Its idealized reactions are therefore Ax, Ay, and a reaction couple moment.
 
 ---
+
+<!-- VERIFY id="WE-02-26-003-reactions" expr="1+1+1" expected="3" units="reactions" atol="1e-9" rtol="1e-9" -->
 
 ## 26.4 Beams and Simple Support Reactions
 

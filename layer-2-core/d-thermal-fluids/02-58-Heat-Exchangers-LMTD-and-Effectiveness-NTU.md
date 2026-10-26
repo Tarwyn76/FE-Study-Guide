@@ -67,6 +67,8 @@ For constant \(c_p\), define capacity rate \(C=\dot m c_p\).
 
 ---
 
+<!-- VERIFY id="WE-02-58-001-Q" expr="4*(120-80)" expected="160" units="kW" atol="1e-9" rtol="1e-9" -->
+
 ## 58.2 Parallel-Flow and Counterflow Temperature Profiles
 
 In parallel flow both streams enter the same end; in counterflow they enter opposite ends. Counterflow usually maintains a larger average temperature difference and can permit cold-outlet temperature to exceed hot-outlet temperature.
@@ -84,6 +86,8 @@ Temperature profiles must not cross in an ideal sensible-only exchanger model wi
 **Solution.** Tco=20+160/2=100°C. The governing model here is **§58.2 Parallel-Flow and Counterflow Temperature Profiles**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of parallel-flow and counterflow temperature profiles.
 
 ---
+
+<!-- VERIFY id="WE-02-58-002-Tco" expr="20+160/2" expected="100" units="degC" atol="1e-9" rtol="1e-9" -->
 
 ## 58.3 Log-Mean Temperature Difference
 
@@ -103,6 +107,8 @@ Use the appropriate terminal differences for the selected arrangement.
 
 ---
 
+<!-- VERIFY id="WE-02-58-003-LMTD" expr="(40-20)/ln(40/20)" expected="28.85" units="K" atol="0.005" rtol="1e-9" -->
+
 ## 58.4 Overall Heat-Transfer Coefficient
 
 The overall coefficient \(U\) combines inside convection, wall conduction, outside convection, and fouling resistances on a chosen reference area.
@@ -120,6 +126,8 @@ The area basis must match the definition of \(U\).
 **Solution.** Q=150 kW. The governing model here is **§58.4 Overall Heat-Transfer Coefficient**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of overall heat-transfer coefficient.
 
 ---
+
+<!-- VERIFY id="WE-02-58-004-Q" expr="500*10*1*30/1000" expected="150" units="kW" atol="1e-9" rtol="1e-9" -->
 
 ## 58.5 Correction Factor for Multipass/Crossflow Exchangers
 
@@ -139,6 +147,9 @@ Use the supplied chart/data for \(F\); do not assume \(F=1\) for a complex arran
 
 ---
 
+<!-- VERIFY id="WE-02-58-005-Cmin" expr="min(5,3)" expected="3" units="kW/K" atol="1e-9" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-58-005-Qmax" expr="min(5,3)*(120-20)" expected="300" units="kW" atol="1e-9" rtol="1e-9" -->
+
 ## 58.6 Effectiveness and Maximum Possible Heat Transfer
 
 Effectiveness is actual heat transfer divided by the maximum possible heat transfer. The maximum is based on the smaller capacity rate and the inlet temperature difference.
@@ -151,11 +162,13 @@ This method is useful when outlet temperatures are unknown.
 
 ### Worked Example 6
 
-**Problem.** If actual Q=180 kW in Problem 5, find heat-exchanger effectiveness as a dimensionless ratio.
+**Problem.** If actual Q=180 kW in Problem 5, find effectiveness.
 
 **Solution.** ε=0.60. The governing model here is **§58.6 Effectiveness and Maximum Possible Heat Transfer**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of effectiveness and maximum possible heat transfer.
 
 ---
+
+<!-- VERIFY id="WE-02-58-006-eff" expr="180/300" expected="0.60" units="dimensionless" atol="0.005" rtol="1e-9" -->
 
 ## 58.7 NTU Method and Method Selection
 
@@ -170,11 +183,13 @@ arepsilon\)-NTU when outlet temperatures are unknown and \(UA\) is known.
 
 ### Worked Example 7
 
-**Problem.** If UA=6 kW/K and Cmin=3 kW/K, find NTU as a dimensionless heat-transfer index.
+**Problem.** If UA=6 kW/K and Cmin=3 kW/K, find NTU.
 
 **Solution.** NTU=2. The governing model here is **§58.7 NTU Method and Method Selection**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of ntu method and method selection.
 
 ---
+
+<!-- VERIFY id="WE-02-58-007-NTU" expr="6/3" expected="2" units="dimensionless" atol="1e-9" rtol="1e-9" -->
 
 ## Integrated Worked Examples
 
@@ -183,6 +198,8 @@ arepsilon\)-NTU when outlet temperatures are unknown and \(UA\) is known.
 **Problem.** Find capacity ratio for Cmin=3, Cmax=5.
 
 **Solution.** Cr=0.60. The governing model here is **§58.7 NTU Method and Method Selection**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of ntu method and method selection.
+
+<!-- VERIFY id="WE-02-58-008-Cr" expr="3/5" expected="0.60" units="dimensionless" atol="0.005" rtol="1e-9" -->
 
 ### Worked Example 9
 
@@ -326,17 +343,20 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. A new problem requires **heat-exchanger energy balance**. Which step should come before numerical substitution?
-A) Confirm the governing model, stated assumptions, and reference quantities
-B) Ignore the model and use any dimensionally similar equation
-C) Convert every quantity to a percentage before analysis
-D) Skip the physical or economic checks if a calculator gives a result
+26. Which statement best describes **heat-exchanger energy balance**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
 
-27. After applying **heat-exchanger flow arrangement**, which validation step best supports accepting the result?
-A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
-B) Accept the result solely because the arithmetic converged
-C) Replace the governing relation with a nearby formula
-D) Ignore the stated reference basis
+27. Which statement best describes **heat-exchanger flow arrangement**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
+
+
+---
 
 ## Answer Key with Explanations
 
@@ -390,9 +410,12 @@ D) Ignore the stated reference basis
 
 25. **A.** The chapter applies **effectiveness-NTU method** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** For **heat-exchanger energy balance** in *Heat Exchangers — LMTD and Effectiveness-NTU*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
+26. **A.** The chapter applies **heat-exchanger energy balance** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Heat Exchangers — LMTD and Effectiveness-NTU**, apply this check specifically through **§58.5 Correction Factor for Multipass/Crossflow Exchangers**, including that section's stated assumptions and reference quantities.
 
-27. **A.** For **heat-exchanger flow arrangement** in *Heat Exchangers — LMTD and Effectiveness-NTU*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
+27. **A.** The chapter applies **heat-exchanger flow arrangement** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Heat Exchangers — LMTD and Effectiveness-NTU**, apply this check specifically through **§58.6 Effectiveness and Maximum Possible Heat Transfer**, including that section's stated assumptions and reference quantities.
+
+
+---
 
 ## Practice Problems
 

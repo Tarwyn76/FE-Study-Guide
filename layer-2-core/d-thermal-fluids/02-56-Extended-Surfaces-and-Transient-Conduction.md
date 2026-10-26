@@ -61,11 +61,13 @@ Use characteristic length \(L_c=V/A_s\) for the lumped model.
 
 ### Worked Example 1
 
-**Problem.** A lumped body has h=20, V=0.001 m³, As=0.06 m², and k=50 W/mK. Find the dimensionless Biot number Bi.
+**Problem.** A lumped body has h=20, V=0.001 m³, As=0.06 m², k=50 W/mK. Find Bi.
 
 **Solution.** Bi=hV/(kAs)=0.00667. The governing model here is **§56.1 Biot Number and Lumped-Capacitance Criterion**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of biot number and lumped-capacitance criterion.
 
 ---
+
+<!-- VERIFY id="WE-02-56-001-Bi" expr="20*0.001/(50*0.06)" expected="0.00667" units="dimensionless" atol="0.000005" rtol="1e-9" -->
 
 ## 56.2 Lumped Transient Temperature Response
 
@@ -104,6 +106,8 @@ The sign depends on whether the body heats or cools; magnitude follows \(mc_p|T-
 
 ---
 
+<!-- VERIFY id="WE-02-56-003-tau" expr="7800*0.001*500/(20*0.06)" expected="3250" units="s" atol="1e-9" rtol="1e-9" -->
+
 ## 56.4 Fourier Number and Distributed Transient Conduction
 
 When internal temperature gradients matter, transient conduction depends on Fourier number \(Fo=lpha t/L^2\) and Biot number.
@@ -121,6 +125,8 @@ The Handbook provides one-term approximations for plane walls, infinite cylinder
 **Solution.** e^-1=0.3679. The governing model here is **§56.4 Fourier Number and Distributed Transient Conduction**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of fourier number and distributed transient conduction.
 
 ---
+
+<!-- VERIFY id="WE-02-56-004-ratio" expr="exp(-1)" expected="0.3679" units="dimensionless" atol="0.00005" rtol="1e-9" -->
 
 ## 56.5 One-Term Approximation
 
@@ -140,6 +146,8 @@ Spatial temperature ratios are then obtained from the corresponding eigenfunctio
 
 ---
 
+<!-- VERIFY id="WE-02-56-005-alpha" expr="15/(8000*500)" expected="3.75e-6" units="m^2/s" atol="1e-12" rtol="1e-9" -->
+
 ## 56.6 Straight Fins and Corrected Length
 
 Fins increase convective area. The Handbook gives straight-fin relations using \(m=\sqrt{hP/(kA_c)}\) and a corrected length for an insulated-tip approximation.
@@ -152,11 +160,13 @@ High fin conductivity, large perimeter, and adequate length improve performance,
 
 ### Worked Example 6
 
-**Problem.** For L=0.02 m and t=100 s with α from Problem 5, find the dimensionless Fourier number Fo.
+**Problem.** For L=0.02 m and t=100 s with α from Problem 5, find Fo.
 
 **Solution.** Fo=0.9375. The governing model here is **§56.6 Straight Fins and Corrected Length**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of straight fins and corrected length.
 
 ---
+
+<!-- VERIFY id="WE-02-56-006-Fo" expr="(15/(8000*500))*100/(0.02**2)" expected="0.9375" units="dimensionless" atol="0.00005" rtol="1e-9" -->
 
 ## 56.7 Fin Heat Rate and Effectiveness
 
@@ -326,17 +336,20 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. A new problem requires **Biot number**. Which step should come before numerical substitution?
-A) Confirm the governing model, stated assumptions, and reference quantities
-B) Ignore the model and use any dimensionally similar equation
-C) Convert every quantity to a percentage before analysis
-D) Skip the physical or economic checks if a calculator gives a result
+26. Which statement best describes **Biot number**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
 
-27. After applying **lumped capacitance**, which validation step best supports accepting the result?
-A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
-B) Accept the result solely because the arithmetic converged
-C) Replace the governing relation with a nearby formula
-D) Ignore the stated reference basis
+27. Which statement best describes **lumped capacitance**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
+
+
+---
 
 ## Answer Key with Explanations
 
@@ -390,9 +403,12 @@ D) Ignore the stated reference basis
 
 25. **A.** The chapter applies **fin effectiveness** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** For **Biot number** in *Extended Surfaces and Transient Conduction*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
+26. **A.** The chapter applies **Biot number** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Extended Surfaces and Transient Conduction**, apply this check specifically through **§56.5 One-Term Approximation**, including that section's stated assumptions and reference quantities.
 
-27. **A.** For **lumped capacitance** in *Extended Surfaces and Transient Conduction*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
+27. **A.** The chapter applies **lumped capacitance** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Extended Surfaces and Transient Conduction**, apply this check specifically through **§56.6 Straight Fins and Corrected Length**, including that section's stated assumptions and reference quantities.
+
+
+---
 
 ## Practice Problems
 

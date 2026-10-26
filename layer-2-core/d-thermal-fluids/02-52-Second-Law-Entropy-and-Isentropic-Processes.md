@@ -67,6 +67,8 @@ These statements explain why first-law energy conservation alone cannot determin
 
 ---
 
+<!-- VERIFY id="WE-02-52-001-dS" expr="100/500" expected="0.200" units="kJ/K" atol="0.0005" rtol="1e-9" -->
+
 ## 52.2 Entropy as a State Property
 
 For a reversible differential heat transfer, \(ds=\delta q_{rev}/T\). Entropy is a state property even though heat transfer is path-dependent.
@@ -85,6 +87,8 @@ For irreversible processes, entropy generation accounts for the difference.
 
 ---
 
+<!-- VERIFY id="WE-02-52-002-ds" expr="1.0*ln(600/300)" expected="0.693" units="kJ/kg*K" atol="0.0005" rtol="1e-9" -->
+
 ## 52.3 Entropy Balance and Entropy Generation
 
 The entropy balance tracks entropy carried by heat and mass plus entropy generated internally. Entropy generation is nonnegative.
@@ -102,6 +106,8 @@ A reversible process has zero entropy generation; a real irreversible process ha
 **Solution.** 0.5 ln2=0.347 kJ/kg·K. The governing model here is **§52.3 Entropy Balance and Entropy Generation**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of entropy balance and entropy generation.
 
 ---
+
+<!-- VERIFY id="WE-02-52-003-ds" expr="0.5*ln(600/300)" expected="0.347" units="kJ/kg*K" atol="0.0005" rtol="1e-9" -->
 
 ## 52.4 Adiabatic versus Isentropic
 
@@ -318,17 +324,20 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. A new problem requires **second law**. Which step should come before numerical substitution?
-A) Confirm the governing model, stated assumptions, and reference quantities
-B) Ignore the model and use any dimensionally similar equation
-C) Convert every quantity to a percentage before analysis
-D) Skip the physical or economic checks if a calculator gives a result
+26. Which statement best describes **second law**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
 
-27. After applying **entropy**, which validation step best supports accepting the result?
-A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
-B) Accept the result solely because the arithmetic converged
-C) Replace the governing relation with a nearby formula
-D) Ignore the stated reference basis
+27. Which statement best describes **entropy**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
+
+
+---
 
 ## Answer Key with Explanations
 
@@ -382,9 +391,12 @@ D) Ignore the stated reference basis
 
 25. **A.** The chapter applies **exergy destruction** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** For **second law** in *Second Law, Entropy, and Isentropic Processes*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
+26. **A.** The chapter applies **second law** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Second Law, Entropy, and Isentropic Processes**, apply this check specifically through **§52.5 Ideal-Gas Entropy Change**, including that section's stated assumptions and reference quantities.
 
-27. **A.** For **entropy** in *Second Law, Entropy, and Isentropic Processes*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
+27. **A.** The chapter applies **entropy** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Second Law, Entropy, and Isentropic Processes**, apply this check specifically through **§52.6 Entropy Change of Solids and Liquids**, including that section's stated assumptions and reference quantities.
+
+
+---
 
 ## Practice Problems
 

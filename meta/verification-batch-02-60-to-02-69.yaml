@@ -1,0 +1,35 @@
+schema_version: 1
+batch: "02-60-to-02-69"
+chapters:
+  - "02-60"
+  - "02-61"
+  - "02-62"
+  - "02-63"
+  - "02-64"
+  - "02-65"
+  - "02-66"
+  - "02-67"
+  - "02-68"
+  - "02-69"
+worked_examples: 90
+numeric_candidates: 73
+tagged_candidates: 72
+independent_verify_checks: 86
+curated_exclusions: 1
+failures: 0
+coverage_reviews: 0
+chapter_corrections: 0
+corrections: []
+exclusions:
+  - chapter: "02-68"
+    example: "9"
+    reason: "Final answer is the piecewise dead-time condition (zero response because t < theta); no meaningful independent scalar arithmetic check exists beyond that logical gate."
+cumulative_through: "02-69"
+cumulative:
+  worked_examples: 926
+  numeric_candidates: 469
+  tagged_candidates: 447
+  independent_verify_checks: 887
+  curated_exclusions: 22
+  failures: 0
+  coverage_reviews: 0

@@ -67,6 +67,8 @@ Before reducing a network, verify that components truly share a single series pa
 
 ---
 
+<!-- VERIFY id="WE-02-60-001-Req" expr="4+6+10" expected="20" units="ohm" atol="1e-09" rtol="1e-9" -->
+
 ## 60.2 Kirchhoff's Current Law
 
 KCL is conservation of charge at a node. With no charge accumulation in the ideal lumped-circuit model, algebraic current sum at a node is zero.
@@ -84,6 +86,8 @@ Choose a sign convention once—currents entering positive or currents leaving p
 **Solution.** 2 Ω. The governing model here is **§60.2 Kirchhoff's Current Law**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of kirchhoff's current law.
 
 ---
+
+<!-- VERIFY id="WE-02-60-002-Req" expr="1/(1/6+1/3)" expected="2" units="ohm" atol="1e-09" rtol="1e-9" -->
 
 ## 60.3 Kirchhoff's Voltage Law
 
@@ -103,6 +107,8 @@ Traverse the loop in either direction. The sign of each term follows how the tra
 
 ---
 
+<!-- VERIFY id="WE-02-60-003-I" expr="5-2" expected="3" units="A" atol="1e-09" rtol="1e-9" -->
+
 ## 60.4 Voltage and Current Dividers
 
 Divider formulas are shortcuts derived from Ohm's law plus series/parallel structure. A voltage divider applies to series elements carrying the same current; a current divider applies to parallel branches sharing the same voltage.
@@ -120,6 +126,8 @@ Do not apply a divider formula after a load changes the topology unless the load
 **Solution.** I=12/6=2 A. The governing model here is **§60.4 Voltage and Current Dividers**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of voltage and current dividers.
 
 ---
+
+<!-- VERIFY id="WE-02-60-004-I" expr="12/(2+4)" expected="2" units="A" atol="1e-09" rtol="1e-9" -->
 
 ## 60.5 Nodal Analysis with KCL
 
@@ -139,6 +147,8 @@ It is especially efficient when the desired outputs are node voltages and the ci
 
 ---
 
+<!-- VERIFY id="WE-02-60-005-Vout" expr="12*4/(2+4)" expected="8" units="V" atol="1e-09" rtol="1e-9" -->
+
 ## 60.6 Mesh and Loop Analysis with KVL
 
 Mesh analysis assigns loop currents to planar meshes and writes KVL around each mesh. A resistor shared by two meshes carries the difference of the two mesh currents.
@@ -156,6 +166,8 @@ This method is guide-developed workflow; the governing law is the Handbook KVL r
 **Solution.** (V-12)/3k + V/6k=0 → V=8 V. The governing model here is **§60.6 Mesh and Loop Analysis with KVL**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of mesh and loop analysis with kvl.
 
 ---
+
+<!-- VERIFY id="WE-02-60-006-V" expr="12*6/(3+6)" expected="8" units="V" atol="1e-09" rtol="1e-9" -->
 
 ## 60.7 Thévenin, Norton, and Maximum Power Transfer
 
@@ -175,6 +187,9 @@ For a purely resistive DC load, maximum power occurs when \(R_L=R_{Th}\). Maximu
 
 ---
 
+<!-- VERIFY id="WE-02-60-007-RL" expr="5" expected="5" units="ohm" atol="1e-09" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-60-007-Pmax" expr="10**2/(4*5)" expected="5" units="W" atol="1e-09" rtol="1e-9" -->
+
 ## Integrated Worked Examples
 
 ### Worked Example 8
@@ -182,6 +197,9 @@ For a purely resistive DC load, maximum power occurs when \(R_L=R_{Th}\). Maximu
 **Problem.** Convert a Norton source IN=2 A in parallel with RN=4 Ω to Thévenin form.
 
 **Solution.** VTh=IN RN=8 V; RTh=4 Ω. The governing model here is **§60.7 Thévenin, Norton, and Maximum Power Transfer**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of thévenin, norton, and maximum power transfer.
+
+<!-- VERIFY id="WE-02-60-008-Vth" expr="2*4" expected="8" units="V" atol="1e-09" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-60-008-Rth" expr="4" expected="4" units="ohm" atol="1e-09" rtol="1e-9" -->
 
 ### Worked Example 9
 
@@ -325,17 +343,20 @@ B) It is independent of topology and frequency
 C) It always represents a scalar DC quantity
 D) It replaces conservation laws
 
-26. A new problem requires **resistive network reduction**. Which step should come before numerical substitution?
-A) Confirm the governing model, stated assumptions, and reference quantities
-B) Ignore the model and use any dimensionally similar equation
-C) Convert every quantity to a percentage before analysis
-D) Skip the physical or economic checks if a calculator gives a result
+26. Which statement is most accurate for **resistive network reduction**?
+A) It must be used with its defined reference and assumptions
+B) It is independent of topology and frequency
+C) It always represents a scalar DC quantity
+D) It replaces conservation laws
 
-27. After applying **Kirchhoff current law**, which validation step best supports accepting the result?
-A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
-B) Accept the result solely because the arithmetic converged
-C) Replace the governing relation with a nearby formula
-D) Ignore the stated reference basis
+27. Which statement is most accurate for **Kirchhoff current law**?
+A) It must be used with its defined reference and assumptions
+B) It is independent of topology and frequency
+C) It always represents a scalar DC quantity
+D) It replaces conservation laws
+
+
+---
 
 ## Answer Key with Explanations
 
@@ -389,9 +410,12 @@ D) Ignore the stated reference basis
 
 25. **A.** The chapter treats **Thevenin-Norton equivalence** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units.
 
-26. **A.** For **resistive network reduction** in *Kirchhoff's Laws and Resistive Circuit Analysis*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
+26. **A.** The chapter treats **resistive network reduction** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **Kirchhoff's Laws and Resistive Circuit Analysis**, apply this check specifically through **§60.5 Nodal Analysis with KCL**, including that section's stated assumptions and reference quantities.
 
-27. **A.** For **Kirchhoff current law** in *Kirchhoff's Laws and Resistive Circuit Analysis*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
+27. **A.** The chapter treats **Kirchhoff current law** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **Kirchhoff's Laws and Resistive Circuit Analysis**, apply this check specifically through **§60.6 Mesh and Loop Analysis with KVL**, including that section's stated assumptions and reference quantities.
+
+
+---
 
 ## Practice Problems
 

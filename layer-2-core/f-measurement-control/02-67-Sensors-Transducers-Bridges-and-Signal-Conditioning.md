@@ -69,6 +69,8 @@ RTDs are resistive sensors, so the measurement circuit must supply excitation an
 
 ---
 
+<!-- VERIFY id="WE-02-67-001-R" expr="100*(1+0.00385*100)" expected="138.5" units="ohm" atol="0.05" rtol="1e-9" -->
+
 ## 67.2 Thermistors
 
 Thermistors are commonly semiconductor temperature sensors with a negative temperature coefficient. The Handbook gives an exponential beta model and the Steinhart–Hart equation for more precise conversion.
@@ -83,7 +85,11 @@ Temperature in the exponential and Steinhart–Hart relations is absolute temper
 
 **Problem.** An NTC thermistor has R0=10 kΩ at T0=298.15 K and β=3950 K. Estimate R at 323.15 K.
 
-**Solution.** R=10000 exp[3950(1/323.15-1/298.15)]≈3.59 kΩ. The governing model here is **§67.2 Thermistors**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of thermistors. Thus R ≈ 3.59×10^3 Ω.---
+**Solution.** R=10000 exp[3950(1/323.15-1/298.15)]≈3.59 kΩ. The governing model here is **§67.2 Thermistors**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of thermistors.
+
+---
+
+<!-- VERIFY id="WE-02-67-002-R" expr="10000*exp(3950*(1/323.15-1/298.15))/1000" expected="3.59" units="kohm" atol="0.005" rtol="1e-9" -->
 
 ## 67.3 Thermocouples and the Seebeck Effect
 
@@ -103,6 +109,8 @@ The Handbook supplies common J, K, T, and E material combinations and temperatur
 
 ---
 
+<!-- VERIFY id="WE-02-67-003-V" expr="41e-6*100*1000" expected="4.1" units="mV" atol="0.005" rtol="1e-9" -->
+
 ## 67.4 Strain Gauges, Piezoresistive, and Piezoelectric Transducers
 
 A resistive strain gauge changes resistance with mechanical strain. The Handbook defines gauge factor as fractional resistance change divided by strain.
@@ -121,6 +129,8 @@ Piezoresistive materials can have much larger gauge factors than metallic gauges
 
 ---
 
+<!-- VERIFY id="WE-02-67-004-dR_R" expr="2.0*500e-6" expected="0.001" units="dimensionless" atol="5e-07" rtol="1e-9" -->
+
 ## 67.5 Wheatstone Bridges
 
 The Wheatstone bridge converts small resistance changes into a measurable differential voltage. It is balanced when the resistor ratios satisfy the Handbook condition and the bridge output is zero.
@@ -138,6 +148,8 @@ For one small resistance change in an otherwise equal bridge, the Handbook gives
 **Solution.** Vo≈(0.001/4)(5)=1.25 mV. The governing model here is **§67.5 Wheatstone Bridges**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of wheatstone bridges.
 
 ---
+
+<!-- VERIFY id="WE-02-67-005-Vo" expr="(0.001/4)*5*1000" expected="1.25" units="mV" atol="0.005" rtol="1e-9" -->
 
 ## 67.6 Pressure, pH, and Chemical Sensors
 
@@ -183,6 +195,8 @@ The conditioner should make the signal compatible with the acquisition system wi
 
 **Solution.** 150 kPa. The governing model here is **§67.7 Signal Conditioning**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of signal conditioning.
 
+<!-- VERIFY id="WE-02-67-008-Pg" expr="250-100" expected="150" units="kPa" atol="1e-09" rtol="1e-9" -->
+
 ### Worked Example 9
 
 **Problem.** A pH electrode has E0=0, S=59 mV/pH, pHi=7 and pHa=5. Find Eel from the Handbook form.
@@ -190,6 +204,8 @@ The conditioner should make the signal compatible with the acquisition system wi
 **Solution.** Eel=0-59(5-7)=+118 mV. The governing model here is **§67.7 Signal Conditioning**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of signal conditioning.
 
 ---
+
+<!-- VERIFY id="WE-02-67-009-E" expr="0-59*(5-7)" expected="118" units="mV" atol="1e-09" rtol="1e-9" -->
 
 ## As the Handbook States It
 
@@ -327,17 +343,20 @@ B) It is independent of calibration and dynamics
 C) It replaces physical validation
 D) It is always a static scalar
 
-26. A new problem requires **resistance temperature detector**. Which step should come before numerical substitution?
-A) Confirm the governing model, stated assumptions, and reference quantities
-B) Ignore the model and use any dimensionally similar equation
-C) Convert every quantity to a percentage before analysis
-D) Skip the physical or economic checks if a calculator gives a result
+26. Which statement best describes **resistance temperature detector**?
+A) Its meaning depends on a defined measurement/control model and assumptions
+B) It is independent of calibration and dynamics
+C) It replaces physical validation
+D) It is always a static scalar
 
-27. After applying **thermistor**, which validation step best supports accepting the result?
-A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
-B) Accept the result solely because the arithmetic converged
-C) Replace the governing relation with a nearby formula
-D) Ignore the stated reference basis
+27. Which statement best describes **thermistor**?
+A) Its meaning depends on a defined measurement/control model and assumptions
+B) It is independent of calibration and dynamics
+C) It replaces physical validation
+D) It is always a static scalar
+
+
+---
 
 ## Answer Key with Explanations
 
@@ -391,9 +410,12 @@ D) Ignore the stated reference basis
 
 25. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Sensors, Transducers, Bridges, and Signal Conditioning**, apply this check specifically through **§67.4 Strain Gauges, Piezoresistive, and Piezoelectric Transducers**, including that section's stated assumptions and reference quantities.
 
-26. **A.** For **resistance temperature detector** in *Sensors, Transducers, Bridges, and Signal Conditioning*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
+26. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Sensors, Transducers, Bridges, and Signal Conditioning**, apply this check specifically through **§67.5 Wheatstone Bridges**, including that section's stated assumptions and reference quantities.
 
-27. **A.** For **thermistor** in *Sensors, Transducers, Bridges, and Signal Conditioning*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
+27. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Sensors, Transducers, Bridges, and Signal Conditioning**, apply this check specifically through **§67.6 Pressure, pH, and Chemical Sensors**, including that section's stated assumptions and reference quantities.
+
+
+---
 
 ## Practice Problems
 

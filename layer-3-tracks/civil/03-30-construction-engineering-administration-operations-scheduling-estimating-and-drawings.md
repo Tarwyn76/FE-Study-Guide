@@ -59,7 +59,7 @@ Construction administration coordinates contractual responsibilities, submittals
 
 \[\text{scope}+\text{time}+\text{cost}+\text{quality}+\text{risk}\]
 
-![FIG-03-30-001: Comparison of design-bid-build, design-build, and construction-manager relationships.](../figures/FIG-03-30-001-project-delivery-contracts-procurement-and-administration.png)
+![FIG-03-30-001: Project-delivery relationship diagram comparing design-bid-build, with separate owner contracts to designer and contractor, against design-build, with one owner contract to an integrated design-build entity.](../figures/FIG-03-30-001-project-delivery-contracts-procurement-and-administration.png)
 
 ### Worked Example 1
 

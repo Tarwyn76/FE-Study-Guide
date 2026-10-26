@@ -67,6 +67,9 @@ Different components may have different functional forms, but they share the sam
 
 ---
 
+<!-- VERIFY id="WE-02-32-001-vx" expr="20*cos(radians(30))" expected="17.32" units="m/s" atol="0.005" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-32-001-vy" expr="20*sin(radians(30))" expected="10.0" units="m/s" atol="0.005" rtol="1e-9" -->
+
 ## 32.2 Projectile Motion
 
 With negligible air resistance, projectile acceleration is zero horizontally and \(-g\) vertically for an upward-positive axis. Horizontal velocity remains constant.
@@ -84,6 +87,8 @@ Resolve the initial velocity first, then use the same time in both directions.
 **Solution.** t=2vy0/g=2.039 s. Reasoning: this uses the **32.2 Projectile Motion** model from Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
+
+<!-- VERIFY id="WE-02-32-002-time" expr="2*(20*sin(radians(30)))/9.81" expected="2.039" units="s" atol="0.0005" rtol="1e-9" -->
 
 ## 32.3 Normal and Tangential Coordinates
 
@@ -103,6 +108,8 @@ The normal component points toward the instantaneous center of curvature.
 
 ---
 
+<!-- VERIFY id="WE-02-32-003-an" expr="12**2/8" expected="18" units="m/s^2" atol="1e-9" rtol="1e-9" -->
+
 ## 32.4 Radial and Transverse Coordinates
 
 Polar coordinates are useful when geometry is referenced to an origin and both radial distance \(r\) and angle \(	heta\) can vary.
@@ -121,6 +128,8 @@ The acceleration includes coupling terms; radial acceleration is not simply \(\d
 
 ---
 
+<!-- VERIFY id="WE-02-32-004-v" expr="0.4*10" expected="4" units="m/s" atol="1e-9" rtol="1e-9" -->
+
 ## 32.5 Plane Circular Motion
 
 For constant radius \(r\), transverse speed is \(v=r\omega\), tangential acceleration is \(rlpha\), and inward radial acceleration is \(r\omega^2=v^2/r\).
@@ -138,6 +147,8 @@ Constant angular speed still produces acceleration because velocity direction ch
 **Solution.** an=rω²=0.4(100)=40 m/s². Reasoning: this uses the **32.5 Plane Circular Motion** model from Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
+
+<!-- VERIFY id="WE-02-32-005-an" expr="0.4*10**2" expected="40" units="m/s^2" atol="1e-9" rtol="1e-9" -->
 
 ## 32.6 Relative Motion with Translating Axes
 
@@ -196,6 +207,9 @@ Changing coordinates does not change the physics; it changes the algebra.
 **Solution.** (4,3) m/s. Reasoning: this uses the **Integrated Worked Examples** model from Chapter 02-32: Particle Kinematics — Curvilinear and Relative Motion. Apply the governing relation to the stated data with consistent units, preserve the section sign convention, and then check the result against the physical constraint described in that section.
 
 ---
+
+<!-- VERIFY id="WE-02-32-009-vrel-x" expr="5-1" expected="4" units="m/s" atol="1e-9" rtol="1e-9" -->
+<!-- VERIFY id="WE-02-32-009-vrel-y" expr="2-(-1)" expected="3" units="m/s" atol="1e-9" rtol="1e-9" -->
 
 ## As the Handbook States It
 

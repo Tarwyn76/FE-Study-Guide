@@ -1,0 +1,28 @@
+schema_version: 1
+batch:
+  chapters:
+    - 03-10
+    - 03-11
+    - 03-12
+    - 03-13
+  worked_examples: 36
+  numeric_candidates: 16
+  tagged_candidates: 16
+  independent_checks: 20
+  verify_tags_on_nonrequired_examples: 3
+  curated_exclusions: 0
+  failures: 0
+  coverage_reviews: 0
+  chapter_corrections: 0
+source_availability:
+  note: No 04-series markdown chapter files were present in the available Library/conversation source set, so this batch closes the available 03-series rather than padding to ten chapters.
+cumulative_through: 03-13
+cumulative:
+  chapters: 124
+  worked_examples: 1052
+  numeric_candidates: 537
+  tagged_candidates: 514
+  independent_checks: 969
+  curated_exclusions: 23
+  failures: 0
+  coverage_reviews: 0

@@ -36,9 +36,7 @@ The Handbook directly provides batch-reactor integration, variable-volume relati
 
 ## Learning Objectives
 
-By the end of this chapter, you will be able to:
-
-* **11.1** Explain and apply **Constant-Volume Batch Reactor Design**.
+By the end of this chapter, you will be able to:* **11.1** Explain and apply **Constant-Volume Batch Reactor Design**.
 * **11.2** Explain and apply **Variable-Volume Batch Reactors**.
 * **11.3** Explain and apply **Plug-Flow Reactor Design**.
 * **11.4** Explain and apply **CSTR Design**.
@@ -68,9 +66,11 @@ Batch time increases sharply when the rate becomes small near the target convers
 
 **Problem.** First-order batch k=0.1 min^-1. Time for 90% conversion?
 
-**Solution.** For **Constant-Volume Batch Reactor Design**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) k=0.1, t=-ln(0.1)/0.1=23.03 min. This is the section-specific result for First-order batch min Time conversion. The stated units/basis (min^-1, min) are retained.
+**Solution.** t=-ln(0.1)/0.1=23.03 min.
 
 ---
+
+<!-- VERIFY id="WE-03-11-001-time" expr="-ln(0.1)/0.1" expected="23.03" units="min" atol="0.005" rtol="1e-9" -->
 
 ## 11.2 Variable-Volume Batch Reactors
 
@@ -86,9 +86,11 @@ Do not insert \(C_A=C_{A0}(1-X_A)\) when volume changes significantly.
 
 **Problem.** If ε=0.5 and X=0.8, find V/V0.
 
-**Solution.** For **Variable-Volume Batch Reactors**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) =0.5, X=0.8, 1+0.5×0.8=1.4. This is the section-specific result for the stated case.
+**Solution.** 1+0.5×0.8=1.4.
 
 ---
+
+<!-- VERIFY id="WE-03-11-002-Vratio" expr="1+0.5*0.8" expected="1.4" units="dimensionless" atol="1e-9" rtol="1e-9" -->
 
 ## 11.3 Plug-Flow Reactor Design
 
@@ -104,9 +106,11 @@ Rate is evaluated at the local composition corresponding to each conversion.
 
 **Problem.** PFR with FA0=10 mol/s and constant -rA=2 mol/(m³·s), target X=0.6. Find V.
 
-**Solution.** For **Plug-Flow Reactor Design**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) FA0=10, rA=2, X=0.6, V=FA0 X/r=3 m³. This is the section-specific result for PFR FA mol constant rA mol target. The stated units/basis (m³, s) are retained.
+**Solution.** V=FA0 X/r=3 m³.
 
 ---
+
+<!-- VERIFY id="WE-03-11-003-V" expr="10*0.6/2" expected="3" units="m3" atol="1e-9" rtol="1e-9" -->
 
 ## 11.4 CSTR Design
 
@@ -122,9 +126,11 @@ For positive-order kinetics, a CSTR generally needs more volume than a PFR for t
 
 **Problem.** CSTR same data as Problem 3 with exit rate 2. Find V.
 
-**Solution.** For **CSTR Design**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) 3, 2, 3 m³. This is the section-specific result for CSTR same data as Problem exit rate. The stated units/basis (s, h) are retained.
+**Solution.** 3 m³.
 
 ---
+
+<!-- VERIFY id="WE-03-11-004-V" expr="10*0.6/2" expected="3" units="m3" atol="1e-9" rtol="1e-9" -->
 
 ## 11.5 CSTRs in Series
 
@@ -140,9 +146,11 @@ Each successive tank operates at a lower reactant concentration.
 
 **Problem.** First-order CSTRs in series kτ=1, N=2. Find CA2/CA0.
 
-**Solution.** For **CSTRs in Series**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) =1, N=2, (1/2)^2=0.25. This is the section-specific result for First-order CSTRs series CA CA. The stated units/basis (s) are retained.
+**Solution.** (1/2)^2=0.25.
 
 ---
+
+<!-- VERIFY id="WE-03-11-005-ratio" expr="(1/(1+1))**2" expected="0.25" units="dimensionless" atol="1e-9" rtol="1e-9" -->
 
 ## 11.6 Multiple Reactions, Yield, and Reactor Choice
 
@@ -158,7 +166,7 @@ When desired and undesired pathways have different orders, reactor selection can
 
 **Problem.** If desired reaction is higher order in A than undesired reaction, which reactor often favors desired path at high A?
 
-**Solution.** For **Multiple Reactions, Yield, and Reactor Choice**, A PFR can favor it by exposing feed to high A near inlet; exact result depends on rates. This follows because for parallel or series networks, the reactor type changes the concentration history and therefore selectivity.. That physical distinction controls the result for desired reaction higher order than undesired reaction.
+**Solution.** A PFR can favor it by exposing feed to high A near inlet; exact result depends on rates.
 
 ---
 
@@ -176,7 +184,7 @@ The Handbook gives Michaelis–Menten behavior as one saturating catalytic examp
 
 **Problem.** Does a catalyst change equilibrium constant at fixed temperature?
 
-**Solution.** For **Catalysis and Biocatalysis in Reactor Design**, No; it changes rates of approach to equilibrium. This follows because catalysts change reaction rates without changing the equilibrium condition itself.. That physical distinction controls the result for Does catalyst change equilibrium constant fixed temperature.
+**Solution.** No; it changes rates of approach to equilibrium.
 
 ---
 
@@ -186,15 +194,20 @@ The Handbook gives Michaelis–Menten behavior as one saturating catalytic examp
 
 **Problem.** First-order CSTR single tank kτ=1. Find conversion.
 
-**Solution.** For **Integrated Worked Examples**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) =1, CA/CA0=1/(1+kτ)=0.5, so X=0.5. This is the section-specific result for First-order CSTR single tank conversion. The stated units/basis (s) are retained.
+**Solution.** CA/CA0=1/(1+kτ)=0.5, so X=0.5.
+
+<!-- VERIFY id="WE-03-11-008-ratio" expr="1/(1+1)" expected="0.5" units="dimensionless" atol="1e-9" rtol="1e-9" -->
+<!-- VERIFY id="WE-03-11-008-X" expr="1-1/(1+1)" expected="0.5" units="dimensionless" atol="1e-9" rtol="1e-9" -->
 
 ### Worked Example 9
 
 **Problem.** First-order PFR kτ=1. Find conversion.
 
-**Solution.** For **Integrated Worked Examples**, identify the requested quantity and keep the problem definition unchanged. With the given condition(s) =1, X=1-e^-1=0.632. This is the section-specific result for First-order PFR conversion. The stated units/basis (s) are retained.
+**Solution.** X=1-e^-1=0.632.
 
 ---
+
+<!-- VERIFY id="WE-03-11-009-X" expr="1-exp(-1)" expected="0.632" units="dimensionless" atol="0.0002" rtol="1e-9" -->
 
 ## As the Handbook States It
 
@@ -343,59 +356,59 @@ D) It is always directly tabulated in the Handbook
 
 ## Answer Key with Explanations
 
-1. **Constant-Volume Batch Reactor Design.** A well-mixed batch reactor has no flow during the reaction step. In Reactor Design — Batch, CSTR, PFR, Multiple Reactions, and Catalysis, this is the definition or balance being tested by Question 1.
+1. **batch reactor design** is developed in §11.1. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
 
-2. **Variable-Volume Batch Reactors.** Gas-phase or constant-pressure batch systems may change volume with conversion. In Reactor Design — Batch, CSTR, PFR, Multiple Reactions, and Catalysis, this is the definition or balance being tested by Question 2.
+2. **variable-volume batch reactor** is developed in §11.2. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
 
-3. **Plug-Flow Reactor Design.** In an ideal PFR, composition changes continuously with axial position and there is no axial mixing. In Reactor Design — Batch, CSTR, PFR, Multiple Reactions, and Catalysis, this is the definition or balance being tested by Question 3.
+3. **plug-flow reactor** is developed in §11.3. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
 
-4. **CSTR Design.** An ideal CSTR is perfectly mixed, so the reactor contents and outlet have the same composition. In Reactor Design — Batch, CSTR, PFR, Multiple Reactions, and Catalysis, this is the definition or balance being tested by Question 4.
+4. **CSTR design** is developed in §11.4. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
 
-5. **CSTRs in Series.** Multiple equal CSTRs in series approach PFR behavior as the number of tanks increases. In Reactor Design — Batch, CSTR, PFR, Multiple Reactions, and Catalysis, this is the definition or balance being tested by Question 5.
+5. **CSTRs in series** is developed in §11.5. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
 
-6. **Multiple Reactions, Yield, and Reactor Choice.** For parallel or series networks, the reactor type changes the concentration history and therefore selectivity. In Reactor Design — Batch, CSTR, PFR, Multiple Reactions, and Catalysis, this is the definition or balance being tested by Question 6.
+6. **reactor selectivity** is developed in §11.6. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
 
-7. **Catalysis and Biocatalysis in Reactor Design.** Catalysts change reaction rates without changing the equilibrium condition itself. In Reactor Design — Batch, CSTR, PFR, Multiple Reactions, and Catalysis, this is the definition or balance being tested by Question 7.
+7. **catalytic reactor selection** is developed in §11.7. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
 
-8. For **Constant-Volume Batch Reactor Design**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. A well-mixed batch reactor has no flow during the reaction step. This is the specific failure mode emphasized in Reactor Design — Batch, CSTR, PFR, Multiple Reactions, and Catalysis.
+8. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
 
-9. For **Variable-Volume Batch Reactors**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. Gas-phase or constant-pressure batch systems may change volume with conversion. This is the specific failure mode emphasized in Reactor Design — Batch, CSTR, PFR, Multiple Reactions, and Catalysis.
+9. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
 
-10. For **Plug-Flow Reactor Design**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. In an ideal PFR, composition changes continuously with axial position and there is no axial mixing. This is the specific failure mode emphasized in Reactor Design — Batch, CSTR, PFR, Multiple Reactions, and Catalysis.
+10. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
 
-11. For **CSTR Design**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. An ideal CSTR is perfectly mixed, so the reactor contents and outlet have the same composition. This is the specific failure mode emphasized in Reactor Design — Batch, CSTR, PFR, Multiple Reactions, and Catalysis.
+11. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
 
-12. For **CSTRs in Series**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. Multiple equal CSTRs in series approach PFR behavior as the number of tanks increases. This is the specific failure mode emphasized in Reactor Design — Batch, CSTR, PFR, Multiple Reactions, and Catalysis.
+12. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
 
-13. For **Multiple Reactions, Yield, and Reactor Choice**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. For parallel or series networks, the reactor type changes the concentration history and therefore selectivity. This is the specific failure mode emphasized in Reactor Design — Batch, CSTR, PFR, Multiple Reactions, and Catalysis.
+13. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
 
-14. For **Catalysis and Biocatalysis in Reactor Design**, an undefined basis, boundary, phase, or model can invalidate the setup before any arithmetic begins. Catalysts change reaction rates without changing the equilibrium condition itself. This is the specific failure mode emphasized in Reactor Design — Batch, CSTR, PFR, Multiple Reactions, and Catalysis.
+14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
 
-15. In **Reactor Design — Batch, CSTR, PFR, Multiple Reactions, and Catalysis**, close the material balance first because stream amounts and compositions feed the later energy calculation. Otherwise enthalpy and duty terms may be evaluated for unresolved streams.
+15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
 
-16. For **Reactor Design — Batch, CSTR, PFR, Multiple Reactions, and Catalysis**, a degrees-of-freedom check counts unknowns against independent equations before solving. Zero indicates a closed problem; a positive count signals missing independent information.
+16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
 
-17. In **Reactor Design — Batch, CSTR, PFR, Multiple Reactions, and Catalysis**, a relation supplied by the FE problem defines the intended model for that question. A remembered correlation can carry different assumptions, coefficients, validity limits, or reference states.
+17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
 
-18. For **Reactor Design — Batch, CSTR, PFR, Multiple Reactions, and Catalysis**, separating Handbook-supported material from specification-required learned material distinguishes lookup knowledge from material the guide develops. That boundary prevents guide-developed content from being presented as Handbook text.
+18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
 
-19. **A.** For **Constant-Volume Batch Reactor Design**, the relation is meaningful only with the correct basis and physical assumptions. A well-mixed batch reactor has no flow during the reaction step. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
+19. **A.** The relation or workflow for **batch reactor design** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 
-20. **A.** For **Variable-Volume Batch Reactors**, the relation is meaningful only with the correct basis and physical assumptions. Gas-phase or constant-pressure batch systems may change volume with conversion. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
+20. **A.** The relation or workflow for **variable-volume batch reactor** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 
-21. **A.** For **Plug-Flow Reactor Design**, the relation is meaningful only with the correct basis and physical assumptions. In an ideal PFR, composition changes continuously with axial position and there is no axial mixing. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
+21. **A.** The relation or workflow for **plug-flow reactor** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 
-22. **A.** For **CSTR Design**, the relation is meaningful only with the correct basis and physical assumptions. An ideal CSTR is perfectly mixed, so the reactor contents and outlet have the same composition. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
+22. **A.** The relation or workflow for **CSTR design** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 
-23. **A.** For **CSTRs in Series**, the relation is meaningful only with the correct basis and physical assumptions. Multiple equal CSTRs in series approach PFR behavior as the number of tanks increases. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
+23. **A.** The relation or workflow for **CSTRs in series** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 
-24. **A.** For **Multiple Reactions, Yield, and Reactor Choice**, the relation is meaningful only with the correct basis and physical assumptions. For parallel or series networks, the reactor type changes the concentration history and therefore selectivity. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
+24. **A.** The relation or workflow for **reactor selectivity** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 
-25. **A.** For **Catalysis and Biocatalysis in Reactor Design**, the relation is meaningful only with the correct basis and physical assumptions. Catalysts change reaction rates without changing the equilibrium condition itself. Choices B–D incorrectly detach the concept from the defined system or conservation framework.
+25. **A.** The relation or workflow for **catalytic reactor selection** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 
-26. **A.** This later check revisits **Constant-Volume Batch Reactor Design** from a different review position. A well-mixed batch reactor has no flow during the reaction step. The correct choice remains A because the concept still depends on the defined basis and physical assumptions.
+26. **A.** The relation or workflow for **batch reactor design** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 
-27. **A.** This later check revisits **Variable-Volume Batch Reactors** from a different review position. Gas-phase or constant-pressure batch systems may change volume with conversion. The correct choice remains A because the concept still depends on the defined basis and physical assumptions.
+27. **A.** The relation or workflow for **variable-volume batch reactor** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 
 
 ---
@@ -427,25 +440,25 @@ D) It is always directly tabulated in the Handbook
 
 ## Practice Problem Solutions
 
-1. For the practice case involving **First-order batch min Time conversion**, Using k=0.1, t=-ln(0.1)/0.1=23.03 min. This completes Practice Problem 1 in Reactor Design — Batch, CSTR, PFR, Multiple Reactions, and Catalysis. The original min^-1, min basis is preserved.
+1. t=-ln(0.1)/0.1=23.03 min.
 
-2. For the practice case involving **the stated case**, Using =0.5, X=0.8, 1+0.5×0.8=1.4. This completes Practice Problem 2 in Reactor Design — Batch, CSTR, PFR, Multiple Reactions, and Catalysis.
+2. 1+0.5×0.8=1.4.
 
-3. For the practice case involving **PFR FA mol constant rA mol target**, Using FA0=10, rA=2, X=0.6, V=FA0 X/r=3 m³. This completes Practice Problem 3 in Reactor Design — Batch, CSTR, PFR, Multiple Reactions, and Catalysis. The original m³, s basis is preserved.
+3. V=FA0 X/r=3 m³.
 
-4. For the practice case involving **CSTR same data as Problem exit rate**, Using 3, 2, 3 m³. This completes Practice Problem 4 in Reactor Design — Batch, CSTR, PFR, Multiple Reactions, and Catalysis. The original s, h basis is preserved.
+4. 3 m³.
 
-5. For the practice case involving **First-order CSTRs series CA CA**, Using =1, N=2, (1/2)^2=0.25. This completes Practice Problem 5 in Reactor Design — Batch, CSTR, PFR, Multiple Reactions, and Catalysis. The original s basis is preserved.
+5. (1/2)^2=0.25.
 
-6. For the practice case involving **desired reaction higher order than undesired reaction**, A PFR can favor it by exposing feed to high A near inlet; exact result depends on rates. This is the chapter-specific distinction required by Practice Problem 6 in Reactor Design — Batch, CSTR, PFR, Multiple Reactions, and Catalysis.
+6. A PFR can favor it by exposing feed to high A near inlet; exact result depends on rates.
 
-7. For the practice case involving **Does catalyst change equilibrium constant fixed temperature**, No; it changes rates of approach to equilibrium. This is the chapter-specific distinction required by Practice Problem 7 in Reactor Design — Batch, CSTR, PFR, Multiple Reactions, and Catalysis.
+7. No; it changes rates of approach to equilibrium.
 
-8. For the practice case involving **First-order CSTR single tank conversion**, Using =1, CA/CA0=1/(1+kτ)=0.5, so X=0.5. This completes Practice Problem 8 in Reactor Design — Batch, CSTR, PFR, Multiple Reactions, and Catalysis. The original s basis is preserved.
+8. CA/CA0=1/(1+kτ)=0.5, so X=0.5.
 
-9. For the practice case involving **First-order PFR conversion**, Using =1, X=1-e^-1=0.632. This completes Practice Problem 9 in Reactor Design — Batch, CSTR, PFR, Multiple Reactions, and Catalysis. The original s basis is preserved.
+9. X=1-e^-1=0.632.
 
-10. For the practice case involving **do multiple CSTRs series approach PFR performance**, Concentration varies stepwise instead of remaining at one low exit concentration throughout. This is the chapter-specific distinction required by Practice Problem 10 in Reactor Design — Batch, CSTR, PFR, Multiple Reactions, and Catalysis.
+10. Concentration varies stepwise instead of remaining at one low exit concentration throughout.
 
 
 ---

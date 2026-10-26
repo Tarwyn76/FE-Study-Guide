@@ -103,6 +103,8 @@ Entropy is a state property central to the second law; it is not simply 'waste h
 
 ---
 
+<!-- VERIFY id="WE-02-47-003-u" expr="500/10" expected="50" units="kJ/kg" atol="1e-9" rtol="1e-9" -->
+
 ## 47.4 Heat and Work Sign Convention
 
 The Handbook takes heat \(Q\) as positive into the system and work \(W\) as positive out of the system.
@@ -121,6 +123,8 @@ Heat and work are energy transfers, not stored properties. A system does not 'co
 
 ---
 
+<!-- VERIFY id="WE-02-47-004-h" expr="200+300*0.5" expected="350" units="kJ/kg" atol="1e-9" rtol="1e-9" -->
+
 ## 47.5 Boundary Work
 
 For quasi-equilibrium/reversible boundary work, the Handbook gives \(w_b=\int P\,dv\) on a specific basis.
@@ -138,6 +142,8 @@ On a \(P-v\) diagram, boundary work is the area under the process curve between 
 **Solution.** wb=PΔv=100 kJ/kg. The governing model here is **§47.5 Boundary Work**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of boundary work.
 
 ---
+
+<!-- VERIFY id="WE-02-47-005-wb" expr="500*0.2" expected="100" units="kJ/kg" atol="1e-9" rtol="1e-9" -->
 
 ## 47.6 Common Thermodynamic Processes
 
@@ -325,17 +331,20 @@ B) It is valid independent of state and geometry
 C) It is only a unit conversion
 D) It replaces conservation laws
 
-26. A new problem requires **thermodynamic system**. Which step should come before numerical substitution?
-A) Confirm the governing model, stated assumptions, and reference quantities
-B) Ignore the model and use any dimensionally similar equation
-C) Convert every quantity to a percentage before analysis
-D) Skip the physical or economic checks if a calculator gives a result
+26. Which statement best describes **thermodynamic system**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
 
-27. After applying **thermodynamic property**, which validation step best supports accepting the result?
-A) Verify units, sign, magnitude, and consistency with the chapter's assumptions
-B) Accept the result solely because the arithmetic converged
-C) Replace the governing relation with a nearby formula
-D) Ignore the stated reference basis
+27. Which statement best describes **thermodynamic property**?
+A) It is conditional on the physical model and assumptions
+B) It is valid independent of state and geometry
+C) It is only a unit conversion
+D) It replaces conservation laws
+
+
+---
 
 ## Answer Key with Explanations
 
@@ -389,9 +398,12 @@ D) Ignore the stated reference basis
 
 25. **A.** The chapter applies **thermodynamic state** only after the state, geometry, flow/thermal regime, and assumptions are defined.
 
-26. **A.** For **thermodynamic system** in *Thermodynamic Systems, Properties, Work, and Heat*, establish the governing model, assumptions, and reference quantities before substitution; this prevents correct arithmetic from being attached to the wrong model.
+26. **A.** The chapter applies **thermodynamic system** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Thermodynamic Systems, Properties, Work, and Heat**, apply this check specifically through **§47.5 Boundary Work**, including that section's stated assumptions and reference quantities.
 
-27. **A.** For **thermodynamic property** in *Thermodynamic Systems, Properties, Work, and Heat*, verify units, sign, magnitude, and consistency with the stated assumptions before accepting the result; this tests whether the computed value is physically or economically plausible.
+27. **A.** The chapter applies **thermodynamic property** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Thermodynamic Systems, Properties, Work, and Heat**, apply this check specifically through **§47.6 Common Thermodynamic Processes**, including that section's stated assumptions and reference quantities.
+
+
+---
 
 ## Practice Problems
 
