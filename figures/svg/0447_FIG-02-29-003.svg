@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="648pt" viewBox="0 0 864 648" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="770.250pt" height="600.750pt" viewBox="34.500 9.000 770.250 600.750" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -21,12 +20,7 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 648 
-L 864 648 
-L 864 0 
-L 0 0 
-z
-" style="fill: #ffffff"/>
+   <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff"/>
   </g>
   <g id="axes_1">
    <g id="text_1">
@@ -40,40 +34,21 @@ z
   </g>
   <g id="axes_2">
    <g id="patch_2">
-    <path d="M 168.061935 303.932903 
-L 402.178065 303.932903 
-L 402.178065 186.874839 
-L 168.061935 186.874839 
-z
-" clip-path="url(#pf88ba25985)" style="fill: #edf3f6; stroke: #235a78; stroke-linejoin: miter"/>
+    <path d="M 168.061935 303.932903  L 402.178065 303.932903  L 402.178065 186.874839  L 168.061935 186.874839  z " clip-path="url(#pf88ba25985)" style="fill: #edf3f6; stroke: #235a78; stroke-linejoin: miter"/>
    </g>
    <g id="PathCollection_1">
     <defs>
-     <path id="ma9ffc5f58e" d="M 0 2.95804 
-C 0.784481 2.95804 1.536938 2.646362 2.09165 2.09165 
-C 2.646362 1.536938 2.95804 0.784481 2.95804 0 
-C 2.95804 -0.784481 2.646362 -1.536938 2.09165 -2.09165 
-C 1.536938 -2.646362 0.784481 -2.95804 0 -2.95804 
-C -0.784481 -2.95804 -1.536938 -2.646362 -2.09165 -2.09165 
-C -2.646362 -1.536938 -2.95804 -0.784481 -2.95804 0 
-C -2.95804 0.784481 -2.646362 1.536938 -2.09165 2.09165 
-C -1.536938 2.646362 -0.784481 2.95804 0 2.95804 
-z
-" style="stroke: #a23b34"/>
+     <path id="ma9ffc5f58e" d="M 0 2.95804  C 0.784481 2.95804 1.536938 2.646362 2.09165 2.09165  C 2.646362 1.536938 2.95804 0.784481 2.95804 0  C 2.95804 -0.784481 2.646362 -1.536938 2.09165 -2.09165  C 1.536938 -2.646362 0.784481 -2.95804 0 -2.95804  C -0.784481 -2.95804 -1.536938 -2.646362 -2.09165 -2.09165  C -2.646362 -1.536938 -2.95804 -0.784481 -2.95804 0  C -2.95804 0.784481 -2.646362 1.536938 -2.09165 2.09165  C -1.536938 2.646362 -0.784481 2.95804 0 2.95804  z " style="stroke: #a23b34"/>
     </defs>
     <g clip-path="url(#pf88ba25985)">
      <use xlink:href="#ma9ffc5f58e" x="285.12" y="245.403871" style="fill: #a23b34; stroke: #a23b34"/>
     </g>
    </g>
    <g id="line2d_1">
-    <path d="M 80.268387 245.403871 
-L 460.707097 245.403871 
-" clip-path="url(#pf88ba25985)" style="fill: none; stroke: #26776f; stroke-width: 1.6; stroke-linecap: square"/>
+    <path d="M 80.268387 245.403871  L 460.707097 245.403871  " clip-path="url(#pf88ba25985)" style="fill: none; stroke: #26776f; stroke-width: 1.6; stroke-linecap: square"/>
    </g>
    <g id="line2d_2">
-    <path d="M 80.268387 391.726452 
-L 460.707097 391.726452 
-" clip-path="url(#pf88ba25985)" style="fill: none; stroke: #23313d; stroke-width: 1.6; stroke-linecap: square"/>
+    <path d="M 80.268387 391.726452  L 460.707097 391.726452  " clip-path="url(#pf88ba25985)" style="fill: none; stroke: #23313d; stroke-width: 1.6; stroke-linecap: square"/>
    </g>
    <g id="text_3">
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #a23b34" x="290.972903" y="232.260161" transform="rotate(-0 290.972903 232.260161)">G</text>
@@ -91,24 +66,13 @@ L 460.707097 391.726452
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="285.12" y="168.154163" transform="rotate(-0 285.12 168.154163)">Area A</text>
    </g>
    <g id="patch_3">
-    <path d="M 115.385806 388.612379 
-Q 115.385806 318.569165 115.385806 248.525951 
-" clip-path="url(#pf88ba25985)" style="fill: none; stroke: #b47722; stroke-linecap: round"/>
-    <path d="M 118.385806 382.612379 
-L 115.385806 388.612379 
-L 112.385806 382.612379 
-" clip-path="url(#pf88ba25985)" style="fill: none; stroke: #b47722; stroke-linecap: round"/>
-    <path d="M 112.385806 254.525951 
-L 115.385806 248.525951 
-L 118.385806 254.525951 
-" clip-path="url(#pf88ba25985)" style="fill: none; stroke: #b47722; stroke-linecap: round"/>
+    <path d="M 115.385806 388.612379  Q 115.385806 318.569165 115.385806 248.525951  " clip-path="url(#pf88ba25985)" style="fill: none; stroke: #b47722; stroke-linecap: round"/>
+    <path d="M 118.385806 382.612379  L 115.385806 388.612379  L 112.385806 382.612379  " clip-path="url(#pf88ba25985)" style="fill: none; stroke: #b47722; stroke-linecap: round"/>
+    <path d="M 112.385806 254.525951  L 115.385806 248.525951  L 118.385806 254.525951  " clip-path="url(#pf88ba25985)" style="fill: none; stroke: #b47722; stroke-linecap: round"/>
    </g>
   </g>
   <g id="text_8">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">A shifted axis adds area times squared centroid distance</text>
-  </g>
-  <g id="text_9">
-   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="47.52" y="630.504" transform="rotate(-0 47.52 630.504)">0447  •  FIG-02-29-003</text>
   </g>
   <g id="text_10">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="594.216" transform="rotate(-0 432 594.216)">The reference inertia must be about a centroidal parallel axis. A shift in the opposite direction still adds Ad² because distance is squared.</text>

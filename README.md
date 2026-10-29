@@ -1,24 +1,14 @@
-# Applying the Phase-1 figure repairs
+# FE Figure Cleanup + QA 0732–0881
 
-This package contains corrected chapter copies, repaired/aliased figure assets, a corrected canonical manifest, and updated QA records.
+Extract this package at the FE Supplemental Guide repository root.
 
-## Automatic application
+Replacement assets are already located under:
 
-Run:
+- `figures/png/`
+- `figures/svg/`
 
-```bash
-python tools/apply_figure_repairs.py --root /path/to/FE-Supplemental-Guide --manifest /path/to/figure-manifest.csv
-```
+The package does not create alternate figure aliases and does not modify chapter files.
 
-`--manifest` is optional. When supplied, that file is replaced with `manifests/figure-manifest-fixed.csv`. The script searches the repository recursively for the corrected chapter filenames and copies the supplied figure files into the shortest existing `figures` directory.
+Every SVG in this package had its production-only figure/index footer removed and outer canvas tightened. PNGs were regenerated from the cleaned SVGs. Four figures with long titles/captions retained the original horizontal canvas extent after edge-clearance review.
 
-The script is idempotent: rerunning it after a successful application makes no additional changes.
-
-## Manual application
-
-1. Replace the matching files in `chapters/`.
-2. Copy all files from `figures/` into the guide's figure asset directory.
-3. Replace the canonical manifest with `manifests/figure-manifest-fixed.csv`.
-4. Keep the files under `meta/` as QA records; they are not manuscript content.
-
-The original project/library files were not overwritten by creation of this package.
+Audit metadata is under `meta/`.

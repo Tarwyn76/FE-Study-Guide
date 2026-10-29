@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1080pt" height="720pt" viewBox="0 0 1080 720" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1001.2pt" height="685.1447pt" viewBox="39.4 7.0096 1001.2 685.1447" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -165,8 +165,7 @@ z
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="39.6" transform="rotate(-0 59.4 39.6)">An industrial loop closes through actuator, process, sensor, and acquisition hardware</text>
   </g>
   <g id="text_10">
-   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="59.4" y="700.56" transform="rotate(-0 59.4 700.56)">0738  •  FIG-02-70-007</text>
-  </g>
+</g>
   <g id="text_11">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(131.827344 656.640625)">Hardware loop is conceptual. Controller compares the setpoint with conditioned feedback; final control element changes the process input. Include actuator limits,</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(195.398438 669.358125)">anti-windup, sample delay and measurement noise in design. An analog anti-alias filter is needed ahead of sampled DAQ where relevant.</text>

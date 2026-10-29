@@ -1,0 +1,121 @@
+﻿Index,Figure ID,Check,Independent Result,Artwork/Expected,Units,Result
+584,FIG-02-48-007,Interpolation fraction,0.4,0.40,,PASS
+584,FIG-02-48-007,Interpolated property,120,120,kJ/kg,PASS
+585,FIG-02-49-001,Ideal-gas volume,0.861,0.861,m^3,PASS
+586,FIG-02-49-002,Ideal-gas internal-energy change,71.8,71.8,kJ/kg,PASS
+586,FIG-02-49-002,Ideal-gas enthalpy change,100.5,100.5,kJ/kg,PASS
+587,FIG-02-49-003,Isentropic pressure ratio,0.3789291416,0.379,,PASS
+587,FIG-02-49-003,Isentropic temperature ratio,0.7578582833,0.758,,PASS
+592,FIG-02-50-001,Closed-system total energy change,30,30,kJ,PASS
+594,FIG-02-50-003,Constant-pressure boundary work,60,60,kJ/kg,PASS
+595,FIG-02-50-004,Rigid-tank final pressure,150,150,kPa,PASS
+595,FIG-02-50-004,Rigid-tank internal-energy change,107.7,107.7,kJ,PASS
+596,FIG-02-50-005,Isothermal ideal-gas work,69.3147181,69.315,kJ/kg,PASS
+600,FIG-02-51-002,Nozzle exit speed,206.1552813,206.2,m/s,PASS
+602,FIG-02-51-004,Turbine isentropic efficiency,0.75,0.75,,PASS
+603,FIG-02-51-005,Compressor efficiency,0.8,0.80,,PASS
+607,FIG-02-52-002,Reversible heat integral,350,350,kJ/kg,PASS
+610,FIG-02-52-005,Ideal-gas entropy change,0.497679676,0.4977,kJ/(kg*K),PASS
+611,FIG-02-52-006,Incompressible entropy change,1.15072829,1.1507,kJ/(kg*K),PASS
+612,FIG-02-52-007,Exergy destruction,60,60,kJ,PASS
+613,FIG-02-53-001,Heat-engine efficiency,0.4,0.40,,PASS
+615,FIG-02-53-003,Carnot efficiency,0.5,0.50,,PASS
+616,FIG-02-53-004,Otto-cycle efficiency,0.564724718,0.565,,PASS
+617,FIG-02-53-005,Brayton-cycle efficiency,0.400663025,0.401,,PASS
+620,FIG-02-54-001,Refrigerator COP,3.75,3.75,,PASS
+620,FIG-02-54-001,Heat-pump COP,4.75,4.75,,PASS
+621,FIG-02-54-002,Carnot refrigerator COP,9,9,,PASS
+621,FIG-02-54-002,Carnot heat-pump COP,10,10,,PASS
+623,FIG-02-54-004,Refrigeration effect,150,150,kJ/kg,PASS
+623,FIG-02-54-004,Compressor work,40,40,kJ/kg,PASS
+623,FIG-02-54-004,Cycle COP,3.75,3.75,,PASS
+624,FIG-02-54-005,Refrigerant mass flow,0.2,0.200,kg/s,PASS
+625,FIG-02-54-006,Heating COP,4,4,,PASS
+627,FIG-02-55-001,Conductive heat flux,300,300,W/m^2,PASS
+628,FIG-02-55-002,Plane-wall heat rate,600,600,W,PASS
+629,FIG-02-55-003,Radial-cylinder heat rate,271.941609,271.9,W,PASS
+631,FIG-02-55-005,Composite-wall heat rate,177.777778,177.8,W,PASS
+632,FIG-02-55-006,Critical insulation radius,0.01,0.010,m,PASS
+634,FIG-02-56-001,Lumped time constant,200,200,s,PASS
+635,FIG-02-56-002,Temperature after one time constant,49.4303553,49.43,degC,PASS
+635,FIG-02-56-002,Cumulative cooling after one time constant,25.2848224,25.28,kJ,PASS
+638,FIG-02-56-005,Fin efficiency at mLc=2,0.48201379,0.482,,PASS
+641,FIG-02-57-001,Convective heat flux,1500,1500,W/m^2,PASS
+646,FIG-02-57-006,Net radiation heat transfer,793.8,793.8,W,PASS
+648,FIG-02-58-001,Two-stream exchanger duty,4,4,kW,PASS
+650,FIG-02-58-003,Counterflow LMTD,36.4095691,36.41,K,PASS
+653,FIG-02-58-006,Maximum exchanger heat transfer,8,8,kW,PASS
+653,FIG-02-58-006,Actual exchanger heat transfer,4.8,4.8,kW,PASS
+656,FIG-02-59-002,Potential-difference work,24,24,J,PASS
+659,FIG-02-59-005,Resistance-temperature slope,0.04,0.04,ohm/K,PASS
+660,FIG-02-59-006,Resistor current,2,2,A,PASS
+660,FIG-02-59-006,Resistor power,24,24,W,PASS
+663,FIG-02-60-002,Series-loop current,2,2,A,PASS
+664,FIG-02-60-003,Loaded-divider output,6,6,V,PASS
+664,FIG-02-60-003,Current-divider 1 kOhm branch,4,4,mA,PASS
+664,FIG-02-60-003,Current-divider 2 kOhm branch,2,2,mA,PASS
+665,FIG-02-60-004,Nodal voltage,6.54545455,6.545,V,PASS
+666,FIG-02-60-005,Mesh current I1,2.72727273,2.727,A,PASS
+666,FIG-02-60-005,Mesh current I2,1.09090909,1.091,A,PASS
+666,FIG-02-60-005,Shared-branch current,1.63636364,1.636,A,PASS
+667,FIG-02-60-006,Maximum load power,6,6,W,PASS
+670,FIG-02-61-002,Series capacitance,1.2,1.2,uF,PASS
+670,FIG-02-61-002,Parallel capacitance,5,5,uF,PASS
+671,FIG-02-61-003,Inductor stored energy,0.2,0.20,J,PASS
+672,FIG-02-61-004,Series inductance,5,5,mH,PASS
+672,FIG-02-61-004,Parallel inductance,1.2,1.2,mH,PASS
+674,FIG-02-61-006,RC time constant,0.1,0.10,s,PASS
+674,FIG-02-61-006,RC response at one tau,0.632120559,0.632,fraction,PASS
+674,FIG-02-61-006,RC response at five tau,0.993262053,0.993,fraction,PASS
+675,FIG-02-61-007,RL time constant,0.01,0.010,s,PASS
+675,FIG-02-61-007,RL rise at one tau,0.632120559,0.632,fraction,PASS
+675,FIG-02-61-007,RL decay at one tau,0.367879441,0.368,fraction,PASS
+675,FIG-02-61-007,RL rise at five tau,0.993262053,0.993,fraction,PASS
+675,FIG-02-61-007,RL decay at five tau,0.006737947,0.00674,fraction,PASS
+676,FIG-02-62-001,Sinusoid frequency,50,50,Hz,PASS
+676,FIG-02-62-001,Angular frequency,314.159265,314.16,rad/s,PASS
+676,FIG-02-62-001,60-degree time shift,3.33333333,3.33,ms,PASS
+677,FIG-02-62-002,Sine RMS value,7.07106781,7.071,V,PASS
+679,FIG-02-62-004,Impedance magnitude,5,5,ohm,PASS
+679,FIG-02-62-004,Impedance angle,36.8698976,36.87,deg,PASS
+681,FIG-02-62-006,Series-resonance frequency,50.3292121,50.33,Hz,PASS
+681,FIG-02-62-006,Series-RLC Q,3.16227766,3.162,,PASS
+681,FIG-02-62-006,Series-RLC bandwidth,15.9154943,15.92,Hz,PASS
+681,FIG-02-62-006,Lower half-power frequency,42.9966965,43.00,Hz,PASS
+681,FIG-02-62-006,Upper half-power frequency,58.9121908,58.91,Hz,PASS
+682,FIG-02-62-007,Matched-load current,2.5,2.5,A,PASS
+682,FIG-02-62-007,Maximum AC load power,25,25,W,PASS
+683,FIG-02-63-001,Apparent power,5,5,kVA,PASS
+683,FIG-02-63-001,Power factor,0.6,0.60,,PASS
+683,FIG-02-63-001,Power angle,53.1301024,53.13,deg,PASS
+685,FIG-02-63-003,Original reactive power,7.5,7.5,kvar,PASS
+685,FIG-02-63-003,Corrected reactive power,3.28684105,3.287,kvar,PASS
+685,FIG-02-63-003,Capacitor reactive power,4.21315895,4.213,kvar,PASS
+685,FIG-02-63-003,Correction capacitance,211.261838,211.3,uF,PASS
+687,FIG-02-63-005,Wye line-line voltage,207.846097,207.85,V,PASS
+689,FIG-02-63-007,Three-phase apparent power,3.60266568,3.603,kVA,PASS
+689,FIG-02-63-007,Three-phase real power,2.88213254,2.882,kW,PASS
+689,FIG-02-63-007,Three-phase reactive power,2.16159941,2.162,kvar,PASS
+691,FIG-02-64-002,Magnetic force,1,1.0,N,PASS
+695,FIG-02-64-006,Reflected-impedance magnitude,40,40,ohm,PASS
+698,FIG-02-65-002,Shaft mechanical power,1.57079633,1.571,kW,PASS
+701,FIG-02-65-005,Induction-motor slip,0.0333333333,0.0333,,PASS
+707,FIG-02-66-004,Propagated resistance uncertainty,0.0707106781,0.0707,ohm,PASS
+711,FIG-02-67-001,PT100 resistance at 100 C,138.5,138.5,ohm,PASS
+715,FIG-02-67-005,Quarter-bridge linear output,2.5,2.5000,mV,PASS
+719,FIG-02-68-002,Sample interval,0.05,0.050,s,PASS
+719,FIG-02-68-002,Samples per 2 Hz cycle,10,10,,PASS
+720,FIG-02-68-003,Aliased frequency,2,2,Hz,PASS
+721,FIG-02-68-004,3-bit ADC LSB,0.5,0.5,V,PASS
+722,FIG-02-68-005,First-order one-tau fraction,0.632120559,0.632,fraction,PASS
+723,FIG-02-68-006,Second-order overshoot,25.3826722,25.4,percent,PASS
+723,FIG-02-68-006,Second-order peak time,3.4277586,3.43,s,PASS
+723,FIG-02-68-006,2% settling approximation,10,10,s,PASS
+724,FIG-02-68-007,First-order magnitude at fc,-3.01029996,-3.01,dB,PASS
+724,FIG-02-68-007,First-order phase at fc,-45,-45,deg,PASS
+724,FIG-02-68-007,First-order magnitude at 0.1fc,-0.04321374,-0.043,dB,PASS
+724,FIG-02-68-007,First-order phase at 0.1fc,-5.71059314,-5.71,deg,PASS
+731,FIG-02-69-007,Gain-crossover frequency,2.86224815,2.862,rad/s,PASS
+731,FIG-02-69-007,Phase margin,-10.53078895,-10.53,deg,PASS
+731,FIG-02-69-007,Phase-crossover frequency,2.23607696,2.236,rad/s,PASS
+731,FIG-02-69-007,Gain margin,-4.43690518,-4.44,dB,PASS

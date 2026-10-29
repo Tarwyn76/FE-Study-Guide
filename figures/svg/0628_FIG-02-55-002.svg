@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="648pt" viewBox="0 0 864 648" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="770.75pt" height="606.75pt" viewBox="37.5 10.5 770.75 606.75" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -21,12 +20,7 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 648 
-L 864 648 
-L 864 0 
-L 0 0 
-z
-" style="fill: #ffffff"/>
+   <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff"/>
   </g>
   <g id="axes_1">
    <g id="text_1">
@@ -43,12 +37,7 @@ z
   </g>
   <g id="axes_2">
    <g id="patch_2">
-    <path d="M 155.707826 409.648696 
-L 302.212174 409.648696 
-L 302.212174 189.892174 
-L 155.707826 189.892174 
-z
-" clip-path="url(#pd29657e0c0)" style="fill: #edf3f6; stroke: #235a78; stroke-linejoin: miter"/>
+    <path d="M 155.707826 409.648696  L 302.212174 409.648696  L 302.212174 189.892174  L 155.707826 189.892174  z " clip-path="url(#pd29657e0c0)" style="fill: #edf3f6; stroke: #235a78; stroke-linejoin: miter"/>
    </g>
    <g id="text_4">
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="126.406957" y="151.45962" transform="rotate(-0 126.406957 151.45962)">T₁=80°C</text>
@@ -63,34 +52,17 @@ z
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #b47722" x="228.96" y="429.807946" transform="rotate(-0 228.96 429.807946)">L=0.10 m</text>
    </g>
    <g id="patch_3">
-    <path d="M 84.45417 299.770435 
-Q 228.957935 299.770435 371.561041 299.770435 
-" clip-path="url(#pd29657e0c0)" style="fill: none; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
-    <path d="M 365.561041 296.770435 
-L 371.561041 299.770435 
-L 365.561041 302.770435 
-z
-" clip-path="url(#pd29657e0c0)" style="fill: #a23b34; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 84.45417 299.770435  Q 228.957935 299.770435 371.561041 299.770435  " clip-path="url(#pd29657e0c0)" style="fill: none; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 365.561041 296.770435  L 371.561041 299.770435  L 365.561041 302.770435  z " clip-path="url(#pd29657e0c0)" style="fill: #a23b34; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
    </g>
    <g id="patch_4">
-    <path d="M 158.824378 435.286957 
-Q 228.960401 435.286957 299.096424 435.286957 
-" clip-path="url(#pd29657e0c0)" style="fill: none; stroke: #b47722; stroke-linecap: round"/>
-    <path d="M 164.824378 438.286957 
-L 158.824378 435.286957 
-L 164.824378 432.286957 
-" clip-path="url(#pd29657e0c0)" style="fill: none; stroke: #b47722; stroke-linecap: round"/>
-    <path d="M 293.096424 432.286957 
-L 299.096424 435.286957 
-L 293.096424 438.286957 
-" clip-path="url(#pd29657e0c0)" style="fill: none; stroke: #b47722; stroke-linecap: round"/>
+    <path d="M 158.824378 435.286957  Q 228.960401 435.286957 299.096424 435.286957  " clip-path="url(#pd29657e0c0)" style="fill: none; stroke: #b47722; stroke-linecap: round"/>
+    <path d="M 164.824378 438.286957  L 158.824378 435.286957  L 164.824378 432.286957  " clip-path="url(#pd29657e0c0)" style="fill: none; stroke: #b47722; stroke-linecap: round"/>
+    <path d="M 293.096424 432.286957  L 299.096424 435.286957  L 293.096424 438.286957  " clip-path="url(#pd29657e0c0)" style="fill: none; stroke: #b47722; stroke-linecap: round"/>
    </g>
   </g>
   <g id="text_8">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Plane-wall conduction scales with area and inversely with thickness</text>
-  </g>
-  <g id="text_9">
-   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="47.52" y="630.504" transform="rotate(-0 47.52 630.504)">0628  •  FIG-02-55-002</text>
   </g>
   <g id="text_10">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(98.817187 590.616625)">Steady 1D conduction, constant k, no generation. T₁/T₂ are wall surface temperatures, not surrounding-fluid temperatures. Face area</text>

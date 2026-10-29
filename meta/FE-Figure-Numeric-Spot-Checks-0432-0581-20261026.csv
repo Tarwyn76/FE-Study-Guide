@@ -1,0 +1,77 @@
+﻿Index,Figure ID,Check,Independent Result,Artwork/Expected,Units,Result
+432,FIG-02-27-002,Method-of-sections member force,6.66666667,6.66666667,kN,PASS
+435,FIG-02-27-005,Lever-link tension,22.3606798,22.3606798,kN,PASS
+438,FIG-02-28-001,Distributed load resultant,16,16,kN,PASS
+438,FIG-02-28-001,Distributed load centroid,2.33333333,2.33333333,m,PASS
+442,FIG-02-28-005,Center of mass x,0.666666667,0.666666667,m,PASS
+442,FIG-02-28-005,Center of mass y,1,1,m,PASS
+444,FIG-02-28-007,Distributed load first moment,37.3333333,37.3333333,kN*m,PASS
+448,FIG-02-29-004,Built-up section Ix,136,136,length^4,PASS
+452,FIG-02-30-001,Maximum static friction,40,40,N,PASS
+456,FIG-02-30-005,Tipping threshold,33.3333333,33.3333333,N,PASS
+457,FIG-02-30-006,Belt tension ratio,2.5663324,2.5663324,,PASS
+462,FIG-02-31-004,Acceleration area net delta-v,1.5,1.5,m/s,PASS
+463,FIG-02-31-005,Position-dependent speed at s=2,2.23606798,2.23606798,m/s,PASS
+467,FIG-02-32-002,Projectile range,40.7747197,40.7747197,m,PASS
+467,FIG-02-32-002,Projectile max height,10.1936799,10.1936799,m,PASS
+470,FIG-02-32-005,Centripetal acceleration,8,8,m/s^2,PASS
+477,FIG-02-33-005,Atwood acceleration,1.962,1.962,m/s^2,PASS
+477,FIG-02-33-005,Atwood tension,23.544,23.544,N,PASS
+478,FIG-02-33-006,Sliding block acceleration,2.057,2.057,m/s^2,PASS
+482,FIG-02-34-003,Potential-energy increase,58.86,58.86,J,PASS
+483,FIG-02-34-004,Spring strain energy,1,1,J,PASS
+485,FIG-02-34-006,Useful power,160,160,W,PASS
+486,FIG-02-34-007,Elastic strain energy,0.2,0.2,J,PASS
+487,FIG-02-35-001,Momentum magnitude,7.21110255,7.21110255,kg*m/s,PASS
+488,FIG-02-35-002,Triangular impulse,10,10,N*s,PASS
+490,FIG-02-35-004,Angular momentum z,-5,-5,kg*m^2/s,PASS
+491,FIG-02-35-005,Post-impact v1,1.5,1.5,m/s,PASS
+491,FIG-02-35-005,Post-impact v2,3,3,m/s,PASS
+499,FIG-02-36-006,Rigid-body alpha,5,5,rad/s^2,PASS
+500,FIG-02-36-007,Rigid-body total kinetic energy,19,19,J,PASS
+501,FIG-02-37-001,Axial stress,50,50,MPa,PASS
+502,FIG-02-37-002,Young's modulus,200,200,GPa,PASS
+503,FIG-02-37-003,Stepped-bar total elongation,0.633333333,0.633333333,mm,PASS
+505,FIG-02-37-005,Restrained thermal stress,-120,-120,MPa,PASS
+507,FIG-02-37-007,Thin-cylinder hoop stress,20,20,MPa,PASS
+507,FIG-02-37-007,Thin-cylinder axial stress,10,10,MPa,PASS
+511,FIG-02-38-004,Torsion segment 1 twist,0.00785950336,0.0078595,rad,PASS
+511,FIG-02-38-004,Torsion segment 2 twist,0.0136898716,0.01369,rad,PASS
+513,FIG-02-38-006,Shaft power,6.28318531,6.2831853,kW,PASS
+514,FIG-02-38-007,Thin-wall shear flow,6366.19772,6366.1977,N/m,PASS
+518,FIG-02-39-004,Beam max bending stress,23.4375,23.4375,MPa,PASS
+519,FIG-02-39-005,Rectangle max shear,0.9375,0.9375,MPa,PASS
+523,FIG-02-40-002,Transformed sigma_x',90.9807621,90.9807621,MPa,PASS
+523,FIG-02-40-002,Transformed tau_x'y',-10.9807621,-10.9807621,MPa,PASS
+524,FIG-02-40-003,Principal stress 1,92.4264069,92.4264069,MPa,PASS
+528,FIG-02-40-007,Absolute maximum shear,46.2132034,46.2132034,MPa,PASS
+531,FIG-02-41-003,Couette shear stress,2,2,Pa,PASS
+533,FIG-02-41-005,Capillary rise,25.424599,25.424,mm,PASS
+534,FIG-02-41-006,Hydrostatic pressure difference,14.715,14.715,kPa,PASS
+537,FIG-02-42-002,Mercury column pressure,100.062,100.062,kPa,PASS
+540,FIG-02-42-005,Inclined gate resultant,67.9656737,67.966,kN,PASS
+542,FIG-02-42-007,Hinged gate cable tension,22.89,22.89,kN,PASS
+543,FIG-02-43-001,Pipe flow rate,0.0157079633,0.0157079633,m^3/s,PASS
+544,FIG-02-43-002,Mass flow rate,30,30,kg/s,PASS
+545,FIG-02-43-003,Compressible mass flow,0.4,0.4,kg/s,PASS
+546,FIG-02-43-004,Material acceleration,1.3,1.3,m/s^2,PASS
+548,FIG-02-43-006,Control-volume accumulation,0.5,0.5,kg/s,PASS
+550,FIG-02-44-001,Mechanical head,5.87359837,5.87359837,m,PASS
+554,FIG-02-44-005,Nozzle speed,9.90454441,9.9045444,m/s,PASS
+554,FIG-02-44-005,Nozzle flow,1.98090888,1.98090888,L/s,PASS
+555,FIG-02-44-006,Accelerating-column pressure difference,21.62,21.62,kPa,PASS
+557,FIG-02-45-001,Reynolds number,20000,20000,,PASS
+559,FIG-02-45-003,Darcy-Weisbach head loss,1.63098879,1.63098879,m,PASS
+561,FIG-02-45-005,Minor head loss,0.774719674,0.77471967,m,PASS
+562,FIG-02-45-006,Hydraulic diameter,0.266666667,0.266666667,m,PASS
+563,FIG-02-45-007,Parallel branch total flow,5,5,flow units,PASS
+566,FIG-02-46-003,Pitot velocity,2,2,m/s,PASS
+567,FIG-02-46-004,Venturi flow,0.04,0.04,m^3/s,PASS
+568,FIG-02-46-005,Pump hydraulic power,1.962,1.962,kW,PASS
+568,FIG-02-46-005,Pump input power,2.4525,2.4525,kW,PASS
+569,FIG-02-46-006,Pump affinity head scale,1.44,1.44,,PASS
+569,FIG-02-46-006,Pump affinity power scale,1.728,1.728,,PASS
+570,FIG-02-46-007,Turbine shaft power,5.2974,5.2974,kW,PASS
+573,FIG-02-47-003,Specific enthalpy,250,250,kJ/kg,PASS
+575,FIG-02-47-005,Boundary work,48,48,kJ/kg,PASS
+580,FIG-02-48-003,Two-phase specific enthalpy,870.44,870.44,kJ/kg,PASS
