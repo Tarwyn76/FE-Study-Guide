@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="1008pt" height="671.5pt" viewBox="0 13 1008 671.5" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="821.200pt" height="561.587pt" viewBox="42.800 86.413 821.200 561.587" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -121,7 +121,7 @@
     <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #235a78" x="361.08" y="227.423125" transform="rotate(-0 361.08 227.423125)">R₂=3 Ω</text>
    </g>
    <g id="text_5">
-    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="270.36" y="345.770469" transform="rotate(-0 270.36 345.770469)">Same I; R_eq=5 Ω</text>
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="270.36" y="345.770469" transform="rotate(-0 270.36 345.770469)"><tspan font-size="22.000px">Same I; R</tspan><tspan font-size="14.960px" dy="5.280px">eq</tspan><tspan font-size="22.000px" dy="-5.280px">=5 Ω</tspan></text>
    </g>
   </g>
   <g id="axes_3">
@@ -166,7 +166,7 @@
    </g>
   </g>
   <g id="text_8">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Series resistors share current; parallel resistors share voltage</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="113.386" transform="rotate(-0 55.44 113.386)">Series resistors share current; parallel resistors share voltage</text>
   </g>
   <g id="text_10">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(114.671875 656.640625)">Series means the intermediate junction has no additional branch; parallel means every component shares the same two nodes. These topology conditions,</text>

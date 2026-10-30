@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="851pt" height="671.5pt" viewBox="43.25 13 851 671.5" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="820.073pt" height="569.000pt" viewBox="43.927 79.000 820.073 569.000" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -88,7 +88,7 @@
     </g>
    </g>
    <g id="text_3">
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="583.230656" transform="rotate(-0 504 583.230656)">Three essential nodes: 12 V, V_A, and reference 0 V</text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="583.230656" transform="rotate(-0 504 583.230656)"><tspan font-size="21.000px">Three essential nodes: 12 V, V</tspan><tspan font-size="14.280px" dy="5.040px">A,</tspan><tspan font-size="21.000px" dy="-5.040px"> and reference 0 V</tspan></text>
    </g>
   </g>
   <g id="axes_2">
@@ -171,11 +171,11 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="127.234286" y="149.64433" transform="rotate(-0 127.234286 149.64433)">12 V</text>
    </g>
    <g id="text_11">
-    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="411.12" y="146.197054" transform="rotate(-0 411.12 146.197054)">V_A</text>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="411.12" y="146.197054" transform="rotate(-0 411.12 146.197054)"><tspan font-size="13.000px">V</tspan><tspan font-size="8.840px" dy="3.120px">A</tspan></text>
    </g>
   </g>
   <g id="text_12">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Nodal analysis writes branch currents from one unknown node voltage</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="104.733" transform="rotate(-0 55.44 104.733)">Nodal analysis writes branch currents from one unknown node voltage</text>
   </g>
   <g id="text_14">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(137.516406 656.640625)">KCL uses all branch currents leaving node A. The ideal source fixes the known node at 12 V relative to the common reference. Ground is a voltage</text>

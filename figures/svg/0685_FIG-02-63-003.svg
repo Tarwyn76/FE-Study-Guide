@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="945.75pt" height="671.5pt" viewBox="0 13 945.75 671.5" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="864.000pt" height="567.015pt" viewBox="0.000 80.985 864.000 567.015" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -27,8 +27,8 @@
     <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="270.7488" y="469.534625" transform="rotate(-0 270.7488 469.534625)">P=10 kW; f=60 Hz</text>
    </g>
    <g id="text_2">
-    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(127.469112 554.309156)">Q_C=7.5−3.287=4.213 kvar</text>
-    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(152.8363 581.820094)">C=Q_C/(ωV²)=211.3 µF</text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(127.469112 554.309156)"><tspan font-size="20.000px">Q</tspan><tspan font-size="13.600px" dy="4.800px">C</tspan><tspan font-size="20.000px" dy="-4.800px">=7.5−3.287=4.213 kvar</tspan></text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(152.8363 581.820094)"><tspan font-size="20.000px">C=Q</tspan><tspan font-size="13.600px" dy="4.800px">C</tspan><tspan font-size="20.000px" dy="-4.800px">/(ωV²)=211.3 µF</tspan></text>
    </g>
   </g>
   <g id="axes_2">
@@ -349,11 +349,11 @@
    </g>
   </g>
   <g id="text_29">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">A shunt capacitor reduces source reactive demand while real load power stays fixed</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="107.827" transform="rotate(-0 55.44 107.827)">A shunt capacitor reduces source reactive demand while real load power stays fixed</text>
   </g>
   <g id="text_31">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(118.389844 656.3625)">Single-phase ideal correction at fixed 230 V RMS and 60 Hz. Capacitor reactive power is negative; Q_C here is its positive magnitude. The source supplies</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(247.089063 669.358125)">net Q=Q_load−Q_C. Corrected current falls, while an ideal capacitor consumes no average real power.</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(118.389844 656.3625)"><tspan font-size="10.000px">Single-phase ideal correction at fixed 230 V RMS and 60 Hz. Capacitor reactive power is negative; Q</tspan><tspan font-size="6.800px" dy="2.400px">C</tspan><tspan font-size="10.000px" dy="-2.400px"> here is its positive magnitude. The source supplies</tspan></text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(247.089063 669.358125)"><tspan font-size="10.000px">net Q=Q</tspan><tspan font-size="6.800px" dy="2.400px">load</tspan><tspan font-size="10.000px" dy="-2.400px">−Q</tspan><tspan font-size="6.800px" dy="2.400px">C</tspan><tspan font-size="10.000px" dy="-2.400px">. Corrected current falls, while an ideal capacitor consumes no average real power.</tspan></text>
   </g>
  </g>
  <defs>

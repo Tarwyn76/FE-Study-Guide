@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="864.25pt" height="671.5pt" viewBox="43.25 13 864.25 671.5" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="821.404pt" height="561.554pt" viewBox="42.596 86.446 821.404 561.554" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -24,7 +24,7 @@
   </g>
   <g id="axes_1">
    <g id="text_1">
-    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="728.28" y="474.002469" transform="rotate(-0 728.28 474.002469)">PARALLEL: C_eq=5 µF</text>
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="728.28" y="474.002469" transform="rotate(-0 728.28 474.002469)"><tspan font-size="22.000px">PARALLEL: C</tspan><tspan font-size="14.960px" dy="5.280px">eq</tspan><tspan font-size="22.000px" dy="-5.280px">=5 µF</tspan></text>
    </g>
    <g id="text_2">
     <!-- $1/C_{series}=\sum_k(1/C_k)$ -->
@@ -117,7 +117,7 @@
     <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #235a78" x="368.307692" y="239.081587" transform="rotate(-0 368.307692 239.081587)">3 µF</text>
    </g>
    <g id="text_6">
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="270.609231" y="383.594189" transform="rotate(-0 270.609231 383.594189)">SERIES: C_eq=1.2 µF</text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="270.609231" y="383.594189" transform="rotate(-0 270.609231 383.594189)"><tspan font-size="21.000px">SERIES: C</tspan><tspan font-size="14.280px" dy="5.040px">eq</tspan><tspan font-size="21.000px" dy="-5.040px">=1.2 µF</tspan></text>
    </g>
   </g>
   <g id="axes_3">
@@ -174,11 +174,11 @@
    </g>
   </g>
   <g id="text_9">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Capacitor series and parallel equivalents follow charge and voltage constraints</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="113.011" transform="rotate(-0 55.44 113.011)">Capacitor series and parallel equivalents follow charge and voltage constraints</text>
   </g>
   <g id="text_11">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(122.466406 656.501562)">Series floating intermediate node with zero net initial charge gives equal plate-charge magnitude; parallel capacitors share voltage. Equivalent terminal</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(238.267969 669.219062)">energy for this initially uncharged network is W=½C_eqV²; at 10 V, series stores 60 µJ and parallel 250 µJ.</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(238.267969 669.219062)"><tspan font-size="10.000px">energy for this initially uncharged network is W=½C</tspan><tspan font-size="6.800px" dy="2.400px">eqV</tspan><tspan font-size="10.000px" dy="-2.400px">²; at 10 V, series stores 60 µJ and parallel 250 µJ.</tspan></text>
   </g>
  </g>
  <defs>

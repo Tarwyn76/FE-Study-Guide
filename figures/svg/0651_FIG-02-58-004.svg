@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="863pt" height="671.5pt" viewBox="42.25 13 863 671.5" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="822.421pt" height="587.935pt" viewBox="41.579 60.065 822.421 587.935" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -24,8 +24,8 @@
   </g>
   <g id="axes_1">
    <g id="text_1">
-    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(498.79305 190.793672)">A_i=2πr_iL; A_o=2πr_oL</text>
-    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(508.811644 221.055703)">Wall: ln(r_o/r_i)/(2πkL)</text>
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(498.79305 190.793672)"><tspan font-size="22.000px">A</tspan><tspan font-size="14.960px" dy="5.280px">i</tspan><tspan font-size="22.000px" dy="-5.280px">=2πr</tspan><tspan font-size="14.960px" dy="5.280px">iL</tspan><tspan font-size="22.000px" dy="-5.280px">; A</tspan><tspan font-size="14.960px" dy="5.280px">o</tspan><tspan font-size="22.000px" dy="-5.280px">=2πr</tspan><tspan font-size="14.960px" dy="5.280px">oL</tspan></text>
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(508.811644 221.055703)"><tspan font-size="22.000px">Wall: ln(r</tspan><tspan font-size="14.960px" dy="5.280px">o</tspan><tspan font-size="22.000px" dy="-5.280px">/r</tspan><tspan font-size="14.960px" dy="5.280px">i</tspan><tspan font-size="22.000px" dy="-5.280px">)/(2πkL)</tspan></text>
    </g>
    <g id="text_2">
     <!-- $R_{total}=\frac{1}{h_iA_i}+\frac{R^{\prime\prime}_{fi}}{A_i}$ -->
@@ -232,10 +232,10 @@
    </g>
   </g>
   <g id="text_11">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Tube-wall heat transfer combines films, fouling, and cylindrical conduction</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="86.191" transform="rotate(-0 55.44 86.191)">Tube-wall heat transfer combines films, fouling, and cylindrical conduction</text>
   </g>
   <g id="text_13">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(120.494531 656.501562)">Steady radial transfer through one tube, constant k, negligible axial conduction. Fouling factors R″_f have units m²·K/W; every term above is K/W. U must</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(120.494531 656.501562)"><tspan font-size="10.000px">Steady radial transfer through one tube, constant k, negligible axial conduction. Fouling factors R″</tspan><tspan font-size="6.800px" dy="2.400px">f</tspan><tspan font-size="10.000px" dy="-2.400px"> have units m²·K/W; every term above is K/W. U must</tspan></text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(329.265625 669.497187)">be paired with its own reference area. The cross-section is schematic.</text>
   </g>
  </g>

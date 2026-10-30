@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="940pt" height="673.5pt" viewBox="27.5 11.75 940 673.5" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="837.750pt" height="573.670pt" viewBox="26.250 74.330 837.750 573.670" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -25,10 +25,10 @@
   <g id="axes_1">
    <g id="text_1">
     <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(712.602 195.243937)">First-order sensor</text>
-    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(756.707625 227.589562)">f_c=10 Hz</text>
+    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(756.707625 227.589562)"><tspan font-size="24.000px">f</tspan><tspan font-size="16.320px" dy="5.760px">c</tspan><tspan font-size="24.000px" dy="-5.760px">=10 Hz</tspan></text>
    </g>
    <g id="text_2">
-    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(704.168563 350.899281)">At f_c: −3.01 dB, −45°</text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(704.168563 350.899281)"><tspan font-size="20.000px">At f</tspan><tspan font-size="13.600px" dy="4.800px">c</tspan><tspan font-size="20.000px" dy="-4.800px">: −3.01 dB, −45°</tspan></text>
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(679.974812 378.410219)">At 1 Hz: −0.043 dB, −5.71°</text>
    </g>
    <g id="text_3">
@@ -939,11 +939,11 @@
    </g>
   </g>
   <g id="text_32">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Measurement bandwidth limits magnitude fidelity and phase fidelity</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="102.088" transform="rotate(-0 55.44 102.088)">Measurement bandwidth limits magnitude fidelity and phase fidelity</text>
   </g>
   <g id="text_34">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(145.510937 656.3625)">H(jf)=1/(1+jf/f_c). Shading 0.1–1 Hz illustrates a stricter usable band, not a universal bandwidth rule. For a selected signal band f_max, choose</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(132.340625 669.358125)">f_s&gt;2f_max with margin; the analog anti-alias filter must adequately attenuate content at and above f_s/2. Sensor roll-off alone may be insufficient.</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(145.510937 656.3625)"><tspan font-size="10.000px">H(jf)=1/(1+jf/f</tspan><tspan font-size="6.800px" dy="2.400px">c</tspan><tspan font-size="10.000px" dy="-2.400px">). Shading 0.1–1 Hz illustrates a stricter usable band, not a universal bandwidth rule. For a selected signal band f</tspan><tspan font-size="6.800px" dy="2.400px">max,</tspan><tspan font-size="10.000px" dy="-2.400px"> choose</tspan></text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(132.340625 669.358125)"><tspan font-size="10.000px">f</tspan><tspan font-size="6.800px" dy="2.400px">s</tspan><tspan font-size="10.000px" dy="-2.400px">&gt;2f</tspan><tspan font-size="6.800px" dy="2.400px">max</tspan><tspan font-size="10.000px" dy="-2.400px"> with margin; the analog anti-alias filter must adequately attenuate content at and above f</tspan><tspan font-size="6.800px" dy="2.400px">s</tspan><tspan font-size="10.000px" dy="-2.400px">/2. Sensor roll-off alone may be insufficient.</tspan></text>
   </g>
  </g>
  <defs>

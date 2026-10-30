@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="782.25pt" height="606.75pt" viewBox="37.5 10.5 782.25 606.75" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="795.678pt" height="548.868pt" viewBox="35.675 70.198 795.678 548.868" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -28,11 +28,11 @@
     <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(585.703294 209.982103)">h₃=h₄=250 kJ/kg</text>
    </g>
    <g id="text_2">
-    <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(584.708919 325.566703)">q_L=150 kJ/kg</text>
-    <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(585.9947 361.330922)">w_in=40 kJ/kg</text>
+    <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(584.708919 325.566703)"><tspan font-size="26.000px">q</tspan><tspan font-size="17.680px" dy="6.240px">L</tspan><tspan font-size="26.000px" dy="-6.240px">=150 kJ/kg</tspan></text>
+    <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(585.9947 361.330922)"><tspan font-size="26.000px">w</tspan><tspan font-size="17.680px" dy="6.240px">in</tspan><tspan font-size="26.000px" dy="-6.240px">=40 kJ/kg</tspan></text>
    </g>
    <g id="text_3">
-    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="678.0672" y="485.741119" transform="rotate(-0 678.0672 485.741119)">COP_R=q_L/w_in=3.75</text>
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="678.0672" y="485.741119" transform="rotate(-0 678.0672 485.741119)"><tspan font-size="23.000px">COP</tspan><tspan font-size="15.640px" dy="5.520px">R</tspan><tspan font-size="23.000px" dy="-5.520px">=q</tspan><tspan font-size="15.640px" dy="5.520px">L</tspan><tspan font-size="23.000px" dy="-5.520px">/w</tspan><tspan font-size="15.640px" dy="5.520px">in</tspan><tspan font-size="23.000px" dy="-5.520px">=3.75</tspan></text>
    </g>
   </g>
   <g id="axes_2">
@@ -206,10 +206,10 @@
     <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #235a78" x="257.8176" y="380.824615" transform="rotate(-0 257.8176 380.824615)">4</text>
    </g>
    <g id="text_19">
-    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #26776f" x="341.28" y="429.424615" transform="rotate(-0 341.28 429.424615)">q_L=h₁−h₄</text>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #26776f" x="341.28" y="429.424615" transform="rotate(-0 341.28 429.424615)"><tspan font-size="13.000px">q</tspan><tspan font-size="8.840px" dy="3.120px">L</tspan><tspan font-size="13.000px" dy="-3.120px">=h₁−h₄</tspan></text>
    </g>
    <g id="text_20">
-    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #b47722" x="456.192" y="134.086154" transform="rotate(-0 456.192 134.086154)">w_in=h₂−h₁</text>
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #b47722" x="456.192" y="134.086154" transform="rotate(-0 456.192 134.086154)"><tspan font-size="12.000px">w</tspan><tspan font-size="8.160px" dy="2.880px">in</tspan><tspan font-size="12.000px" dy="-2.880px">=h₂−h₁</tspan></text>
    </g>
    <g id="patch_5">
     <path d="M 448.599894 322.387689  Q 448.748158 321.77671 448.448204 323.012784  " clip-path="url(#p3a53fa2e59)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
@@ -239,7 +239,7 @@
    </g>
   </g>
   <g id="text_21">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Refrigeration effect and compressor work are enthalpy differences</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="97.891" transform="rotate(-0 47.52 97.891)">Refrigeration effect and compressor work are enthalpy differences</text>
   </g>
   <g id="text_23">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(95.166406 590.616625)">Steady single-stage example, negligible KE/PE changes, adiabatic compressor/valve. Diagram pressure scale/dome are schematic and</text>

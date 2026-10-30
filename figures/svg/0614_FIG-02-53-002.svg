@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="920.5pt" height="671.5pt" viewBox="27.5 13 920.5 671.5" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="836.350pt" height="572.477pt" viewBox="27.650 75.523 836.350 572.477" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -24,11 +24,11 @@
   </g>
   <g id="axes_1">
    <g id="text_1">
-    <text style="font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="817.992" y="205.138594" transform="rotate(-0 817.992 205.138594)">q_H=600; q_L=300 kJ/kg</text>
+    <text style="font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="817.992" y="205.138594" transform="rotate(-0 817.992 205.138594)"><tspan font-size="19.000px">q</tspan><tspan font-size="12.920px" dy="4.560px">H</tspan><tspan font-size="19.000px" dy="-4.560px">=600; q</tspan><tspan font-size="12.920px" dy="4.560px">L</tspan><tspan font-size="19.000px" dy="-4.560px">=300 kJ/kg</tspan></text>
    </g>
    <g id="text_2">
-    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(725.060906 349.769672)">w_net=300 kJ/kg</text>
-    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(709.332625 380.031703)">η=1−T_L/T_H=0.50</text>
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(725.060906 349.769672)"><tspan font-size="22.000px">w</tspan><tspan font-size="14.960px" dy="5.280px">net</tspan><tspan font-size="22.000px" dy="-5.280px">=300 kJ/kg</tspan></text>
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(709.332625 380.031703)"><tspan font-size="22.000px">η=1−T</tspan><tspan font-size="14.960px" dy="5.280px">L</tspan><tspan font-size="22.000px" dy="-5.280px">/T</tspan><tspan font-size="14.960px" dy="5.280px">H</tspan><tspan font-size="22.000px" dy="-5.280px">=0.50</tspan></text>
    </g>
    <g id="text_3">
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(719.563328 516.315195)">Clockwise engine cycle</text>
@@ -333,7 +333,7 @@
    </g>
   </g>
   <g id="text_28">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">A Carnot heat-engine cycle has two isotherms and two isentropes</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="103.078" transform="rotate(-0 55.44 103.078)">A Carnot heat-engine cycle has two isotherms and two isentropes</text>
   </g>
   <g id="text_30">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(119.495312 656.640625)">Internally reversible cycle between constant-temperature reservoirs; temperatures in Kelvin. Rectangle area equals net work per mass because net cycle</text>

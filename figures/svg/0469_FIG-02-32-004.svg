@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="894.750pt" height="665.250pt" viewBox="44.250 12.750 894.750 665.250" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="819.968pt" height="500.950pt" viewBox="44.032 119.687 819.968 500.950" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -24,8 +24,8 @@
   </g>
   <g id="axes_1">
    <g id="text_1">
-    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(397.651875 537.655312)">v = ṙ e_r + rθ̇ e_θ</text>
-    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(313.936875 570.949687)">a = (r̈ − rθ̇²)e_r + (rθ̈ + 2ṙθ̇)e_θ</text>
+    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(397.651875 537.655312)"><tspan font-size="24.000px">v = ṙ e</tspan><tspan font-size="16.320px" dy="5.760px">r</tspan><tspan font-size="24.000px" dy="-5.760px"> + rθ̇ e</tspan><tspan font-size="16.320px" dy="5.760px">θ</tspan></text>
+    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(313.936875 570.949687)"><tspan font-size="24.000px">a = (r̈ − rθ̇²)e</tspan><tspan font-size="16.320px" dy="5.760px">r</tspan><tspan font-size="24.000px" dy="-5.760px"> + (rθ̈ + 2ṙθ̇)e</tspan><tspan font-size="16.320px" dy="5.760px">θ</tspan></text>
    </g>
   </g>
   <g id="axes_2">
@@ -45,10 +45,10 @@
     <text style="font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #b47722" x="164.64" y="347.242813" transform="rotate(-0 164.64 347.242813)">r</text>
    </g>
    <g id="text_6">
-    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #235a78" x="305.64" y="243.97" transform="rotate(-0 305.64 243.97)">e_r</text>
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #235a78" x="305.64" y="243.97" transform="rotate(-0 305.64 243.97)"><tspan font-size="16.000px">e</tspan><tspan font-size="10.880px" dy="3.840px">r</tspan></text>
    </g>
    <g id="text_7">
-    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #26776f" x="188.64" y="232.255" transform="rotate(-0 188.64 232.255)">e_θ</text>
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #26776f" x="188.64" y="232.255" transform="rotate(-0 188.64 232.255)"><tspan font-size="16.000px">e</tspan><tspan font-size="10.880px" dy="3.840px">θ</tspan></text>
    </g>
    <g id="patch_3">
     <path d="M 88.642258 408  Q 176.640272 408 262.737628 408  " clip-path="url(#pacbff7c273)" style="fill: none; stroke: #23313d; stroke-width: 1.7; stroke-linecap: round"/>
@@ -79,7 +79,7 @@
     <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="539.28" y="177.374236" transform="rotate(-0 539.28 177.374236)">VELOCITY</text>
    </g>
    <g id="text_9">
-    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="539.28" y="427.546806" transform="rotate(-0 539.28 427.546806)">v_r=0.5; v_θ=1.2 m/s</text>
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="539.28" y="427.546806" transform="rotate(-0 539.28 427.546806)"><tspan font-size="12.000px">v</tspan><tspan font-size="8.160px" dy="2.880px">r</tspan><tspan font-size="12.000px" dy="-2.880px">=0.5; v</tspan><tspan font-size="8.160px" dy="2.880px">θ</tspan><tspan font-size="12.000px" dy="-2.880px">=1.2 m/s</tspan></text>
    </g>
    <g id="patch_9">
     <path d="M 540.920971 362.762091  Q 564.037491 346.575729 585.597083 331.47954  " clip-path="url(#p182f996a1d)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
@@ -99,7 +99,7 @@
     <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="846.72" y="177.374236" transform="rotate(-0 846.72 177.374236)">ACCELERATION</text>
    </g>
    <g id="text_11">
-    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="846.72" y="427.546806" transform="rotate(-0 846.72 427.546806)">a_r=−0.28; a_θ=0.70 m/s²</text>
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="846.72" y="427.546806" transform="rotate(-0 846.72 427.546806)"><tspan font-size="12.000px">a</tspan><tspan font-size="8.160px" dy="2.880px">r</tspan><tspan font-size="12.000px" dy="-2.880px">=−0.28; a</tspan><tspan font-size="8.160px" dy="2.880px">θ</tspan><tspan font-size="12.000px" dy="-2.880px">=0.70 m/s²</tspan></text>
    </g>
    <g id="patch_12">
     <path d="M 845.078425 365.060554  Q 832.855477 373.619154 822.189457 381.087582  " clip-path="url(#p5090f8cf53)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
@@ -115,10 +115,10 @@
    </g>
   </g>
   <g id="text_12">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Polar components follow a rotating radial–transverse basis</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="146.021" transform="rotate(-0 55.44 146.021)">Polar components follow a rotating radial–transverse basis</text>
   </g>
   <g id="text_14">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="663.038437" transform="rotate(-0 504 663.038437)">At the illustrated state: r=3 m, ṙ=0.5 m/s, θ̇=0.4 rad/s, r̈=0.2 m/s², θ̈=0.1 rad/s². Component panels use their own illustrative scales.</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="604.579" transform="rotate(-0 504 604.579)">At the illustrated state: r=3 m, ṙ=0.5 m/s, θ̇=0.4 rad/s, r̈=0.2 m/s², θ̈=0.1 rad/s². Component panels use their own illustrative scales.</text>
   </g>
  </g>
  <defs>

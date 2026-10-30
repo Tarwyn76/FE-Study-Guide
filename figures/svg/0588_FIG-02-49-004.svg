@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="793pt" height="606.75pt" viewBox="35.5 10.5 793 606.75" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="796.343pt" height="481.062pt" viewBox="33.829 137.846 796.343 481.062" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -34,13 +34,13 @@
    </g>
    <g id="text_1">
     <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(81.172125 234.234975)">Component A</text>
-    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(104.778375 266.5806)">x_A=0.70</text>
-    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(90.899625 299.593725)">p_A=70 kPa</text>
+    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(104.778375 266.5806)"><tspan font-size="24.000px">x</tspan><tspan font-size="16.320px" dy="5.760px">A</tspan><tspan font-size="24.000px" dy="-5.760px">=0.70</tspan></text>
+    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(90.899625 299.593725)"><tspan font-size="24.000px">p</tspan><tspan font-size="16.320px" dy="5.760px">A</tspan><tspan font-size="24.000px" dy="-5.760px">=70 kPa</tspan></text>
    </g>
    <g id="text_2">
     <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(357.97335 234.234975)">Component B</text>
-    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(381.5796 266.5806)">x_B=0.30</text>
-    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(367.70085 299.593725)">p_B=30 kPa</text>
+    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(381.5796 266.5806)"><tspan font-size="24.000px">x</tspan><tspan font-size="16.320px" dy="5.760px">B</tspan><tspan font-size="24.000px" dy="-5.760px">=0.30</tspan></text>
+    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(367.70085 299.593725)"><tspan font-size="24.000px">p</tspan><tspan font-size="16.320px" dy="5.760px">B</tspan><tspan font-size="24.000px" dy="-5.760px">=30 kPa</tspan></text>
    </g>
    <g id="text_3">
     <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(667.52415 251.075288)">Mixture</text>
@@ -53,14 +53,14 @@
     <text style="font-size: 30px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="578.1024" y="268.903725" transform="rotate(-0 578.1024 268.903725)">=</text>
    </g>
    <g id="text_6">
-    <text style="font-size: 30px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="469.690538" transform="rotate(-0 432 469.690538)">p_i=x_iP; Σx_i=1; P=Σp_i</text>
+    <text style="font-size: 30px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="469.690538" transform="rotate(-0 432 469.690538)"><tspan font-size="30.000px">p</tspan><tspan font-size="20.400px" dy="7.200px">i</tspan><tspan font-size="30.000px" dy="-7.200px">=x</tspan><tspan font-size="20.400px" dy="7.200px">iP</tspan><tspan font-size="30.000px" dy="-7.200px">; Σx</tspan><tspan font-size="20.400px" dy="7.200px">i</tspan><tspan font-size="30.000px" dy="-7.200px">=1; P=Σp</tspan><tspan font-size="20.400px" dy="7.200px">i</tspan></text>
    </g>
   </g>
   <g id="text_7">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Ideal-gas partial pressures add in proportion to mole fractions</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="164.768" transform="rotate(-0 47.52 164.768)">Ideal-gas partial pressures add in proportion to mole fractions</text>
   </g>
   <g id="text_9">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(110.841406 590.477562)">Dalton ideal-gas mixture at a common T and V. x_i=N_i/N is mole fraction here, not mass fraction or vapor quality. Mass-fraction</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(110.841406 590.477562)"><tspan font-size="10.000px">Dalton ideal-gas mixture at a common T and V. x</tspan><tspan font-size="6.800px" dy="2.400px">i</tspan><tspan font-size="10.000px" dy="-2.400px">=N</tspan><tspan font-size="6.800px" dy="2.400px">i</tspan><tspan font-size="10.000px" dy="-2.400px">/N is mole fraction here, not mass fraction or vapor quality. Mass-fraction</tspan></text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(277.732813 603.473187)">weighting is used for mixture-specific energy/heat capacities.</text>
   </g>
  </g>

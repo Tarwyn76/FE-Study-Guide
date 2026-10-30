@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="772.500pt" height="607.500pt" viewBox="36.000 9.000 772.500 607.500" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="769.531pt" height="491.290pt" viewBox="35.415 125.784 769.531 491.290" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -24,14 +24,14 @@
   </g>
   <g id="axes_1">
    <g id="text_1">
-    <text style="font-size: 26px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="670.3776" y="191.06645" transform="rotate(-0 670.3776 191.06645)">ΣF_t = ma_t</text>
+    <text style="font-size: 26px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="670.3776" y="191.06645" transform="rotate(-0 670.3776 191.06645)"><tspan font-size="26.000px">ΣF</tspan><tspan font-size="17.680px" dy="6.240px">t</tspan><tspan font-size="26.000px" dy="-6.240px"> = ma</tspan><tspan font-size="17.680px" dy="6.240px">t</tspan></text>
    </g>
    <g id="text_2">
-    <text style="font-size: 26px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="670.3776" y="320.863281" transform="rotate(-0 670.3776 320.863281)">ΣF_n = mv²/ρ</text>
+    <text style="font-size: 26px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="670.3776" y="320.863281" transform="rotate(-0 670.3776 320.863281)"><tspan font-size="26.000px">ΣF</tspan><tspan font-size="17.680px" dy="6.240px">n</tspan><tspan font-size="26.000px" dy="-6.240px"> = mv²/ρ</tspan></text>
    </g>
    <g id="text_3">
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(581.872912 449.121681)">m=2 kg; v=3 m/s</text>
-    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(541.279162 476.076369)">a_t=1 m/s²; a_n=4.5 m/s²</text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(541.279162 476.076369)"><tspan font-size="20.000px">a</tspan><tspan font-size="13.600px" dy="4.800px">t</tspan><tspan font-size="20.000px" dy="-4.800px">=1 m/s²; a</tspan><tspan font-size="13.600px" dy="4.800px">n</tspan><tspan font-size="20.000px" dy="-4.800px">=4.5 m/s²</tspan></text>
    </g>
   </g>
   <g id="axes_2">
@@ -42,10 +42,10 @@
     <path d="M 203.04 317.52  L 332.64 317.52  " clip-path="url(#p9d42400b7d)" style="fill: none; stroke-dasharray: 5.55,2.4; stroke-dashoffset: 0; stroke: #23313d; stroke-width: 1.5"/>
    </g>
    <g id="text_4">
-    <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #a23b34" x="216" y="298.638047" transform="rotate(-0 216 298.638047)">ΣF_n = 9 N</text>
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #a23b34" x="216" y="298.638047" transform="rotate(-0 216 298.638047)"><tspan font-size="15.000px">ΣF</tspan><tspan font-size="10.200px" dy="3.600px">n</tspan><tspan font-size="15.000px" dy="-3.600px"> = 9 N</tspan></text>
    </g>
    <g id="text_5">
-    <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #26776f" x="345.6" y="224.118047" transform="rotate(-0 345.6 224.118047)">ΣF_t = 2 N</text>
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #26776f" x="345.6" y="224.118047" transform="rotate(-0 345.6 224.118047)"><tspan font-size="15.000px">ΣF</tspan><tspan font-size="10.200px" dy="3.600px">t</tspan><tspan font-size="15.000px" dy="-3.600px"> = 2 N</tspan></text>
    </g>
    <g id="text_6">
     <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="241.92" y="344.063125" transform="rotate(-0 241.92 344.063125)">ρ = 2 m</text>
@@ -63,7 +63,7 @@
    </g>
   </g>
   <g id="text_7">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Path curvature requires an inward net normal force</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="152.901" transform="rotate(-0 47.52 152.901)">Path curvature requires an inward net normal force</text>
   </g>
   <g id="text_9">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(109.999219 590.616625)">Arrows show resultant components, not extra physical forces called “centripetal force.” Sum actual external forces in the inward</text>

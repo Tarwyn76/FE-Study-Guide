@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="938.5pt" height="673.5pt" viewBox="40.5 11.75 938.5 673.5" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="824.769pt" height="563.806pt" viewBox="39.231 84.194 824.769 563.806" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -313,10 +313,10 @@
    </g>
   </g>
   <g id="text_23">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">An n-bit ADC maps a continuous range into 2ⁿ finite codes</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="111.116" transform="rotate(-0 55.44 111.116)">An n-bit ADC maps a continuous range into 2ⁿ finite codes</text>
   </g>
   <g id="text_25">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(120.007031 656.501562)">Illustrative ideal floor quantizer with saturation outside nominal range. N=clip[floor((V−V_L)/LSB),0,2ⁿ−1]; lower-edge decoding gives V_hat=V_L+N·LSB.</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(120.007031 656.501562)"><tspan font-size="10.000px">Illustrative ideal floor quantizer with saturation outside nominal range. N=clip[floor((V−V</tspan><tspan font-size="6.800px" dy="2.400px">L</tspan><tspan font-size="10.000px" dy="-2.400px">)/LSB),0,2ⁿ−1]; lower-edge decoding gives V</tspan><tspan font-size="6.800px" dy="2.400px">hat</tspan><tspan font-size="10.000px" dy="-2.400px">=V</tspan><tspan font-size="6.800px" dy="2.400px">L</tspan><tspan font-size="10.000px" dy="-2.400px">+N·LSB.</tspan></text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(154.091406 669.497187)">Error in each unsaturated bin is [0,LSB), not symmetric ±LSB/2. Midpoint/rounding conventions use different error and endpoint definitions.</text>
   </g>
  </g>

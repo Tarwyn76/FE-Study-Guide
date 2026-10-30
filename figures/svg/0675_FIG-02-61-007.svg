@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="936pt" height="671.5pt" viewBox="31 13 936 671.5" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="832.629pt" height="564.480pt" viewBox="31.371 83.520 832.629 564.480" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -50,7 +50,7 @@
    </g>
    <g id="text_2">
     <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(734.364869 374.915609)">R=10 Ω; L=0.10 H</text>
-    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(719.184869 404.565766)">τ=0.010 s; V_s=10 V</text>
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(719.184869 404.565766)"><tspan font-size="22.000px">τ=0.010 s; V</tspan><tspan font-size="14.960px" dy="5.280px">s</tspan><tspan font-size="22.000px" dy="-5.280px">=10 V</tspan></text>
    </g>
    <g id="text_3">
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(735.208228 539.563477)">1τ: 0.632 / 0.368 A</text>
@@ -230,7 +230,7 @@
      </g>
     </g>
     <g id="text_17">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="52.733594" y="313.2" transform="rotate(-90 52.733594 313.2)">Inductor current i_L (A)</text>
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="52.733594" y="313.2" transform="rotate(-90 52.733594 313.2)"><tspan font-size="11.000px">Inductor current i</tspan><tspan font-size="7.480px" dy="2.640px">L</tspan><tspan font-size="11.000px" dy="-2.640px"> (A)</tspan></text>
     </g>
    </g>
    <g id="line2d_25">
@@ -270,7 +270,7 @@
    </g>
   </g>
   <g id="text_20">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">RL rise and decay share the time constant τ=L/R</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="110.217" transform="rotate(-0 55.44 110.217)">RL rise and decay share the time constant τ=L/R</text>
   </g>
   <g id="text_22">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(119.819531 656.640625)">First-order ideal RL circuit. Decay requires a maintained closed R–L path after the source is removed, such as an SPDT return path. Opening an energized</text>

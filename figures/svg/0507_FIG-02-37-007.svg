@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="822.750pt" height="669.750pt" viewBox="39.000 12.750 822.750 669.750" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="812.020pt" height="545.438pt" viewBox="39.223 102.562 812.020 545.438" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -24,8 +24,8 @@
   </g>
   <g id="axes_1">
    <g id="text_1">
-    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(319.572734 557.955008)">σ_θ ≈ pr/t     σ_z ≈ pr/(2t)</text>
-    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(118.649766 589.862117)">p=1 MPa; r=0.10 m; t=0.005 m → σ_θ=20 MPa; σ_z=10 MPa</text>
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(319.572734 557.955008)"><tspan font-size="23.000px">σ</tspan><tspan font-size="15.640px" dy="5.520px">θ</tspan><tspan font-size="23.000px" dy="-5.520px"> ≈ pr/t     σ</tspan><tspan font-size="15.640px" dy="5.520px">z</tspan><tspan font-size="23.000px" dy="-5.520px"> ≈ pr/(2t)</tspan></text>
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(118.649766 589.862117)"><tspan font-size="23.000px">p=1 MPa; r=0.10 m; t=0.005 m → σ</tspan><tspan font-size="15.640px" dy="5.520px">θ</tspan><tspan font-size="23.000px" dy="-5.520px">=20 MPa; σ</tspan><tspan font-size="15.640px" dy="5.520px">z</tspan><tspan font-size="23.000px" dy="-5.520px">=10 MPa</tspan></text>
    </g>
   </g>
   <g id="axes_2">
@@ -65,10 +65,10 @@
     <path d="M 652.464 341.136  L 751.536 341.136  L 751.536 242.064  L 652.464 242.064  z " clip-path="url(#p4fe3d92df2)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.7; stroke-linejoin: miter"/>
    </g>
    <g id="text_5">
-    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #235a78" x="819.648" y="274.39425" transform="rotate(-0 819.648 274.39425)">σ_z</text>
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #235a78" x="819.648" y="274.39425" transform="rotate(-0 819.648 274.39425)"><tspan font-size="18.000px">σ</tspan><tspan font-size="12.240px" dy="4.320px">z</tspan></text>
    </g>
    <g id="text_6">
-    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #26776f" x="714.384" y="160.162875" transform="rotate(-0 714.384 160.162875)">σ_θ</text>
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #26776f" x="714.384" y="160.162875" transform="rotate(-0 714.384 160.162875)"><tspan font-size="18.000px">σ</tspan><tspan font-size="12.240px" dy="4.320px">θ</tspan></text>
    </g>
    <g id="text_7">
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="702" y="294.91125" transform="rotate(-0 702 294.91125)">WALL PATCH</text>
@@ -91,7 +91,7 @@
    </g>
   </g>
   <g id="text_8">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="51.48" y="39.6" transform="rotate(-0 51.48 39.6)">Closed thin-wall cylinders carry hoop and axial membrane stress</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="51.48" y="130.917" transform="rotate(-0 51.48 130.917)">Closed thin-wall cylinders carry hoop and axial membrane stress</text>
   </g>
   <g id="text_10">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(133.830469 656.640625)">Differential internal pressure, thin wall, closed ends, and locations away from end effects. Mean radius r is used; radial stress is small</text>

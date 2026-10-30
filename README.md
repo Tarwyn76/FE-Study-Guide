@@ -1,14 +1,13 @@
-# FE Figure Cleanup + QA 0732–0881
+# FE figure cleanup — 0000–0431
 
-Extract this package at the FE Supplemental Guide repository root.
+Extract this archive at the FE Supplemental Guide repository root.
 
-Replacement assets are already located under:
-
+Replacement assets are already under:
 - `figures/png/`
 - `figures/svg/`
 
-The package does not create alternate figure aliases and does not modify chapter files.
+Audit material is under `meta/`.
 
-Every SVG in this package had its production-only figure/index footer removed and outer canvas tightened. PNGs were regenerated from the cleaned SVGs. Four figures with long titles/captions retained the original horizontal canvas extent after edge-clearance review.
+This package uses the revised figure standard: no embedded production IDs, true typographic subscripts instead of underscore notation, tighter internal title/caption spacing, and a tightened final canvas. Canonical indexed filenames are preserved.
 
-Audit metadata is under `meta/`.
+The corrected 0087 / FIG-01-18-006 tank artwork is retained.

@@ -1,0 +1,66 @@
+﻿Index,Figure ID,Check,Independent result,Displayed/expected,Result
+1068,FIG-03-48-001,20-year geometric population,14859.474,14859,PASS
+1068,FIG-03-48-001,Water demand at year 20 (m3/day),2228.85,2229,PASS
+1070,FIG-03-48-003,SI mass loading (kg/day),100,100,PASS
+1070,FIG-03-48-003,US mass loading (lb/day),166.908,166.91,PASS
+1073,FIG-03-48-006,CSTR steady concentration (mg/L),5,5.0,PASS
+1084,FIG-03-50-003,Hazard index sum,0.8,0.8,PASS
+1089,FIG-03-51-001,Hydrostatic gate force (kN),19.62,19.62,PASS
+1089,FIG-03-51-001,Center of pressure depth (m),1.33333333,1.333,PASS
+1091,FIG-03-51-003,"Hazen-Williams example at Q=0.05,D=0.2,C=130 (m)",6.40601136,6.406011359367739,PASS
+1092,FIG-03-51-004,Trapezoid area (m2),5.76,5.76,PASS
+1092,FIG-03-51-004,Wetted perimeter (m),7.32666153,7.327,PASS
+1092,FIG-03-51-004,Hydraulic radius (m),0.786169796,0.7862,PASS
+1092,FIG-03-51-004,Manning discharge (m3/s),6.20621349,6.206,PASS
+1094,FIG-03-51-006,Blower shaft power (kW),5.10641913,5.106,PASS
+1099,FIG-03-52-004,Curve-number runoff depth (mm),41.1371489,41.14,PASS
+1100,FIG-03-52-005,Effective rainfall depth (mm),43,43,PASS
+1107,FIG-03-53-005,BOD5 exerted (mg/L),12.6424112,12.64,PASS
+1107,FIG-03-53-005,Remaining ultimate demand L5 (mg/L),7.35758882,7.36,PASS
+1108,FIG-03-53-006,Streeter-Phelps critical time (days),2.79443061,2.79,PASS
+1108,FIG-03-53-006,Minimum dissolved oxygen (mg/L),4.42523462,4.43,PASS
+1108,FIG-03-53-006,Critical distance at 0.20 m/s (km),48.2877609,48.3,PASS
+1111,FIG-03-54-002,Hydraulic gradient,0.01,0.01,PASS
+1111,FIG-03-54-002,Darcy flux (m/day),0.1,0.1,PASS
+1111,FIG-03-54-002,Seepage velocity (m/day),0.4,0.4,PASS
+1114,FIG-03-54-005,Thiem head difference h2-h1 (m),1.832339,1.8320000000000007,PASS
+1119,FIG-03-55-003,Retardation factor,4.2,4.2,PASS
+1119,FIG-03-55-003,Retarded velocity (m/day),0.0952380952,0.0952,PASS
+1119,FIG-03-55-003,Travel time over 100 m (days),1050,1050,PASS
+1125,FIG-03-56-002,Treatment mass removal (kg/day),900,900,PASS
+1125,FIG-03-56-002,Treatment removal fraction,0.9,0.9,PASS
+1136,FIG-03-57-006,Active chemical feed (kg/h),2.5,2.5,PASS
+1136,FIG-03-57-006,10% solution feed (kg/h),25,25.0,PASS
+1138,FIG-03-58-001,Monod rate at S=Ks (day^-1),0.25,0.25,PASS
+1139,FIG-03-58-002,Biomass from 90 kg COD/day at Y=0.40,36,36,PASS
+1139,FIG-03-58-002,Oxidized COD residual balance,54,54,PASS
+1141,FIG-03-58-004,Hydraulic retention time (h),9.6,9.6,PASS
+1141,FIG-03-58-004,Solids retention time (day),10,10,PASS
+1146,FIG-03-59-002,Feed solids mass (kg/day),1000,1000,PASS
+1146,FIG-03-59-002,Underflow solids mass (kg/day),1000,1000,PASS
+1147,FIG-03-59-003,Volatile solids destroyed (kg/day),350,350,PASS
+1147,FIG-03-59-003,Stabilized solids (kg/day),650,650,PASS
+1151,FIG-03-59-007,Constituent mass-balance total,100,100,PASS
+1152,FIG-03-60-001,1 ppmv NO2 mass concentration (mg/m3),1.88043086,1.8804,PASS
+1152,FIG-03-60-001,250 ppbv NO2 mass concentration (mg/m3),0.470107714,0.4701,PASS
+1153,FIG-03-60-002,Captured emission (kg/h),45,45,PASS
+1153,FIG-03-60-002,Stack emission after 95% control (kg/h),2.25,2.25,PASS
+1153,FIG-03-60-002,Total atmospheric emission (kg/h),7.25,7.25,PASS
+1156,FIG-03-60-005,Room steady concentration (mg/m3),0.333333333,0.333,PASS
+1156,FIG-03-60-005,Effective time constant (h),0.666666667,0.667,PASS
+1166,FIG-03-62-001,Data completeness,0.95,0.95,PASS
+1169,FIG-03-62-004,First-pass yield,0.9,0.9,PASS
+1169,FIG-03-62-004,Good throughput (good/hour),18,18,PASS
+1169,FIG-03-62-004,Availability,0.8,0.8,PASS
+1169,FIG-03-62-004,OEE product,0.54,0.54,PASS
+1173,FIG-03-63-001,"LP objective at x=2,y=2",10,10,PASS
+1174,FIG-03-63-002,LP slack vector encoded as scalar sum,1,1,PASS
+1176,FIG-03-63-004,Dual objective,10,10,PASS
+1177,FIG-03-63-005,Reduced cost of new activity,-1,-1,PASS
+1178,FIG-03-63-006,Transportation plan cost,115,115,PASS
+1178,FIG-03-63-006,Assignment optimum cost,7,7,PASS
+1179,FIG-03-63-007,Constraint residual vector b-Ax,"[0, 0, 1]","[0, 0, 1]",PASS
+1179,FIG-03-63-007,Perturbed optimum profit at b1=4.1 using local dual price,10.2,10.2,PASS
+1180,FIG-03-64-001,M/M/1 utilization,0.8,0.8,PASS
+1181,FIG-03-64-002,Little's law system population,4,4,PASS
+1181,FIG-03-64-002,Little's law queue population,3.2,3.2,PASS

@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="936pt" height="792pt" viewBox="0 0 936 792" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="876.800pt" height="677.764pt" viewBox="29.600 51.402 876.800 677.764" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -21,29 +20,14 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 792 
-L 936 792 
-L 936 0 
-L 0 0 
-z
-" style="fill: #ffffff"/>
+   <path d="M 0 792  L 936 792  L 936 0  L 0 0  z " style="fill: #ffffff"/>
   </g>
   <g id="axes_1">
    <g id="patch_2">
-    <path d="M 42.12 95.04 
-L 425.412 95.04 
-L 425.412 290.2284 
-L 42.12 290.2284 
-z
-" clip-path="url(#p637a3cf90d)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter"/>
+    <path d="M 42.12 95.04  L 425.412 95.04  L 425.412 290.2284  L 42.12 290.2284  z " clip-path="url(#p637a3cf90d)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
-    <path d="M 510.588 95.04 
-L 893.88 95.04 
-L 893.88 290.2284 
-L 510.588 290.2284 
-z
-" clip-path="url(#p637a3cf90d)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter"/>
+    <path d="M 510.588 95.04  L 893.88 95.04  L 893.88 290.2284  L 510.588 290.2284  z " clip-path="url(#p637a3cf90d)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(121.261859 174.413653)">Finite lot: N = 200, D = 10</text>
@@ -126,13 +110,10 @@ z
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="468" y="714.846575" transform="rotate(-0 468 714.846575)">Example c = 2. A 25% sample fraction is substantial; do not assume constant p across without-replacement draws.</text>
    </g>
   </g>
-  <g id="text_8">
+  <g id="text_8" transform="translate(0 38.959)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="42.12" y="39.6" transform="rotate(-0 42.12 39.6)">Finite lots require the without-replacement model</text>
   </g>
-  <g id="text_9">
-   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="42.12" y="770.616" transform="rotate(-0 42.12 770.616)">0244  •  FIG-01-41-003</text>
   </g>
- </g>
  <defs>
   <clipPath id="p637a3cf90d">
    <rect x="42.12" y="95.04" width="851.76" height="629.64"/>

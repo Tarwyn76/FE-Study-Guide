@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="902.5pt" height="671.5pt" viewBox="38.75 13 902.5 671.5" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="820.522pt" height="541.719pt" viewBox="43.478 106.281 820.522 541.719" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -24,8 +24,8 @@
   </g>
   <g id="axes_1">
    <g id="text_1">
-    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(244.781016 572.90393)">Q̇_total=h[A_b,uncovered+η_f A_f] (T_b−T∞)</text>
-    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(186.044766 604.541508)">η_f=tanh(mL_c)/(mL_c); example mL_c=2 → η_f=0.482</text>
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(244.781016 572.90393)"><tspan font-size="23.000px">Q̇</tspan><tspan font-size="15.640px" dy="5.520px">total</tspan><tspan font-size="23.000px" dy="-5.520px">=h[A</tspan><tspan font-size="15.640px" dy="5.520px">b,uncovered</tspan><tspan font-size="23.000px" dy="-5.520px">+η</tspan><tspan font-size="15.640px" dy="5.520px">f</tspan><tspan font-size="23.000px" dy="-5.520px"> A</tspan><tspan font-size="15.640px" dy="5.520px">f</tspan><tspan font-size="23.000px" dy="-5.520px">] (T</tspan><tspan font-size="15.640px" dy="5.520px">b</tspan><tspan font-size="23.000px" dy="-5.520px">−T∞)</tspan></text>
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(186.044766 604.541508)"><tspan font-size="23.000px">η</tspan><tspan font-size="15.640px" dy="5.520px">f</tspan><tspan font-size="23.000px" dy="-5.520px">=tanh(mL</tspan><tspan font-size="15.640px" dy="5.520px">c</tspan><tspan font-size="23.000px" dy="-5.520px">)/(mL</tspan><tspan font-size="15.640px" dy="5.520px">c</tspan><tspan font-size="23.000px" dy="-5.520px">); example mL</tspan><tspan font-size="15.640px" dy="5.520px">c</tspan><tspan font-size="23.000px" dy="-5.520px">=2 → η</tspan><tspan font-size="15.640px" dy="5.520px">f</tspan><tspan font-size="23.000px" dy="-5.520px">=0.482</tspan></text>
    </g>
   </g>
   <g id="axes_2">
@@ -51,10 +51,10 @@
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="302.4" y="186.526938" transform="rotate(-0 302.4 186.526938)">FINNED</text>
    </g>
    <g id="text_4">
-    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="80.64" y="407.7885" transform="rotate(-0 80.64 407.7885)">A_base</text>
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="80.64" y="407.7885" transform="rotate(-0 80.64 407.7885)"><tspan font-size="16.000px">A</tspan><tspan font-size="10.880px" dy="3.840px">base</tspan></text>
    </g>
    <g id="text_5">
-    <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="302.4" y="407.526469" transform="rotate(-0 302.4 407.526469)">A_fins + uncovered base</text>
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="302.4" y="407.526469" transform="rotate(-0 302.4 407.526469)"><tspan font-size="15.000px">A</tspan><tspan font-size="10.200px" dy="3.600px">fins</tspan><tspan font-size="15.000px" dy="-3.600px"> + uncovered base</tspan></text>
    </g>
   </g>
   <g id="axes_3">
@@ -144,7 +144,7 @@
      </g>
     </g>
     <g id="text_12">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="750.96" y="510.162656" transform="rotate(-0 750.96 510.162656)">x/L_c</text>
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="750.96" y="510.162656" transform="rotate(-0 750.96 510.162656)"><tspan font-size="11.000px">x/L</tspan><tspan font-size="7.480px" dy="2.640px">c</tspan></text>
     </g>
    </g>
    <g id="matplotlib.axis_2">
@@ -230,7 +230,7 @@
      </g>
     </g>
     <g id="text_19">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="546.653594" y="316.8" transform="rotate(-90 546.653594 316.8)">θ/θ_b</text>
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="546.653594" y="316.8" transform="rotate(-90 546.653594 316.8)"><tspan font-size="11.000px">θ/θ</tspan><tspan font-size="7.480px" dy="2.640px">b</tspan></text>
     </g>
    </g>
    <g id="line2d_25">
@@ -244,7 +244,7 @@
    </g>
   </g>
   <g id="text_20">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Fins increase area while their temperature falls away from the base</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="132.076" transform="rotate(-0 55.44 132.076)">Fins increase area while their temperature falls away from the base</text>
   </g>
   <g id="text_22">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(132.785937 656.640625)">Uniform fin with corrected-length/adiabatic-tip approximation, constant k/h, no radiation. Area gain is discounted by fin efficiency. Very inefficient or</text>

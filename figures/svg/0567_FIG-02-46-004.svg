@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="877.500pt" height="671.250pt" viewBox="42.750 12.750 877.500 671.250" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="821.714pt" height="521.214pt" viewBox="42.286 126.786 821.714 521.214" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -27,13 +27,13 @@
     <text style="font-size: 27px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="782.1072" y="192.706312" transform="rotate(-0 782.1072 192.706312)">Q=A₁v₁=A₂v₂</text>
    </g>
    <g id="text_2">
-    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(675.548919 310.509148)">Q_ideal=A₂√[2Δp /</text>
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(675.548919 310.509148)"><tspan font-size="23.000px">Q</tspan><tspan font-size="15.640px" dy="5.520px">ideal</tspan><tspan font-size="23.000px" dy="-5.520px">=A₂√[2Δp /</tspan></text>
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(687.345403 342.146727)">{ρ(1−(A₂/A₁)²)}]</text>
    </g>
    <g id="text_3">
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(662.916575 476.525937)">A₁=0.020; A₂=0.010 m²</text>
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(654.33845 503.480625)">Δp=6 kPa; ρ=1000 kg/m³</text>
-    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(682.535325 530.435313)">Q_ideal=0.040 m³/s</text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(682.535325 530.435313)"><tspan font-size="20.000px">Q</tspan><tspan font-size="13.600px" dy="4.800px">ideal</tspan><tspan font-size="20.000px" dy="-4.800px">=0.040 m³/s</tspan></text>
    </g>
   </g>
   <g id="axes_2">
@@ -79,10 +79,10 @@
    </g>
   </g>
   <g id="text_7">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">A venturi infers flow from pressure drop and continuity</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="153.286" transform="rotate(-0 55.44 153.286)">A venturi infers flow from pressure drop and continuity</text>
   </g>
   <g id="text_9">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(122.980469 656.501562)">Horizontal, incompressible ideal venturi; uniform velocities and negligible loss. Actual Q=C_d Q_ideal. Area ratio A₂/A₁ equals diameter ratio squared for</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(122.980469 656.501562)"><tspan font-size="10.000px">Horizontal, incompressible ideal venturi; uniform velocities and negligible loss. Actual Q=C</tspan><tspan font-size="6.800px" dy="2.400px">d</tspan><tspan font-size="10.000px" dy="-2.400px"> Q</tspan><tspan font-size="6.800px" dy="2.400px">ideal</tspan><tspan font-size="10.000px" dy="-2.400px">. Area ratio A₂/A₁ equals diameter ratio squared for</tspan></text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(390.475 669.497187)">circular sections; do not confuse it with d₂/d₁.</text>
   </g>
  </g>

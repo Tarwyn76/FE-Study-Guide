@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="924pt" height="679.25pt" viewBox="42 11.75 924 679.25" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="821.800pt" height="542.087pt" viewBox="42.200 105.913 821.800 542.087" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -48,10 +48,10 @@
     <path d="M 234.864 374.04  L 234.864 398.88  " clip-path="url(#p1c0e12f308)" style="fill: none; stroke: #23313d; stroke-width: 1.8; stroke-linecap: square"/>
    </g>
    <g id="text_1">
-    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="167.58" y="165.132562" transform="rotate(-0 167.58 165.132562)">REFERENCE: T_ref</text>
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="167.58" y="165.132562" transform="rotate(-0 167.58 165.132562)"><tspan font-size="18.000px">REFERENCE: T</tspan><tspan font-size="12.240px" dy="4.320px">ref</tspan></text>
    </g>
    <g id="text_2">
-    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="844.9056" y="164.973656" transform="rotate(-0 844.9056 164.973656)">MEASUREMENT: T_m</text>
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="844.9056" y="164.973656" transform="rotate(-0 844.9056 164.973656)"><tspan font-size="18.000px">MEASUREMENT: T</tspan><tspan font-size="12.240px" dy="4.320px">m</tspan></text>
    </g>
    <g id="text_3">
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #a23b34" x="521.9424" y="245.698687" transform="rotate(-0 521.9424 245.698687)">Metal A</text>
@@ -93,11 +93,11 @@
    </g>
   </g>
   <g id="text_9">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">A thermocouple measures a temperature difference between junctions</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="132.445" transform="rotate(-0 55.44 132.445)">A thermocouple measures a temperature difference between junctions</text>
   </g>
   <g id="text_11">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(117.471875 650.00375)">Conceptual pair with positive S_AB and positive upper-terminal voltage for T_m&gt;T_ref. Dissimilar sensing metals join at T_m; both instrument connections</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(105.882812 662.999375)">are isothermal at T_ref and use a common third metal. Cold-junction compensation is needed unless the reference temperature is known. Seebeck response is</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(117.471875 650.00375)"><tspan font-size="10.000px">Conceptual pair with positive S</tspan><tspan font-size="6.800px" dy="2.400px">AB</tspan><tspan font-size="10.000px" dy="-2.400px"> and positive upper-terminal voltage for T</tspan><tspan font-size="6.800px" dy="2.400px">m</tspan><tspan font-size="10.000px" dy="-2.400px">&gt;T</tspan><tspan font-size="6.800px" dy="2.400px">ref</tspan><tspan font-size="10.000px" dy="-2.400px">. Dissimilar sensing metals join at T</tspan><tspan font-size="6.800px" dy="2.400px">m</tspan><tspan font-size="10.000px" dy="-2.400px">; both instrument connections</tspan></text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(105.882812 662.999375)"><tspan font-size="10.000px">are isothermal at T</tspan><tspan font-size="6.800px" dy="2.400px">ref</tspan><tspan font-size="10.000px" dy="-2.400px"> and use a common third metal. Cold-junction compensation is needed unless the reference temperature is known. Seebeck response is</tspan></text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(454.385156 675.995)">generally nonlinear.</text>
   </g>
  </g>

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="747.750pt" height="609.750pt" viewBox="34.500 9.000 747.750 609.750" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="757.727pt" height="521.005pt" viewBox="32.182 96.068 757.727 521.005" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -47,7 +47,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #b47722" x="65.725714" y="353.215821" transform="rotate(-0 65.725714 353.215821)">z=2 m</text>
    </g>
    <g id="text_5">
-    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="191.777143" y="189.566786" transform="rotate(-0 191.777143 189.566786)">p_g=30 kPa; ρ=1000 kg/m³</text>
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="191.777143" y="189.566786" transform="rotate(-0 191.777143 189.566786)"><tspan font-size="16.000px">p</tspan><tspan font-size="10.880px" dy="3.840px">g</tspan><tspan font-size="16.000px" dy="-3.840px">=30 kPa; ρ=1000 kg/m³</tspan></text>
    </g>
    <g id="patch_2">
     <path d="M 160.605435 291.522857  Q 214.997967 291.522857 267.489841 291.522857  " clip-path="url(#pf0acf7cc3b)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
@@ -195,7 +195,7 @@
    </g>
   </g>
   <g id="text_18">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Pressure, velocity, and elevation combine as total mechanical head</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="123.304" transform="rotate(-0 47.52 123.304)">Pressure, velocity, and elevation combine as total mechanical head</text>
   </g>
   <g id="text_20">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(100.284375 590.616625)">Pressure head uses a common pressure reference. The numerical stack assumes α=1; α corrects a nonuniform velocity profile when</text>

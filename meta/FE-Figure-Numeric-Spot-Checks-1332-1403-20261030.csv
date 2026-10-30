@@ -1,0 +1,94 @@
+﻿Index,Figure ID,Check,Independent result,Artwork value,Unit,Tolerance,Result
+1335,FIG-03-86-002,Ball bearing L10,64,64,million rev,1e-06,PASS
+1336,FIG-03-86-003,Equivalent dynamic load,5.24,5.24,kN,1e-06,PASS
+1336,FIG-03-86-003,Bearing life,55.6027314,55.6,million rev,0.0005,PASS
+1337,FIG-03-86-004,Accumulated revolutions,360000000,360000000,rev,1e-09,PASS
+1337,FIG-03-86-004,Life in million revolutions,360,360,million rev,1e-09,PASS
+1341,FIG-03-87-001,Thread raising torque,21.572197,21.57,N·m,0.0005,PASS
+1341,FIG-03-87-001,Collar torque,15,15,N·m,1e-09,PASS
+1341,FIG-03-87-001,Total raising torque,36.572197,36.57,N·m,0.0005,PASS
+1342,FIG-03-87-002,Lead-angle tangent,0.0636619772,0.06366,,0.0005,PASS
+1342,FIG-03-87-002,Lead angle,3.64264689,3.643,deg,0.0005,PASS
+1342,FIG-03-87-002,Friction angle,8.53076561,8.531,deg,0.0005,PASS
+1342,FIG-03-87-002,Overall efficiency,17.4072061,17.41,%,0.0005,PASS
+1344,FIG-03-87-004,Separation load,25,25,kN,1e-09,PASS
+1344,FIG-03-87-004,Bolt force at P=10,22,22,kN,1e-09,PASS
+1344,FIG-03-87-004,Clamp force at P=10,12,12,kN,1e-09,PASS
+1346,FIG-03-87-006,Bolt shear stress,127.323954,127.3,MPa,0.0005,PASS
+1346,FIG-03-87-006,Net-section stress,66.6666667,66.7,MPa,0.001,PASS
+1346,FIG-03-87-006,Bearing stress,200,200,MPa,1e-09,PASS
+1347,FIG-03-87-007,Fastener-group sum r^2,0.0164,0.0164,m²,1e-09,PASS
+1347,FIG-03-87-007,Direct reaction per bolt,2,2,kN,1e-09,PASS
+1348,FIG-03-88-001,Gear torque,100,100,N·m,1e-09,PASS
+1348,FIG-03-88-001,Resultant bending moment,0.510810218,0.511,kN·m,0.002,PASS
+1349,FIG-03-88-002,Normal mean stress,0,0,MPa,1e-09,PASS
+1349,FIG-03-88-002,Normal alternating stress,80,80,MPa,1e-09,PASS
+1349,FIG-03-88-002,Torsional mean stress,30,30,MPa,1e-09,PASS
+1349,FIG-03-88-002,Torsional alternating stress,0,0,MPa,1e-09,PASS
+1351,FIG-03-88-004,Module,3,3,mm,1e-09,PASS
+1351,FIG-03-88-004,Circular pitch,9.42477796,9.425,mm,0.0005,PASS
+1351,FIG-03-88-004,Center distance,90,90,mm,1e-09,PASS
+1352,FIG-03-88-005,Tangential gear force,2000,2000,N,1e-09,PASS
+1352,FIG-03-88-005,Radial gear force,727.940469,728,N,0.001,PASS
+1352,FIG-03-88-005,Resultant gear force,2128.35554,2128,N,0.001,PASS
+1353,FIG-03-88-006,Lewis bending stress,111.111111,111.1,MPa,0.001,PASS
+1355,FIG-03-89-001,Full piston area,1256.63706,1256.6,mm²,0.0005,PASS
+1355,FIG-03-89-001,Annular area,942.477796,942.5,mm²,0.0005,PASS
+1355,FIG-03-89-001,Ideal extend force,6.28318531,6.283,kN,0.0005,PASS
+1355,FIG-03-89-001,Ideal retract force,4.71238898,4.712,kN,0.0005,PASS
+1356,FIG-03-89-002,Flow conversion,0.0001,0.0001,m³/s,1e-09,PASS
+1356,FIG-03-89-002,Cylinder speed,0.0795774715,0.07958,m/s,0.0005,PASS
+1356,FIG-03-89-002,Hydraulic power,500,500,W,1e-09,PASS
+1356,FIG-03-89-002,Mechanical power,500,500,W,1e-09,PASS
+1362,FIG-03-90-001,Minimum H7/g6 clearance,0.007,0.007,mm,1e-09,PASS
+1362,FIG-03-90-001,Maximum H7/g6 clearance,0.041,0.041,mm,1e-09,PASS
+1363,FIG-03-90-002,Clearance fit minimum,7,7,µm,1e-09,PASS
+1363,FIG-03-90-002,Clearance fit maximum,41,41,µm,1e-09,PASS
+1363,FIG-03-90-002,Transition fit minimum,-15,-15,µm,1e-09,PASS
+1363,FIG-03-90-002,Transition fit maximum,19,19,µm,1e-09,PASS
+1363,FIG-03-90-002,Interference fit minimum,-48,-48,µm,1e-09,PASS
+1363,FIG-03-90-002,Interference fit maximum,-14,-14,µm,1e-09,PASS
+1366,FIG-03-90-005,Bonus tolerance,0.12,0.12,mm,1e-09,PASS
+1366,FIG-03-90-005,Total position tolerance,0.32,0.32,mm,1e-09,PASS
+1367,FIG-03-90-006,Worst-case tolerance half-width,0.3,0.3,mm,1e-09,PASS
+1367,FIG-03-90-006,RSS 3-sigma half-width,0.187082869,0.1871,mm,0.0005,PASS
+1370,FIG-03-91-002,Rectangle area moment,4166666.67,4167000,mm⁴,0.0005,PASS
+1370,FIG-03-91-002,Extreme-fiber stress,24,24,MPa,0.0005,PASS
+1372,FIG-03-91-004,Principal stress 1,90,90,MPa,1e-09,PASS
+1372,FIG-03-91-004,Principal stress 2,-10,-10,MPa,1e-09,PASS
+1372,FIG-03-91-004,von Mises stress,95.3939201,95.39,MPa,0.0005,PASS
+1377,FIG-03-92-002,Reynolds number at 20C,19920.1597,19920,,0.0005,PASS
+1377,FIG-03-92-002,Reynolds number at 60C,42098.5011,42099,,0.0005,PASS
+1378,FIG-03-92-003,Pump/system operating flow,0.1,0.1,m³/s,1e-09,PASS
+1378,FIG-03-92-003,Pump/system operating head,20,20,m,1e-09,PASS
+1379,FIG-03-92-004,Laminar-tube h,109.8,109.8,W/(m²·K),1e-09,PASS
+1384,FIG-03-93-002,DC current,2,2,A,1e-09,PASS
+1384,FIG-03-93-002,DC power,24,24,W,1e-09,PASS
+1384,FIG-03-93-002,AC current magnitude,12,12,A,1e-09,PASS
+1384,FIG-03-93-002,AC current angle,-36.8698976,-36.87,deg,0.0005,PASS
+1384,FIG-03-93-002,AC real power,1152,1152,W,1e-09,PASS
+1384,FIG-03-93-002,AC reactive power,864,864,var,1e-09,PASS
+1384,FIG-03-93-002,AC apparent power,1440,1440,VA,1e-09,PASS
+1385,FIG-03-93-003,Three-phase real power,5.54256258,5.543,kW,0.0005,PASS
+1385,FIG-03-93-003,Three-phase apparent power,6.92820323,6.928,kVA,0.0005,PASS
+1385,FIG-03-93-003,Shaft power at 90% efficiency,4.98830633,4.988,kW,0.0005,PASS
+1386,FIG-03-93-004,4 mA shunt output,1,1,V,1e-09,PASS
+1386,FIG-03-93-004,20 mA shunt output,5,5,V,1e-09,PASS
+1387,FIG-03-93-005,Alias frequency,300,300,Hz,1e-09,PASS
+1387,FIG-03-93-005,12-bit code width,1.22070312,1.221,mV,0.0005,PASS
+1391,FIG-03-94-002,Time-weighted concentration,2.5,2.5,relative units,1e-09,PASS
+1394,FIG-03-94-005,EV alternative A,64,64,$k,1e-09,PASS
+1394,FIG-03-94-005,EV alternative B,68,68,$k,1e-09,PASS
+1396,FIG-03-94-007,Weighted score A,3.75,3.75,,1e-09,PASS
+1396,FIG-03-94-007,Weighted score B,3.9,3.9,,1e-09,PASS
+1397,FIG-03-95-001,Pump electrical input,4.905,4.905,kW,1e-09,PASS
+1399,FIG-03-95-003,Stress in psi,50,50,psi,1e-09,PASS
+1399,FIG-03-95-003,100 lbf to newtons,444.822161,444.822,N,0.0005,PASS
+1399,FIG-03-95-003,2 in² to m²,0.00129032,0.00129032,m²,5e-06,PASS
+1399,FIG-03-95-003,50 psi to kPa,344.737865,344.738,kPa,0.0005,PASS
+1401,FIG-03-95-005,Motor shaft power,9,9,kW,1e-09,PASS
+1401,FIG-03-95-005,Hydraulic power,7.2,7.2,kW,1e-09,PASS
+1401,FIG-03-95-005,Head from hydraulic power,36.6972477,36.697,m,0.0005,PASS
+1401,FIG-03-95-005,Annual energy cost,2400,2400,$/yr,1e-09,PASS
+1402,FIG-03-95-006,Section 1 illustrative allocation,160,160,min,1e-09,PASS
+1402,FIG-03-95-006,Section 2 illustrative allocation,160,160,min,1e-09,PASS

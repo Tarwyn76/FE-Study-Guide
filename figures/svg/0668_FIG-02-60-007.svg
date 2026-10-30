@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="1027.25pt" height="672.25pt" viewBox="21 12.5 1027.25 672.25" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="846.828pt" height="530.948pt" viewBox="17.172 117.052 846.828 530.948" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -24,10 +24,10 @@
   </g>
   <g id="axes_1">
    <g id="text_1">
-    <text style="font-size: 24px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="540" y="519.43275" transform="rotate(-0 540 519.43275)">V_th=8 V; R_th=8/3 Ω; I_N=V_th/R_th=3 A</text>
+    <text style="font-size: 24px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="540" y="519.43275" transform="rotate(-0 540 519.43275)"><tspan font-size="24.000px">V</tspan><tspan font-size="16.320px" dy="5.760px">th</tspan><tspan font-size="24.000px" dy="-5.760px">=8 V; R</tspan><tspan font-size="16.320px" dy="5.760px">th</tspan><tspan font-size="24.000px" dy="-5.760px">=8/3 Ω; I</tspan><tspan font-size="16.320px" dy="5.760px">N</tspan><tspan font-size="24.000px" dy="-5.760px">=V</tspan><tspan font-size="16.320px" dy="5.760px">th</tspan><tspan font-size="24.000px" dy="-5.760px">/R</tspan><tspan font-size="16.320px" dy="5.760px">th</tspan><tspan font-size="24.000px" dy="-5.760px">=3 A</tspan></text>
    </g>
    <g id="text_2">
-    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="540" y="603.364687" transform="rotate(-0 540 603.364687)">Maximum resistive load power: R_L=R_th → P_max=V_th²/(4R_th)=6 W</text>
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="540" y="603.364687" transform="rotate(-0 540 603.364687)"><tspan font-size="22.000px">Maximum resistive load power: R</tspan><tspan font-size="14.960px" dy="5.280px">L</tspan><tspan font-size="22.000px" dy="-5.280px">=R</tspan><tspan font-size="14.960px" dy="5.280px">th</tspan><tspan font-size="22.000px" dy="-5.280px"> → P</tspan><tspan font-size="14.960px" dy="5.280px">max</tspan><tspan font-size="22.000px" dy="-5.280px">=V</tspan><tspan font-size="14.960px" dy="5.280px">th</tspan><tspan font-size="22.000px" dy="-5.280px">²/(4R</tspan><tspan font-size="14.960px" dy="5.280px">th</tspan><tspan font-size="22.000px" dy="-5.280px">)=6 W</tspan></text>
    </g>
   </g>
   <g id="axes_2">
@@ -200,10 +200,10 @@
    </g>
   </g>
   <g id="text_23">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="39.6" transform="rotate(-0 59.4 39.6)">Thévenin and Norton equivalents preserve the same two-terminal behavior</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="144.768" transform="rotate(-0 59.4 144.768)">Thévenin and Norton equivalents preserve the same two-terminal behavior</text>
   </g>
   <g id="text_25">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(142.209375 656.557031)">Equivalence applies at external terminals a–b for this linear network. Determine R_th with the independent ideal voltage source shorted: 4 Ω∥8 Ω. Open-circuit</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(142.209375 656.557031)"><tspan font-size="10.000px">Equivalence applies at external terminals a–b for this linear network. Determine R</tspan><tspan font-size="6.800px" dy="2.400px">th</tspan><tspan font-size="10.000px" dy="-2.400px"> with the independent ideal voltage source shorted: 4 Ω∥8 Ω. Open-circuit</tspan></text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(344.492969 669.552656)">voltage is 8 V. Maximum power matching is distinct from maximum efficiency.</text>
   </g>
  </g>

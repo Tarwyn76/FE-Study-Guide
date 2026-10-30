@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="900.000pt" height="669.750pt" viewBox="44.250 12.750 900.000 669.750" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="819.893pt" height="539.034pt" viewBox="44.107 108.966 819.893 539.034" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -24,8 +24,8 @@
   </g>
   <g id="axes_1">
    <g id="text_1">
-    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(343.903828 567.732883)">ΣF = ma_G     ΣM_G = I_G α</text>
-    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(237.651016 599.370461)">m=5 kg; I_G=3 kg·m²; ΣM_G=2(5)+5=15 N·m</text>
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(343.903828 567.732883)"><tspan font-size="23.000px">ΣF = ma</tspan><tspan font-size="15.640px" dy="5.520px">G</tspan><tspan font-size="23.000px" dy="-5.520px">     ΣM</tspan><tspan font-size="15.640px" dy="5.520px">G</tspan><tspan font-size="23.000px" dy="-5.520px"> = I</tspan><tspan font-size="15.640px" dy="5.520px">G</tspan><tspan font-size="23.000px" dy="-5.520px"> α</tspan></text>
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(237.651016 599.370461)"><tspan font-size="23.000px">m=5 kg; I</tspan><tspan font-size="15.640px" dy="5.520px">G</tspan><tspan font-size="23.000px" dy="-5.520px">=3 kg·m²; ΣM</tspan><tspan font-size="15.640px" dy="5.520px">G</tspan><tspan font-size="23.000px" dy="-5.520px">=2(5)+5=15 N·m</tspan></text>
    </g>
   </g>
   <g id="axes_2">
@@ -77,7 +77,7 @@
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="732.96" y="363.970937" transform="rotate(-0 732.96 363.970937)">G</text>
    </g>
    <g id="text_8">
-    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #26776f" x="802.08" y="254.285234" transform="rotate(-0 802.08 254.285234)">a_G=(2,1) m/s²</text>
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #26776f" x="802.08" y="254.285234" transform="rotate(-0 802.08 254.285234)"><tspan font-size="17.000px">a</tspan><tspan font-size="11.560px" dy="4.080px">G</tspan><tspan font-size="17.000px" dy="-4.080px">=(2,1) m/s²</tspan></text>
    </g>
    <g id="text_9">
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #b47722" x="756" y="435.695" transform="rotate(-0 756 435.695)">α=5 rad/s²</text>
@@ -98,7 +98,7 @@
    </g>
   </g>
   <g id="text_11">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Rigid-body kinetics separates mass-center translation from angular acceleration</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="134.930" transform="rotate(-0 55.44 134.930)">Rigid-body kinetics separates mass-center translation from angular acceleration</text>
   </g>
   <g id="text_13">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(113.85 656.640625)">Horizontal-plane example: out-of-plane weight and support forces balance and are omitted. The 10 N force line passes through G; the 5 N force acts at x=2</text>

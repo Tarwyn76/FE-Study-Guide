@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="910.25pt" height="671.5pt" viewBox="24.25 13 910.25 671.5" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="839.746pt" height="571.582pt" viewBox="24.254 76.418 839.746 571.582" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -25,16 +25,16 @@
   <g id="axes_1">
    <g id="text_1">
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(732.581738 191.923281)">P=101.325 kPa</text>
-    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(708.378613 218.877969)">T_db=30°C; φ=50%</text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(708.378613 218.877969)"><tspan font-size="20.000px">T</tspan><tspan font-size="13.600px" dy="4.800px">db</tspan><tspan font-size="20.000px" dy="-4.800px">=30°C; φ=50%</tspan></text>
    </g>
    <g id="text_2">
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(697.545253 331.076203)">ω=13.31 g/kg dry air</text>
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(732.585722 359.378625)">T_dp≈18.45°C</text>
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(730.66455 388.265109)">T_wb≈22.00°C</text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(732.585722 359.378625)"><tspan font-size="21.000px">T</tspan><tspan font-size="14.280px" dy="5.040px">dp</tspan><tspan font-size="21.000px" dy="-5.040px">≈18.45°C</tspan></text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(730.66455 388.265109)"><tspan font-size="21.000px">T</tspan><tspan font-size="14.280px" dy="5.040px">wb</tspan><tspan font-size="21.000px" dy="-5.040px">≈22.00°C</tspan></text>
    </g>
    <g id="text_3">
-    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(715.194237 514.565156)">φ=p_v/p_sat(T_db)</text>
-    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(703.523925 542.076094)">ω=0.622p_v/(P−p_v)</text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(715.194237 514.565156)"><tspan font-size="20.000px">φ=p</tspan><tspan font-size="13.600px" dy="4.800px">v</tspan><tspan font-size="20.000px" dy="-4.800px">/p</tspan><tspan font-size="13.600px" dy="4.800px">sat</tspan><tspan font-size="20.000px" dy="-4.800px">(T</tspan><tspan font-size="13.600px" dy="4.800px">db</tspan><tspan font-size="20.000px" dy="-4.800px">)</tspan></text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(703.523925 542.076094)"><tspan font-size="20.000px">ω=0.622p</tspan><tspan font-size="13.600px" dy="4.800px">v</tspan><tspan font-size="20.000px" dy="-4.800px">/(P−p</tspan><tspan font-size="13.600px" dy="4.800px">v</tspan><tspan font-size="20.000px" dy="-4.800px">)</tspan></text>
    </g>
   </g>
   <g id="axes_2">
@@ -316,7 +316,7 @@
    </g>
   </g>
   <g id="text_29">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">A psychrometric chart locates moist-air temperature and water content</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="103.419" transform="rotate(-0 55.44 103.419)">A psychrometric chart locates moist-air temperature and water content</text>
   </g>
   <g id="text_31">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(118.954687 656.640625)">Illustrative engineering chart using handbook saturation-pressure data with smooth interpolation and ideal-mixture heat capacities. Dashed wet-bulb line</text>

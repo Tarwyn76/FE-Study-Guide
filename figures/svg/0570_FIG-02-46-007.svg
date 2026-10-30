@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="766.500pt" height="609.750pt" viewBox="34.500 9.000 766.500 609.750" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="761.019pt" height="508.319pt" viewBox="33.819 111.099 761.019 508.319" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -24,16 +24,16 @@
   </g>
   <g id="axes_1">
    <g id="text_1">
-    <text style="font-size: 27px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="654.9984" y="178.276444" transform="rotate(-0 654.9984 178.276444)">P_fluid=ρgQh_T</text>
+    <text style="font-size: 27px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="654.9984" y="178.276444" transform="rotate(-0 654.9984 178.276444)"><tspan font-size="27.000px">P</tspan><tspan font-size="18.360px" dy="6.480px">fluid</tspan><tspan font-size="27.000px" dy="-6.480px">=ρgQh</tspan><tspan font-size="18.360px" dy="6.480px">T</tspan></text>
    </g>
    <g id="text_2">
-    <text style="font-size: 26px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="654.9984" y="312.150413" transform="rotate(-0 654.9984 312.150413)">P_shaft=η_TρgQh_T</text>
+    <text style="font-size: 26px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="654.9984" y="312.150413" transform="rotate(-0 654.9984 312.150413)"><tspan font-size="26.000px">P</tspan><tspan font-size="17.680px" dy="6.240px">shaft</tspan><tspan font-size="26.000px" dy="-6.240px">=η</tspan><tspan font-size="17.680px" dy="6.240px">TρgQh</tspan><tspan font-size="17.680px" dy="6.240px">T</tspan></text>
    </g>
    <g id="text_3">
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(520.176759 424.00253)">Q=0.030 m³/s; h_T=20 m</text>
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(521.384259 452.889014)">ρ=1000 kg/m³; η_T=0.90</text>
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(561.909337 481.775498)">P_fluid=5.886 kW</text>
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(558.572306 510.661983)">P_shaft=5.297 kW</text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(520.176759 424.00253)"><tspan font-size="21.000px">Q=0.030 m³/s; h</tspan><tspan font-size="14.280px" dy="5.040px">T</tspan><tspan font-size="21.000px" dy="-5.040px">=20 m</tspan></text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(521.384259 452.889014)"><tspan font-size="21.000px">ρ=1000 kg/m³; η</tspan><tspan font-size="14.280px" dy="5.040px">T</tspan><tspan font-size="21.000px" dy="-5.040px">=0.90</tspan></text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(561.909337 481.775498)"><tspan font-size="21.000px">P</tspan><tspan font-size="14.280px" dy="5.040px">fluid</tspan><tspan font-size="21.000px" dy="-5.040px">=5.886 kW</tspan></text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(558.572306 510.661983)"><tspan font-size="21.000px">P</tspan><tspan font-size="14.280px" dy="5.040px">shaft</tspan><tspan font-size="21.000px" dy="-5.040px">=5.297 kW</tspan></text>
    </g>
   </g>
   <g id="axes_2">
@@ -72,10 +72,10 @@
    </g>
   </g>
   <g id="text_8">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">A hydraulic turbine converts available fluid head into shaft power</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="138.283" transform="rotate(-0 47.52 138.283)">A hydraulic turbine converts available fluid head into shaft power</text>
   </g>
   <g id="text_10">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(110.580469 590.477562)">h_T denotes the available total-head drop assigned to the turbine; connecting-pipe losses are separate. Efficiency multiplies the</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(110.580469 590.477562)"><tspan font-size="10.000px">h</tspan><tspan font-size="6.800px" dy="2.400px">T</tspan><tspan font-size="10.000px" dy="-2.400px"> denotes the available total-head drop assigned to the turbine; connecting-pipe losses are separate. Efficiency multiplies the</tspan></text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(221.923437 603.473187)">available fluid power for a turbine, whereas pump input power divides by efficiency.</text>
   </g>
  </g>

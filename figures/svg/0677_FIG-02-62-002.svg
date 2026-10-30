@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="936pt" height="671.5pt" viewBox="26.5 13 936 671.5" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="837.129pt" height="564.480pt" viewBox="26.871 83.520 837.129 564.480" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -75,8 +75,8 @@
     </g>
    </g>
    <g id="text_3">
-    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(755.07315 532.734187)">V_peak=10 V</text>
-    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(742.63065 565.747312)">V_rms=7.071 V</text>
+    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(755.07315 532.734187)"><tspan font-size="24.000px">V</tspan><tspan font-size="16.320px" dy="5.760px">peak</tspan><tspan font-size="24.000px" dy="-5.760px">=10 V</tspan></text>
+    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(742.63065 565.747312)"><tspan font-size="24.000px">V</tspan><tspan font-size="16.320px" dy="5.760px">rms</tspan><tspan font-size="24.000px" dy="-5.760px">=7.071 V</tspan></text>
    </g>
   </g>
   <g id="axes_2">
@@ -284,7 +284,7 @@
    </g>
   </g>
   <g id="text_19">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">RMS represents the DC-equivalent heating value of a waveform</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="110.217" transform="rotate(-0 55.44 110.217)">RMS represents the DC-equivalent heating value of a waveform</text>
   </g>
   <g id="text_21">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(134.426562 656.640625)">For a pure sinusoid with no DC offset, the signed average over a full period is zero while RMS is positive. The average of the rectified waveform is a</text>

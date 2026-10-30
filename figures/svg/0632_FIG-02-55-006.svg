@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="909pt" height="671.5pt" viewBox="31 13 909 671.5" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="834.638pt" height="571.767pt" viewBox="29.362 76.233 834.638 571.767" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -24,12 +24,12 @@
   </g>
   <g id="axes_1">
    <g id="text_1">
-    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="809.0208" y="195.988687" transform="rotate(-0 809.0208 195.988687)">Cylinder: r_cr=k_ins/h</text>
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="809.0208" y="195.988687" transform="rotate(-0 809.0208 195.988687)"><tspan font-size="22.000px">Cylinder: r</tspan><tspan font-size="14.960px" dy="5.280px">cr</tspan><tspan font-size="22.000px" dy="-5.280px">=k</tspan><tspan font-size="14.960px" dy="5.280px">ins</tspan><tspan font-size="22.000px" dy="-5.280px">/h</tspan></text>
    </g>
    <g id="text_2">
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(704.57205 321.140203)">k_ins=0.05 W/(m·K)</text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(704.57205 321.140203)"><tspan font-size="21.000px">k</tspan><tspan font-size="14.280px" dy="5.040px">ins</tspan><tspan font-size="21.000px" dy="-5.040px">=0.05 W/(m·K)</tspan></text>
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(736.777519 350.026687)">h=5 W/(m²·K)</text>
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(743.412206 378.329109)">r_cr=10 mm</text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(743.412206 378.329109)"><tspan font-size="21.000px">r</tspan><tspan font-size="14.280px" dy="5.040px">cr</tspan><tspan font-size="21.000px" dy="-5.040px">=10 mm</tspan></text>
    </g>
    <g id="text_3">
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(700.341113 520.089406)">Inner radius r₁=3 mm</text>
@@ -207,15 +207,15 @@
     <path d="M 80.64 504  L 655.2 504  " style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="text_16">
-    <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #a23b34" x="206.77648" y="168.478269" transform="rotate(-0 206.77648 168.478269)">Maximum at r_cr</text>
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #a23b34" x="206.77648" y="168.478269" transform="rotate(-0 206.77648 168.478269)"><tspan font-size="15.000px">Maximum at r</tspan><tspan font-size="10.200px" dy="3.600px">cr</tspan></text>
    </g>
   </g>
   <g id="text_17">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Cylinder heat loss can initially rise as insulation increases the convecting area</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="103.419" transform="rotate(-0 55.44 103.419)">Cylinder heat loss can initially rise as insulation increases the convecting area</text>
   </g>
   <g id="text_19">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(143.620312 656.501562)">Steady radial cylinder with fixed inner-surface temperature, constant k/h, no radiation or contact resistance. Sphere critical radius is 2k/h. If the</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(319.2375 669.219062)">starting radius exceeds r_cr, added insulation reduces loss from the start.</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(319.2375 669.219062)"><tspan font-size="10.000px">starting radius exceeds r</tspan><tspan font-size="6.800px" dy="2.400px">cr,</tspan><tspan font-size="10.000px" dy="-2.400px"> added insulation reduces loss from the start.</tspan></text>
   </g>
  </g>
  <defs>

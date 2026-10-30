@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="892.500pt" height="603.000pt" viewBox="43.500 9.000 892.500 603.000" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="820.750pt" height="504.571pt" viewBox="43.250 67.786 820.750 504.571" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -51,7 +51,7 @@
     <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="333.5472" y="131.456475" transform="rotate(-0 333.5472 131.456475)">160 kPa absolute</text>
    </g>
    <g id="text_5">
-    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #b47722" x="145.152" y="304.331027" transform="rotate(-0 145.152 304.331027)">p_abs</text>
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #b47722" x="145.152" y="304.331027" transform="rotate(-0 145.152 304.331027)"><tspan font-size="18.000px">p</tspan><tspan font-size="12.240px" dy="4.320px">abs</tspan></text>
    </g>
    <g id="text_6">
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #26776f" x="710.3376" y="199.07635" transform="rotate(-0 710.3376 199.07635)">Gauge +60 kPa</text>
@@ -77,10 +77,10 @@
    </g>
   </g>
   <g id="text_8">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="35.64" transform="rotate(-0 55.44 35.64)">Gauge pressure is measured relative to atmospheric pressure, not absolute zero</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="94.077" transform="rotate(-0 55.44 94.077)">Gauge pressure is measured relative to atmospheric pressure, not absolute zero</text>
   </g>
   <g id="text_10">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="596.836312" transform="rotate(-0 504 596.836312)">p_abs=p_atm+p_gauge. The illustrative local atmospheric reference is 100 kPa; absolute zero pressure is the zero of this scale.</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="554.103" transform="rotate(-0 504 554.103)"><tspan font-size="10.000px">p</tspan><tspan font-size="6.800px" dy="2.400px">abs</tspan><tspan font-size="10.000px" dy="-2.400px">=p</tspan><tspan font-size="6.800px" dy="2.400px">atm</tspan><tspan font-size="10.000px" dy="-2.400px">+p</tspan><tspan font-size="6.800px" dy="2.400px">gauge</tspan><tspan font-size="10.000px" dy="-2.400px">. The illustrative local atmospheric reference is 100 kPa; absolute zero pressure is the zero of this scale.</tspan></text>
   </g>
  </g>
  <defs>

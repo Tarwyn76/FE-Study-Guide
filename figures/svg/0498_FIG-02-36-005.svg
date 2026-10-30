@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="768.000pt" height="609.750pt" viewBox="36.000 9.000 768.000 609.750" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="776.171pt" height="524.762pt" viewBox="35.343 93.286 776.171 524.762" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -24,7 +24,7 @@
   </g>
   <g id="axes_1">
    <g id="text_1">
-    <text style="font-size: 28px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="670.3776" y="200.894475" transform="rotate(-0 670.3776 200.894475)">I_O = I_G + md²</text>
+    <text style="font-size: 28px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="670.3776" y="200.894475" transform="rotate(-0 670.3776 200.894475)"><tspan font-size="28.000px">I</tspan><tspan font-size="19.040px" dy="6.720px">O</tspan><tspan font-size="28.000px" dy="-6.720px"> = I</tspan><tspan font-size="19.040px" dy="6.720px">G</tspan><tspan font-size="28.000px" dy="-6.720px"> + md²</tspan></text>
    </g>
    <g id="text_2">
     <text style="font-size: 19px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(587.999241 320.743059)">Axes are parallel.</text>
@@ -88,10 +88,10 @@
     </g>
    </g>
    <g id="text_4">
-    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="290.107636" y="270.455726" transform="rotate(-0 290.107636 270.455726)">G: z_G</text>
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="290.107636" y="270.455726" transform="rotate(-0 290.107636 270.455726)"><tspan font-size="17.000px">G: z</tspan><tspan font-size="11.560px" dy="4.080px">G</tspan></text>
    </g>
    <g id="text_5">
-    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="124.690909" y="397.699362" transform="rotate(-0 124.690909 397.699362)">O: z_O</text>
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="124.690909" y="397.699362" transform="rotate(-0 124.690909 397.699362)"><tspan font-size="17.000px">O: z</tspan><tspan font-size="11.560px" dy="4.080px">O</tspan></text>
    </g>
    <g id="text_6">
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #b47722" x="191.493818" y="331.485596" transform="rotate(-0 191.493818 331.485596)">d</text>
@@ -106,7 +106,7 @@
    </g>
   </g>
   <g id="text_8">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Mass moments about parallel axes differ by md²</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="120.923" transform="rotate(-0 47.52 120.923)">Mass moments about parallel axes differ by md²</text>
   </g>
   <g id="text_10">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(115.907812 590.616625)">Both indicated z axes are perpendicular to the page; d is their perpendicular separation. This is a mass property, distinct from</text>

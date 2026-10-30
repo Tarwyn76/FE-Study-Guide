@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="777.5pt" height="606.75pt" viewBox="37.5 10.5 777.5 606.75" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="763.237pt" height="546.666pt" viewBox="35.607 72.476 763.237 546.666" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -31,20 +31,20 @@
    </g>
    <g id="text_1">
     <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(192.495556 261.095866)">SOLID</text>
-    <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(176.4629 296.136959)">k; V; A_s</text>
+    <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(176.4629 296.136959)"><tspan font-size="26.000px">k; V; A</tspan><tspan font-size="17.680px" dy="6.240px">s</tspan></text>
    </g>
    <g id="text_2">
     <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(625.258156 261.457428)">FLUID</text>
     <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(627.169562 296.498522)">h; T∞</text>
    </g>
    <g id="text_3">
-    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="232.0704" y="136.987519" transform="rotate(-0 232.0704 136.987519)">Characteristic length L_c=V/A_s</text>
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="232.0704" y="136.987519" transform="rotate(-0 232.0704 136.987519)"><tspan font-size="23.000px">Characteristic length L</tspan><tspan font-size="15.640px" dy="5.520px">c</tspan><tspan font-size="23.000px" dy="-5.520px">=V/A</tspan><tspan font-size="15.640px" dy="5.520px">s</tspan></text>
    </g>
    <g id="text_4">
-    <text style="font-size: 24px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="436.81995" transform="rotate(-0 432 436.81995)">R_internal ~ L_c/(kA_s); R_external=1/(hA_s)</text>
+    <text style="font-size: 24px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="436.81995" transform="rotate(-0 432 436.81995)"><tspan font-size="24.000px">R</tspan><tspan font-size="16.320px" dy="5.760px">internal</tspan><tspan font-size="24.000px" dy="-5.760px"> ~ L</tspan><tspan font-size="16.320px" dy="5.760px">c</tspan><tspan font-size="24.000px" dy="-5.760px">/(kA</tspan><tspan font-size="16.320px" dy="5.760px">s</tspan><tspan font-size="24.000px" dy="-5.760px">); R</tspan><tspan font-size="16.320px" dy="5.760px">external</tspan><tspan font-size="24.000px" dy="-5.760px">=1/(hA</tspan><tspan font-size="16.320px" dy="5.760px">s</tspan><tspan font-size="24.000px" dy="-5.760px">)</tspan></text>
    </g>
    <g id="text_5">
-    <text style="font-size: 28px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="527.292075" transform="rotate(-0 432 527.292075)">Bi=hL_c/k ~ R_internal/R_external</text>
+    <text style="font-size: 28px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="527.292075" transform="rotate(-0 432 527.292075)"><tspan font-size="28.000px">Bi=hL</tspan><tspan font-size="19.040px" dy="6.720px">c</tspan><tspan font-size="28.000px" dy="-6.720px">/k ~ R</tspan><tspan font-size="19.040px" dy="6.720px">internal</tspan><tspan font-size="28.000px" dy="-6.720px">/R</tspan><tspan font-size="19.040px" dy="6.720px">external</tspan></text>
    </g>
    <g id="patch_4">
     <path d="M 380.173344 274.0392  Q 462.757475 274.0392 543.440947 274.0392  " clip-path="url(#pd6f3d080e5)" style="fill: none; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
@@ -52,7 +52,7 @@
    </g>
   </g>
   <g id="text_6">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Biot number compares internal conduction resistance with surface convection</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="100.101" transform="rotate(-0 47.52 100.101)">Biot number compares internal conduction resistance with surface convection</text>
   </g>
   <g id="text_8">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(116.086719 590.616625)">The internal resistance is a scale estimate, not an exact geometry-independent circuit element. Small Bi means small internal</text>

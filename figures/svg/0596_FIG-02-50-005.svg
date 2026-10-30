@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="782.25pt" height="606.75pt" viewBox="18.25 10.5 782.25 606.75" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="777.519pt" height="551.664pt" viewBox="16.425 67.402 777.519 551.664" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -27,7 +27,7 @@
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="678.0672" y="186.490563" transform="rotate(-0 678.0672 186.490563)">Pv=RT=100 kJ/kg</text>
    </g>
    <g id="text_2">
-    <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(569.440012 294.994119)">w_b=RT ln(v₂/v₁)</text>
+    <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(569.440012 294.994119)"><tspan font-size="26.000px">w</tspan><tspan font-size="17.680px" dy="6.240px">b</tspan><tspan font-size="26.000px" dy="-6.240px">=RT ln(v₂/v₁)</tspan></text>
     <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(618.106731 330.758337)">=100 ln2</text>
     <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(575.137669 365.799431)">=+69.315 kJ/kg</text>
    </g>
@@ -260,10 +260,10 @@
    </g>
   </g>
   <g id="text_20">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Ideal-gas isothermal expansion gives logarithmic boundary work</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="94.880" transform="rotate(-0 47.52 94.880)">Ideal-gas isothermal expansion gives logarithmic boundary work</text>
   </g>
   <g id="text_22">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(85.1875 590.477562)">Quasiequilibrium ideal-gas isothermal process. With only boundary work and negligible KE/PE change, q=w_b. Constant temperature does</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(85.1875 590.477562)"><tspan font-size="10.000px">Quasiequilibrium ideal-gas isothermal process. With only boundary work and negligible KE/PE change, q=w</tspan><tspan font-size="6.800px" dy="2.400px">b</tspan><tspan font-size="10.000px" dy="-2.400px">. Constant temperature does</tspan></text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(296.028906 603.473187)">not imply constant internal energy for every real fluid.</text>
   </g>
  </g>

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="778.500pt" height="665.250pt" viewBox="39.000 12.750 778.500 665.250" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="789.208pt" height="505.147pt" viewBox="38.512 109.468 789.208 505.147" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -27,7 +27,7 @@
     <text style="font-size: 25px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="259.74" y="564.754437" transform="rotate(-0 259.74 564.754437)">J=πr⁴/2=πd⁴/32</text>
    </g>
    <g id="text_2">
-    <text style="font-size: 25px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="676.26" y="564.406781" transform="rotate(-0 676.26 564.406781)">J=π(r_o⁴−r_i⁴)/2</text>
+    <text style="font-size: 25px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="676.26" y="564.406781" transform="rotate(-0 676.26 564.406781)"><tspan font-size="25.000px">J=π(r</tspan><tspan font-size="17.000px" dy="6.000px">o</tspan><tspan font-size="25.000px" dy="-6.000px">⁴−r</tspan><tspan font-size="17.000px" dy="6.000px">i</tspan><tspan font-size="25.000px" dy="-6.000px">⁴)/2</tspan></text>
    </g>
   </g>
   <g id="axes_2">
@@ -53,10 +53,10 @@
     <path d="M 702 377.116981  C 719.437354 377.116981 736.162867 370.189047 748.492938 357.858976  C 760.823009 345.528904 767.750943 328.803392 767.750943 311.366038  C 767.750943 293.928684 760.823009 277.203171 748.492938 264.8731  C 736.162867 252.543029 719.437354 245.615094 702 245.615094  C 684.562646 245.615094 667.837133 252.543029 655.507062 264.8731  C 643.176991 277.203171 636.249057 293.928684 636.249057 311.366038  C 636.249057 328.803392 643.176991 345.528904 655.507062 357.858976  C 667.837133 370.189047 684.562646 377.116981 702 377.116981  z " clip-path="url(#pdd48a6d161)" style="fill: #ffffff; stroke: #235a78; stroke-linejoin: miter"/>
    </g>
    <g id="text_5">
-    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #26776f" x="749.818868" y="285.671745" transform="rotate(-0 749.818868 285.671745)">r_i</text>
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #26776f" x="749.818868" y="285.671745" transform="rotate(-0 749.818868 285.671745)"><tspan font-size="16.000px">r</tspan><tspan font-size="10.880px" dy="3.840px">i</tspan></text>
    </g>
    <g id="text_6">
-    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #b47722" x="746.830189" y="336.753042" transform="rotate(-0 746.830189 336.753042)">r_o</text>
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #b47722" x="746.830189" y="336.753042" transform="rotate(-0 746.830189 336.753042)"><tspan font-size="18.000px">r</tspan><tspan font-size="12.240px" dy="4.320px">o</tspan></text>
    </g>
    <g id="text_7">
     <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="702" y="166.347075" transform="rotate(-0 702 166.347075)">HOLLOW</text>
@@ -71,10 +71,10 @@
    </g>
   </g>
   <g id="text_8">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="51.48" y="39.6" transform="rotate(-0 51.48 39.6)">Circular-section polar moments depend strongly on radius</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="51.48" y="135.591" transform="rotate(-0 51.48 135.591)">Circular-section polar moments depend strongly on radius</text>
   </g>
   <g id="text_10">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="468" y="662.999375" transform="rotate(-0 468 662.999375)">Polar second moment of area about the centroidal normal axis, in length⁴ units. Circular Saint-Venant torsion uses this J.</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="468" y="599.620" transform="rotate(-0 468 599.620)">Polar second moment of area about the centroidal normal axis, in length⁴ units. Circular Saint-Venant torsion uses this J.</text>
   </g>
  </g>
  <defs>

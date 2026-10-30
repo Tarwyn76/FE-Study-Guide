@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="764.250pt" height="609.750pt" viewBox="36.000 9.000 764.250 609.750" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="777.967pt" height="527.987pt" viewBox="35.283 90.122 777.967 527.987" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -24,7 +24,7 @@
   </g>
   <g id="axes_1">
    <g id="text_1">
-    <text style="font-size: 25px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="522.089469" transform="rotate(-0 432 522.089469)">σ_x=−My/I     M=+1 kN·m     |σ_max|=23.438 MPa</text>
+    <text style="font-size: 25px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="522.089469" transform="rotate(-0 432 522.089469)"><tspan font-size="25.000px">σ</tspan><tspan font-size="17.000px" dy="6.000px">x</tspan><tspan font-size="25.000px" dy="-6.000px">=−My/I     M=+1 kN·m     |σ</tspan><tspan font-size="17.000px" dy="6.000px">max</tspan><tspan font-size="25.000px" dy="-6.000px">|=23.438 MPa</tspan></text>
    </g>
   </g>
   <g id="axes_2">
@@ -115,7 +115,7 @@
      </g>
     </g>
     <g id="text_9">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="630.72" y="475.176562" transform="rotate(-0 630.72 475.176562)">σ_x (MPa)</text>
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="630.72" y="475.176562" transform="rotate(-0 630.72 475.176562)"><tspan font-size="11.000px">σ</tspan><tspan font-size="7.480px" dy="2.640px">x</tspan><tspan font-size="11.000px" dy="-2.640px"> (MPa)</tspan></text>
     </g>
    </g>
    <g id="matplotlib.axis_2">
@@ -266,7 +266,7 @@
    </g>
   </g>
   <g id="text_22">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Positive bending creates compression above the neutral axis</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="117.358" transform="rotate(-0 47.52 117.358)">Positive bending creates compression above the neutral axis</text>
   </g>
   <g id="text_24">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(106.146094 590.616625)">Homogeneous linear elastic section in pure bending; y is positive above the centroidal neutral axis. The bending stress is linear in</text>

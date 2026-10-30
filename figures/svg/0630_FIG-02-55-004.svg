@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="751.5pt" height="606.75pt" viewBox="36.5 10.5 751.5 606.75" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="765.422pt" height="501.198pt" viewBox="34.236 118.313 765.422 501.198" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -80,10 +80,10 @@
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="109.0368" y="182.019362" transform="rotate(-0 109.0368 182.019362)">T∞₁</text>
    </g>
    <g id="text_5">
-    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="324.3456" y="181.379675" transform="rotate(-0 324.3456 181.379675)">T_s1</text>
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="324.3456" y="181.379675" transform="rotate(-0 324.3456 181.379675)"><tspan font-size="23.000px">T</tspan><tspan font-size="15.640px" dy="5.520px">s1</tspan></text>
    </g>
    <g id="text_6">
-    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="539.6544" y="181.496472" transform="rotate(-0 539.6544 181.496472)">T_s2</text>
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="539.6544" y="181.496472" transform="rotate(-0 539.6544 181.496472)"><tspan font-size="23.000px">T</tspan><tspan font-size="15.640px" dy="5.520px">s2</tspan></text>
    </g>
    <g id="text_7">
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="754.9632" y="182.019362" transform="rotate(-0 754.9632 182.019362)">T∞₂</text>
@@ -92,7 +92,7 @@
     <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #a23b34" x="432" y="360.591425" transform="rotate(-0 432 360.591425)">Q̇</text>
    </g>
    <g id="text_9">
-    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="485.479087" transform="rotate(-0 432 485.479087)">Q̇=(T∞₁−T∞₂)/R_total; R_total=1/(h₁A)+L/(kA)+1/(h₂A)</text>
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="485.479087" transform="rotate(-0 432 485.479087)"><tspan font-size="22.000px">Q̇=(T∞₁−T∞₂)/R</tspan><tspan font-size="14.960px" dy="5.280px">total</tspan><tspan font-size="22.000px" dy="-5.280px">; R</tspan><tspan font-size="14.960px" dy="5.280px">total</tspan><tspan font-size="22.000px" dy="-5.280px">=1/(h₁A)+L/(kA)+1/(h₂A)</tspan></text>
    </g>
    <g id="patch_5">
     <path d="M 141.796566 381.348  Q 424.309593 381.348 704.921963 381.348  " clip-path="url(#p6fd73ffa69)" style="fill: none; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
@@ -100,7 +100,7 @@
    </g>
   </g>
   <g id="text_10">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Convection and conduction resistances add along one heat-flow path</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="145.632" transform="rotate(-0 47.52 145.632)">Convection and conduction resistances add along one heat-flow path</text>
   </g>
   <g id="text_12">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(102.880469 590.616625)">Steady 1D series path with common area, no contact resistance, no internal generation. The heat rate through each element is the</text>

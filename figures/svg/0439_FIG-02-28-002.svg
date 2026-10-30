@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="773.250pt" height="663.000pt" viewBox="39.750 12.750 773.250 663.000" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="785.442pt" height="517.725pt" viewBox="39.177 99.200 785.442 517.725" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -27,7 +27,7 @@
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="259.74" y="568.618687" transform="rotate(-0 259.74 568.618687)">W = wL = 12 kN</text>
    </g>
    <g id="text_2">
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="676.26" y="568.326656" transform="rotate(-0 676.26 568.326656)">W = ½w_maxL = 12 kN</text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="676.26" y="568.326656" transform="rotate(-0 676.26 568.326656)"><tspan font-size="21.000px">W = ½w</tspan><tspan font-size="14.280px" dy="5.040px">maxL</tspan><tspan font-size="21.000px" dy="-5.040px"> = 12 kN</tspan></text>
    </g>
   </g>
   <g id="axes_2">
@@ -125,7 +125,7 @@
     <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="698.629787" y="158.066064" transform="rotate(-0 698.629787 158.066064)">TRIANGULAR</text>
    </g>
    <g id="text_9">
-    <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="698.629787" y="191.28366" transform="rotate(-0 698.629787 191.28366)">w_max = 6 kN/m</text>
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="698.629787" y="191.28366" transform="rotate(-0 698.629787 191.28366)"><tspan font-size="15.000px">w</tspan><tspan font-size="10.200px" dy="3.600px">max</tspan><tspan font-size="15.000px" dy="-3.600px"> = 6 kN/m</tspan></text>
    </g>
    <g id="text_10">
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #b47722" x="676.161702" y="441.408271" transform="rotate(-0 676.161702 441.408271)">2L/3 = 8/3 m</text>
@@ -176,10 +176,10 @@
    </g>
   </g>
   <g id="text_11">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="51.48" y="39.6" transform="rotate(-0 51.48 39.6)">Uniform and triangular loads have different centroid locations</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="51.48" y="127.053" transform="rotate(-0 51.48 127.053)">Uniform and triangular loads have different centroid locations</text>
   </g>
   <g id="text_13">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="468" y="660.24" transform="rotate(-0 468 660.24)">Both examples use L = 4 m. Triangular centroid is 2L/3 from the zero-intensity end, or L/3 from the maximum-intensity end.</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="468" y="601.178" transform="rotate(-0 468 601.178)">Both examples use L = 4 m. Triangular centroid is 2L/3 from the zero-intensity end, or L/3 from the maximum-intensity end.</text>
   </g>
  </g>
  <defs>

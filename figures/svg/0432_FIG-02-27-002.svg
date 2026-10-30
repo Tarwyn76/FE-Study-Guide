@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="755.250pt" height="600.750pt" viewBox="35.250 9.000 755.250 600.750" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="736.744pt" height="420.200pt" viewBox="34.388 117.500 736.744 420.200" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -28,11 +28,11 @@
     <text style="font-size: 19px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(605.652912 202.661489)">intersect at P.</text>
    </g>
    <g id="text_2">
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(617.411662 318.567623)">ΣM_P = 0:</text>
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(562.142287 347.454108)">1.5F_AB − 10(1) = 0</text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(617.411662 318.567623)"><tspan font-size="21.000px">ΣM</tspan><tspan font-size="14.280px" dy="5.040px">P</tspan><tspan font-size="21.000px" dy="-5.040px"> = 0:</tspan></text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(562.142287 347.454108)"><tspan font-size="21.000px">1.5F</tspan><tspan font-size="14.280px" dy="5.040px">AB</tspan><tspan font-size="21.000px" dy="-5.040px"> − 10(1) = 0</tspan></text>
    </g>
    <g id="text_3">
-    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #26776f" transform="translate(563.833694 461.299773)">F_AB = +6.667 kN</text>
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #26776f" transform="translate(563.833694 461.299773)"><tspan font-size="23.000px">F</tspan><tspan font-size="15.640px" dy="5.520px">AB</tspan><tspan font-size="23.000px" dy="-5.520px"> = +6.667 kN</tspan></text>
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #26776f" transform="translate(627.434084 492.937352)">Tension</text>
    </g>
   </g>
@@ -80,13 +80,13 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="233.016585" y="231.019383" transform="rotate(-0 233.016585 231.019383)">D</text>
    </g>
    <g id="text_8">
-    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #235a78" x="379.053659" y="360.799939" transform="rotate(-0 379.053659 360.799939)">F_AB</text>
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #235a78" x="379.053659" y="360.799939" transform="rotate(-0 379.053659 360.799939)"><tspan font-size="12.000px">F</tspan><tspan font-size="8.160px" dy="2.880px">AB</tspan></text>
    </g>
    <g id="text_9">
-    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #b47722" x="344.282927" y="324.290671" transform="rotate(-0 344.282927 324.290671)">F_DB</text>
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #b47722" x="344.282927" y="324.290671" transform="rotate(-0 344.282927 324.290671)"><tspan font-size="12.000px">F</tspan><tspan font-size="8.160px" dy="2.880px">DB</tspan></text>
    </g>
    <g id="text_10">
-    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #26776f" x="379.053659" y="230.409695" transform="rotate(-0 379.053659 230.409695)">F_DE</text>
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #26776f" x="379.053659" y="230.409695" transform="rotate(-0 379.053659 230.409695)"><tspan font-size="12.000px">F</tspan><tspan font-size="8.160px" dy="2.880px">DE</tspan></text>
    </g>
    <g id="text_11">
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #a23b34" x="202.592195" y="214.461829" transform="rotate(-0 202.592195 214.461829)">P = D</text>
@@ -126,10 +126,10 @@
    </g>
   </g>
   <g id="text_12">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Choose an origin that removes two cut-member unknowns</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="144.815" transform="rotate(-0 47.52 144.815)">Choose an origin that removes two cut-member unknowns</text>
   </g>
   <g id="text_14">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="594.216" transform="rotate(-0 432 594.216)">The 10 kN load at D also passes through P. The 10 kN reaction at A has a 1 m horizontal arm; AB has a 1.5 m vertical arm.</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="521.663" transform="rotate(-0 432 521.663)">The 10 kN load at D also passes through P. The 10 kN reaction at A has a 1 m horizontal arm; AB has a 1.5 m vertical arm.</text>
   </g>
  </g>
  <defs>

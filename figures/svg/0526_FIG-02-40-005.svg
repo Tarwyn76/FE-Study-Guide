@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="893.250pt" height="665.250pt" viewBox="44.250 12.750 893.250 665.250" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="819.989pt" height="510.978pt" viewBox="44.011 84.302 819.989 510.978" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -217,7 +217,7 @@
      </g>
     </g>
     <g id="text_15">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="128.619428" y="324" transform="rotate(-90 128.619428 324)">Mohr shear τ_cw (MPa)</text>
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="128.619428" y="324" transform="rotate(-90 128.619428 324)"><tspan font-size="11.000px">Mohr shear τ</tspan><tspan font-size="7.480px" dy="2.640px">cw</tspan><tspan font-size="11.000px" dy="-2.640px"> (MPa)</tspan></text>
     </g>
    </g>
    <g id="line2d_21">
@@ -251,7 +251,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start" x="196.005524" y="349.001219" transform="rotate(-0 196.005524 349.001219)">σ₂</text>
    </g>
    <g id="text_20">
-    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start" x="393.734017" y="139.272727" transform="rotate(-0 393.734017 139.272727)">τ_max,in</text>
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start" x="393.734017" y="139.272727" transform="rotate(-0 393.734017 139.272727)"><tspan font-size="12.000px">τ</tspan><tspan font-size="8.160px" dy="2.880px">max,in</tspan></text>
    </g>
    <g id="text_21">
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start" x="391.734017" y="344.001219" transform="rotate(-0 391.734017 344.001219)">C</text>
@@ -261,10 +261,10 @@
    </g>
   </g>
   <g id="text_23">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Mohr’s circle maps the face stresses to principal and shear extrema</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="109.922" transform="rotate(-0 55.44 109.922)">Mohr’s circle maps the face stresses to principal and shear extrema</text>
   </g>
   <g id="text_25">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="662.999375" transform="rotate(-0 504 662.999375)">FE Handbook convention: clockwise shear-pair couple above the σ axis, counterclockwise below. This circle uses X=(80,−30), Y=(20,+30) MPa.</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="578.795" transform="rotate(-0 504 578.795)">FE Handbook convention: clockwise shear-pair couple above the σ axis, counterclockwise below. This circle uses X=(80,−30), Y=(20,+30) MPa.</text>
   </g>
  </g>
  <defs>

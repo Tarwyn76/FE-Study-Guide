@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="900.25pt" height="671.5pt" viewBox="23 13 900.25 671.5" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="841.139pt" height="562.858pt" viewBox="22.861 85.142 841.139 562.858" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -24,13 +24,13 @@
   </g>
   <g id="axes_1">
    <g id="text_1">
-    <text style="font-size: 24px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="755.1936" y="395.23275" transform="rotate(-0 755.1936 395.23275)">Q̇=ṁ c_p(T_b,out−T_b,in)</text>
+    <text style="font-size: 24px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="755.1936" y="395.23275" transform="rotate(-0 755.1936 395.23275)"><tspan font-size="24.000px">Q̇=ṁ c</tspan><tspan font-size="16.320px" dy="5.760px">p</tspan><tspan font-size="24.000px" dy="-5.760px">(T</tspan><tspan font-size="16.320px" dy="5.760px">b,out</tspan><tspan font-size="24.000px" dy="-5.760px">−T</tspan><tspan font-size="16.320px" dy="5.760px">b,in</tspan><tspan font-size="24.000px" dy="-5.760px">)</tspan></text>
    </g>
    <g id="text_2">
-    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="755.1936" y="474.458719" transform="rotate(-0 755.1936 474.458719)">T_b=(1/Q_vol)∫uT dA</text>
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="755.1936" y="474.458719" transform="rotate(-0 755.1936 474.458719)"><tspan font-size="23.000px">T</tspan><tspan font-size="15.640px" dy="5.520px">b</tspan><tspan font-size="23.000px" dy="-5.520px">=(1/Q</tspan><tspan font-size="15.640px" dy="5.520px">vol</tspan><tspan font-size="23.000px" dy="-5.520px">)∫uT dA</tspan></text>
    </g>
    <g id="text_3">
-    <text style="font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="755.1936" y="552.898594" transform="rotate(-0 755.1936 552.898594)">Shape is fixed; T_b still changes.</text>
+    <text style="font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="755.1936" y="552.898594" transform="rotate(-0 755.1936 552.898594)"><tspan font-size="19.000px">Shape is fixed; T</tspan><tspan font-size="12.920px" dy="4.560px">b</tspan><tspan font-size="19.000px" dy="-4.560px"> still changes.</tspan></text>
    </g>
   </g>
   <g id="axes_2">
@@ -56,7 +56,7 @@
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="589.5" y="172.540938" transform="rotate(-0 589.5 172.540938)">Fully developed shape</text>
    </g>
    <g id="text_6">
-    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="567" y="307.304531" transform="rotate(-0 567 307.304531)">Bulk T_b,in → T_b,out</text>
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="567" y="307.304531" transform="rotate(-0 567 307.304531)"><tspan font-size="17.000px">Bulk T</tspan><tspan font-size="11.560px" dy="4.080px">b,in</tspan><tspan font-size="17.000px" dy="-4.080px"> → T</tspan><tspan font-size="11.560px" dy="4.080px">b,out</tspan></text>
    </g>
    <g id="text_7">
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="342" y="307.265" transform="rotate(-0 342 307.265)">Uniform wall q″</text>
@@ -205,7 +205,7 @@
      </g>
     </g>
     <g id="text_18">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="267.12" y="553.668594" transform="rotate(-0 267.12 553.668594)">(T_s−T)/(T_s−T_b)</text>
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="267.12" y="553.668594" transform="rotate(-0 267.12 553.668594)"><tspan font-size="11.000px">(T</tspan><tspan font-size="7.480px" dy="2.640px">s</tspan><tspan font-size="11.000px" dy="-2.640px">−T)/(T</tspan><tspan font-size="7.480px" dy="2.640px">s</tspan><tspan font-size="11.000px" dy="-2.640px">−T</tspan><tspan font-size="7.480px" dy="2.640px">b</tspan><tspan font-size="11.000px" dy="-2.640px">)</tspan></text>
     </g>
    </g>
    <g id="matplotlib.axis_2">
@@ -347,11 +347,11 @@
    </g>
   </g>
   <g id="text_30">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">A heated tube develops its thermal profile while bulk temperature continues to rise</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="110.955" transform="rotate(-0 55.44 110.955)">A heated tube develops its thermal profile while bulk temperature continues to rise</text>
   </g>
   <g id="text_32">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(143.291406 656.501562)">Uniform wall heat flux, constant-property laminar circular-tube model; developing-layer sketch is qualitative. The lower normalized profile is the</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(140.464062 669.219062)">analytical fully developed solution. T_b is velocity-weighted for uniform density/c_p. Constant wall temperature is a different boundary condition.</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(140.464062 669.219062)"><tspan font-size="10.000px">analytical fully developed solution. T</tspan><tspan font-size="6.800px" dy="2.400px">b</tspan><tspan font-size="10.000px" dy="-2.400px"> is velocity-weighted for uniform density/c</tspan><tspan font-size="6.800px" dy="2.400px">p</tspan><tspan font-size="10.000px" dy="-2.400px">. Constant wall temperature is a different boundary condition.</tspan></text>
   </g>
  </g>
  <defs>

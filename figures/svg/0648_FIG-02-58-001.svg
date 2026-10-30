@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="825.5pt" height="607.75pt" viewBox="35.5 10.5 825.5 607.75" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="829.707pt" height="533.442pt" viewBox="34.293 87.482 829.707 533.442" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -42,7 +42,7 @@
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #26776f" x="624.24" y="444.99235" transform="rotate(-0 624.24 444.99235)">Cold in: 20°C</text>
    </g>
    <g id="text_6">
-    <text style="font-size: 25px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="513.092381" transform="rotate(-0 432 513.092381)">Q̇=C_h(T_hi−T_ho)=C_c(T_co−T_ci)=4 kW</text>
+    <text style="font-size: 25px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="513.092381" transform="rotate(-0 432 513.092381)"><tspan font-size="25.000px">Q̇=C</tspan><tspan font-size="17.000px" dy="6.000px">h</tspan><tspan font-size="25.000px" dy="-6.000px">(T</tspan><tspan font-size="17.000px" dy="6.000px">hi</tspan><tspan font-size="25.000px" dy="-6.000px">−T</tspan><tspan font-size="17.000px" dy="6.000px">ho</tspan><tspan font-size="25.000px" dy="-6.000px">)=C</tspan><tspan font-size="17.000px" dy="6.000px">c</tspan><tspan font-size="25.000px" dy="-6.000px">(T</tspan><tspan font-size="17.000px" dy="6.000px">co</tspan><tspan font-size="25.000px" dy="-6.000px">−T</tspan><tspan font-size="17.000px" dy="6.000px">ci</tspan><tspan font-size="25.000px" dy="-6.000px">)=4 kW</tspan></text>
    </g>
    <g id="patch_3">
     <path d="M 49.517611 260.6256  Q 143.638767 260.6256 235.859266 260.6256  " clip-path="url(#p18f561e359)" style="fill: none; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
@@ -62,11 +62,11 @@
    </g>
   </g>
   <g id="text_7">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">A two-stream exchanger transfers the same heat rate between its isolated streams</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="116.272" transform="rotate(-0 47.52 116.272)">A two-stream exchanger transfers the same heat rate between its isolated streams</text>
   </g>
   <g id="text_9">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(100.800781 590.3385)">Counterflow example, no heat leak or shaft work, negligible KE/PE changes and constant heat capacities. C_h=C_c=100 W/K, where</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(178.885156 603.334125)">C=ṁc_p. Equal outlet temperatures at opposite ends do not imply zero local temperature difference.</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(100.800781 590.3385)"><tspan font-size="10.000px">Counterflow example, no heat leak or shaft work, negligible KE/PE changes and constant heat capacities. C</tspan><tspan font-size="6.800px" dy="2.400px">h</tspan><tspan font-size="10.000px" dy="-2.400px">=C</tspan><tspan font-size="6.800px" dy="2.400px">c</tspan><tspan font-size="10.000px" dy="-2.400px">=100 W/K, where</tspan></text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(178.885156 603.334125)"><tspan font-size="10.000px">C=ṁc</tspan><tspan font-size="6.800px" dy="2.400px">p</tspan><tspan font-size="10.000px" dy="-2.400px">. Equal outlet temperatures at opposite ends do not imply zero local temperature difference.</tspan></text>
   </g>
  </g>
  <defs>

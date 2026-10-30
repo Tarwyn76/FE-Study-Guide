@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="864.25pt" height="671.5pt" viewBox="43.25 13 864.25 671.5" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="819.860pt" height="561.554pt" viewBox="44.140 86.446 819.860 561.554" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -24,7 +24,7 @@
   </g>
   <g id="axes_1">
    <g id="text_1">
-    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="728.28" y="474.002469" transform="rotate(-0 728.28 474.002469)">PARALLEL: L_eq=1.2 mH</text>
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="728.28" y="474.002469" transform="rotate(-0 728.28 474.002469)"><tspan font-size="22.000px">PARALLEL: L</tspan><tspan font-size="14.960px" dy="5.280px">eq</tspan><tspan font-size="22.000px" dy="-5.280px">=1.2 mH</tspan></text>
    </g>
    <g id="text_2">
     <!-- $L_{series}=\sum_kL_k$ -->
@@ -99,7 +99,7 @@
     <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #235a78" x="368.307692" y="239.081587" transform="rotate(-0 368.307692 239.081587)">3 mH</text>
    </g>
    <g id="text_6">
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="270.609231" y="376.615727" transform="rotate(-0 270.609231 376.615727)">SERIES: L_eq=5 mH</text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="270.609231" y="376.615727" transform="rotate(-0 270.609231 376.615727)"><tspan font-size="21.000px">SERIES: L</tspan><tspan font-size="14.280px" dy="5.040px">eq</tspan><tspan font-size="21.000px" dy="-5.040px">=5 mH</tspan></text>
    </g>
   </g>
   <g id="axes_3">
@@ -138,11 +138,11 @@
    </g>
   </g>
   <g id="text_9">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Uncoupled inductors add in series and reciprocally in parallel</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="113.011" transform="rotate(-0 55.44 113.011)">Uncoupled inductors add in series and reciprocally in parallel</text>
   </g>
   <g id="text_11">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(120.066406 656.3625)">No mutual inductance is assumed. Series branches carry the same current; parallel branches share voltage. Individual stored energies add as Σ½L_ki_k².</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(172.357031 669.358125)">Equivalent terminal energy ½L_eqI² requires compatible initial currents and excludes independently stored circulating-mode energy.</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(120.066406 656.3625)"><tspan font-size="10.000px">No mutual inductance is assumed. Series branches carry the same current; parallel branches share voltage. Individual stored energies add as Σ½L</tspan><tspan font-size="6.800px" dy="2.400px">ki</tspan><tspan font-size="6.800px" dy="2.400px">k</tspan><tspan font-size="10.000px" dy="-2.400px">².</tspan></text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(172.357031 669.358125)"><tspan font-size="10.000px">Equivalent terminal energy ½L</tspan><tspan font-size="6.800px" dy="2.400px">eqI</tspan><tspan font-size="10.000px" dy="-2.400px">² requires compatible initial currents and excludes independently stored circulating-mode energy.</tspan></text>
   </g>
  </g>
  <defs>

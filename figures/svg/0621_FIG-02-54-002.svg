@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="791pt" height="606.75pt" viewBox="24 10.5 791 606.75" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="804.288pt" height="548.087pt" viewBox="23.712 69.463 804.288 548.087" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -24,12 +24,12 @@
   </g>
   <g id="axes_1">
    <g id="text_1">
-    <text style="font-size: 24px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="678.0672" y="186.43275" transform="rotate(-0 678.0672 186.43275)">Fixed T_L=270 K</text>
+    <text style="font-size: 24px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="678.0672" y="186.43275" transform="rotate(-0 678.0672 186.43275)"><tspan font-size="24.000px">Fixed T</tspan><tspan font-size="16.320px" dy="5.760px">L</tspan><tspan font-size="24.000px" dy="-5.760px">=270 K</tspan></text>
    </g>
    <g id="text_2">
-    <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(586.862122 299.635006)">At T_H=300 K:</text>
-    <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(587.391419 334.023678)">COP_R,max=9</text>
-    <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(571.186341 368.41235)">COP_HP,max=10</text>
+    <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(586.862122 299.635006)"><tspan font-size="25.000px">At T</tspan><tspan font-size="17.000px" dy="6.000px">H</tspan><tspan font-size="25.000px" dy="-6.000px">=300 K:</tspan></text>
+    <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(587.391419 334.023678)"><tspan font-size="25.000px">COP</tspan><tspan font-size="17.000px" dy="6.000px">R,max</tspan><tspan font-size="25.000px" dy="-6.000px">=9</tspan></text>
+    <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(571.186341 368.41235)"><tspan font-size="25.000px">COP</tspan><tspan font-size="17.000px" dy="6.000px">HP,max</tspan><tspan font-size="25.000px" dy="-6.000px">=10</tspan></text>
    </g>
    <g id="text_3">
     <text style="font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="678.0672" y="484.957212" transform="rotate(-0 678.0672 484.957212)">Use absolute temperature.</text>
@@ -118,7 +118,7 @@
      </g>
     </g>
     <g id="text_9">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="315.36" y="481.668594" transform="rotate(-0 315.36 481.668594)">Temperature lift T_H−T_L (K)</text>
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="315.36" y="481.668594" transform="rotate(-0 315.36 481.668594)"><tspan font-size="11.000px">Temperature lift T</tspan><tspan font-size="7.480px" dy="2.640px">H</tspan><tspan font-size="11.000px" dy="-2.640px">−T</tspan><tspan font-size="7.480px" dy="2.640px">L</tspan><tspan font-size="11.000px" dy="-2.640px"> (K)</tspan></text>
     </g>
    </g>
    <g id="matplotlib.axis_2">
@@ -214,18 +214,18 @@
      <path d="M 384.383594 133.667969  L 397.383594 133.667969  L 410.383594 133.667969  " style="fill: none; stroke: #235a78; stroke-width: 2; stroke-linecap: square"/>
     </g>
     <g id="text_16">
-     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start" x="420.783594" y="138.217969" transform="rotate(-0 420.783594 138.217969)">Refrigerator: T_L/ΔT</text>
+     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start" x="420.783594" y="138.217969" transform="rotate(-0 420.783594 138.217969)"><tspan font-size="13.000px">Refrigerator: T</tspan><tspan font-size="8.840px" dy="3.120px">L</tspan><tspan font-size="13.000px" dy="-3.120px">/ΔT</tspan></text>
     </g>
     <g id="line2d_24">
      <path d="M 384.383594 153.111094  L 397.383594 153.111094  L 410.383594 153.111094  " style="fill: none; stroke: #a23b34; stroke-width: 2; stroke-linecap: square"/>
     </g>
     <g id="text_17">
-     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start" x="420.783594" y="157.661094" transform="rotate(-0 420.783594 157.661094)">Heat pump: T_H/ΔT</text>
+     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start" x="420.783594" y="157.661094" transform="rotate(-0 420.783594 157.661094)"><tspan font-size="13.000px">Heat pump: T</tspan><tspan font-size="8.840px" dy="3.120px">H</tspan><tspan font-size="13.000px" dy="-3.120px">/ΔT</tspan></text>
     </g>
    </g>
   </g>
   <g id="text_18">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Carnot COP falls as the temperature lift increases</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="97.427" transform="rotate(-0 47.52 97.427)">Carnot COP falls as the temperature lift increases</text>
   </g>
   <g id="text_20">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(110.950781 590.616625)">Reversible limits for heat transfer between two constant-temperature reservoirs. Actual COP is lower. The ideal limit diverges as</text>
