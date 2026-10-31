@@ -1,0 +1,48 @@
+name: Strict figure cleanup 0000-0149
+
+on:
+  push:
+    branches:
+      - figure-cleanup-strict
+    paths:
+      - tools/cleanup_figures_strict.py
+      - .github/workflows/figure-cleanup-strict.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out cleanup branch
+        uses: actions/checkout@v4
+        with:
+          ref: figure-cleanup-strict
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install cleanup dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install cairosvg pillow numpy
+
+      - name: Clean figures 0000-0149
+        run: |
+          python tools/cleanup_figures_strict.py --start 0 --end 149
+
+      - name: Commit regenerated figure assets
+        run: |
+          git config user.name "ChatGPT Figure QA"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add figures/png figures/svg meta
+          if git diff --cached --quiet; then
+            echo "No figure changes produced."
+            exit 0
+          fi
+          git commit -m "Strict cleanup figures 0000-0149"
+          git push origin HEAD:figure-cleanup-strict
