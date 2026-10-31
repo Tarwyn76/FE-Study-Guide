@@ -21,6 +21,13 @@ jobs:
         with:
           ref: figure-cleanup-strict
 
+      - name: Restore selected figure range from main
+        run: |
+          git fetch origin main
+          for i in $(seq -w 300 449); do
+            git checkout origin/main -- figures/png/${i}_*.png figures/svg/${i}_*.svg
+          done
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
