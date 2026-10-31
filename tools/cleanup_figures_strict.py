@@ -388,11 +388,12 @@ def cleanup_one(svg_path: Path, png_path: Path):
         x0, y0, x1, y1 = bb
         iw, ih = im1.size
         px = max(18, int((x1 - x0) * 0.03))
-        py = max(16, int((y1 - y0) * 0.03))
+        py_top = max(16, int((y1 - y0) * 0.03))
+        py_bottom = max(28, int((y1 - y0) * 0.04))
         x0 = max(0, x0 - px)
         x1 = min(iw, x1 + px)
-        y0 = max(0, y0 - py)
-        y1 = min(ih, y1 + py)
+        y0 = max(0, y0 - py_top)
+        y1 = min(ih, y1 + py_bottom)
 
         sx = vb_w / iw
         sy = vb_h / ih
