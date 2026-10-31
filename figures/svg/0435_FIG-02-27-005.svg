@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="969.000pt" height="663.000pt" viewBox="47.250000 12.750000 969.000000 663.000000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="969.000pt" height="519.050pt" viewBox="47.250000 12.750000 969.000000 519.050104" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,13 +21,13 @@
   <g id="patch_1">
    <path d="M 0 720  L 1080 720  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.403750 0.000000) translate(-10.093750 -90.445798)">
+  <g id="axes_1" transform="translate(0.403750 0.000000) translate(-0.403750 0.000000) translate(-10.093750 -90.445798)">
    <g id="text_1">
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(335.670313 554.587281)"><tspan style="font-size: 20.000px">ΣM</tspan><tspan style="font-size: 14.400px" dy="4.800px">O</tspan><tspan style="font-size: 20.000px" dy="-4.800px">​</tspan><tspan style="font-size: 20.000px"> = 0: 2Aᵧ − 4(10) = 0 → Aᵧ = 20 kN</tspan></text>
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(219.629687 582.098219)">Link direction (1,2): Aₓ = 10 kN; link tension = √500 = 22.36 kN</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-0.403750 0.000000) translate(-10.093750 -90.445798)">
+  <g id="axes_2" transform="translate(0.403750 0.000000) translate(-0.403750 0.000000) translate(-10.093750 -90.445798)">
    <g id="patch_2">
     <path d="M 91.8 336.42  L 307.8 336.42  L 307.8 327.78  L 91.8 327.78  z " clip-path="url(#p4c68197e61)" style="fill: #d3e2ea; stroke: #235a78; stroke-width: 1.4; stroke-linejoin: miter" />
    </g>
@@ -92,7 +92,7 @@
     <path d="M 310.8 322.198362  L 307.8 328.198362  L 304.8 322.198362  z " clip-path="url(#p4c68197e61)" style="fill: #a23b34; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round" />
    </g>
   </g>
-  <g id="axes_3" transform="translate(-0.403750 0.000000) translate(-10.093750 -90.445798)">
+  <g id="axes_3" transform="translate(0.403750 0.000000) translate(-0.403750 0.000000) translate(-10.093750 -90.445798)">
    <g id="patch_6">
     <path d="M 448.2 336.42  L 664.2 336.42  L 664.2 327.78  L 448.2 327.78  z " clip-path="url(#pbba626f503)" style="fill: #d3e2ea; stroke: #235a78; stroke-width: 1.4; stroke-linejoin: miter" />
    </g>
@@ -121,7 +121,7 @@
     <path d="M 667.2 392.39716  L 664.2 398.39716  L 661.2 392.39716  z " clip-path="url(#pbba626f503)" style="fill: #a23b34; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round" />
    </g>
   </g>
-  <g id="axes_4" transform="translate(-0.403750 0.000000) translate(-10.093750 -90.445798)">
+  <g id="axes_4" transform="translate(0.403750 0.000000) translate(-0.403750 0.000000) translate(-10.093750 -90.445798)">
    <g id="line2d_4">
     <path d="M 854.64 330.75  L 906.84 226.35  " clip-path="url(#pc9b8112cc6)" style="fill: none; stroke: #235a78; stroke-width: 4; stroke-linecap: square" />
    </g>
@@ -146,7 +146,7 @@
   <g id="text_15">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="39.6" transform="rotate(-0 59.4 39.6)">Separate a lever-link mechanism into its member free bodies</text>
   </g>
-  <g id="text_17">
+  <g id="text_17" transform="translate(0.000000 -145.359318)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="540" y="660.24" transform="rotate(-0 540 660.24)">Coordinates O(0,0), A(2,0), B(4,0), C(3,2) m. Link weight and joint friction neglected. Opposing pin forces at A act on different members.</text>
   </g>
  </g>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="842.228pt" height="673.203pt" viewBox="28.748571 8.022284 842.228082 673.203343" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="835.009pt" height="452.412pt" viewBox="29.350162 13.436788 835.008984 452.411898" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 936 720  L 936 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-12.104486 0.000000) translate(-1.170000 -100.628386)">
+  <g id="axes_1" transform="translate(-6.316711 0.000000) translate(-12.104486 0.000000) translate(-1.170000 -100.628386)">
    <g id="patch_2">
     <path d="M 509.652 533.016  L 859.5288 533.016  L 859.5288 418.752  L 509.652 418.752  z " clip-path="url(#p9385d78e91)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -38,7 +38,7 @@
     <text style="font-size: 18px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(579.176494 492.980484)">plus 10 kN·m clockwise</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-12.104486 0.000000) translate(-1.170000 -100.628386)">
+  <g id="axes_2" transform="translate(-6.316711 0.000000) translate(-12.104486 0.000000) translate(-1.170000 -100.628386)">
    <g id="patch_3">
     <path d="M 102.96 341.76  L 414.96 341.76  L 414.96 279.36  L 102.96 279.36  z " clip-path="url(#p66a0004341)" style="fill: #edf3f6; stroke: #235a78; stroke-linejoin: miter" />
    </g>
@@ -91,7 +91,7 @@
   <g id="text_10">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="51.48" y="39.6" transform="rotate(-0 51.48 39.6)">Reduce all forces and couples to a resultant at O</text>
   </g>
-  <g id="text_12">
+  <g id="text_12" transform="translate(0.000000 -209.191445)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="468" y="660.24" transform="rotate(-0 468 660.24)">External equivalence for a rigid body. An independent applied couple enters the moment sum directly, without a lever arm.</text>
   </g>
  </g>

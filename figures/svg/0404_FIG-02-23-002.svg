@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="704.827pt" height="607.355pt" viewBox="28.215772 5.468048 704.826514 607.354809" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="684.689pt" height="378.715pt" viewBox="28.719220 12.014990 684.688614 378.715436" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-34.056000 0.000000) translate(2.160000 -132.480000)">
+  <g id="axes_1" transform="translate(-18.501696 -0.587384) translate(-34.056000 0.000000) translate(2.160000 -132.480000)">
    <g id="text_1">
     <text style="font-size: 19px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(580.717844 199.410536)">θ measured CCW</text>
     <text style="font-size: 19px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(623.982922 225.017489)">from +x</text>
@@ -35,7 +35,7 @@
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(583.89675 490.440075)">cos θ &lt; 0; sin θ &gt; 0</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-34.056000 0.000000) translate(2.160000 -132.480000)">
+  <g id="axes_2" transform="translate(-18.501696 -0.587384) translate(-34.056000 0.000000) translate(2.160000 -132.480000)">
    <g id="patch_2">
     <path d="M 456.554717 388.922264  C 456.554717 375.702573 452.375284 362.815306 444.616802 352.111746  C 436.858321 341.408186 425.910982 333.426639 413.347394 329.313672  C 400.783807 325.200705 387.235821 325.163167 374.649635 329.206451  C 362.063449 333.249736 351.072049 341.170496 343.254374 351.830899  " clip-path="url(#p78ed1ba675)" style="fill: none; stroke: #a23b34; stroke-linejoin: miter" />
    </g>
@@ -84,7 +84,7 @@
   <g id="text_10">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Components inherit their signs from the chosen axes</text>
   </g>
-  <g id="text_12">
+  <g id="text_12" transform="translate(0.000000 -216.157224)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="594.216" transform="rotate(-0 432 594.216)">Illustrative direction θ ≈ 143.75°. Use atan2(Fy,Fx) to preserve the quadrant when recovering an angle.</text>
   </g>
  </g>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="791.324pt" height="691.003pt" viewBox="16.045714 3.084833 791.324376 691.002571" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="790.759pt" height="455.960pt" viewBox="16.610946 9.864907 790.759144 455.959996" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,14 +21,14 @@
   <g id="patch_1">
    <path d="M 0 720  L 864 720  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-15.687257 0.000000) translate(25.200000 -105.120000)">
+  <g id="axes_1" transform="translate(-4.945777 0.000000) translate(-15.687257 0.000000) translate(25.200000 -105.120000)">
    <g id="text_1">
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(324.731328 488.473159)">TWA = Σ CᵢΔtᵢ / total time</text>
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(213.972344 511.384644)">Short-term limit: average over its specified window</text>
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(143.879219 534.296128)">Ceiling: maximum concentration under the specified limit definition</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-15.687257 0.000000) translate(25.200000 -105.120000)">
+  <g id="axes_2" transform="translate(-4.945777 0.000000) translate(-15.687257 0.000000) translate(25.200000 -105.120000)">
    <g id="patch_2">
     <path d="M 77.76 417.6  L 768.96 417.6  L 768.96 158.4  L 77.76 158.4  z " style="fill: #ffffff" />
    </g>
@@ -318,7 +318,7 @@
   <g id="text_24">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="36" transform="rotate(-0 38.88 36)">Time-weighted, short-term, and ceiling limits address different exposure</text>
   </g>
-  <g id="text_26">
+  <g id="text_26" transform="translate(0.000000 -222.202163)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="673.2" transform="rotate(-0 432 673.2)">Invented limits and trace, not chemical exposure guidance. Often 8-hour TWA / 15-minute STEL, but actual definitions and limits vary.</text>
   </g>
  </g>

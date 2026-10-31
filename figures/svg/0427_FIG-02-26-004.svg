@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="796.142pt" height="673.203pt" viewBox="30.085714 8.022284 796.141543 673.203343" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="785.905pt" height="471.356pt" viewBox="30.085714 13.139539 785.905437 471.356057" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 936 720  L 936 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-25.781786 0.000000) translate(-2.340000 -96.728061)">
+  <g id="axes_1" transform="translate(-15.922831 0.000000) translate(-25.781786 0.000000) translate(-2.340000 -96.728061)">
    <g id="text_1">
     <text style="font-size: 18px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(691.475456 172.716047)"><tspan style="font-size: 18.000px">ΣM</tspan><tspan style="font-size: 12.960px" dy="4.320px">A</tspan><tspan style="font-size: 18.000px" dy="-4.320px">​</tspan><tspan style="font-size: 18.000px"> = 0</tspan></text>
     <text style="font-size: 18px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(636.8553 197.475891)">6Bᵧ − 6(1) − 8(4) = 0</text>
@@ -36,7 +36,7 @@
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(648.74405 533.308875)">for external reactions</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-25.781786 0.000000) translate(-2.340000 -96.728061)">
+  <g id="axes_2" transform="translate(-15.922831 0.000000) translate(-25.781786 0.000000) translate(-2.340000 -96.728061)">
    <g id="patch_2">
     <path d="M 122.49 292.77  L 513.99 292.77  L 513.99 282.33  L 122.49 282.33  z " clip-path="url(#p4f927daddf)" style="fill: #d3e2ea; stroke: #235a78; stroke-width: 1.4; stroke-linejoin: miter" />
    </g>
@@ -108,7 +108,7 @@
     <path d="M 516.99 278.432645  L 513.99 284.432645  L 510.99 278.432645  z " clip-path="url(#p4f927daddf)" style="fill: #235a78; stroke: #235a78; stroke-linecap: round" />
    </g>
   </g>
-  <g id="axes_3" transform="translate(-25.781786 0.000000) translate(-2.340000 -96.728061)">
+  <g id="axes_3" transform="translate(-15.922831 0.000000) translate(-25.781786 0.000000) translate(-2.340000 -96.728061)">
    <g id="patch_17">
     <path d="M 149.49 509.85  L 486.99 509.85  L 486.99 500.85  L 149.49 500.85  z " clip-path="url(#pedf832b210)" style="fill: #d3e2ea; stroke: #235a78; stroke-width: 1.4; stroke-linejoin: miter" />
    </g>
@@ -157,7 +157,7 @@
   <g id="text_11">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="51.48" y="39.6" transform="rotate(-0 51.48 39.6)">Replace distributed loading with a resultant to calculate reactions</text>
   </g>
-  <g id="text_13">
+  <g id="text_13" transform="translate(0.000000 -191.017303)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="468" y="660.24" transform="rotate(-0 468 660.24)">Resultant replacement preserves total force and moment. It does not preserve the beam’s local shear and bending distributions.</text>
   </g>
  </g>
