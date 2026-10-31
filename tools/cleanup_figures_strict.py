@@ -208,8 +208,31 @@ def render_nested_group_bbox(root: ET.Element, axes_id: str, target_id: str, wid
     im = render_svg_bytes(svg, width)
     return bbox(mask_from_image(im)), im.size
 
-def find_bottom_caption_groups(root: ET.Element, axes_groups: list[ET.Element], width: int = 1200):
+def find_bottom_caption_groups(root: ET.Element, axes_groups: list[ET.Element], title_group: ET.Element | None, width: int = 1200):
     candidates = []
+    title_id = title_group.get("id") if title_group is not None else None
+
+    # Figure-level explanatory captions (common Matplotlib figtext pattern).
+    fig = figure_group(root)
+    if fig is not None:
+        for child in list(fig):
+            cid = child.get("id") or ""
+            if not cid.startswith("text_") or cid == title_id:
+                continue
+            txt = text_content(child).strip()
+            if len(txt) < 35 or txt.count(" ") < 5:
+                continue
+            size = max_font_size(child)
+            if size <= 0 or size > 11.5:
+                continue
+            bb, canvas = render_selected_bbox(root, {cid}, width)
+            if not bb or not canvas:
+                continue
+            iw, ih = canvas
+            if bb[1] >= int(ih * 0.62):
+                candidates.append((None, cid, bb, canvas))
+
+    # Axes-level explanatory captions for figures authored with ax.text().
     for axes in axes_groups:
         axes_id = axes.get("id") or ""
         if not axes_id:
@@ -228,9 +251,9 @@ def find_bottom_caption_groups(root: ET.Element, axes_groups: list[ET.Element], 
             if not bb or not canvas:
                 continue
             iw, ih = canvas
-            # Bottom explanatory sentence/note, not a normal plot label.
             if bb[1] >= int(ih * 0.62):
                 candidates.append((axes_id, cid, bb, canvas))
+
     return candidates
 
 def cleanup_one(svg_path: Path, png_path: Path):
@@ -313,7 +336,7 @@ def cleanup_one(svg_path: Path, png_path: Path):
     body_caption_gap_before = None
     body_caption_gap_after = None
 
-    caption_candidates = find_bottom_caption_groups(root, axes_groups, 1200)
+    caption_candidates = find_bottom_caption_groups(root, axes_groups, title_group, 1200)
     if caption_candidates:
         caption_ids = {item[1] for item in caption_candidates}
 
@@ -344,7 +367,10 @@ def cleanup_one(svg_path: Path, png_path: Path):
                 # Verify the moved caption union stays separated from body.
                 moved_boxes = []
                 for axes_id, cid, _, _ in caption_candidates:
-                    bb2, _ = render_nested_group_bbox(root, axes_id, cid, 1200)
+                    if axes_id is None:
+                        bb2, _ = render_selected_bbox(root, {cid}, 1200)
+                    else:
+                        bb2, _ = render_nested_group_bbox(root, axes_id, cid, 1200)
                     if bb2:
                         moved_boxes.append(bb2)
                 if moved_boxes:
