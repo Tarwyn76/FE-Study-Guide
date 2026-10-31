@@ -78,35 +78,49 @@ def convert_simple_subscripts(root: ET.Element) -> int:
         # Do not rewrite text that is already composed from tspans.
         if list(text_el):
             continue
+
         raw = text_el.text or ""
         if "_" not in raw:
             continue
+
         matches = list(SUB_RE.finditer(raw))
         if not matches:
             continue
 
+        style = text_el.get("style", "")
+        msize = FONT_SIZE_RE.search(style)
+        base_size = float(msize.group(1)) if msize else 11.0
+        sub_size = max(6.0, base_size * 0.72)
+        shift = max(1.5, base_size * 0.24)
+
         text_el.text = None
         pos = 0
+
         for m in matches:
             if m.start() > pos:
                 lead = ET.SubElement(text_el, q("tspan"))
+                lead.set("style", f"font-size: {base_size:.3f}px")
                 lead.text = raw[pos:m.start()]
 
             sub = ET.SubElement(text_el, q("tspan"))
-            sub.set("font-size", "75%")
-            sub.set("dy", "0.28em")
+            sub.set("style", f"font-size: {sub_size:.3f}px")
+            sub.set("dy", f"{shift:.3f}px")
             sub.text = m.group(1).strip("()")
 
+            # Restore the original baseline and font size before continuing.
             reset = ET.SubElement(text_el, q("tspan"))
-            reset.set("dy", "-0.28em")
-            reset.text = ""
+            reset.set("style", f"font-size: {base_size:.3f}px")
+            reset.set("dy", f"-{shift:.3f}px")
+            reset.text = "\u200b"
             pos = m.end()
 
         if pos < len(raw):
             tail = ET.SubElement(text_el, q("tspan"))
+            tail.set("style", f"font-size: {base_size:.3f}px")
             tail.text = raw[pos:]
 
         changed += len(matches)
+
     return changed
 
 def max_font_size(group: ET.Element) -> float:
