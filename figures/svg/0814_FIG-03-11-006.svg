@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1008pt" height="720pt" viewBox="0 0 1008 720" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="833.674pt" height="582.414pt" viewBox="30.326 65.586 833.674 582.414" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -21,16 +20,11 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 720 
-L 1008 720 
-L 1008 0 
-L 0 0 
-z
-" style="fill: #ffffff"/>
+   <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff"/>
   </g>
   <g id="axes_1">
    <g id="text_1">
-    <text style="font-size: 25px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="132.190781" transform="rotate(-0 504 132.190781)">A→D: r_D=k_D C_A²;     A→U: r_U=k_U C_A</text>
+    <text style="font-size: 25px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="132.190781" transform="rotate(-0 504 132.190781)"><tspan font-size="25.000px">A→D: r</tspan><tspan font-size="17.000px" dy="6.000px">D</tspan><tspan font-size="25.000px" dy="-6.000px">=k</tspan><tspan font-size="17.000px" dy="6.000px">D</tspan><tspan font-size="25.000px" dy="-6.000px"> C</tspan><tspan font-size="17.000px" dy="6.000px">A</tspan><tspan font-size="25.000px" dy="-6.000px">²;     A→U: r</tspan><tspan font-size="17.000px" dy="6.000px">U</tspan><tspan font-size="25.000px" dy="-6.000px">=k</tspan><tspan font-size="17.000px" dy="6.000px">U</tspan><tspan font-size="25.000px" dy="-6.000px"> C</tspan><tspan font-size="17.000px" dy="6.000px">A</tspan></text>
    </g>
    <g id="text_2">
     <!-- $r_D/r_U=(k_D/k_U)C_A$ -->
@@ -55,31 +49,22 @@ z
     </g>
    </g>
    <g id="text_3">
-    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(718.92945 444.161672)">At C_A=2: S_inst=4</text>
-    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(697.940075 474.423703)">At C_A=0.4: S_inst=0.8</text>
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(718.92945 444.161672)"><tspan font-size="22.000px">At C</tspan><tspan font-size="14.960px" dy="5.280px">A</tspan><tspan font-size="22.000px" dy="-5.280px">=2: S</tspan><tspan font-size="14.960px" dy="5.280px">inst</tspan><tspan font-size="22.000px" dy="-5.280px">=4</tspan></text>
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(697.940075 474.423703)"><tspan font-size="22.000px">At C</tspan><tspan font-size="14.960px" dy="5.280px">A</tspan><tspan font-size="22.000px" dy="-5.280px">=0.4: S</tspan><tspan font-size="14.960px" dy="5.280px">inst</tspan><tspan font-size="22.000px" dy="-5.280px">=0.8</tspan></text>
    </g>
   </g>
   <g id="axes_2">
    <g id="patch_2">
-    <path d="M 80.64 489.6 
-L 675.36 489.6 
-L 675.36 158.4 
-L 80.64 158.4 
-z
-" style="fill: #ffffff"/>
+    <path d="M 80.64 489.6  L 675.36 489.6  L 675.36 158.4  L 80.64 158.4  z " style="fill: #ffffff"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
      <g id="line2d_1">
-      <path d="M 107.672727 489.6 
-L 107.672727 158.4 
-" clip-path="url(#p7e134645c7)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+      <path d="M 107.672727 489.6  L 107.672727 158.4  " clip-path="url(#p7e134645c7)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_2">
       <defs>
-       <path id="m73015b0ffe" d="M 0 0 
-L 0 3.5 
-" style="stroke: #000000; stroke-width: 0.8"/>
+       <path id="m73015b0ffe" d="M 0 0  L 0 3.5  " style="stroke: #000000; stroke-width: 0.8"/>
       </defs>
       <g>
        <use xlink:href="#m73015b0ffe" x="107.672727" y="489.6" style="stroke: #000000; stroke-width: 0.8"/>
@@ -91,9 +76,7 @@ L 0 3.5
     </g>
     <g id="xtick_2">
      <g id="line2d_3">
-      <path d="M 215.803636 489.6 
-L 215.803636 158.4 
-" clip-path="url(#p7e134645c7)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+      <path d="M 215.803636 489.6  L 215.803636 158.4  " clip-path="url(#p7e134645c7)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_4">
       <g>
@@ -106,9 +89,7 @@ L 215.803636 158.4
     </g>
     <g id="xtick_3">
      <g id="line2d_5">
-      <path d="M 323.934545 489.6 
-L 323.934545 158.4 
-" clip-path="url(#p7e134645c7)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+      <path d="M 323.934545 489.6  L 323.934545 158.4  " clip-path="url(#p7e134645c7)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_6">
       <g>
@@ -121,9 +102,7 @@ L 323.934545 158.4
     </g>
     <g id="xtick_4">
      <g id="line2d_7">
-      <path d="M 432.065455 489.6 
-L 432.065455 158.4 
-" clip-path="url(#p7e134645c7)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+      <path d="M 432.065455 489.6  L 432.065455 158.4  " clip-path="url(#p7e134645c7)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_8">
       <g>
@@ -136,9 +115,7 @@ L 432.065455 158.4
     </g>
     <g id="xtick_5">
      <g id="line2d_9">
-      <path d="M 540.196364 489.6 
-L 540.196364 158.4 
-" clip-path="url(#p7e134645c7)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+      <path d="M 540.196364 489.6  L 540.196364 158.4  " clip-path="url(#p7e134645c7)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_10">
       <g>
@@ -151,9 +128,7 @@ L 540.196364 158.4
     </g>
     <g id="xtick_6">
      <g id="line2d_11">
-      <path d="M 648.327273 489.6 
-L 648.327273 158.4 
-" clip-path="url(#p7e134645c7)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+      <path d="M 648.327273 489.6  L 648.327273 158.4  " clip-path="url(#p7e134645c7)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_12">
       <g>
@@ -171,15 +146,11 @@ L 648.327273 158.4
    <g id="matplotlib.axis_2">
     <g id="ytick_1">
      <g id="line2d_13">
-      <path d="M 80.64 474.545455 
-L 675.36 474.545455 
-" clip-path="url(#p7e134645c7)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+      <path d="M 80.64 474.545455  L 675.36 474.545455  " clip-path="url(#p7e134645c7)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_14">
       <defs>
-       <path id="m68cad82135" d="M 0 0 
-L -3.5 0 
-" style="stroke: #000000; stroke-width: 0.8"/>
+       <path id="m68cad82135" d="M 0 0  L -3.5 0  " style="stroke: #000000; stroke-width: 0.8"/>
       </defs>
       <g>
        <use xlink:href="#m68cad82135" x="80.64" y="474.545455" style="stroke: #000000; stroke-width: 0.8"/>
@@ -191,9 +162,7 @@ L -3.5 0
     </g>
     <g id="ytick_2">
      <g id="line2d_15">
-      <path d="M 80.64 436.909091 
-L 675.36 436.909091 
-" clip-path="url(#p7e134645c7)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+      <path d="M 80.64 436.909091  L 675.36 436.909091  " clip-path="url(#p7e134645c7)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_16">
       <g>
@@ -206,9 +175,7 @@ L 675.36 436.909091
     </g>
     <g id="ytick_3">
      <g id="line2d_17">
-      <path d="M 80.64 399.272727 
-L 675.36 399.272727 
-" clip-path="url(#p7e134645c7)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+      <path d="M 80.64 399.272727  L 675.36 399.272727  " clip-path="url(#p7e134645c7)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_18">
       <g>
@@ -221,9 +188,7 @@ L 675.36 399.272727
     </g>
     <g id="ytick_4">
      <g id="line2d_19">
-      <path d="M 80.64 361.636364 
-L 675.36 361.636364 
-" clip-path="url(#p7e134645c7)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+      <path d="M 80.64 361.636364  L 675.36 361.636364  " clip-path="url(#p7e134645c7)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_20">
       <g>
@@ -236,9 +201,7 @@ L 675.36 361.636364
     </g>
     <g id="ytick_5">
      <g id="line2d_21">
-      <path d="M 80.64 324 
-L 675.36 324 
-" clip-path="url(#p7e134645c7)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+      <path d="M 80.64 324  L 675.36 324  " clip-path="url(#p7e134645c7)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_22">
       <g>
@@ -251,9 +214,7 @@ L 675.36 324
     </g>
     <g id="ytick_6">
      <g id="line2d_23">
-      <path d="M 80.64 286.363636 
-L 675.36 286.363636 
-" clip-path="url(#p7e134645c7)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+      <path d="M 80.64 286.363636  L 675.36 286.363636  " clip-path="url(#p7e134645c7)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_24">
       <g>
@@ -266,9 +227,7 @@ L 675.36 286.363636
     </g>
     <g id="ytick_7">
      <g id="line2d_25">
-      <path d="M 80.64 248.727273 
-L 675.36 248.727273 
-" clip-path="url(#p7e134645c7)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+      <path d="M 80.64 248.727273  L 675.36 248.727273  " clip-path="url(#p7e134645c7)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_26">
       <g>
@@ -281,9 +240,7 @@ L 675.36 248.727273
     </g>
     <g id="ytick_8">
      <g id="line2d_27">
-      <path d="M 80.64 211.090909 
-L 675.36 211.090909 
-" clip-path="url(#p7e134645c7)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+      <path d="M 80.64 211.090909  L 675.36 211.090909  " clip-path="url(#p7e134645c7)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_28">
       <g>
@@ -296,9 +253,7 @@ L 675.36 211.090909
     </g>
     <g id="ytick_9">
      <g id="line2d_29">
-      <path d="M 80.64 173.454545 
-L 675.36 173.454545 
-" clip-path="url(#p7e134645c7)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+      <path d="M 80.64 173.454545  L 675.36 173.454545  " clip-path="url(#p7e134645c7)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="line2d_30">
       <g>
@@ -310,59 +265,33 @@ L 675.36 173.454545
      </g>
     </g>
     <g id="text_20">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="52.733594" y="324" transform="rotate(-90 52.733594 324)">Reactant C_A (mol/L)</text>
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="52.733594" y="324" transform="rotate(-90 52.733594 324)"><tspan font-size="11.000px">Reactant C</tspan><tspan font-size="7.480px" dy="2.640px">A</tspan><tspan font-size="11.000px" dy="-2.640px"> (mol/L)</tspan></text>
     </g>
    </g>
    <g id="line2d_31">
-    <path d="M 107.672727 173.454545 
-L 648.327273 474.545455 
-L 648.327273 474.545455 
-" clip-path="url(#p7e134645c7)" style="fill: none; stroke: #235a78; stroke-width: 2; stroke-linecap: square"/>
+    <path d="M 107.672727 173.454545  L 648.327273 474.545455  L 648.327273 474.545455  " clip-path="url(#p7e134645c7)" style="fill: none; stroke: #235a78; stroke-width: 2; stroke-linecap: square"/>
    </g>
    <g id="line2d_32">
-    <path d="M 107.672727 474.545455 
-L 648.327273 474.545455 
-L 648.327273 474.545455 
-" clip-path="url(#p7e134645c7)" style="fill: none; stroke: #a23b34; stroke-width: 2; stroke-linecap: square"/>
+    <path d="M 107.672727 474.545455  L 648.327273 474.545455  L 648.327273 474.545455  " clip-path="url(#p7e134645c7)" style="fill: none; stroke: #a23b34; stroke-width: 2; stroke-linecap: square"/>
    </g>
    <g id="patch_3">
-    <path d="M 80.64 489.6 
-L 80.64 158.4 
-" style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linejoin: miter; stroke-linecap: square"/>
+    <path d="M 80.64 489.6  L 80.64 158.4  " style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_4">
-    <path d="M 80.64 489.6 
-L 675.36 489.6 
-" style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linejoin: miter; stroke-linecap: square"/>
+    <path d="M 80.64 489.6  L 675.36 489.6  " style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="legend_1">
     <g id="patch_5">
-     <path d="M 460.127187 195.75625 
-L 668.36 195.75625 
-Q 670.36 195.75625 670.36 193.75625 
-L 670.36 165.4 
-Q 670.36 163.4 668.36 163.4 
-L 460.127187 163.4 
-Q 458.127187 163.4 458.127187 165.4 
-L 458.127187 193.75625 
-Q 458.127187 195.75625 460.127187 195.75625 
-z
-" style="fill: #ffffff; opacity: 0.8; stroke: #cccccc; stroke-linejoin: miter"/>
+     <path d="M 460.127187 195.75625  L 668.36 195.75625  Q 670.36 195.75625 670.36 193.75625  L 670.36 165.4  Q 670.36 163.4 668.36 163.4  L 460.127187 163.4  Q 458.127187 163.4 458.127187 165.4  L 458.127187 193.75625  Q 458.127187 195.75625 460.127187 195.75625  z " style="fill: #ffffff; opacity: 0.8; stroke: #cccccc; stroke-linejoin: miter"/>
     </g>
     <g id="line2d_33">
-     <path d="M 462.127187 171.498437 
-L 472.127187 171.498437 
-L 482.127187 171.498437 
-" style="fill: none; stroke: #235a78; stroke-width: 2; stroke-linecap: square"/>
+     <path d="M 462.127187 171.498437  L 472.127187 171.498437  L 482.127187 171.498437  " style="fill: none; stroke: #235a78; stroke-width: 2; stroke-linecap: square"/>
     </g>
     <g id="text_21">
      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="490.127187" y="174.998437" transform="rotate(-0 490.127187 174.998437)">PFR: declining concentration</text>
     </g>
     <g id="line2d_34">
-     <path d="M 462.127187 186.176562 
-L 472.127187 186.176562 
-L 482.127187 186.176562 
-" style="fill: none; stroke: #a23b34; stroke-width: 2; stroke-linecap: square"/>
+     <path d="M 462.127187 186.176562  L 472.127187 186.176562  L 482.127187 186.176562  " style="fill: none; stroke: #a23b34; stroke-width: 2; stroke-linecap: square"/>
     </g>
     <g id="text_22">
      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="490.127187" y="189.676562" transform="rotate(-0 490.127187 189.676562)">CSTR: uniform outlet concentration</text>
@@ -370,14 +299,13 @@ L 482.127187 186.176562
    </g>
   </g>
   <g id="text_23">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">High reactant concentration favors a higher-order desired parallel reaction</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="93.772" transform="rotate(-0 55.44 93.772)">High reactant concentration favors a higher-order desired parallel reaction</text>
   </g>
   <g id="text_24">
-   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="55.44" y="700.56" transform="rotate(-0 55.44 700.56)">0814  •  FIG-03-11-006</text>
-  </g>
+</g>
   <g id="text_25">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(104.916406 650.00375)">Hypothetical k_D=0.2 L/(mol·min),k_U=0.1 min⁻¹; both products form one-to-one from A. Curves show concentration environments schematically, not a solved</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(132.414062 662.999375)">axial profile. Higher C_A favors D here because its reaction order is higher. Overall yield requires integration/material balance; reversing the relative</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(104.916406 650.00375)"><tspan font-size="10.000px">Hypothetical k</tspan><tspan font-size="6.800px" dy="2.400px">D</tspan><tspan font-size="10.000px" dy="-2.400px">=0.2 L/(mol·min),k</tspan><tspan font-size="6.800px" dy="2.400px">U</tspan><tspan font-size="10.000px" dy="-2.400px">=0.1 min⁻¹; both products form one-to-one from A. Curves show concentration environments schematically, not a solved</tspan></text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(132.414062 662.999375)"><tspan font-size="10.000px">axial profile. Higher C</tspan><tspan font-size="6.800px" dy="2.400px">A</tspan><tspan font-size="10.000px" dy="-2.400px"> favors D here because its reaction order is higher. Overall yield requires integration/material balance; reversing the relative</tspan></text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(401.903906 675.995)">orders can reverse the preferred reactor.</text>
   </g>
  </g>

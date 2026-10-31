@@ -1,24 +1,12 @@
-# Applying the Phase-1 figure repairs
+# FE Figure Cleanup — 1332–1403
 
-This package contains corrected chapter copies, repaired/aliased figure assets, a corrected canonical manifest, and updated QA records.
+Extract this archive at the FE Supplemental Guide repository root.
 
-## Automatic application
+It contains canonical replacement assets under:
 
-Run:
+- `figures/png/`
+- `figures/svg/`
 
-```bash
-python tools/apply_figure_repairs.py --root /path/to/FE-Supplemental-Guide --manifest /path/to/figure-manifest.csv
-```
+and audit records under `meta/`.
 
-`--manifest` is optional. When supplied, that file is replaced with `manifests/figure-manifest-fixed.csv`. The script searches the repository recursively for the corrected chapter filenames and copies the supplied figure files into the shortest existing `figures` directory.
-
-The script is idempotent: rerunning it after a successful application makes no additional changes.
-
-## Manual application
-
-1. Replace the matching files in `chapters/`.
-2. Copy all files from `figures/` into the guide's figure asset directory.
-3. Replace the canonical manifest with `manifests/figure-manifest-fixed.csv`.
-4. Keep the files under `meta/` as QA records; they are not manuscript content.
-
-The original project/library files were not overwritten by creation of this package.
+This is the final forward cleanup range and uses the revised internal-reflow standard. It includes the current Batch-29 artwork for indices 1363 and 1400–1403.
