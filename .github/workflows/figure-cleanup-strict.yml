@@ -1,4 +1,4 @@
-name: Strict figure cleanup 0000-0149
+name: Strict figure cleanup 0150-0299
 
 on:
   push:
@@ -31,9 +31,9 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install cairosvg pillow numpy
 
-      - name: Clean figures 0000-0149
+      - name: Clean figures 0150-0299
         run: |
-          python tools/cleanup_figures_strict.py --start 0 --end 149
+          python tools/cleanup_figures_strict.py --start 150 --end 299
 
       - name: Commit regenerated figure assets
         run: |
@@ -44,5 +44,5 @@ jobs:
             echo "No figure changes produced."
             exit 0
           fi
-          git commit -m "Strict cleanup figures 0000-0149"
+          git commit -m "Strict cleanup figures 0150-0299"
           git push origin HEAD:figure-cleanup-strict
