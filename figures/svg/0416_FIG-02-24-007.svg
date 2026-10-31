@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="801.199pt" height="518.612pt" viewBox="29.278653 12.105840 801.198759 518.611587" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="839.057pt" height="525.460pt" viewBox="28.080000 12.033426 839.057143 525.459610" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 936 720  L 936 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-5.043517 0.000000) translate(-9.870658 0.000000) translate(-20.277214 0.000000) translate(16.380000 -86.587216)">
+  <g id="axes_1" transform="translate(16.380000 -86.587216)">
    <g id="patch_2">
     <path d="M 109.7928 582.696  L 826.2072 582.696  L 826.2072 498.24  L 109.7928 498.24  z " clip-path="url(#pf79cd3e202)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -41,7 +41,7 @@
     <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="468" y="544.607062" transform="rotate(-0 468 544.607062)">6  Joint B closes the audit: DB = BE = 0; AB = BC = 6.667 kN</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-5.043517 0.000000) translate(-9.870658 0.000000) translate(-20.277214 0.000000) translate(16.380000 -86.587216)">
+  <g id="axes_2" transform="translate(16.380000 -86.587216)">
    <g id="patch_3">
     <path d="M 92.213333 376.533333  L 82.021333 389.782933  L 102.405333 389.782933  z " clip-path="url(#p91de68da19)" style="fill: #edf3f6; stroke: #23313d; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -151,7 +151,7 @@
   <g id="text_13">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="51.48" y="39.6" transform="rotate(-0 51.48 39.6)">Choose joints with at most two remaining unknown member forces</text>
   </g>
-  <g id="text_15" transform="translate(0.000000 -146.348553)">
+  <g id="text_15" transform="translate(0.000000 -144.312026)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="468" y="660.24" transform="rotate(-0 468 660.24)">Illustrative symmetric Warren truss, coordinates A(0,0), B(2,0), C(4,0), D(1,1.5), E(3,1.5) m. Zero forces follow this load case.</text>
   </g>
  </g>
