@@ -171,6 +171,68 @@ def render_selected_bbox(root: ET.Element, keep_ids: set[str], width: int = 1200
     im = render_svg_bytes(svg, width)
     return bbox(mask_from_image(im)), im.size
 
+def find_by_id(root: ET.Element, id_value: str):
+    return next((e for e in root.iter(q("g")) if e.get("id") == id_value), None)
+
+def remove_group_ids(root: ET.Element, ids: set[str]):
+    if not ids:
+        return
+    for parent in list(root.iter()):
+        for child in list(parent):
+            if child.tag == q("g") and (child.get("id") or "") in ids:
+                parent.remove(child)
+
+def render_nested_group_bbox(root: ET.Element, axes_id: str, target_id: str, width: int = 1200):
+    clone = copy.deepcopy(root)
+    fig = figure_group(clone)
+    if fig is None:
+        return None, None
+
+    axes = next((g for g in list(fig) if g.get("id") == axes_id), None)
+    if axes is None:
+        return None, None
+
+    for child in list(fig):
+        if child is not axes:
+            fig.remove(child)
+
+    target = next((g for g in list(axes) if g.get("id") == target_id), None)
+    if target is None:
+        return None, None
+
+    for child in list(axes):
+        if child is not target:
+            axes.remove(child)
+
+    svg = ET.tostring(clone, encoding="utf-8", xml_declaration=True)
+    im = render_svg_bytes(svg, width)
+    return bbox(mask_from_image(im)), im.size
+
+def find_bottom_caption_groups(root: ET.Element, axes_groups: list[ET.Element], width: int = 1200):
+    candidates = []
+    for axes in axes_groups:
+        axes_id = axes.get("id") or ""
+        if not axes_id:
+            continue
+        for child in list(axes):
+            cid = child.get("id") or ""
+            if not cid.startswith("text_"):
+                continue
+            txt = text_content(child).strip()
+            if len(txt) < 35 or txt.count(" ") < 5:
+                continue
+            size = max_font_size(child)
+            if size <= 0 or size > 11.5:
+                continue
+            bb, canvas = render_nested_group_bbox(root, axes_id, cid, width)
+            if not bb or not canvas:
+                continue
+            iw, ih = canvas
+            # Bottom explanatory sentence/note, not a normal plot label.
+            if bb[1] >= int(ih * 0.62):
+                candidates.append((axes_id, cid, bb, canvas))
+    return candidates
+
 def cleanup_one(svg_path: Path, png_path: Path):
     original_svg = svg_path.read_bytes()
     root = ET.fromstring(original_svg)
@@ -243,6 +305,51 @@ def cleanup_one(svg_path: Path, png_path: Path):
                         if body_bb3:
                             gap_after = body_bb3[1] - title_bb2[3]
 
+    # Tighten large internal gaps above long bottom explanatory captions.
+    # Only sentence-like small text groups near the bottom of axes are moved;
+    # diagrams, plots, equations, arrows, and other geometry remain fixed.
+    caption_groups_moved = 0
+    caption_shift_u = 0.0
+    body_caption_gap_before = None
+    body_caption_gap_after = None
+
+    caption_candidates = find_bottom_caption_groups(root, axes_groups, 1200)
+    if caption_candidates:
+        caption_ids = {item[1] for item in caption_candidates}
+
+        clone_no_captions = copy.deepcopy(root)
+        remove_group_ids(clone_no_captions, caption_ids)
+        body_bb, canvas = render_selected_bbox(clone_no_captions, axes_ids, 1200)
+
+        if body_bb and canvas:
+            iw, ih = canvas
+            caption_top = min(item[2][1] for item in caption_candidates)
+            body_bottom = body_bb[3]
+            body_caption_gap_before = caption_top - body_bottom
+
+            # Keep approximately one text-line of whitespace.
+            cap_heights = [item[2][3] - item[2][1] for item in caption_candidates]
+            target_gap = max(14, int(max(cap_heights) * 0.9))
+            shift_px = max(0, body_caption_gap_before - target_gap)
+
+            if shift_px > 2:
+                sy = vb_h / ih
+                caption_shift_u = -(shift_px * sy)
+                for _, cid, _, _ in caption_candidates:
+                    grp = find_by_id(root, cid)
+                    if grp is not None:
+                        append_translate(grp, 0.0, caption_shift_u)
+                        caption_groups_moved += 1
+
+                # Verify the moved caption union stays separated from body.
+                moved_boxes = []
+                for axes_id, cid, _, _ in caption_candidates:
+                    bb2, _ = render_nested_group_bbox(root, axes_id, cid, 1200)
+                    if bb2:
+                        moved_boxes.append(bb2)
+                if moved_boxes:
+                    body_caption_gap_after = min(bb[1] for bb in moved_boxes) - body_bottom
+
     # Crop the canvas around the final full composition. This removes the
     # deleted production footer and excessive outer whitespace without
     # changing internal geometry further.
@@ -296,6 +403,10 @@ def cleanup_one(svg_path: Path, png_path: Path):
         "title_body_gap_after_px": gap_after if gap_after is not None else "",
         "body_center_offset_before_px": round(center_offset_before, 2) if center_offset_before is not None else "",
         "body_center_offset_after_px": round(center_offset_after, 2) if center_offset_after is not None else "",
+        "caption_groups_moved": caption_groups_moved,
+        "caption_shift_svg": round(caption_shift_u, 4),
+        "body_caption_gap_before_px": body_caption_gap_before if body_caption_gap_before is not None else "",
+        "body_caption_gap_after_px": body_caption_gap_after if body_caption_gap_after is not None else "",
         "old_viewbox_w": round(vb_w, 4),
         "old_viewbox_h": round(vb_h, 4),
         "new_viewbox_w": round(new_w, 4),
