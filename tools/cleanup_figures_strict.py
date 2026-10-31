@@ -2,9 +2,9 @@
 from __future__ import annotations
 
 import argparse
+import copy
 import csv
 import io
-import math
 import re
 from pathlib import Path
 import xml.etree.ElementTree as ET
@@ -15,8 +15,10 @@ import numpy as np
 
 SVG_NS = "http://www.w3.org/2000/svg"
 ET.register_namespace("", SVG_NS)
+
 PROD_RE = re.compile(r"^\s*\d{4}\s*[•·]\s*FIG-\d{2}-\d{2}-\d{3}\s*$", re.I)
 SUB_RE = re.compile(r"(?<=\w)_(\([^)]+\)|[A-Za-z0-9]+(?:,[A-Za-z0-9]+)?)")
+FONT_SIZE_RE = re.compile(r"font-size:\s*([0-9.]+)px")
 
 def q(tag: str) -> str:
     return f"{{{SVG_NS}}}{tag}"
@@ -34,47 +36,32 @@ def parse_viewbox(root: ET.Element):
     return vals
 
 def render_svg_bytes(svg_bytes: bytes, width: int = 1200) -> Image.Image:
-    png = cairosvg.svg2png(bytestring=svg_bytes, output_width=width, background_color="#ffffff")
+    png = cairosvg.svg2png(
+        bytestring=svg_bytes,
+        output_width=width,
+        background_color="#ffffff",
+    )
     return Image.open(io.BytesIO(png)).convert("RGB")
 
 def mask_from_image(im: Image.Image):
     a = np.asarray(im)
     return np.min(a, axis=2) < 245
 
-def row_clusters(mask: np.ndarray):
-    h, w = mask.shape
-    minpix = max(5, w // 700)
-    occ = mask.sum(axis=1)
-    rows = np.where(occ >= minpix)[0]
-    if len(rows) == 0:
-        return []
-    out = []
-    s = p = int(rows[0])
-    for rr in rows[1:]:
-        rr = int(rr)
-        if rr <= p + 2:
-            p = rr
-        else:
-            out.append((s, p))
-            s = p = rr
-    out.append((s, p))
-    return out
-
-def bbox(mask: np.ndarray, y0: int = 0, y1: int | None = None):
-    if y1 is None:
-        y1 = mask.shape[0]
-    sub = mask[y0:y1]
-    ys, xs = np.where(sub)
+def bbox(mask: np.ndarray):
+    ys, xs = np.where(mask)
     if len(xs) == 0:
         return None
-    return (int(xs.min()), int(ys.min() + y0), int(xs.max() + 1), int(ys.max() + 1 + y0))
+    return (int(xs.min()), int(ys.min()), int(xs.max() + 1), int(ys.max() + 1))
+
+def figure_group(root: ET.Element):
+    return next((e for e in root.iter(q("g")) if e.get("id") == "figure_1"), None)
 
 def append_translate(el: ET.Element, dx: float, dy: float):
     if abs(dx) < 1e-9 and abs(dy) < 1e-9:
         return
     old = el.get("transform", "").strip()
     t = f"translate({dx:.6f} {dy:.6f})"
-    el.set("transform", (t + (" " + old if old else "")))
+    el.set("transform", t + ((" " + old) if old else ""))
 
 def remove_production_ids(root: ET.Element) -> int:
     removed = 0
@@ -88,6 +75,7 @@ def remove_production_ids(root: ET.Element) -> int:
 def convert_simple_subscripts(root: ET.Element) -> int:
     changed = 0
     for text_el in root.iter(q("text")):
+        # Do not rewrite text that is already composed from tspans.
         if list(text_el):
             continue
         raw = text_el.text or ""
@@ -96,102 +84,176 @@ def convert_simple_subscripts(root: ET.Element) -> int:
         matches = list(SUB_RE.finditer(raw))
         if not matches:
             continue
+
         text_el.text = None
         pos = 0
         for m in matches:
             if m.start() > pos:
-                t = ET.SubElement(text_el, q("tspan"))
-                t.text = raw[pos:m.start()]
-            base_underscore = m.start()
-            # underscore itself is omitted; subscript contents are lowered/smaller
+                lead = ET.SubElement(text_el, q("tspan"))
+                lead.text = raw[pos:m.start()]
+
             sub = ET.SubElement(text_el, q("tspan"))
             sub.set("font-size", "75%")
             sub.set("dy", "0.28em")
             sub.text = m.group(1).strip("()")
+
             reset = ET.SubElement(text_el, q("tspan"))
             reset.set("dy", "-0.28em")
             reset.text = ""
             pos = m.end()
+
         if pos < len(raw):
-            t = ET.SubElement(text_el, q("tspan"))
-            t.text = raw[pos:]
+            tail = ET.SubElement(text_el, q("tspan"))
+            tail.text = raw[pos:]
+
         changed += len(matches)
     return changed
 
-def find_top_level(root: ET.Element, id_value: str):
-    for child in root:
-        if child.get("id") == id_value:
-            return child
-    return None
+def max_font_size(group: ET.Element) -> float:
+    best = 0.0
+    for text in group.iter(q("text")):
+        style = text.get("style", "")
+        m = FONT_SIZE_RE.search(style)
+        if m:
+            best = max(best, float(m.group(1)))
+    return best
+
+def select_groups(root: ET.Element):
+    fig = figure_group(root)
+    if fig is None:
+        return [], None
+
+    axes = [
+        child for child in list(fig)
+        if child.tag == q("g") and (child.get("id") or "").startswith("axes_")
+    ]
+
+    title_candidates = []
+    for child in list(fig):
+        if child.tag != q("g"):
+            continue
+        cid = child.get("id") or ""
+        if cid.startswith("axes_") or cid == "patch_1":
+            continue
+        size = max_font_size(child)
+        if size > 0 and text_content(child).strip():
+            title_candidates.append((size, child))
+
+    title = max(title_candidates, key=lambda x: x[0])[1] if title_candidates else None
+    return axes, title
+
+def render_selected_bbox(root: ET.Element, keep_ids: set[str], width: int = 1200):
+    clone = copy.deepcopy(root)
+    fig = figure_group(clone)
+    if fig is None:
+        return None, None
+
+    for child in list(fig):
+        cid = child.get("id") or ""
+        if cid not in keep_ids:
+            fig.remove(child)
+
+    svg = ET.tostring(clone, encoding="utf-8", xml_declaration=True)
+    im = render_svg_bytes(svg, width)
+    return bbox(mask_from_image(im)), im.size
 
 def cleanup_one(svg_path: Path, png_path: Path):
     original_svg = svg_path.read_bytes()
-    tree = ET.ElementTree(ET.fromstring(original_svg))
-    root = tree.getroot()
+    root = ET.fromstring(original_svg)
     vb_x, vb_y, vb_w, vb_h = parse_viewbox(root)
 
     removed_ids = remove_production_ids(root)
     subs = convert_simple_subscripts(root)
 
-    axes = find_top_level(root, "axes_1")
-    if axes is None:
-        axes = next((e for e in root.iter(q("g")) if e.get("id") == "axes_1"), None)
+    axes_groups, title_group = select_groups(root)
+    axes_ids = {g.get("id") for g in axes_groups if g.get("id")}
+    title_id = title_group.get("id") if title_group is not None else None
 
-    # Render after footer/subscript cleanup to measure actual composition.
-    svg0 = ET.tostring(root, encoding="utf-8", xml_declaration=True)
-    im0 = render_svg_bytes(svg0, 1200)
-    mask0 = mask_from_image(im0)
-    clusters = row_clusters(mask0)
-
-    dx_u = dy_u = 0.0
+    dx_u = 0.0
+    dy_u = 0.0
+    gap_before = None
+    gap_after = None
+    center_offset_before = None
+    center_offset_after = None
     classification = "crop-only"
 
-    if axes is not None and len(clusters) >= 2:
-        h, w = mask0.shape
-        # Find first substantial whitespace gap after the title band.
-        split = None
-        for i in range(min(4, len(clusters) - 1)):
-            gap = clusters[i + 1][0] - clusters[i][1] - 1
-            if gap > max(18, int(h * 0.03)):
-                split = (clusters[i][1], clusters[i + 1][0], gap)
-                break
-        if split:
-            title_end, body_start, gap = split
-            body_bb = bbox(mask0, body_start, h)
-            if body_bb:
-                bx0, by0, bx1, by1 = body_bb
-                body_center = (bx0 + bx1) / 2.0
-                desired_center = w / 2.0
-                dx_px = desired_center - body_center
-                # Do not overcorrect intentionally asymmetric figures.
-                dx_px = max(-0.12 * w, min(0.12 * w, dx_px))
-                target_gap_px = max(16, int(h * 0.018))
-                dy_px = -(max(0, gap - target_gap_px))
-                sx = vb_w / w
-                sy = vb_h / h
-                dx_u = dx_px * sx
-                dy_u = dy_px * sy
-                if abs(dx_u) > 0.5 or abs(dy_u) > 0.5:
-                    append_translate(axes, dx_u, dy_u)
-                    classification = "reflow"
+    if axes_ids and title_id:
+        title_bb, size = render_selected_bbox(root, {title_id}, 1200)
+        body_bb, _ = render_selected_bbox(root, axes_ids, 1200)
 
-    # Render transformed SVG and crop viewBox around all visible content.
+        if title_bb and body_bb and size:
+            iw, ih = size
+            tx0, ty0, tx1, ty1 = title_bb
+            bx0, by0, bx1, by1 = body_bb
+
+            gap_before = by0 - ty1
+            center_offset_before = ((bx0 + bx1) / 2.0) - (iw / 2.0)
+
+            title_h = max(1, ty1 - ty0)
+            target_gap = max(14, int(title_h * 0.75))
+
+            dx_px = -center_offset_before
+            # Keep centering correction bounded so intentionally asymmetric
+            # diagrams are not radically rearranged.
+            dx_px = max(-0.10 * iw, min(0.10 * iw, dx_px))
+            dy_px = -max(0, gap_before - target_gap)
+
+            sx = vb_w / iw
+            sy = vb_h / ih
+            dx_u = dx_px * sx
+            dy_u = dy_px * sy
+
+            if abs(dx_u) > 0.25 or abs(dy_u) > 0.25:
+                for group in axes_groups:
+                    append_translate(group, dx_u, dy_u)
+                classification = "reflow"
+
+                # Re-measure to verify the transformation stayed safe.
+                title_bb2, size2 = render_selected_bbox(root, {title_id}, 1200)
+                body_bb2, _ = render_selected_bbox(root, axes_ids, 1200)
+                if title_bb2 and body_bb2 and size2:
+                    iw2, ih2 = size2
+                    gap_after = body_bb2[1] - title_bb2[3]
+                    center_offset_after = ((body_bb2[0] + body_bb2[2]) / 2.0) - (iw2 / 2.0)
+
+                    # Collision guard: back the body down if rounding/rendering
+                    # made the measured gap smaller than half the target.
+                    min_safe_gap = max(8, target_gap // 2)
+                    if gap_after < min_safe_gap:
+                        correction_px = min_safe_gap - gap_after
+                        correction_u = correction_px * (vb_h / ih2)
+                        for group in axes_groups:
+                            append_translate(group, 0.0, correction_u)
+                        dy_u += correction_u
+                        body_bb3, _ = render_selected_bbox(root, axes_ids, 1200)
+                        if body_bb3:
+                            gap_after = body_bb3[1] - title_bb2[3]
+
+    # Crop the canvas around the final full composition. This removes the
+    # deleted production footer and excessive outer whitespace without
+    # changing internal geometry further.
     svg1 = ET.tostring(root, encoding="utf-8", xml_declaration=True)
     im1 = render_svg_bytes(svg1, 1400)
     mask1 = mask_from_image(im1)
     bb = bbox(mask1)
+
     if bb:
         x0, y0, x1, y1 = bb
-        ih, iw = mask1.shape
+        iw, ih = im1.size
         px = max(18, int((x1 - x0) * 0.03))
         py = max(16, int((y1 - y0) * 0.03))
-        x0 = max(0, x0 - px); x1 = min(iw, x1 + px)
-        y0 = max(0, y0 - py); y1 = min(ih, y1 + py)
-        sx = vb_w / iw; sy = vb_h / ih
+        x0 = max(0, x0 - px)
+        x1 = min(iw, x1 + px)
+        y0 = max(0, y0 - py)
+        y1 = min(ih, y1 + py)
+
+        sx = vb_w / iw
+        sy = vb_h / ih
         new_x = vb_x + x0 * sx
         new_y = vb_y + y0 * sy
         new_w = (x1 - x0) * sx
         new_h = (y1 - y0) * sy
+
         root.set("viewBox", f"{new_x:.6f} {new_y:.6f} {new_w:.6f} {new_h:.6f}")
         root.set("width", f"{new_w:.3f}pt")
         root.set("height", f"{new_h:.3f}pt")
@@ -201,7 +263,6 @@ def cleanup_one(svg_path: Path, png_path: Path):
     final_svg = ET.tostring(root, encoding="utf-8", xml_declaration=True)
     svg_path.write_bytes(final_svg)
 
-    # Regenerate synchronized PNG at 3600 px wide.
     cairosvg.svg2png(
         bytestring=final_svg,
         write_to=str(png_path),
@@ -217,6 +278,10 @@ def cleanup_one(svg_path: Path, png_path: Path):
         "subscript_tokens_converted": subs,
         "dx_svg": round(dx_u, 4),
         "dy_svg": round(dy_u, 4),
+        "title_body_gap_before_px": gap_before if gap_before is not None else "",
+        "title_body_gap_after_px": gap_after if gap_after is not None else "",
+        "body_center_offset_before_px": round(center_offset_before, 2) if center_offset_before is not None else "",
+        "body_center_offset_after_px": round(center_offset_after, 2) if center_offset_after is not None else "",
         "old_viewbox_w": round(vb_w, 4),
         "old_viewbox_h": round(vb_h, 4),
         "new_viewbox_w": round(new_w, 4),
@@ -243,8 +308,12 @@ def main():
         pngs = list(png_dir.glob(prefix + "*.png"))
         if len(svgs) != 1 or len(pngs) != 1:
             raise RuntimeError(f"{idx:04d}: expected exactly one SVG and PNG")
-        report.append(cleanup_one(svgs[0], pngs[0]))
-        print(f"processed {idx:04d}: {report[-1]['classification']}")
+        item = cleanup_one(svgs[0], pngs[0])
+        report.append(item)
+        print(
+            f"processed {idx:04d}: {item['classification']} "
+            f"gap {item['title_body_gap_before_px']} -> {item['title_body_gap_after_px']}"
+        )
 
     report_path = meta_dir / f"figure-cleanup-strict-{args.start:04d}-{args.end:04d}.csv"
     with report_path.open("w", newline="", encoding="utf-8-sig") as f:
