@@ -1,19 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1001.2pt" height="691.1069pt" viewBox="39.4 5.666 1001.2 691.1069" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1001.200pt" height="550.167pt" viewBox="39.400000 11.389453 1001.200000 550.166880" version="1.1">
  <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
     <dc:date>2026-10-10T02:39:32.765857</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
-     <cc:Agent>
+     <ns2:Agent>
       <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
-     </cc:Agent>
+     </ns2:Agent>
     </dc:creator>
-   </cc:Work>
+   </ns2:Work>
   </rdf:RDF>
  </metadata>
  <defs>
@@ -21,54 +19,21 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 720 
-L 1080 720 
-L 1080 0 
-L 0 0 
-z
-" style="fill: #ffffff"/>
+   <path d="M 0 720  L 1080 720  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1">
+  <g id="axes_1" transform="translate(-0.000000 -121.027175)">
    <g id="patch_2">
-    <path d="M 847.584 314.424 
-C 857.780529 314.424 867.560807 312.330161 874.770842 308.603626 
-C 881.980876 304.877091 886.032 299.822116 886.032 294.552 
-C 886.032 289.281884 881.980876 284.226909 874.770842 280.500374 
-C 867.560807 276.773839 857.780529 274.68 847.584 274.68 
-C 837.387471 274.68 827.607193 276.773839 820.397158 280.500374 
-C 813.187124 284.226909 809.136 289.281884 809.136 294.552 
-C 809.136 299.822116 813.187124 304.877091 820.397158 308.603626 
-C 827.607193 312.330161 837.387471 314.424 847.584 314.424 
-z
-" clip-path="url(#p8d7806897b)" style="fill: #ffffff; stroke: #235a78; stroke-linejoin: miter"/>
+    <path d="M 847.584 314.424  C 857.780529 314.424 867.560807 312.330161 874.770842 308.603626  C 881.980876 304.877091 886.032 299.822116 886.032 294.552  C 886.032 289.281884 881.980876 284.226909 874.770842 280.500374  C 867.560807 276.773839 857.780529 274.68 847.584 274.68  C 837.387471 274.68 827.607193 276.773839 820.397158 280.500374  C 813.187124 284.226909 809.136 289.281884 809.136 294.552  C 809.136 299.822116 813.187124 304.877091 820.397158 308.603626  C 827.607193 312.330161 837.387471 314.424 847.584 314.424  z " clip-path="url(#p8d7806897b)" style="fill: #ffffff; stroke: #235a78; stroke-linejoin: miter" />
    </g>
    <g id="line2d_1">
-    <path d="M 59.4 294.552 
-L 270.864 294.552 
-L 270.864 408.816 
-L 520.776 408.816 
-L 520.776 294.552 
-L 1020.6 294.552 
-" clip-path="url(#p8d7806897b)" style="fill: none; stroke: #235a78; stroke-width: 2.3; stroke-linecap: square"/>
+    <path d="M 59.4 294.552  L 270.864 294.552  L 270.864 408.816  L 520.776 408.816  L 520.776 294.552  L 1020.6 294.552  " clip-path="url(#p8d7806897b)" style="fill: none; stroke: #235a78; stroke-width: 2.3; stroke-linecap: square" />
    </g>
    <g id="patch_3">
-    <path d="M 99.845318 294.552 
-Q 150.713871 294.552 199.681766 294.552 
-" clip-path="url(#p8d7806897b)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
-    <path d="M 193.681766 291.552 
-L 199.681766 294.552 
-L 193.681766 297.552 
-z
-" clip-path="url(#p8d7806897b)" style="fill: #235a78; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 99.845318 294.552  Q 150.713871 294.552 199.681766 294.552  " clip-path="url(#p8d7806897b)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 193.681766 291.552  L 199.681766 294.552  L 193.681766 297.552  z " clip-path="url(#p8d7806897b)" style="fill: #235a78; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round" />
    </g>
    <g id="patch_4">
-    <path d="M 655.344 309.456 
-L 713.016 279.648 
-L 713.016 309.456 
-L 655.344 279.648 
-L 655.344 309.456 
-z
-" clip-path="url(#p8d7806897b)" style="fill: none; stroke: #235a78; stroke-width: 1.4; stroke-linejoin: miter"/>
+    <path d="M 655.344 309.456  L 713.016 279.648  L 713.016 309.456  L 655.344 279.648  L 655.344 309.456  z " clip-path="url(#p8d7806897b)" style="fill: none; stroke: #235a78; stroke-width: 1.4; stroke-linejoin: miter" />
    </g>
    <g id="text_1">
     <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="847.584" y="298.691062" transform="rotate(-0 847.584 298.691062)">T</text>
@@ -89,8 +54,8 @@ z
     <text style="font-size: 19px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(854.949047 416.926289)">Exit K=1.0</text>
    </g>
    <g id="text_6">
-    <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(397.985156 556.722703)">h_L=[fL/D+ΣK]V²/(2g)</text>
-    <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(173.345156 592.486922)">f=0.020; L=100 m; D=0.20 m; V=2 m/s → h_L=2.956 m</text>
+    <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(397.985156 556.722703)"><tspan style="font-size: 26.000px">h</tspan><tspan style="font-size: 18.720px" dy="6.240px">L</tspan><tspan style="font-size: 26.000px" dy="-6.240px">​</tspan><tspan style="font-size: 26.000px">=[fL/D+ΣK]V²/(2g)</tspan></text>
+    <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(173.345156 592.486922)"><tspan style="font-size: 26.000px">f=0.020; L=100 m; D=0.20 m; V=2 m/s → h</tspan><tspan style="font-size: 18.720px" dy="6.240px">L</tspan><tspan style="font-size: 26.000px" dy="-6.240px">​</tspan><tspan style="font-size: 26.000px">=2.956 m</tspan></text>
    </g>
   </g>
   <g id="text_7">
@@ -98,7 +63,7 @@ z
   </g>
   <g id="text_8">
 </g>
-  <g id="text_9">
+  <g id="text_9" transform="translate(0.000000 -134.381897)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(163.713281 650.281875)">Illustrative Darcy friction factor and hypothetical local K values, all referenced to the shown constant-pipe velocity. ΣK=4.5,distributed factor fL/D=10.</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(141.797656 662.999375)">Exit/entrance represent reservoir transitions outside the drawing. Actual K depends on fitting geometry/opening and local velocity; do not substitute a Fanning</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(474.498437 675.716875)">factor without conversion.</text>
@@ -106,7 +71,7 @@ z
  </g>
  <defs>
   <clipPath id="p8d7806897b">
-   <rect x="59.4" y="100.8" width="961.2" height="496.8"/>
+   <rect x="59.4" y="100.8" width="961.2" height="496.8" />
   </clipPath>
  </defs>
 </svg>

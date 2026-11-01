@@ -1,19 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="937.12pt" height="685.12pt" viewBox="35.44 6.64 937.12 685.12" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="937.120pt" height="495.106pt" viewBox="35.440000 13.330625 937.120000 495.106250" version="1.1">
  <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
     <dc:date>2026-10-09T14:22:55.807266</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
-     <cc:Agent>
+     <ns2:Agent>
       <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
-     </cc:Agent>
+     </ns2:Agent>
     </dc:creator>
-   </cc:Work>
+   </ns2:Work>
   </rdf:RDF>
  </metadata>
  <defs>
@@ -21,50 +19,29 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 720 
-L 1008 720 
-L 1008 0 
-L 0 0 
-z
-" style="fill: #ffffff"/>
+   <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1">
+  <g id="axes_1" transform="translate(-0.000000 -129.680639)">
    <g id="patch_2">
-    <path d="M 55.44 309.456 
-L 441.2016 309.456 
-L 441.2016 185.256 
-L 55.44 185.256 
-z
-" clip-path="url(#p3280faa296)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+    <path d="M 55.44 309.456  L 441.2016 309.456  L 441.2016 185.256  L 55.44 185.256  z " clip-path="url(#p3280faa296)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
    <g id="patch_3">
-    <path d="M 566.7984 309.456 
-L 952.56 309.456 
-L 952.56 185.256 
-L 566.7984 185.256 
-z
-" clip-path="url(#p3280faa296)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+    <path d="M 566.7984 309.456  L 952.56 309.456  L 952.56 185.256  L 566.7984 185.256  z " clip-path="url(#p3280faa296)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
    <g id="patch_4">
-    <path d="M 443.198546 247.356 
-Q 503.997016 247.356 562.894827 247.356 
-" clip-path="url(#p3280faa296)" style="fill: none; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round"/>
-    <path d="M 556.894827 244.356 
-L 562.894827 247.356 
-L 556.894827 250.356 
-z
-" clip-path="url(#p3280faa296)" style="fill: #b47722; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 443.198546 247.356  Q 503.997016 247.356 562.894827 247.356  " clip-path="url(#p3280faa296)" style="fill: none; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 556.894827 244.356  L 562.894827 247.356  L 556.894827 250.356  z " clip-path="url(#p3280faa296)" style="fill: #b47722; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round" />
    </g>
    <g id="text_1">
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(121.951972 237.883773)">REFERENCE T₀=298 K</text>
-    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(120.482128 268.881664)">ΔH_r(T₀)=−100 kJ/mol</text>
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(120.482128 268.881664)"><tspan style="font-size: 23.000px">ΔH</tspan><tspan style="font-size: 16.560px" dy="5.520px">r</tspan><tspan style="font-size: 23.000px" dy="-5.520px">​</tspan><tspan style="font-size: 23.000px">(T₀)=−100 kJ/mol</tspan></text>
    </g>
    <g id="text_2">
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(640.526622 237.883773)">OPERATING T=500 K</text>
-    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(625.479591 268.881664)">ΔH_r(T)=−95.96 kJ/mol</text>
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(625.479591 268.881664)"><tspan style="font-size: 23.000px">ΔH</tspan><tspan style="font-size: 16.560px" dy="5.520px">r</tspan><tspan style="font-size: 23.000px" dy="-5.520px">​</tspan><tspan style="font-size: 23.000px">(T)=−95.96 kJ/mol</tspan></text>
    </g>
    <g id="text_3">
-    <!-- $\Delta H_r(T)=\Delta H_r(T_0)+\int_{T_0}^{T}\Delta C_p\,dT$ -->
+    
     <g style="fill: #23313d" transform="translate(308.56 443.736)">
      <text>
       <tspan x="0" y="-0.871875" style="font-size: 28px; font-family: 'DejaVu Sans'; fill: #23313d">Δ</tspan>
@@ -95,7 +72,7 @@ z
     </g>
    </g>
    <g id="text_4">
-    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(332.073203 538.447773)">ΔC_p=Σν_iC_pi=+20 J/(mol·K)</text>
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(332.073203 538.447773)"><tspan style="font-size: 23.000px">ΔC</tspan><tspan style="font-size: 16.560px" dy="5.520px">p</tspan><tspan style="font-size: 23.000px" dy="-5.520px">​</tspan><tspan style="font-size: 23.000px">=Σν</tspan><tspan style="font-size: 16.560px" dy="5.520px">iC</tspan><tspan style="font-size: 23.000px" dy="-5.520px">​</tspan><tspan style="font-size: 16.560px" dy="5.520px">pi</tspan><tspan style="font-size: 23.000px" dy="-5.520px">​</tspan><tspan style="font-size: 23.000px">=+20 J/(mol·K)</tspan></text>
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(240.694922 570.085352)">Correction=20(500−298)/1000=+4.04 kJ/mol</text>
    </g>
   </g>
@@ -104,14 +81,14 @@ z
   </g>
   <g id="text_6">
 </g>
-  <g id="text_7">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(107.935937 656.501562)">Hypothetical reaction with constant ΔC_p over the range and no phase transition. Reaction enthalpy uses products minus reactants at the same temperature.</text>
+  <g id="text_7" transform="translate(0.000000 -182.021619)">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(107.935937 656.501562)"><tspan style="font-size: 10.000px">Hypothetical reaction with constant ΔC</tspan><tspan style="font-size: 7.200px" dy="2.400px">p</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px"> over the range and no phase transition. Reaction enthalpy uses products minus reactants at the same temperature.</tspan></text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(165.271094 669.497187)">Temperature-dependent heat capacities should be integrated; latent heats must be included if reference paths cross phase transitions.</text>
   </g>
  </g>
  <defs>
   <clipPath id="p3280faa296">
-   <rect x="55.44" y="100.8" width="897.12" height="496.8"/>
+   <rect x="55.44" y="100.8" width="897.12" height="496.8" />
   </clipPath>
  </defs>
 </svg>

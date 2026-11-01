@@ -1,19 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="950.98pt" height="688.1261pt" viewBox="35.44 5.2189 950.98 688.1261" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="902.752pt" height="551.588pt" viewBox="35.440000 11.332557 902.751729 551.587752" version="1.1">
  <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
     <dc:date>2026-10-09T16:07:18.865136</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
-     <cc:Agent>
+     <ns2:Agent>
       <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
-     </cc:Agent>
+     </ns2:Agent>
     </dc:creator>
-   </cc:Work>
+   </ns2:Work>
   </rdf:RDF>
  </metadata>
  <defs>
@@ -21,14 +19,9 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 720 
-L 1008 720 
-L 1008 0 
-L 0 0 
-z
-" style="fill: #ffffff"/>
+   <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1">
+  <g id="axes_1" transform="translate(-51.907658 -67.385620)">
    <g id="text_1">
     <text style="font-size: 28px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="817.992" y="212.85425" transform="rotate(-0 817.992 212.85425)">Azimuth=035°</text>
    </g>
@@ -40,42 +33,21 @@ z
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(671.893562 561.948094)">Bearing from N/S toward E/W</text>
    </g>
   </g>
-  <g id="axes_2">
+  <g id="axes_2" transform="translate(-51.907658 -67.385620)">
    <g id="patch_2">
-    <path d="M 404.379115 250.870643 
-C 396.892109 245.628185 388.646829 241.562063 379.929906 238.813628 
-C 371.212984 236.065193 362.126614 234.666667 352.986667 234.666667 
-" clip-path="url(#p1d57524aa0)" style="fill: none; stroke: #b47722; stroke-width: 1.7; stroke-linejoin: miter"/>
+    <path d="M 404.379115 250.870643  C 396.892109 245.628185 388.646829 241.562063 379.929906 238.813628  C 371.212984 236.065193 362.126614 234.666667 352.986667 234.666667  " clip-path="url(#p1d57524aa0)" style="fill: none; stroke: #b47722; stroke-width: 1.7; stroke-linejoin: miter" />
    </g>
    <g id="patch_3">
-    <path d="M 352.986667 486.531258 
-Q 352.986667 320.532465 352.986667 156.43433 
-" clip-path="url(#p1d57524aa0)" style="fill: none; stroke: #23313d; stroke-width: 1.7; stroke-linecap: round"/>
-    <path d="M 349.986667 162.43433 
-L 352.986667 156.43433 
-L 355.986667 162.43433 
-z
-" clip-path="url(#p1d57524aa0)" style="fill: #23313d; stroke: #23313d; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 352.986667 486.531258  Q 352.986667 320.532465 352.986667 156.43433  " clip-path="url(#p1d57524aa0)" style="fill: none; stroke: #23313d; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 349.986667 162.43433  L 352.986667 156.43433  L 355.986667 162.43433  z " clip-path="url(#p1d57524aa0)" style="fill: #23313d; stroke: #23313d; stroke-width: 1.7; stroke-linecap: round" />
    </g>
    <g id="patch_4">
-    <path d="M 190.722075 324.266667 
-Q 356.720868 324.266667 520.819004 324.266667 
-" clip-path="url(#p1d57524aa0)" style="fill: none; stroke: #23313d; stroke-width: 1.7; stroke-linecap: round"/>
-    <path d="M 514.819004 321.266667 
-L 520.819004 324.266667 
-L 514.819004 327.266667 
-z
-" clip-path="url(#p1d57524aa0)" style="fill: #23313d; stroke: #23313d; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 190.722075 324.266667  Q 356.720868 324.266667 520.819004 324.266667  " clip-path="url(#p1d57524aa0)" style="fill: none; stroke: #23313d; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 514.819004 321.266667  L 520.819004 324.266667  L 514.819004 327.266667  z " clip-path="url(#p1d57524aa0)" style="fill: #23313d; stroke: #23313d; stroke-width: 1.7; stroke-linecap: round" />
    </g>
    <g id="patch_5">
-    <path d="M 354.135173 322.626429 
-Q 406.521779 247.810603 457.625828 174.826456 
-" clip-path="url(#p1d57524aa0)" style="fill: none; stroke: #235a78; stroke-width: 2; stroke-linecap: round"/>
-    <path d="M 451.726914 178.020639 
-L 457.625828 174.826456 
-L 456.641826 181.462098 
-z
-" clip-path="url(#p1d57524aa0)" style="fill: #235a78; stroke: #235a78; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 354.135173 322.626429  Q 406.521779 247.810603 457.625828 174.826456  " clip-path="url(#p1d57524aa0)" style="fill: none; stroke: #235a78; stroke-width: 2; stroke-linecap: round" />
+    <path d="M 451.726914 178.020639  L 457.625828 174.826456  L 456.641826 181.462098  z " clip-path="url(#p1d57524aa0)" style="fill: #235a78; stroke: #235a78; stroke-width: 2; stroke-linecap: round" />
    </g>
    <g id="text_4">
     <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="352.986667" y="139.190625" transform="rotate(-0 352.986667 139.190625)">N</text>
@@ -98,14 +70,14 @@ z
   </g>
   <g id="text_10">
 </g>
-  <g id="text_11">
+  <g id="text_11" transform="translate(0.000000 -129.221837)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(123.4375 656.640625)">Plan-view local grid, north upward and east right. Quadrant bearing angle is0–90°; azimuth is0–360° clockwise from north. Use a stated reference (grid,</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(242.532812 669.358125)">true or magnetic); this figure assumes grid north. The reverse line has azimuth215° and bearing S35°W.</text>
   </g>
  </g>
  <defs>
   <clipPath id="p1d57524aa0">
-   <rect x="143.92" y="115.2" width="448" height="403.2"/>
+   <rect x="143.92" y="115.2" width="448" height="403.2" />
   </clipPath>
  </defs>
 </svg>

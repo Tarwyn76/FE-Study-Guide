@@ -1,19 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="893.2pt" height="689.44pt" viewBox="36.16 6.64 893.2 689.44" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="879.164pt" height="456.013pt" viewBox="36.160000 13.655578 879.164000 456.012581" version="1.1">
  <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
     <dc:date>2026-10-09T14:23:02.504204</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
-     <cc:Agent>
+     <ns2:Agent>
       <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
-     </cc:Agent>
+     </ns2:Agent>
     </dc:creator>
-   </cc:Work>
+   </ns2:Work>
   </rdf:RDF>
  </metadata>
  <defs>
@@ -21,16 +19,11 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 720 
-L 1008 720 
-L 1008 0 
-L 0 0 
-z
-" style="fill: #ffffff"/>
+   <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1">
+  <g id="axes_1" transform="translate(2.233000 -147.418056)">
    <g id="text_1">
-    <!-- $1/K_G=1/k_G+H/k_L$ -->
+    
     <g style="fill: #23313d" transform="translate(366.515 407.434062)">
      <text>
       <tspan x="0" y="-0.453125" style="font-size: 31px; font-family: 'DejaVu Sans'; fill: #23313d">1</tspan>
@@ -51,7 +44,7 @@ z
     </g>
    </g>
    <g id="text_2">
-    <!-- $1/K_L=1/(Hk_G)+1/k_L;\quad p_A^*=HC_L$ -->
+    
     <g style="fill: #23313d" transform="translate(287.19 526.617)">
      <text>
       <tspan x="0" y="-0.63125" style="font-size: 27px; font-family: 'DejaVu Sans'; fill: #23313d">1</tspan>
@@ -83,45 +76,27 @@ z
     </g>
    </g>
   </g>
-  <g id="axes_2">
+  <g id="axes_2" transform="translate(2.233000 -147.418056)">
    <g id="line2d_1">
-    <path d="M 74.76 256.98 
-L 235.536 256.98 
-" clip-path="url(#p71c7782b76)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square"/>
+    <path d="M 74.76 256.98  L 235.536 256.98  " clip-path="url(#p71c7782b76)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square" />
    </g>
    <g id="line2d_2">
-    <path d="M 319.984 256.98 
-L 480.76 256.98 
-" clip-path="url(#p71c7782b76)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square"/>
+    <path d="M 319.984 256.98  L 480.76 256.98  " clip-path="url(#p71c7782b76)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square" />
    </g>
    <g id="line2d_3">
-    <path d="M 480.76 256.98 
-L 641.536 256.98 
-" clip-path="url(#p71c7782b76)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square"/>
+    <path d="M 480.76 256.98  L 641.536 256.98  " clip-path="url(#p71c7782b76)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square" />
    </g>
    <g id="line2d_4">
-    <path d="M 725.984 256.98 
-L 886.76 256.98 
-" clip-path="url(#p71c7782b76)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square"/>
+    <path d="M 725.984 256.98  L 886.76 256.98  " clip-path="url(#p71c7782b76)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square" />
    </g>
    <g id="patch_2">
-    <path d="M 235.536 269.972 
-L 319.984 269.972 
-L 319.984 243.988 
-L 235.536 243.988 
-z
-" clip-path="url(#p71c7782b76)" style="fill: #ffffff; stroke: #235a78; stroke-width: 1.8; stroke-linejoin: miter"/>
+    <path d="M 235.536 269.972  L 319.984 269.972  L 319.984 243.988  L 235.536 243.988  z " clip-path="url(#p71c7782b76)" style="fill: #ffffff; stroke: #235a78; stroke-width: 1.8; stroke-linejoin: miter" />
    </g>
    <g id="patch_3">
-    <path d="M 641.536 269.972 
-L 725.984 269.972 
-L 725.984 243.988 
-L 641.536 243.988 
-z
-" clip-path="url(#p71c7782b76)" style="fill: #ffffff; stroke: #235a78; stroke-width: 1.8; stroke-linejoin: miter"/>
+    <path d="M 641.536 269.972  L 725.984 269.972  L 725.984 243.988  L 641.536 243.988  z " clip-path="url(#p71c7782b76)" style="fill: #ffffff; stroke: #235a78; stroke-width: 1.8; stroke-linejoin: miter" />
    </g>
    <g id="text_3">
-    <!-- $1/k_G$ -->
+    
     <g style="fill: #235a78" transform="translate(262.85 216.183125)">
      <text>
       <tspan x="0" y="-0.359375" style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #235a78">1</tspan>
@@ -132,7 +107,7 @@ z
     </g>
    </g>
    <g id="text_4">
-    <!-- $H/k_L$ -->
+    
     <g style="fill: #235a78" transform="translate(669.13 216.183125)">
      <text>
       <tspan x="0" y="-0.359375" style="font-style: oblique; font-size: 14px; font-family: 'DejaVu Sans'; fill: #235a78">H</tspan>
@@ -148,15 +123,15 @@ z
   </g>
   <g id="text_6">
 </g>
-  <g id="text_7">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(147.338281 650.00375)">Henry convention p*=HC with pressure/concentration units, same coefficients as771. K_G=6.6667×10⁻⁶ mol/(m²·s·Pa),K_L=3.3333×10⁻⁴ m/s.</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(106.048437 662.999375)">N_A=K_G(200−50)=K_L(4−1)=0.001 mol/(m²·s). H converts liquid resistance to the gas pressure basis; do not add unconverted coefficients with incompatible</text>
+  <g id="text_7" transform="translate(0.000000 -224.105227)">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(147.338281 650.00375)"><tspan style="font-size: 10.000px">Henry convention p*=HC with pressure/concentration units, same coefficients as771. K</tspan><tspan style="font-size: 7.200px" dy="2.400px">G</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=6.6667×10⁻⁶ mol/(m²·s·Pa),K</tspan><tspan style="font-size: 7.200px" dy="2.400px">L</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=3.3333×10⁻⁴ m/s.</tspan></text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(106.048437 662.999375)"><tspan style="font-size: 10.000px">N</tspan><tspan style="font-size: 7.200px" dy="2.400px">A</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=K</tspan><tspan style="font-size: 7.200px" dy="2.400px">G</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">(200−50)=K</tspan><tspan style="font-size: 7.200px" dy="2.400px">L</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">(4−1)=0.001 mol/(m²·s). H converts liquid resistance to the gas pressure basis; do not add unconverted coefficients with incompatible</tspan></text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(490.119531 675.995)">units.</text>
   </g>
  </g>
  <defs>
   <clipPath id="p71c7782b76">
-   <rect x="50.4" y="151.42" width="876.96" height="186.76"/>
+   <rect x="50.4" y="151.42" width="876.96" height="186.76" />
   </clipPath>
  </defs>
 </svg>
