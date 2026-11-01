@@ -1,18 +1,17 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="859.75pt" height="671.5pt" viewBox="42.25 13 859.75 671.5" version="1.1">
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="859.750pt" height="519.138pt" viewBox="42.250000 13.000000 859.750000 519.137694" version="1.1">
  <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
     <dc:date>2026-10-09T15:06:53.790932</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
-     <cc:Agent>
+     <ns2:Agent>
       <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
-     </cc:Agent>
+     </ns2:Agent>
     </dc:creator>
-   </cc:Work>
+   </ns2:Work>
   </rdf:RDF>
  </metadata>
  <defs>
@@ -20,11 +19,11 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff"/>
+   <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1">
+  <g id="axes_1" transform="translate(-17.195000 -99.614194)">
    <g id="text_1">
-    <!-- $\mathcal{F}=NI\ [\mathrm{A\cdot turn}]$ -->
+    
     <g style="fill: #23313d" transform="translate(672.021 222.514312)">
      <text>
       <tspan x="0" y="-0.484375" style="font-style: italic; font-size: 27px; font-family: 'STIXNonUnicode'; fill: #23313d"></tspan>
@@ -43,7 +42,7 @@
     </g>
    </g>
    <g id="text_2">
-    <!-- $\mathcal{R}=\ell/(\mu A)$ -->
+    
     <g style="fill: #23313d" transform="translate(703.976 352.935719)">
      <text>
       <tspan x="0" y="-0.75" style="font-style: italic; font-size: 28px; font-family: 'STIXNonUnicode'; fill: #23313d"></tspan>
@@ -56,7 +55,7 @@
       <tspan x="108.021362" y="-0.75" style="font-style: oblique; font-size: 28px; font-family: 'DejaVu Sans'; fill: #23313d">A</tspan>
      </text>
     </g>
-    <!-- $\Phi=\mathcal{F}/\mathcal{R}$ -->
+    
     <g style="fill: #23313d" transform="translate(719.096 390.729156)">
      <text>
       <tspan x="0" y="-0.59375" style="font-size: 28px; font-family: 'DejaVu Sans'; fill: #23313d">Φ</tspan>
@@ -69,7 +68,7 @@
    </g>
    <g id="text_3">
     <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(663.285375 533.401687)">Electrical analogy:</text>
-    <!-- $V=IR\ \leftrightarrow\ \mathcal{F}=\Phi\mathcal{R}$ -->
+    
     <g style="fill: #23313d" transform="translate(673.536 565.747312)">
      <text>
       <tspan x="0" y="-0.5" style="font-style: oblique; font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d">V</tspan>
@@ -85,37 +84,37 @@
     </g>
    </g>
   </g>
-  <g id="axes_2">
+  <g id="axes_2" transform="translate(-17.195000 -99.614194)">
    <g id="patch_2">
-    <path d="M 114.36 433.2  L 445.56 433.2  L 445.56 157.2  L 114.36 157.2  z " clip-path="url(#p2acc96ed41)" style="fill: #c6d5dd; stroke: #23313d; stroke-linejoin: miter"/>
+    <path d="M 114.36 433.2  L 445.56 433.2  L 445.56 157.2  L 114.36 157.2  z " clip-path="url(#p2acc96ed41)" style="fill: #c6d5dd; stroke: #23313d; stroke-linejoin: miter" />
    </g>
    <g id="patch_3">
-    <path d="M 169.56 378  L 390.36 378  L 390.36 212.4  L 169.56 212.4  z " clip-path="url(#p2acc96ed41)" style="fill: #ffffff; stroke: #23313d; stroke-linejoin: miter"/>
+    <path d="M 169.56 378  L 390.36 378  L 390.36 212.4  L 169.56 212.4  z " clip-path="url(#p2acc96ed41)" style="fill: #ffffff; stroke: #23313d; stroke-linejoin: miter" />
    </g>
    <g id="line2d_1">
-    <path d="M 141.96 405.6  L 141.96 184.8  L 417.96 184.8  L 417.96 405.6  L 141.96 405.6  " clip-path="url(#p2acc96ed41)" style="fill: none; stroke: #b47722; stroke-width: 1.5; stroke-linecap: square"/>
+    <path d="M 141.96 405.6  L 141.96 184.8  L 417.96 184.8  L 417.96 405.6  L 141.96 405.6  " clip-path="url(#p2acc96ed41)" style="fill: none; stroke: #b47722; stroke-width: 1.5; stroke-linecap: square" />
    </g>
    <g id="line2d_2">
-    <path d="M 97.8 355.92  L 125.4 344.88  L 183.36 344.88  L 197.16 333.84  " clip-path="url(#p2acc96ed41)" style="fill: none; stroke: #a23b34; stroke-width: 2; stroke-linecap: square"/>
+    <path d="M 97.8 355.92  L 125.4 344.88  L 183.36 344.88  L 197.16 333.84  " clip-path="url(#p2acc96ed41)" style="fill: none; stroke: #a23b34; stroke-width: 2; stroke-linecap: square" />
    </g>
    <g id="line2d_3">
-    <path d="M 97.8 331.632  L 125.4 320.592  L 183.36 320.592  L 197.16 309.552  " clip-path="url(#p2acc96ed41)" style="fill: none; stroke: #a23b34; stroke-width: 2; stroke-linecap: square"/>
+    <path d="M 97.8 331.632  L 125.4 320.592  L 183.36 320.592  L 197.16 309.552  " clip-path="url(#p2acc96ed41)" style="fill: none; stroke: #a23b34; stroke-width: 2; stroke-linecap: square" />
    </g>
    <g id="line2d_4">
-    <path d="M 97.8 307.344  L 125.4 296.304  L 183.36 296.304  L 197.16 285.264  " clip-path="url(#p2acc96ed41)" style="fill: none; stroke: #a23b34; stroke-width: 2; stroke-linecap: square"/>
+    <path d="M 97.8 307.344  L 125.4 296.304  L 183.36 296.304  L 197.16 285.264  " clip-path="url(#p2acc96ed41)" style="fill: none; stroke: #a23b34; stroke-width: 2; stroke-linecap: square" />
    </g>
    <g id="line2d_5">
-    <path d="M 97.8 283.056  L 125.4 272.016  L 183.36 272.016  L 197.16 260.976  " clip-path="url(#p2acc96ed41)" style="fill: none; stroke: #a23b34; stroke-width: 2; stroke-linecap: square"/>
+    <path d="M 97.8 283.056  L 125.4 272.016  L 183.36 272.016  L 197.16 260.976  " clip-path="url(#p2acc96ed41)" style="fill: none; stroke: #a23b34; stroke-width: 2; stroke-linecap: square" />
    </g>
    <g id="line2d_6">
-    <path d="M 97.8 258.768  L 125.4 247.728  L 183.36 247.728  L 197.16 236.688  " clip-path="url(#p2acc96ed41)" style="fill: none; stroke: #a23b34; stroke-width: 2; stroke-linecap: square"/>
+    <path d="M 97.8 258.768  L 125.4 247.728  L 183.36 247.728  L 197.16 236.688  " clip-path="url(#p2acc96ed41)" style="fill: none; stroke: #a23b34; stroke-width: 2; stroke-linecap: square" />
    </g>
    <g id="line2d_7">
-    <path d="M 97.8 234.48  L 125.4 223.44  L 183.36 223.44  L 197.16 212.4  " clip-path="url(#p2acc96ed41)" style="fill: none; stroke: #a23b34; stroke-width: 2; stroke-linecap: square"/>
+    <path d="M 97.8 234.48  L 125.4 223.44  L 183.36 223.44  L 197.16 212.4  " clip-path="url(#p2acc96ed41)" style="fill: none; stroke: #a23b34; stroke-width: 2; stroke-linecap: square" />
    </g>
    <g id="patch_4">
-    <path d="M 226.758743 184.8  Q 266.160699 184.8 303.661997 184.8  " clip-path="url(#p2acc96ed41)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
-    <path d="M 297.661997 181.8  L 303.661997 184.8  L 297.661997 187.8  z " clip-path="url(#p2acc96ed41)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 226.758743 184.8  Q 266.160699 184.8 303.661997 184.8  " clip-path="url(#p2acc96ed41)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 297.661997 181.8  L 303.661997 184.8  L 297.661997 187.8  z " clip-path="url(#p2acc96ed41)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round" />
    </g>
    <g id="text_4">
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #26776f" x="279.96" y="256.834687" transform="rotate(-0 279.96 256.834687)">Φ →</text>
@@ -130,14 +129,14 @@
   <g id="text_7">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">A magnetic circuit compares magnetomotive force to flux times reluctance</text>
   </g>
-  <g id="text_9">
+  <g id="text_9" transform="translate(0.000000 -158.379402)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(120.122656 656.640625)">Uniform linear core, negligible leakage and fringing, constant cross-section and no air gap. ℓ follows the mean magnetic path, not inner perimeter. Series</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(272.195312 669.358125)">air gaps add reluctance g/(µ₀A), often dominating the total. Diagram geometry is schematic.</text>
   </g>
  </g>
  <defs>
   <clipPath id="p2acc96ed41">
-   <rect x="81.24" y="129.6" width="391.92" height="331.2"/>
+   <rect x="81.24" y="129.6" width="391.92" height="331.2" />
   </clipPath>
  </defs>
 </svg>

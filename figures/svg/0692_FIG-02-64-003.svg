@@ -1,18 +1,17 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="885.75pt" height="671.5pt" viewBox="43.25 13 885.75 671.5" version="1.1">
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="857.912pt" height="546.820pt" viewBox="43.250000 13.000000 857.912143 546.819981" version="1.1">
  <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
     <dc:date>2026-10-09T15:06:53.363484</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
-     <cc:Agent>
+     <ns2:Agent>
       <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
-     </cc:Agent>
+     </ns2:Agent>
     </dc:creator>
-   </cc:Work>
+   </ns2:Work>
   </rdf:RDF>
  </metadata>
  <defs>
@@ -20,11 +19,11 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff"/>
+   <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1">
+  <g id="axes_1" transform="translate(-49.454375 -75.267033)">
    <g id="text_1">
-    <!-- $v_{ind}=-N\,d\Phi/dt$ -->
+    
     <g style="fill: #23313d" transform="translate(668.556 217.82225)">
      <text>
       <tspan x="0" y="-0.71875" style="font-style: oblique; font-size: 28px; font-family: 'DejaVu Sans'; fill: #23313d">v</tspan>
@@ -51,13 +50,13 @@
     <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(633.510375 565.747312)">⇒ positive induced emf</text>
    </g>
   </g>
-  <g id="axes_2">
+  <g id="axes_2" transform="translate(-49.454375 -75.267033)">
    <g id="patch_2">
-    <path d="M 297.36 450.3375  C 333.72929 450.3375 368.613885 435.887828 394.330856 410.170856  C 420.047828 384.453885 434.4975 349.56929 434.4975 313.2  C 434.4975 276.83071 420.047828 241.946115 394.330856 216.229144  C 368.613885 190.512172 333.72929 176.0625 297.36 176.0625  C 260.99071 176.0625 226.106115 190.512172 200.389144 216.229144  C 174.672172 241.946115 160.2225 276.83071 160.2225 313.2  C 160.2225 349.56929 174.672172 384.453885 200.389144 410.170856  C 226.106115 435.887828 260.99071 450.3375 297.36 450.3375  L 297.36 450.3375  z " clip-path="url(#p62cdc6794f)" style="fill: none; stroke: #b47722; stroke-width: 3; stroke-linejoin: miter"/>
+    <path d="M 297.36 450.3375  C 333.72929 450.3375 368.613885 435.887828 394.330856 410.170856  C 420.047828 384.453885 434.4975 349.56929 434.4975 313.2  C 434.4975 276.83071 420.047828 241.946115 394.330856 216.229144  C 368.613885 190.512172 333.72929 176.0625 297.36 176.0625  C 260.99071 176.0625 226.106115 190.512172 200.389144 216.229144  C 174.672172 241.946115 160.2225 276.83071 160.2225 313.2  C 160.2225 349.56929 174.672172 384.453885 200.389144 410.170856  C 226.106115 435.887828 260.99071 450.3375 297.36 450.3375  L 297.36 450.3375  z " clip-path="url(#p62cdc6794f)" style="fill: none; stroke: #b47722; stroke-width: 3; stroke-linejoin: miter" />
    </g>
    <g id="patch_3">
-    <path d="M 429.019308 281.515849  Q 421.379616 261.325235 414.531251 243.225984  " clip-path="url(#p62cdc6794f)" style="fill: none; stroke: #a23b34; stroke-width: 2; stroke-linecap: round"/>
-    <path d="M 413.848745 249.899378  L 414.531251 243.225984  L 419.460462 247.776026  z " clip-path="url(#p62cdc6794f)" style="fill: #a23b34; stroke: #a23b34; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 429.019308 281.515849  Q 421.379616 261.325235 414.531251 243.225984  " clip-path="url(#p62cdc6794f)" style="fill: none; stroke: #a23b34; stroke-width: 2; stroke-linecap: round" />
+    <path d="M 413.848745 249.899378  L 414.531251 243.225984  L 419.460462 247.776026  z " clip-path="url(#p62cdc6794f)" style="fill: #a23b34; stroke: #a23b34; stroke-width: 2; stroke-linecap: round" />
    </g>
    <g id="text_4">
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #235a78" x="231.7725" y="385.134063" transform="rotate(-0 231.7725 385.134063)">×</text>
@@ -96,14 +95,14 @@
   <g id="text_15">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Lenz’s law makes the induced current oppose the change in linked flux</text>
   </g>
-  <g id="text_17">
+  <g id="text_17" transform="translate(0.000000 -132.086264)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(134.261719 656.640625)">Closed resistive coil with N turns and increasing external field into the page. CCW induced current produces an outward induced field, opposing the</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(148.796094 669.358125)">increase of inward flux. Faraday emf is signed around the chosen positive loop, not an arbitrary terminal voltage without a winding reference.</text>
   </g>
  </g>
  <defs>
   <clipPath id="p62cdc6794f">
-   <rect x="106.56" y="122.4" width="381.6" height="381.6"/>
+   <rect x="106.56" y="122.4" width="381.6" height="381.6" />
   </clipPath>
  </defs>
 </svg>

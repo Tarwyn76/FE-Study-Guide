@@ -1,19 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1002.7429pt" height="689.0032pt" viewBox="40.1714 7.0096 1002.7429 689.0032" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1002.743pt" height="542.894pt" viewBox="40.171400 11.306917 1002.742900 542.894413" version="1.1">
  <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
     <dc:date>2026-10-09T14:01:32.549623</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
-     <cc:Agent>
+     <ns2:Agent>
       <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
-     </cc:Agent>
+     </ns2:Agent>
     </dc:creator>
-   </cc:Work>
+   </ns2:Work>
   </rdf:RDF>
  </metadata>
  <defs>
@@ -21,89 +19,36 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 720 
-L 1080 720 
-L 1080 0 
-L 0 0 
-z
-" style="fill: #ffffff"/>
+   <path d="M 0 720  L 1080 720  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1">
+  <g id="axes_1" transform="translate(-10.027429 -129.449086)">
    <g id="patch_2">
-    <path d="M 357.372 344.232 
-L 578.448 344.232 
-L 578.448 234.936 
-L 357.372 234.936 
-z
-" clip-path="url(#pe826002e65)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+    <path d="M 357.372 344.232  L 578.448 344.232  L 578.448 234.936  L 357.372 234.936  z " clip-path="url(#pe826002e65)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
    <g id="patch_3">
-    <path d="M 693.792 344.232 
-L 924.48 344.232 
-L 924.48 234.936 
-L 693.792 234.936 
-z
-" clip-path="url(#pe826002e65)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+    <path d="M 693.792 344.232  L 924.48 344.232  L 924.48 234.936  L 693.792 234.936  z " clip-path="url(#pe826002e65)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
    <g id="line2d_1">
-    <path d="M 809.136 344.232 
-L 809.136 458.496 
-L 261.252 458.496 
-L 261.252 289.584 
-" clip-path="url(#pe826002e65)" style="fill: none; stroke: #b47722; stroke-width: 1.8; stroke-linecap: square"/>
+    <path d="M 809.136 344.232  L 809.136 458.496  L 261.252 458.496  L 261.252 289.584  " clip-path="url(#pe826002e65)" style="fill: none; stroke: #b47722; stroke-width: 1.8; stroke-linecap: square" />
    </g>
    <g id="patch_4">
-    <path d="M 61.395998 289.584 
-Q 208.383653 289.584 353.47065 289.584 
-" clip-path="url(#pe826002e65)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
-    <path d="M 347.47065 286.584 
-L 353.47065 289.584 
-L 347.47065 292.584 
-z
-" clip-path="url(#pe826002e65)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 61.395998 289.584  Q 208.383653 289.584 353.47065 289.584  " clip-path="url(#pe826002e65)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 347.47065 286.584  L 353.47065 289.584  L 347.47065 292.584  z " clip-path="url(#pe826002e65)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round" />
    </g>
    <g id="patch_5">
-    <path d="M 580.450891 289.584 
-Q 636.120095 289.584 689.888641 289.584 
-" clip-path="url(#pe826002e65)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
-    <path d="M 683.888641 286.584 
-L 689.888641 289.584 
-L 683.888641 292.584 
-z
-" clip-path="url(#pe826002e65)" style="fill: #235a78; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 580.450891 289.584  Q 636.120095 289.584 689.888641 289.584  " clip-path="url(#pe826002e65)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 683.888641 286.584  L 689.888641 289.584  L 683.888641 292.584  z " clip-path="url(#pe826002e65)" style="fill: #235a78; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round" />
    </g>
    <g id="patch_6">
-    <path d="M 926.477611 289.584 
-Q 972.537779 289.584 1016.697288 289.584 
-" clip-path="url(#pe826002e65)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
-    <path d="M 1010.697288 286.584 
-L 1016.697288 289.584 
-L 1010.697288 292.584 
-z
-" clip-path="url(#pe826002e65)" style="fill: #235a78; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 926.477611 289.584  Q 972.537779 289.584 1016.697288 289.584  " clip-path="url(#pe826002e65)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 1010.697288 286.584  L 1016.697288 289.584  L 1010.697288 292.584  z " clip-path="url(#pe826002e65)" style="fill: #235a78; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round" />
    </g>
    <g id="patch_7">
-    <path d="M 653.345509 458.496 
-Q 568.837505 458.496 486.23016 458.496 
-" clip-path="url(#pe826002e65)" style="fill: none; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round"/>
-    <path d="M 492.23016 461.496 
-L 486.23016 458.496 
-L 492.23016 455.496 
-z
-" clip-path="url(#pe826002e65)" style="fill: #b47722; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 653.345509 458.496  Q 568.837505 458.496 486.23016 458.496  " clip-path="url(#pe826002e65)" style="fill: none; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 492.23016 461.496  L 486.23016 458.496  L 492.23016 455.496  z " clip-path="url(#pe826002e65)" style="fill: #b47722; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round" />
    </g>
    <g id="patch_8">
-    <path d="M 261.252 289.85724 
-C 261.392202 289.85724 261.526681 289.82845 261.625819 289.77721 
-C 261.724957 289.72597 261.78066 289.656464 261.78066 289.584 
-C 261.78066 289.511536 261.724957 289.44203 261.625819 289.39079 
-C 261.526681 289.33955 261.392202 289.31076 261.252 289.31076 
-C 261.111798 289.31076 260.977319 289.33955 260.878181 289.39079 
-C 260.779043 289.44203 260.72334 289.511536 260.72334 289.584 
-C 260.72334 289.656464 260.779043 289.72597 260.878181 289.77721 
-C 260.977319 289.82845 261.111798 289.85724 261.252 289.85724 
-z
-" clip-path="url(#pe826002e65)" style="fill: #23313d"/>
+    <path d="M 261.252 289.85724  C 261.392202 289.85724 261.526681 289.82845 261.625819 289.77721  C 261.724957 289.72597 261.78066 289.656464 261.78066 289.584  C 261.78066 289.511536 261.724957 289.44203 261.625819 289.39079  C 261.526681 289.33955 261.392202 289.31076 261.252 289.31076  C 261.111798 289.31076 260.977319 289.33955 260.878181 289.39079  C 260.779043 289.44203 260.72334 289.511536 260.72334 289.584  C 260.72334 289.656464 260.779043 289.72597 260.878181 289.77721  C 260.977319 289.82845 261.111798 289.85724 261.252 289.85724  z " clip-path="url(#pe826002e65)" style="fill: #23313d" />
    </g>
    <g id="text_1">
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="467.91" y="295.378687" transform="rotate(-0 467.91 295.378687)">REACTOR</text>
@@ -127,7 +72,7 @@ z
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #b47722" x="540" y="513.69475" transform="rotate(-0 540 513.69475)">Recycle A: 150 mol/s</text>
    </g>
    <g id="text_8">
-    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="540" y="588.722719" transform="rotate(-0 540 588.722719)">X_single=(250−150)/250=0.40; X_overall=(100−0)/100=1.00</text>
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="540" y="588.722719" transform="rotate(-0 540 588.722719)"><tspan style="font-size: 23.000px">X</tspan><tspan style="font-size: 16.560px" dy="5.520px">single</tspan><tspan style="font-size: 23.000px" dy="-5.520px">​</tspan><tspan style="font-size: 23.000px">=(250−150)/250=0.40; X</tspan><tspan style="font-size: 16.560px" dy="5.520px">overall</tspan><tspan style="font-size: 23.000px" dy="-5.520px">​</tspan><tspan style="font-size: 23.000px">=(100−0)/100=1.00</tspan></text>
    </g>
   </g>
   <g id="text_9">
@@ -135,7 +80,7 @@ z
   </g>
   <g id="text_10">
 </g>
-  <g id="text_11">
+  <g id="text_11" transform="translate(0.000000 -141.976417)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(121.955469 650.281875)">Reactant A converted to products in an ideal steady reactor; separator returns all unreacted A and removes reaction products. Numbers are A component molar rates,</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(125.915625 662.999375)">not total stream molar rates. A consumption is 100 mol/s in both unit and overall balances. Perfect recovery makes complete overall conversion possible in this ideal</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(522.841406 675.716875)">model.</text>
@@ -143,7 +88,7 @@ z
  </g>
  <defs>
   <clipPath id="pe826002e65">
-   <rect x="59.4" y="100.8" width="961.2" height="496.8"/>
+   <rect x="59.4" y="100.8" width="961.2" height="496.8" />
   </clipPath>
  </defs>
 </svg>

@@ -1,18 +1,17 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="873.25pt" height="671.5pt" viewBox="42.25 13 873.25 671.5" version="1.1">
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="872.626pt" height="494.429pt" viewBox="42.250000 13.000000 872.626250 494.428505" version="1.1">
  <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
     <dc:date>2026-10-09T15:05:56.542440</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
-     <cc:Agent>
+     <ns2:Agent>
       <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
-     </cc:Agent>
+     </ns2:Agent>
     </dc:creator>
-   </cc:Work>
+   </ns2:Work>
   </rdf:RDF>
  </metadata>
  <defs>
@@ -20,14 +19,14 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff"/>
+   <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1">
+  <g id="axes_1" transform="translate(-19.648125 -90.939870)">
    <g id="text_1">
     <text style="font-size: 27px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="755.1936" y="227.482312" transform="rotate(-0 755.1936 227.482312)">I=V/R=2 A</text>
    </g>
    <g id="text_2">
-    <!-- $P=VI=V^2/R=I^2R$ -->
+    
     <g style="fill: #23313d" transform="translate(637.6736 376.794812)">
      <text>
       <tspan x="0" y="-0.539062" style="font-style: oblique; font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d">P</tspan>
@@ -50,28 +49,28 @@
     <text style="font-size: 32px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="755.1936" y="536.878" transform="rotate(-0 755.1936 536.878)">P=24 W</text>
    </g>
   </g>
-  <g id="axes_2">
+  <g id="axes_2" transform="translate(-19.648125 -90.939870)">
    <g id="line2d_1">
-    <path d="M 188.833846 272.713846  L 188.833846 203.261538  L 241.449231 203.261538  " clip-path="url(#p4f7aa246cc)" style="fill: none; stroke: #23313d; stroke-width: 1.8; stroke-linecap: square"/>
+    <path d="M 188.833846 272.713846  L 188.833846 203.261538  L 241.449231 203.261538  " clip-path="url(#p4f7aa246cc)" style="fill: none; stroke: #23313d; stroke-width: 1.8; stroke-linecap: square" />
    </g>
    <g id="line2d_2">
-    <path d="M 241.449231 203.261538  L 293.012308 203.261538  " clip-path="url(#p4f7aa246cc)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square"/>
+    <path d="M 241.449231 203.261538  L 293.012308 203.261538  " clip-path="url(#p4f7aa246cc)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square" />
    </g>
    <g id="line2d_3">
-    <path d="M 347.732308 203.261538  L 399.295385 203.261538  " clip-path="url(#p4f7aa246cc)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square"/>
+    <path d="M 347.732308 203.261538  L 399.295385 203.261538  " clip-path="url(#p4f7aa246cc)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square" />
    </g>
    <g id="line2d_4">
-    <path d="M 399.295385 203.261538  L 451.910769 203.261538  L 451.910769 361.107692  L 188.833846 361.107692  L 188.833846 312.701538  " clip-path="url(#p4f7aa246cc)" style="fill: none; stroke: #23313d; stroke-width: 1.8; stroke-linecap: square"/>
+    <path d="M 399.295385 203.261538  L 451.910769 203.261538  L 451.910769 361.107692  L 188.833846 361.107692  L 188.833846 312.701538  " clip-path="url(#p4f7aa246cc)" style="fill: none; stroke: #23313d; stroke-width: 1.8; stroke-linecap: square" />
    </g>
    <g id="patch_2">
-    <path d="M 293.012308 211.68  L 347.732308 211.68  L 347.732308 194.843077  L 293.012308 194.843077  z " clip-path="url(#p4f7aa246cc)" style="fill: #ffffff; stroke: #235a78; stroke-width: 1.8; stroke-linejoin: miter"/>
+    <path d="M 293.012308 211.68  L 347.732308 211.68  L 347.732308 194.843077  L 293.012308 194.843077  z " clip-path="url(#p4f7aa246cc)" style="fill: #ffffff; stroke: #235a78; stroke-width: 1.8; stroke-linejoin: miter" />
    </g>
    <g id="patch_3">
-    <path d="M 188.833846 312.701538  C 194.136276 312.701538 199.222246 310.594861 202.97163 306.845477  C 206.721015 303.096092 208.827692 298.010122 208.827692 292.707692  C 208.827692 287.405262 206.721015 282.319292 202.97163 278.569908  C 199.222246 274.820524 194.136276 272.713846 188.833846 272.713846  C 183.531416 272.713846 178.445446 274.820524 174.696062 278.569908  C 170.946678 282.319292 168.84 287.405262 168.84 292.707692  C 168.84 298.010122 170.946678 303.096092 174.696062 306.845477  C 178.445446 310.594861 183.531416 312.701538 188.833846 312.701538  z " clip-path="url(#p4f7aa246cc)" style="fill: #ffffff; stroke: #235a78; stroke-width: 1.7; stroke-linejoin: miter"/>
+    <path d="M 188.833846 312.701538  C 194.136276 312.701538 199.222246 310.594861 202.97163 306.845477  C 206.721015 303.096092 208.827692 298.010122 208.827692 292.707692  C 208.827692 287.405262 206.721015 282.319292 202.97163 278.569908  C 199.222246 274.820524 194.136276 272.713846 188.833846 272.713846  C 183.531416 272.713846 178.445446 274.820524 174.696062 278.569908  C 170.946678 282.319292 168.84 287.405262 168.84 292.707692  C 168.84 298.010122 170.946678 303.096092 174.696062 306.845477  C 178.445446 310.594861 183.531416 312.701538 188.833846 312.701538  z " clip-path="url(#p4f7aa246cc)" style="fill: #ffffff; stroke: #235a78; stroke-width: 1.7; stroke-linejoin: miter" />
    </g>
    <g id="patch_4">
-    <path d="M 211.877162 174.323077  Q 233.554745 174.323077 253.33167 174.323077  " clip-path="url(#p4f7aa246cc)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
-    <path d="M 247.33167 171.323077  L 253.33167 174.323077  L 247.33167 177.323077  z " clip-path="url(#p4f7aa246cc)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 211.877162 174.323077  Q 233.554745 174.323077 253.33167 174.323077  " clip-path="url(#p4f7aa246cc)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 247.33167 171.323077  L 253.33167 174.323077  L 247.33167 177.323077  z " clip-path="url(#p4f7aa246cc)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round" />
    </g>
    <g id="text_4">
     <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #235a78" x="320.372308" y="178.186202" transform="rotate(-0 320.372308 178.186202)">R=6 Ω</text>
@@ -92,14 +91,14 @@
   <g id="text_9">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">A resistor absorbs the same DC power in three equivalent forms</text>
   </g>
-  <g id="text_11">
+  <g id="text_11" transform="translate(0.000000 -181.879740)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(111.100781 656.640625)">Steady ideal DC source and resistor; passive sign convention at the resistor gives absorbed power +24 W. Energy converted to heat over 5 s is W=Pt=120 J.</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(362.934375 669.358125)">Voltage in volts, current in amperes, resistance in ohms.</text>
   </g>
  </g>
  <defs>
   <clipPath id="p4f7aa246cc">
-   <rect x="120.433846" y="129.6" width="384.092308" height="273.6"/>
+   <rect x="120.433846" y="129.6" width="384.092308" height="273.6" />
   </clipPath>
  </defs>
 </svg>
