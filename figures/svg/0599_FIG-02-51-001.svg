@@ -1,18 +1,17 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="919.25pt" height="671.5pt" viewBox="43.25 13 919.25 671.5" version="1.1">
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="919.250pt" height="557.286pt" viewBox="43.250000 13.000000 919.250000 557.285924" version="1.1">
  <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
     <dc:date>2026-10-08T19:08:48.871938</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
-     <cc:Agent>
+     <ns2:Agent>
       <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
-     </cc:Agent>
+     </ns2:Agent>
     </dc:creator>
-   </cc:Work>
+   </ns2:Work>
   </rdf:RDF>
  </metadata>
  <defs>
@@ -20,24 +19,24 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff"/>
+   <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1">
+  <g id="axes_1" transform="translate(-0.000000 -54.363170)">
    <g id="patch_2">
-    <path d="M 297.6624 463.464  L 710.3376 463.464  L 710.3376 225  L 297.6624 225  z " clip-path="url(#pd645fac310)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+    <path d="M 297.6624 463.464  L 710.3376 463.464  L 710.3376 225  L 297.6624 225  z " clip-path="url(#pd645fac310)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
    <g id="patch_3">
-    <path d="M 279.72 473.4  L 728.28 473.4  L 728.28 215.064  L 279.72 215.064  L 279.72 473.4  z " clip-path="url(#pd645fac310)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #b47722; stroke-linejoin: miter"/>
+    <path d="M 279.72 473.4  L 728.28 473.4  L 728.28 215.064  L 279.72 215.064  L 279.72 473.4  z " clip-path="url(#pd645fac310)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #b47722; stroke-linejoin: miter" />
    </g>
    <g id="text_1">
     <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(386.638672 333.936102)">CONTROL VOLUME</text>
-    <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(380.099609 367.629461)">Stored energy E_CV</text>
+    <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(380.099609 367.629461)"><tspan style="font-size: 25.000px">Stored energy E</tspan><tspan style="font-size: 18.000px" dy="6.000px">CV</tspan><tspan style="font-size: 25.000px" dy="-6.000px">​</tspan></text>
    </g>
    <g id="text_2">
-    <text style="font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #26776f" x="82.3536" y="259.786594" transform="rotate(-0 82.3536 259.786594)">ṁ_in e_in</text>
+    <text style="font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #26776f" x="82.3536" y="259.786594" transform="rotate(-0 82.3536 259.786594)"><tspan style="font-size: 19.000px">ṁ</tspan><tspan style="font-size: 13.680px" dy="4.560px">in</tspan><tspan style="font-size: 19.000px" dy="-4.560px">​</tspan><tspan style="font-size: 19.000px"> e</tspan><tspan style="font-size: 13.680px" dy="4.560px">in</tspan><tspan style="font-size: 19.000px" dy="-4.560px">​</tspan></text>
    </g>
    <g id="text_3">
-    <text style="font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #26776f" x="764.1648" y="259.786594" transform="rotate(-0 764.1648 259.786594)">ṁ_out e_out</text>
+    <text style="font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #26776f" x="764.1648" y="259.786594" transform="rotate(-0 764.1648 259.786594)"><tspan style="font-size: 19.000px">ṁ</tspan><tspan style="font-size: 13.680px" dy="4.560px">out</tspan><tspan style="font-size: 19.000px" dy="-4.560px">​</tspan><tspan style="font-size: 19.000px"> e</tspan><tspan style="font-size: 13.680px" dy="4.560px">out</tspan><tspan style="font-size: 19.000px" dy="-4.560px">​</tspan></text>
    </g>
    <g id="text_4">
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #a23b34" x="450.1728" y="165.93475" transform="rotate(-0 450.1728 165.93475)">Q̇ in</text>
@@ -46,37 +45,37 @@
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #b47722" x="629.5968" y="165.656625" transform="rotate(-0 629.5968 165.656625)">Ẇ_s out</text>
    </g>
    <g id="text_6">
-    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(377.677891 523.22393)">e_stream=h+V²/2+gz</text>
-    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(241.361562 554.861508)">dE_CV/dt=Q̇−Ẇ_s+Σṁ_in e_in−Σṁ_out e_out</text>
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(377.677891 523.22393)"><tspan style="font-size: 23.000px">e</tspan><tspan style="font-size: 16.560px" dy="5.520px">stream</tspan><tspan style="font-size: 23.000px" dy="-5.520px">​</tspan><tspan style="font-size: 23.000px">=h+V²/2+gz</tspan></text>
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(241.361562 554.861508)"><tspan style="font-size: 23.000px">dE</tspan><tspan style="font-size: 16.560px" dy="5.520px">CV</tspan><tspan style="font-size: 23.000px" dy="-5.520px">​</tspan><tspan style="font-size: 23.000px">/dt=Q̇−Ẇ_s+Σṁ</tspan><tspan style="font-size: 16.560px" dy="5.520px">in</tspan><tspan style="font-size: 23.000px" dy="-5.520px">​</tspan><tspan style="font-size: 23.000px"> e</tspan><tspan style="font-size: 16.560px" dy="5.520px">in</tspan><tspan style="font-size: 23.000px" dy="-5.520px">​</tspan><tspan style="font-size: 23.000px">−Σṁ</tspan><tspan style="font-size: 16.560px" dy="5.520px">out</tspan><tspan style="font-size: 23.000px" dy="-5.520px">​</tspan><tspan style="font-size: 23.000px"> e</tspan><tspan style="font-size: 16.560px" dy="5.520px">out</tspan><tspan style="font-size: 23.000px" dy="-5.520px">​</tspan></text>
    </g>
    <g id="patch_4">
-    <path d="M 57.439547 344.232  Q 176.552122 344.232 293.764039 344.232  " clip-path="url(#pd645fac310)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
-    <path d="M 287.764039 341.232  L 293.764039 344.232  L 287.764039 347.232  z " clip-path="url(#pd645fac310)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 57.439547 344.232  Q 176.552122 344.232 293.764039 344.232  " clip-path="url(#pd645fac310)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 287.764039 341.232  L 293.764039 344.232  L 287.764039 347.232  z " clip-path="url(#pd645fac310)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round" />
    </g>
    <g id="patch_5">
-    <path d="M 712.337147 344.232  Q 831.449722 344.232 948.661639 344.232  " clip-path="url(#pd645fac310)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
-    <path d="M 942.661639 341.232  L 948.661639 344.232  L 942.661639 347.232  z " clip-path="url(#pd645fac310)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 712.337147 344.232  Q 831.449722 344.232 948.661639 344.232  " clip-path="url(#pd645fac310)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 942.661639 341.232  L 948.661639 344.232  L 942.661639 347.232  z " clip-path="url(#pd645fac310)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round" />
    </g>
    <g id="patch_6">
-    <path d="M 414.288 112.734086  Q 414.288 167.868339 414.288 221.101935  " clip-path="url(#pd645fac310)" style="fill: none; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
-    <path d="M 417.288 215.101935  L 414.288 221.101935  L 411.288 215.101935  z " clip-path="url(#pd645fac310)" style="fill: #a23b34; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 414.288 112.734086  Q 414.288 167.868339 414.288 221.101935  " clip-path="url(#pd645fac310)" style="fill: none; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 417.288 215.101935  L 414.288 221.101935  L 411.288 215.101935  z " clip-path="url(#pd645fac310)" style="fill: #a23b34; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round" />
    </g>
    <g id="patch_7">
-    <path d="M 593.712 223.001914  Q 593.712 167.867661 593.712 114.634065  " clip-path="url(#pd645fac310)" style="fill: none; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round"/>
-    <path d="M 590.712 120.634065  L 593.712 114.634065  L 596.712 120.634065  z " clip-path="url(#pd645fac310)" style="fill: #b47722; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 593.712 223.001914  Q 593.712 167.867661 593.712 114.634065  " clip-path="url(#pd645fac310)" style="fill: none; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 590.712 120.634065  L 593.712 114.634065  L 596.712 120.634065  z " clip-path="url(#pd645fac310)" style="fill: #b47722; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round" />
    </g>
   </g>
   <g id="text_7">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Open-system energy includes enthalpy and kinetic/potential energy carried by mass</text>
   </g>
-  <g id="text_9">
+  <g id="text_9" transform="translate(0.000000 -121.742873)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(133.190625 656.501562)">Fixed control volume; enthalpy already includes pressure flow work. h in J/kg is consistent with V²/2 and gz; divide those terms by 1000 when h is in</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(393.854688 669.219062)">kJ/kg. At steady stored energy, dE_CV/dt=0.</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(393.854688 669.219062)"><tspan style="font-size: 10.000px">kJ/kg. At steady stored energy, dE</tspan><tspan style="font-size: 7.200px" dy="2.400px">CV</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">/dt=0.</tspan></text>
   </g>
  </g>
  <defs>
   <clipPath id="pd645fac310">
-   <rect x="55.44" y="100.8" width="897.12" height="496.8"/>
+   <rect x="55.44" y="100.8" width="897.12" height="496.8" />
   </clipPath>
  </defs>
 </svg>

@@ -1,18 +1,17 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="751.500pt" height="609.750pt" viewBox="34.500 9.000 751.500 609.750" version="1.1">
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="751.500pt" height="422.424pt" viewBox="34.500000 10.610255 751.500000 422.423636" version="1.1">
  <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
     <dc:date>2026-10-08T19:03:21.775192</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
-     <cc:Agent>
+     <ns2:Agent>
       <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
-     </cc:Agent>
+     </ns2:Agent>
     </dc:creator>
-   </cc:Work>
+   </ns2:Work>
   </rdf:RDF>
  </metadata>
  <defs>
@@ -20,9 +19,9 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff"/>
+   <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1">
+  <g id="axes_1" transform="translate(-54.796875 -126.457392)">
    <g id="text_1">
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="639.6192" y="194.881088" transform="rotate(-0 639.6192 194.881088)">p₁A − p₂A − ρALg = ρALa</text>
    </g>
@@ -35,9 +34,9 @@
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(548.500528 495.926709)">p₁−p₂=21.62 kPa</text>
    </g>
   </g>
-  <g id="axes_2">
+  <g id="axes_2" transform="translate(-54.796875 -126.457392)">
    <g id="patch_2">
-    <path d="M 215.301176 409.510588  L 252.656471 409.510588  L 252.656471 191.604706  L 215.301176 191.604706  z " clip-path="url(#p4cbb501300)" style="fill: #dbe9ee; stroke: #235a78; stroke-linejoin: miter"/>
+    <path d="M 215.301176 409.510588  L 252.656471 409.510588  L 252.656471 191.604706  L 215.301176 191.604706  z " clip-path="url(#p4cbb501300)" style="fill: #dbe9ee; stroke: #235a78; stroke-linejoin: miter" />
    </g>
    <g id="text_4">
     <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #a23b34" x="308.689412" y="299.29864" transform="rotate(-0 308.689412 299.29864)">a↑</text>
@@ -52,34 +51,34 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #b47722" x="171.72" y="290.794544" transform="rotate(-0 171.72 290.794544)">L=Δz</text>
    </g>
    <g id="patch_3">
-    <path d="M 233.978824 401.284018  Q 233.978824 375.268794 233.978824 351.154228  " clip-path="url(#p4cbb501300)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
-    <path d="M 230.978824 357.154228  L 233.978824 351.154228  L 236.978824 357.154228  z " clip-path="url(#p4cbb501300)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 233.978824 401.284018  Q 233.978824 375.268794 233.978824 351.154228  " clip-path="url(#p4cbb501300)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 230.978824 357.154228  L 233.978824 351.154228  L 236.978824 357.154228  z " clip-path="url(#p4cbb501300)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round" />
    </g>
    <g id="patch_4">
-    <path d="M 233.978824 199.831276  Q 233.978824 225.8465 233.978824 249.961066  " clip-path="url(#p4cbb501300)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
-    <path d="M 236.978824 243.961066  L 233.978824 249.961066  L 230.978824 243.961066  z " clip-path="url(#p4cbb501300)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 233.978824 199.831276  Q 233.978824 225.8465 233.978824 249.961066  " clip-path="url(#p4cbb501300)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 236.978824 243.961066  L 233.978824 249.961066  L 230.978824 243.961066  z " clip-path="url(#p4cbb501300)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round" />
    </g>
    <g id="patch_5">
-    <path d="M 296.237647 332.799312  Q 296.237647 294.331126 296.237647 257.763598  " clip-path="url(#p4cbb501300)" style="fill: none; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
-    <path d="M 293.237647 263.763598  L 296.237647 257.763598  L 299.237647 263.763598  z " clip-path="url(#p4cbb501300)" style="fill: #a23b34; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 296.237647 332.799312  Q 296.237647 294.331126 296.237647 257.763598  " clip-path="url(#p4cbb501300)" style="fill: none; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 293.237647 263.763598  L 296.237647 257.763598  L 299.237647 263.763598  z " clip-path="url(#p4cbb501300)" style="fill: #a23b34; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round" />
    </g>
    <g id="patch_6">
-    <path d="M 171.72 406.394241  Q 171.72 300.558368 171.72 194.722494  " clip-path="url(#p4cbb501300)" style="fill: none; stroke: #b47722; stroke-linecap: round"/>
-    <path d="M 174.72 400.394241  L 171.72 406.394241  L 168.72 400.394241  " clip-path="url(#p4cbb501300)" style="fill: none; stroke: #b47722; stroke-linecap: round"/>
-    <path d="M 168.72 200.722494  L 171.72 194.722494  L 174.72 200.722494  " clip-path="url(#p4cbb501300)" style="fill: none; stroke: #b47722; stroke-linecap: round"/>
+    <path d="M 171.72 406.394241  Q 171.72 300.558368 171.72 194.722494  " clip-path="url(#p4cbb501300)" style="fill: none; stroke: #b47722; stroke-linecap: round" />
+    <path d="M 174.72 400.394241  L 171.72 406.394241  L 168.72 400.394241  " clip-path="url(#p4cbb501300)" style="fill: none; stroke: #b47722; stroke-linecap: round" />
+    <path d="M 168.72 200.722494  L 171.72 194.722494  L 174.72 200.722494  " clip-path="url(#p4cbb501300)" style="fill: none; stroke: #b47722; stroke-linecap: round" />
    </g>
   </g>
   <g id="text_8">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">An accelerating liquid column needs an inertia term in its pressure balance</text>
   </g>
-  <g id="text_10">
+  <g id="text_10" transform="translate(0.000000 -188.434035)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(117.599219 590.616625)">Uniform vertical plug column of fixed length L, constant density, friction neglected. Acceleration is uniform along the column;</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(254.509375 603.334125)">convective acceleration is zero. This is not a steady Bernoulli example.</text>
   </g>
  </g>
  <defs>
   <clipPath id="p4cbb501300">
-   <rect x="97.009412" y="123.12" width="255.261176" height="317.52"/>
+   <rect x="97.009412" y="123.12" width="255.261176" height="317.52" />
   </clipPath>
  </defs>
 </svg>

@@ -1,18 +1,17 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="793pt" height="606.75pt" viewBox="35.5 10.5 793 606.75" version="1.1">
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="793.000pt" height="394.869pt" viewBox="35.500000 11.633053 793.000000 394.869048" version="1.1">
  <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
     <dc:date>2026-10-08T19:08:45.041643</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
-     <cc:Agent>
+     <ns2:Agent>
       <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
-     </cc:Agent>
+     </ns2:Agent>
     </dc:creator>
-   </cc:Work>
+   </ns2:Work>
   </rdf:RDF>
  </metadata>
  <defs>
@@ -20,27 +19,27 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff"/>
+   <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1">
+  <g id="axes_1" transform="translate(-0.000000 -131.528595)">
    <g id="patch_2">
-    <path d="M 47.52 336.636  L 278.208 336.636  L 278.208 184.6152  L 47.52 184.6152  z " clip-path="url(#pa9c92b2e71)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+    <path d="M 47.52 336.636  L 278.208 336.636  L 278.208 184.6152  L 47.52 184.6152  z " clip-path="url(#pa9c92b2e71)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
    <g id="patch_3">
-    <path d="M 324.3456 336.636  L 555.0336 336.636  L 555.0336 184.6152  L 324.3456 184.6152  z " clip-path="url(#pa9c92b2e71)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+    <path d="M 324.3456 336.636  L 555.0336 336.636  L 555.0336 184.6152  L 324.3456 184.6152  z " clip-path="url(#pa9c92b2e71)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
    <g id="patch_4">
-    <path d="M 608.8608 336.636  L 816.48 336.636  L 816.48 184.6152  L 608.8608 184.6152  z " clip-path="url(#pa9c92b2e71)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+    <path d="M 608.8608 336.636  L 816.48 336.636  L 816.48 184.6152  L 608.8608 184.6152  z " clip-path="url(#pa9c92b2e71)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
    <g id="text_1">
     <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(81.172125 234.234975)">Component A</text>
-    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(104.778375 266.5806)">x_A=0.70</text>
-    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(90.899625 299.593725)">p_A=70 kPa</text>
+    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(104.778375 266.5806)"><tspan style="font-size: 24.000px">x</tspan><tspan style="font-size: 17.280px" dy="5.760px">A</tspan><tspan style="font-size: 24.000px" dy="-5.760px">​</tspan><tspan style="font-size: 24.000px">=0.70</tspan></text>
+    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(90.899625 299.593725)"><tspan style="font-size: 24.000px">p</tspan><tspan style="font-size: 17.280px" dy="5.760px">A</tspan><tspan style="font-size: 24.000px" dy="-5.760px">​</tspan><tspan style="font-size: 24.000px">=70 kPa</tspan></text>
    </g>
    <g id="text_2">
     <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(357.97335 234.234975)">Component B</text>
-    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(381.5796 266.5806)">x_B=0.30</text>
-    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(367.70085 299.593725)">p_B=30 kPa</text>
+    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(381.5796 266.5806)"><tspan style="font-size: 24.000px">x</tspan><tspan style="font-size: 17.280px" dy="5.760px">B</tspan><tspan style="font-size: 24.000px" dy="-5.760px">​</tspan><tspan style="font-size: 24.000px">=0.30</tspan></text>
+    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(367.70085 299.593725)"><tspan style="font-size: 24.000px">p</tspan><tspan style="font-size: 17.280px" dy="5.760px">B</tspan><tspan style="font-size: 24.000px" dy="-5.760px">​</tspan><tspan style="font-size: 24.000px">=30 kPa</tspan></text>
    </g>
    <g id="text_3">
     <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(667.52415 251.075288)">Mixture</text>
@@ -53,20 +52,20 @@
     <text style="font-size: 30px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="578.1024" y="268.903725" transform="rotate(-0 578.1024 268.903725)">=</text>
    </g>
    <g id="text_6">
-    <text style="font-size: 30px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="469.690538" transform="rotate(-0 432 469.690538)">p_i=x_iP; Σx_i=1; P=Σp_i</text>
+    <text style="font-size: 30px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="469.690538" transform="rotate(-0 432 469.690538)"><tspan style="font-size: 30.000px">p</tspan><tspan style="font-size: 21.600px" dy="7.200px">i</tspan><tspan style="font-size: 30.000px" dy="-7.200px">​</tspan><tspan style="font-size: 30.000px">=x</tspan><tspan style="font-size: 21.600px" dy="7.200px">iP</tspan><tspan style="font-size: 30.000px" dy="-7.200px">​</tspan><tspan style="font-size: 30.000px">; Σx</tspan><tspan style="font-size: 21.600px" dy="7.200px">i</tspan><tspan style="font-size: 30.000px" dy="-7.200px">​</tspan><tspan style="font-size: 30.000px">=1; P=Σp</tspan><tspan style="font-size: 21.600px" dy="7.200px">i</tspan><tspan style="font-size: 30.000px" dy="-7.200px">​</tspan></text>
    </g>
   </g>
   <g id="text_7">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Ideal-gas partial pressures add in proportion to mole fractions</text>
   </g>
-  <g id="text_9">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(110.841406 590.477562)">Dalton ideal-gas mixture at a common T and V. x_i=N_i/N is mole fraction here, not mass fraction or vapor quality. Mass-fraction</text>
+  <g id="text_9" transform="translate(0.000000 -215.468954)">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(110.841406 590.477562)"><tspan style="font-size: 10.000px">Dalton ideal-gas mixture at a common T and V. x</tspan><tspan style="font-size: 7.200px" dy="2.400px">i</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=N</tspan><tspan style="font-size: 7.200px" dy="2.400px">i</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">/N is mole fraction here, not mass fraction or vapor quality. Mass-fraction</tspan></text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(277.732813 603.473187)">weighting is used for mixture-specific energy/heat capacities.</text>
   </g>
  </g>
  <defs>
   <clipPath id="pa9c92b2e71">
-   <rect x="47.52" y="90.72" width="768.96" height="447.12"/>
+   <rect x="47.52" y="90.72" width="768.96" height="447.12" />
   </clipPath>
  </defs>
 </svg>

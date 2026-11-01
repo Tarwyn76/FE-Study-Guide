@@ -1,18 +1,17 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="795.000pt" height="609.750pt" viewBox="34.500 9.000 795.000 609.750" version="1.1">
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="795.000pt" height="439.997pt" viewBox="34.500000 10.703212 795.000000 439.996508" version="1.1">
  <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
     <dc:date>2026-10-08T12:21:45.684755</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
-     <cc:Agent>
+     <ns2:Agent>
       <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
-     </cc:Agent>
+     </ns2:Agent>
     </dc:creator>
-   </cc:Work>
+   </ns2:Work>
   </rdf:RDF>
  </metadata>
  <defs>
@@ -20,14 +19,14 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff"/>
+   <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1">
+  <g id="axes_1" transform="translate(-0.000000 -94.776359)">
    <g id="patch_2">
-    <path d="M 47.52 336.636  L 393.552 336.636  L 393.552 148.8456  L 47.52 148.8456  z " clip-path="url(#p0134a6b66e)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+    <path d="M 47.52 336.636  L 393.552 336.636  L 393.552 148.8456  L 47.52 148.8456  z " clip-path="url(#p0134a6b66e)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
    <g id="patch_3">
-    <path d="M 470.448 336.636  L 816.48 336.636  L 816.48 148.8456  L 470.448 148.8456  z " clip-path="url(#p0134a6b66e)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+    <path d="M 470.448 336.636  L 816.48 336.636  L 816.48 148.8456  L 470.448 148.8456  z " clip-path="url(#p0134a6b66e)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
    <g id="text_1">
     <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(154.879125 217.017675)">APPROACH</text>
@@ -40,7 +39,7 @@
     <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(584.714625 281.708925)">= 1.5 m/s</text>
    </g>
    <g id="text_3">
-    <!-- $e=\frac{v_2-v_1}{u_1-u_2}=\frac{1.5}{3}=0.50$ -->
+    
     <g style="fill: #23313d" transform="translate(277.5 474.5508)">
      <text>
       <tspan x="0" y="-0.251563" style="font-style: oblique; font-size: 30px; font-family: 'DejaVu Sans'; fill: #23313d">e</tspan>
@@ -66,26 +65,26 @@
       <tspan x="181.471289" y="-13.6875" style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d">.</tspan>
       <tspan x="188.146582" y="-13.6875" style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d">5</tspan>
      </text>
-     <rect x="55.283203" y="-6.892188" width="72.251074" height="1.875"/>
-     <rect x="168.110449" y="-6.892188" width="33.396973" height="1.875"/>
+     <rect x="55.283203" y="-6.892188" width="72.251074" height="1.875" />
+     <rect x="168.110449" y="-6.892188" width="33.396973" height="1.875" />
     </g>
    </g>
    <g id="patch_4">
-    <path d="M 395.556064 242.7408  Q 432.00326 242.7408 466.549797 242.7408  " clip-path="url(#p0134a6b66e)" style="fill: none; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round"/>
-    <path d="M 460.549797 239.7408  L 466.549797 242.7408  L 460.549797 245.7408  z " clip-path="url(#p0134a6b66e)" style="fill: #b47722; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 395.556064 242.7408  Q 432.00326 242.7408 466.549797 242.7408  " clip-path="url(#p0134a6b66e)" style="fill: none; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 460.549797 239.7408  L 466.549797 242.7408  L 460.549797 245.7408  z " clip-path="url(#p0134a6b66e)" style="fill: #b47722; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round" />
    </g>
   </g>
   <g id="text_4">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Restitution compares relative separation speed with relative approach speed</text>
   </g>
-  <g id="text_6">
+  <g id="text_6" transform="translate(0.000000 -171.657880)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(93.983594 590.616625)">Same collision as figure 491. Body 1 approaches body 2 from the left; speeds are signed along the common line of impact. Use normal</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(333.535937 603.334125)">relative components in general impact.</text>
   </g>
  </g>
  <defs>
   <clipPath id="p0134a6b66e">
-   <rect x="47.52" y="90.72" width="768.96" height="447.12"/>
+   <rect x="47.52" y="90.72" width="768.96" height="447.12" />
   </clipPath>
  </defs>
 </svg>

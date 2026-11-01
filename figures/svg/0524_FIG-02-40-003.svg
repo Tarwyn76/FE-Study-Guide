@@ -1,18 +1,17 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="801.000pt" height="609.750pt" viewBox="36.000 9.000 801.000 609.750" version="1.1">
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="755.801pt" height="422.135pt" viewBox="36.000000 10.715994 755.800714 422.134615" version="1.1">
  <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
     <dc:date>2026-10-09T04:25:56.825918</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
-     <cc:Agent>
+     <ns2:Agent>
       <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
-     </cc:Agent>
+     </ns2:Agent>
     </dc:creator>
-   </cc:Work>
+   </ns2:Work>
   </rdf:RDF>
  </metadata>
  <defs>
@@ -20,9 +19,9 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff"/>
+   <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1">
+  <g id="axes_1" transform="translate(-47.726250 -103.517251)">
    <g id="text_1">
     <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(613.615881 171.389547)">C=50 MPa</text>
     <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(518.318069 201.039703)">R=√(30²+30²)=42.426 MPa</text>
@@ -35,9 +34,9 @@
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="670.3776" y="476.29075" transform="rotate(-0 670.3776 476.29075)">Plane stress also has σ₃=0.</text>
    </g>
   </g>
-  <g id="axes_2">
+  <g id="axes_2" transform="translate(-47.726250 -103.517251)">
    <g id="patch_2">
-    <path d="M 218.293986 355.827645  L 313.707645 316.306014  L 274.186014 220.892355  L 178.772355 260.413986  z " clip-path="url(#p14b11a1167)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.5; stroke-linejoin: miter"/>
+    <path d="M 218.293986 355.827645  L 313.707645 316.306014  L 274.186014 220.892355  L 178.772355 260.413986  z " clip-path="url(#p14b11a1167)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.5; stroke-linejoin: miter" />
    </g>
    <g id="text_4">
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #235a78" x="351.195025" y="249.301205" transform="rotate(-0 351.195025 249.301205)">σx′</text>
@@ -52,33 +51,33 @@
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="246.24" y="442.866094" transform="rotate(-0 246.24 442.866094)">θp=22.5° CCW; τx′y′=0</text>
    </g>
    <g id="patch_3">
-    <path d="M 295.795673 267.833368  Q 314.22186 260.200992 330.892068 253.295965  " clip-path="url(#p14b11a1167)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
-    <path d="M 324.200741 252.820427  L 330.892068 253.295965  L 326.496841 258.363704  z " clip-path="url(#p14b11a1167)" style="fill: #235a78; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 295.795673 267.833368  Q 314.22186 260.200992 330.892068 253.295965  " clip-path="url(#p14b11a1167)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 324.200741 252.820427  L 330.892068 253.295965  L 326.496841 258.363704  z " clip-path="url(#p14b11a1167)" style="fill: #235a78; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round" />
    </g>
    <g id="patch_4">
-    <path d="M 196.684327 308.886632  Q 178.25814 316.519008 161.587932 323.424035  " clip-path="url(#p14b11a1167)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
-    <path d="M 168.279259 323.899573  L 161.587932 323.424035  L 165.983159 318.356296  z " clip-path="url(#p14b11a1167)" style="fill: #235a78; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 196.684327 308.886632  Q 178.25814 316.519008 161.587932 323.424035  " clip-path="url(#p14b11a1167)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 168.279259 323.899573  L 161.587932 323.424035  L 165.983159 318.356296  z " clip-path="url(#p14b11a1167)" style="fill: #235a78; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round" />
    </g>
    <g id="patch_5">
-    <path d="M 225.713368 238.804327  Q 218.080992 220.37814 211.175965 203.707932  " clip-path="url(#p14b11a1167)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
-    <path d="M 210.700427 210.399259  L 211.175965 203.707932  L 216.243704 208.103159  z " clip-path="url(#p14b11a1167)" style="fill: #235a78; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 225.713368 238.804327  Q 218.080992 220.37814 211.175965 203.707932  " clip-path="url(#p14b11a1167)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 210.700427 210.399259  L 211.175965 203.707932  L 216.243704 208.103159  z " clip-path="url(#p14b11a1167)" style="fill: #235a78; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round" />
    </g>
    <g id="patch_6">
-    <path d="M 266.766632 337.915673  Q 274.399008 356.34186 281.304035 373.012068  " clip-path="url(#p14b11a1167)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
-    <path d="M 281.779573 366.320741  L 281.304035 373.012068  L 276.236296 368.616841  z " clip-path="url(#p14b11a1167)" style="fill: #235a78; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 266.766632 337.915673  Q 274.399008 356.34186 281.304035 373.012068  " clip-path="url(#p14b11a1167)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 281.779573 366.320741  L 281.304035 373.012068  L 276.236296 368.616841  z " clip-path="url(#p14b11a1167)" style="fill: #235a78; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round" />
    </g>
   </g>
   <g id="text_8">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Principal orientations eliminate the in-plane shear stress</text>
   </g>
-  <g id="text_10">
+  <g id="text_10" transform="translate(0.000000 -189.002464)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(113.211719 590.616625)">This example has both in-plane principal stresses positive, so the full ordered stresses are σ₁&gt;σ₂&gt;σ₃=0. Principal directions are</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(403.252344 603.334125)">orthogonal.</text>
   </g>
  </g>
  <defs>
   <clipPath id="p14b11a1167">
-   <rect x="81" y="123.12" width="330.48" height="330.48"/>
+   <rect x="81" y="123.12" width="330.48" height="330.48" />
   </clipPath>
  </defs>
 </svg>
