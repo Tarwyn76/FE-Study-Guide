@@ -1,19 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1080pt" height="792pt" viewBox="0 0 1080 792" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1053.771pt" height="589.180pt" viewBox="13.114286 14.652386 1053.771429 589.180136" version="1.1">
  <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
     <dc:date>2026-10-10T09:02:00.910265</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
-     <cc:Agent>
+     <ns2:Agent>
       <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
-     </cc:Agent>
+     </ns2:Agent>
     </dc:creator>
-   </cc:Work>
+   </ns2:Work>
   </rdf:RDF>
  </metadata>
  <defs>
@@ -21,34 +19,19 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 792 
-L 1080 792 
-L 1080 0 
-L 0 0 
-z
-" style="fill: #ffffff"/>
+   <path d="M 0 792  L 1080 792  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1">
+  <g id="axes_1" transform="translate(-10.800000 -92.700000)">
    <g id="text_1">
     <text style="font-size: 24px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="540" y="625.7289" transform="rotate(-0 540 625.7289)">At equilibrium, drift balances diffusion; net current is zero</text>
    </g>
   </g>
-  <g id="axes_2">
+  <g id="axes_2" transform="translate(-10.800000 -92.700000)">
    <g id="patch_2">
-    <path d="M 54 407.3256 
-L 199.8 407.3256 
-L 199.8 265.8744 
-L 54 265.8744 
-z
-" clip-path="url(#p4d08dd25cd)" style="fill: #f1e5dd; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+    <path d="M 54 407.3256  L 199.8 407.3256  L 199.8 265.8744  L 54 265.8744  z " clip-path="url(#p4d08dd25cd)" style="fill: #f1e5dd; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
    <g id="patch_3">
-    <path d="M 199.8 407.3256 
-L 345.6 407.3256 
-L 345.6 265.8744 
-L 199.8 265.8744 
-z
-" clip-path="url(#p4d08dd25cd)" style="fill: #dfeaf1; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+    <path d="M 199.8 407.3256  L 345.6 407.3256  L 345.6 265.8744  L 199.8 265.8744  z " clip-path="url(#p4d08dd25cd)" style="fill: #dfeaf1; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
    <g id="text_2">
     <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="199.8" y="166.0622" transform="rotate(-0 199.8 166.0622)">1  SEPARATE REGIONS</text>
@@ -78,42 +61,20 @@ z
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #235a78" x="322.92" y="364.729087" transform="rotate(-0 322.92 364.729087)">−</text>
    </g>
   </g>
-  <g id="axes_3">
+  <g id="axes_3" transform="translate(-10.800000 -92.700000)">
    <g id="patch_4">
-    <path d="M 405 407.3256 
-L 550.8 407.3256 
-L 550.8 265.8744 
-L 405 265.8744 
-z
-" clip-path="url(#p7fbd0d141a)" style="fill: #f1e5dd; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+    <path d="M 405 407.3256  L 550.8 407.3256  L 550.8 265.8744  L 405 265.8744  z " clip-path="url(#p7fbd0d141a)" style="fill: #f1e5dd; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
    <g id="patch_5">
-    <path d="M 550.8 407.3256 
-L 696.6 407.3256 
-L 696.6 265.8744 
-L 550.8 265.8744 
-z
-" clip-path="url(#p7fbd0d141a)" style="fill: #dfeaf1; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+    <path d="M 550.8 407.3256  L 696.6 407.3256  L 696.6 265.8744  L 550.8 265.8744  z " clip-path="url(#p7fbd0d141a)" style="fill: #dfeaf1; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
    <g id="patch_6">
-    <path d="M 520.3986 224.928 
-Q 565.378804 224.928 608.458351 224.928 
-" clip-path="url(#p7fbd0d141a)" style="fill: none; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
-    <path d="M 602.458351 221.928 
-L 608.458351 224.928 
-L 602.458351 227.928 
-z
-" clip-path="url(#p7fbd0d141a)" style="fill: #a23b34; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 520.3986 224.928  Q 565.378804 224.928 608.458351 224.928  " clip-path="url(#p7fbd0d141a)" style="fill: none; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 602.458351 221.928  L 608.458351 224.928  L 602.458351 227.928  z " clip-path="url(#p7fbd0d141a)" style="fill: #a23b34; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round" />
    </g>
    <g id="patch_7">
-    <path d="M 610.3614 448.272 
-Q 565.381196 448.272 522.301649 448.272 
-" clip-path="url(#p7fbd0d141a)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
-    <path d="M 528.301649 451.272 
-L 522.301649 448.272 
-L 528.301649 445.272 
-z
-" clip-path="url(#p7fbd0d141a)" style="fill: #235a78; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 610.3614 448.272  Q 565.381196 448.272 522.301649 448.272  " clip-path="url(#p7fbd0d141a)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 528.301649 451.272  L 522.301649 448.272  L 528.301649 445.272  z " clip-path="url(#p7fbd0d141a)" style="fill: #235a78; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round" />
    </g>
    <g id="text_11">
     <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="550.8" y="166.0622" transform="rotate(-0 550.8 166.0622)">2  INITIAL DIFFUSION</text>
@@ -146,40 +107,19 @@ z
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="550.8" y="493.6334" transform="rotate(-0 550.8 493.6334)">holes →     ← electrons</text>
    </g>
   </g>
-  <g id="axes_4">
+  <g id="axes_4" transform="translate(-10.800000 -92.700000)">
    <g id="patch_8">
-    <path d="M 756 407.3256 
-L 901.8 407.3256 
-L 901.8 265.8744 
-L 756 265.8744 
-z
-" clip-path="url(#pcad8628aef)" style="fill: #f1e5dd; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+    <path d="M 756 407.3256  L 901.8 407.3256  L 901.8 265.8744  L 756 265.8744  z " clip-path="url(#pcad8628aef)" style="fill: #f1e5dd; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
    <g id="patch_9">
-    <path d="M 901.8 407.3256 
-L 1047.6 407.3256 
-L 1047.6 265.8744 
-L 901.8 265.8744 
-z
-" clip-path="url(#pcad8628aef)" style="fill: #dfeaf1; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+    <path d="M 901.8 407.3256  L 1047.6 407.3256  L 1047.6 265.8744  L 901.8 265.8744  z " clip-path="url(#pcad8628aef)" style="fill: #dfeaf1; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
    <g id="patch_10">
-    <path d="M 859.68 407.3256 
-L 943.92 407.3256 
-L 943.92 265.8744 
-L 859.68 265.8744 
-z
-" clip-path="url(#pcad8628aef)" style="fill: #eee6d6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter"/>
+    <path d="M 859.68 407.3256  L 943.92 407.3256  L 943.92 265.8744  L 859.68 265.8744  z " clip-path="url(#pcad8628aef)" style="fill: #eee6d6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
    <g id="patch_11">
-    <path d="M 951.637148 221.2056 
-Q 901.799272 221.2056 853.862054 221.2056 
-" clip-path="url(#pcad8628aef)" style="fill: none; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round"/>
-    <path d="M 859.862054 224.2056 
-L 853.862054 221.2056 
-L 859.862054 218.2056 
-z
-" clip-path="url(#pcad8628aef)" style="fill: #b47722; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 951.637148 221.2056  Q 901.799272 221.2056 853.862054 221.2056  " clip-path="url(#pcad8628aef)" style="fill: none; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 859.862054 224.2056  L 853.862054 221.2056  L 859.862054 218.2056  z " clip-path="url(#pcad8628aef)" style="fill: #b47722; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round" />
    </g>
    <g id="text_21">
     <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="901.8" y="166.0622" transform="rotate(-0 901.8 166.0622)">3  EQUILIBRIUM DEPLETION</text>
@@ -215,23 +155,20 @@ z
   <g id="text_31">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="43.56" transform="rotate(-0 59.4 43.56)">Diffusion exposes fixed ions and builds an electric field across the depletion region</text>
   </g>
-  <g id="text_32">
-   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="59.4" y="770.616" transform="rotate(-0 59.4 770.616)">0953  •  FIG-03-31-005</text>
-  </g>
-  <g id="text_33">
+  <g id="text_33" transform="translate(0.000000 -155.700000)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(152.782031 722.664625)">p region is left, n right. Holes initially diffuse p→n, electrons n→p. Uncovered acceptor ions on p side are negative; donor ions on n side positive, so built-in</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(139.596094 735.382125)">field points n→p. Depletion means reduced mobile carrier density, not absence of all charge. Panels are conceptual stages, not a simulated formation transient.</text>
   </g>
  </g>
  <defs>
   <clipPath id="p4d08dd25cd">
-   <rect x="37.8" y="150.48" width="324" height="372.24"/>
+   <rect x="37.8" y="150.48" width="324" height="372.24" />
   </clipPath>
   <clipPath id="p7fbd0d141a">
-   <rect x="388.8" y="150.48" width="324" height="372.24"/>
+   <rect x="388.8" y="150.48" width="324" height="372.24" />
   </clipPath>
   <clipPath id="pcad8628aef">
-   <rect x="739.8" y="150.48" width="324" height="372.24"/>
+   <rect x="739.8" y="150.48" width="324" height="372.24" />
   </clipPath>
  </defs>
 </svg>

@@ -1,19 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1008pt" height="720pt" viewBox="0 0 1008 720" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="923.040pt" height="585.360pt" viewBox="28.800000 10.800000 923.040000 585.360000" version="1.1">
  <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
     <dc:date>2026-10-10T09:02:09.526738</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
-     <cc:Agent>
+     <ns2:Agent>
       <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
-     </cc:Agent>
+     </ns2:Agent>
     </dc:creator>
-   </cc:Work>
+   </ns2:Work>
   </rdf:RDF>
  </metadata>
  <defs>
@@ -21,21 +19,16 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 720 
-L 1008 720 
-L 1008 0 
-L 0 0 
-z
-" style="fill: #ffffff"/>
+   <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1">
+  <g id="axes_1" transform="translate(-3.780000 -77.292882)">
    <g id="text_1">
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(708.949828 201.262055)">A_v=0.9750</text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(708.949828 201.262055)"><tspan style="font-size: 21.000px">A</tspan><tspan style="font-size: 15.120px" dy="5.040px">v</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">=0.9750</tspan></text>
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(672.46725 230.148539)">No phase inversion</text>
    </g>
    <g id="text_2">
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(688.038422 375.035414)">R_in≈103.59 kΩ</text>
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(693.175219 403.921898)">R_out≈24.96 Ω</text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(688.038422 375.035414)"><tspan style="font-size: 21.000px">R</tspan><tspan style="font-size: 15.120px" dy="5.040px">in</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">≈103.59 kΩ</tspan></text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(693.175219 403.921898)"><tspan style="font-size: 21.000px">R</tspan><tspan style="font-size: 15.120px" dy="5.040px">out</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">≈24.96 Ω</tspan></text>
    </g>
    <g id="text_3">
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(670.099828 525.412266)">Source follower has</text>
@@ -43,123 +36,81 @@ z
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(753.253266 582.017109)">role</text>
    </g>
   </g>
-  <g id="axes_2">
+  <g id="axes_2" transform="translate(-3.780000 -77.292882)">
    <g id="line2d_1">
-    <path d="M 256.44 322.56 
-L 256.44 260.64 
-" clip-path="url(#pd093444156)" style="fill: none; stroke: #235a78; stroke-width: 2; stroke-linecap: square"/>
+    <path d="M 256.44 322.56  L 256.44 260.64  " clip-path="url(#pd093444156)" style="fill: none; stroke: #235a78; stroke-width: 2; stroke-linecap: square" />
    </g>
    <g id="line2d_2">
-    <path d="M 256.44 274.572 
-L 289.98 250.32 
-L 289.98 227.1 
-" clip-path="url(#pd093444156)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square"/>
+    <path d="M 256.44 274.572  L 289.98 250.32  L 289.98 227.1  " clip-path="url(#pd093444156)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square" />
    </g>
    <g id="line2d_3">
-    <path d="M 256.44 308.628 
-L 289.98 332.88 
-L 289.98 356.1 
-" clip-path="url(#pd093444156)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square"/>
+    <path d="M 256.44 308.628  L 289.98 332.88  L 289.98 356.1  " clip-path="url(#pd093444156)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square" />
    </g>
    <g id="line2d_4">
-    <path d="M 204.84 291.6 
-L 256.44 291.6 
-" clip-path="url(#pd093444156)" style="fill: none; stroke: #23313d; stroke-width: 1.8; stroke-linecap: square"/>
+    <path d="M 204.84 291.6  L 256.44 291.6  " clip-path="url(#pd093444156)" style="fill: none; stroke: #23313d; stroke-width: 1.8; stroke-linecap: square" />
    </g>
    <g id="line2d_5">
-    <path d="M 289.98 227.1 
-L 289.98 162.6 
-" clip-path="url(#pd093444156)" style="fill: none; stroke: #23313d; stroke-width: 1.8; stroke-linecap: square"/>
+    <path d="M 289.98 227.1  L 289.98 162.6  " clip-path="url(#pd093444156)" style="fill: none; stroke: #23313d; stroke-width: 1.8; stroke-linecap: square" />
    </g>
    <g id="line2d_6">
-    <path d="M 127.44 291.6 
-L 204.84 291.6 
-" clip-path="url(#pd093444156)" style="fill: none; stroke: #23313d; stroke-width: 1.8; stroke-linecap: square"/>
+    <path d="M 127.44 291.6  L 204.84 291.6  " clip-path="url(#pd093444156)" style="fill: none; stroke: #23313d; stroke-width: 1.8; stroke-linecap: square" />
    </g>
    <g id="line2d_7">
-    <path d="M 289.98 356.1 
-L 385.44 356.1 
-" clip-path="url(#pd093444156)" style="fill: none; stroke: #23313d; stroke-width: 1.8; stroke-linecap: square"/>
+    <path d="M 289.98 356.1  L 385.44 356.1  " clip-path="url(#pd093444156)" style="fill: none; stroke: #23313d; stroke-width: 1.8; stroke-linecap: square" />
    </g>
    <g id="line2d_8">
-    <path d="M 385.44 356.1 
-L 385.44 366.8844 
-" clip-path="url(#pd093444156)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square"/>
+    <path d="M 385.44 356.1  L 385.44 366.8844  " clip-path="url(#pd093444156)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square" />
    </g>
    <g id="line2d_9">
-    <path d="M 385.44 394.3356 
-L 385.44 405.12 
-" clip-path="url(#pd093444156)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square"/>
+    <path d="M 385.44 394.3356  L 385.44 405.12  " clip-path="url(#pd093444156)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square" />
    </g>
    <g id="line2d_10">
-    <path d="M 385.44 405.12 
-L 385.44 415.44 
-" clip-path="url(#pd093444156)" style="fill: none; stroke: #23313d; stroke-width: 1.8; stroke-linecap: square"/>
+    <path d="M 385.44 405.12  L 385.44 415.44  " clip-path="url(#pd093444156)" style="fill: none; stroke: #23313d; stroke-width: 1.8; stroke-linecap: square" />
    </g>
    <g id="line2d_11">
-    <path d="M 367.38 415.44 
-L 403.5 415.44 
-" clip-path="url(#pd093444156)" style="fill: none; stroke: #23313d; stroke-width: 1.8; stroke-linecap: square"/>
+    <path d="M 367.38 415.44  L 403.5 415.44  " clip-path="url(#pd093444156)" style="fill: none; stroke: #23313d; stroke-width: 1.8; stroke-linecap: square" />
    </g>
    <g id="line2d_12">
-    <path d="M 373.572 421.632 
-L 397.308 421.632 
-" clip-path="url(#pd093444156)" style="fill: none; stroke: #23313d; stroke-width: 1.8; stroke-linecap: square"/>
+    <path d="M 373.572 421.632  L 397.308 421.632  " clip-path="url(#pd093444156)" style="fill: none; stroke: #23313d; stroke-width: 1.8; stroke-linecap: square" />
    </g>
    <g id="line2d_13">
-    <path d="M 380.28 427.824 
-L 390.6 427.824 
-" clip-path="url(#pd093444156)" style="fill: none; stroke: #23313d; stroke-width: 1.8; stroke-linecap: square"/>
+    <path d="M 380.28 427.824  L 390.6 427.824  " clip-path="url(#pd093444156)" style="fill: none; stroke: #23313d; stroke-width: 1.8; stroke-linecap: square" />
    </g>
    <g id="patch_2">
-    <path d="M 377.184 366.8844 
-L 377.184 394.3356 
-L 393.696 394.3356 
-L 393.696 366.8844 
-z
-" clip-path="url(#pd093444156)" style="fill: #ffffff; stroke: #235a78; stroke-width: 1.8; stroke-linejoin: miter"/>
+    <path d="M 377.184 366.8844  L 377.184 394.3356  L 393.696 394.3356  L 393.696 366.8844  z " clip-path="url(#pd093444156)" style="fill: #ffffff; stroke: #235a78; stroke-width: 1.8; stroke-linejoin: miter" />
    </g>
    <g id="patch_3">
-    <path d="M 269.413318 318.054952 
-Q 277.080386 323.592279 283.20663 328.016788 
-" clip-path="url(#pd093444156)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
-    <path d="M 280.099026 322.071807 
-L 283.20663 328.016788 
-L 276.586083 326.935883 
-z
-" clip-path="url(#pd093444156)" style="fill: #235a78; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 269.413318 318.054952  Q 277.080386 323.592279 283.20663 328.016788  " clip-path="url(#pd093444156)" style="fill: none; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 280.099026 322.071807  L 283.20663 328.016788  L 276.586083 326.935883  z " clip-path="url(#pd093444156)" style="fill: #235a78; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round" />
    </g>
    <g id="text_4">
     <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="305.46" y="295.463125" transform="rotate(-0 305.46 295.463125)">NPN</text>
    </g>
    <g id="text_5">
-    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="289.98" y="146.01125" transform="rotate(-0 289.98 146.01125)">V_CC</text>
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="289.98" y="146.01125" transform="rotate(-0 289.98 146.01125)"><tspan style="font-size: 16.000px">V</tspan><tspan style="font-size: 11.520px" dy="3.840px">CC</tspan><tspan style="font-size: 16.000px" dy="-3.840px">​</tspan></text>
    </g>
    <g id="text_6">
-    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="127.44" y="265.094531" transform="rotate(-0 127.44 265.094531)">v_in</text>
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="127.44" y="265.094531" transform="rotate(-0 127.44 265.094531)"><tspan style="font-size: 17.000px">v</tspan><tspan style="font-size: 12.240px" dy="4.080px">in</tspan><tspan style="font-size: 17.000px" dy="-4.080px">​</tspan></text>
    </g>
    <g id="text_7">
-    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #235a78" x="357.06" y="384.278437" transform="rotate(-0 357.06 384.278437)">R_E=1 kΩ</text>
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #235a78" x="357.06" y="384.278437" transform="rotate(-0 357.06 384.278437)"><tspan style="font-size: 14.000px">R</tspan><tspan style="font-size: 10.080px" dy="3.360px">E</tspan><tspan style="font-size: 14.000px" dy="-3.360px">​</tspan><tspan style="font-size: 14.000px">=1 kΩ</tspan></text>
    </g>
    <g id="text_8">
-    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="385.44" y="321.618125" transform="rotate(-0 385.44 321.618125)">v_out</text>
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="385.44" y="321.618125" transform="rotate(-0 385.44 321.618125)"><tspan style="font-size: 17.000px">v</tspan><tspan style="font-size: 12.240px" dy="4.080px">out</tspan><tspan style="font-size: 17.000px" dy="-4.080px">​</tspan></text>
    </g>
   </g>
   <g id="text_9">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">An emitter follower buffers voltage with high input resistance and lower output resistance</text>
   </g>
-  <g id="text_10">
-   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="55.44" y="700.56" transform="rotate(-0 55.44 700.56)">0971  •  FIG-03-34-002</text>
-  </g>
-  <g id="text_11">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(149.942187 649.99125)">BJT example uses I_CQ=1 mA,β=100,T=300 K, r_o neglected and ideal low-impedance base drive for output resistance. R_in=r_π+(β+1)R_E,</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(97.889062 663.074375)">R_out≈[r_π/(β+1)]||R_E. Gain approaches1 but DC emitter voltage differs from base by V_BE. A complete biased implementation needs suitable supply/headroom</text>
+  <g id="text_11" transform="translate(0.000000 -104.177363)">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(149.942187 649.99125)"><tspan style="font-size: 10.000px">BJT example uses I</tspan><tspan style="font-size: 7.200px" dy="2.400px">CQ</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=1 mA,β=100,T=300 K, r</tspan><tspan style="font-size: 7.200px" dy="2.400px">o</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px"> neglected and ideal low-impedance base drive for output resistance. R</tspan><tspan style="font-size: 7.200px" dy="2.400px">in</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=r_π+(β+1)R</tspan><tspan style="font-size: 7.200px" dy="2.400px">E</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">,</tspan></text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(97.889062 663.074375)"><tspan style="font-size: 10.000px">R</tspan><tspan style="font-size: 7.200px" dy="2.400px">out</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">≈[r_π/(β+1)]||R</tspan><tspan style="font-size: 7.200px" dy="2.400px">E</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">. Gain approaches1 but DC emitter voltage differs from base by V</tspan><tspan style="font-size: 7.200px" dy="2.400px">BE</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">. A complete biased implementation needs suitable supply/headroom</tspan></text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(350.757812 676.07)">and input-bias path; the sketch identifies the signal topology.</text>
   </g>
  </g>
  <defs>
   <clipPath id="pd093444156">
-   <rect x="101.64" y="136.8" width="361.2" height="309.6"/>
+   <rect x="101.64" y="136.8" width="361.2" height="309.6" />
   </clipPath>
  </defs>
 </svg>

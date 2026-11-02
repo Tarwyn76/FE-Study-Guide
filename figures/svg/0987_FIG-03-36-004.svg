@@ -1,19 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1008pt" height="720pt" viewBox="0 0 1008 720" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="929.520pt" height="540.000pt" viewBox="28.800000 11.520000 929.520000 540.000000" version="1.1">
  <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
     <dc:date>2026-10-10T09:09:33.541270</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
-     <cc:Agent>
+     <ns2:Agent>
       <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
-     </cc:Agent>
+     </ns2:Agent>
     </dc:creator>
-   </cc:Work>
+   </ns2:Work>
   </rdf:RDF>
  </metadata>
  <defs>
@@ -21,52 +19,34 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 720 
-L 1008 720 
-L 1008 0 
-L 0 0 
-z
-" style="fill: #ffffff"/>
+   <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1">
+  <g id="axes_1" transform="translate(-37.380000 -123.500583)">
    <g id="text_1">
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(696.475566 201.155414)">Q_before=8.819 kvar</text>
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(705.423534 230.041898)">Q_after=3.287 kvar</text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(696.475566 201.155414)"><tspan style="font-size: 21.000px">Q</tspan><tspan style="font-size: 15.120px" dy="5.040px">before</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">=8.819 kvar</tspan></text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(705.423534 230.041898)"><tspan style="font-size: 21.000px">Q</tspan><tspan style="font-size: 15.120px" dy="5.040px">after</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">=3.287 kvar</tspan></text>
    </g>
    <g id="text_2">
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(666.391425 361.176234)">Capacitor bank Q_C=5.532</text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(666.391425 361.176234)"><tspan style="font-size: 21.000px">Capacitor bank Q</tspan><tspan style="font-size: 15.120px" dy="5.040px">C</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">=5.532</tspan></text>
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(785.974941 390.062719)">kvar</text>
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(695.912831 418.365141)">Shunt at the load bus</text>
    </g>
    <g id="text_3">
-    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(690.630175 525.927812)">Source supplies Q_after</text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(690.630175 525.927812)"><tspan style="font-size: 20.000px">Source supplies Q</tspan><tspan style="font-size: 14.400px" dy="4.800px">after</tspan><tspan style="font-size: 20.000px" dy="-4.800px">​</tspan></text>
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(710.603613 553.43875)">Load still consumes</text>
-    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(763.969237 580.393437)">Q_before</text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(763.969237 580.393437)"><tspan style="font-size: 20.000px">Q</tspan><tspan style="font-size: 14.400px" dy="4.800px">before</tspan><tspan style="font-size: 20.000px" dy="-4.800px">​</tspan></text>
    </g>
   </g>
-  <g id="axes_2">
+  <g id="axes_2" transform="translate(-37.380000 -123.500583)">
    <g id="line2d_1">
-    <path d="M 149.170909 458.181818 
-L 463.352727 458.181818 
-L 463.352727 181.099499 
-L 149.170909 458.181818 
-" clip-path="url(#p47d159d37a)" style="fill: none; stroke: #235a78; stroke-width: 2; stroke-linecap: square"/>
+    <path d="M 149.170909 458.181818  L 463.352727 458.181818  L 463.352727 181.099499  L 149.170909 458.181818  " clip-path="url(#p47d159d37a)" style="fill: none; stroke: #235a78; stroke-width: 2; stroke-linecap: square" />
    </g>
    <g id="line2d_2">
-    <path d="M 149.170909 458.181818 
-L 463.352727 354.915248 
-L 463.352727 458.181818 
-" clip-path="url(#p47d159d37a)" style="fill: none; stroke: #26776f; stroke-width: 2; stroke-linecap: square"/>
+    <path d="M 149.170909 458.181818  L 463.352727 354.915248  L 463.352727 458.181818  " clip-path="url(#p47d159d37a)" style="fill: none; stroke: #26776f; stroke-width: 2; stroke-linecap: square" />
    </g>
    <g id="patch_2">
-    <path d="M 463.352727 183.101924 
-Q 463.352727 268.008421 463.352727 351.014262 
-" clip-path="url(#p47d159d37a)" style="fill: none; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round"/>
-    <path d="M 466.352727 345.014262 
-L 463.352727 351.014262 
-L 460.352727 345.014262 
-z
-" clip-path="url(#p47d159d37a)" style="fill: #b47722; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round"/>
+    <path d="M 463.352727 183.101924  Q 463.352727 268.008421 463.352727 351.014262  " clip-path="url(#p47d159d37a)" style="fill: none; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round" />
+    <path d="M 466.352727 345.014262  L 463.352727 351.014262  L 460.352727 345.014262  z " clip-path="url(#p47d159d37a)" style="fill: #b47722; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round" />
    </g>
    <g id="text_4">
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="306.261818" y="485.693295" transform="rotate(-0 306.261818 485.693295)">P=10 kW</text>
@@ -81,18 +61,15 @@ z
   <g id="text_7">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">A shunt capacitor reduces source reactive power while real load power remains unchanged</text>
   </g>
-  <g id="text_8">
-   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="55.44" y="700.56" transform="rotate(-0 55.44 700.56)">0987  •  FIG-03-36-004</text>
-  </g>
-  <g id="text_9">
+  <g id="text_9" transform="translate(0.000000 -147.024504)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(129.397656 650.142812)">Sinusoidal fixed10 kW inductive load at constant bus voltage, corrected from lagging0.75 to lagging0.95 displacement PF. Capacitor supplies positive</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(120.086719 662.860312)">magnitude Q_C locally (its passive complex Q is negative). Bank connection/voltage/frequency determine capacitance. Harmonics, resonance, switching,</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(120.086719 662.860312)"><tspan style="font-size: 10.000px">magnitude Q</tspan><tspan style="font-size: 7.200px" dy="2.400px">C</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px"> locally (its passive complex Q is negative). Bank connection/voltage/frequency determine capacitance. Harmonics, resonance, switching,</tspan></text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(324.186719 675.855937)">overcorrection at light load and actual ratings are outside this example.</text>
   </g>
  </g>
  <defs>
   <clipPath id="p47d159d37a">
-   <rect x="117.752727" y="144" width="439.854545" height="345.6"/>
+   <rect x="117.752727" y="144" width="439.854545" height="345.6" />
   </clipPath>
  </defs>
 </svg>

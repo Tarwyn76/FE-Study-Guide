@@ -1,19 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1008pt" height="720pt" viewBox="0 0 1008 720" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="956.160pt" height="524.160pt" viewBox="25.200000 12.240000 956.160000 524.160000" version="1.1">
  <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
     <dc:date>2026-10-10T09:02:05.090814</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
-     <cc:Agent>
+     <ns2:Agent>
       <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
-     </cc:Agent>
+     </ns2:Agent>
     </dc:creator>
-   </cc:Work>
+   </ns2:Work>
   </rdf:RDF>
  </metadata>
  <defs>
@@ -21,46 +19,29 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 720 
-L 1008 720 
-L 1008 0 
-L 0 0 
-z
-" style="fill: #ffffff"/>
+   <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1">
+  <g id="axes_1" transform="translate(5.040000 -72.252042)">
    <g id="text_1">
     <text style="font-size: 19px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(95.650769 426.095336)">Gate pulse initiates turn-on</text>
     <text style="font-size: 19px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(46.246316 451.702289)">Ordinary SCR gate does not turn it off</text>
    </g>
   </g>
-  <g id="axes_2">
+  <g id="axes_2" transform="translate(5.040000 -72.252042)">
    <g id="line2d_1">
-    <path d="M 134.64 240.48 
-L 190.8864 240.48 
-" clip-path="url(#p7e94cbe5d8)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square"/>
+    <path d="M 134.64 240.48  L 190.8864 240.48  " clip-path="url(#p7e94cbe5d8)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square" />
    </g>
    <g id="line2d_2">
-    <path d="M 212.76 240.48 
-L 268.56 240.48 
-" clip-path="url(#p7e94cbe5d8)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square"/>
+    <path d="M 212.76 240.48  L 268.56 240.48  " clip-path="url(#p7e94cbe5d8)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square" />
    </g>
    <g id="line2d_3">
-    <path d="M 212.76 254.7648 
-L 212.76 226.1952 
-" clip-path="url(#p7e94cbe5d8)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square"/>
+    <path d="M 212.76 254.7648  L 212.76 226.1952  " clip-path="url(#p7e94cbe5d8)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square" />
    </g>
    <g id="line2d_4">
-    <path d="M 212.76 249.408 
-L 226.152 267.264 
-" clip-path="url(#p7e94cbe5d8)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square"/>
+    <path d="M 212.76 249.408  L 226.152 267.264  " clip-path="url(#p7e94cbe5d8)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square" />
    </g>
    <g id="patch_2">
-    <path d="M 190.8864 252.0864 
-L 190.8864 228.8736 
-L 212.3136 240.48 
-z
-" clip-path="url(#p7e94cbe5d8)" style="fill: #ffffff; stroke: #235a78; stroke-width: 1.7; stroke-linejoin: miter"/>
+    <path d="M 190.8864 252.0864  L 190.8864 228.8736  L 212.3136 240.48  z " clip-path="url(#p7e94cbe5d8)" style="fill: #ffffff; stroke: #235a78; stroke-width: 1.7; stroke-linejoin: miter" />
    </g>
    <g id="text_2">
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="232.848" y="279.779187" transform="rotate(-0 232.848 279.779187)">G</text>
@@ -75,57 +56,35 @@ z
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="268.56" y="183.50275" transform="rotate(-0 268.56 183.50275)">K</text>
    </g>
   </g>
-  <g id="axes_3">
+  <g id="axes_3" transform="translate(5.040000 -72.252042)">
    <g id="patch_3">
-    <path d="M 453.6 504 
-L 937.44 504 
-L 937.44 129.6 
-L 453.6 129.6 
-z
-" style="fill: #ffffff"/>
+    <path d="M 453.6 504  L 937.44 504  L 937.44 129.6  L 453.6 129.6  z " style="fill: #ffffff" />
    </g>
    <g id="matplotlib.axis_1">
     <g id="text_6">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="695.52" y="516.358281" transform="rotate(-0 695.52 516.358281)">v_AK (schematic)</text>
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="695.52" y="516.358281" transform="rotate(-0 695.52 516.358281)"><tspan style="font-size: 11.000px">v</tspan><tspan style="font-size: 7.920px" dy="2.640px">AK</tspan><tspan style="font-size: 11.000px" dy="-2.640px">​</tspan><tspan style="font-size: 11.000px"> (schematic)</tspan></text>
     </g>
    </g>
    <g id="matplotlib.axis_2">
     <g id="text_7">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="447.006406" y="316.8" transform="rotate(-90 447.006406 316.8)">i_A (schematic)</text>
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="447.006406" y="316.8" transform="rotate(-90 447.006406 316.8)"><tspan style="font-size: 11.000px">i</tspan><tspan style="font-size: 7.920px" dy="2.640px">A</tspan><tspan style="font-size: 11.000px" dy="-2.640px">​</tspan><tspan style="font-size: 11.000px"> (schematic)</tspan></text>
     </g>
    </g>
    <g id="line2d_5">
-    <path d="M 475.592727 482.605714 
-L 512.247273 486.884571 
-L 695.52 482.605714 
-L 915.447273 477.257143 
-" clip-path="url(#p40cf6b657c)" style="fill: none; stroke: #235a78; stroke-width: 2; stroke-linecap: square"/>
+    <path d="M 475.592727 482.605714  L 512.247273 486.884571  L 695.52 482.605714  L 915.447273 477.257143  " clip-path="url(#p40cf6b657c)" style="fill: none; stroke: #235a78; stroke-width: 2; stroke-linecap: square" />
    </g>
    <g id="line2d_6">
-    <path d="M 915.447273 477.257143 
-L 893.454545 450.514286 
-L 746.836364 429.12 
-L 761.498182 161.691429 
-" clip-path="url(#p40cf6b657c)" style="fill: none; stroke: #a23b34; stroke-width: 2; stroke-linecap: square"/>
+    <path d="M 915.447273 477.257143  L 893.454545 450.514286  L 746.836364 429.12  L 761.498182 161.691429  " clip-path="url(#p40cf6b657c)" style="fill: none; stroke: #a23b34; stroke-width: 2; stroke-linecap: square" />
    </g>
    <g id="patch_4">
-    <path d="M 453.6 504 
-L 453.6 129.6 
-" style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linejoin: miter; stroke-linecap: square"/>
+    <path d="M 453.6 504  L 453.6 129.6  " style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linejoin: miter; stroke-linecap: square" />
    </g>
    <g id="patch_5">
-    <path d="M 453.6 504 
-L 937.44 504 
-" style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linejoin: miter; stroke-linecap: square"/>
+    <path d="M 453.6 504  L 937.44 504  " style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linejoin: miter; stroke-linecap: square" />
    </g>
    <g id="patch_6">
-    <path d="M 866.579891 328.632427 
-Q 840.150896 380.657442 814.228275 431.68567 
-" style="fill: none; stroke: #a23b34; stroke-linecap: round"/>
-    <path d="M 818.90147 428.227166 
-L 814.228275 431.68567 
-L 814.265389 425.872011 
-" style="fill: none; stroke: #a23b34; stroke-linecap: round"/>
+    <path d="M 866.579891 328.632427  Q 840.150896 380.657442 814.228275 431.68567  " style="fill: none; stroke: #a23b34; stroke-linecap: round" />
+    <path d="M 818.90147 428.227166  L 814.228275 431.68567  L 814.265389 425.872011  " style="fill: none; stroke: #a23b34; stroke-linecap: round" />
    </g>
    <g id="text_8">
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start" x="790.821818" y="322.148571" transform="rotate(-0 790.821818 322.148571)">Gate-triggered transition</text>
@@ -144,21 +103,18 @@ L 814.265389 425.872011
   <g id="text_12">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">An SCR can be gate-triggered into a latched state that persists above holding current</text>
   </g>
-  <g id="text_13">
-   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #59636c" x="55.44" y="700.56" transform="rotate(-0 55.44 700.56)">0961  •  FIG-03-32-006</text>
-  </g>
-  <g id="text_14">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(126.796094 650.00375)">Qualitative conventional SCR characteristic, not measured data; triggering lowers the forward turn-on threshold. Latching current I_L must be reached</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(137.003125 662.999375)">before removing gate drive; once latched, conduction persists until anode current falls below holding current I_H and recovery conditions are met.</text>
+  <g id="text_14" transform="translate(0.000000 -162.147025)">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(126.796094 650.00375)"><tspan style="font-size: 10.000px">Qualitative conventional SCR characteristic, not measured data; triggering lowers the forward turn-on threshold. Latching current I</tspan><tspan style="font-size: 7.200px" dy="2.400px">L</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px"> must be reached</tspan></text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(137.003125 662.999375)"><tspan style="font-size: 10.000px">before removing gate drive; once latched, conduction persists until anode current falls below holding current I</tspan><tspan style="font-size: 7.200px" dy="2.400px">H</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px"> and recovery conditions are met.</tspan></text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(300.482813 675.995)">Reverse/forward breakdown ratings and commutation behavior are not assigned.</text>
   </g>
  </g>
  <defs>
   <clipPath id="p7e94cbe5d8">
-   <rect x="90" y="151.2" width="223.2" height="223.2"/>
+   <rect x="90" y="151.2" width="223.2" height="223.2" />
   </clipPath>
   <clipPath id="p40cf6b657c">
-   <rect x="453.6" y="129.6" width="483.84" height="374.4"/>
+   <rect x="453.6" y="129.6" width="483.84" height="374.4" />
   </clipPath>
  </defs>
 </svg>
