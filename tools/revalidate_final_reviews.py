@@ -10,7 +10,7 @@ vf=importlib.util.module_from_spec(spec)
 spec.loader.exec_module(vf)
 
 rows=list(csv.DictReader((repo/"meta"/"figure-current-standards-validation.csv").open(encoding="utf-8-sig")))
-targets=[int(r["index"]) for r in rows if r["status"]=="REVIEW"]
+targets=[516]
 results=[]
 for idx in targets:
     svg=next((repo/"figures"/"svg").glob(f"{idx:04d}_*.svg"))
