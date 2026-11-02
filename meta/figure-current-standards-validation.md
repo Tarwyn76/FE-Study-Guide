@@ -2,8 +2,8 @@
 
 - Indexed range: 0000–1403
 - Canonical figures checked: 1404
-- PASS: 1363
-- REVIEW: 41
+- PASS: 1387
+- REVIEW: 17
 - FAIL: 0
 
 ## Failure categories
