@@ -25,3 +25,5 @@ with out.open("w",newline="",encoding="utf-8-sig") as f:
     w.writeheader(); w.writerows(results)
 print(f"TARGETS={len(results)} PASS={len(results)-len(fail)} NONPASS={len(fail)}")
 raise SystemExit(1 if fail else 0)
+
+# rerun after final six-figure edge clearance
