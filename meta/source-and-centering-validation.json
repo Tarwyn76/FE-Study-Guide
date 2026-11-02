@@ -1,0 +1,24 @@
+{
+  "repository": "Tarwyn76/FE-Study-Guide",
+  "branch": "main",
+  "source_commit": "ab8c3d6e9ce9726859da541567d07c858d418447",
+  "range": "0000-0431",
+  "pairs": 432,
+  "source_validation": "Production-source bytes matched pinned GitHub for all 0000-0431 except 0087; the Phase-1 corrected 0087 pair exactly matches the pinned GitHub pair.",
+  "cleanup": "Prior vertical reflow/subscript/footer cleanup retained; manual horizontal-centering override applied to 0320 only after visual-centroid review.",
+  "manual_centering_overrides": [
+    "0320_FIG-02-11-002"
+  ],
+  "visual_centroid_flags_reviewed": [
+    "0180",
+    "0320",
+    "0347",
+    "0398",
+    "0403",
+    "0407",
+    "0408",
+    "0410",
+    "0413"
+  ],
+  "other_flags_disposition": "Intentional asymmetric diagram-plus-explanation layouts; no crop applied."
+}

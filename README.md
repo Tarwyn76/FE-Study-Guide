@@ -1,13 +1,12 @@
-# FE figure cleanup — 0000–0431
+# FE Figure Cleanup — 1332–1403
 
 Extract this archive at the FE Supplemental Guide repository root.
 
-Replacement assets are already under:
+It contains canonical replacement assets under:
+
 - `figures/png/`
 - `figures/svg/`
 
-Audit material is under `meta/`.
+and audit records under `meta/`.
 
-This package uses the revised figure standard: no embedded production IDs, true typographic subscripts instead of underscore notation, tighter internal title/caption spacing, and a tightened final canvas. Canonical indexed filenames are preserved.
-
-The corrected 0087 / FIG-01-18-006 tank artwork is retained.
+This is the final forward cleanup range and uses the revised internal-reflow standard. It includes the current Batch-29 artwork for indices 1363 and 1400–1403.
