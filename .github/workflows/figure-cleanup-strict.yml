@@ -1,4 +1,4 @@
-name: Strict figure cleanup 0900-1049
+name: Strict figure cleanup 1050-1403
 
 on:
   push:
@@ -24,7 +24,7 @@ jobs:
       - name: Restore selected figure range from main
         run: |
           git fetch origin main
-          for n in $(seq 900 1049); do
+          for n in $(seq 1050 1403); do
             i=$(printf "%04d" "$n")
             git checkout origin/main -- figures/png/${i}_*.png figures/svg/${i}_*.svg
           done
@@ -39,9 +39,9 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install cairosvg pillow numpy
 
-      - name: Clean figures 0900-1049
+      - name: Clean figures 1050-1403
         run: |
-          python tools/cleanup_figures_strict.py --start 900 --end 1049
+          python tools/cleanup_figures_strict.py --start 1050 --end 1403
 
       - name: Commit regenerated figure assets
         run: |
@@ -52,5 +52,5 @@ jobs:
             echo "No figure changes produced."
             exit 0
           fi
-          git commit -m "Strict cleanup figures 0900-1049"
+          git commit -m "Strict cleanup figures 1050-1403"
           git push origin HEAD:figure-cleanup-strict
