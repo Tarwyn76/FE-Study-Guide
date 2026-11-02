@@ -278,3 +278,5 @@ def main():
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
+# final full-corpus revalidation after targeted edge padding
