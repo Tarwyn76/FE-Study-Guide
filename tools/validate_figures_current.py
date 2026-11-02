@@ -90,6 +90,34 @@ def png_info(path: Path):
         im.load()
         return im.size, im.mode
 
+def text_edge_contacts(root, sides):
+    import copy
+    keep = {Q("svg"), Q("g"), Q("text"), Q("tspan"), Q("defs"), Q("style")}
+    clone = copy.deepcopy(root)
+
+    def strip(el):
+        for child in list(el):
+            if child.tag not in keep:
+                el.remove(child)
+            else:
+                strip(child)
+
+    strip(clone)
+    data = ET.tostring(clone, encoding="utf-8", xml_declaration=True)
+    im = render_svg(data, 1200)
+    bb = mask_bbox(im)
+    if not bb:
+        return []
+    x0, y0, x1, y1 = bb
+    iw, ih = im.size
+    margins = {
+        "left": x0 / iw,
+        "right": (iw - x1) / iw,
+        "top": y0 / ih,
+        "bottom": (ih - y1) / ih,
+    }
+    return [s for s in sides if s in margins and margins[s] < 0.002]
+
 def validate_one(idx: int, svg_path: Path, png_path: Path):
     issues = []
     warnings = []
@@ -136,7 +164,9 @@ def validate_one(idx: int, svg_path: Path, png_path: Path):
         # titles intentionally retain full horizontal extent.
         edge = [k for k, v in margins.items() if v < 0.001]
         if edge:
-            warnings.append("edge_contact:" + "+".join(edge))
+            text_edge = text_edge_contacts(root, edge)
+            if text_edge:
+                warnings.append("text_edge_contact:" + "+".join(text_edge))
     else:
         issues.append("empty_or_unrenderable_svg")
 
