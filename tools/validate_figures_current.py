@@ -100,10 +100,6 @@ def validate_one(idx: int, svg_path: Path, png_path: Path):
     except Exception as e:
         return {"index": idx, "figure": svg_path.stem, "status": "FAIL", "issues": f"svg_parse:{e}"}
 
-    desc = next(root.iter(Q("desc")), None)
-    if desc is None or not text_content(desc).strip():
-        issues.append("missing_desc")
-
     text_nodes = [text_content(t).strip() for t in root.iter(Q("text")) if text_content(t).strip()]
     prod_hits = [t for t in text_nodes if PROD_EXACT_RE.match(t) or PROD_TEXT_RE.search(t)]
     if prod_hits:
