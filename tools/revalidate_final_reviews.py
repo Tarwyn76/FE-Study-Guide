@@ -27,3 +27,5 @@ print(f"TARGETS={len(results)} PASS={len(results)-len(fail)} NONPASS={len(fail)}
 raise SystemExit(1 if fail else 0)
 
 # rerun after final six-figure edge clearance
+
+# verify balanced 0516 repair
