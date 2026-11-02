@@ -29,3 +29,5 @@ raise SystemExit(1 if fail else 0)
 # rerun after final six-figure edge clearance
 
 # verify balanced 0516 repair
+
+# verify 8-percent balanced 0516 repair
