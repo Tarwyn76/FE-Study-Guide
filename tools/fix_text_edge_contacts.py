@@ -17,9 +17,9 @@ def parse_vb(root):
 
 def main():
     repo=Path(__file__).resolve().parents[1]
-    diag=repo/"meta"/"figure-edge-contact-diagnostic.csv"
+    diag=repo/"meta"/"figure-current-standards-validation.csv"
     rows=list(csv.DictReader(diag.open(encoding="utf-8-sig")))
-    targets=[r for r in rows if r["classification"]=="TEXT_EDGE"]
+    targets=[r for r in rows if r["status"]=="REVIEW" and "text_edge_contact:" in (r.get("warnings") or "")]
     report=[]
     for r in targets:
         idx=int(r["index"])
@@ -27,8 +27,9 @@ def main():
         png=next((repo/"figures"/"png").glob(f"{idx:04d}_*.png"))
         root=ET.fromstring(svg.read_bytes())
         x,y,w,h=parse_vb(root)
-        pad=w*0.03
-        sides=set(filter(None,r["text_edge_sides"].split("+")))
+        pad=w*0.04
+        warning=(r.get("warnings") or "")
+        sides=set(filter(None,warning.replace("text_edge_contact:","").split("+")))
         old=(x,y,w,h)
         if "left" in sides:
             x-=pad
@@ -47,7 +48,7 @@ def main():
             "sides":"+".join(sorted(sides)),
             "old_viewbox":" ".join(f"{v:.6f}" for v in old),
             "new_viewbox":f"{x:.6f} {y:.6f} {w:.6f} {h:.6f}",
-            "horizontal_pad_pct_per_side":3.0,
+            "horizontal_pad_pct_per_side":4.0,
         })
         print(f"padded {idx:04d} {sides}")
     out=repo/"meta"/"figure-text-edge-padding-fixes.csv"
