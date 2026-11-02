@@ -1,0 +1,63 @@
+name: Repair figure 0516 balanced edge clearance
+
+on:
+  push:
+    branches:
+      - figure-cleanup-strict
+    paths:
+      - .github/workflows/repair-0516-balanced.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: figure-cleanup-strict
+          fetch-depth: 0
+
+      - name: Restore pre-edge-padding cleaned 0516
+        run: |
+          git checkout c6e149745f81a2aaa3b8662a2910553185971731 -- \
+            figures/svg/0516_FIG-02-39-002.svg \
+            figures/png/0516_FIG-02-39-002.png
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: python -m pip install cairosvg
+
+      - name: Add symmetric horizontal safety margin
+        run: |
+          python - <<'PY'
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+          import cairosvg
+
+          svg = Path("figures/svg/0516_FIG-02-39-002.svg")
+          png = Path("figures/png/0516_FIG-02-39-002.png")
+          root = ET.fromstring(svg.read_bytes())
+          x,y,w,h = [float(v) for v in root.get("viewBox").replace(","," ").split()]
+          pad = w * 0.04
+          x -= pad
+          w += 2*pad
+          root.set("viewBox", f"{x:.6f} {y:.6f} {w:.6f} {h:.6f}")
+          root.set("width", f"{w:.3f}pt")
+          root.set("height", f"{h:.3f}pt")
+          data = ET.tostring(root, encoding="utf-8", xml_declaration=True)
+          svg.write_bytes(data)
+          cairosvg.svg2png(bytestring=data, write_to=str(png), output_width=3600, background_color="#ffffff")
+          PY
+
+      - name: Commit repaired figure
+        run: |
+          git config user.name "ChatGPT Figure QA"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add figures/svg/0516_FIG-02-39-002.svg figures/png/0516_FIG-02-39-002.png
+          git commit -m "Repair figure 0516 with balanced edge clearance"
+          git push origin HEAD:figure-cleanup-strict
