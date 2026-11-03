@@ -1,0 +1,57 @@
+name: Build and audit FE practice exams
+
+on:
+  push:
+    branches:
+      - exam-production
+    paths:
+      - tools/build_practice_exams.py
+      - .github/workflows/build-practice-exams.yml
+      - meta/exam-blueprints.yaml
+      - meta/ledger.yaml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: exam-production
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out exam-production
+        uses: actions/checkout@v4
+        with:
+          ref: exam-production
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: python -m pip install PyYAML
+
+      - name: Build all 14 practice exams
+        run: python tools/build_practice_exams.py
+
+      - name: Audit exams
+        run: python tools/technical_audit_exams.py . --outdir audit-results/exams
+
+      - name: Commit generated exams and audit reports
+        run: |
+          git config user.name "ChatGPT Exam QA"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add appendices/practice-exams audit-results/exams
+          if git diff --cached --quiet; then
+            echo "No exam changes produced."
+            exit 0
+          fi
+          git commit -m "Generate and audit 14 FE practice exams"
+          git fetch origin exam-production
+          git rebase origin/exam-production
+          git push origin HEAD:exam-production
