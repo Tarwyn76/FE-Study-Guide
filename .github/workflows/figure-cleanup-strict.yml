@@ -1,4 +1,4 @@
-name: Strict figure cleanup 1050-1403
+name: Full strict figure validation 0000-1403
 
 on:
   push:
@@ -12,45 +12,47 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: full-strict-figure-validation
+  cancel-in-progress: false
+
 jobs:
-  cleanup:
+  validate:
     runs-on: ubuntu-latest
     steps:
       - name: Check out cleanup branch
         uses: actions/checkout@v4
         with:
           ref: figure-cleanup-strict
+          fetch-depth: 0
 
-      - name: Restore selected figure range from main
+      - name: Restore all canonical figures from main
         run: |
           git fetch origin main
-          for n in $(seq 1050 1403); do
-            i=$(printf "%04d" "$n")
-            git checkout origin/main -- figures/png/${i}_*.png figures/svg/${i}_*.svg
-          done
+          git checkout origin/main -- figures/png figures/svg
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Install cleanup dependencies
+      - name: Install validation dependencies
         run: |
           python -m pip install --upgrade pip
           python -m pip install cairosvg pillow numpy
 
-      - name: Clean figures 1050-1403
+      - name: Run strict cleanup and validation for all figures
         run: |
-          python tools/cleanup_figures_strict.py --start 1050 --end 1403
+          python tools/cleanup_figures_strict.py --start 0 --end 1403
 
-      - name: Commit regenerated figure assets
+      - name: Commit regenerated canonical assets if needed
         run: |
           git config user.name "ChatGPT Figure QA"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add figures/png figures/svg meta
           if git diff --cached --quiet; then
-            echo "No figure changes produced."
+            echo "Full strict validation passed with no regenerated asset changes."
             exit 0
           fi
-          git commit -m "Strict cleanup figures 1050-1403"
+          git commit -m "Full strict validation figures 0000-1403"
           git push origin HEAD:figure-cleanup-strict
