@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="833.760pt" height="647.551pt" viewBox="14.811429 8.024942 833.760000 647.551052" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="811.200pt" height="633.963pt" viewBox="26.400000 91.680000 811.200000 633.963055" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 792  L 864 792  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -79.200000)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 38.88 554.6772  L 400.5504 554.6772  L 400.5504 680.6052  L 38.88 680.6052  z " clip-path="url(#p25ca311bcd)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -39,11 +39,11 @@
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(555.34105 611.270575)">Upper variance bound</text>
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(536.32855 632.834325)">(n−1)s² / small χ² endpoint</text>
    </g>
-   <g id="text_4">
+   <g id="text_4" transform="translate(0.000000 -15.547317)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="714.846575" transform="rotate(-0 432 714.846575)">Exact for a normal population. Large denominator → lower bound; small denominator → upper bound.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-0.000000 -79.200000)">
+  <g id="axes_2">
    <g id="patch_4">
     <path d="M 103.68 380.16  L 760.32 380.16  L 760.32 150.48  L 103.68 150.48  z " style="fill: #ffffff" />
    </g>
@@ -100,7 +100,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="432" y="144.48" transform="rotate(-0 432 144.48)">Central 95%, ν = 9</text>
    </g>
   </g>
-  <g id="text_9">
+  <g id="text_9" transform="translate(0 79.261)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="39.6" transform="rotate(-0 38.88 39.6)">Variance intervals invert unequal chi-square endpoints</text>
   </g>
   </g>

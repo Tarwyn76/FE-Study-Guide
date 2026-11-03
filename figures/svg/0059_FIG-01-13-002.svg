@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="854.126pt" height="463.640pt" viewBox="4.937143 1.852090 854.125714 463.639871" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="830.400pt" height="405.177pt" viewBox="5.280000 74.259692 830.400000 405.176615" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,12 +21,12 @@
   <g id="patch_1">
    <path d="M 0 576  L 864 576  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(11.520000 -70.560000)">
-   <g id="text_1">
+  <g id="axes_1">
+   <g id="text_1" transform="translate(0.000000 -60.174350)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="520.640975" transform="rotate(-0 432 520.640975)">R = A + B: same resultant, independent of the construction.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(11.520000 -70.560000)">
+  <g id="axes_2">
    <g id="patch_2">
     <path d="M 51.84 414.4  L 397.44 414.4  L 397.44 132.8  L 51.84 132.8  z " style="fill: #ffffff" />
    </g>
@@ -272,7 +272,7 @@
     <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle" x="224.64" y="126.8" transform="rotate(-0 224.64 126.8)">Tip to tail</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(11.520000 -70.560000)">
+  <g id="axes_3">
    <g id="patch_8">
     <path d="M 475.2 414.4  L 820.8 414.4  L 820.8 132.8  L 475.2 132.8  z " style="fill: #ffffff" />
    </g>
@@ -515,7 +515,7 @@
     <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle" x="648" y="126.8" transform="rotate(-0 648 126.8)">Parallelogram</text>
    </g>
   </g>
-  <g id="text_44">
+  <g id="text_44" transform="translate(0 70.632)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="28.8" transform="rotate(-0 38.88 28.8)">Two equivalent constructions for vector addition</text>
   </g>
   </g>

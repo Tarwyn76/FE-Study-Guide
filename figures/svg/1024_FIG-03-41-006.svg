@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="928.800pt" height="483.840pt" viewBox="28.800000 13.680000 928.800000 483.840000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="907.200pt" height="454.137pt" viewBox="43.008000 131.588000 907.200000 454.137000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,13 +21,13 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-6.300000 -110.898483)">
+  <g id="axes_1" transform="translate(-13.986000 0.000000)">
    <g id="text_1">
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(249.860781 509.833437)">L=12,000 bits; R=100 Mbit/s →L/R=0.12 ms</text>
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(256.741016 539.083687)">d=200 km; vp=2×10⁸ m/s →d/vp=1.00 ms</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-6.300000 -110.898483)">
+  <g id="axes_2" transform="translate(-13.986000 0.000000)">
    <g id="patch_2">
     <path d="M 90.72 432  L 937.44 432  L 937.44 187.2  L 90.72 187.2  z " style="fill: #ffffff" />
    </g>
@@ -189,11 +189,13 @@
    </g>
   </g>
   <g id="text_16">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Packet delay includes processing, queueing, serialization, and propagation</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="154.984483" transform="rotate(-0 55.44 154.984483)">Packet delay includes processing, queueing, serialization, and propagation</text>
   </g>
-  <g id="text_18" transform="translate(0.000000 -194.912485)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 657.360625)">Timeline follows completion of the last bit at the receiver: propagation begins for the first bit during serialization, but last-bit delivery adds the full</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 670.078125)">propagation delay after serialization. Queue and processing times are assigned example values; queueing varies with traffic.</text>
+  <g id="text_17">
+   </g>
+  <g id="text_18">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 560.655172)">Timeline follows completion of the last bit at the receiver: propagation begins for the first bit during serialization, but last-bit delivery adds the full</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 573.372672)">propagation delay after serialization. Queue and processing times are assigned example values; queueing varies with traffic.</text>
   </g>
  </g>
  <defs>

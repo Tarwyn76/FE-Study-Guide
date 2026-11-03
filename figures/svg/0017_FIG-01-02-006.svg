@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="833.143pt" height="474.135pt" viewBox="15.428571 1.852090 833.142857 474.135048" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="811.200pt" height="384.231pt" viewBox="26.400000 64.238135 811.200000 384.230871" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 576  L 864 576  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -59.760000)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 38.88 105.7536  L 400.5504 105.7536  L 400.5504 412.56  L 38.88 412.56  z " clip-path="url(#pa0cb92c34e)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -92,11 +92,11 @@
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(580.291831 353.958095)">Converts lbm·ft/s² into lbf</text>
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(565.194956 367.435439)">Not a gravitational acceleration</text>
    </g>
-   <g id="text_7">
+   <g id="text_7" transform="translate(0.000000 -89.869185)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="520.640975" transform="rotate(-0 432 520.640975)">Same numerical value (32.174), different dimensions and different roles.</text>
    </g>
   </g>
-  <g id="text_8">
+  <g id="text_8" transform="translate(0 59.826)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="28.8" transform="rotate(-0 38.88 28.8)">Standard gravity and the force–mass conversion constant</text>
   </g>
   </g>

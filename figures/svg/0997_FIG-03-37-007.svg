@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1018.286pt" height="650.103pt" viewBox="30.857143 13.110029 1018.285714 650.103213" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="987.840pt" height="604.080pt" viewBox="46.080000 104.760000 987.840000 604.080000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 792  L 1080 792  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -81.900000)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 97.848 225.6408  L 424.656 225.6408  L 424.656 143.6688  L 97.848 143.6688  z " clip-path="url(#p83ba301f4c)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -60,7 +60,7 @@
     <path d="M 645.555686 359.2608  L 651.555686 362.2608  L 645.555686 365.2608  " clip-path="url(#p83ba301f4c)" style="fill: none; stroke: #b47722; stroke-width: 1.6; stroke-linecap: round" />
    </g>
    <g id="text_1">
-    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="261.252" y="190.419487" transform="rotate(-0 261.252 190.419487)"><tspan style="font-size: 22.000px">FREE CHARGE ρ</tspan><tspan style="font-size: 15.840px" dy="5.280px">f</tspan><tspan style="font-size: 22.000px" dy="-5.280px">​</tspan></text>
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="261.252" y="190.419487" transform="rotate(-0 261.252 190.419487)"><tspan font-size="22.000px">FREE CHARGE ρ</tspan><tspan font-size="14.960px" dy="5.280px">f</tspan></text>
    </g>
    <g id="text_2">
     <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="818.748" y="190.725425" transform="rotate(-0 818.748 190.725425)">CURRENT J</text>
@@ -138,12 +138,14 @@
    </g>
   </g>
   <g id="text_10">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="43.56" transform="rotate(-0 59.4 43.56)">Maxwell’s laws link charge, current, electric fields, and magnetic fields</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="131.742453" transform="rotate(-0 59.4 131.742453)">Maxwell’s laws link charge, current, electric fields, and magnetic fields</text>
   </g>
-  <g id="text_12" transform="translate(0.000000 -105.300000)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(128.491406 715.808063)"><tspan style="font-size: 10.000px">Macroscopic Maxwell equations with free-charge densityρ</tspan><tspan style="font-size: 7.200px" dy="2.400px">f</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px"> and free/conduction current densityJ; displacement-current term is explicit. Constitutive relations shown</tspan></text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(109.304688 729.521187)">assume homogeneous linear isotropic media; J=σE for ohmic conduction. Source-free lossless media support waves at v=1/√(με), with power flow E×H. Concept arrows are</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(282.907812 742.238687)">relationships, not a time-order causal simulation; boundary/initial conditions complete a field problem.</text>
+  <g id="text_11">
+   </g>
+  <g id="text_12">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(128.491 668.528302)"><tspan font-size="10.000px">Macroscopic Maxwell equations with free-charge densityρ</tspan><tspan font-size="6.800px" dy="2.400px">f</tspan><tspan font-size="10.000px" dy="-2.400px"> and free/conduction current densityJ; displacement-current term is explicit. Constitutive relations shown</tspan></text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(109.305 682.241426)">assume homogeneous linear isotropic media; J=σE for ohmic conduction. Source-free lossless media support waves at v=1/√(με), with power flow E×H. Concept arrows are</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(282.908 694.958926)">relationships, not a time-order causal simulation; boundary/initial conditions complete a field problem.</text>
   </g>
  </g>
  <defs>

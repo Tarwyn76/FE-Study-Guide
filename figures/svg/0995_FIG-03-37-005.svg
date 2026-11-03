@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="920.160pt" height="511.920pt" viewBox="28.800000 12.960000 920.160000 511.920000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="878.976pt" height="468.913pt" viewBox="43.008000 140.991000 878.976000 468.913000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(17.220000 -119.299883)">
+  <g id="axes_1" transform="translate(-2.563680 0.000000)">
    <g id="patch_2">
     <path d="M 190.008 473.4  L 620.6256 473.4  L 620.6256 205.128  L 190.008 205.128  z " clip-path="url(#p972c5ac569)" style="fill: #d8e1e6; stroke: #23313d; stroke-linejoin: miter" />
    </g>
@@ -71,7 +71,7 @@
    </g>
    <g id="text_2">
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(659.312719 191.511445)">ℓ=0.30 m; A=10⁻⁴ m²</text>
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(672.042328 219.813867)"><tspan style="font-size: 21.000px">μ</tspan><tspan style="font-size: 15.120px" dy="5.040px">r</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">=1,000; I=0.5 A</tspan></text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(672.042328 219.813867)"><tspan font-size="21.000px">μ</tspan><tspan font-size="14.280px" dy="5.040px">r</tspan><tspan font-size="21.000px" dy="-5.040px">=1,000; I=0.5 A</tspan></text>
    </g>
    <g id="text_3">
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(725.85975 360.715477)">ℜ=ℓ/(μA)</text>
@@ -83,12 +83,14 @@
    </g>
   </g>
   <g id="text_5">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">A magnetic circuit relates ampere-turns, reluctance, flux, and linkage</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="164.294828" transform="rotate(-0 55.44 164.294828)">A magnetic circuit relates ampere-turns, reluctance, flux, and linkage</text>
   </g>
-  <g id="text_7" transform="translate(0.000000 -173.908985)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(111.879687 650.142812)"><tspan style="font-size: 10.000px">Linear homogeneous core, no air gap, constant cross section and permeability, negligible leakage/fringing. μ=μ₀μ</tspan><tspan style="font-size: 7.200px" dy="2.400px">r</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px"> with μ₀≈4π×10⁻⁷ H/m. Drawing shows a</tspan></text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(117.750781 663.138438)">few schematic turns, not the stated200-count winding. Flux arrows establish a positive reference; terminal polarity would follow the actual winding sense.</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(236.473437 675.855937)">Saturation and core loss are omitted; B=Φ/A≈0.418879 T is a model result, not an assured operating limit.</text>
+  <g id="text_6">
+   </g>
+  <g id="text_7">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(111.88 571.517241)"><tspan font-size="10.000px">Linear homogeneous core, no air gap, constant cross section and permeability, negligible leakage/fringing. μ=μ₀μ</tspan><tspan font-size="6.800px" dy="2.400px">r</tspan><tspan font-size="10.000px" dy="-2.400px"> with μ₀≈4π×10⁻⁷ H/m. Drawing shows a</tspan></text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(117.751 584.512867)">few schematic turns, not the stated200-count winding. Flux arrows establish a positive reference; terminal polarity would follow the actual winding sense.</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(236.473 597.230366)">Saturation and core loss are omitted; B=Φ/A≈0.418879 T is a model result, not an assured operating limit.</text>
   </g>
  </g>
  <defs>

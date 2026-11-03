@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="987.120pt" height="588.240pt" viewBox="20.880000 10.800000 987.120000 588.240000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="979.776pt" height="540.107pt" viewBox="28.224000 84.573000 979.776000 540.107000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,13 +21,13 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(7.980000 -62.170362)">
+  <g id="axes_1" transform="translate(22.861440 0.000000)">
    <g id="text_1">
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(752.493328 200.970023)"><tspan style="font-size: 21.000px">V</tspan><tspan style="font-size: 15.120px" dy="5.040px">NL</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">=240 V</tspan></text>
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(754.3095 229.856508)"><tspan style="font-size: 21.000px">V</tspan><tspan style="font-size: 15.120px" dy="5.040px">FL</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">=228 V</tspan></text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(752.493328 200.970023)"><tspan font-size="21.000px">V</tspan><tspan font-size="14.280px" dy="5.040px">NL</tspan><tspan font-size="21.000px" dy="-5.040px">=240 V</tspan></text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(754.3095 229.856508)"><tspan font-size="21.000px">V</tspan><tspan font-size="14.280px" dy="5.040px">FL</tspan><tspan font-size="21.000px" dy="-5.040px">=228 V</tspan></text>
    </g>
    <g id="text_2">
-    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(717.832625 375.739281)"><tspan style="font-size: 20.000px">Regulation: ΔV/V</tspan><tspan style="font-size: 14.400px" dy="4.800px">FL</tspan><tspan style="font-size: 20.000px" dy="-4.800px">​</tspan></text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(717.832625 375.739281)"><tspan font-size="20.000px">Regulation: ΔV/V</tspan><tspan font-size="13.600px" dy="4.800px">FL</tspan></text>
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(771.482625 403.250219)">=5.263%</text>
    </g>
    <g id="text_3">
@@ -35,7 +35,7 @@
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(695.176453 567.865898)">Load PF / model matter</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(7.980000 -62.170362)">
+  <g id="axes_2" transform="translate(22.861440 0.000000)">
    <g id="patch_2">
     <path d="M 80.64 504  L 675.36 504  L 675.36 122.4  L 80.64 122.4  z " style="fill: #ffffff" />
    </g>
@@ -251,12 +251,14 @@
    </g>
   </g>
   <g id="text_20">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Voltage regulation compares no-load and full-load terminal magnitudes at fixed source conditions</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="108.432759" transform="rotate(-0 55.44 108.432759)">Voltage regulation compares no-load and full-load terminal magnitudes at fixed source conditions</text>
   </g>
-  <g id="text_22" transform="translate(0.000000 -100.816803)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(129.350781 650.281875)">Synthetic linear voltage-versus-load profile, not a solved transformer or feeder curve. Standard pictured definition normalizes by full-load magnitude.</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(119.558594 662.999375)">Actual profile depends on complex impedance, power factor, control and source conditions; leading PF can yield negative regulation. This figure does not</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(360.707031 675.716875)">imply every source/load drops linearly or by this amount.</text>
+  <g id="text_21">
+   </g>
+  <g id="text_22">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(129.351 587.034483)">Synthetic linear voltage-versus-load profile, not a solved transformer or feeder curve. Standard pictured definition normalizes by full-load magnitude.</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(119.559 599.751983)">Actual profile depends on complex impedance, power factor, control and source conditions; leading PF can yield negative regulation. This figure does not</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(360.707 612.469483)">imply every source/load drops linearly or by this amount.</text>
   </g>
  </g>
  <defs>

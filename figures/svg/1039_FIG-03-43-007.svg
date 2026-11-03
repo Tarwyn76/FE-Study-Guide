@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1019.057pt" height="603.061pt" viewBox="30.085714 14.652386 1019.057143 603.061344" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="998.000pt" height="580.287pt" viewBox="41.000000 112.712883 998.000000 580.287117" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 792  L 1080 792  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -98.100000)">
+  <g id="axes_1" transform="translate(-0.000000 -0.831187)">
    <g id="patch_2">
     <path d="M 59.4 263.8944  L 263.655 263.8944  L 263.655 160.0632  L 59.4 160.0632  z " clip-path="url(#p73906a002a)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -67,7 +67,7 @@
     <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="559.224" y="378.157275" transform="rotate(-0 559.224 378.157275)">Both flip-flops use the destination clock.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-0.000000 -98.100000)">
+  <g id="axes_2" transform="translate(-0.000000 -0.831187)">
    <g id="patch_9">
     <path d="M 194.4 594  L 972 594  L 972 443.52  L 194.4 443.52  z " style="fill: #ffffff" />
    </g>
@@ -237,10 +237,10 @@
     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="206.770909" y="579.319024" transform="rotate(-0 206.770909 579.319024)">Q2</text>
    </g>
   </g>
-  <g id="text_20">
+  <g id="text_20" transform="translate(0 99.0000)">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="43.56" transform="rotate(-0 59.4 43.56)">A two-flop synchronizer gives metastability time to resolve</text>
   </g>
-  <g id="text_22" transform="translate(0.000000 -149.400000)">
+  <g id="text_22" transform="translate(0 -68.0000)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 717.097875)">Illustrative analog behavior at FF1 is schematic; actual resolution time is random. A synchronizer reduces failure probability but cannot guarantee</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 729.815375)">resolution by a finite deadline. Use for a single asynchronous level with adequate pulse width; multi-bit buses and short pulses need appropriate CDC</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 742.532875)">protocols. FF1 should feed only FF2.</text>

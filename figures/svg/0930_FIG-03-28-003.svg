@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="950.400pt" height="594.000pt" viewBox="28.800000 10.080000 950.400000 594.000000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="921.984pt" height="548.167pt" viewBox="43.008000 84.573000 921.984000 548.167000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -63.850642)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 55.44 523.08  L 952.56 523.08  L 952.56 478.368  L 55.44 478.368  z " clip-path="url(#p72535f788b)" style="fill: #f0e8d9" />
    </g>
@@ -100,11 +100,11 @@
     <text style="font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="710.3376" y="135.850812" transform="rotate(-0 710.3376 135.850812)">Surcharge q=10 kPa</text>
    </g>
    <g id="text_2">
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(736.761375 355.455445)"><tspan style="font-size: 21.000px">P</tspan><tspan style="font-size: 15.120px" dy="5.040px">a</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">=48.0 kN/m</tspan></text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(736.761375 355.455445)"><tspan font-size="21.000px">P</tspan><tspan font-size="14.280px" dy="5.040px">a</tspan><tspan font-size="21.000px" dy="-5.040px">=48.0 kN/m</tspan></text>
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(785.989969 384.34193)">at H/3</text>
    </g>
    <g id="text_3">
-    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(707.133087 261.475281)"><tspan style="font-size: 20.000px">P</tspan><tspan style="font-size: 14.400px" dy="4.800px">q</tspan><tspan style="font-size: 20.000px" dy="-4.800px">​</tspan><tspan style="font-size: 20.000px">=13.33 kN/m</tspan></text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(707.133087 261.475281)"><tspan font-size="20.000px">P</tspan><tspan font-size="13.600px" dy="4.800px">q</tspan><tspan font-size="20.000px" dy="-4.800px">=13.33 kN/m</tspan></text>
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(760.600275 288.986219)">at H/2</text>
    </g>
    <g id="text_4">
@@ -119,12 +119,14 @@
    </g>
   </g>
   <g id="text_7">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Retaining-wall equilibrium tracks lateral loads, weight, and the base reaction</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="108.432759" transform="rotate(-0 55.44 108.432759)">Retaining-wall equilibrium tracks lateral loads, weight, and the base reaction</text>
   </g>
-  <g id="text_9" transform="translate(0.000000 -95.775963)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(104.453125 650.00375)"><tspan style="font-size: 10.000px">Dry Rankine teaching example H=4 m,φ′=30°,γ=18 kN/m³,level backfill; uniform surcharge adds K</tspan><tspan style="font-size: 7.200px" dy="2.400px">a</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px"> q H at H/2. Soil weight, wall weight, groundwater, passive</tspan></text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(125.010937 662.999375)">resistance and base friction must be included consistently in a full design. Arrows show force directions only; W and base reactions are not numerically</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(225.567187 675.716875)"><tspan style="font-size: 10.000px">assigned. Check sliding ΣF</tspan><tspan style="font-size: 7.200px" dy="2.400px">R</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">/ΣF</tspan><tspan style="font-size: 7.200px" dy="2.400px">D</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px"> and overturning ΣM</tspan><tspan style="font-size: 7.200px" dy="2.400px">R</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">/ΣM</tspan><tspan style="font-size: 7.200px" dy="2.400px">O</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px"> with a defined datum, plus bearing/settlement.</tspan></text>
+  <g id="text_8">
+   </g>
+  <g id="text_9">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(104.453 593.241379)"><tspan font-size="10.000px">Dry Rankine teaching example H=4 m,φ′=30°,γ=18 kN/m³,level backfill; uniform surcharge adds K</tspan><tspan font-size="6.800px" dy="2.400px">a</tspan><tspan font-size="10.000px" dy="-2.400px"> q H at H/2. Soil weight, wall weight, groundwater, passive</tspan></text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(125.011 606.237004)">resistance and base friction must be included consistently in a full design. Arrows show force directions only; W and base reactions are not numerically</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(225.567 618.954504)"><tspan font-size="10.000px">assigned. Check sliding ΣF</tspan><tspan font-size="6.800px" dy="2.400px">R</tspan><tspan font-size="10.000px" dy="-2.400px">/ΣF</tspan><tspan font-size="6.800px" dy="2.400px">D</tspan><tspan font-size="10.000px" dy="-2.400px"> and overturning ΣM</tspan><tspan font-size="6.800px" dy="2.400px">R</tspan><tspan font-size="10.000px" dy="-2.400px">/ΣM</tspan><tspan font-size="6.800px" dy="2.400px">O</tspan><tspan font-size="10.000px" dy="-2.400px"> with a defined datum, plus bearing/settlement.</tspan></text>
   </g>
  </g>
  <defs>

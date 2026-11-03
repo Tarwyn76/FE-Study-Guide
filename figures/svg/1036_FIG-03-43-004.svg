@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1019.057pt" height="593.807pt" viewBox="30.085714 14.652386 1019.057143 593.807205" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="997.000pt" height="582.288pt" viewBox="37.000000 70.711844 997.000000 582.288156" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,12 +21,12 @@
   <g id="patch_1">
    <path d="M 0 792  L 1080 792  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(4.950000 -55.800000)">
+  <g id="axes_1" transform="translate(0.415417 0.000000)">
    <g id="text_1">
     <text style="font-size: 25px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="540" y="593.216037" transform="rotate(-0 540 593.216037)">Input:1 0 1 0 1  •  Output:0 0 1 0 1</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(4.950000 -55.800000)">
+  <g id="axes_2" transform="translate(0.415417 0.000000)">
    <g id="patch_2">
     <path d="M 121.392 308.88  C 134.796425 308.88 147.653645 305.875796 157.132005 300.529029  C 166.610365 295.182261 171.936 287.929471 171.936 280.368  C 171.936 272.806529 166.610365 265.553739 157.132005 260.206971  C 147.653645 254.860204 134.796425 251.856 121.392 251.856  C 107.987575 251.856 95.130355 254.860204 85.651995 260.206971  C 76.173635 265.553739 70.848 272.806529 70.848 280.368  C 70.848 287.929471 76.173635 295.182261 85.651995 300.529029  C 95.130355 305.875796 107.987575 308.88 121.392 308.88  z " clip-path="url(#p3319c26424)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.5; stroke-linejoin: miter" />
    </g>
@@ -98,7 +98,7 @@
     <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="334.8" y="163.847125" transform="rotate(-0 334.8 163.847125)">1/0</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(4.950000 -55.800000)">
+  <g id="axes_3" transform="translate(0.415417 0.000000)">
    <g id="patch_12">
     <path d="M 680.4 233.1648  L 780.84 233.1648  L 780.84 183.2688  L 680.4 183.2688  z " clip-path="url(#pdd7d1e5970)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -175,10 +175,10 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="956.61" y="361.21605" transform="rotate(-0 956.61 361.21605)">S1/1</text>
    </g>
   </g>
-  <g id="text_25">
+  <g id="text_25" transform="translate(0 57.0000)">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="43.56" transform="rotate(-0 59.4 43.56)">A three-state Mealy machine detects overlapping occurrences of101</text>
   </g>
-  <g id="text_27" transform="translate(0.000000 -152.100000)">
+  <g id="text_27" transform="translate(0 -102.0000)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 723.456625)">Transition labels are input/output; output1 is asserted when the final1 of101 arrives. After detection the machine retains suffix1, permitting overlap.</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 736.174125)">Reset enters S0. The state table and example trace use the same transition rules; implementation registers/gates are not specified.</text>
   </g>

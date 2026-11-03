@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="941.760pt" height="618.480pt" viewBox="28.800000 12.960000 941.760000 618.480000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="905.856pt" height="583.135pt" viewBox="41.664000 93.003000 905.856000 583.135000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 792  L 1008 792  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(10.500000 -70.549311)">
+  <g id="axes_1" transform="translate(1.887200 0.000000)">
    <g id="text_1">
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(751.730387 234.83645)">FM: fi=fc+kf m</text>
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(764.221012 260.27145)">kf=3 Hz/unit</text>
@@ -34,7 +34,7 @@
     <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="826.9632" y="607.678875" transform="rotate(-0 826.9632 607.678875)">PM: fi=fc+(kp/2π)dm/dt</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(10.500000 -70.549311)">
+  <g id="axes_2" transform="translate(1.887200 0.000000)">
    <g id="patch_2">
     <path d="M 100.8 269.28  L 695.52 269.28  L 695.52 150.48  L 100.8 150.48  z " style="fill: #ffffff" />
    </g>
@@ -252,7 +252,7 @@
     <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="398.16" y="140.48" transform="rotate(-0 398.16 140.48)">Message</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(10.500000 -70.549311)">
+  <g id="axes_3" transform="translate(1.887200 0.000000)">
    <g id="patch_7">
     <path d="M 100.8 435.6  L 695.52 435.6  L 695.52 316.8  L 100.8 316.8  z " style="fill: #ffffff" />
    </g>
@@ -438,7 +438,7 @@
     <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="398.16" y="306.8" transform="rotate(-0 398.16 306.8)">FM instantaneous frequency</text>
    </g>
   </g>
-  <g id="axes_4" transform="translate(10.500000 -70.549311)">
+  <g id="axes_4" transform="translate(1.887200 0.000000)">
    <g id="patch_12">
     <path d="M 100.8 601.92  L 695.52 601.92  L 695.52 483.12  L 100.8 483.12  z " style="fill: #ffffff" />
    </g>
@@ -628,11 +628,13 @@
    </g>
   </g>
   <g id="text_49">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="43.56" transform="rotate(-0 55.44 43.56)">FM frequency deviation follows the message; PM phase deviation follows it</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="117.591879" transform="rotate(-0 55.44 117.591879)">FM frequency deviation follows the message; PM phase deviation follows it</text>
   </g>
-  <g id="text_51" transform="translate(0.000000 -130.180276)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 723.456625)">Message is cos(2πt), fc=12 Hz. FM φ=3sin(2πt) rad; PM φ=1.5cos(2πt) rad. PM instantaneous frequency is12−1.5sin(2πt) Hz, demonstrating why phase modulation</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 736.174125)">and frequency modulation are different for the same message.</text>
+  <g id="text_50">
+   </g>
+  <g id="text_51">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 649.909980)">Message is cos(2πt), fc=12 Hz. FM φ=3sin(2πt) rad; PM φ=1.5cos(2πt) rad. PM instantaneous frequency is12−1.5sin(2πt) Hz, demonstrating why phase modulation</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 662.627480)">and frequency modulation are different for the same message.</text>
   </g>
  </g>
  <defs>

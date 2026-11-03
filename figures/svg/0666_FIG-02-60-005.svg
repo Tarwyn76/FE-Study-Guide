@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="851.000pt" height="572.446pt" viewBox="43.250000 13.000000 851.000000 572.446154" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="820.073pt" height="527.980pt" viewBox="43.927000 79.000000 820.073000 527.980433" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-20.565833 -68.071806)">
+  <g id="axes_1" transform="translate(-22.893705 -2.732293)">
    <g id="text_1">
     
     <g style="fill: #23313d" transform="translate(734.6808 204.63)">
@@ -87,10 +87,10 @@
     </g>
    </g>
    <g id="text_3">
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="583.230656" transform="rotate(-0 504 583.230656)"><tspan style="font-size: 21.000px">Three essential nodes: 12 V, V</tspan><tspan style="font-size: 15.120px" dy="5.040px">A</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">, and reference 0 V</tspan></text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="583.230656" transform="rotate(-0 504 583.230656)"><tspan font-size="21.000px">Three essential nodes: 12 V, V</tspan><tspan font-size="14.280px" dy="5.040px">A,</tspan><tspan font-size="21.000px" dy="-5.040px"> and reference 0 V</tspan></text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-20.565833 -68.071806)">
+  <g id="axes_2" transform="translate(-22.893705 -2.732293)">
    <g id="line2d_1">
     <path d="M 158.091429 307.748571  L 158.091429 164.571429  L 219.805714 164.571429  " clip-path="url(#p3aa4ab2c4e)" style="fill: none; stroke: #23313d; stroke-width: 1.8; stroke-linecap: square" />
    </g>
@@ -170,13 +170,13 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="127.234286" y="149.64433" transform="rotate(-0 127.234286 149.64433)">12 V</text>
    </g>
    <g id="text_11">
-    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="411.12" y="146.197054" transform="rotate(-0 411.12 146.197054)"><tspan style="font-size: 13.000px">V</tspan><tspan style="font-size: 9.360px" dy="3.120px">A</tspan><tspan style="font-size: 13.000px" dy="-3.120px">​</tspan></text>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="411.12" y="146.197054" transform="rotate(-0 411.12 146.197054)"><tspan font-size="13.000px">V</tspan><tspan font-size="8.840px" dy="3.120px">A</tspan></text>
    </g>
   </g>
   <g id="text_12">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Nodal analysis writes branch currents from one unknown node voltage</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="104.733" transform="rotate(-0 55.44 104.733)">Nodal analysis writes branch currents from one unknown node voltage</text>
   </g>
-  <g id="text_14" transform="translate(0.000000 -107.071278)">
+  <g id="text_14">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(137.516406 656.640625)">KCL uses all branch currents leaving node A. The ideal source fixes the known node at 12 V relative to the common reference. Ground is a voltage</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(366.654688 669.358125)">reference, not necessarily a physical earth connection.</text>
   </g>

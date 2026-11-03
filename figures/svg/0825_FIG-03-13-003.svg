@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1033.600pt" height="753.745pt" viewBox="23.200000 9.683100 1033.600000 753.744500" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="835.343pt" height="549.225pt" viewBox="28.657000 94.596000 835.343000 549.225113" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,8 +21,8 @@
   <g id="patch_1">
    <path d="M 0 792  L 1080 792  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -80.973695)" />
-  <g id="axes_2" transform="translate(-0.000000 -80.973695)">
+  <g id="axes_1" transform="translate(-6.961192 -4.872740)" />
+  <g id="axes_2" transform="translate(-6.961192 -4.872740)">
    <g id="patch_2">
     <path d="M 61.776 258.984  L 191.808 258.984  L 191.808 211.464  L 61.776 211.464  z " clip-path="url(#pb74ea980e2)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -53,7 +53,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="280.044" y="350.20725" transform="rotate(-0 280.044 350.20725)">Measured outlet T returns to TIC</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(-0.000000 -80.973695)">
+  <g id="axes_3" transform="translate(-6.961192 -4.872740)">
    <g id="patch_6">
     <path d="M 581.688 258.984  L 716.364 258.984  L 716.364 211.464  L 581.688 211.464  z " clip-path="url(#p5e7e76081d)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -91,7 +91,7 @@
     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="804.6" y="352.307312" transform="rotate(-0 804.6 352.307312)">Feedforward acts before outlet T changes</text>
    </g>
   </g>
-  <g id="axes_4" transform="translate(-0.000000 -80.973695)">
+  <g id="axes_4" transform="translate(-6.961192 -4.872740)">
    <g id="patch_11">
     <path d="M 43.2 520.344  L 154.656 520.344  L 154.656 472.824  L 43.2 472.824  z " clip-path="url(#p4803709474)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -134,7 +134,7 @@
     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="266.112" y="625.547312" transform="rotate(-0 266.112 625.547312)">Outer temperature → inner flow setpoint</text>
    </g>
   </g>
-  <g id="axes_5" transform="translate(-0.000000 -80.973695)">
+  <g id="axes_5" transform="translate(-6.961192 -4.872740)">
    <g id="patch_16">
     <path d="M 586.332 520.344  L 711.72 520.344  L 711.72 472.824  L 586.332 472.824  z " clip-path="url(#p55d93ce8c8)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -175,11 +175,11 @@
     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="772.092" y="447.347312" transform="rotate(-0 772.092 447.347312)">Measured master flow A</text>
    </g>
    <g id="text_21">
-    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="804.6" y="614.038406" transform="rotate(-0 804.6 614.038406)"><tspan style="font-size: 13.000px">Slave-flow SP: F</tspan><tspan style="font-size: 9.360px" dy="3.120px">B,SP</tspan><tspan style="font-size: 13.000px" dy="-3.120px">​</tspan><tspan style="font-size: 13.000px">=R F</tspan><tspan style="font-size: 9.360px" dy="3.120px">A</tspan><tspan style="font-size: 13.000px" dy="-3.120px">​</tspan></text>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="804.6" y="614.038406" transform="rotate(-0 804.6 614.038406)"><tspan font-size="13.000px">Slave-flow SP: F</tspan><tspan font-size="8.840px" dy="3.120px">B,SP</tspan><tspan font-size="13.000px" dy="-3.120px">=R F</tspan><tspan font-size="8.840px" dy="3.120px">A</tspan></text>
    </g>
   </g>
   <g id="text_22">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="43.56" transform="rotate(-0 59.4 43.56)">Feedback, feedforward, cascade, and ratio control use different information paths</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="120.953" transform="rotate(-0 59.4 120.953)">Feedback, feedforward, cascade, and ratio control use different information paths</text>
   </g>
   <g id="text_23">
 </g>

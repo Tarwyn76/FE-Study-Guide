@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="776.366pt" height="702.309pt" viewBox="17.897143 9.874286 776.365714 702.308571" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="729.381pt" height="641.009pt" viewBox="27.360000 106.080000 729.380571 641.009287" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 864  L 864 864  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(20.160000 -89.280000)">
+  <g id="axes_1" transform="translate(-15.667200 0.000000)">
    <g id="text_1">
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="699.3216" y="238.878137" transform="rotate(-0 699.3216 238.878137)">Reject</text>
    </g>
@@ -31,11 +31,11 @@
    <g id="text_3">
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="699.3216" y="623.530938" transform="rotate(-0 699.3216 623.530938)">Reject</text>
    </g>
-   <g id="text_4">
+   <g id="text_4" transform="translate(0.000000 -58.354960)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="779.581775" transform="rotate(-0 432 779.581775)">α = 0.05: two-sided critical values ±1.960; one-sided critical magnitudes 1.645.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(20.160000 -89.280000)">
+  <g id="axes_2" transform="translate(-15.667200 0.000000)">
    <g id="patch_2">
     <path d="M 86.4 311.04  L 596.16 311.04  L 596.16 164.16  L 86.4 164.16  z " style="fill: #ffffff" />
    </g>
@@ -189,7 +189,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="341.28" y="158.16" transform="rotate(-0 341.28 158.16)">Two-sided: H₁ μ ≠ μ₀</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(20.160000 -89.280000)">
+  <g id="axes_3" transform="translate(-15.667200 0.000000)">
    <g id="patch_5">
     <path d="M 86.4 501.12  L 596.16 501.12  L 596.16 354.24  L 86.4 354.24  z " style="fill: #ffffff" />
    </g>
@@ -344,7 +344,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="341.28" y="348.24" transform="rotate(-0 341.28 348.24)">Left: H₁ μ &lt; μ₀</text>
    </g>
   </g>
-  <g id="axes_4" transform="translate(20.160000 -89.280000)">
+  <g id="axes_4" transform="translate(-15.667200 0.000000)">
    <g id="patch_8">
     <path d="M 86.4 691.2  L 596.16 691.2  L 596.16 544.32  L 86.4 544.32  z " style="fill: #ffffff" />
    </g>
@@ -499,7 +499,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="341.28" y="538.32" transform="rotate(-0 341.28 538.32)">Right: H₁ μ &gt; μ₀</text>
    </g>
   </g>
-  <g id="text_41">
+  <g id="text_41" transform="translate(0 89.640)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="43.2" transform="rotate(-0 38.88 43.2)">Compare the observed z statistic with the chosen rejection region</text>
   </g>
   </g>

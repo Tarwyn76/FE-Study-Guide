@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="864.254pt" height="490.252pt" viewBox="43.250000 13.629335 864.254464 490.251640" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="821.161pt" height="443.651pt" viewBox="42.839000 147.425680 821.161000 443.650863" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-27.906250 -133.712254)">
+  <g id="axes_1" transform="translate(-34.557192 -1.369026)">
    <g id="text_1">
     
     <g style="fill: #23313d" transform="translate(694.386 213.406125)">
@@ -58,7 +58,7 @@
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(701.958188 575.328453)">P=1.571 kW</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-27.906250 -133.712254)">
+  <g id="axes_2" transform="translate(-34.557192 -1.369026)">
    <g id="patch_2">
     <path d="M 113.4 336.6  L 491.4 336.6  L 491.4 279.9  L 113.4 279.9  z " clip-path="url(#p06b992059d)" style="fill: #edf3f6; stroke: #235a78; stroke-linejoin: miter" />
    </g>
@@ -77,9 +77,9 @@
    </g>
   </g>
   <g id="text_5">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Shaft power equals torque multiplied by angular speed</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="173.049" transform="rotate(-0 55.44 173.049)">Shaft power equals torque multiplied by angular speed</text>
   </g>
-  <g id="text_7" transform="translate(0.000000 -185.874726)">
+  <g id="text_7">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(127.038281 656.640625)">Torque and angular speed must refer to the same shaft; positive power magnitude when torque acts with the rotation. n is revolutions per minute, not</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(208.866406 669.358125)">rad/s. The shaft and rotation arrow are schematic; mechanical loss may reduce power transmitted between locations.</text>
   </g>

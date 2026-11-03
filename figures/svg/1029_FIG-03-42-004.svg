@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="950.400pt" height="670.320pt" viewBox="28.800000 11.520000 950.400000 670.320000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="921.984pt" height="643.645pt" viewBox="43.008000 106.449000 921.984000 643.645000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 792  L 1008 792  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -83.147402)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 55.44 198.3168  L 234.864 198.3168  L 234.864 143.6688  L 55.44 143.6688  z " clip-path="url(#pfa5c28cee3)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -297,9 +297,11 @@
    </g>
   </g>
   <g id="text_47">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="43.56" transform="rotate(-0 55.44 43.56)">Canonical SOP selects the minterms whose truth-table output is one</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="131.540998" transform="rotate(-0 55.44 131.540998)">Canonical SOP selects the minterms whose truth-table output is one</text>
   </g>
-  <g id="text_49" transform="translate(0.000000 -81.467656)">
+  <g id="text_48">
+   </g>
+  <g id="text_49">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 723.456625)">Minterm numbering uses ABC with A as most significant bit. A variable is complemented when its row bit is0. Each minterm contains every input variable; the</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 736.174125)">canonical SOP can simplify to a much shorter equivalent expression, here F=C.</text>
   </g>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="818.949pt" height="517.166pt" viewBox="16.662857 4.320000 818.948571 517.165714" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="784.320pt" height="444.149pt" viewBox="23.520000 86.480087 784.320000 444.149182" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(18.000000 -79.920000)">
+  <g id="axes_1" transform="translate(0.653600 0.000000)">
    <g id="text_1">
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(672.195028 216.831714)">Gold: group mean</text>
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(682.652919 234.352261)">to grand mean</text>
@@ -30,11 +30,11 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(672.337216 376.531314)">Red: observations</text>
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(666.479091 394.051861)">around group mean</text>
    </g>
-   <g id="text_3">
+   <g id="text_3" transform="translate(0.000000 -73.184733)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="585.376175" transform="rotate(-0 432 585.376175)">SS total = SS treatments + SS error. The ANOVA test compares mean squares, not raw sums of squares.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(18.000000 -79.920000)">
+  <g id="axes_2" transform="translate(0.653600 0.000000)">
    <g id="patch_2">
     <path d="M 69.12 466.56  L 648 466.56  L 648 129.6  L 69.12 129.6  z " style="fill: #ffffff" />
    </g>
@@ -240,7 +240,7 @@
     </g>
    </g>
   </g>
-  <g id="text_15">
+  <g id="text_15" transform="translate(0 79.920)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="32.4" transform="rotate(-0 38.88 32.4)">One-way ANOVA separates between-group and within-group variation</text>
   </g>
   </g>

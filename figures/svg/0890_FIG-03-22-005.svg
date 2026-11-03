@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="920.880pt" height="574.560pt" viewBox="28.800000 10.800000 920.880000 574.560000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="908.107pt" height="564.384pt" viewBox="43.008000 112.782000 908.107200 564.384241" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-36.540000 -91.575263)">
+  <g id="axes_1" transform="translate(-34.539120 0.000000)">
    <g id="text_1">
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(689.157 187.588266)">One-way slab span=4 m</text>
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(697.473328 215.890687)">Interior beam tributary</text>
@@ -34,10 +34,10 @@
    <g id="text_3">
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(688.828875 525.120234)">Interior-column tributary</text>
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(795.549891 553.422656)">load</text>
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(730.197234 581.725078)"><tspan style="font-size: 21.000px">P=q A</tspan><tspan style="font-size: 15.120px" dy="5.040px">t</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">=120 kN</tspan></text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(730.197234 581.725078)"><tspan font-size="21.000px">P=q A</tspan><tspan font-size="14.280px" dy="5.040px">t</tspan><tspan font-size="21.000px" dy="-5.040px">=120 kN</tspan></text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-36.540000 -91.575263)">
+  <g id="axes_2" transform="translate(-34.539120 0.000000)">
    <g id="patch_2">
     <path d="M 246.24 387.36  L 479.52 387.36  L 479.52 231.84  L 246.24 231.84  z " clip-path="url(#p1caabda484)" style="fill: #e5d7bd; opacity: 0.7; stroke: #b47722; stroke-linejoin: miter" />
    </g>
@@ -94,13 +94,15 @@
    </g>
    <g id="text_4">
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(301.705 303.010625)">Interior column</text>
-    <text style="font-size: 16px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(296.2575 324.574375)"><tspan style="font-size: 16.000px">A</tspan><tspan style="font-size: 11.520px" dy="3.840px">t</tspan><tspan style="font-size: 16.000px" dy="-3.840px">​</tspan><tspan style="font-size: 16.000px">=6×4=24 m²</tspan></text>
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(296.2575 324.574375)"><tspan font-size="16.000px">A</tspan><tspan font-size="10.880px" dy="3.840px">t</tspan><tspan font-size="16.000px" dy="-3.840px">=6×4=24 m²</tspan></text>
    </g>
   </g>
   <g id="text_5">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Tributary strips distribute slab load to beams and tributary area to an interior column</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="136.363793" transform="rotate(-0 55.44 136.363793)">Tributary strips distribute slab load to beams and tributary area to an interior column</text>
   </g>
-  <g id="text_7" transform="translate(0.000000 -113.418903)">
+  <g id="text_6">
+   </g>
+  <g id="text_7" transform="translate(0.000000 -22.504665)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(113.2875 650.281875)">Regular floor grid6 m by4 m, ideal one-way slab between horizontal beams. Tributary strips take half adjacent spans; highlighted interior-column area24 m²</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(121.703906 662.999375)">covers half bays in both directions. Load5 kN/m² excludes separately unassigned member self-weight. Actual continuous-frame reactions can differ from</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(436.65 675.716875)">simple tributary allocation.</text>

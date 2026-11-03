@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="954.720pt" height="565.200pt" viewBox="26.640000 10.800000 954.720000 565.200000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="928.704pt" height="518.615pt" viewBox="22.848000 108.752000 928.704000 518.615000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,21 +21,21 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(17.640000 -86.534422)">
+  <g id="axes_1">
    <g id="text_1">
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(697.348641 201.447445)">Same CCM buck as979</text>
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(747.233484 229.749867)"><tspan style="font-size: 21.000px">ΔI</tspan><tspan style="font-size: 15.120px" dy="5.040px">L</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">=0.576 A</tspan></text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(747.233484 229.749867)"><tspan font-size="21.000px">ΔI</tspan><tspan font-size="14.280px" dy="5.040px">L</tspan><tspan font-size="21.000px" dy="-5.040px">=0.576 A</tspan></text>
    </g>
    <g id="text_2">
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(728.246531 375.035414)"><tspan style="font-size: 21.000px">ESR-free ΔV</tspan><tspan style="font-size: 15.120px" dy="5.040px">pp</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">≈</tspan></text>
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(690.165984 403.921898)"><tspan style="font-size: 21.000px">ΔI</tspan><tspan style="font-size: 15.120px" dy="5.040px">L</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">/(8f</tspan><tspan style="font-size: 15.120px" dy="5.040px">sC</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">)=30.638 mV</tspan></text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(728.246531 375.035414)"><tspan font-size="21.000px">ESR-free ΔV</tspan><tspan font-size="14.280px" dy="5.040px">pp</tspan><tspan font-size="21.000px" dy="-5.040px">≈</tspan></text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(690.165984 403.921898)"><tspan font-size="21.000px">ΔI</tspan><tspan font-size="14.280px" dy="5.040px">L</tspan><tspan font-size="21.000px" dy="-5.040px">/(8f</tspan><tspan font-size="14.280px" dy="5.040px">sC)</tspan><tspan font-size="21.000px" dy="-5.040px">=30.638 mV</tspan></text>
    </g>
    <g id="text_3">
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(704.834187 539.683281)">Voltage extrema occur</text>
-    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(704.29825 566.637969)"><tspan style="font-size: 20.000px">where i</tspan><tspan style="font-size: 14.400px" dy="4.800px">C</tspan><tspan style="font-size: 20.000px" dy="-4.800px">​</tspan><tspan style="font-size: 20.000px"> crosses zero</tspan></text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(704.29825 566.637969)"><tspan font-size="20.000px">where i</tspan><tspan font-size="13.600px" dy="4.800px">C</tspan><tspan font-size="20.000px" dy="-4.800px"> crosses zero</tspan></text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(17.640000 -86.534422)">
+  <g id="axes_2">
    <g id="patch_2">
     <path d="M 80.64 244.8  L 675.36 244.8  L 675.36 144  L 80.64 144  z " style="fill: #ffffff" />
    </g>
@@ -166,7 +166,7 @@
      </g>
     </g>
     <g id="text_13">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="52.733594" y="194.4" transform="rotate(-90 52.733594 194.4)"><tspan style="font-size: 11.000px">i</tspan><tspan style="font-size: 7.920px" dy="2.640px">L</tspan><tspan style="font-size: 11.000px" dy="-2.640px">​</tspan><tspan style="font-size: 11.000px"> (A)</tspan></text>
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="52.733594" y="194.4" transform="rotate(-90 52.733594 194.4)"><tspan font-size="11.000px">i</tspan><tspan font-size="7.480px" dy="2.640px">L</tspan><tspan font-size="11.000px" dy="-2.640px"> (A)</tspan></text>
     </g>
    </g>
    <g id="line2d_19">
@@ -185,7 +185,7 @@
     <path d="M 80.64 244.8  L 675.36 244.8  " style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linejoin: miter; stroke-linecap: square" />
    </g>
   </g>
-  <g id="axes_3" transform="translate(17.640000 -86.534422)">
+  <g id="axes_3">
    <g id="patch_5">
     <path d="M 80.64 381.6  L 675.36 381.6  L 675.36 280.8  L 80.64 280.8  z " style="fill: #ffffff" />
    </g>
@@ -310,7 +310,7 @@
      </g>
     </g>
     <g id="text_23">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="45.191875" y="331.2" transform="rotate(-90 45.191875 331.2)"><tspan style="font-size: 11.000px">i</tspan><tspan style="font-size: 7.920px" dy="2.640px">C</tspan><tspan style="font-size: 11.000px" dy="-2.640px">​</tspan><tspan style="font-size: 11.000px">=i</tspan><tspan style="font-size: 7.920px" dy="2.640px">L</tspan><tspan style="font-size: 11.000px" dy="-2.640px">​</tspan><tspan style="font-size: 11.000px">−I</tspan><tspan style="font-size: 7.920px" dy="2.640px">o</tspan><tspan style="font-size: 11.000px" dy="-2.640px">​</tspan><tspan style="font-size: 11.000px"> (A)</tspan></text>
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="45.191875" y="331.2" transform="rotate(-90 45.191875 331.2)"><tspan font-size="11.000px">i</tspan><tspan font-size="7.480px" dy="2.640px">C</tspan><tspan font-size="11.000px" dy="-2.640px">=i</tspan><tspan font-size="7.480px" dy="2.640px">L</tspan><tspan font-size="11.000px" dy="-2.640px">−I</tspan><tspan font-size="7.480px" dy="2.640px">o</tspan><tspan font-size="11.000px" dy="-2.640px"> (A)</tspan></text>
     </g>
    </g>
    <g id="line2d_40">
@@ -329,7 +329,7 @@
     <path d="M 80.64 381.6  L 675.36 381.6  " style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linejoin: miter; stroke-linecap: square" />
    </g>
   </g>
-  <g id="axes_4" transform="translate(17.640000 -86.534422)">
+  <g id="axes_4">
    <g id="patch_8">
     <path d="M 80.64 518.4  L 675.36 518.4  L 675.36 417.6  L 80.64 417.6  z " style="fill: #ffffff" />
    </g>
@@ -413,7 +413,7 @@
      </g>
     </g>
     <g id="text_30">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="378" y="546.468594" transform="rotate(-0 378 546.468594)"><tspan style="font-size: 11.000px">Normalized t/T</tspan><tspan style="font-size: 7.920px" dy="2.640px">s</tspan><tspan style="font-size: 11.000px" dy="-2.640px">​</tspan></text>
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="378" y="546.468594" transform="rotate(-0 378 546.468594)"><tspan font-size="11.000px">Normalized t/T</tspan><tspan font-size="7.480px" dy="2.640px">s</tspan></text>
     </g>
    </g>
    <g id="matplotlib.axis_6">
@@ -457,7 +457,7 @@
      </g>
     </g>
     <g id="text_34">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="48.052188" y="468" transform="rotate(-90 48.052188 468)"><tspan style="font-size: 11.000px">Output ripple v</tspan><tspan style="font-size: 7.920px" dy="2.640px">o</tspan><tspan style="font-size: 11.000px" dy="-2.640px">​</tspan><tspan style="font-size: 11.000px">−mean (mV)</tspan></text>
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="48.052188" y="468" transform="rotate(-90 48.052188 468)"><tspan font-size="11.000px">Output ripple v</tspan><tspan font-size="7.480px" dy="2.640px">o</tspan><tspan font-size="11.000px" dy="-2.640px">−mean (mV)</tspan></text>
     </g>
    </g>
    <g id="line2d_61">
@@ -477,12 +477,14 @@
    </g>
   </g>
   <g id="text_35">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Inductor ripple produces a triangular capacitor current and a curved voltage ripple</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="131.708621" transform="rotate(-0 55.44 131.708621)">Inductor ripple produces a triangular capacitor current and a curved voltage ripple</text>
   </g>
-  <g id="text_37" transform="translate(0.000000 -123.500583)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(125.367188 650.00375)"><tspan style="font-size: 10.000px">Periodic ripple model with ideal capacitor,constant load current2 A,V</tspan><tspan style="font-size: 7.200px" dy="2.400px">in12</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px"> V,D0.4,f</tspan><tspan style="font-size: 7.200px" dy="2.400px">s50</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px"> kHz,L100 µH,C47 µF. Capacitor voltage is a time integral of i</tspan><tspan style="font-size: 7.200px" dy="2.400px">C</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">;</tspan></text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(134.578906 662.999375)">it is quadratic on each switching interval, not triangular when ESR is neglected. Mean ripple is removed explicitly. Finite ESR adds an instantaneous</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(355.469531 675.716875)"><tspan style="font-size: 10.000px">ESR·i</tspan><tspan style="font-size: 7.200px" dy="2.400px">C</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px"> term; switching edges/parasitic spikes are omitted.</tspan></text>
+  <g id="text_36">
+   </g>
+  <g id="text_37">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(125.367 588.586207)"><tspan font-size="10.000px">Periodic ripple model with ideal capacitor,constant load current2 A,V</tspan><tspan font-size="6.800px" dy="2.400px">in12</tspan><tspan font-size="10.000px" dy="-2.400px"> V,D0.4,f</tspan><tspan font-size="6.800px" dy="2.400px">s50</tspan><tspan font-size="10.000px" dy="-2.400px"> kHz,L100 µH,C47 µF. Capacitor voltage is a time integral of i</tspan><tspan font-size="6.800px" dy="2.400px">C</tspan><tspan font-size="10.000px" dy="-2.400px">;</tspan></text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(134.579 601.581832)">it is quadratic on each switching interval, not triangular when ESR is neglected. Mean ripple is removed explicitly. Finite ESR adds an instantaneous</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(355.47 614.299332)"><tspan font-size="10.000px">ESR·i</tspan><tspan font-size="6.800px" dy="2.400px">C</tspan><tspan font-size="10.000px" dy="-2.400px"> term; switching edges/parasitic spikes are omitted.</tspan></text>
   </g>
  </g>
  <defs>

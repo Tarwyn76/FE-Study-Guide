@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="833.143pt" height="529.509pt" viewBox="15.428571 3.702857 833.142857 529.508571" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="811.200pt" height="441.657pt" viewBox="26.400000 74.979603 811.200000 441.657219" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -69.120000)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 38.88 118.9728  L 196.128 118.9728  L 196.128 201.3984  L 38.88 201.3984  z " clip-path="url(#pc425c918f8)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -94,11 +94,11 @@
    <g id="text_9">
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="604.9728" y="474.80035" transform="rotate(-0 604.9728 474.80035)">Var(Y) = Σ aᵢ²σᵢ²</text>
    </g>
-   <g id="text_10">
+   <g id="text_10" transform="translate(0.000000 -87.857915)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="585.376175" transform="rotate(-0 432 585.376175)">Variance formula requires independence (uncorrelated variables also suffice); otherwise add covariance terms.</text>
    </g>
   </g>
-  <g id="text_11">
+  <g id="text_11" transform="translate(0 69.120)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="32.4" transform="rotate(-0 38.88 32.4)">Independent weighted variables combine means and variances</text>
   </g>
   </g>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="825.120pt" height="576.411pt" viewBox="15.428571 2.468571 825.120000 576.411429" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="795.840pt" height="568.320pt" viewBox="26.400000 31.200000 795.840000 568.320000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(7.560000 -24.480000)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 38.88 278.6724  L 219.7152 278.6724  L 219.7152 345.6432  L 38.88 345.6432  z " clip-path="url(#pf82285b7e2)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -180,7 +180,7 @@
     </g>
    </g>
   </g>
-  <g id="text_12">
+  <g id="text_12" transform="translate(0 25.920)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="32.4" transform="rotate(-0 38.88 32.4)">A power-series recurrence builds cos t</text>
   </g>
   </g>

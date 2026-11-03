@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="763.714pt" height="546.697pt" viewBox="14.142857 3.395633 763.714286 546.696943" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="745.600pt" height="507.627pt" viewBox="23.200000 60.196000 745.600000 507.626939" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 648  L 792 648  L 792 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -53.450102)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 35.64 103.518  L 143.748 103.518  L 143.748 165.3372  L 35.64 165.3372  z " clip-path="url(#p46036195fa)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -206,11 +206,11 @@
     <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(299.14625 510.074984)">Sine increases: √0/2 → √4/2</text>
     <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(259.4825 528.943266)">Cosine reverses the order: √4/2 → √0/2</text>
    </g>
-   <g id="text_32">
+   <g id="text_32" transform="translate(0.000000 -38.503857)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="396" y="585.415238" transform="rotate(-0 396 585.415238)">sin θ = cos(90° − θ) in the first quadrant.</text>
    </g>
   </g>
-  <g id="text_33">
+  <g id="text_33" transform="translate(0 54.289)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="35.64" y="32.4" transform="rotate(-0 35.64 32.4)">Standard angles: the square-root pattern</text>
   </g>
   </g>

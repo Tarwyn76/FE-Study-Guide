@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="958.540pt" height="549.131pt" viewBox="24.100000 11.381223 958.540000 549.131475" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="832.360pt" height="502.009pt" viewBox="31.640000 84.131596 832.360000 502.009423" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(1.996958 -74.327209)">
+  <g id="axes_1" transform="translate(-6.589517 -1.386645)">
    <g id="text_1">
     
     <g style="fill: #23313d" transform="translate(742.0482 211.878)">
@@ -45,11 +45,11 @@
     <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(691.166325 391.867313)">Overall order=m+n=2</text>
    </g>
    <g id="text_3">
-    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(709.242575 533.891609)"><tspan style="font-size: 22.000px">Hold C</tspan><tspan style="font-size: 15.840px" dy="5.280px">B</tspan><tspan style="font-size: 22.000px" dy="-5.280px">​</tspan><tspan style="font-size: 22.000px"> and T fixed:</tspan></text>
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(709.242575 533.891609)"><tspan font-size="22.000px">Hold C</tspan><tspan font-size="14.960px" dy="5.280px">B</tspan><tspan font-size="22.000px" dy="-5.280px"> and T fixed:</tspan></text>
     <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(710.04695 564.153641)">log-log slope=m=1.5</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(1.996958 -74.327209)">
+  <g id="axes_2" transform="translate(-6.589517 -1.386645)">
    <g id="patch_2">
     <path d="M 80.64 496.8  L 675.36 496.8  L 675.36 129.6  L 80.64 129.6  z " style="fill: #ffffff" />
    </g>
@@ -123,7 +123,7 @@
      </g>
     </g>
     <g id="text_9">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="378" y="524.868594" transform="rotate(-0 378 524.868594)"><tspan style="font-size: 11.000px">ln(C</tspan><tspan style="font-size: 7.920px" dy="2.640px">A</tspan><tspan style="font-size: 11.000px" dy="-2.640px">​</tspan><tspan style="font-size: 11.000px">/C</tspan><tspan style="font-size: 7.920px" dy="2.640px">ref</tspan><tspan style="font-size: 11.000px" dy="-2.640px">​</tspan><tspan style="font-size: 11.000px">)</tspan></text>
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="378" y="524.868594" transform="rotate(-0 378 524.868594)"><tspan font-size="11.000px">ln(C</tspan><tspan font-size="7.480px" dy="2.640px">A</tspan><tspan font-size="11.000px" dy="-2.640px">/C</tspan><tspan font-size="7.480px" dy="2.640px">ref</tspan><tspan font-size="11.000px" dy="-2.640px">)</tspan></text>
     </g>
    </g>
    <g id="matplotlib.axis_2">
@@ -235,7 +235,7 @@
      </g>
     </g>
     <g id="text_18">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="53.778437" y="313.2" transform="rotate(-90 53.778437 313.2)"><tspan style="font-size: 11.000px">ln[(-r</tspan><tspan style="font-size: 7.920px" dy="2.640px">A</tspan><tspan style="font-size: 11.000px" dy="-2.640px">​</tspan><tspan style="font-size: 11.000px">)/r</tspan><tspan style="font-size: 7.920px" dy="2.640px">ref</tspan><tspan style="font-size: 11.000px" dy="-2.640px">​</tspan><tspan style="font-size: 11.000px">]</tspan></text>
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="53.778437" y="313.2" transform="rotate(-90 53.778437 313.2)"><tspan font-size="11.000px">ln[(-r</tspan><tspan font-size="7.480px" dy="2.640px">A</tspan><tspan font-size="11.000px" dy="-2.640px">)/r</tspan><tspan font-size="7.480px" dy="2.640px">ref</tspan><tspan font-size="11.000px" dy="-2.640px">]</tspan></text>
     </g>
    </g>
    <g id="line2d_27">
@@ -248,7 +248,7 @@
     <path d="M 80.64 496.8  L 675.36 496.8  " style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linejoin: miter; stroke-linecap: square" />
    </g>
    <g id="text_19">
-    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start" x="278.208604" y="395.683887" transform="rotate(-0 278.208604 395.683887)"><tspan style="font-size: 13.000px">Δln C</tspan><tspan style="font-size: 9.360px" dy="3.120px">A</tspan><tspan style="font-size: 13.000px" dy="-3.120px">​</tspan><tspan style="font-size: 13.000px">=1</tspan></text>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start" x="278.208604" y="395.683887" transform="rotate(-0 278.208604 395.683887)"><tspan font-size="13.000px">Δln C</tspan><tspan font-size="8.840px" dy="3.120px">A</tspan><tspan font-size="13.000px" dy="-3.120px">=1</tspan></text>
    </g>
    <g id="text_20">
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start" x="389.740164" y="342.526242" transform="rotate(-0 389.740164 342.526242)">Δln rate=1.5</text>
@@ -263,12 +263,12 @@
    </g>
   </g>
   <g id="text_21">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Reaction orders are concentration exponents measured while other variables are fixed</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="110.823" transform="rotate(-0 55.44 110.823)">Reaction orders are concentration exponents measured while other variables are fixed</text>
   </g>
   <g id="text_22">
 </g>
-  <g id="text_23" transform="translate(0.000000 -131.870855)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(131.089062 656.501562)"><tspan style="font-size: 10.000px">Illustrative empirical rate law; C</tspan><tspan style="font-size: 7.200px" dy="2.400px">B</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px"> is held at1 mol/L. Dimensionless logarithms use C</tspan><tspan style="font-size: 7.200px" dy="2.400px">ref</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=1 mol/L,r</tspan><tspan style="font-size: 7.200px" dy="2.400px">ref</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=1 mol/(L·min). For overall order2, k has units</tspan></text>
+  <g id="text_23">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(131.089062 656.501562)"><tspan font-size="10.000px">Illustrative empirical rate law; C</tspan><tspan font-size="6.800px" dy="2.400px">B</tspan><tspan font-size="10.000px" dy="-2.400px"> is held at1 mol/L. Dimensionless logarithms use C</tspan><tspan font-size="6.800px" dy="2.400px">ref</tspan><tspan font-size="10.000px" dy="-2.400px">=1 mol/L,r</tspan><tspan font-size="6.800px" dy="2.400px">ref</tspan><tspan font-size="10.000px" dy="-2.400px">=1 mol/(L·min). For overall order2, k has units</tspan></text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(157.497656 669.497187)">L/(mol·min); selected k=0.5. Orders are not automatically stoichiometric coefficients; changing conditions can change the apparent order.</text>
   </g>
  </g>

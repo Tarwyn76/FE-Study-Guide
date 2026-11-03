@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="820.183pt" height="536.297pt" viewBox="15.428571 3.702857 820.182857 536.297143" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="786.240pt" height="532.800pt" viewBox="6.240000 74.400000 786.240000 532.800000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(32.400000 -69.840000)">
+  <g id="axes_1">
    <g id="text_1">
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(648.294837 177.985006)">n = 50, c = 2</text>
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(671.6964 204.939694)">p = 0.05</text>
@@ -127,7 +127,7 @@
     </g>
    </g>
   </g>
-  <g id="axes_2" transform="translate(32.400000 -69.840000)">
+  <g id="axes_2">
    <g id="patch_2">
     <path d="M 60.48 453.6  L 587.52 453.6  L 587.52 136.08  L 60.48 136.08  z " style="fill: #ffffff" />
    </g>
@@ -417,7 +417,7 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle" x="368.988476" y="129.312158" transform="rotate(-0 368.988476 129.312158)">Reject</text>
    </g>
   </g>
-  <g id="text_25">
+  <g id="text_25" transform="translate(0 69.120)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="32.4" transform="rotate(-0 38.88 32.4)">Acceptance probability adds the count probabilities through c</text>
   </g>
   </g>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1003.629pt" height="654.730pt" viewBox="30.857143 13.110029 1003.628571 654.730282" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="970.000pt" height="642.000pt" viewBox="41.000000 101.000000 970.000000 642.000000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 792  L 1080 792  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(13.950000 -87.300000)">
+  <g id="axes_1" transform="translate(0.404167 -0.808564)">
    <g id="patch_2">
     <path d="M 386.208 269.3592  L 693.792 269.3592  L 693.792 149.1336  L 386.208 149.1336  z " clip-path="url(#p389f495365)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -179,10 +179,10 @@
     <text style="font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="540" y="684.462012" transform="rotate(-0 540 684.462012)">Address decoding selects one target; each target exposes registers or memory.</text>
    </g>
   </g>
-  <g id="text_11">
+  <g id="text_11" transform="translate(0 88.0000)">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="43.56" transform="rotate(-0 59.4 43.56)">Address, data, and control buses connect a processor to memory and peripherals</text>
   </g>
-  <g id="text_13" transform="translate(0.000000 -94.500000)">
+  <g id="text_13" transform="translate(0 -12.0000)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 723.456625)">Conceptual memory-mapped bus. Separate vertical paths denote separate address/data/control signal bundles, not shorted wires at crossings. Read data</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 736.174125)">travels back toward the CPU; writes travel toward the selected target. Interrupts, arbitration, wait states, DMA, and serial pins are omitted.</text>
   </g>

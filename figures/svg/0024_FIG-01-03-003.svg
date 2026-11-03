@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="763.714pt" height="526.774pt" viewBox="14.142857 0.565815 763.714286 526.774067" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="745.600pt" height="502.568pt" viewBox="23.200000 12.623000 745.600000 502.568261" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 576  L 792 576  L 792 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -10.556701)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 35.64 169.8624  L 374.3784 169.8624  L 374.3784 426.2976  L 35.64 426.2976  z " clip-path="url(#p7ee4827c1e)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -133,11 +133,11 @@
    <g id="text_8">
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #a23b34" x="396" y="475.40085" transform="rotate(-0 396 475.40085)">Displayed results differ by 12: approximately 3.6% of 335.</text>
    </g>
-   <g id="text_9">
+   <g id="text_9" transform="translate(0.000000 -26.086700)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="396" y="520.640975" transform="rotate(-0 396 520.640975)">Small absolute error in the denominator → large relative error in the quotient.</text>
    </g>
   </g>
-  <g id="text_10">
+  <g id="text_10" transform="translate(0 10.423)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="35.64" y="28.8" transform="rotate(-0 35.64 28.8)">Premature rounding amplified by a small difference</text>
   </g>
   </g>

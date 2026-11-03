@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="934.750pt" height="463.242pt" viewBox="35.500000 13.667495 934.750000 463.241551" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="828.146pt" height="416.900pt" viewBox="35.854000 137.667389 828.146000 416.899758" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,13 +21,13 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.389479 -125.419374)">
+  <g id="axes_1" transform="translate(-6.556156 -2.070113)">
    <g id="text_1">
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(394.733828 503.991617)">h₁+V₁²/2=h₂+V₂²/2</text>
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(203.760156 534.989508)">Nozzle: h₁−h₂=20 kJ/kg, V₁=50 m/s → V₂=206.2 m/s</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-0.389479 -125.419374)">
+  <g id="axes_2" transform="translate(-6.556156 -2.070113)">
    <g id="patch_2">
     <path d="M 100.8 385.92  L 403.2 340.56  L 403.2 280.08  L 100.8 234.72  z " clip-path="url(#p3cb55b2cd8)" style="fill: #edf3f6; stroke: #235a78; stroke-linejoin: miter" />
    </g>
@@ -46,7 +46,7 @@
     <path d="M 446.220931 307.32  L 452.220931 310.32  L 446.220931 313.32  z " clip-path="url(#p3cb55b2cd8)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round" />
    </g>
   </g>
-  <g id="axes_3" transform="translate(-0.389479 -125.419374)">
+  <g id="axes_3" transform="translate(-6.556156 -2.070113)">
    <g id="patch_5">
     <path d="M 604.8 340.56  L 907.2 385.92  L 907.2 234.72  L 604.8 280.08  z " clip-path="url(#p271a156484)" style="fill: #edf3f6; stroke: #235a78; stroke-linejoin: miter" />
    </g>
@@ -66,9 +66,9 @@
    </g>
   </g>
   <g id="text_6">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">A nozzle converts enthalpy to speed; a diffuser reverses the trade</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="161.977" transform="rotate(-0 55.44 161.977)">A nozzle converts enthalpy to speed; a diffuser reverses the trade</text>
   </g>
-  <g id="text_8" transform="translate(0.000000 -213.446636)">
+  <g id="text_8">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(131.371875 656.640625)">Adiabatic, no shaft work, negligible elevation change. For typical subsonic operation pressure falls in a nozzle and rises in a diffuser; area trends can</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(301.032812 669.358125)">reverse for supersonic flow. h must be converted to J/kg in the speed calculation.</text>
   </g>

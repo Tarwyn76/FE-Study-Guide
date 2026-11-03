@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="903.600pt" height="540.000pt" viewBox="30.960000 11.520000 903.600000 540.000000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="883.788pt" height="494.436pt" viewBox="44.352000 131.588000 883.787520 494.436000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-29.400000 -109.218203)">
+  <g id="axes_1" transform="translate(0.000000 0.751422) translate(-35.321440 0.000000)">
    <g id="patch_2">
     <path d="M 127.2096 423.72  L 683.424 423.72  L 683.424 309.456  L 127.2096 309.456  z " clip-path="url(#p2234cc83c8)" style="fill: #e5ecef" />
    </g>
@@ -87,12 +87,14 @@
    </g>
   </g>
   <g id="text_4">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Signalized capacity depends on saturation flow and effective green for each lane group</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="154.984483" transform="rotate(-0 55.44 154.984483)">Signalized capacity depends on saturation flow and effective green for each lane group</text>
   </g>
-  <g id="text_6" transform="translate(0.000000 -147.024504)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(141.035156 650.281875)">Conceptual intersection, lane groups, stop lines and signal control. s is saturation flow for the specified lane group, g effective green and C cycle</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(117.146094 662.999375)">length. Demand v and capacity c must use a consistent period/lane basis. Capacity ratio alone does not determine level of service; delay also depends on</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(257.969531 675.716875)">arrivals, queues, phasing and analysis conditions. No signal timing or safety adequacy is certified.</text>
+  <g id="text_5">
+   </g>
+  <g id="text_6">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(141.035 588.586207)">Conceptual intersection, lane groups, stop lines and signal control. s is saturation flow for the specified lane group, g effective green and C cycle</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(117.146 601.303707)">length. Demand v and capacity c must use a consistent period/lane basis. Capacity ratio alone does not determine level of service; delay also depends on</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(257.97 614.021207)">arrivals, queues, phasing and analysis conditions. No signal timing or safety adequacy is certified.</text>
   </g>
  </g>
  <defs>

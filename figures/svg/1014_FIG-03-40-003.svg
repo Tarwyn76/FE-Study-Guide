@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1017.514pt" height="618.485pt" viewBox="30.857143 13.881207 1017.514286 618.484907" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="984.960pt" height="586.800pt" viewBox="33.120000 99.000000 984.960000 586.800000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,8 +21,8 @@
   <g id="patch_1">
    <path d="M 0 792  L 1080 792  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(14.400000 -76.500000)" />
-  <g id="axes_2" transform="translate(14.400000 -76.500000)">
+  <g id="axes_1" transform="translate(-0.410400 0.000000)" />
+  <g id="axes_2" transform="translate(-0.410400 0.000000)">
    <g id="patch_2">
     <path d="M 86.4 348.48  L 464.4 348.48  L 464.4 158.4  L 86.4 158.4  z " style="fill: #ffffff" />
    </g>
@@ -206,7 +206,7 @@
     </g>
    </g>
   </g>
-  <g id="axes_3" transform="translate(14.400000 -76.500000)">
+  <g id="axes_3" transform="translate(-0.410400 0.000000)">
    <g id="patch_7">
     <path d="M 626.4 348.48  L 1004.4 348.48  L 1004.4 158.4  L 626.4 158.4  z " style="fill: #ffffff" />
    </g>
@@ -379,7 +379,7 @@
     </g>
    </g>
   </g>
-  <g id="axes_4" transform="translate(14.400000 -76.500000)">
+  <g id="axes_4" transform="translate(-0.410400 0.000000)">
    <g id="patch_12">
     <path d="M 86.4 609.84  L 464.4 609.84  L 464.4 419.76  L 86.4 419.76  z " style="fill: #ffffff" />
    </g>
@@ -550,7 +550,7 @@
     </g>
    </g>
   </g>
-  <g id="axes_5" transform="translate(14.400000 -76.500000)">
+  <g id="axes_5" transform="translate(-0.410400 0.000000)">
    <g id="patch_17">
     <path d="M 626.4 609.84  L 1004.4 609.84  L 1004.4 419.76  L 626.4 419.76  z " style="fill: #ffffff" />
    </g>
@@ -722,11 +722,13 @@
    </g>
   </g>
   <g id="text_53">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="43.56" transform="rotate(-0 59.4 43.56)">Suppressing the carrier and selecting sidebands changes spectral occupancy</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="125.100943" transform="rotate(-0 59.4 125.100943)">Suppressing the carrier and selecting sidebands changes spectral occupancy</text>
   </g>
-  <g id="text_55" transform="translate(0.000000 -129.600000)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 723.456625)">Same sinusoidal1 kHz message and10 kHz carrier reference; retained sideband amplitudes are held at0.3 V for comparison. Positive-frequency peak-amplitude</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 736.174125)">convention. For a general baseband bandwidth W, AM/DSB occupy2W and one SSB occupies W; single-tone stems do not fill those bands.</text>
+  <g id="text_54">
+   </g>
+  <g id="text_55">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 658.566038)">Same sinusoidal1 kHz message and10 kHz carrier reference; retained sideband amplitudes are held at0.3 V for comparison. Positive-frequency peak-amplitude</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 671.283538)">convention. For a general baseband bandwidth W, AM/DSB occupy2W and one SSB occupies W; single-tone stems do not fill those bands.</text>
   </g>
  </g>
  <defs>

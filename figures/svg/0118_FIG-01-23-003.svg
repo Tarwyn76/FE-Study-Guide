@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="763.406pt" height="513.463pt" viewBox="16.662857 4.320000 763.405714 513.462857" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="741.773pt" height="459.045pt" viewBox="26.400000 61.523937 741.772800 459.044859" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-42.840000 -123.840000)">
+  <g id="axes_1" transform="translate(-53.594400 -67.730989)">
    <g id="text_1">
     <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="707.184" y="184.931063" transform="rotate(-0 707.184 184.931063)">Plane change: df = 0.700</text>
    </g>
@@ -31,7 +31,7 @@
    <g id="text_3">
     <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="707.184" y="421.904663" transform="rotate(-0 707.184 421.904663)">Error: Δf − df = 0.246</text>
    </g>
-   <g id="text_4">
+   <g id="text_4" transform="translate(0.000000 -145.983297)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="585.376175" transform="rotate(-0 432 585.376175)">For bounded second partials and small increments, the linearization error is second order.</text>
    </g>
   </g>
@@ -296,7 +296,7 @@
     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="527.146696" y="283.655257" transform="rotate(-0 527.146696 283.655257)">z</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-42.840000 -123.840000)">
+  <g id="axes_2" transform="translate(-53.594400 -67.730989)">
    <g id="line2d_27">
     <path d="M 381.045703 323.143426  L 381.445094 296.953283  " clip-path="url(#p4ef5f71c16)" style="fill: none; stroke: #b47722; stroke-width: 2; stroke-linecap: square" />
    </g>
@@ -2640,7 +2640,7 @@
     <path d="M 347.482188 336.764601  L 353.982872 333.229135  L 357.532936 332.036897  L 351.04204 335.565152  z " clip-path="url(#p4ef5f71c16)" style="fill: #1d4b65; fill-opacity: 0.2" />
    </g>
   </g>
-  <g id="text_34">
+  <g id="text_34" transform="translate(0 55.080)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="32.4" transform="rotate(-0 38.88 32.4)">A tangent plane approximates nearby surface values</text>
   </g>
   </g>

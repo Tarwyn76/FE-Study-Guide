@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="864.250pt" height="545.594pt" viewBox="43.250000 13.000000 864.250000 545.593750" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="821.404pt" height="496.421pt" viewBox="42.596000 86.446000 821.404000 496.420777" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,9 +21,9 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-15.124375 -77.092811)">
+  <g id="axes_1" transform="translate(-15.743577 -2.739288)">
    <g id="text_1">
-    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="728.28" y="474.002469" transform="rotate(-0 728.28 474.002469)"><tspan style="font-size: 22.000px">PARALLEL: C</tspan><tspan style="font-size: 15.840px" dy="5.280px">eq</tspan><tspan style="font-size: 22.000px" dy="-5.280px">​</tspan><tspan style="font-size: 22.000px">=5 µF</tspan></text>
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="728.28" y="474.002469" transform="rotate(-0 728.28 474.002469)"><tspan font-size="22.000px">PARALLEL: C</tspan><tspan font-size="14.960px" dy="5.280px">eq</tspan><tspan font-size="22.000px" dy="-5.280px">=5 µF</tspan></text>
    </g>
    <g id="text_2">
     
@@ -72,7 +72,7 @@
     </g>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-15.124375 -77.092811)">
+  <g id="axes_2" transform="translate(-15.743577 -2.739288)">
    <g id="line2d_1">
     <path d="M 75.212308 273.6  L 136.622769 273.6  " clip-path="url(#p758f118ff0)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square" />
    </g>
@@ -116,10 +116,10 @@
     <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #235a78" x="368.307692" y="239.081587" transform="rotate(-0 368.307692 239.081587)">3 µF</text>
    </g>
    <g id="text_6">
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="270.609231" y="383.594189" transform="rotate(-0 270.609231 383.594189)"><tspan style="font-size: 21.000px">SERIES: C</tspan><tspan style="font-size: 15.120px" dy="5.040px">eq</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">=1.2 µF</tspan></text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="270.609231" y="383.594189" transform="rotate(-0 270.609231 383.594189)"><tspan font-size="21.000px">SERIES: C</tspan><tspan font-size="14.280px" dy="5.040px">eq</tspan><tspan font-size="21.000px" dy="-5.040px">=1.2 µF</tspan></text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(-15.124375 -77.092811)">
+  <g id="axes_3" transform="translate(-15.743577 -2.739288)">
    <g id="line2d_13">
     <path d="M 587.489362 356.323404  L 587.489362 172.493617  L 648.765957 172.493617  " clip-path="url(#pcd95668137)" style="fill: none; stroke: #23313d; stroke-width: 1.8; stroke-linecap: square" />
    </g>
@@ -173,11 +173,11 @@
    </g>
   </g>
   <g id="text_9">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Capacitor series and parallel equivalents follow charge and voltage constraints</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="113.011" transform="rotate(-0 55.44 113.011)">Capacitor series and parallel equivalents follow charge and voltage constraints</text>
   </g>
-  <g id="text_11" transform="translate(0.000000 -135.452790)">
+  <g id="text_11">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(122.466406 656.501562)">Series floating intermediate node with zero net initial charge gives equal plate-charge magnitude; parallel capacitors share voltage. Equivalent terminal</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(238.267969 669.219062)"><tspan style="font-size: 10.000px">energy for this initially uncharged network is W=½C</tspan><tspan style="font-size: 7.200px" dy="2.400px">eqV</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">²; at 10 V, series stores 60 µJ and parallel 250 µJ.</tspan></text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(238.267969 669.219062)"><tspan font-size="10.000px">energy for this initially uncharged network is W=½C</tspan><tspan font-size="6.800px" dy="2.400px">eqV</tspan><tspan font-size="10.000px" dy="-2.400px">²; at 10 V, series stores 60 µJ and parallel 250 µJ.</tspan></text>
   </g>
  </g>
  <defs>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="854.743pt" height="533.211pt" viewBox="4.937143 3.702857 854.742857 533.211429" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="830.400pt" height="499.524pt" viewBox="7.200000 71.520000 830.400000 499.523596" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(10.080000 -65.520000)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 353.376 139.5792  L 549.936 139.5792  L 549.936 268.3692  L 353.376 268.3692  z " clip-path="url(#pb8b4dac8b6)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -44,11 +44,11 @@
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(677.570597 197.209395)">x = μ + zσ</text>
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(681.023722 220.12088)">Threshold</text>
    </g>
-   <g id="text_3">
+   <g id="text_3" transform="translate(0.000000 -35.292267)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="585.376175" transform="rotate(-0 432 585.376175)">A one-sided cumulative 95th percentile and a two-sided central 95% interval use different fractiles.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(10.080000 -65.520000)">
+  <g id="axes_2">
    <g id="patch_6">
     <path d="M 34.56 291.6  L 293.76 291.6  L 293.76 129.6  L 34.56 129.6  z " style="fill: #ffffff" />
    </g>
@@ -203,7 +203,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="164.16" y="123.6" transform="rotate(-0 164.16 123.6)">Cumulative probability 0.95</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(10.080000 -65.520000)">
+  <g id="axes_3">
    <g id="patch_9">
     <path d="M 198.72 518.4  L 665.28 518.4  L 665.28 356.4  L 198.72 356.4  z " style="fill: #ffffff" />
    </g>
@@ -274,7 +274,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="432" y="350.4" transform="rotate(-0 432 350.4)">Central 95%: 2.5% in each tail</text>
    </g>
   </g>
-  <g id="text_20">
+  <g id="text_20" transform="translate(0 65.880)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="32.4" transform="rotate(-0 38.88 32.4)">Inverse normal: area → fractile → physical threshold</text>
   </g>
   </g>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="874.605pt" height="512.097pt" viewBox="43.250000 13.000000 874.605000 512.097196" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="821.193pt" height="463.886pt" viewBox="42.807000 111.394000 821.193000 463.885624" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-15.016250 -99.589967)">
+  <g id="axes_1" transform="translate(-20.529825 -3.422232)">
    <g id="text_1">
     
     <g style="fill: #23313d" transform="translate(734.2196 211.218)">
@@ -67,7 +67,7 @@
     <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(748.621866 561.729117)">1 A→2 A</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-15.016250 -99.589967)">
+  <g id="axes_2" transform="translate(-20.529825 -3.422232)">
    <g id="line2d_1">
     <path d="M 357.040976 389.51122  L 357.040976 215.446829  " clip-path="url(#p854177ecf5)" style="fill: none; stroke: #23313d; stroke-width: 1.4; stroke-linecap: square" />
    </g>
@@ -142,9 +142,9 @@
    </g>
   </g>
   <g id="text_10">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Ideal transformer dots set voltage polarity and current reference</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="137.081" transform="rotate(-0 55.44 137.081)">Ideal transformer dots set voltage polarity and current reference</text>
   </g>
-  <g id="text_12" transform="translate(0.000000 -164.762814)">
+  <g id="text_12">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(130.754687 656.640625)">Voltages are top dotted terminal minus bottom terminal on both windings. Primary current enters its dot; secondary load current leaves its dot. Ideal</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(192.705469 669.358125)">sinusoidal transformer has no loss, leakage or magnetizing current: VₚIₚ*=VₛIₛ*. Numerical example uses unity power factor.</text>
   </g>

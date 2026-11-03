@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="823.269pt" height="395.113pt" viewBox="17.280000 3.704180 823.268571 395.112540" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="795.840pt" height="385.500pt" viewBox="26.400000 88.194335 795.840000 385.499742" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 576  L 864 576  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(7.560000 -83.520000)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 38.88 129.905841  L 219.7152 129.905841  L 219.7152 219.058407  L 38.88 219.058407  z " clip-path="url(#pedc2ac52ad)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -64,11 +64,11 @@
    <g id="text_10">
     <text style="font-size: 25px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="436.681092" transform="rotate(-0 432 436.681092)">ν = n − 1 = 3</text>
    </g>
-   <g id="text_11">
+   <g id="text_11" transform="translate(0.000000 -13.933623)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="469.013534" transform="rotate(-0 432 469.013534)">Deviations dᵢ = xᵢ − x̄ always sum to zero. Once three are chosen, the fourth is determined.</text>
    </g>
   </g>
-  <g id="text_12">
+  <g id="text_12" transform="translate(0 83.600)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="28.8" transform="rotate(-0 38.88 28.8)">Estimating one mean uses one degree of freedom</text>
   </g>
   </g>

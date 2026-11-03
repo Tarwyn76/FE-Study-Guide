@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="788.000pt" height="481.798pt" viewBox="18.250000 10.500000 788.000000 481.797774" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="799.929pt" height="481.280pt" viewBox="15.100000 62.829591 799.929000 481.279938" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,19 +21,19 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(0.985000 -53.845779)">
+  <g id="axes_1" transform="translate(-1.666519 -2.000228)">
    <g id="text_1">
-    <text style="font-size: 29px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="678.0672" y="201.156506" transform="rotate(-0 678.0672 201.156506)">q″_x=−k dT/dx</text>
+    <text style="font-size: 29px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="678.0672" y="201.156506" transform="rotate(-0 678.0672 201.156506)"><tspan font-size="29.000px">q″</tspan><tspan font-size="19.720px" dy="6.960px">x</tspan><tspan font-size="29.000px" dy="-6.960px">=−k dT/dx</tspan></text>
    </g>
    <g id="text_2">
     <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(573.92595 322.614487)">dT/dx=−600 K/m</text>
     <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(581.8872 354.960113)">k=0.50 W/(m·K)</text>
    </g>
    <g id="text_3">
-    <text style="font-size: 27px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="678.0672" y="477.608484" transform="rotate(-0 678.0672 477.608484)">q″_x=+300 W/m²</text>
+    <text style="font-size: 27px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="678.0672" y="477.608484" transform="rotate(-0 678.0672 477.608484)"><tspan font-size="27.000px">q″</tspan><tspan font-size="18.360px" dy="6.480px">x</tspan><tspan font-size="27.000px" dy="-6.480px">=+300 W/m²</tspan></text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(0.985000 -53.845779)">
+  <g id="axes_2" transform="translate(-1.666519 -2.000228)">
    <g id="patch_2">
     <path d="M 69.12 453.6  L 561.6 453.6  L 561.6 110.16  L 69.12 110.16  z " style="fill: #ffffff" />
    </g>
@@ -230,9 +230,9 @@
    </g>
   </g>
   <g id="text_19">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Conductive heat flows down the temperature gradient</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="89.580" transform="rotate(-0 47.52 89.580)">Conductive heat flows down the temperature gradient</text>
   </g>
-  <g id="text_21" transform="translate(0.000000 -131.331169)">
+  <g id="text_21" transform="translate(0.000000 -79.342359)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(96.796875 590.616625)">Steady 1D plane conduction, constant k, no internal heat generation. Temperature differences/gradients have equal numerical values</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(228.90625 603.334125)">in Kelvin and Celsius; the minus sign makes heat flow toward lower temperature.</text>
   </g>

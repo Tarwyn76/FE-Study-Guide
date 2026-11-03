@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1064.571pt" height="678.086pt" viewBox="7.714286 16.200000 1064.571429 678.085714" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1041.000pt" height="664.000pt" viewBox="36.000000 80.000000 1041.000000 664.000000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,8 +21,8 @@
   <g id="patch_1">
    <path d="M 0 864  L 1080 864  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-16.200000 -62.100000)" />
-  <g id="axes_2" transform="translate(-16.200000 -62.100000)">
+  <g id="axes_1" transform="translate(0.433750 0.000000)" />
+  <g id="axes_2" transform="translate(0.433750 0.000000)">
    <g id="patch_2">
     <path d="M 147.96 238.2912  L 273.24 238.2912  L 273.24 173.664  L 147.96 173.664  z " clip-path="url(#pb05f71633e)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -132,7 +132,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="315" y="381.13845" transform="rotate(-0 315 381.13845)">Invalid</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(-16.200000 -62.100000)">
+  <g id="axes_3" transform="translate(0.433750 0.000000)">
    <g id="patch_19">
     <path d="M 493.56 238.2912  L 618.84 238.2912  L 618.84 173.664  L 493.56 173.664  z " clip-path="url(#p5207307d64)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -242,7 +242,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="660.6" y="381.13845" transform="rotate(-0 660.6 381.13845)">¬Q</text>
    </g>
   </g>
-  <g id="axes_4" transform="translate(-16.200000 -62.100000)">
+  <g id="axes_4" transform="translate(0.433750 0.000000)">
    <g id="patch_36">
     <path d="M 839.16 238.2912  L 964.44 238.2912  L 964.44 173.664  L 839.16 173.664  z " clip-path="url(#pec220f712f)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -298,7 +298,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="980.1" y="328.26165" transform="rotate(-0 980.1 328.26165)">1</text>
    </g>
   </g>
-  <g id="axes_5" transform="translate(-16.200000 -62.100000)">
+  <g id="axes_5" transform="translate(0.433750 0.000000)">
    <g id="patch_44">
     <path d="M 172.8 656.64  L 993.6 656.64  L 993.6 501.12  L 172.8 501.12  z " style="fill: #ffffff" />
    </g>
@@ -413,10 +413,10 @@
     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="192.551872" y="639.570732" transform="rotate(-0 192.551872 639.570732)">QD</text>
    </g>
   </g>
-  <g id="text_53">
+  <g id="text_53" transform="translate(0 63.0000)">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="47.52" transform="rotate(-0 59.4 47.52)">Clocked SR, JK, and D flip-flops have different next-state rules</text>
   </g>
-  <g id="text_55" transform="translate(0.000000 -135.000000)">
+  <g id="text_55" transform="translate(0 -77.0000)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 789.552625)">Q+ is the state after the active clock edge. All outputs start0; edges at1,3,5,7. SR input pairs are10,00,01,10; JK pairs10,11,00,11; D inputs1,0,1,1.</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 802.270125)">Inputs are assumed stable through setup/hold intervals. The SR11 row is excluded from the waveform.</text>
   </g>

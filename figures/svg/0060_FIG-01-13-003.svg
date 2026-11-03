@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="737.126pt" height="468.495pt" viewBox="15.840000 2.263261 737.125714 468.495088" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="703.360pt" height="425.901pt" viewBox="24.080000 70.285242 703.360000 425.901354" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 576  L 792 576  L 792 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(16.500000 -65.319588)">
+  <g id="axes_1" transform="translate(-4.396000 0.000000)">
    <g id="text_1">
     
     <g style="fill: #23313d" transform="translate(551.6626 202.3726)">
@@ -47,11 +47,11 @@
     <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(549.121584 317.507348)">Scalar projection on A:</text>
     <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(573.183694 341.463989)">B · Â = |B| cos θ</text>
    </g>
-   <g id="text_3">
+   <g id="text_3" transform="translate(0.000000 -42.180741)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="396" y="520.640975" transform="rotate(-0 396 520.640975)">Projection is signed: negative if the angle exceeds 90°.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(16.500000 -65.319588)">
+  <g id="axes_2" transform="translate(-4.396000 0.000000)">
    <g id="patch_2">
     <path d="M 83.6 432  L 470.8 432  L 470.8 115.2  L 83.6 115.2  z " style="fill: #ffffff" />
    </g>
@@ -316,7 +316,7 @@
     <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start" x="182.16" y="375.68" transform="rotate(-0 182.16 375.68)">θ</text>
    </g>
   </g>
-  <g id="text_26">
+  <g id="text_26" transform="translate(0 66.835)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="35.64" y="28.8" transform="rotate(-0 35.64 28.8)">Scalar projection and the dot product</text>
   </g>
   </g>

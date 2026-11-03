@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="833.143pt" height="799.641pt" viewBox="15.428571 10.489123 833.142857 799.641397" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="811.200pt" height="779.520pt" viewBox="26.400000 69.600000 811.200000 779.520000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 936  L 864 936  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -48.960000)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 235.44 112.32  L 628.56 112.32  L 628.56 172.654054  L 235.44 172.654054  z " clip-path="url(#p0650b082c2)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -156,7 +156,7 @@
     <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(653.230741 803.201906)">reach final time?</text>
    </g>
   </g>
-  <g id="text_19">
+  <g id="text_19" transform="translate(0 49.277)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="46.8" transform="rotate(-0 38.88 46.8)">Guarded Newton iteration: converge or explain failure</text>
   </g>
   </g>

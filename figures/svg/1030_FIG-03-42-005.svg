@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="974.314pt" height="654.171pt" viewBox="32.400000 16.971429 974.314286 654.171429" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="940.896pt" height="622.080pt" viewBox="46.080000 112.320000 940.896000 622.080000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,8 +21,8 @@
   <g id="patch_1">
    <path d="M 0 864  L 1080 864  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-4.050000 -87.300000)" />
-  <g id="axes_2" transform="translate(-4.050000 -87.300000)">
+  <g id="axes_1" transform="translate(-22.968000 0.000000)" />
+  <g id="axes_2" transform="translate(-22.968000 0.000000)">
    <g id="patch_2">
     <path d="M 156.168 263.2608  L 230.472 263.2608  L 230.472 228.1824  L 156.168 228.1824  z " clip-path="url(#pfe003034f4)" style="fill: #ffffff; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -156,7 +156,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="304.776" y="404.38005" transform="rotate(-0 304.776 404.38005)">Retain only variables constant in the group.</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(-4.050000 -87.300000)">
+  <g id="axes_3" transform="translate(-22.968000 0.000000)">
    <g id="patch_19">
     <path d="M 685.368 263.2608  L 759.672 263.2608  L 759.672 228.1824  L 685.368 228.1824  z " clip-path="url(#p45866bd0cf)" style="fill: #ffffff; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -290,7 +290,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="833.976" y="404.38005" transform="rotate(-0 833.976 404.38005)">Retain only variables constant in the group.</text>
    </g>
   </g>
-  <g id="axes_4" transform="translate(-4.050000 -87.300000)">
+  <g id="axes_4" transform="translate(-22.968000 0.000000)">
    <g id="patch_36">
     <path d="M 156.168 548.3808  L 230.472 548.3808  L 230.472 513.3024  L 156.168 513.3024  z " clip-path="url(#pf0f2d0e3d2)" style="fill: #dcebe5; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -424,7 +424,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="304.776" y="689.50005" transform="rotate(-0 304.776 689.50005)">Retain only variables constant in the group.</text>
    </g>
   </g>
-  <g id="axes_5" transform="translate(-4.050000 -87.300000)">
+  <g id="axes_5" transform="translate(-22.968000 0.000000)">
    <g id="patch_53">
     <path d="M 685.368 548.3808  L 759.672 548.3808  L 759.672 513.3024  L 685.368 513.3024  z " clip-path="url(#pc5400aff25)" style="fill: #dcebe5; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -559,11 +559,13 @@
    </g>
   </g>
   <g id="text_109">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="47.52" transform="rotate(-0 59.4 47.52)">Karnaugh-map groups contain powers of two in Gray-code adjacency</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="140.150000" transform="rotate(-0 59.4 140.150000)">Karnaugh-map groups contain powers of two in Gray-code adjacency</text>
   </g>
-  <g id="text_111" transform="translate(0.000000 -157.500000)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 789.552625)">Four independent four-variable maps, not overlapping groups of one function. Row and column order00,01,11,10 changes one bit at a time; opposite edges are</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 802.270125)">adjacent. Each shown group contains only ones. In SOP minimization, a variable that changes within a group is eliminated.</text>
+  <g id="text_110">
+   </g>
+  <g id="text_111">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 707.200000)">Four independent four-variable maps, not overlapping groups of one function. Row and column order00,01,11,10 changes one bit at a time; opposite edges are</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 719.917500)">adjacent. Each shown group contains only ones. In SOP minimization, a variable that changes within a group is eliminated.</text>
   </g>
  </g>
  <defs>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="852.274pt" height="533.211pt" viewBox="6.171429 3.702857 852.274286 533.211429" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="828.480pt" height="467.623pt" viewBox="5.280000 71.520000 828.480000 467.623318" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,12 +21,12 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(12.600000 -65.520000)">
-   <g id="text_1">
+  <g id="axes_1">
+   <g id="text_1" transform="translate(0.000000 -66.258824)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="585.376175" transform="rotate(-0 432 585.376175)">Solve H Δx = −∇h; apply xnext = x + Δx. Check Hessian definiteness and globalization for general problems.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(12.600000 -65.520000)">
+  <g id="axes_2">
    <g id="patch_2">
     <path d="M 43.2 473.04  L 397.44 473.04  L 397.44 129.6  L 43.2 129.6  z " style="fill: #ffffff" />
    </g>
@@ -227,7 +227,7 @@
     </g>
    </g>
   </g>
-  <g id="axes_3" transform="translate(12.600000 -65.520000)">
+  <g id="axes_3">
    <g id="patch_8">
     <path d="M 492.48 425.21434  L 820.8 425.21434  L 820.8 177.42566  L 492.48 177.42566  z " style="fill: #ffffff" />
    </g>
@@ -460,7 +460,7 @@
     </g>
    </g>
   </g>
-  <g id="text_34">
+  <g id="text_34" transform="translate(0 65.880)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="32.4" transform="rotate(-0 38.88 32.4)">Newton minimization uses slope and curvature</text>
   </g>
   </g>

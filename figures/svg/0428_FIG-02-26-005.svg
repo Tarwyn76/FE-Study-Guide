@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="882.514pt" height="539.499pt" viewBox="26.742857 12.033426 882.514286 539.498607" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="858.080pt" height="530.705pt" viewBox="38.960000 87.884000 858.080000 530.705000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 936 720  L 936 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -73.326111)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 51.48 582.696  L 884.52 582.696  L 884.52 468.432  L 51.48 468.432  z " clip-path="url(#p150fb68384)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -37,7 +37,7 @@
   <g id="patch_4">
    <path d="M 88.56 453.6  L 398.16 453.6  L 398.16 144  L 88.56 144  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_2" transform="translate(-0.000000 -73.326111)">
+  <g id="axes_2">
    <g id="line2d_1">
     <path d="M 132.415586 326.23066  L 310.697391 377.469392  L 365.383546 342.900167  L 191.162436 296.078614  L 132.415586 326.23066  " clip-path="url(#pccd2a76911)" style="fill: none; stroke: #235a78; stroke-width: 2; stroke-linecap: square" />
    </g>
@@ -62,7 +62,7 @@
     <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle" x="243.36" y="138" transform="rotate(-0 243.36 138)">SYMMETRIC 3D ASSEMBLY</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(-0.000000 -73.326111)">
+  <g id="axes_3">
    <g id="patch_5">
     <path d="M 565.2 355.572  L 838.8 355.572  L 838.8 344.628  L 565.2 344.628  z " clip-path="url(#p1d73a41bb4)" style="fill: #d3e2ea; stroke: #235a78; stroke-width: 1.4; stroke-linejoin: miter" />
    </g>
@@ -92,10 +92,10 @@
     <path d="M 705 340.195932  L 702 346.195932  L 699 340.195932  z " clip-path="url(#p1d73a41bb4)" style="fill: #a23b34; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round" />
    </g>
   </g>
-  <g id="text_5">
+  <g id="text_5" transform="translate(0 72.710)">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="51.48" y="39.6" transform="rotate(-0 51.48 39.6)">Establish symmetry and coplanarity before choosing a planar model</text>
   </g>
-  <g id="text_7" transform="translate(0.000000 -131.050921)">
+  <g id="text_7" transform="translate(0.000000 -2.860943) translate(0 -56.045)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="468" y="660.24" transform="rotate(-0 468 660.24)">A symmetric-looking object alone is insufficient. A 2D projection may hide transverse force or torsional moment.</text>
   </g>
  </g>

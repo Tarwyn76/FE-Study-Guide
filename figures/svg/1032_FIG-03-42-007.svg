@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1026.000pt" height="615.400pt" viewBox="28.542857 13.881207 1026.000000 615.400195" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1004.000pt" height="602.283pt" viewBox="11.000000 76.717004 1004.000000 602.282996" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,8 +21,8 @@
   <g id="patch_1">
    <path d="M 0 792  L 1080 792  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(28.800000 -61.200000)" />
-  <g id="axes_2" transform="translate(28.800000 -61.200000)">
+  <g id="axes_1" transform="translate(0.418333 0.000000)" />
+  <g id="axes_2" transform="translate(0.418333 0.000000)">
    <g id="patch_2">
     <path d="M 400.032 224.2944  L 428.868 224.2944  C 476.928 224.2944 476.928 157.0104 428.868 157.0104  L 400.032 157.0104  z " clip-path="url(#p81beffb5a0)" style="fill: #ffffff; stroke: #235a78; stroke-width: 1.8; stroke-linejoin: miter" />
    </g>
@@ -78,7 +78,7 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="227.016" y="343.196787" transform="rotate(-0 227.016 343.196787)">C=1</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(28.800000 -61.200000)">
+  <g id="axes_3" transform="translate(0.418333 0.000000)">
    <g id="patch_8">
     <path d="M 140.4 594  L 982.8 594  L 982.8 419.76  L 140.4 419.76  z " style="fill: #ffffff" />
    </g>
@@ -209,10 +209,10 @@
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end" x="106.704" y="577.635473" transform="rotate(-0 106.704 577.635473)">F</text>
    </g>
   </g>
-  <g id="text_16">
+  <g id="text_16" transform="translate(0 63.0000)">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="43.56" transform="rotate(-0 59.4 43.56)">Unequal reconvergent delays can produce a static-one glitch</text>
   </g>
-  <g id="text_18" transform="translate(0.000000 -131.400000)">
+  <g id="text_18" transform="translate(0 -76.0000)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 723.456625)">Illustrative path delays of1 ns and4 ns at the OR inputs; OR delay itself is idealized. Both stable Boolean endpoints give F=1, but neither product is</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 736.174125)">briefly true. Adding the consensus term BC removes this static-one hazard for the shown transition.</text>
   </g>

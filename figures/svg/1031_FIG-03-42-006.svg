@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1005.171pt" height="599.400pt" viewBox="31.628571 18.514286 1005.171429 599.400000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="983.520pt" height="571.680pt" viewBox="46.080000 112.320000 983.520000 571.680000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,8 +21,8 @@
   <g id="patch_1">
    <path d="M 0 864  L 1080 864  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-7.650000 -87.300000)" />
-  <g id="axes_2" transform="translate(-7.650000 -87.300000)">
+  <g id="axes_1" transform="translate(-9.835200 0.000000)" />
+  <g id="axes_2" transform="translate(-9.835200 0.000000)">
    <g id="patch_2">
     <path d="M 156.168 259.5456  L 416.232 259.5456  L 416.232 206.3232  L 156.168 206.3232  z " clip-path="url(#pbd530c291c)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -46,7 +46,7 @@
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(201.367344 363.270687)">Cout=AB+Cin(A⊕B)</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(-7.650000 -87.300000)">
+  <g id="axes_3" transform="translate(-9.835200 0.000000)">
    <g id="patch_5">
     <path d="M 685.368 259.5456  L 945.432 259.5456  L 945.432 206.3232  L 685.368 206.3232  z " clip-path="url(#p6c153a3c29)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -69,7 +69,7 @@
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(774.379531 352.460812)">S=1:Y=I1</text>
    </g>
   </g>
-  <g id="axes_4" transform="translate(-7.650000 -87.300000)">
+  <g id="axes_4" transform="translate(-9.835200 0.000000)">
    <g id="patch_8">
     <path d="M 156.168 544.6656  L 416.232 544.6656  L 416.232 491.4432  L 156.168 491.4432  z " clip-path="url(#p5dc527dd98)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -92,7 +92,7 @@
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(204.193594 637.580812)">10→0100;11→1000</text>
    </g>
   </g>
-  <g id="axes_5" transform="translate(-7.650000 -87.300000)">
+  <g id="axes_5" transform="translate(-9.835200 0.000000)">
    <g id="patch_11">
     <path d="M 685.368 544.6656  L 945.432 544.6656  L 945.432 491.4432  L 685.368 491.4432  z " clip-path="url(#pbcd4f487e6)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -116,11 +116,13 @@
    </g>
   </g>
   <g id="text_13">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="47.52" transform="rotate(-0 59.4 47.52)">Combinational blocks compute outputs from the current input values</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="140.150000" transform="rotate(-0 59.4 140.150000)">Combinational blocks compute outputs from the current input values</text>
   </g>
-  <g id="text_15" transform="translate(0.000000 -209.700000)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 789.552625)">Decoder/encoder bit strings are ordered D3 D2 D1 D0. The encoder requires exactly one asserted input; invalid or multiple inputs need a valid signal or a</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 802.270125)">priority encoder. Full-adder input000 gives(S,Cout)=(0,0),011 gives(0,1),111 gives(1,1). No storage is present.</text>
+  <g id="text_14">
+   </g>
+  <g id="text_15">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 655.692308)">Decoder/encoder bit strings are ordered D3 D2 D1 D0. The encoder requires exactly one asserted input; invalid or multiple inputs need a valid signal or a</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 668.409808)">priority encoder. Full-adder input000 gives(S,Cout)=(0,0),011 gives(0,1),111 gives(1,1). No storage is present.</text>
   </g>
  </g>
  <defs>

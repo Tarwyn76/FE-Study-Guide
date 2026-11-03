@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="851.040pt" height="528.274pt" viewBox="6.788571 3.702857 851.040000 528.274286" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="827.520pt" height="448.394pt" viewBox="6.240000 69.600000 827.520000 448.393846" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,12 +21,12 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(12.240000 -70.560000)">
-   <g id="text_1">
+  <g id="axes_1" transform="translate(-0.000000 -6.210000)">
+   <g id="text_1" transform="translate(0.000000 -80.040000)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="585.376175" transform="rotate(-0 432 585.376175)">Bisection: guaranteed with a continuous sign-changing bracket. Newton: faster locally; start and slope matter.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(12.240000 -70.560000)">
+  <g id="axes_2" transform="translate(-0.000000 -6.210000)">
    <g id="patch_2">
     <path d="M 51.84 460.08  L 397.44 460.08  L 397.44 129.6  L 51.84 129.6  z " style="fill: #ffffff" />
    </g>
@@ -232,7 +232,7 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle" x="224.64" y="123.6" transform="rotate(-0 224.64 123.6)">Bisection: bracket [1, 2]</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(12.240000 -70.560000)">
+  <g id="axes_3" transform="translate(-0.000000 -6.210000)">
    <g id="patch_5">
     <path d="M 475.2 460.08  L 820.8 460.08  L 820.8 129.6  L 475.2 129.6  z " style="fill: #ffffff" />
    </g>
@@ -441,7 +441,7 @@
     </g>
    </g>
   </g>
-  <g id="text_33">
+  <g id="text_33" transform="translate(0 63.720)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="32.4" transform="rotate(-0 38.88 32.4)">Bisection and Newton iterations on x² − 2</text>
   </g>
   </g>

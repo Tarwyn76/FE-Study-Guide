@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="862.149pt" height="649.403pt" viewBox="1.234286 8.024942 862.148571 649.402962" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="833.760pt" height="598.879pt" viewBox="0.000000 89.760000 833.760000 598.879106" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,12 +21,12 @@
   <g id="patch_1">
    <path d="M 0 792  L 864 792  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(17.640000 -77.760000)">
-   <g id="text_1">
+  <g id="axes_1" transform="translate(2.084400 0.000000)">
+   <g id="text_1" transform="translate(0.000000 -50.731826)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="714.846575" transform="rotate(-0 432 714.846575)">Patterns are diagnostic illustrations. A random-looking residual plot alone does not establish every model assumption.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(17.640000 -77.760000)">
+  <g id="axes_2" transform="translate(2.084400 0.000000)">
    <g id="patch_2">
     <path d="M 51.84 348.48  L 397.44 348.48  L 397.44 150.48  L 51.84 150.48  z " style="fill: #ffffff" />
    </g>
@@ -244,7 +244,7 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle" x="224.64" y="144.48" transform="rotate(-0 224.64 144.48)">Random around zero</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(17.640000 -77.760000)">
+  <g id="axes_3" transform="translate(2.084400 0.000000)">
    <g id="patch_5">
     <path d="M 475.2 348.48  L 820.8 348.48  L 820.8 150.48  L 475.2 150.48  z " style="fill: #ffffff" />
    </g>
@@ -466,7 +466,7 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle" x="648" y="144.48" transform="rotate(-0 648 144.48)">Curvature</text>
    </g>
   </g>
-  <g id="axes_4" transform="translate(17.640000 -77.760000)">
+  <g id="axes_4" transform="translate(2.084400 0.000000)">
    <g id="patch_8">
     <path d="M 51.84 617.76  L 397.44 617.76  L 397.44 419.76  L 51.84 419.76  z " style="fill: #ffffff" />
    </g>
@@ -701,7 +701,7 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle" x="224.64" y="413.76" transform="rotate(-0 224.64 413.76)">Nonconstant variance</text>
    </g>
   </g>
-  <g id="axes_5" transform="translate(17.640000 -77.760000)">
+  <g id="axes_5" transform="translate(2.084400 0.000000)">
    <g id="patch_11">
     <path d="M 475.2 617.76  L 820.8 617.76  L 820.8 419.76  L 475.2 419.76  z " style="fill: #ffffff" />
    </g>
@@ -910,7 +910,7 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle" x="648" y="413.76" transform="rotate(-0 648 413.76)">Run-order drift / dependence</text>
    </g>
   </g>
-  <g id="text_61">
+  <g id="text_61" transform="translate(0 77.100)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="39.6" transform="rotate(-0 38.88 39.6)">Residual patterns reveal model problems</text>
   </g>
   </g>

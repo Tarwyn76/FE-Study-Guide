@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="839.931pt" height="499.126pt" viewBox="12.342857 8.637532 839.931429 499.125964" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="817.920pt" height="494.400pt" viewBox="12.960000 111.840000 817.920000 494.400000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 864 720  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(10.440000 -101.520000)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 581.3856 155.088  L 817.2576 155.088  L 817.2576 275.292  L 581.3856 275.292  z " clip-path="url(#p880a25f3d5)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -40,7 +40,7 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(602.068844 568.115461)">on notch, rate, and temperature</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(10.440000 -101.520000)">
+  <g id="axes_2">
    <g id="patch_4">
     <path d="M 60.48 475.2  L 527.04 475.2  L 527.04 158.4  L 60.48 158.4  z " style="fill: #ffffff" />
    </g>
@@ -281,10 +281,10 @@
     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="293.76" y="461.814085" transform="rotate(-0 293.76 461.814085)">Ductility: fracture strain</text>
    </g>
   </g>
-  <g id="text_23">
+  <g id="text_23" transform="translate(0 102.163)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="36" transform="rotate(-0 38.88 36)">Stiffness, strength, ductility, toughness, and hardness differ</text>
   </g>
-  <g id="text_25" transform="translate(0.000000 -185.760000)">
+  <g id="text_25" transform="translate(0.000000 -3.409655) translate(0 -81.086)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="673.2" transform="rotate(-0 432 673.2)">Curve is conceptual. Tensile toughness and impact-test energy are related resistance measures, but are not interchangeable quantities.</text>
   </g>
  </g>

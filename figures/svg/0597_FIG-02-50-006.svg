@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="912.250pt" height="577.711pt" viewBox="21.000000 13.000000 912.250000 577.711445" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="842.968pt" height="531.889pt" viewBox="21.032000 73.343000 842.968000 531.889026" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,23 +21,23 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(5.321458 -62.359003)">
+  <g id="axes_1" transform="translate(-6.322260 -2.107544)">
    <g id="text_1">
     <text style="font-size: 27px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="791.0784" y="192.706312" transform="rotate(-0 791.0784 192.706312)">Pvⁿ=constant</text>
    </g>
    <g id="text_2">
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(762.962697 314.887773)">n≠1:</text>
-    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(657.36215 345.885664)"><tspan style="font-size: 23.000px">w</tspan><tspan style="font-size: 16.560px" dy="5.520px">b</tspan><tspan style="font-size: 23.000px" dy="-5.520px">​</tspan><tspan style="font-size: 23.000px">=(P₂v₂−P₁v₁)/(1−n)</tspan></text>
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(657.36215 345.885664)"><tspan font-size="23.000px">w</tspan><tspan font-size="15.640px" dy="5.520px">b</tspan><tspan font-size="23.000px" dy="-5.520px">=(P₂v₂−P₁v₁)/(1−n)</tspan></text>
    </g>
    <g id="text_3">
-    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(672.256525 465.163281)"><tspan style="font-size: 20.000px">n=1: w</tspan><tspan style="font-size: 14.400px" dy="4.800px">b</tspan><tspan style="font-size: 20.000px" dy="-4.800px">​</tspan><tspan style="font-size: 20.000px">=P₁v₁ ln(v₂/v₁)</tspan></text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(672.256525 465.163281)"><tspan font-size="20.000px">n=1: w</tspan><tspan font-size="13.600px" dy="4.800px">b</tspan><tspan font-size="20.000px" dy="-4.800px">=P₁v₁ ln(v₂/v₁)</tspan></text>
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(689.148712 492.674219)">Ideal-gas isothermal</text>
    </g>
    <g id="text_4">
     <text style="font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="791.0784" y="582.970812" transform="rotate(-0 791.0784 582.970812)">Ideal-gas isentropic: n=k</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(5.321458 -62.359003)">
+  <g id="axes_2" transform="translate(-6.322260 -2.107544)">
    <g id="patch_2">
     <path d="M 70.56 511.2  L 614.88 511.2  L 614.88 122.4  L 70.56 122.4  z " style="fill: #ffffff" />
    </g>
@@ -323,9 +323,9 @@
    </g>
   </g>
   <g id="text_28">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Polytropic exponent controls the pressure path and its work integral</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="100.196" transform="rotate(-0 55.44 100.196)">Polytropic exponent controls the pressure path and its work integral</text>
   </g>
-  <g id="text_30" transform="translate(0.000000 -101.903737)">
+  <g id="text_30">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(114.582031 656.640625)">Quasiequilibrium path family. Interpreting n=1 as isothermal or n=k as isentropic requires the ideal-gas model; n=k also uses constant heat capacities and</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(304.776562 669.358125)">reversible adiabatic conditions. Work can be integrated for any given P(v) path.</text>
   </g>

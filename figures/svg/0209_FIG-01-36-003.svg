@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="815.863pt" height="546.015pt" viewBox="17.280000 6.786632 815.862857 546.015424" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="770.880pt" height="536.483pt" viewBox="26.400000 48.480000 770.880000 536.482767" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 864 720  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(25.560000 -39.600000)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 38.88 194.030769  L 251.1648 194.030769  L 251.1648 277.2  L 38.88 277.2  z " clip-path="url(#p40a94a2512)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -60,7 +60,7 @@
     <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="534.2112" y="239.578666" transform="rotate(-0 534.2112 239.578666)">|a| × relative input uncertainty</text>
    </g>
    <g id="text_4">
-    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="145.0224" y="393.353954" transform="rotate(-0 145.0224 393.353954)"><tspan>u</tspan><tspan font-size="75%" dy="0.28em">z</tspan><tspan dy="-0.28em" /><tspan> / |z|</tspan></text>
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="145.0224" y="393.353954" transform="rotate(-0 145.0224 393.353954)"><tspan font-size="23.000px">u</tspan><tspan font-size="15.640px" dy="5.520px">z</tspan><tspan font-size="23.000px" dy="-5.520px"> / |z|</tspan></text>
    </g>
    <g id="text_5">
     <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="534.2112" y="391.240204" transform="rotate(-0 534.2112 391.240204)">|b| × relative input uncertainty</text>
@@ -101,12 +101,12 @@
      <rect x="202.021424" y="-6.55625" width="17.279883" height="1.5" />
     </g>
    </g>
-   <g id="text_8">
+   <g id="text_8" transform="translate(0.000000 -12.845552)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(155.642969 561.866857)">Uncorrelated standard uncertainties combine by RSS. Bounded first-order tolerances instead add magnitudes.</text>
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(165.527344 575.344201)">Assume nonzero inputs/output, locally differentiable model, and exact C unless its uncertainty is included.</text>
    </g>
   </g>
-  <g id="text_9">
+  <g id="text_9" transform="translate(0 39.554)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="36" transform="rotate(-0 38.88 36)">Power-law uncertainty weights each input by its exponent</text>
   </g>
   </g>

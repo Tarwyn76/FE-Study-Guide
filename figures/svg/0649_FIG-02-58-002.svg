@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="954.000pt" height="552.198pt" viewBox="17.500000 13.000000 954.000000 552.197970" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="847.575pt" height="505.439pt" viewBox="16.425000 78.398000 847.575000 505.438544" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,12 +21,12 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-1.590000 -69.136686)">
+  <g id="axes_1" transform="translate(-7.416281 -3.533511)">
    <g id="text_1">
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="563.358656" transform="rotate(-0 504 563.358656)"><tspan style="font-size: 21.000px">Both plots: T</tspan><tspan style="font-size: 15.120px" dy="5.040px">hi</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">=100°C, T</tspan><tspan style="font-size: 15.120px" dy="5.040px">ci</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">=20°C, C</tspan><tspan style="font-size: 15.120px" dy="5.040px">h</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">=C</tspan><tspan style="font-size: 15.120px" dy="5.040px">c</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">; UA/C=1</tspan></text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="563.358656" transform="rotate(-0 504 563.358656)"><tspan font-size="21.000px">Both plots: T</tspan><tspan font-size="14.280px" dy="5.040px">hi</tspan><tspan font-size="21.000px" dy="-5.040px">=100°C, T</tspan><tspan font-size="14.280px" dy="5.040px">ci</tspan><tspan font-size="21.000px" dy="-5.040px">=20°C, C</tspan><tspan font-size="14.280px" dy="5.040px">h</tspan><tspan font-size="21.000px" dy="-5.040px">=C</tspan><tspan font-size="14.280px" dy="5.040px">c</tspan><tspan font-size="21.000px" dy="-5.040px">; UA/C=1</tspan></text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-1.590000 -69.136686)">
+  <g id="axes_2" transform="translate(-7.416281 -3.533511)">
    <g id="patch_2">
     <path d="M 70.56 489.6  L 463.68 489.6  L 463.68 144  L 70.56 144  z " style="fill: #ffffff" />
    </g>
@@ -243,7 +243,7 @@
     </g>
    </g>
   </g>
-  <g id="axes_3" transform="translate(-1.590000 -69.136686)">
+  <g id="axes_3" transform="translate(-7.416281 -3.533511)">
    <g id="patch_8">
     <path d="M 564.48 489.6  L 957.6 489.6  L 957.6 144  L 564.48 144  z " style="fill: #ffffff" />
    </g>
@@ -455,9 +455,9 @@
    </g>
   </g>
   <g id="text_36">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Parallel and counterflow layouts create different temperature-difference profiles</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="105.082" transform="rotate(-0 55.44 105.082)">Parallel and counterflow layouts create different temperature-difference profiles</text>
   </g>
-  <g id="text_38" transform="translate(0.000000 -127.147929)">
+  <g id="text_38">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(119.303125 656.640625)">Steady exchanger, constant properties, no heat leak or phase change. These profiles solve equal-capacity-rate balances: parallel outlets≈65.41/54.59°C,</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(274.730469 669.358125)">counterflow outlets both 60°C at opposite ends. Cold-stream arrow reverses in counterflow.</text>
   </g>

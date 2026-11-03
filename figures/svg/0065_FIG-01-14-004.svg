@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="857.211pt" height="346.958pt" viewBox="3.702857 4.938907 857.211429 346.958199" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="825.120pt" height="348.785pt" viewBox="0.000000 127.854983 825.120000 348.785017" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 576  L 864 576  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(23.760000 -122.400000)">
+  <g id="axes_1" transform="translate(4.125600 0.000000)">
    <g id="text_1">
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(175.626797 443.86817)">Area = |det A| = 2</text>
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(128.080312 461.75028)">Invertible: information preserved</text>
@@ -31,7 +31,7 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(505.296072 461.541061)">Not invertible: square collapses to a line</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(23.760000 -122.400000)">
+  <g id="axes_2" transform="translate(4.125600 0.000000)">
    <g id="patch_2">
     <path d="M 51.84 357.236757  L 388.8 357.236757  L 388.8 184.203243  L 51.84 184.203243  z " style="fill: #ffffff" />
    </g>
@@ -273,7 +273,7 @@
     </g>
    </g>
   </g>
-  <g id="axes_3" transform="translate(23.760000 -122.400000)">
+  <g id="axes_3" transform="translate(4.125600 0.000000)">
    <g id="patch_6">
     <path d="M 475.2 357.236757  L 812.16 357.236757  L 812.16 184.203243  L 475.2 184.203243  z " style="fill: #ffffff" />
    </g>
@@ -509,7 +509,7 @@
     </g>
    </g>
   </g>
-  <g id="text_41">
+  <g id="text_41" transform="translate(0 122.505)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="28.8" transform="rotate(-0 38.88 28.8)">Determinant, area, and reversibility</text>
   </g>
   </g>

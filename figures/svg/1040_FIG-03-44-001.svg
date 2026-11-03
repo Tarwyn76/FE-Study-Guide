@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1019.057pt" height="635.451pt" viewBox="30.085714 13.110029 1019.057143 635.450828" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="998.000pt" height="612.000pt" viewBox="41.000000 82.000000 998.000000 612.000000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 792  L 1080 792  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -68.400000)">
+  <g id="axes_1" transform="translate(-0.000000 -0.831522)">
    <g id="patch_2">
     <path d="M 69.012 274.824  L 184.356 274.824  L 184.356 176.4576  L 69.012 176.4576  z " clip-path="url(#pa498ad6026)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -117,10 +117,10 @@
     <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="540" y="143.170875" transform="rotate(-0 540 143.170875)">Example route:load =address calculation →data read →register writeback</text>
    </g>
   </g>
-  <g id="text_11">
+  <g id="text_11" transform="translate(0 69.0000)">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="43.56" transform="rotate(-0 59.4 43.56)">A simplified CPU fetches instructions and moves operands through its datapath</text>
   </g>
-  <g id="text_13" transform="translate(0.000000 -117.000000)">
+  <g id="text_13" transform="translate(0 -65.0000)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 717.097875)">Conceptual single-cycle style datapath, not a complete ISA implementation. PC update, operand multiplexers, instruction decoding, immediates, ALU-result</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 729.815375)">writeback, store data, and branch logic are simplified or omitted. Blue lines carry data/address values; gold arrows denote control; teal marks load</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 742.532875)">writeback.</text>

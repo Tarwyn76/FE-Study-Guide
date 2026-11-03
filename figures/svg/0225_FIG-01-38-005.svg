@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="860.297pt" height="562.674pt" viewBox="1.851429 6.786632 860.297143 562.673522" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="833.760pt" height="474.423pt" viewBox="0.000000 107.040000 833.760000 474.423394" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 864 720  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(16.560000 -97.920000)">
+  <g id="axes_1" transform="translate(1.042200 0.000000)">
    <g id="text_1">
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(172.976484 513.067477)">μ = (a+b)/2</text>
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(157.902422 541.369898)">σ² = (b−a)²/12</text>
@@ -30,11 +30,11 @@
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(562.592031 514.659195)">μ = (a+m+b)/3</text>
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(484.435859 537.57068)">σ² = (a²+m²+b²−am−ab−mb)/18</text>
    </g>
-   <g id="text_3">
+   <g id="text_3" transform="translate(0.000000 -88.213599)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="650.111375" transform="rotate(-0 432 650.111375)">Uniform height is 1/(b−a). Triangular peak is 2/(b−a); a &lt; m &lt; b in this illustration.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(16.560000 -97.920000)">
+  <g id="axes_2" transform="translate(1.042200 0.000000)">
    <g id="patch_2">
     <path d="M 51.84 403.2  L 397.44 403.2  L 397.44 151.2  L 51.84 151.2  z " style="fill: #ffffff" />
    </g>
@@ -189,7 +189,7 @@
     <path d="M 51.84 403.2  L 397.44 403.2  " style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linejoin: miter; stroke-linecap: square" />
    </g>
   </g>
-  <g id="axes_3" transform="translate(16.560000 -97.920000)">
+  <g id="axes_3" transform="translate(1.042200 0.000000)">
    <g id="patch_5">
     <path d="M 475.2 403.2  L 820.8 403.2  L 820.8 151.2  L 475.2 151.2  z " style="fill: #ffffff" />
    </g>
@@ -338,7 +338,7 @@
     <path d="M 475.2 403.2  L 820.8 403.2  " style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linejoin: miter; stroke-linecap: square" />
    </g>
   </g>
-  <g id="text_26">
+  <g id="text_26" transform="translate(0 97.845)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="36" transform="rotate(-0 38.88 36)">Uniform and triangular densities model bounded quantities</text>
   </g>
   </g>

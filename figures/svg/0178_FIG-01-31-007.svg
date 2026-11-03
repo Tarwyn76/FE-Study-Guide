@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="902.571pt" height="693.084pt" viewBox="16.714286 6.683544 902.571429 693.083544" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="876.800pt" height="623.267pt" viewBox="29.600000 51.402000 876.800000 623.267264" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 792  L 936 792  L 936 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -36.673892)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 255.06 95.04  L 680.94 95.04  L 680.94 158.004  L 255.06 158.004  z " clip-path="url(#pdaede2981c)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -85,11 +85,11 @@
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(696.52715 453.386925)">χ² = (n−1)s²/σ²</text>
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(724.47715 474.958175)">ν = n−1</text>
    </g>
-   <g id="text_10">
+   <g id="text_10" transform="translate(0.000000 -65.731422)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="468" y="714.846575" transform="rotate(-0 468 714.846575)">Reference laws require their sampling assumptions. Small-sample t and exact chi-square variance results assume normality.</text>
    </g>
   </g>
-  <g id="text_11">
+  <g id="text_11" transform="translate(0 38.959)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="42.12" y="39.6" transform="rotate(-0 42.12 39.6)">Choose the reference distribution from the standardized parameter</text>
   </g>
   </g>

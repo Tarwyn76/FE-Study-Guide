@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="773.750pt" height="508.388pt" viewBox="36.500000 10.500000 773.750000 508.387978" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="777.643pt" height="508.888pt" viewBox="34.554000 103.923000 777.643000 508.888009" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-3.868750 -96.074123)">
+  <g id="axes_1" transform="translate(-3.888215 -1.296061)">
    <g id="patch_2">
     <path d="M 239.76 358.992  L 624.24 358.992  L 624.24 206.9712  L 239.76 206.9712  z " clip-path="url(#p3ab3fc7dd5)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -35,10 +35,10 @@
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="593.4816" y="163.582688" transform="rotate(-0 593.4816 163.582688)">1: h₁=400 kJ/kg</text>
    </g>
    <g id="text_4">
-    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #26776f" x="470.448" y="436.557919" transform="rotate(-0 470.448 436.557919)">Q̇_L=30 kW</text>
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #26776f" x="470.448" y="436.557919" transform="rotate(-0 470.448 436.557919)"><tspan font-size="23.000px">Q̇</tspan><tspan font-size="15.640px" dy="5.520px">L</tspan><tspan font-size="23.000px" dy="-5.520px">=30 kW</tspan></text>
    </g>
    <g id="text_5">
-    <text style="font-size: 28px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="545.176875" transform="rotate(-0 432 545.176875)">ṁ=Q̇_L/(h₁−h₄)=30/150=0.200 kg/s</text>
+    <text style="font-size: 28px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="545.176875" transform="rotate(-0 432 545.176875)"><tspan font-size="28.000px">ṁ=Q̇</tspan><tspan font-size="19.040px" dy="6.720px">L</tspan><tspan font-size="28.000px" dy="-6.720px">/(h₁−h₄)=30/150=0.200 kg/s</tspan></text>
    </g>
    <g id="patch_3">
     <path d="M 64.898923 282.9816  Q 151.330233 282.9816 235.860884 282.9816  " clip-path="url(#p3ab3fc7dd5)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round" />
@@ -54,9 +54,9 @@
    </g>
   </g>
   <g id="text_6">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Cooling capacity determines refrigerant mass flow through the evaporator</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="129.316" transform="rotate(-0 47.52 129.316)">Cooling capacity determines refrigerant mass flow through the evaporator</text>
   </g>
-  <g id="text_8" transform="translate(0.000000 -105.746015)">
+  <g id="text_8" transform="translate(0.000000 -11.664545)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(97.311719 590.616625)">Steady evaporator, negligible work and KE/PE changes. kW divided by kJ/kg gives kg/s. Illustrative enthalpies match figures 622–623;</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(277.821875 603.334125)">cooling load is the heat rate absorbed from the cooled space.</text>
   </g>

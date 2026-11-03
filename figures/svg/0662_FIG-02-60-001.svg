@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="899.280pt" height="537.632pt" viewBox="30.960000 13.000000 899.280000 537.631833" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="821.200pt" height="491.755pt" viewBox="42.800000 86.999820 821.200000 491.755388" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(22.260000 -75.638298)">
+  <g id="axes_1" transform="translate(-22.583000 -0.684028)">
    <g id="text_1">
     
     <g style="fill: #23313d" transform="translate(200.94 508.436)">
@@ -90,7 +90,7 @@
     </g>
    </g>
   </g>
-  <g id="axes_2" transform="translate(22.260000 -75.638298)">
+  <g id="axes_2" transform="translate(-22.583000 -0.684028)">
    <g id="line2d_1">
     <path d="M 88.92 259.2  L 145.944 259.2  " clip-path="url(#pda06c3f388)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square" />
    </g>
@@ -120,10 +120,10 @@
     <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #235a78" x="361.08" y="227.423125" transform="rotate(-0 361.08 227.423125)">R₂=3 Ω</text>
    </g>
    <g id="text_5">
-    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="270.36" y="345.770469" transform="rotate(-0 270.36 345.770469)"><tspan style="font-size: 22.000px">Same I; R</tspan><tspan style="font-size: 15.840px" dy="5.280px">eq</tspan><tspan style="font-size: 22.000px" dy="-5.280px">​</tspan><tspan style="font-size: 22.000px">=5 Ω</tspan></text>
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="270.36" y="345.770469" transform="rotate(-0 270.36 345.770469)"><tspan font-size="22.000px">Same I; R</tspan><tspan font-size="14.960px" dy="5.280px">eq</tspan><tspan font-size="22.000px" dy="-5.280px">=5 Ω</tspan></text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(22.260000 -75.638298)">
+  <g id="axes_3" transform="translate(-22.583000 -0.684028)">
    <g id="line2d_5">
     <path d="M 597.017872 333.651064  L 597.017872 168.204255  L 652.166809 168.204255  " clip-path="url(#p65e84ea1dd)" style="fill: none; stroke: #23313d; stroke-width: 1.8; stroke-linecap: square" />
    </g>
@@ -165,9 +165,9 @@
    </g>
   </g>
   <g id="text_8">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Series resistors share current; parallel resistors share voltage</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="113.386" transform="rotate(-0 55.44 113.386)">Series resistors share current; parallel resistors share voltage</text>
   </g>
-  <g id="text_10" transform="translate(0.000000 -141.191489)">
+  <g id="text_10">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(114.671875 656.640625)">Series means the intermediate junction has no additional branch; parallel means every component shares the same two nodes. These topology conditions,</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(381.189062 669.358125)">rather than visual proximity, justify the formulas.</text>
   </g>

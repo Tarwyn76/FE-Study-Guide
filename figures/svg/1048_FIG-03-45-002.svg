@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1022.143pt" height="637.971pt" viewBox="28.542857 16.971429 1022.142857 637.971429" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1001.000pt" height="625.000pt" viewBox="36.000000 109.000000 1001.000000 625.000000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,12 +21,12 @@
   <g id="patch_1">
    <path d="M 0 864  L 1080 864  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(3.600000 -90.900000)">
+  <g id="axes_1" transform="translate(0.417083 0.000000)">
    <g id="text_1">
     <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="540" y="675.497825" transform="rotate(-0 540 675.497825)">Receiver removes each layer’s framing and delivers the payload upward.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(3.600000 -90.900000)">
+  <g id="axes_2" transform="translate(0.417083 0.000000)">
    <g id="patch_2">
     <path d="M 54 254.3616  L 297 254.3616  L 297 209.4336  L 54 209.4336  z " clip-path="url(#p4bfcc08486)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -127,7 +127,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="418.5" y="549.70485" transform="rotate(-0 418.5 549.70485)">Link</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(3.600000 -90.900000)">
+  <g id="axes_3" transform="translate(0.417083 0.000000)">
    <g id="patch_18">
     <path d="M 613.224 272.3328  L 882.792 272.3328  L 882.792 213.9264  L 613.224 213.9264  z " clip-path="url(#pb4fde77441)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -168,10 +168,10 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="609.012" y="446.37045" transform="rotate(-0 609.012 446.37045)">Frame</text>
    </g>
   </g>
-  <g id="text_28">
+  <g id="text_28" transform="translate(0 92.0000)">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="47.52" transform="rotate(-0 59.4 47.52)">Protocol layers encapsulate an application message for transport across links</text>
   </g>
-  <g id="text_30" transform="translate(0.000000 -172.800000)">
+  <g id="text_30" transform="translate(0 -87.0000)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 789.552625)">OSI-to-TCP/IP alignment is conceptual, not a one-to-one implementation mapping. Segment terminology applies to TCP; UDP uses datagrams. Ethernet FCS is a</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 802.270125)">link-layer trailer; physical transmission carries encoded symbols/bits. Header sizes, IPv6 extension headers, and tunneling are omitted.</text>
   </g>

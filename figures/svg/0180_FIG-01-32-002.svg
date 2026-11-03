@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="693.669pt" height="666.070pt" viewBox="19.748571 7.407638 693.668571 666.070148" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="676.800pt" height="627.118pt" viewBox="26.400000 68.640000 676.800000 627.117540" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 792  L 864 792  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.360000 -61.920000)">
+  <g id="axes_1" transform="translate(-67.398000 -6.204338)">
    <g id="text_1">
     
     <g style="fill: #23313d" transform="translate(324.625 399.5958)">
@@ -87,11 +87,11 @@
    <g id="text_3">
     <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="654.551325" transform="rotate(-0 432 654.551325)">Margin of error: E = zα/2 σ/√n (the half-width)</text>
    </g>
-   <g id="text_4">
+   <g id="text_4" transform="translate(0.000000 -38.354091)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="714.846575" transform="rotate(-0 432 714.846575)">Exact for independent normal observations with known σ; large-sample use relies on an appropriate CLT.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-0.360000 -61.920000)">
+  <g id="axes_2" transform="translate(-67.398000 -6.204338)">
    <g id="patch_2">
     <path d="M 190.08 316.8  L 673.92 316.8  L 673.92 126.72  L 190.08 126.72  z " style="fill: #ffffff" />
    </g>
@@ -165,7 +165,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="432" y="120.72" transform="rotate(-0 432 120.72)">Central probability 1−α</text>
    </g>
   </g>
-  <g id="text_10">
+  <g id="text_10" transform="translate(0 55.491)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="39.6" transform="rotate(-0 38.88 39.6)">A known-σ confidence interval inverts a standard-normal bound</text>
   </g>
   </g>

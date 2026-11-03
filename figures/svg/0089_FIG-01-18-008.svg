@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="751.834pt" height="423.796pt" viewBox="15.840000 3.394892 751.834286 423.795678" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="728.880pt" height="422.561pt" viewBox="17.040000 61.671185 728.880000 422.560815" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 576  L 792 576  L 792 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(13.860000 -56.742268)">
+  <g id="axes_1" transform="translate(-2.125900 0.000000)">
    <g id="text_1">
     <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="662.6664" y="192.318263" transform="rotate(-0 662.6664 192.318263)">dy = f′(a) dx = 1</text>
    </g>
@@ -33,7 +33,7 @@
     <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="662.6664" y="412.119863" transform="rotate(-0 662.6664 412.119863)">Δy − dy = 0.25</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(13.860000 -56.742268)">
+  <g id="axes_2" transform="translate(-2.125900 0.000000)">
    <g id="patch_2">
     <path d="M 63.36 443.52  L 578.16 443.52  L 578.16 103.68  L 63.36 103.68  z " style="fill: #ffffff" />
    </g>
@@ -290,7 +290,7 @@
     </g>
    </g>
   </g>
-  <g id="text_24">
+  <g id="text_24" transform="translate(0 57.928)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="35.64" y="28.8" transform="rotate(-0 35.64 28.8)">Differential dy versus actual change Δy</text>
   </g>
   </g>

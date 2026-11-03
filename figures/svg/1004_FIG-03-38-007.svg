@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="948.960pt" height="565.200pt" viewBox="28.080000 10.800000 948.960000 565.200000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="917.952pt" height="532.048pt" viewBox="32.256000 92.633000 917.952000 532.048000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(15.960000 -71.411902)">
+  <g id="axes_1" transform="translate(1.912400 0.000000)">
    <g id="text_1">
     <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(790.163044 212.113375)">λ=vp/f</text>
     <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(745.980856 240.091875)">vp=2×10⁸ m/s</text>
@@ -36,7 +36,7 @@
     <text style="font-size: 19px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(743.208825 577.326063)">may be adequate</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(15.960000 -71.411902)">
+  <g id="axes_2" transform="translate(1.912400 0.000000)">
    <g id="patch_2">
     <path d="M 90.72 489.6  L 695.52 489.6  L 695.52 129.6  L 90.72 129.6  z " style="fill: #ffffff" />
    </g>
@@ -812,11 +812,13 @@
    </g>
   </g>
   <g id="text_23">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">A fixed physical length becomes electrically longer as frequency increases</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="116.191379" transform="rotate(-0 55.44 116.191379)">A fixed physical length becomes electrically longer as frequency increases</text>
   </g>
-  <g id="text_25" transform="translate(0.000000 -117.619603)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 657.360625)">Illustrative length-to-wavelength comparison, not a universal cutoff. A λ/10 guideline permits 36° phase variation and may be too loose for precise</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 670.078125)">analysis. Fast digital edges contain frequencies well above the repetition rate; return-path geometry and rise time also matter.</text>
+  <g id="text_24">
+   </g>
+  <g id="text_25">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 599.448276)">Illustrative length-to-wavelength comparison, not a universal cutoff. A λ/10 guideline permits 36° phase variation and may be too loose for precise</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 612.165776)">analysis. Fast digital edges contain frequencies well above the repetition rate; return-path geometry and rise time also matter.</text>
   </g>
  </g>
  <defs>

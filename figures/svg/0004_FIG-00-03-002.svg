@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="694.800pt" height="540.514pt" viewBox="12.342857 3.600000 694.800000 540.514286" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="680.000pt" height="536.000pt" viewBox="20.000000 39.200000 680.000000 536.000000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 648  L 720 648  L 720 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -33.600000)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 163.44 82.9116  L 556.56 82.9116  L 556.56 165.3372  L 163.44 165.3372  z " clip-path="url(#p76fc5ec14b)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -116,7 +116,7 @@
     <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="111.024" y="502.674638" transform="rotate(-0 111.024 502.674638)">No: revisit</text>
    </g>
   </g>
-  <g id="text_12">
+  <g id="text_12" transform="translate(0 33.300)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="32.4" y="32.4" transform="rotate(-0 32.4 32.4)">The three-pass Handbook lookup method</text>
   </g>
   </g>

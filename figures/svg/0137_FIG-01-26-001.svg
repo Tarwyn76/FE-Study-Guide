@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="823.269pt" height="470.431pt" viewBox="16.662857 1.852090 823.268571 470.430868" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="800.640pt" height="437.821pt" viewBox="1.440000 65.943135 800.640000 437.820656" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 576  L 864 576  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(29.160000 -63.360000)">
+  <g id="axes_1" transform="translate(0.667200 0.000000)">
    <g id="text_1">
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(624.466913 160.508044)">Roundoff: finite precision</text>
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(621.403163 176.680856)">Truncation: omitted terms</text>
@@ -34,11 +34,11 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(655.52535 398.626444)">Iteration error:</text>
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(611.482538 414.799256)">stopping before convergence</text>
    </g>
-   <g id="text_4">
+   <g id="text_4" transform="translate(0.000000 -35.363404)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="520.640975" transform="rotate(-0 432 520.640975)">Decreasing h moves left. The practical minimum depends on method, precision, and the problem.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(29.160000 -63.360000)">
+  <g id="axes_2" transform="translate(0.667200 0.000000)">
    <g id="patch_2">
     <path d="M 60.48 437.76  L 578.88 437.76  L 578.88 109.44  L 60.48 109.44  z " style="fill: #ffffff" />
    </g>
@@ -405,7 +405,7 @@
     </g>
    </g>
   </g>
-  <g id="text_24">
+  <g id="text_24" transform="translate(0 63.068)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="28.8" transform="rotate(-0 38.88 28.8)">Step size balances truncation and roundoff</text>
   </g>
   </g>

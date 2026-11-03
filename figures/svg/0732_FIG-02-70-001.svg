@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="976.000pt" height="552.862pt" viewBox="16.720000 10.823065 976.000000 552.861694" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="841.109pt" height="528.380pt" viewBox="22.891000 103.390000 841.109000 528.379901" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(4.066667 -94.383059)">
+  <g id="axes_1" transform="translate(-6.658780 -2.102741)">
    <g id="patch_2">
     <path d="M 55.44 229.968  L 315.6048 229.968  L 315.6048 150.48  L 55.44 150.48  z " clip-path="url(#p371797ffda)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -33,7 +33,7 @@
     <path d="M 377.476607 187.224  L 383.476607 190.224  L 377.476607 193.224  z " clip-path="url(#p371797ffda)" style="fill: #26776f; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round" />
    </g>
    <g id="text_1">
-    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="185.5224" y="196.238141" transform="rotate(-0 185.5224 196.238141)"><tspan style="font-size: 23.000px">C(s)=K</tspan><tspan style="font-size: 16.560px" dy="5.520px">p</tspan><tspan style="font-size: 23.000px" dy="-5.520px">​</tspan></text>
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="185.5224" y="196.238141" transform="rotate(-0 185.5224 196.238141)"><tspan font-size="23.000px">C(s)=K</tspan><tspan font-size="15.640px" dy="5.520px">p</tspan></text>
    </g>
    <g id="text_2">
     
@@ -67,15 +67,15 @@
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(835.0667 205.420875)">feedback</text>
    </g>
    <g id="text_4">
-    <text style="font-size: 18px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(750.780337 353.996719)"><tspan style="font-size: 18.000px">Low K</tspan><tspan style="font-size: 12.960px" dy="4.320px">p</tspan><tspan style="font-size: 18.000px" dy="-4.320px">​</tspan><tspan style="font-size: 18.000px">=1: slower</tspan></text>
-    <text style="font-size: 18px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(697.2894 378.756562)"><tspan style="font-size: 18.000px">Moderate K</tspan><tspan style="font-size: 12.960px" dy="4.320px">p</tspan><tspan style="font-size: 18.000px" dy="-4.320px">​</tspan><tspan style="font-size: 18.000px">=3: more ringing</tspan></text>
-    <text style="font-size: 18px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(714.822525 403.516406)"><tspan style="font-size: 18.000px">Excessive K</tspan><tspan style="font-size: 12.960px" dy="4.320px">p</tspan><tspan style="font-size: 18.000px" dy="-4.320px">​</tspan><tspan style="font-size: 18.000px">=8: unstable</tspan></text>
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(750.780337 353.996719)"><tspan font-size="18.000px">Low K</tspan><tspan font-size="12.240px" dy="4.320px">p</tspan><tspan font-size="18.000px" dy="-4.320px">=1: slower</tspan></text>
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(697.2894 378.756562)"><tspan font-size="18.000px">Moderate K</tspan><tspan font-size="12.240px" dy="4.320px">p</tspan><tspan font-size="18.000px" dy="-4.320px">=3: more ringing</tspan></text>
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(714.822525 403.516406)"><tspan font-size="18.000px">Excessive K</tspan><tspan font-size="12.240px" dy="4.320px">p</tspan><tspan font-size="18.000px" dy="-4.320px">=8: unstable</tspan></text>
    </g>
    <g id="text_5">
-    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="817.992" y="563.620688" transform="rotate(-0 817.992 563.620688)"><tspan style="font-size: 22.000px">Stable range: 0&lt;K</tspan><tspan style="font-size: 15.840px" dy="5.280px">p</tspan><tspan style="font-size: 22.000px" dy="-5.280px">​</tspan><tspan style="font-size: 22.000px">&lt;6</tspan></text>
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="817.992" y="563.620688" transform="rotate(-0 817.992 563.620688)"><tspan font-size="22.000px">Stable range: 0&lt;K</tspan><tspan font-size="14.960px" dy="5.280px">p</tspan><tspan font-size="22.000px" dy="-5.280px">&lt;6</tspan></text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(4.066667 -94.383059)">
+  <g id="axes_2" transform="translate(-6.658780 -2.102741)">
    <g id="patch_5">
     <path d="M 80.64 511.2  L 675.36 511.2  L 675.36 252  L 80.64 252  z " style="fill: #ffffff" />
    </g>
@@ -355,29 +355,29 @@
      <path d="M 91.44 267.718125  L 103.44 267.718125  L 115.44 267.718125  " style="fill: none; stroke: #26776f; stroke-width: 2; stroke-linecap: square" />
     </g>
     <g id="text_26">
-     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start" x="125.04" y="271.918125" transform="rotate(-0 125.04 271.918125)"><tspan style="font-size: 12.000px">K</tspan><tspan style="font-size: 8.640px" dy="2.880px">p</tspan><tspan style="font-size: 12.000px" dy="-2.880px">​</tspan><tspan style="font-size: 12.000px">=1</tspan></text>
+     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start" x="125.04" y="271.918125" transform="rotate(-0 125.04 271.918125)"><tspan font-size="12.000px">K</tspan><tspan font-size="8.160px" dy="2.880px">p</tspan><tspan font-size="12.000px" dy="-2.880px">=1</tspan></text>
     </g>
     <g id="line2d_42">
      <path d="M 91.44 285.665625  L 103.44 285.665625  L 115.44 285.665625  " style="fill: none; stroke: #235a78; stroke-width: 2; stroke-linecap: square" />
     </g>
     <g id="text_27">
-     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start" x="125.04" y="289.865625" transform="rotate(-0 125.04 289.865625)"><tspan style="font-size: 12.000px">K</tspan><tspan style="font-size: 8.640px" dy="2.880px">p</tspan><tspan style="font-size: 12.000px" dy="-2.880px">​</tspan><tspan style="font-size: 12.000px">=3</tspan></text>
+     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start" x="125.04" y="289.865625" transform="rotate(-0 125.04 289.865625)"><tspan font-size="12.000px">K</tspan><tspan font-size="8.160px" dy="2.880px">p</tspan><tspan font-size="12.000px" dy="-2.880px">=3</tspan></text>
     </g>
     <g id="line2d_43">
      <path d="M 91.44 303.613125  L 103.44 303.613125  L 115.44 303.613125  " style="fill: none; stroke: #a23b34; stroke-width: 2; stroke-linecap: square" />
     </g>
     <g id="text_28">
-     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start" x="125.04" y="307.813125" transform="rotate(-0 125.04 307.813125)"><tspan style="font-size: 12.000px">K</tspan><tspan style="font-size: 8.640px" dy="2.880px">p</tspan><tspan style="font-size: 12.000px" dy="-2.880px">​</tspan><tspan style="font-size: 12.000px">=8</tspan></text>
+     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start" x="125.04" y="307.813125" transform="rotate(-0 125.04 307.813125)"><tspan font-size="12.000px">K</tspan><tspan font-size="8.160px" dy="2.880px">p</tspan><tspan font-size="12.000px" dy="-2.880px">=8</tspan></text>
     </g>
    </g>
   </g>
   <g id="text_29">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Proportional gain changes tracking speed and can destabilize a higher-order plant</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="131.470" transform="rotate(-0 55.44 131.470)">Proportional gain changes tracking speed and can destabilize a higher-order plant</text>
   </g>
   <g id="text_30">
 </g>
-  <g id="text_31" transform="translate(0.000000 -135.065412)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(137.654687 650.142812)"><tspan style="font-size: 10.000px">Analytical unit-step curves for the specified third-order plant, zero initial state. Routh stability requires K</tspan><tspan style="font-size: 7.200px" dy="2.400px">p</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">&lt;6. Plant integration makes stable step</tspan></text>
+  <g id="text_31" transform="translate(0.000000 -65.885894)">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(137.654687 650.142812)"><tspan font-size="10.000px">Analytical unit-step curves for the specified third-order plant, zero initial state. Routh stability requires K</tspan><tspan font-size="6.800px" dy="2.400px">p</tspan><tspan font-size="10.000px" dy="-2.400px">&lt;6. Plant integration makes stable step</tspan></text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(136.395312 663.138438)">steady-state error zero even with P control; this example does not imply P control universally leaves a step offset. Unstable curve is clipped by the</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(457.728906 675.855937)">displayed y range.</text>
   </g>

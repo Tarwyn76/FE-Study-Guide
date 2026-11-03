@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1012.114pt" height="658.029pt" viewBox="30.857143 16.971429 1012.114286 658.028571" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="974.880pt" height="629.280pt" viewBox="46.080000 102.240000 974.880000 629.280000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,8 +21,8 @@
   <g id="patch_1">
    <path d="M 0 864  L 1080 864  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(6.750000 -78.300000)" />
-  <g id="axes_2" transform="translate(6.750000 -78.300000)">
+  <g id="axes_1" transform="translate(0.406200 0.000000)" />
+  <g id="axes_2" transform="translate(0.406200 0.000000)">
    <g id="patch_2">
     <path d="M 97.2 276.48  L 669.6 276.48  L 669.6 164.16  L 97.2 164.16  z " style="fill: #ffffff" />
    </g>
@@ -184,7 +184,7 @@
     <path d="M 97.2 164.16  L 669.6 164.16  " style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linejoin: miter; stroke-linecap: square" />
    </g>
   </g>
-  <g id="axes_3" transform="translate(6.750000 -78.300000)">
+  <g id="axes_3" transform="translate(0.406200 0.000000)">
    <g id="patch_7">
     <path d="M 97.2 440.64  L 669.6 440.64  L 669.6 328.32  L 97.2 328.32  z " style="fill: #ffffff" />
    </g>
@@ -340,7 +340,7 @@
     <path d="M 97.2 328.32  L 669.6 328.32  " style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linejoin: miter; stroke-linecap: square" />
    </g>
   </g>
-  <g id="axes_4" transform="translate(6.750000 -78.300000)">
+  <g id="axes_4" transform="translate(0.406200 0.000000)">
    <g id="patch_12">
     <path d="M 97.2 604.8  L 669.6 604.8  L 669.6 492.48  L 97.2 492.48  z " style="fill: #ffffff" />
    </g>
@@ -499,7 +499,7 @@
     <path d="M 97.2 492.48  L 669.6 492.48  " style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linejoin: miter; stroke-linecap: square" />
    </g>
   </g>
-  <g id="axes_5" transform="translate(6.750000 -78.300000)">
+  <g id="axes_5" transform="translate(0.406200 0.000000)">
    <g id="patch_17">
     <path d="M 788.4 380.16  L 1004.4 380.16  L 1004.4 164.16  L 788.4 164.16  z " style="fill: #ffffff" />
    </g>
@@ -724,7 +724,7 @@
    </g>
    <g id="PathCollection_2" />
   </g>
-  <g id="axes_6" transform="translate(6.750000 -78.300000)">
+  <g id="axes_6" transform="translate(0.406200 0.000000)">
    <g id="patch_22">
     <path d="M 788.4 656.64  L 1004.4 656.64  L 1004.4 457.92  L 788.4 457.92  z " style="fill: #ffffff" />
    </g>
@@ -960,11 +960,13 @@
    </g>
   </g>
   <g id="text_66">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="47.52" transform="rotate(-0 59.4 47.52)">Digital modulation assigns bits to amplitude, frequency, phase, or I/Q points</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="130.180769" transform="rotate(-0 59.4 130.180769)">Digital modulation assigns bits to amplitude, frequency, phase, or I/Q points</text>
   </g>
-  <g id="text_68" transform="translate(0.000000 -153.900000)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 789.552625)">Waveform bits are1,0,1,1,0; BPSK maps1 to positive and0 to negative carrier. FSK phase is continuous by integration of the selected frequency. QPSK</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 802.270125)">and16-QAM panels are normalized constellation examples, independent of the binary waveform sequence. Practical pulse shaping is omitted.</text>
+  <g id="text_67">
+   </g>
+  <g id="text_68">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 703.876923)">Waveform bits are1,0,1,1,0; BPSK maps1 to positive and0 to negative carrier. FSK phase is continuous by integration of the selected frequency. QPSK</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 716.594423)">and16-QAM panels are normalized constellation examples, independent of the binary waveform sequence. Practical pulse shaping is omitted.</text>
   </g>
  </g>
  <defs>

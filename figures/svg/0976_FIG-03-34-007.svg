@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="999.000pt" height="507.010pt" viewBox="31.628571 13.118971 999.000000 507.009646" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="954.720pt" height="466.560pt" viewBox="46.080000 163.440000 954.720000 466.560000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1080 720  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(16.650000 -143.100000)">
+  <g id="axes_1" transform="translate(1.193400 0.000000)">
    <g id="patch_2">
     <path d="M 59.4 334.296  L 213.192 334.296  L 213.192 200.16  L 59.4 200.16  z " clip-path="url(#p6589d1b284)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -86,12 +86,14 @@
    </g>
   </g>
   <g id="text_10">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="39.6" transform="rotate(-0 59.4 39.6)">A measurement chain preserves useful signal while controlling gain, noise, and aliasing</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="188.488106" transform="rotate(-0 59.4 188.488106)">A measurement chain preserves useful signal while controlling gain, noise, and aliasing</text>
   </g>
-  <g id="text_12" transform="translate(0.000000 -180.000000)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(143.914062 650.142812)">Conceptual sensor signal chain; a bridge can produce a differential signal requiring appropriate input common-mode handling. Anti-alias filter must attenuate</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(129.75625 662.860312)"><tspan style="font-size: 10.000px">out-of-band content before sampling, not merely have a nominal cutoff below f</tspan><tspan style="font-size: 7.200px" dy="2.400px">s</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">/2. ADC code width is an ideal quantization step, distinct from resolution accuracy,</tspan></text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(283.021875 675.855937)">ENOB, input headroom and reference error. No sampling frequency or actual noise budget is assigned.</text>
+  <g id="text_11">
+   </g>
+  <g id="text_12">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(143.914 591.334873)">Conceptual sensor signal chain; a bridge can produce a differential signal requiring appropriate input common-mode handling. Anti-alias filter must attenuate</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(129.756 604.052373)"><tspan font-size="10.000px">out-of-band content before sampling, not merely have a nominal cutoff below f</tspan><tspan font-size="6.800px" dy="2.400px">s</tspan><tspan font-size="10.000px" dy="-2.400px">/2. ADC code width is an ideal quantization step, distinct from resolution accuracy,</tspan></text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(283.022 617.047998)">ENOB, input headroom and reference error. No sampling frequency or actual noise budget is assigned.</text>
   </g>
  </g>
  <defs>

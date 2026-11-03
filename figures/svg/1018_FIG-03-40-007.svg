@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="948.960pt" height="586.080pt" viewBox="28.800000 10.800000 948.960000 586.080000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="912.576pt" height="552.197pt" viewBox="43.008000 71.140000 912.576000 552.197000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(2.520000 -49.568261)">
+  <g id="axes_1" transform="translate(-1.140720 0.000000)">
    <g id="text_1">
     <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="826.9632" y="236.038625" transform="rotate(-0 826.9632 236.038625)">C=B log₂(1+S/N)</text>
    </g>
@@ -34,7 +34,7 @@
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(731.328825 576.09225)">Ideal coding bound</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(2.520000 -49.568261)">
+  <g id="axes_2" transform="translate(-1.140720 0.000000)">
    <g id="patch_2">
     <path d="M 90.72 489.6  L 695.52 489.6  L 695.52 136.8  L 90.72 136.8  z " style="fill: #ffffff" />
    </g>
@@ -362,11 +362,13 @@
    </g>
   </g>
   <g id="text_30">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Shannon capacity depends on both bandwidth and power signal-to-noise ratio</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="94.467241" transform="rotate(-0 55.44 94.467241)">Shannon capacity depends on both bandwidth and power signal-to-noise ratio</text>
   </g>
-  <g id="text_32" transform="translate(0.000000 -97.456243)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 657.360625)">Capacity is in bit/s when B is in Hz. The plotted SNR is received signal power divided by noise power in the relevant bandwidth. Curves hold the SNR value</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 670.078125)">fixed while varying B; a fixed noise spectral density would generally change SNR when B changes.</text>
+  <g id="text_31">
+   </g>
+  <g id="text_32">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 597.896552)">Capacity is in bit/s when B is in Hz. The plotted SNR is received signal power divided by noise power in the relevant bandwidth. Curves hold the SNR value</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 610.614052)">fixed while varying B; a fixed noise spectral density would generally change SNR when B changes.</text>
   </g>
  </g>
  <defs>

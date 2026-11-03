@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="926.803pt" height="589.816pt" viewBox="36.880000 10.638755 926.803429 589.816342" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="820.131pt" height="543.833pt" viewBox="43.869000 83.656000 820.131000 543.833055" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-12.048667 -74.655528)">
+  <g id="axes_1" transform="translate(-18.794669 -2.732901)">
    <g id="patch_2">
     <path d="M 315.6048 220.032  L 575.7696 220.032  L 575.7696 130.608  L 315.6048 130.608  z " clip-path="url(#pb96112c4e7)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -144,12 +144,12 @@
    </g>
   </g>
   <g id="text_10">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Parallel PID adds proportional, integral, and derivative contributions</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="110.599" transform="rotate(-0 55.44 110.599)">Parallel PID adds proportional, integral, and derivative contributions</text>
   </g>
   <g id="text_11">
 </g>
-  <g id="text_12" transform="translate(0.000000 -93.319410)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(151.403125 656.501562)"><tspan style="font-size: 10.000px">Ideal parallel PID: C(s)=K</tspan><tspan style="font-size: 7.200px" dy="2.400px">p</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">+K</tspan><tspan style="font-size: 7.200px" dy="2.400px">i</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">/s+K</tspan><tspan style="font-size: 7.200px" dy="2.400px">ds</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=K</tspan><tspan style="font-size: 7.200px" dy="2.400px">c</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">[1+1/(T</tspan><tspan style="font-size: 7.200px" dy="2.400px">is</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">)+T</tspan><tspan style="font-size: 7.200px" dy="2.400px">ds</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">]. All three branch signs are positive at the sum. Practical D is filtered; integral</tspan></text>
+  <g id="text_12">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(151.403125 656.501562)"><tspan font-size="10.000px">Ideal parallel PID: C(s)=K</tspan><tspan font-size="6.800px" dy="2.400px">p</tspan><tspan font-size="10.000px" dy="-2.400px">+K</tspan><tspan font-size="6.800px" dy="2.400px">i</tspan><tspan font-size="10.000px" dy="-2.400px">/s+K</tspan><tspan font-size="6.800px" dy="2.400px">ds</tspan><tspan font-size="10.000px" dy="-2.400px">=K</tspan><tspan font-size="6.800px" dy="2.400px">c</tspan><tspan font-size="10.000px" dy="-2.400px">[1+1/(T</tspan><tspan font-size="6.800px" dy="2.400px">is</tspan><tspan font-size="10.000px" dy="-2.400px">)+T</tspan><tspan font-size="6.800px" dy="2.400px">ds</tspan><tspan font-size="10.000px" dy="-2.400px">]. All three branch signs are positive at the sum. Practical D is filtered; integral</tspan></text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(132.128125 669.497187)">anti-windup and output limits are additional functions. Parameter mappings depend on controller form; interacting/series PID has different relations.</text>
   </g>
  </g>

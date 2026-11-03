@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="810.000pt" height="433.883pt" viewBox="34.500000 10.157021 810.000000 433.882827" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="804.179pt" height="432.324pt" viewBox="34.518000 141.916678 804.179000 432.324148" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(3.037500 -134.374585)">
+  <g id="axes_1" transform="translate(0.335075 -3.349125)">
    <g id="line2d_1">
     <path d="M 93.6576 274.0392  L 770.3424 274.0392  " clip-path="url(#p9919072e65)" style="fill: none; stroke: #23313d; stroke-width: 1.5; stroke-linecap: square" />
    </g>
@@ -47,7 +47,7 @@
     <text style="font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #b47722" x="424.3104" y="355.650108" transform="rotate(-0 424.3104 355.650108)">σ₁−σ₃=92.426 MPa</text>
    </g>
    <g id="text_5">
-    <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(159.289062 478.360902)"><tspan style="font-size: 25.000px">τ</tspan><tspan style="font-size: 18.000px" dy="6.000px">abs,max</tspan><tspan style="font-size: 25.000px" dy="-6.000px">​</tspan><tspan style="font-size: 25.000px">=(σ</tspan><tspan style="font-size: 18.000px" dy="6.000px">max</tspan><tspan style="font-size: 25.000px" dy="-6.000px">​</tspan><tspan style="font-size: 25.000px">−σ</tspan><tspan style="font-size: 18.000px" dy="6.000px">min</tspan><tspan style="font-size: 25.000px" dy="-6.000px">​</tspan><tspan style="font-size: 25.000px">)/2=46.213 MPa</tspan></text>
+    <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(159.289062 478.360902)"><tspan font-size="25.000px">τ</tspan><tspan font-size="17.000px" dy="6.000px">abs,max</tspan><tspan font-size="25.000px" dy="-6.000px">=(σ</tspan><tspan font-size="17.000px" dy="6.000px">max</tspan><tspan font-size="25.000px" dy="-6.000px">−σ</tspan><tspan font-size="17.000px" dy="6.000px">min</tspan><tspan font-size="25.000px" dy="-6.000px">)/2=46.213 MPa</tspan></text>
     <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(95.171875 512.749573)">In-plane maximum from figures 525–526: 42.426 MPa</text>
    </g>
    <g id="patch_2">
@@ -57,9 +57,9 @@
    </g>
   </g>
   <g id="text_6">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Absolute maximum shear uses the largest three-dimensional principal separation</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="167.219" transform="rotate(-0 47.52 167.219)">Absolute maximum shear uses the largest three-dimensional principal separation</text>
   </g>
-  <g id="text_8" transform="translate(0.000000 -178.265781)">
+  <g id="text_8" transform="translate(0.000000 -47.557570)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(122.307812 590.616625)">Plane stress contributes a third principal stress of zero. Sort all three algebraically before taking half the largest separation;</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(360.495313 603.334125)">line positions are schematic.</text>
   </g>

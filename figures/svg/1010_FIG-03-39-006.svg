@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1032.943pt" height="626.197pt" viewBox="23.914286 13.881207 1032.942857 626.196689" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1003.680pt" height="595.440pt" viewBox="24.480000 90.360000 1003.680000 595.440000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,8 +21,8 @@
   <g id="patch_1">
    <path d="M 0 792  L 1080 792  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(13.500000 -68.400000)" />
-  <g id="axes_2" transform="translate(13.500000 -68.400000)">
+  <g id="axes_1" transform="translate(-0.836400 0.000000)" />
+  <g id="axes_2" transform="translate(-0.836400 0.000000)">
    <g id="patch_2">
     <path d="M 86.4 340.56  L 496.8 340.56  L 496.8 150.48  L 86.4 150.48  z " style="fill: #ffffff" />
    </g>
@@ -220,7 +220,7 @@
     </g>
    </g>
   </g>
-  <g id="axes_3" transform="translate(13.500000 -68.400000)">
+  <g id="axes_3" transform="translate(-0.836400 0.000000)">
    <g id="patch_7">
     <path d="M 626.4 340.56  L 1004.4 340.56  L 1004.4 150.48  L 626.4 150.48  z " style="fill: #ffffff" />
    </g>
@@ -488,7 +488,7 @@
     <path d="M 626.4 150.48  L 1004.4 150.48  " style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linejoin: miter; stroke-linecap: square" />
    </g>
   </g>
-  <g id="axes_4" transform="translate(13.500000 -68.400000)">
+  <g id="axes_4" transform="translate(-0.836400 0.000000)">
    <g id="patch_13">
     <path d="M 86.4 609.84  L 496.8 609.84  L 496.8 419.76  L 86.4 419.76  z " style="fill: #ffffff" />
    </g>
@@ -672,7 +672,7 @@
     </g>
    </g>
   </g>
-  <g id="axes_5" transform="translate(13.500000 -68.400000)">
+  <g id="axes_5" transform="translate(-0.836400 0.000000)">
    <g id="patch_18">
     <path d="M 626.4 609.84  L 1004.4 609.84  L 1004.4 419.76  L 626.4 419.76  z " style="fill: #ffffff" />
    </g>
@@ -941,11 +941,13 @@
    </g>
   </g>
   <g id="text_65">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="43.56" transform="rotate(-0 59.4 43.56)">Sampling replicates spectra; overlapping replicas create aliasing</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="116.799057" transform="rotate(-0 59.4 116.799057)">Sampling replicates spectra; overlapping replicas create aliasing</text>
   </g>
-  <g id="text_67" transform="translate(0.000000 -121.500000)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 723.456625)">Time panels show a2 Hz cosine. Frequency panels independently illustrate a triangular bandlimited spectrum with B=2 Hz; they are not the Fourier transform</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 736.174125)">of that cosine. Replica amplitudes are normalized, omitting the fs multiplier. At fs=3 Hz the2 Hz cosine aliases to1 Hz.</text>
+  <g id="text_66">
+   </g>
+  <g id="text_67">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 658.566038)">Time panels show a2 Hz cosine. Frequency panels independently illustrate a triangular bandlimited spectrum with B=2 Hz; they are not the Fourier transform</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 671.283538)">of that cosine. Replica amplitudes are normalized, omitting the fs multiplier. At fs=3 Hz the2 Hz cosine aliases to1 Hz.</text>
   </g>
  </g>
  <defs>

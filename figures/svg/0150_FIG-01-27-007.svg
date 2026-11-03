@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="970.560pt" height="511.200pt" viewBox="17.280000 4.320000 970.560000 511.200000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="937.920pt" height="487.609pt" viewBox="32.800000 93.202000 937.920000 487.608815" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 648  L 1008 648  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(2.100000 -86.568093)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 45.36 139.5792  L 164.6064 139.5792  L 164.6064 206.55  L 45.36 206.55  z " clip-path="url(#pd7ce989be9)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -146,11 +146,11 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(683.608244 520.776114)">Repeated halving: log n</text>
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(715.532384 538.296661)">Single pass: n</text>
    </g>
-   <g id="text_22">
+   <g id="text_22" transform="translate(0.000000 -25.787005)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="585.376175" transform="rotate(-0 504 585.376175)">Growth curves use unit leading constants for comparison; Big O describes asymptotic scaling.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(2.100000 -86.568093)">
+  <g id="axes_2">
    <g id="patch_22">
     <path d="M 574.56 466.56  L 957.6 466.56  L 957.6 136.08  L 574.56 136.08  z " style="fill: #ffffff" />
    </g>
@@ -650,7 +650,7 @@
     </g>
    </g>
   </g>
-  <g id="text_41">
+  <g id="text_41" transform="translate(0 86.295)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="45.36" y="32.4" transform="rotate(-0 45.36 32.4)">Verification checks paths; efficiency checks growth</text>
   </g>
   </g>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1017.514pt" height="488.489pt" viewBox="30.085714 13.890675 1017.514286 488.488746" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="998.000pt" height="477.009pt" viewBox="36.000000 80.991124 998.000000 477.008876" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,8 +21,8 @@
   <g id="patch_1">
    <path d="M 0 720  L 1080 720  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(4.950000 -66.600000)" />
-  <g id="axes_2" transform="translate(4.950000 -66.600000)">
+  <g id="axes_1" transform="translate(1.247500 0.000000)" />
+  <g id="axes_2" transform="translate(1.247500 0.000000)">
    <g id="patch_2">
     <path d="M 210.816 307.08  L 372.384 307.08  L 372.384 212.688  L 210.816 212.688  z " clip-path="url(#pcf38371529)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -60,7 +60,7 @@
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="291.6" y="369.226937" transform="rotate(-0 291.6 369.226937)">Separate buses</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(4.950000 -66.600000)">
+  <g id="axes_3" transform="translate(1.247500 0.000000)">
    <g id="patch_7">
     <path d="M 740.016 307.08  L 901.584 307.08  L 901.584 212.688  L 740.016 212.688  z " clip-path="url(#pe605d3cbed)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -86,10 +86,10 @@
     <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="972.864" y="356.363063" transform="rotate(-0 972.864 356.363063)">Shared bus</text>
    </g>
   </g>
-  <g id="text_10">
+  <g id="text_10" transform="translate(0 67.0000)">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="39.6" transform="rotate(-0 59.4 39.6)">Harvard separates instruction and data paths; von Neumann shares them</text>
   </g>
-  <g id="text_12" transform="translate(0.000000 -191.700000)">
+  <g id="text_12" transform="translate(0 -130.0000)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 657.360625)">Architecture-level comparison. Shared von Neumann paths can contend for instruction/data transfers, while separate Harvard paths permit concurrent access.</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 670.078125)">Many modern processors use a modified Harvard design with separate instruction/data caches and a unified lower-level memory system.</text>
   </g>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="924.000pt" height="547.238pt" viewBox="42.000000 11.750000 924.000000 547.237721" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="821.800pt" height="500.173pt" viewBox="42.200000 70.335058 821.800000 500.173304" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -60.041237)">
+  <g id="axes_1" transform="translate(-6.505917 -2.055398)">
    <g id="patch_2">
     <path d="M 55.44 344.232  L 239.3496 344.232  L 239.3496 220.032  L 55.44 220.032  z " clip-path="url(#p97e74ffe81)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -91,9 +91,9 @@
    </g>
   </g>
   <g id="text_8">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">A DAQ system conditions analog signals before sampling and conversion</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="96.861" transform="rotate(-0 55.44 96.861)">A DAQ system conditions analog signals before sampling and conversion</text>
   </g>
-  <g id="text_10" transform="translate(0.000000 -133.168385)">
+  <g id="text_10">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(140.028906 656.640625)">Anti-alias filtering is analog and precedes the sampling action; digital filtering cannot remove an alias already folded into the passband. ADC and</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(185.410156 669.358125)">sample/hold functions may be integrated. Clock jitter, channel multiplexing and synchronization contribute to acquisition error.</text>
   </g>

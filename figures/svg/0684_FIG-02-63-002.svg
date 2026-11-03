@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="854.250pt" height="582.984pt" viewBox="43.250000 13.000000 854.250000 582.984091" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="820.021pt" height="536.077pt" viewBox="43.979000 73.255000 820.021000 536.077141" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-28.475000 -61.239661)">
+  <g id="axes_1" transform="translate(-36.217594 -4.100440)">
    <g id="text_1">
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="279.72" y="136.954562" transform="rotate(-0 279.72 136.954562)">LAGGING</text>
    </g>
@@ -35,7 +35,7 @@
     <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="728.28" y="588.766625" transform="rotate(-0 728.28 588.766625)">pf=0.80 leading</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-28.475000 -61.239661)">
+  <g id="axes_2" transform="translate(-36.217594 -4.100440)">
    <g id="line2d_1">
     <path d="M 117 252  L 376.2 252  " clip-path="url(#p895fac4687)" style="fill: none; stroke: #a3afb6; stroke-linecap: square" />
    </g>
@@ -63,7 +63,7 @@
     <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #a23b34" x="334.468682" y="321.764882" transform="rotate(-0 334.468682 321.764882)">I</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(-28.475000 -61.239661)">
+  <g id="axes_3" transform="translate(-36.217594 -4.100440)">
    <g id="line2d_3">
     <path d="M 212.94 464.4  L 288.54 464.4  L 288.54 407.7  L 212.94 464.4  " clip-path="url(#p5d6d2c9e0d)" style="fill: none; stroke: #26776f; stroke-width: 2; stroke-linecap: square" />
    </g>
@@ -74,7 +74,7 @@
     <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="294.588" y="419.399063" transform="rotate(-0 294.588 419.399063)">Q&gt;0</text>
    </g>
   </g>
-  <g id="axes_4" transform="translate(-28.475000 -61.239661)">
+  <g id="axes_4" transform="translate(-36.217594 -4.100440)">
    <g id="line2d_4">
     <path d="M 621 252  L 880.2 252  " clip-path="url(#pfac0d706d3)" style="fill: none; stroke: #a3afb6; stroke-linecap: square" />
    </g>
@@ -102,7 +102,7 @@
     <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #a23b34" x="838.468682" y="189.961368" transform="rotate(-0 838.468682 189.961368)">I</text>
    </g>
   </g>
-  <g id="axes_5" transform="translate(-28.475000 -61.239661)">
+  <g id="axes_5" transform="translate(-36.217594 -4.100440)">
    <g id="line2d_6">
     <path d="M 716.94 464.4  L 792.54 464.4  L 792.54 521.1  L 716.94 464.4  " clip-path="url(#p2a655bffc9)" style="fill: none; stroke: #26776f; stroke-width: 2; stroke-linecap: square" />
    </g>
@@ -114,9 +114,9 @@
    </g>
   </g>
   <g id="text_17">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Lagging and leading current put reactive power on opposite sides of zero</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="98.434" transform="rotate(-0 55.44 98.434)">Lagging and leading current put reactive power on opposite sides of zero</text>
   </g>
-  <g id="text_19" transform="translate(0.000000 -96.844115)">
+  <g id="text_19">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(123.776562 656.640625)">RMS phasors, cosine convention and passive load current. The power-factor magnitude is the same in both examples, so report leading/lagging as well.</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(352.711719 669.358125)">S=VI*: lagging I gives positive Q; leading I gives negative Q.</text>
   </g>

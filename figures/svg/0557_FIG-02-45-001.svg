@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="822.750pt" height="454.082pt" viewBox="39.750000 10.174855 822.750000 454.081647" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="823.774pt" height="454.931pt" viewBox="39.973000 95.326105 823.774000 454.930842" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,12 +21,12 @@
   <g id="patch_1">
    <path d="M 0 648  L 936 648  L 936 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-17.140625 -88.478909)">
+  <g id="axes_1" transform="translate(-16.132241 -2.744407)">
    <g id="text_1">
-    <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="468" y="489.426225" transform="rotate(-0 468 489.426225)"><tspan style="font-size: 20.000px">Example: ū=1 m/s; D=0.020 m; ν=1×10⁻⁶ m²/s → Re</tspan><tspan style="font-size: 14.400px" dy="4.800px">D</tspan><tspan style="font-size: 20.000px" dy="-4.800px">​</tspan><tspan style="font-size: 20.000px">=20,000</tspan></text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="468" y="489.426225" transform="rotate(-0 468 489.426225)"><tspan font-size="20.000px">Example: ū=1 m/s; D=0.020 m; ν=1×10⁻⁶ m²/s → Re</tspan><tspan font-size="13.600px" dy="4.800px">D</tspan><tspan font-size="20.000px" dy="-4.800px">=20,000</tspan></text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-17.140625 -88.478909)">
+  <g id="axes_2" transform="translate(-16.132241 -2.744407)">
    <g id="patch_2">
     <path d="M 93.6 388.8  L 842.4 388.8  L 842.4 168.48  L 93.6 168.48  z " style="fill: #ffffff" />
    </g>
@@ -371,7 +371,7 @@
      </g>
     </g>
     <g id="text_7">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="468" y="416.707031" transform="rotate(-0 468 416.707031)"><tspan style="font-size: 11.000px">Re</tspan><tspan style="font-size: 7.920px" dy="2.640px">D</tspan><tspan style="font-size: 11.000px" dy="-2.640px">​</tspan><tspan style="font-size: 11.000px">=ρūD/μ=ūD/ν</tspan></text>
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="468" y="416.707031" transform="rotate(-0 468 416.707031)"><tspan font-size="11.000px">Re</tspan><tspan font-size="7.480px" dy="2.640px">D</tspan><tspan font-size="11.000px" dy="-2.640px">=ρūD/μ=ūD/ν</tspan></text>
     </g>
    </g>
    <g id="matplotlib.axis_2" />
@@ -404,9 +404,9 @@
    </g>
   </g>
   <g id="text_13">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="51.48" y="35.64" transform="rotate(-0 51.48 35.64)">Reynolds number organizes circular-pipe flow regimes</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="51.48" y="120.869" transform="rotate(-0 51.48 120.869)">Reynolds number organizes circular-pipe flow regimes</text>
   </g>
-  <g id="text_15" transform="translate(0.000000 -157.753093)">
+  <g id="text_15" transform="translate(0.000000 -72.040692)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(95.925781 590.616625)">Bands follow FE Handbook 10.6 Fluid Mechanics: laminar below 2100, transition 2100–10000, fully turbulent above 10000. Other texts use narrower</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(293.158594 603.334125)">transition bands; onset depends on inlet disturbances and conditions.</text>
   </g>

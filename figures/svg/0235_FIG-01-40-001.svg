@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="821.417pt" height="517.166pt" viewBox="16.662857 4.320000 821.417143 517.165714" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="799.680pt" height="425.048pt" viewBox="27.360000 87.062603 799.680000 425.048276" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(2.520000 -79.920000)">
+  <g id="axes_1" transform="translate(-1.999200 0.000000)">
    <g id="text_1">
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(666.9938 200.183125)">Control limits:</text>
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(654.51255 221.746875)">process behavior</text>
@@ -30,11 +30,11 @@
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(664.6813 385.640725)">Specifications:</text>
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(633.9238 407.204475)">external requirements</text>
    </g>
-   <g id="text_3">
+   <g id="text_3" transform="translate(0.000000 -91.928405)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="585.376175" transform="rotate(-0 432 585.376175)">μ = 50, σ = 1. Natural spread μ±3σ contains about 99.73% under a normal model; the distribution still has tails.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(2.520000 -79.920000)">
+  <g id="axes_2" transform="translate(-1.999200 0.000000)">
    <g id="patch_2">
     <path d="M 60.48 447.12  L 596.16 447.12  L 596.16 129.6  L 60.48 129.6  z " style="fill: #ffffff" />
    </g>
@@ -180,7 +180,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="328.32" y="332.920784" transform="rotate(-0 328.32 332.920784)">6σ = 6</text>
    </g>
   </g>
-  <g id="text_17">
+  <g id="text_17" transform="translate(0 79.920)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="32.4" transform="rotate(-0 38.88 32.4)">Specifications bound the requirement; natural spread describes the process</text>
   </g>
   </g>

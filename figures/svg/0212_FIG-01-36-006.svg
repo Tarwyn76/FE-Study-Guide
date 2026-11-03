@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="854.743pt" height="528.274pt" viewBox="4.937143 3.702857 854.742857 528.274286" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="830.400pt" height="441.932pt" viewBox="3.360000 76.913197 830.400000 441.931973" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,12 +21,12 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(13.680000 -70.560000)">
-   <g id="text_1">
+  <g id="axes_1">
+   <g id="text_1" transform="translate(0.000000 -85.815873)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="585.632425" transform="rotate(-0 432 585.632425)">Independent random standard error of the mean: s/√n. Repeated measurements do not automatically remove common bias.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(13.680000 -70.560000)">
+  <g id="axes_2">
    <g id="patch_2">
     <path d="M 51.84 453.6  L 397.44 453.6  L 397.44 136.08  L 51.84 136.08  z " style="fill: #ffffff" />
    </g>
@@ -306,7 +306,7 @@
     </g>
    </g>
   </g>
-  <g id="axes_3" transform="translate(13.680000 -70.560000)">
+  <g id="axes_3">
    <g id="patch_5">
     <path d="M 475.2 453.6  L 820.8 453.6  L 820.8 136.08  L 475.2 136.08  z " style="fill: #ffffff" />
    </g>
@@ -580,7 +580,7 @@
     </g>
    </g>
   </g>
-  <g id="text_48">
+  <g id="text_48" transform="translate(0 70.200)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="32.4" transform="rotate(-0 38.88 32.4)">Averaging reduces random scatter but leaves a shared bias</text>
   </g>
   </g>

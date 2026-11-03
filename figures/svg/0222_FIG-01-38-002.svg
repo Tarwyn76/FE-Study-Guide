@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="826.971pt" height="626.221pt" viewBox="16.662857 4.935733 826.971429 626.221080" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="810.240pt" height="467.444pt" viewBox="27.360000 54.240000 810.240000 467.443524" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 864 720  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-4.320000 -44.640000)">
+  <g id="axes_1" transform="translate(-4.051200 0.000000)">
    <g id="patch_2">
     <path d="M 70.3296 127.6128  C 76.167972 127.6128 81.768005 129.301527 85.896358 132.307058  C 90.02471 135.312589 92.34432 139.389537 92.34432 143.64  C 92.34432 147.890463 90.02471 151.967411 85.896358 154.972942  C 81.768005 157.978473 76.167972 159.6672 70.3296 159.6672  C 64.491228 159.6672 58.891195 157.978473 54.762842 154.972942  C 50.63449 151.967411 48.31488 147.890463 48.31488 143.64  C 48.31488 139.389537 50.63449 135.312589 54.762842 132.307058  C 58.891195 129.301527 64.491228 127.6128 70.3296 127.6128  z " clip-path="url(#pe2eaa0b150)" style="fill: #b47722; stroke: #235a78; stroke-linejoin: miter" />
    </g>
@@ -127,12 +127,12 @@
      <rect x="132.996094" y="-6.527344" width="73.481483" height="1.625" />
     </g>
    </g>
-   <g id="text_4">
+   <g id="text_4" transform="translate(0.000000 -154.657681)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(163.9625 643.372703)">Success probability changes after each draw. Binomial instead assumes constant p and independent trials.</text>
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(287.352344 656.850047)">Hypergeometric support: max(0,n−(N−r)) ≤ x ≤ min(n,r).</text>
    </g>
   </g>
-  <g id="text_5">
+  <g id="text_5" transform="translate(0 44.951)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="36" transform="rotate(-0 38.88 36)">Sampling without replacement changes the remaining composition</text>
   </g>
   </g>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="832.526pt" height="594.139pt" viewBox="16.045714 5.552699 832.525714 594.138817" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="809.280pt" height="520.854pt" viewBox="24.480000 79.200000 809.280000 520.854492" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,12 +21,12 @@
   <g id="patch_1">
    <path d="M 0 720  L 864 720  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(3.240000 -69.120000)">
-   <g id="text_1">
+  <g id="axes_1">
+   <g id="text_1" transform="translate(0.000000 -71.513364)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="650.111375" transform="rotate(-0 432 650.111375)">Do not invent a missing limit. Two-sided Cp needs both specifications; one-sided capability uses the relevant side index.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(3.240000 -69.120000)">
+  <g id="axes_2">
    <g id="patch_2">
     <path d="M 207.36 295.2  L 656.64 295.2  L 656.64 136.8  L 207.36 136.8  z " style="fill: #ffffff" />
    </g>
@@ -130,7 +130,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="432" y="130.8" transform="rotate(-0 432 130.8)">Two-sided: Cp and Cpk</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(3.240000 -69.120000)">
+  <g id="axes_3">
    <g id="patch_5">
     <path d="M 51.84 547.2  L 397.44 547.2  L 397.44 388.8  L 51.84 388.8  z " style="fill: #ffffff" />
    </g>
@@ -225,7 +225,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="224.64" y="382.8" transform="rotate(-0 224.64 382.8)">Upper only: Cpu = (USL−μ)/(3σ)</text>
    </g>
   </g>
-  <g id="axes_4" transform="translate(3.240000 -69.120000)">
+  <g id="axes_4">
    <g id="patch_8">
     <path d="M 475.2 547.2  L 820.8 547.2  L 820.8 388.8  L 475.2 388.8  z " style="fill: #ffffff" />
    </g>
@@ -320,7 +320,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="648" y="382.8" transform="rotate(-0 648 382.8)">Lower only: Cpl = (μ−LSL)/(3σ)</text>
    </g>
   </g>
-  <g id="text_27">
+  <g id="text_27" transform="translate(0 69.779)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="36" transform="rotate(-0 38.88 36)">Use only the specification limits that actually exist</text>
   </g>
   </g>

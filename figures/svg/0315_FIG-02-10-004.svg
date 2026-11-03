@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="801.051pt" height="385.852pt" viewBox="17.897143 4.321543 801.051429 385.852090" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="753.600pt" height="382.268pt" viewBox="28.320000 90.953622 753.600000 382.267972" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,8 +21,8 @@
   <g id="patch_1">
    <path d="M 0 576  L 864 576  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(26.640000 -86.400000)" />
-  <g id="axes_2" transform="translate(26.640000 -86.400000)">
+  <g id="axes_1" transform="translate(-0.314000 0.000000)" />
+  <g id="axes_2" transform="translate(-0.314000 0.000000)">
    <g id="patch_2">
     <path d="M 77.76 408.96  L 768.96 408.96  L 768.96 132.48  L 77.76 132.48  z " style="fill: #ffffff" />
    </g>
@@ -189,10 +189,10 @@
     </g>
    </g>
   </g>
-  <g id="text_14">
+  <g id="text_14" transform="translate(0 86.842)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="28.8" transform="rotate(-0 38.88 28.8)">Equal expected values can hide very different risk</text>
   </g>
-  <g id="text_16" transform="translate(0.000000 -167.760000)">
+  <g id="text_16" transform="translate(0.000000 -3.139967) translate(0 -78.725)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="538.56" transform="rotate(-0 432 538.56)">EV(A) = EV(B) = 50. A has zero variance; B has variance 10,000. Consider downside constraints and risk tolerance.</text>
   </g>
  </g>

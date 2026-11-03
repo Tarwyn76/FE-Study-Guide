@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="747.750pt" height="466.279pt" viewBox="35.500000 10.500000 747.750000 466.278829" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="745.709pt" height="466.409pt" viewBox="34.517000 107.621430 745.709000 466.408862" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(2.492500 -100.917351)">
+  <g id="axes_1" transform="translate(0.310712 -3.105304)">
    <g id="patch_2">
     <path d="M 109.0368 367.9344  L 378.1728 367.9344  L 378.1728 202.5  L 109.0368 202.5  z " clip-path="url(#pdf3052f7dd)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -29,7 +29,7 @@
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="243.6048" y="291.563762" transform="rotate(-0 243.6048 291.563762)">TURBINE</text>
    </g>
    <g id="text_2">
-    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #b47722" x="270.5184" y="457.35345" transform="rotate(-0 270.5184 457.35345)"><tspan style="font-size: 18.000px">w</tspan><tspan style="font-size: 12.960px" dy="4.320px">out</tspan><tspan style="font-size: 18.000px" dy="-4.320px">​</tspan></text>
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #b47722" x="270.5184" y="457.35345" transform="rotate(-0 270.5184 457.35345)"><tspan font-size="18.000px">w</tspan><tspan font-size="12.240px" dy="4.320px">out</tspan></text>
    </g>
    <g id="text_3">
     <text style="font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="70.5888" y="167.502013" transform="rotate(-0 70.5888 167.502013)">h₁=3200 kJ/kg</text>
@@ -41,7 +41,7 @@
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="639.6192" y="270.891487" transform="rotate(-0 639.6192 270.891487)">h₂s=2400; h₂=2600</text>
    </g>
    <g id="text_6">
-    <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(507.158262 375.523302)"><tspan style="font-size: 25.000px">η</tspan><tspan style="font-size: 18.000px" dy="6.000px">t</tspan><tspan style="font-size: 25.000px" dy="-6.000px">​</tspan><tspan style="font-size: 25.000px">=(h₁−h₂)/(h₁−h₂s)</tspan></text>
+    <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(507.158262 375.523302)"><tspan font-size="25.000px">η</tspan><tspan font-size="17.000px" dy="6.000px">t</tspan><tspan font-size="25.000px" dy="-6.000px">=(h₁−h₂)/(h₁−h₂s)</tspan></text>
     <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(538.908262 409.911973)">=600/800=0.75</text>
    </g>
    <g id="text_7">
@@ -61,9 +61,9 @@
    </g>
   </g>
   <g id="text_8">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Turbine isentropic efficiency compares actual work with the ideal work</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="133.404" transform="rotate(-0 47.52 133.404)">Turbine isentropic efficiency compares actual work with the ideal work</text>
   </g>
-  <g id="text_10" transform="translate(0.000000 -145.769507)">
+  <g id="text_10" transform="translate(0.000000 -48.442739)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(107.545312 590.616625)">Steady adiabatic turbine, negligible KE/PE change. State 2s has the actual exit pressure and s₂s=s₁. Irreversibility gives less work</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(229.671094 603.334125)">and higher exit enthalpy than the isentropic reference under these assumptions.</text>
   </g>

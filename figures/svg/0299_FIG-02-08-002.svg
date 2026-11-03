@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="818.331pt" height="556.244pt" viewBox="17.280000 0.000000 818.331429 556.244373" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="785.280pt" height="388.874pt" viewBox="14.880000 84.885731 785.280000 388.874269" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 576  L 864 576  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(24.480000 -80.640000)">
+  <g id="axes_1" transform="translate(0.654400 0.000000)">
    <g id="text_1">
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="730.7712" y="174.553337" transform="rotate(-0 730.7712 174.553337)">Cₐ = Fₐ + vₐQ</text>
    </g>
@@ -34,7 +34,7 @@
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(666.25995 427.756875)">          / (vₐ − vᵦ)</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(24.480000 -80.640000)">
+  <g id="axes_2" transform="translate(0.654400 0.000000)">
    <g id="patch_2">
     <path d="M 77.76 408.96  L 639.36 408.96  L 639.36 126.72  L 77.76 126.72  z " style="fill: #ffffff" />
    </g>
@@ -318,10 +318,10 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start" x="118.287273" y="323.985455" transform="rotate(-0 118.287273 323.985455)">Fᵦ = 20,000</text>
    </g>
   </g>
-  <g id="text_26">
+  <g id="text_26" transform="translate(0 80.358)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="28.8" transform="rotate(-0 38.88 28.8)">Fixed cost sets the intercept; variable cost sets the slope</text>
   </g>
-  <g id="text_28">
+  <g id="text_28" transform="translate(0.000000 -2.615559) translate(0 -78.725)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="538.56" transform="rotate(-0 432 538.56)">Linear cost model over the relevant range; vₐ ≠ vᵦ. These values give Q* = 1,000 units.</text>
   </g>
  </g>

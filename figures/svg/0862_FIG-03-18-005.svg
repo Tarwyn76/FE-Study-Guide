@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="958.540pt" height="596.096pt" viewBox="26.620000 10.009565 958.540000 596.095600" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="829.840pt" height="565.011pt" viewBox="34.160000 82.989000 829.840000 565.011000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,10 +21,10 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(1.198175 -74.304305)">
+  <g id="axes_1" transform="translate(-6.569567 -1.383136)">
    <g id="text_1">
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(728.023406 200.970023)"><tspan style="font-size: 21.000px">H</tspan><tspan style="font-size: 15.120px" dy="5.040px">p</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">=45−5000Q²</tspan></text>
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(722.538797 229.856508)"><tspan style="font-size: 21.000px">H</tspan><tspan style="font-size: 15.120px" dy="5.040px">s</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">=15+10000Q²</tspan></text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(728.023406 200.970023)"><tspan font-size="21.000px">H</tspan><tspan font-size="14.280px" dy="5.040px">p</tspan><tspan font-size="21.000px" dy="-5.040px">=45−5000Q²</tspan></text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(722.538797 229.856508)"><tspan font-size="21.000px">H</tspan><tspan font-size="14.280px" dy="5.040px">s</tspan><tspan font-size="21.000px" dy="-5.040px">=15+10000Q²</tspan></text>
    </g>
    <g id="text_2">
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(674.891766 365.683477)">Operating Q=0.04472 m³/s</text>
@@ -37,7 +37,7 @@
     <text style="font-size: 19px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(734.141141 591.573242)">efficiency / NPSH.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(1.198175 -74.304305)">
+  <g id="axes_2" transform="translate(-6.569567 -1.383136)">
    <g id="patch_2">
     <path d="M 80.64 496.8  L 675.36 496.8  L 675.36 129.6  L 80.64 129.6  z " style="fill: #ffffff" />
    </g>
@@ -300,12 +300,12 @@
    </g>
   </g>
   <g id="text_24">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Pump and system curves intersect at the steady operating point</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="110.840" transform="rotate(-0 55.44 110.840)">Pump and system curves intersect at the steady operating point</text>
   </g>
   <g id="text_25">
 </g>
-  <g id="text_26" transform="translate(0.000000 -91.881667)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(117.610937 650.142812)"><tspan style="font-size: 10.000px">Hypothetical curves at one speed, same head datum. Static head15 m plus quadratic losses; operating point solves H</tspan><tspan style="font-size: 7.200px" dy="2.400px">p</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=H</tspan><tspan style="font-size: 7.200px" dy="2.400px">s</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">. Green band is a conceptual</tspan></text>
+  <g id="text_26" transform="translate(0.000000 -38.036236)">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(117.610937 650.142812)"><tspan font-size="10.000px">Hypothetical curves at one speed, same head datum. Static head15 m plus quadratic losses; operating point solves H</tspan><tspan font-size="6.800px" dy="2.400px">p</tspan><tspan font-size="10.000px" dy="-2.400px">=H</tspan><tspan font-size="6.800px" dy="2.400px">s</tspan><tspan font-size="10.000px" dy="-2.400px">. Green band is a conceptual</tspan></text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(126.645312 663.138438)">efficiency region, not a measured pump efficiency curve or guaranteed preferred operating range. Cavitation, motor power and transient behavior are</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(458.746094 675.855937)">additional checks.</text>
   </g>

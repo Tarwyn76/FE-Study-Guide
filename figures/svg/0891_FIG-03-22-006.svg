@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="962.640pt" height="678.240pt" viewBox="23.040000 11.520000 962.640000 678.240000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="940.800pt" height="630.198pt" viewBox="25.536000 91.658000 940.800000 630.198000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,13 +21,13 @@
   <g id="patch_1">
    <path d="M 0 792  L 1008 792  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(11.340000 -68.029692)">
+  <g id="axes_1" transform="translate(3.136000 0.000000)">
    <g id="text_1">
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(753.339891 239.143477)">Span L=6 m</text>
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(740.164031 267.445898)">Section a=2 m</text>
    </g>
    <g id="text_2">
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="817.992" y="416.654625" transform="rotate(-0 817.992 416.654625)"><tspan style="font-size: 21.000px">R</tspan><tspan style="font-size: 15.120px" dy="5.040px">A</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">/P=1−x/L</tspan></text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="817.992" y="416.654625" transform="rotate(-0 817.992 416.654625)"><tspan font-size="21.000px">R</tspan><tspan font-size="14.280px" dy="5.040px">A</tspan><tspan font-size="21.000px" dy="-5.040px">/P=1−x/L</tspan></text>
    </g>
    <g id="text_3">
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(687.390047 563.809866)">Peak moment coefficient</text>
@@ -35,7 +35,7 @@
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(720.469969 620.414709)">a(L−a)/L=1.333 m</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(11.340000 -68.029692)">
+  <g id="axes_2" transform="translate(3.136000 0.000000)">
    <g id="patch_2">
     <path d="M 140.4 205.92  L 124.56 226.512  L 156.24 226.512  z " clip-path="url(#pcbd3722a7f)" style="fill: #edf3f6; stroke: #23313d; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -65,7 +65,7 @@
     <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="330.48" y="150.659063" transform="rotate(-0 330.48 150.659063)">Unit force at x</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(11.340000 -68.029692)">
+  <g id="axes_3" transform="translate(3.136000 0.000000)">
    <g id="patch_7">
     <path d="M 80.64 451.44  L 675.36 451.44  L 675.36 316.8  L 80.64 316.8  z " style="fill: #ffffff" />
    </g>
@@ -272,7 +272,7 @@
     <path d="M 80.64 451.44  L 675.36 451.44  " style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linejoin: miter; stroke-linecap: square" />
    </g>
   </g>
-  <g id="axes_4" transform="translate(11.340000 -68.029692)">
+  <g id="axes_4" transform="translate(3.136000 0.000000)">
    <g id="patch_10">
     <path d="M 80.64 633.6  L 675.36 633.6  L 675.36 498.96  L 80.64 498.96  z " style="fill: #ffffff" />
    </g>
@@ -474,12 +474,14 @@
    </g>
   </g>
   <g id="text_35">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="43.56" transform="rotate(-0 55.44 43.56)">An influence line gives a chosen beam response as a unit load moves along the span</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="116.041977" transform="rotate(-0 55.44 116.041977)">An influence line gives a chosen beam response as a unit load moves along the span</text>
   </g>
-  <g id="text_37" transform="translate(0.000000 -79.787911)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(126.608594 716.305875)">Simply supported ideal beam, downward moving unit force. Reaction influence ordinate is dimensionless; moment influence ordinate has length units.</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(139.759375 729.023375)">Multiply by a point-load magnitude or integrate distributed load times influence ordinate to obtain that load effect. This is an influence line, not a</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(370.075781 741.740875)">bending-moment diagram for one fixed load position.</text>
+  <g id="text_36">
+   </g>
+  <g id="text_37">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(126.609 682.457926)">Simply supported ideal beam, downward moving unit force. Reaction influence ordinate is dimensionless; moment influence ordinate has length units.</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(139.759 695.175426)">Multiply by a point-load magnitude or integrate distributed load times influence ordinate to obtain that load effect. This is an influence line, not a</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(370.076 707.892926)">bending-moment diagram for one fixed load position.</text>
   </g>
  </g>
  <defs>

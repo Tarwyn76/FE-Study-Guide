@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="833.143pt" height="556.663pt" viewBox="15.428571 3.085714 833.142857 556.662857" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="811.200pt" height="550.080pt" viewBox="26.400000 35.040000 811.200000 550.080000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -28.800000)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 38.88 77.76  L 274.752 77.76  L 274.752 180.792  L 38.88 180.792  z " clip-path="url(#pa881cb5790)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -86,7 +86,7 @@
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="535.5158" transform="rotate(-0 432 535.5158)">NOT(x ≥ 0 AND x ≤ 10)  ⇔  x &lt; 0 OR x &gt; 10</text>
    </g>
   </g>
-  <g id="text_10">
+  <g id="text_10" transform="translate(0 29.160)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="32.4" transform="rotate(-0 38.88 32.4)">Decision ladders need explicit boundary ownership</text>
   </g>
   </g>

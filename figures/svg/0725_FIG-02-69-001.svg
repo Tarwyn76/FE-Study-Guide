@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="915.250pt" height="508.576pt" viewBox="42.000000 12.403696 915.250000 508.575875" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="821.925pt" height="459.030pt" viewBox="42.075000 82.723995 821.925000 459.029944" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.381354 -68.649262)">
+  <g id="axes_1" transform="translate(-6.506906 -2.740257)">
    <g id="patch_2">
     <path d="M 55.44 339.264  L 378.4032 339.264  L 378.4032 215.064  L 55.44 215.064  z " clip-path="url(#pa92c0a6b98)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -59,7 +59,7 @@
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(138.360428 475.373508)">Poles: −2, −3</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-0.381354 -68.649262)">
+  <g id="axes_2" transform="translate(-6.506906 -2.740257)">
    <g id="patch_3">
     <path d="M 504 496.8  L 937.44 496.8  L 937.44 129.6  L 504 129.6  z " style="fill: #ffffff" />
    </g>
@@ -371,9 +371,9 @@
    </g>
   </g>
   <g id="text_26">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Transfer-function factors locate finite zeros and poles in the complex s-plane</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="108.096" transform="rotate(-0 55.44 108.096)">Transfer-function factors locate finite zeros and poles in the complex s-plane</text>
   </g>
-  <g id="text_28" transform="translate(0.000000 -169.334847)">
+  <g id="text_28">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(137.58125 656.640625)">Reduced rational LTI transfer function with zero initial conditions; gain factor K=2. Poles are denominator roots and zeros numerator roots. Hidden</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(151.25 669.358125)">unstable pole-zero cancellations can invalidate an input-output stability inference about the internal state; this example has no cancellation.</text>
   </g>

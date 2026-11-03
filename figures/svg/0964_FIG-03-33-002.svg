@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="945.360pt" height="582.480pt" viewBox="28.080000 10.800000 945.360000 582.480000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="915.264pt" height="537.421pt" viewBox="25.536000 85.916000 915.264000 537.421000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,13 +21,13 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(21.000000 -65.530922)">
+  <g id="axes_1">
    <g id="text_1">
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(698.543016 201.155414)"><tspan style="font-size: 21.000px">V</tspan><tspan style="font-size: 15.120px" dy="5.040px">CC</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">=12 V; R</tspan><tspan style="font-size: 15.120px" dy="5.040px">C</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">=6 kΩ</tspan></text>
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(691.873875 230.041898)"><tspan style="font-size: 21.000px">Q: V</tspan><tspan style="font-size: 15.120px" dy="5.040px">CE</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">=6 V, I</tspan><tspan style="font-size: 15.120px" dy="5.040px">C</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">=1 mA</tspan></text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(698.543016 201.155414)"><tspan font-size="21.000px">V</tspan><tspan font-size="14.280px" dy="5.040px">CC</tspan><tspan font-size="21.000px" dy="-5.040px">=12 V; R</tspan><tspan font-size="14.280px" dy="5.040px">C</tspan><tspan font-size="21.000px" dy="-5.040px">=6 kΩ</tspan></text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(691.873875 230.041898)"><tspan font-size="21.000px">Q: V</tspan><tspan font-size="14.280px" dy="5.040px">CE</tspan><tspan font-size="21.000px" dy="-5.040px">=6 V, I</tspan><tspan font-size="14.280px" dy="5.040px">C</tspan><tspan font-size="21.000px" dy="-5.040px">=1 mA</tspan></text>
    </g>
    <g id="text_2">
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(712.066687 375.39307)"><tspan style="font-size: 21.000px">β=100 → I</tspan><tspan style="font-size: 15.120px" dy="5.040px">B</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">≈10 µA</tspan></text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(712.066687 375.39307)"><tspan font-size="21.000px">β=100 → I</tspan><tspan font-size="14.280px" dy="5.040px">B</tspan><tspan font-size="21.000px" dy="-5.040px">≈10 µA</tspan></text>
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(706.078406 404.279555)">Emitter at DC ground</text>
    </g>
    <g id="text_3">
@@ -35,7 +35,7 @@
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(743.591297 567.865898)">12 V and2 mA</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(21.000000 -65.530922)">
+  <g id="axes_2">
    <g id="patch_2">
     <path d="M 80.64 504  L 675.36 504  L 675.36 122.4  L 80.64 122.4  z " style="fill: #ffffff" />
    </g>
@@ -143,7 +143,7 @@
      </g>
     </g>
     <g id="text_11">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="378" y="532.056562" transform="rotate(-0 378 532.056562)"><tspan style="font-size: 11.000px">v</tspan><tspan style="font-size: 7.920px" dy="2.640px">CE</tspan><tspan style="font-size: 11.000px" dy="-2.640px">​</tspan><tspan style="font-size: 11.000px"> (V)</tspan></text>
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="378" y="532.056562" transform="rotate(-0 378 532.056562)"><tspan font-size="11.000px">v</tspan><tspan font-size="7.480px" dy="2.640px">CE</tspan><tspan font-size="11.000px" dy="-2.640px"> (V)</tspan></text>
     </g>
    </g>
    <g id="matplotlib.axis_2">
@@ -268,7 +268,7 @@
      </g>
     </g>
     <g id="text_21">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="47.007344" y="313.2" transform="rotate(-90 47.007344 313.2)"><tspan style="font-size: 11.000px">i</tspan><tspan style="font-size: 7.920px" dy="2.640px">C</tspan><tspan style="font-size: 11.000px" dy="-2.640px">​</tspan><tspan style="font-size: 11.000px"> (mA)</tspan></text>
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="47.007344" y="313.2" transform="rotate(-90 47.007344 313.2)"><tspan font-size="11.000px">i</tspan><tspan font-size="7.480px" dy="2.640px">C</tspan><tspan font-size="11.000px" dy="-2.640px"> (mA)</tspan></text>
     </g>
    </g>
    <g id="line2d_33">
@@ -304,35 +304,37 @@
      <path d="M 542.299062 135.498437  L 552.299062 135.498437  L 562.299062 135.498437  " style="fill: none; stroke: #9ab3c1; stroke-width: 1.4; stroke-linecap: square" />
     </g>
     <g id="text_23">
-     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="570.299062" y="138.998437" transform="rotate(-0 570.299062 138.998437)"><tspan style="font-size: 10.000px">I</tspan><tspan style="font-size: 7.200px" dy="2.400px">B</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=5 µA</tspan></text>
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="570.299062" y="138.998437" transform="rotate(-0 570.299062 138.998437)"><tspan font-size="10.000px">I</tspan><tspan font-size="6.800px" dy="2.400px">B</tspan><tspan font-size="10.000px" dy="-2.400px">=5 µA</tspan></text>
     </g>
     <g id="line2d_38">
      <path d="M 542.299062 150.454687  L 552.299062 150.454687  L 562.299062 150.454687  " style="fill: none; stroke: #9ab3c1; stroke-width: 1.4; stroke-linecap: square" />
     </g>
     <g id="text_24">
-     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="570.299062" y="153.954687" transform="rotate(-0 570.299062 153.954687)"><tspan style="font-size: 10.000px">I</tspan><tspan style="font-size: 7.200px" dy="2.400px">B</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=10 µA</tspan></text>
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="570.299062" y="153.954687" transform="rotate(-0 570.299062 153.954687)"><tspan font-size="10.000px">I</tspan><tspan font-size="6.800px" dy="2.400px">B</tspan><tspan font-size="10.000px" dy="-2.400px">=10 µA</tspan></text>
     </g>
     <g id="line2d_39">
      <path d="M 542.299062 165.410937  L 552.299062 165.410937  L 562.299062 165.410937  " style="fill: none; stroke: #9ab3c1; stroke-width: 1.4; stroke-linecap: square" />
     </g>
     <g id="text_25">
-     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="570.299062" y="168.910937" transform="rotate(-0 570.299062 168.910937)"><tspan style="font-size: 10.000px">I</tspan><tspan style="font-size: 7.200px" dy="2.400px">B</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=15 µA</tspan></text>
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="570.299062" y="168.910937" transform="rotate(-0 570.299062 168.910937)"><tspan font-size="10.000px">I</tspan><tspan font-size="6.800px" dy="2.400px">B</tspan><tspan font-size="10.000px" dy="-2.400px">=15 µA</tspan></text>
     </g>
     <g id="line2d_40">
      <path d="M 542.299062 180.367187  L 552.299062 180.367187  L 562.299062 180.367187  " style="fill: none; stroke: #a23b34; stroke-width: 2; stroke-linecap: square" />
     </g>
     <g id="text_26">
-     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="570.299062" y="183.867187" transform="rotate(-0 570.299062 183.867187)"><tspan style="font-size: 10.000px">R</tspan><tspan style="font-size: 7.200px" dy="2.400px">C</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=6 kΩ load line</tspan></text>
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="570.299062" y="183.867187" transform="rotate(-0 570.299062 183.867187)"><tspan font-size="10.000px">R</tspan><tspan font-size="6.800px" dy="2.400px">C</tspan><tspan font-size="10.000px" dy="-2.400px">=6 kΩ load line</tspan></text>
     </g>
    </g>
   </g>
   <g id="text_27">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">A DC load line locates a transistor bias point and constrains signal swing</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="109.984483" transform="rotate(-0 55.44 109.984483)">A DC load line locates a transistor bias point and constrains signal swing</text>
   </g>
-  <g id="text_29" transform="translate(0.000000 -106.697783)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(131.697656 650.313125)">Simplified β=100 active curves neglect Early effect and use a schematic0.2 V knee. Q is centered on the ideal resistive DC load line; usable swing is</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(124.096875 663.030625)">slightly limited by saturation and other device constraints. An external AC load can change the AC load line. The diagram does not specify bias stability</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(399.665625 675.748125)">or a transistor safe-operating-area rating.</text>
+  <g id="text_28">
+   </g>
+  <g id="text_29">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(131.698 585.482759)">Simplified β=100 active curves neglect Early effect and use a schematic0.2 V knee. Q is centered on the ideal resistive DC load line; usable swing is</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(124.097 598.200259)">slightly limited by saturation and other device constraints. An external AC load can change the AC load line. The diagram does not specify bias stability</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(399.666 610.917759)">or a transistor safe-operating-area rating.</text>
   </g>
  </g>
  <defs>

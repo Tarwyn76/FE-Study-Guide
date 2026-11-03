@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="983.000pt" height="573.438pt" viewBox="46.000000 13.750000 983.000000 573.438285" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="818.712pt" height="525.494pt" viewBox="45.288000 104.386000 818.712000 525.493533" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1080 720  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.409583 -92.579976)">
+  <g id="axes_1" transform="translate(-6.822600 -2.046226)">
    <g id="patch_2">
     <path d="M 59.4 269.712  L 203.58 269.712  L 203.58 155.448  L 59.4 155.448  z " clip-path="url(#p241e3dac17)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -65,7 +65,7 @@
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="78.624" y="358.858938" transform="rotate(-0 78.624 358.858938)">1</text>
    </g>
    <g id="text_9">
-    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="540" y="603.626719" transform="rotate(-0 540 603.626719)"><tspan style="font-size: 23.000px">r</tspan><tspan style="font-size: 16.560px" dy="5.520px">p</tspan><tspan style="font-size: 23.000px" dy="-5.520px">​</tspan><tspan style="font-size: 23.000px">=6; k=1.4 → η</tspan><tspan style="font-size: 16.560px" dy="5.520px">Brayton</tspan><tspan style="font-size: 23.000px" dy="-5.520px">​</tspan><tspan style="font-size: 23.000px">=1−1/r</tspan><tspan style="font-size: 16.560px" dy="5.520px">p</tspan><tspan style="font-size: 23.000px" dy="-5.520px">​</tspan><tspan style="font-size: 23.000px">^((k−1)/k)=0.401</tspan></text>
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="540" y="603.626719" transform="rotate(-0 540 603.626719)"><tspan font-size="23.000px">r</tspan><tspan font-size="15.640px" dy="5.520px">p</tspan><tspan font-size="23.000px" dy="-5.520px">=6; k=1.4 → η</tspan><tspan font-size="15.640px" dy="5.520px">Brayton</tspan><tspan font-size="23.000px" dy="-5.520px">=1−1/r</tspan><tspan font-size="15.640px" dy="5.520px">p</tspan><tspan font-size="23.000px" dy="-5.520px">^((k−1)/k)=0.401</tspan></text>
    </g>
    <g id="patch_6">
     <path d="M 205.584064 212.58  Q 242.03126 212.58 276.577797 212.58  " clip-path="url(#p241e3dac17)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round" />
@@ -84,7 +84,7 @@
     <path d="M 128.49 304.451696  L 131.49 298.451696  L 134.49 304.451696  z " clip-path="url(#p241e3dac17)" style="fill: #235a78; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round" />
    </g>
   </g>
-  <g id="axes_2" transform="translate(-0.409583 -92.579976)">
+  <g id="axes_2" transform="translate(-6.822600 -2.046226)">
    <g id="patch_10">
     <path d="M 702 468  L 1015.2 468  L 1015.2 151.2  L 702 151.2  z " style="fill: #ffffff" />
    </g>
@@ -298,9 +298,9 @@
    </g>
   </g>
   <g id="text_26">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="39.6" transform="rotate(-0 59.4 39.6)">An ideal Brayton gas cycle connects compression, heating, expansion, and cooling</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="131.840" transform="rotate(-0 59.4 131.840)">An ideal Brayton gas cycle connects compression, heating, expansion, and cooling</text>
   </g>
-  <g id="text_28" transform="translate(0.000000 -105.688645)">
+  <g id="text_28">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(128.285156 656.640625)">Ideal air-standard cycle: compressor/turbine isentropic, heater/cooler constant pressure. Heater represents combustor heat addition; cooler closes the model. A real</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(365.416406 669.358125)">open gas turbine exhausts/replaces air and can have pressure losses.</text>
   </g>

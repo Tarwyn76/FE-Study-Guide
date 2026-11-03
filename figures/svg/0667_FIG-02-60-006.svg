@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="875.500pt" height="507.689pt" viewBox="42.250000 13.000000 875.500000 507.689013" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="822.243pt" height="462.780pt" viewBox="41.757000 127.079284 822.243000 462.779622" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-4.742292 -124.081522)">
+  <g id="axes_1" transform="translate(-9.935436 -10.279396)">
    <g id="text_1">
     <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(747.279863 201.341547)">6I₁−4I₂=12</text>
     <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(738.062206 230.991703)">−4I₁+10I₂=0</text>
@@ -35,7 +35,7 @@
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(736.22955 582.769898)">I₁−I₂=1.636 A</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-4.742292 -124.081522)">
+  <g id="axes_2" transform="translate(-9.935436 -10.279396)">
    <g id="patch_2">
     <path d="M 264.193167 299.188782  C 261.300635 295.741597 257.897597 292.757212 254.102352 290.339375  C 250.307108 287.921537 246.16415 286.098593 241.817504 284.933912  C 237.470857 283.769232 232.971478 283.276469 228.475781 283.472756  C 223.980084 283.669042 219.540774 284.552076 215.312176 286.09116  C 211.083578 287.630244 207.115266 289.807334 203.545192 292.546748  C 199.975118 295.286162 196.845135 298.555785 194.264053 302.241953  C 191.68297 305.928121 189.681047 309.987619 188.327877 314.279326  C 186.974707 318.571033 186.286154 323.044635 186.286154 327.544615  C 186.286154 332.044595 186.974707 336.518198 188.327877 340.809905  C 189.681047 345.101612 191.68297 349.16111 194.264053 352.847278  C 196.845135 356.533446 199.975118 359.803068 203.545192 362.542483  C 207.115266 365.281897 211.083578 367.458987 215.312176 368.998071  C 219.540774 370.537155 223.980084 371.420189 228.475781 371.616475  C 232.971478 371.812761 237.470857 371.319999 241.817504 370.155319  C 246.16415 368.990638 250.307108 367.167693 254.102352 364.749856  C 257.897597 362.332018 261.300635 359.347634 264.193167 355.900449  " clip-path="url(#p99ef350796)" style="fill: none; stroke: #b47722; stroke-width: 1.7; stroke-linejoin: miter" />
    </g>
@@ -112,9 +112,9 @@
    </g>
   </g>
   <g id="text_12">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Two clockwise mesh currents subtract in the shared resistor</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="153.198" transform="rotate(-0 55.44 153.198)">Two clockwise mesh currents subtract in the shared resistor</text>
   </g>
-  <g id="text_14" transform="translate(0.000000 -169.334783)">
+  <g id="text_14">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(110.507031 656.640625)">Planar two-mesh DC network. Both mesh references are clockwise; the shared branch carries I₁ downward and I₂ upward. The right loop has no source. Mesh</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(366.050781 669.358125)">currents need not equal every physical branch current.</text>
   </g>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="937.120pt" height="577.241pt" viewBox="24.100000 10.576129 937.120000 577.241417" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="832.819pt" height="553.517pt" viewBox="31.181000 82.579000 832.819000 553.517400" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(0.390467 -74.208016)">
+  <g id="axes_1" transform="translate(-6.593150 -2.081304)">
    <g id="text_1">
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(697.002469 201.739477)">Wells at x=−25,+25 m</text>
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(745.939031 230.041898)">T=0.001 m²/s</text>
@@ -29,14 +29,14 @@
    <g id="text_2">
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(706.188328 351.240234)">At x=0: s₁=0.6619 m</text>
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(749.208797 379.542656)">s₂=0.9929 m</text>
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(724.159734 407.845078)"><tspan style="font-size: 21.000px">s</tspan><tspan style="font-size: 15.120px" dy="5.040px">total</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">=1.6548 m</tspan></text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(724.159734 407.845078)"><tspan font-size="21.000px">s</tspan><tspan font-size="14.280px" dy="5.040px">total</tspan><tspan font-size="21.000px" dy="-5.040px">=1.6548 m</tspan></text>
    </g>
    <g id="text_3">
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(707.326922 539.271445)">Linear superposition:</text>
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(746.306531 567.573867)"><tspan style="font-size: 21.000px">s</tspan><tspan style="font-size: 15.120px" dy="5.040px">total</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">=s₁+s₂</tspan></text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(746.306531 567.573867)"><tspan font-size="21.000px">s</tspan><tspan font-size="14.280px" dy="5.040px">total</tspan><tspan font-size="21.000px" dy="-5.040px">=s₁+s₂</tspan></text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(0.390467 -74.208016)">
+  <g id="axes_2" transform="translate(-6.593150 -2.081304)">
    <g id="patch_2">
     <path d="M 80.64 489.6  L 675.36 489.6  L 675.36 129.6  L 80.64 129.6  z " style="fill: #ffffff" />
    </g>
@@ -299,11 +299,11 @@
    </g>
   </g>
   <g id="text_24">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Linear confined-aquifer drawdowns from two wells add at an observation point</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="109.872" transform="rotate(-0 55.44 109.872)">Linear confined-aquifer drawdowns from two wells add at an observation point</text>
   </g>
   <g id="text_25">
 </g>
-  <g id="text_26" transform="translate(0.000000 -111.702592)">
+  <g id="text_26" transform="translate(0.000000 -62.439129)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(133.214062 650.281875)">Illustrative confined steady superposition of logarithmic reference solutions; R=200 m for each reference head change. Common regional boundary</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(128.471875 662.999375)">corrections are not solved. Profiles cap radius at1 m near wells to avoid singularity. Linear head equation/constant T permit superposition; unconfined</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(280.067187 675.716875)">saturated-thickness changes generally prevent direct addition of water-table drawdowns.</text>

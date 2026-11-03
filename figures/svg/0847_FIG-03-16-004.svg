@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="958.540pt" height="607.456pt" viewBox="35.440000 10.012801 958.540000 607.455739" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="822.732pt" height="573.681pt" viewBox="41.268000 74.319000 822.732000 573.681000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(11.981750 -64.728302)">
+  <g id="axes_1" transform="translate(-6.856100 -2.056204)">
    <g id="patch_2">
     <path d="M 55.44 448.56  L 145.152 210.096  L 459.144 120.672  L 764.1648 180.288  L 934.6176 403.848  L 575.7696 488.304  z " clip-path="url(#p7bb73decaa)" style="fill: #e6eee5; stroke: #26776f; stroke-width: 1.8; stroke-linejoin: miter" />
    </g>
@@ -40,20 +40,20 @@
     <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(362.993119 299.374922)">A=12 ha; C=0.65</text>
    </g>
    <g id="text_2">
-    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(320.194056 449.023773)"><tspan style="font-size: 23.000px">t</tspan><tspan style="font-size: 16.560px" dy="5.520px">c</tspan><tspan style="font-size: 23.000px" dy="-5.520px">​</tspan><tspan style="font-size: 23.000px">=30 min; I=60.49 mm/h</tspan></text>
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(320.194056 449.023773)"><tspan font-size="23.000px">t</tspan><tspan font-size="15.640px" dy="5.520px">c</tspan><tspan font-size="23.000px" dy="-5.520px">=30 min; I=60.49 mm/h</tspan></text>
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(300.534447 480.661352)">10-year synthetic IDF example</text>
    </g>
    <g id="text_3">
-    <text style="font-size: 29px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="580.358906" transform="rotate(-0 504 580.358906)"><tspan style="font-size: 29.000px">Q</tspan><tspan style="font-size: 20.880px" dy="6.960px">peak</tspan><tspan style="font-size: 29.000px" dy="-6.960px">​</tspan><tspan style="font-size: 29.000px">=C I A /360=1.311 m³/s</tspan></text>
+    <text style="font-size: 29px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="580.358906" transform="rotate(-0 504 580.358906)"><tspan font-size="29.000px">Q</tspan><tspan font-size="19.720px" dy="6.960px">peak</tspan><tspan font-size="29.000px" dy="-6.960px">=C I A /360=1.311 m³/s</tspan></text>
    </g>
   </g>
   <g id="text_4">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">The rational method estimates peak runoff from a small catchment at its time of concentration</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="101.422" transform="rotate(-0 55.44 101.422)">The rational method estimates peak runoff from a small catchment at its time of concentration</text>
   </g>
   <g id="text_5">
 </g>
-  <g id="text_6" transform="translate(0.000000 -83.107944)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(142.085938 650.142812)"><tspan style="font-size: 10.000px">Metric units: I in mm/h,A in hectares,Q in m³/s; factor1/360 is the exact unit conversion. Intensity is from synthetic figure845 at duration t</tspan><tspan style="font-size: 7.200px" dy="2.400px">c</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">, not</tspan></text>
+  <g id="text_6" transform="translate(0.000000 -43.180290)">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(142.085938 650.142812)"><tspan font-size="10.000px">Metric units: I in mm/h,A in hectares,Q in m³/s; factor1/360 is the exact unit conversion. Intensity is from synthetic figure845 at duration t</tspan><tspan font-size="6.800px" dy="2.400px">c,</tspan><tspan font-size="10.000px" dy="-2.400px"> not</tspan></text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(125.141406 663.138438)">local design data. Assumes rainfall sufficiently long to involve the contributing area and a representative runoff coefficient. Peak-only method does not</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(388.792969 675.855937)">determine runoff volume or a full hydrograph.</text>
   </g>

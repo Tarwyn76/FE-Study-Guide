@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="937.440pt" height="494.640pt" viewBox="30.240000 12.960000 937.440000 494.640000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="908.544pt" height="448.764pt" viewBox="44.352000 154.424000 908.544000 448.764000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(0.840000 -133.582264)">
+  <g id="axes_1" transform="translate(-4.542720 0.000000)">
    <g id="patch_2">
     <path d="M 163.0944 438.624  L 835.9344 438.624  L 835.9344 279.648  L 163.0944 279.648  z " clip-path="url(#p55c2cb9674)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 2; stroke-linejoin: miter" />
    </g>
@@ -58,17 +58,19 @@
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="477.0864" y="205.67875" transform="rotate(-0 477.0864 205.67875)">Net cut through two holes</text>
    </g>
    <g id="text_3">
-    <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(214.347656 507.468445)"><tspan style="font-size: 25.000px">b=120 mm; t=10 mm; deduction d</tspan><tspan style="font-size: 18.000px" dy="6.000px">h</tspan><tspan style="font-size: 25.000px" dy="-6.000px">​</tspan><tspan style="font-size: 25.000px">=22 mm</tspan></text>
-    <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(121.294922 541.857117)"><tspan style="font-size: 25.000px">A</tspan><tspan style="font-size: 18.000px" dy="6.000px">g</tspan><tspan style="font-size: 25.000px" dy="-6.000px">​</tspan><tspan style="font-size: 25.000px">=1,200 mm²; A</tspan><tspan style="font-size: 18.000px" dy="6.000px">n</tspan><tspan style="font-size: 25.000px" dy="-6.000px">​</tspan><tspan style="font-size: 25.000px">=(120−2×22)10=760 mm²; A</tspan><tspan style="font-size: 18.000px" dy="6.000px">e</tspan><tspan style="font-size: 25.000px" dy="-6.000px">​</tspan><tspan style="font-size: 25.000px">=U A</tspan><tspan style="font-size: 18.000px" dy="6.000px">n</tspan><tspan style="font-size: 25.000px" dy="-6.000px">​</tspan></text>
+    <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(214.347656 507.468445)"><tspan font-size="25.000px">b=120 mm; t=10 mm; deduction d</tspan><tspan font-size="17.000px" dy="6.000px">h</tspan><tspan font-size="25.000px" dy="-6.000px">=22 mm</tspan></text>
+    <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(121.294922 541.857117)"><tspan font-size="25.000px">A</tspan><tspan font-size="17.000px" dy="6.000px">g</tspan><tspan font-size="25.000px" dy="-6.000px">=1,200 mm²; A</tspan><tspan font-size="17.000px" dy="6.000px">n</tspan><tspan font-size="25.000px" dy="-6.000px">=(120−2×22)10=760 mm²; A</tspan><tspan font-size="17.000px" dy="6.000px">e</tspan><tspan font-size="25.000px" dy="-6.000px">=U A</tspan><tspan font-size="17.000px" dy="6.000px">n</tspan></text>
    </g>
   </g>
   <g id="text_4">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Bolt holes reduce net area; shear lag may further reduce effective net area</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="178.260345" transform="rotate(-0 55.44 178.260345)">Bolt holes reduce net area; shear lag may further reduce effective net area</text>
   </g>
-  <g id="text_6" transform="translate(0.000000 -190.711785)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(131.084375 650.281875)">Straight nonstaggered critical net section through two holes; dimensions are illustrative and hole deduction is stipulated. U represents shear lag and</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(118.192187 662.999375)">must be established for connection geometry. Gross yielding and effective-net rupture are distinct limit states; block shear and connection checks remain</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(367.605469 675.716875)">separate. Dark circles depict holes, not reinforcement.</text>
+  <g id="text_5">
+   </g>
+  <g id="text_6">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(131.084 565.310345)">Straight nonstaggered critical net section through two holes; dimensions are illustrative and hole deduction is stipulated. U represents shear lag and</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(118.192 578.027845)">must be established for connection geometry. Gross yielding and effective-net rupture are distinct limit states; block shear and connection checks remain</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(367.605 590.745345)">separate. Dark circles depict holes, not reinforcement.</text>
   </g>
  </g>
  <defs>

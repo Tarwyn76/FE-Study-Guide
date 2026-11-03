@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="726.377pt" height="548.395pt" viewBox="16.405714 3.395633 726.377143 548.394760" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="706.372pt" height="514.895pt" viewBox="24.960000 57.554000 706.372000 514.894676" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 648  L 792 648  L 792 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-13.530000 -51.470468)">
+  <g id="axes_1" transform="translate(-23.760567 0.000000)">
    <g id="text_1">
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="669.8736" y="195.5102" transform="rotate(-0 669.8736 195.5102)">g = x+y = 2</text>
    </g>
@@ -33,11 +33,11 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(607.086413 459.354844)">Necessary condition;</text>
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(602.402663 475.527656)">classify the candidate.</text>
    </g>
-   <g id="text_4">
+   <g id="text_4" transform="translate(0.000000 -34.269336)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="396" y="585.376175" transform="rotate(-0 396 585.376175)">Example f = x² + y². Regular constraint requires ∇g ≠ 0.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-13.530000 -51.470468)">
+  <g id="axes_2" transform="translate(-23.760567 0.000000)">
    <g id="patch_2">
     <path d="M 123.84 505.44  L 525.6 505.44  L 525.6 103.68  L 123.84 103.68  z " style="fill: #ffffff" />
    </g>
@@ -336,7 +336,7 @@
     </g>
    </g>
   </g>
-  <g id="text_31">
+  <g id="text_31" transform="translate(0 51.321)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="35.64" y="32.4" transform="rotate(-0 35.64 32.4)">Lagrange multipliers: tangent constraint and contour</text>
   </g>
   </g>

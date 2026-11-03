@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1001.200pt" height="587.165pt" viewBox="39.400000 9.870329 1001.200000 587.164717" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="817.934pt" height="536.663pt" viewBox="46.066000 76.299000 817.934000 536.663145" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1080 720  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -64.258395)">
+  <g id="axes_1" transform="translate(-6.475311 -1.362815)">
    <g id="patch_2">
     <path d="M 59.4 284.616  L 341.352 284.616  L 341.352 165.384  L 59.4 165.384  z " clip-path="url(#pf55c8ddf09)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -94,11 +94,11 @@
    </g>
   </g>
   <g id="text_9">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="39.6" transform="rotate(-0 59.4 39.6)">An industrial loop closes through actuator, process, sensor, and acquisition hardware</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="102.559" transform="rotate(-0 59.4 102.559)">An industrial loop closes through actuator, process, sensor, and acquisition hardware</text>
   </g>
   <g id="text_10">
 </g>
-  <g id="text_11" transform="translate(0.000000 -95.970329)">
+  <g id="text_11">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(131.827344 656.640625)">Hardware loop is conceptual. Controller compares the setpoint with conditioned feedback; final control element changes the process input. Include actuator limits,</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(195.398438 669.358125)">anti-windup, sample delay and measurement noise in design. An analog anti-alias filter is needed ahead of sampled DAQ where relevant.</text>
   </g>

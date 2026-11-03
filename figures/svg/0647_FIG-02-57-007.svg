@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="858.750pt" height="470.970pt" viewBox="42.250000 13.000000 858.750000 470.969863" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="822.482pt" height="424.380pt" viewBox="41.518000 120.169784 822.482000 424.380196" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,10 +21,10 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-15.385937 -108.814499)">
+  <g id="axes_1" transform="translate(-34.612784 -4.112202)">
    <g id="text_1">
     <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(671.315994 184.484266)">A₁F₁₂=A₂F₂₁</text>
-    <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(683.3999 219.525359)"><tspan style="font-size: 26.000px">Σ</tspan><tspan style="font-size: 18.720px" dy="6.240px">j</tspan><tspan style="font-size: 26.000px" dy="-6.240px">​</tspan><tspan style="font-size: 26.000px"> F</tspan><tspan style="font-size: 18.720px" dy="6.240px">ij</tspan><tspan style="font-size: 26.000px" dy="-6.240px">​</tspan><tspan style="font-size: 26.000px">=1</tspan></text>
+    <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(683.3999 219.525359)"><tspan font-size="26.000px">Σ</tspan><tspan font-size="17.680px" dy="6.240px">j</tspan><tspan font-size="26.000px" dy="-6.240px"> F</tspan><tspan font-size="17.680px" dy="6.240px">ij</tspan><tspan font-size="26.000px" dy="-6.240px">=1</tspan></text>
    </g>
    <g id="text_2">
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(640.896775 340.047617)">A₁=1 m²; A₂=4 m²</text>
@@ -34,7 +34,7 @@
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="528.874687" transform="rotate(-0 504 528.874687)">Q̇₁₂=σ(T₁⁴−T₂⁴) / [(1−ε₁)/(ε₁A₁)+1/(A₁F₁₂)+(1−ε₂)/(ε₂A₂)]</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-15.385937 -108.814499)">
+  <g id="axes_2" transform="translate(-34.612784 -4.112202)">
    <g id="patch_2">
     <path d="M 246.96 420.352941  C 279.196217 420.352941 310.116461 407.545356 332.910909 384.750909  C 355.705356 361.956461 368.512941 331.036217 368.512941 298.8  C 368.512941 266.563783 355.705356 235.643539 332.910909 212.849091  C 310.116461 190.054644 279.196217 177.247059 246.96 177.247059  C 214.723783 177.247059 183.803539 190.054644 161.009091 212.849091  C 138.214644 235.643539 125.407059 266.563783 125.407059 298.8  C 125.407059 331.036217 138.214644 361.956461 161.009091 384.750909  C 183.803539 407.545356 214.723783 420.352941 246.96 420.352941  z " clip-path="url(#p3b9f503305)" style="fill: #edf3f6; stroke: #235a78; stroke-linejoin: miter" />
    </g>
@@ -56,9 +56,9 @@
    </g>
   </g>
   <g id="text_7">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">View-factor reciprocity and surface resistances set two-surface radiation exchange</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="145.139" transform="rotate(-0 55.44 145.139)">View-factor reciprocity and surface resistances set two-surface radiation exchange</text>
   </g>
-  <g id="text_9" transform="translate(0.000000 -204.743070)">
+  <g id="text_9">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(124.2625 656.640625)">Two diffuse-gray isothermal surfaces forming a closed enclosure; transparent/nonparticipating medium. Convex inner body has F₁₁=0, F₁₂=1; enclosure</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(271.409375 669.358125)">surface has F₂₂=0.75 in the area example. For black surfaces this reduces to A₁F₁₂σ(T₁⁴−T₂⁴).</text>
   </g>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="742.231pt" height="514.543pt" viewBox="34.500000 9.000000 742.230536 514.543204" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="742.479pt" height="513.065pt" viewBox="33.807000 84.936000 742.479025 513.064882" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,13 +21,13 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-31.268125 -76.575630)">
+  <g id="axes_1" transform="translate(-31.324761 -1.916867)">
    <g id="text_1">
     <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(297.208125 505.881188)">ū=(1/A)∫u dA     Q=Aū</text>
     <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(187.385625 538.331812)">R=0.05 m; ū=2 m/s → Q=0.015708 m³/s</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-31.268125 -76.575630)">
+  <g id="axes_2" transform="translate(-31.324761 -1.916867)">
    <g id="patch_2">
     <path d="M 211.68 378  C 238.03058 378 263.305456 367.530804 281.93813 348.89813  C 300.570804 330.265456 311.04 304.99058 311.04 278.64  C 311.04 252.28942 300.570804 227.014544 281.93813 208.38187  C 263.305456 189.749196 238.03058 179.28 211.68 179.28  C 185.32942 179.28 160.054544 189.749196 141.42187 208.38187  C 122.789196 227.014544 112.32 252.28942 112.32 278.64  C 112.32 304.99058 122.789196 330.265456 141.42187 348.89813  C 160.054544 367.530804 185.32942 378 211.68 378  z " clip-path="url(#p6c97a065a2)" style="fill: #d0e1f2" />
    </g>
@@ -140,10 +140,10 @@
     <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="211.68" y="153.059188" transform="rotate(-0 211.68 153.059188)">SECTION NORMAL TO FLOW</text>
    </g>
    <g id="text_3">
-    <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="211.68" y="411.738469" transform="rotate(-0 211.68 411.738469)"><tspan style="font-size: 15.000px">u(r) varies; u</tspan><tspan style="font-size: 10.800px" dy="3.600px">max</tspan><tspan style="font-size: 15.000px" dy="-3.600px">​</tspan><tspan style="font-size: 15.000px">=2ū</tspan></text>
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="211.68" y="411.738469" transform="rotate(-0 211.68 411.738469)"><tspan font-size="15.000px">u(r) varies; u</tspan><tspan font-size="10.200px" dy="3.600px">max</tspan><tspan font-size="15.000px" dy="-3.600px">=2ū</tspan></text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(-31.268125 -76.575630)">
+  <g id="axes_3" transform="translate(-31.324761 -1.916867)">
    <g id="patch_38">
     <path d="M 483.84 427.68  L 786.24 427.68  L 786.24 129.6  L 483.84 129.6  z " style="fill: #ffffff" />
    </g>
@@ -425,9 +425,9 @@
    </g>
   </g>
   <g id="text_26">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Average velocity preserves the flow of a nonuniform pipe profile</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="110.146" transform="rotate(-0 47.52 110.146)">Average velocity preserves the flow of a nonuniform pipe profile</text>
   </g>
-  <g id="text_28" transform="translate(0.000000 -98.910189)">
+  <g id="text_28" transform="translate(0.000000 -24.919268)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(134.548437 590.616625)">Fully developed laminar circular-pipe example: u(r)=2ū[1−(r/R)²]. Velocity is along the pipe axis, normal to the colored</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(397.638281 603.334125)">cross-section.</text>
   </g>

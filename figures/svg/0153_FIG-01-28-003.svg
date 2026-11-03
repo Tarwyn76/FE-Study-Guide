@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="796.731pt" height="610.797pt" viewBox="17.897143 4.935733 796.731429 610.796915" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="770.538pt" height="555.320pt" viewBox="28.320000 62.880000 770.537829 555.319742" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,12 +21,12 @@
   <g id="patch_1">
    <path d="M 0 720  L 864 720  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -53.280000)">
-   <g id="text_1">
+  <g id="axes_1" transform="translate(-15.532800 0.000000)">
+   <g id="text_1" transform="translate(0.000000 -55.014194)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="650.111375" transform="rotate(-0 432 650.111375)">De Morgan: outside the union means outside A and outside B simultaneously.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-0.000000 -53.280000)">
+  <g id="axes_2" transform="translate(-15.532800 0.000000)">
    <g id="patch_2">
     <path d="M 72.205714 332.228571  L 368.434286 332.228571  L 368.434286 128.571429  L 72.205714 128.571429  z " clip-path="url(#pa6eed346c1)" style="fill: #ffffff; stroke: #23313d; stroke-linejoin: miter" />
    </g>
@@ -55,7 +55,7 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle" x="220.32" y="116.4" transform="rotate(-0 220.32 116.4)">A ∪ B — A or B</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(-0.000000 -53.280000)">
+  <g id="axes_3" transform="translate(-15.532800 0.000000)">
    <g id="patch_7">
     <path d="M 495.565714 332.228571  L 791.794286 332.228571  L 791.794286 128.571429  L 495.565714 128.571429  z " clip-path="url(#p67f55ae6eb)" style="fill: #ffffff; stroke: #23313d; stroke-linejoin: miter" />
    </g>
@@ -81,7 +81,7 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle" x="643.68" y="116.4" transform="rotate(-0 643.68 116.4)">A ∩ B — A and B</text>
    </g>
   </g>
-  <g id="axes_4" transform="translate(-0.000000 -53.280000)">
+  <g id="axes_4" transform="translate(-15.532800 0.000000)">
    <g id="patch_11">
     <path d="M 72.205714 577.028571  L 368.434286 577.028571  L 368.434286 373.371429  L 72.205714 373.371429  z " clip-path="url(#p2279f6f63b)" style="fill: #ffffff; stroke: #23313d; stroke-linejoin: miter" />
    </g>
@@ -110,7 +110,7 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle" x="220.32" y="361.2" transform="rotate(-0 220.32 361.2)">Aᶜ — not A</text>
    </g>
   </g>
-  <g id="axes_5" transform="translate(-0.000000 -53.280000)">
+  <g id="axes_5" transform="translate(-15.532800 0.000000)">
    <g id="patch_16">
     <path d="M 495.565714 577.028571  L 791.794286 577.028571  L 791.794286 373.371429  L 495.565714 373.371429  z " clip-path="url(#pe903b1631b)" style="fill: #ffffff; stroke: #23313d; stroke-linejoin: miter" />
    </g>
@@ -142,7 +142,7 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle" x="643.68" y="361.2" transform="rotate(-0 643.68 361.2)">(A ∪ B)ᶜ = Aᶜ ∩ Bᶜ — neither</text>
    </g>
   </g>
-  <g id="text_18">
+  <g id="text_18" transform="translate(0 53.587)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="36" transform="rotate(-0 38.88 36)">Event algebra: shaded regions carry the meaning</text>
   </g>
   </g>

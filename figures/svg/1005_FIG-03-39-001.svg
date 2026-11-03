@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1022.143pt" height="625.426pt" viewBox="29.314286 13.881207 1022.142857 625.425511" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="992.160pt" height="595.440pt" viewBox="33.120000 90.360000 992.160000 595.440000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,8 +21,8 @@
   <g id="patch_1">
    <path d="M 0 792  L 1080 792  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(10.800000 -68.400000)" />
-  <g id="axes_2" transform="translate(10.800000 -68.400000)">
+  <g id="axes_1" transform="translate(-0.826800 0.000000)" />
+  <g id="axes_2" transform="translate(-0.826800 0.000000)">
    <g id="patch_2">
     <path d="M 86.4 340.56  L 486 340.56  L 486 150.48  L 86.4 150.48  z " style="fill: #ffffff" />
    </g>
@@ -243,7 +243,7 @@
     <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="286.2" y="140.48" transform="rotate(-0 286.2 140.48)">x(τ): unit pulse, 0≤τ≤1</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(10.800000 -68.400000)">
+  <g id="axes_3" transform="translate(-0.826800 0.000000)">
    <g id="patch_7">
     <path d="M 626.4 340.56  L 1004.4 340.56  L 1004.4 150.48  L 626.4 150.48  z " style="fill: #ffffff" />
    </g>
@@ -458,7 +458,7 @@
     <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="815.4" y="140.48" transform="rotate(-0 815.4 140.48)">h(τ): unit pulse, 0≤τ≤1</text>
    </g>
   </g>
-  <g id="axes_4" transform="translate(10.800000 -68.400000)">
+  <g id="axes_4" transform="translate(-0.826800 0.000000)">
    <g id="patch_12">
     <path d="M 86.4 609.84  L 486 609.84  L 486 427.68  L 86.4 427.68  z " style="fill: #ffffff" />
    </g>
@@ -701,7 +701,7 @@
     </g>
    </g>
   </g>
-  <g id="axes_5" transform="translate(10.800000 -68.400000)">
+  <g id="axes_5" transform="translate(-0.826800 0.000000)">
    <g id="patch_18">
     <path d="M 626.4 609.84  L 1004.4 609.84  L 1004.4 427.68  L 626.4 427.68  z " style="fill: #ffffff" />
    </g>
@@ -938,11 +938,13 @@
    </g>
   </g>
   <g id="text_72">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="43.56" transform="rotate(-0 59.4 43.56)">Convolution integrates the overlap of a signal with a flipped, shifted response</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="116.799057" transform="rotate(-0 59.4 116.799057)">Convolution integrates the overlap of a signal with a flipped, shifted response</text>
   </g>
-  <g id="text_74" transform="translate(0.000000 -122.400000)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 723.43475)">y(t)=∫x(τ)h(t−τ)dτ. Flip h(τ) to h(−τ), then shift by t. Both pulses have unit amplitude and duration1 s; y rises from0 to1 s of overlap, then falls to0 at</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 736.196)">t=2 s. Endpoint values do not change the integral.</text>
+  <g id="text_73">
+   </g>
+  <g id="text_74">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 658.566038)">y(t)=∫x(τ)h(t−τ)dτ. Flip h(τ) to h(−τ), then shift by t. Both pulses have unit amplitude and duration1 s; y rises from0 to1 s of overlap, then falls to0 at</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 671.327288)">t=2 s. Endpoint values do not change the integral.</text>
   </g>
  </g>
  <defs>

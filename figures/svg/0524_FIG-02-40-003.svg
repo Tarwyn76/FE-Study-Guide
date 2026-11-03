@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="755.801pt" height="422.135pt" viewBox="36.000000 10.715994 755.800714 422.134615" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="757.390pt" height="422.055pt" viewBox="35.873000 112.516666 757.389689 422.055019" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-47.726250 -103.517251)">
+  <g id="axes_1" transform="translate(-46.823233 -1.338037)">
    <g id="text_1">
     <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(613.615881 171.389547)">C=50 MPa</text>
     <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(518.318069 201.039703)">R=√(30²+30²)=42.426 MPa</text>
@@ -34,7 +34,7 @@
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="670.3776" y="476.29075" transform="rotate(-0 670.3776 476.29075)">Plane stress also has σ₃=0.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-47.726250 -103.517251)">
+  <g id="axes_2" transform="translate(-46.823233 -1.338037)">
    <g id="patch_2">
     <path d="M 218.293986 355.827645  L 313.707645 316.306014  L 274.186014 220.892355  L 178.772355 260.413986  z " clip-path="url(#p14b11a1167)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.5; stroke-linejoin: miter" />
    </g>
@@ -68,9 +68,9 @@
    </g>
   </g>
   <g id="text_8">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Principal orientations eliminate the in-plane shear stress</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="137.278" transform="rotate(-0 47.52 137.278)">Principal orientations eliminate the in-plane shear stress</text>
   </g>
-  <g id="text_10" transform="translate(0.000000 -189.002464)">
+  <g id="text_10" transform="translate(0.000000 -87.641407)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(113.211719 590.616625)">This example has both in-plane principal stresses positive, so the full ordered stresses are σ₁&gt;σ₂&gt;σ₃=0. Principal directions are</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(403.252344 603.334125)">orthogonal.</text>
   </g>

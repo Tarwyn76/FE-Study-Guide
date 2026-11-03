@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="764.640pt" height="472.731pt" viewBox="18.514286 5.554286 764.640000 472.731429" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="718.321pt" height="352.335pt" viewBox="28.320000 131.319955 718.321371 352.335017" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(7.560000 -122.400000)">
+  <g id="axes_1" transform="translate(-27.340800 0.000000)">
    <g id="text_1">
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(595.644578 184.330395)">Similar triangles:</text>
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(619.116531 207.24188)">r / h = 3 / 4</text>
@@ -81,11 +81,11 @@
      <rect x="80.50293" y="-4.754687" width="15.983789" height="1.125" />
     </g>
    </g>
-   <g id="text_4">
+   <g id="text_4" transform="translate(0.000000 -118.608188)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="585.376175" transform="rotate(-0 432 585.376175)">Outflow Qout is positive; dh/dt is negative while the tank drains.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(7.560000 -122.400000)">
+  <g id="axes_2" transform="translate(-27.340800 0.000000)">
    <g id="patch_2">
     <path d="M 167.428421 287.848421  L 263.52 415.970526  L 359.611579 287.848421  z " clip-path="url(#p7b30f5bab9)" style="fill: #235a78; opacity: 0.17; stroke: #235a78; stroke-linejoin: miter" />
    </g>
@@ -141,7 +141,7 @@
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #a23b34" x="143.753684" y="304.56" transform="rotate(-0 143.753684 304.56)">dh/dt &lt; 0</text>
    </g>
   </g>
-  <g id="text_11">
+  <g id="text_11" transform="translate(0 122.040)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="32.4" transform="rotate(-0 38.88 32.4)">Draining an inverted conical tank</text>
   </g>
   </g>

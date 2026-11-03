@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="833.143pt" height="672.860pt" viewBox="15.428571 7.407638 833.142857 672.860483" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="811.200pt" height="661.440pt" viewBox="26.400000 51.360000 811.200000 661.440000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 792  L 864 792  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -38.880000)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 196.128 95.04  L 667.872 95.04  L 667.872 158.004  L 196.128 158.004  z " clip-path="url(#p96112ba846)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -119,7 +119,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="665.02725" transform="rotate(-0 432 665.02725)">Multiply by Q; match coefficients or substitute roots; solve constants.</text>
    </g>
   </g>
-  <g id="text_11">
+  <g id="text_11" transform="translate(0 38.203)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="39.6" transform="rotate(-0 38.88 39.6)">Partial fractions: factor before decomposing</text>
   </g>
   </g>

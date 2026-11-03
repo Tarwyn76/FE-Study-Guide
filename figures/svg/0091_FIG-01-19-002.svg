@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="929.314pt" height="642.451pt" viewBox="3.342857 4.011142 929.314286 642.451253" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="901.760pt" height="580.640pt" viewBox="9.840000 70.197000 901.760000 580.639775" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,12 +21,12 @@
   <g id="patch_1">
    <path d="M 0 720  L 936 720  L 936 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(7.410000 -59.284940)">
-   <g id="text_1">
+  <g id="axes_1">
+   <g id="text_1" transform="translate(0.000000 -26.290841)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="468" y="650.111375" transform="rotate(-0 468 650.111375)">Exact integral = 8/3 ≈ 2.6667. Refining the partition improves the approximation.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(7.410000 -59.284940)">
+  <g id="axes_2">
    <g id="patch_2">
     <path d="M 56.16 316.8  L 430.56 316.8  L 430.56 129.6  L 56.16 129.6  z " style="fill: #ffffff" />
    </g>
@@ -315,7 +315,7 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle" x="243.36" y="123.6" transform="rotate(-0 243.36 123.6)">Left endpoints: under</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(7.410000 -59.284940)">
+  <g id="axes_3">
    <g id="patch_9">
     <path d="M 514.8 316.8  L 889.2 316.8  L 889.2 129.6  L 514.8 129.6  z " style="fill: #ffffff" />
    </g>
@@ -598,7 +598,7 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle" x="702" y="123.6" transform="rotate(-0 702 123.6)">Right endpoints: over</text>
    </g>
   </g>
-  <g id="axes_4" transform="translate(7.410000 -59.284940)">
+  <g id="axes_4">
    <g id="patch_16">
     <path d="M 56.16 590.4  L 430.56 590.4  L 430.56 403.2  L 56.16 403.2  z " style="fill: #ffffff" />
    </g>
@@ -881,7 +881,7 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle" x="243.36" y="397.2" transform="rotate(-0 243.36 397.2)">Midpoints</text>
    </g>
   </g>
-  <g id="axes_5" transform="translate(7.410000 -59.284940)">
+  <g id="axes_5">
    <g id="patch_23">
     <path d="M 514.8 590.4  L 889.2 590.4  L 889.2 403.2  L 514.8 403.2  z " style="fill: #ffffff" />
    </g>
@@ -1200,7 +1200,7 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle" x="702" y="397.2" transform="rotate(-0 702 397.2)">Left endpoints: n = 16</text>
    </g>
   </g>
-  <g id="text_86">
+  <g id="text_86" transform="translate(0 61.361)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="42.12" y="36" transform="rotate(-0 42.12 36)">Riemann sums for y = x² on [0, 2]</text>
   </g>
   <g id="text_88">

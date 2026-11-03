@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="917.280pt" height="544.320pt" viewBox="28.800000 11.520000 917.280000 544.320000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="892.806pt" height="511.899pt" viewBox="43.008000 126.215000 892.805760 511.899000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-10.500000 -105.017503)">
+  <g id="axes_1" transform="translate(-21.042560 0.000000)">
    <g id="text_1">
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(725.042391 201.739477)">Span8 m; rise3 m</text>
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(703.440281 230.041898)">Inclined members5 m</text>
@@ -38,7 +38,7 @@
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(732.512156 596.16832)">horizontal force.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-10.500000 -105.017503)">
+  <g id="axes_2" transform="translate(-21.042560 0.000000)">
    <g id="patch_2">
     <path d="M 131.04 426.96  L 109.872 454.4784  L 152.208 454.4784  z " clip-path="url(#p3281bcd624)" style="fill: #edf3f6; stroke: #23313d; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -107,11 +107,13 @@
    </g>
   </g>
   <g id="text_10">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">A pin-jointed truss carries a joint load through axial member forces to its supports</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="150.329310" transform="rotate(-0 55.44 150.329310)">A pin-jointed truss carries a joint load through axial member forces to its supports</text>
   </g>
-  <g id="text_12" transform="translate(0.000000 -136.102684)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(119.183594 656.501562)"><tspan style="font-size: 10.000px">Ideal three-member truss, frictionless pins, load10 kN downward only at B. Support A pin,C horizontal roller; A</tspan><tspan style="font-size: 7.200px" dy="2.400px">x</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=0,A</tspan><tspan style="font-size: 7.200px" dy="2.400px">y</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=C</tspan><tspan style="font-size: 7.200px" dy="2.400px">y</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=5 kN. Member forces follow</tspan></text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(143.020312 669.497187)">joint equilibrium; compression struts transfer vertical load and tie AC balances their horizontal components. No bending or self-weight included.</text>
+  <g id="text_11">
+   </g>
+  <g id="text_12">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(119.184 613.413793)"><tspan font-size="10.000px">Ideal three-member truss, frictionless pins, load10 kN downward only at B. Support A pin,C horizontal roller; A</tspan><tspan font-size="6.800px" dy="2.400px">x</tspan><tspan font-size="10.000px" dy="-2.400px">=0,A</tspan><tspan font-size="6.800px" dy="2.400px">y</tspan><tspan font-size="10.000px" dy="-2.400px">=C</tspan><tspan font-size="6.800px" dy="2.400px">y</tspan><tspan font-size="10.000px" dy="-2.400px">=5 kN. Member forces follow</tspan></text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(143.02 626.409418)">joint equilibrium; compression struts transfer vertical load and tie AC balances their horizontal components. No bending or self-weight included.</text>
   </g>
  </g>
  <defs>

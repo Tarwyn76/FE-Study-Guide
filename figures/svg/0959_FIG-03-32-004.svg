@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="938.160pt" height="591.120pt" viewBox="28.800000 10.080000 938.160000 591.120000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="946.381pt" height="542.794pt" viewBox="43.008000 85.916000 946.381440 542.794000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,12 +21,12 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-64.260000 -64.690782)">
+  <g id="axes_1" transform="translate(-41.414240 0.000000)">
    <g id="text_1">
-    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="568.588687" transform="rotate(-0 504 568.588687)"><tspan style="font-size: 22.000px">12 V peak, 60 Hz; two0.7 V drops; R</tspan><tspan style="font-size: 15.840px" dy="5.280px">L</tspan><tspan style="font-size: 22.000px" dy="-5.280px">​</tspan><tspan style="font-size: 22.000px">=1 kΩ; C=470 µF</tspan></text>
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="568.588687" transform="rotate(-0 504 568.588687)"><tspan font-size="22.000px">12 V peak, 60 Hz; two0.7 V drops; R</tspan><tspan font-size="14.960px" dy="5.280px">L</tspan><tspan font-size="22.000px" dy="-5.280px">=1 kΩ; C=470 µF</tspan></text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-64.260000 -64.690782)">
+  <g id="axes_2" transform="translate(-41.414240 0.000000)">
    <g id="line2d_1">
     <path d="M 130.659623 254.309434  L 169.009823 215.959234  " clip-path="url(#pe1402fc855)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square" />
    </g>
@@ -148,7 +148,7 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="223.036981" y="287.919263" transform="rotate(-0 223.036981 287.919263)">AC: L–R</text>
    </g>
    <g id="text_7">
-    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #235a78" x="428.576604" y="257.783184" transform="rotate(-0 428.576604 257.783184)"><tspan style="font-size: 14.000px">R</tspan><tspan style="font-size: 10.080px" dy="3.360px">L</tspan><tspan style="font-size: 14.000px" dy="-3.360px">​</tspan></text>
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #235a78" x="428.576604" y="257.783184" transform="rotate(-0 428.576604 257.783184)"><tspan font-size="14.000px">R</tspan><tspan font-size="9.520px" dy="3.360px">L</tspan></text>
    </g>
    <g id="text_8">
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="477.074717" y="194.336221" transform="rotate(-0 477.074717 194.336221)">+</text>
@@ -160,10 +160,10 @@
     <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #235a78" x="387.006792" y="258.172559" transform="rotate(-0 387.006792 258.172559)">C</text>
    </g>
    <g id="text_11">
-    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="292.32" y="133.7925" transform="rotate(-0 292.32 133.7925)"><tspan style="font-size: 16.000px">Bridge + parallel C / R</tspan><tspan style="font-size: 11.520px" dy="3.840px">L</tspan><tspan style="font-size: 16.000px" dy="-3.840px">​</tspan></text>
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="292.32" y="133.7925" transform="rotate(-0 292.32 133.7925)"><tspan font-size="16.000px">Bridge + parallel C / R</tspan><tspan font-size="10.880px" dy="3.840px">L</tspan></text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(-64.260000 -64.690782)">
+  <g id="axes_3" transform="translate(-41.414240 0.000000)">
    <g id="patch_10">
     <path d="M 564.48 446.4  L 947.52 446.4  L 947.52 136.8  L 564.48 136.8  z " style="fill: #ffffff" />
    </g>
@@ -357,12 +357,14 @@
    </g>
   </g>
   <g id="text_27">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">A bridge capacitor charges near peaks and supplies the load between recharge intervals</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="109.984483" transform="rotate(-0 55.44 109.984483)">A bridge capacitor charges near peaks and supplies the load between recharge intervals</text>
   </g>
-  <g id="text_29" transform="translate(0.000000 -99.136523)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(113.221094 650.00375)"><tspan style="font-size: 10.000px">Teaching ideal source/instantaneous recharge model with stipulated constant diode drops. Between conduction intervals, capacitor discharges through R</tspan><tspan style="font-size: 7.200px" dy="2.400px">L</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">.</tspan></text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(130.225781 662.999375)"><tspan style="font-size: 10.000px">Curves zoom near output peak; lower input voltage is clipped by axis limits intentionally. Ripple estimate ΔV≈I</tspan><tspan style="font-size: 7.200px" dy="2.400px">load</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">/(2f</tspan><tspan style="font-size: 7.200px" dy="2.400px">line</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px"> C) assumes small ripple;</tspan></text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(228.941406 675.995)">source impedance and narrow high charging pulses are not solved. Initial capacitor voltage is the peak10.6 V.</text>
+  <g id="text_28">
+   </g>
+  <g id="text_29">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(113.221 590.137931)"><tspan font-size="10.000px">Teaching ideal source/instantaneous recharge model with stipulated constant diode drops. Between conduction intervals, capacitor discharges through R</tspan><tspan font-size="6.800px" dy="2.400px">L</tspan><tspan font-size="10.000px" dy="-2.400px">.</tspan></text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(130.226 603.133556)"><tspan font-size="10.000px">Curves zoom near output peak; lower input voltage is clipped by axis limits intentionally. Ripple estimate ΔV≈I</tspan><tspan font-size="6.800px" dy="2.400px">load</tspan><tspan font-size="10.000px" dy="-2.400px">/(2f</tspan><tspan font-size="6.800px" dy="2.400px">line</tspan><tspan font-size="10.000px" dy="-2.400px"> C) assumes small ripple;</tspan></text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(228.941 616.129181)">source impedance and narrow high charging pulses are not solved. Initial capacitor voltage is the peak10.6 V.</text>
   </g>
  </g>
  <defs>

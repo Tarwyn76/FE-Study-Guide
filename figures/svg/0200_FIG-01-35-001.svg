@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="822.651pt" height="520.251pt" viewBox="17.280000 4.320000 822.651429 520.251429" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="792.000pt" height="456.365pt" viewBox="22.560000 82.645508 792.000000 456.365115" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(14.400000 -77.040000)">
+  <g id="axes_1" transform="translate(0.330000 -0.660000)">
    <g id="text_1">
     <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="722.9088" y="202.757425" transform="rotate(-0 722.9088 202.757425)">eᵢ = yᵢ − ŷᵢ</text>
    </g>
@@ -29,11 +29,11 @@
     <text style="font-size: 19px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(666.924113 343.234136)">Choose â, b̂</text>
     <text style="font-size: 19px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(643.681769 368.841089)">to minimize Σ eᵢ²</text>
    </g>
-   <g id="text_3">
+   <g id="text_3" transform="translate(0.000000 -65.340000)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="585.576175" transform="rotate(-0 432 585.576175)">Illustration ŷ = 1.1 + 1.1x. Residuals measure vertical response differences, not perpendicular distance.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(14.400000 -77.040000)">
+  <g id="axes_2" transform="translate(0.330000 -0.660000)">
    <g id="patch_2">
     <path d="M 60.48 473.04  L 613.44 473.04  L 613.44 129.6  L 60.48 129.6  z " style="fill: #ffffff" />
    </g>
@@ -262,7 +262,7 @@
     </g>
    </g>
   </g>
-  <g id="text_22">
+  <g id="text_22" transform="translate(0 76.680)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="32.4" transform="rotate(-0 38.88 32.4)">Least squares minimizes squared vertical residuals</text>
   </g>
   </g>

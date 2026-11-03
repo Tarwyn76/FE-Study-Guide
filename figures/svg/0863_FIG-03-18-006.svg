@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="956.020pt" height="561.963pt" viewBox="20.320000 10.681482 956.020000 561.963174" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="836.194pt" height="537.890pt" viewBox="27.806000 82.648000 836.194000 537.890340" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(1.195025 -73.265635)">
+  <g id="axes_1" transform="translate(-6.619869 -2.091314)">
    <g id="text_1">
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(718.965516 201.739477)">Tank water-surface</text>
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(749.371219 230.041898)">head=120 m</text>
@@ -48,7 +48,7 @@
     </g>
    </g>
   </g>
-  <g id="axes_2" transform="translate(1.195025 -73.265635)">
+  <g id="axes_2" transform="translate(-6.619869 -2.091314)">
    <g id="patch_2">
     <path d="M 80.64 496.8  L 675.36 496.8  L 675.36 129.6  L 80.64 129.6  z " style="fill: #ffffff" />
    </g>
@@ -300,11 +300,11 @@
    </g>
   </g>
   <g id="text_25">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Pressure head is the hydraulic grade elevation minus local pipe elevation</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="110.306" transform="rotate(-0 55.44 110.306)">Pressure head is the hydraulic grade elevation minus local pipe elevation</text>
   </g>
   <g id="text_26">
 </g>
-  <g id="text_27" transform="translate(0.000000 -125.825764)">
+  <g id="text_27" transform="translate(0.000000 -77.378634)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(122.014844 650.281875)">Illustrative flowing-main head losses4 m per250 m reach; elevations and HGL are not a solved distribution model. Node pressure head excludes velocity</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(91.691406 662.999375)">head; pressure p=ρg(HGL−z). Under no-flow conditions the connected HGL approaches tank surface head if no other imposed heads intervene. Minimum/maximum</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(416.605469 675.716875)">design pressures are not specified.</text>

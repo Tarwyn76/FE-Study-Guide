@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="902.571pt" height="816.994pt" viewBox="16.714286 10.697143 902.571429 816.994286" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="876.800pt" height="796.720pt" viewBox="29.600000 69.120000 876.800000 796.720000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 936  L 936 936  L 936 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -48.360000)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 272.0952 112.32  L 663.9048 112.32  L 663.9048 179.2908  L 272.0952 179.2908  z " clip-path="url(#pd53610e33c)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -94,12 +94,12 @@
     <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(447.07665 700.317325)">Unknown, equal variances justified → pooled t</text>
     <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(506.972587 719.185606)">Unknown, unequal → Welch t</text>
    </g>
-   <g id="text_8">
+   <g id="text_8" transform="translate(0.000000 -16.811523)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(190.319531 837.578303)">Check confidence level, tail split, units, interval direction, sampling assumptions, and whether data are paired.</text>
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(324.863281 851.055647)">Paired data require an interval on within-pair differences.</text>
    </g>
   </g>
-  <g id="text_9">
+  <g id="text_9" transform="translate(0 49.320)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="42.12" y="46.8" transform="rotate(-0 42.12 46.8)">Confidence-interval selection follows parameter and assumptions</text>
   </g>
   </g>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="833.143pt" height="551.109pt" viewBox="15.428571 3.085714 833.142857 551.108571" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="811.200pt" height="478.236pt" viewBox="26.400000 55.200000 811.200000 478.236422" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -48.960000)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 38.88 191.0952  L 227.5776 191.0952  L 227.5776 273.5208  L 38.88 273.5208  z " clip-path="url(#pff89085aa6)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -86,11 +86,11 @@
    <g id="text_10">
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="424.1376" y="350.334138" transform="rotate(-0 424.1376 350.334138)">Evidence P(F) = 0.032</text>
    </g>
-   <g id="text_11">
+   <g id="text_11" transform="translate(0.000000 -72.350609)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="585.376175" transform="rotate(-0 432 585.376175)">Prior × likelihood → joint weight → divide by total evidence. The posterior shares sum to 1.</text>
    </g>
   </g>
-  <g id="text_12">
+  <g id="text_12" transform="translate(0 49.680)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="32.4" transform="rotate(-0 38.88 32.4)">Bayes: normalize the failure-path weights</text>
   </g>
   </g>

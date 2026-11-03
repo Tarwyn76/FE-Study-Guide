@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="694.286pt" height="407.829pt" viewBox="12.857143 0.000000 694.285714 407.828571" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="680.000pt" height="300.151pt" viewBox="20.000000 63.885444 680.000000 300.150533" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 504  L 720 504  L 720 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -61.800000)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 32.4 120.582  L 281.376 120.582  L 281.376 216.7452  L 32.4 216.7452  z " clip-path="url(#p88c1b1db07)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -53,11 +53,11 @@
    <g id="text_5">
     <text style="font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="360" y="330.171613" transform="rotate(-0 360 330.171613)">1 kΩ = 1 000 Ω</text>
    </g>
-   <g id="text_6">
+   <g id="text_6" transform="translate(0.000000 -107.701657)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="360" y="455.905775" transform="rotate(-0 360 455.905775)">The physical resistance stays the same; the chosen unit changes.</text>
    </g>
   </g>
-  <g id="text_7">
+  <g id="text_7" transform="translate(0 61.200)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="32.4" y="25.2" transform="rotate(-0 32.4 25.2)">Metric prefixes: unit size and numerical value</text>
   </g>
   </g>

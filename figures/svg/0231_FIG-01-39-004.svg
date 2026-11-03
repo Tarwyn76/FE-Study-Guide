@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="902.571pt" height="604.345pt" viewBox="16.714286 5.348189 902.571429 604.345404" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="876.800pt" height="550.346pt" viewBox="29.600000 70.197000 876.800000 550.345698" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 936 720  L 936 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -59.284940)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 42.12 115.02  L 433.9296 115.02  L 433.9296 206.604  L 42.12 206.604  z " clip-path="url(#p7f7c6b47dc)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -76,11 +76,11 @@
     <text style="font-size: 19px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(619.255825 505.277336)">S chart: B₃S̄, B₄S̄</text>
     <text style="font-size: 19px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(622.457622 530.884289)">x̄ chart: x̿ ± A₃S̄</text>
    </g>
-   <g id="text_7">
+   <g id="text_7" transform="translate(0.000000 -51.889647)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="468" y="650.111375" transform="rotate(-0 468 650.111375)">Constants depend on subgroup size n. Do not mix A₂ and R̄ with the S-chart factors A₃, B₃, B₄.</text>
    </g>
   </g>
-  <g id="text_8">
+  <g id="text_8" transform="translate(0 61.361)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="42.12" y="36" transform="rotate(-0 42.12 36)">Match chart constants to the chosen subgroup spread statistic</text>
   </g>
   </g>

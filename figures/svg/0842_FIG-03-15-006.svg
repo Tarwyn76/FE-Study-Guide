@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="944.773pt" height="578.461pt" viewBox="35.440000 10.079916 944.772571 578.460856" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="822.456pt" height="553.760pt" viewBox="41.544000 82.495000 822.456000 553.760348" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-47.007067 -72.927389)">
+  <g id="axes_1" transform="translate(-49.004670 -1.370921)">
    <g id="text_1">
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="817.992" y="215.890687" transform="rotate(-0 817.992 215.890687)">Vertices ordered counterclockwise</text>
    </g>
@@ -57,10 +57,10 @@
    </g>
    <g id="text_3">
     <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(671.46825 532.989187)">Signed area=+6,750 m²</text>
-    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(712.795125 565.492313)"><tspan style="font-size: 24.000px">Parcel area=|A</tspan><tspan style="font-size: 17.280px" dy="5.760px">s</tspan><tspan style="font-size: 24.000px" dy="-5.760px">​</tspan><tspan style="font-size: 24.000px">|</tspan></text>
+    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(712.795125 565.492313)"><tspan font-size="24.000px">Parcel area=|A</tspan><tspan font-size="16.320px" dy="5.760px">s</tspan><tspan font-size="24.000px" dy="-5.760px">|</tspan></text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-47.007067 -72.927389)">
+  <g id="axes_2" transform="translate(-49.004670 -1.370921)">
    <g id="patch_2">
     <path d="M 178.707692 496.8  L 577.292308 496.8  L 577.292308 129.6  L 178.707692 129.6  z " style="fill: #ffffff" />
    </g>
@@ -279,11 +279,11 @@
    </g>
   </g>
   <g id="text_23">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">The shoelace sum gives signed polygon area from ordered coordinate vertices</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="110.756" transform="rotate(-0 55.44 110.756)">The shoelace sum gives signed polygon area from ordered coordinate vertices</text>
   </g>
   <g id="text_24">
 </g>
-  <g id="text_25" transform="translate(0.000000 -111.011691)">
+  <g id="text_25" transform="translate(0.000000 -62.376915)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(134.451562 650.281875)">Simple non-self-intersecting parcel with coordinate pairs E,N in metres. Close the vertex sequence back to its first point. Counterclockwise ordering</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(141.135156 662.999375)">gives positive signed area in east-right/north-up coordinates; reversing order changes sign but not magnitude. Boundary survey uncertainty and</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(393.403906 675.716875)">grid-to-ground area corrections are omitted.</text>

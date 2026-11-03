@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="958.320pt" height="549.360pt" viewBox="25.200000 11.520000 958.320000 549.360000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="928.704pt" height="519.958pt" viewBox="21.504000 104.722000 928.704000 519.958000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(18.480000 -84.014002)">
+  <g id="axes_1">
    <g id="text_1">
     
     <g style="fill: #23313d" transform="translate(350.34 558.376)">
@@ -61,7 +61,7 @@
     </g>
    </g>
   </g>
-  <g id="axes_2" transform="translate(18.480000 -84.014002)">
+  <g id="axes_2">
    <g id="patch_2">
     <path d="M 80.64 475.2  L 473.76 475.2  L 473.76 144  L 80.64 144  z " style="fill: #ffffff" />
    </g>
@@ -293,7 +293,7 @@
     </g>
    </g>
   </g>
-  <g id="axes_3" transform="translate(18.480000 -84.014002)">
+  <g id="axes_3">
    <g id="patch_8">
     <path d="M 584.64 475.2  L 937.44 475.2  L 937.44 144  L 584.64 144  z " style="fill: #ffffff" />
    </g>
@@ -602,11 +602,13 @@
    </g>
   </g>
   <g id="text_41">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">A bipolar square wave contains odd harmonics with decreasing amplitudes</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="128.605172" transform="rotate(-0 55.44 128.605172)">A bipolar square wave contains odd harmonics with decreasing amplitudes</text>
   </g>
-  <g id="text_43" transform="translate(0.000000 -129.381564)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 657.360625)">Unit-amplitude, zero-mean, 50% duty bipolar square wave. The positive-frequency panel reports sinusoidal peak amplitudes, not two-sided Fourier</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 670.078125)">coefficients. Even harmonics and DC vanish. Truncated sums exhibit Gibbs overshoot near discontinuities.</text>
+  <g id="text_42">
+   </g>
+  <g id="text_43">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 601.000000)">Unit-amplitude, zero-mean, 50% duty bipolar square wave. The positive-frequency panel reports sinusoidal peak amplitudes, not two-sided Fourier</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 613.717500)">coefficients. Even harmonics and DC vanish. Truncated sums exhibit Gibbs overshoot near discontinuities.</text>
   </g>
  </g>
  <defs>

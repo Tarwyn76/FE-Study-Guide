@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="934.250pt" height="557.219pt" viewBox="21.750000 11.750000 934.250000 557.219464" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="843.572pt" height="511.198pt" viewBox="20.428000 77.122000 843.572000 511.198040" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(1.167813 -66.966396)">
+  <g id="axes_1" transform="translate(-6.678278 -1.406103)">
    <g id="text_1">
     
     <g style="fill: #23313d" transform="translate(691.032 205.105)">
@@ -51,15 +51,15 @@
     </g>
    </g>
    <g id="text_2">
-    <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #26776f" transform="translate(704.777156 348.840102)"><tspan style="font-size: 25.000px">ω</tspan><tspan style="font-size: 18.000px" dy="6.000px">gc</tspan><tspan style="font-size: 25.000px" dy="-6.000px">​</tspan><tspan style="font-size: 25.000px">=2.862 rad/s</tspan></text>
+    <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #26776f" transform="translate(704.777156 348.840102)"><tspan font-size="25.000px">ω</tspan><tspan font-size="17.000px" dy="6.000px">gc</tspan><tspan font-size="25.000px" dy="-6.000px">=2.862 rad/s</tspan></text>
     <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #26776f" transform="translate(742.650203 383.228773)">PM=-10.53°</text>
    </g>
    <g id="text_3">
-    <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #b47722" transform="translate(704.777156 527.688102)"><tspan style="font-size: 25.000px">ω</tspan><tspan style="font-size: 18.000px" dy="6.000px">pc</tspan><tspan style="font-size: 25.000px" dy="-6.000px">​</tspan><tspan style="font-size: 25.000px">=2.236 rad/s</tspan></text>
+    <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #b47722" transform="translate(704.777156 527.688102)"><tspan font-size="25.000px">ω</tspan><tspan font-size="17.000px" dy="6.000px">pc</tspan><tspan font-size="25.000px" dy="-6.000px">=2.236 rad/s</tspan></text>
     <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #b47722" transform="translate(734.220516 562.076773)">GM=-4.44 dB</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(1.167813 -66.966396)">
+  <g id="axes_2" transform="translate(-6.678278 -1.406103)">
    <g id="patch_2">
     <path d="M 80.64 302.4  L 655.2 302.4  L 655.2 122.4  L 80.64 122.4  z " style="fill: #ffffff" />
    </g>
@@ -536,7 +536,7 @@
     <path d="M 421.120026 188.134982  L 418.120026 194.134982  L 415.120026 188.134982  " clip-path="url(#pa13bcf15d2)" style="fill: none; stroke: #b47722; stroke-width: 1.5; stroke-linecap: round" />
    </g>
   </g>
-  <g id="axes_3" transform="translate(1.167813 -66.966396)">
+  <g id="axes_3" transform="translate(-6.678278 -1.406103)">
    <g id="patch_6">
     <path d="M 80.64 540  L 655.2 540  L 655.2 367.2  L 80.64 367.2  z " style="fill: #ffffff" />
    </g>
@@ -1005,10 +1005,10 @@
    </g>
   </g>
   <g id="text_34">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Gain and phase margins are read at different Bode crossings</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="103.354" transform="rotate(-0 55.44 103.354)">Gain and phase margins are read at different Bode crossings</text>
   </g>
-  <g id="text_36" transform="translate(0.000000 -123.809965)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(109.530469 656.523438)"><tspan style="font-size: 10.000px">Negative unity-feedback example with one gain crossover and one phase crossover. GM</tspan><tspan style="font-size: 7.200px" dy="2.400px">dB</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=−20log₁₀|L(jω</tspan><tspan style="font-size: 7.200px" dy="2.400px">pc</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">)|; PM=180°+angle L(jω</tspan><tspan style="font-size: 7.200px" dy="2.400px">gc</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">). This example has</tspan></text>
+  <g id="text_36">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(109.530469 656.523438)"><tspan font-size="10.000px">Negative unity-feedback example with one gain crossover and one phase crossover. GM</tspan><tspan font-size="6.800px" dy="2.400px">dB</tspan><tspan font-size="10.000px" dy="-2.400px">=−20log₁₀|L(jω</tspan><tspan font-size="6.800px" dy="2.400px">pc</tspan><tspan font-size="10.000px" dy="-2.400px">)|; PM=180°+angle L(jω</tspan><tspan font-size="6.800px" dy="2.400px">gc</tspan><tspan font-size="10.000px" dy="-2.400px">). This example has</tspan></text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(142.404687 669.519063)">negative margins and an unstable closed loop at gain 10. Multiple crossings, right-half-plane poles or delay require a fuller stability assessment.</text>
   </g>
  </g>

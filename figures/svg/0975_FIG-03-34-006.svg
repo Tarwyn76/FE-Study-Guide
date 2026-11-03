@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="982.080pt" height="586.800pt" viewBox="11.520000 10.800000 982.080000 586.800000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="950.208pt" height="540.107pt" viewBox="17.472000 85.916000 950.208000 540.107000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,9 +21,9 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(8.820000 -65.530922)">
+  <g id="axes_1" transform="translate(-0.791840 0.000000)">
    <g id="text_1">
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(716.181375 201.447445)"><tspan style="font-size: 21.000px">Example A</tspan><tspan style="font-size: 15.120px" dy="5.040px">OL</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">=10⁵</tspan></text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(716.181375 201.447445)"><tspan font-size="21.000px">Example A</tspan><tspan font-size="14.280px" dy="5.040px">OL</tspan><tspan font-size="21.000px" dy="-5.040px">=10⁵</tspan></text>
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(695.402859 230.33393)">Output limited to±10 V</text>
    </g>
    <g id="text_2">
@@ -32,11 +32,11 @@
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(796.399812 416.449437)">gain</text>
    </g>
    <g id="text_3">
-    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(724.7295 539.448906)"><tspan style="font-size: 20.000px">CMRR=|A</tspan><tspan style="font-size: 14.400px" dy="4.800px">d</tspan><tspan style="font-size: 20.000px" dy="-4.800px">​</tspan><tspan style="font-size: 20.000px">/A</tspan><tspan style="font-size: 14.400px" dy="4.800px">cm</tspan><tspan style="font-size: 20.000px" dy="-4.800px">​</tspan><tspan style="font-size: 20.000px">|</tspan></text>
-    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(688.595125 566.959844)"><tspan style="font-size: 20.000px">CMRR</tspan><tspan style="font-size: 14.400px" dy="4.800px">dB</tspan><tspan style="font-size: 20.000px" dy="-4.800px">​</tspan><tspan style="font-size: 20.000px">=20log₁₀(CMRR)</tspan></text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(724.7295 539.448906)"><tspan font-size="20.000px">CMRR=|A</tspan><tspan font-size="13.600px" dy="4.800px">d</tspan><tspan font-size="20.000px" dy="-4.800px">/A</tspan><tspan font-size="13.600px" dy="4.800px">cm|</tspan></text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(688.595125 566.959844)"><tspan font-size="20.000px">CMRR</tspan><tspan font-size="13.600px" dy="4.800px">dB</tspan><tspan font-size="20.000px" dy="-4.800px">=20log₁₀(CMRR)</tspan></text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(8.820000 -65.530922)">
+  <g id="axes_2" transform="translate(-0.791840 0.000000)">
    <g id="patch_2">
     <path d="M 80.64 504  L 675.36 504  L 675.36 122.4  L 80.64 122.4  z " style="fill: #ffffff" />
    </g>
@@ -162,7 +162,7 @@
      </g>
     </g>
     <g id="text_13">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="378" y="532.068594" transform="rotate(-0 378 532.068594)"><tspan style="font-size: 11.000px">Differential input v</tspan><tspan style="font-size: 7.920px" dy="2.640px">d</tspan><tspan style="font-size: 11.000px" dy="-2.640px">​</tspan><tspan style="font-size: 11.000px"> (mV)</tspan></text>
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="378" y="532.068594" transform="rotate(-0 378 532.068594)"><tspan font-size="11.000px">Differential input v</tspan><tspan font-size="7.480px" dy="2.640px">d</tspan><tspan font-size="11.000px" dy="-2.640px"> (mV)</tspan></text>
     </g>
    </g>
    <g id="matplotlib.axis_2">
@@ -287,7 +287,7 @@
      </g>
     </g>
     <g id="text_23">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="39.465625" y="313.2" transform="rotate(-90 39.465625 313.2)"><tspan style="font-size: 11.000px">Output v</tspan><tspan style="font-size: 7.920px" dy="2.640px">o</tspan><tspan style="font-size: 11.000px" dy="-2.640px">​</tspan><tspan style="font-size: 11.000px"> (V)</tspan></text>
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="39.465625" y="313.2" transform="rotate(-90 39.465625 313.2)"><tspan font-size="11.000px">Output v</tspan><tspan font-size="7.480px" dy="2.640px">o</tspan><tspan font-size="11.000px" dy="-2.640px"> (V)</tspan></text>
     </g>
    </g>
    <g id="line2d_37">
@@ -307,12 +307,14 @@
    </g>
   </g>
   <g id="text_24">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Finite output range and bandwidth constrain an op-amp’s closed-loop response</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="109.984483" transform="rotate(-0 55.44 109.984483)">Finite output range and bandwidth constrain an op-amp’s closed-loop response</text>
   </g>
-  <g id="text_26" transform="translate(0.000000 -102.497083)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(123.15625 650.281875)">Illustrative open-loop static transfer; output swing limits are assumed and need not equal supply rails. Idealized hard clipping omits recovery dynamics.</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(123.735156 662.999375)">Gain-bandwidth approximation assumes a dominant-pole voltage-feedback device; noise gain governs stability/BW and differs from signal gain in some</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(275.1375 675.716875)">circuits. Input common-mode range, CMRR, slew rate, load and settling are separate limits.</text>
+  <g id="text_25">
+   </g>
+  <g id="text_26">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(123.156 588.586207)">Illustrative open-loop static transfer; output swing limits are assumed and need not equal supply rails. Idealized hard clipping omits recovery dynamics.</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(123.735 601.303707)">Gain-bandwidth approximation assumes a dominant-pole voltage-feedback device; noise gain governs stability/BW and differs from signal gain in some</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(275.137 614.021207)">circuits. Input common-mode range, CMRR, slew rate, load and settling are separate limits.</text>
   </g>
  </g>
  <defs>

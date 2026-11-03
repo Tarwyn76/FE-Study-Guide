@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="892.800pt" height="542.880pt" viewBox="30.960000 11.520000 892.800000 542.880000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="872.770pt" height="498.466pt" viewBox="44.352000 112.782000 872.769600 498.466000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,14 +21,14 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-61.740000 -92.415403)">
+  <g id="axes_1" transform="translate(-62.161680 0.000000)">
    <g id="text_1">
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(681.8295 188.660062)">Choose out-of-page normal</text>
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(729.743562 215.61475)">and CCW positive</text>
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(765.932625 242.569437)">circulation</text>
    </g>
    <g id="text_2">
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(696.515203 375.327445)"><tspan style="font-size: 21.000px">dΦ</tspan><tspan style="font-size: 15.120px" dy="5.040px">ext</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">/dt=−0.02 Wb/s</tspan></text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(696.515203 375.327445)"><tspan font-size="21.000px">dΦ</tspan><tspan font-size="14.280px" dy="5.040px">ext</tspan><tspan font-size="21.000px" dy="-5.040px">/dt=−0.02 Wb/s</tspan></text>
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(721.331297 404.21393)">N=50 → ℰ=+1.0 V</text>
    </g>
    <g id="text_3">
@@ -48,7 +48,7 @@
     </g>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-61.740000 -92.415403)">
+  <g id="axes_2" transform="translate(-62.161680 0.000000)">
    <g id="patch_2">
     <path d="M 347.76 454.028571  C 382.698614 454.028571 416.210937 440.147313 440.916268 415.441982  C 465.621599 390.736651 479.502857 357.224328 479.502857 322.285714  C 479.502857 287.3471 465.621599 253.834778 440.916268 229.129447  C 416.210937 204.424116 382.698614 190.542857 347.76 190.542857  C 312.821386 190.542857 279.309063 204.424116 254.603732 229.129447  C 229.898401 253.834778 216.017143 287.3471 216.017143 322.285714  C 216.017143 357.224328 229.898401 390.736651 254.603732 415.441982  C 279.309063 440.147313 312.821386 454.028571 347.76 454.028571  L 347.76 454.028571  z " clip-path="url(#p35baefd04f)" style="fill: none; stroke: #235a78; stroke-width: 2.2; stroke-linejoin: miter" />
    </g>
@@ -128,12 +128,14 @@
    </g>
   </g>
   <g id="text_6">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Lenz’s law makes the induced circulation oppose the change in linked magnetic flux</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="136.363793" transform="rotate(-0 55.44 136.363793)">Lenz’s law makes the induced circulation oppose the change in linked magnetic flux</text>
   </g>
-  <g id="text_8" transform="translate(0.000000 -143.663944)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(122.889062 650.281875)">Coil face-view with many turns represented by one loop. Crosses are increasing external flux into the page; gold dot is the opposing induced field out of</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(120.907031 662.999375)">page. Positive emf follows the right-hand contour for the chosen normal. Induced current requires a closed conducting path; the figure assumes a closed</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(246.763281 675.716875)">loop. Self-inductance/load dynamics are not solved, and magnitude of induced current is not assigned.</text>
+  <g id="text_7">
+   </g>
+  <g id="text_8">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(122.889 573.068966)">Coil face-view with many turns represented by one loop. Crosses are increasing external flux into the page; gold dot is the opposing induced field out of</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(120.907 585.786466)">page. Positive emf follows the right-hand contour for the chosen normal. Induced current requires a closed conducting path; the figure assumes a closed</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(246.763 598.503966)">loop. Self-inductance/load dynamics are not solved, and magnitude of induced current is not assigned.</text>
   </g>
  </g>
  <defs>

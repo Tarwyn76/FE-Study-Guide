@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1018.286pt" height="552.540pt" viewBox="30.857143 11.575563 1018.285714 552.540193" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="987.840pt" height="546.585pt" viewBox="46.080000 102.960000 987.840000 546.584838" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1080 720  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -83.700000)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 59.4 239.904  L 263.655 239.904  L 263.655 140.544  L 59.4 140.544  z " clip-path="url(#padfa8c057d)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -109,9 +109,11 @@
    </g>
   </g>
   <g id="text_10">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="39.6" transform="rotate(-0 59.4 39.6)">PCM samples, quantizes, encodes, then reconstructs the received signal</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="128.626674" transform="rotate(-0 59.4 128.626674)">PCM samples, quantizes, encodes, then reconstructs the received signal</text>
   </g>
-  <g id="text_12" transform="translate(0.000000 -136.800000)">
+  <g id="text_11">
+   </g>
+  <g id="text_12" transform="translate(0.000000 -49.388764)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 651.001875)">Idealized PCM chain. Anti-alias filtering precedes sampling; a decoder/DAC followed by reconstruction filtering restores an analog approximation.</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 663.719375)">Quantization causes error even without channel errors. The64 kbit/s example excludes overhead and requires an input bandwidth below4 kHz with practical</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 676.436875)">transition margin.</text>

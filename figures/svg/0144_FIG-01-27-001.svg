@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="893.880pt" height="466.105pt" viewBox="16.714286 6.018576 893.880000 466.105263" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="860.160pt" height="463.974pt" viewBox="29.600000 105.535000 860.160000 463.974000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 648  L 936 648  L 936 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(8.190000 -98.252708)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 42.12 149.8824  L 238.0248 149.8824  L 238.0248 252.9144  L 42.12 252.9144  z " clip-path="url(#pe26ad58784)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -78,7 +78,7 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(325.60125 518.723134)">Guarantee V ≥ 0 in consistent volume units</text>
    </g>
   </g>
-  <g id="text_7">
+  <g id="text_7" transform="translate(0 99.949)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="42.12" y="32.4" transform="rotate(-0 42.12 32.4)">An algorithm contract states what must be true</text>
   </g>
   </g>

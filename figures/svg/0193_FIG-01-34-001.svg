@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="902.571pt" height="629.749pt" viewBox="16.714286 4.679666 902.571429 629.749304" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="876.800pt" height="618.104pt" viewBox="29.600000 42.104000 876.800000 618.104000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 936 720  L 936 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -31.202600)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 238.0248 86.4  L 697.9752 86.4  L 697.9752 149.364  L 238.0248 149.364  z " clip-path="url(#pb57be648d7)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -173,7 +173,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(678.700275 607.233656)">Control nuisance variation</text>
    </g>
   </g>
-  <g id="text_18">
+  <g id="text_18" transform="translate(0 33.263)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="42.12" y="36" transform="rotate(-0 42.12 36)">Experimental design separates factors, units, and responses</text>
   </g>
   </g>

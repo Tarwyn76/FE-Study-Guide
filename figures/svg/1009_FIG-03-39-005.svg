@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="947.520pt" height="617.760pt" viewBox="28.800000 12.960000 947.520000 617.760000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="912.576pt" height="580.446pt" viewBox="33.600000 98.381000 912.576000 580.446000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 792  L 1008 792  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(11.760000 -73.908802)">
+  <g id="axes_1" transform="translate(-2.281440 0.000000)">
    <g id="text_1">
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(749.06695 208.9522)">H(jω)=10(1+jω/10)</text>
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(746.1457 229.3002)">/[(1+jω)(1+jω/100)]</text>
@@ -37,7 +37,7 @@
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(741.7257 633.66575)">Zero:+20 dB/dec</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(11.760000 -73.908802)">
+  <g id="axes_2" transform="translate(-2.281440 0.000000)">
    <g id="patch_2">
     <path d="M 90.72 340.56  L 695.52 340.56  L 695.52 134.64  L 90.72 134.64  z " style="fill: #ffffff" />
    </g>
@@ -699,7 +699,7 @@
     </g>
    </g>
   </g>
-  <g id="axes_3" transform="translate(11.760000 -73.908802)">
+  <g id="axes_3" transform="translate(-2.281440 0.000000)">
    <g id="patch_8">
     <path d="M 90.72 594  L 695.52 594  L 695.52 419.76  L 90.72 419.76  z " style="fill: #ffffff" />
    </g>
@@ -1310,11 +1310,13 @@
    </g>
   </g>
   <g id="text_35">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="43.56" transform="rotate(-0 55.44 43.56)">Bode factors add gain, pole, and zero contributions in decibels</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="122.241585" transform="rotate(-0 55.44 122.241585)">Bode factors add gain, pole, and zero contributions in decibels</text>
   </g>
-  <g id="text_37" transform="translate(0.000000 -131.020148)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 723.456625)">First-order minimum-phase factors. Each pole contributes −atan(ω/ωp), each zero +atan(ω/ωz), and positive real gain contributes zero phase. Dashed</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 736.174125)">magnitude uses straight-line approximations; exact magnitude differs near the corners.</text>
+  <g id="text_36">
+   </g>
+  <g id="text_37">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 651.459883)">First-order minimum-phase factors. Each pole contributes −atan(ω/ωp), each zero +atan(ω/ωz), and positive real gain contributes zero phase. Dashed</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 664.177383)">magnitude uses straight-line approximations; exact magnitude differs near the corners.</text>
   </g>
  </g>
  <defs>

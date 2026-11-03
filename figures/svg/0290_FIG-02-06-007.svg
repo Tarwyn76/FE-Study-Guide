@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="755.383pt" height="556.244pt" viewBox="17.280000 0.000000 755.382857 556.244373" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="712.501pt" height="363.731pt" viewBox="26.400000 66.498855 712.501029 363.731345" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,8 +21,8 @@
   <g id="patch_1">
    <path d="M 0 576  L 864 576  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-7.920000 -62.640000)" />
-  <g id="axes_2" transform="translate(-7.920000 -62.640000)">
+  <g id="axes_1" transform="translate(-40.972800 0.000000)" />
+  <g id="axes_2" transform="translate(-40.972800 0.000000)">
    <g id="line2d_1">
     <path d="M 123.552 192.06  L 758.592 192.06  " clip-path="url(#pf8ddac6714)" style="fill: none; stroke: #23313d; stroke-width: 1.3; stroke-linecap: square" />
    </g>
@@ -94,7 +94,7 @@
     <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="118.72" transform="rotate(-0 432 118.72)">Standard gradient: periods 1–5 are 0, G, 2G, 3G, 4G</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(-7.920000 -62.640000)">
+  <g id="axes_3" transform="translate(-40.972800 0.000000)">
    <g id="line2d_8">
     <path d="M 123.552 382.14  L 758.592 382.14  " clip-path="url(#p7957899fe9)" style="fill: none; stroke: #23313d; stroke-width: 1.3; stroke-linecap: square" />
    </g>
@@ -166,13 +166,13 @@
     <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="308.8" transform="rotate(-0 432 308.8)">Shifted four-term series: periods 1–4 are G, 2G, 3G, 4G</text>
    </g>
   </g>
-  <g id="text_23">
+  <g id="text_23" transform="translate(0 61.987)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="28.8" transform="rotate(-0 38.88 28.8)">A one-period shift changes a gradient’s present worth</text>
   </g>
-  <g id="text_25">
+  <g id="text_25" transform="translate(0 -89.915)">
    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="501.12" transform="rotate(-0 432 501.12)">Correct: 0 at period 1     |     Shifted: G at period 1</text>
   </g>
-  <g id="text_26">
+  <g id="text_26" transform="translate(0.000000 -40.370762) translate(0 -89.915)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="538.56" transform="rotate(-0 432 538.56)">Both are valid dated series, but only the upper series matches the standard n = 5 arithmetic-gradient factor.</text>
   </g>
  </g>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1027.543pt" height="473.055pt" viewBox="26.228571 13.890675 1027.542857 473.054662" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1000.800pt" height="448.565pt" viewBox="46.080000 171.355414 1000.800000 448.564586" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1080 720  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-8.550000 -155.700000)">
+  <g id="axes_1" transform="translate(-2.085000 0.000000)">
    <g id="text_1">
     
     <g style="fill: #23313d" transform="translate(235.02 570.460719)">
@@ -68,7 +68,7 @@
     </g>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-8.550000 -155.700000)">
+  <g id="axes_2" transform="translate(-2.085000 0.000000)">
    <g id="patch_2">
     <path d="M 327.694737 323.715789  L 318.315789 335.908421  L 337.073684 335.908421  z " clip-path="url(#pbc2bd875ec)" style="fill: #edf3f6; stroke: #23313d; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -148,10 +148,10 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="199.8" y="220.72403" transform="rotate(-0 199.8 220.72403)">ORIGINAL • PROPPED CANTILEVER</text>
    </g>
    <g id="text_3">
-    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="199.8" y="379.328215" transform="rotate(-0 199.8 379.328215)"><tspan style="font-size: 17.000px">δ</tspan><tspan style="font-size: 12.240px" dy="4.080px">B</tspan><tspan style="font-size: 17.000px" dy="-4.080px">​</tspan><tspan style="font-size: 17.000px">=0; unknown R</tspan><tspan style="font-size: 12.240px" dy="4.080px">B</tspan><tspan style="font-size: 17.000px" dy="-4.080px">​</tspan></text>
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="199.8" y="379.328215" transform="rotate(-0 199.8 379.328215)"><tspan font-size="17.000px">δ</tspan><tspan font-size="11.560px" dy="4.080px">B</tspan><tspan font-size="17.000px" dy="-4.080px">=0; unknown R</tspan><tspan font-size="11.560px" dy="4.080px">B</tspan></text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(-8.550000 -155.700000)">
+  <g id="axes_3" transform="translate(-2.085000 0.000000)">
    <g id="line2d_11">
     <path d="M 422.905263 323.715789  L 678.694737 323.715789  " clip-path="url(#p6af5b18cd0)" style="fill: none; stroke: #235a78; stroke-width: 2; stroke-linecap: square" />
    </g>
@@ -222,10 +222,10 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="550.8" y="220.72403" transform="rotate(-0 550.8 220.72403)">PRIMARY • PROP RELEASED</text>
    </g>
    <g id="text_5">
-    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="550.8" y="379.328215" transform="rotate(-0 550.8 379.328215)"><tspan style="font-size: 17.000px">δ</tspan><tspan style="font-size: 12.240px" dy="4.080px">B,load</tspan><tspan style="font-size: 17.000px" dy="-4.080px">​</tspan><tspan style="font-size: 17.000px"> downward</tspan></text>
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="550.8" y="379.328215" transform="rotate(-0 550.8 379.328215)"><tspan font-size="17.000px">δ</tspan><tspan font-size="11.560px" dy="4.080px">B,load</tspan><tspan font-size="17.000px" dy="-4.080px"> downward</tspan></text>
    </g>
   </g>
-  <g id="axes_4" transform="translate(-8.550000 -155.700000)">
+  <g id="axes_4" transform="translate(-2.085000 0.000000)">
    <g id="line2d_21">
     <path d="M 773.905263 323.715789  L 1029.694737 323.715789  " clip-path="url(#p1466bcb444)" style="fill: none; stroke: #235a78; stroke-width: 2; stroke-linecap: square" />
    </g>
@@ -258,15 +258,17 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="901.8" y="220.72403" transform="rotate(-0 901.8 220.72403)">REDUNDANT • UNIT UPWARD</text>
    </g>
    <g id="text_7">
-    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="901.8" y="379.328215" transform="rotate(-0 901.8 379.328215)"><tspan style="font-size: 17.000px">f</tspan><tspan style="font-size: 12.240px" dy="4.080px">BB</tspan><tspan style="font-size: 17.000px" dy="-4.080px">​</tspan><tspan style="font-size: 17.000px"> R</tspan><tspan style="font-size: 12.240px" dy="4.080px">B</tspan><tspan style="font-size: 17.000px" dy="-4.080px">​</tspan><tspan style="font-size: 17.000px"> upward</tspan></text>
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="901.8" y="379.328215" transform="rotate(-0 901.8 379.328215)"><tspan font-size="17.000px">f</tspan><tspan font-size="11.560px" dy="4.080px">BB</tspan><tspan font-size="17.000px" dy="-4.080px"> R</tspan><tspan font-size="11.560px" dy="4.080px">B</tspan><tspan font-size="17.000px" dy="-4.080px"> upward</tspan></text>
    </g>
   </g>
   <g id="text_8">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="39.6" transform="rotate(-0 59.4 39.6)">The force method releases one restraint and restores it through compatibility</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="196.802194" transform="rotate(-0 59.4 196.802194)">The force method releases one restraint and restores it through compatibility</text>
   </g>
-  <g id="text_10" transform="translate(0.000000 -207.900000)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(121.139844 656.501562)">Example L=6 m,w=2 kN/m,constant EI. Upward displacement is positive. Load-only displacement is negative; positive flexibility coefficient corresponds to unit upward</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(213.186719 669.219062)"><tspan style="font-size: 10.000px">redundant. A</tspan><tspan style="font-size: 7.200px" dy="2.400px">y</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=7.5 kN and external fixed-end reaction couple=9 kN·m counterclockwise. Linear elastic superposition is assumed.</tspan></text>
+  <g id="text_9">
+   </g>
+  <g id="text_10">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(121.14 591.334873)">Example L=6 m,w=2 kN/m,constant EI. Upward displacement is positive. Load-only displacement is negative; positive flexibility coefficient corresponds to unit upward</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(213.187 604.052373)"><tspan font-size="10.000px">redundant. A</tspan><tspan font-size="6.800px" dy="2.400px">y</tspan><tspan font-size="10.000px" dy="-2.400px">=7.5 kN and external fixed-end reaction couple=9 kN·m counterclockwise. Linear elastic superposition is assumed.</tspan></text>
   </g>
  </g>
  <defs>

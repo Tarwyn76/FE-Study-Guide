@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="978.700pt" height="577.643pt" viewBox="20.320000 10.114183 978.700000 577.643344" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="835.708pt" height="549.258pt" viewBox="28.292000 81.428000 835.708000 549.258419" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,10 +21,10 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(1.223375 -72.625548)">
+  <g id="axes_1" transform="translate(-6.616022 -2.784138)">
    <g id="text_1">
     <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(692.048875 201.035609)">CN=75; S=84.667 mm</text>
-    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(689.180281 230.685766)"><tspan style="font-size: 22.000px">I</tspan><tspan style="font-size: 15.840px" dy="5.280px">a</tspan><tspan style="font-size: 22.000px" dy="-5.280px">​</tspan><tspan style="font-size: 22.000px">=0.20S=16.933 mm</tspan></text>
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(689.180281 230.685766)"><tspan font-size="22.000px">I</tspan><tspan font-size="14.960px" dy="5.280px">a</tspan><tspan font-size="22.000px" dy="-5.280px">=0.20S=16.933 mm</tspan></text>
    </g>
    <g id="text_2">
     
@@ -56,10 +56,10 @@
    </g>
    <g id="text_3">
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(658.796062 533.479773)">P=60 mm → Q=14.520 mm</text>
-    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(720.858328 564.477664)"><tspan style="font-size: 23.000px">Q=0 when P≤I</tspan><tspan style="font-size: 16.560px" dy="5.520px">a</tspan><tspan style="font-size: 23.000px" dy="-5.520px">​</tspan></text>
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(720.858328 564.477664)"><tspan font-size="23.000px">Q=0 when P≤I</tspan><tspan font-size="15.640px" dy="5.520px">a</tspan></text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(1.223375 -72.625548)">
+  <g id="axes_2" transform="translate(-6.616022 -2.784138)">
    <g id="patch_2">
     <path d="M 80.64 496.8  L 675.36 496.8  L 675.36 129.6  L 80.64 129.6  z " style="fill: #ffffff" />
    </g>
@@ -312,12 +312,12 @@
    </g>
   </g>
   <g id="text_22">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">The curve-number model predicts runoff depth only after initial abstraction is exceeded</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="109.544" transform="rotate(-0 55.44 109.544)">The curve-number model predicts runoff depth only after initial abstraction is exceeded</text>
   </g>
   <g id="text_23">
 </g>
-  <g id="text_24" transform="translate(0.000000 -111.794383)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(151.836719 650.142812)"><tspan style="font-size: 10.000px">Traditional NRCS/SCS event-depth model with explicitly chosen λ=I</tspan><tspan style="font-size: 7.200px" dy="2.400px">a</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">/S=0.20 and S=25400/CN−254 in millimetres. CN reflects the specified</tspan></text>
+  <g id="text_24" transform="translate(0.000000 -68.211371)">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(151.836719 650.142812)"><tspan font-size="10.000px">Traditional NRCS/SCS event-depth model with explicitly chosen λ=I</tspan><tspan font-size="6.800px" dy="2.400px">a</tspan><tspan font-size="10.000px" dy="-2.400px">/S=0.20 and S=25400/CN−254 in millimetres. CN reflects the specified</tspan></text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(135.010156 663.138438)">watershed/antecedent condition; it is not a universal material constant. Other initial-abstraction conventions require compatible calibration. Runoff</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(306.374219 675.855937)">depth does not give peak flow or timing without an additional response model.</text>
   </g>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1077.686pt" height="568.746pt" viewBox="2.314286 11.575563 1077.685714 568.745981" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1033.920pt" height="561.525pt" viewBox="46.080000 123.120000 1033.920000 561.524607" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1080 720  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-31.050000 -102.600000)">
+  <g id="axes_1" transform="translate(-9.046800 0.000000)">
    <g id="text_1">
     
     <g style="fill: #23313d" transform="translate(461.85 504.258)">
@@ -46,10 +46,10 @@
     </g>
    </g>
    <g id="text_2">
-    <text style="font-size: 25px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="540" y="594.214781" transform="rotate(-0 540 594.214781)"><tspan style="font-size: 25.000px">E=200 GPa; A=1000 mm² in all members → δ</tspan><tspan style="font-size: 18.000px" dy="6.000px">B</tspan><tspan style="font-size: 25.000px" dy="-6.000px">​</tspan><tspan style="font-size: 25.000px">=0.525 mm downward</tspan></text>
+    <text style="font-size: 25px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="540" y="594.214781" transform="rotate(-0 540 594.214781)"><tspan font-size="25.000px">E=200 GPa; A=1000 mm² in all members → δ</tspan><tspan font-size="17.000px" dy="6.000px">B</tspan><tspan font-size="25.000px" dy="-6.000px">=0.525 mm downward</tspan></text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-31.050000 -102.600000)">
+  <g id="axes_2" transform="translate(-9.046800 0.000000)">
    <g id="patch_2">
     <path d="M 89.64 391.68  L 73.386 412.8102  L 105.894 412.8102  z " clip-path="url(#pe6facb9ede)" style="fill: #edf3f6; stroke: #23313d; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -106,7 +106,7 @@
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="275.4" y="174.28675" transform="rotate(-0 275.4 174.28675)">REAL</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(-31.050000 -102.600000)">
+  <g id="axes_3" transform="translate(-9.046800 0.000000)">
    <g id="patch_10">
     <path d="M 618.84 391.68  L 602.586 412.8102  L 635.094 412.8102  z " clip-path="url(#pe50a4b0d57)" style="fill: #edf3f6; stroke: #23313d; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -164,11 +164,13 @@
    </g>
   </g>
   <g id="text_13">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="39.6" transform="rotate(-0 59.4 39.6)">A unit virtual load at the target joint converts member axial strains into displacement</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="148.580485" transform="rotate(-0 59.4 148.580485)">A unit virtual load at the target joint converts member axial strains into displacement</text>
   </g>
-  <g id="text_15" transform="translate(0.000000 -117.900000)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(131.539062 650.00375)"><tspan style="font-size: 10.000px">Same triangle as888, small-deformation linear elasticity, axial-only member strain. Real N</tspan><tspan style="font-size: 7.200px" dy="2.400px">AB</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=N</tspan><tspan style="font-size: 7.200px" dy="2.400px">BC</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=−8.333 kN,N</tspan><tspan style="font-size: 7.200px" dy="2.400px">AC</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=+6.667 kN. Normalized virtual coefficients</tspan></text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(127.245312 662.999375)"><tspan style="font-size: 10.000px">n</tspan><tspan style="font-size: 7.200px" dy="2.400px">AB</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=n</tspan><tspan style="font-size: 7.200px" dy="2.400px">BC</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=−5/6,n</tspan><tspan style="font-size: 7.200px" dy="2.400px">AC</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=+2/3 per unit downward force. Inclined lengths5 m,bottom8 m. Use consistent force/length units; positive δ is in the downward virtual-load</tspan></text>
+  <g id="text_14">
+   </g>
+  <g id="text_15" transform="translate(0.000000 -12.927023)">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(131.539062 650.00375)"><tspan font-size="10.000px">Same triangle as888, small-deformation linear elasticity, axial-only member strain. Real N</tspan><tspan font-size="6.800px" dy="2.400px">AB</tspan><tspan font-size="10.000px" dy="-2.400px">=N</tspan><tspan font-size="6.800px" dy="2.400px">BC</tspan><tspan font-size="10.000px" dy="-2.400px">=−8.333 kN,N</tspan><tspan font-size="6.800px" dy="2.400px">AC</tspan><tspan font-size="10.000px" dy="-2.400px">=+6.667 kN. Normalized virtual coefficients</tspan></text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(127.245312 662.999375)"><tspan font-size="10.000px">n</tspan><tspan font-size="6.800px" dy="2.400px">AB</tspan><tspan font-size="10.000px" dy="-2.400px">=n</tspan><tspan font-size="6.800px" dy="2.400px">BC</tspan><tspan font-size="10.000px" dy="-2.400px">=−5/6,n</tspan><tspan font-size="6.800px" dy="2.400px">AC</tspan><tspan font-size="10.000px" dy="-2.400px">=+2/3 per unit downward force. Inclined lengths5 m,bottom8 m. Use consistent force/length units; positive δ is in the downward virtual-load</tspan></text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(516.501562 675.995)">direction.</text>
   </g>
  </g>

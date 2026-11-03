@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="910.594pt" height="574.262pt" viewBox="12.702857 6.016713 910.594286 574.261838" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="883.040pt" height="458.464pt" viewBox="20.240000 99.959625 883.040000 458.464375" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 936 720  L 936 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(6.240000 -88.147346)">
+  <g id="axes_1">
    <g id="text_1">
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(170.702187 490.560031)">χ₀² = (n−1)s²/σ₀²</text>
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(213.658437 517.524094)">ν = n−1</text>
@@ -30,11 +30,11 @@
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(626.618125 490.569406)">F₀ = s₁²/s₂²</text>
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(575.5525 517.524094)">ν₁ = n₁−1; ν₂ = n₂−1</text>
    </g>
-   <g id="text_3">
+   <g id="text_3" transform="translate(0.000000 -111.095104)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="468" y="650.111375" transform="rotate(-0 468 650.111375)">Illustrated α = 0.05. Exact variance laws require normal populations; the F comparison also needs independent samples.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(6.240000 -88.147346)">
+  <g id="axes_2">
    <g id="patch_2">
     <path d="M 46.8 417.6  L 421.2 417.6  L 421.2 158.4  L 46.8 158.4  z " style="fill: #ffffff" />
    </g>
@@ -91,7 +91,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="234" y="152.4" transform="rotate(-0 234 152.4)">One variance, two-sided</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(6.240000 -88.147346)">
+  <g id="axes_3">
    <g id="patch_5">
     <path d="M 514.8 417.6  L 889.2 417.6  L 889.2 158.4  L 514.8 158.4  z " style="fill: #ffffff" />
    </g>
@@ -204,7 +204,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="702" y="152.4" transform="rotate(-0 702 152.4)">H₁: σ₁² &gt; σ₂²</text>
    </g>
   </g>
-  <g id="text_16">
+  <g id="text_16" transform="translate(0 90.629)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="42.12" y="36" transform="rotate(-0 42.12 36)">Variance tests use asymmetric reference distributions</text>
   </g>
   </g>

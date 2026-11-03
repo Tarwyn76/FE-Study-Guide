@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="809.074pt" height="338.811pt" viewBox="25.920000 11.725714 809.074286 338.811429" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="781.440pt" height="332.497pt" viewBox="36.960000 150.863046 781.440000 332.496954" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(23.400000 -136.080000)">
+  <g id="axes_1" transform="translate(19.536000 0.000000)">
    <g id="text_1">
     <text style="font-size: 28px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="670.3776" y="210.22625" transform="rotate(-0 670.3776 210.22625)">ΣFₓ = 0</text>
    </g>
@@ -29,10 +29,10 @@
     <text style="font-size: 28px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="670.3776" y="326.47745" transform="rotate(-0 670.3776 326.47745)">ΣFᵧ = 0</text>
    </g>
    <g id="text_3">
-    <text style="font-size: 28px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="670.3776" y="442.092087" transform="rotate(-0 670.3776 442.092087)"><tspan style="font-size: 28.000px">ΣM</tspan><tspan style="font-size: 20.160px" dy="6.720px">A</tspan><tspan style="font-size: 28.000px" dy="-6.720px">​</tspan><tspan style="font-size: 28.000px"> = 0</tspan></text>
+    <text style="font-size: 28px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="670.3776" y="442.092087" transform="rotate(-0 670.3776 442.092087)"><tspan font-size="28.000px">ΣM</tspan><tspan font-size="19.040px" dy="6.720px">A</tspan><tspan font-size="28.000px" dy="-6.720px"> = 0</tspan></text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(23.400000 -136.080000)">
+  <g id="axes_2" transform="translate(19.536000 0.000000)">
    <g id="patch_2">
     <path d="M 144.621818 308.9664  L 456.84 308.9664  L 456.84 298.975418  L 144.621818 298.975418  z " clip-path="url(#p89af6628db)" style="fill: #d3e2ea; stroke: #235a78; stroke-width: 1.4; stroke-linejoin: miter" />
    </g>
@@ -55,7 +55,7 @@
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #26776f" x="157.110545" y="220.964818" transform="rotate(-0 157.110545 220.964818)">Rᵧ</text>
    </g>
    <g id="text_8">
-    <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #b47722" x="125.888727" y="401.358239" transform="rotate(-0 125.888727 401.358239)"><tspan style="font-size: 15.000px">M</tspan><tspan style="font-size: 10.800px" dy="3.600px">A</tspan><tspan style="font-size: 15.000px" dy="-3.600px">​</tspan></text>
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #b47722" x="125.888727" y="401.358239" transform="rotate(-0 125.888727 401.358239)"><tspan font-size="15.000px">M</tspan><tspan font-size="10.200px" dy="3.600px">A</tspan></text>
    </g>
    <g id="patch_5">
     <path d="M 269.509091 193.57213  Q 269.509091 247.772581 269.509091 300.072373  " clip-path="url(#p89af6628db)" style="fill: none; stroke: #a23b34; stroke-width: 1.7; stroke-linecap: round" />
@@ -78,10 +78,10 @@
     <path d="M 121.197983 409.653973  L 127.096898 406.45979  L 126.112895 413.095432  z " clip-path="url(#p89af6628db)" style="fill: #b47722; stroke: #b47722; stroke-width: 1.7; stroke-linecap: round" />
    </g>
   </g>
-  <g id="text_9">
+  <g id="text_9" transform="translate(0 136.980)">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Rigid-body equilibrium needs force balance and moment balance</text>
   </g>
-  <g id="text_11" transform="translate(0.000000 -262.800000)">
+  <g id="text_11" transform="translate(0.000000 -2.607041) translate(0 -124.936)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="594.216" transform="rotate(-0 432 594.216)">A planar rigid body has three independent equilibrium equations. Nonconcurrent forces can have a nonzero net moment even if their force sum is zero.</text>
   </g>
  </g>

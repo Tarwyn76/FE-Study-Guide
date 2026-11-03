@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="776.366pt" height="691.003pt" viewBox="18.514286 3.084833 776.365714 691.002571" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="747.503pt" height="594.240pt" viewBox="28.320000 88.800000 747.502629 594.240000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,8 +21,8 @@
   <g id="patch_1">
    <path d="M 0 720  L 864 720  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(5.760000 -79.920000)" />
-  <g id="axes_2" transform="translate(5.760000 -79.920000)">
+  <g id="axes_1" transform="translate(-22.521600 0.000000)" />
+  <g id="axes_2" transform="translate(-22.521600 0.000000)">
    <g id="line2d_1">
     <path d="M 116.208 206.8875  L 766.368 206.8875  " clip-path="url(#p1dc36df49d)" style="fill: none; stroke: #23313d; stroke-width: 1.3; stroke-linecap: square" />
    </g>
@@ -108,7 +108,7 @@
     <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="143.2" transform="rotate(-0 432 143.2)">Conventional: one sign change</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(5.760000 -79.920000)">
+  <g id="axes_3" transform="translate(-22.521600 0.000000)">
    <g id="line2d_8">
     <path d="M 171.936 379.6875  L 729.216 379.6875  " clip-path="url(#p6e379c24c5)" style="fill: none; stroke: #23313d; stroke-width: 1.3; stroke-linecap: square" />
    </g>
@@ -155,7 +155,7 @@
     <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="316" transform="rotate(-0 432 316)">Nonconventional: two sign changes</text>
    </g>
   </g>
-  <g id="axes_4" transform="translate(5.760000 -79.920000)">
+  <g id="axes_4" transform="translate(-22.521600 0.000000)">
    <g id="patch_11">
     <path d="M 129.6 619.2  L 734.4 619.2  L 734.4 482.4  L 129.6 482.4  z " style="fill: #ffffff" />
    </g>
@@ -314,10 +314,10 @@
     <path d="M 129.6 619.2  L 734.4 619.2  " style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linejoin: miter; stroke-linecap: square" />
    </g>
   </g>
-  <g id="text_32">
+  <g id="text_32" transform="translate(0 79.494)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="36" transform="rotate(-0 38.88 36)">Nonconventional cash flows may have multiple IRRs</text>
   </g>
-  <g id="text_34">
+  <g id="text_34" transform="translate(0.000000 -3.753095) translate(0 -4.444)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="673.2" transform="rotate(-0 432 673.2)">Nonconventional example has roots at 10% and 20%. Multiple sign changes permit, but do not guarantee, multiple positive roots.</text>
   </g>
  </g>

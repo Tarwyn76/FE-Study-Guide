@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="947.200pt" height="537.681pt" viewBox="16.720000 11.374294 947.200000 537.680553" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="839.983pt" height="492.089pt" viewBox="24.017000 83.298000 839.983000 492.088884" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,10 +21,10 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(3.157333 -74.195023)">
+  <g id="axes_1" transform="translate(-6.299872 -1.399509)">
    <g id="text_1">
     <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(748.025203 199.800102)">Ideal A ⇌ B</text>
-    <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(688.759578 233.493461)"><tspan style="font-size: 25.000px">K=4; ξ</tspan><tspan style="font-size: 18.000px" dy="6.000px">eq</tspan><tspan style="font-size: 25.000px" dy="-6.000px">​</tspan><tspan style="font-size: 25.000px">=0.80 mol</tspan></text>
+    <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(688.759578 233.493461)"><tspan font-size="25.000px">K=4; ξ</tspan><tspan font-size="17.000px" dy="6.000px">eq</tspan><tspan font-size="25.000px" dy="-6.000px">=0.80 mol</tspan></text>
    </g>
    <g id="text_2">
     
@@ -77,7 +77,7 @@
     </g>
    </g>
   </g>
-  <g id="axes_2" transform="translate(3.157333 -74.195023)">
+  <g id="axes_2" transform="translate(-6.299872 -1.399509)">
    <g id="patch_2">
     <path d="M 80.64 496.8  L 665.28 496.8  L 665.28 129.6  L 80.64 129.6  z " style="fill: #ffffff" />
    </g>
@@ -314,13 +314,13 @@
    </g>
   </g>
   <g id="text_21">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Reaction equilibrium minimizes Gibbs energy at the allowed reaction extent</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="110.723" transform="rotate(-0 55.44 110.723)">Reaction equilibrium minimizes Gibbs energy at the allowed reaction extent</text>
   </g>
   <g id="text_22">
 </g>
-  <g id="text_23" transform="translate(0.000000 -142.075576)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(132.34375 656.3625)"><tspan style="font-size: 10.000px">Fixed T/P, ideal mixture, one-to-one reaction, initial pure A. Activities are mole fractions for this chosen standard state, Q=x</tspan><tspan style="font-size: 7.200px" dy="2.400px">B</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">/x</tspan><tspan style="font-size: 7.200px" dy="2.400px">A</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">. ΔG°_r/(RT)=−ln4</tspan></text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(141.010937 669.358125)"><tspan style="font-size: 10.000px">produces the minimum at x</tspan><tspan style="font-size: 7.200px" dy="2.400px">B</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=0.8. Extent is constrained by nonnegative species amounts; catalysts change rate, not the equilibrium minimum.</tspan></text>
+  <g id="text_23">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(132.34375 656.3625)"><tspan font-size="10.000px">Fixed T/P, ideal mixture, one-to-one reaction, initial pure A. Activities are mole fractions for this chosen standard state, Q=x</tspan><tspan font-size="6.800px" dy="2.400px">B</tspan><tspan font-size="10.000px" dy="-2.400px">/x</tspan><tspan font-size="6.800px" dy="2.400px">A</tspan><tspan font-size="10.000px" dy="-2.400px">. ΔG°</tspan><tspan font-size="6.800px" dy="2.400px">r</tspan><tspan font-size="10.000px" dy="-2.400px">/(RT)=−ln4</tspan></text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(141.010937 669.358125)"><tspan font-size="10.000px">produces the minimum at x</tspan><tspan font-size="6.800px" dy="2.400px">B</tspan><tspan font-size="10.000px" dy="-2.400px">=0.8. Extent is constrained by nonnegative species amounts; catalysts change rate, not the equilibrium minimum.</tspan></text>
   </g>
  </g>
  <defs>

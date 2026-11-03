@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="948.960pt" height="642.240pt" viewBox="28.080000 12.240000 948.960000 642.240000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="931.000pt" height="615.335pt" viewBox="37.000000 90.665227 931.000000 615.334773" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 792  L 1008 792  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(0.840000 -77.268293)">
+  <g id="axes_1" transform="translate(-0.775833 -1.551637)">
    <g id="patch_2">
     <path d="M 127.2096 575.388  L 880.7904 575.388  L 880.7904 165.528  L 127.2096 165.528  z " clip-path="url(#pf198b8289c)" style="fill: #f7f9fa; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -122,10 +122,10 @@
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="635.55475" transform="rotate(-0 504 635.55475)">Configuration selects LUT functions, routing connections, and I/O behavior.</text>
    </g>
   </g>
-  <g id="text_11">
+  <g id="text_11" transform="translate(0 77.0000)">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="43.56" transform="rotate(-0 55.44 43.56)">An FPGA combines programmable logic, state, routing, I/O, and clocks</text>
   </g>
-  <g id="text_13" transform="translate(0.000000 -114.222694)">
+  <g id="text_13" transform="translate(0 -55.0000)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 717.097875)">Conceptual FPGA fabric, not a particular vendor floorplan. LUTs implement combinational truth tables; flip-flops hold state. Clock networks distribute</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 729.815375)">clock signals with controlled skew. Real devices may add block RAM, DSP, processors, and transceivers; routing includes selectable switches not</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 742.532875)">individually drawn.</text>

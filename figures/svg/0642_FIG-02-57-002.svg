@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="793.000pt" height="536.501pt" viewBox="35.500000 10.500000 793.000000 536.500700" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="796.343pt" height="538.279pt" viewBox="33.829000 65.547000 796.343000 538.278851" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -60.146242)">
+  <g id="axes_1" transform="translate(-0.000000 -3.318062)">
    <g id="patch_2">
     <path d="M 270.5184 358.992  L 593.4816 358.992  L 593.4816 251.6832  L 270.5184 251.6832  z " clip-path="url(#pe29c623d03)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -32,7 +32,7 @@
     <path d="M 478.1376 193.5576  L 816.48 193.5576  L 816.48 113.076  L 478.1376 113.076  z " clip-path="url(#pe29c623d03)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
    <g id="text_1">
-    <text style="font-size: 28px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="312.674475" transform="rotate(-0 432 312.674475)"><tspan style="font-size: 28.000px">Nu=hL/k</tspan><tspan style="font-size: 20.160px" dy="6.720px">fluid</tspan><tspan style="font-size: 28.000px" dy="-6.720px">​</tspan></text>
+    <text style="font-size: 28px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="312.674475" transform="rotate(-0 432 312.674475)"><tspan font-size="28.000px">Nu=hL/k</tspan><tspan font-size="19.040px" dy="6.720px">fluid</tspan></text>
    </g>
    <g id="text_2">
     <text style="font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="216.6912" y="158.559613" transform="rotate(-0 216.6912 158.559613)">Re=UL/ν: inertial / viscous</text>
@@ -44,7 +44,7 @@
     <text style="font-size: 26px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="451.119175" transform="rotate(-0 432 451.119175)">Nu=f(Re,Pr, geometry, boundary conditions)</text>
    </g>
    <g id="text_5">
-    <text style="font-size: 28px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="536.234475" transform="rotate(-0 432 536.234475)"><tspan style="font-size: 28.000px">h=Nu k</tspan><tspan style="font-size: 20.160px" dy="6.720px">fluid</tspan><tspan style="font-size: 28.000px" dy="-6.720px">​</tspan><tspan style="font-size: 28.000px">/L</tspan></text>
+    <text style="font-size: 28px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="536.234475" transform="rotate(-0 432 536.234475)"><tspan font-size="28.000px">h=Nu k</tspan><tspan font-size="19.040px" dy="6.720px">fluid</tspan><tspan font-size="28.000px" dy="-6.720px">/L</tspan></text>
    </g>
    <g id="patch_5">
     <path d="M 218.522314 194.371798  Q 282.053824 222.620855 343.848622 250.097689  " clip-path="url(#pe29c623d03)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round" />
@@ -56,9 +56,9 @@
    </g>
   </g>
   <g id="text_6">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Nusselt, Reynolds, and Prandtl numbers organize convection correlations</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="93.117" transform="rotate(-0 47.52 93.117)">Nusselt, Reynolds, and Prandtl numbers organize convection correlations</text>
   </g>
-  <g id="text_8" transform="translate(0.000000 -78.652778)">
+  <g id="text_8" transform="translate(0.000000 -21.899211)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(109.964844 590.616625)">Use fluid thermal conductivity in Nu. Select local versus average correlation, characteristic length, laminar/turbulent regime and</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(124.313281 603.334125)">property evaluation temperature consistently. A dimensionless relation is not one universal correlation for every geometry.</text>
   </g>

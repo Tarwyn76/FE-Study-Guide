@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1080.000pt" height="321.029pt" viewBox="0.000000 14.662379 1080.000000 321.028939" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1048.320pt" height="319.738pt" viewBox="31.680000 163.440000 1048.320000 319.737600" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,8 +21,8 @@
   <g id="patch_1">
    <path d="M 0 720  L 1080 720  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-16.650000 -144.900000)" />
-  <g id="axes_2" transform="translate(-16.650000 -144.900000)">
+  <g id="axes_1" transform="translate(-1.310400 0.000000)" />
+  <g id="axes_2" transform="translate(-1.310400 0.000000)">
    <g id="patch_2">
     <path d="M 64.8 363.6  L 51.84 380.448  L 77.76 380.448  z " clip-path="url(#p35457b7c80)" style="fill: #edf3f6; stroke: #23313d; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -54,7 +54,7 @@
     <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="194.4" y="212.219063" transform="rotate(-0 194.4 212.219063)">STABLE TRIANGLE</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(-16.650000 -144.900000)">
+  <g id="axes_3" transform="translate(-1.310400 0.000000)">
    <g id="patch_6">
     <path d="M 421.2 363.6  L 408.24 380.448  L 434.16 380.448  z " clip-path="url(#p3077bdc488)" style="fill: #edf3f6; stroke: #23313d; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -99,7 +99,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="550.8" y="392.83125" transform="rotate(-0 550.8 392.83125)">Horizontal rigid-body freedom</text>
    </g>
   </g>
-  <g id="axes_4" transform="translate(-16.650000 -144.900000)">
+  <g id="axes_4" transform="translate(-1.310400 0.000000)">
    <g id="patch_13">
     <path d="M 777.6 363.6  L 764.64 380.448  L 790.56 380.448  z " clip-path="url(#p88d3b9d240)" style="fill: #edf3f6; stroke: #23313d; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -132,9 +132,11 @@
    </g>
   </g>
   <g id="text_6">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="39.6" transform="rotate(-0 59.4 39.6)">Support restraint and member arrangement must both prevent structural mechanisms</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="188.488106" transform="rotate(-0 59.4 188.488106)">Support restraint and member arrangement must both prevent structural mechanisms</text>
   </g>
-  <g id="text_8" transform="translate(0.000000 -361.800000)">
+  <g id="text_7">
+   </g>
+  <g id="text_8" transform="translate(0.000000 -214.032000)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(145.909375 650.281875)">Ideal planar pin-jointed examples. Stable triangle has pin/roller supports; two horizontal-surface rollers leave horizontal rigid-body motion. Unbraced four-bar</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(114.480469 662.999375)">rectangle can shear internally despite externally adequate supports. Reaction/member counts are necessary bookkeeping but do not establish stability without geometry</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(481.032812 675.716875)">and connection checks.</text>

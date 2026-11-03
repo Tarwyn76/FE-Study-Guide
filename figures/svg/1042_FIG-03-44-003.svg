@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="921.600pt" height="643.680pt" viewBox="29.520000 12.240000 921.600000 643.680000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="901.550pt" height="628.000pt" viewBox="38.000000 88.000000 901.550000 628.000000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 792  L 1008 792  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-4.620000 -75.588547)">
+  <g id="axes_1" transform="translate(-15.545833 0.000000)">
    <g id="patch_2">
     <path d="M 459.144 176.4576  L 548.856 176.4576  L 593.712 258.4296  L 414.288 258.4296  z " clip-path="url(#p4ea2d6a067)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.5; stroke-linejoin: miter" />
    </g>
@@ -61,10 +61,10 @@
     <text style="font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="764.1648" y="657.138012" transform="rotate(-0 764.1648 657.138012)">Greater capacity • lower cost/bit</text>
    </g>
   </g>
-  <g id="text_7">
+  <g id="text_7" transform="translate(0 75.0000)">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="43.56" transform="rotate(-0 55.44 43.56)">Memory hierarchy trades access speed against capacity and cost per bit</text>
   </g>
-  <g id="text_9" transform="translate(0.000000 -106.663839)">
+  <g id="text_9" transform="translate(0 -39.0000)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 723.456625)">Conceptual ordering rather than quantitative geometry or fixed latency values. Temporal and spatial locality make caching effective. Registers/cache/RAM</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 736.174125)">are ordinarily volatile; storage is nonvolatile. Technology, workloads, and architecture determine actual capacity, cost, and latency.</text>
   </g>

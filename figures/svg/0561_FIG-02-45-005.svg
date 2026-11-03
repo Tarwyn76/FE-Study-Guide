@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="740.357pt" height="439.363pt" viewBox="36.000000 10.071617 740.357143 439.362917" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="744.086pt" height="439.060pt" viewBox="35.054000 119.026127 744.085611 439.059768" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,13 +21,13 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-4.687500 -110.579662)">
+  <g id="axes_1" transform="translate(-1.883080 -1.883560)">
    <g id="text_1">
-    <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(303.671875 460.128445)"><tspan style="font-size: 25.000px">h</tspan><tspan style="font-size: 18.000px" dy="6.000px">minor</tspan><tspan style="font-size: 25.000px" dy="-6.000px">​</tspan><tspan style="font-size: 25.000px">=Σ Kᵢūᵢ²/(2g)</tspan></text>
-    <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(88.742187 494.517117)"><tspan style="font-size: 25.000px">Same diameter, ū=2 m/s: ΣK=3.8 → h</tspan><tspan style="font-size: 18.000px" dy="6.000px">minor</tspan><tspan style="font-size: 25.000px" dy="-6.000px">​</tspan><tspan style="font-size: 25.000px">=0.775 m</tspan></text>
+    <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(303.671875 460.128445)"><tspan font-size="25.000px">h</tspan><tspan font-size="17.000px" dy="6.000px">minor</tspan><tspan font-size="25.000px" dy="-6.000px">=Σ Kᵢūᵢ²/(2g)</tspan></text>
+    <text style="font-size: 25px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(88.742187 494.517117)"><tspan font-size="25.000px">Same diameter, ū=2 m/s: ΣK=3.8 → h</tspan><tspan font-size="17.000px" dy="6.000px">minor</tspan><tspan font-size="25.000px" dy="-6.000px">=0.775 m</tspan></text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-4.687500 -110.579662)">
+  <g id="axes_2" transform="translate(-1.883080 -1.883560)">
    <g id="line2d_1">
     <path d="M 171.421277 343.853617  L 345.140426 343.853617  L 345.140426 228.040851  L 634.67234 228.040851  L 634.67234 343.853617  L 692.578723 343.853617  " clip-path="url(#p0b195fd00b)" style="fill: none; stroke: #235a78; stroke-width: 14" />
    </g>
@@ -52,9 +52,9 @@
    </g>
   </g>
   <g id="text_5">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Fittings add head-loss terms using each fitting’s local reference velocity</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="143.798" transform="rotate(-0 47.52 143.798)">Fittings add head-loss terms using each fitting’s local reference velocity</text>
   </g>
-  <g id="text_7" transform="translate(0.000000 -172.429303)">
+  <g id="text_7" transform="translate(0.000000 -64.041026)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(102.592187 590.616625)">K values here are illustrative given coefficients, not design recommendations for unspecified hardware. Use the velocity associated</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(287.930469 603.334125)">with each coefficient; add straight-pipe losses separately.</text>
   </g>

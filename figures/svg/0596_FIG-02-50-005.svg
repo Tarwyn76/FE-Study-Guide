@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="782.250pt" height="487.747pt" viewBox="18.250000 10.500000 782.250000 487.746547" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="777.519pt" height="488.331pt" viewBox="16.425000 68.513106 777.519000 488.330973" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,12 +21,12 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(6.192812 -60.609828)">
+  <g id="axes_1" transform="translate(-0.000000 -1.296508)">
    <g id="text_1">
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="678.0672" y="186.490563" transform="rotate(-0 678.0672 186.490563)">Pv=RT=100 kJ/kg</text>
    </g>
    <g id="text_2">
-    <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(569.440012 294.994119)"><tspan style="font-size: 26.000px">w</tspan><tspan style="font-size: 18.720px" dy="6.240px">b</tspan><tspan style="font-size: 26.000px" dy="-6.240px">​</tspan><tspan style="font-size: 26.000px">=RT ln(v₂/v₁)</tspan></text>
+    <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(569.440012 294.994119)"><tspan font-size="26.000px">w</tspan><tspan font-size="17.680px" dy="6.240px">b</tspan><tspan font-size="26.000px" dy="-6.240px">=RT ln(v₂/v₁)</tspan></text>
     <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(618.106731 330.758337)">=100 ln2</text>
     <text style="font-size: 26px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(575.137669 365.799431)">=+69.315 kJ/kg</text>
    </g>
@@ -34,7 +34,7 @@
     <text style="font-size: 24px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="678.0672" y="490.8081" transform="rotate(-0 678.0672 490.8081)">Ideal gas: Δu=0</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(6.192812 -60.609828)">
+  <g id="axes_2" transform="translate(-0.000000 -1.296508)">
    <g id="patch_2">
     <path d="M 69.12 453.6  L 561.6 453.6  L 561.6 116.64  L 69.12 116.64  z " style="fill: #ffffff" />
    </g>
@@ -259,10 +259,10 @@
    </g>
   </g>
   <g id="text_20">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Ideal-gas isothermal expansion gives logarithmic boundary work</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="94.880" transform="rotate(-0 47.52 94.880)">Ideal-gas isothermal expansion gives logarithmic boundary work</text>
   </g>
-  <g id="text_22" transform="translate(0.000000 -125.781686)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(85.1875 590.477562)"><tspan style="font-size: 10.000px">Quasiequilibrium ideal-gas isothermal process. With only boundary work and negligible KE/PE change, q=w</tspan><tspan style="font-size: 7.200px" dy="2.400px">b</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">. Constant temperature does</tspan></text>
+  <g id="text_22" transform="translate(0.000000 -66.770143)">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(85.1875 590.477562)"><tspan font-size="10.000px">Quasiequilibrium ideal-gas isothermal process. With only boundary work and negligible KE/PE change, q=w</tspan><tspan font-size="6.800px" dy="2.400px">b</tspan><tspan font-size="10.000px" dy="-2.400px">. Constant temperature does</tspan></text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(296.028906 603.473187)">not imply constant internal energy for every real fluid.</text>
   </g>
  </g>

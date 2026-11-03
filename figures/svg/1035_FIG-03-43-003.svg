@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1010.571pt" height="651.857pt" viewBox="30.857143 16.971429 1010.571429 651.857143" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="988.000pt" height="638.000pt" viewBox="42.000000 97.000000 988.000000 638.000000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,8 +21,8 @@
   <g id="patch_1">
    <path d="M 0 864  L 1080 864  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(0.900000 -78.300000)" />
-  <g id="axes_2" transform="translate(0.900000 -78.300000)">
+  <g id="axes_1" transform="translate(-3.293333 0.000000)" />
+  <g id="axes_2" transform="translate(-3.293333 0.000000)">
    <g id="patch_2">
     <path d="M 92.016 291.5136  L 196.56 291.5136  L 196.56 216.864  L 92.016 216.864  z " clip-path="url(#pb13ee5ae25)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -72,7 +72,7 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="68.256" y="358.086388" transform="rotate(-0 68.256 358.086388)">CLK</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(0.900000 -78.300000)">
+  <g id="axes_3" transform="translate(-3.293333 0.000000)">
    <g id="patch_5">
     <path d="M 621.216 291.5136  L 725.76 291.5136  L 725.76 216.864  L 621.216 216.864  z " clip-path="url(#pfdfe90f8ba)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -119,7 +119,7 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="597.456" y="358.086388" transform="rotate(-0 597.456 358.086388)">CLK</text>
    </g>
   </g>
-  <g id="axes_4" transform="translate(0.900000 -78.300000)">
+  <g id="axes_4" transform="translate(-3.293333 0.000000)">
    <g id="patch_8">
     <path d="M 162 648  L 993.6 648  L 993.6 457.92  L 162 457.92  z " style="fill: #ffffff" />
    </g>
@@ -308,10 +308,10 @@
     </g>
    </g>
   </g>
-  <g id="text_32">
+  <g id="text_32" transform="translate(0 80.0000)">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="47.52" transform="rotate(-0 59.4 47.52)">Synchronous counters share a clock; ripple counters cascade clock events</text>
   </g>
-  <g id="text_34" transform="translate(0.000000 -160.200000)">
+  <g id="text_34" transform="translate(0 -86.0000)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 789.552625)">Up-counter sequence000…111 repeats; state labels are Q2 Q1 Q0. Synchronous toggles require T0=1,T1=Q0,T2=Q0Q1. In ripple form, falling Q of one stage</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 802.270125)">clocks the next. Idealized per-stage delay0.06 event units illustrates transient invalid ripple states; it is not a device specification.</text>
   </g>

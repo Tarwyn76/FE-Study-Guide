@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1054.543pt" height="606.917pt" viewBox="12.342857 13.881207 1054.542857 606.917235" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1023.840pt" height="562.320pt" viewBox="28.800000 111.960000 1023.840000 562.320000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 792  L 1080 792  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.900000 -90.000000)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 59.4 619.1064  L 501.552 619.1064  L 501.552 493.416  L 59.4 493.416  z " clip-path="url(#pf7b9b6eefa)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -39,7 +39,7 @@
     <text style="font-size: 18px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(703.330312 585.487294)">Cast-in-place concrete</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-0.900000 -90.000000)">
+  <g id="axes_2">
    <g id="patch_4">
     <path d="M 121.392 388.08  L 423.252 388.08  L 423.252 229.68  L 121.392 229.68  z " clip-path="url(#p36698e57d3)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.5; stroke-linejoin: miter" />
    </g>
@@ -78,7 +78,7 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #235a78" x="260.712" y="264.947187" transform="rotate(-0 260.712 264.947187)">1</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(-0.900000 -90.000000)">
+  <g id="axes_3">
    <g id="patch_9">
     <path d="M 628.128 315.8496  L 976.428 315.8496  L 976.428 281.6352  L 628.128 281.6352  z " clip-path="url(#p48fec2a344)" style="fill: #dae3e8; stroke: #23313d; stroke-linejoin: miter" />
    </g>
@@ -101,12 +101,14 @@
    </g>
   </g>
   <g id="text_11">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="43.56" transform="rotate(-0 59.4 43.56)">Coordinated drawings connect one element’s plan, section, detail, and specification</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="138.383962" transform="rotate(-0 59.4 138.383962)">Coordinated drawings connect one element’s plan, section, detail, and specification</text>
   </g>
-  <g id="text_13" transform="translate(0.000000 -145.800000)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(131.714062 716.305875)">Original illustrative drawing-coordination graphic for a slab; quantity14.4 m³ matches947. A–A denotes the section cut; detail bubble1 references a separate detail</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(124.3375 729.023375)">sheet and schedule S1 identifies the element. Specification03 30 00 is a common concrete section locator, not a supplied project specification. Reinforcement, cover,</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(326.542187 741.740875)">joints and material grade remain unspecified; this is not a construction-ready design.</text>
+  <g id="text_12">
+   </g>
+  <g id="text_13">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(131.714 635.320755)">Original illustrative drawing-coordination graphic for a slab; quantity14.4 m³ matches947. A–A denotes the section cut; detail bubble1 references a separate detail</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(124.338 648.038255)">sheet and schedule S1 identifies the element. Specification03 30 00 is a common concrete section locator, not a supplied project specification. Reinforcement, cover,</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(326.542 660.755755)">joints and material grade remain unspecified; this is not a construction-ready design.</text>
   </g>
  </g>
  <defs>

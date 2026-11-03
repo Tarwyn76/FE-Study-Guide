@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="885.857pt" height="583.621pt" viewBox="18.051429 6.016713 885.857143 583.621170" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="843.520pt" height="496.273pt" viewBox="9.840000 98.289000 843.520000 496.273042" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 936 720  L 936 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(36.660000 -85.807151)">
+  <g id="axes_1">
    <g id="text_1">
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="732.0456" y="177.77875" transform="rotate(-0 732.0456 177.77875)">SEb = Sₑ / √Sxx</text>
    </g>
@@ -32,12 +32,12 @@
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(672.341069 457.419195)">Coefficient CI:</text>
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(620.998413 480.33068)">estimate ± tα/2,n−2 × SE</text>
    </g>
-   <g id="text_4">
+   <g id="text_4" transform="translate(0.000000 -82.210279)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(189.790625 643.372703)">Classical intervals assume independent normal errors with constant variance and a correct linear mean model.</text>
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(214.000781 656.850047)">The intercept at x = 0 lies outside these observed x values; interpret its physical meaning cautiously.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(36.660000 -85.807151)">
+  <g id="axes_2">
    <g id="patch_2">
     <path d="M 46.8 504  L 533.52 504  L 533.52 144  L 46.8 144  z " style="fill: #ffffff" />
    </g>
@@ -257,7 +257,7 @@
     </g>
    </g>
   </g>
-  <g id="text_22">
+  <g id="text_22" transform="translate(0 89.459)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="42.12" y="36" transform="rotate(-0 42.12 36)">Slope and intercept have different standard errors</text>
   </g>
   </g>

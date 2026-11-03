@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1053.771pt" height="589.180pt" viewBox="13.114286 14.652386 1053.771429 589.180136" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1020.960pt" height="558.000pt" viewBox="40.320000 114.840000 1020.960000 558.000000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,12 +21,12 @@
   <g id="patch_1">
    <path d="M 0 792  L 1080 792  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-10.800000 -92.700000)">
+  <g id="axes_1">
    <g id="text_1">
     <text style="font-size: 24px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="540" y="625.7289" transform="rotate(-0 540 625.7289)">At equilibrium, drift balances diffusion; net current is zero</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-10.800000 -92.700000)">
+  <g id="axes_2">
    <g id="patch_2">
     <path d="M 54 407.3256  L 199.8 407.3256  L 199.8 265.8744  L 54 265.8744  z " clip-path="url(#p4d08dd25cd)" style="fill: #f1e5dd; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -61,7 +61,7 @@
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #235a78" x="322.92" y="364.729087" transform="rotate(-0 322.92 364.729087)">−</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(-10.800000 -92.700000)">
+  <g id="axes_3">
    <g id="patch_4">
     <path d="M 405 407.3256  L 550.8 407.3256  L 550.8 265.8744  L 405 265.8744  z " clip-path="url(#p7fbd0d141a)" style="fill: #f1e5dd; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -107,7 +107,7 @@
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="550.8" y="493.6334" transform="rotate(-0 550.8 493.6334)">holes →     ← electrons</text>
    </g>
   </g>
-  <g id="axes_4" transform="translate(-10.800000 -92.700000)">
+  <g id="axes_4">
    <g id="patch_8">
     <path d="M 756 407.3256  L 901.8 407.3256  L 901.8 265.8744  L 756 265.8744  z " clip-path="url(#pcad8628aef)" style="fill: #f1e5dd; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -153,11 +153,13 @@
    </g>
   </g>
   <g id="text_31">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="43.56" transform="rotate(-0 59.4 43.56)">Diffusion exposes fixed ions and builds an electric field across the depletion region</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="141.704717" transform="rotate(-0 59.4 141.704717)">Diffusion exposes fixed ions and builds an electric field across the depletion region</text>
   </g>
-  <g id="text_33" transform="translate(0.000000 -155.700000)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(152.782031 722.664625)">p region is left, n right. Holes initially diffuse p→n, electrons n→p. Uncovered acceptor ions on p side are negative; donor ions on n side positive, so built-in</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(139.596094 735.382125)">field points n→p. Depletion means reduced mobile carrier density, not absence of all charge. Panels are conceptual stages, not a simulated formation transient.</text>
+  <g id="text_32">
+   </g>
+  <g id="text_33">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(152.782 646.943396)">p region is left, n right. Holes initially diffuse p→n, electrons n→p. Uncovered acceptor ions on p side are negative; donor ions on n side positive, so built-in</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(139.596 659.660896)">field points n→p. Depletion means reduced mobile carrier density, not absence of all charge. Panels are conceptual stages, not a simulated formation transient.</text>
   </g>
  </g>
  <defs>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="699.789pt" height="510.365pt" viewBox="15.274286 1.131631 699.788571 510.365422" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="643.933pt" height="504.973pt" viewBox="23.200000 28.452000 643.933029 504.973315" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 576  L 792 576  L 792 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(32.670000 -25.731959)">
+  <g id="axes_1" transform="translate(-13.318200 0.000000)">
    <g id="patch_2">
     <path d="M 64.4688 92.016  L 230.2344 92.016  L 230.2344 165.2832  L 64.4688 165.2832  z " clip-path="url(#p0a9fc021d0)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -77,7 +77,7 @@
    <g id="text_8">
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="396" y="81.865588" transform="rotate(-0 396 81.865588)">P = pass; F = fail</text>
    </g>
-   <g id="text_9">
+   <g id="text_9" transform="translate(0.000000 -7.607594)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="396" y="520.640975" transform="rotate(-0 396 520.640975)">X = number of failures. Multiple physical outcomes may map to one numerical value.</text>
    </g>
    <g id="PathCollection_1">
@@ -99,7 +99,7 @@
     </g>
    </g>
   </g>
-  <g id="text_10">
+  <g id="text_10" transform="translate(0 26.258)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="35.64" y="28.8" transform="rotate(-0 35.64 28.8)">A random variable maps outcomes to numbers</text>
   </g>
   </g>

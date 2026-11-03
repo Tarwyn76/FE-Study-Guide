@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="922.750pt" height="562.053pt" viewBox="27.500000 13.000000 922.750000 562.052644" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="836.318pt" height="511.830pt" viewBox="27.682000 75.849000 836.318000 511.830279" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,10 +21,10 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(1.153437 -63.815143)">
+  <g id="axes_1" transform="translate(-6.620851 -2.090686)">
    <g id="text_1">
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(725.656062 181.987281)">R=10 Ω; L=0.10 H</text>
-    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(699.852937 208.941969)"><tspan style="font-size: 20.000px">C=100 µF; V</tspan><tspan style="font-size: 14.400px" dy="4.800px">rms</tspan><tspan style="font-size: 20.000px" dy="-4.800px">​</tspan><tspan style="font-size: 20.000px">=10 V</tspan></text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(699.852937 208.941969)"><tspan font-size="20.000px">C=100 µF; V</tspan><tspan font-size="13.600px" dy="4.800px">rms</tspan><tspan font-size="20.000px" dy="-4.800px">=10 V</tspan></text>
    </g>
    <g id="text_2">
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(748.434969 320.175617)">f₀=50.33 Hz</text>
@@ -35,7 +35,7 @@
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(700.844812 518.185898)">f₁=43.00; f₂=58.91 Hz</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(1.153437 -63.815143)">
+  <g id="axes_2" transform="translate(-6.620851 -2.090686)">
    <g id="patch_2">
     <path d="M 80.64 295.2  L 665.28 295.2  L 665.28 122.4  L 80.64 122.4  z " style="fill: #ffffff" />
    </g>
@@ -256,7 +256,7 @@
     <path d="M 80.64 295.2  L 665.28 295.2  " style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linejoin: miter; stroke-linecap: square" />
    </g>
   </g>
-  <g id="axes_3" transform="translate(1.153437 -63.815143)">
+  <g id="axes_3" transform="translate(-6.620851 -2.090686)">
    <g id="patch_5">
     <path d="M 80.64 540  L 665.28 540  L 665.28 367.2  L 80.64 367.2  z " style="fill: #ffffff" />
    </g>
@@ -449,7 +449,7 @@
      </g>
     </g>
     <g id="text_35">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="52.733594" y="453.6" transform="rotate(-90 52.733594 453.6)"><tspan style="font-size: 11.000px">I</tspan><tspan style="font-size: 7.920px" dy="2.640px">rms</tspan><tspan style="font-size: 11.000px" dy="-2.640px">​</tspan><tspan style="font-size: 11.000px"> (A)</tspan></text>
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="52.733594" y="453.6" transform="rotate(-90 52.733594 453.6)"><tspan font-size="11.000px">I</tspan><tspan font-size="7.480px" dy="2.640px">rms</tspan><tspan font-size="11.000px" dy="-2.640px"> (A)</tspan></text>
     </g>
    </g>
    <g id="line2d_61">
@@ -478,11 +478,11 @@
    </g>
   </g>
   <g id="text_37">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Series resonance minimizes impedance and maximizes current</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="103.279" transform="rotate(-0 55.44 103.279)">Series resonance minimizes impedance and maximizes current</text>
   </g>
-  <g id="text_39" transform="translate(0.000000 -118.404000)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(99.024219 656.26)"><tspan style="font-size: 10.000px">Ideal series RLC with frequency-independent R and source RMS voltage. At resonance X</tspan><tspan style="font-size: 7.200px" dy="2.400px">L</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">+X</tspan><tspan style="font-size: 7.200px" dy="2.400px">C</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=0, |Z|=R and I</tspan><tspan style="font-size: 7.200px" dy="2.400px">max</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=1 A. Half-power frequencies satisfy |Z|=√2R</tspan></text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(366.0375 669.973125)"><tspan style="font-size: 10.000px">and I=I</tspan><tspan style="font-size: 7.200px" dy="2.400px">max</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">/√2; their difference is bandwidth. Q=f₀/Δf.</tspan></text>
+  <g id="text_39">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(99.024219 656.26)"><tspan font-size="10.000px">Ideal series RLC with frequency-independent R and source RMS voltage. At resonance X</tspan><tspan font-size="6.800px" dy="2.400px">L</tspan><tspan font-size="10.000px" dy="-2.400px">+X</tspan><tspan font-size="6.800px" dy="2.400px">C</tspan><tspan font-size="10.000px" dy="-2.400px">=0, |Z|=R and I</tspan><tspan font-size="6.800px" dy="2.400px">max</tspan><tspan font-size="10.000px" dy="-2.400px">=1 A. Half-power frequencies satisfy |Z|=√2R</tspan></text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(366.0375 669.973125)"><tspan font-size="10.000px">and I=I</tspan><tspan font-size="6.800px" dy="2.400px">max</tspan><tspan font-size="10.000px" dy="-2.400px">/√2; their difference is bandwidth. Q=f₀/Δf.</tspan></text>
   </g>
  </g>
  <defs>

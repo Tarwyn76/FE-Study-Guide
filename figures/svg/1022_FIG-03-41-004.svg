@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="951.120pt" height="560.160pt" viewBox="28.080000 15.120000 951.120000 560.160000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="921.984pt" height="526.660pt" viewBox="43.008000 118.551000 921.984000 526.660000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 792  L 1008 792  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -94.065748)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 55.44 252.9648  L 324.576 252.9648  L 324.576 154.5984  L 55.44 154.5984  z " clip-path="url(#p1fb0d03bbc)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -92,11 +92,13 @@
    </g>
   </g>
   <g id="text_8">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="43.56" transform="rotate(-0 55.44 43.56)">A CRC appends a polynomial remainder and checks the received syndrome</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="142.390313" transform="rotate(-0 55.44 142.390313)">A CRC appends a polynomial remainder and checks the received syndrome</text>
   </g>
-  <g id="text_10" transform="translate(0.000000 -183.932131)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 723.456625)">Generator G(x)=x⁴+x+1; binary polynomial division uses XOR over GF(2). This simple teaching CRC has no reflection, initial-register preset, or final XOR.</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 736.174125)">Zero syndrome means no detected error, not proof that every possible corruption is absent.</text>
+  <g id="text_9">
+   </g>
+  <g id="text_10">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 618.911937)">Generator G(x)=x⁴+x+1; binary polynomial division uses XOR over GF(2). This simple teaching CRC has no reflection, initial-register preset, or final XOR.</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 631.629437)">Zero syndrome means no detected error, not proof that every possible corruption is absent.</text>
   </g>
  </g>
  <defs>

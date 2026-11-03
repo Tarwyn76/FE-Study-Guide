@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="972.000pt" height="750.240pt" viewBox="18.000000 8.640000 972.000000 750.240000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="942.400pt" height="703.050pt" viewBox="32.800000 60.840000 942.400000 703.050116" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 864  L 1008 864  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -43.661808)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 320.544 103.68  L 687.456 103.68  L 687.456 172.368  L 320.544 172.368  z " clip-path="url(#pcdcde55a5f)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -90,11 +90,11 @@
    <g id="text_11">
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="751.6656" y="677.10165" transform="rotate(-0 751.6656 677.10165)">Flexible lifetime hazard → Weibull</text>
    </g>
-   <g id="text_12">
+   <g id="text_12" transform="translate(0.000000 -44.755009)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="779.581775" transform="rotate(-0 504 779.581775)">Selection depends on model assumptions, not only on whether the observations are numbers or measurements.</text>
    </g>
   </g>
-  <g id="text_13">
+  <g id="text_13" transform="translate(0 43.877)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="45.36" y="43.2" transform="rotate(-0 45.36 43.2)">Match the distribution to the quantity and mechanism</text>
   </g>
   </g>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1019.057pt" height="643.163pt" viewBox="30.085714 13.110029 1019.057143 643.162610" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="998.000pt" height="629.000pt" viewBox="41.000000 86.000000 998.000000 629.000000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 792  L 1080 792  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -71.100000)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 59.4 280.2888  L 588.06 280.2888  L 588.06 192.852  L 59.4 192.852  z " clip-path="url(#p7c6867e210)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -69,10 +69,10 @@
     <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="540" y="656.862075" transform="rotate(-0 540 656.862075)">On a set lookup:compare valid tags in all ways, then select the matching block.</text>
    </g>
   </g>
-  <g id="text_10">
+  <g id="text_10" transform="translate(0 73.0000)">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="43.56" transform="rotate(-0 59.4 43.56)">Cache indexing divides an address into tag, set index, and byte offset</text>
   </g>
-  <g id="text_12" transform="translate(0.000000 -106.200000)">
+  <g id="text_12" transform="translate(0 -40.0000)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 723.456625)">Data capacity excludes tags, valid bits, and replacement/dirty metadata. Direct tag=0x12345; two-way tag=0x2468A. A16-byte block requires4 offset bits.</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 736.174125)">Associativity changes the number of sets for fixed capacity and block size; it does not change byte-offset width.</text>
   </g>

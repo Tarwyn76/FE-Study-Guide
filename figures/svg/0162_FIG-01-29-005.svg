@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="820.183pt" height="543.086pt" viewBox="17.280000 3.702857 820.182857 543.085714" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="789.120pt" height="457.353pt" viewBox="12.000000 61.523937 789.120000 457.353047" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(25.920000 -55.440000)">
+  <g id="axes_1" transform="translate(0.328800 0.000000)">
    <g id="text_1">
     <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="691.4592" y="139.394475" transform="rotate(-0 691.4592 139.394475)">E[X] = Σ x f(x)</text>
    </g>
@@ -34,11 +34,11 @@
    <g id="text_4">
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="691.4592" y="432.8938" transform="rotate(-0 691.4592 432.8938)">σ = √variance; CV = σ/μ</text>
    </g>
-   <g id="text_5">
+   <g id="text_5" transform="translate(0.000000 -86.143297)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="585.376175" transform="rotate(-0 432 585.376175)">Example: E[X²] = 1.35, variance = 0.7875, σ = 0.8874. Variance has squared units; σ has original units.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(25.920000 -55.440000)">
+  <g id="axes_2" transform="translate(0.328800 0.000000)">
    <g id="patch_2">
     <path d="M 60.48 453.6  L 483.84 453.6  L 483.84 129.6  L 60.48 129.6  z " style="fill: #ffffff" />
    </g>
@@ -270,7 +270,7 @@
     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start" x="331.371189" y="182.057143" transform="rotate(-0 331.371189 182.057143)">Deviations x − μ</text>
    </g>
   </g>
-  <g id="text_23">
+  <g id="text_23" transform="translate(0 55.080)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="32.4" transform="rotate(-0 38.88 32.4)">Mean locates the center; variance measures spread</text>
   </g>
   </g>

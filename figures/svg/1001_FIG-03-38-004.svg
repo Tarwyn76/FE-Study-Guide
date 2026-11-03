@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="935.280pt" height="543.600pt" viewBox="28.800000 11.520000 935.280000 543.600000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="899.136pt" height="510.555pt" viewBox="43.008000 91.290000 899.136000 510.555000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(9.240000 -68.891482)">
+  <g id="axes_1" transform="translate(-1.873200 0.000000)">
    <g id="text_1">
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(765.565778 216.721437)">Vmax=8 V</text>
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(768.936716 245.971687)">Vmin=4 V</text>
@@ -35,7 +35,7 @@
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(788.346559 559.325844)">λ=2 m</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(9.240000 -68.891482)">
+  <g id="axes_2" transform="translate(-1.873200 0.000000)">
    <g id="patch_2">
     <path d="M 90.72 489.6  L 695.52 489.6  L 695.52 129.6  L 90.72 129.6  z " style="fill: #ffffff" />
    </g>
@@ -307,11 +307,13 @@
    </g>
   </g>
   <g id="text_24">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Voltage maxima and minima repeat every half wavelength</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="114.639655" transform="rotate(-0 55.44 114.639655)">Voltage maxima and minima repeat every half wavelength</text>
   </g>
-  <g id="text_26" transform="translate(0.000000 -137.782964)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 657.391875)">Same 50 Ω line and 100 Ω load as1000. V(d)=V⁺e^(jβd)+V⁻e^(−jβd), d measured from the load toward the source. Max-to-min spacing is λ/4=0.5 m. Envelope is</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 670.109375)">the magnitude of a sinusoidal steady-state phasor, not instantaneous voltage.</text>
+  <g id="text_25">
+   </g>
+  <g id="text_26">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 576.172414)">Same 50 Ω line and 100 Ω load as1000. V(d)=V⁺e^(jβd)+V⁻e^(−jβd), d measured from the load toward the source. Max-to-min spacing is λ/4=0.5 m. Envelope is</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 588.889914)">the magnitude of a sinusoidal steady-state phasor, not instantaneous voltage.</text>
   </g>
  </g>
  <defs>

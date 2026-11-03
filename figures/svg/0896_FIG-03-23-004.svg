@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1006.714pt" height="368.875pt" viewBox="32.400000 14.662379 1006.714286 368.874598" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="969.120pt" height="330.507pt" viewBox="46.080000 142.532887 969.120000 330.507113" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,8 +21,8 @@
   <g id="patch_1">
    <path d="M 0 720  L 1080 720  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(9.000000 -122.400000)" />
-  <g id="axes_2" transform="translate(9.000000 -122.400000)">
+  <g id="axes_1" transform="translate(-0.403800 0.000000)" />
+  <g id="axes_2" transform="translate(-0.403800 0.000000)">
    <g id="patch_2">
     <path d="M 79.92 372.24  L 67.068 388.9476  L 92.772 388.9476  z " clip-path="url(#p10a4711720)" style="fill: #edf3f6; stroke: #23313d; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -52,7 +52,7 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="226.8" y="408.875188" transform="rotate(-0 226.8 408.875188)">Three-hinged two-member frame</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(9.000000 -122.400000)">
+  <g id="axes_3" transform="translate(-0.403800 0.000000)">
    <g id="line2d_4">
     <path d="M 493.714286 379.028571  L 654.171429 258.685714  " clip-path="url(#p755bc9fe0a)" style="fill: none; stroke: #235a78; stroke-width: 2; stroke-linecap: square" />
    </g>
@@ -83,7 +83,7 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="573.942857" y="414.707187" transform="rotate(-0 573.942857 414.707187)">A: (+6.667,+5) kN</text>
    </g>
   </g>
-  <g id="axes_4" transform="translate(9.000000 -122.400000)">
+  <g id="axes_4" transform="translate(-0.403800 0.000000)">
    <g id="line2d_5">
     <path d="M 825.428571 261.771429  L 973.542857 372.857143  " clip-path="url(#p00883aa4fe)" style="fill: none; stroke: #235a78; stroke-width: 2; stroke-linecap: square" />
    </g>
@@ -111,12 +111,14 @@
    </g>
   </g>
   <g id="text_9">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="39.6" transform="rotate(-0 59.4 39.6)">Separating a pin-connected frame reveals equal and opposite hinge forces</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="166.871478" transform="rotate(-0 59.4 166.871478)">Separating a pin-connected frame reveals equal and opposite hinge forces</text>
   </g>
-  <g id="text_11" transform="translate(0.000000 -316.800000)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(107.482031 650.142812)">Special pin-connected frame with two straight inclined two-force members, both bases pinned and apex loaded. Half-span4 m,rise3 m. Assign external10 kN downward load</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(134.06875 662.860312)"><tspan style="font-size: 10.000px">at B to member AB in separated FBDs. Internal hinge forces B</tspan><tspan style="font-size: 7.200px" dy="2.400px">AB</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=(−6.667,+5) kN and B</tspan><tspan style="font-size: 7.200px" dy="2.400px">BC</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=(+6.667,−5) kN are equal/opposite. Combined resultant at B on AB</tspan></text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(264.624219 675.855937)">is(−6.667,−5) kN. No ideal hinge moment; a general loaded frame member need not be a two-force member.</text>
+  <g id="text_10">
+   </g>
+  <g id="text_11">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(107.482 433.367206)">Special pin-connected frame with two straight inclined two-force members, both bases pinned and apex loaded. Half-span4 m,rise3 m. Assign external10 kN downward load</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(134.069 446.084706)"><tspan font-size="10.000px">at B to member AB in separated FBDs. Internal hinge forces B</tspan><tspan font-size="6.800px" dy="2.400px">AB</tspan><tspan font-size="10.000px" dy="-2.400px">=(−6.667,+5) kN and B</tspan><tspan font-size="6.800px" dy="2.400px">BC</tspan><tspan font-size="10.000px" dy="-2.400px">=(+6.667,−5) kN are equal/opposite. Combined resultant at B on AB</tspan></text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(264.624 459.080331)">is(−6.667,−5) kN. No ideal hinge moment; a general loaded frame member need not be a two-force member.</text>
   </g>
  </g>
  <defs>

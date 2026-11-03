@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="801.051pt" height="384.000pt" viewBox="16.045714 4.321543 801.051429 384.000000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="755.520pt" height="379.803pt" viewBox="26.400000 90.957972 755.520000 379.803042" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,8 +21,8 @@
   <g id="patch_1">
    <path d="M 0 576  L 864 576  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(25.200000 -86.400000)" />
-  <g id="axes_2" transform="translate(25.200000 -86.400000)">
+  <g id="axes_1" transform="translate(-2.518400 0.000000)" />
+  <g id="axes_2" transform="translate(-2.518400 0.000000)">
    <g id="patch_2">
     <path d="M 77.76 408.96  L 768.96 408.96  L 768.96 132.48  L 77.76 132.48  z " style="fill: #ffffff" />
    </g>
@@ -244,10 +244,10 @@
     </g>
    </g>
   </g>
-  <g id="text_20">
+  <g id="text_20" transform="translate(0 86.842)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="28.8" transform="rotate(-0 38.88 28.8)">A sensitivity breakpoint changes the preferred alternative</text>
   </g>
-  <g id="text_22" transform="translate(0.000000 -169.920000)">
+  <g id="text_22" transform="translate(0.000000 -4.410000) translate(0 -80.886)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="538.56" transform="rotate(-0 432 538.56)">A has larger PW for x &lt; 6; B for x &gt; 6. Scenario values do not by themselves supply scenario probabilities.</text>
   </g>
  </g>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="854.126pt" height="480.926pt" viewBox="4.937143 1.234727 854.125714 480.926045" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="830.400pt" height="427.662pt" viewBox="5.280000 58.306303 830.400000 427.662134" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,12 +21,12 @@
   <g id="patch_1">
    <path d="M 0 576  L 864 576  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(11.520000 -54.720000)">
-   <g id="text_1">
+  <g id="axes_1">
+   <g id="text_1" transform="translate(0.000000 -53.965615)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="520.6191" transform="rotate(-0 432 520.6191)">For a positive, continuous, decreasing f, Σ f(n) and ∫ f(x) dx converge or diverge together.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(11.520000 -54.720000)">
+  <g id="axes_2">
    <g id="patch_2">
     <path d="M 51.84 420.48  L 397.44 420.48  L 397.44 115.2  L 51.84 115.2  z " style="fill: #ffffff" />
    </g>
@@ -246,7 +246,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="224.64" y="109.2" transform="rotate(-0 224.64 109.2)">Left rectangles: upper bound</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(11.520000 -54.720000)">
+  <g id="axes_3">
    <g id="patch_11">
     <path d="M 475.2 420.48  L 820.8 420.48  L 820.8 115.2  L 475.2 115.2  z " style="fill: #ffffff" />
    </g>
@@ -460,7 +460,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="648" y="109.2" transform="rotate(-0 648 109.2)">Right rectangles: lower bound</text>
    </g>
   </g>
-  <g id="text_34">
+  <g id="text_34" transform="translate(0 55.503)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="28.8" transform="rotate(-0 38.88 28.8)">The integral test: rectangles bracket area</text>
   </g>
   </g>

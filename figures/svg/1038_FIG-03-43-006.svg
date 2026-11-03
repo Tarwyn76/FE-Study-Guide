@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1018.286pt" height="694.832pt" viewBox="30.857143 11.567673 1018.285714 694.831548" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="998.000pt" height="678.000pt" viewBox="41.000000 71.000000 998.000000 678.000000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 792  L 1080 792  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -57.600000)">
+  <g id="axes_1" transform="translate(-0.000000 -0.831902)">
    <g id="patch_2">
     <path d="M 59.4 280.2888  L 347.76 280.2888  L 347.76 170.9928  L 59.4 170.9928  z " clip-path="url(#pa28be4813b)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -118,10 +118,10 @@
     <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="540" y="690.754625" transform="rotate(-0 540 690.754625)">Positive capture skew helps setup but makes hold more demanding.</text>
    </g>
   </g>
-  <g id="text_16">
+  <g id="text_16" transform="translate(0 58.0000)">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="43.56" transform="rotate(-0 59.4 43.56)">Setup and hold constrain maximum and minimum register-path delays</text>
   </g>
-  <g id="text_18" transform="translate(0.000000 -57.600000)">
+  <g id="text_18" transform="translate(0 -6.0000)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 723.456625)">Same-frequency rising-edge registers; positive skew means later capture clock. Example T=5 ns,tCQ,max/min=0.3/0.1 ns,logic max/min=3.8/0.4 ns,setup=0.5</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 736.174125)">ns,hold=0.2 ns,skew=0.2 ns. Clock uncertainty and jitter are omitted; hold is not repaired merely by increasing the period.</text>
   </g>

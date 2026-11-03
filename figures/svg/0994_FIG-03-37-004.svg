@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="955.800pt" height="643.163pt" viewBox="32.400000 13.110029 955.800000 643.162610" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="934.560pt" height="601.200pt" viewBox="46.080000 83.160000 934.560000 601.200000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 792  L 1080 792  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-5.850000 -61.200000)">
+  <g id="axes_1" transform="translate(-31.930800 0.000000)">
    <g id="text_1">
     <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="290.088" y="138.809825" transform="rotate(-0 290.088 138.809825)">STRAIGHT CONDUCTOR</text>
    </g>
@@ -52,7 +52,7 @@
     </g>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-5.850000 -61.200000)">
+  <g id="axes_2" transform="translate(-31.930800 0.000000)">
    <g id="patch_2">
     <path d="M 280.8 351.836571  C 283.790582 351.836571 286.65908 350.648401 288.77374 348.53374  C 290.888401 346.41908 292.076571 343.550582 292.076571 340.56  C 292.076571 337.569418 290.888401 334.70092 288.77374 332.58626  C 286.65908 330.471599 283.790582 329.283429 280.8 329.283429  C 277.809418 329.283429 274.94092 330.471599 272.82626 332.58626  C 270.711599 334.70092 269.523429 337.569418 269.523429 340.56  C 269.523429 343.550582 270.711599 346.41908 272.82626 348.53374  C 274.94092 350.648401 277.809418 351.836571 280.8 351.836571  z " clip-path="url(#pae25e2fb98)" style="fill: #235a78" />
    </g>
@@ -85,7 +85,7 @@
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="280.8" y="514.123571" transform="rotate(-0 280.8 514.123571)">I out of page (dot): H counterclockwise</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(-5.850000 -61.200000)">
+  <g id="axes_3" transform="translate(-31.930800 0.000000)">
    <g id="line2d_1">
     <path d="M 666.0936 484.4664  L 680.6664 469.8936  " clip-path="url(#p2e99b1455d)" style="fill: none; stroke: #8495a2; stroke-linecap: square" />
    </g>
@@ -201,12 +201,14 @@
    </g>
   </g>
   <g id="text_7">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="43.56" transform="rotate(-0 59.4 43.56)">Current direction sets magnetic circulation, and Iℓ×B sets conductor-force direction</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="110.157547" transform="rotate(-0 59.4 110.157547)">Current direction sets magnetic circulation, and Iℓ×B sets conductor-force direction</text>
   </g>
-  <g id="text_9" transform="translate(0.000000 -109.800000)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(148.267187 716.305875)">Left: infinitely long straight wire with positive current toward the viewer; right-hand circulation is counterclockwise. Right: current in+x,uniform B in−z gives</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(130.759375 729.023375)">force+y. Dot/cross notation indicates out/into page. H in A/m differs from B=μH in tesla. Geometry and force/current arrow lengths are schematic; no realistic hand</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(426.5625 741.740875)">is needed to establish these exact directions.</text>
+  <g id="text_8">
+   </g>
+  <g id="text_9">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(148.267 646.943396)">Left: infinitely long straight wire with positive current toward the viewer; right-hand circulation is counterclockwise. Right: current in+x,uniform B in−z gives</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(130.759 659.660896)">force+y. Dot/cross notation indicates out/into page. H in A/m differs from B=μH in tesla. Geometry and force/current arrow lengths are schematic; no realistic hand</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(426.562 672.378396)">is needed to establish these exact directions.</text>
   </g>
  </g>
  <defs>

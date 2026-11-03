@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1001.200pt" height="595.886pt" viewBox="39.400000 9.958094 1001.200000 595.885689" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="817.934pt" height="569.328pt" viewBox="46.066000 55.291000 817.934000 569.327974" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1080 720  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -46.720044)">
+  <g id="axes_1" transform="translate(-6.475311 -4.768923)">
    <g id="patch_2">
     <path d="M 415.044 388.944  L 684.18 388.944  L 684.18 244.872  L 415.044 244.872  z " clip-path="url(#p4ede853e9a)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -82,11 +82,11 @@
    </g>
   </g>
   <g id="text_8">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="39.6" transform="rotate(-0 59.4 39.6)">Regulatory control, shutdown logic, alarm response, and relief have different functions</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="81.917" transform="rotate(-0 59.4 81.917)">Regulatory control, shutdown logic, alarm response, and relief have different functions</text>
   </g>
   <g id="text_9">
 </g>
-  <g id="text_10" transform="translate(0.000000 -94.274375)">
+  <g id="text_10" transform="translate(0.000000 -74.940218)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(122.952344 650.281875)">Conceptual architecture. A PLC label alone does not establish a safety instrumented function; independence, integrity, proof testing and common-cause risks must be</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(134.530469 662.999375)">evaluated. Alarm protection requires an effective operator response within available time. DCS normal control and safety protection must not be double-counted;</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(448.639844 675.716875)">relief requires separate engineering.</text>

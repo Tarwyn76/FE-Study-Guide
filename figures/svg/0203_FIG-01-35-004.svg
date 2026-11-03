@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="964.800pt" height="648.720pt" viewBox="19.440000 7.920000 964.800000 648.720000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="932.320pt" height="635.644pt" viewBox="4.800000 94.421000 932.320000 635.644000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 792  L 1008 792  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(33.180000 -78.948038)">
+  <g id="axes_1">
    <g id="text_1">
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="843.3936" y="244.6822" transform="rotate(-0 843.3936 244.6822)">R = Sxy / √(Sxx Syy)</text>
    </g>
@@ -37,7 +37,7 @@
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="714.846575" transform="rotate(-0 504 714.846575)">Correlation measures linear association; the symmetric quadratic has R = 0 despite a deterministic relationship.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(33.180000 -78.948038)">
+  <g id="axes_2">
    <g id="patch_2">
     <path d="M 50.4 348.48  L 332.64 348.48  L 332.64 150.48  L 50.4 150.48  z " style="fill: #ffffff" />
    </g>
@@ -287,7 +287,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="191.52" y="144.48" transform="rotate(-0 191.52 144.48)">Positive linear: R = +0.99</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(33.180000 -78.948038)">
+  <g id="axes_3">
    <g id="patch_5">
     <path d="M 393.12 348.48  L 675.36 348.48  L 675.36 150.48  L 393.12 150.48  z " style="fill: #ffffff" />
    </g>
@@ -580,7 +580,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="534.24" y="144.48" transform="rotate(-0 534.24 144.48)">Negative linear: R = -1.00</text>
    </g>
   </g>
-  <g id="axes_4" transform="translate(33.180000 -78.948038)">
+  <g id="axes_4">
    <g id="patch_8">
     <path d="M 50.4 609.84  L 332.64 609.84  L 332.64 411.84  L 50.4 411.84  z " style="fill: #ffffff" />
    </g>
@@ -821,7 +821,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="191.52" y="405.84" transform="rotate(-0 191.52 405.84)">Weak linear: R = +0.01</text>
    </g>
   </g>
-  <g id="axes_5" transform="translate(33.180000 -78.948038)">
+  <g id="axes_5">
    <g id="patch_11">
     <path d="M 393.12 609.84  L 675.36 609.84  L 675.36 411.84  L 393.12 411.84  z " style="fill: #ffffff" />
    </g>
@@ -1114,7 +1114,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="534.24" y="405.84" transform="rotate(-0 534.24 405.84)">Curved: R = +0.00</text>
    </g>
   </g>
-  <g id="text_81">
+  <g id="text_81" transform="translate(0 80.187)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="45.36" y="39.6" transform="rotate(-0 45.36 39.6)">Linear correlation can miss a strong curved relationship</text>
   </g>
   </g>

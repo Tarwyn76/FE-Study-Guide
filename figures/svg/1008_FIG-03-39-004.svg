@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1015.971pt" height="635.451pt" viewBox="30.857143 13.110029 1015.971429 635.450828" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="982.080pt" height="604.080pt" viewBox="36.000000 81.720000 982.080000 604.080000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,8 +21,8 @@
   <g id="patch_1">
    <path d="M 0 792  L 1080 792  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(13.050000 -60.300000)" />
-  <g id="axes_2" transform="translate(13.050000 -60.300000)">
+  <g id="axes_1" transform="translate(-0.409200 0.000000)" />
+  <g id="axes_2" transform="translate(-0.409200 0.000000)">
    <g id="patch_2">
     <path d="M 97.2 388.08  L 475.2 388.08  L 475.2 142.56  L 97.2 142.56  z " style="fill: #ffffff" />
    </g>
@@ -290,7 +290,7 @@
     </g>
    </g>
   </g>
-  <g id="axes_3" transform="translate(13.050000 -60.300000)">
+  <g id="axes_3" transform="translate(-0.409200 0.000000)">
    <g id="patch_8">
     <path d="M 626.4 388.08  L 1004.4 388.08  L 1004.4 142.56  L 626.4 142.56  z " style="fill: #ffffff" />
    </g>
@@ -466,7 +466,7 @@
     <path d="M 626.4 142.56  L 1004.4 142.56  " style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linejoin: miter; stroke-linecap: square" />
    </g>
   </g>
-  <g id="axes_4" transform="translate(13.050000 -60.300000)">
+  <g id="axes_4" transform="translate(-0.409200 0.000000)">
    <g id="patch_13">
     <path d="M 108 609.84  L 993.6 609.84  L 993.6 475.2  L 108 475.2  z " style="fill: #ffffff" />
    </g>
@@ -912,11 +912,13 @@
    </g>
   </g>
   <g id="text_46">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="43.56" transform="rotate(-0 59.4 43.56)">Poles and zeros link a transfer function to time and frequency behavior</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="108.497170" transform="rotate(-0 59.4 108.497170)">Poles and zeros link a transfer function to time and frequency behavior</text>
   </g>
-  <g id="text_48" transform="translate(0.000000 -113.400000)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 723.456625)">Stable causal rational example with real left-half-plane poles and zero. Unit-step response starts at0, overshoots, and tends to H(0)=1/3. The pole-zero</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 736.174125)">plot and response share the same transfer function; input is a unit step and initial conditions are zero.</text>
+  <g id="text_47">
+   </g>
+  <g id="text_48">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 658.566038)">Stable causal rational example with real left-half-plane poles and zero. Unit-step response starts at0, overshoots, and tends to H(0)=1/3. The pole-zero</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 671.283538)">plot and response share the same transfer function; input is a unit step and initial conditions are zero.</text>
   </g>
  </g>
  <defs>

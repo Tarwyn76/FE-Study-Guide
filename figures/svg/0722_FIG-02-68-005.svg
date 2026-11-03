@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="974.250pt" height="553.043pt" viewBox="26.250000 11.750000 974.250000 553.043478" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="838.572pt" height="506.360pt" viewBox="25.428000 82.914243 838.572000 506.359984" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(3.653437 -73.043478)">
+  <g id="axes_1" transform="translate(-6.289290 -2.097719)">
    <g id="text_1">
     
     <g style="fill: #23313d" transform="translate(740.2932 225.324)">
@@ -53,7 +53,7 @@
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(731.736403 568.070977)">63.2% point: θ+τ.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(3.653437 -73.043478)">
+  <g id="axes_2" transform="translate(-6.289290 -2.097719)">
    <g id="patch_2">
     <path d="M 80.64 496.8  L 675.36 496.8  L 675.36 129.6  L 80.64 129.6  z " style="fill: #ffffff" />
    </g>
@@ -324,9 +324,9 @@
    </g>
   </g>
   <g id="text_24">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">A first-order step reaches 63.2% of its final change in one time constant</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="109.806" transform="rotate(-0 55.44 109.806)">A first-order step reaches 63.2% of its final change in one time constant</text>
   </g>
-  <g id="text_26" transform="translate(0.000000 -126.608696)">
+  <g id="text_26">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(130.03125 656.679688)">Zero initial deviation and a unit step. For t≥θ, y=K[1−exp(−(t−θ)/τ)], and y=0 before θ. Gain multiplies final step size; dead time shifts the response</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(343.472656 669.397187)">without changing the time constant. These are ideal LTI models.</text>
   </g>

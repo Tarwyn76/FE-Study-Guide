@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="997.250pt" height="477.919pt" viewBox="46.000000 13.500000 997.250000 477.919219" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="818.534pt" height="451.231pt" viewBox="45.466000 71.687000 818.534000 451.230868" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1080 720  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(0.415521 -58.977217)">
+  <g id="axes_1" transform="translate(-6.821117 -1.364054)">
    <g id="patch_2">
     <path d="M 59.4 344.232  L 205.5024 344.232  L 205.5024 220.032  L 59.4 220.032  z " clip-path="url(#pe6203110cb)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -100,9 +100,9 @@
    </g>
   </g>
   <g id="text_12">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="39.6" transform="rotate(-0 59.4 39.6)">Low-level sensor signals require a compatible excitation and conditioning chain</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="97.058" transform="rotate(-0 59.4 97.058)">Low-level sensor signals require a compatible excitation and conditioning chain</text>
   </g>
-  <g id="text_14" transform="translate(0.000000 -204.343596)">
+  <g id="text_14" transform="translate(0.000000 -169.142750)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(147.442187 650.281875)">Excitation is needed for resistive sensors and bridges; thermocouples and piezoelectric sensors use different front ends. Filter before conversion to suppress</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(113.428125 662.999375)">unwanted frequencies. Isolation is application dependent and may be placed elsewhere in the chain. Blocks represent functions rather than a mandatory physical module</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(525.533594 675.716875)">order.</text>

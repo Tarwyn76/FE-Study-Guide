@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="828.823pt" height="517.166pt" viewBox="16.662857 4.320000 828.822857 517.165714" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="806.400pt" height="438.172pt" viewBox="4.320000 85.920000 806.400000 438.172197" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(24.840000 -79.920000)">
+  <g id="axes_1" transform="translate(1.008000 0.000000)">
    <g id="text_1">
     <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(699.884091 179.974655)">y(0) = 1</text>
     <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(698.181356 200.19067)">y′(0) = 0</text>
@@ -35,11 +35,11 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(689.64495 459.354844)">All roots have</text>
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(675.1362 475.527656)">negative real part.</text>
    </g>
-   <g id="text_4">
+   <g id="text_4" transform="translate(0.000000 -79.997906)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="585.376175" transform="rotate(-0 432 585.376175)">Critical damping is the fastest non-oscillatory return for this family and these initial conditions.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(24.840000 -79.920000)">
+  <g id="axes_2" transform="translate(1.008000 0.000000)">
    <g id="patch_2">
     <path d="M 60.48 460.08  L 630.72 460.08  L 630.72 129.6  L 60.48 129.6  z " style="fill: #ffffff" />
    </g>
@@ -260,7 +260,7 @@
     </g>
    </g>
   </g>
-  <g id="text_22">
+  <g id="text_22" transform="translate(0 79.920)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="32.4" transform="rotate(-0 38.88 32.4)">Damping regimes with the same initial displacement</text>
   </g>
   </g>

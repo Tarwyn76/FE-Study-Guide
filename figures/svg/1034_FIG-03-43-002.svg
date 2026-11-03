@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1015.971pt" height="667.069pt" viewBox="30.085714 12.338851 1015.971429 667.069133" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="995.000pt" height="652.000pt" viewBox="41.000000 78.000000 995.000000 652.000000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 792  L 1080 792  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -64.800000)">
+  <g id="axes_1" transform="translate(-1.658333 -1.659033)">
    <g id="patch_2">
     <path d="M 126.684 307.6128  L 251.64 307.6128  L 251.64 192.852  L 126.684 192.852  z " clip-path="url(#p730688dc7c)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -185,10 +185,10 @@
     <text style="font-size: 18px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(345.996562 673.772625)">SI:1,0,1,1 → Q0…Q3:1000,0100,1010,1101</text>
    </g>
   </g>
-  <g id="text_16">
+  <g id="text_16" transform="translate(0 65.0000)">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="43.56" transform="rotate(-0 59.4 43.56)">A shift register moves serial bits and can load parallel data through input multiplexers</text>
   </g>
-  <g id="text_18" transform="translate(0.000000 -83.700000)">
+  <g id="text_18" transform="translate(0 -25.0000)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 723.456625)">Common rising-edge clock; all MUXes share the Load selector (connection omitted). Shift example: initial Q0 Q1 Q2 Q3=0000, serial inputs1,0,1,1</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 736.174125)">produce1000,0100,1010,1101. Each clock captures old previous-stage data, not a bit rippling through all stages in one edge.</text>
   </g>

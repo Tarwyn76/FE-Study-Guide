@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="871.149pt" height="502.217pt" viewBox="19.388571 4.681115 871.148571 502.216718" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="836.240pt" height="453.822pt" viewBox="31.680000 103.454000 836.240000 453.821516" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,16 +21,16 @@
   <g id="patch_1">
    <path d="M 0 648  L 936 648  L 936 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(10.140000 -95.133574)">
+  <g id="axes_1" transform="translate(-7.665533 0.000000)">
    <g id="text_1">
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(253.67935 483.521125)">DIVERGENCE</text>
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(190.1056 505.084875)">Net flux from a small volume</text>
    </g>
-   <g id="text_2">
+   <g id="text_2" transform="translate(0.000000 -47.391607)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="468" y="585.376175" transform="rotate(-0 468 585.376175)">Shear example F = (−y, 0): curl z-component = +1 (out of the page).</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(10.140000 -95.133574)">
+  <g id="axes_2" transform="translate(-7.665533 0.000000)">
    <g id="patch_2">
     <path d="M 133.942588 243  Q 157.141384 243 178.551326 243  " style="fill: none; stroke: #235a78; stroke-width: 1.6; stroke-linecap: round" />
     <path d="M 174.151326 240.8  L 178.551326 243  L 174.151326 245.2  " style="fill: none; stroke: #235a78; stroke-width: 1.6; stroke-linecap: round" />
@@ -67,7 +67,7 @@
     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="119.34" y="155.1" transform="rotate(-0 119.34 155.1)">Source: ∇·F &gt; 0</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(10.140000 -95.133574)">
+  <g id="axes_3" transform="translate(-7.665533 0.000000)">
    <g id="patch_10">
     <path d="M 372.217412 243  Q 349.018616 243 327.608674 243  " style="fill: none; stroke: #235a78; stroke-width: 1.6; stroke-linecap: round" />
     <path d="M 332.008674 245.2  L 327.608674 243  L 332.008674 240.8  " style="fill: none; stroke: #235a78; stroke-width: 1.6; stroke-linecap: round" />
@@ -104,7 +104,7 @@
     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="311.22" y="155.1" transform="rotate(-0 311.22 155.1)">Sink: ∇·F &lt; 0</text>
    </g>
   </g>
-  <g id="axes_4" transform="translate(10.140000 -95.133574)">
+  <g id="axes_4" transform="translate(-7.665533 0.000000)">
    <g id="patch_18">
     <path d="M 471.6 274.5  L 534.6 274.5  L 534.6 211.5  L 471.6 211.5  L 471.6 274.5  z " clip-path="url(#p366ecd4a85)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #b47722; stroke-linejoin: miter" />
    </g>
@@ -124,7 +124,7 @@
     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="503.1" y="155.1" transform="rotate(-0 503.1 155.1)">Uniform: ∇·F = 0</text>
    </g>
   </g>
-  <g id="axes_5" transform="translate(10.140000 -95.133574)">
+  <g id="axes_5" transform="translate(-7.665533 0.000000)">
    <g id="patch_22">
     <path d="M 805.254545 262.381091  C 811.253729 262.381091 817.008009 259.99759 821.250072 255.755527  C 825.492136 251.513463 827.875636 245.759183 827.875636 239.76  C 827.875636 233.760817 825.492136 228.006537 821.250072 223.764473  C 817.008009 219.52241 811.253729 217.138909 805.254545 217.138909  C 799.255362 217.138909 793.501082 219.52241 789.259019 223.764473  C 785.016955 228.006537 782.633455 233.760817 782.633455 239.76  C 782.633455 245.759183 785.016955 251.513463 789.259019 255.755527  C 793.501082 259.99759 799.255362 262.381091 805.254545 262.381091  L 805.254545 262.381091  z " clip-path="url(#pa8b189e608)" style="fill: none; stroke: #b47722; stroke-linejoin: miter" />
    </g>
@@ -167,7 +167,7 @@
     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="762.84" y="156" transform="rotate(-0 762.84 156)">Shear: ∇×F points outward</text>
    </g>
   </g>
-  <g id="axes_6" transform="translate(10.140000 -95.133574)">
+  <g id="axes_6" transform="translate(-7.665533 0.000000)">
    <g id="patch_30">
     <path d="M 805.254545 482.701091  C 811.253729 482.701091 817.008009 480.31759 821.250072 476.075527  C 825.492136 471.833463 827.875636 466.079183 827.875636 460.08  C 827.875636 454.080817 825.492136 448.326537 821.250072 444.084473  C 817.008009 439.84241 811.253729 437.458909 805.254545 437.458909  C 799.255362 437.458909 793.501082 439.84241 789.259019 444.084473  C 785.016955 448.326537 782.633455 454.080817 782.633455 460.08  C 782.633455 466.079183 785.016955 471.833463 789.259019 476.075527  C 793.501082 480.31759 799.255362 482.701091 805.254545 482.701091  L 805.254545 482.701091  z " clip-path="url(#p816fc00a65)" style="fill: none; stroke: #b47722; stroke-linejoin: miter" />
    </g>
@@ -201,7 +201,7 @@
     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="762.84" y="376.32" transform="rotate(-0 762.84 376.32)">Uniform: ∇×F = 0</text>
    </g>
   </g>
-  <g id="text_9">
+  <g id="text_9" transform="translate(0 97.609)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="42.12" y="32.4" transform="rotate(-0 42.12 32.4)">Divergence measures flux; curl measures local rotation</text>
   </g>
   </g>

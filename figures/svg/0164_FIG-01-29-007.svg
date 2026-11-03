@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="807.223pt" height="568.389pt" viewBox="17.280000 2.468571 807.222857 568.388571" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="765.120pt" height="461.419pt" viewBox="26.400000 36.960000 765.120000 461.419475" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(23.400000 -32.400000)">
+  <g id="axes_1" transform="translate(0.637600 0.000000)">
    <g id="patch_2">
     <path d="M 38.88 144.7308  L 117.504 144.7308  L 117.504 232.308  L 38.88 232.308  z " clip-path="url(#p3c77a05fcd)" style="fill: #dbe9e6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -101,11 +101,11 @@
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(664.073062 430.413406)">Mean np</text>
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(641.7715 457.368094)">Variance npq</text>
    </g>
-   <g id="text_12">
+   <g id="text_12" transform="translate(0.000000 -106.516463)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="585.376175" transform="rotate(-0 432 585.376175)">Number of sequences × probability of each sequence. The pictured outcomes do not determine p.</text>
    </g>
   </g>
-  <g id="text_13">
+  <g id="text_13" transform="translate(0 31.320)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="32.4" transform="rotate(-0 38.88 32.4)">Binomial probability counts sequences of Bernoulli trials</text>
   </g>
   </g>

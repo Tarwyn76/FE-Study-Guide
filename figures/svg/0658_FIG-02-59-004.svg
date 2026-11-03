@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="900.116pt" height="541.112pt" viewBox="43.250000 13.000000 900.116071 541.111650" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="820.714pt" height="492.674pt" viewBox="43.286000 75.559517 820.714000 492.674186" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-24.713542 -63.879955)">
+  <g id="axes_1" transform="translate(-31.118739 -2.735212)">
    <g id="text_1">
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #26776f" x="279.72" y="136.402687" transform="rotate(-0 279.72 136.402687)">PASSIVE REFERENCE</text>
    </g>
@@ -75,7 +75,7 @@
     </g>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-24.713542 -63.879955)">
+  <g id="axes_2" transform="translate(-31.118739 -2.735212)">
    <g id="line2d_1">
     <path d="M 106.785 310.275  L 237.762 310.275  " clip-path="url(#p567682a450)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square" />
    </g>
@@ -121,7 +121,7 @@
     </g>
    </g>
   </g>
-  <g id="axes_3" transform="translate(-24.713542 -63.879955)">
+  <g id="axes_3" transform="translate(-31.118739 -2.735212)">
    <g id="line2d_3">
     <path d="M 610.785 310.275  L 741.762 310.275  " clip-path="url(#p845c9848f9)" style="fill: none; stroke: #235a78; stroke-width: 1.8; stroke-linecap: square" />
    </g>
@@ -145,7 +145,7 @@
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="888.615" y="273.072187" transform="rotate(-0 888.615 273.072187)">−</text>
    </g>
    <g id="text_12">
-    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="776.16" y="222.381563" transform="rotate(-0 776.16 222.381563)"><tspan style="font-size: 18.000px">i</tspan><tspan style="font-size: 12.960px" dy="4.320px">d</tspan><tspan style="font-size: 18.000px" dy="-4.320px">​</tspan></text>
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="776.16" y="222.381563" transform="rotate(-0 776.16 222.381563)"><tspan font-size="18.000px">i</tspan><tspan font-size="12.240px" dy="4.320px">d</tspan></text>
    </g>
    <g id="text_13">
     
@@ -171,11 +171,11 @@
    </g>
   </g>
   <g id="text_14">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Current entering the positive terminal defines absorbed power</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="101.949" transform="rotate(-0 55.44 101.949)">Current entering the positive terminal defines absorbed power</text>
   </g>
-  <g id="text_16" transform="translate(0.000000 -138.406569)">
+  <g id="text_16">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(138.353906 656.501562)">The right current reference exits the positive terminal; it does not make an ordinary resistor into a source. Signed delivery power is negative for a</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(294.301562 669.219062)"><tspan style="font-size: 10.000px">passive resistor. The same physical current has i</tspan><tspan style="font-size: 7.200px" dy="2.400px">d</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=−i; voltage polarity stays fixed.</tspan></text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(294.301562 669.219062)"><tspan font-size="10.000px">passive resistor. The same physical current has i</tspan><tspan font-size="6.800px" dy="2.400px">d</tspan><tspan font-size="10.000px" dy="-2.400px">=−i; voltage polarity stays fixed.</tspan></text>
   </g>
  </g>
  <defs>

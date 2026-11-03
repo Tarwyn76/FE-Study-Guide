@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1018.286pt" height="635.451pt" viewBox="30.857143 13.110029 1018.285714 635.450828" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="998.000pt" height="622.000pt" viewBox="41.000000 90.000000 998.000000 622.000000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 792  L 1080 792  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -75.600000)">
+  <g id="axes_1" transform="translate(-0.000000 -0.831551)">
    <g id="patch_2">
     <path d="M 366.984 220.176  L 713.016 220.176  L 713.016 138.204  L 366.984 138.204  z " clip-path="url(#p3529b674a7)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -89,10 +89,10 @@
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(191.932547 623.677612)">Write-back: mark cache line dirty</text>
    </g>
   </g>
-  <g id="text_9">
+  <g id="text_9" transform="translate(0 77.0000)">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="43.56" transform="rotate(-0 59.4 43.56)">Cache access checks validity and tags before miss handling or write policy</text>
   </g>
-  <g id="text_11" transform="translate(0.000000 -113.400000)">
+  <g id="text_11" transform="translate(0 -43.0000)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 723.456625)">Simplified access flow with write-allocate misses assumed. Direct-mapped caches have a predetermined victim; associative caches need a replacement policy.</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 736.174125)">Dirty eviction applies to write-back caches. No-write-allocate is a separate miss policy; write-through/write-back specify handling of writes that hit.</text>
   </g>

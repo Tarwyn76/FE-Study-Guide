@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="999.771pt" height="617.143pt" viewBox="30.857143 17.742857 999.771429 617.142857" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="970.560pt" height="588.960pt" viewBox="46.080000 110.880000 970.560000 588.960000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,8 +21,8 @@
   <g id="patch_1">
    <path d="M 0 864  L 1080 864  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-1.350000 -85.500000)" />
-  <g id="axes_2" transform="translate(-1.350000 -85.500000)">
+  <g id="axes_1" transform="translate(-8.896800 0.000000)" />
+  <g id="axes_2" transform="translate(-8.896800 0.000000)">
    <g id="patch_2">
     <path d="M 183.6 216  L 993.6 216  L 993.6 151.2  L 183.6 151.2  z " style="fill: #ffffff" />
    </g>
@@ -184,7 +184,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: end" x="167.4" y="186.91125" transform="rotate(-0 167.4 186.91125)">Message m(t)</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(-1.350000 -85.500000)">
+  <g id="axes_3" transform="translate(-8.896800 0.000000)">
    <g id="patch_7">
     <path d="M 183.6 317.952  L 993.6 317.952  L 993.6 253.152  L 183.6 253.152  z " style="fill: #ffffff" />
    </g>
@@ -340,7 +340,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: end" x="167.4" y="288.86325" transform="rotate(-0 167.4 288.86325)">Carrier</text>
    </g>
   </g>
-  <g id="axes_4" transform="translate(-1.350000 -85.500000)">
+  <g id="axes_4" transform="translate(-8.896800 0.000000)">
    <g id="patch_12">
     <path d="M 183.6 419.904  L 993.6 419.904  L 993.6 355.104  L 183.6 355.104  z " style="fill: #ffffff" />
    </g>
@@ -496,7 +496,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: end" x="167.4" y="390.81525" transform="rotate(-0 167.4 390.81525)">AM: μ=0.6</text>
    </g>
   </g>
-  <g id="axes_5" transform="translate(-1.350000 -85.500000)">
+  <g id="axes_5" transform="translate(-8.896800 0.000000)">
    <g id="patch_17">
     <path d="M 183.6 521.856  L 993.6 521.856  L 993.6 457.056  L 183.6 457.056  z " style="fill: #ffffff" />
    </g>
@@ -652,7 +652,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: end" x="167.4" y="492.76725" transform="rotate(-0 167.4 492.76725)">FM: Δf=3 Hz</text>
    </g>
   </g>
-  <g id="axes_6" transform="translate(-1.350000 -85.500000)">
+  <g id="axes_6" transform="translate(-8.896800 0.000000)">
    <g id="patch_22">
     <path d="M 183.6 623.808  L 993.6 623.808  L 993.6 559.008  L 183.6 559.008  z " style="fill: #ffffff" />
    </g>
@@ -839,11 +839,13 @@
    </g>
   </g>
   <g id="text_31">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="47.52" transform="rotate(-0 59.4 47.52)">Amplitude, frequency, and phase modulation change different carrier properties</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="138.488462" transform="rotate(-0 59.4 138.488462)">Amplitude, frequency, and phase modulation change different carrier properties</text>
   </g>
-  <g id="text_33" transform="translate(0.000000 -192.600000)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 789.552625)">Aligned illustrative traces: fm=1 Hz, fc=12 Hz, carrier amplitude1. FM phase deviation is (Δf/fm)sin(2πfmt); PM phase deviation is kp m(t). Carrier</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 802.270125)">frequency is deliberately low enough to show cycles. AM envelope remains positive because μ&lt;1.</text>
+  <g id="text_32">
+   </g>
+  <g id="text_33">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 672.307692)">Aligned illustrative traces: fm=1 Hz, fc=12 Hz, carrier amplitude1. FM phase deviation is (Δf/fm)sin(2πfmt); PM phase deviation is kp m(t). Carrier</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(59.4 685.025192)">frequency is deliberately low enough to show cycles. AM envelope remains positive because μ&lt;1.</text>
   </g>
  </g>
  <defs>

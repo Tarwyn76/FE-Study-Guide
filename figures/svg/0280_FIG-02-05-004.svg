@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="760.937pt" height="556.244pt" viewBox="17.280000 0.000000 760.937143 556.244373" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="717.822pt" height="362.136pt" viewBox="26.400000 66.498855 717.822171 362.136032" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,8 +21,8 @@
   <g id="patch_1">
    <path d="M 0 576  L 864 576  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-2.160000 -62.640000)" />
-  <g id="axes_2" transform="translate(-2.160000 -62.640000)">
+  <g id="axes_1" transform="translate(-35.385600 0.000000)" />
+  <g id="axes_2" transform="translate(-35.385600 0.000000)">
    <g id="line2d_1">
     <path d="M 123.552 192.06  L 758.592 192.06  " clip-path="url(#p8fd03d2100)" style="fill: none; stroke: #23313d; stroke-width: 1.3; stroke-linecap: square" />
    </g>
@@ -101,7 +101,7 @@
     <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="118.72" transform="rotate(-0 432 118.72)">Uniform end-of-period receipts A</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(-2.160000 -62.640000)">
+  <g id="axes_3" transform="translate(-35.385600 0.000000)">
    <g id="line2d_8">
     <path d="M 123.552 382.14  L 758.592 382.14  " clip-path="url(#p23b31271b6)" style="fill: none; stroke: #23313d; stroke-width: 1.3; stroke-linecap: square" />
    </g>
@@ -152,13 +152,13 @@
     <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="308.8" transform="rotate(-0 432 308.8)">Equivalent present worth at period 0</text>
    </g>
   </g>
-  <g id="text_21">
+  <g id="text_21" transform="translate(0 61.987)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="28.8" transform="rotate(-0 38.88 28.8)">A uniform series discounts to present worth</text>
   </g>
-  <g id="text_23">
+  <g id="text_23" transform="translate(0 -89.915)">
    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="501.12" transform="rotate(-0 432 501.12)">P = A[1−(1+i)⁻ⁿ]/i = $379.08</text>
   </g>
-  <g id="text_24">
+  <g id="text_24" transform="translate(0.000000 -40.370762) translate(0 -89.915)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="538.56" transform="rotate(-0 432 538.56)">A = $100 at period ends 1–5; i = 10%. Present date is one period before the first payment.</text>
   </g>
  </g>

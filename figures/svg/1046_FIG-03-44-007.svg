@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="876.240pt" height="702.000pt" viewBox="30.240000 10.800000 876.240000 702.000000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="857.452pt" height="683.000pt" viewBox="37.000000 60.000000 857.452143 683.000000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 792  L 1008 792  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -47.872747)">
+  <g id="axes_1" transform="translate(-35.598750 0.000000)">
    <g id="patch_2">
     <path d="M 127.2096 225.6408  L 396.3456 225.6408  L 396.3456 149.1336  L 127.2096 149.1336  z " clip-path="url(#p98692ffcde)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -100,10 +100,10 @@
     <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="121.311675" transform="rotate(-0 504 121.311675)">Example scheduling snapshot; threads may migrate.</text>
    </g>
   </g>
-  <g id="text_10">
+  <g id="text_10" transform="translate(0 47.0000)">
    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="43.56" transform="rotate(-0 55.44 43.56)">Two cores can execute separate software threads while sharing lower-level memory</text>
   </g>
-  <g id="text_12" transform="translate(0.000000 -52.072110)">
+  <g id="text_12" transform="translate(0 -12.0000)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 723.456625)">Illustrative dual-core topology with private L1 and shared L2; actual cache organizations vary. Thread mapping is a scheduling example, not permanent</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 736.174125)">affinity. Coherence and synchronization are needed for correct shared-memory behavior; simultaneous execution does not automatically double performance.</text>
   </g>

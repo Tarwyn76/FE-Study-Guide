@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="833.143pt" height="623.753pt" viewBox="15.428571 4.935733 833.142857 623.753213" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="811.200pt" height="610.560pt" viewBox="26.400000 43.680000 811.200000 610.560000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 864 720  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -33.840000)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 38.88 86.4  L 825.12 86.4  L 825.12 149.364  L 38.88 149.364  z " clip-path="url(#p6202c050dd)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -133,10 +133,10 @@
     <text style="font-size: 24px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="588.1485" transform="rotate(-0 432 588.1485)">Balanced: 2H₂ + O₂ → 2H₂O</text>
    </g>
   </g>
-  <g id="text_18">
+  <g id="text_18" transform="translate(0 34.157)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="36" transform="rotate(-0 38.88 36)">Balance coefficients while preserving chemical formulas</text>
   </g>
-  <g id="text_20" transform="translate(0.000000 -69.120000)">
+  <g id="text_20" transform="translate(0.000000 -2.704585) translate(0 -33.590)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="673.2" transform="rotate(-0 432 673.2)">Count atoms → adjust coefficients → recheck. Never alter subscripts to balance a reaction.</text>
   </g>
  </g>

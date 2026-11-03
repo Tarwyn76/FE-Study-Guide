@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="762.583pt" height="482.075pt" viewBox="13.577143 1.697446 762.582857 482.074656" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="742.960pt" height="452.284pt" viewBox="11.760000 56.592000 742.960000 452.284200" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 576  L 792 576  L 792 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(12.870000 -52.783505)">
+  <g id="axes_1" transform="translate(0.928700 0.000000)">
    <g id="text_1">
     <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(622.129069 168.472655)">Before peak:</text>
     <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(604.542741 188.68867)">26.4% of impulse</text>
@@ -33,11 +33,11 @@
    <g id="text_3">
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="669.8736" y="412.3958" transform="rotate(-0 669.8736 412.3958)">J = 500τ = 20 N·s</text>
    </g>
-   <g id="text_4">
+   <g id="text_4" transform="translate(0.000000 -30.943329)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="396" y="520.640975" transform="rotate(-0 396 520.640975)">F(t) = 500(t/τ)e⁻ᵗᐟτ, τ = 0.040 s. The shaded finite plot omits the small tail beyond 0.24 s.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(12.870000 -52.783505)">
+  <g id="axes_2" transform="translate(0.928700 0.000000)">
    <g id="patch_2">
     <path d="M 63.36 443.52  L 578.16 443.52  L 578.16 103.68  L 63.36 103.68  z " style="fill: #ffffff" />
    </g>
@@ -279,7 +279,7 @@
     </g>
    </g>
   </g>
-  <g id="text_22">
+  <g id="text_22" transform="translate(0 53.969)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="35.64" y="28.8" transform="rotate(-0 35.64 28.8)">A force pulse: peak force and total impulse</text>
   </g>
   </g>

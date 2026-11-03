@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="780.686pt" height="469.814pt" viewBox="18.514286 1.852090 780.685714 469.813505" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="715.200pt" height="413.761pt" viewBox="16.800000 67.803264 715.200000 413.761045" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 576  L 864 576  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(57.600000 -64.080000)">
+  <g id="axes_1">
    <g id="text_1">
     
     <g style="fill: #23313d" transform="translate(598.6896 148.181888)">
@@ -83,11 +83,11 @@
    <g id="text_5">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="660.0096" y="442.794575" transform="rotate(-0 660.0096 442.794575)">Vertical major axis</text>
    </g>
-   <g id="text_6">
+   <g id="text_6" transform="translate(0.000000 -56.594924)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="520.640975" transform="rotate(-0 432 520.640975)">a &gt; b; c &lt; a. Distances to the two foci sum to 2a at every point.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(57.600000 -64.080000)">
+  <g id="axes_2">
    <g id="patch_2">
     <path d="M 34.56 411.84  L 483.84 411.84  L 483.84 112.32  L 34.56 112.32  z " style="fill: #ffffff" />
    </g>
@@ -322,7 +322,7 @@
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="408.96" y="248.976" transform="rotate(-0 408.96 248.976)">F₂</text>
    </g>
   </g>
-  <g id="text_30">
+  <g id="text_30" transform="translate(0 64.148)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="28.8" transform="rotate(-0 38.88 28.8)">Ellipse: axes, foci, and a constant distance sum</text>
   </g>
   </g>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1059.943pt" height="451.447pt" viewBox="10.028571 14.662379 1059.942857 451.446945" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1028.160pt" height="450.944pt" viewBox="30.240000 101.520000 1028.160000 450.943759" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,8 +21,8 @@
   <g id="patch_1">
    <path d="M 0 720  L 1080 720  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-4.500000 -84.600000)" />
-  <g id="axes_2" transform="translate(-4.500000 -84.600000)">
+  <g id="axes_1" />
+  <g id="axes_2">
    <g id="patch_2">
     <path d="M 76.464 349.776  L 352.08 349.776  L 352.08 261.648  L 76.464 261.648  z " clip-path="url(#pe1acd6e980)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.5; stroke-linejoin: miter" />
    </g>
@@ -51,7 +51,7 @@
     <text style="font-size: 18px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(165.840469 462.344484)">Net rupture • block shear</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(-4.500000 -84.600000)">
+  <g id="axes_3">
    <g id="patch_8">
     <path d="M 605.664 349.776  L 881.28 349.776  L 881.28 261.648  L 605.664 261.648  z " clip-path="url(#pd9c31ccc1d)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.5; stroke-linejoin: miter" />
    </g>
@@ -85,9 +85,11 @@
    </g>
   </g>
   <g id="text_6">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="39.6" transform="rotate(-0 59.4 39.6)">Bolted and welded connections transfer load through different local limit states</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="126.963857" transform="rotate(-0 59.4 126.963857)">Bolted and welded connections transfer load through different local limit states</text>
   </g>
-  <g id="text_8" transform="translate(0.000000 -231.300000)">
+  <g id="text_7">
+   </g>
+  <g id="text_8" transform="translate(0.000000 -143.949474)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(132.523438 650.281875)">Conceptual plan-view lap details; overlap geometry is schematic. Opposing external tension loads drive force transfer. Fillet throat formula applies to a right-angle</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(136.603125 662.999375)">equal-leg ideal weld. Hole size, spacing, edge distances, weld length, eccentricity, material strengths and inspection determine actual capacity; no connection is</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(512.688281 675.716875)">sized here.</text>

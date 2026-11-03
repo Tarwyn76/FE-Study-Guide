@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="732.600pt" height="476.982pt" viewBox="16.405714 2.263261 732.600000 476.982318" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="690.160pt" height="450.584pt" viewBox="11.760000 60.602980 690.160000 450.583948" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,12 +21,12 @@
   <g id="patch_1">
    <path d="M 0 576  L 792 576  L 792 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(38.940000 -56.742268)">
-   <g id="text_1">
+  <g id="axes_1">
+   <g id="text_1" transform="translate(0.000000 -28.167398)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="396" y="520.640975" transform="rotate(-0 396 520.640975)">Angles converted to radians inside the series. Relative error measured against the exact function.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(38.940000 -56.742268)">
+  <g id="axes_2">
    <g id="patch_2">
     <path d="M 71.28 443.52  L 689.04 443.52  L 689.04 103.68  L 71.28 103.68  z " style="fill: #ffffff" />
    </g>
@@ -340,7 +340,7 @@
     </g>
    </g>
   </g>
-  <g id="text_24">
+  <g id="text_24" transform="translate(0 57.928)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="35.64" y="28.8" transform="rotate(-0 35.64 28.8)">Relative error of small-angle approximations</text>
   </g>
   </g>

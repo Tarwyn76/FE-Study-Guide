@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="956.880pt" height="565.200pt" viewBox="25.200000 10.800000 956.880000 565.200000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="928.704pt" height="556.094pt" viewBox="22.848000 85.916000 928.704000 556.094022" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,11 +21,11 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(15.960000 -65.530922)">
+  <g id="axes_1" transform="translate(-0.773920 0.000000)">
    <g id="text_1">
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(759.651375 187.004203)">f=100 MHz</text>
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(735.440672 215.306625)"><tspan style="font-size: 21.000px">v</tspan><tspan style="font-size: 15.120px" dy="5.040px">p</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">=2×10⁸ m/s</tspan></text>
-    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(748.570594 244.193109)"><tspan style="font-size: 21.000px">λ=v</tspan><tspan style="font-size: 15.120px" dy="5.040px">p</tspan><tspan style="font-size: 21.000px" dy="-5.040px">​</tspan><tspan style="font-size: 21.000px">/f=2 m</tspan></text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(735.440672 215.306625)"><tspan font-size="21.000px">v</tspan><tspan font-size="14.280px" dy="5.040px">p</tspan><tspan font-size="21.000px" dy="-5.040px">=2×10⁸ m/s</tspan></text>
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(748.570594 244.193109)"><tspan font-size="21.000px">λ=v</tspan><tspan font-size="14.280px" dy="5.040px">p</tspan><tspan font-size="21.000px" dy="-5.040px">/f=2 m</tspan></text>
    </g>
    <g id="text_2">
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(730.100437 375.685102)">β=2π/λ=π rad/m</text>
@@ -61,7 +61,7 @@
     </g>
    </g>
   </g>
-  <g id="axes_2" transform="translate(15.960000 -65.530922)">
+  <g id="axes_2" transform="translate(-0.773920 0.000000)">
    <g id="patch_2">
     <path d="M 80.64 504  L 675.36 504  L 675.36 122.4  L 80.64 122.4  z " style="fill: #ffffff" />
    </g>
@@ -285,10 +285,12 @@
    </g>
   </g>
   <g id="text_21">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">A traveling sinusoid advances one wavelength during each period</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="109.984483" transform="rotate(-0 55.44 109.984483)">A traveling sinusoid advances one wavelength during each period</text>
   </g>
-  <g id="text_23" transform="translate(0.000000 -120.980163)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(93.433594 650.174062)"><tspan style="font-size: 10.000px">Lossless uniform-medium traveling wave using cos(ωt−βz), which propagates in+z. ω=2πf and constant phase gives dz/dt=ω/β=v</tspan><tspan style="font-size: 7.200px" dy="2.400px">p</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">. Phase reference atz=0,t=0 is</tspan></text>
+  <g id="text_22">
+   </g>
+  <g id="text_23" transform="translate(0.000000 -54.947687)">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(93.433594 650.174062)"><tspan font-size="10.000px">Lossless uniform-medium traveling wave using cos(ωt−βz), which propagates in+z. ω=2πf and constant phase gives dz/dt=ω/β=v</tspan><tspan font-size="6.800px" dy="2.400px">p</tspan><tspan font-size="10.000px" dy="-2.400px">. Phase reference atz=0,t=0 is</tspan></text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(107.610937 663.169688)">a positive peak. Snapshot shows spatial variation, not a time waveform; velocity is assumed and need not equal vacuum light speed. Envelope/group velocity</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(461.158594 675.887187)">is not addressed.</text>
   </g>

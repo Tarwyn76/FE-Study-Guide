@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="798.583pt" height="517.166pt" viewBox="17.897143 4.320000 798.582857 517.165714" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="769.779pt" height="513.600pt" viewBox="28.320000 85.920000 769.778743 513.600000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(7.560000 -79.920000)">
+  <g id="axes_1" transform="translate(-10.599600 0.000000)">
    <g id="patch_2">
     <path d="M 78.192 469.2816  L 785.808 469.2816  L 785.808 562.0104  L 78.192 562.0104  z " clip-path="url(#pb4a4577f8c)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -29,11 +29,11 @@
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(274.382109 508.881195)">y = 100.0 ± 3.0 units; U = 3.0, k = 2</text>
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(245.948281 531.79268)">About 95% coverage under a normal model</text>
    </g>
-   <g id="text_2">
+   <g id="text_2" transform="translate(0.000000 -5.136000)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="585.376175" transform="rotate(-0 432 585.376175)">U = k uᵧ. Ideal normal ±2σ coverage is 95.45%; standard uncertainty and expanded uncertainty are different.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(7.560000 -79.920000)">
+  <g id="axes_2" transform="translate(-10.599600 0.000000)">
    <g id="patch_3">
     <path d="M 77.76 408.24  L 699.84 408.24  L 699.84 129.6  L 77.76 129.6  z " style="fill: #ffffff" />
    </g>
@@ -142,7 +142,7 @@
     <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle" x="388.8" y="326.247065" transform="rotate(-0 388.8 326.247065)">±uᵧ = ±1.5</text>
    </g>
   </g>
-  <g id="text_11">
+  <g id="text_11" transform="translate(0 79.920)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="32.4" transform="rotate(-0 38.88 32.4)">Expanded uncertainty includes the coverage factor and model</text>
   </g>
   </g>

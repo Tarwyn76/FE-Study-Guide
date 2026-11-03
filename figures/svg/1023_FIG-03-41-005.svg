@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="892.080pt" height="490.320pt" viewBox="29.520000 12.960000 892.080000 490.320000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="872.814pt" height="459.510pt" viewBox="43.008000 150.394000 872.813760 459.510000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-37.380000 -129.381564)">
+  <g id="axes_1" transform="translate(-42.206640 0.000000)">
    <g id="text_1">
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(687.094444 206.785437)">Code C={000,111}</text>
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(754.110694 236.035687)">dmin=3</text>
@@ -35,7 +35,7 @@
     <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(722.217725 567.979875)">Distance1 vs2</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-37.380000 -129.381564)">
+  <g id="axes_2" transform="translate(-42.206640 0.000000)">
    <g id="PathCollection_1">
     <defs>
      <path id="m2428db27b7" d="M 0 3.872983  C 1.027127 3.872983 2.012324 3.464901 2.738613 2.738613  C 3.464901 2.012324 3.872983 1.027127 3.872983 0  C 3.872983 -1.027127 3.464901 -2.012324 2.738613 -2.738613  C 2.012324 -3.464901 1.027127 -3.872983 0 -3.872983  C -1.027127 -3.872983 -2.012324 -3.464901 -2.738613 -2.738613  C -3.464901 -2.012324 -3.872983 -1.027127 -3.872983 0  C -3.872983 1.027127 -3.464901 2.012324 -2.738613 2.738613  C -2.012324 3.464901 -1.027127 3.872983 0 3.872983  z " style="stroke: #235a78" />
@@ -158,11 +158,13 @@
    </g>
   </g>
   <g id="text_12">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Minimum Hamming distance sets detection and correction capability</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="173.605172" transform="rotate(-0 55.44 173.605172)">Minimum Hamming distance sets detection and correction capability</text>
   </g>
-  <g id="text_14" transform="translate(0.000000 -189.031505)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 657.360625)">Three-dimensional binary cube shown as a2D projection; each edge changes exactly one bit. Hamming distance counts differing bits, not drawn Euclidean</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 670.078125)">distance. Circles highlight valid codewords, not geometric correction-radius boundaries. Detection-only and correction-only limits are separate guarantees.</text>
+  <g id="text_13">
+   </g>
+  <g id="text_14">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 585.482759)">Three-dimensional binary cube shown as a2D projection; each edge changes exactly one bit. Hamming distance counts differing bits, not drawn Euclidean</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 598.200259)">distance. Circles highlight valid codewords, not geometric correction-radius boundaries. Detection-only and correction-only limits are separate guarantees.</text>
   </g>
  </g>
  <defs>

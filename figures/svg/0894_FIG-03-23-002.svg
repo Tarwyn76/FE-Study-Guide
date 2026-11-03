@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="903.600pt" height="601.200pt" viewBox="29.520000 10.080000 903.600000 601.200000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="874.032pt" height="589.152pt" viewBox="43.008000 88.603000 874.032000 589.151778" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,13 +21,13 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(30.660000 -66.371062)">
+  <g id="axes_1" transform="translate(10.637200 0.000000)">
    <g id="text_1">
-    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(168.5775 547.638187)"><tspan style="font-size: 24.000px">Assume member tension away from B: ΣF</tspan><tspan style="font-size: 17.280px" dy="5.760px">x</tspan><tspan style="font-size: 24.000px" dy="-5.760px">​</tspan><tspan style="font-size: 24.000px">=0; ΣF</tspan><tspan style="font-size: 17.280px" dy="5.760px">y</tspan><tspan style="font-size: 24.000px" dy="-5.760px">​</tspan><tspan style="font-size: 24.000px">=0</tspan></text>
-    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(177.388125 580.651312)"><tspan style="font-size: 24.000px">N</tspan><tspan style="font-size: 17.280px" dy="5.760px">AB</tspan><tspan style="font-size: 24.000px" dy="-5.760px">​</tspan><tspan style="font-size: 24.000px">=N</tspan><tspan style="font-size: 17.280px" dy="5.760px">BC</tspan><tspan style="font-size: 24.000px" dy="-5.760px">​</tspan><tspan style="font-size: 24.000px">=−10/(2×3/5)=−8.333 kN → compression</tspan></text>
+    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(168.5775 547.638187)"><tspan font-size="24.000px">Assume member tension away from B: ΣF</tspan><tspan font-size="16.320px" dy="5.760px">x</tspan><tspan font-size="24.000px" dy="-5.760px">=0; ΣF</tspan><tspan font-size="16.320px" dy="5.760px">y</tspan><tspan font-size="24.000px" dy="-5.760px">=0</tspan></text>
+    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(177.388125 580.651312)"><tspan font-size="24.000px">N</tspan><tspan font-size="16.320px" dy="5.760px">AB</tspan><tspan font-size="24.000px" dy="-5.760px">=N</tspan><tspan font-size="16.320px" dy="5.760px">BC</tspan><tspan font-size="24.000px" dy="-5.760px">=−10/(2×3/5)=−8.333 kN → compression</tspan></text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(30.660000 -66.371062)">
+  <g id="axes_2" transform="translate(10.637200 0.000000)">
    <g id="patch_2">
     <path d="M 90.72 386.64  L 76.608 404.9856  L 104.832 404.9856  z " clip-path="url(#pa9a3cc27a8)" style="fill: #edf3f6; stroke: #23313d; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -81,7 +81,7 @@
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="264.096" y="224.002937" transform="rotate(-0 264.096 224.002937)">10 kN</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(30.660000 -66.371062)">
+  <g id="axes_3" transform="translate(10.637200 0.000000)">
    <g id="patch_10">
     <path d="M 756 302.652  C 757.976294 302.652 759.871909 301.86681 761.26936 300.46936  C 762.66681 299.071909 763.452 297.176294 763.452 295.2  C 763.452 293.223706 762.66681 291.328091 761.26936 289.93064  C 759.871909 288.53319 757.976294 287.748 756 287.748  C 754.023706 287.748 752.128091 288.53319 750.73064 289.93064  C 749.33319 291.328091 748.548 293.223706 748.548 295.2  C 748.548 297.176294 749.33319 299.071909 750.73064 300.46936  C 752.128091 301.86681 754.023706 302.652 756 302.652  z " clip-path="url(#p32de3eb7f9)" style="fill: #ffffff; stroke: #23313d; stroke-linejoin: miter" />
    </g>
@@ -101,16 +101,18 @@
     <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="756" y="139.810625" transform="rotate(-0 756 139.810625)">Joint B</text>
    </g>
    <g id="text_7">
-    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="656.64" y="411.44625" transform="rotate(-0 656.64 411.44625)"><tspan style="font-size: 18.000px">N</tspan><tspan style="font-size: 12.960px" dy="4.320px">AB</tspan><tspan style="font-size: 18.000px" dy="-4.320px">​</tspan></text>
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="656.64" y="411.44625" transform="rotate(-0 656.64 411.44625)"><tspan font-size="18.000px">N</tspan><tspan font-size="12.240px" dy="4.320px">AB</tspan></text>
    </g>
    <g id="text_8">
-    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="855.36" y="411.537656" transform="rotate(-0 855.36 411.537656)"><tspan style="font-size: 18.000px">N</tspan><tspan style="font-size: 12.960px" dy="4.320px">BC</tspan><tspan style="font-size: 18.000px" dy="-4.320px">​</tspan></text>
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="855.36" y="411.537656" transform="rotate(-0 855.36 411.537656)"><tspan font-size="18.000px">N</tspan><tspan font-size="12.240px" dy="4.320px">BC</tspan></text>
    </g>
   </g>
   <g id="text_9">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">An isolated truss joint resolves axial member forces through two force equations</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="111.536207" transform="rotate(-0 55.44 111.536207)">An isolated truss joint resolves axial member forces through two force equations</text>
   </g>
-  <g id="text_11" transform="translate(0.000000 -89.054842)">
+  <g id="text_10">
+   </g>
+  <g id="text_11" transform="translate(0.000000 -22.002889)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(137.685156 650.281875)">Same triangle as888. Joint arrows represent initially assumed tensile forces, so negative results reverse those directions in the actual compressed</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(115.546875 662.999375)">members. Inclined members have horizontal/vertical direction cosines4/5 and3/5. The10 kN external load acts down at B; joint equilibrium has no moment</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(426.503125 675.716875)">equation for concurrent forces.</text>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="966.100pt" height="592.268pt" viewBox="24.100000 9.360634 966.100000 592.268018" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="833.923pt" height="564.391pt" viewBox="30.077000 81.823000 833.923000 564.390953" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(1.610167 -73.225032)">
+  <g id="axes_1" transform="translate(-6.949358 -2.084087)">
    <g id="text_1">
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(712.110544 195.380672)">Storm total=26 mm</text>
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(700.373356 226.378562)">Effective rain=20 mm</text>
@@ -38,7 +38,7 @@
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(715.732106 582.017109)">Peak total=1.80 m³/s</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(1.610167 -73.225032)">
+  <g id="axes_2" transform="translate(-6.949358 -2.084087)">
    <g id="patch_2">
     <path d="M 80.64 295.2  L 675.36 295.2  L 675.36 129.6  L 80.64 129.6  z " style="fill: #ffffff" />
    </g>
@@ -282,7 +282,7 @@
     </g>
    </g>
   </g>
-  <g id="axes_3" transform="translate(1.610167 -73.225032)">
+  <g id="axes_3" transform="translate(-6.949358 -2.084087)">
    <g id="patch_14">
     <path d="M 80.64 547.2  L 675.36 547.2  L 675.36 367.2  L 80.64 367.2  z " style="fill: #ffffff" />
    </g>
@@ -549,11 +549,11 @@
    </g>
   </g>
   <g id="text_43">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">A runoff response transforms effective rainfall into a delayed direct-runoff hydrograph</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="109.766" transform="rotate(-0 55.44 109.766)">A runoff response transforms effective rainfall into a delayed direct-runoff hydrograph</text>
   </g>
   <g id="text_44">
 </g>
-  <g id="text_45" transform="translate(0.000000 -98.974494)">
+  <g id="text_45" transform="translate(0.000000 -52.796874)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(125.463281 650.281875)">Hypothetical linear response, one-hour effective-rainfall intervals and a one-mm unit hydrograph [0,0.12,0.08,0] m³/s at hourly points. Trapezoidal unit</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(101.91875 662.999375)">volume720 m³ matches1 mm over0.72 km²;20 mm effective rainfall gives14400 m³ direct runoff. Baseflow is separate and constant here. Hydrograph ordinates</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(305.335938 675.716875)">represent piecewise-linear interpolation; they are not design-event predictions.</text>

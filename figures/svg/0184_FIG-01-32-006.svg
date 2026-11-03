@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="785.006pt" height="526.423pt" viewBox="17.280000 3.702857 785.005714 526.422857" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="772.992pt" height="473.472pt" viewBox="27.360000 78.240000 772.992000 473.472000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-41.760000 -72.000000)">
+  <g id="axes_1" transform="translate(-43.344000 0.000000)">
    <g id="text_1">
     <text style="font-size: 27px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="243.3024" y="147.029513" transform="rotate(-0 243.3024 147.029513)">E = z σ/√n</text>
    </g>
@@ -34,11 +34,11 @@
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(185.9649 456.171406)">n ≥ (z σ/E)²</text>
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(125.263338 483.126094)">96.04 → round UP to 97</text>
    </g>
-   <g id="text_4">
+   <g id="text_4" transform="translate(0.000000 -53.740206)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="585.376175" transform="rotate(-0 432 585.376175)">Design calculation: (1.96 × 10 / 2)² = 96.04. Four times the sample size halves the margin of error.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-41.760000 -72.000000)">
+  <g id="axes_2" transform="translate(-43.344000 0.000000)">
    <g id="patch_2">
     <path d="M 492.48 486  L 820.8 486  L 820.8 136.08  L 492.48 136.08  z " style="fill: #ffffff" />
    </g>
@@ -248,7 +248,7 @@
     </g>
    </g>
   </g>
-  <g id="text_21">
+  <g id="text_21" transform="translate(0 72.360)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="32.4" transform="rotate(-0 38.88 32.4)">Sample size trades effort for a smaller margin of error</text>
   </g>
   </g>

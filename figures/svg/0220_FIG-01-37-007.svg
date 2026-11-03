@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="792.411pt" height="552.960pt" viewBox="17.897143 3.085714 792.411429 552.960000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="735.360pt" height="546.240pt" viewBox="20.640000 53.280000 735.360000 546.240000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(43.920000 -46.800000)">
+  <g id="axes_1" transform="translate(0.306400 0.000000)">
    <g id="patch_2">
     <path d="M 148.9536 474.4332  L 715.0464 474.4332  L 715.0464 562.0104  L 148.9536 562.0104  z " clip-path="url(#p8894245fc0)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.2; stroke-linejoin: miter" />
    </g>
@@ -32,11 +32,11 @@
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(188.5 511.854925)">Safety / loss constraint → eliminate inadmissible alternatives</text>
     <text style="font-size: 16px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(306.25 533.418675)">Then compare expected values</text>
    </g>
-   <g id="text_3">
+   <g id="text_3" transform="translate(0.000000 -6.130640)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="585.376175" transform="rotate(-0 432 585.376175)">If losses below −20 are unacceptable, Y fails the constraint despite the same expected payoff.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(43.920000 -46.800000)">
+  <g id="axes_2" transform="translate(0.306400 0.000000)">
    <g id="patch_3">
     <path d="M 69.12 421.2  L 743.04 421.2  L 743.04 149.04  L 69.12 149.04  z " style="fill: #ffffff" />
    </g>
@@ -203,7 +203,7 @@
     </g>
    </g>
   </g>
-  <g id="text_17">
+  <g id="text_17" transform="translate(0 47.520)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="32.4" transform="rotate(-0 38.88 32.4)">Equal expected values can hide very different downside risk</text>
   </g>
   </g>

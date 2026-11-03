@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1018.286pt" height="622.341pt" viewBox="30.857143 13.881207 1018.285714 622.340798" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="987.840pt" height="579.600pt" viewBox="46.080000 104.760000 987.840000 579.600000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 792  L 1080 792  L 1080 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -81.000000)">
+  <g id="axes_1">
    <g id="patch_2">
     <path d="M 59.4 400.5144  L 232.416 400.5144  L 232.416 280.2888  L 59.4 280.2888  z " clip-path="url(#p98ce000483)" style="fill: #f8ece7; stroke: #a23b34; stroke-width: 1.6; stroke-linejoin: miter" />
    </g>
@@ -123,12 +123,14 @@
    </g>
   </g>
   <g id="text_20">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="43.56" transform="rotate(-0 59.4 43.56)">Forward and backward schedule passes expose the critical path and total float</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="59.4" y="131.742453" transform="rotate(-0 59.4 131.742453)">Forward and backward schedule passes expose the critical path and total float</text>
   </g>
-  <g id="text_22" transform="translate(0.000000 -128.700000)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(122.616406 716.305875)">Finish-to-start AON network with zero lag, deterministic durations and unlimited resource availability. Times use elapsed-day boundaries starting at0; EF=ES+duration</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(122.851562 729.023375)">and LS=LF−duration. Total float=LS−ES. Red path has zero float; C/E share the alternate branch’s4-day flexibility and cannot each independently consume extra time</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(377.8375 741.740875)">without coordination. Resource limits and calendars are omitted.</text>
+  <g id="text_21">
+   </g>
+  <g id="text_22">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(122.616 646.943396)">Finish-to-start AON network with zero lag, deterministic durations and unlimited resource availability. Times use elapsed-day boundaries starting at0; EF=ES+duration</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(122.852 659.660896)">and LS=LF−duration. Total float=LS−ES. Red path has zero float; C/E share the alternate branch’s4-day flexibility and cannot each independently consume extra time</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(377.837 672.378396)">without coordination. Resource limits and calendars are omitted.</text>
   </g>
  </g>
  <defs>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="916.750pt" height="544.936pt" viewBox="34.750000 11.750000 916.750000 544.935673" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="829.154pt" height="495.888pt" viewBox="34.846000 83.979000 829.154000 495.888211" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(1.909896 -71.018182)">
+  <g id="axes_1" transform="translate(-6.218655 -2.764809)">
    <g id="text_1">
     
     <g style="fill: #23313d" transform="translate(752.4032 228.832)">
@@ -45,7 +45,7 @@
     <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(746.420856 563.847703)">the entire line.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(1.909896 -71.018182)">
+  <g id="axes_2" transform="translate(-6.218655 -2.764809)">
    <g id="patch_2">
     <path d="M 80.64 489.6  L 675.36 489.6  L 675.36 129.6  L 80.64 129.6  z " style="fill: #ffffff" />
    </g>
@@ -261,9 +261,9 @@
    </g>
   </g>
   <g id="text_21">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Sensitivity is slope; offset changes the intercept without changing slope</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="110.159" transform="rotate(-0 55.44 110.159)">Sensitivity is slope; offset changes the intercept without changing slope</text>
   </g>
-  <g id="text_23" transform="translate(0.000000 -135.163636)">
+  <g id="text_23">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(127.428906 656.640625)">Sensitivity units are output units divided by input units. For nonlinear sensors sensitivity varies with operating point. Greater slope can improve signal</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(252.288281 669.358125)">size while also amplifying noise or limiting range; it does not itself establish accuracy or uncertainty.</text>
   </g>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="955.500pt" height="531.460pt" viewBox="32.000000 11.750000 955.500000 531.459898" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="833.056pt" height="484.185pt" viewBox="30.944000 82.918822 833.056000 484.185346" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -74.047393)">
+  <g id="axes_1" transform="translate(-6.595027 -3.470405)">
    <g id="text_1">
     
     <g style="fill: #23313d" transform="translate(702.7732 216.256)">
@@ -51,7 +51,7 @@
     </g>
    </g>
    <g id="text_2">
-    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(754.746794 359.576414)"><tspan style="font-size: 23.000px">ω</tspan><tspan style="font-size: 16.560px" dy="5.520px">n</tspan><tspan style="font-size: 23.000px" dy="-5.520px">​</tspan><tspan style="font-size: 23.000px">=1 rad/s</tspan></text>
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(754.746794 359.576414)"><tspan font-size="23.000px">ω</tspan><tspan font-size="15.640px" dy="5.520px">n</tspan><tspan font-size="23.000px" dy="-5.520px">=1 rad/s</tspan></text>
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(681.578044 391.213992)">ζ=0.4: overshoot=25.4%</text>
    </g>
    <g id="text_3">
@@ -85,7 +85,7 @@
     </g>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-0.000000 -74.047393)">
+  <g id="axes_2" transform="translate(-6.595027 -3.470405)">
    <g id="patch_2">
     <path d="M 80.64 496.8  L 675.36 496.8  L 675.36 129.6  L 80.64 129.6  z " style="fill: #ffffff" />
    </g>
@@ -338,10 +338,10 @@
    </g>
   </g>
   <g id="text_23">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Damping controls overshoot and the shape of a second-order response</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="109.422" transform="rotate(-0 55.44 109.422)">Damping controls overshoot and the shape of a second-order response</text>
   </g>
-  <g id="text_25" transform="translate(0.000000 -148.094787)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(118.936719 656.501562)"><tspan style="font-size: 10.000px">All curves have unit DC gain and zero initial state. Green band is ±2% of the final value. The 4/(ζω</tspan><tspan style="font-size: 7.200px" dy="2.400px">n</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">) settling relation is an underdamped approximation,</tspan></text>
+  <g id="text_25">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(118.936719 656.501562)"><tspan font-size="10.000px">All curves have unit DC gain and zero initial state. Green band is ±2% of the final value. The 4/(ζω</tspan><tspan font-size="6.800px" dy="2.400px">n</tspan><tspan font-size="10.000px" dy="-2.400px">) settling relation is an underdamped approximation,</tspan></text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(220.154687 669.497187)">not an exact general formula or a formula for the plotted overdamped curve. Actual last band crossing can differ.</text>
   </g>
  </g>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="851.040pt" height="483.395pt" viewBox="6.788571 1.234727 851.040000 483.395498" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="827.520pt" height="480.960pt" viewBox="14.880000 54.240000 827.520000 480.960000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 576  L 864 576  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(3.600000 -51.840000)">
+  <g id="axes_1">
    <g id="text_1">
     <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(617.746287 440.237173)">f″(0) = 0, but no sign change:</text>
     <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(652.793319 455.062252)">not an inflection.</text>
@@ -30,7 +30,7 @@
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="520.640975" transform="rotate(-0 432 520.640975)">An inflection point changes concavity; a zero second derivative is only a candidate.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(3.600000 -51.840000)">
+  <g id="axes_2">
    <g id="patch_2">
     <path d="M 60.48 437.76  L 561.6 437.76  L 561.6 97.92  L 60.48 97.92  z " style="fill: #ffffff" />
    </g>
@@ -316,7 +316,7 @@
     </g>
    </g>
   </g>
-  <g id="axes_3" transform="translate(3.600000 -51.840000)">
+  <g id="axes_3">
    <g id="patch_7">
     <path d="M 630.72 357.12  L 829.44 357.12  L 829.44 167.04  L 630.72 167.04  z " style="fill: #ffffff" />
    </g>
@@ -486,7 +486,7 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle" x="730.08" y="161.04" transform="rotate(-0 730.08 161.04)">y = x⁴</text>
    </g>
   </g>
-  <g id="text_39">
+  <g id="text_39" transform="translate(0 52.261)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="28.8" transform="rotate(-0 38.88 28.8)">Concavity and the inflection test</text>
   </g>
   </g>

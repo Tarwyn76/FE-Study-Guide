@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="781.000pt" height="510.318pt" viewBox="35.250000 13.250000 781.000000 510.317691" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="770.739pt" height="463.451pt" viewBox="34.802000 110.793250 770.739000 463.450905" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 864 720  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-6.182917 -97.601744)">
+  <g id="axes_1" transform="translate(-11.882226 -1.284524)">
    <g id="patch_2">
     <path d="M 139.7952 201.816  L 724.2048 201.816  L 724.2048 155.448  L 139.7952 155.448  z " clip-path="url(#p687f24f5a0)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -80,9 +80,9 @@
    </g>
   </g>
   <g id="text_7">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="39.6" transform="rotate(-0 47.52 39.6)">Choose a conduction model from geometry, sources, and boundary conditions</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="136.460" transform="rotate(-0 47.52 136.460)">Choose a conduction model from geometry, sources, and boundary conditions</text>
   </g>
-  <g id="text_9" transform="translate(0.000000 -167.224322)">
+  <g id="text_9">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(108.678906 656.640625)">Simple thermal resistances assume steady source-free conduction with the appropriate geometry; internal generation or varying</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(322.503125 669.358125)">properties may require a differential model.</text>
   </g>

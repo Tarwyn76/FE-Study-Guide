@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="885.467pt" height="552.206pt" viewBox="42.750000 12.750000 885.467143 552.205910" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="821.436pt" height="505.447pt" viewBox="42.564000 97.350000 821.436000 505.447388" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,12 +21,12 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-48.587500 -86.709677)">
+  <g id="axes_1" transform="translate(-48.601630 -3.424440)">
    <g id="text_1">
-    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="582.514875" transform="rotate(-0 504 582.514875)"><tspan style="font-size: 18.000px">With τ</tspan><tspan style="font-size: 12.960px" dy="4.320px">cw</tspan><tspan style="font-size: 18.000px" dy="-4.320px">​</tspan><tspan style="font-size: 18.000px"> above: a CCW element-axis rotation gives a CCW 2θ motion from the x-face point.</tspan></text>
+    <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="582.514875" transform="rotate(-0 504 582.514875)"><tspan font-size="18.000px">With τ</tspan><tspan font-size="12.240px" dy="4.320px">cw</tspan><tspan font-size="18.000px" dy="-4.320px"> above: a CCW element-axis rotation gives a CCW 2θ motion from the x-face point.</tspan></text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-48.587500 -86.709677)">
+  <g id="axes_2" transform="translate(-48.601630 -3.424440)">
    <g id="patch_2">
     <path d="M 201.965975 374.522276  L 303.962276 332.274025  L 261.714025 230.277724  L 159.717724 272.525975  z " clip-path="url(#pba8cbe707a)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.5; stroke-linejoin: miter" />
    </g>
@@ -68,7 +68,7 @@
     <path d="M 269.902981 386.452788  L 269.427443 393.144115  L 264.359704 388.748888  z " clip-path="url(#pba8cbe707a)" style="fill: #235a78; stroke: #235a78; stroke-width: 1.7; stroke-linecap: round" />
    </g>
   </g>
-  <g id="axes_3" transform="translate(-48.587500 -86.709677)">
+  <g id="axes_3" transform="translate(-48.601630 -3.424440)">
    <g id="patch_8">
     <path d="M 599.042236 468  L 923.037764 468  L 923.037764 144  L 599.042236 144  z " style="fill: #ffffff" />
    </g>
@@ -214,7 +214,7 @@
      </g>
     </g>
     <g id="text_17">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="566.454423" y="306" transform="rotate(-90 566.454423 306)"><tspan style="font-size: 11.000px">τ</tspan><tspan style="font-size: 7.920px" dy="2.640px">cw</tspan><tspan style="font-size: 11.000px" dy="-2.640px">​</tspan><tspan style="font-size: 11.000px"> (MPa)</tspan></text>
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="566.454423" y="306" transform="rotate(-90 566.454423 306)"><tspan font-size="11.000px">τ</tspan><tspan font-size="7.480px" dy="2.640px">cw</tspan><tspan font-size="11.000px" dy="-2.640px"> (MPa)</tspan></text>
     </g>
    </g>
    <g id="line2d_20">
@@ -244,9 +244,9 @@
    </g>
   </g>
   <g id="text_19">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">A physical rotation θ corresponds to a Mohr-circle rotation 2θ</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="123.981" transform="rotate(-0 55.44 123.981)">A physical rotation θ corresponds to a Mohr-circle rotation 2θ</text>
   </g>
-  <g id="text_21" transform="translate(0.000000 -127.074527)">
+  <g id="text_21">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(146.646094 656.640625)">Mohr convention matches figure 526. A different plotted shear-axis convention reverses the apparent rotation direction; retain one convention</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(473.033594 669.358125)">consistently.</text>
   </g>

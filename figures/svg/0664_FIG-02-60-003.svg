@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="867.017pt" height="479.643pt" viewBox="42.250000 13.622913 867.017143 479.642857" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="822.293pt" height="433.890pt" viewBox="41.707000 119.582262 822.293000 433.889676" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-18.530000 -106.829545)">
+  <g id="axes_1" transform="translate(-23.983546 -2.055338)">
    <g id="text_1">
     <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="800.0496" y="236.038625" transform="rotate(-0 800.0496 236.038625)">I=12/(2+4)=2 A</text>
    </g>
@@ -32,7 +32,7 @@
     <text style="font-size: 22px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="800.0496" y="534.118625" transform="rotate(-0 800.0496 534.118625)">Drops: 4 V and 8 V</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-18.530000 -106.829545)">
+  <g id="axes_2" transform="translate(-23.983546 -2.055338)">
    <g id="line2d_1">
     <path d="M 161.771707 296.332683  L 161.771707 207.087805  L 229.381463 207.087805  " clip-path="url(#p154763115b)" style="fill: none; stroke: #23313d; stroke-width: 1.8; stroke-linecap: square" />
    </g>
@@ -88,9 +88,9 @@
    </g>
   </g>
   <g id="text_10">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">A clockwise KVL traversal adds the source rise and resistor drops</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="144.409" transform="rotate(-0 55.44 144.409)">A clockwise KVL traversal adds the source rise and resistor drops</text>
   </g>
-  <g id="text_12" transform="translate(0.000000 -195.490801)">
+  <g id="text_12">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(120.504687 656.640625)">Clockwise traversal rises through the source from − to +, then crosses each resistor from + to − in the current direction. Sum of signed voltage changes</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(326.082812 669.358125)">around the closed loop is zero; reversing traversal reverses every sign.</text>
   </g>

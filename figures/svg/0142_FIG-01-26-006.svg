@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="936.000pt" height="528.966pt" viewBox="0.000000 4.012384 936.000000 528.965944" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="925.680pt" height="488.509pt" viewBox="4.640000 77.451000 925.680000 488.508934" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 648  L 936 648  L 936 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(0.780000 -69.400722)">
+  <g id="axes_1" transform="translate(0.385700 0.000000)">
    <g id="text_1">
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="178.4016" y="524.10885" transform="rotate(-0 178.4016 524.10885)">Left endpoints × h</text>
    </g>
@@ -31,11 +31,11 @@
    <g id="text_3">
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="757.5984" y="524.10885" transform="rotate(-0 757.5984 524.10885)">[1,4,2,4,1] × h/3</text>
    </g>
-   <g id="text_4">
+   <g id="text_4" transform="translate(0.000000 -40.111586)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="468" y="585.376175" transform="rotate(-0 468 585.376175)">Same grid: n = 4. Simpson requires n positive and even, with equally spaced nodes.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(0.780000 -69.400722)">
+  <g id="axes_2" transform="translate(0.385700 0.000000)">
    <g id="patch_2">
     <path d="M 42.12 440.64  L 299.52 440.64  L 299.52 136.08  L 42.12 136.08  z " style="fill: #ffffff" />
    </g>
@@ -275,7 +275,7 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle" x="170.82" y="130.08" transform="rotate(-0 170.82 130.08)">Left rectangles</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(0.780000 -69.400722)">
+  <g id="axes_3" transform="translate(0.385700 0.000000)">
    <g id="patch_9">
     <path d="M 346.32 440.64  L 603.72 440.64  L 603.72 136.08  L 346.32 136.08  z " style="fill: #ffffff" />
    </g>
@@ -509,7 +509,7 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle" x="475.02" y="130.08" transform="rotate(-0 475.02 130.08)">Trapezoids</text>
    </g>
   </g>
-  <g id="axes_4" transform="translate(0.780000 -69.400722)">
+  <g id="axes_4" transform="translate(0.385700 0.000000)">
    <g id="patch_16">
     <path d="M 650.52 440.64  L 907.92 440.64  L 907.92 136.08  L 650.52 136.08  z " style="fill: #ffffff" />
    </g>
@@ -753,7 +753,7 @@
     <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle" x="779.22" y="130.08" transform="rotate(-0 779.22 130.08)">Simpson parabolas</text>
    </g>
   </g>
-  <g id="text_59">
+  <g id="text_59" transform="translate(0 71.877)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="42.12" y="32.4" transform="rotate(-0 42.12 32.4)">Three composite quadrature constructions</text>
   </g>
   </g>

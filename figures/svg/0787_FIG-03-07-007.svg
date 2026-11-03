@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="870.327pt" height="588.471pt" viewBox="36.700000 10.264738 870.326571 588.470808" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="819.803pt" height="539.805pt" viewBox="44.197000 69.554000 819.803000 539.804870" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-28.695550 -58.141136)">
+  <g id="axes_1" transform="translate(-46.455503 -2.048805)">
    <g id="patch_2">
     <path d="M 181.0368 398.88  L 405.3168 398.88  L 405.3168 175.32  L 181.0368 175.32  z " clip-path="url(#p6498d96b79)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.8; stroke-linejoin: miter" />
    </g>
@@ -57,10 +57,10 @@
    </g>
    <g id="text_3">
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(135.497425 473.863773)">Discrete equilibrium stages</text>
-    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(247.49305 504.861664)"><tspan style="font-size: 23.000px">N</tspan><tspan style="font-size: 16.560px" dy="5.520px">eq</tspan><tspan style="font-size: 23.000px" dy="-5.520px">​</tspan><tspan style="font-size: 23.000px">=6</tspan></text>
+    <text style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(247.49305 504.861664)"><tspan font-size="23.000px">N</tspan><tspan font-size="15.640px" dy="5.520px">eq</tspan><tspan font-size="23.000px" dy="-5.520px">=6</tspan></text>
    </g>
    <g id="text_4">
-    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(632.28545 474.081391)"><tspan style="font-size: 22.000px">HETP=0.50 m; N</tspan><tspan style="font-size: 15.840px" dy="5.280px">eq</tspan><tspan style="font-size: 22.000px" dy="-5.280px">​</tspan><tspan style="font-size: 22.000px">=6</tspan></text>
+    <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(632.28545 474.081391)"><tspan font-size="22.000px">HETP=0.50 m; N</tspan><tspan font-size="14.960px" dy="5.280px">eq</tspan><tspan font-size="22.000px" dy="-5.280px">=6</tspan></text>
     <text style="font-size: 22px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(642.300606 504.343422)">HTU=0.75 m; NTU=4</text>
    </g>
    <g id="text_5">
@@ -93,12 +93,12 @@
    </g>
   </g>
   <g id="text_6">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Equilibrium stages and transfer units are different ways to describe contact height</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="95.960" transform="rotate(-0 55.44 95.960)">Equilibrium stages and transfer units are different ways to describe contact height</text>
   </g>
   <g id="text_7">
 </g>
-  <g id="text_8" transform="translate(0.000000 -94.203359)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(120.929688 656.501562)"><tspan style="font-size: 10.000px">Illustrative matching packing-height descriptions. N</tspan><tspan style="font-size: 7.200px" dy="2.400px">eq</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px"> and NTU are not generally equal. HETP and HTU depend on system, packing, loading and chosen</tspan></text>
+  <g id="text_8">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(120.929688 656.501562)"><tspan font-size="10.000px">Illustrative matching packing-height descriptions. N</tspan><tspan font-size="6.800px" dy="2.400px">eq</tspan><tspan font-size="10.000px" dy="-2.400px"> and NTU are not generally equal. HETP and HTU depend on system, packing, loading and chosen</tspan></text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(128.727344 669.497187)">transfer basis. A real tray count also needs an appropriate efficiency relation; diagram tray lines are conceptual, not a calibrated tray-spacing design.</text>
   </g>
  </g>

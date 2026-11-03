@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="919.500pt" height="597.771pt" viewBox="43.500000 11.750000 919.500000 597.771261" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="820.364pt" height="549.048pt" viewBox="43.636000 82.545000 820.364000 549.048016" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.000000 -68.962372)">
+  <g id="axes_1" transform="translate(-6.494548 -1.367485)">
    <g id="patch_2">
     <path d="M 333.5472 339.264  L 521.9424 339.264  L 521.9424 239.904  L 333.5472 239.904  z " clip-path="url(#p87b8cf36bc)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -140,9 +140,9 @@
    </g>
   </g>
   <g id="text_13">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Reference and plant-input disturbance use different closed-loop paths</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="108.697" transform="rotate(-0 55.44 108.697)">Reference and plant-input disturbance use different closed-loop paths</text>
   </g>
-  <g id="text_15" transform="translate(0.000000 -84.287343)">
+  <g id="text_15">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(119.503906 656.640625)">Disturbance is injected after the controller and before the plant. The reference numerator contains C; the disturbance numerator does not. A disturbance</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(189.132812 669.358125)">added directly to the output or to the measurement would have a different transfer path. Zero initial conditions are assumed.</text>
   </g>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="923.260pt" height="570.030pt" viewBox="35.440000 10.496953 923.260000 570.029674" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="821.776pt" height="519.106pt" viewBox="42.224000 81.329000 821.776000 519.105869" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-0.384692 -68.504724)">
+  <g id="axes_1" transform="translate(-7.190540 -2.740851)">
    <g id="patch_2">
     <path d="M 127.2096 364.104  L 369.432 364.104  L 369.432 200.16  L 127.2096 200.16  z " clip-path="url(#p48859d7df1)" style="fill: #ffffff; stroke: #235a78; stroke-width: 1.8; stroke-linejoin: miter" />
    </g>
@@ -43,7 +43,7 @@
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="243.8352" y="156.826563" transform="rotate(-0 243.8352 156.826563)">CSTR</text>
    </g>
    <g id="text_2">
-    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(120.682075 455.227281)"><tspan style="font-size: 20.000px">Uniform C</tspan><tspan style="font-size: 14.400px" dy="4.800px">A</tspan><tspan style="font-size: 20.000px" dy="-4.800px">​</tspan><tspan style="font-size: 20.000px">=0.40 mol/L</tspan></text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(120.682075 455.227281)"><tspan font-size="20.000px">Uniform C</tspan><tspan font-size="13.600px" dy="4.800px">A</tspan><tspan font-size="20.000px" dy="-4.800px">=0.40 mol/L</tspan></text>
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(206.339887 482.738219)">X=0.80</text>
    </g>
    <g id="text_3">
@@ -92,7 +92,7 @@
     </g>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-0.384692 -68.504724)">
+  <g id="axes_2" transform="translate(-7.190540 -2.740851)">
    <g id="patch_6">
     <path d="M 514.08 489.6  L 937.44 489.6  L 937.44 129.6  L 514.08 129.6  z " style="fill: #ffffff" />
    </g>
@@ -169,7 +169,7 @@
      </g>
     </g>
     <g id="text_9">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="725.76" y="517.668594" transform="rotate(-0 725.76 517.668594)"><tspan style="font-size: 11.000px">Conversion X</tspan><tspan style="font-size: 7.920px" dy="2.640px">A</tspan><tspan style="font-size: 11.000px" dy="-2.640px">​</tspan></text>
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="725.76" y="517.668594" transform="rotate(-0 725.76 517.668594)"><tspan font-size="11.000px">Conversion X</tspan><tspan font-size="7.480px" dy="2.640px">A</tspan></text>
     </g>
    </g>
    <g id="matplotlib.axis_2">
@@ -281,7 +281,7 @@
      </g>
     </g>
     <g id="text_18">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="480.447344" y="309.6" transform="rotate(-90 480.447344 309.6)"><tspan style="font-size: 11.000px">1/(-r</tspan><tspan style="font-size: 7.920px" dy="2.640px">A</tspan><tspan style="font-size: 11.000px" dy="-2.640px">​</tspan><tspan style="font-size: 11.000px">) (L·min/mol)</tspan></text>
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="480.447344" y="309.6" transform="rotate(-90 480.447344 309.6)"><tspan font-size="11.000px">1/(-r</tspan><tspan font-size="7.480px" dy="2.640px">A</tspan><tspan font-size="11.000px" dy="-2.640px">) (L·min/mol)</tspan></text>
     </g>
    </g>
    <g id="line2d_28">
@@ -295,12 +295,12 @@
    </g>
   </g>
   <g id="text_19">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">A CSTR is uniform at its outlet state; its volume is an outlet-rate rectangle</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="107.818" transform="rotate(-0 55.44 107.818)">A CSTR is uniform at its outlet state; its volume is an outlet-rate rectangle</text>
   </g>
   <g id="text_20">
 </g>
-  <g id="text_21" transform="translate(0.000000 -112.378535)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(126.786719 656.501562)"><tspan style="font-size: 10.000px">Same k=0.20 min⁻¹,C</tspan><tspan style="font-size: 7.200px" dy="2.400px">A0</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=2 mol/L,q=1 L/min as811. Outlet rate is kC</tspan><tspan style="font-size: 7.200px" dy="2.400px">A</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">=0.08 mol/(L·min), so reciprocal rate is12.5 L·min/mol and rectangle area is10</tspan></text>
+  <g id="text_21">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(126.786719 656.501562)"><tspan font-size="10.000px">Same k=0.20 min⁻¹,C</tspan><tspan font-size="6.800px" dy="2.400px">A0</tspan><tspan font-size="10.000px" dy="-2.400px">=2 mol/L,q=1 L/min as811. Outlet rate is kC</tspan><tspan font-size="6.800px" dy="2.400px">A</tspan><tspan font-size="10.000px" dy="-2.400px">=0.08 mol/(L·min), so reciprocal rate is12.5 L·min/mol and rectangle area is10</tspan></text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(162.914062 669.497187)">L·min/mol. For this decreasing-rate reaction, CSTR needs more volume than PFR at equal conversion; not universal for every rate curve.</text>
   </g>
  </g>

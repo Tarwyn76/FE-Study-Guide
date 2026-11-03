@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="771.429pt" height="483.395pt" viewBox="18.514286 1.234727 771.428571 483.395498" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="741.669pt" height="471.637pt" viewBox="28.320000 54.240000 741.668571 471.636944" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 576  L 864 576  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-17.280000 -51.840000)">
+  <g id="axes_1" transform="translate(-36.800000 0.000000)">
    <g id="text_1">
     <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="715.0464" y="183.711738" transform="rotate(-0 715.0464 183.711738)">A = diag(2, ½)</text>
    </g>
@@ -33,11 +33,11 @@
     <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(683.894056 408.182773)">Solid: input</text>
     <text style="font-size: 11px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(673.481869 423.007852)">Dashed: image</text>
    </g>
-   <g id="text_4">
+   <g id="text_4" transform="translate(0.000000 -14.710213)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="520.640975" transform="rotate(-0 432 520.640975)">Av = λv for a nonzero eigenvector v; λ may also be negative.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-17.280000 -51.840000)">
+  <g id="axes_2" transform="translate(-36.800000 0.000000)">
    <g id="patch_2">
     <path d="M 146.88 460.8  L 509.76 460.8  L 509.76 97.92  L 146.88 97.92  z " style="fill: #ffffff" />
    </g>
@@ -318,7 +318,7 @@
     <path d="M 289.832 255.989685  L 292.032 251.589685  L 294.232 255.989685  " style="fill: none; stroke-dasharray: 5.55,2.4; stroke-dashoffset: 0; stroke: #a23b34; stroke-width: 1.5; stroke-linecap: round" />
    </g>
   </g>
-  <g id="text_23">
+  <g id="text_23" transform="translate(0 52.261)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="28.8" transform="rotate(-0 38.88 28.8)">Eigenvectors keep their line through the origin</text>
   </g>
   </g>

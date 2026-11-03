@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="766.500pt" height="406.682pt" viewBox="30.000000 11.189408 766.500000 406.682451" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="780.181pt" height="405.506pt" viewBox="29.319000 144.842056 780.181000 405.506206" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,20 +21,20 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-6.387500 -135.358115)">
+  <g id="axes_1" transform="translate(-0.000000 -2.601932)">
    <g id="text_1">
-    <text style="font-size: 28px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="654.9984" y="209.836875" transform="rotate(-0 654.9984 209.836875)"><tspan style="font-size: 28.000px">ΣF</tspan><tspan style="font-size: 20.160px" dy="6.720px">ext</tspan><tspan style="font-size: 28.000px" dy="-6.720px">​</tspan><tspan style="font-size: 28.000px"> = ṁ(v₂−v₁)</tspan></text>
+    <text style="font-size: 28px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="654.9984" y="209.836875" transform="rotate(-0 654.9984 209.836875)"><tspan font-size="28.000px">ΣF</tspan><tspan font-size="19.040px" dy="6.720px">ext</tspan><tspan font-size="28.000px" dy="-6.720px"> = ṁ(v₂−v₁)</tspan></text>
    </g>
    <g id="text_2">
     <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(596.94465 327.743925)">ṁ=2 kg/s</text>
     <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(547.84215 360.08955)">v₁=3 î; v₂=8 î m/s</text>
-    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(570.269025 393.875175)"><tspan style="font-size: 24.000px">ΣF</tspan><tspan style="font-size: 17.280px" dy="5.760px">ext</tspan><tspan style="font-size: 24.000px" dy="-5.760px">​</tspan><tspan style="font-size: 24.000px">=10 î N</tspan></text>
+    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(570.269025 393.875175)"><tspan font-size="24.000px">ΣF</tspan><tspan font-size="16.320px" dy="5.760px">ext</tspan><tspan font-size="24.000px" dy="-5.760px">=10 î N</tspan></text>
    </g>
    <g id="text_3">
     <text style="font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="654.9984" y="493.899612" transform="rotate(-0 654.9984 493.899612)">Outlet flux − inlet flux</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(-6.387500 -135.358115)">
+  <g id="axes_2" transform="translate(-0.000000 -2.601932)">
    <g id="patch_2">
     <path d="M 105.12 405.648  L 316.8 405.648  L 316.8 320.976  L 105.12 299.808  z " clip-path="url(#p0f6a21a56f)" style="fill: #edf3f6; stroke: #235a78; stroke-linejoin: miter" />
    </g>
@@ -48,7 +48,7 @@
     <text style="font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #26776f" x="387.36" y="325.942875" transform="rotate(-0 387.36 325.942875)">ṁv₂</text>
    </g>
    <g id="text_6">
-    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #a23b34" x="175.68" y="219.354125" transform="rotate(-0 175.68 219.354125)"><tspan style="font-size: 17.000px">ΣF</tspan><tspan style="font-size: 12.240px" dy="4.080px">ext</tspan><tspan style="font-size: 17.000px" dy="-4.080px">​</tspan></text>
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #a23b34" x="175.68" y="219.354125" transform="rotate(-0 175.68 219.354125)"><tspan font-size="17.000px">ΣF</tspan><tspan font-size="11.560px" dy="4.080px">ext</tspan></text>
    </g>
    <g id="text_7">
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="153.73584" y="458.35125" transform="rotate(-0 153.73584 458.35125)">x</text>
@@ -78,9 +78,9 @@
    </g>
   </g>
   <g id="text_9">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="35.64" transform="rotate(-0 47.52 35.64)">Momentum flux is a vector; the control-volume boundary sets its signs</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="47.52" y="169.212" transform="rotate(-0 47.52 169.212)">Momentum flux is a vector; the control-volume boundary sets its signs</text>
   </g>
-  <g id="text_11" transform="translate(0.000000 -203.037173)">
+  <g id="text_11" transform="translate(0.000000 -70.902641)">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(109.775781 590.647875)">Steady, one-inlet/one-outlet control volume with uniform section velocities (β=1). ΣF includes pressure, body, and wall forces on</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(220.724219 603.365375)">the fluid. For nonuniform profiles use momentum correction factors or flux integrals.</text>
   </g>

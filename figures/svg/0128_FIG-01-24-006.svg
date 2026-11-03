@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="778.834pt" height="485.691pt" viewBox="16.662857 4.937143 778.834286 485.691429" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="746.928pt" height="388.562pt" viewBox="26.400000 82.349083 746.928000 388.562276" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 648  L 864 648  L 864 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-6.120000 -110.160000)">
+  <g id="axes_1" transform="translate(-28.408800 -34.453857)">
    <g id="text_1">
     
     <g style="fill: #23313d" transform="translate(607.5894 186.567)">
@@ -65,14 +65,14 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(616.010025 451.98645)">only x and y remain</text>
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(606.052838 468.159263)">when z bounds use x,y.</text>
    </g>
-   <g id="text_4">
+   <g id="text_4" transform="translate(0.000000 -97.619263)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="432" y="585.376175" transform="rotate(-0 432 585.376175)">Each integration adds the contributions along one coordinate direction.</text>
    </g>
   </g>
   <g id="patch_2">
    <path d="M 77.76 486  L 440.64 486  L 440.64 123.12  L 77.76 123.12  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_2" transform="translate(-6.120000 -110.160000)">
+  <g id="axes_2" transform="translate(-28.408800 -34.453857)">
    <g id="Poly3DCollection_1">
     <path d="M 264.103784 325.945275  L 232.743945 316.398533  L 232.548737 290.318431  L 264.103784 299.656216  z " clip-path="url(#p88eeb5f877)" style="fill: #a23b34; fill-opacity: 0.65; stroke: #a23b34; stroke-opacity: 0.65" />
     <path d="M 232.743945 316.398533  L 210.001627 330.092789  L 209.659872 303.713322  L 232.548737 290.318431  z " clip-path="url(#p88eeb5f877)" style="fill: #a23b34; fill-opacity: 0.65; stroke: #a23b34; stroke-opacity: 0.65" />
@@ -115,7 +115,7 @@
     <path d="M 102.401901 390.62581  L 294.48589 456.570554  L 295.751267 287.91116  L 96.097824 230.179373  z " clip-path="url(#p88eeb5f877)" style="fill: #235a78; fill-opacity: 0.07; stroke: #235a78; stroke-opacity: 0.07" />
    </g>
   </g>
-  <g id="text_8">
+  <g id="text_8" transform="translate(0 74.520)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="38.88" y="32.4" transform="rotate(-0 38.88 32.4)">Triple integration: solid → slab → strip → box</text>
   </g>
   </g>

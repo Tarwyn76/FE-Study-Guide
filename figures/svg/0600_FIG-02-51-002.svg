@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="872.626pt" height="534.900pt" viewBox="43.250000 13.000000 872.626071 534.900093" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="821.257pt" height="491.165pt" viewBox="42.743000 76.441000 821.257000 491.165178" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,7 +21,7 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(-13.846250 -64.883715)">
+  <g id="axes_1" transform="translate(-20.531425 -2.738007)">
    <g id="patch_2">
     <path d="M 306.6336 438.624  L 701.3664 438.624  L 701.3664 239.904  L 306.6336 239.904  z " clip-path="url(#p10d021ded2)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
    </g>
@@ -38,11 +38,11 @@
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #a23b34" x="450.1728" y="175.87075" transform="rotate(-0 450.1728 175.87075)">Q̇ in</text>
    </g>
    <g id="text_5">
-    <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #b47722" x="629.5968" y="175.592625" transform="rotate(-0 629.5968 175.592625)">Ẇ_s out</text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #b47722" x="629.5968" y="175.592625" transform="rotate(-0 629.5968 175.592625)"><tspan font-size="20.000px">Ẇ</tspan><tspan font-size="13.600px" dy="4.800px">s</tspan><tspan font-size="20.000px" dy="-4.800px"> out</tspan></text>
    </g>
    <g id="text_6">
-    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(273.826875 512.862188)"><tspan style="font-size: 24.000px">q−w</tspan><tspan style="font-size: 17.280px" dy="5.760px">s</tspan><tspan style="font-size: 24.000px" dy="-5.760px">​</tspan><tspan style="font-size: 24.000px">=(h₂−h₁)+(V₂²−V₁²)/2+g(z₂−z₁)</tspan></text>
-    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(381.324375 545.875312)"><tspan style="font-size: 24.000px">q=Q̇/ṁ; w</tspan><tspan style="font-size: 17.280px" dy="5.760px">s</tspan><tspan style="font-size: 24.000px" dy="-5.760px">​</tspan><tspan style="font-size: 24.000px">=Ẇ_s/ṁ</tspan></text>
+    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(273.826875 512.862188)"><tspan font-size="24.000px">q−w</tspan><tspan font-size="16.320px" dy="5.760px">s</tspan><tspan font-size="24.000px" dy="-5.760px">=(h₂−h₁)+(V₂²−V₁²)/2+g(z₂−z₁)</tspan></text>
+    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(381.324375 545.875312)"><tspan font-size="24.000px">q=Q̇/ṁ; w</tspan><tspan font-size="16.320px" dy="5.760px">s</tspan><tspan font-size="24.000px" dy="-5.760px">=Ẇ</tspan><tspan font-size="16.320px" dy="5.760px">s</tspan><tspan font-size="24.000px" dy="-5.760px">/ṁ</tspan></text>
    </g>
    <g id="patch_3">
     <path d="M 102.295273 339.264  Q 203.465132 339.264 302.734333 339.264  " clip-path="url(#p10d021ded2)" style="fill: none; stroke: #26776f; stroke-width: 1.7; stroke-linecap: round" />
@@ -62,9 +62,9 @@
    </g>
   </g>
   <g id="text_7">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">One-inlet, one-outlet steady flow balances heat, work, and stream energy</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="102.618" transform="rotate(-0 55.44 102.618)">One-inlet, one-outlet steady flow balances heat, work, and stream energy</text>
   </g>
-  <g id="text_9" transform="translate(0.000000 -142.160948)">
+  <g id="text_9">
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(138.839844 656.640625)">Steady storage, one inlet/outlet, fixed control volume. Use J/kg consistently; divide V²/2 and gz by 1000 if h is in kJ/kg. Enthalpy includes pressure</text>
    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(478.425 669.358125)">flow work.</text>
   </g>

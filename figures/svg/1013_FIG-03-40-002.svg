@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="958.320pt" height="525.600pt" viewBox="25.200000 12.240000 958.320000 525.600000" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="928.704pt" height="493.093pt" viewBox="21.504000 115.469000 928.704000 493.093000" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,12 +21,12 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(18.480000 -94.095683)">
+  <g id="axes_1">
    <g id="text_1">
     <text style="font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="564.202562" transform="rotate(-0 504 564.202562)">sAM(t)=[1+0.6cos(2π×1000t)]cos(2π×10,000t)</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(18.480000 -94.095683)">
+  <g id="axes_2">
    <g id="patch_2">
     <path d="M 80.64 482.4  L 483.84 482.4  L 483.84 151.2  L 80.64 151.2  z " style="fill: #ffffff" />
    </g>
@@ -276,7 +276,7 @@
     <path d="M 80.64 151.2  L 483.84 151.2  " style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linejoin: miter; stroke-linecap: square" />
    </g>
   </g>
-  <g id="axes_3" transform="translate(18.480000 -94.095683)">
+  <g id="axes_3">
    <g id="patch_7">
     <path d="M 594.72 482.4  L 937.44 482.4  L 937.44 151.2  L 594.72 151.2  z " style="fill: #ffffff" />
    </g>
@@ -449,11 +449,13 @@
    </g>
   </g>
   <g id="text_32">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Sinusoidal AM produces a carrier and two equal sidebands</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="139.467241" transform="rotate(-0 55.44 139.467241)">Sinusoidal AM produces a carrier and two equal sidebands</text>
   </g>
-  <g id="text_34" transform="translate(0.000000 -154.585764)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 657.360625)">Positive-frequency line spectrum reports sinusoidal peak amplitudes; a two-sided Fourier spectrum would halve each amplitude. Carrier fc=10 kHz, message</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 670.078125)">fm=1 kHz, sideband amplitude μAc/2=0.3 V, occupied frequency span2 kHz. Envelope detector model assumes no overmodulation.</text>
+  <g id="text_33">
+   </g>
+  <g id="text_34">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 583.931034)">Positive-frequency line spectrum reports sinusoidal peak amplitudes; a two-sided Fourier spectrum would halve each amplitude. Carrier fc=10 kHz, message</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(55.44 596.648534)">fm=1 kHz, sideband amplitude μAc/2=0.3 V, occupied frequency span2 kHz. Envelope detector model assumes no overmodulation.</text>
   </g>
  </g>
  <defs>

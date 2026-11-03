@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="940.000pt" height="560.019pt" viewBox="27.500000 11.750000 940.000000 560.018943" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="837.750pt" height="513.850pt" viewBox="26.250000 74.330000 837.750000 513.850396" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,13 +21,13 @@
   <g id="patch_1">
    <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(1.175000 -66.566860)">
+  <g id="axes_1" transform="translate(-6.632187 -3.489477)">
    <g id="text_1">
     <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(712.602 195.243937)">First-order sensor</text>
-    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(756.707625 227.589562)"><tspan style="font-size: 24.000px">f</tspan><tspan style="font-size: 17.280px" dy="5.760px">c</tspan><tspan style="font-size: 24.000px" dy="-5.760px">​</tspan><tspan style="font-size: 24.000px">=10 Hz</tspan></text>
+    <text style="font-size: 24px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(756.707625 227.589562)"><tspan font-size="24.000px">f</tspan><tspan font-size="16.320px" dy="5.760px">c</tspan><tspan font-size="24.000px" dy="-5.760px">=10 Hz</tspan></text>
    </g>
    <g id="text_2">
-    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(704.168563 350.899281)"><tspan style="font-size: 20.000px">At f</tspan><tspan style="font-size: 14.400px" dy="4.800px">c</tspan><tspan style="font-size: 20.000px" dy="-4.800px">​</tspan><tspan style="font-size: 20.000px">: −3.01 dB, −45°</tspan></text>
+    <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(704.168563 350.899281)"><tspan font-size="20.000px">At f</tspan><tspan font-size="13.600px" dy="4.800px">c</tspan><tspan font-size="20.000px" dy="-4.800px">: −3.01 dB, −45°</tspan></text>
     <text style="font-size: 20px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(679.974812 378.410219)">At 1 Hz: −0.043 dB, −5.71°</text>
    </g>
    <g id="text_3">
@@ -36,7 +36,7 @@
     <text style="font-size: 21px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(681.20325 572.081109)">Anti-alias LPF before ADC.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(1.175000 -66.566860)">
+  <g id="axes_2" transform="translate(-6.632187 -3.489477)">
    <g id="patch_2">
     <path d="M 80.64 302.4  L 655.2 302.4  L 655.2 122.4  L 80.64 122.4  z " style="fill: #ffffff" />
    </g>
@@ -517,7 +517,7 @@
     <path d="M 80.64 302.4  L 655.2 302.4  " style="fill: none; stroke: #000000; stroke-width: 1.1; stroke-linejoin: miter; stroke-linecap: square" />
    </g>
   </g>
-  <g id="axes_3" transform="translate(1.175000 -66.566860)">
+  <g id="axes_3" transform="translate(-6.632187 -3.489477)">
    <g id="patch_6">
     <path d="M 80.64 540  L 655.2 540  L 655.2 367.2  L 80.64 367.2  z " style="fill: #ffffff" />
    </g>
@@ -938,11 +938,11 @@
    </g>
   </g>
   <g id="text_32">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="39.6" transform="rotate(-0 55.44 39.6)">Measurement bandwidth limits magnitude fidelity and phase fidelity</text>
+   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="102.088" transform="rotate(-0 55.44 102.088)">Measurement bandwidth limits magnitude fidelity and phase fidelity</text>
   </g>
-  <g id="text_34" transform="translate(0.000000 -121.386628)">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(145.510937 656.3625)"><tspan style="font-size: 10.000px">H(jf)=1/(1+jf/f</tspan><tspan style="font-size: 7.200px" dy="2.400px">c</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">). Shading 0.1–1 Hz illustrates a stricter usable band, not a universal bandwidth rule. For a selected signal band f</tspan><tspan style="font-size: 7.200px" dy="2.400px">max</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">, choose</tspan></text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(132.340625 669.358125)"><tspan style="font-size: 10.000px">f</tspan><tspan style="font-size: 7.200px" dy="2.400px">s</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">&gt;2f</tspan><tspan style="font-size: 7.200px" dy="2.400px">max</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px"> with margin; the analog anti-alias filter must adequately attenuate content at and above f</tspan><tspan style="font-size: 7.200px" dy="2.400px">s</tspan><tspan style="font-size: 10.000px" dy="-2.400px">​</tspan><tspan style="font-size: 10.000px">/2. Sensor roll-off alone may be insufficient.</tspan></text>
+  <g id="text_34">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(145.510937 656.3625)"><tspan font-size="10.000px">H(jf)=1/(1+jf/f</tspan><tspan font-size="6.800px" dy="2.400px">c</tspan><tspan font-size="10.000px" dy="-2.400px">). Shading 0.1–1 Hz illustrates a stricter usable band, not a universal bandwidth rule. For a selected signal band f</tspan><tspan font-size="6.800px" dy="2.400px">max,</tspan><tspan font-size="10.000px" dy="-2.400px"> choose</tspan></text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(132.340625 669.358125)"><tspan font-size="10.000px">f</tspan><tspan font-size="6.800px" dy="2.400px">s</tspan><tspan font-size="10.000px" dy="-2.400px">&gt;2f</tspan><tspan font-size="6.800px" dy="2.400px">max</tspan><tspan font-size="10.000px" dy="-2.400px"> with margin; the analog anti-alias filter must adequately attenuate content at and above f</tspan><tspan font-size="6.800px" dy="2.400px">s</tspan><tspan font-size="10.000px" dy="-2.400px">/2. Sensor roll-off alone may be insufficient.</tspan></text>
   </g>
  </g>
  <defs>

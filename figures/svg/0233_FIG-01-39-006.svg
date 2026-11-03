@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="921.291pt" height="649.641pt" viewBox="8.022857 8.020253 921.291429 649.640506" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:ns4="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="893.440pt" height="581.096pt" viewBox="8.800000 91.937000 893.440000 581.095804" version="1.1">
  <metadata>
   <rdf:RDF>
    <ns2:Work>
@@ -21,12 +21,12 @@
   <g id="patch_1">
    <path d="M 0 792  L 936 792  L 936 0  L 0 0  z " style="fill: #ffffff" />
   </g>
-  <g id="axes_1" transform="translate(12.870000 -77.249261)">
-   <g id="text_1">
+  <g id="axes_1">
+   <g id="text_1" transform="translate(0.000000 -65.509421)">
     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="468" y="714.846575" transform="rotate(-0 468 714.846575)">σ is the standard deviation of the CHARTED statistic. Use the selected rule set consistently; additional tests alter false-alarm rates.</text>
    </g>
   </g>
-  <g id="axes_2" transform="translate(12.870000 -77.249261)">
+  <g id="axes_2">
    <g id="patch_2">
     <path d="M 56.16 332.64  L 430.56 332.64  L 430.56 150.48  L 56.16 150.48  z " style="fill: #ffffff" />
    </g>
@@ -271,7 +271,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="243.36" y="144.48" transform="rotate(-0 243.36 144.48)">One point outside ±3σ</text>
    </g>
   </g>
-  <g id="axes_3" transform="translate(12.870000 -77.249261)">
+  <g id="axes_3">
    <g id="patch_5">
     <path d="M 514.8 332.64  L 889.2 332.64  L 889.2 150.48  L 514.8 150.48  z " style="fill: #ffffff" />
    </g>
@@ -507,7 +507,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="702" y="144.48" transform="rotate(-0 702 144.48)">Two of three beyond 2σ, same side</text>
    </g>
   </g>
-  <g id="axes_4" transform="translate(12.870000 -77.249261)">
+  <g id="axes_4">
    <g id="patch_8">
     <path d="M 56.16 601.92  L 430.56 601.92  L 430.56 419.76  L 56.16 419.76  z " style="fill: #ffffff" />
    </g>
@@ -770,7 +770,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="243.36" y="413.76" transform="rotate(-0 243.36 413.76)">Four of five beyond 1σ, same side</text>
    </g>
   </g>
-  <g id="axes_5" transform="translate(12.870000 -77.249261)">
+  <g id="axes_5">
    <g id="patch_11">
     <path d="M 514.8 601.92  L 889.2 601.92  L 889.2 419.76  L 514.8 419.76  z " style="fill: #ffffff" />
    </g>
@@ -1023,7 +1023,7 @@
     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="702" y="413.76" transform="rotate(-0 702 413.76)">Eight consecutive on one side of CL</text>
    </g>
   </g>
-  <g id="text_73">
+  <g id="text_73" transform="translate(0 78.735)">
    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="42.12" y="39.6" transform="rotate(-0 42.12 39.6)">Four zone tests detect different departures from random variation</text>
   </g>
   </g>
