@@ -1,0 +1,76 @@
+name: Enforce current figure standards 0000-1403
+
+on:
+  push:
+    branches:
+      - figure-cleanup-strict
+    paths:
+      - tools/fix_current_figure_edge_reviews.py
+      - .github/workflows/enforce-current-figure-standards.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: enforce-current-figure-standards
+  cancel-in-progress: false
+
+jobs:
+  enforce:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out validation branch
+        uses: actions/checkout@v4
+        with:
+          ref: figure-cleanup-strict
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install validation dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install cairosvg pillow numpy
+
+      - name: Refresh full-corpus validation
+        run: |
+          python tools/validate_figures_current.py
+
+      - name: Repair all current text-edge reviews
+        run: |
+          python tools/fix_current_figure_edge_reviews.py
+
+      - name: Revalidate full corpus
+        run: |
+          python tools/validate_figures_current.py
+
+      - name: Require all figures to PASS
+        run: |
+          python - <<'PY'
+          import csv
+          from pathlib import Path
+          p=Path("meta/figure-current-standards-validation.csv")
+          rows=list(csv.DictReader(p.open(encoding="utf-8-sig")))
+          nonpass=[r for r in rows if r["status"] != "PASS"]
+          print(f"TOTAL={len(rows)} PASS={len(rows)-len(nonpass)} NONPASS={len(nonpass)}")
+          if nonpass:
+              for r in nonpass[:100]:
+                  print(r["index"], r["figure"], r["status"], r.get("issues",""), r.get("warnings",""))
+              raise SystemExit(1)
+          PY
+
+      - name: Commit repaired figures and reports
+        run: |
+          git config user.name "ChatGPT Figure QA"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add figures/png figures/svg meta/figure-current-standards-validation.csv meta/figure-current-standards-validation.md meta/figure-current-edge-padding-fixes.csv
+          if git diff --cached --quiet; then
+            echo "No changes required."
+            exit 0
+          fi
+          git commit -m "Enforce current figure standards across 0000-1403"
+          git push origin HEAD:figure-cleanup-strict
