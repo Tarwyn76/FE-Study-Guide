@@ -1,0 +1,76 @@
+name: Repair 0714 and 0898 then revalidate all figures
+
+on:
+  push:
+    branches:
+      - figure-cleanup-strict
+    paths:
+      - tools/repair_title_body_failures_0714_0898.py
+      - .github/workflows/repair-0714-0898-and-revalidate.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  repair-and-revalidate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out validation branch
+        uses: actions/checkout@v4
+        with:
+          ref: figure-cleanup-strict
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install cairosvg pillow numpy
+
+      - name: Repair targeted title-body failures
+        run: |
+          python tools/repair_title_body_failures_0714_0898.py
+
+      - name: Revalidate all 1404 figures
+        id: validate
+        continue-on-error: true
+        run: |
+          python tools/validate_figures_current.py
+
+      - name: Report targeted results
+        run: |
+          python - <<'PY'
+          import csv
+          from pathlib import Path
+          p=Path("meta/figure-current-standards-validation.csv")
+          rows=list(csv.DictReader(p.open(encoding="utf-8-sig")))
+          for idx in (714,898):
+              r=next(r for r in rows if int(r["index"])==idx)
+              print(idx,r["status"],r.get("issues",""),r.get("warnings",""))
+          pass_n=sum(r["status"]=="PASS" for r in rows)
+          review_n=sum(r["status"]=="REVIEW" for r in rows)
+          fail_n=sum(r["status"]=="FAIL" for r in rows)
+          print(f"SUMMARY PASS={pass_n} REVIEW={review_n} FAIL={fail_n}")
+          if any(int(r["index"]) in (714,898) and r["status"]=="FAIL" for r in rows):
+              raise SystemExit(1)
+          PY
+
+      - name: Commit targeted repairs and reports
+        run: |
+          git config user.name "ChatGPT Figure QA"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add figures/png figures/svg meta/figure-targeted-title-body-repairs.csv meta/figure-current-standards-validation.csv meta/figure-current-standards-validation.md
+          if ! git diff --cached --quiet; then
+            git commit -m "Repair figures 0714 and 0898 and revalidate corpus"
+            git push origin HEAD:figure-cleanup-strict
+          fi
+
+      - name: Preserve overall validator status
+        if: steps.validate.outcome == 'failure'
+        run: |
+          echo "Full corpus still has non-PASS figures; targeted hard failures were checked separately."
