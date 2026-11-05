@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="821.800pt" height="483.863pt" viewBox="42.200000 89.561000 821.800000 483.863024" version="1.1">
- <metadata>
+<ns0:svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="854.672pt" height="483.863pt" viewBox="42.200000 89.561000 854.672000 483.863024" version="1.1">
+ <ns0:metadata>
   <rdf:RDF>
    <ns2:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
@@ -13,63 +13,63 @@
     </dc:creator>
    </ns2:Work>
   </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="patch_1">
-   <path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
-  </g>
-  <g id="axes_1" transform="translate(-6.505917 -2.055604)">
-   <g id="patch_2">
-    <path d="M 55.44 249.84  L 952.56 249.84  L 952.56 135.576  L 55.44 135.576  z " clip-path="url(#pc96f62e865)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
-   </g>
-   <g id="text_1">
-    <text style="font-size: 25px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="199.606437" transform="rotate(-0 504 199.606437)">Example temperature instrument • indication 50.0°C</text>
-   </g>
-   <g id="text_2">
-    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="73.3824" y="314.146937" transform="rotate(-0 73.3824 314.146937)">RANGE</text>
-   </g>
-   <g id="text_3">
-    <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="468.1152" y="314.97475" transform="rotate(-0 468.1152 314.97475)">0–100°C input</text>
-   </g>
-   <g id="text_4">
-    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="73.3824" y="373.762938" transform="rotate(-0 73.3824 373.762938)">SENSITIVITY</text>
-   </g>
-   <g id="text_5">
-    <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="468.1152" y="374.59075" transform="rotate(-0 468.1152 374.59075)">10 mV/°C output slope</text>
-   </g>
-   <g id="text_6">
-    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="73.3824" y="433.378938" transform="rotate(-0 73.3824 433.378938)">DIGITAL RESOLUTION</text>
-   </g>
-   <g id="text_7">
-    <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="468.1152" y="434.20675" transform="rotate(-0 468.1152 434.20675)">0.1°C display increment</text>
-   </g>
-   <g id="text_8">
-    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="73.3824" y="492.994937" transform="rotate(-0 73.3824 492.994937)">ACCURACY SPECIFICATION</text>
-   </g>
-   <g id="text_9">
-    <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="468.1152" y="493.82275" transform="rotate(-0 468.1152 493.82275)">±0.5°C limit under stated conditions</text>
-   </g>
-   <g id="text_10">
-    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="73.3824" y="552.610937" transform="rotate(-0 73.3824 552.610937)">REPORTED UNCERTAINTY</text>
-   </g>
-   <g id="text_11">
-    <text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="468.1152" y="553.43875" transform="rotate(-0 468.1152 553.43875)">50.0°C ±0.3°C; expanded U, k=2</text>
-   </g>
-  </g>
-  <g id="text_12">
-   <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="116.417" transform="rotate(-0 55.44 116.417)">Range, sensitivity, resolution, accuracy limits, and uncertainty are separate quantities</text>
-  </g>
-  <g id="text_14">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(137.952344 656.640625)">Illustrative specifications, not a real product. Resolution is the smallest indicated increment; sensitivity is an input–output slope. An accuracy limit</text>
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(141.734375 669.358125)">is a specification, not automatically a standard uncertainty. The reported interval follows calibration, corrections and the full uncertainty budget.</text>
-  </g>
- </g>
- <defs>
-  <clipPath id="pc96f62e865">
-   <rect x="55.44" y="100.8" width="897.12" height="496.8" />
-  </clipPath>
- </defs>
-</svg>
+ </ns0:metadata>
+ <ns0:defs>
+  <ns0:style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</ns0:style>
+ </ns0:defs>
+ <ns0:g id="figure_1">
+  <ns0:g id="patch_1">
+   <ns0:path d="M 0 720  L 1008 720  L 1008 0  L 0 0  z " style="fill: #ffffff" />
+  </ns0:g>
+  <ns0:g id="axes_1" transform="translate(-6.505917 -2.055604)">
+   <ns0:g id="patch_2">
+    <ns0:path d="M 55.44 249.84  L 952.56 249.84  L 952.56 135.576  L 55.44 135.576  z " clip-path="url(#pc96f62e865)" style="fill: #edf3f6; stroke: #235a78; stroke-width: 1.1; stroke-linejoin: miter" />
+   </ns0:g>
+   <ns0:g id="text_1">
+    <ns0:text style="font-size: 25px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #23313d" x="504" y="199.606437" transform="rotate(-0 504 199.606437)">Example temperature instrument • indication 50.0°C</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_2">
+    <ns0:text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="73.3824" y="314.146937" transform="rotate(-0 73.3824 314.146937)">RANGE</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_3">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="468.1152" y="314.97475" transform="rotate(-0 468.1152 314.97475)">0–100°C input</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_4">
+    <ns0:text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="73.3824" y="373.762938" transform="rotate(-0 73.3824 373.762938)">SENSITIVITY</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_5">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="468.1152" y="374.59075" transform="rotate(-0 468.1152 374.59075)">10 mV/°C output slope</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_6">
+    <ns0:text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="73.3824" y="433.378938" transform="rotate(-0 73.3824 433.378938)">DIGITAL RESOLUTION</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_7">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="468.1152" y="434.20675" transform="rotate(-0 468.1152 434.20675)">0.1°C display increment</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_8">
+    <ns0:text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="73.3824" y="492.994937" transform="rotate(-0 73.3824 492.994937)">ACCURACY SPECIFICATION</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_9">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="468.1152" y="493.82275" transform="rotate(-0 468.1152 493.82275)">±0.5°C limit under stated conditions</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_10">
+    <ns0:text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="73.3824" y="552.610937" transform="rotate(-0 73.3824 552.610937)">REPORTED UNCERTAINTY</ns0:text>
+   </ns0:g>
+   <ns0:g id="text_11">
+    <ns0:text style="font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="468.1152" y="553.43875" transform="rotate(-0 468.1152 553.43875)">50.0°C ±0.3°C; expanded U, k=2</ns0:text>
+   </ns0:g>
+  </ns0:g>
+  <ns0:g id="text_12">
+   <ns0:text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #23313d" x="55.44" y="116.417" transform="rotate(-0 55.44 116.417)">Range, sensitivity, resolution, accuracy limits, and uncertainty are separate quantities</ns0:text>
+  </ns0:g>
+  <ns0:g id="text_14">
+   <ns0:text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(137.952344 656.640625)">Illustrative specifications, not a real product. Resolution is the smallest indicated increment; sensitivity is an input–output slope. An accuracy limit</ns0:text>
+   <ns0:text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #23313d" transform="translate(141.734375 669.358125)">is a specification, not automatically a standard uncertainty. The reported interval follows calibration, corrections and the full uncertainty budget.</ns0:text>
+  </ns0:g>
+ </ns0:g>
+ <ns0:defs>
+  <ns0:clipPath id="pc96f62e865">
+   <ns0:rect x="55.44" y="100.8" width="897.12" height="496.8" />
+  </ns0:clipPath>
+ </ns0:defs>
+</ns0:svg>

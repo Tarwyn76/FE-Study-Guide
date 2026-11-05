@@ -2,12 +2,12 @@
 
 - Indexed range: 0000–1403
 - Canonical figures checked: 1404
-- PASS: 1136
-- REVIEW: 268
-- FAIL: 0
+- PASS: 1344
+- REVIEW: 59
+- FAIL: 1
 
 ## Failure categories
 
-- None
+- title_body_collision: 1
 
 REVIEW is reserved for edge-contact conditions that may be intentional approved long-title/asymmetric exceptions. FAIL indicates a current standards violation.
