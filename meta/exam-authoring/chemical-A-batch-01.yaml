@@ -1,0 +1,261 @@
+schema_version: 1
+authoring_status: in-progress
+target_exam:
+  discipline: chemical
+  exam: A
+  exam_type: practice-A
+  final_question_count: 110
+  working_time_minutes: 320
+batch:
+  number: 1
+  questions_in_batch: 20
+  cumulative_questions: 20
+  blueprint_coverage:
+    Mathematics: 6
+    Probability and Statistics: 4
+    Engineering Sciences: 4
+    Materials Science: 4
+    Chemistry and Biology: 2
+notes:
+  - This is an authoring-stage file and is intentionally outside appendices/practice-exams until the full 110-item form is complete.
+  - Items are original practice questions aligned to the Chemical Practice A blueprint and must receive ledger concept IDs before promotion to the audited final directory.
+items:
+  - id: CHEM-A-Q001
+    knowledge_area: Mathematics
+    question_type: multiple-choice
+    prompt: "For f(x)=x^2 e^x, what is f'(x) at x=1?"
+    choices:
+      - "A) e"
+      - "B) 2e"
+      - "C) 3e"
+      - "D) 4e"
+    answer: C
+    solution: "Using the product rule, f'(x)=2xe^x+x^2e^x=e^x(2x+x^2). At x=1, f'(1)=3e."
+
+  - id: CHEM-A-Q002
+    knowledge_area: Mathematics
+    question_type: multiple-choice
+    prompt: "Evaluate the definite integral from 0 to 2 of (3x^2+2) dx."
+    choices:
+      - "A) 8"
+      - "B) 10"
+      - "C) 12"
+      - "D) 14"
+    answer: C
+    solution: "An antiderivative is x^3+2x. Evaluating from 0 to 2 gives 8+4=12."
+
+  - id: CHEM-A-Q003
+    knowledge_area: Mathematics
+    question_type: multiple-choice
+    prompt: "Solve the system 2x+y=7 and x-y=2. What is x?"
+    choices:
+      - "A) 2"
+      - "B) 3"
+      - "C) 4"
+      - "D) 5"
+    answer: B
+    solution: "Adding the equations gives 3x=9, so x=3. Substitution gives y=1."
+
+  - id: CHEM-A-Q004
+    knowledge_area: Mathematics
+    question_type: multiple-choice
+    prompt: "If z=x^2 y+sin(y), what is the partial derivative ∂z/∂x?"
+    choices:
+      - "A) 2xy"
+      - "B) x^2+cos(y)"
+      - "C) 2xy+cos(y)"
+      - "D) x^2"
+    answer: A
+    solution: "Treat y as constant. The derivative of x^2 y with respect to x is 2xy, and sin(y) contributes zero."
+
+  - id: CHEM-A-Q005
+    knowledge_area: Mathematics
+    question_type: multiple-choice
+    prompt: "A quantity follows y=5e^{-0.20t}. At what time t does y first equal 1.0?"
+    choices:
+      - "A) 5.00"
+      - "B) 8.05"
+      - "C) 10.0"
+      - "D) 16.1"
+    answer: B
+    solution: "Set 1=5e^{-0.20t}. Then e^{-0.20t}=0.2, so t=-ln(0.2)/0.20=8.047, or 8.05."
+
+  - id: CHEM-A-Q006
+    knowledge_area: Mathematics
+    question_type: multiple-choice
+    prompt: "For the vector a=(3,4), what is its Euclidean magnitude?"
+    choices:
+      - "A) 4"
+      - "B) 5"
+      - "C) 7"
+      - "D) 25"
+    answer: B
+    solution: "The magnitude is sqrt(3^2+4^2)=sqrt(25)=5."
+
+  - id: CHEM-A-Q007
+    knowledge_area: Probability and Statistics
+    question_type: multiple-choice
+    prompt: "A normal population has mean 50 and standard deviation 4. What z-score corresponds to x=58?"
+    choices:
+      - "A) 1.0"
+      - "B) 1.5"
+      - "C) 2.0"
+      - "D) 2.5"
+    answer: C
+    solution: "z=(x-μ)/σ=(58-50)/4=2.0."
+
+  - id: CHEM-A-Q008
+    knowledge_area: Probability and Statistics
+    question_type: multiple-choice
+    prompt: "Two independent events have probabilities P(A)=0.60 and P(B)=0.30. What is P(A and B)?"
+    choices:
+      - "A) 0.18"
+      - "B) 0.30"
+      - "C) 0.60"
+      - "D) 0.90"
+    answer: A
+    solution: "For independent events, P(A∩B)=P(A)P(B)=(0.60)(0.30)=0.18."
+
+  - id: CHEM-A-Q009
+    knowledge_area: Probability and Statistics
+    question_type: multiple-choice
+    prompt: "Measurements are 9.8, 10.1, 10.0, and 10.1. What is the sample mean?"
+    choices:
+      - "A) 9.90"
+      - "B) 10.00"
+      - "C) 10.05"
+      - "D) 10.10"
+    answer: B
+    solution: "The sum is 40.0 and there are four observations, so the sample mean is 40.0/4=10.00."
+
+  - id: CHEM-A-Q010
+    knowledge_area: Probability and Statistics
+    question_type: multiple-choice
+    prompt: "A fair six-sided die is rolled twice. What is the probability that both rolls are even?"
+    choices:
+      - "A) 1/6"
+      - "B) 1/4"
+      - "C) 1/3"
+      - "D) 1/2"
+    answer: B
+    solution: "Each roll has probability 3/6=1/2 of being even. Independence gives (1/2)(1/2)=1/4."
+
+  - id: CHEM-A-Q011
+    knowledge_area: Engineering Sciences
+    question_type: multiple-choice
+    prompt: "A 12 kg object accelerates at 2.5 m/s^2. What net force acts on it?"
+    choices:
+      - "A) 4.8 N"
+      - "B) 14.5 N"
+      - "C) 30 N"
+      - "D) 120 N"
+    answer: C
+    solution: "Newton's second law gives F=ma=(12 kg)(2.5 m/s^2)=30 N."
+
+  - id: CHEM-A-Q012
+    knowledge_area: Engineering Sciences
+    question_type: multiple-choice
+    prompt: "A 2.0 kW motor operates for 15 minutes. How much energy does it deliver, neglecting losses?"
+    choices:
+      - "A) 0.50 MJ"
+      - "B) 1.2 MJ"
+      - "C) 1.8 MJ"
+      - "D) 30 MJ"
+    answer: C
+    solution: "Energy is power times time. E=(2.0 kJ/s)(15×60 s)=1800 kJ=1.8 MJ."
+
+  - id: CHEM-A-Q013
+    knowledge_area: Engineering Sciences
+    question_type: multiple-choice
+    prompt: "A horizontal force of 80 N moves an object 6 m in the direction of the force. What work is done?"
+    choices:
+      - "A) 13.3 J"
+      - "B) 74 J"
+      - "C) 480 J"
+      - "D) 960 J"
+    answer: C
+    solution: "For force parallel to displacement, W=Fd=(80 N)(6 m)=480 J."
+
+  - id: CHEM-A-Q014
+    knowledge_area: Engineering Sciences
+    question_type: multiple-choice
+    prompt: "A liquid has density 850 kg/m^3. What is its specific gravity relative to water at 1000 kg/m^3?"
+    choices:
+      - "A) 0.85"
+      - "B) 1.18"
+      - "C) 8.50"
+      - "D) 850"
+    answer: A
+    solution: "Specific gravity is the density ratio, SG=850/1000=0.85, dimensionless."
+
+  - id: CHEM-A-Q015
+    knowledge_area: Materials Science
+    question_type: multiple-choice
+    prompt: "A metal specimen carries an axial tensile load of 20 kN over a cross-sectional area of 100 mm^2. What is the engineering normal stress?"
+    choices:
+      - "A) 20 MPa"
+      - "B) 100 MPa"
+      - "C) 200 MPa"
+      - "D) 2000 MPa"
+    answer: C
+    solution: "Stress is σ=F/A=20,000 N/(100 mm^2)=200 N/mm^2=200 MPa."
+
+  - id: CHEM-A-Q016
+    knowledge_area: Materials Science
+    question_type: multiple-choice
+    prompt: "Within the linear-elastic range, a material has E=200 GPa and tensile stress 100 MPa. What is the axial strain?"
+    choices:
+      - "A) 0.0005"
+      - "B) 0.0020"
+      - "C) 0.0050"
+      - "D) 0.50"
+    answer: A
+    solution: "Hooke's law gives ε=σ/E=(100×10^6)/(200×10^9)=5.0×10^-4=0.0005."
+
+  - id: CHEM-A-Q017
+    knowledge_area: Materials Science
+    question_type: multiple-choice
+    prompt: "Which material property most directly measures resistance to permanent indentation or scratching?"
+    choices:
+      - "A) Ductility"
+      - "B) Hardness"
+      - "C) Toughness"
+      - "D) Thermal conductivity"
+    answer: B
+    solution: "Hardness characterizes resistance to localized plastic deformation such as indentation or scratching."
+
+  - id: CHEM-A-Q018
+    knowledge_area: Materials Science
+    question_type: multiple-choice
+    prompt: "For a crystalline solid, diffusion generally becomes faster as temperature increases primarily because:"
+    choices:
+      - "A) atomic vibrational energy increases and more atoms can overcome activation barriers"
+      - "B) density always increases with temperature"
+      - "C) grain boundaries disappear completely"
+      - "D) the diffusion coefficient becomes independent of activation energy"
+    answer: A
+    solution: "Diffusion coefficients typically follow Arrhenius behavior, so higher temperature increases the fraction of atoms able to overcome the activation-energy barrier."
+
+  - id: CHEM-A-Q019
+    knowledge_area: Chemistry and Biology
+    question_type: multiple-choice
+    prompt: "What is the pH of an aqueous solution with hydrogen-ion concentration [H+]=1.0×10^-3 mol/L?"
+    choices:
+      - "A) 2.0"
+      - "B) 3.0"
+      - "C) 7.0"
+      - "D) 11.0"
+    answer: B
+    solution: "pH=-log10[H+]=-log10(1.0×10^-3)=3.0."
+
+  - id: CHEM-A-Q020
+    knowledge_area: Chemistry and Biology
+    question_type: multiple-choice
+    prompt: "For the balanced combustion reaction CH4+2O2→CO2+2H2O, how many moles of O2 are stoichiometrically required per mole of CH4?"
+    choices:
+      - "A) 0.5 mol"
+      - "B) 1 mol"
+      - "C) 2 mol"
+      - "D) 4 mol"
+    answer: C
+    solution: "The balanced stoichiometric coefficient of O2 is 2 for every coefficient of 1 for CH4, so 2 mol O2 are required per mol CH4."
