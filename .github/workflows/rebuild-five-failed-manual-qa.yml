@@ -1,0 +1,37 @@
+name: Rebuild five failed manual-QA figures
+
+on:
+  push:
+    branches: [figure-cleanup-strict]
+    paths:
+      - tools/rebuild_failed_manual_qa_figures_20261106.py
+      - .github/workflows/rebuild-five-failed-manual-qa.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: figure-cleanup-strict
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install --upgrade pip
+      - run: python -m pip install matplotlib numpy
+      - run: python tools/rebuild_failed_manual_qa_figures_20261106.py
+      - name: Commit rebuilt figures
+        run: |
+          git config user.name "ChatGPT Figure QA"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add figures/png/0521_FIG-02-39-007.png figures/svg/0521_FIG-02-39-007.svg
+          git add figures/png/0579_FIG-02-48-002.png figures/svg/0579_FIG-02-48-002.svg
+          git add figures/png/0583_FIG-02-48-006.png figures/svg/0583_FIG-02-48-006.svg
+          git add figures/png/0614_FIG-02-53-002.png figures/svg/0614_FIG-02-53-002.svg
+          git add figures/png/0616_FIG-02-53-004.png figures/svg/0616_FIG-02-53-004.svg
+          git commit -m "Rebuild five failed manual-QA figures"
+          git push origin HEAD:figure-cleanup-strict
