@@ -32,35 +32,48 @@ def beam_panel(ax, loadP=True, loadW=True, label=""):
             ax.annotate("",xy=(x,1.28),xytext=(x,2.15),arrowprops=dict(arrowstyle="-|>",lw=1.0,color=C_TEAL))
     ax.text(5,0.38,label,ha="center",va="center",fontsize=12,color=C_TEXT)
 
+def save_exact(fig, idx, stem, width_pt, height_pt):
+    fig.set_size_inches(width_pt/72.0, height_pt/72.0, forward=True)
+    fig.savefig(SVG/f"{idx}_{stem}.svg", format="svg")
+    fig.savefig(PNG/f"{idx}_{stem}.png", dpi=300)
+    plt.close(fig)
+
 def fig0521():
-    fig=plt.figure(figsize=(11,6.5))
-    fig.text(.5,.955,"Linear superposition and transformed sections solve compatible elastic problems",ha="center",va="top",fontsize=17,fontweight="bold",color=C_TEXT)
-    gs=fig.add_gridspec(3,6,height_ratios=[1.0,1.35,.55],left=.045,right=.965,top=.88,bottom=.1,hspace=.34,wspace=.36)
-    a1=fig.add_subplot(gs[0,0:2]); beam_panel(a1,True,True,"P + w")
-    a2=fig.add_subplot(gs[0,2:4]); beam_panel(a2,True,False,"P alone")
-    a3=fig.add_subplot(gs[0,4:6]); beam_panel(a3,False,True,"w alone")
-    fig.text(.338,.745,"=",fontsize=25,color=C_TEXT,ha="center")
-    fig.text(.661,.745,"+",fontsize=25,color=C_TEXT,ha="center")
+    fig=plt.figure(figsize=(1030/72,600/72))
+    fig.text(.5,.955,"Linear superposition and transformed sections solve compatible elastic problems",
+             ha="center",va="top",fontsize=17,fontweight="bold",color=C_TEXT)
 
-    axL=fig.add_subplot(gs[1,0:3]); axL.axis("off"); axL.set_xlim(0,10); axL.set_ylim(0,8)
-    axL.text(5,7.55,"BONDED ORIGINAL SECTION",ha="center",fontsize=13,fontweight="bold",color=C_TEXT)
-    axL.add_patch(Rectangle((3.2,1.9),3.6,2.3,fc=C_FILL,ec=C_BLUE,lw=1.3))
-    axL.add_patch(Rectangle((3.2,4.2),3.6,2.3,fc=C_FILL2,ec=C_TEAL,lw=1.3))
-    axL.text(5,3.0,"E₁ = 100 GPa",ha="center",va="center",fontsize=12,color=C_TEXT)
-    axL.text(5,5.3,"E₂ = 200 GPa",ha="center",va="center",fontsize=12,color=C_TEXT)
+    # Compact top row: smaller beam diagrams and reduced gaps.
+    a1=fig.add_axes([.045,.665,.265,.205]); beam_panel(a1,True,True,"P + w")
+    a2=fig.add_axes([.365,.665,.265,.205]); beam_panel(a2,True,False,"P alone")
+    a3=fig.add_axes([.685,.665,.265,.205]); beam_panel(a3,False,True,"w alone")
+    fig.text(.337,.745,"=",fontsize=24,color=C_TEXT,ha="center",va="center")
+    fig.text(.662,.745,"+",fontsize=24,color=C_TEXT,ha="center",va="center")
 
-    axR=fig.add_subplot(gs[1,3:6]); axR.axis("off"); axR.set_xlim(0,10); axR.set_ylim(0,8)
-    axR.text(5,7.55,"REFERENCE E₁: WIDTH₂ → n b",ha="center",fontsize=13,fontweight="bold",color=C_TEXT)
-    axR.add_patch(Rectangle((3.6,1.9),2.8,2.3,fc=C_FILL,ec=C_BLUE,lw=1.3))
-    axR.add_patch(Rectangle((2.2,4.2),5.6,2.3,fc=C_FILL2,ec=C_TEAL,lw=1.3))
-    axR.plot([1.8,8.2],[4.58,4.58],"--",color=C_RED,lw=1.3)
-    axR.text(8.28,4.58,"NA",va="center",fontsize=11,color=C_RED)
+    # Reduced-size transformed-section diagrams.
+    axL=fig.add_axes([.11,.315,.34,.285]); axL.axis("off"); axL.set_xlim(0,10); axL.set_ylim(0,8)
+    axL.text(5,7.35,"BONDED ORIGINAL SECTION",ha="center",fontsize=12.5,fontweight="bold",color=C_TEXT)
+    axL.add_patch(Rectangle((3.5,1.85),3.0,1.95,fc=C_FILL,ec=C_BLUE,lw=1.25))
+    axL.add_patch(Rectangle((3.5,3.80),3.0,1.95,fc=C_FILL2,ec=C_TEAL,lw=1.25))
+    axL.text(5,2.82,"E₁ = 100 GPa",ha="center",va="center",fontsize=11,color=C_TEXT)
+    axL.text(5,4.78,"E₂ = 200 GPa",ha="center",va="center",fontsize=11,color=C_TEXT)
 
-    axB=fig.add_subplot(gs[2,:]); axB.axis("off")
-    axB.text(.28,.72,"n = E₂/E₁ = 2",transform=axB.transAxes,ha="center",fontsize=15,color=C_TEXT)
-    axB.text(.72,.72,"Neutral axis from transformed-area centroid",transform=axB.transAxes,ha="center",fontsize=14,color=C_TEXT)
-    axB.text(.5,.2,"Superposition requires linear elasticity, small deformation, and unchanged boundary conditions.\nTransformed-section analysis assumes perfect bonding and common longitudinal strain.",transform=axB.transAxes,ha="center",va="center",fontsize=9.5,color=C_TEXT)
-    save(fig,"0521","FIG-02-39-007")
+    axR=fig.add_axes([.55,.315,.34,.285]); axR.axis("off"); axR.set_xlim(0,10); axR.set_ylim(0,8)
+    axR.text(5,7.35,"REFERENCE E₁: WIDTH₂ → n b",ha="center",fontsize=12.5,fontweight="bold",color=C_TEXT)
+    axR.add_patch(Rectangle((3.85,1.85),2.3,1.95,fc=C_FILL,ec=C_BLUE,lw=1.25))
+    axR.add_patch(Rectangle((2.55,3.80),4.9,1.95,fc=C_FILL2,ec=C_TEAL,lw=1.25))
+    axR.plot([2.25,7.75],[4.15,4.15],"--",color=C_RED,lw=1.25)
+    axR.text(7.87,4.15,"NA",va="center",fontsize=10.5,color=C_RED)
+
+    # Tight bottom annotation band.
+    fig.text(.30,.245,"n = E₂/E₁ = 2",ha="center",fontsize=14,color=C_TEXT)
+    fig.text(.69,.245,"Neutral axis from transformed-area centroid",ha="center",fontsize=13,color=C_TEXT)
+    fig.text(.5,.115,
+             "Superposition requires linear elasticity, small deformation, and unchanged boundary conditions.\n"
+             "Transformed-section analysis assumes perfect bonding and common longitudinal strain.",
+             ha="center",va="center",fontsize=9.2,color=C_TEXT)
+
+    save_exact(fig,"0521","FIG-02-39-007",1030,600)
 
 def fig0579():
     fig=plt.figure(figsize=(10.8,6.2))
@@ -115,29 +128,39 @@ def fig0583():
     save(fig,"0583","FIG-02-48-006")
 
 def fig0614():
-    fig=plt.figure(figsize=(10.6,6.2))
-    fig.text(.5,.955,"A Carnot heat-engine cycle has two isotherms and two isentropes",ha="center",va="top",fontsize=17,fontweight="bold",color=C_TEXT)
-    gs=fig.add_gridspec(2,5,height_ratios=[1,.16],left=.07,right=.95,top=.88,bottom=.1,wspace=.38)
-    ax=fig.add_subplot(gs[0,:3]); ax.set_xlim(.6,2.4); ax.set_ylim(0,720)
-    ax.set_xlabel("Specific entropy s (kJ/(kg·K))",fontsize=10); ax.set_ylabel("Temperature T (K)",fontsize=10); ax.grid(alpha=.12)
+    fig=plt.figure(figsize=(900/72,540/72))
+    fig.text(.5,.955,"A Carnot heat-engine cycle has two isotherms and two isentropes",
+             ha="center",va="top",fontsize=16.5,fontweight="bold",color=C_TEXT)
+
+    # Larger plot area with less dead space around it.
+    ax=fig.add_axes([.07,.205,.54,.66])
+    ax.set_xlim(.6,2.4); ax.set_ylim(0,720)
+    ax.set_xlabel("Specific entropy s (kJ/(kg·K))",fontsize=10)
+    ax.set_ylabel("Temperature T (K)",fontsize=10)
+    ax.grid(alpha=.12)
     pts=np.array([[1,600],[2,600],[2,300],[1,300],[1,600]])
     ax.fill(pts[:,0],pts[:,1],color=C_FILL,alpha=.9)
     ax.plot(pts[:,0],pts[:,1],color=C_BLUE,lw=1.8)
     for (x1,y1),(x2,y2) in zip(pts[:-1],pts[1:]):
-        ax.annotate("",xy=(x2,y2),xytext=(x1,y1),arrowprops=dict(arrowstyle="-|>",color=C_BLUE,lw=1.6))
+        ax.annotate("",xy=(x2,y2),xytext=(x1,y1),
+                    arrowprops=dict(arrowstyle="-|>",color=C_BLUE,lw=1.6))
     for i,(x,y) in enumerate(pts[:-1],1):
-        ax.text(x+.04,y+18 if i<3 else y+18,str(i),fontsize=12,color=C_RED)
+        ax.text(x+.04,y+18,str(i),fontsize=12,color=C_RED)
 
-    ar=fig.add_subplot(gs[0,3:]); ar.axis("off")
-    ar.text(.02,.78,r"$q_H=600\ \mathrm{kJ/kg}$",fontsize=18,color=C_TEXT)
-    ar.text(.02,.68,r"$q_L=300\ \mathrm{kJ/kg}$",fontsize=18,color=C_TEXT)
-    ar.text(.02,.48,r"$w_{net}=300\ \mathrm{kJ/kg}$",fontsize=18,color=C_TEXT)
-    ar.text(.02,.36,r"$\eta=1-\dfrac{T_L}{T_H}=0.50$",fontsize=19,color=C_TEXT)
-    ar.text(.02,.16,"Clockwise engine cycle\nΔs across heat input = 1 kJ/(kg·K)",fontsize=14,color=C_TEXT,linespacing=1.25)
+    # Condensed right-hand text block with intentionally even spacing.
+    fig.text(.665,.745,r"$q_H=600\ \mathrm{kJ/kg}$",fontsize=16,color=C_TEXT)
+    fig.text(.665,.665,r"$q_L=300\ \mathrm{kJ/kg}$",fontsize=16,color=C_TEXT)
+    fig.text(.665,.515,r"$w_{net}=300\ \mathrm{kJ/kg}$",fontsize=16,color=C_TEXT)
+    fig.text(.665,.405,r"$\eta=1-\dfrac{T_L}{T_H}=0.50$",fontsize=17,color=C_TEXT)
+    fig.text(.665,.285,"Clockwise engine cycle",fontsize=13.5,color=C_TEXT)
+    fig.text(.665,.225,"Δs across heat input = 1 kJ/(kg·K)",fontsize=13.5,color=C_TEXT)
 
-    ab=fig.add_subplot(gs[1,:]); ab.axis("off")
-    ab.text(.5,.5,"Internally reversible cycle between constant-temperature reservoirs. Rectangle area equals net work per unit mass because net cycle heat equals net work.",ha="center",fontsize=9.5,color=C_TEXT)
-    save(fig,"0614","FIG-02-53-002")
+    fig.text(.5,.075,
+             "Internally reversible cycle between constant-temperature reservoirs. "
+             "Rectangle area equals net work per unit mass because net cycle heat equals net work.",
+             ha="center",fontsize=8.8,color=C_TEXT)
+
+    save_exact(fig,"0614","FIG-02-53-002",900,540)
 
 def fig0616():
     fig=plt.figure(figsize=(11,6.4))
