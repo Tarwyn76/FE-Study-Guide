@@ -1,0 +1,130 @@
+﻿Index,Figure ID,Check,Independent Result,Artwork/Expected,Units,Result
+740,FIG-03-01-002,Mixer A balance,40.0,40,mol/s A,PASS
+740,FIG-03-01-002,Product A balance,40.0,40,mol/s A,PASS
+748,FIG-03-02-003,Bypass blend temperature,62.0,62,°C,PASS
+750,FIG-03-02-005,Residence time,5.0,5,min,PASS
+750,FIG-03-02-005,Step response at one time constant,0.6321205588285577,0.632,fraction,PASS
+753,FIG-03-03-001,A outlet from extent,2,2,mol,PASS
+753,FIG-03-03-001,B outlet from extent,6,6,mol,PASS
+753,FIG-03-03-001,A conversion,0.6,0.60,,PASS
+753,FIG-03-03-001,C yield on initial limiting A,0.6,0.60,,PASS
+754,FIG-03-03-002,"A outlet, two extents",2,2,mol/s,PASS
+754,FIG-03-03-002,B production,6,6,mol/s,PASS
+754,FIG-03-03-002,C production,2,2,mol/s,PASS
+754,FIG-03-03-002,A conversion,0.8,0.80,,PASS
+754,FIG-03-03-002,B yield,0.6,0.60,,PASS
+754,FIG-03-03-002,B/C selectivity,3.0,3,,PASS
+755,FIG-03-03-003,Stoichiometric B required,10,10,mol,PASS
+755,FIG-03-03-003,B excess fraction,0.2,0.20,,PASS
+756,FIG-03-03-004,Theoretical O2 for CH4,2,2,mol O2,PASS
+756,FIG-03-03-004,20% excess O2 feed,2.4,2.4,mol O2,PASS
+756,FIG-03-03-004,Air nitrogen at N2/O2=3.76,9.024,9.024,mol N2,PASS
+756,FIG-03-03-004,Excess O2 in products,0.3999999999999999,0.4,mol O2,PASS
+757,FIG-03-03-005,Standard reaction enthalpy,-802.3,−802.30,kJ/mol reaction,PASS
+758,FIG-03-03-006,Kirchhoff heat-capacity correction,4.04,+4.04,kJ/mol,PASS
+758,FIG-03-03-006,Corrected reaction enthalpy,-95.96,−95.96,kJ/mol,PASS
+759,FIG-03-03-007,B outlet flow for extent 0.80,0.8,0.80,mol/s,PASS
+759,FIG-03-03-007,Reaction heat release magnitude,40.0,40,kW equivalent kJ/s,PASS
+759,FIG-03-03-007,Adiabatic temperature rise,400.0,400,K,PASS
+759,FIG-03-03-007,Adiabatic outlet temperature,700,700,K,PASS
+761,FIG-03-04-002,Henry-law partial pressure,5.0,5,kPa,PASS
+762,FIG-03-04-003,Bubble pressure at xA=0.5,70.0,70,kPa,PASS
+762,FIG-03-04-003,Bubble vapor yA,0.7142857142857143,0.7143,,PASS
+763,FIG-03-04-004,Dew pressure at yA=0.40,52.631578947368425,52.632,kPa,PASS
+763,FIG-03-04-004,Dew liquid xA,0.2105263157894737,0.2105,,PASS
+766,FIG-03-04-007,Ideal A↔B equilibrium ratio,4.0,4,,PASS
+767,FIG-03-05-001,Concentration gradient,-8000.0,−8000,mol/m4,PASS
+767,FIG-03-05-001,Fick flux,8.000000000000001e-06,8×10^-6,mol/(m²·s),PASS
+774,FIG-03-06-001,Flash total balance,100,100,mol/s,PASS
+774,FIG-03-06-001,Flash A balance,49.99999999999999,50,mol/s A,PASS
+779,FIG-03-06-007,Murphree vapor efficiency,0.6,0.60,,PASS
+781,FIG-03-07-001,Gas-phase NTU,2.1972245773362196,2.197,,PASS
+781,FIG-03-07-001,Packing height,2.1972245773362196,2.197,m,PASS
+787,FIG-03-07-007,Tray-contact equivalent height,3.0,3.0,m,PASS
+787,FIG-03-07-007,Packed-contact equivalent height,3.0,3.0,m,PASS
+789,FIG-03-08-002,Humidifier evaporated water,0.01,0.010,kg/s,PASS
+790,FIG-03-08-003,Wet-basis moisture,0.2,0.20,kg/kg wet solid,PASS
+790,FIG-03-08-003,Dry-basis moisture,0.25,0.25,kg/kg dry solid,PASS
+792,FIG-03-08-005,Free moisture,0.1486,0.1486,kg/kg dry solid,PASS
+793,FIG-03-08-006,Feed solute,100.0,100,kg/h,PASS
+793,FIG-03-08-006,Concentrate solute,100.0,100,kg/h,PASS
+793,FIG-03-08-006,Vapor flow,750,750,kg/h,PASS
+793,FIG-03-08-006,Evaporator duty,470.2083333333333,470.2,kW,PASS
+797,FIG-03-09-003,Sieve retained-mass total,100,100,g,PASS
+800,FIG-03-09-006,Pile radius from 30° repose,5.196152422706632,5.196,m,PASS
+800,FIG-03-09-006,Conical pile volume,84.82300164692441,84.82,m³,PASS
+801,FIG-03-09-007,Crystals formed,30,30,kg,PASS
+801,FIG-03-09-007,Mother liquor mass,130,130,kg,PASS
+802,FIG-03-10-001,First-order batch inventory at 15 min,0.49787068367863946,0.498,mol,PASS
+803,FIG-03-10-002,Overall reaction order,2.0,2.0,,PASS
+805,FIG-03-10-004,Arrhenius k at 400 K,0.2954161124729344,0.2954,min^-1,PASS
+806,FIG-03-10-005,Reversible-reaction K,4.0,4,,PASS
+806,FIG-03-10-005,Equilibrium conversion for pure A,0.8,0.80,,PASS
+807,FIG-03-10-006,Michaelis-Menten rate at Cs=Km,1.0,1.0,mmol/(L·min),PASS
+809,FIG-03-11-001,Batch time to 80% conversion,8.047189562170502,8.047,min,PASS
+810,FIG-03-11-002,Constant-pressure gas volume ratio,1.5,1.50,,PASS
+810,FIG-03-11-002,Reactant concentration at X=0.5,0.3333333333333333,0.667,mol/L,PASS
+811,FIG-03-11-003,PFR volume,8.047189562170502,8.047,L,PASS
+812,FIG-03-11-004,CSTR volume,20.0,20.0,L,PASS
+813,FIG-03-11-005,Infinite-CSTR-series conversion limit,0.8646647167633873,0.8647,,PASS
+814,FIG-03-11-006,Instantaneous selectivity at CA=2,4,4,,PASS
+814,FIG-03-11-006,Instantaneous selectivity at CA=0.4,0.8,0.8,,PASS
+816,FIG-03-12-001,Mixed stream total,15,15,kmol/h,PASS
+816,FIG-03-12-001,Overall product balance,10,10,kmol/h,PASS
+819,FIG-03-12-004,Pilot/lab geometric volume ratio,1000.0,1000,,PASS
+819,FIG-03-12-004,Plant/pilot geometric volume ratio,1000.0,1000,,PASS
+820,FIG-03-12-005,Cost-index update,150000.0,150000,$,PASS
+821,FIG-03-12-006,Capacity scaling ratio,1.515716566510398,1.5157,,PASS
+821,FIG-03-12-006,Scaled purchase cost,1515716.566510398,1.516 million,$,PASS
+823,FIG-03-13-001,"Unconstrained objective at (4,4)",0,0,,PASS
+823,FIG-03-13-001,"Feasible objective at (2.5,2.5)",4.5,4.5,,PASS
+830,FIG-03-14-001,Concrete water/cement ratio,0.5,0.50,,PASS
+830,FIG-03-14-001,Concrete batch total mass,2200,2200,kg,PASS
+831,FIG-03-14-002,Asphalt air voids,4.0000000000000036,4.0,%,PASS
+832,FIG-03-14-003,Cumulative retained through 4.75 mm,27,27,g,PASS
+832,FIG-03-14-003,Percent passing 4.75 mm,73,73,%,PASS
+839,FIG-03-15-003,Coordinate distance,100.0,100,m,PASS
+839,FIG-03-15-003,"Azimuth atan2(E,N)",53.13010235415598,53.130,degrees,PASS
+840,FIG-03-15-004,Instrument height,101.25,101.250,m,PASS
+840,FIG-03-15-004,Turning-point elevation,100.55,100.550,m,PASS
+841,FIG-03-15-005,Profile grade,2.0,2.00,%,PASS
+842,FIG-03-15-006,Shoelace parcel area,6750.0,6750,m²,PASS
+844,FIG-03-16-001,Watershed storage change,35,35,mm,PASS
+846,FIG-03-16-003,Hyetograph effective rainfall,13.334000000000001,13.334,mm,PASS
+847,FIG-03-16-004,Rational-method peak flow,1.3106166666666668,1.311,m³/s,PASS
+848,FIG-03-16-005,Curve-number storage S,84.66666666666669,84.667,mm,PASS
+848,FIG-03-16-005,Initial abstraction Ia,16.933333333333337,16.933,mm,PASS
+848,FIG-03-16-005,Curve-number runoff Q,14.52038970076548,14.520,mm,PASS
+850,FIG-03-16-007,Reservoir surface-exchange term,4000.0,4000,m³/day,PASS
+850,FIG-03-16-007,Reservoir storage change,14000,14000,m³/day,PASS
+851,FIG-03-17-001,Trapezoid area,5.76,5.760,m²,PASS
+851,FIG-03-17-001,Wetted perimeter,7.326661530556787,7.327,m,PASS
+851,FIG-03-17-001,Hydraulic radius,0.7861697958855035,0.7862,m,PASS
+851,FIG-03-17-001,Hydraulic depth,0.8727272727272728,0.8727,m,PASS
+853,FIG-03-17-003,Froude number y=1.2,0.4858592474069622,0.486,,PASS
+853,FIG-03-17-003,Froude number y=0.742,0.999641989377438,1.0,,PASS
+853,FIG-03-17-003,Froude number y=0.3,3.886291064741712,3.886,,PASS
+854,FIG-03-17-004,Critical depth,0.7415327354153678,0.7415,m,PASS
+854,FIG-03-17-004,Minimum specific energy,1.1122991031230516,1.112,m,PASS
+855,FIG-03-17-005,Sharp-crested weir discharge,0.6046857034857034,0.6047,m³/s,PASS
+856,FIG-03-17-006,Hydraulic-jump sequent depth,1.5054997070371228,1.5055,m,PASS
+856,FIG-03-17-006,Hydraulic-jump energy loss,0.9697044891246901,0.9698,m,PASS
+858,FIG-03-18-001,Pump discharge EGL,38,38,m,PASS
+858,FIG-03-18-001,Velocity from 1.5 m velocity head,5.424942396007538,5.425,m/s,PASS
+859,FIG-03-18-002,Distributed pipe loss,2.038735983690112,2.039,m,PASS
+859,FIG-03-18-002,Minor-loss contribution,0.9174311926605504,0.917,m,PASS
+859,FIG-03-18-002,Total head loss,2.9561671763506623,2.956,m,PASS
+862,FIG-03-18-005,Pump/system operating flow,0.044721359549995794,0.04472,m³/s,PASS
+862,FIG-03-18-005,Operating head,35.0,35.0,m,PASS
+864,FIG-03-18-007,Downstream sewer flow,0.045000000000000005,0.045,m³/s,PASS
+864,FIG-03-18-007,A→C invert drop,0.4,0.4,m,PASS
+864,FIG-03-18-007,C→D invert drop,0.4,0.4,m,PASS
+865,FIG-03-19-001,30-year chance of ≥1 100-year event,0.2602996266117198,26.03,%,PASS
+869,FIG-03-19-005,Spillway head above crest,2,2.0,m,PASS
+870,FIG-03-19-006,Dam freeboard,2,2,m,PASS
+872,FIG-03-20-001,Hydraulic gradient,0.1,0.10,,PASS
+872,FIG-03-20-001,Darcy specific discharge,1e-05,1×10^-5,m/s,PASS
+872,FIG-03-20-001,Darcy flow rate,2e-05,2×10^-5,m³/s,PASS
+877,FIG-03-20-006,Superposed drawdown,1.65909,1.6548,m,PASS
+879,FIG-03-21-001,Steady mixed-volume concentration,0.0075,0.0075,kg/m³,PASS
+879,FIG-03-21-001,Steady concentration conversion,7.5,7.5,mg/L,PASS

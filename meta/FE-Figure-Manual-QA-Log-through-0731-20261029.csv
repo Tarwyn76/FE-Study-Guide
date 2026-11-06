@@ -1,0 +1,718 @@
+﻿Index,Figure ID,Chapter,Type,Review Group,Result,Notes
+0,FIG-00-01-001,00-01,Flowchart,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+1,FIG-00-01-002,00-01,Diagram,Priority HIGH/MEDIUM,PASS artwork / metadata repair,Manifest Description/Alt Text say 14 sections; current chapter and artwork correctly show 17. Update metadata to 17.
+2,FIG-00-02-001,00-02,Timeline bar,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+3,FIG-00-03-001,00-03,Section map visual,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+4,FIG-00-03-002,00-03,Flowchart,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+5,FIG-01-01-001,01-01,Number line,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+6,FIG-01-01-002,01-01,Ladder diagram,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+7,FIG-01-01-003,01-01,Matrix,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+8,FIG-01-01-004,01-01,Annotated diagram,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+9,FIG-01-01-005,01-01,Nested-set diagram,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+10,FIG-01-01-006,01-01,Direction diagram,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+11,FIG-01-01-007,01-01,Scale comparison,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+12,FIG-01-02-001,01-02,Pyramid diagram,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+13,FIG-01-02-002,01-02,Tree diagram,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+14,FIG-01-02-003,01-02,Equation check diagram,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+15,FIG-01-02-004,01-02,Flowchart,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+16,FIG-01-02-005,01-02,Comparison table,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+17,FIG-01-02-006,01-02,Side-by-side card,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+18,FIG-01-02-007,01-02,Annotated equation,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+19,FIG-01-02-008,01-02,Scale diagram,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+20,FIG-01-02-009,01-02,Decision flowchart,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+21,FIG-01-02-010,01-02,Reference grid,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+22,FIG-01-03-001,01-03,Dartboard matrix,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+23,FIG-01-03-002,01-03,Decision flowchart,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+24,FIG-01-03-003,01-03,Side-by-side calculation,Priority HIGH/MEDIUM,PASS artwork / metadata repair,Manifest says 3.5% error annotation; artwork says ~3.6% based on displayed 335 vs 347. Current chapter also says 3.5%. Reconcile chapter + manifest; retain artwork if using displayed-value convention.
+48,FIG-01-11-001,01-11,Unit circle,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+49,FIG-01-11-002,01-11,Visual table,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+50,FIG-01-11-003,01-11,CAST diagram,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+51,FIG-01-11-004,01-11,Right triangle,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+52,FIG-01-11-005,01-11,Triangle diagram,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+53,FIG-01-11-006,01-11,Force decomposition,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+55,FIG-01-12-001,01-12,Complex plane,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+56,FIG-01-12-002,01-12,Conversion diagram,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+57,FIG-01-12-003,01-12,Phasor diagram,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+58,FIG-01-13-001,01-13,3D coordinate diagram,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+59,FIG-01-13-002,01-13,Vector addition diagram,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+60,FIG-01-13-003,01-13,Dot product geometry,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+61,FIG-01-13-004,01-13,Cross product geometry,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+62,FIG-01-14-001,01-14,Matrix anatomy,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+63,FIG-01-14-002,01-14,Multiplication diagram,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+64,FIG-01-14-003,01-14,Cofactor expansion,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+65,FIG-01-14-004,01-14,Geometric comparison,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+66,FIG-01-14-005,01-14,Eigenvector geometry,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+67,FIG-01-15-001,01-15,Comparison plot,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+68,FIG-01-15-002,01-15,Annotated calculation,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+69,FIG-01-15-003,01-15,Comparison plot,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+70,FIG-01-15-004,01-15,Convergence plot,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+71,FIG-01-16-001,01-16,Annotated graph,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+72,FIG-01-16-002,01-16,Three-panel comparison,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+73,FIG-01-16-003,01-16,Three-panel comparison,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+74,FIG-01-16-004,01-16,Two-panel graph plus geometry,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+75,FIG-01-16-005,01-16,Four-panel comparison,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+76,FIG-01-16-006,01-16,Two-panel comparison,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+77,FIG-01-17-001,01-17,Limit-process diagram,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+78,FIG-01-17-002,01-17,Paired plot,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+79,FIG-01-17-003,01-17,Four-panel comparison,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+80,FIG-01-17-004,01-17,Nested-layer diagram,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+81,FIG-01-17-005,01-17,Stacked kinematic plots,Priority HIGH/MEDIUM,PASS first-pass visual/technical QA,
+82,FIG-01-18-001,01-18,diagram,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+83,FIG-01-18-002,01-18,diagram,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+84,FIG-01-18-003,01-18,diagram,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+85,FIG-01-18-004,01-18,diagram,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+86,FIG-01-18-005,01-18,plot,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+87,FIG-01-18-006,01-18,diagram+plot,Ordinary visual QA batch 82-131,FAIL — regenerate artwork,"TECHNICAL ERROR: artwork labels V=x²h=64 and h=64/x², but chapter problem is V=32 m³. It then plots A=x²+128/x and minimum (4,48), which correspond to V=32. Regenerate using V=32, h=32/x², optimum x=4 m, h=2 m, A=48 m²."
+88,FIG-01-18-007,01-18,diagram,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+89,FIG-01-18-008,01-18,diagram,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+90,FIG-01-19-001,01-19,graph,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+91,FIG-01-19-002,01-19,graph,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+92,FIG-01-19-003,01-19,graph,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+93,FIG-01-19-004,01-19,diagram,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+94,FIG-01-19-005,01-19,diagram,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+95,FIG-01-19-006,01-19,graph,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+96,FIG-01-20-001,01-20,graph,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+97,FIG-01-20-002,01-20,graph,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+98,FIG-01-20-003,01-20,diagram,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+99,FIG-01-20-004,01-20,diagram,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+100,FIG-01-20-005,01-20,diagram,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+101,FIG-01-20-006,01-20,graph,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+102,FIG-01-20-007,01-20,diagram,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+103,FIG-01-20-008,01-20,diagram,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+104,FIG-01-21-001,01-21,diagram,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+105,FIG-01-21-002,01-21,diagram,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+106,FIG-01-21-003,01-21,flowchart,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+107,FIG-01-21-004,01-21,graph,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+108,FIG-01-21-005,01-21,flowchart,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+109,FIG-01-21-006,01-21,graph,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+110,FIG-01-22-001,01-22,graph,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+111,FIG-01-22-002,01-22,graph,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+112,FIG-01-22-003,01-22,diagram,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+113,FIG-01-22-004,01-22,graph,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+114,FIG-01-22-005,01-22,graph,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+115,FIG-01-22-006,01-22,graph,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+116,FIG-01-23-001,01-23,diagram,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+117,FIG-01-23-002,01-23,diagram,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+118,FIG-01-23-003,01-23,diagram,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+119,FIG-01-23-004,01-23,diagram,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+120,FIG-01-23-005,01-23,diagram,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+121,FIG-01-23-006,01-23,diagram,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+122,FIG-01-23-007,01-23,diagram,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+123,FIG-01-24-001,01-24,diagram,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+124,FIG-01-24-002,01-24,diagram,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+125,FIG-01-24-003,01-24,diagram,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+126,FIG-01-24-004,01-24,diagram,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+127,FIG-01-24-005,01-24,diagram,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+128,FIG-01-24-006,01-24,diagram,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+129,FIG-01-24-007,01-24,diagram,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+130,FIG-01-25-001,01-25,flowchart,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+131,FIG-01-25-002,01-25,graph,Ordinary visual QA batch 82-131,PASS first-pass visual/technical QA,
+132,FIG-01-25-003,01-25,graph,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+133,FIG-01-25-004,01-25,graph,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+134,FIG-01-25-005,01-25,graph,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+135,FIG-01-25-006,01-25,flowchart,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+136,FIG-01-25-007,01-25,diagram,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+137,FIG-01-26-001,01-26,graph,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+138,FIG-01-26-002,01-26,diagram,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+139,FIG-01-26-003,01-26,diagram,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+140,FIG-01-26-004,01-26,diagram,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+141,FIG-01-26-005,01-26,graph,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+142,FIG-01-26-006,01-26,diagram,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+143,FIG-01-26-007,01-26,graph,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+144,FIG-01-27-001,01-27,diagram,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+145,FIG-01-27-002,01-27,flowchart,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+146,FIG-01-27-003,01-27,diagram,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+147,FIG-01-27-004,01-27,diagram,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+148,FIG-01-27-005,01-27,flowchart,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+149,FIG-01-27-006,01-27,flowchart,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+150,FIG-01-27-007,01-27,diagram,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+151,FIG-01-28-001,01-28,diagram,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+152,FIG-01-28-002,01-28,decision diagram,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+153,FIG-01-28-003,01-28,Venn diagram,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+154,FIG-01-28-004,01-28,Venn diagram,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+155,FIG-01-28-005,01-28,comparison diagram,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+156,FIG-01-28-006,01-28,probability tree,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+157,FIG-01-28-007,01-28,diagram,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+158,FIG-01-29-001,01-29,mapping diagram,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+159,FIG-01-29-002,01-29,graph,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+160,FIG-01-29-003,01-29,graph,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+161,FIG-01-29-004,01-29,graph,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+162,FIG-01-29-005,01-29,diagram,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+163,FIG-01-29-006,01-29,diagram,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+164,FIG-01-29-007,01-29,diagram,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+165,FIG-01-30-001,01-30,graph,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+166,FIG-01-30-002,01-30,diagram,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+167,FIG-01-30-003,01-30,graph,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+168,FIG-01-30-004,01-30,chart,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+169,FIG-01-30-005,01-30,workflow,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+170,FIG-01-30-006,01-30,diagram,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+171,FIG-01-30-007,01-30,diagram,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+172,FIG-01-31-001,01-31,diagram,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+173,FIG-01-31-002,01-31,diagram,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+174,FIG-01-31-003,01-31,graph,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+175,FIG-01-31-004,01-31,diagram,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+176,FIG-01-31-005,01-31,graph,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+177,FIG-01-31-006,01-31,diagram,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+178,FIG-01-31-007,01-31,flowchart,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+179,FIG-01-32-001,01-32,diagram,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+180,FIG-01-32-002,01-32,diagram,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+181,FIG-01-32-003,01-32,comparison diagram,Ordinary visual QA batch 132-181,PASS first-pass visual/technical QA,
+182,FIG-01-32-004,01-32,decision diagram,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+183,FIG-01-32-005,01-32,diagram,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+184,FIG-01-32-006,01-32,diagram,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+185,FIG-01-32-007,01-32,flowchart,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+186,FIG-01-33-001,01-33,graph,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+187,FIG-01-33-002,01-33,graph,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+188,FIG-01-33-003,01-33,diagram,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+189,FIG-01-33-004,01-33,graph,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+190,FIG-01-33-005,01-33,comparison diagram,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+191,FIG-01-33-006,01-33,diagram,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+192,FIG-01-33-007,01-33,flowchart,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+193,FIG-01-34-001,01-34,diagram,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+194,FIG-01-34-002,01-34,diagram,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+195,FIG-01-34-003,01-34,table,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+196,FIG-01-34-004,01-34,matrix diagram,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+197,FIG-01-34-005,01-34,graph,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+198,FIG-01-34-006,01-34,table,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+199,FIG-01-34-007,01-34,flowchart,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+200,FIG-01-35-001,01-35,graph,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+201,FIG-01-35-002,01-35,flowchart,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+202,FIG-01-35-003,01-35,table,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+203,FIG-01-35-004,01-35,graph,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+204,FIG-01-35-005,01-35,diagram,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+205,FIG-01-35-006,01-35,graph,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+206,FIG-01-35-007,01-35,diagram,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+207,FIG-01-36-001,01-36,diagram,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+208,FIG-01-36-002,01-36,diagram,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+209,FIG-01-36-003,01-36,diagram,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+210,FIG-01-36-004,01-36,comparison diagram,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+211,FIG-01-36-005,01-36,diagram,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+212,FIG-01-36-006,01-36,diagram,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+213,FIG-01-36-007,01-36,diagram,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+214,FIG-01-37-001,01-37,diagram,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+215,FIG-01-37-002,01-37,table,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+216,FIG-01-37-003,01-37,decision tree,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+217,FIG-01-37-004,01-37,decision tree,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+218,FIG-01-37-005,01-37,diagram,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+219,FIG-01-37-006,01-37,graph,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+220,FIG-01-37-007,01-37,comparison diagram,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+221,FIG-01-38-001,01-38,flowchart,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+222,FIG-01-38-002,01-38,diagram,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+223,FIG-01-38-003,01-38,graph,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+224,FIG-01-38-004,01-38,comparison diagram,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+225,FIG-01-38-005,01-38,graph,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+226,FIG-01-38-006,01-38,graph,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+227,FIG-01-38-007,01-38,comparison diagram,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+228,FIG-01-39-001,01-39,comparison diagram,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+229,FIG-01-39-002,01-39,diagram,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+230,FIG-01-39-003,01-39,control chart,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+231,FIG-01-39-004,01-39,diagram,Ordinary visual QA batch 182-231,PASS first-pass visual/technical QA,
+232,FIG-01-39-005,01-39,diagram,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+233,FIG-01-39-006,01-39,control chart,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+234,FIG-01-39-007,01-39,flowchart,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+235,FIG-01-40-001,01-40,diagram,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+236,FIG-01-40-002,01-40,comparison diagram,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+237,FIG-01-40-003,01-40,diagram,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+238,FIG-01-40-004,01-40,diagram,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+239,FIG-01-40-005,01-40,flowchart,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+240,FIG-01-40-006,01-40,comparison diagram,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+241,FIG-01-40-007,01-40,diagnostic matrix,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+242,FIG-01-41-001,01-41,flowchart,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+243,FIG-01-41-002,01-41,graph,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+244,FIG-01-41-003,01-41,comparison diagram,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+245,FIG-01-41-004,01-41,graph,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+246,FIG-01-41-005,01-41,graph,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+247,FIG-01-41-006,01-41,graph,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+248,FIG-01-41-007,01-41,comparison diagram,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+249,FIG-02-01-001,02-01,diagram,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+250,FIG-02-01-002,02-01,flowchart,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+251,FIG-02-01-003,02-01,diagram,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+252,FIG-02-01-004,02-01,diagram,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+253,FIG-02-01-005,02-01,decision tree,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+254,FIG-02-01-006,02-01,diagram,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+255,FIG-02-01-007,02-01,diagram,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+256,FIG-02-02-001,02-02,diagram,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+257,FIG-02-02-002,02-02,diagram,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+258,FIG-02-02-003,02-02,diagram,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+259,FIG-02-02-004,02-02,diagram,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+260,FIG-02-02-005,02-02,diagram,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+261,FIG-02-02-006,02-02,diagram,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+262,FIG-02-02-007,02-02,diagram,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+263,FIG-02-03-001,02-03,diagram,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+264,FIG-02-03-002,02-03,timeline,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+265,FIG-02-03-003,02-03,matrix,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+266,FIG-02-03-004,02-03,timeline,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+267,FIG-02-03-005,02-03,diagram,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+268,FIG-02-03-006,02-03,diagram,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+269,FIG-02-03-007,02-03,flowchart,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+270,FIG-02-04-001,02-04,timeline,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+271,FIG-02-04-002,02-04,diagram,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+272,FIG-02-04-003,02-04,timeline,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+273,FIG-02-04-004,02-04,diagram,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+274,FIG-02-04-005,02-04,diagram,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+275,FIG-02-04-006,02-04,timeline,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+276,FIG-02-04-007,02-04,timeline,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+277,FIG-02-05-001,02-05,diagram,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+278,FIG-02-05-002,02-05,diagram,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+279,FIG-02-05-003,02-05,diagram,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+280,FIG-02-05-004,02-05,diagram,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,
+281,FIG-02-05-005,02-05,diagram,Ordinary visual QA batch 232-281,PASS first-pass visual/technical QA,Life-cycle PW independently checked: annual O&M annuity plus extra -1500 overhaul at period 3 and +2000 salvage at period 5 reproduces net timeline values -2000 and +1500 and PW = -11780.52.
+282,FIG-02-05-006,02-05,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+283,FIG-02-05-007,02-05,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+284,FIG-02-06-001,02-06,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+285,FIG-02-06-002,02-06,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+286,FIG-02-06-003,02-06,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+287,FIG-02-06-004,02-06,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+288,FIG-02-06-005,02-06,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+289,FIG-02-06-006,02-06,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+290,FIG-02-06-007,02-06,timeline,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+291,FIG-02-07-001,02-07,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+292,FIG-02-07-002,02-07,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+293,FIG-02-07-003,02-07,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+294,FIG-02-07-004,02-07,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+295,FIG-02-07-005,02-07,timeline,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+296,FIG-02-07-006,02-07,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+297,FIG-02-07-007,02-07,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+298,FIG-02-08-001,02-08,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+299,FIG-02-08-002,02-08,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+300,FIG-02-08-003,02-08,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+301,FIG-02-08-004,02-08,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+302,FIG-02-08-005,02-08,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+303,FIG-02-08-006,02-08,decision tree,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+304,FIG-02-08-007,02-08,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+305,FIG-02-09-001,02-09,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+306,FIG-02-09-002,02-09,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+307,FIG-02-09-003,02-09,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+308,FIG-02-09-004,02-09,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+309,FIG-02-09-005,02-09,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+310,FIG-02-09-006,02-09,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+311,FIG-02-09-007,02-09,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+312,FIG-02-10-001,02-10,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+313,FIG-02-10-002,02-10,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+314,FIG-02-10-003,02-10,decision tree,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+315,FIG-02-10-004,02-10,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+316,FIG-02-10-005,02-10,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+317,FIG-02-10-006,02-10,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+318,FIG-02-10-007,02-10,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+319,FIG-02-11-001,02-11,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+320,FIG-02-11-002,02-11,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+321,FIG-02-11-003,02-11,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+322,FIG-02-11-004,02-11,trend chart,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+323,FIG-02-11-005,02-11,comparison diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+324,FIG-02-11-006,02-11,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+325,FIG-02-11-007,02-11,materials map,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+326,FIG-02-12-001,02-12,scale diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+327,FIG-02-12-002,02-12,worked diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+328,FIG-02-12-003,02-12,flowchart,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+329,FIG-02-12-004,02-12,ratio diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+330,FIG-02-12-005,02-12,comparison table,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+331,FIG-02-12-006,02-12,diagram,Ordinary visual QA batch 282-331,PASS first-pass visual/technical QA,
+332,FIG-02-12-007,02-12,timeline,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+333,FIG-02-13-001,02-13,comparison diagram,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+334,FIG-02-13-002,02-13,mixing diagram,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+335,FIG-02-13-003,02-13,log scale,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+336,FIG-02-13-004,02-13,equilibrium diagram,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+337,FIG-02-13-005,02-13,titration curve,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+338,FIG-02-13-006,02-13,decision diagram,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+339,FIG-02-13-007,02-13,diagram,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+340,FIG-02-14-001,02-14,equilibrium diagram,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+341,FIG-02-14-002,02-14,comparison diagram,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+342,FIG-02-14-003,02-14,diagram,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+343,FIG-02-14-004,02-14,cell diagram,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+344,FIG-02-14-005,02-14,equation diagram,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+345,FIG-02-14-006,02-14,flowchart,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+346,FIG-02-14-007,02-14,corrosion diagram,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+347,FIG-02-15-001,02-15,comparison diagram,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+348,FIG-02-15-002,02-15,table,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+349,FIG-02-15-003,02-15,reaction map,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+350,FIG-02-15-004,02-15,diagram,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+351,FIG-02-15-005,02-15,flowchart,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+352,FIG-02-15-006,02-15,process diagram,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+353,FIG-02-15-007,02-15,selection matrix,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+354,FIG-02-16-001,02-16,materials map,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+355,FIG-02-16-002,02-16,diagram,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+356,FIG-02-16-003,02-16,comparison diagram,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+357,FIG-02-16-004,02-16,microstructure diagram,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+358,FIG-02-16-005,02-16,graph,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+359,FIG-02-16-006,02-16,diagram,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+360,FIG-02-16-007,02-16,decision matrix,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+361,FIG-02-17-001,02-17,stress-strain graph,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+362,FIG-02-17-002,02-17,comparison diagram,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+363,FIG-02-17-003,02-17,failure map,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+364,FIG-02-17-004,02-17,diagram,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+365,FIG-02-17-005,02-17,thermal diagram,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+366,FIG-02-17-006,02-17,property chart,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+367,FIG-02-17-007,02-17,flowchart,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+368,FIG-02-18-001,02-18,Arrhenius graph,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+369,FIG-02-18-002,02-18,process diagram,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+370,FIG-02-18-003,02-18,phase diagram,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+371,FIG-02-18-004,02-18,lever diagram,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+372,FIG-02-18-005,02-18,comparison diagram,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+373,FIG-02-18-006,02-18,phase diagram,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+374,FIG-02-18-007,02-18,processing map,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+375,FIG-02-19-001,02-19,risk diagram,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+376,FIG-02-19-002,02-19,flowchart,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+377,FIG-02-19-003,02-19,hierarchy diagram,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+378,FIG-02-19-004,02-19,comparison diagram,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+379,FIG-02-19-005,02-19,document diagram,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+380,FIG-02-19-006,02-19,selection matrix,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+381,FIG-02-19-007,02-19,barrier diagram,Ordinary visual QA batch 332-381,PASS first-pass visual/technical QA,
+382,FIG-02-20-001,02-20,flammability chart,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+383,FIG-02-20-002,02-20,diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+384,FIG-02-20-003,02-20,calculation diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+385,FIG-02-20-004,02-20,entry diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+386,FIG-02-20-005,02-20,diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+387,FIG-02-20-006,02-20,body-current chart,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,Cross-checked against FE Reference Handbook 10.6 electrical-safety current table; ranges/effects agree.
+388,FIG-02-20-007,02-20,flowchart,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+389,FIG-02-21-001,02-21,dose-response graph,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+390,FIG-02-21-002,02-21,pathway diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+391,FIG-02-21-003,02-21,graph,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+392,FIG-02-21-004,02-21,ratio diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+393,FIG-02-21-005,02-21,comparison chart,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+394,FIG-02-21-006,02-21,comparison diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+395,FIG-02-21-007,02-21,matrix,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+396,FIG-02-22-001,02-22,diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+397,FIG-02-22-002,02-22,comparison diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+398,FIG-02-22-003,02-22,diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+399,FIG-02-22-004,02-22,support diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+400,FIG-02-22-005,02-22,diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+401,FIG-02-22-006,02-22,diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+402,FIG-02-22-007,02-22,checklist,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+403,FIG-02-23-001,02-23,diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+404,FIG-02-23-002,02-23,diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+405,FIG-02-23-003,02-23,equation map,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+406,FIG-02-23-004,02-23,worked diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+407,FIG-02-23-005,02-23,vector diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+408,FIG-02-23-006,02-23,geometry diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+409,FIG-02-23-007,02-23,checklist,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+410,FIG-02-24-001,02-24,truss diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+411,FIG-02-24-002,02-24,diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+412,FIG-02-24-003,02-24,comparison diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+413,FIG-02-24-004,02-24,truss FBD,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+414,FIG-02-24-005,02-24,joint diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+415,FIG-02-24-006,02-24,comparison diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+416,FIG-02-24-007,02-24,flowchart,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+417,FIG-02-25-001,02-25,diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+418,FIG-02-25-002,02-25,coordinate diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+419,FIG-02-25-003,02-25,diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+420,FIG-02-25-004,02-25,comparison diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+421,FIG-02-25-005,02-25,diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+422,FIG-02-25-006,02-25,diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+423,FIG-02-25-007,02-25,checklist,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+424,FIG-02-26-001,02-26,FBD,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+425,FIG-02-26-002,02-26,support diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+426,FIG-02-26-003,02-26,diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+427,FIG-02-26-004,02-26,beam diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+428,FIG-02-26-005,02-26,comparison diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+429,FIG-02-26-006,02-26,diagram,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+430,FIG-02-26-007,02-26,checklist,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+431,FIG-02-27-001,02-27,truss cut,Ordinary visual QA batch 382-431,PASS first-pass visual/technical QA,
+432,FIG-02-27-002,02-27,diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 18.96%; instructional SVG objects preserved exactly.
+433,FIG-02-27-003,02-27,comparison diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 18.81%; instructional SVG objects preserved exactly.
+434,FIG-02-27-004,02-27,comparison diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 18.58%; instructional SVG objects preserved exactly.
+435,FIG-02-27-005,02-27,machine diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 17.38%; instructional SVG objects preserved exactly.
+436,FIG-02-27-006,02-27,diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 18.98%; instructional SVG objects preserved exactly.
+437,FIG-02-27-007,02-27,flowchart,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 9.28%; instructional SVG objects preserved exactly.
+438,FIG-02-28-001,02-28,load diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 22.53%; instructional SVG objects preserved exactly.
+439,FIG-02-28-002,02-28,comparison diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 23.93%; instructional SVG objects preserved exactly.
+440,FIG-02-28-003,02-28,composite area,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 16.18%; instructional SVG objects preserved exactly.
+441,FIG-02-28-004,02-28,integration diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 20.25%; instructional SVG objects preserved exactly.
+442,FIG-02-28-005,02-28,mass diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 17.83%; instructional SVG objects preserved exactly.
+443,FIG-02-28-006,02-28,diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 14.21%; instructional SVG objects preserved exactly.
+444,FIG-02-28-007,02-28,checklist,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 15.44%; instructional SVG objects preserved exactly.
+445,FIG-02-29-001,02-29,area diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 19.68%; instructional SVG objects preserved exactly.
+446,FIG-02-29-002,02-29,shape table,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 18.47%; instructional SVG objects preserved exactly.
+447,FIG-02-29-003,02-29,diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 17.35%; instructional SVG objects preserved exactly.
+448,FIG-02-29-004,02-29,composite diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 16.77%; instructional SVG objects preserved exactly.
+449,FIG-02-29-005,02-29,circle diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 9.38%; instructional SVG objects preserved exactly.
+450,FIG-02-29-006,02-29,diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 18.73%; instructional SVG objects preserved exactly.
+451,FIG-02-29-007,02-29,quadrant diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 18.17%; instructional SVG objects preserved exactly.
+452,FIG-02-30-001,02-30,friction diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 16.67%; instructional SVG objects preserved exactly.
+453,FIG-02-30-002,02-30,diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 17.64%; instructional SVG objects preserved exactly.
+454,FIG-02-30-003,02-30,comparison diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 18.07%; instructional SVG objects preserved exactly.
+455,FIG-02-30-004,02-30,incline diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 20.93%; instructional SVG objects preserved exactly.
+456,FIG-02-30-005,02-30,comparison diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 17.91%; instructional SVG objects preserved exactly.
+457,FIG-02-30-006,02-30,pulley diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 18.13%; instructional SVG objects preserved exactly.
+458,FIG-02-30-007,02-30,screw diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 15.0%; instructional SVG objects preserved exactly.
+459,FIG-02-31-001,02-31,motion graph,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 13.99%; instructional SVG objects preserved exactly.
+460,FIG-02-31-002,02-31,equation map,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 15.16%; instructional SVG objects preserved exactly.
+461,FIG-02-31-003,02-31,vertical motion diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 18.05%; instructional SVG objects preserved exactly.
+462,FIG-02-31-004,02-31,graph,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 17.28%; instructional SVG objects preserved exactly.
+463,FIG-02-31-005,02-31,phase diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 15.99%; instructional SVG objects preserved exactly.
+464,FIG-02-31-006,02-31,graph set,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 17.3%; instructional SVG objects preserved exactly.
+465,FIG-02-31-007,02-31,diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 12.27%; instructional SVG objects preserved exactly.
+466,FIG-02-32-001,02-32,trajectory diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 20.67%; instructional SVG objects preserved exactly.
+467,FIG-02-32-002,02-32,trajectory diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 12.24%; instructional SVG objects preserved exactly.
+468,FIG-02-32-003,02-32,path diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 16.6%; instructional SVG objects preserved exactly.
+469,FIG-02-32-004,02-32,polar diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 17.98%; instructional SVG objects preserved exactly.
+470,FIG-02-32-005,02-32,circle diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 14.79%; instructional SVG objects preserved exactly.
+471,FIG-02-32-006,02-32,vector diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 22.71%; instructional SVG objects preserved exactly.
+472,FIG-02-32-007,02-32,decision tree,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 15.81%; instructional SVG objects preserved exactly.
+473,FIG-02-33-001,02-33,FBD,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 21.97%; instructional SVG objects preserved exactly.
+474,FIG-02-33-002,02-33,diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 16.15%; instructional SVG objects preserved exactly.
+475,FIG-02-33-003,02-33,equation diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 15.3%; instructional SVG objects preserved exactly.
+476,FIG-02-33-004,02-33,curved path diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 16.18%; instructional SVG objects preserved exactly.
+477,FIG-02-33-005,02-33,pulley diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 20.63%; instructional SVG objects preserved exactly.
+478,FIG-02-33-006,02-33,diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 16.56%; instructional SVG objects preserved exactly.
+479,FIG-02-33-007,02-33,flowchart,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 21.56%; instructional SVG objects preserved exactly.
+480,FIG-02-34-001,02-34,diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 18.09%; instructional SVG objects preserved exactly.
+481,FIG-02-34-002,02-34,diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 15.99%; instructional SVG objects preserved exactly.
+482,FIG-02-34-003,02-34,height diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 16.64%; instructional SVG objects preserved exactly.
+483,FIG-02-34-004,02-34,spring diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 13.85%; instructional SVG objects preserved exactly.
+484,FIG-02-34-005,02-34,energy bar chart,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 15.21%; instructional SVG objects preserved exactly.
+485,FIG-02-34-006,02-34,diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 15.3%; instructional SVG objects preserved exactly.
+486,FIG-02-34-007,02-34,load-deformation graph,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 14.56%; instructional SVG objects preserved exactly.
+487,FIG-02-35-001,02-35,vector diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 13.08%; instructional SVG objects preserved exactly.
+488,FIG-02-35-002,02-35,force-time graph,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 14.4%; instructional SVG objects preserved exactly.
+489,FIG-02-35-003,02-35,collision diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 15.21%; instructional SVG objects preserved exactly.
+490,FIG-02-35-004,02-35,diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 14.46%; instructional SVG objects preserved exactly.
+491,FIG-02-35-005,02-35,collision diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 19.16%; instructional SVG objects preserved exactly.
+492,FIG-02-35-006,02-35,diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 13.42%; instructional SVG objects preserved exactly.
+493,FIG-02-35-007,02-35,comparison diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 14.44%; instructional SVG objects preserved exactly.
+494,FIG-02-36-001,02-36,body diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 14.32%; instructional SVG objects preserved exactly.
+495,FIG-02-36-002,02-36,diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 14.48%; instructional SVG objects preserved exactly.
+496,FIG-02-36-003,02-36,rotating disk,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 17.32%; instructional SVG objects preserved exactly.
+497,FIG-02-36-004,02-36,mechanism diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 16.15%; instructional SVG objects preserved exactly.
+498,FIG-02-36-005,02-36,diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 16.36%; instructional SVG objects preserved exactly.
+499,FIG-02-36-006,02-36,FBD,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 16.95%; instructional SVG objects preserved exactly.
+500,FIG-02-36-007,02-36,energy diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 16.12%; instructional SVG objects preserved exactly.
+501,FIG-02-37-001,02-37,bar diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 15.53%; instructional SVG objects preserved exactly.
+502,FIG-02-37-002,02-37,stress-strain graph,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 17.2%; instructional SVG objects preserved exactly.
+503,FIG-02-37-003,02-37,segmented bar,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 15.3%; instructional SVG objects preserved exactly.
+504,FIG-02-37-004,02-37,element diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 15.53%; instructional SVG objects preserved exactly.
+505,FIG-02-37-005,02-37,comparison diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 17.36%; instructional SVG objects preserved exactly.
+506,FIG-02-37-006,02-37,diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 21.82%; instructional SVG objects preserved exactly.
+507,FIG-02-37-007,02-37,cylinder diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 18.23%; instructional SVG objects preserved exactly.
+508,FIG-02-38-001,02-38,shaft diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 19.87%; instructional SVG objects preserved exactly.
+509,FIG-02-38-002,02-38,section diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 23.15%; instructional SVG objects preserved exactly.
+510,FIG-02-38-003,02-38,stress distribution,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 15.45%; instructional SVG objects preserved exactly.
+511,FIG-02-38-004,02-38,shaft diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 15.3%; instructional SVG objects preserved exactly.
+512,FIG-02-38-005,02-38,comparison diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 26.99%; instructional SVG objects preserved exactly.
+513,FIG-02-38-006,02-38,drivetrain diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 14.38%; instructional SVG objects preserved exactly.
+514,FIG-02-38-007,02-38,tube diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 15.46%; instructional SVG objects preserved exactly.
+515,FIG-02-39-001,02-39,beam cut,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 13.25%; instructional SVG objects preserved exactly.
+516,FIG-02-39-002,02-39,diagram set,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 18.39%; instructional SVG objects preserved exactly.
+517,FIG-02-39-003,02-39,graph set,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 18.31%; instructional SVG objects preserved exactly.
+518,FIG-02-39-004,02-39,stress distribution,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 16.77%; instructional SVG objects preserved exactly.
+519,FIG-02-39-005,02-39,section diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 14.8%; instructional SVG objects preserved exactly.
+520,FIG-02-39-006,02-39,deflection diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 14.96%; instructional SVG objects preserved exactly.
+521,FIG-02-39-007,02-39,comparison diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 13.57%; instructional SVG objects preserved exactly.
+522,FIG-02-40-001,02-40,stress element,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 15.69%; instructional SVG objects preserved exactly.
+523,FIG-02-40-002,02-40,rotation diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 20.83%; instructional SVG objects preserved exactly.
+524,FIG-02-40-003,02-40,equation diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 12.76%; instructional SVG objects preserved exactly.
+525,FIG-02-40-004,02-40,diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 14.39%; instructional SVG objects preserved exactly.
+526,FIG-02-40-005,02-40,Mohr diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 18.12%; instructional SVG objects preserved exactly.
+527,FIG-02-40-006,02-40,angle diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 16.94%; instructional SVG objects preserved exactly.
+528,FIG-02-40-007,02-40,principal stress diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 11.78%; instructional SVG objects preserved exactly.
+529,FIG-02-41-001,02-41,property diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 13.42%; instructional SVG objects preserved exactly.
+530,FIG-02-41-002,02-41,pressure scale,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 17.61%; instructional SVG objects preserved exactly.
+531,FIG-02-41-003,02-41,velocity-profile diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 14.88%; instructional SVG objects preserved exactly.
+532,FIG-02-41-004,02-41,rheology graph,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 20.03%; instructional SVG objects preserved exactly.
+533,FIG-02-41-005,02-41,capillary diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 16.44%; instructional SVG objects preserved exactly.
+534,FIG-02-41-006,02-41,tank diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 16.64%; instructional SVG objects preserved exactly.
+535,FIG-02-41-007,02-41,checklist,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 22.52%; instructional SVG objects preserved exactly.
+536,FIG-02-42-001,02-42,manometer diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 15.08%; instructional SVG objects preserved exactly.
+537,FIG-02-42-002,02-42,barometer diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 9.66%; instructional SVG objects preserved exactly.
+538,FIG-02-42-003,02-42,buoyancy diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 14.32%; instructional SVG objects preserved exactly.
+539,FIG-02-42-004,02-42,floating diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 13.61%; instructional SVG objects preserved exactly.
+540,FIG-02-42-005,02-42,submerged-surface diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 15.95%; instructional SVG objects preserved exactly.
+541,FIG-02-42-006,02-42,pressure-distribution diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 12.31%; instructional SVG objects preserved exactly.
+542,FIG-02-42-007,02-42,gate FBD,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 18.89%; instructional SVG objects preserved exactly.
+543,FIG-02-43-001,02-43,section diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 16.91%; instructional SVG objects preserved exactly.
+544,FIG-02-43-002,02-43,flow diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 14.14%; instructional SVG objects preserved exactly.
+545,FIG-02-43-003,02-43,nozzle diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 18.4%; instructional SVG objects preserved exactly.
+546,FIG-02-43-004,02-43,vector-field diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 14.96%; instructional SVG objects preserved exactly.
+547,FIG-02-43-005,02-43,comparison diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 17.37%; instructional SVG objects preserved exactly.
+548,FIG-02-43-006,02-43,control-volume diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 16.28%; instructional SVG objects preserved exactly.
+549,FIG-02-43-007,02-43,checklist,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 21.66%; instructional SVG objects preserved exactly.
+550,FIG-02-44-001,02-44,head diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 18.56%; instructional SVG objects preserved exactly.
+551,FIG-02-44-002,02-44,streamline diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 22.24%; instructional SVG objects preserved exactly.
+552,FIG-02-44-003,02-44,grade-line diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 16.28%; instructional SVG objects preserved exactly.
+553,FIG-02-44-004,02-44,energy diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 18.68%; instructional SVG objects preserved exactly.
+554,FIG-02-44-005,02-44,nozzle diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 19.3%; instructional SVG objects preserved exactly.
+555,FIG-02-44-006,02-44,accelerating-column diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 18.16%; instructional SVG objects preserved exactly.
+556,FIG-02-44-007,02-44,decision tree,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 14.44%; instructional SVG objects preserved exactly.
+557,FIG-02-45-001,02-45,regime chart,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 17.29%; instructional SVG objects preserved exactly.
+558,FIG-02-45-002,02-45,profile diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 17.42%; instructional SVG objects preserved exactly.
+559,FIG-02-45-003,02-45,pipe diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 19.71%; instructional SVG objects preserved exactly.
+560,FIG-02-45-004,02-45,Moody-style diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 17.29%; instructional SVG objects preserved exactly.
+561,FIG-02-45-005,02-45,fitting diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 18.32%; instructional SVG objects preserved exactly.
+562,FIG-02-45-006,02-45,duct diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 13.83%; instructional SVG objects preserved exactly.
+563,FIG-02-45-007,02-45,network diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 18.61%; instructional SVG objects preserved exactly.
+564,FIG-02-46-001,02-46,control-volume diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 16.52%; instructional SVG objects preserved exactly.
+565,FIG-02-46-002,02-46,bend diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 18.75%; instructional SVG objects preserved exactly.
+566,FIG-02-46-003,02-46,pitot diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 14.64%; instructional SVG objects preserved exactly.
+567,FIG-02-46-004,02-46,venturi diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 18.84%; instructional SVG objects preserved exactly.
+568,FIG-02-46-005,02-46,pump diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 17.01%; instructional SVG objects preserved exactly.
+569,FIG-02-46-006,02-46,performance graph,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 17.78%; instructional SVG objects preserved exactly.
+570,FIG-02-46-007,02-46,turbine diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 16.52%; instructional SVG objects preserved exactly.
+571,FIG-02-47-001,02-47,system diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 14.86%; instructional SVG objects preserved exactly.
+572,FIG-02-47-002,02-47,property map,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 13.01%; instructional SVG objects preserved exactly.
+573,FIG-02-47-003,02-47,energy-property diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 13.42%; instructional SVG objects preserved exactly.
+574,FIG-02-47-004,02-47,boundary diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 13.91%; instructional SVG objects preserved exactly.
+575,FIG-02-47-005,02-47,Pv diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 14.32%; instructional SVG objects preserved exactly.
+576,FIG-02-47-006,02-47,process map,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 17.57%; instructional SVG objects preserved exactly.
+577,FIG-02-47-007,02-47,state diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 14.44%; instructional SVG objects preserved exactly.
+578,FIG-02-48-001,02-48,phase diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 11.87%; instructional SVG objects preserved exactly.
+579,FIG-02-48-002,02-48,Pv diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 17.92%; instructional SVG objects preserved exactly.
+580,FIG-02-48-003,02-48,mixture diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 13.91%; instructional SVG objects preserved exactly.
+581,FIG-02-48-004,02-48,table diagram,Cleanup + visual/technical QA 0432-0581,PASS after whitespace/production-ID cleanup,Production ID removed; outer canvas area reduced 14.44%; instructional SVG objects preserved exactly.
+582,FIG-02-48-005,02-48,region diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+583,FIG-02-48-006,02-48,multi-panel diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+584,FIG-02-48-007,02-48,interpolation diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+585,FIG-02-49-001,02-49,gas-state diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+586,FIG-02-49-002,02-49,property diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+587,FIG-02-49-003,02-49,process diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+588,FIG-02-49-004,02-49,mixture diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+589,FIG-02-49-005,02-49,Z chart concept,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+590,FIG-02-49-006,02-49,psychrometric diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+591,FIG-02-49-007,02-49,process chart,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+592,FIG-02-50-001,02-50,energy balance diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+593,FIG-02-50-002,02-50,energy stack,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+594,FIG-02-50-003,02-50,Pv diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+595,FIG-02-50-004,02-50,rigid-tank diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+596,FIG-02-50-005,02-50,Pv diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+597,FIG-02-50-006,02-50,process family diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+598,FIG-02-50-007,02-50,flowchart,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+599,FIG-02-51-001,02-51,control-volume diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+600,FIG-02-51-002,02-51,device diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+601,FIG-02-51-003,02-51,nozzle diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+602,FIG-02-51-004,02-51,turbine diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+603,FIG-02-51-005,02-51,device comparison,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+604,FIG-02-51-006,02-51,valve diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+605,FIG-02-51-007,02-51,component map,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+606,FIG-02-52-001,02-52,reservoir diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+607,FIG-02-52-002,02-52,Ts diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+608,FIG-02-52-003,02-52,balance diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+609,FIG-02-52-004,02-52,comparison diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+610,FIG-02-52-005,02-52,equation map,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+611,FIG-02-52-006,02-52,temperature diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+612,FIG-02-52-007,02-52,exergy diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+613,FIG-02-53-001,02-53,engine diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+614,FIG-02-53-002,02-53,Ts diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+615,FIG-02-53-003,02-53,Pv-Ts diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+616,FIG-02-53-004,02-53,cycle diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+617,FIG-02-53-005,02-53,cycle diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+618,FIG-02-53-006,02-53,comparison diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+619,FIG-02-53-007,02-53,design map,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+620,FIG-02-54-001,02-54,refrigeration diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+621,FIG-02-54-002,02-54,temperature diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+622,FIG-02-54-003,02-54,cycle diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+623,FIG-02-54-004,02-54,Ph diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+624,FIG-02-54-005,02-54,capacity diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+625,FIG-02-54-006,02-54,house diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+626,FIG-02-54-007,02-54,comparison diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+627,FIG-02-55-001,02-55,temperature-gradient diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+628,FIG-02-55-002,02-55,wall diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+629,FIG-02-55-003,02-55,cylinder diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+630,FIG-02-55-004,02-55,network diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+631,FIG-02-55-005,02-55,composite-wall diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+632,FIG-02-55-006,02-55,graph,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+633,FIG-02-55-007,02-55,checklist,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+634,FIG-02-56-001,02-56,dimensionless diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+635,FIG-02-56-002,02-56,cooling curve,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+636,FIG-02-56-003,02-56,energy diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+637,FIG-02-56-004,02-56,dimensionless map,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+638,FIG-02-56-005,02-56,transient diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+639,FIG-02-56-006,02-56,fin diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+640,FIG-02-56-007,02-56,comparison diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+641,FIG-02-57-001,02-57,boundary-layer diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+642,FIG-02-57-002,02-57,dimensionless map,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+643,FIG-02-57-003,02-57,external-flow diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+644,FIG-02-57-004,02-57,tube diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+645,FIG-02-57-005,02-57,plume diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+646,FIG-02-57-006,02-57,radiation diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+647,FIG-02-57-007,02-57,enclosure diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+648,FIG-02-58-001,02-58,heat-exchanger diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+649,FIG-02-58-002,02-58,profile diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+650,FIG-02-58-003,02-58,temperature-difference diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+651,FIG-02-58-004,02-58,resistance diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+652,FIG-02-58-005,02-58,shell-tube diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+653,FIG-02-58-006,02-58,capacity-rate diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+654,FIG-02-58-007,02-58,decision diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+655,FIG-02-59-001,02-59,current diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+656,FIG-02-59-002,02-59,voltage diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+657,FIG-02-59-003,02-59,resistance geometry diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+658,FIG-02-59-004,02-59,resistor polarity diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+659,FIG-02-59-005,02-59,temperature graph,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+660,FIG-02-59-006,02-59,power diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+661,FIG-02-59-007,02-59,energy-flow diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+662,FIG-02-60-001,02-60,network diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+663,FIG-02-60-002,02-60,node diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+664,FIG-02-60-003,02-60,loop diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+665,FIG-02-60-004,02-60,divider diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+666,FIG-02-60-005,02-60,nodal diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+667,FIG-02-60-006,02-60,mesh diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+668,FIG-02-60-007,02-60,equivalent-circuit diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+669,FIG-02-61-001,02-61,capacitor diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+670,FIG-02-61-002,02-61,capacitor-network diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+671,FIG-02-61-003,02-61,inductor diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+672,FIG-02-61-004,02-61,inductor-network diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+673,FIG-02-61-005,02-61,switching diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+674,FIG-02-61-006,02-61,RC response graph,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+675,FIG-02-61-007,02-61,RL response graph,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+676,FIG-02-62-001,02-62,waveform diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+677,FIG-02-62-002,02-62,RMS diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+678,FIG-02-62-003,02-62,phasor diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+679,FIG-02-62-004,02-62,impedance-plane diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+680,FIG-02-62-005,02-62,phasor circuit diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+681,FIG-02-62-006,02-62,resonance graph,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+682,FIG-02-62-007,02-62,AC Thevenin diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+683,FIG-02-63-001,02-63,power-triangle diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+684,FIG-02-63-002,02-63,phase-power diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+685,FIG-02-63-003,02-63,correction diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+686,FIG-02-63-004,02-63,three-phase phasor diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+687,FIG-02-63-005,02-63,wye diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+688,FIG-02-63-006,02-63,delta diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+689,FIG-02-63-007,02-63,three-phase power diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+690,FIG-02-64-001,02-64,magnetic-field diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+691,FIG-02-64-002,02-64,right-hand-rule diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+692,FIG-02-64-003,02-64,induction diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+693,FIG-02-64-004,02-64,magnetic-circuit diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+694,FIG-02-64-005,02-64,transformer diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+695,FIG-02-64-006,02-64,impedance-reflection diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+696,FIG-02-64-007,02-64,connection diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+697,FIG-02-65-001,02-65,power-flow diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+698,FIG-02-65-002,02-65,shaft-power diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+699,FIG-02-65-003,02-65,speed-pole diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+700,FIG-02-65-004,02-65,phasor-machine diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+701,FIG-02-65-005,02-65,torque-speed graph,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+702,FIG-02-65-006,02-65,DC-machine diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+703,FIG-02-65-007,02-65,servo diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+704,FIG-02-66-001,02-66,measurement-chain diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+705,FIG-02-66-002,02-66,calibration diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+706,FIG-02-66-003,02-66,sensitivity graph,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+707,FIG-02-66-004,02-66,target diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+708,FIG-02-66-005,02-66,uncertainty diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+709,FIG-02-66-006,02-66,comparison diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+710,FIG-02-66-007,02-66,workflow diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+711,FIG-02-67-001,02-67,RTD diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+712,FIG-02-67-002,02-67,thermistor graph,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+713,FIG-02-67-003,02-67,thermocouple diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+714,FIG-02-67-004,02-67,strain-sensor diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+715,FIG-02-67-005,02-67,bridge diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+716,FIG-02-67-006,02-67,sensor-family diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+717,FIG-02-67-007,02-67,signal-chain diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+718,FIG-02-68-001,02-68,DAQ diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+719,FIG-02-68-002,02-68,sampling diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+720,FIG-02-68-003,02-68,aliasing diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+721,FIG-02-68-004,02-68,ADC staircase diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+722,FIG-02-68-005,02-68,first-order response graph,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+723,FIG-02-68-006,02-68,second-order graph,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+724,FIG-02-68-007,02-68,Bode diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+725,FIG-02-69-001,02-69,pole-zero diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+726,FIG-02-69-002,02-69,block diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+727,FIG-02-69-003,02-69,feedback diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+728,FIG-02-69-004,02-69,disturbance-path diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+729,FIG-02-69-005,02-69,s-plane stability diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+730,FIG-02-69-006,02-69,error-table diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+731,FIG-02-69-007,02-69,Bode-margin diagram,Cleanup + visual/technical QA 0582-0731,PASS cleanup + first-pass visual/technical QA,Production ID removed; SVG canvas tightened; PNG regenerated; cleaned contact-sheet review passed.
+867,FIG-03-19-003,03-19,routing table graphic,Batch 29 regenerated/new,PASS artwork / metadata repair,"Alt text is stale after Batch 29 redesign; it mentions stage-storage-outflow curves/routing table but artwork now shows hydrographs, storage curve, and reservoir cross-section."
+942,FIG-03-30-001,03-30,delivery diagram,Batch 29 regenerated/new,PASS artwork / metadata repair,Alt text is stale after Batch 29 redesign; it mentions construction-manager relationships although artwork compares design-bid-build and design-build only.
+1162,FIG-03-61-004,03-61,compatibility-matrix,Batch 29 regenerated/new,PASS first-pass visual/technical QA,
+1288,FIG-03-79-004,03-79,forming montage,Batch 29 regenerated/new,PASS first-pass visual/technical QA,
+1363,FIG-03-90-002,03-90,fit-comparison,Batch 29 regenerated/new,PASS first-pass visual/technical QA,
+1400,FIG-03-95-004,03-95,sanity-check,Batch 29 regenerated/new,PASS first-pass visual/technical QA,
+1401,FIG-03-95-005,03-95,two-stage flow,Batch 29 regenerated/new,PASS first-pass visual/technical QA,
+1402,FIG-03-95-006,03-95,time-strategy,Batch 29 regenerated/new,PASS first-pass visual/technical QA,
+1403,FIG-03-95-007,03-95,capstone-system,Batch 29 regenerated/new,PASS first-pass visual/technical QA,
