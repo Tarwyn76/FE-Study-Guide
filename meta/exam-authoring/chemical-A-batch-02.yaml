@@ -1,0 +1,260 @@
+schema_version: 1
+authoring_status: in-progress
+target_exam:
+  discipline: chemical
+  exam: A
+  exam_type: practice-A
+  final_question_count: 110
+  working_time_minutes: 320
+batch:
+  number: 2
+  questions_in_batch: 20
+  cumulative_questions: 40
+  blueprint_coverage_added:
+    Chemistry and Biology: 6
+    Fluid Mechanics/Dynamics: 5
+    Thermodynamics: 5
+    Material/Energy Balances: 4
+notes:
+  - This is an authoring-stage file and remains outside appendices/practice-exams until the full 110-item form is complete.
+  - Items are original practice questions aligned to the Chemical Practice A blueprint.
+items:
+  - id: CHEM-A-Q021
+    knowledge_area: Chemistry and Biology
+    question_type: multiple-choice
+    prompt: "At 25°C, an ideal gas occupies 24.5 L/mol at approximately 1 atm. What is the approximate molar concentration of the gas?"
+    choices:
+      - "A) 0.0204 mol/L"
+      - "B) 0.0408 mol/L"
+      - "C) 1.00 mol/L"
+      - "D) 24.5 mol/L"
+    answer: B
+    solution: "Molar concentration is n/V=1 mol/24.5 L=0.0408 mol/L."
+
+  - id: CHEM-A-Q022
+    knowledge_area: Chemistry and Biology
+    question_type: multiple-choice
+    prompt: "For the reaction A + B ⇌ C, equilibrium concentrations are [A]=0.20 M, [B]=0.50 M, and [C]=0.10 M. What is Kc?"
+    choices:
+      - "A) 0.20"
+      - "B) 0.50"
+      - "C) 1.0"
+      - "D) 5.0"
+    answer: C
+    solution: "Kc=[C]/([A][B])=0.10/[(0.20)(0.50)]=0.10/0.10=1.0."
+
+  - id: CHEM-A-Q023
+    knowledge_area: Chemistry and Biology
+    question_type: multiple-choice
+    prompt: "For 2H2 + O2 → 2H2O, a feed contains 5 mol H2 and 2 mol O2. Which reactant is limiting and how many moles of H2O can form?"
+    choices:
+      - "A) H2 limiting; 4 mol H2O"
+      - "B) O2 limiting; 4 mol H2O"
+      - "C) H2 limiting; 5 mol H2O"
+      - "D) O2 limiting; 5 mol H2O"
+    answer: B
+    solution: "Two moles O2 require 4 mol H2, so O2 is limiting. The stoichiometry gives 2 mol H2O per mol O2, producing 4 mol H2O."
+
+  - id: CHEM-A-Q024
+    knowledge_area: Chemistry and Biology
+    question_type: multiple-choice
+    prompt: "A monoprotic weak acid has Ka=1.0×10^-5 and initial concentration 0.10 M. Using the small-dissociation approximation, what is the approximate pH?"
+    choices:
+      - "A) 2.0"
+      - "B) 3.0"
+      - "C) 5.0"
+      - "D) 6.0"
+    answer: B
+    solution: "[H+]≈sqrt(Ka C)=sqrt(1.0×10^-6)=1.0×10^-3 M, giving pH≈3.0."
+
+  - id: CHEM-A-Q025
+    knowledge_area: Chemistry and Biology
+    question_type: multiple-choice
+    prompt: "What is the oxidation state of sulfur in SO4^2-?"
+    choices:
+      - "A) +2"
+      - "B) +4"
+      - "C) +6"
+      - "D) +8"
+    answer: C
+    solution: "Let sulfur be x. Then x+4(-2)=-2, so x=+6."
+
+  - id: CHEM-A-Q026
+    knowledge_area: Chemistry and Biology
+    question_type: multiple-choice
+    prompt: "A biological culture consumes 8.0 g of substrate and produces 3.2 g of dry biomass. What is the observed biomass yield Yx/s?"
+    choices:
+      - "A) 0.25 g/g"
+      - "B) 0.40 g/g"
+      - "C) 2.5 g/g"
+      - "D) 5.6 g/g"
+    answer: B
+    solution: "Yx/s=biomass produced/substrate consumed=3.2/8.0=0.40 g/g."
+
+  - id: CHEM-A-Q027
+    knowledge_area: Fluid Mechanics/Dynamics
+    question_type: multiple-choice
+    prompt: "Water flows steadily through a horizontal pipe. The speed increases from 2 m/s to 6 m/s. Neglecting losses, what is P1-P2?"
+    choices:
+      - "A) 8 kPa"
+      - "B) 16 kPa"
+      - "C) 20 kPa"
+      - "D) 32 kPa"
+    answer: B
+    solution: "Bernoulli gives P1-P2=(ρ/2)(v2^2-v1^2)=500(36-4)=16,000 Pa=16 kPa."
+
+  - id: CHEM-A-Q028
+    knowledge_area: Fluid Mechanics/Dynamics
+    question_type: multiple-choice
+    prompt: "Water at 20°C flows in a 0.050 m diameter pipe at 2.0 m/s. Using ρ=1000 kg/m^3 and μ=1.0×10^-3 Pa·s, what is the Reynolds number?"
+    choices:
+      - "A) 1.0×10^3"
+      - "B) 1.0×10^4"
+      - "C) 1.0×10^5"
+      - "D) 1.0×10^6"
+    answer: C
+    solution: "Re=ρvD/μ=(1000)(2.0)(0.050)/(1.0×10^-3)=1.0×10^5."
+
+  - id: CHEM-A-Q029
+    knowledge_area: Fluid Mechanics/Dynamics
+    question_type: multiple-choice
+    prompt: "What is the gage pressure 12 m below the surface of a water reservoir? Use ρ=1000 kg/m^3 and g=9.81 m/s^2."
+    choices:
+      - "A) 11.8 kPa"
+      - "B) 58.9 kPa"
+      - "C) 118 kPa"
+      - "D) 981 kPa"
+    answer: C
+    solution: "p=ρgh=(1000)(9.81)(12)=117,720 Pa≈118 kPa."
+
+  - id: CHEM-A-Q030
+    knowledge_area: Fluid Mechanics/Dynamics
+    question_type: multiple-choice
+    prompt: "A pump raises water at 0.020 m^3/s through a head increase of 25 m. If pump efficiency is 80%, what shaft power is required? Use ρ=1000 kg/m^3 and g=9.81 m/s^2."
+    choices:
+      - "A) 3.9 kW"
+      - "B) 4.9 kW"
+      - "C) 6.1 kW"
+      - "D) 9.8 kW"
+    answer: C
+    solution: "Hydraulic power is ρgQH=(1000)(9.81)(0.020)(25)=4.905 kW. Shaft power=4.905/0.80=6.13 kW."
+
+  - id: CHEM-A-Q031
+    knowledge_area: Fluid Mechanics/Dynamics
+    question_type: multiple-choice
+    prompt: "For fully developed pipe flow, the Darcy friction factor is 0.020, L/D=200, and average velocity is 3.0 m/s. What is the Darcy-Weisbach head loss? Use g=9.81 m/s^2."
+    choices:
+      - "A) 0.46 m"
+      - "B) 0.92 m"
+      - "C) 1.84 m"
+      - "D) 3.67 m"
+    answer: C
+    solution: "hf=f(L/D)(v^2/2g)=0.020(200)(9/(19.62))=1.835 m≈1.84 m."
+
+  - id: CHEM-A-Q032
+    knowledge_area: Thermodynamics
+    question_type: multiple-choice
+    prompt: "One mole of an ideal gas expands reversibly and isothermally at 300 K from 10 L to 20 L. What work is done by the gas? Use R=8.314 J/(mol·K)."
+    choices:
+      - "A) 0.83 kJ"
+      - "B) 1.73 kJ"
+      - "C) 2.49 kJ"
+      - "D) 4.99 kJ"
+    answer: B
+    solution: "W=nRT ln(V2/V1)=(1)(8.314)(300)ln(2)=1.73 kJ."
+
+  - id: CHEM-A-Q033
+    knowledge_area: Thermodynamics
+    question_type: multiple-choice
+    prompt: "A closed system receives 500 kJ of heat and does 180 kJ of work on its surroundings. What is the change in internal energy?"
+    choices:
+      - "A) -680 kJ"
+      - "B) -320 kJ"
+      - "C) +320 kJ"
+      - "D) +680 kJ"
+    answer: C
+    solution: "Using ΔU=Q-W for work done by the system, ΔU=500-180=+320 kJ."
+
+  - id: CHEM-A-Q034
+    knowledge_area: Thermodynamics
+    question_type: multiple-choice
+    prompt: "What is the maximum possible thermal efficiency of a heat engine operating between 800 K and 300 K?"
+    choices:
+      - "A) 37.5%"
+      - "B) 50.0%"
+      - "C) 62.5%"
+      - "D) 72.5%"
+    answer: C
+    solution: "Carnot efficiency is 1-TL/TH=1-300/800=0.625=62.5%."
+
+  - id: CHEM-A-Q035
+    knowledge_area: Thermodynamics
+    question_type: multiple-choice
+    prompt: "An ideal gas with constant cp=1.00 kJ/(kg·K) is heated from 300 K to 450 K at constant pressure. What is the specific enthalpy change?"
+    choices:
+      - "A) 100 kJ/kg"
+      - "B) 150 kJ/kg"
+      - "C) 300 kJ/kg"
+      - "D) 450 kJ/kg"
+    answer: B
+    solution: "Δh=cpΔT=(1.00)(450-300)=150 kJ/kg."
+
+  - id: CHEM-A-Q036
+    knowledge_area: Thermodynamics
+    question_type: multiple-choice
+    prompt: "At a saturated state, hf=500 kJ/kg and hfg=2000 kJ/kg. If h=1700 kJ/kg, what is the vapor quality?"
+    choices:
+      - "A) 0.40"
+      - "B) 0.50"
+      - "C) 0.60"
+      - "D) 0.85"
+    answer: C
+    solution: "For a saturated mixture, h=hf+xhfg. Thus x=(1700-500)/2000=0.60."
+
+  - id: CHEM-A-Q037
+    knowledge_area: Material/Energy Balances
+    question_type: multiple-choice
+    prompt: "A mixer combines 100 kg/h of a 20 wt% solute stream with 50 kg/h of a 50 wt% solute stream. What is the solute mass fraction in the product?"
+    choices:
+      - "A) 0.25"
+      - "B) 0.30"
+      - "C) 0.35"
+      - "D) 0.40"
+    answer: B
+    solution: "Solute flow=(100)(0.20)+(50)(0.50)=45 kg/h. Total flow=150 kg/h, so mass fraction=45/150=0.30."
+
+  - id: CHEM-A-Q038
+    knowledge_area: Material/Energy Balances
+    question_type: multiple-choice
+    prompt: "An evaporator concentrates 1000 kg/h of a 10 wt% nonvolatile-solids feed to 40 wt% solids. What is the product flow rate?"
+    choices:
+      - "A) 100 kg/h"
+      - "B) 250 kg/h"
+      - "C) 400 kg/h"
+      - "D) 750 kg/h"
+    answer: B
+    solution: "Nonvolatile solids are conserved: 1000(0.10)=P(0.40), so P=250 kg/h."
+
+  - id: CHEM-A-Q039
+    knowledge_area: Material/Energy Balances
+    question_type: multiple-choice
+    prompt: "A process feed contains 80 mol/h A and 20 mol/h inert I. If 75% of A reacts and the inert does not react, what is the total outlet molar flow assuming one mole of A disappears per mole reacted and no gaseous products are formed?"
+    choices:
+      - "A) 20 mol/h"
+      - "B) 40 mol/h"
+      - "C) 60 mol/h"
+      - "D) 100 mol/h"
+    answer: B
+    solution: "A reacted=0.75(80)=60 mol/h, leaving 20 mol/h A. Adding 20 mol/h inert gives 40 mol/h total outlet."
+
+  - id: CHEM-A-Q040
+    knowledge_area: Material/Energy Balances
+    question_type: multiple-choice
+    prompt: "A steady-flow heater processes 2.0 kg/s of liquid with cp=4.0 kJ/(kg·K), raising its temperature by 25 K. Neglect kinetic, potential, and shaft-work effects. What heat-transfer rate is required?"
+    choices:
+      - "A) 50 kW"
+      - "B) 100 kW"
+      - "C) 200 kW"
+      - "D) 400 kW"
+    answer: C
+    solution: "Qdot=m_dot cp ΔT=(2.0)(4.0)(25)=200 kJ/s=200 kW."
