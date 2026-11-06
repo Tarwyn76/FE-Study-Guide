@@ -1,0 +1,39 @@
+name: Apply manual figure repairs 2026-11-06
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [figure-cleanup-strict]
+    paths:
+      - tools/apply_manual_figure_repairs_20261106.py
+      - .github/workflows/apply-manual-figure-repairs-20261106.yml
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: figure-cleanup-strict
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install --upgrade pip
+      - run: python -m pip install cairosvg pillow numpy
+      - name: Apply 25 manual repairs
+        run: python tools/apply_manual_figure_repairs_20261106.py
+      - name: Commit repaired SVG/PNG assets and validation
+        run: |
+          git config user.name "ChatGPT Figure QA"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add figures/svg figures/png meta/manual-figure-repair-validation-20261106.csv
+          if git diff --cached --quiet; then
+            echo "No changes produced."
+            exit 0
+          fi
+          git commit -m "Apply 25 manual figure QA repairs"
+          git push origin HEAD:figure-cleanup-strict
