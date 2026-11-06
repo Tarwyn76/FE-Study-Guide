@@ -1,0 +1,64 @@
+name: Rebuild and validate figure 0714
+
+on:
+  push:
+    branches:
+      - figure-cleanup-strict
+    paths:
+      - figures/svg/0714_FIG-02-67-004.svg
+      - .github/workflows/rebuild-0714.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: figure-cleanup-strict
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install cairosvg pillow numpy
+      - name: Render PNG from redesigned SVG
+        run: |
+          python - <<'PY'
+          import cairosvg
+          cairosvg.svg2png(
+              url="figures/svg/0714_FIG-02-67-004.svg",
+              write_to="figures/png/0714_FIG-02-67-004.png",
+              output_width=3600,
+              background_color="#ffffff",
+          )
+          PY
+      - name: Revalidate full corpus
+        id: validate
+        continue-on-error: true
+        run: python tools/validate_figures_current.py
+      - name: Report 0714 and totals
+        run: |
+          python - <<'PY'
+          import csv
+          rows=list(csv.DictReader(open("meta/figure-current-standards-validation.csv",encoding="utf-8-sig")))
+          r=next(x for x in rows if int(x["index"])==714)
+          print("0714",r["status"],r.get("issues",""),r.get("warnings",""))
+          print("SUMMARY",
+                "PASS="+str(sum(x["status"]=="PASS" for x in rows)),
+                "REVIEW="+str(sum(x["status"]=="REVIEW" for x in rows)),
+                "FAIL="+str(sum(x["status"]=="FAIL" for x in rows)))
+          if r["status"]=="FAIL":
+              raise SystemExit(1)
+          PY
+      - name: Commit regenerated PNG and reports
+        run: |
+          git config user.name "ChatGPT Figure QA"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add figures/png/0714_FIG-02-67-004.png meta/figure-current-standards-validation.csv meta/figure-current-standards-validation.md
+          if ! git diff --cached --quiet; then
+            git commit -m "Render redesigned figure 0714 and revalidate"
+            git push origin HEAD:figure-cleanup-strict
+          fi
