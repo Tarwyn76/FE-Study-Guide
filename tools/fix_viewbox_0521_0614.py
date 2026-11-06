@@ -38,3 +38,5 @@ for idx, stem in FILES:
     )
 
     print(f"{idx}: {x:g} {y:g} {w:g} {h:g} -> {nx:g} {ny:g} {nw:g} {nh:g}")
+
+# trigger registered workflow
