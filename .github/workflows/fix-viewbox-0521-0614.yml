@@ -1,0 +1,35 @@
+name: Fix SVG viewBoxes for 0521 and 0614
+
+on:
+  push:
+    branches: [figure-cleanup-strict]
+    paths:
+      - tools/fix_viewbox_0521_0614.py
+      - .github/workflows/fix-viewbox-0521-0614.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: figure-cleanup-strict
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install --upgrade pip
+      - run: python -m pip install cairosvg
+      - name: Expand SVG viewBoxes and regenerate PNGs
+        run: python tools/fix_viewbox_0521_0614.py
+      - name: Commit corrected viewBoxes
+        run: |
+          git config user.name "ChatGPT Figure QA"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add figures/svg/0521_FIG-02-39-007.svg figures/png/0521_FIG-02-39-007.png
+          git add figures/svg/0614_FIG-02-53-002.svg figures/png/0614_FIG-02-53-002.png
+          git commit -m "Expand SVG viewBoxes for 0521 and 0614"
+          git push origin HEAD:figure-cleanup-strict
