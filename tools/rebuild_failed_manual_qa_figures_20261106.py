@@ -172,3 +172,5 @@ def fig0616():
 if __name__=="__main__":
     fig0521(); fig0579(); fig0583(); fig0614(); fig0616()
     print("Rebuilt 0521, 0579, 0583, 0614, 0616")
+
+# trigger rebuild after visual QA
