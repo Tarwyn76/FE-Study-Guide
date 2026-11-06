@@ -35,3 +35,5 @@ jobs:
           git add figures/png/0616_FIG-02-53-004.png figures/svg/0616_FIG-02-53-004.svg
           git commit -m "Rebuild five failed manual-QA figures"
           git push origin HEAD:figure-cleanup-strict
+
+# exact-viewbox rebuild trigger 2026-11-06
