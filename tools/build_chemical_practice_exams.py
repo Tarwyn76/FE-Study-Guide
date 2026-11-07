@@ -479,3 +479,5 @@ for form in ("A","B"):
     y.write_text(yaml.safe_dump(ex,sort_keys=False,allow_unicode=True,width=110),encoding="utf-8")
     m.write_text(markdown(ex),encoding="utf-8")
     print(y, m)
+
+# trigger audit after mathematical-choice normalization fix
