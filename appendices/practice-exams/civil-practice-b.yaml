@@ -1,0 +1,1611 @@
+schema_version: 1
+exam_type: practice-B
+discipline: civil
+exam: B
+question_count: 110
+appointment_minutes: 355
+working_time_minutes: 320
+blueprint_source: meta/exam-blueprints.yaml
+items:
+- knowledge_area: Mathematics and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-037-07
+  prompt: During a design review for a county road project, evaluate ∫_0^5 2x dx.
+  choices:
+  - '10.00'
+  - '12.50'
+  - '30.00'
+  - '25.00'
+  answer: D
+  solution: '**D.** Integral=x²; result=25.00. This result applies to the stated design review for a county road
+    project.'
+  id: CIV-B-Q001
+- knowledge_area: Mathematics and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-01
+  prompt: During a design review for a detention retrofit project, find the mean of [54, 57, 60, 63].
+  choices:
+  - '56.50'
+  - '234.0'
+  - '58.50'
+  - '60.50'
+  answer: C
+  solution: '**C.** Mean=234/4=58.50. This result applies to the stated design review for a detention retrofit project.'
+  id: CIV-B-Q002
+- knowledge_area: Mathematics and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-02
+  prompt: During a design review for a pump-station project, independent defect probability is 0.21 for each of
+    5 samples. Find the probability of zero defects.
+  choices:
+  - '1.050'
+  - '0.308'
+  - '0.692'
+  - '0.000'
+  answer: B
+  solution: '**B.** P(0)=(1-p)^n=0.308. This result applies to the stated design review for a pump-station project.'
+  id: CIV-B-Q003
+- knowledge_area: Mathematics and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-03
+  prompt: During a design review for a office expansion project, a measurement is normal with μ=50 and σ=6. Find
+    the z-score for x=62.
+  choices:
+  - '2.000'
+  - '1.000'
+  - '0.500'
+  - '4.000'
+  answer: A
+  solution: '**A.** z=(x-μ)/σ=2.000. This result applies to the stated design review for a office expansion project.'
+  id: CIV-B-Q004
+- knowledge_area: Mathematics and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-04
+  prompt: During a design review for a slope stabilization project, solve 3x=5.
+  choices:
+  - '2.667'
+  - '0.667'
+  - '15.00'
+  - '1.667'
+  answer: D
+  solution: '**D.** x=5/3=1.667. This result applies to the stated design review for a slope stabilization project.'
+  id: CIV-B-Q005
+- knowledge_area: Mathematics and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-05
+  prompt: During a design review for a arterial widening project, for y=x²+5x, find dy/dx at x=4.
+  choices:
+  - '9'
+  - '36'
+  - '13'
+  - '8'
+  answer: C
+  solution: '**C.** dy/dx=2x+5=13. This result applies to the stated design review for a arterial widening project.'
+  id: CIV-B-Q006
+- knowledge_area: Mathematics and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-06
+  prompt: During a design review for a subdivision project, evaluate ∫_0^5 2x dx.
+  choices:
+  - '30.00'
+  - '25.00'
+  - '10.00'
+  - '12.50'
+  answer: B
+  solution: '**B.** Integral=x²; result=25.00. This result applies to the stated design review for a subdivision
+    project.'
+  id: CIV-B-Q007
+- knowledge_area: Mathematics and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-07
+  prompt: During a design review for a drainage crossing project, find the mean of [60, 63, 66, 69].
+  choices:
+  - '64.50'
+  - '66.50'
+  - '62.50'
+  - '258.0'
+  answer: A
+  solution: '**A.** Mean=258/4=64.50. This result applies to the stated design review for a drainage crossing project.'
+  id: CIV-B-Q008
+- knowledge_area: Mathematics and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-029-01
+  prompt: During a design review for a industrial slab project, independent defect probability is 0.17 for each
+    of 5 samples. Find the probability of zero defects.
+  choices:
+  - '0.606'
+  - '0.000'
+  - '0.850'
+  - '0.394'
+  answer: D
+  solution: '**D.** P(0)=(1-p)^n=0.394. This result applies to the stated design review for a industrial slab project.'
+  id: CIV-B-Q009
+- knowledge_area: Mathematics and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-029-02
+  prompt: During a field-verification review for a pedestrian bridge project, a measurement is normal with μ=50
+    and σ=6. Find the z-score for x=62.
+  choices:
+  - '0.500'
+  - '4.000'
+  - '2.000'
+  - '1.000'
+  answer: C
+  solution: '**C.** z=(x-μ)/σ=2.000. This result applies to the stated field-verification review for a pedestrian
+    bridge project.'
+  id: CIV-B-Q010
+- knowledge_area: Ethics and Professional Practice
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-002-07
+  prompt: During a field-verification review for a county road project, which action best satisfies professional
+    engineering obligations in the stated situation?
+  choices:
+  - Accept all work offered
+  - Delegate all responsibility
+  - Seal work not reviewed
+  - Work within competence
+  answer: D
+  solution: '**D.** Engineers must practice within competence. This result applies to the stated field-verification
+    review for a county road project.'
+  id: CIV-B-Q011
+- knowledge_area: Ethics and Professional Practice
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-01
+  prompt: During a field-verification review for a detention retrofit project, which action best satisfies professional
+    engineering obligations in the stated situation?
+  choices:
+  - Ignore financial interests
+  - Let contractor decide
+  - Disclose material conflicts
+  - Hide conflicts
+  answer: C
+  solution: '**C.** Material conflicts should be disclosed. This result applies to the stated field-verification
+    review for a detention retrofit project.'
+  id: CIV-B-Q012
+- knowledge_area: Ethics and Professional Practice
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-02
+  prompt: During a field-verification review for a pump-station project, which action best satisfies professional
+    engineering obligations in the stated situation?
+  choices:
+  - Approve it to avoid delay
+  - Correct or report a material error
+  - Leave it unchanged
+  - Delete records
+  answer: B
+  solution: '**B.** Professional duty includes addressing material errors. This result applies to the stated field-verification
+    review for a pump-station project.'
+  id: CIV-B-Q013
+- knowledge_area: Ethics and Professional Practice
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-03
+  prompt: During a field-verification review for a office expansion project, which action best satisfies professional
+    engineering obligations in the stated situation?
+  choices:
+  - Public welfare
+  - Employer schedule
+  - Client secrecy in all cases
+  - Lowest project cost
+  answer: A
+  solution: '**A.** Public safety and welfare take precedence. This result applies to the stated field-verification
+    review for a office expansion project.'
+  id: CIV-B-Q014
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-006-07
+  prompt: During a field-verification review for a slope stabilization project, for equal-service mutually exclusive
+    alternatives, which present-worth rule is appropriate?
+  choices:
+  - Select the greatest initial cost
+  - Select the longest life regardless of value
+  - Select the smallest annual interest rate
+  - Select the greatest net present worth
+  answer: D
+  solution: '**D.** Use consistent cash-flow signs and choose the greatest net present worth. This result applies
+    to the stated field-verification review for a slope stabilization project.'
+  id: CIV-B-Q015
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-01
+  prompt: During a field-verification review for a arterial widening project, a future cost of $104,000 occurs in
+    5 years at 6% annual interest. Find present worth.
+  choices:
+  - $139175.5
+  - $80000.0
+  - $77714.8
+  - $104000.0
+  answer: C
+  solution: '**C.** P=F/(1.06)^5=$77714.8. This result applies to the stated field-verification review for a arterial
+    widening project.'
+  id: CIV-B-Q016
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-02
+  prompt: During a field-verification review for a subdivision project, $10,000 is invested at 5% for 5 years. Find
+    future worth.
+  choices:
+  - $12500.0
+  - $12762.8
+  - $10000.0
+  - $7835.3
+  answer: B
+  solution: '**B.** F=P(1+i)^n=$12762.8. This result applies to the stated field-verification review for a subdivision
+    project.'
+  id: CIV-B-Q017
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-03
+  prompt: During a field-verification review for a drainage crossing project, for equal-service mutually exclusive
+    alternatives, which present-worth rule is appropriate?
+  choices:
+  - Select the greatest net present worth
+  - Select the greatest initial cost
+  - Select the longest life regardless of value
+  - Select the smallest annual interest rate
+  answer: A
+  solution: '**A.** Use consistent cash-flow signs and choose the greatest net present worth. This result applies
+    to the stated field-verification review for a drainage crossing project.'
+  id: CIV-B-Q018
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-04
+  prompt: During a field-verification review for a industrial slab project, a future cost of $110,000 occurs in
+    5 years at 6% annual interest. Find present worth.
+  choices:
+  - $110000.0
+  - $147204.8
+  - $84615.4
+  - $82198.4
+  answer: D
+  solution: '**D.** P=F/(1.06)^5=$82198.4. This result applies to the stated field-verification review for a industrial
+    slab project.'
+  id: CIV-B-Q019
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-030-07
+  prompt: During a bid review for a pedestrian bridge project, a two-force member in equilibrium carries forces
+    that are
+  choices:
+  - equal and perpendicular
+  - parallel but unequal
+  - a pure couple
+  - equal, opposite, and collinear
+  answer: D
+  solution: '**D.** Only two equal, opposite, collinear end forces can equilibrate a two-force member. This result
+    applies to the stated bid review for a pedestrian bridge project.'
+  id: CIV-B-Q020
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-03
+  prompt: During a bid review for a county road project, a 940 N force acts perpendicular to a 2.50 m lever arm.
+    Find moment magnitude.
+  choices:
+  - 942.5 N·m
+  - 1175.0 N·m
+  - 2350.0 N·m
+  - 376.0 N·m
+  answer: C
+  solution: '**C.** M=Fd=2350.0 N·m. This result applies to the stated bid review for a county road project.'
+  id: CIV-B-Q021
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-01
+  prompt: During a bid review for a detention retrofit project, a simply supported beam carries a uniform load of
+    98 kN/m over 6 m. Find each reaction.
+  choices:
+  - 147.0 kN
+  - 294.0 kN
+  - 588.0 kN
+  - 98.00 kN
+  answer: B
+  solution: '**B.** Total load=588 kN; symmetry gives half to each support=294.0 kN. This result applies to the
+    stated bid review for a detention retrofit project.'
+  id: CIV-B-Q022
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-02
+  prompt: During a bid review for a pump-station project, a block has normal force 2700 N and μ_s=0.4. Find limiting
+    static friction.
+  choices:
+  - 1080.0 N
+  - 6750.0 N
+  - 1620.0 N
+  - 0.400 N
+  answer: A
+  solution: '**A.** F_max=μ_sN=1080.0 N. This result applies to the stated bid review for a pump-station project.'
+  id: CIV-B-Q023
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-04
+  prompt: During a bid review for a office expansion project, a triangular distributed load rises from zero to 100
+    kN/m over 4 m. Find resultant magnitude.
+  choices:
+  - 400.0 kN
+  - 100.0 kN
+  - 2.667 kN
+  - 200.0 kN
+  answer: D
+  solution: '**D.** Resultant equals triangular area, 0.5wL=200.0 kN. This result applies to the stated bid review
+    for a office expansion project.'
+  id: CIV-B-Q024
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-05
+  prompt: During a bid review for a slope stabilization project, a pin support in a planar structure supplies how
+    many independent reaction-force components?
+  choices:
+  - '3'
+  - '0'
+  - '2'
+  - '1'
+  answer: C
+  solution: '**C.** A planar pin resists horizontal and vertical translation but not moment. This result applies
+    to the stated bid review for a slope stabilization project.'
+  id: CIV-B-Q025
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-06
+  prompt: During a bid review for a arterial widening project, a two-force member in equilibrium carries forces
+    that are
+  choices:
+  - a pure couple
+  - equal, opposite, and collinear
+  - equal and perpendicular
+  - parallel but unequal
+  answer: B
+  solution: '**B.** Only two equal, opposite, collinear end forces can equilibrate a two-force member. This result
+    applies to the stated bid review for a arterial widening project.'
+  id: CIV-B-Q026
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-07
+  prompt: During a bid review for a subdivision project, a 1060 N force acts perpendicular to a 2.00 m lever arm.
+    Find moment magnitude.
+  choices:
+  - 2120.0 N·m
+  - 530.0 N·m
+  - 1062.0 N·m
+  - 1060.0 N·m
+  answer: A
+  solution: '**A.** M=Fd=2120.0 N·m. This result applies to the stated bid review for a subdivision project.'
+  id: CIV-B-Q027
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-023-01
+  prompt: During a bid review for a drainage crossing project, a simply supported beam carries a uniform load of
+    110 kN/m over 6 m. Find each reaction.
+  choices:
+  - 660.0 kN
+  - 110.0 kN
+  - 165.0 kN
+  - 330.0 kN
+  answer: D
+  solution: '**D.** Total load=660 kN; symmetry gives half to each support=330.0 kN. This result applies to the
+    stated bid review for a drainage crossing project.'
+  id: CIV-B-Q028
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-023-02
+  prompt: During a bid review for a industrial slab project, a block has normal force 3000 N and μ_s=0.4. Find limiting
+    static friction.
+  choices:
+  - 1800.0 N
+  - 0.400 N
+  - 1200.0 N
+  - 7500.0 N
+  answer: C
+  solution: '**C.** F_max=μ_sN=1200.0 N. This result applies to the stated bid review for a industrial slab project.'
+  id: CIV-B-Q029
+- knowledge_area: Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-031-07
+  prompt: During a construction review for a pedestrian bridge project, A delivery truck enters a horizontal curve
+    at constant speed. Determine the quantity requested using the stated curve geometry and kinematics relation.
+  choices:
+  - 17.00 N
+  - 54.00 N
+  - 76.50 N
+  - 153.0 N
+  answer: D
+  solution: '**D.** ΣF=ma=153.0 N. This result applies to the stated construction review for a pedestrian bridge
+    project.'
+  id: CIV-B-Q030
+- knowledge_area: Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-032-01
+  prompt: During a construction review for a county road project, a 46 kg body moves at 6 m/s. Find kinetic energy.
+  choices:
+  - 1656.0 J
+  - 138.0 J
+  - 828.0 J
+  - 276.0 J
+  answer: C
+  solution: '**C.** T=½mv²=828.0 J. This result applies to the stated construction review for a county road project.'
+  id: CIV-B-Q031
+- knowledge_area: Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-032-02
+  prompt: During a construction review for a detention retrofit project, a vehicle travels 58 m/s on a curve of
+    radius 20 m. Find normal acceleration.
+  choices:
+  - 67280.0 m/s²
+  - 168.2 m/s²
+  - 2.900 m/s²
+  - 0.345 m/s²
+  answer: B
+  solution: '**B.** a_n=v²/r=168.2 m/s². This result applies to the stated construction review for a detention retrofit
+    project.'
+  id: CIV-B-Q032
+- knowledge_area: Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-032-03
+  prompt: During a construction review for a pump-station project, a particle has v₀=49 m/s and constant a=2 m/s²
+    for 4 s. Find final velocity.
+  choices:
+  - 57.00 m/s
+  - 51.00 m/s
+  - 8.000 m/s
+  - 196.0 m/s
+  answer: A
+  solution: '**A.** v=v₀+at=57.00 m/s. This result applies to the stated construction review for a pump-station
+    project.'
+  id: CIV-B-Q033
+- knowledge_area: Mechanics of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-038-07
+  prompt: During a construction review for a office expansion project, a steel bar has P=50 kN, L=2 m, A=2000 mm²,
+    E=200 GPa. Find axial elongation.
+  choices:
+  - 0.500 mm
+  - 0.125 mm
+  - 50000000.0 mm
+  - 0.250 mm
+  answer: D
+  solution: '**D.** δ=PL/(AE)=0.250 mm. This result applies to the stated construction review for a office expansion
+    project.'
+  id: CIV-B-Q034
+- knowledge_area: Mechanics of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-039-01
+  prompt: During a construction review for a slope stabilization project, a beam section has M=20 kN·m, c=0.15 m,
+    I=8.0×10⁻⁴ m⁴. Find extreme-fiber bending stress.
+  choices:
+  - 7.500 MPa
+  - 25.00 MPa
+  - 3.750 MPa
+  - 1.875 MPa
+  answer: C
+  solution: '**C.** σ=Mc/I=3.750 MPa. This result applies to the stated construction review for a slope stabilization
+    project.'
+  id: CIV-B-Q035
+- knowledge_area: Mechanics of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-039-02
+  prompt: During a construction review for a arterial widening project, a circular shaft has T=5 kN·m, outer radius
+    0.05 m, J=1.0×10⁻⁵ m⁴. Find outer shear stress.
+  choices:
+  - 500.0 MPa
+  - 25.00 MPa
+  - 12.50 MPa
+  - 50.00 MPa
+  answer: B
+  solution: '**B.** τ=Tr/J=25.00 MPa. This result applies to the stated construction review for a arterial widening
+    project.'
+  id: CIV-B-Q036
+- knowledge_area: Mechanics of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-039-03
+  prompt: During a construction review for a subdivision project, at a free surface of a beam, transverse shear
+    stress is typically
+  choices:
+  - zero
+  - maximum
+  - equal to bending stress
+  - independent of section geometry
+  answer: A
+  solution: '**A.** For common beam sections, transverse shear drops to zero at the free surface. This result applies
+    to the stated construction review for a subdivision project.'
+  id: CIV-B-Q037
+- knowledge_area: Mechanics of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-039-04
+  prompt: During a construction review for a drainage crossing project, an axial load of 530 kN acts on 3050 mm².
+    Find normal stress.
+  choices:
+  - 86.89 MPa
+  - 0.174 MPa
+  - 347.5 MPa
+  - 173.8 MPa
+  answer: D
+  solution: '**D.** σ=P/A=173.8 MPa. This result applies to the stated construction review for a drainage crossing
+    project.'
+  id: CIV-B-Q038
+- knowledge_area: Mechanics of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-039-05
+  prompt: During a construction review for a industrial slab project, a steel bar has P=50 kN, L=2 m, A=2000 mm²,
+    E=200 GPa. Find axial elongation.
+  choices:
+  - 0.125 mm
+  - 50000000.0 mm
+  - 0.250 mm
+  - 0.500 mm
+  answer: C
+  solution: '**C.** δ=PL/(AE)=0.250 mm. This result applies to the stated construction review for a industrial slab
+    project.'
+  id: CIV-B-Q039
+- knowledge_area: Mechanics of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-039-06
+  prompt: During a rehabilitation review for a pedestrian bridge project, a beam section has M=20 kN·m, c=0.15 m,
+    I=8.0×10⁻⁴ m⁴. Find extreme-fiber bending stress.
+  choices:
+  - 25.00 MPa
+  - 3.750 MPa
+  - 1.875 MPa
+  - 7.500 MPa
+  answer: B
+  solution: '**B.** σ=Mc/I=3.750 MPa. This result applies to the stated rehabilitation review for a pedestrian bridge
+    project.'
+  id: CIV-B-Q040
+- knowledge_area: Mechanics of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-039-07
+  prompt: During a rehabilitation review for a county road project, a circular shaft has T=5 kN·m, outer radius
+    0.05 m, J=1.0×10⁻⁵ m⁴. Find outer shear stress.
+  choices:
+  - 25.00 MPa
+  - 12.50 MPa
+  - 50.00 MPa
+  - 500.0 MPa
+  answer: A
+  solution: '**A.** τ=Tr/J=25.00 MPa. This result applies to the stated rehabilitation review for a county road
+    project.'
+  id: CIV-B-Q041
+- knowledge_area: Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-014-07
+  prompt: During a rehabilitation review for a detention retrofit project, concrete slump primarily measures
+  choices:
+  - compressive strength directly
+  - air content only
+  - aggregate abrasion resistance
+  - fresh-concrete consistency/workability
+  answer: D
+  solution: '**D.** Slump is a field index of fresh concrete consistency. This result applies to the stated rehabilitation
+    review for a detention retrofit project.'
+  id: CIV-B-Q042
+- knowledge_area: Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-014-01
+  prompt: During a rehabilitation review for a pump-station project, in asphalt mixtures, aggregate gradation strongly
+    affects
+  choices:
+  - cement hydration
+  - wood moisture content only
+  - void structure and mixture stability
+  - steel yield strength
+  answer: C
+  solution: '**C.** Gradation controls packing, voids, and aggregate skeleton behavior. This result applies to the
+    stated rehabilitation review for a pump-station project.'
+  id: CIV-B-Q043
+- knowledge_area: Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-014-02
+  prompt: During a rehabilitation review for a office expansion project, a material subjected to many repeated stress
+    cycles is most directly checked for
+  choices:
+  - specific gravity
+  - fatigue
+  - creep only
+  - thermal conductivity
+  answer: B
+  solution: '**B.** Repeated cyclic loading can initiate and propagate fatigue cracks. This result applies to the
+    stated rehabilitation review for a office expansion project.'
+  id: CIV-B-Q044
+- knowledge_area: Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-014-03
+  prompt: During a rehabilitation review for a slope stabilization project, aggregate absorption is associated with
+    water entering
+  choices:
+  - permeable pore space in aggregate particles
+  - steel crystal lattices
+  - asphalt binder only
+  - closed air voids in concrete only
+  answer: A
+  solution: '**A.** Absorption reflects permeable pore volume within aggregate particles. This result applies to
+    the stated rehabilitation review for a slope stabilization project.'
+  id: CIV-B-Q045
+- knowledge_area: Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-014-04
+  prompt: During a rehabilitation review for a arterial widening project, lowering the water-cement ratio of properly
+    consolidated concrete generally
+  choices:
+  - decreases compressive strength
+  - eliminates curing
+  - makes aggregate unnecessary
+  - increases compressive strength
+  answer: D
+  solution: '**D.** Lower w/c generally reduces capillary porosity and increases strength when workability and curing
+    remain adequate. This result applies to the stated rehabilitation review for a arterial widening project.'
+  id: CIV-B-Q046
+- knowledge_area: Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-014-05
+  prompt: During a rehabilitation review for a subdivision project, concrete slump primarily measures
+  choices:
+  - air content only
+  - aggregate abrasion resistance
+  - fresh-concrete consistency/workability
+  - compressive strength directly
+  answer: C
+  solution: '**C.** Slump is a field index of fresh concrete consistency. This result applies to the stated rehabilitation
+    review for a subdivision project.'
+  id: CIV-B-Q047
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-07
+  prompt: During a rehabilitation review for a drainage crossing project, flow velocity is 10.2 m/s in a 0.20 m
+    pipe. Find Q.
+  choices:
+  - 0.641 m³/s
+  - 2.040 m³/s
+  - 0.160 m³/s
+  - 0.320 m³/s
+  answer: D
+  solution: '**D.** Q=VA=0.320 m³/s. This result applies to the stated rehabilitation review for a drainage crossing
+    project.'
+  id: CIV-B-Q048
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-042-01
+  prompt: During a rehabilitation review for a industrial slab project, for a channel, n=0.015, A=4 m², R=0.8 m,
+    S=0.002. Find Manning discharge.
+  choices:
+  - 20.55 m³/s
+  - 0.179 m³/s
+  - 10.28 m³/s
+  - 5.139 m³/s
+  answer: C
+  solution: '**C.** Q=(1/n)AR^(2/3)S^(1/2)=10.28 m³/s. This result applies to the stated rehabilitation review for
+    a industrial slab project.'
+  id: CIV-B-Q049
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-042-02
+  prompt: During a QA review for a pedestrian bridge project, A rectangular beam section is checked under the stated
+    bending action. Use the section properties given to determine the requested stress response.
+  choices:
+  - 13.750 kW
+  - 12.56 kW
+  - 9.418 kW
+  - 16.74 kW
+  answer: B
+  solution: '**B.** P=ρgQH/η=12.56 kW. This result applies to the stated QA review for a pedestrian bridge project.'
+  id: CIV-B-Q050
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-042-03
+  prompt: During a QA review for a county road project, for subcritical open-channel flow, the Froude number is
+  choices:
+  - less than 1
+  - greater than 1
+  - exactly 2
+  - always zero
+  answer: A
+  solution: '**A.** Subcritical flow has Fr<1. This result applies to the stated QA review for a county road project.'
+  id: CIV-B-Q051
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-042-04
+  prompt: During a QA review for a detention retrofit project, water depth is 3 m. Find hydrostatic pressure increase.
+  choices:
+  - 14.71 kPa
+  - 58.86 kPa
+  - 3.000 kPa
+  - 29.43 kPa
+  answer: D
+  solution: '**D.** Δp=ρgh=29.43 kPa. This result applies to the stated QA review for a detention retrofit project.'
+  id: CIV-B-Q052
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-042-05
+  prompt: During a QA review for a pump-station project, flow velocity is 11.2 m/s in a 0.20 m pipe. Find Q.
+  choices:
+  - 2.240 m³/s
+  - 0.176 m³/s
+  - 0.352 m³/s
+  - 0.704 m³/s
+  answer: C
+  solution: '**C.** Q=VA=0.352 m³/s. This result applies to the stated QA review for a pump-station project.'
+  id: CIV-B-Q053
+- knowledge_area: Surveying
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-015-07
+  prompt: During a QA review for a office expansion project, benchmark elevation is 100.0 m, backsight 1.5 m, foresight
+    2.2 m. Find next elevation.
+  choices:
+  - 103.7 m
+  - 100.7 m
+  - 147.0 m
+  - 99.30 m
+  answer: D
+  solution: '**D.** Elev₂=Elev₁+BS−FS=99.30 m. This result applies to the stated QA review for a office expansion
+    project.'
+  id: CIV-B-Q054
+- knowledge_area: Surveying
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-015-01
+  prompt: During a QA review for a slope stabilization project, a profile rises 3 m over 120 m horizontal distance.
+    Find grade percent.
+  choices:
+  - 4000.0%
+  - 5.000%
+  - 2.500%
+  - 0.025%
+  answer: C
+  solution: '**C.** Grade=100Δz/L=2.500%. This result applies to the stated QA review for a slope stabilization
+    project.'
+  id: CIV-B-Q055
+- knowledge_area: Surveying
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-015-02
+  prompt: During a QA review for a arterial widening project, end areas are 40 m² and 60 m², spaced 20 m apart.
+    Find average-end-area volume.
+  choices:
+  - 500.0 m³
+  - 1000.0 m³
+  - 50.00 m³
+  - 400.0 m³
+  answer: B
+  solution: '**B.** V=L(A1+A2)/2=1000.0 m³. This result applies to the stated QA review for a arterial widening
+    project.'
+  id: CIV-B-Q056
+- knowledge_area: Surveying
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-015-03
+  prompt: During a QA review for a subdivision project, a closed traverse should ideally satisfy
+  choices:
+  - zero net latitude and departure closure
+  - zero total distance
+  - equal bearings for all courses
+  - zero elevation at every point
+  answer: A
+  solution: '**A.** A geometrically closed traverse returns to its starting coordinates, so coordinate sums close
+    to zero. This result applies to the stated QA review for a subdivision project.'
+  id: CIV-B-Q057
+- knowledge_area: Surveying
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-015-04
+  prompt: During a QA review for a drainage crossing project, a 100 m traverse leg has azimuth 270°. Find departure.
+  choices:
+  - -0.000 m
+  - 100.0 m
+  - -50.00 m
+  - -100.0 m
+  answer: D
+  solution: '**D.** Departure=L sin az=-100.0 m. This result applies to the stated QA review for a drainage crossing
+    project.'
+  id: CIV-B-Q058
+- knowledge_area: Surveying
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-015-05
+  prompt: During a QA review for a industrial slab project, benchmark elevation is 100.0 m, backsight 1.5 m, foresight
+    2.2 m. Find next elevation.
+  choices:
+  - 100.7 m
+  - 147.0 m
+  - 99.30 m
+  - 103.7 m
+  answer: C
+  solution: '**C.** Elev₂=Elev₁+BS−FS=99.30 m. This result applies to the stated QA review for a industrial slab
+    project.'
+  id: CIV-B-Q059
+- knowledge_area: Water Resources and Environmental Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-021-07
+  prompt: During a value-engineering review for a pedestrian bridge project, effective stress in saturated soil
+    equals
+  choices:
+  - total stress plus pore pressure
+  - pore pressure only
+  - zero at all depths
+  - total stress minus pore-water pressure
+  answer: D
+  solution: '**D.** Terzaghi effective stress is σ′=σ−u. This result applies to the stated value-engineering review
+    for a pedestrian bridge project.'
+  id: CIV-B-Q060
+- knowledge_area: Water Resources and Environmental Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-016-01
+  prompt: During a value-engineering review for a county road project, using Rational Method with C=0.65, i=75 mm/h,
+    A=2.0 ha, find peak runoff.
+  choices:
+  - 0.136 m³/s
+  - 0.542 m³/s
+  - 0.271 m³/s
+  - 97.50 m³/s
+  answer: C
+  solution: '**C.** Q=0.00278CiA=0.271 m³/s. This result applies to the stated value-engineering review for a county
+    road project.'
+  id: CIV-B-Q061
+- knowledge_area: Water Resources and Environmental Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-016-02
+  prompt: During a value-engineering review for a detention retrofit project, darcy flow has k=1×10⁻⁴ m/s, hydraulic
+    gradient 0.02, area 50 m². Find Q.
+  choices:
+  - 5.00e-03 m³/s
+  - 1.00e-04 m³/s
+  - 1.00e-03 m³/s
+  - 1.00e-05 m³/s
+  answer: B
+  solution: '**B.** Q=kiA=1.00e-04 m³/s. This result applies to the stated value-engineering review for a detention
+    retrofit project.'
+  id: CIV-B-Q062
+- knowledge_area: Water Resources and Environmental Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-016-03
+  prompt: 'During a value-engineering review for a pump-station project, two water streams mix: 2 m³/s at 10 mg/L
+    and 3 m³/s at 2 mg/L. Find mixed concentration.'
+  choices:
+  - 5.200 mg/L
+  - 6.000 mg/L
+  - 12.00 mg/L
+  - 6.667 mg/L
+  answer: A
+  solution: '**A.** Mass balance gives C=(Q₁C₁+Q₂C₂)/(Q₁+Q₂)=5.200 mg/L. This result applies to the stated value-engineering
+    review for a pump-station project.'
+  id: CIV-B-Q063
+- knowledge_area: Water Resources and Environmental Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-016-04
+  prompt: During a value-engineering review for a office expansion project, in a conventional drinking-water train,
+    coagulation is followed most directly by
+  choices:
+  - chlorination only
+  - reverse osmosis always
+  - sludge digestion
+  - flocculation
+  answer: D
+  solution: '**D.** Flocculation gently grows destabilized particles into settleable floc. This result applies to
+    the stated value-engineering review for a office expansion project.'
+  id: CIV-B-Q064
+- knowledge_area: Water Resources and Environmental Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-016-05
+  prompt: During a value-engineering review for a slope stabilization project, bOD in wastewater primarily represents
+  choices:
+  - alkalinity only
+  - chloride concentration
+  - biodegradable oxygen demand
+  - total dissolved solids only
+  answer: C
+  solution: '**C.** BOD measures oxygen consumed biologically while degrading biodegradable organics. This result
+    applies to the stated value-engineering review for a slope stabilization project.'
+  id: CIV-B-Q065
+- knowledge_area: Water Resources and Environmental Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-016-06
+  prompt: During a value-engineering review for a arterial widening project, a detention basin reduces downstream
+    peak flow mainly by
+  choices:
+  - raising watershed slope
+  - temporarily storing runoff and releasing it more slowly
+  - increasing rainfall
+  - eliminating infiltration
+  answer: B
+  solution: '**B.** Temporary storage attenuates and delays the hydrograph peak. This result applies to the stated
+    value-engineering review for a arterial widening project.'
+  id: CIV-B-Q066
+- knowledge_area: Water Resources and Environmental Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-016-07
+  prompt: During a value-engineering review for a subdivision project, effective stress in saturated soil equals
+  choices:
+  - total stress minus pore-water pressure
+  - total stress plus pore pressure
+  - pore pressure only
+  - zero at all depths
+  answer: A
+  solution: '**A.** Terzaghi effective stress is σ′=σ−u. This result applies to the stated value-engineering review
+    for a subdivision project.'
+  id: CIV-B-Q067
+- knowledge_area: Water Resources and Environmental Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-017-01
+  prompt: During a value-engineering review for a drainage crossing project, using Rational Method with C=0.65,
+    i=75 mm/h, A=2.0 ha, find peak runoff.
+  choices:
+  - 97.50 m³/s
+  - 0.136 m³/s
+  - 0.542 m³/s
+  - 0.271 m³/s
+  answer: D
+  solution: '**D.** Q=0.00278CiA=0.271 m³/s. This result applies to the stated value-engineering review for a drainage
+    crossing project.'
+  id: CIV-B-Q068
+- knowledge_area: Water Resources and Environmental Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-017-02
+  prompt: During a value-engineering review for a industrial slab project, darcy flow has k=1×10⁻⁴ m/s, hydraulic
+    gradient 0.02, area 50 m². Find Q.
+  choices:
+  - 1.00e-05 m³/s
+  - 5.00e-03 m³/s
+  - 1.00e-04 m³/s
+  - 1.00e-03 m³/s
+  answer: C
+  solution: '**C.** Q=kiA=1.00e-04 m³/s. This result applies to the stated value-engineering review for a industrial
+    slab project.'
+  id: CIV-B-Q069
+- knowledge_area: Water Resources and Environmental Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-017-03
+  prompt: 'During a closeout review for a pedestrian bridge project, two water streams mix: 2 m³/s at 10 mg/L and
+    3 m³/s at 2 mg/L. Find mixed concentration.'
+  choices:
+  - 6.667 mg/L
+  - 5.200 mg/L
+  - 6.000 mg/L
+  - 12.00 mg/L
+  answer: B
+  solution: '**B.** Mass balance gives C=(Q₁C₁+Q₂C₂)/(Q₁+Q₂)=5.200 mg/L. This result applies to the stated closeout
+    review for a pedestrian bridge project.'
+  id: CIV-B-Q070
+- knowledge_area: Structural Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-022-07
+  prompt: During a closeout review for a county road project, structural stability requires the support arrangement
+    to
+  choices:
+  - maximize member count only
+  - eliminate all deformation
+  - make every member identical
+  - restrain rigid-body motion appropriately
+  answer: D
+  solution: '**D.** A stable structure must have adequate restraints and load path. This result applies to the stated
+    closeout review for a county road project.'
+  id: CIV-B-Q071
+- knowledge_area: Structural Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-023-01
+  prompt: During a closeout review for a detention retrofit project, a simply supported beam carries uniform load
+    50 kN/m over 6 m. Find maximum moment.
+  choices:
+  - 900.0 kN·m
+  - 112.5 kN·m
+  - 225.0 kN·m
+  - 300.0 kN·m
+  answer: C
+  solution: '**C.** Mmax=wL²/8=225.0 kN·m. This result applies to the stated closeout review for a detention retrofit
+    project.'
+  id: CIV-B-Q072
+- knowledge_area: Structural Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-023-02
+  prompt: During a closeout review for a pump-station project, a steel tension member carries 200 kN over gross
+    area 2500 mm². Find gross stress.
+  choices:
+  - 250.0 MPa
+  - 80.00 MPa
+  - 0.080 MPa
+  - 160.0 MPa
+  answer: B
+  solution: '**B.** σ=P/A=80.00 MPa. This result applies to the stated closeout review for a pump-station project.'
+  id: CIV-B-Q073
+- knowledge_area: Structural Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-023-03
+  prompt: During a closeout review for a office expansion project, a pinned-pinned column has E=200 GPa, I=8×10⁻⁶
+    m⁴, L=3 m. Find Euler load.
+  choices:
+  - 1754.6 kN
+  - 438.6 kN
+  - 7018.4 kN
+  - 533.3 kN
+  answer: A
+  solution: '**A.** Pcr=π²EI/L²=1754.6 kN. This result applies to the stated closeout review for a office expansion
+    project.'
+  id: CIV-B-Q074
+- knowledge_area: Structural Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-023-04
+  prompt: During a closeout review for a slope stabilization project, for a statically determinate planar truss,
+    the common determinacy relation is
+  choices:
+  - m+r=j
+  - m=2r+j
+  - r=2m+j
+  - m+r=2j
+  answer: D
+  solution: '**D.** A stable determinate planar truss satisfies m+r=2j. This result applies to the stated closeout
+    review for a slope stabilization project.'
+  id: CIV-B-Q075
+- knowledge_area: Structural Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-023-05
+  prompt: During a closeout review for a arterial widening project, concrete nominal flexural strength must be converted
+    to design strength using
+  choices:
+  - a friction factor only
+  - a survey closure ratio
+  - a strength-reduction factor φ
+  - a Manning coefficient
+  answer: C
+  solution: '**C.** Strength design applies φ to nominal resistance. This result applies to the stated closeout
+    review for a arterial widening project.'
+  id: CIV-B-Q076
+- knowledge_area: Structural Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-023-06
+  prompt: During a closeout review for a subdivision project, an influence line is especially useful for
+  choices:
+  - survey azimuth closure only
+  - effects of moving loads
+  - concrete curing temperature only
+  - soil classification only
+  answer: B
+  solution: '**B.** Influence lines show how a response quantity varies as a unit load moves across a structure.
+    This result applies to the stated closeout review for a subdivision project.'
+  id: CIV-B-Q077
+- knowledge_area: Structural Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-023-07
+  prompt: During a closeout review for a drainage crossing project, structural stability requires the support arrangement
+    to
+  choices:
+  - restrain rigid-body motion appropriately
+  - maximize member count only
+  - eliminate all deformation
+  - make every member identical
+  answer: A
+  solution: '**A.** A stable structure must have adequate restraints and load path. This result applies to the stated
+    closeout review for a drainage crossing project.'
+  id: CIV-B-Q078
+- knowledge_area: Structural Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-024-01
+  prompt: During a closeout review for a industrial slab project, a simply supported beam carries uniform load 57
+    kN/m over 6 m. Find maximum moment.
+  choices:
+  - 342.0 kN·m
+  - 1026.0 kN·m
+  - 128.2 kN·m
+  - 256.5 kN·m
+  answer: D
+  solution: '**D.** Mmax=wL²/8=256.5 kN·m. This result applies to the stated closeout review for a industrial slab
+    project.'
+  id: CIV-B-Q079
+- knowledge_area: Structural Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-024-02
+  prompt: During a permit review for a pedestrian bridge project, a steel tension member carries 200 kN over gross
+    area 2500 mm². Find gross stress.
+  choices:
+  - 160.0 MPa
+  - 250.0 MPa
+  - 80.00 MPa
+  - 0.080 MPa
+  answer: C
+  solution: '**C.** σ=P/A=80.00 MPa. This result applies to the stated permit review for a pedestrian bridge project.'
+  id: CIV-B-Q080
+- knowledge_area: Geotechnical Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-028-07
+  prompt: During a permit review for a county road project, active earth pressure corresponds to a wall moving
+  choices:
+  - into the soil enough to mobilize passive resistance
+  - not at all by definition
+  - vertically only
+  - away from the retained soil enough to mobilize active conditions
+  answer: D
+  solution: '**D.** Active pressure develops as the wall yields away from the backfill. This result applies to the
+    stated permit review for a county road project.'
+  id: CIV-B-Q081
+- knowledge_area: Geotechnical Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-027-01
+  prompt: During a permit review for a detention retrofit project, a soil has LL=45% and PL=27%. Find plasticity
+    index.
+  choices:
+  - 60.00%
+  - 1.667%
+  - 18.00%
+  - 72.00%
+  answer: C
+  solution: '**C.** PI=LL−PL=18.00%. This result applies to the stated permit review for a detention retrofit project.'
+  id: CIV-B-Q082
+- knowledge_area: Geotechnical Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-027-02
+  prompt: During a permit review for a pump-station project, total vertical stress is 200 kPa and pore pressure
+    is 275 kPa. Find effective stress.
+  choices:
+  - 200.0 kPa
+  - -75.00 kPa
+  - 475.0 kPa
+  - 275.0 kPa
+  answer: B
+  solution: '**B.** σ′=σ−u=-75.00 kPa. This result applies to the stated permit review for a pump-station project.'
+  id: CIV-B-Q083
+- knowledge_area: Geotechnical Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-027-03
+  prompt: During a permit review for a office expansion project, for c=10 kPa, σ′=100 kPa, φ=30°, find Mohr-Coulomb
+    shear strength.
+  choices:
+  - 67.74 kPa
+  - 50.00 kPa
+  - 110.0 kPa
+  - 33.87 kPa
+  answer: A
+  solution: '**A.** τ=c+σ′tanφ=67.74 kPa. This result applies to the stated permit review for a office expansion
+    project.'
+  id: CIV-B-Q084
+- knowledge_area: Geotechnical Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-027-04
+  prompt: During a permit review for a slope stabilization project, foundation ultimate bearing capacity is 600
+    kPa with FS=3. Find allowable bearing pressure.
+  choices:
+  - 1800.0 kPa
+  - 597.0 kPa
+  - 300.0 kPa
+  - 200.0 kPa
+  answer: D
+  solution: '**D.** q_allow=q_ult/FS=200.0 kPa. This result applies to the stated permit review for a slope stabilization
+    project.'
+  id: CIV-B-Q085
+- knowledge_area: Geotechnical Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-027-05
+  prompt: During a permit review for a arterial widening project, compaction primarily increases soil density by
+  choices:
+  - dissolving solids
+  - raising pore-water pressure permanently
+  - reducing air voids through mechanical energy
+  - increasing mineral specific gravity
+  answer: C
+  solution: '**C.** Compaction rearranges particles and expels air, increasing dry density. This result applies
+    to the stated permit review for a arterial widening project.'
+  id: CIV-B-Q086
+- knowledge_area: Geotechnical Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-027-06
+  prompt: During a permit review for a subdivision project, active earth pressure corresponds to a wall moving
+  choices:
+  - vertically only
+  - away from the retained soil enough to mobilize active conditions
+  - into the soil enough to mobilize passive resistance
+  - not at all by definition
+  answer: B
+  solution: '**B.** Active pressure develops as the wall yields away from the backfill. This result applies to the
+    stated permit review for a subdivision project.'
+  id: CIV-B-Q087
+- knowledge_area: Geotechnical Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-027-07
+  prompt: During a permit review for a drainage crossing project, a soil has LL=45% and PL=28%. Find plasticity
+    index.
+  choices:
+  - 17.00%
+  - 73.00%
+  - 62.22%
+  - 1.607%
+  answer: A
+  solution: '**A.** PI=LL−PL=17.00%. This result applies to the stated permit review for a drainage crossing project.'
+  id: CIV-B-Q088
+- knowledge_area: Geotechnical Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-028-01
+  prompt: During a permit review for a industrial slab project, total vertical stress is 200 kPa and pore pressure
+    is 305 kPa. Find effective stress.
+  choices:
+  - 505.0 kPa
+  - 305.0 kPa
+  - 200.0 kPa
+  - -105.0 kPa
+  answer: D
+  solution: '**D.** σ′=σ−u=-105.0 kPa. This result applies to the stated permit review for a industrial slab project.'
+  id: CIV-B-Q089
+- knowledge_area: Geotechnical Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-028-02
+  prompt: During a feasibility review for a pedestrian bridge project, for c=10 kPa, σ′=100 kPa, φ=30°, find Mohr-Coulomb
+    shear strength.
+  choices:
+  - 110.0 kPa
+  - 33.87 kPa
+  - 67.74 kPa
+  - 50.00 kPa
+  answer: C
+  solution: '**C.** τ=c+σ′tanφ=67.74 kPa. This result applies to the stated feasibility review for a pedestrian
+    bridge project.'
+  id: CIV-B-Q090
+- knowledge_area: Geotechnical Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-028-03
+  prompt: During a feasibility review for a county road project, foundation ultimate bearing capacity is 600 kPa
+    with FS=3. Find allowable bearing pressure.
+  choices:
+  - 300.0 kPa
+  - 200.0 kPa
+  - 1800.0 kPa
+  - 597.0 kPa
+  answer: B
+  solution: '**B.** q_allow=q_ult/FS=200.0 kPa. This result applies to the stated feasibility review for a county
+    road project.'
+  id: CIV-B-Q091
+- knowledge_area: Transportation Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-029-07
+  prompt: During a feasibility review for a detention retrofit project, a traffic signal is primarily a
+  choices:
+  - structural member
+  - soil stabilization method
+  - survey datum
+  - traffic-control device
+  answer: D
+  solution: '**D.** Signals regulate right-of-way and traffic movements. This result applies to the stated feasibility
+    review for a detention retrofit project.'
+  id: CIV-B-Q092
+- knowledge_area: Transportation Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-029-01
+  prompt: During a feasibility review for a pump-station project, a vehicle travels 67 m/s, perception-reaction
+    time 2.5 s, braking deceleration 3.4 m/s². Find stopping sight distance.
+  choices:
+  - 660.1 m
+  - 413.8 m
+  - 827.6 m
+  - 167.5 m
+  answer: C
+  solution: '**C.** SSD=vt_r+v²/(2a)=827.6 m. This result applies to the stated feasibility review for a pump-station
+    project.'
+  id: CIV-B-Q093
+- knowledge_area: Transportation Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-029-02
+  prompt: During a feasibility review for a office expansion project, traffic flow q=1800 veh/h and density k=30
+    veh/km. Find space-mean speed.
+  choices:
+  - 30.00 km/h
+  - 60.00 km/h
+  - 54000.0 km/h
+  - 0.017 km/h
+  answer: B
+  solution: '**B.** q=kv, so v=q/k=60.00 km/h. This result applies to the stated feasibility review for a office
+    expansion project.'
+  id: CIV-B-Q094
+- knowledge_area: Transportation Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-029-03
+  prompt: During a feasibility review for a slope stabilization project, a 250 m curve is traveled at 20 m/s with
+    e=0.06. Estimate required side-friction factor from v²/(gR)=e+f.
+  choices:
+  - '0.103'
+  - '0.153'
+  - '0.060'
+  - '0.163'
+  answer: A
+  solution: '**A.** f=v²/(gR)−e=0.103. This result applies to the stated feasibility review for a slope stabilization
+    project.'
+  id: CIV-B-Q095
+- knowledge_area: Transportation Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-029-04
+  prompt: During a feasibility review for a arterial widening project, a crest vertical curve is commonly governed
+    by
+  choices:
+  - Manning roughness
+  - soil liquid limit only
+  - pump efficiency
+  - sight-distance requirements
+  answer: D
+  solution: '**D.** Crest curves are often sized to provide adequate stopping sight distance. This result applies
+    to the stated feasibility review for a arterial widening project.'
+  id: CIV-B-Q096
+- knowledge_area: Transportation Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-029-05
+  prompt: During a feasibility review for a subdivision project, For a roadway design check, use the stated speed,
+    radius, and superelevation to determine the required lateral-friction demand.
+  choices:
+  - eliminate traffic loading
+  - raise asphalt binder viscosity indefinitely
+  - reduce support and accelerate pavement distress
+  - increase steel yield strength
+  answer: C
+  solution: '**C.** Water weakens many subgrades and contributes to pavement damage. This result applies to the
+    stated feasibility review for a subdivision project.'
+  id: CIV-B-Q097
+- knowledge_area: Transportation Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-029-06
+  prompt: During a feasibility review for a drainage crossing project, a traffic signal is primarily a
+  choices:
+  - survey datum
+  - traffic-control device
+  - structural member
+  - soil stabilization method
+  answer: B
+  solution: '**B.** Signals regulate right-of-way and traffic movements. This result applies to the stated feasibility
+    review for a drainage crossing project.'
+  id: CIV-B-Q098
+- knowledge_area: Transportation Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-029-07
+  prompt: During a feasibility review for a industrial slab project, a vehicle travels 73 m/s, perception-reaction
+    time 2.5 s, braking deceleration 3.4 m/s². Find stopping sight distance.
+  choices:
+  - 966.2 m
+  - 182.5 m
+  - 783.7 m
+  - 483.1 m
+  answer: A
+  solution: '**A.** SSD=vt_r+v²/(2a)=966.2 m. This result applies to the stated feasibility review for a industrial
+    slab project.'
+  id: CIV-B-Q099
+- knowledge_area: Transportation Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-029-01
+  prompt: During a design review for a pedestrian bridge project, traffic flow q=1800 veh/h and density k=30 veh/km.
+    Find space-mean speed.
+  choices:
+  - 54000.0 km/h
+  - 0.017 km/h
+  - 30.00 km/h
+  - 60.00 km/h
+  answer: D
+  solution: '**D.** q=kv, so v=q/k=60.00 km/h. This result applies to the stated design review for a pedestrian
+    bridge project.'
+  id: CIV-B-Q100
+- knowledge_area: Transportation Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-029-02
+  prompt: During a design review for a county road project, a 250 m curve is traveled at 20 m/s with e=0.06. Estimate
+    required side-friction factor from v²/(gR)=e+f.
+  choices:
+  - '0.060'
+  - '0.163'
+  - '0.103'
+  - '0.153'
+  answer: C
+  solution: '**C.** f=v²/(gR)−e=0.103. This result applies to the stated design review for a county road project.'
+  id: CIV-B-Q101
+- knowledge_area: Transportation Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-029-03
+  prompt: During a design review for a detention retrofit project, a crest vertical curve is commonly governed by
+  choices:
+  - pump efficiency
+  - sight-distance requirements
+  - Manning roughness
+  - soil liquid limit only
+  answer: B
+  solution: '**B.** Crest curves are often sized to provide adequate stopping sight distance. This result applies
+    to the stated design review for a detention retrofit project.'
+  id: CIV-B-Q102
+- knowledge_area: Construction Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-030-07
+  prompt: During a design review for a pump-station project, a section view on an engineering drawing is used primarily
+    to
+  choices:
+  - replace all dimensions
+  - indicate project financing
+  - show only north direction
+  - show internal or cut-through geometry
+  answer: D
+  solution: '**D.** Section views reveal construction or geometry through a cut plane. This result applies to the
+    stated design review for a pump-station project.'
+  id: CIV-B-Q103
+- knowledge_area: Construction Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-030-01
+  prompt: During a design review for a office expansion project, quantity is 2600 m³ at $25/m³. Find direct item
+    cost.
+  choices:
+  - $104.0
+  - $32500.0
+  - $65000.0
+  - $2625.0
+  answer: C
+  solution: '**C.** Cost=quantity×unit price=$65000.0. This result applies to the stated design review for a office
+    expansion project.'
+  id: CIV-B-Q104
+- knowledge_area: Construction Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-030-02
+  prompt: During a design review for a slope stabilization project, an excavator must move 1200 m³ at 150 m³/h.
+    Find operating hours.
+  choices:
+  - 4.000 h
+  - 8.000 h
+  - 180000.0 h
+  - 0.125 h
+  answer: B
+  solution: '**B.** Time=quantity/production=8.000 h. This result applies to the stated design review for a slope
+    stabilization project.'
+  id: CIV-B-Q105
+- knowledge_area: Construction Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-030-03
+  prompt: During a design review for a arterial widening project, on a CPM network, the critical path has
+  choices:
+  - zero total float in the basic deterministic model
+  - maximum positive float
+  - no activities
+  - only procurement tasks
+  answer: A
+  solution: '**A.** Critical-path activities control project duration and normally have zero total float. This result
+    applies to the stated design review for a arterial widening project.'
+  id: CIV-B-Q106
+- knowledge_area: Construction Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-030-04
+  prompt: During a design review for a subdivision project, A construction progress review reports earned value
+    and actual cost. Compute the requested project-control variance using standard earned-value definitions.
+  choices:
+  - $180.0k
+  - $20.00k
+  - $0.800k
+  - $-20.00k
+  answer: D
+  solution: '**D.** CV=EV−AC=-20.00k. This result applies to the stated design review for a subdivision project.'
+  id: CIV-B-Q107
+- knowledge_area: Construction Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-030-05
+  prompt: During a design review for a drainage crossing project, means and methods on a construction project are
+    generally the responsibility of
+  choices:
+  - the concrete cylinder laboratory only
+  - the building occupant
+  - the contractor, subject to contract requirements
+  - the survey benchmark
+  answer: C
+  solution: '**C.** The contractor typically controls construction means, methods, sequences, and procedures. This
+    result applies to the stated design review for a drainage crossing project.'
+  id: CIV-B-Q108
+- knowledge_area: Construction Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-030-06
+  prompt: During a design review for a industrial slab project, a section view on an engineering drawing is used
+    primarily to
+  choices:
+  - show only north direction
+  - show internal or cut-through geometry
+  - replace all dimensions
+  - indicate project financing
+  answer: B
+  solution: '**B.** Section views reveal construction or geometry through a cut plane. This result applies to the
+    stated design review for a industrial slab project.'
+  id: CIV-B-Q109
+- knowledge_area: Construction Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CIV-3-030-07
+  prompt: During a field-verification review for a pedestrian bridge project, quantity is 2900 m³ at $25/m³. Find
+    direct item cost.
+  choices:
+  - $72500.0
+  - $2925.0
+  - $116.0
+  - $36250.0
+  answer: A
+  solution: '**A.** Cost=quantity×unit price=$72500.0. This result applies to the stated field-verification review
+    for a pedestrian bridge project.'
+  id: CIV-B-Q110
