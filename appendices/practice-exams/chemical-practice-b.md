@@ -15,7 +15,7 @@ Work the questions in sequence. Mark uncertain items and return to them after co
 During a verification review of a demonstration absorber project, for y=x²+3x, find the slope when x=3.
 
 A) 6
-B) 6
+B) 6 under an invalid assumption
 C) 18
 D) 9
 
@@ -24,7 +24,7 @@ D) 9
 During a verification review of a continuous reactor project, compute the definite integral ∫_1^3 4x dx.
 
 A) 20.00
-B) 8.000
+B) 8.000 under an invalid assumption
 C) 16.00
 D) 8.000
 
@@ -122,7 +122,7 @@ D) 1078.0 N·m
 
 During a turnaround review of a vapor-recovery system project, pressure of 960 kPa acts uniformly on area 0.010 m². Determine resultant normal force.
 
-A) 9.600 N
+A) 9.600 N under an invalid assumption
 B) 96000.0 N
 C) 9600.0 N
 D) 9.600 N
@@ -186,7 +186,7 @@ D) 0.025 MPa
 During a turnaround review of a crystallizer train project, for an elastic material with E=200 GPa under 510 MPa stress, calculate elastic strain.
 
 A) 2.550
-B) 2.550
+B) 2.550 under an invalid assumption
 C) 0.392
 D) 0.003
 
@@ -266,7 +266,7 @@ D) 0.031 m³/s
 
 During a scale-up review of a raw-material blending system project, a pump raises pressure by 530 kPa at 0.020 m³/s with efficiency 0.75. Determine required input power.
 
-A) 10.60 kW
+A) 10.60 kW under an invalid assumption
 B) 18.84 kW
 C) 14.13 kW
 D) 10.60 kW
@@ -314,7 +314,7 @@ During a utility review of a cooling-water loop project, a pump raises pressure 
 A) 20.62 kW
 B) 15.47 kW
 C) 11.60 kW
-D) 11.60 kW
+D) 11.60 kW under an invalid assumption
 
 ### 35
 
@@ -449,7 +449,7 @@ During a reliability review of a raw-material blending system project, a liquid 
 A) 480.0 kW
 B) 0.480 kW
 C) 120.0 kW
-D) 120.0 kW
+D) 120.0 kW under an invalid assumption
 
 ### 50
 
@@ -869,7 +869,7 @@ D) The credible case that governs required capacity or duty
 
 During a restart review of a gas-separation skid project, equipment costs $100,000 at capacity 100. Using exponent 0.6, scale the equipment cost to 200.
 
-A) $200000.0
+A) $200000.0 under an invalid assumption
 B) $65975.4
 C) $151571.7
 D) $200000.0
@@ -1006,770 +1006,770 @@ D) A competitor asks for it
 
 ### 1 — D
 
-**D.** dy/dx=2x+3=9. This is the governing result for the fication review of a demonstration absorber project.
+**D.** dy/dx=2x+3=9. This result applies to the stated verification review of a demonstration absorber project.
 
 **Knowledge area:** Mathematics  
 **Concept:** MATH-1A-002-02
 
 ### 2 — C
 
-**C.** Integral is 4x²/2; applying limits gives 16.00. This is the governing result for the fication review of a continuous reactor project.
+**C.** Integral is 4x²/2; applying limits gives 16.00. This result applies to the stated verification review of a continuous reactor project.
 
 **Knowledge area:** Mathematics  
 **Concept:** MATH-1B-004-02
 
 ### 3 — B
 
-**B.** 54 km/h ÷3.6 = 15.00 m/s. This is the governing result for the fication review of a vapor-recovery system project.
+**B.** 54 km/h ÷3.6 = 15.00 m/s. This result applies to the stated verification review of a vapor-recovery system project.
 
 **Knowledge area:** Mathematics  
 **Concept:** MATH-1D-028-05
 
 ### 4 — A
 
-**A.** Use change of base: ln(9)/ln(4)=1.585. This is the governing result for the fication review of a cooling-water loop project.
+**A.** Use change of base: ln(9)/ln(4)=1.585. This result applies to the stated verification review of a cooling-water loop project.
 
 **Knowledge area:** Mathematics  
 **Concept:** MATH-1D-029-03
 
 ### 5 — D
 
-**D.** Vx=V cosθ=4cos(60°)=2.000. This is the governing result for the fication review of a process-water treatment unit project.
+**D.** Vx=V cosθ=4cos(60°)=2.000. This result applies to the stated verification review of a process-water treatment unit project.
 
 **Knowledge area:** Mathematics  
 **Concept:** MATH-1D-031-01
 
 ### 6 — C
 
-**C.** Rearrange: x=(13-2)/5=2.200. This is the governing result for the fication review of a gas-separation skid project.
+**C.** Rearrange: x=(13-2)/5=2.200. This result applies to the stated verification review of a gas-separation skid project.
 
 **Knowledge area:** Mathematics  
 **Concept:** MATH-1A-001-02
 
 ### 7 — B
 
-**B.** dy/dx=2x+3=13. This is the governing result for the fication review of a fractionation section project.
+**B.** dy/dx=2x+3=13. This result applies to the stated verification review of a fractionation section project.
 
 **Knowledge area:** Mathematics  
 **Concept:** MATH-1A-002-02
 
 ### 8 — D
 
-**D.** z=(x-μ)/σ=(56-50)/6=1.000. This is the governing result for the fication review of a bioprocess line project.
+**D.** z=(x-μ)/σ=(56-50)/6=1.000. This result applies to the stated verification review of a bioprocess line project.
 
 **Knowledge area:** Probability and Statistics  
 **Concept:** MATH-1D-029-02
 
 ### 9 — C
 
-**C.** Mean=sum/n=30/4=7.500. This is the governing result for the fication review of a raw-material blending system project.
+**C.** Mean=sum/n=30/4=7.500. This result applies to the stated verification review of a raw-material blending system project.
 
 **Knowledge area:** Probability and Statistics  
 **Concept:** MATH-1D-029-03
 
 ### 10 — B
 
-**B.** P(B|A)=P(A∩B)/P(A)=0.2/0.4=0.500. This is the governing result for the fication review of a crystallizer train project.
+**B.** P(B|A)=P(A∩B)/P(A)=0.2/0.4=0.500. This result applies to the stated verification review of a crystallizer train project.
 
 **Knowledge area:** Probability and Statistics  
 **Concept:** MATH-1D-031-01
 
 ### 11 — A
 
-**A.** P(no failures)=(1-0.15)^5=0.444. This is the governing result for the around review of a demonstration absorber project.
+**A.** P(no failures)=(1-0.15)^5=0.444. This result applies to the stated turnaround review of a demonstration absorber project.
 
 **Knowledge area:** Probability and Statistics  
 **Concept:** MATH-1D-028-04
 
 ### 12 — D
 
-**D.** M=Fd=490(2.2)=1078.0 N·m. This is the governing result for the around review of a continuous reactor project.
+**D.** M=Fd=490(2.2)=1078.0 N·m. This result applies to the stated turnaround review of a continuous reactor project.
 
 **Knowledge area:** Engineering Sciences  
 **Concept:** MATH-1A-002-02
 
 ### 13 — C
 
-**C.** F=pA=960000(0.010)=9600.0 N. This is the governing result for the around review of a vapor-recovery system project.
+**C.** F=pA=960000(0.010)=9600.0 N. This result applies to the stated turnaround review of a vapor-recovery system project.
 
 **Knowledge area:** Engineering Sciences  
 **Concept:** SCI-2B-012-01
 
 ### 14 — B
 
-**B.** E=Pt=44 kJ/s × 98 s=4312.0 kJ. This is the governing result for the around review of a cooling-water loop project.
+**B.** E=Pt=44 kJ/s × 98 s=4312.0 kJ. This result applies to the stated turnaround review of a cooling-water loop project.
 
 **Knowledge area:** Engineering Sciences  
 **Concept:** FLUID-2D-041-01
 
 ### 15 — A
 
-**A.** m=ρV=1000(0.025)=25.00 kg. This is the governing result for the around review of a process-water treatment unit project.
+**A.** m=ρV=1000(0.025)=25.00 kg. This result applies to the stated turnaround review of a process-water treatment unit project.
 
 **Knowledge area:** Engineering Sciences  
 **Concept:** MATH-1A-002-01
 
 ### 16 — D
 
-**D.** FCC provides many active slip systems, supporting ductile deformation. This is the governing result for the around review of a gas-separation skid project.
+**D.** FCC provides many active slip systems, supporting ductile deformation. This result applies to the stated turnaround review of a gas-separation skid project.
 
 **Knowledge area:** Materials Science  
 **Concept:** MAT-2B-017-01
 
 ### 17 — C
 
-**C.** Fatigue damage accumulates under repeated or cyclic stress. This is the governing result for the around review of a fractionation section project.
+**C.** Fatigue damage accumulates under repeated or cyclic stress. This result applies to the stated turnaround review of a fractionation section project.
 
 **Knowledge area:** Materials Science  
 **Concept:** MAT-2B-017-03
 
 ### 18 — B
 
-**B.** ΔL=αLΔT; with α>0 and ΔT>0, length increases. This is the governing result for the around review of a bioprocess line project.
+**B.** ΔL=αLΔT; with α>0 and ΔT>0, length increases. This result applies to the stated turnaround review of a bioprocess line project.
 
 **Knowledge area:** Materials Science  
 **Concept:** MAT-2B-017-05
 
 ### 19 — A
 
-**A.** σ=F/A=(25000 N)/(1000×10⁻⁶ m²)=25.00 MPa. This is the governing result for the around review of a raw-material blending system project.
+**A.** σ=F/A=(25000 N)/(1000×10⁻⁶ m²)=25.00 MPa. This result applies to the stated turnaround review of a raw-material blending system project.
 
 **Knowledge area:** Materials Science  
 **Concept:** MAT-2B-016-01
 
 ### 20 — D
 
-**D.** ε=σ/E=510/200000=0.003. This is the governing result for the around review of a crystallizer train project.
+**D.** ε=σ/E=510/200000=0.003. This result applies to the stated turnaround review of a crystallizer train project.
 
 **Knowledge area:** Materials Science  
 **Concept:** MAT-2B-016-03
 
 ### 21 — D
 
-**D.** The limiting reactant fixes the maximum reaction extent and product amount. This is the governing result for the e-up review of a demonstration absorber project.
+**D.** The limiting reactant fixes the maximum reaction extent and product amount. This result applies to the stated scale-up review of a demonstration absorber project.
 
 **Knowledge area:** Chemistry and Biology  
 **Concept:** SCI-2B-012-03
 
 ### 22 — C
 
-**C.** Stoichiometric coefficients conserve each element's atom count. This is the governing result for the e-up review of a continuous reactor project.
+**C.** Stoichiometric coefficients conserve each element's atom count. This result applies to the stated scale-up review of a continuous reactor project.
 
 **Knowledge area:** Chemistry and Biology  
 **Concept:** SCI-2B-012-04
 
 ### 23 — B
 
-**B.** Water preferentially solvates polar and hydrogen-bonding species. This is the governing result for the e-up review of a vapor-recovery system project.
+**B.** Water preferentially solvates polar and hydrogen-bonding species. This result applies to the stated scale-up review of a vapor-recovery system project.
 
 **Knowledge area:** Chemistry and Biology  
 **Concept:** SCI-2B-012-05
 
 ### 24 — A
 
-**A.** n=m/MW=54/18=3.000 mol. This is the governing result for the e-up review of a cooling-water loop project.
+**A.** n=m/MW=54/18=3.000 mol. This result applies to the stated scale-up review of a cooling-water loop project.
 
 **Knowledge area:** Chemistry and Biology  
 **Concept:** SCI-2B-012-01
 
 ### 25 — D
 
-**D.** pH=-log₁₀[H⁺]=2.523. This is the governing result for the e-up review of a process-water treatment unit project.
+**D.** pH=-log₁₀[H⁺]=2.523. This result applies to the stated scale-up review of a process-water treatment unit project.
 
 **Knowledge area:** Chemistry and Biology  
 **Concept:** SCI-2B-012-02
 
 ### 26 — C
 
-**C.** The limiting reactant fixes the maximum reaction extent and product amount. This is the governing result for the e-up review of a gas-separation skid project.
+**C.** The limiting reactant fixes the maximum reaction extent and product amount. This result applies to the stated scale-up review of a gas-separation skid project.
 
 **Knowledge area:** Chemistry and Biology  
 **Concept:** SCI-2B-012-03
 
 ### 27 — B
 
-**B.** Stoichiometric coefficients conserve each element's atom count. This is the governing result for the e-up review of a fractionation section project.
+**B.** Stoichiometric coefficients conserve each element's atom count. This result applies to the stated scale-up review of a fractionation section project.
 
 **Knowledge area:** Chemistry and Biology  
 **Concept:** SCI-2B-012-04
 
 ### 28 — D
 
-**D.** Q=VA=VπD²/4=0.031 m³/s. This is the governing result for the e-up review of a bioprocess line project.
+**D.** Q=VA=VπD²/4=0.031 m³/s. This result applies to the stated scale-up review of a bioprocess line project.
 
 **Knowledge area:** Fluid Mechanics/Dynamics  
 **Concept:** FLUID-2D-041-03
 
 ### 29 — C
 
-**C.** Pshaft=ΔpQ/η=530000(0.020)/0.75=14.13 kW. This is the governing result for the e-up review of a raw-material blending system project.
+**C.** Pshaft=ΔpQ/η=530000(0.020)/0.75=14.13 kW. This result applies to the stated scale-up review of a raw-material blending system project.
 
 **Knowledge area:** Fluid Mechanics/Dynamics  
 **Concept:** FLUID-2D-042-01
 
 ### 30 — B
 
-**B.** The Hagen–Poiseuille solution gives a parabolic velocity profile. This is the governing result for the e-up review of a crystallizer train project.
+**B.** The Hagen–Poiseuille solution gives a parabolic velocity profile. This result applies to the stated scale-up review of a crystallizer train project.
 
 **Knowledge area:** Fluid Mechanics/Dynamics  
 **Concept:** FLUID-2D-043-01
 
 ### 31 — A
 
-**A.** Δp=ρgh=1000(9.81)(2)=19.62 kPa. This is the governing result for the ity review of a demonstration absorber project.
+**A.** Δp=ρgh=1000(9.81)(2)=19.62 kPa. This result applies to the stated utility review of a demonstration absorber project.
 
 **Knowledge area:** Fluid Mechanics/Dynamics  
 **Concept:** FLUID-2D-041-01
 
 ### 32 — D
 
-**D.** Re=ρVD/μ=210000.0. This is the governing result for the ity review of a continuous reactor project.
+**D.** Re=ρVD/μ=210000.0. This result applies to the stated utility review of a continuous reactor project.
 
 **Knowledge area:** Fluid Mechanics/Dynamics  
 **Concept:** FLUID-2D-041-02
 
 ### 33 — C
 
-**C.** Q=VA=VπD²/4=0.024 m³/s. This is the governing result for the ity review of a vapor-recovery system project.
+**C.** Q=VA=VπD²/4=0.024 m³/s. This result applies to the stated utility review of a vapor-recovery system project.
 
 **Knowledge area:** Fluid Mechanics/Dynamics  
 **Concept:** FLUID-2D-041-03
 
 ### 34 — B
 
-**B.** Pshaft=ΔpQ/η=580000(0.020)/0.75=15.47 kW. This is the governing result for the ity review of a cooling-water loop project.
+**B.** Pshaft=ΔpQ/η=580000(0.020)/0.75=15.47 kW. This result applies to the stated utility review of a cooling-water loop project.
 
 **Knowledge area:** Fluid Mechanics/Dynamics  
 **Concept:** FLUID-2D-042-01
 
 ### 35 — A
 
-**A.** The Hagen–Poiseuille solution gives a parabolic velocity profile. This is the governing result for the ity review of a process-water treatment unit project.
+**A.** The Hagen–Poiseuille solution gives a parabolic velocity profile. This result applies to the stated utility review of a process-water treatment unit project.
 
 **Knowledge area:** Fluid Mechanics/Dynamics  
 **Concept:** FLUID-2D-043-01
 
 ### 36 — D
 
-**D.** Δp=ρgh=1000(9.81)(3)=29.43 kPa. This is the governing result for the ity review of a gas-separation skid project.
+**D.** Δp=ρgh=1000(9.81)(3)=29.43 kPa. This result applies to the stated utility review of a gas-separation skid project.
 
 **Knowledge area:** Fluid Mechanics/Dynamics  
 **Concept:** FLUID-2D-041-01
 
 ### 37 — D
 
-**D.** First law: ΔU=Q−W=2650−990=1660.0 kJ. This is the governing result for the ity review of a fractionation section project.
+**D.** First law: ΔU=Q−W=2650−990=1660.0 kJ. This result applies to the stated utility review of a fractionation section project.
 
 **Knowledge area:** Thermodynamics  
 **Concept:** THERMO-2D-048-03
 
 ### 38 — C
 
-**C.** η=Wout/Qin=730/1000=0.730. This is the governing result for the ity review of a bioprocess line project.
+**C.** η=Wout/Qin=730/1000=0.730. This result applies to the stated utility review of a bioprocess line project.
 
 **Knowledge area:** Thermodynamics  
 **Concept:** THERMO-2D-048-04
 
 ### 39 — B
 
-**B.** Reversible adiabatic implies ds=0, so entropy remains constant. This is the governing result for the ity review of a raw-material blending system project.
+**B.** Reversible adiabatic implies ds=0, so entropy remains constant. This result applies to the stated utility review of a raw-material blending system project.
 
 **Knowledge area:** Thermodynamics  
 **Concept:** THERMO-2D-051-01
 
 ### 40 — A
 
-**A.** PV=mRT; P=mRT/V=401.8 kPa. This is the governing result for the ity review of a crystallizer train project.
+**A.** PV=mRT; P=mRT/V=401.8 kPa. This result applies to the stated utility review of a crystallizer train project.
 
 **Knowledge area:** Thermodynamics  
 **Concept:** THERMO-2D-047-03
 
 ### 41 — D
 
-**D.** v=vf+x(vg-vf)=0.361 m³/kg. This is the governing result for the ability review of a demonstration absorber project.
+**D.** v=vf+x(vg-vf)=0.361 m³/kg. This result applies to the stated reliability review of a demonstration absorber project.
 
 **Knowledge area:** Thermodynamics  
 **Concept:** THERMO-2D-047-04
 
 ### 42 — C
 
-**C.** First law: ΔU=Q−W=2900−1090=1810.0 kJ. This is the governing result for the ability review of a continuous reactor project.
+**C.** First law: ΔU=Q−W=2900−1090=1810.0 kJ. This result applies to the stated reliability review of a continuous reactor project.
 
 **Knowledge area:** Thermodynamics  
 **Concept:** THERMO-2D-048-03
 
 ### 43 — B
 
-**B.** η=Wout/Qin=780/1000=0.780. This is the governing result for the ability review of a vapor-recovery system project.
+**B.** η=Wout/Qin=780/1000=0.780. This result applies to the stated reliability review of a vapor-recovery system project.
 
 **Knowledge area:** Thermodynamics  
 **Concept:** THERMO-2D-048-04
 
 ### 44 — A
 
-**A.** Reversible adiabatic implies ds=0, so entropy remains constant. This is the governing result for the ability review of a cooling-water loop project.
+**A.** Reversible adiabatic implies ds=0, so entropy remains constant. This result applies to the stated reliability review of a cooling-water loop project.
 
 **Knowledge area:** Thermodynamics  
 **Concept:** THERMO-2D-051-01
 
 ### 45 — D
 
-**D.** PV=mRT; P=mRT/V=645.8 kPa. This is the governing result for the ability review of a process-water treatment unit project.
+**D.** PV=mRT; P=mRT/V=645.8 kPa. This result applies to the stated reliability review of a process-water treatment unit project.
 
 **Knowledge area:** Thermodynamics  
 **Concept:** THERMO-2D-047-03
 
 ### 46 — D
 
-**D.** Composition is unchanged; solute=(200)(0.35)(0.40)=28.00 kg/h. This is the governing result for the ability review of a gas-separation skid project.
+**D.** Composition is unchanged; solute=(200)(0.35)(0.40)=28.00 kg/h. This result applies to the stated reliability review of a gas-separation skid project.
 
 **Knowledge area:** Material/Energy Balances  
 **Concept:** CHE-3-002-06
 
 ### 47 — C
 
-**C.** R/F=70/100=0.700. This is the governing result for the ability review of a fractionation section project.
+**C.** R/F=70/100=0.700. This result applies to the stated reliability review of a fractionation section project.
 
 **Knowledge area:** Material/Energy Balances  
 **Concept:** CHE-3-003-06
 
 ### 48 — B
 
-**B.** Inert balance: purge fraction × circulating inert = input, so I=4/0.15=26.67 kg/h. This is the governing result for the ability review of a bioprocess line project.
+**B.** Inert balance: purge fraction × circulating inert = input, so I=4/0.15=26.67 kg/h. This result applies to the stated reliability review of a bioprocess line project.
 
 **Knowledge area:** Material/Energy Balances  
 **Concept:** CHE-3-001-07
 
 ### 49 — A
 
-**A.** Q̇=ṁcpΔT=4(4.0)(30)=480.0 kW. This is the governing result for the ability review of a raw-material blending system project.
+**A.** Q̇=ṁcpΔT=4(4.0)(30)=480.0 kW. This result applies to the stated reliability review of a raw-material blending system project.
 
 **Knowledge area:** Material/Energy Balances  
 **Concept:** CHE-3-002-07
 
 ### 50 — D
 
-**D.** Reacted A=F_A0 X=100(0.72)=72.00 mol/h. This is the governing result for the ability review of a crystallizer train project.
+**D.** Reacted A=F_A0 X=100(0.72)=72.00 mol/h. This result applies to the stated reliability review of a crystallizer train project.
 
 **Knowledge area:** Material/Energy Balances  
 **Concept:** CHE-3-003-07
 
 ### 51 — C
 
-**C.** n_A=Fx_A=520(0.25)=130.0 kmol/h. This is the governing result for the rd review of a demonstration absorber project.
+**C.** n_A=Fx_A=520(0.25)=130.0 kmol/h. This result applies to the stated hazard review of a demonstration absorber project.
 
 **Knowledge area:** Material/Energy Balances  
 **Concept:** CHE-3-001-01
 
 ### 52 — B
 
-**B.** Steady total balance gives outlet₂=580−60=520.0 kg/h. This is the governing result for the rd review of a continuous reactor project.
+**B.** Steady total balance gives outlet₂=580−60=520.0 kg/h. This result applies to the stated hazard review of a continuous reactor project.
 
 **Knowledge area:** Material/Energy Balances  
 **Concept:** CHE-3-002-01
 
 ### 53 — A
 
-**A.** Composition is unchanged; solute=(200)(0.30)(0.40)=24.00 kg/h. This is the governing result for the rd review of a vapor-recovery system project.
+**A.** Composition is unchanged; solute=(200)(0.30)(0.40)=24.00 kg/h. This result applies to the stated hazard review of a vapor-recovery system project.
 
 **Knowledge area:** Material/Energy Balances  
 **Concept:** CHE-3-003-01
 
 ### 54 — D
 
-**D.** R/F=50/100=0.500. This is the governing result for the rd review of a cooling-water loop project.
+**D.** R/F=50/100=0.500. This result applies to the stated hazard review of a cooling-water loop project.
 
 **Knowledge area:** Material/Energy Balances  
 **Concept:** CHE-3-001-02
 
 ### 55 — C
 
-**C.** Inert balance: purge fraction × circulating inert = input, so I=5/0.10=50.00 kg/h. This is the governing result for the rd review of a process-water treatment unit project.
+**C.** Inert balance: purge fraction × circulating inert = input, so I=5/0.10=50.00 kg/h. This result applies to the stated hazard review of a process-water treatment unit project.
 
 **Knowledge area:** Material/Energy Balances  
 **Concept:** CHE-3-002-02
 
 ### 56 — D
 
-**D.** q=εσA(Ts⁴−Tsur⁴)=2961.1 W. This is the governing result for the rd review of a gas-separation skid project.
+**D.** q=εσA(Ts⁴−Tsur⁴)=2961.1 W. This result applies to the stated hazard review of a gas-separation skid project.
 
 **Knowledge area:** Heat Transfer  
 **Concept:** HT-2D-057-03
 
 ### 57 — C
 
-**C.** Q=UAΔTlm=300(48)(30)=432.0 kW. This is the governing result for the rd review of a fractionation section project.
+**C.** Q=UAΔTlm=300(48)(30)=432.0 kW. This result applies to the stated hazard review of a fractionation section project.
 
 **Knowledge area:** Heat Transfer  
 **Concept:** HT-2D-057-06
 
 ### 58 — B
 
-**B.** R_cond=L/(kA); increasing L increases resistance. This is the governing result for the rd review of a bioprocess line project.
+**B.** R_cond=L/(kA); increasing L increases resistance. This result applies to the stated hazard review of a bioprocess line project.
 
 **Knowledge area:** Heat Transfer  
 **Concept:** HT-2D-058-06
 
 ### 59 — A
 
-**A.** Q=kAΔT/L=90000.0 W. This is the governing result for the rd review of a raw-material blending system project.
+**A.** Q=kAΔT/L=90000.0 W. This result applies to the stated hazard review of a raw-material blending system project.
 
 **Knowledge area:** Heat Transfer  
 **Concept:** HT-2D-055-01
 
 ### 60 — D
 
-**D.** q=hAΔT=255(2)(20)=10200.0 W. This is the governing result for the rd review of a crystallizer train project.
+**D.** q=hAΔT=255(2)(20)=10200.0 W. This result applies to the stated hazard review of a crystallizer train project.
 
 **Knowledge area:** Heat Transfer  
 **Concept:** HT-2D-055-02
 
 ### 61 — C
 
-**C.** q=εσA(Ts⁴−Tsur⁴)=2961.1 W. This is the governing result for the nostic review of a demonstration absorber project.
+**C.** q=εσA(Ts⁴−Tsur⁴)=2961.1 W. This result applies to the stated diagnostic review of a demonstration absorber project.
 
 **Knowledge area:** Heat Transfer  
 **Concept:** HT-2D-057-03
 
 ### 62 — B
 
-**B.** Q=UAΔTlm=300(53)(30)=477.0 kW. This is the governing result for the nostic review of a continuous reactor project.
+**B.** Q=UAΔTlm=300(53)(30)=477.0 kW. This result applies to the stated diagnostic review of a continuous reactor project.
 
 **Knowledge area:** Heat Transfer  
 **Concept:** HT-2D-057-06
 
 ### 63 — A
 
-**A.** R_cond=L/(kA); increasing L increases resistance. This is the governing result for the nostic review of a vapor-recovery system project.
+**A.** R_cond=L/(kA); increasing L increases resistance. This result applies to the stated diagnostic review of a vapor-recovery system project.
 
 **Knowledge area:** Heat Transfer  
 **Concept:** HT-2D-058-06
 
 ### 64 — D
 
-**D.** Q=kAΔT/L=99375.0 W. This is the governing result for the nostic review of a cooling-water loop project.
+**D.** Q=kAΔT/L=99375.0 W. This result applies to the stated diagnostic review of a cooling-water loop project.
 
 **Knowledge area:** Heat Transfer  
 **Concept:** HT-2D-055-01
 
 ### 65 — D
 
-**D.** y*=Kx=1.60(0.20)=0.320. This is the governing result for the nostic review of a process-water treatment unit project.
+**D.** y*=Kx=1.60(0.20)=0.320. This result applies to the stated diagnostic review of a process-water treatment unit project.
 
 **Knowledge area:** Mass Transfer and Separation  
 **Concept:** CHE-3-006-03
 
 ### 66 — C
 
-**C.** More reflux increases internal contacting and typically reduces stage count, at the cost of energy. This is the governing result for the nostic review of a gas-separation skid project.
+**C.** More reflux increases internal contacting and typically reduces stage count, at the cost of energy. This result applies to the stated diagnostic review of a gas-separation skid project.
 
 **Knowledge area:** Mass Transfer and Separation  
 **Concept:** CHE-3-007-03
 
 ### 67 — B
 
-**B.** Gas absorption transfers a solute from gas to liquid. This is the governing result for the nostic review of a fractionation section project.
+**B.** Gas absorption transfers a solute from gas to liquid. This result applies to the stated diagnostic review of a fractionation section project.
 
 **Knowledge area:** Mass Transfer and Separation  
 **Concept:** CHE-3-008-03
 
 ### 68 — A
 
-**A.** Inlet water=40 kg/h; removed=0.75(40)=30.00 kg/h. This is the governing result for the nostic review of a bioprocess line project.
+**A.** Inlet water=40 kg/h; removed=0.75(40)=30.00 kg/h. This result applies to the stated diagnostic review of a bioprocess line project.
 
 **Knowledge area:** Mass Transfer and Separation  
 **Concept:** CHE-3-005-04
 
 ### 69 — D
 
-**D.** Membrane selectivity quantifies preferential transport and therefore separation capability. This is the governing result for the nostic review of a raw-material blending system project.
+**D.** Membrane selectivity quantifies preferential transport and therefore separation capability. This result applies to the stated diagnostic review of a raw-material blending system project.
 
 **Knowledge area:** Mass Transfer and Separation  
 **Concept:** CHE-3-006-04
 
 ### 70 — C
 
-**C.** |J|=D|dC/dz|=1.0e-09(620)=6.20e-07 mol/(m²·s). This is the governing result for the nostic review of a crystallizer train project.
+**C.** |J|=D|dC/dz|=1.0e-09(620)=6.20e-07 mol/(m²·s). This result applies to the stated diagnostic review of a crystallizer train project.
 
 **Knowledge area:** Mass Transfer and Separation  
 **Concept:** CHE-3-007-04
 
 ### 71 — B
 
-**B.** y*=Kx=1.60(0.20)=0.320. This is the governing result for the ormance review of a demonstration absorber project.
+**B.** y*=Kx=1.60(0.20)=0.320. This result applies to the stated performance review of a demonstration absorber project.
 
 **Knowledge area:** Mass Transfer and Separation  
 **Concept:** CHE-3-008-04
 
 ### 72 — A
 
-**A.** More reflux increases internal contacting and typically reduces stage count, at the cost of energy. This is the governing result for the ormance review of a continuous reactor project.
+**A.** More reflux increases internal contacting and typically reduces stage count, at the cost of energy. This result applies to the stated performance review of a continuous reactor project.
 
 **Knowledge area:** Mass Transfer and Separation  
 **Concept:** CHE-3-005-05
 
 ### 73 — D
 
-**D.** Gas absorption transfers a solute from gas to liquid. This is the governing result for the ormance review of a vapor-recovery system project.
+**D.** Gas absorption transfers a solute from gas to liquid. This result applies to the stated performance review of a vapor-recovery system project.
 
 **Knowledge area:** Mass Transfer and Separation  
 **Concept:** CHE-3-006-05
 
 ### 74 — C
 
-**C.** Inlet water=40 kg/h; removed=0.75(40)=30.00 kg/h. This is the governing result for the ormance review of a cooling-water loop project.
+**C.** Inlet water=40 kg/h; removed=0.75(40)=30.00 kg/h. This result applies to the stated performance review of a cooling-water loop project.
 
 **Knowledge area:** Mass Transfer and Separation  
 **Concept:** CHE-3-007-05
 
 ### 75 — D
 
-**D.** Smaller particles provide more surface area per unit mass. This is the governing result for the ormance review of a process-water treatment unit project.
+**D.** Smaller particles provide more surface area per unit mass. This result applies to the stated performance review of a process-water treatment unit project.
 
 **Knowledge area:** Solids Handling  
 **Concept:** CHE-3-009-03
 
 ### 76 — C
 
-**C.** Supersaturation is the driving force for nucleation and crystal growth. This is the governing result for the ormance review of a gas-separation skid project.
+**C.** Supersaturation is the driving force for nucleation and crystal growth. This result applies to the stated performance review of a gas-separation skid project.
 
 **Knowledge area:** Solids Handling  
 **Concept:** CHE-3-009-04
 
 ### 77 — B
 
-**B.** Particles retained on the screen are the oversize fraction. This is the governing result for the ormance review of a fractionation section project.
+**B.** Particles retained on the screen are the oversize fraction. This result applies to the stated performance review of a fractionation section project.
 
 **Knowledge area:** Solids Handling  
 **Concept:** CHE-3-009-05
 
 ### 78 — D
 
-**D.** k₂/k₁=exp[-E_a/R(1/T₂−1/T₁)], giving k₂=0.619 s⁻¹. This is the governing result for the ormance review of a bioprocess line project.
+**D.** k₂/k₁=exp[-E_a/R(1/T₂−1/T₁)], giving k₂=0.619 s⁻¹. This result applies to the stated performance review of a bioprocess line project.
 
 **Knowledge area:** Chemical Reaction Engineering  
 **Concept:** CHE-3-011-05
 
 ### 79 — C
 
-**C.** CSTR design: V=F_A0 X/(−r_A)=10(0.8)/2=4.000 m³. This is the governing result for the ormance review of a raw-material blending system project.
+**C.** CSTR design: V=F_A0 X/(−r_A)=10(0.8)/2=4.000 m³. This result applies to the stated performance review of a raw-material blending system project.
 
 **Knowledge area:** Chemical Reaction Engineering  
 **Concept:** CHE-3-010-06
 
 ### 80 — B
 
-**B.** Using V≈F_A0 X/(−r_A,avg) gives 4.000 m³. This is the governing result for the ormance review of a crystallizer train project.
+**B.** Using V≈F_A0 X/(−r_A,avg) gives 4.000 m³. This result applies to the stated performance review of a crystallizer train project.
 
 **Knowledge area:** Chemical Reaction Engineering  
 **Concept:** CHE-3-011-06
 
 ### 81 — A
 
-**A.** S_D/U=n_D/n_U=50/10=5.000. This is the governing result for the ofit review of a demonstration absorber project.
+**A.** S_D/U=n_D/n_U=50/10=5.000. This result applies to the stated retrofit review of a demonstration absorber project.
 
 **Knowledge area:** Chemical Reaction Engineering  
 **Concept:** CHE-3-010-07
 
 ### 82 — D
 
-**D.** At equilibrium forward and reverse rates are equal, so their difference is zero. This is the governing result for the ofit review of a continuous reactor project.
+**D.** At equilibrium forward and reverse rates are equal, so their difference is zero. This result applies to the stated retrofit review of a continuous reactor project.
 
 **Knowledge area:** Chemical Reaction Engineering  
 **Concept:** CHE-3-011-07
 
 ### 83 — C
 
-**C.** C_A/C_A0=e^(−kt)=e^(−0.2×5)=0.368. This is the governing result for the ofit review of a vapor-recovery system project.
+**C.** C_A/C_A0=e^(−kt)=e^(−0.2×5)=0.368. This result applies to the stated retrofit review of a vapor-recovery system project.
 
 **Knowledge area:** Chemical Reaction Engineering  
 **Concept:** CHE-3-010-01
 
 ### 84 — B
 
-**B.** Overall order is the sum of concentration exponents: 2+1=3. This is the governing result for the ofit review of a cooling-water loop project.
+**B.** Overall order is the sum of concentration exponents: 2+1=3. This result applies to the stated retrofit review of a cooling-water loop project.
 
 **Knowledge area:** Chemical Reaction Engineering  
 **Concept:** CHE-3-011-01
 
 ### 85 — A
 
-**A.** k₂/k₁=exp[-E_a/R(1/T₂−1/T₁)], giving k₂=0.619 s⁻¹. This is the governing result for the ofit review of a process-water treatment unit project.
+**A.** k₂/k₁=exp[-E_a/R(1/T₂−1/T₁)], giving k₂=0.619 s⁻¹. This result applies to the stated retrofit review of a process-water treatment unit project.
 
 **Knowledge area:** Chemical Reaction Engineering  
 **Concept:** CHE-3-010-02
 
 ### 86 — D
 
-**D.** F=P(1+i)^n=5000(1.06)^5=$6691.1. This is the governing result for the ofit review of a gas-separation skid project.
+**D.** F=P(1+i)^n=5000(1.06)^5=$6691.1. This result applies to the stated retrofit review of a gas-separation skid project.
 
 **Knowledge area:** Economics  
 **Concept:** ECON-2A-005-01
 
 ### 87 — C
 
-**C.** For consistent sign convention and equal service, maximize net present worth. This is the governing result for the ofit review of a fractionation section project.
+**C.** For consistent sign convention and equal service, maximize net present worth. This result applies to the stated retrofit review of a fractionation section project.
 
 **Knowledge area:** Economics  
 **Concept:** ECON-2A-005-04
 
 ### 88 — B
 
-**B.** Effective annual rate includes intra-year compounding. This is the governing result for the ofit review of a bioprocess line project.
+**B.** Effective annual rate includes intra-year compounding. This result applies to the stated retrofit review of a bioprocess line project.
 
 **Knowledge area:** Economics  
 **Concept:** ECON-2A-006-01
 
 ### 89 — A
 
-**A.** P=F/(1+i)^n=50000/1.08^5=$34029.2. This is the governing result for the ofit review of a raw-material blending system project.
+**A.** P=F/(1+i)^n=50000/1.08^5=$34029.2. This result applies to the stated retrofit review of a raw-material blending system project.
 
 **Knowledge area:** Economics  
 **Concept:** ECON-2A-004-02
 
 ### 90 — D
 
-**D.** F=P(1+i)^n=5000(1.06)^5=$6691.1. This is the governing result for the ofit review of a crystallizer train project.
+**D.** F=P(1+i)^n=5000(1.06)^5=$6691.1. This result applies to the stated retrofit review of a crystallizer train project.
 
 **Knowledge area:** Economics  
 **Concept:** ECON-2A-005-01
 
 ### 91 — D
 
-**D.** A PFD summarizes major equipment and principal process streams. This is the governing result for the art review of a demonstration absorber project.
+**D.** A PFD summarizes major equipment and principal process streams. This result applies to the stated restart review of a demonstration absorber project.
 
 **Knowledge area:** Process Design  
 **Concept:** CHE-3-012-03
 
 ### 92 — C
 
-**C.** The P&ID documents piping, valves, instruments, and control relationships. This is the governing result for the art review of a continuous reactor project.
+**C.** The P&ID documents piping, valves, instruments, and control relationships. This result applies to the stated restart review of a continuous reactor project.
 
 **Knowledge area:** Process Design  
 **Concept:** CHE-3-012-04
 
 ### 93 — B
 
-**B.** Geometric similarity preserves ratios of corresponding dimensions. This is the governing result for the art review of a vapor-recovery system project.
+**B.** Geometric similarity preserves ratios of corresponding dimensions. This result applies to the stated restart review of a vapor-recovery system project.
 
 **Knowledge area:** Process Design  
 **Concept:** CHE-3-012-05
 
 ### 94 — A
 
-**A.** Estimate class and uncertainty are essential for responsible screening decisions. This is the governing result for the art review of a cooling-water loop project.
+**A.** Estimate class and uncertainty are essential for responsible screening decisions. This result applies to the stated restart review of a cooling-water loop project.
 
 **Knowledge area:** Process Design  
 **Concept:** CHE-3-012-06
 
 ### 95 — D
 
-**D.** First-pass sizing should be tied to the governing credible design condition. This is the governing result for the art review of a process-water treatment unit project.
+**D.** First-pass sizing should be tied to the governing credible design condition. This result applies to the stated restart review of a process-water treatment unit project.
 
 **Knowledge area:** Process Design  
 **Concept:** CHE-3-012-07
 
 ### 96 — C
 
-**C.** C₂=C₁(S₂/S₁)^n=100000(2)^0.6=$151571.7. This is the governing result for the art review of a gas-separation skid project.
+**C.** C₂=C₁(S₂/S₁)^n=100000(2)^0.6=$151571.7. This result applies to the stated restart review of a gas-separation skid project.
 
 **Knowledge area:** Process Design  
 **Concept:** CHE-3-012-01
 
 ### 97 — B
 
-**B.** A PFD summarizes major equipment and principal process streams. This is the governing result for the art review of a fractionation section project.
+**B.** A PFD summarizes major equipment and principal process streams. This result applies to the stated restart review of a fractionation section project.
 
 **Knowledge area:** Process Design  
 **Concept:** CHE-3-012-02
 
 ### 98 — D
 
-**D.** A faster inner loop suppresses disturbances before they strongly affect the primary variable. This is the governing result for the art review of a bioprocess line project.
+**D.** A faster inner loop suppresses disturbances before they strongly affect the primary variable. This result applies to the stated restart review of a bioprocess line project.
 
 **Knowledge area:** Process Control  
 **Concept:** CHE-3-013-03
 
 ### 99 — C
 
-**C.** For a first-order step response, y/y∞=1−e⁻¹=0.632. This is the governing result for the art review of a raw-material blending system project.
+**C.** For a first-order step response, y/y∞=1−e⁻¹=0.632. This result applies to the stated restart review of a raw-material blending system project.
 
 **Knowledge area:** Process Control  
 **Concept:** CHE-3-013-04
 
 ### 100 — B
 
-**B.** Fail action is selected so loss of utility moves the process toward its safer state. This is the governing result for the art review of a crystallizer train project.
+**B.** Fail action is selected so loss of utility moves the process toward its safer state. This result applies to the stated restart review of a crystallizer train project.
 
 **Knowledge area:** Process Control  
 **Concept:** CHE-3-013-05
 
 ### 101 — A
 
-**A.** Integral action accumulates error and drives steady-state offset toward zero. This is the governing result for the ibility review of a demonstration absorber project.
+**A.** Integral action accumulates error and drives steady-state offset toward zero. This result applies to the stated feasibility review of a demonstration absorber project.
 
 **Knowledge area:** Process Control  
 **Concept:** CHE-3-013-06
 
 ### 102 — D
 
-**D.** Below the LFL there is insufficient fuel for sustained flame propagation. This is the governing result for the ibility review of a continuous reactor project.
+**D.** Below the LFL there is insufficient fuel for sustained flame propagation. This result applies to the stated feasibility review of a continuous reactor project.
 
 **Knowledge area:** Safety, Health, and Environment  
 **Concept:** CHE-3-013-03
 
 ### 103 — C
 
-**C.** HAZOP explores deviations from design intent using guide words and process parameters. This is the governing result for the ibility review of a vapor-recovery system project.
+**C.** HAZOP explores deviations from design intent using guide words and process parameters. This result applies to the stated feasibility review of a vapor-recovery system project.
 
 **Knowledge area:** Safety, Health, and Environment  
 **Concept:** CHE-3-013-04
 
 ### 104 — B
 
-**B.** LOPA estimates scenario frequency and credits independent protection layers to judge risk reduction. This is the governing result for the ibility review of a cooling-water loop project.
+**B.** LOPA estimates scenario frequency and credits independent protection layers to judge risk reduction. This result applies to the stated feasibility review of a cooling-water loop project.
 
 **Knowledge area:** Safety, Health, and Environment  
 **Concept:** CHE-3-013-05
 
 ### 105 — A
 
-**A.** Inerting lowers oxidizer concentration below that needed for combustion. This is the governing result for the ibility review of a process-water treatment unit project.
+**A.** Inerting lowers oxidizer concentration below that needed for combustion. This result applies to the stated feasibility review of a process-water treatment unit project.
 
 **Knowledge area:** Safety, Health, and Environment  
 **Concept:** CHE-3-013-06
 
 ### 106 — D
 
-**D.** Relief devices provide an emergency discharge path when pressure threatens equipment limits. This is the governing result for the ibility review of a gas-separation skid project.
+**D.** Relief devices provide an emergency discharge path when pressure threatens equipment limits. This result applies to the stated feasibility review of a gas-separation skid project.
 
 **Knowledge area:** Safety, Health, and Environment  
 **Concept:** CHE-3-013-07
 
 ### 107 — C
 
-**C.** Engineering controls reduce exposure at the source or along the path and rank above PPE. This is the governing result for the ibility review of a fractionation section project.
+**C.** Engineering controls reduce exposure at the source or along the path and rank above PPE. This result applies to the stated feasibility review of a fractionation section project.
 
 **Knowledge area:** Safety, Health, and Environment  
 **Concept:** CHE-3-013-01
 
 ### 108 — D
 
-**D.** Engineers must practice within competence and obtain qualified assistance for other portions. This is the governing result for the ibility review of a bioprocess line project.
+**D.** Engineers must practice within competence and obtain qualified assistance for other portions. This result applies to the stated feasibility review of a bioprocess line project.
 
 **Knowledge area:** Ethics and Professional Practice  
 **Concept:** PROF-2A-001-02
 
 ### 109 — C
 
-**C.** Material conflicts should be disclosed so affected parties can make informed decisions. This is the governing result for the ibility review of a raw-material blending system project.
+**C.** Material conflicts should be disclosed so affected parties can make informed decisions. This result applies to the stated feasibility review of a raw-material blending system project.
 
 **Knowledge area:** Ethics and Professional Practice  
 **Concept:** PROF-2A-001-04
 
 ### 110 — B
 
-**B.** Confidentiality is important but can yield to legal requirements and overriding public-safety duties. This is the governing result for the ibility review of a crystallizer train project.
+**B.** Confidentiality is important but can yield to legal requirements and overriding public-safety duties. This result applies to the stated feasibility review of a crystallizer train project.
 
 **Knowledge area:** Ethics and Professional Practice  
 **Concept:** PROF-2A-001-05

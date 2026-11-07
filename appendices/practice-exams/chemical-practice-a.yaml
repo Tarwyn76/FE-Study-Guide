@@ -18,7 +18,7 @@ items:
   - '2.000'
   - '3.667'
   answer: A
-  solution: '**A.** Rearrange: x=(11-2)/3=3.000. This is the governing result for the gn-basis review of a pilot
+  solution: '**A.** Rearrange: x=(11-2)/3=3.000. This result applies to the stated design-basis review of a pilot
     evaporator project.'
   id: CHEM-A-Q001
 - knowledge_area: Mathematics
@@ -28,11 +28,11 @@ items:
   prompt: During a design-basis review of a batch reactor project, for y=x²+3x, evaluate dy/dx at x=3.
   choices:
   - '6'
-  - '6'
+  - 6 under an invalid assumption
   - '18'
   - '9'
   answer: D
-  solution: '**D.** dy/dx=2x+3=9. This is the governing result for the gn-basis review of a batch reactor project.'
+  solution: '**D.** dy/dx=2x+3=9. This result applies to the stated design-basis review of a batch reactor project.'
   id: CHEM-A-Q002
 - knowledge_area: Mathematics
   question_type: multiple-choice
@@ -41,11 +41,11 @@ items:
   prompt: During a design-basis review of a solvent-recovery train project, evaluate ∫_1^3 4x dx.
   choices:
   - '20.00'
-  - '8.000'
+  - 8.000 under an invalid assumption
   - '16.00'
   - '8.000'
   answer: C
-  solution: '**C.** Integral is 4x²/2; applying limits gives 16.00. This is the governing result for the gn-basis
+  solution: '**C.** Integral is 4x²/2; applying limits gives 16.00. This result applies to the stated design-basis
     review of a solvent-recovery train project.'
   id: CHEM-A-Q003
 - knowledge_area: Mathematics
@@ -60,7 +60,7 @@ items:
   - 54.00 m/s
   - 4.167 m/s
   answer: B
-  solution: '**B.** 54 km/h ÷3.6 = 15.00 m/s. This is the governing result for the gn-basis review of a heat-exchanger
+  solution: '**B.** 54 km/h ÷3.6 = 15.00 m/s. This result applies to the stated design-basis review of a heat-exchanger
     network project.'
   id: CHEM-A-Q004
 - knowledge_area: Mathematics
@@ -74,7 +74,7 @@ items:
   - '2.250'
   - '0.954'
   answer: A
-  solution: '**A.** Use change of base: ln(9)/ln(4)=1.585. This is the governing result for the gn-basis review
+  solution: '**A.** Use change of base: ln(9)/ln(4)=1.585. This result applies to the stated design-basis review
     of a wastewater neutralization unit project.'
   id: CHEM-A-Q005
 - knowledge_area: Mathematics
@@ -89,7 +89,7 @@ items:
   - '6.928'
   - '2.000'
   answer: D
-  solution: '**D.** Vx=V cosθ=4cos(60°)=2.000. This is the governing result for the gn-basis review of a compressed-gas
+  solution: '**D.** Vx=V cosθ=4cos(60°)=2.000. This result applies to the stated design-basis review of a compressed-gas
     system project.'
   id: CHEM-A-Q006
 - knowledge_area: Probability and Statistics
@@ -104,8 +104,8 @@ items:
   - '0.000'
   - '0.400'
   answer: A
-  solution: '**A.** P(no failures)=(1-0.10)^4=0.656. This is the governing result for the gn-basis review of a distillation
-    section project.'
+  solution: '**A.** P(no failures)=(1-0.10)^4=0.656. This result applies to the stated design-basis review of a
+    distillation section project.'
   id: CHEM-A-Q007
 - knowledge_area: Probability and Statistics
   question_type: multiple-choice
@@ -119,7 +119,7 @@ items:
   - '5.000'
   - '1.000'
   answer: D
-  solution: '**D.** z=(x-μ)/σ=(56-50)/6=1.000. This is the governing result for the gn-basis review of a polymerization
+  solution: '**D.** z=(x-μ)/σ=(56-50)/6=1.000. This result applies to the stated design-basis review of a polymerization
     line project.'
   id: CHEM-A-Q008
 - knowledge_area: Probability and Statistics
@@ -134,7 +134,7 @@ items:
   - '7.500'
   - '8.500'
   answer: C
-  solution: '**C.** Mean=sum/n=30/4=7.500. This is the governing result for the gn-basis review of a feed-preparation
+  solution: '**C.** Mean=sum/n=30/4=7.500. This result applies to the stated design-basis review of a feed-preparation
     system project.'
   id: CHEM-A-Q009
 - knowledge_area: Probability and Statistics
@@ -149,7 +149,7 @@ items:
   - '0.400'
   - '0.200'
   answer: B
-  solution: '**B.** P(B|A)=P(A∩B)/P(A)=0.2/0.4=0.500. This is the governing result for the gn-basis review of a
+  solution: '**B.** P(B|A)=P(A∩B)/P(A)=0.2/0.4=0.500. This result applies to the stated design-basis review of a
     product-drying line project.'
   id: CHEM-A-Q010
 - knowledge_area: Engineering Sciences
@@ -164,7 +164,7 @@ items:
   - 50000.0 kg
   - 0.000 kg
   answer: A
-  solution: '**A.** m=ρV=1000(0.020)=20.00 kg. This is the governing result for the issioning review of a pilot
+  solution: '**A.** m=ρV=1000(0.020)=20.00 kg. This result applies to the stated commissioning review of a pilot
     evaporator project.'
   id: CHEM-A-Q011
 - knowledge_area: Engineering Sciences
@@ -179,7 +179,7 @@ items:
   - 143.0 N·m
   - 286.0 N·m
   answer: D
-  solution: '**D.** M=Fd=130(2.2)=286.0 N·m. This is the governing result for the issioning review of a batch reactor
+  solution: '**D.** M=Fd=130(2.2)=286.0 N·m. This result applies to the stated commissioning review of a batch reactor
     project.'
   id: CHEM-A-Q012
 - knowledge_area: Engineering Sciences
@@ -189,12 +189,12 @@ items:
   prompt: During a commissioning review of a solvent-recovery train project, pressure of 240 kPa acts uniformly
     on area 0.010 m². Find force.
   choices:
-  - 2.400 N
+  - 2.400 N under an invalid assumption
   - 24000.0 N
   - 2400.0 N
   - 2.400 N
   answer: C
-  solution: '**C.** F=pA=240000(0.010)=2400.0 N. This is the governing result for the issioning review of a solvent-recovery
+  solution: '**C.** F=pA=240000(0.010)=2400.0 N. This result applies to the stated commissioning review of a solvent-recovery
     train project.'
   id: CHEM-A-Q013
 - knowledge_area: Engineering Sciences
@@ -209,7 +209,7 @@ items:
   - 208000.0 kJ
   - 0.308 kJ
   answer: B
-  solution: '**B.** E=Pt=8 kJ/s × 26 s=208.0 kJ. This is the governing result for the issioning review of a heat-exchanger
+  solution: '**B.** E=Pt=8 kJ/s × 26 s=208.0 kJ. This result applies to the stated commissioning review of a heat-exchanger
     network project.'
   id: CHEM-A-Q014
 - knowledge_area: Materials Science
@@ -224,7 +224,7 @@ items:
   - 200.0 MPa
   - 0.100 MPa
   answer: A
-  solution: '**A.** σ=F/A=(20000 N)/(200×10⁻⁶ m²)=100.0 MPa. This is the governing result for the issioning review
+  solution: '**A.** σ=F/A=(20000 N)/(200×10⁻⁶ m²)=100.0 MPa. This result applies to the stated commissioning review
     of a wastewater neutralization unit project.'
   id: CHEM-A-Q015
 - knowledge_area: Materials Science
@@ -235,11 +235,11 @@ items:
     under 110 MPa stress, find strain.
   choices:
   - '0.550'
-  - '0.550'
+  - 0.550 under an invalid assumption
   - '1.818'
   - '0.001'
   answer: D
-  solution: '**D.** ε=σ/E=110/200000=0.001. This is the governing result for the issioning review of a compressed-gas
+  solution: '**D.** ε=σ/E=110/200000=0.001. This result applies to the stated commissioning review of a compressed-gas
     system project.'
   id: CHEM-A-Q016
 - knowledge_area: Materials Science
@@ -254,8 +254,8 @@ items:
   - FCC
   - BCC only
   answer: C
-  solution: '**C.** FCC provides many active slip systems, supporting ductile deformation. This is the governing
-    result for the issioning review of a distillation section project.'
+  solution: '**C.** FCC provides many active slip systems, supporting ductile deformation. This result applies to
+    the stated commissioning review of a distillation section project.'
   id: CHEM-A-Q017
 - knowledge_area: Materials Science
   question_type: multiple-choice
@@ -269,8 +269,8 @@ items:
   - Creep
   - Galvanic corrosion
   answer: B
-  solution: '**B.** Fatigue damage accumulates under repeated or cyclic stress. This is the governing result for
-    the issioning review of a polymerization line project.'
+  solution: '**B.** Fatigue damage accumulates under repeated or cyclic stress. This result applies to the stated
+    commissioning review of a polymerization line project.'
   id: CHEM-A-Q018
 - knowledge_area: Chemistry and Biology
   question_type: multiple-choice
@@ -284,7 +284,7 @@ items:
   - 0.002 mol
   - 0.500 mol
   answer: A
-  solution: '**A.** n=m/MW=36/18=2.000 mol. This is the governing result for the issioning review of a feed-preparation
+  solution: '**A.** n=m/MW=36/18=2.000 mol. This result applies to the stated commissioning review of a feed-preparation
     system project.'
   id: CHEM-A-Q019
 - knowledge_area: Chemistry and Biology
@@ -299,7 +299,7 @@ items:
   - '6.215'
   - '2.699'
   answer: D
-  solution: '**D.** pH=-log₁₀[H⁺]=2.699. This is the governing result for the issioning review of a product-drying
+  solution: '**D.** pH=-log₁₀[H⁺]=2.699. This result applies to the stated commissioning review of a product-drying
     line project.'
   id: CHEM-A-Q020
 - knowledge_area: Chemistry and Biology
@@ -314,8 +314,8 @@ items:
   - Limiting reactant
   - Excess reactant
   answer: C
-  solution: '**C.** The limiting reactant fixes the maximum reaction extent and product amount. This is the governing
-    result for the city review of a pilot evaporator project.'
+  solution: '**C.** The limiting reactant fixes the maximum reaction extent and product amount. This result applies
+    to the stated capacity review of a pilot evaporator project.'
   id: CHEM-A-Q021
 - knowledge_area: Chemistry and Biology
   question_type: multiple-choice
@@ -329,8 +329,8 @@ items:
   - Moles of every species
   - Volume of each gas
   answer: B
-  solution: '**B.** Stoichiometric coefficients conserve each element''s atom count. This is the governing result
-    for the city review of a batch reactor project.'
+  solution: '**B.** Stoichiometric coefficients conserve each element''s atom count. This result applies to the
+    stated capacity review of a batch reactor project.'
   id: CHEM-A-Q022
 - knowledge_area: Chemistry and Biology
   question_type: multiple-choice
@@ -344,8 +344,8 @@ items:
   - Very high molecular symmetry only
   - Metallic bonding
   answer: A
-  solution: '**A.** Water preferentially solvates polar and hydrogen-bonding species. This is the governing result
-    for the city review of a solvent-recovery train project.'
+  solution: '**A.** Water preferentially solvates polar and hydrogen-bonding species. This result applies to the
+    stated capacity review of a solvent-recovery train project.'
   id: CHEM-A-Q023
 - knowledge_area: Chemistry and Biology
   question_type: multiple-choice
@@ -359,7 +359,7 @@ items:
   - 0.250 mol
   - 4.000 mol
   answer: D
-  solution: '**D.** n=m/MW=72/18=4.000 mol. This is the governing result for the city review of a heat-exchanger
+  solution: '**D.** n=m/MW=72/18=4.000 mol. This result applies to the stated capacity review of a heat-exchanger
     network project.'
   id: CHEM-A-Q024
 - knowledge_area: Chemistry and Biology
@@ -374,7 +374,7 @@ items:
   - '3.000'
   - '11.00'
   answer: C
-  solution: '**C.** pH=-log₁₀[H⁺]=3.000. This is the governing result for the city review of a wastewater neutralization
+  solution: '**C.** pH=-log₁₀[H⁺]=3.000. This result applies to the stated capacity review of a wastewater neutralization
     unit project.'
   id: CHEM-A-Q025
 - knowledge_area: Chemistry and Biology
@@ -389,8 +389,8 @@ items:
   - Excess reactant
   - Catalyst
   answer: B
-  solution: '**B.** The limiting reactant fixes the maximum reaction extent and product amount. This is the governing
-    result for the city review of a compressed-gas system project.'
+  solution: '**B.** The limiting reactant fixes the maximum reaction extent and product amount. This result applies
+    to the stated capacity review of a compressed-gas system project.'
   id: CHEM-A-Q026
 - knowledge_area: Fluid Mechanics/Dynamics
   question_type: multiple-choice
@@ -404,7 +404,7 @@ items:
   - 192.5 kPa
   - 2000.0 kPa
   answer: A
-  solution: '**A.** Δp=ρgh=1000(9.81)(2)=19.62 kPa. This is the governing result for the city review of a distillation
+  solution: '**A.** Δp=ρgh=1000(9.81)(2)=19.62 kPa. This result applies to the stated capacity review of a distillation
     section project.'
   id: CHEM-A-Q027
 - knowledge_area: Fluid Mechanics/Dynamics
@@ -419,7 +419,7 @@ items:
   - '3000000.0'
   - '180000.0'
   answer: D
-  solution: '**D.** Re=ρVD/μ=180000.0. This is the governing result for the city review of a polymerization line
+  solution: '**D.** Re=ρVD/μ=180000.0. This result applies to the stated capacity review of a polymerization line
     project.'
   id: CHEM-A-Q028
 - knowledge_area: Fluid Mechanics/Dynamics
@@ -434,7 +434,7 @@ items:
   - 0.039 m³/s
   - 0.157 m³/s
   answer: C
-  solution: '**C.** Q=VA=VπD²/4=0.039 m³/s. This is the governing result for the city review of a feed-preparation
+  solution: '**C.** Q=VA=VπD²/4=0.039 m³/s. This result applies to the stated capacity review of a feed-preparation
     system project.'
   id: CHEM-A-Q029
 - knowledge_area: Fluid Mechanics/Dynamics
@@ -447,10 +447,10 @@ items:
   - 6.400 kW
   - 4.800 kW
   - 3.600 kW
-  - 3.600 kW
+  - 3.600 kW under an invalid assumption
   answer: B
-  solution: '**B.** Pshaft=ΔpQ/η=180000(0.020)/0.75=4.800 kW. This is the governing result for the city review of
-    a product-drying line project.'
+  solution: '**B.** Pshaft=ΔpQ/η=180000(0.020)/0.75=4.800 kW. This result applies to the stated capacity review
+    of a product-drying line project.'
   id: CHEM-A-Q030
 - knowledge_area: Fluid Mechanics/Dynamics
   question_type: multiple-choice
@@ -464,8 +464,8 @@ items:
   - Friction is independent of viscosity
   - Reynolds number must exceed 4000
   answer: A
-  solution: '**A.** The Hagen–Poiseuille solution gives a parabolic velocity profile. This is the governing result
-    for the gy-use review of a pilot evaporator project.'
+  solution: '**A.** The Hagen–Poiseuille solution gives a parabolic velocity profile. This result applies to the
+    stated energy-use review of a pilot evaporator project.'
   id: CHEM-A-Q031
 - knowledge_area: Fluid Mechanics/Dynamics
   question_type: multiple-choice
@@ -479,7 +479,7 @@ items:
   - 3000.0 kPa
   - 29.43 kPa
   answer: D
-  solution: '**D.** Δp=ρgh=1000(9.81)(3)=29.43 kPa. This is the governing result for the gy-use review of a batch
+  solution: '**D.** Δp=ρgh=1000(9.81)(3)=29.43 kPa. This result applies to the stated energy-use review of a batch
     reactor project.'
   id: CHEM-A-Q032
 - knowledge_area: Fluid Mechanics/Dynamics
@@ -494,7 +494,7 @@ items:
   - '100000.0'
   - '10000.0'
   answer: C
-  solution: '**C.** Re=ρVD/μ=100000.0. This is the governing result for the gy-use review of a solvent-recovery
+  solution: '**C.** Re=ρVD/μ=100000.0. This result applies to the stated energy-use review of a solvent-recovery
     train project.'
   id: CHEM-A-Q033
 - knowledge_area: Fluid Mechanics/Dynamics
@@ -509,7 +509,7 @@ items:
   - 0.126 m³/s
   - 0.400 m³/s
   answer: B
-  solution: '**B.** Q=VA=VπD²/4=0.031 m³/s. This is the governing result for the gy-use review of a heat-exchanger
+  solution: '**B.** Q=VA=VπD²/4=0.031 m³/s. This result applies to the stated energy-use review of a heat-exchanger
     network project.'
   id: CHEM-A-Q034
 - knowledge_area: Fluid Mechanics/Dynamics
@@ -521,10 +521,10 @@ items:
   choices:
   - 6.133 kW
   - 4.600 kW
-  - 4.600 kW
+  - 4.600 kW under an invalid assumption
   - 8.178 kW
   answer: A
-  solution: '**A.** Pshaft=ΔpQ/η=230000(0.020)/0.75=6.133 kW. This is the governing result for the gy-use review
+  solution: '**A.** Pshaft=ΔpQ/η=230000(0.020)/0.75=6.133 kW. This result applies to the stated energy-use review
     of a wastewater neutralization unit project.'
   id: CHEM-A-Q035
 - knowledge_area: Thermodynamics
@@ -539,7 +539,7 @@ items:
   - 0.002 kPa
   - 86.10 kPa
   answer: A
-  solution: '**A.** PV=mRT; P=mRT/V=172.2 kPa. This is the governing result for the gy-use review of a compressed-gas
+  solution: '**A.** PV=mRT; P=mRT/V=172.2 kPa. This result applies to the stated energy-use review of a compressed-gas
     system project.'
   id: CHEM-A-Q036
 - knowledge_area: Thermodynamics
@@ -554,7 +554,7 @@ items:
   - 0.899 m³/kg
   - 0.361 m³/kg
   answer: D
-  solution: '**D.** v=vf+x(vg-vf)=0.361 m³/kg. This is the governing result for the gy-use review of a distillation
+  solution: '**D.** v=vf+x(vg-vf)=0.361 m³/kg. This result applies to the stated energy-use review of a distillation
     section project.'
   id: CHEM-A-Q037
 - knowledge_area: Thermodynamics
@@ -569,7 +569,7 @@ items:
   - 610.0 kJ
   - 1190.0 kJ
   answer: C
-  solution: '**C.** First law: ΔU=Q−W=900−290=610.0 kJ. This is the governing result for the gy-use review of a
+  solution: '**C.** First law: ΔU=Q−W=900−290=610.0 kJ. This result applies to the stated energy-use review of a
     polymerization line project.'
   id: CHEM-A-Q038
 - knowledge_area: Thermodynamics
@@ -584,7 +584,7 @@ items:
   - '0.620'
   - '2.632'
   answer: B
-  solution: '**B.** η=Wout/Qin=380/1000=0.380. This is the governing result for the gy-use review of a feed-preparation
+  solution: '**B.** η=Wout/Qin=380/1000=0.380. This result applies to the stated energy-use review of a feed-preparation
     system project.'
   id: CHEM-A-Q039
 - knowledge_area: Thermodynamics
@@ -599,8 +599,8 @@ items:
   - Decreasing necessarily
   - Undefined
   answer: A
-  solution: '**A.** Reversible adiabatic implies ds=0, so entropy remains constant. This is the governing result
-    for the gy-use review of a product-drying line project.'
+  solution: '**A.** Reversible adiabatic implies ds=0, so entropy remains constant. This result applies to the stated
+    energy-use review of a product-drying line project.'
   id: CHEM-A-Q040
 - knowledge_area: Thermodynamics
   question_type: multiple-choice
@@ -614,7 +614,7 @@ items:
   - 100.4 kPa
   - 301.4 kPa
   answer: D
-  solution: '**D.** PV=mRT; P=mRT/V=301.4 kPa. This is the governing result for the ability review of a pilot evaporator
+  solution: '**D.** PV=mRT; P=mRT/V=301.4 kPa. This result applies to the stated operability review of a pilot evaporator
     project.'
   id: CHEM-A-Q041
 - knowledge_area: Thermodynamics
@@ -624,12 +624,12 @@ items:
   prompt: During a operability review of a batch reactor project, a saturated mixture has quality x=0.50, vf=0.001
     m³/kg, vg=0.900 m³/kg. Find specific volume?
   choices:
-  - 0.450 m³/kg
+  - 0.450 m³/kg under an invalid assumption
   - 0.899 m³/kg
   - 0.451 m³/kg
   - 0.450 m³/kg
   answer: C
-  solution: '**C.** v=vf+x(vg-vf)=0.451 m³/kg. This is the governing result for the ability review of a batch reactor
+  solution: '**C.** v=vf+x(vg-vf)=0.451 m³/kg. This result applies to the stated operability review of a batch reactor
     project.'
   id: CHEM-A-Q042
 - knowledge_area: Thermodynamics
@@ -644,7 +644,7 @@ items:
   - 1540.0 kJ
   - -760.0 kJ
   answer: B
-  solution: '**B.** First law: ΔU=Q−W=1150−390=760.0 kJ. This is the governing result for the ability review of
+  solution: '**B.** First law: ΔU=Q−W=1150−390=760.0 kJ. This result applies to the stated operability review of
     a solvent-recovery train project.'
   id: CHEM-A-Q043
 - knowledge_area: Thermodynamics
@@ -659,7 +659,7 @@ items:
   - '2.326'
   - '430.0'
   answer: A
-  solution: '**A.** η=Wout/Qin=430/1000=0.430. This is the governing result for the ability review of a heat-exchanger
+  solution: '**A.** η=Wout/Qin=430/1000=0.430. This result applies to the stated operability review of a heat-exchanger
     network project.'
   id: CHEM-A-Q044
 - knowledge_area: Material/Energy Balances
@@ -674,7 +674,7 @@ items:
   - 0.250 kmol/h
   - 400.0 kmol/h
   answer: A
-  solution: '**A.** n_A=Fx_A=100(0.25)=25.00 kmol/h. This is the governing result for the ability review of a wastewater
+  solution: '**A.** n_A=Fx_A=100(0.25)=25.00 kmol/h. This result applies to the stated operability review of a wastewater
     neutralization unit project.'
   id: CHEM-A-Q045
 - knowledge_area: Material/Energy Balances
@@ -689,7 +689,7 @@ items:
   - 2.667 kg/h
   - 100.0 kg/h
   answer: D
-  solution: '**D.** Steady total balance gives outlet₂=160−60=100.0 kg/h. This is the governing result for the ability
+  solution: '**D.** Steady total balance gives outlet₂=160−60=100.0 kg/h. This result applies to the stated operability
     review of a compressed-gas system project.'
   id: CHEM-A-Q046
 - knowledge_area: Material/Energy Balances
@@ -704,8 +704,8 @@ items:
   - 24.00 kg/h
   - 36.00 kg/h
   answer: C
-  solution: '**C.** Composition is unchanged; solute=(200)(0.30)(0.40)=24.00 kg/h. This is the governing result
-    for the ability review of a distillation section project.'
+  solution: '**C.** Composition is unchanged; solute=(200)(0.30)(0.40)=24.00 kg/h. This result applies to the stated
+    operability review of a distillation section project.'
   id: CHEM-A-Q047
 - knowledge_area: Material/Energy Balances
   question_type: multiple-choice
@@ -719,7 +719,7 @@ items:
   - '2.000'
   - '1.500'
   answer: B
-  solution: '**B.** R/F=50/100=0.500. This is the governing result for the ability review of a polymerization line
+  solution: '**B.** R/F=50/100=0.500. This result applies to the stated operability review of a polymerization line
     project.'
   id: CHEM-A-Q048
 - knowledge_area: Material/Energy Balances
@@ -735,8 +735,8 @@ items:
   - 5.556 kg/h
   - 45.00 kg/h
   answer: A
-  solution: '**A.** Inert balance: purge fraction × circulating inert = input, so I=5/0.10=50.00 kg/h. This is the
-    governing result for the ability review of a feed-preparation system project.'
+  solution: '**A.** Inert balance: purge fraction × circulating inert = input, so I=5/0.10=50.00 kg/h. This result
+    applies to the stated operability review of a feed-preparation system project.'
   id: CHEM-A-Q049
 - knowledge_area: Material/Energy Balances
   question_type: multiple-choice
@@ -750,7 +750,7 @@ items:
   - 140.0 kW
   - 700.0 kW
   answer: D
-  solution: '**D.** Q̇=ṁcpΔT=5(4.0)(35)=700.0 kW. This is the governing result for the ability review of a product-drying
+  solution: '**D.** Q̇=ṁcpΔT=5(4.0)(35)=700.0 kW. This result applies to the stated operability review of a product-drying
     line project.'
   id: CHEM-A-Q050
 - knowledge_area: Material/Energy Balances
@@ -765,7 +765,7 @@ items:
   - 74.00 mol/h
   - 26.00 mol/h
   answer: C
-  solution: '**C.** Reacted A=F_A0 X=100(0.74)=74.00 mol/h. This is the governing result for the ty review of a
+  solution: '**C.** Reacted A=F_A0 X=100(0.74)=74.00 mol/h. This result applies to the stated safety review of a
     pilot evaporator project.'
   id: CHEM-A-Q051
 - knowledge_area: Material/Energy Balances
@@ -780,8 +780,8 @@ items:
   - 119.0 kmol/h
   - 0.300 kmol/h
   answer: B
-  solution: '**B.** n_A=Fx_A=170(0.30)=51.00 kmol/h. This is the governing result for the ty review of a batch reactor
-    project.'
+  solution: '**B.** n_A=Fx_A=170(0.30)=51.00 kmol/h. This result applies to the stated safety review of a batch
+    reactor project.'
   id: CHEM-A-Q052
 - knowledge_area: Material/Energy Balances
   question_type: multiple-choice
@@ -795,7 +795,7 @@ items:
   - 60.00 kg/h
   - 3.833 kg/h
   answer: A
-  solution: '**A.** Steady total balance gives outlet₂=230−60=170.0 kg/h. This is the governing result for the ty
+  solution: '**A.** Steady total balance gives outlet₂=230−60=170.0 kg/h. This result applies to the stated safety
     review of a solvent-recovery train project.'
   id: CHEM-A-Q053
 - knowledge_area: Material/Energy Balances
@@ -810,8 +810,8 @@ items:
   - 70.00 kg/h
   - 28.00 kg/h
   answer: D
-  solution: '**D.** Composition is unchanged; solute=(200)(0.35)(0.40)=28.00 kg/h. This is the governing result
-    for the ty review of a heat-exchanger network project.'
+  solution: '**D.** Composition is unchanged; solute=(200)(0.35)(0.40)=28.00 kg/h. This result applies to the stated
+    safety review of a heat-exchanger network project.'
   id: CHEM-A-Q054
 - knowledge_area: Material/Energy Balances
   question_type: multiple-choice
@@ -825,7 +825,7 @@ items:
   - '0.600'
   - '1.667'
   answer: C
-  solution: '**C.** R/F=60/100=0.600. This is the governing result for the ty review of a wastewater neutralization
+  solution: '**C.** R/F=60/100=0.600. This result applies to the stated safety review of a wastewater neutralization
     unit project.'
   id: CHEM-A-Q055
 - knowledge_area: Heat Transfer
@@ -840,7 +840,7 @@ items:
   - 0.004 W
   - 266.7 W
   answer: A
-  solution: '**A.** Q=kAΔT/L=15000.0 W. This is the governing result for the ty review of a compressed-gas system
+  solution: '**A.** Q=kAΔT/L=15000.0 W. This result applies to the stated safety review of a compressed-gas system
     project.'
   id: CHEM-A-Q056
 - knowledge_area: Heat Transfer
@@ -855,7 +855,7 @@ items:
   - 0.727 W
   - 2200.0 W
   answer: D
-  solution: '**D.** q=hAΔT=55(2)(20)=2200.0 W. This is the governing result for the ty review of a distillation
+  solution: '**D.** q=hAΔT=55(2)(20)=2200.0 W. This result applies to the stated safety review of a distillation
     section project.'
   id: CHEM-A-Q057
 - knowledge_area: Heat Transfer
@@ -870,7 +870,7 @@ items:
   - 2961.1 W
   - 2.961 W
   answer: C
-  solution: '**C.** q=εσA(Ts⁴−Tsur⁴)=2961.1 W. This is the governing result for the ty review of a polymerization
+  solution: '**C.** q=εσA(Ts⁴−Tsur⁴)=2961.1 W. This result applies to the stated safety review of a polymerization
     line project.'
   id: CHEM-A-Q058
 - knowledge_area: Heat Transfer
@@ -885,7 +885,7 @@ items:
   - 117000.0 kW
   - 0.692 kW
   answer: B
-  solution: '**B.** Q=UAΔTlm=300(13)(30)=117.0 kW. This is the governing result for the ty review of a feed-preparation
+  solution: '**B.** Q=UAΔTlm=300(13)(30)=117.0 kW. This result applies to the stated safety review of a feed-preparation
     system project.'
   id: CHEM-A-Q059
 - knowledge_area: Heat Transfer
@@ -900,7 +900,7 @@ items:
   - Increase area
   - Decrease thickness
   answer: A
-  solution: '**A.** R_cond=L/(kA); increasing L increases resistance. This is the governing result for the ty review
+  solution: '**A.** R_cond=L/(kA); increasing L increases resistance. This result applies to the stated safety review
     of a product-drying line project.'
   id: CHEM-A-Q060
 - knowledge_area: Heat Transfer
@@ -915,7 +915,7 @@ items:
   - 433.3 W
   - 24375.0 W
   answer: D
-  solution: '**D.** Q=kAΔT/L=24375.0 W. This is the governing result for the bleshooting review of a pilot evaporator
+  solution: '**D.** Q=kAΔT/L=24375.0 W. This result applies to the stated troubleshooting review of a pilot evaporator
     project.'
   id: CHEM-A-Q061
 - knowledge_area: Heat Transfer
@@ -930,7 +930,7 @@ items:
   - 3200.0 W
   - 3.200 W
   answer: C
-  solution: '**C.** q=hAΔT=80(2)(20)=3200.0 W. This is the governing result for the bleshooting review of a batch
+  solution: '**C.** q=hAΔT=80(2)(20)=3200.0 W. This result applies to the stated troubleshooting review of a batch
     reactor project.'
   id: CHEM-A-Q062
 - knowledge_area: Heat Transfer
@@ -945,7 +945,7 @@ items:
   - 2.961 W
   - 0.000 W
   answer: B
-  solution: '**B.** q=εσA(Ts⁴−Tsur⁴)=2961.1 W. This is the governing result for the bleshooting review of a solvent-recovery
+  solution: '**B.** q=εσA(Ts⁴−Tsur⁴)=2961.1 W. This result applies to the stated troubleshooting review of a solvent-recovery
     train project.'
   id: CHEM-A-Q063
 - knowledge_area: Heat Transfer
@@ -960,7 +960,7 @@ items:
   - 0.500 kW
   - 1.800 kW
   answer: A
-  solution: '**A.** Q=UAΔTlm=300(18)(30)=162.0 kW. This is the governing result for the bleshooting review of a
+  solution: '**A.** Q=UAΔTlm=300(18)(30)=162.0 kW. This result applies to the stated troubleshooting review of a
     heat-exchanger network project.'
   id: CHEM-A-Q064
 - knowledge_area: Mass Transfer and Separation
@@ -975,7 +975,7 @@ items:
   - 2.00e-08 mol/(m²·s)
   - 5.00e-12 mol/(m²·s)
   answer: A
-  solution: '**A.** |J|=D|dC/dz|=1.0e-09(200)=2.00e-07 mol/(m²·s). This is the governing result for the bleshooting
+  solution: '**A.** |J|=D|dC/dz|=1.0e-09(200)=2.00e-07 mol/(m²·s). This result applies to the stated troubleshooting
     review of a wastewater neutralization unit project.'
   id: CHEM-A-Q065
 - knowledge_area: Mass Transfer and Separation
@@ -990,7 +990,7 @@ items:
   - '0.200'
   - '0.320'
   answer: D
-  solution: '**D.** y*=Kx=1.60(0.20)=0.320. This is the governing result for the bleshooting review of a compressed-gas
+  solution: '**D.** y*=Kx=1.60(0.20)=0.320. This result applies to the stated troubleshooting review of a compressed-gas
     system project.'
   id: CHEM-A-Q066
 - knowledge_area: Mass Transfer and Separation
@@ -1006,7 +1006,7 @@ items:
   - Increases required stages without limit
   answer: C
   solution: '**C.** More reflux increases internal contacting and typically reduces stage count, at the cost of
-    energy. This is the governing result for the bleshooting review of a distillation section project.'
+    energy. This result applies to the stated troubleshooting review of a distillation section project.'
   id: CHEM-A-Q067
 - knowledge_area: Mass Transfer and Separation
   question_type: multiple-choice
@@ -1020,7 +1020,7 @@ items:
   - Distillation
   - Crystallization
   answer: B
-  solution: '**B.** Gas absorption transfers a solute from gas to liquid. This is the governing result for the bleshooting
+  solution: '**B.** Gas absorption transfers a solute from gas to liquid. This result applies to the stated troubleshooting
     review of a polymerization line project.'
   id: CHEM-A-Q068
 - knowledge_area: Mass Transfer and Separation
@@ -1035,7 +1035,7 @@ items:
   - 40.00 kg/h
   - 10.00 kg/h
   answer: A
-  solution: '**A.** Inlet water=40 kg/h; removed=0.75(40)=30.00 kg/h. This is the governing result for the bleshooting
+  solution: '**A.** Inlet water=40 kg/h; removed=0.75(40)=30.00 kg/h. This result applies to the stated troubleshooting
     review of a feed-preparation system project.'
   id: CHEM-A-Q069
 - knowledge_area: Mass Transfer and Separation
@@ -1051,7 +1051,7 @@ items:
   - Ability to separate A from B
   answer: D
   solution: '**D.** Membrane selectivity quantifies preferential transport and therefore separation capability.
-    This is the governing result for the bleshooting review of a product-drying line project.'
+    This result applies to the stated troubleshooting review of a product-drying line project.'
   id: CHEM-A-Q070
 - knowledge_area: Mass Transfer and Separation
   question_type: multiple-choice
@@ -1065,7 +1065,7 @@ items:
   - 2.60e-07 mol/(m²·s)
   - 2.60e-06 mol/(m²·s)
   answer: C
-  solution: '**C.** |J|=D|dC/dz|=1.0e-09(260)=2.60e-07 mol/(m²·s). This is the governing result for the ity review
+  solution: '**C.** |J|=D|dC/dz|=1.0e-09(260)=2.60e-07 mol/(m²·s). This result applies to the stated quality review
     of a pilot evaporator project.'
   id: CHEM-A-Q071
 - knowledge_area: Mass Transfer and Separation
@@ -1080,7 +1080,8 @@ items:
   - '0.125'
   - '1.800'
   answer: B
-  solution: '**B.** y*=Kx=1.60(0.20)=0.320. This is the governing result for the ity review of a batch reactor project.'
+  solution: '**B.** y*=Kx=1.60(0.20)=0.320. This result applies to the stated quality review of a batch reactor
+    project.'
   id: CHEM-A-Q072
 - knowledge_area: Mass Transfer and Separation
   question_type: multiple-choice
@@ -1095,7 +1096,7 @@ items:
   - Makes VLE unnecessary
   answer: A
   solution: '**A.** More reflux increases internal contacting and typically reduces stage count, at the cost of
-    energy. This is the governing result for the ity review of a solvent-recovery train project.'
+    energy. This result applies to the stated quality review of a solvent-recovery train project.'
   id: CHEM-A-Q073
 - knowledge_area: Solids Handling
   question_type: multiple-choice
@@ -1109,8 +1110,8 @@ items:
   - Filtrate
   - Mother liquor
   answer: A
-  solution: '**A.** Particles retained on the screen are the oversize fraction. This is the governing result for
-    the ity review of a heat-exchanger network project.'
+  solution: '**A.** Particles retained on the screen are the oversize fraction. This result applies to the stated
+    quality review of a heat-exchanger network project.'
   id: CHEM-A-Q074
 - knowledge_area: Solids Handling
   question_type: multiple-choice
@@ -1124,8 +1125,8 @@ items:
   - Bulk temperature
   - Specific surface area
   answer: D
-  solution: '**D.** Smaller particles provide more surface area per unit mass. This is the governing result for
-    the ity review of a wastewater neutralization unit project.'
+  solution: '**D.** Smaller particles provide more surface area per unit mass. This result applies to the stated
+    quality review of a wastewater neutralization unit project.'
   id: CHEM-A-Q075
 - knowledge_area: Solids Handling
   question_type: multiple-choice
@@ -1139,8 +1140,8 @@ items:
   - Supersaturated
   - Exactly saturated only
   answer: C
-  solution: '**C.** Supersaturation is the driving force for nucleation and crystal growth. This is the governing
-    result for the ity review of a compressed-gas system project.'
+  solution: '**C.** Supersaturation is the driving force for nucleation and crystal growth. This result applies
+    to the stated quality review of a compressed-gas system project.'
   id: CHEM-A-Q076
 - knowledge_area: Chemical Reaction Engineering
   question_type: multiple-choice
@@ -1154,7 +1155,7 @@ items:
   - '1.000'
   - '2.718'
   answer: A
-  solution: '**A.** C_A/C_A0=e^(−kt)=e^(−0.2×5)=0.368. This is the governing result for the ity review of a distillation
+  solution: '**A.** C_A/C_A0=e^(−kt)=e^(−0.2×5)=0.368. This result applies to the stated quality review of a distillation
     section project.'
   id: CHEM-A-Q077
 - knowledge_area: Chemical Reaction Engineering
@@ -1169,8 +1170,8 @@ items:
   - '4'
   - '3'
   answer: D
-  solution: '**D.** Overall order is the sum of concentration exponents: 2+1=3. This is the governing result for
-    the ity review of a polymerization line project.'
+  solution: '**D.** Overall order is the sum of concentration exponents: 2+1=3. This result applies to the stated
+    quality review of a polymerization line project.'
   id: CHEM-A-Q078
 - knowledge_area: Chemical Reaction Engineering
   question_type: multiple-choice
@@ -1184,7 +1185,7 @@ items:
   - 0.619 s⁻¹
   - 0.110 s⁻¹
   answer: C
-  solution: '**C.** k₂/k₁=exp[-E_a/R(1/T₂−1/T₁)], giving k₂=0.619 s⁻¹. This is the governing result for the ity
+  solution: '**C.** k₂/k₁=exp[-E_a/R(1/T₂−1/T₁)], giving k₂=0.619 s⁻¹. This result applies to the stated quality
     review of a feed-preparation system project.'
   id: CHEM-A-Q079
 - knowledge_area: Chemical Reaction Engineering
@@ -1199,7 +1200,7 @@ items:
   - 5.000 m³
   - 1.000 m³
   answer: B
-  solution: '**B.** CSTR design: V=F_A0 X/(−r_A)=10(0.8)/2=4.000 m³. This is the governing result for the ity review
+  solution: '**B.** CSTR design: V=F_A0 X/(−r_A)=10(0.8)/2=4.000 m³. This result applies to the stated quality review
     of a product-drying line project.'
   id: CHEM-A-Q080
 - knowledge_area: Chemical Reaction Engineering
@@ -1214,8 +1215,8 @@ items:
   - 1.333 m³
   - 0.188 m³
   answer: A
-  solution: '**A.** Using V≈F_A0 X/(−r_A,avg) gives 4.000 m³. This is the governing result for the ttlenecking review
-    of a pilot evaporator project.'
+  solution: '**A.** Using V≈F_A0 X/(−r_A,avg) gives 4.000 m³. This result applies to the stated debottlenecking
+    review of a pilot evaporator project.'
   id: CHEM-A-Q081
 - knowledge_area: Chemical Reaction Engineering
   question_type: multiple-choice
@@ -1229,7 +1230,7 @@ items:
   - '0.833'
   - '5.000'
   answer: D
-  solution: '**D.** S_D/U=n_D/n_U=50/10=5.000. This is the governing result for the ttlenecking review of a batch
+  solution: '**D.** S_D/U=n_D/n_U=50/10=5.000. This result applies to the stated debottlenecking review of a batch
     reactor project.'
   id: CHEM-A-Q082
 - knowledge_area: Chemical Reaction Engineering
@@ -1244,8 +1245,8 @@ items:
   - Zero
   - Maximum
   answer: C
-  solution: '**C.** At equilibrium forward and reverse rates are equal, so their difference is zero. This is the
-    governing result for the ttlenecking review of a solvent-recovery train project.'
+  solution: '**C.** At equilibrium forward and reverse rates are equal, so their difference is zero. This result
+    applies to the stated debottlenecking review of a solvent-recovery train project.'
   id: CHEM-A-Q083
 - knowledge_area: Chemical Reaction Engineering
   question_type: multiple-choice
@@ -1259,8 +1260,8 @@ items:
   - '0.699'
   - '1.200'
   answer: B
-  solution: '**B.** C_A/C_A0=e^(−kt)=e^(−0.2×6)=0.301. This is the governing result for the ttlenecking review of
-    a heat-exchanger network project.'
+  solution: '**B.** C_A/C_A0=e^(−kt)=e^(−0.2×6)=0.301. This result applies to the stated debottlenecking review
+    of a heat-exchanger network project.'
   id: CHEM-A-Q084
 - knowledge_area: Economics
   question_type: multiple-choice
@@ -1274,7 +1275,7 @@ items:
   - $7142.9
   - $10000.0
   answer: A
-  solution: '**A.** P=F/(1+i)^n=10000/1.08^5=$6805.8. This is the governing result for the ttlenecking review of
+  solution: '**A.** P=F/(1+i)^n=10000/1.08^5=$6805.8. This result applies to the stated debottlenecking review of
     a wastewater neutralization unit project.'
   id: CHEM-A-Q085
 - knowledge_area: Economics
@@ -1289,7 +1290,7 @@ items:
   - $5000.0
   - $6691.1
   answer: D
-  solution: '**D.** F=P(1+i)^n=5000(1.06)^5=$6691.1. This is the governing result for the ttlenecking review of
+  solution: '**D.** F=P(1+i)^n=5000(1.06)^5=$6691.1. This result applies to the stated debottlenecking review of
     a compressed-gas system project.'
   id: CHEM-A-Q086
 - knowledge_area: Economics
@@ -1304,8 +1305,8 @@ items:
   - The greatest net present worth
   - The largest initial cost
   answer: C
-  solution: '**C.** For consistent sign convention and equal service, maximize net present worth. This is the governing
-    result for the ttlenecking review of a distillation section project.'
+  solution: '**C.** For consistent sign convention and equal service, maximize net present worth. This result applies
+    to the stated debottlenecking review of a distillation section project.'
   id: CHEM-A-Q087
 - knowledge_area: Economics
   question_type: multiple-choice
@@ -1319,8 +1320,8 @@ items:
   - Inflation only
   - Taxes only
   answer: B
-  solution: '**B.** Effective annual rate includes intra-year compounding. This is the governing result for the
-    ttlenecking review of a polymerization line project.'
+  solution: '**B.** Effective annual rate includes intra-year compounding. This result applies to the stated debottlenecking
+    review of a polymerization line project.'
   id: CHEM-A-Q088
 - knowledge_area: Process Design
   question_type: multiple-choice
@@ -1331,10 +1332,10 @@ items:
   choices:
   - $151571.7
   - $200000.0
-  - $200000.0
+  - $200000.0 under an invalid assumption
   - $65975.4
   answer: A
-  solution: '**A.** C₂=C₁(S₂/S₁)^n=100000(2)^0.6=$151571.7. This is the governing result for the ttlenecking review
+  solution: '**A.** C₂=C₁(S₂/S₁)^n=100000(2)^0.6=$151571.7. This result applies to the stated debottlenecking review
     of a feed-preparation system project.'
   id: CHEM-A-Q089
 - knowledge_area: Process Design
@@ -1349,8 +1350,8 @@ items:
   - Site evacuation map
   - Process flow diagram (PFD)
   answer: D
-  solution: '**D.** A PFD summarizes major equipment and principal process streams. This is the governing result
-    for the ttlenecking review of a product-drying line project.'
+  solution: '**D.** A PFD summarizes major equipment and principal process streams. This result applies to the stated
+    debottlenecking review of a product-drying line project.'
   id: CHEM-A-Q090
 - knowledge_area: Process Design
   question_type: multiple-choice
@@ -1364,8 +1365,8 @@ items:
   - Piping and instrumentation diagram (P&ID)
   - Block flow diagram
   answer: C
-  solution: '**C.** The P&ID documents piping, valves, instruments, and control relationships. This is the governing
-    result for the tup review of a pilot evaporator project.'
+  solution: '**C.** The P&ID documents piping, valves, instruments, and control relationships. This result applies
+    to the stated startup review of a pilot evaporator project.'
   id: CHEM-A-Q091
 - knowledge_area: Process Design
   question_type: multiple-choice
@@ -1379,8 +1380,8 @@ items:
   - Random
   - Inversely proportional to density only
   answer: B
-  solution: '**B.** Geometric similarity preserves ratios of corresponding dimensions. This is the governing result
-    for the tup review of a batch reactor project.'
+  solution: '**B.** Geometric similarity preserves ratios of corresponding dimensions. This result applies to the
+    stated startup review of a batch reactor project.'
   id: CHEM-A-Q092
 - knowledge_area: Process Design
   question_type: multiple-choice
@@ -1394,8 +1395,8 @@ items:
   - No assumptions
   - Only the vendor name
   answer: A
-  solution: '**A.** Estimate class and uncertainty are essential for responsible screening decisions. This is the
-    governing result for the tup review of a solvent-recovery train project.'
+  solution: '**A.** Estimate class and uncertainty are essential for responsible screening decisions. This result
+    applies to the stated startup review of a solvent-recovery train project.'
   id: CHEM-A-Q093
 - knowledge_area: Process Design
   question_type: multiple-choice
@@ -1409,8 +1410,8 @@ items:
   - An arbitrary round number
   - The credible case that governs required capacity or duty
   answer: D
-  solution: '**D.** First-pass sizing should be tied to the governing credible design condition. This is the governing
-    result for the tup review of a heat-exchanger network project.'
+  solution: '**D.** First-pass sizing should be tied to the governing credible design condition. This result applies
+    to the stated startup review of a heat-exchanger network project.'
   id: CHEM-A-Q094
 - knowledge_area: Process Design
   question_type: multiple-choice
@@ -1419,13 +1420,13 @@ items:
   prompt: During a startup review of a wastewater neutralization unit project, equipment costs $100,000 at capacity
     100. Using exponent 0.6, estimate cost at capacity 200.
   choices:
-  - $200000.0
+  - $200000.0 under an invalid assumption
   - $65975.4
   - $151571.7
   - $200000.0
   answer: C
-  solution: '**C.** C₂=C₁(S₂/S₁)^n=100000(2)^0.6=$151571.7. This is the governing result for the tup review of a
-    wastewater neutralization unit project.'
+  solution: '**C.** C₂=C₁(S₂/S₁)^n=100000(2)^0.6=$151571.7. This result applies to the stated startup review of
+    a wastewater neutralization unit project.'
   id: CHEM-A-Q095
 - knowledge_area: Process Design
   question_type: multiple-choice
@@ -1439,8 +1440,8 @@ items:
   - P&ID only
   - Wiring diagram
   answer: B
-  solution: '**B.** A PFD summarizes major equipment and principal process streams. This is the governing result
-    for the tup review of a compressed-gas system project.'
+  solution: '**B.** A PFD summarizes major equipment and principal process streams. This result applies to the stated
+    startup review of a compressed-gas system project.'
   id: CHEM-A-Q096
 - knowledge_area: Process Control
   question_type: multiple-choice
@@ -1454,8 +1455,8 @@ items:
   - Derivative
   - Feedforward only
   answer: A
-  solution: '**A.** Integral action accumulates error and drives steady-state offset toward zero. This is the governing
-    result for the tup review of a distillation section project.'
+  solution: '**A.** Integral action accumulates error and drives steady-state offset toward zero. This result applies
+    to the stated startup review of a distillation section project.'
   id: CHEM-A-Q097
 - knowledge_area: Process Control
   question_type: multiple-choice
@@ -1468,8 +1469,8 @@ items:
   - Final product inspection only
   - Measured disturbances
   answer: D
-  solution: '**D.** Feedforward uses measured disturbances to anticipate their effect. This is the governing result
-    for the tup review of a polymerization line project.'
+  solution: '**D.** Feedforward uses measured disturbances to anticipate their effect. This result applies to the
+    stated startup review of a polymerization line project.'
   id: CHEM-A-Q098
 - knowledge_area: Process Control
   question_type: multiple-choice
@@ -1484,7 +1485,7 @@ items:
   - Eliminate all sensors
   answer: C
   solution: '**C.** A faster inner loop suppresses disturbances before they strongly affect the primary variable.
-    This is the governing result for the tup review of a feed-preparation system project.'
+    This result applies to the stated startup review of a feed-preparation system project.'
   id: CHEM-A-Q099
 - knowledge_area: Process Control
   question_type: multiple-choice
@@ -1498,7 +1499,7 @@ items:
   - '0.500'
   - '0.865'
   answer: B
-  solution: '**B.** For a first-order step response, y/y∞=1−e⁻¹=0.632. This is the governing result for the tup
+  solution: '**B.** For a first-order step response, y/y∞=1−e⁻¹=0.632. This result applies to the stated startup
     review of a product-drying line project.'
   id: CHEM-A-Q100
 - knowledge_area: Process Control
@@ -1513,8 +1514,8 @@ items:
   - Freeze controller output only
   - Increase process pressure
   answer: A
-  solution: '**A.** Fail action is selected so loss of utility moves the process toward its safer state. This is
-    the governing result for the omic-screening review of a pilot evaporator project.'
+  solution: '**A.** Fail action is selected so loss of utility moves the process toward its safer state. This result
+    applies to the stated economic-screening review of a pilot evaporator project.'
   id: CHEM-A-Q101
 - knowledge_area: Safety, Health, and Environment
   question_type: multiple-choice
@@ -1529,7 +1530,7 @@ items:
   - No change
   answer: A
   solution: '**A.** Engineering controls reduce exposure at the source or along the path and rank above PPE. This
-    is the governing result for the omic-screening review of a batch reactor project.'
+    result applies to the stated economic-screening review of a batch reactor project.'
   id: CHEM-A-Q102
 - knowledge_area: Safety, Health, and Environment
   question_type: multiple-choice
@@ -1543,8 +1544,8 @@ items:
   - Guaranteed to detonate
   - Too lean to sustain flame
   answer: D
-  solution: '**D.** Below the LFL there is insufficient fuel for sustained flame propagation. This is the governing
-    result for the omic-screening review of a solvent-recovery train project.'
+  solution: '**D.** Below the LFL there is insufficient fuel for sustained flame propagation. This result applies
+    to the stated economic-screening review of a solvent-recovery train project.'
   id: CHEM-A-Q103
 - knowledge_area: Safety, Health, and Environment
   question_type: multiple-choice
@@ -1559,7 +1560,7 @@ items:
   - Payroll records
   answer: C
   solution: '**C.** HAZOP explores deviations from design intent using guide words and process parameters. This
-    is the governing result for the omic-screening review of a heat-exchanger network project.'
+    result applies to the stated economic-screening review of a heat-exchanger network project.'
   id: CHEM-A-Q104
 - knowledge_area: Safety, Health, and Environment
   question_type: multiple-choice
@@ -1574,7 +1575,7 @@ items:
   - Minimum capital cost only
   answer: B
   solution: '**B.** LOPA estimates scenario frequency and credits independent protection layers to judge risk reduction.
-    This is the governing result for the omic-screening review of a wastewater neutralization unit project.'
+    This result applies to the stated economic-screening review of a wastewater neutralization unit project.'
   id: CHEM-A-Q105
 - knowledge_area: Safety, Health, and Environment
   question_type: multiple-choice
@@ -1588,8 +1589,8 @@ items:
   - Pipe diameter
   - Heat capacity of steel
   answer: A
-  solution: '**A.** Inerting lowers oxidizer concentration below that needed for combustion. This is the governing
-    result for the omic-screening review of a compressed-gas system project.'
+  solution: '**A.** Inerting lowers oxidizer concentration below that needed for combustion. This result applies
+    to the stated economic-screening review of a compressed-gas system project.'
   id: CHEM-A-Q106
 - knowledge_area: Ethics and Professional Practice
   question_type: multiple-choice
@@ -1603,7 +1604,7 @@ items:
   - Approve the work if schedule is tight
   - Remain silent in all cases
   answer: A
-  solution: '**A.** Professional ethics place public welfare first. This is the governing result for the omic-screening
+  solution: '**A.** Professional ethics place public welfare first. This result applies to the stated economic-screening
     review of a distillation section project.'
   id: CHEM-A-Q107
 - knowledge_area: Ethics and Professional Practice
@@ -1619,7 +1620,7 @@ items:
   - Qualified professionals cover the portions outside that competence
   answer: D
   solution: '**D.** Engineers must practice within competence and obtain qualified assistance for other portions.
-    This is the governing result for the omic-screening review of a polymerization line project.'
+    This result applies to the stated economic-screening review of a polymerization line project.'
   id: CHEM-A-Q108
 - knowledge_area: Ethics and Professional Practice
   question_type: multiple-choice
@@ -1634,7 +1635,7 @@ items:
   - Hidden unless discovered
   answer: C
   solution: '**C.** Material conflicts should be disclosed so affected parties can make informed decisions. This
-    is the governing result for the omic-screening review of a feed-preparation system project.'
+    result applies to the stated economic-screening review of a feed-preparation system project.'
   id: CHEM-A-Q109
 - knowledge_area: Ethics and Professional Practice
   question_type: multiple-choice
@@ -1649,5 +1650,5 @@ items:
   - A competitor asks for it
   answer: B
   solution: '**B.** Confidentiality is important but can yield to legal requirements and overriding public-safety
-    duties. This is the governing result for the omic-screening review of a product-drying line project.'
+    duties. This result applies to the stated economic-screening review of a product-drying line project.'
   id: CHEM-A-Q110
