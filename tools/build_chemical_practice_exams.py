@@ -481,3 +481,5 @@ for form in ("A","B"):
     print(y, m)
 
 # trigger audit after mathematical-choice normalization fix
+
+# trigger audit after answer-choice parser fix
