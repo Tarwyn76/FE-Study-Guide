@@ -232,6 +232,9 @@ def audit_exam_file(path:Path,d:dict,by_id:dict,pos:dict,practice_bp:dict,tier_b
         looks_mc=len(choices)>=2 or 'multiple' in qtype
         if looks_mc:
             if len(choices)<2: add(issues,"ERROR","mc_choices_missing",str(path),exam=label,item=iid,message="Multiple-choice item has fewer than two parsed choices.")
+            normalized_choices=[norm(c) for c in choices]
+            if len(normalized_choices)!=len(set(normalized_choices)):
+                add(issues,"WARNING","mc_choice_duplicate",str(path),exam=label,item=iid,message="Multiple-choice item contains duplicate answer choices.",excerpt=" | ".join(choices)[:240])
             if not ans: add(issues,"WARNING","mc_key_missing",str(path),exam=label,item=iid,message="Multiple-choice item has no machine-readable/parseable keyed answer.")
             elif ans.upper() in ('A','B','C','D') and len(choices) < ord(ans.upper())-64: add(issues,"ERROR","mc_key_out_of_range",str(path),exam=label,item=iid,message=f"Key {ans} exceeds available choices.")
         if expects_numeric(prompt) and solution and not NUM_RE.search(solution): add(issues,"WARNING","numeric_solution_no_number",str(path),exam=label,item=iid,message="Prompt appears to request a numeric result but solution contains no numeric token.")
