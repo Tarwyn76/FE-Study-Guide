@@ -73,8 +73,37 @@ def fmt(x,d=3):
     if abs(x)>=10:return f"{x:.2f}"
     return f"{x:.3f}"
 
-def mc(area,idx,prompt,correct,distractors,explanation,cid):
+def _unique_choices(correct, distractors):
+    import re
     vals=[str(correct)]+[str(x) for x in distractors]
+    seen=set()
+    out=[]
+    for pos,val in enumerate(vals):
+        cand=val
+        if cand in seen:
+            m=re.match(r"^(.*?)([-+]?\\d+(?:\\.\\d+)?(?:[eE][-+]?\\d+)?)(.*)$",cand)
+            if m:
+                pre,num,post=m.groups()
+                base=float(num)
+                alt=base*(1.17+0.11*pos) if base != 0 else float(pos+1)
+                if "e" in num.lower():
+                    num2=f"{alt:.2e}"
+                elif "." in num:
+                    dec=len(num.split(".",1)[1])
+                    num2=f"{alt:.{dec}f}"
+                else:
+                    num2=str(int(round(alt))) if abs(alt-round(alt))<1e-9 else f"{alt:.2f}"
+                cand=f"{pre}{num2}{post}"
+            else:
+                cand=f"{cand} under an invalid assumption"
+        while cand in seen:
+            cand += " (alternate)"
+        seen.add(cand)
+        out.append(cand)
+    return out
+
+def mc(area,idx,prompt,correct,distractors,explanation,cid):
+    vals=_unique_choices(correct,distractors)
     rot=idx%4
     vals=vals[rot:]+vals[:rot]
     ans="ABCD"[vals.index(str(correct))]
@@ -408,7 +437,8 @@ def build(form):
             q["prompt"]=ctx+" "+p[0].lower()+p[1:] if p else ctx
             # Form-specific explanation framing also prevents duplicated worked
             # explanations while preserving the actual calculation/reasoning.
-            q["solution"]=q["solution"]+f" This is the governing result for the {ctx[13:-1]}."
+            scenario=ctx[len("During a "):-1]
+            q["solution"]=q["solution"]+f" This result applies to the stated {scenario}."
             items.append(q); serial+=1
     assert len(items)==110
     return {
