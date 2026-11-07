@@ -483,3 +483,5 @@ for form in ("A","B"):
 # trigger audit after mathematical-choice normalization fix
 
 # trigger audit after answer-choice parser fix
+
+# trigger audit after regex escape correction
