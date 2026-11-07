@@ -81,7 +81,7 @@ def _unique_choices(correct, distractors):
     for pos,val in enumerate(vals):
         cand=val
         if cand in seen:
-            m=re.match(r"^(.*?)([-+]?\\d+(?:\\.\\d+)?(?:[eE][-+]?\\d+)?)(.*)$",cand)
+            m=re.match(r"^(.*?)([-+]?\d+(?:\.\d+)?(?:[eE][-+]?\d+)?)(.*)$",cand)
             if m:
                 pre,num,post=m.groups()
                 base=float(num)
