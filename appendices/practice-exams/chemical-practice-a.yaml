@@ -1,0 +1,1653 @@
+schema_version: 1
+exam_type: practice-A
+discipline: chemical
+exam: A
+question_count: 110
+appointment_minutes: 355
+working_time_minutes: 320
+blueprint_source: meta/exam-blueprints.yaml
+items:
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-001-02
+  prompt: During a design-basis review of a pilot evaporator project, solve 3x + 2 = 11.
+  choices:
+  - '3.000'
+  - '4.000'
+  - '2.000'
+  - '3.667'
+  answer: A
+  solution: '**A.** Rearrange: x=(11-2)/3=3.000. This is the governing result for the gn-basis review of a pilot
+    evaporator project.'
+  id: CHEM-A-Q001
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-002-02
+  prompt: During a design-basis review of a batch reactor project, for y=x²+3x, evaluate dy/dx at x=3.
+  choices:
+  - '6'
+  - '6'
+  - '18'
+  - '9'
+  answer: D
+  solution: '**D.** dy/dx=2x+3=9. This is the governing result for the gn-basis review of a batch reactor project.'
+  id: CHEM-A-Q002
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1B-004-02
+  prompt: During a design-basis review of a solvent-recovery train project, evaluate ∫_1^3 4x dx.
+  choices:
+  - '20.00'
+  - '8.000'
+  - '16.00'
+  - '8.000'
+  answer: C
+  solution: '**C.** Integral is 4x²/2; applying limits gives 16.00. This is the governing result for the gn-basis
+    review of a solvent-recovery train project.'
+  id: CHEM-A-Q003
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-05
+  prompt: During a design-basis review of a heat-exchanger network project, a process stream velocity is 54 km/h.
+    Convert it to m/s.
+  choices:
+  - 54000.0 m/s
+  - 15.00 m/s
+  - 54.00 m/s
+  - 4.167 m/s
+  answer: B
+  solution: '**B.** 54 km/h ÷3.6 = 15.00 m/s. This is the governing result for the gn-basis review of a heat-exchanger
+    network project.'
+  id: CHEM-A-Q004
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-029-03
+  prompt: During a design-basis review of a wastewater neutralization unit project, evaluate log_4(9).
+  choices:
+  - '1.585'
+  - '2.197'
+  - '2.250'
+  - '0.954'
+  answer: A
+  solution: '**A.** Use change of base: ln(9)/ln(4)=1.585. This is the governing result for the gn-basis review
+    of a wastewater neutralization unit project.'
+  id: CHEM-A-Q005
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-031-01
+  prompt: During a design-basis review of a compressed-gas system project, a vector has magnitude 4 at 60°. Find
+    its x-component.
+  choices:
+  - '3.464'
+  - '4.000'
+  - '6.928'
+  - '2.000'
+  answer: D
+  solution: '**D.** Vx=V cosθ=4cos(60°)=2.000. This is the governing result for the gn-basis review of a compressed-gas
+    system project.'
+  id: CHEM-A-Q006
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-04
+  prompt: During a design-basis review of a distillation section project, each trial independently fails with probability
+    0.10. For 4 trials, find the probability of no failures?
+  choices:
+  - '0.656'
+  - '0.344'
+  - '0.000'
+  - '0.400'
+  answer: A
+  solution: '**A.** P(no failures)=(1-0.10)^4=0.656. This is the governing result for the gn-basis review of a distillation
+    section project.'
+  id: CHEM-A-Q007
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-05
+  prompt: During a design-basis review of a polymerization line project, a normal variable has μ=50 and σ=6. What
+    z-score corresponds to x=56?
+  choices:
+  - '0.500'
+  - '2.000'
+  - '5.000'
+  - '1.000'
+  answer: D
+  solution: '**D.** z=(x-μ)/σ=(56-50)/6=1.000. This is the governing result for the gn-basis review of a polymerization
+    line project.'
+  id: CHEM-A-Q008
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-029-02
+  prompt: During a design-basis review of a feed-preparation system project, calculate the sample mean of [4, 6,
+    8, 12].
+  choices:
+  - '6.500'
+  - '30.00'
+  - '7.500'
+  - '8.500'
+  answer: C
+  solution: '**C.** Mean=sum/n=30/4=7.500. This is the governing result for the gn-basis review of a feed-preparation
+    system project.'
+  id: CHEM-A-Q009
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-029-03
+  prompt: During a design-basis review of a product-drying line project, given P(A)=0.4, P(B)=0.5, and P(A∩B)=0.2,
+    find P(B|A).
+  choices:
+  - '0.700'
+  - '0.500'
+  - '0.400'
+  - '0.200'
+  answer: B
+  solution: '**B.** P(B|A)=P(A∩B)/P(A)=0.2/0.4=0.500. This is the governing result for the gn-basis review of a
+    product-drying line project.'
+  id: CHEM-A-Q010
+- knowledge_area: Engineering Sciences
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-002-01
+  prompt: During a commissioning review of a pilot evaporator project, a liquid has density 1000 kg/m³ and volume
+    0.020 m³. Find its mass.
+  choices:
+  - 20.00 kg
+  - 0.020 kg
+  - 50000.0 kg
+  - 0.000 kg
+  answer: A
+  solution: '**A.** m=ρV=1000(0.020)=20.00 kg. This is the governing result for the issioning review of a pilot
+    evaporator project.'
+  id: CHEM-A-Q011
+- knowledge_area: Engineering Sciences
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-002-02
+  prompt: During a commissioning review of a batch reactor project, a 130 N force acts perpendicular to a lever
+    arm of 2.2 m. Compute the moment?
+  choices:
+  - 59.09 N·m
+  - 132.2 N·m
+  - 143.0 N·m
+  - 286.0 N·m
+  answer: D
+  solution: '**D.** M=Fd=130(2.2)=286.0 N·m. This is the governing result for the issioning review of a batch reactor
+    project.'
+  id: CHEM-A-Q012
+- knowledge_area: Engineering Sciences
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-012-01
+  prompt: During a commissioning review of a solvent-recovery train project, pressure of 240 kPa acts uniformly
+    on area 0.010 m². Find force.
+  choices:
+  - 2.400 N
+  - 24000.0 N
+  - 2400.0 N
+  - 2.400 N
+  answer: C
+  solution: '**C.** F=pA=240000(0.010)=2400.0 N. This is the governing result for the issioning review of a solvent-recovery
+    train project.'
+  id: CHEM-A-Q013
+- knowledge_area: Engineering Sciences
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-01
+  prompt: During a commissioning review of a heat-exchanger network project, a device draws 8 kW for 26 s. Find
+    energy consumed?
+  choices:
+  - 0.058 kJ
+  - 208.0 kJ
+  - 208000.0 kJ
+  - 0.308 kJ
+  answer: B
+  solution: '**B.** E=Pt=8 kJ/s × 26 s=208.0 kJ. This is the governing result for the issioning review of a heat-exchanger
+    network project.'
+  id: CHEM-A-Q014
+- knowledge_area: Materials Science
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-016-01
+  prompt: During a commissioning review of a wastewater neutralization unit project, a tensile specimen carries
+    20 kN over 200 mm². Find engineering stress.
+  choices:
+  - 100.0 MPa
+  - 50.00 MPa
+  - 200.0 MPa
+  - 0.100 MPa
+  answer: A
+  solution: '**A.** σ=F/A=(20000 N)/(200×10⁻⁶ m²)=100.0 MPa. This is the governing result for the issioning review
+    of a wastewater neutralization unit project.'
+  id: CHEM-A-Q015
+- knowledge_area: Materials Science
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-016-03
+  prompt: During a commissioning review of a compressed-gas system project, for an elastic material with E=200 GPa
+    under 110 MPa stress, find strain.
+  choices:
+  - '0.550'
+  - '0.550'
+  - '1.818'
+  - '0.001'
+  answer: D
+  solution: '**D.** ε=σ/E=110/200000=0.001. This is the governing result for the issioning review of a compressed-gas
+    system project.'
+  id: CHEM-A-Q016
+- knowledge_area: Materials Science
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-017-01
+  prompt: During a commissioning review of a distillation section project, which structure is most closely associated
+    with high ductility in many metals?
+  choices:
+  - HCP only
+  - Amorphous
+  - FCC
+  - BCC only
+  answer: C
+  solution: '**C.** FCC provides many active slip systems, supporting ductile deformation. This is the governing
+    result for the issioning review of a distillation section project.'
+  id: CHEM-A-Q017
+- knowledge_area: Materials Science
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-017-03
+  prompt: During a commissioning review of a polymerization line project, which mechanism is most directly driven
+    by cyclic loading?
+  choices:
+  - Thermal expansion
+  - Fatigue
+  - Creep
+  - Galvanic corrosion
+  answer: B
+  solution: '**B.** Fatigue damage accumulates under repeated or cyclic stress. This is the governing result for
+    the issioning review of a polymerization line project.'
+  id: CHEM-A-Q018
+- knowledge_area: Chemistry and Biology
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-012-01
+  prompt: During a commissioning review of a feed-preparation system project, a sample contains 36 g of water (MW
+    18 g/mol). Find moles?
+  choices:
+  - 2.000 mol
+  - 648.0 mol
+  - 0.002 mol
+  - 0.500 mol
+  answer: A
+  solution: '**A.** n=m/MW=36/18=2.000 mol. This is the governing result for the issioning review of a feed-preparation
+    system project.'
+  id: CHEM-A-Q019
+- knowledge_area: Chemistry and Biology
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-012-02
+  prompt: During a commissioning review of a product-drying line project, a solution has [H⁺]=2.0e-03 mol/L. Find
+    pH.
+  choices:
+  - '11.30'
+  - '0.002'
+  - '6.215'
+  - '2.699'
+  answer: D
+  solution: '**D.** pH=-log₁₀[H⁺]=2.699. This is the governing result for the issioning review of a product-drying
+    line project.'
+  id: CHEM-A-Q020
+- knowledge_area: Chemistry and Biology
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-012-03
+  prompt: During a capacity review of a pilot evaporator project, which reactant limits product formation when it
+    is consumed first by stoichiometry?
+  choices:
+  - Catalyst
+  - Inert species
+  - Limiting reactant
+  - Excess reactant
+  answer: C
+  solution: '**C.** The limiting reactant fixes the maximum reaction extent and product amount. This is the governing
+    result for the city review of a pilot evaporator project.'
+  id: CHEM-A-Q021
+- knowledge_area: Chemistry and Biology
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-012-04
+  prompt: During a capacity review of a batch reactor project, balancing a chemical equation enforces conservation
+    of what?
+  choices:
+  - Reaction rate
+  - Atoms of each element
+  - Moles of every species
+  - Volume of each gas
+  answer: B
+  solution: '**B.** Stoichiometric coefficients conserve each element''s atom count. This is the governing result
+    for the city review of a batch reactor project.'
+  id: CHEM-A-Q022
+- knowledge_area: Chemistry and Biology
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-012-05
+  prompt: During a capacity review of a solvent-recovery train project, which intermolecular feature most strongly
+    increases water solubility for a small organic molecule?
+  choices:
+  - Polarity and hydrogen-bonding ability
+  - Nonpolarity
+  - Very high molecular symmetry only
+  - Metallic bonding
+  answer: A
+  solution: '**A.** Water preferentially solvates polar and hydrogen-bonding species. This is the governing result
+    for the city review of a solvent-recovery train project.'
+  id: CHEM-A-Q023
+- knowledge_area: Chemistry and Biology
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-012-01
+  prompt: During a capacity review of a heat-exchanger network project, a sample contains 72 g of water (MW 18 g/mol).
+    Find moles?
+  choices:
+  - 1296.0 mol
+  - 0.004 mol
+  - 0.250 mol
+  - 4.000 mol
+  answer: D
+  solution: '**D.** n=m/MW=72/18=4.000 mol. This is the governing result for the city review of a heat-exchanger
+    network project.'
+  id: CHEM-A-Q024
+- knowledge_area: Chemistry and Biology
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-012-02
+  prompt: During a capacity review of a wastewater neutralization unit project, a solution has [H⁺]=1.0e-03 mol/L.
+    Find pH.
+  choices:
+  - '0.001'
+  - '6.908'
+  - '3.000'
+  - '11.00'
+  answer: C
+  solution: '**C.** pH=-log₁₀[H⁺]=3.000. This is the governing result for the city review of a wastewater neutralization
+    unit project.'
+  id: CHEM-A-Q025
+- knowledge_area: Chemistry and Biology
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-012-03
+  prompt: During a capacity review of a compressed-gas system project, which reactant limits product formation when
+    it is consumed first by stoichiometry?
+  choices:
+  - Inert species
+  - Limiting reactant
+  - Excess reactant
+  - Catalyst
+  answer: B
+  solution: '**B.** The limiting reactant fixes the maximum reaction extent and product amount. This is the governing
+    result for the city review of a compressed-gas system project.'
+  id: CHEM-A-Q026
+- knowledge_area: Fluid Mechanics/Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-01
+  prompt: During a capacity review of a distillation section project, water is static over a depth of 2 m. Find
+    the pressure increase.
+  choices:
+  - 19.62 kPa
+  - 2.000 kPa
+  - 192.5 kPa
+  - 2000.0 kPa
+  answer: A
+  solution: '**A.** Δp=ρgh=1000(9.81)(2)=19.62 kPa. This is the governing result for the city review of a distillation
+    section project.'
+  id: CHEM-A-Q027
+- knowledge_area: Fluid Mechanics/Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-02
+  prompt: During a capacity review of a polymerization line project, water flows at 3 m/s in a 0.06 m pipe; ρ=1000
+    kg/m³ and μ=0.001 Pa·s. Compute Reynolds number.
+  choices:
+  - '18000.0'
+  - '1800000.0'
+  - '3000000.0'
+  - '180000.0'
+  answer: D
+  solution: '**D.** Re=ρVD/μ=180000.0. This is the governing result for the city review of a polymerization line
+    project.'
+  id: CHEM-A-Q028
+- knowledge_area: Fluid Mechanics/Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-03
+  prompt: During a capacity review of a feed-preparation system project, average velocity in a 0.10 m diameter pipe
+    is 5 m/s. Find volumetric flow?
+  choices:
+  - 0.500 m³/s
+  - 0.000 m³/s
+  - 0.039 m³/s
+  - 0.157 m³/s
+  answer: C
+  solution: '**C.** Q=VA=VπD²/4=0.039 m³/s. This is the governing result for the city review of a feed-preparation
+    system project.'
+  id: CHEM-A-Q029
+- knowledge_area: Fluid Mechanics/Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-042-01
+  prompt: During a capacity review of a product-drying line project, a pump raises pressure by 180 kPa at 0.020
+    m³/s with efficiency 0.75. Find shaft power.
+  choices:
+  - 6.400 kW
+  - 4.800 kW
+  - 3.600 kW
+  - 3.600 kW
+  answer: B
+  solution: '**B.** Pshaft=ΔpQ/η=180000(0.020)/0.75=4.800 kW. This is the governing result for the city review of
+    a product-drying line project.'
+  id: CHEM-A-Q030
+- knowledge_area: Fluid Mechanics/Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-043-01
+  prompt: During a energy-use review of a pilot evaporator project, for fully developed laminar flow in a round
+    pipe, which statement is correct?
+  choices:
+  - Velocity profile is parabolic
+  - Velocity profile is uniform
+  - Friction is independent of viscosity
+  - Reynolds number must exceed 4000
+  answer: A
+  solution: '**A.** The Hagen–Poiseuille solution gives a parabolic velocity profile. This is the governing result
+    for the gy-use review of a pilot evaporator project.'
+  id: CHEM-A-Q031
+- knowledge_area: Fluid Mechanics/Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-01
+  prompt: During a energy-use review of a batch reactor project, water is static over a depth of 3 m. Find the pressure
+    increase.
+  choices:
+  - 3.000 kPa
+  - 288.7 kPa
+  - 3000.0 kPa
+  - 29.43 kPa
+  answer: D
+  solution: '**D.** Δp=ρgh=1000(9.81)(3)=29.43 kPa. This is the governing result for the gy-use review of a batch
+    reactor project.'
+  id: CHEM-A-Q032
+- knowledge_area: Fluid Mechanics/Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-02
+  prompt: During a energy-use review of a solvent-recovery train project, water flows at 2 m/s in a 0.05 m pipe;
+    ρ=1000 kg/m³ and μ=0.001 Pa·s. Compute Reynolds number.
+  choices:
+  - '1000000.0'
+  - '2000000.0'
+  - '100000.0'
+  - '10000.0'
+  answer: C
+  solution: '**C.** Re=ρVD/μ=100000.0. This is the governing result for the gy-use review of a solvent-recovery
+    train project.'
+  id: CHEM-A-Q033
+- knowledge_area: Fluid Mechanics/Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-03
+  prompt: During a energy-use review of a heat-exchanger network project, average velocity in a 0.10 m diameter
+    pipe is 4 m/s. Find volumetric flow?
+  choices:
+  - 0.000 m³/s
+  - 0.031 m³/s
+  - 0.126 m³/s
+  - 0.400 m³/s
+  answer: B
+  solution: '**B.** Q=VA=VπD²/4=0.031 m³/s. This is the governing result for the gy-use review of a heat-exchanger
+    network project.'
+  id: CHEM-A-Q034
+- knowledge_area: Fluid Mechanics/Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-042-01
+  prompt: During a energy-use review of a wastewater neutralization unit project, a pump raises pressure by 230
+    kPa at 0.020 m³/s with efficiency 0.75. Find shaft power.
+  choices:
+  - 6.133 kW
+  - 4.600 kW
+  - 4.600 kW
+  - 8.178 kW
+  answer: A
+  solution: '**A.** Pshaft=ΔpQ/η=230000(0.020)/0.75=6.133 kW. This is the governing result for the gy-use review
+    of a wastewater neutralization unit project.'
+  id: CHEM-A-Q035
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-047-03
+  prompt: During a energy-use review of a compressed-gas system project, 2 kg of ideal gas with R=0.287 kJ/(kg·K)
+    is at 300 K in 1.0 m³. Find pressure?
+  choices:
+  - 172.2 kPa
+  - 0.172 kPa
+  - 0.002 kPa
+  - 86.10 kPa
+  answer: A
+  solution: '**A.** PV=mRT; P=mRT/V=172.2 kPa. This is the governing result for the gy-use review of a compressed-gas
+    system project.'
+  id: CHEM-A-Q036
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-047-04
+  prompt: During a energy-use review of a distillation section project, a saturated mixture has quality x=0.40,
+    vf=0.001 m³/kg, vg=0.900 m³/kg. Find specific volume?
+  choices:
+  - 0.360 m³/kg
+  - 0.540 m³/kg
+  - 0.899 m³/kg
+  - 0.361 m³/kg
+  answer: D
+  solution: '**D.** v=vf+x(vg-vf)=0.361 m³/kg. This is the governing result for the gy-use review of a distillation
+    section project.'
+  id: CHEM-A-Q037
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-048-03
+  prompt: During a energy-use review of a polymerization line project, a closed system receives 900 kJ heat and
+    does 290 kJ work. Find ΔU?
+  choices:
+  - -610.0 kJ
+  - 290.0 kJ
+  - 610.0 kJ
+  - 1190.0 kJ
+  answer: C
+  solution: '**C.** First law: ΔU=Q−W=900−290=610.0 kJ. This is the governing result for the gy-use review of a
+    polymerization line project.'
+  id: CHEM-A-Q038
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-048-04
+  prompt: During a energy-use review of a feed-preparation system project, a heat engine receives 1000 kJ and produces
+    380 kJ work. Find thermal efficiency?
+  choices:
+  - '380.0'
+  - '0.380'
+  - '0.620'
+  - '2.632'
+  answer: B
+  solution: '**B.** η=Wout/Qin=380/1000=0.380. This is the governing result for the gy-use review of a feed-preparation
+    system project.'
+  id: CHEM-A-Q039
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-051-01
+  prompt: During a energy-use review of a product-drying line project, for an internally reversible adiabatic process,
+    entropy is
+  choices:
+  - Constant
+  - Increasing necessarily
+  - Decreasing necessarily
+  - Undefined
+  answer: A
+  solution: '**A.** Reversible adiabatic implies ds=0, so entropy remains constant. This is the governing result
+    for the gy-use review of a product-drying line project.'
+  id: CHEM-A-Q040
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-047-03
+  prompt: During a operability review of a pilot evaporator project, 3 kg of ideal gas with R=0.287 kJ/(kg·K) is
+    at 350 K in 1.0 m³. Find pressure?
+  choices:
+  - 0.301 kPa
+  - 0.002 kPa
+  - 100.4 kPa
+  - 301.4 kPa
+  answer: D
+  solution: '**D.** PV=mRT; P=mRT/V=301.4 kPa. This is the governing result for the ability review of a pilot evaporator
+    project.'
+  id: CHEM-A-Q041
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-047-04
+  prompt: During a operability review of a batch reactor project, a saturated mixture has quality x=0.50, vf=0.001
+    m³/kg, vg=0.900 m³/kg. Find specific volume?
+  choices:
+  - 0.450 m³/kg
+  - 0.899 m³/kg
+  - 0.451 m³/kg
+  - 0.450 m³/kg
+  answer: C
+  solution: '**C.** v=vf+x(vg-vf)=0.451 m³/kg. This is the governing result for the ability review of a batch reactor
+    project.'
+  id: CHEM-A-Q042
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-048-03
+  prompt: During a operability review of a solvent-recovery train project, a closed system receives 1150 kJ heat
+    and does 390 kJ work. Find ΔU?
+  choices:
+  - 390.0 kJ
+  - 760.0 kJ
+  - 1540.0 kJ
+  - -760.0 kJ
+  answer: B
+  solution: '**B.** First law: ΔU=Q−W=1150−390=760.0 kJ. This is the governing result for the ability review of
+    a solvent-recovery train project.'
+  id: CHEM-A-Q043
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-048-04
+  prompt: During a operability review of a heat-exchanger network project, a heat engine receives 1000 kJ and produces
+    430 kJ work. Find thermal efficiency?
+  choices:
+  - '0.430'
+  - '0.570'
+  - '2.326'
+  - '430.0'
+  answer: A
+  solution: '**A.** η=Wout/Qin=430/1000=0.430. This is the governing result for the ability review of a heat-exchanger
+    network project.'
+  id: CHEM-A-Q044
+- knowledge_area: Material/Energy Balances
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-001-01
+  prompt: During a operability review of a wastewater neutralization unit project, a 100 kmol/h feed contains 0.25
+    mole fraction A. Find A flow?
+  choices:
+  - 25.00 kmol/h
+  - 75.00 kmol/h
+  - 0.250 kmol/h
+  - 400.0 kmol/h
+  answer: A
+  solution: '**A.** n_A=Fx_A=100(0.25)=25.00 kmol/h. This is the governing result for the ability review of a wastewater
+    neutralization unit project.'
+  id: CHEM-A-Q045
+- knowledge_area: Material/Energy Balances
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-002-01
+  prompt: During a operability review of a compressed-gas system project, a steady nonreacting unit receives 160
+    kg/h and one outlet is 60 kg/h. Find the other outlet?
+  choices:
+  - 220.0 kg/h
+  - 60.00 kg/h
+  - 2.667 kg/h
+  - 100.0 kg/h
+  answer: D
+  solution: '**D.** Steady total balance gives outlet₂=160−60=100.0 kg/h. This is the governing result for the ability
+    review of a compressed-gas system project.'
+  id: CHEM-A-Q046
+- knowledge_area: Material/Energy Balances
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-003-01
+  prompt: During a operability review of a distillation section project, a 200 kg/h stream at 0.30 mass fraction
+    solute is split without separation. One branch gets 40% of flow. Find solute in that branch?
+  choices:
+  - 80.00 kg/h
+  - 60.00 kg/h
+  - 24.00 kg/h
+  - 36.00 kg/h
+  answer: C
+  solution: '**C.** Composition is unchanged; solute=(200)(0.30)(0.40)=24.00 kg/h. This is the governing result
+    for the ability review of a distillation section project.'
+  id: CHEM-A-Q047
+- knowledge_area: Material/Energy Balances
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-001-02
+  prompt: During a operability review of a polymerization line project, fresh feed is 100 kg/h and recycle is 50
+    kg/h. Find recycle ratio R/F?
+  choices:
+  - '0.333'
+  - '0.500'
+  - '2.000'
+  - '1.500'
+  answer: B
+  solution: '**B.** R/F=50/100=0.500. This is the governing result for the ability review of a polymerization line
+    project.'
+  id: CHEM-A-Q048
+- knowledge_area: Material/Energy Balances
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-002-02
+  prompt: During a operability review of a feed-preparation system project, an inert enters a recycle process at
+    5 kg/h and leaves only in a purge that is 0.10 of the circulating gas. At steady state, find inert circulation
+    rate?
+  choices:
+  - 50.00 kg/h
+  - 0.500 kg/h
+  - 5.556 kg/h
+  - 45.00 kg/h
+  answer: A
+  solution: '**A.** Inert balance: purge fraction × circulating inert = input, so I=5/0.10=50.00 kg/h. This is the
+    governing result for the ability review of a feed-preparation system project.'
+  id: CHEM-A-Q049
+- knowledge_area: Material/Energy Balances
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-003-02
+  prompt: During a operability review of a product-drying line project, a liquid stream of 5 kg/s with cp=4.0 kJ/(kg·K)
+    is heated by 35 K. Neglect KE/PE and work. Find heat duty?
+  choices:
+  - 0.700 kW
+  - 175.0 kW
+  - 140.0 kW
+  - 700.0 kW
+  answer: D
+  solution: '**D.** Q̇=ṁcpΔT=5(4.0)(35)=700.0 kW. This is the governing result for the ability review of a product-drying
+    line project.'
+  id: CHEM-A-Q050
+- knowledge_area: Material/Energy Balances
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-001-03
+  prompt: During a safety review of a pilot evaporator project, a reactor feed contains 100 mol/h reactant A and
+    achieves single-pass conversion 0.74. Find A reacted?
+  choices:
+  - 135.1 mol/h
+  - 0.740 mol/h
+  - 74.00 mol/h
+  - 26.00 mol/h
+  answer: C
+  solution: '**C.** Reacted A=F_A0 X=100(0.74)=74.00 mol/h. This is the governing result for the ty review of a
+    pilot evaporator project.'
+  id: CHEM-A-Q051
+- knowledge_area: Material/Energy Balances
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-002-03
+  prompt: During a safety review of a batch reactor project, a 170 kmol/h feed contains 0.30 mole fraction A. Find
+    A flow?
+  choices:
+  - 566.7 kmol/h
+  - 51.00 kmol/h
+  - 119.0 kmol/h
+  - 0.300 kmol/h
+  answer: B
+  solution: '**B.** n_A=Fx_A=170(0.30)=51.00 kmol/h. This is the governing result for the ty review of a batch reactor
+    project.'
+  id: CHEM-A-Q052
+- knowledge_area: Material/Energy Balances
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-003-03
+  prompt: During a safety review of a solvent-recovery train project, a steady nonreacting unit receives 230 kg/h
+    and one outlet is 60 kg/h. Find the other outlet?
+  choices:
+  - 170.0 kg/h
+  - 290.0 kg/h
+  - 60.00 kg/h
+  - 3.833 kg/h
+  answer: A
+  solution: '**A.** Steady total balance gives outlet₂=230−60=170.0 kg/h. This is the governing result for the ty
+    review of a solvent-recovery train project.'
+  id: CHEM-A-Q053
+- knowledge_area: Material/Energy Balances
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-001-04
+  prompt: During a safety review of a heat-exchanger network project, a 200 kg/h stream at 0.35 mass fraction solute
+    is split without separation. One branch gets 40% of flow. Find solute in that branch?
+  choices:
+  - 42.00 kg/h
+  - 80.00 kg/h
+  - 70.00 kg/h
+  - 28.00 kg/h
+  answer: D
+  solution: '**D.** Composition is unchanged; solute=(200)(0.35)(0.40)=28.00 kg/h. This is the governing result
+    for the ty review of a heat-exchanger network project.'
+  id: CHEM-A-Q054
+- knowledge_area: Material/Energy Balances
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-002-04
+  prompt: During a safety review of a wastewater neutralization unit project, fresh feed is 100 kg/h and recycle
+    is 60 kg/h. Find recycle ratio R/F?
+  choices:
+  - '1.600'
+  - '0.375'
+  - '0.600'
+  - '1.667'
+  answer: C
+  solution: '**C.** R/F=60/100=0.600. This is the governing result for the ty review of a wastewater neutralization
+    unit project.'
+  id: CHEM-A-Q055
+- knowledge_area: Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - HT-2D-055-01
+  prompt: During a safety review of a compressed-gas system project, a plane wall has k=15 W/(m·K), area 0.5 m²,
+    thickness 0.02 m, and ΔT=40 K. Find steady conduction rate?
+  choices:
+  - 15000.0 W
+  - 15.00 W
+  - 0.004 W
+  - 266.7 W
+  answer: A
+  solution: '**A.** Q=kAΔT/L=15000.0 W. This is the governing result for the ty review of a compressed-gas system
+    project.'
+  id: CHEM-A-Q056
+- knowledge_area: Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - HT-2D-055-02
+  prompt: During a safety review of a distillation section project, convection coefficient is 55 W/(m²·K), area
+    is 2 m², and surface-fluid ΔT is 20 K. Find convection heat rate?
+  choices:
+  - 2.200 W
+  - 550.0 W
+  - 0.727 W
+  - 2200.0 W
+  answer: D
+  solution: '**D.** q=hAΔT=55(2)(20)=2200.0 W. This is the governing result for the ty review of a distillation
+    section project.'
+  id: CHEM-A-Q057
+- knowledge_area: Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - HT-2D-057-03
+  prompt: During a safety review of a polymerization line project, a gray surface has ε=0.8, A=1.2 m², Ts=500 K,
+    surroundings 300 K. Estimate net radiation?
+  choices:
+  - 0.000 W
+  - 3701.4 W
+  - 2961.1 W
+  - 2.961 W
+  answer: C
+  solution: '**C.** q=εσA(Ts⁴−Tsur⁴)=2961.1 W. This is the governing result for the ty review of a polymerization
+    line project.'
+  id: CHEM-A-Q058
+- knowledge_area: Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - HT-2D-057-06
+  prompt: During a safety review of a feed-preparation system project, a heat exchanger has U=300 W/(m²·K), A=13
+    m², and LMTD=30 K. Find duty?
+  choices:
+  - 1.300 kW
+  - 117.0 kW
+  - 117000.0 kW
+  - 0.692 kW
+  answer: B
+  solution: '**B.** Q=UAΔTlm=300(13)(30)=117.0 kW. This is the governing result for the ty review of a feed-preparation
+    system project.'
+  id: CHEM-A-Q059
+- knowledge_area: Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - HT-2D-058-06
+  prompt: During a safety review of a product-drying line project, which change increases thermal resistance of
+    a plane wall?
+  choices:
+  - Increase thickness
+  - Increase thermal conductivity
+  - Increase area
+  - Decrease thickness
+  answer: A
+  solution: '**A.** R_cond=L/(kA); increasing L increases resistance. This is the governing result for the ty review
+    of a product-drying line project.'
+  id: CHEM-A-Q060
+- knowledge_area: Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - HT-2D-055-01
+  prompt: During a troubleshooting review of a pilot evaporator project, a plane wall has k=15 W/(m·K), area 0.5
+    m², thickness 0.02 m, and ΔT=65 K. Find steady conduction rate?
+  choices:
+  - 24.38 W
+  - 0.002 W
+  - 433.3 W
+  - 24375.0 W
+  answer: D
+  solution: '**D.** Q=kAΔT/L=24375.0 W. This is the governing result for the bleshooting review of a pilot evaporator
+    project.'
+  id: CHEM-A-Q061
+- knowledge_area: Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - HT-2D-055-02
+  prompt: During a troubleshooting review of a batch reactor project, convection coefficient is 80 W/(m²·K), area
+    is 2 m², and surface-fluid ΔT is 20 K. Find convection heat rate?
+  choices:
+  - 800.0 W
+  - 0.500 W
+  - 3200.0 W
+  - 3.200 W
+  answer: C
+  solution: '**C.** q=hAΔT=80(2)(20)=3200.0 W. This is the governing result for the bleshooting review of a batch
+    reactor project.'
+  id: CHEM-A-Q062
+- knowledge_area: Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - HT-2D-057-03
+  prompt: During a troubleshooting review of a solvent-recovery train project, a gray surface has ε=0.8, A=1.2 m²,
+    Ts=500 K, surroundings 300 K. Estimate net radiation?
+  choices:
+  - 3701.4 W
+  - 2961.1 W
+  - 2.961 W
+  - 0.000 W
+  answer: B
+  solution: '**B.** q=εσA(Ts⁴−Tsur⁴)=2961.1 W. This is the governing result for the bleshooting review of a solvent-recovery
+    train project.'
+  id: CHEM-A-Q063
+- knowledge_area: Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - HT-2D-057-06
+  prompt: During a troubleshooting review of a heat-exchanger network project, a heat exchanger has U=300 W/(m²·K),
+    A=18 m², and LMTD=30 K. Find duty?
+  choices:
+  - 162.0 kW
+  - 162000.0 kW
+  - 0.500 kW
+  - 1.800 kW
+  answer: A
+  solution: '**A.** Q=UAΔTlm=300(18)(30)=162.0 kW. This is the governing result for the bleshooting review of a
+    heat-exchanger network project.'
+  id: CHEM-A-Q064
+- knowledge_area: Mass Transfer and Separation
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-005-01
+  prompt: During a troubleshooting review of a wastewater neutralization unit project, a species diffuses with D=1.0e-09
+    m²/s through a concentration gradient of 200 mol/m⁴. Find |J| by Fick law?
+  choices:
+  - 2.00e-07 mol/(m²·s)
+  - 2.00e-06 mol/(m²·s)
+  - 2.00e-08 mol/(m²·s)
+  - 5.00e-12 mol/(m²·s)
+  answer: A
+  solution: '**A.** |J|=D|dC/dz|=1.0e-09(200)=2.00e-07 mol/(m²·s). This is the governing result for the bleshooting
+    review of a wastewater neutralization unit project.'
+  id: CHEM-A-Q065
+- knowledge_area: Mass Transfer and Separation
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-006-01
+  prompt: During a troubleshooting review of a compressed-gas system project, for VLE with K=1.60 and liquid mole
+    fraction x=0.20, find equilibrium vapor y?
+  choices:
+  - '0.125'
+  - '1.800'
+  - '0.200'
+  - '0.320'
+  answer: D
+  solution: '**D.** y*=Kx=1.60(0.20)=0.320. This is the governing result for the bleshooting review of a compressed-gas
+    system project.'
+  id: CHEM-A-Q066
+- knowledge_area: Mass Transfer and Separation
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-007-01
+  prompt: During a troubleshooting review of a distillation section project, increasing reflux ratio in a distillation
+    column generally does what to required stages for a fixed separation?
+  choices:
+  - Has no effect
+  - Makes VLE unnecessary
+  - Decreases required stages
+  - Increases required stages without limit
+  answer: C
+  solution: '**C.** More reflux increases internal contacting and typically reduces stage count, at the cost of
+    energy. This is the governing result for the bleshooting review of a distillation section project.'
+  id: CHEM-A-Q067
+- knowledge_area: Mass Transfer and Separation
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-008-01
+  prompt: During a troubleshooting review of a polymerization line project, which operation transfers a soluble
+    gas component into a liquid solvent?
+  choices:
+  - Filtration
+  - Absorption
+  - Distillation
+  - Crystallization
+  answer: B
+  solution: '**B.** Gas absorption transfers a solute from gas to liquid. This is the governing result for the bleshooting
+    review of a polymerization line project.'
+  id: CHEM-A-Q068
+- knowledge_area: Mass Transfer and Separation
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-005-02
+  prompt: During a troubleshooting review of a feed-preparation system project, a wet solid feed is 100 kg/h with
+    40 wt% water. A dryer removes 75% of the inlet water. Find water removed?
+  choices:
+  - 30.00 kg/h
+  - 75.00 kg/h
+  - 40.00 kg/h
+  - 10.00 kg/h
+  answer: A
+  solution: '**A.** Inlet water=40 kg/h; removed=0.75(40)=30.00 kg/h. This is the governing result for the bleshooting
+    review of a feed-preparation system project.'
+  id: CHEM-A-Q069
+- knowledge_area: Mass Transfer and Separation
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-006-02
+  prompt: During a troubleshooting review of a product-drying line project, for a membrane with higher permeability
+    to A than B, increasing selectivity αA/B most directly improves what?
+  choices:
+  - Feed flow measurement
+  - Boiling point
+  - Particle settling velocity
+  - Ability to separate A from B
+  answer: D
+  solution: '**D.** Membrane selectivity quantifies preferential transport and therefore separation capability.
+    This is the governing result for the bleshooting review of a product-drying line project.'
+  id: CHEM-A-Q070
+- knowledge_area: Mass Transfer and Separation
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-007-02
+  prompt: During a quality review of a pilot evaporator project, a species diffuses with D=1.0e-09 m²/s through
+    a concentration gradient of 260 mol/m⁴. Find |J| by Fick law?
+  choices:
+  - 2.60e-08 mol/(m²·s)
+  - 3.85e-12 mol/(m²·s)
+  - 2.60e-07 mol/(m²·s)
+  - 2.60e-06 mol/(m²·s)
+  answer: C
+  solution: '**C.** |J|=D|dC/dz|=1.0e-09(260)=2.60e-07 mol/(m²·s). This is the governing result for the ity review
+    of a pilot evaporator project.'
+  id: CHEM-A-Q071
+- knowledge_area: Mass Transfer and Separation
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-008-02
+  prompt: During a quality review of a batch reactor project, for VLE with K=1.60 and liquid mole fraction x=0.20,
+    find equilibrium vapor y?
+  choices:
+  - '0.200'
+  - '0.320'
+  - '0.125'
+  - '1.800'
+  answer: B
+  solution: '**B.** y*=Kx=1.60(0.20)=0.320. This is the governing result for the ity review of a batch reactor project.'
+  id: CHEM-A-Q072
+- knowledge_area: Mass Transfer and Separation
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-005-03
+  prompt: During a quality review of a solvent-recovery train project, increasing reflux ratio in a distillation
+    column generally does what to required stages for a fixed separation?
+  choices:
+  - Decreases required stages
+  - Increases required stages without limit
+  - Has no effect
+  - Makes VLE unnecessary
+  answer: A
+  solution: '**A.** More reflux increases internal contacting and typically reduces stage count, at the cost of
+    energy. This is the governing result for the ity review of a solvent-recovery train project.'
+  id: CHEM-A-Q073
+- knowledge_area: Solids Handling
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-009-01
+  prompt: During a quality review of a heat-exchanger network project, a screen retains particles larger than its
+    opening. Those retained particles are called
+  choices:
+  - Oversize
+  - Undersize
+  - Filtrate
+  - Mother liquor
+  answer: A
+  solution: '**A.** Particles retained on the screen are the oversize fraction. This is the governing result for
+    the ity review of a heat-exchanger network project.'
+  id: CHEM-A-Q074
+- knowledge_area: Solids Handling
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-009-02
+  prompt: During a quality review of a wastewater neutralization unit project, reducing particle size generally
+    increases which geometric property per unit mass?
+  choices:
+  - Particle density
+  - Crystal lattice constant
+  - Bulk temperature
+  - Specific surface area
+  answer: D
+  solution: '**D.** Smaller particles provide more surface area per unit mass. This is the governing result for
+    the ity review of a wastewater neutralization unit project.'
+  id: CHEM-A-Q075
+- knowledge_area: Solids Handling
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-009-03
+  prompt: During a quality review of a compressed-gas system project, crystallization from solution is promoted
+    when the solution becomes
+  choices:
+  - Strongly undersaturated
+  - Completely inert
+  - Supersaturated
+  - Exactly saturated only
+  answer: C
+  solution: '**C.** Supersaturation is the driving force for nucleation and crystal growth. This is the governing
+    result for the ity review of a compressed-gas system project.'
+  id: CHEM-A-Q076
+- knowledge_area: Chemical Reaction Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-010-01
+  prompt: During a quality review of a distillation section project, a first-order batch reaction has k=0.2 min⁻¹
+    and runs 5 min. Find fraction A remaining?
+  choices:
+  - '0.368'
+  - '0.632'
+  - '1.000'
+  - '2.718'
+  answer: A
+  solution: '**A.** C_A/C_A0=e^(−kt)=e^(−0.2×5)=0.368. This is the governing result for the ity review of a distillation
+    section project.'
+  id: CHEM-A-Q077
+- knowledge_area: Chemical Reaction Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-011-01
+  prompt: During a quality review of a polymerization line project, for rate r=k C_A² C_B, what is overall reaction
+    order?
+  choices:
+  - '1'
+  - '2'
+  - '4'
+  - '3'
+  answer: D
+  solution: '**D.** Overall order is the sum of concentration exponents: 2+1=3. This is the governing result for
+    the ity review of a polymerization line project.'
+  id: CHEM-A-Q078
+- knowledge_area: Chemical Reaction Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-010-02
+  prompt: During a quality review of a feed-preparation system project, arrhenius k=0.1 s⁻¹ at 300 K with E_a=50
+    kJ/mol. Estimate k at 330 K.
+  choices:
+  - 0.100 s⁻¹
+  - 0.062 s⁻¹
+  - 0.619 s⁻¹
+  - 0.110 s⁻¹
+  answer: C
+  solution: '**C.** k₂/k₁=exp[-E_a/R(1/T₂−1/T₁)], giving k₂=0.619 s⁻¹. This is the governing result for the ity
+    review of a feed-preparation system project.'
+  id: CHEM-A-Q079
+- knowledge_area: Chemical Reaction Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-011-02
+  prompt: During a quality review of a product-drying line project, for a CSTR, F_A0=10 mol/s, X=0.8, and −r_A=2
+    mol/(m³·s) at exit. Find reactor volume?
+  choices:
+  - 0.250 m³
+  - 4.000 m³
+  - 5.000 m³
+  - 1.000 m³
+  answer: B
+  solution: '**B.** CSTR design: V=F_A0 X/(−r_A)=10(0.8)/2=4.000 m³. This is the governing result for the ity review
+    of a product-drying line project.'
+  id: CHEM-A-Q080
+- knowledge_area: Chemical Reaction Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-010-03
+  prompt: During a debottlenecking review of a pilot evaporator project, a PFR design integral gives an average
+    effective 1/(−r_A) corresponding to −r_A≈1.5 mol/(m³·s) over X=0 to 0.75. With F_A0=8 mol/s, estimate volume?
+  choices:
+  - 4.000 m³
+  - 5.333 m³
+  - 1.333 m³
+  - 0.188 m³
+  answer: A
+  solution: '**A.** Using V≈F_A0 X/(−r_A,avg) gives 4.000 m³. This is the governing result for the ttlenecking review
+    of a pilot evaporator project.'
+  id: CHEM-A-Q081
+- knowledge_area: Chemical Reaction Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-011-03
+  prompt: During a debottlenecking review of a batch reactor project, a parallel-reaction system forms 50 mol desired
+    product and 10 mol undesired product. Find D/U selectivity?
+  choices:
+  - '0.200'
+  - '60.00'
+  - '0.833'
+  - '5.000'
+  answer: D
+  solution: '**D.** S_D/U=n_D/n_U=50/10=5.000. This is the governing result for the ttlenecking review of a batch
+    reactor project.'
+  id: CHEM-A-Q082
+- knowledge_area: Chemical Reaction Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-010-04
+  prompt: During a debottlenecking review of a solvent-recovery train project, at equilibrium for a reversible elementary
+    reaction, the net reaction rate is
+  choices:
+  - Equal to forward rate
+  - Infinite
+  - Zero
+  - Maximum
+  answer: C
+  solution: '**C.** At equilibrium forward and reverse rates are equal, so their difference is zero. This is the
+    governing result for the ttlenecking review of a solvent-recovery train project.'
+  id: CHEM-A-Q083
+- knowledge_area: Chemical Reaction Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-011-04
+  prompt: During a debottlenecking review of a heat-exchanger network project, a first-order batch reaction has
+    k=0.2 min⁻¹ and runs 6 min. Find fraction A remaining?
+  choices:
+  - '3.320'
+  - '0.301'
+  - '0.699'
+  - '1.200'
+  answer: B
+  solution: '**B.** C_A/C_A0=e^(−kt)=e^(−0.2×6)=0.301. This is the governing result for the ttlenecking review of
+    a heat-exchanger network project.'
+  id: CHEM-A-Q084
+- knowledge_area: Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-02
+  prompt: During a debottlenecking review of a wastewater neutralization unit project, a future cost of $10,000
+    occurs in 5 years at 8%/yr. Find present worth?
+  choices:
+  - $6805.8
+  - $14693.3
+  - $7142.9
+  - $10000.0
+  answer: A
+  solution: '**A.** P=F/(1+i)^n=10000/1.08^5=$6805.8. This is the governing result for the ttlenecking review of
+    a wastewater neutralization unit project.'
+  id: CHEM-A-Q085
+- knowledge_area: Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-005-01
+  prompt: During a debottlenecking review of a compressed-gas system project, $5,000 is invested at 6% annually
+    for 5 years. Find future worth?
+  choices:
+  - $6500.0
+  - $3736.3
+  - $5000.0
+  - $6691.1
+  answer: D
+  solution: '**D.** F=P(1+i)^n=5000(1.06)^5=$6691.1. This is the governing result for the ttlenecking review of
+    a compressed-gas system project.'
+  id: CHEM-A-Q086
+- knowledge_area: Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-005-04
+  prompt: During a debottlenecking review of a distillation section project, when comparing mutually exclusive alternatives
+    with equal service, the preferred present-worth alternative is generally the one with
+  choices:
+  - The longest life regardless of value
+  - The smallest interest rate written in its proposal
+  - The greatest net present worth
+  - The largest initial cost
+  answer: C
+  solution: '**C.** For consistent sign convention and equal service, maximize net present worth. This is the governing
+    result for the ttlenecking review of a distillation section project.'
+  id: CHEM-A-Q087
+- knowledge_area: Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-006-01
+  prompt: During a debottlenecking review of a polymerization line project, an effective annual rate differs from
+    a nominal rate primarily because it accounts for
+  choices:
+  - Project life only
+  - Compounding within the year
+  - Inflation only
+  - Taxes only
+  answer: B
+  solution: '**B.** Effective annual rate includes intra-year compounding. This is the governing result for the
+    ttlenecking review of a polymerization line project.'
+  id: CHEM-A-Q088
+- knowledge_area: Process Design
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-012-01
+  prompt: During a debottlenecking review of a feed-preparation system project, equipment costs $100,000 at capacity
+    100. Using exponent 0.6, estimate cost at capacity 200.
+  choices:
+  - $151571.7
+  - $200000.0
+  - $200000.0
+  - $65975.4
+  answer: A
+  solution: '**A.** C₂=C₁(S₂/S₁)^n=100000(2)^0.6=$151571.7. This is the governing result for the ttlenecking review
+    of a feed-preparation system project.'
+  id: CHEM-A-Q089
+- knowledge_area: Process Design
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-012-02
+  prompt: During a debottlenecking review of a product-drying line project, which drawing primarily shows major
+    process equipment and principal process streams?
+  choices:
+  - P&ID only
+  - Wiring diagram
+  - Site evacuation map
+  - Process flow diagram (PFD)
+  answer: D
+  solution: '**D.** A PFD summarizes major equipment and principal process streams. This is the governing result
+    for the ttlenecking review of a product-drying line project.'
+  id: CHEM-A-Q090
+- knowledge_area: Process Design
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-012-03
+  prompt: During a startup review of a pilot evaporator project, which drawing contains detailed piping, valves,
+    instruments, and control-loop identifiers?
+  choices:
+  - Plot plan only
+  - Equipment datasheet only
+  - Piping and instrumentation diagram (P&ID)
+  - Block flow diagram
+  answer: C
+  solution: '**C.** The P&ID documents piping, valves, instruments, and control relationships. This is the governing
+    result for the tup review of a pilot evaporator project.'
+  id: CHEM-A-Q091
+- knowledge_area: Process Design
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-012-04
+  prompt: During a startup review of a batch reactor project, geometric similarity during scale-up requires corresponding
+    length ratios to remain
+  choices:
+  - Independent of scale
+  - Constant
+  - Random
+  - Inversely proportional to density only
+  answer: B
+  solution: '**B.** Geometric similarity preserves ratios of corresponding dimensions. This is the governing result
+    for the tup review of a batch reactor project.'
+  id: CHEM-A-Q092
+- knowledge_area: Process Design
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-012-05
+  prompt: During a startup review of a solvent-recovery train project, a preliminary equipment estimate should explicitly
+    communicate what in addition to its central value?
+  choices:
+  - Expected uncertainty or accuracy range
+  - A guarantee of final cost
+  - No assumptions
+  - Only the vendor name
+  answer: A
+  solution: '**A.** Estimate class and uncertainty are essential for responsible screening decisions. This is the
+    governing result for the tup review of a solvent-recovery train project.'
+  id: CHEM-A-Q093
+- knowledge_area: Process Design
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-012-06
+  prompt: During a startup review of a heat-exchanger network project, when first sizing equipment, the controlling
+    design case should generally be selected from
+  choices:
+  - Average conditions only in every case
+  - The smallest observed load
+  - An arbitrary round number
+  - The credible case that governs required capacity or duty
+  answer: D
+  solution: '**D.** First-pass sizing should be tied to the governing credible design condition. This is the governing
+    result for the tup review of a heat-exchanger network project.'
+  id: CHEM-A-Q094
+- knowledge_area: Process Design
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-012-07
+  prompt: During a startup review of a wastewater neutralization unit project, equipment costs $100,000 at capacity
+    100. Using exponent 0.6, estimate cost at capacity 200.
+  choices:
+  - $200000.0
+  - $65975.4
+  - $151571.7
+  - $200000.0
+  answer: C
+  solution: '**C.** C₂=C₁(S₂/S₁)^n=100000(2)^0.6=$151571.7. This is the governing result for the tup review of a
+    wastewater neutralization unit project.'
+  id: CHEM-A-Q095
+- knowledge_area: Process Design
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-012-01
+  prompt: During a startup review of a compressed-gas system project, which drawing primarily shows major process
+    equipment and principal process streams?
+  choices:
+  - Site evacuation map
+  - Process flow diagram (PFD)
+  - P&ID only
+  - Wiring diagram
+  answer: B
+  solution: '**B.** A PFD summarizes major equipment and principal process streams. This is the governing result
+    for the tup review of a compressed-gas system project.'
+  id: CHEM-A-Q096
+- knowledge_area: Process Control
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-013-01
+  prompt: During a startup review of a distillation section project, which PID term responds to accumulated error
+    over time?
+  choices:
+  - Integral
+  - Proportional only
+  - Derivative
+  - Feedforward only
+  answer: A
+  solution: '**A.** Integral action accumulates error and drives steady-state offset toward zero. This is the governing
+    result for the tup review of a distillation section project.'
+  id: CHEM-A-Q097
+- knowledge_area: Process Control
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-013-02
+  prompt: During a startup review of a polymerization line project, feedforward control acts primarily on
+  choices:
+  - Only past error
+  - Unmeasured noise only
+  - Final product inspection only
+  - Measured disturbances
+  answer: D
+  solution: '**D.** Feedforward uses measured disturbances to anticipate their effect. This is the governing result
+    for the tup review of a polymerization line project.'
+  id: CHEM-A-Q098
+- knowledge_area: Process Control
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-013-03
+  prompt: During a startup review of a feed-preparation system project, cascade control uses a secondary loop mainly
+    to
+  choices:
+  - Replace the primary controller
+  - Guarantee zero process dead time
+  - Reject fast secondary disturbances before they propagate
+  - Eliminate all sensors
+  answer: C
+  solution: '**C.** A faster inner loop suppresses disturbances before they strongly affect the primary variable.
+    This is the governing result for the tup review of a feed-preparation system project.'
+  id: CHEM-A-Q099
+- knowledge_area: Process Control
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-013-04
+  prompt: During a startup review of a product-drying line project, a first-order process receives a unit step and
+    has time constant τ=8 min. What fraction of final change occurs at t=τ?
+  choices:
+  - '1.000'
+  - '0.632'
+  - '0.500'
+  - '0.865'
+  answer: B
+  solution: '**B.** For a first-order step response, y/y∞=1−e⁻¹=0.632. This is the governing result for the tup
+    review of a product-drying line project.'
+  id: CHEM-A-Q100
+- knowledge_area: Process Control
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-013-05
+  prompt: During a economic-screening review of a pilot evaporator project, a fail-closed control valve is preferred
+    when loss of air should
+  choices:
+  - Drive the valve closed
+  - Drive the valve fully open
+  - Freeze controller output only
+  - Increase process pressure
+  answer: A
+  solution: '**A.** Fail action is selected so loss of utility moves the process toward its safer state. This is
+    the governing result for the omic-screening review of a pilot evaporator project.'
+  id: CHEM-A-Q101
+- knowledge_area: Safety, Health, and Environment
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-013-01
+  prompt: During a economic-screening review of a batch reactor project, which control is generally preferred over
+    PPE when feasible?
+  choices:
+  - Engineering control
+  - Warning sign only
+  - Administrative reminder only
+  - No change
+  answer: A
+  solution: '**A.** Engineering controls reduce exposure at the source or along the path and rank above PPE. This
+    is the governing result for the omic-screening review of a batch reactor project.'
+  id: CHEM-A-Q102
+- knowledge_area: Safety, Health, and Environment
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-013-02
+  prompt: During a economic-screening review of a solvent-recovery train project, a vapor concentration below the
+    lower flammable limit is generally
+  choices:
+  - Too rich to burn
+  - At stoichiometric composition
+  - Guaranteed to detonate
+  - Too lean to sustain flame
+  answer: D
+  solution: '**D.** Below the LFL there is insufficient fuel for sustained flame propagation. This is the governing
+    result for the omic-screening review of a solvent-recovery train project.'
+  id: CHEM-A-Q103
+- knowledge_area: Safety, Health, and Environment
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-013-03
+  prompt: During a economic-screening review of a heat-exchanger network project, hAZOP primarily identifies hazards
+    by applying guide words to
+  choices:
+  - Only equipment purchase price
+  - Final exam scores
+  - Process parameters and design intent
+  - Payroll records
+  answer: C
+  solution: '**C.** HAZOP explores deviations from design intent using guide words and process parameters. This
+    is the governing result for the omic-screening review of a heat-exchanger network project.'
+  id: CHEM-A-Q104
+- knowledge_area: Safety, Health, and Environment
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-013-04
+  prompt: During a economic-screening review of a wastewater neutralization unit project, lOPA is used primarily
+    to estimate whether independent protection layers provide
+  choices:
+  - Perfect reliability
+  - Sufficient risk reduction
+  - Maximum production rate
+  - Minimum capital cost only
+  answer: B
+  solution: '**B.** LOPA estimates scenario frequency and credits independent protection layers to judge risk reduction.
+    This is the governing result for the omic-screening review of a wastewater neutralization unit project.'
+  id: CHEM-A-Q105
+- knowledge_area: Safety, Health, and Environment
+  question_type: multiple-choice
+  requires_concepts:
+  - CHE-3-013-05
+  prompt: During a economic-screening review of a compressed-gas system project, inerting a vessel with nitrogen
+    primarily reduces
+  choices:
+  - Oxygen concentration
+  - Fuel molecular weight
+  - Pipe diameter
+  - Heat capacity of steel
+  answer: A
+  solution: '**A.** Inerting lowers oxidizer concentration below that needed for combustion. This is the governing
+    result for the omic-screening review of a compressed-gas system project.'
+  id: CHEM-A-Q106
+- knowledge_area: Ethics and Professional Practice
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-01
+  prompt: During a economic-screening review of a distillation section project, when public safety conflicts with
+    an employer request, the engineer’s primary obligation is to
+  choices:
+  - Protect public health, safety, and welfare
+  - Protect the employer from embarrassment
+  - Approve the work if schedule is tight
+  - Remain silent in all cases
+  answer: A
+  solution: '**A.** Professional ethics place public welfare first. This is the governing result for the omic-screening
+    review of a distillation section project.'
+  id: CHEM-A-Q107
+- knowledge_area: Ethics and Professional Practice
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-02
+  prompt: During a economic-screening review of a polymerization line project, an engineer should accept an assignment
+    outside personal competence only when
+  choices:
+  - The client waives technical review
+  - No one else is available
+  - The fee is increased
+  - Qualified professionals cover the portions outside that competence
+  answer: D
+  solution: '**D.** Engineers must practice within competence and obtain qualified assistance for other portions.
+    This is the governing result for the omic-screening review of a polymerization line project.'
+  id: CHEM-A-Q108
+- knowledge_area: Ethics and Professional Practice
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-04
+  prompt: During a economic-screening review of a feed-preparation system project, a potential conflict of interest
+    should generally be
+  choices:
+  - Ignored if no law is cited
+  - Used to negotiate a higher fee
+  - Disclosed to affected parties
+  - Hidden unless discovered
+  answer: C
+  solution: '**C.** Material conflicts should be disclosed so affected parties can make informed decisions. This
+    is the governing result for the omic-screening review of a feed-preparation system project.'
+  id: CHEM-A-Q109
+- knowledge_area: Ethics and Professional Practice
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-05
+  prompt: During a economic-screening review of a product-drying line project, confidential client information may
+    be disclosed without permission when
+  choices:
+  - The project is profitable
+  - Required by law or necessary to protect public safety under applicable duties
+  - It is interesting to coworkers
+  - A competitor asks for it
+  answer: B
+  solution: '**B.** Confidentiality is important but can yield to legal requirements and overriding public-safety
+    duties. This is the governing result for the omic-screening review of a product-drying line project.'
+  id: CHEM-A-Q110
