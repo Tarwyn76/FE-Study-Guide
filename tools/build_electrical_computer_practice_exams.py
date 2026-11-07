@@ -283,6 +283,34 @@ GEN={"Mathematics":q_math,"Probability and Statistics":q_prob,"Ethics and Profes
 "Communications":q_comm,"Computer Networks":q_network,"Digital Systems":q_digital,
 "Computer Systems":q_computer,"Software Engineering":q_software}
 
+FORM_B_OVERRIDES={
+19:"A field engineer must select the ethically appropriate response to a professional-conflict scenario. Which action best satisfies the governing duty?",
+20:"A design review identifies a situation involving professional responsibility. Which response is most consistent with engineering ethics?",
+24:"A project team must compare alternative investments using equivalent-value methods. Which engineering-economy principle applies to the stated decision?",
+31:"A branch-current calculation is required for a resistive network under the stated source and resistance values. Determine the requested current.",
+33:"An AC network is operating at the stated frequency with a reactive element. Determine the requested impedance-related quantity.",
+36:"A first-order network is switched to a new source condition. Determine the requested transient parameter from the stated component values.",
+37:"A sinusoidal steady-state circuit must be checked for resonance behavior. Which condition characterizes the requested operating point?",
+38:"A circuit-analysis review requires identifying the appropriate theorem or network reduction for the stated source-load configuration.",
+39:"A system engineer is checking whether a linear time-invariant model satisfies the stated response property. Which system concept applies?",
+40:"A first-order dynamic model is represented by a single real pole. Determine the associated time-domain parameter from the pole location.",
+43:"A sampled-data design is being checked against its highest input frequency. Determine the minimum compliant sampling rate.",
+47:"An ADC interface is being reviewed for quantization capability. Determine the number of distinct ideal output codes from the stated resolution.",
+56:"A three-phase feeder supplies the stated balanced load. Determine the real power delivered from the line voltage, current, and power factor.",
+57:"A transformer design uses the stated primary and secondary turns. Determine the secondary voltage from the ideal turns-ratio relation.",
+59:"A feeder-loss check is required for the stated conductor resistance and phase current. Determine the total three-phase copper loss.",
+60:"An induction machine is evaluated at a particular rotor speed. Which condition corresponds to zero slip?",
+63:"A transmission-line check is required at the stated source frequency. Determine the free-space wavelength.",
+66:"A load is connected to a transmission line with the stated characteristic impedance. Determine the load reflection coefficient.",
+67:"A termination is selected for a transmission line. Which condition produces a matched line with zero reflection?",
+69:"A feedback loop is modeled by the stated forward-path gain and unity feedback. Determine the resulting closed-loop gain.",
+70:"A controller is being tuned to remove persistent offset. Which control action most directly addresses that objective?",
+78:"A digital communication link is evaluated for symbol efficiency. Determine the number of bits represented by each QPSK symbol.",
+87:"An IPv4 subnet is configured with the stated prefix length. Determine the conventional number of usable host addresses.",
+104:"A processor memory subsystem is being analyzed for latency reduction. What is the principal purpose of cache memory?",
+109:"A software routine searches an ordered array by repeatedly halving the remaining interval. State the corresponding worst-case time complexity.",
+}
+
 def build(form):
     b=next(x for x in BPS if x["discipline"]=="electrical-computer" and str(x["exam"]).upper()==form)
     items=[];serial=1
@@ -292,6 +320,8 @@ def build(form):
             q=GEN[area](j+(0 if form=="A" else 43),form)
             q["id"]=f"ECE-{form}-Q{serial:03d}"
             c=ctx(form,serial); p=q["prompt"];q["prompt"]=c+" "+p[0].lower()+p[1:]
+            if form=="B" and serial in FORM_B_OVERRIDES:
+                q["prompt"]=c+" "+FORM_B_OVERRIDES[serial]
             q["solution"]+=f" This result applies to the stated {c[len('During a '):-1]}."
             items.append(q);serial+=1
     assert len(items)==110
