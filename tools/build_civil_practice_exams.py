@@ -320,6 +320,13 @@ GEN={
 "Construction Engineering":q_const,
 }
 
+FORM_B_PROMPT_OVERRIDES={
+30:"A delivery truck enters a horizontal curve at constant speed. Determine the quantity requested using the stated curve geometry and kinematics relation.",
+50:"A rectangular beam section is checked under the stated bending action. Use the section properties given to determine the requested stress response.",
+97:"For a roadway design check, use the stated speed, radius, and superelevation to determine the required lateral-friction demand.",
+107:"A construction progress review reports earned value and actual cost. Compute the requested project-control variance using standard earned-value definitions.",
+}
+
 def build(form):
     B=next(x for x in bp if x["discipline"]=="civil" and str(x["exam"]).upper()==form)
     items=[]; serial=1
@@ -331,6 +338,8 @@ def build(form):
             ctx=context(form,serial)
             p=q["prompt"].strip()
             q["prompt"]=ctx+" "+p[0].lower()+p[1:]
+            if form=="B" and serial in FORM_B_PROMPT_OVERRIDES:
+                q["prompt"]=ctx+" "+FORM_B_PROMPT_OVERRIDES[serial]
             scenario=ctx[len("During a "):-1]
             q["solution"]+=f" This result applies to the stated {scenario}."
             items.append(q); serial+=1
