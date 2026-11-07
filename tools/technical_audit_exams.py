@@ -104,7 +104,7 @@ def extract_choices(item:dict)->list[str]:
     p=str(item.get("prompt",''))
     # Support both one-choice-per-line and compact forms such as
     # "A) foo  B) bar  C) baz  D) qux" used by some chapter banks.
-    matches=list(re.finditer(r"(?:^|\s)([A-D])[\)\.]\s*",p,re.M))
+    matches=list(re.finditer(r"(?:^|\\n|\\s{2,})([A-D])[\\)\\.]\\s+",p,re.M))
     out=[]
     for i,m in enumerate(matches):
         start=m.end(); end=matches[i+1].start() if i+1<len(matches) else len(p)
