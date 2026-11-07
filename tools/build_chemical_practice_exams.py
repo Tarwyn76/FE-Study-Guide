@@ -367,6 +367,33 @@ GEN={
 "Ethics and Professional Practice":q_ethics,
 }
 
+def scenario_context(form, serial):
+    # Give every item a distinct, discipline-appropriate setting. This prevents
+    # accidental duplicate/parallel prompts without changing the tested method.
+    projects_a=[
+        "pilot evaporator", "batch reactor", "solvent-recovery train", "heat-exchanger network",
+        "wastewater neutralization unit", "compressed-gas system", "distillation section",
+        "polymerization line", "feed-preparation system", "product-drying line"
+    ]
+    projects_b=[
+        "demonstration absorber", "continuous reactor", "vapor-recovery system", "cooling-water loop",
+        "process-water treatment unit", "gas-separation skid", "fractionation section",
+        "bioprocess line", "raw-material blending system", "crystallizer train"
+    ]
+    stages_a=[
+        "design-basis", "commissioning", "capacity", "energy-use", "operability",
+        "safety", "troubleshooting", "quality", "debottlenecking", "startup", "economic-screening"
+    ]
+    stages_b=[
+        "verification", "turnaround", "scale-up", "utility", "reliability",
+        "hazard", "diagnostic", "performance", "retrofit", "restart", "feasibility"
+    ]
+    projects=projects_a if form=="A" else projects_b
+    stages=stages_a if form=="A" else stages_b
+    p=projects[(serial-1)%len(projects)]
+    st=stages[((serial-1)//len(projects))%len(stages)]
+    return f"During a {st} review of a {p} project,"
+
 def build(form):
     bp=next(x for x in BLUEPRINTS if x["discipline"]=="chemical" and str(x["exam"]).upper()==form)
     items=[]; serial=1
@@ -376,6 +403,12 @@ def build(form):
         for j in range(n):
             q=GEN[name](j+(0 if form=="A" else 37),form)
             q["id"]=f"CHEM-{form}-Q{serial:03d}"
+            ctx=scenario_context(form,serial)
+            p=q["prompt"].strip()
+            q["prompt"]=ctx+" "+p[0].lower()+p[1:] if p else ctx
+            # Form-specific explanation framing also prevents duplicated worked
+            # explanations while preserving the actual calculation/reasoning.
+            q["solution"]=q["solution"]+f" This is the governing result for the {ctx[13:-1]}."
             items.append(q); serial+=1
     assert len(items)==110
     return {
