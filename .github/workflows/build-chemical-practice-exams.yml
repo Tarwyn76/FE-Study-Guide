@@ -26,8 +26,17 @@ jobs:
       - run: python -m pip install pyyaml
       - name: Build Chemical A and B
         run: python tools/build_chemical_practice_exams.py
-      - name: Audit exams
-        run: python tools/technical_audit_exams.py . --outdir audit-results/exams --allow-incomplete
+      - name: Audit exams and print findings
+        run: |
+          set +e
+          python tools/technical_audit_exams.py . --outdir audit-results/exams --allow-incomplete
+          rc=$?
+          latest=$(ls -1t audit-results/exams/Exam-Audit-Issues*.csv | head -1)
+          echo "===== AUDIT ISSUES ====="
+          cat "$latest"
+          echo "===== END AUDIT ISSUES ====="
+          echo "$rc" > audit-results/exams/.audit-exit-code
+          exit 0
       - name: Commit exam pair
         run: |
           git config user.name "ChatGPT Exam Builder"
@@ -35,6 +44,10 @@ jobs:
           git add appendices/practice-exams/chemical-practice-a.yaml appendices/practice-exams/chemical-practice-a.md
           git add appendices/practice-exams/chemical-practice-b.yaml appendices/practice-exams/chemical-practice-b.md
           git add audit-results/exams
+          if [ "$(cat audit-results/exams/.audit-exit-code)" != "0" ]; then
+            echo "Audit has blockers; do not commit generated exams."
+            exit 1
+          fi
           if git diff --cached --quiet; then
             echo "No changes."
             exit 0
