@@ -28,7 +28,7 @@ items:
   prompt: During a design-basis review of a batch reactor project, for y=x²+3x, evaluate dy/dx at x=3.
   choices:
   - '6'
-  - 6 under an invalid assumption
+  - '8.34'
   - '18'
   - '9'
   answer: D
@@ -41,7 +41,7 @@ items:
   prompt: During a design-basis review of a solvent-recovery train project, evaluate ∫_1^3 4x dx.
   choices:
   - '20.00'
-  - 8.000 under an invalid assumption
+  - '12.000'
   - '16.00'
   - '8.000'
   answer: C
@@ -189,7 +189,7 @@ items:
   prompt: During a commissioning review of a solvent-recovery train project, pressure of 240 kPa acts uniformly
     on area 0.010 m². Find force.
   choices:
-  - 2.400 N under an invalid assumption
+  - 3.336 N
   - 24000.0 N
   - 2400.0 N
   - 2.400 N
@@ -235,7 +235,7 @@ items:
     under 110 MPa stress, find strain.
   choices:
   - '0.550'
-  - 0.550 under an invalid assumption
+  - '0.764'
   - '1.818'
   - '0.001'
   answer: D
@@ -447,7 +447,7 @@ items:
   - 6.400 kW
   - 4.800 kW
   - 3.600 kW
-  - 3.600 kW under an invalid assumption
+  - 5.004 kW
   answer: B
   solution: '**B.** Pshaft=ΔpQ/η=180000(0.020)/0.75=4.800 kW. This result applies to the stated capacity review
     of a product-drying line project.'
@@ -521,7 +521,7 @@ items:
   choices:
   - 6.133 kW
   - 4.600 kW
-  - 4.600 kW under an invalid assumption
+  - 6.394 kW
   - 8.178 kW
   answer: A
   solution: '**A.** Pshaft=ΔpQ/η=230000(0.020)/0.75=6.133 kW. This result applies to the stated energy-use review
@@ -624,7 +624,7 @@ items:
   prompt: During a operability review of a batch reactor project, a saturated mixture has quality x=0.50, vf=0.001
     m³/kg, vg=0.900 m³/kg. Find specific volume?
   choices:
-  - 0.450 m³/kg under an invalid assumption
+  - 0.625 m³/kg
   - 0.899 m³/kg
   - 0.451 m³/kg
   - 0.450 m³/kg
@@ -1332,7 +1332,7 @@ items:
   choices:
   - $151571.7
   - $200000.0
-  - $200000.0 under an invalid assumption
+  - $278000.0
   - $65975.4
   answer: A
   solution: '**A.** C₂=C₁(S₂/S₁)^n=100000(2)^0.6=$151571.7. This result applies to the stated debottlenecking review
@@ -1420,7 +1420,7 @@ items:
   prompt: During a startup review of a wastewater neutralization unit project, equipment costs $100,000 at capacity
     100. Using exponent 0.6, estimate cost at capacity 200.
   choices:
-  - $200000.0 under an invalid assumption
+  - $278000.0
   - $65975.4
   - $151571.7
   - $200000.0

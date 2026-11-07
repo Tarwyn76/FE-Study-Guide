@@ -24,7 +24,7 @@ D) 3.667
 During a design-basis review of a batch reactor project, for y=x²+3x, evaluate dy/dx at x=3.
 
 A) 6
-B) 6 under an invalid assumption
+B) 8.34
 C) 18
 D) 9
 
@@ -33,7 +33,7 @@ D) 9
 During a design-basis review of a solvent-recovery train project, evaluate ∫_1^3 4x dx.
 
 A) 20.00
-B) 8.000 under an invalid assumption
+B) 12.000
 C) 16.00
 D) 8.000
 
@@ -122,7 +122,7 @@ D) 286.0 N·m
 
 During a commissioning review of a solvent-recovery train project, pressure of 240 kPa acts uniformly on area 0.010 m². Find force.
 
-A) 2.400 N under an invalid assumption
+A) 3.336 N
 B) 24000.0 N
 C) 2400.0 N
 D) 2.400 N
@@ -150,7 +150,7 @@ D) 0.100 MPa
 During a commissioning review of a compressed-gas system project, for an elastic material with E=200 GPa under 110 MPa stress, find strain.
 
 A) 0.550
-B) 0.550 under an invalid assumption
+B) 0.764
 C) 1.818
 D) 0.001
 
@@ -278,7 +278,7 @@ During a capacity review of a product-drying line project, a pump raises pressur
 A) 6.400 kW
 B) 4.800 kW
 C) 3.600 kW
-D) 3.600 kW under an invalid assumption
+D) 5.004 kW
 
 ### 31
 
@@ -322,7 +322,7 @@ During a energy-use review of a wastewater neutralization unit project, a pump r
 
 A) 6.133 kW
 B) 4.600 kW
-C) 4.600 kW under an invalid assumption
+C) 6.394 kW
 D) 8.178 kW
 
 ### 36
@@ -383,7 +383,7 @@ D) 301.4 kPa
 
 During a operability review of a batch reactor project, a saturated mixture has quality x=0.50, vf=0.001 m³/kg, vg=0.900 m³/kg. Find specific volume?
 
-A) 0.450 m³/kg under an invalid assumption
+A) 0.625 m³/kg
 B) 0.899 m³/kg
 C) 0.451 m³/kg
 D) 0.450 m³/kg
@@ -808,7 +808,7 @@ During a debottlenecking review of a feed-preparation system project, equipment 
 
 A) $151571.7
 B) $200000.0
-C) $200000.0 under an invalid assumption
+C) $278000.0
 D) $65975.4
 
 ### 90
@@ -860,7 +860,7 @@ D) The credible case that governs required capacity or duty
 
 During a startup review of a wastewater neutralization unit project, equipment costs $100,000 at capacity 100. Using exponent 0.6, estimate cost at capacity 200.
 
-A) $200000.0 under an invalid assumption
+A) $278000.0
 B) $65975.4
 C) $151571.7
 D) $200000.0

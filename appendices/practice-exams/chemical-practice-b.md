@@ -15,7 +15,7 @@ Work the questions in sequence. Mark uncertain items and return to them after co
 During a verification review of a demonstration absorber project, for y=x²+3x, find the slope when x=3.
 
 A) 6
-B) 6 under an invalid assumption
+B) 8.34
 C) 18
 D) 9
 
@@ -24,7 +24,7 @@ D) 9
 During a verification review of a continuous reactor project, compute the definite integral ∫_1^3 4x dx.
 
 A) 20.00
-B) 8.000 under an invalid assumption
+B) 12.000
 C) 16.00
 D) 8.000
 
@@ -122,7 +122,7 @@ D) 1078.0 N·m
 
 During a turnaround review of a vapor-recovery system project, pressure of 960 kPa acts uniformly on area 0.010 m². Determine resultant normal force.
 
-A) 9.600 N under an invalid assumption
+A) 13.344 N
 B) 96000.0 N
 C) 9600.0 N
 D) 9.600 N
@@ -186,7 +186,7 @@ D) 0.025 MPa
 During a turnaround review of a crystallizer train project, for an elastic material with E=200 GPa under 510 MPa stress, calculate elastic strain.
 
 A) 2.550
-B) 2.550 under an invalid assumption
+B) 3.544
 C) 0.392
 D) 0.003
 
@@ -266,7 +266,7 @@ D) 0.031 m³/s
 
 During a scale-up review of a raw-material blending system project, a pump raises pressure by 530 kPa at 0.020 m³/s with efficiency 0.75. Determine required input power.
 
-A) 10.60 kW under an invalid assumption
+A) 14.73 kW
 B) 18.84 kW
 C) 14.13 kW
 D) 10.60 kW
@@ -314,7 +314,7 @@ During a utility review of a cooling-water loop project, a pump raises pressure 
 A) 20.62 kW
 B) 15.47 kW
 C) 11.60 kW
-D) 11.60 kW under an invalid assumption
+D) 16.12 kW
 
 ### 35
 
@@ -449,7 +449,7 @@ During a reliability review of a raw-material blending system project, a liquid 
 A) 480.0 kW
 B) 0.480 kW
 C) 120.0 kW
-D) 120.0 kW under an invalid assumption
+D) 180.0 kW
 
 ### 50
 
@@ -869,7 +869,7 @@ D) The credible case that governs required capacity or duty
 
 During a restart review of a gas-separation skid project, equipment costs $100,000 at capacity 100. Using exponent 0.6, scale the equipment cost to 200.
 
-A) $200000.0 under an invalid assumption
+A) $278000.0
 B) $65975.4
 C) $151571.7
 D) $200000.0

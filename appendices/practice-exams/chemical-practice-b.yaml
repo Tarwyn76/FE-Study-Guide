@@ -14,7 +14,7 @@ items:
   prompt: During a verification review of a demonstration absorber project, for y=x²+3x, find the slope when x=3.
   choices:
   - '6'
-  - 6 under an invalid assumption
+  - '8.34'
   - '18'
   - '9'
   answer: D
@@ -28,7 +28,7 @@ items:
   prompt: During a verification review of a continuous reactor project, compute the definite integral ∫_1^3 4x dx.
   choices:
   - '20.00'
-  - 8.000 under an invalid assumption
+  - '12.000'
   - '16.00'
   - '8.000'
   answer: C
@@ -189,7 +189,7 @@ items:
   prompt: During a turnaround review of a vapor-recovery system project, pressure of 960 kPa acts uniformly on area
     0.010 m². Determine resultant normal force.
   choices:
-  - 9.600 N under an invalid assumption
+  - 13.344 N
   - 96000.0 N
   - 9600.0 N
   - 9.600 N
@@ -295,7 +295,7 @@ items:
     510 MPa stress, calculate elastic strain.
   choices:
   - '2.550'
-  - 2.550 under an invalid assumption
+  - '3.544'
   - '0.392'
   - '0.003'
   answer: D
@@ -429,7 +429,7 @@ items:
   prompt: During a scale-up review of a raw-material blending system project, a pump raises pressure by 530 kPa
     at 0.020 m³/s with efficiency 0.75. Determine required input power.
   choices:
-  - 10.60 kW under an invalid assumption
+  - 14.73 kW
   - 18.84 kW
   - 14.13 kW
   - 10.60 kW
@@ -507,7 +507,7 @@ items:
   - 20.62 kW
   - 15.47 kW
   - 11.60 kW
-  - 11.60 kW under an invalid assumption
+  - 16.12 kW
   answer: B
   solution: '**B.** Pshaft=ΔpQ/η=580000(0.020)/0.75=15.47 kW. This result applies to the stated utility review of
     a cooling-water loop project.'
@@ -733,7 +733,7 @@ items:
   - 480.0 kW
   - 0.480 kW
   - 120.0 kW
-  - 120.0 kW under an invalid assumption
+  - 180.0 kW
   answer: A
   solution: '**A.** Q̇=ṁcpΔT=4(4.0)(30)=480.0 kW. This result applies to the stated reliability review of a raw-material
     blending system project.'
@@ -1436,7 +1436,7 @@ items:
   prompt: During a restart review of a gas-separation skid project, equipment costs $100,000 at capacity 100. Using
     exponent 0.6, scale the equipment cost to 200.
   choices:
-  - $200000.0 under an invalid assumption
+  - $278000.0
   - $65975.4
   - $151571.7
   - $200000.0
