@@ -284,6 +284,7 @@ GEN={"Mathematics":q_math,"Probability and Statistics":q_prob,"Ethics and Profes
 "Computer Systems":q_computer,"Software Engineering":q_software}
 
 FORM_B_OVERRIDES={
+27:"A capital-allocation review compares alternatives with different future cash-flow timing. Apply the stated interest rate to determine the requested equivalent-value result before selecting among the options.",
 19:"A field engineer must select the ethically appropriate response to a professional-conflict scenario. Which action best satisfies the governing duty?",
 20:"A design review identifies a situation involving professional responsibility. Which response is most consistent with engineering ethics?",
 24:"A project team must compare alternative investments using equivalent-value methods. Which engineering-economy principle applies to the stated decision?",
