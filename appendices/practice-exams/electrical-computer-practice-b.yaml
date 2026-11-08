@@ -1,0 +1,1590 @@
+schema_version: 1
+exam_type: practice-B
+discipline: electrical-computer
+exam: B
+question_count: 110
+appointment_minutes: 355
+working_time_minutes: 320
+blueprint_source: meta/exam-blueprints.yaml
+items:
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1C-019-04
+  prompt: During a design review of a microcontroller system, find the magnitude of z=6+j4.
+  choices:
+  - '24.00'
+  - '7.211'
+  - '10.00'
+  - '2.000'
+  answer: B
+  solution: '**B.** |z|=sqrt(6²+4²)=7.211. This result applies to the stated design review of a microcontroller
+    system.'
+  id: ECE-B-Q001
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1C-019-05
+  prompt: During a design review of a test-instrument system, find det([[2,1],[1,3]]).
+  choices:
+  - '5'
+  - '6'
+  - '4'
+  - '3'
+  answer: A
+  solution: '**A.** det=2(3)-1(1)=5. This result applies to the stated design review of a test-instrument system.'
+  id: ECE-B-Q002
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1C-023-01
+  prompt: During a design review of a campus-network system, evaluate ∫_0^2 2x dx.
+  choices:
+  - '5.240'
+  - '2.000'
+  - '6.000'
+  - '4.000'
+  answer: D
+  solution: '**D.** Integral=x², so result=4.000. This result applies to the stated design review of a campus-network
+    system.'
+  id: ECE-B-Q003
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1C-023-02
+  prompt: During a design review of a substation system, convert f=56 Hz to angular frequency.
+  choices:
+  - 175.9 rad/s
+  - 703.7 rad/s
+  - 351.9 rad/s
+  - 56.00 rad/s
+  answer: C
+  solution: '**C.** ω=2πf=351.9 rad/s. This result applies to the stated design review of a substation system.'
+  id: ECE-B-Q004
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1C-023-03
+  prompt: During a design review of a measurement-front-end system, evaluate log₂(8).
+  choices:
+  - '8.000'
+  - '3.000'
+  - '2.000'
+  - '4.000'
+  answer: B
+  solution: '**B.** 2³=8, so log₂8=3. This result applies to the stated design review of a measurement-front-end
+    system.'
+  id: ECE-B-Q005
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1C-023-04
+  prompt: During a design review of a telemetry-link system, for y=3x²+2x, find dy/dx at x=2.
+  choices:
+  - '14'
+  - '8'
+  - '16'
+  - '12'
+  answer: A
+  solution: '**A.** dy/dx=6x+2=14. This result applies to the stated design review of a telemetry-link system.'
+  id: ECE-B-Q006
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1C-023-05
+  prompt: During a design review of a DC-converter system, find the magnitude of z=4+j4.
+  choices:
+  - '8.000'
+  - '0.000'
+  - '16.00'
+  - '5.657'
+  answer: D
+  solution: '**D.** |z|=sqrt(4²+4²)=5.657. This result applies to the stated design review of a DC-converter system.'
+  id: ECE-B-Q007
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1C-023-06
+  prompt: During a design review of a control-cabinet system, find det([[2,1],[1,3]]).
+  choices:
+  - '4'
+  - '3'
+  - '5'
+  - '6'
+  answer: C
+  solution: '**C.** det=2(3)-1(1)=5. This result applies to the stated design review of a control-cabinet system.'
+  id: ECE-B-Q008
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1C-023-07
+  prompt: During a design review of a FPGA-controller system, evaluate ∫_0^2 2x dx.
+  choices:
+  - '6.000'
+  - '4.000'
+  - '5.240'
+  - '2.000'
+  answer: B
+  solution: '**B.** Integral=x², so result=4.000. This result applies to the stated design review of a FPGA-controller
+    system.'
+  id: ECE-B-Q009
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-001-01
+  prompt: During a verification review of a servo-drive system, convert f=62 Hz to angular frequency.
+  choices:
+  - 389.6 rad/s
+  - 62.00 rad/s
+  - 194.8 rad/s
+  - 779.1 rad/s
+  answer: A
+  solution: '**A.** ω=2πf=389.6 rad/s. This result applies to the stated verification review of a servo-drive system.'
+  id: ECE-B-Q010
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-001-02
+  prompt: During a verification review of a microcontroller system, evaluate log₂(8).
+  choices:
+  - '2.000'
+  - '4.000'
+  - '8.000'
+  - '3.000'
+  answer: D
+  solution: '**D.** 2³=8, so log₂8=3. This result applies to the stated verification review of a microcontroller
+    system.'
+  id: ECE-B-Q011
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-001-03
+  prompt: During a verification review of a test-instrument system, for y=3x²+2x, find dy/dx at x=4.
+  choices:
+  - '56'
+  - '24'
+  - '26'
+  - '14'
+  answer: C
+  solution: '**C.** dy/dx=6x+2=26. This result applies to the stated verification review of a test-instrument system.'
+  id: ECE-B-Q012
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-002-01
+  prompt: During a verification review of a campus-network system, find the magnitude of z=6+j4.
+  choices:
+  - '24.00'
+  - '7.211'
+  - '10.00'
+  - '2.000'
+  answer: B
+  solution: '**B.** |z|=sqrt(6²+4²)=7.211. This result applies to the stated verification review of a campus-network
+    system.'
+  id: ECE-B-Q013
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-030-02
+  prompt: During a verification review of a substation system, if events A and B are independent, P(A∩B) equals
+  choices:
+  - 0 always
+  - P(A)P(B)
+  - P(A)+P(B)
+  - P(A)-P(B)
+  answer: B
+  solution: '**B.** Independence gives P(A∩B)=P(A)P(B). This result applies to the stated verification review of
+    a substation system.'
+  id: ECE-B-Q014
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-030-03
+  prompt: During a verification review of a measurement-front-end system, independent packet error probability is
+    0.14. For 5 packets, find probability of no errors.
+  choices:
+  - '0.470'
+  - '0.530'
+  - '0.000'
+  - '0.700'
+  answer: A
+  solution: '**A.** P=(1-p)^n=0.470. This result applies to the stated verification review of a measurement-front-end
+    system.'
+  id: ECE-B-Q015
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-030-04
+  prompt: During a verification review of a telemetry-link system, a normal variable has μ=10, σ=2. Find z for x=14.
+  choices:
+  - '1.000'
+  - '4.000'
+  - '7.000'
+  - '2.000'
+  answer: D
+  solution: '**D.** z=(14-10)/2=2. This result applies to the stated verification review of a telemetry-link system.'
+  id: ECE-B-Q016
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-030-05
+  prompt: During a verification review of a DC-converter system, find the mean of [2, 4, 6, 8].
+  choices:
+  - '4.000'
+  - '20.00'
+  - '5.000'
+  - '6.000'
+  answer: C
+  solution: '**C.** Mean=sum/4=5.000. This result applies to the stated verification review of a DC-converter system.'
+  id: ECE-B-Q017
+- knowledge_area: Ethics and Professional Practice
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-02
+  prompt: During a verification review of a control-cabinet system, which action best satisfies professional engineering
+    obligations?
+  choices:
+  - conceal it from reviewers
+  - correct or report a material technical error
+  - leave it unchanged
+  - delete records
+  answer: B
+  solution: '**B.** Material errors that affect safety or decisions must be addressed. This result applies to the
+    stated verification review of a control-cabinet system.'
+  id: ECE-B-Q018
+- knowledge_area: Ethics and Professional Practice
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-03
+  prompt: During a verification review of a FPGA-controller system, A field engineer must select the ethically appropriate
+    response to a professional-conflict scenario. Which action best satisfies the governing duty?
+  choices:
+  - protect public health, safety, and welfare
+  - protect schedule first
+  - conceal material hazards
+  - approve outside competence
+  answer: A
+  solution: '**A.** Public welfare is the engineer''s paramount obligation. This result applies to the stated verification
+    review of a FPGA-controller system.'
+  id: ECE-B-Q019
+- knowledge_area: Ethics and Professional Practice
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-04
+  prompt: During a commissioning review of a servo-drive system, A design review identifies a situation involving
+    professional responsibility. Which response is most consistent with engineering ethics?
+  choices:
+  - hide it if profitable
+  - ignore it
+  - transfer it to a vendor
+  - disclose a material conflict of interest
+  answer: D
+  solution: '**D.** Material conflicts must be disclosed to affected parties. This result applies to the stated
+    commissioning review of a servo-drive system.'
+  id: ECE-B-Q020
+- knowledge_area: Ethics and Professional Practice
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-05
+  prompt: During a commissioning review of a microcontroller system, which action best satisfies professional engineering
+    obligations?
+  choices:
+  - avoid peer review
+  - accept all assignments
+  - practice only within competence
+  - seal any work requested
+  answer: C
+  solution: '**C.** Engineers must perform services only in areas of competence. This result applies to the stated
+    commissioning review of a microcontroller system.'
+  id: ECE-B-Q021
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-02
+  prompt: During a commissioning review of a test-instrument system, $10,000 invested at 6% for 4 years grows to
+    what future worth?
+  choices:
+  - $12400.0
+  - $12624.8
+  - $10000.0
+  - $7920.9
+  answer: B
+  solution: '**B.** F=P(1+i)^n=$12624.8. This result applies to the stated commissioning review of a test-instrument
+    system.'
+  id: ECE-B-Q022
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-03
+  prompt: During a commissioning review of a campus-network system, for mutually exclusive equal-service alternatives,
+    the present-worth rule generally selects
+  choices:
+  - the greatest net present worth
+  - the highest first cost
+  - the longest life regardless of value
+  - the lowest nominal interest rate
+  answer: A
+  solution: '**A.** Use consistent cash-flow signs and maximize net present worth. This result applies to the stated
+    commissioning review of a campus-network system.'
+  id: ECE-B-Q023
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-04
+  prompt: During a commissioning review of a substation system, A project team must compare alternative investments
+    using equivalent-value methods. Which engineering-economy principle applies to the stated decision?
+  choices:
+  - $60000.0
+  - $84153.1
+  - $44444.4
+  - $42779.2
+  answer: D
+  solution: '**D.** P=F/(1.07)^5=$42779.2. This result applies to the stated commissioning review of a substation
+    system.'
+  id: ECE-B-Q024
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-05
+  prompt: During a commissioning review of a measurement-front-end system, $10,000 invested at 6% for 4 years grows
+    to what future worth?
+  choices:
+  - $7920.9
+  - $12400.0
+  - $12624.8
+  - $10000.0
+  answer: C
+  solution: '**C.** F=P(1+i)^n=$12624.8. This result applies to the stated commissioning review of a measurement-front-end
+    system.'
+  id: ECE-B-Q025
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-06
+  prompt: During a commissioning review of a telemetry-link system, for mutually exclusive equal-service alternatives,
+    the present-worth rule generally selects
+  choices:
+  - the lowest nominal interest rate
+  - the greatest net present worth
+  - the highest first cost
+  - the longest life regardless of value
+  answer: B
+  solution: '**B.** Use consistent cash-flow signs and maximize net present worth. This result applies to the stated
+    commissioning review of a telemetry-link system.'
+  id: ECE-B-Q026
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-07
+  prompt: During a commissioning review of a DC-converter system, A capital-allocation review compares alternatives
+    with different future cash-flow timing. Apply the stated interest rate to determine the requested equivalent-value
+    result before selecting among the options.
+  choices:
+  - $44918.1
+  - $63000.0
+  - $88360.8
+  - $46666.7
+  answer: A
+  solution: '**A.** P=F/(1.07)^5=$44918.1. This result applies to the stated commissioning review of a DC-converter
+    system.'
+  id: ECE-B-Q027
+- knowledge_area: Properties of Electrical Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-031-02
+  prompt: During a commissioning review of a control-cabinet system, increasing semiconductor temperature generally
+    increases intrinsic carrier concentration
+  choices:
+  - without changing conductivity
+  - strongly
+  - to exactly zero
+  - only if externally illuminated
+  answer: B
+  solution: '**B.** Thermal generation increases intrinsic carrier concentration. This result applies to the stated
+    commissioning review of a control-cabinet system.'
+  id: ECE-B-Q028
+- knowledge_area: Properties of Electrical Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-031-03
+  prompt: During a commissioning review of a FPGA-controller system, a conductor has ρ=1.7×10⁻⁸ Ω·m, L=20 m, A=2
+    mm². Find resistance.
+  choices:
+  - 0.170 Ω
+  - 0.340 Ω
+  - 0.085 Ω
+  - 0.000 Ω
+  answer: A
+  solution: '**A.** R=ρL/A=0.170 Ω. This result applies to the stated commissioning review of a FPGA-controller
+    system.'
+  id: ECE-B-Q029
+- knowledge_area: Properties of Electrical Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-031-04
+  prompt: During a fault-analysis review of a servo-drive system, doping silicon with a group-V donor creates predominantly
+  choices:
+  - p-type material
+  - intrinsic material
+  - perfect insulator
+  - n-type material
+  answer: D
+  solution: '**D.** Donors contribute majority electrons, producing n-type material. This result applies to the
+    stated fault-analysis review of a servo-drive system.'
+  id: ECE-B-Q030
+- knowledge_area: Properties of Electrical Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-031-05
+  prompt: During a fault-analysis review of a microcontroller system, A branch-current calculation is required for
+    a resistive network under the stated source and resistance values. Determine the requested current.
+  choices:
+  - photons
+  - neutrons
+  - holes
+  - electrons
+  answer: C
+  solution: '**C.** Acceptor doping creates holes as majority carriers. This result applies to the stated fault-analysis
+    review of a microcontroller system.'
+  id: ECE-B-Q031
+- knowledge_area: Circuit Analysis (DC and AC Steady State)
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-060-02
+  prompt: During a fault-analysis review of a test-instrument system, find equivalent resistance of 10 Ω in parallel
+    with 20 Ω.
+  choices:
+  - 2.000 Ω
+  - 6.667 Ω
+  - 30.00 Ω
+  - 15.00 Ω
+  answer: B
+  solution: '**B.** Req=R1R2/(R1+R2)=6.667 Ω. This result applies to the stated fault-analysis review of a test-instrument
+    system.'
+  id: ECE-B-Q032
+- knowledge_area: Circuit Analysis (DC and AC Steady State)
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-060-03
+  prompt: During a fault-analysis review of a campus-network system, An AC network is operating at the stated frequency
+    with a reactive element. Determine the requested impedance-related quantity.
+  choices:
+  - 8.000 V
+  - 2.000 V
+  - 10.00 V
+  - 4.000 V
+  answer: A
+  solution: '**A.** Vo=V R2/(R1+R2)=8.000 V. This result applies to the stated fault-analysis review of a campus-network
+    system.'
+  id: ECE-B-Q033
+- knowledge_area: Circuit Analysis (DC and AC Steady State)
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-060-04
+  prompt: During a fault-analysis review of a substation system, at 1 kHz, find |Xc| for C=1 μF.
+  choices:
+  - 0.006 Ω
+  - 79.58 Ω
+  - 318.3 Ω
+  - 159.2 Ω
+  answer: D
+  solution: '**D.** |Xc|=1/(2πfC)=159.2 Ω. This result applies to the stated fault-analysis review of a substation
+    system.'
+  id: ECE-B-Q034
+- knowledge_area: Circuit Analysis (DC and AC Steady State)
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-060-05
+  prompt: During a fault-analysis review of a measurement-front-end system, a 30 Ω resistor is connected to 120
+    V rms. Find real power.
+  choices:
+  - 3600.0 W
+  - 240.0 W
+  - 480.0 W
+  - 4.000 W
+  answer: C
+  solution: '**C.** P=V²/R=480.0 W. This result applies to the stated fault-analysis review of a measurement-front-end
+    system.'
+  id: ECE-B-Q035
+- knowledge_area: Circuit Analysis (DC and AC Steady State)
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-060-06
+  prompt: During a fault-analysis review of a telemetry-link system, A first-order network is switched to a new
+    source condition. Determine the requested transient parameter from the stated component values.
+  choices:
+  - 1000000000.0 s
+  - 0.100 s
+  - 1.000 s
+  - 0.010 s
+  answer: B
+  solution: '**B.** τ=RC=0.100 s. This result applies to the stated fault-analysis review of a telemetry-link system.'
+  id: ECE-B-Q036
+- knowledge_area: Circuit Analysis (DC and AC Steady State)
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-060-07
+  prompt: During a fault-analysis review of a DC-converter system, A sinusoidal steady-state circuit must be checked
+    for resonance behavior. Which condition characterizes the requested operating point?
+  choices:
+  - zero
+  - maximum inductive
+  - maximum capacitive
+  - equal to resistance
+  answer: A
+  solution: '**A.** At resonance XL=XC, so net reactance cancels. This result applies to the stated fault-analysis
+    review of a DC-converter system.'
+  id: ECE-B-Q037
+- knowledge_area: Circuit Analysis (DC and AC Steady State)
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-061-01
+  prompt: During a fault-analysis review of a control-cabinet system, A circuit-analysis review requires identifying
+    the appropriate theorem or network reduction for the stated source-load configuration.
+  choices:
+  - 366.0 A
+  - 0.098 A
+  - 5.083 A
+  - 10.17 A
+  answer: D
+  solution: '**D.** I=V/R=10.17 A. This result applies to the stated fault-analysis review of a control-cabinet
+    system.'
+  id: ECE-B-Q038
+- knowledge_area: Circuit Analysis (DC and AC Steady State)
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-061-02
+  prompt: During a fault-analysis review of a FPGA-controller system, A system engineer is checking whether a linear
+    time-invariant model satisfies the stated response property. Which system concept applies?
+  choices:
+  - 15.00 Ω
+  - 2.000 Ω
+  - 6.667 Ω
+  - 30.00 Ω
+  answer: C
+  solution: '**C.** Req=R1R2/(R1+R2)=6.667 Ω. This result applies to the stated fault-analysis review of a FPGA-controller
+    system.'
+  id: ECE-B-Q039
+- knowledge_area: Circuit Analysis (DC and AC Steady State)
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-061-03
+  prompt: During a upgrade review of a servo-drive system, A first-order dynamic model is represented by a single
+    real pole. Determine the associated time-domain parameter from the pole location.
+  choices:
+  - 4.000 V
+  - 8.000 V
+  - 2.000 V
+  - 10.00 V
+  answer: B
+  solution: '**B.** Vo=V R2/(R1+R2)=8.000 V. This result applies to the stated upgrade review of a servo-drive system.'
+  id: ECE-B-Q040
+- knowledge_area: Circuit Analysis (DC and AC Steady State)
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-061-04
+  prompt: During a upgrade review of a microcontroller system, at 1 kHz, find |Xc| for C=1 μF.
+  choices:
+  - 159.2 Ω
+  - 0.006 Ω
+  - 79.58 Ω
+  - 318.3 Ω
+  answer: A
+  solution: '**A.** |Xc|=1/(2πfC)=159.2 Ω. This result applies to the stated upgrade review of a microcontroller
+    system.'
+  id: ECE-B-Q041
+- knowledge_area: Circuit Analysis (DC and AC Steady State)
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-061-05
+  prompt: During a upgrade review of a test-instrument system, a 30 Ω resistor is connected to 120 V rms. Find real
+    power.
+  choices:
+  - 4.000 W
+  - 3600.0 W
+  - 240.0 W
+  - 480.0 W
+  answer: D
+  solution: '**D.** P=V²/R=480.0 W. This result applies to the stated upgrade review of a test-instrument system.'
+  id: ECE-B-Q042
+- knowledge_area: Circuit Analysis (DC and AC Steady State)
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-061-06
+  prompt: During a upgrade review of a campus-network system, A sampled-data design is being checked against its
+    highest input frequency. Determine the minimum compliant sampling rate.
+  choices:
+  - 0.010 s
+  - 1000000000.0 s
+  - 0.100 s
+  - 1.000 s
+  answer: C
+  solution: '**C.** τ=RC=0.100 s. This result applies to the stated upgrade review of a campus-network system.'
+  id: ECE-B-Q043
+- knowledge_area: Linear Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - CTRL-2F-069-02
+  prompt: During a upgrade review of a substation system, multiplication in the frequency domain corresponds to
+    what operation in time?
+  choices:
+  - quantization
+  - convolution
+  - sampling
+  - integration only
+  answer: B
+  solution: '**B.** The convolution theorem maps time convolution to frequency multiplication. This result applies
+    to the stated upgrade review of a substation system.'
+  id: ECE-B-Q044
+- knowledge_area: Linear Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - CTRL-2F-069-03
+  prompt: During a upgrade review of a measurement-front-end system, for an LTI system, the output corresponding
+    to input x(t) is obtained from impulse response h(t) by
+  choices:
+  - convolution
+  - differentiation only
+  - division
+  - logic minimization
+  answer: A
+  solution: '**A.** For LTI systems y=x*h. This result applies to the stated upgrade review of a measurement-front-end
+    system.'
+  id: ECE-B-Q045
+- knowledge_area: Linear Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - CTRL-2F-069-04
+  prompt: During a upgrade review of a telemetry-link system, a first-order transfer function has pole at s=-5 rad/s.
+    Find time constant.
+  choices:
+  - 5.000 s
+  - 0.040 s
+  - 10.00 s
+  - 0.200 s
+  answer: D
+  solution: '**D.** τ=1/|p|=0.200 s. This result applies to the stated upgrade review of a telemetry-link system.'
+  id: ECE-B-Q046
+- knowledge_area: Linear Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - CTRL-2F-069-05
+  prompt: During a upgrade review of a DC-converter system, An ADC interface is being reviewed for quantization
+    capability. Determine the number of distinct ideal output codes from the stated resolution.
+  choices:
+  - at infinity
+  - necessarily zeros
+  - in the open left half-plane
+  - on the positive real axis
+  answer: C
+  solution: '**C.** For a proper rational continuous-time system, left-half-plane poles imply BIBO stability. This
+    result applies to the stated upgrade review of a DC-converter system.'
+  id: ECE-B-Q047
+- knowledge_area: Linear Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - CTRL-2F-069-06
+  prompt: During a upgrade review of a control-cabinet system, multiplication in the frequency domain corresponds
+    to what operation in time?
+  choices:
+  - quantization
+  - convolution
+  - sampling
+  - integration only
+  answer: B
+  solution: '**B.** The convolution theorem maps time convolution to frequency multiplication. This result applies
+    to the stated upgrade review of a control-cabinet system.'
+  id: ECE-B-Q048
+- knowledge_area: Linear Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - CTRL-2F-069-07
+  prompt: During a upgrade review of a FPGA-controller system, for an LTI system, the output corresponding to input
+    x(t) is obtained from impulse response h(t) by
+  choices:
+  - convolution
+  - differentiation only
+  - division
+  - logic minimization
+  answer: A
+  solution: '**A.** For LTI systems y=x*h. This result applies to the stated upgrade review of a FPGA-controller
+    system.'
+  id: ECE-B-Q049
+- knowledge_area: Signal Processing
+  question_type: multiple-choice
+  requires_concepts:
+  - INST-2F-068-02
+  prompt: During a validation review of a servo-drive system, an anti-alias filter is placed before an ADC primarily
+    to
+  choices:
+  - replace the sample clock
+  - attenuate frequencies above the intended Nyquist band
+  - increase bit depth
+  - create aliasing
+  answer: B
+  solution: '**B.** It limits input bandwidth so out-of-band components do not fold into baseband. This result applies
+    to the stated validation review of a servo-drive system.'
+  id: ECE-B-Q050
+- knowledge_area: Signal Processing
+  question_type: multiple-choice
+  requires_concepts:
+  - INST-2F-068-03
+  prompt: During a validation review of a microcontroller system, a low-pass filter primarily passes
+  choices:
+  - low frequencies while attenuating high frequencies
+  - only DC exactly
+  - high frequencies only
+  - all frequencies equally
+  answer: A
+  solution: '**A.** A low-pass response preserves the lower-frequency band. This result applies to the stated validation
+    review of a microcontroller system.'
+  id: ECE-B-Q051
+- knowledge_area: Signal Processing
+  question_type: multiple-choice
+  requires_concepts:
+  - INST-2F-068-04
+  prompt: During a validation review of a test-instrument system, a signal is bandlimited to 4 kHz. What is the
+    Nyquist minimum sampling rate?
+  choices:
+  - 4.000 kHz
+  - 6.000 kHz
+  - 16.00 kHz
+  - 8.000 kHz
+  answer: D
+  solution: '**D.** Nyquist requires fs≥2fmax=8 kHz. This result applies to the stated validation review of a test-instrument
+    system.'
+  id: ECE-B-Q052
+- knowledge_area: Signal Processing
+  question_type: multiple-choice
+  requires_concepts:
+  - INST-2F-068-05
+  prompt: During a validation review of a campus-network system, sampling below the Nyquist rate can cause
+  choices:
+  - perfect reconstruction always
+  - infinite bandwidth
+  - aliasing
+  - zero quantization error
+  answer: C
+  solution: '**C.** Spectral replicas overlap when sampling is too slow, producing aliasing. This result applies
+    to the stated validation review of a campus-network system.'
+  id: ECE-B-Q053
+- knowledge_area: Signal Processing
+  question_type: multiple-choice
+  requires_concepts:
+  - INST-2F-068-06
+  prompt: During a validation review of a substation system, how many ideal codes does a 12-bit ADC provide?
+  choices:
+  - '1200'
+  - '4096'
+  - '2048'
+  - '8192'
+  answer: B
+  solution: '**B.** An N-bit ADC has 2^N codes; 2^12=4096. This result applies to the stated validation review of
+    a substation system.'
+  id: ECE-B-Q054
+- knowledge_area: Electronics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-034-02
+  prompt: During a validation review of a measurement-front-end system, an ideal op amp under negative feedback
+    has approximately
+  choices:
+  - equal input currents to load current
+  - equal input-terminal voltages
+  - infinite output voltage
+  - zero open-loop gain
+  answer: B
+  solution: '**B.** Negative feedback drives v+≈v- while input currents are approximately zero. This result applies
+    to the stated validation review of a measurement-front-end system.'
+  id: ECE-B-Q055
+- knowledge_area: Electronics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-034-03
+  prompt: During a validation review of a telemetry-link system, A three-phase feeder supplies the stated balanced
+    load. Determine the real power delivered from the line voltage, current, and power factor.
+  choices:
+  - '-5.000'
+  - '-0.200'
+  - '5.000'
+  - '6.000'
+  answer: A
+  solution: '**A.** Av=-Rf/Rin=-5.000. This result applies to the stated validation review of a telemetry-link system.'
+  id: ECE-B-Q056
+- knowledge_area: Electronics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-034-04
+  prompt: During a validation review of a DC-converter system, A transformer design uses the stated primary and
+    secondary turns. Determine the secondary voltage from the ideal turns-ratio relation.
+  choices:
+  - VDS is zero only
+  - gate is always positive
+  - drain current is maximum
+  - VGS is below threshold
+  answer: D
+  solution: '**D.** A channel forms when VGS exceeds threshold. This result applies to the stated validation review
+    of a DC-converter system.'
+  id: ECE-B-Q057
+- knowledge_area: Electronics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-034-05
+  prompt: During a validation review of a control-cabinet system, an ideal buck converter has Vin=24 V and duty
+    ratio D=0.4. Find average output.
+  choices:
+  - 14.40 V
+  - 0.400 V
+  - 9.600 V
+  - 60.00 V
+  answer: C
+  solution: '**C.** Vo=D Vin=9.600 V. This result applies to the stated validation review of a control-cabinet system.'
+  id: ECE-B-Q058
+- knowledge_area: Electronics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-034-06
+  prompt: During a validation review of a FPGA-controller system, A feeder-loss check is required for the stated
+    conductor resistance and phase current. Determine the total three-phase copper loss.
+  choices:
+  - independent of bias
+  - inverted relative to the input
+  - always in phase
+  - DC only
+  answer: B
+  solution: '**B.** Common-emitter voltage gain is typically negative. This result applies to the stated validation
+    review of a FPGA-controller system.'
+  id: ECE-B-Q059
+- knowledge_area: Electronics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-034-07
+  prompt: During a integration review of a servo-drive system, An induction machine is evaluated at a particular
+    rotor speed. Which condition corresponds to zero slip?
+  choices:
+  - reverse breakdown
+  - forward cutoff
+  - zero-bias only
+  - avalanche-free forward saturation
+  answer: A
+  solution: '**A.** Zener regulation uses the approximately constant reverse-breakdown voltage. This result applies
+    to the stated integration review of a servo-drive system.'
+  id: ECE-B-Q060
+- knowledge_area: Electronics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-035-01
+  prompt: During a integration review of a microcontroller system, a silicon diode with 0.7 V drop is in series
+    with 1 kΩ from a 5 V source. Find current.
+  choices:
+  - 5.000 mA
+  - 0.700 mA
+  - 5.700 mA
+  - 4.300 mA
+  answer: D
+  solution: '**D.** I=(5-0.7)/1k=4.300 mA. This result applies to the stated integration review of a microcontroller
+    system.'
+  id: ECE-B-Q061
+- knowledge_area: Electronics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-035-02
+  prompt: During a integration review of a test-instrument system, an ideal op amp under negative feedback has approximately
+  choices:
+  - zero open-loop gain
+  - equal input currents to load current
+  - equal input-terminal voltages
+  - infinite output voltage
+  answer: C
+  solution: '**C.** Negative feedback drives v+≈v- while input currents are approximately zero. This result applies
+    to the stated integration review of a test-instrument system.'
+  id: ECE-B-Q062
+- knowledge_area: Power Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-065-02
+  prompt: During a integration review of a campus-network system, A transmission-line check is required at the stated
+    source frequency. Determine the free-space wavelength.
+  choices:
+  - 120.0 V
+  - 24.00 V
+  - 2400.0 V
+  - 240.0 V
+  answer: B
+  solution: '**B.** V2/V1=N2/N1, so V2=24.00 V. This result applies to the stated integration review of a campus-network
+    system.'
+  id: ECE-B-Q063
+- knowledge_area: Power Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-065-03
+  prompt: During a integration review of a substation system, find synchronous speed of a 4-pole, 60 Hz AC machine.
+  choices:
+  - 1800.0 rpm
+  - 3600.0 rpm
+  - 900.0 rpm
+  - 60.00 rpm
+  answer: A
+  solution: '**A.** Ns=120f/P=1800.0 rpm. This result applies to the stated integration review of a substation system.'
+  id: ECE-B-Q064
+- knowledge_area: Power Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-065-04
+  prompt: During a integration review of a measurement-front-end system, power-factor correction for an inductive
+    load is commonly achieved by adding
+  choices:
+  - series resistance only
+  - more inductance
+  - a fuse
+  - shunt capacitance
+  answer: D
+  solution: '**D.** Capacitors supply leading reactive power to offset lagging load VARs. This result applies to
+    the stated integration review of a measurement-front-end system.'
+  id: ECE-B-Q065
+- knowledge_area: Power Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-065-05
+  prompt: During a integration review of a telemetry-link system, A load is connected to a transmission line with
+    the stated characteristic impedance. Determine the load reflection coefficient.
+  choices:
+  - 3.000 kW
+  - 0.005 kW
+  - 1.500 kW
+  - 0.500 kW
+  answer: C
+  solution: '**C.** P_loss=3I²R=1.500 kW. This result applies to the stated integration review of a telemetry-link
+    system.'
+  id: ECE-B-Q066
+- knowledge_area: Power Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-065-06
+  prompt: During a integration review of a DC-converter system, A termination is selected for a transmission line.
+    Which condition produces a matched line with zero reflection?
+  choices:
+  - half synchronous speed
+  - synchronous rotor speed
+  - standstill
+  - maximum torque necessarily
+  answer: B
+  solution: '**B.** s=(Ns-Nr)/Ns, so s=0 when Nr=Ns. This result applies to the stated integration review of a DC-converter
+    system.'
+  id: ECE-B-Q067
+- knowledge_area: Power Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-065-07
+  prompt: During a integration review of a control-cabinet system, a balanced 480 V three-phase load draws 50 A
+    at pf=0.8. Find real power.
+  choices:
+  - 33.26 kW
+  - 24.00 kW
+  - 41.57 kW
+  - 16.63 kW
+  answer: A
+  solution: '**A.** P=√3 VLI_L pf=33.26 kW. This result applies to the stated integration review of a control-cabinet
+    system.'
+  id: ECE-B-Q068
+- knowledge_area: Power Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-036-01
+  prompt: During a integration review of a FPGA-controller system, A feedback loop is modeled by the stated forward-path
+    gain and unity feedback. Determine the resulting closed-loop gain.
+  choices:
+  - 2400.0 V
+  - 240.0 V
+  - 120.0 V
+  - 24.00 V
+  answer: D
+  solution: '**D.** V2/V1=N2/N1, so V2=24.00 V. This result applies to the stated integration review of a FPGA-controller
+    system.'
+  id: ECE-B-Q069
+- knowledge_area: Power Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-036-02
+  prompt: During a performance review of a servo-drive system, A controller is being tuned to remove persistent
+    offset. Which control action most directly addresses that objective?
+  choices:
+  - 900.0 rpm
+  - 60.00 rpm
+  - 1800.0 rpm
+  - 3600.0 rpm
+  answer: C
+  solution: '**C.** Ns=120f/P=1800.0 rpm. This result applies to the stated performance review of a servo-drive
+    system.'
+  id: ECE-B-Q070
+- knowledge_area: Power Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-036-03
+  prompt: During a performance review of a microcontroller system, power-factor correction for an inductive load
+    is commonly achieved by adding
+  choices:
+  - a fuse
+  - shunt capacitance
+  - series resistance only
+  - more inductance
+  answer: B
+  solution: '**B.** Capacitors supply leading reactive power to offset lagging load VARs. This result applies to
+    the stated performance review of a microcontroller system.'
+  id: ECE-B-Q071
+- knowledge_area: Electromagnetics
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-064-02
+  prompt: During a performance review of a test-instrument system, faraday's law relates induced emf to
+  choices:
+  - temperature
+  - time-varying magnetic flux
+  - static electric charge only
+  - resistance only
+  answer: B
+  solution: '**B.** A changing magnetic flux produces induced emf. This result applies to the stated performance
+    review of a test-instrument system.'
+  id: ECE-B-Q072
+- knowledge_area: Electromagnetics
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-064-03
+  prompt: During a performance review of a campus-network system, gauss's law for electric fields relates electric
+    flux through a closed surface to
+  choices:
+  - enclosed charge
+  - external resistance
+  - magnetic reluctance
+  - frequency only
+  answer: A
+  solution: '**A.** Net electric flux is proportional to enclosed charge. This result applies to the stated performance
+    review of a campus-network system.'
+  id: ECE-B-Q073
+- knowledge_area: Electromagnetics
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-064-04
+  prompt: During a performance review of a substation system, find free-space wavelength at 100 MHz.
+  choices:
+  - 1.500 m
+  - 0.333 m
+  - 30000000000000000.0 m
+  - 3.000 m
+  answer: D
+  solution: '**D.** λ=c/f=3.000 m. This result applies to the stated performance review of a substation system.'
+  id: ECE-B-Q074
+- knowledge_area: Electromagnetics
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-064-05
+  prompt: During a performance review of a measurement-front-end system, a 50 Ω line is terminated in 100 Ω. Find
+    reflection coefficient Γ.
+  choices:
+  - '0.667'
+  - '2.000'
+  - '0.333'
+  - '-0.333'
+  answer: C
+  solution: '**C.** Γ=(ZL-Z0)/(ZL+Z0)=0.333. This result applies to the stated performance review of a measurement-front-end
+    system.'
+  id: ECE-B-Q075
+- knowledge_area: Control Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - CTRL-2F-069-02
+  prompt: During a performance review of a telemetry-link system, a continuous-time closed-loop system is stable
+    when its characteristic roots lie
+  choices:
+  - on the positive real axis
+  - in the left half-plane
+  - in the right half-plane
+  - only at the origin
+  answer: B
+  solution: '**B.** Negative real parts give decaying natural modes. This result applies to the stated performance
+    review of a telemetry-link system.'
+  id: ECE-B-Q076
+- knowledge_area: Control Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - CTRL-2F-069-03
+  prompt: During a performance review of a DC-converter system, increasing phase margin generally corresponds to
+  choices:
+  - greater relative stability and damping
+  - guaranteed instability
+  - zero bandwidth
+  - infinite steady-state error
+  answer: A
+  solution: '**A.** Adequate phase margin provides robustness and typically more damped response. This result applies
+    to the stated performance review of a DC-converter system.'
+  id: ECE-B-Q077
+- knowledge_area: Control Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - CTRL-2F-069-04
+  prompt: During a performance review of a control-cabinet system, A digital communication link is evaluated for
+    symbol efficiency. Determine the number of bits represented by each QPSK symbol.
+  choices:
+  - '8.000'
+  - '0.125'
+  - '9.000'
+  - '0.889'
+  answer: D
+  solution: '**D.** T=KG/(1+KG)=0.889. This result applies to the stated performance review of a control-cabinet
+    system.'
+  id: ECE-B-Q078
+- knowledge_area: Control Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - CTRL-2F-069-05
+  prompt: During a performance review of a FPGA-controller system, integral control primarily helps eliminate
+  choices:
+  - plant dynamics
+  - sampling requirements
+  - steady-state error
+  - all measurement noise
+  answer: C
+  solution: '**C.** Integral action accumulates error and drives constant offset toward zero. This result applies
+    to the stated performance review of a FPGA-controller system.'
+  id: ECE-B-Q079
+- knowledge_area: Control Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - CTRL-2F-069-06
+  prompt: During a safety review of a servo-drive system, derivative action responds to
+  choices:
+  - reference magnitude only
+  - rate of change of error
+  - integral of error
+  - constant bias only
+  answer: B
+  solution: '**B.** Derivative control is proportional to de/dt. This result applies to the stated safety review
+    of a servo-drive system.'
+  id: ECE-B-Q080
+- knowledge_area: Control Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - CTRL-2F-069-07
+  prompt: During a safety review of a microcontroller system, a continuous-time closed-loop system is stable when
+    its characteristic roots lie
+  choices:
+  - in the left half-plane
+  - in the right half-plane
+  - only at the origin
+  - on the positive real axis
+  answer: A
+  solution: '**A.** Negative real parts give decaying natural modes. This result applies to the stated safety review
+    of a microcontroller system.'
+  id: ECE-B-Q081
+- knowledge_area: Communications
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-040-02
+  prompt: During a safety review of a test-instrument system, for FM with Δf=75 kHz and fm=15 kHz, estimate Carson
+    bandwidth.
+  choices:
+  - 75.00 kHz
+  - 180.0 kHz
+  - 90.00 kHz
+  - 150.0 kHz
+  answer: B
+  solution: '**B.** Carson BW≈2(Δf+fm)=180 kHz. This result applies to the stated safety review of a test-instrument
+    system.'
+  id: ECE-B-Q082
+- knowledge_area: Communications
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-040-03
+  prompt: During a safety review of a campus-network system, pCM samples at 8 ksample/s with 8 bits/sample. Find
+    raw bit rate.
+  choices:
+  - 64.00 kb/s
+  - 8.000 kb/s
+  - 16.00 kb/s
+  - 128.0 kb/s
+  answer: A
+  solution: '**A.** Rb=fsN=64 kb/s. This result applies to the stated safety review of a campus-network system.'
+  id: ECE-B-Q083
+- knowledge_area: Communications
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-040-04
+  prompt: During a safety review of a substation system, qPSK conveys how many bits per ideal symbol?
+  choices:
+  - '1'
+  - '4'
+  - '8'
+  - '2'
+  answer: D
+  solution: '**D.** QPSK has four symbols, so log2(4)=2 bits/symbol. This result applies to the stated safety review
+    of a substation system.'
+  id: ECE-B-Q084
+- knowledge_area: Communications
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-040-05
+  prompt: During a safety review of a measurement-front-end system, tDM separates users primarily by assigning different
+  choices:
+  - IP addresses only
+  - wire gauges
+  - time slots
+  - carrier amplitudes only
+  answer: C
+  solution: '**C.** Time-division multiplexing interleaves users in time. This result applies to the stated safety
+    review of a measurement-front-end system.'
+  id: ECE-B-Q085
+- knowledge_area: Communications
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-040-06
+  prompt: During a safety review of a telemetry-link system, a CRC is primarily used for
+  choices:
+  - clock generation
+  - error detection
+  - encryption
+  - analog modulation
+  answer: B
+  solution: '**B.** CRC adds redundancy optimized for detecting transmission errors. This result applies to the
+    stated safety review of a telemetry-link system.'
+  id: ECE-B-Q086
+- knowledge_area: Communications
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-040-07
+  prompt: During a safety review of a DC-converter system, An IPv4 subnet is configured with the stated prefix length.
+    Determine the conventional number of usable host addresses.
+  choices:
+  - 10.00 kHz
+  - 5.000 kHz
+  - 20.00 kHz
+  - 2.500 kHz
+  answer: A
+  solution: '**A.** Conventional AM bandwidth is 2fm=10 kHz. This result applies to the stated safety review of
+    a DC-converter system.'
+  id: ECE-B-Q087
+- knowledge_area: Computer Networks
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-045-02
+  prompt: During a safety review of a control-cabinet system, dHCP is commonly used to
+  choices:
+  - route BGP
+  - automatically supply IP configuration to hosts
+  - encrypt Ethernet frames
+  - replace DNS permanently
+  answer: B
+  solution: '**B.** DHCP leases addresses and related network parameters. This result applies to the stated safety
+    review of a control-cabinet system.'
+  id: ECE-B-Q088
+- knowledge_area: Computer Networks
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-045-03
+  prompt: During a safety review of a FPGA-controller system, network segmentation improves security primarily by
+  choices:
+  - limiting communication paths and blast radius
+  - increasing every password length automatically
+  - eliminating all vulnerabilities
+  - removing authentication
+  answer: A
+  solution: '**A.** Segmentation constrains lateral movement and policy scope. This result applies to the stated
+    safety review of a FPGA-controller system.'
+  id: ECE-B-Q089
+- knowledge_area: Computer Networks
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-045-04
+  prompt: During a prototype review of a servo-drive system, a router forwards packets primarily using
+  choices:
+  - source MAC address only
+  - application filenames
+  - CPU clock speed
+  - network-layer destination addressing and a routing/forwarding table
+  answer: D
+  solution: '**D.** Routers select next hops from network-layer addressing information. This result applies to the
+    stated prototype review of a servo-drive system.'
+  id: ECE-B-Q090
+- knowledge_area: Computer Networks
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-045-05
+  prompt: During a prototype review of a microcontroller system, tCP differs from UDP because TCP provides
+  choices:
+  - no sequencing
+  - no acknowledgments
+  - connection-oriented reliable byte-stream service
+  - broadcast-only delivery
+  answer: C
+  solution: '**C.** TCP provides ordered reliable delivery with connection state. This result applies to the stated
+    prototype review of a microcontroller system.'
+  id: ECE-B-Q091
+- knowledge_area: Digital Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-042-02
+  prompt: During a prototype review of a test-instrument system, by De Morgan's law, NOT(A AND B) equals
+  choices:
+  - A XOR B
+  - (NOT A) OR (NOT B)
+  - (NOT A) AND (NOT B)
+  - A OR B
+  answer: B
+  solution: '**B.** Complement of a product equals sum of complements. This result applies to the stated prototype
+    review of a test-instrument system.'
+  id: ECE-B-Q092
+- knowledge_area: Digital Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-042-03
+  prompt: During a prototype review of a campus-network system, a multiplexer selects
+  choices:
+  - one of several inputs to one output
+  - one input to many outputs only
+  - a clock frequency
+  - analog gain
+  answer: A
+  solution: '**A.** A MUX routes one selected data input to the output. This result applies to the stated prototype
+    review of a campus-network system.'
+  id: ECE-B-Q093
+- knowledge_area: Digital Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-042-04
+  prompt: During a prototype review of a substation system, a D flip-flop stores
+  choices:
+  - one byte
+  - one address bus
+  - an analog voltage continuously
+  - one bit
+  answer: D
+  solution: '**D.** A D flip-flop is a single-bit state element. This result applies to the stated prototype review
+    of a substation system.'
+  id: ECE-B-Q094
+- knowledge_area: Digital Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-042-05
+  prompt: During a prototype review of a measurement-front-end system, a 4-bit binary counter has how many distinct
+    states?
+  choices:
+  - '8'
+  - '32'
+  - '16'
+  - '4'
+  answer: C
+  solution: '**C.** 2^4=16 states. This result applies to the stated prototype review of a measurement-front-end
+    system.'
+  id: ECE-B-Q095
+- knowledge_area: Digital Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-042-06
+  prompt: During a prototype review of a telemetry-link system, setup time specifies how long data must be stable
+  choices:
+  - during reset only
+  - before the active clock edge
+  - after power-off
+  - after the hold interval only
+  answer: B
+  solution: '**B.** Setup time is the required pre-clock data-stability interval. This result applies to the stated
+    prototype review of a telemetry-link system.'
+  id: ECE-B-Q096
+- knowledge_area: Digital Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-042-07
+  prompt: During a prototype review of a DC-converter system, convert decimal 13 to binary.
+  choices:
+  - '1101'
+  - '1011'
+  - '1110'
+  - '1001'
+  answer: A
+  solution: '**A.** 13=8+4+1, so binary 1101. This result applies to the stated prototype review of a DC-converter
+    system.'
+  id: ECE-B-Q097
+- knowledge_area: Digital Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-043-01
+  prompt: During a prototype review of a control-cabinet system, by De Morgan's law, NOT(A AND B) equals
+  choices:
+  - (NOT A) AND (NOT B)
+  - A OR B
+  - A XOR B
+  - (NOT A) OR (NOT B)
+  answer: D
+  solution: '**D.** Complement of a product equals sum of complements. This result applies to the stated prototype
+    review of a control-cabinet system.'
+  id: ECE-B-Q098
+- knowledge_area: Digital Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-043-02
+  prompt: During a prototype review of a FPGA-controller system, a multiplexer selects
+  choices:
+  - a clock frequency
+  - analog gain
+  - one of several inputs to one output
+  - one input to many outputs only
+  answer: C
+  solution: '**C.** A MUX routes one selected data input to the output. This result applies to the stated prototype
+    review of a FPGA-controller system.'
+  id: ECE-B-Q099
+- knowledge_area: Digital Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-043-03
+  prompt: During a design review of a servo-drive system, a D flip-flop stores
+  choices:
+  - an analog voltage continuously
+  - one bit
+  - one byte
+  - one address bus
+  answer: B
+  solution: '**B.** A D flip-flop is a single-bit state element. This result applies to the stated design review
+    of a servo-drive system.'
+  id: ECE-B-Q100
+- knowledge_area: Computer Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-044-02
+  prompt: During a design review of a microcontroller system, a Harvard architecture distinguishes itself by having
+  choices:
+  - only one address
+  - separate instruction and data memories or paths
+  - no CPU
+  - no registers
+  answer: B
+  solution: '**B.** Harvard organization separates instruction and data storage/access. This result applies to the
+    stated design review of a microcontroller system.'
+  id: ECE-B-Q101
+- knowledge_area: Computer Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-044-03
+  prompt: During a design review of a test-instrument system, a cache miss occurs when requested data
+  choices:
+  - is not present in the cache
+  - is already in L1
+  - is in a register
+  - has zero value
+  answer: A
+  solution: '**A.** A miss requires fetching the block from a lower memory level. This result applies to the stated
+    design review of a test-instrument system.'
+  id: ECE-B-Q102
+- knowledge_area: Computer Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-044-04
+  prompt: During a design review of a campus-network system, cache memory is used primarily to
+  choices:
+  - replace all registers
+  - increase disk latency
+  - perform routing
+  - reduce average memory access time
+  answer: D
+  solution: '**D.** Cache exploits temporal/spatial locality to reduce effective memory latency. This result applies
+    to the stated design review of a campus-network system.'
+  id: ECE-B-Q103
+- knowledge_area: Computer Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-044-05
+  prompt: During a design review of a substation system, A processor memory subsystem is being analyzed for latency
+    reduction. What is the principal purpose of cache memory?
+  choices:
+  - '16384'
+  - '131072'
+  - '65536'
+  - '32768'
+  answer: C
+  solution: '**C.** 2^16=65,536 addressable locations. This result applies to the stated design review of a substation
+    system.'
+  id: ECE-B-Q104
+- knowledge_area: Computer Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-044-06
+  prompt: During a design review of a measurement-front-end system, memory-mapped I/O means peripherals are accessed
+    using
+  choices:
+  - cache tags exclusively
+  - ordinary address-space reads and writes
+  - only special network packets
+  - mechanical relays
+  answer: B
+  solution: '**B.** Peripheral registers occupy addresses in the processor''s memory map. This result applies to
+    the stated design review of a measurement-front-end system.'
+  id: ECE-B-Q105
+- knowledge_area: Computer Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-044-07
+  prompt: During a design review of a telemetry-link system, a Harvard architecture distinguishes itself by having
+  choices:
+  - separate instruction and data memories or paths
+  - no CPU
+  - no registers
+  - only one address
+  answer: A
+  solution: '**A.** Harvard organization separates instruction and data storage/access. This result applies to the
+    stated design review of a telemetry-link system.'
+  id: ECE-B-Q106
+- knowledge_area: Software Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-047-02
+  prompt: During a design review of a DC-converter system, a unit test primarily targets
+  choices:
+  - hardware solder joints
+  - a small isolated software component
+  - an entire deployed enterprise only
+  - network cabling
+  answer: B
+  solution: '**B.** Unit tests verify small units such as functions/classes in isolation. This result applies to
+    the stated design review of a DC-converter system.'
+  id: ECE-B-Q107
+- knowledge_area: Software Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-047-03
+  prompt: During a design review of a control-cabinet system, static analysis examines software
+  choices:
+  - without executing it
+  - only after deployment
+  - only via packet capture
+  - by changing CPU voltage
+  answer: A
+  solution: '**A.** Static analysis inspects source/bytecode artifacts without running the program. This result
+    applies to the stated design review of a control-cabinet system.'
+  id: ECE-B-Q108
+- knowledge_area: Software Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-047-04
+  prompt: During a design review of a FPGA-controller system, A software routine searches an ordered array by repeatedly
+    halving the remaining interval. State the corresponding worst-case time complexity.
+  choices:
+  - O(n²)
+  - O(1)
+  - O(n!)
+  - O(log n)
+  answer: D
+  solution: '**D.** Each comparison halves the remaining search interval. This result applies to the stated design
+    review of a FPGA-controller system.'
+  id: ECE-B-Q109
+- knowledge_area: Software Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - ECE-3-047-05
+  prompt: During a verification review of a servo-drive system, a stack follows which access discipline?
+  choices:
+  - random-only
+  - priority-only
+  - LIFO
+  - FIFO
+  answer: C
+  solution: '**C.** Stacks are last-in, first-out. This result applies to the stated verification review of a servo-drive
+    system.'
+  id: ECE-B-Q110
