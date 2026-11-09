@@ -1,0 +1,1549 @@
+schema_version: 1
+exam_type: practice-B
+discipline: other-disciplines
+exam: B
+question_count: 110
+appointment_minutes: 355
+working_time_minutes: 320
+blueprint_source: meta/exam-blueprints.yaml
+items:
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1C-016-03
+  prompt: An engineer is conducting an independent cross-domain review for a remote equipment package. In that distinct scenario,
+    evaluate ∫_0^3 2x dx.
+  choices:
+  - '6'
+  - '12'
+  - '18'
+  - '9'
+  answer: D
+  solution: '**D.** Integral=x², so the value is 9.'
+  id: OTH-B-Q001
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1C-016-04
+  prompt: An engineer is conducting an independent cross-domain review for a production support system. In that distinct scenario,
+    solve 4x+3=23.
+  choices:
+  - '6'
+  - '20'
+  - '5'
+  - '4'
+  answer: C
+  solution: '**C.** 4x=20, so x=5.'
+  id: OTH-B-Q002
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1C-019-01
+  prompt: An engineer is conducting an independent cross-domain review for a building retrofit. In that distinct scenario,
+    find the determinant of [[2,1],[3,4]].
+  choices:
+  - '-5'
+  - '5'
+  - '8'
+  - '11'
+  answer: B
+  solution: '**B.** det=2(4)-1(3)=5.'
+  id: OTH-B-Q003
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1C-019-02
+  prompt: An engineer is conducting an independent cross-domain review for a prototype assembly. In that distinct scenario,
+    a line through (2,3) and (6,15) has slope
+  choices:
+  - '3'
+  - '2'
+  - '4'
+  - '12'
+  answer: A
+  solution: '**A.** m=(15-3)/(6-2)=3.'
+  id: OTH-B-Q004
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1C-019-03
+  prompt: An engineer is conducting an independent cross-domain review for a water-energy project. In that distinct scenario,
+    evaluate log10(10000).
+  choices:
+  - '3'
+  - '10'
+  - '100'
+  - '4'
+  answer: D
+  solution: '**D.** 10^4=10000, so log10(10000)=4.'
+  id: OTH-B-Q005
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1C-019-04
+  prompt: An engineer is conducting an independent cross-domain review for a instrumented process. In that distinct scenario,
+    for y=3x²+2x, find dy/dx at x=2.
+  choices:
+  - '12'
+  - '18'
+  - '14'
+  - '8'
+  answer: C
+  solution: '**C.** dy/dx=6x+2=14.'
+  id: OTH-B-Q006
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1C-019-05
+  prompt: An engineer is conducting an independent cross-domain review for a maintenance program. In that distinct scenario,
+    evaluate ∫_0^3 2x dx.
+  choices:
+  - '18'
+  - '9'
+  - '6'
+  - '12'
+  answer: B
+  solution: '**B.** Integral=x², so the value is 9.'
+  id: OTH-B-Q007
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-001-01
+  prompt: An engineer is conducting an separate validation exercise for a pilot facility. In that distinct scenario, solve
+    4x+3=23.
+  choices:
+  - '5'
+  - '4'
+  - '6'
+  - '20'
+  answer: A
+  solution: '**A.** 4x=20, so x=5.'
+  id: OTH-B-Q008
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-001-02
+  prompt: An engineer is conducting an separate validation exercise for a remote equipment package. In that distinct scenario,
+    find the determinant of [[2,1],[3,4]].
+  choices:
+  - '8'
+  - '11'
+  - '-5'
+  - '5'
+  answer: D
+  solution: '**D.** det=2(4)-1(3)=5.'
+  id: OTH-B-Q009
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-001-03
+  prompt: An engineer is conducting an separate validation exercise for a production support system. In that distinct scenario,
+    a line through (2,3) and (6,15) has slope
+  choices:
+  - '4'
+  - '12'
+  - '3'
+  - '2'
+  answer: C
+  solution: '**C.** m=(15-3)/(6-2)=3.'
+  id: OTH-B-Q010
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-04
+  prompt: An engineer is conducting an separate validation exercise for a building retrofit. In that distinct scenario, for
+    independent events A and B, P(A∩B) equals
+  choices:
+  - P(A)+P(B)
+  - P(A)-P(B)
+  - 1-P(A)
+  - P(A)P(B)
+  answer: D
+  solution: '**D.** Independence gives P(A∩B)=P(A)P(B).'
+  id: OTH-B-Q011
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-05
+  prompt: An engineer is conducting an separate validation exercise for a prototype assembly. In that distinct scenario, for
+    n=100 and population σ=20, the standard error is
+  choices:
+  - '10'
+  - '20'
+  - '2'
+  - '0.2'
+  answer: C
+  solution: '**C.** SE=σ/√n=20/10=2.'
+  id: OTH-B-Q012
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-06
+  prompt: An engineer is conducting an separate validation exercise for a water-energy project. In that distinct scenario,
+    a success probability is 0.8. Probability of 3 independent successes is
+  choices:
+  - '0.800'
+  - '0.512'
+  - '0.200'
+  - '0.600'
+  answer: B
+  solution: '**B.** P=0.8^3=0.512.'
+  id: OTH-B-Q013
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-07
+  prompt: An engineer is conducting an separate validation exercise for a instrumented process. In that distinct scenario,
+    which distribution models successes in a fixed number of Bernoulli trials?
+  choices:
+  - binomial
+  - normal
+  - exponential
+  - uniform
+  answer: A
+  solution: '**A.** The binomial distribution applies.'
+  id: OTH-B-Q014
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-029-01
+  prompt: An engineer is conducting an separate validation exercise for a maintenance program. In that distinct scenario,
+    increasing sample size generally makes a confidence interval
+  choices:
+  - wider
+  - unchanged
+  - invalid
+  - narrower
+  answer: D
+  solution: '**D.** Larger n reduces standard error.'
+  id: OTH-B-Q015
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-029-02
+  prompt: An engineer is conducting an alternate design study for a pilot facility. In that distinct scenario, a normal observation
+    has x=70, μ=60, σ=5. Find z.
+  choices:
+  - '5'
+  - '10'
+  - '2'
+  - '1'
+  answer: C
+  solution: '**C.** z=(70-60)/5=2.'
+  id: OTH-B-Q016
+- knowledge_area: Chemistry
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1C-026-05
+  prompt: An engineer is conducting an alternate design study for a remote equipment package. In that distinct scenario, at
+    25°C, if pH=9, pOH is
+  choices:
+  - '9'
+  - '14'
+  - '23'
+  - '5'
+  answer: D
+  solution: '**D.** pH+pOH=14, so pOH=5.'
+  id: OTH-B-Q017
+- knowledge_area: Chemistry
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1C-026-06
+  prompt: An engineer is conducting an alternate design study for a production support system. In that distinct scenario,
+    oxidation corresponds to
+  choices:
+  - gain of protons only
+  - no oxidation-state change
+  - loss of electrons
+  - gain of electrons
+  answer: C
+  solution: '**C.** Oxidation is electron loss.'
+  id: OTH-B-Q018
+- knowledge_area: Chemistry
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1C-026-07
+  prompt: An engineer is conducting an alternate design study for a building retrofit. In that distinct scenario, if ion product
+    exceeds Ksp, the solution is driven toward
+  choices:
+  - no reaction
+  - precipitation
+  - complete vaporization
+  - infinite solubility
+  answer: B
+  solution: '**B.** Ion product>Ksp indicates supersaturation.'
+  id: OTH-B-Q019
+- knowledge_area: Chemistry
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1C-022-01
+  prompt: An engineer is conducting an alternate design study for a prototype assembly. In that distinct scenario, a buffer
+    resists changes primarily in
+  choices:
+  - pH
+  - density
+  - viscosity
+  - mass
+  answer: A
+  solution: '**A.** A buffer limits pH change after modest acid/base addition.'
+  id: OTH-B-Q020
+- knowledge_area: Chemistry
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1C-022-02
+  prompt: An engineer is conducting an alternate design study for a water-energy project. In that distinct scenario, henry's
+    law relates dissolved concentration to
+  choices:
+  - solid density
+  - surface roughness
+  - current
+  - gas partial pressure
+  answer: D
+  solution: '**D.** Henry''s law couples gas partial pressure and dissolved concentration.'
+  id: OTH-B-Q021
+- knowledge_area: Instrumentation and Controls
+  question_type: multiple-choice
+  requires_concepts:
+  - CTRL-2F-070-04
+  prompt: An engineer is conducting an alternate design study for a instrumented process. In that distinct scenario, precision
+    is primarily
+  choices:
+  - closeness to truth only
+  - sensor range
+  - calibration interval
+  - repeatability of measurements
+  answer: D
+  solution: '**D.** Precision describes scatter/repeatability.'
+  id: OTH-B-Q022
+- knowledge_area: Instrumentation and Controls
+  question_type: multiple-choice
+  requires_concepts:
+  - CTRL-2F-070-05
+  prompt: An engineer is conducting an alternate design study for a maintenance program. In that distinct scenario, a first-order
+    sensor reaches about 63.2% of a step after
+  choices:
+  - half a period
+  - zero time
+  - one time constant
+  - two time constants
+  answer: C
+  solution: '**C.** 1-e^-1=0.632.'
+  id: OTH-B-Q023
+- knowledge_area: Instrumentation and Controls
+  question_type: multiple-choice
+  requires_concepts:
+  - CTRL-2F-070-06
+  prompt: An engineer is conducting an fresh operating case for a pilot facility. In that distinct scenario, negative feedback
+    generally tends to
+  choices:
+  - increase uncertainty
+  - reduce error and improve regulation
+  - guarantee instability
+  - remove sensing
+  answer: B
+  solution: '**B.** Feedback acts on the error signal.'
+  id: OTH-B-Q024
+- knowledge_area: Instrumentation and Controls
+  question_type: multiple-choice
+  requires_concepts:
+  - CTRL-2F-070-07
+  prompt: An engineer is conducting an fresh operating case for a remote equipment package. In that distinct scenario, a strain
+    gauge responds to strain by changing
+  choices:
+  - electrical resistance
+  - mass
+  - density
+  - pressure only
+  answer: A
+  solution: '**A.** Gauge factor relates resistance change to strain.'
+  id: OTH-B-Q025
+- knowledge_area: Instrumentation and Controls
+  question_type: multiple-choice
+  requires_concepts:
+  - INST-2F-066-01
+  prompt: An engineer is conducting an fresh operating case for a production support system. In that distinct scenario, increasing
+    a stable first-order time constant makes response
+  choices:
+  - faster
+  - instantaneous
+  - necessarily oscillatory
+  - slower
+  answer: D
+  solution: '**D.** Larger τ slows the exponential response.'
+  id: OTH-B-Q026
+- knowledge_area: Engineering Ethics and Societal Impacts
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-04
+  prompt: An engineer is conducting an fresh operating case for a building retrofit. In that distinct scenario, a material
+    conflict of interest should be
+  choices:
+  - hidden
+  - ignored
+  - shifted to a vendor
+  - disclosed
+  answer: D
+  solution: '**D.** Material conflicts require disclosure.'
+  id: OTH-B-Q027
+- knowledge_area: Engineering Ethics and Societal Impacts
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-05
+  prompt: An engineer is conducting an fresh operating case for a prototype assembly. In that distinct scenario, work outside
+    one's competence should be
+  choices:
+  - copied from unrelated work
+  - performed without review
+  - declined or supported by qualified expertise
+  - approved anyway
+  answer: C
+  solution: '**C.** Engineers must practice within competence.'
+  id: OTH-B-Q028
+- knowledge_area: Engineering Ethics and Societal Impacts
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-06
+  prompt: An engineer is conducting an fresh operating case for a water-energy project. In that distinct scenario, a material
+    released-design error should be
+  choices:
+  - deleted from records
+  - corrected and communicated
+  - concealed
+  - ignored
+  answer: B
+  solution: '**B.** Material errors affecting decisions must be addressed.'
+  id: OTH-B-Q029
+- knowledge_area: Engineering Ethics and Societal Impacts
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-07
+  prompt: An engineer is conducting an fresh operating case for a instrumented process. In that distinct scenario, societal
+    impacts of an engineering decision should be
+  choices:
+  - considered alongside technical and economic effects
+  - ignored
+  - treated as zero
+  - evaluated only after failure
+  answer: A
+  solution: '**A.** Engineering decisions can have broader public consequences.'
+  id: OTH-B-Q030
+- knowledge_area: Engineering Ethics and Societal Impacts
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-002-01
+  prompt: An engineer is conducting an fresh operating case for a maintenance program. In that distinct scenario, a defensible
+    engineering recommendation should clearly state
+  choices:
+  - only the conclusion
+  - no uncertainty
+  - only favorable data
+  - assumptions, evidence, and material limitations
+  answer: D
+  solution: '**D.** Traceability and disclosure support sound judgment.'
+  id: OTH-B-Q031
+- knowledge_area: Safety, Health, and Environment
+  question_type: multiple-choice
+  requires_concepts:
+  - OTH-3-094-04
+  prompt: An engineer is conducting an new risk assessment for a pilot facility. In that distinct scenario, risk is commonly
+    evaluated using
+  choices:
+  - cost only
+  - schedule only
+  - temperature only
+  - likelihood and consequence
+  answer: D
+  solution: '**D.** Risk combines probability/frequency with severity.'
+  id: OTH-B-Q032
+- knowledge_area: Safety, Health, and Environment
+  question_type: multiple-choice
+  requires_concepts:
+  - OTH-3-094-05
+  prompt: An engineer is conducting an new risk assessment for a remote equipment package. In that distinct scenario, a confined-space
+    atmosphere should be evaluated for
+  choices:
+  - noise only
+  - lighting only
+  - oxygen, toxic, and flammable hazards
+  - color only
+  answer: C
+  solution: '**C.** Atmospheric hazards are primary confined-space concerns.'
+  id: OTH-B-Q033
+- knowledge_area: Safety, Health, and Environment
+  question_type: multiple-choice
+  requires_concepts:
+  - OTH-3-094-06
+  prompt: An engineer is conducting an new risk assessment for a production support system. In that distinct scenario, a safety
+    factor is used primarily to
+  choices:
+  - remove inspection
+  - provide margin between capacity and demand
+  - eliminate uncertainty completely
+  - increase demand
+  answer: B
+  solution: '**B.** Safety factors provide design margin.'
+  id: OTH-B-Q034
+- knowledge_area: Safety, Health, and Environment
+  question_type: multiple-choice
+  requires_concepts:
+  - OTH-3-094-07
+  prompt: An engineer is conducting an new risk assessment for a building retrofit. In that distinct scenario, environmental
+    source reduction is preferred because it
+  choices:
+  - prevents waste before treatment or disposal
+  - increases waste
+  - eliminates all regulation
+  - always costs more
+  answer: A
+  solution: '**A.** Prevention occurs upstream of control/disposal.'
+  id: OTH-B-Q035
+- knowledge_area: Safety, Health, and Environment
+  question_type: multiple-choice
+  requires_concepts:
+  - OTH-3-095-01
+  prompt: An engineer is conducting an new risk assessment for a prototype assembly. In that distinct scenario, an incident
+    investigation should focus on
+  choices:
+  - blame only
+  - schedule recovery only
+  - concealment
+  - root and contributing causes
+  answer: D
+  solution: '**D.** Corrective action depends on understanding causal factors.'
+  id: OTH-B-Q036
+- knowledge_area: Safety, Health, and Environment
+  question_type: multiple-choice
+  requires_concepts:
+  - OTH-3-095-02
+  prompt: An engineer is conducting an new risk assessment for a water-energy project. In that distinct scenario, the hierarchy
+    of controls generally prefers
+  choices:
+  - warnings only
+  - no controls
+  - elimination or substitution before PPE
+  - PPE before elimination always
+  answer: C
+  solution: '**C.** Source controls are generally more reliable.'
+  id: OTH-B-Q037
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-005-04
+  prompt: An engineer is conducting an new risk assessment for a instrumented process. In that distinct scenario, a $60,000
+    project saves $15,000/year ignoring time value. Simple payback is
+  choices:
+  - 2 years
+  - 5 years
+  - 15 years
+  - 4 years
+  answer: D
+  solution: '**D.** 60000/15000=4 years.'
+  id: OTH-B-Q038
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-005-05
+  prompt: An engineer is conducting an new risk assessment for a maintenance program. In that distinct scenario, for equal-service
+    alternatives, present-worth analysis generally chooses
+  choices:
+  - longest life only
+  - lowest salvage
+  - greatest net present worth
+  - highest first cost
+  answer: C
+  solution: '**C.** Use a common economic basis and choose greatest net PW.'
+  id: OTH-B-Q039
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-005-06
+  prompt: An engineer is conducting an independent calculation audit for a pilot facility. In that distinct scenario, fixed
+    cost is $40,000 and contribution margin is $10/unit. Break-even volume is
+  choices:
+  - 40000 units
+  - 4000 units
+  - 400 units
+  - 40 units
+  answer: B
+  solution: '**B.** Q=F/(p-v)=40000/10=4000 units.'
+  id: OTH-B-Q040
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-005-07
+  prompt: An engineer is conducting an independent calculation audit for a remote equipment package. In that distinct scenario,
+    depreciation represents
+  choices:
+  - allocation of asset cost over useful life
+  - cash revenue
+  - loan principal only
+  - salvage paid annually
+  answer: A
+  solution: '**A.** Depreciation allocates capital cost.'
+  id: OTH-B-Q041
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-006-01
+  prompt: An engineer is conducting an independent calculation audit for a production support system. In that distinct scenario,
+    future worth of $10,000 at 5% for 4 years is
+  choices:
+  - $10000
+  - $8227.0
+  - $12000.0
+  - $12155.1
+  answer: D
+  solution: '**D.** F=P(1+i)^n=$12155.1.'
+  id: OTH-B-Q042
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-006-02
+  prompt: An engineer is conducting an independent calculation audit for a building retrofit. In that distinct scenario, a
+    future cost of $20,000 occurs in 5 years at 6%. Present worth is
+  choices:
+  - $26764.5
+  - $15384.6
+  - $14945.2
+  - $20000
+  answer: C
+  solution: '**C.** P=20000/(1.06)^5=$14945.2.'
+  id: OTH-B-Q043
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-006-03
+  prompt: An engineer is conducting an independent calculation audit for a prototype assembly. In that distinct scenario,
+    a $60,000 project saves $15,000/year ignoring time value. Simple payback is
+  choices:
+  - 15 years
+  - 4 years
+  - 2 years
+  - 5 years
+  answer: B
+  solution: '**B.** 60000/15000=4 years.'
+  id: OTH-B-Q044
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-011-04
+  prompt: An engineer is conducting an independent calculation audit for a water-energy project. In that distinct scenario,
+    a centered 10 kN load on a simply supported beam gives each vertical reaction
+  choices:
+  - 2.5 kN
+  - 10 kN
+  - 20 kN
+  - 5 kN
+  answer: D
+  solution: '**D.** By symmetry and equilibrium, each reaction is 5 kN.'
+  id: OTH-B-Q045
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-011-05
+  prompt: An engineer is conducting an independent calculation audit for a instrumented process. In that distinct scenario,
+    planar static equilibrium requires
+  choices:
+  - ΣM=velocity
+  - energy=0 only
+  - ΣFx=0, ΣFy=0, ΣM=0
+  - ΣFx=1 only
+  answer: C
+  solution: '**C.** These are the three independent planar equilibrium equations.'
+  id: OTH-B-Q046
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-011-06
+  prompt: An engineer is conducting an independent calculation audit for a maintenance program. In that distinct scenario,
+    a 3-4-5 cable carries 100 N. The component along side 4 is
+  choices:
+  - 125 N
+  - 80 N
+  - 60 N
+  - 100 N
+  answer: B
+  solution: '**B.** 100(4/5)=80 N.'
+  id: OTH-B-Q047
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-011-07
+  prompt: An engineer is conducting an independent cross-domain review for a pilot facility. In that distinct scenario, the
+    centroid of a rectangle is at
+  choices:
+  - its geometric center
+  - one corner
+  - one-third width only
+  - outside the shape
+  answer: A
+  solution: '**A.** Symmetry places it at the center.'
+  id: OTH-B-Q048
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-012-01
+  prompt: An engineer is conducting an independent cross-domain review for a remote equipment package. In that distinct scenario,
+    at impending sliding, maximum static friction is
+  choices:
+  - N/μs
+  - μs/N
+  - zero
+  - μsN
+  answer: D
+  solution: '**D.** Fmax=μsN.'
+  id: OTH-B-Q049
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-012-02
+  prompt: An engineer is conducting an independent cross-domain review for a production support system. In that distinct scenario,
+    a 100 N force acts 2 m perpendicular to a pivot. Moment is
+  choices:
+  - 100 N·m
+  - 202 N·m
+  - 200 N·m
+  - 50 N·m
+  answer: C
+  solution: '**C.** M=Fd=100×2=200 N·m.'
+  id: OTH-B-Q050
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-012-03
+  prompt: An engineer is conducting an independent cross-domain review for a building retrofit. In that distinct scenario,
+    a centered 10 kN load on a simply supported beam gives each vertical reaction
+  choices:
+  - 20 kN
+  - 5 kN
+  - 2.5 kN
+  - 10 kN
+  answer: B
+  solution: '**B.** By symmetry and equilibrium, each reaction is 5 kN.'
+  id: OTH-B-Q051
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-012-04
+  prompt: An engineer is conducting an independent cross-domain review for a prototype assembly. In that distinct scenario,
+    planar static equilibrium requires
+  choices:
+  - ΣFx=0, ΣFy=0, ΣM=0
+  - ΣFx=1 only
+  - ΣM=velocity
+  - energy=0 only
+  answer: A
+  solution: '**A.** These are the three independent planar equilibrium equations.'
+  id: OTH-B-Q052
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-012-05
+  prompt: An engineer is conducting an independent cross-domain review for a water-energy project. In that distinct scenario,
+    a 3-4-5 cable carries 100 N. The component along side 4 is
+  choices:
+  - 60 N
+  - 100 N
+  - 125 N
+  - 80 N
+  answer: D
+  solution: '**D.** 100(4/5)=80 N.'
+  id: OTH-B-Q053
+- knowledge_area: Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-016-04
+  prompt: An engineer is conducting an independent cross-domain review for a instrumented process. In that distinct scenario,
+    a 2 kg mass accelerates at 3 m/s². Net force is
+  choices:
+  - 1.5 N
+  - 5 N
+  - 9 N
+  - 6 N
+  answer: D
+  solution: '**D.** F=ma=2×3=6 N.'
+  id: OTH-B-Q054
+- knowledge_area: Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-016-05
+  prompt: An engineer is conducting an independent cross-domain review for a maintenance program. In that distinct scenario,
+    a wheel rotates at 10 rad/s with radius 0.5 m. Rim speed is
+  choices:
+  - 20 m/s
+  - 0.05 m/s
+  - 5 m/s
+  - 10 m/s
+  answer: C
+  solution: '**C.** v=rω=0.5×10=5 m/s.'
+  id: OTH-B-Q055
+- knowledge_area: Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-016-06
+  prompt: An engineer is conducting an separate validation exercise for a pilot facility. In that distinct scenario, impulse
+    equals change in
+  choices:
+  - spring constant
+  - linear momentum
+  - temperature
+  - mass
+  answer: B
+  solution: '**B.** J=Δ(mv).'
+  id: OTH-B-Q056
+- knowledge_area: Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-016-07
+  prompt: An engineer is conducting an separate validation exercise for a remote equipment package. In that distinct scenario,
+    kinetic energy of 4 kg moving at 3 m/s is
+  choices:
+  - 18 J
+  - 6 J
+  - 12 J
+  - 36 J
+  answer: A
+  solution: '**A.** KE=mv²/2=4×9/2=18 J.'
+  id: OTH-B-Q057
+- knowledge_area: Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-017-01
+  prompt: An engineer is conducting an separate validation exercise for a production support system. In that distinct scenario,
+    for constant acceleration, displacement follows
+  choices:
+  - x=at only
+  - x=v/t
+  - x=a/t²
+  - x=x0+v0t+½at²
+  answer: D
+  solution: '**D.** This is the standard constant-acceleration kinematic relation.'
+  id: OTH-B-Q058
+- knowledge_area: Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-017-02
+  prompt: An engineer is conducting an separate validation exercise for a building retrofit. In that distinct scenario, velocity
+    changes from 0 to 20 m/s in 5 s uniformly. Acceleration is
+  choices:
+  - 5 m/s²
+  - 100 m/s²
+  - 4 m/s²
+  - 2 m/s²
+  answer: C
+  solution: '**C.** a=Δv/Δt=20/5=4 m/s².'
+  id: OTH-B-Q059
+- knowledge_area: Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-017-03
+  prompt: An engineer is conducting an separate validation exercise for a prototype assembly. In that distinct scenario, a
+    2 kg mass accelerates at 3 m/s². Net force is
+  choices:
+  - 9 N
+  - 6 N
+  - 1.5 N
+  - 5 N
+  answer: B
+  solution: '**B.** F=ma=2×3=6 N.'
+  id: OTH-B-Q060
+- knowledge_area: Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-017-04
+  prompt: An engineer is conducting an separate validation exercise for a water-energy project. In that distinct scenario,
+    a wheel rotates at 10 rad/s with radius 0.5 m. Rim speed is
+  choices:
+  - 5 m/s
+  - 10 m/s
+  - 20 m/s
+  - 0.05 m/s
+  answer: A
+  solution: '**A.** v=rω=0.5×10=5 m/s.'
+  id: OTH-B-Q061
+- knowledge_area: Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-017-05
+  prompt: An engineer is conducting an separate validation exercise for a instrumented process. In that distinct scenario,
+    impulse equals change in
+  choices:
+  - temperature
+  - mass
+  - spring constant
+  - linear momentum
+  answer: D
+  solution: '**D.** J=Δ(mv).'
+  id: OTH-B-Q062
+- knowledge_area: Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-017-06
+  prompt: An engineer is conducting an separate validation exercise for a maintenance program. In that distinct scenario,
+    kinetic energy of 4 kg moving at 3 m/s is
+  choices:
+  - 12 J
+  - 36 J
+  - 18 J
+  - 6 J
+  answer: C
+  solution: '**C.** KE=mv²/2=4×9/2=18 J.'
+  id: OTH-B-Q063
+- knowledge_area: Strength of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-026-04
+  prompt: An engineer is conducting an alternate design study for a pilot facility. In that distinct scenario, linear elastic
+    uniaxial loading follows
+  choices:
+  - σ=ε/E
+  - E=σε²
+  - σ=E/ε
+  - σ=Eε
+  answer: D
+  solution: '**D.** Hooke''s law is σ=Eε.'
+  id: OTH-B-Q064
+- knowledge_area: Strength of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-026-05
+  prompt: An engineer is conducting an alternate design study for a remote equipment package. In that distinct scenario, bending
+    normal stress varies
+  choices:
+  - with time only
+  - independently of moment
+  - linearly with distance from the neutral axis
+  - uniformly across depth
+  answer: C
+  solution: '**C.** σ=My/I.'
+  id: OTH-B-Q065
+- knowledge_area: Strength of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-026-06
+  prompt: An engineer is conducting an alternate design study for a production support system. In that distinct scenario,
+    circular-shaft torsional shear stress is proportional to
+  choices:
+  - inverse torque
+  - radius
+  - temperature
+  - length only
+  answer: B
+  solution: '**B.** τ=Tr/J.'
+  id: OTH-B-Q066
+- knowledge_area: Strength of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-026-07
+  prompt: An engineer is conducting an alternate design study for a building retrofit. In that distinct scenario, stress concentration
+    factor equals
+  choices:
+  - peak local stress divided by nominal stress
+  - nominal divided by peak
+  - strain/area
+  - load/length
+  answer: A
+  solution: '**A.** Kt=σmax/σnom.'
+  id: OTH-B-Q067
+- knowledge_area: Strength of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-03
+  prompt: An engineer is conducting an alternate design study for a prototype assembly. In that distinct scenario, fatigue
+    can occur at stresses
+  choices:
+  - only above ultimate strength
+  - only at zero cycles
+  - independent of cycles
+  - below static yield under repeated cycling
+  answer: D
+  solution: '**D.** Repeated loading can cause fatigue below yield.'
+  id: OTH-B-Q068
+- knowledge_area: Strength of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-01
+  prompt: An engineer is conducting an alternate design study for a water-energy project. In that distinct scenario, a 20
+    kN axial load acts on 200 mm². Normal stress is
+  choices:
+  - 40 MPa
+  - 400 MPa
+  - 100 MPa
+  - 10 MPa
+  answer: C
+  solution: '**C.** σ=P/A=20000/(200×10^-6)=100 MPa.'
+  id: OTH-B-Q069
+- knowledge_area: Strength of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-02
+  prompt: An engineer is conducting an alternate design study for a instrumented process. In that distinct scenario, linear
+    elastic uniaxial loading follows
+  choices:
+  - σ=E/ε
+  - σ=Eε
+  - σ=ε/E
+  - E=σε²
+  answer: B
+  solution: '**B.** Hooke''s law is σ=Eε.'
+  id: OTH-B-Q070
+- knowledge_area: Strength of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-04
+  prompt: An engineer is conducting an alternate design study for a maintenance program. In that distinct scenario, bending
+    normal stress varies
+  choices:
+  - linearly with distance from the neutral axis
+  - uniformly across depth
+  - with time only
+  - independently of moment
+  answer: A
+  solution: '**A.** σ=My/I.'
+  id: OTH-B-Q071
+- knowledge_area: Strength of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-05
+  prompt: An engineer is conducting an fresh operating case for a pilot facility. In that distinct scenario, circular-shaft
+    torsional shear stress is proportional to
+  choices:
+  - temperature
+  - length only
+  - inverse torque
+  - radius
+  answer: D
+  solution: '**D.** τ=Tr/J.'
+  id: OTH-B-Q072
+- knowledge_area: Strength of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-06
+  prompt: An engineer is conducting an fresh operating case for a remote equipment package. In that distinct scenario, stress
+    concentration factor equals
+  choices:
+  - strain/area
+  - load/length
+  - peak local stress divided by nominal stress
+  - nominal divided by peak
+  answer: C
+  solution: '**C.** Kt=σmax/σnom.'
+  id: OTH-B-Q073
+- knowledge_area: Strength of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-07
+  prompt: An engineer is conducting an fresh operating case for a production support system. In that distinct scenario, fatigue
+    can occur at stresses
+  choices:
+  - independent of cycles
+  - below static yield under repeated cycling
+  - only above ultimate strength
+  - only at zero cycles
+  answer: B
+  solution: '**B.** Repeated loading can cause fatigue below yield.'
+  id: OTH-B-Q074
+- knowledge_area: Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-027-04
+  prompt: An engineer is conducting an fresh operating case for a building retrofit. In that distinct scenario, a ductile
+    material shows
+  choices:
+  - zero strain before fracture
+  - zero toughness
+  - perfect brittleness
+  - substantial plastic deformation before fracture
+  answer: D
+  solution: '**D.** Ductility is capacity for plastic deformation.'
+  id: OTH-B-Q075
+- knowledge_area: Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-027-05
+  prompt: An engineer is conducting an fresh operating case for a prototype assembly. In that distinct scenario, annealing
+    commonly
+  choices:
+  - removes atoms
+  - creates only brittle phases
+  - relieves residual stress and reduces hardness
+  - increases all residual stress
+  answer: C
+  solution: '**C.** Annealing promotes recovery/recrystallization.'
+  id: OTH-B-Q076
+- knowledge_area: Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-027-06
+  prompt: An engineer is conducting an fresh operating case for a water-energy project. In that distinct scenario, casting
+    forms parts by
+  choices:
+  - bonding sheet only
+  - solidifying material in a mold
+  - removing chips only
+  - threading only
+  answer: B
+  solution: '**B.** Molten material fills a mold and solidifies.'
+  id: OTH-B-Q077
+- knowledge_area: Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-027-07
+  prompt: An engineer is conducting an fresh operating case for a instrumented process. In that distinct scenario, machining
+    is primarily
+  choices:
+  - subtractive manufacturing
+  - additive only
+  - heat treatment only
+  - joining only
+  answer: A
+  solution: '**A.** Machining removes material.'
+  id: OTH-B-Q078
+- knowledge_area: Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-028-01
+  prompt: An engineer is conducting an fresh operating case for a maintenance program. In that distinct scenario, material
+    selection should consider
+  choices:
+  - color only
+  - supplier name only
+  - density alone
+  - properties, environment, manufacturability, and cost
+  answer: D
+  solution: '**D.** Selection balances multiple requirements.'
+  id: OTH-B-Q079
+- knowledge_area: Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-028-02
+  prompt: An engineer is conducting an new risk assessment for a pilot facility. In that distinct scenario, young's modulus
+    measures
+  choices:
+  - thermal conductivity
+  - hardness only
+  - elastic stiffness
+  - density only
+  answer: C
+  solution: '**C.** E is the elastic stress-strain slope.'
+  id: OTH-B-Q080
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-046-04
+  prompt: An engineer is conducting an new risk assessment for a remote equipment package. In that distinct scenario, reynolds
+    number compares
+  choices:
+  - pressure and temperature
+  - heat and mass
+  - voltage and current
+  - inertial and viscous effects
+  answer: D
+  solution: '**D.** Re=ρVD/μ.'
+  id: OTH-B-Q081
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-046-05
+  prompt: An engineer is conducting an new risk assessment for a production support system. In that distinct scenario, steady
+    incompressible continuity enforces
+  choices:
+  - zero pressure
+  - zero velocity
+  - mass-flow conservation
+  - temperature conservation only
+  answer: C
+  solution: '**C.** Mass flow entering equals mass flow leaving.'
+  id: OTH-B-Q082
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-046-06
+  prompt: An engineer is conducting an new risk assessment for a building retrofit. In that distinct scenario, bernoulli's
+    equation relates pressure, velocity, and
+  choices:
+  - entropy only
+  - elevation head
+  - electrical charge
+  - yield strength
+  answer: B
+  solution: '**B.** The mechanical-energy terms include p/γ, V²/2g, and z.'
+  id: OTH-B-Q083
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-046-07
+  prompt: An engineer is conducting an new risk assessment for a prototype assembly. In that distinct scenario, darcy-Weisbach
+    head loss contains
+  choices:
+  - f(L/D)V²/(2g)
+  - V only
+  - 1/L
+  - D² only
+  answer: A
+  solution: '**A.** That is the standard pipe-friction form.'
+  id: OTH-B-Q084
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-01
+  prompt: An engineer is conducting an new risk assessment for a water-energy project. In that distinct scenario, hydrostatic
+    pressure change is
+  choices:
+  - μV/D
+  - kAΔT/L
+  - I²R
+  - ρgΔh
+  answer: D
+  solution: '**D.** Hydrostatic balance gives Δp=ρgΔh.'
+  id: OTH-B-Q085
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-02
+  prompt: An engineer is conducting an new risk assessment for a instrumented process. In that distinct scenario, flow at
+    3 m/s in a 0.2 m diameter pipe has Q
+  choices:
+  - 0.600 m³/s
+  - 0.047 m³/s
+  - 0.094 m³/s
+  - 0.188 m³/s
+  answer: C
+  solution: '**C.** Q=VA=0.094 m³/s.'
+  id: OTH-B-Q086
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-03
+  prompt: An engineer is conducting an new risk assessment for a maintenance program. In that distinct scenario, reynolds
+    number compares
+  choices:
+  - voltage and current
+  - inertial and viscous effects
+  - pressure and temperature
+  - heat and mass
+  answer: B
+  solution: '**B.** Re=ρVD/μ.'
+  id: OTH-B-Q087
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-04
+  prompt: An engineer is conducting an independent calculation audit for a pilot facility. In that distinct scenario, steady
+    incompressible continuity enforces
+  choices:
+  - mass-flow conservation
+  - temperature conservation only
+  - zero pressure
+  - zero velocity
+  answer: A
+  solution: '**A.** Mass flow entering equals mass flow leaving.'
+  id: OTH-B-Q088
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-05
+  prompt: An engineer is conducting an independent calculation audit for a remote equipment package. In that distinct scenario,
+    bernoulli's equation relates pressure, velocity, and
+  choices:
+  - electrical charge
+  - yield strength
+  - entropy only
+  - elevation head
+  answer: D
+  solution: '**D.** The mechanical-energy terms include p/γ, V²/2g, and z.'
+  id: OTH-B-Q089
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-06
+  prompt: An engineer is conducting an independent calculation audit for a production support system. In that distinct scenario,
+    darcy-Weisbach head loss contains
+  choices:
+  - 1/L
+  - D² only
+  - f(L/D)V²/(2g)
+  - V only
+  answer: C
+  solution: '**C.** That is the standard pipe-friction form.'
+  id: OTH-B-Q090
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-07
+  prompt: An engineer is conducting an independent calculation audit for a building retrofit. In that distinct scenario, hydrostatic
+    pressure change is
+  choices:
+  - I²R
+  - ρgΔh
+  - μV/D
+  - kAΔT/L
+  answer: B
+  solution: '**B.** Hydrostatic balance gives Δp=ρgΔh.'
+  id: OTH-B-Q091
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-043-01
+  prompt: An engineer is conducting an independent calculation audit for a prototype assembly. In that distinct scenario,
+    flow at 3 m/s in a 0.2 m diameter pipe has Q
+  choices:
+  - 0.094 m³/s
+  - 0.188 m³/s
+  - 0.600 m³/s
+  - 0.047 m³/s
+  answer: A
+  solution: '**A.** Q=VA=0.094 m³/s.'
+  id: OTH-B-Q092
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-043-02
+  prompt: An engineer is conducting an independent calculation audit for a water-energy project. In that distinct scenario,
+    reynolds number compares
+  choices:
+  - pressure and temperature
+  - heat and mass
+  - voltage and current
+  - inertial and viscous effects
+  answer: D
+  solution: '**D.** Re=ρVD/μ.'
+  id: OTH-B-Q093
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-043-03
+  prompt: An engineer is conducting an independent calculation audit for a instrumented process. In that distinct scenario,
+    steady incompressible continuity enforces
+  choices:
+  - zero pressure
+  - zero velocity
+  - mass-flow conservation
+  - temperature conservation only
+  answer: C
+  solution: '**C.** Mass flow entering equals mass flow leaving.'
+  id: OTH-B-Q094
+- knowledge_area: Basic Electrical Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-063-04
+  prompt: An engineer is conducting an independent calculation audit for a maintenance program. In that distinct scenario,
+    a 10 Ω resistor carrying 3 A dissipates
+  choices:
+  - 30 W
+  - 3.33 W
+  - 300 W
+  - 90 W
+  answer: D
+  solution: '**D.** P=I²R=3²×10=90 W.'
+  id: OTH-B-Q095
+- knowledge_area: Basic Electrical Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-063-05
+  prompt: An engineer is conducting an independent cross-domain review for a pilot facility. In that distinct scenario, two
+    6 Ω resistors in parallel have equivalent resistance
+  choices:
+  - 12 Ω
+  - 1 Ω
+  - 3 Ω
+  - 6 Ω
+  answer: C
+  solution: '**C.** Req=6 Ω/2=3 Ω.'
+  id: OTH-B-Q096
+- knowledge_area: Basic Electrical Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-063-06
+  prompt: An engineer is conducting an independent cross-domain review for a remote equipment package. In that distinct scenario,
+    for sinusoidal voltage and current in phase, power factor is
+  choices:
+  - '-1'
+  - '1'
+  - '0'
+  - '0.5'
+  answer: B
+  solution: '**B.** Power factor=cos0=1.'
+  id: OTH-B-Q097
+- knowledge_area: Basic Electrical Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-063-07
+  prompt: An engineer is conducting an independent cross-domain review for a production support system. In that distinct scenario,
+    an ideal transformer steps 120 V to 24 V. Np/Ns is
+  choices:
+  - '5'
+  - '0.2'
+  - '24'
+  - '144'
+  answer: A
+  solution: '**A.** Np/Ns=Vp/Vs=120/24=5.'
+  id: OTH-B-Q098
+- knowledge_area: Basic Electrical Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-064-01
+  prompt: An engineer is conducting an independent cross-domain review for a building retrofit. In that distinct scenario,
+    magnetic flux density is measured in
+  choices:
+  - ohm
+  - watt
+  - coulomb
+  - tesla
+  answer: D
+  solution: '**D.** The SI unit is tesla.'
+  id: OTH-B-Q099
+- knowledge_area: Basic Electrical Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-064-02
+  prompt: An engineer is conducting an independent cross-domain review for a prototype assembly. In that distinct scenario,
+    24 V across 12 Ω produces current
+  choices:
+  - 12 A
+  - 288 A
+  - 2 A
+  - 0.5 A
+  answer: C
+  solution: '**C.** I=V/R=24/12=2 A.'
+  id: OTH-B-Q100
+- knowledge_area: Basic Electrical Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-064-03
+  prompt: An engineer is conducting an independent cross-domain review for a water-energy project. In that distinct scenario,
+    a 10 Ω resistor carrying 3 A dissipates
+  choices:
+  - 300 W
+  - 90 W
+  - 30 W
+  - 3.33 W
+  answer: B
+  solution: '**B.** P=I²R=3²×10=90 W.'
+  id: OTH-B-Q101
+- knowledge_area: Thermodynamics and Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-052-04
+  prompt: An engineer is conducting an independent cross-domain review for a instrumented process. In that distinct scenario,
+    a closed-system first-law balance expresses
+  choices:
+  - mass creation
+  - entropy destruction
+  - charge neutrality only
+  - energy conservation
+  answer: D
+  solution: '**D.** The first law is conservation of energy.'
+  id: OTH-B-Q102
+- knowledge_area: Thermodynamics and Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-052-05
+  prompt: An engineer is conducting an independent cross-domain review for a maintenance program. In that distinct scenario,
+    heat-engine efficiency is
+  choices:
+  - mass flow/pressure
+  - temperature/volume
+  - net work output divided by heat input
+  - heat rejected/work
+  answer: C
+  solution: '**C.** η=Wnet/Qin.'
+  id: OTH-B-Q103
+- knowledge_area: Thermodynamics and Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-052-06
+  prompt: An engineer is conducting an separate validation exercise for a pilot facility. In that distinct scenario, steady
+    one-dimensional plane-wall conduction follows
+  choices:
+  - Pascal's law
+  - Fourier's law
+  - Ohm's law only
+  - Hooke's law
+  answer: B
+  solution: '**B.** q=-kA dT/dx.'
+  id: OTH-B-Q104
+- knowledge_area: Thermodynamics and Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-052-07
+  prompt: An engineer is conducting an separate validation exercise for a remote equipment package. In that distinct scenario,
+    convective heat transfer is commonly written
+  choices:
+  - q=hA(Ts-T∞)
+  - q=kA/L only
+  - q=mcΔT only
+  - q=I²R
+  answer: A
+  solution: '**A.** Newton''s law of cooling gives q=hAΔT.'
+  id: OTH-B-Q105
+- knowledge_area: Thermodynamics and Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-053-01
+  prompt: An engineer is conducting an separate validation exercise for a production support system. In that distinct scenario,
+    entropy generation for a real irreversible process is
+  choices:
+  - always negative
+  - always zero
+  - equal to enthalpy
+  - nonnegative
+  answer: D
+  solution: '**D.** The second law requires Sgen≥0.'
+  id: OTH-B-Q106
+- knowledge_area: Thermodynamics and Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-053-02
+  prompt: An engineer is conducting an separate validation exercise for a building retrofit. In that distinct scenario, for
+    an ideal gas, PV equals
+  choices:
+  - kAΔT/L
+  - I²R
+  - nRT
+  - mcΔT
+  answer: C
+  solution: '**C.** The ideal-gas equation is PV=nRT.'
+  id: OTH-B-Q107
+- knowledge_area: Thermodynamics and Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-053-03
+  prompt: An engineer is conducting an separate validation exercise for a prototype assembly. In that distinct scenario, a
+    closed-system first-law balance expresses
+  choices:
+  - charge neutrality only
+  - energy conservation
+  - mass creation
+  - entropy destruction
+  answer: B
+  solution: '**B.** The first law is conservation of energy.'
+  id: OTH-B-Q108
+- knowledge_area: Thermodynamics and Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-053-04
+  prompt: An engineer is conducting an separate validation exercise for a water-energy project. In that distinct scenario,
+    heat-engine efficiency is
+  choices:
+  - net work output divided by heat input
+  - heat rejected/work
+  - mass flow/pressure
+  - temperature/volume
+  answer: A
+  solution: '**A.** η=Wnet/Qin.'
+  id: OTH-B-Q109
+- knowledge_area: Thermodynamics and Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-053-05
+  prompt: An engineer is conducting an separate validation exercise for a instrumented process. In that distinct scenario,
+    steady one-dimensional plane-wall conduction follows
+  choices:
+  - Ohm's law only
+  - Hooke's law
+  - Pascal's law
+  - Fourier's law
+  answer: D
+  solution: '**D.** q=-kA dT/dx.'
+  id: OTH-B-Q110

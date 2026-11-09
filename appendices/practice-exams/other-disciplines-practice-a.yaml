@@ -1,0 +1,1449 @@
+schema_version: 1
+exam_type: practice-A
+discipline: other-disciplines
+exam: A
+question_count: 110
+appointment_minutes: 355
+working_time_minutes: 320
+blueprint_source: meta/exam-blueprints.yaml
+items:
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-001-01
+  prompt: During a design review for a manufacturing cell, for y=3x²+2x, find dy/dx at x=2.
+  choices:
+  - '12'
+  - '18'
+  - '14'
+  - '8'
+  answer: C
+  solution: '**C.** dy/dx=6x+2=14.'
+  id: OTH-A-Q001
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-001-02
+  prompt: During a design review for a test laboratory, evaluate ∫_0^3 2x dx.
+  choices:
+  - '18'
+  - '9'
+  - '6'
+  - '12'
+  answer: B
+  solution: '**B.** Integral=x², so the value is 9.'
+  id: OTH-A-Q002
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-001-03
+  prompt: During a design review for a facility upgrade, solve 4x+3=23.
+  choices:
+  - '5'
+  - '4'
+  - '6'
+  - '20'
+  answer: A
+  solution: '**A.** 4x=20, so x=5.'
+  id: OTH-A-Q003
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-002-01
+  prompt: During a design review for a field installation, find the determinant of [[2,1],[3,4]].
+  choices:
+  - '8'
+  - '11'
+  - '-5'
+  - '5'
+  answer: D
+  solution: '**D.** det=2(4)-1(3)=5.'
+  id: OTH-A-Q004
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-002-02
+  prompt: During a design review for a process skid, a line through (2,3) and (6,15) has slope
+  choices:
+  - '4'
+  - '12'
+  - '3'
+  - '2'
+  answer: C
+  solution: '**C.** m=(15-3)/(6-2)=3.'
+  id: OTH-A-Q005
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-002-03
+  prompt: During a design review for a energy system, evaluate log10(10000).
+  choices:
+  - '100'
+  - '4'
+  - '3'
+  - '10'
+  answer: B
+  solution: '**B.** 10^4=10000, so log10(10000)=4.'
+  id: OTH-A-Q006
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-002-04
+  prompt: During a design review for a service operation, for y=3x²+2x, find dy/dx at x=2.
+  choices:
+  - '14'
+  - '8'
+  - '12'
+  - '18'
+  answer: A
+  solution: '**A.** dy/dx=6x+2=14.'
+  id: OTH-A-Q007
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1B-004-01
+  prompt: During a technical assessment for a utility project, evaluate ∫_0^3 2x dx.
+  choices:
+  - '6'
+  - '12'
+  - '18'
+  - '9'
+  answer: D
+  solution: '**D.** Integral=x², so the value is 9.'
+  id: OTH-A-Q008
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1B-004-02
+  prompt: During a technical assessment for a manufacturing cell, solve 4x+3=23.
+  choices:
+  - '6'
+  - '20'
+  - '5'
+  - '4'
+  answer: C
+  solution: '**C.** 4x=20, so x=5.'
+  id: OTH-A-Q009
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-01
+  prompt: During a technical assessment for a test laboratory, a normal observation has x=70, μ=60, σ=5. Find z.
+  choices:
+  - '5'
+  - '10'
+  - '2'
+  - '1'
+  answer: C
+  solution: '**C.** z=(70-60)/5=2.'
+  id: OTH-A-Q010
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-02
+  prompt: During a technical assessment for a facility upgrade, for independent events A and B, P(A∩B) equals
+  choices:
+  - 1-P(A)
+  - P(A)P(B)
+  - P(A)+P(B)
+  - P(A)-P(B)
+  answer: B
+  solution: '**B.** Independence gives P(A∩B)=P(A)P(B).'
+  id: OTH-A-Q011
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-03
+  prompt: During a technical assessment for a field installation, for n=100 and population σ=20, the standard error is
+  choices:
+  - '2'
+  - '0.2'
+  - '10'
+  - '20'
+  answer: A
+  solution: '**A.** SE=σ/√n=20/10=2.'
+  id: OTH-A-Q012
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-04
+  prompt: During a technical assessment for a process skid, a success probability is 0.8. Probability of 3 independent successes
+    is
+  choices:
+  - '0.200'
+  - '0.600'
+  - '0.800'
+  - '0.512'
+  answer: D
+  solution: '**D.** P=0.8^3=0.512.'
+  id: OTH-A-Q013
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-05
+  prompt: During a technical assessment for a energy system, which distribution models successes in a fixed number of Bernoulli
+    trials?
+  choices:
+  - exponential
+  - uniform
+  - binomial
+  - normal
+  answer: C
+  solution: '**C.** The binomial distribution applies.'
+  id: OTH-A-Q014
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-06
+  prompt: During a technical assessment for a service operation, increasing sample size generally makes a confidence interval
+  choices:
+  - invalid
+  - narrower
+  - wider
+  - unchanged
+  answer: B
+  solution: '**B.** Larger n reduces standard error.'
+  id: OTH-A-Q015
+- knowledge_area: Chemistry
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1C-022-01
+  prompt: During a verification check for a utility project, for [H+]=1×10^-6 M, pH is
+  choices:
+  - '8'
+  - '14'
+  - '6'
+  - '1'
+  answer: C
+  solution: '**C.** pH=-log10(10^-6)=6.'
+  id: OTH-A-Q016
+- knowledge_area: Chemistry
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1C-022-02
+  prompt: During a verification check for a manufacturing cell, at 25°C, if pH=9, pOH is
+  choices:
+  - '23'
+  - '5'
+  - '9'
+  - '14'
+  answer: B
+  solution: '**B.** pH+pOH=14, so pOH=5.'
+  id: OTH-A-Q017
+- knowledge_area: Chemistry
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1C-022-03
+  prompt: During a verification check for a test laboratory, oxidation corresponds to
+  choices:
+  - loss of electrons
+  - gain of electrons
+  - gain of protons only
+  - no oxidation-state change
+  answer: A
+  solution: '**A.** Oxidation is electron loss.'
+  id: OTH-A-Q018
+- knowledge_area: Chemistry
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1C-022-04
+  prompt: During a verification check for a facility upgrade, if ion product exceeds Ksp, the solution is driven toward
+  choices:
+  - complete vaporization
+  - infinite solubility
+  - no reaction
+  - precipitation
+  answer: D
+  solution: '**D.** Ion product>Ksp indicates supersaturation.'
+  id: OTH-A-Q019
+- knowledge_area: Chemistry
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1C-022-05
+  prompt: During a verification check for a field installation, a buffer resists changes primarily in
+  choices:
+  - viscosity
+  - mass
+  - pH
+  - density
+  answer: C
+  solution: '**C.** A buffer limits pH change after modest acid/base addition.'
+  id: OTH-A-Q020
+- knowledge_area: Instrumentation and Controls
+  question_type: multiple-choice
+  requires_concepts:
+  - INST-2F-066-01
+  prompt: During a verification check for a process skid, accuracy is closeness to
+  choices:
+  - range only
+  - resolution only
+  - the true or accepted value
+  - repeatability only
+  answer: C
+  solution: '**C.** Accuracy describes correctness.'
+  id: OTH-A-Q021
+- knowledge_area: Instrumentation and Controls
+  question_type: multiple-choice
+  requires_concepts:
+  - INST-2F-066-02
+  prompt: During a verification check for a energy system, precision is primarily
+  choices:
+  - calibration interval
+  - repeatability of measurements
+  - closeness to truth only
+  - sensor range
+  answer: B
+  solution: '**B.** Precision describes scatter/repeatability.'
+  id: OTH-A-Q022
+- knowledge_area: Instrumentation and Controls
+  question_type: multiple-choice
+  requires_concepts:
+  - INST-2F-066-03
+  prompt: During a verification check for a service operation, a first-order sensor reaches about 63.2% of a step after
+  choices:
+  - one time constant
+  - two time constants
+  - half a period
+  - zero time
+  answer: A
+  solution: '**A.** 1-e^-1=0.632.'
+  id: OTH-A-Q023
+- knowledge_area: Instrumentation and Controls
+  question_type: multiple-choice
+  requires_concepts:
+  - INST-2F-066-04
+  prompt: During a operations review for a utility project, negative feedback generally tends to
+  choices:
+  - guarantee instability
+  - remove sensing
+  - increase uncertainty
+  - reduce error and improve regulation
+  answer: D
+  solution: '**D.** Feedback acts on the error signal.'
+  id: OTH-A-Q024
+- knowledge_area: Instrumentation and Controls
+  question_type: multiple-choice
+  requires_concepts:
+  - INST-2F-066-05
+  prompt: During a operations review for a manufacturing cell, a strain gauge responds to strain by changing
+  choices:
+  - density
+  - pressure only
+  - electrical resistance
+  - mass
+  answer: C
+  solution: '**C.** Gauge factor relates resistance change to strain.'
+  id: OTH-A-Q025
+- knowledge_area: Engineering Ethics and Societal Impacts
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-01
+  prompt: During a operations review for a test laboratory, a credible safety hazard is discovered. The first professional
+    obligation is to
+  choices:
+  - conceal the hazard
+  - wait for failure
+  - protect health, safety, and welfare
+  - protect schedule
+  answer: C
+  solution: '**C.** Public welfare is paramount.'
+  id: OTH-A-Q026
+- knowledge_area: Engineering Ethics and Societal Impacts
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-02
+  prompt: During a operations review for a facility upgrade, a material conflict of interest should be
+  choices:
+  - shifted to a vendor
+  - disclosed
+  - hidden
+  - ignored
+  answer: B
+  solution: '**B.** Material conflicts require disclosure.'
+  id: OTH-A-Q027
+- knowledge_area: Engineering Ethics and Societal Impacts
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-03
+  prompt: During a operations review for a field installation, work outside one's competence should be
+  choices:
+  - declined or supported by qualified expertise
+  - approved anyway
+  - copied from unrelated work
+  - performed without review
+  answer: A
+  solution: '**A.** Engineers must practice within competence.'
+  id: OTH-A-Q028
+- knowledge_area: Engineering Ethics and Societal Impacts
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-04
+  prompt: During a operations review for a process skid, a material released-design error should be
+  choices:
+  - concealed
+  - ignored
+  - deleted from records
+  - corrected and communicated
+  answer: D
+  solution: '**D.** Material errors affecting decisions must be addressed.'
+  id: OTH-A-Q029
+- knowledge_area: Engineering Ethics and Societal Impacts
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-05
+  prompt: During a operations review for a energy system, societal impacts of an engineering decision should be
+  choices:
+  - treated as zero
+  - evaluated only after failure
+  - considered alongside technical and economic effects
+  - ignored
+  answer: C
+  solution: '**C.** Engineering decisions can have broader public consequences.'
+  id: OTH-A-Q030
+- knowledge_area: Safety, Health, and Environment
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-003-01
+  prompt: During a operations review for a service operation, the hierarchy of controls generally prefers
+  choices:
+  - warnings only
+  - no controls
+  - elimination or substitution before PPE
+  - PPE before elimination always
+  answer: C
+  solution: '**C.** Source controls are generally more reliable.'
+  id: OTH-A-Q031
+- knowledge_area: Safety, Health, and Environment
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-003-02
+  prompt: During a failure investigation for a utility project, risk is commonly evaluated using
+  choices:
+  - temperature only
+  - likelihood and consequence
+  - cost only
+  - schedule only
+  answer: B
+  solution: '**B.** Risk combines probability/frequency with severity.'
+  id: OTH-A-Q032
+- knowledge_area: Safety, Health, and Environment
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-003-03
+  prompt: During a failure investigation for a manufacturing cell, a confined-space atmosphere should be evaluated for
+  choices:
+  - oxygen, toxic, and flammable hazards
+  - color only
+  - noise only
+  - lighting only
+  answer: A
+  solution: '**A.** Atmospheric hazards are primary confined-space concerns.'
+  id: OTH-A-Q033
+- knowledge_area: Safety, Health, and Environment
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-003-04
+  prompt: During a failure investigation for a test laboratory, a safety factor is used primarily to
+  choices:
+  - eliminate uncertainty completely
+  - increase demand
+  - remove inspection
+  - provide margin between capacity and demand
+  answer: D
+  solution: '**D.** Safety factors provide design margin.'
+  id: OTH-A-Q034
+- knowledge_area: Safety, Health, and Environment
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-003-05
+  prompt: During a failure investigation for a facility upgrade, environmental source reduction is preferred because it
+  choices:
+  - eliminates all regulation
+  - always costs more
+  - prevents waste before treatment or disposal
+  - increases waste
+  answer: C
+  solution: '**C.** Prevention occurs upstream of control/disposal.'
+  id: OTH-A-Q035
+- knowledge_area: Safety, Health, and Environment
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-003-06
+  prompt: During a failure investigation for a field installation, an incident investigation should focus on
+  choices:
+  - concealment
+  - root and contributing causes
+  - blame only
+  - schedule recovery only
+  answer: B
+  solution: '**B.** Corrective action depends on understanding causal factors.'
+  id: OTH-A-Q036
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-01
+  prompt: During a failure investigation for a process skid, a future cost of $20,000 occurs in 5 years at 6%. Present worth
+    is
+  choices:
+  - $26764.5
+  - $15384.6
+  - $14945.2
+  - $20000
+  answer: C
+  solution: '**C.** P=20000/(1.06)^5=$14945.2.'
+  id: OTH-A-Q037
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-02
+  prompt: During a failure investigation for a energy system, a $60,000 project saves $15,000/year ignoring time value. Simple
+    payback is
+  choices:
+  - 15 years
+  - 4 years
+  - 2 years
+  - 5 years
+  answer: B
+  solution: '**B.** 60000/15000=4 years.'
+  id: OTH-A-Q038
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-03
+  prompt: During a failure investigation for a service operation, for equal-service alternatives, present-worth analysis generally
+    chooses
+  choices:
+  - greatest net present worth
+  - highest first cost
+  - longest life only
+  - lowest salvage
+  answer: A
+  solution: '**A.** Use a common economic basis and choose greatest net PW.'
+  id: OTH-A-Q039
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-04
+  prompt: During a planning study for a utility project, fixed cost is $40,000 and contribution margin is $10/unit. Break-even
+    volume is
+  choices:
+  - 400 units
+  - 40 units
+  - 40000 units
+  - 4000 units
+  answer: D
+  solution: '**D.** Q=F/(p-v)=40000/10=4000 units.'
+  id: OTH-A-Q040
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-05
+  prompt: During a planning study for a manufacturing cell, depreciation represents
+  choices:
+  - loan principal only
+  - salvage paid annually
+  - allocation of asset cost over useful life
+  - cash revenue
+  answer: C
+  solution: '**C.** Depreciation allocates capital cost.'
+  id: OTH-A-Q041
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-06
+  prompt: During a planning study for a test laboratory, future worth of $10,000 at 5% for 4 years is
+  choices:
+  - $12000.0
+  - $12155.1
+  - $10000
+  - $8227.0
+  answer: B
+  solution: '**B.** F=P(1+i)^n=$12155.1.'
+  id: OTH-A-Q042
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-011-01
+  prompt: During a planning study for a facility upgrade, a 100 N force acts 2 m perpendicular to a pivot. Moment is
+  choices:
+  - 100 N·m
+  - 202 N·m
+  - 200 N·m
+  - 50 N·m
+  answer: C
+  solution: '**C.** M=Fd=100×2=200 N·m.'
+  id: OTH-A-Q043
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-011-02
+  prompt: During a planning study for a field installation, a centered 10 kN load on a simply supported beam gives each vertical
+    reaction
+  choices:
+  - 20 kN
+  - 5 kN
+  - 2.5 kN
+  - 10 kN
+  answer: B
+  solution: '**B.** By symmetry and equilibrium, each reaction is 5 kN.'
+  id: OTH-A-Q044
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-011-03
+  prompt: During a planning study for a process skid, planar static equilibrium requires
+  choices:
+  - ΣFx=0, ΣFy=0, ΣM=0
+  - ΣFx=1 only
+  - ΣM=velocity
+  - energy=0 only
+  answer: A
+  solution: '**A.** These are the three independent planar equilibrium equations.'
+  id: OTH-A-Q045
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-011-04
+  prompt: During a planning study for a energy system, a 3-4-5 cable carries 100 N. The component along side 4 is
+  choices:
+  - 60 N
+  - 100 N
+  - 125 N
+  - 80 N
+  answer: D
+  solution: '**D.** 100(4/5)=80 N.'
+  id: OTH-A-Q046
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-011-05
+  prompt: During a planning study for a service operation, the centroid of a rectangle is at
+  choices:
+  - one-third width only
+  - outside the shape
+  - its geometric center
+  - one corner
+  answer: C
+  solution: '**C.** Symmetry places it at the center.'
+  id: OTH-A-Q047
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-011-06
+  prompt: During a design review for a utility project, at impending sliding, maximum static friction is
+  choices:
+  - zero
+  - μsN
+  - N/μs
+  - μs/N
+  answer: B
+  solution: '**B.** Fmax=μsN.'
+  id: OTH-A-Q048
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-011-07
+  prompt: During a design review for a manufacturing cell, a 100 N force acts 2 m perpendicular to a pivot. Moment is
+  choices:
+  - 200 N·m
+  - 50 N·m
+  - 100 N·m
+  - 202 N·m
+  answer: A
+  solution: '**A.** M=Fd=100×2=200 N·m.'
+  id: OTH-A-Q049
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-012-01
+  prompt: During a design review for a test laboratory, a centered 10 kN load on a simply supported beam gives each vertical
+    reaction
+  choices:
+  - 2.5 kN
+  - 10 kN
+  - 20 kN
+  - 5 kN
+  answer: D
+  solution: '**D.** By symmetry and equilibrium, each reaction is 5 kN.'
+  id: OTH-A-Q050
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-012-02
+  prompt: During a design review for a facility upgrade, planar static equilibrium requires
+  choices:
+  - ΣM=velocity
+  - energy=0 only
+  - ΣFx=0, ΣFy=0, ΣM=0
+  - ΣFx=1 only
+  answer: C
+  solution: '**C.** These are the three independent planar equilibrium equations.'
+  id: OTH-A-Q051
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-012-03
+  prompt: During a design review for a field installation, a 3-4-5 cable carries 100 N. The component along side 4 is
+  choices:
+  - 125 N
+  - 80 N
+  - 60 N
+  - 100 N
+  answer: B
+  solution: '**B.** 100(4/5)=80 N.'
+  id: OTH-A-Q052
+- knowledge_area: Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-016-01
+  prompt: During a design review for a process skid, velocity changes from 0 to 20 m/s in 5 s uniformly. Acceleration is
+  choices:
+  - 5 m/s²
+  - 100 m/s²
+  - 4 m/s²
+  - 2 m/s²
+  answer: C
+  solution: '**C.** a=Δv/Δt=20/5=4 m/s².'
+  id: OTH-A-Q053
+- knowledge_area: Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-016-02
+  prompt: During a design review for a energy system, a 2 kg mass accelerates at 3 m/s². Net force is
+  choices:
+  - 9 N
+  - 6 N
+  - 1.5 N
+  - 5 N
+  answer: B
+  solution: '**B.** F=ma=2×3=6 N.'
+  id: OTH-A-Q054
+- knowledge_area: Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-016-03
+  prompt: During a design review for a service operation, a wheel rotates at 10 rad/s with radius 0.5 m. Rim speed is
+  choices:
+  - 5 m/s
+  - 10 m/s
+  - 20 m/s
+  - 0.05 m/s
+  answer: A
+  solution: '**A.** v=rω=0.5×10=5 m/s.'
+  id: OTH-A-Q055
+- knowledge_area: Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-016-04
+  prompt: During a technical assessment for a utility project, impulse equals change in
+  choices:
+  - temperature
+  - mass
+  - spring constant
+  - linear momentum
+  answer: D
+  solution: '**D.** J=Δ(mv).'
+  id: OTH-A-Q056
+- knowledge_area: Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-016-05
+  prompt: During a technical assessment for a manufacturing cell, kinetic energy of 4 kg moving at 3 m/s is
+  choices:
+  - 12 J
+  - 36 J
+  - 18 J
+  - 6 J
+  answer: C
+  solution: '**C.** KE=mv²/2=4×9/2=18 J.'
+  id: OTH-A-Q057
+- knowledge_area: Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-016-06
+  prompt: During a technical assessment for a test laboratory, for constant acceleration, displacement follows
+  choices:
+  - x=a/t²
+  - x=x0+v0t+½at²
+  - x=at only
+  - x=v/t
+  answer: B
+  solution: '**B.** This is the standard constant-acceleration kinematic relation.'
+  id: OTH-A-Q058
+- knowledge_area: Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-016-07
+  prompt: During a technical assessment for a facility upgrade, velocity changes from 0 to 20 m/s in 5 s uniformly. Acceleration
+    is
+  choices:
+  - 4 m/s²
+  - 2 m/s²
+  - 5 m/s²
+  - 100 m/s²
+  answer: A
+  solution: '**A.** a=Δv/Δt=20/5=4 m/s².'
+  id: OTH-A-Q059
+- knowledge_area: Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-017-01
+  prompt: During a technical assessment for a field installation, a 2 kg mass accelerates at 3 m/s². Net force is
+  choices:
+  - 1.5 N
+  - 5 N
+  - 9 N
+  - 6 N
+  answer: D
+  solution: '**D.** F=ma=2×3=6 N.'
+  id: OTH-A-Q060
+- knowledge_area: Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-017-02
+  prompt: During a technical assessment for a process skid, a wheel rotates at 10 rad/s with radius 0.5 m. Rim speed is
+  choices:
+  - 20 m/s
+  - 0.05 m/s
+  - 5 m/s
+  - 10 m/s
+  answer: C
+  solution: '**C.** v=rω=0.5×10=5 m/s.'
+  id: OTH-A-Q061
+- knowledge_area: Dynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-017-03
+  prompt: During a technical assessment for a energy system, impulse equals change in
+  choices:
+  - spring constant
+  - linear momentum
+  - temperature
+  - mass
+  answer: B
+  solution: '**B.** J=Δ(mv).'
+  id: OTH-A-Q062
+- knowledge_area: Strength of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-03
+  prompt: During a technical assessment for a service operation, a 20 kN axial load acts on 200 mm². Normal stress is
+  choices:
+  - 40 MPa
+  - 400 MPa
+  - 100 MPa
+  - 10 MPa
+  answer: C
+  solution: '**C.** σ=P/A=20000/(200×10^-6)=100 MPa.'
+  id: OTH-A-Q063
+- knowledge_area: Strength of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-01
+  prompt: During a verification check for a utility project, linear elastic uniaxial loading follows
+  choices:
+  - σ=E/ε
+  - σ=Eε
+  - σ=ε/E
+  - E=σε²
+  answer: B
+  solution: '**B.** Hooke''s law is σ=Eε.'
+  id: OTH-A-Q064
+- knowledge_area: Strength of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-02
+  prompt: During a verification check for a manufacturing cell, bending normal stress varies
+  choices:
+  - linearly with distance from the neutral axis
+  - uniformly across depth
+  - with time only
+  - independently of moment
+  answer: A
+  solution: '**A.** σ=My/I.'
+  id: OTH-A-Q065
+- knowledge_area: Strength of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-04
+  prompt: During a verification check for a test laboratory, circular-shaft torsional shear stress is proportional to
+  choices:
+  - temperature
+  - length only
+  - inverse torque
+  - radius
+  answer: D
+  solution: '**D.** τ=Tr/J.'
+  id: OTH-A-Q066
+- knowledge_area: Strength of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-05
+  prompt: During a verification check for a facility upgrade, stress concentration factor equals
+  choices:
+  - strain/area
+  - load/length
+  - peak local stress divided by nominal stress
+  - nominal divided by peak
+  answer: C
+  solution: '**C.** Kt=σmax/σnom.'
+  id: OTH-A-Q067
+- knowledge_area: Strength of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-06
+  prompt: During a verification check for a field installation, fatigue can occur at stresses
+  choices:
+  - independent of cycles
+  - below static yield under repeated cycling
+  - only above ultimate strength
+  - only at zero cycles
+  answer: B
+  solution: '**B.** Repeated loading can cause fatigue below yield.'
+  id: OTH-A-Q068
+- knowledge_area: Strength of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-07
+  prompt: During a verification check for a process skid, a 20 kN axial load acts on 200 mm². Normal stress is
+  choices:
+  - 100 MPa
+  - 10 MPa
+  - 40 MPa
+  - 400 MPa
+  answer: A
+  solution: '**A.** σ=P/A=20000/(200×10^-6)=100 MPa.'
+  id: OTH-A-Q069
+- knowledge_area: Strength of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-023-01
+  prompt: During a verification check for a energy system, linear elastic uniaxial loading follows
+  choices:
+  - σ=ε/E
+  - E=σε²
+  - σ=E/ε
+  - σ=Eε
+  answer: D
+  solution: '**D.** Hooke''s law is σ=Eε.'
+  id: OTH-A-Q070
+- knowledge_area: Strength of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-023-02
+  prompt: During a verification check for a service operation, bending normal stress varies
+  choices:
+  - with time only
+  - independently of moment
+  - linearly with distance from the neutral axis
+  - uniformly across depth
+  answer: C
+  solution: '**C.** σ=My/I.'
+  id: OTH-A-Q071
+- knowledge_area: Strength of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-023-03
+  prompt: During a operations review for a utility project, circular-shaft torsional shear stress is proportional to
+  choices:
+  - inverse torque
+  - radius
+  - temperature
+  - length only
+  answer: B
+  solution: '**B.** τ=Tr/J.'
+  id: OTH-A-Q072
+- knowledge_area: Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-027-01
+  prompt: During a operations review for a manufacturing cell, young's modulus measures
+  choices:
+  - thermal conductivity
+  - hardness only
+  - elastic stiffness
+  - density only
+  answer: C
+  solution: '**C.** E is the elastic stress-strain slope.'
+  id: OTH-A-Q073
+- knowledge_area: Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-027-02
+  prompt: During a operations review for a test laboratory, a ductile material shows
+  choices:
+  - perfect brittleness
+  - substantial plastic deformation before fracture
+  - zero strain before fracture
+  - zero toughness
+  answer: B
+  solution: '**B.** Ductility is capacity for plastic deformation.'
+  id: OTH-A-Q074
+- knowledge_area: Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-027-03
+  prompt: During a operations review for a facility upgrade, annealing commonly
+  choices:
+  - relieves residual stress and reduces hardness
+  - increases all residual stress
+  - removes atoms
+  - creates only brittle phases
+  answer: A
+  solution: '**A.** Annealing promotes recovery/recrystallization.'
+  id: OTH-A-Q075
+- knowledge_area: Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-027-04
+  prompt: During a operations review for a field installation, casting forms parts by
+  choices:
+  - removing chips only
+  - threading only
+  - bonding sheet only
+  - solidifying material in a mold
+  answer: D
+  solution: '**D.** Molten material fills a mold and solidifies.'
+  id: OTH-A-Q076
+- knowledge_area: Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-027-05
+  prompt: During a operations review for a process skid, machining is primarily
+  choices:
+  - heat treatment only
+  - joining only
+  - subtractive manufacturing
+  - additive only
+  answer: C
+  solution: '**C.** Machining removes material.'
+  id: OTH-A-Q077
+- knowledge_area: Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-027-06
+  prompt: During a operations review for a energy system, material selection should consider
+  choices:
+  - density alone
+  - properties, environment, manufacturability, and cost
+  - color only
+  - supplier name only
+  answer: B
+  solution: '**B.** Selection balances multiple requirements.'
+  id: OTH-A-Q078
+- knowledge_area: Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-027-07
+  prompt: During a operations review for a service operation, young's modulus measures
+  choices:
+  - elastic stiffness
+  - density only
+  - thermal conductivity
+  - hardness only
+  answer: A
+  solution: '**A.** E is the elastic stress-strain slope.'
+  id: OTH-A-Q079
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-01
+  prompt: During a failure investigation for a utility project, flow at 3 m/s in a 0.2 m diameter pipe has Q
+  choices:
+  - 0.600 m³/s
+  - 0.047 m³/s
+  - 0.094 m³/s
+  - 0.188 m³/s
+  answer: C
+  solution: '**C.** Q=VA=0.094 m³/s.'
+  id: OTH-A-Q080
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-02
+  prompt: During a failure investigation for a manufacturing cell, reynolds number compares
+  choices:
+  - voltage and current
+  - inertial and viscous effects
+  - pressure and temperature
+  - heat and mass
+  answer: B
+  solution: '**B.** Re=ρVD/μ.'
+  id: OTH-A-Q081
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-03
+  prompt: During a failure investigation for a test laboratory, steady incompressible continuity enforces
+  choices:
+  - mass-flow conservation
+  - temperature conservation only
+  - zero pressure
+  - zero velocity
+  answer: A
+  solution: '**A.** Mass flow entering equals mass flow leaving.'
+  id: OTH-A-Q082
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-04
+  prompt: During a failure investigation for a facility upgrade, bernoulli's equation relates pressure, velocity, and
+  choices:
+  - electrical charge
+  - yield strength
+  - entropy only
+  - elevation head
+  answer: D
+  solution: '**D.** The mechanical-energy terms include p/γ, V²/2g, and z.'
+  id: OTH-A-Q083
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-05
+  prompt: During a failure investigation for a field installation, darcy-Weisbach head loss contains
+  choices:
+  - 1/L
+  - D² only
+  - f(L/D)V²/(2g)
+  - V only
+  answer: C
+  solution: '**C.** That is the standard pipe-friction form.'
+  id: OTH-A-Q084
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-06
+  prompt: During a failure investigation for a process skid, hydrostatic pressure change is
+  choices:
+  - I²R
+  - ρgΔh
+  - μV/D
+  - kAΔT/L
+  answer: B
+  solution: '**B.** Hydrostatic balance gives Δp=ρgΔh.'
+  id: OTH-A-Q085
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-07
+  prompt: During a failure investigation for a energy system, flow at 3 m/s in a 0.2 m diameter pipe has Q
+  choices:
+  - 0.094 m³/s
+  - 0.188 m³/s
+  - 0.600 m³/s
+  - 0.047 m³/s
+  answer: A
+  solution: '**A.** Q=VA=0.094 m³/s.'
+  id: OTH-A-Q086
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-043-01
+  prompt: During a failure investigation for a service operation, reynolds number compares
+  choices:
+  - pressure and temperature
+  - heat and mass
+  - voltage and current
+  - inertial and viscous effects
+  answer: D
+  solution: '**D.** Re=ρVD/μ.'
+  id: OTH-A-Q087
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-043-02
+  prompt: During a planning study for a utility project, steady incompressible continuity enforces
+  choices:
+  - zero pressure
+  - zero velocity
+  - mass-flow conservation
+  - temperature conservation only
+  answer: C
+  solution: '**C.** Mass flow entering equals mass flow leaving.'
+  id: OTH-A-Q088
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-043-03
+  prompt: During a planning study for a manufacturing cell, bernoulli's equation relates pressure, velocity, and
+  choices:
+  - entropy only
+  - elevation head
+  - electrical charge
+  - yield strength
+  answer: B
+  solution: '**B.** The mechanical-energy terms include p/γ, V²/2g, and z.'
+  id: OTH-A-Q089
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-043-04
+  prompt: During a planning study for a test laboratory, darcy-Weisbach head loss contains
+  choices:
+  - f(L/D)V²/(2g)
+  - V only
+  - 1/L
+  - D² only
+  answer: A
+  solution: '**A.** That is the standard pipe-friction form.'
+  id: OTH-A-Q090
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-043-05
+  prompt: During a planning study for a facility upgrade, hydrostatic pressure change is
+  choices:
+  - μV/D
+  - kAΔT/L
+  - I²R
+  - ρgΔh
+  answer: D
+  solution: '**D.** Hydrostatic balance gives Δp=ρgΔh.'
+  id: OTH-A-Q091
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-043-06
+  prompt: During a planning study for a field installation, flow at 3 m/s in a 0.2 m diameter pipe has Q
+  choices:
+  - 0.600 m³/s
+  - 0.047 m³/s
+  - 0.094 m³/s
+  - 0.188 m³/s
+  answer: C
+  solution: '**C.** Q=VA=0.094 m³/s.'
+  id: OTH-A-Q092
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-043-07
+  prompt: During a planning study for a process skid, reynolds number compares
+  choices:
+  - voltage and current
+  - inertial and viscous effects
+  - pressure and temperature
+  - heat and mass
+  answer: B
+  solution: '**B.** Re=ρVD/μ.'
+  id: OTH-A-Q093
+- knowledge_area: Basic Electrical Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-059-01
+  prompt: During a planning study for a energy system, 24 V across 12 Ω produces current
+  choices:
+  - 12 A
+  - 288 A
+  - 2 A
+  - 0.5 A
+  answer: C
+  solution: '**C.** I=V/R=24/12=2 A.'
+  id: OTH-A-Q094
+- knowledge_area: Basic Electrical Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-059-02
+  prompt: During a planning study for a service operation, a 10 Ω resistor carrying 3 A dissipates
+  choices:
+  - 300 W
+  - 90 W
+  - 30 W
+  - 3.33 W
+  answer: B
+  solution: '**B.** P=I²R=3²×10=90 W.'
+  id: OTH-A-Q095
+- knowledge_area: Basic Electrical Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-059-03
+  prompt: During a design review for a utility project, two 6 Ω resistors in parallel have equivalent resistance
+  choices:
+  - 3 Ω
+  - 6 Ω
+  - 12 Ω
+  - 1 Ω
+  answer: A
+  solution: '**A.** Req=6 Ω/2=3 Ω.'
+  id: OTH-A-Q096
+- knowledge_area: Basic Electrical Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-059-04
+  prompt: During a design review for a manufacturing cell, for sinusoidal voltage and current in phase, power factor is
+  choices:
+  - '0'
+  - '0.5'
+  - '-1'
+  - '1'
+  answer: D
+  solution: '**D.** Power factor=cos0=1.'
+  id: OTH-A-Q097
+- knowledge_area: Basic Electrical Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-059-05
+  prompt: During a design review for a test laboratory, an ideal transformer steps 120 V to 24 V. Np/Ns is
+  choices:
+  - '24'
+  - '144'
+  - '5'
+  - '0.2'
+  answer: C
+  solution: '**C.** Np/Ns=Vp/Vs=120/24=5.'
+  id: OTH-A-Q098
+- knowledge_area: Basic Electrical Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-059-06
+  prompt: During a design review for a facility upgrade, magnetic flux density is measured in
+  choices:
+  - coulomb
+  - tesla
+  - ohm
+  - watt
+  answer: B
+  solution: '**B.** The SI unit is tesla.'
+  id: OTH-A-Q099
+- knowledge_area: Basic Electrical Engineering
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-059-07
+  prompt: During a design review for a field installation, 24 V across 12 Ω produces current
+  choices:
+  - 2 A
+  - 0.5 A
+  - 12 A
+  - 288 A
+  answer: A
+  solution: '**A.** I=V/R=24/12=2 A.'
+  id: OTH-A-Q100
+- knowledge_area: Thermodynamics and Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-047-01
+  prompt: During a design review for a process skid, for an ideal gas, PV equals
+  choices:
+  - kAΔT/L
+  - I²R
+  - nRT
+  - mcΔT
+  answer: C
+  solution: '**C.** The ideal-gas equation is PV=nRT.'
+  id: OTH-A-Q101
+- knowledge_area: Thermodynamics and Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-047-02
+  prompt: During a design review for a energy system, a closed-system first-law balance expresses
+  choices:
+  - charge neutrality only
+  - energy conservation
+  - mass creation
+  - entropy destruction
+  answer: B
+  solution: '**B.** The first law is conservation of energy.'
+  id: OTH-A-Q102
+- knowledge_area: Thermodynamics and Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-047-03
+  prompt: During a design review for a service operation, heat-engine efficiency is
+  choices:
+  - net work output divided by heat input
+  - heat rejected/work
+  - mass flow/pressure
+  - temperature/volume
+  answer: A
+  solution: '**A.** η=Wnet/Qin.'
+  id: OTH-A-Q103
+- knowledge_area: Thermodynamics and Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-047-04
+  prompt: During a technical assessment for a utility project, steady one-dimensional plane-wall conduction follows
+  choices:
+  - Ohm's law only
+  - Hooke's law
+  - Pascal's law
+  - Fourier's law
+  answer: D
+  solution: '**D.** q=-kA dT/dx.'
+  id: OTH-A-Q104
+- knowledge_area: Thermodynamics and Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-047-05
+  prompt: During a technical assessment for a manufacturing cell, convective heat transfer is commonly written
+  choices:
+  - q=mcΔT only
+  - q=I²R
+  - q=hA(Ts-T∞)
+  - q=kA/L only
+  answer: C
+  solution: '**C.** Newton''s law of cooling gives q=hAΔT.'
+  id: OTH-A-Q105
+- knowledge_area: Thermodynamics and Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-047-06
+  prompt: During a technical assessment for a test laboratory, entropy generation for a real irreversible process is
+  choices:
+  - equal to enthalpy
+  - nonnegative
+  - always negative
+  - always zero
+  answer: B
+  solution: '**B.** The second law requires Sgen≥0.'
+  id: OTH-A-Q106
+- knowledge_area: Thermodynamics and Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-047-07
+  prompt: During a technical assessment for a facility upgrade, for an ideal gas, PV equals
+  choices:
+  - nRT
+  - mcΔT
+  - kAΔT/L
+  - I²R
+  answer: A
+  solution: '**A.** The ideal-gas equation is PV=nRT.'
+  id: OTH-A-Q107
+- knowledge_area: Thermodynamics and Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-049-01
+  prompt: During a technical assessment for a field installation, a closed-system first-law balance expresses
+  choices:
+  - mass creation
+  - entropy destruction
+  - charge neutrality only
+  - energy conservation
+  answer: D
+  solution: '**D.** The first law is conservation of energy.'
+  id: OTH-A-Q108
+- knowledge_area: Thermodynamics and Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-049-02
+  prompt: During a technical assessment for a process skid, heat-engine efficiency is
+  choices:
+  - mass flow/pressure
+  - temperature/volume
+  - net work output divided by heat input
+  - heat rejected/work
+  answer: C
+  solution: '**C.** η=Wnet/Qin.'
+  id: OTH-A-Q109
+- knowledge_area: Thermodynamics and Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-049-03
+  prompt: During a technical assessment for a energy system, steady one-dimensional plane-wall conduction follows
+  choices:
+  - Pascal's law
+  - Fourier's law
+  - Ohm's law only
+  - Hooke's law
+  answer: B
+  solution: '**B.** q=-kA dT/dx.'
+  id: OTH-A-Q110
