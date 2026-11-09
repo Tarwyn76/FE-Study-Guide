@@ -1,0 +1,1581 @@
+schema_version: 1
+exam_type: practice-A
+discipline: environmental
+exam: A
+question_count: 110
+appointment_minutes: 355
+working_time_minutes: 320
+blueprint_source: meta/exam-blueprints.yaml
+items:
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-001-01
+  prompt: During a design review of a wastewater system, for y=2x²+3x, find dy/dx at x=2.
+  choices:
+  - '11'
+  - '7'
+  - '14.85'
+  - '8'
+  answer: A
+  solution: '**A.** dy/dx=4x+3=11. This result applies to the stated design review of a wastewater system.'
+  id: ENV-A-Q001
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-001-02
+  prompt: During a design review of a stormwater system, evaluate ∫_0^3 2x dx.
+  choices:
+  - '4.500'
+  - '6.000'
+  - '12.00'
+  - '9.000'
+  answer: D
+  solution: '**D.** Integral=x², so result=9.000. This result applies to the stated design review of a stormwater
+    system.'
+  id: ENV-A-Q002
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-001-03
+  prompt: During a design review of a groundwater system, solve 3x+5=20.
+  choices:
+  - '15'
+  - '25'
+  - '5'
+  - '3'
+  answer: C
+  solution: '**C.** 3x=15, so x=5. This result applies to the stated design review of a groundwater system.'
+  id: ENV-A-Q003
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-002-01
+  prompt: During a design review of a air-permit system, evaluate log10(1000).
+  choices:
+  - '1000'
+  - '3.000'
+  - '2.000'
+  - '10.00'
+  answer: B
+  solution: '**B.** 10³=1000, so log10(1000)=3. This result applies to the stated design review of a air-permit
+    system.'
+  id: ENV-A-Q004
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-002-02
+  prompt: During a design review of a landfill system, for a 2×2 matrix [[a,b],[c,d]], the determinant is
+  choices:
+  - ad-bc
+  - ac-bd
+  - ab-cd
+  - a+b+c+d
+  answer: A
+  solution: '**A.** det=ad-bc. This result applies to the stated design review of a landfill system.'
+  id: ENV-A-Q005
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-01
+  prompt: During a design review of a remediation system, a sample exceeds a limit with probability 0.10. For 5
+    independent samples, find probability none exceed.
+  choices:
+  - '0.590'
+  - '0.410'
+  - '0.000'
+  - '0.500'
+  answer: A
+  solution: '**A.** P=(1-p)^n=0.590. This result applies to the stated design review of a remediation system.'
+  id: ENV-A-Q006
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-02
+  prompt: During a design review of a watershed system, a normal variable has μ=50 and σ=5. Find z for x=60.
+  choices:
+  - '1.000'
+  - '10.00'
+  - '12.00'
+  - '2.000'
+  answer: D
+  solution: '**D.** z=(60-50)/5=2. This result applies to the stated design review of a watershed system.'
+  id: ENV-A-Q007
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-03
+  prompt: During a design review of a industrial-discharge system, find the mean of [10, 12, 14, 16].
+  choices:
+  - '11.00'
+  - '52.00'
+  - '13.00'
+  - '15.00'
+  answer: C
+  solution: '**C.** Mean=sum/4=13.00. This result applies to the stated design review of a industrial-discharge
+    system.'
+  id: ENV-A-Q008
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-04
+  prompt: During a design review of a reuse system, for independent events A and B, P(A∩B) equals
+  choices:
+  - 0 always
+  - P(A)P(B)
+  - P(A)+P(B)
+  - P(A)-P(B)
+  answer: B
+  solution: '**B.** Independence gives the product rule. This result applies to the stated design review of a reuse
+    system.'
+  id: ENV-A-Q009
+- knowledge_area: Ethics and Professional Practice
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-01
+  prompt: During a compliance review of a water-treatment system, which action best meets professional engineering
+    obligations?
+  choices:
+  - protect public health, safety, and welfare
+  - protect schedule first
+  - conceal known hazards
+  - approve outside competence
+  answer: A
+  solution: '**A.** Public welfare is paramount. This result applies to the stated compliance review of a water-treatment
+    system.'
+  id: ENV-A-Q010
+- knowledge_area: Ethics and Professional Practice
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-02
+  prompt: During a compliance review of a wastewater system, which action best meets professional engineering obligations?
+  choices:
+  - hide it
+  - ignore it
+  - shift it to a vendor
+  - disclose a material conflict of interest
+  answer: D
+  solution: '**D.** Material conflicts must be disclosed. This result applies to the stated compliance review of
+    a wastewater system.'
+  id: ENV-A-Q011
+- knowledge_area: Ethics and Professional Practice
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-03
+  prompt: During a compliance review of a stormwater system, which action best meets professional engineering obligations?
+  choices:
+  - avoid peer review
+  - accept every assignment
+  - practice within one's competence
+  - seal any requested work
+  answer: C
+  solution: '**C.** Engineers must work within competence. This result applies to the stated compliance review of
+    a stormwater system.'
+  id: ENV-A-Q012
+- knowledge_area: Ethics and Professional Practice
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-04
+  prompt: During a compliance review of a groundwater system, which action best meets professional engineering obligations?
+  choices:
+  - conceal it
+  - correct or report a material error
+  - leave it unchanged
+  - delete records
+  answer: B
+  solution: '**B.** Material errors affecting decisions must be addressed. This result applies to the stated compliance
+    review of a groundwater system.'
+  id: ENV-A-Q013
+- knowledge_area: Ethics and Professional Practice
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-05
+  prompt: During a compliance review of a air-permit system, which action best meets professional engineering obligations?
+  choices:
+  - protect public health, safety, and welfare
+  - protect schedule first
+  - conceal known hazards
+  - approve outside competence
+  answer: A
+  solution: '**A.** Public welfare is paramount. This result applies to the stated compliance review of a air-permit
+    system.'
+  id: ENV-A-Q014
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-01
+  prompt: During a compliance review of a landfill system, a future environmental compliance cost of $20,000 occurs
+    in 5 years at 6%. Find present worth.
+  choices:
+  - $14945.2
+  - $20000.0
+  - $26764.5
+  - $15384.6
+  answer: A
+  solution: '**A.** P=F/(1.06)^5=$14945.2. This result applies to the stated compliance review of a landfill system.'
+  id: ENV-A-Q015
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-02
+  prompt: During a compliance review of a remediation system, $10,000 invested at 5% for 4 years grows to what future
+    worth?
+  choices:
+  - $10000.0
+  - $8227.0
+  - $12000.0
+  - $12155.1
+  answer: D
+  solution: '**D.** F=P(1+i)^n=$12155.1. This result applies to the stated compliance review of a remediation system.'
+  id: ENV-A-Q016
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-03
+  prompt: During a compliance review of a watershed system, for equal-service mutually exclusive alternatives, the
+    present-worth criterion generally selects
+  choices:
+  - the longest life regardless of economics
+  - the lowest nominal interest rate
+  - the greatest net present worth
+  - the highest first cost
+  answer: C
+  solution: '**C.** Choose the greatest net present worth using consistent assumptions. This result applies to the
+    stated compliance review of a watershed system.'
+  id: ENV-A-Q017
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-04
+  prompt: During a compliance review of a industrial-discharge system, a future environmental compliance cost of
+    $23,000 occurs in 5 years at 6%. Find present worth.
+  choices:
+  - $17692.3
+  - $17186.9
+  - $23000.0
+  - $30779.2
+  answer: B
+  solution: '**B.** P=F/(1.06)^5=$17186.9. This result applies to the stated compliance review of a industrial-discharge
+    system.'
+  id: ENV-A-Q018
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-05
+  prompt: During a compliance review of a reuse system, $10,000 invested at 5% for 4 years grows to what future
+    worth?
+  choices:
+  - $12155.1
+  - $10000.0
+  - $8227.0
+  - $12000.0
+  answer: A
+  solution: '**A.** F=P(1+i)^n=$12155.1. This result applies to the stated compliance review of a reuse system.'
+  id: ENV-A-Q019
+- knowledge_area: Fundamental Principles
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-048-01
+  prompt: During a operations review of a water-treatment system, a stream flow is 2 m³/s at 15 mg/L. Find mass
+    loading in kg/day.
+  choices:
+  - 2592.0 kg/day
+  - 30.00 kg/day
+  - 1296.0 kg/day
+  - 5184.0 kg/day
+  answer: A
+  solution: '**A.** Load=Q C ×86.4=2592.0 kg/day. This result applies to the stated operations review of a water-treatment
+    system.'
+  id: ENV-A-Q020
+- knowledge_area: Fundamental Principles
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-048-02
+  prompt: During a operations review of a wastewater system, at steady state, Q=3 m³/s enters at 20 mg/L and exits
+    at 8 mg/L. Find contaminant removal rate in mg·m³/s per L-equivalent basis.
+  choices:
+  - '60.00'
+  - '24.00'
+  - '18.00'
+  - '36.00'
+  answer: D
+  solution: '**D.** Steady mass balance gives removal=Q(Cin-Cout)=36.00 in consistent flow-concentration units.
+    This result applies to the stated operations review of a wastewater system.'
+  id: ENV-A-Q021
+- knowledge_area: Fundamental Principles
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-048-03
+  prompt: During a operations review of a stormwater system, a first-order contaminant decays with k=0.2 day⁻¹ for
+    5 days. Find C/C0.
+  choices:
+  - '1.000'
+  - '2.718'
+  - '0.368'
+  - '0.632'
+  answer: C
+  solution: '**C.** C/C0=e^(-kt)=0.368. This result applies to the stated operations review of a stormwater system.'
+  id: ENV-A-Q022
+- knowledge_area: Fundamental Principles
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-048-04
+  prompt: During a operations review of a groundwater system, a completely mixed flow reactor assumes the effluent
+    concentration is
+  choices:
+  - independent of mixing
+  - equal to the reactor concentration
+  - always zero
+  - equal to influent concentration
+  answer: B
+  solution: '**B.** Ideal CSTR mixing makes tank and effluent concentrations equal. This result applies to the stated
+    operations review of a groundwater system.'
+  id: ENV-A-Q023
+- knowledge_area: Fundamental Principles
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-048-05
+  prompt: During a operations review of a air-permit system, residence time for an ideal tank of volume V with flow
+    Q is
+  choices:
+  - V/Q
+  - Q/V
+  - VQ
+  - 1/(VQ)
+  answer: A
+  solution: '**A.** Hydraulic residence time is volume divided by flow. This result applies to the stated operations
+    review of a air-permit system.'
+  id: ENV-A-Q024
+- knowledge_area: Fundamental Principles
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-048-06
+  prompt: During a operations review of a landfill system, a stream flow is 2 m³/s at 15 mg/L. Find mass loading
+    in kg/day.
+  choices:
+  - 30.00 kg/day
+  - 1296.0 kg/day
+  - 5184.0 kg/day
+  - 2592.0 kg/day
+  answer: D
+  solution: '**D.** Load=Q C ×86.4=2592.0 kg/day. This result applies to the stated operations review of a landfill
+    system.'
+  id: ENV-A-Q025
+- knowledge_area: Fundamental Principles
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-048-07
+  prompt: During a operations review of a remediation system, at steady state, Q=3 m³/s enters at 20 mg/L and exits
+    at 8 mg/L. Find contaminant removal rate in mg·m³/s per L-equivalent basis.
+  choices:
+  - '24.00'
+  - '18.00'
+  - '36.00'
+  - '60.00'
+  answer: C
+  solution: '**C.** Steady mass balance gives removal=Q(Cin-Cout)=36.00 in consistent flow-concentration units.
+    This result applies to the stated operations review of a remediation system.'
+  id: ENV-A-Q026
+- knowledge_area: Fundamental Principles
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-048-01
+  prompt: During a operations review of a watershed system, a first-order contaminant decays with k=0.2 day⁻¹ for
+    5 days. Find C/C0.
+  choices:
+  - '2.718'
+  - '0.368'
+  - '0.632'
+  - '1.000'
+  answer: B
+  solution: '**B.** C/C0=e^(-kt)=0.368. This result applies to the stated operations review of a watershed system.'
+  id: ENV-A-Q027
+- knowledge_area: Environmental Chemistry
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-049-01
+  prompt: During a operations review of a industrial-discharge system, for [H+]=1×10⁻⁷ M, find pH.
+  choices:
+  - '7.000'
+  - '1.000'
+  - '14.00'
+  - '0.000'
+  answer: A
+  solution: '**A.** pH=-log10[H+]=7. This result applies to the stated operations review of a industrial-discharge
+    system.'
+  id: ENV-A-Q028
+- knowledge_area: Environmental Chemistry
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-049-02
+  prompt: During a operations review of a reuse system, at 25°C, if pH=9, find pOH.
+  choices:
+  - '9.000'
+  - '14.00'
+  - '23.00'
+  - '5.000'
+  answer: D
+  solution: '**D.** pH+pOH=14, so pOH=5. This result applies to the stated operations review of a reuse system.'
+  id: ENV-A-Q029
+- knowledge_area: Environmental Chemistry
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-049-03
+  prompt: During a sampling review of a water-treatment system, henry's law primarily relates dissolved concentration
+    to
+  choices:
+  - light intensity
+  - viscosity
+  - gas partial pressure above the liquid
+  - soil bulk density only
+  answer: C
+  solution: '**C.** Henry''s law couples gas-phase partial pressure and dissolved concentration. This result applies
+    to the stated sampling review of a water-treatment system.'
+  id: ENV-A-Q030
+- knowledge_area: Environmental Chemistry
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-049-04
+  prompt: During a sampling review of a wastewater system, a large octanol-water partition coefficient generally
+    indicates a compound is relatively
+  choices:
+  - insoluble in octanol
+  - hydrophobic
+  - highly ionic in all conditions
+  - nonvolatile by definition
+  answer: B
+  solution: '**B.** Large Kow implies preference for organic phases. This result applies to the stated sampling
+    review of a wastewater system.'
+  id: ENV-A-Q031
+- knowledge_area: Environmental Chemistry
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-049-05
+  prompt: During a sampling review of a stormwater system, oxidation corresponds to
+  choices:
+  - loss of electrons
+  - gain of electrons
+  - gain of neutrons
+  - no change in oxidation state
+  answer: A
+  solution: '**A.** Oxidation is electron loss. This result applies to the stated sampling review of a stormwater
+    system.'
+  id: ENV-A-Q032
+- knowledge_area: Environmental Chemistry
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-049-06
+  prompt: During a sampling review of a groundwater system, if ion product exceeds Ksp, a sparingly soluble salt
+    is thermodynamically driven toward
+  choices:
+  - complete volatilization
+  - no reaction ever
+  - infinite solubility
+  - precipitation
+  answer: D
+  solution: '**D.** Ion product > Ksp indicates supersaturation. This result applies to the stated sampling review
+    of a groundwater system.'
+  id: ENV-A-Q033
+- knowledge_area: Environmental Chemistry
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-049-07
+  prompt: During a sampling review of a air-permit system, for [H+]=1×10⁻⁷ M, find pH.
+  choices:
+  - '14.00'
+  - '0.000'
+  - '7.000'
+  - '1.000'
+  answer: C
+  solution: '**C.** pH=-log10[H+]=7. This result applies to the stated sampling review of a air-permit system.'
+  id: ENV-A-Q034
+- knowledge_area: Environmental Chemistry
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-049-01
+  prompt: During a sampling review of a landfill system, at 25°C, if pH=9, find pOH.
+  choices:
+  - '23.00'
+  - '5.000'
+  - '9.000'
+  - '14.00'
+  answer: B
+  solution: '**B.** pH+pOH=14, so pOH=5. This result applies to the stated sampling review of a landfill system.'
+  id: ENV-A-Q035
+- knowledge_area: Health Hazards and Risk Assessment
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-050-01
+  prompt: During a sampling review of a remediation system, average daily dose is 0.002 mg/kg-day and RfD is 0.001
+    mg/kg-day. Find hazard quotient.
+  choices:
+  - '2.000'
+  - '0.500'
+  - '0.002'
+  - '1.000'
+  answer: A
+  solution: '**A.** HQ=dose/RfD=2. This result applies to the stated sampling review of a remediation system.'
+  id: ENV-A-Q036
+- knowledge_area: Health Hazards and Risk Assessment
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-050-02
+  prompt: During a sampling review of a watershed system, lifetime average daily dose is 1×10⁻⁴ mg/kg-day and slope
+    factor is 2 (mg/kg-day)⁻¹. Estimate cancer risk.
+  choices:
+  - '2.56e-04'
+  - '5.00e-05'
+  - '2.00e+00'
+  - '2.00e-04'
+  answer: D
+  solution: '**D.** Risk=LADD×SF=2.00e-04. This result applies to the stated sampling review of a watershed system.'
+  id: ENV-A-Q037
+- knowledge_area: Health Hazards and Risk Assessment
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-050-03
+  prompt: During a sampling review of a industrial-discharge system, the exposure pathway that involves breathing
+    a contaminant is
+  choices:
+  - dermal absorption only
+  - sedimentation
+  - inhalation
+  - ingestion
+  answer: C
+  solution: '**C.** Breathing exposure is inhalation. This result applies to the stated sampling review of a industrial-discharge
+    system.'
+  id: ENV-A-Q038
+- knowledge_area: Health Hazards and Risk Assessment
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-050-04
+  prompt: During a sampling review of a reuse system, a hazard quotient below 1 generally suggests
+  choices:
+  - automatic regulatory compliance
+  - noncancer adverse effects are not expected at the evaluated exposure
+  - zero risk of every kind
+  - certain carcinogenicity
+  answer: B
+  solution: '**B.** HQ<1 is commonly interpreted as below the reference-dose benchmark. This result applies to the
+    stated sampling review of a reuse system.'
+  id: ENV-A-Q039
+- knowledge_area: Fluid Mechanics and Hydraulics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-01
+  prompt: During a risk review of a water-treatment system, find hydrostatic pressure increase 4 m below a water
+    surface.
+  choices:
+  - 39.24 kPa
+  - 19.62 kPa
+  - 78.48 kPa
+  - 4.000 kPa
+  answer: A
+  solution: '**A.** Δp=ρgh=39.24 kPa. This result applies to the stated risk review of a water-treatment system.'
+  id: ENV-A-Q040
+- knowledge_area: Fluid Mechanics and Hydraulics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-02
+  prompt: During a risk review of a wastewater system, water velocity is 2 m/s in a 0.25 m diameter pipe. Find flow
+    rate.
+  choices:
+  - 0.196 m³/s
+  - 0.500 m³/s
+  - 0.049 m³/s
+  - 0.098 m³/s
+  answer: D
+  solution: '**D.** Q=VA=0.098 m³/s. This result applies to the stated risk review of a wastewater system.'
+  id: ENV-A-Q041
+- knowledge_area: Fluid Mechanics and Hydraulics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-03
+  prompt: During a risk review of a stormwater system, for f=0.02, L=100 m, D=0.2 m, V=2 m/s, find Darcy-Weisbach
+    head loss.
+  choices:
+  - 4.077 m
+  - 10.00 m
+  - 2.039 m
+  - 1.019 m
+  answer: C
+  solution: '**C.** hf=f(L/D)V²/(2g)=2.039 m. This result applies to the stated risk review of a stormwater system.'
+  id: ENV-A-Q042
+- knowledge_area: Fluid Mechanics and Hydraulics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-04
+  prompt: During a risk review of a groundwater system, for an open channel, n=0.015, A=3 m², R=0.7 m, S=0.002.
+    Find Manning discharge.
+  choices:
+  - 0.006 m³/s
+  - 7.051 m³/s
+  - 3.526 m³/s
+  - 14.10 m³/s
+  answer: B
+  solution: '**B.** Q=(1/n)AR^(2/3)S^(1/2)=7.051 m³/s. This result applies to the stated risk review of a groundwater
+    system.'
+  id: ENV-A-Q043
+- knowledge_area: Fluid Mechanics and Hydraulics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-05
+  prompt: During a risk review of a air-permit system, a pump delivers 0.05 m³/s against 15 m head at 70% efficiency.
+    Find shaft power.
+  choices:
+  - 10.51 kW
+  - 7.357 kW
+  - 15.02 kW
+  - 7.358 kW
+  answer: A
+  solution: '**A.** P=ρgQH/η=10.51 kW. This result applies to the stated risk review of a air-permit system.'
+  id: ENV-A-Q044
+- knowledge_area: Fluid Mechanics and Hydraulics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-06
+  prompt: During a risk review of a landfill system, reynolds number is used primarily to characterize
+  choices:
+  - water pH
+  - chemical dose
+  - radiation risk
+  - flow regime
+  answer: D
+  solution: '**D.** Re compares inertial and viscous effects. This result applies to the stated risk review of a
+    landfill system.'
+  id: ENV-A-Q045
+- knowledge_area: Fluid Mechanics and Hydraulics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-07
+  prompt: During a risk review of a remediation system, for a Venturi meter, a pressure drop between inlet and throat
+    is related primarily to
+  choices:
+  - electrical resistance
+  - soil compaction
+  - velocity increase through the throat
+  - chemical equilibrium
+  answer: C
+  solution: '**C.** Continuity and Bernoulli connect reduced area to increased velocity and reduced pressure. This
+    result applies to the stated risk review of a remediation system.'
+  id: ENV-A-Q046
+- knowledge_area: Fluid Mechanics and Hydraulics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-043-01
+  prompt: During a risk review of a watershed system, find hydrostatic pressure increase 4 m below a water surface.
+  choices:
+  - 4.000 kPa
+  - 39.24 kPa
+  - 19.62 kPa
+  - 78.48 kPa
+  answer: B
+  solution: '**B.** Δp=ρgh=39.24 kPa. This result applies to the stated risk review of a watershed system.'
+  id: ENV-A-Q047
+- knowledge_area: Fluid Mechanics and Hydraulics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-043-02
+  prompt: During a risk review of a industrial-discharge system, water velocity is 2 m/s in a 0.25 m diameter pipe.
+    Find flow rate.
+  choices:
+  - 0.098 m³/s
+  - 0.196 m³/s
+  - 0.500 m³/s
+  - 0.049 m³/s
+  answer: A
+  solution: '**A.** Q=VA=0.098 m³/s. This result applies to the stated risk review of a industrial-discharge system.'
+  id: ENV-A-Q048
+- knowledge_area: Fluid Mechanics and Hydraulics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-043-03
+  prompt: During a risk review of a reuse system, for f=0.02, L=100 m, D=0.2 m, V=2 m/s, find Darcy-Weisbach head
+    loss.
+  choices:
+  - 1.019 m
+  - 4.077 m
+  - 10.00 m
+  - 2.039 m
+  answer: D
+  solution: '**D.** hf=f(L/D)V²/(2g)=2.039 m. This result applies to the stated risk review of a reuse system.'
+  id: ENV-A-Q049
+- knowledge_area: Fluid Mechanics and Hydraulics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-043-04
+  prompt: During a optimization review of a water-treatment system, for an open channel, n=0.015, A=3 m², R=0.7
+    m, S=0.002. Find Manning discharge.
+  choices:
+  - 14.10 m³/s
+  - 0.006 m³/s
+  - 7.051 m³/s
+  - 3.526 m³/s
+  answer: C
+  solution: '**C.** Q=(1/n)AR^(2/3)S^(1/2)=7.051 m³/s. This result applies to the stated optimization review of
+    a water-treatment system.'
+  id: ENV-A-Q050
+- knowledge_area: Fluid Mechanics and Hydraulics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-043-05
+  prompt: During a optimization review of a wastewater system, a pump delivers 0.05 m³/s against 15 m head at 70%
+    efficiency. Find shaft power.
+  choices:
+  - 7.358 kW
+  - 10.51 kW
+  - 7.357 kW
+  - 15.02 kW
+  answer: B
+  solution: '**B.** P=ρgQH/η=10.51 kW. This result applies to the stated optimization review of a wastewater system.'
+  id: ENV-A-Q051
+- knowledge_area: Fluid Mechanics and Hydraulics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-043-06
+  prompt: During a optimization review of a stormwater system, reynolds number is used primarily to characterize
+  choices:
+  - flow regime
+  - water pH
+  - chemical dose
+  - radiation risk
+  answer: A
+  solution: '**A.** Re compares inertial and viscous effects. This result applies to the stated optimization review
+    of a stormwater system.'
+  id: ENV-A-Q052
+- knowledge_area: Fluid Mechanics and Hydraulics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-043-07
+  prompt: During a optimization review of a groundwater system, for a Venturi meter, a pressure drop between inlet
+    and throat is related primarily to
+  choices:
+  - chemical equilibrium
+  - electrical resistance
+  - soil compaction
+  - velocity increase through the throat
+  answer: D
+  solution: '**D.** Continuity and Bernoulli connect reduced area to increased velocity and reduced pressure. This
+    result applies to the stated optimization review of a groundwater system.'
+  id: ENV-A-Q053
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-047-01
+  prompt: During a optimization review of a air-permit system, 2 kg of water is heated 20°C with cp=4.18 kJ/kg-K.
+    Estimate sensible heat.
+  choices:
+  - 167.2 kJ
+  - 83.60 kJ
+  - 40.00 kJ
+  - 118.71 kJ
+  answer: A
+  solution: '**A.** Q=mc_pΔT=167.2 kJ. This result applies to the stated optimization review of a air-permit system.'
+  id: ENV-A-Q054
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-047-02
+  prompt: During a optimization review of a landfill system, for an ideal gas at fixed amount, PV=nRT implies pressure
+    increases with absolute temperature when volume is
+  choices:
+  - infinite
+  - zero mass
+  - unrelated to temperature
+  - constant
+  answer: D
+  solution: '**D.** At fixed V and n, P is proportional to T. This result applies to the stated optimization review
+    of a landfill system.'
+  id: ENV-A-Q055
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-047-03
+  prompt: During a optimization review of a remediation system, entropy generation for a real irreversible process
+    is
+  choices:
+  - always zero
+  - equal to enthalpy
+  - nonnegative
+  - always negative
+  answer: C
+  solution: '**C.** The second law requires S_gen≥0. This result applies to the stated optimization review of a
+    remediation system.'
+  id: ENV-A-Q056
+- knowledge_area: Surface Water Resources and Hydrology
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-052-01
+  prompt: During a optimization review of a watershed system, using Rational Method with C=0.7, i=60 mm/h, A=1.5
+    ha, find peak runoff.
+  choices:
+  - 0.175 m³/s
+  - 0.088 m³/s
+  - 0.350 m³/s
+  - 63.00 m³/s
+  answer: A
+  solution: '**A.** Q=0.00278CiA=0.175 m³/s. This result applies to the stated optimization review of a watershed
+    system.'
+  id: ENV-A-Q057
+- knowledge_area: Surface Water Resources and Hydrology
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-052-02
+  prompt: During a optimization review of a industrial-discharge system, a detention basin attenuates a storm hydrograph
+    mainly by
+  choices:
+  - increasing rainfall
+  - eliminating watershed area
+  - raising soil density
+  - temporarily storing runoff and releasing it more slowly
+  answer: D
+  solution: '**D.** Storage delays and reduces the peak outflow. This result applies to the stated optimization
+    review of a industrial-discharge system.'
+  id: ENV-A-Q058
+- knowledge_area: Surface Water Resources and Hydrology
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-052-03
+  prompt: During a optimization review of a reuse system, the time of concentration is the travel time from
+  choices:
+  - groundwater table to atmosphere
+  - any random point
+  - the hydraulically most remote point to the watershed outlet
+  - the nearest curb inlet only
+  answer: C
+  solution: '**C.** Tc characterizes the longest relevant runoff travel path. This result applies to the stated
+    optimization review of a reuse system.'
+  id: ENV-A-Q059
+- knowledge_area: Surface Water Resources and Hydrology
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-052-04
+  prompt: During a permit review of a water-treatment system, infiltration reduces direct runoff by
+  choices:
+  - eliminating evapotranspiration
+  - transferring water from the surface into the soil
+  - increasing impervious area
+  - raising rainfall intensity
+  answer: B
+  solution: '**B.** Infiltration removes water from surface runoff. This result applies to the stated permit review
+    of a water-treatment system.'
+  id: ENV-A-Q060
+- knowledge_area: Surface Water Resources and Hydrology
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-052-05
+  prompt: During a permit review of a wastewater system, a unit hydrograph represents watershed response to
+  choices:
+  - one unit depth of effective rainfall of specified duration
+  - one unit of groundwater head
+  - one pollutant molecule
+  - one year of evaporation
+  answer: A
+  solution: '**A.** Unit hydrographs scale runoff response to unit excess precipitation. This result applies to
+    the stated permit review of a wastewater system.'
+  id: ENV-A-Q061
+- knowledge_area: Surface Water Resources and Hydrology
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-052-06
+  prompt: During a permit review of a stormwater system, eutrophication is commonly driven by excess inputs of
+  choices:
+  - inert sand only
+  - oxygen alone
+  - pure water
+  - nutrients such as nitrogen and phosphorus
+  answer: D
+  solution: '**D.** Nutrient enrichment stimulates excessive biological productivity. This result applies to the
+    stated permit review of a stormwater system.'
+  id: ENV-A-Q062
+- knowledge_area: Surface Water Resources and Hydrology
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-052-07
+  prompt: During a permit review of a groundwater system, using Rational Method with C=0.7, i=60 mm/h, A=1.5 ha,
+    find peak runoff.
+  choices:
+  - 0.350 m³/s
+  - 63.00 m³/s
+  - 0.175 m³/s
+  - 0.088 m³/s
+  answer: C
+  solution: '**C.** Q=0.00278CiA=0.175 m³/s. This result applies to the stated permit review of a groundwater system.'
+  id: ENV-A-Q063
+- knowledge_area: Surface Water Resources and Hydrology
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-053-01
+  prompt: During a permit review of a air-permit system, a detention basin attenuates a storm hydrograph mainly
+    by
+  choices:
+  - raising soil density
+  - temporarily storing runoff and releasing it more slowly
+  - increasing rainfall
+  - eliminating watershed area
+  answer: B
+  solution: '**B.** Storage delays and reduces the peak outflow. This result applies to the stated permit review
+    of a air-permit system.'
+  id: ENV-A-Q064
+- knowledge_area: Surface Water Resources and Hydrology
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-053-02
+  prompt: During a permit review of a landfill system, the time of concentration is the travel time from
+  choices:
+  - the hydraulically most remote point to the watershed outlet
+  - the nearest curb inlet only
+  - groundwater table to atmosphere
+  - any random point
+  answer: A
+  solution: '**A.** Tc characterizes the longest relevant runoff travel path. This result applies to the stated
+    permit review of a landfill system.'
+  id: ENV-A-Q065
+- knowledge_area: Surface Water Resources and Hydrology
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-053-03
+  prompt: During a permit review of a remediation system, infiltration reduces direct runoff by
+  choices:
+  - increasing impervious area
+  - raising rainfall intensity
+  - eliminating evapotranspiration
+  - transferring water from the surface into the soil
+  answer: D
+  solution: '**D.** Infiltration removes water from surface runoff. This result applies to the stated permit review
+    of a remediation system.'
+  id: ENV-A-Q066
+- knowledge_area: Groundwater, Soils, and Sediments
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-054-01
+  prompt: During a permit review of a watershed system, darcy flow has k=1×10⁻⁴ m/s, gradient 0.03, area 40 m².
+    Find Q.
+  choices:
+  - 1.20e-04 m³/s
+  - 1.20e-03 m³/s
+  - 1.20e-05 m³/s
+  - 4.00e-03 m³/s
+  answer: A
+  solution: '**A.** Q=kiA=1.20e-04 m³/s. This result applies to the stated permit review of a watershed system.'
+  id: ENV-A-Q067
+- knowledge_area: Groundwater, Soils, and Sediments
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-054-02
+  prompt: During a permit review of a industrial-discharge system, hydraulic gradient is defined as
+  choices:
+  - flow rate divided by area only
+  - porosity times density
+  - pressure plus temperature
+  - head loss divided by flow-path length
+  answer: D
+  solution: '**D.** i=Δh/L. This result applies to the stated permit review of a industrial-discharge system.'
+  id: ENV-A-Q068
+- knowledge_area: Groundwater, Soils, and Sediments
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-054-03
+  prompt: During a permit review of a reuse system, sorption generally causes a dissolved contaminant plume to move
+  choices:
+  - at exactly zero velocity
+  - independent of soil
+  - more slowly than groundwater
+  - faster than light
+  answer: C
+  solution: '**C.** Sorption retards solute transport relative to advective groundwater flow. This result applies
+    to the stated permit review of a reuse system.'
+  id: ENV-A-Q069
+- knowledge_area: Groundwater, Soils, and Sediments
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-054-04
+  prompt: During a troubleshooting review of a water-treatment system, a monitoring well network is used primarily
+    to
+  choices:
+  - measure air emissions only
+  - characterize groundwater levels and contaminant distribution
+  - increase rainfall
+  - replace all soil samples
+  answer: B
+  solution: '**B.** Monitoring wells provide hydraulic and water-quality data. This result applies to the stated
+    troubleshooting review of a water-treatment system.'
+  id: ENV-A-Q070
+- knowledge_area: Groundwater, Soils, and Sediments
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-054-05
+  prompt: During a troubleshooting review of a wastewater system, pump-and-treat remediation relies on
+  choices:
+  - extracting contaminated groundwater for treatment
+  - only capping soil
+  - heating the atmosphere
+  - increasing infiltration intentionally
+  answer: A
+  solution: '**A.** Extraction wells capture groundwater and send it to treatment. This result applies to the stated
+    troubleshooting review of a wastewater system.'
+  id: ENV-A-Q071
+- knowledge_area: Groundwater, Soils, and Sediments
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-054-06
+  prompt: During a troubleshooting review of a stormwater system, effective porosity controls primarily
+  choices:
+  - air stack height
+  - combustion temperature
+  - pump motor voltage
+  - the pore space available for groundwater flow
+  answer: D
+  solution: '**D.** Effective porosity excludes isolated pore space. This result applies to the stated troubleshooting
+    review of a stormwater system.'
+  id: ENV-A-Q072
+- knowledge_area: Groundwater, Soils, and Sediments
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-054-07
+  prompt: During a troubleshooting review of a groundwater system, darcy flow has k=1×10⁻⁴ m/s, gradient 0.03, area
+    40 m². Find Q.
+  choices:
+  - 1.20e-05 m³/s
+  - 4.00e-03 m³/s
+  - 1.20e-04 m³/s
+  - 1.20e-03 m³/s
+  answer: C
+  solution: '**C.** Q=kiA=1.20e-04 m³/s. This result applies to the stated troubleshooting review of a groundwater
+    system.'
+  id: ENV-A-Q073
+- knowledge_area: Groundwater, Soils, and Sediments
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-055-01
+  prompt: During a troubleshooting review of a air-permit system, hydraulic gradient is defined as
+  choices:
+  - pressure plus temperature
+  - head loss divided by flow-path length
+  - flow rate divided by area only
+  - porosity times density
+  answer: B
+  solution: '**B.** i=Δh/L. This result applies to the stated troubleshooting review of a air-permit system.'
+  id: ENV-A-Q074
+- knowledge_area: Groundwater, Soils, and Sediments
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-055-02
+  prompt: During a troubleshooting review of a landfill system, sorption generally causes a dissolved contaminant
+    plume to move
+  choices:
+  - more slowly than groundwater
+  - faster than light
+  - at exactly zero velocity
+  - independent of soil
+  answer: A
+  solution: '**A.** Sorption retards solute transport relative to advective groundwater flow. This result applies
+    to the stated troubleshooting review of a landfill system.'
+  id: ENV-A-Q075
+- knowledge_area: Water and Wastewater
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-056-01
+  prompt: During a troubleshooting review of a remediation system, influent concentration is 200 mg/L and effluent
+    is 20 mg/L. Find removal efficiency.
+  choices:
+  - 90.00%
+  - 10.00%
+  - 180.0%
+  - 45.00%
+  answer: A
+  solution: '**A.** η=(Cin-Cout)/Cin×100=90.00%. This result applies to the stated troubleshooting review of a remediation
+    system.'
+  id: ENV-A-Q076
+- knowledge_area: Water and Wastewater
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-056-02
+  prompt: During a troubleshooting review of a watershed system, coagulation is followed most directly by
+  choices:
+  - chlorination only
+  - sludge digestion
+  - reverse osmosis always
+  - flocculation
+  answer: D
+  solution: '**D.** Flocculation promotes particle collisions after destabilization. This result applies to the
+    stated troubleshooting review of a watershed system.'
+  id: ENV-A-Q077
+- knowledge_area: Water and Wastewater
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-056-03
+  prompt: During a troubleshooting review of a industrial-discharge system, primary sedimentation removes contaminants
+    mainly by
+  choices:
+  - UV photolysis only
+  - ion exchange
+  - gravity settling of settleable solids
+  - biological nitrification
+  answer: C
+  solution: '**C.** Clarifiers remove settleable suspended matter by gravity. This result applies to the stated
+    troubleshooting review of a industrial-discharge system.'
+  id: ENV-A-Q078
+- knowledge_area: Water and Wastewater
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-056-04
+  prompt: During a troubleshooting review of a reuse system, activated sludge treatment is primarily a
+  choices:
+  - groundwater process
+  - suspended-growth biological process
+  - membrane-only process
+  - chemical oxidation only
+  answer: B
+  solution: '**B.** Biomass suspended in aeration basins consumes biodegradable substrate. This result applies to
+    the stated troubleshooting review of a reuse system.'
+  id: ENV-A-Q079
+- knowledge_area: Water and Wastewater
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-056-05
+  prompt: During a planning review of a water-treatment system, disinfection is intended primarily to
+  choices:
+  - inactivate pathogenic microorganisms
+  - increase hardness
+  - add suspended solids
+  - raise BOD
+  answer: A
+  solution: '**A.** Disinfection reduces pathogen viability. This result applies to the stated planning review of
+    a water-treatment system.'
+  id: ENV-A-Q080
+- knowledge_area: Water and Wastewater
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-056-06
+  prompt: During a planning review of a wastewater system, a plant treats 5000 gal/day at a chemical dose of 3 mg/L.
+    Estimate chemical mass in kg/day.
+  choices:
+  - 28.39 kg/day
+  - 113.5 kg/day
+  - 0.015 kg/day
+  - 56.77 kg/day
+  answer: D
+  solution: '**D.** Convert gallons to liters and multiply by dose: 56.77 kg/day. This result applies to the stated
+    planning review of a wastewater system.'
+  id: ENV-A-Q081
+- knowledge_area: Water and Wastewater
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-056-07
+  prompt: During a planning review of a stormwater system, anaerobic digestion is commonly used to
+  choices:
+  - remove grit only
+  - increase dissolved oxygen
+  - stabilize sludge and reduce volatile solids
+  - increase influent BOD
+  answer: C
+  solution: '**C.** Anaerobic digestion converts volatile solids and produces biogas. This result applies to the
+    stated planning review of a stormwater system.'
+  id: ENV-A-Q082
+- knowledge_area: Water and Wastewater
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-057-01
+  prompt: During a planning review of a groundwater system, influent concentration is 200 mg/L and effluent is 20
+    mg/L. Find removal efficiency.
+  choices:
+  - 45.00%
+  - 90.00%
+  - 10.00%
+  - 180.0%
+  answer: B
+  solution: '**B.** η=(Cin-Cout)/Cin×100=90.00%. This result applies to the stated planning review of a groundwater
+    system.'
+  id: ENV-A-Q083
+- knowledge_area: Water and Wastewater
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-057-02
+  prompt: During a planning review of a air-permit system, coagulation is followed most directly by
+  choices:
+  - flocculation
+  - chlorination only
+  - sludge digestion
+  - reverse osmosis always
+  answer: A
+  solution: '**A.** Flocculation promotes particle collisions after destabilization. This result applies to the
+    stated planning review of a air-permit system.'
+  id: ENV-A-Q084
+- knowledge_area: Water and Wastewater
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-057-03
+  prompt: During a planning review of a landfill system, primary sedimentation removes contaminants mainly by
+  choices:
+  - biological nitrification
+  - UV photolysis only
+  - ion exchange
+  - gravity settling of settleable solids
+  answer: D
+  solution: '**D.** Clarifiers remove settleable suspended matter by gravity. This result applies to the stated
+    planning review of a landfill system.'
+  id: ENV-A-Q085
+- knowledge_area: Water and Wastewater
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-057-04
+  prompt: During a planning review of a remediation system, activated sludge treatment is primarily a
+  choices:
+  - chemical oxidation only
+  - groundwater process
+  - suspended-growth biological process
+  - membrane-only process
+  answer: C
+  solution: '**C.** Biomass suspended in aeration basins consumes biodegradable substrate. This result applies to
+    the stated planning review of a remediation system.'
+  id: ENV-A-Q086
+- knowledge_area: Water and Wastewater
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-057-05
+  prompt: During a planning review of a watershed system, disinfection is intended primarily to
+  choices:
+  - raise BOD
+  - inactivate pathogenic microorganisms
+  - increase hardness
+  - add suspended solids
+  answer: B
+  solution: '**B.** Disinfection reduces pathogen viability. This result applies to the stated planning review of
+    a watershed system.'
+  id: ENV-A-Q087
+- knowledge_area: Water and Wastewater
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-057-06
+  prompt: During a planning review of a industrial-discharge system, a plant treats 5000 gal/day at a chemical dose
+    of 3 mg/L. Estimate chemical mass in kg/day.
+  choices:
+  - 56.77 kg/day
+  - 28.39 kg/day
+  - 113.5 kg/day
+  - 0.015 kg/day
+  answer: A
+  solution: '**A.** Convert gallons to liters and multiply by dose: 56.77 kg/day. This result applies to the stated
+    planning review of a industrial-discharge system.'
+  id: ENV-A-Q088
+- knowledge_area: Water and Wastewater
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-057-07
+  prompt: During a planning review of a reuse system, anaerobic digestion is commonly used to
+  choices:
+  - increase influent BOD
+  - remove grit only
+  - increase dissolved oxygen
+  - stabilize sludge and reduce volatile solids
+  answer: D
+  solution: '**D.** Anaerobic digestion converts volatile solids and produces biogas. This result applies to the
+    stated planning review of a reuse system.'
+  id: ENV-A-Q089
+- knowledge_area: Air Quality and Control
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-060-01
+  prompt: During a verification review of a water-treatment system, an emission factor is 0.5 kg/ton and production
+    is 100 ton/day. Find emissions.
+  choices:
+  - 50.00 kg/day
+  - 0.005 kg/day
+  - 200.0 kg/day
+  - 25.00 kg/day
+  answer: A
+  solution: '**A.** Emissions=EF×activity=50.00 kg/day. This result applies to the stated verification review of
+    a water-treatment system.'
+  id: ENV-A-Q090
+- knowledge_area: Air Quality and Control
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-060-02
+  prompt: During a verification review of a wastewater system, a baghouse primarily removes
+  choices:
+  - dissolved groundwater contaminants
+  - noise
+  - BOD
+  - particulate matter
+  answer: D
+  solution: '**D.** Fabric filters capture suspended particles from gas streams. This result applies to the stated
+    verification review of a wastewater system.'
+  id: ENV-A-Q091
+- knowledge_area: Air Quality and Control
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-060-03
+  prompt: During a verification review of a stormwater system, an electrostatic precipitator removes particles primarily
+    by
+  choices:
+  - gravity drainage only
+  - chlorination
+  - electrically charging and collecting them
+  - biological oxidation
+  answer: C
+  solution: '**C.** ESPs use electric fields to migrate charged particles to collection plates. This result applies
+    to the stated verification review of a stormwater system.'
+  id: ENV-A-Q092
+- knowledge_area: Air Quality and Control
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-060-04
+  prompt: During a verification review of a groundwater system, a cyclone separator relies mainly on
+  choices:
+  - UV disinfection
+  - inertial and centrifugal separation
+  - chemical precipitation
+  - adsorption equilibrium only
+  answer: B
+  solution: '**B.** Cyclones use swirling flow to drive particles toward the wall. This result applies to the stated
+    verification review of a groundwater system.'
+  id: ENV-A-Q093
+- knowledge_area: Air Quality and Control
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-060-05
+  prompt: During a verification review of a air-permit system, gas absorption transfers a pollutant from gas into
+  choices:
+  - a liquid phase
+  - a solid landfill only
+  - vacuum only
+  - electrical current
+  answer: A
+  solution: '**A.** Absorbers contact contaminated gas with a liquid solvent. This result applies to the stated
+    verification review of a air-permit system.'
+  id: ENV-A-Q094
+- knowledge_area: Air Quality and Control
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-060-06
+  prompt: During a verification review of a landfill system, indoor-air concentration at steady state decreases
+    when clean-air ventilation rate
+  choices:
+  - decreases to zero
+  - is unrelated to concentration
+  - becomes negative
+  - increases
+  answer: D
+  solution: '**D.** Greater clean-air dilution lowers steady-state concentration for fixed generation. This result
+    applies to the stated verification review of a landfill system.'
+  id: ENV-A-Q095
+- knowledge_area: Air Quality and Control
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-060-07
+  prompt: During a verification review of a remediation system, an emission factor is 0.5 kg/ton and production
+    is 100 ton/day. Find emissions.
+  choices:
+  - 200.0 kg/day
+  - 25.00 kg/day
+  - 50.00 kg/day
+  - 0.005 kg/day
+  answer: C
+  solution: '**C.** Emissions=EF×activity=50.00 kg/day. This result applies to the stated verification review of
+    a remediation system.'
+  id: ENV-A-Q096
+- knowledge_area: Air Quality and Control
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-060-01
+  prompt: During a verification review of a watershed system, a baghouse primarily removes
+  choices:
+  - BOD
+  - particulate matter
+  - dissolved groundwater contaminants
+  - noise
+  answer: B
+  solution: '**B.** Fabric filters capture suspended particles from gas streams. This result applies to the stated
+    verification review of a watershed system.'
+  id: ENV-A-Q097
+- knowledge_area: Air Quality and Control
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-060-02
+  prompt: During a verification review of a industrial-discharge system, an electrostatic precipitator removes particles
+    primarily by
+  choices:
+  - electrically charging and collecting them
+  - biological oxidation
+  - gravity drainage only
+  - chlorination
+  answer: A
+  solution: '**A.** ESPs use electric fields to migrate charged particles to collection plates. This result applies
+    to the stated verification review of a industrial-discharge system.'
+  id: ENV-A-Q098
+- knowledge_area: Solid and Hazardous Waste
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-061-01
+  prompt: During a verification review of a reuse system, a community of 10,000 people generates 2 kg/person-day.
+    Find waste generation in metric tons/day.
+  choices:
+  - 20.00 metric tons/day
+  - 20000.0 metric tons/day
+  - 10.00 metric tons/day
+  - 2.000 metric tons/day
+  answer: A
+  solution: '**A.** Mass=population×rate/1000=20.00 metric tons/day. This result applies to the stated verification
+    review of a reuse system.'
+  id: ENV-A-Q099
+- knowledge_area: Solid and Hazardous Waste
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-061-02
+  prompt: During a design review of a water-treatment system, a landfill liner system is designed primarily to
+  choices:
+  - increase waste combustion
+  - eliminate collection vehicles
+  - raise air emissions
+  - limit contaminant migration from leachate
+  answer: D
+  solution: '**D.** Liners reduce seepage of leachate into surrounding soil and groundwater. This result applies
+    to the stated design review of a water-treatment system.'
+  id: ENV-A-Q100
+- knowledge_area: Solid and Hazardous Waste
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-061-03
+  prompt: During a design review of a wastewater system, landfill gas commonly contains substantial
+  choices:
+  - chlorine gas only
+  - nitrogen dioxide only
+  - methane and carbon dioxide
+  - oxygen only
+  answer: C
+  solution: '**C.** Anaerobic decomposition generates methane and carbon dioxide. This result applies to the stated
+    design review of a wastewater system.'
+  id: ENV-A-Q101
+- knowledge_area: Solid and Hazardous Waste
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-061-04
+  prompt: During a design review of a stormwater system, hazardous-waste compatibility screening is important to
+    prevent
+  choices:
+  - groundwater recharge
+  - dangerous reactions during mixing or storage
+  - all moisture loss
+  - traffic congestion
+  answer: B
+  solution: '**B.** Incompatible wastes can react violently or generate toxic gases. This result applies to the
+    stated design review of a stormwater system.'
+  id: ENV-A-Q102
+- knowledge_area: Solid and Hazardous Waste
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-061-05
+  prompt: During a design review of a groundwater system, composting is most appropriate for the biodegradable fraction
+    of
+  choices:
+  - organic solid waste
+  - metals
+  - glass
+  - inert concrete
+  answer: A
+  solution: '**A.** Composting biologically stabilizes organic material. This result applies to the stated design
+    review of a groundwater system.'
+  id: ENV-A-Q103
+- knowledge_area: Solid and Hazardous Waste
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-061-06
+  prompt: During a design review of a air-permit system, a community of 10,000 people generates 2 kg/person-day.
+    Find waste generation in metric tons/day.
+  choices:
+  - 20000.0 metric tons/day
+  - 10.00 metric tons/day
+  - 2.000 metric tons/day
+  - 20.00 metric tons/day
+  answer: D
+  solution: '**D.** Mass=population×rate/1000=20.00 metric tons/day. This result applies to the stated design review
+    of a air-permit system.'
+  id: ENV-A-Q104
+- knowledge_area: Solid and Hazardous Waste
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-061-07
+  prompt: During a design review of a landfill system, a landfill liner system is designed primarily to
+  choices:
+  - eliminate collection vehicles
+  - raise air emissions
+  - limit contaminant migration from leachate
+  - increase waste combustion
+  answer: C
+  solution: '**C.** Liners reduce seepage of leachate into surrounding soil and groundwater. This result applies
+    to the stated design review of a landfill system.'
+  id: ENV-A-Q105
+- knowledge_area: Solid and Hazardous Waste
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-061-01
+  prompt: During a design review of a remediation system, landfill gas commonly contains substantial
+  choices:
+  - nitrogen dioxide only
+  - methane and carbon dioxide
+  - oxygen only
+  - chlorine gas only
+  answer: B
+  solution: '**B.** Anaerobic decomposition generates methane and carbon dioxide. This result applies to the stated
+    design review of a remediation system.'
+  id: ENV-A-Q106
+- knowledge_area: Energy and Environment
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-061-01
+  prompt: During a design review of a watershed system, an energy system receives 1000 kWh with 90% conversion efficiency.
+    Find useful output.
+  choices:
+  - 900.0 kWh
+  - 1111.1 kWh
+  - 100.00 kWh
+  - 0.900 kWh
+  answer: A
+  solution: '**A.** Useful energy=ηEin=900.0 kWh. This result applies to the stated design review of a watershed
+    system.'
+  id: ENV-A-Q107
+- knowledge_area: Energy and Environment
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-061-02
+  prompt: During a design review of a industrial-discharge system, a lifecycle assessment considers environmental
+    burdens across
+  choices:
+  - operation only
+  - construction only
+  - disposal only
+  - multiple stages from resource extraction through end of life
+  answer: D
+  solution: '**D.** LCA evaluates impacts across the product/system life cycle. This result applies to the stated
+    design review of a industrial-discharge system.'
+  id: ENV-A-Q108
+- knowledge_area: Energy and Environment
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-061-03
+  prompt: During a design review of a reuse system, a carbon footprint is commonly expressed in
+  choices:
+  - decibels only
+  - meters of head
+  - CO2-equivalent emissions
+  - pH units
+  answer: C
+  solution: '**C.** Different greenhouse gases are normalized to CO2-equivalent. This result applies to the stated
+    design review of a reuse system.'
+  id: ENV-A-Q109
+- knowledge_area: Energy and Environment
+  question_type: multiple-choice
+  requires_concepts:
+  - ENV-3-061-04
+  prompt: During a compliance review of a water-treatment system, improving energy efficiency generally reduces
+    environmental burden when it
+  choices:
+  - requires no system boundary
+  - reduces resource use or emissions per unit service
+  - always increases fuel use
+  - eliminates all impacts
+  answer: B
+  solution: '**B.** Efficiency can lower inputs and associated emissions per useful output. This result applies
+    to the stated compliance review of a water-treatment system.'
+  id: ENV-A-Q110
