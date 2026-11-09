@@ -1,0 +1,1464 @@
+schema_version: 1
+exam_type: practice-A
+discipline: mechanical
+exam: A
+question_count: 110
+appointment_minutes: 355
+working_time_minutes: 320
+blueprint_source: meta/exam-blueprints.yaml
+items:
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-001-01
+  prompt: During a design review of a shaft assembly, for y=2x²+3x, find dy/dx at x=2.
+  choices:
+  - '7'
+  - '8'
+  - '15'
+  - '11'
+  answer: D
+  solution: '**D.** dy/dx=4x+3=11.'
+  id: MEC-A-Q001
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-001-02
+  prompt: During a design review of a HVAC unit, evaluate ∫_0^3 2x dx.
+  choices:
+  - '12'
+  - '9'
+  - '4.500'
+  - '6'
+  answer: B
+  solution: '**B.** Integral=x², giving 9.'
+  id: MEC-A-Q002
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-001-03
+  prompt: During a design review of a machine frame, solve 5x-7=18.
+  choices:
+  - '2.2'
+  - '11'
+  - '25'
+  - '5'
+  answer: D
+  solution: '**D.** 5x=25, so x=5.'
+  id: MEC-A-Q003
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-002-01
+  prompt: During a design review of a gearbox, for matrix [[3,2],[1,5]], find the determinant.
+  choices:
+  - '15'
+  - '13'
+  - '17'
+  - '7'
+  answer: B
+  solution: '**B.** det=3(5)-2(1)=13.'
+  id: MEC-A-Q004
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-002-02
+  prompt: During a design review of a pressure vessel, if f(t)=6e^(0.5t), find df/dt.
+  choices:
+  - 6.5e^(0.5t)
+  - 0.5e^(0.5t)
+  - 6e^(3t)
+  - 3e^(0.5t)
+  answer: D
+  solution: '**D.** Differentiate: 6(0.5)e^(0.5t).'
+  id: MEC-A-Q005
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-002-03
+  prompt: During a design review of a test stand, a line through (1,4) and (5,16) has slope
+  choices:
+  - '12'
+  - '3'
+  - '2'
+  - '4'
+  answer: B
+  solution: '**B.** m=(16-4)/(5-1)=3.'
+  id: MEC-A-Q006
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-01
+  prompt: During a design review of a fan system, a dimension is normally distributed with mean 20 mm and σ=2 mm. The z-score
+    at 24 mm is
+  choices:
+  - '1'
+  - '4'
+  - '12'
+  - '2'
+  answer: D
+  solution: '**D.** z=(24-20)/2=2.'
+  id: MEC-A-Q007
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-02
+  prompt: During a performance check of a pump skid, for independent events A and B, P(A∩B) equals
+  choices:
+  - 1-P(A)
+  - P(A)P(B)
+  - P(A)+P(B)
+  - P(A)-P(B)
+  answer: B
+  solution: '**B.** Independence gives the product rule.'
+  id: MEC-A-Q008
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-03
+  prompt: During a performance check of a shaft assembly, a sample of n=64 has population σ=8. The standard error of the mean
+    is
+  choices:
+  - '0.125'
+  - '8'
+  - '64'
+  - '1'
+  answer: D
+  solution: '**D.** SE=σ/√n=8/8=1.'
+  id: MEC-A-Q009
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-04
+  prompt: During a performance check of a HVAC unit, a component fails with probability 0.05 independently. Probability 4
+    components all survive is
+  choices:
+  - '0.800'
+  - '0.815'
+  - '0.185'
+  - '0.000'
+  answer: B
+  solution: '**B.** P=0.95^4=0.815.'
+  id: MEC-A-Q010
+- knowledge_area: Ethics and Professional Practice
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-01
+  prompt: During a performance check of a machine frame, a design calculation reveals a credible hazard to users. The engineer
+    should first
+  choices:
+  - protect schedule
+  - hide the calculation
+  - wait for failure
+  - protect health, safety, and welfare
+  answer: D
+  solution: '**D.** Public safety is paramount.'
+  id: MEC-A-Q011
+- knowledge_area: Ethics and Professional Practice
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-02
+  prompt: During a performance check of a gearbox, an engineer has a financial interest in a supplier under evaluation. The
+    engineer should
+  choices:
+  - destroy bid records
+  - disclose the conflict
+  - conceal it
+  - select the supplier automatically
+  answer: B
+  solution: '**B.** Material conflicts require disclosure.'
+  id: MEC-A-Q012
+- knowledge_area: Ethics and Professional Practice
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-03
+  prompt: During a performance check of a pressure vessel, a request is outside an engineer's competence. The proper response
+    is to
+  choices:
+  - approve anyway
+  - copy an unrelated design
+  - avoid review
+  - obtain qualified assistance or decline
+  answer: D
+  solution: '**D.** Practice must remain within competence.'
+  id: MEC-A-Q013
+- knowledge_area: Ethics and Professional Practice
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-04
+  prompt: During a performance check of a test stand, a released drawing contains a material error. The engineer should
+  choices:
+  - conceal it
+  - correct it and notify affected parties
+  - ignore it
+  - delete records
+  answer: B
+  solution: '**B.** Material errors must be addressed.'
+  id: MEC-A-Q014
+- knowledge_area: Ethics and Professional Practice
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-05
+  prompt: During a performance check of a fan system, a design calculation reveals a credible hazard to users. The engineer
+    should first
+  choices:
+  - protect schedule
+  - hide the calculation
+  - wait for failure
+  - protect health, safety, and welfare
+  answer: D
+  solution: '**D.** Public safety is paramount.'
+  id: MEC-A-Q015
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-01
+  prompt: During a prototype evaluation of a pump skid, a future overhaul costs $40,000 in 5 years. At 6%, find present worth.
+  choices:
+  - $40000
+  - $53529.0
+  - $30769.2
+  - $29890.3
+  answer: D
+  solution: '**D.** P=F/(1.06)^5=$29890.3.'
+  id: MEC-A-Q016
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-02
+  prompt: During a prototype evaluation of a shaft assembly, a machine costs $90,000 and saves $18,000 per year ignoring time
+    value. Simple payback is
+  choices:
+  - 18 years
+  - 5 years
+  - 2 years
+  - 4 years
+  answer: B
+  solution: '**B.** 90000/18000=5 years.'
+  id: MEC-A-Q017
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-03
+  prompt: During a prototype evaluation of a HVAC unit, for equal-service mutually exclusive alternatives, present-worth analysis
+    generally selects
+  choices:
+  - largest first cost
+  - longest life only
+  - lowest salvage value
+  - greatest net present worth
+  answer: D
+  solution: '**D.** Use consistent assumptions and select greatest net PW.'
+  id: MEC-A-Q018
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-04
+  prompt: During a prototype evaluation of a machine frame, fixed cost is $50,000 and contribution margin is $10/unit. Break-even
+    volume is
+  choices:
+  - 50000 units
+  - 5000 units
+  - 500 units
+  - 50 units
+  answer: B
+  solution: '**B.** Q=F/(p-v)=50000/10.'
+  id: MEC-A-Q019
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-05
+  prompt: During a prototype evaluation of a gearbox, depreciation primarily represents
+  choices:
+  - cash revenue
+  - loan principal only
+  - salvage paid annually
+  - allocation of asset cost over its useful life
+  answer: D
+  solution: '**D.** Depreciation allocates capital cost for accounting/tax purposes.'
+  id: MEC-A-Q020
+- knowledge_area: Electricity and Magnetism
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-059-01
+  prompt: During a prototype evaluation of a pressure vessel, a 24 V source is applied across a 12 Ω resistor. Current is
+  choices:
+  - 0.5 A
+  - 12 A
+  - 288 A
+  - 2 A
+  answer: D
+  solution: '**D.** I=V/R=2 A.'
+  id: MEC-A-Q021
+- knowledge_area: Electricity and Magnetism
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-059-02
+  prompt: During a prototype evaluation of a test stand, a 10 Ω resistor carries 3 A. Power dissipated is
+  choices:
+  - 300 W
+  - 90 W
+  - 30 W
+  - 3.33 W
+  answer: B
+  solution: '**B.** P=I²R=9×10=90 W.'
+  id: MEC-A-Q022
+- knowledge_area: Electricity and Magnetism
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-059-03
+  prompt: During a prototype evaluation of a fan system, two 6 Ω resistors in parallel have equivalent resistance
+  choices:
+  - 6 Ω
+  - 12 Ω
+  - 1 Ω
+  - 3 Ω
+  answer: D
+  solution: '**D.** For equal resistors, R_eq=R/2=6 Ω/2=3 Ω.'
+  id: MEC-A-Q023
+- knowledge_area: Electricity and Magnetism
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-059-04
+  prompt: During a failure analysis of a pump skid, for sinusoidal voltage and current in phase, power factor is
+  choices:
+  - '-1'
+  - '1'
+  - '0'
+  - '0.5'
+  answer: B
+  solution: '**B.** Phase angle zero gives cosφ=1.'
+  id: MEC-A-Q024
+- knowledge_area: Electricity and Magnetism
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-059-05
+  prompt: During a failure analysis of a shaft assembly, a transformer ideally steps 120 V down to 24 V. Turns ratio Np/Ns
+    is
+  choices:
+  - '0.2'
+  - '24'
+  - '144'
+  - '5'
+  answer: D
+  solution: '**D.** Np/Ns=Vp/Vs=120/24=5.'
+  id: MEC-A-Q025
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-011-01
+  prompt: During a failure analysis of a HVAC unit, a 100 N force acts 2 m perpendicular to a pivot. Moment magnitude is
+  choices:
+  - 50 N·m
+  - 100 N·m
+  - 202 N·m
+  - 200 N·m
+  answer: D
+  solution: '**D.** M=Fd=200 N·m.'
+  id: MEC-A-Q026
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-011-02
+  prompt: During a failure analysis of a machine frame, a simply supported beam carries a centered 10 kN point load. Each
+    vertical reaction is
+  choices:
+  - 20 kN
+  - 5 kN
+  - 10 kN
+  - 2.5 kN
+  answer: B
+  solution: '**B.** Symmetry and ΣFy=0 give 5 kN each.'
+  id: MEC-A-Q027
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-011-03
+  prompt: During a failure analysis of a gearbox, for a body in planar static equilibrium, the required equations include
+  choices:
+  - ΣFx=1 only
+  - ΣM=velocity
+  - energy=0 only
+  - ΣFx=0, ΣFy=0, and ΣM=0
+  answer: D
+  solution: '**D.** These are the three independent planar equilibrium equations.'
+  id: MEC-A-Q028
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-011-04
+  prompt: During a failure analysis of a pressure vessel, a 3-4-5 cable carries 100 N tension. Its horizontal component corresponding
+    to side 4 is
+  choices:
+  - 125 N
+  - 80 N
+  - 60 N
+  - 100 N
+  answer: B
+  solution: '**B.** Fx=100(4/5)=80 N.'
+  id: MEC-A-Q029
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-011-05
+  prompt: During a failure analysis of a test stand, the centroid of a rectangle lies at
+  choices:
+  - one corner
+  - one-third of width only
+  - outside the rectangle
+  - its geometric center
+  answer: D
+  solution: '**D.** Symmetry places the centroid at the center.'
+  id: MEC-A-Q030
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-011-06
+  prompt: During a failure analysis of a fan system, for impending sliding with coefficient of static friction μs, maximum
+    friction is
+  choices:
+  - zero
+  - μs N
+  - N/μs
+  - μs/N
+  answer: B
+  solution: '**B.** Fmax=μsN.'
+  id: MEC-A-Q031
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-011-07
+  prompt: During a commissioning review of a pump skid, a 100 N force acts 2 m perpendicular to a pivot. Moment magnitude
+    is
+  choices:
+  - 50 N·m
+  - 100 N·m
+  - 202 N·m
+  - 200 N·m
+  answer: D
+  solution: '**D.** M=Fd=200 N·m.'
+  id: MEC-A-Q032
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-012-01
+  prompt: During a commissioning review of a shaft assembly, a simply supported beam carries a centered 10 kN point load.
+    Each vertical reaction is
+  choices:
+  - 20 kN
+  - 5 kN
+  - 10 kN
+  - 2.5 kN
+  answer: B
+  solution: '**B.** Symmetry and ΣFy=0 give 5 kN each.'
+  id: MEC-A-Q033
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-012-02
+  prompt: During a commissioning review of a HVAC unit, for a body in planar static equilibrium, the required equations include
+  choices:
+  - ΣFx=1 only
+  - ΣM=velocity
+  - energy=0 only
+  - ΣFx=0, ΣFy=0, and ΣM=0
+  answer: D
+  solution: '**D.** These are the three independent planar equilibrium equations.'
+  id: MEC-A-Q034
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-012-03
+  prompt: During a commissioning review of a machine frame, a 3-4-5 cable carries 100 N tension. Its horizontal component
+    corresponding to side 4 is
+  choices:
+  - 125 N
+  - 80 N
+  - 60 N
+  - 100 N
+  answer: B
+  solution: '**B.** Fx=100(4/5)=80 N.'
+  id: MEC-A-Q035
+- knowledge_area: Dynamics, Kinematics, and Vibrations
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-016-01
+  prompt: During a commissioning review of a gearbox, a particle accelerates uniformly from 0 to 20 m/s in 5 s. Acceleration
+    is
+  choices:
+  - 2 m/s²
+  - 5 m/s²
+  - 100 m/s²
+  - 4 m/s²
+  answer: D
+  solution: '**D.** a=Δv/Δt=4 m/s².'
+  id: MEC-A-Q036
+- knowledge_area: Dynamics, Kinematics, and Vibrations
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-016-02
+  prompt: During a commissioning review of a pressure vessel, a 2 kg mass accelerates at 3 m/s². Net force is
+  choices:
+  - 9 N
+  - 6 N
+  - 1.5 N
+  - 5 N
+  answer: B
+  solution: '**B.** F=ma=6 N.'
+  id: MEC-A-Q037
+- knowledge_area: Dynamics, Kinematics, and Vibrations
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-016-03
+  prompt: During a commissioning review of a test stand, a wheel rotates at 10 rad/s with radius 0.5 m. Rim speed is
+  choices:
+  - 10 m/s
+  - 20 m/s
+  - 0.05 m/s
+  - 5 m/s
+  answer: D
+  solution: '**D.** v=rω=5 m/s.'
+  id: MEC-A-Q038
+- knowledge_area: Dynamics, Kinematics, and Vibrations
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-016-04
+  prompt: During a commissioning review of a fan system, for constant angular acceleration α, angular velocity follows
+  choices:
+  - ω=ω0αt²
+  - ω=ω0+αt
+  - ω=α/t
+  - ω=t/α
+  answer: B
+  solution: '**B.** Rotational kinematics parallels linear motion.'
+  id: MEC-A-Q039
+- knowledge_area: Dynamics, Kinematics, and Vibrations
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-016-05
+  prompt: During a verification test of a pump skid, a spring-mass system with k=200 N/m and m=2 kg has undamped natural frequency
+  choices:
+  - '14.14'
+  - '100'
+  - '5'
+  - 10.00 rad/s
+  answer: D
+  solution: '**D.** ωn=√(k/m)=10 rad/s.'
+  id: MEC-A-Q040
+- knowledge_area: Dynamics, Kinematics, and Vibrations
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-016-06
+  prompt: During a verification test of a shaft assembly, resonance occurs when forcing frequency is near
+  choices:
+  - static deflection only
+  - the system natural frequency
+  - zero always
+  - twice mass
+  answer: B
+  solution: '**B.** Dynamic amplification peaks near natural frequency.'
+  id: MEC-A-Q041
+- knowledge_area: Dynamics, Kinematics, and Vibrations
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-016-07
+  prompt: During a verification test of a HVAC unit, impulse equals the change in
+  choices:
+  - temperature
+  - mass
+  - spring constant
+  - linear momentum
+  answer: D
+  solution: '**D.** J=Δ(mv).'
+  id: MEC-A-Q042
+- knowledge_area: Dynamics, Kinematics, and Vibrations
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-017-01
+  prompt: During a verification test of a machine frame, kinetic energy of a 4 kg mass moving at 3 m/s is
+  choices:
+  - 36 J
+  - 18 J
+  - 6 J
+  - 12 J
+  answer: B
+  solution: '**B.** KE=mv²/2=18 J.'
+  id: MEC-A-Q043
+- knowledge_area: Dynamics, Kinematics, and Vibrations
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-017-02
+  prompt: During a verification test of a gearbox, a particle accelerates uniformly from 0 to 20 m/s in 5 s. Acceleration
+    is
+  choices:
+  - 2 m/s²
+  - 5 m/s²
+  - 100 m/s²
+  - 4 m/s²
+  answer: D
+  solution: '**D.** a=Δv/Δt=4 m/s².'
+  id: MEC-A-Q044
+- knowledge_area: Dynamics, Kinematics, and Vibrations
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-017-03
+  prompt: During a verification test of a pressure vessel, a 2 kg mass accelerates at 3 m/s². Net force is
+  choices:
+  - 9 N
+  - 6 N
+  - 1.5 N
+  - 5 N
+  answer: B
+  solution: '**B.** F=ma=6 N.'
+  id: MEC-A-Q045
+- knowledge_area: Dynamics, Kinematics, and Vibrations
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-017-04
+  prompt: During a verification test of a test stand, a wheel rotates at 10 rad/s with radius 0.5 m. Rim speed is
+  choices:
+  - 10 m/s
+  - 20 m/s
+  - 0.05 m/s
+  - 5 m/s
+  answer: D
+  solution: '**D.** v=rω=5 m/s.'
+  id: MEC-A-Q046
+- knowledge_area: Mechanics of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-03
+  prompt: During a verification test of a fan system, a bar carries 20 kN axial tension over 200 mm² area. Normal stress is
+  choices:
+  - 10 MPa
+  - 40 MPa
+  - 400 MPa
+  - 100 MPa
+  answer: D
+  solution: '**D.** σ=P/A=20000/(200e-6)=100 MPa.'
+  id: MEC-A-Q047
+- knowledge_area: Mechanics of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-01
+  prompt: During a design review of a pump skid, for linear elastic uniaxial loading, Hooke's law is
+  choices:
+  - σ=E/ε
+  - σ=Eε
+  - σ=ε/E
+  - E=σε²
+  answer: B
+  solution: '**B.** Stress is modulus times strain.'
+  id: MEC-A-Q048
+- knowledge_area: Mechanics of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-02
+  prompt: During a design review of a shaft assembly, for pure bending, normal stress magnitude varies
+  choices:
+  - uniformly across depth
+  - quadratically with time
+  - independently of moment
+  - linearly with distance from the neutral axis
+  answer: D
+  solution: '**D.** σ=My/I.'
+  id: MEC-A-Q049
+- knowledge_area: Mechanics of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-04
+  prompt: During a design review of a HVAC unit, a circular shaft in torsion has shear stress proportional to
+  choices:
+  - inverse torque
+  - radius from the center
+  - temperature only
+  - shaft length only
+  answer: B
+  solution: '**B.** τ=Tr/J.'
+  id: MEC-A-Q050
+- knowledge_area: Mechanics of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-05
+  prompt: During a design review of a machine frame, a stress concentration factor is defined as
+  choices:
+  - nominal divided by peak
+  - strain divided by area
+  - load divided by length
+  - peak local stress divided by nominal stress
+  answer: D
+  solution: '**D.** Kt=σmax/σnom.'
+  id: MEC-A-Q051
+- knowledge_area: Mechanics of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-06
+  prompt: During a design review of a gearbox, for ductile materials under multiaxial static loading, a common failure criterion
+    is
+  choices:
+  - Fourier law
+  - von Mises distortion-energy theory
+  - Snell's law
+  - Bernoulli equation
+  answer: B
+  solution: '**B.** Von Mises is widely used for ductile yielding.'
+  id: MEC-A-Q052
+- knowledge_area: Mechanics of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-07
+  prompt: During a design review of a pressure vessel, fatigue failure can occur at stresses
+  choices:
+  - only above ultimate strength
+  - only at zero cycles
+  - independent of load cycles
+  - below static yield strength under repeated cycling
+  answer: D
+  solution: '**D.** Repeated loading can cause fatigue below yield.'
+  id: MEC-A-Q053
+- knowledge_area: Mechanics of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-023-01
+  prompt: During a design review of a test stand, for a thin-walled cylindrical pressure vessel, hoop stress is approximately
+  choices:
+  - four times wall thickness
+  - twice the longitudinal stress
+  - half longitudinal stress
+  - equal to zero
+  answer: B
+  solution: '**B.** σh=pr/t and σL=pr/(2t).'
+  id: MEC-A-Q054
+- knowledge_area: Mechanics of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-023-02
+  prompt: During a design review of a fan system, a bar carries 20 kN axial tension over 200 mm² area. Normal stress is
+  choices:
+  - 10 MPa
+  - 40 MPa
+  - 400 MPa
+  - 100 MPa
+  answer: D
+  solution: '**D.** σ=P/A=20000/(200e-6)=100 MPa.'
+  id: MEC-A-Q055
+- knowledge_area: Mechanics of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-023-03
+  prompt: During a performance check of a pump skid, for linear elastic uniaxial loading, Hooke's law is
+  choices:
+  - σ=E/ε
+  - σ=Eε
+  - σ=ε/E
+  - E=σε²
+  answer: B
+  solution: '**B.** Stress is modulus times strain.'
+  id: MEC-A-Q056
+- knowledge_area: Material Properties and Processing
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-027-01
+  prompt: During a performance check of a shaft assembly, young's modulus measures material
+  choices:
+  - density only
+  - thermal conductivity only
+  - hardness only
+  - elastic stiffness
+  answer: D
+  solution: '**D.** E is the slope of elastic stress-strain response.'
+  id: MEC-A-Q057
+- knowledge_area: Material Properties and Processing
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-027-02
+  prompt: During a performance check of a HVAC unit, a ductile material typically exhibits
+  choices:
+  - perfect brittleness
+  - substantial plastic deformation before fracture
+  - no strain before fracture
+  - zero toughness
+  answer: B
+  solution: '**B.** Ductility is capacity for plastic deformation.'
+  id: MEC-A-Q058
+- knowledge_area: Material Properties and Processing
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-027-03
+  prompt: During a performance check of a machine frame, quenching steel generally aims to produce a
+  choices:
+  - softer polymer
+  - lower carbon content automatically
+  - nonmetallic phase only
+  - harder microstructure
+  answer: D
+  solution: '**D.** Rapid cooling can form hard martensitic structures.'
+  id: MEC-A-Q059
+- knowledge_area: Material Properties and Processing
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-027-04
+  prompt: During a performance check of a gearbox, annealing commonly reduces hardness and
+  choices:
+  - creates only brittle phases
+  - relieves residual stress
+  - increases all residual stress
+  - eliminates atoms
+  answer: B
+  solution: '**B.** Annealing promotes recovery/recrystallization and stress relief.'
+  id: MEC-A-Q060
+- knowledge_area: Material Properties and Processing
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-027-05
+  prompt: During a performance check of a pressure vessel, casting is especially useful for producing
+  choices:
+  - only flat sheet
+  - only threaded joints
+  - only heat-treated wire
+  - complex shapes from molten material
+  answer: D
+  solution: '**D.** Molten material fills a mold cavity.'
+  id: MEC-A-Q061
+- knowledge_area: Material Properties and Processing
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-027-06
+  prompt: During a performance check of a test stand, machining is a
+  choices:
+  - joining process only
+  - subtractive manufacturing process
+  - additive process only
+  - heat-treatment process only
+  answer: B
+  solution: '**B.** Material is removed to create geometry.'
+  id: MEC-A-Q062
+- knowledge_area: Material Properties and Processing
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-027-07
+  prompt: During a performance check of a fan system, a factor important in material selection is
+  choices:
+  - color only
+  - supplier name only
+  - density alone always
+  - strength, stiffness, environment, manufacturability, and cost
+  answer: D
+  solution: '**D.** Selection balances multiple performance constraints.'
+  id: MEC-A-Q063
+- knowledge_area: Material Properties and Processing
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-028-01
+  prompt: During a prototype evaluation of a pump skid, young's modulus measures material
+  choices:
+  - hardness only
+  - elastic stiffness
+  - density only
+  - thermal conductivity only
+  answer: B
+  solution: '**B.** E is the slope of elastic stress-strain response.'
+  id: MEC-A-Q064
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-01
+  prompt: During a prototype evaluation of a shaft assembly, water flows at 3 m/s in a 0.2 m diameter pipe. Flow rate is
+  choices:
+  - 0.188 m³/s
+  - 0.600 m³/s
+  - 0.047 m³/s
+  - 0.094 m³/s
+  answer: D
+  solution: '**D.** Q=VA=0.094 m³/s.'
+  id: MEC-A-Q065
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-02
+  prompt: During a prototype evaluation of a HVAC unit, reynolds number characterizes the ratio of
+  choices:
+  - voltage to current
+  - inertial to viscous effects
+  - pressure to temperature
+  - heat to mass
+  answer: B
+  solution: '**B.** Re=ρVD/μ.'
+  id: MEC-A-Q066
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-03
+  prompt: During a prototype evaluation of a machine frame, for incompressible steady flow, continuity requires
+  choices:
+  - temperature conservation only
+  - zero pressure
+  - zero velocity
+  - mass flow rate conservation
+  answer: D
+  solution: '**D.** Mass entering equals mass leaving.'
+  id: MEC-A-Q067
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-04
+  prompt: During a prototype evaluation of a gearbox, bernoulli's equation relates pressure, velocity, and
+  choices:
+  - entropy generation only
+  - elevation head
+  - electrical charge
+  - yield strength
+  answer: B
+  solution: '**B.** Mechanical energy terms include p/γ, V²/2g, and z.'
+  id: MEC-A-Q068
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-05
+  prompt: During a prototype evaluation of a pressure vessel, darcy-Weisbach pipe head loss is proportional to
+  choices:
+  - V only
+  - 1/L
+  - D² only
+  - f(L/D)V²/(2g)
+  answer: D
+  solution: '**D.** That is the standard Darcy-Weisbach form.'
+  id: MEC-A-Q069
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-06
+  prompt: During a prototype evaluation of a test stand, drag force on a body in external flow scales with
+  choices:
+  - g/V²
+  - ½ρV²CdA
+  - ρV only
+  - μA/V only
+  answer: B
+  solution: '**B.** Dynamic pressure times coefficient and area gives drag.'
+  id: MEC-A-Q070
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-07
+  prompt: During a prototype evaluation of a fan system, mach number is the ratio of flow speed to
+  choices:
+  - viscosity
+  - density
+  - gravity
+  - local speed of sound
+  answer: D
+  solution: '**D.** M=V/a.'
+  id: MEC-A-Q071
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-043-01
+  prompt: During a failure analysis of a pump skid, across a normal shock in supersonic flow, Mach number generally
+  choices:
+  - becomes zero always
+  - decreases to a subsonic value
+  - increases without limit
+  - remains exactly unchanged
+  answer: B
+  solution: '**B.** A normal shock decelerates supersonic flow to subsonic.'
+  id: MEC-A-Q072
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-043-02
+  prompt: During a failure analysis of a shaft assembly, water flows at 3 m/s in a 0.2 m diameter pipe. Flow rate is
+  choices:
+  - 0.188 m³/s
+  - 0.600 m³/s
+  - 0.047 m³/s
+  - 0.094 m³/s
+  answer: D
+  solution: '**D.** Q=VA=0.094 m³/s.'
+  id: MEC-A-Q073
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-043-03
+  prompt: During a failure analysis of a HVAC unit, reynolds number characterizes the ratio of
+  choices:
+  - voltage to current
+  - inertial to viscous effects
+  - pressure to temperature
+  - heat to mass
+  answer: B
+  solution: '**B.** Re=ρVD/μ.'
+  id: MEC-A-Q074
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-043-04
+  prompt: During a failure analysis of a machine frame, for incompressible steady flow, continuity requires
+  choices:
+  - temperature conservation only
+  - zero pressure
+  - zero velocity
+  - mass flow rate conservation
+  answer: D
+  solution: '**D.** Mass entering equals mass leaving.'
+  id: MEC-A-Q075
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-047-01
+  prompt: During a failure analysis of a gearbox, for an ideal gas, PV equals
+  choices:
+  - mcΔT
+  - kAΔT/L
+  - I²R
+  - nRT
+  answer: D
+  solution: '**D.** Ideal-gas equation: PV=nRT.'
+  id: MEC-A-Q076
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-047-02
+  prompt: During a failure analysis of a pressure vessel, for a closed system, first-law energy balance is based on
+  choices:
+  - charge neutrality only
+  - energy conservation
+  - mass creation
+  - entropy destruction
+  answer: B
+  solution: '**B.** Energy cannot be created or destroyed.'
+  id: MEC-A-Q077
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-047-03
+  prompt: During a failure analysis of a test stand, a heat engine thermal efficiency is
+  choices:
+  - heat rejected divided by work
+  - mass flow divided by pressure
+  - temperature divided by volume
+  - net work output divided by heat input
+  answer: D
+  solution: '**D.** η=Wnet/Qin.'
+  id: MEC-A-Q078
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-047-04
+  prompt: During a failure analysis of a fan system, a refrigerator COP is
+  choices:
+  - temperature difference only
+  - desired cooling effect divided by required work input
+  - work divided by heat rejected
+  - pressure ratio only
+  answer: B
+  solution: '**B.** COP_R=QL/W.'
+  id: MEC-A-Q079
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-047-05
+  prompt: During a commissioning review of a pump skid, entropy generation for a real irreversible process is
+  choices:
+  - always negative
+  - always zero
+  - equal to enthalpy
+  - nonnegative
+  answer: D
+  solution: '**D.** The second law requires Sgen≥0.'
+  id: MEC-A-Q080
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-047-06
+  prompt: During a commissioning review of a shaft assembly, for an ideal constant-pressure heating process, sensible heat
+    is commonly estimated with
+  choices:
+  - Q=IV
+  - Q=mc_pΔT
+  - Q=m/ΔT
+  - Q=kA/L only
+  answer: B
+  solution: '**B.** Enthalpy change for ideal sensible heating uses cp.'
+  id: MEC-A-Q081
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-047-07
+  prompt: During a commissioning review of a HVAC unit, stoichiometric combustion means
+  choices:
+  - no oxygen supplied
+  - infinite excess air
+  - fuel never reacts
+  - exact theoretical oxidizer for complete combustion
+  answer: D
+  solution: '**D.** Stoichiometric conditions match theoretical oxygen demand.'
+  id: MEC-A-Q082
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-049-01
+  prompt: During a commissioning review of a machine frame, relative humidity compares actual water-vapor partial pressure
+    with
+  choices:
+  - density of liquid water
+  - saturation vapor pressure at the same temperature
+  - total pressure only
+  - dry-bulb temperature only
+  answer: B
+  solution: '**B.** RH=pv/pg at the same T.'
+  id: MEC-A-Q083
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-049-02
+  prompt: During a commissioning review of a gearbox, for an ideal gas, PV equals
+  choices:
+  - mcΔT
+  - kAΔT/L
+  - I²R
+  - nRT
+  answer: D
+  solution: '**D.** Ideal-gas equation: PV=nRT.'
+  id: MEC-A-Q084
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-049-03
+  prompt: During a commissioning review of a pressure vessel, for a closed system, first-law energy balance is based on
+  choices:
+  - charge neutrality only
+  - energy conservation
+  - mass creation
+  - entropy destruction
+  answer: B
+  solution: '**B.** Energy cannot be created or destroyed.'
+  id: MEC-A-Q085
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-049-04
+  prompt: During a commissioning review of a test stand, a heat engine thermal efficiency is
+  choices:
+  - heat rejected divided by work
+  - mass flow divided by pressure
+  - temperature divided by volume
+  - net work output divided by heat input
+  answer: D
+  solution: '**D.** η=Wnet/Qin.'
+  id: MEC-A-Q086
+- knowledge_area: Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-053-01
+  prompt: During a commissioning review of a fan system, one-dimensional steady conduction through a plane wall follows
+  choices:
+  - Ohm's law only
+  - Hooke's law
+  - Pascal's law
+  - Fourier's law
+  answer: D
+  solution: '**D.** q=-kA dT/dx.'
+  id: MEC-A-Q087
+- knowledge_area: Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-053-02
+  prompt: During a verification test of a pump skid, a wall has U=20 W/m²-K, area 2 m², and ΔT=30 K. Heat transfer rate is
+  choices:
+  - 2400 W
+  - 1200 W
+  - 300 W
+  - 600 W
+  answer: B
+  solution: '**B.** Q=UAΔT=1200 W.'
+  id: MEC-A-Q088
+- knowledge_area: Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-053-03
+  prompt: During a verification test of a shaft assembly, convective heat transfer is commonly written
+  choices:
+  - q=kA/L only
+  - q=mcΔT/t only
+  - q=I²R
+  - q=hA(Ts-T∞)
+  answer: D
+  solution: '**D.** Newton''s law of cooling.'
+  id: MEC-A-Q089
+- knowledge_area: Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-053-04
+  prompt: During a verification test of a HVAC unit, thermal radiation from a surface depends strongly on
+  choices:
+  - mass flow only
+  - absolute temperature to the fourth power
+  - temperature squared only
+  - pressure only
+  answer: B
+  solution: '**B.** Stefan-Boltzmann relation contains T⁴.'
+  id: MEC-A-Q090
+- knowledge_area: Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-053-05
+  prompt: During a verification test of a machine frame, adding insulation to a plane wall generally
+  choices:
+  - reduces resistance to zero
+  - has no thermal effect
+  - creates heat
+  - increases thermal resistance
+  answer: D
+  solution: '**D.** R=L/(kA) increases with thickness.'
+  id: MEC-A-Q091
+- knowledge_area: Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-053-06
+  prompt: During a verification test of a gearbox, for resistances in series, total thermal resistance is
+  choices:
+  - zero
+  - the sum of individual resistances
+  - their product only
+  - the smallest resistance
+  answer: B
+  solution: '**B.** Series thermal resistances add.'
+  id: MEC-A-Q092
+- knowledge_area: Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-053-07
+  prompt: During a verification test of a pressure vessel, a heat exchanger effectiveness compares actual heat transfer to
+  choices:
+  - pump work only
+  - pressure drop only
+  - area only
+  - the maximum thermodynamically possible heat transfer
+  answer: D
+  solution: '**D.** ε=q/qmax.'
+  id: MEC-A-Q093
+- knowledge_area: Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-054-01
+  prompt: During a verification test of a test stand, one-dimensional steady conduction through a plane wall follows
+  choices:
+  - Pascal's law
+  - Fourier's law
+  - Ohm's law only
+  - Hooke's law
+  answer: B
+  solution: '**B.** q=-kA dT/dx.'
+  id: MEC-A-Q094
+- knowledge_area: Measurements, Instrumentation, and Controls
+  question_type: multiple-choice
+  requires_concepts:
+  - INST-2F-066-01
+  prompt: During a verification test of a fan system, accuracy refers to closeness to
+  choices:
+  - repeatability only
+  - sample size only
+  - resolution only
+  - the true or accepted value
+  answer: D
+  solution: '**D.** Accuracy concerns correctness.'
+  id: MEC-A-Q095
+- knowledge_area: Measurements, Instrumentation, and Controls
+  question_type: multiple-choice
+  requires_concepts:
+  - INST-2F-066-02
+  prompt: During a design review of a pump skid, precision refers primarily to
+  choices:
+  - calibration date only
+  - repeatability of measurements
+  - closeness to truth only
+  - sensor range only
+  answer: B
+  solution: '**B.** Precision is scatter/repeatability.'
+  id: MEC-A-Q096
+- knowledge_area: Measurements, Instrumentation, and Controls
+  question_type: multiple-choice
+  requires_concepts:
+  - INST-2F-066-03
+  prompt: During a design review of a shaft assembly, a first-order sensor reaches about 63.2% of a step change after
+  choices:
+  - half a time constant
+  - two periods
+  - zero time
+  - one time constant
+  answer: D
+  solution: '**D.** First-order response is 1-e^-1.'
+  id: MEC-A-Q097
+- knowledge_area: Measurements, Instrumentation, and Controls
+  question_type: multiple-choice
+  requires_concepts:
+  - INST-2F-066-04
+  prompt: During a design review of a HVAC unit, a strain gauge changes
+  choices:
+  - magnetic flux only
+  - electrical resistance with strain
+  - mass with pressure
+  - temperature only
+  answer: B
+  solution: '**B.** Gauge factor relates ΔR/R to strain.'
+  id: MEC-A-Q098
+- knowledge_area: Measurements, Instrumentation, and Controls
+  question_type: multiple-choice
+  requires_concepts:
+  - INST-2F-066-05
+  prompt: During a design review of a machine frame, negative feedback in a control loop generally tends to
+  choices:
+  - guarantee instability
+  - remove sensing
+  - increase open-loop uncertainty
+  - reduce error and improve regulation
+  answer: D
+  solution: '**D.** Feedback acts on the error signal.'
+  id: MEC-A-Q099
+- knowledge_area: Mechanical Design and Analysis
+  question_type: multiple-choice
+  requires_concepts:
+  - MEC-3-084-01
+  prompt: During a design review of a gearbox, a helical compression spring with greater wire diameter, all else equal, is
+    generally
+  choices:
+  - less stiff
+  - unchanged
+  - unable to carry load
+  - stiffer
+  answer: D
+  solution: '**D.** Spring rate rises strongly with wire diameter.'
+  id: MEC-A-Q100
+- knowledge_area: Mechanical Design and Analysis
+  question_type: multiple-choice
+  requires_concepts:
+  - MEC-3-084-02
+  prompt: During a design review of a pressure vessel, rolling-element bearing life rating generally decreases as applied
+    load
+  choices:
+  - is unrelated
+  - increases
+  - decreases
+  - becomes zero
+  answer: B
+  solution: '**B.** Bearing life varies inversely with a power of load.'
+  id: MEC-A-Q101
+- knowledge_area: Mechanical Design and Analysis
+  question_type: multiple-choice
+  requires_concepts:
+  - MEC-3-084-03
+  prompt: During a design review of a test stand, a keyed shaft connection is used primarily to
+  choices:
+  - seal pressure only
+  - measure temperature
+  - reduce fluid drag
+  - transmit torque between shaft and hub
+  answer: D
+  solution: '**D.** The key prevents relative rotation.'
+  id: MEC-A-Q102
+- knowledge_area: Mechanical Design and Analysis
+  question_type: multiple-choice
+  requires_concepts:
+  - MEC-3-084-04
+  prompt: During a design review of a fan system, a gear pair primarily changes
+  choices:
+  - fluid density
+  - speed and torque according to gear ratio
+  - mass
+  - material modulus
+  answer: B
+  solution: '**B.** Gear ratio relates angular speed and torque.'
+  id: MEC-A-Q103
+- knowledge_area: Mechanical Design and Analysis
+  question_type: multiple-choice
+  requires_concepts:
+  - MEC-3-084-05
+  prompt: During a performance check of a pump skid, for a threaded fastener joint, preload is applied primarily to
+  choices:
+  - reduce all friction to zero
+  - eliminate threads
+  - increase hole diameter
+  - clamp the joint members together
+  answer: D
+  solution: '**D.** Proper preload maintains joint compression.'
+  id: MEC-A-Q104
+- knowledge_area: Mechanical Design and Analysis
+  question_type: multiple-choice
+  requires_concepts:
+  - MEC-3-084-06
+  prompt: During a performance check of a shaft assembly, a hydraulic actuator converts fluid pressure into
+  choices:
+  - chemical reaction
+  - force and motion
+  - electrical resistance only
+  - heat transfer only
+  answer: B
+  solution: '**B.** Pressure acting on piston area produces force.'
+  id: MEC-A-Q105
+- knowledge_area: Mechanical Design and Analysis
+  question_type: multiple-choice
+  requires_concepts:
+  - MEC-3-084-07
+  prompt: During a performance check of a HVAC unit, a clearance fit means
+  choices:
+  - shaft always larger
+  - zero tolerance
+  - parts are welded
+  - the hole is always larger than the mating shaft within limits
+  answer: D
+  solution: '**D.** Clearance remains positive.'
+  id: MEC-A-Q106
+- knowledge_area: Mechanical Design and Analysis
+  question_type: multiple-choice
+  requires_concepts:
+  - MEC-3-085-01
+  prompt: During a performance check of a machine frame, a factor of safety is generally the ratio of
+  choices:
+  - speed to torque
+  - allowable or failure capacity to applied demand
+  - demand to capacity always
+  - cost to time
+  answer: B
+  solution: '**B.** FoS compares capacity margin to demand.'
+  id: MEC-A-Q107
+- knowledge_area: Mechanical Design and Analysis
+  question_type: multiple-choice
+  requires_concepts:
+  - MEC-3-085-02
+  prompt: During a performance check of a gearbox, a design for manufacturability review seeks to
+  choices:
+  - maximize part count
+  - ignore process capability
+  - eliminate tolerances
+  - meet function while simplifying reliable economical production
+  answer: D
+  solution: '**D.** DFM reduces unnecessary complexity and production risk.'
+  id: MEC-A-Q108
+- knowledge_area: Mechanical Design and Analysis
+  question_type: multiple-choice
+  requires_concepts:
+  - MEC-3-085-03
+  prompt: During a performance check of a pressure vessel, a helical compression spring with greater wire diameter, all else
+    equal, is generally
+  choices:
+  - unable to carry load
+  - stiffer
+  - less stiff
+  - unchanged
+  answer: B
+  solution: '**B.** Spring rate rises strongly with wire diameter.'
+  id: MEC-A-Q109
+- knowledge_area: Mechanical Design and Analysis
+  question_type: multiple-choice
+  requires_concepts:
+  - MEC-3-085-04
+  prompt: During a performance check of a test stand, rolling-element bearing life rating generally decreases as applied load
+  choices:
+  - decreases
+  - becomes zero
+  - is unrelated
+  - increases
+  answer: D
+  solution: '**D.** Bearing life varies inversely with a power of load.'
+  id: MEC-A-Q110

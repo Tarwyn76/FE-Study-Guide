@@ -1,0 +1,1548 @@
+schema_version: 1
+exam_type: practice-B
+discipline: mechanical
+exam: B
+question_count: 110
+appointment_minutes: 355
+working_time_minutes: 320
+blueprint_source: meta/exam-blueprints.yaml
+items:
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1B-004-03
+  prompt: A mechanical engineer is conducting a separate redesign study for a robotic fixture. In that separate case, a line
+    through (1,4) and (5,16) has slope
+  choices:
+  - '12'
+  - '3'
+  - '2'
+  - '4'
+  answer: B
+  solution: '**B.** m=(16-4)/(5-1)=3.'
+  id: MEC-B-Q001
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1C-016-01
+  prompt: A mechanical engineer is conducting a separate redesign study for a thermal loop. In that separate case, for y=2x²+3x,
+    find dy/dx at x=2.
+  choices:
+  - '7'
+  - '8'
+  - '15'
+  - '11'
+  answer: D
+  solution: '**D.** dy/dx=4x+3=11.'
+  id: MEC-B-Q002
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1C-016-02
+  prompt: A mechanical engineer is conducting a separate redesign study for a rotating machine. In that separate case, evaluate
+    ∫_0^3 2x dx.
+  choices:
+  - '12'
+  - '9'
+  - '4.500'
+  - '6'
+  answer: B
+  solution: '**B.** Integral=x², giving 9.'
+  id: MEC-B-Q003
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1C-016-03
+  prompt: A mechanical engineer is conducting a separate redesign study for a drive train. In that separate case, solve 5x-7=18.
+  choices:
+  - '2.2'
+  - '11'
+  - '25'
+  - '5'
+  answer: D
+  solution: '**D.** 5x=25, so x=5.'
+  id: MEC-B-Q004
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1C-016-04
+  prompt: A mechanical engineer is conducting a separate redesign study for a piping module. In that separate case, for matrix
+    [[3,2],[1,5]], find the determinant.
+  choices:
+  - '15'
+  - '13'
+  - '17'
+  - '7'
+  answer: B
+  solution: '**B.** det=3(5)-2(1)=13.'
+  id: MEC-B-Q005
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1C-019-01
+  prompt: A mechanical engineer is conducting a separate redesign study for a instrumented rig. In that separate case, if
+    f(t)=6e^(0.5t), find df/dt.
+  choices:
+  - 6.5e^(0.5t)
+  - 0.5e^(0.5t)
+  - 6e^(3t)
+  - 3e^(0.5t)
+  answer: D
+  solution: '**D.** Differentiate: 6(0.5)e^(0.5t).'
+  id: MEC-B-Q006
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1C-019-02
+  prompt: A mechanical engineer is conducting a separate redesign study for a air-handling assembly. In that separate case,
+    a line through (1,4) and (5,16) has slope
+  choices:
+  - '12'
+  - '3'
+  - '2'
+  - '4'
+  answer: B
+  solution: '**B.** m=(16-4)/(5-1)=3.'
+  id: MEC-B-Q007
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-030-06
+  prompt: A mechanical engineer is conducting a independent calculation check for a compressor package. In that separate case,
+    increasing sample size, all else equal, generally makes a confidence interval
+  choices:
+  - invalid
+  - narrower
+  - wider
+  - unchanged always
+  answer: B
+  solution: '**B.** Standard error falls as sample size rises.'
+  id: MEC-B-Q008
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-030-07
+  prompt: A mechanical engineer is conducting a independent calculation check for a robotic fixture. In that separate case,
+    a dimension is normally distributed with mean 20 mm and σ=2 mm. The z-score at 24 mm is
+  choices:
+  - '1'
+  - '4'
+  - '12'
+  - '2'
+  answer: D
+  solution: '**D.** z=(24-20)/2=2.'
+  id: MEC-B-Q009
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-031-01
+  prompt: A mechanical engineer is conducting a independent calculation check for a thermal loop. In that separate case, for
+    independent events A and B, P(A∩B) equals
+  choices:
+  - 1-P(A)
+  - P(A)P(B)
+  - P(A)+P(B)
+  - P(A)-P(B)
+  answer: B
+  solution: '**B.** Independence gives the product rule.'
+  id: MEC-B-Q010
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-031-02
+  prompt: A mechanical engineer is conducting a independent calculation check for a rotating machine. In that separate case,
+    a sample of n=64 has population σ=8. The standard error of the mean is
+  choices:
+  - '0.125'
+  - '8'
+  - '64'
+  - '1'
+  answer: D
+  solution: '**D.** SE=σ/√n=8/8=1.'
+  id: MEC-B-Q011
+- knowledge_area: Ethics and Professional Practice
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-06
+  prompt: A mechanical engineer is conducting a independent calculation check for a drive train. In that separate case, a
+    released drawing contains a material error. The engineer should
+  choices:
+  - conceal it
+  - correct it and notify affected parties
+  - ignore it
+  - delete records
+  answer: B
+  solution: '**B.** Material errors must be addressed.'
+  id: MEC-B-Q012
+- knowledge_area: Ethics and Professional Practice
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-07
+  prompt: A mechanical engineer is conducting a independent calculation check for a piping module. In that separate case,
+    a design calculation reveals a credible hazard to users. The engineer should first
+  choices:
+  - protect schedule
+  - hide the calculation
+  - wait for failure
+  - protect health, safety, and welfare
+  answer: D
+  solution: '**D.** Public safety is paramount.'
+  id: MEC-B-Q013
+- knowledge_area: Ethics and Professional Practice
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-002-01
+  prompt: A mechanical engineer is conducting a independent calculation check for a instrumented rig. In that separate case,
+    an engineer has a financial interest in a supplier under evaluation. The engineer should
+  choices:
+  - destroy bid records
+  - disclose the conflict
+  - conceal it
+  - select the supplier automatically
+  answer: B
+  solution: '**B.** Material conflicts require disclosure.'
+  id: MEC-B-Q014
+- knowledge_area: Ethics and Professional Practice
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-002-02
+  prompt: A mechanical engineer is conducting a independent calculation check for a air-handling assembly. In that separate
+    case, a request is outside an engineer's competence. The proper response is to
+  choices:
+  - approve anyway
+  - copy an unrelated design
+  - avoid review
+  - obtain qualified assistance or decline
+  answer: D
+  solution: '**D.** Practice must remain within competence.'
+  id: MEC-B-Q015
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-06
+  prompt: A mechanical engineer is conducting a new validation exercise for a compressor package. In that separate case, for
+    equal-service mutually exclusive alternatives, present-worth analysis generally selects
+  choices:
+  - lowest salvage value
+  - greatest net present worth
+  - largest first cost
+  - longest life only
+  answer: B
+  solution: '**B.** Use consistent assumptions and select greatest net PW.'
+  id: MEC-B-Q016
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-07
+  prompt: A mechanical engineer is conducting a new validation exercise for a robotic fixture. In that separate case, fixed
+    cost is $50,000 and contribution margin is $10/unit. Break-even volume is
+  choices:
+  - 500 units
+  - 50 units
+  - 50000 units
+  - 5000 units
+  answer: D
+  solution: '**D.** Q=F/(p-v)=50000/10.'
+  id: MEC-B-Q017
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-005-01
+  prompt: A mechanical engineer is conducting a new validation exercise for a thermal loop. In that separate case, depreciation
+    primarily represents
+  choices:
+  - salvage paid annually
+  - allocation of asset cost over its useful life
+  - cash revenue
+  - loan principal only
+  answer: B
+  solution: '**B.** Depreciation allocates capital cost for accounting/tax purposes.'
+  id: MEC-B-Q018
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-005-02
+  prompt: A mechanical engineer is conducting a new validation exercise for a rotating machine. In that separate case, a future
+    overhaul costs $40,000 in 5 years. At 6%, find present worth.
+  choices:
+  - $40000
+  - $53529.0
+  - $30769.2
+  - $29890.3
+  answer: D
+  solution: '**D.** P=F/(1.06)^5=$29890.3.'
+  id: MEC-B-Q019
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-005-03
+  prompt: A mechanical engineer is conducting a new validation exercise for a drive train. In that separate case, a machine
+    costs $90,000 and saves $18,000 per year ignoring time value. Simple payback is
+  choices:
+  - 18 years
+  - 5 years
+  - 2 years
+  - 4 years
+  answer: B
+  solution: '**B.** 90000/18000=5 years.'
+  id: MEC-B-Q020
+- knowledge_area: Electricity and Magnetism
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-059-06
+  prompt: A mechanical engineer is conducting a new validation exercise for a piping module. In that separate case, magnetic
+    flux density B is measured in
+  choices:
+  - coulomb per second
+  - tesla
+  - ohm
+  - watt
+  answer: B
+  solution: '**B.** Tesla is the SI unit of magnetic flux density.'
+  id: MEC-B-Q021
+- knowledge_area: Electricity and Magnetism
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-059-07
+  prompt: A mechanical engineer is conducting a new validation exercise for a instrumented rig. In that separate case, a 24
+    V source is applied across a 12 Ω resistor. Current is
+  choices:
+  - 0.5 A
+  - 12 A
+  - 288 A
+  - 2 A
+  answer: D
+  solution: '**D.** I=V/R=2 A.'
+  id: MEC-B-Q022
+- knowledge_area: Electricity and Magnetism
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-060-01
+  prompt: A mechanical engineer is conducting a new validation exercise for a air-handling assembly. In that separate case,
+    a 10 Ω resistor carries 3 A. Power dissipated is
+  choices:
+  - 300 W
+  - 90 W
+  - 30 W
+  - 3.33 W
+  answer: B
+  solution: '**B.** P=I²R=9×10=90 W.'
+  id: MEC-B-Q023
+- knowledge_area: Electricity and Magnetism
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-060-02
+  prompt: A mechanical engineer is conducting a alternate operating case for a compressor package. In that separate case,
+    two 6 Ω resistors in parallel have equivalent resistance
+  choices:
+  - 6 Ω
+  - 12 Ω
+  - 1 Ω
+  - 3 Ω
+  answer: D
+  solution: '**D.** For equal resistors, R_eq=R/2=6 Ω/2=3 Ω.'
+  id: MEC-B-Q024
+- knowledge_area: Electricity and Magnetism
+  question_type: multiple-choice
+  requires_concepts:
+  - ELEC-2E-060-03
+  prompt: A mechanical engineer is conducting a alternate operating case for a robotic fixture. In that separate case, for
+    sinusoidal voltage and current in phase, power factor is
+  choices:
+  - '-1'
+  - '1'
+  - '0'
+  - '0.5'
+  answer: B
+  solution: '**B.** Phase angle zero gives cosφ=1.'
+  id: MEC-B-Q025
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-013-06
+  prompt: A mechanical engineer is conducting a alternate operating case for a thermal loop. In that separate case, for impending
+    sliding with coefficient of static friction μs, maximum friction is
+  choices:
+  - zero
+  - μs N
+  - N/μs
+  - μs/N
+  answer: B
+  solution: '**B.** Fmax=μsN.'
+  id: MEC-B-Q026
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-013-07
+  prompt: A mechanical engineer is conducting a alternate operating case for a rotating machine. In that separate case, a
+    100 N force acts 2 m perpendicular to a pivot. Moment magnitude is
+  choices:
+  - 50 N·m
+  - 100 N·m
+  - 202 N·m
+  - 200 N·m
+  answer: D
+  solution: '**D.** M=Fd=200 N·m.'
+  id: MEC-B-Q027
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-014-01
+  prompt: A mechanical engineer is conducting a alternate operating case for a drive train. In that separate case, a simply
+    supported beam carries a centered 10 kN point load. Each vertical reaction is
+  choices:
+  - 20 kN
+  - 5 kN
+  - 10 kN
+  - 2.5 kN
+  answer: B
+  solution: '**B.** Symmetry and ΣFy=0 give 5 kN each.'
+  id: MEC-B-Q028
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-014-02
+  prompt: A mechanical engineer is conducting a alternate operating case for a piping module. In that separate case, for a
+    body in planar static equilibrium, the required equations include
+  choices:
+  - ΣFx=1 only
+  - ΣM=velocity
+  - energy=0 only
+  - ΣFx=0, ΣFy=0, and ΣM=0
+  answer: D
+  solution: '**D.** These are the three independent planar equilibrium equations.'
+  id: MEC-B-Q029
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-014-03
+  prompt: A mechanical engineer is conducting a alternate operating case for a instrumented rig. In that separate case, a
+    3-4-5 cable carries 100 N tension. Its horizontal component corresponding to side 4 is
+  choices:
+  - 125 N
+  - 80 N
+  - 60 N
+  - 100 N
+  answer: B
+  solution: '**B.** Fx=100(4/5)=80 N.'
+  id: MEC-B-Q030
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-014-04
+  prompt: A mechanical engineer is conducting a alternate operating case for a air-handling assembly. In that separate case,
+    the centroid of a rectangle lies at
+  choices:
+  - one corner
+  - one-third of width only
+  - outside the rectangle
+  - its geometric center
+  answer: D
+  solution: '**D.** Symmetry places the centroid at the center.'
+  id: MEC-B-Q031
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-014-05
+  prompt: A mechanical engineer is conducting a fresh reliability assessment for a compressor package. In that separate case,
+    for impending sliding with coefficient of static friction μs, maximum friction is
+  choices:
+  - zero
+  - μs N
+  - N/μs
+  - μs/N
+  answer: B
+  solution: '**B.** Fmax=μsN.'
+  id: MEC-B-Q032
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-014-06
+  prompt: A mechanical engineer is conducting a fresh reliability assessment for a robotic fixture. In that separate case,
+    a 100 N force acts 2 m perpendicular to a pivot. Moment magnitude is
+  choices:
+  - 50 N·m
+  - 100 N·m
+  - 202 N·m
+  - 200 N·m
+  answer: D
+  solution: '**D.** M=Fd=200 N·m.'
+  id: MEC-B-Q033
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-014-07
+  prompt: A mechanical engineer is conducting a fresh reliability assessment for a thermal loop. In that separate case, a
+    simply supported beam carries a centered 10 kN point load. Each vertical reaction is
+  choices:
+  - 20 kN
+  - 5 kN
+  - 10 kN
+  - 2.5 kN
+  answer: B
+  solution: '**B.** Symmetry and ΣFy=0 give 5 kN each.'
+  id: MEC-B-Q034
+- knowledge_area: Statics
+  question_type: multiple-choice
+  requires_concepts:
+  - SCI-2B-011-01
+  prompt: A mechanical engineer is conducting a fresh reliability assessment for a rotating machine. In that separate case,
+    for a body in planar static equilibrium, the required equations include
+  choices:
+  - ΣFx=1 only
+  - ΣM=velocity
+  - energy=0 only
+  - ΣFx=0, ΣFy=0, and ΣM=0
+  answer: D
+  solution: '**D.** These are the three independent planar equilibrium equations.'
+  id: MEC-B-Q035
+- knowledge_area: Dynamics, Kinematics, and Vibrations
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-016-06
+  prompt: A mechanical engineer is conducting a fresh reliability assessment for a drive train. In that separate case, kinetic
+    energy of a 4 kg mass moving at 3 m/s is
+  choices:
+  - 36 J
+  - 18 J
+  - 6 J
+  - 12 J
+  answer: B
+  solution: '**B.** KE=mv²/2=18 J.'
+  id: MEC-B-Q036
+- knowledge_area: Dynamics, Kinematics, and Vibrations
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-016-07
+  prompt: A mechanical engineer is conducting a fresh reliability assessment for a piping module. In that separate case, a
+    particle accelerates uniformly from 0 to 20 m/s in 5 s. Acceleration is
+  choices:
+  - 2 m/s²
+  - 5 m/s²
+  - 100 m/s²
+  - 4 m/s²
+  answer: D
+  solution: '**D.** a=Δv/Δt=4 m/s².'
+  id: MEC-B-Q037
+- knowledge_area: Dynamics, Kinematics, and Vibrations
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-017-01
+  prompt: A mechanical engineer is conducting a fresh reliability assessment for a instrumented rig. In that separate case,
+    a 2 kg mass accelerates at 3 m/s². Net force is
+  choices:
+  - 9 N
+  - 6 N
+  - 1.5 N
+  - 5 N
+  answer: B
+  solution: '**B.** F=ma=6 N.'
+  id: MEC-B-Q038
+- knowledge_area: Dynamics, Kinematics, and Vibrations
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-017-02
+  prompt: A mechanical engineer is conducting a fresh reliability assessment for a air-handling assembly. In that separate
+    case, a wheel rotates at 10 rad/s with radius 0.5 m. Rim speed is
+  choices:
+  - 10 m/s
+  - 20 m/s
+  - 0.05 m/s
+  - 5 m/s
+  answer: D
+  solution: '**D.** v=rω=5 m/s.'
+  id: MEC-B-Q039
+- knowledge_area: Dynamics, Kinematics, and Vibrations
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-017-03
+  prompt: A mechanical engineer is conducting a independent test review for a compressor package. In that separate case, for
+    constant angular acceleration α, angular velocity follows
+  choices:
+  - ω=ω0αt²
+  - ω=ω0+αt
+  - ω=α/t
+  - ω=t/α
+  answer: B
+  solution: '**B.** Rotational kinematics parallels linear motion.'
+  id: MEC-B-Q040
+- knowledge_area: Dynamics, Kinematics, and Vibrations
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-017-04
+  prompt: A mechanical engineer is conducting a independent test review for a robotic fixture. In that separate case, a spring-mass
+    system with k=200 N/m and m=2 kg has undamped natural frequency
+  choices:
+  - '14.14'
+  - '100'
+  - '5'
+  - 10.00 rad/s
+  answer: D
+  solution: '**D.** ωn=√(k/m)=10 rad/s.'
+  id: MEC-B-Q041
+- knowledge_area: Dynamics, Kinematics, and Vibrations
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-017-05
+  prompt: A mechanical engineer is conducting a independent test review for a thermal loop. In that separate case, resonance
+    occurs when forcing frequency is near
+  choices:
+  - static deflection only
+  - the system natural frequency
+  - zero always
+  - twice mass
+  answer: B
+  solution: '**B.** Dynamic amplification peaks near natural frequency.'
+  id: MEC-B-Q042
+- knowledge_area: Dynamics, Kinematics, and Vibrations
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-017-06
+  prompt: A mechanical engineer is conducting a independent test review for a rotating machine. In that separate case, impulse
+    equals the change in
+  choices:
+  - temperature
+  - mass
+  - spring constant
+  - linear momentum
+  answer: D
+  solution: '**D.** J=Δ(mv).'
+  id: MEC-B-Q043
+- knowledge_area: Dynamics, Kinematics, and Vibrations
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-017-07
+  prompt: A mechanical engineer is conducting a independent test review for a drive train. In that separate case, kinetic
+    energy of a 4 kg mass moving at 3 m/s is
+  choices:
+  - 36 J
+  - 18 J
+  - 6 J
+  - 12 J
+  answer: B
+  solution: '**B.** KE=mv²/2=18 J.'
+  id: MEC-B-Q044
+- knowledge_area: Dynamics, Kinematics, and Vibrations
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-018-01
+  prompt: A mechanical engineer is conducting a independent test review for a piping module. In that separate case, a particle
+    accelerates uniformly from 0 to 20 m/s in 5 s. Acceleration is
+  choices:
+  - 2 m/s²
+  - 5 m/s²
+  - 100 m/s²
+  - 4 m/s²
+  answer: D
+  solution: '**D.** a=Δv/Δt=4 m/s².'
+  id: MEC-B-Q045
+- knowledge_area: Dynamics, Kinematics, and Vibrations
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-018-02
+  prompt: A mechanical engineer is conducting a independent test review for a instrumented rig. In that separate case, a 2
+    kg mass accelerates at 3 m/s². Net force is
+  choices:
+  - 9 N
+  - 6 N
+  - 1.5 N
+  - 5 N
+  answer: B
+  solution: '**B.** F=ma=6 N.'
+  id: MEC-B-Q046
+- knowledge_area: Dynamics, Kinematics, and Vibrations
+  question_type: multiple-choice
+  requires_concepts:
+  - MAT-2B-018-03
+  prompt: A mechanical engineer is conducting a independent test review for a air-handling assembly. In that separate case,
+    a wheel rotates at 10 rad/s with radius 0.5 m. Rim speed is
+  choices:
+  - 10 m/s
+  - 20 m/s
+  - 0.05 m/s
+  - 5 m/s
+  answer: D
+  solution: '**D.** v=rω=5 m/s.'
+  id: MEC-B-Q047
+- knowledge_area: Mechanics of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MEC-3-085-06
+  prompt: A mechanical engineer is conducting a separate redesign study for a compressor package. In that separate case, for
+    a thin-walled cylindrical pressure vessel, hoop stress is approximately
+  choices:
+  - four times wall thickness
+  - twice the longitudinal stress
+  - half longitudinal stress
+  - equal to zero
+  answer: B
+  solution: '**B.** σh=pr/t and σL=pr/(2t).'
+  id: MEC-B-Q048
+- knowledge_area: Mechanics of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MEC-3-085-07
+  prompt: A mechanical engineer is conducting a separate redesign study for a robotic fixture. In that separate case, a bar
+    carries 20 kN axial tension over 200 mm² area. Normal stress is
+  choices:
+  - 10 MPa
+  - 40 MPa
+  - 400 MPa
+  - 100 MPa
+  answer: D
+  solution: '**D.** σ=P/A=20000/(200e-6)=100 MPa.'
+  id: MEC-B-Q049
+- knowledge_area: Mechanics of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-03
+  prompt: A mechanical engineer is conducting a separate redesign study for a thermal loop. In that separate case, for linear
+    elastic uniaxial loading, Hooke's law is
+  choices:
+  - σ=E/ε
+  - σ=Eε
+  - σ=ε/E
+  - E=σε²
+  answer: B
+  solution: '**B.** Stress is modulus times strain.'
+  id: MEC-B-Q050
+- knowledge_area: Mechanics of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-01
+  prompt: A mechanical engineer is conducting a separate redesign study for a rotating machine. In that separate case, for
+    pure bending, normal stress magnitude varies
+  choices:
+  - uniformly across depth
+  - quadratically with time
+  - independently of moment
+  - linearly with distance from the neutral axis
+  answer: D
+  solution: '**D.** σ=My/I.'
+  id: MEC-B-Q051
+- knowledge_area: Mechanics of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-02
+  prompt: A mechanical engineer is conducting a separate redesign study for a drive train. In that separate case, a circular
+    shaft in torsion has shear stress proportional to
+  choices:
+  - inverse torque
+  - radius from the center
+  - temperature only
+  - shaft length only
+  answer: B
+  solution: '**B.** τ=Tr/J.'
+  id: MEC-B-Q052
+- knowledge_area: Mechanics of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-04
+  prompt: A mechanical engineer is conducting a separate redesign study for a piping module. In that separate case, a stress
+    concentration factor is defined as
+  choices:
+  - nominal divided by peak
+  - strain divided by area
+  - load divided by length
+  - peak local stress divided by nominal stress
+  answer: D
+  solution: '**D.** Kt=σmax/σnom.'
+  id: MEC-B-Q053
+- knowledge_area: Mechanics of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-05
+  prompt: A mechanical engineer is conducting a separate redesign study for a instrumented rig. In that separate case, for
+    ductile materials under multiaxial static loading, a common failure criterion is
+  choices:
+  - Fourier law
+  - von Mises distortion-energy theory
+  - Snell's law
+  - Bernoulli equation
+  answer: B
+  solution: '**B.** Von Mises is widely used for ductile yielding.'
+  id: MEC-B-Q054
+- knowledge_area: Mechanics of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-06
+  prompt: A mechanical engineer is conducting a separate redesign study for a air-handling assembly. In that separate case,
+    fatigue failure can occur at stresses
+  choices:
+  - only above ultimate strength
+  - only at zero cycles
+  - independent of load cycles
+  - below static yield strength under repeated cycling
+  answer: D
+  solution: '**D.** Repeated loading can cause fatigue below yield.'
+  id: MEC-B-Q055
+- knowledge_area: Mechanics of Materials
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-022-07
+  prompt: A mechanical engineer is conducting a independent calculation check for a compressor package. In that separate case,
+    for a thin-walled cylindrical pressure vessel, hoop stress is approximately
+  choices:
+  - four times wall thickness
+  - twice the longitudinal stress
+  - half longitudinal stress
+  - equal to zero
+  answer: B
+  solution: '**B.** σh=pr/t and σL=pr/(2t).'
+  id: MEC-B-Q056
+- knowledge_area: Material Properties and Processing
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-028-06
+  prompt: A mechanical engineer is conducting a independent calculation check for a robotic fixture. In that separate case,
+    machining is a
+  choices:
+  - joining process only
+  - subtractive manufacturing process
+  - additive process only
+  - heat-treatment process only
+  answer: B
+  solution: '**B.** Material is removed to create geometry.'
+  id: MEC-B-Q057
+- knowledge_area: Material Properties and Processing
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-028-07
+  prompt: A mechanical engineer is conducting a independent calculation check for a thermal loop. In that separate case, a
+    factor important in material selection is
+  choices:
+  - color only
+  - supplier name only
+  - density alone always
+  - strength, stiffness, environment, manufacturability, and cost
+  answer: D
+  solution: '**D.** Selection balances multiple performance constraints.'
+  id: MEC-B-Q058
+- knowledge_area: Material Properties and Processing
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-029-01
+  prompt: A mechanical engineer is conducting a independent calculation check for a rotating machine. In that separate case,
+    young's modulus measures material
+  choices:
+  - hardness only
+  - elastic stiffness
+  - density only
+  - thermal conductivity only
+  answer: B
+  solution: '**B.** E is the slope of elastic stress-strain response.'
+  id: MEC-B-Q059
+- knowledge_area: Material Properties and Processing
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-029-02
+  prompt: A mechanical engineer is conducting a independent calculation check for a drive train. In that separate case, a
+    ductile material typically exhibits
+  choices:
+  - no strain before fracture
+  - zero toughness
+  - perfect brittleness
+  - substantial plastic deformation before fracture
+  answer: D
+  solution: '**D.** Ductility is capacity for plastic deformation.'
+  id: MEC-B-Q060
+- knowledge_area: Material Properties and Processing
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-029-03
+  prompt: A mechanical engineer is conducting a independent calculation check for a piping module. In that separate case,
+    quenching steel generally aims to produce a
+  choices:
+  - nonmetallic phase only
+  - harder microstructure
+  - softer polymer
+  - lower carbon content automatically
+  answer: B
+  solution: '**B.** Rapid cooling can form hard martensitic structures.'
+  id: MEC-B-Q061
+- knowledge_area: Material Properties and Processing
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-029-04
+  prompt: A mechanical engineer is conducting a independent calculation check for a instrumented rig. In that separate case,
+    annealing commonly reduces hardness and
+  choices:
+  - increases all residual stress
+  - eliminates atoms
+  - creates only brittle phases
+  - relieves residual stress
+  answer: D
+  solution: '**D.** Annealing promotes recovery/recrystallization and stress relief.'
+  id: MEC-B-Q062
+- knowledge_area: Material Properties and Processing
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-029-05
+  prompt: A mechanical engineer is conducting a independent calculation check for a air-handling assembly. In that separate
+    case, casting is especially useful for producing
+  choices:
+  - only heat-treated wire
+  - complex shapes from molten material
+  - only flat sheet
+  - only threaded joints
+  answer: B
+  solution: '**B.** Molten material fills a mold cavity.'
+  id: MEC-B-Q063
+- knowledge_area: Material Properties and Processing
+  question_type: multiple-choice
+  requires_concepts:
+  - MECH-2C-029-06
+  prompt: A mechanical engineer is conducting a new validation exercise for a compressor package. In that separate case, machining
+    is a
+  choices:
+  - additive process only
+  - heat-treatment process only
+  - joining process only
+  - subtractive manufacturing process
+  answer: D
+  solution: '**D.** Material is removed to create geometry.'
+  id: MEC-B-Q064
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - MEC-3-081-06
+  prompt: A mechanical engineer is conducting a new validation exercise for a robotic fixture. In that separate case, across
+    a normal shock in supersonic flow, Mach number generally
+  choices:
+  - becomes zero always
+  - decreases to a subsonic value
+  - increases without limit
+  - remains exactly unchanged
+  answer: B
+  solution: '**B.** A normal shock decelerates supersonic flow to subsonic.'
+  id: MEC-B-Q065
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - MEC-3-081-07
+  prompt: A mechanical engineer is conducting a new validation exercise for a thermal loop. In that separate case, water flows
+    at 3 m/s in a 0.2 m diameter pipe. Flow rate is
+  choices:
+  - 0.188 m³/s
+  - 0.600 m³/s
+  - 0.047 m³/s
+  - 0.094 m³/s
+  answer: D
+  solution: '**D.** Q=VA=0.094 m³/s.'
+  id: MEC-B-Q066
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-01
+  prompt: A mechanical engineer is conducting a new validation exercise for a rotating machine. In that separate case, reynolds
+    number characterizes the ratio of
+  choices:
+  - voltage to current
+  - inertial to viscous effects
+  - pressure to temperature
+  - heat to mass
+  answer: B
+  solution: '**B.** Re=ρVD/μ.'
+  id: MEC-B-Q067
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-02
+  prompt: A mechanical engineer is conducting a new validation exercise for a drive train. In that separate case, for incompressible
+    steady flow, continuity requires
+  choices:
+  - temperature conservation only
+  - zero pressure
+  - zero velocity
+  - mass flow rate conservation
+  answer: D
+  solution: '**D.** Mass entering equals mass leaving.'
+  id: MEC-B-Q068
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-03
+  prompt: A mechanical engineer is conducting a new validation exercise for a piping module. In that separate case, bernoulli's
+    equation relates pressure, velocity, and
+  choices:
+  - entropy generation only
+  - elevation head
+  - electrical charge
+  - yield strength
+  answer: B
+  solution: '**B.** Mechanical energy terms include p/γ, V²/2g, and z.'
+  id: MEC-B-Q069
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-04
+  prompt: A mechanical engineer is conducting a new validation exercise for a instrumented rig. In that separate case, darcy-Weisbach
+    pipe head loss is proportional to
+  choices:
+  - V only
+  - 1/L
+  - D² only
+  - f(L/D)V²/(2g)
+  answer: D
+  solution: '**D.** That is the standard Darcy-Weisbach form.'
+  id: MEC-B-Q070
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-05
+  prompt: A mechanical engineer is conducting a new validation exercise for a air-handling assembly. In that separate case,
+    drag force on a body in external flow scales with
+  choices:
+  - g/V²
+  - ½ρV²CdA
+  - ρV only
+  - μA/V only
+  answer: B
+  solution: '**B.** Dynamic pressure times coefficient and area gives drag.'
+  id: MEC-B-Q071
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-06
+  prompt: A mechanical engineer is conducting a alternate operating case for a compressor package. In that separate case,
+    mach number is the ratio of flow speed to
+  choices:
+  - viscosity
+  - density
+  - gravity
+  - local speed of sound
+  answer: D
+  solution: '**D.** M=V/a.'
+  id: MEC-B-Q072
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-041-07
+  prompt: A mechanical engineer is conducting a alternate operating case for a robotic fixture. In that separate case, across
+    a normal shock in supersonic flow, Mach number generally
+  choices:
+  - becomes zero always
+  - decreases to a subsonic value
+  - increases without limit
+  - remains exactly unchanged
+  answer: B
+  solution: '**B.** A normal shock decelerates supersonic flow to subsonic.'
+  id: MEC-B-Q073
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-043-01
+  prompt: A mechanical engineer is conducting a alternate operating case for a thermal loop. In that separate case, water
+    flows at 3 m/s in a 0.2 m diameter pipe. Flow rate is
+  choices:
+  - 0.188 m³/s
+  - 0.600 m³/s
+  - 0.047 m³/s
+  - 0.094 m³/s
+  answer: D
+  solution: '**D.** Q=VA=0.094 m³/s.'
+  id: MEC-B-Q074
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-043-02
+  prompt: A mechanical engineer is conducting a alternate operating case for a rotating machine. In that separate case, reynolds
+    number characterizes the ratio of
+  choices:
+  - voltage to current
+  - inertial to viscous effects
+  - pressure to temperature
+  - heat to mass
+  answer: B
+  solution: '**B.** Re=ρVD/μ.'
+  id: MEC-B-Q075
+- knowledge_area: Fluid Mechanics
+  question_type: multiple-choice
+  requires_concepts:
+  - FLUID-2D-043-03
+  prompt: A mechanical engineer is conducting a alternate operating case for a drive train. In that separate case, for incompressible
+    steady flow, continuity requires
+  choices:
+  - temperature conservation only
+  - zero pressure
+  - zero velocity
+  - mass flow rate conservation
+  answer: D
+  solution: '**D.** Mass entering equals mass leaving.'
+  id: MEC-B-Q076
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - MEC-3-083-06
+  prompt: A mechanical engineer is conducting a alternate operating case for a piping module. In that separate case, relative
+    humidity compares actual water-vapor partial pressure with
+  choices:
+  - density of liquid water
+  - saturation vapor pressure at the same temperature
+  - total pressure only
+  - dry-bulb temperature only
+  answer: B
+  solution: '**B.** RH=pv/pg at the same T.'
+  id: MEC-B-Q077
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - MEC-3-083-07
+  prompt: A mechanical engineer is conducting a alternate operating case for a instrumented rig. In that separate case, for
+    an ideal gas, PV equals
+  choices:
+  - mcΔT
+  - kAΔT/L
+  - I²R
+  - nRT
+  answer: D
+  solution: '**D.** Ideal-gas equation: PV=nRT.'
+  id: MEC-B-Q078
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-047-01
+  prompt: A mechanical engineer is conducting a alternate operating case for a air-handling assembly. In that separate case,
+    for a closed system, first-law energy balance is based on
+  choices:
+  - charge neutrality only
+  - energy conservation
+  - mass creation
+  - entropy destruction
+  answer: B
+  solution: '**B.** Energy cannot be created or destroyed.'
+  id: MEC-B-Q079
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-047-02
+  prompt: A mechanical engineer is conducting a fresh reliability assessment for a compressor package. In that separate case,
+    a heat engine thermal efficiency is
+  choices:
+  - heat rejected divided by work
+  - mass flow divided by pressure
+  - temperature divided by volume
+  - net work output divided by heat input
+  answer: D
+  solution: '**D.** η=Wnet/Qin.'
+  id: MEC-B-Q080
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-047-03
+  prompt: A mechanical engineer is conducting a fresh reliability assessment for a robotic fixture. In that separate case,
+    a refrigerator COP is
+  choices:
+  - temperature difference only
+  - desired cooling effect divided by required work input
+  - work divided by heat rejected
+  - pressure ratio only
+  answer: B
+  solution: '**B.** COP_R=QL/W.'
+  id: MEC-B-Q081
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-047-04
+  prompt: A mechanical engineer is conducting a fresh reliability assessment for a thermal loop. In that separate case, entropy
+    generation for a real irreversible process is
+  choices:
+  - always negative
+  - always zero
+  - equal to enthalpy
+  - nonnegative
+  answer: D
+  solution: '**D.** The second law requires Sgen≥0.'
+  id: MEC-B-Q082
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-047-05
+  prompt: A mechanical engineer is conducting a fresh reliability assessment for a rotating machine. In that separate case,
+    for an ideal constant-pressure heating process, sensible heat is commonly estimated with
+  choices:
+  - Q=IV
+  - Q=mc_pΔT
+  - Q=m/ΔT
+  - Q=kA/L only
+  answer: B
+  solution: '**B.** Enthalpy change for ideal sensible heating uses cp.'
+  id: MEC-B-Q083
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-047-06
+  prompt: A mechanical engineer is conducting a fresh reliability assessment for a drive train. In that separate case, stoichiometric
+    combustion means
+  choices:
+  - no oxygen supplied
+  - infinite excess air
+  - fuel never reacts
+  - exact theoretical oxidizer for complete combustion
+  answer: D
+  solution: '**D.** Stoichiometric conditions match theoretical oxygen demand.'
+  id: MEC-B-Q084
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-047-07
+  prompt: A mechanical engineer is conducting a fresh reliability assessment for a piping module. In that separate case, relative
+    humidity compares actual water-vapor partial pressure with
+  choices:
+  - density of liquid water
+  - saturation vapor pressure at the same temperature
+  - total pressure only
+  - dry-bulb temperature only
+  answer: B
+  solution: '**B.** RH=pv/pg at the same T.'
+  id: MEC-B-Q085
+- knowledge_area: Thermodynamics
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-049-01
+  prompt: A mechanical engineer is conducting a fresh reliability assessment for a instrumented rig. In that separate case,
+    for an ideal gas, PV equals
+  choices:
+  - mcΔT
+  - kAΔT/L
+  - I²R
+  - nRT
+  answer: D
+  solution: '**D.** Ideal-gas equation: PV=nRT.'
+  id: MEC-B-Q086
+- knowledge_area: Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-053-06
+  prompt: A mechanical engineer is conducting a fresh reliability assessment for a air-handling assembly. In that separate
+    case, for resistances in series, total thermal resistance is
+  choices:
+  - zero
+  - the sum of individual resistances
+  - their product only
+  - the smallest resistance
+  answer: B
+  solution: '**B.** Series thermal resistances add.'
+  id: MEC-B-Q087
+- knowledge_area: Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-053-07
+  prompt: A mechanical engineer is conducting a independent test review for a compressor package. In that separate case, a
+    heat exchanger effectiveness compares actual heat transfer to
+  choices:
+  - pump work only
+  - pressure drop only
+  - area only
+  - the maximum thermodynamically possible heat transfer
+  answer: D
+  solution: '**D.** ε=q/qmax.'
+  id: MEC-B-Q088
+- knowledge_area: Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-054-01
+  prompt: A mechanical engineer is conducting a independent test review for a robotic fixture. In that separate case, one-dimensional
+    steady conduction through a plane wall follows
+  choices:
+  - Pascal's law
+  - Fourier's law
+  - Ohm's law only
+  - Hooke's law
+  answer: B
+  solution: '**B.** q=-kA dT/dx.'
+  id: MEC-B-Q089
+- knowledge_area: Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-054-02
+  prompt: A mechanical engineer is conducting a independent test review for a thermal loop. In that separate case, a wall
+    has U=20 W/m²-K, area 2 m², and ΔT=30 K. Heat transfer rate is
+  choices:
+  - 300 W
+  - 600 W
+  - 2400 W
+  - 1200 W
+  answer: D
+  solution: '**D.** Q=UAΔT=1200 W.'
+  id: MEC-B-Q090
+- knowledge_area: Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-054-03
+  prompt: A mechanical engineer is conducting a independent test review for a rotating machine. In that separate case, convective
+    heat transfer is commonly written
+  choices:
+  - q=I²R
+  - q=hA(Ts-T∞)
+  - q=kA/L only
+  - q=mcΔT/t only
+  answer: B
+  solution: '**B.** Newton''s law of cooling.'
+  id: MEC-B-Q091
+- knowledge_area: Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-054-04
+  prompt: A mechanical engineer is conducting a independent test review for a drive train. In that separate case, thermal
+    radiation from a surface depends strongly on
+  choices:
+  - temperature squared only
+  - pressure only
+  - mass flow only
+  - absolute temperature to the fourth power
+  answer: D
+  solution: '**D.** Stefan-Boltzmann relation contains T⁴.'
+  id: MEC-B-Q092
+- knowledge_area: Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-054-05
+  prompt: A mechanical engineer is conducting a independent test review for a piping module. In that separate case, adding
+    insulation to a plane wall generally
+  choices:
+  - creates heat
+  - increases thermal resistance
+  - reduces resistance to zero
+  - has no thermal effect
+  answer: B
+  solution: '**B.** R=L/(kA) increases with thickness.'
+  id: MEC-B-Q093
+- knowledge_area: Heat Transfer
+  question_type: multiple-choice
+  requires_concepts:
+  - THERMO-2D-054-06
+  prompt: A mechanical engineer is conducting a independent test review for a instrumented rig. In that separate case, for
+    resistances in series, total thermal resistance is
+  choices:
+  - their product only
+  - the smallest resistance
+  - zero
+  - the sum of individual resistances
+  answer: D
+  solution: '**D.** Series thermal resistances add.'
+  id: MEC-B-Q094
+- knowledge_area: Measurements, Instrumentation, and Controls
+  question_type: multiple-choice
+  requires_concepts:
+  - INST-2F-067-06
+  prompt: A mechanical engineer is conducting a independent test review for a air-handling assembly. In that separate case,
+    for a stable first-order system, increasing the time constant makes the response
+  choices:
+  - oscillatory necessarily
+  - slower
+  - faster
+  - instantaneous
+  answer: B
+  solution: '**B.** Larger τ slows exponential response.'
+  id: MEC-B-Q095
+- knowledge_area: Measurements, Instrumentation, and Controls
+  question_type: multiple-choice
+  requires_concepts:
+  - INST-2F-067-07
+  prompt: A mechanical engineer is conducting a separate redesign study for a compressor package. In that separate case, accuracy
+    refers to closeness to
+  choices:
+  - repeatability only
+  - sample size only
+  - resolution only
+  - the true or accepted value
+  answer: D
+  solution: '**D.** Accuracy concerns correctness.'
+  id: MEC-B-Q096
+- knowledge_area: Measurements, Instrumentation, and Controls
+  question_type: multiple-choice
+  requires_concepts:
+  - INST-2F-068-01
+  prompt: A mechanical engineer is conducting a separate redesign study for a robotic fixture. In that separate case, precision
+    refers primarily to
+  choices:
+  - calibration date only
+  - repeatability of measurements
+  - closeness to truth only
+  - sensor range only
+  answer: B
+  solution: '**B.** Precision is scatter/repeatability.'
+  id: MEC-B-Q097
+- knowledge_area: Measurements, Instrumentation, and Controls
+  question_type: multiple-choice
+  requires_concepts:
+  - INST-2F-068-02
+  prompt: A mechanical engineer is conducting a separate redesign study for a thermal loop. In that separate case, a first-order
+    sensor reaches about 63.2% of a step change after
+  choices:
+  - half a time constant
+  - two periods
+  - zero time
+  - one time constant
+  answer: D
+  solution: '**D.** First-order response is 1-e^-1.'
+  id: MEC-B-Q098
+- knowledge_area: Measurements, Instrumentation, and Controls
+  question_type: multiple-choice
+  requires_concepts:
+  - INST-2F-068-03
+  prompt: A mechanical engineer is conducting a separate redesign study for a rotating machine. In that separate case, a strain
+    gauge changes
+  choices:
+  - magnetic flux only
+  - electrical resistance with strain
+  - mass with pressure
+  - temperature only
+  answer: B
+  solution: '**B.** Gauge factor relates ΔR/R to strain.'
+  id: MEC-B-Q099
+- knowledge_area: Measurements, Instrumentation, and Controls
+  question_type: multiple-choice
+  requires_concepts:
+  - INST-2F-068-04
+  prompt: A mechanical engineer is conducting a separate redesign study for a drive train. In that separate case, negative
+    feedback in a control loop generally tends to
+  choices:
+  - guarantee instability
+  - remove sensing
+  - increase open-loop uncertainty
+  - reduce error and improve regulation
+  answer: D
+  solution: '**D.** Feedback acts on the error signal.'
+  id: MEC-B-Q100
+- knowledge_area: Mechanical Design and Analysis
+  question_type: multiple-choice
+  requires_concepts:
+  - MEC-3-090-06
+  prompt: A mechanical engineer is conducting a separate redesign study for a piping module. In that separate case, a keyed
+    shaft connection is used primarily to
+  choices:
+  - reduce fluid drag
+  - transmit torque between shaft and hub
+  - seal pressure only
+  - measure temperature
+  answer: B
+  solution: '**B.** The key prevents relative rotation.'
+  id: MEC-B-Q101
+- knowledge_area: Mechanical Design and Analysis
+  question_type: multiple-choice
+  requires_concepts:
+  - MEC-3-090-07
+  prompt: A mechanical engineer is conducting a separate redesign study for a instrumented rig. In that separate case, a gear
+    pair primarily changes
+  choices:
+  - mass
+  - material modulus
+  - fluid density
+  - speed and torque according to gear ratio
+  answer: D
+  solution: '**D.** Gear ratio relates angular speed and torque.'
+  id: MEC-B-Q102
+- knowledge_area: Mechanical Design and Analysis
+  question_type: multiple-choice
+  requires_concepts:
+  - MEC-3-084-01
+  prompt: A mechanical engineer is conducting a separate redesign study for a air-handling assembly. In that separate case,
+    for a threaded fastener joint, preload is applied primarily to
+  choices:
+  - increase hole diameter
+  - clamp the joint members together
+  - reduce all friction to zero
+  - eliminate threads
+  answer: B
+  solution: '**B.** Proper preload maintains joint compression.'
+  id: MEC-B-Q103
+- knowledge_area: Mechanical Design and Analysis
+  question_type: multiple-choice
+  requires_concepts:
+  - MEC-3-084-02
+  prompt: A mechanical engineer is conducting a independent calculation check for a compressor package. In that separate case,
+    a hydraulic actuator converts fluid pressure into
+  choices:
+  - electrical resistance only
+  - heat transfer only
+  - chemical reaction
+  - force and motion
+  answer: D
+  solution: '**D.** Pressure acting on piston area produces force.'
+  id: MEC-B-Q104
+- knowledge_area: Mechanical Design and Analysis
+  question_type: multiple-choice
+  requires_concepts:
+  - MEC-3-084-03
+  prompt: A mechanical engineer is conducting a independent calculation check for a robotic fixture. In that separate case,
+    a clearance fit means
+  choices:
+  - parts are welded
+  - the hole is always larger than the mating shaft within limits
+  - shaft always larger
+  - zero tolerance
+  answer: B
+  solution: '**B.** Clearance remains positive.'
+  id: MEC-B-Q105
+- knowledge_area: Mechanical Design and Analysis
+  question_type: multiple-choice
+  requires_concepts:
+  - MEC-3-084-04
+  prompt: A mechanical engineer is conducting a independent calculation check for a thermal loop. In that separate case, a
+    factor of safety is generally the ratio of
+  choices:
+  - demand to capacity always
+  - cost to time
+  - speed to torque
+  - allowable or failure capacity to applied demand
+  answer: D
+  solution: '**D.** FoS compares capacity margin to demand.'
+  id: MEC-B-Q106
+- knowledge_area: Mechanical Design and Analysis
+  question_type: multiple-choice
+  requires_concepts:
+  - MEC-3-084-05
+  prompt: A mechanical engineer is conducting a independent calculation check for a rotating machine. In that separate case,
+    a design for manufacturability review seeks to
+  choices:
+  - eliminate tolerances
+  - meet function while simplifying reliable economical production
+  - maximize part count
+  - ignore process capability
+  answer: B
+  solution: '**B.** DFM reduces unnecessary complexity and production risk.'
+  id: MEC-B-Q107
+- knowledge_area: Mechanical Design and Analysis
+  question_type: multiple-choice
+  requires_concepts:
+  - MEC-3-084-06
+  prompt: A mechanical engineer is conducting a independent calculation check for a drive train. In that separate case, a
+    helical compression spring with greater wire diameter, all else equal, is generally
+  choices:
+  - less stiff
+  - unchanged
+  - unable to carry load
+  - stiffer
+  answer: D
+  solution: '**D.** Spring rate rises strongly with wire diameter.'
+  id: MEC-B-Q108
+- knowledge_area: Mechanical Design and Analysis
+  question_type: multiple-choice
+  requires_concepts:
+  - MEC-3-084-07
+  prompt: A mechanical engineer is conducting a independent calculation check for a piping module. In that separate case,
+    rolling-element bearing life rating generally decreases as applied load
+  choices:
+  - is unrelated
+  - increases
+  - decreases
+  - becomes zero
+  answer: B
+  solution: '**B.** Bearing life varies inversely with a power of load.'
+  id: MEC-B-Q109
+- knowledge_area: Mechanical Design and Analysis
+  question_type: multiple-choice
+  requires_concepts:
+  - MEC-3-085-01
+  prompt: A mechanical engineer is conducting a independent calculation check for a instrumented rig. In that separate case,
+    a keyed shaft connection is used primarily to
+  choices:
+  - seal pressure only
+  - measure temperature
+  - reduce fluid drag
+  - transmit torque between shaft and hub
+  answer: D
+  solution: '**D.** The key prevents relative rotation.'
+  id: MEC-B-Q110
