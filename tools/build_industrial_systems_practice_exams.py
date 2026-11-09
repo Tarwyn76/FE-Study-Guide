@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Industrial & Systems practice exam build/validation entry point.
 from pathlib import Path
 import math,re,yaml,random
 ROOT=Path(__file__).resolve().parents[1]
