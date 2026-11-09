@@ -113,7 +113,7 @@ def q_elec(i):
     t=i%6
     if t==0:return ("A 24 V source is applied across a 12 Ω resistor. Current is","2 A",["0.5 A","12 A","288 A"],"I=V/R=2 A.")
     if t==1:return ("A 10 Ω resistor carries 3 A. Power dissipated is","90 W",["30 W","3.33 W","300 W"],"P=I²R=9×10=90 W.")
-    if t==2:return ("Two 6 Ω resistors in parallel have equivalent resistance","3 Ω",["6 Ω","12 Ω","1 Ω"],"Equal parallel resistors halve.")
+    if t==2:return ("Two 6 Ω resistors in parallel have equivalent resistance","3 Ω",["6 Ω","12 Ω","1 Ω"],"For equal resistors, R_eq=R/2=6 Ω/2=3 Ω.")
     if t==3:return ("For sinusoidal voltage and current in phase, power factor is","1",["0","0.5","-1"],"Phase angle zero gives cosφ=1.")
     if t==4:return ("A transformer ideally steps 120 V down to 24 V. Turns ratio Np/Ns is","5",["0.2","24","144"],"Np/Ns=Vp/Vs=120/24=5.")
     return ("Magnetic flux density B is measured in","tesla",["ohm","watt","coulomb per second"],"Tesla is the SI unit of magnetic flux density.")
