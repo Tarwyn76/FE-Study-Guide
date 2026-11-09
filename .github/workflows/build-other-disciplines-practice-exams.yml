@@ -1,0 +1,48 @@
+name: Build and audit Other Disciplines practice exams A-B
+on:
+  push:
+    branches: [figure-cleanup-strict]
+    paths:
+      - tools/build_other_disciplines_practice_exams.py
+      - .github/workflows/build-other-disciplines-practice-exams.yml
+  workflow_dispatch:
+permissions: {contents: write}
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: figure-cleanup-strict, fetch-depth: 0}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: python -m pip install --upgrade pip
+      - run: python -m pip install pyyaml
+      - name: Build Other Disciplines A and B
+        run: python tools/build_other_disciplines_practice_exams.py
+      - name: Audit exams and print findings
+        run: |
+          set +e
+          python tools/technical_audit_exams.py . --outdir audit-results/exams --allow-incomplete
+          rc=$?
+          latest=$(ls -1t audit-results/exams/Exam-Audit-Issues*.csv | head -1)
+          cat "$latest"
+          echo "$rc" > audit-results/exams/.audit-exit-code
+          exit 0
+      - name: Upload audit diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: other-disciplines-exam-audit
+          path: audit-results/exams
+      - name: Commit Other Disciplines exam pair and ledger registration
+        run: |
+          git config user.name "ChatGPT Exam Builder"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add meta/ledger.yaml
+          git add appendices/practice-exams/other-disciplines-practice-a.yaml appendices/practice-exams/other-disciplines-practice-a.md
+          git add appendices/practice-exams/other-disciplines-practice-b.yaml appendices/practice-exams/other-disciplines-practice-b.md
+          git add audit-results/exams
+          if [ "$(cat audit-results/exams/.audit-exit-code)" != "0" ]; then echo "Audit has blockers"; exit 1; fi
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Add Other Disciplines practice exams A and B"
+          git push origin HEAD:figure-cleanup-strict
