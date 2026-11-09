@@ -248,7 +248,28 @@ def build(form):
         a=ar["name"]
         for j in range(int(ar["allocated"])):
             q=GEN[a](j+(0 if form=="A" else 47),form);q["id"]=f"ENV-{form}-Q{serial:03d}"
-            c=ctx(form,serial);p=q["prompt"];q["prompt"]=c+" "+p[0].lower()+p[1:]
+            c=ctx(form,serial);p=q["prompt"]
+            if form=="B":
+                b_leads={
+                    "Mathematics":"A consulting engineer is independently checking the calculation method before it is used in a design memorandum.",
+                    "Probability and Statistics":"A compliance analyst is independently reviewing a new monitoring data set before drawing a statistical conclusion.",
+                    "Ethics and Professional Practice":"A project engineer is evaluating a separate professional-practice situation before documenting the decision.",
+                    "Engineering Economics":"A project manager is comparing a separate environmental investment decision using the stated economic assumptions.",
+                    "Fundamental Principles":"An environmental engineer is checking a separate mass-balance or reactor case using only the stated process data.",
+                    "Environmental Chemistry":"A laboratory engineer is evaluating a separate chemistry case under the stated equilibrium or reaction conditions.",
+                    "Health Hazards and Risk Assessment":"A risk assessor is reviewing a separate exposure scenario before documenting the risk characterization.",
+                    "Fluid Mechanics and Hydraulics":"A hydraulic engineer is checking a separate conveyance or pumping case before accepting the design result.",
+                    "Thermodynamics":"A process engineer is reviewing a separate thermal case under the stated idealized assumptions.",
+                    "Surface Water Resources and Hydrology":"A watershed engineer is evaluating a separate runoff or surface-water case before selecting the design result.",
+                    "Groundwater, Soils, and Sediments":"A remediation engineer is evaluating a separate subsurface case using the stated hydrogeologic information.",
+                    "Water and Wastewater":"A treatment engineer is reviewing a separate process-design case before recommending an operating value.",
+                    "Air Quality and Control":"An air-quality engineer is checking a separate emissions-control case before completing the permit calculation.",
+                    "Solid and Hazardous Waste":"A waste-management engineer is reviewing a separate disposal or containment case before documenting the design basis.",
+                    "Energy and Environment":"An environmental engineer is evaluating a separate energy-resource case before selecting the preferred interpretation."
+                }
+                q["prompt"]=b_leads[a]+" "+c+" "+p[0].lower()+p[1:]
+            else:
+                q["prompt"]=c+" "+p[0].lower()+p[1:]
             q["solution"]+=f" This result applies to the stated {c[len('During a '):-1]}."
             items.append(q);serial+=1
     assert len(items)==110
