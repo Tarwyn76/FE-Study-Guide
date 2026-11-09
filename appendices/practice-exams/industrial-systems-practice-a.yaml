@@ -1,0 +1,1488 @@
+schema_version: 1
+exam_type: practice-A
+discipline: industrial-systems
+exam: A
+question_count: 110
+appointment_minutes: 355
+working_time_minutes: 320
+blueprint_source: meta/exam-blueprints.yaml
+items:
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-001-01
+  prompt: During a capacity review at a distribution center, for f(x)=x³-2x²+7x, evaluate f'(x) at x=2.
+  choices:
+  - '17'
+  - '7'
+  - '4'
+  - '11'
+  answer: D
+  solution: '**D.** f''(x)=3x²-4x+7=11.'
+  id: IND-A-Q001
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-001-02
+  prompt: During a capacity review at a hospital service line, a triangular response profile has base 4 and height 6. Find
+    its area.
+  choices:
+  - '12.00'
+  - '24'
+  - '6.000'
+  - '10'
+  answer: A
+  solution: '**A.** A=bh/2=12.00.'
+  id: IND-A-Q002
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-001-03
+  prompt: During a capacity review at a repair depot, for matrix [[2,3],[1,4]], find the determinant.
+  choices:
+  - '-5'
+  - '5'
+  - '11'
+  - '8'
+  answer: B
+  solution: '**B.** det=2(4)-3(1)=5.'
+  id: IND-A-Q003
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-002-01
+  prompt: During a capacity review at a warehouse, solve ln(x)=2 for x.
+  choices:
+  - ln 2
+  - e/2
+  - e²
+  - 2e
+  answer: C
+  solution: '**C.** Exponentiation gives x=e².'
+  id: IND-A-Q004
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-002-02
+  prompt: During a capacity review at a production cell, if y=4e^(0.2t), what is dy/dt?
+  choices:
+  - 4.2e^(0.2t)
+  - 0.2e^(0.2t)
+  - 4e^(0.8t)
+  - 0.8e^(0.2t)
+  answer: D
+  solution: '**D.** Differentiate the exponential: 4(0.2)e^(0.2t).'
+  id: IND-A-Q005
+- knowledge_area: Mathematics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1A-002-03
+  prompt: During a capacity review at a call center, a line passes through (2,5) and (6,17). Find its slope.
+  choices:
+  - '3'
+  - '2'
+  - '4'
+  - '12'
+  answer: A
+  solution: '**A.** m=(17-5)/(6-2)=3.'
+  id: IND-A-Q006
+- knowledge_area: Engineering Sciences
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-062-01
+  prompt: During a capacity review at a maintenance operation, a workstation processes 48 parts in 6 h. What is average throughput?
+  choices:
+  - 6 parts/h
+  - 42 parts/h
+  - 288 parts/h
+  - 8 parts/h
+  answer: D
+  solution: '**D.** Throughput=48/6=8 parts/h.'
+  id: IND-A-Q007
+- knowledge_area: Engineering Sciences
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-062-02
+  prompt: During a improvement study at a assembly plant, a 20 N force moves an object 4 m in its direction. How much work
+    is done?
+  choices:
+  - 80 J
+  - 5 J
+  - 24 J
+  - 160 J
+  answer: A
+  solution: '**A.** W=Fd=80 J.'
+  id: IND-A-Q008
+- knowledge_area: Engineering Sciences
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-062-03
+  prompt: During a improvement study at a distribution center, a 2 kW machine operates for 3 h. How much energy does it use?
+  choices:
+  - 9 kWh
+  - 6 kWh
+  - 0.667 kWh
+  - 5 kWh
+  answer: B
+  solution: '**B.** Energy=power×time=6 kWh.'
+  id: IND-A-Q009
+- knowledge_area: Engineering Sciences
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-062-04
+  prompt: During a improvement study at a hospital service line, which quantity is conserved in a steady-flow material balance
+    with no accumulation or reaction?
+  choices:
+  - pressure
+  - cycle time
+  - mass
+  - temperature
+  answer: C
+  solution: '**C.** For the stated system, mass in equals mass out.'
+  id: IND-A-Q010
+- knowledge_area: Ethics and Professional Practice
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-01
+  prompt: During a improvement study at a repair depot, a manager discovers a safety hazard that could injure operators. The
+    first professional obligation is to
+  choices:
+  - protect schedule
+  - avoid documentation
+  - wait for a customer complaint
+  - protect public and worker safety
+  answer: D
+  solution: '**D.** Safety and welfare take precedence.'
+  id: IND-A-Q011
+- knowledge_area: Ethics and Professional Practice
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-02
+  prompt: During a improvement study at a warehouse, an engineer evaluating a vendor owned by a close relative should
+  choices:
+  - disclose the conflict of interest
+  - hide the relationship
+  - select the vendor automatically
+  - destroy bid records
+  answer: A
+  solution: '**A.** Material conflicts must be disclosed.'
+  id: IND-A-Q012
+- knowledge_area: Ethics and Professional Practice
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-03
+  prompt: During a improvement study at a production cell, an engineer asked to approve analysis outside their competence
+    should
+  choices:
+  - remove calculations
+  - obtain qualified assistance or decline
+  - approve it anyway
+  - copy an old report
+  answer: B
+  solution: '**B.** Engineers practice within competence.'
+  id: IND-A-Q013
+- knowledge_area: Ethics and Professional Practice
+  question_type: multiple-choice
+  requires_concepts:
+  - PROF-2A-001-04
+  prompt: During a improvement study at a call center, if a material calculation error is found after release, the engineer
+    should
+  choices:
+  - delete the source data
+  - ignore it if inconvenient
+  - correct and communicate it promptly
+  - conceal it
+  answer: C
+  solution: '**C.** Material errors must be addressed.'
+  id: IND-A-Q014
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-01
+  prompt: During a improvement study at a maintenance operation, a replacement cost of $50,000 occurs in 4 years. At 7%, find
+    present worth.
+  choices:
+  - $50000
+  - $65539.8
+  - $39062.5
+  - $38144.8
+  answer: D
+  solution: '**D.** P=F/(1.07)^4=$38144.8.'
+  id: IND-A-Q015
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-02
+  prompt: During a planning meeting at a assembly plant, annual savings are $12,000 for 5 years at 6%. Find present worth.
+  choices:
+  - $50548.4
+  - $60000
+  - $200000.0
+  - $25274.2
+  answer: A
+  solution: '**A.** P=A(P/A,6%,5)=$50548.4.'
+  id: IND-A-Q016
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-03
+  prompt: During a planning meeting at a distribution center, for mutually exclusive alternatives with equal service, the
+    preferred present-worth choice is generally
+  choices:
+  - lowest salvage value
+  - the alternative with greatest net present worth
+  - highest first cost
+  - longest life regardless of value
+  answer: B
+  solution: '**B.** Use a consistent economic basis and select greatest net PW.'
+  id: IND-A-Q017
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-04
+  prompt: During a planning meeting at a hospital service line, a project costs $80,000 and returns $20,000 per year with
+    no time-value adjustment. Simple payback is
+  choices:
+  - 5 years
+  - 16 years
+  - 4 years
+  - 2 years
+  answer: C
+  solution: '**C.** 80,000/20,000=4 years.'
+  id: IND-A-Q018
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-05
+  prompt: During a planning meeting at a repair depot, if annual fixed cost is $60,000 and contribution margin is $15/unit,
+    break-even volume is
+  choices:
+  - 900 units
+  - 15 units
+  - 60000 units
+  - 4000 units
+  answer: D
+  solution: '**D.** Q=F/(p-v)=60000/15=4000.'
+  id: IND-A-Q019
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-06
+  prompt: During a planning meeting at a warehouse, a replacement cost of $50,000 occurs in 4 years. At 7%, find present worth.
+  choices:
+  - $38144.8
+  - $50000
+  - $65539.8
+  - $39062.5
+  answer: A
+  solution: '**A.** P=F/(1.07)^4=$38144.8.'
+  id: IND-A-Q020
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-004-07
+  prompt: During a planning meeting at a production cell, annual savings are $12,000 for 5 years at 6%. Find present worth.
+  choices:
+  - $25274.2
+  - $50548.4
+  - $60000
+  - $200000.0
+  answer: B
+  solution: '**B.** P=A(P/A,6%,5)=$50548.4.'
+  id: IND-A-Q021
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-005-01
+  prompt: During a planning meeting at a call center, for mutually exclusive alternatives with equal service, the preferred
+    present-worth choice is generally
+  choices:
+  - longest life regardless of value
+  - lowest salvage value
+  - the alternative with greatest net present worth
+  - highest first cost
+  answer: C
+  solution: '**C.** Use a consistent economic basis and select greatest net PW.'
+  id: IND-A-Q022
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-005-02
+  prompt: During a planning meeting at a maintenance operation, a project costs $80,000 and returns $20,000 per year with
+    no time-value adjustment. Simple payback is
+  choices:
+  - 2 years
+  - 5 years
+  - 16 years
+  - 4 years
+  answer: D
+  solution: '**D.** 80,000/20,000=4 years.'
+  id: IND-A-Q023
+- knowledge_area: Engineering Economics
+  question_type: multiple-choice
+  requires_concepts:
+  - ECON-2A-005-03
+  prompt: During a operations audit at a assembly plant, if annual fixed cost is $60,000 and contribution margin is $15/unit,
+    break-even volume is
+  choices:
+  - 4000 units
+  - 900 units
+  - 15 units
+  - 60000 units
+  answer: A
+  solution: '**A.** Q=F/(p-v)=60000/15=4000.'
+  id: IND-A-Q024
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-01
+  prompt: During a operations audit at a distribution center, a defect occurs with probability 0.08 independently. Probability
+    that 5 inspected items are all nondefective is
+  choices:
+  - '0.341'
+  - '0.000'
+  - '0.400'
+  - '0.659'
+  answer: D
+  solution: '**D.** P=0.92^5=0.659.'
+  id: IND-A-Q025
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-02
+  prompt: During a operations audit at a hospital service line, a normal observation has x=72, mean 60, and standard deviation
+    6. Its z-score is
+  choices:
+  - '2'
+  - '1'
+  - '6'
+  - '12'
+  answer: A
+  solution: '**A.** z=(72-60)/6=2.'
+  id: IND-A-Q026
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-03
+  prompt: During a operations audit at a repair depot, for independent events A and B, P(A∩B) equals
+  choices:
+  - 1-P(A)
+  - P(A)P(B)
+  - P(A)+P(B)
+  - P(A)-P(B)
+  answer: B
+  solution: '**B.** Independence gives the product rule.'
+  id: IND-A-Q027
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-04
+  prompt: During a operations audit at a warehouse, a sample mean is based on n=100 and population σ=20. The standard error
+    is
+  choices:
+  - '10'
+  - '20'
+  - '2'
+  - '0.2'
+  answer: C
+  solution: '**C.** SE=σ/√n=20/10=2.'
+  id: IND-A-Q028
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-05
+  prompt: During a operations audit at a production cell, which distribution models the count of independent successes in
+    a fixed number of Bernoulli trials?
+  choices:
+  - uniform
+  - exponential
+  - normal only
+  - binomial
+  answer: D
+  solution: '**D.** The binomial model counts successes in n Bernoulli trials.'
+  id: IND-A-Q029
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-06
+  prompt: During a operations audit at a call center, if events arrive as a Poisson process at 3 per hour, the expected count
+    in 2 hours is
+  choices:
+  - '6'
+  - '1.5'
+  - '3'
+  - '9'
+  answer: A
+  solution: '**A.** Expected count=λt=3×2=6.'
+  id: IND-A-Q030
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-028-07
+  prompt: During a operations audit at a maintenance operation, a 95% confidence interval becomes narrower, all else equal,
+    when
+  choices:
+  - confidence level increases
+  - sample size increases
+  - sample size decreases
+  - standard deviation increases
+  answer: B
+  solution: '**B.** Larger n reduces standard error.'
+  id: IND-A-Q031
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-029-01
+  prompt: During a design review at a assembly plant, a defect occurs with probability 0.08 independently. Probability that
+    5 inspected items are all nondefective is
+  choices:
+  - '0.000'
+  - '0.400'
+  - '0.659'
+  - '0.341'
+  answer: C
+  solution: '**C.** P=0.92^5=0.659.'
+  id: IND-A-Q032
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-029-02
+  prompt: During a design review at a distribution center, a normal observation has x=72, mean 60, and standard deviation
+    6. Its z-score is
+  choices:
+  - '1'
+  - '6'
+  - '12'
+  - '2'
+  answer: D
+  solution: '**D.** z=(72-60)/6=2.'
+  id: IND-A-Q033
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-029-03
+  prompt: During a design review at a hospital service line, for independent events A and B, P(A∩B) equals
+  choices:
+  - P(A)P(B)
+  - P(A)+P(B)
+  - P(A)-P(B)
+  - 1-P(A)
+  answer: A
+  solution: '**A.** Independence gives the product rule.'
+  id: IND-A-Q034
+- knowledge_area: Probability and Statistics
+  question_type: multiple-choice
+  requires_concepts:
+  - MATH-1D-029-04
+  prompt: During a design review at a repair depot, a sample mean is based on n=100 and population σ=20. The standard error
+    is
+  choices:
+  - '20'
+  - '2'
+  - '0.2'
+  - '10'
+  answer: B
+  solution: '**B.** SE=σ/√n=20/10=2.'
+  id: IND-A-Q035
+- knowledge_area: Modeling and Quantitative Analysis
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-062-01
+  prompt: During a design review at a warehouse, maximize 5x+4y subject to x+y≤8, x≤5, y≤6, x,y≥0. Which listed feasible point
+    has largest objective?
+  choices:
+  - (0,6)
+  - (2,6)
+  - (4,4)
+  - (5,3)
+  answer: D
+  solution: '**D.** Objectives: 24,34,36,37; (5,3) is largest.'
+  id: IND-A-Q036
+- knowledge_area: Modeling and Quantitative Analysis
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-062-02
+  prompt: During a design review at a production cell, in a linear program, a binding constraint at the optimum has
+  choices:
+  - zero slack
+  - negative probability
+  - infinite slack
+  - no coefficients
+  answer: A
+  solution: '**A.** Binding means the inequality is active as equality.'
+  id: IND-A-Q037
+- knowledge_area: Modeling and Quantitative Analysis
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-062-03
+  prompt: During a design review at a call center, an M/M/1 queue has λ=8/h and μ=10/h. Utilization is
+  choices:
+  - '18'
+  - '0.8'
+  - '0.2'
+  - '1.25'
+  answer: B
+  solution: '**B.** ρ=λ/μ=0.8.'
+  id: IND-A-Q038
+- knowledge_area: Modeling and Quantitative Analysis
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-062-04
+  prompt: During a design review at a maintenance operation, for an M/M/1 queue with λ=8/h and μ=10/h, average number in system
+    is
+  choices:
+  - '5'
+  - '8'
+  - '4'
+  - '0.8'
+  answer: C
+  solution: '**C.** L=λ/(μ-λ)=8/2=4.'
+  id: IND-A-Q039
+- knowledge_area: Modeling and Quantitative Analysis
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-062-05
+  prompt: During a performance analysis at a assembly plant, a two-state Markov chain transition matrix row must sum to
+  choices:
+  - '0'
+  - '2'
+  - the state number
+  - '1'
+  answer: D
+  solution: '**D.** Outgoing transition probabilities from each state sum to 1.'
+  id: IND-A-Q040
+- knowledge_area: Modeling and Quantitative Analysis
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-062-06
+  prompt: During a performance analysis at a distribution center, monte Carlo simulation primarily estimates system behavior
+    by
+  choices:
+  - repeated random sampling
+  - solving only deterministic equations
+  - removing all uncertainty
+  - forcing every input to its mean
+  answer: A
+  solution: '**A.** Monte Carlo propagates uncertainty through repeated random trials.'
+  id: IND-A-Q041
+- knowledge_area: Modeling and Quantitative Analysis
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-062-07
+  prompt: During a performance analysis at a hospital service line, a sensitivity analysis is used to
+  choices:
+  - replace validation
+  - measure how outputs respond to input changes
+  - guarantee an optimum
+  - eliminate constraints
+  answer: B
+  solution: '**B.** Sensitivity quantifies response to parameter changes.'
+  id: IND-A-Q042
+- knowledge_area: Modeling and Quantitative Analysis
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-063-01
+  prompt: During a performance analysis at a repair depot, a regression coefficient for x represents
+  choices:
+  - a probability that must equal 1
+  - the residual sum only
+  - estimated change in response per unit change in x, holding modeled terms fixed
+  - the sample size
+  answer: C
+  solution: '**C.** That is the standard slope interpretation.'
+  id: IND-A-Q043
+- knowledge_area: Modeling and Quantitative Analysis
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-063-02
+  prompt: During a performance analysis at a warehouse, a model that matches historical data but fails on new data most likely
+    suffers from
+  choices:
+  - perfect robustness
+  - zero variance
+  - guaranteed validity
+  - overfitting
+  answer: D
+  solution: '**D.** Overfitting captures noise rather than generalizable structure.'
+  id: IND-A-Q044
+- knowledge_area: Modeling and Quantitative Analysis
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-063-03
+  prompt: During a performance analysis at a production cell, maximize 5x+4y subject to x+y≤8, x≤5, y≤6, x,y≥0. Which listed
+    feasible point has largest objective?
+  choices:
+  - (5,3)
+  - (0,6)
+  - (2,6)
+  - (4,4)
+  answer: A
+  solution: '**A.** Objectives: 24,34,36,37; (5,3) is largest.'
+  id: IND-A-Q045
+- knowledge_area: Engineering Management
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-066-01
+  prompt: During a performance analysis at a call center, in CPM, activities on the critical path have total float approximately
+  choices:
+  - equal to project budget
+  - always negative
+  - equal to duration
+  - zero
+  answer: D
+  solution: '**D.** Critical-path delay directly delays completion when float is zero.'
+  id: IND-A-Q046
+- knowledge_area: Engineering Management
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-066-02
+  prompt: During a performance analysis at a maintenance operation, a project has EV=$80k, PV=$100k. Schedule performance
+    index is
+  choices:
+  - '0.80'
+  - '1.25'
+  - '0.20'
+  - $20k
+  answer: A
+  solution: '**A.** SPI=EV/PV=0.80.'
+  id: IND-A-Q047
+- knowledge_area: Engineering Management
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-066-03
+  prompt: During a capacity review at a assembly plant, a project has EV=$80k and AC=$100k. Cost performance index is
+  choices:
+  - $20k
+  - '0.80'
+  - '1.25'
+  - '0.20'
+  answer: B
+  solution: '**B.** CPI=EV/AC=0.80.'
+  id: IND-A-Q048
+- knowledge_area: Engineering Management
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-066-04
+  prompt: During a capacity review at a distribution center, a work breakdown structure is primarily used to
+  choices:
+  - replace all schedules
+  - eliminate accountability
+  - decompose project scope into manageable work
+  - calculate only interest
+  answer: C
+  solution: '**C.** WBS structures deliverables/work packages.'
+  id: IND-A-Q049
+- knowledge_area: Engineering Management
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-066-05
+  prompt: During a capacity review at a hospital service line, a moving average forecast generally becomes more responsive
+    to recent changes when
+  choices:
+  - more periods are averaged
+  - all observations are discarded
+  - the horizon is infinite
+  - fewer periods are averaged
+  answer: D
+  solution: '**D.** Shorter windows react faster.'
+  id: IND-A-Q050
+- knowledge_area: Engineering Management
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-066-06
+  prompt: During a capacity review at a repair depot, exponential smoothing with a larger α places
+  choices:
+  - more weight on the newest observation
+  - less weight on newest data
+  - equal weight on all history
+  - zero weight on errors
+  answer: A
+  solution: '**A.** Higher α increases responsiveness.'
+  id: IND-A-Q051
+- knowledge_area: Engineering Management
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-066-07
+  prompt: During a capacity review at a warehouse, a KPI is most defensible when its numerator, denominator, time basis, and
+    inclusion rules are
+  choices:
+  - different for every viewer
+  - explicitly defined
+  - left implicit
+  - changed after seeing results
+  answer: B
+  solution: '**B.** Operational definitions make KPIs reproducible.'
+  id: IND-A-Q052
+- knowledge_area: Engineering Management
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-067-01
+  prompt: During a capacity review at a production cell, in CPM, activities on the critical path have total float approximately
+  choices:
+  - always negative
+  - equal to duration
+  - zero
+  - equal to project budget
+  answer: C
+  solution: '**C.** Critical-path delay directly delays completion when float is zero.'
+  id: IND-A-Q053
+- knowledge_area: Engineering Management
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-067-02
+  prompt: During a capacity review at a call center, a project has EV=$80k, PV=$100k. Schedule performance index is
+  choices:
+  - '1.25'
+  - '0.20'
+  - $20k
+  - '0.80'
+  answer: D
+  solution: '**D.** SPI=EV/PV=0.80.'
+  id: IND-A-Q054
+- knowledge_area: Manufacturing, Service, and Other Production Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-068-01
+  prompt: During a capacity review at a maintenance operation, a line produces 240 units in an 8-hour shift. Average production
+    rate is
+  choices:
+  - 8 units/h
+  - 240 units/h
+  - 1920 units/h
+  - 30 units/h
+  answer: D
+  solution: '**D.** 240/8=30 units/h.'
+  id: IND-A-Q055
+- knowledge_area: Manufacturing, Service, and Other Production Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-068-02
+  prompt: During a improvement study at a assembly plant, demand is 360 units per 6-hour shift. Required takt time is
+  choices:
+  - 1 min/unit
+  - 6 min/unit
+  - 60 min/unit
+  - 0.1 min/unit
+  answer: A
+  solution: '**A.** 360 min/360 units=1 min/unit.'
+  id: IND-A-Q056
+- knowledge_area: Manufacturing, Service, and Other Production Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-068-03
+  prompt: During a improvement study at a distribution center, a bottleneck workstation has capacity 20 units/h while all
+    others exceed 30 units/h. Maximum line throughput is approximately
+  choices:
+  - unlimited
+  - 20 units/h
+  - 30 units/h
+  - 50 units/h
+  answer: B
+  solution: '**B.** System throughput cannot exceed bottleneck capacity.'
+  id: IND-A-Q057
+- knowledge_area: Manufacturing, Service, and Other Production Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-068-04
+  prompt: During a improvement study at a hospital service line, eOQ increases when annual demand increases, all else equal,
+    approximately with
+  choices:
+  - demand squared
+  - no relation
+  - the square root of demand
+  - the inverse of demand
+  answer: C
+  solution: '**C.** EOQ=√(2DS/H).'
+  id: IND-A-Q058
+- knowledge_area: Manufacturing, Service, and Other Production Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-068-05
+  prompt: During a improvement study at a repair depot, in MRP, dependent demand for a component is derived primarily from
+  choices:
+  - random weather only
+  - employee seniority
+  - facility rent
+  - parent-item requirements and the bill of materials
+  answer: D
+  solution: '**D.** MRP explodes parent requirements through the BOM.'
+  id: IND-A-Q059
+- knowledge_area: Manufacturing, Service, and Other Production Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-068-06
+  prompt: During a improvement study at a warehouse, little's Law states
+  choices:
+  - WIP = throughput × flow time
+  - WIP = setup/time
+  - quality = cost/time
+  - capacity = demand²
+  answer: A
+  solution: '**A.** L=λW.'
+  id: IND-A-Q060
+- knowledge_area: Manufacturing, Service, and Other Production Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-068-07
+  prompt: During a improvement study at a production cell, a pull system is designed to release work primarily in response
+    to
+  choices:
+  - calendar year only
+  - downstream demand or consumption
+  - maximum forecast regardless of use
+  - supplier preference
+  answer: B
+  solution: '**B.** Pull limits production to actual downstream need.'
+  id: IND-A-Q061
+- knowledge_area: Manufacturing, Service, and Other Production Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-069-01
+  prompt: During a improvement study at a call center, line balancing seeks primarily to
+  choices:
+  - ignore precedence
+  - increase WIP intentionally
+  - distribute task work across stations while meeting precedence and cycle-time constraints
+  - maximize idle time
+  answer: C
+  solution: '**C.** Balanced assignments reduce idle time subject to constraints.'
+  id: IND-A-Q062
+- knowledge_area: Manufacturing, Service, and Other Production Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-069-02
+  prompt: During a improvement study at a maintenance operation, a line produces 240 units in an 8-hour shift. Average production
+    rate is
+  choices:
+  - 8 units/h
+  - 240 units/h
+  - 1920 units/h
+  - 30 units/h
+  answer: D
+  solution: '**D.** 240/8=30 units/h.'
+  id: IND-A-Q063
+- knowledge_area: Manufacturing, Service, and Other Production Systems
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-069-03
+  prompt: During a planning meeting at a assembly plant, demand is 360 units per 6-hour shift. Required takt time is
+  choices:
+  - 1 min/unit
+  - 6 min/unit
+  - 60 min/unit
+  - 0.1 min/unit
+  answer: A
+  solution: '**A.** 360 min/360 units=1 min/unit.'
+  id: IND-A-Q064
+- knowledge_area: Facilities and Supply Chain
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-071-01
+  prompt: During a planning meeting at a distribution center, a center-of-gravity location method weights candidate coordinates
+    primarily by
+  choices:
+  - employee age
+  - machine color
+  - interest rate only
+  - shipment or demand volume
+  answer: D
+  solution: '**D.** Flows weight coordinates in the center-of-gravity method.'
+  id: IND-A-Q065
+- knowledge_area: Facilities and Supply Chain
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-071-02
+  prompt: During a planning meeting at a hospital service line, safety stock is held primarily to protect against
+  choices:
+  - demand or lead-time uncertainty
+  - known average demand only
+  - fixed rent
+  - tax depreciation
+  answer: A
+  solution: '**A.** Safety stock buffers variability.'
+  id: IND-A-Q066
+- knowledge_area: Facilities and Supply Chain
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-071-03
+  prompt: During a planning meeting at a repair depot, increasing the number of stocking locations generally tends to
+  choices:
+  - reduce variability to zero
+  - increase total safety stock through loss of risk pooling
+  - eliminate all inventory
+  - guarantee shorter lead time without cost
+  answer: B
+  solution: '**B.** Pooling demand usually lowers aggregate safety stock.'
+  id: IND-A-Q067
+- knowledge_area: Facilities and Supply Chain
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-071-04
+  prompt: During a planning meeting at a warehouse, a product layout is most appropriate for
+  choices:
+  - very low-volume functional routing
+  - random storage only
+  - high-volume standardized flow
+  - unique one-off projects
+  answer: C
+  solution: '**C.** Product layouts support repetitive flow.'
+  id: IND-A-Q068
+- knowledge_area: Facilities and Supply Chain
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-071-05
+  prompt: During a planning meeting at a production cell, a process layout groups resources primarily by
+  choices:
+  - customer surname
+  - product color
+  - calendar month
+  - similar function or process type
+  answer: D
+  solution: '**D.** Functional departments characterize process layouts.'
+  id: IND-A-Q069
+- knowledge_area: Facilities and Supply Chain
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-071-06
+  prompt: During a planning meeting at a call center, cross-docking aims to
+  choices:
+  - move inbound goods rapidly to outbound flow with little storage
+  - maximize long-term storage
+  - increase handling steps
+  - eliminate transportation
+  answer: A
+  solution: '**A.** Cross-docking reduces storage dwell.'
+  id: IND-A-Q070
+- knowledge_area: Facilities and Supply Chain
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-071-07
+  prompt: During a planning meeting at a maintenance operation, capacity cushion is the difference between
+  choices:
+  - inventory and lead time
+  - available capacity and expected demand
+  - price and variable cost
+  - mean and median
+  answer: B
+  solution: '**B.** It provides reserve capacity above expected load.'
+  id: IND-A-Q071
+- knowledge_area: Facilities and Supply Chain
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-072-01
+  prompt: During a operations audit at a assembly plant, a center-of-gravity location method weights candidate coordinates
+    primarily by
+  choices:
+  - machine color
+  - interest rate only
+  - shipment or demand volume
+  - employee age
+  answer: C
+  solution: '**C.** Flows weight coordinates in the center-of-gravity method.'
+  id: IND-A-Q072
+- knowledge_area: Facilities and Supply Chain
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-072-02
+  prompt: During a operations audit at a distribution center, safety stock is held primarily to protect against
+  choices:
+  - known average demand only
+  - fixed rent
+  - tax depreciation
+  - demand or lead-time uncertainty
+  answer: D
+  solution: '**D.** Safety stock buffers variability.'
+  id: IND-A-Q073
+- knowledge_area: Facilities and Supply Chain
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-072-03
+  prompt: During a operations audit at a hospital service line, increasing the number of stocking locations generally tends
+    to
+  choices:
+  - increase total safety stock through loss of risk pooling
+  - eliminate all inventory
+  - guarantee shorter lead time without cost
+  - reduce variability to zero
+  answer: A
+  solution: '**A.** Pooling demand usually lowers aggregate safety stock.'
+  id: IND-A-Q074
+- knowledge_area: Human Factors, Ergonomics, and Safety
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-073-01
+  prompt: During a operations audit at a repair depot, for repetitive lifting, the preferred ergonomic action is generally
+    to
+  choices:
+  - rely only on worker motivation
+  - increase reach distance
+  - remove all breaks
+  - reduce load, reach, and awkward posture at the source
+  answer: D
+  solution: '**D.** Engineering controls reduce exposure.'
+  id: IND-A-Q075
+- knowledge_area: Human Factors, Ergonomics, and Safety
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-073-02
+  prompt: During a operations audit at a warehouse, a control-display mapping is best when it is
+  choices:
+  - consistent with user expectations and spatial relationships
+  - random each shift
+  - hidden from operators
+  - opposite all natural mappings
+  answer: A
+  solution: '**A.** Compatible mappings reduce error.'
+  id: IND-A-Q076
+- knowledge_area: Human Factors, Ergonomics, and Safety
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-073-03
+  prompt: During a operations audit at a production cell, for a normally distributed body dimension, designing an adjustable
+    workstation typically aims to
+  choices:
+  - ignore anthropometry
+  - accommodate a broad percentile range
+  - fit only the 50th percentile
+  - fit only the smallest person
+  answer: B
+  solution: '**B.** Adjustability serves a wide population.'
+  id: IND-A-Q077
+- knowledge_area: Human Factors, Ergonomics, and Safety
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-073-04
+  prompt: During a operations audit at a call center, a hazard with high severity but low probability should
+  choices:
+  - be treated as impossible
+  - be hidden from records
+  - still be evaluated and controlled based on risk
+  - be ignored automatically
+  answer: C
+  solution: '**C.** Risk combines likelihood and consequence.'
+  id: IND-A-Q078
+- knowledge_area: Human Factors, Ergonomics, and Safety
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-073-05
+  prompt: During a operations audit at a maintenance operation, the hierarchy of controls generally prefers
+  choices:
+  - PPE before elimination in all cases
+  - warnings only
+  - no controls
+  - elimination or substitution before PPE
+  answer: D
+  solution: '**D.** Source controls are generally more reliable.'
+  id: IND-A-Q079
+- knowledge_area: Human Factors, Ergonomics, and Safety
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-073-06
+  prompt: During a design review at a assembly plant, a well-designed alarm should be
+  choices:
+  - detectable, interpretable, and distinguishable from competing signals
+  - ambiguous
+  - constantly active
+  - identical to every other alarm
+  answer: A
+  solution: '**A.** Alarm design supports rapid correct response.'
+  id: IND-A-Q080
+- knowledge_area: Human Factors, Ergonomics, and Safety
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-073-07
+  prompt: During a design review at a distribution center, for repetitive lifting, the preferred ergonomic action is generally
+    to
+  choices:
+  - remove all breaks
+  - reduce load, reach, and awkward posture at the source
+  - rely only on worker motivation
+  - increase reach distance
+  answer: B
+  solution: '**B.** Engineering controls reduce exposure.'
+  id: IND-A-Q081
+- knowledge_area: Human Factors, Ergonomics, and Safety
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-073-01
+  prompt: During a design review at a hospital service line, a control-display mapping is best when it is
+  choices:
+  - hidden from operators
+  - opposite all natural mappings
+  - consistent with user expectations and spatial relationships
+  - random each shift
+  answer: C
+  solution: '**C.** Compatible mappings reduce error.'
+  id: IND-A-Q082
+- knowledge_area: Human Factors, Ergonomics, and Safety
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-073-02
+  prompt: During a design review at a repair depot, for a normally distributed body dimension, designing an adjustable workstation
+    typically aims to
+  choices:
+  - fit only the 50th percentile
+  - fit only the smallest person
+  - ignore anthropometry
+  - accommodate a broad percentile range
+  answer: D
+  solution: '**D.** Adjustability serves a wide population.'
+  id: IND-A-Q083
+- knowledge_area: Work Design
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-073-01
+  prompt: During a design review at a warehouse, observed time is 4.0 min and performance rating is 110%. Normal time is
+  choices:
+  - 3.6 min
+  - 4.0 min
+  - 5.1 min
+  - 4.4 min
+  answer: D
+  solution: '**D.** Normal time=observed×rating=4.0×1.10=4.4 min.'
+  id: IND-A-Q084
+- knowledge_area: Work Design
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-073-02
+  prompt: During a design review at a production cell, normal time is 5.0 min with 20% allowance based on normal time. Standard
+    time is
+  choices:
+  - 6.0 min
+  - 4.0 min
+  - 5.2 min
+  - 25 min
+  answer: A
+  solution: '**A.** ST=NT(1+allowance)=5×1.2=6 min.'
+  id: IND-A-Q085
+- knowledge_area: Work Design
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-073-03
+  prompt: During a design review at a call center, a learning curve means unit time generally
+  choices:
+  - becomes zero after two units
+  - decreases as cumulative production experience increases
+  - increases without bound
+  - is unrelated to experience
+  answer: B
+  solution: '**B.** Learning captures improved performance with repetition.'
+  id: IND-A-Q086
+- knowledge_area: Work Design
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-073-04
+  prompt: During a design review at a maintenance operation, predetermined motion-time systems are used to
+  choices:
+  - forecast interest rates
+  - size warehouses only
+  - estimate task time from defined basic motions
+  - replace all safety analysis
+  answer: C
+  solution: '**C.** PMTS builds task times from motion elements.'
+  id: IND-A-Q087
+- knowledge_area: Work Design
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-073-05
+  prompt: During a performance analysis at a assembly plant, method study primarily seeks to
+  choices:
+  - set corporate tax rate
+  - choose bond yields
+  - calculate only inventory
+  - improve how work is performed
+  answer: D
+  solution: '**D.** Method study analyzes and improves work methods.'
+  id: IND-A-Q088
+- knowledge_area: Work Design
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-073-06
+  prompt: During a performance analysis at a distribution center, a work-sampling study estimates
+  choices:
+  - proportions of time spent in activity states
+  - exact continuous path of every motion
+  - future interest rates
+  - material strength
+  answer: A
+  solution: '**A.** Random observations estimate activity fractions.'
+  id: IND-A-Q089
+- knowledge_area: Work Design
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-073-07
+  prompt: During a performance analysis at a hospital service line, observed time is 4.0 min and performance rating is 110%.
+    Normal time is
+  choices:
+  - 5.1 min
+  - 4.4 min
+  - 3.6 min
+  - 4.0 min
+  answer: B
+  solution: '**B.** Normal time=observed×rating=4.0×1.10=4.4 min.'
+  id: IND-A-Q090
+- knowledge_area: Work Design
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-073-01
+  prompt: During a performance analysis at a repair depot, normal time is 5.0 min with 20% allowance based on normal time.
+    Standard time is
+  choices:
+  - 5.2 min
+  - 25 min
+  - 6.0 min
+  - 4.0 min
+  answer: C
+  solution: '**C.** ST=NT(1+allowance)=5×1.2=6 min.'
+  id: IND-A-Q091
+- knowledge_area: Quality
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-074-01
+  prompt: During a performance analysis at a warehouse, a process mean is 50, σ=2, and USL=56, LSL=44. Cp is
+  choices:
+  - '0.5'
+  - '1.5'
+  - '3.0'
+  - '1.0'
+  answer: D
+  solution: '**D.** Cp=(USL-LSL)/(6σ)=12/12=1.'
+  id: IND-A-Q092
+- knowledge_area: Quality
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-074-02
+  prompt: During a performance analysis at a production cell, a control chart point beyond a control limit is evidence of
+  choices:
+  - potential special-cause variation
+  - guaranteed customer satisfaction
+  - zero variation
+  - only common cause
+  answer: A
+  solution: '**A.** An out-of-control signal warrants investigation.'
+  id: IND-A-Q093
+- knowledge_area: Quality
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-074-03
+  prompt: During a performance analysis at a call center, a Pareto chart is used to
+  choices:
+  - replace sampling
+  - rank categories by frequency or impact
+  - display only time order
+  - calculate regression slope
+  answer: B
+  solution: '**B.** Pareto prioritizes the vital few categories.'
+  id: IND-A-Q094
+- knowledge_area: Quality
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-074-04
+  prompt: During a performance analysis at a maintenance operation, type I error means
+  choices:
+  - accepting every alternative
+  - measuring bias only
+  - rejecting a true null hypothesis
+  - failing to reject a false null
+  answer: C
+  solution: '**C.** Type I error is a false positive.'
+  id: IND-A-Q095
+- knowledge_area: Quality
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-074-05
+  prompt: During a capacity review at a assembly plant, increasing sample size in acceptance sampling generally provides
+  choices:
+  - less information
+  - zero inspection effort
+  - certainty with one item
+  - more information about lot quality
+  answer: D
+  solution: '**D.** Larger samples reduce sampling uncertainty.'
+  id: IND-A-Q096
+- knowledge_area: Quality
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-074-06
+  prompt: During a capacity review at a distribution center, a cause-and-effect diagram is also called a
+  choices:
+  - fishbone or Ishikawa diagram
+  - Gantt chart
+  - histogram only
+  - PERT network
+  answer: A
+  solution: '**A.** Those are standard names.'
+  id: IND-A-Q097
+- knowledge_area: Quality
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-074-07
+  prompt: During a capacity review at a hospital service line, design of experiments uses randomization primarily to
+  choices:
+  - eliminate measurement
+  - reduce bias from uncontrolled nuisance effects
+  - guarantee every factor significant
+  - remove replication
+  answer: B
+  solution: '**B.** Randomization protects inference.'
+  id: IND-A-Q098
+- knowledge_area: Quality
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-074-01
+  prompt: During a capacity review at a repair depot, cpk differs from Cp because Cpk accounts for
+  choices:
+  - only inspection cost
+  - time value of money
+  - process centering relative to specification limits
+  - only sample size
+  answer: C
+  solution: '**C.** Cpk reflects both spread and centering.'
+  id: IND-A-Q099
+- knowledge_area: Quality
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-074-02
+  prompt: During a capacity review at a warehouse, a process mean is 50, σ=2, and USL=56, LSL=44. Cp is
+  choices:
+  - '0.5'
+  - '1.5'
+  - '3.0'
+  - '1.0'
+  answer: D
+  solution: '**D.** Cp=(USL-LSL)/(6σ)=12/12=1.'
+  id: IND-A-Q100
+- knowledge_area: Quality
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-074-03
+  prompt: During a capacity review at a production cell, a control chart point beyond a control limit is evidence of
+  choices:
+  - potential special-cause variation
+  - guaranteed customer satisfaction
+  - zero variation
+  - only common cause
+  answer: A
+  solution: '**A.** An out-of-control signal warrants investigation.'
+  id: IND-A-Q101
+- knowledge_area: Systems Engineering, Analysis, and Design
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-075-01
+  prompt: During a capacity review at a call center, two independent components in series have reliabilities 0.9 and 0.8.
+    System reliability is
+  choices:
+  - '0.98'
+  - '0.85'
+  - '1.70'
+  - '0.72'
+  answer: D
+  solution: '**D.** Series reliability=0.9×0.8=0.72.'
+  id: IND-A-Q102
+- knowledge_area: Systems Engineering, Analysis, and Design
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-075-02
+  prompt: During a capacity review at a maintenance operation, two independent parallel components each have reliability 0.9.
+    System reliability is
+  choices:
+  - '0.99'
+  - '0.81'
+  - '0.90'
+  - '1.80'
+  answer: A
+  solution: '**A.** R=1-(0.1)(0.1)=0.99.'
+  id: IND-A-Q103
+- knowledge_area: Systems Engineering, Analysis, and Design
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-075-03
+  prompt: During a improvement study at a assembly plant, fMEA risk priority commonly considers severity, occurrence, and
+  choices:
+  - line slope
+  - detectability
+  - interest rate
+  - inventory turns
+  answer: B
+  solution: '**B.** Traditional RPN uses S×O×D.'
+  id: IND-A-Q104
+- knowledge_area: Systems Engineering, Analysis, and Design
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-075-04
+  prompt: During a improvement study at a distribution center, a fault tree begins with
+  choices:
+  - a random employee
+  - the lowest component cost
+  - an undesired top event
+  - a final invoice
+  answer: C
+  solution: '**C.** Fault-tree analysis works backward from the top event.'
+  id: IND-A-Q105
+- knowledge_area: Systems Engineering, Analysis, and Design
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-075-05
+  prompt: During a improvement study at a hospital service line, a requirement is most verifiable when it is
+  choices:
+  - vague and subjective
+  - changed during testing
+  - missing acceptance criteria
+  - specific, measurable, and testable
+  answer: D
+  solution: '**D.** Verification requires objective acceptance criteria.'
+  id: IND-A-Q106
+- knowledge_area: Systems Engineering, Analysis, and Design
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-075-06
+  prompt: During a improvement study at a repair depot, a trade study compares alternatives using
+  choices:
+  - defined criteria and weights or decision logic
+  - unrecorded intuition only
+  - one arbitrary metric
+  - no assumptions
+  answer: A
+  solution: '**A.** Traceable criteria support defensible decisions.'
+  id: IND-A-Q107
+- knowledge_area: Systems Engineering, Analysis, and Design
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-075-07
+  prompt: During a improvement study at a warehouse, life-cycle analysis should consider
+  choices:
+  - first week only
+  - costs and impacts across acquisition, operation, support, and retirement
+  - purchase price only
+  - labor only
+  answer: B
+  solution: '**B.** Systems decisions span the life cycle.'
+  id: IND-A-Q108
+- knowledge_area: Systems Engineering, Analysis, and Design
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-075-01
+  prompt: During a improvement study at a production cell, verification asks whether the system was built correctly to requirements;
+    validation asks whether
+  choices:
+  - every component is identical
+  - all risks are removed
+  - the right system was built for stakeholder needs
+  - the budget is always zero
+  answer: C
+  solution: '**C.** Validation addresses intended use and stakeholder need.'
+  id: IND-A-Q109
+- knowledge_area: Systems Engineering, Analysis, and Design
+  question_type: multiple-choice
+  requires_concepts:
+  - IND-3-075-02
+  prompt: During a improvement study at a call center, two independent components in series have reliabilities 0.9 and 0.8.
+    System reliability is
+  choices:
+  - '0.98'
+  - '0.85'
+  - '1.70'
+  - '0.72'
+  answer: D
+  solution: '**D.** Series reliability=0.9×0.8=0.72.'
+  id: IND-A-Q110
