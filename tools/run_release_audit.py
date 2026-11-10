@@ -11,7 +11,7 @@ from pathlib import Path
 def main():
     ap=argparse.ArgumentParser(); ap.add_argument('root',nargs='?',default='.'); ap.add_argument('--development',action='store_true'); a=ap.parse_args(); root=Path(a.root).resolve(); tools=root/'tools'
     commands=[
-      ('manuscript technical audit',[sys.executable,str(tools/'technical_audit_all_layers_fixed_v7.py'),'--root',str(root)]),
+      ('manuscript technical audit',[sys.executable,str(tools/'technical_audit_all_layers.py'),'--root',str(root)]),
       ('practice blueprint check',[sys.executable,str(tools/'check_exam_blueprints.py')]),
       ('tier blueprint check',[sys.executable,str(tools/'check_tier_review_blueprints.py')]),
       ('item prerequisite check',[sys.executable,str(tools/'check_item_prereqs.py')]),
