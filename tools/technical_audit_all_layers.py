@@ -853,7 +853,8 @@ def arithmetic_checks(text: str) -> list[dict[str, Any]]:
             continue
 
         line = raw_line.replace(r"\[", " ").replace(r"\]", " ").replace("$$", " ")
-        line = re.sub(r"^\\s*\\d+\\.\\s+", "", line)\n        parts = line.split("=")
+        line = re.sub(r"^\\s*\\d+\\.\\s+", "", line)
+        parts = line.split("=")
         if len(parts) < 2:
             continue
 
