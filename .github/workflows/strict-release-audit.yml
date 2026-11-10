@@ -28,14 +28,7 @@ jobs:
         if: always()
         run: |
           if [ -f tools/validation/technical-audit/Technical-Audit-Issues.csv ]; then
-            python - <<'PY'
-import csv
-p='tools/validation/technical-audit/Technical-Audit-Issues.csv'
-with open(p,encoding='utf-8-sig',newline='') as f:
-    for row in csv.DictReader(f):
-        if row.get('severity') in ('CRITICAL','ERROR'):
-            print(row)
-PY
+            python -c "import csv; p='tools/validation/technical-audit/Technical-Audit-Issues.csv'; f=open(p,encoding='utf-8-sig',newline=''); [print(r) for r in csv.DictReader(f) if r.get('severity') in ('CRITICAL','ERROR')]"
           fi
       - name: Upload release audit diagnostics
         if: always()
