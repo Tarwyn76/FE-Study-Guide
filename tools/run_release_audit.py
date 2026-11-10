@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Master FE release-audit runner.
+"""Master FE release-audit runner.\n\nStrict release workflow entry point.
 
 Default mode is strict release gating. Use --development while practice exams
 and route files are still being authored.
