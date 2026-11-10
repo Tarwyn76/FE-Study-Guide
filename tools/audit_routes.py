@@ -10,6 +10,17 @@ EXPECTED={
  "mechanical":"route-mechanical.md","other-disciplines":"route-other-disciplines.md"}
 CH_RE=re.compile(r"\b(?:00|01|02|03)-\d{2}\b")
 
+ALIASES={
+ "chemical":"chemical","civil":"civil",
+ "electrical_and_computer":"electrical-computer","electrical-computer":"electrical-computer","electrical":"electrical-computer",
+ "environmental":"environmental",
+ "industrial_and_systems":"industrial-systems","industrial-systems":"industrial-systems","industrial":"industrial-systems",
+ "mechanical":"mechanical",
+ "other_disciplines":"other-disciplines","other-disciplines":"other-disciplines","other":"other-disciplines",
+}
+def norm_route(x):
+    return ALIASES.get(str(x),str(x))
+
 def fm(path):
     t=path.read_text(encoding='utf-8',errors='ignore')
     if not t.startswith('---'): return {},t
