@@ -24,7 +24,7 @@ def fm(p):
 chapters=[]
 for p in ROOT.rglob("*.md"):
     if any(x in p.parts for x in ("routes","audit-results",".git")): continue
-    m=re.match(r"^(\\d{2}-\\d{2})-",p.name)
+    m=re.match(r"^(\d{2}-\d{2})-",p.name)
     if not m: continue
     d=fm(p); ch=str(d.get("chapter") or m.group(1)); title=str(d.get("title") or p.stem)
     rs=d.get("routes") or []
