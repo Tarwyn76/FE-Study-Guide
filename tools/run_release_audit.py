@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# strict release rerun after manuscript audit repairs
 """Master FE release-audit runner.\n\nStrict release workflow entry point.
 
 Default mode is strict release gating. Use --development while practice exams
