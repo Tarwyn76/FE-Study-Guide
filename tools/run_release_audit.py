@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# final strict audit after prefix-regex repair
 # final rerun after arithmetic-audit syntax repair
 # strict release rerun after manuscript audit repairs
 """Master FE release-audit runner.\n\nStrict release workflow entry point.
