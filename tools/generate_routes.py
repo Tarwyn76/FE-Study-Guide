@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Canonical route generation entry point.
 from pathlib import Path
 import re,yaml
 ROOT=Path(__file__).resolve().parents[1]
