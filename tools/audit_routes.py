@@ -34,7 +34,7 @@ def main():
         if not m: continue
         meta,_=fm(p); ch=str(meta.get('chapter') or m.group(1)); rs=meta.get('routes') or []
         if isinstance(rs,str): rs=[rs]
-        chapter_routes[ch]=set(map(str,rs))
+        chapter_routes[ch]={norm_route(x) for x in rs}
     for disc,(p,txt,listed) in route_docs.items():
         expected={ch for ch,rs in chapter_routes.items() if disc in rs}
         missing=sorted(expected-listed); extras=sorted(ch for ch in listed if ch in chapter_routes and disc not in chapter_routes[ch])
