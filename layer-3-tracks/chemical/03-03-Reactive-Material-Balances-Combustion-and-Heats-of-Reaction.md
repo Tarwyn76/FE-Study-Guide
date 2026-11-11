@@ -374,28 +374,28 @@ D) It is always directly tabulated in the Handbook
 6. **temperature-corrected reaction enthalpy** is developed in §3.6. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
 
 7. **reactive energy balance** is developed in §3.7. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+8. Applying **reaction extent and performance measures** before the process basis and system boundary are fixed can apply stoichiometry on inconsistent molar bases, select the wrong limiting reactant, or attach reaction heat to the wrong extent. In this chapter, reactive systems couple stoichiometry, extent or conversion, composition, and reaction enthalpy on one molar basis. Define the basis, boundary, known streams or states, and independent specifications first; then apply the reaction extent and performance measures relation to that defined system.
 
-8. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+9. Applying **reactive material balance** before the process basis and system boundary are fixed can apply stoichiometry on inconsistent molar bases, select the wrong limiting reactant, or attach reaction heat to the wrong extent. In this chapter, reactive systems couple stoichiometry, extent or conversion, composition, and reaction enthalpy on one molar basis. Define the basis, boundary, known streams or states, and independent specifications first; then apply the reactive material balance relation to that defined system.
 
-9. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+10. Applying **limiting and excess reactants** before the process basis and system boundary are fixed can apply stoichiometry on inconsistent molar bases, select the wrong limiting reactant, or attach reaction heat to the wrong extent. In this chapter, reactive systems couple stoichiometry, extent or conversion, composition, and reaction enthalpy on one molar basis. Define the basis, boundary, known streams or states, and independent specifications first; then apply the limiting and excess reactants relation to that defined system.
 
-10. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+11. Applying **combustion air balance** before the process basis and system boundary are fixed can apply stoichiometry on inconsistent molar bases, select the wrong limiting reactant, or attach reaction heat to the wrong extent. In this chapter, reactive systems couple stoichiometry, extent or conversion, composition, and reaction enthalpy on one molar basis. Define the basis, boundary, known streams or states, and independent specifications first; then apply the combustion air balance relation to that defined system.
 
-11. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+12. Applying **heat of reaction** before the process basis and system boundary are fixed can apply stoichiometry on inconsistent molar bases, select the wrong limiting reactant, or attach reaction heat to the wrong extent. In this chapter, reactive systems couple stoichiometry, extent or conversion, composition, and reaction enthalpy on one molar basis. Define the basis, boundary, known streams or states, and independent specifications first; then apply the heat of reaction relation to that defined system.
 
-12. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+13. Applying **temperature-corrected reaction enthalpy** before the process basis and system boundary are fixed can apply stoichiometry on inconsistent molar bases, select the wrong limiting reactant, or attach reaction heat to the wrong extent. In this chapter, reactive systems couple stoichiometry, extent or conversion, composition, and reaction enthalpy on one molar basis. Define the basis, boundary, known streams or states, and independent specifications first; then apply the temperature-corrected reaction enthalpy relation to that defined system.
 
-13. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+14. Applying **reactive energy balance** before the process basis and system boundary are fixed can apply stoichiometry on inconsistent molar bases, select the wrong limiting reactant, or attach reaction heat to the wrong extent. In this chapter, reactive systems couple stoichiometry, extent or conversion, composition, and reaction enthalpy on one molar basis. Define the basis, boundary, known streams or states, and independent specifications first; then apply the reactive energy balance relation to that defined system.
 
-14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+15. Close the material balance first because it establishes the flow rates and compositions that the energy balance must use. For this chapter, reactive systems couple stoichiometry, extent or conversion, composition, and reaction enthalpy on one molar basis; without those material quantities, enthalpy, heat duty, reaction energy, or phase-change terms can be attached to the wrong amount of material.
 
-15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
+16. A degrees-of-freedom check compares the number of unknowns with the number of independent balances, constitutive relations, equilibrium or rate equations, and specifications. For 03-03, this prevents algebra from starting before the reactive systems couple stoichiometry, extent or conversion, composition, and reaction enthalpy on one molar basis are sufficiently defined and exposes redundant or missing equations.
 
-16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
+17. Use a relation supplied in the FE problem whenever it defines the model or data for that question. That stated relation controls the calculation even if another correlation is familiar; in 03-03, substituting an unstated model can change the assumptions behind the reactive systems couple stoichiometry, extent or conversion, composition, and reaction enthalpy on one molar basis.
 
-17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
+18. Separate Handbook-supported material from specification-required or externally supported material so the learner knows what may be looked up and what must be understood independently. In 03-03, the distinction matters because the reactive systems couple stoichiometry, extent or conversion, composition, and reaction enthalpy on one molar basis can include methods or assumptions that are required by the exam specification but are not fully tabulated in the Handbook.
 
-18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
 
 19. **A.** The relation or workflow for **reaction extent and performance measures** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 

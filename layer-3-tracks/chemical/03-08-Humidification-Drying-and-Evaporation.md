@@ -375,28 +375,28 @@ D) It is always directly tabulated in the Handbook
 6. **evaporator material balance** is developed in §8.6. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
 
 7. **coupled heat and mass transfer** is developed in §8.7. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+8. Applying **humid-air process variable** before the process basis and system boundary are fixed can mix wet-basis and dry-basis moisture quantities or close an energy balance with an inconsistent vapor/solid reference state. In this chapter, humidification, drying, and evaporation require moisture or vapor content on the correct basis plus coupled material and energy balances. Define the basis, boundary, known streams or states, and independent specifications first; then apply the humid-air process variable relation to that defined system.
 
-8. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+9. Applying **humidification balance** before the process basis and system boundary are fixed can mix wet-basis and dry-basis moisture quantities or close an energy balance with an inconsistent vapor/solid reference state. In this chapter, humidification, drying, and evaporation require moisture or vapor content on the correct basis plus coupled material and energy balances. Define the basis, boundary, known streams or states, and independent specifications first; then apply the humidification balance relation to that defined system.
 
-9. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+10. Applying **solid moisture basis** before the process basis and system boundary are fixed can mix wet-basis and dry-basis moisture quantities or close an energy balance with an inconsistent vapor/solid reference state. In this chapter, humidification, drying, and evaporation require moisture or vapor content on the correct basis plus coupled material and energy balances. Define the basis, boundary, known streams or states, and independent specifications first; then apply the solid moisture basis relation to that defined system.
 
-10. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+11. Applying **drying-rate curve** before the process basis and system boundary are fixed can mix wet-basis and dry-basis moisture quantities or close an energy balance with an inconsistent vapor/solid reference state. In this chapter, humidification, drying, and evaporation require moisture or vapor content on the correct basis plus coupled material and energy balances. Define the basis, boundary, known streams or states, and independent specifications first; then apply the drying-rate curve relation to that defined system.
 
-11. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+12. Applying **equilibrium moisture** before the process basis and system boundary are fixed can mix wet-basis and dry-basis moisture quantities or close an energy balance with an inconsistent vapor/solid reference state. In this chapter, humidification, drying, and evaporation require moisture or vapor content on the correct basis plus coupled material and energy balances. Define the basis, boundary, known streams or states, and independent specifications first; then apply the equilibrium moisture relation to that defined system.
 
-12. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+13. Applying **evaporator material balance** before the process basis and system boundary are fixed can mix wet-basis and dry-basis moisture quantities or close an energy balance with an inconsistent vapor/solid reference state. In this chapter, humidification, drying, and evaporation require moisture or vapor content on the correct basis plus coupled material and energy balances. Define the basis, boundary, known streams or states, and independent specifications first; then apply the evaporator material balance relation to that defined system.
 
-13. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+14. Applying **coupled heat and mass transfer** before the process basis and system boundary are fixed can mix wet-basis and dry-basis moisture quantities or close an energy balance with an inconsistent vapor/solid reference state. In this chapter, humidification, drying, and evaporation require moisture or vapor content on the correct basis plus coupled material and energy balances. Define the basis, boundary, known streams or states, and independent specifications first; then apply the coupled heat and mass transfer relation to that defined system.
 
-14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+15. Close the material balance first because it establishes the flow rates and compositions that the energy balance must use. For this chapter, humidification, drying, and evaporation require moisture or vapor content on the correct basis plus coupled material and energy balances; without those material quantities, enthalpy, heat duty, reaction energy, or phase-change terms can be attached to the wrong amount of material.
 
-15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
+16. A degrees-of-freedom check compares the number of unknowns with the number of independent balances, constitutive relations, equilibrium or rate equations, and specifications. For 03-08, this prevents algebra from starting before the humidification, drying, and evaporation require moisture or vapor content on the correct basis plus coupled material and energy balances are sufficiently defined and exposes redundant or missing equations.
 
-16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
+17. Use a relation supplied in the FE problem whenever it defines the model or data for that question. That stated relation controls the calculation even if another correlation is familiar; in 03-08, substituting an unstated model can change the assumptions behind the humidification, drying, and evaporation require moisture or vapor content on the correct basis plus coupled material and energy balances.
 
-17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
+18. Separate Handbook-supported material from specification-required or externally supported material so the learner knows what may be looked up and what must be understood independently. In 03-08, the distinction matters because the humidification, drying, and evaporation require moisture or vapor content on the correct basis plus coupled material and energy balances can include methods or assumptions that are required by the exam specification but are not fully tabulated in the Handbook.
 
-18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
 
 19. **A.** The relation or workflow for **humid-air process variable** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 

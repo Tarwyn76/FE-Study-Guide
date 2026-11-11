@@ -371,28 +371,28 @@ D) It is always directly tabulated in the Handbook
 6. **chemical-process energy balance** is developed in §1.6. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
 
 7. **coupled process balances** is developed in §1.7. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+8. Applying **process basis and stream composition** before the process basis and system boundary are fixed can mix incompatible flow or composition bases, omit a stream, or assign accumulation to the wrong control volume. In this chapter, single-unit and flowsheet balances depend on consistent stream flow rates, compositions, accumulation terms, and energy states. Define the basis, boundary, known streams or states, and independent specifications first; then apply the process basis and stream composition relation to that defined system.
 
-8. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+9. Applying **steady material balance** before the process basis and system boundary are fixed can mix incompatible flow or composition bases, omit a stream, or assign accumulation to the wrong control volume. In this chapter, single-unit and flowsheet balances depend on consistent stream flow rates, compositions, accumulation terms, and energy states. Define the basis, boundary, known streams or states, and independent specifications first; then apply the steady material balance relation to that defined system.
 
-9. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+10. Applying **process degrees of freedom** before the process basis and system boundary are fixed can mix incompatible flow or composition bases, omit a stream, or assign accumulation to the wrong control volume. In this chapter, single-unit and flowsheet balances depend on consistent stream flow rates, compositions, accumulation terms, and energy states. Define the basis, boundary, known streams or states, and independent specifications first; then apply the process degrees of freedom relation to that defined system.
 
-10. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+11. Applying **mixing splitting and separation** before the process basis and system boundary are fixed can mix incompatible flow or composition bases, omit a stream, or assign accumulation to the wrong control volume. In this chapter, single-unit and flowsheet balances depend on consistent stream flow rates, compositions, accumulation terms, and energy states. Define the basis, boundary, known streams or states, and independent specifications first; then apply the mixing splitting and separation relation to that defined system.
 
-11. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+12. Applying **process flowsheet balance strategy** before the process basis and system boundary are fixed can mix incompatible flow or composition bases, omit a stream, or assign accumulation to the wrong control volume. In this chapter, single-unit and flowsheet balances depend on consistent stream flow rates, compositions, accumulation terms, and energy states. Define the basis, boundary, known streams or states, and independent specifications first; then apply the process flowsheet balance strategy relation to that defined system.
 
-12. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+13. Applying **chemical-process energy balance** before the process basis and system boundary are fixed can mix incompatible flow or composition bases, omit a stream, or assign accumulation to the wrong control volume. In this chapter, single-unit and flowsheet balances depend on consistent stream flow rates, compositions, accumulation terms, and energy states. Define the basis, boundary, known streams or states, and independent specifications first; then apply the chemical-process energy balance relation to that defined system.
 
-13. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+14. Applying **coupled process balances** before the process basis and system boundary are fixed can mix incompatible flow or composition bases, omit a stream, or assign accumulation to the wrong control volume. In this chapter, single-unit and flowsheet balances depend on consistent stream flow rates, compositions, accumulation terms, and energy states. Define the basis, boundary, known streams or states, and independent specifications first; then apply the coupled process balances relation to that defined system.
 
-14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+15. Close the material balance first because it establishes the flow rates and compositions that the energy balance must use. For this chapter, single-unit and flowsheet balances depend on consistent stream flow rates, compositions, accumulation terms, and energy states; without those material quantities, enthalpy, heat duty, reaction energy, or phase-change terms can be attached to the wrong amount of material.
 
-15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
+16. A degrees-of-freedom check compares the number of unknowns with the number of independent balances, constitutive relations, equilibrium or rate equations, and specifications. For 03-01, this prevents algebra from starting before the single-unit and flowsheet balances depend on consistent stream flow rates, compositions, accumulation terms, and energy states are sufficiently defined and exposes redundant or missing equations.
 
-16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
+17. Use a relation supplied in the FE problem whenever it defines the model or data for that question. That stated relation controls the calculation even if another correlation is familiar; in 03-01, substituting an unstated model can change the assumptions behind the single-unit and flowsheet balances depend on consistent stream flow rates, compositions, accumulation terms, and energy states.
 
-17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
+18. Separate Handbook-supported material from specification-required or externally supported material so the learner knows what may be looked up and what must be understood independently. In 03-01, the distinction matters because the single-unit and flowsheet balances depend on consistent stream flow rates, compositions, accumulation terms, and energy states can include methods or assumptions that are required by the exam specification but are not fully tabulated in the Handbook.
 
-18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
 
 19. **A.** The relation or workflow for **process basis and stream composition** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 

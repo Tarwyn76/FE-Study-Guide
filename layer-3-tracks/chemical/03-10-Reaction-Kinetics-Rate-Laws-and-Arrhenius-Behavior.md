@@ -373,28 +373,28 @@ D) It is always directly tabulated in the Handbook
 6. **Michaelis-Menten kinetics** is developed in §10.6. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
 
 7. **reaction-network selectivity** is developed in §10.7. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+8. Applying **reaction rate** before the process basis and system boundary are fixed can infer the wrong reaction order or evaluate a rate constant at a temperature inconsistent with the stated Arrhenius model. In this chapter, kinetic calculations depend on the rate-law form, reaction order, concentration or pressure basis, and temperature-dependent rate constant. Define the basis, boundary, known streams or states, and independent specifications first; then apply the reaction rate relation to that defined system.
 
-8. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+9. Applying **reaction order** before the process basis and system boundary are fixed can infer the wrong reaction order or evaluate a rate constant at a temperature inconsistent with the stated Arrhenius model. In this chapter, kinetic calculations depend on the rate-law form, reaction order, concentration or pressure basis, and temperature-dependent rate constant. Define the basis, boundary, known streams or states, and independent specifications first; then apply the reaction order relation to that defined system.
 
-9. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+10. Applying **integrated reaction kinetics** before the process basis and system boundary are fixed can infer the wrong reaction order or evaluate a rate constant at a temperature inconsistent with the stated Arrhenius model. In this chapter, kinetic calculations depend on the rate-law form, reaction order, concentration or pressure basis, and temperature-dependent rate constant. Define the basis, boundary, known streams or states, and independent specifications first; then apply the integrated reaction kinetics relation to that defined system.
 
-10. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+11. Applying **Arrhenius kinetics** before the process basis and system boundary are fixed can infer the wrong reaction order or evaluate a rate constant at a temperature inconsistent with the stated Arrhenius model. In this chapter, kinetic calculations depend on the rate-law form, reaction order, concentration or pressure basis, and temperature-dependent rate constant. Define the basis, boundary, known streams or states, and independent specifications first; then apply the Arrhenius kinetics relation to that defined system.
 
-11. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+12. Applying **reversible reaction kinetics** before the process basis and system boundary are fixed can infer the wrong reaction order or evaluate a rate constant at a temperature inconsistent with the stated Arrhenius model. In this chapter, kinetic calculations depend on the rate-law form, reaction order, concentration or pressure basis, and temperature-dependent rate constant. Define the basis, boundary, known streams or states, and independent specifications first; then apply the reversible reaction kinetics relation to that defined system.
 
-12. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+13. Applying **Michaelis-Menten kinetics** before the process basis and system boundary are fixed can infer the wrong reaction order or evaluate a rate constant at a temperature inconsistent with the stated Arrhenius model. In this chapter, kinetic calculations depend on the rate-law form, reaction order, concentration or pressure basis, and temperature-dependent rate constant. Define the basis, boundary, known streams or states, and independent specifications first; then apply the Michaelis-Menten kinetics relation to that defined system.
 
-13. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+14. Applying **reaction-network selectivity** before the process basis and system boundary are fixed can infer the wrong reaction order or evaluate a rate constant at a temperature inconsistent with the stated Arrhenius model. In this chapter, kinetic calculations depend on the rate-law form, reaction order, concentration or pressure basis, and temperature-dependent rate constant. Define the basis, boundary, known streams or states, and independent specifications first; then apply the reaction-network selectivity relation to that defined system.
 
-14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+15. Close the material balance first because it establishes the flow rates and compositions that the energy balance must use. For this chapter, kinetic calculations depend on the rate-law form, reaction order, concentration or pressure basis, and temperature-dependent rate constant; without those material quantities, enthalpy, heat duty, reaction energy, or phase-change terms can be attached to the wrong amount of material.
 
-15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
+16. A degrees-of-freedom check compares the number of unknowns with the number of independent balances, constitutive relations, equilibrium or rate equations, and specifications. For 03-10, this prevents algebra from starting before the kinetic calculations depend on the rate-law form, reaction order, concentration or pressure basis, and temperature-dependent rate constant are sufficiently defined and exposes redundant or missing equations.
 
-16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
+17. Use a relation supplied in the FE problem whenever it defines the model or data for that question. That stated relation controls the calculation even if another correlation is familiar; in 03-10, substituting an unstated model can change the assumptions behind the kinetic calculations depend on the rate-law form, reaction order, concentration or pressure basis, and temperature-dependent rate constant.
 
-17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
+18. Separate Handbook-supported material from specification-required or externally supported material so the learner knows what may be looked up and what must be understood independently. In 03-10, the distinction matters because the kinetic calculations depend on the rate-law form, reaction order, concentration or pressure basis, and temperature-dependent rate constant can include methods or assumptions that are required by the exam specification but are not fully tabulated in the Handbook.
 
-18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
 
 19. **A.** The relation or workflow for **reaction rate** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 

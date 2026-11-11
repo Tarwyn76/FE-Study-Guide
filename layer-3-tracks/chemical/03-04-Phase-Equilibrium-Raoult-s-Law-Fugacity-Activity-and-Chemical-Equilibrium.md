@@ -366,28 +366,28 @@ D) It is always directly tabulated in the Handbook
 6. **activity coefficient** is developed in §4.6. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
 
 7. **chemical reaction equilibrium** is developed in §4.7. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+8. Applying **Gibbs phase rule** before the process basis and system boundary are fixed can use the wrong liquid/vapor composition basis or apply an ideal relation where activity or fugacity effects matter. In this chapter, phase-equilibrium work depends on composition basis, phase state, equilibrium assumptions, and the selected ideal or nonideal model. Define the basis, boundary, known streams or states, and independent specifications first; then apply the Gibbs phase rule relation to that defined system.
 
-8. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+9. Applying **Henry-law equilibrium** before the process basis and system boundary are fixed can use the wrong liquid/vapor composition basis or apply an ideal relation where activity or fugacity effects matter. In this chapter, phase-equilibrium work depends on composition basis, phase state, equilibrium assumptions, and the selected ideal or nonideal model. Define the basis, boundary, known streams or states, and independent specifications first; then apply the Henry-law equilibrium relation to that defined system.
 
-9. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+10. Applying **Raoult-law VLE** before the process basis and system boundary are fixed can use the wrong liquid/vapor composition basis or apply an ideal relation where activity or fugacity effects matter. In this chapter, phase-equilibrium work depends on composition basis, phase state, equilibrium assumptions, and the selected ideal or nonideal model. Define the basis, boundary, known streams or states, and independent specifications first; then apply the Raoult-law VLE relation to that defined system.
 
-10. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+11. Applying **phase-equilibrium K value** before the process basis and system boundary are fixed can use the wrong liquid/vapor composition basis or apply an ideal relation where activity or fugacity effects matter. In this chapter, phase-equilibrium work depends on composition basis, phase state, equilibrium assumptions, and the selected ideal or nonideal model. Define the basis, boundary, known streams or states, and independent specifications first; then apply the phase-equilibrium K value relation to that defined system.
 
-11. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+12. Applying **fugacity phase equilibrium** before the process basis and system boundary are fixed can use the wrong liquid/vapor composition basis or apply an ideal relation where activity or fugacity effects matter. In this chapter, phase-equilibrium work depends on composition basis, phase state, equilibrium assumptions, and the selected ideal or nonideal model. Define the basis, boundary, known streams or states, and independent specifications first; then apply the fugacity phase equilibrium relation to that defined system.
 
-12. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+13. Applying **activity coefficient** before the process basis and system boundary are fixed can use the wrong liquid/vapor composition basis or apply an ideal relation where activity or fugacity effects matter. In this chapter, phase-equilibrium work depends on composition basis, phase state, equilibrium assumptions, and the selected ideal or nonideal model. Define the basis, boundary, known streams or states, and independent specifications first; then apply the activity coefficient relation to that defined system.
 
-13. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+14. Applying **chemical reaction equilibrium** before the process basis and system boundary are fixed can use the wrong liquid/vapor composition basis or apply an ideal relation where activity or fugacity effects matter. In this chapter, phase-equilibrium work depends on composition basis, phase state, equilibrium assumptions, and the selected ideal or nonideal model. Define the basis, boundary, known streams or states, and independent specifications first; then apply the chemical reaction equilibrium relation to that defined system.
 
-14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+15. Close the material balance first because it establishes the flow rates and compositions that the energy balance must use. For this chapter, phase-equilibrium work depends on composition basis, phase state, equilibrium assumptions, and the selected ideal or nonideal model; without those material quantities, enthalpy, heat duty, reaction energy, or phase-change terms can be attached to the wrong amount of material.
 
-15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
+16. A degrees-of-freedom check compares the number of unknowns with the number of independent balances, constitutive relations, equilibrium or rate equations, and specifications. For 03-04, this prevents algebra from starting before the phase-equilibrium work depends on composition basis, phase state, equilibrium assumptions, and the selected ideal or nonideal model are sufficiently defined and exposes redundant or missing equations.
 
-16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
+17. Use a relation supplied in the FE problem whenever it defines the model or data for that question. That stated relation controls the calculation even if another correlation is familiar; in 03-04, substituting an unstated model can change the assumptions behind the phase-equilibrium work depends on composition basis, phase state, equilibrium assumptions, and the selected ideal or nonideal model.
 
-17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
+18. Separate Handbook-supported material from specification-required or externally supported material so the learner knows what may be looked up and what must be understood independently. In 03-04, the distinction matters because the phase-equilibrium work depends on composition basis, phase state, equilibrium assumptions, and the selected ideal or nonideal model can include methods or assumptions that are required by the exam specification but are not fully tabulated in the Handbook.
 
-18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
 
 19. **A.** The relation or workflow for **Gibbs phase rule** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 

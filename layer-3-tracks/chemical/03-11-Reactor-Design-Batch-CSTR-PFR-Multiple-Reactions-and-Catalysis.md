@@ -370,28 +370,28 @@ D) It is always directly tabulated in the Handbook
 6. **reactor selectivity** is developed in §11.6. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
 
 7. **catalytic reactor selection** is developed in §11.7. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+8. Applying **batch reactor design** before the process basis and system boundary are fixed can use a CSTR, PFR, or batch design equation under the wrong mixing assumption or pair kinetics with the wrong residence-time definition. In this chapter, reactor calculations depend on the reactor-specific mole balance, kinetics, residence time, conversion target, and mixing model. Define the basis, boundary, known streams or states, and independent specifications first; then apply the batch reactor design relation to that defined system.
 
-8. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+9. Applying **variable-volume batch reactor** before the process basis and system boundary are fixed can use a CSTR, PFR, or batch design equation under the wrong mixing assumption or pair kinetics with the wrong residence-time definition. In this chapter, reactor calculations depend on the reactor-specific mole balance, kinetics, residence time, conversion target, and mixing model. Define the basis, boundary, known streams or states, and independent specifications first; then apply the variable-volume batch reactor relation to that defined system.
 
-9. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+10. Applying **plug-flow reactor** before the process basis and system boundary are fixed can use a CSTR, PFR, or batch design equation under the wrong mixing assumption or pair kinetics with the wrong residence-time definition. In this chapter, reactor calculations depend on the reactor-specific mole balance, kinetics, residence time, conversion target, and mixing model. Define the basis, boundary, known streams or states, and independent specifications first; then apply the plug-flow reactor relation to that defined system.
 
-10. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+11. Applying **CSTR design** before the process basis and system boundary are fixed can use a CSTR, PFR, or batch design equation under the wrong mixing assumption or pair kinetics with the wrong residence-time definition. In this chapter, reactor calculations depend on the reactor-specific mole balance, kinetics, residence time, conversion target, and mixing model. Define the basis, boundary, known streams or states, and independent specifications first; then apply the CSTR design relation to that defined system.
 
-11. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+12. Applying **CSTRs in series** before the process basis and system boundary are fixed can use a CSTR, PFR, or batch design equation under the wrong mixing assumption or pair kinetics with the wrong residence-time definition. In this chapter, reactor calculations depend on the reactor-specific mole balance, kinetics, residence time, conversion target, and mixing model. Define the basis, boundary, known streams or states, and independent specifications first; then apply the CSTRs in series relation to that defined system.
 
-12. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+13. Applying **reactor selectivity** before the process basis and system boundary are fixed can use a CSTR, PFR, or batch design equation under the wrong mixing assumption or pair kinetics with the wrong residence-time definition. In this chapter, reactor calculations depend on the reactor-specific mole balance, kinetics, residence time, conversion target, and mixing model. Define the basis, boundary, known streams or states, and independent specifications first; then apply the reactor selectivity relation to that defined system.
 
-13. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+14. Applying **catalytic reactor selection** before the process basis and system boundary are fixed can use a CSTR, PFR, or batch design equation under the wrong mixing assumption or pair kinetics with the wrong residence-time definition. In this chapter, reactor calculations depend on the reactor-specific mole balance, kinetics, residence time, conversion target, and mixing model. Define the basis, boundary, known streams or states, and independent specifications first; then apply the catalytic reactor selection relation to that defined system.
 
-14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+15. Close the material balance first because it establishes the flow rates and compositions that the energy balance must use. For this chapter, reactor calculations depend on the reactor-specific mole balance, kinetics, residence time, conversion target, and mixing model; without those material quantities, enthalpy, heat duty, reaction energy, or phase-change terms can be attached to the wrong amount of material.
 
-15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
+16. A degrees-of-freedom check compares the number of unknowns with the number of independent balances, constitutive relations, equilibrium or rate equations, and specifications. For 03-11, this prevents algebra from starting before the reactor calculations depend on the reactor-specific mole balance, kinetics, residence time, conversion target, and mixing model are sufficiently defined and exposes redundant or missing equations.
 
-16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
+17. Use a relation supplied in the FE problem whenever it defines the model or data for that question. That stated relation controls the calculation even if another correlation is familiar; in 03-11, substituting an unstated model can change the assumptions behind the reactor calculations depend on the reactor-specific mole balance, kinetics, residence time, conversion target, and mixing model.
 
-17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
+18. Separate Handbook-supported material from specification-required or externally supported material so the learner knows what may be looked up and what must be understood independently. In 03-11, the distinction matters because the reactor calculations depend on the reactor-specific mole balance, kinetics, residence time, conversion target, and mixing model can include methods or assumptions that are required by the exam specification but are not fully tabulated in the Handbook.
 
-18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
 
 19. **A.** The relation or workflow for **batch reactor design** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 

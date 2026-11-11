@@ -368,28 +368,28 @@ D) It is always directly tabulated in the Handbook
 6. **overall mass-transfer coefficient** is developed in §5.6. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
 
 7. **Sherwood mass-transfer correlation** is developed in §5.7. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+8. Applying **Fick first law** before the process basis and system boundary are fixed can use a concentration difference that does not match the transfer coefficient or pair the wrong area and transport length. In this chapter, mass-transfer calculations depend on the driving-force definition, area, diffusivity or transfer coefficient, and transport geometry. Define the basis, boundary, known streams or states, and independent specifications first; then apply the Fick first law relation to that defined system.
 
-8. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+9. Applying **unsteady molecular diffusion** before the process basis and system boundary are fixed can use a concentration difference that does not match the transfer coefficient or pair the wrong area and transport length. In this chapter, mass-transfer calculations depend on the driving-force definition, area, diffusivity or transfer coefficient, and transport geometry. Define the basis, boundary, known streams or states, and independent specifications first; then apply the unsteady molecular diffusion relation to that defined system.
 
-9. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+10. Applying **stagnant-gas diffusion** before the process basis and system boundary are fixed can use a concentration difference that does not match the transfer coefficient or pair the wrong area and transport length. In this chapter, mass-transfer calculations depend on the driving-force definition, area, diffusivity or transfer coefficient, and transport geometry. Define the basis, boundary, known streams or states, and independent specifications first; then apply the stagnant-gas diffusion relation to that defined system.
 
-10. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+11. Applying **equimolar counterdiffusion** before the process basis and system boundary are fixed can use a concentration difference that does not match the transfer coefficient or pair the wrong area and transport length. In this chapter, mass-transfer calculations depend on the driving-force definition, area, diffusivity or transfer coefficient, and transport geometry. Define the basis, boundary, known streams or states, and independent specifications first; then apply the equimolar counterdiffusion relation to that defined system.
 
-11. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+12. Applying **two-film mass transfer** before the process basis and system boundary are fixed can use a concentration difference that does not match the transfer coefficient or pair the wrong area and transport length. In this chapter, mass-transfer calculations depend on the driving-force definition, area, diffusivity or transfer coefficient, and transport geometry. Define the basis, boundary, known streams or states, and independent specifications first; then apply the two-film mass transfer relation to that defined system.
 
-12. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+13. Applying **overall mass-transfer coefficient** before the process basis and system boundary are fixed can use a concentration difference that does not match the transfer coefficient or pair the wrong area and transport length. In this chapter, mass-transfer calculations depend on the driving-force definition, area, diffusivity or transfer coefficient, and transport geometry. Define the basis, boundary, known streams or states, and independent specifications first; then apply the overall mass-transfer coefficient relation to that defined system.
 
-13. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+14. Applying **Sherwood mass-transfer correlation** before the process basis and system boundary are fixed can use a concentration difference that does not match the transfer coefficient or pair the wrong area and transport length. In this chapter, mass-transfer calculations depend on the driving-force definition, area, diffusivity or transfer coefficient, and transport geometry. Define the basis, boundary, known streams or states, and independent specifications first; then apply the Sherwood mass-transfer correlation relation to that defined system.
 
-14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+15. Close the material balance first because it establishes the flow rates and compositions that the energy balance must use. For this chapter, mass-transfer calculations depend on the driving-force definition, area, diffusivity or transfer coefficient, and transport geometry; without those material quantities, enthalpy, heat duty, reaction energy, or phase-change terms can be attached to the wrong amount of material.
 
-15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
+16. A degrees-of-freedom check compares the number of unknowns with the number of independent balances, constitutive relations, equilibrium or rate equations, and specifications. For 03-05, this prevents algebra from starting before the mass-transfer calculations depend on the driving-force definition, area, diffusivity or transfer coefficient, and transport geometry are sufficiently defined and exposes redundant or missing equations.
 
-16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
+17. Use a relation supplied in the FE problem whenever it defines the model or data for that question. That stated relation controls the calculation even if another correlation is familiar; in 03-05, substituting an unstated model can change the assumptions behind the mass-transfer calculations depend on the driving-force definition, area, diffusivity or transfer coefficient, and transport geometry.
 
-17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
+18. Separate Handbook-supported material from specification-required or externally supported material so the learner knows what may be looked up and what must be understood independently. In 03-05, the distinction matters because the mass-transfer calculations depend on the driving-force definition, area, diffusivity or transfer coefficient, and transport geometry can include methods or assumptions that are required by the exam specification but are not fully tabulated in the Handbook.
 
-18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
 
 19. **A.** The relation or workflow for **Fick first law** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 

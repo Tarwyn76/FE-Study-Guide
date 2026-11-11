@@ -368,28 +368,28 @@ D) It is always directly tabulated in the Handbook
 6. **equipment cost-capacity scaling** is developed in §12.6. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
 
 7. **chemical cost estimate class** is developed in §12.7. Apply the displayed relation only with the section's basis, phase, equilibrium, and steady/unsteady assumptions.
+8. Applying **process flow diagram** before the process basis and system boundary are fixed can size equipment from the wrong duty or flow basis, or compare costs that use inconsistent scale, year, or capacity assumptions. In this chapter, process design links flowsheet and P&ID information to equipment duty, sizing, scale-up assumptions, and a defined cost basis. Define the basis, boundary, known streams or states, and independent specifications first; then apply the process flow diagram relation to that defined system.
 
-8. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+9. Applying **piping and instrumentation diagram** before the process basis and system boundary are fixed can size equipment from the wrong duty or flow basis, or compare costs that use inconsistent scale, year, or capacity assumptions. In this chapter, process design links flowsheet and P&ID information to equipment duty, sizing, scale-up assumptions, and a defined cost basis. Define the basis, boundary, known streams or states, and independent specifications first; then apply the piping and instrumentation diagram relation to that defined system.
 
-9. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+10. Applying **equipment first-pass sizing** before the process basis and system boundary are fixed can size equipment from the wrong duty or flow basis, or compare costs that use inconsistent scale, year, or capacity assumptions. In this chapter, process design links flowsheet and P&ID information to equipment duty, sizing, scale-up assumptions, and a defined cost basis. Define the basis, boundary, known streams or states, and independent specifications first; then apply the equipment first-pass sizing relation to that defined system.
 
-10. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+11. Applying **process equipment scale-up** before the process basis and system boundary are fixed can size equipment from the wrong duty or flow basis, or compare costs that use inconsistent scale, year, or capacity assumptions. In this chapter, process design links flowsheet and P&ID information to equipment duty, sizing, scale-up assumptions, and a defined cost basis. Define the basis, boundary, known streams or states, and independent specifications first; then apply the process equipment scale-up relation to that defined system.
 
-11. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+12. Applying **chemical cost index** before the process basis and system boundary are fixed can size equipment from the wrong duty or flow basis, or compare costs that use inconsistent scale, year, or capacity assumptions. In this chapter, process design links flowsheet and P&ID information to equipment duty, sizing, scale-up assumptions, and a defined cost basis. Define the basis, boundary, known streams or states, and independent specifications first; then apply the chemical cost index relation to that defined system.
 
-12. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+13. Applying **equipment cost-capacity scaling** before the process basis and system boundary are fixed can size equipment from the wrong duty or flow basis, or compare costs that use inconsistent scale, year, or capacity assumptions. In this chapter, process design links flowsheet and P&ID information to equipment duty, sizing, scale-up assumptions, and a defined cost basis. Define the basis, boundary, known streams or states, and independent specifications first; then apply the equipment cost-capacity scaling relation to that defined system.
 
-13. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+14. Applying **chemical cost estimate class** before the process basis and system boundary are fixed can size equipment from the wrong duty or flow basis, or compare costs that use inconsistent scale, year, or capacity assumptions. In this chapter, process design links flowsheet and P&ID information to equipment duty, sizing, scale-up assumptions, and a defined cost basis. Define the basis, boundary, known streams or states, and independent specifications first; then apply the chemical cost estimate class relation to that defined system.
 
-14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
+15. Close the material balance first because it establishes the flow rates and compositions that the energy balance must use. For this chapter, process design links flowsheet and P&ID information to equipment duty, sizing, scale-up assumptions, and a defined cost basis; without those material quantities, enthalpy, heat duty, reaction energy, or phase-change terms can be attached to the wrong amount of material.
 
-15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
+16. A degrees-of-freedom check compares the number of unknowns with the number of independent balances, constitutive relations, equilibrium or rate equations, and specifications. For 03-12, this prevents algebra from starting before the process design links flowsheet and P&ID information to equipment duty, sizing, scale-up assumptions, and a defined cost basis are sufficiently defined and exposes redundant or missing equations.
 
-16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
+17. Use a relation supplied in the FE problem whenever it defines the model or data for that question. That stated relation controls the calculation even if another correlation is familiar; in 03-12, substituting an unstated model can change the assumptions behind the process design links flowsheet and P&ID information to equipment duty, sizing, scale-up assumptions, and a defined cost basis.
 
-17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
+18. Separate Handbook-supported material from specification-required or externally supported material so the learner knows what may be looked up and what must be understood independently. In 03-12, the distinction matters because the process design links flowsheet and P&ID information to equipment duty, sizing, scale-up assumptions, and a defined cost basis can include methods or assumptions that are required by the exam specification but are not fully tabulated in the Handbook.
 
-18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
 
 19. **A.** The relation or workflow for **process flow diagram** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 
