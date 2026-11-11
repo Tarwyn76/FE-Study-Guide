@@ -579,11 +579,18 @@ def strip_markdown(text: str) -> str:
 
 
 def normalize_similarity_text(text: str) -> str:
+    """Normalize prose for duplicate detection without erasing numeric distinctions.
+
+    Earlier versions replaced every number with <num>, which caused different
+    calculations that shared the same algebraic shape to be reported as
+    duplicate explanations. Figure IDs and section references are still
+    normalized because those labels are incidental, but numeric values and
+    operators are retained.
+    """
     s = strip_markdown(text).lower()
-    s = re.sub(r"\b\d+(?:\.\d+)?\b", "<num>", s)
     s = re.sub(r"\bfig-(?:01|02|03)-\d{2}-\d{3}\b", "<fig>", s)
-    s = re.sub(r"\b§?\d+(?:\.\d+)+\b", "<sec>", s)
-    s = re.sub(r"[^a-z<> ]+", " ", s)
+    s = re.sub(r"§?\d+(?:\.\d+)+", "<sec>", s)
+    s = re.sub(r"[^a-z0-9<>.+\-*/= ]+", " ", s)
     s = re.sub(r"\s+", " ", s).strip()
     return s
 
