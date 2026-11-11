@@ -85,7 +85,7 @@ The tradeoff is additional phase lag and the possibility of slow oscillation or 
 
 **Problem.** An integral controller has Ki=0.5 output/(unit·s) and constant error 3 units for 4 s starting from zero integral. Find contribution.
 
-**Solution.** uI=Ki·e·t=0.5·3·4=6. The governing model here is **§70.2 Integral Control**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of integral control.
+**Solution.** uI=Ki·e·t=0.5·3·4=6 output units. The governing model here is **§70.2 Integral Control**. Apply that relation using the stated data and consistent units, then check the sign, magnitude, and physical meaning against the assumptions of integral control.
 
 ---
 
