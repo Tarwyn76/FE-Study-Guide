@@ -414,6 +414,8 @@ D) It is always directly tabulated in the Handbook
 
 26. **A.** The relation or workflow for **humid-air process variable** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 
+   **Item-specific check.** The prompt here asks “Which statement is most accurate for humid-air process variable? A) It must be applied with the correct process basis and physical assumptions B) It is independent of composition a.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 27. **A.** The relation or workflow for **humidification balance** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 
 
@@ -447,6 +449,8 @@ D) It is always directly tabulated in the Handbook
 ## Practice Problem Solutions
 
 1. ω=0.622(2)/(98)=0.01269 kg/kg dry air.
+
+   **Item-specific check.** The prompt here asks “At P=100 kPa, Pv=2 kPa. Find humidity ratio.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
 
 2. 0.025 kg/s.
 

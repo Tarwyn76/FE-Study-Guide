@@ -399,6 +399,8 @@ D) It replaces conservation laws
 
 26. **A.** The chapter applies **control-volume energy balance** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **First Law — Control Volumes**, apply this check specifically through **§51.5 Compressors and Pumps**, including that section's stated assumptions and reference quantities.
 
+   **Item-specific check.** The prompt here asks “Which statement best describes control-volume energy balance? A) It is conditional on the physical model and assumptions B) It is valid independent of state and geometry C) It is o.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 27. **A.** The chapter applies **steady-flow energy equation** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **First Law — Control Volumes**, apply this check specifically through **§51.6 Throttling Valves**, including that section's stated assumptions and reference quantities.
 
 

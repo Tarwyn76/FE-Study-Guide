@@ -410,6 +410,8 @@ D) It is always a static scalar
 
 26. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Data Acquisition, Sampling, Dynamic Response, and Frequency Response**, apply this check specifically through **§68.5 First-Order Dynamic Response and Dead Time**, including that section's stated assumptions and reference quantities.
 
+   **Item-specific check.** The prompt here asks “Which statement best describes data acquisition system? A) Its meaning depends on a defined measurement/control model and assumptions B) It is independent of calibration and dynami.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 27. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Data Acquisition, Sampling, Dynamic Response, and Frequency Response**, apply this check specifically through **§68.6 Second-Order Dynamic Response**, including that section's stated assumptions and reference quantities.
 
 

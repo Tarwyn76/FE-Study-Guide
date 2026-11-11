@@ -407,6 +407,8 @@ D) It is always directly tabulated in the Handbook
 
 26. **A.** The relation or workflow for **process flow diagram** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 
+   **Item-specific check.** The prompt here asks “Which statement is most accurate for process flow diagram? A) It must be applied with the correct process basis and physical assumptions B) It is independent of composition and pha.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 27. **A.** The relation or workflow for **piping and instrumentation diagram** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 
 

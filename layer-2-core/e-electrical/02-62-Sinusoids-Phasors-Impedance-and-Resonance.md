@@ -407,6 +407,8 @@ D) It replaces conservation laws
 
 26. **A.** The chapter treats **sinusoidal waveform** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **Sinusoids, Phasors, Impedance, and Resonance**, apply this check specifically through **§62.5 Series and Parallel AC Networks**, including that section's stated assumptions and reference quantities.
 
+   **Item-specific check.** The prompt here asks “Which statement is most accurate for sinusoidal waveform? A) It must be used with its defined reference and assumptions B) It is independent of topology and frequency C) It always.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 27. **A.** The chapter treats **RMS value** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **Sinusoids, Phasors, Impedance, and Resonance**, apply this check specifically through **§62.6 Series and Parallel Resonance**, including that section's stated assumptions and reference quantities.
 
 

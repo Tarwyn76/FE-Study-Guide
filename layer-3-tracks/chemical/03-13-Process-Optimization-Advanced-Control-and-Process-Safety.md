@@ -403,6 +403,8 @@ D) It is always directly tabulated in the Handbook
 
 26. **A.** The relation or workflow for **process optimization problem** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 
+   **Item-specific check.** The prompt here asks “Which statement is most accurate for process optimization problem? A) It must be applied with the correct process basis and physical assumptions B) It is independent of composition.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 27. **A.** The relation or workflow for **inherently safer process design** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 
 

@@ -405,6 +405,8 @@ D) It replaces conservation laws
 
 26. **A.** The chapter applies **Biot number** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Extended Surfaces and Transient Conduction**, apply this check specifically through **§56.5 One-Term Approximation**, including that section's stated assumptions and reference quantities.
 
+   **Item-specific check.** The prompt here asks “Which statement best describes Biot number? A) It is conditional on the physical model and assumptions B) It is valid independent of state and geometry C) It is only a unit convers.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 27. **A.** The chapter applies **lumped capacitance** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Extended Surfaces and Transient Conduction**, apply this check specifically through **§56.6 Straight Fins and Corrected Length**, including that section's stated assumptions and reference quantities.
 
 

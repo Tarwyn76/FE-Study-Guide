@@ -412,6 +412,8 @@ D) It replaces conservation laws
 
 26. **A.** The chapter treats **capacitance** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **Capacitance, Inductance, and First-Order Transients**, apply this check specifically through **§61.5 Switching, Initial Conditions, and Final Values**, including that section's stated assumptions and reference quantities.
 
+   **Item-specific check.** The prompt here asks “Which statement is most accurate for capacitance? A) It must be used with its defined reference and assumptions B) It is independent of topology and frequency C) It always represen.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 27. **A.** The chapter treats **capacitor energy and combination** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **Capacitance, Inductance, and First-Order Transients**, apply this check specifically through **§61.6 RC First-Order Transients**, including that section's stated assumptions and reference quantities.
 
 

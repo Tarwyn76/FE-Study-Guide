@@ -405,6 +405,8 @@ D) It replaces conservation laws
 
 26. **A.** The chapter applies **volumetric flow rate** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Continuity, Velocity Fields, and Flow Kinematics**, apply this check specifically through **§43.5 Streamlines, Pathlines, and Steady Flow**, including that section's stated assumptions and reference quantities.
 
+   **Item-specific check.** The prompt here asks “Which statement best describes volumetric flow rate? A) It is conditional on the physical model and assumptions B) It is valid independent of state and geometry C) It is only a uni.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 27. **A.** The chapter applies **mass flow rate** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Continuity, Velocity Fields, and Flow Kinematics**, apply this check specifically through **§43.6 Control-Volume Mass Balance**, including that section's stated assumptions and reference quantities.
 
 

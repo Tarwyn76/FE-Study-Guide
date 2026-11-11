@@ -411,6 +411,8 @@ D) It replaces conservation laws
 
 26. **A.** The chapter treats **electric charge and current** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **Electrical Quantities, Ohm's Law, and DC Power**, apply this check specifically through **§59.5 Temperature Dependence of Resistance**, including that section's stated assumptions and reference quantities.
 
+   **Item-specific check.** The prompt here asks “Which statement is most accurate for electric charge and current? A) It must be used with its defined reference and assumptions B) It is independent of topology and frequency C) It.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 27. **A.** The chapter treats **electric potential difference** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **Electrical Quantities, Ohm's Law, and DC Power**, apply this check specifically through **§59.6 DC Power in Resistive Elements**, including that section's stated assumptions and reference quantities.
 
 

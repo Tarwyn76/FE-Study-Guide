@@ -409,6 +409,8 @@ D) It replaces conservation laws
 
 26. **A.** The chapter treats **magnetic flux** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **Magnetics and Transformers**, apply this check specifically through **§64.5 Ideal Transformer Turns and Current Ratios**, including that section's stated assumptions and reference quantities.
 
+   **Item-specific check.** The prompt here asks “Which statement is most accurate for magnetic flux? A) It must be used with its defined reference and assumptions B) It is independent of topology and frequency C) It always repres.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 27. **A.** The chapter treats **magnetic force on conductor** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **Magnetics and Transformers**, apply this check specifically through **§64.6 Reflected Impedance**, including that section's stated assumptions and reference quantities.
 
 

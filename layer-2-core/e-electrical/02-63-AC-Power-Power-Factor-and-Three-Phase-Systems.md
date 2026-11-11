@@ -413,6 +413,8 @@ D) It replaces conservation laws
 
 26. **A.** The chapter treats **complex power** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **AC Power, Power Factor, and Three-Phase Systems**, apply this check specifically through **§63.5 Wye Line-to-Phase Relationships**, including that section's stated assumptions and reference quantities.
 
+   **Item-specific check.** The prompt here asks “Which statement is most accurate for complex power? A) It must be used with its defined reference and assumptions B) It is independent of topology and frequency C) It always repres.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 27. **A.** The chapter treats **power factor** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **AC Power, Power Factor, and Three-Phase Systems**, apply this check specifically through **§63.6 Delta Line-to-Phase Relationships**, including that section's stated assumptions and reference quantities.
 
 

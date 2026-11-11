@@ -400,6 +400,8 @@ D) It replaces conservation laws
 
 26. **A.** The chapter applies **pure substance** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Pure Substances, Phase Diagrams, and Property Tables**, apply this check specifically through **§48.5 Superheated Vapor and Compressed Liquid**, including that section's stated assumptions and reference quantities.
 
+   **Item-specific check.** The prompt here asks “Which statement best describes pure substance? A) It is conditional on the physical model and assumptions B) It is valid independent of state and geometry C) It is only a unit conv.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 27. **A.** The chapter applies **saturation dome** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Pure Substances, Phase Diagrams, and Property Tables**, apply this check specifically through **§48.6 P-v, T-s, and P-h Diagrams**, including that section's stated assumptions and reference quantities.
 
 

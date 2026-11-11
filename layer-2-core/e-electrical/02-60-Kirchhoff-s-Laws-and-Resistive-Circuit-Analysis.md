@@ -412,6 +412,8 @@ D) It replaces conservation laws
 
 26. **A.** The chapter treats **resistive network reduction** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **Kirchhoff's Laws and Resistive Circuit Analysis**, apply this check specifically through **§60.5 Nodal Analysis with KCL**, including that section's stated assumptions and reference quantities.
 
+   **Item-specific check.** The prompt here asks “Which statement is most accurate for resistive network reduction? A) It must be used with its defined reference and assumptions B) It is independent of topology and frequency C) It.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 27. **A.** The chapter treats **Kirchhoff current law** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **Kirchhoff's Laws and Resistive Circuit Analysis**, apply this check specifically through **§60.6 Mesh and Loop Analysis with KVL**, including that section's stated assumptions and reference quantities.
 
 

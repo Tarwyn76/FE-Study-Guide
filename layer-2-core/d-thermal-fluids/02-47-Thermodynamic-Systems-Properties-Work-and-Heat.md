@@ -400,6 +400,8 @@ D) It replaces conservation laws
 
 26. **A.** The chapter applies **thermodynamic system** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Thermodynamic Systems, Properties, Work, and Heat**, apply this check specifically through **§47.5 Boundary Work**, including that section's stated assumptions and reference quantities.
 
+   **Item-specific check.** The prompt here asks “Which statement best describes thermodynamic system? A) It is conditional on the physical model and assumptions B) It is valid independent of state and geometry C) It is only a uni.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 27. **A.** The chapter applies **thermodynamic property** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Thermodynamic Systems, Properties, Work, and Heat**, apply this check specifically through **§47.6 Common Thermodynamic Processes**, including that section's stated assumptions and reference quantities.
 
 

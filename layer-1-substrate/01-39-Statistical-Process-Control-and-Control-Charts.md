@@ -1327,6 +1327,8 @@ D) ignored whenever a control chart is used.
     \boxed{39.5719}.
     $$
 
+   **Item-specific check.** The prompt here asks “For n=5, \bar{\bar X}=40.0, \bar S=0.30, and A3=1.427. Find the \bar X limits.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 17.
 
     $$

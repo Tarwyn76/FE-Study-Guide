@@ -406,6 +406,8 @@ D) It replaces conservation laws
 
 26. **A.** The chapter applies **Fourier conduction** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Conduction and Thermal Resistance**, apply this check specifically through **§55.5 Composite Walls and Interface Temperatures**, including that section's stated assumptions and reference quantities.
 
+   **Item-specific check.** The prompt here asks “Which statement best describes Fourier conduction? A) It is conditional on the physical model and assumptions B) It is valid independent of state and geometry C) It is only a unit.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 27. **A.** The chapter applies **plane-wall conduction** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Conduction and Thermal Resistance**, apply this check specifically through **§55.6 Critical Radius of Insulation**, including that section's stated assumptions and reference quantities.
 
 

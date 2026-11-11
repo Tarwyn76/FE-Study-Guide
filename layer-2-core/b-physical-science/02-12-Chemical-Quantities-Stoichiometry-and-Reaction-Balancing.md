@@ -418,6 +418,8 @@ D) A substitute for verified data
 
 26. **A.** The chapter applies **mole** only under its stated physical/model assumptions.
 
+   **Item-specific check.** The prompt here asks “Which answer best describes mole? A) A conditional engineering concept used under stated assumptions B) A universal rule independent of conditions C) A unit-conversion constant onl.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 27. **A.** The chapter applies **molar mass** only under its stated physical/model assumptions.
 
 

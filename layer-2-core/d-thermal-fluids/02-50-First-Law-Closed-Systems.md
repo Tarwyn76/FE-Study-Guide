@@ -405,6 +405,8 @@ D) It replaces conservation laws
 
 26. **A.** The chapter applies **closed-system first law** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **First Law — Closed Systems**, apply this check specifically through **§50.5 Isothermal Ideal-Gas Process**, including that section's stated assumptions and reference quantities.
 
+   **Item-specific check.** The prompt here asks “Which statement best describes closed-system first law? A) It is conditional on the physical model and assumptions B) It is valid independent of state and geometry C) It is only a.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 27. **A.** The chapter applies **closed-system energy change** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **First Law — Closed Systems**, apply this check specifically through **§50.6 Polytropic and Isentropic Processes**, including that section's stated assumptions and reference quantities.
 
 

@@ -406,6 +406,8 @@ D) It is always a static scalar
 
 26. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **PID Control, Stability, and Control-Loop Hardware**, apply this check specifically through **§70.5 Stability, Damping, and Tuning Tradeoffs**, including that section's stated assumptions and reference quantities.
 
+   **Item-specific check.** The prompt here asks “Which statement best describes proportional control? A) Its meaning depends on a defined measurement/control model and assumptions B) It is independent of calibration and dynamics.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 27. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **PID Control, Stability, and Control-Loop Hardware**, apply this check specifically through **§70.6 Lead/Lag Compensation and Loop-Shaping Context**, including that section's stated assumptions and reference quantities.
 
 

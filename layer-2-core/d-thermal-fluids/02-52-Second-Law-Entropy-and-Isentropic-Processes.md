@@ -393,6 +393,8 @@ D) It replaces conservation laws
 
 26. **A.** The chapter applies **second law** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Second Law, Entropy, and Isentropic Processes**, apply this check specifically through **§52.5 Ideal-Gas Entropy Change**, including that section's stated assumptions and reference quantities.
 
+   **Item-specific check.** The prompt here asks “Which statement best describes second law? A) It is conditional on the physical model and assumptions B) It is valid independent of state and geometry C) It is only a unit conversi.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 27. **A.** The chapter applies **entropy** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Second Law, Entropy, and Isentropic Processes**, apply this check specifically through **§52.6 Entropy Change of Solids and Liquids**, including that section's stated assumptions and reference quantities.
 
 

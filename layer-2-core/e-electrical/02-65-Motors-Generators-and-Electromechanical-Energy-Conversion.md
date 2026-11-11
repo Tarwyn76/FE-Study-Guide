@@ -415,6 +415,8 @@ D) It replaces conservation laws
 
 26. **A.** The chapter treats **rotating-machine efficiency** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **Motors, Generators, and Electromechanical Energy Conversion**, apply this check specifically through **§65.5 Induction Machines — Slip and Torque-Speed Behavior**, including that section's stated assumptions and reference quantities.
 
+   **Item-specific check.** The prompt here asks “Which statement is most accurate for rotating-machine efficiency? A) It must be used with its defined reference and assumptions B) It is independent of topology and frequency C) It.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 27. **A.** The chapter treats **electromechanical torque and speed** as valid only with the required reference directions, circuit topology, frequency/state assumptions, and units. For **Motors, Generators, and Electromechanical Energy Conversion**, apply this check specifically through **§65.6 DC Machines — Back EMF, Flux, and Torque**, including that section's stated assumptions and reference quantities.
 
 

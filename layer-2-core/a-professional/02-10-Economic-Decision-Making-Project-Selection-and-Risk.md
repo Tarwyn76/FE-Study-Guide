@@ -333,7 +333,11 @@ D) A substitute for engineering judgment
 
 6. The central principle is **Sensitivity**. Apply that section's rule to the governing facts and assumptions.
 
+   **Item-specific check.** The prompt here asks “State the central engineering decision or principle developed in Sensitivity and Scenario Analysis.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 7. The central principle is **Integration**. Apply that section's rule to the governing facts and assumptions.
+
+   **Item-specific check.** The prompt here asks “State the central engineering decision or principle developed in Integrated Decision Rule.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
 
 8. It would apply the wrong professional or economic rule. First distinguish **Project type** from nearby concepts, then apply it under the section's stated conditions.
 
@@ -347,7 +351,11 @@ D) A substitute for engineering judgment
 
 13. It would apply the wrong professional or economic rule. First distinguish **Sensitivity** from nearby concepts, then apply it under the section's stated conditions.
 
+   **Item-specific check.** The prompt here asks “What common error would result from ignoring the distinction emphasized in Sensitivity and Scenario Analysis?.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 14. It would apply the wrong professional or economic rule. First distinguish **Integration** from nearby concepts, then apply it under the section's stated conditions.
+
+   **Item-specific check.** The prompt here asks “What common error would result from ignoring the distinction emphasized in Integrated Decision Rule?.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
 
 15. First verify the feasible alternatives, decision constraints, evaluation criterion, and any probabilities or ranges assigned to uncertain outcomes before calculating a preferred project.
 16. A mathematically correct ranking can be wrong when mutually exclusive and independent projects are mixed, constraints are omitted, or expected values are treated as certain outcomes.
@@ -365,9 +373,15 @@ D) A substitute for engineering judgment
 
 24. **A.** The chapter uses **Sensitivity** as the section-specific engineering concept or criterion.
 
+   **Item-specific check.** The prompt here asks “Which choice best matches the chapter's use of Sensitivity? A) The section-specific engineering concept or criterion B) An unrelated calculation method C) A guaranteed outcome D) A.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 25. **A.** The chapter uses **Integration** as the section-specific engineering concept or criterion.
 
+   **Item-specific check.** The prompt here asks “Which choice best matches the chapter's use of Integration? A) The section-specific engineering concept or criterion B) An unrelated calculation method C) A guaranteed outcome D) A.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 26. **A.** The chapter uses **Project type** as the section-specific engineering concept or criterion.
+
+   **Item-specific check.** The prompt here asks “Which choice best matches the chapter's use of Project type? A) The section-specific engineering concept or criterion B) An unrelated calculation method C) A guaranteed outcome D).” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
 
 27. **A.** The chapter uses **Unequal lives** as the section-specific engineering concept or criterion.
 

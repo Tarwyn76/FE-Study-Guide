@@ -405,6 +405,8 @@ D) It replaces conservation laws
 
 26. **A.** The chapter applies **manometer** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Buoyancy, Manometry, and Forces on Submerged Surfaces**, apply this check specifically through **§42.5 Resultant Force on a Plane Submerged Surface**, including that section's stated assumptions and reference quantities.
 
+   **Item-specific check.** The prompt here asks “Which statement best describes manometer? A) It is conditional on the physical model and assumptions B) It is valid independent of state and geometry C) It is only a unit conversio.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 27. **A.** The chapter applies **barometer** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Buoyancy, Manometry, and Forces on Submerged Surfaces**, apply this check specifically through **§42.6 Center of Pressure**, including that section's stated assumptions and reference quantities.
 
 

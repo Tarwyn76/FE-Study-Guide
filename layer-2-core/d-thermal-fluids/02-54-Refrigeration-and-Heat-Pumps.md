@@ -406,6 +406,8 @@ D) It replaces conservation laws
 
 26. **A.** The chapter applies **coefficient of performance** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Refrigeration and Heat Pumps**, apply this check specifically through **§54.5 Refrigeration Capacity and Tons**, including that section's stated assumptions and reference quantities.
 
+   **Item-specific check.** The prompt here asks “Which statement best describes coefficient of performance? A) It is conditional on the physical model and assumptions B) It is valid independent of state and geometry C) It is only.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 27. **A.** The chapter applies **Carnot COP** only after the state, geometry, flow/thermal regime, and assumptions are defined. For **Refrigeration and Heat Pumps**, apply this check specifically through **§54.6 Heat Pumps and Heating COP**, including that section's stated assumptions and reference quantities.
 
 

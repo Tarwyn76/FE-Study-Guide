@@ -402,6 +402,8 @@ D) A substitute for verified data
 
 26. **A.** The chapter applies **acute toxicity** only under its stated physical/model assumptions.
 
+   **Item-specific check.** The prompt here asks “Which answer best describes acute toxicity? A) A conditional engineering concept used under stated assumptions B) A universal rule independent of conditions C) A unit-conversion co.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 27. **A.** The chapter applies **exposure assessment** only under its stated physical/model assumptions.
 
 

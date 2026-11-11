@@ -408,6 +408,8 @@ D) It is always a static scalar
 
 26. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Measurement Systems, Calibration, Accuracy, and Uncertainty**, apply this check specifically through **§66.5 Error, Uncertainty, and Kline–McClintock Propagation**, including that section's stated assumptions and reference quantities.
 
+   **Item-specific check.** The prompt here asks “Which statement best describes measurement chain? A) Its meaning depends on a defined measurement/control model and assumptions B) It is independent of calibration and dynamics C).” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 27. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Measurement Systems, Calibration, Accuracy, and Uncertainty**, apply this check specifically through **§66.6 Range, Resolution, Sensitivity, and Uncertainty Are Different**, including that section's stated assumptions and reference quantities.
 
 

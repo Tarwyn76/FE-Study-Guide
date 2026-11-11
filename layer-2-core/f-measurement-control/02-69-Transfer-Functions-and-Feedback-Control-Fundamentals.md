@@ -409,6 +409,8 @@ D) It is always a static scalar
 
 26. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Transfer Functions and Feedback Control Fundamentals**, apply this check specifically through **§69.5 Characteristic Equation and Pole Stability**, including that section's stated assumptions and reference quantities.
 
+   **Item-specific check.** The prompt here asks “Which statement best describes transfer function? A) Its meaning depends on a defined measurement/control model and assumptions B) It is independent of calibration and dynamics C).” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 27. **A.** Measurement and control quantities are meaningful only with their stated reference, dynamic model, signal conditions, and assumptions. For **Transfer Functions and Feedback Control Fundamentals**, apply this check specifically through **§69.6 Steady-State Gain and Error**, including that section's stated assumptions and reference quantities.
 
 

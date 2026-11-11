@@ -407,6 +407,8 @@ D) Ignore the stated reference basis
 
 6. $i_e=(1+0.09/12)^{12}-1=\boxed{9.381\%}$.
 
+   **Item-specific check.** The prompt here asks “Nominal 9% compounded monthly: find effective annual rate.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 7. Book value is accounting basis less accumulated depreciation; market value is what the asset can actually command in the market.
 
 8. The historical outlay cannot be changed by the current decision; relevant comparison uses future/opportunity cash flows such as current market value and future costs.

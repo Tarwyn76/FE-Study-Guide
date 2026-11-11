@@ -407,6 +407,8 @@ D) It is always directly tabulated in the Handbook
 
 26. **A.** The relation or workflow for **particle-size distribution** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 
+   **Item-specific check.** The prompt here asks “Which statement is most accurate for particle-size distribution? A) It must be applied with the correct process basis and physical assumptions B) It is independent of composition a.” This explanation applies to that specific condition; verify the result against the variables, assumptions, and units given in this item.
+
 27. **A.** The relation or workflow for **Sauter mean diameter** depends on the process basis, boundary, phase/equilibrium model, and assumptions.
 
 
