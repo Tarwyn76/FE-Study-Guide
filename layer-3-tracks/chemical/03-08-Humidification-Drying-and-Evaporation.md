@@ -152,7 +152,6 @@ Drying cannot reduce material below the equilibrium moisture corresponding to th
 
 ---
 
-**Reasoning check.** Humidification, drying, and evaporation problems require coupled material and energy balances using the correct moisture or vapor-content basis and thermodynamic state information. The stated example conditions (### Worked Example 5 Problem. What happens when a solid reaches equilibrium moisture for the surrounding gas?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 8.6 Single-Effect Evaporation Balances
 
 **Specification-required; detailed balance workflow is guide-developed.** Evaporation concentrates a nonvolatile solute by vaporizing solvent. A solute balance determines concentrate flow; an energy balance determines steam or heat duty.
@@ -192,7 +191,6 @@ For FE problems, choose the simplest valid basis: dry air for humidification, dr
 
 ---
 
-**Reasoning check.** Humidification, drying, and evaporation problems require coupled material and energy balances using the correct moisture or vapor-content basis and thermodynamic state information. The stated example conditions (### Worked Example 7 Problem. Why are humidification/drying/evaporation coupled heat and mass transfer problems?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## Integrated Worked Examples
 
 ### Worked Example 8
@@ -390,11 +388,11 @@ D) It is always directly tabulated in the Handbook
 
 14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
 
-15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations. The item statement identifies the case as: Why should a material balance normally be closed before a process energy balance?. Humidification, drying, and evaporation problems require coupled material and energy balances using the correct moisture or vapor-content basis and thermodynamic state information. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
 
-16. To verify that the unknowns are matched by independent equations/specifications before algebra begins. The item statement identifies the case as: What is the purpose of a degrees-of-freedom check?. Humidification, drying, and evaporation problems require coupled material and energy balances using the correct moisture or vapor-content basis and thermodynamic state information. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
 
-17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation. The item statement identifies the case as: When should a relation supplied by an FE problem override a remembered correlation?. Humidification, drying, and evaporation problems require coupled material and energy balances using the correct moisture or vapor-content basis and thermodynamic state information. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
 
 18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
 
@@ -418,6 +416,7 @@ D) It is always directly tabulated in the Handbook
 
 
 ---
+
 ## Practice Problems
 
 1. At P=100 kPa, Pv=2 kPa. Find humidity ratio.
@@ -445,28 +444,29 @@ D) It is always directly tabulated in the Handbook
 
 ## Practice Problem Solutions
 
-1. ω=0.622(2)/(98)=0.01269 kg/kg dry air. The item statement identifies the case as: At P=100 kPa, Pv=2 kPa. Find humidity ratio. Humidification, drying, and evaporation problems require coupled material and energy balances using the correct moisture or vapor-content basis and thermodynamic state information. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+1. ω=0.622(2)/(98)=0.01269 kg/kg dry air.
 
-2. 0.025 kg/s. The item statement identifies the case as: Dry air flow is 5 kg/s, humidity ratio rises 0.005. Find water added. Humidification, drying, and evaporation problems require coupled material and energy balances using the correct moisture or vapor-content basis and thermodynamic state information. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+2. 0.025 kg/s.
 
-3. Xwb=0.20; Xdb=0.25. The item statement identifies the case as: A wet solid has 2 kg water and 8 kg dry solid. Find wet- and dry-basis moisture. Humidification, drying, and evaporation problems require coupled material and energy balances using the correct moisture or vapor-content basis and thermodynamic state information. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+3. Xwb=0.20; Xdb=0.25.
 
-4. Rate=5 kg/h; time=5 h. The item statement identifies the case as: A dryer removes moisture at constant 0.5 kg/(m²·h) from 100 kg dry solid over 10 m². Find time to remove 25 kg water. Humidification, drying, and evaporation problems require coupled material and energy balances using the correct moisture or vapor-content basis and thermodynamic state information. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+4. Rate=5 kg/h; time=5 h.
 
-5. Net drying tends to zero unless gas conditions change. The item statement identifies the case as: What happens when a solid reaches equilibrium moisture for the surrounding gas?. Humidification, drying, and evaporation problems require coupled material and energy balances using the correct moisture or vapor-content basis and thermodynamic state information. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+5. Net drying tends to zero unless gas conditions change.
 
-6. Product=100/0.40=250 kg/h; vapor=750 kg/h. The item statement identifies the case as: Feed 1000 kg/h at 10 wt% nonvolatile solute is concentrated to 40 wt%. Find product and vapor rates. Humidification, drying, and evaporation problems require coupled material and energy balances using the correct moisture or vapor-content basis and thermodynamic state information. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+6. Product=100/0.40=250 kg/h; vapor=750 kg/h.
 
-7. They move a species between phases and generally require latent/sensible heat. The item statement identifies the case as: Why are humidification/drying/evaporation coupled heat and mass transfer problems?. Humidification, drying, and evaporation problems require coupled material and energy balances using the correct moisture or vapor-content basis and thermodynamic state information. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+7. They move a species between phases and generally require latent/sensible heat.
 
-8. 0.04 kg/s. The item statement identifies the case as: Dry air 2 kg/s increases ω from 0.01 to 0.03. Find water transfer. Humidification, drying, and evaporation problems require coupled material and energy balances using the correct moisture or vapor-content basis and thermodynamic state information. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+8. 0.04 kg/s.
 
-9. Solids=100 kg/h; product=200 kg/h; evaporated=300 kg/h. The item statement identifies the case as: Feed 500 kg/h at 20% solids to 50% solids. Find water evaporated. Humidification, drying, and evaporation problems require coupled material and energy balances using the correct moisture or vapor-content basis and thermodynamic state information. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+9. Solids=100 kg/h; product=200 kg/h; evaporated=300 kg/h.
 
-10. The minimum attainable moisture rises; drying potential decreases. The item statement identifies the case as: If equilibrium moisture increases with relative humidity, what happens to achievable drying at higher RH?. Humidification, drying, and evaporation problems require coupled material and energy balances using the correct moisture or vapor-content basis and thermodynamic state information. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+10. The minimum attainable moisture rises; drying potential decreases.
 
 
 ---
+
 ## Quick Reference
 
 **Source anchor:** FE Chemical specification Area 10F; general Thermodynamics psychrometrics, printed pp. 149–150 and charts pp. 179–180; Chemical Engineering wet-solids equilibrium data, printed p. 257.
