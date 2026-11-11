@@ -58,8 +58,7 @@ UNIT_TOKEN = (
     r"units/h|unit/h|units/min|unit/min|metric tons/day|tons/day)"
 )
 NUMBER_UNIT_RE = re.compile(
-    rf"(?<![A-Za-z])[-+]?\d+(?:\.\d+)?(?:[eE][-+]?\d+)?\s*{UNIT_TOKEN}(?![A-Za-z])",
-    re.I,
+    rf"(?<![A-Za-z])[-+]?\d+(?:\.\d+)?(?:[eE][-+]?\d+)?\s*{UNIT_TOKEN}(?![A-Za-z)])"
 )
 CURRENCY_RE = re.compile(r"[$€£]\s*[-+]?\d")
 
@@ -146,18 +145,28 @@ def is_dimensionless_prompt(prompt:str)->bool:
         re.I,
     )) or bool(re.search(
         r"\b(?:evaluate|differentiate|derivative|integral|exact values?|confidence interval|"
-        r"zone boundaries?)\b",
+        r"zone boundaries?|infinite geometric series|independent equations?)\b",
         prompt,
         re.I,
-    ))
+    )) or any(token in prompt for token in ("η", "C/C0", "C_A/C_A0", "HQ", "Re"))
+
+def normalize_unit_text(text:str)->str:
+    """Expose units hidden inside common LaTeX wrappers before matching."""
+    s=str(text)
+    s=re.sub(r"\\\\(?:text|mathrm)\\{\\s*([^{}]+?)\\s*\\}", r"\\1", s)
+    s=s.replace(r"\\,", " ").replace(r"\\ ", " ")
+    s=s.replace("³", "^3").replace("²", "^2")
+    return s
 
 def prompt_has_dimensional_quantity(prompt:str)->bool:
-    """Require a numeric quantity tied to a unit; bare words such as 'in' or 'A' are not units."""
-    return bool(NUMBER_UNIT_RE.search(prompt) or CURRENCY_RE.search(prompt))
+    """Require a numeric quantity tied to a unit; bare prose and MC labels are not units."""
+    s=normalize_unit_text(prompt)
+    return bool(NUMBER_UNIT_RE.search(s) or CURRENCY_RE.search(s))
 
 def solution_has_recognized_unit(solution:str)->bool:
-    """Recognize a unit only when it is attached to a numeric result."""
-    return bool(NUMBER_UNIT_RE.search(solution))
+    """Recognize engineering units or currency attached to a numeric result."""
+    s=normalize_unit_text(solution)
+    return bool(NUMBER_UNIT_RE.search(s) or CURRENCY_RE.search(s))
 
 def audit_blueprints(root:Path,issues:list[Issue]):
     pb=root/'meta'/'exam-blueprints.yaml'; tb=root/'meta'/'tier-review-blueprints.yaml'
