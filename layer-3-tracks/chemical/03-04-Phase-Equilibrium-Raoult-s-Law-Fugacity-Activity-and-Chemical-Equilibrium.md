@@ -70,7 +70,6 @@ Phase equilibrium requires equality of the appropriate chemical potential/fugaci
 
 ---
 
-**Reasoning check.** Phase-equilibrium calculations require a consistent composition basis and the correct equilibrium model for the phase behavior and nonideality stated in the problem. The stated example conditions (### Worked Example 1 Problem. For a nonreacting binary two-phase system, use phase rule to find degrees of freedom) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 4.2 Henry's Law for Dilute Solutes
 
 The Handbook gives Henry's law for low-concentration solutes in gas-liquid equilibrium. Partial pressure is proportional to liquid-phase mole fraction through the stated Henry constant convention.
@@ -109,7 +108,6 @@ Combining with Dalton's law gives \(y_iP=x_iP_i^{sat}\).
 
 ---
 
-**Reasoning check.** Phase-equilibrium calculations require a consistent composition basis and the correct equilibrium model for the phase behavior and nonideality stated in the problem. The stated example conditions (### Worked Example 3 Problem. At 80°C, Psat,A=80 kPa and xA=0.4. Raoult partial pressure?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 4.4 K-Values, Bubble Points, and Dew Points
 
 Define \(K_i=y_i/x_i\). Under ideal Raoult behavior, \(K_i=P_i^{sat}/P\). Bubble-point calculations begin with a liquid composition; dew-point calculations begin with a vapor composition.
@@ -128,7 +126,6 @@ At a bubble point \(\sum_i y_i=1\); at a dew point \(\sum_i x_i=1\).
 
 ---
 
-**Reasoning check.** Phase-equilibrium calculations require a consistent composition basis and the correct equilibrium model for the phase behavior and nonideality stated in the problem. The stated example conditions (### Worked Example 4 Problem. Binary liquid has xA=0.4, KA=1.5, KB=0.667. Check bubble criterion ΣKx if xB=0.6) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 4.5 Fugacity Equality for Rigorous Phase Equilibrium
 
 The Handbook's rigorous VLE criterion is equality of component fugacity between vapor and liquid phases. Vapor fugacity commonly uses a fugacity coefficient; liquid fugacity commonly uses activity coefficient and a pure-liquid reference fugacity.
@@ -147,7 +144,6 @@ At low pressure and near-ideal behavior, these corrections approach unity and th
 
 ---
 
-**Reasoning check.** Phase-equilibrium calculations require a consistent composition basis and the correct equilibrium model for the phase behavior and nonideality stated in the problem. The stated example conditions (### Worked Example 5 Problem. At low pressure, φ≈1 and γ≈1. What rigorous VLE form does fugacity equality approach?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 4.6 Activity Coefficients and Liquid-Phase Nonideality
 
 The activity coefficient \(\gamma_i\) corrects liquid-phase nonideality. The Handbook gives a Van Laar form for binary systems.
@@ -166,7 +162,6 @@ Values near one indicate near-ideal liquid behavior. Large deviations from one m
 
 ---
 
-**Reasoning check.** Phase-equilibrium calculations require a consistent composition basis and the correct equilibrium model for the phase behavior and nonideality stated in the problem. The stated example conditions (### Worked Example 6 Problem. If γA=2 at given x, is liquid more or less ideal than γA=1?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 4.7 Chemical Reaction Equilibrium
 
 For a reacting mixture, equilibrium is determined by standard Gibbs energy change and activities through the equilibrium constant.
@@ -185,7 +180,6 @@ The reaction quotient has the same activity-product structure; equilibrium occur
 
 ---
 
-**Reasoning check.** Phase-equilibrium calculations require a consistent composition basis and the correct equilibrium model for the phase behavior and nonideality stated in the problem. The stated example conditions (### Worked Example 7 Problem. If ΔG°=-RT ln K and K>1, what sign is ΔG°?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## Integrated Worked Examples
 
 ### Worked Example 8
@@ -196,7 +190,6 @@ The reaction quotient has the same activity-product structure; equilibrium occur
 
 <!-- VERIFY id="WE-03-04-008-K" expr="0.6/0.3" expected="2" units="dimensionless" atol="1e-9" rtol="1e-9" -->
 
-**Reasoning check.** Phase-equilibrium calculations require a consistent composition basis and the correct equilibrium model for the phase behavior and nonideality stated in the problem. The stated example conditions (### Worked Example 8 Problem. For yA=0.6 and xA=0.3, find K-value) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ### Worked Example 9
 
 **Problem.** At a dew point with yA=0.5, KA=2 and KB=0.5, evaluate Σy/K.
@@ -382,11 +375,11 @@ D) It is always directly tabulated in the Handbook
 
 14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
 
-15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations. The item statement identifies the case as: Why should a material balance normally be closed before a process energy balance?. Phase-equilibrium calculations require a consistent composition basis and the correct equilibrium model for the phase behavior and nonideality stated in the problem. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
 
-16. To verify that the unknowns are matched by independent equations/specifications before algebra begins. The item statement identifies the case as: What is the purpose of a degrees-of-freedom check?. Phase-equilibrium calculations require a consistent composition basis and the correct equilibrium model for the phase behavior and nonideality stated in the problem. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
 
-17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation. The item statement identifies the case as: When should a relation supplied by an FE problem override a remembered correlation?. Phase-equilibrium calculations require a consistent composition basis and the correct equilibrium model for the phase behavior and nonideality stated in the problem. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
 
 18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
 
@@ -410,6 +403,7 @@ D) It is always directly tabulated in the Handbook
 
 
 ---
+
 ## Practice Problems
 
 1. For a nonreacting binary two-phase system, use phase rule to find degrees of freedom.
@@ -437,28 +431,29 @@ D) It is always directly tabulated in the Handbook
 
 ## Practice Problem Solutions
 
-1. F=C+2-P=2+2-2=2. The item statement identifies the case as: For a nonreacting binary two-phase system, use phase rule to find degrees of freedom. Phase-equilibrium calculations require a consistent composition basis and the correct equilibrium model for the phase behavior and nonideality stated in the problem. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+1. F=C+2-P=2+2-2=2.
 
-2. p=Hx=1.0 kPa. The item statement identifies the case as: Henry constant is 500 kPa and x=0.002. Find equilibrium gas partial pressure. Phase-equilibrium calculations require a consistent composition basis and the correct equilibrium model for the phase behavior and nonideality stated in the problem. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+2. p=Hx=1.0 kPa.
 
-3. pA=32 kPa. The item statement identifies the case as: At 80°C, Psat,A=80 kPa and xA=0.4. Raoult partial pressure?. Phase-equilibrium calculations require a consistent composition basis and the correct equilibrium model for the phase behavior and nonideality stated in the problem. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+3. pA=32 kPa.
 
-4. 1.5(0.4)+0.667(0.6)=1.0002≈1; near bubble condition. The item statement identifies the case as: Binary liquid has xA=0.4, KA=1.5, KB=0.667. Check bubble criterion ΣKx if xB=0.6. Phase-equilibrium calculations require a consistent composition basis and the correct equilibrium model for the phase behavior and nonideality stated in the problem. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+4. 1.5(0.4)+0.667(0.6)=1.0002≈1; near bubble condition.
 
-5. Raoult's law: yiP≈xiPisat. The item statement identifies the case as: At low pressure, φ≈1 and γ≈1. What rigorous VLE form does fugacity equality approach?. Phase-equilibrium calculations require a consistent composition basis and the correct equilibrium model for the phase behavior and nonideality stated in the problem. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+5. Raoult's law: yiP≈xiPisat.
 
-6. More nonideal; activity is twice xi on the chosen standard-state basis. The item statement identifies the case as: If γA=2 at given x, is liquid more or less ideal than γA=1?. Phase-equilibrium calculations require a consistent composition basis and the correct equilibrium model for the phase behavior and nonideality stated in the problem. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+6. More nonideal; activity is twice xi on the chosen standard-state basis.
 
-7. Negative. The item statement identifies the case as: If ΔG°=-RT ln K and K>1, what sign is ΔG°?. Phase-equilibrium calculations require a consistent composition basis and the correct equilibrium model for the phase behavior and nonideality stated in the problem. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+7. Negative.
 
-8. K=2. The item statement identifies the case as: For yA=0.6 and xA=0.3, find K-value. Phase-equilibrium calculations require a consistent composition basis and the correct equilibrium model for the phase behavior and nonideality stated in the problem. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+8. K=2.
 
 9. 0.5/2+0.5/0.5=1.25, so the assumed state is not the dew point.
 
-10. Equal component fugacity in each phase. The item statement identifies the case as: What equality defines phase equilibrium rigorously for each component?. Phase-equilibrium calculations require a consistent composition basis and the correct equilibrium model for the phase behavior and nonideality stated in the problem. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+10. Equal component fugacity in each phase.
 
 
 ---
+
 ## Quick Reference
 
 **Source anchor:** Thermodynamics, printed pp. 153–156; FE Chemical specification Area 7F–G.
