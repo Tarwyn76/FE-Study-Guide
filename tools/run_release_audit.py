@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# warning-review summary run
 # final strict audit after prefix-regex repair
 # final rerun after arithmetic-audit syntax repair
 # strict release rerun after manuscript audit repairs
