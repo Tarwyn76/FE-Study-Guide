@@ -91,6 +91,12 @@ By the end of this chapter, you will be able to:
 
 ---
 
+### Terminology crosswalk
+
+The guide's concept index uses four compact labels for ideas developed in this chapter. A **general form line** is a line written as \(Ax+By+C=0\). **Perpendicular slopes** are negative reciprocals when both slopes are finite, so \(m_1m_2=-1\). A **hyperbola asymptote** is one of the limiting straight lines approached by the hyperbola's branches. A **completing the square conic** problem is a general second-degree equation reduced to standard conic form by completing the square. These labels introduce no new formulas; they name techniques and objects used below.
+
+---
+
 ## Notation Used Here
 
 | Symbol | Meaning | Notes |
