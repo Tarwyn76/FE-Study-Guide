@@ -1,0 +1,25 @@
+name: Repair Chemical source boundaries
+on:
+  push:
+    branches: [figure-cleanup-strict]
+    paths:
+      - tools/repair_chemical_source_boundaries.py
+      - .github/workflows/repair-chemical-source-boundaries.yml
+  workflow_dispatch:
+permissions: {contents: write}
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: figure-cleanup-strict, fetch-depth: 0}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: python tools/repair_chemical_source_boundaries.py
+      - run: |
+          git config user.name "ChatGPT FE Cleanup"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add layer-3-tracks/chemical
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Resolve Chemical source-boundary labels"
+          git push origin HEAD:figure-cleanup-strict
