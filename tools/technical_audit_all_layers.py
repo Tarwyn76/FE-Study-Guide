@@ -659,7 +659,7 @@ def has_unit_token(text: str) -> bool:
         r"m²|m³|mm²|mm³|cm²|cm³|ft²|ft³|in²|in³|yd²|yd³|"
         r"m\^3/s|mm\^3/s|cm\^3/s|m³/s|mm³/s|cm³/s|"
         r"kip/ft|lb/ft|lbf/ft|lb/ft\^2|lb/ft²|lb/in\^2|lb/in²|acre|acres|"
-        r"L|mL|gal|ohm|Ω|F|H|S|C|ppm|ppb|"
+        r"L|mL|gal|ohm|Ω|kΩ|F|H|S|C|µC|uC|T|kVA|kVAR|VA|VAR|dB|ton|tons|ppm|ppb|"
         r"mg/L|g/L|kg/m\^3|kg/m³|Pa·s|cP|"
         r"W/m\^2|W/m²|W/m·K|W/m-K|"
         r"kPa/s|Pa/s|MPa/s|psi/s)"
@@ -667,6 +667,9 @@ def has_unit_token(text: str) -> bool:
     number = r"[-+]?\d+(?:\.\d+)?(?:[eE][-+]?\d+)?"
 
     if re.search(rf"{number}\s*{unit}(?![A-Za-z])", normalized):
+        return True
+
+    if re.search(rf"{number}\s+output units?\b", normalized, re.I):
         return True
 
     # Currency is a dimensional monetary quantity for this audit.
@@ -724,12 +727,13 @@ def result_is_dimensionless_or_count(text: str) -> bool:
     """Recognize prompts whose requested final result should not carry units."""
     s = strip_markdown(text).lower()
     return bool(re.search(
-        r"\b(?:probability|fraction|percentage|percent|ratio|efficiency|"
-        r"conversion|yield|selectivity|moisture content|wet[- ]basis moisture|"
+        r"\b(?:probability|fraction|percentage|percent|ratio|efficiency|strain|quality|"
+        r"conversion|yield|selectivity|relative humidity|moisture content|wet[- ]basis moisture|"
         r"dry[- ]basis moisture|wet[- ]and[- ]dry[- ]basis moisture|"
-        r"coefficient|index|degrees? of freedom|sample size|number of|count|"
+        r"coefficient|index|degrees? of freedom|sample size|number of|count|slip|"
         r"z(?:[- ]?score)?|t statistic|chi[- ]?square|f statistic|"
-        r"reynolds number|nusselt number|sherwood number|biot number|fourier number|cop)\b",
+        r"reynolds(?: number)?|nusselt(?: number)?|sherwood(?: number)?|biot(?: number)?|"
+        r"fourier(?: number)?|cop(?:r|hp)?|ntu|effectiveness|dc gain|rectangular form|unit step)\b",
         s,
     ))
 
