@@ -72,7 +72,6 @@ For an overall boundary drawn around the entire recycle loop, the internal recyc
 
 <!-- VERIFY id="WE-03-02-001-R" expr="50/100" expected="0.50" units="dimensionless" atol="0.0005" rtol="1e-9" -->
 
-**Reasoning check.** Recycle, bypass, purge, and transient balances depend on drawing the correct system boundary and distinguishing internal recirculation from net external flow. The stated example conditions (### Worked Example 1 Problem. Fresh feed is 100 kmol/h and recycle is 50 kmol/h. Find recycle ratio R=recycle/fresh) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 2.2 Recycle Ratio and Single-Pass versus Overall Performance
 
 Recycle ratio may be defined as recycle flow divided by fresh feed or by another stated reference flow. Always use the problem's definition.
@@ -93,7 +92,6 @@ Single-pass conversion concerns material entering one reactor pass. Overall conv
 
 <!-- VERIFY id="WE-03-02-002-X" expr="100*(100-10)/100" expected="90" units="percent" atol="0.05" rtol="1e-9" -->
 
-**Reasoning check.** Recycle, bypass, purge, and transient balances depend on drawing the correct system boundary and distinguishing internal recirculation from net external flow. The stated example conditions (### Worked Example 2 Problem. Fresh A feed is 100 mol/h; 90 mol/h is consumed overall. Find overall conversion) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 2.3 Bypass Streams
 
 A bypass sends part of a feed around a unit and recombines it later. Bypass is often used to control final temperature, concentration, or humidity.
@@ -135,7 +133,6 @@ If the product contains negligible inert, the inert balance often determines the
 
 <!-- VERIFY id="WE-03-02-004-purge" expr="2/0.10" expected="20" units="kmol/h" atol="1e-9" rtol="1e-9" -->
 
-**Reasoning check.** Recycle, bypass, purge, and transient balances depend on drawing the correct system boundary and distinguishing internal recirculation from net external flow. The stated example conditions (### Worked Example 4 Problem. An inert enters at 2 kmol/h and leaves only in a purge stream that is 10 mol% inert. Find total purge flow) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 2.5 General Unsteady Material Balance
 
 For an unsteady control volume, accumulation is not zero. The governing accounting form is accumulation = input − output + generation − consumption.
@@ -156,7 +153,6 @@ For a nonreacting species, generation and consumption terms vanish.
 
 <!-- VERIFY id="WE-03-02-005-accum" expr="5-3" expected="2" units="kg/min" atol="1e-9" rtol="1e-9" -->
 
-**Reasoning check.** Recycle, bypass, purge, and transient balances depend on drawing the correct system boundary and distinguishing internal recirculation from net external flow. The stated example conditions (### Worked Example 5 Problem. A tank has inlet 5 kg/min and outlet 3 kg/min with no reaction. Find accumulation rate) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 2.6 Well-Mixed Tank Transients
 
 For a perfectly mixed tank, the outlet composition equals the tank composition. If volume is constant, a species balance can often be written directly on concentration.
@@ -177,7 +173,6 @@ The resulting first-order differential equation has the same exponential structu
 
 <!-- VERIFY id="WE-03-02-006-tau" expr="100/10" expected="10" units="min" atol="1e-9" rtol="1e-9" -->
 
-**Reasoning check.** Recycle, bypass, purge, and transient balances depend on drawing the correct system boundary and distinguishing internal recirculation from net external flow. The stated example conditions (### Worked Example 6 Problem. A constant-volume mixed tank has Q=10 L/min, V=100 L, Cin steps from 0 to 1 mol/L. Find time constant) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 2.7 Cut-Set Strategy for Complex Recycle Networks
 
 Complex process networks are easier when solved from the outside inward. First draw an overall boundary; next choose a cut that crosses the fewest unknown internal streams; finally solve individual units.
@@ -196,7 +191,6 @@ A good cut-set exposes specifications such as separator recovery, reactor conver
 
 ---
 
-**Reasoning check.** Recycle, bypass, purge, and transient balances depend on drawing the correct system boundary and distinguishing internal recirculation from net external flow. The stated example conditions (### Worked Example 7 Problem. Why should an overall balance around a recycle loop be used first?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## Integrated Worked Examples
 
 ### Worked Example 8
@@ -205,7 +199,6 @@ A good cut-set exposes specifications such as separator recovery, reactor conver
 
 **Solution.** 20=18+2; balanced.
 
-**Reasoning check.** Recycle, bypass, purge, and transient balances depend on drawing the correct system boundary and distinguishing internal recirculation from net external flow. The stated example conditions (### Worked Example 8 Problem. A recycle process fresh feed is 20 kmol/h, product 18, purge 2. Verify steady total balance) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ### Worked Example 9
 
 **Problem.** A mixed tank with τ=5 min starts at C=0 and sees Cin=2 mol/L. Find C at t=5 min.
@@ -391,11 +384,11 @@ D) It is always directly tabulated in the Handbook
 
 14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
 
-15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations. The item statement identifies the case as: Why should a material balance normally be closed before a process energy balance?. Recycle, bypass, purge, and transient balances depend on drawing the correct system boundary and distinguishing internal recirculation from net external flow. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
 
-16. To verify that the unknowns are matched by independent equations/specifications before algebra begins. The item statement identifies the case as: What is the purpose of a degrees-of-freedom check?. Recycle, bypass, purge, and transient balances depend on drawing the correct system boundary and distinguishing internal recirculation from net external flow. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
 
-17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation. The item statement identifies the case as: When should a relation supplied by an FE problem override a remembered correlation?. Recycle, bypass, purge, and transient balances depend on drawing the correct system boundary and distinguishing internal recirculation from net external flow. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
 
 18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
 
@@ -419,6 +412,7 @@ D) It is always directly tabulated in the Handbook
 
 
 ---
+
 ## Practice Problems
 
 1. Fresh feed is 100 kmol/h and recycle is 50 kmol/h. Find recycle ratio R=recycle/fresh.
@@ -446,28 +440,29 @@ D) It is always directly tabulated in the Handbook
 
 ## Practice Problem Solutions
 
-1. R=0.50. The item statement identifies the case as: Fresh feed is 100 kmol/h and recycle is 50 kmol/h. Find recycle ratio R=recycle/fresh. Recycle, bypass, purge, and transient balances depend on drawing the correct system boundary and distinguishing internal recirculation from net external flow. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+1. R=0.50.
 
-2. 90%. The item statement identifies the case as: Fresh A feed is 100 mol/h; 90 mol/h is consumed overall. Find overall conversion. Recycle, bypass, purge, and transient balances depend on drawing the correct system boundary and distinguishing internal recirculation from net external flow. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+2. 90%.
 
-3. 30 and 70 kg/h. The item statement identifies the case as: A 100 kg/h feed is bypassed 30%. Find bypass and processed flows. Recycle, bypass, purge, and transient balances depend on drawing the correct system boundary and distinguishing internal recirculation from net external flow. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+3. 30 and 70 kg/h.
 
-4. 20 kmol/h. The item statement identifies the case as: An inert enters at 2 kmol/h and leaves only in a purge stream that is 10 mol% inert. Find total purge flow. Recycle, bypass, purge, and transient balances depend on drawing the correct system boundary and distinguishing internal recirculation from net external flow. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+4. 20 kmol/h.
 
-5. +2 kg/min. The item statement identifies the case as: A tank has inlet 5 kg/min and outlet 3 kg/min with no reaction. Find accumulation rate. Recycle, bypass, purge, and transient balances depend on drawing the correct system boundary and distinguishing internal recirculation from net external flow. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+5. +2 kg/min.
 
-6. τ=V/Q=10 min. The item statement identifies the case as: A constant-volume mixed tank has Q=10 L/min, V=100 L, Cin steps from 0 to 1 mol/L. Find time constant. Recycle, bypass, purge, and transient balances depend on drawing the correct system boundary and distinguishing internal recirculation from net external flow. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+6. τ=V/Q=10 min.
 
-7. It eliminates the internal recycle unknown. The item statement identifies the case as: Why should an overall balance around a recycle loop be used first?. Recycle, bypass, purge, and transient balances depend on drawing the correct system boundary and distinguishing internal recirculation from net external flow. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+7. It eliminates the internal recycle unknown.
 
-8. 20=18+2; balanced. The item statement identifies the case as: A recycle process fresh feed is 20 kmol/h, product 18, purge 2. Verify steady total balance. Recycle, bypass, purge, and transient balances depend on drawing the correct system boundary and distinguishing internal recirculation from net external flow. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+8. 20=18+2; balanced.
 
-9. C=2(1-e^-1)=1.264 mol/L. The item statement identifies the case as: A mixed tank with τ=5 min starts at C=0 and sees Cin=2 mol/L. Find C at t=5 min. Recycle, bypass, purge, and transient balances depend on drawing the correct system boundary and distinguishing internal recirculation from net external flow. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+9. C=2(1-e^-1)=1.264 mol/L.
 
-10. 20 kmol/h. The item statement identifies the case as: If an inert enters at 1 kmol/h and purge gas is 5 mol% inert with no inert in product, find purge flow. Recycle, bypass, purge, and transient balances depend on drawing the correct system boundary and distinguishing internal recirculation from net external flow. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+10. 20 kmol/h.
 
 
 ---
+
 ## Quick Reference
 
 **Source anchor:** FE Chemical specification, Area 8B and 8E. The Handbook does not tabulate recycle/purge or general unsteady chemical-process material-balance formulas..
