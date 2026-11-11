@@ -110,7 +110,6 @@ This case appears in evaporation through a stagnant gas film.
 
 ---
 
-**Reasoning check.** Mass-transfer results depend on the driving-force definition, transport area, diffusivity or mass-transfer coefficient, and the geometry or film model being used. The stated example conditions (### Worked Example 3 Problem. State why stagnant-B diffusion differs from equimolar counterdiffusion) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 5.4 Equimolar Counter-Diffusion
 
 When A and B diffuse in opposite directions with equal molar rates, total molar flux is zero and the expression simplifies.
@@ -169,7 +168,6 @@ The controlling resistance is the larger resistance after both are expressed on 
 
 ---
 
-**Reasoning check.** Mass-transfer results depend on the driving-force definition, transport area, diffusivity or mass-transfer coefficient, and the geometry or film model being used. The stated example conditions (### Worked Example 6 Problem. 1/kG=2 and H/kL=8 in common reciprocal units. What fraction of total resistance is liquid-side?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 5.7 Sherwood Correlations and Transport Analogies
 
 The Handbook defines Sherwood, Schmidt, Reynolds, Nusselt, Prandtl, and Stanton numbers and gives turbulent transport analogies.
@@ -198,7 +196,6 @@ Use the correlation only within its stated geometry and regime. Heat-transfer in
 
 **Solution.** Zero.
 
-**Reasoning check.** Mass-transfer results depend on the driving-force definition, transport area, diffusivity or mass-transfer coefficient, and the geometry or film model being used. The stated example conditions (### Worked Example 8 Problem. If concentration profile is flat, what is Fickian diffusive flux?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ### Worked Example 9
 
 **Problem.** If both individual phase resistances halve, what happens qualitatively to overall K?
@@ -207,7 +204,6 @@ Use the correlation only within its stated geometry and regime. Heat-transfer in
 
 ---
 
-**Reasoning check.** Mass-transfer results depend on the driving-force definition, transport area, diffusivity or mass-transfer coefficient, and the geometry or film model being used. The stated example conditions (### Worked Example 9 Problem. If both individual phase resistances halve, what happens qualitatively to overall K?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## As the Handbook States It
 
 Primary source basis: **Chemical Engineering, printed pp. 247–255; FE Chemical specification Area 10A–B**.
@@ -383,11 +379,11 @@ D) It is always directly tabulated in the Handbook
 
 14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
 
-15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations. The item statement identifies the case as: Why should a material balance normally be closed before a process energy balance?. Mass-transfer results depend on the driving-force definition, transport area, diffusivity or mass-transfer coefficient, and the geometry or film model being used. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
 
-16. To verify that the unknowns are matched by independent equations/specifications before algebra begins. The item statement identifies the case as: What is the purpose of a degrees-of-freedom check?. Mass-transfer results depend on the driving-force definition, transport area, diffusivity or mass-transfer coefficient, and the geometry or film model being used. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
 
-17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation. The item statement identifies the case as: When should a relation supplied by an FE problem override a remembered correlation?. Mass-transfer results depend on the driving-force definition, transport area, diffusivity or mass-transfer coefficient, and the geometry or film model being used. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
 
 18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
 
@@ -411,6 +407,7 @@ D) It is always directly tabulated in the Handbook
 
 
 ---
+
 ## Practice Problems
 
 1. D=1e-9 m²/s and dC/dx=-2e6 mol/m⁴. Find J.
@@ -438,28 +435,29 @@ D) It is always directly tabulated in the Handbook
 
 ## Practice Problem Solutions
 
-1. J=-D dC/dx=0.002 mol/(m²·s). The item statement identifies the case as: D=1e-9 m²/s and dC/dx=-2e6 mol/m⁴. Find J. Mass-transfer results depend on the driving-force definition, transport area, diffusivity or mass-transfer coefficient, and the geometry or film model being used. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+1. J=-D dC/dx=0.002 mol/(m²·s).
 
-2. sqrt(1e-6)=0.001 m=1 mm. The item statement identifies the case as: For diffusion length estimate sqrt(Dt), D=1e-10 m²/s and t=10,000 s. Find scale. Mass-transfer results depend on the driving-force definition, transport area, diffusivity or mass-transfer coefficient, and the geometry or film model being used. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+2. sqrt(1e-6)=0.001 m=1 mm.
 
-3. There is net molar bulk motion when B has zero molar flux. The item statement identifies the case as: State why stagnant-B diffusion differs from equimolar counterdiffusion. Mass-transfer results depend on the driving-force definition, transport area, diffusivity or mass-transfer coefficient, and the geometry or film model being used. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+3. There is net molar bulk motion when B has zero molar flux.
 
-4. NA=DΔp/(RTL)=2e-5×10000/(8.314×300×0.01)=0.00802 mol/(m²·s). The item statement identifies the case as: For equimolar diffusion, D=2e-5, Δp=10 kPa, T=300 K, L=0.01 m. Estimate NA. Mass-transfer results depend on the driving-force definition, transport area, diffusivity or mass-transfer coefficient, and the geometry or film model being used. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+4. NA=DΔp/(RTL)=2e-5×10000/(8.314×300×0.01)=0.00802 mol/(m²·s).
 
-5. NA=0.20 mol/(m²·s). The item statement identifies the case as: kg'=0.10 mol/(m²·s·kPa), bulk-interface Δp=2 kPa. Find flux. Mass-transfer results depend on the driving-force definition, transport area, diffusivity or mass-transfer coefficient, and the geometry or film model being used. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+5. NA=0.20 mol/(m²·s).
 
-6. 8/(2+8)=80%. The item statement identifies the case as: 1/kG=2 and H/kL=8 in common reciprocal units. What fraction of total resistance is liquid-side?. Mass-transfer results depend on the driving-force definition, transport area, diffusivity or mass-transfer coefficient, and the geometry or film model being used. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+6. 8/(2+8)=80%.
 
-7. Sh=kmD/DAB=100. The item statement identifies the case as: D=0.05 m, km=0.02 m/s, DAB=1e-5 m²/s. Find Sherwood number. Mass-transfer results depend on the driving-force definition, transport area, diffusivity or mass-transfer coefficient, and the geometry or film model being used. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+7. Sh=kmD/DAB=100.
 
-8. Zero. The item statement identifies the case as: If concentration profile is flat, what is Fickian diffusive flux?. Mass-transfer results depend on the driving-force definition, transport area, diffusivity or mass-transfer coefficient, and the geometry or film model being used. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+8. Zero.
 
-9. Overall resistance halves, so K approximately doubles. The item statement identifies the case as: If both individual phase resistances halve, what happens qualitatively to overall K?. Mass-transfer results depend on the driving-force definition, transport area, diffusivity or mass-transfer coefficient, and the geometry or film model being used. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+9. Overall resistance halves, so K approximately doubles.
 
-10. Schmidt number. The item statement identifies the case as: Which dimensionless group compares momentum to mass diffusivity?. Mass-transfer results depend on the driving-force definition, transport area, diffusivity or mass-transfer coefficient, and the geometry or film model being used. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+10. Schmidt number.
 
 
 ---
+
 ## Quick Reference
 
 **Source anchor:** Chemical Engineering, printed pp. 247–255; FE Chemical specification Area 10A–B.
