@@ -132,7 +132,6 @@ For positive-order kinetics, a CSTR generally needs more volume than a PFR for t
 
 <!-- VERIFY id="WE-03-11-004-V" expr="10*0.6/2" expected="3" units="m3" atol="1e-9" rtol="1e-9" -->
 
-**Reasoning check.** Reactor design follows from the appropriate mole balance together with the kinetic model, residence-time definition, conversion target, and reactor-specific mixing assumptions. The stated example conditions (### Worked Example 4 Problem. CSTR same data as Problem 3 with exit rate 2. Find V) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 11.5 CSTRs in Series
 
 Multiple equal CSTRs in series approach PFR behavior as the number of tanks increases. The Handbook provides a closed form for a first-order reaction.
@@ -171,7 +170,6 @@ When desired and undesired pathways have different orders, reactor selection can
 
 ---
 
-**Reasoning check.** Reactor design follows from the appropriate mole balance together with the kinetic model, residence-time definition, conversion target, and reactor-specific mixing assumptions. The stated example conditions (### Worked Example 6 Problem. If desired reaction is higher order in A than undesired reaction, which reactor often favors desired path at high A?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 11.7 Catalysis and Biocatalysis in Reactor Design
 
 Catalysts change reaction rates without changing the equilibrium condition itself. The FE specification includes homogeneous, heterogeneous, and biological reactions and catalysis.
@@ -190,7 +188,6 @@ The Handbook gives Michaelis–Menten behavior as one saturating catalytic examp
 
 ---
 
-**Reasoning check.** Reactor design follows from the appropriate mole balance together with the kinetic model, residence-time definition, conversion target, and reactor-specific mixing assumptions. The stated example conditions (### Worked Example 7 Problem. Does a catalyst change equilibrium constant at fixed temperature?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## Integrated Worked Examples
 
 ### Worked Example 8
@@ -212,7 +209,6 @@ The Handbook gives Michaelis–Menten behavior as one saturating catalytic examp
 
 <!-- VERIFY id="WE-03-11-009-X" expr="1-exp(-1)" expected="0.632" units="dimensionless" atol="0.0002" rtol="1e-9" -->
 
-**Reasoning check.** Reactor design follows from the appropriate mole balance together with the kinetic model, residence-time definition, conversion target, and reactor-specific mixing assumptions. The stated example conditions (### Worked Example 9 Problem. First-order PFR kτ=1. Find conversion) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## As the Handbook States It
 
 Primary source basis: **Chemical Engineering, printed pp. 243–247; FE Chemical specification Area 12C–F**.
@@ -388,11 +384,11 @@ D) It is always directly tabulated in the Handbook
 
 14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
 
-15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations. The item statement identifies the case as: Why should a material balance normally be closed before a process energy balance?. Reactor design follows from the appropriate mole balance together with the kinetic model, residence-time definition, conversion target, and reactor-specific mixing assumptions. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
 
-16. To verify that the unknowns are matched by independent equations/specifications before algebra begins. The item statement identifies the case as: What is the purpose of a degrees-of-freedom check?. Reactor design follows from the appropriate mole balance together with the kinetic model, residence-time definition, conversion target, and reactor-specific mixing assumptions. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
 
-17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation. The item statement identifies the case as: When should a relation supplied by an FE problem override a remembered correlation?. Reactor design follows from the appropriate mole balance together with the kinetic model, residence-time definition, conversion target, and reactor-specific mixing assumptions. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
 
 18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
 
@@ -416,6 +412,7 @@ D) It is always directly tabulated in the Handbook
 
 
 ---
+
 ## Practice Problems
 
 1. First-order batch k=0.1 min^-1. Time for 90% conversion?
@@ -443,28 +440,29 @@ D) It is always directly tabulated in the Handbook
 
 ## Practice Problem Solutions
 
-1. t=-ln(0.1)/0.1=23.03 min. The item statement identifies the case as: First-order batch k=0.1 min^-1. Time for 90% conversion?. Reactor design follows from the appropriate mole balance together with the kinetic model, residence-time definition, conversion target, and reactor-specific mixing assumptions. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+1. t=-ln(0.1)/0.1=23.03 min.
 
-2. 1+0.5×0.8=1.4. The item statement identifies the case as: If ε=0.5 and X=0.8, find V/V0. Reactor design follows from the appropriate mole balance together with the kinetic model, residence-time definition, conversion target, and reactor-specific mixing assumptions. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+2. 1+0.5×0.8=1.4.
 
-3. V=FA0 X/r=3 m³. The item statement identifies the case as: PFR with FA0=10 mol/s and constant -rA=2 mol/(m³·s), target X=0.6. Find V. Reactor design follows from the appropriate mole balance together with the kinetic model, residence-time definition, conversion target, and reactor-specific mixing assumptions. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+3. V=FA0 X/r=3 m³.
 
-4. 3 m³. The item statement identifies the case as: CSTR same data as Problem 3 with exit rate 2. Find V. Reactor design follows from the appropriate mole balance together with the kinetic model, residence-time definition, conversion target, and reactor-specific mixing assumptions. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+4. 3 m³.
 
-5. (1/2)^2=0.25. The item statement identifies the case as: First-order CSTRs in series kτ=1, N=2. Find CA2/CA0. Reactor design follows from the appropriate mole balance together with the kinetic model, residence-time definition, conversion target, and reactor-specific mixing assumptions. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+5. (1/2)^2=0.25.
 
 6. A PFR can favor it by exposing feed to high A near inlet; exact result depends on rates.
 
-7. No; it changes rates of approach to equilibrium. The item statement identifies the case as: Does a catalyst change equilibrium constant at fixed temperature?. Reactor design follows from the appropriate mole balance together with the kinetic model, residence-time definition, conversion target, and reactor-specific mixing assumptions. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+7. No; it changes rates of approach to equilibrium.
 
-8. CA/CA0=1/(1+kτ)=0.5, so X=0.5. The item statement identifies the case as: First-order CSTR single tank kτ=1. Find conversion. Reactor design follows from the appropriate mole balance together with the kinetic model, residence-time definition, conversion target, and reactor-specific mixing assumptions. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+8. CA/CA0=1/(1+kτ)=0.5, so X=0.5.
 
-9. X=1-e^-1=0.632. The item statement identifies the case as: First-order PFR kτ=1. Find conversion. Reactor design follows from the appropriate mole balance together with the kinetic model, residence-time definition, conversion target, and reactor-specific mixing assumptions. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+9. X=1-e^-1=0.632.
 
-10. Concentration varies stepwise instead of remaining at one low exit concentration throughout. The item statement identifies the case as: Why do multiple CSTRs in series approach PFR performance?. Reactor design follows from the appropriate mole balance together with the kinetic model, residence-time definition, conversion target, and reactor-specific mixing assumptions. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+10. Concentration varies stepwise instead of remaining at one low exit concentration throughout.
 
 
 ---
+
 ## Quick Reference
 
 **Source anchor:** Chemical Engineering, printed pp. 243–247; FE Chemical specification Area 12C–F.
