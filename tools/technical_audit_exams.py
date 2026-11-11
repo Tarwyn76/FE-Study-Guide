@@ -47,7 +47,21 @@ TRACK_ALIASES = {
 SEVERITY_ORDER={"CRITICAL":0,"ERROR":1,"WARNING":2,"REVIEW":3,"INFO":4}
 PLACEHOLDER_RE=re.compile(r"\b(?:TODO|TBD|FIXME|PLACEHOLDER|INSERT HERE|VERIFY ME)\b",re.I)
 NUM_RE=re.compile(r"(?<![A-Za-z])[-+]?\d+(?:\.\d+)?(?:[eE][-+]?\d+)?")
-UNIT_RE=re.compile(r"\b(?:m|mm|cm|km|ft|in|s|min|hr|kg|g|lbm|slug|N|lbf|Pa|kPa|MPa|psi|J|kJ|W|kW|MW|A|V|ohm|Ω|F|H|Hz|rad|mol|kmol|K|degC|degF|°C|°F|C|L|mL|m\^2|m\^3|ft\^2|ft\^3)\b")
+UNIT_TOKEN = (
+    r"(?:mm|cm|km|m|ft|in|yd|mi|s|min|h|hr|day|days|yr|yrs|year|years|"
+    r"kg|g|mg|lbm|slug|N|kN|lbf|Pa|kPa|MPa|GPa|psi|ksi|"
+    r"J|kJ|MJ|W|kW|MW|Wh|kWh|A|mA|V|mV|kV|ohm|Ω|kΩ|F|H|Hz|kHz|MHz|"
+    r"rad|deg|°|mol|kmol|K|degC|degF|°C|°F|C|µC|uC|L|mL|"
+    r"m/s|m/s\^2|ft/s|ft/s\^2|m³/s|m\^3/s|L/s|gpm|cfm|"
+    r"m²|m³|m\^2|m\^3|ft²|ft³|ft\^2|ft\^3|"
+    r"kg/s|kg/h|kg/day|mg/L|mol/L|Pa·s|kJ/\(kg·K\)|"
+    r"units/h|unit/h|units/min|unit/min|metric tons/day|tons/day)"
+)
+NUMBER_UNIT_RE = re.compile(
+    rf"(?<![A-Za-z])[-+]?\d+(?:\.\d+)?(?:[eE][-+]?\d+)?\s*{UNIT_TOKEN}(?![A-Za-z])",
+    re.I,
+)
+CURRENCY_RE = re.compile(r"[$€£]\s*[-+]?\d")
 
 @dataclass
 class Issue:
@@ -123,7 +137,27 @@ def expects_numeric(prompt:str)->bool:
     return bool(re.search(r"\b(?:calculate|compute|determine|find|evaluate|how many|how much|value|magnitude|rate|percent|percentage|probability|distance|time|force|stress|pressure|temperature|power|energy|current|voltage|resistance|flow|velocity|acceleration)\b",prompt,re.I)) and bool(NUM_RE.search(prompt))
 
 def is_dimensionless_prompt(prompt:str)->bool:
-    return bool(re.search(r"\b(?:ratio|coefficient|factor|probability|fraction|percent|percentage|efficiency|power factor|reynolds|mach|dimensionless|index)\b",prompt,re.I))
+    """Return True when the requested result is inherently dimensionless."""
+    return bool(re.search(
+        r"\b(?:ratio|selectivity|strain|coefficient|factor|probability|fraction|percent|percentage|"
+        r"efficiency|power factor|reynolds(?: number)?|mach(?: number)?|dimensionless|index|"
+        r"pH|pOH|z(?:[- ]?score)?|slope|determinant|correlation|coefficient of variation)\b",
+        prompt,
+        re.I,
+    )) or bool(re.search(
+        r"\b(?:evaluate|differentiate|derivative|integral|exact values?|confidence interval|"
+        r"zone boundaries?)\b",
+        prompt,
+        re.I,
+    ))
+
+def prompt_has_dimensional_quantity(prompt:str)->bool:
+    """Require a numeric quantity tied to a unit; bare words such as 'in' or 'A' are not units."""
+    return bool(NUMBER_UNIT_RE.search(prompt) or CURRENCY_RE.search(prompt))
+
+def solution_has_recognized_unit(solution:str)->bool:
+    """Recognize a unit only when it is attached to a numeric result."""
+    return bool(NUMBER_UNIT_RE.search(solution))
 
 def audit_blueprints(root:Path,issues:list[Issue]):
     pb=root/'meta'/'exam-blueprints.yaml'; tb=root/'meta'/'tier-review-blueprints.yaml'
@@ -241,7 +275,13 @@ def audit_exam_file(path:Path,d:dict,by_id:dict,pos:dict,practice_bp:dict,tier_b
             if not ans: add(issues,"WARNING","mc_key_missing",str(path),exam=label,item=iid,message="Multiple-choice item has no machine-readable/parseable keyed answer.")
             elif ans.upper() in ('A','B','C','D') and len(choices) < ord(ans.upper())-64: add(issues,"ERROR","mc_key_out_of_range",str(path),exam=label,item=iid,message=f"Key {ans} exceeds available choices.")
         if expects_numeric(prompt) and solution and not NUM_RE.search(solution): add(issues,"WARNING","numeric_solution_no_number",str(path),exam=label,item=iid,message="Prompt appears to request a numeric result but solution contains no numeric token.")
-        if expects_numeric(prompt) and UNIT_RE.search(prompt) and solution and not is_dimensionless_prompt(prompt) and not UNIT_RE.search(solution): add(issues,"REVIEW","numeric_solution_units",str(path),exam=label,item=iid,message="Dimensional numeric prompt has no recognized unit in solution.")
+        if (expects_numeric(prompt) and prompt_has_dimensional_quantity(prompt) and solution
+                and not is_dimensionless_prompt(prompt) and not solution_has_recognized_unit(solution)):
+            add(
+                issues,"REVIEW","numeric_solution_units",str(path),exam=label,item=iid,
+                message="Dimensional numeric prompt has no recognized unit in solution.",
+                excerpt=f"Prompt: {prompt[:120]} | Solution: {solution[:120]}",
+            )
         # lightweight delimiter checks
         if prompt.count('$$')%2 or solution.count('$$')%2: add(issues,"ERROR","math_delimiter_unbalanced",str(path),exam=label,item=iid,message="Unbalanced $$ math delimiter.")
     return {"path":path,"data":d,"label":label,"type":et,"items":items}
@@ -264,7 +304,12 @@ def duplicate_audit(exams:list[dict],issues:list[Issue]):
             add(issues,"WARNING","duplicate_prompt_exact",exam='; '.join(x[0] for x in locs),item='; '.join(x[1] for x in locs),message=f"Exact normalized prompt occurs {len(locs)} times.",excerpt=p[:240])
     for s,locs in solution_index.items():
         if len(locs)>1:
-            add(issues,"REVIEW","duplicate_solution_exact",exam='; '.join(x[0] for x in locs),item='; '.join(x[1] for x in locs),message=f"Exact normalized solution occurs {len(locs)} times.",excerpt=s[:240])
+            # Equivalent A/B items can legitimately share a concise derivation.
+            # Flag only same-exam reuse or broader repetition across >=3 items.
+            labels=[x[0] for x in locs]
+            same_exam=len(set(labels)) < len(labels)
+            if same_exam or len(locs)>=3:
+                add(issues,"REVIEW","duplicate_solution_exact",exam='; '.join(labels),item='; '.join(x[1] for x in locs),message=f"Exact normalized solution occurs {len(locs)} times.",excerpt=s[:240])
     # Practice A/B near-duplicate gate.
     for disc,forms in practice_by_disc.items():
         A=forms.get('A',[]); B=forms.get('B',[])
