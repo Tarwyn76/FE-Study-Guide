@@ -225,6 +225,14 @@ Where the FE specification requires a topic that is not directly developed in th
 
 ---
 
+
+
+### Source Boundary
+
+- **FE-Handbook-supported** — Equations, definitions, tables, and relations explicitly identified in this Handbook section are supported by the cited FE Reference Handbook location recorded for the chapter/concept.
+- **Externally supported** — Material extending beyond the Handbook is supported by the external-source provenance recorded in the concept ledger and the Chemical Track References and Sources register.
+- **Guide synthesis** — Explanatory sequencing, worked-example framing, exam-navigation advice, and connections among separately sourced concepts are guide-developed synthesis unless separately attributed.
+
 ## Where This Goes Wrong
 
 **Using humid-air process variable without a defined basis.** Confirm stream basis, phase, steady/unsteady condition, reaction/equilibrium model, and units before calculation.
