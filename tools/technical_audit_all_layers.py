@@ -733,7 +733,7 @@ def result_is_dimensionless_or_count(text: str) -> bool:
         r"coefficient|index|degrees? of freedom|sample size|number of|count|slip|"
         r"z(?:[- ]?score)?|t statistic|chi[- ]?square|f statistic|"
         r"reynolds(?: number)?|nusselt(?: number)?|sherwood(?: number)?|biot(?: number)?|"
-        r"fourier(?: number)?|cop(?:r|hp)?|ntu|effectiveness|dc gain|rectangular form|unit step|re|rh|bi|fo|nu)\\b",
+        r"fourier(?: number)?|cop(?:r|hp)?|ntu|effectiveness|dc gain|rectangular form|unit step|re|rh|bi|fo|nu)\b",
         s,
     ))
 
