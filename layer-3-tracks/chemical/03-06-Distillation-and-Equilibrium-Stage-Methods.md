@@ -147,7 +147,7 @@ The q-line slope is \(q/(q-1)\).
 
 **Problem.** What is q-line slope for q=1?
 
-**Solution.** Infinite/vertical.
+**Solution.** The q-line slope is \(m=q/(q-1)=1/(1-1)=1/0\), so no finite slope exists. The q-line is vertical (infinite slope magnitude).
 
 ---
 
@@ -456,7 +456,7 @@ D) It is always directly tabulated in the Handbook
 
 4. y=3/4 x + 0.9/4 =0.75x+0.225.
 
-5. Infinite/vertical.
+5. \(m=q/(q-1)=1/(1-1)=1/0\); the finite slope is undefined, so the q-line is vertical (infinite slope magnitude).
 
    **Explanation.** Combine total and component balances with the equilibrium-stage relation and the specified reflux, recovery, or stage-efficiency condition. The question is framed around “What is q-line slope for q=1?.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
