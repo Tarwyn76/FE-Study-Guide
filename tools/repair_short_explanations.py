@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Short-explanation repair workflow entry point.
 from pathlib import Path
 import re
 
