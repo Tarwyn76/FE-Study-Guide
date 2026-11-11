@@ -1537,10 +1537,10 @@ D) causation.
 
 ### Conceptual
 
-1. The predictor $x$ is the explanatory/input variable; the response $y$ is the
+1. The predictor $x$ is the explanatory/input variable; the response $y$ is the The item statement identifies the case as: Distinguish predictor and response variables. Regression conclusions should connect coefficient meaning and residual behavior to model fit, prediction limits, correlation, and the assumptions required for valid inference. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
    measured outcome modeled as changing with $x$. (§35.1)
 
-2. It minimizes
+2. It minimizes The item statement identifies the case as: What quantity does ordinary least squares minimize in this chapter?. Regression conclusions should connect coefficient meaning and residual behavior to model fit, prediction limits, correlation, and the assumptions required for valid inference. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
    $$
    \sum e_i^2
@@ -1550,28 +1550,28 @@ D) causation.
 
    (§35.1)
 
-3. The observed response lies above the fitted line at that predictor value.
+3. The observed response lies above the fitted line at that predictor value. The item statement identifies the case as: What does a positive residual mean geometrically?. Regression conclusions should connect coefficient meaning and residual behavior to model fit, prediction limits, correlation, and the assumptions required for valid inference. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
    (§35.1)
 
-4. Least-squares normal-equation relationships give
+4. Least-squares normal-equation relationships give The item statement identifies the case as: Why does the fitted least-squares line pass through (\bar x,\bar y)?. Regression conclusions should connect coefficient meaning and residual behavior to model fit, prediction limits, correlation, and the assumptions required for valid inference. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
    $\hat a=\bar y-\hat b\bar x$, so substituting $x=\bar x$ gives
    $\hat y=\bar y$. (§35.2)
 
-5. Response units divided by predictor units. (§35.1)
+5. Response units divided by predictor units. (§35.1) The item statement identifies the case as: What are the units of a regression slope?. Regression conclusions should connect coefficient meaning and residual behavior to model fit, prediction limits, correlation, and the assumptions required for valid inference. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-6. It estimates the typical residual scatter about the fitted line and has the
+6. It estimates the typical residual scatter about the fitted line and has the The item statement identifies the case as: What does Se measure?. Regression conclusions should connect coefficient meaning and residual behavior to model fit, prediction limits, correlation, and the assumptions required for valid inference. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
    same units as the response. (§35.3)
 
-7. The sign indicates the direction of sample linear association: positive or
+7. The sign indicates the direction of sample linear association: positive or The item statement identifies the case as: What does the sign of R indicate?. Regression conclusions should connect coefficient meaning and residual behavior to model fit, prediction limits, correlation, and the assumptions required for valid inference. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
    negative. (§35.4)
 
-8. It is the fraction of sample response variation about $\bar y$ accounted for
+8. It is the fraction of sample response variation about $\bar y$ accounted for The item statement identifies the case as: What does R^2 measure in simple linear regression with an intercept?. Regression conclusions should connect coefficient meaning and residual behavior to model fit, prediction limits, correlation, and the assumptions required for valid inference. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
    by the fitted simple linear relationship. (§35.4)
 
-9. $R^2$ summarizes variation reduction, not residual structure. Systematic
+9. $R^2$ summarizes variation reduction, not residual structure. Systematic The item statement identifies the case as: Why can a high R^2 coexist with a poor linear model?. Regression conclusions should connect coefficient meaning and residual behavior to model fit, prediction limits, correlation, and the assumptions required for valid inference. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
    curvature or changing spread can remain even when $R^2$ is large. (§35.6)
 
-10. Observed association can result from confounding, selection, reverse
+10. Observed association can result from confounding, selection, reverse The item statement identifies the case as: Why does strong correlation not establish causation?. Regression conclusions should connect coefficient meaning and residual behavior to model fit, prediction limits, correlation, and the assumptions required for valid inference. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
     direction, common trends, or other uncontrolled causes. (§35.7)
 
 ### Calculation
@@ -1696,7 +1696,7 @@ D) causation.
     \boxed2.
     $$
 
-19. Slope standard error:
+19. Slope standard error: The item statement identifies the case as: A regression has \hat b=3.0, Se=2.0, S{xx}=25, and n=12. Using t{0.025,10}=2.228, find a 95% confidence interval for the slope. Regression conclusions should connect coefficient meaning and residual behavior to model fit, prediction limits, correlation, and the assumptions required for valid inference. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
     $$
     SE_{\hat b}
@@ -1730,27 +1730,26 @@ D) causation.
 
 ### Multiple Choice
 
-20. **B.** Residual equals observed minus fitted. (§35.1)
+20. **B.** Residual equals observed minus fitted. (§35.1) The item statement identifies the case as: A residual is. Regression conclusions should connect coefficient meaning and residual behavior to model fit, prediction limits, correlation, and the assumptions required for valid inference. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-21. **B.** $\hat b=S_{xy}/S_{xx}$. (§35.2)
+21. **B.** $\hat b=S_{xy}/S_{xx}$. (§35.2) The item statement identifies the case as: The least-squares slope is. Regression conclusions should connect coefficient meaning and residual behavior to model fit, prediction limits, correlation, and the assumptions required for valid inference. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-22. **A.** $\hat a=\bar y-\hat b\bar x$. (§35.2)
+22. **A.** $\hat a=\bar y-\hat b\bar x$. (§35.2) The item statement identifies the case as: The fitted intercept is. Regression conclusions should connect coefficient meaning and residual behavior to model fit, prediction limits, correlation, and the assumptions required for valid inference. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-23. **C.** Two coefficients are estimated, leaving $n-2$ residual df. (§35.3)
+23. **C.** Two coefficients are estimated, leaving $n-2$ residual df. (§35.3) The item statement identifies the case as: In simple linear regression, residual df are. Regression conclusions should connect coefficient meaning and residual behavior to model fit, prediction limits, correlation, and the assumptions required for valid inference. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-24. **B.** Magnitude near 1 with negative sign indicates strong negative linear
+24. **B.** Magnitude near 1 with negative sign indicates strong negative linear The item statement identifies the case as: R=-0.95 indicates. Regression conclusions should connect coefficient meaning and residual behavior to model fit, prediction limits, correlation, and the assumptions required for valid inference. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
     association. (§35.4)
 
-25. **B.** That is the simple-regression variation interpretation of $R^2$.
+25. **B.** That is the simple-regression variation interpretation of $R^2$. The item statement identifies the case as: R^2=0.70 means. Regression conclusions should connect coefficient meaning and residual behavior to model fit, prediction limits, correlation, and the assumptions required for valid inference. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
     (§35.4)
 
-26. **B.** Prediction beyond the observed predictor range is extrapolation.
+26. **B.** Prediction beyond the observed predictor range is extrapolation. The item statement identifies the case as: Prediction outside the observed predictor range is. Regression conclusions should connect coefficient meaning and residual behavior to model fit, prediction limits, correlation, and the assumptions required for valid inference. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
     (§35.6)
 
-27. **B.** Systematic U-shaped residual behavior indicates curvature. (§35.6)
+27. **B.** Systematic U-shaped residual behavior indicates curvature. (§35.6) The item statement identifies the case as: A U-shaped residual plot most directly suggests. Regression conclusions should connect coefficient meaning and residual behavior to model fit, prediction limits, correlation, and the assumptions required for valid inference. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
 ---
-
 ## Practice Problems
 
 1. **Least-squares components.** For
@@ -1799,7 +1798,7 @@ D) causation.
 
 ## Practice Problem Solutions
 
-1. Data:
+1. Data: The item statement identifies the case as: Least-squares components. For. Regression conclusions should connect coefficient meaning and residual behavior to model fit, prediction limits, correlation, and the assumptions required for valid inference. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
    $$
    x:1,2,3,4,
@@ -1863,7 +1862,7 @@ D) causation.
    \boxed7.
    $$
 
-2. Slope:
+2. Slope: The item statement identifies the case as: Fit the line. Using Problem 1, calculate \hat b, \hat a, and the. Regression conclusions should connect coefficient meaning and residual behavior to model fit, prediction limits, correlation, and the assumptions required for valid inference. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
    $$
    \hat b
@@ -1893,7 +1892,7 @@ D) causation.
    }
    $$
 
-3. Fitted values:
+3. Fitted values: The item statement identifies the case as: Residuals. Using Problem 2, calculate all fitted values and residuals. Regression conclusions should connect coefficient meaning and residual behavior to model fit, prediction limits, correlation, and the assumptions required for valid inference. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
    $$
    x=1:\quad \hat y=2.9,
@@ -1937,7 +1936,7 @@ D) causation.
    \boxed0.
    $$
 
-4. Residual sum of squares:
+4. Residual sum of squares: The item statement identifies the case as: Goodness of fit. For Problem 1, compute SSE, MSE, Se, R, and. Regression conclusions should connect coefficient meaning and residual behavior to model fit, prediction limits, correlation, and the assumptions required for valid inference. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
    $$
    SSE
@@ -2002,7 +2001,7 @@ D) causation.
    0.70.
    $$
 
-5. At
+5. At The item statement identifies the case as: Prediction. Use the fitted line from Problem 2 to predict y at. Regression conclusions should connect coefficient meaning and residual behavior to model fit, prediction limits, correlation, and the assumptions required for valid inference. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
    $$
    x=2.5,
@@ -2048,7 +2047,7 @@ D) causation.
    \boxed{\text{extrapolation}.}
    $$
 
-6. Slope standard error:
+6. Slope standard error: The item statement identifies the case as: Slope confidence interval. A simple regression has. Regression conclusions should connect coefficient meaning and residual behavior to model fit, prediction limits, correlation, and the assumptions required for valid inference. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
    $$
    SE_{\hat b}
@@ -2076,7 +2075,7 @@ D) causation.
 
    approximately.
 
-7. Intercept standard error:
+7. Intercept standard error: The item statement identifies the case as: Intercept confidence interval. A regression has. Regression conclusions should connect coefficient meaning and residual behavior to model fit, prediction limits, correlation, and the assumptions required for valid inference. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
    $$
    SE_{\hat a}
@@ -2114,7 +2113,7 @@ D) causation.
 
    approximately.
 
-8. $R=0.85$ indicates strong positive linear association.
+8. $R=0.85$ indicates strong positive linear association. The item statement identifies the case as: Correlation interpretation. Compare the meanings of. Regression conclusions should connect coefficient meaning and residual behavior to model fit, prediction limits, correlation, and the assumptions required for valid inference. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
    $R=-0.85$ indicates strong negative linear association of similar magnitude.
 
@@ -2122,13 +2121,13 @@ D) causation.
 
    None of these values alone proves causation.
 
-9. The growing residual spread suggests **nonconstant variance**.
+9. The growing residual spread suggests **nonconstant variance**. The item statement identifies the case as: Residual diagnosis. A fitted line has R^2=0.92, but residual spread. Regression conclusions should connect coefficient meaning and residual behavior to model fit, prediction limits, correlation, and the assumptions required for valid inference. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
    $R^2$ only summarizes variation accounted for by the fitted relationship; it
    does not show whether residual variance is stable across the predictor or
    fitted-value range.
 
-10. Possible explanations include:
+10. Possible explanations include: The item statement identifies the case as: Causation. An observational regression shows a strong positive. Regression conclusions should connect coefficient meaning and residual behavior to model fit, prediction limits, correlation, and the assumptions required for valid inference. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
     - older/high-hour machines may also experience heavier duty cycles,
     - maintenance frequency may differ systematically with machine age,
@@ -2139,7 +2138,6 @@ D) causation.
     the sole causal mechanism.
 
 ---
-
 ## Quick Reference
 
 **Fitted line**

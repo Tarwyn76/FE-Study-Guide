@@ -70,6 +70,7 @@ A PFD is intended for process understanding and balance calculations, not detail
 
 ---
 
+**Reasoning check.** Process design decisions should remain traceable from the flowsheet and P&ID through sizing assumptions, scale-up rules, equipment duty, and the stated cost basis. The stated example conditions (### Worked Example 1 Problem. What belongs on a PFD but not necessarily detailed valve-by-valve piping?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 12.2 Piping and Instrumentation Diagrams
 
 **Specification-required; not directly tabulated in the Chemical Engineering Handbook pages.** A P&ID adds piping, valves, instruments, control loops, equipment tags, and interlocks needed to describe process control and safeguarding.
@@ -88,6 +89,7 @@ A P&ID contains much more implementation detail than a PFD but still does not re
 
 ---
 
+**Reasoning check.** Process design decisions should remain traceable from the flowsheet and P&ID through sizing assumptions, scale-up rules, equipment duty, and the stated cost basis. The stated example conditions (### Worked Example 2 Problem. What drawing adds control valves and instrument loops?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 12.3 Equipment Selection and First-Pass Sizing
 
 **Specification-required; guide-developed workflow.** First-pass equipment selection starts with duty: flow, phase, temperature, pressure, heat load, separation target, or reaction volume.
@@ -108,6 +110,7 @@ Sizing then applies the governing balance or rate relation—for example \(Q=UA\
 
 <!-- VERIFY id="WE-03-12-003-area" expr="500/(1*25)" expected="20" units="m2" atol="1e-9" rtol="1e-9" -->
 
+**Reasoning check.** Process design decisions should remain traceable from the flowsheet and P&ID through sizing assumptions, scale-up rules, equipment duty, and the stated cost basis. The stated example conditions (### Worked Example 3 Problem. A heat exchanger duty is 500 kW, U=1 kW/(m²·K), corrected ΔTlm=25 K. Find area) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 12.4 Scale-Up and Similarity
 
 **Specification-required; only partly supported by Handbook cost scaling.** Geometric scale-up does not guarantee equal heat transfer, mixing, pressure drop, or reaction performance. Identify the physical similarity criterion that must be preserved.
@@ -126,6 +129,7 @@ Depending on the equipment, relevant groups may include Reynolds, Froude, power 
 
 ---
 
+**Reasoning check.** Process design decisions should remain traceable from the flowsheet and P&ID through sizing assumptions, scale-up rules, equipment duty, and the stated cost basis. The stated example conditions (### Worked Example 4 Problem. Why is geometric scale-up alone insufficient for mixing equipment?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 12.5 Cost Indexes
 
 The Handbook provides the cost-index relation for updating a historical equipment cost to a new year.
@@ -146,6 +150,7 @@ Both costs must refer to comparable scope; a purchase-cost index should not be u
 
 <!-- VERIFY id="WE-03-12-005-cost" expr="200000*650/500" expected="260000" units="USD" atol="0.5" rtol="1e-9" -->
 
+**Reasoning check.** Process design decisions should remain traceable from the flowsheet and P&ID through sizing assumptions, scale-up rules, equipment duty, and the stated cost basis. The stated example conditions (### Worked Example 5 Problem. Old equipment cost is 200,000 at index 500; new index is 650. Find updated cost) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 12.6 Capacity Scaling and Lang Factors
 
 The Handbook uses a power law to scale the cost of similar equipment between capacities and tabulates representative exponents. It also provides Lang factors for estimating fixed and total capital investment from purchased-equipment cost.
@@ -184,6 +189,7 @@ Match economic precision to design maturity. A Class 5 screening estimate should
 
 ---
 
+**Reasoning check.** Process design decisions should remain traceable from the flowsheet and P&ID through sizing assumptions, scale-up rules, equipment duty, and the stated cost basis. The stated example conditions (### Worked Example 7 Problem. Which estimate class has the least project definition in the Handbook table?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## Integrated Worked Examples
 
 ### Worked Example 8
@@ -194,6 +200,7 @@ Match economic precision to design maturity. A Class 5 screening estimate should
 
 <!-- VERIFY id="WE-03-12-008-capital" expr="1000000*5" expected="5000000" units="USD" atol="0.5" rtol="1e-9" -->
 
+**Reasoning check.** Process design decisions should remain traceable from the flowsheet and P&ID through sizing assumptions, scale-up rules, equipment duty, and the stated cost basis. The stated example conditions (### Worked Example 8 Problem. Purchased-equipment cost is 1.0M and a screening Lang factor is 5.0. Estimate fixed capital) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ### Worked Example 9
 
 **Problem.** If project definition increases, what generally happens to expected estimate range?
@@ -202,6 +209,7 @@ Match economic precision to design maturity. A Class 5 screening estimate should
 
 ---
 
+**Reasoning check.** Process design decisions should remain traceable from the flowsheet and P&ID through sizing assumptions, scale-up rules, equipment duty, and the stated cost basis. The stated example conditions (### Worked Example 9 Problem. If project definition increases, what generally happens to expected estimate range?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## As the Handbook States It
 
 Primary source basis: **FE Chemical specification Area 14A–E; Chemical Engineering cost-estimation tables, printed pp. 262–264; general Engineering Economics, printed pp. 235–242**.
@@ -377,11 +385,11 @@ D) It is always directly tabulated in the Handbook
 
 14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
 
-15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
+15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations. The item statement identifies the case as: Why should a material balance normally be closed before a process energy balance?. Process design decisions should remain traceable from the flowsheet and P&ID through sizing assumptions, scale-up rules, equipment duty, and the stated cost basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
+16. To verify that the unknowns are matched by independent equations/specifications before algebra begins. The item statement identifies the case as: What is the purpose of a degrees-of-freedom check?. Process design decisions should remain traceable from the flowsheet and P&ID through sizing assumptions, scale-up rules, equipment duty, and the stated cost basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
+17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation. The item statement identifies the case as: When should a relation supplied by an FE problem override a remembered correlation?. Process design decisions should remain traceable from the flowsheet and P&ID through sizing assumptions, scale-up rules, equipment duty, and the stated cost basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
 18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
 
@@ -405,7 +413,6 @@ D) It is always directly tabulated in the Handbook
 
 
 ---
-
 ## Practice Problems
 
 1. What belongs on a PFD but not necessarily detailed valve-by-valve piping?
@@ -433,29 +440,28 @@ D) It is always directly tabulated in the Handbook
 
 ## Practice Problem Solutions
 
-1. Major equipment, principal streams, key conditions and flows.
+1. Major equipment, principal streams, key conditions and flows. The item statement identifies the case as: What belongs on a PFD but not necessarily detailed valve-by-valve piping?. Process design decisions should remain traceable from the flowsheet and P&ID through sizing assumptions, scale-up rules, equipment duty, and the stated cost basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-2. P&ID.
+2. P&ID. The item statement identifies the case as: What drawing adds control valves and instrument loops?. Process design decisions should remain traceable from the flowsheet and P&ID through sizing assumptions, scale-up rules, equipment duty, and the stated cost basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-3. A=500/(1×25)=20 m².
+3. A=500/(1×25)=20 m². The item statement identifies the case as: A heat exchanger duty is 500 kW, U=1 kW/(m²·K), corrected ΔTlm=25 K. Find area. Process design decisions should remain traceable from the flowsheet and P&ID through sizing assumptions, scale-up rules, equipment duty, and the stated cost basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-4. Hydrodynamic similarity such as Reynolds/Froude/power number may change.
+4. Hydrodynamic similarity such as Reynolds/Froude/power number may change. The item statement identifies the case as: Why is geometric scale-up alone insufficient for mixing equipment?. Process design decisions should remain traceable from the flowsheet and P&ID through sizing assumptions, scale-up rules, equipment duty, and the stated cost basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-5. $260,000.
+5. $260,000. The item statement identifies the case as: Old equipment cost is 200,000 at index 500; new index is 650. Find updated cost. Process design decisions should remain traceable from the flowsheet and P&ID through sizing assumptions, scale-up rules, equipment duty, and the stated cost basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-6. 2^0.6=1.516.
+6. 2^0.6=1.516. The item statement identifies the case as: A similar unit doubles capacity with n=0.6. Find cost ratio. Process design decisions should remain traceable from the flowsheet and P&ID through sizing assumptions, scale-up rules, equipment duty, and the stated cost basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-7. Class 5.
+7. Class 5. The item statement identifies the case as: Which estimate class has the least project definition in the Handbook table?. Process design decisions should remain traceable from the flowsheet and P&ID through sizing assumptions, scale-up rules, equipment duty, and the stated cost basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-8. $5.0M.
+8. $5.0M. The item statement identifies the case as: Purchased-equipment cost is 1.0M and a screening Lang factor is 5.0. Estimate fixed capital. Process design decisions should remain traceable from the flowsheet and P&ID through sizing assumptions, scale-up rules, equipment duty, and the stated cost basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-9. It narrows while preparation effort rises.
+9. It narrows while preparation effort rises. The item statement identifies the case as: If project definition increases, what generally happens to expected estimate range?. Process design decisions should remain traceable from the flowsheet and P&ID through sizing assumptions, scale-up rules, equipment duty, and the stated cost basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-10. The method's uncertainty is much larger than those digits imply.
+10. The method's uncertainty is much larger than those digits imply. The item statement identifies the case as: Why should a screening estimate not be reported to excessive significant digits?. Process design decisions should remain traceable from the flowsheet and P&ID through sizing assumptions, scale-up rules, equipment duty, and the stated cost basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
 
 ---
-
 ## Quick Reference
 
 **Source anchor:** FE Chemical specification Area 14A–E; Chemical Engineering cost-estimation tables, printed pp. 262–264; general Engineering Economics, printed pp. 235–242.

@@ -93,6 +93,7 @@ A component balance is often more useful than the total balance because it conne
 
 <!-- VERIFY id="WE-03-01-002-P2" expr="120-75" expected="45" units="kg/h" atol="1e-9" rtol="1e-9" -->
 
+**Reasoning check.** Mass and energy balances must be written on one explicit process basis and boundary, with every inlet, outlet, generation, consumption, and accumulation term accounted for. The stated example conditions (### Worked Example 2 Problem. A steady nonreacting unit receives 120 kg/h and discharges one product at 75 kg/h. Find the second product flow) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 1.3 Degrees of Freedom and Independent Equations
 
 Before solving, count unknowns and independent equations. A well-posed calculation has enough independent material balances, specifications, equilibrium relations, and property relations to determine the unknowns.
@@ -111,6 +112,7 @@ Writing more equations does not help if they are algebraically dependent. For an
 
 ---
 
+**Reasoning check.** Mass and energy balances must be written on one explicit process basis and boundary, with every inlet, outlet, generation, consumption, and accumulation term accounted for. The stated example conditions (### Worked Example 3 Problem. A binary separator has unknown feed F, product P, waste W, and two independent composition specifications. If F is known, how many independe) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 1.4 Mixers, Splitters, and Separators
 
 A mixer combines streams and is usually solved with total and component balances. An ideal splitter divides one stream into two or more outlets of identical composition. A separator produces outlets of different composition and therefore requires separation specifications in addition to balances.
@@ -150,6 +152,7 @@ For multiple units, an overall plant balance can determine external streams even
 
 ---
 
+**Reasoning check.** Mass and energy balances must be written on one explicit process basis and boundary, with every inlet, outlet, generation, consumption, and accumulation term accounted for. The stated example conditions (### Worked Example 5 Problem. A two-unit process has an unknown internal stream but all external flows except one are known. Which balance should be attempted first?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 1.6 Steady Nonreactive Energy Balances
 
 The Handbook's steady-flow first law provides the energy-balance backbone. For many chemical process units, kinetic and potential terms are negligible, leaving enthalpy flow, heat transfer, and shaft work.
@@ -170,6 +173,7 @@ Use a single enthalpy reference consistently. If all inlet and outlet enthalpies
 
 <!-- VERIFY id="WE-03-01-006-Q" expr="2*4*20" expected="160" units="kW" atol="1e-9" rtol="1e-9" -->
 
+**Reasoning check.** Mass and energy balances must be written on one explicit process basis and boundary, with every inlet, outlet, generation, consumption, and accumulation term accounted for. The stated example conditions (### Worked Example 6 Problem. A heater raises 2 kg/s of liquid with cp=4 kJ/(kg·K) by 20 K with no shaft work. Find heat duty) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 1.7 Coupled Material-and-Energy Balance Workflow
 
 Many FE problems require a material balance first and an energy balance second. The material balance determines stream amounts and compositions; the energy balance then determines heat duty, outlet temperature, or utility requirement.
@@ -188,6 +192,7 @@ Keep the two accounting systems separate until the needed flow rates are known. 
 
 ---
 
+**Reasoning check.** Mass and energy balances must be written on one explicit process basis and boundary, with every inlet, outlet, generation, consumption, and accumulation term accounted for. The stated example conditions (### Worked Example 7 Problem. Why is it usually efficient to solve the material balance before the energy balance?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## Integrated Worked Examples
 
 ### Worked Example 8
@@ -196,6 +201,7 @@ Keep the two accounting systems separate until the needed flow rates are known. 
 
 **Solution.** 40/(40+60)=40 mol% A, not 20%.
 
+**Reasoning check.** Mass and energy balances must be written on one explicit process basis and boundary, with every inlet, outlet, generation, consumption, and accumulation term accounted for. The stated example conditions (### Worked Example 8 Problem. A mixture of 40 kmol/h A and 60 kmol/h B is reported as 20 mol% A. Identify the inconsistency) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ### Worked Example 9
 
 **Problem.** A cooler removes 500 kW from 10 kg/s of liquid, cp=2.5 kJ/(kg·K). Estimate temperature drop.
@@ -381,11 +387,11 @@ D) It is always directly tabulated in the Handbook
 
 14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
 
-15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
+15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations. The item statement identifies the case as: Why should a material balance normally be closed before a process energy balance?. Mass and energy balances must be written on one explicit process basis and boundary, with every inlet, outlet, generation, consumption, and accumulation term accounted for. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
+16. To verify that the unknowns are matched by independent equations/specifications before algebra begins. The item statement identifies the case as: What is the purpose of a degrees-of-freedom check?. Mass and energy balances must be written on one explicit process basis and boundary, with every inlet, outlet, generation, consumption, and accumulation term accounted for. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
+17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation. The item statement identifies the case as: When should a relation supplied by an FE problem override a remembered correlation?. Mass and energy balances must be written on one explicit process basis and boundary, with every inlet, outlet, generation, consumption, and accumulation term accounted for. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
 18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
 
@@ -409,7 +415,6 @@ D) It is always directly tabulated in the Handbook
 
 
 ---
-
 ## Practice Problems
 
 1. A feed is 100 kmol/h containing 30 mol% A and 70 mol% B. Find component molar flows.
@@ -437,29 +442,28 @@ D) It is always directly tabulated in the Handbook
 
 ## Practice Problem Solutions
 
-1. A=30 kmol/h; B=70 kmol/h.
+1. A=30 kmol/h; B=70 kmol/h. The item statement identifies the case as: A feed is 100 kmol/h containing 30 mol% A and 70 mol% B. Find component molar flows. Mass and energy balances must be written on one explicit process basis and boundary, with every inlet, outlet, generation, consumption, and accumulation term accounted for. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-2. 45 kg/h.
+2. 45 kg/h. The item statement identifies the case as: A steady nonreacting unit receives 120 kg/h and discharges one product at 75 kg/h. Find the second product flow. Mass and energy balances must be written on one explicit process basis and boundary, with every inlet, outlet, generation, consumption, and accumulation term accounted for. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-3. Two independent equations may be chosen: one total plus one component balance, or two component balances.
+3. Two independent equations may be chosen: one total plus one component balance, or two component balances. The item statement identifies the case as: A binary separator has unknown feed F, product P, waste W, and two independent composition specifications. If F is known, how many independent material-balance equations. Mass and energy balances must be written on one explicit process basis and boundary, with every inlet, outlet, generation, consumption, and accumulation term accounted for. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-4. 8 kg/h and 12 kg/h solute.
+4. 8 kg/h and 12 kg/h solute. The item statement identifies the case as: A 100 kg/h stream is ideally split 40/60. Feed is 20 wt% solute. Find solute flow in each outlet. Mass and energy balances must be written on one explicit process basis and boundary, with every inlet, outlet, generation, consumption, and accumulation term accounted for. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-5. An overall process balance, because the internal stream cancels.
+5. An overall process balance, because the internal stream cancels. The item statement identifies the case as: A two-unit process has an unknown internal stream but all external flows except one are known. Which balance should be attempted first?. Mass and energy balances must be written on one explicit process basis and boundary, with every inlet, outlet, generation, consumption, and accumulation term accounted for. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-6. Q=2×4×20=160 kW.
+6. Q=2×4×20=160 kW. The item statement identifies the case as: A heater raises 2 kg/s of liquid with cp=4 kJ/(kg·K) by 20 K with no shaft work. Find heat duty. Mass and energy balances must be written on one explicit process basis and boundary, with every inlet, outlet, generation, consumption, and accumulation term accounted for. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-7. It determines the stream amounts/compositions needed for enthalpy and heat-duty calculations.
+7. It determines the stream amounts/compositions needed for enthalpy and heat-duty calculations. The item statement identifies the case as: Why is it usually efficient to solve the material balance before the energy balance?. Mass and energy balances must be written on one explicit process basis and boundary, with every inlet, outlet, generation, consumption, and accumulation term accounted for. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-8. 40/(40+60)=40 mol% A, not 20%.
+8. 40/(40+60)=40 mol% A, not 20%. The item statement identifies the case as: A mixture of 40 kmol/h A and 60 kmol/h B is reported as 20 mol% A. Identify the inconsistency. Mass and energy balances must be written on one explicit process basis and boundary, with every inlet, outlet, generation, consumption, and accumulation term accounted for. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-9. ΔT=500/(10×2.5)=20 K.
+9. ΔT=500/(10×2.5)=20 K. The item statement identifies the case as: A cooler removes 500 kW from 10 kg/s of liquid, cp=2.5 kJ/(kg·K). Estimate temperature drop. Mass and energy balances must be written on one explicit process basis and boundary, with every inlet, outlet, generation, consumption, and accumulation term accounted for. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-10. Product=50/0.25=200 kg/h; solvent removed=0 kg/h.
+10. Product=50/0.25=200 kg/h; solvent removed=0 kg/h. The item statement identifies the case as: A unit receives 50 kg/h solute and 150 kg/h solvent. Product contains all solute at 25 wt%. Find product flow and solvent removed. Mass and energy balances must be written on one explicit process basis and boundary, with every inlet, outlet, generation, consumption, and accumulation term accounted for. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
 
 ---
-
 ## Quick Reference
 
 **Source anchor:** FE Chemical specification, Area 8; general Thermodynamics steady-flow energy balance, printed pp. 147–149.

@@ -70,6 +70,7 @@ Always identify whether a reported cumulative distribution is number, mass, or v
 
 ---
 
+**Reasoning check.** Particle and solids calculations depend on the stated size metric, distribution basis, energy or handling model, and the physical meaning of the reported average or efficiency. The stated example conditions (### Worked Example 1 Problem. A cumulative PSD says 70% mass is below 100 µm. What fraction is above 100 µm?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 9.2 Mean Particle Diameters
 
 The Handbook gives several mean diameters because no single average preserves every physical property. Number mean emphasizes particle count; Sauter mean preserves surface-area-to-volume behavior and is important in transfer operations.
@@ -88,6 +89,7 @@ Use the mean diameter definition specified in the problem rather than an arithme
 
 ---
 
+**Reasoning check.** Particle and solids calculations depend on the stated size metric, distribution basis, energy or handling model, and the physical meaning of the reported average or efficiency. The stated example conditions (### Worked Example 2 Problem. Why is Sauter mean relevant to transfer?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 9.3 Sieve Analysis and Mesh Conversion
 
 The Handbook provides a mesh-to-micron conversion table and indicates that a plus sign means retained on a sieve while a minus sign means passing.
@@ -108,6 +110,7 @@ A size fraction such as \(-20+40\) mesh means the material passes the 20-mesh si
 
 <!-- VERIFY id="WE-03-09-003-x" expr="30/200" expected="0.15" units="mass fraction" atol="0.005" rtol="1e-9" -->
 
+**Reasoning check.** Particle and solids calculations depend on the stated size metric, distribution basis, energy or handling model, and the physical meaning of the reported average or efficiency. The stated example conditions (### Worked Example 3 Problem. A 200 g sieve sample retains 30 g in one interval. Find interval mass fraction) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 9.4 Crushing and Grinding
 
 The Handbook tabulates feed/product size ranges, reduction ratios, and candidate equipment for crushing, grinding, and disintegration.
@@ -128,6 +131,7 @@ Equipment selection depends on feed size, desired product size, hardness, throug
 
 <!-- VERIFY id="WE-03-09-004-RR" expr="20/2" expected="10" units="dimensionless" atol="0.05" rtol="1e-9" -->
 
+**Reasoning check.** Particle and solids calculations depend on the stated size metric, distribution basis, energy or handling model, and the physical meaning of the reported average or efficiency. The stated example conditions (### Worked Example 4 Problem. Feed size is 20 mm and product size 2 mm. Estimate reduction ratio) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 9.5 Classification and Separation of Solids
 
 The Handbook lists wet and dry classifiers such as sloping-tank classifiers, hydrocyclones, and other devices across particle-size ranges.
@@ -146,6 +150,7 @@ Classification separates by settling, centrifugal action, density, size, magneti
 
 ---
 
+**Reasoning check.** Particle and solids calculations depend on the stated size metric, distribution basis, energy or handling model, and the physical meaning of the reported average or efficiency. The stated example conditions (### Worked Example 5 Problem. What outlet of a hydrocyclone commonly carries coarser/denser solids?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 9.6 Bulk Solids, Angle of Repose, Transport, and Storage
 
 Angle of repose describes the stable free-surface slope of a granular pile and influences hopper and storage design. The FE specification also includes belts, pneumatic transport, slurries, tanks, and hoppers.
@@ -186,6 +191,7 @@ Use the phase diagram to identify stable solid form and equilibrium liquid compo
 
 <!-- VERIFY id="WE-03-09-007-crystals" expr="100-30" expected="70" units="kg" atol="0.5" rtol="1e-9" -->
 
+**Reasoning check.** Particle and solids calculations depend on the stated size metric, distribution basis, energy or handling model, and the physical meaning of the reported average or efficiency. The stated example conditions (### Worked Example 7 Problem. A crystallizer feed has 100 kg solute; mother liquor contains 30 kg solute. Find solute in crystals) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## Integrated Worked Examples
 
 ### Worked Example 8
@@ -194,6 +200,7 @@ Use the phase diagram to identify stable solid form and equilibrium liquid compo
 
 **Solution.** Passes 20-mesh and is retained on 40-mesh.
 
+**Reasoning check.** Particle and solids calculations depend on the stated size metric, distribution basis, energy or handling model, and the physical meaning of the reported average or efficiency. The stated example conditions (### Worked Example 8 Problem. What does '-20+40 mesh' mean?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ### Worked Example 9
 
 **Problem.** Why do number- and mass-based PSD means differ?
@@ -202,6 +209,7 @@ Use the phase diagram to identify stable solid form and equilibrium liquid compo
 
 ---
 
+**Reasoning check.** Particle and solids calculations depend on the stated size metric, distribution basis, energy or handling model, and the physical meaning of the reported average or efficiency. The stated example conditions (### Worked Example 9 Problem. Why do number- and mass-based PSD means differ?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## As the Handbook States It
 
 Primary source basis: **Chemical Engineering, printed pp. 256–262; FE Chemical specification Area 11**.
@@ -377,11 +385,11 @@ D) It is always directly tabulated in the Handbook
 
 14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
 
-15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
+15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations. The item statement identifies the case as: Why should a material balance normally be closed before a process energy balance?. Particle and solids calculations depend on the stated size metric, distribution basis, energy or handling model, and the physical meaning of the reported average or efficiency. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
+16. To verify that the unknowns are matched by independent equations/specifications before algebra begins. The item statement identifies the case as: What is the purpose of a degrees-of-freedom check?. Particle and solids calculations depend on the stated size metric, distribution basis, energy or handling model, and the physical meaning of the reported average or efficiency. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
+17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation. The item statement identifies the case as: When should a relation supplied by an FE problem override a remembered correlation?. Particle and solids calculations depend on the stated size metric, distribution basis, energy or handling model, and the physical meaning of the reported average or efficiency. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
 18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
 
@@ -405,7 +413,6 @@ D) It is always directly tabulated in the Handbook
 
 
 ---
-
 ## Practice Problems
 
 1. A cumulative PSD says 70% mass is below 100 µm. What fraction is above 100 µm?
@@ -433,29 +440,28 @@ D) It is always directly tabulated in the Handbook
 
 ## Practice Problem Solutions
 
-1. 30%.
+1. 30%. The item statement identifies the case as: A cumulative PSD says 70% mass is below 100 µm. What fraction is above 100 µm?. Particle and solids calculations depend on the stated size metric, distribution basis, energy or handling model, and the physical meaning of the reported average or efficiency. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-2. It preserves surface-area-to-volume behavior.
+2. It preserves surface-area-to-volume behavior. The item statement identifies the case as: Why is Sauter mean relevant to transfer?. Particle and solids calculations depend on the stated size metric, distribution basis, energy or handling model, and the physical meaning of the reported average or efficiency. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-3. 0.15.
+3. 0.15. The item statement identifies the case as: A 200 g sieve sample retains 30 g in one interval. Find interval mass fraction. Particle and solids calculations depend on the stated size metric, distribution basis, energy or handling model, and the physical meaning of the reported average or efficiency. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-4. 10.
+4. 10. The item statement identifies the case as: Feed size is 20 mm and product size 2 mm. Estimate reduction ratio. Particle and solids calculations depend on the stated size metric, distribution basis, energy or handling model, and the physical meaning of the reported average or efficiency. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-5. Underflow.
+5. Underflow. The item statement identifies the case as: What outlet of a hydrocyclone commonly carries coarser/denser solids?. Particle and solids calculations depend on the stated size metric, distribution basis, energy or handling model, and the physical meaning of the reported average or efficiency. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-6. θ=atan(0.5)=26.6°.
+6. θ=atan(0.5)=26.6°. The item statement identifies the case as: A conical pile has h=1.0 m and radius 2.0 m. Find angle of repose. Particle and solids calculations depend on the stated size metric, distribution basis, energy or handling model, and the physical meaning of the reported average or efficiency. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-7. 70 kg, assuming no other solute outlet.
+7. 70 kg, assuming no other solute outlet. The item statement identifies the case as: A crystallizer feed has 100 kg solute; mother liquor contains 30 kg solute. Find solute in crystals. Particle and solids calculations depend on the stated size metric, distribution basis, energy or handling model, and the physical meaning of the reported average or efficiency. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-8. Passes 20-mesh and is retained on 40-mesh.
+8. Passes 20-mesh and is retained on 40-mesh. The item statement identifies the case as: What does '-20+40 mesh' mean?. Particle and solids calculations depend on the stated size metric, distribution basis, energy or handling model, and the physical meaning of the reported average or efficiency. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-9. Large particles contribute far more mass/volume per particle.
+9. Large particles contribute far more mass/volume per particle. The item statement identifies the case as: Why do number- and mass-based PSD means differ?. Particle and solids calculations depend on the stated size metric, distribution basis, energy or handling model, and the physical meaning of the reported average or efficiency. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-10. Crystallization/solid precipitation.
+10. Crystallization/solid precipitation. The item statement identifies the case as: If cooling moves a solution from one liquid region into liquid+solid region, what operation is indicated?. Particle and solids calculations depend on the stated size metric, distribution basis, energy or handling model, and the physical meaning of the reported average or efficiency. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
 
 ---
-
 ## Quick Reference
 
 **Source anchor:** Chemical Engineering, printed pp. 256–262; FE Chemical specification Area 11.

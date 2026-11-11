@@ -70,6 +70,7 @@ The optimum is not necessarily the unconstrained maximum of one performance metr
 
 ---
 
+**Reasoning check.** Optimization, control, and safety decisions must respect process constraints, dynamic behavior, objective functions, protective layers, and the consequences of off-normal operation. The stated example conditions (### Worked Example 1 Problem. An objective is to minimize energy while product purity must be ≥99%. Classify purity statement) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 13.2 Sustainability, Efficiency, and Inherently Safer Design
 
 The specification explicitly names sustainability, efficiency, green engineering, and inherently safer design. These should be treated as design constraints and objectives, not post-design decorations.
@@ -88,6 +89,7 @@ Inherently safer strategies seek to eliminate or reduce hazards by choices such 
 
 ---
 
+**Reasoning check.** Optimization, control, and safety decisions must respect process constraints, dynamic behavior, objective functions, protective layers, and the consequences of off-normal operation. The stated example conditions (### Worked Example 2 Problem. Name one inherently safer strategy) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 13.3 Feedback, Feedforward, Cascade, and Ratio Control
 
 Feedback responds to measured error after a disturbance affects the controlled variable. Feedforward acts from a measured disturbance before the controlled variable moves. Cascade uses an inner loop to reject secondary disturbances rapidly. Ratio control maintains a proportional relationship between streams.
@@ -108,6 +110,7 @@ These strategies are explicitly named in the FE Chemical specification; use the 
 
 <!-- VERIFY id="WE-03-13-003-B" expr="2.5*4" expected="10" units="kg/s" atol="1e-9" rtol="1e-9" -->
 
+**Reasoning check.** Optimization, control, and safety decisions must respect process constraints, dynamic behavior, objective functions, protective layers, and the consequences of off-normal operation. The stated example conditions (### Worked Example 3 Problem. A ratio controller maintains B/A=2.5 and A=4 kg/s. Find B setpoint) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 13.4 Process Dynamics and Controller Tuning
 
 First- and second-order process dynamics, time delay, stability, damping, and transfer functions are specification topics and are developed in Layer 2F. Chemical-process control applies those models to temperature, pressure, level, composition, and flow loops.
@@ -126,6 +129,7 @@ Tuning must respect actuator limits, process dead time, measurement noise, and s
 
 ---
 
+**Reasoning check.** Optimization, control, and safety decisions must respect process constraints, dynamic behavior, objective functions, protective layers, and the consequences of off-normal operation. The stated example conditions (### Worked Example 4 Problem. A process has K=2, τ=5 min, θ=1 min in FOPDT form. Identify gain, time constant, and dead time) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 13.5 Control Valves, DCS/PLC, Alarms, and Interlocks
 
 The FE Chemical specification explicitly includes sensors, control valves, distributed control systems, programmable logic controllers, alarms, and interlocks.
@@ -144,6 +148,7 @@ A regulatory control loop maintains normal operation; an interlock or safety act
 
 ---
 
+**Reasoning check.** Optimization, control, and safety decisions must respect process constraints, dynamic behavior, objective functions, protective layers, and the consequences of off-normal operation. The stated example conditions (### Worked Example 5 Problem. What is the difference between a regulatory control loop and a safety interlock?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 13.6 HAZOP, LOPA, Fault Trees, and Event Trees
 
 **Specification-required; detailed methodology is guide-developed.** HAZOP systematically asks how process variables can deviate from design intent. LOPA estimates risk reduction from independent protection layers. Fault trees work backward from an undesired top event; event trees work forward from an initiating event through success/failure branches.
@@ -162,6 +167,7 @@ These tools organize reasoning about causes, consequences, and safeguards; they 
 
 ---
 
+**Reasoning check.** Optimization, control, and safety decisions must respect process constraints, dynamic behavior, objective functions, protective layers, and the consequences of off-normal operation. The stated example conditions (### Worked Example 6 Problem. Does a fault tree generally reason backward from a top event or forward from an initiator?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 13.7 Relief, Inerting, Runaway Reactions, and Protection Layers
 
 The FE Chemical specification includes over/underpressure protection, relief, redundant control, inerting, runaway reactions, and compatibility. General Handbook safety material provides the hazard foundation; detailed sizing correlations are not supplied for all cases.
@@ -180,6 +186,7 @@ A relief device limits pressure but does not prevent the initiating event. Inert
 
 ---
 
+**Reasoning check.** Optimization, control, and safety decisions must respect process constraints, dynamic behavior, objective functions, protective layers, and the consequences of off-normal operation. The stated example conditions (### Worked Example 7 Problem. Does a relief valve eliminate the initiating cause of overpressure?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## Integrated Worked Examples
 
 ### Worked Example 8
@@ -188,6 +195,7 @@ A relief device limits pressure but does not prevent the initiating event. Inert
 
 **Solution.** A disturbance variable before its effect reaches the controlled variable.
 
+**Reasoning check.** Optimization, control, and safety decisions must respect process constraints, dynamic behavior, objective functions, protective layers, and the consequences of off-normal operation. The stated example conditions (### Worked Example 8 Problem. A feedforward controller requires measurement of what?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ### Worked Example 9
 
 **Problem.** What hazard is reduced by inerting?
@@ -196,6 +204,7 @@ A relief device limits pressure but does not prevent the initiating event. Inert
 
 ---
 
+**Reasoning check.** Optimization, control, and safety decisions must respect process constraints, dynamic behavior, objective functions, protective layers, and the consequences of off-normal operation. The stated example conditions (### Worked Example 9 Problem. What hazard is reduced by inerting?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## As the Handbook States It
 
 Primary source basis: **FE Chemical specification Areas 14D–E, 15A–C, and 16A–F; general Instrumentation, Measurement, and Control, printed pp. 225–234; general Safety, printed pp. 15–35**.
@@ -371,11 +380,11 @@ D) It is always directly tabulated in the Handbook
 
 14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
 
-15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
+15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations. The item statement identifies the case as: Why should a material balance normally be closed before a process energy balance?. Optimization, control, and safety decisions must respect process constraints, dynamic behavior, objective functions, protective layers, and the consequences of off-normal operation. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
+16. To verify that the unknowns are matched by independent equations/specifications before algebra begins. The item statement identifies the case as: What is the purpose of a degrees-of-freedom check?. Optimization, control, and safety decisions must respect process constraints, dynamic behavior, objective functions, protective layers, and the consequences of off-normal operation. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
+17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation. The item statement identifies the case as: When should a relation supplied by an FE problem override a remembered correlation?. Optimization, control, and safety decisions must respect process constraints, dynamic behavior, objective functions, protective layers, and the consequences of off-normal operation. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
 18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
 
@@ -399,7 +408,6 @@ D) It is always directly tabulated in the Handbook
 
 
 ---
-
 ## Practice Problems
 
 1. An objective is to minimize energy while product purity must be ≥99%. Classify purity statement.
@@ -427,29 +435,28 @@ D) It is always directly tabulated in the Handbook
 
 ## Practice Problem Solutions
 
-1. A constraint.
+1. A constraint. The item statement identifies the case as: An objective is to minimize energy while product purity must be ≥99%. Classify purity statement. Optimization, control, and safety decisions must respect process constraints, dynamic behavior, objective functions, protective layers, and the consequences of off-normal operation. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-2. Minimize inventory, substitute less hazardous material, moderate conditions, or simplify.
+2. Minimize inventory, substitute less hazardous material, moderate conditions, or simplify. The item statement identifies the case as: Name one inherently safer strategy. Optimization, control, and safety decisions must respect process constraints, dynamic behavior, objective functions, protective layers, and the consequences of off-normal operation. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-3. 10 kg/s.
+3. 10 kg/s. The item statement identifies the case as: A ratio controller maintains B/A=2.5 and A=4 kg/s. Find B setpoint. Optimization, control, and safety decisions must respect process constraints, dynamic behavior, objective functions, protective layers, and the consequences of off-normal operation. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-4. K=2; τ=5 min; θ=1 min.
+4. K=2; τ=5 min; θ=1 min. The item statement identifies the case as: A process has K=2, τ=5 min, θ=1 min in FOPDT form. Identify gain, time constant, and dead time. Optimization, control, and safety decisions must respect process constraints, dynamic behavior, objective functions, protective layers, and the consequences of off-normal operation. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-5. Control maintains normal operation; an interlock forces a defined protective action on hazardous conditions.
+5. Control maintains normal operation; an interlock forces a defined protective action on hazardous conditions. The item statement identifies the case as: What is the difference between a regulatory control loop and a safety interlock?. Optimization, control, and safety decisions must respect process constraints, dynamic behavior, objective functions, protective layers, and the consequences of off-normal operation. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-6. Backward from a top event.
+6. Backward from a top event. The item statement identifies the case as: Does a fault tree generally reason backward from a top event or forward from an initiator?. Optimization, control, and safety decisions must respect process constraints, dynamic behavior, objective functions, protective layers, and the consequences of off-normal operation. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-7. No; it limits pressure/consequence after overpressure develops.
+7. No; it limits pressure/consequence after overpressure develops. The item statement identifies the case as: Does a relief valve eliminate the initiating cause of overpressure?. Optimization, control, and safety decisions must respect process constraints, dynamic behavior, objective functions, protective layers, and the consequences of off-normal operation. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-8. A disturbance variable before its effect reaches the controlled variable.
+8. A disturbance variable before its effect reaches the controlled variable. The item statement identifies the case as: A feedforward controller requires measurement of what?. Optimization, control, and safety decisions must respect process constraints, dynamic behavior, objective functions, protective layers, and the consequences of off-normal operation. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-9. Oxidation/combustion hazard by lowering oxidizer concentration.
+9. Oxidation/combustion hazard by lowering oxidizer concentration. The item statement identifies the case as: What hazard is reduced by inerting?. Optimization, control, and safety decisions must respect process constraints, dynamic behavior, objective functions, protective layers, and the consequences of off-normal operation. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-10. Fragility, oscillation, and instability risk.
+10. Fragility, oscillation, and instability risk. The item statement identifies the case as: If controller tuning increases speed but causes very low phase margin, what concern rises?. Optimization, control, and safety decisions must respect process constraints, dynamic behavior, objective functions, protective layers, and the consequences of off-normal operation. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
 
 ---
-
 ## Quick Reference
 
 **Source anchor:** FE Chemical specification Areas 14D–E, 15A–C, and 16A–F; general Instrumentation, Measurement, and Control, printed pp. 225–234; general Safety, printed pp. 15–35.

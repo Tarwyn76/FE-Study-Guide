@@ -93,6 +93,7 @@ Element balances remain valid even when species are created or consumed.
 
 <!-- VERIFY id="WE-03-03-002-X" expr="100*(100-25)/100" expected="75" units="percent" atol="0.05" rtol="1e-9" -->
 
+**Reasoning check.** Reactive balances couple stoichiometry, extent or conversion, limiting-reactant logic, and the energy effect of reaction on a consistent molar basis. The stated example conditions (### Worked Example 2 Problem. For A→B, 100 mol/h A enters and 25 mol/h remains. Find conversion) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 3.3 Limiting and Excess Reactants
 
 The limiting reactant is consumed first if the reaction proceeds to completion. An excess reactant is fed above the stoichiometric requirement.
@@ -111,6 +112,7 @@ Percent excess is measured relative to the stoichiometric amount required for th
 
 ---
 
+**Reasoning check.** Reactive balances couple stoichiometry, extent or conversion, limiting-reactant logic, and the energy effect of reaction on a consistent molar basis. The stated example conditions (### Worked Example 3 Problem. Reaction 2A+B→P. Feed 10 mol A and 8 mol B. Identify limiting reactant) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 3.4 Combustion, Theoretical Air, and Excess Air
 
 The Handbook states that dry air may be modeled as 3.76 mol nitrogen per mol oxygen for combustion calculations. Begin by balancing the fuel combustion equation, then determine theoretical oxygen and air.
@@ -152,6 +154,7 @@ Apply products minus reactants using signed stoichiometric coefficients.
 
 <!-- VERIFY id="WE-03-03-005-dHr" expr="-100" expected="-100" units="kJ/mol reaction" atol="1e-9" rtol="1e-9" -->
 
+**Reasoning check.** Reactive balances couple stoichiometry, extent or conversion, limiting-reactant logic, and the energy effect of reaction on a consistent molar basis. The stated example conditions (### Worked Example 5 Problem. For a reaction with ΣνΔHf°=-100 kJ/mol reaction, find heat of reaction) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 3.6 Heat of Reaction Away from the Reference Temperature
 
 If reaction temperature differs from the reference state, the Handbook corrects \(\Delta H_r\) using the difference between product and reactant heat capacities.
@@ -190,6 +193,7 @@ Solve reaction extent first, then close the energy balance on a common reference
 
 ---
 
+**Reasoning check.** Reactive balances couple stoichiometry, extent or conversion, limiting-reactant logic, and the energy effect of reaction on a consistent molar basis. The stated example conditions (### Worked Example 7 Problem. What must be solved before an adiabatic flame/reactor temperature?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## Integrated Worked Examples
 
 ### Worked Example 8
@@ -200,6 +204,7 @@ Solve reaction extent first, then close the energy balance on a common reference
 
 <!-- VERIFY id="WE-03-03-008-selectivity" expr="80/20" expected="4" units="dimensionless" atol="1e-9" rtol="1e-9" -->
 
+**Reasoning check.** Reactive balances couple stoichiometry, extent or conversion, limiting-reactant logic, and the energy effect of reaction on a consistent molar basis. The stated example conditions (### Worked Example 8 Problem. For A→D and A→U, 80 mol D and 20 mol U form. Find D/U selectivity) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ### Worked Example 9
 
 **Problem.** Stoichiometric air/fuel mass ratio is 17.2; actual is 20.64. Find percent excess air.
@@ -385,11 +390,11 @@ D) It is always directly tabulated in the Handbook
 
 14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
 
-15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
+15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations. The item statement identifies the case as: Why should a material balance normally be closed before a process energy balance?. Reactive balances couple stoichiometry, extent or conversion, limiting-reactant logic, and the energy effect of reaction on a consistent molar basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
+16. To verify that the unknowns are matched by independent equations/specifications before algebra begins. The item statement identifies the case as: What is the purpose of a degrees-of-freedom check?. Reactive balances couple stoichiometry, extent or conversion, limiting-reactant logic, and the energy effect of reaction on a consistent molar basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
+17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation. The item statement identifies the case as: When should a relation supplied by an FE problem override a remembered correlation?. Reactive balances couple stoichiometry, extent or conversion, limiting-reactant logic, and the energy effect of reaction on a consistent molar basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
 18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
 
@@ -413,7 +418,6 @@ D) It is always directly tabulated in the Handbook
 
 
 ---
-
 ## Practice Problems
 
 1. For A→2B, feed 10 mol A and extent ξ=3 mol. Find outlet A and B if no B enters.
@@ -441,29 +445,28 @@ D) It is always directly tabulated in the Handbook
 
 ## Practice Problem Solutions
 
-1. A=7 mol; B=6 mol.
+1. A=7 mol; B=6 mol. The item statement identifies the case as: For A→2B, feed 10 mol A and extent ξ=3 mol. Find outlet A and B if no B enters. Reactive balances couple stoichiometry, extent or conversion, limiting-reactant logic, and the energy effect of reaction on a consistent molar basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-2. 75%.
+2. 75%. The item statement identifies the case as: For A→B, 100 mol/h A enters and 25 mol/h remains. Find conversion. Reactive balances couple stoichiometry, extent or conversion, limiting-reactant logic, and the energy effect of reaction on a consistent molar basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-3. A requires 5 mol B, so A is limiting.
+3. A requires 5 mol B, so A is limiting. The item statement identifies the case as: Reaction 2A+B→P. Feed 10 mol A and 8 mol B. Identify limiting reactant. Reactive balances couple stoichiometry, extent or conversion, limiting-reactant logic, and the energy effect of reaction on a consistent molar basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-4. 2.4 mol O2/mol CH4; air also carries 2.4×3.76=9.024 mol N2.
+4. 2.4 mol O2/mol CH4; air also carries 2.4×3.76=9.024 mol N2. The item statement identifies the case as: Methane burns with 20% excess air. Stoichiometric O2 is 2 mol/mol CH4. Find actual O2 feed per mol CH4. Reactive balances couple stoichiometry, extent or conversion, limiting-reactant logic, and the energy effect of reaction on a consistent molar basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-5. -100 kJ/mol reaction (exothermic).
+5. -100 kJ/mol reaction (exothermic). The item statement identifies the case as: For a reaction with ΣνΔHf°=-100 kJ/mol reaction, find heat of reaction. Reactive balances couple stoichiometry, extent or conversion, limiting-reactant logic, and the energy effect of reaction on a consistent molar basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-6. -100+0.020×100=-98 kJ/mol.
+6. -100+0.020×100=-98 kJ/mol. The item statement identifies the case as: ΔCp=20 J/(mol·K), ΔHr°=-100 kJ/mol at 298 K. Estimate ΔHr at 398 K with constant ΔCp. Reactive balances couple stoichiometry, extent or conversion, limiting-reactant logic, and the energy effect of reaction on a consistent molar basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-7. Reaction extent/composition and a reactive energy balance.
+7. Reaction extent/composition and a reactive energy balance. The item statement identifies the case as: What must be solved before an adiabatic flame/reactor temperature?. Reactive balances couple stoichiometry, extent or conversion, limiting-reactant logic, and the energy effect of reaction on a consistent molar basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-8. 4.
+8. 4. The item statement identifies the case as: For A→D and A→U, 80 mol D and 20 mol U form. Find D/U selectivity. Reactive balances couple stoichiometry, extent or conversion, limiting-reactant logic, and the energy effect of reaction on a consistent molar basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-9. (20.64-17.2)/17.2×100=20%.
+9. (20.64-17.2)/17.2×100=20%. The item statement identifies the case as: Stoichiometric air/fuel mass ratio is 17.2; actual is 20.64. Find percent excess air. Reactive balances couple stoichiometry, extent or conversion, limiting-reactant logic, and the energy effect of reaction on a consistent molar basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-10. 400 kW.
+10. 400 kW. The item statement identifies the case as: A fuel releases 800 kJ/mol and 0.5 mol/s reacts adiabatically. What energy release rate must products absorb if no work?. Reactive balances couple stoichiometry, extent or conversion, limiting-reactant logic, and the energy effect of reaction on a consistent molar basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
 
 ---
-
 ## Quick Reference
 
 **Source anchor:** Thermodynamics, printed pp. 152–156; Chemical Engineering, printed pp. 243–247; FE Chemical specification Areas 7H and 8F.

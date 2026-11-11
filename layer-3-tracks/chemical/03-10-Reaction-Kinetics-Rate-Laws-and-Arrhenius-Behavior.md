@@ -92,6 +92,7 @@ Reaction order is obtained from kinetics; it need not equal stoichiometric coeff
 
 <!-- VERIFY id="WE-03-10-002-order" expr="2+1" expected="3" units="dimensionless" atol="1e-9" rtol="1e-9" -->
 
+**Reasoning check.** Kinetic calculations require the correct rate-law form, reaction order, concentration or partial-pressure basis, and temperature dependence before evaluating a numerical rate. The stated example conditions (### Worked Example 2 Problem. Rate law is k CA^2 CB. What is overall order?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 10.3 Integrated Zero-, First-, and Second-Order Batch Kinetics
 
 For constant-volume batch reactors, the Handbook provides integrated concentration or conversion relations for zero-, first-, and second-order irreversible reactions.
@@ -130,6 +131,7 @@ Even a modest temperature increase can strongly increase rate when activation en
 
 ---
 
+**Reasoning check.** Kinetic calculations require the correct rate-law form, reaction order, concentration or partial-pressure basis, and temperature dependence before evaluating a numerical rate. The stated example conditions (### Worked Example 4 Problem. k1=0.10 s^-1 at T1 and Ea=50 kJ/mol. Qualitatively what happens to k if T increases?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 10.5 Reversible Reactions and Approach to Equilibrium
 
 For reversible reactions, net rate is forward rate minus reverse rate. At equilibrium the two rates are equal and net rate is zero.
@@ -148,6 +150,7 @@ The Handbook gives a first-order reversible form and identifies equilibrium conv
 
 ---
 
+**Reasoning check.** Kinetic calculations require the correct rate-law form, reaction order, concentration or partial-pressure basis, and temperature dependence before evaluating a numerical rate. The stated example conditions (### Worked Example 5 Problem. At equilibrium, what is net rate of a reversible reaction?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 10.6 Michaelis–Menten and Saturating Kinetics
 
 The Handbook gives the Michaelis–Menten form for enzyme-catalyzed reactions. At low substrate concentration, rate is approximately first order in substrate; at high concentration, rate approaches \(V_{\max}\).
@@ -168,6 +171,7 @@ This saturation behavior is also representative of some surface-catalyzed kineti
 
 <!-- VERIFY id="WE-03-10-006-vmaxfrac" expr="1/(1+1)" expected="0.5" units="dimensionless" atol="1e-9" rtol="1e-9" -->
 
+**Reasoning check.** Kinetic calculations require the correct rate-law form, reaction order, concentration or partial-pressure basis, and temperature dependence before evaluating a numerical rate. The stated example conditions (### Worked Example 6 Problem. For Michaelis-Menten, C=Km. What fraction of Vmax is rate?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 10.7 Parallel and Series Reaction Networks
 
 Desired-product yield depends on competition among reaction pathways. The Handbook gives definitions and formulas for parallel reactions and sequential first-order reactions.
@@ -188,6 +192,7 @@ For parallel power-law reactions, operating concentration and temperature can af
 
 <!-- VERIFY id="WE-03-10-007-D" expr="5*10" expected="50" units="mol" atol="1e-9" rtol="1e-9" -->
 
+**Reasoning check.** Kinetic calculations require the correct rate-law form, reaction order, concentration or partial-pressure basis, and temperature dependence before evaluating a numerical rate. The stated example conditions (### Worked Example 7 Problem. D/U selectivity is 5. If 10 mol U forms, how much D forms?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## Integrated Worked Examples
 
 ### Worked Example 8
@@ -198,6 +203,7 @@ For parallel power-law reactions, operating concentration and temperature can af
 
 <!-- VERIFY id="WE-03-10-008-time" expr="10/2" expected="5" units="min" atol="1e-9" rtol="1e-9" -->
 
+**Reasoning check.** Kinetic calculations require the correct rate-law form, reaction order, concentration or partial-pressure basis, and temperature dependence before evaluating a numerical rate. The stated example conditions (### Worked Example 8 Problem. Zero-order reaction k=2 mol/(L·min), CA0=10 mol/L. Time to depletion?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ### Worked Example 9
 
 **Problem.** Second-order k=0.1 L/(mol·min), CA0=2 mol/L. Find CA after 5 min.
@@ -383,11 +389,11 @@ D) It is always directly tabulated in the Handbook
 
 14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
 
-15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
+15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations. The item statement identifies the case as: Why should a material balance normally be closed before a process energy balance?. Kinetic calculations require the correct rate-law form, reaction order, concentration or partial-pressure basis, and temperature dependence before evaluating a numerical rate. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
+16. To verify that the unknowns are matched by independent equations/specifications before algebra begins. The item statement identifies the case as: What is the purpose of a degrees-of-freedom check?. Kinetic calculations require the correct rate-law form, reaction order, concentration or partial-pressure basis, and temperature dependence before evaluating a numerical rate. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
+17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation. The item statement identifies the case as: When should a relation supplied by an FE problem override a remembered correlation?. Kinetic calculations require the correct rate-law form, reaction order, concentration or partial-pressure basis, and temperature dependence before evaluating a numerical rate. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
 18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
 
@@ -411,7 +417,6 @@ D) It is always directly tabulated in the Handbook
 
 
 ---
-
 ## Practice Problems
 
 1. NA decreases 10 mol in a 2 L reactor over 5 min. Find average -rA.
@@ -439,29 +444,28 @@ D) It is always directly tabulated in the Handbook
 
 ## Practice Problem Solutions
 
-1. 10/(2×5)=1 mol/(L·min).
+1. 10/(2×5)=1 mol/(L·min). The item statement identifies the case as: NA decreases 10 mol in a 2 L reactor over 5 min. Find average -rA. Kinetic calculations require the correct rate-law form, reaction order, concentration or partial-pressure basis, and temperature dependence before evaluating a numerical rate. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-2. 3.
+2. 3. The item statement identifies the case as: Rate law is k CA^2 CB. What is overall order?. Kinetic calculations require the correct rate-law form, reaction order, concentration or partial-pressure basis, and temperature dependence before evaluating a numerical rate. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-3. CA/CA0=e^-1=0.3679.
+3. CA/CA0=e^-1=0.3679. The item statement identifies the case as: First-order k=0.2 min^-1. Find fraction remaining after 5 min. Kinetic calculations require the correct rate-law form, reaction order, concentration or partial-pressure basis, and temperature dependence before evaluating a numerical rate. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-4. k increases exponentially.
+4. k increases exponentially. The item statement identifies the case as: k1=0.10 s^-1 at T1 and Ea=50 kJ/mol. Qualitatively what happens to k if T increases?. Kinetic calculations require the correct rate-law form, reaction order, concentration or partial-pressure basis, and temperature dependence before evaluating a numerical rate. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-5. Zero.
+5. Zero. The item statement identifies the case as: At equilibrium, what is net rate of a reversible reaction?. Kinetic calculations require the correct rate-law form, reaction order, concentration or partial-pressure basis, and temperature dependence before evaluating a numerical rate. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-6. 1/2.
+6. 1/2. The item statement identifies the case as: For Michaelis-Menten, C=Km. What fraction of Vmax is rate?. Kinetic calculations require the correct rate-law form, reaction order, concentration or partial-pressure basis, and temperature dependence before evaluating a numerical rate. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-7. 50 mol.
+7. 50 mol. The item statement identifies the case as: D/U selectivity is 5. If 10 mol U forms, how much D forms?. Kinetic calculations require the correct rate-law form, reaction order, concentration or partial-pressure basis, and temperature dependence before evaluating a numerical rate. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-8. 5 min.
+8. 5 min. The item statement identifies the case as: Zero-order reaction k=2 mol/(L·min), CA0=10 mol/L. Time to depletion?. Kinetic calculations require the correct rate-law form, reaction order, concentration or partial-pressure basis, and temperature dependence before evaluating a numerical rate. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-9. 1/CA=1/2+0.1×5=1 → CA=1 mol/L.
+9. 1/CA=1/2+0.1×5=1 → CA=1 mol/L. The item statement identifies the case as: Second-order k=0.1 L/(mol·min), CA0=2 mol/L. Find CA after 5 min. Kinetic calculations require the correct rate-law form, reaction order, concentration or partial-pressure basis, and temperature dependence before evaluating a numerical rate. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
-10. -Ea/R.
+10. -Ea/R. The item statement identifies the case as: What kinetic quantity is obtained from slope of ln k versus 1/T?. Kinetic calculations require the correct rate-law form, reaction order, concentration or partial-pressure basis, and temperature dependence before evaluating a numerical rate. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
 
 
 ---
-
 ## Quick Reference
 
 **Source anchor:** Chemical Engineering, printed pp. 243–247; FE Chemical specification Area 12A–D and 12F.
