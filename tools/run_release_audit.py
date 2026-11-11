@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# duplicate-normalization audit
 # post-ordered-cleanup audit
 # warning-review summary run
 # final strict audit after prefix-regex repair
