@@ -72,7 +72,6 @@ For a binary ideal flash, one composition variable and vapor fraction can often 
 
 <!-- VERIFY id="WE-03-06-001-L" expr="100-40" expected="60" units="kmol/h" atol="1e-9" rtol="1e-9" -->
 
-**Reasoning check.** Distillation and stage calculations combine overall/component balances with equilibrium relations, operating lines, stage efficiency, and the specified reflux or separation target. The stated example conditions (### Worked Example 1 Problem. Flash feed F=100 kmol/h produces V=40. Find L) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 6.2 Differential or Rayleigh Distillation
 
 In differential batch distillation, vapor is removed as it forms, so the still composition changes continuously. The Handbook gives the Rayleigh integral connecting remaining liquid amount and composition.
@@ -113,7 +112,6 @@ Internal stage balances generate operating lines.
 
 <!-- VERIFY id="WE-03-06-003-B" expr="100-40" expected="60" units="kmol/h" atol="1e-9" rtol="1e-9" -->
 
-**Reasoning check.** Distillation and stage calculations combine overall/component balances with equilibrium relations, operating lines, stage efficiency, and the specified reflux or separation target. The stated example conditions (### Worked Example 3 Problem. Continuous column F=100, D=40. Find B) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 6.4 Rectifying and Stripping Operating Lines
 
 Under constant molal overflow, the rectifying and stripping sections each have linear operating relations in \(x-y\) space.
@@ -132,7 +130,6 @@ The rectifying line is tied to reflux ratio and distillate composition. The stri
 
 ---
 
-**Reasoning check.** Distillation and stage calculations combine overall/component balances with equilibrium relations, operating lines, stage efficiency, and the specified reflux or separation target. The stated example conditions (### Worked Example 4 Problem. For RD=3 and xD=0.9, write rectifying line) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 6.5 Feed Condition and the q-Line
 
 The q-line represents feed thermal condition. Saturated liquid gives a vertical q-line; saturated vapor gives a horizontal q-line. Two-phase and subcooled/superheated feeds produce other slopes.
@@ -151,7 +148,6 @@ The q-line slope is \(q/(q-1)\).
 
 ---
 
-**Reasoning check.** Distillation and stage calculations combine overall/component balances with equilibrium relations, operating lines, stage efficiency, and the specified reflux or separation target. The stated example conditions (### Worked Example 5 Problem. What is q-line slope for q=1?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 6.6 McCabe–Thiele Stage Stepping
 
 The McCabe–Thiele method alternates horizontal equilibrium moves and vertical operating-line moves between \(x_D\) and \(x_B\). Each step corresponds to an ideal equilibrium stage under the method's assumptions.
@@ -170,7 +166,6 @@ Minimum reflux occurs when the operating construction pinches the equilibrium cu
 
 ---
 
-**Reasoning check.** Distillation and stage calculations combine overall/component balances with equilibrium relations, operating lines, stage efficiency, and the specified reflux or separation target. The stated example conditions (### Worked Example 6 Problem. Why does minimum reflux imply infinite theoretical stages?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 6.7 Murphree Efficiency and Real Stages
 
 Real trays may not achieve full equilibrium. The Handbook gives Murphree vapor efficiency based on actual vapor composition change relative to the equilibrium change possible from the leaving liquid.
@@ -210,7 +205,6 @@ Efficiency converts ideal-stage performance into a more realistic tray requireme
 
 ---
 
-**Reasoning check.** Distillation and stage calculations combine overall/component balances with equilibrium relations, operating lines, stage efficiency, and the specified reflux or separation target. The stated example conditions (### Worked Example 9 Problem. At total reflux, what happens to external product withdrawal in ideal analysis?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## As the Handbook States It
 
 Primary source basis: **Chemical Engineering, printed pp. 250–252; FE Chemical specification Area 10C–E**.
@@ -386,11 +380,11 @@ D) It is always directly tabulated in the Handbook
 
 14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
 
-15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations. The item statement identifies the case as: Why should a material balance normally be closed before a process energy balance?. Distillation and stage calculations combine overall/component balances with equilibrium relations, operating lines, stage efficiency, and the specified reflux or separation target. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
 
-16. To verify that the unknowns are matched by independent equations/specifications before algebra begins. The item statement identifies the case as: What is the purpose of a degrees-of-freedom check?. Distillation and stage calculations combine overall/component balances with equilibrium relations, operating lines, stage efficiency, and the specified reflux or separation target. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
 
-17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation. The item statement identifies the case as: When should a relation supplied by an FE problem override a remembered correlation?. Distillation and stage calculations combine overall/component balances with equilibrium relations, operating lines, stage efficiency, and the specified reflux or separation target. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
 
 18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
 
@@ -414,6 +408,7 @@ D) It is always directly tabulated in the Handbook
 
 
 ---
+
 ## Practice Problems
 
 1. Flash feed F=100 kmol/h produces V=40. Find L.
@@ -441,28 +436,29 @@ D) It is always directly tabulated in the Handbook
 
 ## Practice Problem Solutions
 
-1. 60 kmol/h. The item statement identifies the case as: Flash feed F=100 kmol/h produces V=40. Find L. Distillation and stage calculations combine overall/component balances with equilibrium relations, operating lines, stage efficiency, and the specified reflux or separation target. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+1. 60 kmol/h.
 
-2. 50=32+60x → x=0.30. The item statement identifies the case as: Flash: F=100, zA=0.5, V=40, yA=0.8. Find xA in liquid. Distillation and stage calculations combine overall/component balances with equilibrium relations, operating lines, stage efficiency, and the specified reflux or separation target. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+2. 50=32+60x → x=0.30.
 
-3. 60. The item statement identifies the case as: Continuous column F=100, D=40. Find B. Distillation and stage calculations combine overall/component balances with equilibrium relations, operating lines, stage efficiency, and the specified reflux or separation target. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+3. 60.
 
-4. y=3/4 x + 0.9/4 =0.75x+0.225. The item statement identifies the case as: For RD=3 and xD=0.9, write rectifying line. Distillation and stage calculations combine overall/component balances with equilibrium relations, operating lines, stage efficiency, and the specified reflux or separation target. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+4. y=3/4 x + 0.9/4 =0.75x+0.225.
 
-5. Infinite/vertical. The item statement identifies the case as: What is q-line slope for q=1?. Distillation and stage calculations combine overall/component balances with equilibrium relations, operating lines, stage efficiency, and the specified reflux or separation target. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+5. Infinite/vertical.
 
-6. The operating construction pinches the equilibrium curve, driving local mass-transfer/stage progress to zero. The item statement identifies the case as: Why does minimum reflux imply infinite theoretical stages?. Distillation and stage calculations combine overall/component balances with equilibrium relations, operating lines, stage efficiency, and the specified reflux or separation target. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+6. The operating construction pinches the equilibrium curve, driving local mass-transfer/stage progress to zero.
 
-7. E=(0.70-0.50)/(0.80-0.50)=0.667. The item statement identifies the case as: yn=0.70, yn+1=0.50, yn=0.80. Find Murphree vapor efficiency. Distillation and stage calculations combine overall/component balances with equilibrium relations, operating lines, stage efficiency, and the specified reflux or separation target. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+7. E=(0.70-0.50)/(0.80-0.50)=0.667.
 
-8. D=50; B=50. The item statement identifies the case as: Overall binary balance: F=100, z=0.5, xD=0.9, xB=0.1. Find D and B. Distillation and stage calculations combine overall/component balances with equilibrium relations, operating lines, stage efficiency, and the specified reflux or separation target. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+8. D=50; B=50.
 
-9. Distillate and bottoms withdrawals go to zero; internal reflux is maximal. The item statement identifies the case as: At total reflux, what happens to external product withdrawal in ideal analysis?. Distillation and stage calculations combine overall/component balances with equilibrium relations, operating lines, stage efficiency, and the specified reflux or separation target. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+9. Distillate and bottoms withdrawals go to zero; internal reflux is maximal.
 
-10. q=0. The item statement identifies the case as: If a feed is saturated vapor, what is q?. Distillation and stage calculations combine overall/component balances with equilibrium relations, operating lines, stage efficiency, and the specified reflux or separation target. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+10. q=0.
 
 
 ---
+
 ## Quick Reference
 
 **Source anchor:** Chemical Engineering, printed pp. 250–252; FE Chemical specification Area 10C–E.
