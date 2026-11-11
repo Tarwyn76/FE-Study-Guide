@@ -152,6 +152,7 @@ Drying cannot reduce material below the equilibrium moisture corresponding to th
 
 ---
 
+**Why this works.** Track water or solvent on the requested wet/dry basis and couple the material balance to the relevant enthalpy or latent-heat requirement. In this example, the stated setup (“Problem. What happens when a solid reaches equilibrium moisture for the surrounding gas? Solution. Net drying tends to zero unless gas conditions change”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 8.6 Single-Effect Evaporation Balances
 
 **Specification-required; detailed balance workflow is guide-developed.** Evaporation concentrates a nonvolatile solute by vaporizing solvent. A solute balance determines concentrate flow; an energy balance determines steam or heat duty.
@@ -191,6 +192,7 @@ For FE problems, choose the simplest valid basis: dry air for humidification, dr
 
 ---
 
+**Why this works.** Track water or solvent on the requested wet/dry basis and couple the material balance to the relevant enthalpy or latent-heat requirement. In this example, the stated setup (“Problem. Why are humidification/drying/evaporation coupled heat and mass transfer problems? Solution. They move a species between phases and generally requ”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## Integrated Worked Examples
 
 ### Worked Example 8
@@ -448,7 +450,11 @@ D) It is always directly tabulated in the Handbook
 
 2. 0.025 kg/s.
 
+   **Explanation.** Track water or solvent on the requested wet/dry basis and couple the material balance to the relevant enthalpy or latent-heat requirement. The question is framed around “Dry air flow is 5 kg/s, humidity ratio rises 0.005. Find water added.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 3. Xwb=0.20; Xdb=0.25.
+
+   **Explanation.** Track water or solvent on the requested wet/dry basis and couple the material balance to the relevant enthalpy or latent-heat requirement. The question is framed around “A wet solid has 2 kg water and 8 kg dry solid. Find wet- and dry-basis moisture.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 4. Rate=5 kg/h; time=5 h.
 
@@ -459,6 +465,8 @@ D) It is always directly tabulated in the Handbook
 7. They move a species between phases and generally require latent/sensible heat.
 
 8. 0.04 kg/s.
+
+   **Explanation.** Track water or solvent on the requested wet/dry basis and couple the material balance to the relevant enthalpy or latent-heat requirement. The question is framed around “Dry air 2 kg/s increases ω from 0.01 to 0.03. Find water transfer.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 9. Solids=100 kg/h; product=200 kg/h; evaporated=300 kg/h.
 

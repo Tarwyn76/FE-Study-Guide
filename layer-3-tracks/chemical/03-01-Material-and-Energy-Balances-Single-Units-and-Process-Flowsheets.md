@@ -93,6 +93,7 @@ A component balance is often more useful than the total balance because it conne
 
 <!-- VERIFY id="WE-03-01-002-P2" expr="120-75" expected="45" units="kg/h" atol="1e-9" rtol="1e-9" -->
 
+**Why this works.** Use the stated control volume and basis; conservation requires inputs plus generation minus outputs, consumption, and accumulation to close consistently. In this example, the stated setup (“Problem. A steady nonreacting unit receives 120 kg/h and discharges one product at 75 kg/h. Find the second product flow. Solution. 45 kg/h”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 1.3 Degrees of Freedom and Independent Equations
 
 Before solving, count unknowns and independent equations. A well-posed calculation has enough independent material balances, specifications, equilibrium relations, and property relations to determine the unknowns.
@@ -111,6 +112,7 @@ Writing more equations does not help if they are algebraically dependent. For an
 
 ---
 
+**Why this works.** Use the stated control volume and basis; conservation requires inputs plus generation minus outputs, consumption, and accumulation to close consistently. In this example, the stated setup (“Problem. A binary separator has unknown feed F, product P, waste W, and two independent composition specifications. If F is known, how many independent mat”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 1.4 Mixers, Splitters, and Separators
 
 A mixer combines streams and is usually solved with total and component balances. An ideal splitter divides one stream into two or more outlets of identical composition. A separator produces outlets of different composition and therefore requires separation specifications in addition to balances.
@@ -150,6 +152,7 @@ For multiple units, an overall plant balance can determine external streams even
 
 ---
 
+**Why this works.** Use the stated control volume and basis; conservation requires inputs plus generation minus outputs, consumption, and accumulation to close consistently. In this example, the stated setup (“Problem. A two-unit process has an unknown internal stream but all external flows except one are known. Which balance should be attempted first? Solution”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 1.6 Steady Nonreactive Energy Balances
 
 The Handbook's steady-flow first law provides the energy-balance backbone. For many chemical process units, kinetic and potential terms are negligible, leaving enthalpy flow, heat transfer, and shaft work.
@@ -188,6 +191,7 @@ Keep the two accounting systems separate until the needed flow rates are known. 
 
 ---
 
+**Why this works.** Use the stated control volume and basis; conservation requires inputs plus generation minus outputs, consumption, and accumulation to close consistently. In this example, the stated setup (“Problem. Why is it usually efficient to solve the material balance before the energy balance? Solution. It determines the stream amounts/compositions neede”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## Integrated Worked Examples
 
 ### Worked Example 8
@@ -196,6 +200,7 @@ Keep the two accounting systems separate until the needed flow rates are known. 
 
 **Solution.** 40/(40+60)=40 mol% A, not 20%.
 
+**Why this works.** Use the stated control volume and basis; conservation requires inputs plus generation minus outputs, consumption, and accumulation to close consistently. In this example, the stated setup (“Problem. A mixture of 40 kmol/h A and 60 kmol/h B is reported as 20 mol% A. Identify the inconsistency. Solution. 40/(40+60)=40 mol% A, not 20%”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ### Worked Example 9
 
 **Problem.** A cooler removes 500 kW from 10 kg/s of liquid, cp=2.5 kJ/(kg·K). Estimate temperature drop.
@@ -441,6 +446,8 @@ D) It is always directly tabulated in the Handbook
 
 2. 45 kg/h.
 
+   **Explanation.** Use the stated control volume and basis; conservation requires inputs plus generation minus outputs, consumption, and accumulation to close consistently. The question is framed around “A steady nonreacting unit receives 120 kg/h and discharges one product at 75 kg/h. Find the second product flow.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 3. Two independent equations may be chosen: one total plus one component balance, or two component balances.
 
 4. 8 kg/h and 12 kg/h solute.
@@ -448,6 +455,8 @@ D) It is always directly tabulated in the Handbook
 5. An overall process balance, because the internal stream cancels.
 
 6. Q=2×4×20=160 kW.
+
+   **Explanation.** Use the stated control volume and basis; conservation requires inputs plus generation minus outputs, consumption, and accumulation to close consistently. The question is framed around “A heater raises 2 kg/s of liquid with cp=4 kJ/(kg·K) by 20 K with no shaft work. Find heat duty.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 7. It determines the stream amounts/compositions needed for enthalpy and heat-duty calculations.
 

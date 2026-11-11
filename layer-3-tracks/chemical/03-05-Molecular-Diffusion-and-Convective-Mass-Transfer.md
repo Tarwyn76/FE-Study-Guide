@@ -110,6 +110,7 @@ This case appears in evaporation through a stagnant gas film.
 
 ---
 
+**Why this works.** Define the mass-transfer driving force and area consistently with the selected diffusion or film model, then carry the transport units through the calculation. In this example, the stated setup (“Problem. State why stagnant-B diffusion differs from equimolar counterdiffusion. Solution. There is net molar bulk motion when B has zero molar flux”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 5.4 Equimolar Counter-Diffusion
 
 When A and B diffuse in opposite directions with equal molar rates, total molar flux is zero and the expression simplifies.
@@ -168,6 +169,7 @@ The controlling resistance is the larger resistance after both are expressed on 
 
 ---
 
+**Why this works.** Define the mass-transfer driving force and area consistently with the selected diffusion or film model, then carry the transport units through the calculation. In this example, the stated setup (“Problem. 1/kG=2 and H/kL=8 in common reciprocal units. What fraction of total resistance is liquid-side? Solution. 8/(2+8)=80%”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 5.7 Sherwood Correlations and Transport Analogies
 
 The Handbook defines Sherwood, Schmidt, Reynolds, Nusselt, Prandtl, and Stanton numbers and gives turbulent transport analogies.
@@ -196,6 +198,7 @@ Use the correlation only within its stated geometry and regime. Heat-transfer in
 
 **Solution.** Zero.
 
+**Why this works.** Define the mass-transfer driving force and area consistently with the selected diffusion or film model, then carry the transport units through the calculation. In this example, the stated setup (“Problem. If concentration profile is flat, what is Fickian diffusive flux? Solution. Zero”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ### Worked Example 9
 
 **Problem.** If both individual phase resistances halve, what happens qualitatively to overall K?
@@ -204,6 +207,7 @@ Use the correlation only within its stated geometry and regime. Heat-transfer in
 
 ---
 
+**Why this works.** Define the mass-transfer driving force and area consistently with the selected diffusion or film model, then carry the transport units through the calculation. In this example, the stated setup (“Problem. If both individual phase resistances halve, what happens qualitatively to overall K? Solution. Overall resistance halves, so K approximately doubl”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## As the Handbook States It
 
 Primary source basis: **Chemical Engineering, printed pp. 247–255; FE Chemical specification Area 10A–B**.
@@ -445,11 +449,19 @@ D) It is always directly tabulated in the Handbook
 
 5. NA=0.20 mol/(m²·s).
 
+   **Explanation.** Define the mass-transfer driving force and area consistently with the selected diffusion or film model, then carry the transport units through the calculation. The question is framed around “kg'=0.10 mol/(m²·s·kPa), bulk-interface Δp=2 kPa. Find flux.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 6. 8/(2+8)=80%.
+
+   **Explanation.** Define the mass-transfer driving force and area consistently with the selected diffusion or film model, then carry the transport units through the calculation. The question is framed around “1/kG=2 and H/kL=8 in common reciprocal units. What fraction of total resistance is liquid-side?.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 7. Sh=kmD/DAB=100.
 
+   **Explanation.** Define the mass-transfer driving force and area consistently with the selected diffusion or film model, then carry the transport units through the calculation. The question is framed around “D=0.05 m, km=0.02 m/s, DAB=1e-5 m²/s. Find Sherwood number.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 8. Zero.
+
+   **Explanation.** Define the mass-transfer driving force and area consistently with the selected diffusion or film model, then carry the transport units through the calculation. The question is framed around “If concentration profile is flat, what is Fickian diffusive flux?.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 9. Overall resistance halves, so K approximately doubles.
 
@@ -457,6 +469,8 @@ D) It is always directly tabulated in the Handbook
 
 
 ---
+
+   **Explanation.** Define the mass-transfer driving force and area consistently with the selected diffusion or film model, then carry the transport units through the calculation. The question is framed around “Which dimensionless group compares momentum to mass diffusivity? ---.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 ## Quick Reference
 

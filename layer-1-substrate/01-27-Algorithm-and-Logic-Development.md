@@ -1294,6 +1294,8 @@ D) the residual set to zero.
 
     (§27.4)
 
+   **Explanation.** Trace the logic from inputs through each branch or loop condition and verify the termination and output behavior for the stated case. The question is framed around “Write a Boolean expression that is true only when -2\le x<5.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 15. By De Morgan's law:
 
     ```text
@@ -1301,6 +1303,8 @@ D) the residual set to zero.
     ```
 
     (§27.4)
+
+   **Explanation.** Trace the logic from inputs through each branch or loop condition and verify the termination and output behavior for the stated case. The question is framed around “Write the logical complement of: ```text pressure >= 200 and pressure <= 500 ```.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 16. After 12 processed measurements,
 
@@ -1331,6 +1335,8 @@ D) the residual set to zero.
 ### Multiple Choice
 
 20. **B — diamond.** (§27.2)
+
+   **Explanation.** Trace the logic from inputs through each branch or loop condition and verify the termination and output behavior for the stated case. The question is framed around “Which flowchart symbol normally represents a decision? A) rectangle B) diamond C) parallelogram D) rounded terminal.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 21. **C — `x = 5`.** It assigns the value 5. (§27.3)
 

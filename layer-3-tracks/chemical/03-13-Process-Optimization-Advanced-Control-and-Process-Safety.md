@@ -70,6 +70,7 @@ The optimum is not necessarily the unconstrained maximum of one performance metr
 
 ---
 
+**Why this works.** Respect process constraints, control dynamics, objective functions, and safety limits; an optimum is acceptable only inside the feasible and safe operating region. In this example, the stated setup (“Problem. An objective is to minimize energy while product purity must be ≥99%. Classify purity statement. Solution. A constraint”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 13.2 Sustainability, Efficiency, and Inherently Safer Design
 
 The specification explicitly names sustainability, efficiency, green engineering, and inherently safer design. These should be treated as design constraints and objectives, not post-design decorations.
@@ -88,6 +89,7 @@ Inherently safer strategies seek to eliminate or reduce hazards by choices such 
 
 ---
 
+**Why this works.** Respect process constraints, control dynamics, objective functions, and safety limits; an optimum is acceptable only inside the feasible and safe operating region. In this example, the stated setup (“Problem. Name one inherently safer strategy. Solution. Minimize inventory, substitute less hazardous material, moderate conditions, or simplify”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 13.3 Feedback, Feedforward, Cascade, and Ratio Control
 
 Feedback responds to measured error after a disturbance affects the controlled variable. Feedforward acts from a measured disturbance before the controlled variable moves. Cascade uses an inner loop to reject secondary disturbances rapidly. Ratio control maintains a proportional relationship between streams.
@@ -126,6 +128,7 @@ Tuning must respect actuator limits, process dead time, measurement noise, and s
 
 ---
 
+**Why this works.** Respect process constraints, control dynamics, objective functions, and safety limits; an optimum is acceptable only inside the feasible and safe operating region. In this example, the stated setup (“Problem. A process has K=2, τ=5 min, θ=1 min in FOPDT form. Identify gain, time constant, and dead time. Solution. K=2; τ=5 min; θ=1 min”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 13.5 Control Valves, DCS/PLC, Alarms, and Interlocks
 
 The FE Chemical specification explicitly includes sensors, control valves, distributed control systems, programmable logic controllers, alarms, and interlocks.
@@ -144,6 +147,7 @@ A regulatory control loop maintains normal operation; an interlock or safety act
 
 ---
 
+**Why this works.** Respect process constraints, control dynamics, objective functions, and safety limits; an optimum is acceptable only inside the feasible and safe operating region. In this example, the stated setup (“Problem. What is the difference between a regulatory control loop and a safety interlock? Solution. Control maintains normal operation; an interlock forces”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 13.6 HAZOP, LOPA, Fault Trees, and Event Trees
 
 **Specification-required; detailed methodology is guide-developed.** HAZOP systematically asks how process variables can deviate from design intent. LOPA estimates risk reduction from independent protection layers. Fault trees work backward from an undesired top event; event trees work forward from an initiating event through success/failure branches.
@@ -162,6 +166,7 @@ These tools organize reasoning about causes, consequences, and safeguards; they 
 
 ---
 
+**Why this works.** Respect process constraints, control dynamics, objective functions, and safety limits; an optimum is acceptable only inside the feasible and safe operating region. In this example, the stated setup (“Problem. Does a fault tree generally reason backward from a top event or forward from an initiator? Solution. Backward from a top event”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 13.7 Relief, Inerting, Runaway Reactions, and Protection Layers
 
 The FE Chemical specification includes over/underpressure protection, relief, redundant control, inerting, runaway reactions, and compatibility. General Handbook safety material provides the hazard foundation; detailed sizing correlations are not supplied for all cases.
@@ -180,6 +185,7 @@ A relief device limits pressure but does not prevent the initiating event. Inert
 
 ---
 
+**Why this works.** Respect process constraints, control dynamics, objective functions, and safety limits; an optimum is acceptable only inside the feasible and safe operating region. In this example, the stated setup (“Problem. Does a relief valve eliminate the initiating cause of overpressure? Solution. No; it limits pressure/consequence after overpressure develops”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## Integrated Worked Examples
 
 ### Worked Example 8
@@ -188,6 +194,7 @@ A relief device limits pressure but does not prevent the initiating event. Inert
 
 **Solution.** A disturbance variable before its effect reaches the controlled variable.
 
+**Why this works.** Respect process constraints, control dynamics, objective functions, and safety limits; an optimum is acceptable only inside the feasible and safe operating region. In this example, the stated setup (“Problem. A feedforward controller requires measurement of what? Solution. A disturbance variable before its effect reaches the controlled variable”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ### Worked Example 9
 
 **Problem.** What hazard is reduced by inerting?
@@ -196,6 +203,7 @@ A relief device limits pressure but does not prevent the initiating event. Inert
 
 ---
 
+**Why this works.** Respect process constraints, control dynamics, objective functions, and safety limits; an optimum is acceptable only inside the feasible and safe operating region. In this example, the stated setup (“Problem. What hazard is reduced by inerting? Solution. Oxidation/combustion hazard by lowering oxidizer concentration”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## As the Handbook States It
 
 Primary source basis: **FE Chemical specification Areas 14D–E, 15A–C, and 16A–F; general Instrumentation, Measurement, and Control, printed pp. 225–234; general Safety, printed pp. 15–35**.
@@ -429,15 +437,21 @@ D) It is always directly tabulated in the Handbook
 
 1. A constraint.
 
+   **Explanation.** Respect process constraints, control dynamics, objective functions, and safety limits; an optimum is acceptable only inside the feasible and safe operating region. The question is framed around “An objective is to minimize energy while product purity must be ≥99%. Classify purity statement.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 2. Minimize inventory, substitute less hazardous material, moderate conditions, or simplify.
 
 3. 10 kg/s.
+
+   **Explanation.** Respect process constraints, control dynamics, objective functions, and safety limits; an optimum is acceptable only inside the feasible and safe operating region. The question is framed around “A ratio controller maintains B/A=2.5 and A=4 kg/s. Find B setpoint.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 4. K=2; τ=5 min; θ=1 min.
 
 5. Control maintains normal operation; an interlock forces a defined protective action on hazardous conditions.
 
 6. Backward from a top event.
+
+   **Explanation.** Respect process constraints, control dynamics, objective functions, and safety limits; an optimum is acceptable only inside the feasible and safe operating region. The question is framed around “Does a fault tree generally reason backward from a top event or forward from an initiator?.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 7. No; it limits pressure/consequence after overpressure develops.
 
@@ -449,6 +463,8 @@ D) It is always directly tabulated in the Handbook
 
 
 ---
+
+   **Explanation.** Respect process constraints, control dynamics, objective functions, and safety limits; an optimum is acceptable only inside the feasible and safe operating region. The question is framed around “If controller tuning increases speed but causes very low phase margin, what concern rises? ---.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 ## Quick Reference
 

@@ -92,6 +92,7 @@ Reaction order is obtained from kinetics; it need not equal stoichiometric coeff
 
 <!-- VERIFY id="WE-03-10-002-order" expr="2+1" expected="3" units="dimensionless" atol="1e-9" rtol="1e-9" -->
 
+**Why this works.** Apply the stated rate law with the correct reaction order and concentration or partial-pressure basis, then account for temperature through the kinetic parameter. In this example, the stated setup (“Problem. Rate law is k CA^2 CB. What is overall order? Solution. 3”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 10.3 Integrated Zero-, First-, and Second-Order Batch Kinetics
 
 For constant-volume batch reactors, the Handbook provides integrated concentration or conversion relations for zero-, first-, and second-order irreversible reactions.
@@ -130,6 +131,7 @@ Even a modest temperature increase can strongly increase rate when activation en
 
 ---
 
+**Why this works.** Apply the stated rate law with the correct reaction order and concentration or partial-pressure basis, then account for temperature through the kinetic parameter. In this example, the stated setup (“Problem. k1=0.10 s^-1 at T1 and Ea=50 kJ/mol. Qualitatively what happens to k if T increases? Solution. k increases exponentially”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 10.5 Reversible Reactions and Approach to Equilibrium
 
 For reversible reactions, net rate is forward rate minus reverse rate. At equilibrium the two rates are equal and net rate is zero.
@@ -148,6 +150,7 @@ The Handbook gives a first-order reversible form and identifies equilibrium conv
 
 ---
 
+**Why this works.** Apply the stated rate law with the correct reaction order and concentration or partial-pressure basis, then account for temperature through the kinetic parameter. In this example, the stated setup (“Problem. At equilibrium, what is net rate of a reversible reaction? Solution. Zero”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 10.6 Michaelis–Menten and Saturating Kinetics
 
 The Handbook gives the Michaelis–Menten form for enzyme-catalyzed reactions. At low substrate concentration, rate is approximately first order in substrate; at high concentration, rate approaches \(V_{\max}\).
@@ -188,6 +191,7 @@ For parallel power-law reactions, operating concentration and temperature can af
 
 <!-- VERIFY id="WE-03-10-007-D" expr="5*10" expected="50" units="mol" atol="1e-9" rtol="1e-9" -->
 
+**Why this works.** Apply the stated rate law with the correct reaction order and concentration or partial-pressure basis, then account for temperature through the kinetic parameter. In this example, the stated setup (“Problem. D/U selectivity is 5. If 10 mol U forms, how much D forms? Solution. 50 mol”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## Integrated Worked Examples
 
 ### Worked Example 8
@@ -198,6 +202,7 @@ For parallel power-law reactions, operating concentration and temperature can af
 
 <!-- VERIFY id="WE-03-10-008-time" expr="10/2" expected="5" units="min" atol="1e-9" rtol="1e-9" -->
 
+**Why this works.** Apply the stated rate law with the correct reaction order and concentration or partial-pressure basis, then account for temperature through the kinetic parameter. In this example, the stated setup (“Problem. Zero-order reaction k=2 mol/(L·min), CA0=10 mol/L. Time to depletion? Solution. 5 min”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ### Worked Example 9
 
 **Problem.** Second-order k=0.1 L/(mol·min), CA0=2 mol/L. Find CA after 5 min.
@@ -443,17 +448,31 @@ D) It is always directly tabulated in the Handbook
 
 2. 3.
 
+   **Explanation.** Apply the stated rate law with the correct reaction order and concentration or partial-pressure basis, then account for temperature through the kinetic parameter. The question is framed around “Rate law is k CA^2 CB. What is overall order?.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 3. CA/CA0=e^-1=0.3679.
+
+   **Explanation.** Apply the stated rate law with the correct reaction order and concentration or partial-pressure basis, then account for temperature through the kinetic parameter. The question is framed around “First-order k=0.2 min^-1. Find fraction remaining after 5 min.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 4. k increases exponentially.
 
+   **Explanation.** Apply the stated rate law with the correct reaction order and concentration or partial-pressure basis, then account for temperature through the kinetic parameter. The question is framed around “k1=0.10 s^-1 at T1 and Ea=50 kJ/mol. Qualitatively what happens to k if T increases?.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 5. Zero.
+
+   **Explanation.** Apply the stated rate law with the correct reaction order and concentration or partial-pressure basis, then account for temperature through the kinetic parameter. The question is framed around “At equilibrium, what is net rate of a reversible reaction?.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 6. 1/2.
 
+   **Explanation.** Apply the stated rate law with the correct reaction order and concentration or partial-pressure basis, then account for temperature through the kinetic parameter. The question is framed around “For Michaelis-Menten, C=Km. What fraction of Vmax is rate?.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 7. 50 mol.
 
+   **Explanation.** Apply the stated rate law with the correct reaction order and concentration or partial-pressure basis, then account for temperature through the kinetic parameter. The question is framed around “D/U selectivity is 5. If 10 mol U forms, how much D forms?.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 8. 5 min.
+
+   **Explanation.** Apply the stated rate law with the correct reaction order and concentration or partial-pressure basis, then account for temperature through the kinetic parameter. The question is framed around “Zero-order reaction k=2 mol/(L·min), CA0=10 mol/L. Time to depletion?.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 9. 1/CA=1/2+0.1×5=1 → CA=1 mol/L.
 
@@ -461,6 +480,8 @@ D) It is always directly tabulated in the Handbook
 
 
 ---
+
+   **Explanation.** Apply the stated rate law with the correct reaction order and concentration or partial-pressure basis, then account for temperature through the kinetic parameter. The question is framed around “What kinetic quantity is obtained from slope of ln k versus 1/T? ---.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 ## Quick Reference
 

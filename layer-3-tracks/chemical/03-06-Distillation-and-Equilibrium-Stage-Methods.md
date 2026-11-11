@@ -72,6 +72,7 @@ For a binary ideal flash, one composition variable and vapor fraction can often 
 
 <!-- VERIFY id="WE-03-06-001-L" expr="100-40" expected="60" units="kmol/h" atol="1e-9" rtol="1e-9" -->
 
+**Why this works.** Combine total and component balances with the equilibrium-stage relation and the specified reflux, recovery, or stage-efficiency condition. In this example, the stated setup (“Problem. Flash feed F=100 kmol/h produces V=40. Find L. Solution. 60 kmol/h”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 6.2 Differential or Rayleigh Distillation
 
 In differential batch distillation, vapor is removed as it forms, so the still composition changes continuously. The Handbook gives the Rayleigh integral connecting remaining liquid amount and composition.
@@ -112,6 +113,7 @@ Internal stage balances generate operating lines.
 
 <!-- VERIFY id="WE-03-06-003-B" expr="100-40" expected="60" units="kmol/h" atol="1e-9" rtol="1e-9" -->
 
+**Why this works.** Combine total and component balances with the equilibrium-stage relation and the specified reflux, recovery, or stage-efficiency condition. In this example, the stated setup (“Problem. Continuous column F=100, D=40. Find B. Solution. 60”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 6.4 Rectifying and Stripping Operating Lines
 
 Under constant molal overflow, the rectifying and stripping sections each have linear operating relations in \(x-y\) space.
@@ -130,6 +132,7 @@ The rectifying line is tied to reflux ratio and distillate composition. The stri
 
 ---
 
+**Why this works.** Combine total and component balances with the equilibrium-stage relation and the specified reflux, recovery, or stage-efficiency condition. In this example, the stated setup (“Problem. For RD=3 and xD=0.9, write rectifying line. Solution. y=3/4 x + 0.9/4 =0.75x+0.225”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 6.5 Feed Condition and the q-Line
 
 The q-line represents feed thermal condition. Saturated liquid gives a vertical q-line; saturated vapor gives a horizontal q-line. Two-phase and subcooled/superheated feeds produce other slopes.
@@ -148,6 +151,7 @@ The q-line slope is \(q/(q-1)\).
 
 ---
 
+**Why this works.** Combine total and component balances with the equilibrium-stage relation and the specified reflux, recovery, or stage-efficiency condition. In this example, the stated setup (“Problem. What is q-line slope for q=1? Solution. Infinite/vertical”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 6.6 McCabe–Thiele Stage Stepping
 
 The McCabe–Thiele method alternates horizontal equilibrium moves and vertical operating-line moves between \(x_D\) and \(x_B\). Each step corresponds to an ideal equilibrium stage under the method's assumptions.
@@ -166,6 +170,7 @@ Minimum reflux occurs when the operating construction pinches the equilibrium cu
 
 ---
 
+**Why this works.** Combine total and component balances with the equilibrium-stage relation and the specified reflux, recovery, or stage-efficiency condition. In this example, the stated setup (“Problem. Why does minimum reflux imply infinite theoretical stages? Solution. The operating construction pinches the equilibrium curve, driving local mass-”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 6.7 Murphree Efficiency and Real Stages
 
 Real trays may not achieve full equilibrium. The Handbook gives Murphree vapor efficiency based on actual vapor composition change relative to the equilibrium change possible from the leaving liquid.
@@ -205,6 +210,7 @@ Efficiency converts ideal-stage performance into a more realistic tray requireme
 
 ---
 
+**Why this works.** Combine total and component balances with the equilibrium-stage relation and the specified reflux, recovery, or stage-efficiency condition. In this example, the stated setup (“Problem. At total reflux, what happens to external product withdrawal in ideal analysis? Solution. Distillate and bottoms withdrawals go to zero; internal”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## As the Handbook States It
 
 Primary source basis: **Chemical Engineering, printed pp. 250–252; FE Chemical specification Area 10C–E**.
@@ -438,13 +444,21 @@ D) It is always directly tabulated in the Handbook
 
 1. 60 kmol/h.
 
+   **Explanation.** Combine total and component balances with the equilibrium-stage relation and the specified reflux, recovery, or stage-efficiency condition. The question is framed around “Flash feed F=100 kmol/h produces V=40. Find L.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 2. 50=32+60x → x=0.30.
 
+   **Explanation.** Combine total and component balances with the equilibrium-stage relation and the specified reflux, recovery, or stage-efficiency condition. The question is framed around “Flash: F=100, zA=0.5, V=40, yA=0.8. Find xA in liquid.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 3. 60.
+
+   **Explanation.** Combine total and component balances with the equilibrium-stage relation and the specified reflux, recovery, or stage-efficiency condition. The question is framed around “Continuous column F=100, D=40. Find B.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 4. y=3/4 x + 0.9/4 =0.75x+0.225.
 
 5. Infinite/vertical.
+
+   **Explanation.** Combine total and component balances with the equilibrium-stage relation and the specified reflux, recovery, or stage-efficiency condition. The question is framed around “What is q-line slope for q=1?.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 6. The operating construction pinches the equilibrium curve, driving local mass-transfer/stage progress to zero.
 
@@ -452,12 +466,16 @@ D) It is always directly tabulated in the Handbook
 
 8. D=50; B=50.
 
+   **Explanation.** Combine total and component balances with the equilibrium-stage relation and the specified reflux, recovery, or stage-efficiency condition. The question is framed around “Overall binary balance: F=100, z=0.5, xD=0.9, xB=0.1. Find D and B.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 9. Distillate and bottoms withdrawals go to zero; internal reflux is maximal.
 
 10. q=0.
 
 
 ---
+
+   **Explanation.** Combine total and component balances with the equilibrium-stage relation and the specified reflux, recovery, or stage-efficiency condition. The question is framed around “If a feed is saturated vapor, what is q? ---.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 ## Quick Reference
 

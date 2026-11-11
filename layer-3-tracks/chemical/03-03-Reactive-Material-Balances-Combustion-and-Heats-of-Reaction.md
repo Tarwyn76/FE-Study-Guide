@@ -93,6 +93,7 @@ Element balances remain valid even when species are created or consumed.
 
 <!-- VERIFY id="WE-03-03-002-X" expr="100*(100-25)/100" expected="75" units="percent" atol="0.05" rtol="1e-9" -->
 
+**Why this works.** Keep stoichiometry, extent or conversion, limiting-reactant logic, and reaction enthalpy on the same molar basis before closing the balance. In this example, the stated setup (“Problem. For A→B, 100 mol/h A enters and 25 mol/h remains. Find conversion. Solution. 75%”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 3.3 Limiting and Excess Reactants
 
 The limiting reactant is consumed first if the reaction proceeds to completion. An excess reactant is fed above the stoichiometric requirement.
@@ -111,6 +112,7 @@ Percent excess is measured relative to the stoichiometric amount required for th
 
 ---
 
+**Why this works.** Keep stoichiometry, extent or conversion, limiting-reactant logic, and reaction enthalpy on the same molar basis before closing the balance. In this example, the stated setup (“Problem. Reaction 2A+B→P. Feed 10 mol A and 8 mol B. Identify limiting reactant. Solution. A requires 5 mol B, so A is limiting”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 3.4 Combustion, Theoretical Air, and Excess Air
 
 The Handbook states that dry air may be modeled as 3.76 mol nitrogen per mol oxygen for combustion calculations. Begin by balancing the fuel combustion equation, then determine theoretical oxygen and air.
@@ -190,6 +192,7 @@ Solve reaction extent first, then close the energy balance on a common reference
 
 ---
 
+**Why this works.** Keep stoichiometry, extent or conversion, limiting-reactant logic, and reaction enthalpy on the same molar basis before closing the balance. In this example, the stated setup (“Problem. What must be solved before an adiabatic flame/reactor temperature? Solution. Reaction extent/composition and a reactive energy balance”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## Integrated Worked Examples
 
 ### Worked Example 8
@@ -200,6 +203,7 @@ Solve reaction extent first, then close the energy balance on a common reference
 
 <!-- VERIFY id="WE-03-03-008-selectivity" expr="80/20" expected="4" units="dimensionless" atol="1e-9" rtol="1e-9" -->
 
+**Why this works.** Keep stoichiometry, extent or conversion, limiting-reactant logic, and reaction enthalpy on the same molar basis before closing the balance. In this example, the stated setup (“Problem. For A→D and A→U, 80 mol D and 20 mol U form. Find D/U selectivity. Solution. 4”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ### Worked Example 9
 
 **Problem.** Stoichiometric air/fuel mass ratio is 17.2; actual is 20.64. Find percent excess air.
@@ -443,7 +447,11 @@ D) It is always directly tabulated in the Handbook
 
 1. A=7 mol; B=6 mol.
 
+   **Explanation.** Keep stoichiometry, extent or conversion, limiting-reactant logic, and reaction enthalpy on the same molar basis before closing the balance. The question is framed around “For A→2B, feed 10 mol A and extent ξ=3 mol. Find outlet A and B if no B enters.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 2. 75%.
+
+   **Explanation.** Keep stoichiometry, extent or conversion, limiting-reactant logic, and reaction enthalpy on the same molar basis before closing the balance. The question is framed around “For A→B, 100 mol/h A enters and 25 mol/h remains. Find conversion.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 3. A requires 5 mol B, so A is limiting.
 
@@ -451,11 +459,15 @@ D) It is always directly tabulated in the Handbook
 
 5. -100 kJ/mol reaction (exothermic).
 
+   **Explanation.** Keep stoichiometry, extent or conversion, limiting-reactant logic, and reaction enthalpy on the same molar basis before closing the balance. The question is framed around “For a reaction with ΣνΔHf°=-100 kJ/mol reaction, find heat of reaction.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 6. -100+0.020×100=-98 kJ/mol.
 
 7. Reaction extent/composition and a reactive energy balance.
 
 8. 4.
+
+   **Explanation.** Keep stoichiometry, extent or conversion, limiting-reactant logic, and reaction enthalpy on the same molar basis before closing the balance. The question is framed around “For A→D and A→U, 80 mol D and 20 mol U form. Find D/U selectivity.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 9. (20.64-17.2)/17.2×100=20%.
 
@@ -463,6 +475,8 @@ D) It is always directly tabulated in the Handbook
 
 
 ---
+
+   **Explanation.** Keep stoichiometry, extent or conversion, limiting-reactant logic, and reaction enthalpy on the same molar basis before closing the balance. The question is framed around “A fuel releases 800 kJ/mol and 0.5 mol/s reacts adiabatically. What energy release rate must products absorb if no work? ---.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 ## Quick Reference
 

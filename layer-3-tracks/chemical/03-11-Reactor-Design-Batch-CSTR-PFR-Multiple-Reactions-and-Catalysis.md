@@ -188,6 +188,7 @@ The Handbook gives Michaelis–Menten behavior as one saturating catalytic examp
 
 ---
 
+**Why this works.** Choose the reactor-specific mole balance first, then combine it with kinetics, conversion, residence time, and the applicable mixing assumption. In this example, the stated setup (“Problem. Does a catalyst change equilibrium constant at fixed temperature? Solution. No; it changes rates of approach to equilibrium”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## Integrated Worked Examples
 
 ### Worked Example 8
@@ -446,9 +447,15 @@ D) It is always directly tabulated in the Handbook
 
 3. V=FA0 X/r=3 m³.
 
+   **Explanation.** Choose the reactor-specific mole balance first, then combine it with kinetics, conversion, residence time, and the applicable mixing assumption. The question is framed around “PFR with FA0=10 mol/s and constant -rA=2 mol/(m³·s), target X=0.6. Find V.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 4. 3 m³.
 
+   **Explanation.** Choose the reactor-specific mole balance first, then combine it with kinetics, conversion, residence time, and the applicable mixing assumption. The question is framed around “CSTR same data as Problem 3 with exit rate 2. Find V.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 5. (1/2)^2=0.25.
+
+   **Explanation.** Choose the reactor-specific mole balance first, then combine it with kinetics, conversion, residence time, and the applicable mixing assumption. The question is framed around “First-order CSTRs in series kτ=1, N=2. Find CA2/CA0.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 6. A PFR can favor it by exposing feed to high A near inlet; exact result depends on rates.
 
@@ -457,6 +464,8 @@ D) It is always directly tabulated in the Handbook
 8. CA/CA0=1/(1+kτ)=0.5, so X=0.5.
 
 9. X=1-e^-1=0.632.
+
+   **Explanation.** Choose the reactor-specific mole balance first, then combine it with kinetics, conversion, residence time, and the applicable mixing assumption. The question is framed around “First-order PFR kτ=1. Find conversion.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 10. Concentration varies stepwise instead of remaining at one low exit concentration throughout.
 

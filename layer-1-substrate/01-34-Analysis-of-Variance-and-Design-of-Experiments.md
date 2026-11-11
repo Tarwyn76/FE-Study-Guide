@@ -1706,6 +1706,8 @@ A) $ab(n-1)$  B) $abn-1$  C) $a-1$  D) $b-1$.
     \boxed{6}.
     $$
 
+   **Explanation.** Compute the appropriate sums of squares and degrees of freedom, form the relevant mean squares or F ratio, and interpret the result at the stated significance level. The question is framed around “Using Question 12, find the F statistic.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 14. Since
 
     $$
@@ -1755,6 +1757,8 @@ A) $ab(n-1)$  B) $abn-1$  C) $a-1$  D) $b-1$.
     =
     \boxed{20}.
     $$
+
+   **Explanation.** Compute the appropriate sums of squares and degrees of freedom, form the relevant mean squares or F ratio, and interpret the result at the stated significance level. The question is framed around “A block design has SS{\text{total}}=90, SS{\text{treatments}}=30, and SS{\text{blocks}}=40. Find SS{\text{error}}.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 17.
 
@@ -2084,6 +2088,8 @@ A) $ab(n-1)$  B) $abn-1$  C) $a-1$  D) $b-1$.
    =
    \boxed{30}.
    $$
+
+   **Explanation.** Compute the appropriate sums of squares and degrees of freedom, form the relevant mean squares or F ratio, and interpret the result at the stated significance level. The question is framed around “Block decomposition. A block design has SS{\text{total}}=140, SS{\text{treatments}}=45, SS{\text{blocks}}=65. Find SS{\text{error}}.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 7. B effect at $A_1$:
 

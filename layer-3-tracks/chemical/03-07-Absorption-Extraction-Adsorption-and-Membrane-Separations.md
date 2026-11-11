@@ -90,6 +90,7 @@ This treatment is guide-developed from the same mass-transfer balances because t
 
 ---
 
+**Why this works.** Use the equilibrium or transport model appropriate to the stated contacting process, phase pair, flow direction, and recovery target. In this example, the stated setup (“Problem. What is the direction of solute transfer in stripping? Solution. From liquid to gas”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 7.3 Liquid-Liquid Extraction
 
 **Specification-required; not directly tabulated in the Chemical Engineering Handbook section.** Liquid-liquid extraction transfers a solute between partially immiscible liquid phases.
@@ -110,6 +111,7 @@ At equilibrium, a distribution coefficient may be written \(K_D=y/x\) on a speci
 
 <!-- VERIFY id="WE-03-07-003-raffinate" expr="10-7" expected="3" units="mol" atol="1e-9" rtol="1e-9" -->
 
+**Why this works.** Use the equilibrium or transport model appropriate to the stated contacting process, phase pair, flow direction, and recovery target. In this example, the stated setup (“Problem. Extraction feed carries 10 mol solute; extract contains 7 mol. If no reaction/loss, how much solute remains in raffinate? Solution. 3 mol”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 7.4 Adsorption
 
 **Specification-required; not directly tabulated in the Chemical Engineering Handbook section.** Adsorption transfers a species from a fluid to a solid surface.
@@ -130,6 +132,7 @@ For FE-level conceptual calculations, the problem may provide an isotherm such a
 
 <!-- VERIFY id="WE-03-07-004-adsorbed" expr="1*(100-20)" expected="80" units="mg" atol="0.05" rtol="1e-9" -->
 
+**Why this works.** Use the equilibrium or transport model appropriate to the stated contacting process, phase pair, flow direction, and recovery target. In this example, the stated setup (“Problem. Batch adsorption: 1 L solution drops from 100 to 20 mg/L using adsorbent. How much solute is adsorbed? Solution. 80 mg”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 7.5 Membrane Separations
 
 **Specification-required; not directly tabulated in the Chemical Engineering Handbook section.** A membrane separates species through selective transport driven by pressure, concentration, chemical potential, or electrical potential differences.
@@ -168,6 +171,7 @@ The FE problem usually supplies enough equilibrium or performance information; t
 
 ---
 
+**Why this works.** Use the equilibrium or transport model appropriate to the stated contacting process, phase pair, flow direction, and recovery target. In this example, the stated setup (“Problem. Which separation property most directly drives distillation? Solution. Volatility/VLE difference”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 7.7 Stagewise versus Continuous-Contact Separations
 
 Stagewise devices idealize repeated equilibrium contacts; packed columns and many membrane modules behave as continuous-contact devices. The Handbook relates packed-column height to transfer units and also gives HETP as an equivalent stage measure.
@@ -186,6 +190,7 @@ Do not mix ideal-stage count directly with physical height without an efficiency
 
 ---
 
+**Why this works.** Use the equilibrium or transport model appropriate to the stated contacting process, phase pair, flow direction, and recovery target. In this example, the stated setup (“Problem. Why can ideal-stage count not be directly used as packed height? Solution. A conversion such as HETP or HTU/NTU is required”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## Integrated Worked Examples
 
 ### Worked Example 8
@@ -194,6 +199,7 @@ Do not mix ideal-stage count directly with physical height without an efficiency
 
 **Solution.** It doubles.
 
+**Why this works.** Use the equilibrium or transport model appropriate to the stated contacting process, phase pair, flow direction, and recovery target. In this example, the stated setup (“Problem. If KG doubles at same driving force and area, what happens to transfer rate? Solution. It doubles”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ### Worked Example 9
 
 **Problem.** Which process is typically chosen for a dilute gas solute with high liquid solubility?
@@ -202,6 +208,7 @@ Do not mix ideal-stage count directly with physical height without an efficiency
 
 ---
 
+**Why this works.** Use the equilibrium or transport model appropriate to the stated contacting process, phase pair, flow direction, and recovery target. In this example, the stated setup (“Problem. Which process is typically chosen for a dilute gas solute with high liquid solubility? Solution. Absorption”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## As the Handbook States It
 
 Primary source basis: **Chemical Engineering absorption relations, printed p. 253; FE Chemical specification Area 10C–E. Extraction, adsorption, and membrane-process coverage is required by the specification but is not developed with dedicated formula sets in the Chemical Engineering Handbook pages.**.
@@ -435,26 +442,44 @@ D) It is always directly tabulated in the Handbook
 
 1. Z=4.0 m.
 
+   **Explanation.** Use the equilibrium or transport model appropriate to the stated contacting process, phase pair, flow direction, and recovery target. The question is framed around “Packed absorber NTU=5 and HTU=0.8 m. Find packing height.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 2. From liquid to gas.
+
+   **Explanation.** Use the equilibrium or transport model appropriate to the stated contacting process, phase pair, flow direction, and recovery target. The question is framed around “What is the direction of solute transfer in stripping?.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 3. 3 mol.
 
+   **Explanation.** Use the equilibrium or transport model appropriate to the stated contacting process, phase pair, flow direction, and recovery target. The question is framed around “Extraction feed carries 10 mol solute; extract contains 7 mol. If no reaction/loss, how much solute remains in raffinate?.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 4. 80 mg.
+
+   **Explanation.** Use the equilibrium or transport model appropriate to the stated contacting process, phase pair, flow direction, and recovery target. The question is framed around “Batch adsorption: 1 L solution drops from 100 to 20 mg/L using adsorbent. How much solute is adsorbed?.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 5. 1.0e-4 mol/(m²·s).
 
+   **Explanation.** Use the equilibrium or transport model appropriate to the stated contacting process, phase pair, flow direction, and recovery target. The question is framed around “Membrane permeability coefficient P/δ gives flux coefficient 2e-6 mol/(m²·s·kPa), Δp=50 kPa. Find flux.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 6. Volatility/VLE difference.
+
+   **Explanation.** Use the equilibrium or transport model appropriate to the stated contacting process, phase pair, flow direction, and recovery target. The question is framed around “Which separation property most directly drives distillation?.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 7. A conversion such as HETP or HTU/NTU is required.
 
 8. It doubles.
 
+   **Explanation.** Use the equilibrium or transport model appropriate to the stated contacting process, phase pair, flow direction, and recovery target. The question is framed around “If KG doubles at same driving force and area, what happens to transfer rate?.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 9. Absorption.
+
+   **Explanation.** Use the equilibrium or transport model appropriate to the stated contacting process, phase pair, flow direction, and recovery target. The question is framed around “Which process is typically chosen for a dilute gas solute with high liquid solubility?.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 10. Adsorption.
 
 
 ---
+
+   **Explanation.** Use the equilibrium or transport model appropriate to the stated contacting process, phase pair, flow direction, and recovery target. The question is framed around “Which process relies on surface affinity to a solid? ---.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 ## Quick Reference
 

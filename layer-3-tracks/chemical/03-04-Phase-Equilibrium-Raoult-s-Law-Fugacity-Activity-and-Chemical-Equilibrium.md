@@ -70,6 +70,7 @@ Phase equilibrium requires equality of the appropriate chemical potential/fugaci
 
 ---
 
+**Why this works.** Match the phase-equilibrium relation to the stated composition basis, phase assumptions, and degree of nonideality before evaluating the result. In this example, the stated setup (“Problem. For a nonreacting binary two-phase system, use phase rule to find degrees of freedom. Solution. F=C+2-P=2+2-2=2”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 4.2 Henry's Law for Dilute Solutes
 
 The Handbook gives Henry's law for low-concentration solutes in gas-liquid equilibrium. Partial pressure is proportional to liquid-phase mole fraction through the stated Henry constant convention.
@@ -108,6 +109,7 @@ Combining with Dalton's law gives \(y_iP=x_iP_i^{sat}\).
 
 ---
 
+**Why this works.** Match the phase-equilibrium relation to the stated composition basis, phase assumptions, and degree of nonideality before evaluating the result. In this example, the stated setup (“Problem. At 80°C, Psat,A=80 kPa and xA=0.4. Raoult partial pressure? Solution. pA=32 kPa”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 4.4 K-Values, Bubble Points, and Dew Points
 
 Define \(K_i=y_i/x_i\). Under ideal Raoult behavior, \(K_i=P_i^{sat}/P\). Bubble-point calculations begin with a liquid composition; dew-point calculations begin with a vapor composition.
@@ -126,6 +128,7 @@ At a bubble point \(\sum_i y_i=1\); at a dew point \(\sum_i x_i=1\).
 
 ---
 
+**Why this works.** Match the phase-equilibrium relation to the stated composition basis, phase assumptions, and degree of nonideality before evaluating the result. In this example, the stated setup (“Problem. Binary liquid has xA=0.4, KA=1.5, KB=0.667. Check bubble criterion ΣKx if xB=0.6. Solution. 1.5(0.4)+0.667(0.6)=1.0002≈1; near bubble condition”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 4.5 Fugacity Equality for Rigorous Phase Equilibrium
 
 The Handbook's rigorous VLE criterion is equality of component fugacity between vapor and liquid phases. Vapor fugacity commonly uses a fugacity coefficient; liquid fugacity commonly uses activity coefficient and a pure-liquid reference fugacity.
@@ -144,6 +147,7 @@ At low pressure and near-ideal behavior, these corrections approach unity and th
 
 ---
 
+**Why this works.** Match the phase-equilibrium relation to the stated composition basis, phase assumptions, and degree of nonideality before evaluating the result. In this example, the stated setup (“Problem. At low pressure, φ≈1 and γ≈1. What rigorous VLE form does fugacity equality approach? Solution. Raoult's law: yiP≈xiPisat”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 4.6 Activity Coefficients and Liquid-Phase Nonideality
 
 The activity coefficient \(\gamma_i\) corrects liquid-phase nonideality. The Handbook gives a Van Laar form for binary systems.
@@ -162,6 +166,7 @@ Values near one indicate near-ideal liquid behavior. Large deviations from one m
 
 ---
 
+**Why this works.** Match the phase-equilibrium relation to the stated composition basis, phase assumptions, and degree of nonideality before evaluating the result. In this example, the stated setup (“Problem. If γA=2 at given x, is liquid more or less ideal than γA=1? Solution. More nonideal; activity is twice xi on the chosen standard-state basis”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 4.7 Chemical Reaction Equilibrium
 
 For a reacting mixture, equilibrium is determined by standard Gibbs energy change and activities through the equilibrium constant.
@@ -180,6 +185,7 @@ The reaction quotient has the same activity-product structure; equilibrium occur
 
 ---
 
+**Why this works.** Match the phase-equilibrium relation to the stated composition basis, phase assumptions, and degree of nonideality before evaluating the result. In this example, the stated setup (“Problem. If ΔG°=-RT ln K and K>1, what sign is ΔG°? Solution. Negative”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## Integrated Worked Examples
 
 ### Worked Example 8
@@ -433,19 +439,31 @@ D) It is always directly tabulated in the Handbook
 
 1. F=C+2-P=2+2-2=2.
 
+   **Explanation.** Match the phase-equilibrium relation to the stated composition basis, phase assumptions, and degree of nonideality before evaluating the result. The question is framed around “For a nonreacting binary two-phase system, use phase rule to find degrees of freedom.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 2. p=Hx=1.0 kPa.
 
+   **Explanation.** Match the phase-equilibrium relation to the stated composition basis, phase assumptions, and degree of nonideality before evaluating the result. The question is framed around “Henry constant is 500 kPa and x=0.002. Find equilibrium gas partial pressure.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 3. pA=32 kPa.
+
+   **Explanation.** Match the phase-equilibrium relation to the stated composition basis, phase assumptions, and degree of nonideality before evaluating the result. The question is framed around “At 80°C, Psat,A=80 kPa and xA=0.4. Raoult partial pressure?.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 4. 1.5(0.4)+0.667(0.6)=1.0002≈1; near bubble condition.
 
 5. Raoult's law: yiP≈xiPisat.
 
+   **Explanation.** Match the phase-equilibrium relation to the stated composition basis, phase assumptions, and degree of nonideality before evaluating the result. The question is framed around “At low pressure, φ≈1 and γ≈1. What rigorous VLE form does fugacity equality approach?.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 6. More nonideal; activity is twice xi on the chosen standard-state basis.
 
 7. Negative.
 
+   **Explanation.** Match the phase-equilibrium relation to the stated composition basis, phase assumptions, and degree of nonideality before evaluating the result. The question is framed around “If ΔG°=-RT ln K and K>1, what sign is ΔG°?.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 8. K=2.
+
+   **Explanation.** Match the phase-equilibrium relation to the stated composition basis, phase assumptions, and degree of nonideality before evaluating the result. The question is framed around “For yA=0.6 and xA=0.3, find K-value.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 9. 0.5/2+0.5/0.5=1.25, so the assumed state is not the dew point.
 
@@ -453,6 +471,8 @@ D) It is always directly tabulated in the Handbook
 
 
 ---
+
+   **Explanation.** Match the phase-equilibrium relation to the stated composition basis, phase assumptions, and degree of nonideality before evaluating the result. The question is framed around “What equality defines phase equilibrium rigorously for each component? ---.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 ## Quick Reference
 

@@ -92,6 +92,7 @@ Single-pass conversion concerns material entering one reactor pass. Overall conv
 
 <!-- VERIFY id="WE-03-02-002-X" expr="100*(100-10)/100" expected="90" units="percent" atol="0.05" rtol="1e-9" -->
 
+**Why this works.** Separate the overall process boundary from internal recycle, bypass, or purge streams so internal circulation is not double-counted as external flow. In this example, the stated setup (“Problem. Fresh A feed is 100 mol/h; 90 mol/h is consumed overall. Find overall conversion. Solution. 90%”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 2.3 Bypass Streams
 
 A bypass sends part of a feed around a unit and recombines it later. Bypass is often used to control final temperature, concentration, or humidity.
@@ -153,6 +154,7 @@ For a nonreacting species, generation and consumption terms vanish.
 
 <!-- VERIFY id="WE-03-02-005-accum" expr="5-3" expected="2" units="kg/min" atol="1e-9" rtol="1e-9" -->
 
+**Why this works.** Separate the overall process boundary from internal recycle, bypass, or purge streams so internal circulation is not double-counted as external flow. In this example, the stated setup (“Problem. A tank has inlet 5 kg/min and outlet 3 kg/min with no reaction. Find accumulation rate. Solution. +2 kg/min”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 2.6 Well-Mixed Tank Transients
 
 For a perfectly mixed tank, the outlet composition equals the tank composition. If volume is constant, a species balance can often be written directly on concentration.
@@ -191,6 +193,7 @@ A good cut-set exposes specifications such as separator recovery, reactor conver
 
 ---
 
+**Why this works.** Separate the overall process boundary from internal recycle, bypass, or purge streams so internal circulation is not double-counted as external flow. In this example, the stated setup (“Problem. Why should an overall balance around a recycle loop be used first? Solution. It eliminates the internal recycle unknown”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## Integrated Worked Examples
 
 ### Worked Example 8
@@ -199,6 +202,7 @@ A good cut-set exposes specifications such as separator recovery, reactor conver
 
 **Solution.** 20=18+2; balanced.
 
+**Why this works.** Separate the overall process boundary from internal recycle, bypass, or purge streams so internal circulation is not double-counted as external flow. In this example, the stated setup (“Problem. A recycle process fresh feed is 20 kmol/h, product 18, purge 2. Verify steady total balance. Solution. 20=18+2; balanced”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ### Worked Example 9
 
 **Problem.** A mixed tank with τ=5 min starts at C=0 and sees Cin=2 mol/L. Find C at t=5 min.
@@ -442,19 +446,35 @@ D) It is always directly tabulated in the Handbook
 
 1. R=0.50.
 
+   **Explanation.** Separate the overall process boundary from internal recycle, bypass, or purge streams so internal circulation is not double-counted as external flow. The question is framed around “Fresh feed is 100 kmol/h and recycle is 50 kmol/h. Find recycle ratio R=recycle/fresh.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 2. 90%.
+
+   **Explanation.** Separate the overall process boundary from internal recycle, bypass, or purge streams so internal circulation is not double-counted as external flow. The question is framed around “Fresh A feed is 100 mol/h; 90 mol/h is consumed overall. Find overall conversion.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 3. 30 and 70 kg/h.
 
+   **Explanation.** Separate the overall process boundary from internal recycle, bypass, or purge streams so internal circulation is not double-counted as external flow. The question is framed around “A 100 kg/h feed is bypassed 30%. Find bypass and processed flows.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 4. 20 kmol/h.
+
+   **Explanation.** Separate the overall process boundary from internal recycle, bypass, or purge streams so internal circulation is not double-counted as external flow. The question is framed around “An inert enters at 2 kmol/h and leaves only in a purge stream that is 10 mol% inert. Find total purge flow.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 5. +2 kg/min.
 
+   **Explanation.** Separate the overall process boundary from internal recycle, bypass, or purge streams so internal circulation is not double-counted as external flow. The question is framed around “A tank has inlet 5 kg/min and outlet 3 kg/min with no reaction. Find accumulation rate.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 6. τ=V/Q=10 min.
+
+   **Explanation.** Separate the overall process boundary from internal recycle, bypass, or purge streams so internal circulation is not double-counted as external flow. The question is framed around “A constant-volume mixed tank has Q=10 L/min, V=100 L, Cin steps from 0 to 1 mol/L. Find time constant.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 7. It eliminates the internal recycle unknown.
 
+   **Explanation.** Separate the overall process boundary from internal recycle, bypass, or purge streams so internal circulation is not double-counted as external flow. The question is framed around “Why should an overall balance around a recycle loop be used first?.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 8. 20=18+2; balanced.
+
+   **Explanation.** Separate the overall process boundary from internal recycle, bypass, or purge streams so internal circulation is not double-counted as external flow. The question is framed around “A recycle process fresh feed is 20 kmol/h, product 18, purge 2. Verify steady total balance.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 9. C=2(1-e^-1)=1.264 mol/L.
 
@@ -462,6 +482,8 @@ D) It is always directly tabulated in the Handbook
 
 
 ---
+
+   **Explanation.** Separate the overall process boundary from internal recycle, bypass, or purge streams so internal circulation is not double-counted as external flow. The question is framed around “If an inert enters at 1 kmol/h and purge gas is 5 mol% inert with no inert in product, find purge flow. ---.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 ## Quick Reference
 

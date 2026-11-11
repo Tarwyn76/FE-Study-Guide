@@ -70,6 +70,7 @@ A PFD is intended for process understanding and balance calculations, not detail
 
 ---
 
+**Why this works.** Trace the result from the flowsheet or P&ID assumptions through equipment duty, sizing or scale-up relation, and the stated cost basis. In this example, the stated setup (“Problem. What belongs on a PFD but not necessarily detailed valve-by-valve piping? Solution. Major equipment, principal streams, key conditions and flows”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 12.2 Piping and Instrumentation Diagrams
 
 **Specification-required; not directly tabulated in the Chemical Engineering Handbook pages.** A P&ID adds piping, valves, instruments, control loops, equipment tags, and interlocks needed to describe process control and safeguarding.
@@ -88,6 +89,7 @@ A P&ID contains much more implementation detail than a PFD but still does not re
 
 ---
 
+**Why this works.** Trace the result from the flowsheet or P&ID assumptions through equipment duty, sizing or scale-up relation, and the stated cost basis. In this example, the stated setup (“Problem. What drawing adds control valves and instrument loops? Solution. P&ID”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 12.3 Equipment Selection and First-Pass Sizing
 
 **Specification-required; guide-developed workflow.** First-pass equipment selection starts with duty: flow, phase, temperature, pressure, heat load, separation target, or reaction volume.
@@ -126,6 +128,7 @@ Depending on the equipment, relevant groups may include Reynolds, Froude, power 
 
 ---
 
+**Why this works.** Trace the result from the flowsheet or P&ID assumptions through equipment duty, sizing or scale-up relation, and the stated cost basis. In this example, the stated setup (“Problem. Why is geometric scale-up alone insufficient for mixing equipment? Solution. Hydrodynamic similarity such as Reynolds/Froude/power number may chan”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 12.5 Cost Indexes
 
 The Handbook provides the cost-index relation for updating a historical equipment cost to a new year.
@@ -184,6 +187,7 @@ Match economic precision to design maturity. A Class 5 screening estimate should
 
 ---
 
+**Why this works.** Trace the result from the flowsheet or P&ID assumptions through equipment duty, sizing or scale-up relation, and the stated cost basis. In this example, the stated setup (“Problem. Which estimate class has the least project definition in the Handbook table? Solution. Class 5”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## Integrated Worked Examples
 
 ### Worked Example 8
@@ -194,6 +198,7 @@ Match economic precision to design maturity. A Class 5 screening estimate should
 
 <!-- VERIFY id="WE-03-12-008-capital" expr="1000000*5" expected="5000000" units="USD" atol="0.5" rtol="1e-9" -->
 
+**Why this works.** Trace the result from the flowsheet or P&ID assumptions through equipment duty, sizing or scale-up relation, and the stated cost basis. In this example, the stated setup (“Problem. Purchased-equipment cost is 1.0M and a screening Lang factor is 5.0. Estimate fixed capital. Solution. 5.0M”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ### Worked Example 9
 
 **Problem.** If project definition increases, what generally happens to expected estimate range?
@@ -202,6 +207,7 @@ Match economic precision to design maturity. A Class 5 screening estimate should
 
 ---
 
+**Why this works.** Trace the result from the flowsheet or P&ID assumptions through equipment duty, sizing or scale-up relation, and the stated cost basis. In this example, the stated setup (“Problem. If project definition increases, what generally happens to expected estimate range? Solution. It narrows while preparation effort rises”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## As the Handbook States It
 
 Primary source basis: **FE Chemical specification Area 14A–E; Chemical Engineering cost-estimation tables, printed pp. 262–264; general Engineering Economics, printed pp. 235–242**.
@@ -437,19 +443,33 @@ D) It is always directly tabulated in the Handbook
 
 2. P&ID.
 
+   **Explanation.** Trace the result from the flowsheet or P&ID assumptions through equipment duty, sizing or scale-up relation, and the stated cost basis. The question is framed around “What drawing adds control valves and instrument loops?.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 3. A=500/(1×25)=20 m².
+
+   **Explanation.** Trace the result from the flowsheet or P&ID assumptions through equipment duty, sizing or scale-up relation, and the stated cost basis. The question is framed around “A heat exchanger duty is 500 kW, U=1 kW/(m²·K), corrected ΔTlm=25 K. Find area.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 4. Hydrodynamic similarity such as Reynolds/Froude/power number may change.
 
 5. $260,000.
 
+   **Explanation.** Trace the result from the flowsheet or P&ID assumptions through equipment duty, sizing or scale-up relation, and the stated cost basis. The question is framed around “Old equipment cost is 200,000 at index 500; new index is 650. Find updated cost.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 6. 2^0.6=1.516.
+
+   **Explanation.** Trace the result from the flowsheet or P&ID assumptions through equipment duty, sizing or scale-up relation, and the stated cost basis. The question is framed around “A similar unit doubles capacity with n=0.6. Find cost ratio.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 7. Class 5.
 
+   **Explanation.** Trace the result from the flowsheet or P&ID assumptions through equipment duty, sizing or scale-up relation, and the stated cost basis. The question is framed around “Which estimate class has the least project definition in the Handbook table?.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 8. $5.0M.
 
+   **Explanation.** Trace the result from the flowsheet or P&ID assumptions through equipment duty, sizing or scale-up relation, and the stated cost basis. The question is framed around “Purchased-equipment cost is 1.0M and a screening Lang factor is 5.0. Estimate fixed capital.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 9. It narrows while preparation effort rises.
+
+   **Explanation.** Trace the result from the flowsheet or P&ID assumptions through equipment duty, sizing or scale-up relation, and the stated cost basis. The question is framed around “If project definition increases, what generally happens to expected estimate range?.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 10. The method's uncertainty is much larger than those digits imply.
 

@@ -1656,6 +1656,8 @@ D) causation.
     \boxed{0.6}.
     $$
 
+   **Explanation.** Relate the fitted value or residual to the regression equation and preserve the distinction between model fit, prediction, and unexplained variation. The question is framed around “If observed y=9 and fitted \hat y=8.4, find the residual.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 16.
 
     $$

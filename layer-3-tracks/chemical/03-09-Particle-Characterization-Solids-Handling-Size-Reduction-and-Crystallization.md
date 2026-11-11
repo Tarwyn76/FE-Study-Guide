@@ -70,6 +70,7 @@ Always identify whether a reported cumulative distribution is number, mass, or v
 
 ---
 
+**Why this works.** Use the stated particle-size statistic or solids model consistently; number, mass, surface-area, and energy bases are not interchangeable. In this example, the stated setup (“Problem. A cumulative PSD says 70% mass is below 100 µm. What fraction is above 100 µm? Solution. 30%”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 9.2 Mean Particle Diameters
 
 The Handbook gives several mean diameters because no single average preserves every physical property. Number mean emphasizes particle count; Sauter mean preserves surface-area-to-volume behavior and is important in transfer operations.
@@ -88,6 +89,7 @@ Use the mean diameter definition specified in the problem rather than an arithme
 
 ---
 
+**Why this works.** Use the stated particle-size statistic or solids model consistently; number, mass, surface-area, and energy bases are not interchangeable. In this example, the stated setup (“Problem. Why is Sauter mean relevant to transfer? Solution. It preserves surface-area-to-volume behavior”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 9.3 Sieve Analysis and Mesh Conversion
 
 The Handbook provides a mesh-to-micron conversion table and indicates that a plus sign means retained on a sieve while a minus sign means passing.
@@ -128,6 +130,7 @@ Equipment selection depends on feed size, desired product size, hardness, throug
 
 <!-- VERIFY id="WE-03-09-004-RR" expr="20/2" expected="10" units="dimensionless" atol="0.05" rtol="1e-9" -->
 
+**Why this works.** Use the stated particle-size statistic or solids model consistently; number, mass, surface-area, and energy bases are not interchangeable. In this example, the stated setup (“Problem. Feed size is 20 mm and product size 2 mm. Estimate reduction ratio. Solution. 10”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 9.5 Classification and Separation of Solids
 
 The Handbook lists wet and dry classifiers such as sloping-tank classifiers, hydrocyclones, and other devices across particle-size ranges.
@@ -146,6 +149,7 @@ Classification separates by settling, centrifugal action, density, size, magneti
 
 ---
 
+**Why this works.** Use the stated particle-size statistic or solids model consistently; number, mass, surface-area, and energy bases are not interchangeable. In this example, the stated setup (“Problem. What outlet of a hydrocyclone commonly carries coarser/denser solids? Solution. Underflow”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## 9.6 Bulk Solids, Angle of Repose, Transport, and Storage
 
 Angle of repose describes the stable free-surface slope of a granular pile and influences hopper and storage design. The FE specification also includes belts, pneumatic transport, slurries, tanks, and hoppers.
@@ -194,6 +198,7 @@ Use the phase diagram to identify stable solid form and equilibrium liquid compo
 
 **Solution.** Passes 20-mesh and is retained on 40-mesh.
 
+**Why this works.** Use the stated particle-size statistic or solids model consistently; number, mass, surface-area, and energy bases are not interchangeable. In this example, the stated setup (“Problem. What does '-20+40 mesh' mean? Solution. Passes 20-mesh and is retained on 40-mesh”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ### Worked Example 9
 
 **Problem.** Why do number- and mass-based PSD means differ?
@@ -202,6 +207,7 @@ Use the phase diagram to identify stable solid form and equilibrium liquid compo
 
 ---
 
+**Why this works.** Use the stated particle-size statistic or solids model consistently; number, mass, surface-area, and energy bases are not interchangeable. In this example, the stated setup (“Problem. Why do number- and mass-based PSD means differ? Solution. Large particles contribute far more mass/volume per particle”) fixes the applicable data and assumptions. Checking the final value against those assumptions and its units confirms that the result is physically and mathematically consistent.
 ## As the Handbook States It
 
 Primary source basis: **Chemical Engineering, printed pp. 256–262; FE Chemical specification Area 11**.
@@ -435,15 +441,27 @@ D) It is always directly tabulated in the Handbook
 
 1. 30%.
 
+   **Explanation.** Use the stated particle-size statistic or solids model consistently; number, mass, surface-area, and energy bases are not interchangeable. The question is framed around “A cumulative PSD says 70% mass is below 100 µm. What fraction is above 100 µm?.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 2. It preserves surface-area-to-volume behavior.
+
+   **Explanation.** Use the stated particle-size statistic or solids model consistently; number, mass, surface-area, and energy bases are not interchangeable. The question is framed around “Why is Sauter mean relevant to transfer?.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 3. 0.15.
 
+   **Explanation.** Use the stated particle-size statistic or solids model consistently; number, mass, surface-area, and energy bases are not interchangeable. The question is framed around “A 200 g sieve sample retains 30 g in one interval. Find interval mass fraction.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 4. 10.
+
+   **Explanation.** Use the stated particle-size statistic or solids model consistently; number, mass, surface-area, and energy bases are not interchangeable. The question is framed around “Feed size is 20 mm and product size 2 mm. Estimate reduction ratio.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 5. Underflow.
 
+   **Explanation.** Use the stated particle-size statistic or solids model consistently; number, mass, surface-area, and energy bases are not interchangeable. The question is framed around “What outlet of a hydrocyclone commonly carries coarser/denser solids?.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
+
 6. θ=atan(0.5)=26.6°.
+
+   **Explanation.** Use the stated particle-size statistic or solids model consistently; number, mass, surface-area, and energy bases are not interchangeable. The question is framed around “A conical pile has h=1.0 m and radius 2.0 m. Find angle of repose.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 7. 70 kg, assuming no other solute outlet.
 
@@ -455,6 +473,8 @@ D) It is always directly tabulated in the Handbook
 
 
 ---
+
+   **Explanation.** Use the stated particle-size statistic or solids model consistently; number, mass, surface-area, and energy bases are not interchangeable. The question is framed around “If cooling moves a solution from one liquid region into liquid+solid region, what operation is indicated? ---.” This check ties the stated answer to the governing model and the problem data, and it provides a basis for verifying sign, units, or logical consistency.
 
 ## Quick Reference
 
