@@ -1,0 +1,31 @@
+name: Repair repeated Chemical answer text
+on:
+  push:
+    branches: [figure-cleanup-strict]
+    paths:
+      - tools/repair_repeated_chemical_answers.py
+      - .github/workflows/repair-repeated-chemical.yml
+  workflow_dispatch:
+permissions: {contents: write}
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: figure-cleanup-strict, fetch-depth: 0}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: python tools/repair_repeated_chemical_answers.py
+      - run: |
+          python -m pip install pyyaml
+          python tools/technical_audit_all_layers.py --root . --out tools/validation/technical-audit
+      - name: Show duplicate counts
+        run: python -c "import csv,collections; r=list(csv.DictReader(open('tools/validation/technical-audit/Technical-Audit-Issues.csv',encoding='utf-8-sig'))); print(collections.Counter((x['severity'],x['category']) for x in r if x['category']=='repeated_solution_text'))"
+      - name: Commit repairs
+        run: |
+          git config user.name "ChatGPT FE Cleanup"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add layer-3-tracks/chemical
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Replace repeated Chemical answer-key boilerplate"
+          git push origin HEAD:figure-cleanup-strict
