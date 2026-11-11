@@ -1610,21 +1610,21 @@ A) $ab(n-1)$  B) $abn-1$  C) $a-1$  D) $b-1$.
 
 ### Conceptual
 
-1. A **factor** is an experimental input; a **level** is one setting of that The item statement identifies the case as: Distinguish a factor, level, treatment, and response. ANOVA and design-of-experiments conclusions should connect the test statistic and significance level to factor effects, interaction structure, replication, and experimental error. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+1. A **factor** is an experimental input; a **level** is one setting of that
    factor; a **treatment** is the condition applied to an experimental unit; the
    **response** is the measured output. (§34.1)
 
-2. It is the smallest unit that can independently receive a treatment assignment. The item statement identifies the case as: What is an experimental unit?. ANOVA and design-of-experiments conclusions should connect the test statistic and significance level to factor effects, interaction structure, replication, and experimental error. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+2. It is the smallest unit that can independently receive a treatment assignment.
    (§34.1)
 
-3. Replication applies the treatment independently to multiple experimental The item statement identifies the case as: How does replication differ from repeated measurement?. ANOVA and design-of-experiments conclusions should connect the test statistic and significance level to factor effects, interaction structure, replication, and experimental error. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+3. Replication applies the treatment independently to multiple experimental
    units. Repeated measurements may only remeasure the same unit and therefore
    need not provide independent experimental-error information. (§34.1)
 
-4. Randomization reduces systematic alignment between treatments and uncontrolled The item statement identifies the case as: What problem is randomization intended to reduce?. ANOVA and design-of-experiments conclusions should connect the test statistic and significance level to factor effects, interaction structure, replication, and experimental error. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+4. Randomization reduces systematic alignment between treatments and uncontrolled
    run-order or assignment effects. (§34.1)
 
-5. Blocking isolates a known nuisance source so its variation does not remain The item statement identifies the case as: What problem is blocking intended to reduce?. ANOVA and design-of-experiments conclusions should connect the test statistic and significance level to factor effects, interaction structure, replication, and experimental error. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+5. Blocking isolates a known nuisance source so its variation does not remain
    entirely inside the residual error term. (§34.1, §34.4)
 
 6.
@@ -1637,16 +1637,16 @@ A) $ab(n-1)$  B) $abn-1$  C) $a-1$  D) $b-1$.
 
    (§34.2)
 
-7. It establishes evidence that the population treatment means are **not all The item statement identifies the case as: What does a significant global one-way ANOVA establish?. ANOVA and design-of-experiments conclusions should connect the test statistic and significance level to factor effects, interaction structure, replication, and experimental error. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+7. It establishes evidence that the population treatment means are **not all
    equal**. It does not identify every differing pair. (§34.3)
 
-8. $MSE$ estimates the residual or within-treatment variation against which the The item statement identifies the case as: Why is MSE used as the denominator of the treatment F ratio?. ANOVA and design-of-experiments conclusions should connect the test statistic and significance level to factor effects, interaction structure, replication, and experimental error. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+8. $MSE$ estimates the residual or within-treatment variation against which the
    between-treatment mean-square variation is compared. (§34.3)
 
-9. Interaction means the effect of one factor changes depending on the level of The item statement identifies the case as: What is an interaction in a two-factor experiment?. ANOVA and design-of-experiments conclusions should connect the test statistic and significance level to factor effects, interaction structure, replication, and experimental error. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+9. Interaction means the effect of one factor changes depending on the level of
    another factor. (§34.5)
 
-10. Replication creates within-cell information and therefore an independent The item statement identifies the case as: Why is replication important in a replicated factorial ANOVA?. ANOVA and design-of-experiments conclusions should connect the test statistic and significance level to factor effects, interaction structure, replication, and experimental error. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+10. Replication creates within-cell information and therefore an independent
     estimate of experimental error for the replicated factorial ANOVA table.
     (§34.6)
 
@@ -1706,7 +1706,7 @@ A) $ab(n-1)$  B) $abn-1$  C) $a-1$  D) $b-1$.
     \boxed{6}.
     $$
 
-14. Since The item statement identifies the case as: If F0=6.00 and the 5% critical value is 4.26, state the ANOVA decision. ANOVA and design-of-experiments conclusions should connect the test statistic and significance level to factor effects, interaction structure, replication, and experimental error. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+14. Since
 
     $$
     6.00>4.26,
@@ -1716,7 +1716,7 @@ A) $ab(n-1)$  B) $abn-1$  C) $a-1$  D) $b-1$.
     \boxed{\text{reject the equal-means null hypothesis}.}
     $$
 
-15. Treatment df: The item statement identifies the case as: In a complete block design with k=4 treatments and b=5 blocks, find treatment, block, error, and total df. ANOVA and design-of-experiments conclusions should connect the test statistic and significance level to factor effects, interaction structure, replication, and experimental error. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+15. Treatment df:
 
     $$
     4-1=\boxed{3}.
@@ -1801,7 +1801,7 @@ A) $ab(n-1)$  B) $abn-1$  C) $a-1$  D) $b-1$.
     \boxed{6}.
     $$
 
-19. At $A_1$: The item statement identifies the case as: Cell means are 10 and 14 at A1, and 20 and 32 at A2. Find the B simple effect at each A level and the difference of differences. ANOVA and design-of-experiments conclusions should connect the test statistic and significance level to factor effects, interaction structure, replication, and experimental error. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+19. At $A_1$:
 
     $$
     14-10
@@ -1829,25 +1829,26 @@ A) $ab(n-1)$  B) $abn-1$  C) $a-1$  D) $b-1$.
 
 ### Multiple Choice
 
-20. **B.** Randomization changes assignment/run order to reduce systematic bias. The item statement identifies the case as: Which design principle deliberately changes run order to reduce systematic bias?. ANOVA and design-of-experiments conclusions should connect the test statistic and significance level to factor effects, interaction structure, replication, and experimental error. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+20. **B.** Randomization changes assignment/run order to reduce systematic bias.
     (§34.1)
 
-21. **B.** The one-way ANOVA ratio is $MST/MSE$. (§34.3) The item statement identifies the case as: In one-way ANOVA, F is. ANOVA and design-of-experiments conclusions should connect the test statistic and significance level to factor effects, interaction structure, replication, and experimental error. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+21. **B.** The one-way ANOVA ratio is $MST/MSE$. (§34.3)
 
-22. **C.** Treatment df are $k-1$. (§34.3) The item statement identifies the case as: One-way treatment df for k treatments is. ANOVA and design-of-experiments conclusions should connect the test statistic and significance level to factor effects, interaction structure, replication, and experimental error. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+22. **C.** Treatment df are $k-1$. (§34.3)
 
-23. **B.** A global rejection means not all population means are equal. (§34.3) The item statement identifies the case as: A significant global one-way ANOVA means. ANOVA and design-of-experiments conclusions should connect the test statistic and significance level to factor effects, interaction structure, replication, and experimental error. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+23. **B.** A global rejection means not all population means are equal. (§34.3)
 
-24. **A.** Blocking adds a modeled nuisance source. (§34.4) The item statement identifies the case as: A randomized complete block design adds which modeled source?. ANOVA and design-of-experiments conclusions should connect the test statistic and significance level to factor effects, interaction structure, replication, and experimental error. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+24. **A.** Blocking adds a modeled nuisance source. (§34.4)
 
-25. **B.** Interaction df are $(a-1)(b-1)$. (§34.5) The item statement identifies the case as: In a replicated two-factor design, interaction df are. ANOVA and design-of-experiments conclusions should connect the test statistic and significance level to factor effects, interaction structure, replication, and experimental error. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+25. **B.** Interaction df are $(a-1)(b-1)$. (§34.5)
 
-26. **B.** Nonparallel response patterns are characteristic of interaction. The item statement identifies the case as: If two interaction-plot lines are strongly nonparallel, this suggests. ANOVA and design-of-experiments conclusions should connect the test statistic and significance level to factor effects, interaction structure, replication, and experimental error. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+26. **B.** Nonparallel response patterns are characteristic of interaction.
     (§34.5)
 
-27. **A.** Replicated two-factor error df are $ab(n-1)$. (§34.5–34.6) The item statement identifies the case as: In a replicated two-factor design, error df are. ANOVA and design-of-experiments conclusions should connect the test statistic and significance level to factor effects, interaction structure, replication, and experimental error. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+27. **A.** Replicated two-factor error df are $ab(n-1)$. (§34.5–34.6)
 
 ---
+
 ## Practice Problems
 
 1. **Design vocabulary.** An engineer studies three lubricant types at two load
@@ -1902,7 +1903,7 @@ A) $ab(n-1)$  B) $abn-1$  C) $a-1$  D) $b-1$.
 
 ## Practice Problem Solutions
 
-1. Factors: The item statement identifies the case as: Design vocabulary. An engineer studies three lubricant types at two load. ANOVA and design-of-experiments conclusions should connect the test statistic and significance level to factor effects, interaction structure, replication, and experimental error. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+1. Factors:
 
    - lubricant type: 3 levels,
    - load: 2 levels.
@@ -1916,7 +1917,7 @@ A) $ab(n-1)$  B) $abn-1$  C) $a-1$  D) $b-1$.
    This is naturally a two-factor factorial question if all lubricant-load
    combinations are studied.
 
-2. Treatment means: The item statement identifies the case as: One-way sums of squares. Three groups are. ANOVA and design-of-experiments conclusions should connect the test statistic and significance level to factor effects, interaction structure, replication, and experimental error. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+2. Treatment means:
 
    $$
    \bar y_A=5,
@@ -1978,7 +1979,7 @@ A) $ab(n-1)$  B) $abn-1$  C) $a-1$  D) $b-1$.
    \boxed{20}.
    $$
 
-3. Here The item statement identifies the case as: One-way ANOVA. Use Problem 2 to construct the ANOVA df, mean squares, and. ANOVA and design-of-experiments conclusions should connect the test statistic and significance level to factor effects, interaction structure, replication, and experimental error. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+3. Here
 
    $$
    k=3,\qquad N=9.
@@ -2018,7 +2019,7 @@ A) $ab(n-1)$  B) $abn-1$  C) $a-1$  D) $b-1$.
    \boxed{F=7}.
    $$
 
-4. Since The item statement identifies the case as: One-way decision. For Problem 3, use. ANOVA and design-of-experiments conclusions should connect the test statistic and significance level to factor effects, interaction structure, replication, and experimental error. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+4. Since
 
    $$
    7>5.14,
@@ -2038,7 +2039,7 @@ A) $ab(n-1)$  B) $abn-1$  C) $a-1$  D) $b-1$.
 
    The global test alone does not identify every differing pair.
 
-5. With The item statement identifies the case as: Block degrees of freedom. A complete block design has five treatments and. ANOVA and design-of-experiments conclusions should connect the test statistic and significance level to factor effects, interaction structure, replication, and experimental error. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+5. With
 
    $$
    k=5,\qquad b=6,
@@ -2084,7 +2085,7 @@ A) $ab(n-1)$  B) $abn-1$  C) $a-1$  D) $b-1$.
    \boxed{30}.
    $$
 
-7. B effect at $A_1$: The item statement identifies the case as: Interaction. Cell means for a 2\times2 experiment are. ANOVA and design-of-experiments conclusions should connect the test statistic and significance level to factor effects, interaction structure, replication, and experimental error. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+7. B effect at $A_1$:
 
    $$
    26-20
@@ -2110,7 +2111,7 @@ A) $ab(n-1)$  B) $abn-1$  C) $a-1$  D) $b-1$.
 
    The B effect changes strongly with A, indicating interaction.
 
-8. With The item statement identifies the case as: Factorial degrees of freedom. A design has. ANOVA and design-of-experiments conclusions should connect the test statistic and significance level to factor effects, interaction structure, replication, and experimental error. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+8. With
 
    $$
    a=2,\qquad b=3,\qquad n=5,
@@ -2169,7 +2170,7 @@ A) $ab(n-1)$  B) $abn-1$  C) $a-1$  D) $b-1$.
    \boxed5.
    $$
 
-10. **(a)** Four adhesives only: The item statement identifies the case as: Design selection. Choose one-way ANOVA, randomized complete block, or. ANOVA and design-of-experiments conclusions should connect the test statistic and significance level to factor effects, interaction structure, replication, and experimental error. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+10. **(a)** Four adhesives only:
 
     $$
     \boxed{\text{one-way ANOVA}.}
@@ -2190,6 +2191,7 @@ A) $ab(n-1)$  B) $abn-1$  C) $a-1$  D) $b-1$.
     $$
 
 ---
+
 ## Quick Reference
 
 **One-way hypotheses**
