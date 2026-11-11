@@ -153,7 +153,7 @@ def is_dimensionless_prompt(prompt:str)->bool:
 def normalize_unit_text(text:str)->str:
     """Expose units hidden inside common LaTeX wrappers before matching."""
     s=str(text)
-    s=re.sub(r"\\\\(?:text|mathrm)\\{\\s*([^{}]+?)\\s*\\}", r"\\1", s)
+    s=re.sub(r"\\(?:text|mathrm)\{\s*([^{}]+?)\s*\}", r"\1", s)
     s=s.replace(r"\\,", " ").replace(r"\\ ", " ")
     s=s.replace("³", "^3").replace("²", "^2")
     return s
