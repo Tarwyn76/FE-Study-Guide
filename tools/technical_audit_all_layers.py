@@ -1967,7 +1967,10 @@ def audit_chapter_level(
         )
 
     # Objective count heuristic.
-    objective_lines = re.findall(r"(?m)^\s*[*-]\s+\*\*[^*]+\*\*\s+(.+)$", objective_section)
+    objective_lines = re.findall(
+        r"(?m)^\s*[*-]\s+(?:\*\*[^*]+\*\*\s+|\d+(?:\.\d+)+\s+)(.+)$",
+        objective_section,
+    )
     if objective_section and len(objective_lines) < 3:
         add_issue(
             issues, "REVIEW", "few_learning_objectives",
