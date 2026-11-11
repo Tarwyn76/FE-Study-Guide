@@ -1222,37 +1222,37 @@ D) the residual set to zero.
 
 ### Conceptual
 
-1. An algorithm specifies a finite, unambiguous sequence that transforms defined The item statement identifies the case as: What makes a procedure an algorithm rather than merely a formula?. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+1. An algorithm specifies a finite, unambiguous sequence that transforms defined
    inputs into outputs and makes decisions, repetition, termination, and failure
    behavior explicit. A formula may be one step inside that procedure. (§27.1)
 
-2. A **precondition** must hold before the normal procedure is valid. A The item statement identifies the case as: Distinguish a precondition from a postcondition. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+2. A **precondition** must hold before the normal procedure is valid. A
    **postcondition** is guaranteed after successful completion. (§27.1)
 
-3. Real inputs can violate assumptions and iterative methods can fail. Without a The item statement identifies the case as: Why should an algorithm define a failure path?. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+3. Real inputs can violate assumptions and iterative methods can fail. Without a
    failure path the procedure may divide by zero, index invalid data, loop forever,
    or report an untrustworthy value as valid. (§27.1)
 
-4. Rounded terminal = start/stop; rectangle = process/calculation; parallelogram = The item statement identifies the case as: Name the four core flowchart symbols emphasized in this chapter and state their purposes. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+4. Rounded terminal = start/stop; rectangle = process/calculation; parallelogram =
    input/output; diamond = decision. (§27.2)
 
-5. In the Handbook pseudocode convention, `=` assigns a value to a variable; The item statement identifies the case as: In Handbook-style pseudocode, what is the difference between `=` and `==`?. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+5. In the Handbook pseudocode convention, `=` assigns a value to a variable;
    `==` compares two values and returns true or false. (§27.3)
 
-6. `and` is true only when both operands are true. `or` is true when at least one The item statement identifies the case as: Explain the difference between `and` and `or` in a compound Boolean expression. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+6. `and` is true only when both operands are true. `or` is true when at least one
    operand is true. (§27.4)
 
-7. An ordered ladder takes exactly one path once a condition succeeds. Independent The item statement identifies the case as: Why can an ordered `if / else if / else` ladder be safer than several independent `if` statements for exclusive categories?. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+7. An ordered ladder takes exactly one path once a condition succeeds. Independent
    `if` statements may allow multiple overlapping categories to execute. (§27.4)
 
-8. Use `for` when the number of repetitions is known from the problem. Use The item statement identifies the case as: When is a `for` loop preferable to a `while` loop?. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+8. Use `for` when the number of repetitions is known from the problem. Use
    `while` when continuation depends on a condition whose satisfaction count is
    not known beforehand. (§27.5)
 
-9. Tolerance defines success; `maxIter` prevents nontermination when success does The item statement identifies the case as: Why does a numerical iteration need both a tolerance and a maximum iteration count?. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+9. Tolerance defines success; `maxIter` prevents nontermination when success does
    not occur. They solve different problems. (§27.6)
 
-10. An invariant is a property intended to remain true throughout iteration. If it The item statement identifies the case as: What is an invariant, and how can it help detect an algorithm defect?. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+10. An invariant is a property intended to remain true throughout iteration. If it
     becomes false, the algorithm state has violated an assumption before the final
     answer is reached. (§27.7)
 
@@ -1278,7 +1278,7 @@ D) the residual set to zero.
 
     (§27.5)
 
-13. Five points create four adjacent intervals. Use The item statement identifies the case as: Five data points are stored in `x[1]` through `x[5]`. How many adjacent. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+13. Five points create four adjacent intervals. Use
 
     ```text
     for k = 1 to 4
@@ -1294,7 +1294,7 @@ D) the residual set to zero.
 
     (§27.4)
 
-15. By De Morgan's law: The item statement identifies the case as: Write the logical complement of. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+15. By De Morgan's law:
 
     ```text
     pressure < 200 or pressure > 500
@@ -1302,20 +1302,20 @@ D) the residual set to zero.
 
     (§27.4)
 
-16. After 12 processed measurements, The item statement identifies the case as: A loop begins with `count = 0` and increments `count` once for each valid. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+16. After 12 processed measurements,
 
     $$\boxed{0\le\texttt{count}\le12}.$$
 
     (§27.7)
 
-17. Yes. Since The item statement identifies the case as: A guarded Newton method uses `tol = 1e-6` and current residual. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+17. Yes. Since
 
     $$3.2\times10^{-7}<10^{-6},$$
 
     the residual criterion is satisfied, so the algorithm should return success
     before another Newton update. (§27.6)
 
-18. Reject the input or return an invalid-`n` status because composite Simpson's The item statement identifies the case as: Composite Simpson integration receives `n = 7`. What should a correct. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+18. Reject the input or return an invalid-`n` status because composite Simpson's
     rule requires a positive **even** number of subintervals. (§27.6)
 
 19.
@@ -1330,29 +1330,30 @@ D) the residual set to zero.
 
 ### Multiple Choice
 
-20. **B — diamond.** (§27.2) The item statement identifies the case as: Which flowchart symbol normally represents a decision?. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+20. **B — diamond.** (§27.2)
 
-21. **C — `x = 5`.** It assigns the value 5. (§27.3) The item statement identifies the case as: Which statement changes the stored value of `x`?. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+21. **C — `x = 5`.** It assigns the value 5. (§27.3)
 
-22. **A — `while`.** Its condition is checked before the first body execution. The item statement identifies the case as: A loop whose body may execute zero times is most naturally. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+22. **A — `while`.** Its condition is checked before the first body execution.
     (§27.5)
 
-23. **B.** A nonpositive area is invalid for this physical cross-section and must The item statement identifies the case as: Which is the best guard before calculating `sigma = F/A`?. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+23. **B.** A nonpositive area is invalid for this physical cross-section and must
     be rejected before division. (§27.1)
 
-24. **C.** Exact threshold values expose incorrect `<` versus `<=` choices. The item statement identifies the case as: Which test case is most likely to expose an inequality-boundary defect?. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+24. **C.** Exact threshold values expose incorrect `<` versus `<=` choices.
     (§27.7)
 
-25. **C — $O(n)$.** One pass scales proportionally with the number of entries. The item statement identifies the case as: A single pass through all n array entries is typically. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+25. **C — $O(n)$.** One pass scales proportionally with the number of entries.
     (§27.7)
 
-26. **A — $O(\log n)$.** Each decision removes roughly half the remaining search The item statement identifies the case as: Repeatedly halving a search interval is associated with. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+26. **A — $O(\log n)$.** Each decision removes roughly half the remaining search
     space. (§27.7)
 
-27. **C.** The hard iteration limit was reached before the success condition, so The item statement identifies the case as: Reaching `maxIter` while the residual is still above tolerance should return. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+27. **C.** The hard iteration limit was reached before the success condition, so
     the status is not converged. (§27.6)
 
 ---
+
 ## Practice Problems
 
 1. **Guarded geometry algorithm.** Write pseudocode that reads width `b` and
@@ -1404,7 +1405,7 @@ D) the residual set to zero.
 
 ## Practice Problem Solutions
 
-1. **Guarded geometry algorithm** The item statement identifies the case as: Guarded geometry algorithm. Write pseudocode that reads width `b` and. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+1. **Guarded geometry algorithm**
 
    ```text
    read(b; h)
@@ -1422,7 +1423,7 @@ D) the residual set to zero.
 
    **Check.** The normal path guarantees $A>0$ and $P>0$. (§27.1)
 
-2. **Boundary classification** The item statement identifies the case as: Boundary classification. Write pseudocode for. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+2. **Boundary classification**
 
    ```text
    if x < 10 then
@@ -1443,7 +1444,7 @@ D) the residual set to zero.
 
    The exact boundaries are covered once each. (§27.4)
 
-3. **Trace** The item statement identifies the case as: Trace table. Trace. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+3. **Trace**
 
    Initial `product=1`.
 
@@ -1458,7 +1459,7 @@ D) the residual set to zero.
 
    (§27.3, §27.5)
 
-4. **Filtered average** The item statement identifies the case as: Filtered average. Write pseudocode that averages only strictly positive. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+4. **Filtered average**
 
    ```text
    sum = 0
@@ -1482,7 +1483,7 @@ D) the residual set to zero.
    **Check.** Division occurs only when at least one positive value was accepted.
    (§27.5)
 
-5. **Bisection guard** The item statement identifies the case as: Bisection guard. Write the initialization and validation logic for a. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+5. **Bisection guard**
 
    ```text
    fa = f(a)
@@ -1506,7 +1507,7 @@ D) the residual set to zero.
 
    After this block, the standard bisection loop may begin. (§27.6)
 
-6. **Guarded Newton** The item statement identifies the case as: Newton guard. Write pseudocode for Newton root finding with. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+6. **Guarded Newton**
 
    ```text
    x = x0
@@ -1538,7 +1539,7 @@ D) the residual set to zero.
    If the loop reaches its end without meeting either exit condition, the status
    remains `"not converged"`. (§27.6)
 
-7. **Simpson weights** The item statement identifies the case as: Simpson weights. For `n=6`, list the seven composite-Simpson weights and. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+7. **Simpson weights**
 
    For $n=6$, seven point weights are
 
@@ -1558,7 +1559,7 @@ D) the residual set to zero.
 
    Endpoints are handled separately with weight 1. (§27.6)
 
-8. **Euler loop** The item statement identifies the case as: Euler loop. Write pseudocode to solve. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+8. **Euler loop**
 
    Update:
 
@@ -1588,7 +1589,7 @@ D) the residual set to zero.
 
    **Check.** Four steps of 0.1 reach $t=0.4$. (§27.6)
 
-9. **Testing plan** The item statement identifies the case as: Testing plan. Design four test cases—nominal, boundary, invalid input, and. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+9. **Testing plan**
 
    One valid set:
 
@@ -1600,7 +1601,7 @@ D) the residual set to zero.
 
    Each case targets a different control path. (§27.7)
 
-10. **Efficiency** The item statement identifies the case as: Efficiency. For n=1024, compare the rough work of. Algorithm and logic questions should make the decision sequence explicit, including inputs, branching conditions, loop termination, and the output produced by each path. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+10. **Efficiency**
 
     Linear scan:
 
@@ -1618,6 +1619,7 @@ D) the residual set to zero.
     (§27.7)
 
 ---
+
 ## Quick Reference
 
 **Algorithm contract**
