@@ -393,32 +393,32 @@ D) A substitute for verified data
 
 ## Practice Problems
 
-1. 1. Name the four broad engineering material classes used in this chapter.
+1. Name the four broad engineering material classes used in this chapter.
 
-2. 2. Which primary bond is characteristic of metals?
+2. Which primary bond is characteristic of metals?
 
-3. 3. Which crystal structure is ferrite (α-iron) identified with in the Handbook: BCC or FCC?
+3. Which crystal structure is ferrite (α-iron) identified with in the Handbook: BCC or FCC?
 
-4. 4. Which crystal structure is austenite (γ-iron) identified with?
+4. Which crystal structure is austenite (γ-iron) identified with?
 
-5. 5. Distinguish thermoplastic from thermoset.
+5. Distinguish thermoplastic from thermoset.
 
-6. 6. If a two-phase composite has volume fractions 0.30 and 0.70 with densities 7800 and 1200 kg/m3, estimate composite density by rule of mixtures.
+6. If a two-phase composite has volume fractions 0.30 and 0.70 with densities 7800 and 1200 kg/m3, estimate composite density by rule of mixtures.
 
-7. 7. Why can grain boundaries increase strength yet also accelerate diffusion/corrosion in some systems?
+7. Why can grain boundaries increase strength yet also accelerate diffusion/corrosion in some systems?
 
-8. 8. Define anisotropy.
+8. Define anisotropy.
 
-9. 9. What is Tg?
+9. What is Tg?
 
-10. 10. Why should material selection use service-specific property data even when bonding trends are known?
+10. Why should material selection use service-specific property data even when bonding trends are known?
 
 
 ---
 
 ## Practice Problem Solutions
 
-1. 1. Metals/alloys, ceramics/glasses, polymers, and composites.
+1. Metals/alloys, ceramics/glasses, polymers, and composites.
 
 2. Metallic bond. Delocalized valence electrons shared through the lattice characterize metallic bonding and help explain electrical conductivity.
 
@@ -426,17 +426,17 @@ D) A substitute for verified data
 
 4. FCC. A face-centered cubic unit cell has lattice points at the corners and at the center of each face.
 
-5. 5. Thermoplastics can be melted/reformed; thermosets are crosslinked and do not simply remelt for reshaping.
+5. Thermoplastics can be melted/reformed; thermosets are crosslinked and do not simply remelt for reshaping.
 
-6. 6. ρ=0.30(7800)+0.70(1200)=3180 kg/m3.
+6. ρ=0.30(7800)+0.70(1200)=3180 kg/m3.
 
-7. 7. Boundaries impede dislocations but can provide high-energy paths/sites for diffusion and electrochemical activity.
+7. Boundaries impede dislocations but can provide high-energy paths/sites for diffusion and electrochemical activity.
 
 8. Properties depend on direction. This directional dependence is anisotropy and results from structure or orientation within the material.
 
 9. The glass-transition temperature marks the temperature range where amorphous polymer regions change from glassy to rubbery behavior.
 
-10. 10. Trends are qualitative; actual composition, processing, temperature, environment, geometry, and failure mode control performance.
+10. Trends are qualitative; actual composition, processing, temperature, environment, geometry, and failure mode control performance.
 
 
 ---
