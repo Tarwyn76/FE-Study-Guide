@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# final ordered-cleanup validation
 # units-objectives audit
 # duplicate-normalization audit
 # post-ordered-cleanup audit
