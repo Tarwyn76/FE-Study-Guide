@@ -143,7 +143,7 @@ Identify breakpoints where the preferred alternative switches. These thresholds 
 
 ### Worked Example 6 — Read the Model Before Calculating
 
-Identify the cash-flow pattern, comparison date, rate basis, and sign convention. Then apply **Sensitivity**. A numerical result is valid only when every cash flow has been placed on the same economic basis.
+For project-selection sensitivity, first place each alternative on the same cash-flow and study-period basis. Then vary the uncertain driver—such as cost, life, MARR, or payoff—and observe whether the preferred alternative changes. The switching point is decision-specific, not merely a breakeven quantity.
 
 ---
 
