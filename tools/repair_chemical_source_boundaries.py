@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Chemical source-boundary repair workflow entry point.
 from pathlib import Path
 import re
 ROOT=Path(__file__).resolve().parents[1]
