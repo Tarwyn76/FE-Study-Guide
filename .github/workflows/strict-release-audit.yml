@@ -30,6 +30,12 @@ jobs:
           if [ -f tools/validation/technical-audit/Technical-Audit-Issues.csv ]; then
             python -c "import csv; p='tools/validation/technical-audit/Technical-Audit-Issues.csv'; f=open(p,encoding='utf-8-sig',newline=''); [print(r) for r in csv.DictReader(f) if r.get('severity') in ('CRITICAL','ERROR')]"
           fi
+      - name: Print warning and review summary
+        if: always()
+        run: |
+          if [ -f tools/validation/technical-audit/Technical-Audit-Issues.csv ]; then
+            python -c "import csv,collections; p='tools/validation/technical-audit/Technical-Audit-Issues.csv'; rows=list(csv.DictReader(open(p,encoding='utf-8-sig',newline=''))); cats=collections.Counter((r['severity'],r['category']) for r in rows if r['severity'] in ('WARNING','REVIEW')); print('CATEGORY_COUNTS'); [print(k[0],k[1],v) for k,v in sorted(cats.items(), key=lambda x:(x[0][0],-x[1],x[0][1]))]; print('SAMPLES'); [print(r['severity'],r['category'],r['chapter'],r['section'],r['message']) for r in rows if r['severity'] in ('WARNING','REVIEW')][:80]"
+          fi
       - name: Upload release audit diagnostics
         if: always()
         uses: actions/upload-artifact@v4
