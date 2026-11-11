@@ -72,7 +72,6 @@ For dilute systems with a known equilibrium line, the NTU integral measures how 
 
 <!-- VERIFY id="WE-03-07-001-Z" expr="5*0.8" expected="4.0" units="m" atol="0.005" rtol="1e-9" -->
 
-**Reasoning check.** Separation calculations must match the governing equilibrium or transport relation to the specified phases, flow directions, recovery target, and selected process basis. The stated example conditions (### Worked Example 1 Problem. Packed absorber NTU=5 and HTU=0.8 m. Find packing height) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 7.2 Stripping as the Reverse Gas-Liquid Operation
 
 Stripping transfers a volatile solute from liquid to gas. The same two-film and operating/equilibrium-line ideas used for absorption apply, but the desired transfer direction is reversed.
@@ -91,7 +90,6 @@ This treatment is guide-developed from the same mass-transfer balances because t
 
 ---
 
-**Reasoning check.** Separation calculations must match the governing equilibrium or transport relation to the specified phases, flow directions, recovery target, and selected process basis. The stated example conditions (### Worked Example 2 Problem. What is the direction of solute transfer in stripping?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 7.3 Liquid-Liquid Extraction
 
 **Specification-required; not directly tabulated in the Chemical Engineering Handbook section.** Liquid-liquid extraction transfers a solute between partially immiscible liquid phases.
@@ -112,7 +110,6 @@ At equilibrium, a distribution coefficient may be written \(K_D=y/x\) on a speci
 
 <!-- VERIFY id="WE-03-07-003-raffinate" expr="10-7" expected="3" units="mol" atol="1e-9" rtol="1e-9" -->
 
-**Reasoning check.** Separation calculations must match the governing equilibrium or transport relation to the specified phases, flow directions, recovery target, and selected process basis. The stated example conditions (### Worked Example 3 Problem. Extraction feed carries 10 mol solute; extract contains 7 mol. If no reaction/loss, how much solute remains in raffinate?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 7.4 Adsorption
 
 **Specification-required; not directly tabulated in the Chemical Engineering Handbook section.** Adsorption transfers a species from a fluid to a solid surface.
@@ -133,7 +130,6 @@ For FE-level conceptual calculations, the problem may provide an isotherm such a
 
 <!-- VERIFY id="WE-03-07-004-adsorbed" expr="1*(100-20)" expected="80" units="mg" atol="0.05" rtol="1e-9" -->
 
-**Reasoning check.** Separation calculations must match the governing equilibrium or transport relation to the specified phases, flow directions, recovery target, and selected process basis. The stated example conditions (### Worked Example 4 Problem. Batch adsorption: 1 L solution drops from 100 to 20 mg/L using adsorbent. How much solute is adsorbed?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 7.5 Membrane Separations
 
 **Specification-required; not directly tabulated in the Chemical Engineering Handbook section.** A membrane separates species through selective transport driven by pressure, concentration, chemical potential, or electrical potential differences.
@@ -172,7 +168,6 @@ The FE problem usually supplies enough equilibrium or performance information; t
 
 ---
 
-**Reasoning check.** Separation calculations must match the governing equilibrium or transport relation to the specified phases, flow directions, recovery target, and selected process basis. The stated example conditions (### Worked Example 6 Problem. Which separation property most directly drives distillation?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## 7.7 Stagewise versus Continuous-Contact Separations
 
 Stagewise devices idealize repeated equilibrium contacts; packed columns and many membrane modules behave as continuous-contact devices. The Handbook relates packed-column height to transfer units and also gives HETP as an equivalent stage measure.
@@ -191,7 +186,6 @@ Do not mix ideal-stage count directly with physical height without an efficiency
 
 ---
 
-**Reasoning check.** Separation calculations must match the governing equilibrium or transport relation to the specified phases, flow directions, recovery target, and selected process basis. The stated example conditions (### Worked Example 7 Problem. Why can ideal-stage count not be directly used as packed height?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## Integrated Worked Examples
 
 ### Worked Example 8
@@ -200,7 +194,6 @@ Do not mix ideal-stage count directly with physical height without an efficiency
 
 **Solution.** It doubles.
 
-**Reasoning check.** Separation calculations must match the governing equilibrium or transport relation to the specified phases, flow directions, recovery target, and selected process basis. The stated example conditions (### Worked Example 8 Problem. If KG doubles at same driving force and area, what happens to transfer rate?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ### Worked Example 9
 
 **Problem.** Which process is typically chosen for a dilute gas solute with high liquid solubility?
@@ -209,7 +202,6 @@ Do not mix ideal-stage count directly with physical height without an efficiency
 
 ---
 
-**Reasoning check.** Separation calculations must match the governing equilibrium or transport relation to the specified phases, flow directions, recovery target, and selected process basis. The stated example conditions (### Worked Example 9 Problem. Which process is typically chosen for a dilute gas solute with high liquid solubility?) define the data and assumptions used here, so the numerical or qualitative result can be checked against the governing model and its units.
 ## As the Handbook States It
 
 Primary source basis: **Chemical Engineering absorption relations, printed p. 253; FE Chemical specification Area 10C–E. Extraction, adsorption, and membrane-process coverage is required by the specification but is not developed with dedicated formula sets in the Chemical Engineering Handbook pages.**.
@@ -385,11 +377,11 @@ D) It is always directly tabulated in the Handbook
 
 14. The calculation can use inconsistent flow/composition bases, omit an internal/external stream, or apply the wrong equilibrium/rate model. Define the process basis and boundary first.
 
-15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations. The item statement identifies the case as: Why should a material balance normally be closed before a process energy balance?. Separation calculations must match the governing equilibrium or transport relation to the specified phases, flow directions, recovery target, and selected process basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+15. The material balance determines the amounts and compositions needed for enthalpy and reaction-energy calculations.
 
-16. To verify that the unknowns are matched by independent equations/specifications before algebra begins. The item statement identifies the case as: What is the purpose of a degrees-of-freedom check?. Separation calculations must match the governing equilibrium or transport relation to the specified phases, flow directions, recovery target, and selected process basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+16. To verify that the unknowns are matched by independent equations/specifications before algebra begins.
 
-17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation. The item statement identifies the case as: When should a relation supplied by an FE problem override a remembered correlation?. Separation calculations must match the governing equilibrium or transport relation to the specified phases, flow directions, recovery target, and selected process basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+17. Whenever the problem provides the model/data; use that stated relation rather than substituting an unstated correlation.
 
 18. The Handbook intentionally omits some theories and formulas; exam specifications can require knowledge not directly tabulated in it.
 
@@ -413,6 +405,7 @@ D) It is always directly tabulated in the Handbook
 
 
 ---
+
 ## Practice Problems
 
 1. Packed absorber NTU=5 and HTU=0.8 m. Find packing height.
@@ -440,28 +433,29 @@ D) It is always directly tabulated in the Handbook
 
 ## Practice Problem Solutions
 
-1. Z=4.0 m. The item statement identifies the case as: Packed absorber NTU=5 and HTU=0.8 m. Find packing height. Separation calculations must match the governing equilibrium or transport relation to the specified phases, flow directions, recovery target, and selected process basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+1. Z=4.0 m.
 
-2. From liquid to gas. The item statement identifies the case as: What is the direction of solute transfer in stripping?. Separation calculations must match the governing equilibrium or transport relation to the specified phases, flow directions, recovery target, and selected process basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+2. From liquid to gas.
 
-3. 3 mol. The item statement identifies the case as: Extraction feed carries 10 mol solute; extract contains 7 mol. If no reaction/loss, how much solute remains in raffinate?. Separation calculations must match the governing equilibrium or transport relation to the specified phases, flow directions, recovery target, and selected process basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+3. 3 mol.
 
-4. 80 mg. The item statement identifies the case as: Batch adsorption: 1 L solution drops from 100 to 20 mg/L using adsorbent. How much solute is adsorbed?. Separation calculations must match the governing equilibrium or transport relation to the specified phases, flow directions, recovery target, and selected process basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+4. 80 mg.
 
-5. 1.0e-4 mol/(m²·s). The item statement identifies the case as: Membrane permeability coefficient P/δ gives flux coefficient 2e-6 mol/(m²·s·kPa), Δp=50 kPa. Find flux. Separation calculations must match the governing equilibrium or transport relation to the specified phases, flow directions, recovery target, and selected process basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+5. 1.0e-4 mol/(m²·s).
 
-6. Volatility/VLE difference. The item statement identifies the case as: Which separation property most directly drives distillation?. Separation calculations must match the governing equilibrium or transport relation to the specified phases, flow directions, recovery target, and selected process basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+6. Volatility/VLE difference.
 
-7. A conversion such as HETP or HTU/NTU is required. The item statement identifies the case as: Why can ideal-stage count not be directly used as packed height?. Separation calculations must match the governing equilibrium or transport relation to the specified phases, flow directions, recovery target, and selected process basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+7. A conversion such as HETP or HTU/NTU is required.
 
-8. It doubles. The item statement identifies the case as: If KG doubles at same driving force and area, what happens to transfer rate?. Separation calculations must match the governing equilibrium or transport relation to the specified phases, flow directions, recovery target, and selected process basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+8. It doubles.
 
-9. Absorption. The item statement identifies the case as: Which process is typically chosen for a dilute gas solute with high liquid solubility?. Separation calculations must match the governing equilibrium or transport relation to the specified phases, flow directions, recovery target, and selected process basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+9. Absorption.
 
-10. Adsorption. The item statement identifies the case as: Which process relies on surface affinity to a solid?. Separation calculations must match the governing equilibrium or transport relation to the specified phases, flow directions, recovery target, and selected process basis. The answer is therefore tied to the stated conditions, basis, and units rather than to an isolated memorized value.
+10. Adsorption.
 
 
 ---
+
 ## Quick Reference
 
 **Source anchor:** Chemical Engineering absorption relations, printed p. 253; FE Chemical specification Area 10C–E. Extraction, adsorption, and membrane-process coverage is required by the specification but is not developed with dedicated formula sets in the Chemical Engineering Handbook pages..
