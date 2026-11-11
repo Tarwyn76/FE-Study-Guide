@@ -20,7 +20,7 @@ jobs:
       - name: Run technical audit
         run: |
           python -m pip install pyyaml
-          python tools/technical_audit_all_layers.py . --out tools/validation/technical-audit
+          python tools/technical_audit_all_layers.py --root . --out tools/validation/technical-audit
       - name: Print remaining short-explanation counts
         run: |
           python -c "import csv,collections; r=list(csv.DictReader(open('tools/validation/technical-audit/Technical-Audit-Issues.csv',encoding='utf-8-sig'))); c=collections.Counter(x['category'] for x in r if x['category'] in ('assessment_explanation_short','worked_example_short_solution')); print(c)"
