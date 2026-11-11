@@ -283,7 +283,7 @@ It would apply the wrong professional or economic rule. First distinguish **Repl
 
 ### 13
 
-It would apply the wrong professional or economic rule. First distinguish **Integration** from nearby concepts, then apply it under the section's stated conditions.
+It would blur the boundary between engineering judgment and legal advice. First distinguish the engineer's technical and ethical duty from questions that require legal interpretation, then apply the chapter's escalation and documentation guidance.
 
 **Remediate:** Chapter 02-03 · concept `PROF-2A-003-07`.
 
