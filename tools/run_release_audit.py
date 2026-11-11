@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # exam-review-clearance validation
+# second exam-review-clearance validation
 # final ordered-cleanup validation
 # units-objectives audit
 # duplicate-normalization audit
