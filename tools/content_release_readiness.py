@@ -206,8 +206,8 @@ for r in dense[:40]:
     report.append(f"- {r['file']} — template density {r['template_density']:.1%}; max same template {r['max_same_template']}; duplicate choices {r['duplicate_choices']}.")
 report += ["","## Reference/publication QA","",
 f"Reference files: **{len(ref_files)}**.",
-f"Chapters absent from registers: **{len(unmapped)}**.",
-f"Hard-broken URLs: **{len(hardurls)}**; restricted/timeout: **{len(softurls)}**.",
+f"Chapters absent from registers: **{len(unmapped)}**.",\n"Unmapped chapter IDs: "+(", ".join(unmapped) if unmapped else "None")+".",
+f"Hard-broken URLs: **{len(hardurls)}**; restricted/timeout: **{len(softurls)}**.",\n"Hard-broken URL rows: "+("; ".join(f"{x[0]} -> {x[1]} [{x[3]}]" for x in hardurls) if hardurls else "None")+".",
 "URL details: meta/release-readiness/reference-url-check.csv.","",
 "## Duplicate reference files",""]
 report += ["- "+" / ".join(x) for x in ref_dups] if ref_dups else ["- None byte-equivalent after whitespace normalization."]
