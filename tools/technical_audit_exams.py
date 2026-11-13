@@ -167,9 +167,13 @@ def prompt_has_dimensional_quantity(prompt:str)->bool:
     return bool(NUMBER_UNIT_RE.search(stripped) or CURRENCY_RE.search(stripped))
 
 def solution_has_recognized_unit(solution:str)->bool:
-    """Recognize engineering units or currency attached to a numeric result."""
+    """Recognize engineering units, generic consistent units, or currency in a numeric result."""
     s=normalize_unit_text(solution)
-    return bool(NUMBER_UNIT_RE.search(s) or CURRENCY_RE.search(s))
+    return bool(
+        NUMBER_UNIT_RE.search(s)
+        or CURRENCY_RE.search(s)
+        or re.search(r"\b(?:mass|length) units?\b", s, re.I)
+    )
 
 def audit_blueprints(root:Path,issues:list[Issue]):
     pb=root/'meta'/'exam-blueprints.yaml'; tb=root/'meta'/'tier-review-blueprints.yaml'
