@@ -156,15 +156,30 @@ ref_dups=[x for x in hashes.values() if len(x)>1]
 unmapped=[cid for cid in CH if cid not in mapped]
 def check_url(row):
     fname,u=row
+    headers={"User-Agent":"Mozilla/5.0 FE-Study-Guide-QA/1.0"}
     try:
-        req=urllib.request.Request(u,method="HEAD",headers={"User-Agent":"FE-Study-Guide-QA/1.0"})
+        req=urllib.request.Request(u,method="HEAD",headers=headers)
         with urllib.request.urlopen(req,timeout=6) as resp:
-            st="OK" if resp.status<400 else "BAD"; code=str(resp.status)
+            if resp.status<400:
+                return (fname,u,"OK",str(resp.status))
     except urllib.error.HTTPError as e:
-        st="RESTRICTED" if e.code in (403,405,429) else "BAD"; code=str(e.code)
+        head_code=e.code
+    except Exception:
+        head_code=None
+
+    # Some publisher/standards sites reject or mis-handle HEAD. Confirm with a
+    # small GET before declaring the publication link broken.
+    try:
+        get_headers=dict(headers); get_headers["Range"]="bytes=0-2047"
+        req=urllib.request.Request(u,method="GET",headers=get_headers)
+        with urllib.request.urlopen(req,timeout=8) as resp:
+            st="OK" if resp.status<400 else "BAD"
+            return (fname,u,st,str(resp.status))
+    except urllib.error.HTTPError as e:
+        st="RESTRICTED" if e.code in (401,403,405,429) else "BAD"
+        return (fname,u,st,str(e.code))
     except Exception as e:
-        st="NETWORK_OR_TIMEOUT"; code=type(e).__name__
-    return (fname,u,st,code)
+        return (fname,u,"NETWORK_OR_TIMEOUT",type(e).__name__)
 
 with ThreadPoolExecutor(max_workers=24) as pool:
     urlrows=list(pool.map(check_url,urls))
