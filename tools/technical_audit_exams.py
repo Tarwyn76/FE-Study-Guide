@@ -55,7 +55,7 @@ UNIT_TOKEN = (
     r"m/s|m/s\^2|ft/s|ft/s\^2|m³/s|m\^3/s|L/s|gpm|cfm|"
     r"m²|m³|m\^2|m\^3|ft²|ft³|ft\^2|ft\^3|"
     r"kg/s|kg/h|kg/day|mg/L|mol/L|Pa·s|kJ/\(kg·K\)|"
-    r"units/h|unit/h|units/min|unit/min|metric tons/day|tons/day)"
+    r"units/h|unit/h|units/min|unit/min|mass units?|length units?|metric tons/day|tons/day)"
 )
 NUMBER_UNIT_RE = re.compile(
     rf"(?<![A-Za-z])[-+]?\d+(?:\.\d+)?(?:[eE][-+]?\d+)?\s*{UNIT_TOKEN}(?![A-Za-z)])"
