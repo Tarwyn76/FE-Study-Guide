@@ -1,0 +1,99 @@
+verified_on: 2026-11-13
+policy: >
+  These URLs were independently verified through browser/web retrieval when GitHub-hosted
+  urllib checks returned 403, 404, 500, or timeout responses caused by publisher/CDN
+  behavior. WEB_VERIFIED means the publication/source identity and destination were
+  confirmed independently; it does not imply anonymous bot access is supported.
+urls:
+  "https://pubs.usgs.gov/publication/tm4B5":
+    status: WEB_VERIFIED
+    authority: USGS
+    evidence: "Official USGS Bulletin 17C publication page; publication tm4B5 confirmed."
+  "https://onlinelibrary.wiley.com/doi/book/10.1002/0470068329":
+    status: WEB_VERIFIED
+    authority: Wiley
+    evidence: "Physics of Semiconductor Devices, 3rd ed.; DOI and ISBN confirmed."
+  "https://search.worldcat.org/title/1006307680":
+    status: WEB_VERIFIED
+    authority: OCLC WorldCat
+    evidence: "Digital Communications, Proakis and Salehi, 5th ed., McGraw-Hill, 2008."
+  "https://www.sciencedirect.com/book/9780128200643/digital-design-and-computer-architecture":
+    status: WEB_VERIFIED
+    authority: Elsevier ScienceDirect
+    evidence: "Digital Design and Computer Architecture: RISC-V Edition; ISBN confirmed."
+  "https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/":
+    status: WEB_VERIFIED
+    authority: MIT Press
+    evidence: "Introduction to Algorithms, 4th ed., 2022; ISBN confirmed."
+  "https://www.iso.org/standard/81291.html":
+    status: WEB_VERIFIED
+    authority: ISO
+    evidence: "ISO/IEC/IEEE 29119-1:2022 official standard page."
+  "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910subparti":
+    status: WEB_VERIFIED
+    authority: OSHA
+    evidence: "29 CFR 1910 Subpart I Personal Protective Equipment official page."
+  "https://www.cdc.gov/niosh/docs/98-126/":
+    status: WEB_VERIFIED
+    authority: CDC/NIOSH
+    evidence: "Occupational Noise Exposure, DHHS (NIOSH) Publication 98-126."
+  "https://www.waveland.com/browse.php?t=380":
+    status: WEB_VERIFIED
+    authority: Waveland Press
+    evidence: "Air Pollution Control: A Design Approach, 4th ed.; ISBN 9781577666783."
+  "https://www.iso.org/standard/11955.html":
+    status: WEB_VERIFIED
+    authority: ISO
+    evidence: "ISO 5807:1985 official standard page; confirmed current."
+  "https://www.value-eng.org/page/CertificationProgramDocuments":
+    status: WEB_VERIFIED
+    authority: SAVE International
+    evidence: "Current Certification Program Documents page including VM Guide and VM Core Competencies."
+  "https://www.iso.org/standard/63785.html":
+    status: WEB_VERIFIED
+    authority: ISO
+    evidence: "ISO 6385:2016 official standard page; confirmed current."
+  "https://www.cdc.gov/niosh/docs/94-110/":
+    status: WEB_VERIFIED
+    authority: CDC/NIOSH
+    evidence: "Applications Manual for the Revised NIOSH Lifting Equation, Publication 94-110, revised 2021."
+  "https://www.incose.org/resource/incose-systems-engineering-handbook-a-guide-for-system-life-cycle-processes-and-activities-5th-edition/":
+    status: WEB_VERIFIED
+    authority: INCOSE
+    evidence: "INCOSE Systems Engineering Handbook, 5th ed., 2023; ISBN 9781119814290."
+  "https://www.ashrae.org/technical-resources/ashrae-handbook/description-2025-ashrae-handbook-fundamentals":
+    status: WEB_VERIFIED
+    authority: ASHRAE
+    evidence: "2025 ASHRAE Handbook—Fundamentals official description page."
+  "https://www.asme.org/codes-standards/find-codes-standards/bpvc-section-viii-rules-for-construction-of-pressure-vessels-division-1":
+    status: WEB_VERIFIED
+    authority: ASME
+    evidence: "BPVC.VIII.1 Section VIII Division 1, 2025, official ASME standards page/search result."
+  "https://www.iso.org/standard/38102.html":
+    status: WEB_VERIFIED
+    authority: ISO
+    evidence: "ISO 281:2007 official page; current edition pending revision."
+  "https://www.iso.org/standard/44781.html":
+    status: WEB_VERIFIED
+    authority: ISO
+    evidence: "ISO 4413:2010 official standard page; confirmed current."
+  "https://www.iso.org/standard/44790.html":
+    status: WEB_VERIFIED
+    authority: ISO
+    evidence: "ISO 4414:2010 official standard page; confirmed current."
+  "https://www.asme.org/codes-standards/find-codes-standards/dimensioning-and-tolerancing":
+    status: WEB_VERIFIED
+    authority: ASME
+    evidence: "ASME Y14.5-2018 (R2024) Dimensioning and Tolerancing official page."
+  "https://www.iso.org/standard/45975.html":
+    status: WEB_VERIFIED
+    authority: ISO
+    evidence: "ISO 286-1:2010 official page; confirmed current in 2026."
+  "https://www.cdc.gov/niosh/hierarchy-of-controls/about/index.html":
+    status: WEB_VERIFIED
+    authority: CDC/NIOSH
+    evidence: "Current NIOSH Hierarchy of Controls official page."
+  "https://www.cdc.gov/niosh/npg/npg.html":
+    status: WEB_VERIFIED
+    authority: CDC/NIOSH
+    evidence: "NIOSH Pocket Guide to Chemical Hazards official page."
