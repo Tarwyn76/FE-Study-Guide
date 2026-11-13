@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from pathlib import Path
 import re, yaml, csv, collections, hashlib, urllib.request, urllib.error
+from concurrent.futures import ThreadPoolExecutor
 
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/"meta"/"release-readiness"
@@ -153,17 +154,20 @@ for p in ref_files:
     hashes[hashlib.sha256(re.sub(r"\s+"," ",txt).strip().encode()).hexdigest()].append(p.name)
 ref_dups=[x for x in hashes.values() if len(x)>1]
 unmapped=[cid for cid in CH if cid not in mapped]
-urlrows=[]
-for fname,u in urls:
+def check_url(row):
+    fname,u=row
     try:
         req=urllib.request.Request(u,method="HEAD",headers={"User-Agent":"FE-Study-Guide-QA/1.0"})
-        with urllib.request.urlopen(req,timeout=8) as resp:
+        with urllib.request.urlopen(req,timeout=6) as resp:
             st="OK" if resp.status<400 else "BAD"; code=str(resp.status)
     except urllib.error.HTTPError as e:
         st="RESTRICTED" if e.code in (403,405,429) else "BAD"; code=str(e.code)
     except Exception as e:
         st="NETWORK_OR_TIMEOUT"; code=type(e).__name__
-    urlrows.append((fname,u,st,code))
+    return (fname,u,st,code)
+
+with ThreadPoolExecutor(max_workers=24) as pool:
+    urlrows=list(pool.map(check_url,urls))
 with open(OUT/"reference-url-check.csv","w",newline="",encoding="utf-8") as fh:
     w=csv.writer(fh); w.writerow(["file","url","status","code"]); w.writerows(urlrows)
 
