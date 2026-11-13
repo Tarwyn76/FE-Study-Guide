@@ -136,7 +136,7 @@ ASME. (2025). *Boiler and Pressure Vessel Code, Section VIII—Rules for Constru
 
 **Supporting scope:** Pressure-vessel construction requirements, pressure boundary design context, materials, fabrication, examination, and testing.
 
-**Publisher/standards page:** https://www.asme.org/codes-standards/bpvc-standards/section-viii-rules-construction-pressure-vessels
+**Publisher/standards page:** https://www.asme.org/codes-standards/find-codes-standards/bpvc-section-viii-rules-for-construction-of-pressure-vessels-division-1
 
 ### B313
 

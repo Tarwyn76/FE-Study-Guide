@@ -12,6 +12,22 @@ This appendix is an **index of governing and reusable relations**, not a dump of
 - Exclude display blocks that are primarily numeric substitution, arithmetic simplification, or a boxed numeric answer.
 - Retain at most 12 indexed formulas per chapter to keep this appendix usable as an index rather than a second textbook.
 
+## Layer 0 — Orientation and Exam Strategy
+
+### 00-02 — The Exam and the CBT Format
+
+These relations are exam-management arithmetic rather than engineering formulas, but they are retained because the chapter uses them as reusable pacing/checking rules.
+
+- **00-02:F1** — $\displaystyle \text{min per question}=\frac{\text{working minutes}}{110}$
+- **00-02:F2** — $\displaystyle \frac{320\ \text{min}}{110\ \text{questions}}=2.91\ \frac{\text{min}}{\text{question}}$
+- **00-02:F3** — $\displaystyle \frac{\text{correct}}{110}\times 100=\text{percent correct}$
+
+### 00-03 — Navigating the FE Reference Book
+
+- **00-03:F1** — $\displaystyle \frac{2700\ \text{s}}{60}=45.0\ \text{min}$
+- **00-03:F2** — $\displaystyle \text{Total correct}=\text{initial correct}+\text{recovered correct}$
+- **00-03:F3** — $\displaystyle \frac{\text{total correct}}{110}\times100=\text{percent correct}$
+
 ## Layer 1 — Mathematical and Analytical Foundations
 
 ### 01-01 — Numbers, Magnitude, and Metric Prefixes

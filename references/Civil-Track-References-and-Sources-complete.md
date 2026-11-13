@@ -155,7 +155,7 @@ Water Environment Federation & American Society of Civil Engineers. (2007). *Gra
 
 ### B17C
 
-England, J. F., Jr., Cohn, T. A., Faber, B. A., Stedinger, J. R., Thomas, W. O., Jr., Veilleux, A. G., Kiang, J. E., & Mason, R. R., Jr. (2018). *Guidelines for Determining Flood Flow Frequency—Bulletin 17C* (ver. 1.1, May 2019). U.S. Geological Survey Techniques and Methods, Book 4, Chapter B5. https://doi.org/10.3133/tm4B5
+England, J. F., Jr., Cohn, T. A., Faber, B. A., Stedinger, J. R., Thomas, W. O., Jr., Veilleux, A. G., Kiang, J. E., & Mason, R. R., Jr. (2018). *Guidelines for Determining Flood Flow Frequency—Bulletin 17C* (ver. 1.1, May 2019). U.S. Geological Survey Techniques and Methods, Book 4, Chapter B5. https://pubs.usgs.gov/publication/tm4B5
 
 **Verification:** `standard-citation-no-page`
 
