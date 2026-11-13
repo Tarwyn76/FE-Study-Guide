@@ -161,7 +161,7 @@ Cooper, C. D., & Alley, F. C. (2011). *Air Pollution Control: A Design Approach*
 
 **Supporting scope:** Air-pollution emissions, dispersion, gas/particle control, scrubbers, adsorption, cyclones, filters, and electrostatic precipitation.
 
-**Authoritative/publisher page:** https://ftp.waveland.com/browse.php?pgtitle=C.+David+Cooper%2C+F.+C.+Alley&t=380
+**Authoritative/publisher page:** https://www.waveland.com/browse.php?t=380
 
 ### TCHOB_KREITH
 
