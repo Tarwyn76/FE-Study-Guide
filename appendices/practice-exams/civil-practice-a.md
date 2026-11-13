@@ -1730,7 +1730,7 @@ D) only procurement tasks
 
 ### 105 — B
 
-**B.** CV=EV−AC=-20.00k. This result applies to the stated design review for a retaining-wall project.
+**B.** CV=EV−AC=$80k−$100k=−$20.00k. This result applies to the stated design review for a retaining-wall project.
 
 **Knowledge area:** Construction Engineering  
 **Concept:** CIV-3-030-04
