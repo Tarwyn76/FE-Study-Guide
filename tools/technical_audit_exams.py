@@ -50,7 +50,7 @@ NUM_RE=re.compile(r"(?<![A-Za-z])[-+]?\d+(?:\.\d+)?(?:[eE][-+]?\d+)?")
 UNIT_TOKEN = (
     r"(?:mm|cm|km|m|ft|in|yd|mi|s|min|h|hr|day|days|yr|yrs|year|years|"
     r"kg|g|mg|lbm|slug|N|kN|lbf|Pa|kPa|MPa|GPa|psi|ksi|"
-    r"J|kJ|MJ|W|kW|MW|Wh|kWh|A|mA|V|mV|kV|ohm|Ω|kΩ|F|H|Hz|kHz|MHz|"
+    r"J|kJ|MJ|W|kW|MW|Wh|kWh|A|mA|V|mV|kV|ohm|Ω|kΩ|F|H|Hz|kHz|MHz|rpm|"
     r"rad|deg|°|mol|kmol|K|degC|degF|°C|°F|C|µC|uC|L|mL|"
     r"m/s|m/s\^2|ft/s|ft/s\^2|m³/s|m\^3/s|L/s|gpm|cfm|"
     r"m²|m³|m\^2|m\^3|ft²|ft³|ft\^2|ft\^3|"
@@ -140,7 +140,7 @@ def is_dimensionless_prompt(prompt:str)->bool:
     return bool(re.search(
         r"\b(?:ratio|selectivity|strain|coefficient|factor|probability|fraction|percent|percentage|"
         r"efficiency|power factor|reynolds(?: number)?|mach(?: number)?|dimensionless|index|"
-        r"pH|pOH|z(?:[- ]?score)?|slope|determinant|correlation|coefficient of variation)\b",
+        r"pH|pOH|z(?:[- ]?score)?|slope|determinant|correlation|coefficient of variation|gain|hazard quotient)\b",
         prompt,
         re.I,
     )) or bool(re.search(
@@ -159,9 +159,12 @@ def normalize_unit_text(text:str)->str:
     return s
 
 def prompt_has_dimensional_quantity(prompt:str)->bool:
-    """Require a numeric quantity tied to a unit; bare prose and MC labels are not units."""
+    """Require a non-angular numeric quantity tied to a unit; bare prose and MC labels are not units."""
     s=normalize_unit_text(prompt)
-    return bool(NUMBER_UNIT_RE.search(s) or CURRENCY_RE.search(s))
+    # An angle such as 60° can accompany a dimensionless/unspecified vector magnitude.
+    # Do not treat angle-only prompts as requiring dimensional units in the answer.
+    stripped=re.sub(r"(?<![A-Za-z])[-+]?\d+(?:\.\d+)?\s*(?:°|deg|rad)(?![A-Za-z])", " ", s)
+    return bool(NUMBER_UNIT_RE.search(stripped) or CURRENCY_RE.search(stripped))
 
 def solution_has_recognized_unit(solution:str)->bool:
     """Recognize engineering units or currency attached to a numeric result."""
