@@ -38,7 +38,9 @@ Files above the template-density/repetition threshold: **0**.
 
 Reference files: **10**.
 Chapters absent from registers: **25**.
+Unmapped chapter IDs: 00-03, 00-02, 00-01, 03-09, 03-11, 03-04, 03-03, 03-10, 03-05, 03-06, 03-28, 03-21, 03-22, 03-19, 03-26, 03-20, 03-18, 03-23, 03-17, 03-29, 03-15, 03-24, 03-16, 03-25, 03-27.
 Hard-broken URLs: **3**; restricted/timeout: **22**.
+Hard-broken URL rows: Civil-Track-References-and-Sources-complete.md -> https://doi.org/10.3133/tm4B5 [500]; Mechanical-Track-References-and-Sources-complete.md -> https://www.asme.org/codes-standards/bpvc-standards/section-viii-rules-construction-pressure-vessels [404]; Mechanical-Track-References-and-Sources-complete.md -> https://www.asme.org/codes-standards/find-codes-standards/dimensioning-and-tolerancing [404].
 URL details: meta/release-readiness/reference-url-check.csv.
 
 ## Duplicate reference files
