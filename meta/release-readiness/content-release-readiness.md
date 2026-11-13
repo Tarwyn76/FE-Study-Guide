@@ -15,8 +15,9 @@ Scope: appendix consolidation, learner progression, exam quality, and reference/
 - Exam files needing template/distractor review: **0**
 - Exact duplicate prompts across exam corpus: **0**
 - Chapters absent from reference registers: **0**
-- Broken reference URLs: **3**
-- Restricted/timeout reference URLs: **22**
+- Broken reference URLs: **0**
+- Restricted/timeout reference URLs: **0**
+- Browser/web-verified references: **25**
 
 ## Appendix coverage
 
@@ -39,8 +40,8 @@ Files above the template-density/repetition threshold: **0**.
 Reference files: **10**.
 Chapters absent from registers: **0**.
 Unmapped chapter IDs: None.
-Hard-broken URLs: **3**; restricted/timeout: **22**.
-Hard-broken URL rows: Civil-Track-References-and-Sources-complete.md -> https://pubs.usgs.gov/publication/tm4B5 [500]; Mechanical-Track-References-and-Sources-complete.md -> https://www.asme.org/codes-standards/find-codes-standards/bpvc-section-viii-rules-for-construction-of-pressure-vessels-division-1 [404]; Mechanical-Track-References-and-Sources-complete.md -> https://www.asme.org/codes-standards/find-codes-standards/dimensioning-and-tolerancing [404].
+Hard-broken URLs: **0**; restricted/timeout: **0**; browser/web-verified: **25**.
+Hard-broken URL rows: None.
 URL details: meta/release-readiness/reference-url-check.csv.
 
 ## Duplicate reference files
