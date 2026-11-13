@@ -181,15 +181,30 @@ def check_url(row):
     except Exception as e:
         return (fname,u,"NETWORK_OR_TIMEOUT",type(e).__name__)
 
+verification_file=OUT/"reference-web-verification.yaml"
+verified={}
+if verification_file.exists():
+    vdata=yaml.safe_load(verification_file.read_text(encoding="utf-8")) or {}
+    verified=vdata.get("urls",{}) or {}
+
+urlrows=[]
+to_check=[]
+for row in urls:
+    fname,u=row
+    if u in verified and str(verified[u].get("status","")).upper()=="WEB_VERIFIED":
+        urlrows.append((fname,u,"WEB_VERIFIED",str(verified[u].get("authority",""))))
+    else:
+        to_check.append(row)
 with ThreadPoolExecutor(max_workers=24) as pool:
-    urlrows=list(pool.map(check_url,urls))
+    urlrows.extend(pool.map(check_url,to_check))
+urlrows=sorted(urlrows,key=lambda r:(r[0],r[1]))
 with open(OUT/"reference-url-check.csv","w",newline="",encoding="utf-8") as fh:
     w=csv.writer(fh); w.writerow(["file","url","status","code"]); w.writerows(urlrows)
 
 prog_bad=[x for x in deps if x[-1]!="OK"]
 route_bad=[x for x in route_rows if not all(x[k] for k in ("exists","tier_review","practice_a","practice_b","layer1","layer2","layer3"))]
 dense=[x for x in exam_rows if x["template_density"]>=0.30 or x["max_same_template"]>=4 or x["duplicate_choices"]]
-hardurls=[x for x in urlrows if x[2]=="BAD"]; softurls=[x for x in urlrows if x[2] in ("RESTRICTED","NETWORK_OR_TIMEOUT")]
+hardurls=[x for x in urlrows if x[2]=="BAD"]; softurls=[x for x in urlrows if x[2] in ("RESTRICTED","NETWORK_OR_TIMEOUT")]; webverified=[x for x in urlrows if x[2]=="WEB_VERIFIED"]
 
 report=["# FE Guide — Content Release-Readiness Review","",
 "Scope: appendix consolidation, learner progression, exam quality, and reference/publication QA. Image QA intentionally excluded.","",
@@ -206,7 +221,8 @@ f"- Exam files needing template/distractor review: **{len(dense)}**",
 f"- Exact duplicate prompts across exam corpus: **{len(exact_dup)}**",
 f"- Chapters absent from reference registers: **{len(unmapped)}**",
 f"- Broken reference URLs: **{len(hardurls)}**",
-f"- Restricted/timeout reference URLs: **{len(softurls)}**","",
+f"- Restricted/timeout reference URLs: **{len(softurls)}**",
+f"- Browser/web-verified references: **{len(webverified)}**","",
 "## Appendix coverage","",
 "Formula Index gaps: "+(", ".join(formula_index_missing) if formula_index_missing else "None")+".",
 "Notation Master gaps: "+(", ".join(notation_missing) if notation_missing else "None")+".",
@@ -223,7 +239,7 @@ report += ["","## Reference/publication QA","",
 f"Reference files: **{len(ref_files)}**.",
 f"Chapters absent from registers: **{len(unmapped)}**.",
 "Unmapped chapter IDs: "+(", ".join(unmapped) if unmapped else "None")+".",
-f"Hard-broken URLs: **{len(hardurls)}**; restricted/timeout: **{len(softurls)}**.",
+f"Hard-broken URLs: **{len(hardurls)}**; restricted/timeout: **{len(softurls)}**; browser/web-verified: **{len(webverified)}**.",
 "Hard-broken URL rows: "+("; ".join(f"{x[0]} -> {x[1]} [{x[3]}]" for x in hardurls) if hardurls else "None")+".",
 "URL details: meta/release-readiness/reference-url-check.csv.","",
 "## Duplicate reference files",""]
