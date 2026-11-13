@@ -1,0 +1,30 @@
+name: Finalize appendices and reference index
+on:
+  push:
+    branches: [figure-cleanup-strict]
+    paths:
+      - tools/finalize_appendices_references.py
+      - .github/workflows/finalize-appendices-references.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: figure-cleanup-strict
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python tools/finalize_appendices_references.py
+      - name: Commit publication repairs
+        run: |
+          git config user.name "ChatGPT FE Release Prep"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add appendices/formula-index.md appendices/notation-master.md references
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Finalize appendix coverage and reference register mapping"
+          git push origin HEAD:figure-cleanup-strict
