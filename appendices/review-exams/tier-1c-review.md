@@ -611,17 +611,17 @@ $$\frac{1-\cos 2\theta}{\theta} = \frac{1-\cos u}{u/2} = 2\cdot\frac{1-\cos u}{u
 Mass:
 
 $$M=\int_0^2\int_0^1(1+x)\,dy\,dx
-=\left[x+\frac{x^2}{2}\right]_0^2=\boxed{4}.$$
+=\left[x+\frac{x^2}{2}\right]_0^2=\boxed{4\ \text{mass units}}.$
 
 Then
 
 $$\bar x=\frac1{4}\int_0^2x(1+x)dx
 =\frac14\left(2+\frac83\right)
-=\boxed{\frac76},$$
+=\boxed{\frac76\ \text{length units}},$
 
 and symmetry in $y$ gives
 
-$$\boxed{\bar y=\frac12}.$$
+$\boxed{\bar y=\frac12\ \text{length units}}.$
 
 **Remediate:** Chapter 01-24 · concept `MATH-1C-024-04`.
 
