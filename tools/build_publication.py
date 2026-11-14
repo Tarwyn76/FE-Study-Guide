@@ -79,6 +79,27 @@ def normalize_target(source, raw):
     return p, frag
 
 IMAGE_RE = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)(?:\s+['\"][^'\"]*['\"])?\)")
+FIGURE_ID_RE = re.compile(r"(FIG-\d{2}-\d{2}-\d{3})", re.I)
+
+def resolve_figure(raw):
+    base = Path(raw.split("#",1)[0]).name
+    if Path(base).suffix.lower() != ".png":
+        base = str(Path(base).with_suffix(".png"))
+    exact = ROOT / "figures" / "png" / base
+    if exact.exists():
+        return exact, "exact"
+    m = FIGURE_ID_RE.search(base)
+    if not m:
+        return None, "no-id"
+    fid = m.group(1).upper()
+    candidates = sorted((ROOT/"figures"/"png").glob(f"*{fid}*.png"))
+    if len(candidates) == 1:
+        return candidates[0], "figure-id"
+    # Prefer an exact FIG-ID asset over descriptive or alternate aliases.
+    exact_id = [p for p in candidates if re.fullmatch(rf"(?:\d{{4}}_)?{re.escape(fid)}\.png", p.name, re.I)]
+    if len(exact_id) == 1:
+        return exact_id[0], "figure-id-exact"
+    return None, "ambiguous"
 LINK_RE = re.compile(r"(?<!!)\[([^\]]+)\]\(([^)]+)\)")
 
 def process_markdown(path, included, anchor_map, stats):
@@ -90,18 +111,17 @@ def process_markdown(path, included, anchor_map, stats):
         if re.match(r"^[a-z]+://", raw, re.I):
             stats["remote_images"] += 1
             return m.group(0)
-        base = Path(raw.split("#",1)[0]).name
-        png = ROOT / "figures" / "png" / base
-        if png.suffix.lower() != ".png":
-            png = png.with_suffix(".png")
-        if not png.exists():
+        png, mode = resolve_figure(raw)
+        if png is None:
             stats["missing_images"].append({
                 "source": str(path.relative_to(ROOT)),
                 "link": raw,
-                "expected": str(png.relative_to(ROOT)),
+                "resolution": mode,
             })
             return m.group(0)
         stats["images"] += 1
+        if mode != "exact":
+            stats["figure_id_resolutions"] += 1
         return f"![{alt}](figures/png/{png.name})"
 
     text = IMAGE_RE.sub(image_sub, text)
@@ -225,6 +245,7 @@ def assemble(route):
         "source_files": len(sources),
         "canonical_chapters": sum(1 for p in sources if re.match(r"^\d{2}-\d{2}-", p.name)),
         "images": stats["images"],
+        "figure_id_resolutions": stats["figure_id_resolutions"],
         "missing_images": stats["missing_images"],
         "external_links": stats["external_links"],
         "rewritten_local_links": stats["rewritten_local_links"],
