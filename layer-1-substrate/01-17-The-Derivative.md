@@ -380,9 +380,10 @@ $$\frac{dh}{dt} = 4.5\cdot\frac{d}{dt}\left(1 - e^{-t/6.0}\right) = 4.5\left(0 -
 
 $$\frac{dh}{dt} = \frac{4.5}{6.0}e^{-t/6.0} = \boxed{0.75\,e^{-t/6.0} \text{ m/min}}$$
 
-Units check: $[h] = $ m and $[t] = $ min, so $\left[\frac{dh}{dt}\right] = $
-m/min ✓ And the constant $4.5/6.0$ carries units m/min directly, since 4.5 is
-in metres and 6.0 is in minutes. The exponential is dimensionless ✓
+Units check: $[h] = \text{m}$ and $[t] = \text{min}$, so
+$\left[\frac{dh}{dt}\right] = \text{m/min}$ ✓ And the constant $4.5/6.0$
+carries units m/min directly, since 4.5 is in metres and 6.0 is in minutes.
+The exponential is dimensionless ✓
 
 **(b)**
 
