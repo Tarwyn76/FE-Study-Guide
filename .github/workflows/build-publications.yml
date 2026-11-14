@@ -7,11 +7,14 @@ on:
       - tools/validate_publication.py
       - .github/workflows/build-publications.yml
   workflow_dispatch:
+
 permissions:
   contents: read
+
 concurrency:
   group: build-fe-publications-${{ github.ref }}
   cancel-in-progress: true
+
 jobs:
   preflight:
     runs-on: ubuntu-latest
@@ -56,21 +59,51 @@ jobs:
       - name: Install publishing toolchain
         run: |
           sudo apt-get update
-          sudo apt-get install -y --no-install-recommends pandoc texlive-xetex texlive-latex-extra fonts-dejavu poppler-utils
+          sudo apt-get install -y --no-install-recommends \
+            pandoc texlive-xetex texlive-latex-extra fonts-dejavu poppler-utils
       - name: Assemble route manuscript
         run: python tools/build_publication.py --route "${{ matrix.route }}"
+
       - name: Build PDF
         run: |
-          pandoc "build/publication/fe-study-guide-${{ matrix.route }}.md"             --from markdown+tex_math_dollars+fenced_divs+bracketed_spans             --resource-path=.             --pdf-engine=xelatex             --top-level-division=chapter             --toc             -o "build/publication/fe-study-guide-${{ matrix.route }}.pdf"
+          pandoc "build/publication/fe-study-guide-${{ matrix.route }}.md" \
+            --from "markdown-yaml_metadata_block+tex_math_dollars+fenced_divs+bracketed_spans" \
+            --metadata-file "build/publication/fe-study-guide-${{ matrix.route }}.yaml" \
+            --resource-path=. \
+            --pdf-engine=xelatex \
+            --top-level-division=chapter \
+            --toc \
+            -o "build/publication/fe-study-guide-${{ matrix.route }}.pdf"
+
       - name: Build EPUB
         run: |
-          pandoc "build/publication/fe-study-guide-${{ matrix.route }}.md"             --from markdown+tex_math_dollars+fenced_divs+bracketed_spans             --resource-path=.             --toc             --mathml             -o "build/publication/fe-study-guide-${{ matrix.route }}.epub"
+          pandoc "build/publication/fe-study-guide-${{ matrix.route }}.md" \
+            --from "markdown-yaml_metadata_block+tex_math_dollars+fenced_divs+bracketed_spans" \
+            --metadata-file "build/publication/fe-study-guide-${{ matrix.route }}.yaml" \
+            --resource-path=. \
+            --toc \
+            --mathml \
+            -o "build/publication/fe-study-guide-${{ matrix.route }}.epub"
+
       - name: Build validation HTML
         run: |
-          pandoc "build/publication/fe-study-guide-${{ matrix.route }}.md"             --from markdown+tex_math_dollars+fenced_divs+bracketed_spans             --resource-path=.             --standalone             --toc             --mathml             -o "build/publication/fe-study-guide-${{ matrix.route }}.html"
+          pandoc "build/publication/fe-study-guide-${{ matrix.route }}.md" \
+            --from "markdown-yaml_metadata_block+tex_math_dollars+fenced_divs+bracketed_spans" \
+            --metadata-file "build/publication/fe-study-guide-${{ matrix.route }}.yaml" \
+            --resource-path=. \
+            --standalone \
+            --toc \
+            --mathml \
+            -o "build/publication/fe-study-guide-${{ matrix.route }}.html"
+
       - name: Validate rendered outputs
         run: |
-          python tools/validate_publication.py             --route "${{ matrix.route }}"             --pdf "build/publication/fe-study-guide-${{ matrix.route }}.pdf"             --epub "build/publication/fe-study-guide-${{ matrix.route }}.epub"             --html "build/publication/fe-study-guide-${{ matrix.route }}.html"
+          python tools/validate_publication.py \
+            --route "${{ matrix.route }}" \
+            --pdf "build/publication/fe-study-guide-${{ matrix.route }}.pdf" \
+            --epub "build/publication/fe-study-guide-${{ matrix.route }}.epub" \
+            --html "build/publication/fe-study-guide-${{ matrix.route }}.html"
+
       - uses: actions/upload-artifact@v4
         with:
           name: fe-study-guide-${{ matrix.route }}-publication
