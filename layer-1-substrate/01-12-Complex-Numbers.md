@@ -842,8 +842,11 @@ These are the four roots on a circle of radius 2, spaced 90° apart. ✓
 
 (a) $e^{j\pi/3} = \cos(\pi/3) + j\sin(\pi/3) = \dfrac{1}{2} + j\dfrac{\sqrt{3}}{2}$
 
-(b) $\left\lvert\dfrac{1}{2} + j\dfrac{\sqrt{3}}{2}\right\rvert = \sqrt{(1/2)^2
-+ (\sqrt{3}/2)^2} = \sqrt{1/4 + 3/4} = \sqrt{1} = 1$ ✓
+(b) Magnitude:
+
+$\left\lvert\dfrac{1}{2} + j\dfrac{\sqrt{3}}{2}\right\rvert = \sqrt{(1/2)^2 + (\sqrt{3}/2)^2} = \sqrt{1/4 + 3/4} = \sqrt{1} = 1$
+
+✓
 
 (c) Exact rectangular form: $\boxed{\dfrac{1}{2} + j\dfrac{\sqrt{3}}{2}}$
 
