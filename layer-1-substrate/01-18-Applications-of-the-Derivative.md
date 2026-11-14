@@ -1724,7 +1724,7 @@ $$Q = 1.84(2.50)(0.181019) = 4.60(0.181019) = \boxed{0.8327 \text{ m}^3/\text{s}
 
 $$\frac{dQ}{dH} = 1.84(2.50)(1.5)H^{0.5} = 6.90\sqrt{0.320} = 6.90(0.565685) = \boxed{3.903 \text{ m}^2/\text{s}}$$
 
-Units: $\frac{\text{m}^3/\text{s}}{\text{m}} = $ m²/s ✓
+Units: $\frac{\text{m}^3/\text{s}}{\text{m}} = \text{m}^2/\text{s}$ ✓
 
 (c)
 
