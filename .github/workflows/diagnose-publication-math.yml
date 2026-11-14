@@ -1,0 +1,28 @@
+name: Diagnose publication math failure
+on:
+  push:
+    branches: [figure-cleanup-strict]
+    paths:
+      - .github/workflows/diagnose-publication-math.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: figure-cleanup-strict
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Assemble common route
+        run: python tools/build_publication.py --route chemical
+      - name: Show context near failing assembled line
+        run: |
+          nl -ba build/publication/fe-study-guide-chemical.md | sed -n '28735,28795p'
+          echo "--- escaped-dollar-left matches ---"
+          grep -n -F '\$\left' build/publication/fe-study-guide-chemical.md | head -100 || true
+          echo "--- escaped-dollar math-ish matches ---"
+          grep -n -E '\\\$\\(left|frac|begin|boxed|sqrt|sum|int)' build/publication/fe-study-guide-chemical.md | head -100 || true
