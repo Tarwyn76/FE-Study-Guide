@@ -7,8 +7,8 @@
 | 00-01 through 02-70 | `Core-Curriculum-References-and-Sources-complete.md` | Complete chapter-level reference map; concept-level Handbook/source provenance remains in the ledger |
 | 03-01 through 03-13 | `Chemical-Track-References-and-Sources-complete.md` | Complete source register; selected page claims remain index-derived pending full-text page verification |
 | 03-14 through 03-30 | `Civil-Track-References-and-Sources-complete.md` | Complete split-required reconciliation; AWWA M32 locations remain TOC/preview-level locators |
-| 03-31 through 03-46 | `ECE-Track-References-and-Sources-complete.md` | Complete chapter map and split-required reconciliation |
-| 03-47 through 03-61 | `Environmental-Track-References-and-Sources-complete.md` | Complete chapter map and split-required reconciliation |
+| 03-31 through 03-47 | `ECE-Track-References-and-Sources-complete.md` | Complete chapter map and split-required reconciliation |
+| 03-48 through 03-61 | `Environmental-Track-References-and-Sources-complete.md` | Complete chapter map and split-required reconciliation |
 | 03-62 through 03-75 | `Industrial-Systems-Track-References-and-Sources-complete.md` | Complete chapter map and split-required reconciliation |
 | 03-76 through 03-90 | `Mechanical-Track-References-and-Sources-complete.md` | Complete chapter map and split-required reconciliation |
 | 03-91 through 03-95 | `Other-Disciplines-Track-References-and-Sources-complete.md` | Complete chapter map and split-required reconciliation |
