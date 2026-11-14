@@ -1,0 +1,36 @@
+name: Find spaced math delimiters
+on:
+  push:
+    branches: [figure-cleanup-strict]
+    paths:
+      - .github/workflows/find-spaced-math-delimiters.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: figure-cleanup-strict
+      - name: Find opening-dollar-space TeX patterns
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          roots=[Path("layer-0-orientation"),Path("layer-1-substrate"),Path("layer-2-core"),Path("layer-3-tracks"),Path("appendices"),Path("references"),Path("routes")]
+          pat=re.compile(r'(?<!\$)\$[ \t]+\\(?:frac|dfrac|tfrac|left|right|sqrt|boxed|sum|int|lim|begin|text|sin|cos|tan|ln|log|mathbf|mathrm|vec)')
+          hits=[]
+          for root in roots:
+              if not root.exists(): continue
+              for p in root.rglob("*.md"):
+                  s=p.read_text(encoding="utf-8",errors="ignore")
+                  for m in pat.finditer(s):
+                      line=s.count("\n",0,m.start())+1
+                      hits.append((str(p),line,re.sub(r'\s+',' ',s[max(0,m.start()-120):m.start()+500]).strip()))
+          print("SPACED_MATH_DELIMITER_HITS",len(hits))
+          for p,line,ctx in hits:
+              print(f"{p}:{line} :: {ctx}")
+          PY
