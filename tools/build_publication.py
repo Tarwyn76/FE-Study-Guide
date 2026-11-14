@@ -153,7 +153,7 @@ def process_markdown(path, included, anchor_map, stats):
 def route_sources(route):
     display, exam_slug, nums, track_ref = ROUTES[route]
     common_ids = [f"00-{i:02d}" for i in range(1,4)]
-    common_ids += [f"01-{i:02d}" for i in range(1,41)]
+    common_ids += [f"01-{i:02d}" for i in range(1,42)]
     common_ids += [f"02-{i:02d}" for i in range(1,71)]
     track_ids = [f"03-{i:02d}" for i in nums]
     missing_ids = [cid for cid in common_ids + track_ids if cid not in CHAPTERS]
