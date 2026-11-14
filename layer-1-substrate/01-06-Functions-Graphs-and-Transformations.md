@@ -1013,7 +1013,7 @@ $f(2)$: $0 \le 2 \le 2$, second piece: $2^2 = \boxed{4}$
 $f(4)$: $4 > 2$, third piece: $\boxed{3}$
 
 **Continuity at $x = 0$:**
-From the left: $\(x+3) = 0+3 = 3, f(0)=3$.
+From the left: $x+3 = 0+3 = 3, f(0)=3$.
 From the right: $0^2 = 0$, $f(0) = 0$.
 $3 \ne 0$.
 
