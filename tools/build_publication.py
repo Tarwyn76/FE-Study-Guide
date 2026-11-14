@@ -66,6 +66,27 @@ def explicit_first_h1(text, anchor):
     replacement = f"# {heading} {{#{anchor}}}"
     return text[:m.start()] + replacement + text[m.end():]
 
+def normalize_multiline_inline_math(text, path, stats):
+    """Join soft line wraps inside single-dollar inline math before Pandoc.
+
+    Pandoc's tex_math_dollars reader does not reliably accept physical newlines
+    inside inline $...$ spans. Only nonblank line wraps are joined; display
+    $...$ blocks are excluded.
+    """
+    pat = re.compile(r"(?<!\$)\$(?!\$)([^$\n]*(?:\n(?!\n)[^$\n]*)+)\$(?!\$)")
+    def repl(m):
+        body=m.group(1)
+        if "\n" not in body:
+            return m.group(0)
+        line=text.count("\n",0,m.start())+1
+        stats["multiline_inline_math_repairs"].append({
+            "source": str(path.relative_to(ROOT)),
+            "line": line,
+            "snippet": re.sub(r"\s+"," ",body).strip()[:240],
+        })
+        return "$" + re.sub(r"\s*\n\s*", " ", body) + "$"
+    return pat.sub(repl,text)
+
 def normalize_target(source, raw):
     target = raw.strip().strip("<>")
     if re.match(r"^[a-z]+://", target, re.I) or target.startswith(("mailto:", "#")):
@@ -144,6 +165,7 @@ def normalize_nested_math_delimiters(text, path, stats):
 
 def process_markdown(path, included, anchor_map, stats):
     text = strip_front_matter(path.read_text(encoding="utf-8", errors="ignore"))
+    text = normalize_multiline_inline_math(text, path, stats)
     text = normalize_nested_math_delimiters(text, path, stats)
     text = explicit_first_h1(text, anchor_map[path.resolve()])
 
@@ -273,6 +295,7 @@ def assemble(route):
     stats = collections.defaultdict(int)
     stats["missing_images"] = []
     stats["nested_math_repairs"] = []
+    stats["multiline_inline_math_repairs"] = []
 
     meta = BUILD / f"fe-study-guide-{route}.yaml"
     BUILD.mkdir(parents=True, exist_ok=True)
@@ -296,6 +319,7 @@ def assemble(route):
         "figure_id_resolutions": stats["figure_id_resolutions"],
         "missing_images": stats["missing_images"],
         "nested_math_repairs": stats["nested_math_repairs"],
+        "multiline_inline_math_repairs": stats["multiline_inline_math_repairs"],
         "external_links": stats["external_links"],
         "rewritten_local_links": stats["rewritten_local_links"],
         "crossfile_fragment_links_to_top": stats["crossfile_fragment_links_to_top"],
