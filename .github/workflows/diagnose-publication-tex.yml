@@ -25,5 +25,8 @@ jobs:
       - name: Show failing TeX region
         run: |
           nl -ba build/publication/chemical-debug.tex | sed -n '37255,37325p'
-          echo "--- literal escaped-dollar-left occurrences ---"
-          grep -n -F '\$\left' build/publication/chemical-debug.tex | head -100 || true
+          echo "--- literal escaped-dollar plus TeX-command occurrences ---"
+          grep -n -E '\\\$\\\\(left|right|frac|dfrac|tfrac|sqrt|boxed|sum|int|begin|end|text|lim|lvert|rvert|vec|mathbf|mathrm|pi|theta|alpha|beta|gamma|rho|sigma|mu|Delta)' build/publication/chemical-debug.tex | head -300 || true
+          echo "--- all literal escaped-dollar occurrences ---"
+          grep -n -F '\
+ build/publication/chemical-debug.tex | head -300 || true
