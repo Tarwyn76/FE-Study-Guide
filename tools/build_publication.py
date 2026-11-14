@@ -105,7 +105,7 @@ LINK_RE = re.compile(r"(?<!!)\[([^\]]+)\]\(([^)]+)\)")
 def normalize_nested_math_delimiters(text, path, stats):
     """Remove TeX math open/close delimiters that appear inside $...$ or $...$."""
     def clean_content(content, offset):
-        if not any(tok in content for tok in (r"\(", r"\)", r"\[", r"\]")):
+        if not any(tok in content for tok in (r"\(", r"\)")):
             return content
         line = text.count("\n", 0, offset) + 1
         stats["nested_math_repairs"].append({
@@ -113,11 +113,7 @@ def normalize_nested_math_delimiters(text, path, stats):
             "line": line,
             "snippet": re.sub(r"\s+", " ", content).strip()[:240],
         })
-        return (content
-                .replace(r"\(", "")
-                .replace(r"\)", "")
-                .replace(r"\[", "")
-                .replace(r"\]", ""))
+        return content.replace(r"\(", "").replace(r"\)", "")
 
     # Display math first so the inline pass cannot consume its dollar pairs.
     out=[]; pos=0
@@ -130,18 +126,17 @@ def normalize_nested_math_delimiters(text, path, stats):
     text2="".join(out)
 
     out=[]; pos=0
-    for m in re.finditer(r"(?<!\$)\$([^$\n]+?)\$(?!\$)", text2):
+    for m in re.finditer(r"(?<![\\$])\$([^$\n]+?)(?<!\\)\$(?!\$)", text2):
         out.append(text2[pos:m.start()])
         body=m.group(1)
-        if any(tok in body for tok in (r"\(", r"\)", r"\[", r"\]")):
+        if any(tok in body for tok in (r"\(", r"\)")):
             line=text2.count("\n",0,m.start(1))+1
             stats["nested_math_repairs"].append({
                 "source": str(path.relative_to(ROOT)),
                 "line": line,
                 "snippet": re.sub(r"\s+", " ", body).strip()[:240],
             })
-            body=(body.replace(r"\(","").replace(r"\)","")
-                      .replace(r"\[","").replace(r"\]",""))
+            body=body.replace(r"\(","").replace(r"\)","")
         out.append("$"+body+"$")
         pos=m.end()
     out.append(text2[pos:])
