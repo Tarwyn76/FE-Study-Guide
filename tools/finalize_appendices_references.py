@@ -76,8 +76,8 @@ def register_for(cid):
     num=int(cid.split("-")[1])
     if 1<=num<=13: return "Chemical-Track-References-and-Sources-complete.md"
     if 14<=num<=30: return "Civil-Track-References-and-Sources-complete.md"
-    if 31<=num<=46: return "ECE-Track-References-and-Sources-complete.md"
-    if 47<=num<=61: return "Environmental-Track-References-and-Sources-complete.md"
+    if 31<=num<=47: return "ECE-Track-References-and-Sources-complete.md"
+    if 48<=num<=61: return "Environmental-Track-References-and-Sources-complete.md"
     if 62<=num<=75: return "Industrial-Systems-Track-References-and-Sources-complete.md"
     if 76<=num<=90: return "Mechanical-Track-References-and-Sources-complete.md"
     if 91<=num<=95: return "Other-Disciplines-Track-References-and-Sources-complete.md"
@@ -98,8 +98,8 @@ else:
     pos=r.find("## Source-history files")
     if pos<0: r=r.rstrip()+"\n\n"+ex
     else: r=r[:pos]+ex+"\n"+r[pos:]
-r=r.replace("03-31 through 03-47","03-31 through 03-46")
-r=r.replace("03-48 through 03-61","03-47 through 03-61")
+r=r.replace("03-31 through 03-46","03-31 through 03-47")
+r=r.replace("03-47 through 03-61","03-48 through 03-61")
 r=r.replace("01-01 through 02-70","00-01 through 02-70")
 rp.write_text(r,encoding="utf-8")
 
