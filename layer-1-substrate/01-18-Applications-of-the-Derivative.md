@@ -742,7 +742,7 @@ $$\frac{dh}{dt} = \frac{-0.60}{7.0686} = \boxed{-0.0849 \text{ m/min}}$$
 
 The level is falling at 8.49 cm/min. Negative sign ✓ — the tank is draining.
 
-**Units check.** $\frac{\text{m}^3/\text{min}}{\text{m}^2} = $ m/min ✓
+**Units check.** $\frac{\text{m}^3/\text{min}}{\text{m}^2} = \text{m/min}$ ✓
 
 **Structural check.** The coefficient $0.5625\pi h^2$ at $h = 2$ evaluates to
 $0.5625\pi(4) = 2.25\pi = 7.0686$ m². And the water surface radius at that depth
