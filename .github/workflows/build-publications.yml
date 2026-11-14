@@ -9,6 +9,9 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+concurrency:
+  group: build-fe-publications-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   preflight:
     runs-on: ubuntu-latest
