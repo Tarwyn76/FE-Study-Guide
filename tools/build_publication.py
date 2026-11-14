@@ -210,12 +210,12 @@ sansfont: "DejaVu Sans"
 monofont: "DejaVu Sans Mono"
 header-includes:
   - |
-    \\usepackage{graphicx}
-    \\usepackage{float}
-    \\usepackage{longtable}
-    \\usepackage{booktabs}
-    \\usepackage{microtype}
-    \\setkeys{Gin}{width=\\linewidth,height=0.82\\textheight,keepaspectratio}
+    \\usepackage{{graphicx}}
+    \\usepackage{{float}}
+    \\usepackage{{longtable}}
+    \\usepackage{{booktabs}}
+    \\usepackage{{microtype}}
+    \\setkeys{{Gin}}{{width=\\linewidth,height=0.82\\textheight,keepaspectratio}}
 """
 
 def assemble(route):
