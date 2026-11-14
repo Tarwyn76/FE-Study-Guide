@@ -1729,110 +1729,110 @@ _No reusable display formula selected; this chapter is primarily conceptual/proc
 
 ### 03-62 — Data, Logic, Databases, and Engineering Analytics
 
-- **03-62:F5** — $z=\\frac{x-\\bar x}{s}\$
+- **03-62:F5** — $z=\frac{x-\bar x}{s}$
 
 ### 03-63 — Linear Programming and Optimization
 
-- **03-63:F1** — $\\max Z=cx\\quad\\text{s.t. }Ax\\le b,\\ x\\ge0\$
-- **03-63:F2** — $a_ix+s_i=b_i,\\quad s_i\\ge0\$
-- **03-63:F4** — $\\max cx,Ax\\le b\\quad\\leftrightarrow\\quad\\min yb,yA\\ge c\$
-- **03-63:F6** — $\\min\\sum_i\\sum_j c_{ij}x_{ij}\$
+- **03-63:F1** — $\max Z=cx\quad\text{s.t. }Ax\le b,\ x\ge0$
+- **03-63:F2** — $a_ix+s_i=b_i,\quad s_i\ge0$
+- **03-63:F4** — $\max cx,Ax\le b\quad\leftrightarrow\quad\min yb,yA\ge c$
+- **03-63:F6** — $\min\sum_i\sum_j c_{ij}x_{ij}$
 
 ### 03-64 — Queueing Models and Service Systems
 
-- **03-64:F1** — $\\rho=\\frac{\\lambda}{s\\mu}\$
-- **03-64:F2** — $L=\\lambda W,\\qquad L_q=\\lambda W_q\$
-- **03-64:F3** — $W=\\frac{1}{\\mu-\\lambda},\\quad L=\\frac{\\lambda}{\\mu-\\lambda}\$
-- **03-64:F4** — $\\lambda_e=\\lambda(1-P_M)\$
-- **03-64:F5** — $L_q=\\frac{\\lambda^2\\sigma_s^2+\\rho^2}{2(1-\\rho)}\$
-- **03-64:F6** — $\\rho=\\frac{\\lambda}{s\\mu}<1\$
+- **03-64:F1** — $\rho=\frac{\lambda}{s\mu}$
+- **03-64:F2** — $L=\lambda W,\qquad L_q=\lambda W_q$
+- **03-64:F3** — $W=\frac{1}{\mu-\lambda},\quad L=\frac{\lambda}{\mu-\lambda}$
+- **03-64:F4** — $\lambda_e=\lambda(1-P_M)$
+- **03-64:F5** — $L_q=\frac{\lambda^2\sigma_s^2+\rho^2}{2(1-\rho)}$
+- **03-64:F6** — $\rho=\frac{\lambda}{s\mu}<1$
 
 ### 03-65 — Markov Processes, Stochastic Models, and Simulation
 
-- **03-65:F1** — $P_{ij}=P(X_{n+1}=j\\mid X_n=i)\$
-- **03-65:F2** — $\\mathbf p_{n+1}=\\mathbf p_nP\$
-- **03-65:F3** — $\\boldsymbol\\pi=\\boldsymbol\\pi P,\\quad\\sum_i\\pi_i=1\$
-- **03-65:F4** — $Z_n=(aZ_{n-1}+C)\\bmod m,\\quad U_n=Z_n/m\$
-- **03-65:F5** — $X=F^{-1}(U)\$
-- **03-65:F7** — $\\bar X\\pm t\\frac{s}{\\sqrt n}\$
+- **03-65:F1** — $P_{ij}=P(X_{n+1}=j\mid X_n=i)$
+- **03-65:F2** — $\mathbf p_{n+1}=\mathbf p_nP$
+- **03-65:F3** — $\boldsymbol\pi=\boldsymbol\pi P,\quad\sum_i\pi_i=1$
+- **03-65:F4** — $Z_n=(aZ_{n-1}+C)\bmod m,\quad U_n=Z_n/m$
+- **03-65:F5** — $X=F^{-1}(U)$
+- **03-65:F7** — $\bar X\pm t\frac{s}{\sqrt n}$
 
 ### 03-66 — Engineering and Project Management — Organization, WBS, PERT/CPM, Earned Value, Agile, and KPIs
 
-- **03-66:F3** — $T=\\sum_{(i,j)\\in CP}d_{ij}\$
-- **03-66:F5** — $CV=EV-AC,\\quad SV=EV-PV\$
+- **03-66:F3** — $T=\sum_{(i,j)\in CP}d_{ij}$
+- **03-66:F5** — $CV=EV-AC,\quad SV=EV-PV$
 
 ### 03-67 — Forecasting — Moving Averages, Exponential Smoothing, and Tracking Signals
 
-- **03-67:F1** — $D_t=\\text{level}+\\text{trend}+\\text{seasonality}+\\text{noise}\$
-- **03-67:F2** — $\\hat d_t=\\frac1n\\sum_{i=1}^n d_{t-i}\$
-- **03-67:F3** — $\\hat d_t=\\alpha d_{t-1}+(1-\\alpha)\\hat d_{t-1}\$
-- **03-67:F4** — $MAD=\\frac1n\\sum|e_t|,\\quad MSE=\\frac1n\\sum e_t^2\$
-- **03-67:F5** — $TS=\\frac{RSFE}{MAD}\$
-- **03-67:F6** — $\\hat D=(\\text{level}+h\\,\\text{trend})\\times\\text{seasonal factor}\$
+- **03-67:F1** — $D_t=\text{level}+\text{trend}+\text{seasonality}+\text{noise}$
+- **03-67:F2** — $\hat d_t=\frac1n\sum_{i=1}^n d_{t-i}$
+- **03-67:F3** — $\hat d_t=\alpha d_{t-1}+(1-\alpha)\hat d_{t-1}$
+- **03-67:F4** — $MAD=\frac1n\sum|e_t|,\quad MSE=\frac1n\sum e_t^2$
+- **03-67:F5** — $TS=\frac{RSFE}{MAD}$
+- **03-67:F6** — $\hat D=(\text{level}+h\,\text{trend})\times\text{seasonal factor}$
 
 ### 03-68 — Inventory, Aggregate Planning, MRP, Sequencing, and Theory of Constraints
 
-- **03-68:F1** — $Q^*=\\sqrt{\\frac{2AD}{h}}\$
-- **03-68:F2** — $Q^*=\\sqrt{\\frac{2AD}{h(1-D/R)}}\$
-- **03-68:F3** — $ROP=\\bar d_L+SS\$
+- **03-68:F1** — $Q^*=\sqrt{\frac{2AD}{h}}$
+- **03-68:F2** — $Q^*=\sqrt{\frac{2AD}{h(1-D/R)}}$
+- **03-68:F3** — $ROP=\bar d_L+SS$
 
 ### 03-69 — Manufacturing and Service Systems — Processes, Automation, Throughput, and Line Balancing
 
-- **03-69:F1** — $\\text{process}=f(\\text{material, geometry, tolerance, volume, cost})\$
-- **03-69:F2** — $WIP=Throughput\\times Flow\\ Time\$
-- **03-69:F3** — $Utilization=\\frac{actual\\ output}{defined\\ capacity}\$
-- **03-69:F4** — $\\text{automation decision}=f(\\text{technical, economic, safety, flexibility})\$
-- **03-69:F5** — $CT=\\frac{OT}{OR},\\quad N_{min}=\\frac{\\sum t_i}{CT}\$
-- **03-69:F6** — $\\eta=\\frac{\\sum t_i}{NCT}\$
-- **03-69:F7** — $Energy\\ intensity=\\frac{energy\\ input}{useful\\ output}\$
+- **03-69:F1** — $\text{process}=f(\text{material, geometry, tolerance, volume, cost})$
+- **03-69:F2** — $WIP=Throughput\times Flow\ Time$
+- **03-69:F3** — $Utilization=\frac{actual\ output}{defined\ capacity}$
+- **03-69:F4** — $\text{automation decision}=f(\text{technical, economic, safety, flexibility})$
+- **03-69:F5** — $CT=\frac{OT}{OR},\quad N_{min}=\frac{\sum t_i}{CT}$
+- **03-69:F6** — $\eta=\frac{\sum t_i}{NCT}$
+- **03-69:F7** — $Energy\ intensity=\frac{energy\ input}{useful\ output}$
 
 ### 03-70 — Lean Systems, Process Improvement, Sustainability, and Value Engineering
 
-- **03-70:F1** — $Lead\\ time=VA\\ time+waiting+transport+rework+other\\ delay\$
-- **03-70:F2** — $T_{NVA}=T_{wait}+T_{transport}+T_{motion}+T_{rework}+\\cdots\$
-- **03-70:F3** — $Takt=\\frac{available\\ production\\ time}{customer\\ demand}\$
-- **03-70:F5** — $V=\\frac{F}{C_{LC}}\$
-- **03-70:F6** — $Resource\\ intensity=\\frac{energy/material/water/waste}{useful\\ output}\$
+- **03-70:F1** — $Lead\ time=VA\ time+waiting+transport+rework+other\ delay$
+- **03-70:F2** — $T_{NVA}=T_{wait}+T_{transport}+T_{motion}+T_{rework}+\cdots$
+- **03-70:F3** — $Takt=\frac{available\ production\ time}{customer\ demand}$
+- **03-70:F5** — $V=\frac{F}{C_{LC}}$
+- **03-70:F6** — $Resource\ intensity=\frac{energy/material/water/waste}{useful\ output}$
 
 ### 03-71 — Facility Location, Layout, Capacity, and Material Handling
 
-- **03-71:F1** — $LD=\\sum_{i,j}F_{ij}D_{ij}\$
-- **03-71:F2** — $D_E=\\sqrt{(\\Delta x)^2+(\\Delta y)^2},\\quad D_R=|\\Delta x|+|\\Delta y|\$
-- **03-71:F3** — $\\text{layout}=f(\\text{volume, variety, flow, flexibility})\$
-- **03-71:F4** — $\\min\\sum_jf_jx_j+\\sum_i\\sum_jc_{ij}y_{ij}\$
-- **03-71:F5** — $M_j=\\sum_i\\frac{P_{ij}T_{ij}}{C_{ij}}\$
-- **03-71:F6** — $A_j=\\sum_i\\frac{P_{ij}T_{ij}}{C_{ij}}\$
-- **03-71:F7** — $\\text{choice}=f(\\text{load, distance, frequency, path, flexibility, safety})\$
+- **03-71:F1** — $LD=\sum_{i,j}F_{ij}D_{ij}$
+- **03-71:F2** — $D_E=\sqrt{(\Delta x)^2+(\Delta y)^2},\quad D_R=|\Delta x|+|\Delta y|$
+- **03-71:F3** — $\text{layout}=f(\text{volume, variety, flow, flexibility})$
+- **03-71:F4** — $\min\sum_jf_jx_j+\sum_i\sum_jc_{ij}y_{ij}$
+- **03-71:F5** — $M_j=\sum_i\frac{P_{ij}T_{ij}}{C_{ij}}$
+- **03-71:F6** — $A_j=\sum_i\frac{P_{ij}T_{ij}}{C_{ij}}$
+- **03-71:F7** — $\text{choice}=f(\text{load, distance, frequency, path, flexibility, safety})$
 
 ### 03-72 — Supply Chains, Transportation Networks, Pooling, and Distribution
 
-- **03-72:F2** — $\\min\\sum_i\\sum_j c_{ij}x_{ij}\$
-- **03-72:F3** — $Total\\ cost=facility+transport+inventory+service\\ effects\$
-- **03-72:F4** — $\\sigma_{pooled}=\\sqrt{\\sum_i\\sigma_i^2}\\quad\\text{for independent demand}\$
-- **03-72:F5** — $Inventory\\ position=on\\ hand+on\\ order-backorders\$
-- **03-72:F7** — $Var(orders\\ upstream)>Var(customer\\ demand)\\text{ can occur}\$
+- **03-72:F2** — $\min\sum_i\sum_j c_{ij}x_{ij}$
+- **03-72:F3** — $Total\ cost=facility+transport+inventory+service\ effects$
+- **03-72:F4** — $\sigma_{pooled}=\sqrt{\sum_i\sigma_i^2}\quad\text{for independent demand}$
+- **03-72:F5** — $Inventory\ position=on\ hand+on\ order-backorders$
+- **03-72:F7** — $Var(orders\ upstream)>Var(customer\ demand)\text{ can occur}$
 
 ### 03-73 — Human Factors, Ergonomics, Work Design, Time Study, and Learning Curves
 
-- **03-73:F1** — $\\text{performance}=f(\\text{perception, cognition, control, feedback, workload})\$
-- **03-73:F3** — $Risk=f(force,posture,repetition,duration,recovery)\$
-- **03-73:F6** — $ST=NT\\times AF\$
-- **03-73:F7** — $T_N=KN^s,\\quad s=\\frac{\\ln(LR)}{\\ln2}\$
+- **03-73:F1** — $\text{performance}=f(\text{perception, cognition, control, feedback, workload})$
+- **03-73:F3** — $Risk=f(force,posture,repetition,duration,recovery)$
+- **03-73:F6** — $ST=NT\times AF$
+- **03-73:F7** — $T_N=KN^s,\quad s=\frac{\ln(LR)}{\ln2}$
 
 ### 03-74 — Quality Management, SPC, Process Capability, Sampling, and DOE
 
-- **03-74:F1** — $Quality=plan+assure+control+improve\$
-- **03-74:F3** — $L(y)=k(y-T)^2\$
-- **03-74:F4** — $UCL=CL+3\\sigma_{stat},\\quad LCL=CL-3\\sigma_{stat}\$
-- **03-74:F6** — $P_a=P(\\text{lot accepted}\\mid p)\$
-- **03-74:F7** — $E_i=\\bar Y_{i,+}-\\bar Y_{i,-}\$
+- **03-74:F1** — $Quality=plan+assure+control+improve$
+- **03-74:F3** — $L(y)=k(y-T)^2$
+- **03-74:F4** — $UCL=CL+3\sigma_{stat},\quad LCL=CL-3\sigma_{stat}$
+- **03-74:F6** — $P_a=P(\text{lot accepted}\mid p)$
+- **03-74:F7** — $E_i=\bar Y_{i,+}-\bar Y_{i,-}$
 
 ### 03-75 — Systems Engineering, Reliability, FMEA, Fault Trees, and Life-Cycle Risk
 
-- **03-75:F4** — $RPN=S\\times O\\times D\$
-- **03-75:F5** — $P(A\\cap B)=P(A)P(B)\\text{ for independent events}\$
-- **03-75:F6** — $R_s=\\prod_iR_i,\\quad R_p=1-\\prod_i(1-R_i)\$
-- **03-75:F7** — $A=\\frac{MTBF}{MTBF+MTTR}\$
+- **03-75:F4** — $RPN=S\times O\times D$
+- **03-75:F5** — $P(A\cap B)=P(A)P(B)\text{ for independent events}$
+- **03-75:F6** — $R_s=\prod_iR_i,\quad R_p=1-\prod_i(1-R_i)$
+- **03-75:F7** — $A=\frac{MTBF}{MTBF+MTTR}$
 
 ## Layer 3 — Mechanical
 
