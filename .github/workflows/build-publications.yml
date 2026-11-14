@@ -76,4 +76,5 @@ jobs:
             build/publication/fe-study-guide-${{ matrix.route }}.epub
             build/publication/fe-study-guide-${{ matrix.route }}-publication-validation.json
             build/publication/fe-study-guide-${{ matrix.route }}-preflight.json
+            build/publication/fe-study-guide-${{ matrix.route }}.yaml
           retention-days: 30
