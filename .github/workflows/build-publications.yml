@@ -7,6 +7,12 @@ on:
       - tools/validate_publication.py
       - .github/workflows/build-publications.yml
       - routes/**
+      - layer-0-orientation/**
+      - layer-1-substrate/**
+      - layer-2-core/**
+      - layer-3-tracks/**
+      - appendices/**
+      - references/**
   workflow_dispatch:
 
 permissions:
