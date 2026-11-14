@@ -884,7 +884,7 @@ $$v(t) = \frac{ds}{dt} = 3t^2 - 12t + 9 \text{ m/s}$$
 
 $$a(t) = \frac{dv}{dt} = 6t - 12 \text{ m/s}^2$$
 
-Units: $[s] = $ m, $[t] = $ s, so $[v] = $ m/s and $[a] = $ m/s² ✓
+Units: $[s] = \text{m}$, $[t] = \text{s}$, so $[v] = \text{m/s}$ and $[a] = \text{m/s}^2$ ✓
 
 **(b)** At rest means $v = 0$:
 
@@ -1080,7 +1080,7 @@ $12^{0.85} = e^{0.85(2.484907)} = e^{2.112171} = 8.267$
 
 $$= 0.777(8.267) = \boxed{6.42 \text{ kPa per L/s}}$$
 
-Units: $[\Delta P]/[Q] = $ kPa/(L/s) ✓
+Units: $[\Delta P]/[Q] = \text{kPa}/(\text{L/s})$ ✓
 
 **(c)** Linear estimate using the derivative:
 
