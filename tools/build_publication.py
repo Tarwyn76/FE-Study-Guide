@@ -221,6 +221,7 @@ header-includes:
     \\usepackage{{longtable}}
     \\usepackage{{booktabs}}
     \\usepackage{{microtype}}
+    \\usepackage{{cancel}}
     \\setkeys{{Gin}}{{width=\\linewidth,height=0.82\\textheight,keepaspectratio}}
 """
 
