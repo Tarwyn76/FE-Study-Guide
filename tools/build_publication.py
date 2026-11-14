@@ -121,7 +121,7 @@ def normalize_nested_math_delimiters(text, path, stats):
     for m in re.finditer(r"\$\$(.*?)\$\$", text, re.S):
         out.append(text[pos:m.start()])
         body=clean_content(m.group(1),m.start(1))
-        out.append("$"+body+"$")
+        out.append("$$"+body+"$$")
         pos=m.end()
     out.append(text[pos:])
     text2="".join(out)
