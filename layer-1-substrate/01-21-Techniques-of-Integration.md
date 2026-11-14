@@ -909,7 +909,7 @@ $$V = \int_0^{\infty}18e^{-t/25}dt = \lim_{b\to\infty}18\left[\frac{e^{-t/25}}{-
 
 $$= -450\lim_{b\to\infty}\left(e^{-b/25} - 1\right) = -450(0 - 1) = \boxed{450 \text{ L}}$$
 
-**Units check.** $\frac{\text{L}}{\text{s}}\cdot\text{s} = $ L ✓
+**Units check.** $\frac{\text{L}}{\text{s}}\cdot\text{s} = \text{L}$ ✓
 
 **Why finite?** The flow decays exponentially, and exponential decay is fast
 enough that the accumulated total converges. The general result is worth
