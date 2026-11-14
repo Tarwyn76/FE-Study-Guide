@@ -1,0 +1,44 @@
+name: Scan generated publication TeX raw math boundaries
+on:
+  push:
+    branches: [figure-cleanup-strict]
+    paths:
+      - .github/workflows/scan-generated-tex-boundaries.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: figure-cleanup-strict
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get update && sudo apt-get install -y --no-install-recommends pandoc
+      - run: python tools/build_publication.py --route chemical
+      - name: Generate intermediate TeX
+        run: |
+          pandoc "build/publication/fe-study-guide-chemical.md" \
+            --from "markdown-yaml_metadata_block+tex_math_dollars+tex_math_single_backslash+fenced_divs+bracketed_spans" \
+            --metadata-file "build/publication/fe-study-guide-chemical.yaml" \
+            --resource-path=. \
+            --top-level-division=chapter \
+            --toc \
+            -t latex \
+            -o build/publication/chemical-debug.tex
+      - name: Scan literal dollar followed by TeX command
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path("build/publication/chemical-debug.tex")
+          hits=[]
+          for n,line in enumerate(p.read_text(encoding="utf-8",errors="ignore").splitlines(),1):
+              if "\\$\\" in line:
+                  hits.append((n,line.strip()))
+          print("RAW_DOLLAR_TEX_BOUNDARIES",len(hits))
+          for n,line in hits[:500]:
+              print(f"{n}: {line}")
+          PY
