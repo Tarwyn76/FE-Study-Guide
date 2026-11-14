@@ -1,0 +1,79 @@
+name: Build FE publication editions
+on:
+  push:
+    branches: [figure-cleanup-strict]
+    paths:
+      - tools/build_publication.py
+      - tools/validate_publication.py
+      - .github/workflows/build-publications.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: figure-cleanup-strict
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Assemble all routes and validate source/image resolution
+        run: python tools/build_publication.py --all
+      - uses: actions/upload-artifact@v4
+        with:
+          name: publication-preflight
+          path: |
+            build/publication/*preflight*.json
+            build/publication/publication-preflight-summary.json
+          retention-days: 30
+
+  build:
+    needs: preflight
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        route:
+          - chemical
+          - civil
+          - electrical-computer
+          - environmental
+          - industrial-systems
+          - mechanical
+          - other-disciplines
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: figure-cleanup-strict
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install publishing toolchain
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends pandoc texlive-xetex texlive-latex-extra fonts-dejavu poppler-utils
+      - name: Assemble route manuscript
+        run: python tools/build_publication.py --route "${{ matrix.route }}"
+      - name: Build PDF
+        run: |
+          pandoc "build/publication/fe-study-guide-${{ matrix.route }}.md"             --from markdown+tex_math_dollars+fenced_divs+bracketed_spans             --resource-path=.             --pdf-engine=xelatex             --top-level-division=chapter             --toc             -o "build/publication/fe-study-guide-${{ matrix.route }}.pdf"
+      - name: Build EPUB
+        run: |
+          pandoc "build/publication/fe-study-guide-${{ matrix.route }}.md"             --from markdown+tex_math_dollars+fenced_divs+bracketed_spans             --resource-path=.             --toc             --mathml             -o "build/publication/fe-study-guide-${{ matrix.route }}.epub"
+      - name: Build validation HTML
+        run: |
+          pandoc "build/publication/fe-study-guide-${{ matrix.route }}.md"             --from markdown+tex_math_dollars+fenced_divs+bracketed_spans             --resource-path=.             --standalone             --toc             --mathml             -o "build/publication/fe-study-guide-${{ matrix.route }}.html"
+      - name: Validate rendered outputs
+        run: |
+          python tools/validate_publication.py             --route "${{ matrix.route }}"             --pdf "build/publication/fe-study-guide-${{ matrix.route }}.pdf"             --epub "build/publication/fe-study-guide-${{ matrix.route }}.epub"             --html "build/publication/fe-study-guide-${{ matrix.route }}.html"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fe-study-guide-${{ matrix.route }}-publication
+          path: |
+            build/publication/fe-study-guide-${{ matrix.route }}.pdf
+            build/publication/fe-study-guide-${{ matrix.route }}.epub
+            build/publication/fe-study-guide-${{ matrix.route }}-publication-validation.json
+            build/publication/fe-study-guide-${{ matrix.route }}-preflight.json
+          retention-days: 30
