@@ -179,7 +179,7 @@ This publication-facing map expands the coverage ranges above so every canonical
 | 03-44 | Chapter 03-44: Computer Systems — Microprocessors, Memory, and Interfacing | [ECE-Track-References-and-Sources-complete.md](ECE-Track-References-and-Sources-complete.md) |
 | 03-45 | Chapter 03-45: Computer Networks — Routing, Switching, Topologies, and TCP/IP | [ECE-Track-References-and-Sources-complete.md](ECE-Track-References-and-Sources-complete.md) |
 | 03-46 | Chapter 03-46: Cybersecurity — Security Triad, Firewalls, Detection, Scanning, and Vulnerability Testing | [ECE-Track-References-and-Sources-complete.md](ECE-Track-References-and-Sources-complete.md) |
-| 03-47 | Chapter 03-47: Software Engineering — Data Structures, Algorithms, Complexity, Control Flow, and Testing | [Environmental-Track-References-and-Sources-complete.md](Environmental-Track-References-and-Sources-complete.md) |
+| 03-47 | Chapter 03-47: Software Engineering — Data Structures, Algorithms, Complexity, Control Flow, and Testing | [ECE-Track-References-and-Sources-complete.md](ECE-Track-References-and-Sources-complete.md) |
 | 03-48 | Chapter 03-48: Population, Demand, Environmental Mass Balances, and Reactor Models | [Environmental-Track-References-and-Sources-complete.md](Environmental-Track-References-and-Sources-complete.md) |
 | 03-49 | Chapter 03-49: Environmental Chemistry — Equilibrium, Kinetics, Partitioning, and pC-pH | [Environmental-Track-References-and-Sources-complete.md](Environmental-Track-References-and-Sources-complete.md) |
 | 03-50 | Chapter 03-50: Health Hazards, Exposure Pathways, Toxicology, and Risk Assessment | [Environmental-Track-References-and-Sources-complete.md](Environmental-Track-References-and-Sources-complete.md) |
@@ -228,7 +228,6 @@ This publication-facing map expands the coverage ranges above so every canonical
 | 03-93 | Chapter 03-93: Other Disciplines Electrical, Instrumentation, and Control Integration | [Other-Disciplines-Track-References-and-Sources-complete.md](Other-Disciplines-Track-References-and-Sources-complete.md) |
 | 03-94 | Chapter 03-94: Other Disciplines Safety, Economics, and Cross-Domain Engineering Decisions | [Other-Disciplines-Track-References-and-Sources-complete.md](Other-Disciplines-Track-References-and-Sources-complete.md) |
 | 03-95 | Chapter 03-95: Other Disciplines Mixed FE Synthesis and Handbook Strategy | [Other-Disciplines-Track-References-and-Sources-complete.md](Other-Disciplines-Track-References-and-Sources-complete.md) |
-
 ## Source-history files
 
 The files under `source-history/` document source-split cleanup batches. They are retained for audit traceability but are not the preferred publication-facing bibliography.
