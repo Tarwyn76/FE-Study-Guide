@@ -1,0 +1,43 @@
+name: Source math-boundary audit
+on:
+  workflow_dispatch:
+  push:
+    branches: [figure-cleanup-strict]
+    paths:
+      - .github/workflows/source-math-boundary-audit.yml
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: figure-cleanup-strict
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Find suspicious math boundary patterns
+        run: |
+          cat > /tmp/scan.py <<'PY'
+          from pathlib import Path
+          import re
+          roots=[Path("layer-0-orientation"),Path("layer-1-substrate"),Path("layer-2-core"),Path("layer-3-tracks"),Path("appendices")]
+          pats=[
+              ("equals_close_plain", re.compile(r'\$[^$\n]{1,300}=\s*\$\s*[A-Za-zµ°]')),
+              ("open_after_plain", re.compile(r'\b(?:Units?|units?)\s*:\s*\$[^$\n]{1,300}\$\s+[A-Za-zµ°]')),
+          ]
+          hits=[]
+          for root in roots:
+              if not root.exists(): continue
+              for p in root.rglob("*.md"):
+                  s=p.read_text(encoding="utf-8",errors="ignore")
+                  for label,pat in pats:
+                      for m in pat.finditer(s):
+                          line=s.count("\n",0,m.start())+1
+                          hits.append((str(p),line,label,re.sub(r'\s+',' ',m.group(0))[:500]))
+          print("SUSPICIOUS_BOUNDARIES",len(hits))
+          for h in hits:
+              print(f"{h[0]}:{h[1]} [{h[2]}] {h[3]}")
+          PY
+          python /tmp/scan.py
