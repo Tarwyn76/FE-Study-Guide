@@ -987,8 +987,9 @@ $$S = \frac{7(13 + 37)}{2} = \frac{7(50)}{2} = \boxed{175}$$
 
 (c) $\dfrac{15(16)(31)}{6} = \dfrac{7440}{6} = \boxed{1240}$
 
-(d) $\sum_{k=1}^{4}k^3 - 2\sum_{k=1}^{4}k = \left[\frac{4 \cdot 5}{2}\right]^2
-- 2\left(\frac{4 \cdot 5}{2}\right) = 100 - 20 = \boxed{80}$
+(d)
+
+$\sum_{k=1}^{4}k^3 - 2\sum_{k=1}^{4}k = \left[\frac{4 \cdot 5}{2}\right]^2 - 2\left(\frac{4 \cdot 5}{2}\right) = 100 - 20 = \boxed{80}$
 
 Verify term by term: $(1-2)+(8-4)+(27-6)+(64-8) = -1+4+21+56 = 80$ ✓
 
