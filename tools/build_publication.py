@@ -187,9 +187,8 @@ def route_sources(route):
         raise RuntimeError("Missing publication source files: " + ", ".join(missing))
     return display, order
 
-def metadata(display):
-    return f"""---
-title: "FE Supplemental Study Guide — {display} Route"
+def metadata_text(display):
+    return f"""title: "FE Supplemental Study Guide — {display} Route"
 subtitle: "Release Candidate Publication"
 date: "2026-11-14"
 lang: en-US
@@ -211,14 +210,12 @@ sansfont: "DejaVu Sans"
 monofont: "DejaVu Sans Mono"
 header-includes:
   - |
-    \\usepackage{{graphicx}}
-    \\usepackage{{float}}
-    \\usepackage{{longtable}}
-    \\usepackage{{booktabs}}
-    \\usepackage{{microtype}}
-    \\setkeys{{Gin}}{{width=\\linewidth,height=0.82\\textheight,keepaspectratio}}
----
-
+    \\usepackage{graphicx}
+    \\usepackage{float}
+    \\usepackage{longtable}
+    \\usepackage{booktabs}
+    \\usepackage{microtype}
+    \\setkeys{Gin}{width=\\linewidth,height=0.82\\textheight,keepaspectratio}
 """
 
 def assemble(route):
@@ -228,14 +225,16 @@ def assemble(route):
     stats = collections.defaultdict(int)
     stats["missing_images"] = []
 
-    parts = [metadata(display)]
+    meta = BUILD / f"fe-study-guide-{route}.yaml"
+    BUILD.mkdir(parents=True, exist_ok=True)
+    meta.write_text(metadata_text(display), encoding="utf-8")
+    parts = []
     for i, p in enumerate(sources):
         rel = p.relative_to(ROOT)
         parts += [
             "\n\n<!-- PUBLICATION SOURCE: " + str(rel) + " -->\n\n",
             process_markdown(p.resolve(), included, anchor_map, stats),
         ]
-    BUILD.mkdir(parents=True, exist_ok=True)
     out = BUILD / f"fe-study-guide-{route}.md"
     out.write_text("".join(parts), encoding="utf-8")
 
@@ -256,6 +255,7 @@ def assemble(route):
         "remote_images": stats["remote_images"],
         "markdown_bytes": out.stat().st_size,
         "output_markdown": str(out.relative_to(ROOT)),
+        "metadata_file": str(meta.relative_to(ROOT)),
     }
     report = BUILD / f"fe-study-guide-{route}-preflight.json"
     report.write_text(json.dumps(info, indent=2), encoding="utf-8")
