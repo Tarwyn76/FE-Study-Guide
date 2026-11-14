@@ -74,7 +74,7 @@ jobs:
       - name: Build PDF
         run: |
           pandoc "build/publication/fe-study-guide-${{ matrix.route }}.md" \
-            --from "markdown-yaml_metadata_block+tex_math_dollars+fenced_divs+bracketed_spans" \
+            --from "markdown-yaml_metadata_block+tex_math_dollars+tex_math_single_backslash+fenced_divs+bracketed_spans" \
             --metadata-file "build/publication/fe-study-guide-${{ matrix.route }}.yaml" \
             --resource-path=. \
             --pdf-engine=xelatex \
@@ -85,7 +85,7 @@ jobs:
       - name: Build EPUB
         run: |
           pandoc "build/publication/fe-study-guide-${{ matrix.route }}.md" \
-            --from "markdown-yaml_metadata_block+tex_math_dollars+fenced_divs+bracketed_spans" \
+            --from "markdown-yaml_metadata_block+tex_math_dollars+tex_math_single_backslash+fenced_divs+bracketed_spans" \
             --metadata-file "build/publication/fe-study-guide-${{ matrix.route }}.yaml" \
             --resource-path=. \
             --toc \
@@ -95,7 +95,7 @@ jobs:
       - name: Build validation HTML
         run: |
           pandoc "build/publication/fe-study-guide-${{ matrix.route }}.md" \
-            --from "markdown-yaml_metadata_block+tex_math_dollars+fenced_divs+bracketed_spans" \
+            --from "markdown-yaml_metadata_block+tex_math_dollars+tex_math_single_backslash+fenced_divs+bracketed_spans" \
             --metadata-file "build/publication/fe-study-guide-${{ matrix.route }}.yaml" \
             --resource-path=. \
             --standalone \
