@@ -341,7 +341,7 @@ does not determine the answer. Different functions producing $\frac{0}{0}$ at
 the same point have different limits — some finite, some infinite, some
 nonexistent. The symbol tells you nothing except *do more work*.
 
-The notation \(\frac{0}{0}\) means only that direct substitution was inconclusive. It does **not** imply that the limit is 0, 1, or \(\infty\).
+The notation $\frac{0}{0}$ means only that direct substitution was inconclusive. It does **not** imply that the limit is 0, 1, or $\infty$.
 
 The cause is always the same: numerator and denominator share a factor that
 vanishes at $x = a$. Cancel it and the obstruction disappears.
