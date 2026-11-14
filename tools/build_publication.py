@@ -108,8 +108,13 @@ def process_markdown(path, included, anchor_map, stats):
 
     def image_sub(m):
         alt, dest = m.group(1), m.group(2).strip()
-        # Markdown destinations may include an optional quoted title.
-        raw_match = re.match(r'^(<[^>]+>|\S+?)(?:\s+["\'][^"\']*["\'])?
+        # Markdown image destinations may include an optional title after the path.
+        if dest.startswith("<") and ">" in dest:
+            raw = dest[1:dest.index(">")]
+        else:
+            raw = dest.split(None, 1)[0]
+        raw = raw.strip().strip("<>")
+        if re.match(r"^[a-z]+://", raw, re.I):
             stats["remote_images"] += 1
             return m.group(0)
         png, mode = resolve_figure(raw)
