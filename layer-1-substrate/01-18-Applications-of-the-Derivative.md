@@ -1627,7 +1627,7 @@ $$2.0 = \pi(9.0)\frac{dh}{dt} = 28.274\frac{dh}{dt}$$
 $$\frac{dh}{dt} = \frac{2.0}{28.274} = \boxed{0.0707 \text{ m/min}}$$
 
 Positive ✓ — the pile is growing. Units:
-$\frac{\text{m}^3/\text{min}}{\text{m}^2} = $ m/min ✓
+$\frac{\text{m}^3/\text{min}}{\text{m}^2} = \text{m/min}$ ✓
 
 (b) $\frac{dV}{dh} = \pi h^2$. At $h = 3.0$ m the base radius is also 3.0 m, so
 the base area is $\pi(3.0)^2 = 9\pi = 28.274$ m² — identical to $\frac{dV}{dh}$
