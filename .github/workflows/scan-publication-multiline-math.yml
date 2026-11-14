@@ -1,0 +1,48 @@
+name: Scan publication multiline math candidates
+on:
+  push:
+    branches: [figure-cleanup-strict]
+    paths:
+      - .github/workflows/scan-publication-multiline-math.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: figure-cleanup-strict
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Scan likely multiline inline math
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          roots=[Path("layer-0-orientation"),Path("layer-1-substrate"),Path("layer-2-core"),Path("layer-3-tracks"),Path("appendices")]
+          pat=re.compile(r'(?<!\$)\$(?!\$)([^$]*?\n[^$]*?)\$(?!\$)')
+          hits=[]
+          for root in roots:
+              if not root.exists(): continue
+              for p in root.rglob("*.md"):
+                  s=p.read_text(encoding="utf-8",errors="ignore")
+                  for m in pat.finditer(s):
+                      body=m.group(1)
+                      if "\n\n" in body: continue
+                      # High-confidence math: TeX commands or repeated algebraic operators,
+                      # and not prose/currency paired across lines.
+                      if not re.search(r'\\(?:frac|dfrac|tfrac|left|right|sqrt|boxed|sum|int|lvert|rvert|text|begin|end|cdot|implies|pm|theta|alpha|beta|gamma|rho|sigma|mu|Delta)\b',body):
+                          continue
+                      words=re.findall(r'[A-Za-z]{4,}',re.sub(r'\\[A-Za-z]+','',body))
+                      if len(words)>8: continue
+                      line=s.count("\n",0,m.start())+1
+                      snippet=re.sub(r'\s+',' ',body).strip()
+                      hits.append((str(p),line,snippet[:400]))
+          print("HIGH_CONFIDENCE_MULTILINE_INLINE_MATH",len(hits))
+          for h in hits:
+              print(f"{h[0]}:{h[1]} :: {h[2]}")
+          PY
