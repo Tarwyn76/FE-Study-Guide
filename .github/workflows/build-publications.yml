@@ -60,7 +60,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends \
-            pandoc texlive-xetex texlive-latex-extra lmodern fonts-dejavu poppler-utils
+            pandoc texlive-xetex texlive-latex-extra texlive-fonts-recommended lmodern fonts-dejavu poppler-utils
       - name: Assemble route manuscript
         run: python tools/build_publication.py --route "${{ matrix.route }}"
 
