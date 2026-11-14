@@ -102,8 +102,54 @@ def resolve_figure(raw):
     return None, "ambiguous"
 LINK_RE = re.compile(r"(?<!!)\[([^\]]+)\]\(([^)]+)\)")
 
+def normalize_nested_math_delimiters(text, path, stats):
+    """Remove TeX math open/close delimiters that appear inside $...$ or $...$."""
+    def clean_content(content, offset):
+        if not any(tok in content for tok in (r"\(", r"\)", r"\[", r"\]")):
+            return content
+        line = text.count("\n", 0, offset) + 1
+        stats["nested_math_repairs"].append({
+            "source": str(path.relative_to(ROOT)),
+            "line": line,
+            "snippet": re.sub(r"\s+", " ", content).strip()[:240],
+        })
+        return (content
+                .replace(r"\(", "")
+                .replace(r"\)", "")
+                .replace(r"\[", "")
+                .replace(r"\]", ""))
+
+    # Display math first so the inline pass cannot consume its dollar pairs.
+    out=[]; pos=0
+    for m in re.finditer(r"\$\$(.*?)\$\$", text, re.S):
+        out.append(text[pos:m.start()])
+        body=clean_content(m.group(1),m.start(1))
+        out.append("$"+body+"$")
+        pos=m.end()
+    out.append(text[pos:])
+    text2="".join(out)
+
+    out=[]; pos=0
+    for m in re.finditer(r"(?<!\$)\$([^$\n]+?)\$(?!\$)", text2):
+        out.append(text2[pos:m.start()])
+        body=m.group(1)
+        if any(tok in body for tok in (r"\(", r"\)", r"\[", r"\]")):
+            line=text2.count("\n",0,m.start(1))+1
+            stats["nested_math_repairs"].append({
+                "source": str(path.relative_to(ROOT)),
+                "line": line,
+                "snippet": re.sub(r"\s+", " ", body).strip()[:240],
+            })
+            body=(body.replace(r"\(","").replace(r"\)","")
+                      .replace(r"\[","").replace(r"\]",""))
+        out.append("$"+body+"$")
+        pos=m.end()
+    out.append(text2[pos:])
+    return "".join(out)
+
 def process_markdown(path, included, anchor_map, stats):
     text = strip_front_matter(path.read_text(encoding="utf-8", errors="ignore"))
+    text = normalize_nested_math_delimiters(text, path, stats)
     text = explicit_first_h1(text, anchor_map[path.resolve()])
 
     def image_sub(m):
@@ -231,6 +277,7 @@ def assemble(route):
     anchor_map = {p.resolve(): anchor_for(p) for p in sources}
     stats = collections.defaultdict(int)
     stats["missing_images"] = []
+    stats["nested_math_repairs"] = []
 
     meta = BUILD / f"fe-study-guide-{route}.yaml"
     BUILD.mkdir(parents=True, exist_ok=True)
@@ -253,6 +300,7 @@ def assemble(route):
         "images": stats["images"],
         "figure_id_resolutions": stats["figure_id_resolutions"],
         "missing_images": stats["missing_images"],
+        "nested_math_repairs": stats["nested_math_repairs"],
         "external_links": stats["external_links"],
         "rewritten_local_links": stats["rewritten_local_links"],
         "crossfile_fragment_links_to_top": stats["crossfile_fragment_links_to_top"],
