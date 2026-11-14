@@ -1,0 +1,29 @@
+name: Diagnose publication TeX failure
+on:
+  push:
+    branches: [figure-cleanup-strict]
+    paths:
+      - .github/workflows/diagnose-publication-tex.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: figure-cleanup-strict
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get update && sudo apt-get install -y --no-install-recommends pandoc
+      - run: python tools/build_publication.py --route chemical
+      - name: Generate intermediate LaTeX
+        run: |
+          pandoc "build/publication/fe-study-guide-chemical.md"             --from "markdown-yaml_metadata_block+tex_math_dollars+fenced_divs+bracketed_spans"             --metadata-file "build/publication/fe-study-guide-chemical.yaml"             --resource-path=.             --top-level-division=chapter             --toc             -t latex             -o build/publication/chemical-debug.tex
+      - name: Show failing TeX region
+        run: |
+          nl -ba build/publication/chemical-debug.tex | sed -n '28745,28790p'
+          echo "--- literal escaped-dollar-left occurrences ---"
+          grep -n -F '\$\left' build/publication/chemical-debug.tex | head -100 || true
