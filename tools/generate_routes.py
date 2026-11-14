@@ -22,15 +22,29 @@ def fm(p):
     try:return yaml.safe_load(t.split("---",2)[1]) or {}
     except:return {}
 chapters=[]
-for p in ROOT.rglob("*.md"):
-    if any(x in p.parts for x in ("routes","audit-results",".git")): continue
-    m=re.match(r"^(\d{2}-\d{2})-",p.name)
-    if not m: continue
-    d=fm(p); ch=str(d.get("chapter") or m.group(1)); title=str(d.get("title") or p.stem)
-    rs=d.get("routes") or []
-    if isinstance(rs,str): rs=[rs]
-    rs={ALIASES.get(str(x),str(x)) for x in rs}
-    chapters.append((ch,title,rs,p))
+canonical_roots=[
+    ROOT/"layer-0-orientation",
+    ROOT/"layer-1-substrate",
+    ROOT/"layer-2-core",
+    ROOT/"layer-3-tracks",
+]
+by_chapter={}
+for base in canonical_roots:
+    if not base.exists(): continue
+    for p in base.rglob("*.md"):
+        if "(inc)" in p.name.lower(): continue
+        m=re.match(r"^(\d{2}-\d{2})-",p.name)
+        if not m: continue
+        d=fm(p); ch=str(d.get("chapter") or m.group(1))
+        title=str(d.get("title") or p.stem)
+        rs=d.get("routes") or []
+        if isinstance(rs,str): rs=[rs]
+        rs={ALIASES.get(str(x),str(x)) for x in rs}
+        candidate=(ch,title,rs,p)
+        # Canonical layer tree only; one source per chapter ID.
+        if ch not in by_chapter or len(str(p)) < len(str(by_chapter[ch][3])):
+            by_chapter[ch]=candidate
+chapters=list(by_chapter.values())
 for disc,name in EXPECTED.items():
     rows=sorted((ch,title,p) for ch,title,rs,p in chapters if disc in rs)
     lines=[f"# FE {disc.replace('-',' ').title()} Study Route","",
@@ -52,5 +66,5 @@ for disc,name in EXPECTED.items():
             "- Tier review checkpoints: use the tier-review exams at the end of their corresponding foundation blocks.",
             f"- Practice Exam A: appendices/practice-exams/{disc}-practice-a.yaml",
             f"- Practice Exam B: appendices/practice-exams/{disc}-practice-b.yaml",""]
-    (ROUTES/name).write_text("\\n".join(lines),encoding="utf-8")
+    (ROUTES/name).write_text("\n".join(lines),encoding="utf-8")
     print(disc,len(rows),name)
