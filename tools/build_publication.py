@@ -8,8 +8,8 @@ BUILD = ROOT / "build" / "publication"
 ROUTES = {
     "chemical": ("Chemical Engineering", "chemical", range(1, 14), "Chemical-Track-References-and-Sources-complete.md"),
     "civil": ("Civil Engineering", "civil", range(14, 31), "Civil-Track-References-and-Sources-complete.md"),
-    "electrical-computer": ("Electrical and Computer Engineering", "electrical-computer", range(31, 47), "ECE-Track-References-and-Sources-complete.md"),
-    "environmental": ("Environmental Engineering", "environmental", range(47, 62), "Environmental-Track-References-and-Sources-complete.md"),
+    "electrical-computer": ("Electrical and Computer Engineering", "electrical-computer", range(31, 48), "ECE-Track-References-and-Sources-complete.md"),
+    "environmental": ("Environmental Engineering", "environmental", range(48, 62), "Environmental-Track-References-and-Sources-complete.md"),
     "industrial-systems": ("Industrial and Systems Engineering", "industrial-systems", range(62, 76), "Industrial-Systems-Track-References-and-Sources-complete.md"),
     "mechanical": ("Mechanical Engineering", "mechanical", range(76, 91), "Mechanical-Track-References-and-Sources-complete.md"),
     "other-disciplines": ("Other Disciplines", "other-disciplines", range(91, 96), "Other-Disciplines-Track-References-and-Sources-complete.md"),
