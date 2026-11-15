@@ -2160,7 +2160,7 @@ $$
 \boxed{
 k=2
 \Rightarrow
-\text{approximately 95% under a normal model}.
+\text{approximately 95\% under a normal model}.
 }
 $$
 
