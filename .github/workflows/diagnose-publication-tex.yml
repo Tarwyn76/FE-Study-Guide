@@ -17,7 +17,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: sudo apt-get update && sudo apt-get install -y --no-install-recommends pandoc
+      - run: sudo apt-get update && sudo apt-get install -y --no-install-recommends pandoc texlive-xetex texlive-latex-extra texlive-fonts-recommended lmodern fonts-dejavu
       - run: python tools/build_publication.py --route chemical
       - name: Generate intermediate LaTeX
         run: |
@@ -29,7 +29,12 @@ jobs:
             --toc \
             -t latex \
             -o build/publication/chemical-debug.tex
+      - name: Draft-compile intermediate LaTeX
+        run: |
+          cd build/publication
+          xelatex -draftmode -interaction=nonstopmode -halt-on-error chemical-debug.tex
       - name: Scan suspicious TeX patterns
+        if: always()
         run: |
           echo "--- escaped-star math patterns ---"
           grep -n -E '\\[\^_]\\\\\*' build/publication/chemical-debug.tex | head -200 || true
