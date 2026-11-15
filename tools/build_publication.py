@@ -147,6 +147,10 @@ def normalize_nested_math_delimiters(text, path, stats):
 def process_markdown(path, included, anchor_map, stats):
     text = strip_front_matter(path.read_text(encoding="utf-8", errors="ignore"))
     text = normalize_nested_math_delimiters(text, path, stats)
+    # Pandoc can lower some display blocks to inline math in large concatenated
+    # documents; amsmath then rejects \\tag. Preserve the visible number without
+    # using the restricted command.
+    text = re.sub(r"\\\\tag\\{([^{}]+)\\}", r"\\\\qquad\\\\text{(\\1)}", text)
     text = explicit_first_h1(text, anchor_map[path.resolve()])
 
     def image_sub(m):
