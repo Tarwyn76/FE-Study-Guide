@@ -103,6 +103,7 @@ def resolve_figure(raw):
         return exact_id[0], "figure-id-exact"
     return None, "ambiguous"
 LINK_RE = re.compile(r"(?<!!)\[([^\]]+)\]\(([^)]+)\)")
+BARE_URL_RE = re.compile(r"(?<!\]\()(?<!<)(https?://[^\s<>)]+)")
 
 def normalize_nested_math_delimiters(text, path, stats):
     """Remove TeX math open/close delimiters that appear inside $...$ or $...$."""
@@ -208,6 +209,30 @@ def process_markdown(path, included, anchor_map, stats):
         return m.group(0)
 
     text = LINK_RE.sub(link_sub, text)
+
+    # Convert bare source URLs to Markdown autolinks so Pandoc emits breakable URLs.
+    def autolink_bare_urls(src):
+        out=[]
+        in_fence=False
+        for line in src.splitlines(keepends=True):
+            stripped=line.lstrip()
+            if stripped.startswith(("```", "~~~")):
+                in_fence=not in_fence
+                out.append(line)
+                continue
+            if in_fence:
+                out.append(line)
+                continue
+            def repl(m):
+                raw=m.group(1)
+                core=raw.rstrip(".,;:")
+                trail=raw[len(core):]
+                stats["bare_external_links"] += 1
+                return "<" + core + ">" + trail
+            out.append(BARE_URL_RE.sub(repl,line))
+        return "".join(out)
+
+    text = autolink_bare_urls(text)
     return text.strip() + "\n"
 
 def route_sources(route):
