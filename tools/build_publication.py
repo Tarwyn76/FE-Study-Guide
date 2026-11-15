@@ -43,10 +43,11 @@ def chapter_map():
 CHAPTERS, DUPLICATES = chapter_map()
 
 def strip_front_matter(text):
-    if text.startswith("---\n"):
-        end = text.find("\n---\n", 4)
-        if end >= 0:
-            return text[end+5:]
+    """Remove one leading YAML metadata block, tolerating BOM, CRLF, and blank space."""
+    text=text.lstrip("\ufeff")
+    m=re.match(r"\A[ \t\r\n]*---[ \t]*\r?\n.*?\r?\n---[ \t]*\r?\n", text, re.S)
+    if m:
+        return text[m.end():]
     return text
 
 def first_h1(text):
