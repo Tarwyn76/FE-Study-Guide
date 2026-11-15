@@ -150,7 +150,7 @@ def process_markdown(path, included, anchor_map, stats):
     # Pandoc can lower some display blocks to inline math in large concatenated
     # documents; amsmath then rejects \\tag. Preserve the visible number without
     # using the restricted command.
-    text = re.sub(r"\\\\tag\\{([^{}]+)\\}", r"\\\\qquad\\\\text{(\\1)}", text)
+    text = re.sub(r"\\tag\{([^{}]+)\}", r"\\qquad\\text{(\1)}", text)
     text = explicit_first_h1(text, anchor_map[path.resolve()])
 
     def image_sub(m):
