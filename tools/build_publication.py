@@ -276,6 +276,9 @@ header-includes:
     \\usepackage{{booktabs}}
     \\usepackage{{microtype}}
     \\usepackage{{cancel}}
+    \\usepackage{{xurl}}
+    \\Urlmuskip=0mu plus 1mu\\relax
+    \\setlength{{\\emergencystretch}}{{3em}}
     \\setkeys{{Gin}}{{width=\\linewidth,height=0.82\\textheight,keepaspectratio}}
 """
 
