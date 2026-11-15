@@ -102,10 +102,10 @@ By the end of this chapter, you will be able to:
 
 | Symbol | Meaning | Notes |
 |---|---|---|
-| $x^\*$ | exact or target value | usually unknown in a real numerical problem |
+| $x^{*}$ | exact or target value | usually unknown in a real numerical problem |
 | $x_k$ | numerical estimate at iteration $k$ | $k=0$ is the starting estimate |
-| $e_a$ | absolute error | $|x_{\text{approx}}-x^\*|$ when $x^\*$ is known |
-| $e_r$ | relative error | $e_a/|x^\*|$ when $x^\*\ne0$ |
+| $e_a$ | absolute error | $|x_{\text{approx}}-x^{*}|$ when $x^{*}$ is known |
+| $e_r$ | relative error | $e_a/|x^{*}|$ when $x^{*}\ne0$ |
 | $R_k$ | residual | value of the governing equation evaluated at $x_k$ |
 | $h$ | spatial or independent-variable step size | also written $\Delta x$ |
 | $\Delta t$ | time step | Euler marching step |
@@ -155,21 +155,21 @@ subtraction of nearly equal numbers.
 
 For a benchmark problem,
 
-$$\boxed{e_a=|x_{\text{approx}}-x^\*|}$$
+$$\boxed{e_a=|x_{\text{approx}}-x^{*}|}$$
 
-and, when $x^\*\ne0$,
+and, when $x^{*}\ne0$,
 
-$$\boxed{e_r=\frac{e_a}{|x^\*|}},\qquad
+$$\boxed{e_r=\frac{e_a}{|x^{*}|}},\qquad
 \boxed{e_{\%}=100e_r\%.}$$
 
-But in an actual numerical problem, $x^\*$ is usually unknown. You therefore need
+But in an actual numerical problem, $x^{*}$ is usually unknown. You therefore need
 quantities that can be computed without knowing the answer.
 
 ### Residual
 
 If the target satisfies
 
-$$f(x^\*)=0,$$
+$$f(x^{*})=0,$$
 
 then a numerical estimate $x_k$ has residual
 
@@ -179,11 +179,11 @@ A small residual is evidence that the governing equation is nearly satisfied.
 
 It is **not identical to variable error**. Near a simple root,
 
-$$f(x_k)\approx f'(x^\*)(x_k-x^\*),$$
+$$f(x_k)\approx f'(x^{*})(x_k-x^{*}),$$
 
 so
 
-$$x_k-x^\*\approx \frac{R_k}{f'(x^\*)}.$$
+$$x_k-x^{*}\approx \frac{R_k}{f'(x^{*})}.$$
 
 If the slope is tiny, a small residual can correspond to a much larger error in
 $x$. That is one form of poor conditioning.
@@ -354,9 +354,9 @@ real endpoints.
 
 ## 26.3 Root Finding — Bracketing and Newton's Method
 
-A root is a value $x^\*$ satisfying
+A root is a value $x^{*}$ satisfying
 
-$$\boxed{f(x^\*)=0.}$$
+$$\boxed{f(x^{*})=0.}$$
 
 Chapter 01-07 solved roots algebraically when possible. Numerical root finding
 handles equations that resist convenient symbolic solution.
@@ -391,7 +391,7 @@ $$\boxed{
 If the midpoint is reported, its error is bounded by half that width:
 
 $$\boxed{
-|c_m-x^\*|\le \frac{b_0-a_0}{2^{m+1}}.
+|c_m-x^{*}|\le \frac{b_0-a_0}{2^{m+1}}.
 }$$
 
 Bisection is slow but dependable.
@@ -570,7 +570,7 @@ x_{k+1}=x_k-\frac{h'(x_k)}{h''(x_k)}.
 
 The denominator is curvature. Near a well-behaved minimum,
 
-$$h''(x^\*)>0.$$
+$$h''(x^{*})>0.$$
 
 A tiny or sign-changing second derivative can make the Newton step unreliable.
 
@@ -1341,7 +1341,7 @@ D) $f'(y)=0$.
 
 3. Error measures distance from the unknown exact solution. A residual measures
    how closely the approximate value satisfies the equation. Near a shallow root,
-   $x_k-x^\*\approx R_k/f'(x^\*)$, so a small residual can coexist with a larger
+   $x_k-x^{*}\approx R_k/f'(x^{*})$, so a small residual can coexist with a larger
    variable error when the derivative is small. (§26.1)
 
 4. It reveals sensitivity to discretization. If halving the step changes the result
@@ -1804,9 +1804,9 @@ D) $f'(y)=0$.
 
 **Error measures**
 
-$$e_a=|x_{\text{approx}}-x^\*|,$$
+$$e_a=|x_{\text{approx}}-x^{*}|,$$
 
-$$e_r=\frac{e_a}{|x^\*|}\quad(x^\*\ne0).$$
+$$e_r=\frac{e_a}{|x^{*}|}\quad(x^{*}\ne0).$$
 
 Residual for a root:
 
