@@ -116,7 +116,9 @@ Polar coordinates are useful when geometry is referenced to an origin and both r
 
 The acceleration includes coupling terms; radial acceleration is not simply \(\ddot r\) when angular motion exists.
 
-\[\mathbf v=\dot r\,\mathbf e_r+r\dot\theta\,\mathbf e_\theta\]\n\[\mathbf a=(\ddot r-r\dot\theta^2)\mathbf e_r+(r\ddot\theta+2\dot r\dot\theta)\mathbf e_\theta\]
+\[\mathbf v=\dot r\,\mathbf e_r+r\dot\theta\,\mathbf e_\theta\]
+
+\[\mathbf a=(\ddot r-r\dot\theta^2)\mathbf e_r+(r\ddot\theta+2\dot r\dot\theta)\mathbf e_\theta\]
 
 ![FIG-02-32-004: Particle in r-θ coordinates with er/eθ components and radial/transverse velocity and acceleration.](../figures/FIG-02-32-004-radial-and-transverse-coordinates.png)
 
