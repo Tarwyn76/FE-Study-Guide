@@ -145,7 +145,7 @@ def normalize_nested_math_delimiters(text, path, stats):
                 "snippet": re.sub(r"\s+", " ", body).strip()[:240],
             })
             body=body.replace(r"\(","").replace(r"\)","")
-            body=re.sub(r"([_^])\\\*", r"\1{*}", body)
+        body=re.sub(r"([_^])\\\*", r"\1{*}", body)
         out.append("$"+body+"$")
         pos=m.end()
     out.append(text2[pos:])
