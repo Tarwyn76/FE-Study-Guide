@@ -1,0 +1,55 @@
+name: Build and validate publication PDFs
+on:
+  push:
+    branches: [figure-cleanup-strict]
+    paths:
+      - tools/build_publication.py
+      - .github/workflows/build-publication.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: figure-cleanup-strict
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install publishing dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended poppler-utils qpdf
+          python -m pip install pillow
+      - name: Build and validate PDFs
+        run: python tools/build_publication.py
+      - name: Commit publishing validation report
+        if: always()
+        run: |
+          git config user.name "ChatGPT FE Publisher"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add reports/publishing/publishing-validation.md reports/publishing/publishing-validation.json || true
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Add publication build validation report"
+          git push origin HEAD:figure-cleanup-strict
+      - name: Upload publication PDFs
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fe-study-guide-publication-pdfs
+          path: build/publication/*.pdf
+          retention-days: 30
+      - name: Upload render samples and logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fe-study-guide-publication-validation
+          path: |
+            build/publication/*.latex.log
+            build/publication/*-renders/*.png
+            reports/publishing/publishing-validation.*
+          retention-days: 30
