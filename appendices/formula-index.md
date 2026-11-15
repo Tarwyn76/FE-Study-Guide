@@ -823,7 +823,7 @@ _No reusable display formula selected; this chapter is primarily conceptual/proc
 - **02-28:F1** — $R=\int_a^b w(x)\,dx,\qquad x_R=\frac{\int_a^b xw(x)\,dx}{R}$
 - **02-28:F2** — $R_{\rm uniform}=wL,\qquad R_{\rm triangle}=\tfrac12 w_0L$
 - **02-28:F3** — $\bar x=\frac{\sum A_i x_i}{\sum A_i},\qquad \bar y=\frac{\sum A_i y_i}{\sum A_i}$
-- **02-28:F4** — $ar x=\frac1A\int_A x\,dA,\qquad ar y=\frac1A\int_A y\,dA.$
+- **02-28:F4** — $\bar x=\frac{1}{A}\int_A x\,dA,\qquad \bar y=\frac{1}{A}\int_A y\,dA$
 - **02-28:F5** — $A=\int_A dA$
 - **02-28:F6** — $\mathbf r_G=\frac{\sum m_i\mathbf r_i}{\sum m_i}$
 - **02-28:F7** — $\bar x=\frac{\sum V_i x_i}{\sum V_i}\quad(\rho=\text{constant})$
@@ -849,10 +849,10 @@ _No reusable display formula selected; this chapter is primarily conceptual/proc
 - **02-30:F3** — $F=\mu_sN\quad\text{at impending slip}$
 - **02-30:F4** — $F_k=\mu_kN.$
 - **02-30:F5** — $F_k=\mu_kN$
-- **02-30:F6** — $N=W\cos heta.$
+- **02-30:F6** — $N=W\cos\theta$
 - **02-30:F7** — $W_\parallel=W\sin\theta,\qquad W_\perp=W\cos\theta$
 - **02-30:F8** — $P_{\rm slide}=\mu_sN,\qquad \sum M_{\rm edge}=0\text{ for tipping}$
-- **02-30:F9** — $F_1=F_2e^{\mu heta},$
+- **02-30:F9** — $F_1=F_2e^{\mu\theta}$
 - **02-30:F10** — $\frac{F_1}{F_2}=e^{\mu\theta}$
 - **02-30:F11** — $M=Pr\tan(\alpha\pm\phi),\qquad \mu=\tan\phi$
 
@@ -912,11 +912,11 @@ _No reusable display formula selected; this chapter is primarily conceptual/proc
 ### 02-36 — Rigid-Body Planar Kinematics and Kinetics
 
 - **02-36:F1** — $\mathbf v_B=\mathbf v_A+\boldsymbol\omega\times\mathbf r_{B/A}$
-- **02-36:F2** — $\mathbf a_B=\mathbf a_A+oldsymbollpha imes\mathbf r_{B/A}+oldsymbol\omega imes(oldsymbol\omega imes\mathbf r_{B/A}).$
+- **02-36:F2** — $\mathbf a_B=\mathbf a_A+\boldsymbol\alpha\times\mathbf r_{B/A}+\boldsymbol\omega\times(\boldsymbol\omega\times\mathbf r_{B/A})$
 - **02-36:F3** — $\mathbf a_B=\mathbf a_A+\boldsymbol\alpha\times\mathbf r_{B/A}-\omega^2\mathbf r_{B/A}$
 - **02-36:F5** — $v_P=\omega r_{P/IC}$
 - **02-36:F6** — $I=\int r^2\,dm,\qquad I_O=I_G+md^2$
-- **02-36:F7** — $\sum F_x=ma_{Gx},\quad \sum F_y=ma_{Gy},\quad \sum M_G=I_Glpha.$
+- **02-36:F7** — $\sum F_x=ma_{Gx},\quad \sum F_y=ma_{Gy},\quad \sum M_G=I_G\alpha$
 - **02-36:F8** — $\sum\mathbf F=m\mathbf a_G,\qquad \sum M_G=I_G\alpha$
 - **02-36:F9** — $T=\tfrac12mv_G^2+\tfrac12I_G\omega^2$
 
@@ -927,7 +927,7 @@ _No reusable display formula selected; this chapter is primarily conceptual/proc
 - **02-37:F3** — $\varepsilon=\frac{\delta}{L},\qquad \sigma=E\varepsilon$
 - **02-37:F4** — $\delta=\frac{PL}{AE},\qquad \delta=\int\frac{P(x)}{A(x)E(x)}dx$
 - **02-37:F5** — $\nu=-\frac{\varepsilon_{\rm lateral}}{\varepsilon_{\rm longitudinal}},\qquad G=\frac{E}{2(1+\nu)}$
-- **02-37:F6** — $\delta_T=lpha L\Delta T.$
+- **02-37:F6** — $\delta_T=\alpha L\Delta T$
 - **02-37:F7** — $\varepsilon_T=\alpha\Delta T,\qquad \delta_T=\alpha L\Delta T$
 - **02-37:F9** — $\sigma_h=\frac{pr}{t},\qquad \sigma_a=\frac{pr}{2t}$
 
@@ -964,7 +964,7 @@ _No reusable display formula selected; this chapter is primarily conceptual/proc
 - **02-40:F2** — $\sigma_{x'}=\frac{\sigma_x+\sigma_y}{2}+\frac{\sigma_x-\sigma_y}{2}\cos2\theta+\tau_{xy}\sin2\theta$
 - **02-40:F3** — $\sigma_{1,2}=\frac{\sigma_x+\sigma_y}{2}\pm\sqrt{\left(\frac{\sigma_x-\sigma_y}{2}\right)^2+\tau_{xy}^2}$
 - **02-40:F4** — $\tau_{\max,\rm in}=\sqrt{\left(\frac{\sigma_x-\sigma_y}{2}\right)^2+\tau_{xy}^2}$
-- **02-40:F6** — $an2 heta_p=\frac{2 au_{xy}}{\sigma_x-\sigma_y}.$
+- **02-40:F6** — $\tan 2\theta_p=\frac{2\tau_{xy}}{\sigma_x-\sigma_y}$
 - **02-40:F7** — $\tan2\theta_p=\frac{2\tau_{xy}}{\sigma_x-\sigma_y}$
 - **02-40:F8** — $\tau_{\max,3D}=\frac{\sigma_{\max}-\sigma_{\min}}{2}$
 
