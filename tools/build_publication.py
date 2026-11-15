@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from pathlib import Path
-import argparse, collections, json, re, sys
+import argparse, collections, json, re, sys, subprocess, shutil
 
 ROOT = Path(__file__).resolve().parents[1]
 BUILD = ROOT / "build" / "publication"
@@ -8,8 +8,8 @@ BUILD = ROOT / "build" / "publication"
 ROUTES = {
     "chemical": ("Chemical Engineering", "chemical", range(1, 14), "Chemical-Track-References-and-Sources-complete.md"),
     "civil": ("Civil Engineering", "civil", range(14, 31), "Civil-Track-References-and-Sources-complete.md"),
-    "electrical-computer": ("Electrical and Computer Engineering", "electrical-computer", range(31, 47), "ECE-Track-References-and-Sources-complete.md"),
-    "environmental": ("Environmental Engineering", "environmental", range(47, 62), "Environmental-Track-References-and-Sources-complete.md"),
+    "electrical-computer": ("Electrical and Computer Engineering", "electrical-computer", range(31, 48), "ECE-Track-References-and-Sources-complete.md"),
+    "environmental": ("Environmental Engineering", "environmental", range(48, 62), "Environmental-Track-References-and-Sources-complete.md"),
     "industrial-systems": ("Industrial and Systems Engineering", "industrial-systems", range(62, 76), "Industrial-Systems-Track-References-and-Sources-complete.md"),
     "mechanical": ("Mechanical Engineering", "mechanical", range(76, 91), "Mechanical-Track-References-and-Sources-complete.md"),
     "other-disciplines": ("Other Disciplines", "other-disciplines", range(91, 96), "Other-Disciplines-Track-References-and-Sources-complete.md"),
@@ -328,16 +328,153 @@ def all_preflight():
     print(json.dumps(summary, indent=2))
     if DUPLICATES:
         print("NOTE: duplicate chapter IDs exist; canonical selection recorded above.", file=sys.stderr)
+    return results
+
+def run_checked(cmd, **kwargs):
+    print("+", " ".join(str(x) for x in cmd), flush=True)
+    return subprocess.run(cmd, check=True, text=True, **kwargs)
+
+def render_and_validate(info):
+    route=info["route"]
+    md=ROOT/info["output_markdown"]
+    meta=ROOT/info["metadata_file"]
+    pdf=BUILD/f"fe-study-guide-{route}.pdf"
+    log=BUILD/f"fe-study-guide-{route}.latex.log"
+
+    cmd=[
+        "pandoc", str(md.relative_to(ROOT)),
+        "--metadata-file", str(meta.relative_to(ROOT)),
+        "--from", "markdown+raw_tex+tex_math_dollars",
+        "--pdf-engine=xelatex",
+        "--resource-path", ".",
+        "--standalone",
+        "--toc", "--toc-depth=2",
+        "-o", str(pdf.relative_to(ROOT)),
+    ]
+    proc=subprocess.run(cmd,cwd=ROOT,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
+    log.write_text(proc.stdout,encoding="utf-8")
+    if proc.returncode != 0:
+        print(proc.stdout[-16000:])
+        raise RuntimeError(f"{route}: Pandoc/XeLaTeX build failed")
+
+    q=subprocess.run(["qpdf","--check",str(pdf)],text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
+    if q.returncode != 0:
+        raise RuntimeError(f"{route}: qpdf validation failed: {q.stdout}")
+
+    pinfo=run_checked(["pdfinfo",str(pdf)],capture_output=True).stdout
+    pages=int(re.search(r"(?m)^Pages:\s+(\d+)",pinfo).group(1))
+    page_size=re.search(r"(?m)^Page size:\s+(.+)$",pinfo).group(1).strip()
+
+    txt=BUILD/f"fe-study-guide-{route}.txt"
+    run_checked(["pdftotext","-layout",str(pdf),str(txt)])
+    extracted=txt.read_text(encoding="utf-8",errors="ignore")
+
+    missing_titles=[]
+    display, sources=route_sources(route)
+    for p in sources:
+        if not re.match(r"^\d{2}-\d{2}-",p.name):
+            continue
+        t=first_h1(strip_front_matter(p.read_text(encoding="utf-8",errors="ignore")))
+        if t and re.sub(r"\s+"," ",t).strip() not in re.sub(r"\s+"," ",extracted):
+            missing_titles.append(t)
+
+    page_texts=extracted.split("\f")
+    empty=[i+1 for i,x in enumerate(page_texts) if len(re.sub(r"\s+","",x))<12]
+    consecutive=[(n,n+1) for n in empty if n+1 in empty]
+
+    render_dir=BUILD/f"fe-study-guide-{route}-renders"
+    render_dir.mkdir(exist_ok=True)
+    sample_pages=sorted({1,max(1,pages//4),max(1,pages//2),max(1,3*pages//4),pages})
+    samples=[]
+    try:
+        from PIL import Image, ImageStat
+        for pg in sample_pages:
+            prefix=render_dir/f"page-{pg}"
+            run_checked(["pdftoppm","-f",str(pg),"-singlefile","-r","90","-gray","-png",str(pdf),str(prefix)],
+                        stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
+            im=Image.open(str(prefix)+".png").convert("L")
+            st=ImageStat.Stat(im)
+            samples.append({"page":pg,"mean_gray":round(st.mean[0],1),"std_gray":round(st.stddev[0],1)})
+            if st.stddev[0] < 2.0:
+                raise RuntimeError(f"{route}: rendered sample page {pg} appears blank")
+    except ImportError:
+        samples=[]
+
+    ltxt=log.read_text(encoding="utf-8",errors="ignore")
+    return {
+        **info,
+        "pdf":str(pdf.relative_to(ROOT)),
+        "pdf_bytes":pdf.stat().st_size,
+        "pages":pages,
+        "page_size":page_size,
+        "missing_chapter_titles":missing_titles,
+        "consecutive_blank_pages":consecutive,
+        "overfull_hbox_warnings":len(re.findall(r"Overfull \\\\hbox",ltxt)),
+        "missing_glyph_warnings":len(re.findall(r"Missing character:",ltxt)),
+        "undefined_reference_warnings":len(re.findall(r"(?:undefined reference|Reference .* undefined)",ltxt,re.I)),
+        "render_samples":samples,
+    }
+
+def render_all(preflight_results):
+    results=[]
+    for info in preflight_results:
+        results.append(render_and_validate(info))
+
+    hard=[]
+    for r in results:
+        if r["missing_chapter_titles"]:
+            hard.append((r["route"],"missing chapter titles",r["missing_chapter_titles"][:5]))
+        if r["consecutive_blank_pages"]:
+            hard.append((r["route"],"consecutive blank pages",r["consecutive_blank_pages"][:5]))
+        if r["missing_glyph_warnings"]:
+            hard.append((r["route"],"missing glyph warnings",r["missing_glyph_warnings"]))
+        if r["undefined_reference_warnings"]:
+            hard.append((r["route"],"undefined reference warnings",r["undefined_reference_warnings"]))
+
+    outdir=ROOT/"reports"/"publishing"
+    outdir.mkdir(parents=True,exist_ok=True)
+    summary={"routes":results,"hard_findings":hard}
+    (outdir/"publishing-validation.json").write_text(json.dumps(summary,indent=2),encoding="utf-8")
+
+    lines=["# FE Guide Publishing Validation","",
+           "Image-artwork aesthetic QA remains deferred; this report covers publication rendering and structure.","",
+           "| Route | Chapters | Pages | PDF size | Overfull boxes | Missing glyphs | Missing titles |",
+           "|---|---:|---:|---:|---:|---:|---:|"]
+    for r in results:
+        lines.append(f"| {r['route']} | {r['canonical_chapters']} | {r['pages']} | {r['pdf_bytes']/1048576:.1f} MiB | {r['overfull_hbox_warnings']} | {r['missing_glyph_warnings']} | {len(r['missing_chapter_titles'])} |")
+    lines += ["",
+              f"- Unresolved image assets: **{sum(len(r['missing_images']) for r in results)}**",
+              f"- Hard publication findings: **{len(hard)}**",
+              "",
+              "## Render sample checks",""]
+    for r in results:
+        lines.append(f"- **{r['route']}:** "+", ".join(f"p{x['page']} mean/std {x['mean_gray']}/{x['std_gray']}" for x in r['render_samples']))
+    if hard:
+        lines += ["","## Hard findings",""]
+        lines += [f"- {x}" for x in hard]
+    else:
+        lines += ["","## Result","","**PASS** - no hard structural/rendering publication defects detected."]
+    (outdir/"publishing-validation.md").write_text("\n".join(lines)+"\n",encoding="utf-8")
+    print("\n".join(lines))
+    if hard:
+        raise RuntimeError("Hard publication findings remain")
+    return results
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--route", choices=list(ROUTES))
     ap.add_argument("--all", action="store_true")
+    ap.add_argument("--render", action="store_true", help="Build and validate route PDFs after preflight")
     args = ap.parse_args()
     if args.all or not args.route:
-        all_preflight()
+        results=all_preflight()
+        if args.render:
+            render_all(results)
     else:
-        print(json.dumps(assemble(args.route), indent=2))
+        info=assemble(args.route)
+        print(json.dumps(info, indent=2))
+        if args.render:
+            render_and_validate(info)
 
 if __name__ == "__main__":
     main()
