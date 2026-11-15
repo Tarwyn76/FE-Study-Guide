@@ -22,7 +22,7 @@ jobs:
       - name: Generate intermediate LaTeX
         run: |
           pandoc "build/publication/fe-study-guide-chemical.md" \
-            --from "markdown+raw_tex+tex_math_dollars+tex_math_single_backslash+fenced_divs+bracketed_spans" \
+            --from "markdown-yaml_metadata_block+raw_tex+tex_math_dollars+tex_math_single_backslash+fenced_divs+bracketed_spans" \
             --metadata-file "build/publication/fe-study-guide-chemical.yaml" \
             --resource-path=. \
             --top-level-division=chapter \
