@@ -345,7 +345,7 @@ def render_and_validate(info):
     cmd=[
         "pandoc", str(md.relative_to(ROOT)),
         "--metadata-file", str(meta.relative_to(ROOT)),
-        "--from", "markdown+raw_tex+tex_math_dollars",
+        "--from", "markdown-yaml_metadata_block+raw_tex+tex_math_dollars",
         "--pdf-engine=xelatex",
         "--resource-path", ".",
         "--standalone",
