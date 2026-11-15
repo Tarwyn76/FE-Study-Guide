@@ -77,7 +77,7 @@ A PFD is intended for process understanding and balance calculations, not detail
 
 A P&ID contains much more implementation detail than a PFD but still does not replace fabrication drawings or control-system logic documentation.
 
-\[\text{P&ID: equipment + piping + valves + instruments + control/safety loops}\]
+\[\text{P\&ID: equipment + piping + valves + instruments + control/safety loops}\]
 
 ![FIG-03-12-002: Simplified vessel control P&ID with level transmitter/controller, control valve, pressure relief, isolation valves, and equipment tags.](../figures/FIG-03-12-002-piping-and-instrumentation-diagrams.png)
 
