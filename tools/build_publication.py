@@ -107,15 +107,21 @@ LINK_RE = re.compile(r"(?<!!)\[([^\]]+)\]\(([^)]+)\)")
 def normalize_nested_math_delimiters(text, path, stats):
     """Remove TeX math open/close delimiters that appear inside $...$ or $...$."""
     def clean_content(content, offset):
-        if not any(tok in content for tok in (r"\(", r"\)")):
+        original=content
+        content=content.replace(r"\(", "").replace(r"\)", "")
+        # Markdown escaping can leave an invalid TeX escaped star in math
+        # (for example x^\*). Normalize it to an explicit math superscript/
+        # subscript star so XeLaTeX receives valid syntax.
+        content=re.sub(r"([_^])\\\*", r"\1{*}", content)
+        if content == original:
             return content
         line = text.count("\n", 0, offset) + 1
         stats["nested_math_repairs"].append({
             "source": str(path.relative_to(ROOT)),
             "line": line,
-            "snippet": re.sub(r"\s+", " ", content).strip()[:240],
+            "snippet": re.sub(r"\s+", " ", original).strip()[:240],
         })
-        return content.replace(r"\(", "").replace(r"\)", "")
+        return content
 
     # Display math first so the inline pass cannot consume its dollar pairs.
     out=[]; pos=0
@@ -139,6 +145,7 @@ def normalize_nested_math_delimiters(text, path, stats):
                 "snippet": re.sub(r"\s+", " ", body).strip()[:240],
             })
             body=body.replace(r"\(","").replace(r"\)","")
+            body=re.sub(r"([_^])\\\*", r"\1{*}", body)
         out.append("$"+body+"$")
         pos=m.end()
     out.append(text2[pos:])
