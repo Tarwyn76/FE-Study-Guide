@@ -27,6 +27,7 @@ jobs:
             --resource-path=. \
             --top-level-division=chapter \
             --toc \
+            --standalone \
             -t latex \
             -o build/publication/chemical-debug.tex
       - name: Draft-compile intermediate LaTeX
