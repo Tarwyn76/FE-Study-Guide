@@ -1,9 +1,9 @@
 name: FE figure textbook whitespace cleanup
 
 on:
-  push:
+  pull_request:
     branches:
-      - figure-textbook-cleanup-20261115
+      - main
     paths:
       - tools/normalize_svg_layout.py
       - .github/workflows/figure-textbook-cleanup.yml
