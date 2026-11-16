@@ -1,0 +1,53 @@
+name: FE figure textbook whitespace cleanup
+
+on:
+  push:
+    branches:
+      - figure-textbook-cleanup-20261115
+    paths:
+      - tools/normalize_svg_layout.py
+      - .github/workflows/figure-textbook-cleanup.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  normalize:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: figure-textbook-cleanup-20261115
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install renderer dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcairo2 libpango-1.0-0
+          python -m pip install --upgrade pip
+          python -m pip install cairosvg pillow
+
+      - name: Normalize remaining SVG canvases
+        run: |
+          python tools/normalize_svg_layout.py \
+            --root figures/svg \
+            --start-index 13 \
+            --report meta/figure-layout-cleanup-report.csv
+
+      - name: Commit normalized figures and review report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add figures/svg meta/figure-layout-cleanup-report.csv
+          if git diff --cached --quiet; then
+            echo "No SVG layout changes detected."
+          else
+            git commit -m "Normalize FE figure whitespace for textbook layout"
+            git push origin HEAD:figure-textbook-cleanup-20261115
+          fi
